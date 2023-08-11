@@ -116,7 +116,7 @@ func NewDataAwsIamPolicyDocumentStatementNotPrincipalsList(terraformResource cdk
 	j := jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementNotPrincipalsList",
+		"@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementNotPrincipalsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsIamPolicyDocumentStatementNotPrincipalsList_Override(d DataAwsIam
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementNotPrincipalsList",
+		"@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementNotPrincipalsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

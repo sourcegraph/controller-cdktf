@@ -483,7 +483,7 @@ func NewRoute53ResolverEndpoint(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_Route53ResolverEndpoint{}
 
 	_jsii_.Create(
-		"aws.route53ResolverEndpoint.Route53ResolverEndpoint",
+		"@cdktf/provider-aws.route53ResolverEndpoint.Route53ResolverEndpoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -496,7 +496,7 @@ func NewRoute53ResolverEndpoint_Override(r Route53ResolverEndpoint, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53ResolverEndpoint.Route53ResolverEndpoint",
+		"@cdktf/provider-aws.route53ResolverEndpoint.Route53ResolverEndpoint",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -662,7 +662,7 @@ func Route53ResolverEndpoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverEndpoint.Route53ResolverEndpoint",
+		"@cdktf/provider-aws.route53ResolverEndpoint.Route53ResolverEndpoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -681,7 +681,7 @@ func Route53ResolverEndpoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverEndpoint.Route53ResolverEndpoint",
+		"@cdktf/provider-aws.route53ResolverEndpoint.Route53ResolverEndpoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func Route53ResolverEndpoint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverEndpoint.Route53ResolverEndpoint",
+		"@cdktf/provider-aws.route53ResolverEndpoint.Route53ResolverEndpoint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -713,7 +713,7 @@ func Route53ResolverEndpoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53ResolverEndpoint.Route53ResolverEndpoint",
+		"@cdktf/provider-aws.route53ResolverEndpoint.Route53ResolverEndpoint",
 		"tfResourceType",
 		&returns,
 	)

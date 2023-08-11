@@ -116,7 +116,7 @@ func NewPagesProjectDeploymentConfigsPreviewServiceBindingList(terraformResource
 	j := jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingList{}
 
 	_jsii_.Create(
-		"cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServiceBindingList",
+		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServiceBindingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPagesProjectDeploymentConfigsPreviewServiceBindingList_Override(p PagesP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServiceBindingList",
+		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServiceBindingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

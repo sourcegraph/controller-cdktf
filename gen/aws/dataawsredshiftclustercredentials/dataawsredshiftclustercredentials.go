@@ -432,7 +432,7 @@ func NewDataAwsRedshiftClusterCredentials(scope constructs.Construct, id *string
 	j := jsiiProxy_DataAwsRedshiftClusterCredentials{}
 
 	_jsii_.Create(
-		"aws.dataAwsRedshiftClusterCredentials.DataAwsRedshiftClusterCredentials",
+		"@cdktf/provider-aws.dataAwsRedshiftClusterCredentials.DataAwsRedshiftClusterCredentials",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -445,7 +445,7 @@ func NewDataAwsRedshiftClusterCredentials_Override(d DataAwsRedshiftClusterCrede
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRedshiftClusterCredentials.DataAwsRedshiftClusterCredentials",
+		"@cdktf/provider-aws.dataAwsRedshiftClusterCredentials.DataAwsRedshiftClusterCredentials",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -600,7 +600,7 @@ func DataAwsRedshiftClusterCredentials_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRedshiftClusterCredentials.DataAwsRedshiftClusterCredentials",
+		"@cdktf/provider-aws.dataAwsRedshiftClusterCredentials.DataAwsRedshiftClusterCredentials",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func DataAwsRedshiftClusterCredentials_IsTerraformDataSource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRedshiftClusterCredentials.DataAwsRedshiftClusterCredentials",
+		"@cdktf/provider-aws.dataAwsRedshiftClusterCredentials.DataAwsRedshiftClusterCredentials",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -638,7 +638,7 @@ func DataAwsRedshiftClusterCredentials_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRedshiftClusterCredentials.DataAwsRedshiftClusterCredentials",
+		"@cdktf/provider-aws.dataAwsRedshiftClusterCredentials.DataAwsRedshiftClusterCredentials",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -651,7 +651,7 @@ func DataAwsRedshiftClusterCredentials_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsRedshiftClusterCredentials.DataAwsRedshiftClusterCredentials",
+		"@cdktf/provider-aws.dataAwsRedshiftClusterCredentials.DataAwsRedshiftClusterCredentials",
 		"tfResourceType",
 		&returns,
 	)

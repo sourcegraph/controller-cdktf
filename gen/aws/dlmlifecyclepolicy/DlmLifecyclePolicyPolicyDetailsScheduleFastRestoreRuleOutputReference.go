@@ -251,7 +251,7 @@ func NewDlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReference(te
 	j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReference{}
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReference",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewDlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReference",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

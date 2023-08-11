@@ -204,7 +204,7 @@ func NewKeyspacesTableEncryptionSpecificationOutputReference(terraformResource c
 	j := jsiiProxy_KeyspacesTableEncryptionSpecificationOutputReference{}
 
 	_jsii_.Create(
-		"aws.keyspacesTable.KeyspacesTableEncryptionSpecificationOutputReference",
+		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableEncryptionSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewKeyspacesTableEncryptionSpecificationOutputReference_Override(k Keyspace
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.keyspacesTable.KeyspacesTableEncryptionSpecificationOutputReference",
+		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableEncryptionSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

@@ -116,7 +116,7 @@ func NewCodeartifactRepositoryUpstreamList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_CodeartifactRepositoryUpstreamList{}
 
 	_jsii_.Create(
-		"aws.codeartifactRepository.CodeartifactRepositoryUpstreamList",
+		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryUpstreamList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCodeartifactRepositoryUpstreamList_Override(c CodeartifactRepositoryUpst
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codeartifactRepository.CodeartifactRepositoryUpstreamList",
+		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryUpstreamList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

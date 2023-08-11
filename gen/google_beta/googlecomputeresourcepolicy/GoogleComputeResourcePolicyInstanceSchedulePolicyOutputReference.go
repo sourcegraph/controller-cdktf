@@ -275,7 +275,7 @@ func NewGoogleComputeResourcePolicyInstanceSchedulePolicyOutputReference(terrafo
 	j := jsiiProxy_GoogleComputeResourcePolicyInstanceSchedulePolicyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyInstanceSchedulePolicyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyInstanceSchedulePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewGoogleComputeResourcePolicyInstanceSchedulePolicyOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyInstanceSchedulePolicyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyInstanceSchedulePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

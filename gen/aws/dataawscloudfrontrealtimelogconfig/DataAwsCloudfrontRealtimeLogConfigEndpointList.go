@@ -104,7 +104,7 @@ func NewDataAwsCloudfrontRealtimeLogConfigEndpointList(terraformResource cdktf.I
 	j := jsiiProxy_DataAwsCloudfrontRealtimeLogConfigEndpointList{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfigEndpointList",
+		"@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfigEndpointList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsCloudfrontRealtimeLogConfigEndpointList_Override(d DataAwsCloudfr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfigEndpointList",
+		"@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfigEndpointList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

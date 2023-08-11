@@ -202,7 +202,7 @@ func NewAppstreamStackUserSettingsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_AppstreamStackUserSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.appstreamStack.AppstreamStackUserSettingsOutputReference",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewAppstreamStackUserSettingsOutputReference_Override(a AppstreamStackUserS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appstreamStack.AppstreamStackUserSettingsOutputReference",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

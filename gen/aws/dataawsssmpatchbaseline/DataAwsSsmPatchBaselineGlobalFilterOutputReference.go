@@ -178,7 +178,7 @@ func NewDataAwsSsmPatchBaselineGlobalFilterOutputReference(terraformResource cdk
 	j := jsiiProxy_DataAwsSsmPatchBaselineGlobalFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineGlobalFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineGlobalFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsSsmPatchBaselineGlobalFilterOutputReference_Override(d DataAwsSsm
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineGlobalFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineGlobalFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

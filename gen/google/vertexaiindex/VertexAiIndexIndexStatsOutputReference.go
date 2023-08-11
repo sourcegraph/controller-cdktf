@@ -178,7 +178,7 @@ func NewVertexAiIndexIndexStatsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_VertexAiIndexIndexStatsOutputReference{}
 
 	_jsii_.Create(
-		"google.vertexAiIndex.VertexAiIndexIndexStatsOutputReference",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexIndexStatsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewVertexAiIndexIndexStatsOutputReference_Override(v VertexAiIndexIndexStat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiIndex.VertexAiIndexIndexStatsOutputReference",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexIndexStatsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		v,
 	)

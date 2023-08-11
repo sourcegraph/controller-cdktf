@@ -390,7 +390,7 @@ func NewBrand(scope constructs.Construct, id *string, config *BrandConfig) Brand
 	j := jsiiProxy_Brand{}
 
 	_jsii_.Create(
-		"okta.brand.Brand",
+		"@cdktf/provider-okta.brand.Brand",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewBrand_Override(b Brand, scope constructs.Construct, id *string, config *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.brand.Brand",
+		"@cdktf/provider-okta.brand.Brand",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -547,7 +547,7 @@ func Brand_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.brand.Brand",
+		"@cdktf/provider-okta.brand.Brand",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -566,7 +566,7 @@ func Brand_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.brand.Brand",
+		"@cdktf/provider-okta.brand.Brand",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func Brand_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.brand.Brand",
+		"@cdktf/provider-okta.brand.Brand",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -598,7 +598,7 @@ func Brand_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.brand.Brand",
+		"@cdktf/provider-okta.brand.Brand",
 		"tfResourceType",
 		&returns,
 	)

@@ -312,7 +312,7 @@ func NewDataAwsEcrpublicAuthorizationToken(scope constructs.Construct, id *strin
 	j := jsiiProxy_DataAwsEcrpublicAuthorizationToken{}
 
 	_jsii_.Create(
-		"aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken",
+		"@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -325,7 +325,7 @@ func NewDataAwsEcrpublicAuthorizationToken_Override(d DataAwsEcrpublicAuthorizat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken",
+		"@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -414,7 +414,7 @@ func DataAwsEcrpublicAuthorizationToken_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken",
+		"@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -433,7 +433,7 @@ func DataAwsEcrpublicAuthorizationToken_IsTerraformDataSource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken",
+		"@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -452,7 +452,7 @@ func DataAwsEcrpublicAuthorizationToken_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken",
+		"@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -465,7 +465,7 @@ func DataAwsEcrpublicAuthorizationToken_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken",
+		"@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewGoogleMemcacheInstanceMaintenanceScheduleList(terraformResource cdktf.II
 	j := jsiiProxy_GoogleMemcacheInstanceMaintenanceScheduleList{}
 
 	_jsii_.Create(
-		"google-beta.googleMemcacheInstance.GoogleMemcacheInstanceMaintenanceScheduleList",
+		"@cdktf/provider-google-beta.googleMemcacheInstance.GoogleMemcacheInstanceMaintenanceScheduleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleMemcacheInstanceMaintenanceScheduleList_Override(g GoogleMemcacheI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMemcacheInstance.GoogleMemcacheInstanceMaintenanceScheduleList",
+		"@cdktf/provider-google-beta.googleMemcacheInstance.GoogleMemcacheInstanceMaintenanceScheduleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

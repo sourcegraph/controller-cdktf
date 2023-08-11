@@ -104,7 +104,7 @@ func NewDataGoogleCloudIdentityGroupMembershipsMembershipsRolesList(terraformRes
 	j := jsiiProxy_DataGoogleCloudIdentityGroupMembershipsMembershipsRolesList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMembershipsMembershipsRolesList",
+		"@cdktf/provider-google-beta.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMembershipsMembershipsRolesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudIdentityGroupMembershipsMembershipsRolesList_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMembershipsMembershipsRolesList",
+		"@cdktf/provider-google-beta.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMembershipsMembershipsRolesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

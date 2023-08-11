@@ -203,7 +203,7 @@ func NewComputeInstanceServiceAccountOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_ComputeInstanceServiceAccountOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceServiceAccountOutputReference",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceServiceAccountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewComputeInstanceServiceAccountOutputReference_Override(c ComputeInstanceS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceServiceAccountOutputReference",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceServiceAccountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

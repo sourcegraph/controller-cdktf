@@ -190,7 +190,7 @@ func NewBigqueryConnectionAwsAccessRoleOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryConnection.BigqueryConnectionAwsAccessRoleOutputReference",
+		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionAwsAccessRoleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -202,7 +202,7 @@ func NewBigqueryConnectionAwsAccessRoleOutputReference_Override(b BigqueryConnec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryConnection.BigqueryConnectionAwsAccessRoleOutputReference",
+		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionAwsAccessRoleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

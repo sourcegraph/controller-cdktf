@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicy",
+		"@cdktf/provider-google.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicy",
 		reflect.TypeOf((*DataGoogleStorageBucketIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,7 +57,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicyConfig",
+		"@cdktf/provider-google.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicyConfig",
 		reflect.TypeOf((*DataGoogleStorageBucketIamPolicyConfig)(nil)).Elem(),
 	)
 }

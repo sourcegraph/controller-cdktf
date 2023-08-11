@@ -590,7 +590,7 @@ func NewSecurityGroupRule(scope constructs.Construct, id *string, config *Securi
 	j := jsiiProxy_SecurityGroupRule{}
 
 	_jsii_.Create(
-		"aws.securityGroupRule.SecurityGroupRule",
+		"@cdktf/provider-aws.securityGroupRule.SecurityGroupRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -603,7 +603,7 @@ func NewSecurityGroupRule_Override(s SecurityGroupRule, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityGroupRule.SecurityGroupRule",
+		"@cdktf/provider-aws.securityGroupRule.SecurityGroupRule",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -835,7 +835,7 @@ func SecurityGroupRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityGroupRule.SecurityGroupRule",
+		"@cdktf/provider-aws.securityGroupRule.SecurityGroupRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -854,7 +854,7 @@ func SecurityGroupRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityGroupRule.SecurityGroupRule",
+		"@cdktf/provider-aws.securityGroupRule.SecurityGroupRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -873,7 +873,7 @@ func SecurityGroupRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityGroupRule.SecurityGroupRule",
+		"@cdktf/provider-aws.securityGroupRule.SecurityGroupRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -886,7 +886,7 @@ func SecurityGroupRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.securityGroupRule.SecurityGroupRule",
+		"@cdktf/provider-aws.securityGroupRule.SecurityGroupRule",
 		"tfResourceType",
 		&returns,
 	)

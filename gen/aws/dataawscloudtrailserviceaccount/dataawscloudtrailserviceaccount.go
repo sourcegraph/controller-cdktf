@@ -303,7 +303,7 @@ func NewDataAwsCloudtrailServiceAccount(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataAwsCloudtrailServiceAccount{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount",
+		"@cdktf/provider-aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -316,7 +316,7 @@ func NewDataAwsCloudtrailServiceAccount_Override(d DataAwsCloudtrailServiceAccou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount",
+		"@cdktf/provider-aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -416,7 +416,7 @@ func DataAwsCloudtrailServiceAccount_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount",
+		"@cdktf/provider-aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -435,7 +435,7 @@ func DataAwsCloudtrailServiceAccount_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount",
+		"@cdktf/provider-aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -454,7 +454,7 @@ func DataAwsCloudtrailServiceAccount_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount",
+		"@cdktf/provider-aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -467,7 +467,7 @@ func DataAwsCloudtrailServiceAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount",
+		"@cdktf/provider-aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount",
 		"tfResourceType",
 		&returns,
 	)

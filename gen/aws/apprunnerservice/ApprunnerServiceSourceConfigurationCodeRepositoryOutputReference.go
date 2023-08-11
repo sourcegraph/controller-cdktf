@@ -226,7 +226,7 @@ func NewApprunnerServiceSourceConfigurationCodeRepositoryOutputReference(terrafo
 	j := jsiiProxy_ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference{}
 
 	_jsii_.Create(
-		"aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewApprunnerServiceSourceConfigurationCodeRepositoryOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

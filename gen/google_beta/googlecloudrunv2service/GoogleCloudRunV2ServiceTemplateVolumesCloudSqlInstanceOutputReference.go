@@ -180,7 +180,7 @@ func NewGoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstanceOutputReference(te
 	j := jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstanceOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstanceOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstanceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstanceOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstanceOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstanceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

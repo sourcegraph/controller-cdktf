@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ecrRepository.EcrRepository",
+		"@cdktf/provider-aws.ecrRepository.EcrRepository",
 		reflect.TypeOf((*EcrRepository)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,15 +84,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecrRepository.EcrRepositoryConfig",
+		"@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig",
 		reflect.TypeOf((*EcrRepositoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecrRepository.EcrRepositoryEncryptionConfiguration",
+		"@cdktf/provider-aws.ecrRepository.EcrRepositoryEncryptionConfiguration",
 		reflect.TypeOf((*EcrRepositoryEncryptionConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ecrRepository.EcrRepositoryEncryptionConfigurationList",
+		"@cdktf/provider-aws.ecrRepository.EcrRepositoryEncryptionConfigurationList",
 		reflect.TypeOf((*EcrRepositoryEncryptionConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -113,7 +113,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ecrRepository.EcrRepositoryEncryptionConfigurationOutputReference",
+		"@cdktf/provider-aws.ecrRepository.EcrRepositoryEncryptionConfigurationOutputReference",
 		reflect.TypeOf((*EcrRepositoryEncryptionConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -151,11 +151,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecrRepository.EcrRepositoryImageScanningConfiguration",
+		"@cdktf/provider-aws.ecrRepository.EcrRepositoryImageScanningConfiguration",
 		reflect.TypeOf((*EcrRepositoryImageScanningConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ecrRepository.EcrRepositoryImageScanningConfigurationOutputReference",
+		"@cdktf/provider-aws.ecrRepository.EcrRepositoryImageScanningConfigurationOutputReference",
 		reflect.TypeOf((*EcrRepositoryImageScanningConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -189,11 +189,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecrRepository.EcrRepositoryTimeouts",
+		"@cdktf/provider-aws.ecrRepository.EcrRepositoryTimeouts",
 		reflect.TypeOf((*EcrRepositoryTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ecrRepository.EcrRepositoryTimeoutsOutputReference",
+		"@cdktf/provider-aws.ecrRepository.EcrRepositoryTimeoutsOutputReference",
 		reflect.TypeOf((*EcrRepositoryTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

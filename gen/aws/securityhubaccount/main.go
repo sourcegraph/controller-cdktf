@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.securityhubAccount.SecurityhubAccount",
+		"@cdktf/provider-aws.securityhubAccount.SecurityhubAccount",
 		reflect.TypeOf((*SecurityhubAccount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -55,7 +55,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.securityhubAccount.SecurityhubAccountConfig",
+		"@cdktf/provider-aws.securityhubAccount.SecurityhubAccountConfig",
 		reflect.TypeOf((*SecurityhubAccountConfig)(nil)).Elem(),
 	)
 }

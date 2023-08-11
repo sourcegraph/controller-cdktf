@@ -116,7 +116,7 @@ func NewImagebuilderImageRecipeBlockDeviceMappingList(terraformResource cdktf.II
 	j := jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingList{}
 
 	_jsii_.Create(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipeBlockDeviceMappingList",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeBlockDeviceMappingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewImagebuilderImageRecipeBlockDeviceMappingList_Override(i ImagebuilderIma
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipeBlockDeviceMappingList",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeBlockDeviceMappingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

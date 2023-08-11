@@ -116,7 +116,7 @@ func NewDataAwsInstanceFilterList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_DataAwsInstanceFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceFilterList",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsInstanceFilterList_Override(d DataAwsInstanceFilterList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceFilterList",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

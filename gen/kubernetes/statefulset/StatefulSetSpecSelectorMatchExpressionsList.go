@@ -116,7 +116,7 @@ func NewStatefulSetSpecSelectorMatchExpressionsList(terraformResource cdktf.IInt
 	j := jsiiProxy_StatefulSetSpecSelectorMatchExpressionsList{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecSelectorMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewStatefulSetSpecSelectorMatchExpressionsList_Override(s StatefulSetSpecSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecSelectorMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

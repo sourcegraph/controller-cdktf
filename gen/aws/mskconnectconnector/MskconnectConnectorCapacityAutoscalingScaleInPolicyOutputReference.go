@@ -180,7 +180,7 @@ func NewMskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference(terra
 	j := jsiiProxy_MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewMskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

@@ -228,7 +228,7 @@ func NewOpsworksGangliaLayerLoadBasedAutoScalingOutputReference(terraformResourc
 	j := jsiiProxy_OpsworksGangliaLayerLoadBasedAutoScalingOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingOutputReference",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewOpsworksGangliaLayerLoadBasedAutoScalingOutputReference_Override(o Opswo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingOutputReference",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

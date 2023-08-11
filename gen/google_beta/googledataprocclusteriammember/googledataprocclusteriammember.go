@@ -448,7 +448,7 @@ func NewGoogleDataprocClusterIamMember(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleDataprocClusterIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMember",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleDataprocClusterIamMember_Override(g GoogleDataprocClusterIamMember
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMember",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleDataprocClusterIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMember",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleDataprocClusterIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMember",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleDataprocClusterIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMember",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleDataprocClusterIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMember",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMember",
 		"tfResourceType",
 		&returns,
 	)

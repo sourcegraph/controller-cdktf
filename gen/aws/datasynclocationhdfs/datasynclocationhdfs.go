@@ -652,7 +652,7 @@ func NewDatasyncLocationHdfs(scope constructs.Construct, id *string, config *Dat
 	j := jsiiProxy_DatasyncLocationHdfs{}
 
 	_jsii_.Create(
-		"aws.datasyncLocationHdfs.DatasyncLocationHdfs",
+		"@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfs",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -665,7 +665,7 @@ func NewDatasyncLocationHdfs_Override(d DatasyncLocationHdfs, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datasyncLocationHdfs.DatasyncLocationHdfs",
+		"@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfs",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -908,7 +908,7 @@ func DatasyncLocationHdfs_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datasyncLocationHdfs.DatasyncLocationHdfs",
+		"@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfs",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -927,7 +927,7 @@ func DatasyncLocationHdfs_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datasyncLocationHdfs.DatasyncLocationHdfs",
+		"@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfs",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -946,7 +946,7 @@ func DatasyncLocationHdfs_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datasyncLocationHdfs.DatasyncLocationHdfs",
+		"@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfs",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -959,7 +959,7 @@ func DatasyncLocationHdfs_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.datasyncLocationHdfs.DatasyncLocationHdfs",
+		"@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfs",
 		"tfResourceType",
 		&returns,
 	)

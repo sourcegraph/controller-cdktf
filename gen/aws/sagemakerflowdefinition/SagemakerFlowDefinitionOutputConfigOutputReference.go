@@ -203,7 +203,7 @@ func NewSagemakerFlowDefinitionOutputConfigOutputReference(terraformResource cdk
 	j := jsiiProxy_SagemakerFlowDefinitionOutputConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerFlowDefinition.SagemakerFlowDefinitionOutputConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionOutputConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewSagemakerFlowDefinitionOutputConfigOutputReference_Override(s SagemakerF
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerFlowDefinition.SagemakerFlowDefinitionOutputConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionOutputConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

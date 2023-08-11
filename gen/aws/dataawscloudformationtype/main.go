@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsCloudformationType.DataAwsCloudformationType",
+		"@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationType",
 		reflect.TypeOf((*DataAwsCloudformationType)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsCloudformationType.DataAwsCloudformationTypeConfig",
+		"@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeConfig",
 		reflect.TypeOf((*DataAwsCloudformationTypeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsCloudformationType.DataAwsCloudformationTypeLoggingConfig",
+		"@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeLoggingConfig",
 		reflect.TypeOf((*DataAwsCloudformationTypeLoggingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsCloudformationType.DataAwsCloudformationTypeLoggingConfigList",
+		"@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeLoggingConfigList",
 		reflect.TypeOf((*DataAwsCloudformationTypeLoggingConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsCloudformationType.DataAwsCloudformationTypeLoggingConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeLoggingConfigOutputReference",
 		reflect.TypeOf((*DataAwsCloudformationTypeLoggingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

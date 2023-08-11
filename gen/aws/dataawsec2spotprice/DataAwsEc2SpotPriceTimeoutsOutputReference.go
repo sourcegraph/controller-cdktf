@@ -180,7 +180,7 @@ func NewDataAwsEc2SpotPriceTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_DataAwsEc2SpotPriceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsEc2SpotPriceTimeoutsOutputReference_Override(d DataAwsEc2SpotPric
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

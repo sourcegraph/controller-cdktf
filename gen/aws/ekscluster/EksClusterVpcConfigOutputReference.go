@@ -297,7 +297,7 @@ func NewEksClusterVpcConfigOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_EksClusterVpcConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.eksCluster.EksClusterVpcConfigOutputReference",
+		"@cdktf/provider-aws.eksCluster.EksClusterVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -309,7 +309,7 @@ func NewEksClusterVpcConfigOutputReference_Override(e EksClusterVpcConfigOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksCluster.EksClusterVpcConfigOutputReference",
+		"@cdktf/provider-aws.eksCluster.EksClusterVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

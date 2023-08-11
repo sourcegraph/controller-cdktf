@@ -104,7 +104,7 @@ func NewDataAwsBackupReportPlanReportSettingList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataAwsBackupReportPlanReportSettingList{}
 
 	_jsii_.Create(
-		"aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportSettingList",
+		"@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportSettingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsBackupReportPlanReportSettingList_Override(d DataAwsBackupReportP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportSettingList",
+		"@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportSettingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

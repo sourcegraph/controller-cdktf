@@ -116,7 +116,7 @@ func NewDefaultServiceAccountV1SecretList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_DefaultServiceAccountV1SecretList{}
 
 	_jsii_.Create(
-		"kubernetes.defaultServiceAccountV1.DefaultServiceAccountV1SecretList",
+		"@cdktf/provider-kubernetes.defaultServiceAccountV1.DefaultServiceAccountV1SecretList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDefaultServiceAccountV1SecretList_Override(d DefaultServiceAccountV1Secr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.defaultServiceAccountV1.DefaultServiceAccountV1SecretList",
+		"@cdktf/provider-kubernetes.defaultServiceAccountV1.DefaultServiceAccountV1SecretList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

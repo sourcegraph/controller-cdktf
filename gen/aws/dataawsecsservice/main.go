@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsEcsService.DataAwsEcsService",
+		"@cdktf/provider-aws.dataAwsEcsService.DataAwsEcsService",
 		reflect.TypeOf((*DataAwsEcsService)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEcsService.DataAwsEcsServiceConfig",
+		"@cdktf/provider-aws.dataAwsEcsService.DataAwsEcsServiceConfig",
 		reflect.TypeOf((*DataAwsEcsServiceConfig)(nil)).Elem(),
 	)
 }

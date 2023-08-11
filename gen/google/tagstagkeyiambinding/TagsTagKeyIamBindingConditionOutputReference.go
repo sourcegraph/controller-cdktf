@@ -226,7 +226,7 @@ func NewTagsTagKeyIamBindingConditionOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_TagsTagKeyIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.tagsTagKeyIamBinding.TagsTagKeyIamBindingConditionOutputReference",
+		"@cdktf/provider-google.tagsTagKeyIamBinding.TagsTagKeyIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewTagsTagKeyIamBindingConditionOutputReference_Override(t TagsTagKeyIamBin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.tagsTagKeyIamBinding.TagsTagKeyIamBindingConditionOutputReference",
+		"@cdktf/provider-google.tagsTagKeyIamBinding.TagsTagKeyIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

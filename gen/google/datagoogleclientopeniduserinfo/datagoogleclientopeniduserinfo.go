@@ -266,7 +266,7 @@ func NewDataGoogleClientOpenidUserinfo(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataGoogleClientOpenidUserinfo{}
 
 	_jsii_.Create(
-		"google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo",
+		"@cdktf/provider-google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -279,7 +279,7 @@ func NewDataGoogleClientOpenidUserinfo_Override(d DataGoogleClientOpenidUserinfo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo",
+		"@cdktf/provider-google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -357,7 +357,7 @@ func DataGoogleClientOpenidUserinfo_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo",
+		"@cdktf/provider-google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -376,7 +376,7 @@ func DataGoogleClientOpenidUserinfo_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo",
+		"@cdktf/provider-google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -395,7 +395,7 @@ func DataGoogleClientOpenidUserinfo_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo",
+		"@cdktf/provider-google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -408,7 +408,7 @@ func DataGoogleClientOpenidUserinfo_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo",
+		"@cdktf/provider-google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo",
 		"tfResourceType",
 		&returns,
 	)

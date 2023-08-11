@@ -228,7 +228,7 @@ func NewKendraExperienceTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_KendraExperienceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.kendraExperience.KendraExperienceTimeoutsOutputReference",
+		"@cdktf/provider-aws.kendraExperience.KendraExperienceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewKendraExperienceTimeoutsOutputReference_Override(k KendraExperienceTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraExperience.KendraExperienceTimeoutsOutputReference",
+		"@cdktf/provider-aws.kendraExperience.KendraExperienceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

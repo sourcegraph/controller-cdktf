@@ -592,7 +592,7 @@ func NewGoogleComputeGlobalAddress(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleComputeGlobalAddress{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeGlobalAddress.GoogleComputeGlobalAddress",
+		"@cdktf/provider-google-beta.googleComputeGlobalAddress.GoogleComputeGlobalAddress",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -605,7 +605,7 @@ func NewGoogleComputeGlobalAddress_Override(g GoogleComputeGlobalAddress, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeGlobalAddress.GoogleComputeGlobalAddress",
+		"@cdktf/provider-google-beta.googleComputeGlobalAddress.GoogleComputeGlobalAddress",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -826,7 +826,7 @@ func GoogleComputeGlobalAddress_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeGlobalAddress.GoogleComputeGlobalAddress",
+		"@cdktf/provider-google-beta.googleComputeGlobalAddress.GoogleComputeGlobalAddress",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -845,7 +845,7 @@ func GoogleComputeGlobalAddress_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeGlobalAddress.GoogleComputeGlobalAddress",
+		"@cdktf/provider-google-beta.googleComputeGlobalAddress.GoogleComputeGlobalAddress",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -864,7 +864,7 @@ func GoogleComputeGlobalAddress_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeGlobalAddress.GoogleComputeGlobalAddress",
+		"@cdktf/provider-google-beta.googleComputeGlobalAddress.GoogleComputeGlobalAddress",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -877,7 +877,7 @@ func GoogleComputeGlobalAddress_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeGlobalAddress.GoogleComputeGlobalAddress",
+		"@cdktf/provider-google-beta.googleComputeGlobalAddress.GoogleComputeGlobalAddress",
 		"tfResourceType",
 		&returns,
 	)

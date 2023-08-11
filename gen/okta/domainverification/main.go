@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.domainVerification.DomainVerification",
+		"@cdktf/provider-okta.domainVerification.DomainVerification",
 		reflect.TypeOf((*DomainVerification)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,7 +57,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.domainVerification.DomainVerificationConfig",
+		"@cdktf/provider-okta.domainVerification.DomainVerificationConfig",
 		reflect.TypeOf((*DomainVerificationConfig)(nil)).Elem(),
 	)
 }

@@ -285,7 +285,7 @@ func NewCertificateSigningRequestV1MetadataOutputReference(terraformResource cdk
 	j := jsiiProxy_CertificateSigningRequestV1MetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -297,7 +297,7 @@ func NewCertificateSigningRequestV1MetadataOutputReference_Override(c Certificat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -366,7 +366,7 @@ func NewInternetGatewayAttachment(scope constructs.Construct, id *string, config
 	j := jsiiProxy_InternetGatewayAttachment{}
 
 	_jsii_.Create(
-		"aws.internetGatewayAttachment.InternetGatewayAttachment",
+		"@cdktf/provider-aws.internetGatewayAttachment.InternetGatewayAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewInternetGatewayAttachment_Override(i InternetGatewayAttachment, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.internetGatewayAttachment.InternetGatewayAttachment",
+		"@cdktf/provider-aws.internetGatewayAttachment.InternetGatewayAttachment",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -512,7 +512,7 @@ func InternetGatewayAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.internetGatewayAttachment.InternetGatewayAttachment",
+		"@cdktf/provider-aws.internetGatewayAttachment.InternetGatewayAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func InternetGatewayAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.internetGatewayAttachment.InternetGatewayAttachment",
+		"@cdktf/provider-aws.internetGatewayAttachment.InternetGatewayAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func InternetGatewayAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.internetGatewayAttachment.InternetGatewayAttachment",
+		"@cdktf/provider-aws.internetGatewayAttachment.InternetGatewayAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func InternetGatewayAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.internetGatewayAttachment.InternetGatewayAttachment",
+		"@cdktf/provider-aws.internetGatewayAttachment.InternetGatewayAttachment",
 		"tfResourceType",
 		&returns,
 	)

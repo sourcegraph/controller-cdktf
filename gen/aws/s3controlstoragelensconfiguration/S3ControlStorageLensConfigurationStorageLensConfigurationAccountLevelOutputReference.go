@@ -275,7 +275,7 @@ func NewS3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOut
 	j := jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutputReference",
+		"@cdktf/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewS3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutputReference",
+		"@cdktf/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -342,7 +342,7 @@ func NewSsmResourceDataSync(scope constructs.Construct, id *string, config *SsmR
 	j := jsiiProxy_SsmResourceDataSync{}
 
 	_jsii_.Create(
-		"aws.ssmResourceDataSync.SsmResourceDataSync",
+		"@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSync",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewSsmResourceDataSync_Override(s SsmResourceDataSync, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmResourceDataSync.SsmResourceDataSync",
+		"@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSync",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -477,7 +477,7 @@ func SsmResourceDataSync_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmResourceDataSync.SsmResourceDataSync",
+		"@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSync",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -496,7 +496,7 @@ func SsmResourceDataSync_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmResourceDataSync.SsmResourceDataSync",
+		"@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSync",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func SsmResourceDataSync_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmResourceDataSync.SsmResourceDataSync",
+		"@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSync",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -528,7 +528,7 @@ func SsmResourceDataSync_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ssmResourceDataSync.SsmResourceDataSync",
+		"@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSync",
 		"tfResourceType",
 		&returns,
 	)

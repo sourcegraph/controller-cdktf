@@ -450,7 +450,7 @@ func NewGameliftScript(scope constructs.Construct, id *string, config *GameliftS
 	j := jsiiProxy_GameliftScript{}
 
 	_jsii_.Create(
-		"aws.gameliftScript.GameliftScript",
+		"@cdktf/provider-aws.gameliftScript.GameliftScript",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -463,7 +463,7 @@ func NewGameliftScript_Override(g GameliftScript, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftScript.GameliftScript",
+		"@cdktf/provider-aws.gameliftScript.GameliftScript",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -629,7 +629,7 @@ func GameliftScript_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.gameliftScript.GameliftScript",
+		"@cdktf/provider-aws.gameliftScript.GameliftScript",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -648,7 +648,7 @@ func GameliftScript_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.gameliftScript.GameliftScript",
+		"@cdktf/provider-aws.gameliftScript.GameliftScript",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func GameliftScript_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.gameliftScript.GameliftScript",
+		"@cdktf/provider-aws.gameliftScript.GameliftScript",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func GameliftScript_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.gameliftScript.GameliftScript",
+		"@cdktf/provider-aws.gameliftScript.GameliftScript",
 		"tfResourceType",
 		&returns,
 	)

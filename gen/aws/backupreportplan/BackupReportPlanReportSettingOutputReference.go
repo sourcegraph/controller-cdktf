@@ -227,7 +227,7 @@ func NewBackupReportPlanReportSettingOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_BackupReportPlanReportSettingOutputReference{}
 
 	_jsii_.Create(
-		"aws.backupReportPlan.BackupReportPlanReportSettingOutputReference",
+		"@cdktf/provider-aws.backupReportPlan.BackupReportPlanReportSettingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewBackupReportPlanReportSettingOutputReference_Override(b BackupReportPlan
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupReportPlan.BackupReportPlanReportSettingOutputReference",
+		"@cdktf/provider-aws.backupReportPlan.BackupReportPlanReportSettingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

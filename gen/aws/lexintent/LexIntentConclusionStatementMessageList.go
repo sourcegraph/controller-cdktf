@@ -116,7 +116,7 @@ func NewLexIntentConclusionStatementMessageList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_LexIntentConclusionStatementMessageList{}
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentConclusionStatementMessageList",
+		"@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLexIntentConclusionStatementMessageList_Override(l LexIntentConclusionSt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentConclusionStatementMessageList",
+		"@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

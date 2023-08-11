@@ -203,7 +203,7 @@ func NewGameServicesGameServerConfigFleetConfigsOutputReference(terraformResourc
 	j := jsiiProxy_GameServicesGameServerConfigFleetConfigsOutputReference{}
 
 	_jsii_.Create(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigFleetConfigsOutputReference",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigFleetConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGameServicesGameServerConfigFleetConfigsOutputReference_Override(g GameS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigFleetConfigsOutputReference",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigFleetConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

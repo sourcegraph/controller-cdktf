@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.eventHook.EventHook",
+		"@cdktf/provider-okta.eventHook.EventHook",
 		reflect.TypeOf((*EventHook)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.eventHook.EventHookConfig",
+		"@cdktf/provider-okta.eventHook.EventHookConfig",
 		reflect.TypeOf((*EventHookConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.eventHook.EventHookHeaders",
+		"@cdktf/provider-okta.eventHook.EventHookHeaders",
 		reflect.TypeOf((*EventHookHeaders)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.eventHook.EventHookHeadersList",
+		"@cdktf/provider-okta.eventHook.EventHookHeadersList",
 		reflect.TypeOf((*EventHookHeadersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -100,7 +100,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.eventHook.EventHookHeadersOutputReference",
+		"@cdktf/provider-okta.eventHook.EventHookHeadersOutputReference",
 		reflect.TypeOf((*EventHookHeadersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

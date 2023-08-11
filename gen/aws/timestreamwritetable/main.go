@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.timestreamwriteTable.TimestreamwriteTable",
+		"@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable",
 		reflect.TypeOf((*TimestreamwriteTable)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,19 +74,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.timestreamwriteTable.TimestreamwriteTableConfig",
+		"@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableConfig",
 		reflect.TypeOf((*TimestreamwriteTableConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWriteProperties",
+		"@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWriteProperties",
 		reflect.TypeOf((*TimestreamwriteTableMagneticStoreWriteProperties)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation",
+		"@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation",
 		reflect.TypeOf((*TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationOutputReference",
+		"@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationOutputReference",
 		reflect.TypeOf((*TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -122,11 +122,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration",
+		"@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration",
 		reflect.TypeOf((*TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3ConfigurationOutputReference",
+		"@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3ConfigurationOutputReference",
 		reflect.TypeOf((*TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3ConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -170,7 +170,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesOutputReference",
+		"@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesOutputReference",
 		reflect.TypeOf((*TimestreamwriteTableMagneticStoreWritePropertiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -209,11 +209,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.timestreamwriteTable.TimestreamwriteTableRetentionProperties",
+		"@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableRetentionProperties",
 		reflect.TypeOf((*TimestreamwriteTableRetentionProperties)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.timestreamwriteTable.TimestreamwriteTableRetentionPropertiesOutputReference",
+		"@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableRetentionPropertiesOutputReference",
 		reflect.TypeOf((*TimestreamwriteTableRetentionPropertiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

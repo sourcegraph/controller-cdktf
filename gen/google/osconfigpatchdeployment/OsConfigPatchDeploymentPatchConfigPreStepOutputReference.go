@@ -204,7 +204,7 @@ func NewOsConfigPatchDeploymentPatchConfigPreStepOutputReference(terraformResour
 	j := jsiiProxy_OsConfigPatchDeploymentPatchConfigPreStepOutputReference{}
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewOsConfigPatchDeploymentPatchConfigPreStepOutputReference_Override(o OsCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

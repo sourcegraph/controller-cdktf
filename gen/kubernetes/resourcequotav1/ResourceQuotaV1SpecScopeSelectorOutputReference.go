@@ -180,7 +180,7 @@ func NewResourceQuotaV1SpecScopeSelectorOutputReference(terraformResource cdktf.
 	j := jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.resourceQuotaV1.ResourceQuotaV1SpecScopeSelectorOutputReference",
+		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1SpecScopeSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewResourceQuotaV1SpecScopeSelectorOutputReference_Override(r ResourceQuota
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.resourceQuotaV1.ResourceQuotaV1SpecScopeSelectorOutputReference",
+		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1SpecScopeSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

@@ -204,7 +204,7 @@ func NewEbsSnapshotCopyTimeoutsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_EbsSnapshotCopyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ebsSnapshotCopy.EbsSnapshotCopyTimeoutsOutputReference",
+		"@cdktf/provider-aws.ebsSnapshotCopy.EbsSnapshotCopyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEbsSnapshotCopyTimeoutsOutputReference_Override(e EbsSnapshotCopyTimeout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ebsSnapshotCopy.EbsSnapshotCopyTimeoutsOutputReference",
+		"@cdktf/provider-aws.ebsSnapshotCopy.EbsSnapshotCopyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

@@ -104,7 +104,7 @@ func NewDataOktaAppSamlAttributeStatementsList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataOktaAppSamlAttributeStatementsList{}
 
 	_jsii_.Create(
-		"okta.dataOktaAppSaml.DataOktaAppSamlAttributeStatementsList",
+		"@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlAttributeStatementsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataOktaAppSamlAttributeStatementsList_Override(d DataOktaAppSamlAttribu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaAppSaml.DataOktaAppSamlAttributeStatementsList",
+		"@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlAttributeStatementsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

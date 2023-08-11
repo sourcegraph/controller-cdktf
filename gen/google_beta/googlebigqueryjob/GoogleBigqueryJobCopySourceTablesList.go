@@ -116,7 +116,7 @@ func NewGoogleBigqueryJobCopySourceTablesList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_GoogleBigqueryJobCopySourceTablesList{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryJob.GoogleBigqueryJobCopySourceTablesList",
+		"@cdktf/provider-google-beta.googleBigqueryJob.GoogleBigqueryJobCopySourceTablesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleBigqueryJobCopySourceTablesList_Override(g GoogleBigqueryJobCopySo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryJob.GoogleBigqueryJobCopySourceTablesList",
+		"@cdktf/provider-google-beta.googleBigqueryJob.GoogleBigqueryJobCopySourceTablesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

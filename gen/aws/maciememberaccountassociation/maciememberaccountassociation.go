@@ -319,7 +319,7 @@ func NewMacieMemberAccountAssociation(scope constructs.Construct, id *string, co
 	j := jsiiProxy_MacieMemberAccountAssociation{}
 
 	_jsii_.Create(
-		"aws.macieMemberAccountAssociation.MacieMemberAccountAssociation",
+		"@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -332,7 +332,7 @@ func NewMacieMemberAccountAssociation_Override(m MacieMemberAccountAssociation, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macieMemberAccountAssociation.MacieMemberAccountAssociation",
+		"@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociation",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -454,7 +454,7 @@ func MacieMemberAccountAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macieMemberAccountAssociation.MacieMemberAccountAssociation",
+		"@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -473,7 +473,7 @@ func MacieMemberAccountAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macieMemberAccountAssociation.MacieMemberAccountAssociation",
+		"@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -492,7 +492,7 @@ func MacieMemberAccountAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macieMemberAccountAssociation.MacieMemberAccountAssociation",
+		"@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func MacieMemberAccountAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.macieMemberAccountAssociation.MacieMemberAccountAssociation",
+		"@cdktf/provider-aws.macieMemberAccountAssociation.MacieMemberAccountAssociation",
 		"tfResourceType",
 		&returns,
 	)

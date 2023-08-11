@@ -202,7 +202,7 @@ func NewGoogleDialogflowEntityTypeEntitiesOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleDialogflowEntityTypeEntitiesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeEntitiesOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeEntitiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleDialogflowEntityTypeEntitiesOutputReference_Override(g GoogleDialo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeEntitiesOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeEntitiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

@@ -343,7 +343,7 @@ func NewThreatInsightSettings(scope constructs.Construct, id *string, config *Th
 	j := jsiiProxy_ThreatInsightSettings{}
 
 	_jsii_.Create(
-		"okta.threatInsightSettings.ThreatInsightSettings",
+		"@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewThreatInsightSettings_Override(t ThreatInsightSettings, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.threatInsightSettings.ThreatInsightSettings",
+		"@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettings",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -489,7 +489,7 @@ func ThreatInsightSettings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.threatInsightSettings.ThreatInsightSettings",
+		"@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func ThreatInsightSettings_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.threatInsightSettings.ThreatInsightSettings",
+		"@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func ThreatInsightSettings_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.threatInsightSettings.ThreatInsightSettings",
+		"@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettings",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func ThreatInsightSettings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.threatInsightSettings.ThreatInsightSettings",
+		"@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettings",
 		"tfResourceType",
 		&returns,
 	)

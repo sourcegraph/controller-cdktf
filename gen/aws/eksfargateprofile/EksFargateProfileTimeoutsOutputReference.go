@@ -204,7 +204,7 @@ func NewEksFargateProfileTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_EksFargateProfileTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.eksFargateProfile.EksFargateProfileTimeoutsOutputReference",
+		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfileTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEksFargateProfileTimeoutsOutputReference_Override(e EksFargateProfileTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksFargateProfile.EksFargateProfileTimeoutsOutputReference",
+		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfileTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

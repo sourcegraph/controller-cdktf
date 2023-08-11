@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"postgresql.provider.PostgresqlProvider",
+		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
 		reflect.TypeOf((*PostgresqlProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,11 +90,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"postgresql.provider.PostgresqlProviderClientcert",
+		"@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert",
 		reflect.TypeOf((*PostgresqlProviderClientcert)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"postgresql.provider.PostgresqlProviderConfig",
+		"@cdktf/provider-postgresql.provider.PostgresqlProviderConfig",
 		reflect.TypeOf((*PostgresqlProviderConfig)(nil)).Elem(),
 	)
 }

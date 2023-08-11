@@ -227,7 +227,7 @@ func NewNetworkServicesEdgeCacheKeysetPublicKeyOutputReference(terraformResource
 	j := jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference{}
 
 	_jsii_.Create(
-		"google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeysetPublicKeyOutputReference",
+		"@cdktf/provider-google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeysetPublicKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewNetworkServicesEdgeCacheKeysetPublicKeyOutputReference_Override(n Networ
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeysetPublicKeyOutputReference",
+		"@cdktf/provider-google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeysetPublicKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)

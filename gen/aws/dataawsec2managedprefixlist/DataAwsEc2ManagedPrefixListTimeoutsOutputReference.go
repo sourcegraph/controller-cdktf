@@ -180,7 +180,7 @@ func NewDataAwsEc2ManagedPrefixListTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_DataAwsEc2ManagedPrefixListTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixListTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixListTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsEc2ManagedPrefixListTimeoutsOutputReference_Override(d DataAwsEc2
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixListTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixListTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

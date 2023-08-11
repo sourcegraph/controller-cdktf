@@ -167,7 +167,7 @@ func NewGoogleFirestoreFieldTtlConfigOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_GoogleFirestoreFieldTtlConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleFirestoreField.GoogleFirestoreFieldTtlConfigOutputReference",
+		"@cdktf/provider-google-beta.googleFirestoreField.GoogleFirestoreFieldTtlConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewGoogleFirestoreFieldTtlConfigOutputReference_Override(g GoogleFirestoreF
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirestoreField.GoogleFirestoreFieldTtlConfigOutputReference",
+		"@cdktf/provider-google-beta.googleFirestoreField.GoogleFirestoreFieldTtlConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

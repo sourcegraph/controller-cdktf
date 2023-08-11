@@ -494,7 +494,7 @@ func NewServiceAccountKey(scope constructs.Construct, id *string, config *Servic
 	j := jsiiProxy_ServiceAccountKey{}
 
 	_jsii_.Create(
-		"google.serviceAccountKey.ServiceAccountKey",
+		"@cdktf/provider-google.serviceAccountKey.ServiceAccountKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -507,7 +507,7 @@ func NewServiceAccountKey_Override(s ServiceAccountKey, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.serviceAccountKey.ServiceAccountKey",
+		"@cdktf/provider-google.serviceAccountKey.ServiceAccountKey",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -684,7 +684,7 @@ func ServiceAccountKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.serviceAccountKey.ServiceAccountKey",
+		"@cdktf/provider-google.serviceAccountKey.ServiceAccountKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -703,7 +703,7 @@ func ServiceAccountKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.serviceAccountKey.ServiceAccountKey",
+		"@cdktf/provider-google.serviceAccountKey.ServiceAccountKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -722,7 +722,7 @@ func ServiceAccountKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.serviceAccountKey.ServiceAccountKey",
+		"@cdktf/provider-google.serviceAccountKey.ServiceAccountKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func ServiceAccountKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.serviceAccountKey.ServiceAccountKey",
+		"@cdktf/provider-google.serviceAccountKey.ServiceAccountKey",
 		"tfResourceType",
 		&returns,
 	)

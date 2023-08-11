@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.apigatewayv2Api.Apigatewayv2Api",
+		"@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api",
 		reflect.TypeOf((*Apigatewayv2Api)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -102,15 +102,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apigatewayv2Api.Apigatewayv2ApiConfig",
+		"@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig",
 		reflect.TypeOf((*Apigatewayv2ApiConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration",
+		"@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration",
 		reflect.TypeOf((*Apigatewayv2ApiCorsConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference",
+		"@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference",
 		reflect.TypeOf((*Apigatewayv2ApiCorsConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowCredentials", GoGetter: "AllowCredentials"},

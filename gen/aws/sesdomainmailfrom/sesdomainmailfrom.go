@@ -366,7 +366,7 @@ func NewSesDomainMailFrom(scope constructs.Construct, id *string, config *SesDom
 	j := jsiiProxy_SesDomainMailFrom{}
 
 	_jsii_.Create(
-		"aws.sesDomainMailFrom.SesDomainMailFrom",
+		"@cdktf/provider-aws.sesDomainMailFrom.SesDomainMailFrom",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewSesDomainMailFrom_Override(s SesDomainMailFrom, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesDomainMailFrom.SesDomainMailFrom",
+		"@cdktf/provider-aws.sesDomainMailFrom.SesDomainMailFrom",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -523,7 +523,7 @@ func SesDomainMailFrom_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesDomainMailFrom.SesDomainMailFrom",
+		"@cdktf/provider-aws.sesDomainMailFrom.SesDomainMailFrom",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func SesDomainMailFrom_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesDomainMailFrom.SesDomainMailFrom",
+		"@cdktf/provider-aws.sesDomainMailFrom.SesDomainMailFrom",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func SesDomainMailFrom_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesDomainMailFrom.SesDomainMailFrom",
+		"@cdktf/provider-aws.sesDomainMailFrom.SesDomainMailFrom",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func SesDomainMailFrom_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sesDomainMailFrom.SesDomainMailFrom",
+		"@cdktf/provider-aws.sesDomainMailFrom.SesDomainMailFrom",
 		"tfResourceType",
 		&returns,
 	)

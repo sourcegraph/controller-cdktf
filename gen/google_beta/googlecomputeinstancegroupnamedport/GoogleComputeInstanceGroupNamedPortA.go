@@ -437,7 +437,7 @@ func NewGoogleComputeInstanceGroupNamedPortA(scope constructs.Construct, id *str
 	j := jsiiProxy_GoogleComputeInstanceGroupNamedPortA{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceGroupNamedPort.GoogleComputeInstanceGroupNamedPortA",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroupNamedPort.GoogleComputeInstanceGroupNamedPortA",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -450,7 +450,7 @@ func NewGoogleComputeInstanceGroupNamedPortA_Override(g GoogleComputeInstanceGro
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceGroupNamedPort.GoogleComputeInstanceGroupNamedPortA",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroupNamedPort.GoogleComputeInstanceGroupNamedPortA",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -616,7 +616,7 @@ func GoogleComputeInstanceGroupNamedPortA_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceGroupNamedPort.GoogleComputeInstanceGroupNamedPortA",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroupNamedPort.GoogleComputeInstanceGroupNamedPortA",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -635,7 +635,7 @@ func GoogleComputeInstanceGroupNamedPortA_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceGroupNamedPort.GoogleComputeInstanceGroupNamedPortA",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroupNamedPort.GoogleComputeInstanceGroupNamedPortA",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func GoogleComputeInstanceGroupNamedPortA_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceGroupNamedPort.GoogleComputeInstanceGroupNamedPortA",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroupNamedPort.GoogleComputeInstanceGroupNamedPortA",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func GoogleComputeInstanceGroupNamedPortA_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeInstanceGroupNamedPort.GoogleComputeInstanceGroupNamedPortA",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroupNamedPort.GoogleComputeInstanceGroupNamedPortA",
 		"tfResourceType",
 		&returns,
 	)

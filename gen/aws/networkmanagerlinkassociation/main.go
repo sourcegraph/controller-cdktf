@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociation",
+		"@cdktf/provider-aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociation",
 		reflect.TypeOf((*NetworkmanagerLinkAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,15 +65,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociationConfig",
+		"@cdktf/provider-aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociationConfig",
 		reflect.TypeOf((*NetworkmanagerLinkAssociationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociationTimeouts",
+		"@cdktf/provider-aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociationTimeouts",
 		reflect.TypeOf((*NetworkmanagerLinkAssociationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociationTimeoutsOutputReference",
 		reflect.TypeOf((*NetworkmanagerLinkAssociationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

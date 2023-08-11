@@ -180,7 +180,7 @@ func NewCloudformationStackSetInstanceDeploymentTargetsOutputReference(terraform
 	j := jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudformationStackSetInstance.CloudformationStackSetInstanceDeploymentTargetsOutputReference",
+		"@cdktf/provider-aws.cloudformationStackSetInstance.CloudformationStackSetInstanceDeploymentTargetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewCloudformationStackSetInstanceDeploymentTargetsOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudformationStackSetInstance.CloudformationStackSetInstanceDeploymentTargetsOutputReference",
+		"@cdktf/provider-aws.cloudformationStackSetInstance.CloudformationStackSetInstanceDeploymentTargetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

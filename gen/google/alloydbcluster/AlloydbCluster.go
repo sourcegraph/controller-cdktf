@@ -599,7 +599,7 @@ func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbCl
 	j := jsiiProxy_AlloydbCluster{}
 
 	_jsii_.Create(
-		"google.alloydbCluster.AlloydbCluster",
+		"@cdktf/provider-google.alloydbCluster.AlloydbCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -612,7 +612,7 @@ func NewAlloydbCluster_Override(a AlloydbCluster, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.alloydbCluster.AlloydbCluster",
+		"@cdktf/provider-google.alloydbCluster.AlloydbCluster",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -789,7 +789,7 @@ func AlloydbCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.alloydbCluster.AlloydbCluster",
+		"@cdktf/provider-google.alloydbCluster.AlloydbCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -808,7 +808,7 @@ func AlloydbCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.alloydbCluster.AlloydbCluster",
+		"@cdktf/provider-google.alloydbCluster.AlloydbCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -827,7 +827,7 @@ func AlloydbCluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.alloydbCluster.AlloydbCluster",
+		"@cdktf/provider-google.alloydbCluster.AlloydbCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -840,7 +840,7 @@ func AlloydbCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.alloydbCluster.AlloydbCluster",
+		"@cdktf/provider-google.alloydbCluster.AlloydbCluster",
 		"tfResourceType",
 		&returns,
 	)

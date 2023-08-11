@@ -507,7 +507,7 @@ func NewCeCostCategory(scope constructs.Construct, id *string, config *CeCostCat
 	j := jsiiProxy_CeCostCategory{}
 
 	_jsii_.Create(
-		"aws.ceCostCategory.CeCostCategory",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategory",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -520,7 +520,7 @@ func NewCeCostCategory_Override(c CeCostCategory, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ceCostCategory.CeCostCategory",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategory",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -697,7 +697,7 @@ func CeCostCategory_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ceCostCategory.CeCostCategory",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategory",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -716,7 +716,7 @@ func CeCostCategory_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ceCostCategory.CeCostCategory",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategory",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func CeCostCategory_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ceCostCategory.CeCostCategory",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategory",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -748,7 +748,7 @@ func CeCostCategory_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ceCostCategory.CeCostCategory",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategory",
 		"tfResourceType",
 		&returns,
 	)

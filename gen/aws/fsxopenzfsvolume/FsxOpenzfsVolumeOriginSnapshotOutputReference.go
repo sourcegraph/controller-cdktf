@@ -202,7 +202,7 @@ func NewFsxOpenzfsVolumeOriginSnapshotOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_FsxOpenzfsVolumeOriginSnapshotOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsVolume.FsxOpenzfsVolumeOriginSnapshotOutputReference",
+		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeOriginSnapshotOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewFsxOpenzfsVolumeOriginSnapshotOutputReference_Override(f FsxOpenzfsVolum
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsVolume.FsxOpenzfsVolumeOriginSnapshotOutputReference",
+		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeOriginSnapshotOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

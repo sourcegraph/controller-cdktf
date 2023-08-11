@@ -353,7 +353,7 @@ func NewCloudwatchDashboard(scope constructs.Construct, id *string, config *Clou
 	j := jsiiProxy_CloudwatchDashboard{}
 
 	_jsii_.Create(
-		"aws.cloudwatchDashboard.CloudwatchDashboard",
+		"@cdktf/provider-aws.cloudwatchDashboard.CloudwatchDashboard",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewCloudwatchDashboard_Override(c CloudwatchDashboard, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchDashboard.CloudwatchDashboard",
+		"@cdktf/provider-aws.cloudwatchDashboard.CloudwatchDashboard",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -499,7 +499,7 @@ func CloudwatchDashboard_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchDashboard.CloudwatchDashboard",
+		"@cdktf/provider-aws.cloudwatchDashboard.CloudwatchDashboard",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func CloudwatchDashboard_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchDashboard.CloudwatchDashboard",
+		"@cdktf/provider-aws.cloudwatchDashboard.CloudwatchDashboard",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func CloudwatchDashboard_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchDashboard.CloudwatchDashboard",
+		"@cdktf/provider-aws.cloudwatchDashboard.CloudwatchDashboard",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func CloudwatchDashboard_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudwatchDashboard.CloudwatchDashboard",
+		"@cdktf/provider-aws.cloudwatchDashboard.CloudwatchDashboard",
 		"tfResourceType",
 		&returns,
 	)

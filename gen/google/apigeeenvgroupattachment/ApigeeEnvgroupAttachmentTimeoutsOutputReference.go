@@ -204,7 +204,7 @@ func NewApigeeEnvgroupAttachmentTimeoutsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_ApigeeEnvgroupAttachmentTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.apigeeEnvgroupAttachment.ApigeeEnvgroupAttachmentTimeoutsOutputReference",
+		"@cdktf/provider-google.apigeeEnvgroupAttachment.ApigeeEnvgroupAttachmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewApigeeEnvgroupAttachmentTimeoutsOutputReference_Override(a ApigeeEnvgrou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeEnvgroupAttachment.ApigeeEnvgroupAttachmentTimeoutsOutputReference",
+		"@cdktf/provider-google.apigeeEnvgroupAttachment.ApigeeEnvgroupAttachmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

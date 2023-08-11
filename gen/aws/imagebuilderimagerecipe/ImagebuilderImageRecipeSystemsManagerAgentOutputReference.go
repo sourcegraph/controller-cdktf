@@ -179,7 +179,7 @@ func NewImagebuilderImageRecipeSystemsManagerAgentOutputReference(terraformResou
 	j := jsiiProxy_ImagebuilderImageRecipeSystemsManagerAgentOutputReference{}
 
 	_jsii_.Create(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipeSystemsManagerAgentOutputReference",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeSystemsManagerAgentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewImagebuilderImageRecipeSystemsManagerAgentOutputReference_Override(i Ima
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipeSystemsManagerAgentOutputReference",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeSystemsManagerAgentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

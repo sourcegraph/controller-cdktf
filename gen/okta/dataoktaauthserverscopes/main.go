@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes",
+		"@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes",
 		reflect.TypeOf((*DataOktaAuthServerScopes)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -56,15 +56,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesConfig",
+		"@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesConfig",
 		reflect.TypeOf((*DataOktaAuthServerScopesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopes",
+		"@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopes",
 		reflect.TypeOf((*DataOktaAuthServerScopesScopes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopesList",
+		"@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopesList",
 		reflect.TypeOf((*DataOktaAuthServerScopesScopesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -84,7 +84,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopesOutputReference",
+		"@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopesOutputReference",
 		reflect.TypeOf((*DataOktaAuthServerScopesScopesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

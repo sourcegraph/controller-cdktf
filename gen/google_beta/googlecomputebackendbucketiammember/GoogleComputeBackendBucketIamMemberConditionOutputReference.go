@@ -226,7 +226,7 @@ func NewGoogleComputeBackendBucketIamMemberConditionOutputReference(terraformRes
 	j := jsiiProxy_GoogleComputeBackendBucketIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleComputeBackendBucketIamMemberConditionOutputReference_Override(g G
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

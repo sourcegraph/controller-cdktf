@@ -460,7 +460,7 @@ func NewApigeeFlowhook(scope constructs.Construct, id *string, config *ApigeeFlo
 	j := jsiiProxy_ApigeeFlowhook{}
 
 	_jsii_.Create(
-		"google.apigeeFlowhook.ApigeeFlowhook",
+		"@cdktf/provider-google.apigeeFlowhook.ApigeeFlowhook",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -473,7 +473,7 @@ func NewApigeeFlowhook_Override(a ApigeeFlowhook, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeFlowhook.ApigeeFlowhook",
+		"@cdktf/provider-google.apigeeFlowhook.ApigeeFlowhook",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -650,7 +650,7 @@ func ApigeeFlowhook_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeFlowhook.ApigeeFlowhook",
+		"@cdktf/provider-google.apigeeFlowhook.ApigeeFlowhook",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func ApigeeFlowhook_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeFlowhook.ApigeeFlowhook",
+		"@cdktf/provider-google.apigeeFlowhook.ApigeeFlowhook",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func ApigeeFlowhook_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeFlowhook.ApigeeFlowhook",
+		"@cdktf/provider-google.apigeeFlowhook.ApigeeFlowhook",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func ApigeeFlowhook_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.apigeeFlowhook.ApigeeFlowhook",
+		"@cdktf/provider-google.apigeeFlowhook.ApigeeFlowhook",
 		"tfResourceType",
 		&returns,
 	)

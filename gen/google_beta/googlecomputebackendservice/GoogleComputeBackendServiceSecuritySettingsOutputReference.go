@@ -202,7 +202,7 @@ func NewGoogleComputeBackendServiceSecuritySettingsOutputReference(terraformReso
 	j := jsiiProxy_GoogleComputeBackendServiceSecuritySettingsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendServiceSecuritySettingsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceSecuritySettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleComputeBackendServiceSecuritySettingsOutputReference_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendServiceSecuritySettingsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceSecuritySettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.route.Route",
+		"@cdktf/provider-aws.route.Route",
 		reflect.TypeOf((*Route)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -106,15 +106,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route.RouteConfig",
+		"@cdktf/provider-aws.route.RouteConfig",
 		reflect.TypeOf((*RouteConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.route.RouteTimeouts",
+		"@cdktf/provider-aws.route.RouteTimeouts",
 		reflect.TypeOf((*RouteTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.route.RouteTimeoutsOutputReference",
+		"@cdktf/provider-aws.route.RouteTimeoutsOutputReference",
 		reflect.TypeOf((*RouteTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

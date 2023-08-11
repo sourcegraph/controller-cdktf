@@ -179,7 +179,7 @@ func NewWafv2WebAclRuleStatementAndStatementOutputReference(terraformResource cd
 	j := jsiiProxy_Wafv2WebAclRuleStatementAndStatementOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementAndStatementOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementAndStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewWafv2WebAclRuleStatementAndStatementOutputReference_Override(w Wafv2WebA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementAndStatementOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementAndStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

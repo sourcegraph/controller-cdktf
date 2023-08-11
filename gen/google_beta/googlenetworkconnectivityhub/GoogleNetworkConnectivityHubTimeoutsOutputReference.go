@@ -228,7 +228,7 @@ func NewGoogleNetworkConnectivityHubTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleNetworkConnectivityHubTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHubTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHubTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleNetworkConnectivityHubTimeoutsOutputReference_Override(g GoogleNet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHubTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHubTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

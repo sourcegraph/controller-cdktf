@@ -325,7 +325,7 @@ func NewDataOktaPolicy(scope constructs.Construct, id *string, config *DataOktaP
 	j := jsiiProxy_DataOktaPolicy{}
 
 	_jsii_.Create(
-		"okta.dataOktaPolicy.DataOktaPolicy",
+		"@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -338,7 +338,7 @@ func NewDataOktaPolicy_Override(d DataOktaPolicy, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaPolicy.DataOktaPolicy",
+		"@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -449,7 +449,7 @@ func DataOktaPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaPolicy.DataOktaPolicy",
+		"@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -468,7 +468,7 @@ func DataOktaPolicy_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaPolicy.DataOktaPolicy",
+		"@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -487,7 +487,7 @@ func DataOktaPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaPolicy.DataOktaPolicy",
+		"@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -500,7 +500,7 @@ func DataOktaPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.dataOktaPolicy.DataOktaPolicy",
+		"@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputRefe
 	j := jsiiProxy_MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputReference{}
 
 	_jsii_.Create(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

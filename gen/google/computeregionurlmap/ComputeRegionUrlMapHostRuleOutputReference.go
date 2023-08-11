@@ -226,7 +226,7 @@ func NewComputeRegionUrlMapHostRuleOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_ComputeRegionUrlMapHostRuleOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewComputeRegionUrlMapHostRuleOutputReference_Override(c ComputeRegionUrlMa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

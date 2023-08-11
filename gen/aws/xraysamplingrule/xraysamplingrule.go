@@ -633,7 +633,7 @@ func NewXraySamplingRule(scope constructs.Construct, id *string, config *XraySam
 	j := jsiiProxy_XraySamplingRule{}
 
 	_jsii_.Create(
-		"aws.xraySamplingRule.XraySamplingRule",
+		"@cdktf/provider-aws.xraySamplingRule.XraySamplingRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -646,7 +646,7 @@ func NewXraySamplingRule_Override(x XraySamplingRule, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.xraySamplingRule.XraySamplingRule",
+		"@cdktf/provider-aws.xraySamplingRule.XraySamplingRule",
 		[]interface{}{scope, id, config},
 		x,
 	)
@@ -911,7 +911,7 @@ func XraySamplingRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.xraySamplingRule.XraySamplingRule",
+		"@cdktf/provider-aws.xraySamplingRule.XraySamplingRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -930,7 +930,7 @@ func XraySamplingRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.xraySamplingRule.XraySamplingRule",
+		"@cdktf/provider-aws.xraySamplingRule.XraySamplingRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -949,7 +949,7 @@ func XraySamplingRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.xraySamplingRule.XraySamplingRule",
+		"@cdktf/provider-aws.xraySamplingRule.XraySamplingRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -962,7 +962,7 @@ func XraySamplingRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.xraySamplingRule.XraySamplingRule",
+		"@cdktf/provider-aws.xraySamplingRule.XraySamplingRule",
 		"tfResourceType",
 		&returns,
 	)

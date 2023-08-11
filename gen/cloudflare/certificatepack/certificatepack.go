@@ -530,7 +530,7 @@ func NewCertificatePack(scope constructs.Construct, id *string, config *Certific
 	j := jsiiProxy_CertificatePack{}
 
 	_jsii_.Create(
-		"cloudflare.certificatePack.CertificatePack",
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -543,7 +543,7 @@ func NewCertificatePack_Override(c CertificatePack, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.certificatePack.CertificatePack",
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -742,7 +742,7 @@ func CertificatePack_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.certificatePack.CertificatePack",
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -761,7 +761,7 @@ func CertificatePack_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.certificatePack.CertificatePack",
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -780,7 +780,7 @@ func CertificatePack_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.certificatePack.CertificatePack",
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -793,7 +793,7 @@ func CertificatePack_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.certificatePack.CertificatePack",
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
 		"tfResourceType",
 		&returns,
 	)

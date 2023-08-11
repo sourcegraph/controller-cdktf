@@ -104,7 +104,7 @@ func NewDataGoogleAlloydbLocationsLocationsList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataGoogleAlloydbLocationsLocationsList{}
 
 	_jsii_.Create(
-		"google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsList",
+		"@cdktf/provider-google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleAlloydbLocationsLocationsList_Override(d DataGoogleAlloydbLoca
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsList",
+		"@cdktf/provider-google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -179,7 +179,7 @@ func NewGoogleContainerAzureNodePoolMaxPodsConstraintOutputReference(terraformRe
 	j := jsiiProxy_GoogleContainerAzureNodePoolMaxPodsConstraintOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolMaxPodsConstraintOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolMaxPodsConstraintOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleContainerAzureNodePoolMaxPodsConstraintOutputReference_Override(g 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolMaxPodsConstraintOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolMaxPodsConstraintOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

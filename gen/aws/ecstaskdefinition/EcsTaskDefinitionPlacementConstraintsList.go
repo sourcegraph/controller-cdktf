@@ -116,7 +116,7 @@ func NewEcsTaskDefinitionPlacementConstraintsList(terraformResource cdktf.IInter
 	j := jsiiProxy_EcsTaskDefinitionPlacementConstraintsList{}
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsList",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEcsTaskDefinitionPlacementConstraintsList_Override(e EcsTaskDefinitionPl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsList",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

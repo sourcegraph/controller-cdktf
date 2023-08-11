@@ -179,7 +179,7 @@ func NewContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference
 	j := jsiiProxy_ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

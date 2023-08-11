@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.redshiftEndpointAccess.RedshiftEndpointAccess",
+		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccess",
 		reflect.TypeOf((*RedshiftEndpointAccess)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.redshiftEndpointAccess.RedshiftEndpointAccessConfig",
+		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccessConfig",
 		reflect.TypeOf((*RedshiftEndpointAccessConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpoint",
+		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpoint",
 		reflect.TypeOf((*RedshiftEndpointAccessVpcEndpoint)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointList",
+		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointList",
 		reflect.TypeOf((*RedshiftEndpointAccessVpcEndpointList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -98,11 +98,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointNetworkInterface",
+		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointNetworkInterface",
 		reflect.TypeOf((*RedshiftEndpointAccessVpcEndpointNetworkInterface)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointNetworkInterfaceList",
+		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointNetworkInterfaceList",
 		reflect.TypeOf((*RedshiftEndpointAccessVpcEndpointNetworkInterfaceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -122,7 +122,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointNetworkInterfaceOutputReference",
+		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointNetworkInterfaceOutputReference",
 		reflect.TypeOf((*RedshiftEndpointAccessVpcEndpointNetworkInterfaceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZone", GoGetter: "AvailabilityZone"},
@@ -158,7 +158,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointOutputReference",
+		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointOutputReference",
 		reflect.TypeOf((*RedshiftEndpointAccessVpcEndpointOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

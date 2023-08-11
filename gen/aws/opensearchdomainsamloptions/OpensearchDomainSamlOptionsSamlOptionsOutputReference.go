@@ -324,7 +324,7 @@ func NewOpensearchDomainSamlOptionsSamlOptionsOutputReference(terraformResource 
 	j := jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsSamlOptionsOutputReference",
+		"@cdktf/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsSamlOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewOpensearchDomainSamlOptionsSamlOptionsOutputReference_Override(o Opensea
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsSamlOptionsOutputReference",
+		"@cdktf/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsSamlOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

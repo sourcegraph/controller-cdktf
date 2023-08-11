@@ -228,7 +228,7 @@ func NewGoogleComputeBackendServiceConsistentHashOutputReference(terraformResour
 	j := jsiiProxy_GoogleComputeBackendServiceConsistentHashOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendServiceConsistentHashOutputReference",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceConsistentHashOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeBackendServiceConsistentHashOutputReference_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendServiceConsistentHashOutputReference",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceConsistentHashOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

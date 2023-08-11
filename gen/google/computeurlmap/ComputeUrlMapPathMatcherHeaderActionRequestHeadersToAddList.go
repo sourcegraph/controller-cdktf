@@ -116,7 +116,7 @@ func NewComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddList(terraformRes
 	j := jsiiProxy_ComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddList{}
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddList",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddList_Override(c C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddList",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

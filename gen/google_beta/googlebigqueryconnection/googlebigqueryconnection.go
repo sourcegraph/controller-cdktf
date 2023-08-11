@@ -582,7 +582,7 @@ func NewGoogleBigqueryConnection(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_GoogleBigqueryConnection{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnection",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnection",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -595,7 +595,7 @@ func NewGoogleBigqueryConnection_Override(g GoogleBigqueryConnection, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnection",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnection",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -761,7 +761,7 @@ func GoogleBigqueryConnection_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnection",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnection",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -780,7 +780,7 @@ func GoogleBigqueryConnection_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnection",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnection",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -799,7 +799,7 @@ func GoogleBigqueryConnection_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnection",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnection",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -812,7 +812,7 @@ func GoogleBigqueryConnection_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnection",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnection",
 		"tfResourceType",
 		&returns,
 	)

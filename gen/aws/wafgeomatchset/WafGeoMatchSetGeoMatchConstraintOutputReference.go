@@ -202,7 +202,7 @@ func NewWafGeoMatchSetGeoMatchConstraintOutputReference(terraformResource cdktf.
 	j := jsiiProxy_WafGeoMatchSetGeoMatchConstraintOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafGeoMatchSet.WafGeoMatchSetGeoMatchConstraintOutputReference",
+		"@cdktf/provider-aws.wafGeoMatchSet.WafGeoMatchSetGeoMatchConstraintOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewWafGeoMatchSetGeoMatchConstraintOutputReference_Override(w WafGeoMatchSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafGeoMatchSet.WafGeoMatchSetGeoMatchConstraintOutputReference",
+		"@cdktf/provider-aws.wafGeoMatchSet.WafGeoMatchSetGeoMatchConstraintOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

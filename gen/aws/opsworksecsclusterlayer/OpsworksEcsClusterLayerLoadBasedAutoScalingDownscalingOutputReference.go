@@ -324,7 +324,7 @@ func NewOpsworksEcsClusterLayerLoadBasedAutoScalingDownscalingOutputReference(te
 	j := jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingDownscalingOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingDownscalingOutputReference",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingDownscalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewOpsworksEcsClusterLayerLoadBasedAutoScalingDownscalingOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingDownscalingOutputReference",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingDownscalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

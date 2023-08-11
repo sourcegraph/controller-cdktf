@@ -116,7 +116,7 @@ func NewAppmeshVirtualNodeSpecBackendList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_AppmeshVirtualNodeSpecBackendList{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendList",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppmeshVirtualNodeSpecBackendList_Override(a AppmeshVirtualNodeSpecBacke
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendList",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

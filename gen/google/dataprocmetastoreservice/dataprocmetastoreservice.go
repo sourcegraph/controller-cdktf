@@ -721,7 +721,7 @@ func NewDataprocMetastoreService(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataprocMetastoreService{}
 
 	_jsii_.Create(
-		"google.dataprocMetastoreService.DataprocMetastoreService",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -734,7 +734,7 @@ func NewDataprocMetastoreService_Override(d DataprocMetastoreService, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocMetastoreService.DataprocMetastoreService",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreService",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -944,7 +944,7 @@ func DataprocMetastoreService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocMetastoreService.DataprocMetastoreService",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -963,7 +963,7 @@ func DataprocMetastoreService_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocMetastoreService.DataprocMetastoreService",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -982,7 +982,7 @@ func DataprocMetastoreService_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocMetastoreService.DataprocMetastoreService",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreService",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -995,7 +995,7 @@ func DataprocMetastoreService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataprocMetastoreService.DataprocMetastoreService",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreService",
 		"tfResourceType",
 		&returns,
 	)

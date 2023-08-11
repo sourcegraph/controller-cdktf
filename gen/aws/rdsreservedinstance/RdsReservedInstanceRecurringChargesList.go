@@ -104,7 +104,7 @@ func NewRdsReservedInstanceRecurringChargesList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_RdsReservedInstanceRecurringChargesList{}
 
 	_jsii_.Create(
-		"aws.rdsReservedInstance.RdsReservedInstanceRecurringChargesList",
+		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstanceRecurringChargesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewRdsReservedInstanceRecurringChargesList_Override(r RdsReservedInstanceRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rdsReservedInstance.RdsReservedInstanceRecurringChargesList",
+		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstanceRecurringChargesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

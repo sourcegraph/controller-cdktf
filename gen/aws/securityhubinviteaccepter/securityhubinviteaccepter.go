@@ -330,7 +330,7 @@ func NewSecurityhubInviteAccepter(scope constructs.Construct, id *string, config
 	j := jsiiProxy_SecurityhubInviteAccepter{}
 
 	_jsii_.Create(
-		"aws.securityhubInviteAccepter.SecurityhubInviteAccepter",
+		"@cdktf/provider-aws.securityhubInviteAccepter.SecurityhubInviteAccepter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -343,7 +343,7 @@ func NewSecurityhubInviteAccepter_Override(s SecurityhubInviteAccepter, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInviteAccepter.SecurityhubInviteAccepter",
+		"@cdktf/provider-aws.securityhubInviteAccepter.SecurityhubInviteAccepter",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -465,7 +465,7 @@ func SecurityhubInviteAccepter_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubInviteAccepter.SecurityhubInviteAccepter",
+		"@cdktf/provider-aws.securityhubInviteAccepter.SecurityhubInviteAccepter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -484,7 +484,7 @@ func SecurityhubInviteAccepter_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubInviteAccepter.SecurityhubInviteAccepter",
+		"@cdktf/provider-aws.securityhubInviteAccepter.SecurityhubInviteAccepter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -503,7 +503,7 @@ func SecurityhubInviteAccepter_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubInviteAccepter.SecurityhubInviteAccepter",
+		"@cdktf/provider-aws.securityhubInviteAccepter.SecurityhubInviteAccepter",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func SecurityhubInviteAccepter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.securityhubInviteAccepter.SecurityhubInviteAccepter",
+		"@cdktf/provider-aws.securityhubInviteAccepter.SecurityhubInviteAccepter",
 		"tfResourceType",
 		&returns,
 	)

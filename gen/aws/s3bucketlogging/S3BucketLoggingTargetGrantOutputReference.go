@@ -202,7 +202,7 @@ func NewS3BucketLoggingTargetGrantOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_S3BucketLoggingTargetGrantOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketLogging.S3BucketLoggingTargetGrantOutputReference",
+		"@cdktf/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewS3BucketLoggingTargetGrantOutputReference_Override(s S3BucketLoggingTarg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketLogging.S3BucketLoggingTargetGrantOutputReference",
+		"@cdktf/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

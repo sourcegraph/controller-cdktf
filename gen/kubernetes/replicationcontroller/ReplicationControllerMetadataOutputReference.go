@@ -309,7 +309,7 @@ func NewReplicationControllerMetadataOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_ReplicationControllerMetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerMetadataOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -321,7 +321,7 @@ func NewReplicationControllerMetadataOutputReference_Override(r ReplicationContr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerMetadataOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

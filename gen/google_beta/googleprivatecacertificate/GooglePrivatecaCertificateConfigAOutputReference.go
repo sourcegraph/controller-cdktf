@@ -225,7 +225,7 @@ func NewGooglePrivatecaCertificateConfigAOutputReference(terraformResource cdktf
 	j := jsiiProxy_GooglePrivatecaCertificateConfigAOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigAOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewGooglePrivatecaCertificateConfigAOutputReference_Override(g GooglePrivat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigAOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

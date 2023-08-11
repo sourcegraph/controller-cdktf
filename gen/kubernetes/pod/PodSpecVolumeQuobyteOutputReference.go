@@ -274,7 +274,7 @@ func NewPodSpecVolumeQuobyteOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_PodSpecVolumeQuobyteOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeQuobyteOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeQuobyteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -286,7 +286,7 @@ func NewPodSpecVolumeQuobyteOutputReference_Override(p PodSpecVolumeQuobyteOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeQuobyteOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeQuobyteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

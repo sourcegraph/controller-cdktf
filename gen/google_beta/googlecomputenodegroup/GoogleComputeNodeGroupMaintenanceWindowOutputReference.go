@@ -179,7 +179,7 @@ func NewGoogleComputeNodeGroupMaintenanceWindowOutputReference(terraformResource
 	j := jsiiProxy_GoogleComputeNodeGroupMaintenanceWindowOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeNodeGroup.GoogleComputeNodeGroupMaintenanceWindowOutputReference",
+		"@cdktf/provider-google-beta.googleComputeNodeGroup.GoogleComputeNodeGroupMaintenanceWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleComputeNodeGroupMaintenanceWindowOutputReference_Override(g Google
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeNodeGroup.GoogleComputeNodeGroupMaintenanceWindowOutputReference",
+		"@cdktf/provider-google-beta.googleComputeNodeGroup.GoogleComputeNodeGroupMaintenanceWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

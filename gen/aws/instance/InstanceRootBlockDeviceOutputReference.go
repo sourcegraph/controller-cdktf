@@ -370,7 +370,7 @@ func NewInstanceRootBlockDeviceOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_InstanceRootBlockDeviceOutputReference{}
 
 	_jsii_.Create(
-		"aws.instance.InstanceRootBlockDeviceOutputReference",
+		"@cdktf/provider-aws.instance.InstanceRootBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -382,7 +382,7 @@ func NewInstanceRootBlockDeviceOutputReference_Override(i InstanceRootBlockDevic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.instance.InstanceRootBlockDeviceOutputReference",
+		"@cdktf/provider-aws.instance.InstanceRootBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

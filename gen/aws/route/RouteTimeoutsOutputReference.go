@@ -228,7 +228,7 @@ func NewRouteTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_RouteTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.route.RouteTimeoutsOutputReference",
+		"@cdktf/provider-aws.route.RouteTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewRouteTimeoutsOutputReference_Override(r RouteTimeoutsOutputReference, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route.RouteTimeoutsOutputReference",
+		"@cdktf/provider-aws.route.RouteTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

@@ -353,7 +353,7 @@ func NewGoogleKmsCryptoKeyIamPolicy(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleKmsCryptoKeyIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewGoogleKmsCryptoKeyIamPolicy_Override(g GoogleKmsCryptoKeyIamPolicy, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -499,7 +499,7 @@ func GoogleKmsCryptoKeyIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func GoogleKmsCryptoKeyIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func GoogleKmsCryptoKeyIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func GoogleKmsCryptoKeyIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

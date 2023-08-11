@@ -178,7 +178,7 @@ func NewStorageObjectAccessControlProjectTeamOutputReference(terraformResource c
 	j := jsiiProxy_StorageObjectAccessControlProjectTeamOutputReference{}
 
 	_jsii_.Create(
-		"google.storageObjectAccessControl.StorageObjectAccessControlProjectTeamOutputReference",
+		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControlProjectTeamOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewStorageObjectAccessControlProjectTeamOutputReference_Override(s StorageO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageObjectAccessControl.StorageObjectAccessControlProjectTeamOutputReference",
+		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControlProjectTeamOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

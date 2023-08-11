@@ -1562,7 +1562,7 @@ func NewOauthApp(scope constructs.Construct, id *string, config *OauthAppConfig)
 	j := jsiiProxy_OauthApp{}
 
 	_jsii_.Create(
-		"okta.oauthApp.OauthApp",
+		"@cdktf/provider-okta.oauthApp.OauthApp",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1575,7 +1575,7 @@ func NewOauthApp_Override(o OauthApp, scope constructs.Construct, id *string, co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.oauthApp.OauthApp",
+		"@cdktf/provider-okta.oauthApp.OauthApp",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -2203,7 +2203,7 @@ func OauthApp_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.oauthApp.OauthApp",
+		"@cdktf/provider-okta.oauthApp.OauthApp",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -2222,7 +2222,7 @@ func OauthApp_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.oauthApp.OauthApp",
+		"@cdktf/provider-okta.oauthApp.OauthApp",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -2241,7 +2241,7 @@ func OauthApp_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.oauthApp.OauthApp",
+		"@cdktf/provider-okta.oauthApp.OauthApp",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -2254,7 +2254,7 @@ func OauthApp_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.oauthApp.OauthApp",
+		"@cdktf/provider-okta.oauthApp.OauthApp",
 		"tfResourceType",
 		&returns,
 	)

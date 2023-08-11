@@ -449,7 +449,7 @@ func NewTimestreamwriteTable(scope constructs.Construct, id *string, config *Tim
 	j := jsiiProxy_TimestreamwriteTable{}
 
 	_jsii_.Create(
-		"aws.timestreamwriteTable.TimestreamwriteTable",
+		"@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -462,7 +462,7 @@ func NewTimestreamwriteTable_Override(t TimestreamwriteTable, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.timestreamwriteTable.TimestreamwriteTable",
+		"@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -617,7 +617,7 @@ func TimestreamwriteTable_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.timestreamwriteTable.TimestreamwriteTable",
+		"@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -636,7 +636,7 @@ func TimestreamwriteTable_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.timestreamwriteTable.TimestreamwriteTable",
+		"@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func TimestreamwriteTable_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.timestreamwriteTable.TimestreamwriteTable",
+		"@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func TimestreamwriteTable_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.timestreamwriteTable.TimestreamwriteTable",
+		"@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable",
 		"tfResourceType",
 		&returns,
 	)

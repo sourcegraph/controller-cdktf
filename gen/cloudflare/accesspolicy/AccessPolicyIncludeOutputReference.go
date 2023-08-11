@@ -636,7 +636,7 @@ func NewAccessPolicyIncludeOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_AccessPolicyIncludeOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyIncludeOutputReference",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -648,7 +648,7 @@ func NewAccessPolicyIncludeOutputReference_Override(a AccessPolicyIncludeOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyIncludeOutputReference",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

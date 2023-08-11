@@ -204,7 +204,7 @@ func NewStorageBucketWebsiteOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_StorageBucketWebsiteOutputReference{}
 
 	_jsii_.Create(
-		"google.storageBucket.StorageBucketWebsiteOutputReference",
+		"@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewStorageBucketWebsiteOutputReference_Override(s StorageBucketWebsiteOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageBucket.StorageBucketWebsiteOutputReference",
+		"@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

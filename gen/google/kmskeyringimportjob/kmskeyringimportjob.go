@@ -467,7 +467,7 @@ func NewKmsKeyRingImportJob(scope constructs.Construct, id *string, config *KmsK
 	j := jsiiProxy_KmsKeyRingImportJob{}
 
 	_jsii_.Create(
-		"google.kmsKeyRingImportJob.KmsKeyRingImportJob",
+		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJob",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -480,7 +480,7 @@ func NewKmsKeyRingImportJob_Override(k KmsKeyRingImportJob, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.kmsKeyRingImportJob.KmsKeyRingImportJob",
+		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJob",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -635,7 +635,7 @@ func KmsKeyRingImportJob_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.kmsKeyRingImportJob.KmsKeyRingImportJob",
+		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJob",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func KmsKeyRingImportJob_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.kmsKeyRingImportJob.KmsKeyRingImportJob",
+		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJob",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -673,7 +673,7 @@ func KmsKeyRingImportJob_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.kmsKeyRingImportJob.KmsKeyRingImportJob",
+		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJob",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -686,7 +686,7 @@ func KmsKeyRingImportJob_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.kmsKeyRingImportJob.KmsKeyRingImportJob",
+		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJob",
 		"tfResourceType",
 		&returns,
 	)

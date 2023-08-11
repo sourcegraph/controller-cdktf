@@ -180,7 +180,7 @@ func NewHealthcheckTimeoutsOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_HealthcheckTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.healthcheck.HealthcheckTimeoutsOutputReference",
+		"@cdktf/provider-cloudflare.healthcheck.HealthcheckTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewHealthcheckTimeoutsOutputReference_Override(h HealthcheckTimeoutsOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.healthcheck.HealthcheckTimeoutsOutputReference",
+		"@cdktf/provider-cloudflare.healthcheck.HealthcheckTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		h,
 	)

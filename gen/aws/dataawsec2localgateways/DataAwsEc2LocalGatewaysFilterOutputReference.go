@@ -202,7 +202,7 @@ func NewDataAwsEc2LocalGatewaysFilterOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_DataAwsEc2LocalGatewaysFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2LocalGateways.DataAwsEc2LocalGatewaysFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2LocalGateways.DataAwsEc2LocalGatewaysFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsEc2LocalGatewaysFilterOutputReference_Override(d DataAwsEc2LocalG
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2LocalGateways.DataAwsEc2LocalGatewaysFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2LocalGateways.DataAwsEc2LocalGatewaysFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

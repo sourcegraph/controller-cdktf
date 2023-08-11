@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"kubernetes.provider.KubernetesProvider",
+		"@cdktf/provider-kubernetes.provider.KubernetesProvider",
 		reflect.TypeOf((*KubernetesProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,15 +93,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.provider.KubernetesProviderConfig",
+		"@cdktf/provider-kubernetes.provider.KubernetesProviderConfig",
 		reflect.TypeOf((*KubernetesProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.provider.KubernetesProviderExec",
+		"@cdktf/provider-kubernetes.provider.KubernetesProviderExec",
 		reflect.TypeOf((*KubernetesProviderExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.provider.KubernetesProviderExperiments",
+		"@cdktf/provider-kubernetes.provider.KubernetesProviderExperiments",
 		reflect.TypeOf((*KubernetesProviderExperiments)(nil)).Elem(),
 	)
 }

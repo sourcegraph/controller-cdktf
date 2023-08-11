@@ -116,7 +116,7 @@ func NewDevicefarmDevicePoolRuleList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_DevicefarmDevicePoolRuleList{}
 
 	_jsii_.Create(
-		"aws.devicefarmDevicePool.DevicefarmDevicePoolRuleList",
+		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDevicefarmDevicePoolRuleList_Override(d DevicefarmDevicePoolRuleList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.devicefarmDevicePool.DevicefarmDevicePoolRuleList",
+		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

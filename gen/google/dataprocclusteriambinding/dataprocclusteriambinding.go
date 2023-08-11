@@ -448,7 +448,7 @@ func NewDataprocClusterIamBinding(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DataprocClusterIamBinding{}
 
 	_jsii_.Create(
-		"google.dataprocClusterIamBinding.DataprocClusterIamBinding",
+		"@cdktf/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewDataprocClusterIamBinding_Override(d DataprocClusterIamBinding, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocClusterIamBinding.DataprocClusterIamBinding",
+		"@cdktf/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -627,7 +627,7 @@ func DataprocClusterIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocClusterIamBinding.DataprocClusterIamBinding",
+		"@cdktf/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func DataprocClusterIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocClusterIamBinding.DataprocClusterIamBinding",
+		"@cdktf/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func DataprocClusterIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocClusterIamBinding.DataprocClusterIamBinding",
+		"@cdktf/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DataprocClusterIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataprocClusterIamBinding.DataprocClusterIamBinding",
+		"@cdktf/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewCloudRunDomainMappingTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_CloudRunDomainMappingTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCloudRunDomainMappingTimeoutsOutputReference_Override(c CloudRunDomainMa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

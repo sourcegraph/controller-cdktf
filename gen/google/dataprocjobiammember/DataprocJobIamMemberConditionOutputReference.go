@@ -226,7 +226,7 @@ func NewDataprocJobIamMemberConditionOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_DataprocJobIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocJobIamMember.DataprocJobIamMemberConditionOutputReference",
+		"@cdktf/provider-google.dataprocJobIamMember.DataprocJobIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDataprocJobIamMemberConditionOutputReference_Override(d DataprocJobIamMe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocJobIamMember.DataprocJobIamMemberConditionOutputReference",
+		"@cdktf/provider-google.dataprocJobIamMember.DataprocJobIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

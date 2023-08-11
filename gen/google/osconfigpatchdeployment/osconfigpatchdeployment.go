@@ -578,7 +578,7 @@ func NewOsConfigPatchDeployment(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_OsConfigPatchDeployment{}
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeployment",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeployment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -591,7 +591,7 @@ func NewOsConfigPatchDeployment_Override(o OsConfigPatchDeployment, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeployment",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeployment",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -746,7 +746,7 @@ func OsConfigPatchDeployment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.osConfigPatchDeployment.OsConfigPatchDeployment",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeployment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -765,7 +765,7 @@ func OsConfigPatchDeployment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.osConfigPatchDeployment.OsConfigPatchDeployment",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeployment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -784,7 +784,7 @@ func OsConfigPatchDeployment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.osConfigPatchDeployment.OsConfigPatchDeployment",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeployment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -797,7 +797,7 @@ func OsConfigPatchDeployment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.osConfigPatchDeployment.OsConfigPatchDeployment",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeployment",
 		"tfResourceType",
 		&returns,
 	)

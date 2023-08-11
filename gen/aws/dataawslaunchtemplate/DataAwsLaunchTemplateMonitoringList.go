@@ -104,7 +104,7 @@ func NewDataAwsLaunchTemplateMonitoringList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataAwsLaunchTemplateMonitoringList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateMonitoringList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateMonitoringList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLaunchTemplateMonitoringList_Override(d DataAwsLaunchTemplateMoni
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateMonitoringList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateMonitoringList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

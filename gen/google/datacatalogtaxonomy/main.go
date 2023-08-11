@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataCatalogTaxonomy.DataCatalogTaxonomy",
+		"@cdktf/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomy",
 		reflect.TypeOf((*DataCatalogTaxonomy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activatedPolicyTypes", GoGetter: "ActivatedPolicyTypes"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogTaxonomy.DataCatalogTaxonomyConfig",
+		"@cdktf/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomyConfig",
 		reflect.TypeOf((*DataCatalogTaxonomyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogTaxonomy.DataCatalogTaxonomyTimeouts",
+		"@cdktf/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomyTimeouts",
 		reflect.TypeOf((*DataCatalogTaxonomyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogTaxonomy.DataCatalogTaxonomyTimeoutsOutputReference",
+		"@cdktf/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomyTimeoutsOutputReference",
 		reflect.TypeOf((*DataCatalogTaxonomyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

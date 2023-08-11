@@ -299,7 +299,7 @@ func NewGoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference(terrafor
 	j := jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewGoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -116,7 +116,7 @@ func NewGoogleBigqueryDatasetAccessList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_GoogleBigqueryDatasetAccessList{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessList",
+		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleBigqueryDatasetAccessList_Override(g GoogleBigqueryDatasetAccessLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessList",
+		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

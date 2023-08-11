@@ -808,7 +808,7 @@ func NewGlueCrawler(scope constructs.Construct, id *string, config *GlueCrawlerC
 	j := jsiiProxy_GlueCrawler{}
 
 	_jsii_.Create(
-		"aws.glueCrawler.GlueCrawler",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawler",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -821,7 +821,7 @@ func NewGlueCrawler_Override(g GlueCrawler, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueCrawler.GlueCrawler",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawler",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1053,7 +1053,7 @@ func GlueCrawler_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueCrawler.GlueCrawler",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawler",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1072,7 +1072,7 @@ func GlueCrawler_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueCrawler.GlueCrawler",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawler",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1091,7 +1091,7 @@ func GlueCrawler_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueCrawler.GlueCrawler",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawler",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1104,7 +1104,7 @@ func GlueCrawler_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.glueCrawler.GlueCrawler",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawler",
 		"tfResourceType",
 		&returns,
 	)

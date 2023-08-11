@@ -202,7 +202,7 @@ func NewRedshiftParameterGroupParameterOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_RedshiftParameterGroupParameterOutputReference{}
 
 	_jsii_.Create(
-		"aws.redshiftParameterGroup.RedshiftParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewRedshiftParameterGroupParameterOutputReference_Override(r RedshiftParame
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftParameterGroup.RedshiftParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

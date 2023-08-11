@@ -225,7 +225,7 @@ func NewSecurityhubInsightFiltersUserDefinedValuesOutputReference(terraformResou
 	j := jsiiProxy_SecurityhubInsightFiltersUserDefinedValuesOutputReference{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewSecurityhubInsightFiltersUserDefinedValuesOutputReference_Override(s Sec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

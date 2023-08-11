@@ -414,7 +414,7 @@ func NewAccessRule(scope constructs.Construct, id *string, config *AccessRuleCon
 	j := jsiiProxy_AccessRule{}
 
 	_jsii_.Create(
-		"cloudflare.accessRule.AccessRule",
+		"@cdktf/provider-cloudflare.accessRule.AccessRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewAccessRule_Override(a AccessRule, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessRule.AccessRule",
+		"@cdktf/provider-cloudflare.accessRule.AccessRule",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -582,7 +582,7 @@ func AccessRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessRule.AccessRule",
+		"@cdktf/provider-cloudflare.accessRule.AccessRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func AccessRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessRule.AccessRule",
+		"@cdktf/provider-cloudflare.accessRule.AccessRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func AccessRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessRule.AccessRule",
+		"@cdktf/provider-cloudflare.accessRule.AccessRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func AccessRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.accessRule.AccessRule",
+		"@cdktf/provider-cloudflare.accessRule.AccessRule",
 		"tfResourceType",
 		&returns,
 	)

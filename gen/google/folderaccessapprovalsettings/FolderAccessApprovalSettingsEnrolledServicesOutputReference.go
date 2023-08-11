@@ -203,7 +203,7 @@ func NewFolderAccessApprovalSettingsEnrolledServicesOutputReference(terraformRes
 	j := jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesOutputReference{}
 
 	_jsii_.Create(
-		"google.folderAccessApprovalSettings.FolderAccessApprovalSettingsEnrolledServicesOutputReference",
+		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettingsEnrolledServicesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewFolderAccessApprovalSettingsEnrolledServicesOutputReference_Override(f F
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.folderAccessApprovalSettings.FolderAccessApprovalSettingsEnrolledServicesOutputReference",
+		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettingsEnrolledServicesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)

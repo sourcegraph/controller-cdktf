@@ -448,7 +448,7 @@ func NewCloudfunctions2FunctionIamMember(scope constructs.Construct, id *string,
 	j := jsiiProxy_Cloudfunctions2FunctionIamMember{}
 
 	_jsii_.Create(
-		"google.cloudfunctions2FunctionIamMember.Cloudfunctions2FunctionIamMember",
+		"@cdktf/provider-google.cloudfunctions2FunctionIamMember.Cloudfunctions2FunctionIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewCloudfunctions2FunctionIamMember_Override(c Cloudfunctions2FunctionIamMe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudfunctions2FunctionIamMember.Cloudfunctions2FunctionIamMember",
+		"@cdktf/provider-google.cloudfunctions2FunctionIamMember.Cloudfunctions2FunctionIamMember",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -627,7 +627,7 @@ func Cloudfunctions2FunctionIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudfunctions2FunctionIamMember.Cloudfunctions2FunctionIamMember",
+		"@cdktf/provider-google.cloudfunctions2FunctionIamMember.Cloudfunctions2FunctionIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func Cloudfunctions2FunctionIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudfunctions2FunctionIamMember.Cloudfunctions2FunctionIamMember",
+		"@cdktf/provider-google.cloudfunctions2FunctionIamMember.Cloudfunctions2FunctionIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func Cloudfunctions2FunctionIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudfunctions2FunctionIamMember.Cloudfunctions2FunctionIamMember",
+		"@cdktf/provider-google.cloudfunctions2FunctionIamMember.Cloudfunctions2FunctionIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func Cloudfunctions2FunctionIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudfunctions2FunctionIamMember.Cloudfunctions2FunctionIamMember",
+		"@cdktf/provider-google.cloudfunctions2FunctionIamMember.Cloudfunctions2FunctionIamMember",
 		"tfResourceType",
 		&returns,
 	)

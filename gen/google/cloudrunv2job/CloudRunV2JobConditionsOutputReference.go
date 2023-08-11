@@ -244,7 +244,7 @@ func NewCloudRunV2JobConditionsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_CloudRunV2JobConditionsOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobConditionsOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobConditionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -256,7 +256,7 @@ func NewCloudRunV2JobConditionsOutputReference_Override(c CloudRunV2JobCondition
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobConditionsOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobConditionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

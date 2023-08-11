@@ -342,7 +342,7 @@ func NewStoragegatewayCache(scope constructs.Construct, id *string, config *Stor
 	j := jsiiProxy_StoragegatewayCache{}
 
 	_jsii_.Create(
-		"aws.storagegatewayCache.StoragegatewayCache",
+		"@cdktf/provider-aws.storagegatewayCache.StoragegatewayCache",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewStoragegatewayCache_Override(s StoragegatewayCache, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.storagegatewayCache.StoragegatewayCache",
+		"@cdktf/provider-aws.storagegatewayCache.StoragegatewayCache",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -488,7 +488,7 @@ func StoragegatewayCache_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.storagegatewayCache.StoragegatewayCache",
+		"@cdktf/provider-aws.storagegatewayCache.StoragegatewayCache",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func StoragegatewayCache_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.storagegatewayCache.StoragegatewayCache",
+		"@cdktf/provider-aws.storagegatewayCache.StoragegatewayCache",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func StoragegatewayCache_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.storagegatewayCache.StoragegatewayCache",
+		"@cdktf/provider-aws.storagegatewayCache.StoragegatewayCache",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func StoragegatewayCache_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.storagegatewayCache.StoragegatewayCache",
+		"@cdktf/provider-aws.storagegatewayCache.StoragegatewayCache",
 		"tfResourceType",
 		&returns,
 	)

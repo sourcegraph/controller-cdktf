@@ -610,7 +610,7 @@ func NewEvidentlyLaunch(scope constructs.Construct, id *string, config *Evidentl
 	j := jsiiProxy_EvidentlyLaunch{}
 
 	_jsii_.Create(
-		"aws.evidentlyLaunch.EvidentlyLaunch",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -623,7 +623,7 @@ func NewEvidentlyLaunch_Override(e EvidentlyLaunch, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.evidentlyLaunch.EvidentlyLaunch",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -800,7 +800,7 @@ func EvidentlyLaunch_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.evidentlyLaunch.EvidentlyLaunch",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -819,7 +819,7 @@ func EvidentlyLaunch_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.evidentlyLaunch.EvidentlyLaunch",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -838,7 +838,7 @@ func EvidentlyLaunch_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.evidentlyLaunch.EvidentlyLaunch",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -851,7 +851,7 @@ func EvidentlyLaunch_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.evidentlyLaunch.EvidentlyLaunch",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch",
 		"tfResourceType",
 		&returns,
 	)

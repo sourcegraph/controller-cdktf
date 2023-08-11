@@ -202,7 +202,7 @@ func NewGoogleCloudbuildBitbucketServerConfigConnectedRepositoriesOutputReferenc
 	j := jsiiProxy_GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleCloudbuildBitbucketServerConfigConnectedRepositoriesOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

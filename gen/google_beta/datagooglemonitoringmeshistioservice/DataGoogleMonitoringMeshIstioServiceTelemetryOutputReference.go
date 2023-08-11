@@ -167,7 +167,7 @@ func NewDataGoogleMonitoringMeshIstioServiceTelemetryOutputReference(terraformRe
 	j := jsiiProxy_DataGoogleMonitoringMeshIstioServiceTelemetryOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioServiceTelemetryOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioServiceTelemetryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataGoogleMonitoringMeshIstioServiceTelemetryOutputReference_Override(d 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioServiceTelemetryOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioServiceTelemetryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

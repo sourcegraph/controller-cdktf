@@ -274,7 +274,7 @@ func NewSsmResourceDataSyncS3DestinationOutputReference(terraformResource cdktf.
 	j := jsiiProxy_SsmResourceDataSyncS3DestinationOutputReference{}
 
 	_jsii_.Create(
-		"aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference",
+		"@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -286,7 +286,7 @@ func NewSsmResourceDataSyncS3DestinationOutputReference_Override(s SsmResourceDa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference",
+		"@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

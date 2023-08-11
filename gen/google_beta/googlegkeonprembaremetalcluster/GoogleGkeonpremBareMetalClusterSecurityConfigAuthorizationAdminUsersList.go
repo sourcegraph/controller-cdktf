@@ -116,7 +116,7 @@ func NewGoogleGkeonpremBareMetalClusterSecurityConfigAuthorizationAdminUsersList
 	j := jsiiProxy_GoogleGkeonpremBareMetalClusterSecurityConfigAuthorizationAdminUsersList{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterSecurityConfigAuthorizationAdminUsersList",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterSecurityConfigAuthorizationAdminUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleGkeonpremBareMetalClusterSecurityConfigAuthorizationAdminUsersList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterSecurityConfigAuthorizationAdminUsersList",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterSecurityConfigAuthorizationAdminUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

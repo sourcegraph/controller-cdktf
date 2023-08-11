@@ -203,7 +203,7 @@ func NewLbListenerRuleActionForwardTargetGroupOutputReference(terraformResource 
 	j := jsiiProxy_LbListenerRuleActionForwardTargetGroupOutputReference{}
 
 	_jsii_.Create(
-		"aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewLbListenerRuleActionForwardTargetGroupOutputReference_Override(l LbListe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

@@ -180,7 +180,7 @@ func NewWafv2WebAclRuleActionChallengeOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_Wafv2WebAclRuleActionChallengeOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewWafv2WebAclRuleActionChallengeOutputReference_Override(w Wafv2WebAclRule
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

@@ -156,7 +156,7 @@ func NewDataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutp
 	j := jsiiProxy_DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewDataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

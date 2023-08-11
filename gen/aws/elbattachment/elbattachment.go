@@ -342,7 +342,7 @@ func NewElbAttachment(scope constructs.Construct, id *string, config *ElbAttachm
 	j := jsiiProxy_ElbAttachment{}
 
 	_jsii_.Create(
-		"aws.elbAttachment.ElbAttachment",
+		"@cdktf/provider-aws.elbAttachment.ElbAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewElbAttachment_Override(e ElbAttachment, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elbAttachment.ElbAttachment",
+		"@cdktf/provider-aws.elbAttachment.ElbAttachment",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -488,7 +488,7 @@ func ElbAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elbAttachment.ElbAttachment",
+		"@cdktf/provider-aws.elbAttachment.ElbAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func ElbAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elbAttachment.ElbAttachment",
+		"@cdktf/provider-aws.elbAttachment.ElbAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func ElbAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elbAttachment.ElbAttachment",
+		"@cdktf/provider-aws.elbAttachment.ElbAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func ElbAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.elbAttachment.ElbAttachment",
+		"@cdktf/provider-aws.elbAttachment.ElbAttachment",
 		"tfResourceType",
 		&returns,
 	)

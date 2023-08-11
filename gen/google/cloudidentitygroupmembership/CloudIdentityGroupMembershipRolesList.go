@@ -116,7 +116,7 @@ func NewCloudIdentityGroupMembershipRolesList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_CloudIdentityGroupMembershipRolesList{}
 
 	_jsii_.Create(
-		"google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesList",
+		"@cdktf/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudIdentityGroupMembershipRolesList_Override(c CloudIdentityGroupMembe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesList",
+		"@cdktf/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

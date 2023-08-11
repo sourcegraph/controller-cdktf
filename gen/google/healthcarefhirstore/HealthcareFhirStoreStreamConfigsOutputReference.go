@@ -203,7 +203,7 @@ func NewHealthcareFhirStoreStreamConfigsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference{}
 
 	_jsii_.Create(
-		"google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewHealthcareFhirStoreStreamConfigsOutputReference_Override(h HealthcareFhi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		h,
 	)

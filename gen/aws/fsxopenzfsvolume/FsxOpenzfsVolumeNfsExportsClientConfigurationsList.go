@@ -116,7 +116,7 @@ func NewFsxOpenzfsVolumeNfsExportsClientConfigurationsList(terraformResource cdk
 	j := jsiiProxy_FsxOpenzfsVolumeNfsExportsClientConfigurationsList{}
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsVolume.FsxOpenzfsVolumeNfsExportsClientConfigurationsList",
+		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeNfsExportsClientConfigurationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewFsxOpenzfsVolumeNfsExportsClientConfigurationsList_Override(f FsxOpenzfs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsVolume.FsxOpenzfsVolumeNfsExportsClientConfigurationsList",
+		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeNfsExportsClientConfigurationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)

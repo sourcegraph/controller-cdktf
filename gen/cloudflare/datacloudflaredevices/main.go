@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.dataCloudflareDevices.DataCloudflareDevices",
+		"@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevices",
 		reflect.TypeOf((*DataCloudflareDevices)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -56,15 +56,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.dataCloudflareDevices.DataCloudflareDevicesConfig",
+		"@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesConfig",
 		reflect.TypeOf((*DataCloudflareDevicesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevices",
+		"@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevices",
 		reflect.TypeOf((*DataCloudflareDevicesDevices)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevicesList",
+		"@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevicesList",
 		reflect.TypeOf((*DataCloudflareDevicesDevicesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -84,7 +84,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevicesOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevicesOutputReference",
 		reflect.TypeOf((*DataCloudflareDevicesDevicesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

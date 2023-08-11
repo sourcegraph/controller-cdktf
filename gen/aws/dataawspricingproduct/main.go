@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsPricingProduct.DataAwsPricingProduct",
+		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct",
 		reflect.TypeOf((*DataAwsPricingProduct)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,15 +59,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsPricingProduct.DataAwsPricingProductConfig",
+		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductConfig",
 		reflect.TypeOf((*DataAwsPricingProductConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsPricingProduct.DataAwsPricingProductFilters",
+		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductFilters",
 		reflect.TypeOf((*DataAwsPricingProductFilters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsPricingProduct.DataAwsPricingProductFiltersList",
+		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductFiltersList",
 		reflect.TypeOf((*DataAwsPricingProductFiltersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -88,7 +88,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsPricingProduct.DataAwsPricingProductFiltersOutputReference",
+		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductFiltersOutputReference",
 		reflect.TypeOf((*DataAwsPricingProductFiltersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

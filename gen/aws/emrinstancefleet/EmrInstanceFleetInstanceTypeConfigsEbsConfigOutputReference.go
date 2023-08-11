@@ -250,7 +250,7 @@ func NewEmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference(terraformRes
 	j := jsiiProxy_EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewEmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference_Override(e E
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

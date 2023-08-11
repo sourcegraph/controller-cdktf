@@ -448,7 +448,7 @@ func NewDocumentAiProcessor(scope constructs.Construct, id *string, config *Docu
 	j := jsiiProxy_DocumentAiProcessor{}
 
 	_jsii_.Create(
-		"google.documentAiProcessor.DocumentAiProcessor",
+		"@cdktf/provider-google.documentAiProcessor.DocumentAiProcessor",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewDocumentAiProcessor_Override(d DocumentAiProcessor, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.documentAiProcessor.DocumentAiProcessor",
+		"@cdktf/provider-google.documentAiProcessor.DocumentAiProcessor",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -627,7 +627,7 @@ func DocumentAiProcessor_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.documentAiProcessor.DocumentAiProcessor",
+		"@cdktf/provider-google.documentAiProcessor.DocumentAiProcessor",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func DocumentAiProcessor_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.documentAiProcessor.DocumentAiProcessor",
+		"@cdktf/provider-google.documentAiProcessor.DocumentAiProcessor",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func DocumentAiProcessor_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.documentAiProcessor.DocumentAiProcessor",
+		"@cdktf/provider-google.documentAiProcessor.DocumentAiProcessor",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DocumentAiProcessor_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.documentAiProcessor.DocumentAiProcessor",
+		"@cdktf/provider-google.documentAiProcessor.DocumentAiProcessor",
 		"tfResourceType",
 		&returns,
 	)

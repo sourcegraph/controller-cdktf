@@ -228,7 +228,7 @@ func NewGoogleFirebaserulesReleaseTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleFirebaserulesReleaseTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleFirebaserulesRelease.GoogleFirebaserulesReleaseTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaserulesRelease.GoogleFirebaserulesReleaseTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleFirebaserulesReleaseTimeoutsOutputReference_Override(g GoogleFireb
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirebaserulesRelease.GoogleFirebaserulesReleaseTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaserulesRelease.GoogleFirebaserulesReleaseTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManager",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManager",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManager)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -116,11 +116,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerAutoHealingPolicies",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerAutoHealingPolicies",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerAutoHealingPolicies)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -156,15 +156,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerConfig",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerConfig",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerNamedPort",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerNamedPort",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerNamedPort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerNamedPortList",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerNamedPortList",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerNamedPortList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -185,7 +185,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerNamedPortOutputReference",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerNamedPortOutputReference",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerNamedPortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -221,11 +221,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatefulDisk",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatefulDisk",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerStatefulDisk)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatefulDiskList",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatefulDiskList",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerStatefulDiskList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -246,7 +246,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatefulDiskOutputReference",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatefulDiskOutputReference",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerStatefulDiskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -283,11 +283,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatus",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatus",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerStatus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusList",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusList",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerStatusList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -307,7 +307,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusOutputReference",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusOutputReference",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerStatusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -342,11 +342,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusStateful",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusStateful",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerStatusStateful)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusStatefulList",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusStatefulList",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerStatusStatefulList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -366,7 +366,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusStatefulOutputReference",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusStatefulOutputReference",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerStatusStatefulOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -400,11 +400,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigs",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigs",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigsList",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigsList",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -424,7 +424,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allEffective", GoGetter: "AllEffective"},
@@ -457,11 +457,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusVersionTarget",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusVersionTarget",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerStatusVersionTarget)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusVersionTargetList",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusVersionTargetList",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerStatusVersionTargetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -481,7 +481,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusVersionTargetOutputReference",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusVersionTargetOutputReference",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerStatusVersionTargetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -514,11 +514,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerTimeouts",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerTimeouts",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -559,11 +559,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerUpdatePolicy",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerUpdatePolicy",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerUpdatePolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerUpdatePolicyOutputReference",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerUpdatePolicyOutputReference",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerUpdatePolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -620,11 +620,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerVersion",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerVersion",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerVersion)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerVersionList",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerVersionList",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerVersionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -645,7 +645,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerVersionOutputReference",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerVersionOutputReference",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerVersionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -686,11 +686,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerVersionTargetSize",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerVersionTargetSize",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerVersionTargetSize)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerVersionTargetSizeOutputReference",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerVersionTargetSizeOutputReference",
 		reflect.TypeOf((*ComputeRegionInstanceGroupManagerVersionTargetSizeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -228,7 +228,7 @@ func NewPodV1SpecVolumeGitRepoOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_PodV1SpecVolumeGitRepoOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumeGitRepoOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeGitRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewPodV1SpecVolumeGitRepoOutputReference_Override(p PodV1SpecVolumeGitRepoO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumeGitRepoOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeGitRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

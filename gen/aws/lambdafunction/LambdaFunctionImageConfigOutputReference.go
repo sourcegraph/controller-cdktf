@@ -228,7 +228,7 @@ func NewLambdaFunctionImageConfigOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_LambdaFunctionImageConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaFunction.LambdaFunctionImageConfigOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionImageConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewLambdaFunctionImageConfigOutputReference_Override(l LambdaFunctionImageC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaFunction.LambdaFunctionImageConfigOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionImageConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

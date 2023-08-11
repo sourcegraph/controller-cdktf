@@ -275,7 +275,7 @@ func NewSsmPatchBaselineApprovalRuleOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_SsmPatchBaselineApprovalRuleOutputReference{}
 
 	_jsii_.Create(
-		"aws.ssmPatchBaseline.SsmPatchBaselineApprovalRuleOutputReference",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineApprovalRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewSsmPatchBaselineApprovalRuleOutputReference_Override(s SsmPatchBaselineA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmPatchBaseline.SsmPatchBaselineApprovalRuleOutputReference",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineApprovalRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

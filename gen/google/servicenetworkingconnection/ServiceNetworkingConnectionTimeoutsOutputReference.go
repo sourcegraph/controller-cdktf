@@ -228,7 +228,7 @@ func NewServiceNetworkingConnectionTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_ServiceNetworkingConnectionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.serviceNetworkingConnection.ServiceNetworkingConnectionTimeoutsOutputReference",
+		"@cdktf/provider-google.serviceNetworkingConnection.ServiceNetworkingConnectionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewServiceNetworkingConnectionTimeoutsOutputReference_Override(s ServiceNet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.serviceNetworkingConnection.ServiceNetworkingConnectionTimeoutsOutputReference",
+		"@cdktf/provider-google.serviceNetworkingConnection.ServiceNetworkingConnectionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

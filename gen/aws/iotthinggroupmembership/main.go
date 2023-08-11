@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iotThingGroupMembership.IotThingGroupMembership",
+		"@cdktf/provider-aws.iotThingGroupMembership.IotThingGroupMembership",
 		reflect.TypeOf((*IotThingGroupMembership)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotThingGroupMembership.IotThingGroupMembershipConfig",
+		"@cdktf/provider-aws.iotThingGroupMembership.IotThingGroupMembershipConfig",
 		reflect.TypeOf((*IotThingGroupMembershipConfig)(nil)).Elem(),
 	)
 }

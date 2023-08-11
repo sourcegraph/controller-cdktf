@@ -397,7 +397,7 @@ func NewDataAwsEc2TransitGatewayConnect(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataAwsEc2TransitGatewayConnect{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnect",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnect",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -410,7 +410,7 @@ func NewDataAwsEc2TransitGatewayConnect_Override(d DataAwsEc2TransitGatewayConne
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnect",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnect",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -521,7 +521,7 @@ func DataAwsEc2TransitGatewayConnect_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnect",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnect",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func DataAwsEc2TransitGatewayConnect_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnect",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnect",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -559,7 +559,7 @@ func DataAwsEc2TransitGatewayConnect_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnect",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnect",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func DataAwsEc2TransitGatewayConnect_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnect",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnect",
 		"tfResourceType",
 		&returns,
 	)

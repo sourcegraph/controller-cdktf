@@ -215,7 +215,7 @@ func NewSyntheticsCanaryVpcConfigOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_SyntheticsCanaryVpcConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.syntheticsCanary.SyntheticsCanaryVpcConfigOutputReference",
+		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -227,7 +227,7 @@ func NewSyntheticsCanaryVpcConfigOutputReference_Override(s SyntheticsCanaryVpcC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.syntheticsCanary.SyntheticsCanaryVpcConfigOutputReference",
+		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -401,7 +401,7 @@ func NewGoogleIapTunnelIamMember(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_GoogleIapTunnelIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMember",
+		"@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleIapTunnelIamMember_Override(g GoogleIapTunnelIamMember, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMember",
+		"@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -558,7 +558,7 @@ func GoogleIapTunnelIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMember",
+		"@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func GoogleIapTunnelIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMember",
+		"@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func GoogleIapTunnelIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMember",
+		"@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func GoogleIapTunnelIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMember",
+		"@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMember",
 		"tfResourceType",
 		&returns,
 	)

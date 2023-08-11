@@ -116,7 +116,7 @@ func NewEcrRegistryScanningConfigurationRuleRepositoryFilterList(terraformResour
 	j := jsiiProxy_EcrRegistryScanningConfigurationRuleRepositoryFilterList{}
 
 	_jsii_.Create(
-		"aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfigurationRuleRepositoryFilterList",
+		"@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfigurationRuleRepositoryFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEcrRegistryScanningConfigurationRuleRepositoryFilterList_Override(e EcrR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfigurationRuleRepositoryFilterList",
+		"@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfigurationRuleRepositoryFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

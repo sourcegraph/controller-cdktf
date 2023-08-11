@@ -279,7 +279,7 @@ func NewDataKubernetesAllNamespaces(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataKubernetesAllNamespaces{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces",
+		"@cdktf/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -292,7 +292,7 @@ func NewDataKubernetesAllNamespaces_Override(d DataKubernetesAllNamespaces, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces",
+		"@cdktf/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -381,7 +381,7 @@ func DataKubernetesAllNamespaces_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces",
+		"@cdktf/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -400,7 +400,7 @@ func DataKubernetesAllNamespaces_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces",
+		"@cdktf/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -419,7 +419,7 @@ func DataKubernetesAllNamespaces_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces",
+		"@cdktf/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -432,7 +432,7 @@ func DataKubernetesAllNamespaces_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces",
+		"@cdktf/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces",
 		"tfResourceType",
 		&returns,
 	)

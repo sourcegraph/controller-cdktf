@@ -189,7 +189,7 @@ func NewGoogleDataplexAssetSecurityStatusOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleDataplexAssetSecurityStatusOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexAsset.GoogleDataplexAssetSecurityStatusOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetSecurityStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewGoogleDataplexAssetSecurityStatusOutputReference_Override(g GoogleDatapl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexAsset.GoogleDataplexAssetSecurityStatusOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetSecurityStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

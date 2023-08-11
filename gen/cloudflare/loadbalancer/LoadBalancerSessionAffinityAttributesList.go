@@ -116,7 +116,7 @@ func NewLoadBalancerSessionAffinityAttributesList(terraformResource cdktf.IInter
 	j := jsiiProxy_LoadBalancerSessionAffinityAttributesList{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesList",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLoadBalancerSessionAffinityAttributesList_Override(l LoadBalancerSession
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesList",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

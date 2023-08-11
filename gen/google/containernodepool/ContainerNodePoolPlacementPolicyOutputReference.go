@@ -179,7 +179,7 @@ func NewContainerNodePoolPlacementPolicyOutputReference(terraformResource cdktf.
 	j := jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.containerNodePool.ContainerNodePoolPlacementPolicyOutputReference",
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolPlacementPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewContainerNodePoolPlacementPolicyOutputReference_Override(c ContainerNode
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerNodePool.ContainerNodePoolPlacementPolicyOutputReference",
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolPlacementPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

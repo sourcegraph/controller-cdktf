@@ -410,7 +410,7 @@ func NewFolder(scope constructs.Construct, id *string, config *FolderConfig) Fol
 	j := jsiiProxy_Folder{}
 
 	_jsii_.Create(
-		"google.folder.Folder",
+		"@cdktf/provider-google.folder.Folder",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -423,7 +423,7 @@ func NewFolder_Override(f Folder, scope constructs.Construct, id *string, config
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.folder.Folder",
+		"@cdktf/provider-google.folder.Folder",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -556,7 +556,7 @@ func Folder_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.folder.Folder",
+		"@cdktf/provider-google.folder.Folder",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func Folder_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.folder.Folder",
+		"@cdktf/provider-google.folder.Folder",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -594,7 +594,7 @@ func Folder_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.folder.Folder",
+		"@cdktf/provider-google.folder.Folder",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func Folder_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.folder.Folder",
+		"@cdktf/provider-google.folder.Folder",
 		"tfResourceType",
 		&returns,
 	)

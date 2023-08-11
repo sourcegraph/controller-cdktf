@@ -203,7 +203,7 @@ func NewSagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOu
 	j := jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOutputReference",
+		"@cdktf/provider-aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewSagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOutputReference",
+		"@cdktf/provider-aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

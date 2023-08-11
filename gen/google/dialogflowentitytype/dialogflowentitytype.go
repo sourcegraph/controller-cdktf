@@ -449,7 +449,7 @@ func NewDialogflowEntityType(scope constructs.Construct, id *string, config *Dia
 	j := jsiiProxy_DialogflowEntityType{}
 
 	_jsii_.Create(
-		"google.dialogflowEntityType.DialogflowEntityType",
+		"@cdktf/provider-google.dialogflowEntityType.DialogflowEntityType",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -462,7 +462,7 @@ func NewDialogflowEntityType_Override(d DialogflowEntityType, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowEntityType.DialogflowEntityType",
+		"@cdktf/provider-google.dialogflowEntityType.DialogflowEntityType",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -617,7 +617,7 @@ func DialogflowEntityType_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dialogflowEntityType.DialogflowEntityType",
+		"@cdktf/provider-google.dialogflowEntityType.DialogflowEntityType",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -636,7 +636,7 @@ func DialogflowEntityType_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dialogflowEntityType.DialogflowEntityType",
+		"@cdktf/provider-google.dialogflowEntityType.DialogflowEntityType",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func DialogflowEntityType_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dialogflowEntityType.DialogflowEntityType",
+		"@cdktf/provider-google.dialogflowEntityType.DialogflowEntityType",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func DialogflowEntityType_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dialogflowEntityType.DialogflowEntityType",
+		"@cdktf/provider-google.dialogflowEntityType.DialogflowEntityType",
 		"tfResourceType",
 		&returns,
 	)

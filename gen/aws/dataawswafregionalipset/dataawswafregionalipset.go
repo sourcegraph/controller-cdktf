@@ -291,7 +291,7 @@ func NewDataAwsWafregionalIpset(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataAwsWafregionalIpset{}
 
 	_jsii_.Create(
-		"aws.dataAwsWafregionalIpset.DataAwsWafregionalIpset",
+		"@cdktf/provider-aws.dataAwsWafregionalIpset.DataAwsWafregionalIpset",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -304,7 +304,7 @@ func NewDataAwsWafregionalIpset_Override(d DataAwsWafregionalIpset, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsWafregionalIpset.DataAwsWafregionalIpset",
+		"@cdktf/provider-aws.dataAwsWafregionalIpset.DataAwsWafregionalIpset",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -404,7 +404,7 @@ func DataAwsWafregionalIpset_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafregionalIpset.DataAwsWafregionalIpset",
+		"@cdktf/provider-aws.dataAwsWafregionalIpset.DataAwsWafregionalIpset",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -423,7 +423,7 @@ func DataAwsWafregionalIpset_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafregionalIpset.DataAwsWafregionalIpset",
+		"@cdktf/provider-aws.dataAwsWafregionalIpset.DataAwsWafregionalIpset",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -442,7 +442,7 @@ func DataAwsWafregionalIpset_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafregionalIpset.DataAwsWafregionalIpset",
+		"@cdktf/provider-aws.dataAwsWafregionalIpset.DataAwsWafregionalIpset",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -455,7 +455,7 @@ func DataAwsWafregionalIpset_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsWafregionalIpset.DataAwsWafregionalIpset",
+		"@cdktf/provider-aws.dataAwsWafregionalIpset.DataAwsWafregionalIpset",
 		"tfResourceType",
 		&returns,
 	)

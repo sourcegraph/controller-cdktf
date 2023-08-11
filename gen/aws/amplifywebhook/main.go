@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.amplifyWebhook.AmplifyWebhook",
+		"@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook",
 		reflect.TypeOf((*AmplifyWebhook)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.amplifyWebhook.AmplifyWebhookConfig",
+		"@cdktf/provider-aws.amplifyWebhook.AmplifyWebhookConfig",
 		reflect.TypeOf((*AmplifyWebhookConfig)(nil)).Elem(),
 	)
 }

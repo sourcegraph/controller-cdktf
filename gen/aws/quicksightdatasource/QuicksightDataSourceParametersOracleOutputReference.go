@@ -225,7 +225,7 @@ func NewQuicksightDataSourceParametersOracleOutputReference(terraformResource cd
 	j := jsiiProxy_QuicksightDataSourceParametersOracleOutputReference{}
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersOracleOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersOracleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewQuicksightDataSourceParametersOracleOutputReference_Override(q Quicksigh
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersOracleOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersOracleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)

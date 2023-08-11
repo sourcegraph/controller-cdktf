@@ -366,7 +366,7 @@ func NewGoogleFirebaseProject(scope constructs.Construct, id *string, config *Go
 	j := jsiiProxy_GoogleFirebaseProject{}
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseProject.GoogleFirebaseProject",
+		"@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProject",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewGoogleFirebaseProject_Override(g GoogleFirebaseProject, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseProject.GoogleFirebaseProject",
+		"@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProject",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -501,7 +501,7 @@ func GoogleFirebaseProject_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseProject.GoogleFirebaseProject",
+		"@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProject",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -520,7 +520,7 @@ func GoogleFirebaseProject_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseProject.GoogleFirebaseProject",
+		"@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProject",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func GoogleFirebaseProject_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseProject.GoogleFirebaseProject",
+		"@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProject",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -552,7 +552,7 @@ func GoogleFirebaseProject_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleFirebaseProject.GoogleFirebaseProject",
+		"@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProject",
 		"tfResourceType",
 		&returns,
 	)

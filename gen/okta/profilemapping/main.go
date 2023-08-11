@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.profileMapping.ProfileMapping",
+		"@cdktf/provider-okta.profileMapping.ProfileMapping",
 		reflect.TypeOf((*ProfileMapping)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.profileMapping.ProfileMappingConfig",
+		"@cdktf/provider-okta.profileMapping.ProfileMappingConfig",
 		reflect.TypeOf((*ProfileMappingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.profileMapping.ProfileMappingMappings",
+		"@cdktf/provider-okta.profileMapping.ProfileMappingMappings",
 		reflect.TypeOf((*ProfileMappingMappings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.profileMapping.ProfileMappingMappingsList",
+		"@cdktf/provider-okta.profileMapping.ProfileMappingMappingsList",
 		reflect.TypeOf((*ProfileMappingMappingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -102,7 +102,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.profileMapping.ProfileMappingMappingsOutputReference",
+		"@cdktf/provider-okta.profileMapping.ProfileMappingMappingsOutputReference",
 		reflect.TypeOf((*ProfileMappingMappingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

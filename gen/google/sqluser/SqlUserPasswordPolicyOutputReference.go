@@ -263,7 +263,7 @@ func NewSqlUserPasswordPolicyOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_SqlUserPasswordPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.sqlUser.SqlUserPasswordPolicyOutputReference",
+		"@cdktf/provider-google.sqlUser.SqlUserPasswordPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -275,7 +275,7 @@ func NewSqlUserPasswordPolicyOutputReference_Override(s SqlUserPasswordPolicyOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sqlUser.SqlUserPasswordPolicyOutputReference",
+		"@cdktf/provider-google.sqlUser.SqlUserPasswordPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

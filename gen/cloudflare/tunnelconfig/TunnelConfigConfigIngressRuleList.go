@@ -116,7 +116,7 @@ func NewTunnelConfigConfigIngressRuleList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_TunnelConfigConfigIngressRuleList{}
 
 	_jsii_.Create(
-		"cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleList",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewTunnelConfigConfigIngressRuleList_Override(t TunnelConfigConfigIngressRu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleList",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		t,
 	)

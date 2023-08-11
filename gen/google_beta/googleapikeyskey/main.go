@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleApikeysKey.GoogleApikeysKey",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKey",
 		reflect.TypeOf((*GoogleApikeysKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,23 +73,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyConfig",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyConfig",
 		reflect.TypeOf((*GoogleApikeysKeyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyRestrictions",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyRestrictions",
 		reflect.TypeOf((*GoogleApikeysKeyRestrictions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsAndroidKeyRestrictions",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsAndroidKeyRestrictions",
 		reflect.TypeOf((*GoogleApikeysKeyRestrictionsAndroidKeyRestrictions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications",
 		reflect.TypeOf((*GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList",
 		reflect.TypeOf((*GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -110,7 +110,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference",
 		reflect.TypeOf((*GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -146,7 +146,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference",
 		reflect.TypeOf((*GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedApplications", GoGetter: "AllowedApplications"},
@@ -181,11 +181,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsApiTargets",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsApiTargets",
 		reflect.TypeOf((*GoogleApikeysKeyRestrictionsApiTargets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsApiTargetsList",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsApiTargetsList",
 		reflect.TypeOf((*GoogleApikeysKeyRestrictionsApiTargetsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -206,7 +206,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsApiTargetsOutputReference",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsApiTargetsOutputReference",
 		reflect.TypeOf((*GoogleApikeysKeyRestrictionsApiTargetsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -243,11 +243,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsBrowserKeyRestrictions",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsBrowserKeyRestrictions",
 		reflect.TypeOf((*GoogleApikeysKeyRestrictionsBrowserKeyRestrictions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference",
 		reflect.TypeOf((*GoogleApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedReferrers", GoGetter: "AllowedReferrers"},
@@ -281,11 +281,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsIosKeyRestrictions",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsIosKeyRestrictions",
 		reflect.TypeOf((*GoogleApikeysKeyRestrictionsIosKeyRestrictions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsIosKeyRestrictionsOutputReference",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsIosKeyRestrictionsOutputReference",
 		reflect.TypeOf((*GoogleApikeysKeyRestrictionsIosKeyRestrictionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedBundleIds", GoGetter: "AllowedBundleIds"},
@@ -319,7 +319,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsOutputReference",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsOutputReference",
 		reflect.TypeOf((*GoogleApikeysKeyRestrictionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "androidKeyRestrictions", GoGetter: "AndroidKeyRestrictions"},
@@ -371,11 +371,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsServerKeyRestrictions",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsServerKeyRestrictions",
 		reflect.TypeOf((*GoogleApikeysKeyRestrictionsServerKeyRestrictions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsServerKeyRestrictionsOutputReference",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsServerKeyRestrictionsOutputReference",
 		reflect.TypeOf((*GoogleApikeysKeyRestrictionsServerKeyRestrictionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedIps", GoGetter: "AllowedIps"},
@@ -409,11 +409,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyTimeouts",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyTimeouts",
 		reflect.TypeOf((*GoogleApikeysKeyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleApikeysKeyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

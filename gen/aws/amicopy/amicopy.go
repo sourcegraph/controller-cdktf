@@ -847,7 +847,7 @@ func NewAmiCopy(scope constructs.Construct, id *string, config *AmiCopyConfig) A
 	j := jsiiProxy_AmiCopy{}
 
 	_jsii_.Create(
-		"aws.amiCopy.AmiCopy",
+		"@cdktf/provider-aws.amiCopy.AmiCopy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -860,7 +860,7 @@ func NewAmiCopy_Override(a AmiCopy, scope constructs.Construct, id *string, conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.amiCopy.AmiCopy",
+		"@cdktf/provider-aws.amiCopy.AmiCopy",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -1081,7 +1081,7 @@ func AmiCopy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amiCopy.AmiCopy",
+		"@cdktf/provider-aws.amiCopy.AmiCopy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1100,7 +1100,7 @@ func AmiCopy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amiCopy.AmiCopy",
+		"@cdktf/provider-aws.amiCopy.AmiCopy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1119,7 +1119,7 @@ func AmiCopy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amiCopy.AmiCopy",
+		"@cdktf/provider-aws.amiCopy.AmiCopy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1132,7 +1132,7 @@ func AmiCopy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.amiCopy.AmiCopy",
+		"@cdktf/provider-aws.amiCopy.AmiCopy",
 		"tfResourceType",
 		&returns,
 	)

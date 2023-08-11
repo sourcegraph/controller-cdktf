@@ -226,7 +226,7 @@ func NewGoogleAccessContextManagerAccessPolicyIamBindingConditionOutputReference
 	j := jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAccessContextManagerAccessPolicyIamBinding.GoogleAccessContextManagerAccessPolicyIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamBinding.GoogleAccessContextManagerAccessPolicyIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleAccessContextManagerAccessPolicyIamBindingConditionOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAccessContextManagerAccessPolicyIamBinding.GoogleAccessContextManagerAccessPolicyIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamBinding.GoogleAccessContextManagerAccessPolicyIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -189,7 +189,7 @@ func NewDataGooglePubsubSubscriptionPushConfigOutputReference(terraformResource 
 	j := jsiiProxy_DataGooglePubsubSubscriptionPushConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOutputReference",
+		"@cdktf/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataGooglePubsubSubscriptionPushConfigOutputReference_Override(d DataGoo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOutputReference",
+		"@cdktf/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

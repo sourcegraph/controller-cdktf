@@ -252,7 +252,7 @@ func NewGoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference(terr
 	j := jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiFeaturestoreEntitytype.GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestoreEntitytype.GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiFeaturestoreEntitytype.GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestoreEntitytype.GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

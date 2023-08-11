@@ -116,7 +116,7 @@ func NewCloudiotDeviceCredentialsList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_CloudiotDeviceCredentialsList{}
 
 	_jsii_.Create(
-		"google.cloudiotDevice.CloudiotDeviceCredentialsList",
+		"@cdktf/provider-google.cloudiotDevice.CloudiotDeviceCredentialsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudiotDeviceCredentialsList_Override(c CloudiotDeviceCredentialsList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudiotDevice.CloudiotDeviceCredentialsList",
+		"@cdktf/provider-google.cloudiotDevice.CloudiotDeviceCredentialsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

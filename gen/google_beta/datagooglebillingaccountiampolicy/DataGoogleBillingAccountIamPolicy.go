@@ -313,7 +313,7 @@ func NewDataGoogleBillingAccountIamPolicy(scope constructs.Construct, id *string
 	j := jsiiProxy_DataGoogleBillingAccountIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBillingAccountIamPolicy.DataGoogleBillingAccountIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBillingAccountIamPolicy.DataGoogleBillingAccountIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -326,7 +326,7 @@ func NewDataGoogleBillingAccountIamPolicy_Override(d DataGoogleBillingAccountIam
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBillingAccountIamPolicy.DataGoogleBillingAccountIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBillingAccountIamPolicy.DataGoogleBillingAccountIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -426,7 +426,7 @@ func DataGoogleBillingAccountIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBillingAccountIamPolicy.DataGoogleBillingAccountIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBillingAccountIamPolicy.DataGoogleBillingAccountIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +445,7 @@ func DataGoogleBillingAccountIamPolicy_IsTerraformDataSource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBillingAccountIamPolicy.DataGoogleBillingAccountIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBillingAccountIamPolicy.DataGoogleBillingAccountIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -464,7 +464,7 @@ func DataGoogleBillingAccountIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBillingAccountIamPolicy.DataGoogleBillingAccountIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBillingAccountIamPolicy.DataGoogleBillingAccountIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataGoogleBillingAccountIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleBillingAccountIamPolicy.DataGoogleBillingAccountIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBillingAccountIamPolicy.DataGoogleBillingAccountIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

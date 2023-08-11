@@ -367,7 +367,7 @@ func NewGoogleAppEngineApplicationUrlDispatchRules(scope constructs.Construct, i
 	j := jsiiProxy_GoogleAppEngineApplicationUrlDispatchRules{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRules",
+		"@cdktf/provider-google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRules",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewGoogleAppEngineApplicationUrlDispatchRules_Override(g GoogleAppEngineApp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRules",
+		"@cdktf/provider-google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRules",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -502,7 +502,7 @@ func GoogleAppEngineApplicationUrlDispatchRules_IsConstruct(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRules",
+		"@cdktf/provider-google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRules",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -521,7 +521,7 @@ func GoogleAppEngineApplicationUrlDispatchRules_IsTerraformElement(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRules",
+		"@cdktf/provider-google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRules",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func GoogleAppEngineApplicationUrlDispatchRules_IsTerraformResource(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRules",
+		"@cdktf/provider-google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRules",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func GoogleAppEngineApplicationUrlDispatchRules_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRules",
+		"@cdktf/provider-google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRules",
 		"tfResourceType",
 		&returns,
 	)

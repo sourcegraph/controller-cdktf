@@ -226,7 +226,7 @@ func NewCloudTasksQueueIamMemberConditionOutputReference(terraformResource cdktf
 	j := jsiiProxy_CloudTasksQueueIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberConditionOutputReference",
+		"@cdktf/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewCloudTasksQueueIamMemberConditionOutputReference_Override(c CloudTasksQu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberConditionOutputReference",
+		"@cdktf/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

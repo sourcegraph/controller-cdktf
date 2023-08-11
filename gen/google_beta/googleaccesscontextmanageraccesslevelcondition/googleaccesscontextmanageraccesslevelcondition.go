@@ -487,7 +487,7 @@ func NewGoogleAccessContextManagerAccessLevelCondition(scope constructs.Construc
 	j := jsiiProxy_GoogleAccessContextManagerAccessLevelCondition{}
 
 	_jsii_.Create(
-		"google-beta.googleAccessContextManagerAccessLevelCondition.GoogleAccessContextManagerAccessLevelCondition",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessLevelCondition.GoogleAccessContextManagerAccessLevelCondition",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -500,7 +500,7 @@ func NewGoogleAccessContextManagerAccessLevelCondition_Override(g GoogleAccessCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAccessContextManagerAccessLevelCondition.GoogleAccessContextManagerAccessLevelCondition",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessLevelCondition.GoogleAccessContextManagerAccessLevelCondition",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -677,7 +677,7 @@ func GoogleAccessContextManagerAccessLevelCondition_IsConstruct(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAccessContextManagerAccessLevelCondition.GoogleAccessContextManagerAccessLevelCondition",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessLevelCondition.GoogleAccessContextManagerAccessLevelCondition",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -696,7 +696,7 @@ func GoogleAccessContextManagerAccessLevelCondition_IsTerraformElement(x interfa
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAccessContextManagerAccessLevelCondition.GoogleAccessContextManagerAccessLevelCondition",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessLevelCondition.GoogleAccessContextManagerAccessLevelCondition",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func GoogleAccessContextManagerAccessLevelCondition_IsTerraformResource(x interf
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAccessContextManagerAccessLevelCondition.GoogleAccessContextManagerAccessLevelCondition",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessLevelCondition.GoogleAccessContextManagerAccessLevelCondition",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -728,7 +728,7 @@ func GoogleAccessContextManagerAccessLevelCondition_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleAccessContextManagerAccessLevelCondition.GoogleAccessContextManagerAccessLevelCondition",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessLevelCondition.GoogleAccessContextManagerAccessLevelCondition",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewConnectPhoneNumberStatusList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_ConnectPhoneNumberStatusList{}
 
 	_jsii_.Create(
-		"aws.connectPhoneNumber.ConnectPhoneNumberStatusList",
+		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewConnectPhoneNumberStatusList_Override(c ConnectPhoneNumberStatusList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectPhoneNumber.ConnectPhoneNumberStatusList",
+		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

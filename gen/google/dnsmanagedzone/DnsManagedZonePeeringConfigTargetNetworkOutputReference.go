@@ -179,7 +179,7 @@ func NewDnsManagedZonePeeringConfigTargetNetworkOutputReference(terraformResourc
 	j := jsiiProxy_DnsManagedZonePeeringConfigTargetNetworkOutputReference{}
 
 	_jsii_.Create(
-		"google.dnsManagedZone.DnsManagedZonePeeringConfigTargetNetworkOutputReference",
+		"@cdktf/provider-google.dnsManagedZone.DnsManagedZonePeeringConfigTargetNetworkOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDnsManagedZonePeeringConfigTargetNetworkOutputReference_Override(d DnsMa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsManagedZone.DnsManagedZonePeeringConfigTargetNetworkOutputReference",
+		"@cdktf/provider-google.dnsManagedZone.DnsManagedZonePeeringConfigTargetNetworkOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

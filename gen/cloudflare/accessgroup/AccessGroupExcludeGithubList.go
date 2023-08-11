@@ -116,7 +116,7 @@ func NewAccessGroupExcludeGithubList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_AccessGroupExcludeGithubList{}
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupExcludeGithubList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithubList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessGroupExcludeGithubList_Override(a AccessGroupExcludeGithubList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupExcludeGithubList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithubList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

@@ -203,7 +203,7 @@ func NewContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference(
 	j := jsiiProxy_ContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference{}
 
 	_jsii_.Create(
-		"google.containerAwsCluster.ContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference",
+		"@cdktf/provider-google.containerAwsCluster.ContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAwsCluster.ContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference",
+		"@cdktf/provider-google.containerAwsCluster.ContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

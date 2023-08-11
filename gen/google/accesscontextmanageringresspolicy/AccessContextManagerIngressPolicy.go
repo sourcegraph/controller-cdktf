@@ -366,7 +366,7 @@ func NewAccessContextManagerIngressPolicy(scope constructs.Construct, id *string
 	j := jsiiProxy_AccessContextManagerIngressPolicy{}
 
 	_jsii_.Create(
-		"google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy",
+		"@cdktf/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewAccessContextManagerIngressPolicy_Override(a AccessContextManagerIngress
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy",
+		"@cdktf/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -512,7 +512,7 @@ func AccessContextManagerIngressPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy",
+		"@cdktf/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func AccessContextManagerIngressPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy",
+		"@cdktf/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func AccessContextManagerIngressPolicy_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy",
+		"@cdktf/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func AccessContextManagerIngressPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy",
+		"@cdktf/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy",
 		"tfResourceType",
 		&returns,
 	)

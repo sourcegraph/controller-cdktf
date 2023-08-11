@@ -202,7 +202,7 @@ func NewGoogleGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputRefer
 	j := jsiiProxy_GoogleGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

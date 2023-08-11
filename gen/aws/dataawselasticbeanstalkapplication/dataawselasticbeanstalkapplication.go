@@ -324,7 +324,7 @@ func NewDataAwsElasticBeanstalkApplication(scope constructs.Construct, id *strin
 	j := jsiiProxy_DataAwsElasticBeanstalkApplication{}
 
 	_jsii_.Create(
-		"aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplication",
+		"@cdktf/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplication",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -337,7 +337,7 @@ func NewDataAwsElasticBeanstalkApplication_Override(d DataAwsElasticBeanstalkApp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplication",
+		"@cdktf/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplication",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -437,7 +437,7 @@ func DataAwsElasticBeanstalkApplication_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplication",
+		"@cdktf/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplication",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -456,7 +456,7 @@ func DataAwsElasticBeanstalkApplication_IsTerraformDataSource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplication",
+		"@cdktf/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplication",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -475,7 +475,7 @@ func DataAwsElasticBeanstalkApplication_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplication",
+		"@cdktf/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplication",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -488,7 +488,7 @@ func DataAwsElasticBeanstalkApplication_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplication",
+		"@cdktf/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplication",
 		"tfResourceType",
 		&returns,
 	)

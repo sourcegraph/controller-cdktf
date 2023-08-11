@@ -416,7 +416,7 @@ func NewDataGoogleBeyondcorpAppGateway(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataGoogleBeyondcorpAppGateway{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBeyondcorpAppGateway.DataGoogleBeyondcorpAppGateway",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppGateway.DataGoogleBeyondcorpAppGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -429,7 +429,7 @@ func NewDataGoogleBeyondcorpAppGateway_Override(d DataGoogleBeyondcorpAppGateway
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBeyondcorpAppGateway.DataGoogleBeyondcorpAppGateway",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppGateway.DataGoogleBeyondcorpAppGateway",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -551,7 +551,7 @@ func DataGoogleBeyondcorpAppGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBeyondcorpAppGateway.DataGoogleBeyondcorpAppGateway",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppGateway.DataGoogleBeyondcorpAppGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -570,7 +570,7 @@ func DataGoogleBeyondcorpAppGateway_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBeyondcorpAppGateway.DataGoogleBeyondcorpAppGateway",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppGateway.DataGoogleBeyondcorpAppGateway",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -589,7 +589,7 @@ func DataGoogleBeyondcorpAppGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBeyondcorpAppGateway.DataGoogleBeyondcorpAppGateway",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppGateway.DataGoogleBeyondcorpAppGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -602,7 +602,7 @@ func DataGoogleBeyondcorpAppGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleBeyondcorpAppGateway.DataGoogleBeyondcorpAppGateway",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppGateway.DataGoogleBeyondcorpAppGateway",
 		"tfResourceType",
 		&returns,
 	)

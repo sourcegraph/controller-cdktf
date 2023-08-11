@@ -346,7 +346,7 @@ func NewS3BucketReplicationConfigurationRulesOutputReference(terraformResource c
 	j := jsiiProxy_S3BucketReplicationConfigurationRulesOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketReplicationConfigurationRulesOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -358,7 +358,7 @@ func NewS3BucketReplicationConfigurationRulesOutputReference_Override(s S3Bucket
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketReplicationConfigurationRulesOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

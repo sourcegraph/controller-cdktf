@@ -116,7 +116,7 @@ func NewContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList(terraformRe
 	j := jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList_Override(c 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

@@ -484,7 +484,7 @@ func NewGoogleFolderOrganizationPolicy(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleFolderOrganizationPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicy",
+		"@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -497,7 +497,7 @@ func NewGoogleFolderOrganizationPolicy_Override(g GoogleFolderOrganizationPolicy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicy",
+		"@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -641,7 +641,7 @@ func GoogleFolderOrganizationPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicy",
+		"@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -660,7 +660,7 @@ func GoogleFolderOrganizationPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicy",
+		"@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func GoogleFolderOrganizationPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicy",
+		"@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -692,7 +692,7 @@ func GoogleFolderOrganizationPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicy",
+		"@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicy",
 		"tfResourceType",
 		&returns,
 	)

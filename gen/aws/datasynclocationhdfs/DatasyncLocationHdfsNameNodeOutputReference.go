@@ -202,7 +202,7 @@ func NewDatasyncLocationHdfsNameNodeOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DatasyncLocationHdfsNameNodeOutputReference{}
 
 	_jsii_.Create(
-		"aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNodeOutputReference",
+		"@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNodeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDatasyncLocationHdfsNameNodeOutputReference_Override(d DatasyncLocationH
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNodeOutputReference",
+		"@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNodeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.organizationPolicy.OrganizationPolicy",
+		"@cdktf/provider-google.organizationPolicy.OrganizationPolicy",
 		reflect.TypeOf((*OrganizationPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,11 +80,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.organizationPolicy.OrganizationPolicyBooleanPolicy",
+		"@cdktf/provider-google.organizationPolicy.OrganizationPolicyBooleanPolicy",
 		reflect.TypeOf((*OrganizationPolicyBooleanPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.organizationPolicy.OrganizationPolicyBooleanPolicyOutputReference",
+		"@cdktf/provider-google.organizationPolicy.OrganizationPolicyBooleanPolicyOutputReference",
 		reflect.TypeOf((*OrganizationPolicyBooleanPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -118,19 +118,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.organizationPolicy.OrganizationPolicyConfig",
+		"@cdktf/provider-google.organizationPolicy.OrganizationPolicyConfig",
 		reflect.TypeOf((*OrganizationPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.organizationPolicy.OrganizationPolicyListPolicy",
+		"@cdktf/provider-google.organizationPolicy.OrganizationPolicyListPolicy",
 		reflect.TypeOf((*OrganizationPolicyListPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.organizationPolicy.OrganizationPolicyListPolicyAllow",
+		"@cdktf/provider-google.organizationPolicy.OrganizationPolicyListPolicyAllow",
 		reflect.TypeOf((*OrganizationPolicyListPolicyAllow)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.organizationPolicy.OrganizationPolicyListPolicyAllowOutputReference",
+		"@cdktf/provider-google.organizationPolicy.OrganizationPolicyListPolicyAllowOutputReference",
 		reflect.TypeOf((*OrganizationPolicyListPolicyAllowOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "all", GoGetter: "All"},
@@ -168,11 +168,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.organizationPolicy.OrganizationPolicyListPolicyDeny",
+		"@cdktf/provider-google.organizationPolicy.OrganizationPolicyListPolicyDeny",
 		reflect.TypeOf((*OrganizationPolicyListPolicyDeny)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.organizationPolicy.OrganizationPolicyListPolicyDenyOutputReference",
+		"@cdktf/provider-google.organizationPolicy.OrganizationPolicyListPolicyDenyOutputReference",
 		reflect.TypeOf((*OrganizationPolicyListPolicyDenyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "all", GoGetter: "All"},
@@ -210,7 +210,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.organizationPolicy.OrganizationPolicyListPolicyOutputReference",
+		"@cdktf/provider-google.organizationPolicy.OrganizationPolicyListPolicyOutputReference",
 		reflect.TypeOf((*OrganizationPolicyListPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allow", GoGetter: "Allow"},
@@ -256,11 +256,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.organizationPolicy.OrganizationPolicyRestorePolicy",
+		"@cdktf/provider-google.organizationPolicy.OrganizationPolicyRestorePolicy",
 		reflect.TypeOf((*OrganizationPolicyRestorePolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.organizationPolicy.OrganizationPolicyRestorePolicyOutputReference",
+		"@cdktf/provider-google.organizationPolicy.OrganizationPolicyRestorePolicyOutputReference",
 		reflect.TypeOf((*OrganizationPolicyRestorePolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -294,11 +294,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.organizationPolicy.OrganizationPolicyTimeouts",
+		"@cdktf/provider-google.organizationPolicy.OrganizationPolicyTimeouts",
 		reflect.TypeOf((*OrganizationPolicyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.organizationPolicy.OrganizationPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google.organizationPolicy.OrganizationPolicyTimeoutsOutputReference",
 		reflect.TypeOf((*OrganizationPolicyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

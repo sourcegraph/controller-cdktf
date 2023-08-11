@@ -576,7 +576,7 @@ func NewGoogleCloudbuildBitbucketServerConfig(scope constructs.Construct, id *st
 	j := jsiiProxy_GoogleCloudbuildBitbucketServerConfig{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfig",
+		"@cdktf/provider-google-beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -589,7 +589,7 @@ func NewGoogleCloudbuildBitbucketServerConfig_Override(g GoogleCloudbuildBitbuck
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfig",
+		"@cdktf/provider-google-beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfig",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -788,7 +788,7 @@ func GoogleCloudbuildBitbucketServerConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfig",
+		"@cdktf/provider-google-beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -807,7 +807,7 @@ func GoogleCloudbuildBitbucketServerConfig_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfig",
+		"@cdktf/provider-google-beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -826,7 +826,7 @@ func GoogleCloudbuildBitbucketServerConfig_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfig",
+		"@cdktf/provider-google-beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -839,7 +839,7 @@ func GoogleCloudbuildBitbucketServerConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfig",
+		"@cdktf/provider-google-beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfig",
 		"tfResourceType",
 		&returns,
 	)

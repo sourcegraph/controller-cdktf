@@ -228,7 +228,7 @@ func NewMemcacheInstanceTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_MemcacheInstanceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.memcacheInstance.MemcacheInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewMemcacheInstanceTimeoutsOutputReference_Override(m MemcacheInstanceTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.memcacheInstance.MemcacheInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

@@ -104,7 +104,7 @@ func NewVpcEndpointDnsEntryList(terraformResource cdktf.IInterpolatingParent, te
 	j := jsiiProxy_VpcEndpointDnsEntryList{}
 
 	_jsii_.Create(
-		"aws.vpcEndpoint.VpcEndpointDnsEntryList",
+		"@cdktf/provider-aws.vpcEndpoint.VpcEndpointDnsEntryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewVpcEndpointDnsEntryList_Override(v VpcEndpointDnsEntryList, terraformRes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcEndpoint.VpcEndpointDnsEntryList",
+		"@cdktf/provider-aws.vpcEndpoint.VpcEndpointDnsEntryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		v,
 	)

@@ -226,7 +226,7 @@ func NewGoogleComputeSubnetworkIamMemberConditionOutputReference(terraformResour
 	j := jsiiProxy_GoogleComputeSubnetworkIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeSubnetworkIamMember.GoogleComputeSubnetworkIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSubnetworkIamMember.GoogleComputeSubnetworkIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleComputeSubnetworkIamMemberConditionOutputReference_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeSubnetworkIamMember.GoogleComputeSubnetworkIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSubnetworkIamMember.GoogleComputeSubnetworkIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -375,7 +375,7 @@ func NewDataAwsNatGateways(scope constructs.Construct, id *string, config *DataA
 	j := jsiiProxy_DataAwsNatGateways{}
 
 	_jsii_.Create(
-		"aws.dataAwsNatGateways.DataAwsNatGateways",
+		"@cdktf/provider-aws.dataAwsNatGateways.DataAwsNatGateways",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -388,7 +388,7 @@ func NewDataAwsNatGateways_Override(d DataAwsNatGateways, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNatGateways.DataAwsNatGateways",
+		"@cdktf/provider-aws.dataAwsNatGateways.DataAwsNatGateways",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -499,7 +499,7 @@ func DataAwsNatGateways_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNatGateways.DataAwsNatGateways",
+		"@cdktf/provider-aws.dataAwsNatGateways.DataAwsNatGateways",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func DataAwsNatGateways_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNatGateways.DataAwsNatGateways",
+		"@cdktf/provider-aws.dataAwsNatGateways.DataAwsNatGateways",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func DataAwsNatGateways_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNatGateways.DataAwsNatGateways",
+		"@cdktf/provider-aws.dataAwsNatGateways.DataAwsNatGateways",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func DataAwsNatGateways_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsNatGateways.DataAwsNatGateways",
+		"@cdktf/provider-aws.dataAwsNatGateways.DataAwsNatGateways",
 		"tfResourceType",
 		&returns,
 	)

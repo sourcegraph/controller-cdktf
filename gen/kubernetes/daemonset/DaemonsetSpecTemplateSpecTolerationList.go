@@ -116,7 +116,7 @@ func NewDaemonsetSpecTemplateSpecTolerationList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DaemonsetSpecTemplateSpecTolerationList{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecTolerationList",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecTolerationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDaemonsetSpecTemplateSpecTolerationList_Override(d DaemonsetSpecTemplate
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecTolerationList",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecTolerationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

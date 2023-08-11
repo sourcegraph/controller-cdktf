@@ -557,7 +557,7 @@ func NewDocdbEventSubscription(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DocdbEventSubscription{}
 
 	_jsii_.Create(
-		"aws.docdbEventSubscription.DocdbEventSubscription",
+		"@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscription",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -570,7 +570,7 @@ func NewDocdbEventSubscription_Override(d DocdbEventSubscription, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.docdbEventSubscription.DocdbEventSubscription",
+		"@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscription",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -780,7 +780,7 @@ func DocdbEventSubscription_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.docdbEventSubscription.DocdbEventSubscription",
+		"@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscription",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -799,7 +799,7 @@ func DocdbEventSubscription_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.docdbEventSubscription.DocdbEventSubscription",
+		"@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscription",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -818,7 +818,7 @@ func DocdbEventSubscription_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.docdbEventSubscription.DocdbEventSubscription",
+		"@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscription",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -831,7 +831,7 @@ func DocdbEventSubscription_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.docdbEventSubscription.DocdbEventSubscription",
+		"@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscription",
 		"tfResourceType",
 		&returns,
 	)

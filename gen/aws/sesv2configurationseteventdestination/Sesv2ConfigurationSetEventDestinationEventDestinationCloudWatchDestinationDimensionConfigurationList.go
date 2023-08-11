@@ -116,7 +116,7 @@ func NewSesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinati
 	j := jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationList{}
 
 	_jsii_.Create(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationList",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinati
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationList",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

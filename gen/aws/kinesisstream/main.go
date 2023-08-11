@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.kinesisStream.KinesisStream",
+		"@cdktf/provider-aws.kinesisStream.KinesisStream",
 		reflect.TypeOf((*KinesisStream)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,15 +92,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kinesisStream.KinesisStreamConfig",
+		"@cdktf/provider-aws.kinesisStream.KinesisStreamConfig",
 		reflect.TypeOf((*KinesisStreamConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.kinesisStream.KinesisStreamStreamModeDetails",
+		"@cdktf/provider-aws.kinesisStream.KinesisStreamStreamModeDetails",
 		reflect.TypeOf((*KinesisStreamStreamModeDetails)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kinesisStream.KinesisStreamStreamModeDetailsOutputReference",
+		"@cdktf/provider-aws.kinesisStream.KinesisStreamStreamModeDetailsOutputReference",
 		reflect.TypeOf((*KinesisStreamStreamModeDetailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -134,11 +134,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kinesisStream.KinesisStreamTimeouts",
+		"@cdktf/provider-aws.kinesisStream.KinesisStreamTimeouts",
 		reflect.TypeOf((*KinesisStreamTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kinesisStream.KinesisStreamTimeoutsOutputReference",
+		"@cdktf/provider-aws.kinesisStream.KinesisStreamTimeoutsOutputReference",
 		reflect.TypeOf((*KinesisStreamTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -179,7 +179,7 @@ func NewGoogleDnsManagedZoneForwardingConfigOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleDnsManagedZoneForwardingConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneForwardingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneForwardingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleDnsManagedZoneForwardingConfigOutputReference_Override(g GoogleDns
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneForwardingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneForwardingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

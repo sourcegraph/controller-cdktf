@@ -448,7 +448,7 @@ func NewGoogleComputeInstanceIamBinding(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleComputeInstanceIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceIamBinding.GoogleComputeInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleComputeInstanceIamBinding.GoogleComputeInstanceIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleComputeInstanceIamBinding_Override(g GoogleComputeInstanceIamBindi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceIamBinding.GoogleComputeInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleComputeInstanceIamBinding.GoogleComputeInstanceIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleComputeInstanceIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceIamBinding.GoogleComputeInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleComputeInstanceIamBinding.GoogleComputeInstanceIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleComputeInstanceIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceIamBinding.GoogleComputeInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleComputeInstanceIamBinding.GoogleComputeInstanceIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleComputeInstanceIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceIamBinding.GoogleComputeInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleComputeInstanceIamBinding.GoogleComputeInstanceIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleComputeInstanceIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeInstanceIamBinding.GoogleComputeInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleComputeInstanceIamBinding.GoogleComputeInstanceIamBinding",
 		"tfResourceType",
 		&returns,
 	)

@@ -487,7 +487,7 @@ func NewPubsubTopic(scope constructs.Construct, id *string, config *PubsubTopicC
 	j := jsiiProxy_PubsubTopic{}
 
 	_jsii_.Create(
-		"google.pubsubTopic.PubsubTopic",
+		"@cdktf/provider-google.pubsubTopic.PubsubTopic",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -500,7 +500,7 @@ func NewPubsubTopic_Override(p PubsubTopic, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.pubsubTopic.PubsubTopic",
+		"@cdktf/provider-google.pubsubTopic.PubsubTopic",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -666,7 +666,7 @@ func PubsubTopic_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubTopic.PubsubTopic",
+		"@cdktf/provider-google.pubsubTopic.PubsubTopic",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -685,7 +685,7 @@ func PubsubTopic_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubTopic.PubsubTopic",
+		"@cdktf/provider-google.pubsubTopic.PubsubTopic",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -704,7 +704,7 @@ func PubsubTopic_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubTopic.PubsubTopic",
+		"@cdktf/provider-google.pubsubTopic.PubsubTopic",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -717,7 +717,7 @@ func PubsubTopic_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.pubsubTopic.PubsubTopic",
+		"@cdktf/provider-google.pubsubTopic.PubsubTopic",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewDataCatalogTagTemplateFieldsTypeOutputReference(terraformResource cdktf.
 	j := jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference{}
 
 	_jsii_.Create(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeOutputReference",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDataCatalogTagTemplateFieldsTypeOutputReference_Override(d DataCatalogTa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeOutputReference",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

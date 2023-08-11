@@ -252,7 +252,7 @@ func NewGoogleDataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsOu
 	j := jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGoogleDataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsOu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

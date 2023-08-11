@@ -228,7 +228,7 @@ func NewComputeInstanceNetworkInterfaceAccessConfigOutputReference(terraformReso
 	j := jsiiProxy_ComputeInstanceNetworkInterfaceAccessConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceNetworkInterfaceAccessConfigOutputReference",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceNetworkInterfaceAccessConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeInstanceNetworkInterfaceAccessConfigOutputReference_Override(c Co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceNetworkInterfaceAccessConfigOutputReference",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceNetworkInterfaceAccessConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

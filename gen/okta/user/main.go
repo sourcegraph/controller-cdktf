@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.user.User",
+		"@cdktf/provider-okta.user.User",
 		reflect.TypeOf((*User)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -182,15 +182,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.user.UserConfig",
+		"@cdktf/provider-okta.user.UserConfig",
 		reflect.TypeOf((*UserConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.user.UserPasswordHash",
+		"@cdktf/provider-okta.user.UserPasswordHash",
 		reflect.TypeOf((*UserPasswordHash)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.user.UserPasswordHashOutputReference",
+		"@cdktf/provider-okta.user.UserPasswordHashOutputReference",
 		reflect.TypeOf((*UserPasswordHashOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},

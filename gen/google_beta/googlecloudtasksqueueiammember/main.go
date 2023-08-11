@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMember",
+		"@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMember",
 		reflect.TypeOf((*GoogleCloudTasksQueueIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberCondition",
+		"@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberCondition",
 		reflect.TypeOf((*GoogleCloudTasksQueueIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberConditionOutputReference",
 		reflect.TypeOf((*GoogleCloudTasksQueueIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberConfig",
+		"@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberConfig",
 		reflect.TypeOf((*GoogleCloudTasksQueueIamMemberConfig)(nil)).Elem(),
 	)
 }

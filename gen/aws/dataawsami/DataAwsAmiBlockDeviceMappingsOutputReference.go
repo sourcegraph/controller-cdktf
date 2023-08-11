@@ -200,7 +200,7 @@ func NewDataAwsAmiBlockDeviceMappingsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_DataAwsAmiBlockDeviceMappingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsAmi.DataAwsAmiBlockDeviceMappingsOutputReference",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmiBlockDeviceMappingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataAwsAmiBlockDeviceMappingsOutputReference_Override(d DataAwsAmiBlockD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAmi.DataAwsAmiBlockDeviceMappingsOutputReference",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmiBlockDeviceMappingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

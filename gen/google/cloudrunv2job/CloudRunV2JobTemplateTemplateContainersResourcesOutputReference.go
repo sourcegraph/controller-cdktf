@@ -180,7 +180,7 @@ func NewCloudRunV2JobTemplateTemplateContainersResourcesOutputReference(terrafor
 	j := jsiiProxy_CloudRunV2JobTemplateTemplateContainersResourcesOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersResourcesOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewCloudRunV2JobTemplateTemplateContainersResourcesOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersResourcesOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.apprunnerService.ApprunnerService",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerService",
 		reflect.TypeOf((*ApprunnerService)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,15 +93,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerService.ApprunnerServiceConfig",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceConfig",
 		reflect.TypeOf((*ApprunnerServiceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerService.ApprunnerServiceEncryptionConfiguration",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceEncryptionConfiguration",
 		reflect.TypeOf((*ApprunnerServiceEncryptionConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apprunnerService.ApprunnerServiceEncryptionConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceEncryptionConfigurationOutputReference",
 		reflect.TypeOf((*ApprunnerServiceEncryptionConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -135,11 +135,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerService.ApprunnerServiceHealthCheckConfiguration",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceHealthCheckConfiguration",
 		reflect.TypeOf((*ApprunnerServiceHealthCheckConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apprunnerService.ApprunnerServiceHealthCheckConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceHealthCheckConfigurationOutputReference",
 		reflect.TypeOf((*ApprunnerServiceHealthCheckConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -189,11 +189,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerService.ApprunnerServiceInstanceConfiguration",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceInstanceConfiguration",
 		reflect.TypeOf((*ApprunnerServiceInstanceConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apprunnerService.ApprunnerServiceInstanceConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceInstanceConfigurationOutputReference",
 		reflect.TypeOf((*ApprunnerServiceInstanceConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -234,15 +234,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerService.ApprunnerServiceNetworkConfiguration",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceNetworkConfiguration",
 		reflect.TypeOf((*ApprunnerServiceNetworkConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerService.ApprunnerServiceNetworkConfigurationEgressConfiguration",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceNetworkConfigurationEgressConfiguration",
 		reflect.TypeOf((*ApprunnerServiceNetworkConfigurationEgressConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apprunnerService.ApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference",
 		reflect.TypeOf((*ApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -280,11 +280,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerService.ApprunnerServiceNetworkConfigurationIngressConfiguration",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceNetworkConfigurationIngressConfiguration",
 		reflect.TypeOf((*ApprunnerServiceNetworkConfigurationIngressConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apprunnerService.ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference",
 		reflect.TypeOf((*ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -319,7 +319,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.apprunnerService.ApprunnerServiceNetworkConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceNetworkConfigurationOutputReference",
 		reflect.TypeOf((*ApprunnerServiceNetworkConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -359,11 +359,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerService.ApprunnerServiceObservabilityConfiguration",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceObservabilityConfiguration",
 		reflect.TypeOf((*ApprunnerServiceObservabilityConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apprunnerService.ApprunnerServiceObservabilityConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceObservabilityConfigurationOutputReference",
 		reflect.TypeOf((*ApprunnerServiceObservabilityConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -400,15 +400,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerService.ApprunnerServiceSourceConfiguration",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfiguration",
 		reflect.TypeOf((*ApprunnerServiceSourceConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerService.ApprunnerServiceSourceConfigurationAuthenticationConfiguration",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationAuthenticationConfiguration",
 		reflect.TypeOf((*ApprunnerServiceSourceConfigurationAuthenticationConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apprunnerService.ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutputReference",
 		reflect.TypeOf((*ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessRoleArn", GoGetter: "AccessRoleArn"},
@@ -446,19 +446,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepository",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepository",
 		reflect.TypeOf((*ApprunnerServiceSourceConfigurationCodeRepository)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfiguration",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfiguration",
 		reflect.TypeOf((*ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues",
 		reflect.TypeOf((*ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesOutputReference",
 		reflect.TypeOf((*ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "buildCommand", GoGetter: "BuildCommand"},
@@ -507,7 +507,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationOutputReference",
 		reflect.TypeOf((*ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "codeConfigurationValues", GoGetter: "CodeConfigurationValues"},
@@ -545,7 +545,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference",
 		reflect.TypeOf((*ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "codeConfiguration", GoGetter: "CodeConfiguration"},
@@ -586,11 +586,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersion",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersion",
 		reflect.TypeOf((*ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersion)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionOutputReference",
 		reflect.TypeOf((*ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -626,15 +626,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerService.ApprunnerServiceSourceConfigurationImageRepository",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationImageRepository",
 		reflect.TypeOf((*ApprunnerServiceSourceConfigurationImageRepository)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerService.ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguration",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguration",
 		reflect.TypeOf((*ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apprunnerService.ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference",
 		reflect.TypeOf((*ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -678,7 +678,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.apprunnerService.ApprunnerServiceSourceConfigurationImageRepositoryOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationImageRepositoryOutputReference",
 		reflect.TypeOf((*ApprunnerServiceSourceConfigurationImageRepositoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -718,7 +718,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.apprunnerService.ApprunnerServiceSourceConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationOutputReference",
 		reflect.TypeOf((*ApprunnerServiceSourceConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationConfiguration", GoGetter: "AuthenticationConfiguration"},

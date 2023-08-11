@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.controltowerControl.ControltowerControl",
+		"@cdktf/provider-aws.controltowerControl.ControltowerControl",
 		reflect.TypeOf((*ControltowerControl)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.controltowerControl.ControltowerControlConfig",
+		"@cdktf/provider-aws.controltowerControl.ControltowerControlConfig",
 		reflect.TypeOf((*ControltowerControlConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.controltowerControl.ControltowerControlTimeouts",
+		"@cdktf/provider-aws.controltowerControl.ControltowerControlTimeouts",
 		reflect.TypeOf((*ControltowerControlTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.controltowerControl.ControltowerControlTimeoutsOutputReference",
+		"@cdktf/provider-aws.controltowerControl.ControltowerControlTimeoutsOutputReference",
 		reflect.TypeOf((*ControltowerControlTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

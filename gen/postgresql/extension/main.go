@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"postgresql.extension.Extension",
+		"@cdktf/provider-postgresql.extension.Extension",
 		reflect.TypeOf((*Extension)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"postgresql.extension.ExtensionConfig",
+		"@cdktf/provider-postgresql.extension.ExtensionConfig",
 		reflect.TypeOf((*ExtensionConfig)(nil)).Elem(),
 	)
 }

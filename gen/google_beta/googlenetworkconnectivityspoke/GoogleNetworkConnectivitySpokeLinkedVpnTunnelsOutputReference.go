@@ -202,7 +202,7 @@ func NewGoogleNetworkConnectivitySpokeLinkedVpnTunnelsOutputReference(terraformR
 	j := jsiiProxy_GoogleNetworkConnectivitySpokeLinkedVpnTunnelsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpokeLinkedVpnTunnelsOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpokeLinkedVpnTunnelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleNetworkConnectivitySpokeLinkedVpnTunnelsOutputReference_Override(g
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpokeLinkedVpnTunnelsOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpokeLinkedVpnTunnelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

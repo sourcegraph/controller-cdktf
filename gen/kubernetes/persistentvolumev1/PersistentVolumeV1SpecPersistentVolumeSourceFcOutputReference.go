@@ -250,7 +250,7 @@ func NewPersistentVolumeV1SpecPersistentVolumeSourceFcOutputReference(terraformR
 	j := jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceFcOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.persistentVolumeV1.PersistentVolumeV1SpecPersistentVolumeSourceFcOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolumeV1.PersistentVolumeV1SpecPersistentVolumeSourceFcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewPersistentVolumeV1SpecPersistentVolumeSourceFcOutputReference_Override(p
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.persistentVolumeV1.PersistentVolumeV1SpecPersistentVolumeSourceFcOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolumeV1.PersistentVolumeV1SpecPersistentVolumeSourceFcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

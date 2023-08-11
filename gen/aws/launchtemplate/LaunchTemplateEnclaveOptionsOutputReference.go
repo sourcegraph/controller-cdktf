@@ -180,7 +180,7 @@ func NewLaunchTemplateEnclaveOptionsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_LaunchTemplateEnclaveOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateEnclaveOptionsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateEnclaveOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewLaunchTemplateEnclaveOptionsOutputReference_Override(l LaunchTemplateEnc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateEnclaveOptionsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateEnclaveOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

@@ -226,7 +226,7 @@ func NewEksNodeGroupTaintOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_EksNodeGroupTaintOutputReference{}
 
 	_jsii_.Create(
-		"aws.eksNodeGroup.EksNodeGroupTaintOutputReference",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaintOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewEksNodeGroupTaintOutputReference_Override(e EksNodeGroupTaintOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksNodeGroup.EksNodeGroupTaintOutputReference",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTaintOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

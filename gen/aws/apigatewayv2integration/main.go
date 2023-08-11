@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.apigatewayv2Integration.Apigatewayv2Integration",
+		"@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration",
 		reflect.TypeOf((*Apigatewayv2Integration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -110,15 +110,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apigatewayv2Integration.Apigatewayv2IntegrationConfig",
+		"@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationConfig",
 		reflect.TypeOf((*Apigatewayv2IntegrationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParameters",
+		"@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParameters",
 		reflect.TypeOf((*Apigatewayv2IntegrationResponseParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersList",
+		"@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersList",
 		reflect.TypeOf((*Apigatewayv2IntegrationResponseParametersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -139,7 +139,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersOutputReference",
+		"@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersOutputReference",
 		reflect.TypeOf((*Apigatewayv2IntegrationResponseParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -175,11 +175,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apigatewayv2Integration.Apigatewayv2IntegrationTlsConfig",
+		"@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationTlsConfig",
 		reflect.TypeOf((*Apigatewayv2IntegrationTlsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apigatewayv2Integration.Apigatewayv2IntegrationTlsConfigOutputReference",
+		"@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationTlsConfigOutputReference",
 		reflect.TypeOf((*Apigatewayv2IntegrationTlsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

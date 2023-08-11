@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.glueUserDefinedFunction.GlueUserDefinedFunction",
+		"@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunction",
 		reflect.TypeOf((*GlueUserDefinedFunction)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueUserDefinedFunction.GlueUserDefinedFunctionConfig",
+		"@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunctionConfig",
 		reflect.TypeOf((*GlueUserDefinedFunctionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueUserDefinedFunction.GlueUserDefinedFunctionResourceUris",
+		"@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunctionResourceUris",
 		reflect.TypeOf((*GlueUserDefinedFunctionResourceUris)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.glueUserDefinedFunction.GlueUserDefinedFunctionResourceUrisList",
+		"@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunctionResourceUrisList",
 		reflect.TypeOf((*GlueUserDefinedFunctionResourceUrisList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.glueUserDefinedFunction.GlueUserDefinedFunctionResourceUrisOutputReference",
+		"@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunctionResourceUrisOutputReference",
 		reflect.TypeOf((*GlueUserDefinedFunctionResourceUrisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

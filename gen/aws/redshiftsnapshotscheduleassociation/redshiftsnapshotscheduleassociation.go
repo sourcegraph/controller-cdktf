@@ -342,7 +342,7 @@ func NewRedshiftSnapshotScheduleAssociation(scope constructs.Construct, id *stri
 	j := jsiiProxy_RedshiftSnapshotScheduleAssociation{}
 
 	_jsii_.Create(
-		"aws.redshiftSnapshotScheduleAssociation.RedshiftSnapshotScheduleAssociation",
+		"@cdktf/provider-aws.redshiftSnapshotScheduleAssociation.RedshiftSnapshotScheduleAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewRedshiftSnapshotScheduleAssociation_Override(r RedshiftSnapshotScheduleA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftSnapshotScheduleAssociation.RedshiftSnapshotScheduleAssociation",
+		"@cdktf/provider-aws.redshiftSnapshotScheduleAssociation.RedshiftSnapshotScheduleAssociation",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -488,7 +488,7 @@ func RedshiftSnapshotScheduleAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftSnapshotScheduleAssociation.RedshiftSnapshotScheduleAssociation",
+		"@cdktf/provider-aws.redshiftSnapshotScheduleAssociation.RedshiftSnapshotScheduleAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func RedshiftSnapshotScheduleAssociation_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftSnapshotScheduleAssociation.RedshiftSnapshotScheduleAssociation",
+		"@cdktf/provider-aws.redshiftSnapshotScheduleAssociation.RedshiftSnapshotScheduleAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func RedshiftSnapshotScheduleAssociation_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftSnapshotScheduleAssociation.RedshiftSnapshotScheduleAssociation",
+		"@cdktf/provider-aws.redshiftSnapshotScheduleAssociation.RedshiftSnapshotScheduleAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func RedshiftSnapshotScheduleAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.redshiftSnapshotScheduleAssociation.RedshiftSnapshotScheduleAssociation",
+		"@cdktf/provider-aws.redshiftSnapshotScheduleAssociation.RedshiftSnapshotScheduleAssociation",
 		"tfResourceType",
 		&returns,
 	)

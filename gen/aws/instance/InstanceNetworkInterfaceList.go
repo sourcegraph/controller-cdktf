@@ -116,7 +116,7 @@ func NewInstanceNetworkInterfaceList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_InstanceNetworkInterfaceList{}
 
 	_jsii_.Create(
-		"aws.instance.InstanceNetworkInterfaceList",
+		"@cdktf/provider-aws.instance.InstanceNetworkInterfaceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewInstanceNetworkInterfaceList_Override(i InstanceNetworkInterfaceList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.instance.InstanceNetworkInterfaceList",
+		"@cdktf/provider-aws.instance.InstanceNetworkInterfaceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

@@ -116,7 +116,7 @@ func NewOpsworksApplicationEnvironmentList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_OpsworksApplicationEnvironmentList{}
 
 	_jsii_.Create(
-		"aws.opsworksApplication.OpsworksApplicationEnvironmentList",
+		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationEnvironmentList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOpsworksApplicationEnvironmentList_Override(o OpsworksApplicationEnviron
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksApplication.OpsworksApplicationEnvironmentList",
+		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationEnvironmentList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

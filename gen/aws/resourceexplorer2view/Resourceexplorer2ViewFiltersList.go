@@ -116,7 +116,7 @@ func NewResourceexplorer2ViewFiltersList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_Resourceexplorer2ViewFiltersList{}
 
 	_jsii_.Create(
-		"aws.resourceexplorer2View.Resourceexplorer2ViewFiltersList",
+		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewFiltersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewResourceexplorer2ViewFiltersList_Override(r Resourceexplorer2ViewFilters
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.resourceexplorer2View.Resourceexplorer2ViewFiltersList",
+		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewFiltersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

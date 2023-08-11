@@ -116,7 +116,7 @@ func NewApikeysKeyRestrictionsApiTargetsList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_ApikeysKeyRestrictionsApiTargetsList{}
 
 	_jsii_.Create(
-		"google.apikeysKey.ApikeysKeyRestrictionsApiTargetsList",
+		"@cdktf/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewApikeysKeyRestrictionsApiTargetsList_Override(a ApikeysKeyRestrictionsAp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apikeysKey.ApikeysKeyRestrictionsApiTargetsList",
+		"@cdktf/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

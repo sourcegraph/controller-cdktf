@@ -342,7 +342,7 @@ func NewPodSecurityPolicy(scope constructs.Construct, id *string, config *PodSec
 	j := jsiiProxy_PodSecurityPolicy{}
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicy",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewPodSecurityPolicy_Override(p PodSecurityPolicy, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicy",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicy",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -466,7 +466,7 @@ func PodSecurityPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicy",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -485,7 +485,7 @@ func PodSecurityPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicy",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -504,7 +504,7 @@ func PodSecurityPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicy",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -517,7 +517,7 @@ func PodSecurityPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicy",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicy",
 		"tfResourceType",
 		&returns,
 	)

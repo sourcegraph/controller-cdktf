@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.emrInstanceFleet.EmrInstanceFleet",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleet",
 		reflect.TypeOf((*EmrInstanceFleet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,19 +76,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.emrInstanceFleet.EmrInstanceFleetConfig",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetConfig",
 		reflect.TypeOf((*EmrInstanceFleetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigs",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigs",
 		reflect.TypeOf((*EmrInstanceFleetInstanceTypeConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsConfigurations",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsConfigurations",
 		reflect.TypeOf((*EmrInstanceFleetInstanceTypeConfigsConfigurations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsConfigurationsList",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsConfigurationsList",
 		reflect.TypeOf((*EmrInstanceFleetInstanceTypeConfigsConfigurationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference",
 		reflect.TypeOf((*EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "classification", GoGetter: "Classification"},
@@ -147,11 +147,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsEbsConfig",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsEbsConfig",
 		reflect.TypeOf((*EmrInstanceFleetInstanceTypeConfigsEbsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsEbsConfigList",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsEbsConfigList",
 		reflect.TypeOf((*EmrInstanceFleetInstanceTypeConfigsEbsConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -172,7 +172,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference",
 		reflect.TypeOf((*EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -214,7 +214,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsList",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsList",
 		reflect.TypeOf((*EmrInstanceFleetInstanceTypeConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -235,7 +235,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsOutputReference",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetInstanceTypeConfigsOutputReference",
 		reflect.TypeOf((*EmrInstanceFleetInstanceTypeConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bidPrice", GoGetter: "BidPrice"},
@@ -286,15 +286,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecifications",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecifications",
 		reflect.TypeOf((*EmrInstanceFleetLaunchSpecifications)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsOnDemandSpecification",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsOnDemandSpecification",
 		reflect.TypeOf((*EmrInstanceFleetLaunchSpecificationsOnDemandSpecification)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationList",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationList",
 		reflect.TypeOf((*EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -315,7 +315,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference",
 		reflect.TypeOf((*EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocationStrategy", GoGetter: "AllocationStrategy"},
@@ -349,7 +349,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsOutputReference",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsOutputReference",
 		reflect.TypeOf((*EmrInstanceFleetLaunchSpecificationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -389,11 +389,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsSpotSpecification",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsSpotSpecification",
 		reflect.TypeOf((*EmrInstanceFleetLaunchSpecificationsSpotSpecification)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsSpotSpecificationList",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsSpotSpecificationList",
 		reflect.TypeOf((*EmrInstanceFleetLaunchSpecificationsSpotSpecificationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -414,7 +414,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference",
 		reflect.TypeOf((*EmrInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocationStrategy", GoGetter: "AllocationStrategy"},

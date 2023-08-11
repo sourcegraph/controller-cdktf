@@ -104,7 +104,7 @@ func NewDataplexDatascanDataProfileResultScannedDataIncrementalFieldList(terrafo
 	j := jsiiProxy_DataplexDatascanDataProfileResultScannedDataIncrementalFieldList{}
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataProfileResultScannedDataIncrementalFieldList",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataProfileResultScannedDataIncrementalFieldList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataplexDatascanDataProfileResultScannedDataIncrementalFieldList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataProfileResultScannedDataIncrementalFieldList",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataProfileResultScannedDataIncrementalFieldList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

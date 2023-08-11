@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.storageNotification.StorageNotification",
+		"@cdktf/provider-google.storageNotification.StorageNotification",
 		reflect.TypeOf((*StorageNotification)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.storageNotification.StorageNotificationConfig",
+		"@cdktf/provider-google.storageNotification.StorageNotificationConfig",
 		reflect.TypeOf((*StorageNotificationConfig)(nil)).Elem(),
 	)
 }

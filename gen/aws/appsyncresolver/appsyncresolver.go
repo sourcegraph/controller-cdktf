@@ -616,7 +616,7 @@ func NewAppsyncResolver(scope constructs.Construct, id *string, config *AppsyncR
 	j := jsiiProxy_AppsyncResolver{}
 
 	_jsii_.Create(
-		"aws.appsyncResolver.AppsyncResolver",
+		"@cdktf/provider-aws.appsyncResolver.AppsyncResolver",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -629,7 +629,7 @@ func NewAppsyncResolver_Override(a AppsyncResolver, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appsyncResolver.AppsyncResolver",
+		"@cdktf/provider-aws.appsyncResolver.AppsyncResolver",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -839,7 +839,7 @@ func AppsyncResolver_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appsyncResolver.AppsyncResolver",
+		"@cdktf/provider-aws.appsyncResolver.AppsyncResolver",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -858,7 +858,7 @@ func AppsyncResolver_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appsyncResolver.AppsyncResolver",
+		"@cdktf/provider-aws.appsyncResolver.AppsyncResolver",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -877,7 +877,7 @@ func AppsyncResolver_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appsyncResolver.AppsyncResolver",
+		"@cdktf/provider-aws.appsyncResolver.AppsyncResolver",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -890,7 +890,7 @@ func AppsyncResolver_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appsyncResolver.AppsyncResolver",
+		"@cdktf/provider-aws.appsyncResolver.AppsyncResolver",
 		"tfResourceType",
 		&returns,
 	)

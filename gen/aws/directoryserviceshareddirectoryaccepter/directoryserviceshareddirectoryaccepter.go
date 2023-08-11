@@ -387,7 +387,7 @@ func NewDirectoryServiceSharedDirectoryAccepter(scope constructs.Construct, id *
 	j := jsiiProxy_DirectoryServiceSharedDirectoryAccepter{}
 
 	_jsii_.Create(
-		"aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter",
+		"@cdktf/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -400,7 +400,7 @@ func NewDirectoryServiceSharedDirectoryAccepter_Override(d DirectoryServiceShare
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter",
+		"@cdktf/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -522,7 +522,7 @@ func DirectoryServiceSharedDirectoryAccepter_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter",
+		"@cdktf/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func DirectoryServiceSharedDirectoryAccepter_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter",
+		"@cdktf/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func DirectoryServiceSharedDirectoryAccepter_IsTerraformResource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter",
+		"@cdktf/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func DirectoryServiceSharedDirectoryAccepter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter",
+		"@cdktf/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter",
 		"tfResourceType",
 		&returns,
 	)

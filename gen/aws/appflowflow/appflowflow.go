@@ -518,7 +518,7 @@ func NewAppflowFlow(scope constructs.Construct, id *string, config *AppflowFlowC
 	j := jsiiProxy_AppflowFlow{}
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlow",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlow",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -531,7 +531,7 @@ func NewAppflowFlow_Override(a AppflowFlow, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlow",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlow",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -697,7 +697,7 @@ func AppflowFlow_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appflowFlow.AppflowFlow",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlow",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -716,7 +716,7 @@ func AppflowFlow_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appflowFlow.AppflowFlow",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlow",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func AppflowFlow_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appflowFlow.AppflowFlow",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlow",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -748,7 +748,7 @@ func AppflowFlow_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appflowFlow.AppflowFlow",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlow",
 		"tfResourceType",
 		&returns,
 	)

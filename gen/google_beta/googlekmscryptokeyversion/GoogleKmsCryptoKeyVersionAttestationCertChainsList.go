@@ -104,7 +104,7 @@ func NewGoogleKmsCryptoKeyVersionAttestationCertChainsList(terraformResource cdk
 	j := jsiiProxy_GoogleKmsCryptoKeyVersionAttestationCertChainsList{}
 
 	_jsii_.Create(
-		"google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionAttestationCertChainsList",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionAttestationCertChainsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleKmsCryptoKeyVersionAttestationCertChainsList_Override(g GoogleKmsC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionAttestationCertChainsList",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionAttestationCertChainsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

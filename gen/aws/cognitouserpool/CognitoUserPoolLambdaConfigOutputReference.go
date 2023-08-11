@@ -468,7 +468,7 @@ func NewCognitoUserPoolLambdaConfigOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_CognitoUserPoolLambdaConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolLambdaConfigOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolLambdaConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -480,7 +480,7 @@ func NewCognitoUserPoolLambdaConfigOutputReference_Override(c CognitoUserPoolLam
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolLambdaConfigOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolLambdaConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

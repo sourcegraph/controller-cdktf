@@ -226,7 +226,7 @@ func NewContainerAnalysisNoteIamBindingConditionOutputReference(terraformResourc
 	j := jsiiProxy_ContainerAnalysisNoteIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBindingConditionOutputReference",
+		"@cdktf/provider-google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewContainerAnalysisNoteIamBindingConditionOutputReference_Override(c Conta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBindingConditionOutputReference",
+		"@cdktf/provider-google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

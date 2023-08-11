@@ -228,7 +228,7 @@ func NewDeploymentTimeoutsOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_DeploymentTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDeploymentTimeoutsOutputReference_Override(d DeploymentTimeoutsOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

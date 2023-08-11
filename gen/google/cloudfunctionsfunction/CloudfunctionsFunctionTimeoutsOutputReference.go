@@ -252,7 +252,7 @@ func NewCloudfunctionsFunctionTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_CloudfunctionsFunctionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewCloudfunctionsFunctionTimeoutsOutputReference_Override(c CloudfunctionsF
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

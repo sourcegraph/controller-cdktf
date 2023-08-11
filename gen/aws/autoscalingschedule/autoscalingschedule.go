@@ -521,7 +521,7 @@ func NewAutoscalingSchedule(scope constructs.Construct, id *string, config *Auto
 	j := jsiiProxy_AutoscalingSchedule{}
 
 	_jsii_.Create(
-		"aws.autoscalingSchedule.AutoscalingSchedule",
+		"@cdktf/provider-aws.autoscalingSchedule.AutoscalingSchedule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -534,7 +534,7 @@ func NewAutoscalingSchedule_Override(a AutoscalingSchedule, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingSchedule.AutoscalingSchedule",
+		"@cdktf/provider-aws.autoscalingSchedule.AutoscalingSchedule",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -744,7 +744,7 @@ func AutoscalingSchedule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingSchedule.AutoscalingSchedule",
+		"@cdktf/provider-aws.autoscalingSchedule.AutoscalingSchedule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -763,7 +763,7 @@ func AutoscalingSchedule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingSchedule.AutoscalingSchedule",
+		"@cdktf/provider-aws.autoscalingSchedule.AutoscalingSchedule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -782,7 +782,7 @@ func AutoscalingSchedule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingSchedule.AutoscalingSchedule",
+		"@cdktf/provider-aws.autoscalingSchedule.AutoscalingSchedule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -795,7 +795,7 @@ func AutoscalingSchedule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.autoscalingSchedule.AutoscalingSchedule",
+		"@cdktf/provider-aws.autoscalingSchedule.AutoscalingSchedule",
 		"tfResourceType",
 		&returns,
 	)

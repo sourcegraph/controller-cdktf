@@ -116,7 +116,7 @@ func NewAppflowFlowTaskList(terraformResource cdktf.IInterpolatingParent, terraf
 	j := jsiiProxy_AppflowFlowTaskList{}
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowTaskList",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowTaskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppflowFlowTaskList_Override(a AppflowFlowTaskList, terraformResource cd
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowTaskList",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowTaskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

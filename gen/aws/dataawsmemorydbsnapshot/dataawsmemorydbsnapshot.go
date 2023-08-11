@@ -370,7 +370,7 @@ func NewDataAwsMemorydbSnapshot(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataAwsMemorydbSnapshot{}
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot",
+		"@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -383,7 +383,7 @@ func NewDataAwsMemorydbSnapshot_Override(d DataAwsMemorydbSnapshot, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot",
+		"@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -494,7 +494,7 @@ func DataAwsMemorydbSnapshot_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot",
+		"@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -513,7 +513,7 @@ func DataAwsMemorydbSnapshot_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot",
+		"@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -532,7 +532,7 @@ func DataAwsMemorydbSnapshot_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot",
+		"@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -545,7 +545,7 @@ func DataAwsMemorydbSnapshot_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot",
+		"@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshot",
 		"tfResourceType",
 		&returns,
 	)

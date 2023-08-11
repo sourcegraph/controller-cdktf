@@ -179,7 +179,7 @@ func NewGoogleContainerClusterPodSecurityPolicyConfigOutputReference(terraformRe
 	j := jsiiProxy_GoogleContainerClusterPodSecurityPolicyConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterPodSecurityPolicyConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterPodSecurityPolicyConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleContainerClusterPodSecurityPolicyConfigOutputReference_Override(g 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterPodSecurityPolicyConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterPodSecurityPolicyConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

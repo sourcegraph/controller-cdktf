@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleServiceAccountAccessToken.DataGoogleServiceAccountAccessToken",
+		"@cdktf/provider-google.dataGoogleServiceAccountAccessToken.DataGoogleServiceAccountAccessToken",
 		reflect.TypeOf((*DataGoogleServiceAccountAccessToken)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessToken", GoGetter: "AccessToken"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleServiceAccountAccessToken.DataGoogleServiceAccountAccessTokenConfig",
+		"@cdktf/provider-google.dataGoogleServiceAccountAccessToken.DataGoogleServiceAccountAccessTokenConfig",
 		reflect.TypeOf((*DataGoogleServiceAccountAccessTokenConfig)(nil)).Elem(),
 	)
 }

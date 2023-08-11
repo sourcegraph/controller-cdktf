@@ -189,7 +189,7 @@ func NewCertificateManagerCertificateMapGclbTargetsOutputReference(terraformReso
 	j := jsiiProxy_CertificateManagerCertificateMapGclbTargetsOutputReference{}
 
 	_jsii_.Create(
-		"google.certificateManagerCertificateMap.CertificateManagerCertificateMapGclbTargetsOutputReference",
+		"@cdktf/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapGclbTargetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewCertificateManagerCertificateMapGclbTargetsOutputReference_Override(c Ce
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.certificateManagerCertificateMap.CertificateManagerCertificateMapGclbTargetsOutputReference",
+		"@cdktf/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMapGclbTargetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

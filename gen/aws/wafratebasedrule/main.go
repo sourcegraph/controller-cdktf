@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.wafRateBasedRule.WafRateBasedRule",
+		"@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRule",
 		reflect.TypeOf((*WafRateBasedRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafRateBasedRule.WafRateBasedRuleConfig",
+		"@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRuleConfig",
 		reflect.TypeOf((*WafRateBasedRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafRateBasedRule.WafRateBasedRulePredicates",
+		"@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRulePredicates",
 		reflect.TypeOf((*WafRateBasedRulePredicates)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafRateBasedRule.WafRateBasedRulePredicatesList",
+		"@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRulePredicatesList",
 		reflect.TypeOf((*WafRateBasedRulePredicatesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafRateBasedRule.WafRateBasedRulePredicatesOutputReference",
+		"@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRulePredicatesOutputReference",
 		reflect.TypeOf((*WafRateBasedRulePredicatesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

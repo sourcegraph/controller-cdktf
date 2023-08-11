@@ -252,7 +252,7 @@ func NewComputeUrlMapHeaderActionOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_ComputeUrlMapHeaderActionOutputReference{}
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapHeaderActionOutputReference",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapHeaderActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewComputeUrlMapHeaderActionOutputReference_Override(c ComputeUrlMapHeaderA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapHeaderActionOutputReference",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapHeaderActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

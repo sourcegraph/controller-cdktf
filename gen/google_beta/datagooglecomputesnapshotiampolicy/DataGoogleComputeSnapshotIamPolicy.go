@@ -337,7 +337,7 @@ func NewDataGoogleComputeSnapshotIamPolicy(scope constructs.Construct, id *strin
 	j := jsiiProxy_DataGoogleComputeSnapshotIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeSnapshotIamPolicy.DataGoogleComputeSnapshotIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeSnapshotIamPolicy.DataGoogleComputeSnapshotIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -350,7 +350,7 @@ func NewDataGoogleComputeSnapshotIamPolicy_Override(d DataGoogleComputeSnapshotI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeSnapshotIamPolicy.DataGoogleComputeSnapshotIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeSnapshotIamPolicy.DataGoogleComputeSnapshotIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -461,7 +461,7 @@ func DataGoogleComputeSnapshotIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeSnapshotIamPolicy.DataGoogleComputeSnapshotIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeSnapshotIamPolicy.DataGoogleComputeSnapshotIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataGoogleComputeSnapshotIamPolicy_IsTerraformDataSource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeSnapshotIamPolicy.DataGoogleComputeSnapshotIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeSnapshotIamPolicy.DataGoogleComputeSnapshotIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataGoogleComputeSnapshotIamPolicy_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeSnapshotIamPolicy.DataGoogleComputeSnapshotIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeSnapshotIamPolicy.DataGoogleComputeSnapshotIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataGoogleComputeSnapshotIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleComputeSnapshotIamPolicy.DataGoogleComputeSnapshotIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeSnapshotIamPolicy.DataGoogleComputeSnapshotIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

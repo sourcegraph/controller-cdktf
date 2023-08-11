@@ -301,7 +301,7 @@ func NewDataAwsGuarddutyDetector(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataAwsGuarddutyDetector{}
 
 	_jsii_.Create(
-		"aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector",
+		"@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -314,7 +314,7 @@ func NewDataAwsGuarddutyDetector_Override(d DataAwsGuarddutyDetector, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector",
+		"@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -403,7 +403,7 @@ func DataAwsGuarddutyDetector_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector",
+		"@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -422,7 +422,7 @@ func DataAwsGuarddutyDetector_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector",
+		"@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -441,7 +441,7 @@ func DataAwsGuarddutyDetector_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector",
+		"@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -454,7 +454,7 @@ func DataAwsGuarddutyDetector_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector",
+		"@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector",
 		"tfResourceType",
 		&returns,
 	)

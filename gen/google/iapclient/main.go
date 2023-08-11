@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.iapClient.IapClient",
+		"@cdktf/provider-google.iapClient.IapClient",
 		reflect.TypeOf((*IapClient)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,15 +65,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.iapClient.IapClientConfig",
+		"@cdktf/provider-google.iapClient.IapClientConfig",
 		reflect.TypeOf((*IapClientConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.iapClient.IapClientTimeouts",
+		"@cdktf/provider-google.iapClient.IapClientTimeouts",
 		reflect.TypeOf((*IapClientTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.iapClient.IapClientTimeoutsOutputReference",
+		"@cdktf/provider-google.iapClient.IapClientTimeoutsOutputReference",
 		reflect.TypeOf((*IapClientTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

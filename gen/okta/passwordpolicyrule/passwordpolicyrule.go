@@ -583,7 +583,7 @@ func NewPasswordPolicyRule(scope constructs.Construct, id *string, config *Passw
 	j := jsiiProxy_PasswordPolicyRule{}
 
 	_jsii_.Create(
-		"okta.passwordPolicyRule.PasswordPolicyRule",
+		"@cdktf/provider-okta.passwordPolicyRule.PasswordPolicyRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -596,7 +596,7 @@ func NewPasswordPolicyRule_Override(p PasswordPolicyRule, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.passwordPolicyRule.PasswordPolicyRule",
+		"@cdktf/provider-okta.passwordPolicyRule.PasswordPolicyRule",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -839,7 +839,7 @@ func PasswordPolicyRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.passwordPolicyRule.PasswordPolicyRule",
+		"@cdktf/provider-okta.passwordPolicyRule.PasswordPolicyRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -858,7 +858,7 @@ func PasswordPolicyRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.passwordPolicyRule.PasswordPolicyRule",
+		"@cdktf/provider-okta.passwordPolicyRule.PasswordPolicyRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -877,7 +877,7 @@ func PasswordPolicyRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.passwordPolicyRule.PasswordPolicyRule",
+		"@cdktf/provider-okta.passwordPolicyRule.PasswordPolicyRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -890,7 +890,7 @@ func PasswordPolicyRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.passwordPolicyRule.PasswordPolicyRule",
+		"@cdktf/provider-okta.passwordPolicyRule.PasswordPolicyRule",
 		"tfResourceType",
 		&returns,
 	)

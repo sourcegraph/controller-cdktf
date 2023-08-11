@@ -156,7 +156,7 @@ func NewDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateTy
 	j := jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateTypeOutputReference{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateTypeOutputReference",
+		"@cdktf/provider-google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateTypeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateTy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateTypeOutputReference",
+		"@cdktf/provider-google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateTypeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

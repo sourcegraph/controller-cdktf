@@ -202,7 +202,7 @@ func NewOsConfigOsPolicyAssignmentRolloutOutputReference(terraformResource cdktf
 	j := jsiiProxy_OsConfigOsPolicyAssignmentRolloutOutputReference{}
 
 	_jsii_.Create(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentRolloutOutputReference",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentRolloutOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewOsConfigOsPolicyAssignmentRolloutOutputReference_Override(o OsConfigOsPo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentRolloutOutputReference",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentRolloutOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

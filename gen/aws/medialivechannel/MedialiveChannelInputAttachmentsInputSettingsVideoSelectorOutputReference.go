@@ -204,7 +204,7 @@ func NewMedialiveChannelInputAttachmentsInputSettingsVideoSelectorOutputReferenc
 	j := jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsVideoSelectorOutputReference{}
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsVideoSelectorOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsVideoSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMedialiveChannelInputAttachmentsInputSettingsVideoSelectorOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsVideoSelectorOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsVideoSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

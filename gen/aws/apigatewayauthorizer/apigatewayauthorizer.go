@@ -521,7 +521,7 @@ func NewApiGatewayAuthorizer(scope constructs.Construct, id *string, config *Api
 	j := jsiiProxy_ApiGatewayAuthorizer{}
 
 	_jsii_.Create(
-		"aws.apiGatewayAuthorizer.ApiGatewayAuthorizer",
+		"@cdktf/provider-aws.apiGatewayAuthorizer.ApiGatewayAuthorizer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -534,7 +534,7 @@ func NewApiGatewayAuthorizer_Override(a ApiGatewayAuthorizer, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayAuthorizer.ApiGatewayAuthorizer",
+		"@cdktf/provider-aws.apiGatewayAuthorizer.ApiGatewayAuthorizer",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -744,7 +744,7 @@ func ApiGatewayAuthorizer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayAuthorizer.ApiGatewayAuthorizer",
+		"@cdktf/provider-aws.apiGatewayAuthorizer.ApiGatewayAuthorizer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -763,7 +763,7 @@ func ApiGatewayAuthorizer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayAuthorizer.ApiGatewayAuthorizer",
+		"@cdktf/provider-aws.apiGatewayAuthorizer.ApiGatewayAuthorizer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -782,7 +782,7 @@ func ApiGatewayAuthorizer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayAuthorizer.ApiGatewayAuthorizer",
+		"@cdktf/provider-aws.apiGatewayAuthorizer.ApiGatewayAuthorizer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -795,7 +795,7 @@ func ApiGatewayAuthorizer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apiGatewayAuthorizer.ApiGatewayAuthorizer",
+		"@cdktf/provider-aws.apiGatewayAuthorizer.ApiGatewayAuthorizer",
 		"tfResourceType",
 		&returns,
 	)

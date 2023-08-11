@@ -116,7 +116,7 @@ func NewCeAnomalySubscriptionThresholdExpressionOrList(terraformResource cdktf.I
 	j := jsiiProxy_CeAnomalySubscriptionThresholdExpressionOrList{}
 
 	_jsii_.Create(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrList",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCeAnomalySubscriptionThresholdExpressionOrList_Override(c CeAnomalySubsc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrList",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

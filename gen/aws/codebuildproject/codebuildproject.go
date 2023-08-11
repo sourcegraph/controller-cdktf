@@ -900,7 +900,7 @@ func NewCodebuildProject(scope constructs.Construct, id *string, config *Codebui
 	j := jsiiProxy_CodebuildProject{}
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProject",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProject",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -913,7 +913,7 @@ func NewCodebuildProject_Override(c CodebuildProject, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProject",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProject",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -1167,7 +1167,7 @@ func CodebuildProject_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codebuildProject.CodebuildProject",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProject",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1186,7 +1186,7 @@ func CodebuildProject_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codebuildProject.CodebuildProject",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProject",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1205,7 +1205,7 @@ func CodebuildProject_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codebuildProject.CodebuildProject",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProject",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1218,7 +1218,7 @@ func CodebuildProject_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.codebuildProject.CodebuildProject",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProject",
 		"tfResourceType",
 		&returns,
 	)

@@ -180,7 +180,7 @@ func NewGoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOu
 	j := jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference",
+		"@cdktf/provider-google-beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference",
+		"@cdktf/provider-google-beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

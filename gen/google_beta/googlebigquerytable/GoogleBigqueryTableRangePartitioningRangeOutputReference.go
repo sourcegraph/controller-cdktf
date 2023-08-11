@@ -225,7 +225,7 @@ func NewGoogleBigqueryTableRangePartitioningRangeOutputReference(terraformResour
 	j := jsiiProxy_GoogleBigqueryTableRangePartitioningRangeOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableRangePartitioningRangeOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableRangePartitioningRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewGoogleBigqueryTableRangePartitioningRangeOutputReference_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableRangePartitioningRangeOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableRangePartitioningRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

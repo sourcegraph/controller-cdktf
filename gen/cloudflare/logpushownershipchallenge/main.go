@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
+		"@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
 		reflect.TypeOf((*LogpushOwnershipChallenge)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallengeConfig",
+		"@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallengeConfig",
 		reflect.TypeOf((*LogpushOwnershipChallengeConfig)(nil)).Elem(),
 	)
 }

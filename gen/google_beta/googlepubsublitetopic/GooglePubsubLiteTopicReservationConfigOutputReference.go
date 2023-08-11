@@ -180,7 +180,7 @@ func NewGooglePubsubLiteTopicReservationConfigOutputReference(terraformResource 
 	j := jsiiProxy_GooglePubsubLiteTopicReservationConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicReservationConfigOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicReservationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGooglePubsubLiteTopicReservationConfigOutputReference_Override(g GoogleP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicReservationConfigOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicReservationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

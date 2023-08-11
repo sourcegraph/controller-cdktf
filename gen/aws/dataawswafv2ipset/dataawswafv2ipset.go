@@ -358,7 +358,7 @@ func NewDataAwsWafv2IpSet(scope constructs.Construct, id *string, config *DataAw
 	j := jsiiProxy_DataAwsWafv2IpSet{}
 
 	_jsii_.Create(
-		"aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet",
+		"@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -371,7 +371,7 @@ func NewDataAwsWafv2IpSet_Override(d DataAwsWafv2IpSet, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet",
+		"@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -482,7 +482,7 @@ func DataAwsWafv2IpSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet",
+		"@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -501,7 +501,7 @@ func DataAwsWafv2IpSet_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet",
+		"@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -520,7 +520,7 @@ func DataAwsWafv2IpSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet",
+		"@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -533,7 +533,7 @@ func DataAwsWafv2IpSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet",
+		"@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet",
 		"tfResourceType",
 		&returns,
 	)

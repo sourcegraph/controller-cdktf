@@ -342,7 +342,7 @@ func NewConnectBotAssociation(scope constructs.Construct, id *string, config *Co
 	j := jsiiProxy_ConnectBotAssociation{}
 
 	_jsii_.Create(
-		"aws.connectBotAssociation.ConnectBotAssociation",
+		"@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewConnectBotAssociation_Override(c ConnectBotAssociation, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectBotAssociation.ConnectBotAssociation",
+		"@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -477,7 +477,7 @@ func ConnectBotAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectBotAssociation.ConnectBotAssociation",
+		"@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -496,7 +496,7 @@ func ConnectBotAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectBotAssociation.ConnectBotAssociation",
+		"@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func ConnectBotAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectBotAssociation.ConnectBotAssociation",
+		"@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -528,7 +528,7 @@ func ConnectBotAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.connectBotAssociation.ConnectBotAssociation",
+		"@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation",
 		"tfResourceType",
 		&returns,
 	)

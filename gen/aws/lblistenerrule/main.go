@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lbListenerRule.LbListenerRule",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRule",
 		reflect.TypeOf((*LbListenerRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lbListenerRule.LbListenerRuleAction",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleAction",
 		reflect.TypeOf((*LbListenerRuleAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lbListenerRule.LbListenerRuleActionAuthenticateCognito",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognito",
 		reflect.TypeOf((*LbListenerRuleActionAuthenticateCognito)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lbListenerRule.LbListenerRuleActionAuthenticateCognitoOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognitoOutputReference",
 		reflect.TypeOf((*LbListenerRuleActionAuthenticateCognitoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationRequestExtraParams", GoGetter: "AuthenticationRequestExtraParams"},
@@ -134,11 +134,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc",
 		reflect.TypeOf((*LbListenerRuleActionAuthenticateOidc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lbListenerRule.LbListenerRuleActionAuthenticateOidcOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidcOutputReference",
 		reflect.TypeOf((*LbListenerRuleActionAuthenticateOidcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationRequestExtraParams", GoGetter: "AuthenticationRequestExtraParams"},
@@ -197,11 +197,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lbListenerRule.LbListenerRuleActionFixedResponse",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionFixedResponse",
 		reflect.TypeOf((*LbListenerRuleActionFixedResponse)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lbListenerRule.LbListenerRuleActionFixedResponseOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionFixedResponseOutputReference",
 		reflect.TypeOf((*LbListenerRuleActionFixedResponseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -241,11 +241,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lbListenerRule.LbListenerRuleActionForward",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionForward",
 		reflect.TypeOf((*LbListenerRuleActionForward)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lbListenerRule.LbListenerRuleActionForwardOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionForwardOutputReference",
 		reflect.TypeOf((*LbListenerRuleActionForwardOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -284,11 +284,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lbListenerRule.LbListenerRuleActionForwardStickiness",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickiness",
 		reflect.TypeOf((*LbListenerRuleActionForwardStickiness)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lbListenerRule.LbListenerRuleActionForwardStickinessOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickinessOutputReference",
 		reflect.TypeOf((*LbListenerRuleActionForwardStickinessOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -325,11 +325,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup",
 		reflect.TypeOf((*LbListenerRuleActionForwardTargetGroup)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupList",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupList",
 		reflect.TypeOf((*LbListenerRuleActionForwardTargetGroupList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -350,7 +350,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupOutputReference",
 		reflect.TypeOf((*LbListenerRuleActionForwardTargetGroupOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -387,7 +387,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lbListenerRule.LbListenerRuleActionList",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionList",
 		reflect.TypeOf((*LbListenerRuleActionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -408,7 +408,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lbListenerRule.LbListenerRuleActionOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionOutputReference",
 		reflect.TypeOf((*LbListenerRuleActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticateCognito", GoGetter: "AuthenticateCognito"},
@@ -468,11 +468,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lbListenerRule.LbListenerRuleActionRedirect",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionRedirect",
 		reflect.TypeOf((*LbListenerRuleActionRedirect)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lbListenerRule.LbListenerRuleActionRedirectOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionRedirectOutputReference",
 		reflect.TypeOf((*LbListenerRuleActionRedirectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -521,15 +521,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lbListenerRule.LbListenerRuleCondition",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleCondition",
 		reflect.TypeOf((*LbListenerRuleCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lbListenerRule.LbListenerRuleConditionHostHeader",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionHostHeader",
 		reflect.TypeOf((*LbListenerRuleConditionHostHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lbListenerRule.LbListenerRuleConditionHostHeaderOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionHostHeaderOutputReference",
 		reflect.TypeOf((*LbListenerRuleConditionHostHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -563,11 +563,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lbListenerRule.LbListenerRuleConditionHttpHeader",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionHttpHeader",
 		reflect.TypeOf((*LbListenerRuleConditionHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lbListenerRule.LbListenerRuleConditionHttpHeaderOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionHttpHeaderOutputReference",
 		reflect.TypeOf((*LbListenerRuleConditionHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -603,11 +603,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lbListenerRule.LbListenerRuleConditionHttpRequestMethod",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionHttpRequestMethod",
 		reflect.TypeOf((*LbListenerRuleConditionHttpRequestMethod)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lbListenerRule.LbListenerRuleConditionHttpRequestMethodOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionHttpRequestMethodOutputReference",
 		reflect.TypeOf((*LbListenerRuleConditionHttpRequestMethodOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -641,7 +641,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lbListenerRule.LbListenerRuleConditionList",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionList",
 		reflect.TypeOf((*LbListenerRuleConditionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -662,7 +662,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lbListenerRule.LbListenerRuleConditionOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionOutputReference",
 		reflect.TypeOf((*LbListenerRuleConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -718,11 +718,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lbListenerRule.LbListenerRuleConditionPathPattern",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionPathPattern",
 		reflect.TypeOf((*LbListenerRuleConditionPathPattern)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lbListenerRule.LbListenerRuleConditionPathPatternOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionPathPatternOutputReference",
 		reflect.TypeOf((*LbListenerRuleConditionPathPatternOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -756,11 +756,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lbListenerRule.LbListenerRuleConditionQueryString",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString",
 		reflect.TypeOf((*LbListenerRuleConditionQueryString)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lbListenerRule.LbListenerRuleConditionQueryStringList",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringList",
 		reflect.TypeOf((*LbListenerRuleConditionQueryStringList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -781,7 +781,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lbListenerRule.LbListenerRuleConditionQueryStringOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringOutputReference",
 		reflect.TypeOf((*LbListenerRuleConditionQueryStringOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -818,11 +818,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lbListenerRule.LbListenerRuleConditionSourceIp",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionSourceIp",
 		reflect.TypeOf((*LbListenerRuleConditionSourceIp)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lbListenerRule.LbListenerRuleConditionSourceIpOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionSourceIpOutputReference",
 		reflect.TypeOf((*LbListenerRuleConditionSourceIpOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -856,7 +856,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lbListenerRule.LbListenerRuleConfig",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConfig",
 		reflect.TypeOf((*LbListenerRuleConfig)(nil)).Elem(),
 	)
 }

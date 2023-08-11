@@ -116,7 +116,7 @@ func NewGoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList(
 	j := jsiiProxy_GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList{}
 
 	_jsii_.Create(
-		"google-beta.googleBinaryAuthorizationAttestor.GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationAttestor.GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBinaryAuthorizationAttestor.GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationAttestor.GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

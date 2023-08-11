@@ -521,7 +521,7 @@ func NewGoogleNotebooksEnvironment(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleNotebooksEnvironment{}
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksEnvironment.GoogleNotebooksEnvironment",
+		"@cdktf/provider-google-beta.googleNotebooksEnvironment.GoogleNotebooksEnvironment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -534,7 +534,7 @@ func NewGoogleNotebooksEnvironment_Override(g GoogleNotebooksEnvironment, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksEnvironment.GoogleNotebooksEnvironment",
+		"@cdktf/provider-google-beta.googleNotebooksEnvironment.GoogleNotebooksEnvironment",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -711,7 +711,7 @@ func GoogleNotebooksEnvironment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNotebooksEnvironment.GoogleNotebooksEnvironment",
+		"@cdktf/provider-google-beta.googleNotebooksEnvironment.GoogleNotebooksEnvironment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -730,7 +730,7 @@ func GoogleNotebooksEnvironment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNotebooksEnvironment.GoogleNotebooksEnvironment",
+		"@cdktf/provider-google-beta.googleNotebooksEnvironment.GoogleNotebooksEnvironment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -749,7 +749,7 @@ func GoogleNotebooksEnvironment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNotebooksEnvironment.GoogleNotebooksEnvironment",
+		"@cdktf/provider-google-beta.googleNotebooksEnvironment.GoogleNotebooksEnvironment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func GoogleNotebooksEnvironment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleNotebooksEnvironment.GoogleNotebooksEnvironment",
+		"@cdktf/provider-google-beta.googleNotebooksEnvironment.GoogleNotebooksEnvironment",
 		"tfResourceType",
 		&returns,
 	)

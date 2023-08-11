@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dbProxyEndpoint.DbProxyEndpoint",
+		"@cdktf/provider-aws.dbProxyEndpoint.DbProxyEndpoint",
 		reflect.TypeOf((*DbProxyEndpoint)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,15 +81,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbProxyEndpoint.DbProxyEndpointConfig",
+		"@cdktf/provider-aws.dbProxyEndpoint.DbProxyEndpointConfig",
 		reflect.TypeOf((*DbProxyEndpointConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbProxyEndpoint.DbProxyEndpointTimeouts",
+		"@cdktf/provider-aws.dbProxyEndpoint.DbProxyEndpointTimeouts",
 		reflect.TypeOf((*DbProxyEndpointTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dbProxyEndpoint.DbProxyEndpointTimeoutsOutputReference",
+		"@cdktf/provider-aws.dbProxyEndpoint.DbProxyEndpointTimeoutsOutputReference",
 		reflect.TypeOf((*DbProxyEndpointTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

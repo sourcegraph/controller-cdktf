@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.s3AccessPoint.S3AccessPoint",
+		"@cdktf/provider-aws.s3AccessPoint.S3AccessPoint",
 		reflect.TypeOf((*S3AccessPoint)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -82,15 +82,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3AccessPoint.S3AccessPointConfig",
+		"@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig",
 		reflect.TypeOf((*S3AccessPointConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfiguration",
+		"@cdktf/provider-aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfiguration",
 		reflect.TypeOf((*S3AccessPointPublicAccessBlockConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfigurationOutputReference",
+		"@cdktf/provider-aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfigurationOutputReference",
 		reflect.TypeOf((*S3AccessPointPublicAccessBlockConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "blockPublicAcls", GoGetter: "BlockPublicAcls"},
@@ -134,11 +134,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3AccessPoint.S3AccessPointVpcConfiguration",
+		"@cdktf/provider-aws.s3AccessPoint.S3AccessPointVpcConfiguration",
 		reflect.TypeOf((*S3AccessPointVpcConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3AccessPoint.S3AccessPointVpcConfigurationOutputReference",
+		"@cdktf/provider-aws.s3AccessPoint.S3AccessPointVpcConfigurationOutputReference",
 		reflect.TypeOf((*S3AccessPointVpcConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

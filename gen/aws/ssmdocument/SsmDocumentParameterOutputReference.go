@@ -200,7 +200,7 @@ func NewSsmDocumentParameterOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_SsmDocumentParameterOutputReference{}
 
 	_jsii_.Create(
-		"aws.ssmDocument.SsmDocumentParameterOutputReference",
+		"@cdktf/provider-aws.ssmDocument.SsmDocumentParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewSsmDocumentParameterOutputReference_Override(s SsmDocumentParameterOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmDocument.SsmDocumentParameterOutputReference",
+		"@cdktf/provider-aws.ssmDocument.SsmDocumentParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

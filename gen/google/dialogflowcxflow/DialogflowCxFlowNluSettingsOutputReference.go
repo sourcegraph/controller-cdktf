@@ -228,7 +228,7 @@ func NewDialogflowCxFlowNluSettingsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_DialogflowCxFlowNluSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google.dialogflowCxFlow.DialogflowCxFlowNluSettingsOutputReference",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowNluSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDialogflowCxFlowNluSettingsOutputReference_Override(d DialogflowCxFlowNl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxFlow.DialogflowCxFlowNluSettingsOutputReference",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowNluSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

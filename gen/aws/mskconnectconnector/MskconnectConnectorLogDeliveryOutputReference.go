@@ -179,7 +179,7 @@ func NewMskconnectConnectorLogDeliveryOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_MskconnectConnectorLogDeliveryOutputReference{}
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnectorLogDeliveryOutputReference",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewMskconnectConnectorLogDeliveryOutputReference_Override(m MskconnectConne
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnectorLogDeliveryOutputReference",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

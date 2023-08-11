@@ -116,7 +116,7 @@ func NewCodecommitTriggerTriggerList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_CodecommitTriggerTriggerList{}
 
 	_jsii_.Create(
-		"aws.codecommitTrigger.CodecommitTriggerTriggerList",
+		"@cdktf/provider-aws.codecommitTrigger.CodecommitTriggerTriggerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCodecommitTriggerTriggerList_Override(c CodecommitTriggerTriggerList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codecommitTrigger.CodecommitTriggerTriggerList",
+		"@cdktf/provider-aws.codecommitTrigger.CodecommitTriggerTriggerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

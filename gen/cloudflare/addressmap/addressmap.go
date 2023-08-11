@@ -460,7 +460,7 @@ func NewAddressMap(scope constructs.Construct, id *string, config *AddressMapCon
 	j := jsiiProxy_AddressMap{}
 
 	_jsii_.Create(
-		"cloudflare.addressMap.AddressMap",
+		"@cdktf/provider-cloudflare.addressMap.AddressMap",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -473,7 +473,7 @@ func NewAddressMap_Override(a AddressMap, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.addressMap.AddressMap",
+		"@cdktf/provider-cloudflare.addressMap.AddressMap",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -628,7 +628,7 @@ func AddressMap_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.addressMap.AddressMap",
+		"@cdktf/provider-cloudflare.addressMap.AddressMap",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -647,7 +647,7 @@ func AddressMap_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.addressMap.AddressMap",
+		"@cdktf/provider-cloudflare.addressMap.AddressMap",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func AddressMap_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.addressMap.AddressMap",
+		"@cdktf/provider-cloudflare.addressMap.AddressMap",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func AddressMap_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.addressMap.AddressMap",
+		"@cdktf/provider-cloudflare.addressMap.AddressMap",
 		"tfResourceType",
 		&returns,
 	)

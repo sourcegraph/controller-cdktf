@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.emailCustomization.EmailCustomization",
+		"@cdktf/provider-okta.emailCustomization.EmailCustomization",
 		reflect.TypeOf((*EmailCustomization)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.emailCustomization.EmailCustomizationConfig",
+		"@cdktf/provider-okta.emailCustomization.EmailCustomizationConfig",
 		reflect.TypeOf((*EmailCustomizationConfig)(nil)).Elem(),
 	)
 }

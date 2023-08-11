@@ -116,7 +116,7 @@ func NewSagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList(
 	j := jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList{}
 
 	_jsii_.Create(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

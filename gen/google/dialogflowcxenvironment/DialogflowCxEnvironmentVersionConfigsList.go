@@ -116,7 +116,7 @@ func NewDialogflowCxEnvironmentVersionConfigsList(terraformResource cdktf.IInter
 	j := jsiiProxy_DialogflowCxEnvironmentVersionConfigsList{}
 
 	_jsii_.Create(
-		"google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigsList",
+		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDialogflowCxEnvironmentVersionConfigsList_Override(d DialogflowCxEnviron
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigsList",
+		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

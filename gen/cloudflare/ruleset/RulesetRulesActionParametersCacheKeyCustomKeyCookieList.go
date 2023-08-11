@@ -116,7 +116,7 @@ func NewRulesetRulesActionParametersCacheKeyCustomKeyCookieList(terraformResourc
 	j := jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyCookieList{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookieList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookieList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRulesetRulesActionParametersCacheKeyCustomKeyCookieList_Override(r Rules
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookieList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookieList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

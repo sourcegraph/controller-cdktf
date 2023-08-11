@@ -228,7 +228,7 @@ func NewEksClusterTimeoutsOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_EksClusterTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.eksCluster.EksClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.eksCluster.EksClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewEksClusterTimeoutsOutputReference_Override(e EksClusterTimeoutsOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksCluster.EksClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.eksCluster.EksClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

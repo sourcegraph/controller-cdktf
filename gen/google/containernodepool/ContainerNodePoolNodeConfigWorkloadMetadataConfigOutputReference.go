@@ -179,7 +179,7 @@ func NewContainerNodePoolNodeConfigWorkloadMetadataConfigOutputReference(terrafo
 	j := jsiiProxy_ContainerNodePoolNodeConfigWorkloadMetadataConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.containerNodePool.ContainerNodePoolNodeConfigWorkloadMetadataConfigOutputReference",
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigWorkloadMetadataConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewContainerNodePoolNodeConfigWorkloadMetadataConfigOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerNodePool.ContainerNodePoolNodeConfigWorkloadMetadataConfigOutputReference",
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigWorkloadMetadataConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

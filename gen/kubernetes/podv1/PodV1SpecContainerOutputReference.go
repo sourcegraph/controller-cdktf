@@ -659,7 +659,7 @@ func NewPodV1SpecContainerOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_PodV1SpecContainerOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecContainerOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecContainerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -671,7 +671,7 @@ func NewPodV1SpecContainerOutputReference_Override(p PodV1SpecContainerOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecContainerOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecContainerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

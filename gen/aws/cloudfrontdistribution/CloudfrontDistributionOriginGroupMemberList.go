@@ -116,7 +116,7 @@ func NewCloudfrontDistributionOriginGroupMemberList(terraformResource cdktf.IInt
 	j := jsiiProxy_CloudfrontDistributionOriginGroupMemberList{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionOriginGroupMemberList",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginGroupMemberList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudfrontDistributionOriginGroupMemberList_Override(c CloudfrontDistrib
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionOriginGroupMemberList",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginGroupMemberList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

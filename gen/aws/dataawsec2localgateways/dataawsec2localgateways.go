@@ -351,7 +351,7 @@ func NewDataAwsEc2LocalGateways(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataAwsEc2LocalGateways{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2LocalGateways.DataAwsEc2LocalGateways",
+		"@cdktf/provider-aws.dataAwsEc2LocalGateways.DataAwsEc2LocalGateways",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -364,7 +364,7 @@ func NewDataAwsEc2LocalGateways_Override(d DataAwsEc2LocalGateways, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2LocalGateways.DataAwsEc2LocalGateways",
+		"@cdktf/provider-aws.dataAwsEc2LocalGateways.DataAwsEc2LocalGateways",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -464,7 +464,7 @@ func DataAwsEc2LocalGateways_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2LocalGateways.DataAwsEc2LocalGateways",
+		"@cdktf/provider-aws.dataAwsEc2LocalGateways.DataAwsEc2LocalGateways",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -483,7 +483,7 @@ func DataAwsEc2LocalGateways_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2LocalGateways.DataAwsEc2LocalGateways",
+		"@cdktf/provider-aws.dataAwsEc2LocalGateways.DataAwsEc2LocalGateways",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -502,7 +502,7 @@ func DataAwsEc2LocalGateways_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2LocalGateways.DataAwsEc2LocalGateways",
+		"@cdktf/provider-aws.dataAwsEc2LocalGateways.DataAwsEc2LocalGateways",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func DataAwsEc2LocalGateways_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEc2LocalGateways.DataAwsEc2LocalGateways",
+		"@cdktf/provider-aws.dataAwsEc2LocalGateways.DataAwsEc2LocalGateways",
 		"tfResourceType",
 		&returns,
 	)

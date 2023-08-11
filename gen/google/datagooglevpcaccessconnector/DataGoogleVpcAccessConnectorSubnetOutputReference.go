@@ -178,7 +178,7 @@ func NewDataGoogleVpcAccessConnectorSubnetOutputReference(terraformResource cdkt
 	j := jsiiProxy_DataGoogleVpcAccessConnectorSubnetOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorSubnetOutputReference",
+		"@cdktf/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorSubnetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleVpcAccessConnectorSubnetOutputReference_Override(d DataGoogleV
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorSubnetOutputReference",
+		"@cdktf/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorSubnetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

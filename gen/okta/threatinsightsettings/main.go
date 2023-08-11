@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.threatInsightSettings.ThreatInsightSettings",
+		"@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettings",
 		reflect.TypeOf((*ThreatInsightSettings)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.threatInsightSettings.ThreatInsightSettingsConfig",
+		"@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettingsConfig",
 		reflect.TypeOf((*ThreatInsightSettingsConfig)(nil)).Elem(),
 	)
 }

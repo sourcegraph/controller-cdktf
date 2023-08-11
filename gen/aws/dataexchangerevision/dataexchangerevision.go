@@ -413,7 +413,7 @@ func NewDataexchangeRevision(scope constructs.Construct, id *string, config *Dat
 	j := jsiiProxy_DataexchangeRevision{}
 
 	_jsii_.Create(
-		"aws.dataexchangeRevision.DataexchangeRevision",
+		"@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewDataexchangeRevision_Override(d DataexchangeRevision, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataexchangeRevision.DataexchangeRevision",
+		"@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -581,7 +581,7 @@ func DataexchangeRevision_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataexchangeRevision.DataexchangeRevision",
+		"@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -600,7 +600,7 @@ func DataexchangeRevision_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataexchangeRevision.DataexchangeRevision",
+		"@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func DataexchangeRevision_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataexchangeRevision.DataexchangeRevision",
+		"@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func DataexchangeRevision_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataexchangeRevision.DataexchangeRevision",
+		"@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision",
 		"tfResourceType",
 		&returns,
 	)

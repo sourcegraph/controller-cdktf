@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersNetworkSourcePortList(terraformResource cdktf.I
 	j := jsiiProxy_SecurityhubInsightFiltersNetworkSourcePortList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersNetworkSourcePortList_Override(s SecurityhubIns
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

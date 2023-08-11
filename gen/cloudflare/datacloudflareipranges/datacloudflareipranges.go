@@ -323,7 +323,7 @@ func NewDataCloudflareIpRanges(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataCloudflareIpRanges{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges",
+		"@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewDataCloudflareIpRanges_Override(d DataCloudflareIpRanges, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges",
+		"@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -425,7 +425,7 @@ func DataCloudflareIpRanges_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges",
+		"@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -444,7 +444,7 @@ func DataCloudflareIpRanges_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges",
+		"@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -463,7 +463,7 @@ func DataCloudflareIpRanges_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges",
+		"@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -476,7 +476,7 @@ func DataCloudflareIpRanges_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges",
+		"@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges",
 		"tfResourceType",
 		&returns,
 	)

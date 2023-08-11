@@ -204,7 +204,7 @@ func NewGoogleVpcAccessConnectorTimeoutsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_GoogleVpcAccessConnectorTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleVpcAccessConnectorTimeoutsOutputReference_Override(g GoogleVpcAcce
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

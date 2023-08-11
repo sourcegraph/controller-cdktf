@@ -203,7 +203,7 @@ func NewComputeInstanceScratchDiskOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_ComputeInstanceScratchDiskOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceScratchDiskOutputReference",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceScratchDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewComputeInstanceScratchDiskOutputReference_Override(c ComputeInstanceScra
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceScratchDiskOutputReference",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceScratchDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

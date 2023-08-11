@@ -104,7 +104,7 @@ func NewAlloydbBackupEncryptionInfoList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_AlloydbBackupEncryptionInfoList{}
 
 	_jsii_.Create(
-		"google.alloydbBackup.AlloydbBackupEncryptionInfoList",
+		"@cdktf/provider-google.alloydbBackup.AlloydbBackupEncryptionInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewAlloydbBackupEncryptionInfoList_Override(a AlloydbBackupEncryptionInfoLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.alloydbBackup.AlloydbBackupEncryptionInfoList",
+		"@cdktf/provider-google.alloydbBackup.AlloydbBackupEncryptionInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

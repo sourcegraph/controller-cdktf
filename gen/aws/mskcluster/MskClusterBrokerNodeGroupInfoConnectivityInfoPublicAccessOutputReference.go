@@ -180,7 +180,7 @@ func NewMskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessOutputReference
 	j := jsiiProxy_MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessOutputReference{}
 
 	_jsii_.Create(
-		"aws.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewMskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

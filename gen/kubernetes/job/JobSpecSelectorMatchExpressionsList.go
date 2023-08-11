@@ -116,7 +116,7 @@ func NewJobSpecSelectorMatchExpressionsList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_JobSpecSelectorMatchExpressionsList{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.job.JobSpecSelectorMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewJobSpecSelectorMatchExpressionsList_Override(j JobSpecSelectorMatchExpre
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.job.JobSpecSelectorMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)

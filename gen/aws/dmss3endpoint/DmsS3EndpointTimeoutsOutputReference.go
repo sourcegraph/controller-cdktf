@@ -204,7 +204,7 @@ func NewDmsS3EndpointTimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_DmsS3EndpointTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dmsS3Endpoint.DmsS3EndpointTimeoutsOutputReference",
+		"@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDmsS3EndpointTimeoutsOutputReference_Override(d DmsS3EndpointTimeoutsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dmsS3Endpoint.DmsS3EndpointTimeoutsOutputReference",
+		"@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

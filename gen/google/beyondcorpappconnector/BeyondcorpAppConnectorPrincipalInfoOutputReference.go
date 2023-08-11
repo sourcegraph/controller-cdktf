@@ -179,7 +179,7 @@ func NewBeyondcorpAppConnectorPrincipalInfoOutputReference(terraformResource cdk
 	j := jsiiProxy_BeyondcorpAppConnectorPrincipalInfoOutputReference{}
 
 	_jsii_.Create(
-		"google.beyondcorpAppConnector.BeyondcorpAppConnectorPrincipalInfoOutputReference",
+		"@cdktf/provider-google.beyondcorpAppConnector.BeyondcorpAppConnectorPrincipalInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewBeyondcorpAppConnectorPrincipalInfoOutputReference_Override(b Beyondcorp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.beyondcorpAppConnector.BeyondcorpAppConnectorPrincipalInfoOutputReference",
+		"@cdktf/provider-google.beyondcorpAppConnector.BeyondcorpAppConnectorPrincipalInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

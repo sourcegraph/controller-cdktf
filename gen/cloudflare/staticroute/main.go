@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.staticRoute.StaticRoute",
+		"@cdktf/provider-cloudflare.staticRoute.StaticRoute",
 		reflect.TypeOf((*StaticRoute)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -76,7 +76,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.staticRoute.StaticRouteConfig",
+		"@cdktf/provider-cloudflare.staticRoute.StaticRouteConfig",
 		reflect.TypeOf((*StaticRouteConfig)(nil)).Elem(),
 	)
 }

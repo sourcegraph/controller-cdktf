@@ -708,7 +708,7 @@ func NewAccessIdentityProviderConfigAOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_AccessIdentityProviderConfigAOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.accessIdentityProvider.AccessIdentityProviderConfigAOutputReference",
+		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -720,7 +720,7 @@ func NewAccessIdentityProviderConfigAOutputReference_Override(a AccessIdentityPr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessIdentityProvider.AccessIdentityProviderConfigAOutputReference",
+		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

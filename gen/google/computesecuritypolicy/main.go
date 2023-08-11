@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeSecurityPolicy.ComputeSecurityPolicy",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicy",
 		reflect.TypeOf((*ComputeSecurityPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "adaptiveProtectionConfig", GoGetter: "AdaptiveProtectionConfig"},
@@ -88,15 +88,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyAdaptiveProtectionConfig",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdaptiveProtectionConfig",
 		reflect.TypeOf((*ComputeSecurityPolicyAdaptiveProtectionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig",
 		reflect.TypeOf((*ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference",
 		reflect.TypeOf((*ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -134,7 +134,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyAdaptiveProtectionConfigOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdaptiveProtectionConfigOutputReference",
 		reflect.TypeOf((*ComputeSecurityPolicyAdaptiveProtectionConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -170,15 +170,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyAdvancedOptionsConfig",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdvancedOptionsConfig",
 		reflect.TypeOf((*ComputeSecurityPolicyAdvancedOptionsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig",
 		reflect.TypeOf((*ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference",
 		reflect.TypeOf((*ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -212,7 +212,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyAdvancedOptionsConfigOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdvancedOptionsConfigOutputReference",
 		reflect.TypeOf((*ComputeSecurityPolicyAdvancedOptionsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -254,15 +254,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyConfig",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyConfig",
 		reflect.TypeOf((*ComputeSecurityPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRecaptchaOptionsConfig",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRecaptchaOptionsConfig",
 		reflect.TypeOf((*ComputeSecurityPolicyRecaptchaOptionsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRecaptchaOptionsConfigOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRecaptchaOptionsConfigOutputReference",
 		reflect.TypeOf((*ComputeSecurityPolicyRecaptchaOptionsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -296,15 +296,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRule",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRule",
 		reflect.TypeOf((*ComputeSecurityPolicyRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleHeaderAction",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleHeaderAction",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleHeaderAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleHeaderActionOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleHeaderActionOutputReference",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleHeaderActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -339,11 +339,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAdds",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAdds",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAdds)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -364,7 +364,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -401,7 +401,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleList",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleList",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -422,15 +422,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatch",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatch",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchConfig",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchConfig",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleMatchConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchConfigOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchConfigOutputReference",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleMatchConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -464,11 +464,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchExpr",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchExpr",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleMatchExpr)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchExprOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchExprOutputReference",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleMatchExprOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -502,7 +502,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchOutputReference",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -545,7 +545,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleOutputReference",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -602,15 +602,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptions",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptions",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsBanThreshold",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsBanThreshold",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptionsBanThreshold)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsBanThresholdOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsBanThresholdOutputReference",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptionsBanThresholdOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -646,11 +646,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsOutputReference",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -687,7 +687,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsOutputReference",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "banDurationSec", GoGetter: "BanDurationSec"},
@@ -743,11 +743,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThreshold",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThreshold",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThreshold)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -783,11 +783,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleRedirectOptions",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRedirectOptions",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleRedirectOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleRedirectOptionsOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRedirectOptionsOutputReference",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleRedirectOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -824,11 +824,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyTimeouts",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyTimeouts",
 		reflect.TypeOf((*ComputeSecurityPolicyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeSecurityPolicyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

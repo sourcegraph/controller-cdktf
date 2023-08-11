@@ -179,7 +179,7 @@ func NewElasticsearchDomainSnapshotOptionsOutputReference(terraformResource cdkt
 	j := jsiiProxy_ElasticsearchDomainSnapshotOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainSnapshotOptionsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainSnapshotOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewElasticsearchDomainSnapshotOptionsOutputReference_Override(e Elasticsear
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainSnapshotOptionsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainSnapshotOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

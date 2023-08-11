@@ -104,7 +104,7 @@ func NewAppEngineDomainMappingResourceRecordsList(terraformResource cdktf.IInter
 	j := jsiiProxy_AppEngineDomainMappingResourceRecordsList{}
 
 	_jsii_.Create(
-		"google.appEngineDomainMapping.AppEngineDomainMappingResourceRecordsList",
+		"@cdktf/provider-google.appEngineDomainMapping.AppEngineDomainMappingResourceRecordsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewAppEngineDomainMappingResourceRecordsList_Override(a AppEngineDomainMapp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineDomainMapping.AppEngineDomainMappingResourceRecordsList",
+		"@cdktf/provider-google.appEngineDomainMapping.AppEngineDomainMappingResourceRecordsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

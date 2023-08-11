@@ -712,7 +712,7 @@ func NewContainerAzureCluster(scope constructs.Construct, id *string, config *Co
 	j := jsiiProxy_ContainerAzureCluster{}
 
 	_jsii_.Create(
-		"google.containerAzureCluster.ContainerAzureCluster",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -725,7 +725,7 @@ func NewContainerAzureCluster_Override(c ContainerAzureCluster, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAzureCluster.ContainerAzureCluster",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureCluster",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -924,7 +924,7 @@ func ContainerAzureCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAzureCluster.ContainerAzureCluster",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -943,7 +943,7 @@ func ContainerAzureCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAzureCluster.ContainerAzureCluster",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -962,7 +962,7 @@ func ContainerAzureCluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAzureCluster.ContainerAzureCluster",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -975,7 +975,7 @@ func ContainerAzureCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.containerAzureCluster.ContainerAzureCluster",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureCluster",
 		"tfResourceType",
 		&returns,
 	)

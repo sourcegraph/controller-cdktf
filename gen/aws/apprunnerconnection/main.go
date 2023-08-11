@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.apprunnerConnection.ApprunnerConnection",
+		"@cdktf/provider-aws.apprunnerConnection.ApprunnerConnection",
 		reflect.TypeOf((*ApprunnerConnection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerConnection.ApprunnerConnectionConfig",
+		"@cdktf/provider-aws.apprunnerConnection.ApprunnerConnectionConfig",
 		reflect.TypeOf((*ApprunnerConnectionConfig)(nil)).Elem(),
 	)
 }

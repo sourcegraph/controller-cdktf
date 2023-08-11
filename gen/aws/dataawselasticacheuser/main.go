@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsElasticacheUser.DataAwsElasticacheUser",
+		"@cdktf/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser",
 		reflect.TypeOf((*DataAwsElasticacheUser)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessString", GoGetter: "AccessString"},
@@ -70,7 +70,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig",
+		"@cdktf/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig",
 		reflect.TypeOf((*DataAwsElasticacheUserConfig)(nil)).Elem(),
 	)
 }

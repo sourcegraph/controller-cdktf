@@ -116,7 +116,7 @@ func NewGoogleComputeRegionCommitmentResourcesList(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleComputeRegionCommitmentResourcesList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentResourcesList",
+		"@cdktf/provider-google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentResourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeRegionCommitmentResourcesList_Override(g GoogleComputeRegio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentResourcesList",
+		"@cdktf/provider-google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentResourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

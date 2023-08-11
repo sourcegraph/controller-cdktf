@@ -228,7 +228,7 @@ func NewGoogleComputeFirewallTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_GoogleComputeFirewallTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeFirewallTimeoutsOutputReference_Override(g GoogleComputeFir
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

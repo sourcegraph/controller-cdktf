@@ -204,7 +204,7 @@ func NewGuarddutyMemberTimeoutsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_GuarddutyMemberTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.guarddutyMember.GuarddutyMemberTimeoutsOutputReference",
+		"@cdktf/provider-aws.guarddutyMember.GuarddutyMemberTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGuarddutyMemberTimeoutsOutputReference_Override(g GuarddutyMemberTimeout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.guarddutyMember.GuarddutyMemberTimeoutsOutputReference",
+		"@cdktf/provider-aws.guarddutyMember.GuarddutyMemberTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

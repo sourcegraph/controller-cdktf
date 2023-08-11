@@ -228,7 +228,7 @@ func NewKmsCustomKeyStoreTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_KmsCustomKeyStoreTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.kmsCustomKeyStore.KmsCustomKeyStoreTimeoutsOutputReference",
+		"@cdktf/provider-aws.kmsCustomKeyStore.KmsCustomKeyStoreTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewKmsCustomKeyStoreTimeoutsOutputReference_Override(k KmsCustomKeyStoreTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kmsCustomKeyStore.KmsCustomKeyStoreTimeoutsOutputReference",
+		"@cdktf/provider-aws.kmsCustomKeyStore.KmsCustomKeyStoreTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

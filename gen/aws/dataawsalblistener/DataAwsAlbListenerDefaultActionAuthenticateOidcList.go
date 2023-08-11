@@ -104,7 +104,7 @@ func NewDataAwsAlbListenerDefaultActionAuthenticateOidcList(terraformResource cd
 	j := jsiiProxy_DataAwsAlbListenerDefaultActionAuthenticateOidcList{}
 
 	_jsii_.Create(
-		"aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionAuthenticateOidcList",
+		"@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionAuthenticateOidcList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsAlbListenerDefaultActionAuthenticateOidcList_Override(d DataAwsAl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionAuthenticateOidcList",
+		"@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionAuthenticateOidcList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

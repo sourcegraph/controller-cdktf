@@ -104,7 +104,7 @@ func NewDataAwsConnectUserHierarchyStructureHierarchyStructureLevelFiveList(terr
 	j := jsiiProxy_DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFiveList{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFiveList",
+		"@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFiveList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsConnectUserHierarchyStructureHierarchyStructureLevelFiveList_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFiveList",
+		"@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructureHierarchyStructureLevelFiveList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

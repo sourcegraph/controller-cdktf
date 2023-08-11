@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProvider",
+		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProvider",
 		reflect.TypeOf((*IamWorkloadIdentityPoolProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,11 +91,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderAws",
+		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderAws",
 		reflect.TypeOf((*IamWorkloadIdentityPoolProviderAws)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderAwsOutputReference",
+		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderAwsOutputReference",
 		reflect.TypeOf((*IamWorkloadIdentityPoolProviderAwsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -129,15 +129,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderConfig",
+		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderConfig",
 		reflect.TypeOf((*IamWorkloadIdentityPoolProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderOidc",
+		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderOidc",
 		reflect.TypeOf((*IamWorkloadIdentityPoolProviderOidc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderOidcOutputReference",
+		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderOidcOutputReference",
 		reflect.TypeOf((*IamWorkloadIdentityPoolProviderOidcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedAudiences", GoGetter: "AllowedAudiences"},
@@ -174,11 +174,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderTimeouts",
+		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderTimeouts",
 		reflect.TypeOf((*IamWorkloadIdentityPoolProviderTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderTimeoutsOutputReference",
+		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderTimeoutsOutputReference",
 		reflect.TypeOf((*IamWorkloadIdentityPoolProviderTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

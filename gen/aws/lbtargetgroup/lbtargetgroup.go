@@ -798,7 +798,7 @@ func NewLbTargetGroup(scope constructs.Construct, id *string, config *LbTargetGr
 	j := jsiiProxy_LbTargetGroup{}
 
 	_jsii_.Create(
-		"aws.lbTargetGroup.LbTargetGroup",
+		"@cdktf/provider-aws.lbTargetGroup.LbTargetGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -811,7 +811,7 @@ func NewLbTargetGroup_Override(l LbTargetGroup, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbTargetGroup.LbTargetGroup",
+		"@cdktf/provider-aws.lbTargetGroup.LbTargetGroup",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -1109,7 +1109,7 @@ func LbTargetGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lbTargetGroup.LbTargetGroup",
+		"@cdktf/provider-aws.lbTargetGroup.LbTargetGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1128,7 +1128,7 @@ func LbTargetGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lbTargetGroup.LbTargetGroup",
+		"@cdktf/provider-aws.lbTargetGroup.LbTargetGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1147,7 +1147,7 @@ func LbTargetGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lbTargetGroup.LbTargetGroup",
+		"@cdktf/provider-aws.lbTargetGroup.LbTargetGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1160,7 +1160,7 @@ func LbTargetGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lbTargetGroup.LbTargetGroup",
+		"@cdktf/provider-aws.lbTargetGroup.LbTargetGroup",
 		"tfResourceType",
 		&returns,
 	)

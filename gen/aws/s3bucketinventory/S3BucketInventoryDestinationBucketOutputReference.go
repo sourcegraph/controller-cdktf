@@ -274,7 +274,7 @@ func NewS3BucketInventoryDestinationBucketOutputReference(terraformResource cdkt
 	j := jsiiProxy_S3BucketInventoryDestinationBucketOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketInventory.S3BucketInventoryDestinationBucketOutputReference",
+		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -286,7 +286,7 @@ func NewS3BucketInventoryDestinationBucketOutputReference_Override(s S3BucketInv
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketInventory.S3BucketInventoryDestinationBucketOutputReference",
+		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

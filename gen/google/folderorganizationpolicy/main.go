@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicy",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicy",
 		reflect.TypeOf((*FolderOrganizationPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,11 +80,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicyBooleanPolicy",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyBooleanPolicy",
 		reflect.TypeOf((*FolderOrganizationPolicyBooleanPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicyBooleanPolicyOutputReference",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyBooleanPolicyOutputReference",
 		reflect.TypeOf((*FolderOrganizationPolicyBooleanPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -118,19 +118,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicyConfig",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyConfig",
 		reflect.TypeOf((*FolderOrganizationPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicy",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicy",
 		reflect.TypeOf((*FolderOrganizationPolicyListPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyAllow",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyAllow",
 		reflect.TypeOf((*FolderOrganizationPolicyListPolicyAllow)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyAllowOutputReference",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyAllowOutputReference",
 		reflect.TypeOf((*FolderOrganizationPolicyListPolicyAllowOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "all", GoGetter: "All"},
@@ -168,11 +168,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyDeny",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyDeny",
 		reflect.TypeOf((*FolderOrganizationPolicyListPolicyDeny)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyDenyOutputReference",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyDenyOutputReference",
 		reflect.TypeOf((*FolderOrganizationPolicyListPolicyDenyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "all", GoGetter: "All"},
@@ -210,7 +210,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyOutputReference",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyOutputReference",
 		reflect.TypeOf((*FolderOrganizationPolicyListPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allow", GoGetter: "Allow"},
@@ -256,11 +256,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicyRestorePolicy",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyRestorePolicy",
 		reflect.TypeOf((*FolderOrganizationPolicyRestorePolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicyRestorePolicyOutputReference",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyRestorePolicyOutputReference",
 		reflect.TypeOf((*FolderOrganizationPolicyRestorePolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -294,11 +294,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicyTimeouts",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyTimeouts",
 		reflect.TypeOf((*FolderOrganizationPolicyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyTimeoutsOutputReference",
 		reflect.TypeOf((*FolderOrganizationPolicyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

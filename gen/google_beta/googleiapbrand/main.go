@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleIapBrand.GoogleIapBrand",
+		"@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrand",
 		reflect.TypeOf((*GoogleIapBrand)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,15 +68,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleIapBrand.GoogleIapBrandConfig",
+		"@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrandConfig",
 		reflect.TypeOf((*GoogleIapBrandConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleIapBrand.GoogleIapBrandTimeouts",
+		"@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrandTimeouts",
 		reflect.TypeOf((*GoogleIapBrandTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleIapBrand.GoogleIapBrandTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrandTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleIapBrandTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -116,7 +116,7 @@ func NewChimeVoiceConnectorTerminationCredentialsCredentialsList(terraformResour
 	j := jsiiProxy_ChimeVoiceConnectorTerminationCredentialsCredentialsList{}
 
 	_jsii_.Create(
-		"aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsCredentialsList",
+		"@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsCredentialsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewChimeVoiceConnectorTerminationCredentialsCredentialsList_Override(c Chim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsCredentialsList",
+		"@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsCredentialsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

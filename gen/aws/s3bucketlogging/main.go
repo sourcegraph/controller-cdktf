@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.s3BucketLogging.S3BucketLoggingA",
+		"@cdktf/provider-aws.s3BucketLogging.S3BucketLoggingA",
 		reflect.TypeOf((*S3BucketLoggingA)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,19 +68,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketLogging.S3BucketLoggingAConfig",
+		"@cdktf/provider-aws.s3BucketLogging.S3BucketLoggingAConfig",
 		reflect.TypeOf((*S3BucketLoggingAConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketLogging.S3BucketLoggingTargetGrant",
+		"@cdktf/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrant",
 		reflect.TypeOf((*S3BucketLoggingTargetGrant)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketLogging.S3BucketLoggingTargetGrantGrantee",
+		"@cdktf/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantGrantee",
 		reflect.TypeOf((*S3BucketLoggingTargetGrantGrantee)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketLogging.S3BucketLoggingTargetGrantGranteeOutputReference",
+		"@cdktf/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantGranteeOutputReference",
 		reflect.TypeOf((*S3BucketLoggingTargetGrantGranteeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -124,7 +124,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketLogging.S3BucketLoggingTargetGrantList",
+		"@cdktf/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantList",
 		reflect.TypeOf((*S3BucketLoggingTargetGrantList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -145,7 +145,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketLogging.S3BucketLoggingTargetGrantOutputReference",
+		"@cdktf/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantOutputReference",
 		reflect.TypeOf((*S3BucketLoggingTargetGrantOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

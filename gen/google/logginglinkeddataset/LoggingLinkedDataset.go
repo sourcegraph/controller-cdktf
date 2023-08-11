@@ -495,7 +495,7 @@ func NewLoggingLinkedDataset(scope constructs.Construct, id *string, config *Log
 	j := jsiiProxy_LoggingLinkedDataset{}
 
 	_jsii_.Create(
-		"google.loggingLinkedDataset.LoggingLinkedDataset",
+		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDataset",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -508,7 +508,7 @@ func NewLoggingLinkedDataset_Override(l LoggingLinkedDataset, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingLinkedDataset.LoggingLinkedDataset",
+		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDataset",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -674,7 +674,7 @@ func LoggingLinkedDataset_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingLinkedDataset.LoggingLinkedDataset",
+		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDataset",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -693,7 +693,7 @@ func LoggingLinkedDataset_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingLinkedDataset.LoggingLinkedDataset",
+		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDataset",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +712,7 @@ func LoggingLinkedDataset_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingLinkedDataset.LoggingLinkedDataset",
+		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDataset",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -725,7 +725,7 @@ func LoggingLinkedDataset_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.loggingLinkedDataset.LoggingLinkedDataset",
+		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDataset",
 		"tfResourceType",
 		&returns,
 	)

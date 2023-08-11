@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cloudwatchEventBus.CloudwatchEventBus",
+		"@cdktf/provider-aws.cloudwatchEventBus.CloudwatchEventBus",
 		reflect.TypeOf((*CloudwatchEventBus)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudwatchEventBus.CloudwatchEventBusConfig",
+		"@cdktf/provider-aws.cloudwatchEventBus.CloudwatchEventBusConfig",
 		reflect.TypeOf((*CloudwatchEventBusConfig)(nil)).Elem(),
 	)
 }

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnel",
+		"@cdktf/provider-google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnel",
 		reflect.TypeOf((*GoogleComputeVpnTunnel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -114,15 +114,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnelConfig",
+		"@cdktf/provider-google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnelConfig",
 		reflect.TypeOf((*GoogleComputeVpnTunnelConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnelTimeouts",
+		"@cdktf/provider-google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnelTimeouts",
 		reflect.TypeOf((*GoogleComputeVpnTunnelTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnelTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnelTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleComputeVpnTunnelTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

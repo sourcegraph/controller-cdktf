@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.route53RecoverycontrolconfigControlPanel.Route53RecoverycontrolconfigControlPanel",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigControlPanel.Route53RecoverycontrolconfigControlPanel",
 		reflect.TypeOf((*Route53RecoverycontrolconfigControlPanel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53RecoverycontrolconfigControlPanel.Route53RecoverycontrolconfigControlPanelConfig",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigControlPanel.Route53RecoverycontrolconfigControlPanelConfig",
 		reflect.TypeOf((*Route53RecoverycontrolconfigControlPanelConfig)(nil)).Elem(),
 	)
 }

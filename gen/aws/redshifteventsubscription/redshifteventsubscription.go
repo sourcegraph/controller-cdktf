@@ -567,7 +567,7 @@ func NewRedshiftEventSubscription(scope constructs.Construct, id *string, config
 	j := jsiiProxy_RedshiftEventSubscription{}
 
 	_jsii_.Create(
-		"aws.redshiftEventSubscription.RedshiftEventSubscription",
+		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscription",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -580,7 +580,7 @@ func NewRedshiftEventSubscription_Override(r RedshiftEventSubscription, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftEventSubscription.RedshiftEventSubscription",
+		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscription",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -790,7 +790,7 @@ func RedshiftEventSubscription_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftEventSubscription.RedshiftEventSubscription",
+		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscription",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -809,7 +809,7 @@ func RedshiftEventSubscription_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftEventSubscription.RedshiftEventSubscription",
+		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscription",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -828,7 +828,7 @@ func RedshiftEventSubscription_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftEventSubscription.RedshiftEventSubscription",
+		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscription",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -841,7 +841,7 @@ func RedshiftEventSubscription_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.redshiftEventSubscription.RedshiftEventSubscription",
+		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscription",
 		"tfResourceType",
 		&returns,
 	)

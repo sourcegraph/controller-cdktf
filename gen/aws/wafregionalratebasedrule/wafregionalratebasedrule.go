@@ -471,7 +471,7 @@ func NewWafregionalRateBasedRule(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_WafregionalRateBasedRule{}
 
 	_jsii_.Create(
-		"aws.wafregionalRateBasedRule.WafregionalRateBasedRule",
+		"@cdktf/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -484,7 +484,7 @@ func NewWafregionalRateBasedRule_Override(w WafregionalRateBasedRule, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalRateBasedRule.WafregionalRateBasedRule",
+		"@cdktf/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRule",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -661,7 +661,7 @@ func WafregionalRateBasedRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalRateBasedRule.WafregionalRateBasedRule",
+		"@cdktf/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func WafregionalRateBasedRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalRateBasedRule.WafregionalRateBasedRule",
+		"@cdktf/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -699,7 +699,7 @@ func WafregionalRateBasedRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalRateBasedRule.WafregionalRateBasedRule",
+		"@cdktf/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +712,7 @@ func WafregionalRateBasedRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.wafregionalRateBasedRule.WafregionalRateBasedRule",
+		"@cdktf/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRule",
 		"tfResourceType",
 		&returns,
 	)

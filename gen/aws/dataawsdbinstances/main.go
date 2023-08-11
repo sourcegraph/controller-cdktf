@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsDbInstances.DataAwsDbInstances",
+		"@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstances",
 		reflect.TypeOf((*DataAwsDbInstances)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,15 +59,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsDbInstances.DataAwsDbInstancesConfig",
+		"@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstancesConfig",
 		reflect.TypeOf((*DataAwsDbInstancesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsDbInstances.DataAwsDbInstancesFilter",
+		"@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstancesFilter",
 		reflect.TypeOf((*DataAwsDbInstancesFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsDbInstances.DataAwsDbInstancesFilterList",
+		"@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstancesFilterList",
 		reflect.TypeOf((*DataAwsDbInstancesFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -88,7 +88,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsDbInstances.DataAwsDbInstancesFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstancesFilterOutputReference",
 		reflect.TypeOf((*DataAwsDbInstancesFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

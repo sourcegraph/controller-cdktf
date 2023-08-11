@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersResourceRegionList(terraformResource cdktf.IInt
 	j := jsiiProxy_SecurityhubInsightFiltersResourceRegionList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersResourceRegionList_Override(s SecurityhubInsigh
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

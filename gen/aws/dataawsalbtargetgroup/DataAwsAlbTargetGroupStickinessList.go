@@ -104,7 +104,7 @@ func NewDataAwsAlbTargetGroupStickinessList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataAwsAlbTargetGroupStickinessList{}
 
 	_jsii_.Create(
-		"aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupStickinessList",
+		"@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupStickinessList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsAlbTargetGroupStickinessList_Override(d DataAwsAlbTargetGroupStic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupStickinessList",
+		"@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupStickinessList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

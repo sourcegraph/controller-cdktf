@@ -204,7 +204,7 @@ func NewS3BucketMetricFilterOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_S3BucketMetricFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketMetric.S3BucketMetricFilterOutputReference",
+		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetricFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewS3BucketMetricFilterOutputReference_Override(s S3BucketMetricFilterOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketMetric.S3BucketMetricFilterOutputReference",
+		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetricFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

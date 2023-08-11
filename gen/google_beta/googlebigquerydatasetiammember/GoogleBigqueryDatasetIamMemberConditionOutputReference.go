@@ -226,7 +226,7 @@ func NewGoogleBigqueryDatasetIamMemberConditionOutputReference(terraformResource
 	j := jsiiProxy_GoogleBigqueryDatasetIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDatasetIamMember.GoogleBigqueryDatasetIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamMember.GoogleBigqueryDatasetIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleBigqueryDatasetIamMemberConditionOutputReference_Override(g Google
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDatasetIamMember.GoogleBigqueryDatasetIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamMember.GoogleBigqueryDatasetIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

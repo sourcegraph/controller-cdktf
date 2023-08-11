@@ -104,7 +104,7 @@ func NewEksNodeGroupResourcesAutoscalingGroupsList(terraformResource cdktf.IInte
 	j := jsiiProxy_EksNodeGroupResourcesAutoscalingGroupsList{}
 
 	_jsii_.Create(
-		"aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroupsList",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroupsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewEksNodeGroupResourcesAutoscalingGroupsList_Override(e EksNodeGroupResour
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroupsList",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroupsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

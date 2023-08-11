@@ -484,7 +484,7 @@ func NewAccessContextManagerAuthorizedOrgsDesc(scope constructs.Construct, id *s
 	j := jsiiProxy_AccessContextManagerAuthorizedOrgsDesc{}
 
 	_jsii_.Create(
-		"google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc",
+		"@cdktf/provider-google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -497,7 +497,7 @@ func NewAccessContextManagerAuthorizedOrgsDesc_Override(a AccessContextManagerAu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc",
+		"@cdktf/provider-google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -674,7 +674,7 @@ func AccessContextManagerAuthorizedOrgsDesc_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc",
+		"@cdktf/provider-google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -693,7 +693,7 @@ func AccessContextManagerAuthorizedOrgsDesc_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc",
+		"@cdktf/provider-google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +712,7 @@ func AccessContextManagerAuthorizedOrgsDesc_IsTerraformResource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc",
+		"@cdktf/provider-google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -725,7 +725,7 @@ func AccessContextManagerAuthorizedOrgsDesc_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc",
+		"@cdktf/provider-google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc",
 		"tfResourceType",
 		&returns,
 	)

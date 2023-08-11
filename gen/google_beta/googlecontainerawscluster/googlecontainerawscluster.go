@@ -665,7 +665,7 @@ func NewGoogleContainerAwsCluster(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleContainerAwsCluster{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsCluster",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -678,7 +678,7 @@ func NewGoogleContainerAwsCluster_Override(g GoogleContainerAwsCluster, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsCluster",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsCluster",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -855,7 +855,7 @@ func GoogleContainerAwsCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsCluster",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -874,7 +874,7 @@ func GoogleContainerAwsCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsCluster",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -893,7 +893,7 @@ func GoogleContainerAwsCluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsCluster",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -906,7 +906,7 @@ func GoogleContainerAwsCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsCluster",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsCluster",
 		"tfResourceType",
 		&returns,
 	)

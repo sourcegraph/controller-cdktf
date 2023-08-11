@@ -203,7 +203,7 @@ func NewGoogleStorageBucketLoggingOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_GoogleStorageBucketLoggingOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucket.GoogleStorageBucketLoggingOutputReference",
+		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketLoggingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleStorageBucketLoggingOutputReference_Override(g GoogleStorageBucket
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucket.GoogleStorageBucketLoggingOutputReference",
+		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketLoggingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

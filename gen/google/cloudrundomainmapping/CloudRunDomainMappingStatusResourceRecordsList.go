@@ -104,7 +104,7 @@ func NewCloudRunDomainMappingStatusResourceRecordsList(terraformResource cdktf.I
 	j := jsiiProxy_CloudRunDomainMappingStatusResourceRecordsList{}
 
 	_jsii_.Create(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingStatusResourceRecordsList",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatusResourceRecordsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewCloudRunDomainMappingStatusResourceRecordsList_Override(c CloudRunDomain
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingStatusResourceRecordsList",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatusResourceRecordsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

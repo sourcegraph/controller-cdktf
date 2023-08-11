@@ -203,7 +203,7 @@ func NewSagemakerEndpointConfigurationAsyncInferenceConfigOutputReference(terraf
 	j := jsiiProxy_SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewSagemakerEndpointConfigurationAsyncInferenceConfigOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -180,7 +180,7 @@ func NewDataAwsServicecatalogProductTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_DataAwsServicecatalogProductTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProductTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProductTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsServicecatalogProductTimeoutsOutputReference_Override(d DataAwsSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProductTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProductTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

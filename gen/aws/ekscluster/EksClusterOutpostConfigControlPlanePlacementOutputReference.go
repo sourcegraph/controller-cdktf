@@ -179,7 +179,7 @@ func NewEksClusterOutpostConfigControlPlanePlacementOutputReference(terraformRes
 	j := jsiiProxy_EksClusterOutpostConfigControlPlanePlacementOutputReference{}
 
 	_jsii_.Create(
-		"aws.eksCluster.EksClusterOutpostConfigControlPlanePlacementOutputReference",
+		"@cdktf/provider-aws.eksCluster.EksClusterOutpostConfigControlPlanePlacementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewEksClusterOutpostConfigControlPlanePlacementOutputReference_Override(e E
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksCluster.EksClusterOutpostConfigControlPlanePlacementOutputReference",
+		"@cdktf/provider-aws.eksCluster.EksClusterOutpostConfigControlPlanePlacementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleStorageBucketWebsiteList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataGoogleStorageBucketWebsiteList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketWebsiteList",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketWebsiteList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleStorageBucketWebsiteList_Override(d DataGoogleStorageBucketWeb
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketWebsiteList",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketWebsiteList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

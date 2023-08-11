@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.macie2Member.Macie2Member",
+		"@cdktf/provider-aws.macie2Member.Macie2Member",
 		reflect.TypeOf((*Macie2Member)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -87,15 +87,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.macie2Member.Macie2MemberConfig",
+		"@cdktf/provider-aws.macie2Member.Macie2MemberConfig",
 		reflect.TypeOf((*Macie2MemberConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.macie2Member.Macie2MemberTimeouts",
+		"@cdktf/provider-aws.macie2Member.Macie2MemberTimeouts",
 		reflect.TypeOf((*Macie2MemberTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.macie2Member.Macie2MemberTimeoutsOutputReference",
+		"@cdktf/provider-aws.macie2Member.Macie2MemberTimeoutsOutputReference",
 		reflect.TypeOf((*Macie2MemberTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

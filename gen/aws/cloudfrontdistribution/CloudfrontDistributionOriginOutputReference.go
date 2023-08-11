@@ -394,7 +394,7 @@ func NewCloudfrontDistributionOriginOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_CloudfrontDistributionOriginOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionOriginOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -406,7 +406,7 @@ func NewCloudfrontDistributionOriginOutputReference_Override(c CloudfrontDistrib
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionOriginOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

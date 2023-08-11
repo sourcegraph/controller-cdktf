@@ -179,7 +179,7 @@ func NewDataprocMetastoreServiceEncryptionConfigOutputReference(terraformResourc
 	j := jsiiProxy_DataprocMetastoreServiceEncryptionConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceEncryptionConfigOutputReference",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceEncryptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDataprocMetastoreServiceEncryptionConfigOutputReference_Override(d Datap
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceEncryptionConfigOutputReference",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceEncryptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

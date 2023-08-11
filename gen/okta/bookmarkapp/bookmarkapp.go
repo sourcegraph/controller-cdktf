@@ -807,7 +807,7 @@ func NewBookmarkApp(scope constructs.Construct, id *string, config *BookmarkAppC
 	j := jsiiProxy_BookmarkApp{}
 
 	_jsii_.Create(
-		"okta.bookmarkApp.BookmarkApp",
+		"@cdktf/provider-okta.bookmarkApp.BookmarkApp",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -820,7 +820,7 @@ func NewBookmarkApp_Override(b BookmarkApp, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.bookmarkApp.BookmarkApp",
+		"@cdktf/provider-okta.bookmarkApp.BookmarkApp",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -1129,7 +1129,7 @@ func BookmarkApp_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.bookmarkApp.BookmarkApp",
+		"@cdktf/provider-okta.bookmarkApp.BookmarkApp",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1148,7 +1148,7 @@ func BookmarkApp_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.bookmarkApp.BookmarkApp",
+		"@cdktf/provider-okta.bookmarkApp.BookmarkApp",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1167,7 +1167,7 @@ func BookmarkApp_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.bookmarkApp.BookmarkApp",
+		"@cdktf/provider-okta.bookmarkApp.BookmarkApp",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1180,7 +1180,7 @@ func BookmarkApp_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.bookmarkApp.BookmarkApp",
+		"@cdktf/provider-okta.bookmarkApp.BookmarkApp",
 		"tfResourceType",
 		&returns,
 	)

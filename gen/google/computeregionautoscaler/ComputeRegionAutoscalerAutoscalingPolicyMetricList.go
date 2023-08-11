@@ -116,7 +116,7 @@ func NewComputeRegionAutoscalerAutoscalingPolicyMetricList(terraformResource cdk
 	j := jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricList{}
 
 	_jsii_.Create(
-		"google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyMetricList",
+		"@cdktf/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyMetricList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeRegionAutoscalerAutoscalingPolicyMetricList_Override(c ComputeReg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyMetricList",
+		"@cdktf/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyMetricList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

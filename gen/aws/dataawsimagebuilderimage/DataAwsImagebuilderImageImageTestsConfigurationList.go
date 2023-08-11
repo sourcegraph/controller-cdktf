@@ -104,7 +104,7 @@ func NewDataAwsImagebuilderImageImageTestsConfigurationList(terraformResource cd
 	j := jsiiProxy_DataAwsImagebuilderImageImageTestsConfigurationList{}
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageImageTestsConfigurationList",
+		"@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageImageTestsConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsImagebuilderImageImageTestsConfigurationList_Override(d DataAwsIm
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageImageTestsConfigurationList",
+		"@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageImageTestsConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

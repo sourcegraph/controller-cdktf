@@ -104,7 +104,7 @@ func NewDataOktaEmailCustomizationsEmailCustomizationsList(terraformResource cdk
 	j := jsiiProxy_DataOktaEmailCustomizationsEmailCustomizationsList{}
 
 	_jsii_.Create(
-		"okta.dataOktaEmailCustomizations.DataOktaEmailCustomizationsEmailCustomizationsList",
+		"@cdktf/provider-okta.dataOktaEmailCustomizations.DataOktaEmailCustomizationsEmailCustomizationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataOktaEmailCustomizationsEmailCustomizationsList_Override(d DataOktaEm
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaEmailCustomizations.DataOktaEmailCustomizationsEmailCustomizationsList",
+		"@cdktf/provider-okta.dataOktaEmailCustomizations.DataOktaEmailCustomizationsEmailCustomizationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

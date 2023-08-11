@@ -116,7 +116,7 @@ func NewGlueUserDefinedFunctionResourceUrisList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_GlueUserDefinedFunctionResourceUrisList{}
 
 	_jsii_.Create(
-		"aws.glueUserDefinedFunction.GlueUserDefinedFunctionResourceUrisList",
+		"@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunctionResourceUrisList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGlueUserDefinedFunctionResourceUrisList_Override(g GlueUserDefinedFuncti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueUserDefinedFunction.GlueUserDefinedFunctionResourceUrisList",
+		"@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunctionResourceUrisList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

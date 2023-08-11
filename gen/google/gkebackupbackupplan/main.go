@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlan",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlan",
 		reflect.TypeOf((*GkeBackupBackupPlan)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,15 +92,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfig",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfig",
 		reflect.TypeOf((*GkeBackupBackupPlanBackupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigEncryptionKey",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigEncryptionKey",
 		reflect.TypeOf((*GkeBackupBackupPlanBackupConfigEncryptionKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigEncryptionKeyOutputReference",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigEncryptionKeyOutputReference",
 		reflect.TypeOf((*GkeBackupBackupPlanBackupConfigEncryptionKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -134,7 +134,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigOutputReference",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigOutputReference",
 		reflect.TypeOf((*GkeBackupBackupPlanBackupConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allNamespaces", GoGetter: "AllNamespaces"},
@@ -187,15 +187,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigSelectedApplications",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigSelectedApplications",
 		reflect.TypeOf((*GkeBackupBackupPlanBackupConfigSelectedApplications)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNames",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNames",
 		reflect.TypeOf((*GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNames)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesList",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesList",
 		reflect.TypeOf((*GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -216,7 +216,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesOutputReference",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesOutputReference",
 		reflect.TypeOf((*GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -252,7 +252,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigSelectedApplicationsOutputReference",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigSelectedApplicationsOutputReference",
 		reflect.TypeOf((*GkeBackupBackupPlanBackupConfigSelectedApplicationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -287,11 +287,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigSelectedNamespaces",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigSelectedNamespaces",
 		reflect.TypeOf((*GkeBackupBackupPlanBackupConfigSelectedNamespaces)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigSelectedNamespacesOutputReference",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigSelectedNamespacesOutputReference",
 		reflect.TypeOf((*GkeBackupBackupPlanBackupConfigSelectedNamespacesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -325,11 +325,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupSchedule",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupSchedule",
 		reflect.TypeOf((*GkeBackupBackupPlanBackupSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupScheduleOutputReference",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupScheduleOutputReference",
 		reflect.TypeOf((*GkeBackupBackupPlanBackupScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -367,15 +367,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanConfig",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanConfig",
 		reflect.TypeOf((*GkeBackupBackupPlanConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanRetentionPolicy",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanRetentionPolicy",
 		reflect.TypeOf((*GkeBackupBackupPlanRetentionPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanRetentionPolicyOutputReference",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanRetentionPolicyOutputReference",
 		reflect.TypeOf((*GkeBackupBackupPlanRetentionPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backupDeleteLockDays", GoGetter: "BackupDeleteLockDays"},
@@ -416,11 +416,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanTimeouts",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanTimeouts",
 		reflect.TypeOf((*GkeBackupBackupPlanTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanTimeoutsOutputReference",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanTimeoutsOutputReference",
 		reflect.TypeOf((*GkeBackupBackupPlanTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

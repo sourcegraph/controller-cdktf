@@ -116,7 +116,7 @@ func NewAmplifyDomainAssociationSubDomainList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_AmplifyDomainAssociationSubDomainList{}
 
 	_jsii_.Create(
-		"aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomainList",
+		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomainList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAmplifyDomainAssociationSubDomainList_Override(a AmplifyDomainAssociatio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomainList",
+		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomainList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

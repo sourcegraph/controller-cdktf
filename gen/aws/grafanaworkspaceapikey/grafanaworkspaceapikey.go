@@ -399,7 +399,7 @@ func NewGrafanaWorkspaceApiKey(scope constructs.Construct, id *string, config *G
 	j := jsiiProxy_GrafanaWorkspaceApiKey{}
 
 	_jsii_.Create(
-		"aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey",
+		"@cdktf/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -412,7 +412,7 @@ func NewGrafanaWorkspaceApiKey_Override(g GrafanaWorkspaceApiKey, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey",
+		"@cdktf/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -567,7 +567,7 @@ func GrafanaWorkspaceApiKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey",
+		"@cdktf/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -586,7 +586,7 @@ func GrafanaWorkspaceApiKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey",
+		"@cdktf/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -605,7 +605,7 @@ func GrafanaWorkspaceApiKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey",
+		"@cdktf/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -618,7 +618,7 @@ func GrafanaWorkspaceApiKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey",
+		"@cdktf/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey",
 		"tfResourceType",
 		&returns,
 	)

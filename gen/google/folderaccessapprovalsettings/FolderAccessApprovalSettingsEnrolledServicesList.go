@@ -116,7 +116,7 @@ func NewFolderAccessApprovalSettingsEnrolledServicesList(terraformResource cdktf
 	j := jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesList{}
 
 	_jsii_.Create(
-		"google.folderAccessApprovalSettings.FolderAccessApprovalSettingsEnrolledServicesList",
+		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettingsEnrolledServicesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewFolderAccessApprovalSettingsEnrolledServicesList_Override(f FolderAccess
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.folderAccessApprovalSettings.FolderAccessApprovalSettingsEnrolledServicesList",
+		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettingsEnrolledServicesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)

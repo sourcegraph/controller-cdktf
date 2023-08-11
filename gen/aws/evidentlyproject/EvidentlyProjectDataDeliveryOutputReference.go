@@ -204,7 +204,7 @@ func NewEvidentlyProjectDataDeliveryOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_EvidentlyProjectDataDeliveryOutputReference{}
 
 	_jsii_.Create(
-		"aws.evidentlyProject.EvidentlyProjectDataDeliveryOutputReference",
+		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectDataDeliveryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEvidentlyProjectDataDeliveryOutputReference_Override(e EvidentlyProjectD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.evidentlyProject.EvidentlyProjectDataDeliveryOutputReference",
+		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectDataDeliveryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

@@ -104,7 +104,7 @@ func NewVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList(terrafor
 	j := jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList{}
 
 	_jsii_.Create(
-		"google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList",
+		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList",
+		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		v,
 	)

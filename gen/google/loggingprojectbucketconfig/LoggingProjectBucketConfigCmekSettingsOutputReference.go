@@ -212,7 +212,7 @@ func NewLoggingProjectBucketConfigCmekSettingsOutputReference(terraformResource 
 	j := jsiiProxy_LoggingProjectBucketConfigCmekSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google.loggingProjectBucketConfig.LoggingProjectBucketConfigCmekSettingsOutputReference",
+		"@cdktf/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigCmekSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -224,7 +224,7 @@ func NewLoggingProjectBucketConfigCmekSettingsOutputReference_Override(l Logging
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingProjectBucketConfig.LoggingProjectBucketConfigCmekSettingsOutputReference",
+		"@cdktf/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigCmekSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

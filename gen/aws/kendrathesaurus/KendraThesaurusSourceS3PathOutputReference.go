@@ -202,7 +202,7 @@ func NewKendraThesaurusSourceS3PathOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_KendraThesaurusSourceS3PathOutputReference{}
 
 	_jsii_.Create(
-		"aws.kendraThesaurus.KendraThesaurusSourceS3PathOutputReference",
+		"@cdktf/provider-aws.kendraThesaurus.KendraThesaurusSourceS3PathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewKendraThesaurusSourceS3PathOutputReference_Override(k KendraThesaurusSou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraThesaurus.KendraThesaurusSourceS3PathOutputReference",
+		"@cdktf/provider-aws.kendraThesaurus.KendraThesaurusSourceS3PathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

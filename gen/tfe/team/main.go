@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.team.Team",
+		"@cdktf/provider-tfe.team.Team",
 		reflect.TypeOf((*Team)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.team.TeamConfig",
+		"@cdktf/provider-tfe.team.TeamConfig",
 		reflect.TypeOf((*TeamConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"tfe.team.TeamOrganizationAccess",
+		"@cdktf/provider-tfe.team.TeamOrganizationAccess",
 		reflect.TypeOf((*TeamOrganizationAccess)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"tfe.team.TeamOrganizationAccessOutputReference",
+		"@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference",
 		reflect.TypeOf((*TeamOrganizationAccessOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

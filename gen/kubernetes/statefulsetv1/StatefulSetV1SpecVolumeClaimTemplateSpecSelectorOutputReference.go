@@ -204,7 +204,7 @@ func NewStatefulSetV1SpecVolumeClaimTemplateSpecSelectorOutputReference(terrafor
 	j := jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecSelectorOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateSpecSelectorOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateSpecSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewStatefulSetV1SpecVolumeClaimTemplateSpecSelectorOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateSpecSelectorOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateSpecSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

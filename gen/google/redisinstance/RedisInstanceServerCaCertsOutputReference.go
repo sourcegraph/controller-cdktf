@@ -211,7 +211,7 @@ func NewRedisInstanceServerCaCertsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_RedisInstanceServerCaCertsOutputReference{}
 
 	_jsii_.Create(
-		"google.redisInstance.RedisInstanceServerCaCertsOutputReference",
+		"@cdktf/provider-google.redisInstance.RedisInstanceServerCaCertsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewRedisInstanceServerCaCertsOutputReference_Override(r RedisInstanceServer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.redisInstance.RedisInstanceServerCaCertsOutputReference",
+		"@cdktf/provider-google.redisInstance.RedisInstanceServerCaCertsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

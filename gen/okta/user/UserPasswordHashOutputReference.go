@@ -274,7 +274,7 @@ func NewUserPasswordHashOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_UserPasswordHashOutputReference{}
 
 	_jsii_.Create(
-		"okta.user.UserPasswordHashOutputReference",
+		"@cdktf/provider-okta.user.UserPasswordHashOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -286,7 +286,7 @@ func NewUserPasswordHashOutputReference_Override(u UserPasswordHashOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.user.UserPasswordHashOutputReference",
+		"@cdktf/provider-okta.user.UserPasswordHashOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		u,
 	)

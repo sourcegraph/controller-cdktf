@@ -116,7 +116,7 @@ func NewAppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustmentList(ter
 	j := jsiiProxy_AppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustmentList{}
 
 	_jsii_.Create(
-		"aws.appautoscalingPolicy.AppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustmentList",
+		"@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustmentList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustmentList_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appautoscalingPolicy.AppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustmentList",
+		"@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustmentList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

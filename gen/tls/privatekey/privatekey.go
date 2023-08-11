@@ -431,7 +431,7 @@ func NewPrivateKey(scope constructs.Construct, id *string, config *PrivateKeyCon
 	j := jsiiProxy_PrivateKey{}
 
 	_jsii_.Create(
-		"tls.privateKey.PrivateKey",
+		"@cdktf/provider-tls.privateKey.PrivateKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -444,7 +444,7 @@ func NewPrivateKey_Override(p PrivateKey, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tls.privateKey.PrivateKey",
+		"@cdktf/provider-tls.privateKey.PrivateKey",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -577,7 +577,7 @@ func PrivateKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tls.privateKey.PrivateKey",
+		"@cdktf/provider-tls.privateKey.PrivateKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func PrivateKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tls.privateKey.PrivateKey",
+		"@cdktf/provider-tls.privateKey.PrivateKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -615,7 +615,7 @@ func PrivateKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tls.privateKey.PrivateKey",
+		"@cdktf/provider-tls.privateKey.PrivateKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -628,7 +628,7 @@ func PrivateKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tls.privateKey.PrivateKey",
+		"@cdktf/provider-tls.privateKey.PrivateKey",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.securityhubInviteAccepter.SecurityhubInviteAccepter",
+		"@cdktf/provider-aws.securityhubInviteAccepter.SecurityhubInviteAccepter",
 		reflect.TypeOf((*SecurityhubInviteAccepter)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,7 +58,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.securityhubInviteAccepter.SecurityhubInviteAccepterConfig",
+		"@cdktf/provider-aws.securityhubInviteAccepter.SecurityhubInviteAccepterConfig",
 		reflect.TypeOf((*SecurityhubInviteAccepterConfig)(nil)).Elem(),
 	)
 }

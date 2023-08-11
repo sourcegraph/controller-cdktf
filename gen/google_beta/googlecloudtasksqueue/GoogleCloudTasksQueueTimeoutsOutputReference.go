@@ -228,7 +228,7 @@ func NewGoogleCloudTasksQueueTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_GoogleCloudTasksQueueTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleCloudTasksQueueTimeoutsOutputReference_Override(g GoogleCloudTasks
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

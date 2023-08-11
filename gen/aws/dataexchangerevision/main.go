@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataexchangeRevision.DataexchangeRevision",
+		"@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision",
 		reflect.TypeOf((*DataexchangeRevision)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataexchangeRevision.DataexchangeRevisionConfig",
+		"@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig",
 		reflect.TypeOf((*DataexchangeRevisionConfig)(nil)).Elem(),
 	)
 }

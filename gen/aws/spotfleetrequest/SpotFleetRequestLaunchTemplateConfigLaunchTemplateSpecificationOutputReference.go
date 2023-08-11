@@ -228,7 +228,7 @@ func NewSpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationOutputRef
 	j := jsiiProxy_SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationOutputReference",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationOutputReference",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

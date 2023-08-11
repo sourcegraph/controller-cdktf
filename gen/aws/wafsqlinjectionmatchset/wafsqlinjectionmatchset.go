@@ -343,7 +343,7 @@ func NewWafSqlInjectionMatchSet(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_WafSqlInjectionMatchSet{}
 
 	_jsii_.Create(
-		"aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSet",
+		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewWafSqlInjectionMatchSet_Override(w WafSqlInjectionMatchSet, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSet",
+		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSet",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -478,7 +478,7 @@ func WafSqlInjectionMatchSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSet",
+		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -497,7 +497,7 @@ func WafSqlInjectionMatchSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSet",
+		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func WafSqlInjectionMatchSet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSet",
+		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func WafSqlInjectionMatchSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSet",
+		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSet",
 		"tfResourceType",
 		&returns,
 	)

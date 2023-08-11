@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeployment",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeployment",
 		reflect.TypeOf((*OsConfigPatchDeployment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,19 +93,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentConfig",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentConfig",
 		reflect.TypeOf((*OsConfigPatchDeploymentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilter",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilter",
 		reflect.TypeOf((*OsConfigPatchDeploymentInstanceFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilterGroupLabels",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilterGroupLabels",
 		reflect.TypeOf((*OsConfigPatchDeploymentInstanceFilterGroupLabels)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilterGroupLabelsList",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilterGroupLabelsList",
 		reflect.TypeOf((*OsConfigPatchDeploymentInstanceFilterGroupLabelsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -126,7 +126,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilterGroupLabelsOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilterGroupLabelsOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentInstanceFilterGroupLabelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -160,7 +160,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilterOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilterOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentInstanceFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "all", GoGetter: "All"},
@@ -208,11 +208,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentOneTimeSchedule",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentOneTimeSchedule",
 		reflect.TypeOf((*OsConfigPatchDeploymentOneTimeSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentOneTimeScheduleOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentOneTimeScheduleOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentOneTimeScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -246,15 +246,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfig",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfig",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigApt",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigApt",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigApt)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigAptOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigAptOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigAptOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -295,11 +295,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigGoo",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigGoo",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigGoo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigGooOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigGooOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigGooOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -333,7 +333,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apt", GoGetter: "Apt"},
@@ -399,19 +399,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStep",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStep",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigPostStep)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfig",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfig",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObject",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObject",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObject)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObjectOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObjectOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObjectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -449,7 +449,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedSuccessCodes", GoGetter: "AllowedSuccessCodes"},
@@ -494,7 +494,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigPostStepOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -534,15 +534,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfig",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfig",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObject",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObject",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObject)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObjectOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObjectOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObjectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -580,7 +580,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedSuccessCodes", GoGetter: "AllowedSuccessCodes"},
@@ -625,19 +625,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStep",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStep",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigPreStep)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfig",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfig",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObject",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObject",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObject)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObjectOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObjectOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObjectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -675,7 +675,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedSuccessCodes", GoGetter: "AllowedSuccessCodes"},
@@ -720,7 +720,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigPreStepOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -760,15 +760,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfig",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfig",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObject",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObject",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObject)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObjectOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObjectOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObjectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -806,7 +806,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedSuccessCodes", GoGetter: "AllowedSuccessCodes"},
@@ -851,11 +851,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigWindowsUpdate",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigWindowsUpdate",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigWindowsUpdate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "classifications", GoGetter: "Classifications"},
@@ -896,11 +896,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigYum",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigYum",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigYum)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigYumOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigYumOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigYumOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -944,11 +944,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigZypper",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigZypper",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigZypper)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigZypperOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigZypperOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentPatchConfigZypperOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "categories", GoGetter: "Categories"},
@@ -998,15 +998,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringSchedule",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringSchedule",
 		reflect.TypeOf((*OsConfigPatchDeploymentRecurringSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleMonthly",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleMonthly",
 		reflect.TypeOf((*OsConfigPatchDeploymentRecurringScheduleMonthly)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1045,11 +1045,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonth",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonth",
 		reflect.TypeOf((*OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1085,7 +1085,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentRecurringScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1139,11 +1139,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleTimeOfDay",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleTimeOfDay",
 		reflect.TypeOf((*OsConfigPatchDeploymentRecurringScheduleTimeOfDay)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleTimeOfDayOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleTimeOfDayOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentRecurringScheduleTimeOfDayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1187,11 +1187,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleTimeZone",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleTimeZone",
 		reflect.TypeOf((*OsConfigPatchDeploymentRecurringScheduleTimeZone)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1228,11 +1228,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleWeekly",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleWeekly",
 		reflect.TypeOf((*OsConfigPatchDeploymentRecurringScheduleWeekly)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1266,15 +1266,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRollout",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRollout",
 		reflect.TypeOf((*OsConfigPatchDeploymentRollout)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRolloutDisruptionBudget",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRolloutDisruptionBudget",
 		reflect.TypeOf((*OsConfigPatchDeploymentRolloutDisruptionBudget)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1312,7 +1312,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRolloutOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRolloutOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentRolloutOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1349,11 +1349,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentTimeouts",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentTimeouts",
 		reflect.TypeOf((*OsConfigPatchDeploymentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentTimeoutsOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentTimeoutsOutputReference",
 		reflect.TypeOf((*OsConfigPatchDeploymentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

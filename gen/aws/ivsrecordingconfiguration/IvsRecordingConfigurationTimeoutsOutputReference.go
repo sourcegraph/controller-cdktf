@@ -204,7 +204,7 @@ func NewIvsRecordingConfigurationTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_IvsRecordingConfigurationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ivsRecordingConfiguration.IvsRecordingConfigurationTimeoutsOutputReference",
+		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewIvsRecordingConfigurationTimeoutsOutputReference_Override(i IvsRecording
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ivsRecordingConfiguration.IvsRecordingConfigurationTimeoutsOutputReference",
+		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

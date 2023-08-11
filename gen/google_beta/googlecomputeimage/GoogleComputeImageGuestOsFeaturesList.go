@@ -116,7 +116,7 @@ func NewGoogleComputeImageGuestOsFeaturesList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_GoogleComputeImageGuestOsFeaturesList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeImage.GoogleComputeImageGuestOsFeaturesList",
+		"@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageGuestOsFeaturesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeImageGuestOsFeaturesList_Override(g GoogleComputeImageGuest
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeImage.GoogleComputeImageGuestOsFeaturesList",
+		"@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageGuestOsFeaturesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

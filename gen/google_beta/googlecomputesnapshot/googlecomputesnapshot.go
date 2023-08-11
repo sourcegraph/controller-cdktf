@@ -635,7 +635,7 @@ func NewGoogleComputeSnapshot(scope constructs.Construct, id *string, config *Go
 	j := jsiiProxy_GoogleComputeSnapshot{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeSnapshot.GoogleComputeSnapshot",
+		"@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshot",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -648,7 +648,7 @@ func NewGoogleComputeSnapshot_Override(g GoogleComputeSnapshot, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeSnapshot.GoogleComputeSnapshot",
+		"@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshot",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -847,7 +847,7 @@ func GoogleComputeSnapshot_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSnapshot.GoogleComputeSnapshot",
+		"@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshot",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -866,7 +866,7 @@ func GoogleComputeSnapshot_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSnapshot.GoogleComputeSnapshot",
+		"@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshot",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -885,7 +885,7 @@ func GoogleComputeSnapshot_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSnapshot.GoogleComputeSnapshot",
+		"@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshot",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -898,7 +898,7 @@ func GoogleComputeSnapshot_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeSnapshot.GoogleComputeSnapshot",
+		"@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshot",
 		"tfResourceType",
 		&returns,
 	)

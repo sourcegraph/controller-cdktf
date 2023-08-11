@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.docdbGlobalCluster.DocdbGlobalCluster",
+		"@cdktf/provider-aws.docdbGlobalCluster.DocdbGlobalCluster",
 		reflect.TypeOf((*DocdbGlobalCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,15 +83,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.docdbGlobalCluster.DocdbGlobalClusterConfig",
+		"@cdktf/provider-aws.docdbGlobalCluster.DocdbGlobalClusterConfig",
 		reflect.TypeOf((*DocdbGlobalClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.docdbGlobalCluster.DocdbGlobalClusterGlobalClusterMembers",
+		"@cdktf/provider-aws.docdbGlobalCluster.DocdbGlobalClusterGlobalClusterMembers",
 		reflect.TypeOf((*DocdbGlobalClusterGlobalClusterMembers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.docdbGlobalCluster.DocdbGlobalClusterGlobalClusterMembersList",
+		"@cdktf/provider-aws.docdbGlobalCluster.DocdbGlobalClusterGlobalClusterMembersList",
 		reflect.TypeOf((*DocdbGlobalClusterGlobalClusterMembersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -111,7 +111,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.docdbGlobalCluster.DocdbGlobalClusterGlobalClusterMembersOutputReference",
+		"@cdktf/provider-aws.docdbGlobalCluster.DocdbGlobalClusterGlobalClusterMembersOutputReference",
 		reflect.TypeOf((*DocdbGlobalClusterGlobalClusterMembersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -145,11 +145,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.docdbGlobalCluster.DocdbGlobalClusterTimeouts",
+		"@cdktf/provider-aws.docdbGlobalCluster.DocdbGlobalClusterTimeouts",
 		reflect.TypeOf((*DocdbGlobalClusterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.docdbGlobalCluster.DocdbGlobalClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.docdbGlobalCluster.DocdbGlobalClusterTimeoutsOutputReference",
 		reflect.TypeOf((*DocdbGlobalClusterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

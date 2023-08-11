@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.notebooksEnvironment.NotebooksEnvironment",
+		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironment",
 		reflect.TypeOf((*NotebooksEnvironment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,15 +84,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.notebooksEnvironment.NotebooksEnvironmentConfig",
+		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironmentConfig",
 		reflect.TypeOf((*NotebooksEnvironmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.notebooksEnvironment.NotebooksEnvironmentContainerImage",
+		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironmentContainerImage",
 		reflect.TypeOf((*NotebooksEnvironmentContainerImage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.notebooksEnvironment.NotebooksEnvironmentContainerImageOutputReference",
+		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironmentContainerImageOutputReference",
 		reflect.TypeOf((*NotebooksEnvironmentContainerImageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -129,11 +129,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.notebooksEnvironment.NotebooksEnvironmentTimeouts",
+		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironmentTimeouts",
 		reflect.TypeOf((*NotebooksEnvironmentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.notebooksEnvironment.NotebooksEnvironmentTimeoutsOutputReference",
+		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironmentTimeoutsOutputReference",
 		reflect.TypeOf((*NotebooksEnvironmentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -174,11 +174,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.notebooksEnvironment.NotebooksEnvironmentVmImage",
+		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironmentVmImage",
 		reflect.TypeOf((*NotebooksEnvironmentVmImage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.notebooksEnvironment.NotebooksEnvironmentVmImageOutputReference",
+		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironmentVmImageOutputReference",
 		reflect.TypeOf((*NotebooksEnvironmentVmImageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

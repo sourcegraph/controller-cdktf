@@ -426,7 +426,7 @@ func NewGoogleDatastoreIndex(scope constructs.Construct, id *string, config *Goo
 	j := jsiiProxy_GoogleDatastoreIndex{}
 
 	_jsii_.Create(
-		"google-beta.googleDatastoreIndex.GoogleDatastoreIndex",
+		"@cdktf/provider-google-beta.googleDatastoreIndex.GoogleDatastoreIndex",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -439,7 +439,7 @@ func NewGoogleDatastoreIndex_Override(g GoogleDatastoreIndex, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatastoreIndex.GoogleDatastoreIndex",
+		"@cdktf/provider-google-beta.googleDatastoreIndex.GoogleDatastoreIndex",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -583,7 +583,7 @@ func GoogleDatastoreIndex_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDatastoreIndex.GoogleDatastoreIndex",
+		"@cdktf/provider-google-beta.googleDatastoreIndex.GoogleDatastoreIndex",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -602,7 +602,7 @@ func GoogleDatastoreIndex_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDatastoreIndex.GoogleDatastoreIndex",
+		"@cdktf/provider-google-beta.googleDatastoreIndex.GoogleDatastoreIndex",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func GoogleDatastoreIndex_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDatastoreIndex.GoogleDatastoreIndex",
+		"@cdktf/provider-google-beta.googleDatastoreIndex.GoogleDatastoreIndex",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func GoogleDatastoreIndex_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDatastoreIndex.GoogleDatastoreIndex",
+		"@cdktf/provider-google-beta.googleDatastoreIndex.GoogleDatastoreIndex",
 		"tfResourceType",
 		&returns,
 	)

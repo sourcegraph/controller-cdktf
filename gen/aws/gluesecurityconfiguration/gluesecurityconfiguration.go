@@ -342,7 +342,7 @@ func NewGlueSecurityConfiguration(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GlueSecurityConfiguration{}
 
 	_jsii_.Create(
-		"aws.glueSecurityConfiguration.GlueSecurityConfiguration",
+		"@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewGlueSecurityConfiguration_Override(g GlueSecurityConfiguration, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueSecurityConfiguration.GlueSecurityConfiguration",
+		"@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfiguration",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -477,7 +477,7 @@ func GlueSecurityConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueSecurityConfiguration.GlueSecurityConfiguration",
+		"@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -496,7 +496,7 @@ func GlueSecurityConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueSecurityConfiguration.GlueSecurityConfiguration",
+		"@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func GlueSecurityConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueSecurityConfiguration.GlueSecurityConfiguration",
+		"@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -528,7 +528,7 @@ func GlueSecurityConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.glueSecurityConfiguration.GlueSecurityConfiguration",
+		"@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfiguration",
 		"tfResourceType",
 		&returns,
 	)

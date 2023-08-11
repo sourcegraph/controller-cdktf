@@ -179,7 +179,7 @@ func NewBigqueryTableExternalDataConfigurationAvroOptionsOutputReference(terrafo
 	j := jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptionsOutputReference",
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewBigqueryTableExternalDataConfigurationAvroOptionsOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptionsOutputReference",
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

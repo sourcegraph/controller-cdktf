@@ -202,7 +202,7 @@ func NewAppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference(terraformRe
 	j := jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewAppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference_Override(a 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

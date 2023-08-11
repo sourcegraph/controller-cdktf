@@ -1011,7 +1011,7 @@ func NewGoogleComputeBackendService(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleComputeBackendService{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendService",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1024,7 +1024,7 @@ func NewGoogleComputeBackendService_Override(g GoogleComputeBackendService, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendService",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendService",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1333,7 +1333,7 @@ func GoogleComputeBackendService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendService",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1352,7 +1352,7 @@ func GoogleComputeBackendService_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendService",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1371,7 +1371,7 @@ func GoogleComputeBackendService_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendService",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendService",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1384,7 +1384,7 @@ func GoogleComputeBackendService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendService",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendService",
 		"tfResourceType",
 		&returns,
 	)

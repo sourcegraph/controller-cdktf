@@ -367,7 +367,7 @@ func NewGoogleFirebaseProjectLocation(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleFirebaseProjectLocation{}
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocation",
+		"@cdktf/provider-google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewGoogleFirebaseProjectLocation_Override(g GoogleFirebaseProjectLocation, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocation",
+		"@cdktf/provider-google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocation",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -513,7 +513,7 @@ func GoogleFirebaseProjectLocation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocation",
+		"@cdktf/provider-google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -532,7 +532,7 @@ func GoogleFirebaseProjectLocation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocation",
+		"@cdktf/provider-google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func GoogleFirebaseProjectLocation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocation",
+		"@cdktf/provider-google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func GoogleFirebaseProjectLocation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocation",
+		"@cdktf/provider-google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocation",
 		"tfResourceType",
 		&returns,
 	)

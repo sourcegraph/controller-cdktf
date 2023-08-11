@@ -204,7 +204,7 @@ func NewEksNodeGroupRemoteAccessOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_EksNodeGroupRemoteAccessOutputReference{}
 
 	_jsii_.Create(
-		"aws.eksNodeGroup.EksNodeGroupRemoteAccessOutputReference",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupRemoteAccessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEksNodeGroupRemoteAccessOutputReference_Override(e EksNodeGroupRemoteAcc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksNodeGroup.EksNodeGroupRemoteAccessOutputReference",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupRemoteAccessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

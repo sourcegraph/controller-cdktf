@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.efsBackupPolicy.EfsBackupPolicy",
+		"@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicy",
 		reflect.TypeOf((*EfsBackupPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,11 +60,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.efsBackupPolicy.EfsBackupPolicyBackupPolicy",
+		"@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicyBackupPolicy",
 		reflect.TypeOf((*EfsBackupPolicyBackupPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.efsBackupPolicy.EfsBackupPolicyBackupPolicyOutputReference",
+		"@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicyBackupPolicyOutputReference",
 		reflect.TypeOf((*EfsBackupPolicyBackupPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -98,7 +98,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.efsBackupPolicy.EfsBackupPolicyConfig",
+		"@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicyConfig",
 		reflect.TypeOf((*EfsBackupPolicyConfig)(nil)).Elem(),
 	)
 }

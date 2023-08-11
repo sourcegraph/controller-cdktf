@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleHealthcareDataset.GoogleHealthcareDataset",
+		"@cdktf/provider-google-beta.googleHealthcareDataset.GoogleHealthcareDataset",
 		reflect.TypeOf((*GoogleHealthcareDataset)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleHealthcareDataset.GoogleHealthcareDatasetConfig",
+		"@cdktf/provider-google-beta.googleHealthcareDataset.GoogleHealthcareDatasetConfig",
 		reflect.TypeOf((*GoogleHealthcareDatasetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleHealthcareDataset.GoogleHealthcareDatasetTimeouts",
+		"@cdktf/provider-google-beta.googleHealthcareDataset.GoogleHealthcareDatasetTimeouts",
 		reflect.TypeOf((*GoogleHealthcareDatasetTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleHealthcareDataset.GoogleHealthcareDatasetTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleHealthcareDataset.GoogleHealthcareDatasetTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleHealthcareDatasetTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

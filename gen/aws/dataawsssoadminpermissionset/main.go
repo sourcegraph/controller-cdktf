@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet",
+		"@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet",
 		reflect.TypeOf((*DataAwsSsoadminPermissionSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSetConfig",
+		"@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSetConfig",
 		reflect.TypeOf((*DataAwsSsoadminPermissionSetConfig)(nil)).Elem(),
 	)
 }

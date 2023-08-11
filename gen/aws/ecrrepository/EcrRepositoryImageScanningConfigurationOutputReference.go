@@ -179,7 +179,7 @@ func NewEcrRepositoryImageScanningConfigurationOutputReference(terraformResource
 	j := jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecrRepository.EcrRepositoryImageScanningConfigurationOutputReference",
+		"@cdktf/provider-aws.ecrRepository.EcrRepositoryImageScanningConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewEcrRepositoryImageScanningConfigurationOutputReference_Override(e EcrRep
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecrRepository.EcrRepositoryImageScanningConfigurationOutputReference",
+		"@cdktf/provider-aws.ecrRepository.EcrRepositoryImageScanningConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

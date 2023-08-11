@@ -202,7 +202,7 @@ func NewDataprocMetastoreServiceMaintenanceWindowOutputReference(terraformResour
 	j := jsiiProxy_DataprocMetastoreServiceMaintenanceWindowOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceMaintenanceWindowOutputReference",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceMaintenanceWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataprocMetastoreServiceMaintenanceWindowOutputReference_Override(d Data
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceMaintenanceWindowOutputReference",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceMaintenanceWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA",
+		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA",
 		reflect.TypeOf((*S3BucketObjectLockConfigurationA)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationAConfig",
+		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationAConfig",
 		reflect.TypeOf((*S3BucketObjectLockConfigurationAConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleA",
+		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleA",
 		reflect.TypeOf((*S3BucketObjectLockConfigurationRuleA)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleAOutputReference",
+		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleAOutputReference",
 		reflect.TypeOf((*S3BucketObjectLockConfigurationRuleAOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -113,11 +113,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleDefaultRetentionA",
+		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleDefaultRetentionA",
 		reflect.TypeOf((*S3BucketObjectLockConfigurationRuleDefaultRetentionA)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference",
+		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference",
 		reflect.TypeOf((*S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -202,7 +202,7 @@ func NewApiGatewayStageAccessLogSettingsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_ApiGatewayStageAccessLogSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.apiGatewayStage.ApiGatewayStageAccessLogSettingsOutputReference",
+		"@cdktf/provider-aws.apiGatewayStage.ApiGatewayStageAccessLogSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewApiGatewayStageAccessLogSettingsOutputReference_Override(a ApiGatewaySta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayStage.ApiGatewayStageAccessLogSettingsOutputReference",
+		"@cdktf/provider-aws.apiGatewayStage.ApiGatewayStageAccessLogSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

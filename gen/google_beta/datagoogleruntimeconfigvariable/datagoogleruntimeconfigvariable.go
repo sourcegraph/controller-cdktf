@@ -371,7 +371,7 @@ func NewDataGoogleRuntimeconfigVariable(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataGoogleRuntimeconfigVariable{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleRuntimeconfigVariable.DataGoogleRuntimeconfigVariable",
+		"@cdktf/provider-google-beta.dataGoogleRuntimeconfigVariable.DataGoogleRuntimeconfigVariable",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -384,7 +384,7 @@ func NewDataGoogleRuntimeconfigVariable_Override(d DataGoogleRuntimeconfigVariab
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleRuntimeconfigVariable.DataGoogleRuntimeconfigVariable",
+		"@cdktf/provider-google-beta.dataGoogleRuntimeconfigVariable.DataGoogleRuntimeconfigVariable",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -506,7 +506,7 @@ func DataGoogleRuntimeconfigVariable_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleRuntimeconfigVariable.DataGoogleRuntimeconfigVariable",
+		"@cdktf/provider-google-beta.dataGoogleRuntimeconfigVariable.DataGoogleRuntimeconfigVariable",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -525,7 +525,7 @@ func DataGoogleRuntimeconfigVariable_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleRuntimeconfigVariable.DataGoogleRuntimeconfigVariable",
+		"@cdktf/provider-google-beta.dataGoogleRuntimeconfigVariable.DataGoogleRuntimeconfigVariable",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -544,7 +544,7 @@ func DataGoogleRuntimeconfigVariable_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleRuntimeconfigVariable.DataGoogleRuntimeconfigVariable",
+		"@cdktf/provider-google-beta.dataGoogleRuntimeconfigVariable.DataGoogleRuntimeconfigVariable",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -557,7 +557,7 @@ func DataGoogleRuntimeconfigVariable_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleRuntimeconfigVariable.DataGoogleRuntimeconfigVariable",
+		"@cdktf/provider-google-beta.dataGoogleRuntimeconfigVariable.DataGoogleRuntimeconfigVariable",
 		"tfResourceType",
 		&returns,
 	)

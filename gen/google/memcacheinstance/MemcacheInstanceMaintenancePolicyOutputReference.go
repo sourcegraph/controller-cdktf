@@ -225,7 +225,7 @@ func NewMemcacheInstanceMaintenancePolicyOutputReference(terraformResource cdktf
 	j := jsiiProxy_MemcacheInstanceMaintenancePolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.memcacheInstance.MemcacheInstanceMaintenancePolicyOutputReference",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenancePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewMemcacheInstanceMaintenancePolicyOutputReference_Override(m MemcacheInst
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.memcacheInstance.MemcacheInstanceMaintenancePolicyOutputReference",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenancePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

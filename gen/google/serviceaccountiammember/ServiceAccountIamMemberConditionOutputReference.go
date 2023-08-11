@@ -226,7 +226,7 @@ func NewServiceAccountIamMemberConditionOutputReference(terraformResource cdktf.
 	j := jsiiProxy_ServiceAccountIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.serviceAccountIamMember.ServiceAccountIamMemberConditionOutputReference",
+		"@cdktf/provider-google.serviceAccountIamMember.ServiceAccountIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewServiceAccountIamMemberConditionOutputReference_Override(s ServiceAccoun
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.serviceAccountIamMember.ServiceAccountIamMemberConditionOutputReference",
+		"@cdktf/provider-google.serviceAccountIamMember.ServiceAccountIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

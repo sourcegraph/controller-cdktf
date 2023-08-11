@@ -202,7 +202,7 @@ func NewCognitoResourceServerScopeOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_CognitoResourceServerScopeOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoResourceServer.CognitoResourceServerScopeOutputReference",
+		"@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServerScopeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewCognitoResourceServerScopeOutputReference_Override(c CognitoResourceServ
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoResourceServer.CognitoResourceServerScopeOutputReference",
+		"@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServerScopeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

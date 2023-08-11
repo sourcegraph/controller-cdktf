@@ -226,7 +226,7 @@ func NewLexIntentRejectionStatementMessageOutputReference(terraformResource cdkt
 	j := jsiiProxy_LexIntentRejectionStatementMessageOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentRejectionStatementMessageOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewLexIntentRejectionStatementMessageOutputReference_Override(l LexIntentRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentRejectionStatementMessageOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

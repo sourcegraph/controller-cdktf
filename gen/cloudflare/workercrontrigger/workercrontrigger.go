@@ -365,7 +365,7 @@ func NewWorkerCronTrigger(scope constructs.Construct, id *string, config *Worker
 	j := jsiiProxy_WorkerCronTrigger{}
 
 	_jsii_.Create(
-		"cloudflare.workerCronTrigger.WorkerCronTrigger",
+		"@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTrigger",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewWorkerCronTrigger_Override(w WorkerCronTrigger, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.workerCronTrigger.WorkerCronTrigger",
+		"@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTrigger",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -522,7 +522,7 @@ func WorkerCronTrigger_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.workerCronTrigger.WorkerCronTrigger",
+		"@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTrigger",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func WorkerCronTrigger_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.workerCronTrigger.WorkerCronTrigger",
+		"@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTrigger",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func WorkerCronTrigger_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.workerCronTrigger.WorkerCronTrigger",
+		"@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTrigger",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func WorkerCronTrigger_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.workerCronTrigger.WorkerCronTrigger",
+		"@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTrigger",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.glueDevEndpoint.GlueDevEndpoint",
+		"@cdktf/provider-aws.glueDevEndpoint.GlueDevEndpoint",
 		reflect.TypeOf((*GlueDevEndpoint)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -110,7 +110,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueDevEndpoint.GlueDevEndpointConfig",
+		"@cdktf/provider-aws.glueDevEndpoint.GlueDevEndpointConfig",
 		reflect.TypeOf((*GlueDevEndpointConfig)(nil)).Elem(),
 	)
 }

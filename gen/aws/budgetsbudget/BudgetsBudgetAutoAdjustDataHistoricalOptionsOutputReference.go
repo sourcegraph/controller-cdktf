@@ -190,7 +190,7 @@ func NewBudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference(terraformRes
 	j := jsiiProxy_BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference",
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -202,7 +202,7 @@ func NewBudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference_Override(b B
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference",
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

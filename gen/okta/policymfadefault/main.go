@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.policyMfaDefault.PolicyMfaDefault",
+		"@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault",
 		reflect.TypeOf((*PolicyMfaDefault)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -126,7 +126,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.policyMfaDefault.PolicyMfaDefaultConfig",
+		"@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig",
 		reflect.TypeOf((*PolicyMfaDefaultConfig)(nil)).Elem(),
 	)
 }

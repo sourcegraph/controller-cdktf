@@ -507,7 +507,7 @@ func NewNeptuneGlobalCluster(scope constructs.Construct, id *string, config *Nep
 	j := jsiiProxy_NeptuneGlobalCluster{}
 
 	_jsii_.Create(
-		"aws.neptuneGlobalCluster.NeptuneGlobalCluster",
+		"@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -520,7 +520,7 @@ func NewNeptuneGlobalCluster_Override(n NeptuneGlobalCluster, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.neptuneGlobalCluster.NeptuneGlobalCluster",
+		"@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalCluster",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -697,7 +697,7 @@ func NeptuneGlobalCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.neptuneGlobalCluster.NeptuneGlobalCluster",
+		"@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -716,7 +716,7 @@ func NeptuneGlobalCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.neptuneGlobalCluster.NeptuneGlobalCluster",
+		"@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func NeptuneGlobalCluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.neptuneGlobalCluster.NeptuneGlobalCluster",
+		"@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -748,7 +748,7 @@ func NeptuneGlobalCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.neptuneGlobalCluster.NeptuneGlobalCluster",
+		"@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalCluster",
 		"tfResourceType",
 		&returns,
 	)

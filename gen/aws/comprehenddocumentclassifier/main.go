@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifier",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier",
 		reflect.TypeOf((*ComprehendDocumentClassifier)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -98,19 +98,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifierConfig",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierConfig",
 		reflect.TypeOf((*ComprehendDocumentClassifierConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfig",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfig",
 		reflect.TypeOf((*ComprehendDocumentClassifierInputDataConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifests",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifests",
 		reflect.TypeOf((*ComprehendDocumentClassifierInputDataConfigAugmentedManifests)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList",
 		reflect.TypeOf((*ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -131,7 +131,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference",
 		reflect.TypeOf((*ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotationDataS3Uri", GoGetter: "AnnotationDataS3Uri"},
@@ -179,7 +179,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigOutputReference",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigOutputReference",
 		reflect.TypeOf((*ComprehendDocumentClassifierInputDataConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "augmentedManifests", GoGetter: "AugmentedManifests"},
@@ -227,11 +227,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifierOutputDataConfig",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierOutputDataConfig",
 		reflect.TypeOf((*ComprehendDocumentClassifierOutputDataConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifierOutputDataConfigOutputReference",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierOutputDataConfigOutputReference",
 		reflect.TypeOf((*ComprehendDocumentClassifierOutputDataConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -269,11 +269,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifierTimeouts",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierTimeouts",
 		reflect.TypeOf((*ComprehendDocumentClassifierTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifierTimeoutsOutputReference",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierTimeoutsOutputReference",
 		reflect.TypeOf((*ComprehendDocumentClassifierTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -314,11 +314,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifierVpcConfig",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierVpcConfig",
 		reflect.TypeOf((*ComprehendDocumentClassifierVpcConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifierVpcConfigOutputReference",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierVpcConfigOutputReference",
 		reflect.TypeOf((*ComprehendDocumentClassifierVpcConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

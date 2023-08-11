@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy",
+		"@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy",
 		reflect.TypeOf((*DeviceSettingsPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -104,7 +104,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.deviceSettingsPolicy.DeviceSettingsPolicyConfig",
+		"@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicyConfig",
 		reflect.TypeOf((*DeviceSettingsPolicyConfig)(nil)).Elem(),
 	)
 }

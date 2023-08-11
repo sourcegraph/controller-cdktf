@@ -448,7 +448,7 @@ func NewGoogleVertexAiFeaturestoreIamMember(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleVertexAiFeaturestoreIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiFeaturestoreIamMember.GoogleVertexAiFeaturestoreIamMember",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamMember.GoogleVertexAiFeaturestoreIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleVertexAiFeaturestoreIamMember_Override(g GoogleVertexAiFeaturestor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiFeaturestoreIamMember.GoogleVertexAiFeaturestoreIamMember",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamMember.GoogleVertexAiFeaturestoreIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleVertexAiFeaturestoreIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVertexAiFeaturestoreIamMember.GoogleVertexAiFeaturestoreIamMember",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamMember.GoogleVertexAiFeaturestoreIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleVertexAiFeaturestoreIamMember_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVertexAiFeaturestoreIamMember.GoogleVertexAiFeaturestoreIamMember",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamMember.GoogleVertexAiFeaturestoreIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleVertexAiFeaturestoreIamMember_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVertexAiFeaturestoreIamMember.GoogleVertexAiFeaturestoreIamMember",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamMember.GoogleVertexAiFeaturestoreIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleVertexAiFeaturestoreIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleVertexAiFeaturestoreIamMember.GoogleVertexAiFeaturestoreIamMember",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamMember.GoogleVertexAiFeaturestoreIamMember",
 		"tfResourceType",
 		&returns,
 	)

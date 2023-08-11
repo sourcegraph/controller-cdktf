@@ -202,7 +202,7 @@ func NewPageRuleActionsCacheTtlByStatusOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_PageRuleActionsCacheTtlByStatusOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.pageRule.PageRuleActionsCacheTtlByStatusOutputReference",
+		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheTtlByStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewPageRuleActionsCacheTtlByStatusOutputReference_Override(p PageRuleAction
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.pageRule.PageRuleActionsCacheTtlByStatusOutputReference",
+		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheTtlByStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

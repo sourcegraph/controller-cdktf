@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.s3BucketCorsConfiguration.S3BucketCorsConfiguration",
+		"@cdktf/provider-aws.s3BucketCorsConfiguration.S3BucketCorsConfiguration",
 		reflect.TypeOf((*S3BucketCorsConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketCorsConfiguration.S3BucketCorsConfigurationConfig",
+		"@cdktf/provider-aws.s3BucketCorsConfiguration.S3BucketCorsConfigurationConfig",
 		reflect.TypeOf((*S3BucketCorsConfigurationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketCorsConfiguration.S3BucketCorsConfigurationCorsRule",
+		"@cdktf/provider-aws.s3BucketCorsConfiguration.S3BucketCorsConfigurationCorsRule",
 		reflect.TypeOf((*S3BucketCorsConfigurationCorsRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketCorsConfiguration.S3BucketCorsConfigurationCorsRuleList",
+		"@cdktf/provider-aws.s3BucketCorsConfiguration.S3BucketCorsConfigurationCorsRuleList",
 		reflect.TypeOf((*S3BucketCorsConfigurationCorsRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -92,7 +92,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketCorsConfiguration.S3BucketCorsConfigurationCorsRuleOutputReference",
+		"@cdktf/provider-aws.s3BucketCorsConfiguration.S3BucketCorsConfigurationCorsRuleOutputReference",
 		reflect.TypeOf((*S3BucketCorsConfigurationCorsRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedHeaders", GoGetter: "AllowedHeaders"},

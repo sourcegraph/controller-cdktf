@@ -342,7 +342,7 @@ func NewAcmpcaPolicy(scope constructs.Construct, id *string, config *AcmpcaPolic
 	j := jsiiProxy_AcmpcaPolicy{}
 
 	_jsii_.Create(
-		"aws.acmpcaPolicy.AcmpcaPolicy",
+		"@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewAcmpcaPolicy_Override(a AcmpcaPolicy, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.acmpcaPolicy.AcmpcaPolicy",
+		"@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -488,7 +488,7 @@ func AcmpcaPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.acmpcaPolicy.AcmpcaPolicy",
+		"@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func AcmpcaPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.acmpcaPolicy.AcmpcaPolicy",
+		"@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func AcmpcaPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.acmpcaPolicy.AcmpcaPolicy",
+		"@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func AcmpcaPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.acmpcaPolicy.AcmpcaPolicy",
+		"@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy",
 		"tfResourceType",
 		&returns,
 	)

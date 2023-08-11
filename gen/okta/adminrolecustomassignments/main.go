@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.adminRoleCustomAssignments.AdminRoleCustomAssignments",
+		"@cdktf/provider-okta.adminRoleCustomAssignments.AdminRoleCustomAssignments",
 		reflect.TypeOf((*AdminRoleCustomAssignments)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.adminRoleCustomAssignments.AdminRoleCustomAssignmentsConfig",
+		"@cdktf/provider-okta.adminRoleCustomAssignments.AdminRoleCustomAssignmentsConfig",
 		reflect.TypeOf((*AdminRoleCustomAssignmentsConfig)(nil)).Elem(),
 	)
 }

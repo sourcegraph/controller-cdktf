@@ -116,7 +116,7 @@ func NewServiceV1SpecPortList(terraformResource cdktf.IInterpolatingParent, terr
 	j := jsiiProxy_ServiceV1SpecPortList{}
 
 	_jsii_.Create(
-		"kubernetes.serviceV1.ServiceV1SpecPortList",
+		"@cdktf/provider-kubernetes.serviceV1.ServiceV1SpecPortList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewServiceV1SpecPortList_Override(s ServiceV1SpecPortList, terraformResourc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.serviceV1.ServiceV1SpecPortList",
+		"@cdktf/provider-kubernetes.serviceV1.ServiceV1SpecPortList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

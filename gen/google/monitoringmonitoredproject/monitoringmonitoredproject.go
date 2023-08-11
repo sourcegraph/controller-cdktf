@@ -377,7 +377,7 @@ func NewMonitoringMonitoredProject(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_MonitoringMonitoredProject{}
 
 	_jsii_.Create(
-		"google.monitoringMonitoredProject.MonitoringMonitoredProject",
+		"@cdktf/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewMonitoringMonitoredProject_Override(m MonitoringMonitoredProject, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringMonitoredProject.MonitoringMonitoredProject",
+		"@cdktf/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -523,7 +523,7 @@ func MonitoringMonitoredProject_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringMonitoredProject.MonitoringMonitoredProject",
+		"@cdktf/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func MonitoringMonitoredProject_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringMonitoredProject.MonitoringMonitoredProject",
+		"@cdktf/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func MonitoringMonitoredProject_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringMonitoredProject.MonitoringMonitoredProject",
+		"@cdktf/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func MonitoringMonitoredProject_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.monitoringMonitoredProject.MonitoringMonitoredProject",
+		"@cdktf/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject",
 		"tfResourceType",
 		&returns,
 	)

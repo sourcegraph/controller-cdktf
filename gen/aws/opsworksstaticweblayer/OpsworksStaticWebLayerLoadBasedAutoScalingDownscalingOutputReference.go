@@ -324,7 +324,7 @@ func NewOpsworksStaticWebLayerLoadBasedAutoScalingDownscalingOutputReference(ter
 	j := jsiiProxy_OpsworksStaticWebLayerLoadBasedAutoScalingDownscalingOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksStaticWebLayer.OpsworksStaticWebLayerLoadBasedAutoScalingDownscalingOutputReference",
+		"@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerLoadBasedAutoScalingDownscalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewOpsworksStaticWebLayerLoadBasedAutoScalingDownscalingOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksStaticWebLayer.OpsworksStaticWebLayerLoadBasedAutoScalingDownscalingOutputReference",
+		"@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerLoadBasedAutoScalingDownscalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

@@ -179,7 +179,7 @@ func NewAppmeshVirtualRouterSpecOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_AppmeshVirtualRouterSpecOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAppmeshVirtualRouterSpecOutputReference_Override(a AppmeshVirtualRouterS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -353,7 +353,7 @@ func NewEcrLifecyclePolicy(scope constructs.Construct, id *string, config *EcrLi
 	j := jsiiProxy_EcrLifecyclePolicy{}
 
 	_jsii_.Create(
-		"aws.ecrLifecyclePolicy.EcrLifecyclePolicy",
+		"@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewEcrLifecyclePolicy_Override(e EcrLifecyclePolicy, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecrLifecyclePolicy.EcrLifecyclePolicy",
+		"@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -499,7 +499,7 @@ func EcrLifecyclePolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecrLifecyclePolicy.EcrLifecyclePolicy",
+		"@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func EcrLifecyclePolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecrLifecyclePolicy.EcrLifecyclePolicy",
+		"@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func EcrLifecyclePolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecrLifecyclePolicy.EcrLifecyclePolicy",
+		"@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func EcrLifecyclePolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ecrLifecyclePolicy.EcrLifecyclePolicy",
+		"@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -530,7 +530,7 @@ func NewNotificationPolicy(scope constructs.Construct, id *string, config *Notif
 	j := jsiiProxy_NotificationPolicy{}
 
 	_jsii_.Create(
-		"cloudflare.notificationPolicy.NotificationPolicy",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -543,7 +543,7 @@ func NewNotificationPolicy_Override(n NotificationPolicy, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.notificationPolicy.NotificationPolicy",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -709,7 +709,7 @@ func NotificationPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.notificationPolicy.NotificationPolicy",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -728,7 +728,7 @@ func NotificationPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.notificationPolicy.NotificationPolicy",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -747,7 +747,7 @@ func NotificationPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.notificationPolicy.NotificationPolicy",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -760,7 +760,7 @@ func NotificationPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.notificationPolicy.NotificationPolicy",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy",
 		"tfResourceType",
 		&returns,
 	)

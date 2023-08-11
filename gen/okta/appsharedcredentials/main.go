@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.appSharedCredentials.AppSharedCredentials",
+		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials",
 		reflect.TypeOf((*AppSharedCredentials)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrl", GoGetter: "AccessibilityErrorRedirectUrl"},
@@ -152,15 +152,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.appSharedCredentials.AppSharedCredentialsConfig",
+		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsConfig",
 		reflect.TypeOf((*AppSharedCredentialsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.appSharedCredentials.AppSharedCredentialsTimeouts",
+		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsTimeouts",
 		reflect.TypeOf((*AppSharedCredentialsTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.appSharedCredentials.AppSharedCredentialsTimeoutsOutputReference",
+		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsTimeoutsOutputReference",
 		reflect.TypeOf((*AppSharedCredentialsTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -201,11 +201,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.appSharedCredentials.AppSharedCredentialsUsers",
+		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsUsers",
 		reflect.TypeOf((*AppSharedCredentialsUsers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.appSharedCredentials.AppSharedCredentialsUsersList",
+		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsUsersList",
 		reflect.TypeOf((*AppSharedCredentialsUsersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -226,7 +226,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.appSharedCredentials.AppSharedCredentialsUsersOutputReference",
+		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsUsersOutputReference",
 		reflect.TypeOf((*AppSharedCredentialsUsersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

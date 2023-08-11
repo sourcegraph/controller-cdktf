@@ -104,7 +104,7 @@ func NewServiceStatusLoadBalancerList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_ServiceStatusLoadBalancerList{}
 
 	_jsii_.Create(
-		"kubernetes.service.ServiceStatusLoadBalancerList",
+		"@cdktf/provider-kubernetes.service.ServiceStatusLoadBalancerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewServiceStatusLoadBalancerList_Override(s ServiceStatusLoadBalancerList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.service.ServiceStatusLoadBalancerList",
+		"@cdktf/provider-kubernetes.service.ServiceStatusLoadBalancerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

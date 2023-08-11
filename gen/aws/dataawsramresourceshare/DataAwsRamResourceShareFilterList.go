@@ -116,7 +116,7 @@ func NewDataAwsRamResourceShareFilterList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_DataAwsRamResourceShareFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsRamResourceShare.DataAwsRamResourceShareFilterList",
+		"@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShareFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsRamResourceShareFilterList_Override(d DataAwsRamResourceShareFilt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRamResourceShare.DataAwsRamResourceShareFilterList",
+		"@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShareFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -285,7 +285,7 @@ func NewValidatingWebhookConfigurationV1MetadataOutputReference(terraformResourc
 	j := jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -297,7 +297,7 @@ func NewValidatingWebhookConfigurationV1MetadataOutputReference_Override(v Valid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

@@ -448,7 +448,7 @@ func NewGoogleDataplexLakeIamBinding(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleDataplexLakeIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexLakeIamBinding.GoogleDataplexLakeIamBinding",
+		"@cdktf/provider-google-beta.googleDataplexLakeIamBinding.GoogleDataplexLakeIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleDataplexLakeIamBinding_Override(g GoogleDataplexLakeIamBinding, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexLakeIamBinding.GoogleDataplexLakeIamBinding",
+		"@cdktf/provider-google-beta.googleDataplexLakeIamBinding.GoogleDataplexLakeIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleDataplexLakeIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexLakeIamBinding.GoogleDataplexLakeIamBinding",
+		"@cdktf/provider-google-beta.googleDataplexLakeIamBinding.GoogleDataplexLakeIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleDataplexLakeIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexLakeIamBinding.GoogleDataplexLakeIamBinding",
+		"@cdktf/provider-google-beta.googleDataplexLakeIamBinding.GoogleDataplexLakeIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleDataplexLakeIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexLakeIamBinding.GoogleDataplexLakeIamBinding",
+		"@cdktf/provider-google-beta.googleDataplexLakeIamBinding.GoogleDataplexLakeIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleDataplexLakeIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataplexLakeIamBinding.GoogleDataplexLakeIamBinding",
+		"@cdktf/provider-google-beta.googleDataplexLakeIamBinding.GoogleDataplexLakeIamBinding",
 		"tfResourceType",
 		&returns,
 	)

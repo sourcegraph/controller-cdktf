@@ -587,7 +587,7 @@ func NewDmsEndpointKafkaSettingsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DmsEndpointKafkaSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dmsEndpoint.DmsEndpointKafkaSettingsOutputReference",
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointKafkaSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -599,7 +599,7 @@ func NewDmsEndpointKafkaSettingsOutputReference_Override(d DmsEndpointKafkaSetti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dmsEndpoint.DmsEndpointKafkaSettingsOutputReference",
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointKafkaSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -647,7 +647,7 @@ func NewDataGoogleCloudfunctionsFunction(scope constructs.Construct, id *string,
 	j := jsiiProxy_DataGoogleCloudfunctionsFunction{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunction",
+		"@cdktf/provider-google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunction",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -660,7 +660,7 @@ func NewDataGoogleCloudfunctionsFunction_Override(d DataGoogleCloudfunctionsFunc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunction",
+		"@cdktf/provider-google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunction",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -782,7 +782,7 @@ func DataGoogleCloudfunctionsFunction_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunction",
+		"@cdktf/provider-google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunction",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -801,7 +801,7 @@ func DataGoogleCloudfunctionsFunction_IsTerraformDataSource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunction",
+		"@cdktf/provider-google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunction",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -820,7 +820,7 @@ func DataGoogleCloudfunctionsFunction_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunction",
+		"@cdktf/provider-google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunction",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -833,7 +833,7 @@ func DataGoogleCloudfunctionsFunction_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunction",
+		"@cdktf/provider-google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunction",
 		"tfResourceType",
 		&returns,
 	)

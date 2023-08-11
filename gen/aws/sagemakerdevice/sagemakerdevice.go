@@ -364,7 +364,7 @@ func NewSagemakerDevice(scope constructs.Construct, id *string, config *Sagemake
 	j := jsiiProxy_SagemakerDevice{}
 
 	_jsii_.Create(
-		"aws.sagemakerDevice.SagemakerDevice",
+		"@cdktf/provider-aws.sagemakerDevice.SagemakerDevice",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -377,7 +377,7 @@ func NewSagemakerDevice_Override(s SagemakerDevice, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerDevice.SagemakerDevice",
+		"@cdktf/provider-aws.sagemakerDevice.SagemakerDevice",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -499,7 +499,7 @@ func SagemakerDevice_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerDevice.SagemakerDevice",
+		"@cdktf/provider-aws.sagemakerDevice.SagemakerDevice",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func SagemakerDevice_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerDevice.SagemakerDevice",
+		"@cdktf/provider-aws.sagemakerDevice.SagemakerDevice",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func SagemakerDevice_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerDevice.SagemakerDevice",
+		"@cdktf/provider-aws.sagemakerDevice.SagemakerDevice",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func SagemakerDevice_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sagemakerDevice.SagemakerDevice",
+		"@cdktf/provider-aws.sagemakerDevice.SagemakerDevice",
 		"tfResourceType",
 		&returns,
 	)

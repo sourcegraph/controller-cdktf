@@ -330,7 +330,7 @@ func NewInspectorResourceGroup(scope constructs.Construct, id *string, config *I
 	j := jsiiProxy_InspectorResourceGroup{}
 
 	_jsii_.Create(
-		"aws.inspectorResourceGroup.InspectorResourceGroup",
+		"@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -343,7 +343,7 @@ func NewInspectorResourceGroup_Override(i InspectorResourceGroup, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.inspectorResourceGroup.InspectorResourceGroup",
+		"@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -465,7 +465,7 @@ func InspectorResourceGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.inspectorResourceGroup.InspectorResourceGroup",
+		"@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -484,7 +484,7 @@ func InspectorResourceGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.inspectorResourceGroup.InspectorResourceGroup",
+		"@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -503,7 +503,7 @@ func InspectorResourceGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.inspectorResourceGroup.InspectorResourceGroup",
+		"@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func InspectorResourceGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.inspectorResourceGroup.InspectorResourceGroup",
+		"@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup",
 		"tfResourceType",
 		&returns,
 	)

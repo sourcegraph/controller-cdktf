@@ -721,7 +721,7 @@ func NewGrafanaWorkspace(scope constructs.Construct, id *string, config *Grafana
 	j := jsiiProxy_GrafanaWorkspace{}
 
 	_jsii_.Create(
-		"aws.grafanaWorkspace.GrafanaWorkspace",
+		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspace",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -734,7 +734,7 @@ func NewGrafanaWorkspace_Override(g GrafanaWorkspace, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.grafanaWorkspace.GrafanaWorkspace",
+		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspace",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -999,7 +999,7 @@ func GrafanaWorkspace_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.grafanaWorkspace.GrafanaWorkspace",
+		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspace",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1018,7 +1018,7 @@ func GrafanaWorkspace_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.grafanaWorkspace.GrafanaWorkspace",
+		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspace",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1037,7 +1037,7 @@ func GrafanaWorkspace_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.grafanaWorkspace.GrafanaWorkspace",
+		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspace",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1050,7 +1050,7 @@ func GrafanaWorkspace_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.grafanaWorkspace.GrafanaWorkspace",
+		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspace",
 		"tfResourceType",
 		&returns,
 	)

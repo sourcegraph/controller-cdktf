@@ -437,7 +437,7 @@ func NewDataAwsNetworkmanagerDevice(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataAwsNetworkmanagerDevice{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDevice",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDevice",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -450,7 +450,7 @@ func NewDataAwsNetworkmanagerDevice_Override(d DataAwsNetworkmanagerDevice, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDevice",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDevice",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -572,7 +572,7 @@ func DataAwsNetworkmanagerDevice_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDevice",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDevice",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -591,7 +591,7 @@ func DataAwsNetworkmanagerDevice_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDevice",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDevice",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func DataAwsNetworkmanagerDevice_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDevice",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDevice",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -623,7 +623,7 @@ func DataAwsNetworkmanagerDevice_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDevice",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDevice",
 		"tfResourceType",
 		&returns,
 	)

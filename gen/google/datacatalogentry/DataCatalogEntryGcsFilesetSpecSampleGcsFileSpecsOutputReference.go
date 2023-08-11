@@ -178,7 +178,7 @@ func NewDataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsOutputReference(terrafor
 	j := jsiiProxy_DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataCatalogEntry.DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsOutputReference",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogEntry.DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsOutputReference",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

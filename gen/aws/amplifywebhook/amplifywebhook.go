@@ -388,7 +388,7 @@ func NewAmplifyWebhook(scope constructs.Construct, id *string, config *AmplifyWe
 	j := jsiiProxy_AmplifyWebhook{}
 
 	_jsii_.Create(
-		"aws.amplifyWebhook.AmplifyWebhook",
+		"@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -401,7 +401,7 @@ func NewAmplifyWebhook_Override(a AmplifyWebhook, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.amplifyWebhook.AmplifyWebhook",
+		"@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -545,7 +545,7 @@ func AmplifyWebhook_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amplifyWebhook.AmplifyWebhook",
+		"@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func AmplifyWebhook_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amplifyWebhook.AmplifyWebhook",
+		"@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func AmplifyWebhook_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amplifyWebhook.AmplifyWebhook",
+		"@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func AmplifyWebhook_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.amplifyWebhook.AmplifyWebhook",
+		"@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook",
 		"tfResourceType",
 		&returns,
 	)

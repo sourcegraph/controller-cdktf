@@ -581,7 +581,7 @@ func NewGoogleApiGatewayApiConfigA(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleApiGatewayApiConfigA{}
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -594,7 +594,7 @@ func NewGoogleApiGatewayApiConfigA_Override(g GoogleApiGatewayApiConfigA, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -771,7 +771,7 @@ func GoogleApiGatewayApiConfigA_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -790,7 +790,7 @@ func GoogleApiGatewayApiConfigA_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -809,7 +809,7 @@ func GoogleApiGatewayApiConfigA_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -822,7 +822,7 @@ func GoogleApiGatewayApiConfigA_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA",
 		"tfResourceType",
 		&returns,
 	)

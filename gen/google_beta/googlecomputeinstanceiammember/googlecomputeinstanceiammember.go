@@ -448,7 +448,7 @@ func NewGoogleComputeInstanceIamMember(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleComputeInstanceIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMember",
+		"@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleComputeInstanceIamMember_Override(g GoogleComputeInstanceIamMember
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMember",
+		"@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleComputeInstanceIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMember",
+		"@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleComputeInstanceIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMember",
+		"@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleComputeInstanceIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMember",
+		"@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleComputeInstanceIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMember",
+		"@cdktf/provider-google-beta.googleComputeInstanceIamMember.GoogleComputeInstanceIamMember",
 		"tfResourceType",
 		&returns,
 	)

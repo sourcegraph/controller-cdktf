@@ -467,7 +467,7 @@ func NewDataAwsKendraIndex(scope constructs.Construct, id *string, config *DataA
 	j := jsiiProxy_DataAwsKendraIndex{}
 
 	_jsii_.Create(
-		"aws.dataAwsKendraIndex.DataAwsKendraIndex",
+		"@cdktf/provider-aws.dataAwsKendraIndex.DataAwsKendraIndex",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -480,7 +480,7 @@ func NewDataAwsKendraIndex_Override(d DataAwsKendraIndex, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKendraIndex.DataAwsKendraIndex",
+		"@cdktf/provider-aws.dataAwsKendraIndex.DataAwsKendraIndex",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -580,7 +580,7 @@ func DataAwsKendraIndex_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKendraIndex.DataAwsKendraIndex",
+		"@cdktf/provider-aws.dataAwsKendraIndex.DataAwsKendraIndex",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +599,7 @@ func DataAwsKendraIndex_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKendraIndex.DataAwsKendraIndex",
+		"@cdktf/provider-aws.dataAwsKendraIndex.DataAwsKendraIndex",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -618,7 +618,7 @@ func DataAwsKendraIndex_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKendraIndex.DataAwsKendraIndex",
+		"@cdktf/provider-aws.dataAwsKendraIndex.DataAwsKendraIndex",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func DataAwsKendraIndex_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsKendraIndex.DataAwsKendraIndex",
+		"@cdktf/provider-aws.dataAwsKendraIndex.DataAwsKendraIndex",
 		"tfResourceType",
 		&returns,
 	)

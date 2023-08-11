@@ -506,7 +506,7 @@ func NewDataLossPreventionJobTrigger(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataLossPreventionJobTrigger{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTrigger",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTrigger",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -519,7 +519,7 @@ func NewDataLossPreventionJobTrigger_Override(d DataLossPreventionJobTrigger, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTrigger",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTrigger",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -674,7 +674,7 @@ func DataLossPreventionJobTrigger_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTrigger",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTrigger",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -693,7 +693,7 @@ func DataLossPreventionJobTrigger_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTrigger",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTrigger",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +712,7 @@ func DataLossPreventionJobTrigger_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTrigger",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTrigger",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -725,7 +725,7 @@ func DataLossPreventionJobTrigger_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTrigger",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTrigger",
 		"tfResourceType",
 		&returns,
 	)

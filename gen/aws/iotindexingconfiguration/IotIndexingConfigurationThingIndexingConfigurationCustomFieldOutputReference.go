@@ -204,7 +204,7 @@ func NewIotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputRefer
 	j := jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference{}
 
 	_jsii_.Create(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewIotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

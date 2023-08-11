@@ -116,7 +116,7 @@ func NewSchemaPolicyList(terraformResource cdktf.IInterpolatingParent, terraform
 	j := jsiiProxy_SchemaPolicyList{}
 
 	_jsii_.Create(
-		"postgresql.schema.SchemaPolicyList",
+		"@cdktf/provider-postgresql.schema.SchemaPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSchemaPolicyList_Override(s SchemaPolicyList, terraformResource cdktf.II
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"postgresql.schema.SchemaPolicyList",
+		"@cdktf/provider-postgresql.schema.SchemaPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

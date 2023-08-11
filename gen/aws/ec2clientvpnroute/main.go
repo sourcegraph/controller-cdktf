@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2ClientVpnRoute.Ec2ClientVpnRoute",
+		"@cdktf/provider-aws.ec2ClientVpnRoute.Ec2ClientVpnRoute",
 		reflect.TypeOf((*Ec2ClientVpnRoute)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2ClientVpnRoute.Ec2ClientVpnRouteConfig",
+		"@cdktf/provider-aws.ec2ClientVpnRoute.Ec2ClientVpnRouteConfig",
 		reflect.TypeOf((*Ec2ClientVpnRouteConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2ClientVpnRoute.Ec2ClientVpnRouteTimeouts",
+		"@cdktf/provider-aws.ec2ClientVpnRoute.Ec2ClientVpnRouteTimeouts",
 		reflect.TypeOf((*Ec2ClientVpnRouteTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2ClientVpnRoute.Ec2ClientVpnRouteTimeoutsOutputReference",
+		"@cdktf/provider-aws.ec2ClientVpnRoute.Ec2ClientVpnRouteTimeoutsOutputReference",
 		reflect.TypeOf((*Ec2ClientVpnRouteTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ivsChannel.IvsChannel",
+		"@cdktf/provider-aws.ivsChannel.IvsChannel",
 		reflect.TypeOf((*IvsChannel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,15 +83,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ivsChannel.IvsChannelConfig",
+		"@cdktf/provider-aws.ivsChannel.IvsChannelConfig",
 		reflect.TypeOf((*IvsChannelConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ivsChannel.IvsChannelTimeouts",
+		"@cdktf/provider-aws.ivsChannel.IvsChannelTimeouts",
 		reflect.TypeOf((*IvsChannelTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ivsChannel.IvsChannelTimeoutsOutputReference",
+		"@cdktf/provider-aws.ivsChannel.IvsChannelTimeoutsOutputReference",
 		reflect.TypeOf((*IvsChannelTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -203,7 +203,7 @@ func NewAppstreamStackAccessEndpointsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_AppstreamStackAccessEndpointsOutputReference{}
 
 	_jsii_.Create(
-		"aws.appstreamStack.AppstreamStackAccessEndpointsOutputReference",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpointsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAppstreamStackAccessEndpointsOutputReference_Override(a AppstreamStackAc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appstreamStack.AppstreamStackAccessEndpointsOutputReference",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpointsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

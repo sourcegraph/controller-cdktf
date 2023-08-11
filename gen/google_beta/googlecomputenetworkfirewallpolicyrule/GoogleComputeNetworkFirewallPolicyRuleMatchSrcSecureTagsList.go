@@ -116,7 +116,7 @@ func NewGoogleComputeNetworkFirewallPolicyRuleMatchSrcSecureTagsList(terraformRe
 	j := jsiiProxy_GoogleComputeNetworkFirewallPolicyRuleMatchSrcSecureTagsList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeNetworkFirewallPolicyRule.GoogleComputeNetworkFirewallPolicyRuleMatchSrcSecureTagsList",
+		"@cdktf/provider-google-beta.googleComputeNetworkFirewallPolicyRule.GoogleComputeNetworkFirewallPolicyRuleMatchSrcSecureTagsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeNetworkFirewallPolicyRuleMatchSrcSecureTagsList_Override(g 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeNetworkFirewallPolicyRule.GoogleComputeNetworkFirewallPolicyRuleMatchSrcSecureTagsList",
+		"@cdktf/provider-google-beta.googleComputeNetworkFirewallPolicyRule.GoogleComputeNetworkFirewallPolicyRuleMatchSrcSecureTagsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

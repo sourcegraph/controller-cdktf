@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"kubernetes.persistentVolumeClaim.PersistentVolumeClaim",
+		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaim",
 		reflect.TypeOf((*PersistentVolumeClaim)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,15 +68,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.persistentVolumeClaim.PersistentVolumeClaimConfig",
+		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimConfig",
 		reflect.TypeOf((*PersistentVolumeClaimConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.persistentVolumeClaim.PersistentVolumeClaimMetadata",
+		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimMetadata",
 		reflect.TypeOf((*PersistentVolumeClaimMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.persistentVolumeClaim.PersistentVolumeClaimMetadataOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimMetadataOutputReference",
 		reflect.TypeOf((*PersistentVolumeClaimMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -126,11 +126,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.persistentVolumeClaim.PersistentVolumeClaimSpec",
+		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimSpec",
 		reflect.TypeOf((*PersistentVolumeClaimSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.persistentVolumeClaim.PersistentVolumeClaimSpecOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimSpecOutputReference",
 		reflect.TypeOf((*PersistentVolumeClaimSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessModes", GoGetter: "AccessModes"},
@@ -177,11 +177,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.persistentVolumeClaim.PersistentVolumeClaimSpecResources",
+		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimSpecResources",
 		reflect.TypeOf((*PersistentVolumeClaimSpecResources)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.persistentVolumeClaim.PersistentVolumeClaimSpecResourcesOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimSpecResourcesOutputReference",
 		reflect.TypeOf((*PersistentVolumeClaimSpecResourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -219,15 +219,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.persistentVolumeClaim.PersistentVolumeClaimSpecSelector",
+		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimSpecSelector",
 		reflect.TypeOf((*PersistentVolumeClaimSpecSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.persistentVolumeClaim.PersistentVolumeClaimSpecSelectorMatchExpressions",
+		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimSpecSelectorMatchExpressions",
 		reflect.TypeOf((*PersistentVolumeClaimSpecSelectorMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.persistentVolumeClaim.PersistentVolumeClaimSpecSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimSpecSelectorMatchExpressionsList",
 		reflect.TypeOf((*PersistentVolumeClaimSpecSelectorMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -248,7 +248,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.persistentVolumeClaim.PersistentVolumeClaimSpecSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimSpecSelectorMatchExpressionsOutputReference",
 		reflect.TypeOf((*PersistentVolumeClaimSpecSelectorMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -289,7 +289,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.persistentVolumeClaim.PersistentVolumeClaimSpecSelectorOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimSpecSelectorOutputReference",
 		reflect.TypeOf((*PersistentVolumeClaimSpecSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -328,11 +328,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.persistentVolumeClaim.PersistentVolumeClaimTimeouts",
+		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimTimeouts",
 		reflect.TypeOf((*PersistentVolumeClaimTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.persistentVolumeClaim.PersistentVolumeClaimTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimTimeoutsOutputReference",
 		reflect.TypeOf((*PersistentVolumeClaimTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

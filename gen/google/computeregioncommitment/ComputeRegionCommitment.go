@@ -635,7 +635,7 @@ func NewComputeRegionCommitment(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_ComputeRegionCommitment{}
 
 	_jsii_.Create(
-		"google.computeRegionCommitment.ComputeRegionCommitment",
+		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -648,7 +648,7 @@ func NewComputeRegionCommitment_Override(c ComputeRegionCommitment, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionCommitment.ComputeRegionCommitment",
+		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitment",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -847,7 +847,7 @@ func ComputeRegionCommitment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionCommitment.ComputeRegionCommitment",
+		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -866,7 +866,7 @@ func ComputeRegionCommitment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionCommitment.ComputeRegionCommitment",
+		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -885,7 +885,7 @@ func ComputeRegionCommitment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionCommitment.ComputeRegionCommitment",
+		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -898,7 +898,7 @@ func ComputeRegionCommitment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeRegionCommitment.ComputeRegionCommitment",
+		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitment",
 		"tfResourceType",
 		&returns,
 	)

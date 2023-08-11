@@ -251,7 +251,7 @@ func NewIamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionOutpu
 	j := jsiiProxy_IamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionOutputReference",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewIamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionOutputReference",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

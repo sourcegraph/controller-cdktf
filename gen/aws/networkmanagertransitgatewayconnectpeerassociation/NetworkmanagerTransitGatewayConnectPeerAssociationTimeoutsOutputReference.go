@@ -204,7 +204,7 @@ func NewNetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOutputReferenc
 	j := jsiiProxy_NetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.networkmanagerTransitGatewayConnectPeerAssociation.NetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayConnectPeerAssociation.NetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewNetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerTransitGatewayConnectPeerAssociation.NetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayConnectPeerAssociation.NetworkmanagerTransitGatewayConnectPeerAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

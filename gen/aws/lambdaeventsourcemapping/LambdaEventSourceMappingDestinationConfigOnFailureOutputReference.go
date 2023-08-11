@@ -179,7 +179,7 @@ func NewLambdaEventSourceMappingDestinationConfigOnFailureOutputReference(terraf
 	j := jsiiProxy_LambdaEventSourceMappingDestinationConfigOnFailureOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOnFailureOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOnFailureOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewLambdaEventSourceMappingDestinationConfigOnFailureOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOnFailureOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOnFailureOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

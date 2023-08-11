@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dnsManagedZoneIamBinding.DnsManagedZoneIamBinding",
+		"@cdktf/provider-google.dnsManagedZoneIamBinding.DnsManagedZoneIamBinding",
 		reflect.TypeOf((*DnsManagedZoneIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,11 +69,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dnsManagedZoneIamBinding.DnsManagedZoneIamBindingCondition",
+		"@cdktf/provider-google.dnsManagedZoneIamBinding.DnsManagedZoneIamBindingCondition",
 		reflect.TypeOf((*DnsManagedZoneIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dnsManagedZoneIamBinding.DnsManagedZoneIamBindingConditionOutputReference",
+		"@cdktf/provider-google.dnsManagedZoneIamBinding.DnsManagedZoneIamBindingConditionOutputReference",
 		reflect.TypeOf((*DnsManagedZoneIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -112,7 +112,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dnsManagedZoneIamBinding.DnsManagedZoneIamBindingConfig",
+		"@cdktf/provider-google.dnsManagedZoneIamBinding.DnsManagedZoneIamBindingConfig",
 		reflect.TypeOf((*DnsManagedZoneIamBindingConfig)(nil)).Elem(),
 	)
 }

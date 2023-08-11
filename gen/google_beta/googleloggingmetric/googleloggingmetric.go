@@ -558,7 +558,7 @@ func NewGoogleLoggingMetric(scope constructs.Construct, id *string, config *Goog
 	j := jsiiProxy_GoogleLoggingMetric{}
 
 	_jsii_.Create(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetric",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -571,7 +571,7 @@ func NewGoogleLoggingMetric_Override(g GoogleLoggingMetric, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetric",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -770,7 +770,7 @@ func GoogleLoggingMetric_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetric",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -789,7 +789,7 @@ func GoogleLoggingMetric_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetric",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -808,7 +808,7 @@ func GoogleLoggingMetric_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetric",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -821,7 +821,7 @@ func GoogleLoggingMetric_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetric",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric",
 		"tfResourceType",
 		&returns,
 	)

@@ -203,7 +203,7 @@ func NewEcsServiceServiceConnectConfigurationServiceClientAliasOutputReference(t
 	j := jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference",
+		"@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewEcsServiceServiceConnectConfigurationServiceClientAliasOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference",
+		"@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

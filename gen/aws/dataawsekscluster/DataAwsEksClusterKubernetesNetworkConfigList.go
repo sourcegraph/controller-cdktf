@@ -104,7 +104,7 @@ func NewDataAwsEksClusterKubernetesNetworkConfigList(terraformResource cdktf.IIn
 	j := jsiiProxy_DataAwsEksClusterKubernetesNetworkConfigList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEksCluster.DataAwsEksClusterKubernetesNetworkConfigList",
+		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterKubernetesNetworkConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEksClusterKubernetesNetworkConfigList_Override(d DataAwsEksCluste
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEksCluster.DataAwsEksClusterKubernetesNetworkConfigList",
+		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterKubernetesNetworkConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

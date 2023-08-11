@@ -588,7 +588,7 @@ func NewVertexAiEndpoint(scope constructs.Construct, id *string, config *VertexA
 	j := jsiiProxy_VertexAiEndpoint{}
 
 	_jsii_.Create(
-		"google.vertexAiEndpoint.VertexAiEndpoint",
+		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -601,7 +601,7 @@ func NewVertexAiEndpoint_Override(v VertexAiEndpoint, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiEndpoint.VertexAiEndpoint",
+		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpoint",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -800,7 +800,7 @@ func VertexAiEndpoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.vertexAiEndpoint.VertexAiEndpoint",
+		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -819,7 +819,7 @@ func VertexAiEndpoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.vertexAiEndpoint.VertexAiEndpoint",
+		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -838,7 +838,7 @@ func VertexAiEndpoint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.vertexAiEndpoint.VertexAiEndpoint",
+		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpoint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -851,7 +851,7 @@ func VertexAiEndpoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.vertexAiEndpoint.VertexAiEndpoint",
+		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpoint",
 		"tfResourceType",
 		&returns,
 	)

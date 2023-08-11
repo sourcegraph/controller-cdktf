@@ -178,7 +178,7 @@ func NewEvidentlyLaunchExecutionOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_EvidentlyLaunchExecutionOutputReference{}
 
 	_jsii_.Create(
-		"aws.evidentlyLaunch.EvidentlyLaunchExecutionOutputReference",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchExecutionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewEvidentlyLaunchExecutionOutputReference_Override(e EvidentlyLaunchExecut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.evidentlyLaunch.EvidentlyLaunchExecutionOutputReference",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchExecutionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

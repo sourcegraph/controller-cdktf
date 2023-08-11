@@ -228,7 +228,7 @@ func NewMonitoringSloTimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_MonitoringSloTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.monitoringSlo.MonitoringSloTimeoutsOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewMonitoringSloTimeoutsOutputReference_Override(m MonitoringSloTimeoutsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringSlo.MonitoringSloTimeoutsOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

@@ -116,7 +116,7 @@ func NewSsmPatchBaselineSourceList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_SsmPatchBaselineSourceList{}
 
 	_jsii_.Create(
-		"aws.ssmPatchBaseline.SsmPatchBaselineSourceList",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineSourceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSsmPatchBaselineSourceList_Override(s SsmPatchBaselineSourceList, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmPatchBaseline.SsmPatchBaselineSourceList",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineSourceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

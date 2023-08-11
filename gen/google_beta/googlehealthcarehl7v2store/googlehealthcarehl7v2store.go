@@ -473,7 +473,7 @@ func NewGoogleHealthcareHl7V2Store(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleHealthcareHl7V2Store{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareHl7V2Store.GoogleHealthcareHl7V2Store",
+		"@cdktf/provider-google-beta.googleHealthcareHl7V2Store.GoogleHealthcareHl7V2Store",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -486,7 +486,7 @@ func NewGoogleHealthcareHl7V2Store_Override(g GoogleHealthcareHl7V2Store, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareHl7V2Store.GoogleHealthcareHl7V2Store",
+		"@cdktf/provider-google-beta.googleHealthcareHl7V2Store.GoogleHealthcareHl7V2Store",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -630,7 +630,7 @@ func GoogleHealthcareHl7V2Store_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareHl7V2Store.GoogleHealthcareHl7V2Store",
+		"@cdktf/provider-google-beta.googleHealthcareHl7V2Store.GoogleHealthcareHl7V2Store",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -649,7 +649,7 @@ func GoogleHealthcareHl7V2Store_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareHl7V2Store.GoogleHealthcareHl7V2Store",
+		"@cdktf/provider-google-beta.googleHealthcareHl7V2Store.GoogleHealthcareHl7V2Store",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func GoogleHealthcareHl7V2Store_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareHl7V2Store.GoogleHealthcareHl7V2Store",
+		"@cdktf/provider-google-beta.googleHealthcareHl7V2Store.GoogleHealthcareHl7V2Store",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -681,7 +681,7 @@ func GoogleHealthcareHl7V2Store_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleHealthcareHl7V2Store.GoogleHealthcareHl7V2Store",
+		"@cdktf/provider-google-beta.googleHealthcareHl7V2Store.GoogleHealthcareHl7V2Store",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewEksFargateProfileSelectorList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_EksFargateProfileSelectorList{}
 
 	_jsii_.Create(
-		"aws.eksFargateProfile.EksFargateProfileSelectorList",
+		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfileSelectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEksFargateProfileSelectorList_Override(e EksFargateProfileSelectorList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksFargateProfile.EksFargateProfileSelectorList",
+		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfileSelectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

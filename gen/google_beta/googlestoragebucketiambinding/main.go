@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBinding",
+		"@cdktf/provider-google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBinding",
 		reflect.TypeOf((*GoogleStorageBucketIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,11 +66,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBindingCondition",
+		"@cdktf/provider-google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBindingCondition",
 		reflect.TypeOf((*GoogleStorageBucketIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBindingConditionOutputReference",
 		reflect.TypeOf((*GoogleStorageBucketIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBindingConfig",
+		"@cdktf/provider-google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBindingConfig",
 		reflect.TypeOf((*GoogleStorageBucketIamBindingConfig)(nil)).Elem(),
 	)
 }

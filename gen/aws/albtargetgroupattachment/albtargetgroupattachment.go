@@ -390,7 +390,7 @@ func NewAlbTargetGroupAttachment(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_AlbTargetGroupAttachment{}
 
 	_jsii_.Create(
-		"aws.albTargetGroupAttachment.AlbTargetGroupAttachment",
+		"@cdktf/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewAlbTargetGroupAttachment_Override(a AlbTargetGroupAttachment, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albTargetGroupAttachment.AlbTargetGroupAttachment",
+		"@cdktf/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -558,7 +558,7 @@ func AlbTargetGroupAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.albTargetGroupAttachment.AlbTargetGroupAttachment",
+		"@cdktf/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func AlbTargetGroupAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.albTargetGroupAttachment.AlbTargetGroupAttachment",
+		"@cdktf/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func AlbTargetGroupAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.albTargetGroupAttachment.AlbTargetGroupAttachment",
+		"@cdktf/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func AlbTargetGroupAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.albTargetGroupAttachment.AlbTargetGroupAttachment",
+		"@cdktf/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment",
 		"tfResourceType",
 		&returns,
 	)

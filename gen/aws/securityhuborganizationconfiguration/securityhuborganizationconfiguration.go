@@ -319,7 +319,7 @@ func NewSecurityhubOrganizationConfiguration(scope constructs.Construct, id *str
 	j := jsiiProxy_SecurityhubOrganizationConfiguration{}
 
 	_jsii_.Create(
-		"aws.securityhubOrganizationConfiguration.SecurityhubOrganizationConfiguration",
+		"@cdktf/provider-aws.securityhubOrganizationConfiguration.SecurityhubOrganizationConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -332,7 +332,7 @@ func NewSecurityhubOrganizationConfiguration_Override(s SecurityhubOrganizationC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubOrganizationConfiguration.SecurityhubOrganizationConfiguration",
+		"@cdktf/provider-aws.securityhubOrganizationConfiguration.SecurityhubOrganizationConfiguration",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -454,7 +454,7 @@ func SecurityhubOrganizationConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubOrganizationConfiguration.SecurityhubOrganizationConfiguration",
+		"@cdktf/provider-aws.securityhubOrganizationConfiguration.SecurityhubOrganizationConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -473,7 +473,7 @@ func SecurityhubOrganizationConfiguration_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubOrganizationConfiguration.SecurityhubOrganizationConfiguration",
+		"@cdktf/provider-aws.securityhubOrganizationConfiguration.SecurityhubOrganizationConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -492,7 +492,7 @@ func SecurityhubOrganizationConfiguration_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubOrganizationConfiguration.SecurityhubOrganizationConfiguration",
+		"@cdktf/provider-aws.securityhubOrganizationConfiguration.SecurityhubOrganizationConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func SecurityhubOrganizationConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.securityhubOrganizationConfiguration.SecurityhubOrganizationConfiguration",
+		"@cdktf/provider-aws.securityhubOrganizationConfiguration.SecurityhubOrganizationConfiguration",
 		"tfResourceType",
 		&returns,
 	)

@@ -448,7 +448,7 @@ func NewMskServerlessCluster(scope constructs.Construct, id *string, config *Msk
 	j := jsiiProxy_MskServerlessCluster{}
 
 	_jsii_.Create(
-		"aws.mskServerlessCluster.MskServerlessCluster",
+		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewMskServerlessCluster_Override(m MskServerlessCluster, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskServerlessCluster.MskServerlessCluster",
+		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -605,7 +605,7 @@ func MskServerlessCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mskServerlessCluster.MskServerlessCluster",
+		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -624,7 +624,7 @@ func MskServerlessCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mskServerlessCluster.MskServerlessCluster",
+		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func MskServerlessCluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mskServerlessCluster.MskServerlessCluster",
+		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -656,7 +656,7 @@ func MskServerlessCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.mskServerlessCluster.MskServerlessCluster",
+		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster",
 		"tfResourceType",
 		&returns,
 	)

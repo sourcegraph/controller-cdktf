@@ -226,7 +226,7 @@ func NewArtifactRegistryRepositoryIamMemberConditionOutputReference(terraformRes
 	j := jsiiProxy_ArtifactRegistryRepositoryIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.artifactRegistryRepositoryIamMember.ArtifactRegistryRepositoryIamMemberConditionOutputReference",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamMember.ArtifactRegistryRepositoryIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewArtifactRegistryRepositoryIamMemberConditionOutputReference_Override(a A
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.artifactRegistryRepositoryIamMember.ArtifactRegistryRepositoryIamMemberConditionOutputReference",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamMember.ArtifactRegistryRepositoryIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

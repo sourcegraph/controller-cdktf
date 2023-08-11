@@ -202,7 +202,7 @@ func NewLexBotIntentOutputReference(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_LexBotIntentOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexBot.LexBotIntentOutputReference",
+		"@cdktf/provider-aws.lexBot.LexBotIntentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewLexBotIntentOutputReference_Override(l LexBotIntentOutputReference, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexBot.LexBotIntentOutputReference",
+		"@cdktf/provider-aws.lexBot.LexBotIntentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

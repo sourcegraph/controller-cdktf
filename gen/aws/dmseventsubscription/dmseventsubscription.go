@@ -520,7 +520,7 @@ func NewDmsEventSubscription(scope constructs.Construct, id *string, config *Dms
 	j := jsiiProxy_DmsEventSubscription{}
 
 	_jsii_.Create(
-		"aws.dmsEventSubscription.DmsEventSubscription",
+		"@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -533,7 +533,7 @@ func NewDmsEventSubscription_Override(d DmsEventSubscription, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dmsEventSubscription.DmsEventSubscription",
+		"@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -732,7 +732,7 @@ func DmsEventSubscription_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dmsEventSubscription.DmsEventSubscription",
+		"@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -751,7 +751,7 @@ func DmsEventSubscription_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dmsEventSubscription.DmsEventSubscription",
+		"@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -770,7 +770,7 @@ func DmsEventSubscription_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dmsEventSubscription.DmsEventSubscription",
+		"@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -783,7 +783,7 @@ func DmsEventSubscription_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dmsEventSubscription.DmsEventSubscription",
+		"@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription",
 		"tfResourceType",
 		&returns,
 	)

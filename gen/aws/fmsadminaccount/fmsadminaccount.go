@@ -320,7 +320,7 @@ func NewFmsAdminAccount(scope constructs.Construct, id *string, config *FmsAdmin
 	j := jsiiProxy_FmsAdminAccount{}
 
 	_jsii_.Create(
-		"aws.fmsAdminAccount.FmsAdminAccount",
+		"@cdktf/provider-aws.fmsAdminAccount.FmsAdminAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -333,7 +333,7 @@ func NewFmsAdminAccount_Override(f FmsAdminAccount, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fmsAdminAccount.FmsAdminAccount",
+		"@cdktf/provider-aws.fmsAdminAccount.FmsAdminAccount",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -455,7 +455,7 @@ func FmsAdminAccount_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fmsAdminAccount.FmsAdminAccount",
+		"@cdktf/provider-aws.fmsAdminAccount.FmsAdminAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -474,7 +474,7 @@ func FmsAdminAccount_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fmsAdminAccount.FmsAdminAccount",
+		"@cdktf/provider-aws.fmsAdminAccount.FmsAdminAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -493,7 +493,7 @@ func FmsAdminAccount_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fmsAdminAccount.FmsAdminAccount",
+		"@cdktf/provider-aws.fmsAdminAccount.FmsAdminAccount",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -506,7 +506,7 @@ func FmsAdminAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.fmsAdminAccount.FmsAdminAccount",
+		"@cdktf/provider-aws.fmsAdminAccount.FmsAdminAccount",
 		"tfResourceType",
 		&returns,
 	)

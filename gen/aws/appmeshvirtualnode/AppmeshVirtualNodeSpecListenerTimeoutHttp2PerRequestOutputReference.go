@@ -202,7 +202,7 @@ func NewAppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference(terr
 	j := jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewAppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

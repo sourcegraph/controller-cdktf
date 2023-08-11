@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dmsReplicationInstance.DmsReplicationInstance",
+		"@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstance",
 		reflect.TypeOf((*DmsReplicationInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -108,15 +108,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dmsReplicationInstance.DmsReplicationInstanceConfig",
+		"@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstanceConfig",
 		reflect.TypeOf((*DmsReplicationInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dmsReplicationInstance.DmsReplicationInstanceTimeouts",
+		"@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstanceTimeouts",
 		reflect.TypeOf((*DmsReplicationInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dmsReplicationInstance.DmsReplicationInstanceTimeoutsOutputReference",
+		"@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*DmsReplicationInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

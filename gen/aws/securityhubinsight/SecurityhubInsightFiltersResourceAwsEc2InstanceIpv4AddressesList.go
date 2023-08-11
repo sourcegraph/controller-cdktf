@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList(terrafo
 	j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

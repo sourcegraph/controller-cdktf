@@ -445,7 +445,7 @@ func NewTeamsLocation(scope constructs.Construct, id *string, config *TeamsLocat
 	j := jsiiProxy_TeamsLocation{}
 
 	_jsii_.Create(
-		"cloudflare.teamsLocation.TeamsLocation",
+		"@cdktf/provider-cloudflare.teamsLocation.TeamsLocation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -458,7 +458,7 @@ func NewTeamsLocation_Override(t TeamsLocation, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.teamsLocation.TeamsLocation",
+		"@cdktf/provider-cloudflare.teamsLocation.TeamsLocation",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -602,7 +602,7 @@ func TeamsLocation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.teamsLocation.TeamsLocation",
+		"@cdktf/provider-cloudflare.teamsLocation.TeamsLocation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func TeamsLocation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.teamsLocation.TeamsLocation",
+		"@cdktf/provider-cloudflare.teamsLocation.TeamsLocation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -640,7 +640,7 @@ func TeamsLocation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.teamsLocation.TeamsLocation",
+		"@cdktf/provider-cloudflare.teamsLocation.TeamsLocation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func TeamsLocation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.teamsLocation.TeamsLocation",
+		"@cdktf/provider-cloudflare.teamsLocation.TeamsLocation",
 		"tfResourceType",
 		&returns,
 	)

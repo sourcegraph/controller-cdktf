@@ -327,7 +327,7 @@ func NewDataAwsEc2ManagedPrefixLists(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataAwsEc2ManagedPrefixLists{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixLists",
+		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixLists",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -340,7 +340,7 @@ func NewDataAwsEc2ManagedPrefixLists_Override(d DataAwsEc2ManagedPrefixLists, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixLists",
+		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixLists",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -440,7 +440,7 @@ func DataAwsEc2ManagedPrefixLists_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixLists",
+		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixLists",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -459,7 +459,7 @@ func DataAwsEc2ManagedPrefixLists_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixLists",
+		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixLists",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -478,7 +478,7 @@ func DataAwsEc2ManagedPrefixLists_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixLists",
+		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixLists",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -491,7 +491,7 @@ func DataAwsEc2ManagedPrefixLists_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixLists",
+		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixLists",
 		"tfResourceType",
 		&returns,
 	)

@@ -202,7 +202,7 @@ func NewGoogleDatastoreIndexPropertiesOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_GoogleDatastoreIndexPropertiesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDatastoreIndex.GoogleDatastoreIndexPropertiesOutputReference",
+		"@cdktf/provider-google-beta.googleDatastoreIndex.GoogleDatastoreIndexPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleDatastoreIndexPropertiesOutputReference_Override(g GoogleDatastore
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatastoreIndex.GoogleDatastoreIndexPropertiesOutputReference",
+		"@cdktf/provider-google-beta.googleDatastoreIndex.GoogleDatastoreIndexPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

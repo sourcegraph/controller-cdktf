@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.teamsRule.TeamsRule",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRule",
 		reflect.TypeOf((*TeamsRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -85,19 +85,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.teamsRule.TeamsRuleConfig",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleConfig",
 		reflect.TypeOf((*TeamsRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.teamsRule.TeamsRuleRuleSettings",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettings",
 		reflect.TypeOf((*TeamsRuleRuleSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsAuditSsh",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsAuditSsh",
 		reflect.TypeOf((*TeamsRuleRuleSettingsAuditSsh)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsAuditSshOutputReference",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsAuditSshOutputReference",
 		reflect.TypeOf((*TeamsRuleRuleSettingsAuditSshOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "commandLogging", GoGetter: "CommandLogging"},
@@ -131,11 +131,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls",
 		reflect.TypeOf((*TeamsRuleRuleSettingsBisoAdminControls)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference",
 		reflect.TypeOf((*TeamsRuleRuleSettingsBisoAdminControlsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -182,11 +182,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsCheckSession",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsCheckSession",
 		reflect.TypeOf((*TeamsRuleRuleSettingsCheckSession)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsCheckSessionOutputReference",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsCheckSessionOutputReference",
 		reflect.TypeOf((*TeamsRuleRuleSettingsCheckSessionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -222,11 +222,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsEgress",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsEgress",
 		reflect.TypeOf((*TeamsRuleRuleSettingsEgress)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsEgressOutputReference",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsEgressOutputReference",
 		reflect.TypeOf((*TeamsRuleRuleSettingsEgressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -265,11 +265,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsL4Override",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsL4Override",
 		reflect.TypeOf((*TeamsRuleRuleSettingsL4Override)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsL4OverrideOutputReference",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsL4OverrideOutputReference",
 		reflect.TypeOf((*TeamsRuleRuleSettingsL4OverrideOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -305,7 +305,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsOutputReference",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsOutputReference",
 		reflect.TypeOf((*TeamsRuleRuleSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addHeaders", GoGetter: "AddHeaders"},
@@ -392,11 +392,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsPayloadLog",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsPayloadLog",
 		reflect.TypeOf((*TeamsRuleRuleSettingsPayloadLog)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsPayloadLogOutputReference",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsPayloadLogOutputReference",
 		reflect.TypeOf((*TeamsRuleRuleSettingsPayloadLogOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -430,11 +430,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsUntrustedCert",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsUntrustedCert",
 		reflect.TypeOf((*TeamsRuleRuleSettingsUntrustedCert)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsUntrustedCertOutputReference",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsUntrustedCertOutputReference",
 		reflect.TypeOf((*TeamsRuleRuleSettingsUntrustedCertOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},

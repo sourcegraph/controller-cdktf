@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel",
+		"@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel",
 		reflect.TypeOf((*GoogleFirebaseHostingChannel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,15 +76,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelConfig",
+		"@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelConfig",
 		reflect.TypeOf((*GoogleFirebaseHostingChannelConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelTimeouts",
+		"@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelTimeouts",
 		reflect.TypeOf((*GoogleFirebaseHostingChannelTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleFirebaseHostingChannelTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

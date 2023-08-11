@@ -544,7 +544,7 @@ func NewConfigRemediationConfiguration(scope constructs.Construct, id *string, c
 	j := jsiiProxy_ConfigRemediationConfiguration{}
 
 	_jsii_.Create(
-		"aws.configRemediationConfiguration.ConfigRemediationConfiguration",
+		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -557,7 +557,7 @@ func NewConfigRemediationConfiguration_Override(c ConfigRemediationConfiguration
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configRemediationConfiguration.ConfigRemediationConfiguration",
+		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfiguration",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -756,7 +756,7 @@ func ConfigRemediationConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configRemediationConfiguration.ConfigRemediationConfiguration",
+		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -775,7 +775,7 @@ func ConfigRemediationConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configRemediationConfiguration.ConfigRemediationConfiguration",
+		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -794,7 +794,7 @@ func ConfigRemediationConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configRemediationConfiguration.ConfigRemediationConfiguration",
+		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -807,7 +807,7 @@ func ConfigRemediationConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.configRemediationConfiguration.ConfigRemediationConfiguration",
+		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfiguration",
 		"tfResourceType",
 		&returns,
 	)

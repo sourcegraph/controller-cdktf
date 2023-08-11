@@ -342,7 +342,7 @@ func NewIamRolePolicyAttachment(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_IamRolePolicyAttachment{}
 
 	_jsii_.Create(
-		"aws.iamRolePolicyAttachment.IamRolePolicyAttachment",
+		"@cdktf/provider-aws.iamRolePolicyAttachment.IamRolePolicyAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewIamRolePolicyAttachment_Override(i IamRolePolicyAttachment, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iamRolePolicyAttachment.IamRolePolicyAttachment",
+		"@cdktf/provider-aws.iamRolePolicyAttachment.IamRolePolicyAttachment",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -488,7 +488,7 @@ func IamRolePolicyAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamRolePolicyAttachment.IamRolePolicyAttachment",
+		"@cdktf/provider-aws.iamRolePolicyAttachment.IamRolePolicyAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func IamRolePolicyAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamRolePolicyAttachment.IamRolePolicyAttachment",
+		"@cdktf/provider-aws.iamRolePolicyAttachment.IamRolePolicyAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func IamRolePolicyAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamRolePolicyAttachment.IamRolePolicyAttachment",
+		"@cdktf/provider-aws.iamRolePolicyAttachment.IamRolePolicyAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func IamRolePolicyAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iamRolePolicyAttachment.IamRolePolicyAttachment",
+		"@cdktf/provider-aws.iamRolePolicyAttachment.IamRolePolicyAttachment",
 		"tfResourceType",
 		&returns,
 	)

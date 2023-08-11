@@ -274,7 +274,7 @@ func NewPodSpecInitContainerVolumeMountOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_PodSpecInitContainerVolumeMountOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecInitContainerVolumeMountOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecInitContainerVolumeMountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -286,7 +286,7 @@ func NewPodSpecInitContainerVolumeMountOutputReference_Override(p PodSpecInitCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecInitContainerVolumeMountOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecInitContainerVolumeMountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

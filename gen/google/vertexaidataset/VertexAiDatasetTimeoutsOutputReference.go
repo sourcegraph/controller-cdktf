@@ -228,7 +228,7 @@ func NewVertexAiDatasetTimeoutsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_VertexAiDatasetTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.vertexAiDataset.VertexAiDatasetTimeoutsOutputReference",
+		"@cdktf/provider-google.vertexAiDataset.VertexAiDatasetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewVertexAiDatasetTimeoutsOutputReference_Override(v VertexAiDatasetTimeout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiDataset.VertexAiDatasetTimeoutsOutputReference",
+		"@cdktf/provider-google.vertexAiDataset.VertexAiDatasetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

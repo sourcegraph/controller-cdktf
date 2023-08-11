@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.networkInterface.NetworkInterface",
+		"@cdktf/provider-aws.networkInterface.NetworkInterface",
 		reflect.TypeOf((*NetworkInterface)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -123,11 +123,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkInterface.NetworkInterfaceAttachment",
+		"@cdktf/provider-aws.networkInterface.NetworkInterfaceAttachment",
 		reflect.TypeOf((*NetworkInterfaceAttachment)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.networkInterface.NetworkInterfaceAttachmentList",
+		"@cdktf/provider-aws.networkInterface.NetworkInterfaceAttachmentList",
 		reflect.TypeOf((*NetworkInterfaceAttachmentList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -148,7 +148,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.networkInterface.NetworkInterfaceAttachmentOutputReference",
+		"@cdktf/provider-aws.networkInterface.NetworkInterfaceAttachmentOutputReference",
 		reflect.TypeOf((*NetworkInterfaceAttachmentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attachmentId", GoGetter: "AttachmentId"},
@@ -185,7 +185,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkInterface.NetworkInterfaceConfig",
+		"@cdktf/provider-aws.networkInterface.NetworkInterfaceConfig",
 		reflect.TypeOf((*NetworkInterfaceConfig)(nil)).Elem(),
 	)
 }

@@ -458,7 +458,7 @@ func NewOrganizationAccessApprovalSettings(scope constructs.Construct, id *strin
 	j := jsiiProxy_OrganizationAccessApprovalSettings{}
 
 	_jsii_.Create(
-		"google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings",
+		"@cdktf/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -471,7 +471,7 @@ func NewOrganizationAccessApprovalSettings_Override(o OrganizationAccessApproval
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings",
+		"@cdktf/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -615,7 +615,7 @@ func OrganizationAccessApprovalSettings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings",
+		"@cdktf/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func OrganizationAccessApprovalSettings_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings",
+		"@cdktf/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func OrganizationAccessApprovalSettings_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings",
+		"@cdktf/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func OrganizationAccessApprovalSettings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings",
+		"@cdktf/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings",
 		"tfResourceType",
 		&returns,
 	)

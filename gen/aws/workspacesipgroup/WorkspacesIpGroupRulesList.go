@@ -116,7 +116,7 @@ func NewWorkspacesIpGroupRulesList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_WorkspacesIpGroupRulesList{}
 
 	_jsii_.Create(
-		"aws.workspacesIpGroup.WorkspacesIpGroupRulesList",
+		"@cdktf/provider-aws.workspacesIpGroup.WorkspacesIpGroupRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWorkspacesIpGroupRulesList_Override(w WorkspacesIpGroupRulesList, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.workspacesIpGroup.WorkspacesIpGroupRulesList",
+		"@cdktf/provider-aws.workspacesIpGroup.WorkspacesIpGroupRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

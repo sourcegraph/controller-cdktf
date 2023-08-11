@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsWafregionalIpset.DataAwsWafregionalIpset",
+		"@cdktf/provider-aws.dataAwsWafregionalIpset.DataAwsWafregionalIpset",
 		reflect.TypeOf((*DataAwsWafregionalIpset)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -55,7 +55,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsWafregionalIpset.DataAwsWafregionalIpsetConfig",
+		"@cdktf/provider-aws.dataAwsWafregionalIpset.DataAwsWafregionalIpsetConfig",
 		reflect.TypeOf((*DataAwsWafregionalIpsetConfig)(nil)).Elem(),
 	)
 }

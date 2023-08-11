@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.codecommitTrigger.CodecommitTrigger",
+		"@cdktf/provider-aws.codecommitTrigger.CodecommitTrigger",
 		reflect.TypeOf((*CodecommitTrigger)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,15 +61,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codecommitTrigger.CodecommitTriggerConfig",
+		"@cdktf/provider-aws.codecommitTrigger.CodecommitTriggerConfig",
 		reflect.TypeOf((*CodecommitTriggerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.codecommitTrigger.CodecommitTriggerTrigger",
+		"@cdktf/provider-aws.codecommitTrigger.CodecommitTriggerTrigger",
 		reflect.TypeOf((*CodecommitTriggerTrigger)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codecommitTrigger.CodecommitTriggerTriggerList",
+		"@cdktf/provider-aws.codecommitTrigger.CodecommitTriggerTriggerList",
 		reflect.TypeOf((*CodecommitTriggerTriggerList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -90,7 +90,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codecommitTrigger.CodecommitTriggerTriggerOutputReference",
+		"@cdktf/provider-aws.codecommitTrigger.CodecommitTriggerTriggerOutputReference",
 		reflect.TypeOf((*CodecommitTriggerTriggerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branches", GoGetter: "Branches"},

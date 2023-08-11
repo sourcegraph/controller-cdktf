@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeProjectMetadataItem.ComputeProjectMetadataItem",
+		"@cdktf/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem",
 		reflect.TypeOf((*ComputeProjectMetadataItem)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,15 +66,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeProjectMetadataItem.ComputeProjectMetadataItemConfig",
+		"@cdktf/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemConfig",
 		reflect.TypeOf((*ComputeProjectMetadataItemConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeouts",
+		"@cdktf/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeouts",
 		reflect.TypeOf((*ComputeProjectMetadataItemTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeoutsOutputReference",
+		"@cdktf/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeProjectMetadataItemTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

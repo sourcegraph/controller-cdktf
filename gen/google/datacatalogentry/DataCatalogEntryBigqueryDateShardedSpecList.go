@@ -104,7 +104,7 @@ func NewDataCatalogEntryBigqueryDateShardedSpecList(terraformResource cdktf.IInt
 	j := jsiiProxy_DataCatalogEntryBigqueryDateShardedSpecList{}
 
 	_jsii_.Create(
-		"google.dataCatalogEntry.DataCatalogEntryBigqueryDateShardedSpecList",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryDateShardedSpecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataCatalogEntryBigqueryDateShardedSpecList_Override(d DataCatalogEntryB
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogEntry.DataCatalogEntryBigqueryDateShardedSpecList",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryDateShardedSpecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

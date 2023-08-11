@@ -436,7 +436,7 @@ func NewCognitoIdentityProvider(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_CognitoIdentityProvider{}
 
 	_jsii_.Create(
-		"aws.cognitoIdentityProvider.CognitoIdentityProvider",
+		"@cdktf/provider-aws.cognitoIdentityProvider.CognitoIdentityProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -449,7 +449,7 @@ func NewCognitoIdentityProvider_Override(c CognitoIdentityProvider, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoIdentityProvider.CognitoIdentityProvider",
+		"@cdktf/provider-aws.cognitoIdentityProvider.CognitoIdentityProvider",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -626,7 +626,7 @@ func CognitoIdentityProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoIdentityProvider.CognitoIdentityProvider",
+		"@cdktf/provider-aws.cognitoIdentityProvider.CognitoIdentityProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func CognitoIdentityProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoIdentityProvider.CognitoIdentityProvider",
+		"@cdktf/provider-aws.cognitoIdentityProvider.CognitoIdentityProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -664,7 +664,7 @@ func CognitoIdentityProvider_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoIdentityProvider.CognitoIdentityProvider",
+		"@cdktf/provider-aws.cognitoIdentityProvider.CognitoIdentityProvider",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func CognitoIdentityProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cognitoIdentityProvider.CognitoIdentityProvider",
+		"@cdktf/provider-aws.cognitoIdentityProvider.CognitoIdentityProvider",
 		"tfResourceType",
 		&returns,
 	)

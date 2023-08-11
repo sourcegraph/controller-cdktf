@@ -228,7 +228,7 @@ func NewBigqueryDataTransferConfigTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_BigqueryDataTransferConfigTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewBigqueryDataTransferConfigTimeoutsOutputReference_Override(b BigqueryDat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

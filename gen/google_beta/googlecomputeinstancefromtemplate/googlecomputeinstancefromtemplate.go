@@ -1115,7 +1115,7 @@ func NewGoogleComputeInstanceFromTemplate(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleComputeInstanceFromTemplate{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplate",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1128,7 +1128,7 @@ func NewGoogleComputeInstanceFromTemplate_Override(g GoogleComputeInstanceFromTe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplate",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplate",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1437,7 +1437,7 @@ func GoogleComputeInstanceFromTemplate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplate",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1456,7 +1456,7 @@ func GoogleComputeInstanceFromTemplate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplate",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1475,7 +1475,7 @@ func GoogleComputeInstanceFromTemplate_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplate",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1488,7 +1488,7 @@ func GoogleComputeInstanceFromTemplate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplate",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplate",
 		"tfResourceType",
 		&returns,
 	)

@@ -342,7 +342,7 @@ func NewApiService(scope constructs.Construct, id *string, config *ApiServiceCon
 	j := jsiiProxy_ApiService{}
 
 	_jsii_.Create(
-		"kubernetes.apiService.ApiService",
+		"@cdktf/provider-kubernetes.apiService.ApiService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewApiService_Override(a ApiService, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.apiService.ApiService",
+		"@cdktf/provider-kubernetes.apiService.ApiService",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -466,7 +466,7 @@ func ApiService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.apiService.ApiService",
+		"@cdktf/provider-kubernetes.apiService.ApiService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -485,7 +485,7 @@ func ApiService_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.apiService.ApiService",
+		"@cdktf/provider-kubernetes.apiService.ApiService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -504,7 +504,7 @@ func ApiService_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.apiService.ApiService",
+		"@cdktf/provider-kubernetes.apiService.ApiService",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -517,7 +517,7 @@ func ApiService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.apiService.ApiService",
+		"@cdktf/provider-kubernetes.apiService.ApiService",
 		"tfResourceType",
 		&returns,
 	)

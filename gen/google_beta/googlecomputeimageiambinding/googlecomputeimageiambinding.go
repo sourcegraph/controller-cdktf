@@ -424,7 +424,7 @@ func NewGoogleComputeImageIamBinding(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleComputeImageIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBinding",
+		"@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleComputeImageIamBinding_Override(g GoogleComputeImageIamBinding, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBinding",
+		"@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleComputeImageIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBinding",
+		"@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleComputeImageIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBinding",
+		"@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleComputeImageIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBinding",
+		"@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleComputeImageIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBinding",
+		"@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBinding",
 		"tfResourceType",
 		&returns,
 	)

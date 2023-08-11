@@ -311,7 +311,7 @@ func NewCloudfunctions2FunctionBuildConfigOutputReference(terraformResource cdkt
 	j := jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudfunctions2Function.Cloudfunctions2FunctionBuildConfigOutputReference",
+		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionBuildConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -323,7 +323,7 @@ func NewCloudfunctions2FunctionBuildConfigOutputReference_Override(c Cloudfuncti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudfunctions2Function.Cloudfunctions2FunctionBuildConfigOutputReference",
+		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionBuildConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

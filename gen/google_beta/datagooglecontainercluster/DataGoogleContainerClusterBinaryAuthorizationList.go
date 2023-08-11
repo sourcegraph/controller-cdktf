@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterBinaryAuthorizationList(terraformResource cdkt
 	j := jsiiProxy_DataGoogleContainerClusterBinaryAuthorizationList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterBinaryAuthorizationList_Override(d DataGoogleC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -203,7 +203,7 @@ func NewHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputRef
 	j := jsiiProxy_HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		h,
 	)

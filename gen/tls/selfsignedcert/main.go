@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tls.selfSignedCert.SelfSignedCert",
+		"@cdktf/provider-tls.selfSignedCert.SelfSignedCert",
 		reflect.TypeOf((*SelfSignedCert)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,15 +89,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tls.selfSignedCert.SelfSignedCertConfig",
+		"@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig",
 		reflect.TypeOf((*SelfSignedCertConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"tls.selfSignedCert.SelfSignedCertSubject",
+		"@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject",
 		reflect.TypeOf((*SelfSignedCertSubject)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"tls.selfSignedCert.SelfSignedCertSubjectOutputReference",
+		"@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference",
 		reflect.TypeOf((*SelfSignedCertSubjectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "commonName", GoGetter: "CommonName"},

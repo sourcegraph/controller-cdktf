@@ -116,7 +116,7 @@ func NewAlbTargetGroupTargetFailoverList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_AlbTargetGroupTargetFailoverList{}
 
 	_jsii_.Create(
-		"aws.albTargetGroup.AlbTargetGroupTargetFailoverList",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupTargetFailoverList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAlbTargetGroupTargetFailoverList_Override(a AlbTargetGroupTargetFailover
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albTargetGroup.AlbTargetGroupTargetFailoverList",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupTargetFailoverList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

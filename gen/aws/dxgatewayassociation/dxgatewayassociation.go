@@ -496,7 +496,7 @@ func NewDxGatewayAssociation(scope constructs.Construct, id *string, config *DxG
 	j := jsiiProxy_DxGatewayAssociation{}
 
 	_jsii_.Create(
-		"aws.dxGatewayAssociation.DxGatewayAssociation",
+		"@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -509,7 +509,7 @@ func NewDxGatewayAssociation_Override(d DxGatewayAssociation, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dxGatewayAssociation.DxGatewayAssociation",
+		"@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociation",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -686,7 +686,7 @@ func DxGatewayAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxGatewayAssociation.DxGatewayAssociation",
+		"@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -705,7 +705,7 @@ func DxGatewayAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxGatewayAssociation.DxGatewayAssociation",
+		"@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -724,7 +724,7 @@ func DxGatewayAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxGatewayAssociation.DxGatewayAssociation",
+		"@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -737,7 +737,7 @@ func DxGatewayAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dxGatewayAssociation.DxGatewayAssociation",
+		"@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociation",
 		"tfResourceType",
 		&returns,
 	)

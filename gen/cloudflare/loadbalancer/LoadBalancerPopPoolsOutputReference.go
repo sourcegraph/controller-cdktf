@@ -202,7 +202,7 @@ func NewLoadBalancerPopPoolsOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_LoadBalancerPopPoolsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerPopPoolsOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerPopPoolsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewLoadBalancerPopPoolsOutputReference_Override(l LoadBalancerPopPoolsOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerPopPoolsOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerPopPoolsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

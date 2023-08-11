@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGooglePubsubTopic.DataGooglePubsubTopic",
+		"@cdktf/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic",
 		reflect.TypeOf((*DataGooglePubsubTopic)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig",
+		"@cdktf/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig",
 		reflect.TypeOf((*DataGooglePubsubTopicConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageStoragePolicy",
+		"@cdktf/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageStoragePolicy",
 		reflect.TypeOf((*DataGooglePubsubTopicMessageStoragePolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageStoragePolicyList",
+		"@cdktf/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageStoragePolicyList",
 		reflect.TypeOf((*DataGooglePubsubTopicMessageStoragePolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -91,7 +91,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageStoragePolicyOutputReference",
+		"@cdktf/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageStoragePolicyOutputReference",
 		reflect.TypeOf((*DataGooglePubsubTopicMessageStoragePolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedPersistenceRegions", GoGetter: "AllowedPersistenceRegions"},
@@ -124,11 +124,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettings",
+		"@cdktf/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettings",
 		reflect.TypeOf((*DataGooglePubsubTopicSchemaSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsList",
+		"@cdktf/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsList",
 		reflect.TypeOf((*DataGooglePubsubTopicSchemaSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -148,7 +148,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference",
+		"@cdktf/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference",
 		reflect.TypeOf((*DataGooglePubsubTopicSchemaSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

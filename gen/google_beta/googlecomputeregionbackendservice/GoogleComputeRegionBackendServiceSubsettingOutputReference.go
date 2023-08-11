@@ -179,7 +179,7 @@ func NewGoogleComputeRegionBackendServiceSubsettingOutputReference(terraformReso
 	j := jsiiProxy_GoogleComputeRegionBackendServiceSubsettingOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceSubsettingOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceSubsettingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleComputeRegionBackendServiceSubsettingOutputReference_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceSubsettingOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceSubsettingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

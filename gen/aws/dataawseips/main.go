@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsEips.DataAwsEips",
+		"@cdktf/provider-aws.dataAwsEips.DataAwsEips",
 		reflect.TypeOf((*DataAwsEips)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,15 +66,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEips.DataAwsEipsConfig",
+		"@cdktf/provider-aws.dataAwsEips.DataAwsEipsConfig",
 		reflect.TypeOf((*DataAwsEipsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEips.DataAwsEipsFilter",
+		"@cdktf/provider-aws.dataAwsEips.DataAwsEipsFilter",
 		reflect.TypeOf((*DataAwsEipsFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEips.DataAwsEipsFilterList",
+		"@cdktf/provider-aws.dataAwsEips.DataAwsEipsFilterList",
 		reflect.TypeOf((*DataAwsEipsFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -95,7 +95,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEips.DataAwsEipsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEips.DataAwsEipsFilterOutputReference",
 		reflect.TypeOf((*DataAwsEipsFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -131,11 +131,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEips.DataAwsEipsTimeouts",
+		"@cdktf/provider-aws.dataAwsEips.DataAwsEipsTimeouts",
 		reflect.TypeOf((*DataAwsEipsTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEips.DataAwsEipsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEips.DataAwsEipsTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsEipsTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

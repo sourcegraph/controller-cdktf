@@ -474,7 +474,7 @@ func NewComputeExternalVpnGateway(scope constructs.Construct, id *string, config
 	j := jsiiProxy_ComputeExternalVpnGateway{}
 
 	_jsii_.Create(
-		"google.computeExternalVpnGateway.ComputeExternalVpnGateway",
+		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -487,7 +487,7 @@ func NewComputeExternalVpnGateway_Override(c ComputeExternalVpnGateway, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeExternalVpnGateway.ComputeExternalVpnGateway",
+		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -653,7 +653,7 @@ func ComputeExternalVpnGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeExternalVpnGateway.ComputeExternalVpnGateway",
+		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -672,7 +672,7 @@ func ComputeExternalVpnGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeExternalVpnGateway.ComputeExternalVpnGateway",
+		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func ComputeExternalVpnGateway_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeExternalVpnGateway.ComputeExternalVpnGateway",
+		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -704,7 +704,7 @@ func ComputeExternalVpnGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeExternalVpnGateway.ComputeExternalVpnGateway",
+		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway",
 		"tfResourceType",
 		&returns,
 	)

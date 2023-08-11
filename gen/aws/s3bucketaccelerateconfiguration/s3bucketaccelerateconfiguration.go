@@ -366,7 +366,7 @@ func NewS3BucketAccelerateConfiguration(scope constructs.Construct, id *string, 
 	j := jsiiProxy_S3BucketAccelerateConfiguration{}
 
 	_jsii_.Create(
-		"aws.s3BucketAccelerateConfiguration.S3BucketAccelerateConfiguration",
+		"@cdktf/provider-aws.s3BucketAccelerateConfiguration.S3BucketAccelerateConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewS3BucketAccelerateConfiguration_Override(s S3BucketAccelerateConfigurati
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketAccelerateConfiguration.S3BucketAccelerateConfiguration",
+		"@cdktf/provider-aws.s3BucketAccelerateConfiguration.S3BucketAccelerateConfiguration",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -523,7 +523,7 @@ func S3BucketAccelerateConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketAccelerateConfiguration.S3BucketAccelerateConfiguration",
+		"@cdktf/provider-aws.s3BucketAccelerateConfiguration.S3BucketAccelerateConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func S3BucketAccelerateConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketAccelerateConfiguration.S3BucketAccelerateConfiguration",
+		"@cdktf/provider-aws.s3BucketAccelerateConfiguration.S3BucketAccelerateConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func S3BucketAccelerateConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketAccelerateConfiguration.S3BucketAccelerateConfiguration",
+		"@cdktf/provider-aws.s3BucketAccelerateConfiguration.S3BucketAccelerateConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func S3BucketAccelerateConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3BucketAccelerateConfiguration.S3BucketAccelerateConfiguration",
+		"@cdktf/provider-aws.s3BucketAccelerateConfiguration.S3BucketAccelerateConfiguration",
 		"tfResourceType",
 		&returns,
 	)

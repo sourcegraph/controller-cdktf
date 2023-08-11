@@ -300,7 +300,7 @@ func NewDialogflowCxPageFormParametersOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DialogflowCxPageFormParametersOutputReference{}
 
 	_jsii_.Create(
-		"google.dialogflowCxPage.DialogflowCxPageFormParametersOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageFormParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewDialogflowCxPageFormParametersOutputReference_Override(d DialogflowCxPag
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxPage.DialogflowCxPageFormParametersOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageFormParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

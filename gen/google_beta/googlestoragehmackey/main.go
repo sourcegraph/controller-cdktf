@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleStorageHmacKey.GoogleStorageHmacKey",
+		"@cdktf/provider-google-beta.googleStorageHmacKey.GoogleStorageHmacKey",
 		reflect.TypeOf((*GoogleStorageHmacKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessId", GoGetter: "AccessId"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleStorageHmacKey.GoogleStorageHmacKeyConfig",
+		"@cdktf/provider-google-beta.googleStorageHmacKey.GoogleStorageHmacKeyConfig",
 		reflect.TypeOf((*GoogleStorageHmacKeyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleStorageHmacKey.GoogleStorageHmacKeyTimeouts",
+		"@cdktf/provider-google-beta.googleStorageHmacKey.GoogleStorageHmacKeyTimeouts",
 		reflect.TypeOf((*GoogleStorageHmacKeyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleStorageHmacKey.GoogleStorageHmacKeyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleStorageHmacKey.GoogleStorageHmacKeyTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleStorageHmacKeyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

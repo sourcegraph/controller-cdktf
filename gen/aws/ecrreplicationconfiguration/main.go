@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfiguration",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfiguration",
 		reflect.TypeOf((*EcrReplicationConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,15 +60,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfigurationConfig",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationConfig",
 		reflect.TypeOf((*EcrReplicationConfigurationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfiguration",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfiguration",
 		reflect.TypeOf((*EcrReplicationConfigurationReplicationConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationOutputReference",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationOutputReference",
 		reflect.TypeOf((*EcrReplicationConfigurationReplicationConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -103,15 +103,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRule",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRule",
 		reflect.TypeOf((*EcrReplicationConfigurationReplicationConfigurationRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleDestination",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleDestination",
 		reflect.TypeOf((*EcrReplicationConfigurationReplicationConfigurationRuleDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleDestinationList",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleDestinationList",
 		reflect.TypeOf((*EcrReplicationConfigurationReplicationConfigurationRuleDestinationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -132,7 +132,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleDestinationOutputReference",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleDestinationOutputReference",
 		reflect.TypeOf((*EcrReplicationConfigurationReplicationConfigurationRuleDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -168,7 +168,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleList",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleList",
 		reflect.TypeOf((*EcrReplicationConfigurationReplicationConfigurationRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -189,7 +189,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleOutputReference",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleOutputReference",
 		reflect.TypeOf((*EcrReplicationConfigurationReplicationConfigurationRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -228,11 +228,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter",
 		reflect.TypeOf((*EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterList",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterList",
 		reflect.TypeOf((*EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -253,7 +253,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterOutputReference",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterOutputReference",
 		reflect.TypeOf((*EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

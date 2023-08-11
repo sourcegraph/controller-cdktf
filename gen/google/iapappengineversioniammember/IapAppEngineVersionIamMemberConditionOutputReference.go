@@ -226,7 +226,7 @@ func NewIapAppEngineVersionIamMemberConditionOutputReference(terraformResource c
 	j := jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.iapAppEngineVersionIamMember.IapAppEngineVersionIamMemberConditionOutputReference",
+		"@cdktf/provider-google.iapAppEngineVersionIamMember.IapAppEngineVersionIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewIapAppEngineVersionIamMemberConditionOutputReference_Override(i IapAppEn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapAppEngineVersionIamMember.IapAppEngineVersionIamMemberConditionOutputReference",
+		"@cdktf/provider-google.iapAppEngineVersionIamMember.IapAppEngineVersionIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

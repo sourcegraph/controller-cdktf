@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKey",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKey",
 		reflect.TypeOf((*RecaptchaEnterpriseKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,11 +85,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyAndroidSettings",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyAndroidSettings",
 		reflect.TypeOf((*RecaptchaEnterpriseKeyAndroidSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyAndroidSettingsOutputReference",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyAndroidSettingsOutputReference",
 		reflect.TypeOf((*RecaptchaEnterpriseKeyAndroidSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowAllPackageNames", GoGetter: "AllowAllPackageNames"},
@@ -127,15 +127,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyConfig",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyConfig",
 		reflect.TypeOf((*RecaptchaEnterpriseKeyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyIosSettings",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyIosSettings",
 		reflect.TypeOf((*RecaptchaEnterpriseKeyIosSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyIosSettingsOutputReference",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyIosSettingsOutputReference",
 		reflect.TypeOf((*RecaptchaEnterpriseKeyIosSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowAllBundleIds", GoGetter: "AllowAllBundleIds"},
@@ -173,11 +173,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyTestingOptions",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyTestingOptions",
 		reflect.TypeOf((*RecaptchaEnterpriseKeyTestingOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyTestingOptionsOutputReference",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyTestingOptionsOutputReference",
 		reflect.TypeOf((*RecaptchaEnterpriseKeyTestingOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -215,11 +215,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyTimeouts",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyTimeouts",
 		reflect.TypeOf((*RecaptchaEnterpriseKeyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyTimeoutsOutputReference",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyTimeoutsOutputReference",
 		reflect.TypeOf((*RecaptchaEnterpriseKeyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -260,11 +260,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyWebSettings",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyWebSettings",
 		reflect.TypeOf((*RecaptchaEnterpriseKeyWebSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyWebSettingsOutputReference",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyWebSettingsOutputReference",
 		reflect.TypeOf((*RecaptchaEnterpriseKeyWebSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowAllDomains", GoGetter: "AllowAllDomains"},

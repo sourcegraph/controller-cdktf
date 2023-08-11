@@ -470,7 +470,7 @@ func NewGoogleNetworkConnectivityHub(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleNetworkConnectivityHub{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHub",
+		"@cdktf/provider-google-beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHub",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -483,7 +483,7 @@ func NewGoogleNetworkConnectivityHub_Override(g GoogleNetworkConnectivityHub, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHub",
+		"@cdktf/provider-google-beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHub",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -638,7 +638,7 @@ func GoogleNetworkConnectivityHub_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHub",
+		"@cdktf/provider-google-beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHub",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func GoogleNetworkConnectivityHub_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHub",
+		"@cdktf/provider-google-beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHub",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func GoogleNetworkConnectivityHub_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHub",
+		"@cdktf/provider-google-beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHub",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func GoogleNetworkConnectivityHub_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHub",
+		"@cdktf/provider-google-beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHub",
 		"tfResourceType",
 		&returns,
 	)

@@ -588,7 +588,7 @@ func NewNotificationPolicyFiltersOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_NotificationPolicyFiltersOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -600,7 +600,7 @@ func NewNotificationPolicyFiltersOutputReference_Override(n NotificationPolicyFi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

@@ -226,7 +226,7 @@ func NewGoogleBigqueryAnalyticsHubDataExchangeIamMemberConditionOutputReference(
 	j := jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryAnalyticsHubDataExchangeIamMember.GoogleBigqueryAnalyticsHubDataExchangeIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamMember.GoogleBigqueryAnalyticsHubDataExchangeIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleBigqueryAnalyticsHubDataExchangeIamMemberConditionOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryAnalyticsHubDataExchangeIamMember.GoogleBigqueryAnalyticsHubDataExchangeIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamMember.GoogleBigqueryAnalyticsHubDataExchangeIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

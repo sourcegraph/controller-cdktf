@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeering",
+		"@cdktf/provider-google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeering",
 		reflect.TypeOf((*GoogleActiveDirectoryPeering)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,15 +78,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeeringConfig",
+		"@cdktf/provider-google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeeringConfig",
 		reflect.TypeOf((*GoogleActiveDirectoryPeeringConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeeringTimeouts",
+		"@cdktf/provider-google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeeringTimeouts",
 		reflect.TypeOf((*GoogleActiveDirectoryPeeringTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeeringTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeeringTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleActiveDirectoryPeeringTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

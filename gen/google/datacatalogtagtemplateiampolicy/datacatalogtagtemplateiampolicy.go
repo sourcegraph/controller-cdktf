@@ -401,7 +401,7 @@ func NewDataCatalogTagTemplateIamPolicy(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataCatalogTagTemplateIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataCatalogTagTemplateIamPolicy.DataCatalogTagTemplateIamPolicy",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamPolicy.DataCatalogTagTemplateIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewDataCatalogTagTemplateIamPolicy_Override(d DataCatalogTagTemplateIamPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogTagTemplateIamPolicy.DataCatalogTagTemplateIamPolicy",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamPolicy.DataCatalogTagTemplateIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -569,7 +569,7 @@ func DataCatalogTagTemplateIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTagTemplateIamPolicy.DataCatalogTagTemplateIamPolicy",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamPolicy.DataCatalogTagTemplateIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func DataCatalogTagTemplateIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTagTemplateIamPolicy.DataCatalogTagTemplateIamPolicy",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamPolicy.DataCatalogTagTemplateIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func DataCatalogTagTemplateIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTagTemplateIamPolicy.DataCatalogTagTemplateIamPolicy",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamPolicy.DataCatalogTagTemplateIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func DataCatalogTagTemplateIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataCatalogTagTemplateIamPolicy.DataCatalogTagTemplateIamPolicy",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamPolicy.DataCatalogTagTemplateIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

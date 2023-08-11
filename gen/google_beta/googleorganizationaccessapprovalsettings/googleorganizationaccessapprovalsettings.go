@@ -458,7 +458,7 @@ func NewGoogleOrganizationAccessApprovalSettings(scope constructs.Construct, id 
 	j := jsiiProxy_GoogleOrganizationAccessApprovalSettings{}
 
 	_jsii_.Create(
-		"google-beta.googleOrganizationAccessApprovalSettings.GoogleOrganizationAccessApprovalSettings",
+		"@cdktf/provider-google-beta.googleOrganizationAccessApprovalSettings.GoogleOrganizationAccessApprovalSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -471,7 +471,7 @@ func NewGoogleOrganizationAccessApprovalSettings_Override(g GoogleOrganizationAc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOrganizationAccessApprovalSettings.GoogleOrganizationAccessApprovalSettings",
+		"@cdktf/provider-google-beta.googleOrganizationAccessApprovalSettings.GoogleOrganizationAccessApprovalSettings",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -615,7 +615,7 @@ func GoogleOrganizationAccessApprovalSettings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrganizationAccessApprovalSettings.GoogleOrganizationAccessApprovalSettings",
+		"@cdktf/provider-google-beta.googleOrganizationAccessApprovalSettings.GoogleOrganizationAccessApprovalSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func GoogleOrganizationAccessApprovalSettings_IsTerraformElement(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrganizationAccessApprovalSettings.GoogleOrganizationAccessApprovalSettings",
+		"@cdktf/provider-google-beta.googleOrganizationAccessApprovalSettings.GoogleOrganizationAccessApprovalSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func GoogleOrganizationAccessApprovalSettings_IsTerraformResource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrganizationAccessApprovalSettings.GoogleOrganizationAccessApprovalSettings",
+		"@cdktf/provider-google-beta.googleOrganizationAccessApprovalSettings.GoogleOrganizationAccessApprovalSettings",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func GoogleOrganizationAccessApprovalSettings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleOrganizationAccessApprovalSettings.GoogleOrganizationAccessApprovalSettings",
+		"@cdktf/provider-google-beta.googleOrganizationAccessApprovalSettings.GoogleOrganizationAccessApprovalSettings",
 		"tfResourceType",
 		&returns,
 	)

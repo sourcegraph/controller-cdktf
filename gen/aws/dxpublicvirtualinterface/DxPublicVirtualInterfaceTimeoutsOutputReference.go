@@ -204,7 +204,7 @@ func NewDxPublicVirtualInterfaceTimeoutsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_DxPublicVirtualInterfaceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceTimeoutsOutputReference",
+		"@cdktf/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDxPublicVirtualInterfaceTimeoutsOutputReference_Override(d DxPublicVirtu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceTimeoutsOutputReference",
+		"@cdktf/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterfaceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

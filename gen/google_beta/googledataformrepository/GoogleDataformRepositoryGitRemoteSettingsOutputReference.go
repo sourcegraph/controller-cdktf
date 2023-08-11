@@ -236,7 +236,7 @@ func NewGoogleDataformRepositoryGitRemoteSettingsOutputReference(terraformResour
 	j := jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataformRepository.GoogleDataformRepositoryGitRemoteSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleDataformRepository.GoogleDataformRepositoryGitRemoteSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -248,7 +248,7 @@ func NewGoogleDataformRepositoryGitRemoteSettingsOutputReference_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataformRepository.GoogleDataformRepositoryGitRemoteSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleDataformRepository.GoogleDataformRepositoryGitRemoteSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

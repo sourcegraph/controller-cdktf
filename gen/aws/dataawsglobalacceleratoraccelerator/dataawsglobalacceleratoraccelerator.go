@@ -393,7 +393,7 @@ func NewDataAwsGlobalacceleratorAccelerator(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataAwsGlobalacceleratorAccelerator{}
 
 	_jsii_.Create(
-		"aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAccelerator",
+		"@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAccelerator",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -406,7 +406,7 @@ func NewDataAwsGlobalacceleratorAccelerator_Override(d DataAwsGlobalacceleratorA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAccelerator",
+		"@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAccelerator",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -517,7 +517,7 @@ func DataAwsGlobalacceleratorAccelerator_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAccelerator",
+		"@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAccelerator",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -536,7 +536,7 @@ func DataAwsGlobalacceleratorAccelerator_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAccelerator",
+		"@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAccelerator",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -555,7 +555,7 @@ func DataAwsGlobalacceleratorAccelerator_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAccelerator",
+		"@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAccelerator",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -568,7 +568,7 @@ func DataAwsGlobalacceleratorAccelerator_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAccelerator",
+		"@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAccelerator",
 		"tfResourceType",
 		&returns,
 	)

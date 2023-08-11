@@ -202,7 +202,7 @@ func NewEcsServiceDeploymentCircuitBreakerOutputReference(terraformResource cdkt
 	j := jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServiceDeploymentCircuitBreakerOutputReference",
+		"@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreakerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewEcsServiceDeploymentCircuitBreakerOutputReference_Override(e EcsServiceD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServiceDeploymentCircuitBreakerOutputReference",
+		"@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreakerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

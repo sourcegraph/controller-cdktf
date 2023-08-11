@@ -228,7 +228,7 @@ func NewManifestWaitOutputReference(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_ManifestWaitOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.manifest.ManifestWaitOutputReference",
+		"@cdktf/provider-kubernetes.manifest.ManifestWaitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewManifestWaitOutputReference_Override(m ManifestWaitOutputReference, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.manifest.ManifestWaitOutputReference",
+		"@cdktf/provider-kubernetes.manifest.ManifestWaitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

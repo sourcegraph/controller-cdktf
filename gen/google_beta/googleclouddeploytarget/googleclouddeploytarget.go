@@ -661,7 +661,7 @@ func NewGoogleClouddeployTarget(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_GoogleClouddeployTarget{}
 
 	_jsii_.Create(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTarget",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTarget",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -674,7 +674,7 @@ func NewGoogleClouddeployTarget_Override(g GoogleClouddeployTarget, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTarget",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTarget",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -862,7 +862,7 @@ func GoogleClouddeployTarget_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTarget",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTarget",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -881,7 +881,7 @@ func GoogleClouddeployTarget_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTarget",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTarget",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -900,7 +900,7 @@ func GoogleClouddeployTarget_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTarget",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTarget",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -913,7 +913,7 @@ func GoogleClouddeployTarget_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTarget",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTarget",
 		"tfResourceType",
 		&returns,
 	)

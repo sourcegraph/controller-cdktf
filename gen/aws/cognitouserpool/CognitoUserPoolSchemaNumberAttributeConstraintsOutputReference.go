@@ -204,7 +204,7 @@ func NewCognitoUserPoolSchemaNumberAttributeConstraintsOutputReference(terraform
 	j := jsiiProxy_CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCognitoUserPoolSchemaNumberAttributeConstraintsOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

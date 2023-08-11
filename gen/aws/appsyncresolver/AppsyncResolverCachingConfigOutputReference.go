@@ -204,7 +204,7 @@ func NewAppsyncResolverCachingConfigOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_AppsyncResolverCachingConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.appsyncResolver.AppsyncResolverCachingConfigOutputReference",
+		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverCachingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAppsyncResolverCachingConfigOutputReference_Override(a AppsyncResolverCa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appsyncResolver.AppsyncResolverCachingConfigOutputReference",
+		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverCachingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

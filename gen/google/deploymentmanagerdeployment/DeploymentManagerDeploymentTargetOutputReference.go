@@ -203,7 +203,7 @@ func NewDeploymentManagerDeploymentTargetOutputReference(terraformResource cdktf
 	j := jsiiProxy_DeploymentManagerDeploymentTargetOutputReference{}
 
 	_jsii_.Create(
-		"google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetOutputReference",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewDeploymentManagerDeploymentTargetOutputReference_Override(d DeploymentMa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetOutputReference",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

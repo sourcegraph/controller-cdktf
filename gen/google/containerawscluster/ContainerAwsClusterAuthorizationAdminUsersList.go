@@ -116,7 +116,7 @@ func NewContainerAwsClusterAuthorizationAdminUsersList(terraformResource cdktf.I
 	j := jsiiProxy_ContainerAwsClusterAuthorizationAdminUsersList{}
 
 	_jsii_.Create(
-		"google.containerAwsCluster.ContainerAwsClusterAuthorizationAdminUsersList",
+		"@cdktf/provider-google.containerAwsCluster.ContainerAwsClusterAuthorizationAdminUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewContainerAwsClusterAuthorizationAdminUsersList_Override(c ContainerAwsCl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAwsCluster.ContainerAwsClusterAuthorizationAdminUsersList",
+		"@cdktf/provider-google.containerAwsCluster.ContainerAwsClusterAuthorizationAdminUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

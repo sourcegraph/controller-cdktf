@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.detectiveMember.DetectiveMember",
+		"@cdktf/provider-aws.detectiveMember.DetectiveMember",
 		reflect.TypeOf((*DetectiveMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -73,7 +73,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.detectiveMember.DetectiveMemberConfig",
+		"@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig",
 		reflect.TypeOf((*DetectiveMemberConfig)(nil)).Elem(),
 	)
 }

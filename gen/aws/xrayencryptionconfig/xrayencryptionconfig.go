@@ -343,7 +343,7 @@ func NewXrayEncryptionConfig(scope constructs.Construct, id *string, config *Xra
 	j := jsiiProxy_XrayEncryptionConfig{}
 
 	_jsii_.Create(
-		"aws.xrayEncryptionConfig.XrayEncryptionConfig",
+		"@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewXrayEncryptionConfig_Override(x XrayEncryptionConfig, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.xrayEncryptionConfig.XrayEncryptionConfig",
+		"@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig",
 		[]interface{}{scope, id, config},
 		x,
 	)
@@ -489,7 +489,7 @@ func XrayEncryptionConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.xrayEncryptionConfig.XrayEncryptionConfig",
+		"@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func XrayEncryptionConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.xrayEncryptionConfig.XrayEncryptionConfig",
+		"@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func XrayEncryptionConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.xrayEncryptionConfig.XrayEncryptionConfig",
+		"@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func XrayEncryptionConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.xrayEncryptionConfig.XrayEncryptionConfig",
+		"@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig",
 		"tfResourceType",
 		&returns,
 	)

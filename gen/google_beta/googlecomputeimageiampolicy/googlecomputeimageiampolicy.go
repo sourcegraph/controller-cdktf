@@ -377,7 +377,7 @@ func NewGoogleComputeImageIamPolicy(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleComputeImageIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewGoogleComputeImageIamPolicy_Override(g GoogleComputeImageIamPolicy, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -534,7 +534,7 @@ func GoogleComputeImageIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func GoogleComputeImageIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func GoogleComputeImageIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func GoogleComputeImageIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

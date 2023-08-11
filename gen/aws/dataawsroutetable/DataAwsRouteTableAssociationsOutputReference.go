@@ -211,7 +211,7 @@ func NewDataAwsRouteTableAssociationsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_DataAwsRouteTableAssociationsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsRouteTable.DataAwsRouteTableAssociationsOutputReference",
+		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableAssociationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataAwsRouteTableAssociationsOutputReference_Override(d DataAwsRouteTabl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRouteTable.DataAwsRouteTableAssociationsOutputReference",
+		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableAssociationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleCloudAssetResourcesSearchAllResultsList(terraformResource cdkt
 	j := jsiiProxy_DataGoogleCloudAssetResourcesSearchAllResultsList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAllResultsList",
+		"@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAllResultsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudAssetResourcesSearchAllResultsList_Override(d DataGoogleC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAllResultsList",
+		"@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAllResultsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

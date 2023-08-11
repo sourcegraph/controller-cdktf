@@ -104,7 +104,7 @@ func NewDataKubernetesPodV1SpecVolumeEmptyDirList(terraformResource cdktf.IInter
 	j := jsiiProxy_DataKubernetesPodV1SpecVolumeEmptyDirList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeEmptyDirList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeEmptyDirList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodV1SpecVolumeEmptyDirList_Override(d DataKubernetesPodV1
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeEmptyDirList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeEmptyDirList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

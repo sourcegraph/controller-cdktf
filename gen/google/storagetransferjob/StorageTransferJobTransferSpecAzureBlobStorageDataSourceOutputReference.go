@@ -249,7 +249,7 @@ func NewStorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference(
 	j := jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference{}
 
 	_jsii_.Create(
-		"google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -261,7 +261,7 @@ func NewStorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

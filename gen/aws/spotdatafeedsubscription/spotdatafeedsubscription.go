@@ -343,7 +343,7 @@ func NewSpotDatafeedSubscription(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_SpotDatafeedSubscription{}
 
 	_jsii_.Create(
-		"aws.spotDatafeedSubscription.SpotDatafeedSubscription",
+		"@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewSpotDatafeedSubscription_Override(s SpotDatafeedSubscription, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotDatafeedSubscription.SpotDatafeedSubscription",
+		"@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -489,7 +489,7 @@ func SpotDatafeedSubscription_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.spotDatafeedSubscription.SpotDatafeedSubscription",
+		"@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func SpotDatafeedSubscription_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.spotDatafeedSubscription.SpotDatafeedSubscription",
+		"@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func SpotDatafeedSubscription_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.spotDatafeedSubscription.SpotDatafeedSubscription",
+		"@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func SpotDatafeedSubscription_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.spotDatafeedSubscription.SpotDatafeedSubscription",
+		"@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription",
 		"tfResourceType",
 		&returns,
 	)

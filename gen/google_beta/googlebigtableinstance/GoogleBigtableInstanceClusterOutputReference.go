@@ -299,7 +299,7 @@ func NewGoogleBigtableInstanceClusterOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_GoogleBigtableInstanceClusterOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigtableInstance.GoogleBigtableInstanceClusterOutputReference",
+		"@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceClusterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewGoogleBigtableInstanceClusterOutputReference_Override(g GoogleBigtableIn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigtableInstance.GoogleBigtableInstanceClusterOutputReference",
+		"@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceClusterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

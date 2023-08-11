@@ -104,7 +104,7 @@ func NewDataAwsMqBrokerLdapServerMetadataList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataAwsMqBrokerLdapServerMetadataList{}
 
 	_jsii_.Create(
-		"aws.dataAwsMqBroker.DataAwsMqBrokerLdapServerMetadataList",
+		"@cdktf/provider-aws.dataAwsMqBroker.DataAwsMqBrokerLdapServerMetadataList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsMqBrokerLdapServerMetadataList_Override(d DataAwsMqBrokerLdapServ
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMqBroker.DataAwsMqBrokerLdapServerMetadataList",
+		"@cdktf/provider-aws.dataAwsMqBroker.DataAwsMqBrokerLdapServerMetadataList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

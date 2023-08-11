@@ -587,7 +587,7 @@ func NewEventarcTrigger(scope constructs.Construct, id *string, config *Eventarc
 	j := jsiiProxy_EventarcTrigger{}
 
 	_jsii_.Create(
-		"google.eventarcTrigger.EventarcTrigger",
+		"@cdktf/provider-google.eventarcTrigger.EventarcTrigger",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -600,7 +600,7 @@ func NewEventarcTrigger_Override(e EventarcTrigger, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.eventarcTrigger.EventarcTrigger",
+		"@cdktf/provider-google.eventarcTrigger.EventarcTrigger",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -777,7 +777,7 @@ func EventarcTrigger_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.eventarcTrigger.EventarcTrigger",
+		"@cdktf/provider-google.eventarcTrigger.EventarcTrigger",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -796,7 +796,7 @@ func EventarcTrigger_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.eventarcTrigger.EventarcTrigger",
+		"@cdktf/provider-google.eventarcTrigger.EventarcTrigger",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -815,7 +815,7 @@ func EventarcTrigger_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.eventarcTrigger.EventarcTrigger",
+		"@cdktf/provider-google.eventarcTrigger.EventarcTrigger",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -828,7 +828,7 @@ func EventarcTrigger_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.eventarcTrigger.EventarcTrigger",
+		"@cdktf/provider-google.eventarcTrigger.EventarcTrigger",
 		"tfResourceType",
 		&returns,
 	)

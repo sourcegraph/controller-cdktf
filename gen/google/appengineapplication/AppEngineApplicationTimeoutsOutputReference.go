@@ -204,7 +204,7 @@ func NewAppEngineApplicationTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_AppEngineApplicationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.appEngineApplication.AppEngineApplicationTimeoutsOutputReference",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAppEngineApplicationTimeoutsOutputReference_Override(a AppEngineApplicat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineApplication.AppEngineApplicationTimeoutsOutputReference",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

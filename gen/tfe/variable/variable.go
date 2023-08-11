@@ -486,7 +486,7 @@ func NewVariable(scope constructs.Construct, id *string, config *VariableConfig)
 	j := jsiiProxy_Variable{}
 
 	_jsii_.Create(
-		"tfe.variable.Variable",
+		"@cdktf/provider-tfe.variable.Variable",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -499,7 +499,7 @@ func NewVariable_Override(v Variable, scope constructs.Construct, id *string, co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.variable.Variable",
+		"@cdktf/provider-tfe.variable.Variable",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -698,7 +698,7 @@ func Variable_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.variable.Variable",
+		"@cdktf/provider-tfe.variable.Variable",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -717,7 +717,7 @@ func Variable_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.variable.Variable",
+		"@cdktf/provider-tfe.variable.Variable",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -736,7 +736,7 @@ func Variable_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.variable.Variable",
+		"@cdktf/provider-tfe.variable.Variable",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -749,7 +749,7 @@ func Variable_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.variable.Variable",
+		"@cdktf/provider-tfe.variable.Variable",
 		"tfResourceType",
 		&returns,
 	)

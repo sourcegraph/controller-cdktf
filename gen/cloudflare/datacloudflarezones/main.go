@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.dataCloudflareZones.DataCloudflareZones",
+		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZones",
 		reflect.TypeOf((*DataCloudflareZones)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,15 +57,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.dataCloudflareZones.DataCloudflareZonesConfig",
+		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesConfig",
 		reflect.TypeOf((*DataCloudflareZonesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.dataCloudflareZones.DataCloudflareZonesFilter",
+		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesFilter",
 		reflect.TypeOf((*DataCloudflareZonesFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.dataCloudflareZones.DataCloudflareZonesFilterOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesFilterOutputReference",
 		reflect.TypeOf((*DataCloudflareZonesFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -115,11 +115,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.dataCloudflareZones.DataCloudflareZonesZones",
+		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesZones",
 		reflect.TypeOf((*DataCloudflareZonesZones)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.dataCloudflareZones.DataCloudflareZonesZonesList",
+		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesZonesList",
 		reflect.TypeOf((*DataCloudflareZonesZonesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -139,7 +139,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.dataCloudflareZones.DataCloudflareZonesZonesOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesZonesOutputReference",
 		reflect.TypeOf((*DataCloudflareZonesZonesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

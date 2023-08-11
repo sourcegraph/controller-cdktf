@@ -534,7 +534,7 @@ func NewGoogleBigqueryReservation(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleBigqueryReservation{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryReservation.GoogleBigqueryReservation",
+		"@cdktf/provider-google-beta.googleBigqueryReservation.GoogleBigqueryReservation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -547,7 +547,7 @@ func NewGoogleBigqueryReservation_Override(g GoogleBigqueryReservation, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryReservation.GoogleBigqueryReservation",
+		"@cdktf/provider-google-beta.googleBigqueryReservation.GoogleBigqueryReservation",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -746,7 +746,7 @@ func GoogleBigqueryReservation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryReservation.GoogleBigqueryReservation",
+		"@cdktf/provider-google-beta.googleBigqueryReservation.GoogleBigqueryReservation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -765,7 +765,7 @@ func GoogleBigqueryReservation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryReservation.GoogleBigqueryReservation",
+		"@cdktf/provider-google-beta.googleBigqueryReservation.GoogleBigqueryReservation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -784,7 +784,7 @@ func GoogleBigqueryReservation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryReservation.GoogleBigqueryReservation",
+		"@cdktf/provider-google-beta.googleBigqueryReservation.GoogleBigqueryReservation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -797,7 +797,7 @@ func GoogleBigqueryReservation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigqueryReservation.GoogleBigqueryReservation",
+		"@cdktf/provider-google-beta.googleBigqueryReservation.GoogleBigqueryReservation",
 		"tfResourceType",
 		&returns,
 	)

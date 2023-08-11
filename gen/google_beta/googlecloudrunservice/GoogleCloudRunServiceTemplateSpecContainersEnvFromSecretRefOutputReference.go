@@ -204,7 +204,7 @@ func NewGoogleCloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReferen
 	j := jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleCloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

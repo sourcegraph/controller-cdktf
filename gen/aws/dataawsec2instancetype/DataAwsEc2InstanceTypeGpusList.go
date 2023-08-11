@@ -104,7 +104,7 @@ func NewDataAwsEc2InstanceTypeGpusList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_DataAwsEc2InstanceTypeGpusList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeGpusList",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeGpusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEc2InstanceTypeGpusList_Override(d DataAwsEc2InstanceTypeGpusList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeGpusList",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeGpusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

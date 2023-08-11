@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.routeTable.RouteTable",
+		"@cdktf/provider-aws.routeTable.RouteTable",
 		reflect.TypeOf((*RouteTable)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,15 +76,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.routeTable.RouteTableConfig",
+		"@cdktf/provider-aws.routeTable.RouteTableConfig",
 		reflect.TypeOf((*RouteTableConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.routeTable.RouteTableRoute",
+		"@cdktf/provider-aws.routeTable.RouteTableRoute",
 		reflect.TypeOf((*RouteTableRoute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.routeTable.RouteTableRouteList",
+		"@cdktf/provider-aws.routeTable.RouteTableRouteList",
 		reflect.TypeOf((*RouteTableRouteList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.routeTable.RouteTableRouteOutputReference",
+		"@cdktf/provider-aws.routeTable.RouteTableRouteOutputReference",
 		reflect.TypeOf((*RouteTableRouteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "carrierGatewayId", GoGetter: "CarrierGatewayId"},
@@ -179,11 +179,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.routeTable.RouteTableTimeouts",
+		"@cdktf/provider-aws.routeTable.RouteTableTimeouts",
 		reflect.TypeOf((*RouteTableTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.routeTable.RouteTableTimeoutsOutputReference",
+		"@cdktf/provider-aws.routeTable.RouteTableTimeoutsOutputReference",
 		reflect.TypeOf((*RouteTableTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

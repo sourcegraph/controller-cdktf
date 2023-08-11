@@ -1044,7 +1044,7 @@ func NewPageRuleActionsOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_PageRuleActionsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.pageRule.PageRuleActionsOutputReference",
+		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -1056,7 +1056,7 @@ func NewPageRuleActionsOutputReference_Override(p PageRuleActionsOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.pageRule.PageRuleActionsOutputReference",
+		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

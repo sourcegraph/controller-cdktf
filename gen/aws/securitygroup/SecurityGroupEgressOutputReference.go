@@ -372,7 +372,7 @@ func NewSecurityGroupEgressOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_SecurityGroupEgressOutputReference{}
 
 	_jsii_.Create(
-		"aws.securityGroup.SecurityGroupEgressOutputReference",
+		"@cdktf/provider-aws.securityGroup.SecurityGroupEgressOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -384,7 +384,7 @@ func NewSecurityGroupEgressOutputReference_Override(s SecurityGroupEgressOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityGroup.SecurityGroupEgressOutputReference",
+		"@cdktf/provider-aws.securityGroup.SecurityGroupEgressOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

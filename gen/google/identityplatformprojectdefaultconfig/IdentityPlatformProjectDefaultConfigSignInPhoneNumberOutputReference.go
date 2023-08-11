@@ -204,7 +204,7 @@ func NewIdentityPlatformProjectDefaultConfigSignInPhoneNumberOutputReference(ter
 	j := jsiiProxy_IdentityPlatformProjectDefaultConfigSignInPhoneNumberOutputReference{}
 
 	_jsii_.Create(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInPhoneNumberOutputReference",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInPhoneNumberOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewIdentityPlatformProjectDefaultConfigSignInPhoneNumberOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInPhoneNumberOutputReference",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInPhoneNumberOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

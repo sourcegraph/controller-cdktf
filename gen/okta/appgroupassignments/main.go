@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.appGroupAssignments.AppGroupAssignments",
+		"@cdktf/provider-okta.appGroupAssignments.AppGroupAssignments",
 		reflect.TypeOf((*AppGroupAssignments)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,15 +60,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.appGroupAssignments.AppGroupAssignmentsConfig",
+		"@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsConfig",
 		reflect.TypeOf((*AppGroupAssignmentsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.appGroupAssignments.AppGroupAssignmentsGroup",
+		"@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsGroup",
 		reflect.TypeOf((*AppGroupAssignmentsGroup)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.appGroupAssignments.AppGroupAssignmentsGroupList",
+		"@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsGroupList",
 		reflect.TypeOf((*AppGroupAssignmentsGroupList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -89,7 +89,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.appGroupAssignments.AppGroupAssignmentsGroupOutputReference",
+		"@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsGroupOutputReference",
 		reflect.TypeOf((*AppGroupAssignmentsGroupOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

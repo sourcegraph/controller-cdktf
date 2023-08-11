@@ -447,7 +447,7 @@ func NewBigqueryTableIamBinding(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_BigqueryTableIamBinding{}
 
 	_jsii_.Create(
-		"google.bigqueryTableIamBinding.BigqueryTableIamBinding",
+		"@cdktf/provider-google.bigqueryTableIamBinding.BigqueryTableIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewBigqueryTableIamBinding_Override(b BigqueryTableIamBinding, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryTableIamBinding.BigqueryTableIamBinding",
+		"@cdktf/provider-google.bigqueryTableIamBinding.BigqueryTableIamBinding",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -626,7 +626,7 @@ func BigqueryTableIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryTableIamBinding.BigqueryTableIamBinding",
+		"@cdktf/provider-google.bigqueryTableIamBinding.BigqueryTableIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func BigqueryTableIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryTableIamBinding.BigqueryTableIamBinding",
+		"@cdktf/provider-google.bigqueryTableIamBinding.BigqueryTableIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -664,7 +664,7 @@ func BigqueryTableIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryTableIamBinding.BigqueryTableIamBinding",
+		"@cdktf/provider-google.bigqueryTableIamBinding.BigqueryTableIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func BigqueryTableIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.bigqueryTableIamBinding.BigqueryTableIamBinding",
+		"@cdktf/provider-google.bigqueryTableIamBinding.BigqueryTableIamBinding",
 		"tfResourceType",
 		&returns,
 	)

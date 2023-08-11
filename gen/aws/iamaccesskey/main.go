@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iamAccessKey.IamAccessKey",
+		"@cdktf/provider-aws.iamAccessKey.IamAccessKey",
 		reflect.TypeOf((*IamAccessKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iamAccessKey.IamAccessKeyConfig",
+		"@cdktf/provider-aws.iamAccessKey.IamAccessKeyConfig",
 		reflect.TypeOf((*IamAccessKeyConfig)(nil)).Elem(),
 	)
 }

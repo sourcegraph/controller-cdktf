@@ -104,7 +104,7 @@ func NewVertexAiEndpointDeployedModelsAutomaticResourcesList(terraformResource c
 	j := jsiiProxy_VertexAiEndpointDeployedModelsAutomaticResourcesList{}
 
 	_jsii_.Create(
-		"google.vertexAiEndpoint.VertexAiEndpointDeployedModelsAutomaticResourcesList",
+		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsAutomaticResourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewVertexAiEndpointDeployedModelsAutomaticResourcesList_Override(v VertexAi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiEndpoint.VertexAiEndpointDeployedModelsAutomaticResourcesList",
+		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsAutomaticResourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		v,
 	)

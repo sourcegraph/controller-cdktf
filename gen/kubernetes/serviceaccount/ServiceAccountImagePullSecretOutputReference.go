@@ -180,7 +180,7 @@ func NewServiceAccountImagePullSecretOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_ServiceAccountImagePullSecretOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.serviceAccount.ServiceAccountImagePullSecretOutputReference",
+		"@cdktf/provider-kubernetes.serviceAccount.ServiceAccountImagePullSecretOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewServiceAccountImagePullSecretOutputReference_Override(s ServiceAccountIm
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.serviceAccount.ServiceAccountImagePullSecretOutputReference",
+		"@cdktf/provider-kubernetes.serviceAccount.ServiceAccountImagePullSecretOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

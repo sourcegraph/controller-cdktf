@@ -353,7 +353,7 @@ func NewGoogleProjectIamPolicy(scope constructs.Construct, id *string, config *G
 	j := jsiiProxy_GoogleProjectIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleProjectIamPolicy.GoogleProjectIamPolicy",
+		"@cdktf/provider-google-beta.googleProjectIamPolicy.GoogleProjectIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewGoogleProjectIamPolicy_Override(g GoogleProjectIamPolicy, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleProjectIamPolicy.GoogleProjectIamPolicy",
+		"@cdktf/provider-google-beta.googleProjectIamPolicy.GoogleProjectIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -499,7 +499,7 @@ func GoogleProjectIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectIamPolicy.GoogleProjectIamPolicy",
+		"@cdktf/provider-google-beta.googleProjectIamPolicy.GoogleProjectIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func GoogleProjectIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectIamPolicy.GoogleProjectIamPolicy",
+		"@cdktf/provider-google-beta.googleProjectIamPolicy.GoogleProjectIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func GoogleProjectIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectIamPolicy.GoogleProjectIamPolicy",
+		"@cdktf/provider-google-beta.googleProjectIamPolicy.GoogleProjectIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func GoogleProjectIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleProjectIamPolicy.GoogleProjectIamPolicy",
+		"@cdktf/provider-google-beta.googleProjectIamPolicy.GoogleProjectIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

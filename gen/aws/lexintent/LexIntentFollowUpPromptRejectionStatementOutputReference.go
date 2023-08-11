@@ -203,7 +203,7 @@ func NewLexIntentFollowUpPromptRejectionStatementOutputReference(terraformResour
 	j := jsiiProxy_LexIntentFollowUpPromptRejectionStatementOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentFollowUpPromptRejectionStatementOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewLexIntentFollowUpPromptRejectionStatementOutputReference_Override(l LexI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentFollowUpPromptRejectionStatementOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

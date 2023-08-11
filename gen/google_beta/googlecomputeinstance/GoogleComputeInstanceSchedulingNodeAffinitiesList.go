@@ -116,7 +116,7 @@ func NewGoogleComputeInstanceSchedulingNodeAffinitiesList(terraformResource cdkt
 	j := jsiiProxy_GoogleComputeInstanceSchedulingNodeAffinitiesList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceSchedulingNodeAffinitiesList",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceSchedulingNodeAffinitiesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeInstanceSchedulingNodeAffinitiesList_Override(g GoogleCompu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceSchedulingNodeAffinitiesList",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceSchedulingNodeAffinitiesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

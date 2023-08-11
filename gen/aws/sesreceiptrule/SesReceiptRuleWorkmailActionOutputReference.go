@@ -226,7 +226,7 @@ func NewSesReceiptRuleWorkmailActionOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_SesReceiptRuleWorkmailActionOutputReference{}
 
 	_jsii_.Create(
-		"aws.sesReceiptRule.SesReceiptRuleWorkmailActionOutputReference",
+		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewSesReceiptRuleWorkmailActionOutputReference_Override(s SesReceiptRuleWor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesReceiptRule.SesReceiptRuleWorkmailActionOutputReference",
+		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

@@ -401,7 +401,7 @@ func NewArtifactRegistryRepositoryIamPolicy(scope constructs.Construct, id *stri
 	j := jsiiProxy_ArtifactRegistryRepositoryIamPolicy{}
 
 	_jsii_.Create(
-		"google.artifactRegistryRepositoryIamPolicy.ArtifactRegistryRepositoryIamPolicy",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamPolicy.ArtifactRegistryRepositoryIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewArtifactRegistryRepositoryIamPolicy_Override(a ArtifactRegistryRepositor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.artifactRegistryRepositoryIamPolicy.ArtifactRegistryRepositoryIamPolicy",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamPolicy.ArtifactRegistryRepositoryIamPolicy",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -569,7 +569,7 @@ func ArtifactRegistryRepositoryIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.artifactRegistryRepositoryIamPolicy.ArtifactRegistryRepositoryIamPolicy",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamPolicy.ArtifactRegistryRepositoryIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func ArtifactRegistryRepositoryIamPolicy_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.artifactRegistryRepositoryIamPolicy.ArtifactRegistryRepositoryIamPolicy",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamPolicy.ArtifactRegistryRepositoryIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func ArtifactRegistryRepositoryIamPolicy_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.artifactRegistryRepositoryIamPolicy.ArtifactRegistryRepositoryIamPolicy",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamPolicy.ArtifactRegistryRepositoryIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func ArtifactRegistryRepositoryIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.artifactRegistryRepositoryIamPolicy.ArtifactRegistryRepositoryIamPolicy",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamPolicy.ArtifactRegistryRepositoryIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

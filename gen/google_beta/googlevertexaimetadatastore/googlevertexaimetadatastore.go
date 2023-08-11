@@ -473,7 +473,7 @@ func NewGoogleVertexAiMetadataStore(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleVertexAiMetadataStore{}
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStore",
+		"@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStore",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -486,7 +486,7 @@ func NewGoogleVertexAiMetadataStore_Override(g GoogleVertexAiMetadataStore, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStore",
+		"@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStore",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -641,7 +641,7 @@ func GoogleVertexAiMetadataStore_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStore",
+		"@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStore",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -660,7 +660,7 @@ func GoogleVertexAiMetadataStore_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStore",
+		"@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStore",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func GoogleVertexAiMetadataStore_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStore",
+		"@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStore",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -692,7 +692,7 @@ func GoogleVertexAiMetadataStore_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStore",
+		"@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStore",
 		"tfResourceType",
 		&returns,
 	)

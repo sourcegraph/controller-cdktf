@@ -204,7 +204,7 @@ func NewComputeSubnetworkSecondaryIpRangeOutputReference(terraformResource cdktf
 	j := jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference{}
 
 	_jsii_.Create(
-		"google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference",
+		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeSubnetworkSecondaryIpRangeOutputReference_Override(c ComputeSubne
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference",
+		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

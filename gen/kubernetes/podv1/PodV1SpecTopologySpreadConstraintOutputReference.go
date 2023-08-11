@@ -252,7 +252,7 @@ func NewPodV1SpecTopologySpreadConstraintOutputReference(terraformResource cdktf
 	j := jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecTopologySpreadConstraintOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecTopologySpreadConstraintOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewPodV1SpecTopologySpreadConstraintOutputReference_Override(p PodV1SpecTop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecTopologySpreadConstraintOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecTopologySpreadConstraintOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

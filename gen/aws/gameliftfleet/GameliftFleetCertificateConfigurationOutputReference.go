@@ -180,7 +180,7 @@ func NewGameliftFleetCertificateConfigurationOutputReference(terraformResource c
 	j := jsiiProxy_GameliftFleetCertificateConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.gameliftFleet.GameliftFleetCertificateConfigurationOutputReference",
+		"@cdktf/provider-aws.gameliftFleet.GameliftFleetCertificateConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGameliftFleetCertificateConfigurationOutputReference_Override(g Gamelift
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftFleet.GameliftFleetCertificateConfigurationOutputReference",
+		"@cdktf/provider-aws.gameliftFleet.GameliftFleetCertificateConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

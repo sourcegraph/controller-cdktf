@@ -104,7 +104,7 @@ func NewDataplexDatascanDataProfileResultProfileFieldsList(terraformResource cdk
 	j := jsiiProxy_DataplexDatascanDataProfileResultProfileFieldsList{}
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataProfileResultProfileFieldsList",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataProfileResultProfileFieldsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataplexDatascanDataProfileResultProfileFieldsList_Override(d DataplexDa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataProfileResultProfileFieldsList",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataProfileResultProfileFieldsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

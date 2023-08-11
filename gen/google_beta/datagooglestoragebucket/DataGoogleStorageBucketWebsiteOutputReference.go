@@ -178,7 +178,7 @@ func NewDataGoogleStorageBucketWebsiteOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataGoogleStorageBucketWebsiteOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketWebsiteOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketWebsiteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleStorageBucketWebsiteOutputReference_Override(d DataGoogleStora
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketWebsiteOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketWebsiteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

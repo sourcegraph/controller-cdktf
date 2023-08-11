@@ -262,7 +262,7 @@ func NewGoogleCloudRunServiceTrafficOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_GoogleCloudRunServiceTrafficOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTrafficOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTrafficOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -274,7 +274,7 @@ func NewGoogleCloudRunServiceTrafficOutputReference_Override(g GoogleCloudRunSer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTrafficOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTrafficOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

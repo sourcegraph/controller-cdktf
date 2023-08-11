@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeSnapshotIamPolicy.ComputeSnapshotIamPolicy",
+		"@cdktf/provider-google.computeSnapshotIamPolicy.ComputeSnapshotIamPolicy",
 		reflect.TypeOf((*ComputeSnapshotIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSnapshotIamPolicy.ComputeSnapshotIamPolicyConfig",
+		"@cdktf/provider-google.computeSnapshotIamPolicy.ComputeSnapshotIamPolicyConfig",
 		reflect.TypeOf((*ComputeSnapshotIamPolicyConfig)(nil)).Elem(),
 	)
 }

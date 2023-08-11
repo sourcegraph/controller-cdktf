@@ -593,7 +593,7 @@ func NewGoogleHealthcareFhirStore(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleHealthcareFhirStore{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStore",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStore",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -606,7 +606,7 @@ func NewGoogleHealthcareFhirStore_Override(g GoogleHealthcareFhirStore, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStore",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStore",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -805,7 +805,7 @@ func GoogleHealthcareFhirStore_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStore",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStore",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -824,7 +824,7 @@ func GoogleHealthcareFhirStore_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStore",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStore",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -843,7 +843,7 @@ func GoogleHealthcareFhirStore_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStore",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStore",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -856,7 +856,7 @@ func GoogleHealthcareFhirStore_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStore",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStore",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewDataCloudflareRulesetsRulesetsList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataCloudflareRulesetsRulesetsList{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsList",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataCloudflareRulesetsRulesetsList_Override(d DataCloudflareRulesetsRule
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsList",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

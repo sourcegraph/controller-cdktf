@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.alloydbCluster.AlloydbCluster",
+		"@cdktf/provider-google.alloydbCluster.AlloydbCluster",
 		reflect.TypeOf((*AlloydbCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,15 +92,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.alloydbCluster.AlloydbClusterAutomatedBackupPolicy",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterAutomatedBackupPolicy",
 		reflect.TypeOf((*AlloydbClusterAutomatedBackupPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyEncryptionConfig",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyEncryptionConfig",
 		reflect.TypeOf((*AlloydbClusterAutomatedBackupPolicyEncryptionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference",
 		reflect.TypeOf((*AlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -135,7 +135,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyOutputReference",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyOutputReference",
 		reflect.TypeOf((*AlloydbClusterAutomatedBackupPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backupWindow", GoGetter: "BackupWindow"},
@@ -195,11 +195,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyQuantityBasedRetention",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyQuantityBasedRetention",
 		reflect.TypeOf((*AlloydbClusterAutomatedBackupPolicyQuantityBasedRetention)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference",
 		reflect.TypeOf((*AlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -234,11 +234,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyTimeBasedRetention",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyTimeBasedRetention",
 		reflect.TypeOf((*AlloydbClusterAutomatedBackupPolicyTimeBasedRetention)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputReference",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputReference",
 		reflect.TypeOf((*AlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -273,11 +273,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyWeeklySchedule",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyWeeklySchedule",
 		reflect.TypeOf((*AlloydbClusterAutomatedBackupPolicyWeeklySchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference",
 		reflect.TypeOf((*AlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -315,11 +315,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimes",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimes",
 		reflect.TypeOf((*AlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList",
 		reflect.TypeOf((*AlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -340,7 +340,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesOutputReference",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesOutputReference",
 		reflect.TypeOf((*AlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -384,11 +384,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.alloydbCluster.AlloydbClusterBackupSource",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterBackupSource",
 		reflect.TypeOf((*AlloydbClusterBackupSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.alloydbCluster.AlloydbClusterBackupSourceList",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterBackupSourceList",
 		reflect.TypeOf((*AlloydbClusterBackupSourceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -408,7 +408,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.alloydbCluster.AlloydbClusterBackupSourceOutputReference",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterBackupSourceOutputReference",
 		reflect.TypeOf((*AlloydbClusterBackupSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backupName", GoGetter: "BackupName"},
@@ -441,15 +441,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.alloydbCluster.AlloydbClusterConfig",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterConfig",
 		reflect.TypeOf((*AlloydbClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.alloydbCluster.AlloydbClusterEncryptionConfig",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterEncryptionConfig",
 		reflect.TypeOf((*AlloydbClusterEncryptionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.alloydbCluster.AlloydbClusterEncryptionConfigOutputReference",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterEncryptionConfigOutputReference",
 		reflect.TypeOf((*AlloydbClusterEncryptionConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -484,11 +484,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.alloydbCluster.AlloydbClusterEncryptionInfo",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterEncryptionInfo",
 		reflect.TypeOf((*AlloydbClusterEncryptionInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.alloydbCluster.AlloydbClusterEncryptionInfoList",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterEncryptionInfoList",
 		reflect.TypeOf((*AlloydbClusterEncryptionInfoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -508,7 +508,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.alloydbCluster.AlloydbClusterEncryptionInfoOutputReference",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterEncryptionInfoOutputReference",
 		reflect.TypeOf((*AlloydbClusterEncryptionInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -542,11 +542,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.alloydbCluster.AlloydbClusterInitialUser",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterInitialUser",
 		reflect.TypeOf((*AlloydbClusterInitialUser)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.alloydbCluster.AlloydbClusterInitialUserOutputReference",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterInitialUserOutputReference",
 		reflect.TypeOf((*AlloydbClusterInitialUserOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -583,11 +583,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.alloydbCluster.AlloydbClusterMigrationSource",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterMigrationSource",
 		reflect.TypeOf((*AlloydbClusterMigrationSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.alloydbCluster.AlloydbClusterMigrationSourceList",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterMigrationSourceList",
 		reflect.TypeOf((*AlloydbClusterMigrationSourceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -607,7 +607,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.alloydbCluster.AlloydbClusterMigrationSourceOutputReference",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterMigrationSourceOutputReference",
 		reflect.TypeOf((*AlloydbClusterMigrationSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -642,11 +642,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.alloydbCluster.AlloydbClusterTimeouts",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterTimeouts",
 		reflect.TypeOf((*AlloydbClusterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.alloydbCluster.AlloydbClusterTimeoutsOutputReference",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterTimeoutsOutputReference",
 		reflect.TypeOf((*AlloydbClusterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

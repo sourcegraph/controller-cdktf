@@ -202,7 +202,7 @@ func NewQuicksightDataSourceCredentialsCredentialPairOutputReference(terraformRe
 	j := jsiiProxy_QuicksightDataSourceCredentialsCredentialPairOutputReference{}
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceCredentialsCredentialPairOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceCredentialsCredentialPairOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewQuicksightDataSourceCredentialsCredentialPairOutputReference_Override(q 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceCredentialsCredentialPairOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceCredentialsCredentialPairOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)

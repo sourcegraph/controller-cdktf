@@ -204,7 +204,7 @@ func NewControltowerControlTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_ControltowerControlTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.controltowerControl.ControltowerControlTimeoutsOutputReference",
+		"@cdktf/provider-aws.controltowerControl.ControltowerControlTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewControltowerControlTimeoutsOutputReference_Override(c ControltowerContro
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.controltowerControl.ControltowerControlTimeoutsOutputReference",
+		"@cdktf/provider-aws.controltowerControl.ControltowerControlTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

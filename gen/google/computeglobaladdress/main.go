@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeGlobalAddress.ComputeGlobalAddress",
+		"@cdktf/provider-google.computeGlobalAddress.ComputeGlobalAddress",
 		reflect.TypeOf((*ComputeGlobalAddress)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,15 +87,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeGlobalAddress.ComputeGlobalAddressConfig",
+		"@cdktf/provider-google.computeGlobalAddress.ComputeGlobalAddressConfig",
 		reflect.TypeOf((*ComputeGlobalAddressConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeGlobalAddress.ComputeGlobalAddressTimeouts",
+		"@cdktf/provider-google.computeGlobalAddress.ComputeGlobalAddressTimeouts",
 		reflect.TypeOf((*ComputeGlobalAddressTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeGlobalAddress.ComputeGlobalAddressTimeoutsOutputReference",
+		"@cdktf/provider-google.computeGlobalAddress.ComputeGlobalAddressTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeGlobalAddressTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

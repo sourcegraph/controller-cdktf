@@ -202,7 +202,7 @@ func NewDataAwsEbsSnapshotFilterOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataAwsEbsSnapshotFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEbsSnapshot.DataAwsEbsSnapshotFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEbsSnapshot.DataAwsEbsSnapshotFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsEbsSnapshotFilterOutputReference_Override(d DataAwsEbsSnapshotFil
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEbsSnapshot.DataAwsEbsSnapshotFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEbsSnapshot.DataAwsEbsSnapshotFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

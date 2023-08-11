@@ -533,7 +533,7 @@ func NewCloudformationStackSetInstance(scope constructs.Construct, id *string, c
 	j := jsiiProxy_CloudformationStackSetInstance{}
 
 	_jsii_.Create(
-		"aws.cloudformationStackSetInstance.CloudformationStackSetInstance",
+		"@cdktf/provider-aws.cloudformationStackSetInstance.CloudformationStackSetInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -546,7 +546,7 @@ func NewCloudformationStackSetInstance_Override(c CloudformationStackSetInstance
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudformationStackSetInstance.CloudformationStackSetInstance",
+		"@cdktf/provider-aws.cloudformationStackSetInstance.CloudformationStackSetInstance",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -723,7 +723,7 @@ func CloudformationStackSetInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudformationStackSetInstance.CloudformationStackSetInstance",
+		"@cdktf/provider-aws.cloudformationStackSetInstance.CloudformationStackSetInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -742,7 +742,7 @@ func CloudformationStackSetInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudformationStackSetInstance.CloudformationStackSetInstance",
+		"@cdktf/provider-aws.cloudformationStackSetInstance.CloudformationStackSetInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -761,7 +761,7 @@ func CloudformationStackSetInstance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudformationStackSetInstance.CloudformationStackSetInstance",
+		"@cdktf/provider-aws.cloudformationStackSetInstance.CloudformationStackSetInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -774,7 +774,7 @@ func CloudformationStackSetInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudformationStackSetInstance.CloudformationStackSetInstance",
+		"@cdktf/provider-aws.cloudformationStackSetInstance.CloudformationStackSetInstance",
 		"tfResourceType",
 		&returns,
 	)

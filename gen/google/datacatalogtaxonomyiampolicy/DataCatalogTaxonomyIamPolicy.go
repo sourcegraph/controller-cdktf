@@ -401,7 +401,7 @@ func NewDataCatalogTaxonomyIamPolicy(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataCatalogTaxonomyIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataCatalogTaxonomyIamPolicy.DataCatalogTaxonomyIamPolicy",
+		"@cdktf/provider-google.dataCatalogTaxonomyIamPolicy.DataCatalogTaxonomyIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewDataCatalogTaxonomyIamPolicy_Override(d DataCatalogTaxonomyIamPolicy, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogTaxonomyIamPolicy.DataCatalogTaxonomyIamPolicy",
+		"@cdktf/provider-google.dataCatalogTaxonomyIamPolicy.DataCatalogTaxonomyIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -569,7 +569,7 @@ func DataCatalogTaxonomyIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTaxonomyIamPolicy.DataCatalogTaxonomyIamPolicy",
+		"@cdktf/provider-google.dataCatalogTaxonomyIamPolicy.DataCatalogTaxonomyIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func DataCatalogTaxonomyIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTaxonomyIamPolicy.DataCatalogTaxonomyIamPolicy",
+		"@cdktf/provider-google.dataCatalogTaxonomyIamPolicy.DataCatalogTaxonomyIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func DataCatalogTaxonomyIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTaxonomyIamPolicy.DataCatalogTaxonomyIamPolicy",
+		"@cdktf/provider-google.dataCatalogTaxonomyIamPolicy.DataCatalogTaxonomyIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func DataCatalogTaxonomyIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataCatalogTaxonomyIamPolicy.DataCatalogTaxonomyIamPolicy",
+		"@cdktf/provider-google.dataCatalogTaxonomyIamPolicy.DataCatalogTaxonomyIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

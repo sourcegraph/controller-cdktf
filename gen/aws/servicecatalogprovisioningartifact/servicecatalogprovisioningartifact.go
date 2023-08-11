@@ -570,7 +570,7 @@ func NewServicecatalogProvisioningArtifact(scope constructs.Construct, id *strin
 	j := jsiiProxy_ServicecatalogProvisioningArtifact{}
 
 	_jsii_.Create(
-		"aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact",
+		"@cdktf/provider-aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -583,7 +583,7 @@ func NewServicecatalogProvisioningArtifact_Override(s ServicecatalogProvisioning
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact",
+		"@cdktf/provider-aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -804,7 +804,7 @@ func ServicecatalogProvisioningArtifact_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact",
+		"@cdktf/provider-aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -823,7 +823,7 @@ func ServicecatalogProvisioningArtifact_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact",
+		"@cdktf/provider-aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -842,7 +842,7 @@ func ServicecatalogProvisioningArtifact_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact",
+		"@cdktf/provider-aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -855,7 +855,7 @@ func ServicecatalogProvisioningArtifact_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact",
+		"@cdktf/provider-aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact",
 		"tfResourceType",
 		&returns,
 	)

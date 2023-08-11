@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.endpointsServiceIamBinding.EndpointsServiceIamBinding",
+		"@cdktf/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBinding",
 		reflect.TypeOf((*EndpointsServiceIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,11 +66,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.endpointsServiceIamBinding.EndpointsServiceIamBindingCondition",
+		"@cdktf/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBindingCondition",
 		reflect.TypeOf((*EndpointsServiceIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.endpointsServiceIamBinding.EndpointsServiceIamBindingConditionOutputReference",
+		"@cdktf/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBindingConditionOutputReference",
 		reflect.TypeOf((*EndpointsServiceIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.endpointsServiceIamBinding.EndpointsServiceIamBindingConfig",
+		"@cdktf/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBindingConfig",
 		reflect.TypeOf((*EndpointsServiceIamBindingConfig)(nil)).Elem(),
 	)
 }

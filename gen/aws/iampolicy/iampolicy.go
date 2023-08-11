@@ -485,7 +485,7 @@ func NewIamPolicy(scope constructs.Construct, id *string, config *IamPolicyConfi
 	j := jsiiProxy_IamPolicy{}
 
 	_jsii_.Create(
-		"aws.iamPolicy.IamPolicy",
+		"@cdktf/provider-aws.iamPolicy.IamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -498,7 +498,7 @@ func NewIamPolicy_Override(i IamPolicy, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iamPolicy.IamPolicy",
+		"@cdktf/provider-aws.iamPolicy.IamPolicy",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -686,7 +686,7 @@ func IamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamPolicy.IamPolicy",
+		"@cdktf/provider-aws.iamPolicy.IamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -705,7 +705,7 @@ func IamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamPolicy.IamPolicy",
+		"@cdktf/provider-aws.iamPolicy.IamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -724,7 +724,7 @@ func IamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamPolicy.IamPolicy",
+		"@cdktf/provider-aws.iamPolicy.IamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -737,7 +737,7 @@ func IamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iamPolicy.IamPolicy",
+		"@cdktf/provider-aws.iamPolicy.IamPolicy",
 		"tfResourceType",
 		&returns,
 	)

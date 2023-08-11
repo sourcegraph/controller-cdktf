@@ -448,7 +448,7 @@ func NewComputeDiskIamBinding(scope constructs.Construct, id *string, config *Co
 	j := jsiiProxy_ComputeDiskIamBinding{}
 
 	_jsii_.Create(
-		"google.computeDiskIamBinding.ComputeDiskIamBinding",
+		"@cdktf/provider-google.computeDiskIamBinding.ComputeDiskIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewComputeDiskIamBinding_Override(c ComputeDiskIamBinding, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeDiskIamBinding.ComputeDiskIamBinding",
+		"@cdktf/provider-google.computeDiskIamBinding.ComputeDiskIamBinding",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -627,7 +627,7 @@ func ComputeDiskIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeDiskIamBinding.ComputeDiskIamBinding",
+		"@cdktf/provider-google.computeDiskIamBinding.ComputeDiskIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func ComputeDiskIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeDiskIamBinding.ComputeDiskIamBinding",
+		"@cdktf/provider-google.computeDiskIamBinding.ComputeDiskIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func ComputeDiskIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeDiskIamBinding.ComputeDiskIamBinding",
+		"@cdktf/provider-google.computeDiskIamBinding.ComputeDiskIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func ComputeDiskIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeDiskIamBinding.ComputeDiskIamBinding",
+		"@cdktf/provider-google.computeDiskIamBinding.ComputeDiskIamBinding",
 		"tfResourceType",
 		&returns,
 	)

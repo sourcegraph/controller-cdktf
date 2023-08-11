@@ -424,7 +424,7 @@ func NewGoogleBigtableInstanceIamBinding(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleBigtableInstanceIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleBigtableInstanceIamBinding.GoogleBigtableInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleBigtableInstanceIamBinding.GoogleBigtableInstanceIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleBigtableInstanceIamBinding_Override(g GoogleBigtableInstanceIamBin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigtableInstanceIamBinding.GoogleBigtableInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleBigtableInstanceIamBinding.GoogleBigtableInstanceIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleBigtableInstanceIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigtableInstanceIamBinding.GoogleBigtableInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleBigtableInstanceIamBinding.GoogleBigtableInstanceIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleBigtableInstanceIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigtableInstanceIamBinding.GoogleBigtableInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleBigtableInstanceIamBinding.GoogleBigtableInstanceIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleBigtableInstanceIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigtableInstanceIamBinding.GoogleBigtableInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleBigtableInstanceIamBinding.GoogleBigtableInstanceIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleBigtableInstanceIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigtableInstanceIamBinding.GoogleBigtableInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleBigtableInstanceIamBinding.GoogleBigtableInstanceIamBinding",
 		"tfResourceType",
 		&returns,
 	)

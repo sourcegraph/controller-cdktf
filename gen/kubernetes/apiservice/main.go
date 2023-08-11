@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"kubernetes.apiService.ApiService",
+		"@cdktf/provider-kubernetes.apiService.ApiService",
 		reflect.TypeOf((*ApiService)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,15 +61,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.apiService.ApiServiceConfig",
+		"@cdktf/provider-kubernetes.apiService.ApiServiceConfig",
 		reflect.TypeOf((*ApiServiceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.apiService.ApiServiceMetadata",
+		"@cdktf/provider-kubernetes.apiService.ApiServiceMetadata",
 		reflect.TypeOf((*ApiServiceMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.apiService.ApiServiceMetadataOutputReference",
+		"@cdktf/provider-kubernetes.apiService.ApiServiceMetadataOutputReference",
 		reflect.TypeOf((*ApiServiceMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -116,11 +116,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.apiService.ApiServiceSpec",
+		"@cdktf/provider-kubernetes.apiService.ApiServiceSpec",
 		reflect.TypeOf((*ApiServiceSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.apiService.ApiServiceSpecOutputReference",
+		"@cdktf/provider-kubernetes.apiService.ApiServiceSpecOutputReference",
 		reflect.TypeOf((*ApiServiceSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caBundle", GoGetter: "CaBundle"},
@@ -170,11 +170,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.apiService.ApiServiceSpecService",
+		"@cdktf/provider-kubernetes.apiService.ApiServiceSpecService",
 		reflect.TypeOf((*ApiServiceSpecService)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.apiService.ApiServiceSpecServiceOutputReference",
+		"@cdktf/provider-kubernetes.apiService.ApiServiceSpecServiceOutputReference",
 		reflect.TypeOf((*ApiServiceSpecServiceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

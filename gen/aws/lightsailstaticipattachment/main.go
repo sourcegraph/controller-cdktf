@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment",
+		"@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment",
 		reflect.TypeOf((*LightsailStaticIpAttachment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig",
+		"@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig",
 		reflect.TypeOf((*LightsailStaticIpAttachmentConfig)(nil)).Elem(),
 	)
 }

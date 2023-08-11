@@ -890,7 +890,7 @@ func NewOpsworksStack(scope constructs.Construct, id *string, config *OpsworksSt
 	j := jsiiProxy_OpsworksStack{}
 
 	_jsii_.Create(
-		"aws.opsworksStack.OpsworksStack",
+		"@cdktf/provider-aws.opsworksStack.OpsworksStack",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -903,7 +903,7 @@ func NewOpsworksStack_Override(o OpsworksStack, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksStack.OpsworksStack",
+		"@cdktf/provider-aws.opsworksStack.OpsworksStack",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -1256,7 +1256,7 @@ func OpsworksStack_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksStack.OpsworksStack",
+		"@cdktf/provider-aws.opsworksStack.OpsworksStack",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1275,7 +1275,7 @@ func OpsworksStack_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksStack.OpsworksStack",
+		"@cdktf/provider-aws.opsworksStack.OpsworksStack",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1294,7 +1294,7 @@ func OpsworksStack_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksStack.OpsworksStack",
+		"@cdktf/provider-aws.opsworksStack.OpsworksStack",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1307,7 +1307,7 @@ func OpsworksStack_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.opsworksStack.OpsworksStack",
+		"@cdktf/provider-aws.opsworksStack.OpsworksStack",
 		"tfResourceType",
 		&returns,
 	)

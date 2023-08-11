@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleComputeInstanceSerialPort.DataGoogleComputeInstanceSerialPort",
+		"@cdktf/provider-google.dataGoogleComputeInstanceSerialPort.DataGoogleComputeInstanceSerialPort",
 		reflect.TypeOf((*DataGoogleComputeInstanceSerialPort)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleComputeInstanceSerialPort.DataGoogleComputeInstanceSerialPortConfig",
+		"@cdktf/provider-google.dataGoogleComputeInstanceSerialPort.DataGoogleComputeInstanceSerialPortConfig",
 		reflect.TypeOf((*DataGoogleComputeInstanceSerialPortConfig)(nil)).Elem(),
 	)
 }

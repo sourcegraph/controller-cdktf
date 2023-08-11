@@ -252,7 +252,7 @@ func NewOsConfigPatchDeploymentPatchConfigYumOutputReference(terraformResource c
 	j := jsiiProxy_OsConfigPatchDeploymentPatchConfigYumOutputReference{}
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigYumOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigYumOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewOsConfigPatchDeploymentPatchConfigYumOutputReference_Override(o OsConfig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigYumOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigYumOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

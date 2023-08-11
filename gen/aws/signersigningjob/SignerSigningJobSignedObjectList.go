@@ -104,7 +104,7 @@ func NewSignerSigningJobSignedObjectList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_SignerSigningJobSignedObjectList{}
 
 	_jsii_.Create(
-		"aws.signerSigningJob.SignerSigningJobSignedObjectList",
+		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobSignedObjectList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewSignerSigningJobSignedObjectList_Override(s SignerSigningJobSignedObject
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.signerSigningJob.SignerSigningJobSignedObjectList",
+		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobSignedObjectList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

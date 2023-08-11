@@ -509,7 +509,7 @@ func NewGoogleBigtableGcPolicy(scope constructs.Construct, id *string, config *G
 	j := jsiiProxy_GoogleBigtableGcPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicy",
+		"@cdktf/provider-google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -522,7 +522,7 @@ func NewGoogleBigtableGcPolicy_Override(g GoogleBigtableGcPolicy, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicy",
+		"@cdktf/provider-google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -710,7 +710,7 @@ func GoogleBigtableGcPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicy",
+		"@cdktf/provider-google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -729,7 +729,7 @@ func GoogleBigtableGcPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicy",
+		"@cdktf/provider-google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -748,7 +748,7 @@ func GoogleBigtableGcPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicy",
+		"@cdktf/provider-google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -761,7 +761,7 @@ func GoogleBigtableGcPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicy",
+		"@cdktf/provider-google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicy",
 		"tfResourceType",
 		&returns,
 	)

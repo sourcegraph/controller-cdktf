@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor",
+		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor",
 		reflect.TypeOf((*RolesanywhereTrustAnchor)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorConfig",
+		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorConfig",
 		reflect.TypeOf((*RolesanywhereTrustAnchorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSource",
+		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSource",
 		reflect.TypeOf((*RolesanywhereTrustAnchorSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceOutputReference",
+		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceOutputReference",
 		reflect.TypeOf((*RolesanywhereTrustAnchorSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,11 +115,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceSourceData",
+		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceSourceData",
 		reflect.TypeOf((*RolesanywhereTrustAnchorSourceSourceData)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceSourceDataOutputReference",
+		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceSourceDataOutputReference",
 		reflect.TypeOf((*RolesanywhereTrustAnchorSourceSourceDataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acmPcaArn", GoGetter: "AcmPcaArn"},

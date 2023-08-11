@@ -203,7 +203,7 @@ func NewCloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputReference
 	j := jsiiProxy_CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputReference",
+		"@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewCloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputReference",
+		"@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

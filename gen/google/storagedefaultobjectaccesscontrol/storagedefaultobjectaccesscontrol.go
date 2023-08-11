@@ -468,7 +468,7 @@ func NewStorageDefaultObjectAccessControl(scope constructs.Construct, id *string
 	j := jsiiProxy_StorageDefaultObjectAccessControl{}
 
 	_jsii_.Create(
-		"google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
+		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -481,7 +481,7 @@ func NewStorageDefaultObjectAccessControl_Override(s StorageDefaultObjectAccessC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
+		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -636,7 +636,7 @@ func StorageDefaultObjectAccessControl_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
+		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func StorageDefaultObjectAccessControl_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
+		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -674,7 +674,7 @@ func StorageDefaultObjectAccessControl_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
+		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -687,7 +687,7 @@ func StorageDefaultObjectAccessControl_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
+		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
 		"tfResourceType",
 		&returns,
 	)

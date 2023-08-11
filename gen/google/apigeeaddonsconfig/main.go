@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfig",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfig",
 		reflect.TypeOf((*ApigeeAddonsConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addonsConfig", GoGetter: "AddonsConfig"},
@@ -65,15 +65,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfig",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfig",
 		reflect.TypeOf((*ApigeeAddonsConfigAddonsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig",
 		reflect.TypeOf((*ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference",
 		reflect.TypeOf((*ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -108,11 +108,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigApiSecurityConfig",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigApiSecurityConfig",
 		reflect.TypeOf((*ApigeeAddonsConfigAddonsConfigApiSecurityConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference",
 		reflect.TypeOf((*ApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -148,11 +148,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig",
 		reflect.TypeOf((*ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference",
 		reflect.TypeOf((*ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -188,11 +188,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigIntegrationConfig",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigIntegrationConfig",
 		reflect.TypeOf((*ApigeeAddonsConfigAddonsConfigIntegrationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigIntegrationConfigOutputReference",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigIntegrationConfigOutputReference",
 		reflect.TypeOf((*ApigeeAddonsConfigAddonsConfigIntegrationConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -227,11 +227,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigMonetizationConfig",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigMonetizationConfig",
 		reflect.TypeOf((*ApigeeAddonsConfigAddonsConfigMonetizationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference",
 		reflect.TypeOf((*ApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -266,7 +266,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigOutputReference",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigOutputReference",
 		reflect.TypeOf((*ApigeeAddonsConfigAddonsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "advancedApiOpsConfig", GoGetter: "AdvancedApiOpsConfig"},
@@ -318,15 +318,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfigConfig",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigConfig",
 		reflect.TypeOf((*ApigeeAddonsConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfigTimeouts",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigTimeouts",
 		reflect.TypeOf((*ApigeeAddonsConfigTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigTimeoutsOutputReference",
 		reflect.TypeOf((*ApigeeAddonsConfigTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -116,7 +116,7 @@ func NewCodebuildWebhookFilterGroupFilterList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_CodebuildWebhookFilterGroupFilterList{}
 
 	_jsii_.Create(
-		"aws.codebuildWebhook.CodebuildWebhookFilterGroupFilterList",
+		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCodebuildWebhookFilterGroupFilterList_Override(c CodebuildWebhookFilterG
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildWebhook.CodebuildWebhookFilterGroupFilterList",
+		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

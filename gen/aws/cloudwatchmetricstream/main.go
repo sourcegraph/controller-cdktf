@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStream",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream",
 		reflect.TypeOf((*CloudwatchMetricStream)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,15 +93,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig",
 		reflect.TypeOf((*CloudwatchMetricStreamConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamExcludeFilter",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamExcludeFilter",
 		reflect.TypeOf((*CloudwatchMetricStreamExcludeFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamExcludeFilterList",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamExcludeFilterList",
 		reflect.TypeOf((*CloudwatchMetricStreamExcludeFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -122,7 +122,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamExcludeFilterOutputReference",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamExcludeFilterOutputReference",
 		reflect.TypeOf((*CloudwatchMetricStreamExcludeFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -156,11 +156,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamIncludeFilter",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamIncludeFilter",
 		reflect.TypeOf((*CloudwatchMetricStreamIncludeFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamIncludeFilterList",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamIncludeFilterList",
 		reflect.TypeOf((*CloudwatchMetricStreamIncludeFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -181,7 +181,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamIncludeFilterOutputReference",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamIncludeFilterOutputReference",
 		reflect.TypeOf((*CloudwatchMetricStreamIncludeFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -215,15 +215,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfiguration",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfiguration",
 		reflect.TypeOf((*CloudwatchMetricStreamStatisticsConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationIncludeMetric",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationIncludeMetric",
 		reflect.TypeOf((*CloudwatchMetricStreamStatisticsConfigurationIncludeMetric)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationIncludeMetricList",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationIncludeMetricList",
 		reflect.TypeOf((*CloudwatchMetricStreamStatisticsConfigurationIncludeMetricList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -244,7 +244,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationIncludeMetricOutputReference",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationIncludeMetricOutputReference",
 		reflect.TypeOf((*CloudwatchMetricStreamStatisticsConfigurationIncludeMetricOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -280,7 +280,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationList",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationList",
 		reflect.TypeOf((*CloudwatchMetricStreamStatisticsConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -301,7 +301,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationOutputReference",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationOutputReference",
 		reflect.TypeOf((*CloudwatchMetricStreamStatisticsConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalStatistics", GoGetter: "AdditionalStatistics"},
@@ -338,11 +338,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamTimeouts",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamTimeouts",
 		reflect.TypeOf((*CloudwatchMetricStreamTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamTimeoutsOutputReference",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamTimeoutsOutputReference",
 		reflect.TypeOf((*CloudwatchMetricStreamTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

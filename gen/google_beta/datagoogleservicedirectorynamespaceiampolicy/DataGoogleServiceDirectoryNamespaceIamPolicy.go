@@ -313,7 +313,7 @@ func NewDataGoogleServiceDirectoryNamespaceIamPolicy(scope constructs.Construct,
 	j := jsiiProxy_DataGoogleServiceDirectoryNamespaceIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleServiceDirectoryNamespaceIamPolicy.DataGoogleServiceDirectoryNamespaceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleServiceDirectoryNamespaceIamPolicy.DataGoogleServiceDirectoryNamespaceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -326,7 +326,7 @@ func NewDataGoogleServiceDirectoryNamespaceIamPolicy_Override(d DataGoogleServic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleServiceDirectoryNamespaceIamPolicy.DataGoogleServiceDirectoryNamespaceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleServiceDirectoryNamespaceIamPolicy.DataGoogleServiceDirectoryNamespaceIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -426,7 +426,7 @@ func DataGoogleServiceDirectoryNamespaceIamPolicy_IsConstruct(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleServiceDirectoryNamespaceIamPolicy.DataGoogleServiceDirectoryNamespaceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleServiceDirectoryNamespaceIamPolicy.DataGoogleServiceDirectoryNamespaceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +445,7 @@ func DataGoogleServiceDirectoryNamespaceIamPolicy_IsTerraformDataSource(x interf
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleServiceDirectoryNamespaceIamPolicy.DataGoogleServiceDirectoryNamespaceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleServiceDirectoryNamespaceIamPolicy.DataGoogleServiceDirectoryNamespaceIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -464,7 +464,7 @@ func DataGoogleServiceDirectoryNamespaceIamPolicy_IsTerraformElement(x interface
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleServiceDirectoryNamespaceIamPolicy.DataGoogleServiceDirectoryNamespaceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleServiceDirectoryNamespaceIamPolicy.DataGoogleServiceDirectoryNamespaceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataGoogleServiceDirectoryNamespaceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleServiceDirectoryNamespaceIamPolicy.DataGoogleServiceDirectoryNamespaceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleServiceDirectoryNamespaceIamPolicy.DataGoogleServiceDirectoryNamespaceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

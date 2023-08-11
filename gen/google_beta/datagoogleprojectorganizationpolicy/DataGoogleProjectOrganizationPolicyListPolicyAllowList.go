@@ -104,7 +104,7 @@ func NewDataGoogleProjectOrganizationPolicyListPolicyAllowList(terraformResource
 	j := jsiiProxy_DataGoogleProjectOrganizationPolicyListPolicyAllowList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicyListPolicyAllowList",
+		"@cdktf/provider-google-beta.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicyListPolicyAllowList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleProjectOrganizationPolicyListPolicyAllowList_Override(d DataGo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicyListPolicyAllowList",
+		"@cdktf/provider-google-beta.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicyListPolicyAllowList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

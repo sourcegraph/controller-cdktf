@@ -202,7 +202,7 @@ func NewSesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDest
 	j := jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference{}
 
 	_jsii_.Create(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDest
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -777,7 +777,7 @@ func NewGlueDevEndpoint(scope constructs.Construct, id *string, config *GlueDevE
 	j := jsiiProxy_GlueDevEndpoint{}
 
 	_jsii_.Create(
-		"aws.glueDevEndpoint.GlueDevEndpoint",
+		"@cdktf/provider-aws.glueDevEndpoint.GlueDevEndpoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -790,7 +790,7 @@ func NewGlueDevEndpoint_Override(g GlueDevEndpoint, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueDevEndpoint.GlueDevEndpoint",
+		"@cdktf/provider-aws.glueDevEndpoint.GlueDevEndpoint",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1077,7 +1077,7 @@ func GlueDevEndpoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueDevEndpoint.GlueDevEndpoint",
+		"@cdktf/provider-aws.glueDevEndpoint.GlueDevEndpoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1096,7 +1096,7 @@ func GlueDevEndpoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueDevEndpoint.GlueDevEndpoint",
+		"@cdktf/provider-aws.glueDevEndpoint.GlueDevEndpoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1115,7 +1115,7 @@ func GlueDevEndpoint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueDevEndpoint.GlueDevEndpoint",
+		"@cdktf/provider-aws.glueDevEndpoint.GlueDevEndpoint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1128,7 +1128,7 @@ func GlueDevEndpoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.glueDevEndpoint.GlueDevEndpoint",
+		"@cdktf/provider-aws.glueDevEndpoint.GlueDevEndpoint",
 		"tfResourceType",
 		&returns,
 	)

@@ -535,7 +535,7 @@ func NewDataAwsElasticsearchDomain(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataAwsElasticsearchDomain{}
 
 	_jsii_.Create(
-		"aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain",
+		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -548,7 +548,7 @@ func NewDataAwsElasticsearchDomain_Override(d DataAwsElasticsearchDomain, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain",
+		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -659,7 +659,7 @@ func DataAwsElasticsearchDomain_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain",
+		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DataAwsElasticsearchDomain_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain",
+		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -697,7 +697,7 @@ func DataAwsElasticsearchDomain_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain",
+		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -710,7 +710,7 @@ func DataAwsElasticsearchDomain_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain",
+		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain",
 		"tfResourceType",
 		&returns,
 	)

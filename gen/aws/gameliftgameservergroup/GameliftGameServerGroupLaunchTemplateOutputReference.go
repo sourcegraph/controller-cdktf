@@ -228,7 +228,7 @@ func NewGameliftGameServerGroupLaunchTemplateOutputReference(terraformResource c
 	j := jsiiProxy_GameliftGameServerGroupLaunchTemplateOutputReference{}
 
 	_jsii_.Create(
-		"aws.gameliftGameServerGroup.GameliftGameServerGroupLaunchTemplateOutputReference",
+		"@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupLaunchTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGameliftGameServerGroupLaunchTemplateOutputReference_Override(g Gamelift
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftGameServerGroup.GameliftGameServerGroupLaunchTemplateOutputReference",
+		"@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupLaunchTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

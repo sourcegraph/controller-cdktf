@@ -415,7 +415,7 @@ func NewDataOktaAuthenticator(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataOktaAuthenticator{}
 
 	_jsii_.Create(
-		"okta.dataOktaAuthenticator.DataOktaAuthenticator",
+		"@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticator",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -428,7 +428,7 @@ func NewDataOktaAuthenticator_Override(d DataOktaAuthenticator, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaAuthenticator.DataOktaAuthenticator",
+		"@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticator",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -539,7 +539,7 @@ func DataOktaAuthenticator_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaAuthenticator.DataOktaAuthenticator",
+		"@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticator",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -558,7 +558,7 @@ func DataOktaAuthenticator_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaAuthenticator.DataOktaAuthenticator",
+		"@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticator",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func DataOktaAuthenticator_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaAuthenticator.DataOktaAuthenticator",
+		"@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticator",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -590,7 +590,7 @@ func DataOktaAuthenticator_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.dataOktaAuthenticator.DataOktaAuthenticator",
+		"@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticator",
 		"tfResourceType",
 		&returns,
 	)

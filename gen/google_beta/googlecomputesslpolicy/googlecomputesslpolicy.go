@@ -507,7 +507,7 @@ func NewGoogleComputeSslPolicy(scope constructs.Construct, id *string, config *G
 	j := jsiiProxy_GoogleComputeSslPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeSslPolicy.GoogleComputeSslPolicy",
+		"@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -520,7 +520,7 @@ func NewGoogleComputeSslPolicy_Override(g GoogleComputeSslPolicy, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeSslPolicy.GoogleComputeSslPolicy",
+		"@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -697,7 +697,7 @@ func GoogleComputeSslPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSslPolicy.GoogleComputeSslPolicy",
+		"@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -716,7 +716,7 @@ func GoogleComputeSslPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSslPolicy.GoogleComputeSslPolicy",
+		"@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func GoogleComputeSslPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSslPolicy.GoogleComputeSslPolicy",
+		"@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -748,7 +748,7 @@ func GoogleComputeSslPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeSslPolicy.GoogleComputeSslPolicy",
+		"@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicy",
 		"tfResourceType",
 		&returns,
 	)

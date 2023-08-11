@@ -116,7 +116,7 @@ func NewPodSpecContainerLivenessProbeTcpSocketList(terraformResource cdktf.IInte
 	j := jsiiProxy_PodSpecContainerLivenessProbeTcpSocketList{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerLivenessProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerLivenessProbeTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodSpecContainerLivenessProbeTcpSocketList_Override(p PodSpecContainerLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerLivenessProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerLivenessProbeTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

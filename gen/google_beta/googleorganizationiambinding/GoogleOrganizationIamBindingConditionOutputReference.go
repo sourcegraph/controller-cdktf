@@ -226,7 +226,7 @@ func NewGoogleOrganizationIamBindingConditionOutputReference(terraformResource c
 	j := jsiiProxy_GoogleOrganizationIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleOrganizationIamBindingConditionOutputReference_Override(g GoogleOr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

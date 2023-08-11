@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.kmsCryptoKey.KmsCryptoKey",
+		"@cdktf/provider-google.kmsCryptoKey.KmsCryptoKey",
 		reflect.TypeOf((*KmsCryptoKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,15 +85,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.kmsCryptoKey.KmsCryptoKeyConfig",
+		"@cdktf/provider-google.kmsCryptoKey.KmsCryptoKeyConfig",
 		reflect.TypeOf((*KmsCryptoKeyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.kmsCryptoKey.KmsCryptoKeyTimeouts",
+		"@cdktf/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts",
 		reflect.TypeOf((*KmsCryptoKeyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.kmsCryptoKey.KmsCryptoKeyTimeoutsOutputReference",
+		"@cdktf/provider-google.kmsCryptoKey.KmsCryptoKeyTimeoutsOutputReference",
 		reflect.TypeOf((*KmsCryptoKeyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -134,11 +134,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.kmsCryptoKey.KmsCryptoKeyVersionTemplate",
+		"@cdktf/provider-google.kmsCryptoKey.KmsCryptoKeyVersionTemplate",
 		reflect.TypeOf((*KmsCryptoKeyVersionTemplate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.kmsCryptoKey.KmsCryptoKeyVersionTemplateOutputReference",
+		"@cdktf/provider-google.kmsCryptoKey.KmsCryptoKeyVersionTemplateOutputReference",
 		reflect.TypeOf((*KmsCryptoKeyVersionTemplateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},

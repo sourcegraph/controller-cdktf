@@ -226,7 +226,7 @@ func NewBigqueryAnalyticsHubListingIamBindingConditionOutputReference(terraformR
 	j := jsiiProxy_BigqueryAnalyticsHubListingIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBindingConditionOutputReference",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewBigqueryAnalyticsHubListingIamBindingConditionOutputReference_Override(b
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBindingConditionOutputReference",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

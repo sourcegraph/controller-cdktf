@@ -390,7 +390,7 @@ func NewChimeVoiceConnectorStreaming(scope constructs.Construct, id *string, con
 	j := jsiiProxy_ChimeVoiceConnectorStreaming{}
 
 	_jsii_.Create(
-		"aws.chimeVoiceConnectorStreaming.ChimeVoiceConnectorStreaming",
+		"@cdktf/provider-aws.chimeVoiceConnectorStreaming.ChimeVoiceConnectorStreaming",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewChimeVoiceConnectorStreaming_Override(c ChimeVoiceConnectorStreaming, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.chimeVoiceConnectorStreaming.ChimeVoiceConnectorStreaming",
+		"@cdktf/provider-aws.chimeVoiceConnectorStreaming.ChimeVoiceConnectorStreaming",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -558,7 +558,7 @@ func ChimeVoiceConnectorStreaming_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.chimeVoiceConnectorStreaming.ChimeVoiceConnectorStreaming",
+		"@cdktf/provider-aws.chimeVoiceConnectorStreaming.ChimeVoiceConnectorStreaming",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func ChimeVoiceConnectorStreaming_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.chimeVoiceConnectorStreaming.ChimeVoiceConnectorStreaming",
+		"@cdktf/provider-aws.chimeVoiceConnectorStreaming.ChimeVoiceConnectorStreaming",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func ChimeVoiceConnectorStreaming_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.chimeVoiceConnectorStreaming.ChimeVoiceConnectorStreaming",
+		"@cdktf/provider-aws.chimeVoiceConnectorStreaming.ChimeVoiceConnectorStreaming",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func ChimeVoiceConnectorStreaming_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.chimeVoiceConnectorStreaming.ChimeVoiceConnectorStreaming",
+		"@cdktf/provider-aws.chimeVoiceConnectorStreaming.ChimeVoiceConnectorStreaming",
 		"tfResourceType",
 		&returns,
 	)

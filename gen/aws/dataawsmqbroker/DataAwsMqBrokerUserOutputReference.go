@@ -189,7 +189,7 @@ func NewDataAwsMqBrokerUserOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataAwsMqBrokerUserOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsMqBroker.DataAwsMqBrokerUserOutputReference",
+		"@cdktf/provider-aws.dataAwsMqBroker.DataAwsMqBrokerUserOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsMqBrokerUserOutputReference_Override(d DataAwsMqBrokerUserOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMqBroker.DataAwsMqBrokerUserOutputReference",
+		"@cdktf/provider-aws.dataAwsMqBroker.DataAwsMqBrokerUserOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

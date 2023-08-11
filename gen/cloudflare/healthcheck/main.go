@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.healthcheck.Healthcheck",
+		"@cdktf/provider-cloudflare.healthcheck.Healthcheck",
 		reflect.TypeOf((*Healthcheck)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -118,15 +118,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.healthcheck.HealthcheckConfig",
+		"@cdktf/provider-cloudflare.healthcheck.HealthcheckConfig",
 		reflect.TypeOf((*HealthcheckConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.healthcheck.HealthcheckHeader",
+		"@cdktf/provider-cloudflare.healthcheck.HealthcheckHeader",
 		reflect.TypeOf((*HealthcheckHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.healthcheck.HealthcheckHeaderList",
+		"@cdktf/provider-cloudflare.healthcheck.HealthcheckHeaderList",
 		reflect.TypeOf((*HealthcheckHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -147,7 +147,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.healthcheck.HealthcheckHeaderOutputReference",
+		"@cdktf/provider-cloudflare.healthcheck.HealthcheckHeaderOutputReference",
 		reflect.TypeOf((*HealthcheckHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -183,11 +183,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.healthcheck.HealthcheckTimeouts",
+		"@cdktf/provider-cloudflare.healthcheck.HealthcheckTimeouts",
 		reflect.TypeOf((*HealthcheckTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.healthcheck.HealthcheckTimeoutsOutputReference",
+		"@cdktf/provider-cloudflare.healthcheck.HealthcheckTimeoutsOutputReference",
 		reflect.TypeOf((*HealthcheckTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

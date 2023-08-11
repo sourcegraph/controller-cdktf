@@ -203,7 +203,7 @@ func NewSchedulerScheduleFlexibleTimeWindowOutputReference(terraformResource cdk
 	j := jsiiProxy_SchedulerScheduleFlexibleTimeWindowOutputReference{}
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleFlexibleTimeWindowOutputReference",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleFlexibleTimeWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewSchedulerScheduleFlexibleTimeWindowOutputReference_Override(s SchedulerS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleFlexibleTimeWindowOutputReference",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleFlexibleTimeWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

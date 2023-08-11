@@ -179,7 +179,7 @@ func NewLaunchTemplateLicenseSpecificationOutputReference(terraformResource cdkt
 	j := jsiiProxy_LaunchTemplateLicenseSpecificationOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateLicenseSpecificationOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewLaunchTemplateLicenseSpecificationOutputReference_Override(l LaunchTempl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateLicenseSpecificationOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

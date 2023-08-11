@@ -777,7 +777,7 @@ func NewGoogleComputeInterconnectAttachment(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleComputeInterconnectAttachment{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment",
+		"@cdktf/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -790,7 +790,7 @@ func NewGoogleComputeInterconnectAttachment_Override(g GoogleComputeInterconnect
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment",
+		"@cdktf/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1066,7 +1066,7 @@ func GoogleComputeInterconnectAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment",
+		"@cdktf/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1085,7 +1085,7 @@ func GoogleComputeInterconnectAttachment_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment",
+		"@cdktf/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1104,7 +1104,7 @@ func GoogleComputeInterconnectAttachment_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment",
+		"@cdktf/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1117,7 +1117,7 @@ func GoogleComputeInterconnectAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment",
+		"@cdktf/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachment",
 		"tfResourceType",
 		&returns,
 	)

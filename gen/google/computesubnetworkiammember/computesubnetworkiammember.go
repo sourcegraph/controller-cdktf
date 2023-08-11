@@ -448,7 +448,7 @@ func NewComputeSubnetworkIamMember(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_ComputeSubnetworkIamMember{}
 
 	_jsii_.Create(
-		"google.computeSubnetworkIamMember.ComputeSubnetworkIamMember",
+		"@cdktf/provider-google.computeSubnetworkIamMember.ComputeSubnetworkIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewComputeSubnetworkIamMember_Override(c ComputeSubnetworkIamMember, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSubnetworkIamMember.ComputeSubnetworkIamMember",
+		"@cdktf/provider-google.computeSubnetworkIamMember.ComputeSubnetworkIamMember",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -627,7 +627,7 @@ func ComputeSubnetworkIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSubnetworkIamMember.ComputeSubnetworkIamMember",
+		"@cdktf/provider-google.computeSubnetworkIamMember.ComputeSubnetworkIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func ComputeSubnetworkIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSubnetworkIamMember.ComputeSubnetworkIamMember",
+		"@cdktf/provider-google.computeSubnetworkIamMember.ComputeSubnetworkIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func ComputeSubnetworkIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSubnetworkIamMember.ComputeSubnetworkIamMember",
+		"@cdktf/provider-google.computeSubnetworkIamMember.ComputeSubnetworkIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func ComputeSubnetworkIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeSubnetworkIamMember.ComputeSubnetworkIamMember",
+		"@cdktf/provider-google.computeSubnetworkIamMember.ComputeSubnetworkIamMember",
 		"tfResourceType",
 		&returns,
 	)

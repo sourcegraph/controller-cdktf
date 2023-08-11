@@ -272,7 +272,7 @@ func NewDatastreamConnectionProfilePostgresqlProfileOutputReference(terraformRes
 	j := jsiiProxy_DatastreamConnectionProfilePostgresqlProfileOutputReference{}
 
 	_jsii_.Create(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileOutputReference",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -284,7 +284,7 @@ func NewDatastreamConnectionProfilePostgresqlProfileOutputReference_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileOutputReference",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

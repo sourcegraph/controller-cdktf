@@ -204,7 +204,7 @@ func NewGoogleFirebaseHostingVersionConfigAOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigAOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleFirebaseHostingVersionConfigAOutputReference_Override(g GoogleFire
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigAOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

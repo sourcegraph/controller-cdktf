@@ -424,7 +424,7 @@ func NewIapWebTypeAppEngineIamBinding(scope constructs.Construct, id *string, co
 	j := jsiiProxy_IapWebTypeAppEngineIamBinding{}
 
 	_jsii_.Create(
-		"google.iapWebTypeAppEngineIamBinding.IapWebTypeAppEngineIamBinding",
+		"@cdktf/provider-google.iapWebTypeAppEngineIamBinding.IapWebTypeAppEngineIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewIapWebTypeAppEngineIamBinding_Override(i IapWebTypeAppEngineIamBinding, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapWebTypeAppEngineIamBinding.IapWebTypeAppEngineIamBinding",
+		"@cdktf/provider-google.iapWebTypeAppEngineIamBinding.IapWebTypeAppEngineIamBinding",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -592,7 +592,7 @@ func IapWebTypeAppEngineIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebTypeAppEngineIamBinding.IapWebTypeAppEngineIamBinding",
+		"@cdktf/provider-google.iapWebTypeAppEngineIamBinding.IapWebTypeAppEngineIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func IapWebTypeAppEngineIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebTypeAppEngineIamBinding.IapWebTypeAppEngineIamBinding",
+		"@cdktf/provider-google.iapWebTypeAppEngineIamBinding.IapWebTypeAppEngineIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func IapWebTypeAppEngineIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebTypeAppEngineIamBinding.IapWebTypeAppEngineIamBinding",
+		"@cdktf/provider-google.iapWebTypeAppEngineIamBinding.IapWebTypeAppEngineIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func IapWebTypeAppEngineIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.iapWebTypeAppEngineIamBinding.IapWebTypeAppEngineIamBinding",
+		"@cdktf/provider-google.iapWebTypeAppEngineIamBinding.IapWebTypeAppEngineIamBinding",
 		"tfResourceType",
 		&returns,
 	)

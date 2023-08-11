@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndex",
+		"@cdktf/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndex",
 		reflect.TypeOf((*DataAwsLocationPlaceIndex)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,15 +64,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexConfig",
+		"@cdktf/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexConfig",
 		reflect.TypeOf((*DataAwsLocationPlaceIndexConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexDataSourceConfiguration",
+		"@cdktf/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexDataSourceConfiguration",
 		reflect.TypeOf((*DataAwsLocationPlaceIndexDataSourceConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexDataSourceConfigurationList",
+		"@cdktf/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexDataSourceConfigurationList",
 		reflect.TypeOf((*DataAwsLocationPlaceIndexDataSourceConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -92,7 +92,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexDataSourceConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexDataSourceConfigurationOutputReference",
 		reflect.TypeOf((*DataAwsLocationPlaceIndexDataSourceConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

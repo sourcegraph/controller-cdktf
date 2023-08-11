@@ -436,7 +436,7 @@ func NewGoogleApigeeEnvReferences(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleApigeeEnvReferences{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeEnvReferences.GoogleApigeeEnvReferences",
+		"@cdktf/provider-google-beta.googleApigeeEnvReferences.GoogleApigeeEnvReferences",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -449,7 +449,7 @@ func NewGoogleApigeeEnvReferences_Override(g GoogleApigeeEnvReferences, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeEnvReferences.GoogleApigeeEnvReferences",
+		"@cdktf/provider-google-beta.googleApigeeEnvReferences.GoogleApigeeEnvReferences",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -615,7 +615,7 @@ func GoogleApigeeEnvReferences_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeEnvReferences.GoogleApigeeEnvReferences",
+		"@cdktf/provider-google-beta.googleApigeeEnvReferences.GoogleApigeeEnvReferences",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func GoogleApigeeEnvReferences_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeEnvReferences.GoogleApigeeEnvReferences",
+		"@cdktf/provider-google-beta.googleApigeeEnvReferences.GoogleApigeeEnvReferences",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func GoogleApigeeEnvReferences_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeEnvReferences.GoogleApigeeEnvReferences",
+		"@cdktf/provider-google-beta.googleApigeeEnvReferences.GoogleApigeeEnvReferences",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func GoogleApigeeEnvReferences_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleApigeeEnvReferences.GoogleApigeeEnvReferences",
+		"@cdktf/provider-google-beta.googleApigeeEnvReferences.GoogleApigeeEnvReferences",
 		"tfResourceType",
 		&returns,
 	)

@@ -225,7 +225,7 @@ func NewKinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference(terrafo
 	j := jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference{}
 
 	_jsii_.Create(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewKinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

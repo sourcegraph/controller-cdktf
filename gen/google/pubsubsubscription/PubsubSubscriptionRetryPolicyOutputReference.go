@@ -204,7 +204,7 @@ func NewPubsubSubscriptionRetryPolicyOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_PubsubSubscriptionRetryPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.pubsubSubscription.PubsubSubscriptionRetryPolicyOutputReference",
+		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionRetryPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPubsubSubscriptionRetryPolicyOutputReference_Override(p PubsubSubscripti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.pubsubSubscription.PubsubSubscriptionRetryPolicyOutputReference",
+		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionRetryPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

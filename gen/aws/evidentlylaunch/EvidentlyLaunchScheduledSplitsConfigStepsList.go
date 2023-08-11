@@ -116,7 +116,7 @@ func NewEvidentlyLaunchScheduledSplitsConfigStepsList(terraformResource cdktf.II
 	j := jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsList{}
 
 	_jsii_.Create(
-		"aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsList",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEvidentlyLaunchScheduledSplitsConfigStepsList_Override(e EvidentlyLaunch
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsList",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

@@ -251,7 +251,7 @@ func NewPubsubSubscriptionBigqueryConfigOutputReference(terraformResource cdktf.
 	j := jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference",
+		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewPubsubSubscriptionBigqueryConfigOutputReference_Override(p PubsubSubscri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference",
+		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

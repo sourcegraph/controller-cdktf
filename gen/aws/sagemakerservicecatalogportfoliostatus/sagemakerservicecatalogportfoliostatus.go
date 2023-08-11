@@ -319,7 +319,7 @@ func NewSagemakerServicecatalogPortfolioStatus(scope constructs.Construct, id *s
 	j := jsiiProxy_SagemakerServicecatalogPortfolioStatus{}
 
 	_jsii_.Create(
-		"aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatus",
+		"@cdktf/provider-aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatus",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -332,7 +332,7 @@ func NewSagemakerServicecatalogPortfolioStatus_Override(s SagemakerServicecatalo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatus",
+		"@cdktf/provider-aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatus",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -454,7 +454,7 @@ func SagemakerServicecatalogPortfolioStatus_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatus",
+		"@cdktf/provider-aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatus",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -473,7 +473,7 @@ func SagemakerServicecatalogPortfolioStatus_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatus",
+		"@cdktf/provider-aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatus",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -492,7 +492,7 @@ func SagemakerServicecatalogPortfolioStatus_IsTerraformResource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatus",
+		"@cdktf/provider-aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatus",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func SagemakerServicecatalogPortfolioStatus_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatus",
+		"@cdktf/provider-aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatus",
 		"tfResourceType",
 		&returns,
 	)

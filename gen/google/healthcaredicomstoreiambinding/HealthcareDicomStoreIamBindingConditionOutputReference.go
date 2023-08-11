@@ -226,7 +226,7 @@ func NewHealthcareDicomStoreIamBindingConditionOutputReference(terraformResource
 	j := jsiiProxy_HealthcareDicomStoreIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.healthcareDicomStoreIamBinding.HealthcareDicomStoreIamBindingConditionOutputReference",
+		"@cdktf/provider-google.healthcareDicomStoreIamBinding.HealthcareDicomStoreIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewHealthcareDicomStoreIamBindingConditionOutputReference_Override(h Health
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareDicomStoreIamBinding.HealthcareDicomStoreIamBindingConditionOutputReference",
+		"@cdktf/provider-google.healthcareDicomStoreIamBinding.HealthcareDicomStoreIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		h,
 	)

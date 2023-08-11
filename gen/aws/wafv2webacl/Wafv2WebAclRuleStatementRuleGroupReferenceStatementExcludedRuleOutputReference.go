@@ -179,7 +179,7 @@ func NewWafv2WebAclRuleStatementRuleGroupReferenceStatementExcludedRuleOutputRef
 	j := jsiiProxy_Wafv2WebAclRuleStatementRuleGroupReferenceStatementExcludedRuleOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementRuleGroupReferenceStatementExcludedRuleOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementRuleGroupReferenceStatementExcludedRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewWafv2WebAclRuleStatementRuleGroupReferenceStatementExcludedRuleOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementRuleGroupReferenceStatementExcludedRuleOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementRuleGroupReferenceStatementExcludedRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

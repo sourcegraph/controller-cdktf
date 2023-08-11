@@ -204,7 +204,7 @@ func NewDatastreamPrivateConnectionTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_DatastreamPrivateConnectionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.datastreamPrivateConnection.DatastreamPrivateConnectionTimeoutsOutputReference",
+		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDatastreamPrivateConnectionTimeoutsOutputReference_Override(d Datastream
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamPrivateConnection.DatastreamPrivateConnectionTimeoutsOutputReference",
+		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

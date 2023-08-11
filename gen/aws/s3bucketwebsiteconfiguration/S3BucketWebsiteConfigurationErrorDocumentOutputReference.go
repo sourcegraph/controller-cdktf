@@ -179,7 +179,7 @@ func NewS3BucketWebsiteConfigurationErrorDocumentOutputReference(terraformResour
 	j := jsiiProxy_S3BucketWebsiteConfigurationErrorDocumentOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocumentOutputReference",
+		"@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocumentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewS3BucketWebsiteConfigurationErrorDocumentOutputReference_Override(s S3Bu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocumentOutputReference",
+		"@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocumentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

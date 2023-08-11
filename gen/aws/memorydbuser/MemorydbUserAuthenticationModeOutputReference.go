@@ -213,7 +213,7 @@ func NewMemorydbUserAuthenticationModeOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_MemorydbUserAuthenticationModeOutputReference{}
 
 	_jsii_.Create(
-		"aws.memorydbUser.MemorydbUserAuthenticationModeOutputReference",
+		"@cdktf/provider-aws.memorydbUser.MemorydbUserAuthenticationModeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -225,7 +225,7 @@ func NewMemorydbUserAuthenticationModeOutputReference_Override(m MemorydbUserAut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.memorydbUser.MemorydbUserAuthenticationModeOutputReference",
+		"@cdktf/provider-aws.memorydbUser.MemorydbUserAuthenticationModeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

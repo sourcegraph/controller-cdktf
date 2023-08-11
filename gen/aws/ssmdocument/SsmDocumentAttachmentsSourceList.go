@@ -116,7 +116,7 @@ func NewSsmDocumentAttachmentsSourceList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_SsmDocumentAttachmentsSourceList{}
 
 	_jsii_.Create(
-		"aws.ssmDocument.SsmDocumentAttachmentsSourceList",
+		"@cdktf/provider-aws.ssmDocument.SsmDocumentAttachmentsSourceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSsmDocumentAttachmentsSourceList_Override(s SsmDocumentAttachmentsSource
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmDocument.SsmDocumentAttachmentsSourceList",
+		"@cdktf/provider-aws.ssmDocument.SsmDocumentAttachmentsSourceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

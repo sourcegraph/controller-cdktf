@@ -204,7 +204,7 @@ func NewPodV1SpecVolumePersistentVolumeClaimOutputReference(terraformResource cd
 	j := jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumePersistentVolumeClaimOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumePersistentVolumeClaimOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPodV1SpecVolumePersistentVolumeClaimOutputReference_Override(p PodV1Spec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumePersistentVolumeClaimOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumePersistentVolumeClaimOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

@@ -104,7 +104,7 @@ func NewGoogleComputeInstanceFromMachineImageBootDiskInitializeParamsList(terraf
 	j := jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsList",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleComputeInstanceFromMachineImageBootDiskInitializeParamsList_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsList",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

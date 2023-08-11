@@ -116,7 +116,7 @@ func NewAlbListenerRuleConditionQueryStringList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_AlbListenerRuleConditionQueryStringList{}
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRuleConditionQueryStringList",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryStringList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAlbListenerRuleConditionQueryStringList_Override(a AlbListenerRuleCondit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRuleConditionQueryStringList",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryStringList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

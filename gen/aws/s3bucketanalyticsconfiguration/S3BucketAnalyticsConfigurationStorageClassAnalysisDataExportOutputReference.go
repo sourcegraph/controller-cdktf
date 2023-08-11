@@ -203,7 +203,7 @@ func NewS3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputRefere
 	j := jsiiProxy_S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference",
+		"@cdktf/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewS3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference",
+		"@cdktf/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

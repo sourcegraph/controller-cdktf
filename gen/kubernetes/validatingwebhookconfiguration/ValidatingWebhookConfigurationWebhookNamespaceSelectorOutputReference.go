@@ -204,7 +204,7 @@ func NewValidatingWebhookConfigurationWebhookNamespaceSelectorOutputReference(te
 	j := jsiiProxy_ValidatingWebhookConfigurationWebhookNamespaceSelectorOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfigurationWebhookNamespaceSelectorOutputReference",
+		"@cdktf/provider-kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfigurationWebhookNamespaceSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewValidatingWebhookConfigurationWebhookNamespaceSelectorOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfigurationWebhookNamespaceSelectorOutputReference",
+		"@cdktf/provider-kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfigurationWebhookNamespaceSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

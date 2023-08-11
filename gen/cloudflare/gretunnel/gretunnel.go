@@ -556,7 +556,7 @@ func NewGreTunnel(scope constructs.Construct, id *string, config *GreTunnelConfi
 	j := jsiiProxy_GreTunnel{}
 
 	_jsii_.Create(
-		"cloudflare.greTunnel.GreTunnel",
+		"@cdktf/provider-cloudflare.greTunnel.GreTunnel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -569,7 +569,7 @@ func NewGreTunnel_Override(g GreTunnel, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.greTunnel.GreTunnel",
+		"@cdktf/provider-cloudflare.greTunnel.GreTunnel",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -801,7 +801,7 @@ func GreTunnel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.greTunnel.GreTunnel",
+		"@cdktf/provider-cloudflare.greTunnel.GreTunnel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -820,7 +820,7 @@ func GreTunnel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.greTunnel.GreTunnel",
+		"@cdktf/provider-cloudflare.greTunnel.GreTunnel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -839,7 +839,7 @@ func GreTunnel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.greTunnel.GreTunnel",
+		"@cdktf/provider-cloudflare.greTunnel.GreTunnel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -852,7 +852,7 @@ func GreTunnel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.greTunnel.GreTunnel",
+		"@cdktf/provider-cloudflare.greTunnel.GreTunnel",
 		"tfResourceType",
 		&returns,
 	)

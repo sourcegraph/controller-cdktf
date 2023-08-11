@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicy",
+		"@cdktf/provider-google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicy",
 		reflect.TypeOf((*GoogleBigtableGcPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,15 +81,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyConfig",
+		"@cdktf/provider-google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyConfig",
 		reflect.TypeOf((*GoogleBigtableGcPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyMaxAge",
+		"@cdktf/provider-google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyMaxAge",
 		reflect.TypeOf((*GoogleBigtableGcPolicyMaxAge)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyMaxAgeOutputReference",
+		"@cdktf/provider-google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyMaxAgeOutputReference",
 		reflect.TypeOf((*GoogleBigtableGcPolicyMaxAgeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -127,11 +127,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyMaxVersion",
+		"@cdktf/provider-google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyMaxVersion",
 		reflect.TypeOf((*GoogleBigtableGcPolicyMaxVersion)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyMaxVersionList",
+		"@cdktf/provider-google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyMaxVersionList",
 		reflect.TypeOf((*GoogleBigtableGcPolicyMaxVersionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -152,7 +152,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyMaxVersionOutputReference",
+		"@cdktf/provider-google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyMaxVersionOutputReference",
 		reflect.TypeOf((*GoogleBigtableGcPolicyMaxVersionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

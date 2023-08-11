@@ -276,7 +276,7 @@ func NewComputeBackendServiceCircuitBreakersOutputReference(terraformResource cd
 	j := jsiiProxy_ComputeBackendServiceCircuitBreakersOutputReference{}
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceCircuitBreakersOutputReference",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCircuitBreakersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewComputeBackendServiceCircuitBreakersOutputReference_Override(c ComputeBa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceCircuitBreakersOutputReference",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCircuitBreakersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

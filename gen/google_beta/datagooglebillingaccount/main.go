@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleBillingAccount.DataGoogleBillingAccount",
+		"@cdktf/provider-google-beta.dataGoogleBillingAccount.DataGoogleBillingAccount",
 		reflect.TypeOf((*DataGoogleBillingAccount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleBillingAccount.DataGoogleBillingAccountConfig",
+		"@cdktf/provider-google-beta.dataGoogleBillingAccount.DataGoogleBillingAccountConfig",
 		reflect.TypeOf((*DataGoogleBillingAccountConfig)(nil)).Elem(),
 	)
 }

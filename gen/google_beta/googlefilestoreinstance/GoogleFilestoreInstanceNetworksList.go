@@ -116,7 +116,7 @@ func NewGoogleFilestoreInstanceNetworksList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_GoogleFilestoreInstanceNetworksList{}
 
 	_jsii_.Create(
-		"google-beta.googleFilestoreInstance.GoogleFilestoreInstanceNetworksList",
+		"@cdktf/provider-google-beta.googleFilestoreInstance.GoogleFilestoreInstanceNetworksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleFilestoreInstanceNetworksList_Override(g GoogleFilestoreInstanceNe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFilestoreInstance.GoogleFilestoreInstanceNetworksList",
+		"@cdktf/provider-google-beta.googleFilestoreInstance.GoogleFilestoreInstanceNetworksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

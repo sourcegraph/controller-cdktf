@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.emrStudio.EmrStudio",
+		"@cdktf/provider-aws.emrStudio.EmrStudio",
 		reflect.TypeOf((*EmrStudio)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.emrStudio.EmrStudioConfig",
+		"@cdktf/provider-aws.emrStudio.EmrStudioConfig",
 		reflect.TypeOf((*EmrStudioConfig)(nil)).Elem(),
 	)
 }

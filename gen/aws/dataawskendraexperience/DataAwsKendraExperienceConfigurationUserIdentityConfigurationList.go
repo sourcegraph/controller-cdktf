@@ -104,7 +104,7 @@ func NewDataAwsKendraExperienceConfigurationUserIdentityConfigurationList(terraf
 	j := jsiiProxy_DataAwsKendraExperienceConfigurationUserIdentityConfigurationList{}
 
 	_jsii_.Create(
-		"aws.dataAwsKendraExperience.DataAwsKendraExperienceConfigurationUserIdentityConfigurationList",
+		"@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfigurationUserIdentityConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsKendraExperienceConfigurationUserIdentityConfigurationList_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKendraExperience.DataAwsKendraExperienceConfigurationUserIdentityConfigurationList",
+		"@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfigurationUserIdentityConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

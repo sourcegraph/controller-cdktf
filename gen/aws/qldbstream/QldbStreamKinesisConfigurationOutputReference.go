@@ -203,7 +203,7 @@ func NewQldbStreamKinesisConfigurationOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_QldbStreamKinesisConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.qldbStream.QldbStreamKinesisConfigurationOutputReference",
+		"@cdktf/provider-aws.qldbStream.QldbStreamKinesisConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewQldbStreamKinesisConfigurationOutputReference_Override(q QldbStreamKines
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.qldbStream.QldbStreamKinesisConfigurationOutputReference",
+		"@cdktf/provider-aws.qldbStream.QldbStreamKinesisConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)

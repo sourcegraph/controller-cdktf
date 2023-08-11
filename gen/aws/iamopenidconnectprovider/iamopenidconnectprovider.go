@@ -424,7 +424,7 @@ func NewIamOpenidConnectProvider(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_IamOpenidConnectProvider{}
 
 	_jsii_.Create(
-		"aws.iamOpenidConnectProvider.IamOpenidConnectProvider",
+		"@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewIamOpenidConnectProvider_Override(i IamOpenidConnectProvider, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iamOpenidConnectProvider.IamOpenidConnectProvider",
+		"@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProvider",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -603,7 +603,7 @@ func IamOpenidConnectProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamOpenidConnectProvider.IamOpenidConnectProvider",
+		"@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func IamOpenidConnectProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamOpenidConnectProvider.IamOpenidConnectProvider",
+		"@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -641,7 +641,7 @@ func IamOpenidConnectProvider_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamOpenidConnectProvider.IamOpenidConnectProvider",
+		"@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProvider",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func IamOpenidConnectProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iamOpenidConnectProvider.IamOpenidConnectProvider",
+		"@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProvider",
 		"tfResourceType",
 		&returns,
 	)

@@ -203,7 +203,7 @@ func NewNotebooksRuntimeSoftwareConfigKernelsOutputReference(terraformResource c
 	j := jsiiProxy_NotebooksRuntimeSoftwareConfigKernelsOutputReference{}
 
 	_jsii_.Create(
-		"google.notebooksRuntime.NotebooksRuntimeSoftwareConfigKernelsOutputReference",
+		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntimeSoftwareConfigKernelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewNotebooksRuntimeSoftwareConfigKernelsOutputReference_Override(n Notebook
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.notebooksRuntime.NotebooksRuntimeSoftwareConfigKernelsOutputReference",
+		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntimeSoftwareConfigKernelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)

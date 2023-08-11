@@ -203,7 +203,7 @@ func NewGroupSchemaPropertyMasterOverridePriorityOutputReference(terraformResour
 	j := jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference{}
 
 	_jsii_.Create(
-		"okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriorityOutputReference",
+		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriorityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGroupSchemaPropertyMasterOverridePriorityOutputReference_Override(g Grou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriorityOutputReference",
+		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriorityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

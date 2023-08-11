@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.vpc.Vpc",
+		"@cdktf/provider-aws.vpc.Vpc",
 		reflect.TypeOf((*Vpc)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -111,7 +111,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpc.VpcConfig",
+		"@cdktf/provider-aws.vpc.VpcConfig",
 		reflect.TypeOf((*VpcConfig)(nil)).Elem(),
 	)
 }

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.wafRegexMatchSet.WafRegexMatchSet",
+		"@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSet",
 		reflect.TypeOf((*WafRegexMatchSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,19 +62,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafRegexMatchSet.WafRegexMatchSetConfig",
+		"@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetConfig",
 		reflect.TypeOf((*WafRegexMatchSetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTuple",
+		"@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTuple",
 		reflect.TypeOf((*WafRegexMatchSetRegexMatchTuple)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleFieldToMatch",
+		"@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleFieldToMatch",
 		reflect.TypeOf((*WafRegexMatchSetRegexMatchTupleFieldToMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleFieldToMatchOutputReference",
+		"@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleFieldToMatchOutputReference",
 		reflect.TypeOf((*WafRegexMatchSetRegexMatchTupleFieldToMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -111,7 +111,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleList",
+		"@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleList",
 		reflect.TypeOf((*WafRegexMatchSetRegexMatchTupleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -132,7 +132,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleOutputReference",
+		"@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleOutputReference",
 		reflect.TypeOf((*WafRegexMatchSetRegexMatchTupleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

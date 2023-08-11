@@ -300,7 +300,7 @@ func NewContainerClusterIpAllocationPolicyOutputReference(terraformResource cdkt
 	j := jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterIpAllocationPolicyOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterIpAllocationPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewContainerClusterIpAllocationPolicyOutputReference_Override(c ContainerCl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterIpAllocationPolicyOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterIpAllocationPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

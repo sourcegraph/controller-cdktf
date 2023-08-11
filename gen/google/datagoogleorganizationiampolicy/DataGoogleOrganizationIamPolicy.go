@@ -313,7 +313,7 @@ func NewDataGoogleOrganizationIamPolicy(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataGoogleOrganizationIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleOrganizationIamPolicy.DataGoogleOrganizationIamPolicy",
+		"@cdktf/provider-google.dataGoogleOrganizationIamPolicy.DataGoogleOrganizationIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -326,7 +326,7 @@ func NewDataGoogleOrganizationIamPolicy_Override(d DataGoogleOrganizationIamPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleOrganizationIamPolicy.DataGoogleOrganizationIamPolicy",
+		"@cdktf/provider-google.dataGoogleOrganizationIamPolicy.DataGoogleOrganizationIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -426,7 +426,7 @@ func DataGoogleOrganizationIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleOrganizationIamPolicy.DataGoogleOrganizationIamPolicy",
+		"@cdktf/provider-google.dataGoogleOrganizationIamPolicy.DataGoogleOrganizationIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +445,7 @@ func DataGoogleOrganizationIamPolicy_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleOrganizationIamPolicy.DataGoogleOrganizationIamPolicy",
+		"@cdktf/provider-google.dataGoogleOrganizationIamPolicy.DataGoogleOrganizationIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -464,7 +464,7 @@ func DataGoogleOrganizationIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleOrganizationIamPolicy.DataGoogleOrganizationIamPolicy",
+		"@cdktf/provider-google.dataGoogleOrganizationIamPolicy.DataGoogleOrganizationIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataGoogleOrganizationIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleOrganizationIamPolicy.DataGoogleOrganizationIamPolicy",
+		"@cdktf/provider-google.dataGoogleOrganizationIamPolicy.DataGoogleOrganizationIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

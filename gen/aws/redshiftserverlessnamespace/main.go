@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.redshiftserverlessNamespace.RedshiftserverlessNamespace",
+		"@cdktf/provider-aws.redshiftserverlessNamespace.RedshiftserverlessNamespace",
 		reflect.TypeOf((*RedshiftserverlessNamespace)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,7 +86,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.redshiftserverlessNamespace.RedshiftserverlessNamespaceConfig",
+		"@cdktf/provider-aws.redshiftserverlessNamespace.RedshiftserverlessNamespaceConfig",
 		reflect.TypeOf((*RedshiftserverlessNamespaceConfig)(nil)).Elem(),
 	)
 }

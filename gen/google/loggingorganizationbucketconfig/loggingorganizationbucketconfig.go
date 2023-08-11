@@ -459,7 +459,7 @@ func NewLoggingOrganizationBucketConfig(scope constructs.Construct, id *string, 
 	j := jsiiProxy_LoggingOrganizationBucketConfig{}
 
 	_jsii_.Create(
-		"google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig",
+		"@cdktf/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewLoggingOrganizationBucketConfig_Override(l LoggingOrganizationBucketConf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig",
+		"@cdktf/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -638,7 +638,7 @@ func LoggingOrganizationBucketConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig",
+		"@cdktf/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func LoggingOrganizationBucketConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig",
+		"@cdktf/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func LoggingOrganizationBucketConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig",
+		"@cdktf/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func LoggingOrganizationBucketConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig",
+		"@cdktf/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig",
 		"tfResourceType",
 		&returns,
 	)

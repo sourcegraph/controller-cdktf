@@ -1076,7 +1076,7 @@ func NewGoogleComputeInstanceFromMachineImage(scope constructs.Construct, id *st
 	j := jsiiProxy_GoogleComputeInstanceFromMachineImage{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImage",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImage",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1089,7 +1089,7 @@ func NewGoogleComputeInstanceFromMachineImage_Override(g GoogleComputeInstanceFr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImage",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImage",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1398,7 +1398,7 @@ func GoogleComputeInstanceFromMachineImage_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImage",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImage",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1417,7 +1417,7 @@ func GoogleComputeInstanceFromMachineImage_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImage",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImage",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1436,7 +1436,7 @@ func GoogleComputeInstanceFromMachineImage_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImage",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImage",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1449,7 +1449,7 @@ func GoogleComputeInstanceFromMachineImage_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImage",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImage",
 		"tfResourceType",
 		&returns,
 	)

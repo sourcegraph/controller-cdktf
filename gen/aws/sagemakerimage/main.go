@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sagemakerImage.SagemakerImage",
+		"@cdktf/provider-aws.sagemakerImage.SagemakerImage",
 		reflect.TypeOf((*SagemakerImage)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerImage.SagemakerImageConfig",
+		"@cdktf/provider-aws.sagemakerImage.SagemakerImageConfig",
 		reflect.TypeOf((*SagemakerImageConfig)(nil)).Elem(),
 	)
 }

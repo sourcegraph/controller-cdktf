@@ -203,7 +203,7 @@ func NewAppEngineServiceSplitTrafficSplitOutputReference(terraformResource cdktf
 	j := jsiiProxy_AppEngineServiceSplitTrafficSplitOutputReference{}
 
 	_jsii_.Create(
-		"google.appEngineServiceSplitTraffic.AppEngineServiceSplitTrafficSplitOutputReference",
+		"@cdktf/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTrafficSplitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAppEngineServiceSplitTrafficSplitOutputReference_Override(a AppEngineSer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineServiceSplitTraffic.AppEngineServiceSplitTrafficSplitOutputReference",
+		"@cdktf/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTrafficSplitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -203,7 +203,7 @@ func NewCloudbuildWorkerPoolNetworkConfigOutputReference(terraformResource cdktf
 	j := jsiiProxy_CloudbuildWorkerPoolNetworkConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudbuildWorkerPool.CloudbuildWorkerPoolNetworkConfigOutputReference",
+		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolNetworkConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewCloudbuildWorkerPoolNetworkConfigOutputReference_Override(c CloudbuildWo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudbuildWorkerPool.CloudbuildWorkerPoolNetworkConfigOutputReference",
+		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolNetworkConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

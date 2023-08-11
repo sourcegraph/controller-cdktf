@@ -462,7 +462,7 @@ func NewGoogleComputeNetworkEndpoint(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleComputeNetworkEndpoint{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeNetworkEndpoint.GoogleComputeNetworkEndpoint",
+		"@cdktf/provider-google-beta.googleComputeNetworkEndpoint.GoogleComputeNetworkEndpoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -475,7 +475,7 @@ func NewGoogleComputeNetworkEndpoint_Override(g GoogleComputeNetworkEndpoint, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeNetworkEndpoint.GoogleComputeNetworkEndpoint",
+		"@cdktf/provider-google-beta.googleComputeNetworkEndpoint.GoogleComputeNetworkEndpoint",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -652,7 +652,7 @@ func GoogleComputeNetworkEndpoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeNetworkEndpoint.GoogleComputeNetworkEndpoint",
+		"@cdktf/provider-google-beta.googleComputeNetworkEndpoint.GoogleComputeNetworkEndpoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -671,7 +671,7 @@ func GoogleComputeNetworkEndpoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeNetworkEndpoint.GoogleComputeNetworkEndpoint",
+		"@cdktf/provider-google-beta.googleComputeNetworkEndpoint.GoogleComputeNetworkEndpoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -690,7 +690,7 @@ func GoogleComputeNetworkEndpoint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeNetworkEndpoint.GoogleComputeNetworkEndpoint",
+		"@cdktf/provider-google-beta.googleComputeNetworkEndpoint.GoogleComputeNetworkEndpoint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -703,7 +703,7 @@ func GoogleComputeNetworkEndpoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeNetworkEndpoint.GoogleComputeNetworkEndpoint",
+		"@cdktf/provider-google-beta.googleComputeNetworkEndpoint.GoogleComputeNetworkEndpoint",
 		"tfResourceType",
 		&returns,
 	)

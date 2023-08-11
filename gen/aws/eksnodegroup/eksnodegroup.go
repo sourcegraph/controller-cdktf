@@ -829,7 +829,7 @@ func NewEksNodeGroup(scope constructs.Construct, id *string, config *EksNodeGrou
 	j := jsiiProxy_EksNodeGroup{}
 
 	_jsii_.Create(
-		"aws.eksNodeGroup.EksNodeGroup",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -842,7 +842,7 @@ func NewEksNodeGroup_Override(e EksNodeGroup, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksNodeGroup.EksNodeGroup",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroup",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -1118,7 +1118,7 @@ func EksNodeGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.eksNodeGroup.EksNodeGroup",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1137,7 +1137,7 @@ func EksNodeGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.eksNodeGroup.EksNodeGroup",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1156,7 +1156,7 @@ func EksNodeGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.eksNodeGroup.EksNodeGroup",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1169,7 +1169,7 @@ func EksNodeGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.eksNodeGroup.EksNodeGroup",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroup",
 		"tfResourceType",
 		&returns,
 	)

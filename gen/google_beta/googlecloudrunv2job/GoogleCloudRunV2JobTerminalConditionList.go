@@ -104,7 +104,7 @@ func NewGoogleCloudRunV2JobTerminalConditionList(terraformResource cdktf.IInterp
 	j := jsiiProxy_GoogleCloudRunV2JobTerminalConditionList{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTerminalConditionList",
+		"@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTerminalConditionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleCloudRunV2JobTerminalConditionList_Override(g GoogleCloudRunV2JobT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTerminalConditionList",
+		"@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTerminalConditionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

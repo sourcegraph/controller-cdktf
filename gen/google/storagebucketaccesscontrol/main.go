@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.storageBucketAccessControl.StorageBucketAccessControl",
+		"@cdktf/provider-google.storageBucketAccessControl.StorageBucketAccessControl",
 		reflect.TypeOf((*StorageBucketAccessControl)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,15 +68,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.storageBucketAccessControl.StorageBucketAccessControlConfig",
+		"@cdktf/provider-google.storageBucketAccessControl.StorageBucketAccessControlConfig",
 		reflect.TypeOf((*StorageBucketAccessControlConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.storageBucketAccessControl.StorageBucketAccessControlTimeouts",
+		"@cdktf/provider-google.storageBucketAccessControl.StorageBucketAccessControlTimeouts",
 		reflect.TypeOf((*StorageBucketAccessControlTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.storageBucketAccessControl.StorageBucketAccessControlTimeoutsOutputReference",
+		"@cdktf/provider-google.storageBucketAccessControl.StorageBucketAccessControlTimeoutsOutputReference",
 		reflect.TypeOf((*StorageBucketAccessControlTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

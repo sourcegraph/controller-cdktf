@@ -401,7 +401,7 @@ func NewGoogleBigqueryConnectionIamPolicy(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleBigqueryConnectionIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleBigqueryConnectionIamPolicy_Override(g GoogleBigqueryConnectionIam
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GoogleBigqueryConnectionIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GoogleBigqueryConnectionIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GoogleBigqueryConnectionIamPolicy_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GoogleBigqueryConnectionIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

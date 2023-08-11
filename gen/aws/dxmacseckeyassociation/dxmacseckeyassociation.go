@@ -413,7 +413,7 @@ func NewDxMacsecKeyAssociation(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DxMacsecKeyAssociation{}
 
 	_jsii_.Create(
-		"aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation",
+		"@cdktf/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewDxMacsecKeyAssociation_Override(d DxMacsecKeyAssociation, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation",
+		"@cdktf/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -581,7 +581,7 @@ func DxMacsecKeyAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation",
+		"@cdktf/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -600,7 +600,7 @@ func DxMacsecKeyAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation",
+		"@cdktf/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func DxMacsecKeyAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation",
+		"@cdktf/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func DxMacsecKeyAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation",
+		"@cdktf/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation",
 		"tfResourceType",
 		&returns,
 	)

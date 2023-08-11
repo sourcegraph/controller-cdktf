@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.rateLimit.RateLimit",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimit",
 		reflect.TypeOf((*RateLimit)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -81,11 +81,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.rateLimit.RateLimitAction",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimitAction",
 		reflect.TypeOf((*RateLimitAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.rateLimit.RateLimitActionOutputReference",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimitActionOutputReference",
 		reflect.TypeOf((*RateLimitActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -126,11 +126,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.rateLimit.RateLimitActionResponse",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimitActionResponse",
 		reflect.TypeOf((*RateLimitActionResponse)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.rateLimit.RateLimitActionResponseOutputReference",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimitActionResponseOutputReference",
 		reflect.TypeOf((*RateLimitActionResponseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
@@ -166,15 +166,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.rateLimit.RateLimitConfig",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimitConfig",
 		reflect.TypeOf((*RateLimitConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.rateLimit.RateLimitCorrelate",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimitCorrelate",
 		reflect.TypeOf((*RateLimitCorrelate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.rateLimit.RateLimitCorrelateOutputReference",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimitCorrelateOutputReference",
 		reflect.TypeOf((*RateLimitCorrelateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "by", GoGetter: "By"},
@@ -209,11 +209,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.rateLimit.RateLimitMatch",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatch",
 		reflect.TypeOf((*RateLimitMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.rateLimit.RateLimitMatchOutputReference",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatchOutputReference",
 		reflect.TypeOf((*RateLimitMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -253,11 +253,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.rateLimit.RateLimitMatchRequest",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatchRequest",
 		reflect.TypeOf((*RateLimitMatchRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.rateLimit.RateLimitMatchRequestOutputReference",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatchRequestOutputReference",
 		reflect.TypeOf((*RateLimitMatchRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -298,11 +298,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.rateLimit.RateLimitMatchResponse",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatchResponse",
 		reflect.TypeOf((*RateLimitMatchResponse)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.rateLimit.RateLimitMatchResponseOutputReference",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatchResponseOutputReference",
 		reflect.TypeOf((*RateLimitMatchResponseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

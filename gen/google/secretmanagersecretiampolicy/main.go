@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.secretManagerSecretIamPolicy.SecretManagerSecretIamPolicy",
+		"@cdktf/provider-google.secretManagerSecretIamPolicy.SecretManagerSecretIamPolicy",
 		reflect.TypeOf((*SecretManagerSecretIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.secretManagerSecretIamPolicy.SecretManagerSecretIamPolicyConfig",
+		"@cdktf/provider-google.secretManagerSecretIamPolicy.SecretManagerSecretIamPolicyConfig",
 		reflect.TypeOf((*SecretManagerSecretIamPolicyConfig)(nil)).Elem(),
 	)
 }

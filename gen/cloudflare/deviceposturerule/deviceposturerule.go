@@ -486,7 +486,7 @@ func NewDevicePostureRule(scope constructs.Construct, id *string, config *Device
 	j := jsiiProxy_DevicePostureRule{}
 
 	_jsii_.Create(
-		"cloudflare.devicePostureRule.DevicePostureRule",
+		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -499,7 +499,7 @@ func NewDevicePostureRule_Override(d DevicePostureRule, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.devicePostureRule.DevicePostureRule",
+		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -676,7 +676,7 @@ func DevicePostureRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.devicePostureRule.DevicePostureRule",
+		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -695,7 +695,7 @@ func DevicePostureRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.devicePostureRule.DevicePostureRule",
+		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +714,7 @@ func DevicePostureRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.devicePostureRule.DevicePostureRule",
+		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -727,7 +727,7 @@ func DevicePostureRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.devicePostureRule.DevicePostureRule",
+		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.templateEmail.TemplateEmail",
+		"@cdktf/provider-okta.templateEmail.TemplateEmail",
 		reflect.TypeOf((*TemplateEmail)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.templateEmail.TemplateEmailConfig",
+		"@cdktf/provider-okta.templateEmail.TemplateEmailConfig",
 		reflect.TypeOf((*TemplateEmailConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.templateEmail.TemplateEmailTranslations",
+		"@cdktf/provider-okta.templateEmail.TemplateEmailTranslations",
 		reflect.TypeOf((*TemplateEmailTranslations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.templateEmail.TemplateEmailTranslationsList",
+		"@cdktf/provider-okta.templateEmail.TemplateEmailTranslationsList",
 		reflect.TypeOf((*TemplateEmailTranslationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -92,7 +92,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.templateEmail.TemplateEmailTranslationsOutputReference",
+		"@cdktf/provider-okta.templateEmail.TemplateEmailTranslationsOutputReference",
 		reflect.TypeOf((*TemplateEmailTranslationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

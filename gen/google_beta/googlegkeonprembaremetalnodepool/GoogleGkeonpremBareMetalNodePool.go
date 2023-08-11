@@ -572,7 +572,7 @@ func NewGoogleGkeonpremBareMetalNodePool(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleGkeonpremBareMetalNodePool{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePool",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -585,7 +585,7 @@ func NewGoogleGkeonpremBareMetalNodePool_Override(g GoogleGkeonpremBareMetalNode
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePool",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePool",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -762,7 +762,7 @@ func GoogleGkeonpremBareMetalNodePool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePool",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -781,7 +781,7 @@ func GoogleGkeonpremBareMetalNodePool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePool",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -800,7 +800,7 @@ func GoogleGkeonpremBareMetalNodePool_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePool",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePool",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -813,7 +813,7 @@ func GoogleGkeonpremBareMetalNodePool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePool",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePool",
 		"tfResourceType",
 		&returns,
 	)

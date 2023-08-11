@@ -228,7 +228,7 @@ func NewGoogleNetworkServicesMeshTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleNetworkServicesMeshTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesMesh.GoogleNetworkServicesMeshTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesMesh.GoogleNetworkServicesMeshTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleNetworkServicesMeshTimeoutsOutputReference_Override(g GoogleNetwor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesMesh.GoogleNetworkServicesMeshTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesMesh.GoogleNetworkServicesMeshTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

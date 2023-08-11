@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptions",
+		"@cdktf/provider-aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptions",
 		reflect.TypeOf((*VpcPeeringConnectionOptions)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accepter", GoGetter: "Accepter"},
@@ -65,11 +65,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptionsAccepter",
+		"@cdktf/provider-aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptionsAccepter",
 		reflect.TypeOf((*VpcPeeringConnectionOptionsAccepter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptionsAccepterOutputReference",
+		"@cdktf/provider-aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptionsAccepterOutputReference",
 		reflect.TypeOf((*VpcPeeringConnectionOptionsAccepterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowClassicLinkToRemoteVpc", GoGetter: "AllowClassicLinkToRemoteVpc"},
@@ -110,15 +110,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptionsConfig",
+		"@cdktf/provider-aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptionsConfig",
 		reflect.TypeOf((*VpcPeeringConnectionOptionsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptionsRequester",
+		"@cdktf/provider-aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptionsRequester",
 		reflect.TypeOf((*VpcPeeringConnectionOptionsRequester)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptionsRequesterOutputReference",
+		"@cdktf/provider-aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptionsRequesterOutputReference",
 		reflect.TypeOf((*VpcPeeringConnectionOptionsRequesterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowClassicLinkToRemoteVpc", GoGetter: "AllowClassicLinkToRemoteVpc"},

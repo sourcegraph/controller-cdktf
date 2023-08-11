@@ -204,7 +204,7 @@ func NewStatefulSetV1SpecUpdateStrategyOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_StatefulSetV1SpecUpdateStrategyOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecUpdateStrategyOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecUpdateStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewStatefulSetV1SpecUpdateStrategyOutputReference_Override(s StatefulSetV1S
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecUpdateStrategyOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecUpdateStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

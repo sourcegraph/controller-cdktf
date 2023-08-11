@@ -179,7 +179,7 @@ func NewDialogflowFulfillmentFeaturesOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_DialogflowFulfillmentFeaturesOutputReference{}
 
 	_jsii_.Create(
-		"google.dialogflowFulfillment.DialogflowFulfillmentFeaturesOutputReference",
+		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillmentFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDialogflowFulfillmentFeaturesOutputReference_Override(d DialogflowFulfil
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowFulfillment.DialogflowFulfillmentFeaturesOutputReference",
+		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillmentFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

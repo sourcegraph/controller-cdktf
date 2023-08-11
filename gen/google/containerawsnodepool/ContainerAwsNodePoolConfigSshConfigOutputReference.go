@@ -179,7 +179,7 @@ func NewContainerAwsNodePoolConfigSshConfigOutputReference(terraformResource cdk
 	j := jsiiProxy_ContainerAwsNodePoolConfigSshConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.containerAwsNodePool.ContainerAwsNodePoolConfigSshConfigOutputReference",
+		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigSshConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewContainerAwsNodePoolConfigSshConfigOutputReference_Override(c ContainerA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAwsNodePool.ContainerAwsNodePoolConfigSshConfigOutputReference",
+		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigSshConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

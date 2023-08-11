@@ -650,7 +650,7 @@ func NewEc2CapacityReservation(scope constructs.Construct, id *string, config *E
 	j := jsiiProxy_Ec2CapacityReservation{}
 
 	_jsii_.Create(
-		"aws.ec2CapacityReservation.Ec2CapacityReservation",
+		"@cdktf/provider-aws.ec2CapacityReservation.Ec2CapacityReservation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -663,7 +663,7 @@ func NewEc2CapacityReservation_Override(e Ec2CapacityReservation, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2CapacityReservation.Ec2CapacityReservation",
+		"@cdktf/provider-aws.ec2CapacityReservation.Ec2CapacityReservation",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -928,7 +928,7 @@ func Ec2CapacityReservation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2CapacityReservation.Ec2CapacityReservation",
+		"@cdktf/provider-aws.ec2CapacityReservation.Ec2CapacityReservation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -947,7 +947,7 @@ func Ec2CapacityReservation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2CapacityReservation.Ec2CapacityReservation",
+		"@cdktf/provider-aws.ec2CapacityReservation.Ec2CapacityReservation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -966,7 +966,7 @@ func Ec2CapacityReservation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2CapacityReservation.Ec2CapacityReservation",
+		"@cdktf/provider-aws.ec2CapacityReservation.Ec2CapacityReservation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -979,7 +979,7 @@ func Ec2CapacityReservation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2CapacityReservation.Ec2CapacityReservation",
+		"@cdktf/provider-aws.ec2CapacityReservation.Ec2CapacityReservation",
 		"tfResourceType",
 		&returns,
 	)

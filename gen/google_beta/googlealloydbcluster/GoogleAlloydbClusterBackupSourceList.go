@@ -104,7 +104,7 @@ func NewGoogleAlloydbClusterBackupSourceList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_GoogleAlloydbClusterBackupSourceList{}
 
 	_jsii_.Create(
-		"google-beta.googleAlloydbCluster.GoogleAlloydbClusterBackupSourceList",
+		"@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterBackupSourceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleAlloydbClusterBackupSourceList_Override(g GoogleAlloydbClusterBack
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAlloydbCluster.GoogleAlloydbClusterBackupSourceList",
+		"@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterBackupSourceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

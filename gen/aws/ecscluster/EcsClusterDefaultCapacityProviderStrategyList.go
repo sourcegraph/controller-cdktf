@@ -116,7 +116,7 @@ func NewEcsClusterDefaultCapacityProviderStrategyList(terraformResource cdktf.II
 	j := jsiiProxy_EcsClusterDefaultCapacityProviderStrategyList{}
 
 	_jsii_.Create(
-		"aws.ecsCluster.EcsClusterDefaultCapacityProviderStrategyList",
+		"@cdktf/provider-aws.ecsCluster.EcsClusterDefaultCapacityProviderStrategyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEcsClusterDefaultCapacityProviderStrategyList_Override(e EcsClusterDefau
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsCluster.EcsClusterDefaultCapacityProviderStrategyList",
+		"@cdktf/provider-aws.ecsCluster.EcsClusterDefaultCapacityProviderStrategyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

@@ -414,7 +414,7 @@ func NewListItemA(scope constructs.Construct, id *string, config *ListItemAConfi
 	j := jsiiProxy_ListItemA{}
 
 	_jsii_.Create(
-		"cloudflare.listItem.ListItemA",
+		"@cdktf/provider-cloudflare.listItem.ListItemA",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewListItemA_Override(l ListItemA, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.listItem.ListItemA",
+		"@cdktf/provider-cloudflare.listItem.ListItemA",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -582,7 +582,7 @@ func ListItemA_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.listItem.ListItemA",
+		"@cdktf/provider-cloudflare.listItem.ListItemA",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func ListItemA_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.listItem.ListItemA",
+		"@cdktf/provider-cloudflare.listItem.ListItemA",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func ListItemA_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.listItem.ListItemA",
+		"@cdktf/provider-cloudflare.listItem.ListItemA",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func ListItemA_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.listItem.ListItemA",
+		"@cdktf/provider-cloudflare.listItem.ListItemA",
 		"tfResourceType",
 		&returns,
 	)

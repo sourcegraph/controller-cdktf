@@ -156,7 +156,7 @@ func NewVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReferenc
 	j := jsiiProxy_VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

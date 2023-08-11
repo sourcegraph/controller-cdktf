@@ -379,7 +379,7 @@ func NewGoogleNotebooksLocation(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_GoogleNotebooksLocation{}
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksLocation.GoogleNotebooksLocation",
+		"@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -392,7 +392,7 @@ func NewGoogleNotebooksLocation_Override(g GoogleNotebooksLocation, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksLocation.GoogleNotebooksLocation",
+		"@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -525,7 +525,7 @@ func GoogleNotebooksLocation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNotebooksLocation.GoogleNotebooksLocation",
+		"@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -544,7 +544,7 @@ func GoogleNotebooksLocation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNotebooksLocation.GoogleNotebooksLocation",
+		"@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func GoogleNotebooksLocation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNotebooksLocation.GoogleNotebooksLocation",
+		"@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleNotebooksLocation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleNotebooksLocation.GoogleNotebooksLocation",
+		"@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation",
 		"tfResourceType",
 		&returns,
 	)

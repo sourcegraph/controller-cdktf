@@ -116,7 +116,7 @@ func NewEcsClusterSettingList(terraformResource cdktf.IInterpolatingParent, terr
 	j := jsiiProxy_EcsClusterSettingList{}
 
 	_jsii_.Create(
-		"aws.ecsCluster.EcsClusterSettingList",
+		"@cdktf/provider-aws.ecsCluster.EcsClusterSettingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEcsClusterSettingList_Override(e EcsClusterSettingList, terraformResourc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsCluster.EcsClusterSettingList",
+		"@cdktf/provider-aws.ecsCluster.EcsClusterSettingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

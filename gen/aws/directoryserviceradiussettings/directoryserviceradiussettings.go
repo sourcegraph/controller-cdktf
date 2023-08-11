@@ -528,7 +528,7 @@ func NewDirectoryServiceRadiusSettings(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DirectoryServiceRadiusSettings{}
 
 	_jsii_.Create(
-		"aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettings",
+		"@cdktf/provider-aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -541,7 +541,7 @@ func NewDirectoryServiceRadiusSettings_Override(d DirectoryServiceRadiusSettings
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettings",
+		"@cdktf/provider-aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettings",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -751,7 +751,7 @@ func DirectoryServiceRadiusSettings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettings",
+		"@cdktf/provider-aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -770,7 +770,7 @@ func DirectoryServiceRadiusSettings_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettings",
+		"@cdktf/provider-aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -789,7 +789,7 @@ func DirectoryServiceRadiusSettings_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettings",
+		"@cdktf/provider-aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettings",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -802,7 +802,7 @@ func DirectoryServiceRadiusSettings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettings",
+		"@cdktf/provider-aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettings",
 		"tfResourceType",
 		&returns,
 	)

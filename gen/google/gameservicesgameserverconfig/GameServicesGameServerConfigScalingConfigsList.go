@@ -116,7 +116,7 @@ func NewGameServicesGameServerConfigScalingConfigsList(terraformResource cdktf.I
 	j := jsiiProxy_GameServicesGameServerConfigScalingConfigsList{}
 
 	_jsii_.Create(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsList",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGameServicesGameServerConfigScalingConfigsList_Override(g GameServicesGa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsList",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

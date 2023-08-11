@@ -367,7 +367,7 @@ func NewChimeVoiceConnectorLogging(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_ChimeVoiceConnectorLogging{}
 
 	_jsii_.Create(
-		"aws.chimeVoiceConnectorLogging.ChimeVoiceConnectorLogging",
+		"@cdktf/provider-aws.chimeVoiceConnectorLogging.ChimeVoiceConnectorLogging",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewChimeVoiceConnectorLogging_Override(c ChimeVoiceConnectorLogging, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.chimeVoiceConnectorLogging.ChimeVoiceConnectorLogging",
+		"@cdktf/provider-aws.chimeVoiceConnectorLogging.ChimeVoiceConnectorLogging",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -524,7 +524,7 @@ func ChimeVoiceConnectorLogging_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.chimeVoiceConnectorLogging.ChimeVoiceConnectorLogging",
+		"@cdktf/provider-aws.chimeVoiceConnectorLogging.ChimeVoiceConnectorLogging",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func ChimeVoiceConnectorLogging_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.chimeVoiceConnectorLogging.ChimeVoiceConnectorLogging",
+		"@cdktf/provider-aws.chimeVoiceConnectorLogging.ChimeVoiceConnectorLogging",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func ChimeVoiceConnectorLogging_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.chimeVoiceConnectorLogging.ChimeVoiceConnectorLogging",
+		"@cdktf/provider-aws.chimeVoiceConnectorLogging.ChimeVoiceConnectorLogging",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func ChimeVoiceConnectorLogging_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.chimeVoiceConnectorLogging.ChimeVoiceConnectorLogging",
+		"@cdktf/provider-aws.chimeVoiceConnectorLogging.ChimeVoiceConnectorLogging",
 		"tfResourceType",
 		&returns,
 	)

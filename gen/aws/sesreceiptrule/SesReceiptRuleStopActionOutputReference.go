@@ -226,7 +226,7 @@ func NewSesReceiptRuleStopActionOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_SesReceiptRuleStopActionOutputReference{}
 
 	_jsii_.Create(
-		"aws.sesReceiptRule.SesReceiptRuleStopActionOutputReference",
+		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewSesReceiptRuleStopActionOutputReference_Override(s SesReceiptRuleStopAct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesReceiptRule.SesReceiptRuleStopActionOutputReference",
+		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

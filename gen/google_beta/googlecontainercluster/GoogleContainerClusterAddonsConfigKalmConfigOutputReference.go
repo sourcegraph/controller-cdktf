@@ -179,7 +179,7 @@ func NewGoogleContainerClusterAddonsConfigKalmConfigOutputReference(terraformRes
 	j := jsiiProxy_GoogleContainerClusterAddonsConfigKalmConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigKalmConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigKalmConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleContainerClusterAddonsConfigKalmConfigOutputReference_Override(g G
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigKalmConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigKalmConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

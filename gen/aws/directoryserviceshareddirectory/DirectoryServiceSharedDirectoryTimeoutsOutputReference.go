@@ -180,7 +180,7 @@ func NewDirectoryServiceSharedDirectoryTimeoutsOutputReference(terraformResource
 	j := jsiiProxy_DirectoryServiceSharedDirectoryTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTimeoutsOutputReference",
+		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDirectoryServiceSharedDirectoryTimeoutsOutputReference_Override(d Direct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTimeoutsOutputReference",
+		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

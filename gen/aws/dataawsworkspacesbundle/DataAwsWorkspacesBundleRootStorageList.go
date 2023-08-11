@@ -104,7 +104,7 @@ func NewDataAwsWorkspacesBundleRootStorageList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataAwsWorkspacesBundleRootStorageList{}
 
 	_jsii_.Create(
-		"aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorageList",
+		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsWorkspacesBundleRootStorageList_Override(d DataAwsWorkspacesBundl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorageList",
+		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

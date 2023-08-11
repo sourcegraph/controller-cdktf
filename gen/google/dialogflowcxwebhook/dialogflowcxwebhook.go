@@ -557,7 +557,7 @@ func NewDialogflowCxWebhook(scope constructs.Construct, id *string, config *Dial
 	j := jsiiProxy_DialogflowCxWebhook{}
 
 	_jsii_.Create(
-		"google.dialogflowCxWebhook.DialogflowCxWebhook",
+		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhook",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -570,7 +570,7 @@ func NewDialogflowCxWebhook_Override(d DialogflowCxWebhook, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxWebhook.DialogflowCxWebhook",
+		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhook",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -758,7 +758,7 @@ func DialogflowCxWebhook_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dialogflowCxWebhook.DialogflowCxWebhook",
+		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhook",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -777,7 +777,7 @@ func DialogflowCxWebhook_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dialogflowCxWebhook.DialogflowCxWebhook",
+		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhook",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -796,7 +796,7 @@ func DialogflowCxWebhook_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dialogflowCxWebhook.DialogflowCxWebhook",
+		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhook",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -809,7 +809,7 @@ func DialogflowCxWebhook_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dialogflowCxWebhook.DialogflowCxWebhook",
+		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhook",
 		"tfResourceType",
 		&returns,
 	)

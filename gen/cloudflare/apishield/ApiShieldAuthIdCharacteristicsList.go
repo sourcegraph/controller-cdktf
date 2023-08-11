@@ -116,7 +116,7 @@ func NewApiShieldAuthIdCharacteristicsList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_ApiShieldAuthIdCharacteristicsList{}
 
 	_jsii_.Create(
-		"cloudflare.apiShield.ApiShieldAuthIdCharacteristicsList",
+		"@cdktf/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristicsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewApiShieldAuthIdCharacteristicsList_Override(a ApiShieldAuthIdCharacteris
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.apiShield.ApiShieldAuthIdCharacteristicsList",
+		"@cdktf/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristicsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

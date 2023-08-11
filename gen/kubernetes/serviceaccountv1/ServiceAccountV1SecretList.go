@@ -116,7 +116,7 @@ func NewServiceAccountV1SecretList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_ServiceAccountV1SecretList{}
 
 	_jsii_.Create(
-		"kubernetes.serviceAccountV1.ServiceAccountV1SecretList",
+		"@cdktf/provider-kubernetes.serviceAccountV1.ServiceAccountV1SecretList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewServiceAccountV1SecretList_Override(s ServiceAccountV1SecretList, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.serviceAccountV1.ServiceAccountV1SecretList",
+		"@cdktf/provider-kubernetes.serviceAccountV1.ServiceAccountV1SecretList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

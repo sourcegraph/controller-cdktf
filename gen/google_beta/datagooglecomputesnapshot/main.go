@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot",
+		"@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot",
 		reflect.TypeOf((*DataGoogleComputeSnapshot)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,15 +80,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotConfig",
+		"@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotConfig",
 		reflect.TypeOf((*DataGoogleComputeSnapshotConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSnapshotEncryptionKey",
+		"@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSnapshotEncryptionKey",
 		reflect.TypeOf((*DataGoogleComputeSnapshotSnapshotEncryptionKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSnapshotEncryptionKeyList",
+		"@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSnapshotEncryptionKeyList",
 		reflect.TypeOf((*DataGoogleComputeSnapshotSnapshotEncryptionKeyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSnapshotEncryptionKeyOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSnapshotEncryptionKeyOutputReference",
 		reflect.TypeOf((*DataGoogleComputeSnapshotSnapshotEncryptionKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -144,11 +144,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSourceDiskEncryptionKey",
+		"@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSourceDiskEncryptionKey",
 		reflect.TypeOf((*DataGoogleComputeSnapshotSourceDiskEncryptionKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSourceDiskEncryptionKeyList",
+		"@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSourceDiskEncryptionKeyList",
 		reflect.TypeOf((*DataGoogleComputeSnapshotSourceDiskEncryptionKeyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -168,7 +168,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSourceDiskEncryptionKeyOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSourceDiskEncryptionKeyOutputReference",
 		reflect.TypeOf((*DataGoogleComputeSnapshotSourceDiskEncryptionKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

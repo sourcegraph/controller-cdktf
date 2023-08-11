@@ -116,7 +116,7 @@ func NewFunctionResourceArgList(terraformResource cdktf.IInterpolatingParent, te
 	j := jsiiProxy_FunctionResourceArgList{}
 
 	_jsii_.Create(
-		"postgresql.functionResource.FunctionResourceArgList",
+		"@cdktf/provider-postgresql.functionResource.FunctionResourceArgList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewFunctionResourceArgList_Override(f FunctionResourceArgList, terraformRes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"postgresql.functionResource.FunctionResourceArgList",
+		"@cdktf/provider-postgresql.functionResource.FunctionResourceArgList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)

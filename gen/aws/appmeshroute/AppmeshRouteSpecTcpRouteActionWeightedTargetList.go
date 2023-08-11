@@ -116,7 +116,7 @@ func NewAppmeshRouteSpecTcpRouteActionWeightedTargetList(terraformResource cdktf
 	j := jsiiProxy_AppmeshRouteSpecTcpRouteActionWeightedTargetList{}
 
 	_jsii_.Create(
-		"aws.appmeshRoute.AppmeshRouteSpecTcpRouteActionWeightedTargetList",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteActionWeightedTargetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppmeshRouteSpecTcpRouteActionWeightedTargetList_Override(a AppmeshRoute
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshRoute.AppmeshRouteSpecTcpRouteActionWeightedTargetList",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteActionWeightedTargetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

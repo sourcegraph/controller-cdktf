@@ -104,7 +104,7 @@ func NewFsxOntapFileSystemEndpointsList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_FsxOntapFileSystemEndpointsList{}
 
 	_jsii_.Create(
-		"aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsList",
+		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewFsxOntapFileSystemEndpointsList_Override(f FsxOntapFileSystemEndpointsLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsList",
+		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)

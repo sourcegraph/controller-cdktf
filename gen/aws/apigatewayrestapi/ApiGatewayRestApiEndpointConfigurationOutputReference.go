@@ -203,7 +203,7 @@ func NewApiGatewayRestApiEndpointConfigurationOutputReference(terraformResource 
 	j := jsiiProxy_ApiGatewayRestApiEndpointConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfigurationOutputReference",
+		"@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewApiGatewayRestApiEndpointConfigurationOutputReference_Override(a ApiGate
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfigurationOutputReference",
+		"@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApiEndpointConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

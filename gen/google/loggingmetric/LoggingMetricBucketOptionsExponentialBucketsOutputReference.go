@@ -228,7 +228,7 @@ func NewLoggingMetricBucketOptionsExponentialBucketsOutputReference(terraformRes
 	j := jsiiProxy_LoggingMetricBucketOptionsExponentialBucketsOutputReference{}
 
 	_jsii_.Create(
-		"google.loggingMetric.LoggingMetricBucketOptionsExponentialBucketsOutputReference",
+		"@cdktf/provider-google.loggingMetric.LoggingMetricBucketOptionsExponentialBucketsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewLoggingMetricBucketOptionsExponentialBucketsOutputReference_Override(l L
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingMetric.LoggingMetricBucketOptionsExponentialBucketsOutputReference",
+		"@cdktf/provider-google.loggingMetric.LoggingMetricBucketOptionsExponentialBucketsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.route53RecoveryreadinessReadinessCheck.Route53RecoveryreadinessReadinessCheck",
+		"@cdktf/provider-aws.route53RecoveryreadinessReadinessCheck.Route53RecoveryreadinessReadinessCheck",
 		reflect.TypeOf((*Route53RecoveryreadinessReadinessCheck)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53RecoveryreadinessReadinessCheck.Route53RecoveryreadinessReadinessCheckConfig",
+		"@cdktf/provider-aws.route53RecoveryreadinessReadinessCheck.Route53RecoveryreadinessReadinessCheckConfig",
 		reflect.TypeOf((*Route53RecoveryreadinessReadinessCheckConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53RecoveryreadinessReadinessCheck.Route53RecoveryreadinessReadinessCheckTimeouts",
+		"@cdktf/provider-aws.route53RecoveryreadinessReadinessCheck.Route53RecoveryreadinessReadinessCheckTimeouts",
 		reflect.TypeOf((*Route53RecoveryreadinessReadinessCheckTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.route53RecoveryreadinessReadinessCheck.Route53RecoveryreadinessReadinessCheckTimeoutsOutputReference",
+		"@cdktf/provider-aws.route53RecoveryreadinessReadinessCheck.Route53RecoveryreadinessReadinessCheckTimeoutsOutputReference",
 		reflect.TypeOf((*Route53RecoveryreadinessReadinessCheckTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

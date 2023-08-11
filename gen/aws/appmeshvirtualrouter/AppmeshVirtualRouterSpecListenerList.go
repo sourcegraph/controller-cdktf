@@ -116,7 +116,7 @@ func NewAppmeshVirtualRouterSpecListenerList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_AppmeshVirtualRouterSpecListenerList{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerList",
+		"@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppmeshVirtualRouterSpecListenerList_Override(a AppmeshVirtualRouterSpec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerList",
+		"@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

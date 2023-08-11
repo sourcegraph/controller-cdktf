@@ -179,7 +179,7 @@ func NewCloudiotRegistryCredentialsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_CloudiotRegistryCredentialsOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudiotRegistry.CloudiotRegistryCredentialsOutputReference",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistryCredentialsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewCloudiotRegistryCredentialsOutputReference_Override(c CloudiotRegistryCr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudiotRegistry.CloudiotRegistryCredentialsOutputReference",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistryCredentialsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

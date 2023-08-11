@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.loggingFolderExclusion.LoggingFolderExclusion",
+		"@cdktf/provider-google.loggingFolderExclusion.LoggingFolderExclusion",
 		reflect.TypeOf((*LoggingFolderExclusion)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingFolderExclusion.LoggingFolderExclusionConfig",
+		"@cdktf/provider-google.loggingFolderExclusion.LoggingFolderExclusionConfig",
 		reflect.TypeOf((*LoggingFolderExclusionConfig)(nil)).Elem(),
 	)
 }

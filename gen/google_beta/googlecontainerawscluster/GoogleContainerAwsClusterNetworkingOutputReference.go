@@ -225,7 +225,7 @@ func NewGoogleContainerAwsClusterNetworkingOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleContainerAwsClusterNetworkingOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterNetworkingOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterNetworkingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewGoogleContainerAwsClusterNetworkingOutputReference_Override(g GoogleCont
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterNetworkingOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterNetworkingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -791,7 +791,7 @@ func NewFsxOpenzfsFileSystem(scope constructs.Construct, id *string, config *Fsx
 	j := jsiiProxy_FsxOpenzfsFileSystem{}
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem",
+		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -804,7 +804,7 @@ func NewFsxOpenzfsFileSystem_Override(f FsxOpenzfsFileSystem, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem",
+		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -1080,7 +1080,7 @@ func FsxOpenzfsFileSystem_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem",
+		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1099,7 +1099,7 @@ func FsxOpenzfsFileSystem_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem",
+		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1118,7 +1118,7 @@ func FsxOpenzfsFileSystem_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem",
+		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1131,7 +1131,7 @@ func FsxOpenzfsFileSystem_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem",
+		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem",
 		"tfResourceType",
 		&returns,
 	)

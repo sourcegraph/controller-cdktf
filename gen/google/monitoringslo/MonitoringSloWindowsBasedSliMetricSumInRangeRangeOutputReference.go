@@ -204,7 +204,7 @@ func NewMonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference(terrafo
 	j := jsiiProxy_MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference{}
 
 	_jsii_.Create(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

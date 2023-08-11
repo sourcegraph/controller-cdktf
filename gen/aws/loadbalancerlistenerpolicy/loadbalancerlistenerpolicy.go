@@ -366,7 +366,7 @@ func NewLoadBalancerListenerPolicy(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_LoadBalancerListenerPolicy{}
 
 	_jsii_.Create(
-		"aws.loadBalancerListenerPolicy.LoadBalancerListenerPolicy",
+		"@cdktf/provider-aws.loadBalancerListenerPolicy.LoadBalancerListenerPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewLoadBalancerListenerPolicy_Override(l LoadBalancerListenerPolicy, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.loadBalancerListenerPolicy.LoadBalancerListenerPolicy",
+		"@cdktf/provider-aws.loadBalancerListenerPolicy.LoadBalancerListenerPolicy",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -523,7 +523,7 @@ func LoadBalancerListenerPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.loadBalancerListenerPolicy.LoadBalancerListenerPolicy",
+		"@cdktf/provider-aws.loadBalancerListenerPolicy.LoadBalancerListenerPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func LoadBalancerListenerPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.loadBalancerListenerPolicy.LoadBalancerListenerPolicy",
+		"@cdktf/provider-aws.loadBalancerListenerPolicy.LoadBalancerListenerPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func LoadBalancerListenerPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.loadBalancerListenerPolicy.LoadBalancerListenerPolicy",
+		"@cdktf/provider-aws.loadBalancerListenerPolicy.LoadBalancerListenerPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func LoadBalancerListenerPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.loadBalancerListenerPolicy.LoadBalancerListenerPolicy",
+		"@cdktf/provider-aws.loadBalancerListenerPolicy.LoadBalancerListenerPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.s3BucketOwnershipControls.S3BucketOwnershipControls",
+		"@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControls",
 		reflect.TypeOf((*S3BucketOwnershipControls)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,15 +60,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketOwnershipControls.S3BucketOwnershipControlsConfig",
+		"@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControlsConfig",
 		reflect.TypeOf((*S3BucketOwnershipControlsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketOwnershipControls.S3BucketOwnershipControlsRule",
+		"@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControlsRule",
 		reflect.TypeOf((*S3BucketOwnershipControlsRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketOwnershipControls.S3BucketOwnershipControlsRuleOutputReference",
+		"@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControlsRuleOutputReference",
 		reflect.TypeOf((*S3BucketOwnershipControlsRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

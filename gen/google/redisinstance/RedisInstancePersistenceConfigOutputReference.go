@@ -239,7 +239,7 @@ func NewRedisInstancePersistenceConfigOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_RedisInstancePersistenceConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.redisInstance.RedisInstancePersistenceConfigOutputReference",
+		"@cdktf/provider-google.redisInstance.RedisInstancePersistenceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -251,7 +251,7 @@ func NewRedisInstancePersistenceConfigOutputReference_Override(r RedisInstancePe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.redisInstance.RedisInstancePersistenceConfigOutputReference",
+		"@cdktf/provider-google.redisInstance.RedisInstancePersistenceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

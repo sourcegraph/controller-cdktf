@@ -353,7 +353,7 @@ func NewGoogleStorageBucketIamPolicy(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleStorageBucketIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucketIamPolicy.GoogleStorageBucketIamPolicy",
+		"@cdktf/provider-google-beta.googleStorageBucketIamPolicy.GoogleStorageBucketIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewGoogleStorageBucketIamPolicy_Override(g GoogleStorageBucketIamPolicy, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucketIamPolicy.GoogleStorageBucketIamPolicy",
+		"@cdktf/provider-google-beta.googleStorageBucketIamPolicy.GoogleStorageBucketIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -499,7 +499,7 @@ func GoogleStorageBucketIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageBucketIamPolicy.GoogleStorageBucketIamPolicy",
+		"@cdktf/provider-google-beta.googleStorageBucketIamPolicy.GoogleStorageBucketIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func GoogleStorageBucketIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageBucketIamPolicy.GoogleStorageBucketIamPolicy",
+		"@cdktf/provider-google-beta.googleStorageBucketIamPolicy.GoogleStorageBucketIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func GoogleStorageBucketIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageBucketIamPolicy.GoogleStorageBucketIamPolicy",
+		"@cdktf/provider-google-beta.googleStorageBucketIamPolicy.GoogleStorageBucketIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func GoogleStorageBucketIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleStorageBucketIamPolicy.GoogleStorageBucketIamPolicy",
+		"@cdktf/provider-google-beta.googleStorageBucketIamPolicy.GoogleStorageBucketIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

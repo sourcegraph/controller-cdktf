@@ -116,7 +116,7 @@ func NewBackupSelectionConditionStringNotEqualsList(terraformResource cdktf.IInt
 	j := jsiiProxy_BackupSelectionConditionStringNotEqualsList{}
 
 	_jsii_.Create(
-		"aws.backupSelection.BackupSelectionConditionStringNotEqualsList",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEqualsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewBackupSelectionConditionStringNotEqualsList_Override(b BackupSelectionCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupSelection.BackupSelectionConditionStringNotEqualsList",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEqualsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)

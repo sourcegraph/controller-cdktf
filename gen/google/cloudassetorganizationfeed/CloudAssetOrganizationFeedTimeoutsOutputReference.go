@@ -228,7 +228,7 @@ func NewCloudAssetOrganizationFeedTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_CloudAssetOrganizationFeedTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudAssetOrganizationFeed.CloudAssetOrganizationFeedTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudAssetOrganizationFeed.CloudAssetOrganizationFeedTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCloudAssetOrganizationFeedTimeoutsOutputReference_Override(c CloudAssetO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudAssetOrganizationFeed.CloudAssetOrganizationFeedTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudAssetOrganizationFeed.CloudAssetOrganizationFeedTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

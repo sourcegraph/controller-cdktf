@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition",
+		"@cdktf/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition",
 		reflect.TypeOf((*DataAwsEcsTaskDefinition)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionConfig",
+		"@cdktf/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionConfig",
 		reflect.TypeOf((*DataAwsEcsTaskDefinitionConfig)(nil)).Elem(),
 	)
 }

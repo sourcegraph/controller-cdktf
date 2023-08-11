@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeReservation.GoogleComputeReservation",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservation",
 		reflect.TypeOf((*GoogleComputeReservation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,15 +83,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeReservation.GoogleComputeReservationConfig",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationConfig",
 		reflect.TypeOf((*GoogleComputeReservationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeReservation.GoogleComputeReservationShareSettings",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationShareSettings",
 		reflect.TypeOf((*GoogleComputeReservationShareSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeReservation.GoogleComputeReservationShareSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationShareSettingsOutputReference",
 		reflect.TypeOf((*GoogleComputeReservationShareSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -130,11 +130,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeReservation.GoogleComputeReservationShareSettingsProjectMap",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationShareSettingsProjectMap",
 		reflect.TypeOf((*GoogleComputeReservationShareSettingsProjectMap)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeReservation.GoogleComputeReservationShareSettingsProjectMapList",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationShareSettingsProjectMapList",
 		reflect.TypeOf((*GoogleComputeReservationShareSettingsProjectMapList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -155,7 +155,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeReservation.GoogleComputeReservationShareSettingsProjectMapOutputReference",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationShareSettingsProjectMapOutputReference",
 		reflect.TypeOf((*GoogleComputeReservationShareSettingsProjectMapOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -192,19 +192,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservation",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservation",
 		reflect.TypeOf((*GoogleComputeReservationSpecificReservation)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationInstanceProperties",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationInstanceProperties",
 		reflect.TypeOf((*GoogleComputeReservationSpecificReservationInstanceProperties)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationInstancePropertiesGuestAccelerators",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationInstancePropertiesGuestAccelerators",
 		reflect.TypeOf((*GoogleComputeReservationSpecificReservationInstancePropertiesGuestAccelerators)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList",
 		reflect.TypeOf((*GoogleComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -225,7 +225,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsOutputReference",
 		reflect.TypeOf((*GoogleComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCount", GoGetter: "AcceleratorCount"},
@@ -261,11 +261,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationInstancePropertiesLocalSsds",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationInstancePropertiesLocalSsds",
 		reflect.TypeOf((*GoogleComputeReservationSpecificReservationInstancePropertiesLocalSsds)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationInstancePropertiesLocalSsdsList",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationInstancePropertiesLocalSsdsList",
 		reflect.TypeOf((*GoogleComputeReservationSpecificReservationInstancePropertiesLocalSsdsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -286,7 +286,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference",
 		reflect.TypeOf((*GoogleComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -323,7 +323,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference",
 		reflect.TypeOf((*GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -368,7 +368,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationOutputReference",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationOutputReference",
 		reflect.TypeOf((*GoogleComputeReservationSpecificReservationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -406,11 +406,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeReservation.GoogleComputeReservationTimeouts",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationTimeouts",
 		reflect.TypeOf((*GoogleComputeReservationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeReservation.GoogleComputeReservationTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleComputeReservationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

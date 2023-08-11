@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
+		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
 		reflect.TypeOf((*LoadBalancerMonitor)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -102,15 +102,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig",
+		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig",
 		reflect.TypeOf((*LoadBalancerMonitorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.loadBalancerMonitor.LoadBalancerMonitorHeader",
+		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorHeader",
 		reflect.TypeOf((*LoadBalancerMonitorHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.loadBalancerMonitor.LoadBalancerMonitorHeaderList",
+		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorHeaderList",
 		reflect.TypeOf((*LoadBalancerMonitorHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -131,7 +131,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.loadBalancerMonitor.LoadBalancerMonitorHeaderOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorHeaderOutputReference",
 		reflect.TypeOf((*LoadBalancerMonitorHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

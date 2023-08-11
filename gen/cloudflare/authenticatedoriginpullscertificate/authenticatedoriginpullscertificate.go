@@ -478,7 +478,7 @@ func NewAuthenticatedOriginPullsCertificate(scope constructs.Construct, id *stri
 	j := jsiiProxy_AuthenticatedOriginPullsCertificate{}
 
 	_jsii_.Create(
-		"cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificate",
+		"@cdktf/provider-cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -491,7 +491,7 @@ func NewAuthenticatedOriginPullsCertificate_Override(a AuthenticatedOriginPullsC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificate",
+		"@cdktf/provider-cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificate",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -646,7 +646,7 @@ func AuthenticatedOriginPullsCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificate",
+		"@cdktf/provider-cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func AuthenticatedOriginPullsCertificate_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificate",
+		"@cdktf/provider-cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -684,7 +684,7 @@ func AuthenticatedOriginPullsCertificate_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificate",
+		"@cdktf/provider-cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -697,7 +697,7 @@ func AuthenticatedOriginPullsCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificate",
+		"@cdktf/provider-cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificate",
 		"tfResourceType",
 		&returns,
 	)

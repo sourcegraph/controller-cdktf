@@ -228,7 +228,7 @@ func NewRateLimitMatchRequestOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_RateLimitMatchRequestOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.rateLimit.RateLimitMatchRequestOutputReference",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatchRequestOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewRateLimitMatchRequestOutputReference_Override(r RateLimitMatchRequestOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.rateLimit.RateLimitMatchRequestOutputReference",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatchRequestOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

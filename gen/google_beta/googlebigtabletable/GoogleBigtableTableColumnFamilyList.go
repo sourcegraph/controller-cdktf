@@ -116,7 +116,7 @@ func NewGoogleBigtableTableColumnFamilyList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_GoogleBigtableTableColumnFamilyList{}
 
 	_jsii_.Create(
-		"google-beta.googleBigtableTable.GoogleBigtableTableColumnFamilyList",
+		"@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableColumnFamilyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleBigtableTableColumnFamilyList_Override(g GoogleBigtableTableColumn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigtableTable.GoogleBigtableTableColumnFamilyList",
+		"@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableColumnFamilyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -379,7 +379,7 @@ func NewDataGoogleFirebaseWebAppConfigA(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataGoogleFirebaseWebAppConfigA{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleFirebaseWebAppConfig.DataGoogleFirebaseWebAppConfigA",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseWebAppConfig.DataGoogleFirebaseWebAppConfigA",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -392,7 +392,7 @@ func NewDataGoogleFirebaseWebAppConfigA_Override(d DataGoogleFirebaseWebAppConfi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleFirebaseWebAppConfig.DataGoogleFirebaseWebAppConfigA",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseWebAppConfig.DataGoogleFirebaseWebAppConfigA",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -492,7 +492,7 @@ func DataGoogleFirebaseWebAppConfigA_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleFirebaseWebAppConfig.DataGoogleFirebaseWebAppConfigA",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseWebAppConfig.DataGoogleFirebaseWebAppConfigA",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -511,7 +511,7 @@ func DataGoogleFirebaseWebAppConfigA_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleFirebaseWebAppConfig.DataGoogleFirebaseWebAppConfigA",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseWebAppConfig.DataGoogleFirebaseWebAppConfigA",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -530,7 +530,7 @@ func DataGoogleFirebaseWebAppConfigA_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleFirebaseWebAppConfig.DataGoogleFirebaseWebAppConfigA",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseWebAppConfig.DataGoogleFirebaseWebAppConfigA",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func DataGoogleFirebaseWebAppConfigA_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleFirebaseWebAppConfig.DataGoogleFirebaseWebAppConfigA",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseWebAppConfig.DataGoogleFirebaseWebAppConfigA",
 		"tfResourceType",
 		&returns,
 	)

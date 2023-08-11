@@ -324,7 +324,7 @@ func NewDataAwsCloudwatchEventConnection(scope constructs.Construct, id *string,
 	j := jsiiProxy_DataAwsCloudwatchEventConnection{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudwatchEventConnection.DataAwsCloudwatchEventConnection",
+		"@cdktf/provider-aws.dataAwsCloudwatchEventConnection.DataAwsCloudwatchEventConnection",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -337,7 +337,7 @@ func NewDataAwsCloudwatchEventConnection_Override(d DataAwsCloudwatchEventConnec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudwatchEventConnection.DataAwsCloudwatchEventConnection",
+		"@cdktf/provider-aws.dataAwsCloudwatchEventConnection.DataAwsCloudwatchEventConnection",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -437,7 +437,7 @@ func DataAwsCloudwatchEventConnection_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudwatchEventConnection.DataAwsCloudwatchEventConnection",
+		"@cdktf/provider-aws.dataAwsCloudwatchEventConnection.DataAwsCloudwatchEventConnection",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -456,7 +456,7 @@ func DataAwsCloudwatchEventConnection_IsTerraformDataSource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudwatchEventConnection.DataAwsCloudwatchEventConnection",
+		"@cdktf/provider-aws.dataAwsCloudwatchEventConnection.DataAwsCloudwatchEventConnection",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -475,7 +475,7 @@ func DataAwsCloudwatchEventConnection_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudwatchEventConnection.DataAwsCloudwatchEventConnection",
+		"@cdktf/provider-aws.dataAwsCloudwatchEventConnection.DataAwsCloudwatchEventConnection",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -488,7 +488,7 @@ func DataAwsCloudwatchEventConnection_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsCloudwatchEventConnection.DataAwsCloudwatchEventConnection",
+		"@cdktf/provider-aws.dataAwsCloudwatchEventConnection.DataAwsCloudwatchEventConnection",
 		"tfResourceType",
 		&returns,
 	)

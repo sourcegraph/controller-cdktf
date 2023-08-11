@@ -471,7 +471,7 @@ func NewDataAwsServicecatalogProduct(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataAwsServicecatalogProduct{}
 
 	_jsii_.Create(
-		"aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct",
+		"@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -484,7 +484,7 @@ func NewDataAwsServicecatalogProduct_Override(d DataAwsServicecatalogProduct, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct",
+		"@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -595,7 +595,7 @@ func DataAwsServicecatalogProduct_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct",
+		"@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -614,7 +614,7 @@ func DataAwsServicecatalogProduct_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct",
+		"@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func DataAwsServicecatalogProduct_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct",
+		"@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func DataAwsServicecatalogProduct_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct",
+		"@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct",
 		"tfResourceType",
 		&returns,
 	)

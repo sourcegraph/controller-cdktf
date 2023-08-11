@@ -225,7 +225,7 @@ func NewOpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference(terraf
 	j := jsiiProxy_OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference{}
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewOpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)

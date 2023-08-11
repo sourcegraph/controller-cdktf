@@ -203,7 +203,7 @@ func NewCloudiotRegistryEventNotificationConfigsOutputReference(terraformResourc
 	j := jsiiProxy_CloudiotRegistryEventNotificationConfigsOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudiotRegistry.CloudiotRegistryEventNotificationConfigsOutputReference",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistryEventNotificationConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewCloudiotRegistryEventNotificationConfigsOutputReference_Override(c Cloud
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudiotRegistry.CloudiotRegistryEventNotificationConfigsOutputReference",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistryEventNotificationConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

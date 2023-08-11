@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.vertexAiFeaturestore.VertexAiFeaturestore",
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestore",
 		reflect.TypeOf((*VertexAiFeaturestore)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,15 +85,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiFeaturestore.VertexAiFeaturestoreConfig",
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreConfig",
 		reflect.TypeOf((*VertexAiFeaturestoreConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiFeaturestore.VertexAiFeaturestoreEncryptionSpec",
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreEncryptionSpec",
 		reflect.TypeOf((*VertexAiFeaturestoreEncryptionSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.vertexAiFeaturestore.VertexAiFeaturestoreEncryptionSpecOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreEncryptionSpecOutputReference",
 		reflect.TypeOf((*VertexAiFeaturestoreEncryptionSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -127,11 +127,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiFeaturestore.VertexAiFeaturestoreOnlineServingConfig",
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreOnlineServingConfig",
 		reflect.TypeOf((*VertexAiFeaturestoreOnlineServingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.vertexAiFeaturestore.VertexAiFeaturestoreOnlineServingConfigOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreOnlineServingConfigOutputReference",
 		reflect.TypeOf((*VertexAiFeaturestoreOnlineServingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -170,11 +170,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiFeaturestore.VertexAiFeaturestoreOnlineServingConfigScaling",
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreOnlineServingConfigScaling",
 		reflect.TypeOf((*VertexAiFeaturestoreOnlineServingConfigScaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.vertexAiFeaturestore.VertexAiFeaturestoreOnlineServingConfigScalingOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreOnlineServingConfigScalingOutputReference",
 		reflect.TypeOf((*VertexAiFeaturestoreOnlineServingConfigScalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -210,11 +210,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiFeaturestore.VertexAiFeaturestoreTimeouts",
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreTimeouts",
 		reflect.TypeOf((*VertexAiFeaturestoreTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.vertexAiFeaturestore.VertexAiFeaturestoreTimeoutsOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreTimeoutsOutputReference",
 		reflect.TypeOf((*VertexAiFeaturestoreTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

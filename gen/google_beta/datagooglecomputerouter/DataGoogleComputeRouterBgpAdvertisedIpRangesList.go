@@ -104,7 +104,7 @@ func NewDataGoogleComputeRouterBgpAdvertisedIpRangesList(terraformResource cdktf
 	j := jsiiProxy_DataGoogleComputeRouterBgpAdvertisedIpRangesList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRouter.DataGoogleComputeRouterBgpAdvertisedIpRangesList",
+		"@cdktf/provider-google-beta.dataGoogleComputeRouter.DataGoogleComputeRouterBgpAdvertisedIpRangesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeRouterBgpAdvertisedIpRangesList_Override(d DataGoogleCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRouter.DataGoogleComputeRouterBgpAdvertisedIpRangesList",
+		"@cdktf/provider-google-beta.dataGoogleComputeRouter.DataGoogleComputeRouterBgpAdvertisedIpRangesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

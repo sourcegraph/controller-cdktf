@@ -116,7 +116,7 @@ func NewCloudiotRegistryCredentialsList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_CloudiotRegistryCredentialsList{}
 
 	_jsii_.Create(
-		"google.cloudiotRegistry.CloudiotRegistryCredentialsList",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistryCredentialsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudiotRegistryCredentialsList_Override(c CloudiotRegistryCredentialsLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudiotRegistry.CloudiotRegistryCredentialsList",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistryCredentialsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

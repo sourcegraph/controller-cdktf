@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsSfnActivity.DataAwsSfnActivity",
+		"@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivity",
 		reflect.TypeOf((*DataAwsSfnActivity)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsSfnActivity.DataAwsSfnActivityConfig",
+		"@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivityConfig",
 		reflect.TypeOf((*DataAwsSfnActivityConfig)(nil)).Elem(),
 	)
 }

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.eksFargateProfile.EksFargateProfile",
+		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfile",
 		reflect.TypeOf((*EksFargateProfile)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,15 +79,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.eksFargateProfile.EksFargateProfileConfig",
+		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfileConfig",
 		reflect.TypeOf((*EksFargateProfileConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.eksFargateProfile.EksFargateProfileSelector",
+		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfileSelector",
 		reflect.TypeOf((*EksFargateProfileSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.eksFargateProfile.EksFargateProfileSelectorList",
+		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfileSelectorList",
 		reflect.TypeOf((*EksFargateProfileSelectorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.eksFargateProfile.EksFargateProfileSelectorOutputReference",
+		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfileSelectorOutputReference",
 		reflect.TypeOf((*EksFargateProfileSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -145,11 +145,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.eksFargateProfile.EksFargateProfileTimeouts",
+		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfileTimeouts",
 		reflect.TypeOf((*EksFargateProfileTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.eksFargateProfile.EksFargateProfileTimeoutsOutputReference",
+		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfileTimeoutsOutputReference",
 		reflect.TypeOf((*EksFargateProfileTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -204,7 +204,7 @@ func NewPodV1SpecAffinityNodeAffinityOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_PodV1SpecAffinityNodeAffinityOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecAffinityNodeAffinityOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecAffinityNodeAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPodV1SpecAffinityNodeAffinityOutputReference_Override(p PodV1SpecAffinit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecAffinityNodeAffinityOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecAffinityNodeAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

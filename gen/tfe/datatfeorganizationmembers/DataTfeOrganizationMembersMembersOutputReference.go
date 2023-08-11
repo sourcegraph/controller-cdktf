@@ -178,7 +178,7 @@ func NewDataTfeOrganizationMembersMembersOutputReference(terraformResource cdktf
 	j := jsiiProxy_DataTfeOrganizationMembersMembersOutputReference{}
 
 	_jsii_.Create(
-		"tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersOutputReference",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataTfeOrganizationMembersMembersOutputReference_Override(d DataTfeOrgan
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersOutputReference",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

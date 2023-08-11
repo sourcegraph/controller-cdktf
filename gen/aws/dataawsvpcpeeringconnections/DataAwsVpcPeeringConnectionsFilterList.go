@@ -116,7 +116,7 @@ func NewDataAwsVpcPeeringConnectionsFilterList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataAwsVpcPeeringConnectionsFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsFilterList",
+		"@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsVpcPeeringConnectionsFilterList_Override(d DataAwsVpcPeeringConne
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsFilterList",
+		"@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

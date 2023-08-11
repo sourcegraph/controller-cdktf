@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sfnStateMachine.SfnStateMachine",
+		"@cdktf/provider-aws.sfnStateMachine.SfnStateMachine",
 		reflect.TypeOf((*SfnStateMachine)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,15 +85,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sfnStateMachine.SfnStateMachineConfig",
+		"@cdktf/provider-aws.sfnStateMachine.SfnStateMachineConfig",
 		reflect.TypeOf((*SfnStateMachineConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sfnStateMachine.SfnStateMachineLoggingConfiguration",
+		"@cdktf/provider-aws.sfnStateMachine.SfnStateMachineLoggingConfiguration",
 		reflect.TypeOf((*SfnStateMachineLoggingConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sfnStateMachine.SfnStateMachineLoggingConfigurationOutputReference",
+		"@cdktf/provider-aws.sfnStateMachine.SfnStateMachineLoggingConfigurationOutputReference",
 		reflect.TypeOf((*SfnStateMachineLoggingConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -134,11 +134,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sfnStateMachine.SfnStateMachineTracingConfiguration",
+		"@cdktf/provider-aws.sfnStateMachine.SfnStateMachineTracingConfiguration",
 		reflect.TypeOf((*SfnStateMachineTracingConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sfnStateMachine.SfnStateMachineTracingConfigurationOutputReference",
+		"@cdktf/provider-aws.sfnStateMachine.SfnStateMachineTracingConfigurationOutputReference",
 		reflect.TypeOf((*SfnStateMachineTracingConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -461,7 +461,7 @@ func NewAccessContextManagerAccessLevel(scope constructs.Construct, id *string, 
 	j := jsiiProxy_AccessContextManagerAccessLevel{}
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevel",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -474,7 +474,7 @@ func NewAccessContextManagerAccessLevel_Override(a AccessContextManagerAccessLev
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevel",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevel",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -629,7 +629,7 @@ func AccessContextManagerAccessLevel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevel",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -648,7 +648,7 @@ func AccessContextManagerAccessLevel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevel",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func AccessContextManagerAccessLevel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevel",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func AccessContextManagerAccessLevel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevel",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevel",
 		"tfResourceType",
 		&returns,
 	)

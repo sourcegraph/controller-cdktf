@@ -520,7 +520,7 @@ func NewGlobalacceleratorAccelerator(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GlobalacceleratorAccelerator{}
 
 	_jsii_.Create(
-		"aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -533,7 +533,7 @@ func NewGlobalacceleratorAccelerator_Override(g GlobalacceleratorAccelerator, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -710,7 +710,7 @@ func GlobalacceleratorAccelerator_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -729,7 +729,7 @@ func GlobalacceleratorAccelerator_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -748,7 +748,7 @@ func GlobalacceleratorAccelerator_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -761,7 +761,7 @@ func GlobalacceleratorAccelerator_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
 		"tfResourceType",
 		&returns,
 	)

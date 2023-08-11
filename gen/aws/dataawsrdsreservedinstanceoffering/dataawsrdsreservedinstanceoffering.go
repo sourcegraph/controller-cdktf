@@ -416,7 +416,7 @@ func NewDataAwsRdsReservedInstanceOffering(scope constructs.Construct, id *strin
 	j := jsiiProxy_DataAwsRdsReservedInstanceOffering{}
 
 	_jsii_.Create(
-		"aws.dataAwsRdsReservedInstanceOffering.DataAwsRdsReservedInstanceOffering",
+		"@cdktf/provider-aws.dataAwsRdsReservedInstanceOffering.DataAwsRdsReservedInstanceOffering",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -429,7 +429,7 @@ func NewDataAwsRdsReservedInstanceOffering_Override(d DataAwsRdsReservedInstance
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRdsReservedInstanceOffering.DataAwsRdsReservedInstanceOffering",
+		"@cdktf/provider-aws.dataAwsRdsReservedInstanceOffering.DataAwsRdsReservedInstanceOffering",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -573,7 +573,7 @@ func DataAwsRdsReservedInstanceOffering_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRdsReservedInstanceOffering.DataAwsRdsReservedInstanceOffering",
+		"@cdktf/provider-aws.dataAwsRdsReservedInstanceOffering.DataAwsRdsReservedInstanceOffering",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -592,7 +592,7 @@ func DataAwsRdsReservedInstanceOffering_IsTerraformDataSource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRdsReservedInstanceOffering.DataAwsRdsReservedInstanceOffering",
+		"@cdktf/provider-aws.dataAwsRdsReservedInstanceOffering.DataAwsRdsReservedInstanceOffering",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func DataAwsRdsReservedInstanceOffering_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRdsReservedInstanceOffering.DataAwsRdsReservedInstanceOffering",
+		"@cdktf/provider-aws.dataAwsRdsReservedInstanceOffering.DataAwsRdsReservedInstanceOffering",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -624,7 +624,7 @@ func DataAwsRdsReservedInstanceOffering_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsRdsReservedInstanceOffering.DataAwsRdsReservedInstanceOffering",
+		"@cdktf/provider-aws.dataAwsRdsReservedInstanceOffering.DataAwsRdsReservedInstanceOffering",
 		"tfResourceType",
 		&returns,
 	)

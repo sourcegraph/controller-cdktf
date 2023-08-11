@@ -104,7 +104,7 @@ func NewDataKubernetesNamespaceV1SpecList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_DataKubernetesNamespaceV1SpecList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1SpecList",
+		"@cdktf/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1SpecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesNamespaceV1SpecList_Override(d DataKubernetesNamespaceV1Sp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1SpecList",
+		"@cdktf/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1SpecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

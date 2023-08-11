@@ -309,7 +309,7 @@ func NewRoleV1MetadataOutputReference(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_RoleV1MetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.roleV1.RoleV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.roleV1.RoleV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -321,7 +321,7 @@ func NewRoleV1MetadataOutputReference_Override(r RoleV1MetadataOutputReference, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.roleV1.RoleV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.roleV1.RoleV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

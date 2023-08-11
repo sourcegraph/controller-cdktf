@@ -354,7 +354,7 @@ func NewRoute53ResolverFirewallConfig(scope constructs.Construct, id *string, co
 	j := jsiiProxy_Route53ResolverFirewallConfig{}
 
 	_jsii_.Create(
-		"aws.route53ResolverFirewallConfig.Route53ResolverFirewallConfig",
+		"@cdktf/provider-aws.route53ResolverFirewallConfig.Route53ResolverFirewallConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -367,7 +367,7 @@ func NewRoute53ResolverFirewallConfig_Override(r Route53ResolverFirewallConfig, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53ResolverFirewallConfig.Route53ResolverFirewallConfig",
+		"@cdktf/provider-aws.route53ResolverFirewallConfig.Route53ResolverFirewallConfig",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -500,7 +500,7 @@ func Route53ResolverFirewallConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverFirewallConfig.Route53ResolverFirewallConfig",
+		"@cdktf/provider-aws.route53ResolverFirewallConfig.Route53ResolverFirewallConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -519,7 +519,7 @@ func Route53ResolverFirewallConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverFirewallConfig.Route53ResolverFirewallConfig",
+		"@cdktf/provider-aws.route53ResolverFirewallConfig.Route53ResolverFirewallConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -538,7 +538,7 @@ func Route53ResolverFirewallConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverFirewallConfig.Route53ResolverFirewallConfig",
+		"@cdktf/provider-aws.route53ResolverFirewallConfig.Route53ResolverFirewallConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func Route53ResolverFirewallConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53ResolverFirewallConfig.Route53ResolverFirewallConfig",
+		"@cdktf/provider-aws.route53ResolverFirewallConfig.Route53ResolverFirewallConfig",
 		"tfResourceType",
 		&returns,
 	)

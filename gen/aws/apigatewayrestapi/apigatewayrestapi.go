@@ -651,7 +651,7 @@ func NewApiGatewayRestApi(scope constructs.Construct, id *string, config *ApiGat
 	j := jsiiProxy_ApiGatewayRestApi{}
 
 	_jsii_.Create(
-		"aws.apiGatewayRestApi.ApiGatewayRestApi",
+		"@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApi",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -664,7 +664,7 @@ func NewApiGatewayRestApi_Override(a ApiGatewayRestApi, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayRestApi.ApiGatewayRestApi",
+		"@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApi",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -907,7 +907,7 @@ func ApiGatewayRestApi_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayRestApi.ApiGatewayRestApi",
+		"@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApi",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -926,7 +926,7 @@ func ApiGatewayRestApi_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayRestApi.ApiGatewayRestApi",
+		"@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApi",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -945,7 +945,7 @@ func ApiGatewayRestApi_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayRestApi.ApiGatewayRestApi",
+		"@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApi",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -958,7 +958,7 @@ func ApiGatewayRestApi_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apiGatewayRestApi.ApiGatewayRestApi",
+		"@cdktf/provider-aws.apiGatewayRestApi.ApiGatewayRestApi",
 		"tfResourceType",
 		&returns,
 	)

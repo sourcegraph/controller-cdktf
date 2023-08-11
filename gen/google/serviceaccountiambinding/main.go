@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.serviceAccountIamBinding.ServiceAccountIamBinding",
+		"@cdktf/provider-google.serviceAccountIamBinding.ServiceAccountIamBinding",
 		reflect.TypeOf((*ServiceAccountIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,11 +66,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.serviceAccountIamBinding.ServiceAccountIamBindingCondition",
+		"@cdktf/provider-google.serviceAccountIamBinding.ServiceAccountIamBindingCondition",
 		reflect.TypeOf((*ServiceAccountIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.serviceAccountIamBinding.ServiceAccountIamBindingConditionOutputReference",
+		"@cdktf/provider-google.serviceAccountIamBinding.ServiceAccountIamBindingConditionOutputReference",
 		reflect.TypeOf((*ServiceAccountIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.serviceAccountIamBinding.ServiceAccountIamBindingConfig",
+		"@cdktf/provider-google.serviceAccountIamBinding.ServiceAccountIamBindingConfig",
 		reflect.TypeOf((*ServiceAccountIamBindingConfig)(nil)).Elem(),
 	)
 }

@@ -204,7 +204,7 @@ func NewGoogleComputeTargetInstanceTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleComputeTargetInstanceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeTargetInstance.GoogleComputeTargetInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeTargetInstance.GoogleComputeTargetInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleComputeTargetInstanceTimeoutsOutputReference_Override(g GoogleComp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeTargetInstance.GoogleComputeTargetInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeTargetInstance.GoogleComputeTargetInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

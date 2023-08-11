@@ -251,7 +251,7 @@ func NewEcsServiceServiceConnectConfigurationOutputReference(terraformResource c
 	j := jsiiProxy_EcsServiceServiceConnectConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference",
+		"@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewEcsServiceServiceConnectConfigurationOutputReference_Override(e EcsServi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference",
+		"@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

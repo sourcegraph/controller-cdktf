@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsElasticacheCluster.DataAwsElasticacheCluster",
+		"@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheCluster",
 		reflect.TypeOf((*DataAwsElasticacheCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,11 +81,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsElasticacheCluster.DataAwsElasticacheClusterCacheNodes",
+		"@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheClusterCacheNodes",
 		reflect.TypeOf((*DataAwsElasticacheClusterCacheNodes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsElasticacheCluster.DataAwsElasticacheClusterCacheNodesList",
+		"@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheClusterCacheNodesList",
 		reflect.TypeOf((*DataAwsElasticacheClusterCacheNodesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsElasticacheCluster.DataAwsElasticacheClusterCacheNodesOutputReference",
+		"@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheClusterCacheNodesOutputReference",
 		reflect.TypeOf((*DataAwsElasticacheClusterCacheNodesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
@@ -142,15 +142,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsElasticacheCluster.DataAwsElasticacheClusterConfig",
+		"@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheClusterConfig",
 		reflect.TypeOf((*DataAwsElasticacheClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsElasticacheCluster.DataAwsElasticacheClusterLogDeliveryConfiguration",
+		"@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheClusterLogDeliveryConfiguration",
 		reflect.TypeOf((*DataAwsElasticacheClusterLogDeliveryConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsElasticacheCluster.DataAwsElasticacheClusterLogDeliveryConfigurationList",
+		"@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheClusterLogDeliveryConfigurationList",
 		reflect.TypeOf((*DataAwsElasticacheClusterLogDeliveryConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -170,7 +170,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsElasticacheCluster.DataAwsElasticacheClusterLogDeliveryConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheClusterLogDeliveryConfigurationOutputReference",
 		reflect.TypeOf((*DataAwsElasticacheClusterLogDeliveryConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

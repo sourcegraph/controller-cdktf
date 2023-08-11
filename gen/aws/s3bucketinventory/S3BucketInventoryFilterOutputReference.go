@@ -180,7 +180,7 @@ func NewS3BucketInventoryFilterOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_S3BucketInventoryFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketInventory.S3BucketInventoryFilterOutputReference",
+		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewS3BucketInventoryFilterOutputReference_Override(s S3BucketInventoryFilte
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketInventory.S3BucketInventoryFilterOutputReference",
+		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

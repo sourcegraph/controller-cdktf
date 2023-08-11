@@ -228,7 +228,7 @@ func NewRedshiftClusterIamRolesTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_RedshiftClusterIamRolesTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeoutsOutputReference",
+		"@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewRedshiftClusterIamRolesTimeoutsOutputReference_Override(r RedshiftCluste
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeoutsOutputReference",
+		"@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

@@ -204,7 +204,7 @@ func NewLoadBalancerPolicyPolicyAttributeOutputReference(terraformResource cdktf
 	j := jsiiProxy_LoadBalancerPolicyPolicyAttributeOutputReference{}
 
 	_jsii_.Create(
-		"aws.loadBalancerPolicy.LoadBalancerPolicyPolicyAttributeOutputReference",
+		"@cdktf/provider-aws.loadBalancerPolicy.LoadBalancerPolicyPolicyAttributeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewLoadBalancerPolicyPolicyAttributeOutputReference_Override(l LoadBalancer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.loadBalancerPolicy.LoadBalancerPolicyPolicyAttributeOutputReference",
+		"@cdktf/provider-aws.loadBalancerPolicy.LoadBalancerPolicyPolicyAttributeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

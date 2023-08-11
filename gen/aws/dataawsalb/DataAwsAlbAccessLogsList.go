@@ -104,7 +104,7 @@ func NewDataAwsAlbAccessLogsList(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_DataAwsAlbAccessLogsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsAlb.DataAwsAlbAccessLogsList",
+		"@cdktf/provider-aws.dataAwsAlb.DataAwsAlbAccessLogsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsAlbAccessLogsList_Override(d DataAwsAlbAccessLogsList, terraformR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAlb.DataAwsAlbAccessLogsList",
+		"@cdktf/provider-aws.dataAwsAlb.DataAwsAlbAccessLogsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

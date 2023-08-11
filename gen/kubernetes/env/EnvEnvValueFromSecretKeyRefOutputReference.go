@@ -228,7 +228,7 @@ func NewEnvEnvValueFromSecretKeyRefOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.env.EnvEnvValueFromSecretKeyRefOutputReference",
+		"@cdktf/provider-kubernetes.env.EnvEnvValueFromSecretKeyRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewEnvEnvValueFromSecretKeyRefOutputReference_Override(e EnvEnvValueFromSec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.env.EnvEnvValueFromSecretKeyRefOutputReference",
+		"@cdktf/provider-kubernetes.env.EnvEnvValueFromSecretKeyRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

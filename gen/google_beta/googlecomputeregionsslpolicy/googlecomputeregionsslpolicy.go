@@ -530,7 +530,7 @@ func NewGoogleComputeRegionSslPolicy(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleComputeRegionSslPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicy",
+		"@cdktf/provider-google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -543,7 +543,7 @@ func NewGoogleComputeRegionSslPolicy_Override(g GoogleComputeRegionSslPolicy, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicy",
+		"@cdktf/provider-google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -731,7 +731,7 @@ func GoogleComputeRegionSslPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicy",
+		"@cdktf/provider-google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -750,7 +750,7 @@ func GoogleComputeRegionSslPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicy",
+		"@cdktf/provider-google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -769,7 +769,7 @@ func GoogleComputeRegionSslPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicy",
+		"@cdktf/provider-google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -782,7 +782,7 @@ func GoogleComputeRegionSslPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicy",
+		"@cdktf/provider-google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicy",
 		"tfResourceType",
 		&returns,
 	)

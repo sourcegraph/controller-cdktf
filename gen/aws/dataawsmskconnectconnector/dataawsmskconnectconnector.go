@@ -324,7 +324,7 @@ func NewDataAwsMskconnectConnector(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataAwsMskconnectConnector{}
 
 	_jsii_.Create(
-		"aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector",
+		"@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -337,7 +337,7 @@ func NewDataAwsMskconnectConnector_Override(d DataAwsMskconnectConnector, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector",
+		"@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -437,7 +437,7 @@ func DataAwsMskconnectConnector_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector",
+		"@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -456,7 +456,7 @@ func DataAwsMskconnectConnector_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector",
+		"@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -475,7 +475,7 @@ func DataAwsMskconnectConnector_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector",
+		"@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -488,7 +488,7 @@ func DataAwsMskconnectConnector_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector",
+		"@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector",
 		"tfResourceType",
 		&returns,
 	)

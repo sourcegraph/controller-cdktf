@@ -424,7 +424,7 @@ func NewGoogleRuntimeconfigConfigIamBinding(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleRuntimeconfigConfigIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBinding",
+		"@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleRuntimeconfigConfigIamBinding_Override(g GoogleRuntimeconfigConfig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBinding",
+		"@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleRuntimeconfigConfigIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBinding",
+		"@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleRuntimeconfigConfigIamBinding_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBinding",
+		"@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleRuntimeconfigConfigIamBinding_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBinding",
+		"@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleRuntimeconfigConfigIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBinding",
+		"@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBinding",
 		"tfResourceType",
 		&returns,
 	)

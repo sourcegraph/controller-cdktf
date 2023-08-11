@@ -226,7 +226,7 @@ func NewProjectIamBindingConditionOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_ProjectIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.projectIamBinding.ProjectIamBindingConditionOutputReference",
+		"@cdktf/provider-google.projectIamBinding.ProjectIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewProjectIamBindingConditionOutputReference_Override(p ProjectIamBindingCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.projectIamBinding.ProjectIamBindingConditionOutputReference",
+		"@cdktf/provider-google.projectIamBinding.ProjectIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

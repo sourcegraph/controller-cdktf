@@ -156,7 +156,7 @@ func NewDataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsccOutputR
 	j := jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsccOutputReference{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsccOutputReference",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsccOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewDataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsccOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsccOutputReference",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsccOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

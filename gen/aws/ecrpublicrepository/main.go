@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ecrpublicRepository.EcrpublicRepository",
+		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository",
 		reflect.TypeOf((*EcrpublicRepository)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,11 +77,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecrpublicRepository.EcrpublicRepositoryCatalogData",
+		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogData",
 		reflect.TypeOf((*EcrpublicRepositoryCatalogData)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ecrpublicRepository.EcrpublicRepositoryCatalogDataOutputReference",
+		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogDataOutputReference",
 		reflect.TypeOf((*EcrpublicRepositoryCatalogDataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aboutText", GoGetter: "AboutText"},
@@ -131,15 +131,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecrpublicRepository.EcrpublicRepositoryConfig",
+		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryConfig",
 		reflect.TypeOf((*EcrpublicRepositoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecrpublicRepository.EcrpublicRepositoryTimeouts",
+		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryTimeouts",
 		reflect.TypeOf((*EcrpublicRepositoryTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ecrpublicRepository.EcrpublicRepositoryTimeoutsOutputReference",
+		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryTimeoutsOutputReference",
 		reflect.TypeOf((*EcrpublicRepositoryTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

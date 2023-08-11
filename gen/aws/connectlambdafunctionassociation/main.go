@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation",
+		"@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation",
 		reflect.TypeOf((*ConnectLambdaFunctionAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociationConfig",
+		"@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociationConfig",
 		reflect.TypeOf((*ConnectLambdaFunctionAssociationConfig)(nil)).Elem(),
 	)
 }

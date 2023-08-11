@@ -448,7 +448,7 @@ func NewArtifactRegistryRepositoryIamMember(scope constructs.Construct, id *stri
 	j := jsiiProxy_ArtifactRegistryRepositoryIamMember{}
 
 	_jsii_.Create(
-		"google.artifactRegistryRepositoryIamMember.ArtifactRegistryRepositoryIamMember",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamMember.ArtifactRegistryRepositoryIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewArtifactRegistryRepositoryIamMember_Override(a ArtifactRegistryRepositor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.artifactRegistryRepositoryIamMember.ArtifactRegistryRepositoryIamMember",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamMember.ArtifactRegistryRepositoryIamMember",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -627,7 +627,7 @@ func ArtifactRegistryRepositoryIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.artifactRegistryRepositoryIamMember.ArtifactRegistryRepositoryIamMember",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamMember.ArtifactRegistryRepositoryIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func ArtifactRegistryRepositoryIamMember_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.artifactRegistryRepositoryIamMember.ArtifactRegistryRepositoryIamMember",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamMember.ArtifactRegistryRepositoryIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func ArtifactRegistryRepositoryIamMember_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.artifactRegistryRepositoryIamMember.ArtifactRegistryRepositoryIamMember",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamMember.ArtifactRegistryRepositoryIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func ArtifactRegistryRepositoryIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.artifactRegistryRepositoryIamMember.ArtifactRegistryRepositoryIamMember",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamMember.ArtifactRegistryRepositoryIamMember",
 		"tfResourceType",
 		&returns,
 	)

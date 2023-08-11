@@ -377,7 +377,7 @@ func NewContainerAnalysisNoteIamPolicy(scope constructs.Construct, id *string, c
 	j := jsiiProxy_ContainerAnalysisNoteIamPolicy{}
 
 	_jsii_.Create(
-		"google.containerAnalysisNoteIamPolicy.ContainerAnalysisNoteIamPolicy",
+		"@cdktf/provider-google.containerAnalysisNoteIamPolicy.ContainerAnalysisNoteIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewContainerAnalysisNoteIamPolicy_Override(c ContainerAnalysisNoteIamPolicy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAnalysisNoteIamPolicy.ContainerAnalysisNoteIamPolicy",
+		"@cdktf/provider-google.containerAnalysisNoteIamPolicy.ContainerAnalysisNoteIamPolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -534,7 +534,7 @@ func ContainerAnalysisNoteIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAnalysisNoteIamPolicy.ContainerAnalysisNoteIamPolicy",
+		"@cdktf/provider-google.containerAnalysisNoteIamPolicy.ContainerAnalysisNoteIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func ContainerAnalysisNoteIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAnalysisNoteIamPolicy.ContainerAnalysisNoteIamPolicy",
+		"@cdktf/provider-google.containerAnalysisNoteIamPolicy.ContainerAnalysisNoteIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func ContainerAnalysisNoteIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAnalysisNoteIamPolicy.ContainerAnalysisNoteIamPolicy",
+		"@cdktf/provider-google.containerAnalysisNoteIamPolicy.ContainerAnalysisNoteIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func ContainerAnalysisNoteIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.containerAnalysisNoteIamPolicy.ContainerAnalysisNoteIamPolicy",
+		"@cdktf/provider-google.containerAnalysisNoteIamPolicy.ContainerAnalysisNoteIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

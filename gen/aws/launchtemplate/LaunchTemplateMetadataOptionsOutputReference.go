@@ -276,7 +276,7 @@ func NewLaunchTemplateMetadataOptionsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_LaunchTemplateMetadataOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateMetadataOptionsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateMetadataOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewLaunchTemplateMetadataOptionsOutputReference_Override(l LaunchTemplateMe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateMetadataOptionsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateMetadataOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

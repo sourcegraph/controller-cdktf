@@ -204,7 +204,7 @@ func NewContainerClusterBinaryAuthorizationOutputReference(terraformResource cdk
 	j := jsiiProxy_ContainerClusterBinaryAuthorizationOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterBinaryAuthorizationOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterBinaryAuthorizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewContainerClusterBinaryAuthorizationOutputReference_Override(c ContainerC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterBinaryAuthorizationOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterBinaryAuthorizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

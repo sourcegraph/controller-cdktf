@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.internetGateway.InternetGateway",
+		"@cdktf/provider-aws.internetGateway.InternetGateway",
 		reflect.TypeOf((*InternetGateway)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.internetGateway.InternetGatewayConfig",
+		"@cdktf/provider-aws.internetGateway.InternetGatewayConfig",
 		reflect.TypeOf((*InternetGatewayConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.internetGateway.InternetGatewayTimeouts",
+		"@cdktf/provider-aws.internetGateway.InternetGatewayTimeouts",
 		reflect.TypeOf((*InternetGatewayTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.internetGateway.InternetGatewayTimeoutsOutputReference",
+		"@cdktf/provider-aws.internetGateway.InternetGatewayTimeoutsOutputReference",
 		reflect.TypeOf((*InternetGatewayTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

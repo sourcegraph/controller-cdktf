@@ -204,7 +204,7 @@ func NewSnapshotCreateVolumePermissionTimeoutsOutputReference(terraformResource 
 	j := jsiiProxy_SnapshotCreateVolumePermissionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeoutsOutputReference",
+		"@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewSnapshotCreateVolumePermissionTimeoutsOutputReference_Override(s Snapsho
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeoutsOutputReference",
+		"@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

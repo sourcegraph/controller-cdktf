@@ -461,7 +461,7 @@ func NewBackupSelection(scope constructs.Construct, id *string, config *BackupSe
 	j := jsiiProxy_BackupSelection{}
 
 	_jsii_.Create(
-		"aws.backupSelection.BackupSelection",
+		"@cdktf/provider-aws.backupSelection.BackupSelection",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -474,7 +474,7 @@ func NewBackupSelection_Override(b BackupSelection, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupSelection.BackupSelection",
+		"@cdktf/provider-aws.backupSelection.BackupSelection",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -640,7 +640,7 @@ func BackupSelection_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupSelection.BackupSelection",
+		"@cdktf/provider-aws.backupSelection.BackupSelection",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -659,7 +659,7 @@ func BackupSelection_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupSelection.BackupSelection",
+		"@cdktf/provider-aws.backupSelection.BackupSelection",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func BackupSelection_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupSelection.BackupSelection",
+		"@cdktf/provider-aws.backupSelection.BackupSelection",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func BackupSelection_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.backupSelection.BackupSelection",
+		"@cdktf/provider-aws.backupSelection.BackupSelection",
 		"tfResourceType",
 		&returns,
 	)

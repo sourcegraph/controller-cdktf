@@ -448,7 +448,7 @@ func NewDataprocMetastoreServiceIamMember(scope constructs.Construct, id *string
 	j := jsiiProxy_DataprocMetastoreServiceIamMember{}
 
 	_jsii_.Create(
-		"google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMember",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewDataprocMetastoreServiceIamMember_Override(d DataprocMetastoreServiceIam
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMember",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMember",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -627,7 +627,7 @@ func DataprocMetastoreServiceIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMember",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func DataprocMetastoreServiceIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMember",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func DataprocMetastoreServiceIamMember_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMember",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DataprocMetastoreServiceIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMember",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMember",
 		"tfResourceType",
 		&returns,
 	)

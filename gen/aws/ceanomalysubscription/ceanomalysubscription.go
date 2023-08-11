@@ -519,7 +519,7 @@ func NewCeAnomalySubscription(scope constructs.Construct, id *string, config *Ce
 	j := jsiiProxy_CeAnomalySubscription{}
 
 	_jsii_.Create(
-		"aws.ceAnomalySubscription.CeAnomalySubscription",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscription",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -532,7 +532,7 @@ func NewCeAnomalySubscription_Override(c CeAnomalySubscription, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ceAnomalySubscription.CeAnomalySubscription",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscription",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -720,7 +720,7 @@ func CeAnomalySubscription_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ceAnomalySubscription.CeAnomalySubscription",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscription",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -739,7 +739,7 @@ func CeAnomalySubscription_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ceAnomalySubscription.CeAnomalySubscription",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscription",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -758,7 +758,7 @@ func CeAnomalySubscription_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ceAnomalySubscription.CeAnomalySubscription",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscription",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -771,7 +771,7 @@ func CeAnomalySubscription_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ceAnomalySubscription.CeAnomalySubscription",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscription",
 		"tfResourceType",
 		&returns,
 	)

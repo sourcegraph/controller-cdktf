@@ -745,7 +745,7 @@ func NewGoogleDataprocMetastoreService(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleDataprocMetastoreService{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreService",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -758,7 +758,7 @@ func NewGoogleDataprocMetastoreService_Override(g GoogleDataprocMetastoreService
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreService",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreService",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -968,7 +968,7 @@ func GoogleDataprocMetastoreService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreService",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -987,7 +987,7 @@ func GoogleDataprocMetastoreService_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreService",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1006,7 +1006,7 @@ func GoogleDataprocMetastoreService_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreService",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreService",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1019,7 +1019,7 @@ func GoogleDataprocMetastoreService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreService",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreService",
 		"tfResourceType",
 		&returns,
 	)

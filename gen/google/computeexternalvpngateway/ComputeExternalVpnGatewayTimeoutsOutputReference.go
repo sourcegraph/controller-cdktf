@@ -204,7 +204,7 @@ func NewComputeExternalVpnGatewayTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_ComputeExternalVpnGatewayTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeExternalVpnGateway.ComputeExternalVpnGatewayTimeoutsOutputReference",
+		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeExternalVpnGatewayTimeoutsOutputReference_Override(c ComputeExter
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeExternalVpnGateway.ComputeExternalVpnGatewayTimeoutsOutputReference",
+		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

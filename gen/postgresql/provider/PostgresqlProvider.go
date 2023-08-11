@@ -598,7 +598,7 @@ func NewPostgresqlProvider(scope constructs.Construct, id *string, config *Postg
 	j := jsiiProxy_PostgresqlProvider{}
 
 	_jsii_.Create(
-		"postgresql.provider.PostgresqlProvider",
+		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -611,7 +611,7 @@ func NewPostgresqlProvider_Override(p PostgresqlProvider, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"postgresql.provider.PostgresqlProvider",
+		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -796,7 +796,7 @@ func PostgresqlProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.provider.PostgresqlProvider",
+		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -815,7 +815,7 @@ func PostgresqlProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.provider.PostgresqlProvider",
+		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -834,7 +834,7 @@ func PostgresqlProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.provider.PostgresqlProvider",
+		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -847,7 +847,7 @@ func PostgresqlProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"postgresql.provider.PostgresqlProvider",
+		"@cdktf/provider-postgresql.provider.PostgresqlProvider",
 		"tfResourceType",
 		&returns,
 	)

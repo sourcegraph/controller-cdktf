@@ -729,7 +729,7 @@ func NewDefaultVpc(scope constructs.Construct, id *string, config *DefaultVpcCon
 	j := jsiiProxy_DefaultVpc{}
 
 	_jsii_.Create(
-		"aws.defaultVpc.DefaultVpc",
+		"@cdktf/provider-aws.defaultVpc.DefaultVpc",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -742,7 +742,7 @@ func NewDefaultVpc_Override(d DefaultVpc, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.defaultVpc.DefaultVpc",
+		"@cdktf/provider-aws.defaultVpc.DefaultVpc",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -996,7 +996,7 @@ func DefaultVpc_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.defaultVpc.DefaultVpc",
+		"@cdktf/provider-aws.defaultVpc.DefaultVpc",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1015,7 +1015,7 @@ func DefaultVpc_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.defaultVpc.DefaultVpc",
+		"@cdktf/provider-aws.defaultVpc.DefaultVpc",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1034,7 +1034,7 @@ func DefaultVpc_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.defaultVpc.DefaultVpc",
+		"@cdktf/provider-aws.defaultVpc.DefaultVpc",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1047,7 +1047,7 @@ func DefaultVpc_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.defaultVpc.DefaultVpc",
+		"@cdktf/provider-aws.defaultVpc.DefaultVpc",
 		"tfResourceType",
 		&returns,
 	)

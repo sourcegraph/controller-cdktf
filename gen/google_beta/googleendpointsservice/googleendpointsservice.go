@@ -483,7 +483,7 @@ func NewGoogleEndpointsService(scope constructs.Construct, id *string, config *G
 	j := jsiiProxy_GoogleEndpointsService{}
 
 	_jsii_.Create(
-		"google-beta.googleEndpointsService.GoogleEndpointsService",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -496,7 +496,7 @@ func NewGoogleEndpointsService_Override(g GoogleEndpointsService, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleEndpointsService.GoogleEndpointsService",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsService",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -662,7 +662,7 @@ func GoogleEndpointsService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEndpointsService.GoogleEndpointsService",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -681,7 +681,7 @@ func GoogleEndpointsService_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEndpointsService.GoogleEndpointsService",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func GoogleEndpointsService_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEndpointsService.GoogleEndpointsService",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsService",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -713,7 +713,7 @@ func GoogleEndpointsService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleEndpointsService.GoogleEndpointsService",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsService",
 		"tfResourceType",
 		&returns,
 	)

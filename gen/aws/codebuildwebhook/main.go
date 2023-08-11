@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.codebuildWebhook.CodebuildWebhook",
+		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook",
 		reflect.TypeOf((*CodebuildWebhook)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,19 +70,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildWebhook.CodebuildWebhookConfig",
+		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig",
 		reflect.TypeOf((*CodebuildWebhookConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildWebhook.CodebuildWebhookFilterGroup",
+		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroup",
 		reflect.TypeOf((*CodebuildWebhookFilterGroup)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildWebhook.CodebuildWebhookFilterGroupFilter",
+		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilter",
 		reflect.TypeOf((*CodebuildWebhookFilterGroupFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildWebhook.CodebuildWebhookFilterGroupFilterList",
+		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilterList",
 		reflect.TypeOf((*CodebuildWebhookFilterGroupFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildWebhook.CodebuildWebhookFilterGroupFilterOutputReference",
+		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilterOutputReference",
 		reflect.TypeOf((*CodebuildWebhookFilterGroupFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -142,7 +142,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildWebhook.CodebuildWebhookFilterGroupList",
+		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupList",
 		reflect.TypeOf((*CodebuildWebhookFilterGroupList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -163,7 +163,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildWebhook.CodebuildWebhookFilterGroupOutputReference",
+		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupOutputReference",
 		reflect.TypeOf((*CodebuildWebhookFilterGroupOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

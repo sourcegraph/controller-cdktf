@@ -226,7 +226,7 @@ func NewGoogleHealthcareFhirStoreIamMemberConditionOutputReference(terraformReso
 	j := jsiiProxy_GoogleHealthcareFhirStoreIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleHealthcareFhirStoreIamMemberConditionOutputReference_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

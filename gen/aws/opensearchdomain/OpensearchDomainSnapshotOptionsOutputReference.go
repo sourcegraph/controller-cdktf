@@ -179,7 +179,7 @@ func NewOpensearchDomainSnapshotOptionsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_OpensearchDomainSnapshotOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainSnapshotOptionsOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainSnapshotOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewOpensearchDomainSnapshotOptionsOutputReference_Override(o OpensearchDoma
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainSnapshotOptionsOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainSnapshotOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

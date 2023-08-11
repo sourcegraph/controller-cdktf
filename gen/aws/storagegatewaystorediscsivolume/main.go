@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.storagegatewayStoredIscsiVolume.StoragegatewayStoredIscsiVolume",
+		"@cdktf/provider-aws.storagegatewayStoredIscsiVolume.StoragegatewayStoredIscsiVolume",
 		reflect.TypeOf((*StoragegatewayStoredIscsiVolume)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.storagegatewayStoredIscsiVolume.StoragegatewayStoredIscsiVolumeConfig",
+		"@cdktf/provider-aws.storagegatewayStoredIscsiVolume.StoragegatewayStoredIscsiVolumeConfig",
 		reflect.TypeOf((*StoragegatewayStoredIscsiVolumeConfig)(nil)).Elem(),
 	)
 }

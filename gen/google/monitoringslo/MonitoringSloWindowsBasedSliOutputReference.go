@@ -276,7 +276,7 @@ func NewMonitoringSloWindowsBasedSliOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_MonitoringSloWindowsBasedSliOutputReference{}
 
 	_jsii_.Create(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewMonitoringSloWindowsBasedSliOutputReference_Override(m MonitoringSloWind
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

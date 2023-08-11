@@ -179,7 +179,7 @@ func NewOsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference(terraformR
 	j := jsiiProxy_OsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference{}
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewOsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference_Override(o
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

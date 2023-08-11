@@ -104,7 +104,7 @@ func NewDataAwsLbListenerDefaultActionForwardTargetGroupList(terraformResource c
 	j := jsiiProxy_DataAwsLbListenerDefaultActionForwardTargetGroupList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardTargetGroupList",
+		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardTargetGroupList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLbListenerDefaultActionForwardTargetGroupList_Override(d DataAwsL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardTargetGroupList",
+		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardTargetGroupList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

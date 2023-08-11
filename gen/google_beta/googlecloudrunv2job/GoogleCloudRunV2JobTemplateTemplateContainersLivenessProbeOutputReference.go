@@ -300,7 +300,7 @@ func NewGoogleCloudRunV2JobTemplateTemplateContainersLivenessProbeOutputReferenc
 	j := jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersLivenessProbeOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersLivenessProbeOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersLivenessProbeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewGoogleCloudRunV2JobTemplateTemplateContainersLivenessProbeOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersLivenessProbeOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersLivenessProbeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -609,7 +609,7 @@ func NewElasticacheGlobalReplicationGroup(scope constructs.Construct, id *string
 	j := jsiiProxy_ElasticacheGlobalReplicationGroup{}
 
 	_jsii_.Create(
-		"aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroup",
+		"@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -622,7 +622,7 @@ func NewElasticacheGlobalReplicationGroup_Override(e ElasticacheGlobalReplicatio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroup",
+		"@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroup",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -821,7 +821,7 @@ func ElasticacheGlobalReplicationGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroup",
+		"@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -840,7 +840,7 @@ func ElasticacheGlobalReplicationGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroup",
+		"@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -859,7 +859,7 @@ func ElasticacheGlobalReplicationGroup_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroup",
+		"@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -872,7 +872,7 @@ func ElasticacheGlobalReplicationGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroup",
+		"@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroup",
 		"tfResourceType",
 		&returns,
 	)

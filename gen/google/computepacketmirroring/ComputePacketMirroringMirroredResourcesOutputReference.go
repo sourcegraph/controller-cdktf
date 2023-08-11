@@ -228,7 +228,7 @@ func NewComputePacketMirroringMirroredResourcesOutputReference(terraformResource
 	j := jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference{}
 
 	_jsii_.Create(
-		"google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference",
+		"@cdktf/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputePacketMirroringMirroredResourcesOutputReference_Override(c Comput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference",
+		"@cdktf/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

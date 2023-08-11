@@ -104,7 +104,7 @@ func NewGoogleCloudRunV2ServiceTrafficStatusesList(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleCloudRunV2ServiceTrafficStatusesList{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTrafficStatusesList",
+		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTrafficStatusesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleCloudRunV2ServiceTrafficStatusesList_Override(g GoogleCloudRunV2Se
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTrafficStatusesList",
+		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTrafficStatusesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

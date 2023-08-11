@@ -202,7 +202,7 @@ func NewChimeVoiceConnectorTerminationCredentialsCredentialsOutputReference(terr
 	j := jsiiProxy_ChimeVoiceConnectorTerminationCredentialsCredentialsOutputReference{}
 
 	_jsii_.Create(
-		"aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsCredentialsOutputReference",
+		"@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsCredentialsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewChimeVoiceConnectorTerminationCredentialsCredentialsOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsCredentialsOutputReference",
+		"@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsCredentialsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

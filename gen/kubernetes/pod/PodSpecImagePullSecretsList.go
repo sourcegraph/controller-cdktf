@@ -116,7 +116,7 @@ func NewPodSpecImagePullSecretsList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_PodSpecImagePullSecretsList{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecImagePullSecretsList",
+		"@cdktf/provider-kubernetes.pod.PodSpecImagePullSecretsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodSpecImagePullSecretsList_Override(p PodSpecImagePullSecretsList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecImagePullSecretsList",
+		"@cdktf/provider-kubernetes.pod.PodSpecImagePullSecretsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

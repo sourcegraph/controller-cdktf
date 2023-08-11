@@ -179,7 +179,7 @@ func NewVpcIpamOperatingRegionsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_VpcIpamOperatingRegionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.vpcIpam.VpcIpamOperatingRegionsOutputReference",
+		"@cdktf/provider-aws.vpcIpam.VpcIpamOperatingRegionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewVpcIpamOperatingRegionsOutputReference_Override(v VpcIpamOperatingRegion
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcIpam.VpcIpamOperatingRegionsOutputReference",
+		"@cdktf/provider-aws.vpcIpam.VpcIpamOperatingRegionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		v,
 	)

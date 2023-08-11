@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleKmsKeyRingIamPolicy.DataGoogleKmsKeyRingIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleKmsKeyRingIamPolicy.DataGoogleKmsKeyRingIamPolicy",
 		reflect.TypeOf((*DataGoogleKmsKeyRingIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,7 +57,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleKmsKeyRingIamPolicy.DataGoogleKmsKeyRingIamPolicyConfig",
+		"@cdktf/provider-google-beta.dataGoogleKmsKeyRingIamPolicy.DataGoogleKmsKeyRingIamPolicyConfig",
 		reflect.TypeOf((*DataGoogleKmsKeyRingIamPolicyConfig)(nil)).Elem(),
 	)
 }

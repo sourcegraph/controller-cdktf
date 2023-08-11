@@ -412,7 +412,7 @@ func NewApiGatewayClientCertificate(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_ApiGatewayClientCertificate{}
 
 	_jsii_.Create(
-		"aws.apiGatewayClientCertificate.ApiGatewayClientCertificate",
+		"@cdktf/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -425,7 +425,7 @@ func NewApiGatewayClientCertificate_Override(a ApiGatewayClientCertificate, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayClientCertificate.ApiGatewayClientCertificate",
+		"@cdktf/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificate",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -569,7 +569,7 @@ func ApiGatewayClientCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayClientCertificate.ApiGatewayClientCertificate",
+		"@cdktf/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func ApiGatewayClientCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayClientCertificate.ApiGatewayClientCertificate",
+		"@cdktf/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func ApiGatewayClientCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayClientCertificate.ApiGatewayClientCertificate",
+		"@cdktf/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func ApiGatewayClientCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apiGatewayClientCertificate.ApiGatewayClientCertificate",
+		"@cdktf/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificate",
 		"tfResourceType",
 		&returns,
 	)

@@ -179,7 +179,7 @@ func NewGlueClassifierJsonClassifierOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_GlueClassifierJsonClassifierOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueClassifier.GlueClassifierJsonClassifierOutputReference",
+		"@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGlueClassifierJsonClassifierOutputReference_Override(g GlueClassifierJso
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueClassifier.GlueClassifierJsonClassifierOutputReference",
+		"@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

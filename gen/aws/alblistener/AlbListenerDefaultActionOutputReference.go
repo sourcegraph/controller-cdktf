@@ -347,7 +347,7 @@ func NewAlbListenerDefaultActionOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_AlbListenerDefaultActionOutputReference{}
 
 	_jsii_.Create(
-		"aws.albListener.AlbListenerDefaultActionOutputReference",
+		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -359,7 +359,7 @@ func NewAlbListenerDefaultActionOutputReference_Override(a AlbListenerDefaultAct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albListener.AlbListenerDefaultActionOutputReference",
+		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

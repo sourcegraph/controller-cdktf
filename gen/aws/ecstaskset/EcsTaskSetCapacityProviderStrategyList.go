@@ -116,7 +116,7 @@ func NewEcsTaskSetCapacityProviderStrategyList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_EcsTaskSetCapacityProviderStrategyList{}
 
 	_jsii_.Create(
-		"aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategyList",
+		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEcsTaskSetCapacityProviderStrategyList_Override(e EcsTaskSetCapacityProv
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategyList",
+		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

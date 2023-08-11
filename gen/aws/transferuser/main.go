@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.transferUser.TransferUser",
+		"@cdktf/provider-aws.transferUser.TransferUser",
 		reflect.TypeOf((*TransferUser)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,15 +85,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.transferUser.TransferUserConfig",
+		"@cdktf/provider-aws.transferUser.TransferUserConfig",
 		reflect.TypeOf((*TransferUserConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.transferUser.TransferUserHomeDirectoryMappings",
+		"@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappings",
 		reflect.TypeOf((*TransferUserHomeDirectoryMappings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.transferUser.TransferUserHomeDirectoryMappingsList",
+		"@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappingsList",
 		reflect.TypeOf((*TransferUserHomeDirectoryMappingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -114,7 +114,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.transferUser.TransferUserHomeDirectoryMappingsOutputReference",
+		"@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappingsOutputReference",
 		reflect.TypeOf((*TransferUserHomeDirectoryMappingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -150,11 +150,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.transferUser.TransferUserPosixProfile",
+		"@cdktf/provider-aws.transferUser.TransferUserPosixProfile",
 		reflect.TypeOf((*TransferUserPosixProfile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.transferUser.TransferUserPosixProfileOutputReference",
+		"@cdktf/provider-aws.transferUser.TransferUserPosixProfileOutputReference",
 		reflect.TypeOf((*TransferUserPosixProfileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

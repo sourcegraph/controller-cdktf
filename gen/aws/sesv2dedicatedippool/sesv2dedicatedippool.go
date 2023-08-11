@@ -426,7 +426,7 @@ func NewSesv2DedicatedIpPool(scope constructs.Construct, id *string, config *Ses
 	j := jsiiProxy_Sesv2DedicatedIpPool{}
 
 	_jsii_.Create(
-		"aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPool",
+		"@cdktf/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -439,7 +439,7 @@ func NewSesv2DedicatedIpPool_Override(s Sesv2DedicatedIpPool, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPool",
+		"@cdktf/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPool",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -594,7 +594,7 @@ func Sesv2DedicatedIpPool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPool",
+		"@cdktf/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -613,7 +613,7 @@ func Sesv2DedicatedIpPool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPool",
+		"@cdktf/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func Sesv2DedicatedIpPool_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPool",
+		"@cdktf/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPool",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func Sesv2DedicatedIpPool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPool",
+		"@cdktf/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPool",
 		"tfResourceType",
 		&returns,
 	)

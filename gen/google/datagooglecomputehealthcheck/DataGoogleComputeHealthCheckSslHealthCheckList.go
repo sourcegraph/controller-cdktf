@@ -104,7 +104,7 @@ func NewDataGoogleComputeHealthCheckSslHealthCheckList(terraformResource cdktf.I
 	j := jsiiProxy_DataGoogleComputeHealthCheckSslHealthCheckList{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckSslHealthCheckList",
+		"@cdktf/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckSslHealthCheckList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeHealthCheckSslHealthCheckList_Override(d DataGoogleComp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckSslHealthCheckList",
+		"@cdktf/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckSslHealthCheckList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

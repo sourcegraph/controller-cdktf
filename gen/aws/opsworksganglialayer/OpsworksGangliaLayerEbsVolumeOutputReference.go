@@ -321,7 +321,7 @@ func NewOpsworksGangliaLayerEbsVolumeOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_OpsworksGangliaLayerEbsVolumeOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolumeOutputReference",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -333,7 +333,7 @@ func NewOpsworksGangliaLayerEbsVolumeOutputReference_Override(o OpsworksGangliaL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolumeOutputReference",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)

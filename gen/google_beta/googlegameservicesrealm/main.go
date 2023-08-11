@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleGameServicesRealm.GoogleGameServicesRealm",
+		"@cdktf/provider-google-beta.googleGameServicesRealm.GoogleGameServicesRealm",
 		reflect.TypeOf((*GoogleGameServicesRealm)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleGameServicesRealm.GoogleGameServicesRealmConfig",
+		"@cdktf/provider-google-beta.googleGameServicesRealm.GoogleGameServicesRealmConfig",
 		reflect.TypeOf((*GoogleGameServicesRealmConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleGameServicesRealm.GoogleGameServicesRealmTimeouts",
+		"@cdktf/provider-google-beta.googleGameServicesRealm.GoogleGameServicesRealmTimeouts",
 		reflect.TypeOf((*GoogleGameServicesRealmTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleGameServicesRealm.GoogleGameServicesRealmTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleGameServicesRealm.GoogleGameServicesRealmTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleGameServicesRealmTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

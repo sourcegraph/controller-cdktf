@@ -191,7 +191,7 @@ func NewLightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputRe
 	j := jsiiProxy_LightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputReference{}
 
 	_jsii_.Create(
-		"aws.lightsailContainerService.LightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputReference",
+		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -203,7 +203,7 @@ func NewLightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailContainerService.LightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputReference",
+		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

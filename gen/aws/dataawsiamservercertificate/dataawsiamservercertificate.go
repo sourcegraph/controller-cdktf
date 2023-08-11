@@ -430,7 +430,7 @@ func NewDataAwsIamServerCertificate(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataAwsIamServerCertificate{}
 
 	_jsii_.Create(
-		"aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate",
+		"@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -443,7 +443,7 @@ func NewDataAwsIamServerCertificate_Override(d DataAwsIamServerCertificate, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate",
+		"@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -576,7 +576,7 @@ func DataAwsIamServerCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate",
+		"@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func DataAwsIamServerCertificate_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate",
+		"@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -614,7 +614,7 @@ func DataAwsIamServerCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate",
+		"@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -627,7 +627,7 @@ func DataAwsIamServerCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate",
+		"@cdktf/provider-aws.dataAwsIamServerCertificate.DataAwsIamServerCertificate",
 		"tfResourceType",
 		&returns,
 	)

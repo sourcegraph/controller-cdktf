@@ -116,7 +116,7 @@ func NewCloudRunServiceTemplateSpecContainersList(terraformResource cdktf.IInter
 	j := jsiiProxy_CloudRunServiceTemplateSpecContainersList{}
 
 	_jsii_.Create(
-		"google.cloudRunService.CloudRunServiceTemplateSpecContainersList",
+		"@cdktf/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudRunServiceTemplateSpecContainersList_Override(c CloudRunServiceTemp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunService.CloudRunServiceTemplateSpecContainersList",
+		"@cdktf/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

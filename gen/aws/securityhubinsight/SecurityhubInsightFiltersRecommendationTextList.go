@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersRecommendationTextList(terraformResource cdktf.
 	j := jsiiProxy_SecurityhubInsightFiltersRecommendationTextList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersRecommendationTextList_Override(s SecurityhubIn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

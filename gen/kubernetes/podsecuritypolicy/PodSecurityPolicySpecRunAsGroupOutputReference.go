@@ -203,7 +203,7 @@ func NewPodSecurityPolicySpecRunAsGroupOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_PodSecurityPolicySpecRunAsGroupOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsGroupOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewPodSecurityPolicySpecRunAsGroupOutputReference_Override(p PodSecurityPol
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsGroupOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

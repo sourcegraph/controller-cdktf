@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.tunnel.Tunnel",
+		"@cdktf/provider-cloudflare.tunnel.Tunnel",
 		reflect.TypeOf((*Tunnel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.tunnel.TunnelConfig",
+		"@cdktf/provider-cloudflare.tunnel.TunnelConfig",
 		reflect.TypeOf((*TunnelConfig)(nil)).Elem(),
 	)
 }

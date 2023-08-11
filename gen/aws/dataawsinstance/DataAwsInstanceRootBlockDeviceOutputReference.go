@@ -266,7 +266,7 @@ func NewDataAwsInstanceRootBlockDeviceOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataAwsInstanceRootBlockDeviceOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceRootBlockDeviceOutputReference",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceRootBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -278,7 +278,7 @@ func NewDataAwsInstanceRootBlockDeviceOutputReference_Override(d DataAwsInstance
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceRootBlockDeviceOutputReference",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceRootBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

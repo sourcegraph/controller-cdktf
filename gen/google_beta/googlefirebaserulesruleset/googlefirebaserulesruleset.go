@@ -400,7 +400,7 @@ func NewGoogleFirebaserulesRuleset(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleFirebaserulesRuleset{}
 
 	_jsii_.Create(
-		"google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRuleset",
+		"@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRuleset",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleFirebaserulesRuleset_Override(g GoogleFirebaserulesRuleset, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRuleset",
+		"@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRuleset",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -535,7 +535,7 @@ func GoogleFirebaserulesRuleset_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRuleset",
+		"@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRuleset",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -554,7 +554,7 @@ func GoogleFirebaserulesRuleset_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRuleset",
+		"@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRuleset",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func GoogleFirebaserulesRuleset_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRuleset",
+		"@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRuleset",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -586,7 +586,7 @@ func GoogleFirebaserulesRuleset_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRuleset",
+		"@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRuleset",
 		"tfResourceType",
 		&returns,
 	)

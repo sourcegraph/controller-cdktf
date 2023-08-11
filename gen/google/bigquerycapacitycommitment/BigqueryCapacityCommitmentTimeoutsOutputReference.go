@@ -228,7 +228,7 @@ func NewBigqueryCapacityCommitmentTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_BigqueryCapacityCommitmentTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewBigqueryCapacityCommitmentTimeoutsOutputReference_Override(b BigqueryCap
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

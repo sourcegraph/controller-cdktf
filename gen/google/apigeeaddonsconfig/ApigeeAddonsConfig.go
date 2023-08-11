@@ -367,7 +367,7 @@ func NewApigeeAddonsConfig(scope constructs.Construct, id *string, config *Apige
 	j := jsiiProxy_ApigeeAddonsConfig{}
 
 	_jsii_.Create(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfig",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewApigeeAddonsConfig_Override(a ApigeeAddonsConfig, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfig",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfig",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -502,7 +502,7 @@ func ApigeeAddonsConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfig",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -521,7 +521,7 @@ func ApigeeAddonsConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfig",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func ApigeeAddonsConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfig",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func ApigeeAddonsConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfig",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfig",
 		"tfResourceType",
 		&returns,
 	)

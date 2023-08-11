@@ -495,7 +495,7 @@ func NewGoogleComputePublicDelegatedPrefix(scope constructs.Construct, id *strin
 	j := jsiiProxy_GoogleComputePublicDelegatedPrefix{}
 
 	_jsii_.Create(
-		"google-beta.googleComputePublicDelegatedPrefix.GoogleComputePublicDelegatedPrefix",
+		"@cdktf/provider-google-beta.googleComputePublicDelegatedPrefix.GoogleComputePublicDelegatedPrefix",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -508,7 +508,7 @@ func NewGoogleComputePublicDelegatedPrefix_Override(g GoogleComputePublicDelegat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputePublicDelegatedPrefix.GoogleComputePublicDelegatedPrefix",
+		"@cdktf/provider-google-beta.googleComputePublicDelegatedPrefix.GoogleComputePublicDelegatedPrefix",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -696,7 +696,7 @@ func GoogleComputePublicDelegatedPrefix_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputePublicDelegatedPrefix.GoogleComputePublicDelegatedPrefix",
+		"@cdktf/provider-google-beta.googleComputePublicDelegatedPrefix.GoogleComputePublicDelegatedPrefix",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func GoogleComputePublicDelegatedPrefix_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputePublicDelegatedPrefix.GoogleComputePublicDelegatedPrefix",
+		"@cdktf/provider-google-beta.googleComputePublicDelegatedPrefix.GoogleComputePublicDelegatedPrefix",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -734,7 +734,7 @@ func GoogleComputePublicDelegatedPrefix_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputePublicDelegatedPrefix.GoogleComputePublicDelegatedPrefix",
+		"@cdktf/provider-google-beta.googleComputePublicDelegatedPrefix.GoogleComputePublicDelegatedPrefix",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -747,7 +747,7 @@ func GoogleComputePublicDelegatedPrefix_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputePublicDelegatedPrefix.GoogleComputePublicDelegatedPrefix",
+		"@cdktf/provider-google-beta.googleComputePublicDelegatedPrefix.GoogleComputePublicDelegatedPrefix",
 		"tfResourceType",
 		&returns,
 	)

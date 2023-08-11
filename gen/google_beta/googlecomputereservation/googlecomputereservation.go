@@ -529,7 +529,7 @@ func NewGoogleComputeReservation(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_GoogleComputeReservation{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeReservation.GoogleComputeReservation",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -542,7 +542,7 @@ func NewGoogleComputeReservation_Override(g GoogleComputeReservation, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeReservation.GoogleComputeReservation",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservation",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -708,7 +708,7 @@ func GoogleComputeReservation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeReservation.GoogleComputeReservation",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -727,7 +727,7 @@ func GoogleComputeReservation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeReservation.GoogleComputeReservation",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -746,7 +746,7 @@ func GoogleComputeReservation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeReservation.GoogleComputeReservation",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -759,7 +759,7 @@ func GoogleComputeReservation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeReservation.GoogleComputeReservation",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservation",
 		"tfResourceType",
 		&returns,
 	)

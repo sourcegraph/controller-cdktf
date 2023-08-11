@@ -116,7 +116,7 @@ func NewDataAwsGlueScriptDagNodeList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_DataAwsGlueScriptDagNodeList{}
 
 	_jsii_.Create(
-		"aws.dataAwsGlueScript.DataAwsGlueScriptDagNodeList",
+		"@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScriptDagNodeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsGlueScriptDagNodeList_Override(d DataAwsGlueScriptDagNodeList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsGlueScript.DataAwsGlueScriptDagNodeList",
+		"@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScriptDagNodeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

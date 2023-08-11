@@ -450,7 +450,7 @@ func NewNeptuneSubnetGroup(scope constructs.Construct, id *string, config *Neptu
 	j := jsiiProxy_NeptuneSubnetGroup{}
 
 	_jsii_.Create(
-		"aws.neptuneSubnetGroup.NeptuneSubnetGroup",
+		"@cdktf/provider-aws.neptuneSubnetGroup.NeptuneSubnetGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -463,7 +463,7 @@ func NewNeptuneSubnetGroup_Override(n NeptuneSubnetGroup, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.neptuneSubnetGroup.NeptuneSubnetGroup",
+		"@cdktf/provider-aws.neptuneSubnetGroup.NeptuneSubnetGroup",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -640,7 +640,7 @@ func NeptuneSubnetGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.neptuneSubnetGroup.NeptuneSubnetGroup",
+		"@cdktf/provider-aws.neptuneSubnetGroup.NeptuneSubnetGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -659,7 +659,7 @@ func NeptuneSubnetGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.neptuneSubnetGroup.NeptuneSubnetGroup",
+		"@cdktf/provider-aws.neptuneSubnetGroup.NeptuneSubnetGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func NeptuneSubnetGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.neptuneSubnetGroup.NeptuneSubnetGroup",
+		"@cdktf/provider-aws.neptuneSubnetGroup.NeptuneSubnetGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func NeptuneSubnetGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.neptuneSubnetGroup.NeptuneSubnetGroup",
+		"@cdktf/provider-aws.neptuneSubnetGroup.NeptuneSubnetGroup",
 		"tfResourceType",
 		&returns,
 	)

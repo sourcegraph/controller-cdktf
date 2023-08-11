@@ -439,7 +439,7 @@ func NewSchema(scope constructs.Construct, id *string, config *SchemaConfig) Sch
 	j := jsiiProxy_Schema{}
 
 	_jsii_.Create(
-		"postgresql.schema.Schema",
+		"@cdktf/provider-postgresql.schema.Schema",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -452,7 +452,7 @@ func NewSchema_Override(s Schema, scope constructs.Construct, id *string, config
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"postgresql.schema.Schema",
+		"@cdktf/provider-postgresql.schema.Schema",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -618,7 +618,7 @@ func Schema_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.schema.Schema",
+		"@cdktf/provider-postgresql.schema.Schema",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -637,7 +637,7 @@ func Schema_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.schema.Schema",
+		"@cdktf/provider-postgresql.schema.Schema",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -656,7 +656,7 @@ func Schema_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.schema.Schema",
+		"@cdktf/provider-postgresql.schema.Schema",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func Schema_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"postgresql.schema.Schema",
+		"@cdktf/provider-postgresql.schema.Schema",
 		"tfResourceType",
 		&returns,
 	)

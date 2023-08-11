@@ -204,7 +204,7 @@ func NewSpotInstanceRequestCapacityReservationSpecificationCapacityReservationTa
 	j := jsiiProxy_SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTargetOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTargetOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewSpotInstanceRequestCapacityReservationSpecificationCapacityReservationTa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTargetOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

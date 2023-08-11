@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersCompanyNameList(terraformResource cdktf.IInterp
 	j := jsiiProxy_SecurityhubInsightFiltersCompanyNameList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersCompanyNameList_Override(s SecurityhubInsightFi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

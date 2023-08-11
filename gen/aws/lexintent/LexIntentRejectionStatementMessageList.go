@@ -116,7 +116,7 @@ func NewLexIntentRejectionStatementMessageList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_LexIntentRejectionStatementMessageList{}
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentRejectionStatementMessageList",
+		"@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLexIntentRejectionStatementMessageList_Override(l LexIntentRejectionStat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentRejectionStatementMessageList",
+		"@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

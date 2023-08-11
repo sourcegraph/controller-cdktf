@@ -391,7 +391,7 @@ func NewDataAwsAuditmanagerControl(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataAwsAuditmanagerControl{}
 
 	_jsii_.Create(
-		"aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl",
+		"@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -404,7 +404,7 @@ func NewDataAwsAuditmanagerControl_Override(d DataAwsAuditmanagerControl, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl",
+		"@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -504,7 +504,7 @@ func DataAwsAuditmanagerControl_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl",
+		"@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +523,7 @@ func DataAwsAuditmanagerControl_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl",
+		"@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func DataAwsAuditmanagerControl_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl",
+		"@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -555,7 +555,7 @@ func DataAwsAuditmanagerControl_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl",
+		"@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl",
 		"tfResourceType",
 		&returns,
 	)

@@ -804,7 +804,7 @@ func NewReplicationControllerSpecTemplateSpecOutputReference(terraformResource c
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -816,7 +816,7 @@ func NewReplicationControllerSpecTemplateSpecOutputReference_Override(r Replicat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

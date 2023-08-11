@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.monitoringCustomService.MonitoringCustomService",
+		"@cdktf/provider-google.monitoringCustomService.MonitoringCustomService",
 		reflect.TypeOf((*MonitoringCustomService)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,15 +76,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringCustomService.MonitoringCustomServiceConfig",
+		"@cdktf/provider-google.monitoringCustomService.MonitoringCustomServiceConfig",
 		reflect.TypeOf((*MonitoringCustomServiceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringCustomService.MonitoringCustomServiceTelemetry",
+		"@cdktf/provider-google.monitoringCustomService.MonitoringCustomServiceTelemetry",
 		reflect.TypeOf((*MonitoringCustomServiceTelemetry)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringCustomService.MonitoringCustomServiceTelemetryOutputReference",
+		"@cdktf/provider-google.monitoringCustomService.MonitoringCustomServiceTelemetryOutputReference",
 		reflect.TypeOf((*MonitoringCustomServiceTelemetryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -119,11 +119,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringCustomService.MonitoringCustomServiceTimeouts",
+		"@cdktf/provider-google.monitoringCustomService.MonitoringCustomServiceTimeouts",
 		reflect.TypeOf((*MonitoringCustomServiceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringCustomService.MonitoringCustomServiceTimeoutsOutputReference",
+		"@cdktf/provider-google.monitoringCustomService.MonitoringCustomServiceTimeoutsOutputReference",
 		reflect.TypeOf((*MonitoringCustomServiceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

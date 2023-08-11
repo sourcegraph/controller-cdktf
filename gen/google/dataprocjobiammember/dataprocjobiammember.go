@@ -448,7 +448,7 @@ func NewDataprocJobIamMember(scope constructs.Construct, id *string, config *Dat
 	j := jsiiProxy_DataprocJobIamMember{}
 
 	_jsii_.Create(
-		"google.dataprocJobIamMember.DataprocJobIamMember",
+		"@cdktf/provider-google.dataprocJobIamMember.DataprocJobIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewDataprocJobIamMember_Override(d DataprocJobIamMember, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocJobIamMember.DataprocJobIamMember",
+		"@cdktf/provider-google.dataprocJobIamMember.DataprocJobIamMember",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -627,7 +627,7 @@ func DataprocJobIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocJobIamMember.DataprocJobIamMember",
+		"@cdktf/provider-google.dataprocJobIamMember.DataprocJobIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func DataprocJobIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocJobIamMember.DataprocJobIamMember",
+		"@cdktf/provider-google.dataprocJobIamMember.DataprocJobIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func DataprocJobIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocJobIamMember.DataprocJobIamMember",
+		"@cdktf/provider-google.dataprocJobIamMember.DataprocJobIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DataprocJobIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataprocJobIamMember.DataprocJobIamMember",
+		"@cdktf/provider-google.dataprocJobIamMember.DataprocJobIamMember",
 		"tfResourceType",
 		&returns,
 	)

@@ -1488,7 +1488,7 @@ func NewInstance(scope constructs.Construct, id *string, config *InstanceConfig)
 	j := jsiiProxy_Instance{}
 
 	_jsii_.Create(
-		"aws.instance.Instance",
+		"@cdktf/provider-aws.instance.Instance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1501,7 +1501,7 @@ func NewInstance_Override(i Instance, scope constructs.Construct, id *string, co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.instance.Instance",
+		"@cdktf/provider-aws.instance.Instance",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -1986,7 +1986,7 @@ func Instance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.instance.Instance",
+		"@cdktf/provider-aws.instance.Instance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -2005,7 +2005,7 @@ func Instance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.instance.Instance",
+		"@cdktf/provider-aws.instance.Instance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -2024,7 +2024,7 @@ func Instance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.instance.Instance",
+		"@cdktf/provider-aws.instance.Instance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -2037,7 +2037,7 @@ func Instance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.instance.Instance",
+		"@cdktf/provider-aws.instance.Instance",
 		"tfResourceType",
 		&returns,
 	)

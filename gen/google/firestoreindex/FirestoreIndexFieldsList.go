@@ -116,7 +116,7 @@ func NewFirestoreIndexFieldsList(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_FirestoreIndexFieldsList{}
 
 	_jsii_.Create(
-		"google.firestoreIndex.FirestoreIndexFieldsList",
+		"@cdktf/provider-google.firestoreIndex.FirestoreIndexFieldsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewFirestoreIndexFieldsList_Override(f FirestoreIndexFieldsList, terraformR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.firestoreIndex.FirestoreIndexFieldsList",
+		"@cdktf/provider-google.firestoreIndex.FirestoreIndexFieldsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)

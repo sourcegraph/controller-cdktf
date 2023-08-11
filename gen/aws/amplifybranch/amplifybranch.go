@@ -781,7 +781,7 @@ func NewAmplifyBranch(scope constructs.Construct, id *string, config *AmplifyBra
 	j := jsiiProxy_AmplifyBranch{}
 
 	_jsii_.Create(
-		"aws.amplifyBranch.AmplifyBranch",
+		"@cdktf/provider-aws.amplifyBranch.AmplifyBranch",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -794,7 +794,7 @@ func NewAmplifyBranch_Override(a AmplifyBranch, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.amplifyBranch.AmplifyBranch",
+		"@cdktf/provider-aws.amplifyBranch.AmplifyBranch",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -1103,7 +1103,7 @@ func AmplifyBranch_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amplifyBranch.AmplifyBranch",
+		"@cdktf/provider-aws.amplifyBranch.AmplifyBranch",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1122,7 +1122,7 @@ func AmplifyBranch_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amplifyBranch.AmplifyBranch",
+		"@cdktf/provider-aws.amplifyBranch.AmplifyBranch",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1141,7 +1141,7 @@ func AmplifyBranch_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amplifyBranch.AmplifyBranch",
+		"@cdktf/provider-aws.amplifyBranch.AmplifyBranch",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1154,7 +1154,7 @@ func AmplifyBranch_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.amplifyBranch.AmplifyBranch",
+		"@cdktf/provider-aws.amplifyBranch.AmplifyBranch",
 		"tfResourceType",
 		&returns,
 	)

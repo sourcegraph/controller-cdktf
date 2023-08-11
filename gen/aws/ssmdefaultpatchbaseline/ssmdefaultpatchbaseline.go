@@ -342,7 +342,7 @@ func NewSsmDefaultPatchBaseline(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_SsmDefaultPatchBaseline{}
 
 	_jsii_.Create(
-		"aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline",
+		"@cdktf/provider-aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewSsmDefaultPatchBaseline_Override(s SsmDefaultPatchBaseline, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline",
+		"@cdktf/provider-aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -488,7 +488,7 @@ func SsmDefaultPatchBaseline_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline",
+		"@cdktf/provider-aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func SsmDefaultPatchBaseline_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline",
+		"@cdktf/provider-aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func SsmDefaultPatchBaseline_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline",
+		"@cdktf/provider-aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func SsmDefaultPatchBaseline_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline",
+		"@cdktf/provider-aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline",
 		"tfResourceType",
 		&returns,
 	)

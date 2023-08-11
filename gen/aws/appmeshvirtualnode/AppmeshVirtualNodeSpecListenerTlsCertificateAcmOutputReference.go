@@ -179,7 +179,7 @@ func NewAppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference(terraform
 	j := jsiiProxy_AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

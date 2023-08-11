@@ -204,7 +204,7 @@ func NewComputeManagedSslCertificateTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_ComputeManagedSslCertificateTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeManagedSslCertificate.ComputeManagedSslCertificateTimeoutsOutputReference",
+		"@cdktf/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeManagedSslCertificateTimeoutsOutputReference_Override(c ComputeMa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeManagedSslCertificate.ComputeManagedSslCertificateTimeoutsOutputReference",
+		"@cdktf/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

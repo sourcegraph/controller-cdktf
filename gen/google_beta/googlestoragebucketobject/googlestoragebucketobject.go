@@ -757,7 +757,7 @@ func NewGoogleStorageBucketObject(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleStorageBucketObject{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucketObject.GoogleStorageBucketObject",
+		"@cdktf/provider-google-beta.googleStorageBucketObject.GoogleStorageBucketObject",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -770,7 +770,7 @@ func NewGoogleStorageBucketObject_Override(g GoogleStorageBucketObject, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucketObject.GoogleStorageBucketObject",
+		"@cdktf/provider-google-beta.googleStorageBucketObject.GoogleStorageBucketObject",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1046,7 +1046,7 @@ func GoogleStorageBucketObject_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageBucketObject.GoogleStorageBucketObject",
+		"@cdktf/provider-google-beta.googleStorageBucketObject.GoogleStorageBucketObject",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1065,7 +1065,7 @@ func GoogleStorageBucketObject_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageBucketObject.GoogleStorageBucketObject",
+		"@cdktf/provider-google-beta.googleStorageBucketObject.GoogleStorageBucketObject",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1084,7 +1084,7 @@ func GoogleStorageBucketObject_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageBucketObject.GoogleStorageBucketObject",
+		"@cdktf/provider-google-beta.googleStorageBucketObject.GoogleStorageBucketObject",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1097,7 +1097,7 @@ func GoogleStorageBucketObject_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleStorageBucketObject.GoogleStorageBucketObject",
+		"@cdktf/provider-google-beta.googleStorageBucketObject.GoogleStorageBucketObject",
 		"tfResourceType",
 		&returns,
 	)

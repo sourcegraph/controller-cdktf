@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ssmPatchGroup.SsmPatchGroup",
+		"@cdktf/provider-aws.ssmPatchGroup.SsmPatchGroup",
 		reflect.TypeOf((*SsmPatchGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssmPatchGroup.SsmPatchGroupConfig",
+		"@cdktf/provider-aws.ssmPatchGroup.SsmPatchGroupConfig",
 		reflect.TypeOf((*SsmPatchGroupConfig)(nil)).Elem(),
 	)
 }

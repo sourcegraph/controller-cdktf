@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleStorageBucketObject.DataGoogleStorageBucketObject",
+		"@cdktf/provider-google.dataGoogleStorageBucketObject.DataGoogleStorageBucketObject",
 		reflect.TypeOf((*DataGoogleStorageBucketObject)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,15 +78,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleStorageBucketObject.DataGoogleStorageBucketObjectConfig",
+		"@cdktf/provider-google.dataGoogleStorageBucketObject.DataGoogleStorageBucketObjectConfig",
 		reflect.TypeOf((*DataGoogleStorageBucketObjectConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleStorageBucketObject.DataGoogleStorageBucketObjectCustomerEncryption",
+		"@cdktf/provider-google.dataGoogleStorageBucketObject.DataGoogleStorageBucketObjectCustomerEncryption",
 		reflect.TypeOf((*DataGoogleStorageBucketObjectCustomerEncryption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleStorageBucketObject.DataGoogleStorageBucketObjectCustomerEncryptionList",
+		"@cdktf/provider-google.dataGoogleStorageBucketObject.DataGoogleStorageBucketObjectCustomerEncryptionList",
 		reflect.TypeOf((*DataGoogleStorageBucketObjectCustomerEncryptionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleStorageBucketObject.DataGoogleStorageBucketObjectCustomerEncryptionOutputReference",
+		"@cdktf/provider-google.dataGoogleStorageBucketObject.DataGoogleStorageBucketObjectCustomerEncryptionOutputReference",
 		reflect.TypeOf((*DataGoogleStorageBucketObjectCustomerEncryptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

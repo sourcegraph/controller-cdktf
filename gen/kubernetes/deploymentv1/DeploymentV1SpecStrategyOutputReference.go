@@ -204,7 +204,7 @@ func NewDeploymentV1SpecStrategyOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DeploymentV1SpecStrategyOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecStrategyOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDeploymentV1SpecStrategyOutputReference_Override(d DeploymentV1SpecStrat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecStrategyOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

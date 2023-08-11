@@ -460,7 +460,7 @@ func NewApigatewayv2DomainName(scope constructs.Construct, id *string, config *A
 	j := jsiiProxy_Apigatewayv2DomainName{}
 
 	_jsii_.Create(
-		"aws.apigatewayv2DomainName.Apigatewayv2DomainName",
+		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainName",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -473,7 +473,7 @@ func NewApigatewayv2DomainName_Override(a Apigatewayv2DomainName, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apigatewayv2DomainName.Apigatewayv2DomainName",
+		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainName",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -617,7 +617,7 @@ func Apigatewayv2DomainName_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apigatewayv2DomainName.Apigatewayv2DomainName",
+		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainName",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -636,7 +636,7 @@ func Apigatewayv2DomainName_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apigatewayv2DomainName.Apigatewayv2DomainName",
+		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainName",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func Apigatewayv2DomainName_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apigatewayv2DomainName.Apigatewayv2DomainName",
+		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainName",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func Apigatewayv2DomainName_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apigatewayv2DomainName.Apigatewayv2DomainName",
+		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainName",
 		"tfResourceType",
 		&returns,
 	)

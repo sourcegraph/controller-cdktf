@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dbSnapshot.DbSnapshot",
+		"@cdktf/provider-aws.dbSnapshot.DbSnapshot",
 		reflect.TypeOf((*DbSnapshot)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,15 +86,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbSnapshot.DbSnapshotConfig",
+		"@cdktf/provider-aws.dbSnapshot.DbSnapshotConfig",
 		reflect.TypeOf((*DbSnapshotConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbSnapshot.DbSnapshotTimeouts",
+		"@cdktf/provider-aws.dbSnapshot.DbSnapshotTimeouts",
 		reflect.TypeOf((*DbSnapshotTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dbSnapshot.DbSnapshotTimeoutsOutputReference",
+		"@cdktf/provider-aws.dbSnapshot.DbSnapshotTimeoutsOutputReference",
 		reflect.TypeOf((*DbSnapshotTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

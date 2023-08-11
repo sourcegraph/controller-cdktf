@@ -228,7 +228,7 @@ func NewGoogleBillingBudgetTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleBillingBudgetTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBillingBudget.GoogleBillingBudgetTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleBillingBudgetTimeoutsOutputReference_Override(g GoogleBillingBudge
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBillingBudget.GoogleBillingBudgetTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

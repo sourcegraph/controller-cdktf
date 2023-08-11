@@ -228,7 +228,7 @@ func NewMskconnectConnectorTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_MskconnectConnectorTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnectorTimeoutsOutputReference",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewMskconnectConnectorTimeoutsOutputReference_Override(m MskconnectConnecto
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnectorTimeoutsOutputReference",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

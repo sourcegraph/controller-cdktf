@@ -226,7 +226,7 @@ func NewResourceQuotaSpecScopeSelectorMatchExpressionOutputReference(terraformRe
 	j := jsiiProxy_ResourceQuotaSpecScopeSelectorMatchExpressionOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.resourceQuota.ResourceQuotaSpecScopeSelectorMatchExpressionOutputReference",
+		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuotaSpecScopeSelectorMatchExpressionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewResourceQuotaSpecScopeSelectorMatchExpressionOutputReference_Override(r 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.resourceQuota.ResourceQuotaSpecScopeSelectorMatchExpressionOutputReference",
+		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuotaSpecScopeSelectorMatchExpressionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

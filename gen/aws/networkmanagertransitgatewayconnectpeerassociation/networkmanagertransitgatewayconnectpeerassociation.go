@@ -413,7 +413,7 @@ func NewNetworkmanagerTransitGatewayConnectPeerAssociation(scope constructs.Cons
 	j := jsiiProxy_NetworkmanagerTransitGatewayConnectPeerAssociation{}
 
 	_jsii_.Create(
-		"aws.networkmanagerTransitGatewayConnectPeerAssociation.NetworkmanagerTransitGatewayConnectPeerAssociation",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayConnectPeerAssociation.NetworkmanagerTransitGatewayConnectPeerAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewNetworkmanagerTransitGatewayConnectPeerAssociation_Override(n Networkman
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerTransitGatewayConnectPeerAssociation.NetworkmanagerTransitGatewayConnectPeerAssociation",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayConnectPeerAssociation.NetworkmanagerTransitGatewayConnectPeerAssociation",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -581,7 +581,7 @@ func NetworkmanagerTransitGatewayConnectPeerAssociation_IsConstruct(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerTransitGatewayConnectPeerAssociation.NetworkmanagerTransitGatewayConnectPeerAssociation",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayConnectPeerAssociation.NetworkmanagerTransitGatewayConnectPeerAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -600,7 +600,7 @@ func NetworkmanagerTransitGatewayConnectPeerAssociation_IsTerraformElement(x int
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerTransitGatewayConnectPeerAssociation.NetworkmanagerTransitGatewayConnectPeerAssociation",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayConnectPeerAssociation.NetworkmanagerTransitGatewayConnectPeerAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func NetworkmanagerTransitGatewayConnectPeerAssociation_IsTerraformResource(x in
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerTransitGatewayConnectPeerAssociation.NetworkmanagerTransitGatewayConnectPeerAssociation",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayConnectPeerAssociation.NetworkmanagerTransitGatewayConnectPeerAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func NetworkmanagerTransitGatewayConnectPeerAssociation_TfResourceType() *string
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkmanagerTransitGatewayConnectPeerAssociation.NetworkmanagerTransitGatewayConnectPeerAssociation",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayConnectPeerAssociation.NetworkmanagerTransitGatewayConnectPeerAssociation",
 		"tfResourceType",
 		&returns,
 	)

@@ -180,7 +180,7 @@ func NewComputeProjectDefaultNetworkTierTimeoutsOutputReference(terraformResourc
 	j := jsiiProxy_ComputeProjectDefaultNetworkTierTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTierTimeoutsOutputReference",
+		"@cdktf/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTierTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewComputeProjectDefaultNetworkTierTimeoutsOutputReference_Override(c Compu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTierTimeoutsOutputReference",
+		"@cdktf/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTierTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

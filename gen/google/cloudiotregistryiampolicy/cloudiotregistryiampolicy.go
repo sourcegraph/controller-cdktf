@@ -401,7 +401,7 @@ func NewCloudiotRegistryIamPolicy(scope constructs.Construct, id *string, config
 	j := jsiiProxy_CloudiotRegistryIamPolicy{}
 
 	_jsii_.Create(
-		"google.cloudiotRegistryIamPolicy.CloudiotRegistryIamPolicy",
+		"@cdktf/provider-google.cloudiotRegistryIamPolicy.CloudiotRegistryIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewCloudiotRegistryIamPolicy_Override(c CloudiotRegistryIamPolicy, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudiotRegistryIamPolicy.CloudiotRegistryIamPolicy",
+		"@cdktf/provider-google.cloudiotRegistryIamPolicy.CloudiotRegistryIamPolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -569,7 +569,7 @@ func CloudiotRegistryIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudiotRegistryIamPolicy.CloudiotRegistryIamPolicy",
+		"@cdktf/provider-google.cloudiotRegistryIamPolicy.CloudiotRegistryIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func CloudiotRegistryIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudiotRegistryIamPolicy.CloudiotRegistryIamPolicy",
+		"@cdktf/provider-google.cloudiotRegistryIamPolicy.CloudiotRegistryIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func CloudiotRegistryIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudiotRegistryIamPolicy.CloudiotRegistryIamPolicy",
+		"@cdktf/provider-google.cloudiotRegistryIamPolicy.CloudiotRegistryIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func CloudiotRegistryIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudiotRegistryIamPolicy.CloudiotRegistryIamPolicy",
+		"@cdktf/provider-google.cloudiotRegistryIamPolicy.CloudiotRegistryIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

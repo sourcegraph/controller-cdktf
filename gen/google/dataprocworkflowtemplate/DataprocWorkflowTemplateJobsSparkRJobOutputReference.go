@@ -299,7 +299,7 @@ func NewDataprocWorkflowTemplateJobsSparkRJobOutputReference(terraformResource c
 	j := jsiiProxy_DataprocWorkflowTemplateJobsSparkRJobOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkRJobOutputReference",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkRJobOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewDataprocWorkflowTemplateJobsSparkRJobOutputReference_Override(d Dataproc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkRJobOutputReference",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkRJobOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

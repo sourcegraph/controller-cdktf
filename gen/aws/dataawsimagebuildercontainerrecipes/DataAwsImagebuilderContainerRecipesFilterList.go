@@ -116,7 +116,7 @@ func NewDataAwsImagebuilderContainerRecipesFilterList(terraformResource cdktf.II
 	j := jsiiProxy_DataAwsImagebuilderContainerRecipesFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderContainerRecipes.DataAwsImagebuilderContainerRecipesFilterList",
+		"@cdktf/provider-aws.dataAwsImagebuilderContainerRecipes.DataAwsImagebuilderContainerRecipesFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsImagebuilderContainerRecipesFilterList_Override(d DataAwsImagebui
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderContainerRecipes.DataAwsImagebuilderContainerRecipesFilterList",
+		"@cdktf/provider-aws.dataAwsImagebuilderContainerRecipes.DataAwsImagebuilderContainerRecipesFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

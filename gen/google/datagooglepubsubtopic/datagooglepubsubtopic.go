@@ -370,7 +370,7 @@ func NewDataGooglePubsubTopic(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataGooglePubsubTopic{}
 
 	_jsii_.Create(
-		"google.dataGooglePubsubTopic.DataGooglePubsubTopic",
+		"@cdktf/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -383,7 +383,7 @@ func NewDataGooglePubsubTopic_Override(d DataGooglePubsubTopic, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGooglePubsubTopic.DataGooglePubsubTopic",
+		"@cdktf/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -494,7 +494,7 @@ func DataGooglePubsubTopic_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGooglePubsubTopic.DataGooglePubsubTopic",
+		"@cdktf/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -513,7 +513,7 @@ func DataGooglePubsubTopic_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGooglePubsubTopic.DataGooglePubsubTopic",
+		"@cdktf/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -532,7 +532,7 @@ func DataGooglePubsubTopic_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGooglePubsubTopic.DataGooglePubsubTopic",
+		"@cdktf/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -545,7 +545,7 @@ func DataGooglePubsubTopic_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGooglePubsubTopic.DataGooglePubsubTopic",
+		"@cdktf/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic",
 		"tfResourceType",
 		&returns,
 	)

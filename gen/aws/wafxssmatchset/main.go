@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.wafXssMatchSet.WafXssMatchSet",
+		"@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSet",
 		reflect.TypeOf((*WafXssMatchSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,19 +62,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafXssMatchSet.WafXssMatchSetConfig",
+		"@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetConfig",
 		reflect.TypeOf((*WafXssMatchSetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafXssMatchSet.WafXssMatchSetXssMatchTuples",
+		"@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuples",
 		reflect.TypeOf((*WafXssMatchSetXssMatchTuples)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesFieldToMatch",
+		"@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesFieldToMatch",
 		reflect.TypeOf((*WafXssMatchSetXssMatchTuplesFieldToMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesFieldToMatchOutputReference",
+		"@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesFieldToMatchOutputReference",
 		reflect.TypeOf((*WafXssMatchSetXssMatchTuplesFieldToMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -111,7 +111,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesList",
+		"@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesList",
 		reflect.TypeOf((*WafXssMatchSetXssMatchTuplesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -132,7 +132,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesOutputReference",
+		"@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesOutputReference",
 		reflect.TypeOf((*WafXssMatchSetXssMatchTuplesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

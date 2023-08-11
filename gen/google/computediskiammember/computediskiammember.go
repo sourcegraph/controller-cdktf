@@ -448,7 +448,7 @@ func NewComputeDiskIamMember(scope constructs.Construct, id *string, config *Com
 	j := jsiiProxy_ComputeDiskIamMember{}
 
 	_jsii_.Create(
-		"google.computeDiskIamMember.ComputeDiskIamMember",
+		"@cdktf/provider-google.computeDiskIamMember.ComputeDiskIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewComputeDiskIamMember_Override(c ComputeDiskIamMember, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeDiskIamMember.ComputeDiskIamMember",
+		"@cdktf/provider-google.computeDiskIamMember.ComputeDiskIamMember",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -627,7 +627,7 @@ func ComputeDiskIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeDiskIamMember.ComputeDiskIamMember",
+		"@cdktf/provider-google.computeDiskIamMember.ComputeDiskIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func ComputeDiskIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeDiskIamMember.ComputeDiskIamMember",
+		"@cdktf/provider-google.computeDiskIamMember.ComputeDiskIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func ComputeDiskIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeDiskIamMember.ComputeDiskIamMember",
+		"@cdktf/provider-google.computeDiskIamMember.ComputeDiskIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func ComputeDiskIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeDiskIamMember.ComputeDiskIamMember",
+		"@cdktf/provider-google.computeDiskIamMember.ComputeDiskIamMember",
 		"tfResourceType",
 		&returns,
 	)

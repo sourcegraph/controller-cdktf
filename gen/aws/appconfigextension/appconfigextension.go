@@ -460,7 +460,7 @@ func NewAppconfigExtension(scope constructs.Construct, id *string, config *Appco
 	j := jsiiProxy_AppconfigExtension{}
 
 	_jsii_.Create(
-		"aws.appconfigExtension.AppconfigExtension",
+		"@cdktf/provider-aws.appconfigExtension.AppconfigExtension",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -473,7 +473,7 @@ func NewAppconfigExtension_Override(a AppconfigExtension, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appconfigExtension.AppconfigExtension",
+		"@cdktf/provider-aws.appconfigExtension.AppconfigExtension",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -628,7 +628,7 @@ func AppconfigExtension_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appconfigExtension.AppconfigExtension",
+		"@cdktf/provider-aws.appconfigExtension.AppconfigExtension",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -647,7 +647,7 @@ func AppconfigExtension_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appconfigExtension.AppconfigExtension",
+		"@cdktf/provider-aws.appconfigExtension.AppconfigExtension",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func AppconfigExtension_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appconfigExtension.AppconfigExtension",
+		"@cdktf/provider-aws.appconfigExtension.AppconfigExtension",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func AppconfigExtension_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appconfigExtension.AppconfigExtension",
+		"@cdktf/provider-aws.appconfigExtension.AppconfigExtension",
 		"tfResourceType",
 		&returns,
 	)

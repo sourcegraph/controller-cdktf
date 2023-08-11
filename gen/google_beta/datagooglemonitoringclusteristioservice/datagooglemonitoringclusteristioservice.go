@@ -439,7 +439,7 @@ func NewDataGoogleMonitoringClusterIstioService(scope constructs.Construct, id *
 	j := jsiiProxy_DataGoogleMonitoringClusterIstioService{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -452,7 +452,7 @@ func NewDataGoogleMonitoringClusterIstioService_Override(d DataGoogleMonitoringC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -596,7 +596,7 @@ func DataGoogleMonitoringClusterIstioService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -615,7 +615,7 @@ func DataGoogleMonitoringClusterIstioService_IsTerraformDataSource(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func DataGoogleMonitoringClusterIstioService_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -647,7 +647,7 @@ func DataGoogleMonitoringClusterIstioService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService",
 		"tfResourceType",
 		&returns,
 	)

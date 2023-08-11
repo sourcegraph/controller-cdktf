@@ -509,7 +509,7 @@ func NewGoogleComputeInstanceGroup(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleComputeInstanceGroup{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceGroup.GoogleComputeInstanceGroup",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroup.GoogleComputeInstanceGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -522,7 +522,7 @@ func NewGoogleComputeInstanceGroup_Override(g GoogleComputeInstanceGroup, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceGroup.GoogleComputeInstanceGroup",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroup.GoogleComputeInstanceGroup",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -699,7 +699,7 @@ func GoogleComputeInstanceGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceGroup.GoogleComputeInstanceGroup",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroup.GoogleComputeInstanceGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -718,7 +718,7 @@ func GoogleComputeInstanceGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceGroup.GoogleComputeInstanceGroup",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroup.GoogleComputeInstanceGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -737,7 +737,7 @@ func GoogleComputeInstanceGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceGroup.GoogleComputeInstanceGroup",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroup.GoogleComputeInstanceGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -750,7 +750,7 @@ func GoogleComputeInstanceGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeInstanceGroup.GoogleComputeInstanceGroup",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroup.GoogleComputeInstanceGroup",
 		"tfResourceType",
 		&returns,
 	)

@@ -400,7 +400,7 @@ func NewGoogleServiceDirectoryServiceIamBinding(scope constructs.Construct, id *
 	j := jsiiProxy_GoogleServiceDirectoryServiceIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleServiceDirectoryServiceIamBinding.GoogleServiceDirectoryServiceIamBinding",
+		"@cdktf/provider-google-beta.googleServiceDirectoryServiceIamBinding.GoogleServiceDirectoryServiceIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleServiceDirectoryServiceIamBinding_Override(g GoogleServiceDirector
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleServiceDirectoryServiceIamBinding.GoogleServiceDirectoryServiceIamBinding",
+		"@cdktf/provider-google-beta.googleServiceDirectoryServiceIamBinding.GoogleServiceDirectoryServiceIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleServiceDirectoryServiceIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceDirectoryServiceIamBinding.GoogleServiceDirectoryServiceIamBinding",
+		"@cdktf/provider-google-beta.googleServiceDirectoryServiceIamBinding.GoogleServiceDirectoryServiceIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleServiceDirectoryServiceIamBinding_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceDirectoryServiceIamBinding.GoogleServiceDirectoryServiceIamBinding",
+		"@cdktf/provider-google-beta.googleServiceDirectoryServiceIamBinding.GoogleServiceDirectoryServiceIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleServiceDirectoryServiceIamBinding_IsTerraformResource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceDirectoryServiceIamBinding.GoogleServiceDirectoryServiceIamBinding",
+		"@cdktf/provider-google-beta.googleServiceDirectoryServiceIamBinding.GoogleServiceDirectoryServiceIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleServiceDirectoryServiceIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleServiceDirectoryServiceIamBinding.GoogleServiceDirectoryServiceIamBinding",
+		"@cdktf/provider-google-beta.googleServiceDirectoryServiceIamBinding.GoogleServiceDirectoryServiceIamBinding",
 		"tfResourceType",
 		&returns,
 	)

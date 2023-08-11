@@ -403,7 +403,7 @@ func NewDataGoogleComputeSslPolicy(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataGoogleComputeSslPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeSslPolicy.DataGoogleComputeSslPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeSslPolicy.DataGoogleComputeSslPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -416,7 +416,7 @@ func NewDataGoogleComputeSslPolicy_Override(d DataGoogleComputeSslPolicy, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeSslPolicy.DataGoogleComputeSslPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeSslPolicy.DataGoogleComputeSslPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -527,7 +527,7 @@ func DataGoogleComputeSslPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeSslPolicy.DataGoogleComputeSslPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeSslPolicy.DataGoogleComputeSslPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -546,7 +546,7 @@ func DataGoogleComputeSslPolicy_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeSslPolicy.DataGoogleComputeSslPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeSslPolicy.DataGoogleComputeSslPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func DataGoogleComputeSslPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeSslPolicy.DataGoogleComputeSslPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeSslPolicy.DataGoogleComputeSslPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -578,7 +578,7 @@ func DataGoogleComputeSslPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleComputeSslPolicy.DataGoogleComputeSslPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeSslPolicy.DataGoogleComputeSslPolicy",
 		"tfResourceType",
 		&returns,
 	)

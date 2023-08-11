@@ -116,7 +116,7 @@ func NewDaemonSetV1SpecSelectorMatchExpressionsList(terraformResource cdktf.IInt
 	j := jsiiProxy_DaemonSetV1SpecSelectorMatchExpressionsList{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecSelectorMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDaemonSetV1SpecSelectorMatchExpressionsList_Override(d DaemonSetV1SpecSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecSelectorMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

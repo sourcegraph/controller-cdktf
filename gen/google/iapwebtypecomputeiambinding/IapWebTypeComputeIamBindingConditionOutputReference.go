@@ -226,7 +226,7 @@ func NewIapWebTypeComputeIamBindingConditionOutputReference(terraformResource cd
 	j := jsiiProxy_IapWebTypeComputeIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.iapWebTypeComputeIamBinding.IapWebTypeComputeIamBindingConditionOutputReference",
+		"@cdktf/provider-google.iapWebTypeComputeIamBinding.IapWebTypeComputeIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewIapWebTypeComputeIamBindingConditionOutputReference_Override(i IapWebTyp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapWebTypeComputeIamBinding.IapWebTypeComputeIamBindingConditionOutputReference",
+		"@cdktf/provider-google.iapWebTypeComputeIamBinding.IapWebTypeComputeIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

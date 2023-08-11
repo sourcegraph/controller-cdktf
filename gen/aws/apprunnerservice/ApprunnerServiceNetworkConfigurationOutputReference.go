@@ -204,7 +204,7 @@ func NewApprunnerServiceNetworkConfigurationOutputReference(terraformResource cd
 	j := jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.apprunnerService.ApprunnerServiceNetworkConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceNetworkConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewApprunnerServiceNetworkConfigurationOutputReference_Override(a Apprunner
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apprunnerService.ApprunnerServiceNetworkConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceNetworkConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

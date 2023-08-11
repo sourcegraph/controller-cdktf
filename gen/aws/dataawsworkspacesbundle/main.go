@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundle",
+		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundle",
 		reflect.TypeOf((*DataAwsWorkspacesBundle)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,11 +66,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeType",
+		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeType",
 		reflect.TypeOf((*DataAwsWorkspacesBundleComputeType)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeTypeList",
+		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeTypeList",
 		reflect.TypeOf((*DataAwsWorkspacesBundleComputeTypeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -90,7 +90,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeTypeOutputReference",
+		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeTypeOutputReference",
 		reflect.TypeOf((*DataAwsWorkspacesBundleComputeTypeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -123,15 +123,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleConfig",
+		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleConfig",
 		reflect.TypeOf((*DataAwsWorkspacesBundleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorage",
+		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorage",
 		reflect.TypeOf((*DataAwsWorkspacesBundleRootStorage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorageList",
+		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorageList",
 		reflect.TypeOf((*DataAwsWorkspacesBundleRootStorageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -151,7 +151,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorageOutputReference",
+		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorageOutputReference",
 		reflect.TypeOf((*DataAwsWorkspacesBundleRootStorageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "capacity", GoGetter: "Capacity"},
@@ -184,11 +184,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleUserStorage",
+		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleUserStorage",
 		reflect.TypeOf((*DataAwsWorkspacesBundleUserStorage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleUserStorageList",
+		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleUserStorageList",
 		reflect.TypeOf((*DataAwsWorkspacesBundleUserStorageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -208,7 +208,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleUserStorageOutputReference",
+		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleUserStorageOutputReference",
 		reflect.TypeOf((*DataAwsWorkspacesBundleUserStorageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "capacity", GoGetter: "Capacity"},

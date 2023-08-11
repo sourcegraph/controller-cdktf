@@ -389,7 +389,7 @@ func NewLbCookieStickinessPolicy(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_LbCookieStickinessPolicy{}
 
 	_jsii_.Create(
-		"aws.lbCookieStickinessPolicy.LbCookieStickinessPolicy",
+		"@cdktf/provider-aws.lbCookieStickinessPolicy.LbCookieStickinessPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -402,7 +402,7 @@ func NewLbCookieStickinessPolicy_Override(l LbCookieStickinessPolicy, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbCookieStickinessPolicy.LbCookieStickinessPolicy",
+		"@cdktf/provider-aws.lbCookieStickinessPolicy.LbCookieStickinessPolicy",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -557,7 +557,7 @@ func LbCookieStickinessPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lbCookieStickinessPolicy.LbCookieStickinessPolicy",
+		"@cdktf/provider-aws.lbCookieStickinessPolicy.LbCookieStickinessPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func LbCookieStickinessPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lbCookieStickinessPolicy.LbCookieStickinessPolicy",
+		"@cdktf/provider-aws.lbCookieStickinessPolicy.LbCookieStickinessPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func LbCookieStickinessPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lbCookieStickinessPolicy.LbCookieStickinessPolicy",
+		"@cdktf/provider-aws.lbCookieStickinessPolicy.LbCookieStickinessPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func LbCookieStickinessPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lbCookieStickinessPolicy.LbCookieStickinessPolicy",
+		"@cdktf/provider-aws.lbCookieStickinessPolicy.LbCookieStickinessPolicy",
 		"tfResourceType",
 		&returns,
 	)

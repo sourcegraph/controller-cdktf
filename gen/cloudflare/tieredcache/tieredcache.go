@@ -342,7 +342,7 @@ func NewTieredCache(scope constructs.Construct, id *string, config *TieredCacheC
 	j := jsiiProxy_TieredCache{}
 
 	_jsii_.Create(
-		"cloudflare.tieredCache.TieredCache",
+		"@cdktf/provider-cloudflare.tieredCache.TieredCache",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewTieredCache_Override(t TieredCache, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.tieredCache.TieredCache",
+		"@cdktf/provider-cloudflare.tieredCache.TieredCache",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -488,7 +488,7 @@ func TieredCache_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.tieredCache.TieredCache",
+		"@cdktf/provider-cloudflare.tieredCache.TieredCache",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func TieredCache_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.tieredCache.TieredCache",
+		"@cdktf/provider-cloudflare.tieredCache.TieredCache",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func TieredCache_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.tieredCache.TieredCache",
+		"@cdktf/provider-cloudflare.tieredCache.TieredCache",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func TieredCache_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.tieredCache.TieredCache",
+		"@cdktf/provider-cloudflare.tieredCache.TieredCache",
 		"tfResourceType",
 		&returns,
 	)

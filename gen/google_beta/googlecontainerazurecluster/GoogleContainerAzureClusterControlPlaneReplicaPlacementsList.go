@@ -116,7 +116,7 @@ func NewGoogleContainerAzureClusterControlPlaneReplicaPlacementsList(terraformRe
 	j := jsiiProxy_GoogleContainerAzureClusterControlPlaneReplicaPlacementsList{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneReplicaPlacementsList",
+		"@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneReplicaPlacementsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleContainerAzureClusterControlPlaneReplicaPlacementsList_Override(g 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneReplicaPlacementsList",
+		"@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneReplicaPlacementsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

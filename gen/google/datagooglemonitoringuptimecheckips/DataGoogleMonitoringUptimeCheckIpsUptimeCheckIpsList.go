@@ -104,7 +104,7 @@ func NewDataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsList(terraformResource c
 	j := jsiiProxy_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsList{}
 
 	_jsii_.Create(
-		"google.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsList",
+		"@cdktf/provider-google.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsList_Override(d DataGoog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsList",
+		"@cdktf/provider-google.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

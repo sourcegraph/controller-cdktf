@@ -204,7 +204,7 @@ func NewDataprocWorkflowTemplateJobsSchedulingOutputReference(terraformResource 
 	j := jsiiProxy_DataprocWorkflowTemplateJobsSchedulingOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSchedulingOutputReference",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSchedulingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDataprocWorkflowTemplateJobsSchedulingOutputReference_Override(d Datapro
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSchedulingOutputReference",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSchedulingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

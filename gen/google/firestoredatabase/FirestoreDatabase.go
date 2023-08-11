@@ -494,7 +494,7 @@ func NewFirestoreDatabase(scope constructs.Construct, id *string, config *Firest
 	j := jsiiProxy_FirestoreDatabase{}
 
 	_jsii_.Create(
-		"google.firestoreDatabase.FirestoreDatabase",
+		"@cdktf/provider-google.firestoreDatabase.FirestoreDatabase",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -507,7 +507,7 @@ func NewFirestoreDatabase_Override(f FirestoreDatabase, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.firestoreDatabase.FirestoreDatabase",
+		"@cdktf/provider-google.firestoreDatabase.FirestoreDatabase",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -684,7 +684,7 @@ func FirestoreDatabase_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.firestoreDatabase.FirestoreDatabase",
+		"@cdktf/provider-google.firestoreDatabase.FirestoreDatabase",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -703,7 +703,7 @@ func FirestoreDatabase_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.firestoreDatabase.FirestoreDatabase",
+		"@cdktf/provider-google.firestoreDatabase.FirestoreDatabase",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -722,7 +722,7 @@ func FirestoreDatabase_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.firestoreDatabase.FirestoreDatabase",
+		"@cdktf/provider-google.firestoreDatabase.FirestoreDatabase",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func FirestoreDatabase_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.firestoreDatabase.FirestoreDatabase",
+		"@cdktf/provider-google.firestoreDatabase.FirestoreDatabase",
 		"tfResourceType",
 		&returns,
 	)

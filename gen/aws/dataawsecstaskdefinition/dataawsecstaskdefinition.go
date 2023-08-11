@@ -357,7 +357,7 @@ func NewDataAwsEcsTaskDefinition(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataAwsEcsTaskDefinition{}
 
 	_jsii_.Create(
-		"aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition",
+		"@cdktf/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -370,7 +370,7 @@ func NewDataAwsEcsTaskDefinition_Override(d DataAwsEcsTaskDefinition, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition",
+		"@cdktf/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -470,7 +470,7 @@ func DataAwsEcsTaskDefinition_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition",
+		"@cdktf/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -489,7 +489,7 @@ func DataAwsEcsTaskDefinition_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition",
+		"@cdktf/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func DataAwsEcsTaskDefinition_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition",
+		"@cdktf/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -521,7 +521,7 @@ func DataAwsEcsTaskDefinition_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition",
+		"@cdktf/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition",
 		"tfResourceType",
 		&returns,
 	)

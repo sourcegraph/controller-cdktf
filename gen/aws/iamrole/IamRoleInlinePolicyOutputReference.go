@@ -204,7 +204,7 @@ func NewIamRoleInlinePolicyOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_IamRoleInlinePolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.iamRole.IamRoleInlinePolicyOutputReference",
+		"@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewIamRoleInlinePolicyOutputReference_Override(i IamRoleInlinePolicyOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iamRole.IamRoleInlinePolicyOutputReference",
+		"@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

@@ -179,7 +179,7 @@ func NewDataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference(terr
 	j := jsiiProxy_DataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference{}
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

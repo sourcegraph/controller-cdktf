@@ -116,7 +116,7 @@ func NewAccessGroupIncludeGithubList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_AccessGroupIncludeGithubList{}
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupIncludeGithubList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithubList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessGroupIncludeGithubList_Override(a AccessGroupIncludeGithubList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupIncludeGithubList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithubList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

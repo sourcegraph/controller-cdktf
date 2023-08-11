@@ -204,7 +204,7 @@ func NewComputeForwardingRuleServiceDirectoryRegistrationsOutputReference(terraf
 	j := jsiiProxy_ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeForwardingRule.ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference",
+		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeForwardingRuleServiceDirectoryRegistrationsOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeForwardingRule.ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference",
+		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

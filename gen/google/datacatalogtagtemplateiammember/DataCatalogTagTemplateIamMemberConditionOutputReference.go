@@ -226,7 +226,7 @@ func NewDataCatalogTagTemplateIamMemberConditionOutputReference(terraformResourc
 	j := jsiiProxy_DataCatalogTagTemplateIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMemberConditionOutputReference",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDataCatalogTagTemplateIamMemberConditionOutputReference_Override(d DataC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMemberConditionOutputReference",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

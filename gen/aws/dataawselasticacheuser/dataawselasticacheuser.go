@@ -411,7 +411,7 @@ func NewDataAwsElasticacheUser(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataAwsElasticacheUser{}
 
 	_jsii_.Create(
-		"aws.dataAwsElasticacheUser.DataAwsElasticacheUser",
+		"@cdktf/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -424,7 +424,7 @@ func NewDataAwsElasticacheUser_Override(d DataAwsElasticacheUser, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsElasticacheUser.DataAwsElasticacheUser",
+		"@cdktf/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -579,7 +579,7 @@ func DataAwsElasticacheUser_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElasticacheUser.DataAwsElasticacheUser",
+		"@cdktf/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -598,7 +598,7 @@ func DataAwsElasticacheUser_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElasticacheUser.DataAwsElasticacheUser",
+		"@cdktf/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -617,7 +617,7 @@ func DataAwsElasticacheUser_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElasticacheUser.DataAwsElasticacheUser",
+		"@cdktf/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func DataAwsElasticacheUser_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsElasticacheUser.DataAwsElasticacheUser",
+		"@cdktf/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser",
 		"tfResourceType",
 		&returns,
 	)

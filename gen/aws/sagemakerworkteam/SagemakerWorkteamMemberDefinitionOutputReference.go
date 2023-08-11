@@ -204,7 +204,7 @@ func NewSagemakerWorkteamMemberDefinitionOutputReference(terraformResource cdktf
 	j := jsiiProxy_SagemakerWorkteamMemberDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOutputReference",
+		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewSagemakerWorkteamMemberDefinitionOutputReference_Override(s SagemakerWor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOutputReference",
+		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

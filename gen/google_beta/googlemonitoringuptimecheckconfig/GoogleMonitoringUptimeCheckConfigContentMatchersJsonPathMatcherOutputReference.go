@@ -203,7 +203,7 @@ func NewGoogleMonitoringUptimeCheckConfigContentMatchersJsonPathMatcherOutputRef
 	j := jsiiProxy_GoogleMonitoringUptimeCheckConfigContentMatchersJsonPathMatcherOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigContentMatchersJsonPathMatcherOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigContentMatchersJsonPathMatcherOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleMonitoringUptimeCheckConfigContentMatchersJsonPathMatcherOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigContentMatchersJsonPathMatcherOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigContentMatchersJsonPathMatcherOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

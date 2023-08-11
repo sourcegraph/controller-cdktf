@@ -116,7 +116,7 @@ func NewSpotFleetRequestLaunchSpecificationEphemeralBlockDeviceList(terraformRes
 	j := jsiiProxy_SpotFleetRequestLaunchSpecificationEphemeralBlockDeviceList{}
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEphemeralBlockDeviceList",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEphemeralBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSpotFleetRequestLaunchSpecificationEphemeralBlockDeviceList_Override(s S
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEphemeralBlockDeviceList",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEphemeralBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

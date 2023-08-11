@@ -804,7 +804,7 @@ func NewJobSpecTemplateSpecVolumeOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_JobSpecTemplateSpecVolumeOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecVolumeOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -816,7 +816,7 @@ func NewJobSpecTemplateSpecVolumeOutputReference_Override(j JobSpecTemplateSpecV
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecVolumeOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		j,
 	)

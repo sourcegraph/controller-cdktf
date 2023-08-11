@@ -222,7 +222,7 @@ func NewVpnConnectionVgwTelemetryOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_VpnConnectionVgwTelemetryOutputReference{}
 
 	_jsii_.Create(
-		"aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -234,7 +234,7 @@ func NewVpnConnectionVgwTelemetryOutputReference_Override(v VpnConnectionVgwTele
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		v,
 	)

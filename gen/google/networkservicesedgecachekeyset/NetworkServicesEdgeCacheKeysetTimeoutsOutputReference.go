@@ -228,7 +228,7 @@ func NewNetworkServicesEdgeCacheKeysetTimeoutsOutputReference(terraformResource 
 	j := jsiiProxy_NetworkServicesEdgeCacheKeysetTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeysetTimeoutsOutputReference",
+		"@cdktf/provider-google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeysetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewNetworkServicesEdgeCacheKeysetTimeoutsOutputReference_Override(n Network
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeysetTimeoutsOutputReference",
+		"@cdktf/provider-google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeysetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

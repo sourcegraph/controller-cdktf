@@ -226,7 +226,7 @@ func NewGkeHubMembershipIamMemberConditionOutputReference(terraformResource cdkt
 	j := jsiiProxy_GkeHubMembershipIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.gkeHubMembershipIamMember.GkeHubMembershipIamMemberConditionOutputReference",
+		"@cdktf/provider-google.gkeHubMembershipIamMember.GkeHubMembershipIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGkeHubMembershipIamMemberConditionOutputReference_Override(g GkeHubMembe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gkeHubMembershipIamMember.GkeHubMembershipIamMemberConditionOutputReference",
+		"@cdktf/provider-google.gkeHubMembershipIamMember.GkeHubMembershipIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

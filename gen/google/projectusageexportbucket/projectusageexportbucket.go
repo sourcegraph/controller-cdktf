@@ -391,7 +391,7 @@ func NewProjectUsageExportBucket(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_ProjectUsageExportBucket{}
 
 	_jsii_.Create(
-		"google.projectUsageExportBucket.ProjectUsageExportBucket",
+		"@cdktf/provider-google.projectUsageExportBucket.ProjectUsageExportBucket",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -404,7 +404,7 @@ func NewProjectUsageExportBucket_Override(p ProjectUsageExportBucket, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.projectUsageExportBucket.ProjectUsageExportBucket",
+		"@cdktf/provider-google.projectUsageExportBucket.ProjectUsageExportBucket",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -548,7 +548,7 @@ func ProjectUsageExportBucket_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectUsageExportBucket.ProjectUsageExportBucket",
+		"@cdktf/provider-google.projectUsageExportBucket.ProjectUsageExportBucket",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -567,7 +567,7 @@ func ProjectUsageExportBucket_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectUsageExportBucket.ProjectUsageExportBucket",
+		"@cdktf/provider-google.projectUsageExportBucket.ProjectUsageExportBucket",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -586,7 +586,7 @@ func ProjectUsageExportBucket_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectUsageExportBucket.ProjectUsageExportBucket",
+		"@cdktf/provider-google.projectUsageExportBucket.ProjectUsageExportBucket",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +599,7 @@ func ProjectUsageExportBucket_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.projectUsageExportBucket.ProjectUsageExportBucket",
+		"@cdktf/provider-google.projectUsageExportBucket.ProjectUsageExportBucket",
 		"tfResourceType",
 		&returns,
 	)

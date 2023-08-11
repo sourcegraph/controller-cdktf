@@ -167,7 +167,7 @@ func NewDataAwsInstanceCreditSpecificationOutputReference(terraformResource cdkt
 	j := jsiiProxy_DataAwsInstanceCreditSpecificationOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceCreditSpecificationOutputReference",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceCreditSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsInstanceCreditSpecificationOutputReference_Override(d DataAwsInst
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceCreditSpecificationOutputReference",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceCreditSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

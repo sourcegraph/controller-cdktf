@@ -202,7 +202,7 @@ func NewAlbTargetGroupTargetFailoverOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_AlbTargetGroupTargetFailoverOutputReference{}
 
 	_jsii_.Create(
-		"aws.albTargetGroup.AlbTargetGroupTargetFailoverOutputReference",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupTargetFailoverOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewAlbTargetGroupTargetFailoverOutputReference_Override(a AlbTargetGroupTar
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albTargetGroup.AlbTargetGroupTargetFailoverOutputReference",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupTargetFailoverOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

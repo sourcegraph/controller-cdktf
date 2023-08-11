@@ -365,7 +365,7 @@ func NewEc2TransitGatewayMulticastGroupSource(scope constructs.Construct, id *st
 	j := jsiiProxy_Ec2TransitGatewayMulticastGroupSource{}
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayMulticastGroupSource.Ec2TransitGatewayMulticastGroupSource",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastGroupSource.Ec2TransitGatewayMulticastGroupSource",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewEc2TransitGatewayMulticastGroupSource_Override(e Ec2TransitGatewayMultic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayMulticastGroupSource.Ec2TransitGatewayMulticastGroupSource",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastGroupSource.Ec2TransitGatewayMulticastGroupSource",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -522,7 +522,7 @@ func Ec2TransitGatewayMulticastGroupSource_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayMulticastGroupSource.Ec2TransitGatewayMulticastGroupSource",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastGroupSource.Ec2TransitGatewayMulticastGroupSource",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func Ec2TransitGatewayMulticastGroupSource_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayMulticastGroupSource.Ec2TransitGatewayMulticastGroupSource",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastGroupSource.Ec2TransitGatewayMulticastGroupSource",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func Ec2TransitGatewayMulticastGroupSource_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayMulticastGroupSource.Ec2TransitGatewayMulticastGroupSource",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastGroupSource.Ec2TransitGatewayMulticastGroupSource",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func Ec2TransitGatewayMulticastGroupSource_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2TransitGatewayMulticastGroupSource.Ec2TransitGatewayMulticastGroupSource",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastGroupSource.Ec2TransitGatewayMulticastGroupSource",
 		"tfResourceType",
 		&returns,
 	)

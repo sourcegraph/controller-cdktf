@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewall",
+		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewall",
 		reflect.TypeOf((*GoogleComputeFirewall)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -113,11 +113,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallAllow",
+		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallAllow",
 		reflect.TypeOf((*GoogleComputeFirewallAllow)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallAllowList",
+		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallAllowList",
 		reflect.TypeOf((*GoogleComputeFirewallAllowList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -138,7 +138,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallAllowOutputReference",
+		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallAllowOutputReference",
 		reflect.TypeOf((*GoogleComputeFirewallAllowOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -175,15 +175,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallConfig",
+		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallConfig",
 		reflect.TypeOf((*GoogleComputeFirewallConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallDeny",
+		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallDeny",
 		reflect.TypeOf((*GoogleComputeFirewallDeny)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallDenyList",
+		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallDenyList",
 		reflect.TypeOf((*GoogleComputeFirewallDenyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -204,7 +204,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallDenyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallDenyOutputReference",
 		reflect.TypeOf((*GoogleComputeFirewallDenyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -241,11 +241,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallLogConfig",
+		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallLogConfig",
 		reflect.TypeOf((*GoogleComputeFirewallLogConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallLogConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallLogConfigOutputReference",
 		reflect.TypeOf((*GoogleComputeFirewallLogConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -279,11 +279,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallTimeouts",
+		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallTimeouts",
 		reflect.TypeOf((*GoogleComputeFirewallTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleComputeFirewallTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

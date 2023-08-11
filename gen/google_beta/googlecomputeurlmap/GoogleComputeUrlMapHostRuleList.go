@@ -116,7 +116,7 @@ func NewGoogleComputeUrlMapHostRuleList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_GoogleComputeUrlMapHostRuleList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRuleList",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeUrlMapHostRuleList_Override(g GoogleComputeUrlMapHostRuleLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRuleList",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHostRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -413,7 +413,7 @@ func NewAthenaNamedQuery(scope constructs.Construct, id *string, config *AthenaN
 	j := jsiiProxy_AthenaNamedQuery{}
 
 	_jsii_.Create(
-		"aws.athenaNamedQuery.AthenaNamedQuery",
+		"@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQuery",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewAthenaNamedQuery_Override(a AthenaNamedQuery, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.athenaNamedQuery.AthenaNamedQuery",
+		"@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQuery",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -592,7 +592,7 @@ func AthenaNamedQuery_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.athenaNamedQuery.AthenaNamedQuery",
+		"@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQuery",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func AthenaNamedQuery_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.athenaNamedQuery.AthenaNamedQuery",
+		"@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQuery",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func AthenaNamedQuery_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.athenaNamedQuery.AthenaNamedQuery",
+		"@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQuery",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func AthenaNamedQuery_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.athenaNamedQuery.AthenaNamedQuery",
+		"@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQuery",
 		"tfResourceType",
 		&returns,
 	)

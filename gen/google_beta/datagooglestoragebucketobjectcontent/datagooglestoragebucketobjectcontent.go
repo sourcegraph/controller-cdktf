@@ -536,7 +536,7 @@ func NewDataGoogleStorageBucketObjectContent(scope constructs.Construct, id *str
 	j := jsiiProxy_DataGoogleStorageBucketObjectContent{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleStorageBucketObjectContent.DataGoogleStorageBucketObjectContent",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucketObjectContent.DataGoogleStorageBucketObjectContent",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -549,7 +549,7 @@ func NewDataGoogleStorageBucketObjectContent_Override(d DataGoogleStorageBucketO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleStorageBucketObjectContent.DataGoogleStorageBucketObjectContent",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucketObjectContent.DataGoogleStorageBucketObjectContent",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -671,7 +671,7 @@ func DataGoogleStorageBucketObjectContent_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleStorageBucketObjectContent.DataGoogleStorageBucketObjectContent",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucketObjectContent.DataGoogleStorageBucketObjectContent",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -690,7 +690,7 @@ func DataGoogleStorageBucketObjectContent_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleStorageBucketObjectContent.DataGoogleStorageBucketObjectContent",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucketObjectContent.DataGoogleStorageBucketObjectContent",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -709,7 +709,7 @@ func DataGoogleStorageBucketObjectContent_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleStorageBucketObjectContent.DataGoogleStorageBucketObjectContent",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucketObjectContent.DataGoogleStorageBucketObjectContent",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -722,7 +722,7 @@ func DataGoogleStorageBucketObjectContent_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleStorageBucketObjectContent.DataGoogleStorageBucketObjectContent",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucketObjectContent.DataGoogleStorageBucketObjectContent",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRollout",
+		"@cdktf/provider-google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRollout",
 		reflect.TypeOf((*GameServicesGameServerDeploymentRollout)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutConfig",
+		"@cdktf/provider-google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutConfig",
 		reflect.TypeOf((*GameServicesGameServerDeploymentRolloutConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutGameServerConfigOverrides",
+		"@cdktf/provider-google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutGameServerConfigOverrides",
 		reflect.TypeOf((*GameServicesGameServerDeploymentRolloutGameServerConfigOverrides)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutGameServerConfigOverridesList",
+		"@cdktf/provider-google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutGameServerConfigOverridesList",
 		reflect.TypeOf((*GameServicesGameServerDeploymentRolloutGameServerConfigOverridesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -100,7 +100,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutGameServerConfigOverridesOutputReference",
+		"@cdktf/provider-google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutGameServerConfigOverridesOutputReference",
 		reflect.TypeOf((*GameServicesGameServerDeploymentRolloutGameServerConfigOverridesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,11 +139,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelector",
+		"@cdktf/provider-google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelector",
 		reflect.TypeOf((*GameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelectorOutputReference",
+		"@cdktf/provider-google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelectorOutputReference",
 		reflect.TypeOf((*GameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -178,11 +178,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutTimeouts",
+		"@cdktf/provider-google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutTimeouts",
 		reflect.TypeOf((*GameServicesGameServerDeploymentRolloutTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutTimeoutsOutputReference",
+		"@cdktf/provider-google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutTimeoutsOutputReference",
 		reflect.TypeOf((*GameServicesGameServerDeploymentRolloutTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

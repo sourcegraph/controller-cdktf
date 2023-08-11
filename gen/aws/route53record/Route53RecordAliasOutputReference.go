@@ -225,7 +225,7 @@ func NewRoute53RecordAliasOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_Route53RecordAliasOutputReference{}
 
 	_jsii_.Create(
-		"aws.route53Record.Route53RecordAliasOutputReference",
+		"@cdktf/provider-aws.route53Record.Route53RecordAliasOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewRoute53RecordAliasOutputReference_Override(r Route53RecordAliasOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53Record.Route53RecordAliasOutputReference",
+		"@cdktf/provider-aws.route53Record.Route53RecordAliasOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

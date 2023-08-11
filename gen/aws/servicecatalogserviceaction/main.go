@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.servicecatalogServiceAction.ServicecatalogServiceAction",
+		"@cdktf/provider-aws.servicecatalogServiceAction.ServicecatalogServiceAction",
 		reflect.TypeOf((*ServicecatalogServiceAction)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceptLanguage", GoGetter: "AcceptLanguage"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.servicecatalogServiceAction.ServicecatalogServiceActionConfig",
+		"@cdktf/provider-aws.servicecatalogServiceAction.ServicecatalogServiceActionConfig",
 		reflect.TypeOf((*ServicecatalogServiceActionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.servicecatalogServiceAction.ServicecatalogServiceActionDefinition",
+		"@cdktf/provider-aws.servicecatalogServiceAction.ServicecatalogServiceActionDefinition",
 		reflect.TypeOf((*ServicecatalogServiceActionDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.servicecatalogServiceAction.ServicecatalogServiceActionDefinitionOutputReference",
+		"@cdktf/provider-aws.servicecatalogServiceAction.ServicecatalogServiceActionDefinitionOutputReference",
 		reflect.TypeOf((*ServicecatalogServiceActionDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "assumeRole", GoGetter: "AssumeRole"},
@@ -123,11 +123,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.servicecatalogServiceAction.ServicecatalogServiceActionTimeouts",
+		"@cdktf/provider-aws.servicecatalogServiceAction.ServicecatalogServiceActionTimeouts",
 		reflect.TypeOf((*ServicecatalogServiceActionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.servicecatalogServiceAction.ServicecatalogServiceActionTimeoutsOutputReference",
+		"@cdktf/provider-aws.servicecatalogServiceAction.ServicecatalogServiceActionTimeoutsOutputReference",
 		reflect.TypeOf((*ServicecatalogServiceActionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

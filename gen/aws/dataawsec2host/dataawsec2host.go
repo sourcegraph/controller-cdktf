@@ -485,7 +485,7 @@ func NewDataAwsEc2Host(scope constructs.Construct, id *string, config *DataAwsEc
 	j := jsiiProxy_DataAwsEc2Host{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2Host.DataAwsEc2Host",
+		"@cdktf/provider-aws.dataAwsEc2Host.DataAwsEc2Host",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -498,7 +498,7 @@ func NewDataAwsEc2Host_Override(d DataAwsEc2Host, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2Host.DataAwsEc2Host",
+		"@cdktf/provider-aws.dataAwsEc2Host.DataAwsEc2Host",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -609,7 +609,7 @@ func DataAwsEc2Host_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2Host.DataAwsEc2Host",
+		"@cdktf/provider-aws.dataAwsEc2Host.DataAwsEc2Host",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -628,7 +628,7 @@ func DataAwsEc2Host_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2Host.DataAwsEc2Host",
+		"@cdktf/provider-aws.dataAwsEc2Host.DataAwsEc2Host",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -647,7 +647,7 @@ func DataAwsEc2Host_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2Host.DataAwsEc2Host",
+		"@cdktf/provider-aws.dataAwsEc2Host.DataAwsEc2Host",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -660,7 +660,7 @@ func DataAwsEc2Host_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEc2Host.DataAwsEc2Host",
+		"@cdktf/provider-aws.dataAwsEc2Host.DataAwsEc2Host",
 		"tfResourceType",
 		&returns,
 	)

@@ -342,7 +342,7 @@ func NewConnectUserHierarchyStructure(scope constructs.Construct, id *string, co
 	j := jsiiProxy_ConnectUserHierarchyStructure{}
 
 	_jsii_.Create(
-		"aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure",
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewConnectUserHierarchyStructure_Override(c ConnectUserHierarchyStructure, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure",
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -477,7 +477,7 @@ func ConnectUserHierarchyStructure_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure",
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -496,7 +496,7 @@ func ConnectUserHierarchyStructure_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure",
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func ConnectUserHierarchyStructure_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure",
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -528,7 +528,7 @@ func ConnectUserHierarchyStructure_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure",
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure",
 		"tfResourceType",
 		&returns,
 	)

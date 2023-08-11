@@ -227,7 +227,7 @@ func NewDataprocAutoscalingPolicyWorkerConfigOutputReference(terraformResource c
 	j := jsiiProxy_DataprocAutoscalingPolicyWorkerConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyWorkerConfigOutputReference",
+		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyWorkerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewDataprocAutoscalingPolicyWorkerConfigOutputReference_Override(d Dataproc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyWorkerConfigOutputReference",
+		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyWorkerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

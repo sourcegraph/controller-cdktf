@@ -203,7 +203,7 @@ func NewGoogleGkeonpremBareMetalClusterProxyOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleGkeonpremBareMetalClusterProxyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterProxyOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterProxyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleGkeonpremBareMetalClusterProxyOutputReference_Override(g GoogleGke
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterProxyOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterProxyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

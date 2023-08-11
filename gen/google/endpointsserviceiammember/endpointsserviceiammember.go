@@ -400,7 +400,7 @@ func NewEndpointsServiceIamMember(scope constructs.Construct, id *string, config
 	j := jsiiProxy_EndpointsServiceIamMember{}
 
 	_jsii_.Create(
-		"google.endpointsServiceIamMember.EndpointsServiceIamMember",
+		"@cdktf/provider-google.endpointsServiceIamMember.EndpointsServiceIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewEndpointsServiceIamMember_Override(e EndpointsServiceIamMember, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.endpointsServiceIamMember.EndpointsServiceIamMember",
+		"@cdktf/provider-google.endpointsServiceIamMember.EndpointsServiceIamMember",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -557,7 +557,7 @@ func EndpointsServiceIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.endpointsServiceIamMember.EndpointsServiceIamMember",
+		"@cdktf/provider-google.endpointsServiceIamMember.EndpointsServiceIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func EndpointsServiceIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.endpointsServiceIamMember.EndpointsServiceIamMember",
+		"@cdktf/provider-google.endpointsServiceIamMember.EndpointsServiceIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func EndpointsServiceIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.endpointsServiceIamMember.EndpointsServiceIamMember",
+		"@cdktf/provider-google.endpointsServiceIamMember.EndpointsServiceIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func EndpointsServiceIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.endpointsServiceIamMember.EndpointsServiceIamMember",
+		"@cdktf/provider-google.endpointsServiceIamMember.EndpointsServiceIamMember",
 		"tfResourceType",
 		&returns,
 	)

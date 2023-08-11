@@ -180,7 +180,7 @@ func NewKendraIndexServerSideEncryptionConfigurationOutputReference(terraformRes
 	j := jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.kendraIndex.KendraIndexServerSideEncryptionConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexServerSideEncryptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewKendraIndexServerSideEncryptionConfigurationOutputReference_Override(k K
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraIndex.KendraIndexServerSideEncryptionConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexServerSideEncryptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

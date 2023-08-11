@@ -532,7 +532,7 @@ func NewComputeNetworkEndpointGroup(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_ComputeNetworkEndpointGroup{}
 
 	_jsii_.Create(
-		"google.computeNetworkEndpointGroup.ComputeNetworkEndpointGroup",
+		"@cdktf/provider-google.computeNetworkEndpointGroup.ComputeNetworkEndpointGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -545,7 +545,7 @@ func NewComputeNetworkEndpointGroup_Override(c ComputeNetworkEndpointGroup, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeNetworkEndpointGroup.ComputeNetworkEndpointGroup",
+		"@cdktf/provider-google.computeNetworkEndpointGroup.ComputeNetworkEndpointGroup",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -744,7 +744,7 @@ func ComputeNetworkEndpointGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeNetworkEndpointGroup.ComputeNetworkEndpointGroup",
+		"@cdktf/provider-google.computeNetworkEndpointGroup.ComputeNetworkEndpointGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -763,7 +763,7 @@ func ComputeNetworkEndpointGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeNetworkEndpointGroup.ComputeNetworkEndpointGroup",
+		"@cdktf/provider-google.computeNetworkEndpointGroup.ComputeNetworkEndpointGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -782,7 +782,7 @@ func ComputeNetworkEndpointGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeNetworkEndpointGroup.ComputeNetworkEndpointGroup",
+		"@cdktf/provider-google.computeNetworkEndpointGroup.ComputeNetworkEndpointGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -795,7 +795,7 @@ func ComputeNetworkEndpointGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeNetworkEndpointGroup.ComputeNetworkEndpointGroup",
+		"@cdktf/provider-google.computeNetworkEndpointGroup.ComputeNetworkEndpointGroup",
 		"tfResourceType",
 		&returns,
 	)

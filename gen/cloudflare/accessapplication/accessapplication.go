@@ -762,7 +762,7 @@ func NewAccessApplication(scope constructs.Construct, id *string, config *Access
 	j := jsiiProxy_AccessApplication{}
 
 	_jsii_.Create(
-		"cloudflare.accessApplication.AccessApplication",
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplication",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -775,7 +775,7 @@ func NewAccessApplication_Override(a AccessApplication, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessApplication.AccessApplication",
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplication",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -1073,7 +1073,7 @@ func AccessApplication_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessApplication.AccessApplication",
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplication",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1092,7 +1092,7 @@ func AccessApplication_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessApplication.AccessApplication",
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplication",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1111,7 +1111,7 @@ func AccessApplication_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessApplication.AccessApplication",
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplication",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1124,7 +1124,7 @@ func AccessApplication_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.accessApplication.AccessApplication",
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplication",
 		"tfResourceType",
 		&returns,
 	)

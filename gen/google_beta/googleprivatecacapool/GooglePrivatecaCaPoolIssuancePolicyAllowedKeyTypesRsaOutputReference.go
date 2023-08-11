@@ -204,7 +204,7 @@ func NewGooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsaOutputReference(ter
 	j := jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsaOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsaOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsaOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsaOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

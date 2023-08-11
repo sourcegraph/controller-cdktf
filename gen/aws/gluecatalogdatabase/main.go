@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.glueCatalogDatabase.GlueCatalogDatabase",
+		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabase",
 		reflect.TypeOf((*GlueCatalogDatabase)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,15 +78,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueCatalogDatabase.GlueCatalogDatabaseConfig",
+		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseConfig",
 		reflect.TypeOf((*GlueCatalogDatabaseConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermission",
+		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermission",
 		reflect.TypeOf((*GlueCatalogDatabaseCreateTableDefaultPermission)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionList",
+		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionList",
 		reflect.TypeOf((*GlueCatalogDatabaseCreateTableDefaultPermissionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference",
+		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference",
 		reflect.TypeOf((*GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -146,11 +146,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal",
+		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal",
 		reflect.TypeOf((*GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference",
+		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference",
 		reflect.TypeOf((*GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -185,11 +185,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueCatalogDatabase.GlueCatalogDatabaseTargetDatabase",
+		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseTargetDatabase",
 		reflect.TypeOf((*GlueCatalogDatabaseTargetDatabase)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.glueCatalogDatabase.GlueCatalogDatabaseTargetDatabaseOutputReference",
+		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseTargetDatabaseOutputReference",
 		reflect.TypeOf((*GlueCatalogDatabaseTargetDatabaseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalogId", GoGetter: "CatalogId"},

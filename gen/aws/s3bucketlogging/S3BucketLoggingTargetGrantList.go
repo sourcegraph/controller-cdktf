@@ -116,7 +116,7 @@ func NewS3BucketLoggingTargetGrantList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_S3BucketLoggingTargetGrantList{}
 
 	_jsii_.Create(
-		"aws.s3BucketLogging.S3BucketLoggingTargetGrantList",
+		"@cdktf/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewS3BucketLoggingTargetGrantList_Override(s S3BucketLoggingTargetGrantList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketLogging.S3BucketLoggingTargetGrantList",
+		"@cdktf/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

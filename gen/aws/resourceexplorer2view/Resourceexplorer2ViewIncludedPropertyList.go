@@ -116,7 +116,7 @@ func NewResourceexplorer2ViewIncludedPropertyList(terraformResource cdktf.IInter
 	j := jsiiProxy_Resourceexplorer2ViewIncludedPropertyList{}
 
 	_jsii_.Create(
-		"aws.resourceexplorer2View.Resourceexplorer2ViewIncludedPropertyList",
+		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewIncludedPropertyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewResourceexplorer2ViewIncludedPropertyList_Override(r Resourceexplorer2Vi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.resourceexplorer2View.Resourceexplorer2ViewIncludedPropertyList",
+		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewIncludedPropertyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

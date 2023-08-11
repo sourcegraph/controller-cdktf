@@ -342,7 +342,7 @@ func NewGroupMembership(scope constructs.Construct, id *string, config *GroupMem
 	j := jsiiProxy_GroupMembership{}
 
 	_jsii_.Create(
-		"okta.groupMembership.GroupMembership",
+		"@cdktf/provider-okta.groupMembership.GroupMembership",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewGroupMembership_Override(g GroupMembership, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.groupMembership.GroupMembership",
+		"@cdktf/provider-okta.groupMembership.GroupMembership",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -488,7 +488,7 @@ func GroupMembership_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.groupMembership.GroupMembership",
+		"@cdktf/provider-okta.groupMembership.GroupMembership",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func GroupMembership_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.groupMembership.GroupMembership",
+		"@cdktf/provider-okta.groupMembership.GroupMembership",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func GroupMembership_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.groupMembership.GroupMembership",
+		"@cdktf/provider-okta.groupMembership.GroupMembership",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func GroupMembership_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.groupMembership.GroupMembership",
+		"@cdktf/provider-okta.groupMembership.GroupMembership",
 		"tfResourceType",
 		&returns,
 	)

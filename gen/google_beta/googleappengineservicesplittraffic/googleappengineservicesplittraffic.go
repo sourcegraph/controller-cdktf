@@ -414,7 +414,7 @@ func NewGoogleAppEngineServiceSplitTraffic(scope constructs.Construct, id *strin
 	j := jsiiProxy_GoogleAppEngineServiceSplitTraffic{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineServiceSplitTraffic.GoogleAppEngineServiceSplitTraffic",
+		"@cdktf/provider-google-beta.googleAppEngineServiceSplitTraffic.GoogleAppEngineServiceSplitTraffic",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewGoogleAppEngineServiceSplitTraffic_Override(g GoogleAppEngineServiceSpli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineServiceSplitTraffic.GoogleAppEngineServiceSplitTraffic",
+		"@cdktf/provider-google-beta.googleAppEngineServiceSplitTraffic.GoogleAppEngineServiceSplitTraffic",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -571,7 +571,7 @@ func GoogleAppEngineServiceSplitTraffic_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAppEngineServiceSplitTraffic.GoogleAppEngineServiceSplitTraffic",
+		"@cdktf/provider-google-beta.googleAppEngineServiceSplitTraffic.GoogleAppEngineServiceSplitTraffic",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -590,7 +590,7 @@ func GoogleAppEngineServiceSplitTraffic_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAppEngineServiceSplitTraffic.GoogleAppEngineServiceSplitTraffic",
+		"@cdktf/provider-google-beta.googleAppEngineServiceSplitTraffic.GoogleAppEngineServiceSplitTraffic",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func GoogleAppEngineServiceSplitTraffic_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAppEngineServiceSplitTraffic.GoogleAppEngineServiceSplitTraffic",
+		"@cdktf/provider-google-beta.googleAppEngineServiceSplitTraffic.GoogleAppEngineServiceSplitTraffic",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func GoogleAppEngineServiceSplitTraffic_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleAppEngineServiceSplitTraffic.GoogleAppEngineServiceSplitTraffic",
+		"@cdktf/provider-google-beta.googleAppEngineServiceSplitTraffic.GoogleAppEngineServiceSplitTraffic",
 		"tfResourceType",
 		&returns,
 	)

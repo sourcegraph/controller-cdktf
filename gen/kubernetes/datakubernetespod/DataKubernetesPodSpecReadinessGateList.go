@@ -104,7 +104,7 @@ func NewDataKubernetesPodSpecReadinessGateList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataKubernetesPodSpecReadinessGateList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecReadinessGateList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecReadinessGateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodSpecReadinessGateList_Override(d DataKubernetesPodSpecR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecReadinessGateList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecReadinessGateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

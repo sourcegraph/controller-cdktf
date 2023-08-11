@@ -361,7 +361,7 @@ func NewDataGoogleServiceAccountKey(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataGoogleServiceAccountKey{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -374,7 +374,7 @@ func NewDataGoogleServiceAccountKey_Override(d DataGoogleServiceAccountKey, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -496,7 +496,7 @@ func DataGoogleServiceAccountKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func DataGoogleServiceAccountKey_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataGoogleServiceAccountKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +547,7 @@ func DataGoogleServiceAccountKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey",
 		"tfResourceType",
 		&returns,
 	)

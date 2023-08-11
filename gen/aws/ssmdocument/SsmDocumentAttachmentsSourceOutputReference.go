@@ -226,7 +226,7 @@ func NewSsmDocumentAttachmentsSourceOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_SsmDocumentAttachmentsSourceOutputReference{}
 
 	_jsii_.Create(
-		"aws.ssmDocument.SsmDocumentAttachmentsSourceOutputReference",
+		"@cdktf/provider-aws.ssmDocument.SsmDocumentAttachmentsSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewSsmDocumentAttachmentsSourceOutputReference_Override(s SsmDocumentAttach
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmDocument.SsmDocumentAttachmentsSourceOutputReference",
+		"@cdktf/provider-aws.ssmDocument.SsmDocumentAttachmentsSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

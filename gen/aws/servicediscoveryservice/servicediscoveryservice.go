@@ -546,7 +546,7 @@ func NewServiceDiscoveryService(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_ServiceDiscoveryService{}
 
 	_jsii_.Create(
-		"aws.serviceDiscoveryService.ServiceDiscoveryService",
+		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -559,7 +559,7 @@ func NewServiceDiscoveryService_Override(s ServiceDiscoveryService, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.serviceDiscoveryService.ServiceDiscoveryService",
+		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryService",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -747,7 +747,7 @@ func ServiceDiscoveryService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.serviceDiscoveryService.ServiceDiscoveryService",
+		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -766,7 +766,7 @@ func ServiceDiscoveryService_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.serviceDiscoveryService.ServiceDiscoveryService",
+		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -785,7 +785,7 @@ func ServiceDiscoveryService_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.serviceDiscoveryService.ServiceDiscoveryService",
+		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryService",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -798,7 +798,7 @@ func ServiceDiscoveryService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.serviceDiscoveryService.ServiceDiscoveryService",
+		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryService",
 		"tfResourceType",
 		&returns,
 	)

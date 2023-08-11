@@ -201,7 +201,7 @@ func NewConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference(
 	j := jsiiProxy_ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference{}
 
 	_jsii_.Create(
-		"aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference",
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -213,7 +213,7 @@ func NewConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference",
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

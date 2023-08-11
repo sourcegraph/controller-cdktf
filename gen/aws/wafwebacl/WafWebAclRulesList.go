@@ -116,7 +116,7 @@ func NewWafWebAclRulesList(terraformResource cdktf.IInterpolatingParent, terrafo
 	j := jsiiProxy_WafWebAclRulesList{}
 
 	_jsii_.Create(
-		"aws.wafWebAcl.WafWebAclRulesList",
+		"@cdktf/provider-aws.wafWebAcl.WafWebAclRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafWebAclRulesList_Override(w WafWebAclRulesList, terraformResource cdkt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafWebAcl.WafWebAclRulesList",
+		"@cdktf/provider-aws.wafWebAcl.WafWebAclRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

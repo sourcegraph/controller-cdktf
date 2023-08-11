@@ -320,7 +320,7 @@ func NewCodepipelineCustomActionTypeConfigurationPropertyOutputReference(terrafo
 	j := jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference{}
 
 	_jsii_.Create(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfigurationPropertyOutputReference",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfigurationPropertyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -332,7 +332,7 @@ func NewCodepipelineCustomActionTypeConfigurationPropertyOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfigurationPropertyOutputReference",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfigurationPropertyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

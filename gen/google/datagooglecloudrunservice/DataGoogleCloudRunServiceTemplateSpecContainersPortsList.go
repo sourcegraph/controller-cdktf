@@ -104,7 +104,7 @@ func NewDataGoogleCloudRunServiceTemplateSpecContainersPortsList(terraformResour
 	j := jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersPortsList{}
 
 	_jsii_.Create(
-		"google.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersPortsList",
+		"@cdktf/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersPortsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudRunServiceTemplateSpecContainersPortsList_Override(d Data
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersPortsList",
+		"@cdktf/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersPortsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

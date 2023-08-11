@@ -495,7 +495,7 @@ func NewCustomHostname(scope constructs.Construct, id *string, config *CustomHos
 	j := jsiiProxy_CustomHostname{}
 
 	_jsii_.Create(
-		"cloudflare.customHostname.CustomHostname",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostname",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -508,7 +508,7 @@ func NewCustomHostname_Override(c CustomHostname, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.customHostname.CustomHostname",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostname",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -685,7 +685,7 @@ func CustomHostname_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.customHostname.CustomHostname",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostname",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -704,7 +704,7 @@ func CustomHostname_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.customHostname.CustomHostname",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostname",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -723,7 +723,7 @@ func CustomHostname_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.customHostname.CustomHostname",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostname",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -736,7 +736,7 @@ func CustomHostname_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.customHostname.CustomHostname",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostname",
 		"tfResourceType",
 		&returns,
 	)

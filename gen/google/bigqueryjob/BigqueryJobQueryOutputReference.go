@@ -563,7 +563,7 @@ func NewBigqueryJobQueryOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_BigqueryJobQueryOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryJob.BigqueryJobQueryOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -575,7 +575,7 @@ func NewBigqueryJobQueryOutputReference_Override(b BigqueryJobQueryOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryJob.BigqueryJobQueryOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

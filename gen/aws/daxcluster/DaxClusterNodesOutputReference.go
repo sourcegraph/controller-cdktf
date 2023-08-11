@@ -200,7 +200,7 @@ func NewDaxClusterNodesOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_DaxClusterNodesOutputReference{}
 
 	_jsii_.Create(
-		"aws.daxCluster.DaxClusterNodesOutputReference",
+		"@cdktf/provider-aws.daxCluster.DaxClusterNodesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDaxClusterNodesOutputReference_Override(d DaxClusterNodesOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.daxCluster.DaxClusterNodesOutputReference",
+		"@cdktf/provider-aws.daxCluster.DaxClusterNodesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

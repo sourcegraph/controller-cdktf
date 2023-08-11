@@ -222,7 +222,7 @@ func NewDataTfeVariablesEnvOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataTfeVariablesEnvOutputReference{}
 
 	_jsii_.Create(
-		"tfe.dataTfeVariables.DataTfeVariablesEnvOutputReference",
+		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesEnvOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -234,7 +234,7 @@ func NewDataTfeVariablesEnvOutputReference_Override(d DataTfeVariablesEnvOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfeVariables.DataTfeVariablesEnvOutputReference",
+		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesEnvOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

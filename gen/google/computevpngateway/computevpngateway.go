@@ -471,7 +471,7 @@ func NewComputeVpnGateway(scope constructs.Construct, id *string, config *Comput
 	j := jsiiProxy_ComputeVpnGateway{}
 
 	_jsii_.Create(
-		"google.computeVpnGateway.ComputeVpnGateway",
+		"@cdktf/provider-google.computeVpnGateway.ComputeVpnGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -484,7 +484,7 @@ func NewComputeVpnGateway_Override(c ComputeVpnGateway, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeVpnGateway.ComputeVpnGateway",
+		"@cdktf/provider-google.computeVpnGateway.ComputeVpnGateway",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -650,7 +650,7 @@ func ComputeVpnGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeVpnGateway.ComputeVpnGateway",
+		"@cdktf/provider-google.computeVpnGateway.ComputeVpnGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func ComputeVpnGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeVpnGateway.ComputeVpnGateway",
+		"@cdktf/provider-google.computeVpnGateway.ComputeVpnGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func ComputeVpnGateway_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeVpnGateway.ComputeVpnGateway",
+		"@cdktf/provider-google.computeVpnGateway.ComputeVpnGateway",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func ComputeVpnGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeVpnGateway.ComputeVpnGateway",
+		"@cdktf/provider-google.computeVpnGateway.ComputeVpnGateway",
 		"tfResourceType",
 		&returns,
 	)

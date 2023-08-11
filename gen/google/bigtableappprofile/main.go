@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.bigtableAppProfile.BigtableAppProfile",
+		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfile",
 		reflect.TypeOf((*BigtableAppProfile)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,15 +84,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigtableAppProfile.BigtableAppProfileConfig",
+		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileConfig",
 		reflect.TypeOf((*BigtableAppProfileConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.bigtableAppProfile.BigtableAppProfileSingleClusterRouting",
+		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRouting",
 		reflect.TypeOf((*BigtableAppProfileSingleClusterRouting)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference",
+		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference",
 		reflect.TypeOf((*BigtableAppProfileSingleClusterRoutingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowTransactionalWrites", GoGetter: "AllowTransactionalWrites"},
@@ -129,11 +129,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigtableAppProfile.BigtableAppProfileTimeouts",
+		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileTimeouts",
 		reflect.TypeOf((*BigtableAppProfileTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigtableAppProfile.BigtableAppProfileTimeoutsOutputReference",
+		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileTimeoutsOutputReference",
 		reflect.TypeOf((*BigtableAppProfileTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

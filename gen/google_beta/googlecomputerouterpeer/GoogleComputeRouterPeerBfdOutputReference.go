@@ -251,7 +251,7 @@ func NewGoogleComputeRouterPeerBfdOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_GoogleComputeRouterPeerBfdOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerBfdOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerBfdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewGoogleComputeRouterPeerBfdOutputReference_Override(g GoogleComputeRouter
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerBfdOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerBfdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

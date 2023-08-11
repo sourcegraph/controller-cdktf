@@ -566,7 +566,7 @@ func NewGoogleApigeeInstance(scope constructs.Construct, id *string, config *Goo
 	j := jsiiProxy_GoogleApigeeInstance{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeInstance.GoogleApigeeInstance",
+		"@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -579,7 +579,7 @@ func NewGoogleApigeeInstance_Override(g GoogleApigeeInstance, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeInstance.GoogleApigeeInstance",
+		"@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -789,7 +789,7 @@ func GoogleApigeeInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeInstance.GoogleApigeeInstance",
+		"@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -808,7 +808,7 @@ func GoogleApigeeInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeInstance.GoogleApigeeInstance",
+		"@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -827,7 +827,7 @@ func GoogleApigeeInstance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeInstance.GoogleApigeeInstance",
+		"@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -840,7 +840,7 @@ func GoogleApigeeInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleApigeeInstance.GoogleApigeeInstance",
+		"@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance",
 		"tfResourceType",
 		&returns,
 	)

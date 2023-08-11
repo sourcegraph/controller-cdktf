@@ -116,7 +116,7 @@ func NewPolicyRuleSignonFactorSequenceSecondaryCriteriaList(terraformResource cd
 	j := jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaList{}
 
 	_jsii_.Create(
-		"okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaList",
+		"@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPolicyRuleSignonFactorSequenceSecondaryCriteriaList_Override(p PolicyRul
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaList",
+		"@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

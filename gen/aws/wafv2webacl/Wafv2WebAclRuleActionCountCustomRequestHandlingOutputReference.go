@@ -179,7 +179,7 @@ func NewWafv2WebAclRuleActionCountCustomRequestHandlingOutputReference(terraform
 	j := jsiiProxy_Wafv2WebAclRuleActionCountCustomRequestHandlingOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandlingOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandlingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewWafv2WebAclRuleActionCountCustomRequestHandlingOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandlingOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandlingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

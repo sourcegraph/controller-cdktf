@@ -202,7 +202,7 @@ func NewImagebuilderContainerRecipeTargetRepositoryOutputReference(terraformReso
 	j := jsiiProxy_ImagebuilderContainerRecipeTargetRepositoryOutputReference{}
 
 	_jsii_.Create(
-		"aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeTargetRepositoryOutputReference",
+		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeTargetRepositoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewImagebuilderContainerRecipeTargetRepositoryOutputReference_Override(i Im
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeTargetRepositoryOutputReference",
+		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeTargetRepositoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

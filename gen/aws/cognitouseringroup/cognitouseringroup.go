@@ -365,7 +365,7 @@ func NewCognitoUserInGroup(scope constructs.Construct, id *string, config *Cogni
 	j := jsiiProxy_CognitoUserInGroup{}
 
 	_jsii_.Create(
-		"aws.cognitoUserInGroup.CognitoUserInGroup",
+		"@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewCognitoUserInGroup_Override(c CognitoUserInGroup, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserInGroup.CognitoUserInGroup",
+		"@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroup",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -522,7 +522,7 @@ func CognitoUserInGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoUserInGroup.CognitoUserInGroup",
+		"@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func CognitoUserInGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoUserInGroup.CognitoUserInGroup",
+		"@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func CognitoUserInGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoUserInGroup.CognitoUserInGroup",
+		"@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func CognitoUserInGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cognitoUserInGroup.CognitoUserInGroup",
+		"@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroup",
 		"tfResourceType",
 		&returns,
 	)

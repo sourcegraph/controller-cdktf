@@ -228,7 +228,7 @@ func NewMqBrokerTimeoutsOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_MqBrokerTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.mqBroker.MqBrokerTimeoutsOutputReference",
+		"@cdktf/provider-aws.mqBroker.MqBrokerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewMqBrokerTimeoutsOutputReference_Override(m MqBrokerTimeoutsOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mqBroker.MqBrokerTimeoutsOutputReference",
+		"@cdktf/provider-aws.mqBroker.MqBrokerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

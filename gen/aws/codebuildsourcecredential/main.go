@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.codebuildSourceCredential.CodebuildSourceCredential",
+		"@cdktf/provider-aws.codebuildSourceCredential.CodebuildSourceCredential",
 		reflect.TypeOf((*CodebuildSourceCredential)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildSourceCredential.CodebuildSourceCredentialConfig",
+		"@cdktf/provider-aws.codebuildSourceCredential.CodebuildSourceCredentialConfig",
 		reflect.TypeOf((*CodebuildSourceCredentialConfig)(nil)).Elem(),
 	)
 }

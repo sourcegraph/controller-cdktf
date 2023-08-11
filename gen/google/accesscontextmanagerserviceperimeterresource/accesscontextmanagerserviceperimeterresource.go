@@ -366,7 +366,7 @@ func NewAccessContextManagerServicePerimeterResource(scope constructs.Construct,
 	j := jsiiProxy_AccessContextManagerServicePerimeterResource{}
 
 	_jsii_.Create(
-		"google.accessContextManagerServicePerimeterResource.AccessContextManagerServicePerimeterResource",
+		"@cdktf/provider-google.accessContextManagerServicePerimeterResource.AccessContextManagerServicePerimeterResource",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewAccessContextManagerServicePerimeterResource_Override(a AccessContextMan
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerServicePerimeterResource.AccessContextManagerServicePerimeterResource",
+		"@cdktf/provider-google.accessContextManagerServicePerimeterResource.AccessContextManagerServicePerimeterResource",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -512,7 +512,7 @@ func AccessContextManagerServicePerimeterResource_IsConstruct(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerServicePerimeterResource.AccessContextManagerServicePerimeterResource",
+		"@cdktf/provider-google.accessContextManagerServicePerimeterResource.AccessContextManagerServicePerimeterResource",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func AccessContextManagerServicePerimeterResource_IsTerraformElement(x interface
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerServicePerimeterResource.AccessContextManagerServicePerimeterResource",
+		"@cdktf/provider-google.accessContextManagerServicePerimeterResource.AccessContextManagerServicePerimeterResource",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func AccessContextManagerServicePerimeterResource_IsTerraformResource(x interfac
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerServicePerimeterResource.AccessContextManagerServicePerimeterResource",
+		"@cdktf/provider-google.accessContextManagerServicePerimeterResource.AccessContextManagerServicePerimeterResource",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func AccessContextManagerServicePerimeterResource_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.accessContextManagerServicePerimeterResource.AccessContextManagerServicePerimeterResource",
+		"@cdktf/provider-google.accessContextManagerServicePerimeterResource.AccessContextManagerServicePerimeterResource",
 		"tfResourceType",
 		&returns,
 	)

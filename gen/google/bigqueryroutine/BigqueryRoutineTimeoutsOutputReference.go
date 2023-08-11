@@ -228,7 +228,7 @@ func NewBigqueryRoutineTimeoutsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_BigqueryRoutineTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryRoutine.BigqueryRoutineTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutineTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewBigqueryRoutineTimeoutsOutputReference_Override(b BigqueryRoutineTimeout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryRoutine.BigqueryRoutineTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutineTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

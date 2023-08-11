@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.defaultSubnet.DefaultSubnet",
+		"@cdktf/provider-aws.defaultSubnet.DefaultSubnet",
 		reflect.TypeOf((*DefaultSubnet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -108,15 +108,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.defaultSubnet.DefaultSubnetConfig",
+		"@cdktf/provider-aws.defaultSubnet.DefaultSubnetConfig",
 		reflect.TypeOf((*DefaultSubnetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.defaultSubnet.DefaultSubnetTimeouts",
+		"@cdktf/provider-aws.defaultSubnet.DefaultSubnetTimeouts",
 		reflect.TypeOf((*DefaultSubnetTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.defaultSubnet.DefaultSubnetTimeoutsOutputReference",
+		"@cdktf/provider-aws.defaultSubnet.DefaultSubnetTimeoutsOutputReference",
 		reflect.TypeOf((*DefaultSubnetTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

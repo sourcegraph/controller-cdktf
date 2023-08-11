@@ -116,7 +116,7 @@ func NewNeptuneClusterParameterGroupParameterList(terraformResource cdktf.IInter
 	j := jsiiProxy_NeptuneClusterParameterGroupParameterList{}
 
 	_jsii_.Create(
-		"aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupParameterList",
+		"@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewNeptuneClusterParameterGroupParameterList_Override(n NeptuneClusterParam
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupParameterList",
+		"@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

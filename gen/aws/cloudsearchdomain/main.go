@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cloudsearchDomain.CloudsearchDomain",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomain",
 		reflect.TypeOf((*CloudsearchDomain)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,15 +80,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudsearchDomain.CloudsearchDomainConfig",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainConfig",
 		reflect.TypeOf((*CloudsearchDomainConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudsearchDomain.CloudsearchDomainEndpointOptions",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainEndpointOptions",
 		reflect.TypeOf((*CloudsearchDomainEndpointOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudsearchDomain.CloudsearchDomainEndpointOptionsOutputReference",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainEndpointOptionsOutputReference",
 		reflect.TypeOf((*CloudsearchDomainEndpointOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -126,11 +126,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudsearchDomain.CloudsearchDomainIndexField",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainIndexField",
 		reflect.TypeOf((*CloudsearchDomainIndexField)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudsearchDomain.CloudsearchDomainIndexFieldList",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainIndexFieldList",
 		reflect.TypeOf((*CloudsearchDomainIndexFieldList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -151,7 +151,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudsearchDomain.CloudsearchDomainIndexFieldOutputReference",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainIndexFieldOutputReference",
 		reflect.TypeOf((*CloudsearchDomainIndexFieldOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "analysisScheme", GoGetter: "AnalysisScheme"},
@@ -211,11 +211,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudsearchDomain.CloudsearchDomainScalingParameters",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainScalingParameters",
 		reflect.TypeOf((*CloudsearchDomainScalingParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudsearchDomain.CloudsearchDomainScalingParametersOutputReference",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainScalingParametersOutputReference",
 		reflect.TypeOf((*CloudsearchDomainScalingParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -256,11 +256,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudsearchDomain.CloudsearchDomainTimeouts",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainTimeouts",
 		reflect.TypeOf((*CloudsearchDomainTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudsearchDomain.CloudsearchDomainTimeoutsOutputReference",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainTimeoutsOutputReference",
 		reflect.TypeOf((*CloudsearchDomainTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

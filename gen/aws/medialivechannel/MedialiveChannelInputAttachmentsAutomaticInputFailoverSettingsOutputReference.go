@@ -251,7 +251,7 @@ func NewMedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsOutputRefe
 	j := jsiiProxy_MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewMedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

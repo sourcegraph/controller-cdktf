@@ -116,7 +116,7 @@ func NewCloudRunV2ServiceTemplateVolumesSecretItemsList(terraformResource cdktf.
 	j := jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsList{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesSecretItemsList",
+		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesSecretItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudRunV2ServiceTemplateVolumesSecretItemsList_Override(c CloudRunV2Ser
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesSecretItemsList",
+		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesSecretItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

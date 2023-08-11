@@ -180,7 +180,7 @@ func NewGoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputRefer
 	j := jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

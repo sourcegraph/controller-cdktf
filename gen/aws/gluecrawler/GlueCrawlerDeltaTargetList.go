@@ -116,7 +116,7 @@ func NewGlueCrawlerDeltaTargetList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_GlueCrawlerDeltaTargetList{}
 
 	_jsii_.Create(
-		"aws.glueCrawler.GlueCrawlerDeltaTargetList",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGlueCrawlerDeltaTargetList_Override(g GlueCrawlerDeltaTargetList, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueCrawler.GlueCrawlerDeltaTargetList",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

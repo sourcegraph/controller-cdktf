@@ -203,7 +203,7 @@ func NewComputeInstanceTemplateReservationAffinityOutputReference(terraformResou
 	j := jsiiProxy_ComputeInstanceTemplateReservationAffinityOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstanceTemplate.ComputeInstanceTemplateReservationAffinityOutputReference",
+		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateReservationAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewComputeInstanceTemplateReservationAffinityOutputReference_Override(c Com
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceTemplate.ComputeInstanceTemplateReservationAffinityOutputReference",
+		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateReservationAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

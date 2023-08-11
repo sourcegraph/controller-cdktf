@@ -275,7 +275,7 @@ func NewGoogleClouddeployTargetExecutionConfigsOutputReference(terraformResource
 	j := jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetExecutionConfigsOutputReference",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetExecutionConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewGoogleClouddeployTargetExecutionConfigsOutputReference_Override(g Google
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetExecutionConfigsOutputReference",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetExecutionConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

@@ -116,7 +116,7 @@ func NewCeCostCategorySplitChargeRuleParameterList(terraformResource cdktf.IInte
 	j := jsiiProxy_CeCostCategorySplitChargeRuleParameterList{}
 
 	_jsii_.Create(
-		"aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterList",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCeCostCategorySplitChargeRuleParameterList_Override(c CeCostCategorySpli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterList",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

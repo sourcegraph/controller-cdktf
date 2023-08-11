@@ -204,7 +204,7 @@ func NewApigeeOrganizationPropertiesPropertyOutputReference(terraformResource cd
 	j := jsiiProxy_ApigeeOrganizationPropertiesPropertyOutputReference{}
 
 	_jsii_.Create(
-		"google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyOutputReference",
+		"@cdktf/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewApigeeOrganizationPropertiesPropertyOutputReference_Override(a ApigeeOrg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyOutputReference",
+		"@cdktf/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow",
+		"@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow",
 		reflect.TypeOf((*GoogleApigeeSharedflow)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowConfig",
+		"@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowConfig",
 		reflect.TypeOf((*GoogleApigeeSharedflowConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowMetaData",
+		"@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowMetaData",
 		reflect.TypeOf((*GoogleApigeeSharedflowMetaData)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowMetaDataList",
+		"@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowMetaDataList",
 		reflect.TypeOf((*GoogleApigeeSharedflowMetaDataList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -100,7 +100,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowMetaDataOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowMetaDataOutputReference",
 		reflect.TypeOf((*GoogleApigeeSharedflowMetaDataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -135,11 +135,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowTimeouts",
+		"@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowTimeouts",
 		reflect.TypeOf((*GoogleApigeeSharedflowTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleApigeeSharedflowTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

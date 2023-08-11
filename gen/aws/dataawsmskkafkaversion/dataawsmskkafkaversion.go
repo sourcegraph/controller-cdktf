@@ -327,7 +327,7 @@ func NewDataAwsMskKafkaVersion(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataAwsMskKafkaVersion{}
 
 	_jsii_.Create(
-		"aws.dataAwsMskKafkaVersion.DataAwsMskKafkaVersion",
+		"@cdktf/provider-aws.dataAwsMskKafkaVersion.DataAwsMskKafkaVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -340,7 +340,7 @@ func NewDataAwsMskKafkaVersion_Override(d DataAwsMskKafkaVersion, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMskKafkaVersion.DataAwsMskKafkaVersion",
+		"@cdktf/provider-aws.dataAwsMskKafkaVersion.DataAwsMskKafkaVersion",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -451,7 +451,7 @@ func DataAwsMskKafkaVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMskKafkaVersion.DataAwsMskKafkaVersion",
+		"@cdktf/provider-aws.dataAwsMskKafkaVersion.DataAwsMskKafkaVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -470,7 +470,7 @@ func DataAwsMskKafkaVersion_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMskKafkaVersion.DataAwsMskKafkaVersion",
+		"@cdktf/provider-aws.dataAwsMskKafkaVersion.DataAwsMskKafkaVersion",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -489,7 +489,7 @@ func DataAwsMskKafkaVersion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMskKafkaVersion.DataAwsMskKafkaVersion",
+		"@cdktf/provider-aws.dataAwsMskKafkaVersion.DataAwsMskKafkaVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -502,7 +502,7 @@ func DataAwsMskKafkaVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsMskKafkaVersion.DataAwsMskKafkaVersion",
+		"@cdktf/provider-aws.dataAwsMskKafkaVersion.DataAwsMskKafkaVersion",
 		"tfResourceType",
 		&returns,
 	)

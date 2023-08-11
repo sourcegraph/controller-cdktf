@@ -401,7 +401,7 @@ func NewGooglePrivatecaCaPoolIamPolicy(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GooglePrivatecaCaPoolIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCaPoolIamPolicy.GooglePrivatecaCaPoolIamPolicy",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPoolIamPolicy.GooglePrivatecaCaPoolIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGooglePrivatecaCaPoolIamPolicy_Override(g GooglePrivatecaCaPoolIamPolicy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCaPoolIamPolicy.GooglePrivatecaCaPoolIamPolicy",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPoolIamPolicy.GooglePrivatecaCaPoolIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GooglePrivatecaCaPoolIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePrivatecaCaPoolIamPolicy.GooglePrivatecaCaPoolIamPolicy",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPoolIamPolicy.GooglePrivatecaCaPoolIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GooglePrivatecaCaPoolIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePrivatecaCaPoolIamPolicy.GooglePrivatecaCaPoolIamPolicy",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPoolIamPolicy.GooglePrivatecaCaPoolIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GooglePrivatecaCaPoolIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePrivatecaCaPoolIamPolicy.GooglePrivatecaCaPoolIamPolicy",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPoolIamPolicy.GooglePrivatecaCaPoolIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GooglePrivatecaCaPoolIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googlePrivatecaCaPoolIamPolicy.GooglePrivatecaCaPoolIamPolicy",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPoolIamPolicy.GooglePrivatecaCaPoolIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

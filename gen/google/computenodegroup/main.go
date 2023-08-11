@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeNodeGroup.ComputeNodeGroup",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroup",
 		reflect.TypeOf((*ComputeNodeGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -96,11 +96,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeNodeGroup.ComputeNodeGroupAutoscalingPolicy",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroupAutoscalingPolicy",
 		reflect.TypeOf((*ComputeNodeGroupAutoscalingPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeNodeGroup.ComputeNodeGroupAutoscalingPolicyOutputReference",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroupAutoscalingPolicyOutputReference",
 		reflect.TypeOf((*ComputeNodeGroupAutoscalingPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -141,15 +141,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeNodeGroup.ComputeNodeGroupConfig",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroupConfig",
 		reflect.TypeOf((*ComputeNodeGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeNodeGroup.ComputeNodeGroupMaintenanceWindow",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroupMaintenanceWindow",
 		reflect.TypeOf((*ComputeNodeGroupMaintenanceWindow)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeNodeGroup.ComputeNodeGroupMaintenanceWindowOutputReference",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroupMaintenanceWindowOutputReference",
 		reflect.TypeOf((*ComputeNodeGroupMaintenanceWindowOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -183,11 +183,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeNodeGroup.ComputeNodeGroupShareSettings",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroupShareSettings",
 		reflect.TypeOf((*ComputeNodeGroupShareSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeNodeGroup.ComputeNodeGroupShareSettingsOutputReference",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroupShareSettingsOutputReference",
 		reflect.TypeOf((*ComputeNodeGroupShareSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -225,11 +225,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeNodeGroup.ComputeNodeGroupShareSettingsProjectMap",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroupShareSettingsProjectMap",
 		reflect.TypeOf((*ComputeNodeGroupShareSettingsProjectMap)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeNodeGroup.ComputeNodeGroupShareSettingsProjectMapList",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroupShareSettingsProjectMapList",
 		reflect.TypeOf((*ComputeNodeGroupShareSettingsProjectMapList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -250,7 +250,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeNodeGroup.ComputeNodeGroupShareSettingsProjectMapOutputReference",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroupShareSettingsProjectMapOutputReference",
 		reflect.TypeOf((*ComputeNodeGroupShareSettingsProjectMapOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -286,11 +286,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeNodeGroup.ComputeNodeGroupTimeouts",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroupTimeouts",
 		reflect.TypeOf((*ComputeNodeGroupTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeNodeGroup.ComputeNodeGroupTimeoutsOutputReference",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroupTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeNodeGroupTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

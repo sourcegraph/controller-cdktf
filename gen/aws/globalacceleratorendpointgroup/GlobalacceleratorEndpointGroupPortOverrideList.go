@@ -116,7 +116,7 @@ func NewGlobalacceleratorEndpointGroupPortOverrideList(terraformResource cdktf.I
 	j := jsiiProxy_GlobalacceleratorEndpointGroupPortOverrideList{}
 
 	_jsii_.Create(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupPortOverrideList",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupPortOverrideList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGlobalacceleratorEndpointGroupPortOverrideList_Override(g Globalaccelera
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupPortOverrideList",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupPortOverrideList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

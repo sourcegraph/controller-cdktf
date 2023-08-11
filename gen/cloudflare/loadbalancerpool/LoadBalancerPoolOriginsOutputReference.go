@@ -274,7 +274,7 @@ func NewLoadBalancerPoolOriginsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_LoadBalancerPoolOriginsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancerPool.LoadBalancerPoolOriginsOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -286,7 +286,7 @@ func NewLoadBalancerPoolOriginsOutputReference_Override(l LoadBalancerPoolOrigin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancerPool.LoadBalancerPoolOriginsOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

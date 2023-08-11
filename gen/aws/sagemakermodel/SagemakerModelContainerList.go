@@ -116,7 +116,7 @@ func NewSagemakerModelContainerList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_SagemakerModelContainerList{}
 
 	_jsii_.Create(
-		"aws.sagemakerModel.SagemakerModelContainerList",
+		"@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSagemakerModelContainerList_Override(s SagemakerModelContainerList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerModel.SagemakerModelContainerList",
+		"@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

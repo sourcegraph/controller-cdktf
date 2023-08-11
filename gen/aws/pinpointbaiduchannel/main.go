@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.pinpointBaiduChannel.PinpointBaiduChannel",
+		"@cdktf/provider-aws.pinpointBaiduChannel.PinpointBaiduChannel",
 		reflect.TypeOf((*PinpointBaiduChannel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.pinpointBaiduChannel.PinpointBaiduChannelConfig",
+		"@cdktf/provider-aws.pinpointBaiduChannel.PinpointBaiduChannelConfig",
 		reflect.TypeOf((*PinpointBaiduChannelConfig)(nil)).Elem(),
 	)
 }

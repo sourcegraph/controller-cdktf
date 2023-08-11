@@ -203,7 +203,7 @@ func NewGoogleComputeInstanceServiceAccountOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleComputeInstanceServiceAccountOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceServiceAccountOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceServiceAccountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleComputeInstanceServiceAccountOutputReference_Override(g GoogleComp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceServiceAccountOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceServiceAccountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

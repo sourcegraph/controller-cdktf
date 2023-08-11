@@ -179,7 +179,7 @@ func NewContainerClusterDefaultSnatStatusOutputReference(terraformResource cdktf
 	j := jsiiProxy_ContainerClusterDefaultSnatStatusOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterDefaultSnatStatusOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterDefaultSnatStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewContainerClusterDefaultSnatStatusOutputReference_Override(c ContainerClu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterDefaultSnatStatusOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterDefaultSnatStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

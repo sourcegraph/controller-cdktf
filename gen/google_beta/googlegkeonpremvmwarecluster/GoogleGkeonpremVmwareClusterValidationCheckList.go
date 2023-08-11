@@ -104,7 +104,7 @@ func NewGoogleGkeonpremVmwareClusterValidationCheckList(terraformResource cdktf.
 	j := jsiiProxy_GoogleGkeonpremVmwareClusterValidationCheckList{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterValidationCheckList",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterValidationCheckList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleGkeonpremVmwareClusterValidationCheckList_Override(g GoogleGkeonpr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterValidationCheckList",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterValidationCheckList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

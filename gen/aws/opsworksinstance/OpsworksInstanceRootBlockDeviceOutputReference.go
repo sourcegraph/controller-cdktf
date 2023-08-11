@@ -252,7 +252,7 @@ func NewOpsworksInstanceRootBlockDeviceOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_OpsworksInstanceRootBlockDeviceOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksInstance.OpsworksInstanceRootBlockDeviceOutputReference",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceRootBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewOpsworksInstanceRootBlockDeviceOutputReference_Override(o OpsworksInstan
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksInstance.OpsworksInstanceRootBlockDeviceOutputReference",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceRootBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)

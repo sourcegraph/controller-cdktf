@@ -303,7 +303,7 @@ func NewDataAwsEc2SerialConsoleAccess(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataAwsEc2SerialConsoleAccess{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess",
+		"@cdktf/provider-aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -316,7 +316,7 @@ func NewDataAwsEc2SerialConsoleAccess_Override(d DataAwsEc2SerialConsoleAccess, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess",
+		"@cdktf/provider-aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -405,7 +405,7 @@ func DataAwsEc2SerialConsoleAccess_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess",
+		"@cdktf/provider-aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -424,7 +424,7 @@ func DataAwsEc2SerialConsoleAccess_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess",
+		"@cdktf/provider-aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -443,7 +443,7 @@ func DataAwsEc2SerialConsoleAccess_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess",
+		"@cdktf/provider-aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -456,7 +456,7 @@ func DataAwsEc2SerialConsoleAccess_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess",
+		"@cdktf/provider-aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess",
 		"tfResourceType",
 		&returns,
 	)

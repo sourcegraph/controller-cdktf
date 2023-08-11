@@ -471,7 +471,7 @@ func NewLocationRouteCalculator(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_LocationRouteCalculator{}
 
 	_jsii_.Create(
-		"aws.locationRouteCalculator.LocationRouteCalculator",
+		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculator",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -484,7 +484,7 @@ func NewLocationRouteCalculator_Override(l LocationRouteCalculator, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.locationRouteCalculator.LocationRouteCalculator",
+		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculator",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -650,7 +650,7 @@ func LocationRouteCalculator_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.locationRouteCalculator.LocationRouteCalculator",
+		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculator",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func LocationRouteCalculator_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.locationRouteCalculator.LocationRouteCalculator",
+		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculator",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func LocationRouteCalculator_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.locationRouteCalculator.LocationRouteCalculator",
+		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculator",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func LocationRouteCalculator_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.locationRouteCalculator.LocationRouteCalculator",
+		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculator",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.dataTfeVariables.DataTfeVariables",
+		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariables",
 		reflect.TypeOf((*DataTfeVariables)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,15 +62,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.dataTfeVariables.DataTfeVariablesConfig",
+		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesConfig",
 		reflect.TypeOf((*DataTfeVariablesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"tfe.dataTfeVariables.DataTfeVariablesEnv",
+		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesEnv",
 		reflect.TypeOf((*DataTfeVariablesEnv)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"tfe.dataTfeVariables.DataTfeVariablesEnvList",
+		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesEnvList",
 		reflect.TypeOf((*DataTfeVariablesEnvList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -90,7 +90,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"tfe.dataTfeVariables.DataTfeVariablesEnvOutputReference",
+		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesEnvOutputReference",
 		reflect.TypeOf((*DataTfeVariablesEnvOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "category", GoGetter: "Category"},
@@ -128,11 +128,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.dataTfeVariables.DataTfeVariablesTerraform",
+		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesTerraform",
 		reflect.TypeOf((*DataTfeVariablesTerraform)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"tfe.dataTfeVariables.DataTfeVariablesTerraformList",
+		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesTerraformList",
 		reflect.TypeOf((*DataTfeVariablesTerraformList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -152,7 +152,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"tfe.dataTfeVariables.DataTfeVariablesTerraformOutputReference",
+		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesTerraformOutputReference",
 		reflect.TypeOf((*DataTfeVariablesTerraformOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "category", GoGetter: "Category"},
@@ -190,11 +190,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.dataTfeVariables.DataTfeVariablesVariables",
+		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesVariables",
 		reflect.TypeOf((*DataTfeVariablesVariables)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"tfe.dataTfeVariables.DataTfeVariablesVariablesList",
+		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesVariablesList",
 		reflect.TypeOf((*DataTfeVariablesVariablesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -214,7 +214,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"tfe.dataTfeVariables.DataTfeVariablesVariablesOutputReference",
+		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesVariablesOutputReference",
 		reflect.TypeOf((*DataTfeVariablesVariablesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "category", GoGetter: "Category"},

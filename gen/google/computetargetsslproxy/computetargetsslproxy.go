@@ -543,7 +543,7 @@ func NewComputeTargetSslProxy(scope constructs.Construct, id *string, config *Co
 	j := jsiiProxy_ComputeTargetSslProxy{}
 
 	_jsii_.Create(
-		"google.computeTargetSslProxy.ComputeTargetSslProxy",
+		"@cdktf/provider-google.computeTargetSslProxy.ComputeTargetSslProxy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -556,7 +556,7 @@ func NewComputeTargetSslProxy_Override(c ComputeTargetSslProxy, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeTargetSslProxy.ComputeTargetSslProxy",
+		"@cdktf/provider-google.computeTargetSslProxy.ComputeTargetSslProxy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -755,7 +755,7 @@ func ComputeTargetSslProxy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeTargetSslProxy.ComputeTargetSslProxy",
+		"@cdktf/provider-google.computeTargetSslProxy.ComputeTargetSslProxy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -774,7 +774,7 @@ func ComputeTargetSslProxy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeTargetSslProxy.ComputeTargetSslProxy",
+		"@cdktf/provider-google.computeTargetSslProxy.ComputeTargetSslProxy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -793,7 +793,7 @@ func ComputeTargetSslProxy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeTargetSslProxy.ComputeTargetSslProxy",
+		"@cdktf/provider-google.computeTargetSslProxy.ComputeTargetSslProxy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -806,7 +806,7 @@ func ComputeTargetSslProxy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeTargetSslProxy.ComputeTargetSslProxy",
+		"@cdktf/provider-google.computeTargetSslProxy.ComputeTargetSslProxy",
 		"tfResourceType",
 		&returns,
 	)

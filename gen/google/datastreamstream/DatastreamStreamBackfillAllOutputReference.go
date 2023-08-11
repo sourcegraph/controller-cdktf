@@ -228,7 +228,7 @@ func NewDatastreamStreamBackfillAllOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_DatastreamStreamBackfillAllOutputReference{}
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamBackfillAllOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDatastreamStreamBackfillAllOutputReference_Override(d DatastreamStreamBa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamBackfillAllOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

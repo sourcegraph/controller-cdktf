@@ -347,7 +347,7 @@ func NewGoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference(terraf
 	j := jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -359,7 +359,7 @@ func NewGoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

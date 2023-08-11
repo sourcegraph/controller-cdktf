@@ -337,7 +337,7 @@ func NewDataGoogleSqlCaCerts(scope constructs.Construct, id *string, config *Dat
 	j := jsiiProxy_DataGoogleSqlCaCerts{}
 
 	_jsii_.Create(
-		"google.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts",
+		"@cdktf/provider-google.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -350,7 +350,7 @@ func NewDataGoogleSqlCaCerts_Override(d DataGoogleSqlCaCerts, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts",
+		"@cdktf/provider-google.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -461,7 +461,7 @@ func DataGoogleSqlCaCerts_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts",
+		"@cdktf/provider-google.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataGoogleSqlCaCerts_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts",
+		"@cdktf/provider-google.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataGoogleSqlCaCerts_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts",
+		"@cdktf/provider-google.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataGoogleSqlCaCerts_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts",
+		"@cdktf/provider-google.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts",
 		"tfResourceType",
 		&returns,
 	)

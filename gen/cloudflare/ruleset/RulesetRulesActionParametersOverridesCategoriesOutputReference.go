@@ -228,7 +228,7 @@ func NewRulesetRulesActionParametersOverridesCategoriesOutputReference(terraform
 	j := jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesOutputReference",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewRulesetRulesActionParametersOverridesCategoriesOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesOutputReference",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesCategoriesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

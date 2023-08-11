@@ -116,7 +116,7 @@ func NewGoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers
 	j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersList{}
 
 	_jsii_.Create(
-		"google-beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersList",
+		"@cdktf/provider-google-beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersList",
+		"@cdktf/provider-google-beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

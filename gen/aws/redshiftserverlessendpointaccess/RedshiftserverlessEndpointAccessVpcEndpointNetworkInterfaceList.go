@@ -104,7 +104,7 @@ func NewRedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceList(terrafor
 	j := jsiiProxy_RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceList{}
 
 	_jsii_.Create(
-		"aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceList",
+		"@cdktf/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewRedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceList",
+		"@cdktf/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

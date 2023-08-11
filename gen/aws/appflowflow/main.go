@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlow",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlow",
 		reflect.TypeOf((*AppflowFlow)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,27 +82,27 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowConfig",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowConfig",
 		reflect.TypeOf((*AppflowFlowConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfig",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorProperties",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorProperties",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorProperties)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnector",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnector",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnector)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -143,7 +143,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -190,11 +190,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfilesOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfilesOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfilesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -231,15 +231,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridge",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridge",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridge)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -280,7 +280,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -318,15 +318,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycode",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycode",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycode)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -367,7 +367,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -405,11 +405,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetrics",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetrics",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetrics)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetricsOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetricsOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetricsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -441,15 +441,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketo",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketo",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketo)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -490,7 +490,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -528,7 +528,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -612,15 +612,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshift",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshift",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshift)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -661,7 +661,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketPrefix", GoGetter: "BucketPrefix"},
@@ -704,11 +704,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3OutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3OutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -749,15 +749,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfigOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregationType", GoGetter: "AggregationType"},
@@ -792,7 +792,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregationConfig", GoGetter: "AggregationConfig"},
@@ -835,11 +835,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfigOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -877,15 +877,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforce",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforce",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforce)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -926,7 +926,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -970,15 +970,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoData",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoData",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoData)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -1019,7 +1019,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1067,11 +1067,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfigOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -1109,15 +1109,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflake",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflake",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflake)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -1158,7 +1158,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketPrefix", GoGetter: "BucketPrefix"},
@@ -1201,11 +1201,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolver",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolver",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolver)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -1245,15 +1245,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfigOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregationType", GoGetter: "AggregationType"},
@@ -1288,7 +1288,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregationConfig", GoGetter: "AggregationConfig"},
@@ -1330,11 +1330,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfigOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1371,15 +1371,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendesk",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendesk",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendesk)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -1420,7 +1420,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1464,7 +1464,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigList",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigList",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1485,7 +1485,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference",
 		reflect.TypeOf((*AppflowFlowDestinationFlowConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
@@ -1528,15 +1528,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfig",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfig",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigIncrementalPullConfig",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigIncrementalPullConfig",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigIncrementalPullConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigIncrementalPullConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigIncrementalPullConfigOutputReference",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigIncrementalPullConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1571,7 +1571,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigOutputReference",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
@@ -1618,15 +1618,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorProperties",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorProperties",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorProperties)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitude",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitude",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitude)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitudeOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitudeOutputReference",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitudeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1660,11 +1660,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnector",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnector",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorOutputReference",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1701,11 +1701,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadog",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadog",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadog)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadogOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadogOutputReference",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadogOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1739,11 +1739,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatrace",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatrace",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatrace)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatraceOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatraceOutputReference",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatraceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1777,11 +1777,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsOutputReference",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1815,11 +1815,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexus",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexus",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexusOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexusOutputReference",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1853,11 +1853,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketo",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketo",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketoOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketoOutputReference",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1891,7 +1891,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesOutputReference",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "amplitude", GoGetter: "Amplitude"},
@@ -1987,11 +1987,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3OutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3OutputReference",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -2032,11 +2032,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfigOutputReference",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2071,11 +2071,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2115,11 +2115,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoData",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoData",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoData)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2153,11 +2153,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNow",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNow",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNow)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNowOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNowOutputReference",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNowOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2191,11 +2191,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingular",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingular",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingular)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingularOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingularOutputReference",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingularOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2229,11 +2229,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlack",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlack",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlack)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlackOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlackOutputReference",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlackOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2267,11 +2267,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicro",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicro",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicro)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicroOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicroOutputReference",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicroOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2305,11 +2305,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2355,11 +2355,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendesk",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendesk",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendesk)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendeskOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendeskOutputReference",
 		reflect.TypeOf((*AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendeskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2393,15 +2393,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowTask",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowTask",
 		reflect.TypeOf((*AppflowFlowTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowTaskConnectorOperator",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator",
 		reflect.TypeOf((*AppflowFlowTaskConnectorOperator)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowTaskConnectorOperatorList",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorList",
 		reflect.TypeOf((*AppflowFlowTaskConnectorOperatorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2422,7 +2422,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference",
 		reflect.TypeOf((*AppflowFlowTaskConnectorOperatorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "amplitude", GoGetter: "Amplitude"},
@@ -2502,7 +2502,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowTaskList",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowTaskList",
 		reflect.TypeOf((*AppflowFlowTaskList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2523,7 +2523,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowTaskOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference",
 		reflect.TypeOf((*AppflowFlowTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2569,11 +2569,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowTriggerConfig",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfig",
 		reflect.TypeOf((*AppflowFlowTriggerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowTriggerConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigOutputReference",
 		reflect.TypeOf((*AppflowFlowTriggerConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2611,11 +2611,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowTriggerConfigTriggerProperties",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerProperties",
 		reflect.TypeOf((*AppflowFlowTriggerConfigTriggerProperties)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesOutputReference",
 		reflect.TypeOf((*AppflowFlowTriggerConfigTriggerPropertiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2651,11 +2651,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduled",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduled",
 		reflect.TypeOf((*AppflowFlowTriggerConfigTriggerPropertiesScheduled)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduledOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduledOutputReference",
 		reflect.TypeOf((*AppflowFlowTriggerConfigTriggerPropertiesScheduledOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

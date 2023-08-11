@@ -228,7 +228,7 @@ func NewEcsServiceTimeoutsOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_EcsServiceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServiceTimeoutsOutputReference",
+		"@cdktf/provider-aws.ecsService.EcsServiceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewEcsServiceTimeoutsOutputReference_Override(e EcsServiceTimeoutsOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServiceTimeoutsOutputReference",
+		"@cdktf/provider-aws.ecsService.EcsServiceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

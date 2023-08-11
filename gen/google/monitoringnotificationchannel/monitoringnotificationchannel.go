@@ -557,7 +557,7 @@ func NewMonitoringNotificationChannel(scope constructs.Construct, id *string, co
 	j := jsiiProxy_MonitoringNotificationChannel{}
 
 	_jsii_.Create(
-		"google.monitoringNotificationChannel.MonitoringNotificationChannel",
+		"@cdktf/provider-google.monitoringNotificationChannel.MonitoringNotificationChannel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -570,7 +570,7 @@ func NewMonitoringNotificationChannel_Override(m MonitoringNotificationChannel, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringNotificationChannel.MonitoringNotificationChannel",
+		"@cdktf/provider-google.monitoringNotificationChannel.MonitoringNotificationChannel",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -769,7 +769,7 @@ func MonitoringNotificationChannel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringNotificationChannel.MonitoringNotificationChannel",
+		"@cdktf/provider-google.monitoringNotificationChannel.MonitoringNotificationChannel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -788,7 +788,7 @@ func MonitoringNotificationChannel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringNotificationChannel.MonitoringNotificationChannel",
+		"@cdktf/provider-google.monitoringNotificationChannel.MonitoringNotificationChannel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -807,7 +807,7 @@ func MonitoringNotificationChannel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringNotificationChannel.MonitoringNotificationChannel",
+		"@cdktf/provider-google.monitoringNotificationChannel.MonitoringNotificationChannel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -820,7 +820,7 @@ func MonitoringNotificationChannel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.monitoringNotificationChannel.MonitoringNotificationChannel",
+		"@cdktf/provider-google.monitoringNotificationChannel.MonitoringNotificationChannel",
 		"tfResourceType",
 		&returns,
 	)

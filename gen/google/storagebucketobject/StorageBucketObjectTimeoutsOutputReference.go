@@ -228,7 +228,7 @@ func NewStorageBucketObjectTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_StorageBucketObjectTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.storageBucketObject.StorageBucketObjectTimeoutsOutputReference",
+		"@cdktf/provider-google.storageBucketObject.StorageBucketObjectTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewStorageBucketObjectTimeoutsOutputReference_Override(s StorageBucketObjec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageBucketObject.StorageBucketObjectTimeoutsOutputReference",
+		"@cdktf/provider-google.storageBucketObject.StorageBucketObjectTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

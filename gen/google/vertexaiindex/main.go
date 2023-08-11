@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.vertexAiIndex.VertexAiIndex",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndex",
 		reflect.TypeOf((*VertexAiIndex)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,15 +87,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiIndex.VertexAiIndexConfig",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexConfig",
 		reflect.TypeOf((*VertexAiIndexConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiIndex.VertexAiIndexDeployedIndexes",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexDeployedIndexes",
 		reflect.TypeOf((*VertexAiIndexDeployedIndexes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.vertexAiIndex.VertexAiIndexDeployedIndexesList",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexDeployedIndexesList",
 		reflect.TypeOf((*VertexAiIndexDeployedIndexesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.vertexAiIndex.VertexAiIndexDeployedIndexesOutputReference",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexDeployedIndexesOutputReference",
 		reflect.TypeOf((*VertexAiIndexDeployedIndexesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -149,11 +149,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiIndex.VertexAiIndexIndexStats",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexIndexStats",
 		reflect.TypeOf((*VertexAiIndexIndexStats)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.vertexAiIndex.VertexAiIndexIndexStatsList",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexIndexStatsList",
 		reflect.TypeOf((*VertexAiIndexIndexStatsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -173,7 +173,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.vertexAiIndex.VertexAiIndexIndexStatsOutputReference",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexIndexStatsOutputReference",
 		reflect.TypeOf((*VertexAiIndexIndexStatsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -207,23 +207,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiIndex.VertexAiIndexMetadata",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadata",
 		reflect.TypeOf((*VertexAiIndexMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiIndex.VertexAiIndexMetadataConfig",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataConfig",
 		reflect.TypeOf((*VertexAiIndexMetadataConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfig",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfig",
 		reflect.TypeOf((*VertexAiIndexMetadataConfigAlgorithmConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig",
 		reflect.TypeOf((*VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference",
 		reflect.TypeOf((*VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -255,7 +255,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigOutputReference",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigOutputReference",
 		reflect.TypeOf((*VertexAiIndexMetadataConfigAlgorithmConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bruteForceConfig", GoGetter: "BruteForceConfig"},
@@ -295,11 +295,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig",
 		reflect.TypeOf((*VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference",
 		reflect.TypeOf((*VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -337,7 +337,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.vertexAiIndex.VertexAiIndexMetadataConfigOutputReference",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigOutputReference",
 		reflect.TypeOf((*VertexAiIndexMetadataConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithmConfig", GoGetter: "AlgorithmConfig"},
@@ -384,7 +384,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.vertexAiIndex.VertexAiIndexMetadataOutputReference",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference",
 		reflect.TypeOf((*VertexAiIndexMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -426,11 +426,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiIndex.VertexAiIndexTimeouts",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexTimeouts",
 		reflect.TypeOf((*VertexAiIndexTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.vertexAiIndex.VertexAiIndexTimeoutsOutputReference",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexTimeoutsOutputReference",
 		reflect.TypeOf((*VertexAiIndexTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

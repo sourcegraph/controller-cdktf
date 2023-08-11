@@ -227,7 +227,7 @@ func NewLoggingMetricMetricDescriptorLabelsOutputReference(terraformResource cdk
 	j := jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference{}
 
 	_jsii_.Create(
-		"google.loggingMetric.LoggingMetricMetricDescriptorLabelsOutputReference",
+		"@cdktf/provider-google.loggingMetric.LoggingMetricMetricDescriptorLabelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewLoggingMetricMetricDescriptorLabelsOutputReference_Override(l LoggingMet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingMetric.LoggingMetricMetricDescriptorLabelsOutputReference",
+		"@cdktf/provider-google.loggingMetric.LoggingMetricMetricDescriptorLabelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

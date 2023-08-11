@@ -226,7 +226,7 @@ func NewGoogleCloudfunctions2FunctionIamBindingConditionOutputReference(terrafor
 	j := jsiiProxy_GoogleCloudfunctions2FunctionIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleCloudfunctions2FunctionIamBindingConditionOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

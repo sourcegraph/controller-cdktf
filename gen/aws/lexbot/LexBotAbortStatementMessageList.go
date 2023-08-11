@@ -116,7 +116,7 @@ func NewLexBotAbortStatementMessageList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_LexBotAbortStatementMessageList{}
 
 	_jsii_.Create(
-		"aws.lexBot.LexBotAbortStatementMessageList",
+		"@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLexBotAbortStatementMessageList_Override(l LexBotAbortStatementMessageLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexBot.LexBotAbortStatementMessageList",
+		"@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

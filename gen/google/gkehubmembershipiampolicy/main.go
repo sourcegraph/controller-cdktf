@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.gkeHubMembershipIamPolicy.GkeHubMembershipIamPolicy",
+		"@cdktf/provider-google.gkeHubMembershipIamPolicy.GkeHubMembershipIamPolicy",
 		reflect.TypeOf((*GkeHubMembershipIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gkeHubMembershipIamPolicy.GkeHubMembershipIamPolicyConfig",
+		"@cdktf/provider-google.gkeHubMembershipIamPolicy.GkeHubMembershipIamPolicyConfig",
 		reflect.TypeOf((*GkeHubMembershipIamPolicyConfig)(nil)).Elem(),
 	)
 }

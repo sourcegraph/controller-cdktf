@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lbCookieStickinessPolicy.LbCookieStickinessPolicy",
+		"@cdktf/provider-aws.lbCookieStickinessPolicy.LbCookieStickinessPolicy",
 		reflect.TypeOf((*LbCookieStickinessPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lbCookieStickinessPolicy.LbCookieStickinessPolicyConfig",
+		"@cdktf/provider-aws.lbCookieStickinessPolicy.LbCookieStickinessPolicyConfig",
 		reflect.TypeOf((*LbCookieStickinessPolicyConfig)(nil)).Elem(),
 	)
 }

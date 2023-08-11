@@ -180,7 +180,7 @@ func NewClusterRoleV1AggregationRuleOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_ClusterRoleV1AggregationRuleOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.clusterRoleV1.ClusterRoleV1AggregationRuleOutputReference",
+		"@cdktf/provider-kubernetes.clusterRoleV1.ClusterRoleV1AggregationRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewClusterRoleV1AggregationRuleOutputReference_Override(c ClusterRoleV1Aggr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.clusterRoleV1.ClusterRoleV1AggregationRuleOutputReference",
+		"@cdktf/provider-kubernetes.clusterRoleV1.ClusterRoleV1AggregationRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

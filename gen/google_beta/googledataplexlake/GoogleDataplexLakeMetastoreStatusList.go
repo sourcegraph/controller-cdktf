@@ -104,7 +104,7 @@ func NewGoogleDataplexLakeMetastoreStatusList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_GoogleDataplexLakeMetastoreStatusList{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexLake.GoogleDataplexLakeMetastoreStatusList",
+		"@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeMetastoreStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleDataplexLakeMetastoreStatusList_Override(g GoogleDataplexLakeMetas
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexLake.GoogleDataplexLakeMetastoreStatusList",
+		"@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeMetastoreStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

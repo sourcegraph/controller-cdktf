@@ -179,7 +179,7 @@ func NewWafWebAclRulesActionOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_WafWebAclRulesActionOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafWebAcl.WafWebAclRulesActionOutputReference",
+		"@cdktf/provider-aws.wafWebAcl.WafWebAclRulesActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewWafWebAclRulesActionOutputReference_Override(w WafWebAclRulesActionOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafWebAcl.WafWebAclRulesActionOutputReference",
+		"@cdktf/provider-aws.wafWebAcl.WafWebAclRulesActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

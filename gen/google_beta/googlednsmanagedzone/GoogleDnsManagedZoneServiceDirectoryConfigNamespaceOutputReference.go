@@ -179,7 +179,7 @@ func NewGoogleDnsManagedZoneServiceDirectoryConfigNamespaceOutputReference(terra
 	j := jsiiProxy_GoogleDnsManagedZoneServiceDirectoryConfigNamespaceOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneServiceDirectoryConfigNamespaceOutputReference",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneServiceDirectoryConfigNamespaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleDnsManagedZoneServiceDirectoryConfigNamespaceOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneServiceDirectoryConfigNamespaceOutputReference",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneServiceDirectoryConfigNamespaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.organizationIamAuditConfig.OrganizationIamAuditConfig",
+		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig",
 		reflect.TypeOf((*OrganizationIamAuditConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,11 +63,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfig",
+		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfig",
 		reflect.TypeOf((*OrganizationIamAuditConfigAuditLogConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigList",
+		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigList",
 		reflect.TypeOf((*OrganizationIamAuditConfigAuditLogConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -88,7 +88,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference",
+		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference",
 		reflect.TypeOf((*OrganizationIamAuditConfigAuditLogConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -125,7 +125,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.organizationIamAuditConfig.OrganizationIamAuditConfigConfig",
+		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigConfig",
 		reflect.TypeOf((*OrganizationIamAuditConfigConfig)(nil)).Elem(),
 	)
 }

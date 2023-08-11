@@ -676,7 +676,7 @@ func NewSsmDocument(scope constructs.Construct, id *string, config *SsmDocumentC
 	j := jsiiProxy_SsmDocument{}
 
 	_jsii_.Create(
-		"aws.ssmDocument.SsmDocument",
+		"@cdktf/provider-aws.ssmDocument.SsmDocument",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -689,7 +689,7 @@ func NewSsmDocument_Override(s SsmDocument, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmDocument.SsmDocument",
+		"@cdktf/provider-aws.ssmDocument.SsmDocument",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -899,7 +899,7 @@ func SsmDocument_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmDocument.SsmDocument",
+		"@cdktf/provider-aws.ssmDocument.SsmDocument",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -918,7 +918,7 @@ func SsmDocument_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmDocument.SsmDocument",
+		"@cdktf/provider-aws.ssmDocument.SsmDocument",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -937,7 +937,7 @@ func SsmDocument_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmDocument.SsmDocument",
+		"@cdktf/provider-aws.ssmDocument.SsmDocument",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -950,7 +950,7 @@ func SsmDocument_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ssmDocument.SsmDocument",
+		"@cdktf/provider-aws.ssmDocument.SsmDocument",
 		"tfResourceType",
 		&returns,
 	)

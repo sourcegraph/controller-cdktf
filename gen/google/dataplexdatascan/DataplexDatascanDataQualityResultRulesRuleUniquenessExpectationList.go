@@ -104,7 +104,7 @@ func NewDataplexDatascanDataQualityResultRulesRuleUniquenessExpectationList(terr
 	j := jsiiProxy_DataplexDatascanDataQualityResultRulesRuleUniquenessExpectationList{}
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataQualityResultRulesRuleUniquenessExpectationList",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualityResultRulesRuleUniquenessExpectationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataplexDatascanDataQualityResultRulesRuleUniquenessExpectationList_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataQualityResultRulesRuleUniquenessExpectationList",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualityResultRulesRuleUniquenessExpectationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.policySet.PolicySet",
+		"@cdktf/provider-tfe.policySet.PolicySet",
 		reflect.TypeOf((*PolicySet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,15 +88,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.policySet.PolicySetConfig",
+		"@cdktf/provider-tfe.policySet.PolicySetConfig",
 		reflect.TypeOf((*PolicySetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"tfe.policySet.PolicySetVcsRepo",
+		"@cdktf/provider-tfe.policySet.PolicySetVcsRepo",
 		reflect.TypeOf((*PolicySetVcsRepo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"tfe.policySet.PolicySetVcsRepoOutputReference",
+		"@cdktf/provider-tfe.policySet.PolicySetVcsRepoOutputReference",
 		reflect.TypeOf((*PolicySetVcsRepoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},

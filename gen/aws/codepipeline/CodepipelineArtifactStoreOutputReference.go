@@ -250,7 +250,7 @@ func NewCodepipelineArtifactStoreOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_CodepipelineArtifactStoreOutputReference{}
 
 	_jsii_.Create(
-		"aws.codepipeline.CodepipelineArtifactStoreOutputReference",
+		"@cdktf/provider-aws.codepipeline.CodepipelineArtifactStoreOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewCodepipelineArtifactStoreOutputReference_Override(c CodepipelineArtifact
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codepipeline.CodepipelineArtifactStoreOutputReference",
+		"@cdktf/provider-aws.codepipeline.CodepipelineArtifactStoreOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

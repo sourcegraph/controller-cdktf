@@ -116,7 +116,7 @@ func NewDeploymentSpecTemplateSpecReadinessGateList(terraformResource cdktf.IInt
 	j := jsiiProxy_DeploymentSpecTemplateSpecReadinessGateList{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecReadinessGateList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecReadinessGateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDeploymentSpecTemplateSpecReadinessGateList_Override(d DeploymentSpecTem
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecReadinessGateList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecReadinessGateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -424,7 +424,7 @@ func NewGoogleContainerAnalysisNoteIamMember(scope constructs.Construct, id *str
 	j := jsiiProxy_GoogleContainerAnalysisNoteIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleContainerAnalysisNoteIamMember_Override(g GoogleContainerAnalysisN
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleContainerAnalysisNoteIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleContainerAnalysisNoteIamMember_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleContainerAnalysisNoteIamMember_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleContainerAnalysisNoteIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.appsyncApiKey.AppsyncApiKey",
+		"@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey",
 		reflect.TypeOf((*AppsyncApiKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appsyncApiKey.AppsyncApiKeyConfig",
+		"@cdktf/provider-aws.appsyncApiKey.AppsyncApiKeyConfig",
 		reflect.TypeOf((*AppsyncApiKeyConfig)(nil)).Elem(),
 	)
 }

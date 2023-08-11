@@ -180,7 +180,7 @@ func NewBatchJobDefinitionTimeoutOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_BatchJobDefinitionTimeoutOutputReference{}
 
 	_jsii_.Create(
-		"aws.batchJobDefinition.BatchJobDefinitionTimeoutOutputReference",
+		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionTimeoutOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewBatchJobDefinitionTimeoutOutputReference_Override(b BatchJobDefinitionTi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.batchJobDefinition.BatchJobDefinitionTimeoutOutputReference",
+		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionTimeoutOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

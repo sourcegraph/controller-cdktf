@@ -412,7 +412,7 @@ func NewIamSamlProvider(scope constructs.Construct, id *string, config *IamSamlP
 	j := jsiiProxy_IamSamlProvider{}
 
 	_jsii_.Create(
-		"aws.iamSamlProvider.IamSamlProvider",
+		"@cdktf/provider-aws.iamSamlProvider.IamSamlProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -425,7 +425,7 @@ func NewIamSamlProvider_Override(i IamSamlProvider, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iamSamlProvider.IamSamlProvider",
+		"@cdktf/provider-aws.iamSamlProvider.IamSamlProvider",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -580,7 +580,7 @@ func IamSamlProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamSamlProvider.IamSamlProvider",
+		"@cdktf/provider-aws.iamSamlProvider.IamSamlProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +599,7 @@ func IamSamlProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamSamlProvider.IamSamlProvider",
+		"@cdktf/provider-aws.iamSamlProvider.IamSamlProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -618,7 +618,7 @@ func IamSamlProvider_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamSamlProvider.IamSamlProvider",
+		"@cdktf/provider-aws.iamSamlProvider.IamSamlProvider",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func IamSamlProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iamSamlProvider.IamSamlProvider",
+		"@cdktf/provider-aws.iamSamlProvider.IamSamlProvider",
 		"tfResourceType",
 		&returns,
 	)

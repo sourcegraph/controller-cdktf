@@ -414,7 +414,7 @@ func NewLbListenerDefaultActionAuthenticateOidcOutputReference(terraformResource
 	j := jsiiProxy_LbListenerDefaultActionAuthenticateOidcOutputReference{}
 
 	_jsii_.Create(
-		"aws.lbListener.LbListenerDefaultActionAuthenticateOidcOutputReference",
+		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewLbListenerDefaultActionAuthenticateOidcOutputReference_Override(l LbList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbListener.LbListenerDefaultActionAuthenticateOidcOutputReference",
+		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

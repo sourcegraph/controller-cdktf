@@ -401,7 +401,7 @@ func NewCodeartifactDomainPermissionsPolicy(scope constructs.Construct, id *stri
 	j := jsiiProxy_CodeartifactDomainPermissionsPolicy{}
 
 	_jsii_.Create(
-		"aws.codeartifactDomainPermissionsPolicy.CodeartifactDomainPermissionsPolicy",
+		"@cdktf/provider-aws.codeartifactDomainPermissionsPolicy.CodeartifactDomainPermissionsPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewCodeartifactDomainPermissionsPolicy_Override(c CodeartifactDomainPermiss
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codeartifactDomainPermissionsPolicy.CodeartifactDomainPermissionsPolicy",
+		"@cdktf/provider-aws.codeartifactDomainPermissionsPolicy.CodeartifactDomainPermissionsPolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -569,7 +569,7 @@ func CodeartifactDomainPermissionsPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codeartifactDomainPermissionsPolicy.CodeartifactDomainPermissionsPolicy",
+		"@cdktf/provider-aws.codeartifactDomainPermissionsPolicy.CodeartifactDomainPermissionsPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func CodeartifactDomainPermissionsPolicy_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codeartifactDomainPermissionsPolicy.CodeartifactDomainPermissionsPolicy",
+		"@cdktf/provider-aws.codeartifactDomainPermissionsPolicy.CodeartifactDomainPermissionsPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func CodeartifactDomainPermissionsPolicy_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codeartifactDomainPermissionsPolicy.CodeartifactDomainPermissionsPolicy",
+		"@cdktf/provider-aws.codeartifactDomainPermissionsPolicy.CodeartifactDomainPermissionsPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func CodeartifactDomainPermissionsPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.codeartifactDomainPermissionsPolicy.CodeartifactDomainPermissionsPolicy",
+		"@cdktf/provider-aws.codeartifactDomainPermissionsPolicy.CodeartifactDomainPermissionsPolicy",
 		"tfResourceType",
 		&returns,
 	)

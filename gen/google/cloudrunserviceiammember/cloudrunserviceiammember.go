@@ -448,7 +448,7 @@ func NewCloudRunServiceIamMember(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_CloudRunServiceIamMember{}
 
 	_jsii_.Create(
-		"google.cloudRunServiceIamMember.CloudRunServiceIamMember",
+		"@cdktf/provider-google.cloudRunServiceIamMember.CloudRunServiceIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewCloudRunServiceIamMember_Override(c CloudRunServiceIamMember, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunServiceIamMember.CloudRunServiceIamMember",
+		"@cdktf/provider-google.cloudRunServiceIamMember.CloudRunServiceIamMember",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -627,7 +627,7 @@ func CloudRunServiceIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunServiceIamMember.CloudRunServiceIamMember",
+		"@cdktf/provider-google.cloudRunServiceIamMember.CloudRunServiceIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func CloudRunServiceIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunServiceIamMember.CloudRunServiceIamMember",
+		"@cdktf/provider-google.cloudRunServiceIamMember.CloudRunServiceIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func CloudRunServiceIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunServiceIamMember.CloudRunServiceIamMember",
+		"@cdktf/provider-google.cloudRunServiceIamMember.CloudRunServiceIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func CloudRunServiceIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudRunServiceIamMember.CloudRunServiceIamMember",
+		"@cdktf/provider-google.cloudRunServiceIamMember.CloudRunServiceIamMember",
 		"tfResourceType",
 		&returns,
 	)

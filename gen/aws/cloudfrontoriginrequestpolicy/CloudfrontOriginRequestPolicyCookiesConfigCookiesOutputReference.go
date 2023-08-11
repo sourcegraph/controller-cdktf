@@ -180,7 +180,7 @@ func NewCloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference(terrafo
 	j := jsiiProxy_CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference",
+		"@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewCloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference",
+		"@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

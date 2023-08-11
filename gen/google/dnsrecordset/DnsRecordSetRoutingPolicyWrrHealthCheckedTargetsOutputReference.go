@@ -179,7 +179,7 @@ func NewDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference(terrafor
 	j := jsiiProxy_DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference{}
 
 	_jsii_.Create(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

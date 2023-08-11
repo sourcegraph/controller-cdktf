@@ -401,7 +401,7 @@ func NewIapTunnelIamMember(scope constructs.Construct, id *string, config *IapTu
 	j := jsiiProxy_IapTunnelIamMember{}
 
 	_jsii_.Create(
-		"google.iapTunnelIamMember.IapTunnelIamMember",
+		"@cdktf/provider-google.iapTunnelIamMember.IapTunnelIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewIapTunnelIamMember_Override(i IapTunnelIamMember, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapTunnelIamMember.IapTunnelIamMember",
+		"@cdktf/provider-google.iapTunnelIamMember.IapTunnelIamMember",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -558,7 +558,7 @@ func IapTunnelIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapTunnelIamMember.IapTunnelIamMember",
+		"@cdktf/provider-google.iapTunnelIamMember.IapTunnelIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func IapTunnelIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapTunnelIamMember.IapTunnelIamMember",
+		"@cdktf/provider-google.iapTunnelIamMember.IapTunnelIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func IapTunnelIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapTunnelIamMember.IapTunnelIamMember",
+		"@cdktf/provider-google.iapTunnelIamMember.IapTunnelIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func IapTunnelIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.iapTunnelIamMember.IapTunnelIamMember",
+		"@cdktf/provider-google.iapTunnelIamMember.IapTunnelIamMember",
 		"tfResourceType",
 		&returns,
 	)

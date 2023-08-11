@@ -642,7 +642,7 @@ func NewEbsVolume(scope constructs.Construct, id *string, config *EbsVolumeConfi
 	j := jsiiProxy_EbsVolume{}
 
 	_jsii_.Create(
-		"aws.ebsVolume.EbsVolume",
+		"@cdktf/provider-aws.ebsVolume.EbsVolume",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -655,7 +655,7 @@ func NewEbsVolume_Override(e EbsVolume, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ebsVolume.EbsVolume",
+		"@cdktf/provider-aws.ebsVolume.EbsVolume",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -909,7 +909,7 @@ func EbsVolume_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ebsVolume.EbsVolume",
+		"@cdktf/provider-aws.ebsVolume.EbsVolume",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -928,7 +928,7 @@ func EbsVolume_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ebsVolume.EbsVolume",
+		"@cdktf/provider-aws.ebsVolume.EbsVolume",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -947,7 +947,7 @@ func EbsVolume_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ebsVolume.EbsVolume",
+		"@cdktf/provider-aws.ebsVolume.EbsVolume",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -960,7 +960,7 @@ func EbsVolume_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ebsVolume.EbsVolume",
+		"@cdktf/provider-aws.ebsVolume.EbsVolume",
 		"tfResourceType",
 		&returns,
 	)

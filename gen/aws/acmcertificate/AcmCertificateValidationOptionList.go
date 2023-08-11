@@ -116,7 +116,7 @@ func NewAcmCertificateValidationOptionList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_AcmCertificateValidationOptionList{}
 
 	_jsii_.Create(
-		"aws.acmCertificate.AcmCertificateValidationOptionList",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificateValidationOptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAcmCertificateValidationOptionList_Override(a AcmCertificateValidationOp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.acmCertificate.AcmCertificateValidationOptionList",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificateValidationOptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

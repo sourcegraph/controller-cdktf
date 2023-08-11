@@ -413,7 +413,7 @@ func NewLoggingOrganizationExclusion(scope constructs.Construct, id *string, con
 	j := jsiiProxy_LoggingOrganizationExclusion{}
 
 	_jsii_.Create(
-		"google.loggingOrganizationExclusion.LoggingOrganizationExclusion",
+		"@cdktf/provider-google.loggingOrganizationExclusion.LoggingOrganizationExclusion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewLoggingOrganizationExclusion_Override(l LoggingOrganizationExclusion, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingOrganizationExclusion.LoggingOrganizationExclusion",
+		"@cdktf/provider-google.loggingOrganizationExclusion.LoggingOrganizationExclusion",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -592,7 +592,7 @@ func LoggingOrganizationExclusion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingOrganizationExclusion.LoggingOrganizationExclusion",
+		"@cdktf/provider-google.loggingOrganizationExclusion.LoggingOrganizationExclusion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func LoggingOrganizationExclusion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingOrganizationExclusion.LoggingOrganizationExclusion",
+		"@cdktf/provider-google.loggingOrganizationExclusion.LoggingOrganizationExclusion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func LoggingOrganizationExclusion_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingOrganizationExclusion.LoggingOrganizationExclusion",
+		"@cdktf/provider-google.loggingOrganizationExclusion.LoggingOrganizationExclusion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func LoggingOrganizationExclusion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.loggingOrganizationExclusion.LoggingOrganizationExclusion",
+		"@cdktf/provider-google.loggingOrganizationExclusion.LoggingOrganizationExclusion",
 		"tfResourceType",
 		&returns,
 	)

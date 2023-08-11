@@ -448,7 +448,7 @@ func NewGoogleDataCatalogTaxonomyIamMember(scope constructs.Construct, id *strin
 	j := jsiiProxy_GoogleDataCatalogTaxonomyIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogTaxonomyIamMember.GoogleDataCatalogTaxonomyIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomyIamMember.GoogleDataCatalogTaxonomyIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleDataCatalogTaxonomyIamMember_Override(g GoogleDataCatalogTaxonomyI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogTaxonomyIamMember.GoogleDataCatalogTaxonomyIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomyIamMember.GoogleDataCatalogTaxonomyIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleDataCatalogTaxonomyIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogTaxonomyIamMember.GoogleDataCatalogTaxonomyIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomyIamMember.GoogleDataCatalogTaxonomyIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleDataCatalogTaxonomyIamMember_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogTaxonomyIamMember.GoogleDataCatalogTaxonomyIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomyIamMember.GoogleDataCatalogTaxonomyIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleDataCatalogTaxonomyIamMember_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogTaxonomyIamMember.GoogleDataCatalogTaxonomyIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomyIamMember.GoogleDataCatalogTaxonomyIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleDataCatalogTaxonomyIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataCatalogTaxonomyIamMember.GoogleDataCatalogTaxonomyIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomyIamMember.GoogleDataCatalogTaxonomyIamMember",
 		"tfResourceType",
 		&returns,
 	)

@@ -179,7 +179,7 @@ func NewGoogleStorageTransferJobTransferSpecPosixDataSourceOutputReference(terra
 	j := jsiiProxy_GoogleStorageTransferJobTransferSpecPosixDataSourceOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecPosixDataSourceOutputReference",
+		"@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecPosixDataSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleStorageTransferJobTransferSpecPosixDataSourceOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecPosixDataSourceOutputReference",
+		"@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecPosixDataSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

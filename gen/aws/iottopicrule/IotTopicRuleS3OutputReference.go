@@ -249,7 +249,7 @@ func NewIotTopicRuleS3OutputReference(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_IotTopicRuleS3OutputReference{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleS3OutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -261,7 +261,7 @@ func NewIotTopicRuleS3OutputReference_Override(i IotTopicRuleS3OutputReference, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleS3OutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

@@ -228,7 +228,7 @@ func NewRulesetRulesActionParametersAutominifyOutputReference(terraformResource 
 	j := jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewRulesetRulesActionParametersAutominifyOutputReference_Override(r Ruleset
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

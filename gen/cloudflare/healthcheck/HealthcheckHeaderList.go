@@ -116,7 +116,7 @@ func NewHealthcheckHeaderList(terraformResource cdktf.IInterpolatingParent, terr
 	j := jsiiProxy_HealthcheckHeaderList{}
 
 	_jsii_.Create(
-		"cloudflare.healthcheck.HealthcheckHeaderList",
+		"@cdktf/provider-cloudflare.healthcheck.HealthcheckHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewHealthcheckHeaderList_Override(h HealthcheckHeaderList, terraformResourc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.healthcheck.HealthcheckHeaderList",
+		"@cdktf/provider-cloudflare.healthcheck.HealthcheckHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		h,
 	)

@@ -116,7 +116,7 @@ func NewGoogleApikeysKeyRestrictionsApiTargetsList(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleApikeysKeyRestrictionsApiTargetsList{}
 
 	_jsii_.Create(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsApiTargetsList",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsApiTargetsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleApikeysKeyRestrictionsApiTargetsList_Override(g GoogleApikeysKeyRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsApiTargetsList",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsApiTargetsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

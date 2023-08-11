@@ -424,7 +424,7 @@ func NewGoogleBigqueryDatasetIamMember(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleBigqueryDatasetIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDatasetIamMember.GoogleBigqueryDatasetIamMember",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamMember.GoogleBigqueryDatasetIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleBigqueryDatasetIamMember_Override(g GoogleBigqueryDatasetIamMember
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDatasetIamMember.GoogleBigqueryDatasetIamMember",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamMember.GoogleBigqueryDatasetIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleBigqueryDatasetIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryDatasetIamMember.GoogleBigqueryDatasetIamMember",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamMember.GoogleBigqueryDatasetIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleBigqueryDatasetIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryDatasetIamMember.GoogleBigqueryDatasetIamMember",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamMember.GoogleBigqueryDatasetIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleBigqueryDatasetIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryDatasetIamMember.GoogleBigqueryDatasetIamMember",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamMember.GoogleBigqueryDatasetIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleBigqueryDatasetIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigqueryDatasetIamMember.GoogleBigqueryDatasetIamMember",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamMember.GoogleBigqueryDatasetIamMember",
 		"tfResourceType",
 		&returns,
 	)

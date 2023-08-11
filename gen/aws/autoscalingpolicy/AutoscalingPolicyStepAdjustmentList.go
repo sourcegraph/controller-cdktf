@@ -116,7 +116,7 @@ func NewAutoscalingPolicyStepAdjustmentList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_AutoscalingPolicyStepAdjustmentList{}
 
 	_jsii_.Create(
-		"aws.autoscalingPolicy.AutoscalingPolicyStepAdjustmentList",
+		"@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyStepAdjustmentList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAutoscalingPolicyStepAdjustmentList_Override(a AutoscalingPolicyStepAdju
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingPolicy.AutoscalingPolicyStepAdjustmentList",
+		"@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyStepAdjustmentList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

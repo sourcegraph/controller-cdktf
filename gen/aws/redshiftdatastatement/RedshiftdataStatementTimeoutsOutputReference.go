@@ -180,7 +180,7 @@ func NewRedshiftdataStatementTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_RedshiftdataStatementTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.redshiftdataStatement.RedshiftdataStatementTimeoutsOutputReference",
+		"@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatementTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewRedshiftdataStatementTimeoutsOutputReference_Override(r RedshiftdataStat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftdataStatement.RedshiftdataStatementTimeoutsOutputReference",
+		"@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatementTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

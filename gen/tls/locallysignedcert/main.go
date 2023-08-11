@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tls.locallySignedCert.LocallySignedCert",
+		"@cdktf/provider-tls.locallySignedCert.LocallySignedCert",
 		reflect.TypeOf((*LocallySignedCert)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tls.locallySignedCert.LocallySignedCertConfig",
+		"@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig",
 		reflect.TypeOf((*LocallySignedCertConfig)(nil)).Elem(),
 	)
 }

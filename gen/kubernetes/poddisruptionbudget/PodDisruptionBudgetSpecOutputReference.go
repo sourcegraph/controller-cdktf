@@ -227,7 +227,7 @@ func NewPodDisruptionBudgetSpecOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_PodDisruptionBudgetSpecOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podDisruptionBudget.PodDisruptionBudgetSpecOutputReference",
+		"@cdktf/provider-kubernetes.podDisruptionBudget.PodDisruptionBudgetSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewPodDisruptionBudgetSpecOutputReference_Override(p PodDisruptionBudgetSpe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podDisruptionBudget.PodDisruptionBudgetSpecOutputReference",
+		"@cdktf/provider-kubernetes.podDisruptionBudget.PodDisruptionBudgetSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

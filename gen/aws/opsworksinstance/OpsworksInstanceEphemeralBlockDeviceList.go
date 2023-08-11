@@ -116,7 +116,7 @@ func NewOpsworksInstanceEphemeralBlockDeviceList(terraformResource cdktf.IInterp
 	j := jsiiProxy_OpsworksInstanceEphemeralBlockDeviceList{}
 
 	_jsii_.Create(
-		"aws.opsworksInstance.OpsworksInstanceEphemeralBlockDeviceList",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEphemeralBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOpsworksInstanceEphemeralBlockDeviceList_Override(o OpsworksInstanceEphe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksInstance.OpsworksInstanceEphemeralBlockDeviceList",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEphemeralBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

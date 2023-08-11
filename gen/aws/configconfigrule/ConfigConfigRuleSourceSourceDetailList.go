@@ -116,7 +116,7 @@ func NewConfigConfigRuleSourceSourceDetailList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_ConfigConfigRuleSourceSourceDetailList{}
 
 	_jsii_.Create(
-		"aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewConfigConfigRuleSourceSourceDetailList_Override(c ConfigConfigRuleSource
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

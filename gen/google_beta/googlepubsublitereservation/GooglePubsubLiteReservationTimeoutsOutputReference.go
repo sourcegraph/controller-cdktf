@@ -228,7 +228,7 @@ func NewGooglePubsubLiteReservationTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_GooglePubsubLiteReservationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservationTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGooglePubsubLiteReservationTimeoutsOutputReference_Override(g GooglePubs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservationTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -347,7 +347,7 @@ func NewDataAwsWafv2RegexPatternSet(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataAwsWafv2RegexPatternSet{}
 
 	_jsii_.Create(
-		"aws.dataAwsWafv2RegexPatternSet.DataAwsWafv2RegexPatternSet",
+		"@cdktf/provider-aws.dataAwsWafv2RegexPatternSet.DataAwsWafv2RegexPatternSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewDataAwsWafv2RegexPatternSet_Override(d DataAwsWafv2RegexPatternSet, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsWafv2RegexPatternSet.DataAwsWafv2RegexPatternSet",
+		"@cdktf/provider-aws.dataAwsWafv2RegexPatternSet.DataAwsWafv2RegexPatternSet",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -471,7 +471,7 @@ func DataAwsWafv2RegexPatternSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafv2RegexPatternSet.DataAwsWafv2RegexPatternSet",
+		"@cdktf/provider-aws.dataAwsWafv2RegexPatternSet.DataAwsWafv2RegexPatternSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -490,7 +490,7 @@ func DataAwsWafv2RegexPatternSet_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafv2RegexPatternSet.DataAwsWafv2RegexPatternSet",
+		"@cdktf/provider-aws.dataAwsWafv2RegexPatternSet.DataAwsWafv2RegexPatternSet",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -509,7 +509,7 @@ func DataAwsWafv2RegexPatternSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafv2RegexPatternSet.DataAwsWafv2RegexPatternSet",
+		"@cdktf/provider-aws.dataAwsWafv2RegexPatternSet.DataAwsWafv2RegexPatternSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -522,7 +522,7 @@ func DataAwsWafv2RegexPatternSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsWafv2RegexPatternSet.DataAwsWafv2RegexPatternSet",
+		"@cdktf/provider-aws.dataAwsWafv2RegexPatternSet.DataAwsWafv2RegexPatternSet",
 		"tfResourceType",
 		&returns,
 	)

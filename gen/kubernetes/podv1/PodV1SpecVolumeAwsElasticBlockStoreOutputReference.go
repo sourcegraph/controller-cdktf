@@ -251,7 +251,7 @@ func NewPodV1SpecVolumeAwsElasticBlockStoreOutputReference(terraformResource cdk
 	j := jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumeAwsElasticBlockStoreOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeAwsElasticBlockStoreOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewPodV1SpecVolumeAwsElasticBlockStoreOutputReference_Override(p PodV1SpecV
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumeAwsElasticBlockStoreOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeAwsElasticBlockStoreOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

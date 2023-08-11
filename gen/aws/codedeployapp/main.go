@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.codedeployApp.CodedeployApp",
+		"@cdktf/provider-aws.codedeployApp.CodedeployApp",
 		reflect.TypeOf((*CodedeployApp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codedeployApp.CodedeployAppConfig",
+		"@cdktf/provider-aws.codedeployApp.CodedeployAppConfig",
 		reflect.TypeOf((*CodedeployAppConfig)(nil)).Elem(),
 	)
 }

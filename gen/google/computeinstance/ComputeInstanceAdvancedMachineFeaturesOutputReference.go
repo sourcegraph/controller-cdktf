@@ -228,7 +228,7 @@ func NewComputeInstanceAdvancedMachineFeaturesOutputReference(terraformResource 
 	j := jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceAdvancedMachineFeaturesOutputReference",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceAdvancedMachineFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeInstanceAdvancedMachineFeaturesOutputReference_Override(c Compute
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceAdvancedMachineFeaturesOutputReference",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceAdvancedMachineFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

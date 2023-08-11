@@ -116,7 +116,7 @@ func NewCloudbuildTriggerBuildSecretList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_CloudbuildTriggerBuildSecretList{}
 
 	_jsii_.Create(
-		"google.cloudbuildTrigger.CloudbuildTriggerBuildSecretList",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudbuildTriggerBuildSecretList_Override(c CloudbuildTriggerBuildSecret
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudbuildTrigger.CloudbuildTriggerBuildSecretList",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

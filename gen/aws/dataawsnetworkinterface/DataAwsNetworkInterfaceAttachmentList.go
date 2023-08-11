@@ -104,7 +104,7 @@ func NewDataAwsNetworkInterfaceAttachmentList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataAwsNetworkInterfaceAttachmentList{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachmentList",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachmentList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsNetworkInterfaceAttachmentList_Override(d DataAwsNetworkInterface
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachmentList",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachmentList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -348,7 +348,7 @@ func NewDataAwsSesv2DedicatedIpPool(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataAwsSesv2DedicatedIpPool{}
 
 	_jsii_.Create(
-		"aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool",
+		"@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -361,7 +361,7 @@ func NewDataAwsSesv2DedicatedIpPool_Override(d DataAwsSesv2DedicatedIpPool, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool",
+		"@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -472,7 +472,7 @@ func DataAwsSesv2DedicatedIpPool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool",
+		"@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -491,7 +491,7 @@ func DataAwsSesv2DedicatedIpPool_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool",
+		"@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -510,7 +510,7 @@ func DataAwsSesv2DedicatedIpPool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool",
+		"@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +523,7 @@ func DataAwsSesv2DedicatedIpPool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool",
+		"@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool",
 		"tfResourceType",
 		&returns,
 	)

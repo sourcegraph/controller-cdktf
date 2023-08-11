@@ -167,7 +167,7 @@ func NewGoogleFirebaserulesRulesetMetadataOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleFirebaserulesRulesetMetadataOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetMetadataOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewGoogleFirebaserulesRulesetMetadataOutputReference_Override(g GoogleFireb
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetMetadataOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

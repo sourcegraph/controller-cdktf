@@ -104,7 +104,7 @@ func NewDataAwsLaunchConfigurationEphemeralBlockDeviceList(terraformResource cdk
 	j := jsiiProxy_DataAwsLaunchConfigurationEphemeralBlockDeviceList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEphemeralBlockDeviceList",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEphemeralBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLaunchConfigurationEphemeralBlockDeviceList_Override(d DataAwsLau
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEphemeralBlockDeviceList",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEphemeralBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

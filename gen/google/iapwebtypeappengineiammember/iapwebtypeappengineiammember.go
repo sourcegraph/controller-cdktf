@@ -424,7 +424,7 @@ func NewIapWebTypeAppEngineIamMember(scope constructs.Construct, id *string, con
 	j := jsiiProxy_IapWebTypeAppEngineIamMember{}
 
 	_jsii_.Create(
-		"google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMember",
+		"@cdktf/provider-google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewIapWebTypeAppEngineIamMember_Override(i IapWebTypeAppEngineIamMember, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMember",
+		"@cdktf/provider-google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMember",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -592,7 +592,7 @@ func IapWebTypeAppEngineIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMember",
+		"@cdktf/provider-google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func IapWebTypeAppEngineIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMember",
+		"@cdktf/provider-google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func IapWebTypeAppEngineIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMember",
+		"@cdktf/provider-google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func IapWebTypeAppEngineIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMember",
+		"@cdktf/provider-google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMember",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewMonitoringNotificationChannelSensitiveLabelsOutputReference(terraformRes
 	j := jsiiProxy_MonitoringNotificationChannelSensitiveLabelsOutputReference{}
 
 	_jsii_.Create(
-		"google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference",
+		"@cdktf/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewMonitoringNotificationChannelSensitiveLabelsOutputReference_Override(m M
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference",
+		"@cdktf/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

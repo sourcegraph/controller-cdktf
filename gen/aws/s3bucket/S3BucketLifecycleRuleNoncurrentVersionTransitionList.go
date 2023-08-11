@@ -116,7 +116,7 @@ func NewS3BucketLifecycleRuleNoncurrentVersionTransitionList(terraformResource c
 	j := jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList{}
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransitionList",
+		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransitionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewS3BucketLifecycleRuleNoncurrentVersionTransitionList_Override(s S3Bucket
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransitionList",
+		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransitionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

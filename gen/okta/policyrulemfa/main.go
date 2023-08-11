@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.policyRuleMfa.PolicyRuleMfa",
+		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa",
 		reflect.TypeOf((*PolicyRuleMfa)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,11 +92,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.policyRuleMfa.PolicyRuleMfaAppExclude",
+		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppExclude",
 		reflect.TypeOf((*PolicyRuleMfaAppExclude)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.policyRuleMfa.PolicyRuleMfaAppExcludeList",
+		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppExcludeList",
 		reflect.TypeOf((*PolicyRuleMfaAppExcludeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -117,7 +117,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.policyRuleMfa.PolicyRuleMfaAppExcludeOutputReference",
+		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppExcludeOutputReference",
 		reflect.TypeOf((*PolicyRuleMfaAppExcludeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -157,11 +157,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.policyRuleMfa.PolicyRuleMfaAppInclude",
+		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppInclude",
 		reflect.TypeOf((*PolicyRuleMfaAppInclude)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.policyRuleMfa.PolicyRuleMfaAppIncludeList",
+		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppIncludeList",
 		reflect.TypeOf((*PolicyRuleMfaAppIncludeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -182,7 +182,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.policyRuleMfa.PolicyRuleMfaAppIncludeOutputReference",
+		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppIncludeOutputReference",
 		reflect.TypeOf((*PolicyRuleMfaAppIncludeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -222,7 +222,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.policyRuleMfa.PolicyRuleMfaConfig",
+		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaConfig",
 		reflect.TypeOf((*PolicyRuleMfaConfig)(nil)).Elem(),
 	)
 }

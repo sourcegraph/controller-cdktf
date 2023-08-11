@@ -189,7 +189,7 @@ func NewDataCatalogEntryBigqueryTableSpecOutputReference(terraformResource cdktf
 	j := jsiiProxy_DataCatalogEntryBigqueryTableSpecOutputReference{}
 
 	_jsii_.Create(
-		"google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecOutputReference",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataCatalogEntryBigqueryTableSpecOutputReference_Override(d DataCatalogE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecOutputReference",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

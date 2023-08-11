@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership",
+		"@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership",
 		reflect.TypeOf((*Cloud9EnvironmentMembership)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembershipConfig",
+		"@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembershipConfig",
 		reflect.TypeOf((*Cloud9EnvironmentMembershipConfig)(nil)).Elem(),
 	)
 }

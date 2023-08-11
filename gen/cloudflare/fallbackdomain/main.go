@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.fallbackDomain.FallbackDomain",
+		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomain",
 		reflect.TypeOf((*FallbackDomain)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.fallbackDomain.FallbackDomainConfig",
+		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainConfig",
 		reflect.TypeOf((*FallbackDomainConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.fallbackDomain.FallbackDomainDomains",
+		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainDomains",
 		reflect.TypeOf((*FallbackDomainDomains)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.fallbackDomain.FallbackDomainDomainsList",
+		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainDomainsList",
 		reflect.TypeOf((*FallbackDomainDomainsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -92,7 +92,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.fallbackDomain.FallbackDomainDomainsOutputReference",
+		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainDomainsOutputReference",
 		reflect.TypeOf((*FallbackDomainDomainsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

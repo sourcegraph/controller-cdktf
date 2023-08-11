@@ -319,7 +319,7 @@ func NewPhysicalReplicationSlot(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_PhysicalReplicationSlot{}
 
 	_jsii_.Create(
-		"postgresql.physicalReplicationSlot.PhysicalReplicationSlot",
+		"@cdktf/provider-postgresql.physicalReplicationSlot.PhysicalReplicationSlot",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -332,7 +332,7 @@ func NewPhysicalReplicationSlot_Override(p PhysicalReplicationSlot, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"postgresql.physicalReplicationSlot.PhysicalReplicationSlot",
+		"@cdktf/provider-postgresql.physicalReplicationSlot.PhysicalReplicationSlot",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -454,7 +454,7 @@ func PhysicalReplicationSlot_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.physicalReplicationSlot.PhysicalReplicationSlot",
+		"@cdktf/provider-postgresql.physicalReplicationSlot.PhysicalReplicationSlot",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -473,7 +473,7 @@ func PhysicalReplicationSlot_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.physicalReplicationSlot.PhysicalReplicationSlot",
+		"@cdktf/provider-postgresql.physicalReplicationSlot.PhysicalReplicationSlot",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -492,7 +492,7 @@ func PhysicalReplicationSlot_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.physicalReplicationSlot.PhysicalReplicationSlot",
+		"@cdktf/provider-postgresql.physicalReplicationSlot.PhysicalReplicationSlot",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func PhysicalReplicationSlot_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"postgresql.physicalReplicationSlot.PhysicalReplicationSlot",
+		"@cdktf/provider-postgresql.physicalReplicationSlot.PhysicalReplicationSlot",
 		"tfResourceType",
 		&returns,
 	)

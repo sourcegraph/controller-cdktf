@@ -179,7 +179,7 @@ func NewDataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference(terrafo
 	j := jsiiProxy_DataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

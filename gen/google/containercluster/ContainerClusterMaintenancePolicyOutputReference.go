@@ -228,7 +228,7 @@ func NewContainerClusterMaintenancePolicyOutputReference(terraformResource cdktf
 	j := jsiiProxy_ContainerClusterMaintenancePolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterMaintenancePolicyOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMaintenancePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewContainerClusterMaintenancePolicyOutputReference_Override(c ContainerClu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterMaintenancePolicyOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMaintenancePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

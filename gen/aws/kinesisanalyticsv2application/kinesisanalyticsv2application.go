@@ -612,7 +612,7 @@ func NewKinesisanalyticsv2Application(scope constructs.Construct, id *string, co
 	j := jsiiProxy_Kinesisanalyticsv2Application{}
 
 	_jsii_.Create(
-		"aws.kinesisanalyticsv2Application.Kinesisanalyticsv2Application",
+		"@cdktf/provider-aws.kinesisanalyticsv2Application.Kinesisanalyticsv2Application",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -625,7 +625,7 @@ func NewKinesisanalyticsv2Application_Override(k Kinesisanalyticsv2Application, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisanalyticsv2Application.Kinesisanalyticsv2Application",
+		"@cdktf/provider-aws.kinesisanalyticsv2Application.Kinesisanalyticsv2Application",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -824,7 +824,7 @@ func Kinesisanalyticsv2Application_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kinesisanalyticsv2Application.Kinesisanalyticsv2Application",
+		"@cdktf/provider-aws.kinesisanalyticsv2Application.Kinesisanalyticsv2Application",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -843,7 +843,7 @@ func Kinesisanalyticsv2Application_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kinesisanalyticsv2Application.Kinesisanalyticsv2Application",
+		"@cdktf/provider-aws.kinesisanalyticsv2Application.Kinesisanalyticsv2Application",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -862,7 +862,7 @@ func Kinesisanalyticsv2Application_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kinesisanalyticsv2Application.Kinesisanalyticsv2Application",
+		"@cdktf/provider-aws.kinesisanalyticsv2Application.Kinesisanalyticsv2Application",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -875,7 +875,7 @@ func Kinesisanalyticsv2Application_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.kinesisanalyticsv2Application.Kinesisanalyticsv2Application",
+		"@cdktf/provider-aws.kinesisanalyticsv2Application.Kinesisanalyticsv2Application",
 		"tfResourceType",
 		&returns,
 	)

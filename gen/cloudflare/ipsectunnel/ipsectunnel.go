@@ -652,7 +652,7 @@ func NewIpsecTunnel(scope constructs.Construct, id *string, config *IpsecTunnelC
 	j := jsiiProxy_IpsecTunnel{}
 
 	_jsii_.Create(
-		"cloudflare.ipsecTunnel.IpsecTunnel",
+		"@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -665,7 +665,7 @@ func NewIpsecTunnel_Override(i IpsecTunnel, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ipsecTunnel.IpsecTunnel",
+		"@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -941,7 +941,7 @@ func IpsecTunnel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.ipsecTunnel.IpsecTunnel",
+		"@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -960,7 +960,7 @@ func IpsecTunnel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.ipsecTunnel.IpsecTunnel",
+		"@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -979,7 +979,7 @@ func IpsecTunnel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.ipsecTunnel.IpsecTunnel",
+		"@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -992,7 +992,7 @@ func IpsecTunnel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.ipsecTunnel.IpsecTunnel",
+		"@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel",
 		"tfResourceType",
 		&returns,
 	)

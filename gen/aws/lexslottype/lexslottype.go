@@ -482,7 +482,7 @@ func NewLexSlotType(scope constructs.Construct, id *string, config *LexSlotTypeC
 	j := jsiiProxy_LexSlotType{}
 
 	_jsii_.Create(
-		"aws.lexSlotType.LexSlotType",
+		"@cdktf/provider-aws.lexSlotType.LexSlotType",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -495,7 +495,7 @@ func NewLexSlotType_Override(l LexSlotType, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexSlotType.LexSlotType",
+		"@cdktf/provider-aws.lexSlotType.LexSlotType",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -650,7 +650,7 @@ func LexSlotType_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lexSlotType.LexSlotType",
+		"@cdktf/provider-aws.lexSlotType.LexSlotType",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func LexSlotType_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lexSlotType.LexSlotType",
+		"@cdktf/provider-aws.lexSlotType.LexSlotType",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func LexSlotType_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lexSlotType.LexSlotType",
+		"@cdktf/provider-aws.lexSlotType.LexSlotType",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func LexSlotType_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lexSlotType.LexSlotType",
+		"@cdktf/provider-aws.lexSlotType.LexSlotType",
 		"tfResourceType",
 		&returns,
 	)

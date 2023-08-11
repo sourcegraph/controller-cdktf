@@ -202,7 +202,7 @@ func NewSagemakerWorkforceCognitoConfigOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_SagemakerWorkforceCognitoConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerWorkforce.SagemakerWorkforceCognitoConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceCognitoConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSagemakerWorkforceCognitoConfigOutputReference_Override(s SagemakerWorkf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerWorkforce.SagemakerWorkforceCognitoConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceCognitoConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

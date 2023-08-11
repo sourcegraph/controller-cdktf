@@ -179,7 +179,7 @@ func NewSagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference(ter
 	j := jsiiProxy_SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference",
+		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewSagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference",
+		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

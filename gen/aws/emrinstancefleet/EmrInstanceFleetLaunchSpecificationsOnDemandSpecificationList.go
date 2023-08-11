@@ -116,7 +116,7 @@ func NewEmrInstanceFleetLaunchSpecificationsOnDemandSpecificationList(terraformR
 	j := jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationList{}
 
 	_jsii_.Create(
-		"aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationList",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEmrInstanceFleetLaunchSpecificationsOnDemandSpecificationList_Override(e
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationList",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

@@ -377,7 +377,7 @@ func NewPubsubTopicIamPolicy(scope constructs.Construct, id *string, config *Pub
 	j := jsiiProxy_PubsubTopicIamPolicy{}
 
 	_jsii_.Create(
-		"google.pubsubTopicIamPolicy.PubsubTopicIamPolicy",
+		"@cdktf/provider-google.pubsubTopicIamPolicy.PubsubTopicIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewPubsubTopicIamPolicy_Override(p PubsubTopicIamPolicy, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.pubsubTopicIamPolicy.PubsubTopicIamPolicy",
+		"@cdktf/provider-google.pubsubTopicIamPolicy.PubsubTopicIamPolicy",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -534,7 +534,7 @@ func PubsubTopicIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubTopicIamPolicy.PubsubTopicIamPolicy",
+		"@cdktf/provider-google.pubsubTopicIamPolicy.PubsubTopicIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func PubsubTopicIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubTopicIamPolicy.PubsubTopicIamPolicy",
+		"@cdktf/provider-google.pubsubTopicIamPolicy.PubsubTopicIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func PubsubTopicIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubTopicIamPolicy.PubsubTopicIamPolicy",
+		"@cdktf/provider-google.pubsubTopicIamPolicy.PubsubTopicIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func PubsubTopicIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.pubsubTopicIamPolicy.PubsubTopicIamPolicy",
+		"@cdktf/provider-google.pubsubTopicIamPolicy.PubsubTopicIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

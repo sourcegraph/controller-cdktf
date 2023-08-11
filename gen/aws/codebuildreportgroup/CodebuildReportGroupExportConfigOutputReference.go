@@ -203,7 +203,7 @@ func NewCodebuildReportGroupExportConfigOutputReference(terraformResource cdktf.
 	j := jsiiProxy_CodebuildReportGroupExportConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.codebuildReportGroup.CodebuildReportGroupExportConfigOutputReference",
+		"@cdktf/provider-aws.codebuildReportGroup.CodebuildReportGroupExportConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewCodebuildReportGroupExportConfigOutputReference_Override(c CodebuildRepo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildReportGroup.CodebuildReportGroupExportConfigOutputReference",
+		"@cdktf/provider-aws.codebuildReportGroup.CodebuildReportGroupExportConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -204,7 +204,7 @@ func NewAthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOu
 	j := jsiiProxy_AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -202,7 +202,7 @@ func NewComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReferen
 	j := jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference{}
 
 	_jsii_.Create(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

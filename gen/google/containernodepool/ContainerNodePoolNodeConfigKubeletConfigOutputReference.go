@@ -251,7 +251,7 @@ func NewContainerNodePoolNodeConfigKubeletConfigOutputReference(terraformResourc
 	j := jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigOutputReference",
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewContainerNodePoolNodeConfigKubeletConfigOutputReference_Override(c Conta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigOutputReference",
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -228,7 +228,7 @@ func NewElasticacheReplicationGroupTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_ElasticacheReplicationGroupTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticacheReplicationGroup.ElasticacheReplicationGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewElasticacheReplicationGroupTimeoutsOutputReference_Override(e Elasticach
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticacheReplicationGroup.ElasticacheReplicationGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

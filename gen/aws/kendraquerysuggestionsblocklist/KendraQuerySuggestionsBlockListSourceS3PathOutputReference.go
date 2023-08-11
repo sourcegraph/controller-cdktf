@@ -202,7 +202,7 @@ func NewKendraQuerySuggestionsBlockListSourceS3PathOutputReference(terraformReso
 	j := jsiiProxy_KendraQuerySuggestionsBlockListSourceS3PathOutputReference{}
 
 	_jsii_.Create(
-		"aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListSourceS3PathOutputReference",
+		"@cdktf/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListSourceS3PathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewKendraQuerySuggestionsBlockListSourceS3PathOutputReference_Override(k Ke
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListSourceS3PathOutputReference",
+		"@cdktf/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListSourceS3PathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

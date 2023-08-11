@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersion",
+		"@cdktf/provider-google-beta.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersion",
 		reflect.TypeOf((*DataGoogleKmsCryptoKeyVersion)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersionConfig",
+		"@cdktf/provider-google-beta.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersionConfig",
 		reflect.TypeOf((*DataGoogleKmsCryptoKeyVersionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersionPublicKey",
+		"@cdktf/provider-google-beta.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersionPublicKey",
 		reflect.TypeOf((*DataGoogleKmsCryptoKeyVersionPublicKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersionPublicKeyList",
+		"@cdktf/provider-google-beta.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersionPublicKeyList",
 		reflect.TypeOf((*DataGoogleKmsCryptoKeyVersionPublicKeyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -91,7 +91,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersionPublicKeyOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersionPublicKeyOutputReference",
 		reflect.TypeOf((*DataGoogleKmsCryptoKeyVersionPublicKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},

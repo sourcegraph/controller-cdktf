@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleBigtableTable.GoogleBigtableTable",
+		"@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable",
 		reflect.TypeOf((*GoogleBigtableTable)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,11 +76,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigtableTable.GoogleBigtableTableColumnFamily",
+		"@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableColumnFamily",
 		reflect.TypeOf((*GoogleBigtableTableColumnFamily)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigtableTable.GoogleBigtableTableColumnFamilyList",
+		"@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableColumnFamilyList",
 		reflect.TypeOf((*GoogleBigtableTableColumnFamilyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,7 +101,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigtableTable.GoogleBigtableTableColumnFamilyOutputReference",
+		"@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableColumnFamilyOutputReference",
 		reflect.TypeOf((*GoogleBigtableTableColumnFamilyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -135,15 +135,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigtableTable.GoogleBigtableTableConfig",
+		"@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableConfig",
 		reflect.TypeOf((*GoogleBigtableTableConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigtableTable.GoogleBigtableTableTimeouts",
+		"@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableTimeouts",
 		reflect.TypeOf((*GoogleBigtableTableTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigtableTable.GoogleBigtableTableTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleBigtableTableTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

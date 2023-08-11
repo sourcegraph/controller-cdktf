@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicy",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicy",
 		reflect.TypeOf((*DataGoogleIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,15 +62,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfig",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfig",
 		reflect.TypeOf((*DataGoogleIamPolicyAuditConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigs",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigs",
 		reflect.TypeOf((*DataGoogleIamPolicyAuditConfigAuditLogConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigsList",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigsList",
 		reflect.TypeOf((*DataGoogleIamPolicyAuditConfigAuditLogConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -91,7 +91,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference",
 		reflect.TypeOf((*DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -128,7 +128,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigList",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigList",
 		reflect.TypeOf((*DataGoogleIamPolicyAuditConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -149,7 +149,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigOutputReference",
 		reflect.TypeOf((*DataGoogleIamPolicyAuditConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "auditLogConfigs", GoGetter: "AuditLogConfigs"},
@@ -186,15 +186,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicyBinding",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBinding",
 		reflect.TypeOf((*DataGoogleIamPolicyBinding)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingCondition",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingCondition",
 		reflect.TypeOf((*DataGoogleIamPolicyBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingConditionOutputReference",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingConditionOutputReference",
 		reflect.TypeOf((*DataGoogleIamPolicyBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -233,7 +233,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingList",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingList",
 		reflect.TypeOf((*DataGoogleIamPolicyBindingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -254,7 +254,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingOutputReference",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingOutputReference",
 		reflect.TypeOf((*DataGoogleIamPolicyBindingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -294,7 +294,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicyConfig",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyConfig",
 		reflect.TypeOf((*DataGoogleIamPolicyConfig)(nil)).Elem(),
 	)
 }

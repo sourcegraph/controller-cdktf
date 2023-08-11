@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sagemakerModelPackageGroup.SagemakerModelPackageGroup",
+		"@cdktf/provider-aws.sagemakerModelPackageGroup.SagemakerModelPackageGroup",
 		reflect.TypeOf((*SagemakerModelPackageGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerModelPackageGroup.SagemakerModelPackageGroupConfig",
+		"@cdktf/provider-aws.sagemakerModelPackageGroup.SagemakerModelPackageGroupConfig",
 		reflect.TypeOf((*SagemakerModelPackageGroupConfig)(nil)).Elem(),
 	)
 }

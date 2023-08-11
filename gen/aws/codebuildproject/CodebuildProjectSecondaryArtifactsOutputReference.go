@@ -394,7 +394,7 @@ func NewCodebuildProjectSecondaryArtifactsOutputReference(terraformResource cdkt
 	j := jsiiProxy_CodebuildProjectSecondaryArtifactsOutputReference{}
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectSecondaryArtifactsOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondaryArtifactsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -406,7 +406,7 @@ func NewCodebuildProjectSecondaryArtifactsOutputReference_Override(c CodebuildPr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectSecondaryArtifactsOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondaryArtifactsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

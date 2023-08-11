@@ -471,7 +471,7 @@ func NewConnectSecurityProfile(scope constructs.Construct, id *string, config *C
 	j := jsiiProxy_ConnectSecurityProfile{}
 
 	_jsii_.Create(
-		"aws.connectSecurityProfile.ConnectSecurityProfile",
+		"@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -484,7 +484,7 @@ func NewConnectSecurityProfile_Override(c ConnectSecurityProfile, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectSecurityProfile.ConnectSecurityProfile",
+		"@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -661,7 +661,7 @@ func ConnectSecurityProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectSecurityProfile.ConnectSecurityProfile",
+		"@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func ConnectSecurityProfile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectSecurityProfile.ConnectSecurityProfile",
+		"@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -699,7 +699,7 @@ func ConnectSecurityProfile_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectSecurityProfile.ConnectSecurityProfile",
+		"@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +712,7 @@ func ConnectSecurityProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.connectSecurityProfile.ConnectSecurityProfile",
+		"@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile",
 		"tfResourceType",
 		&returns,
 	)

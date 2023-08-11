@@ -250,7 +250,7 @@ func NewClusterRoleBindingSubjectOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_ClusterRoleBindingSubjectOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.clusterRoleBinding.ClusterRoleBindingSubjectOutputReference",
+		"@cdktf/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingSubjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewClusterRoleBindingSubjectOutputReference_Override(c ClusterRoleBindingSu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.clusterRoleBinding.ClusterRoleBindingSubjectOutputReference",
+		"@cdktf/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingSubjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

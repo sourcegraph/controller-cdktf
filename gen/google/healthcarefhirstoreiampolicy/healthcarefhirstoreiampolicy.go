@@ -353,7 +353,7 @@ func NewHealthcareFhirStoreIamPolicy(scope constructs.Construct, id *string, con
 	j := jsiiProxy_HealthcareFhirStoreIamPolicy{}
 
 	_jsii_.Create(
-		"google.healthcareFhirStoreIamPolicy.HealthcareFhirStoreIamPolicy",
+		"@cdktf/provider-google.healthcareFhirStoreIamPolicy.HealthcareFhirStoreIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewHealthcareFhirStoreIamPolicy_Override(h HealthcareFhirStoreIamPolicy, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareFhirStoreIamPolicy.HealthcareFhirStoreIamPolicy",
+		"@cdktf/provider-google.healthcareFhirStoreIamPolicy.HealthcareFhirStoreIamPolicy",
 		[]interface{}{scope, id, config},
 		h,
 	)
@@ -499,7 +499,7 @@ func HealthcareFhirStoreIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareFhirStoreIamPolicy.HealthcareFhirStoreIamPolicy",
+		"@cdktf/provider-google.healthcareFhirStoreIamPolicy.HealthcareFhirStoreIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func HealthcareFhirStoreIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareFhirStoreIamPolicy.HealthcareFhirStoreIamPolicy",
+		"@cdktf/provider-google.healthcareFhirStoreIamPolicy.HealthcareFhirStoreIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func HealthcareFhirStoreIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareFhirStoreIamPolicy.HealthcareFhirStoreIamPolicy",
+		"@cdktf/provider-google.healthcareFhirStoreIamPolicy.HealthcareFhirStoreIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func HealthcareFhirStoreIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.healthcareFhirStoreIamPolicy.HealthcareFhirStoreIamPolicy",
+		"@cdktf/provider-google.healthcareFhirStoreIamPolicy.HealthcareFhirStoreIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewRdsClusterParameterGroupParameterList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_RdsClusterParameterGroupParameterList{}
 
 	_jsii_.Create(
-		"aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameterList",
+		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRdsClusterParameterGroupParameterList_Override(r RdsClusterParameterGrou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameterList",
+		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

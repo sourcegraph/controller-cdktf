@@ -204,7 +204,7 @@ func NewEmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference(terrafo
 	j := jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference{}
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference",
+		"@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference",
+		"@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

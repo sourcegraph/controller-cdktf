@@ -203,7 +203,7 @@ func NewAlbListenerRuleConditionQueryStringOutputReference(terraformResource cdk
 	j := jsiiProxy_AlbListenerRuleConditionQueryStringOutputReference{}
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRuleConditionQueryStringOutputReference",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryStringOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAlbListenerRuleConditionQueryStringOutputReference_Override(a AlbListene
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRuleConditionQueryStringOutputReference",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryStringOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

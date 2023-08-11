@@ -116,7 +116,7 @@ func NewPodV1SpecContainerEnvFromList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_PodV1SpecContainerEnvFromList{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecContainerEnvFromList",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecContainerEnvFromList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodV1SpecContainerEnvFromList_Override(p PodV1SpecContainerEnvFromList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecContainerEnvFromList",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecContainerEnvFromList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

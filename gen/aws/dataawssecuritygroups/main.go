@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsSecurityGroups.DataAwsSecurityGroups",
+		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups",
 		reflect.TypeOf((*DataAwsSecurityGroups)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsSecurityGroups.DataAwsSecurityGroupsConfig",
+		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsConfig",
 		reflect.TypeOf((*DataAwsSecurityGroupsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilter",
+		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilter",
 		reflect.TypeOf((*DataAwsSecurityGroupsFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilterList",
+		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilterList",
 		reflect.TypeOf((*DataAwsSecurityGroupsFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -96,7 +96,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilterOutputReference",
 		reflect.TypeOf((*DataAwsSecurityGroupsFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -132,11 +132,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeouts",
+		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeouts",
 		reflect.TypeOf((*DataAwsSecurityGroupsTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsSecurityGroupsTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.schemasSchema.SchemasSchema",
+		"@cdktf/provider-aws.schemasSchema.SchemasSchema",
 		reflect.TypeOf((*SchemasSchema)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.schemasSchema.SchemasSchemaConfig",
+		"@cdktf/provider-aws.schemasSchema.SchemasSchemaConfig",
 		reflect.TypeOf((*SchemasSchemaConfig)(nil)).Elem(),
 	)
 }

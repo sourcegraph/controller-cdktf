@@ -228,7 +228,7 @@ func NewCloudIdentityGroupMembershipTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_CloudIdentityGroupMembershipTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCloudIdentityGroupMembershipTimeoutsOutputReference_Override(c CloudIden
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

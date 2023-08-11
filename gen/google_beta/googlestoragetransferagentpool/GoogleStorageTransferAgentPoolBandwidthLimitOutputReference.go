@@ -179,7 +179,7 @@ func NewGoogleStorageTransferAgentPoolBandwidthLimitOutputReference(terraformRes
 	j := jsiiProxy_GoogleStorageTransferAgentPoolBandwidthLimitOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPoolBandwidthLimitOutputReference",
+		"@cdktf/provider-google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPoolBandwidthLimitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleStorageTransferAgentPoolBandwidthLimitOutputReference_Override(g G
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPoolBandwidthLimitOutputReference",
+		"@cdktf/provider-google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPoolBandwidthLimitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersResourceAwsEc2InstanceTypeList(terraformResourc
 	j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersResourceAwsEc2InstanceTypeList_Override(s Secur
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

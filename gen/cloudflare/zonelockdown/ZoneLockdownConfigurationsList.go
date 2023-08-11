@@ -116,7 +116,7 @@ func NewZoneLockdownConfigurationsList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_ZoneLockdownConfigurationsList{}
 
 	_jsii_.Create(
-		"cloudflare.zoneLockdown.ZoneLockdownConfigurationsList",
+		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewZoneLockdownConfigurationsList_Override(z ZoneLockdownConfigurationsList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.zoneLockdown.ZoneLockdownConfigurationsList",
+		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		z,
 	)

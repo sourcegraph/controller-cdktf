@@ -179,7 +179,7 @@ func NewEksClusterEncryptionConfigProviderOutputReference(terraformResource cdkt
 	j := jsiiProxy_EksClusterEncryptionConfigProviderOutputReference{}
 
 	_jsii_.Create(
-		"aws.eksCluster.EksClusterEncryptionConfigProviderOutputReference",
+		"@cdktf/provider-aws.eksCluster.EksClusterEncryptionConfigProviderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewEksClusterEncryptionConfigProviderOutputReference_Override(e EksClusterE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksCluster.EksClusterEncryptionConfigProviderOutputReference",
+		"@cdktf/provider-aws.eksCluster.EksClusterEncryptionConfigProviderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

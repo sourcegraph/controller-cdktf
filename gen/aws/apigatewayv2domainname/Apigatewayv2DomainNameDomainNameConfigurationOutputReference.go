@@ -271,7 +271,7 @@ func NewApigatewayv2DomainNameDomainNameConfigurationOutputReference(terraformRe
 	j := jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.apigatewayv2DomainName.Apigatewayv2DomainNameDomainNameConfigurationOutputReference",
+		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameDomainNameConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -283,7 +283,7 @@ func NewApigatewayv2DomainNameDomainNameConfigurationOutputReference_Override(a 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apigatewayv2DomainName.Apigatewayv2DomainNameDomainNameConfigurationOutputReference",
+		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameDomainNameConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

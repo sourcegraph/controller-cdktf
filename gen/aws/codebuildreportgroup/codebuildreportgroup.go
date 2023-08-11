@@ -459,7 +459,7 @@ func NewCodebuildReportGroup(scope constructs.Construct, id *string, config *Cod
 	j := jsiiProxy_CodebuildReportGroup{}
 
 	_jsii_.Create(
-		"aws.codebuildReportGroup.CodebuildReportGroup",
+		"@cdktf/provider-aws.codebuildReportGroup.CodebuildReportGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewCodebuildReportGroup_Override(c CodebuildReportGroup, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildReportGroup.CodebuildReportGroup",
+		"@cdktf/provider-aws.codebuildReportGroup.CodebuildReportGroup",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -638,7 +638,7 @@ func CodebuildReportGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codebuildReportGroup.CodebuildReportGroup",
+		"@cdktf/provider-aws.codebuildReportGroup.CodebuildReportGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func CodebuildReportGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codebuildReportGroup.CodebuildReportGroup",
+		"@cdktf/provider-aws.codebuildReportGroup.CodebuildReportGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func CodebuildReportGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codebuildReportGroup.CodebuildReportGroup",
+		"@cdktf/provider-aws.codebuildReportGroup.CodebuildReportGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func CodebuildReportGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.codebuildReportGroup.CodebuildReportGroup",
+		"@cdktf/provider-aws.codebuildReportGroup.CodebuildReportGroup",
 		"tfResourceType",
 		&returns,
 	)

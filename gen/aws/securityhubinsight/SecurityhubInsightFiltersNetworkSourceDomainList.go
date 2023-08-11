@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersNetworkSourceDomainList(terraformResource cdktf
 	j := jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersNetworkSourceDomainList_Override(s SecurityhubI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

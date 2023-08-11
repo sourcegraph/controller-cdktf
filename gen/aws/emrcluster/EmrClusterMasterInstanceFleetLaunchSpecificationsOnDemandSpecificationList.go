@@ -116,7 +116,7 @@ func NewEmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationLi
 	j := jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationList{}
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationList",
+		"@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationList",
+		"@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

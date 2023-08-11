@@ -473,7 +473,7 @@ func NewIamInstanceProfile(scope constructs.Construct, id *string, config *IamIn
 	j := jsiiProxy_IamInstanceProfile{}
 
 	_jsii_.Create(
-		"aws.iamInstanceProfile.IamInstanceProfile",
+		"@cdktf/provider-aws.iamInstanceProfile.IamInstanceProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -486,7 +486,7 @@ func NewIamInstanceProfile_Override(i IamInstanceProfile, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iamInstanceProfile.IamInstanceProfile",
+		"@cdktf/provider-aws.iamInstanceProfile.IamInstanceProfile",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -663,7 +663,7 @@ func IamInstanceProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamInstanceProfile.IamInstanceProfile",
+		"@cdktf/provider-aws.iamInstanceProfile.IamInstanceProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -682,7 +682,7 @@ func IamInstanceProfile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamInstanceProfile.IamInstanceProfile",
+		"@cdktf/provider-aws.iamInstanceProfile.IamInstanceProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func IamInstanceProfile_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamInstanceProfile.IamInstanceProfile",
+		"@cdktf/provider-aws.iamInstanceProfile.IamInstanceProfile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +714,7 @@ func IamInstanceProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iamInstanceProfile.IamInstanceProfile",
+		"@cdktf/provider-aws.iamInstanceProfile.IamInstanceProfile",
 		"tfResourceType",
 		&returns,
 	)

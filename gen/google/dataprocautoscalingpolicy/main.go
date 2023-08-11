@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicy",
+		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicy",
 		reflect.TypeOf((*DataprocAutoscalingPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,11 +80,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyBasicAlgorithm",
+		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyBasicAlgorithm",
 		reflect.TypeOf((*DataprocAutoscalingPolicyBasicAlgorithm)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyBasicAlgorithmOutputReference",
+		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyBasicAlgorithmOutputReference",
 		reflect.TypeOf((*DataprocAutoscalingPolicyBasicAlgorithmOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -122,11 +122,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyBasicAlgorithmYarnConfig",
+		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyBasicAlgorithmYarnConfig",
 		reflect.TypeOf((*DataprocAutoscalingPolicyBasicAlgorithmYarnConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference",
+		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference",
 		reflect.TypeOf((*DataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -170,15 +170,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyConfig",
+		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyConfig",
 		reflect.TypeOf((*DataprocAutoscalingPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicySecondaryWorkerConfig",
+		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicySecondaryWorkerConfig",
 		reflect.TypeOf((*DataprocAutoscalingPolicySecondaryWorkerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicySecondaryWorkerConfigOutputReference",
+		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicySecondaryWorkerConfigOutputReference",
 		reflect.TypeOf((*DataprocAutoscalingPolicySecondaryWorkerConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -219,11 +219,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyTimeouts",
+		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyTimeouts",
 		reflect.TypeOf((*DataprocAutoscalingPolicyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyTimeoutsOutputReference",
 		reflect.TypeOf((*DataprocAutoscalingPolicyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -264,11 +264,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyWorkerConfig",
+		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyWorkerConfig",
 		reflect.TypeOf((*DataprocAutoscalingPolicyWorkerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyWorkerConfigOutputReference",
+		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyWorkerConfigOutputReference",
 		reflect.TypeOf((*DataprocAutoscalingPolicyWorkerConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

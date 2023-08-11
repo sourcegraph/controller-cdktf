@@ -179,7 +179,7 @@ func NewBigqueryAnalyticsHubListingBigqueryDatasetOutputReference(terraformResou
 	j := jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListingBigqueryDatasetOutputReference",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListingBigqueryDatasetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewBigqueryAnalyticsHubListingBigqueryDatasetOutputReference_Override(b Big
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListingBigqueryDatasetOutputReference",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListingBigqueryDatasetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

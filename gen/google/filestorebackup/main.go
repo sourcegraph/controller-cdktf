@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.filestoreBackup.FilestoreBackup",
+		"@cdktf/provider-google.filestoreBackup.FilestoreBackup",
 		reflect.TypeOf((*FilestoreBackup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,15 +83,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.filestoreBackup.FilestoreBackupConfig",
+		"@cdktf/provider-google.filestoreBackup.FilestoreBackupConfig",
 		reflect.TypeOf((*FilestoreBackupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.filestoreBackup.FilestoreBackupTimeouts",
+		"@cdktf/provider-google.filestoreBackup.FilestoreBackupTimeouts",
 		reflect.TypeOf((*FilestoreBackupTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.filestoreBackup.FilestoreBackupTimeoutsOutputReference",
+		"@cdktf/provider-google.filestoreBackup.FilestoreBackupTimeoutsOutputReference",
 		reflect.TypeOf((*FilestoreBackupTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

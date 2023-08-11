@@ -203,7 +203,7 @@ func NewS3BucketServerSideEncryptionConfigurationRuleOutputReference(terraformRe
 	j := jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketServerSideEncryptionConfigurationRuleOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfigurationRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewS3BucketServerSideEncryptionConfigurationRuleOutputReference_Override(s 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketServerSideEncryptionConfigurationRuleOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfigurationRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

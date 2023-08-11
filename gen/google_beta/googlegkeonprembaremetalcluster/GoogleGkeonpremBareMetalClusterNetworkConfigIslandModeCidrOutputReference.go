@@ -202,7 +202,7 @@ func NewGoogleGkeonpremBareMetalClusterNetworkConfigIslandModeCidrOutputReferenc
 	j := jsiiProxy_GoogleGkeonpremBareMetalClusterNetworkConfigIslandModeCidrOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterNetworkConfigIslandModeCidrOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterNetworkConfigIslandModeCidrOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleGkeonpremBareMetalClusterNetworkConfigIslandModeCidrOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterNetworkConfigIslandModeCidrOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterNetworkConfigIslandModeCidrOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

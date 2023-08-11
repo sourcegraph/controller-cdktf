@@ -577,7 +577,7 @@ func NewGoogleNetworkConnectivitySpoke(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleNetworkConnectivitySpoke{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpoke",
+		"@cdktf/provider-google-beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpoke",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -590,7 +590,7 @@ func NewGoogleNetworkConnectivitySpoke_Override(g GoogleNetworkConnectivitySpoke
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpoke",
+		"@cdktf/provider-google-beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpoke",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -767,7 +767,7 @@ func GoogleNetworkConnectivitySpoke_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpoke",
+		"@cdktf/provider-google-beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpoke",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -786,7 +786,7 @@ func GoogleNetworkConnectivitySpoke_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpoke",
+		"@cdktf/provider-google-beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpoke",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -805,7 +805,7 @@ func GoogleNetworkConnectivitySpoke_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpoke",
+		"@cdktf/provider-google-beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpoke",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -818,7 +818,7 @@ func GoogleNetworkConnectivitySpoke_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpoke",
+		"@cdktf/provider-google-beta.googleNetworkConnectivitySpoke.GoogleNetworkConnectivitySpoke",
 		"tfResourceType",
 		&returns,
 	)

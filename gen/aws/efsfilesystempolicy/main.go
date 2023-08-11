@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.efsFileSystemPolicy.EfsFileSystemPolicy",
+		"@cdktf/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicy",
 		reflect.TypeOf((*EfsFileSystemPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.efsFileSystemPolicy.EfsFileSystemPolicyConfig",
+		"@cdktf/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicyConfig",
 		reflect.TypeOf((*EfsFileSystemPolicyConfig)(nil)).Elem(),
 	)
 }

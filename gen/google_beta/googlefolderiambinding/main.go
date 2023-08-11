@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleFolderIamBinding.GoogleFolderIamBinding",
+		"@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding",
 		reflect.TypeOf((*GoogleFolderIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,11 +66,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition",
+		"@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition",
 		reflect.TypeOf((*GoogleFolderIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference",
 		reflect.TypeOf((*GoogleFolderIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig",
+		"@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig",
 		reflect.TypeOf((*GoogleFolderIamBindingConfig)(nil)).Elem(),
 	)
 }

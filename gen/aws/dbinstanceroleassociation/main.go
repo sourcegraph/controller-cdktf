@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dbInstanceRoleAssociation.DbInstanceRoleAssociation",
+		"@cdktf/provider-aws.dbInstanceRoleAssociation.DbInstanceRoleAssociation",
 		reflect.TypeOf((*DbInstanceRoleAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbInstanceRoleAssociation.DbInstanceRoleAssociationConfig",
+		"@cdktf/provider-aws.dbInstanceRoleAssociation.DbInstanceRoleAssociationConfig",
 		reflect.TypeOf((*DbInstanceRoleAssociationConfig)(nil)).Elem(),
 	)
 }

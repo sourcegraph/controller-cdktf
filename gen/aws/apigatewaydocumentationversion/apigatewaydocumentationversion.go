@@ -366,7 +366,7 @@ func NewApiGatewayDocumentationVersion(scope constructs.Construct, id *string, c
 	j := jsiiProxy_ApiGatewayDocumentationVersion{}
 
 	_jsii_.Create(
-		"aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersion",
+		"@cdktf/provider-aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewApiGatewayDocumentationVersion_Override(a ApiGatewayDocumentationVersion
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersion",
+		"@cdktf/provider-aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersion",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -523,7 +523,7 @@ func ApiGatewayDocumentationVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersion",
+		"@cdktf/provider-aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func ApiGatewayDocumentationVersion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersion",
+		"@cdktf/provider-aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func ApiGatewayDocumentationVersion_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersion",
+		"@cdktf/provider-aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func ApiGatewayDocumentationVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersion",
+		"@cdktf/provider-aws.apiGatewayDocumentationVersion.ApiGatewayDocumentationVersion",
 		"tfResourceType",
 		&returns,
 	)

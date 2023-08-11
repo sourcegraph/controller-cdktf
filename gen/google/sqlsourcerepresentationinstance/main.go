@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstance",
+		"@cdktf/provider-google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstance",
 		reflect.TypeOf((*SqlSourceRepresentationInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,15 +92,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstanceConfig",
+		"@cdktf/provider-google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstanceConfig",
 		reflect.TypeOf((*SqlSourceRepresentationInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstanceTimeouts",
+		"@cdktf/provider-google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstanceTimeouts",
 		reflect.TypeOf((*SqlSourceRepresentationInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*SqlSourceRepresentationInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

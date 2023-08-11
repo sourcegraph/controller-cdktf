@@ -474,7 +474,7 @@ func NewGoogleGkeHubMembership(scope constructs.Construct, id *string, config *G
 	j := jsiiProxy_GoogleGkeHubMembership{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubMembership.GoogleGkeHubMembership",
+		"@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembership",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -487,7 +487,7 @@ func NewGoogleGkeHubMembership_Override(g GoogleGkeHubMembership, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubMembership.GoogleGkeHubMembership",
+		"@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembership",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -642,7 +642,7 @@ func GoogleGkeHubMembership_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeHubMembership.GoogleGkeHubMembership",
+		"@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembership",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -661,7 +661,7 @@ func GoogleGkeHubMembership_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeHubMembership.GoogleGkeHubMembership",
+		"@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembership",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func GoogleGkeHubMembership_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeHubMembership.GoogleGkeHubMembership",
+		"@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembership",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -693,7 +693,7 @@ func GoogleGkeHubMembership_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleGkeHubMembership.GoogleGkeHubMembership",
+		"@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembership",
 		"tfResourceType",
 		&returns,
 	)

@@ -507,7 +507,7 @@ func NewIdentityPlatformTenantOauthIdpConfig(scope constructs.Construct, id *str
 	j := jsiiProxy_IdentityPlatformTenantOauthIdpConfig{}
 
 	_jsii_.Create(
-		"google.identityPlatformTenantOauthIdpConfig.IdentityPlatformTenantOauthIdpConfig",
+		"@cdktf/provider-google.identityPlatformTenantOauthIdpConfig.IdentityPlatformTenantOauthIdpConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -520,7 +520,7 @@ func NewIdentityPlatformTenantOauthIdpConfig_Override(i IdentityPlatformTenantOa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.identityPlatformTenantOauthIdpConfig.IdentityPlatformTenantOauthIdpConfig",
+		"@cdktf/provider-google.identityPlatformTenantOauthIdpConfig.IdentityPlatformTenantOauthIdpConfig",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -719,7 +719,7 @@ func IdentityPlatformTenantOauthIdpConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.identityPlatformTenantOauthIdpConfig.IdentityPlatformTenantOauthIdpConfig",
+		"@cdktf/provider-google.identityPlatformTenantOauthIdpConfig.IdentityPlatformTenantOauthIdpConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -738,7 +738,7 @@ func IdentityPlatformTenantOauthIdpConfig_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.identityPlatformTenantOauthIdpConfig.IdentityPlatformTenantOauthIdpConfig",
+		"@cdktf/provider-google.identityPlatformTenantOauthIdpConfig.IdentityPlatformTenantOauthIdpConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -757,7 +757,7 @@ func IdentityPlatformTenantOauthIdpConfig_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.identityPlatformTenantOauthIdpConfig.IdentityPlatformTenantOauthIdpConfig",
+		"@cdktf/provider-google.identityPlatformTenantOauthIdpConfig.IdentityPlatformTenantOauthIdpConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -770,7 +770,7 @@ func IdentityPlatformTenantOauthIdpConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.identityPlatformTenantOauthIdpConfig.IdentityPlatformTenantOauthIdpConfig",
+		"@cdktf/provider-google.identityPlatformTenantOauthIdpConfig.IdentityPlatformTenantOauthIdpConfig",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewDataKubernetesPodV1SpecTolerationList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataKubernetesPodV1SpecTolerationList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTolerationList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTolerationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodV1SpecTolerationList_Override(d DataKubernetesPodV1Spec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTolerationList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTolerationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

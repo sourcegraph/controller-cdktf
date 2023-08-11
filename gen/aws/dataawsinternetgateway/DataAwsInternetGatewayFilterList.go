@@ -116,7 +116,7 @@ func NewDataAwsInternetGatewayFilterList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_DataAwsInternetGatewayFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsInternetGateway.DataAwsInternetGatewayFilterList",
+		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsInternetGatewayFilterList_Override(d DataAwsInternetGatewayFilter
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInternetGateway.DataAwsInternetGatewayFilterList",
+		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

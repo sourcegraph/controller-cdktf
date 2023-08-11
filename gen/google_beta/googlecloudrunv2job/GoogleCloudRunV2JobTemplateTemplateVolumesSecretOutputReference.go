@@ -227,7 +227,7 @@ func NewGoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference(terrafor
 	j := jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewGoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

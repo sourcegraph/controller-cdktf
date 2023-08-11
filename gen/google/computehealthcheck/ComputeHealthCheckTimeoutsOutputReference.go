@@ -228,7 +228,7 @@ func NewComputeHealthCheckTimeoutsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_ComputeHealthCheckTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeHealthCheck.ComputeHealthCheckTimeoutsOutputReference",
+		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeHealthCheckTimeoutsOutputReference_Override(c ComputeHealthCheckT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeHealthCheck.ComputeHealthCheckTimeoutsOutputReference",
+		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

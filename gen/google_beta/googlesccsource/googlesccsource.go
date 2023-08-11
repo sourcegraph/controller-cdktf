@@ -401,7 +401,7 @@ func NewGoogleSccSource(scope constructs.Construct, id *string, config *GoogleSc
 	j := jsiiProxy_GoogleSccSource{}
 
 	_jsii_.Create(
-		"google-beta.googleSccSource.GoogleSccSource",
+		"@cdktf/provider-google-beta.googleSccSource.GoogleSccSource",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleSccSource_Override(g GoogleSccSource, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSccSource.GoogleSccSource",
+		"@cdktf/provider-google-beta.googleSccSource.GoogleSccSource",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -558,7 +558,7 @@ func GoogleSccSource_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSccSource.GoogleSccSource",
+		"@cdktf/provider-google-beta.googleSccSource.GoogleSccSource",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func GoogleSccSource_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSccSource.GoogleSccSource",
+		"@cdktf/provider-google-beta.googleSccSource.GoogleSccSource",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func GoogleSccSource_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSccSource.GoogleSccSource",
+		"@cdktf/provider-google-beta.googleSccSource.GoogleSccSource",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func GoogleSccSource_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleSccSource.GoogleSccSource",
+		"@cdktf/provider-google-beta.googleSccSource.GoogleSccSource",
 		"tfResourceType",
 		&returns,
 	)

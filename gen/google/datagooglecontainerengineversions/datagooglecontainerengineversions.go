@@ -417,7 +417,7 @@ func NewDataGoogleContainerEngineVersions(scope constructs.Construct, id *string
 	j := jsiiProxy_DataGoogleContainerEngineVersions{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerEngineVersions.DataGoogleContainerEngineVersions",
+		"@cdktf/provider-google.dataGoogleContainerEngineVersions.DataGoogleContainerEngineVersions",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -430,7 +430,7 @@ func NewDataGoogleContainerEngineVersions_Override(d DataGoogleContainerEngineVe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerEngineVersions.DataGoogleContainerEngineVersions",
+		"@cdktf/provider-google.dataGoogleContainerEngineVersions.DataGoogleContainerEngineVersions",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -552,7 +552,7 @@ func DataGoogleContainerEngineVersions_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleContainerEngineVersions.DataGoogleContainerEngineVersions",
+		"@cdktf/provider-google.dataGoogleContainerEngineVersions.DataGoogleContainerEngineVersions",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -571,7 +571,7 @@ func DataGoogleContainerEngineVersions_IsTerraformDataSource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleContainerEngineVersions.DataGoogleContainerEngineVersions",
+		"@cdktf/provider-google.dataGoogleContainerEngineVersions.DataGoogleContainerEngineVersions",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -590,7 +590,7 @@ func DataGoogleContainerEngineVersions_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleContainerEngineVersions.DataGoogleContainerEngineVersions",
+		"@cdktf/provider-google.dataGoogleContainerEngineVersions.DataGoogleContainerEngineVersions",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -603,7 +603,7 @@ func DataGoogleContainerEngineVersions_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleContainerEngineVersions.DataGoogleContainerEngineVersions",
+		"@cdktf/provider-google.dataGoogleContainerEngineVersions.DataGoogleContainerEngineVersions",
 		"tfResourceType",
 		&returns,
 	)

@@ -1713,7 +1713,7 @@ func NewSpotInstanceRequest(scope constructs.Construct, id *string, config *Spot
 	j := jsiiProxy_SpotInstanceRequest{}
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequest",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequest",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1726,7 +1726,7 @@ func NewSpotInstanceRequest_Override(s SpotInstanceRequest, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequest",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequest",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -2299,7 +2299,7 @@ func SpotInstanceRequest_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.spotInstanceRequest.SpotInstanceRequest",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequest",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -2318,7 +2318,7 @@ func SpotInstanceRequest_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.spotInstanceRequest.SpotInstanceRequest",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequest",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -2337,7 +2337,7 @@ func SpotInstanceRequest_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.spotInstanceRequest.SpotInstanceRequest",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequest",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -2350,7 +2350,7 @@ func SpotInstanceRequest_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.spotInstanceRequest.SpotInstanceRequest",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequest",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewAccessPolicyExcludeAzureOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_AccessPolicyExcludeAzureOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyExcludeAzureOutputReference",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeAzureOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAccessPolicyExcludeAzureOutputReference_Override(a AccessPolicyExcludeAz
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyExcludeAzureOutputReference",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeAzureOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

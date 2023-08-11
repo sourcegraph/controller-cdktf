@@ -180,7 +180,7 @@ func NewDataAwsPrefixListTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataAwsPrefixListTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsPrefixList.DataAwsPrefixListTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsPrefixListTimeoutsOutputReference_Override(d DataAwsPrefixListTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsPrefixList.DataAwsPrefixListTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleFoldersFoldersList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_DataGoogleFoldersFoldersList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleFolders.DataGoogleFoldersFoldersList",
+		"@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFoldersFoldersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleFoldersFoldersList_Override(d DataGoogleFoldersFoldersList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleFolders.DataGoogleFoldersFoldersList",
+		"@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFoldersFoldersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -202,7 +202,7 @@ func NewGooglePubsubLiteTopicPartitionConfigCapacityOutputReference(terraformRes
 	j := jsiiProxy_GooglePubsubLiteTopicPartitionConfigCapacityOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfigCapacityOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfigCapacityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGooglePubsubLiteTopicPartitionConfigCapacityOutputReference_Override(g G
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfigCapacityOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfigCapacityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

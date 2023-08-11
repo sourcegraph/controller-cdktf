@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.gameliftScript.GameliftScript",
+		"@cdktf/provider-aws.gameliftScript.GameliftScript",
 		reflect.TypeOf((*GameliftScript)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.gameliftScript.GameliftScriptConfig",
+		"@cdktf/provider-aws.gameliftScript.GameliftScriptConfig",
 		reflect.TypeOf((*GameliftScriptConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.gameliftScript.GameliftScriptStorageLocation",
+		"@cdktf/provider-aws.gameliftScript.GameliftScriptStorageLocation",
 		reflect.TypeOf((*GameliftScriptStorageLocation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.gameliftScript.GameliftScriptStorageLocationOutputReference",
+		"@cdktf/provider-aws.gameliftScript.GameliftScriptStorageLocationOutputReference",
 		reflect.TypeOf((*GameliftScriptStorageLocationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},

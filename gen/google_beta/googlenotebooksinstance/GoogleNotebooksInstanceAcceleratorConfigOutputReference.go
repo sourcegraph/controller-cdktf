@@ -202,7 +202,7 @@ func NewGoogleNotebooksInstanceAcceleratorConfigOutputReference(terraformResourc
 	j := jsiiProxy_GoogleNotebooksInstanceAcceleratorConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstanceAcceleratorConfigOutputReference",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceAcceleratorConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleNotebooksInstanceAcceleratorConfigOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstanceAcceleratorConfigOutputReference",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceAcceleratorConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

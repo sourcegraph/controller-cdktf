@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList
 	j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

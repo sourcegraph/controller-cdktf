@@ -250,7 +250,7 @@ func NewMedialiveMultiplexMultiplexSettingsOutputReference(terraformResource cdk
 	j := jsiiProxy_MedialiveMultiplexMultiplexSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.medialiveMultiplex.MedialiveMultiplexMultiplexSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveMultiplex.MedialiveMultiplexMultiplexSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewMedialiveMultiplexMultiplexSettingsOutputReference_Override(m MedialiveM
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveMultiplex.MedialiveMultiplexMultiplexSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveMultiplex.MedialiveMultiplexMultiplexSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

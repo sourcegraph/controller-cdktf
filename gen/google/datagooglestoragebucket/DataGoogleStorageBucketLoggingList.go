@@ -104,7 +104,7 @@ func NewDataGoogleStorageBucketLoggingList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataGoogleStorageBucketLoggingList{}
 
 	_jsii_.Create(
-		"google.dataGoogleStorageBucket.DataGoogleStorageBucketLoggingList",
+		"@cdktf/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketLoggingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleStorageBucketLoggingList_Override(d DataGoogleStorageBucketLog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleStorageBucket.DataGoogleStorageBucketLoggingList",
+		"@cdktf/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketLoggingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

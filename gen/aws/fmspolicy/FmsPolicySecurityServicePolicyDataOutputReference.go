@@ -203,7 +203,7 @@ func NewFmsPolicySecurityServicePolicyDataOutputReference(terraformResource cdkt
 	j := jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference{}
 
 	_jsii_.Create(
-		"aws.fmsPolicy.FmsPolicySecurityServicePolicyDataOutputReference",
+		"@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewFmsPolicySecurityServicePolicyDataOutputReference_Override(f FmsPolicySe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fmsPolicy.FmsPolicySecurityServicePolicyDataOutputReference",
+		"@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

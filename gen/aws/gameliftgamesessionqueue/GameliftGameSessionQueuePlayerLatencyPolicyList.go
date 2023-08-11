@@ -116,7 +116,7 @@ func NewGameliftGameSessionQueuePlayerLatencyPolicyList(terraformResource cdktf.
 	j := jsiiProxy_GameliftGameSessionQueuePlayerLatencyPolicyList{}
 
 	_jsii_.Create(
-		"aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicyList",
+		"@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGameliftGameSessionQueuePlayerLatencyPolicyList_Override(g GameliftGameS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicyList",
+		"@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

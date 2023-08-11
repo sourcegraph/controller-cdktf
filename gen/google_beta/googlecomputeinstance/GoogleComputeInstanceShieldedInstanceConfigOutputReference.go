@@ -228,7 +228,7 @@ func NewGoogleComputeInstanceShieldedInstanceConfigOutputReference(terraformReso
 	j := jsiiProxy_GoogleComputeInstanceShieldedInstanceConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceShieldedInstanceConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceShieldedInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeInstanceShieldedInstanceConfigOutputReference_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceShieldedInstanceConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceShieldedInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

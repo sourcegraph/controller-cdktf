@@ -104,7 +104,7 @@ func NewDataAwsInternetGatewayAttachmentsList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataAwsInternetGatewayAttachmentsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsInternetGateway.DataAwsInternetGatewayAttachmentsList",
+		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayAttachmentsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsInternetGatewayAttachmentsList_Override(d DataAwsInternetGatewayA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInternetGateway.DataAwsInternetGatewayAttachmentsList",
+		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayAttachmentsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

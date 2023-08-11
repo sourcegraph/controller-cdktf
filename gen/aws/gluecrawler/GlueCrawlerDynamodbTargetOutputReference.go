@@ -227,7 +227,7 @@ func NewGlueCrawlerDynamodbTargetOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_GlueCrawlerDynamodbTargetOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueCrawler.GlueCrawlerDynamodbTargetOutputReference",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawlerDynamodbTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewGlueCrawlerDynamodbTargetOutputReference_Override(g GlueCrawlerDynamodbT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueCrawler.GlueCrawlerDynamodbTargetOutputReference",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawlerDynamodbTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

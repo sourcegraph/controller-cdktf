@@ -179,7 +179,7 @@ func NewGoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference(te
 	j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference",
+		"@cdktf/provider-google-beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference",
+		"@cdktf/provider-google-beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

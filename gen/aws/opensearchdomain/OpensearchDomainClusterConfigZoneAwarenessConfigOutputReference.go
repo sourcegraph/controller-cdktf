@@ -180,7 +180,7 @@ func NewOpensearchDomainClusterConfigZoneAwarenessConfigOutputReference(terrafor
 	j := jsiiProxy_OpensearchDomainClusterConfigZoneAwarenessConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainClusterConfigZoneAwarenessConfigOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainClusterConfigZoneAwarenessConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewOpensearchDomainClusterConfigZoneAwarenessConfigOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainClusterConfigZoneAwarenessConfigOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainClusterConfigZoneAwarenessConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

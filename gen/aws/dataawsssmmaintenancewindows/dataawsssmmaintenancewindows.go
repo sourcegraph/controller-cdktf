@@ -303,7 +303,7 @@ func NewDataAwsSsmMaintenanceWindows(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataAwsSsmMaintenanceWindows{}
 
 	_jsii_.Create(
-		"aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindows",
+		"@cdktf/provider-aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindows",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -316,7 +316,7 @@ func NewDataAwsSsmMaintenanceWindows_Override(d DataAwsSsmMaintenanceWindows, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindows",
+		"@cdktf/provider-aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindows",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -405,7 +405,7 @@ func DataAwsSsmMaintenanceWindows_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindows",
+		"@cdktf/provider-aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindows",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -424,7 +424,7 @@ func DataAwsSsmMaintenanceWindows_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindows",
+		"@cdktf/provider-aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindows",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -443,7 +443,7 @@ func DataAwsSsmMaintenanceWindows_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindows",
+		"@cdktf/provider-aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindows",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -456,7 +456,7 @@ func DataAwsSsmMaintenanceWindows_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindows",
+		"@cdktf/provider-aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindows",
 		"tfResourceType",
 		&returns,
 	)

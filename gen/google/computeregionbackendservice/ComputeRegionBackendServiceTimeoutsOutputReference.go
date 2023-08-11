@@ -228,7 +228,7 @@ func NewComputeRegionBackendServiceTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_ComputeRegionBackendServiceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionBackendService.ComputeRegionBackendServiceTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeRegionBackendServiceTimeoutsOutputReference_Override(c ComputeReg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionBackendService.ComputeRegionBackendServiceTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

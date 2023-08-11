@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeSslPolicy.GoogleComputeSslPolicy",
+		"@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicy",
 		reflect.TypeOf((*GoogleComputeSslPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,15 +80,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyConfig",
+		"@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyConfig",
 		reflect.TypeOf((*GoogleComputeSslPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyTimeouts",
+		"@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyTimeouts",
 		reflect.TypeOf((*GoogleComputeSslPolicyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleComputeSslPolicyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

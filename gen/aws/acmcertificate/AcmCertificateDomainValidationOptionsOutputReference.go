@@ -200,7 +200,7 @@ func NewAcmCertificateDomainValidationOptionsOutputReference(terraformResource c
 	j := jsiiProxy_AcmCertificateDomainValidationOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.acmCertificate.AcmCertificateDomainValidationOptionsOutputReference",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificateDomainValidationOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewAcmCertificateDomainValidationOptionsOutputReference_Override(a AcmCerti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.acmCertificate.AcmCertificateDomainValidationOptionsOutputReference",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificateDomainValidationOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

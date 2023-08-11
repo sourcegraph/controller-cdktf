@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.accessApplication.AccessApplication",
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplication",
 		reflect.TypeOf((*AccessApplication)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -114,15 +114,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessApplication.AccessApplicationConfig",
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig",
 		reflect.TypeOf((*AccessApplicationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessApplication.AccessApplicationCorsHeaders",
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationCorsHeaders",
 		reflect.TypeOf((*AccessApplicationCorsHeaders)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessApplication.AccessApplicationCorsHeadersList",
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationCorsHeadersList",
 		reflect.TypeOf((*AccessApplicationCorsHeadersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -143,7 +143,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessApplication.AccessApplicationCorsHeadersOutputReference",
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationCorsHeadersOutputReference",
 		reflect.TypeOf((*AccessApplicationCorsHeadersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowAllHeaders", GoGetter: "AllowAllHeaders"},
@@ -199,11 +199,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessApplication.AccessApplicationSaasApp",
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp",
 		reflect.TypeOf((*AccessApplicationSaasApp)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessApplication.AccessApplicationSaasAppOutputReference",
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference",
 		reflect.TypeOf((*AccessApplicationSaasAppOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

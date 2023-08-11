@@ -215,7 +215,7 @@ func NewMwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference(terr
 	j := jsiiProxy_MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference{}
 
 	_jsii_.Create(
-		"aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -227,7 +227,7 @@ func NewMwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

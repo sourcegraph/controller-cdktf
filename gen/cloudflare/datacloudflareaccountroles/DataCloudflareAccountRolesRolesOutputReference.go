@@ -189,7 +189,7 @@ func NewDataCloudflareAccountRolesRolesOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_DataCloudflareAccountRolesRolesOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesRolesOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesRolesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataCloudflareAccountRolesRolesOutputReference_Override(d DataCloudflare
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesRolesOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesRolesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

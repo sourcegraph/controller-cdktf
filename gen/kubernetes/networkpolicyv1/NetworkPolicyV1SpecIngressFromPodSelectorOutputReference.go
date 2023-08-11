@@ -204,7 +204,7 @@ func NewNetworkPolicyV1SpecIngressFromPodSelectorOutputReference(terraformResour
 	j := jsiiProxy_NetworkPolicyV1SpecIngressFromPodSelectorOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.networkPolicyV1.NetworkPolicyV1SpecIngressFromPodSelectorOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicyV1.NetworkPolicyV1SpecIngressFromPodSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewNetworkPolicyV1SpecIngressFromPodSelectorOutputReference_Override(n Netw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.networkPolicyV1.NetworkPolicyV1SpecIngressFromPodSelectorOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicyV1.NetworkPolicyV1SpecIngressFromPodSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

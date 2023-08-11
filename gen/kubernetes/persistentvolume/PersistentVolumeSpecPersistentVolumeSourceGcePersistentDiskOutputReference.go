@@ -251,7 +251,7 @@ func NewPersistentVolumeSpecPersistentVolumeSourceGcePersistentDiskOutputReferen
 	j := jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceGcePersistentDiskOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.persistentVolume.PersistentVolumeSpecPersistentVolumeSourceGcePersistentDiskOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeSpecPersistentVolumeSourceGcePersistentDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewPersistentVolumeSpecPersistentVolumeSourceGcePersistentDiskOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.persistentVolume.PersistentVolumeSpecPersistentVolumeSourceGcePersistentDiskOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeSpecPersistentVolumeSourceGcePersistentDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

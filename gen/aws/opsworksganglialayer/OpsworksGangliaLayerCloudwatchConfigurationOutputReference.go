@@ -204,7 +204,7 @@ func NewOpsworksGangliaLayerCloudwatchConfigurationOutputReference(terraformReso
 	j := jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationOutputReference",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewOpsworksGangliaLayerCloudwatchConfigurationOutputReference_Override(o Op
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationOutputReference",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

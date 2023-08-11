@@ -337,7 +337,7 @@ func NewDataGoogleContainerAnalysisNoteIamPolicy(scope constructs.Construct, id 
 	j := jsiiProxy_DataGoogleContainerAnalysisNoteIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerAnalysisNoteIamPolicy.DataGoogleContainerAnalysisNoteIamPolicy",
+		"@cdktf/provider-google.dataGoogleContainerAnalysisNoteIamPolicy.DataGoogleContainerAnalysisNoteIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -350,7 +350,7 @@ func NewDataGoogleContainerAnalysisNoteIamPolicy_Override(d DataGoogleContainerA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerAnalysisNoteIamPolicy.DataGoogleContainerAnalysisNoteIamPolicy",
+		"@cdktf/provider-google.dataGoogleContainerAnalysisNoteIamPolicy.DataGoogleContainerAnalysisNoteIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -461,7 +461,7 @@ func DataGoogleContainerAnalysisNoteIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleContainerAnalysisNoteIamPolicy.DataGoogleContainerAnalysisNoteIamPolicy",
+		"@cdktf/provider-google.dataGoogleContainerAnalysisNoteIamPolicy.DataGoogleContainerAnalysisNoteIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataGoogleContainerAnalysisNoteIamPolicy_IsTerraformDataSource(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleContainerAnalysisNoteIamPolicy.DataGoogleContainerAnalysisNoteIamPolicy",
+		"@cdktf/provider-google.dataGoogleContainerAnalysisNoteIamPolicy.DataGoogleContainerAnalysisNoteIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataGoogleContainerAnalysisNoteIamPolicy_IsTerraformElement(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleContainerAnalysisNoteIamPolicy.DataGoogleContainerAnalysisNoteIamPolicy",
+		"@cdktf/provider-google.dataGoogleContainerAnalysisNoteIamPolicy.DataGoogleContainerAnalysisNoteIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataGoogleContainerAnalysisNoteIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleContainerAnalysisNoteIamPolicy.DataGoogleContainerAnalysisNoteIamPolicy",
+		"@cdktf/provider-google.dataGoogleContainerAnalysisNoteIamPolicy.DataGoogleContainerAnalysisNoteIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

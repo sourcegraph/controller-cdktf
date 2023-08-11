@@ -204,7 +204,7 @@ func NewGlueTriggerTimeoutsOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_GlueTriggerTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueTrigger.GlueTriggerTimeoutsOutputReference",
+		"@cdktf/provider-aws.glueTrigger.GlueTriggerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGlueTriggerTimeoutsOutputReference_Override(g GlueTriggerTimeoutsOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueTrigger.GlueTriggerTimeoutsOutputReference",
+		"@cdktf/provider-aws.glueTrigger.GlueTriggerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

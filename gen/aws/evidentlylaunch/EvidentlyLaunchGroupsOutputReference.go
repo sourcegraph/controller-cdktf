@@ -249,7 +249,7 @@ func NewEvidentlyLaunchGroupsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_EvidentlyLaunchGroupsOutputReference{}
 
 	_jsii_.Create(
-		"aws.evidentlyLaunch.EvidentlyLaunchGroupsOutputReference",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchGroupsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -261,7 +261,7 @@ func NewEvidentlyLaunchGroupsOutputReference_Override(e EvidentlyLaunchGroupsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.evidentlyLaunch.EvidentlyLaunchGroupsOutputReference",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchGroupsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

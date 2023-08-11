@@ -226,7 +226,7 @@ func NewComputeRouterNatSubnetworkOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_ComputeRouterNatSubnetworkOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRouterNat.ComputeRouterNatSubnetworkOutputReference",
+		"@cdktf/provider-google.computeRouterNat.ComputeRouterNatSubnetworkOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewComputeRouterNatSubnetworkOutputReference_Override(c ComputeRouterNatSub
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRouterNat.ComputeRouterNatSubnetworkOutputReference",
+		"@cdktf/provider-google.computeRouterNat.ComputeRouterNatSubnetworkOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

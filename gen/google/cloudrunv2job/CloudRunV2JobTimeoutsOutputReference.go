@@ -228,7 +228,7 @@ func NewCloudRunV2JobTimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_CloudRunV2JobTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCloudRunV2JobTimeoutsOutputReference_Override(c CloudRunV2JobTimeoutsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

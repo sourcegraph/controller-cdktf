@@ -366,7 +366,7 @@ func NewDocumentAiProcessorDefaultVersion(scope constructs.Construct, id *string
 	j := jsiiProxy_DocumentAiProcessorDefaultVersion{}
 
 	_jsii_.Create(
-		"google.documentAiProcessorDefaultVersion.DocumentAiProcessorDefaultVersion",
+		"@cdktf/provider-google.documentAiProcessorDefaultVersion.DocumentAiProcessorDefaultVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewDocumentAiProcessorDefaultVersion_Override(d DocumentAiProcessorDefaultV
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.documentAiProcessorDefaultVersion.DocumentAiProcessorDefaultVersion",
+		"@cdktf/provider-google.documentAiProcessorDefaultVersion.DocumentAiProcessorDefaultVersion",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -512,7 +512,7 @@ func DocumentAiProcessorDefaultVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.documentAiProcessorDefaultVersion.DocumentAiProcessorDefaultVersion",
+		"@cdktf/provider-google.documentAiProcessorDefaultVersion.DocumentAiProcessorDefaultVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func DocumentAiProcessorDefaultVersion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.documentAiProcessorDefaultVersion.DocumentAiProcessorDefaultVersion",
+		"@cdktf/provider-google.documentAiProcessorDefaultVersion.DocumentAiProcessorDefaultVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func DocumentAiProcessorDefaultVersion_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.documentAiProcessorDefaultVersion.DocumentAiProcessorDefaultVersion",
+		"@cdktf/provider-google.documentAiProcessorDefaultVersion.DocumentAiProcessorDefaultVersion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func DocumentAiProcessorDefaultVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.documentAiProcessorDefaultVersion.DocumentAiProcessorDefaultVersion",
+		"@cdktf/provider-google.documentAiProcessorDefaultVersion.DocumentAiProcessorDefaultVersion",
 		"tfResourceType",
 		&returns,
 	)

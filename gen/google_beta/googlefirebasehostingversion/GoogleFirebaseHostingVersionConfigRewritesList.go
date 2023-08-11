@@ -116,7 +116,7 @@ func NewGoogleFirebaseHostingVersionConfigRewritesList(terraformResource cdktf.I
 	j := jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesList{}
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigRewritesList",
+		"@cdktf/provider-google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigRewritesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleFirebaseHostingVersionConfigRewritesList_Override(g GoogleFirebase
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigRewritesList",
+		"@cdktf/provider-google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigRewritesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

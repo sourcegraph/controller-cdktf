@@ -252,7 +252,7 @@ func NewGoogleFolderOrganizationPolicyTimeoutsOutputReference(terraformResource 
 	j := jsiiProxy_GoogleFolderOrganizationPolicyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGoogleFolderOrganizationPolicyTimeoutsOutputReference_Override(g GoogleF
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

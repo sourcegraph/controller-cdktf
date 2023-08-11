@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskCluster",
+		"@cdktf/provider-aws.mskCluster.MskCluster",
 		reflect.TypeOf((*MskCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -111,15 +111,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterBrokerNodeGroupInfo",
+		"@cdktf/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfo",
 		reflect.TypeOf((*MskClusterBrokerNodeGroupInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfo",
+		"@cdktf/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfo",
 		reflect.TypeOf((*MskClusterBrokerNodeGroupInfoConnectivityInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoOutputReference",
 		reflect.TypeOf((*MskClusterBrokerNodeGroupInfoConnectivityInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -155,11 +155,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccess",
+		"@cdktf/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccess",
 		reflect.TypeOf((*MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccess)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessOutputReference",
 		reflect.TypeOf((*MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -194,7 +194,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskClusterBrokerNodeGroupInfoOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoOutputReference",
 		reflect.TypeOf((*MskClusterBrokerNodeGroupInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "azDistribution", GoGetter: "AzDistribution"},
@@ -246,15 +246,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfo",
+		"@cdktf/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfo",
 		reflect.TypeOf((*MskClusterBrokerNodeGroupInfoStorageInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfo",
+		"@cdktf/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfo",
 		reflect.TypeOf((*MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoOutputReference",
 		reflect.TypeOf((*MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -293,11 +293,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput",
+		"@cdktf/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput",
 		reflect.TypeOf((*MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputOutputReference",
 		reflect.TypeOf((*MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -335,7 +335,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoOutputReference",
 		reflect.TypeOf((*MskClusterBrokerNodeGroupInfoStorageInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -371,11 +371,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterClientAuthentication",
+		"@cdktf/provider-aws.mskCluster.MskClusterClientAuthentication",
 		reflect.TypeOf((*MskClusterClientAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskClusterClientAuthenticationOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterClientAuthenticationOutputReference",
 		reflect.TypeOf((*MskClusterClientAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -418,11 +418,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterClientAuthenticationSasl",
+		"@cdktf/provider-aws.mskCluster.MskClusterClientAuthenticationSasl",
 		reflect.TypeOf((*MskClusterClientAuthenticationSasl)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskClusterClientAuthenticationSaslOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterClientAuthenticationSaslOutputReference",
 		reflect.TypeOf((*MskClusterClientAuthenticationSaslOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -460,11 +460,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterClientAuthenticationTls",
+		"@cdktf/provider-aws.mskCluster.MskClusterClientAuthenticationTls",
 		reflect.TypeOf((*MskClusterClientAuthenticationTls)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskClusterClientAuthenticationTlsOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterClientAuthenticationTlsOutputReference",
 		reflect.TypeOf((*MskClusterClientAuthenticationTlsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateAuthorityArns", GoGetter: "CertificateAuthorityArns"},
@@ -499,15 +499,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterConfig",
+		"@cdktf/provider-aws.mskCluster.MskClusterConfig",
 		reflect.TypeOf((*MskClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterConfigurationInfo",
+		"@cdktf/provider-aws.mskCluster.MskClusterConfigurationInfo",
 		reflect.TypeOf((*MskClusterConfigurationInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskClusterConfigurationInfoOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterConfigurationInfoOutputReference",
 		reflect.TypeOf((*MskClusterConfigurationInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -543,15 +543,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterEncryptionInfo",
+		"@cdktf/provider-aws.mskCluster.MskClusterEncryptionInfo",
 		reflect.TypeOf((*MskClusterEncryptionInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterEncryptionInfoEncryptionInTransit",
+		"@cdktf/provider-aws.mskCluster.MskClusterEncryptionInfoEncryptionInTransit",
 		reflect.TypeOf((*MskClusterEncryptionInfoEncryptionInTransit)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskClusterEncryptionInfoEncryptionInTransitOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterEncryptionInfoEncryptionInTransitOutputReference",
 		reflect.TypeOf((*MskClusterEncryptionInfoEncryptionInTransitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientBroker", GoGetter: "ClientBroker"},
@@ -589,7 +589,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskClusterEncryptionInfoOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterEncryptionInfoOutputReference",
 		reflect.TypeOf((*MskClusterEncryptionInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -628,19 +628,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterLoggingInfo",
+		"@cdktf/provider-aws.mskCluster.MskClusterLoggingInfo",
 		reflect.TypeOf((*MskClusterLoggingInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterLoggingInfoBrokerLogs",
+		"@cdktf/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogs",
 		reflect.TypeOf((*MskClusterLoggingInfoBrokerLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterLoggingInfoBrokerLogsCloudwatchLogs",
+		"@cdktf/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsCloudwatchLogs",
 		reflect.TypeOf((*MskClusterLoggingInfoBrokerLogsCloudwatchLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference",
 		reflect.TypeOf((*MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -677,11 +677,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterLoggingInfoBrokerLogsFirehose",
+		"@cdktf/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsFirehose",
 		reflect.TypeOf((*MskClusterLoggingInfoBrokerLogsFirehose)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskClusterLoggingInfoBrokerLogsFirehoseOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsFirehoseOutputReference",
 		reflect.TypeOf((*MskClusterLoggingInfoBrokerLogsFirehoseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -718,7 +718,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskClusterLoggingInfoBrokerLogsOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsOutputReference",
 		reflect.TypeOf((*MskClusterLoggingInfoBrokerLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogs", GoGetter: "CloudwatchLogs"},
@@ -762,11 +762,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterLoggingInfoBrokerLogsS3",
+		"@cdktf/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsS3",
 		reflect.TypeOf((*MskClusterLoggingInfoBrokerLogsS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskClusterLoggingInfoBrokerLogsS3OutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsS3OutputReference",
 		reflect.TypeOf((*MskClusterLoggingInfoBrokerLogsS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -806,7 +806,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskClusterLoggingInfoOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterLoggingInfoOutputReference",
 		reflect.TypeOf((*MskClusterLoggingInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "brokerLogs", GoGetter: "BrokerLogs"},
@@ -841,11 +841,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterOpenMonitoring",
+		"@cdktf/provider-aws.mskCluster.MskClusterOpenMonitoring",
 		reflect.TypeOf((*MskClusterOpenMonitoring)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskClusterOpenMonitoringOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterOpenMonitoringOutputReference",
 		reflect.TypeOf((*MskClusterOpenMonitoringOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -880,15 +880,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterOpenMonitoringPrometheus",
+		"@cdktf/provider-aws.mskCluster.MskClusterOpenMonitoringPrometheus",
 		reflect.TypeOf((*MskClusterOpenMonitoringPrometheus)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterOpenMonitoringPrometheusJmxExporter",
+		"@cdktf/provider-aws.mskCluster.MskClusterOpenMonitoringPrometheusJmxExporter",
 		reflect.TypeOf((*MskClusterOpenMonitoringPrometheusJmxExporter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskClusterOpenMonitoringPrometheusJmxExporterOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterOpenMonitoringPrometheusJmxExporterOutputReference",
 		reflect.TypeOf((*MskClusterOpenMonitoringPrometheusJmxExporterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -922,11 +922,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterOpenMonitoringPrometheusNodeExporter",
+		"@cdktf/provider-aws.mskCluster.MskClusterOpenMonitoringPrometheusNodeExporter",
 		reflect.TypeOf((*MskClusterOpenMonitoringPrometheusNodeExporter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskClusterOpenMonitoringPrometheusNodeExporterOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterOpenMonitoringPrometheusNodeExporterOutputReference",
 		reflect.TypeOf((*MskClusterOpenMonitoringPrometheusNodeExporterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -960,7 +960,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskClusterOpenMonitoringPrometheusOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterOpenMonitoringPrometheusOutputReference",
 		reflect.TypeOf((*MskClusterOpenMonitoringPrometheusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1000,11 +1000,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskCluster.MskClusterTimeouts",
+		"@cdktf/provider-aws.mskCluster.MskClusterTimeouts",
 		reflect.TypeOf((*MskClusterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mskCluster.MskClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterTimeoutsOutputReference",
 		reflect.TypeOf((*MskClusterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

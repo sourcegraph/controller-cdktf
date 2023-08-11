@@ -180,7 +180,7 @@ func NewEmrserverlessApplicationAutoStartConfigurationOutputReference(terraformR
 	j := jsiiProxy_EmrserverlessApplicationAutoStartConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.emrserverlessApplication.EmrserverlessApplicationAutoStartConfigurationOutputReference",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStartConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewEmrserverlessApplicationAutoStartConfigurationOutputReference_Override(e
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrserverlessApplication.EmrserverlessApplicationAutoStartConfigurationOutputReference",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStartConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

@@ -413,7 +413,7 @@ func NewSecretsmanagerSecretVersion(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_SecretsmanagerSecretVersion{}
 
 	_jsii_.Create(
-		"aws.secretsmanagerSecretVersion.SecretsmanagerSecretVersion",
+		"@cdktf/provider-aws.secretsmanagerSecretVersion.SecretsmanagerSecretVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewSecretsmanagerSecretVersion_Override(s SecretsmanagerSecretVersion, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.secretsmanagerSecretVersion.SecretsmanagerSecretVersion",
+		"@cdktf/provider-aws.secretsmanagerSecretVersion.SecretsmanagerSecretVersion",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -581,7 +581,7 @@ func SecretsmanagerSecretVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.secretsmanagerSecretVersion.SecretsmanagerSecretVersion",
+		"@cdktf/provider-aws.secretsmanagerSecretVersion.SecretsmanagerSecretVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -600,7 +600,7 @@ func SecretsmanagerSecretVersion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.secretsmanagerSecretVersion.SecretsmanagerSecretVersion",
+		"@cdktf/provider-aws.secretsmanagerSecretVersion.SecretsmanagerSecretVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func SecretsmanagerSecretVersion_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.secretsmanagerSecretVersion.SecretsmanagerSecretVersion",
+		"@cdktf/provider-aws.secretsmanagerSecretVersion.SecretsmanagerSecretVersion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func SecretsmanagerSecretVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.secretsmanagerSecretVersion.SecretsmanagerSecretVersion",
+		"@cdktf/provider-aws.secretsmanagerSecretVersion.SecretsmanagerSecretVersion",
 		"tfResourceType",
 		&returns,
 	)

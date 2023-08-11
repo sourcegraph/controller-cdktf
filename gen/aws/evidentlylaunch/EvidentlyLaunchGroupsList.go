@@ -116,7 +116,7 @@ func NewEvidentlyLaunchGroupsList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_EvidentlyLaunchGroupsList{}
 
 	_jsii_.Create(
-		"aws.evidentlyLaunch.EvidentlyLaunchGroupsList",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchGroupsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEvidentlyLaunchGroupsList_Override(e EvidentlyLaunchGroupsList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.evidentlyLaunch.EvidentlyLaunchGroupsList",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchGroupsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

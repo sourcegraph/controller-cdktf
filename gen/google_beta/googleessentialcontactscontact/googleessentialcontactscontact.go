@@ -423,7 +423,7 @@ func NewGoogleEssentialContactsContact(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleEssentialContactsContact{}
 
 	_jsii_.Create(
-		"google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact",
+		"@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewGoogleEssentialContactsContact_Override(g GoogleEssentialContactsContact
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact",
+		"@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -591,7 +591,7 @@ func GoogleEssentialContactsContact_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact",
+		"@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func GoogleEssentialContactsContact_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact",
+		"@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func GoogleEssentialContactsContact_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact",
+		"@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func GoogleEssentialContactsContact_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact",
+		"@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact",
 		"tfResourceType",
 		&returns,
 	)

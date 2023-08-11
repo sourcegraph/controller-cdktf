@@ -116,7 +116,7 @@ func NewOpsworksCustomLayerEbsVolumeList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_OpsworksCustomLayerEbsVolumeList{}
 
 	_jsii_.Create(
-		"aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolumeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOpsworksCustomLayerEbsVolumeList_Override(o OpsworksCustomLayerEbsVolume
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolumeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

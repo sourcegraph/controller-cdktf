@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.zoneLockdown.ZoneLockdown",
+		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown",
 		reflect.TypeOf((*ZoneLockdown)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.zoneLockdown.ZoneLockdownConfig",
+		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfig",
 		reflect.TypeOf((*ZoneLockdownConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.zoneLockdown.ZoneLockdownConfigurations",
+		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurations",
 		reflect.TypeOf((*ZoneLockdownConfigurations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.zoneLockdown.ZoneLockdownConfigurationsList",
+		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurationsList",
 		reflect.TypeOf((*ZoneLockdownConfigurationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -100,7 +100,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.zoneLockdown.ZoneLockdownConfigurationsOutputReference",
+		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurationsOutputReference",
 		reflect.TypeOf((*ZoneLockdownConfigurationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

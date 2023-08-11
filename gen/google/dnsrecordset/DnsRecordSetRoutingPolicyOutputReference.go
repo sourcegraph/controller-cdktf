@@ -252,7 +252,7 @@ func NewDnsRecordSetRoutingPolicyOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_DnsRecordSetRoutingPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyOutputReference",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewDnsRecordSetRoutingPolicyOutputReference_Override(d DnsRecordSetRoutingP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyOutputReference",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

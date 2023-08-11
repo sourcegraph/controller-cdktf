@@ -250,7 +250,7 @@ func NewValidatingWebhookConfigurationV1WebhookClientConfigServiceOutputReferenc
 	j := jsiiProxy_ValidatingWebhookConfigurationV1WebhookClientConfigServiceOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookClientConfigServiceOutputReference",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookClientConfigServiceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewValidatingWebhookConfigurationV1WebhookClientConfigServiceOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookClientConfigServiceOutputReference",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookClientConfigServiceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

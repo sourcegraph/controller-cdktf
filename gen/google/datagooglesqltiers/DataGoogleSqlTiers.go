@@ -303,7 +303,7 @@ func NewDataGoogleSqlTiers(scope constructs.Construct, id *string, config *DataG
 	j := jsiiProxy_DataGoogleSqlTiers{}
 
 	_jsii_.Create(
-		"google.dataGoogleSqlTiers.DataGoogleSqlTiers",
+		"@cdktf/provider-google.dataGoogleSqlTiers.DataGoogleSqlTiers",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -316,7 +316,7 @@ func NewDataGoogleSqlTiers_Override(d DataGoogleSqlTiers, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleSqlTiers.DataGoogleSqlTiers",
+		"@cdktf/provider-google.dataGoogleSqlTiers.DataGoogleSqlTiers",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -416,7 +416,7 @@ func DataGoogleSqlTiers_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSqlTiers.DataGoogleSqlTiers",
+		"@cdktf/provider-google.dataGoogleSqlTiers.DataGoogleSqlTiers",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -435,7 +435,7 @@ func DataGoogleSqlTiers_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSqlTiers.DataGoogleSqlTiers",
+		"@cdktf/provider-google.dataGoogleSqlTiers.DataGoogleSqlTiers",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -454,7 +454,7 @@ func DataGoogleSqlTiers_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSqlTiers.DataGoogleSqlTiers",
+		"@cdktf/provider-google.dataGoogleSqlTiers.DataGoogleSqlTiers",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -467,7 +467,7 @@ func DataGoogleSqlTiers_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleSqlTiers.DataGoogleSqlTiers",
+		"@cdktf/provider-google.dataGoogleSqlTiers.DataGoogleSqlTiers",
 		"tfResourceType",
 		&returns,
 	)

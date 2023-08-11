@@ -369,7 +369,7 @@ func NewDataAwsAuditmanagerFramework(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataAwsAuditmanagerFramework{}
 
 	_jsii_.Create(
-		"aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFramework",
+		"@cdktf/provider-aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFramework",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -382,7 +382,7 @@ func NewDataAwsAuditmanagerFramework_Override(d DataAwsAuditmanagerFramework, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFramework",
+		"@cdktf/provider-aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFramework",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -482,7 +482,7 @@ func DataAwsAuditmanagerFramework_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFramework",
+		"@cdktf/provider-aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFramework",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -501,7 +501,7 @@ func DataAwsAuditmanagerFramework_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFramework",
+		"@cdktf/provider-aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFramework",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -520,7 +520,7 @@ func DataAwsAuditmanagerFramework_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFramework",
+		"@cdktf/provider-aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFramework",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -533,7 +533,7 @@ func DataAwsAuditmanagerFramework_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFramework",
+		"@cdktf/provider-aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFramework",
 		"tfResourceType",
 		&returns,
 	)

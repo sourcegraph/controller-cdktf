@@ -348,7 +348,7 @@ func NewJobV1SpecTemplateSpecSecurityContextOutputReference(terraformResource cd
 	j := jsiiProxy_JobV1SpecTemplateSpecSecurityContextOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecSecurityContextOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecSecurityContextOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewJobV1SpecTemplateSpecSecurityContextOutputReference_Override(j JobV1Spec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecSecurityContextOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecSecurityContextOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

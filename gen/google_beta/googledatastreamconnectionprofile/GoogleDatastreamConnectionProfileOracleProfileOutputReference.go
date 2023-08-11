@@ -296,7 +296,7 @@ func NewGoogleDatastreamConnectionProfileOracleProfileOutputReference(terraformR
 	j := jsiiProxy_GoogleDatastreamConnectionProfileOracleProfileOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamConnectionProfile.GoogleDatastreamConnectionProfileOracleProfileOutputReference",
+		"@cdktf/provider-google-beta.googleDatastreamConnectionProfile.GoogleDatastreamConnectionProfileOracleProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -308,7 +308,7 @@ func NewGoogleDatastreamConnectionProfileOracleProfileOutputReference_Override(g
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamConnectionProfile.GoogleDatastreamConnectionProfileOracleProfileOutputReference",
+		"@cdktf/provider-google-beta.googleDatastreamConnectionProfile.GoogleDatastreamConnectionProfileOracleProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

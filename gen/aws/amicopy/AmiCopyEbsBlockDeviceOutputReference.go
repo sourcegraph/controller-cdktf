@@ -255,7 +255,7 @@ func NewAmiCopyEbsBlockDeviceOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_AmiCopyEbsBlockDeviceOutputReference{}
 
 	_jsii_.Create(
-		"aws.amiCopy.AmiCopyEbsBlockDeviceOutputReference",
+		"@cdktf/provider-aws.amiCopy.AmiCopyEbsBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -267,7 +267,7 @@ func NewAmiCopyEbsBlockDeviceOutputReference_Override(a AmiCopyEbsBlockDeviceOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.amiCopy.AmiCopyEbsBlockDeviceOutputReference",
+		"@cdktf/provider-aws.amiCopy.AmiCopyEbsBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

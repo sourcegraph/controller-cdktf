@@ -251,7 +251,7 @@ func NewMedialiveChannelDestinationsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_MedialiveChannelDestinationsOutputReference{}
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelDestinationsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewMedialiveChannelDestinationsOutputReference_Override(m MedialiveChannelD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelDestinationsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

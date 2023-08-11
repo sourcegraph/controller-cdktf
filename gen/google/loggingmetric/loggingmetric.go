@@ -558,7 +558,7 @@ func NewLoggingMetric(scope constructs.Construct, id *string, config *LoggingMet
 	j := jsiiProxy_LoggingMetric{}
 
 	_jsii_.Create(
-		"google.loggingMetric.LoggingMetric",
+		"@cdktf/provider-google.loggingMetric.LoggingMetric",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -571,7 +571,7 @@ func NewLoggingMetric_Override(l LoggingMetric, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingMetric.LoggingMetric",
+		"@cdktf/provider-google.loggingMetric.LoggingMetric",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -770,7 +770,7 @@ func LoggingMetric_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingMetric.LoggingMetric",
+		"@cdktf/provider-google.loggingMetric.LoggingMetric",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -789,7 +789,7 @@ func LoggingMetric_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingMetric.LoggingMetric",
+		"@cdktf/provider-google.loggingMetric.LoggingMetric",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -808,7 +808,7 @@ func LoggingMetric_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingMetric.LoggingMetric",
+		"@cdktf/provider-google.loggingMetric.LoggingMetric",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -821,7 +821,7 @@ func LoggingMetric_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.loggingMetric.LoggingMetric",
+		"@cdktf/provider-google.loggingMetric.LoggingMetric",
 		"tfResourceType",
 		&returns,
 	)

@@ -189,7 +189,7 @@ func NewDataAwsEfsAccessPointPosixUserOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataAwsEfsAccessPointPosixUserOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointPosixUserOutputReference",
+		"@cdktf/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointPosixUserOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsEfsAccessPointPosixUserOutputReference_Override(d DataAwsEfsAcces
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointPosixUserOutputReference",
+		"@cdktf/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointPosixUserOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

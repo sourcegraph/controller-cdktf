@@ -457,7 +457,7 @@ func NewGoogleSccMuteConfig(scope constructs.Construct, id *string, config *Goog
 	j := jsiiProxy_GoogleSccMuteConfig{}
 
 	_jsii_.Create(
-		"google-beta.googleSccMuteConfig.GoogleSccMuteConfig",
+		"@cdktf/provider-google-beta.googleSccMuteConfig.GoogleSccMuteConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -470,7 +470,7 @@ func NewGoogleSccMuteConfig_Override(g GoogleSccMuteConfig, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSccMuteConfig.GoogleSccMuteConfig",
+		"@cdktf/provider-google-beta.googleSccMuteConfig.GoogleSccMuteConfig",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -625,7 +625,7 @@ func GoogleSccMuteConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSccMuteConfig.GoogleSccMuteConfig",
+		"@cdktf/provider-google-beta.googleSccMuteConfig.GoogleSccMuteConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func GoogleSccMuteConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSccMuteConfig.GoogleSccMuteConfig",
+		"@cdktf/provider-google-beta.googleSccMuteConfig.GoogleSccMuteConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -663,7 +663,7 @@ func GoogleSccMuteConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSccMuteConfig.GoogleSccMuteConfig",
+		"@cdktf/provider-google-beta.googleSccMuteConfig.GoogleSccMuteConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func GoogleSccMuteConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleSccMuteConfig.GoogleSccMuteConfig",
+		"@cdktf/provider-google-beta.googleSccMuteConfig.GoogleSccMuteConfig",
 		"tfResourceType",
 		&returns,
 	)

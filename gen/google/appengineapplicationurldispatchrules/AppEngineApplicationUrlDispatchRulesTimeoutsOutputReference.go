@@ -228,7 +228,7 @@ func NewAppEngineApplicationUrlDispatchRulesTimeoutsOutputReference(terraformRes
 	j := jsiiProxy_AppEngineApplicationUrlDispatchRulesTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRulesTimeoutsOutputReference",
+		"@cdktf/provider-google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRulesTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAppEngineApplicationUrlDispatchRulesTimeoutsOutputReference_Override(a A
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRulesTimeoutsOutputReference",
+		"@cdktf/provider-google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRulesTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

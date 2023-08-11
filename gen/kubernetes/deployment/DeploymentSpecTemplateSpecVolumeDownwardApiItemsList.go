@@ -116,7 +116,7 @@ func NewDeploymentSpecTemplateSpecVolumeDownwardApiItemsList(terraformResource c
 	j := jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsList{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDeploymentSpecTemplateSpecVolumeDownwardApiItemsList_Override(d Deployme
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

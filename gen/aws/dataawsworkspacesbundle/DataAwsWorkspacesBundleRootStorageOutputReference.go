@@ -167,7 +167,7 @@ func NewDataAwsWorkspacesBundleRootStorageOutputReference(terraformResource cdkt
 	j := jsiiProxy_DataAwsWorkspacesBundleRootStorageOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorageOutputReference",
+		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsWorkspacesBundleRootStorageOutputReference_Override(d DataAwsWork
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorageOutputReference",
+		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

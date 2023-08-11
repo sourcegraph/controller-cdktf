@@ -228,7 +228,7 @@ func NewGoogleKmsCryptoKeyVersionTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleKmsCryptoKeyVersionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleKmsCryptoKeyVersionTimeoutsOutputReference_Override(g GoogleKmsCry
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

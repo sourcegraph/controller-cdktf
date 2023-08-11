@@ -228,7 +228,7 @@ func NewSagemakerDomainDefaultUserSettingsSharingSettingsOutputReference(terrafo
 	j := jsiiProxy_SagemakerDomainDefaultUserSettingsSharingSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsSharingSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsSharingSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSagemakerDomainDefaultUserSettingsSharingSettingsOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsSharingSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsSharingSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

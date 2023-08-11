@@ -520,7 +520,7 @@ func NewKinesisVideoStream(scope constructs.Construct, id *string, config *Kines
 	j := jsiiProxy_KinesisVideoStream{}
 
 	_jsii_.Create(
-		"aws.kinesisVideoStream.KinesisVideoStream",
+		"@cdktf/provider-aws.kinesisVideoStream.KinesisVideoStream",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -533,7 +533,7 @@ func NewKinesisVideoStream_Override(k KinesisVideoStream, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisVideoStream.KinesisVideoStream",
+		"@cdktf/provider-aws.kinesisVideoStream.KinesisVideoStream",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -721,7 +721,7 @@ func KinesisVideoStream_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kinesisVideoStream.KinesisVideoStream",
+		"@cdktf/provider-aws.kinesisVideoStream.KinesisVideoStream",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -740,7 +740,7 @@ func KinesisVideoStream_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kinesisVideoStream.KinesisVideoStream",
+		"@cdktf/provider-aws.kinesisVideoStream.KinesisVideoStream",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -759,7 +759,7 @@ func KinesisVideoStream_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kinesisVideoStream.KinesisVideoStream",
+		"@cdktf/provider-aws.kinesisVideoStream.KinesisVideoStream",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -772,7 +772,7 @@ func KinesisVideoStream_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.kinesisVideoStream.KinesisVideoStream",
+		"@cdktf/provider-aws.kinesisVideoStream.KinesisVideoStream",
 		"tfResourceType",
 		&returns,
 	)

@@ -276,7 +276,7 @@ func NewJobV1SpecTemplateSpecTolerationOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_JobV1SpecTemplateSpecTolerationOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecTolerationOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecTolerationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewJobV1SpecTemplateSpecTolerationOutputReference_Override(j JobV1SpecTempl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecTolerationOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecTolerationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		j,
 	)

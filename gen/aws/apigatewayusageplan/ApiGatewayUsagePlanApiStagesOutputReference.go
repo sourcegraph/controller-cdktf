@@ -226,7 +226,7 @@ func NewApiGatewayUsagePlanApiStagesOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference{}
 
 	_jsii_.Create(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesOutputReference",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewApiGatewayUsagePlanApiStagesOutputReference_Override(a ApiGatewayUsagePl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesOutputReference",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

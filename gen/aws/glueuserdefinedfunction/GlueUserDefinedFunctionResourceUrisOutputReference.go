@@ -202,7 +202,7 @@ func NewGlueUserDefinedFunctionResourceUrisOutputReference(terraformResource cdk
 	j := jsiiProxy_GlueUserDefinedFunctionResourceUrisOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueUserDefinedFunction.GlueUserDefinedFunctionResourceUrisOutputReference",
+		"@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunctionResourceUrisOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGlueUserDefinedFunctionResourceUrisOutputReference_Override(g GlueUserDe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueUserDefinedFunction.GlueUserDefinedFunctionResourceUrisOutputReference",
+		"@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunctionResourceUrisOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

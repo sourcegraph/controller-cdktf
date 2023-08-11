@@ -179,7 +179,7 @@ func NewGoogleCloudfunctionsFunctionEventTriggerFailurePolicyOutputReference(ter
 	j := jsiiProxy_GoogleCloudfunctionsFunctionEventTriggerFailurePolicyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunctionEventTriggerFailurePolicyOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunctionEventTriggerFailurePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleCloudfunctionsFunctionEventTriggerFailurePolicyOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunctionEventTriggerFailurePolicyOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunctionEventTriggerFailurePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

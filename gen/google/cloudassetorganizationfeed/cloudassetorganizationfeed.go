@@ -519,7 +519,7 @@ func NewCloudAssetOrganizationFeed(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_CloudAssetOrganizationFeed{}
 
 	_jsii_.Create(
-		"google.cloudAssetOrganizationFeed.CloudAssetOrganizationFeed",
+		"@cdktf/provider-google.cloudAssetOrganizationFeed.CloudAssetOrganizationFeed",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -532,7 +532,7 @@ func NewCloudAssetOrganizationFeed_Override(c CloudAssetOrganizationFeed, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudAssetOrganizationFeed.CloudAssetOrganizationFeed",
+		"@cdktf/provider-google.cloudAssetOrganizationFeed.CloudAssetOrganizationFeed",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -709,7 +709,7 @@ func CloudAssetOrganizationFeed_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudAssetOrganizationFeed.CloudAssetOrganizationFeed",
+		"@cdktf/provider-google.cloudAssetOrganizationFeed.CloudAssetOrganizationFeed",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -728,7 +728,7 @@ func CloudAssetOrganizationFeed_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudAssetOrganizationFeed.CloudAssetOrganizationFeed",
+		"@cdktf/provider-google.cloudAssetOrganizationFeed.CloudAssetOrganizationFeed",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -747,7 +747,7 @@ func CloudAssetOrganizationFeed_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudAssetOrganizationFeed.CloudAssetOrganizationFeed",
+		"@cdktf/provider-google.cloudAssetOrganizationFeed.CloudAssetOrganizationFeed",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -760,7 +760,7 @@ func CloudAssetOrganizationFeed_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudAssetOrganizationFeed.CloudAssetOrganizationFeed",
+		"@cdktf/provider-google.cloudAssetOrganizationFeed.CloudAssetOrganizationFeed",
 		"tfResourceType",
 		&returns,
 	)

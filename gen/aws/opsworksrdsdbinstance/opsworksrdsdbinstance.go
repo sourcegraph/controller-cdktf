@@ -388,7 +388,7 @@ func NewOpsworksRdsDbInstance(scope constructs.Construct, id *string, config *Op
 	j := jsiiProxy_OpsworksRdsDbInstance{}
 
 	_jsii_.Create(
-		"aws.opsworksRdsDbInstance.OpsworksRdsDbInstance",
+		"@cdktf/provider-aws.opsworksRdsDbInstance.OpsworksRdsDbInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -401,7 +401,7 @@ func NewOpsworksRdsDbInstance_Override(o OpsworksRdsDbInstance, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksRdsDbInstance.OpsworksRdsDbInstance",
+		"@cdktf/provider-aws.opsworksRdsDbInstance.OpsworksRdsDbInstance",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -556,7 +556,7 @@ func OpsworksRdsDbInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksRdsDbInstance.OpsworksRdsDbInstance",
+		"@cdktf/provider-aws.opsworksRdsDbInstance.OpsworksRdsDbInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func OpsworksRdsDbInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksRdsDbInstance.OpsworksRdsDbInstance",
+		"@cdktf/provider-aws.opsworksRdsDbInstance.OpsworksRdsDbInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -594,7 +594,7 @@ func OpsworksRdsDbInstance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksRdsDbInstance.OpsworksRdsDbInstance",
+		"@cdktf/provider-aws.opsworksRdsDbInstance.OpsworksRdsDbInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func OpsworksRdsDbInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.opsworksRdsDbInstance.OpsworksRdsDbInstance",
+		"@cdktf/provider-aws.opsworksRdsDbInstance.OpsworksRdsDbInstance",
 		"tfResourceType",
 		&returns,
 	)

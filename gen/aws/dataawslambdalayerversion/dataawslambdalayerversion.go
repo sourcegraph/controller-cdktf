@@ -484,7 +484,7 @@ func NewDataAwsLambdaLayerVersion(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DataAwsLambdaLayerVersion{}
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion",
+		"@cdktf/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -497,7 +497,7 @@ func NewDataAwsLambdaLayerVersion_Override(d DataAwsLambdaLayerVersion, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion",
+		"@cdktf/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -630,7 +630,7 @@ func DataAwsLambdaLayerVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion",
+		"@cdktf/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -649,7 +649,7 @@ func DataAwsLambdaLayerVersion_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion",
+		"@cdktf/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func DataAwsLambdaLayerVersion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion",
+		"@cdktf/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -681,7 +681,7 @@ func DataAwsLambdaLayerVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion",
+		"@cdktf/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion",
 		"tfResourceType",
 		&returns,
 	)

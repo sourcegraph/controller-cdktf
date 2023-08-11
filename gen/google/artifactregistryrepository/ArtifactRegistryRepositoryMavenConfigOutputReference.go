@@ -204,7 +204,7 @@ func NewArtifactRegistryRepositoryMavenConfigOutputReference(terraformResource c
 	j := jsiiProxy_ArtifactRegistryRepositoryMavenConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryMavenConfigOutputReference",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryMavenConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewArtifactRegistryRepositoryMavenConfigOutputReference_Override(a Artifact
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryMavenConfigOutputReference",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryMavenConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

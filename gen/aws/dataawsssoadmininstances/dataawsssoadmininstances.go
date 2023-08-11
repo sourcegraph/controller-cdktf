@@ -290,7 +290,7 @@ func NewDataAwsSsoadminInstances(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataAwsSsoadminInstances{}
 
 	_jsii_.Create(
-		"aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances",
+		"@cdktf/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -303,7 +303,7 @@ func NewDataAwsSsoadminInstances_Override(d DataAwsSsoadminInstances, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances",
+		"@cdktf/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -392,7 +392,7 @@ func DataAwsSsoadminInstances_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances",
+		"@cdktf/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -411,7 +411,7 @@ func DataAwsSsoadminInstances_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances",
+		"@cdktf/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -430,7 +430,7 @@ func DataAwsSsoadminInstances_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances",
+		"@cdktf/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -443,7 +443,7 @@ func DataAwsSsoadminInstances_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances",
+		"@cdktf/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances",
 		"tfResourceType",
 		&returns,
 	)

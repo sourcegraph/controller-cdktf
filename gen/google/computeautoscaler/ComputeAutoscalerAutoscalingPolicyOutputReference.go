@@ -370,7 +370,7 @@ func NewComputeAutoscalerAutoscalingPolicyOutputReference(terraformResource cdkt
 	j := jsiiProxy_ComputeAutoscalerAutoscalingPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyOutputReference",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -382,7 +382,7 @@ func NewComputeAutoscalerAutoscalingPolicyOutputReference_Override(c ComputeAuto
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyOutputReference",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

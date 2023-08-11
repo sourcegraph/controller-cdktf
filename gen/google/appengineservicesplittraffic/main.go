@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.appEngineServiceSplitTraffic.AppEngineServiceSplitTraffic",
+		"@cdktf/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTraffic",
 		reflect.TypeOf((*AppEngineServiceSplitTraffic)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineServiceSplitTraffic.AppEngineServiceSplitTrafficConfig",
+		"@cdktf/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTrafficConfig",
 		reflect.TypeOf((*AppEngineServiceSplitTrafficConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineServiceSplitTraffic.AppEngineServiceSplitTrafficSplit",
+		"@cdktf/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTrafficSplit",
 		reflect.TypeOf((*AppEngineServiceSplitTrafficSplit)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineServiceSplitTraffic.AppEngineServiceSplitTrafficSplitOutputReference",
+		"@cdktf/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTrafficSplitOutputReference",
 		reflect.TypeOf((*AppEngineServiceSplitTrafficSplitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocations", GoGetter: "Allocations"},
@@ -115,11 +115,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineServiceSplitTraffic.AppEngineServiceSplitTrafficTimeouts",
+		"@cdktf/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTrafficTimeouts",
 		reflect.TypeOf((*AppEngineServiceSplitTrafficTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineServiceSplitTraffic.AppEngineServiceSplitTrafficTimeoutsOutputReference",
+		"@cdktf/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTrafficTimeoutsOutputReference",
 		reflect.TypeOf((*AppEngineServiceSplitTrafficTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -104,7 +104,7 @@ func NewDataAwsLambdaFunctionTracingConfigList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataAwsLambdaFunctionTracingConfigList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionTracingConfigList",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionTracingConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLambdaFunctionTracingConfigList_Override(d DataAwsLambdaFunctionT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionTracingConfigList",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionTracingConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

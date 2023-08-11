@@ -104,7 +104,7 @@ func NewDataAwsImagebuilderImagePipelineScheduleList(terraformResource cdktf.IIn
 	j := jsiiProxy_DataAwsImagebuilderImagePipelineScheduleList{}
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineScheduleList",
+		"@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineScheduleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsImagebuilderImagePipelineScheduleList_Override(d DataAwsImagebuil
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineScheduleList",
+		"@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineScheduleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

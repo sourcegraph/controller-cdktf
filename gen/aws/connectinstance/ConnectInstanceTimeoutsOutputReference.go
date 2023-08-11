@@ -204,7 +204,7 @@ func NewConnectInstanceTimeoutsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_ConnectInstanceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.connectInstance.ConnectInstanceTimeoutsOutputReference",
+		"@cdktf/provider-aws.connectInstance.ConnectInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewConnectInstanceTimeoutsOutputReference_Override(c ConnectInstanceTimeout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectInstance.ConnectInstanceTimeoutsOutputReference",
+		"@cdktf/provider-aws.connectInstance.ConnectInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

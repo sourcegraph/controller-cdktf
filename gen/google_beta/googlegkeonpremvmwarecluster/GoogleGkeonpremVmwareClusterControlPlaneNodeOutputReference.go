@@ -263,7 +263,7 @@ func NewGoogleGkeonpremVmwareClusterControlPlaneNodeOutputReference(terraformRes
 	j := jsiiProxy_GoogleGkeonpremVmwareClusterControlPlaneNodeOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterControlPlaneNodeOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterControlPlaneNodeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -275,7 +275,7 @@ func NewGoogleGkeonpremVmwareClusterControlPlaneNodeOutputReference_Override(g G
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterControlPlaneNodeOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterControlPlaneNodeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

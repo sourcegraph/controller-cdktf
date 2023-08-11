@@ -228,7 +228,7 @@ func NewAppSharedCredentialsTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_AppSharedCredentialsTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"okta.appSharedCredentials.AppSharedCredentialsTimeoutsOutputReference",
+		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAppSharedCredentialsTimeoutsOutputReference_Override(a AppSharedCredenti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appSharedCredentials.AppSharedCredentialsTimeoutsOutputReference",
+		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

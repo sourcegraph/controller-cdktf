@@ -203,7 +203,7 @@ func NewDynamodbTableTtlOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_DynamodbTableTtlOutputReference{}
 
 	_jsii_.Create(
-		"aws.dynamodbTable.DynamodbTableTtlOutputReference",
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTableTtlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewDynamodbTableTtlOutputReference_Override(d DynamodbTableTtlOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dynamodbTable.DynamodbTableTtlOutputReference",
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTableTtlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

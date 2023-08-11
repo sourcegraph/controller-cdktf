@@ -116,7 +116,7 @@ func NewGlobalacceleratorEndpointGroupEndpointConfigurationList(terraformResourc
 	j := jsiiProxy_GlobalacceleratorEndpointGroupEndpointConfigurationList{}
 
 	_jsii_.Create(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupEndpointConfigurationList",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupEndpointConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGlobalacceleratorEndpointGroupEndpointConfigurationList_Override(g Globa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupEndpointConfigurationList",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupEndpointConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

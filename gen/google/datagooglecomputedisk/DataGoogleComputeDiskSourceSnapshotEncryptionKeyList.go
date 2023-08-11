@@ -104,7 +104,7 @@ func NewDataGoogleComputeDiskSourceSnapshotEncryptionKeyList(terraformResource c
 	j := jsiiProxy_DataGoogleComputeDiskSourceSnapshotEncryptionKeyList{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeDisk.DataGoogleComputeDiskSourceSnapshotEncryptionKeyList",
+		"@cdktf/provider-google.dataGoogleComputeDisk.DataGoogleComputeDiskSourceSnapshotEncryptionKeyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeDiskSourceSnapshotEncryptionKeyList_Override(d DataGoog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeDisk.DataGoogleComputeDiskSourceSnapshotEncryptionKeyList",
+		"@cdktf/provider-google.dataGoogleComputeDisk.DataGoogleComputeDiskSourceSnapshotEncryptionKeyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

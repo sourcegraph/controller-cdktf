@@ -191,7 +191,7 @@ func NewApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference(terraform
 	j := jsiiProxy_ApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -203,7 +203,7 @@ func NewApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference",
+		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -354,7 +354,7 @@ func NewGoogleIapWebTypeComputeIamPolicy(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleIapWebTypeComputeIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy",
+		"@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -367,7 +367,7 @@ func NewGoogleIapWebTypeComputeIamPolicy_Override(g GoogleIapWebTypeComputeIamPo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy",
+		"@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -500,7 +500,7 @@ func GoogleIapWebTypeComputeIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy",
+		"@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -519,7 +519,7 @@ func GoogleIapWebTypeComputeIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy",
+		"@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -538,7 +538,7 @@ func GoogleIapWebTypeComputeIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy",
+		"@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func GoogleIapWebTypeComputeIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy",
+		"@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

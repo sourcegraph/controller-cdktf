@@ -204,7 +204,7 @@ func NewCognitoRiskConfigurationRiskExceptionConfigurationOutputReference(terraf
 	j := jsiiProxy_CognitoRiskConfigurationRiskExceptionConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoRiskConfiguration.CognitoRiskConfigurationRiskExceptionConfigurationOutputReference",
+		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationRiskExceptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCognitoRiskConfigurationRiskExceptionConfigurationOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoRiskConfiguration.CognitoRiskConfigurationRiskExceptionConfigurationOutputReference",
+		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationRiskExceptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

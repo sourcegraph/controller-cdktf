@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.glueSchema.GlueSchema",
+		"@cdktf/provider-aws.glueSchema.GlueSchema",
 		reflect.TypeOf((*GlueSchema)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueSchema.GlueSchemaConfig",
+		"@cdktf/provider-aws.glueSchema.GlueSchemaConfig",
 		reflect.TypeOf((*GlueSchemaConfig)(nil)).Elem(),
 	)
 }

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dxGateway.DxGateway",
+		"@cdktf/provider-aws.dxGateway.DxGateway",
 		reflect.TypeOf((*DxGateway)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,15 +64,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dxGateway.DxGatewayConfig",
+		"@cdktf/provider-aws.dxGateway.DxGatewayConfig",
 		reflect.TypeOf((*DxGatewayConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dxGateway.DxGatewayTimeouts",
+		"@cdktf/provider-aws.dxGateway.DxGatewayTimeouts",
 		reflect.TypeOf((*DxGatewayTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dxGateway.DxGatewayTimeoutsOutputReference",
+		"@cdktf/provider-aws.dxGateway.DxGatewayTimeoutsOutputReference",
 		reflect.TypeOf((*DxGatewayTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

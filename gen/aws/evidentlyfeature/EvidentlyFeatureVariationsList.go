@@ -116,7 +116,7 @@ func NewEvidentlyFeatureVariationsList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_EvidentlyFeatureVariationsList{}
 
 	_jsii_.Create(
-		"aws.evidentlyFeature.EvidentlyFeatureVariationsList",
+		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureVariationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEvidentlyFeatureVariationsList_Override(e EvidentlyFeatureVariationsList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.evidentlyFeature.EvidentlyFeatureVariationsList",
+		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureVariationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

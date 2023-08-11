@@ -180,7 +180,7 @@ func NewEmrcontainersVirtualClusterTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_EmrcontainersVirtualClusterTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewEmrcontainersVirtualClusterTimeoutsOutputReference_Override(e Emrcontain
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

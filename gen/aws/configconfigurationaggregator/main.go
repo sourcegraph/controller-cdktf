@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.configConfigurationAggregator.ConfigConfigurationAggregator",
+		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregator",
 		reflect.TypeOf((*ConfigConfigurationAggregator)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountAggregationSource", GoGetter: "AccountAggregationSource"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.configConfigurationAggregator.ConfigConfigurationAggregatorAccountAggregationSource",
+		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorAccountAggregationSource",
 		reflect.TypeOf((*ConfigConfigurationAggregatorAccountAggregationSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.configConfigurationAggregator.ConfigConfigurationAggregatorAccountAggregationSourceOutputReference",
+		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorAccountAggregationSourceOutputReference",
 		reflect.TypeOf((*ConfigConfigurationAggregatorAccountAggregationSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountIds", GoGetter: "AccountIds"},
@@ -116,15 +116,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.configConfigurationAggregator.ConfigConfigurationAggregatorConfig",
+		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorConfig",
 		reflect.TypeOf((*ConfigConfigurationAggregatorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.configConfigurationAggregator.ConfigConfigurationAggregatorOrganizationAggregationSource",
+		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorOrganizationAggregationSource",
 		reflect.TypeOf((*ConfigConfigurationAggregatorOrganizationAggregationSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.configConfigurationAggregator.ConfigConfigurationAggregatorOrganizationAggregationSourceOutputReference",
+		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorOrganizationAggregationSourceOutputReference",
 		reflect.TypeOf((*ConfigConfigurationAggregatorOrganizationAggregationSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allRegions", GoGetter: "AllRegions"},

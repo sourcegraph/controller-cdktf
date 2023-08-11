@@ -335,7 +335,7 @@ func NewDataKubernetesServiceAccount(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataKubernetesServiceAccount{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesServiceAccount.DataKubernetesServiceAccount",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceAccount.DataKubernetesServiceAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -348,7 +348,7 @@ func NewDataKubernetesServiceAccount_Override(d DataKubernetesServiceAccount, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesServiceAccount.DataKubernetesServiceAccount",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceAccount.DataKubernetesServiceAccount",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -437,7 +437,7 @@ func DataKubernetesServiceAccount_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesServiceAccount.DataKubernetesServiceAccount",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceAccount.DataKubernetesServiceAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -456,7 +456,7 @@ func DataKubernetesServiceAccount_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesServiceAccount.DataKubernetesServiceAccount",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceAccount.DataKubernetesServiceAccount",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -475,7 +475,7 @@ func DataKubernetesServiceAccount_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesServiceAccount.DataKubernetesServiceAccount",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceAccount.DataKubernetesServiceAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -488,7 +488,7 @@ func DataKubernetesServiceAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.dataKubernetesServiceAccount.DataKubernetesServiceAccount",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceAccount.DataKubernetesServiceAccount",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewGoogleComputeRegionDiskTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GoogleComputeRegionDiskTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeRegionDiskTimeoutsOutputReference_Override(g GoogleComputeR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.securityGroupRule.SecurityGroupRule",
+		"@cdktf/provider-aws.securityGroupRule.SecurityGroupRule",
 		reflect.TypeOf((*SecurityGroupRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,15 +88,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.securityGroupRule.SecurityGroupRuleConfig",
+		"@cdktf/provider-aws.securityGroupRule.SecurityGroupRuleConfig",
 		reflect.TypeOf((*SecurityGroupRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.securityGroupRule.SecurityGroupRuleTimeouts",
+		"@cdktf/provider-aws.securityGroupRule.SecurityGroupRuleTimeouts",
 		reflect.TypeOf((*SecurityGroupRuleTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.securityGroupRule.SecurityGroupRuleTimeoutsOutputReference",
+		"@cdktf/provider-aws.securityGroupRule.SecurityGroupRuleTimeoutsOutputReference",
 		reflect.TypeOf((*SecurityGroupRuleTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

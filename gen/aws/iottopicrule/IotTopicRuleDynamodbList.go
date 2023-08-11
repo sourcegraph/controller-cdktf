@@ -116,7 +116,7 @@ func NewIotTopicRuleDynamodbList(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_IotTopicRuleDynamodbList{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleDynamodbList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewIotTopicRuleDynamodbList_Override(i IotTopicRuleDynamodbList, terraformR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleDynamodbList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

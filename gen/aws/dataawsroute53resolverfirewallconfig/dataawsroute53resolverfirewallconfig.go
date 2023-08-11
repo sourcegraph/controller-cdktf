@@ -313,7 +313,7 @@ func NewDataAwsRoute53ResolverFirewallConfig(scope constructs.Construct, id *str
 	j := jsiiProxy_DataAwsRoute53ResolverFirewallConfig{}
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -326,7 +326,7 @@ func NewDataAwsRoute53ResolverFirewallConfig_Override(d DataAwsRoute53ResolverFi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -426,7 +426,7 @@ func DataAwsRoute53ResolverFirewallConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +445,7 @@ func DataAwsRoute53ResolverFirewallConfig_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -464,7 +464,7 @@ func DataAwsRoute53ResolverFirewallConfig_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataAwsRoute53ResolverFirewallConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig",
 		"tfResourceType",
 		&returns,
 	)

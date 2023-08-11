@@ -398,7 +398,7 @@ func NewDataGoogleContainerRegistryImage(scope constructs.Construct, id *string,
 	j := jsiiProxy_DataGoogleContainerRegistryImage{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage",
+		"@cdktf/provider-google-beta.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -411,7 +411,7 @@ func NewDataGoogleContainerRegistryImage_Override(d DataGoogleContainerRegistryI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage",
+		"@cdktf/provider-google-beta.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -555,7 +555,7 @@ func DataGoogleContainerRegistryImage_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage",
+		"@cdktf/provider-google-beta.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func DataGoogleContainerRegistryImage_IsTerraformDataSource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage",
+		"@cdktf/provider-google-beta.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -593,7 +593,7 @@ func DataGoogleContainerRegistryImage_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage",
+		"@cdktf/provider-google-beta.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -606,7 +606,7 @@ func DataGoogleContainerRegistryImage_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage",
+		"@cdktf/provider-google-beta.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage",
 		"tfResourceType",
 		&returns,
 	)

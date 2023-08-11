@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.launchConfiguration.LaunchConfiguration",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfiguration",
 		reflect.TypeOf((*LaunchConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -118,15 +118,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.launchConfiguration.LaunchConfigurationConfig",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationConfig",
 		reflect.TypeOf((*LaunchConfigurationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.launchConfiguration.LaunchConfigurationEbsBlockDevice",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice",
 		reflect.TypeOf((*LaunchConfigurationEbsBlockDevice)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceList",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceList",
 		reflect.TypeOf((*LaunchConfigurationEbsBlockDeviceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -147,7 +147,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceOutputReference",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceOutputReference",
 		reflect.TypeOf((*LaunchConfigurationEbsBlockDeviceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -205,11 +205,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.launchConfiguration.LaunchConfigurationEphemeralBlockDevice",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDevice",
 		reflect.TypeOf((*LaunchConfigurationEphemeralBlockDevice)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceList",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceList",
 		reflect.TypeOf((*LaunchConfigurationEphemeralBlockDeviceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -230,7 +230,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceOutputReference",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceOutputReference",
 		reflect.TypeOf((*LaunchConfigurationEphemeralBlockDeviceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -270,11 +270,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.launchConfiguration.LaunchConfigurationMetadataOptions",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationMetadataOptions",
 		reflect.TypeOf((*LaunchConfigurationMetadataOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.launchConfiguration.LaunchConfigurationMetadataOptionsOutputReference",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationMetadataOptionsOutputReference",
 		reflect.TypeOf((*LaunchConfigurationMetadataOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -315,11 +315,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.launchConfiguration.LaunchConfigurationRootBlockDevice",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDevice",
 		reflect.TypeOf((*LaunchConfigurationRootBlockDevice)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.launchConfiguration.LaunchConfigurationRootBlockDeviceOutputReference",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDeviceOutputReference",
 		reflect.TypeOf((*LaunchConfigurationRootBlockDeviceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

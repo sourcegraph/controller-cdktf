@@ -228,7 +228,7 @@ func NewOpsworksMysqlLayerLoadBasedAutoScalingOutputReference(terraformResource 
 	j := jsiiProxy_OpsworksMysqlLayerLoadBasedAutoScalingOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingOutputReference",
+		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewOpsworksMysqlLayerLoadBasedAutoScalingOutputReference_Override(o Opswork
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingOutputReference",
+		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

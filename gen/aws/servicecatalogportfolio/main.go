@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.servicecatalogPortfolio.ServicecatalogPortfolio",
+		"@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolio",
 		reflect.TypeOf((*ServicecatalogPortfolio)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.servicecatalogPortfolio.ServicecatalogPortfolioConfig",
+		"@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolioConfig",
 		reflect.TypeOf((*ServicecatalogPortfolioConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.servicecatalogPortfolio.ServicecatalogPortfolioTimeouts",
+		"@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolioTimeouts",
 		reflect.TypeOf((*ServicecatalogPortfolioTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.servicecatalogPortfolio.ServicecatalogPortfolioTimeoutsOutputReference",
+		"@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolioTimeoutsOutputReference",
 		reflect.TypeOf((*ServicecatalogPortfolioTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

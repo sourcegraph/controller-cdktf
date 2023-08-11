@@ -517,7 +517,7 @@ func NewKendraQuerySuggestionsBlockList(scope constructs.Construct, id *string, 
 	j := jsiiProxy_KendraQuerySuggestionsBlockList{}
 
 	_jsii_.Create(
-		"aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList",
+		"@cdktf/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -530,7 +530,7 @@ func NewKendraQuerySuggestionsBlockList_Override(k KendraQuerySuggestionsBlockLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList",
+		"@cdktf/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -707,7 +707,7 @@ func KendraQuerySuggestionsBlockList_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList",
+		"@cdktf/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -726,7 +726,7 @@ func KendraQuerySuggestionsBlockList_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList",
+		"@cdktf/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -745,7 +745,7 @@ func KendraQuerySuggestionsBlockList_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList",
+		"@cdktf/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -758,7 +758,7 @@ func KendraQuerySuggestionsBlockList_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList",
+		"@cdktf/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList",
 		"tfResourceType",
 		&returns,
 	)

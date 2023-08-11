@@ -509,7 +509,7 @@ func NewRecaptchaEnterpriseKey(scope constructs.Construct, id *string, config *R
 	j := jsiiProxy_RecaptchaEnterpriseKey{}
 
 	_jsii_.Create(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKey",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -522,7 +522,7 @@ func NewRecaptchaEnterpriseKey_Override(r RecaptchaEnterpriseKey, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKey",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKey",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -666,7 +666,7 @@ func RecaptchaEnterpriseKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKey",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -685,7 +685,7 @@ func RecaptchaEnterpriseKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKey",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -704,7 +704,7 @@ func RecaptchaEnterpriseKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKey",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -717,7 +717,7 @@ func RecaptchaEnterpriseKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKey",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKey",
 		"tfResourceType",
 		&returns,
 	)

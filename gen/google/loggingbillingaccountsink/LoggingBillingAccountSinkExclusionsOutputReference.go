@@ -250,7 +250,7 @@ func NewLoggingBillingAccountSinkExclusionsOutputReference(terraformResource cdk
 	j := jsiiProxy_LoggingBillingAccountSinkExclusionsOutputReference{}
 
 	_jsii_.Create(
-		"google.loggingBillingAccountSink.LoggingBillingAccountSinkExclusionsOutputReference",
+		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkExclusionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewLoggingBillingAccountSinkExclusionsOutputReference_Override(l LoggingBil
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingBillingAccountSink.LoggingBillingAccountSinkExclusionsOutputReference",
+		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkExclusionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

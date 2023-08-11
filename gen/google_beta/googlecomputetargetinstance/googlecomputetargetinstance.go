@@ -508,7 +508,7 @@ func NewGoogleComputeTargetInstance(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleComputeTargetInstance{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeTargetInstance.GoogleComputeTargetInstance",
+		"@cdktf/provider-google-beta.googleComputeTargetInstance.GoogleComputeTargetInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -521,7 +521,7 @@ func NewGoogleComputeTargetInstance_Override(g GoogleComputeTargetInstance, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeTargetInstance.GoogleComputeTargetInstance",
+		"@cdktf/provider-google-beta.googleComputeTargetInstance.GoogleComputeTargetInstance",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -709,7 +709,7 @@ func GoogleComputeTargetInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeTargetInstance.GoogleComputeTargetInstance",
+		"@cdktf/provider-google-beta.googleComputeTargetInstance.GoogleComputeTargetInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -728,7 +728,7 @@ func GoogleComputeTargetInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeTargetInstance.GoogleComputeTargetInstance",
+		"@cdktf/provider-google-beta.googleComputeTargetInstance.GoogleComputeTargetInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -747,7 +747,7 @@ func GoogleComputeTargetInstance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeTargetInstance.GoogleComputeTargetInstance",
+		"@cdktf/provider-google-beta.googleComputeTargetInstance.GoogleComputeTargetInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -760,7 +760,7 @@ func GoogleComputeTargetInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeTargetInstance.GoogleComputeTargetInstance",
+		"@cdktf/provider-google-beta.googleComputeTargetInstance.GoogleComputeTargetInstance",
 		"tfResourceType",
 		&returns,
 	)

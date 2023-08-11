@@ -116,7 +116,7 @@ func NewDataAwsNetworkInterfacesFilterList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataAwsNetworkInterfacesFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesFilterList",
+		"@cdktf/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsNetworkInterfacesFilterList_Override(d DataAwsNetworkInterfacesFi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesFilterList",
+		"@cdktf/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

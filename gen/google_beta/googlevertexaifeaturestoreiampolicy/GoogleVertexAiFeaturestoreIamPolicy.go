@@ -401,7 +401,7 @@ func NewGoogleVertexAiFeaturestoreIamPolicy(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleVertexAiFeaturestoreIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleVertexAiFeaturestoreIamPolicy_Override(g GoogleVertexAiFeaturestor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GoogleVertexAiFeaturestoreIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GoogleVertexAiFeaturestoreIamPolicy_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GoogleVertexAiFeaturestoreIamPolicy_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GoogleVertexAiFeaturestoreIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

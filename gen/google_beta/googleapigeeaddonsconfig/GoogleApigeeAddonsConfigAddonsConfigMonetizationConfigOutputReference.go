@@ -180,7 +180,7 @@ func NewGoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference(te
 	j := jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

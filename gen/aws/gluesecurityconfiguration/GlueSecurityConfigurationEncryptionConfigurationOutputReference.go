@@ -225,7 +225,7 @@ func NewGlueSecurityConfigurationEncryptionConfigurationOutputReference(terrafor
 	j := jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationOutputReference",
+		"@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewGlueSecurityConfigurationEncryptionConfigurationOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationOutputReference",
+		"@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

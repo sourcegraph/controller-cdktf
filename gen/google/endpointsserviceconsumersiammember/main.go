@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMember",
+		"@cdktf/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMember",
 		reflect.TypeOf((*EndpointsServiceConsumersIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,11 +68,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMemberCondition",
+		"@cdktf/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMemberCondition",
 		reflect.TypeOf((*EndpointsServiceConsumersIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMemberConditionOutputReference",
+		"@cdktf/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMemberConditionOutputReference",
 		reflect.TypeOf((*EndpointsServiceConsumersIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -111,7 +111,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMemberConfig",
+		"@cdktf/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMemberConfig",
 		reflect.TypeOf((*EndpointsServiceConsumersIamMemberConfig)(nil)).Elem(),
 	)
 }

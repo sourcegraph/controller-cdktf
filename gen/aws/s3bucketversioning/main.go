@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.s3BucketVersioning.S3BucketVersioningA",
+		"@cdktf/provider-aws.s3BucketVersioning.S3BucketVersioningA",
 		reflect.TypeOf((*S3BucketVersioningA)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,15 +66,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketVersioning.S3BucketVersioningAConfig",
+		"@cdktf/provider-aws.s3BucketVersioning.S3BucketVersioningAConfig",
 		reflect.TypeOf((*S3BucketVersioningAConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketVersioning.S3BucketVersioningVersioningConfiguration",
+		"@cdktf/provider-aws.s3BucketVersioning.S3BucketVersioningVersioningConfiguration",
 		reflect.TypeOf((*S3BucketVersioningVersioningConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketVersioning.S3BucketVersioningVersioningConfigurationOutputReference",
+		"@cdktf/provider-aws.s3BucketVersioning.S3BucketVersioningVersioningConfigurationOutputReference",
 		reflect.TypeOf((*S3BucketVersioningVersioningConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

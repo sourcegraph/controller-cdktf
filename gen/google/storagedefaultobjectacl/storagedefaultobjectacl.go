@@ -343,7 +343,7 @@ func NewStorageDefaultObjectAcl(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_StorageDefaultObjectAcl{}
 
 	_jsii_.Create(
-		"google.storageDefaultObjectAcl.StorageDefaultObjectAcl",
+		"@cdktf/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAcl",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewStorageDefaultObjectAcl_Override(s StorageDefaultObjectAcl, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageDefaultObjectAcl.StorageDefaultObjectAcl",
+		"@cdktf/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAcl",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -489,7 +489,7 @@ func StorageDefaultObjectAcl_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageDefaultObjectAcl.StorageDefaultObjectAcl",
+		"@cdktf/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAcl",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func StorageDefaultObjectAcl_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageDefaultObjectAcl.StorageDefaultObjectAcl",
+		"@cdktf/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAcl",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func StorageDefaultObjectAcl_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageDefaultObjectAcl.StorageDefaultObjectAcl",
+		"@cdktf/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAcl",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func StorageDefaultObjectAcl_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.storageDefaultObjectAcl.StorageDefaultObjectAcl",
+		"@cdktf/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAcl",
 		"tfResourceType",
 		&returns,
 	)

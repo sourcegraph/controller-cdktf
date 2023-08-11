@@ -447,7 +447,7 @@ func NewDatasyncLocationFsxLustreFileSystem(scope constructs.Construct, id *stri
 	j := jsiiProxy_DatasyncLocationFsxLustreFileSystem{}
 
 	_jsii_.Create(
-		"aws.datasyncLocationFsxLustreFileSystem.DatasyncLocationFsxLustreFileSystem",
+		"@cdktf/provider-aws.datasyncLocationFsxLustreFileSystem.DatasyncLocationFsxLustreFileSystem",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewDatasyncLocationFsxLustreFileSystem_Override(d DatasyncLocationFsxLustre
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datasyncLocationFsxLustreFileSystem.DatasyncLocationFsxLustreFileSystem",
+		"@cdktf/provider-aws.datasyncLocationFsxLustreFileSystem.DatasyncLocationFsxLustreFileSystem",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -626,7 +626,7 @@ func DatasyncLocationFsxLustreFileSystem_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datasyncLocationFsxLustreFileSystem.DatasyncLocationFsxLustreFileSystem",
+		"@cdktf/provider-aws.datasyncLocationFsxLustreFileSystem.DatasyncLocationFsxLustreFileSystem",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func DatasyncLocationFsxLustreFileSystem_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datasyncLocationFsxLustreFileSystem.DatasyncLocationFsxLustreFileSystem",
+		"@cdktf/provider-aws.datasyncLocationFsxLustreFileSystem.DatasyncLocationFsxLustreFileSystem",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -664,7 +664,7 @@ func DatasyncLocationFsxLustreFileSystem_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datasyncLocationFsxLustreFileSystem.DatasyncLocationFsxLustreFileSystem",
+		"@cdktf/provider-aws.datasyncLocationFsxLustreFileSystem.DatasyncLocationFsxLustreFileSystem",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func DatasyncLocationFsxLustreFileSystem_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.datasyncLocationFsxLustreFileSystem.DatasyncLocationFsxLustreFileSystem",
+		"@cdktf/provider-aws.datasyncLocationFsxLustreFileSystem.DatasyncLocationFsxLustreFileSystem",
 		"tfResourceType",
 		&returns,
 	)

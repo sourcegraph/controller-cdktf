@@ -415,7 +415,7 @@ func NewVariableSet(scope constructs.Construct, id *string, config *VariableSetC
 	j := jsiiProxy_VariableSet{}
 
 	_jsii_.Create(
-		"tfe.variableSet.VariableSet",
+		"@cdktf/provider-tfe.variableSet.VariableSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -428,7 +428,7 @@ func NewVariableSet_Override(v VariableSet, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.variableSet.VariableSet",
+		"@cdktf/provider-tfe.variableSet.VariableSet",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -594,7 +594,7 @@ func VariableSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.variableSet.VariableSet",
+		"@cdktf/provider-tfe.variableSet.VariableSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -613,7 +613,7 @@ func VariableSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.variableSet.VariableSet",
+		"@cdktf/provider-tfe.variableSet.VariableSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func VariableSet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.variableSet.VariableSet",
+		"@cdktf/provider-tfe.variableSet.VariableSet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func VariableSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.variableSet.VariableSet",
+		"@cdktf/provider-tfe.variableSet.VariableSet",
 		"tfResourceType",
 		&returns,
 	)

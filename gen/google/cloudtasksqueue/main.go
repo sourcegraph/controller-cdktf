@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.cloudTasksQueue.CloudTasksQueue",
+		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueue",
 		reflect.TypeOf((*CloudTasksQueue)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,11 +83,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudTasksQueue.CloudTasksQueueAppEngineRoutingOverride",
+		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueAppEngineRoutingOverride",
 		reflect.TypeOf((*CloudTasksQueueAppEngineRoutingOverride)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudTasksQueue.CloudTasksQueueAppEngineRoutingOverrideOutputReference",
+		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueAppEngineRoutingOverrideOutputReference",
 		reflect.TypeOf((*CloudTasksQueueAppEngineRoutingOverrideOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -129,15 +129,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudTasksQueue.CloudTasksQueueConfig",
+		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueConfig",
 		reflect.TypeOf((*CloudTasksQueueConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudTasksQueue.CloudTasksQueueRateLimits",
+		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueRateLimits",
 		reflect.TypeOf((*CloudTasksQueueRateLimits)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudTasksQueue.CloudTasksQueueRateLimitsOutputReference",
+		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueRateLimitsOutputReference",
 		reflect.TypeOf((*CloudTasksQueueRateLimitsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -176,11 +176,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudTasksQueue.CloudTasksQueueRetryConfig",
+		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueRetryConfig",
 		reflect.TypeOf((*CloudTasksQueueRetryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudTasksQueue.CloudTasksQueueRetryConfigOutputReference",
+		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueRetryConfigOutputReference",
 		reflect.TypeOf((*CloudTasksQueueRetryConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -227,11 +227,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudTasksQueue.CloudTasksQueueStackdriverLoggingConfig",
+		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueStackdriverLoggingConfig",
 		reflect.TypeOf((*CloudTasksQueueStackdriverLoggingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudTasksQueue.CloudTasksQueueStackdriverLoggingConfigOutputReference",
+		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueStackdriverLoggingConfigOutputReference",
 		reflect.TypeOf((*CloudTasksQueueStackdriverLoggingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -265,11 +265,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudTasksQueue.CloudTasksQueueTimeouts",
+		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueTimeouts",
 		reflect.TypeOf((*CloudTasksQueueTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudTasksQueue.CloudTasksQueueTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueTimeoutsOutputReference",
 		reflect.TypeOf((*CloudTasksQueueTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

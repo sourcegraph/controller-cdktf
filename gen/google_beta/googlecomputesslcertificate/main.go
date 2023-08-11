@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate",
+		"@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate",
 		reflect.TypeOf((*GoogleComputeSslCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,15 +79,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeSslCertificate.GoogleComputeSslCertificateConfig",
+		"@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificateConfig",
 		reflect.TypeOf((*GoogleComputeSslCertificateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeSslCertificate.GoogleComputeSslCertificateTimeouts",
+		"@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificateTimeouts",
 		reflect.TypeOf((*GoogleComputeSslCertificateTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeSslCertificate.GoogleComputeSslCertificateTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificateTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleComputeSslCertificateTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

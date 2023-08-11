@@ -226,7 +226,7 @@ func NewLexBotClarificationPromptMessageOutputReference(terraformResource cdktf.
 	j := jsiiProxy_LexBotClarificationPromptMessageOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexBot.LexBotClarificationPromptMessageOutputReference",
+		"@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewLexBotClarificationPromptMessageOutputReference_Override(l LexBotClarifi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexBot.LexBotClarificationPromptMessageOutputReference",
+		"@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

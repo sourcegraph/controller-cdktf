@@ -116,7 +116,7 @@ func NewAmiFromInstanceEbsBlockDeviceList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_AmiFromInstanceEbsBlockDeviceList{}
 
 	_jsii_.Create(
-		"aws.amiFromInstance.AmiFromInstanceEbsBlockDeviceList",
+		"@cdktf/provider-aws.amiFromInstance.AmiFromInstanceEbsBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAmiFromInstanceEbsBlockDeviceList_Override(a AmiFromInstanceEbsBlockDevi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.amiFromInstance.AmiFromInstanceEbsBlockDeviceList",
+		"@cdktf/provider-aws.amiFromInstance.AmiFromInstanceEbsBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

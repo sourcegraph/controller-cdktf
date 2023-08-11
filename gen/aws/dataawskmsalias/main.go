@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsKmsAlias.DataAwsKmsAlias",
+		"@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias",
 		reflect.TypeOf((*DataAwsKmsAlias)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,7 +58,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsKmsAlias.DataAwsKmsAliasConfig",
+		"@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAliasConfig",
 		reflect.TypeOf((*DataAwsKmsAliasConfig)(nil)).Elem(),
 	)
 }

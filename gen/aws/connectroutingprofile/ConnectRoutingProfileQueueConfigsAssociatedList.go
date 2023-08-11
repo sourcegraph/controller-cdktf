@@ -104,7 +104,7 @@ func NewConnectRoutingProfileQueueConfigsAssociatedList(terraformResource cdktf.
 	j := jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedList{}
 
 	_jsii_.Create(
-		"aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsAssociatedList",
+		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsAssociatedList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewConnectRoutingProfileQueueConfigsAssociatedList_Override(c ConnectRoutin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsAssociatedList",
+		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsAssociatedList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

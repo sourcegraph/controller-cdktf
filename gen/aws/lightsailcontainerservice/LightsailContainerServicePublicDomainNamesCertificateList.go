@@ -116,7 +116,7 @@ func NewLightsailContainerServicePublicDomainNamesCertificateList(terraformResou
 	j := jsiiProxy_LightsailContainerServicePublicDomainNamesCertificateList{}
 
 	_jsii_.Create(
-		"aws.lightsailContainerService.LightsailContainerServicePublicDomainNamesCertificateList",
+		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServicePublicDomainNamesCertificateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLightsailContainerServicePublicDomainNamesCertificateList_Override(l Lig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailContainerService.LightsailContainerServicePublicDomainNamesCertificateList",
+		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServicePublicDomainNamesCertificateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

@@ -189,7 +189,7 @@ func NewBigqueryJobStatusErrorResultOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_BigqueryJobStatusErrorResultOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryJob.BigqueryJobStatusErrorResultOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusErrorResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewBigqueryJobStatusErrorResultOutputReference_Override(b BigqueryJobStatus
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryJob.BigqueryJobStatusErrorResultOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusErrorResultOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)

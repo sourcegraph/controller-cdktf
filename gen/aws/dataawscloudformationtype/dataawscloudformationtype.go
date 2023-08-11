@@ -496,7 +496,7 @@ func NewDataAwsCloudformationType(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DataAwsCloudformationType{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudformationType.DataAwsCloudformationType",
+		"@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationType",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -509,7 +509,7 @@ func NewDataAwsCloudformationType_Override(d DataAwsCloudformationType, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudformationType.DataAwsCloudformationType",
+		"@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationType",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -642,7 +642,7 @@ func DataAwsCloudformationType_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudformationType.DataAwsCloudformationType",
+		"@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationType",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -661,7 +661,7 @@ func DataAwsCloudformationType_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudformationType.DataAwsCloudformationType",
+		"@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationType",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func DataAwsCloudformationType_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudformationType.DataAwsCloudformationType",
+		"@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationType",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -693,7 +693,7 @@ func DataAwsCloudformationType_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsCloudformationType.DataAwsCloudformationType",
+		"@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationType",
 		"tfResourceType",
 		&returns,
 	)

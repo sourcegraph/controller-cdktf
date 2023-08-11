@@ -225,7 +225,7 @@ func NewGoogleSecurityScannerScanConfigAuthenticationCustomAccountOutputReferenc
 	j := jsiiProxy_GoogleSecurityScannerScanConfigAuthenticationCustomAccountOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigAuthenticationCustomAccountOutputReference",
+		"@cdktf/provider-google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigAuthenticationCustomAccountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewGoogleSecurityScannerScanConfigAuthenticationCustomAccountOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigAuthenticationCustomAccountOutputReference",
+		"@cdktf/provider-google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigAuthenticationCustomAccountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -202,7 +202,7 @@ func NewTeamsAccountLoggingSettingsByRuleTypeHttpOutputReference(terraformResour
 	j := jsiiProxy_TeamsAccountLoggingSettingsByRuleTypeHttpOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeHttpOutputReference",
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeHttpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewTeamsAccountLoggingSettingsByRuleTypeHttpOutputReference_Override(t Team
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeHttpOutputReference",
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeHttpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

@@ -399,7 +399,7 @@ func NewGoogleBillingSubaccount(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_GoogleBillingSubaccount{}
 
 	_jsii_.Create(
-		"google-beta.googleBillingSubaccount.GoogleBillingSubaccount",
+		"@cdktf/provider-google-beta.googleBillingSubaccount.GoogleBillingSubaccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -412,7 +412,7 @@ func NewGoogleBillingSubaccount_Override(g GoogleBillingSubaccount, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBillingSubaccount.GoogleBillingSubaccount",
+		"@cdktf/provider-google-beta.googleBillingSubaccount.GoogleBillingSubaccount",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -556,7 +556,7 @@ func GoogleBillingSubaccount_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBillingSubaccount.GoogleBillingSubaccount",
+		"@cdktf/provider-google-beta.googleBillingSubaccount.GoogleBillingSubaccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func GoogleBillingSubaccount_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBillingSubaccount.GoogleBillingSubaccount",
+		"@cdktf/provider-google-beta.googleBillingSubaccount.GoogleBillingSubaccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -594,7 +594,7 @@ func GoogleBillingSubaccount_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBillingSubaccount.GoogleBillingSubaccount",
+		"@cdktf/provider-google-beta.googleBillingSubaccount.GoogleBillingSubaccount",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GoogleBillingSubaccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBillingSubaccount.GoogleBillingSubaccount",
+		"@cdktf/provider-google-beta.googleBillingSubaccount.GoogleBillingSubaccount",
 		"tfResourceType",
 		&returns,
 	)

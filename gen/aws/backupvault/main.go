@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.backupVault.BackupVault",
+		"@cdktf/provider-aws.backupVault.BackupVault",
 		reflect.TypeOf((*BackupVault)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,15 +75,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.backupVault.BackupVaultConfig",
+		"@cdktf/provider-aws.backupVault.BackupVaultConfig",
 		reflect.TypeOf((*BackupVaultConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.backupVault.BackupVaultTimeouts",
+		"@cdktf/provider-aws.backupVault.BackupVaultTimeouts",
 		reflect.TypeOf((*BackupVaultTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.backupVault.BackupVaultTimeoutsOutputReference",
+		"@cdktf/provider-aws.backupVault.BackupVaultTimeoutsOutputReference",
 		reflect.TypeOf((*BackupVaultTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

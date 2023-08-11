@@ -617,7 +617,7 @@ func NewSsmParameter(scope constructs.Construct, id *string, config *SsmParamete
 	j := jsiiProxy_SsmParameter{}
 
 	_jsii_.Create(
-		"aws.ssmParameter.SsmParameter",
+		"@cdktf/provider-aws.ssmParameter.SsmParameter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -630,7 +630,7 @@ func NewSsmParameter_Override(s SsmParameter, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmParameter.SsmParameter",
+		"@cdktf/provider-aws.ssmParameter.SsmParameter",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -884,7 +884,7 @@ func SsmParameter_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmParameter.SsmParameter",
+		"@cdktf/provider-aws.ssmParameter.SsmParameter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -903,7 +903,7 @@ func SsmParameter_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmParameter.SsmParameter",
+		"@cdktf/provider-aws.ssmParameter.SsmParameter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -922,7 +922,7 @@ func SsmParameter_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmParameter.SsmParameter",
+		"@cdktf/provider-aws.ssmParameter.SsmParameter",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -935,7 +935,7 @@ func SsmParameter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ssmParameter.SsmParameter",
+		"@cdktf/provider-aws.ssmParameter.SsmParameter",
 		"tfResourceType",
 		&returns,
 	)

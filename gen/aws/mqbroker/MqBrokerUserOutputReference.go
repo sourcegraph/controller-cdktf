@@ -250,7 +250,7 @@ func NewMqBrokerUserOutputReference(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_MqBrokerUserOutputReference{}
 
 	_jsii_.Create(
-		"aws.mqBroker.MqBrokerUserOutputReference",
+		"@cdktf/provider-aws.mqBroker.MqBrokerUserOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewMqBrokerUserOutputReference_Override(m MqBrokerUserOutputReference, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mqBroker.MqBrokerUserOutputReference",
+		"@cdktf/provider-aws.mqBroker.MqBrokerUserOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

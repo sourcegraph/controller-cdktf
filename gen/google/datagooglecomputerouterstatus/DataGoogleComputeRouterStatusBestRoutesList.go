@@ -104,7 +104,7 @@ func NewDataGoogleComputeRouterStatusBestRoutesList(terraformResource cdktf.IInt
 	j := jsiiProxy_DataGoogleComputeRouterStatusBestRoutesList{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesList",
+		"@cdktf/provider-google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeRouterStatusBestRoutesList_Override(d DataGoogleCompute
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesList",
+		"@cdktf/provider-google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

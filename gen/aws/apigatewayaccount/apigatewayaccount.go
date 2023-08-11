@@ -331,7 +331,7 @@ func NewApiGatewayAccount(scope constructs.Construct, id *string, config *ApiGat
 	j := jsiiProxy_ApiGatewayAccount{}
 
 	_jsii_.Create(
-		"aws.apiGatewayAccount.ApiGatewayAccount",
+		"@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -344,7 +344,7 @@ func NewApiGatewayAccount_Override(a ApiGatewayAccount, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayAccount.ApiGatewayAccount",
+		"@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -466,7 +466,7 @@ func ApiGatewayAccount_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayAccount.ApiGatewayAccount",
+		"@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -485,7 +485,7 @@ func ApiGatewayAccount_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayAccount.ApiGatewayAccount",
+		"@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -504,7 +504,7 @@ func ApiGatewayAccount_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayAccount.ApiGatewayAccount",
+		"@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -517,7 +517,7 @@ func ApiGatewayAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apiGatewayAccount.ApiGatewayAccount",
+		"@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewMfaPolicyRuleAppIncludeList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_MfaPolicyRuleAppIncludeList{}
 
 	_jsii_.Create(
-		"okta.mfaPolicyRule.MfaPolicyRuleAppIncludeList",
+		"@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppIncludeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMfaPolicyRuleAppIncludeList_Override(m MfaPolicyRuleAppIncludeList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.mfaPolicyRule.MfaPolicyRuleAppIncludeList",
+		"@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppIncludeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

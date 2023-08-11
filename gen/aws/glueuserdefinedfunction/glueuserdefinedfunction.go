@@ -481,7 +481,7 @@ func NewGlueUserDefinedFunction(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_GlueUserDefinedFunction{}
 
 	_jsii_.Create(
-		"aws.glueUserDefinedFunction.GlueUserDefinedFunction",
+		"@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunction",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -494,7 +494,7 @@ func NewGlueUserDefinedFunction_Override(g GlueUserDefinedFunction, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueUserDefinedFunction.GlueUserDefinedFunction",
+		"@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunction",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -671,7 +671,7 @@ func GlueUserDefinedFunction_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueUserDefinedFunction.GlueUserDefinedFunction",
+		"@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunction",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -690,7 +690,7 @@ func GlueUserDefinedFunction_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueUserDefinedFunction.GlueUserDefinedFunction",
+		"@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunction",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -709,7 +709,7 @@ func GlueUserDefinedFunction_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueUserDefinedFunction.GlueUserDefinedFunction",
+		"@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunction",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -722,7 +722,7 @@ func GlueUserDefinedFunction_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.glueUserDefinedFunction.GlueUserDefinedFunction",
+		"@cdktf/provider-aws.glueUserDefinedFunction.GlueUserDefinedFunction",
 		"tfResourceType",
 		&returns,
 	)

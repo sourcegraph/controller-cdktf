@@ -544,7 +544,7 @@ func NewCloudfunctions2Function(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_Cloudfunctions2Function{}
 
 	_jsii_.Create(
-		"google.cloudfunctions2Function.Cloudfunctions2Function",
+		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2Function",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -557,7 +557,7 @@ func NewCloudfunctions2Function_Override(c Cloudfunctions2Function, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudfunctions2Function.Cloudfunctions2Function",
+		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2Function",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -723,7 +723,7 @@ func Cloudfunctions2Function_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudfunctions2Function.Cloudfunctions2Function",
+		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2Function",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -742,7 +742,7 @@ func Cloudfunctions2Function_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudfunctions2Function.Cloudfunctions2Function",
+		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2Function",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -761,7 +761,7 @@ func Cloudfunctions2Function_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudfunctions2Function.Cloudfunctions2Function",
+		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2Function",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -774,7 +774,7 @@ func Cloudfunctions2Function_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudfunctions2Function.Cloudfunctions2Function",
+		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2Function",
 		"tfResourceType",
 		&returns,
 	)

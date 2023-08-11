@@ -801,7 +801,7 @@ func NewSyntheticsCanary(scope constructs.Construct, id *string, config *Synthet
 	j := jsiiProxy_SyntheticsCanary{}
 
 	_jsii_.Create(
-		"aws.syntheticsCanary.SyntheticsCanary",
+		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanary",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -814,7 +814,7 @@ func NewSyntheticsCanary_Override(s SyntheticsCanary, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.syntheticsCanary.SyntheticsCanary",
+		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanary",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -1090,7 +1090,7 @@ func SyntheticsCanary_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.syntheticsCanary.SyntheticsCanary",
+		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanary",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1109,7 +1109,7 @@ func SyntheticsCanary_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.syntheticsCanary.SyntheticsCanary",
+		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanary",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1128,7 +1128,7 @@ func SyntheticsCanary_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.syntheticsCanary.SyntheticsCanary",
+		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanary",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1141,7 +1141,7 @@ func SyntheticsCanary_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.syntheticsCanary.SyntheticsCanary",
+		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanary",
 		"tfResourceType",
 		&returns,
 	)

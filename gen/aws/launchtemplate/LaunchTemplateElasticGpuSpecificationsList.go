@@ -116,7 +116,7 @@ func NewLaunchTemplateElasticGpuSpecificationsList(terraformResource cdktf.IInte
 	j := jsiiProxy_LaunchTemplateElasticGpuSpecificationsList{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsList",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLaunchTemplateElasticGpuSpecificationsList_Override(l LaunchTemplateElas
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsList",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

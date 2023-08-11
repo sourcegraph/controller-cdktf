@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.appsyncType.AppsyncType",
+		"@cdktf/provider-aws.appsyncType.AppsyncType",
 		reflect.TypeOf((*AppsyncType)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appsyncType.AppsyncTypeConfig",
+		"@cdktf/provider-aws.appsyncType.AppsyncTypeConfig",
 		reflect.TypeOf((*AppsyncTypeConfig)(nil)).Elem(),
 	)
 }

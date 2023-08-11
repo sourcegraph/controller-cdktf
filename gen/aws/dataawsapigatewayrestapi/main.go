@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApi",
+		"@cdktf/provider-aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApi",
 		reflect.TypeOf((*DataAwsApiGatewayRestApi)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApiConfig",
+		"@cdktf/provider-aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApiConfig",
 		reflect.TypeOf((*DataAwsApiGatewayRestApiConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApiEndpointConfiguration",
+		"@cdktf/provider-aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApiEndpointConfiguration",
 		reflect.TypeOf((*DataAwsApiGatewayRestApiEndpointConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApiEndpointConfigurationList",
+		"@cdktf/provider-aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApiEndpointConfigurationList",
 		reflect.TypeOf((*DataAwsApiGatewayRestApiEndpointConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -95,7 +95,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApiEndpointConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApiEndpointConfigurationOutputReference",
 		reflect.TypeOf((*DataAwsApiGatewayRestApiEndpointConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

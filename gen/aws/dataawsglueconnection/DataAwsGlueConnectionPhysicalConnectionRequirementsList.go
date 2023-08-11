@@ -104,7 +104,7 @@ func NewDataAwsGlueConnectionPhysicalConnectionRequirementsList(terraformResourc
 	j := jsiiProxy_DataAwsGlueConnectionPhysicalConnectionRequirementsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsGlueConnection.DataAwsGlueConnectionPhysicalConnectionRequirementsList",
+		"@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionPhysicalConnectionRequirementsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsGlueConnectionPhysicalConnectionRequirementsList_Override(d DataA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsGlueConnection.DataAwsGlueConnectionPhysicalConnectionRequirementsList",
+		"@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionPhysicalConnectionRequirementsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

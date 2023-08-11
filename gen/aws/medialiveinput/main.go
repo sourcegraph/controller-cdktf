@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.medialiveInput.MedialiveInput",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInput",
 		reflect.TypeOf((*MedialiveInput)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -100,15 +100,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveInput.MedialiveInputConfig",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputConfig",
 		reflect.TypeOf((*MedialiveInputConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveInput.MedialiveInputDestinations",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputDestinations",
 		reflect.TypeOf((*MedialiveInputDestinations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveInput.MedialiveInputDestinationsList",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputDestinationsList",
 		reflect.TypeOf((*MedialiveInputDestinationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -129,7 +129,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveInput.MedialiveInputDestinationsOutputReference",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputDestinationsOutputReference",
 		reflect.TypeOf((*MedialiveInputDestinationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -163,11 +163,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveInput.MedialiveInputInputDevices",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputInputDevices",
 		reflect.TypeOf((*MedialiveInputInputDevices)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveInput.MedialiveInputInputDevicesList",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputInputDevicesList",
 		reflect.TypeOf((*MedialiveInputInputDevicesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -188,7 +188,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveInput.MedialiveInputInputDevicesOutputReference",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputInputDevicesOutputReference",
 		reflect.TypeOf((*MedialiveInputInputDevicesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -222,11 +222,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveInput.MedialiveInputMediaConnectFlows",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlows",
 		reflect.TypeOf((*MedialiveInputMediaConnectFlows)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveInput.MedialiveInputMediaConnectFlowsList",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlowsList",
 		reflect.TypeOf((*MedialiveInputMediaConnectFlowsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -247,7 +247,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveInput.MedialiveInputMediaConnectFlowsOutputReference",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlowsOutputReference",
 		reflect.TypeOf((*MedialiveInputMediaConnectFlowsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -281,11 +281,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveInput.MedialiveInputSources",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputSources",
 		reflect.TypeOf((*MedialiveInputSources)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveInput.MedialiveInputSourcesList",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputSourcesList",
 		reflect.TypeOf((*MedialiveInputSourcesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -306,7 +306,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveInput.MedialiveInputSourcesOutputReference",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputSourcesOutputReference",
 		reflect.TypeOf((*MedialiveInputSourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -344,11 +344,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveInput.MedialiveInputTimeouts",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputTimeouts",
 		reflect.TypeOf((*MedialiveInputTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveInput.MedialiveInputTimeoutsOutputReference",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputTimeoutsOutputReference",
 		reflect.TypeOf((*MedialiveInputTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -389,11 +389,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveInput.MedialiveInputVpc",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputVpc",
 		reflect.TypeOf((*MedialiveInputVpc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveInput.MedialiveInputVpcOutputReference",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputVpcOutputReference",
 		reflect.TypeOf((*MedialiveInputVpcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

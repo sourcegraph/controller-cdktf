@@ -215,7 +215,7 @@ func NewMwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference(terrafor
 	j := jsiiProxy_MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference{}
 
 	_jsii_.Create(
-		"aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -227,7 +227,7 @@ func NewMwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

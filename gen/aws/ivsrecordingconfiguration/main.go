@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ivsRecordingConfiguration.IvsRecordingConfiguration",
+		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfiguration",
 		reflect.TypeOf((*IvsRecordingConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,15 +80,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ivsRecordingConfiguration.IvsRecordingConfigurationConfig",
+		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationConfig",
 		reflect.TypeOf((*IvsRecordingConfigurationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfiguration",
+		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfiguration",
 		reflect.TypeOf((*IvsRecordingConfigurationDestinationConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationOutputReference",
+		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationOutputReference",
 		reflect.TypeOf((*IvsRecordingConfigurationDestinationConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -123,11 +123,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationS3",
+		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationS3",
 		reflect.TypeOf((*IvsRecordingConfigurationDestinationConfigurationS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationS3OutputReference",
+		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationS3OutputReference",
 		reflect.TypeOf((*IvsRecordingConfigurationDestinationConfigurationS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -161,11 +161,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfiguration",
+		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfiguration",
 		reflect.TypeOf((*IvsRecordingConfigurationThumbnailConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfigurationOutputReference",
+		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfigurationOutputReference",
 		reflect.TypeOf((*IvsRecordingConfigurationThumbnailConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -203,11 +203,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ivsRecordingConfiguration.IvsRecordingConfigurationTimeouts",
+		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationTimeouts",
 		reflect.TypeOf((*IvsRecordingConfigurationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ivsRecordingConfiguration.IvsRecordingConfigurationTimeoutsOutputReference",
+		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationTimeoutsOutputReference",
 		reflect.TypeOf((*IvsRecordingConfigurationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

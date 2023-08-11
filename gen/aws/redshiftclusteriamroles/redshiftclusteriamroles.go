@@ -391,7 +391,7 @@ func NewRedshiftClusterIamRoles(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_RedshiftClusterIamRoles{}
 
 	_jsii_.Create(
-		"aws.redshiftClusterIamRoles.RedshiftClusterIamRoles",
+		"@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRoles",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -404,7 +404,7 @@ func NewRedshiftClusterIamRoles_Override(r RedshiftClusterIamRoles, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftClusterIamRoles.RedshiftClusterIamRoles",
+		"@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRoles",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -548,7 +548,7 @@ func RedshiftClusterIamRoles_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftClusterIamRoles.RedshiftClusterIamRoles",
+		"@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRoles",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -567,7 +567,7 @@ func RedshiftClusterIamRoles_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftClusterIamRoles.RedshiftClusterIamRoles",
+		"@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRoles",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -586,7 +586,7 @@ func RedshiftClusterIamRoles_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftClusterIamRoles.RedshiftClusterIamRoles",
+		"@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRoles",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +599,7 @@ func RedshiftClusterIamRoles_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.redshiftClusterIamRoles.RedshiftClusterIamRoles",
+		"@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRoles",
 		"tfResourceType",
 		&returns,
 	)

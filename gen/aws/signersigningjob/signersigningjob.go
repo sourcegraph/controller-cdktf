@@ -543,7 +543,7 @@ func NewSignerSigningJob(scope constructs.Construct, id *string, config *SignerS
 	j := jsiiProxy_SignerSigningJob{}
 
 	_jsii_.Create(
-		"aws.signerSigningJob.SignerSigningJob",
+		"@cdktf/provider-aws.signerSigningJob.SignerSigningJob",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -556,7 +556,7 @@ func NewSignerSigningJob_Override(s SignerSigningJob, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.signerSigningJob.SignerSigningJob",
+		"@cdktf/provider-aws.signerSigningJob.SignerSigningJob",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -689,7 +689,7 @@ func SignerSigningJob_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.signerSigningJob.SignerSigningJob",
+		"@cdktf/provider-aws.signerSigningJob.SignerSigningJob",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -708,7 +708,7 @@ func SignerSigningJob_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.signerSigningJob.SignerSigningJob",
+		"@cdktf/provider-aws.signerSigningJob.SignerSigningJob",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -727,7 +727,7 @@ func SignerSigningJob_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.signerSigningJob.SignerSigningJob",
+		"@cdktf/provider-aws.signerSigningJob.SignerSigningJob",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -740,7 +740,7 @@ func SignerSigningJob_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.signerSigningJob.SignerSigningJob",
+		"@cdktf/provider-aws.signerSigningJob.SignerSigningJob",
 		"tfResourceType",
 		&returns,
 	)

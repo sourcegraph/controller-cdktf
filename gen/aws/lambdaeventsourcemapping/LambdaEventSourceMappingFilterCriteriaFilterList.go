@@ -116,7 +116,7 @@ func NewLambdaEventSourceMappingFilterCriteriaFilterList(terraformResource cdktf
 	j := jsiiProxy_LambdaEventSourceMappingFilterCriteriaFilterList{}
 
 	_jsii_.Create(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilterList",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLambdaEventSourceMappingFilterCriteriaFilterList_Override(l LambdaEventS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilterList",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

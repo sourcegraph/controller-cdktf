@@ -180,7 +180,7 @@ func NewDatasyncAgentTimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_DatasyncAgentTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.datasyncAgent.DatasyncAgentTimeoutsOutputReference",
+		"@cdktf/provider-aws.datasyncAgent.DatasyncAgentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDatasyncAgentTimeoutsOutputReference_Override(d DatasyncAgentTimeoutsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datasyncAgent.DatasyncAgentTimeoutsOutputReference",
+		"@cdktf/provider-aws.datasyncAgent.DatasyncAgentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

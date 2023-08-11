@@ -423,7 +423,7 @@ func NewCloudfrontOriginAccessControl(scope constructs.Construct, id *string, co
 	j := jsiiProxy_CloudfrontOriginAccessControl{}
 
 	_jsii_.Create(
-		"aws.cloudfrontOriginAccessControl.CloudfrontOriginAccessControl",
+		"@cdktf/provider-aws.cloudfrontOriginAccessControl.CloudfrontOriginAccessControl",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewCloudfrontOriginAccessControl_Override(c CloudfrontOriginAccessControl, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontOriginAccessControl.CloudfrontOriginAccessControl",
+		"@cdktf/provider-aws.cloudfrontOriginAccessControl.CloudfrontOriginAccessControl",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -602,7 +602,7 @@ func CloudfrontOriginAccessControl_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontOriginAccessControl.CloudfrontOriginAccessControl",
+		"@cdktf/provider-aws.cloudfrontOriginAccessControl.CloudfrontOriginAccessControl",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func CloudfrontOriginAccessControl_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontOriginAccessControl.CloudfrontOriginAccessControl",
+		"@cdktf/provider-aws.cloudfrontOriginAccessControl.CloudfrontOriginAccessControl",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -640,7 +640,7 @@ func CloudfrontOriginAccessControl_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontOriginAccessControl.CloudfrontOriginAccessControl",
+		"@cdktf/provider-aws.cloudfrontOriginAccessControl.CloudfrontOriginAccessControl",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func CloudfrontOriginAccessControl_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudfrontOriginAccessControl.CloudfrontOriginAccessControl",
+		"@cdktf/provider-aws.cloudfrontOriginAccessControl.CloudfrontOriginAccessControl",
 		"tfResourceType",
 		&returns,
 	)

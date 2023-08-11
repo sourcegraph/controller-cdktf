@@ -167,7 +167,7 @@ func NewContainerAttachedClusterErrorsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_ContainerAttachedClusterErrorsOutputReference{}
 
 	_jsii_.Create(
-		"google.containerAttachedCluster.ContainerAttachedClusterErrorsOutputReference",
+		"@cdktf/provider-google.containerAttachedCluster.ContainerAttachedClusterErrorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewContainerAttachedClusterErrorsOutputReference_Override(c ContainerAttach
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAttachedCluster.ContainerAttachedClusterErrorsOutputReference",
+		"@cdktf/provider-google.containerAttachedCluster.ContainerAttachedClusterErrorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

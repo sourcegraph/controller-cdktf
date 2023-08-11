@@ -448,7 +448,7 @@ func NewGoogleCloudRunV2ServiceIamMember(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleCloudRunV2ServiceIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMember",
+		"@cdktf/provider-google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleCloudRunV2ServiceIamMember_Override(g GoogleCloudRunV2ServiceIamMe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMember",
+		"@cdktf/provider-google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleCloudRunV2ServiceIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMember",
+		"@cdktf/provider-google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleCloudRunV2ServiceIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMember",
+		"@cdktf/provider-google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleCloudRunV2ServiceIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMember",
+		"@cdktf/provider-google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleCloudRunV2ServiceIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMember",
+		"@cdktf/provider-google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMember",
 		"tfResourceType",
 		&returns,
 	)

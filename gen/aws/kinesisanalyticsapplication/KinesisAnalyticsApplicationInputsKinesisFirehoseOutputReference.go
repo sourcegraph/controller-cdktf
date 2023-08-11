@@ -202,7 +202,7 @@ func NewKinesisAnalyticsApplicationInputsKinesisFirehoseOutputReference(terrafor
 	j := jsiiProxy_KinesisAnalyticsApplicationInputsKinesisFirehoseOutputReference{}
 
 	_jsii_.Create(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsKinesisFirehoseOutputReference",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsKinesisFirehoseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewKinesisAnalyticsApplicationInputsKinesisFirehoseOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsKinesisFirehoseOutputReference",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsKinesisFirehoseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

@@ -226,7 +226,7 @@ func NewApiGatewayUsagePlanQuotaSettingsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanQuotaSettingsOutputReference",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanQuotaSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewApiGatewayUsagePlanQuotaSettingsOutputReference_Override(a ApiGatewayUsa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanQuotaSettingsOutputReference",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanQuotaSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

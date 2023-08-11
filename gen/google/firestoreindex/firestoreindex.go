@@ -449,7 +449,7 @@ func NewFirestoreIndex(scope constructs.Construct, id *string, config *Firestore
 	j := jsiiProxy_FirestoreIndex{}
 
 	_jsii_.Create(
-		"google.firestoreIndex.FirestoreIndex",
+		"@cdktf/provider-google.firestoreIndex.FirestoreIndex",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -462,7 +462,7 @@ func NewFirestoreIndex_Override(f FirestoreIndex, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.firestoreIndex.FirestoreIndex",
+		"@cdktf/provider-google.firestoreIndex.FirestoreIndex",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -617,7 +617,7 @@ func FirestoreIndex_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.firestoreIndex.FirestoreIndex",
+		"@cdktf/provider-google.firestoreIndex.FirestoreIndex",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -636,7 +636,7 @@ func FirestoreIndex_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.firestoreIndex.FirestoreIndex",
+		"@cdktf/provider-google.firestoreIndex.FirestoreIndex",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func FirestoreIndex_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.firestoreIndex.FirestoreIndex",
+		"@cdktf/provider-google.firestoreIndex.FirestoreIndex",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func FirestoreIndex_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.firestoreIndex.FirestoreIndex",
+		"@cdktf/provider-google.firestoreIndex.FirestoreIndex",
 		"tfResourceType",
 		&returns,
 	)

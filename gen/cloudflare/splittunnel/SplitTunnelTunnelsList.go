@@ -116,7 +116,7 @@ func NewSplitTunnelTunnelsList(terraformResource cdktf.IInterpolatingParent, ter
 	j := jsiiProxy_SplitTunnelTunnelsList{}
 
 	_jsii_.Create(
-		"cloudflare.splitTunnel.SplitTunnelTunnelsList",
+		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnelTunnelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSplitTunnelTunnelsList_Override(s SplitTunnelTunnelsList, terraformResou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.splitTunnel.SplitTunnelTunnelsList",
+		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnelTunnelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

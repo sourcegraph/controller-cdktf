@@ -415,7 +415,7 @@ func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group
 	j := jsiiProxy_Group{}
 
 	_jsii_.Create(
-		"okta.group.Group",
+		"@cdktf/provider-okta.group.Group",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -428,7 +428,7 @@ func NewGroup_Override(g Group, scope constructs.Construct, id *string, config *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.group.Group",
+		"@cdktf/provider-okta.group.Group",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -594,7 +594,7 @@ func Group_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.group.Group",
+		"@cdktf/provider-okta.group.Group",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -613,7 +613,7 @@ func Group_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.group.Group",
+		"@cdktf/provider-okta.group.Group",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func Group_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.group.Group",
+		"@cdktf/provider-okta.group.Group",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func Group_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.group.Group",
+		"@cdktf/provider-okta.group.Group",
 		"tfResourceType",
 		&returns,
 	)

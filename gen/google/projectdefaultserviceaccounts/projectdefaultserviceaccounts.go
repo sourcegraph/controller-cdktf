@@ -401,7 +401,7 @@ func NewProjectDefaultServiceAccounts(scope constructs.Construct, id *string, co
 	j := jsiiProxy_ProjectDefaultServiceAccounts{}
 
 	_jsii_.Create(
-		"google.projectDefaultServiceAccounts.ProjectDefaultServiceAccounts",
+		"@cdktf/provider-google.projectDefaultServiceAccounts.ProjectDefaultServiceAccounts",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewProjectDefaultServiceAccounts_Override(p ProjectDefaultServiceAccounts, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.projectDefaultServiceAccounts.ProjectDefaultServiceAccounts",
+		"@cdktf/provider-google.projectDefaultServiceAccounts.ProjectDefaultServiceAccounts",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -558,7 +558,7 @@ func ProjectDefaultServiceAccounts_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectDefaultServiceAccounts.ProjectDefaultServiceAccounts",
+		"@cdktf/provider-google.projectDefaultServiceAccounts.ProjectDefaultServiceAccounts",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func ProjectDefaultServiceAccounts_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectDefaultServiceAccounts.ProjectDefaultServiceAccounts",
+		"@cdktf/provider-google.projectDefaultServiceAccounts.ProjectDefaultServiceAccounts",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func ProjectDefaultServiceAccounts_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectDefaultServiceAccounts.ProjectDefaultServiceAccounts",
+		"@cdktf/provider-google.projectDefaultServiceAccounts.ProjectDefaultServiceAccounts",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func ProjectDefaultServiceAccounts_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.projectDefaultServiceAccounts.ProjectDefaultServiceAccounts",
+		"@cdktf/provider-google.projectDefaultServiceAccounts.ProjectDefaultServiceAccounts",
 		"tfResourceType",
 		&returns,
 	)

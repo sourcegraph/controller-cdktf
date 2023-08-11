@@ -228,7 +228,7 @@ func NewSqlUserTimeoutsOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_SqlUserTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.sqlUser.SqlUserTimeoutsOutputReference",
+		"@cdktf/provider-google.sqlUser.SqlUserTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSqlUserTimeoutsOutputReference_Override(s SqlUserTimeoutsOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sqlUser.SqlUserTimeoutsOutputReference",
+		"@cdktf/provider-google.sqlUser.SqlUserTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

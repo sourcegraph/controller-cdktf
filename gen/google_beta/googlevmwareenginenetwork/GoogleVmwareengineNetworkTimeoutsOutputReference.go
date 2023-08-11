@@ -228,7 +228,7 @@ func NewGoogleVmwareengineNetworkTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleVmwareengineNetworkTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleVmwareengineNetworkTimeoutsOutputReference_Override(g GoogleVmware
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

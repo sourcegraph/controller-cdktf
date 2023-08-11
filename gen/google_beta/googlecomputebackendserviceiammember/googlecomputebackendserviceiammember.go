@@ -424,7 +424,7 @@ func NewGoogleComputeBackendServiceIamMember(scope constructs.Construct, id *str
 	j := jsiiProxy_GoogleComputeBackendServiceIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendServiceIamMember.GoogleComputeBackendServiceIamMember",
+		"@cdktf/provider-google-beta.googleComputeBackendServiceIamMember.GoogleComputeBackendServiceIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleComputeBackendServiceIamMember_Override(g GoogleComputeBackendServ
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendServiceIamMember.GoogleComputeBackendServiceIamMember",
+		"@cdktf/provider-google-beta.googleComputeBackendServiceIamMember.GoogleComputeBackendServiceIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleComputeBackendServiceIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeBackendServiceIamMember.GoogleComputeBackendServiceIamMember",
+		"@cdktf/provider-google-beta.googleComputeBackendServiceIamMember.GoogleComputeBackendServiceIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleComputeBackendServiceIamMember_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeBackendServiceIamMember.GoogleComputeBackendServiceIamMember",
+		"@cdktf/provider-google-beta.googleComputeBackendServiceIamMember.GoogleComputeBackendServiceIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleComputeBackendServiceIamMember_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeBackendServiceIamMember.GoogleComputeBackendServiceIamMember",
+		"@cdktf/provider-google-beta.googleComputeBackendServiceIamMember.GoogleComputeBackendServiceIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleComputeBackendServiceIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeBackendServiceIamMember.GoogleComputeBackendServiceIamMember",
+		"@cdktf/provider-google-beta.googleComputeBackendServiceIamMember.GoogleComputeBackendServiceIamMember",
 		"tfResourceType",
 		&returns,
 	)

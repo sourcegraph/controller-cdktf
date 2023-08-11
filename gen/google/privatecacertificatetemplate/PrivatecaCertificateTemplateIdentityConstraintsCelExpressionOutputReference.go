@@ -252,7 +252,7 @@ func NewPrivatecaCertificateTemplateIdentityConstraintsCelExpressionOutputRefere
 	j := jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsCelExpressionOutputReference{}
 
 	_jsii_.Create(
-		"google.privatecaCertificateTemplate.PrivatecaCertificateTemplateIdentityConstraintsCelExpressionOutputReference",
+		"@cdktf/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplateIdentityConstraintsCelExpressionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewPrivatecaCertificateTemplateIdentityConstraintsCelExpressionOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCertificateTemplate.PrivatecaCertificateTemplateIdentityConstraintsCelExpressionOutputReference",
+		"@cdktf/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplateIdentityConstraintsCelExpressionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

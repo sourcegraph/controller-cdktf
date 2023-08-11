@@ -285,7 +285,7 @@ func NewDaemonsetSpecTemplateMetadataOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_DaemonsetSpecTemplateMetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateMetadataOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -297,7 +297,7 @@ func NewDaemonsetSpecTemplateMetadataOutputReference_Override(d DaemonsetSpecTem
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateMetadataOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

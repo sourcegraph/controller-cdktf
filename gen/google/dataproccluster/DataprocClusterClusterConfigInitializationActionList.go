@@ -116,7 +116,7 @@ func NewDataprocClusterClusterConfigInitializationActionList(terraformResource c
 	j := jsiiProxy_DataprocClusterClusterConfigInitializationActionList{}
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterClusterConfigInitializationActionList",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataprocClusterClusterConfigInitializationActionList_Override(d Dataproc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterClusterConfigInitializationActionList",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

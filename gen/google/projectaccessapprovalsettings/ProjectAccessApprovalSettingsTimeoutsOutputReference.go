@@ -228,7 +228,7 @@ func NewProjectAccessApprovalSettingsTimeoutsOutputReference(terraformResource c
 	j := jsiiProxy_ProjectAccessApprovalSettingsTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsTimeoutsOutputReference",
+		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewProjectAccessApprovalSettingsTimeoutsOutputReference_Override(p ProjectA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsTimeoutsOutputReference",
+		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

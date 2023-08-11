@@ -605,7 +605,7 @@ func NewSpectrumApplication(scope constructs.Construct, id *string, config *Spec
 	j := jsiiProxy_SpectrumApplication{}
 
 	_jsii_.Create(
-		"cloudflare.spectrumApplication.SpectrumApplication",
+		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -618,7 +618,7 @@ func NewSpectrumApplication_Override(s SpectrumApplication, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.spectrumApplication.SpectrumApplication",
+		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -828,7 +828,7 @@ func SpectrumApplication_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.spectrumApplication.SpectrumApplication",
+		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -847,7 +847,7 @@ func SpectrumApplication_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.spectrumApplication.SpectrumApplication",
+		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -866,7 +866,7 @@ func SpectrumApplication_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.spectrumApplication.SpectrumApplication",
+		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -879,7 +879,7 @@ func SpectrumApplication_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.spectrumApplication.SpectrumApplication",
+		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication",
 		"tfResourceType",
 		&returns,
 	)

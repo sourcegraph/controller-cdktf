@@ -180,7 +180,7 @@ func NewGlueTriggerActionsNotificationPropertyOutputReference(terraformResource 
 	j := jsiiProxy_GlueTriggerActionsNotificationPropertyOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueTrigger.GlueTriggerActionsNotificationPropertyOutputReference",
+		"@cdktf/provider-aws.glueTrigger.GlueTriggerActionsNotificationPropertyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGlueTriggerActionsNotificationPropertyOutputReference_Override(g GlueTri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueTrigger.GlueTriggerActionsNotificationPropertyOutputReference",
+		"@cdktf/provider-aws.glueTrigger.GlueTriggerActionsNotificationPropertyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

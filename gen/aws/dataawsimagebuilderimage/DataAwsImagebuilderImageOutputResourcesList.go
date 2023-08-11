@@ -104,7 +104,7 @@ func NewDataAwsImagebuilderImageOutputResourcesList(terraformResource cdktf.IInt
 	j := jsiiProxy_DataAwsImagebuilderImageOutputResourcesList{}
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResourcesList",
+		"@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsImagebuilderImageOutputResourcesList_Override(d DataAwsImagebuild
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResourcesList",
+		"@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

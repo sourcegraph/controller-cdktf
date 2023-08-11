@@ -460,7 +460,7 @@ func NewServicecatalogPortfolio(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_ServicecatalogPortfolio{}
 
 	_jsii_.Create(
-		"aws.servicecatalogPortfolio.ServicecatalogPortfolio",
+		"@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolio",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -473,7 +473,7 @@ func NewServicecatalogPortfolio_Override(s ServicecatalogPortfolio, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.servicecatalogPortfolio.ServicecatalogPortfolio",
+		"@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolio",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -639,7 +639,7 @@ func ServicecatalogPortfolio_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogPortfolio.ServicecatalogPortfolio",
+		"@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolio",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -658,7 +658,7 @@ func ServicecatalogPortfolio_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogPortfolio.ServicecatalogPortfolio",
+		"@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolio",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func ServicecatalogPortfolio_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogPortfolio.ServicecatalogPortfolio",
+		"@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolio",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -690,7 +690,7 @@ func ServicecatalogPortfolio_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.servicecatalogPortfolio.ServicecatalogPortfolio",
+		"@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolio",
 		"tfResourceType",
 		&returns,
 	)

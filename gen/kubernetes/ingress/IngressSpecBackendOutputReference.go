@@ -204,7 +204,7 @@ func NewIngressSpecBackendOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_IngressSpecBackendOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.ingress.IngressSpecBackendOutputReference",
+		"@cdktf/provider-kubernetes.ingress.IngressSpecBackendOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewIngressSpecBackendOutputReference_Override(i IngressSpecBackendOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.ingress.IngressSpecBackendOutputReference",
+		"@cdktf/provider-kubernetes.ingress.IngressSpecBackendOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

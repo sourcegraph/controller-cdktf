@@ -410,7 +410,7 @@ func NewCognitoUserPoolDomain(scope constructs.Construct, id *string, config *Co
 	j := jsiiProxy_CognitoUserPoolDomain{}
 
 	_jsii_.Create(
-		"aws.cognitoUserPoolDomain.CognitoUserPoolDomain",
+		"@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -423,7 +423,7 @@ func NewCognitoUserPoolDomain_Override(c CognitoUserPoolDomain, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserPoolDomain.CognitoUserPoolDomain",
+		"@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -567,7 +567,7 @@ func CognitoUserPoolDomain_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoUserPoolDomain.CognitoUserPoolDomain",
+		"@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -586,7 +586,7 @@ func CognitoUserPoolDomain_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoUserPoolDomain.CognitoUserPoolDomain",
+		"@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -605,7 +605,7 @@ func CognitoUserPoolDomain_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoUserPoolDomain.CognitoUserPoolDomain",
+		"@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -618,7 +618,7 @@ func CognitoUserPoolDomain_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cognitoUserPoolDomain.CognitoUserPoolDomain",
+		"@cdktf/provider-aws.cognitoUserPoolDomain.CognitoUserPoolDomain",
 		"tfResourceType",
 		&returns,
 	)

@@ -275,7 +275,7 @@ func NewBigqueryJobCopyOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_BigqueryJobCopyOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryJob.BigqueryJobCopyOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewBigqueryJobCopyOutputReference_Override(b BigqueryJobCopyOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryJob.BigqueryJobCopyOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

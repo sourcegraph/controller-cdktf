@@ -470,7 +470,7 @@ func NewPagesProject(scope constructs.Construct, id *string, config *PagesProjec
 	j := jsiiProxy_PagesProject{}
 
 	_jsii_.Create(
-		"cloudflare.pagesProject.PagesProject",
+		"@cdktf/provider-cloudflare.pagesProject.PagesProject",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -483,7 +483,7 @@ func NewPagesProject_Override(p PagesProject, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.pagesProject.PagesProject",
+		"@cdktf/provider-cloudflare.pagesProject.PagesProject",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -627,7 +627,7 @@ func PagesProject_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.pagesProject.PagesProject",
+		"@cdktf/provider-cloudflare.pagesProject.PagesProject",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func PagesProject_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.pagesProject.PagesProject",
+		"@cdktf/provider-cloudflare.pagesProject.PagesProject",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func PagesProject_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.pagesProject.PagesProject",
+		"@cdktf/provider-cloudflare.pagesProject.PagesProject",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func PagesProject_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.pagesProject.PagesProject",
+		"@cdktf/provider-cloudflare.pagesProject.PagesProject",
 		"tfResourceType",
 		&returns,
 	)

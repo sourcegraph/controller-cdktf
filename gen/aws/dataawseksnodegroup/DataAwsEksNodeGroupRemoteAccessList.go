@@ -104,7 +104,7 @@ func NewDataAwsEksNodeGroupRemoteAccessList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataAwsEksNodeGroupRemoteAccessList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupRemoteAccessList",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupRemoteAccessList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEksNodeGroupRemoteAccessList_Override(d DataAwsEksNodeGroupRemote
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupRemoteAccessList",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupRemoteAccessList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

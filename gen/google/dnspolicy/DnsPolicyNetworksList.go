@@ -116,7 +116,7 @@ func NewDnsPolicyNetworksList(terraformResource cdktf.IInterpolatingParent, terr
 	j := jsiiProxy_DnsPolicyNetworksList{}
 
 	_jsii_.Create(
-		"google.dnsPolicy.DnsPolicyNetworksList",
+		"@cdktf/provider-google.dnsPolicy.DnsPolicyNetworksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDnsPolicyNetworksList_Override(d DnsPolicyNetworksList, terraformResourc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsPolicy.DnsPolicyNetworksList",
+		"@cdktf/provider-google.dnsPolicy.DnsPolicyNetworksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.emrManagedScalingPolicy.EmrManagedScalingPolicy",
+		"@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicy",
 		reflect.TypeOf((*EmrManagedScalingPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,11 +60,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimits",
+		"@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimits",
 		reflect.TypeOf((*EmrManagedScalingPolicyComputeLimits)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimitsList",
+		"@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimitsList",
 		reflect.TypeOf((*EmrManagedScalingPolicyComputeLimitsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -85,7 +85,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimitsOutputReference",
+		"@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimitsOutputReference",
 		reflect.TypeOf((*EmrManagedScalingPolicyComputeLimitsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -129,7 +129,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.emrManagedScalingPolicy.EmrManagedScalingPolicyConfig",
+		"@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicyConfig",
 		reflect.TypeOf((*EmrManagedScalingPolicyConfig)(nil)).Elem(),
 	)
 }

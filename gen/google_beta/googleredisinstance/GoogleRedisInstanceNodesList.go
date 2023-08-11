@@ -104,7 +104,7 @@ func NewGoogleRedisInstanceNodesList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_GoogleRedisInstanceNodesList{}
 
 	_jsii_.Create(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceNodesList",
+		"@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceNodesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleRedisInstanceNodesList_Override(g GoogleRedisInstanceNodesList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceNodesList",
+		"@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceNodesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

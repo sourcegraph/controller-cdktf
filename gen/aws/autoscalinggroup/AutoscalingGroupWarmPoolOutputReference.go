@@ -252,7 +252,7 @@ func NewAutoscalingGroupWarmPoolOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_AutoscalingGroupWarmPoolOutputReference{}
 
 	_jsii_.Create(
-		"aws.autoscalingGroup.AutoscalingGroupWarmPoolOutputReference",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupWarmPoolOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewAutoscalingGroupWarmPoolOutputReference_Override(a AutoscalingGroupWarmP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingGroup.AutoscalingGroupWarmPoolOutputReference",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupWarmPoolOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -116,7 +116,7 @@ func NewDefaultServiceAccountV1ImagePullSecretList(terraformResource cdktf.IInte
 	j := jsiiProxy_DefaultServiceAccountV1ImagePullSecretList{}
 
 	_jsii_.Create(
-		"kubernetes.defaultServiceAccountV1.DefaultServiceAccountV1ImagePullSecretList",
+		"@cdktf/provider-kubernetes.defaultServiceAccountV1.DefaultServiceAccountV1ImagePullSecretList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDefaultServiceAccountV1ImagePullSecretList_Override(d DefaultServiceAcco
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.defaultServiceAccountV1.DefaultServiceAccountV1ImagePullSecretList",
+		"@cdktf/provider-kubernetes.defaultServiceAccountV1.DefaultServiceAccountV1ImagePullSecretList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

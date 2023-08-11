@@ -104,7 +104,7 @@ func NewDataGoogleComputeDiskAsyncPrimaryDiskList(terraformResource cdktf.IInter
 	j := jsiiProxy_DataGoogleComputeDiskAsyncPrimaryDiskList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskAsyncPrimaryDiskList",
+		"@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskAsyncPrimaryDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeDiskAsyncPrimaryDiskList_Override(d DataGoogleComputeDi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskAsyncPrimaryDiskList",
+		"@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskAsyncPrimaryDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

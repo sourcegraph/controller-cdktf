@@ -116,7 +116,7 @@ func NewS3ControlMultiRegionAccessPointDetailsRegionList(terraformResource cdktf
 	j := jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionList{}
 
 	_jsii_.Create(
-		"aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegionList",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewS3ControlMultiRegionAccessPointDetailsRegionList_Override(s S3ControlMul
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegionList",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

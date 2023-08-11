@@ -226,7 +226,7 @@ func NewGoogleKmsCryptoKeyIamMemberConditionOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleKmsCryptoKeyIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleKmsCryptoKeyIamMemberConditionOutputReference_Override(g GoogleKms
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

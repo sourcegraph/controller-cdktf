@@ -179,7 +179,7 @@ func NewDataprocClusterClusterConfigDataprocMetricConfigOutputReference(terrafor
 	j := jsiiProxy_DataprocClusterClusterConfigDataprocMetricConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigOutputReference",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDataprocClusterClusterConfigDataprocMetricConfigOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigOutputReference",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

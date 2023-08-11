@@ -470,7 +470,7 @@ func NewNetworkConnectivityHub(scope constructs.Construct, id *string, config *N
 	j := jsiiProxy_NetworkConnectivityHub{}
 
 	_jsii_.Create(
-		"google.networkConnectivityHub.NetworkConnectivityHub",
+		"@cdktf/provider-google.networkConnectivityHub.NetworkConnectivityHub",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -483,7 +483,7 @@ func NewNetworkConnectivityHub_Override(n NetworkConnectivityHub, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.networkConnectivityHub.NetworkConnectivityHub",
+		"@cdktf/provider-google.networkConnectivityHub.NetworkConnectivityHub",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -638,7 +638,7 @@ func NetworkConnectivityHub_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.networkConnectivityHub.NetworkConnectivityHub",
+		"@cdktf/provider-google.networkConnectivityHub.NetworkConnectivityHub",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func NetworkConnectivityHub_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.networkConnectivityHub.NetworkConnectivityHub",
+		"@cdktf/provider-google.networkConnectivityHub.NetworkConnectivityHub",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func NetworkConnectivityHub_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.networkConnectivityHub.NetworkConnectivityHub",
+		"@cdktf/provider-google.networkConnectivityHub.NetworkConnectivityHub",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func NetworkConnectivityHub_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.networkConnectivityHub.NetworkConnectivityHub",
+		"@cdktf/provider-google.networkConnectivityHub.NetworkConnectivityHub",
 		"tfResourceType",
 		&returns,
 	)

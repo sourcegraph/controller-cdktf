@@ -344,7 +344,7 @@ func NewIotIndexingConfiguration(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_IotIndexingConfiguration{}
 
 	_jsii_.Create(
-		"aws.iotIndexingConfiguration.IotIndexingConfiguration",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -357,7 +357,7 @@ func NewIotIndexingConfiguration_Override(i IotIndexingConfiguration, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotIndexingConfiguration.IotIndexingConfiguration",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -468,7 +468,7 @@ func IotIndexingConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotIndexingConfiguration.IotIndexingConfiguration",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -487,7 +487,7 @@ func IotIndexingConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotIndexingConfiguration.IotIndexingConfiguration",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -506,7 +506,7 @@ func IotIndexingConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotIndexingConfiguration.IotIndexingConfiguration",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -519,7 +519,7 @@ func IotIndexingConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iotIndexingConfiguration.IotIndexingConfiguration",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration",
 		"tfResourceType",
 		&returns,
 	)

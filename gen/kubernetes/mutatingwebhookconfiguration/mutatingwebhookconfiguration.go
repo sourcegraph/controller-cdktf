@@ -342,7 +342,7 @@ func NewMutatingWebhookConfiguration(scope constructs.Construct, id *string, con
 	j := jsiiProxy_MutatingWebhookConfiguration{}
 
 	_jsii_.Create(
-		"kubernetes.mutatingWebhookConfiguration.MutatingWebhookConfiguration",
+		"@cdktf/provider-kubernetes.mutatingWebhookConfiguration.MutatingWebhookConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewMutatingWebhookConfiguration_Override(m MutatingWebhookConfiguration, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.mutatingWebhookConfiguration.MutatingWebhookConfiguration",
+		"@cdktf/provider-kubernetes.mutatingWebhookConfiguration.MutatingWebhookConfiguration",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -466,7 +466,7 @@ func MutatingWebhookConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.mutatingWebhookConfiguration.MutatingWebhookConfiguration",
+		"@cdktf/provider-kubernetes.mutatingWebhookConfiguration.MutatingWebhookConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -485,7 +485,7 @@ func MutatingWebhookConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.mutatingWebhookConfiguration.MutatingWebhookConfiguration",
+		"@cdktf/provider-kubernetes.mutatingWebhookConfiguration.MutatingWebhookConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -504,7 +504,7 @@ func MutatingWebhookConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.mutatingWebhookConfiguration.MutatingWebhookConfiguration",
+		"@cdktf/provider-kubernetes.mutatingWebhookConfiguration.MutatingWebhookConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -517,7 +517,7 @@ func MutatingWebhookConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.mutatingWebhookConfiguration.MutatingWebhookConfiguration",
+		"@cdktf/provider-kubernetes.mutatingWebhookConfiguration.MutatingWebhookConfiguration",
 		"tfResourceType",
 		&returns,
 	)

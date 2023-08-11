@@ -202,7 +202,7 @@ func NewDataAwsCustomerGatewayFilterOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DataAwsCustomerGatewayFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsCustomerGatewayFilterOutputReference_Override(d DataAwsCustomerGa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

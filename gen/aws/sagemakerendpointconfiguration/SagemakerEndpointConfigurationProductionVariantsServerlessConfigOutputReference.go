@@ -202,7 +202,7 @@ func NewSagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputRe
 	j := jsiiProxy_SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

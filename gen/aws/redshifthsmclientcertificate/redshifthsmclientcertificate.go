@@ -389,7 +389,7 @@ func NewRedshiftHsmClientCertificate(scope constructs.Construct, id *string, con
 	j := jsiiProxy_RedshiftHsmClientCertificate{}
 
 	_jsii_.Create(
-		"aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificate",
+		"@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -402,7 +402,7 @@ func NewRedshiftHsmClientCertificate_Override(r RedshiftHsmClientCertificate, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificate",
+		"@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificate",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -546,7 +546,7 @@ func RedshiftHsmClientCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificate",
+		"@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func RedshiftHsmClientCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificate",
+		"@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func RedshiftHsmClientCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificate",
+		"@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func RedshiftHsmClientCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificate",
+		"@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificate",
 		"tfResourceType",
 		&returns,
 	)

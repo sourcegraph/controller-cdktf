@@ -204,7 +204,7 @@ func NewComputeHaVpnGatewayTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_ComputeHaVpnGatewayTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeHaVpnGateway.ComputeHaVpnGatewayTimeoutsOutputReference",
+		"@cdktf/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeHaVpnGatewayTimeoutsOutputReference_Override(c ComputeHaVpnGatewa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeHaVpnGateway.ComputeHaVpnGatewayTimeoutsOutputReference",
+		"@cdktf/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

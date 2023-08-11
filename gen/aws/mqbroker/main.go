@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.mqBroker.MqBroker",
+		"@cdktf/provider-aws.mqBroker.MqBroker",
 		reflect.TypeOf((*MqBroker)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -122,15 +122,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mqBroker.MqBrokerConfig",
+		"@cdktf/provider-aws.mqBroker.MqBrokerConfig",
 		reflect.TypeOf((*MqBrokerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.mqBroker.MqBrokerConfiguration",
+		"@cdktf/provider-aws.mqBroker.MqBrokerConfiguration",
 		reflect.TypeOf((*MqBrokerConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mqBroker.MqBrokerConfigurationOutputReference",
+		"@cdktf/provider-aws.mqBroker.MqBrokerConfigurationOutputReference",
 		reflect.TypeOf((*MqBrokerConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -168,11 +168,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mqBroker.MqBrokerEncryptionOptions",
+		"@cdktf/provider-aws.mqBroker.MqBrokerEncryptionOptions",
 		reflect.TypeOf((*MqBrokerEncryptionOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mqBroker.MqBrokerEncryptionOptionsOutputReference",
+		"@cdktf/provider-aws.mqBroker.MqBrokerEncryptionOptionsOutputReference",
 		reflect.TypeOf((*MqBrokerEncryptionOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -210,11 +210,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mqBroker.MqBrokerInstances",
+		"@cdktf/provider-aws.mqBroker.MqBrokerInstances",
 		reflect.TypeOf((*MqBrokerInstances)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mqBroker.MqBrokerInstancesList",
+		"@cdktf/provider-aws.mqBroker.MqBrokerInstancesList",
 		reflect.TypeOf((*MqBrokerInstancesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -234,7 +234,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.mqBroker.MqBrokerInstancesOutputReference",
+		"@cdktf/provider-aws.mqBroker.MqBrokerInstancesOutputReference",
 		reflect.TypeOf((*MqBrokerInstancesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -269,11 +269,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mqBroker.MqBrokerLdapServerMetadata",
+		"@cdktf/provider-aws.mqBroker.MqBrokerLdapServerMetadata",
 		reflect.TypeOf((*MqBrokerLdapServerMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mqBroker.MqBrokerLdapServerMetadataOutputReference",
+		"@cdktf/provider-aws.mqBroker.MqBrokerLdapServerMetadataOutputReference",
 		reflect.TypeOf((*MqBrokerLdapServerMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -338,11 +338,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mqBroker.MqBrokerLogs",
+		"@cdktf/provider-aws.mqBroker.MqBrokerLogs",
 		reflect.TypeOf((*MqBrokerLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mqBroker.MqBrokerLogsOutputReference",
+		"@cdktf/provider-aws.mqBroker.MqBrokerLogsOutputReference",
 		reflect.TypeOf((*MqBrokerLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audit", GoGetter: "Audit"},
@@ -380,11 +380,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mqBroker.MqBrokerMaintenanceWindowStartTime",
+		"@cdktf/provider-aws.mqBroker.MqBrokerMaintenanceWindowStartTime",
 		reflect.TypeOf((*MqBrokerMaintenanceWindowStartTime)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mqBroker.MqBrokerMaintenanceWindowStartTimeOutputReference",
+		"@cdktf/provider-aws.mqBroker.MqBrokerMaintenanceWindowStartTimeOutputReference",
 		reflect.TypeOf((*MqBrokerMaintenanceWindowStartTimeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -422,11 +422,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mqBroker.MqBrokerTimeouts",
+		"@cdktf/provider-aws.mqBroker.MqBrokerTimeouts",
 		reflect.TypeOf((*MqBrokerTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mqBroker.MqBrokerTimeoutsOutputReference",
+		"@cdktf/provider-aws.mqBroker.MqBrokerTimeoutsOutputReference",
 		reflect.TypeOf((*MqBrokerTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -467,11 +467,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mqBroker.MqBrokerUser",
+		"@cdktf/provider-aws.mqBroker.MqBrokerUser",
 		reflect.TypeOf((*MqBrokerUser)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mqBroker.MqBrokerUserList",
+		"@cdktf/provider-aws.mqBroker.MqBrokerUserList",
 		reflect.TypeOf((*MqBrokerUserList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -492,7 +492,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.mqBroker.MqBrokerUserOutputReference",
+		"@cdktf/provider-aws.mqBroker.MqBrokerUserOutputReference",
 		reflect.TypeOf((*MqBrokerUserOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

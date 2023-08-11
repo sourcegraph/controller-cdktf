@@ -796,7 +796,7 @@ func NewGoogleStorageBucket(scope constructs.Construct, id *string, config *Goog
 	j := jsiiProxy_GoogleStorageBucket{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucket.GoogleStorageBucket",
+		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucket",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -809,7 +809,7 @@ func NewGoogleStorageBucket_Override(g GoogleStorageBucket, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucket.GoogleStorageBucket",
+		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucket",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1030,7 +1030,7 @@ func GoogleStorageBucket_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageBucket.GoogleStorageBucket",
+		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucket",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1049,7 +1049,7 @@ func GoogleStorageBucket_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageBucket.GoogleStorageBucket",
+		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucket",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1068,7 +1068,7 @@ func GoogleStorageBucket_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageBucket.GoogleStorageBucket",
+		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucket",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1081,7 +1081,7 @@ func GoogleStorageBucket_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleStorageBucket.GoogleStorageBucket",
+		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucket",
 		"tfResourceType",
 		&returns,
 	)

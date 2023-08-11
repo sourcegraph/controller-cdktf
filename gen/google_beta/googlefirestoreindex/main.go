@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleFirestoreIndex.GoogleFirestoreIndex",
+		"@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndex",
 		reflect.TypeOf((*GoogleFirestoreIndex)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirestoreIndex.GoogleFirestoreIndexConfig",
+		"@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexConfig",
 		reflect.TypeOf((*GoogleFirestoreIndexConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirestoreIndex.GoogleFirestoreIndexFields",
+		"@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFields",
 		reflect.TypeOf((*GoogleFirestoreIndexFields)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsList",
+		"@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsList",
 		reflect.TypeOf((*GoogleFirestoreIndexFieldsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsOutputReference",
+		"@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsOutputReference",
 		reflect.TypeOf((*GoogleFirestoreIndexFieldsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arrayConfig", GoGetter: "ArrayConfig"},
@@ -144,11 +144,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirestoreIndex.GoogleFirestoreIndexTimeouts",
+		"@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexTimeouts",
 		reflect.TypeOf((*GoogleFirestoreIndexTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFirestoreIndex.GoogleFirestoreIndexTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleFirestoreIndexTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

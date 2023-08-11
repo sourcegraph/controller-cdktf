@@ -451,7 +451,7 @@ func NewGoogleMonitoringCustomService(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleMonitoringCustomService{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringCustomService.GoogleMonitoringCustomService",
+		"@cdktf/provider-google-beta.googleMonitoringCustomService.GoogleMonitoringCustomService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -464,7 +464,7 @@ func NewGoogleMonitoringCustomService_Override(g GoogleMonitoringCustomService, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringCustomService.GoogleMonitoringCustomService",
+		"@cdktf/provider-google-beta.googleMonitoringCustomService.GoogleMonitoringCustomService",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -619,7 +619,7 @@ func GoogleMonitoringCustomService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringCustomService.GoogleMonitoringCustomService",
+		"@cdktf/provider-google-beta.googleMonitoringCustomService.GoogleMonitoringCustomService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -638,7 +638,7 @@ func GoogleMonitoringCustomService_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringCustomService.GoogleMonitoringCustomService",
+		"@cdktf/provider-google-beta.googleMonitoringCustomService.GoogleMonitoringCustomService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func GoogleMonitoringCustomService_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringCustomService.GoogleMonitoringCustomService",
+		"@cdktf/provider-google-beta.googleMonitoringCustomService.GoogleMonitoringCustomService",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -670,7 +670,7 @@ func GoogleMonitoringCustomService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleMonitoringCustomService.GoogleMonitoringCustomService",
+		"@cdktf/provider-google-beta.googleMonitoringCustomService.GoogleMonitoringCustomService",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewGroupSchemaPropertyMasterOverridePriorityList(terraformResource cdktf.II
 	j := jsiiProxy_GroupSchemaPropertyMasterOverridePriorityList{}
 
 	_jsii_.Create(
-		"okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriorityList",
+		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriorityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGroupSchemaPropertyMasterOverridePriorityList_Override(g GroupSchemaProp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriorityList",
+		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriorityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

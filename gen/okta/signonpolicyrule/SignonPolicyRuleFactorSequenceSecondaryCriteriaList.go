@@ -116,7 +116,7 @@ func NewSignonPolicyRuleFactorSequenceSecondaryCriteriaList(terraformResource cd
 	j := jsiiProxy_SignonPolicyRuleFactorSequenceSecondaryCriteriaList{}
 
 	_jsii_.Create(
-		"okta.signonPolicyRule.SignonPolicyRuleFactorSequenceSecondaryCriteriaList",
+		"@cdktf/provider-okta.signonPolicyRule.SignonPolicyRuleFactorSequenceSecondaryCriteriaList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSignonPolicyRuleFactorSequenceSecondaryCriteriaList_Override(s SignonPol
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.signonPolicyRule.SignonPolicyRuleFactorSequenceSecondaryCriteriaList",
+		"@cdktf/provider-okta.signonPolicyRule.SignonPolicyRuleFactorSequenceSecondaryCriteriaList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

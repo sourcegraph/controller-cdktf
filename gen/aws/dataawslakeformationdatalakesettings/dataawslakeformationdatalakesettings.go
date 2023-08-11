@@ -336,7 +336,7 @@ func NewDataAwsLakeformationDataLakeSettings(scope constructs.Construct, id *str
 	j := jsiiProxy_DataAwsLakeformationDataLakeSettings{}
 
 	_jsii_.Create(
-		"aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettings",
+		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -349,7 +349,7 @@ func NewDataAwsLakeformationDataLakeSettings_Override(d DataAwsLakeformationData
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettings",
+		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettings",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -449,7 +449,7 @@ func DataAwsLakeformationDataLakeSettings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettings",
+		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -468,7 +468,7 @@ func DataAwsLakeformationDataLakeSettings_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettings",
+		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettings",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -487,7 +487,7 @@ func DataAwsLakeformationDataLakeSettings_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettings",
+		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -500,7 +500,7 @@ func DataAwsLakeformationDataLakeSettings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettings",
+		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettings",
 		"tfResourceType",
 		&returns,
 	)

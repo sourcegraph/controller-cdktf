@@ -366,7 +366,7 @@ func NewAdminRoleCustomAssignments(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_AdminRoleCustomAssignments{}
 
 	_jsii_.Create(
-		"okta.adminRoleCustomAssignments.AdminRoleCustomAssignments",
+		"@cdktf/provider-okta.adminRoleCustomAssignments.AdminRoleCustomAssignments",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewAdminRoleCustomAssignments_Override(a AdminRoleCustomAssignments, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.adminRoleCustomAssignments.AdminRoleCustomAssignments",
+		"@cdktf/provider-okta.adminRoleCustomAssignments.AdminRoleCustomAssignments",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -523,7 +523,7 @@ func AdminRoleCustomAssignments_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.adminRoleCustomAssignments.AdminRoleCustomAssignments",
+		"@cdktf/provider-okta.adminRoleCustomAssignments.AdminRoleCustomAssignments",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func AdminRoleCustomAssignments_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.adminRoleCustomAssignments.AdminRoleCustomAssignments",
+		"@cdktf/provider-okta.adminRoleCustomAssignments.AdminRoleCustomAssignments",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func AdminRoleCustomAssignments_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.adminRoleCustomAssignments.AdminRoleCustomAssignments",
+		"@cdktf/provider-okta.adminRoleCustomAssignments.AdminRoleCustomAssignments",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func AdminRoleCustomAssignments_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.adminRoleCustomAssignments.AdminRoleCustomAssignments",
+		"@cdktf/provider-okta.adminRoleCustomAssignments.AdminRoleCustomAssignments",
 		"tfResourceType",
 		&returns,
 	)

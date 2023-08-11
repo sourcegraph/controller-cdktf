@@ -180,7 +180,7 @@ func NewLambdaFunctionEnvironmentOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_LambdaFunctionEnvironmentOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaFunction.LambdaFunctionEnvironmentOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionEnvironmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewLambdaFunctionEnvironmentOutputReference_Override(l LambdaFunctionEnviro
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaFunction.LambdaFunctionEnvironmentOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionEnvironmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

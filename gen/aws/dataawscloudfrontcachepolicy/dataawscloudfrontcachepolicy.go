@@ -358,7 +358,7 @@ func NewDataAwsCloudfrontCachePolicy(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataAwsCloudfrontCachePolicy{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontCachePolicy.DataAwsCloudfrontCachePolicy",
+		"@cdktf/provider-aws.dataAwsCloudfrontCachePolicy.DataAwsCloudfrontCachePolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -371,7 +371,7 @@ func NewDataAwsCloudfrontCachePolicy_Override(d DataAwsCloudfrontCachePolicy, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontCachePolicy.DataAwsCloudfrontCachePolicy",
+		"@cdktf/provider-aws.dataAwsCloudfrontCachePolicy.DataAwsCloudfrontCachePolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -471,7 +471,7 @@ func DataAwsCloudfrontCachePolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudfrontCachePolicy.DataAwsCloudfrontCachePolicy",
+		"@cdktf/provider-aws.dataAwsCloudfrontCachePolicy.DataAwsCloudfrontCachePolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -490,7 +490,7 @@ func DataAwsCloudfrontCachePolicy_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudfrontCachePolicy.DataAwsCloudfrontCachePolicy",
+		"@cdktf/provider-aws.dataAwsCloudfrontCachePolicy.DataAwsCloudfrontCachePolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -509,7 +509,7 @@ func DataAwsCloudfrontCachePolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudfrontCachePolicy.DataAwsCloudfrontCachePolicy",
+		"@cdktf/provider-aws.dataAwsCloudfrontCachePolicy.DataAwsCloudfrontCachePolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -522,7 +522,7 @@ func DataAwsCloudfrontCachePolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsCloudfrontCachePolicy.DataAwsCloudfrontCachePolicy",
+		"@cdktf/provider-aws.dataAwsCloudfrontCachePolicy.DataAwsCloudfrontCachePolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -517,7 +517,7 @@ func NewAppautoscalingScheduledAction(scope constructs.Construct, id *string, co
 	j := jsiiProxy_AppautoscalingScheduledAction{}
 
 	_jsii_.Create(
-		"aws.appautoscalingScheduledAction.AppautoscalingScheduledAction",
+		"@cdktf/provider-aws.appautoscalingScheduledAction.AppautoscalingScheduledAction",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -530,7 +530,7 @@ func NewAppautoscalingScheduledAction_Override(a AppautoscalingScheduledAction, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appautoscalingScheduledAction.AppautoscalingScheduledAction",
+		"@cdktf/provider-aws.appautoscalingScheduledAction.AppautoscalingScheduledAction",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -729,7 +729,7 @@ func AppautoscalingScheduledAction_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appautoscalingScheduledAction.AppautoscalingScheduledAction",
+		"@cdktf/provider-aws.appautoscalingScheduledAction.AppautoscalingScheduledAction",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -748,7 +748,7 @@ func AppautoscalingScheduledAction_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appautoscalingScheduledAction.AppautoscalingScheduledAction",
+		"@cdktf/provider-aws.appautoscalingScheduledAction.AppautoscalingScheduledAction",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -767,7 +767,7 @@ func AppautoscalingScheduledAction_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appautoscalingScheduledAction.AppautoscalingScheduledAction",
+		"@cdktf/provider-aws.appautoscalingScheduledAction.AppautoscalingScheduledAction",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -780,7 +780,7 @@ func AppautoscalingScheduledAction_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appautoscalingScheduledAction.AppautoscalingScheduledAction",
+		"@cdktf/provider-aws.appautoscalingScheduledAction.AppautoscalingScheduledAction",
 		"tfResourceType",
 		&returns,
 	)

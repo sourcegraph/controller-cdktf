@@ -424,7 +424,7 @@ func NewSpannerInstanceIamMember(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_SpannerInstanceIamMember{}
 
 	_jsii_.Create(
-		"google.spannerInstanceIamMember.SpannerInstanceIamMember",
+		"@cdktf/provider-google.spannerInstanceIamMember.SpannerInstanceIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewSpannerInstanceIamMember_Override(s SpannerInstanceIamMember, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.spannerInstanceIamMember.SpannerInstanceIamMember",
+		"@cdktf/provider-google.spannerInstanceIamMember.SpannerInstanceIamMember",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -592,7 +592,7 @@ func SpannerInstanceIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.spannerInstanceIamMember.SpannerInstanceIamMember",
+		"@cdktf/provider-google.spannerInstanceIamMember.SpannerInstanceIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func SpannerInstanceIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.spannerInstanceIamMember.SpannerInstanceIamMember",
+		"@cdktf/provider-google.spannerInstanceIamMember.SpannerInstanceIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func SpannerInstanceIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.spannerInstanceIamMember.SpannerInstanceIamMember",
+		"@cdktf/provider-google.spannerInstanceIamMember.SpannerInstanceIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func SpannerInstanceIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.spannerInstanceIamMember.SpannerInstanceIamMember",
+		"@cdktf/provider-google.spannerInstanceIamMember.SpannerInstanceIamMember",
 		"tfResourceType",
 		&returns,
 	)

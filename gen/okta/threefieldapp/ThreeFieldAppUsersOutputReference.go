@@ -239,7 +239,7 @@ func NewThreeFieldAppUsersOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_ThreeFieldAppUsersOutputReference{}
 
 	_jsii_.Create(
-		"okta.threeFieldApp.ThreeFieldAppUsersOutputReference",
+		"@cdktf/provider-okta.threeFieldApp.ThreeFieldAppUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -251,7 +251,7 @@ func NewThreeFieldAppUsersOutputReference_Override(t ThreeFieldAppUsersOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.threeFieldApp.ThreeFieldAppUsersOutputReference",
+		"@cdktf/provider-okta.threeFieldApp.ThreeFieldAppUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		t,
 	)

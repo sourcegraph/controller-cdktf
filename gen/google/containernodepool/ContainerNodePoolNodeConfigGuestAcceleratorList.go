@@ -116,7 +116,7 @@ func NewContainerNodePoolNodeConfigGuestAcceleratorList(terraformResource cdktf.
 	j := jsiiProxy_ContainerNodePoolNodeConfigGuestAcceleratorList{}
 
 	_jsii_.Create(
-		"google.containerNodePool.ContainerNodePoolNodeConfigGuestAcceleratorList",
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigGuestAcceleratorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewContainerNodePoolNodeConfigGuestAcceleratorList_Override(c ContainerNode
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerNodePool.ContainerNodePoolNodeConfigGuestAcceleratorList",
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigGuestAcceleratorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

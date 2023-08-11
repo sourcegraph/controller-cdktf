@@ -228,7 +228,7 @@ func NewBatchSchedulingPolicyFairSharePolicyOutputReference(terraformResource cd
 	j := jsiiProxy_BatchSchedulingPolicyFairSharePolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.batchSchedulingPolicy.BatchSchedulingPolicyFairSharePolicyOutputReference",
+		"@cdktf/provider-aws.batchSchedulingPolicy.BatchSchedulingPolicyFairSharePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewBatchSchedulingPolicyFairSharePolicyOutputReference_Override(b BatchSche
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.batchSchedulingPolicy.BatchSchedulingPolicyFairSharePolicyOutputReference",
+		"@cdktf/provider-aws.batchSchedulingPolicy.BatchSchedulingPolicyFairSharePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

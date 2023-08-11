@@ -116,7 +116,7 @@ func NewLaunchTemplateTagSpecificationsList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_LaunchTemplateTagSpecificationsList{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateTagSpecificationsList",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecificationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLaunchTemplateTagSpecificationsList_Override(l LaunchTemplateTagSpecific
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateTagSpecificationsList",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecificationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

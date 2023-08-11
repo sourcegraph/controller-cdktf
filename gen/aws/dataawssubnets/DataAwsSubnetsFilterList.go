@@ -116,7 +116,7 @@ func NewDataAwsSubnetsFilterList(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_DataAwsSubnetsFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsSubnets.DataAwsSubnetsFilterList",
+		"@cdktf/provider-aws.dataAwsSubnets.DataAwsSubnetsFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsSubnetsFilterList_Override(d DataAwsSubnetsFilterList, terraformR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSubnets.DataAwsSubnetsFilterList",
+		"@cdktf/provider-aws.dataAwsSubnets.DataAwsSubnetsFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

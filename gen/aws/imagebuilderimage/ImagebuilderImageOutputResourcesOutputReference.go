@@ -167,7 +167,7 @@ func NewImagebuilderImageOutputResourcesOutputReference(terraformResource cdktf.
 	j := jsiiProxy_ImagebuilderImageOutputResourcesOutputReference{}
 
 	_jsii_.Create(
-		"aws.imagebuilderImage.ImagebuilderImageOutputResourcesOutputReference",
+		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewImagebuilderImageOutputResourcesOutputReference_Override(i ImagebuilderI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.imagebuilderImage.ImagebuilderImageOutputResourcesOutputReference",
+		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

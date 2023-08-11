@@ -325,7 +325,7 @@ func NewDataTfeTeamProjectAccess(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataTfeTeamProjectAccess{}
 
 	_jsii_.Create(
-		"tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccess",
+		"@cdktf/provider-tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccess",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -338,7 +338,7 @@ func NewDataTfeTeamProjectAccess_Override(d DataTfeTeamProjectAccess, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccess",
+		"@cdktf/provider-tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccess",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -449,7 +449,7 @@ func DataTfeTeamProjectAccess_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccess",
+		"@cdktf/provider-tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccess",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -468,7 +468,7 @@ func DataTfeTeamProjectAccess_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccess",
+		"@cdktf/provider-tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccess",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -487,7 +487,7 @@ func DataTfeTeamProjectAccess_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccess",
+		"@cdktf/provider-tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccess",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -500,7 +500,7 @@ func DataTfeTeamProjectAccess_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccess",
+		"@cdktf/provider-tfe.dataTfeTeamProjectAccess.DataTfeTeamProjectAccess",
 		"tfResourceType",
 		&returns,
 	)

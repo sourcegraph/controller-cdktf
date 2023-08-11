@@ -342,7 +342,7 @@ func NewDirectoryServiceLogSubscription(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DirectoryServiceLogSubscription{}
 
 	_jsii_.Create(
-		"aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription",
+		"@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewDirectoryServiceLogSubscription_Override(d DirectoryServiceLogSubscripti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription",
+		"@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -488,7 +488,7 @@ func DirectoryServiceLogSubscription_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription",
+		"@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func DirectoryServiceLogSubscription_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription",
+		"@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func DirectoryServiceLogSubscription_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription",
+		"@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func DirectoryServiceLogSubscription_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription",
+		"@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewDataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsList(t
 	j := jsiiProxy_DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsOrganizationsDelegatedAdministrators.DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsList",
+		"@cdktf/provider-aws.dataAwsOrganizationsDelegatedAdministrators.DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsList_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOrganizationsDelegatedAdministrators.DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsList",
+		"@cdktf/provider-aws.dataAwsOrganizationsDelegatedAdministrators.DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

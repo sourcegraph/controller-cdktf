@@ -227,7 +227,7 @@ func NewGoogleCloudRunServiceTemplateSpecVolumesSecretOutputReference(terraformR
 	j := jsiiProxy_GoogleCloudRunServiceTemplateSpecVolumesSecretOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesSecretOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesSecretOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewGoogleCloudRunServiceTemplateSpecVolumesSecretOutputReference_Override(g
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesSecretOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesSecretOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

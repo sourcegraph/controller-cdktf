@@ -204,7 +204,7 @@ func NewGoogleMonitoringMetricDescriptorMetadataOutputReference(terraformResourc
 	j := jsiiProxy_GoogleMonitoringMetricDescriptorMetadataOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorMetadataOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleMonitoringMetricDescriptorMetadataOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorMetadataOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

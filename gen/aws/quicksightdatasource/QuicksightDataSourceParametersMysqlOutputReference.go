@@ -225,7 +225,7 @@ func NewQuicksightDataSourceParametersMysqlOutputReference(terraformResource cdk
 	j := jsiiProxy_QuicksightDataSourceParametersMysqlOutputReference{}
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersMysqlOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMysqlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewQuicksightDataSourceParametersMysqlOutputReference_Override(q Quicksight
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersMysqlOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMysqlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)

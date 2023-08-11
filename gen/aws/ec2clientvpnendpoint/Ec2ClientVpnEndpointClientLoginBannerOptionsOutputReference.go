@@ -204,7 +204,7 @@ func NewEc2ClientVpnEndpointClientLoginBannerOptionsOutputReference(terraformRes
 	j := jsiiProxy_Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference",
+		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEc2ClientVpnEndpointClientLoginBannerOptionsOutputReference_Override(e E
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference",
+		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

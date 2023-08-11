@@ -179,7 +179,7 @@ func NewQuicksightDataSourceParametersServiceNowOutputReference(terraformResourc
 	j := jsiiProxy_QuicksightDataSourceParametersServiceNowOutputReference{}
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersServiceNowOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersServiceNowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewQuicksightDataSourceParametersServiceNowOutputReference_Override(q Quick
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersServiceNowOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersServiceNowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)

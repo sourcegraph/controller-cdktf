@@ -200,7 +200,7 @@ func NewDataAwsMemorydbClusterShardsNodesOutputReference(terraformResource cdktf
 	j := jsiiProxy_DataAwsMemorydbClusterShardsNodesOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterShardsNodesOutputReference",
+		"@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterShardsNodesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataAwsMemorydbClusterShardsNodesOutputReference_Override(d DataAwsMemor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterShardsNodesOutputReference",
+		"@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterShardsNodesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

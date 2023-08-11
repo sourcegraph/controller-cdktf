@@ -435,7 +435,7 @@ func NewDlpProfile(scope constructs.Construct, id *string, config *DlpProfileCon
 	j := jsiiProxy_DlpProfile{}
 
 	_jsii_.Create(
-		"cloudflare.dlpProfile.DlpProfile",
+		"@cdktf/provider-cloudflare.dlpProfile.DlpProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -448,7 +448,7 @@ func NewDlpProfile_Override(d DlpProfile, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dlpProfile.DlpProfile",
+		"@cdktf/provider-cloudflare.dlpProfile.DlpProfile",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -614,7 +614,7 @@ func DlpProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dlpProfile.DlpProfile",
+		"@cdktf/provider-cloudflare.dlpProfile.DlpProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func DlpProfile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dlpProfile.DlpProfile",
+		"@cdktf/provider-cloudflare.dlpProfile.DlpProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -652,7 +652,7 @@ func DlpProfile_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dlpProfile.DlpProfile",
+		"@cdktf/provider-cloudflare.dlpProfile.DlpProfile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func DlpProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.dlpProfile.DlpProfile",
+		"@cdktf/provider-cloudflare.dlpProfile.DlpProfile",
 		"tfResourceType",
 		&returns,
 	)

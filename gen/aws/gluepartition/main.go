@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.gluePartition.GluePartition",
+		"@cdktf/provider-aws.gluePartition.GluePartition",
 		reflect.TypeOf((*GluePartition)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,19 +74,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.gluePartition.GluePartitionConfig",
+		"@cdktf/provider-aws.gluePartition.GluePartitionConfig",
 		reflect.TypeOf((*GluePartitionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.gluePartition.GluePartitionStorageDescriptor",
+		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor",
 		reflect.TypeOf((*GluePartitionStorageDescriptor)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.gluePartition.GluePartitionStorageDescriptorColumns",
+		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumns",
 		reflect.TypeOf((*GluePartitionStorageDescriptorColumns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.gluePartition.GluePartitionStorageDescriptorColumnsList",
+		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumnsList",
 		reflect.TypeOf((*GluePartitionStorageDescriptorColumnsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.gluePartition.GluePartitionStorageDescriptorColumnsOutputReference",
+		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumnsOutputReference",
 		reflect.TypeOf((*GluePartitionStorageDescriptorColumnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
@@ -147,7 +147,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.gluePartition.GluePartitionStorageDescriptorOutputReference",
+		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorOutputReference",
 		reflect.TypeOf((*GluePartitionStorageDescriptorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketColumns", GoGetter: "BucketColumns"},
@@ -219,11 +219,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.gluePartition.GluePartitionStorageDescriptorSerDeInfo",
+		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSerDeInfo",
 		reflect.TypeOf((*GluePartitionStorageDescriptorSerDeInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.gluePartition.GluePartitionStorageDescriptorSerDeInfoOutputReference",
+		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSerDeInfoOutputReference",
 		reflect.TypeOf((*GluePartitionStorageDescriptorSerDeInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -264,11 +264,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.gluePartition.GluePartitionStorageDescriptorSkewedInfo",
+		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSkewedInfo",
 		reflect.TypeOf((*GluePartitionStorageDescriptorSkewedInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.gluePartition.GluePartitionStorageDescriptorSkewedInfoOutputReference",
+		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSkewedInfoOutputReference",
 		reflect.TypeOf((*GluePartitionStorageDescriptorSkewedInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -309,11 +309,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.gluePartition.GluePartitionStorageDescriptorSortColumns",
+		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumns",
 		reflect.TypeOf((*GluePartitionStorageDescriptorSortColumns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.gluePartition.GluePartitionStorageDescriptorSortColumnsList",
+		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumnsList",
 		reflect.TypeOf((*GluePartitionStorageDescriptorSortColumnsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -334,7 +334,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.gluePartition.GluePartitionStorageDescriptorSortColumnsOutputReference",
+		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumnsOutputReference",
 		reflect.TypeOf((*GluePartitionStorageDescriptorSortColumnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},

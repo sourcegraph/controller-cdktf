@@ -203,7 +203,7 @@ func NewAccessContextManagerAccessLevelBasicOutputReference(terraformResource cd
 	j := jsiiProxy_AccessContextManagerAccessLevelBasicOutputReference{}
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicOutputReference",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAccessContextManagerAccessLevelBasicOutputReference_Override(a AccessCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicOutputReference",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

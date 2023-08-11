@@ -307,7 +307,7 @@ func NewGoogleDatabaseMigrationServiceConnectionProfileMysqlOutputReference(terr
 	j := jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileMysqlOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfileMysqlOutputReference",
+		"@cdktf/provider-google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfileMysqlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -319,7 +319,7 @@ func NewGoogleDatabaseMigrationServiceConnectionProfileMysqlOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfileMysqlOutputReference",
+		"@cdktf/provider-google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfileMysqlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

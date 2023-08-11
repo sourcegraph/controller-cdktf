@@ -179,7 +179,7 @@ func NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsOutpu
 	j := jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

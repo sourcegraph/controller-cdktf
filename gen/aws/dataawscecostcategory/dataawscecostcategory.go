@@ -381,7 +381,7 @@ func NewDataAwsCeCostCategory(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataAwsCeCostCategory{}
 
 	_jsii_.Create(
-		"aws.dataAwsCeCostCategory.DataAwsCeCostCategory",
+		"@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategory",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -394,7 +394,7 @@ func NewDataAwsCeCostCategory_Override(d DataAwsCeCostCategory, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCeCostCategory.DataAwsCeCostCategory",
+		"@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategory",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -505,7 +505,7 @@ func DataAwsCeCostCategory_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCeCostCategory.DataAwsCeCostCategory",
+		"@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategory",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -524,7 +524,7 @@ func DataAwsCeCostCategory_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCeCostCategory.DataAwsCeCostCategory",
+		"@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategory",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func DataAwsCeCostCategory_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCeCostCategory.DataAwsCeCostCategory",
+		"@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategory",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -556,7 +556,7 @@ func DataAwsCeCostCategory_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsCeCostCategory.DataAwsCeCostCategory",
+		"@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategory",
 		"tfResourceType",
 		&returns,
 	)

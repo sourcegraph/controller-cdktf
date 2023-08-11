@@ -104,7 +104,7 @@ func NewDataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigList(terraf
 	j := jsiiProxy_DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigList{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigList",
+		"@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigList_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigList",
+		"@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

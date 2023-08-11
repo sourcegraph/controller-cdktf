@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheck",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck",
 		reflect.TypeOf((*ComputeRegionHealthCheck)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -113,15 +113,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheckConfig",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckConfig",
 		reflect.TypeOf((*ComputeRegionHealthCheckConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcHealthCheck",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcHealthCheck",
 		reflect.TypeOf((*ComputeRegionHealthCheckGrpcHealthCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcHealthCheckOutputReference",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcHealthCheckOutputReference",
 		reflect.TypeOf((*ComputeRegionHealthCheckGrpcHealthCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -165,11 +165,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheckHttp2HealthCheck",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckHttp2HealthCheck",
 		reflect.TypeOf((*ComputeRegionHealthCheckHttp2HealthCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheckHttp2HealthCheckOutputReference",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckHttp2HealthCheckOutputReference",
 		reflect.TypeOf((*ComputeRegionHealthCheckHttp2HealthCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -222,11 +222,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheckHttpHealthCheck",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckHttpHealthCheck",
 		reflect.TypeOf((*ComputeRegionHealthCheckHttpHealthCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheckHttpHealthCheckOutputReference",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckHttpHealthCheckOutputReference",
 		reflect.TypeOf((*ComputeRegionHealthCheckHttpHealthCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -279,11 +279,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheckHttpsHealthCheck",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckHttpsHealthCheck",
 		reflect.TypeOf((*ComputeRegionHealthCheckHttpsHealthCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheckHttpsHealthCheckOutputReference",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckHttpsHealthCheckOutputReference",
 		reflect.TypeOf((*ComputeRegionHealthCheckHttpsHealthCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -336,11 +336,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheckLogConfig",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckLogConfig",
 		reflect.TypeOf((*ComputeRegionHealthCheckLogConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheckLogConfigOutputReference",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckLogConfigOutputReference",
 		reflect.TypeOf((*ComputeRegionHealthCheckLogConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -375,11 +375,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheckSslHealthCheck",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckSslHealthCheck",
 		reflect.TypeOf((*ComputeRegionHealthCheckSslHealthCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheckSslHealthCheckOutputReference",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckSslHealthCheckOutputReference",
 		reflect.TypeOf((*ComputeRegionHealthCheckSslHealthCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -429,11 +429,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheckTcpHealthCheck",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckTcpHealthCheck",
 		reflect.TypeOf((*ComputeRegionHealthCheckTcpHealthCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheckTcpHealthCheckOutputReference",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckTcpHealthCheckOutputReference",
 		reflect.TypeOf((*ComputeRegionHealthCheckTcpHealthCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -483,11 +483,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheckTimeouts",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckTimeouts",
 		reflect.TypeOf((*ComputeRegionHealthCheckTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheckTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeRegionHealthCheckTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

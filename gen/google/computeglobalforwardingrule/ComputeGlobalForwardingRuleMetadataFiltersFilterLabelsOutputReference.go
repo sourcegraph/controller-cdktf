@@ -202,7 +202,7 @@ func NewComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference(te
 	j := jsiiProxy_ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference",
+		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference",
+		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

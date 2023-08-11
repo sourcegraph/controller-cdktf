@@ -179,7 +179,7 @@ func NewWafv2WebAclDefaultActionAllowCustomRequestHandlingOutputReference(terraf
 	j := jsiiProxy_Wafv2WebAclDefaultActionAllowCustomRequestHandlingOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewWafv2WebAclDefaultActionAllowCustomRequestHandlingOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

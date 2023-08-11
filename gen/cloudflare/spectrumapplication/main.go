@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.spectrumApplication.SpectrumApplication",
+		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication",
 		reflect.TypeOf((*SpectrumApplication)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -95,15 +95,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.spectrumApplication.SpectrumApplicationConfig",
+		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationConfig",
 		reflect.TypeOf((*SpectrumApplicationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.spectrumApplication.SpectrumApplicationDns",
+		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationDns",
 		reflect.TypeOf((*SpectrumApplicationDns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.spectrumApplication.SpectrumApplicationDnsOutputReference",
+		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationDnsOutputReference",
 		reflect.TypeOf((*SpectrumApplicationDnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,11 +139,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.spectrumApplication.SpectrumApplicationEdgeIps",
+		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationEdgeIps",
 		reflect.TypeOf((*SpectrumApplicationEdgeIps)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.spectrumApplication.SpectrumApplicationEdgeIpsOutputReference",
+		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationEdgeIpsOutputReference",
 		reflect.TypeOf((*SpectrumApplicationEdgeIpsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -183,11 +183,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.spectrumApplication.SpectrumApplicationOriginDns",
+		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationOriginDns",
 		reflect.TypeOf((*SpectrumApplicationOriginDns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.spectrumApplication.SpectrumApplicationOriginDnsOutputReference",
+		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationOriginDnsOutputReference",
 		reflect.TypeOf((*SpectrumApplicationOriginDnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -221,11 +221,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.spectrumApplication.SpectrumApplicationOriginPortRange",
+		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationOriginPortRange",
 		reflect.TypeOf((*SpectrumApplicationOriginPortRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.spectrumApplication.SpectrumApplicationOriginPortRangeOutputReference",
+		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationOriginPortRangeOutputReference",
 		reflect.TypeOf((*SpectrumApplicationOriginPortRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

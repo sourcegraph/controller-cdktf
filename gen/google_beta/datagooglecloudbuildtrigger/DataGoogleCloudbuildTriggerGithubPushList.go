@@ -104,7 +104,7 @@ func NewDataGoogleCloudbuildTriggerGithubPushList(terraformResource cdktf.IInter
 	j := jsiiProxy_DataGoogleCloudbuildTriggerGithubPushList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerGithubPushList",
+		"@cdktf/provider-google-beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerGithubPushList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudbuildTriggerGithubPushList_Override(d DataGoogleCloudbuil
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerGithubPushList",
+		"@cdktf/provider-google-beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerGithubPushList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

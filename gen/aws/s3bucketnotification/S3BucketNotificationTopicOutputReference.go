@@ -274,7 +274,7 @@ func NewS3BucketNotificationTopicOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_S3BucketNotificationTopicOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketNotification.S3BucketNotificationTopicOutputReference",
+		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotificationTopicOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -286,7 +286,7 @@ func NewS3BucketNotificationTopicOutputReference_Override(s S3BucketNotification
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketNotification.S3BucketNotificationTopicOutputReference",
+		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotificationTopicOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

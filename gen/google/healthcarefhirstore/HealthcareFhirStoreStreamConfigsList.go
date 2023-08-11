@@ -116,7 +116,7 @@ func NewHealthcareFhirStoreStreamConfigsList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_HealthcareFhirStoreStreamConfigsList{}
 
 	_jsii_.Create(
-		"google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsList",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewHealthcareFhirStoreStreamConfigsList_Override(h HealthcareFhirStoreStrea
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsList",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		h,
 	)

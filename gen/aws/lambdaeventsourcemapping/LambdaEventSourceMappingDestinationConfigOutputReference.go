@@ -180,7 +180,7 @@ func NewLambdaEventSourceMappingDestinationConfigOutputReference(terraformResour
 	j := jsiiProxy_LambdaEventSourceMappingDestinationConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewLambdaEventSourceMappingDestinationConfigOutputReference_Override(l Lamb
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

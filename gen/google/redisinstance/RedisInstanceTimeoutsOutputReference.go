@@ -228,7 +228,7 @@ func NewRedisInstanceTimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_RedisInstanceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.redisInstance.RedisInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google.redisInstance.RedisInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewRedisInstanceTimeoutsOutputReference_Override(r RedisInstanceTimeoutsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.redisInstance.RedisInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google.redisInstance.RedisInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

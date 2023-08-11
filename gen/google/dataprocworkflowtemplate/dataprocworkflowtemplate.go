@@ -554,7 +554,7 @@ func NewDataprocWorkflowTemplate(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataprocWorkflowTemplate{}
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplate",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -567,7 +567,7 @@ func NewDataprocWorkflowTemplate_Override(d DataprocWorkflowTemplate, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplate",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -744,7 +744,7 @@ func DataprocWorkflowTemplate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplate",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -763,7 +763,7 @@ func DataprocWorkflowTemplate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplate",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -782,7 +782,7 @@ func DataprocWorkflowTemplate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplate",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -795,7 +795,7 @@ func DataprocWorkflowTemplate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplate",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate",
 		"tfResourceType",
 		&returns,
 	)

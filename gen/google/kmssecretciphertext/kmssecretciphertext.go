@@ -401,7 +401,7 @@ func NewKmsSecretCiphertext(scope constructs.Construct, id *string, config *KmsS
 	j := jsiiProxy_KmsSecretCiphertext{}
 
 	_jsii_.Create(
-		"google.kmsSecretCiphertext.KmsSecretCiphertext",
+		"@cdktf/provider-google.kmsSecretCiphertext.KmsSecretCiphertext",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewKmsSecretCiphertext_Override(k KmsSecretCiphertext, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.kmsSecretCiphertext.KmsSecretCiphertext",
+		"@cdktf/provider-google.kmsSecretCiphertext.KmsSecretCiphertext",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -558,7 +558,7 @@ func KmsSecretCiphertext_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.kmsSecretCiphertext.KmsSecretCiphertext",
+		"@cdktf/provider-google.kmsSecretCiphertext.KmsSecretCiphertext",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func KmsSecretCiphertext_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.kmsSecretCiphertext.KmsSecretCiphertext",
+		"@cdktf/provider-google.kmsSecretCiphertext.KmsSecretCiphertext",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func KmsSecretCiphertext_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.kmsSecretCiphertext.KmsSecretCiphertext",
+		"@cdktf/provider-google.kmsSecretCiphertext.KmsSecretCiphertext",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func KmsSecretCiphertext_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.kmsSecretCiphertext.KmsSecretCiphertext",
+		"@cdktf/provider-google.kmsSecretCiphertext.KmsSecretCiphertext",
 		"tfResourceType",
 		&returns,
 	)

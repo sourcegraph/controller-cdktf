@@ -617,7 +617,7 @@ func NewEc2Fleet(scope constructs.Construct, id *string, config *Ec2FleetConfig)
 	j := jsiiProxy_Ec2Fleet{}
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2Fleet",
+		"@cdktf/provider-aws.ec2Fleet.Ec2Fleet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -630,7 +630,7 @@ func NewEc2Fleet_Override(e Ec2Fleet, scope constructs.Construct, id *string, co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2Fleet",
+		"@cdktf/provider-aws.ec2Fleet.Ec2Fleet",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -829,7 +829,7 @@ func Ec2Fleet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2Fleet.Ec2Fleet",
+		"@cdktf/provider-aws.ec2Fleet.Ec2Fleet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -848,7 +848,7 @@ func Ec2Fleet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2Fleet.Ec2Fleet",
+		"@cdktf/provider-aws.ec2Fleet.Ec2Fleet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -867,7 +867,7 @@ func Ec2Fleet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2Fleet.Ec2Fleet",
+		"@cdktf/provider-aws.ec2Fleet.Ec2Fleet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -880,7 +880,7 @@ func Ec2Fleet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2Fleet.Ec2Fleet",
+		"@cdktf/provider-aws.ec2Fleet.Ec2Fleet",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment",
+		"@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment",
 		reflect.TypeOf((*PolicyRuleProfileEnrollment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
@@ -80,15 +80,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig",
+		"@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig",
 		reflect.TypeOf((*PolicyRuleProfileEnrollmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributes",
+		"@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributes",
 		reflect.TypeOf((*PolicyRuleProfileEnrollmentProfileAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributesList",
+		"@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributesList",
 		reflect.TypeOf((*PolicyRuleProfileEnrollmentProfileAttributesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributesOutputReference",
+		"@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributesOutputReference",
 		reflect.TypeOf((*PolicyRuleProfileEnrollmentProfileAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

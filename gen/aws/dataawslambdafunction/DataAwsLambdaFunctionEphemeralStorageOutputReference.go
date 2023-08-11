@@ -167,7 +167,7 @@ func NewDataAwsLambdaFunctionEphemeralStorageOutputReference(terraformResource c
 	j := jsiiProxy_DataAwsLambdaFunctionEphemeralStorageOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEphemeralStorageOutputReference",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEphemeralStorageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsLambdaFunctionEphemeralStorageOutputReference_Override(d DataAwsL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEphemeralStorageOutputReference",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEphemeralStorageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.locationTrackerAssociation.LocationTrackerAssociation",
+		"@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation",
 		reflect.TypeOf((*LocationTrackerAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.locationTrackerAssociation.LocationTrackerAssociationConfig",
+		"@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationConfig",
 		reflect.TypeOf((*LocationTrackerAssociationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.locationTrackerAssociation.LocationTrackerAssociationTimeouts",
+		"@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeouts",
 		reflect.TypeOf((*LocationTrackerAssociationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.locationTrackerAssociation.LocationTrackerAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeoutsOutputReference",
 		reflect.TypeOf((*LocationTrackerAssociationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

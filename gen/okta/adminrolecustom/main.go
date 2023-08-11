@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.adminRoleCustom.AdminRoleCustom",
+		"@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom",
 		reflect.TypeOf((*AdminRoleCustom)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.adminRoleCustom.AdminRoleCustomConfig",
+		"@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig",
 		reflect.TypeOf((*AdminRoleCustomConfig)(nil)).Elem(),
 	)
 }

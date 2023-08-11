@@ -179,7 +179,7 @@ func NewWafv2RuleGroupRuleStatementNotStatementStatementAndStatementOutputRefere
 	j := jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementStatementAndStatementOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementNotStatementStatementAndStatementOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementNotStatementStatementAndStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewWafv2RuleGroupRuleStatementNotStatementStatementAndStatementOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementNotStatementStatementAndStatementOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementNotStatementStatementAndStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

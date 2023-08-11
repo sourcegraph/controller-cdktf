@@ -830,7 +830,7 @@ func NewDataflowJob(scope constructs.Construct, id *string, config *DataflowJobC
 	j := jsiiProxy_DataflowJob{}
 
 	_jsii_.Create(
-		"google.dataflowJob.DataflowJob",
+		"@cdktf/provider-google.dataflowJob.DataflowJob",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -843,7 +843,7 @@ func NewDataflowJob_Override(d DataflowJob, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataflowJob.DataflowJob",
+		"@cdktf/provider-google.dataflowJob.DataflowJob",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -1174,7 +1174,7 @@ func DataflowJob_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataflowJob.DataflowJob",
+		"@cdktf/provider-google.dataflowJob.DataflowJob",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1193,7 +1193,7 @@ func DataflowJob_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataflowJob.DataflowJob",
+		"@cdktf/provider-google.dataflowJob.DataflowJob",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1212,7 +1212,7 @@ func DataflowJob_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataflowJob.DataflowJob",
+		"@cdktf/provider-google.dataflowJob.DataflowJob",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1225,7 +1225,7 @@ func DataflowJob_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataflowJob.DataflowJob",
+		"@cdktf/provider-google.dataflowJob.DataflowJob",
 		"tfResourceType",
 		&returns,
 	)

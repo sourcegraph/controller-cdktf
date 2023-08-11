@@ -226,7 +226,7 @@ func NewLexIntentSlotValueElicitationPromptMessageOutputReference(terraformResou
 	j := jsiiProxy_LexIntentSlotValueElicitationPromptMessageOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentSlotValueElicitationPromptMessageOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewLexIntentSlotValueElicitationPromptMessageOutputReference_Override(l Lex
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentSlotValueElicitationPromptMessageOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

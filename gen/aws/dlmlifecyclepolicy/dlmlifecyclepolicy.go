@@ -448,7 +448,7 @@ func NewDlmLifecyclePolicy(scope constructs.Construct, id *string, config *DlmLi
 	j := jsiiProxy_DlmLifecyclePolicy{}
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicy",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewDlmLifecyclePolicy_Override(d DlmLifecyclePolicy, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicy",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -627,7 +627,7 @@ func DlmLifecyclePolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicy",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func DlmLifecyclePolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicy",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func DlmLifecyclePolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicy",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DlmLifecyclePolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicy",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicy",
 		"tfResourceType",
 		&returns,
 	)

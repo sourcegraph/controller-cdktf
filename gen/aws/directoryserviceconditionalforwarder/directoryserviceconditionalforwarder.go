@@ -365,7 +365,7 @@ func NewDirectoryServiceConditionalForwarder(scope constructs.Construct, id *str
 	j := jsiiProxy_DirectoryServiceConditionalForwarder{}
 
 	_jsii_.Create(
-		"aws.directoryServiceConditionalForwarder.DirectoryServiceConditionalForwarder",
+		"@cdktf/provider-aws.directoryServiceConditionalForwarder.DirectoryServiceConditionalForwarder",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewDirectoryServiceConditionalForwarder_Override(d DirectoryServiceConditio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.directoryServiceConditionalForwarder.DirectoryServiceConditionalForwarder",
+		"@cdktf/provider-aws.directoryServiceConditionalForwarder.DirectoryServiceConditionalForwarder",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -522,7 +522,7 @@ func DirectoryServiceConditionalForwarder_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.directoryServiceConditionalForwarder.DirectoryServiceConditionalForwarder",
+		"@cdktf/provider-aws.directoryServiceConditionalForwarder.DirectoryServiceConditionalForwarder",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func DirectoryServiceConditionalForwarder_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.directoryServiceConditionalForwarder.DirectoryServiceConditionalForwarder",
+		"@cdktf/provider-aws.directoryServiceConditionalForwarder.DirectoryServiceConditionalForwarder",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func DirectoryServiceConditionalForwarder_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.directoryServiceConditionalForwarder.DirectoryServiceConditionalForwarder",
+		"@cdktf/provider-aws.directoryServiceConditionalForwarder.DirectoryServiceConditionalForwarder",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func DirectoryServiceConditionalForwarder_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.directoryServiceConditionalForwarder.DirectoryServiceConditionalForwarder",
+		"@cdktf/provider-aws.directoryServiceConditionalForwarder.DirectoryServiceConditionalForwarder",
 		"tfResourceType",
 		&returns,
 	)

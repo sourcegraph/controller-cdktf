@@ -228,7 +228,7 @@ func NewAccessContextManagerAccessPolicyTimeoutsOutputReference(terraformResourc
 	j := jsiiProxy_AccessContextManagerAccessPolicyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAccessContextManagerAccessPolicyTimeoutsOutputReference_Override(a Acces
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

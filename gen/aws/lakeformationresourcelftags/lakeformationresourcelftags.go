@@ -439,7 +439,7 @@ func NewLakeformationResourceLfTags(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_LakeformationResourceLfTags{}
 
 	_jsii_.Create(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTags",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTags",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -452,7 +452,7 @@ func NewLakeformationResourceLfTags_Override(l LakeformationResourceLfTags, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTags",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTags",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -574,7 +574,7 @@ func LakeformationResourceLfTags_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTags",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTags",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -593,7 +593,7 @@ func LakeformationResourceLfTags_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTags",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTags",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func LakeformationResourceLfTags_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTags",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTags",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -625,7 +625,7 @@ func LakeformationResourceLfTags_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTags",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTags",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesList(terraform
 	j := jsiiProxy_DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesList{}
 
 	_jsii_.Create(
-		"google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesList",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesList_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesList",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

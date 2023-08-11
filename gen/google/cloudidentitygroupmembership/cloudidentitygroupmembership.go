@@ -434,7 +434,7 @@ func NewCloudIdentityGroupMembership(scope constructs.Construct, id *string, con
 	j := jsiiProxy_CloudIdentityGroupMembership{}
 
 	_jsii_.Create(
-		"google.cloudIdentityGroupMembership.CloudIdentityGroupMembership",
+		"@cdktf/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -447,7 +447,7 @@ func NewCloudIdentityGroupMembership_Override(c CloudIdentityGroupMembership, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudIdentityGroupMembership.CloudIdentityGroupMembership",
+		"@cdktf/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -569,7 +569,7 @@ func CloudIdentityGroupMembership_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudIdentityGroupMembership.CloudIdentityGroupMembership",
+		"@cdktf/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func CloudIdentityGroupMembership_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudIdentityGroupMembership.CloudIdentityGroupMembership",
+		"@cdktf/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func CloudIdentityGroupMembership_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudIdentityGroupMembership.CloudIdentityGroupMembership",
+		"@cdktf/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func CloudIdentityGroupMembership_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudIdentityGroupMembership.CloudIdentityGroupMembership",
+		"@cdktf/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership",
 		"tfResourceType",
 		&returns,
 	)

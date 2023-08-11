@@ -239,7 +239,7 @@ func NewSamlAppUsersOutputReference(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_SamlAppUsersOutputReference{}
 
 	_jsii_.Create(
-		"okta.samlApp.SamlAppUsersOutputReference",
+		"@cdktf/provider-okta.samlApp.SamlAppUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -251,7 +251,7 @@ func NewSamlAppUsersOutputReference_Override(s SamlAppUsersOutputReference, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.samlApp.SamlAppUsersOutputReference",
+		"@cdktf/provider-okta.samlApp.SamlAppUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

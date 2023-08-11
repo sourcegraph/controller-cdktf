@@ -461,7 +461,7 @@ func NewDirectoryServiceRegion(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DirectoryServiceRegion{}
 
 	_jsii_.Create(
-		"aws.directoryServiceRegion.DirectoryServiceRegion",
+		"@cdktf/provider-aws.directoryServiceRegion.DirectoryServiceRegion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -474,7 +474,7 @@ func NewDirectoryServiceRegion_Override(d DirectoryServiceRegion, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.directoryServiceRegion.DirectoryServiceRegion",
+		"@cdktf/provider-aws.directoryServiceRegion.DirectoryServiceRegion",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -640,7 +640,7 @@ func DirectoryServiceRegion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.directoryServiceRegion.DirectoryServiceRegion",
+		"@cdktf/provider-aws.directoryServiceRegion.DirectoryServiceRegion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -659,7 +659,7 @@ func DirectoryServiceRegion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.directoryServiceRegion.DirectoryServiceRegion",
+		"@cdktf/provider-aws.directoryServiceRegion.DirectoryServiceRegion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DirectoryServiceRegion_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.directoryServiceRegion.DirectoryServiceRegion",
+		"@cdktf/provider-aws.directoryServiceRegion.DirectoryServiceRegion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func DirectoryServiceRegion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.directoryServiceRegion.DirectoryServiceRegion",
+		"@cdktf/provider-aws.directoryServiceRegion.DirectoryServiceRegion",
 		"tfResourceType",
 		&returns,
 	)

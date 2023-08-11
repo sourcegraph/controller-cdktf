@@ -116,7 +116,7 @@ func NewGoogleCloudRunServiceTemplateSpecVolumesList(terraformResource cdktf.IIn
 	j := jsiiProxy_GoogleCloudRunServiceTemplateSpecVolumesList{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesList",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleCloudRunServiceTemplateSpecVolumesList_Override(g GoogleCloudRunSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesList",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

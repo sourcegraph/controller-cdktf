@@ -228,7 +228,7 @@ func NewDeploymentSpecSelectorMatchExpressionsOutputReference(terraformResource 
 	j := jsiiProxy_DeploymentSpecSelectorMatchExpressionsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDeploymentSpecSelectorMatchExpressionsOutputReference_Override(d Deploym
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -252,7 +252,7 @@ func NewLoadBalancerRulesFixedResponseOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_LoadBalancerRulesFixedResponseOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerRulesFixedResponseOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesFixedResponseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewLoadBalancerRulesFixedResponseOutputReference_Override(l LoadBalancerRul
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerRulesFixedResponseOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesFixedResponseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

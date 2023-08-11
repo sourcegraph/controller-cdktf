@@ -200,7 +200,7 @@ func NewDataAwsInstanceMetadataOptionsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataAwsInstanceMetadataOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceMetadataOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceMetadataOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataAwsInstanceMetadataOptionsOutputReference_Override(d DataAwsInstance
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceMetadataOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceMetadataOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

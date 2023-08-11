@@ -204,7 +204,7 @@ func NewFsxBackupTimeoutsOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_FsxBackupTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxBackup.FsxBackupTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxBackup.FsxBackupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewFsxBackupTimeoutsOutputReference_Override(f FsxBackupTimeoutsOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxBackup.FsxBackupTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxBackup.FsxBackupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

@@ -180,7 +180,7 @@ func NewGoogleCloudbuildTriggerApprovalConfigOutputReference(terraformResource c
 	j := jsiiProxy_GoogleCloudbuildTriggerApprovalConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerApprovalConfigOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerApprovalConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleCloudbuildTriggerApprovalConfigOutputReference_Override(g GoogleCl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerApprovalConfigOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerApprovalConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

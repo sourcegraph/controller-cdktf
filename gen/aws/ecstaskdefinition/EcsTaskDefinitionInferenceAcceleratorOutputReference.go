@@ -202,7 +202,7 @@ func NewEcsTaskDefinitionInferenceAcceleratorOutputReference(terraformResource c
 	j := jsiiProxy_EcsTaskDefinitionInferenceAcceleratorOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewEcsTaskDefinitionInferenceAcceleratorOutputReference_Override(e EcsTaskD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

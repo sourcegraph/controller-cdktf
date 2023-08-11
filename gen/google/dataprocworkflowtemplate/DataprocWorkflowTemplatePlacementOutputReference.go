@@ -204,7 +204,7 @@ func NewDataprocWorkflowTemplatePlacementOutputReference(terraformResource cdktf
 	j := jsiiProxy_DataprocWorkflowTemplatePlacementOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementOutputReference",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDataprocWorkflowTemplatePlacementOutputReference_Override(d DataprocWork
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementOutputReference",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.connectInstance.ConnectInstance",
+		"@cdktf/provider-aws.connectInstance.ConnectInstance",
 		reflect.TypeOf((*ConnectInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,15 +90,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectInstance.ConnectInstanceConfig",
+		"@cdktf/provider-aws.connectInstance.ConnectInstanceConfig",
 		reflect.TypeOf((*ConnectInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectInstance.ConnectInstanceTimeouts",
+		"@cdktf/provider-aws.connectInstance.ConnectInstanceTimeouts",
 		reflect.TypeOf((*ConnectInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.connectInstance.ConnectInstanceTimeoutsOutputReference",
+		"@cdktf/provider-aws.connectInstance.ConnectInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*ConnectInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

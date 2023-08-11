@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.serviceAccount.ServiceAccount",
+		"@cdktf/provider-google.serviceAccount.ServiceAccount",
 		reflect.TypeOf((*ServiceAccount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.serviceAccount.ServiceAccountConfig",
+		"@cdktf/provider-google.serviceAccount.ServiceAccountConfig",
 		reflect.TypeOf((*ServiceAccountConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.serviceAccount.ServiceAccountTimeouts",
+		"@cdktf/provider-google.serviceAccount.ServiceAccountTimeouts",
 		reflect.TypeOf((*ServiceAccountTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.serviceAccount.ServiceAccountTimeoutsOutputReference",
+		"@cdktf/provider-google.serviceAccount.ServiceAccountTimeoutsOutputReference",
 		reflect.TypeOf((*ServiceAccountTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

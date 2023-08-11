@@ -354,7 +354,7 @@ func NewEcrRegistryScanningConfiguration(scope constructs.Construct, id *string,
 	j := jsiiProxy_EcrRegistryScanningConfiguration{}
 
 	_jsii_.Create(
-		"aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfiguration",
+		"@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -367,7 +367,7 @@ func NewEcrRegistryScanningConfiguration_Override(e EcrRegistryScanningConfigura
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfiguration",
+		"@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfiguration",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -489,7 +489,7 @@ func EcrRegistryScanningConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfiguration",
+		"@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func EcrRegistryScanningConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfiguration",
+		"@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func EcrRegistryScanningConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfiguration",
+		"@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func EcrRegistryScanningConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfiguration",
+		"@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfiguration",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewGoogleCloudRunV2JobLatestCreatedExecutionList(terraformResource cdktf.II
 	j := jsiiProxy_GoogleCloudRunV2JobLatestCreatedExecutionList{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobLatestCreatedExecutionList",
+		"@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobLatestCreatedExecutionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleCloudRunV2JobLatestCreatedExecutionList_Override(g GoogleCloudRunV
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobLatestCreatedExecutionList",
+		"@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobLatestCreatedExecutionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

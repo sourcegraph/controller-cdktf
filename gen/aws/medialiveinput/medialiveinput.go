@@ -637,7 +637,7 @@ func NewMedialiveInput(scope constructs.Construct, id *string, config *Medialive
 	j := jsiiProxy_MedialiveInput{}
 
 	_jsii_.Create(
-		"aws.medialiveInput.MedialiveInput",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInput",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -650,7 +650,7 @@ func NewMedialiveInput_Override(m MedialiveInput, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveInput.MedialiveInput",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInput",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -827,7 +827,7 @@ func MedialiveInput_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.medialiveInput.MedialiveInput",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInput",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -846,7 +846,7 @@ func MedialiveInput_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.medialiveInput.MedialiveInput",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInput",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -865,7 +865,7 @@ func MedialiveInput_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.medialiveInput.MedialiveInput",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInput",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -878,7 +878,7 @@ func MedialiveInput_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.medialiveInput.MedialiveInput",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInput",
 		"tfResourceType",
 		&returns,
 	)

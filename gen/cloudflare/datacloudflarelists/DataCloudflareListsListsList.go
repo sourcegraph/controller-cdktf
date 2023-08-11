@@ -104,7 +104,7 @@ func NewDataCloudflareListsListsList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_DataCloudflareListsListsList{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareLists.DataCloudflareListsListsList",
+		"@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareListsListsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataCloudflareListsListsList_Override(d DataCloudflareListsListsList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareLists.DataCloudflareListsListsList",
+		"@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareListsListsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -556,7 +556,7 @@ func NewCloud9EnvironmentEc2(scope constructs.Construct, id *string, config *Clo
 	j := jsiiProxy_Cloud9EnvironmentEc2{}
 
 	_jsii_.Create(
-		"aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2",
+		"@cdktf/provider-aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -569,7 +569,7 @@ func NewCloud9EnvironmentEc2_Override(c Cloud9EnvironmentEc2, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2",
+		"@cdktf/provider-aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -790,7 +790,7 @@ func Cloud9EnvironmentEc2_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2",
+		"@cdktf/provider-aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -809,7 +809,7 @@ func Cloud9EnvironmentEc2_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2",
+		"@cdktf/provider-aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -828,7 +828,7 @@ func Cloud9EnvironmentEc2_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2",
+		"@cdktf/provider-aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -841,7 +841,7 @@ func Cloud9EnvironmentEc2_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2",
+		"@cdktf/provider-aws.cloud9EnvironmentEc2.Cloud9EnvironmentEc2",
 		"tfResourceType",
 		&returns,
 	)

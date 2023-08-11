@@ -116,7 +116,7 @@ func NewS3BucketCorsRuleList(terraformResource cdktf.IInterpolatingParent, terra
 	j := jsiiProxy_S3BucketCorsRuleList{}
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketCorsRuleList",
+		"@cdktf/provider-aws.s3Bucket.S3BucketCorsRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewS3BucketCorsRuleList_Override(s S3BucketCorsRuleList, terraformResource 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketCorsRuleList",
+		"@cdktf/provider-aws.s3Bucket.S3BucketCorsRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

@@ -179,7 +179,7 @@ func NewGoogleClouddeployTargetMultiTargetOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleClouddeployTargetMultiTargetOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetMultiTargetOutputReference",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetMultiTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleClouddeployTargetMultiTargetOutputReference_Override(g GoogleCloud
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetMultiTargetOutputReference",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetMultiTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

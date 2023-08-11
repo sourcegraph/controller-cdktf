@@ -226,7 +226,7 @@ func NewOpsworksApplicationSslConfigurationOutputReference(terraformResource cdk
 	j := jsiiProxy_OpsworksApplicationSslConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksApplication.OpsworksApplicationSslConfigurationOutputReference",
+		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationSslConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewOpsworksApplicationSslConfigurationOutputReference_Override(o OpsworksAp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksApplication.OpsworksApplicationSslConfigurationOutputReference",
+		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationSslConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)

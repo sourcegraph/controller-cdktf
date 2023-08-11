@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iamServiceSpecificCredential.IamServiceSpecificCredential",
+		"@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential",
 		reflect.TypeOf((*IamServiceSpecificCredential)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig",
+		"@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig",
 		reflect.TypeOf((*IamServiceSpecificCredentialConfig)(nil)).Elem(),
 	)
 }

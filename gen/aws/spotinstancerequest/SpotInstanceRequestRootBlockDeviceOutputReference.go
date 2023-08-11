@@ -370,7 +370,7 @@ func NewSpotInstanceRequestRootBlockDeviceOutputReference(terraformResource cdkt
 	j := jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestRootBlockDeviceOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestRootBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -382,7 +382,7 @@ func NewSpotInstanceRequestRootBlockDeviceOutputReference_Override(s SpotInstanc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestRootBlockDeviceOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestRootBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

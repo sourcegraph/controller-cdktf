@@ -202,7 +202,7 @@ func NewIotTopicRuleErrorActionTimestreamDimensionOutputReference(terraformResou
 	j := jsiiProxy_IotTopicRuleErrorActionTimestreamDimensionOutputReference{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewIotTopicRuleErrorActionTimestreamDimensionOutputReference_Override(i Iot
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

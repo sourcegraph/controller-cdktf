@@ -401,7 +401,7 @@ func NewVpcNetworkPerformanceMetricSubscription(scope constructs.Construct, id *
 	j := jsiiProxy_VpcNetworkPerformanceMetricSubscription{}
 
 	_jsii_.Create(
-		"aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription",
+		"@cdktf/provider-aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewVpcNetworkPerformanceMetricSubscription_Override(v VpcNetworkPerformance
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription",
+		"@cdktf/provider-aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -569,7 +569,7 @@ func VpcNetworkPerformanceMetricSubscription_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription",
+		"@cdktf/provider-aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func VpcNetworkPerformanceMetricSubscription_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription",
+		"@cdktf/provider-aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func VpcNetworkPerformanceMetricSubscription_IsTerraformResource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription",
+		"@cdktf/provider-aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func VpcNetworkPerformanceMetricSubscription_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription",
+		"@cdktf/provider-aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription",
 		"tfResourceType",
 		&returns,
 	)

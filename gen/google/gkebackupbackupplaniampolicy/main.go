@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.gkeBackupBackupPlanIamPolicy.GkeBackupBackupPlanIamPolicy",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamPolicy.GkeBackupBackupPlanIamPolicy",
 		reflect.TypeOf((*GkeBackupBackupPlanIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gkeBackupBackupPlanIamPolicy.GkeBackupBackupPlanIamPolicyConfig",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamPolicy.GkeBackupBackupPlanIamPolicyConfig",
 		reflect.TypeOf((*GkeBackupBackupPlanIamPolicyConfig)(nil)).Elem(),
 	)
 }

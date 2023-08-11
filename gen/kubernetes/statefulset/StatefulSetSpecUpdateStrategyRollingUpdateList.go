@@ -116,7 +116,7 @@ func NewStatefulSetSpecUpdateStrategyRollingUpdateList(terraformResource cdktf.I
 	j := jsiiProxy_StatefulSetSpecUpdateStrategyRollingUpdateList{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecUpdateStrategyRollingUpdateList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecUpdateStrategyRollingUpdateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewStatefulSetSpecUpdateStrategyRollingUpdateList_Override(s StatefulSetSpe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecUpdateStrategyRollingUpdateList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecUpdateStrategyRollingUpdateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

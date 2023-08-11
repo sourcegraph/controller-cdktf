@@ -179,7 +179,7 @@ func NewSpannerDatabaseEncryptionConfigOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.spannerDatabase.SpannerDatabaseEncryptionConfigOutputReference",
+		"@cdktf/provider-google.spannerDatabase.SpannerDatabaseEncryptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewSpannerDatabaseEncryptionConfigOutputReference_Override(s SpannerDatabas
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.spannerDatabase.SpannerDatabaseEncryptionConfigOutputReference",
+		"@cdktf/provider-google.spannerDatabase.SpannerDatabaseEncryptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

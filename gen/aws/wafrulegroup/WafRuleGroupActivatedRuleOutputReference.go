@@ -249,7 +249,7 @@ func NewWafRuleGroupActivatedRuleOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_WafRuleGroupActivatedRuleOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafRuleGroup.WafRuleGroupActivatedRuleOutputReference",
+		"@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -261,7 +261,7 @@ func NewWafRuleGroupActivatedRuleOutputReference_Override(w WafRuleGroupActivate
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafRuleGroup.WafRuleGroupActivatedRuleOutputReference",
+		"@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

@@ -116,7 +116,7 @@ func NewComputeRegionInstanceGroupManagerStatefulDiskList(terraformResource cdkt
 	j := jsiiProxy_ComputeRegionInstanceGroupManagerStatefulDiskList{}
 
 	_jsii_.Create(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatefulDiskList",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatefulDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeRegionInstanceGroupManagerStatefulDiskList_Override(c ComputeRegi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatefulDiskList",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatefulDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

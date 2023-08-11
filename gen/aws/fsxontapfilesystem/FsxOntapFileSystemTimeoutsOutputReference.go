@@ -228,7 +228,7 @@ func NewFsxOntapFileSystemTimeoutsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_FsxOntapFileSystemTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxOntapFileSystem.FsxOntapFileSystemTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewFsxOntapFileSystemTimeoutsOutputReference_Override(f FsxOntapFileSystemT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOntapFileSystem.FsxOntapFileSystemTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

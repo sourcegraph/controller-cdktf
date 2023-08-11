@@ -204,7 +204,7 @@ func NewEc2TransitGatewayConnectPeerTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_Ec2TransitGatewayConnectPeerTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayConnectPeer.Ec2TransitGatewayConnectPeerTimeoutsOutputReference",
+		"@cdktf/provider-aws.ec2TransitGatewayConnectPeer.Ec2TransitGatewayConnectPeerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEc2TransitGatewayConnectPeerTimeoutsOutputReference_Override(e Ec2Transi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayConnectPeer.Ec2TransitGatewayConnectPeerTimeoutsOutputReference",
+		"@cdktf/provider-aws.ec2TransitGatewayConnectPeer.Ec2TransitGatewayConnectPeerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

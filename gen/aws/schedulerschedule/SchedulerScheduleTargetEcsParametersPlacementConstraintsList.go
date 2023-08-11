@@ -116,7 +116,7 @@ func NewSchedulerScheduleTargetEcsParametersPlacementConstraintsList(terraformRe
 	j := jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementConstraintsList{}
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementConstraintsList",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementConstraintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSchedulerScheduleTargetEcsParametersPlacementConstraintsList_Override(s 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementConstraintsList",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementConstraintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

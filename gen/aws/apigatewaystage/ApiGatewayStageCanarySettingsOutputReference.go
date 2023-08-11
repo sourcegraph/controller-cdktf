@@ -228,7 +228,7 @@ func NewApiGatewayStageCanarySettingsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_ApiGatewayStageCanarySettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.apiGatewayStage.ApiGatewayStageCanarySettingsOutputReference",
+		"@cdktf/provider-aws.apiGatewayStage.ApiGatewayStageCanarySettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewApiGatewayStageCanarySettingsOutputReference_Override(a ApiGatewayStageC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayStage.ApiGatewayStageCanarySettingsOutputReference",
+		"@cdktf/provider-aws.apiGatewayStage.ApiGatewayStageCanarySettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

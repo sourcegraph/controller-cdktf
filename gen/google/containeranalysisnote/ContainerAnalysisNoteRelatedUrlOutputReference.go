@@ -203,7 +203,7 @@ func NewContainerAnalysisNoteRelatedUrlOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_ContainerAnalysisNoteRelatedUrlOutputReference{}
 
 	_jsii_.Create(
-		"google.containerAnalysisNote.ContainerAnalysisNoteRelatedUrlOutputReference",
+		"@cdktf/provider-google.containerAnalysisNote.ContainerAnalysisNoteRelatedUrlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewContainerAnalysisNoteRelatedUrlOutputReference_Override(c ContainerAnaly
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAnalysisNote.ContainerAnalysisNoteRelatedUrlOutputReference",
+		"@cdktf/provider-google.containerAnalysisNote.ContainerAnalysisNoteRelatedUrlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

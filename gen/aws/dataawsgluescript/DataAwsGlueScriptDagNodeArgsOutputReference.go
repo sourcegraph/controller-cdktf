@@ -226,7 +226,7 @@ func NewDataAwsGlueScriptDagNodeArgsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DataAwsGlueScriptDagNodeArgsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsGlueScript.DataAwsGlueScriptDagNodeArgsOutputReference",
+		"@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScriptDagNodeArgsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDataAwsGlueScriptDagNodeArgsOutputReference_Override(d DataAwsGlueScript
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsGlueScript.DataAwsGlueScriptDagNodeArgsOutputReference",
+		"@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScriptDagNodeArgsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

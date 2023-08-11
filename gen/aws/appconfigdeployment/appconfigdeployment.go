@@ -516,7 +516,7 @@ func NewAppconfigDeployment(scope constructs.Construct, id *string, config *Appc
 	j := jsiiProxy_AppconfigDeployment{}
 
 	_jsii_.Create(
-		"aws.appconfigDeployment.AppconfigDeployment",
+		"@cdktf/provider-aws.appconfigDeployment.AppconfigDeployment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -529,7 +529,7 @@ func NewAppconfigDeployment_Override(a AppconfigDeployment, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appconfigDeployment.AppconfigDeployment",
+		"@cdktf/provider-aws.appconfigDeployment.AppconfigDeployment",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -728,7 +728,7 @@ func AppconfigDeployment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appconfigDeployment.AppconfigDeployment",
+		"@cdktf/provider-aws.appconfigDeployment.AppconfigDeployment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -747,7 +747,7 @@ func AppconfigDeployment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appconfigDeployment.AppconfigDeployment",
+		"@cdktf/provider-aws.appconfigDeployment.AppconfigDeployment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -766,7 +766,7 @@ func AppconfigDeployment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appconfigDeployment.AppconfigDeployment",
+		"@cdktf/provider-aws.appconfigDeployment.AppconfigDeployment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -779,7 +779,7 @@ func AppconfigDeployment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appconfigDeployment.AppconfigDeployment",
+		"@cdktf/provider-aws.appconfigDeployment.AppconfigDeployment",
 		"tfResourceType",
 		&returns,
 	)

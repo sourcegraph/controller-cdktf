@@ -325,7 +325,7 @@ func NewDataGoogleStorageTransferProjectServiceAccount(scope constructs.Construc
 	j := jsiiProxy_DataGoogleStorageTransferProjectServiceAccount{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleStorageTransferProjectServiceAccount.DataGoogleStorageTransferProjectServiceAccount",
+		"@cdktf/provider-google-beta.dataGoogleStorageTransferProjectServiceAccount.DataGoogleStorageTransferProjectServiceAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -338,7 +338,7 @@ func NewDataGoogleStorageTransferProjectServiceAccount_Override(d DataGoogleStor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleStorageTransferProjectServiceAccount.DataGoogleStorageTransferProjectServiceAccount",
+		"@cdktf/provider-google-beta.dataGoogleStorageTransferProjectServiceAccount.DataGoogleStorageTransferProjectServiceAccount",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -438,7 +438,7 @@ func DataGoogleStorageTransferProjectServiceAccount_IsConstruct(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleStorageTransferProjectServiceAccount.DataGoogleStorageTransferProjectServiceAccount",
+		"@cdktf/provider-google-beta.dataGoogleStorageTransferProjectServiceAccount.DataGoogleStorageTransferProjectServiceAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -457,7 +457,7 @@ func DataGoogleStorageTransferProjectServiceAccount_IsTerraformDataSource(x inte
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleStorageTransferProjectServiceAccount.DataGoogleStorageTransferProjectServiceAccount",
+		"@cdktf/provider-google-beta.dataGoogleStorageTransferProjectServiceAccount.DataGoogleStorageTransferProjectServiceAccount",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -476,7 +476,7 @@ func DataGoogleStorageTransferProjectServiceAccount_IsTerraformElement(x interfa
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleStorageTransferProjectServiceAccount.DataGoogleStorageTransferProjectServiceAccount",
+		"@cdktf/provider-google-beta.dataGoogleStorageTransferProjectServiceAccount.DataGoogleStorageTransferProjectServiceAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -489,7 +489,7 @@ func DataGoogleStorageTransferProjectServiceAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleStorageTransferProjectServiceAccount.DataGoogleStorageTransferProjectServiceAccount",
+		"@cdktf/provider-google-beta.dataGoogleStorageTransferProjectServiceAccount.DataGoogleStorageTransferProjectServiceAccount",
 		"tfResourceType",
 		&returns,
 	)

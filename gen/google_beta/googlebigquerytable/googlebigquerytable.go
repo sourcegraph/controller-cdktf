@@ -777,7 +777,7 @@ func NewGoogleBigqueryTable(scope constructs.Construct, id *string, config *Goog
 	j := jsiiProxy_GoogleBigqueryTable{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTable",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTable",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -790,7 +790,7 @@ func NewGoogleBigqueryTable_Override(g GoogleBigqueryTable, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTable",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTable",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1011,7 +1011,7 @@ func GoogleBigqueryTable_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTable",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTable",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1030,7 +1030,7 @@ func GoogleBigqueryTable_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTable",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTable",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1049,7 +1049,7 @@ func GoogleBigqueryTable_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTable",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTable",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1062,7 +1062,7 @@ func GoogleBigqueryTable_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTable",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTable",
 		"tfResourceType",
 		&returns,
 	)

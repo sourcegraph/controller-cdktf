@@ -424,7 +424,7 @@ func NewGoogleSecretManagerSecretIamMember(scope constructs.Construct, id *strin
 	j := jsiiProxy_GoogleSecretManagerSecretIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember",
+		"@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleSecretManagerSecretIamMember_Override(g GoogleSecretManagerSecretI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember",
+		"@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleSecretManagerSecretIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember",
+		"@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleSecretManagerSecretIamMember_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember",
+		"@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleSecretManagerSecretIamMember_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember",
+		"@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleSecretManagerSecretIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember",
+		"@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember",
 		"tfResourceType",
 		&returns,
 	)

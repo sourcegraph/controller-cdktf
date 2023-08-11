@@ -276,7 +276,7 @@ func NewGoogleCloudSchedulerJobRetryConfigOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleCloudSchedulerJobRetryConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudSchedulerJob.GoogleCloudSchedulerJobRetryConfigOutputReference",
+		"@cdktf/provider-google-beta.googleCloudSchedulerJob.GoogleCloudSchedulerJobRetryConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewGoogleCloudSchedulerJobRetryConfigOutputReference_Override(g GoogleCloud
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudSchedulerJob.GoogleCloudSchedulerJobRetryConfigOutputReference",
+		"@cdktf/provider-google-beta.googleCloudSchedulerJob.GoogleCloudSchedulerJobRetryConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

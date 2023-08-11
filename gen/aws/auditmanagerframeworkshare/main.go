@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare",
+		"@cdktf/provider-aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare",
 		reflect.TypeOf((*AuditmanagerFrameworkShare)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShareConfig",
+		"@cdktf/provider-aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShareConfig",
 		reflect.TypeOf((*AuditmanagerFrameworkShareConfig)(nil)).Elem(),
 	)
 }

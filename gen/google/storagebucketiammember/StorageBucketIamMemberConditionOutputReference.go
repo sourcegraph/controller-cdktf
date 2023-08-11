@@ -226,7 +226,7 @@ func NewStorageBucketIamMemberConditionOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_StorageBucketIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.storageBucketIamMember.StorageBucketIamMemberConditionOutputReference",
+		"@cdktf/provider-google.storageBucketIamMember.StorageBucketIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewStorageBucketIamMemberConditionOutputReference_Override(s StorageBucketI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageBucketIamMember.StorageBucketIamMemberConditionOutputReference",
+		"@cdktf/provider-google.storageBucketIamMember.StorageBucketIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

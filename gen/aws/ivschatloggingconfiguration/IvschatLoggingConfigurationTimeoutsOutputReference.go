@@ -228,7 +228,7 @@ func NewIvschatLoggingConfigurationTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_IvschatLoggingConfigurationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationTimeoutsOutputReference",
+		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewIvschatLoggingConfigurationTimeoutsOutputReference_Override(i IvschatLog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationTimeoutsOutputReference",
+		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

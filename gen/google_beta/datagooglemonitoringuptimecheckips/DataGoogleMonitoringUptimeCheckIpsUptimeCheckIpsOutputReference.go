@@ -189,7 +189,7 @@ func NewDataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference(terrafor
 	j := jsiiProxy_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

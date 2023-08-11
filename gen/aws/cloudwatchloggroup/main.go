@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cloudwatchLogGroup.CloudwatchLogGroup",
+		"@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroup",
 		reflect.TypeOf((*CloudwatchLogGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudwatchLogGroup.CloudwatchLogGroupConfig",
+		"@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig",
 		reflect.TypeOf((*CloudwatchLogGroupConfig)(nil)).Elem(),
 	)
 }

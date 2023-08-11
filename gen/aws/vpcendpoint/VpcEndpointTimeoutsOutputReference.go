@@ -228,7 +228,7 @@ func NewVpcEndpointTimeoutsOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_VpcEndpointTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.vpcEndpoint.VpcEndpointTimeoutsOutputReference",
+		"@cdktf/provider-aws.vpcEndpoint.VpcEndpointTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewVpcEndpointTimeoutsOutputReference_Override(v VpcEndpointTimeoutsOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcEndpoint.VpcEndpointTimeoutsOutputReference",
+		"@cdktf/provider-aws.vpcEndpoint.VpcEndpointTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

@@ -226,7 +226,7 @@ func NewBigqueryConnectionIamBindingConditionOutputReference(terraformResource c
 	j := jsiiProxy_BigqueryConnectionIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingConditionOutputReference",
+		"@cdktf/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewBigqueryConnectionIamBindingConditionOutputReference_Override(b Bigquery
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingConditionOutputReference",
+		"@cdktf/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

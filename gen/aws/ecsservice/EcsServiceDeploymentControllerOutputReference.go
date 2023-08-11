@@ -180,7 +180,7 @@ func NewEcsServiceDeploymentControllerOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_EcsServiceDeploymentControllerOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServiceDeploymentControllerOutputReference",
+		"@cdktf/provider-aws.ecsService.EcsServiceDeploymentControllerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewEcsServiceDeploymentControllerOutputReference_Override(e EcsServiceDeplo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServiceDeploymentControllerOutputReference",
+		"@cdktf/provider-aws.ecsService.EcsServiceDeploymentControllerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

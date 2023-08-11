@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lightsailInstance.LightsailInstance",
+		"@cdktf/provider-aws.lightsailInstance.LightsailInstance",
 		reflect.TypeOf((*LightsailInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addOn", GoGetter: "AddOn"},
@@ -92,11 +92,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lightsailInstance.LightsailInstanceAddOn",
+		"@cdktf/provider-aws.lightsailInstance.LightsailInstanceAddOn",
 		reflect.TypeOf((*LightsailInstanceAddOn)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lightsailInstance.LightsailInstanceAddOnOutputReference",
+		"@cdktf/provider-aws.lightsailInstance.LightsailInstanceAddOnOutputReference",
 		reflect.TypeOf((*LightsailInstanceAddOnOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -134,7 +134,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lightsailInstance.LightsailInstanceConfig",
+		"@cdktf/provider-aws.lightsailInstance.LightsailInstanceConfig",
 		reflect.TypeOf((*LightsailInstanceConfig)(nil)).Elem(),
 	)
 }

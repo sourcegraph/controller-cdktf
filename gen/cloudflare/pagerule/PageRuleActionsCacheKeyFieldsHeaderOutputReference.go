@@ -228,7 +228,7 @@ func NewPageRuleActionsCacheKeyFieldsHeaderOutputReference(terraformResource cdk
 	j := jsiiProxy_PageRuleActionsCacheKeyFieldsHeaderOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHeaderOutputReference",
+		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHeaderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewPageRuleActionsCacheKeyFieldsHeaderOutputReference_Override(p PageRuleAc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHeaderOutputReference",
+		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHeaderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

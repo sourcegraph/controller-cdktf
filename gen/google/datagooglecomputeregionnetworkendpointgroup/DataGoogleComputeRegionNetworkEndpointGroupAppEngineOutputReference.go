@@ -189,7 +189,7 @@ func NewDataGoogleComputeRegionNetworkEndpointGroupAppEngineOutputReference(terr
 	j := jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupAppEngineOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupAppEngineOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupAppEngineOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataGoogleComputeRegionNetworkEndpointGroupAppEngineOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupAppEngineOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupAppEngineOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

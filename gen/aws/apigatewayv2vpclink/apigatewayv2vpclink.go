@@ -424,7 +424,7 @@ func NewApigatewayv2VpcLink(scope constructs.Construct, id *string, config *Apig
 	j := jsiiProxy_Apigatewayv2VpcLink{}
 
 	_jsii_.Create(
-		"aws.apigatewayv2VpcLink.Apigatewayv2VpcLink",
+		"@cdktf/provider-aws.apigatewayv2VpcLink.Apigatewayv2VpcLink",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewApigatewayv2VpcLink_Override(a Apigatewayv2VpcLink, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apigatewayv2VpcLink.Apigatewayv2VpcLink",
+		"@cdktf/provider-aws.apigatewayv2VpcLink.Apigatewayv2VpcLink",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -603,7 +603,7 @@ func Apigatewayv2VpcLink_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apigatewayv2VpcLink.Apigatewayv2VpcLink",
+		"@cdktf/provider-aws.apigatewayv2VpcLink.Apigatewayv2VpcLink",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func Apigatewayv2VpcLink_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apigatewayv2VpcLink.Apigatewayv2VpcLink",
+		"@cdktf/provider-aws.apigatewayv2VpcLink.Apigatewayv2VpcLink",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -641,7 +641,7 @@ func Apigatewayv2VpcLink_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apigatewayv2VpcLink.Apigatewayv2VpcLink",
+		"@cdktf/provider-aws.apigatewayv2VpcLink.Apigatewayv2VpcLink",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func Apigatewayv2VpcLink_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apigatewayv2VpcLink.Apigatewayv2VpcLink",
+		"@cdktf/provider-aws.apigatewayv2VpcLink.Apigatewayv2VpcLink",
 		"tfResourceType",
 		&returns,
 	)

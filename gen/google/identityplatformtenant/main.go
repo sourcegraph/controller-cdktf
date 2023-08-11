@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.identityPlatformTenant.IdentityPlatformTenant",
+		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenant",
 		reflect.TypeOf((*IdentityPlatformTenant)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.identityPlatformTenant.IdentityPlatformTenantConfig",
+		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenantConfig",
 		reflect.TypeOf((*IdentityPlatformTenantConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.identityPlatformTenant.IdentityPlatformTenantTimeouts",
+		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenantTimeouts",
 		reflect.TypeOf((*IdentityPlatformTenantTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.identityPlatformTenant.IdentityPlatformTenantTimeoutsOutputReference",
+		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenantTimeoutsOutputReference",
 		reflect.TypeOf((*IdentityPlatformTenantTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

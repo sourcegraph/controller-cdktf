@@ -439,7 +439,7 @@ func NewGoogleComposerEnvironment(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleComposerEnvironment{}
 
 	_jsii_.Create(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironment",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -452,7 +452,7 @@ func NewGoogleComposerEnvironment_Override(g GoogleComposerEnvironment, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironment",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironment",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -607,7 +607,7 @@ func GoogleComposerEnvironment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironment",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -626,7 +626,7 @@ func GoogleComposerEnvironment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironment",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func GoogleComposerEnvironment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironment",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -658,7 +658,7 @@ func GoogleComposerEnvironment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironment",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironment",
 		"tfResourceType",
 		&returns,
 	)

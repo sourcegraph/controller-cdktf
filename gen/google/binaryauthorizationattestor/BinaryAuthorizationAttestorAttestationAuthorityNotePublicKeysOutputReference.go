@@ -252,7 +252,7 @@ func NewBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutputRefer
 	j := jsiiProxy_BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutputReference{}
 
 	_jsii_.Create(
-		"google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutputReference",
+		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutputReference",
+		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)

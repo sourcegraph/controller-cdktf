@@ -204,7 +204,7 @@ func NewGooglePubsubSubscriptionDeadLetterPolicyOutputReference(terraformResourc
 	j := jsiiProxy_GooglePubsubSubscriptionDeadLetterPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googlePubsubSubscription.GooglePubsubSubscriptionDeadLetterPolicyOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubSubscription.GooglePubsubSubscriptionDeadLetterPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGooglePubsubSubscriptionDeadLetterPolicyOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePubsubSubscription.GooglePubsubSubscriptionDeadLetterPolicyOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubSubscription.GooglePubsubSubscriptionDeadLetterPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

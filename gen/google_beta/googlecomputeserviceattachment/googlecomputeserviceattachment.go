@@ -612,7 +612,7 @@ func NewGoogleComputeServiceAttachment(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleComputeServiceAttachment{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachment",
+		"@cdktf/provider-google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -625,7 +625,7 @@ func NewGoogleComputeServiceAttachment_Override(g GoogleComputeServiceAttachment
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachment",
+		"@cdktf/provider-google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachment",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -846,7 +846,7 @@ func GoogleComputeServiceAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachment",
+		"@cdktf/provider-google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -865,7 +865,7 @@ func GoogleComputeServiceAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachment",
+		"@cdktf/provider-google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -884,7 +884,7 @@ func GoogleComputeServiceAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachment",
+		"@cdktf/provider-google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -897,7 +897,7 @@ func GoogleComputeServiceAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachment",
+		"@cdktf/provider-google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachment",
 		"tfResourceType",
 		&returns,
 	)

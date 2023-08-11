@@ -228,7 +228,7 @@ func NewGoogleComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference(t
 	j := jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

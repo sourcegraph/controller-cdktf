@@ -504,7 +504,7 @@ func NewLightsailLb(scope constructs.Construct, id *string, config *LightsailLbC
 	j := jsiiProxy_LightsailLb{}
 
 	_jsii_.Create(
-		"aws.lightsailLb.LightsailLb",
+		"@cdktf/provider-aws.lightsailLb.LightsailLb",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -517,7 +517,7 @@ func NewLightsailLb_Override(l LightsailLb, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailLb.LightsailLb",
+		"@cdktf/provider-aws.lightsailLb.LightsailLb",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -694,7 +694,7 @@ func LightsailLb_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailLb.LightsailLb",
+		"@cdktf/provider-aws.lightsailLb.LightsailLb",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -713,7 +713,7 @@ func LightsailLb_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailLb.LightsailLb",
+		"@cdktf/provider-aws.lightsailLb.LightsailLb",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -732,7 +732,7 @@ func LightsailLb_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailLb.LightsailLb",
+		"@cdktf/provider-aws.lightsailLb.LightsailLb",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -745,7 +745,7 @@ func LightsailLb_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lightsailLb.LightsailLb",
+		"@cdktf/provider-aws.lightsailLb.LightsailLb",
 		"tfResourceType",
 		&returns,
 	)

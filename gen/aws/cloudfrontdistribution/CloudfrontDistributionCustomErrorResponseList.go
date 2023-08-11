@@ -116,7 +116,7 @@ func NewCloudfrontDistributionCustomErrorResponseList(terraformResource cdktf.II
 	j := jsiiProxy_CloudfrontDistributionCustomErrorResponseList{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionCustomErrorResponseList",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionCustomErrorResponseList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudfrontDistributionCustomErrorResponseList_Override(c CloudfrontDistr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionCustomErrorResponseList",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionCustomErrorResponseList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

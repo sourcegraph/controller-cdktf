@@ -828,7 +828,7 @@ func NewGoogleComputeInstanceGroupManager(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleComputeInstanceGroupManager{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManager",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManager",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -841,7 +841,7 @@ func NewGoogleComputeInstanceGroupManager_Override(g GoogleComputeInstanceGroupM
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManager",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManager",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1062,7 +1062,7 @@ func GoogleComputeInstanceGroupManager_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManager",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManager",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1081,7 +1081,7 @@ func GoogleComputeInstanceGroupManager_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManager",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManager",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1100,7 +1100,7 @@ func GoogleComputeInstanceGroupManager_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManager",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManager",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1113,7 +1113,7 @@ func GoogleComputeInstanceGroupManager_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManager",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManager",
 		"tfResourceType",
 		&returns,
 	)

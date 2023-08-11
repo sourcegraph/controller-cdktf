@@ -180,7 +180,7 @@ func NewDataAwsCustomerGatewayTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataAwsCustomerGatewayTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsCustomerGatewayTimeoutsOutputReference_Override(d DataAwsCustomer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

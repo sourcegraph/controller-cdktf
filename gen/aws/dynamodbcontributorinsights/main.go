@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dynamodbContributorInsights.DynamodbContributorInsights",
+		"@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights",
 		reflect.TypeOf((*DynamodbContributorInsights)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,15 +64,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dynamodbContributorInsights.DynamodbContributorInsightsConfig",
+		"@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsConfig",
 		reflect.TypeOf((*DynamodbContributorInsightsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts",
+		"@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts",
 		reflect.TypeOf((*DynamodbContributorInsightsTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeoutsOutputReference",
 		reflect.TypeOf((*DynamodbContributorInsightsTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

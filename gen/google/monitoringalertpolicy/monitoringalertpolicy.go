@@ -555,7 +555,7 @@ func NewMonitoringAlertPolicy(scope constructs.Construct, id *string, config *Mo
 	j := jsiiProxy_MonitoringAlertPolicy{}
 
 	_jsii_.Create(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicy",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -568,7 +568,7 @@ func NewMonitoringAlertPolicy_Override(m MonitoringAlertPolicy, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicy",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicy",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -745,7 +745,7 @@ func MonitoringAlertPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicy",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -764,7 +764,7 @@ func MonitoringAlertPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicy",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -783,7 +783,7 @@ func MonitoringAlertPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicy",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -796,7 +796,7 @@ func MonitoringAlertPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicy",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicy",
 		"tfResourceType",
 		&returns,
 	)

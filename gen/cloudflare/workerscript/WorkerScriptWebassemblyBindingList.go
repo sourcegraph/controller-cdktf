@@ -116,7 +116,7 @@ func NewWorkerScriptWebassemblyBindingList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_WorkerScriptWebassemblyBindingList{}
 
 	_jsii_.Create(
-		"cloudflare.workerScript.WorkerScriptWebassemblyBindingList",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptWebassemblyBindingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWorkerScriptWebassemblyBindingList_Override(w WorkerScriptWebassemblyBin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.workerScript.WorkerScriptWebassemblyBindingList",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptWebassemblyBindingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

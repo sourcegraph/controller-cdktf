@@ -228,7 +228,7 @@ func NewMedialiveInputSecurityGroupTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_MedialiveInputSecurityGroupTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewMedialiveInputSecurityGroupTimeoutsOutputReference_Override(m MedialiveI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

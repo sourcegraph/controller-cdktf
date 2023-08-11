@@ -116,7 +116,7 @@ func NewCodepipelineStageList(terraformResource cdktf.IInterpolatingParent, terr
 	j := jsiiProxy_CodepipelineStageList{}
 
 	_jsii_.Create(
-		"aws.codepipeline.CodepipelineStageList",
+		"@cdktf/provider-aws.codepipeline.CodepipelineStageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCodepipelineStageList_Override(c CodepipelineStageList, terraformResourc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codepipeline.CodepipelineStageList",
+		"@cdktf/provider-aws.codepipeline.CodepipelineStageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computePerInstanceConfig.ComputePerInstanceConfig",
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfig",
 		reflect.TypeOf((*ComputePerInstanceConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,19 +82,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computePerInstanceConfig.ComputePerInstanceConfigConfig",
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfigConfig",
 		reflect.TypeOf((*ComputePerInstanceConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computePerInstanceConfig.ComputePerInstanceConfigPreservedState",
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfigPreservedState",
 		reflect.TypeOf((*ComputePerInstanceConfigPreservedState)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateDisk",
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateDisk",
 		reflect.TypeOf((*ComputePerInstanceConfigPreservedStateDisk)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateDiskList",
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateDiskList",
 		reflect.TypeOf((*ComputePerInstanceConfigPreservedStateDiskList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateDiskOutputReference",
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateDiskOutputReference",
 		reflect.TypeOf((*ComputePerInstanceConfigPreservedStateDiskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -157,7 +157,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateOutputReference",
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateOutputReference",
 		reflect.TypeOf((*ComputePerInstanceConfigPreservedStateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -196,11 +196,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computePerInstanceConfig.ComputePerInstanceConfigTimeouts",
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfigTimeouts",
 		reflect.TypeOf((*ComputePerInstanceConfigTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computePerInstanceConfig.ComputePerInstanceConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfigTimeoutsOutputReference",
 		reflect.TypeOf((*ComputePerInstanceConfigTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

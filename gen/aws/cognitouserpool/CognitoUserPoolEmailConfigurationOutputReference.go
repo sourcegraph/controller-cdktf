@@ -276,7 +276,7 @@ func NewCognitoUserPoolEmailConfigurationOutputReference(terraformResource cdktf
 	j := jsiiProxy_CognitoUserPoolEmailConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolEmailConfigurationOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolEmailConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewCognitoUserPoolEmailConfigurationOutputReference_Override(c CognitoUserP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolEmailConfigurationOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolEmailConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

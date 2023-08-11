@@ -104,7 +104,7 @@ func NewTpuNodeNetworkEndpointsList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_TpuNodeNetworkEndpointsList{}
 
 	_jsii_.Create(
-		"google.tpuNode.TpuNodeNetworkEndpointsList",
+		"@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewTpuNodeNetworkEndpointsList_Override(t TpuNodeNetworkEndpointsList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.tpuNode.TpuNodeNetworkEndpointsList",
+		"@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		t,
 	)

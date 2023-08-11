@@ -371,7 +371,7 @@ func NewDataAwsNetworkmanagerSite(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DataAwsNetworkmanagerSite{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSite",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSite",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -384,7 +384,7 @@ func NewDataAwsNetworkmanagerSite_Override(d DataAwsNetworkmanagerSite, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSite",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSite",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -506,7 +506,7 @@ func DataAwsNetworkmanagerSite_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSite",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSite",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -525,7 +525,7 @@ func DataAwsNetworkmanagerSite_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSite",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSite",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -544,7 +544,7 @@ func DataAwsNetworkmanagerSite_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSite",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSite",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -557,7 +557,7 @@ func DataAwsNetworkmanagerSite_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSite",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSite",
 		"tfResourceType",
 		&returns,
 	)

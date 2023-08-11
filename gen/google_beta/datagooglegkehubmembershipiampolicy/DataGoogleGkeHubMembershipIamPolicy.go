@@ -337,7 +337,7 @@ func NewDataGoogleGkeHubMembershipIamPolicy(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataGoogleGkeHubMembershipIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleGkeHubMembershipIamPolicy.DataGoogleGkeHubMembershipIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleGkeHubMembershipIamPolicy.DataGoogleGkeHubMembershipIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -350,7 +350,7 @@ func NewDataGoogleGkeHubMembershipIamPolicy_Override(d DataGoogleGkeHubMembershi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleGkeHubMembershipIamPolicy.DataGoogleGkeHubMembershipIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleGkeHubMembershipIamPolicy.DataGoogleGkeHubMembershipIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -461,7 +461,7 @@ func DataGoogleGkeHubMembershipIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleGkeHubMembershipIamPolicy.DataGoogleGkeHubMembershipIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleGkeHubMembershipIamPolicy.DataGoogleGkeHubMembershipIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataGoogleGkeHubMembershipIamPolicy_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleGkeHubMembershipIamPolicy.DataGoogleGkeHubMembershipIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleGkeHubMembershipIamPolicy.DataGoogleGkeHubMembershipIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataGoogleGkeHubMembershipIamPolicy_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleGkeHubMembershipIamPolicy.DataGoogleGkeHubMembershipIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleGkeHubMembershipIamPolicy.DataGoogleGkeHubMembershipIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataGoogleGkeHubMembershipIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleGkeHubMembershipIamPolicy.DataGoogleGkeHubMembershipIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleGkeHubMembershipIamPolicy.DataGoogleGkeHubMembershipIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewDataAwsApigatewayv2ApiCorsConfigurationList(terraformResource cdktf.IInt
 	j := jsiiProxy_DataAwsApigatewayv2ApiCorsConfigurationList{}
 
 	_jsii_.Create(
-		"aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2ApiCorsConfigurationList",
+		"@cdktf/provider-aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2ApiCorsConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsApigatewayv2ApiCorsConfigurationList_Override(d DataAwsApigateway
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2ApiCorsConfigurationList",
+		"@cdktf/provider-aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2ApiCorsConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

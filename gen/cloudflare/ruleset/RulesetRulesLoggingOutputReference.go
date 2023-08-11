@@ -180,7 +180,7 @@ func NewRulesetRulesLoggingOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_RulesetRulesLoggingOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesLoggingOutputReference",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewRulesetRulesLoggingOutputReference_Override(r RulesetRulesLoggingOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesLoggingOutputReference",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

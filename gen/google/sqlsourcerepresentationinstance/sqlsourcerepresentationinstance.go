@@ -605,7 +605,7 @@ func NewSqlSourceRepresentationInstance(scope constructs.Construct, id *string, 
 	j := jsiiProxy_SqlSourceRepresentationInstance{}
 
 	_jsii_.Create(
-		"google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstance",
+		"@cdktf/provider-google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -618,7 +618,7 @@ func NewSqlSourceRepresentationInstance_Override(s SqlSourceRepresentationInstan
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstance",
+		"@cdktf/provider-google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstance",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -861,7 +861,7 @@ func SqlSourceRepresentationInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstance",
+		"@cdktf/provider-google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -880,7 +880,7 @@ func SqlSourceRepresentationInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstance",
+		"@cdktf/provider-google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -899,7 +899,7 @@ func SqlSourceRepresentationInstance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstance",
+		"@cdktf/provider-google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -912,7 +912,7 @@ func SqlSourceRepresentationInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstance",
+		"@cdktf/provider-google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstance",
 		"tfResourceType",
 		&returns,
 	)

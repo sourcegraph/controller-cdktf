@@ -321,7 +321,7 @@ func NewDynamodbTableGlobalSecondaryIndexOutputReference(terraformResource cdktf
 	j := jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference{}
 
 	_jsii_.Create(
-		"aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference",
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -333,7 +333,7 @@ func NewDynamodbTableGlobalSecondaryIndexOutputReference_Override(d DynamodbTabl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference",
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

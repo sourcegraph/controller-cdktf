@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewall",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewall",
 		reflect.TypeOf((*NetworkfirewallFirewall)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,15 +89,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallConfig",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallConfig",
 		reflect.TypeOf((*NetworkfirewallFirewallConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallEncryptionConfiguration",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallEncryptionConfiguration",
 		reflect.TypeOf((*NetworkfirewallFirewallEncryptionConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallEncryptionConfigurationOutputReference",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallEncryptionConfigurationOutputReference",
 		reflect.TypeOf((*NetworkfirewallFirewallEncryptionConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -134,11 +134,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatus",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatus",
 		reflect.TypeOf((*NetworkfirewallFirewallFirewallStatus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusList",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusList",
 		reflect.TypeOf((*NetworkfirewallFirewallFirewallStatusList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -158,7 +158,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusOutputReference",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusOutputReference",
 		reflect.TypeOf((*NetworkfirewallFirewallFirewallStatusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -191,15 +191,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStates",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStates",
 		reflect.TypeOf((*NetworkfirewallFirewallFirewallStatusSyncStates)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesAttachment",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesAttachment",
 		reflect.TypeOf((*NetworkfirewallFirewallFirewallStatusSyncStatesAttachment)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesAttachmentList",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesAttachmentList",
 		reflect.TypeOf((*NetworkfirewallFirewallFirewallStatusSyncStatesAttachmentList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -219,7 +219,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOutputReference",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOutputReference",
 		reflect.TypeOf((*NetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -253,7 +253,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesList",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesList",
 		reflect.TypeOf((*NetworkfirewallFirewallFirewallStatusSyncStatesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -273,7 +273,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesOutputReference",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesOutputReference",
 		reflect.TypeOf((*NetworkfirewallFirewallFirewallStatusSyncStatesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attachment", GoGetter: "Attachment"},
@@ -307,11 +307,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMapping",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMapping",
 		reflect.TypeOf((*NetworkfirewallFirewallSubnetMapping)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMappingList",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMappingList",
 		reflect.TypeOf((*NetworkfirewallFirewallSubnetMappingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -332,7 +332,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMappingOutputReference",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMappingOutputReference",
 		reflect.TypeOf((*NetworkfirewallFirewallSubnetMappingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

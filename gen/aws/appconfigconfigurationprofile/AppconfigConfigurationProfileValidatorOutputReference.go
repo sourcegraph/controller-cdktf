@@ -203,7 +203,7 @@ func NewAppconfigConfigurationProfileValidatorOutputReference(terraformResource 
 	j := jsiiProxy_AppconfigConfigurationProfileValidatorOutputReference{}
 
 	_jsii_.Create(
-		"aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidatorOutputReference",
+		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidatorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAppconfigConfigurationProfileValidatorOutputReference_Override(a Appconf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidatorOutputReference",
+		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidatorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

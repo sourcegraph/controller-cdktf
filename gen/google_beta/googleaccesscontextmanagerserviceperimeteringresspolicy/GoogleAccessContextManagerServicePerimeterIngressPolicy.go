@@ -391,7 +391,7 @@ func NewGoogleAccessContextManagerServicePerimeterIngressPolicy(scope constructs
 	j := jsiiProxy_GoogleAccessContextManagerServicePerimeterIngressPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicy",
+		"@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -404,7 +404,7 @@ func NewGoogleAccessContextManagerServicePerimeterIngressPolicy_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicy",
+		"@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -526,7 +526,7 @@ func GoogleAccessContextManagerServicePerimeterIngressPolicy_IsConstruct(x inter
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicy",
+		"@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -545,7 +545,7 @@ func GoogleAccessContextManagerServicePerimeterIngressPolicy_IsTerraformElement(
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicy",
+		"@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func GoogleAccessContextManagerServicePerimeterIngressPolicy_IsTerraformResource
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicy",
+		"@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func GoogleAccessContextManagerServicePerimeterIngressPolicy_TfResourceType() *s
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicy",
+		"@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeterIngressPolicy.GoogleAccessContextManagerServicePerimeterIngressPolicy",
 		"tfResourceType",
 		&returns,
 	)

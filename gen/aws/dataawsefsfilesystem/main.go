@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem",
+		"@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem",
 		reflect.TypeOf((*DataAwsEfsFileSystem)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEfsFileSystem.DataAwsEfsFileSystemConfig",
+		"@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystemConfig",
 		reflect.TypeOf((*DataAwsEfsFileSystemConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEfsFileSystem.DataAwsEfsFileSystemLifecyclePolicy",
+		"@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystemLifecyclePolicy",
 		reflect.TypeOf((*DataAwsEfsFileSystemLifecyclePolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEfsFileSystem.DataAwsEfsFileSystemLifecyclePolicyList",
+		"@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystemLifecyclePolicyList",
 		reflect.TypeOf((*DataAwsEfsFileSystemLifecyclePolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,7 +101,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEfsFileSystem.DataAwsEfsFileSystemLifecyclePolicyOutputReference",
+		"@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystemLifecyclePolicyOutputReference",
 		reflect.TypeOf((*DataAwsEfsFileSystemLifecyclePolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -249,7 +249,7 @@ func NewEmrInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference(ter
 	j := jsiiProxy_EmrInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference{}
 
 	_jsii_.Create(
-		"aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -261,7 +261,7 @@ func NewEmrInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

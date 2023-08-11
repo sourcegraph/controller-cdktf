@@ -116,7 +116,7 @@ func NewGoogleComputeFirewallDenyList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_GoogleComputeFirewallDenyList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallDenyList",
+		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallDenyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeFirewallDenyList_Override(g GoogleComputeFirewallDenyList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallDenyList",
+		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallDenyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

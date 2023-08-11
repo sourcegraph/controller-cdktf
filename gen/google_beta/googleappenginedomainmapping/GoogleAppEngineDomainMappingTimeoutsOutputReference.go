@@ -228,7 +228,7 @@ func NewGoogleAppEngineDomainMappingTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleAppEngineDomainMappingTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMappingTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMappingTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleAppEngineDomainMappingTimeoutsOutputReference_Override(g GoogleApp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMappingTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMappingTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

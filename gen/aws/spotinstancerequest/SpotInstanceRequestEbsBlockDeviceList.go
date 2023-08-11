@@ -116,7 +116,7 @@ func NewSpotInstanceRequestEbsBlockDeviceList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_SpotInstanceRequestEbsBlockDeviceList{}
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestEbsBlockDeviceList",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestEbsBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSpotInstanceRequestEbsBlockDeviceList_Override(s SpotInstanceRequestEbsB
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestEbsBlockDeviceList",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestEbsBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

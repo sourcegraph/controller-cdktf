@@ -116,7 +116,7 @@ func NewMonitoringMetricDescriptorLabelsList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_MonitoringMetricDescriptorLabelsList{}
 
 	_jsii_.Create(
-		"google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsList",
+		"@cdktf/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMonitoringMetricDescriptorLabelsList_Override(m MonitoringMetricDescript
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsList",
+		"@cdktf/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

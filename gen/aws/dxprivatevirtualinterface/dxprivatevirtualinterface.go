@@ -695,7 +695,7 @@ func NewDxPrivateVirtualInterface(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DxPrivateVirtualInterface{}
 
 	_jsii_.Create(
-		"aws.dxPrivateVirtualInterface.DxPrivateVirtualInterface",
+		"@cdktf/provider-aws.dxPrivateVirtualInterface.DxPrivateVirtualInterface",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -708,7 +708,7 @@ func NewDxPrivateVirtualInterface_Override(d DxPrivateVirtualInterface, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dxPrivateVirtualInterface.DxPrivateVirtualInterface",
+		"@cdktf/provider-aws.dxPrivateVirtualInterface.DxPrivateVirtualInterface",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -973,7 +973,7 @@ func DxPrivateVirtualInterface_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxPrivateVirtualInterface.DxPrivateVirtualInterface",
+		"@cdktf/provider-aws.dxPrivateVirtualInterface.DxPrivateVirtualInterface",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -992,7 +992,7 @@ func DxPrivateVirtualInterface_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxPrivateVirtualInterface.DxPrivateVirtualInterface",
+		"@cdktf/provider-aws.dxPrivateVirtualInterface.DxPrivateVirtualInterface",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1011,7 +1011,7 @@ func DxPrivateVirtualInterface_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxPrivateVirtualInterface.DxPrivateVirtualInterface",
+		"@cdktf/provider-aws.dxPrivateVirtualInterface.DxPrivateVirtualInterface",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1024,7 +1024,7 @@ func DxPrivateVirtualInterface_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dxPrivateVirtualInterface.DxPrivateVirtualInterface",
+		"@cdktf/provider-aws.dxPrivateVirtualInterface.DxPrivateVirtualInterface",
 		"tfResourceType",
 		&returns,
 	)

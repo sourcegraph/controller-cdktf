@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.guarddutyFilter.GuarddutyFilter",
+		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilter",
 		reflect.TypeOf((*GuarddutyFilter)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -76,19 +76,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.guarddutyFilter.GuarddutyFilterConfig",
+		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilterConfig",
 		reflect.TypeOf((*GuarddutyFilterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.guarddutyFilter.GuarddutyFilterFindingCriteria",
+		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilterFindingCriteria",
 		reflect.TypeOf((*GuarddutyFilterFindingCriteria)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.guarddutyFilter.GuarddutyFilterFindingCriteriaCriterion",
+		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilterFindingCriteriaCriterion",
 		reflect.TypeOf((*GuarddutyFilterFindingCriteriaCriterion)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.guarddutyFilter.GuarddutyFilterFindingCriteriaCriterionList",
+		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilterFindingCriteriaCriterionList",
 		reflect.TypeOf((*GuarddutyFilterFindingCriteriaCriterionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.guarddutyFilter.GuarddutyFilterFindingCriteriaCriterionOutputReference",
+		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilterFindingCriteriaCriterionOutputReference",
 		reflect.TypeOf((*GuarddutyFilterFindingCriteriaCriterionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -161,7 +161,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.guarddutyFilter.GuarddutyFilterFindingCriteriaOutputReference",
+		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilterFindingCriteriaOutputReference",
 		reflect.TypeOf((*GuarddutyFilterFindingCriteriaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

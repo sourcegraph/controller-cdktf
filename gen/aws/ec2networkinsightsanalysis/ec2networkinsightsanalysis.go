@@ -525,7 +525,7 @@ func NewEc2NetworkInsightsAnalysis(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_Ec2NetworkInsightsAnalysis{}
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysis",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysis",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -538,7 +538,7 @@ func NewEc2NetworkInsightsAnalysis_Override(e Ec2NetworkInsightsAnalysis, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysis",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysis",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -704,7 +704,7 @@ func Ec2NetworkInsightsAnalysis_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysis",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysis",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -723,7 +723,7 @@ func Ec2NetworkInsightsAnalysis_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysis",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysis",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -742,7 +742,7 @@ func Ec2NetworkInsightsAnalysis_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysis",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysis",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -755,7 +755,7 @@ func Ec2NetworkInsightsAnalysis_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysis",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysis",
 		"tfResourceType",
 		&returns,
 	)

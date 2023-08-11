@@ -104,7 +104,7 @@ func NewGoogleCertificateManagerCertificateMapGclbTargetsList(terraformResource 
 	j := jsiiProxy_GoogleCertificateManagerCertificateMapGclbTargetsList{}
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerCertificateMap.GoogleCertificateManagerCertificateMapGclbTargetsList",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificateMap.GoogleCertificateManagerCertificateMapGclbTargetsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleCertificateManagerCertificateMapGclbTargetsList_Override(g GoogleC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerCertificateMap.GoogleCertificateManagerCertificateMapGclbTargetsList",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificateMap.GoogleCertificateManagerCertificateMapGclbTargetsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

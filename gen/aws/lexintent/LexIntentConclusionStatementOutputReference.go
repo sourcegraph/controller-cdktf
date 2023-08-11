@@ -203,7 +203,7 @@ func NewLexIntentConclusionStatementOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_LexIntentConclusionStatementOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentConclusionStatementOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewLexIntentConclusionStatementOutputReference_Override(l LexIntentConclusi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentConclusionStatementOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

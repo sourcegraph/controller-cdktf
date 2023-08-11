@@ -226,7 +226,7 @@ func NewGoogleComputeImageIamMemberConditionOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleComputeImageIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeImageIamMember.GoogleComputeImageIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeImageIamMember.GoogleComputeImageIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleComputeImageIamMemberConditionOutputReference_Override(g GoogleCom
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeImageIamMember.GoogleComputeImageIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeImageIamMember.GoogleComputeImageIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

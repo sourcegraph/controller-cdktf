@@ -251,7 +251,7 @@ func NewAccessContextManagerAccessLevelCustomExprOutputReference(terraformResour
 	j := jsiiProxy_AccessContextManagerAccessLevelCustomExprOutputReference{}
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelCustomExprOutputReference",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelCustomExprOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewAccessContextManagerAccessLevelCustomExprOutputReference_Override(a Acce
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelCustomExprOutputReference",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelCustomExprOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItem",
+		"@cdktf/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItem",
 		reflect.TypeOf((*DataAwsDynamodbTableItem)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItemConfig",
+		"@cdktf/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItemConfig",
 		reflect.TypeOf((*DataAwsDynamodbTableItemConfig)(nil)).Elem(),
 	)
 }

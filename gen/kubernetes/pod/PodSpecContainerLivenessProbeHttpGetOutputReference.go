@@ -276,7 +276,7 @@ func NewPodSpecContainerLivenessProbeHttpGetOutputReference(terraformResource cd
 	j := jsiiProxy_PodSpecContainerLivenessProbeHttpGetOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerLivenessProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerLivenessProbeHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewPodSpecContainerLivenessProbeHttpGetOutputReference_Override(p PodSpecCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerLivenessProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerLivenessProbeHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

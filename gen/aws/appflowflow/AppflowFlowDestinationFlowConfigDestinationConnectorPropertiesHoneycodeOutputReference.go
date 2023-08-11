@@ -203,7 +203,7 @@ func NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeO
 	j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

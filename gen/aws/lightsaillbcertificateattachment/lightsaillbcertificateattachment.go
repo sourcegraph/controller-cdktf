@@ -342,7 +342,7 @@ func NewLightsailLbCertificateAttachment(scope constructs.Construct, id *string,
 	j := jsiiProxy_LightsailLbCertificateAttachment{}
 
 	_jsii_.Create(
-		"aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment",
+		"@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewLightsailLbCertificateAttachment_Override(l LightsailLbCertificateAttach
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment",
+		"@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -488,7 +488,7 @@ func LightsailLbCertificateAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment",
+		"@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func LightsailLbCertificateAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment",
+		"@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func LightsailLbCertificateAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment",
+		"@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func LightsailLbCertificateAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment",
+		"@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment",
 		"tfResourceType",
 		&returns,
 	)

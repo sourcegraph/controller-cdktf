@@ -353,7 +353,7 @@ func NewBackupVaultPolicy(scope constructs.Construct, id *string, config *Backup
 	j := jsiiProxy_BackupVaultPolicy{}
 
 	_jsii_.Create(
-		"aws.backupVaultPolicy.BackupVaultPolicy",
+		"@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewBackupVaultPolicy_Override(b BackupVaultPolicy, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupVaultPolicy.BackupVaultPolicy",
+		"@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -499,7 +499,7 @@ func BackupVaultPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupVaultPolicy.BackupVaultPolicy",
+		"@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func BackupVaultPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupVaultPolicy.BackupVaultPolicy",
+		"@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func BackupVaultPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupVaultPolicy.BackupVaultPolicy",
+		"@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func BackupVaultPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.backupVaultPolicy.BackupVaultPolicy",
+		"@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy",
 		"tfResourceType",
 		&returns,
 	)

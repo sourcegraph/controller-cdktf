@@ -228,7 +228,7 @@ func NewComputeAutoscalerTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_ComputeAutoscalerTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeAutoscaler.ComputeAutoscalerTimeoutsOutputReference",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeAutoscalerTimeoutsOutputReference_Override(c ComputeAutoscalerTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeAutoscaler.ComputeAutoscalerTimeoutsOutputReference",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

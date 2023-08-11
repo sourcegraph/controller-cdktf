@@ -204,7 +204,7 @@ func NewStatefulSetSpecSelectorOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_StatefulSetSpecSelectorOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecSelectorOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewStatefulSetSpecSelectorOutputReference_Override(s StatefulSetSpecSelecto
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecSelectorOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

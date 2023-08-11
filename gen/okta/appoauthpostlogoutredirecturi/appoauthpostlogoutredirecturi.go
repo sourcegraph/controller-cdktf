@@ -342,7 +342,7 @@ func NewAppOauthPostLogoutRedirectUri(scope constructs.Construct, id *string, co
 	j := jsiiProxy_AppOauthPostLogoutRedirectUri{}
 
 	_jsii_.Create(
-		"okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUri",
+		"@cdktf/provider-okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUri",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewAppOauthPostLogoutRedirectUri_Override(a AppOauthPostLogoutRedirectUri, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUri",
+		"@cdktf/provider-okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUri",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -488,7 +488,7 @@ func AppOauthPostLogoutRedirectUri_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUri",
+		"@cdktf/provider-okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUri",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func AppOauthPostLogoutRedirectUri_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUri",
+		"@cdktf/provider-okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUri",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func AppOauthPostLogoutRedirectUri_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUri",
+		"@cdktf/provider-okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUri",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func AppOauthPostLogoutRedirectUri_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUri",
+		"@cdktf/provider-okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUri",
 		"tfResourceType",
 		&returns,
 	)

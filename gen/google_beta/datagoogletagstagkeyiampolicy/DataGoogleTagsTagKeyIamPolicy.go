@@ -313,7 +313,7 @@ func NewDataGoogleTagsTagKeyIamPolicy(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataGoogleTagsTagKeyIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleTagsTagKeyIamPolicy.DataGoogleTagsTagKeyIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleTagsTagKeyIamPolicy.DataGoogleTagsTagKeyIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -326,7 +326,7 @@ func NewDataGoogleTagsTagKeyIamPolicy_Override(d DataGoogleTagsTagKeyIamPolicy, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleTagsTagKeyIamPolicy.DataGoogleTagsTagKeyIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleTagsTagKeyIamPolicy.DataGoogleTagsTagKeyIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -426,7 +426,7 @@ func DataGoogleTagsTagKeyIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleTagsTagKeyIamPolicy.DataGoogleTagsTagKeyIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleTagsTagKeyIamPolicy.DataGoogleTagsTagKeyIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +445,7 @@ func DataGoogleTagsTagKeyIamPolicy_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleTagsTagKeyIamPolicy.DataGoogleTagsTagKeyIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleTagsTagKeyIamPolicy.DataGoogleTagsTagKeyIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -464,7 +464,7 @@ func DataGoogleTagsTagKeyIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleTagsTagKeyIamPolicy.DataGoogleTagsTagKeyIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleTagsTagKeyIamPolicy.DataGoogleTagsTagKeyIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataGoogleTagsTagKeyIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleTagsTagKeyIamPolicy.DataGoogleTagsTagKeyIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleTagsTagKeyIamPolicy.DataGoogleTagsTagKeyIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.eventHookVerification.EventHookVerification",
+		"@cdktf/provider-okta.eventHookVerification.EventHookVerification",
 		reflect.TypeOf((*EventHookVerification)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,7 +57,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.eventHookVerification.EventHookVerificationConfig",
+		"@cdktf/provider-okta.eventHookVerification.EventHookVerificationConfig",
 		reflect.TypeOf((*EventHookVerificationConfig)(nil)).Elem(),
 	)
 }

@@ -178,7 +178,7 @@ func NewGlobalacceleratorAcceleratorIpSetsOutputReference(terraformResource cdkt
 	j := jsiiProxy_GlobalacceleratorAcceleratorIpSetsOutputReference{}
 
 	_jsii_.Create(
-		"aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorIpSetsOutputReference",
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorIpSetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewGlobalacceleratorAcceleratorIpSetsOutputReference_Override(g Globalaccel
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorIpSetsOutputReference",
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorIpSetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

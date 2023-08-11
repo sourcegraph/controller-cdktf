@@ -202,7 +202,7 @@ func NewDialogflowCxWebhookServiceDirectoryOutputReference(terraformResource cdk
 	j := jsiiProxy_DialogflowCxWebhookServiceDirectoryOutputReference{}
 
 	_jsii_.Create(
-		"google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryOutputReference",
+		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDialogflowCxWebhookServiceDirectoryOutputReference_Override(d Dialogflow
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryOutputReference",
+		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

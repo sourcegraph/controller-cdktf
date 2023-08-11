@@ -203,7 +203,7 @@ func NewMskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsOutputRefer
 	j := jsiiProxy_MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsOutputReference{}
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsOutputReference",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewMskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsOutputReference",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

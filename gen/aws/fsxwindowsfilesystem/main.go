@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.fsxWindowsFileSystem.FsxWindowsFileSystem",
+		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystem",
 		reflect.TypeOf((*FsxWindowsFileSystem)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeDirectoryId", GoGetter: "ActiveDirectoryId"},
@@ -126,11 +126,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxWindowsFileSystem.FsxWindowsFileSystemAuditLogConfiguration",
+		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemAuditLogConfiguration",
 		reflect.TypeOf((*FsxWindowsFileSystemAuditLogConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxWindowsFileSystem.FsxWindowsFileSystemAuditLogConfigurationOutputReference",
+		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemAuditLogConfigurationOutputReference",
 		reflect.TypeOf((*FsxWindowsFileSystemAuditLogConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "auditLogDestination", GoGetter: "AuditLogDestination"},
@@ -171,15 +171,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxWindowsFileSystem.FsxWindowsFileSystemConfig",
+		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemConfig",
 		reflect.TypeOf((*FsxWindowsFileSystemConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxWindowsFileSystem.FsxWindowsFileSystemSelfManagedActiveDirectory",
+		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemSelfManagedActiveDirectory",
 		reflect.TypeOf((*FsxWindowsFileSystemSelfManagedActiveDirectory)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxWindowsFileSystem.FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference",
+		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference",
 		reflect.TypeOf((*FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -225,11 +225,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxWindowsFileSystem.FsxWindowsFileSystemTimeouts",
+		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemTimeouts",
 		reflect.TypeOf((*FsxWindowsFileSystemTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxWindowsFileSystem.FsxWindowsFileSystemTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemTimeoutsOutputReference",
 		reflect.TypeOf((*FsxWindowsFileSystemTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

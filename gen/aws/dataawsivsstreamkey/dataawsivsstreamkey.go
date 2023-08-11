@@ -337,7 +337,7 @@ func NewDataAwsIvsStreamKey(scope constructs.Construct, id *string, config *Data
 	j := jsiiProxy_DataAwsIvsStreamKey{}
 
 	_jsii_.Create(
-		"aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey",
+		"@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -350,7 +350,7 @@ func NewDataAwsIvsStreamKey_Override(d DataAwsIvsStreamKey, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey",
+		"@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -461,7 +461,7 @@ func DataAwsIvsStreamKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey",
+		"@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataAwsIvsStreamKey_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey",
+		"@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataAwsIvsStreamKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey",
+		"@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataAwsIvsStreamKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey",
+		"@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey",
 		"tfResourceType",
 		&returns,
 	)

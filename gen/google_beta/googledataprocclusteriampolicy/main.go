@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocClusterIamPolicy.GoogleDataprocClusterIamPolicy",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamPolicy.GoogleDataprocClusterIamPolicy",
 		reflect.TypeOf((*GoogleDataprocClusterIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocClusterIamPolicy.GoogleDataprocClusterIamPolicyConfig",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamPolicy.GoogleDataprocClusterIamPolicyConfig",
 		reflect.TypeOf((*GoogleDataprocClusterIamPolicyConfig)(nil)).Elem(),
 	)
 }

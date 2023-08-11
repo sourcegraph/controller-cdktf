@@ -116,7 +116,7 @@ func NewCognitoIdentityPoolCognitoIdentityProvidersList(terraformResource cdktf.
 	j := jsiiProxy_CognitoIdentityPoolCognitoIdentityProvidersList{}
 
 	_jsii_.Create(
-		"aws.cognitoIdentityPool.CognitoIdentityPoolCognitoIdentityProvidersList",
+		"@cdktf/provider-aws.cognitoIdentityPool.CognitoIdentityPoolCognitoIdentityProvidersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCognitoIdentityPoolCognitoIdentityProvidersList_Override(c CognitoIdenti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoIdentityPool.CognitoIdentityPoolCognitoIdentityProvidersList",
+		"@cdktf/provider-aws.cognitoIdentityPool.CognitoIdentityPoolCognitoIdentityProvidersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

@@ -358,7 +358,7 @@ func NewDataTlsPublicKey(scope constructs.Construct, id *string, config *DataTls
 	j := jsiiProxy_DataTlsPublicKey{}
 
 	_jsii_.Create(
-		"tls.dataTlsPublicKey.DataTlsPublicKey",
+		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -371,7 +371,7 @@ func NewDataTlsPublicKey_Override(d DataTlsPublicKey, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tls.dataTlsPublicKey.DataTlsPublicKey",
+		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -471,7 +471,7 @@ func DataTlsPublicKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tls.dataTlsPublicKey.DataTlsPublicKey",
+		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -490,7 +490,7 @@ func DataTlsPublicKey_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tls.dataTlsPublicKey.DataTlsPublicKey",
+		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -509,7 +509,7 @@ func DataTlsPublicKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tls.dataTlsPublicKey.DataTlsPublicKey",
+		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -522,7 +522,7 @@ func DataTlsPublicKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tls.dataTlsPublicKey.DataTlsPublicKey",
+		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
 		"tfResourceType",
 		&returns,
 	)

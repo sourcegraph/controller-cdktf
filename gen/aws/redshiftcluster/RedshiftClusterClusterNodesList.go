@@ -104,7 +104,7 @@ func NewRedshiftClusterClusterNodesList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_RedshiftClusterClusterNodesList{}
 
 	_jsii_.Create(
-		"aws.redshiftCluster.RedshiftClusterClusterNodesList",
+		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterClusterNodesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewRedshiftClusterClusterNodesList_Override(r RedshiftClusterClusterNodesLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftCluster.RedshiftClusterClusterNodesList",
+		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterClusterNodesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

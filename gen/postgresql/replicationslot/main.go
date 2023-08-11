@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"postgresql.replicationSlot.ReplicationSlot",
+		"@cdktf/provider-postgresql.replicationSlot.ReplicationSlot",
 		reflect.TypeOf((*ReplicationSlot)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"postgresql.replicationSlot.ReplicationSlotConfig",
+		"@cdktf/provider-postgresql.replicationSlot.ReplicationSlotConfig",
 		reflect.TypeOf((*ReplicationSlotConfig)(nil)).Elem(),
 	)
 }

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroup",
+		"@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroup",
 		reflect.TypeOf((*DataAwsAutoscalingGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,15 +75,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupConfig",
+		"@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupConfig",
 		reflect.TypeOf((*DataAwsAutoscalingGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupLaunchTemplate",
+		"@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupLaunchTemplate",
 		reflect.TypeOf((*DataAwsAutoscalingGroupLaunchTemplate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupLaunchTemplateList",
+		"@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupLaunchTemplateList",
 		reflect.TypeOf((*DataAwsAutoscalingGroupLaunchTemplateList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupLaunchTemplateOutputReference",
+		"@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupLaunchTemplateOutputReference",
 		reflect.TypeOf((*DataAwsAutoscalingGroupLaunchTemplateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

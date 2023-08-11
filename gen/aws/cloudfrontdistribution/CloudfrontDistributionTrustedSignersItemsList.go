@@ -104,7 +104,7 @@ func NewCloudfrontDistributionTrustedSignersItemsList(terraformResource cdktf.II
 	j := jsiiProxy_CloudfrontDistributionTrustedSignersItemsList{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionTrustedSignersItemsList",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionTrustedSignersItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewCloudfrontDistributionTrustedSignersItemsList_Override(c CloudfrontDistr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionTrustedSignersItemsList",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionTrustedSignersItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

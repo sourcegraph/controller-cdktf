@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ssmPatchBaseline.SsmPatchBaseline",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaseline",
 		reflect.TypeOf((*SsmPatchBaseline)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -97,11 +97,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssmPatchBaseline.SsmPatchBaselineApprovalRule",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineApprovalRule",
 		reflect.TypeOf((*SsmPatchBaselineApprovalRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ssmPatchBaseline.SsmPatchBaselineApprovalRuleList",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineApprovalRuleList",
 		reflect.TypeOf((*SsmPatchBaselineApprovalRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -122,7 +122,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ssmPatchBaseline.SsmPatchBaselineApprovalRuleOutputReference",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineApprovalRuleOutputReference",
 		reflect.TypeOf((*SsmPatchBaselineApprovalRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "approveAfterDays", GoGetter: "ApproveAfterDays"},
@@ -169,11 +169,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssmPatchBaseline.SsmPatchBaselineApprovalRulePatchFilter",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineApprovalRulePatchFilter",
 		reflect.TypeOf((*SsmPatchBaselineApprovalRulePatchFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ssmPatchBaseline.SsmPatchBaselineApprovalRulePatchFilterList",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineApprovalRulePatchFilterList",
 		reflect.TypeOf((*SsmPatchBaselineApprovalRulePatchFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -194,7 +194,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ssmPatchBaseline.SsmPatchBaselineApprovalRulePatchFilterOutputReference",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineApprovalRulePatchFilterOutputReference",
 		reflect.TypeOf((*SsmPatchBaselineApprovalRulePatchFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -230,15 +230,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssmPatchBaseline.SsmPatchBaselineConfig",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineConfig",
 		reflect.TypeOf((*SsmPatchBaselineConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssmPatchBaseline.SsmPatchBaselineGlobalFilter",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineGlobalFilter",
 		reflect.TypeOf((*SsmPatchBaselineGlobalFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ssmPatchBaseline.SsmPatchBaselineGlobalFilterList",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineGlobalFilterList",
 		reflect.TypeOf((*SsmPatchBaselineGlobalFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -259,7 +259,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ssmPatchBaseline.SsmPatchBaselineGlobalFilterOutputReference",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineGlobalFilterOutputReference",
 		reflect.TypeOf((*SsmPatchBaselineGlobalFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -295,11 +295,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssmPatchBaseline.SsmPatchBaselineSource",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineSource",
 		reflect.TypeOf((*SsmPatchBaselineSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ssmPatchBaseline.SsmPatchBaselineSourceList",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineSourceList",
 		reflect.TypeOf((*SsmPatchBaselineSourceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -320,7 +320,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ssmPatchBaseline.SsmPatchBaselineSourceOutputReference",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineSourceOutputReference",
 		reflect.TypeOf((*SsmPatchBaselineSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

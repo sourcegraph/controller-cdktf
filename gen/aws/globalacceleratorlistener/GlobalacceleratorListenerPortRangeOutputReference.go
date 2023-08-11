@@ -204,7 +204,7 @@ func NewGlobalacceleratorListenerPortRangeOutputReference(terraformResource cdkt
 	j := jsiiProxy_GlobalacceleratorListenerPortRangeOutputReference{}
 
 	_jsii_.Create(
-		"aws.globalacceleratorListener.GlobalacceleratorListenerPortRangeOutputReference",
+		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListenerPortRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGlobalacceleratorListenerPortRangeOutputReference_Override(g Globalaccel
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.globalacceleratorListener.GlobalacceleratorListenerPortRangeOutputReference",
+		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListenerPortRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

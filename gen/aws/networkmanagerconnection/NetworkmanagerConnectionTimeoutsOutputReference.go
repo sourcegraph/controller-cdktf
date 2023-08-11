@@ -228,7 +228,7 @@ func NewNetworkmanagerConnectionTimeoutsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_NetworkmanagerConnectionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.networkmanagerConnection.NetworkmanagerConnectionTimeoutsOutputReference",
+		"@cdktf/provider-aws.networkmanagerConnection.NetworkmanagerConnectionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewNetworkmanagerConnectionTimeoutsOutputReference_Override(n Networkmanage
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerConnection.NetworkmanagerConnectionTimeoutsOutputReference",
+		"@cdktf/provider-aws.networkmanagerConnection.NetworkmanagerConnectionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

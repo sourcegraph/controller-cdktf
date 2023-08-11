@@ -116,7 +116,7 @@ func NewDocdbClusterParameterGroupParameterList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DocdbClusterParameterGroupParameterList{}
 
 	_jsii_.Create(
-		"aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameterList",
+		"@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDocdbClusterParameterGroupParameterList_Override(d DocdbClusterParameter
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameterList",
+		"@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

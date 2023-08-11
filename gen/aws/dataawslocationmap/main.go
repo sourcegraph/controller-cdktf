@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsLocationMap.DataAwsLocationMap",
+		"@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMap",
 		reflect.TypeOf((*DataAwsLocationMap)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLocationMap.DataAwsLocationMapConfig",
+		"@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMapConfig",
 		reflect.TypeOf((*DataAwsLocationMapConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLocationMap.DataAwsLocationMapConfiguration",
+		"@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMapConfiguration",
 		reflect.TypeOf((*DataAwsLocationMapConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLocationMap.DataAwsLocationMapConfigurationList",
+		"@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMapConfigurationList",
 		reflect.TypeOf((*DataAwsLocationMapConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -91,7 +91,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLocationMap.DataAwsLocationMapConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMapConfigurationOutputReference",
 		reflect.TypeOf((*DataAwsLocationMapConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

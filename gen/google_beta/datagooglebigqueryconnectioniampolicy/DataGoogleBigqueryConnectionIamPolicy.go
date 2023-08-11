@@ -361,7 +361,7 @@ func NewDataGoogleBigqueryConnectionIamPolicy(scope constructs.Construct, id *st
 	j := jsiiProxy_DataGoogleBigqueryConnectionIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBigqueryConnectionIamPolicy.DataGoogleBigqueryConnectionIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryConnectionIamPolicy.DataGoogleBigqueryConnectionIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -374,7 +374,7 @@ func NewDataGoogleBigqueryConnectionIamPolicy_Override(d DataGoogleBigqueryConne
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBigqueryConnectionIamPolicy.DataGoogleBigqueryConnectionIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryConnectionIamPolicy.DataGoogleBigqueryConnectionIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -496,7 +496,7 @@ func DataGoogleBigqueryConnectionIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBigqueryConnectionIamPolicy.DataGoogleBigqueryConnectionIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryConnectionIamPolicy.DataGoogleBigqueryConnectionIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func DataGoogleBigqueryConnectionIamPolicy_IsTerraformDataSource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBigqueryConnectionIamPolicy.DataGoogleBigqueryConnectionIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryConnectionIamPolicy.DataGoogleBigqueryConnectionIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataGoogleBigqueryConnectionIamPolicy_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBigqueryConnectionIamPolicy.DataGoogleBigqueryConnectionIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryConnectionIamPolicy.DataGoogleBigqueryConnectionIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +547,7 @@ func DataGoogleBigqueryConnectionIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleBigqueryConnectionIamPolicy.DataGoogleBigqueryConnectionIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryConnectionIamPolicy.DataGoogleBigqueryConnectionIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

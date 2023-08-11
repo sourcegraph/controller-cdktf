@@ -226,7 +226,7 @@ func NewPrivatecaCertificateTemplateIamBindingConditionOutputReference(terraform
 	j := jsiiProxy_PrivatecaCertificateTemplateIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.privatecaCertificateTemplateIamBinding.PrivatecaCertificateTemplateIamBindingConditionOutputReference",
+		"@cdktf/provider-google.privatecaCertificateTemplateIamBinding.PrivatecaCertificateTemplateIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewPrivatecaCertificateTemplateIamBindingConditionOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCertificateTemplateIamBinding.PrivatecaCertificateTemplateIamBindingConditionOutputReference",
+		"@cdktf/provider-google.privatecaCertificateTemplateIamBinding.PrivatecaCertificateTemplateIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

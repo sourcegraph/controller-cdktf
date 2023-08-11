@@ -204,7 +204,7 @@ func NewNetworkPolicySpecEgressToNamespaceSelectorOutputReference(terraformResou
 	j := jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressToNamespaceSelectorOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToNamespaceSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewNetworkPolicySpecEgressToNamespaceSelectorOutputReference_Override(n Net
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressToNamespaceSelectorOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToNamespaceSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

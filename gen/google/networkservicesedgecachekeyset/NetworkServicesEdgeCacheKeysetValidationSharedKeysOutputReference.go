@@ -179,7 +179,7 @@ func NewNetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference(terraf
 	j := jsiiProxy_NetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference{}
 
 	_jsii_.Create(
-		"google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference",
+		"@cdktf/provider-google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewNetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference",
+		"@cdktf/provider-google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)

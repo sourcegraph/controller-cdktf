@@ -555,7 +555,7 @@ func NewFsxDataRepositoryAssociation(scope constructs.Construct, id *string, con
 	j := jsiiProxy_FsxDataRepositoryAssociation{}
 
 	_jsii_.Create(
-		"aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation",
+		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -568,7 +568,7 @@ func NewFsxDataRepositoryAssociation_Override(f FsxDataRepositoryAssociation, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation",
+		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -767,7 +767,7 @@ func FsxDataRepositoryAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation",
+		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -786,7 +786,7 @@ func FsxDataRepositoryAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation",
+		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -805,7 +805,7 @@ func FsxDataRepositoryAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation",
+		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -818,7 +818,7 @@ func FsxDataRepositoryAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation",
+		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation",
 		"tfResourceType",
 		&returns,
 	)

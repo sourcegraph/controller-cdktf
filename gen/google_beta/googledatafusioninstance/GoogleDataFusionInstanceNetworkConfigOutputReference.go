@@ -202,7 +202,7 @@ func NewGoogleDataFusionInstanceNetworkConfigOutputReference(terraformResource c
 	j := jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstanceNetworkConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstanceNetworkConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleDataFusionInstanceNetworkConfigOutputReference_Override(g GoogleDa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstanceNetworkConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstanceNetworkConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

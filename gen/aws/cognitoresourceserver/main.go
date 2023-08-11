@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cognitoResourceServer.CognitoResourceServer",
+		"@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServer",
 		reflect.TypeOf((*CognitoResourceServer)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,15 +66,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoResourceServer.CognitoResourceServerConfig",
+		"@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServerConfig",
 		reflect.TypeOf((*CognitoResourceServerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoResourceServer.CognitoResourceServerScope",
+		"@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServerScope",
 		reflect.TypeOf((*CognitoResourceServerScope)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoResourceServer.CognitoResourceServerScopeList",
+		"@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServerScopeList",
 		reflect.TypeOf((*CognitoResourceServerScopeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -95,7 +95,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoResourceServer.CognitoResourceServerScopeOutputReference",
+		"@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServerScopeOutputReference",
 		reflect.TypeOf((*CognitoResourceServerScopeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

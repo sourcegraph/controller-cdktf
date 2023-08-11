@@ -367,7 +367,7 @@ func NewManagedHeaders(scope constructs.Construct, id *string, config *ManagedHe
 	j := jsiiProxy_ManagedHeaders{}
 
 	_jsii_.Create(
-		"cloudflare.managedHeaders.ManagedHeaders",
+		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeaders",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewManagedHeaders_Override(m ManagedHeaders, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.managedHeaders.ManagedHeaders",
+		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeaders",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -502,7 +502,7 @@ func ManagedHeaders_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.managedHeaders.ManagedHeaders",
+		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeaders",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -521,7 +521,7 @@ func ManagedHeaders_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.managedHeaders.ManagedHeaders",
+		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeaders",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func ManagedHeaders_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.managedHeaders.ManagedHeaders",
+		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeaders",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func ManagedHeaders_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.managedHeaders.ManagedHeaders",
+		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeaders",
 		"tfResourceType",
 		&returns,
 	)

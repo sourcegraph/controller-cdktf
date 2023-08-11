@@ -203,7 +203,7 @@ func NewEmrserverlessApplicationInitialCapacityOutputReference(terraformResource
 	j := jsiiProxy_EmrserverlessApplicationInitialCapacityOutputReference{}
 
 	_jsii_.Create(
-		"aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityOutputReference",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewEmrserverlessApplicationInitialCapacityOutputReference_Override(e Emrser
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityOutputReference",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

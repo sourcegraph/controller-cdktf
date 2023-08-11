@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.kmsKey.KmsKey",
+		"@cdktf/provider-aws.kmsKey.KmsKey",
 		reflect.TypeOf((*KmsKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,7 +93,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kmsKey.KmsKeyConfig",
+		"@cdktf/provider-aws.kmsKey.KmsKeyConfig",
 		reflect.TypeOf((*KmsKeyConfig)(nil)).Elem(),
 	)
 }

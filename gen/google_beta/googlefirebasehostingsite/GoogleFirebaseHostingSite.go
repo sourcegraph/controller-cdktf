@@ -414,7 +414,7 @@ func NewGoogleFirebaseHostingSite(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleFirebaseHostingSite{}
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseHostingSite.GoogleFirebaseHostingSite",
+		"@cdktf/provider-google-beta.googleFirebaseHostingSite.GoogleFirebaseHostingSite",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewGoogleFirebaseHostingSite_Override(g GoogleFirebaseHostingSite, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseHostingSite.GoogleFirebaseHostingSite",
+		"@cdktf/provider-google-beta.googleFirebaseHostingSite.GoogleFirebaseHostingSite",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -571,7 +571,7 @@ func GoogleFirebaseHostingSite_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseHostingSite.GoogleFirebaseHostingSite",
+		"@cdktf/provider-google-beta.googleFirebaseHostingSite.GoogleFirebaseHostingSite",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -590,7 +590,7 @@ func GoogleFirebaseHostingSite_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseHostingSite.GoogleFirebaseHostingSite",
+		"@cdktf/provider-google-beta.googleFirebaseHostingSite.GoogleFirebaseHostingSite",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func GoogleFirebaseHostingSite_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseHostingSite.GoogleFirebaseHostingSite",
+		"@cdktf/provider-google-beta.googleFirebaseHostingSite.GoogleFirebaseHostingSite",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func GoogleFirebaseHostingSite_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleFirebaseHostingSite.GoogleFirebaseHostingSite",
+		"@cdktf/provider-google-beta.googleFirebaseHostingSite.GoogleFirebaseHostingSite",
 		"tfResourceType",
 		&returns,
 	)

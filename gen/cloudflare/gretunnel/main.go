@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.greTunnel.GreTunnel",
+		"@cdktf/provider-cloudflare.greTunnel.GreTunnel",
 		reflect.TypeOf((*GreTunnel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -84,7 +84,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.greTunnel.GreTunnelConfig",
+		"@cdktf/provider-cloudflare.greTunnel.GreTunnelConfig",
 		reflect.TypeOf((*GreTunnelConfig)(nil)).Elem(),
 	)
 }

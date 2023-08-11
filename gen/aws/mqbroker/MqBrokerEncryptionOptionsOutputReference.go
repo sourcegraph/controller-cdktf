@@ -204,7 +204,7 @@ func NewMqBrokerEncryptionOptionsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_MqBrokerEncryptionOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.mqBroker.MqBrokerEncryptionOptionsOutputReference",
+		"@cdktf/provider-aws.mqBroker.MqBrokerEncryptionOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMqBrokerEncryptionOptionsOutputReference_Override(m MqBrokerEncryptionOp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mqBroker.MqBrokerEncryptionOptionsOutputReference",
+		"@cdktf/provider-aws.mqBroker.MqBrokerEncryptionOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

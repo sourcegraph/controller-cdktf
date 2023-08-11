@@ -104,7 +104,7 @@ func NewDataGoogleLoggingSinkExclusionsList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataGoogleLoggingSinkExclusionsList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkExclusionsList",
+		"@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkExclusionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleLoggingSinkExclusionsList_Override(d DataGoogleLoggingSinkExcl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkExclusionsList",
+		"@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkExclusionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

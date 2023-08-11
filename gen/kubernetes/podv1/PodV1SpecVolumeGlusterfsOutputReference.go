@@ -226,7 +226,7 @@ func NewPodV1SpecVolumeGlusterfsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_PodV1SpecVolumeGlusterfsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumeGlusterfsOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeGlusterfsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewPodV1SpecVolumeGlusterfsOutputReference_Override(p PodV1SpecVolumeGluste
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumeGlusterfsOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeGlusterfsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

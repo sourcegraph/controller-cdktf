@@ -227,7 +227,7 @@ func NewLbListenerDefaultActionFixedResponseOutputReference(terraformResource cd
 	j := jsiiProxy_LbListenerDefaultActionFixedResponseOutputReference{}
 
 	_jsii_.Create(
-		"aws.lbListener.LbListenerDefaultActionFixedResponseOutputReference",
+		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionFixedResponseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewLbListenerDefaultActionFixedResponseOutputReference_Override(l LbListene
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbListener.LbListenerDefaultActionFixedResponseOutputReference",
+		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionFixedResponseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

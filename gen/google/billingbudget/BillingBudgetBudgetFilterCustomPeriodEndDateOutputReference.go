@@ -225,7 +225,7 @@ func NewBillingBudgetBudgetFilterCustomPeriodEndDateOutputReference(terraformRes
 	j := jsiiProxy_BillingBudgetBudgetFilterCustomPeriodEndDateOutputReference{}
 
 	_jsii_.Create(
-		"google.billingBudget.BillingBudgetBudgetFilterCustomPeriodEndDateOutputReference",
+		"@cdktf/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodEndDateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewBillingBudgetBudgetFilterCustomPeriodEndDateOutputReference_Override(b B
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.billingBudget.BillingBudgetBudgetFilterCustomPeriodEndDateOutputReference",
+		"@cdktf/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodEndDateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

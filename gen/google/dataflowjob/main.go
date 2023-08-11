@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataflowJob.DataflowJob",
+		"@cdktf/provider-google.dataflowJob.DataflowJob",
 		reflect.TypeOf((*DataflowJob)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalExperiments", GoGetter: "AdditionalExperiments"},
@@ -119,15 +119,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataflowJob.DataflowJobConfig",
+		"@cdktf/provider-google.dataflowJob.DataflowJobConfig",
 		reflect.TypeOf((*DataflowJobConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataflowJob.DataflowJobTimeouts",
+		"@cdktf/provider-google.dataflowJob.DataflowJobTimeouts",
 		reflect.TypeOf((*DataflowJobTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataflowJob.DataflowJobTimeoutsOutputReference",
+		"@cdktf/provider-google.dataflowJob.DataflowJobTimeoutsOutputReference",
 		reflect.TypeOf((*DataflowJobTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

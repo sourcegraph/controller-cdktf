@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ecsAccountSettingDefault.EcsAccountSettingDefault",
+		"@cdktf/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefault",
 		reflect.TypeOf((*EcsAccountSettingDefault)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecsAccountSettingDefault.EcsAccountSettingDefaultConfig",
+		"@cdktf/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefaultConfig",
 		reflect.TypeOf((*EcsAccountSettingDefaultConfig)(nil)).Elem(),
 	)
 }

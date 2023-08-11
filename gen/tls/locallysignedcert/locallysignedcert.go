@@ -525,7 +525,7 @@ func NewLocallySignedCert(scope constructs.Construct, id *string, config *Locall
 	j := jsiiProxy_LocallySignedCert{}
 
 	_jsii_.Create(
-		"tls.locallySignedCert.LocallySignedCert",
+		"@cdktf/provider-tls.locallySignedCert.LocallySignedCert",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -538,7 +538,7 @@ func NewLocallySignedCert_Override(l LocallySignedCert, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tls.locallySignedCert.LocallySignedCert",
+		"@cdktf/provider-tls.locallySignedCert.LocallySignedCert",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -726,7 +726,7 @@ func LocallySignedCert_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tls.locallySignedCert.LocallySignedCert",
+		"@cdktf/provider-tls.locallySignedCert.LocallySignedCert",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -745,7 +745,7 @@ func LocallySignedCert_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tls.locallySignedCert.LocallySignedCert",
+		"@cdktf/provider-tls.locallySignedCert.LocallySignedCert",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -764,7 +764,7 @@ func LocallySignedCert_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tls.locallySignedCert.LocallySignedCert",
+		"@cdktf/provider-tls.locallySignedCert.LocallySignedCert",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -777,7 +777,7 @@ func LocallySignedCert_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tls.locallySignedCert.LocallySignedCert",
+		"@cdktf/provider-tls.locallySignedCert.LocallySignedCert",
 		"tfResourceType",
 		&returns,
 	)

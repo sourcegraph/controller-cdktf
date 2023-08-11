@@ -538,7 +538,7 @@ func NewGoogleCloudfunctions2FunctionServiceConfigOutputReference(terraformResou
 	j := jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -550,7 +550,7 @@ func NewGoogleCloudfunctions2FunctionServiceConfigOutputReference_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

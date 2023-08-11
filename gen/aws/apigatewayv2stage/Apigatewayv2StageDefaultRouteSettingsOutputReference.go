@@ -276,7 +276,7 @@ func NewApigatewayv2StageDefaultRouteSettingsOutputReference(terraformResource c
 	j := jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.apigatewayv2Stage.Apigatewayv2StageDefaultRouteSettingsOutputReference",
+		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageDefaultRouteSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewApigatewayv2StageDefaultRouteSettingsOutputReference_Override(a Apigatew
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apigatewayv2Stage.Apigatewayv2StageDefaultRouteSettingsOutputReference",
+		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageDefaultRouteSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

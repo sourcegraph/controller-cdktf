@@ -371,7 +371,7 @@ func NewPagesProjectSourceConfigOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_PagesProjectSourceConfigOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.pagesProject.PagesProjectSourceConfigOutputReference",
+		"@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -383,7 +383,7 @@ func NewPagesProjectSourceConfigOutputReference_Override(p PagesProjectSourceCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.pagesProject.PagesProjectSourceConfigOutputReference",
+		"@cdktf/provider-cloudflare.pagesProject.PagesProjectSourceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

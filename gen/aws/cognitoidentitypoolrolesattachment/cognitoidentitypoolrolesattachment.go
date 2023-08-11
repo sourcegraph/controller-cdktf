@@ -366,7 +366,7 @@ func NewCognitoIdentityPoolRolesAttachment(scope constructs.Construct, id *strin
 	j := jsiiProxy_CognitoIdentityPoolRolesAttachment{}
 
 	_jsii_.Create(
-		"aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment",
+		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewCognitoIdentityPoolRolesAttachment_Override(c CognitoIdentityPoolRolesAt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment",
+		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -512,7 +512,7 @@ func CognitoIdentityPoolRolesAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment",
+		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func CognitoIdentityPoolRolesAttachment_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment",
+		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func CognitoIdentityPoolRolesAttachment_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment",
+		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func CognitoIdentityPoolRolesAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment",
+		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewOpsworksNodejsAppLayerCloudwatchConfigurationOutputReference(terraformRe
 	j := jsiiProxy_OpsworksNodejsAppLayerCloudwatchConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationOutputReference",
+		"@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewOpsworksNodejsAppLayerCloudwatchConfigurationOutputReference_Override(o 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationOutputReference",
+		"@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerCloudwatchConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

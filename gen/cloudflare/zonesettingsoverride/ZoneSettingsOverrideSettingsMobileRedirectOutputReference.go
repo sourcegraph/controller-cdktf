@@ -225,7 +225,7 @@ func NewZoneSettingsOverrideSettingsMobileRedirectOutputReference(terraformResou
 	j := jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMobileRedirectOutputReference",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMobileRedirectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewZoneSettingsOverrideSettingsMobileRedirectOutputReference_Override(z Zon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMobileRedirectOutputReference",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMobileRedirectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)

@@ -228,7 +228,7 @@ func NewAppEngineServiceNetworkSettingsTimeoutsOutputReference(terraformResource
 	j := jsiiProxy_AppEngineServiceNetworkSettingsTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettingsTimeoutsOutputReference",
+		"@cdktf/provider-google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettingsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAppEngineServiceNetworkSettingsTimeoutsOutputReference_Override(a AppEng
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettingsTimeoutsOutputReference",
+		"@cdktf/provider-google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettingsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

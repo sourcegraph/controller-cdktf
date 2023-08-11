@@ -404,7 +404,7 @@ func NewDataAwsEksAddon(scope constructs.Construct, id *string, config *DataAwsE
 	j := jsiiProxy_DataAwsEksAddon{}
 
 	_jsii_.Create(
-		"aws.dataAwsEksAddon.DataAwsEksAddon",
+		"@cdktf/provider-aws.dataAwsEksAddon.DataAwsEksAddon",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -417,7 +417,7 @@ func NewDataAwsEksAddon_Override(d DataAwsEksAddon, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEksAddon.DataAwsEksAddon",
+		"@cdktf/provider-aws.dataAwsEksAddon.DataAwsEksAddon",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -539,7 +539,7 @@ func DataAwsEksAddon_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEksAddon.DataAwsEksAddon",
+		"@cdktf/provider-aws.dataAwsEksAddon.DataAwsEksAddon",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -558,7 +558,7 @@ func DataAwsEksAddon_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEksAddon.DataAwsEksAddon",
+		"@cdktf/provider-aws.dataAwsEksAddon.DataAwsEksAddon",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func DataAwsEksAddon_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEksAddon.DataAwsEksAddon",
+		"@cdktf/provider-aws.dataAwsEksAddon.DataAwsEksAddon",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -590,7 +590,7 @@ func DataAwsEksAddon_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEksAddon.DataAwsEksAddon",
+		"@cdktf/provider-aws.dataAwsEksAddon.DataAwsEksAddon",
 		"tfResourceType",
 		&returns,
 	)

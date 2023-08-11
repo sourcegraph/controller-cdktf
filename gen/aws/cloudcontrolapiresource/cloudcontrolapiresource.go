@@ -449,7 +449,7 @@ func NewCloudcontrolapiResource(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_CloudcontrolapiResource{}
 
 	_jsii_.Create(
-		"aws.cloudcontrolapiResource.CloudcontrolapiResource",
+		"@cdktf/provider-aws.cloudcontrolapiResource.CloudcontrolapiResource",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -462,7 +462,7 @@ func NewCloudcontrolapiResource_Override(c CloudcontrolapiResource, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudcontrolapiResource.CloudcontrolapiResource",
+		"@cdktf/provider-aws.cloudcontrolapiResource.CloudcontrolapiResource",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -628,7 +628,7 @@ func CloudcontrolapiResource_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudcontrolapiResource.CloudcontrolapiResource",
+		"@cdktf/provider-aws.cloudcontrolapiResource.CloudcontrolapiResource",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -647,7 +647,7 @@ func CloudcontrolapiResource_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudcontrolapiResource.CloudcontrolapiResource",
+		"@cdktf/provider-aws.cloudcontrolapiResource.CloudcontrolapiResource",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func CloudcontrolapiResource_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudcontrolapiResource.CloudcontrolapiResource",
+		"@cdktf/provider-aws.cloudcontrolapiResource.CloudcontrolapiResource",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func CloudcontrolapiResource_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudcontrolapiResource.CloudcontrolapiResource",
+		"@cdktf/provider-aws.cloudcontrolapiResource.CloudcontrolapiResource",
 		"tfResourceType",
 		&returns,
 	)

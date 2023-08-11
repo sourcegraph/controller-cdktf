@@ -204,7 +204,7 @@ func NewNetworkPolicyV1SpecEgressToIpBlockOutputReference(terraformResource cdkt
 	j := jsiiProxy_NetworkPolicyV1SpecEgressToIpBlockOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.networkPolicyV1.NetworkPolicyV1SpecEgressToIpBlockOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicyV1.NetworkPolicyV1SpecEgressToIpBlockOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewNetworkPolicyV1SpecEgressToIpBlockOutputReference_Override(n NetworkPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.networkPolicyV1.NetworkPolicyV1SpecEgressToIpBlockOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicyV1.NetworkPolicyV1SpecEgressToIpBlockOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

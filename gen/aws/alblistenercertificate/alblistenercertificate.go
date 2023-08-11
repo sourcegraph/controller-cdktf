@@ -342,7 +342,7 @@ func NewAlbListenerCertificate(scope constructs.Construct, id *string, config *A
 	j := jsiiProxy_AlbListenerCertificate{}
 
 	_jsii_.Create(
-		"aws.albListenerCertificate.AlbListenerCertificate",
+		"@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewAlbListenerCertificate_Override(a AlbListenerCertificate, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albListenerCertificate.AlbListenerCertificate",
+		"@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificate",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -488,7 +488,7 @@ func AlbListenerCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.albListenerCertificate.AlbListenerCertificate",
+		"@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func AlbListenerCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.albListenerCertificate.AlbListenerCertificate",
+		"@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func AlbListenerCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.albListenerCertificate.AlbListenerCertificate",
+		"@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func AlbListenerCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.albListenerCertificate.AlbListenerCertificate",
+		"@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificate",
 		"tfResourceType",
 		&returns,
 	)

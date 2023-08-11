@@ -180,7 +180,7 @@ func NewMonitoringSloBasicSliAvailabilityOutputReference(terraformResource cdktf
 	j := jsiiProxy_MonitoringSloBasicSliAvailabilityOutputReference{}
 
 	_jsii_.Create(
-		"google.monitoringSlo.MonitoringSloBasicSliAvailabilityOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloBasicSliAvailabilityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewMonitoringSloBasicSliAvailabilityOutputReference_Override(m MonitoringSl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringSlo.MonitoringSloBasicSliAvailabilityOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloBasicSliAvailabilityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

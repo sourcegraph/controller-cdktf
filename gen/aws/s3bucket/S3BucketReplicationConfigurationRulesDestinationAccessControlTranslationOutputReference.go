@@ -179,7 +179,7 @@ func NewS3BucketReplicationConfigurationRulesDestinationAccessControlTranslation
 	j := jsiiProxy_S3BucketReplicationConfigurationRulesDestinationAccessControlTranslationOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationAccessControlTranslationOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationAccessControlTranslationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewS3BucketReplicationConfigurationRulesDestinationAccessControlTranslation
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationAccessControlTranslationOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationAccessControlTranslationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

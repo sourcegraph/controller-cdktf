@@ -116,7 +116,7 @@ func NewOpsworksApplicationAppSourceList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_OpsworksApplicationAppSourceList{}
 
 	_jsii_.Create(
-		"aws.opsworksApplication.OpsworksApplicationAppSourceList",
+		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationAppSourceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOpsworksApplicationAppSourceList_Override(o OpsworksApplicationAppSource
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksApplication.OpsworksApplicationAppSourceList",
+		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationAppSourceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

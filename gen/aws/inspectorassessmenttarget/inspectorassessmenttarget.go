@@ -354,7 +354,7 @@ func NewInspectorAssessmentTarget(scope constructs.Construct, id *string, config
 	j := jsiiProxy_InspectorAssessmentTarget{}
 
 	_jsii_.Create(
-		"aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
+		"@cdktf/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -367,7 +367,7 @@ func NewInspectorAssessmentTarget_Override(i InspectorAssessmentTarget, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
+		"@cdktf/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -500,7 +500,7 @@ func InspectorAssessmentTarget_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
+		"@cdktf/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -519,7 +519,7 @@ func InspectorAssessmentTarget_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
+		"@cdktf/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -538,7 +538,7 @@ func InspectorAssessmentTarget_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
+		"@cdktf/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func InspectorAssessmentTarget_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
+		"@cdktf/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
 		"tfResourceType",
 		&returns,
 	)

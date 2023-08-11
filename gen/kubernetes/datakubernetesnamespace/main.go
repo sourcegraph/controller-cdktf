@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesNamespace.DataKubernetesNamespace",
+		"@cdktf/provider-kubernetes.dataKubernetesNamespace.DataKubernetesNamespace",
 		reflect.TypeOf((*DataKubernetesNamespace)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,15 +57,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesNamespace.DataKubernetesNamespaceConfig",
+		"@cdktf/provider-kubernetes.dataKubernetesNamespace.DataKubernetesNamespaceConfig",
 		reflect.TypeOf((*DataKubernetesNamespaceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesNamespace.DataKubernetesNamespaceMetadata",
+		"@cdktf/provider-kubernetes.dataKubernetesNamespace.DataKubernetesNamespaceMetadata",
 		reflect.TypeOf((*DataKubernetesNamespaceMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesNamespace.DataKubernetesNamespaceMetadataOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesNamespace.DataKubernetesNamespaceMetadataOutputReference",
 		reflect.TypeOf((*DataKubernetesNamespaceMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -109,11 +109,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesNamespace.DataKubernetesNamespaceSpec",
+		"@cdktf/provider-kubernetes.dataKubernetesNamespace.DataKubernetesNamespaceSpec",
 		reflect.TypeOf((*DataKubernetesNamespaceSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesNamespace.DataKubernetesNamespaceSpecList",
+		"@cdktf/provider-kubernetes.dataKubernetesNamespace.DataKubernetesNamespaceSpecList",
 		reflect.TypeOf((*DataKubernetesNamespaceSpecList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -133,7 +133,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesNamespace.DataKubernetesNamespaceSpecOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesNamespace.DataKubernetesNamespaceSpecOutputReference",
 		reflect.TypeOf((*DataKubernetesNamespaceSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

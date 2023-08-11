@@ -116,7 +116,7 @@ func NewComputeBackendServiceLocalityLbPoliciesList(terraformResource cdktf.IInt
 	j := jsiiProxy_ComputeBackendServiceLocalityLbPoliciesList{}
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesList",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeBackendServiceLocalityLbPoliciesList_Override(c ComputeBackendSer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesList",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

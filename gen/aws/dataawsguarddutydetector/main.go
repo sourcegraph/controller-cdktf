@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector",
+		"@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector",
 		reflect.TypeOf((*DataAwsGuarddutyDetector)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -56,7 +56,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorConfig",
+		"@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorConfig",
 		reflect.TypeOf((*DataAwsGuarddutyDetectorConfig)(nil)).Elem(),
 	)
 }

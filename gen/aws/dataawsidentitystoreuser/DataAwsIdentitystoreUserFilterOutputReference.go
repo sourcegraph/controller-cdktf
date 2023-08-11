@@ -202,7 +202,7 @@ func NewDataAwsIdentitystoreUserFilterOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsIdentitystoreUserFilterOutputReference_Override(d DataAwsIdentity
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

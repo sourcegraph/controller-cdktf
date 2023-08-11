@@ -447,7 +447,7 @@ func NewLambdaFunctionUrl(scope constructs.Construct, id *string, config *Lambda
 	j := jsiiProxy_LambdaFunctionUrl{}
 
 	_jsii_.Create(
-		"aws.lambdaFunctionUrl.LambdaFunctionUrl",
+		"@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewLambdaFunctionUrl_Override(l LambdaFunctionUrl, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaFunctionUrl.LambdaFunctionUrl",
+		"@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -604,7 +604,7 @@ func LambdaFunctionUrl_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaFunctionUrl.LambdaFunctionUrl",
+		"@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -623,7 +623,7 @@ func LambdaFunctionUrl_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaFunctionUrl.LambdaFunctionUrl",
+		"@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func LambdaFunctionUrl_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaFunctionUrl.LambdaFunctionUrl",
+		"@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func LambdaFunctionUrl_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lambdaFunctionUrl.LambdaFunctionUrl",
+		"@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrl",
 		"tfResourceType",
 		&returns,
 	)

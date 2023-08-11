@@ -277,7 +277,7 @@ func NewDataAwsInstanceEbsBlockDeviceOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_DataAwsInstanceEbsBlockDeviceOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceEbsBlockDeviceOutputReference",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEbsBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -289,7 +289,7 @@ func NewDataAwsInstanceEbsBlockDeviceOutputReference_Override(d DataAwsInstanceE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceEbsBlockDeviceOutputReference",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEbsBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

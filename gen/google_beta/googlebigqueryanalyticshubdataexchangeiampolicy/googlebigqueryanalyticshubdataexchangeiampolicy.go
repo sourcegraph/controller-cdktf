@@ -401,7 +401,7 @@ func NewGoogleBigqueryAnalyticsHubDataExchangeIamPolicy(scope constructs.Constru
 	j := jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryAnalyticsHubDataExchangeIamPolicy.GoogleBigqueryAnalyticsHubDataExchangeIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamPolicy.GoogleBigqueryAnalyticsHubDataExchangeIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleBigqueryAnalyticsHubDataExchangeIamPolicy_Override(g GoogleBigquer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryAnalyticsHubDataExchangeIamPolicy.GoogleBigqueryAnalyticsHubDataExchangeIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamPolicy.GoogleBigqueryAnalyticsHubDataExchangeIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GoogleBigqueryAnalyticsHubDataExchangeIamPolicy_IsConstruct(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryAnalyticsHubDataExchangeIamPolicy.GoogleBigqueryAnalyticsHubDataExchangeIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamPolicy.GoogleBigqueryAnalyticsHubDataExchangeIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GoogleBigqueryAnalyticsHubDataExchangeIamPolicy_IsTerraformElement(x interf
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryAnalyticsHubDataExchangeIamPolicy.GoogleBigqueryAnalyticsHubDataExchangeIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamPolicy.GoogleBigqueryAnalyticsHubDataExchangeIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GoogleBigqueryAnalyticsHubDataExchangeIamPolicy_IsTerraformResource(x inter
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryAnalyticsHubDataExchangeIamPolicy.GoogleBigqueryAnalyticsHubDataExchangeIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamPolicy.GoogleBigqueryAnalyticsHubDataExchangeIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GoogleBigqueryAnalyticsHubDataExchangeIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigqueryAnalyticsHubDataExchangeIamPolicy.GoogleBigqueryAnalyticsHubDataExchangeIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamPolicy.GoogleBigqueryAnalyticsHubDataExchangeIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -494,7 +494,7 @@ func NewCloudIdentityGroup(scope constructs.Construct, id *string, config *Cloud
 	j := jsiiProxy_CloudIdentityGroup{}
 
 	_jsii_.Create(
-		"google.cloudIdentityGroup.CloudIdentityGroup",
+		"@cdktf/provider-google.cloudIdentityGroup.CloudIdentityGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -507,7 +507,7 @@ func NewCloudIdentityGroup_Override(c CloudIdentityGroup, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudIdentityGroup.CloudIdentityGroup",
+		"@cdktf/provider-google.cloudIdentityGroup.CloudIdentityGroup",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -673,7 +673,7 @@ func CloudIdentityGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudIdentityGroup.CloudIdentityGroup",
+		"@cdktf/provider-google.cloudIdentityGroup.CloudIdentityGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -692,7 +692,7 @@ func CloudIdentityGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudIdentityGroup.CloudIdentityGroup",
+		"@cdktf/provider-google.cloudIdentityGroup.CloudIdentityGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -711,7 +711,7 @@ func CloudIdentityGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudIdentityGroup.CloudIdentityGroup",
+		"@cdktf/provider-google.cloudIdentityGroup.CloudIdentityGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -724,7 +724,7 @@ func CloudIdentityGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudIdentityGroup.CloudIdentityGroup",
+		"@cdktf/provider-google.cloudIdentityGroup.CloudIdentityGroup",
 		"tfResourceType",
 		&returns,
 	)

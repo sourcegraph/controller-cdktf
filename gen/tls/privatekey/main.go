@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tls.privateKey.PrivateKey",
+		"@cdktf/provider-tls.privateKey.PrivateKey",
 		reflect.TypeOf((*PrivateKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tls.privateKey.PrivateKeyConfig",
+		"@cdktf/provider-tls.privateKey.PrivateKeyConfig",
 		reflect.TypeOf((*PrivateKeyConfig)(nil)).Elem(),
 	)
 }

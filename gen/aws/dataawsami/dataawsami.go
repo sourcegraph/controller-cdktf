@@ -801,7 +801,7 @@ func NewDataAwsAmi(scope constructs.Construct, id *string, config *DataAwsAmiCon
 	j := jsiiProxy_DataAwsAmi{}
 
 	_jsii_.Create(
-		"aws.dataAwsAmi.DataAwsAmi",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmi",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -814,7 +814,7 @@ func NewDataAwsAmi_Override(d DataAwsAmi, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAmi.DataAwsAmi",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmi",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -969,7 +969,7 @@ func DataAwsAmi_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAmi.DataAwsAmi",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmi",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -988,7 +988,7 @@ func DataAwsAmi_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAmi.DataAwsAmi",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmi",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -1007,7 +1007,7 @@ func DataAwsAmi_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAmi.DataAwsAmi",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmi",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1020,7 +1020,7 @@ func DataAwsAmi_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsAmi.DataAwsAmi",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmi",
 		"tfResourceType",
 		&returns,
 	)

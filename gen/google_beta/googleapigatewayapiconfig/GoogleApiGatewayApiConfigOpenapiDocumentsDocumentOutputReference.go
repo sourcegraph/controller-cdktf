@@ -202,7 +202,7 @@ func NewGoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference(terrafo
 	j := jsiiProxy_GoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

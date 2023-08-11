@@ -180,7 +180,7 @@ func NewSesv2ConfigurationSetSendingOptionsOutputReference(terraformResource cdk
 	j := jsiiProxy_Sesv2ConfigurationSetSendingOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSendingOptionsOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSendingOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewSesv2ConfigurationSetSendingOptionsOutputReference_Override(s Sesv2Confi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSendingOptionsOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSendingOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

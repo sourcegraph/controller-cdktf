@@ -225,7 +225,7 @@ func NewConnectHoursOfOperationConfigAOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_ConnectHoursOfOperationConfigAOutputReference{}
 
 	_jsii_.Create(
-		"aws.connectHoursOfOperation.ConnectHoursOfOperationConfigAOutputReference",
+		"@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewConnectHoursOfOperationConfigAOutputReference_Override(c ConnectHoursOfO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectHoursOfOperation.ConnectHoursOfOperationConfigAOutputReference",
+		"@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

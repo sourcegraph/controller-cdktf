@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleLoggingProjectSink.GoogleLoggingProjectSink",
+		"@cdktf/provider-google-beta.googleLoggingProjectSink.GoogleLoggingProjectSink",
 		reflect.TypeOf((*GoogleLoggingProjectSink)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,11 +83,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleLoggingProjectSink.GoogleLoggingProjectSinkBigqueryOptions",
+		"@cdktf/provider-google-beta.googleLoggingProjectSink.GoogleLoggingProjectSinkBigqueryOptions",
 		reflect.TypeOf((*GoogleLoggingProjectSinkBigqueryOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleLoggingProjectSink.GoogleLoggingProjectSinkBigqueryOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingProjectSink.GoogleLoggingProjectSinkBigqueryOptionsOutputReference",
 		reflect.TypeOf((*GoogleLoggingProjectSinkBigqueryOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -121,15 +121,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleLoggingProjectSink.GoogleLoggingProjectSinkConfig",
+		"@cdktf/provider-google-beta.googleLoggingProjectSink.GoogleLoggingProjectSinkConfig",
 		reflect.TypeOf((*GoogleLoggingProjectSinkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleLoggingProjectSink.GoogleLoggingProjectSinkExclusions",
+		"@cdktf/provider-google-beta.googleLoggingProjectSink.GoogleLoggingProjectSinkExclusions",
 		reflect.TypeOf((*GoogleLoggingProjectSinkExclusions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleLoggingProjectSink.GoogleLoggingProjectSinkExclusionsList",
+		"@cdktf/provider-google-beta.googleLoggingProjectSink.GoogleLoggingProjectSinkExclusionsList",
 		reflect.TypeOf((*GoogleLoggingProjectSinkExclusionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -150,7 +150,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleLoggingProjectSink.GoogleLoggingProjectSinkExclusionsOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingProjectSink.GoogleLoggingProjectSinkExclusionsOutputReference",
 		reflect.TypeOf((*GoogleLoggingProjectSinkExclusionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

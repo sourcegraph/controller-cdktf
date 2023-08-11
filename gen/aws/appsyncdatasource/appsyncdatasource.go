@@ -544,7 +544,7 @@ func NewAppsyncDatasource(scope constructs.Construct, id *string, config *Appsyn
 	j := jsiiProxy_AppsyncDatasource{}
 
 	_jsii_.Create(
-		"aws.appsyncDatasource.AppsyncDatasource",
+		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasource",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -557,7 +557,7 @@ func NewAppsyncDatasource_Override(a AppsyncDatasource, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appsyncDatasource.AppsyncDatasource",
+		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasource",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -723,7 +723,7 @@ func AppsyncDatasource_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appsyncDatasource.AppsyncDatasource",
+		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasource",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -742,7 +742,7 @@ func AppsyncDatasource_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appsyncDatasource.AppsyncDatasource",
+		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasource",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -761,7 +761,7 @@ func AppsyncDatasource_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appsyncDatasource.AppsyncDatasource",
+		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasource",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -774,7 +774,7 @@ func AppsyncDatasource_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appsyncDatasource.AppsyncDatasource",
+		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasource",
 		"tfResourceType",
 		&returns,
 	)

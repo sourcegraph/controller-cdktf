@@ -405,7 +405,7 @@ func NewDataGoogleBeyondcorpAppConnection(scope constructs.Construct, id *string
 	j := jsiiProxy_DataGoogleBeyondcorpAppConnection{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnection",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnection",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -418,7 +418,7 @@ func NewDataGoogleBeyondcorpAppConnection_Override(d DataGoogleBeyondcorpAppConn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnection",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnection",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -540,7 +540,7 @@ func DataGoogleBeyondcorpAppConnection_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnection",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnection",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -559,7 +559,7 @@ func DataGoogleBeyondcorpAppConnection_IsTerraformDataSource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnection",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnection",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -578,7 +578,7 @@ func DataGoogleBeyondcorpAppConnection_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnection",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnection",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -591,7 +591,7 @@ func DataGoogleBeyondcorpAppConnection_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnection",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnection",
 		"tfResourceType",
 		&returns,
 	)

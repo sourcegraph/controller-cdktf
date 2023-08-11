@@ -904,7 +904,7 @@ func NewOpsworksCustomLayer(scope constructs.Construct, id *string, config *Opsw
 	j := jsiiProxy_OpsworksCustomLayer{}
 
 	_jsii_.Create(
-		"aws.opsworksCustomLayer.OpsworksCustomLayer",
+		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -917,7 +917,7 @@ func NewOpsworksCustomLayer_Override(o OpsworksCustomLayer, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksCustomLayer.OpsworksCustomLayer",
+		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -1270,7 +1270,7 @@ func OpsworksCustomLayer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksCustomLayer.OpsworksCustomLayer",
+		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1289,7 +1289,7 @@ func OpsworksCustomLayer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksCustomLayer.OpsworksCustomLayer",
+		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1308,7 +1308,7 @@ func OpsworksCustomLayer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksCustomLayer.OpsworksCustomLayer",
+		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1321,7 +1321,7 @@ func OpsworksCustomLayer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.opsworksCustomLayer.OpsworksCustomLayer",
+		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer",
 		"tfResourceType",
 		&returns,
 	)

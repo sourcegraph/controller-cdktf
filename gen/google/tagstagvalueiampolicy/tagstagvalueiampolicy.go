@@ -353,7 +353,7 @@ func NewTagsTagValueIamPolicy(scope constructs.Construct, id *string, config *Ta
 	j := jsiiProxy_TagsTagValueIamPolicy{}
 
 	_jsii_.Create(
-		"google.tagsTagValueIamPolicy.TagsTagValueIamPolicy",
+		"@cdktf/provider-google.tagsTagValueIamPolicy.TagsTagValueIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewTagsTagValueIamPolicy_Override(t TagsTagValueIamPolicy, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.tagsTagValueIamPolicy.TagsTagValueIamPolicy",
+		"@cdktf/provider-google.tagsTagValueIamPolicy.TagsTagValueIamPolicy",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -499,7 +499,7 @@ func TagsTagValueIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.tagsTagValueIamPolicy.TagsTagValueIamPolicy",
+		"@cdktf/provider-google.tagsTagValueIamPolicy.TagsTagValueIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func TagsTagValueIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.tagsTagValueIamPolicy.TagsTagValueIamPolicy",
+		"@cdktf/provider-google.tagsTagValueIamPolicy.TagsTagValueIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func TagsTagValueIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.tagsTagValueIamPolicy.TagsTagValueIamPolicy",
+		"@cdktf/provider-google.tagsTagValueIamPolicy.TagsTagValueIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func TagsTagValueIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.tagsTagValueIamPolicy.TagsTagValueIamPolicy",
+		"@cdktf/provider-google.tagsTagValueIamPolicy.TagsTagValueIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

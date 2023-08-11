@@ -116,7 +116,7 @@ func NewS3BucketLifecycleRuleList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_S3BucketLifecycleRuleList{}
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketLifecycleRuleList",
+		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewS3BucketLifecycleRuleList_Override(s S3BucketLifecycleRuleList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketLifecycleRuleList",
+		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

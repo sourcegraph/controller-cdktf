@@ -226,7 +226,7 @@ func NewEmrserverlessApplicationMaximumCapacityOutputReference(terraformResource
 	j := jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference{}
 
 	_jsii_.Create(
-		"aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacityOutputReference",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewEmrserverlessApplicationMaximumCapacityOutputReference_Override(e Emrser
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacityOutputReference",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

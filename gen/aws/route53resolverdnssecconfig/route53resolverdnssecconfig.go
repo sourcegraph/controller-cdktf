@@ -352,7 +352,7 @@ func NewRoute53ResolverDnssecConfig(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_Route53ResolverDnssecConfig{}
 
 	_jsii_.Create(
-		"aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig",
+		"@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -365,7 +365,7 @@ func NewRoute53ResolverDnssecConfig_Override(r Route53ResolverDnssecConfig, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig",
+		"@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -487,7 +487,7 @@ func Route53ResolverDnssecConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig",
+		"@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -506,7 +506,7 @@ func Route53ResolverDnssecConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig",
+		"@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -525,7 +525,7 @@ func Route53ResolverDnssecConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig",
+		"@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -538,7 +538,7 @@ func Route53ResolverDnssecConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig",
+		"@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig",
 		"tfResourceType",
 		&returns,
 	)

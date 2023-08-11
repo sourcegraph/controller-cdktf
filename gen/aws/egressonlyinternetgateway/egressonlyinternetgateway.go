@@ -367,7 +367,7 @@ func NewEgressOnlyInternetGateway(scope constructs.Construct, id *string, config
 	j := jsiiProxy_EgressOnlyInternetGateway{}
 
 	_jsii_.Create(
-		"aws.egressOnlyInternetGateway.EgressOnlyInternetGateway",
+		"@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewEgressOnlyInternetGateway_Override(e EgressOnlyInternetGateway, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.egressOnlyInternetGateway.EgressOnlyInternetGateway",
+		"@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -524,7 +524,7 @@ func EgressOnlyInternetGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.egressOnlyInternetGateway.EgressOnlyInternetGateway",
+		"@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func EgressOnlyInternetGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.egressOnlyInternetGateway.EgressOnlyInternetGateway",
+		"@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func EgressOnlyInternetGateway_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.egressOnlyInternetGateway.EgressOnlyInternetGateway",
+		"@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func EgressOnlyInternetGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.egressOnlyInternetGateway.EgressOnlyInternetGateway",
+		"@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway",
 		"tfResourceType",
 		&returns,
 	)

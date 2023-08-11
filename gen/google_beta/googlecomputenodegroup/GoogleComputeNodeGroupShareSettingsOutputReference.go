@@ -203,7 +203,7 @@ func NewGoogleComputeNodeGroupShareSettingsOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleComputeNodeGroupShareSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeNodeGroup.GoogleComputeNodeGroupShareSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeNodeGroup.GoogleComputeNodeGroupShareSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleComputeNodeGroupShareSettingsOutputReference_Override(g GoogleComp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeNodeGroup.GoogleComputeNodeGroupShareSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeNodeGroup.GoogleComputeNodeGroupShareSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

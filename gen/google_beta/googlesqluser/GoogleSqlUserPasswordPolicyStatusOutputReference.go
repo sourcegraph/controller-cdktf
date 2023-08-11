@@ -178,7 +178,7 @@ func NewGoogleSqlUserPasswordPolicyStatusOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleSqlUserPasswordPolicyStatusOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleSqlUser.GoogleSqlUserPasswordPolicyStatusOutputReference",
+		"@cdktf/provider-google-beta.googleSqlUser.GoogleSqlUserPasswordPolicyStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewGoogleSqlUserPasswordPolicyStatusOutputReference_Override(g GoogleSqlUse
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSqlUser.GoogleSqlUserPasswordPolicyStatusOutputReference",
+		"@cdktf/provider-google-beta.googleSqlUser.GoogleSqlUserPasswordPolicyStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

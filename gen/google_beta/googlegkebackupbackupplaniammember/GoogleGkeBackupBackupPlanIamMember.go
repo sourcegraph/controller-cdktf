@@ -448,7 +448,7 @@ func NewGoogleGkeBackupBackupPlanIamMember(scope constructs.Construct, id *strin
 	j := jsiiProxy_GoogleGkeBackupBackupPlanIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeBackupBackupPlanIamMember.GoogleGkeBackupBackupPlanIamMember",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamMember.GoogleGkeBackupBackupPlanIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleGkeBackupBackupPlanIamMember_Override(g GoogleGkeBackupBackupPlanI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeBackupBackupPlanIamMember.GoogleGkeBackupBackupPlanIamMember",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamMember.GoogleGkeBackupBackupPlanIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleGkeBackupBackupPlanIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeBackupBackupPlanIamMember.GoogleGkeBackupBackupPlanIamMember",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamMember.GoogleGkeBackupBackupPlanIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleGkeBackupBackupPlanIamMember_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeBackupBackupPlanIamMember.GoogleGkeBackupBackupPlanIamMember",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamMember.GoogleGkeBackupBackupPlanIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleGkeBackupBackupPlanIamMember_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeBackupBackupPlanIamMember.GoogleGkeBackupBackupPlanIamMember",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamMember.GoogleGkeBackupBackupPlanIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleGkeBackupBackupPlanIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleGkeBackupBackupPlanIamMember.GoogleGkeBackupBackupPlanIamMember",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamMember.GoogleGkeBackupBackupPlanIamMember",
 		"tfResourceType",
 		&returns,
 	)

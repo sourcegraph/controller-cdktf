@@ -511,7 +511,7 @@ func NewPinpointApnsVoipSandboxChannel(scope constructs.Construct, id *string, c
 	j := jsiiProxy_PinpointApnsVoipSandboxChannel{}
 
 	_jsii_.Create(
-		"aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel",
+		"@cdktf/provider-aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -524,7 +524,7 @@ func NewPinpointApnsVoipSandboxChannel_Override(p PinpointApnsVoipSandboxChannel
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel",
+		"@cdktf/provider-aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -734,7 +734,7 @@ func PinpointApnsVoipSandboxChannel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel",
+		"@cdktf/provider-aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -753,7 +753,7 @@ func PinpointApnsVoipSandboxChannel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel",
+		"@cdktf/provider-aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -772,7 +772,7 @@ func PinpointApnsVoipSandboxChannel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel",
+		"@cdktf/provider-aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -785,7 +785,7 @@ func PinpointApnsVoipSandboxChannel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel",
+		"@cdktf/provider-aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel",
 		"tfResourceType",
 		&returns,
 	)

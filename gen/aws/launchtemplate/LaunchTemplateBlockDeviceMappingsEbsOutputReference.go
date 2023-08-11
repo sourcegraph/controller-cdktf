@@ -348,7 +348,7 @@ func NewLaunchTemplateBlockDeviceMappingsEbsOutputReference(terraformResource cd
 	j := jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewLaunchTemplateBlockDeviceMappingsEbsOutputReference_Override(l LaunchTem
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

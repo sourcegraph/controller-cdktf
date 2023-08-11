@@ -423,7 +423,7 @@ func NewFirebaserulesRelease(scope constructs.Construct, id *string, config *Fir
 	j := jsiiProxy_FirebaserulesRelease{}
 
 	_jsii_.Create(
-		"google.firebaserulesRelease.FirebaserulesRelease",
+		"@cdktf/provider-google.firebaserulesRelease.FirebaserulesRelease",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewFirebaserulesRelease_Override(f FirebaserulesRelease, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.firebaserulesRelease.FirebaserulesRelease",
+		"@cdktf/provider-google.firebaserulesRelease.FirebaserulesRelease",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -580,7 +580,7 @@ func FirebaserulesRelease_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.firebaserulesRelease.FirebaserulesRelease",
+		"@cdktf/provider-google.firebaserulesRelease.FirebaserulesRelease",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +599,7 @@ func FirebaserulesRelease_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.firebaserulesRelease.FirebaserulesRelease",
+		"@cdktf/provider-google.firebaserulesRelease.FirebaserulesRelease",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -618,7 +618,7 @@ func FirebaserulesRelease_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.firebaserulesRelease.FirebaserulesRelease",
+		"@cdktf/provider-google.firebaserulesRelease.FirebaserulesRelease",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func FirebaserulesRelease_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.firebaserulesRelease.FirebaserulesRelease",
+		"@cdktf/provider-google.firebaserulesRelease.FirebaserulesRelease",
 		"tfResourceType",
 		&returns,
 	)

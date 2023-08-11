@@ -227,7 +227,7 @@ func NewElasticsearchDomainAutoTuneOptionsOutputReference(terraformResource cdkt
 	j := jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewElasticsearchDomainAutoTuneOptionsOutputReference_Override(e Elasticsear
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

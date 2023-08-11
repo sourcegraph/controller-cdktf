@@ -204,7 +204,7 @@ func NewLaunchTemplateIamInstanceProfileOutputReference(terraformResource cdktf.
 	j := jsiiProxy_LaunchTemplateIamInstanceProfileOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateIamInstanceProfileOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateIamInstanceProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewLaunchTemplateIamInstanceProfileOutputReference_Override(l LaunchTemplat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateIamInstanceProfileOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateIamInstanceProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

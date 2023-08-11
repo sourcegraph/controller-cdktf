@@ -204,7 +204,7 @@ func NewGoogleComputeVpnGatewayTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GoogleComputeVpnGatewayTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleComputeVpnGatewayTimeoutsOutputReference_Override(g GoogleComputeV
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.appintegrationsEventIntegration.AppintegrationsEventIntegration",
+		"@cdktf/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegration",
 		reflect.TypeOf((*AppintegrationsEventIntegration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationConfig",
+		"@cdktf/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationConfig",
 		reflect.TypeOf((*AppintegrationsEventIntegrationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationEventFilter",
+		"@cdktf/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationEventFilter",
 		reflect.TypeOf((*AppintegrationsEventIntegrationEventFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationEventFilterOutputReference",
+		"@cdktf/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationEventFilterOutputReference",
 		reflect.TypeOf((*AppintegrationsEventIntegrationEventFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

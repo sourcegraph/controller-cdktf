@@ -202,7 +202,7 @@ func NewCloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference(terr
 	j := jsiiProxy_CloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference",
+		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewCloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference",
+		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

@@ -228,7 +228,7 @@ func NewHealthcareConsentStoreTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_HealthcareConsentStoreTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.healthcareConsentStore.HealthcareConsentStoreTimeoutsOutputReference",
+		"@cdktf/provider-google.healthcareConsentStore.HealthcareConsentStoreTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewHealthcareConsentStoreTimeoutsOutputReference_Override(h HealthcareConse
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareConsentStore.HealthcareConsentStoreTimeoutsOutputReference",
+		"@cdktf/provider-google.healthcareConsentStore.HealthcareConsentStoreTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		h,
 	)

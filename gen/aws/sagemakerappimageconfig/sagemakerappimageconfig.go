@@ -402,7 +402,7 @@ func NewSagemakerAppImageConfig(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_SagemakerAppImageConfig{}
 
 	_jsii_.Create(
-		"aws.sagemakerAppImageConfig.SagemakerAppImageConfig",
+		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -415,7 +415,7 @@ func NewSagemakerAppImageConfig_Override(s SagemakerAppImageConfig, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerAppImageConfig.SagemakerAppImageConfig",
+		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfig",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -559,7 +559,7 @@ func SagemakerAppImageConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerAppImageConfig.SagemakerAppImageConfig",
+		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -578,7 +578,7 @@ func SagemakerAppImageConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerAppImageConfig.SagemakerAppImageConfig",
+		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func SagemakerAppImageConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerAppImageConfig.SagemakerAppImageConfig",
+		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func SagemakerAppImageConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sagemakerAppImageConfig.SagemakerAppImageConfig",
+		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfig",
 		"tfResourceType",
 		&returns,
 	)

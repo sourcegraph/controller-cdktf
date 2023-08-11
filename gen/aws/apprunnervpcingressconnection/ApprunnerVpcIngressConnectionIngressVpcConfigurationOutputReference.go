@@ -204,7 +204,7 @@ func NewApprunnerVpcIngressConnectionIngressVpcConfigurationOutputReference(terr
 	j := jsiiProxy_ApprunnerVpcIngressConnectionIngressVpcConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnectionIngressVpcConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnectionIngressVpcConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewApprunnerVpcIngressConnectionIngressVpcConfigurationOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnectionIngressVpcConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnectionIngressVpcConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

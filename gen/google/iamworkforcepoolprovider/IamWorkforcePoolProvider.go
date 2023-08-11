@@ -579,7 +579,7 @@ func NewIamWorkforcePoolProvider(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_IamWorkforcePoolProvider{}
 
 	_jsii_.Create(
-		"google.iamWorkforcePoolProvider.IamWorkforcePoolProvider",
+		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -592,7 +592,7 @@ func NewIamWorkforcePoolProvider_Override(i IamWorkforcePoolProvider, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iamWorkforcePoolProvider.IamWorkforcePoolProvider",
+		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -791,7 +791,7 @@ func IamWorkforcePoolProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iamWorkforcePoolProvider.IamWorkforcePoolProvider",
+		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -810,7 +810,7 @@ func IamWorkforcePoolProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iamWorkforcePoolProvider.IamWorkforcePoolProvider",
+		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -829,7 +829,7 @@ func IamWorkforcePoolProvider_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iamWorkforcePoolProvider.IamWorkforcePoolProvider",
+		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -842,7 +842,7 @@ func IamWorkforcePoolProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.iamWorkforcePoolProvider.IamWorkforcePoolProvider",
+		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewMlEngineModelTimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_MlEngineModelTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.mlEngineModel.MlEngineModelTimeoutsOutputReference",
+		"@cdktf/provider-google.mlEngineModel.MlEngineModelTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMlEngineModelTimeoutsOutputReference_Override(m MlEngineModelTimeoutsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.mlEngineModel.MlEngineModelTimeoutsOutputReference",
+		"@cdktf/provider-google.mlEngineModel.MlEngineModelTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

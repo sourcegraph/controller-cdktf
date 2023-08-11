@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.iapTunnelIamPolicy.IapTunnelIamPolicy",
+		"@cdktf/provider-google.iapTunnelIamPolicy.IapTunnelIamPolicy",
 		reflect.TypeOf((*IapTunnelIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.iapTunnelIamPolicy.IapTunnelIamPolicyConfig",
+		"@cdktf/provider-google.iapTunnelIamPolicy.IapTunnelIamPolicyConfig",
 		reflect.TypeOf((*IapTunnelIamPolicyConfig)(nil)).Elem(),
 	)
 }

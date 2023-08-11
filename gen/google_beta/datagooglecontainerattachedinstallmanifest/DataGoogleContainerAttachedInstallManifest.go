@@ -371,7 +371,7 @@ func NewDataGoogleContainerAttachedInstallManifest(scope constructs.Construct, i
 	j := jsiiProxy_DataGoogleContainerAttachedInstallManifest{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerAttachedInstallManifest.DataGoogleContainerAttachedInstallManifest",
+		"@cdktf/provider-google-beta.dataGoogleContainerAttachedInstallManifest.DataGoogleContainerAttachedInstallManifest",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -384,7 +384,7 @@ func NewDataGoogleContainerAttachedInstallManifest_Override(d DataGoogleContaine
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerAttachedInstallManifest.DataGoogleContainerAttachedInstallManifest",
+		"@cdktf/provider-google-beta.dataGoogleContainerAttachedInstallManifest.DataGoogleContainerAttachedInstallManifest",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -517,7 +517,7 @@ func DataGoogleContainerAttachedInstallManifest_IsConstruct(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleContainerAttachedInstallManifest.DataGoogleContainerAttachedInstallManifest",
+		"@cdktf/provider-google-beta.dataGoogleContainerAttachedInstallManifest.DataGoogleContainerAttachedInstallManifest",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -536,7 +536,7 @@ func DataGoogleContainerAttachedInstallManifest_IsTerraformDataSource(x interfac
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleContainerAttachedInstallManifest.DataGoogleContainerAttachedInstallManifest",
+		"@cdktf/provider-google-beta.dataGoogleContainerAttachedInstallManifest.DataGoogleContainerAttachedInstallManifest",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -555,7 +555,7 @@ func DataGoogleContainerAttachedInstallManifest_IsTerraformElement(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleContainerAttachedInstallManifest.DataGoogleContainerAttachedInstallManifest",
+		"@cdktf/provider-google-beta.dataGoogleContainerAttachedInstallManifest.DataGoogleContainerAttachedInstallManifest",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -568,7 +568,7 @@ func DataGoogleContainerAttachedInstallManifest_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleContainerAttachedInstallManifest.DataGoogleContainerAttachedInstallManifest",
+		"@cdktf/provider-google-beta.dataGoogleContainerAttachedInstallManifest.DataGoogleContainerAttachedInstallManifest",
 		"tfResourceType",
 		&returns,
 	)

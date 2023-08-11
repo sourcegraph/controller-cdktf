@@ -116,7 +116,7 @@ func NewS3BucketIntelligentTieringConfigurationTieringList(terraformResource cdk
 	j := jsiiProxy_S3BucketIntelligentTieringConfigurationTieringList{}
 
 	_jsii_.Create(
-		"aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfigurationTieringList",
+		"@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfigurationTieringList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewS3BucketIntelligentTieringConfigurationTieringList_Override(s S3BucketIn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfigurationTieringList",
+		"@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfigurationTieringList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

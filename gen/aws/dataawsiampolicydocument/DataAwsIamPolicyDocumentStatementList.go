@@ -116,7 +116,7 @@ func NewDataAwsIamPolicyDocumentStatementList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataAwsIamPolicyDocumentStatementList{}
 
 	_jsii_.Create(
-		"aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementList",
+		"@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsIamPolicyDocumentStatementList_Override(d DataAwsIamPolicyDocumen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementList",
+		"@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

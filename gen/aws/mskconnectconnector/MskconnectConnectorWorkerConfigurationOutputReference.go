@@ -202,7 +202,7 @@ func NewMskconnectConnectorWorkerConfigurationOutputReference(terraformResource 
 	j := jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnectorWorkerConfigurationOutputReference",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorWorkerConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewMskconnectConnectorWorkerConfigurationOutputReference_Override(m Mskconn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnectorWorkerConfigurationOutputReference",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorWorkerConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

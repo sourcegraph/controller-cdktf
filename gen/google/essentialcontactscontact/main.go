@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.essentialContactsContact.EssentialContactsContact",
+		"@cdktf/provider-google.essentialContactsContact.EssentialContactsContact",
 		reflect.TypeOf((*EssentialContactsContact)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,15 +68,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.essentialContactsContact.EssentialContactsContactConfig",
+		"@cdktf/provider-google.essentialContactsContact.EssentialContactsContactConfig",
 		reflect.TypeOf((*EssentialContactsContactConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.essentialContactsContact.EssentialContactsContactTimeouts",
+		"@cdktf/provider-google.essentialContactsContact.EssentialContactsContactTimeouts",
 		reflect.TypeOf((*EssentialContactsContactTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.essentialContactsContact.EssentialContactsContactTimeoutsOutputReference",
+		"@cdktf/provider-google.essentialContactsContact.EssentialContactsContactTimeoutsOutputReference",
 		reflect.TypeOf((*EssentialContactsContactTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

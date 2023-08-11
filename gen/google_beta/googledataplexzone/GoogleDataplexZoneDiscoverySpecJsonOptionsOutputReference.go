@@ -204,7 +204,7 @@ func NewGoogleDataplexZoneDiscoverySpecJsonOptionsOutputReference(terraformResou
 	j := jsiiProxy_GoogleDataplexZoneDiscoverySpecJsonOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexZone.GoogleDataplexZoneDiscoverySpecJsonOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneDiscoverySpecJsonOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleDataplexZoneDiscoverySpecJsonOptionsOutputReference_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexZone.GoogleDataplexZoneDiscoverySpecJsonOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneDiscoverySpecJsonOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

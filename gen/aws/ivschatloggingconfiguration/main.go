@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ivschatLoggingConfiguration.IvschatLoggingConfiguration",
+		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfiguration",
 		reflect.TypeOf((*IvschatLoggingConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,19 +74,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationConfig",
+		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationConfig",
 		reflect.TypeOf((*IvschatLoggingConfigurationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfiguration",
+		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfiguration",
 		reflect.TypeOf((*IvschatLoggingConfigurationDestinationConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogs",
+		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogs",
 		reflect.TypeOf((*IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference",
+		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference",
 		reflect.TypeOf((*IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -120,11 +120,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationFirehose",
+		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationFirehose",
 		reflect.TypeOf((*IvschatLoggingConfigurationDestinationConfigurationFirehose)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationFirehoseOutputReference",
+		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationFirehoseOutputReference",
 		reflect.TypeOf((*IvschatLoggingConfigurationDestinationConfigurationFirehoseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -158,7 +158,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationOutputReference",
+		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationOutputReference",
 		reflect.TypeOf((*IvschatLoggingConfigurationDestinationConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogs", GoGetter: "CloudwatchLogs"},
@@ -202,11 +202,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationS3",
+		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationS3",
 		reflect.TypeOf((*IvschatLoggingConfigurationDestinationConfigurationS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationS3OutputReference",
+		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationS3OutputReference",
 		reflect.TypeOf((*IvschatLoggingConfigurationDestinationConfigurationS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -240,11 +240,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationTimeouts",
+		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationTimeouts",
 		reflect.TypeOf((*IvschatLoggingConfigurationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationTimeoutsOutputReference",
+		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationTimeoutsOutputReference",
 		reflect.TypeOf((*IvschatLoggingConfigurationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

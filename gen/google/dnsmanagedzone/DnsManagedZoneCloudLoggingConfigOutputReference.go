@@ -179,7 +179,7 @@ func NewDnsManagedZoneCloudLoggingConfigOutputReference(terraformResource cdktf.
 	j := jsiiProxy_DnsManagedZoneCloudLoggingConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dnsManagedZone.DnsManagedZoneCloudLoggingConfigOutputReference",
+		"@cdktf/provider-google.dnsManagedZone.DnsManagedZoneCloudLoggingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDnsManagedZoneCloudLoggingConfigOutputReference_Override(d DnsManagedZon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsManagedZone.DnsManagedZoneCloudLoggingConfigOutputReference",
+		"@cdktf/provider-google.dnsManagedZone.DnsManagedZoneCloudLoggingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

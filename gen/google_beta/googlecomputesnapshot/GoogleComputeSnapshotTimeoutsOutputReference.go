@@ -228,7 +228,7 @@ func NewGoogleComputeSnapshotTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_GoogleComputeSnapshotTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeSnapshot.GoogleComputeSnapshotTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshotTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeSnapshotTimeoutsOutputReference_Override(g GoogleComputeSna
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeSnapshot.GoogleComputeSnapshotTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshotTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

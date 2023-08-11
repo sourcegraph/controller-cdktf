@@ -179,7 +179,7 @@ func NewTeamsRuleRuleSettingsAuditSshOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_TeamsRuleRuleSettingsAuditSshOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsAuditSshOutputReference",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsAuditSshOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewTeamsRuleRuleSettingsAuditSshOutputReference_Override(t TeamsRuleRuleSet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsAuditSshOutputReference",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsAuditSshOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

@@ -272,7 +272,7 @@ func NewGoogleCloudRunServiceMetadataOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_GoogleCloudRunServiceMetadataOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceMetadataOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -284,7 +284,7 @@ func NewGoogleCloudRunServiceMetadataOutputReference_Override(g GoogleCloudRunSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceMetadataOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

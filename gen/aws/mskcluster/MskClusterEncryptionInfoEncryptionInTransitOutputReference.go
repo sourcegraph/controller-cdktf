@@ -204,7 +204,7 @@ func NewMskClusterEncryptionInfoEncryptionInTransitOutputReference(terraformReso
 	j := jsiiProxy_MskClusterEncryptionInfoEncryptionInTransitOutputReference{}
 
 	_jsii_.Create(
-		"aws.mskCluster.MskClusterEncryptionInfoEncryptionInTransitOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterEncryptionInfoEncryptionInTransitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMskClusterEncryptionInfoEncryptionInTransitOutputReference_Override(m Ms
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskCluster.MskClusterEncryptionInfoEncryptionInTransitOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterEncryptionInfoEncryptionInTransitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

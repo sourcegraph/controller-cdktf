@@ -373,7 +373,7 @@ func NewDataGoogleServiceAccountJwt(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataGoogleServiceAccountJwt{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleServiceAccountJwt.DataGoogleServiceAccountJwt",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountJwt.DataGoogleServiceAccountJwt",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -386,7 +386,7 @@ func NewDataGoogleServiceAccountJwt_Override(d DataGoogleServiceAccountJwt, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleServiceAccountJwt.DataGoogleServiceAccountJwt",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountJwt.DataGoogleServiceAccountJwt",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -519,7 +519,7 @@ func DataGoogleServiceAccountJwt_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleServiceAccountJwt.DataGoogleServiceAccountJwt",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountJwt.DataGoogleServiceAccountJwt",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -538,7 +538,7 @@ func DataGoogleServiceAccountJwt_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleServiceAccountJwt.DataGoogleServiceAccountJwt",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountJwt.DataGoogleServiceAccountJwt",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -557,7 +557,7 @@ func DataGoogleServiceAccountJwt_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleServiceAccountJwt.DataGoogleServiceAccountJwt",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountJwt.DataGoogleServiceAccountJwt",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -570,7 +570,7 @@ func DataGoogleServiceAccountJwt_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleServiceAccountJwt.DataGoogleServiceAccountJwt",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountJwt.DataGoogleServiceAccountJwt",
 		"tfResourceType",
 		&returns,
 	)

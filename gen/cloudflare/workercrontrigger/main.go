@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.workerCronTrigger.WorkerCronTrigger",
+		"@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTrigger",
 		reflect.TypeOf((*WorkerCronTrigger)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.workerCronTrigger.WorkerCronTriggerConfig",
+		"@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTriggerConfig",
 		reflect.TypeOf((*WorkerCronTriggerConfig)(nil)).Elem(),
 	)
 }

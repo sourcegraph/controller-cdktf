@@ -228,7 +228,7 @@ func NewComposerEnvironmentTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_ComposerEnvironmentTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.composerEnvironment.ComposerEnvironmentTimeoutsOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComposerEnvironmentTimeoutsOutputReference_Override(c ComposerEnvironmen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.composerEnvironment.ComposerEnvironmentTimeoutsOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

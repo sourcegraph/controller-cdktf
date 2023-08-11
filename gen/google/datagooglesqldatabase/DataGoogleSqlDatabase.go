@@ -382,7 +382,7 @@ func NewDataGoogleSqlDatabase(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataGoogleSqlDatabase{}
 
 	_jsii_.Create(
-		"google.dataGoogleSqlDatabase.DataGoogleSqlDatabase",
+		"@cdktf/provider-google.dataGoogleSqlDatabase.DataGoogleSqlDatabase",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -395,7 +395,7 @@ func NewDataGoogleSqlDatabase_Override(d DataGoogleSqlDatabase, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleSqlDatabase.DataGoogleSqlDatabase",
+		"@cdktf/provider-google.dataGoogleSqlDatabase.DataGoogleSqlDatabase",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -517,7 +517,7 @@ func DataGoogleSqlDatabase_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSqlDatabase.DataGoogleSqlDatabase",
+		"@cdktf/provider-google.dataGoogleSqlDatabase.DataGoogleSqlDatabase",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -536,7 +536,7 @@ func DataGoogleSqlDatabase_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSqlDatabase.DataGoogleSqlDatabase",
+		"@cdktf/provider-google.dataGoogleSqlDatabase.DataGoogleSqlDatabase",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -555,7 +555,7 @@ func DataGoogleSqlDatabase_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSqlDatabase.DataGoogleSqlDatabase",
+		"@cdktf/provider-google.dataGoogleSqlDatabase.DataGoogleSqlDatabase",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -568,7 +568,7 @@ func DataGoogleSqlDatabase_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleSqlDatabase.DataGoogleSqlDatabase",
+		"@cdktf/provider-google.dataGoogleSqlDatabase.DataGoogleSqlDatabase",
 		"tfResourceType",
 		&returns,
 	)

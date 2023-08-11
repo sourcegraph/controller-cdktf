@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dialogflowCxAgent.DialogflowCxAgent",
+		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgent",
 		reflect.TypeOf((*DialogflowCxAgent)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -94,15 +94,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxAgent.DialogflowCxAgentConfig",
+		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig",
 		reflect.TypeOf((*DialogflowCxAgentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettings",
+		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettings",
 		reflect.TypeOf((*DialogflowCxAgentSpeechToTextSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettingsOutputReference",
+		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettingsOutputReference",
 		reflect.TypeOf((*DialogflowCxAgentSpeechToTextSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -137,11 +137,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxAgent.DialogflowCxAgentTimeouts",
+		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeouts",
 		reflect.TypeOf((*DialogflowCxAgentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxAgent.DialogflowCxAgentTimeoutsOutputReference",
+		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeoutsOutputReference",
 		reflect.TypeOf((*DialogflowCxAgentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -178,7 +178,7 @@ func NewDataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionOutputRefere
 	j := jsiiProxy_DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference",
+		"@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference",
+		"@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -556,7 +556,7 @@ func NewGoogleComputeBackendBucket(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleComputeBackendBucket{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendBucket.GoogleComputeBackendBucket",
+		"@cdktf/provider-google-beta.googleComputeBackendBucket.GoogleComputeBackendBucket",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -569,7 +569,7 @@ func NewGoogleComputeBackendBucket_Override(g GoogleComputeBackendBucket, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendBucket.GoogleComputeBackendBucket",
+		"@cdktf/provider-google-beta.googleComputeBackendBucket.GoogleComputeBackendBucket",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -768,7 +768,7 @@ func GoogleComputeBackendBucket_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeBackendBucket.GoogleComputeBackendBucket",
+		"@cdktf/provider-google-beta.googleComputeBackendBucket.GoogleComputeBackendBucket",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -787,7 +787,7 @@ func GoogleComputeBackendBucket_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeBackendBucket.GoogleComputeBackendBucket",
+		"@cdktf/provider-google-beta.googleComputeBackendBucket.GoogleComputeBackendBucket",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -806,7 +806,7 @@ func GoogleComputeBackendBucket_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeBackendBucket.GoogleComputeBackendBucket",
+		"@cdktf/provider-google-beta.googleComputeBackendBucket.GoogleComputeBackendBucket",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -819,7 +819,7 @@ func GoogleComputeBackendBucket_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeBackendBucket.GoogleComputeBackendBucket",
+		"@cdktf/provider-google-beta.googleComputeBackendBucket.GoogleComputeBackendBucket",
 		"tfResourceType",
 		&returns,
 	)

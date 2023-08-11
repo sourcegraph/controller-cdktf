@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.cloudTasksQueueIamPolicy.CloudTasksQueueIamPolicy",
+		"@cdktf/provider-google.cloudTasksQueueIamPolicy.CloudTasksQueueIamPolicy",
 		reflect.TypeOf((*CloudTasksQueueIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudTasksQueueIamPolicy.CloudTasksQueueIamPolicyConfig",
+		"@cdktf/provider-google.cloudTasksQueueIamPolicy.CloudTasksQueueIamPolicyConfig",
 		reflect.TypeOf((*CloudTasksQueueIamPolicyConfig)(nil)).Elem(),
 	)
 }

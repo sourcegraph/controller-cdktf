@@ -446,7 +446,7 @@ func NewAppmeshMesh(scope constructs.Construct, id *string, config *AppmeshMeshC
 	j := jsiiProxy_AppmeshMesh{}
 
 	_jsii_.Create(
-		"aws.appmeshMesh.AppmeshMesh",
+		"@cdktf/provider-aws.appmeshMesh.AppmeshMesh",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -459,7 +459,7 @@ func NewAppmeshMesh_Override(a AppmeshMesh, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshMesh.AppmeshMesh",
+		"@cdktf/provider-aws.appmeshMesh.AppmeshMesh",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -603,7 +603,7 @@ func AppmeshMesh_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appmeshMesh.AppmeshMesh",
+		"@cdktf/provider-aws.appmeshMesh.AppmeshMesh",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func AppmeshMesh_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appmeshMesh.AppmeshMesh",
+		"@cdktf/provider-aws.appmeshMesh.AppmeshMesh",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -641,7 +641,7 @@ func AppmeshMesh_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appmeshMesh.AppmeshMesh",
+		"@cdktf/provider-aws.appmeshMesh.AppmeshMesh",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func AppmeshMesh_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appmeshMesh.AppmeshMesh",
+		"@cdktf/provider-aws.appmeshMesh.AppmeshMesh",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewGoogleMonitoringAlertPolicyCreationRecordList(terraformResource cdktf.II
 	j := jsiiProxy_GoogleMonitoringAlertPolicyCreationRecordList{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyCreationRecordList",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyCreationRecordList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleMonitoringAlertPolicyCreationRecordList_Override(g GoogleMonitorin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyCreationRecordList",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyCreationRecordList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

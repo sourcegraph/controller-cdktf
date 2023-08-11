@@ -202,7 +202,7 @@ func NewConfigConformancePackInputParameterOutputReference(terraformResource cdk
 	j := jsiiProxy_ConfigConformancePackInputParameterOutputReference{}
 
 	_jsii_.Create(
-		"aws.configConformancePack.ConfigConformancePackInputParameterOutputReference",
+		"@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewConfigConformancePackInputParameterOutputReference_Override(c ConfigConf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configConformancePack.ConfigConformancePackInputParameterOutputReference",
+		"@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

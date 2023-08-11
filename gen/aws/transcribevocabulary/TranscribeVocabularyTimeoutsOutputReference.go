@@ -228,7 +228,7 @@ func NewTranscribeVocabularyTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_TranscribeVocabularyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.transcribeVocabulary.TranscribeVocabularyTimeoutsOutputReference",
+		"@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabularyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewTranscribeVocabularyTimeoutsOutputReference_Override(t TranscribeVocabul
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transcribeVocabulary.TranscribeVocabularyTimeoutsOutputReference",
+		"@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabularyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

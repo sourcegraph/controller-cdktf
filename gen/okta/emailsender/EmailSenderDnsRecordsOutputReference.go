@@ -189,7 +189,7 @@ func NewEmailSenderDnsRecordsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_EmailSenderDnsRecordsOutputReference{}
 
 	_jsii_.Create(
-		"okta.emailSender.EmailSenderDnsRecordsOutputReference",
+		"@cdktf/provider-okta.emailSender.EmailSenderDnsRecordsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewEmailSenderDnsRecordsOutputReference_Override(e EmailSenderDnsRecordsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.emailSender.EmailSenderDnsRecordsOutputReference",
+		"@cdktf/provider-okta.emailSender.EmailSenderDnsRecordsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

@@ -116,7 +116,7 @@ func NewPodSpecVolumeProjectedSourcesSecretList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_PodSpecVolumeProjectedSourcesSecretList{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeProjectedSourcesSecretList",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesSecretList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodSpecVolumeProjectedSourcesSecretList_Override(p PodSpecVolumeProjecte
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeProjectedSourcesSecretList",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesSecretList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

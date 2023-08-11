@@ -116,7 +116,7 @@ func NewWafv2RegexPatternSetRegularExpressionList(terraformResource cdktf.IInter
 	j := jsiiProxy_Wafv2RegexPatternSetRegularExpressionList{}
 
 	_jsii_.Create(
-		"aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpressionList",
+		"@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpressionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafv2RegexPatternSetRegularExpressionList_Override(w Wafv2RegexPatternSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpressionList",
+		"@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpressionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

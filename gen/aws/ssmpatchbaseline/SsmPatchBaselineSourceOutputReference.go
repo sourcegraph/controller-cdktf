@@ -225,7 +225,7 @@ func NewSsmPatchBaselineSourceOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_SsmPatchBaselineSourceOutputReference{}
 
 	_jsii_.Create(
-		"aws.ssmPatchBaseline.SsmPatchBaselineSourceOutputReference",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewSsmPatchBaselineSourceOutputReference_Override(s SsmPatchBaselineSourceO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmPatchBaseline.SsmPatchBaselineSourceOutputReference",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

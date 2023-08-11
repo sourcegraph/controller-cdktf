@@ -104,7 +104,7 @@ func NewPrivatecaCertificateRevocationDetailsList(terraformResource cdktf.IInter
 	j := jsiiProxy_PrivatecaCertificateRevocationDetailsList{}
 
 	_jsii_.Create(
-		"google.privatecaCertificate.PrivatecaCertificateRevocationDetailsList",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificateRevocationDetailsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewPrivatecaCertificateRevocationDetailsList_Override(p PrivatecaCertificat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCertificate.PrivatecaCertificateRevocationDetailsList",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificateRevocationDetailsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.sccSourceIamBinding.SccSourceIamBinding",
+		"@cdktf/provider-google.sccSourceIamBinding.SccSourceIamBinding",
 		reflect.TypeOf((*SccSourceIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,11 +68,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.sccSourceIamBinding.SccSourceIamBindingCondition",
+		"@cdktf/provider-google.sccSourceIamBinding.SccSourceIamBindingCondition",
 		reflect.TypeOf((*SccSourceIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.sccSourceIamBinding.SccSourceIamBindingConditionOutputReference",
+		"@cdktf/provider-google.sccSourceIamBinding.SccSourceIamBindingConditionOutputReference",
 		reflect.TypeOf((*SccSourceIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -111,7 +111,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.sccSourceIamBinding.SccSourceIamBindingConfig",
+		"@cdktf/provider-google.sccSourceIamBinding.SccSourceIamBindingConfig",
 		reflect.TypeOf((*SccSourceIamBindingConfig)(nil)).Elem(),
 	)
 }

@@ -180,7 +180,7 @@ func NewMskconnectConnectorKafkaClusterClientAuthenticationOutputReference(terra
 	j := jsiiProxy_MskconnectConnectorKafkaClusterClientAuthenticationOutputReference{}
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnectorKafkaClusterClientAuthenticationOutputReference",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterClientAuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewMskconnectConnectorKafkaClusterClientAuthenticationOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnectorKafkaClusterClientAuthenticationOutputReference",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterClientAuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

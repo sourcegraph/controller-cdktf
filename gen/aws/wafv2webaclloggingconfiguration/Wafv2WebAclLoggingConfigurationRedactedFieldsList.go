@@ -116,7 +116,7 @@ func NewWafv2WebAclLoggingConfigurationRedactedFieldsList(terraformResource cdkt
 	j := jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsList{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsList",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafv2WebAclLoggingConfigurationRedactedFieldsList_Override(w Wafv2WebAcl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsList",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

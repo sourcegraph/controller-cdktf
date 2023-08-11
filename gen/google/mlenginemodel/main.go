@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.mlEngineModel.MlEngineModel",
+		"@cdktf/provider-google.mlEngineModel.MlEngineModel",
 		reflect.TypeOf((*MlEngineModel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,15 +83,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.mlEngineModel.MlEngineModelConfig",
+		"@cdktf/provider-google.mlEngineModel.MlEngineModelConfig",
 		reflect.TypeOf((*MlEngineModelConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.mlEngineModel.MlEngineModelDefaultVersion",
+		"@cdktf/provider-google.mlEngineModel.MlEngineModelDefaultVersion",
 		reflect.TypeOf((*MlEngineModelDefaultVersion)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.mlEngineModel.MlEngineModelDefaultVersionOutputReference",
+		"@cdktf/provider-google.mlEngineModel.MlEngineModelDefaultVersionOutputReference",
 		reflect.TypeOf((*MlEngineModelDefaultVersionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -125,11 +125,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.mlEngineModel.MlEngineModelTimeouts",
+		"@cdktf/provider-google.mlEngineModel.MlEngineModelTimeouts",
 		reflect.TypeOf((*MlEngineModelTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.mlEngineModel.MlEngineModelTimeoutsOutputReference",
+		"@cdktf/provider-google.mlEngineModel.MlEngineModelTimeoutsOutputReference",
 		reflect.TypeOf((*MlEngineModelTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -104,7 +104,7 @@ func NewDataOktaAuthServerScopesScopesList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataOktaAuthServerScopesScopesList{}
 
 	_jsii_.Create(
-		"okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopesList",
+		"@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataOktaAuthServerScopesScopesList_Override(d DataOktaAuthServerScopesSc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopesList",
+		"@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

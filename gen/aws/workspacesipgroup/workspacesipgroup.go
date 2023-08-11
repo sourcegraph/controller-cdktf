@@ -415,7 +415,7 @@ func NewWorkspacesIpGroup(scope constructs.Construct, id *string, config *Worksp
 	j := jsiiProxy_WorkspacesIpGroup{}
 
 	_jsii_.Create(
-		"aws.workspacesIpGroup.WorkspacesIpGroup",
+		"@cdktf/provider-aws.workspacesIpGroup.WorkspacesIpGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -428,7 +428,7 @@ func NewWorkspacesIpGroup_Override(w WorkspacesIpGroup, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.workspacesIpGroup.WorkspacesIpGroup",
+		"@cdktf/provider-aws.workspacesIpGroup.WorkspacesIpGroup",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -583,7 +583,7 @@ func WorkspacesIpGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.workspacesIpGroup.WorkspacesIpGroup",
+		"@cdktf/provider-aws.workspacesIpGroup.WorkspacesIpGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -602,7 +602,7 @@ func WorkspacesIpGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.workspacesIpGroup.WorkspacesIpGroup",
+		"@cdktf/provider-aws.workspacesIpGroup.WorkspacesIpGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func WorkspacesIpGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.workspacesIpGroup.WorkspacesIpGroup",
+		"@cdktf/provider-aws.workspacesIpGroup.WorkspacesIpGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func WorkspacesIpGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.workspacesIpGroup.WorkspacesIpGroup",
+		"@cdktf/provider-aws.workspacesIpGroup.WorkspacesIpGroup",
 		"tfResourceType",
 		&returns,
 	)

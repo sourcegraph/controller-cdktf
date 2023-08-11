@@ -202,7 +202,7 @@ func NewBudgetsBudgetActionActionThresholdOutputReference(terraformResource cdkt
 	j := jsiiProxy_BudgetsBudgetActionActionThresholdOutputReference{}
 
 	_jsii_.Create(
-		"aws.budgetsBudgetAction.BudgetsBudgetActionActionThresholdOutputReference",
+		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionActionThresholdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewBudgetsBudgetActionActionThresholdOutputReference_Override(b BudgetsBudg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.budgetsBudgetAction.BudgetsBudgetActionActionThresholdOutputReference",
+		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionActionThresholdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

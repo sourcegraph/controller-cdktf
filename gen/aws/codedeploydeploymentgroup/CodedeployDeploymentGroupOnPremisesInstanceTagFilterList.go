@@ -116,7 +116,7 @@ func NewCodedeployDeploymentGroupOnPremisesInstanceTagFilterList(terraformResour
 	j := jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterList{}
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupOnPremisesInstanceTagFilterList",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupOnPremisesInstanceTagFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCodedeployDeploymentGroupOnPremisesInstanceTagFilterList_Override(c Code
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupOnPremisesInstanceTagFilterList",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupOnPremisesInstanceTagFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

@@ -226,7 +226,7 @@ func NewGoogleComputeDiskIamMemberConditionOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleComputeDiskIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeDiskIamMember.GoogleComputeDiskIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeDiskIamMember.GoogleComputeDiskIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleComputeDiskIamMemberConditionOutputReference_Override(g GoogleComp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeDiskIamMember.GoogleComputeDiskIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeDiskIamMember.GoogleComputeDiskIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

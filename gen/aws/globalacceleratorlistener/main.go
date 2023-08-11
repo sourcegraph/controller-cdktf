@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.globalacceleratorListener.GlobalacceleratorListener",
+		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListener",
 		reflect.TypeOf((*GlobalacceleratorListener)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorArn", GoGetter: "AcceleratorArn"},
@@ -69,15 +69,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.globalacceleratorListener.GlobalacceleratorListenerConfig",
+		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListenerConfig",
 		reflect.TypeOf((*GlobalacceleratorListenerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.globalacceleratorListener.GlobalacceleratorListenerPortRange",
+		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListenerPortRange",
 		reflect.TypeOf((*GlobalacceleratorListenerPortRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.globalacceleratorListener.GlobalacceleratorListenerPortRangeList",
+		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListenerPortRangeList",
 		reflect.TypeOf((*GlobalacceleratorListenerPortRangeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -98,7 +98,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.globalacceleratorListener.GlobalacceleratorListenerPortRangeOutputReference",
+		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListenerPortRangeOutputReference",
 		reflect.TypeOf((*GlobalacceleratorListenerPortRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -136,11 +136,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.globalacceleratorListener.GlobalacceleratorListenerTimeouts",
+		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListenerTimeouts",
 		reflect.TypeOf((*GlobalacceleratorListenerTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.globalacceleratorListener.GlobalacceleratorListenerTimeoutsOutputReference",
+		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListenerTimeoutsOutputReference",
 		reflect.TypeOf((*GlobalacceleratorListenerTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

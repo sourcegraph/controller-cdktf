@@ -179,7 +179,7 @@ func NewGoogleContainerClusterAuthenticatorGroupsConfigOutputReference(terraform
 	j := jsiiProxy_GoogleContainerClusterAuthenticatorGroupsConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterAuthenticatorGroupsConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAuthenticatorGroupsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleContainerClusterAuthenticatorGroupsConfigOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterAuthenticatorGroupsConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAuthenticatorGroupsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

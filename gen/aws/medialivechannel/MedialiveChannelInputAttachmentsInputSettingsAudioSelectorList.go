@@ -116,7 +116,7 @@ func NewMedialiveChannelInputAttachmentsInputSettingsAudioSelectorList(terraform
 	j := jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsAudioSelectorList{}
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMedialiveChannelInputAttachmentsInputSettingsAudioSelectorList_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

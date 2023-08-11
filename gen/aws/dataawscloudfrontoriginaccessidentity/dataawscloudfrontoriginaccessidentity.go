@@ -333,7 +333,7 @@ func NewDataAwsCloudfrontOriginAccessIdentity(scope constructs.Construct, id *st
 	j := jsiiProxy_DataAwsCloudfrontOriginAccessIdentity{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontOriginAccessIdentity.DataAwsCloudfrontOriginAccessIdentity",
+		"@cdktf/provider-aws.dataAwsCloudfrontOriginAccessIdentity.DataAwsCloudfrontOriginAccessIdentity",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -346,7 +346,7 @@ func NewDataAwsCloudfrontOriginAccessIdentity_Override(d DataAwsCloudfrontOrigin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontOriginAccessIdentity.DataAwsCloudfrontOriginAccessIdentity",
+		"@cdktf/provider-aws.dataAwsCloudfrontOriginAccessIdentity.DataAwsCloudfrontOriginAccessIdentity",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -435,7 +435,7 @@ func DataAwsCloudfrontOriginAccessIdentity_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudfrontOriginAccessIdentity.DataAwsCloudfrontOriginAccessIdentity",
+		"@cdktf/provider-aws.dataAwsCloudfrontOriginAccessIdentity.DataAwsCloudfrontOriginAccessIdentity",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -454,7 +454,7 @@ func DataAwsCloudfrontOriginAccessIdentity_IsTerraformDataSource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudfrontOriginAccessIdentity.DataAwsCloudfrontOriginAccessIdentity",
+		"@cdktf/provider-aws.dataAwsCloudfrontOriginAccessIdentity.DataAwsCloudfrontOriginAccessIdentity",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -473,7 +473,7 @@ func DataAwsCloudfrontOriginAccessIdentity_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudfrontOriginAccessIdentity.DataAwsCloudfrontOriginAccessIdentity",
+		"@cdktf/provider-aws.dataAwsCloudfrontOriginAccessIdentity.DataAwsCloudfrontOriginAccessIdentity",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -486,7 +486,7 @@ func DataAwsCloudfrontOriginAccessIdentity_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsCloudfrontOriginAccessIdentity.DataAwsCloudfrontOriginAccessIdentity",
+		"@cdktf/provider-aws.dataAwsCloudfrontOriginAccessIdentity.DataAwsCloudfrontOriginAccessIdentity",
 		"tfResourceType",
 		&returns,
 	)

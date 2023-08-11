@@ -104,7 +104,7 @@ func NewDataKubernetesPodSpecVolumeProjectedSourcesServiceAccountTokenList(terra
 	j := jsiiProxy_DataKubernetesPodSpecVolumeProjectedSourcesServiceAccountTokenList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeProjectedSourcesServiceAccountTokenList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeProjectedSourcesServiceAccountTokenList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodSpecVolumeProjectedSourcesServiceAccountTokenList_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeProjectedSourcesServiceAccountTokenList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeProjectedSourcesServiceAccountTokenList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

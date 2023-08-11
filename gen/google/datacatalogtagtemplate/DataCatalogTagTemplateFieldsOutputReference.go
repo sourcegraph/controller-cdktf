@@ -309,7 +309,7 @@ func NewDataCatalogTagTemplateFieldsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DataCatalogTagTemplateFieldsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsOutputReference",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -321,7 +321,7 @@ func NewDataCatalogTagTemplateFieldsOutputReference_Override(d DataCatalogTagTem
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsOutputReference",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

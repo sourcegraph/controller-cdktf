@@ -104,7 +104,7 @@ func NewDataplexAssetSecurityStatusList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_DataplexAssetSecurityStatusList{}
 
 	_jsii_.Create(
-		"google.dataplexAsset.DataplexAssetSecurityStatusList",
+		"@cdktf/provider-google.dataplexAsset.DataplexAssetSecurityStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataplexAssetSecurityStatusList_Override(d DataplexAssetSecurityStatusLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexAsset.DataplexAssetSecurityStatusList",
+		"@cdktf/provider-google.dataplexAsset.DataplexAssetSecurityStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

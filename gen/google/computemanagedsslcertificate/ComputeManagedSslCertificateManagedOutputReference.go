@@ -179,7 +179,7 @@ func NewComputeManagedSslCertificateManagedOutputReference(terraformResource cdk
 	j := jsiiProxy_ComputeManagedSslCertificateManagedOutputReference{}
 
 	_jsii_.Create(
-		"google.computeManagedSslCertificate.ComputeManagedSslCertificateManagedOutputReference",
+		"@cdktf/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateManagedOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewComputeManagedSslCertificateManagedOutputReference_Override(c ComputeMan
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeManagedSslCertificate.ComputeManagedSslCertificateManagedOutputReference",
+		"@cdktf/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateManagedOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

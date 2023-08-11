@@ -189,7 +189,7 @@ func NewDataAwsEksNodeGroupScalingConfigOutputReference(terraformResource cdktf.
 	j := jsiiProxy_DataAwsEksNodeGroupScalingConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupScalingConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupScalingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsEksNodeGroupScalingConfigOutputReference_Override(d DataAwsEksNod
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupScalingConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupScalingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

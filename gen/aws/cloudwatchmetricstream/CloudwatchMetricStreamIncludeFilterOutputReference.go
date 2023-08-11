@@ -179,7 +179,7 @@ func NewCloudwatchMetricStreamIncludeFilterOutputReference(terraformResource cdk
 	j := jsiiProxy_CloudwatchMetricStreamIncludeFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamIncludeFilterOutputReference",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamIncludeFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewCloudwatchMetricStreamIncludeFilterOutputReference_Override(c Cloudwatch
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamIncludeFilterOutputReference",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamIncludeFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

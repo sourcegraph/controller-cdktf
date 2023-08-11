@@ -228,7 +228,7 @@ func NewCloudtrailEventDataStoreTimeoutsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_CloudtrailEventDataStoreTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudtrailEventDataStore.CloudtrailEventDataStoreTimeoutsOutputReference",
+		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCloudtrailEventDataStoreTimeoutsOutputReference_Override(c CloudtrailEve
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudtrailEventDataStore.CloudtrailEventDataStoreTimeoutsOutputReference",
+		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

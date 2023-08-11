@@ -309,7 +309,7 @@ func NewEndpointsMetadataOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_EndpointsMetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.endpoints.EndpointsMetadataOutputReference",
+		"@cdktf/provider-kubernetes.endpoints.EndpointsMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -321,7 +321,7 @@ func NewEndpointsMetadataOutputReference_Override(e EndpointsMetadataOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.endpoints.EndpointsMetadataOutputReference",
+		"@cdktf/provider-kubernetes.endpoints.EndpointsMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

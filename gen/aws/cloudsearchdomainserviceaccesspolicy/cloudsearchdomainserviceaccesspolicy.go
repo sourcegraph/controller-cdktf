@@ -366,7 +366,7 @@ func NewCloudsearchDomainServiceAccessPolicy(scope constructs.Construct, id *str
 	j := jsiiProxy_CloudsearchDomainServiceAccessPolicy{}
 
 	_jsii_.Create(
-		"aws.cloudsearchDomainServiceAccessPolicy.CloudsearchDomainServiceAccessPolicy",
+		"@cdktf/provider-aws.cloudsearchDomainServiceAccessPolicy.CloudsearchDomainServiceAccessPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewCloudsearchDomainServiceAccessPolicy_Override(c CloudsearchDomainService
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudsearchDomainServiceAccessPolicy.CloudsearchDomainServiceAccessPolicy",
+		"@cdktf/provider-aws.cloudsearchDomainServiceAccessPolicy.CloudsearchDomainServiceAccessPolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -512,7 +512,7 @@ func CloudsearchDomainServiceAccessPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudsearchDomainServiceAccessPolicy.CloudsearchDomainServiceAccessPolicy",
+		"@cdktf/provider-aws.cloudsearchDomainServiceAccessPolicy.CloudsearchDomainServiceAccessPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func CloudsearchDomainServiceAccessPolicy_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudsearchDomainServiceAccessPolicy.CloudsearchDomainServiceAccessPolicy",
+		"@cdktf/provider-aws.cloudsearchDomainServiceAccessPolicy.CloudsearchDomainServiceAccessPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func CloudsearchDomainServiceAccessPolicy_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudsearchDomainServiceAccessPolicy.CloudsearchDomainServiceAccessPolicy",
+		"@cdktf/provider-aws.cloudsearchDomainServiceAccessPolicy.CloudsearchDomainServiceAccessPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func CloudsearchDomainServiceAccessPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudsearchDomainServiceAccessPolicy.CloudsearchDomainServiceAccessPolicy",
+		"@cdktf/provider-aws.cloudsearchDomainServiceAccessPolicy.CloudsearchDomainServiceAccessPolicy",
 		"tfResourceType",
 		&returns,
 	)

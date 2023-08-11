@@ -542,7 +542,7 @@ func NewSagemakerFeatureGroup(scope constructs.Construct, id *string, config *Sa
 	j := jsiiProxy_SagemakerFeatureGroup{}
 
 	_jsii_.Create(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroup",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -555,7 +555,7 @@ func NewSagemakerFeatureGroup_Override(s SagemakerFeatureGroup, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroup",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroup",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -743,7 +743,7 @@ func SagemakerFeatureGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroup",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func SagemakerFeatureGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroup",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -781,7 +781,7 @@ func SagemakerFeatureGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroup",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -794,7 +794,7 @@ func SagemakerFeatureGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroup",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroup",
 		"tfResourceType",
 		&returns,
 	)

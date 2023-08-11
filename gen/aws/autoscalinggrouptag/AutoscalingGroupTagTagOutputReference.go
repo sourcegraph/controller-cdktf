@@ -225,7 +225,7 @@ func NewAutoscalingGroupTagTagOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_AutoscalingGroupTagTagOutputReference{}
 
 	_jsii_.Create(
-		"aws.autoscalingGroupTag.AutoscalingGroupTagTagOutputReference",
+		"@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagTagOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewAutoscalingGroupTagTagOutputReference_Override(a AutoscalingGroupTagTagO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingGroupTag.AutoscalingGroupTagTagOutputReference",
+		"@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagTagOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -226,7 +226,7 @@ func NewGoogleComputeInstanceIamBindingConditionOutputReference(terraformResourc
 	j := jsiiProxy_GoogleComputeInstanceIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceIamBinding.GoogleComputeInstanceIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstanceIamBinding.GoogleComputeInstanceIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleComputeInstanceIamBindingConditionOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceIamBinding.GoogleComputeInstanceIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstanceIamBinding.GoogleComputeInstanceIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

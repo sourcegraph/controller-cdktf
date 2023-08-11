@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
 		reflect.TypeOf((*GlobalacceleratorAccelerator)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,11 +83,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorAttributes",
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorAttributes",
 		reflect.TypeOf((*GlobalacceleratorAcceleratorAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorAttributesOutputReference",
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorAttributesOutputReference",
 		reflect.TypeOf((*GlobalacceleratorAcceleratorAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -128,15 +128,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorConfig",
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorConfig",
 		reflect.TypeOf((*GlobalacceleratorAcceleratorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorIpSets",
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorIpSets",
 		reflect.TypeOf((*GlobalacceleratorAcceleratorIpSets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorIpSetsList",
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorIpSetsList",
 		reflect.TypeOf((*GlobalacceleratorAcceleratorIpSetsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -156,7 +156,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorIpSetsOutputReference",
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorIpSetsOutputReference",
 		reflect.TypeOf((*GlobalacceleratorAcceleratorIpSetsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -190,11 +190,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorTimeouts",
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorTimeouts",
 		reflect.TypeOf((*GlobalacceleratorAcceleratorTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorTimeoutsOutputReference",
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorTimeoutsOutputReference",
 		reflect.TypeOf((*GlobalacceleratorAcceleratorTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

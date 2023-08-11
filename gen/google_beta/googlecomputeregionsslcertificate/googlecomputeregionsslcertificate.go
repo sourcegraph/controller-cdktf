@@ -530,7 +530,7 @@ func NewGoogleComputeRegionSslCertificate(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleComputeRegionSslCertificate{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionSslCertificate.GoogleComputeRegionSslCertificate",
+		"@cdktf/provider-google-beta.googleComputeRegionSslCertificate.GoogleComputeRegionSslCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -543,7 +543,7 @@ func NewGoogleComputeRegionSslCertificate_Override(g GoogleComputeRegionSslCerti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionSslCertificate.GoogleComputeRegionSslCertificate",
+		"@cdktf/provider-google-beta.googleComputeRegionSslCertificate.GoogleComputeRegionSslCertificate",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -731,7 +731,7 @@ func GoogleComputeRegionSslCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionSslCertificate.GoogleComputeRegionSslCertificate",
+		"@cdktf/provider-google-beta.googleComputeRegionSslCertificate.GoogleComputeRegionSslCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -750,7 +750,7 @@ func GoogleComputeRegionSslCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionSslCertificate.GoogleComputeRegionSslCertificate",
+		"@cdktf/provider-google-beta.googleComputeRegionSslCertificate.GoogleComputeRegionSslCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -769,7 +769,7 @@ func GoogleComputeRegionSslCertificate_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionSslCertificate.GoogleComputeRegionSslCertificate",
+		"@cdktf/provider-google-beta.googleComputeRegionSslCertificate.GoogleComputeRegionSslCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -782,7 +782,7 @@ func GoogleComputeRegionSslCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeRegionSslCertificate.GoogleComputeRegionSslCertificate",
+		"@cdktf/provider-google-beta.googleComputeRegionSslCertificate.GoogleComputeRegionSslCertificate",
 		"tfResourceType",
 		&returns,
 	)

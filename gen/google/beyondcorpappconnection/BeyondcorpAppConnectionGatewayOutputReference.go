@@ -225,7 +225,7 @@ func NewBeyondcorpAppConnectionGatewayOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_BeyondcorpAppConnectionGatewayOutputReference{}
 
 	_jsii_.Create(
-		"google.beyondcorpAppConnection.BeyondcorpAppConnectionGatewayOutputReference",
+		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionGatewayOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewBeyondcorpAppConnectionGatewayOutputReference_Override(b BeyondcorpAppCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.beyondcorpAppConnection.BeyondcorpAppConnectionGatewayOutputReference",
+		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionGatewayOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

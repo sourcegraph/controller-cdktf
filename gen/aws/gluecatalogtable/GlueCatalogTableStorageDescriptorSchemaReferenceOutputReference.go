@@ -227,7 +227,7 @@ func NewGlueCatalogTableStorageDescriptorSchemaReferenceOutputReference(terrafor
 	j := jsiiProxy_GlueCatalogTableStorageDescriptorSchemaReferenceOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueCatalogTable.GlueCatalogTableStorageDescriptorSchemaReferenceOutputReference",
+		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorSchemaReferenceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewGlueCatalogTableStorageDescriptorSchemaReferenceOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueCatalogTable.GlueCatalogTableStorageDescriptorSchemaReferenceOutputReference",
+		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorSchemaReferenceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

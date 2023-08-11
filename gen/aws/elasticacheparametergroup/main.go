@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.elasticacheParameterGroup.ElasticacheParameterGroup",
+		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroup",
 		reflect.TypeOf((*ElasticacheParameterGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.elasticacheParameterGroup.ElasticacheParameterGroupConfig",
+		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupConfig",
 		reflect.TypeOf((*ElasticacheParameterGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.elasticacheParameterGroup.ElasticacheParameterGroupParameter",
+		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupParameter",
 		reflect.TypeOf((*ElasticacheParameterGroupParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.elasticacheParameterGroup.ElasticacheParameterGroupParameterList",
+		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupParameterList",
 		reflect.TypeOf((*ElasticacheParameterGroupParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -102,7 +102,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.elasticacheParameterGroup.ElasticacheParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupParameterOutputReference",
 		reflect.TypeOf((*ElasticacheParameterGroupParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersConfidenceList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_SecurityhubInsightFiltersConfidenceList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersConfidenceList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersConfidenceList_Override(s SecurityhubInsightFil
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersConfidenceList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

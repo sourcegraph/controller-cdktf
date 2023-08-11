@@ -116,7 +116,7 @@ func NewCognitoUserPoolAccountRecoverySettingRecoveryMechanismList(terraformReso
 	j := jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismList{}
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanismList",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanismList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCognitoUserPoolAccountRecoverySettingRecoveryMechanismList_Override(c Co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanismList",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanismList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

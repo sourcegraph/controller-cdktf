@@ -104,7 +104,7 @@ func NewDataAwsServicecatalogPortfolioConstraintsDetailsList(terraformResource c
 	j := jsiiProxy_DataAwsServicecatalogPortfolioConstraintsDetailsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsServicecatalogPortfolioConstraints.DataAwsServicecatalogPortfolioConstraintsDetailsList",
+		"@cdktf/provider-aws.dataAwsServicecatalogPortfolioConstraints.DataAwsServicecatalogPortfolioConstraintsDetailsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsServicecatalogPortfolioConstraintsDetailsList_Override(d DataAwsS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsServicecatalogPortfolioConstraints.DataAwsServicecatalogPortfolioConstraintsDetailsList",
+		"@cdktf/provider-aws.dataAwsServicecatalogPortfolioConstraints.DataAwsServicecatalogPortfolioConstraintsDetailsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

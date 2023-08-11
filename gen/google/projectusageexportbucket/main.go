@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.projectUsageExportBucket.ProjectUsageExportBucket",
+		"@cdktf/provider-google.projectUsageExportBucket.ProjectUsageExportBucket",
 		reflect.TypeOf((*ProjectUsageExportBucket)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.projectUsageExportBucket.ProjectUsageExportBucketConfig",
+		"@cdktf/provider-google.projectUsageExportBucket.ProjectUsageExportBucketConfig",
 		reflect.TypeOf((*ProjectUsageExportBucketConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.projectUsageExportBucket.ProjectUsageExportBucketTimeouts",
+		"@cdktf/provider-google.projectUsageExportBucket.ProjectUsageExportBucketTimeouts",
 		reflect.TypeOf((*ProjectUsageExportBucketTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.projectUsageExportBucket.ProjectUsageExportBucketTimeoutsOutputReference",
+		"@cdktf/provider-google.projectUsageExportBucket.ProjectUsageExportBucketTimeoutsOutputReference",
 		reflect.TypeOf((*ProjectUsageExportBucketTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

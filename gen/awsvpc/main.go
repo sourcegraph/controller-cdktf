@@ -1,4 +1,4 @@
-// awsvpc
+// @cdktf/provider-awsvpc
 package awsvpc
 
 import (
@@ -9,7 +9,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"awsvpc.Awsvpc",
+		"@cdktf/provider-awsvpc.Awsvpc",
 		reflect.TypeOf((*Awsvpc)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -336,7 +336,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"awsvpc.AwsvpcConfig",
+		"@cdktf/provider-awsvpc.AwsvpcConfig",
 		reflect.TypeOf((*AwsvpcConfig)(nil)).Elem(),
 	)
 }

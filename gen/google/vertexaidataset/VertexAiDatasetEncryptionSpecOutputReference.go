@@ -180,7 +180,7 @@ func NewVertexAiDatasetEncryptionSpecOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference{}
 
 	_jsii_.Create(
-		"google.vertexAiDataset.VertexAiDatasetEncryptionSpecOutputReference",
+		"@cdktf/provider-google.vertexAiDataset.VertexAiDatasetEncryptionSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewVertexAiDatasetEncryptionSpecOutputReference_Override(v VertexAiDatasetE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiDataset.VertexAiDatasetEncryptionSpecOutputReference",
+		"@cdktf/provider-google.vertexAiDataset.VertexAiDatasetEncryptionSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

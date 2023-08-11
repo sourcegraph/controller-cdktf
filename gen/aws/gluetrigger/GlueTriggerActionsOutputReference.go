@@ -300,7 +300,7 @@ func NewGlueTriggerActionsOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_GlueTriggerActionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueTrigger.GlueTriggerActionsOutputReference",
+		"@cdktf/provider-aws.glueTrigger.GlueTriggerActionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewGlueTriggerActionsOutputReference_Override(g GlueTriggerActionsOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueTrigger.GlueTriggerActionsOutputReference",
+		"@cdktf/provider-aws.glueTrigger.GlueTriggerActionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

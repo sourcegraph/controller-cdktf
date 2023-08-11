@@ -239,7 +239,7 @@ func NewAppSecurePasswordStoreUsersOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_AppSecurePasswordStoreUsersOutputReference{}
 
 	_jsii_.Create(
-		"okta.appSecurePasswordStore.AppSecurePasswordStoreUsersOutputReference",
+		"@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -251,7 +251,7 @@ func NewAppSecurePasswordStoreUsersOutputReference_Override(a AppSecurePasswordS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appSecurePasswordStore.AppSecurePasswordStoreUsersOutputReference",
+		"@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

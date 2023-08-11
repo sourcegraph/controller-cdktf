@@ -545,7 +545,7 @@ func NewDataAwsCognitoUserPoolClient(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataAwsCognitoUserPoolClient{}
 
 	_jsii_.Create(
-		"aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClient",
+		"@cdktf/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClient",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -558,7 +558,7 @@ func NewDataAwsCognitoUserPoolClient_Override(d DataAwsCognitoUserPoolClient, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClient",
+		"@cdktf/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClient",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -669,7 +669,7 @@ func DataAwsCognitoUserPoolClient_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClient",
+		"@cdktf/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClient",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func DataAwsCognitoUserPoolClient_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClient",
+		"@cdktf/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClient",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -707,7 +707,7 @@ func DataAwsCognitoUserPoolClient_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClient",
+		"@cdktf/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClient",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -720,7 +720,7 @@ func DataAwsCognitoUserPoolClient_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClient",
+		"@cdktf/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClient",
 		"tfResourceType",
 		&returns,
 	)

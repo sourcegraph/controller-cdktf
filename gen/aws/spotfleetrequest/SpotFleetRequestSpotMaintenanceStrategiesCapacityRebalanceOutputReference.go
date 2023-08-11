@@ -180,7 +180,7 @@ func NewSpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceOutputReferenc
 	j := jsiiProxy_SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceOutputReference",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewSpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceOutputReference",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

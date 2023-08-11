@@ -104,7 +104,7 @@ func NewMemorydbClusterClusterEndpointList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_MemorydbClusterClusterEndpointList{}
 
 	_jsii_.Create(
-		"aws.memorydbCluster.MemorydbClusterClusterEndpointList",
+		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpointList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewMemorydbClusterClusterEndpointList_Override(m MemorydbClusterClusterEndp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.memorydbCluster.MemorydbClusterClusterEndpointList",
+		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpointList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

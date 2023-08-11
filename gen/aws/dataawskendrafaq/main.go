@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsKendraFaq.DataAwsKendraFaq",
+		"@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq",
 		reflect.TypeOf((*DataAwsKendraFaq)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsKendraFaq.DataAwsKendraFaqConfig",
+		"@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig",
 		reflect.TypeOf((*DataAwsKendraFaqConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsKendraFaq.DataAwsKendraFaqS3Path",
+		"@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqS3Path",
 		reflect.TypeOf((*DataAwsKendraFaqS3Path)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsKendraFaq.DataAwsKendraFaqS3PathList",
+		"@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqS3PathList",
 		reflect.TypeOf((*DataAwsKendraFaqS3PathList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -99,7 +99,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsKendraFaq.DataAwsKendraFaqS3PathOutputReference",
+		"@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqS3PathOutputReference",
 		reflect.TypeOf((*DataAwsKendraFaqS3PathOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},

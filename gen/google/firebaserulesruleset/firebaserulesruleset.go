@@ -400,7 +400,7 @@ func NewFirebaserulesRuleset(scope constructs.Construct, id *string, config *Fir
 	j := jsiiProxy_FirebaserulesRuleset{}
 
 	_jsii_.Create(
-		"google.firebaserulesRuleset.FirebaserulesRuleset",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRuleset",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewFirebaserulesRuleset_Override(f FirebaserulesRuleset, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.firebaserulesRuleset.FirebaserulesRuleset",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRuleset",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -535,7 +535,7 @@ func FirebaserulesRuleset_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.firebaserulesRuleset.FirebaserulesRuleset",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRuleset",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -554,7 +554,7 @@ func FirebaserulesRuleset_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.firebaserulesRuleset.FirebaserulesRuleset",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRuleset",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func FirebaserulesRuleset_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.firebaserulesRuleset.FirebaserulesRuleset",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRuleset",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -586,7 +586,7 @@ func FirebaserulesRuleset_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.firebaserulesRuleset.FirebaserulesRuleset",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRuleset",
 		"tfResourceType",
 		&returns,
 	)

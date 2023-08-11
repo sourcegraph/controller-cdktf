@@ -116,7 +116,7 @@ func NewComputeRegionUrlMapPathMatcherList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_ComputeRegionUrlMapPathMatcherList{}
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeRegionUrlMapPathMatcherList_Override(c ComputeRegionUrlMapPathMat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

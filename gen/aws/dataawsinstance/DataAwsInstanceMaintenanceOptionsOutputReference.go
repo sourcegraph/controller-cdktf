@@ -167,7 +167,7 @@ func NewDataAwsInstanceMaintenanceOptionsOutputReference(terraformResource cdktf
 	j := jsiiProxy_DataAwsInstanceMaintenanceOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceMaintenanceOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceMaintenanceOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsInstanceMaintenanceOptionsOutputReference_Override(d DataAwsInsta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceMaintenanceOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceMaintenanceOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

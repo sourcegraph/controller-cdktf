@@ -116,7 +116,7 @@ func NewResourceQuotaV1SpecScopeSelectorMatchExpressionList(terraformResource cd
 	j := jsiiProxy_ResourceQuotaV1SpecScopeSelectorMatchExpressionList{}
 
 	_jsii_.Create(
-		"kubernetes.resourceQuotaV1.ResourceQuotaV1SpecScopeSelectorMatchExpressionList",
+		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1SpecScopeSelectorMatchExpressionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewResourceQuotaV1SpecScopeSelectorMatchExpressionList_Override(r ResourceQ
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.resourceQuotaV1.ResourceQuotaV1SpecScopeSelectorMatchExpressionList",
+		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1SpecScopeSelectorMatchExpressionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

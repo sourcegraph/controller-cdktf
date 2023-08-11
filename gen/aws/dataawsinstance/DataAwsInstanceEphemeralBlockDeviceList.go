@@ -104,7 +104,7 @@ func NewDataAwsInstanceEphemeralBlockDeviceList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataAwsInstanceEphemeralBlockDeviceList{}
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceEphemeralBlockDeviceList",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEphemeralBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsInstanceEphemeralBlockDeviceList_Override(d DataAwsInstanceEpheme
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceEphemeralBlockDeviceList",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEphemeralBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -251,7 +251,7 @@ func NewRdsClusterRestoreToPointInTimeOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference{}
 
 	_jsii_.Create(
-		"aws.rdsCluster.RdsClusterRestoreToPointInTimeOutputReference",
+		"@cdktf/provider-aws.rdsCluster.RdsClusterRestoreToPointInTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewRdsClusterRestoreToPointInTimeOutputReference_Override(r RdsClusterResto
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rdsCluster.RdsClusterRestoreToPointInTimeOutputReference",
+		"@cdktf/provider-aws.rdsCluster.RdsClusterRestoreToPointInTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

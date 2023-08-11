@@ -104,7 +104,7 @@ func NewDataGoogleSqlDatabaseInstancesInstancesList(terraformResource cdktf.IInt
 	j := jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesList",
+		"@cdktf/provider-google-beta.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleSqlDatabaseInstancesInstancesList_Override(d DataGoogleSqlData
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesList",
+		"@cdktf/provider-google-beta.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

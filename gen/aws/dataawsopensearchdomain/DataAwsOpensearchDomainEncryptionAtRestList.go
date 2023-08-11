@@ -104,7 +104,7 @@ func NewDataAwsOpensearchDomainEncryptionAtRestList(terraformResource cdktf.IInt
 	j := jsiiProxy_DataAwsOpensearchDomainEncryptionAtRestList{}
 
 	_jsii_.Create(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainEncryptionAtRestList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainEncryptionAtRestList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsOpensearchDomainEncryptionAtRestList_Override(d DataAwsOpensearch
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainEncryptionAtRestList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainEncryptionAtRestList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

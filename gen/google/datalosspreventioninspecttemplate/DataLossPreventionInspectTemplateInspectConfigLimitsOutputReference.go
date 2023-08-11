@@ -226,7 +226,7 @@ func NewDataLossPreventionInspectTemplateInspectConfigLimitsOutputReference(terr
 	j := jsiiProxy_DataLossPreventionInspectTemplateInspectConfigLimitsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplateInspectConfigLimitsOutputReference",
+		"@cdktf/provider-google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplateInspectConfigLimitsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDataLossPreventionInspectTemplateInspectConfigLimitsOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplateInspectConfigLimitsOutputReference",
+		"@cdktf/provider-google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplateInspectConfigLimitsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

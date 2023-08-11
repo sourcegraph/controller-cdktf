@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations",
+		"@cdktf/provider-google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations",
 		reflect.TypeOf((*DataGoogleAlloydbLocations)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,15 +57,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsConfig",
+		"@cdktf/provider-google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsConfig",
 		reflect.TypeOf((*DataGoogleAlloydbLocationsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocations",
+		"@cdktf/provider-google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocations",
 		reflect.TypeOf((*DataGoogleAlloydbLocationsLocations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsList",
+		"@cdktf/provider-google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsList",
 		reflect.TypeOf((*DataGoogleAlloydbLocationsLocationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -85,7 +85,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsOutputReference",
+		"@cdktf/provider-google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsOutputReference",
 		reflect.TypeOf((*DataGoogleAlloydbLocationsLocationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

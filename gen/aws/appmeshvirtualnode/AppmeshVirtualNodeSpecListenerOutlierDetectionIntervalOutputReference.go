@@ -202,7 +202,7 @@ func NewAppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference(te
 	j := jsiiProxy_AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewAppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

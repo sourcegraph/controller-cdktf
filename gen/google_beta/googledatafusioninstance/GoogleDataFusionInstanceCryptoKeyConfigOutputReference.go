@@ -179,7 +179,7 @@ func NewGoogleDataFusionInstanceCryptoKeyConfigOutputReference(terraformResource
 	j := jsiiProxy_GoogleDataFusionInstanceCryptoKeyConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstanceCryptoKeyConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstanceCryptoKeyConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleDataFusionInstanceCryptoKeyConfigOutputReference_Override(g Google
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstanceCryptoKeyConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstanceCryptoKeyConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

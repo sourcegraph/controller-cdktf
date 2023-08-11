@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iotThingType.IotThingType",
+		"@cdktf/provider-aws.iotThingType.IotThingType",
 		reflect.TypeOf((*IotThingType)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotThingType.IotThingTypeConfig",
+		"@cdktf/provider-aws.iotThingType.IotThingTypeConfig",
 		reflect.TypeOf((*IotThingTypeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotThingType.IotThingTypeProperties",
+		"@cdktf/provider-aws.iotThingType.IotThingTypeProperties",
 		reflect.TypeOf((*IotThingTypeProperties)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotThingType.IotThingTypePropertiesOutputReference",
+		"@cdktf/provider-aws.iotThingType.IotThingTypePropertiesOutputReference",
 		reflect.TypeOf((*IotThingTypePropertiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

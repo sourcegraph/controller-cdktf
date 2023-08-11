@@ -355,7 +355,7 @@ func NewDataGoogleLoggingSink(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataGoogleLoggingSink{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink",
+		"@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -368,7 +368,7 @@ func NewDataGoogleLoggingSink_Override(d DataGoogleLoggingSink, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink",
+		"@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -457,7 +457,7 @@ func DataGoogleLoggingSink_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink",
+		"@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -476,7 +476,7 @@ func DataGoogleLoggingSink_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink",
+		"@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -495,7 +495,7 @@ func DataGoogleLoggingSink_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink",
+		"@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func DataGoogleLoggingSink_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink",
+		"@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink",
 		"tfResourceType",
 		&returns,
 	)

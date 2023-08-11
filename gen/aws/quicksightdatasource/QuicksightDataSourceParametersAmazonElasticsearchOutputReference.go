@@ -179,7 +179,7 @@ func NewQuicksightDataSourceParametersAmazonElasticsearchOutputReference(terrafo
 	j := jsiiProxy_QuicksightDataSourceParametersAmazonElasticsearchOutputReference{}
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersAmazonElasticsearchOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAmazonElasticsearchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewQuicksightDataSourceParametersAmazonElasticsearchOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersAmazonElasticsearchOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAmazonElasticsearchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)

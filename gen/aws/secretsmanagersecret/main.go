@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.secretsmanagerSecret.SecretsmanagerSecret",
+		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecret",
 		reflect.TypeOf((*SecretsmanagerSecret)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -95,15 +95,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.secretsmanagerSecret.SecretsmanagerSecretConfig",
+		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecretConfig",
 		reflect.TypeOf((*SecretsmanagerSecretConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.secretsmanagerSecret.SecretsmanagerSecretReplica",
+		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecretReplica",
 		reflect.TypeOf((*SecretsmanagerSecretReplica)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.secretsmanagerSecret.SecretsmanagerSecretReplicaList",
+		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecretReplicaList",
 		reflect.TypeOf((*SecretsmanagerSecretReplicaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -124,7 +124,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.secretsmanagerSecret.SecretsmanagerSecretReplicaOutputReference",
+		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecretReplicaOutputReference",
 		reflect.TypeOf((*SecretsmanagerSecretReplicaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -164,11 +164,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.secretsmanagerSecret.SecretsmanagerSecretRotationRules",
+		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecretRotationRules",
 		reflect.TypeOf((*SecretsmanagerSecretRotationRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.secretsmanagerSecret.SecretsmanagerSecretRotationRulesOutputReference",
+		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecretRotationRulesOutputReference",
 		reflect.TypeOf((*SecretsmanagerSecretRotationRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "automaticallyAfterDays", GoGetter: "AutomaticallyAfterDays"},

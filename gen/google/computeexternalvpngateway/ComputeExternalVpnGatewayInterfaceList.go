@@ -116,7 +116,7 @@ func NewComputeExternalVpnGatewayInterfaceList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_ComputeExternalVpnGatewayInterfaceList{}
 
 	_jsii_.Create(
-		"google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterfaceList",
+		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterfaceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeExternalVpnGatewayInterfaceList_Override(c ComputeExternalVpnGate
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterfaceList",
+		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterfaceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

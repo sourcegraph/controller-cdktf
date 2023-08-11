@@ -178,7 +178,7 @@ func NewBeyondcorpAppGatewayAllocatedConnectionsOutputReference(terraformResourc
 	j := jsiiProxy_BeyondcorpAppGatewayAllocatedConnectionsOutputReference{}
 
 	_jsii_.Create(
-		"google.beyondcorpAppGateway.BeyondcorpAppGatewayAllocatedConnectionsOutputReference",
+		"@cdktf/provider-google.beyondcorpAppGateway.BeyondcorpAppGatewayAllocatedConnectionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewBeyondcorpAppGatewayAllocatedConnectionsOutputReference_Override(b Beyon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.beyondcorpAppGateway.BeyondcorpAppGatewayAllocatedConnectionsOutputReference",
+		"@cdktf/provider-google.beyondcorpAppGateway.BeyondcorpAppGatewayAllocatedConnectionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)

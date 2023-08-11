@@ -400,7 +400,7 @@ func NewGoogleKmsKeyRingIamBinding(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleKmsKeyRingIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding",
+		"@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleKmsKeyRingIamBinding_Override(g GoogleKmsKeyRingIamBinding, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding",
+		"@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleKmsKeyRingIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding",
+		"@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleKmsKeyRingIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding",
+		"@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleKmsKeyRingIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding",
+		"@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleKmsKeyRingIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding",
+		"@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewIotTopicRuleCloudwatchMetricList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_IotTopicRuleCloudwatchMetricList{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleCloudwatchMetricList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewIotTopicRuleCloudwatchMetricList_Override(i IotTopicRuleCloudwatchMetric
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleCloudwatchMetricList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

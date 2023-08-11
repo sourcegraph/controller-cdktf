@@ -343,7 +343,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	j := jsiiProxy_Project{}
 
 	_jsii_.Create(
-		"tfe.project.Project",
+		"@cdktf/provider-tfe.project.Project",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewProject_Override(p Project, scope constructs.Construct, id *string, conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.project.Project",
+		"@cdktf/provider-tfe.project.Project",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -489,7 +489,7 @@ func Project_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.project.Project",
+		"@cdktf/provider-tfe.project.Project",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func Project_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.project.Project",
+		"@cdktf/provider-tfe.project.Project",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func Project_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.project.Project",
+		"@cdktf/provider-tfe.project.Project",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func Project_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.project.Project",
+		"@cdktf/provider-tfe.project.Project",
 		"tfResourceType",
 		&returns,
 	)

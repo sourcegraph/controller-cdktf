@@ -179,7 +179,7 @@ func NewCloudIdentityGroupMembershipRolesOutputReference(terraformResource cdktf
 	j := jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesOutputReference",
+		"@cdktf/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewCloudIdentityGroupMembershipRolesOutputReference_Override(c CloudIdentit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesOutputReference",
+		"@cdktf/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

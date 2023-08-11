@@ -228,7 +228,7 @@ func NewDataplexDatascanTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataplexDatascanTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanTimeoutsOutputReference",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDataplexDatascanTimeoutsOutputReference_Override(d DataplexDatascanTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanTimeoutsOutputReference",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

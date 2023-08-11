@@ -179,7 +179,7 @@ func NewNetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputRe
 	j := jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference",
+		"@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewNetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference",
+		"@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

@@ -399,7 +399,7 @@ func NewBillingSubaccount(scope constructs.Construct, id *string, config *Billin
 	j := jsiiProxy_BillingSubaccount{}
 
 	_jsii_.Create(
-		"google.billingSubaccount.BillingSubaccount",
+		"@cdktf/provider-google.billingSubaccount.BillingSubaccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -412,7 +412,7 @@ func NewBillingSubaccount_Override(b BillingSubaccount, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.billingSubaccount.BillingSubaccount",
+		"@cdktf/provider-google.billingSubaccount.BillingSubaccount",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -556,7 +556,7 @@ func BillingSubaccount_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.billingSubaccount.BillingSubaccount",
+		"@cdktf/provider-google.billingSubaccount.BillingSubaccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func BillingSubaccount_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.billingSubaccount.BillingSubaccount",
+		"@cdktf/provider-google.billingSubaccount.BillingSubaccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -594,7 +594,7 @@ func BillingSubaccount_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.billingSubaccount.BillingSubaccount",
+		"@cdktf/provider-google.billingSubaccount.BillingSubaccount",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func BillingSubaccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.billingSubaccount.BillingSubaccount",
+		"@cdktf/provider-google.billingSubaccount.BillingSubaccount",
 		"tfResourceType",
 		&returns,
 	)

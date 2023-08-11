@@ -116,7 +116,7 @@ func NewBudgetsBudgetActionSubscriberList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_BudgetsBudgetActionSubscriberList{}
 
 	_jsii_.Create(
-		"aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberList",
+		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewBudgetsBudgetActionSubscriberList_Override(b BudgetsBudgetActionSubscrib
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberList",
+		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)

@@ -448,7 +448,7 @@ func NewGooglePrivatecaCaPoolIamMember(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GooglePrivatecaCaPoolIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCaPoolIamMember.GooglePrivatecaCaPoolIamMember",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPoolIamMember.GooglePrivatecaCaPoolIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGooglePrivatecaCaPoolIamMember_Override(g GooglePrivatecaCaPoolIamMember
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCaPoolIamMember.GooglePrivatecaCaPoolIamMember",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPoolIamMember.GooglePrivatecaCaPoolIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GooglePrivatecaCaPoolIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePrivatecaCaPoolIamMember.GooglePrivatecaCaPoolIamMember",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPoolIamMember.GooglePrivatecaCaPoolIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GooglePrivatecaCaPoolIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePrivatecaCaPoolIamMember.GooglePrivatecaCaPoolIamMember",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPoolIamMember.GooglePrivatecaCaPoolIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GooglePrivatecaCaPoolIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePrivatecaCaPoolIamMember.GooglePrivatecaCaPoolIamMember",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPoolIamMember.GooglePrivatecaCaPoolIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GooglePrivatecaCaPoolIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googlePrivatecaCaPoolIamMember.GooglePrivatecaCaPoolIamMember",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPoolIamMember.GooglePrivatecaCaPoolIamMember",
 		"tfResourceType",
 		&returns,
 	)

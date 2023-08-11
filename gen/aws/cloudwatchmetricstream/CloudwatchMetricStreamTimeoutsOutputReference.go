@@ -228,7 +228,7 @@ func NewCloudwatchMetricStreamTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_CloudwatchMetricStreamTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamTimeoutsOutputReference",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCloudwatchMetricStreamTimeoutsOutputReference_Override(c CloudwatchMetri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamTimeoutsOutputReference",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

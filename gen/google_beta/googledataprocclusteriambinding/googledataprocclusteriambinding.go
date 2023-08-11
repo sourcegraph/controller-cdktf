@@ -448,7 +448,7 @@ func NewGoogleDataprocClusterIamBinding(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleDataprocClusterIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleDataprocClusterIamBinding_Override(g GoogleDataprocClusterIamBindi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleDataprocClusterIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleDataprocClusterIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleDataprocClusterIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleDataprocClusterIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBinding",
 		"tfResourceType",
 		&returns,
 	)

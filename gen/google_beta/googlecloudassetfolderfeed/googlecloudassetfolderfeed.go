@@ -530,7 +530,7 @@ func NewGoogleCloudAssetFolderFeed(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleCloudAssetFolderFeed{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeed",
+		"@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeed",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -543,7 +543,7 @@ func NewGoogleCloudAssetFolderFeed_Override(g GoogleCloudAssetFolderFeed, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeed",
+		"@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeed",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -720,7 +720,7 @@ func GoogleCloudAssetFolderFeed_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeed",
+		"@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeed",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -739,7 +739,7 @@ func GoogleCloudAssetFolderFeed_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeed",
+		"@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeed",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -758,7 +758,7 @@ func GoogleCloudAssetFolderFeed_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeed",
+		"@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeed",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -771,7 +771,7 @@ func GoogleCloudAssetFolderFeed_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeed",
+		"@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeed",
 		"tfResourceType",
 		&returns,
 	)

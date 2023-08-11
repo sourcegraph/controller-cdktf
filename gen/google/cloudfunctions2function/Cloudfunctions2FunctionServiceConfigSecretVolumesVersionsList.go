@@ -116,7 +116,7 @@ func NewCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList(terraformR
 	j := jsiiProxy_Cloudfunctions2FunctionServiceConfigSecretVolumesVersionsList{}
 
 	_jsii_.Create(
-		"google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigSecretVolumesVersionsList",
+		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigSecretVolumesVersionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList_Override(c
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigSecretVolumesVersionsList",
+		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigSecretVolumesVersionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

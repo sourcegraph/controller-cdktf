@@ -414,7 +414,7 @@ func NewGroupRole(scope constructs.Construct, id *string, config *GroupRoleConfi
 	j := jsiiProxy_GroupRole{}
 
 	_jsii_.Create(
-		"okta.groupRole.GroupRole",
+		"@cdktf/provider-okta.groupRole.GroupRole",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewGroupRole_Override(g GroupRole, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.groupRole.GroupRole",
+		"@cdktf/provider-okta.groupRole.GroupRole",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -593,7 +593,7 @@ func GroupRole_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.groupRole.GroupRole",
+		"@cdktf/provider-okta.groupRole.GroupRole",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func GroupRole_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.groupRole.GroupRole",
+		"@cdktf/provider-okta.groupRole.GroupRole",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func GroupRole_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.groupRole.GroupRole",
+		"@cdktf/provider-okta.groupRole.GroupRole",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func GroupRole_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.groupRole.GroupRole",
+		"@cdktf/provider-okta.groupRole.GroupRole",
 		"tfResourceType",
 		&returns,
 	)

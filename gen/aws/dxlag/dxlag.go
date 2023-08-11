@@ -529,7 +529,7 @@ func NewDxLag(scope constructs.Construct, id *string, config *DxLagConfig) DxLag
 	j := jsiiProxy_DxLag{}
 
 	_jsii_.Create(
-		"aws.dxLag.DxLag",
+		"@cdktf/provider-aws.dxLag.DxLag",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -542,7 +542,7 @@ func NewDxLag_Override(d DxLag, scope constructs.Construct, id *string, config *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dxLag.DxLag",
+		"@cdktf/provider-aws.dxLag.DxLag",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -741,7 +741,7 @@ func DxLag_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxLag.DxLag",
+		"@cdktf/provider-aws.dxLag.DxLag",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -760,7 +760,7 @@ func DxLag_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxLag.DxLag",
+		"@cdktf/provider-aws.dxLag.DxLag",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -779,7 +779,7 @@ func DxLag_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxLag.DxLag",
+		"@cdktf/provider-aws.dxLag.DxLag",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -792,7 +792,7 @@ func DxLag_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dxLag.DxLag",
+		"@cdktf/provider-aws.dxLag.DxLag",
 		"tfResourceType",
 		&returns,
 	)

@@ -239,7 +239,7 @@ func NewComputeSnapshotSnapshotEncryptionKeyOutputReference(terraformResource cd
 	j := jsiiProxy_ComputeSnapshotSnapshotEncryptionKeyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeSnapshot.ComputeSnapshotSnapshotEncryptionKeyOutputReference",
+		"@cdktf/provider-google.computeSnapshot.ComputeSnapshotSnapshotEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -251,7 +251,7 @@ func NewComputeSnapshotSnapshotEncryptionKeyOutputReference_Override(c ComputeSn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSnapshot.ComputeSnapshotSnapshotEncryptionKeyOutputReference",
+		"@cdktf/provider-google.computeSnapshot.ComputeSnapshotSnapshotEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

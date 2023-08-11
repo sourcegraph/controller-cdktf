@@ -320,7 +320,7 @@ func NewMacie2ClassificationExportConfiguration(scope constructs.Construct, id *
 	j := jsiiProxy_Macie2ClassificationExportConfiguration{}
 
 	_jsii_.Create(
-		"aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfiguration",
+		"@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -333,7 +333,7 @@ func NewMacie2ClassificationExportConfiguration_Override(m Macie2ClassificationE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfiguration",
+		"@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfiguration",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -444,7 +444,7 @@ func Macie2ClassificationExportConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfiguration",
+		"@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -463,7 +463,7 @@ func Macie2ClassificationExportConfiguration_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfiguration",
+		"@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -482,7 +482,7 @@ func Macie2ClassificationExportConfiguration_IsTerraformResource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfiguration",
+		"@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -495,7 +495,7 @@ func Macie2ClassificationExportConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfiguration",
+		"@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfiguration",
 		"tfResourceType",
 		&returns,
 	)

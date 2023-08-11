@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"postgresql.role.Role",
+		"@cdktf/provider-postgresql.role.Role",
 		reflect.TypeOf((*Role)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -114,7 +114,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"postgresql.role.RoleConfig",
+		"@cdktf/provider-postgresql.role.RoleConfig",
 		reflect.TypeOf((*RoleConfig)(nil)).Elem(),
 	)
 }

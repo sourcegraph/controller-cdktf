@@ -190,7 +190,7 @@ func NewGoogleBigqueryConnectionAwsAccessRoleOutputReference(terraformResource c
 	j := jsiiProxy_GoogleBigqueryConnectionAwsAccessRoleOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionAwsAccessRoleOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionAwsAccessRoleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -202,7 +202,7 @@ func NewGoogleBigqueryConnectionAwsAccessRoleOutputReference_Override(g GoogleBi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionAwsAccessRoleOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionAwsAccessRoleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

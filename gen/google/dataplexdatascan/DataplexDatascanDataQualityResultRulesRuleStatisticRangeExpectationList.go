@@ -104,7 +104,7 @@ func NewDataplexDatascanDataQualityResultRulesRuleStatisticRangeExpectationList(
 	j := jsiiProxy_DataplexDatascanDataQualityResultRulesRuleStatisticRangeExpectationList{}
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataQualityResultRulesRuleStatisticRangeExpectationList",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualityResultRulesRuleStatisticRangeExpectationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataplexDatascanDataQualityResultRulesRuleStatisticRangeExpectationList_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataQualityResultRulesRuleStatisticRangeExpectationList",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualityResultRulesRuleStatisticRangeExpectationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

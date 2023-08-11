@@ -116,7 +116,7 @@ func NewChimeVoiceConnectorGroupConnectorList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_ChimeVoiceConnectorGroupConnectorList{}
 
 	_jsii_.Create(
-		"aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroupConnectorList",
+		"@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroupConnectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewChimeVoiceConnectorGroupConnectorList_Override(c ChimeVoiceConnectorGrou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroupConnectorList",
+		"@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroupConnectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

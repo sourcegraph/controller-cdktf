@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryReservation.GoogleBigqueryReservation",
+		"@cdktf/provider-google-beta.googleBigqueryReservation.GoogleBigqueryReservation",
 		reflect.TypeOf((*GoogleBigqueryReservation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,11 +85,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryReservation.GoogleBigqueryReservationAutoscale",
+		"@cdktf/provider-google-beta.googleBigqueryReservation.GoogleBigqueryReservationAutoscale",
 		reflect.TypeOf((*GoogleBigqueryReservationAutoscale)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryReservation.GoogleBigqueryReservationAutoscaleOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryReservation.GoogleBigqueryReservationAutoscaleOutputReference",
 		reflect.TypeOf((*GoogleBigqueryReservationAutoscaleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -125,15 +125,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryReservation.GoogleBigqueryReservationConfig",
+		"@cdktf/provider-google-beta.googleBigqueryReservation.GoogleBigqueryReservationConfig",
 		reflect.TypeOf((*GoogleBigqueryReservationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryReservation.GoogleBigqueryReservationTimeouts",
+		"@cdktf/provider-google-beta.googleBigqueryReservation.GoogleBigqueryReservationTimeouts",
 		reflect.TypeOf((*GoogleBigqueryReservationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryReservation.GoogleBigqueryReservationTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryReservation.GoogleBigqueryReservationTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleBigqueryReservationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

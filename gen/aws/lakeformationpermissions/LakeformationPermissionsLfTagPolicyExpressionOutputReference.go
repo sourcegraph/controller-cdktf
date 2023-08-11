@@ -202,7 +202,7 @@ func NewLakeformationPermissionsLfTagPolicyExpressionOutputReference(terraformRe
 	j := jsiiProxy_LakeformationPermissionsLfTagPolicyExpressionOutputReference{}
 
 	_jsii_.Create(
-		"aws.lakeformationPermissions.LakeformationPermissionsLfTagPolicyExpressionOutputReference",
+		"@cdktf/provider-aws.lakeformationPermissions.LakeformationPermissionsLfTagPolicyExpressionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewLakeformationPermissionsLfTagPolicyExpressionOutputReference_Override(l 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lakeformationPermissions.LakeformationPermissionsLfTagPolicyExpressionOutputReference",
+		"@cdktf/provider-aws.lakeformationPermissions.LakeformationPermissionsLfTagPolicyExpressionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

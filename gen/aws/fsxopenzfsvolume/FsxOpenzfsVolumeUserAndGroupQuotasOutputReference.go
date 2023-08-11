@@ -225,7 +225,7 @@ func NewFsxOpenzfsVolumeUserAndGroupQuotasOutputReference(terraformResource cdkt
 	j := jsiiProxy_FsxOpenzfsVolumeUserAndGroupQuotasOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsVolume.FsxOpenzfsVolumeUserAndGroupQuotasOutputReference",
+		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeUserAndGroupQuotasOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewFsxOpenzfsVolumeUserAndGroupQuotasOutputReference_Override(f FsxOpenzfsV
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsVolume.FsxOpenzfsVolumeUserAndGroupQuotasOutputReference",
+		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeUserAndGroupQuotasOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)

@@ -202,7 +202,7 @@ func NewGroupSchemaPropertyArrayOneOfOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_GroupSchemaPropertyArrayOneOfOutputReference{}
 
 	_jsii_.Create(
-		"okta.groupSchemaProperty.GroupSchemaPropertyArrayOneOfOutputReference",
+		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyArrayOneOfOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGroupSchemaPropertyArrayOneOfOutputReference_Override(g GroupSchemaPrope
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.groupSchemaProperty.GroupSchemaPropertyArrayOneOfOutputReference",
+		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyArrayOneOfOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

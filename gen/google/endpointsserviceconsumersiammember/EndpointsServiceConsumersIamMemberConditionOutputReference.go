@@ -226,7 +226,7 @@ func NewEndpointsServiceConsumersIamMemberConditionOutputReference(terraformReso
 	j := jsiiProxy_EndpointsServiceConsumersIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMemberConditionOutputReference",
+		"@cdktf/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewEndpointsServiceConsumersIamMemberConditionOutputReference_Override(e En
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMemberConditionOutputReference",
+		"@cdktf/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

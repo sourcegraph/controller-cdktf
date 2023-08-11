@@ -104,7 +104,7 @@ func NewDataOktaGroupsGroupsList(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_DataOktaGroupsGroupsList{}
 
 	_jsii_.Create(
-		"okta.dataOktaGroups.DataOktaGroupsGroupsList",
+		"@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsGroupsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataOktaGroupsGroupsList_Override(d DataOktaGroupsGroupsList, terraformR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaGroups.DataOktaGroupsGroupsList",
+		"@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsGroupsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

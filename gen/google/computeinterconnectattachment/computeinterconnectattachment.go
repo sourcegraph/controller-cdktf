@@ -777,7 +777,7 @@ func NewComputeInterconnectAttachment(scope constructs.Construct, id *string, co
 	j := jsiiProxy_ComputeInterconnectAttachment{}
 
 	_jsii_.Create(
-		"google.computeInterconnectAttachment.ComputeInterconnectAttachment",
+		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -790,7 +790,7 @@ func NewComputeInterconnectAttachment_Override(c ComputeInterconnectAttachment, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInterconnectAttachment.ComputeInterconnectAttachment",
+		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachment",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -1066,7 +1066,7 @@ func ComputeInterconnectAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeInterconnectAttachment.ComputeInterconnectAttachment",
+		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1085,7 +1085,7 @@ func ComputeInterconnectAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeInterconnectAttachment.ComputeInterconnectAttachment",
+		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1104,7 +1104,7 @@ func ComputeInterconnectAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeInterconnectAttachment.ComputeInterconnectAttachment",
+		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1117,7 +1117,7 @@ func ComputeInterconnectAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeInterconnectAttachment.ComputeInterconnectAttachment",
+		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachment",
 		"tfResourceType",
 		&returns,
 	)

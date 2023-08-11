@@ -228,7 +228,7 @@ func NewCognitoIdentityPoolCognitoIdentityProvidersOutputReference(terraformReso
 	j := jsiiProxy_CognitoIdentityPoolCognitoIdentityProvidersOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoIdentityPool.CognitoIdentityPoolCognitoIdentityProvidersOutputReference",
+		"@cdktf/provider-aws.cognitoIdentityPool.CognitoIdentityPoolCognitoIdentityProvidersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCognitoIdentityPoolCognitoIdentityProvidersOutputReference_Override(c Co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoIdentityPool.CognitoIdentityPoolCognitoIdentityProvidersOutputReference",
+		"@cdktf/provider-aws.cognitoIdentityPool.CognitoIdentityPoolCognitoIdentityProvidersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

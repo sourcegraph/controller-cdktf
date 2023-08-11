@@ -226,7 +226,7 @@ func NewDataprocMetastoreServiceIamMemberConditionOutputReference(terraformResou
 	j := jsiiProxy_DataprocMetastoreServiceIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConditionOutputReference",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDataprocMetastoreServiceIamMemberConditionOutputReference_Override(d Dat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConditionOutputReference",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

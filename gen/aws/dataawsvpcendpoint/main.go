@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint",
 		reflect.TypeOf((*DataAwsVpcEndpoint)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,15 +88,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpointConfig",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointConfig",
 		reflect.TypeOf((*DataAwsVpcEndpointConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpointDnsEntry",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointDnsEntry",
 		reflect.TypeOf((*DataAwsVpcEndpointDnsEntry)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpointDnsEntryList",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointDnsEntryList",
 		reflect.TypeOf((*DataAwsVpcEndpointDnsEntryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -116,7 +116,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpointDnsEntryOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointDnsEntryOutputReference",
 		reflect.TypeOf((*DataAwsVpcEndpointDnsEntryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -150,11 +150,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpointDnsOptions",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointDnsOptions",
 		reflect.TypeOf((*DataAwsVpcEndpointDnsOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpointDnsOptionsList",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointDnsOptionsList",
 		reflect.TypeOf((*DataAwsVpcEndpointDnsOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -174,7 +174,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpointDnsOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointDnsOptionsOutputReference",
 		reflect.TypeOf((*DataAwsVpcEndpointDnsOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -207,11 +207,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpointFilter",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointFilter",
 		reflect.TypeOf((*DataAwsVpcEndpointFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpointFilterList",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointFilterList",
 		reflect.TypeOf((*DataAwsVpcEndpointFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -232,7 +232,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpointFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointFilterOutputReference",
 		reflect.TypeOf((*DataAwsVpcEndpointFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -268,11 +268,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpointTimeouts",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointTimeouts",
 		reflect.TypeOf((*DataAwsVpcEndpointTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpointTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsVpcEndpointTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

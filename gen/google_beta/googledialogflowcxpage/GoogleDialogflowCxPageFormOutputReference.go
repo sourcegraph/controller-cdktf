@@ -180,7 +180,7 @@ func NewGoogleDialogflowCxPageFormOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_GoogleDialogflowCxPageFormOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageFormOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageFormOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleDialogflowCxPageFormOutputReference_Override(g GoogleDialogflowCxP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageFormOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageFormOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

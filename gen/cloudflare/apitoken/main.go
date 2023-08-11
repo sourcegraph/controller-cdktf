@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.apiToken.ApiToken",
+		"@cdktf/provider-cloudflare.apiToken.ApiToken",
 		reflect.TypeOf((*ApiToken)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,11 +74,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.apiToken.ApiTokenCondition",
+		"@cdktf/provider-cloudflare.apiToken.ApiTokenCondition",
 		reflect.TypeOf((*ApiTokenCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.apiToken.ApiTokenConditionOutputReference",
+		"@cdktf/provider-cloudflare.apiToken.ApiTokenConditionOutputReference",
 		reflect.TypeOf((*ApiTokenConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -114,11 +114,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.apiToken.ApiTokenConditionRequestIp",
+		"@cdktf/provider-cloudflare.apiToken.ApiTokenConditionRequestIp",
 		reflect.TypeOf((*ApiTokenConditionRequestIp)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.apiToken.ApiTokenConditionRequestIpOutputReference",
+		"@cdktf/provider-cloudflare.apiToken.ApiTokenConditionRequestIpOutputReference",
 		reflect.TypeOf((*ApiTokenConditionRequestIpOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -156,15 +156,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.apiToken.ApiTokenConfig",
+		"@cdktf/provider-cloudflare.apiToken.ApiTokenConfig",
 		reflect.TypeOf((*ApiTokenConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.apiToken.ApiTokenPolicy",
+		"@cdktf/provider-cloudflare.apiToken.ApiTokenPolicy",
 		reflect.TypeOf((*ApiTokenPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.apiToken.ApiTokenPolicyList",
+		"@cdktf/provider-cloudflare.apiToken.ApiTokenPolicyList",
 		reflect.TypeOf((*ApiTokenPolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -185,7 +185,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.apiToken.ApiTokenPolicyOutputReference",
+		"@cdktf/provider-cloudflare.apiToken.ApiTokenPolicyOutputReference",
 		reflect.TypeOf((*ApiTokenPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dmsEventSubscription.DmsEventSubscription",
+		"@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription",
 		reflect.TypeOf((*DmsEventSubscription)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,15 +81,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dmsEventSubscription.DmsEventSubscriptionConfig",
+		"@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig",
 		reflect.TypeOf((*DmsEventSubscriptionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dmsEventSubscription.DmsEventSubscriptionTimeouts",
+		"@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionTimeouts",
 		reflect.TypeOf((*DmsEventSubscriptionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dmsEventSubscription.DmsEventSubscriptionTimeoutsOutputReference",
+		"@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionTimeoutsOutputReference",
 		reflect.TypeOf((*DmsEventSubscriptionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

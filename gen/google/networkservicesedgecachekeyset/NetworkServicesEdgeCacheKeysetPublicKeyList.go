@@ -116,7 +116,7 @@ func NewNetworkServicesEdgeCacheKeysetPublicKeyList(terraformResource cdktf.IInt
 	j := jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyList{}
 
 	_jsii_.Create(
-		"google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeysetPublicKeyList",
+		"@cdktf/provider-google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeysetPublicKeyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewNetworkServicesEdgeCacheKeysetPublicKeyList_Override(n NetworkServicesEd
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeysetPublicKeyList",
+		"@cdktf/provider-google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeysetPublicKeyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

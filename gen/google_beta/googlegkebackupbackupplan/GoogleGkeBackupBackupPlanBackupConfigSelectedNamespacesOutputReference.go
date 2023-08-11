@@ -179,7 +179,7 @@ func NewGoogleGkeBackupBackupPlanBackupConfigSelectedNamespacesOutputReference(t
 	j := jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigSelectedNamespacesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanBackupConfigSelectedNamespacesOutputReference",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanBackupConfigSelectedNamespacesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleGkeBackupBackupPlanBackupConfigSelectedNamespacesOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanBackupConfigSelectedNamespacesOutputReference",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanBackupConfigSelectedNamespacesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

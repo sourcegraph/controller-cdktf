@@ -455,7 +455,7 @@ func NewCustomSsl(scope constructs.Construct, id *string, config *CustomSslConfi
 	j := jsiiProxy_CustomSsl{}
 
 	_jsii_.Create(
-		"cloudflare.customSsl.CustomSsl",
+		"@cdktf/provider-cloudflare.customSsl.CustomSsl",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -468,7 +468,7 @@ func NewCustomSsl_Override(c CustomSsl, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.customSsl.CustomSsl",
+		"@cdktf/provider-cloudflare.customSsl.CustomSsl",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -590,7 +590,7 @@ func CustomSsl_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.customSsl.CustomSsl",
+		"@cdktf/provider-cloudflare.customSsl.CustomSsl",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func CustomSsl_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.customSsl.CustomSsl",
+		"@cdktf/provider-cloudflare.customSsl.CustomSsl",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -628,7 +628,7 @@ func CustomSsl_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.customSsl.CustomSsl",
+		"@cdktf/provider-cloudflare.customSsl.CustomSsl",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -641,7 +641,7 @@ func CustomSsl_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.customSsl.CustomSsl",
+		"@cdktf/provider-cloudflare.customSsl.CustomSsl",
 		"tfResourceType",
 		&returns,
 	)

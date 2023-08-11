@@ -116,7 +116,7 @@ func NewConfigRemediationConfigurationParameterList(terraformResource cdktf.IInt
 	j := jsiiProxy_ConfigRemediationConfigurationParameterList{}
 
 	_jsii_.Create(
-		"aws.configRemediationConfiguration.ConfigRemediationConfigurationParameterList",
+		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewConfigRemediationConfigurationParameterList_Override(c ConfigRemediation
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configRemediationConfiguration.ConfigRemediationConfigurationParameterList",
+		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

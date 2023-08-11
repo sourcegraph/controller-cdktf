@@ -116,7 +116,7 @@ func NewOpsworksJavaAppLayerEbsVolumeList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_OpsworksJavaAppLayerEbsVolumeList{}
 
 	_jsii_.Create(
-		"aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolumeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOpsworksJavaAppLayerEbsVolumeList_Override(o OpsworksJavaAppLayerEbsVolu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerEbsVolumeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

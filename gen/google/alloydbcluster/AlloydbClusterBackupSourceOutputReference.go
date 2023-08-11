@@ -167,7 +167,7 @@ func NewAlloydbClusterBackupSourceOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_AlloydbClusterBackupSourceOutputReference{}
 
 	_jsii_.Create(
-		"google.alloydbCluster.AlloydbClusterBackupSourceOutputReference",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterBackupSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewAlloydbClusterBackupSourceOutputReference_Override(a AlloydbClusterBacku
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.alloydbCluster.AlloydbClusterBackupSourceOutputReference",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterBackupSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

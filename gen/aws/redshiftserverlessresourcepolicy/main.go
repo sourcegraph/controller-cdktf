@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicy",
+		"@cdktf/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicy",
 		reflect.TypeOf((*RedshiftserverlessResourcePolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicyConfig",
+		"@cdktf/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicyConfig",
 		reflect.TypeOf((*RedshiftserverlessResourcePolicyConfig)(nil)).Elem(),
 	)
 }

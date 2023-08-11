@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.customerGateway.CustomerGateway",
+		"@cdktf/provider-aws.customerGateway.CustomerGateway",
 		reflect.TypeOf((*CustomerGateway)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.customerGateway.CustomerGatewayConfig",
+		"@cdktf/provider-aws.customerGateway.CustomerGatewayConfig",
 		reflect.TypeOf((*CustomerGatewayConfig)(nil)).Elem(),
 	)
 }

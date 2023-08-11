@@ -594,7 +594,7 @@ func NewNetworkmanagerDevice(scope constructs.Construct, id *string, config *Net
 	j := jsiiProxy_NetworkmanagerDevice{}
 
 	_jsii_.Create(
-		"aws.networkmanagerDevice.NetworkmanagerDevice",
+		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDevice",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -607,7 +607,7 @@ func NewNetworkmanagerDevice_Override(n NetworkmanagerDevice, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerDevice.NetworkmanagerDevice",
+		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDevice",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -817,7 +817,7 @@ func NetworkmanagerDevice_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerDevice.NetworkmanagerDevice",
+		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDevice",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -836,7 +836,7 @@ func NetworkmanagerDevice_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerDevice.NetworkmanagerDevice",
+		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDevice",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -855,7 +855,7 @@ func NetworkmanagerDevice_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerDevice.NetworkmanagerDevice",
+		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDevice",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -868,7 +868,7 @@ func NetworkmanagerDevice_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkmanagerDevice.NetworkmanagerDevice",
+		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDevice",
 		"tfResourceType",
 		&returns,
 	)

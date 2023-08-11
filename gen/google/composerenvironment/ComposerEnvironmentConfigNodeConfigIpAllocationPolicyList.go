@@ -116,7 +116,7 @@ func NewComposerEnvironmentConfigNodeConfigIpAllocationPolicyList(terraformResou
 	j := jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyList{}
 
 	_jsii_.Create(
-		"google.composerEnvironment.ComposerEnvironmentConfigNodeConfigIpAllocationPolicyList",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigNodeConfigIpAllocationPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComposerEnvironmentConfigNodeConfigIpAllocationPolicyList_Override(c Com
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.composerEnvironment.ComposerEnvironmentConfigNodeConfigIpAllocationPolicyList",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigNodeConfigIpAllocationPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

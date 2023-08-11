@@ -179,7 +179,7 @@ func NewGoogleHealthcareDicomStoreStreamConfigsBigqueryDestinationOutputReferenc
 	j := jsiiProxy_GoogleHealthcareDicomStoreStreamConfigsBigqueryDestinationOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreStreamConfigsBigqueryDestinationOutputReference",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreStreamConfigsBigqueryDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleHealthcareDicomStoreStreamConfigsBigqueryDestinationOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreStreamConfigsBigqueryDestinationOutputReference",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreStreamConfigsBigqueryDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

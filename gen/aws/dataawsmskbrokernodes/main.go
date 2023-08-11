@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes",
+		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes",
 		reflect.TypeOf((*DataAwsMskBrokerNodes)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -56,15 +56,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesConfig",
+		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesConfig",
 		reflect.TypeOf((*DataAwsMskBrokerNodesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListStruct",
+		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListStruct",
 		reflect.TypeOf((*DataAwsMskBrokerNodesNodeInfoListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListStructList",
+		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListStructList",
 		reflect.TypeOf((*DataAwsMskBrokerNodesNodeInfoListStructList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -84,7 +84,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListStructOutputReference",
+		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListStructOutputReference",
 		reflect.TypeOf((*DataAwsMskBrokerNodesNodeInfoListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attachedEniId", GoGetter: "AttachedEniId"},

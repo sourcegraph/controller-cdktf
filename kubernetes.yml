@@ -1,0 +1,11 @@
+name: kubernetes
+
+provider:
+  source: registry.terraform.io/hashicorp/kubernetes
+  version: "2.15.0"
+
+target:
+  language: go
+  moduleName: github.com/sourcegraph/controller-cdktf/gen
+
+output: gen

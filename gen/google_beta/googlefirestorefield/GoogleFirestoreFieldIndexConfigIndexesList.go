@@ -116,7 +116,7 @@ func NewGoogleFirestoreFieldIndexConfigIndexesList(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleFirestoreFieldIndexConfigIndexesList{}
 
 	_jsii_.Create(
-		"google-beta.googleFirestoreField.GoogleFirestoreFieldIndexConfigIndexesList",
+		"@cdktf/provider-google-beta.googleFirestoreField.GoogleFirestoreFieldIndexConfigIndexesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleFirestoreFieldIndexConfigIndexesList_Override(g GoogleFirestoreFie
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirestoreField.GoogleFirestoreFieldIndexConfigIndexesList",
+		"@cdktf/provider-google-beta.googleFirestoreField.GoogleFirestoreFieldIndexConfigIndexesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

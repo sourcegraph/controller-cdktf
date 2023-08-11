@@ -204,7 +204,7 @@ func NewGoogleOrgPolicyPolicySpecRulesValuesOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleOrgPolicyPolicySpecRulesValuesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicySpecRulesValuesOutputReference",
+		"@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicySpecRulesValuesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleOrgPolicyPolicySpecRulesValuesOutputReference_Override(g GoogleOrg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicySpecRulesValuesOutputReference",
+		"@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicySpecRulesValuesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

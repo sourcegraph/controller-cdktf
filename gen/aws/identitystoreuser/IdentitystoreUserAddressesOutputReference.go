@@ -348,7 +348,7 @@ func NewIdentitystoreUserAddressesOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_IdentitystoreUserAddressesOutputReference{}
 
 	_jsii_.Create(
-		"aws.identitystoreUser.IdentitystoreUserAddressesOutputReference",
+		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserAddressesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewIdentitystoreUserAddressesOutputReference_Override(i IdentitystoreUserAd
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.identitystoreUser.IdentitystoreUserAddressesOutputReference",
+		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserAddressesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

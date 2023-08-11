@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleContainerAttachedInstallManifest.DataGoogleContainerAttachedInstallManifest",
+		"@cdktf/provider-google.dataGoogleContainerAttachedInstallManifest.DataGoogleContainerAttachedInstallManifest",
 		reflect.TypeOf((*DataGoogleContainerAttachedInstallManifest)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleContainerAttachedInstallManifest.DataGoogleContainerAttachedInstallManifestConfig",
+		"@cdktf/provider-google.dataGoogleContainerAttachedInstallManifest.DataGoogleContainerAttachedInstallManifestConfig",
 		reflect.TypeOf((*DataGoogleContainerAttachedInstallManifestConfig)(nil)).Elem(),
 	)
 }

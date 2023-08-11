@@ -179,7 +179,7 @@ func NewOrganizationPolicyBooleanPolicyOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_OrganizationPolicyBooleanPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.organizationPolicy.OrganizationPolicyBooleanPolicyOutputReference",
+		"@cdktf/provider-google.organizationPolicy.OrganizationPolicyBooleanPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewOrganizationPolicyBooleanPolicyOutputReference_Override(o OrganizationPo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.organizationPolicy.OrganizationPolicyBooleanPolicyOutputReference",
+		"@cdktf/provider-google.organizationPolicy.OrganizationPolicyBooleanPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

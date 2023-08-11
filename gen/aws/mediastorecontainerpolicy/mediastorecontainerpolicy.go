@@ -342,7 +342,7 @@ func NewMediaStoreContainerPolicy(scope constructs.Construct, id *string, config
 	j := jsiiProxy_MediaStoreContainerPolicy{}
 
 	_jsii_.Create(
-		"aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy",
+		"@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewMediaStoreContainerPolicy_Override(m MediaStoreContainerPolicy, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy",
+		"@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -488,7 +488,7 @@ func MediaStoreContainerPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy",
+		"@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func MediaStoreContainerPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy",
+		"@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func MediaStoreContainerPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy",
+		"@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func MediaStoreContainerPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy",
+		"@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy",
 		"tfResourceType",
 		&returns,
 	)

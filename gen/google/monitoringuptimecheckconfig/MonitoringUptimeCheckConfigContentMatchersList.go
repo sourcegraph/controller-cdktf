@@ -116,7 +116,7 @@ func NewMonitoringUptimeCheckConfigContentMatchersList(terraformResource cdktf.I
 	j := jsiiProxy_MonitoringUptimeCheckConfigContentMatchersList{}
 
 	_jsii_.Create(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigContentMatchersList",
+		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigContentMatchersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMonitoringUptimeCheckConfigContentMatchersList_Override(m MonitoringUpti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigContentMatchersList",
+		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigContentMatchersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

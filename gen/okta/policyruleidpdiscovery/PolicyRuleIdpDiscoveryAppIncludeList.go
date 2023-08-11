@@ -116,7 +116,7 @@ func NewPolicyRuleIdpDiscoveryAppIncludeList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList{}
 
 	_jsii_.Create(
-		"okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppIncludeList",
+		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppIncludeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPolicyRuleIdpDiscoveryAppIncludeList_Override(p PolicyRuleIdpDiscoveryAp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppIncludeList",
+		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppIncludeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

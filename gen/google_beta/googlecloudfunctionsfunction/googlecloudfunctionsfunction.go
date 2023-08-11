@@ -1049,7 +1049,7 @@ func NewGoogleCloudfunctionsFunction(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleCloudfunctionsFunction{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunction",
+		"@cdktf/provider-google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunction",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1062,7 +1062,7 @@ func NewGoogleCloudfunctionsFunction_Override(g GoogleCloudfunctionsFunction, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunction",
+		"@cdktf/provider-google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunction",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1459,7 +1459,7 @@ func GoogleCloudfunctionsFunction_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunction",
+		"@cdktf/provider-google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunction",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1478,7 +1478,7 @@ func GoogleCloudfunctionsFunction_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunction",
+		"@cdktf/provider-google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunction",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1497,7 +1497,7 @@ func GoogleCloudfunctionsFunction_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunction",
+		"@cdktf/provider-google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunction",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1510,7 +1510,7 @@ func GoogleCloudfunctionsFunction_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunction",
+		"@cdktf/provider-google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunction",
 		"tfResourceType",
 		&returns,
 	)

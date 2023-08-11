@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleBillingAccountIamMember.GoogleBillingAccountIamMember",
+		"@cdktf/provider-google-beta.googleBillingAccountIamMember.GoogleBillingAccountIamMember",
 		reflect.TypeOf((*GoogleBillingAccountIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,11 +66,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBillingAccountIamMember.GoogleBillingAccountIamMemberCondition",
+		"@cdktf/provider-google-beta.googleBillingAccountIamMember.GoogleBillingAccountIamMemberCondition",
 		reflect.TypeOf((*GoogleBillingAccountIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBillingAccountIamMember.GoogleBillingAccountIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleBillingAccountIamMember.GoogleBillingAccountIamMemberConditionOutputReference",
 		reflect.TypeOf((*GoogleBillingAccountIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBillingAccountIamMember.GoogleBillingAccountIamMemberConfig",
+		"@cdktf/provider-google-beta.googleBillingAccountIamMember.GoogleBillingAccountIamMemberConfig",
 		reflect.TypeOf((*GoogleBillingAccountIamMemberConfig)(nil)).Elem(),
 	)
 }

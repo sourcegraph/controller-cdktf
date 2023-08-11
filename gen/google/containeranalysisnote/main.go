@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.containerAnalysisNote.ContainerAnalysisNote",
+		"@cdktf/provider-google.containerAnalysisNote.ContainerAnalysisNote",
 		reflect.TypeOf((*ContainerAnalysisNote)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,15 +86,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAnalysisNote.ContainerAnalysisNoteAttestationAuthority",
+		"@cdktf/provider-google.containerAnalysisNote.ContainerAnalysisNoteAttestationAuthority",
 		reflect.TypeOf((*ContainerAnalysisNoteAttestationAuthority)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAnalysisNote.ContainerAnalysisNoteAttestationAuthorityHint",
+		"@cdktf/provider-google.containerAnalysisNote.ContainerAnalysisNoteAttestationAuthorityHint",
 		reflect.TypeOf((*ContainerAnalysisNoteAttestationAuthorityHint)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAnalysisNote.ContainerAnalysisNoteAttestationAuthorityHintOutputReference",
+		"@cdktf/provider-google.containerAnalysisNote.ContainerAnalysisNoteAttestationAuthorityHintOutputReference",
 		reflect.TypeOf((*ContainerAnalysisNoteAttestationAuthorityHintOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -128,7 +128,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerAnalysisNote.ContainerAnalysisNoteAttestationAuthorityOutputReference",
+		"@cdktf/provider-google.containerAnalysisNote.ContainerAnalysisNoteAttestationAuthorityOutputReference",
 		reflect.TypeOf((*ContainerAnalysisNoteAttestationAuthorityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -163,15 +163,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAnalysisNote.ContainerAnalysisNoteConfig",
+		"@cdktf/provider-google.containerAnalysisNote.ContainerAnalysisNoteConfig",
 		reflect.TypeOf((*ContainerAnalysisNoteConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAnalysisNote.ContainerAnalysisNoteRelatedUrl",
+		"@cdktf/provider-google.containerAnalysisNote.ContainerAnalysisNoteRelatedUrl",
 		reflect.TypeOf((*ContainerAnalysisNoteRelatedUrl)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAnalysisNote.ContainerAnalysisNoteRelatedUrlList",
+		"@cdktf/provider-google.containerAnalysisNote.ContainerAnalysisNoteRelatedUrlList",
 		reflect.TypeOf((*ContainerAnalysisNoteRelatedUrlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -192,7 +192,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerAnalysisNote.ContainerAnalysisNoteRelatedUrlOutputReference",
+		"@cdktf/provider-google.containerAnalysisNote.ContainerAnalysisNoteRelatedUrlOutputReference",
 		reflect.TypeOf((*ContainerAnalysisNoteRelatedUrlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -229,11 +229,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAnalysisNote.ContainerAnalysisNoteTimeouts",
+		"@cdktf/provider-google.containerAnalysisNote.ContainerAnalysisNoteTimeouts",
 		reflect.TypeOf((*ContainerAnalysisNoteTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAnalysisNote.ContainerAnalysisNoteTimeoutsOutputReference",
+		"@cdktf/provider-google.containerAnalysisNote.ContainerAnalysisNoteTimeoutsOutputReference",
 		reflect.TypeOf((*ContainerAnalysisNoteTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

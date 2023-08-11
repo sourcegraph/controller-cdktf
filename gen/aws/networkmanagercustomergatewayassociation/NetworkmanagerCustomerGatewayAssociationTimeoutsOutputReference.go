@@ -204,7 +204,7 @@ func NewNetworkmanagerCustomerGatewayAssociationTimeoutsOutputReference(terrafor
 	j := jsiiProxy_NetworkmanagerCustomerGatewayAssociationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewNetworkmanagerCustomerGatewayAssociationTimeoutsOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

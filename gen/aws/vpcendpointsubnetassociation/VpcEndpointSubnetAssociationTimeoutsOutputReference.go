@@ -204,7 +204,7 @@ func NewVpcEndpointSubnetAssociationTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_VpcEndpointSubnetAssociationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewVpcEndpointSubnetAssociationTimeoutsOutputReference_Override(v VpcEndpoi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

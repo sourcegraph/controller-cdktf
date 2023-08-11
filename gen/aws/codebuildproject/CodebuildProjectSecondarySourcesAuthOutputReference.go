@@ -203,7 +203,7 @@ func NewCodebuildProjectSecondarySourcesAuthOutputReference(terraformResource cd
 	j := jsiiProxy_CodebuildProjectSecondarySourcesAuthOutputReference{}
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectSecondarySourcesAuthOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesAuthOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewCodebuildProjectSecondarySourcesAuthOutputReference_Override(c Codebuild
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectSecondarySourcesAuthOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesAuthOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

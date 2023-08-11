@@ -1785,7 +1785,7 @@ func NewGkeprivate(scope constructs.Construct, id *string, config *GkeprivateCon
 	j := jsiiProxy_Gkeprivate{}
 
 	_jsii_.Create(
-		"gkeprivate.Gkeprivate",
+		"@cdktf/provider-gkeprivate.Gkeprivate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1797,7 +1797,7 @@ func NewGkeprivate_Override(g Gkeprivate, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"gkeprivate.Gkeprivate",
+		"@cdktf/provider-gkeprivate.Gkeprivate",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -2693,7 +2693,7 @@ func Gkeprivate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"gkeprivate.Gkeprivate",
+		"@cdktf/provider-gkeprivate.Gkeprivate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -2712,7 +2712,7 @@ func Gkeprivate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"gkeprivate.Gkeprivate",
+		"@cdktf/provider-gkeprivate.Gkeprivate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,

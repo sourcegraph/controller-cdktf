@@ -394,7 +394,7 @@ func NewDataGoogleComputeResourcePolicy(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataGoogleComputeResourcePolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicy",
+		"@cdktf/provider-google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -407,7 +407,7 @@ func NewDataGoogleComputeResourcePolicy_Override(d DataGoogleComputeResourcePoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicy",
+		"@cdktf/provider-google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -529,7 +529,7 @@ func DataGoogleComputeResourcePolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicy",
+		"@cdktf/provider-google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -548,7 +548,7 @@ func DataGoogleComputeResourcePolicy_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicy",
+		"@cdktf/provider-google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -567,7 +567,7 @@ func DataGoogleComputeResourcePolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicy",
+		"@cdktf/provider-google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -580,7 +580,7 @@ func DataGoogleComputeResourcePolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicy",
+		"@cdktf/provider-google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicy",
 		"tfResourceType",
 		&returns,
 	)

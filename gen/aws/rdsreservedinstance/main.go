@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.rdsReservedInstance.RdsReservedInstance",
+		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstance",
 		reflect.TypeOf((*RdsReservedInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,15 +86,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.rdsReservedInstance.RdsReservedInstanceConfig",
+		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstanceConfig",
 		reflect.TypeOf((*RdsReservedInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.rdsReservedInstance.RdsReservedInstanceRecurringCharges",
+		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstanceRecurringCharges",
 		reflect.TypeOf((*RdsReservedInstanceRecurringCharges)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.rdsReservedInstance.RdsReservedInstanceRecurringChargesList",
+		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstanceRecurringChargesList",
 		reflect.TypeOf((*RdsReservedInstanceRecurringChargesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -114,7 +114,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.rdsReservedInstance.RdsReservedInstanceRecurringChargesOutputReference",
+		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstanceRecurringChargesOutputReference",
 		reflect.TypeOf((*RdsReservedInstanceRecurringChargesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -148,11 +148,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.rdsReservedInstance.RdsReservedInstanceTimeouts",
+		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstanceTimeouts",
 		reflect.TypeOf((*RdsReservedInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.rdsReservedInstance.RdsReservedInstanceTimeoutsOutputReference",
+		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*RdsReservedInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

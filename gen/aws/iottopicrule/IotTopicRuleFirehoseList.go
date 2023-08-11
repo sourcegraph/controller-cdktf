@@ -116,7 +116,7 @@ func NewIotTopicRuleFirehoseList(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_IotTopicRuleFirehoseList{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleFirehoseList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewIotTopicRuleFirehoseList_Override(i IotTopicRuleFirehoseList, terraformR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleFirehoseList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

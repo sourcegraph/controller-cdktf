@@ -447,7 +447,7 @@ func NewCloudRunDomainMapping(scope constructs.Construct, id *string, config *Cl
 	j := jsiiProxy_CloudRunDomainMapping{}
 
 	_jsii_.Create(
-		"google.cloudRunDomainMapping.CloudRunDomainMapping",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMapping",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewCloudRunDomainMapping_Override(c CloudRunDomainMapping, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunDomainMapping.CloudRunDomainMapping",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMapping",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -604,7 +604,7 @@ func CloudRunDomainMapping_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunDomainMapping.CloudRunDomainMapping",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMapping",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -623,7 +623,7 @@ func CloudRunDomainMapping_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunDomainMapping.CloudRunDomainMapping",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMapping",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func CloudRunDomainMapping_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunDomainMapping.CloudRunDomainMapping",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMapping",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func CloudRunDomainMapping_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudRunDomainMapping.CloudRunDomainMapping",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMapping",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewDataAwsLaunchTemplateCreditSpecificationList(terraformResource cdktf.IIn
 	j := jsiiProxy_DataAwsLaunchTemplateCreditSpecificationList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCreditSpecificationList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCreditSpecificationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLaunchTemplateCreditSpecificationList_Override(d DataAwsLaunchTem
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCreditSpecificationList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCreditSpecificationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

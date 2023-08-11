@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.opsworksRdsDbInstance.OpsworksRdsDbInstance",
+		"@cdktf/provider-aws.opsworksRdsDbInstance.OpsworksRdsDbInstance",
 		reflect.TypeOf((*OpsworksRdsDbInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksRdsDbInstance.OpsworksRdsDbInstanceConfig",
+		"@cdktf/provider-aws.opsworksRdsDbInstance.OpsworksRdsDbInstanceConfig",
 		reflect.TypeOf((*OpsworksRdsDbInstanceConfig)(nil)).Elem(),
 	)
 }

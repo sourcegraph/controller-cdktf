@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.accessOrganization.AccessOrganization",
+		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganization",
 		reflect.TypeOf((*AccessOrganization)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -79,15 +79,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessOrganization.AccessOrganizationConfig",
+		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig",
 		reflect.TypeOf((*AccessOrganizationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessOrganization.AccessOrganizationLoginDesign",
+		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesign",
 		reflect.TypeOf((*AccessOrganizationLoginDesign)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessOrganization.AccessOrganizationLoginDesignList",
+		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesignList",
 		reflect.TypeOf((*AccessOrganizationLoginDesignList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessOrganization.AccessOrganizationLoginDesignOutputReference",
+		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesignOutputReference",
 		reflect.TypeOf((*AccessOrganizationLoginDesignOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backgroundColor", GoGetter: "BackgroundColor"},

@@ -343,7 +343,7 @@ func NewAgentPool(scope constructs.Construct, id *string, config *AgentPoolConfi
 	j := jsiiProxy_AgentPool{}
 
 	_jsii_.Create(
-		"tfe.agentPool.AgentPool",
+		"@cdktf/provider-tfe.agentPool.AgentPool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewAgentPool_Override(a AgentPool, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.agentPool.AgentPool",
+		"@cdktf/provider-tfe.agentPool.AgentPool",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -489,7 +489,7 @@ func AgentPool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.agentPool.AgentPool",
+		"@cdktf/provider-tfe.agentPool.AgentPool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func AgentPool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.agentPool.AgentPool",
+		"@cdktf/provider-tfe.agentPool.AgentPool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func AgentPool_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.agentPool.AgentPool",
+		"@cdktf/provider-tfe.agentPool.AgentPool",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func AgentPool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.agentPool.AgentPool",
+		"@cdktf/provider-tfe.agentPool.AgentPool",
 		"tfResourceType",
 		&returns,
 	)

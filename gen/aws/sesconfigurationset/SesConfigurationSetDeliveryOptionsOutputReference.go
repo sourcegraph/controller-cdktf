@@ -180,7 +180,7 @@ func NewSesConfigurationSetDeliveryOptionsOutputReference(terraformResource cdkt
 	j := jsiiProxy_SesConfigurationSetDeliveryOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.sesConfigurationSet.SesConfigurationSetDeliveryOptionsOutputReference",
+		"@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSetDeliveryOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewSesConfigurationSetDeliveryOptionsOutputReference_Override(s SesConfigur
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesConfigurationSet.SesConfigurationSetDeliveryOptionsOutputReference",
+		"@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSetDeliveryOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

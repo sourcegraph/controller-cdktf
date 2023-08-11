@@ -252,7 +252,7 @@ func NewSyntheticsCanaryRunConfigOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_SyntheticsCanaryRunConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.syntheticsCanary.SyntheticsCanaryRunConfigOutputReference",
+		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryRunConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewSyntheticsCanaryRunConfigOutputReference_Override(s SyntheticsCanaryRunC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.syntheticsCanary.SyntheticsCanaryRunConfigOutputReference",
+		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryRunConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

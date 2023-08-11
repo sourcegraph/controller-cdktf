@@ -543,7 +543,7 @@ func NewSfnStateMachine(scope constructs.Construct, id *string, config *SfnState
 	j := jsiiProxy_SfnStateMachine{}
 
 	_jsii_.Create(
-		"aws.sfnStateMachine.SfnStateMachine",
+		"@cdktf/provider-aws.sfnStateMachine.SfnStateMachine",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -556,7 +556,7 @@ func NewSfnStateMachine_Override(s SfnStateMachine, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sfnStateMachine.SfnStateMachine",
+		"@cdktf/provider-aws.sfnStateMachine.SfnStateMachine",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -744,7 +744,7 @@ func SfnStateMachine_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sfnStateMachine.SfnStateMachine",
+		"@cdktf/provider-aws.sfnStateMachine.SfnStateMachine",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -763,7 +763,7 @@ func SfnStateMachine_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sfnStateMachine.SfnStateMachine",
+		"@cdktf/provider-aws.sfnStateMachine.SfnStateMachine",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -782,7 +782,7 @@ func SfnStateMachine_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sfnStateMachine.SfnStateMachine",
+		"@cdktf/provider-aws.sfnStateMachine.SfnStateMachine",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -795,7 +795,7 @@ func SfnStateMachine_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sfnStateMachine.SfnStateMachine",
+		"@cdktf/provider-aws.sfnStateMachine.SfnStateMachine",
 		"tfResourceType",
 		&returns,
 	)

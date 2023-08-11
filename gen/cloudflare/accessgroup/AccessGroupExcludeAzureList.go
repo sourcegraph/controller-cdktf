@@ -116,7 +116,7 @@ func NewAccessGroupExcludeAzureList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_AccessGroupExcludeAzureList{}
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupExcludeAzureList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAzureList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessGroupExcludeAzureList_Override(a AccessGroupExcludeAzureList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupExcludeAzureList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAzureList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

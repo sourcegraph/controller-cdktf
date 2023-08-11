@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.proxyProtocolPolicy.ProxyProtocolPolicy",
+		"@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicy",
 		reflect.TypeOf((*ProxyProtocolPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.proxyProtocolPolicy.ProxyProtocolPolicyConfig",
+		"@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicyConfig",
 		reflect.TypeOf((*ProxyProtocolPolicyConfig)(nil)).Elem(),
 	)
 }

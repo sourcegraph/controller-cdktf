@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.daxCluster.DaxCluster",
+		"@cdktf/provider-aws.daxCluster.DaxCluster",
 		reflect.TypeOf((*DaxCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -106,15 +106,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.daxCluster.DaxClusterConfig",
+		"@cdktf/provider-aws.daxCluster.DaxClusterConfig",
 		reflect.TypeOf((*DaxClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.daxCluster.DaxClusterNodes",
+		"@cdktf/provider-aws.daxCluster.DaxClusterNodes",
 		reflect.TypeOf((*DaxClusterNodes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.daxCluster.DaxClusterNodesList",
+		"@cdktf/provider-aws.daxCluster.DaxClusterNodesList",
 		reflect.TypeOf((*DaxClusterNodesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -134,7 +134,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.daxCluster.DaxClusterNodesOutputReference",
+		"@cdktf/provider-aws.daxCluster.DaxClusterNodesOutputReference",
 		reflect.TypeOf((*DaxClusterNodesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
@@ -170,11 +170,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.daxCluster.DaxClusterServerSideEncryption",
+		"@cdktf/provider-aws.daxCluster.DaxClusterServerSideEncryption",
 		reflect.TypeOf((*DaxClusterServerSideEncryption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.daxCluster.DaxClusterServerSideEncryptionOutputReference",
+		"@cdktf/provider-aws.daxCluster.DaxClusterServerSideEncryptionOutputReference",
 		reflect.TypeOf((*DaxClusterServerSideEncryptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -209,11 +209,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.daxCluster.DaxClusterTimeouts",
+		"@cdktf/provider-aws.daxCluster.DaxClusterTimeouts",
 		reflect.TypeOf((*DaxClusterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.daxCluster.DaxClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.daxCluster.DaxClusterTimeoutsOutputReference",
 		reflect.TypeOf((*DaxClusterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

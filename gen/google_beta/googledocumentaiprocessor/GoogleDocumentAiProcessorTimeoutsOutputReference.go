@@ -204,7 +204,7 @@ func NewGoogleDocumentAiProcessorTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleDocumentAiProcessorTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDocumentAiProcessor.GoogleDocumentAiProcessorTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDocumentAiProcessor.GoogleDocumentAiProcessorTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleDocumentAiProcessorTimeoutsOutputReference_Override(g GoogleDocume
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDocumentAiProcessor.GoogleDocumentAiProcessorTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDocumentAiProcessor.GoogleDocumentAiProcessorTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

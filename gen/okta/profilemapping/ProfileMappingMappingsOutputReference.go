@@ -226,7 +226,7 @@ func NewProfileMappingMappingsOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_ProfileMappingMappingsOutputReference{}
 
 	_jsii_.Create(
-		"okta.profileMapping.ProfileMappingMappingsOutputReference",
+		"@cdktf/provider-okta.profileMapping.ProfileMappingMappingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewProfileMappingMappingsOutputReference_Override(p ProfileMappingMappingsO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.profileMapping.ProfileMappingMappingsOutputReference",
+		"@cdktf/provider-okta.profileMapping.ProfileMappingMappingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

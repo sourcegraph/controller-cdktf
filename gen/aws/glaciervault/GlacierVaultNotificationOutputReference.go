@@ -202,7 +202,7 @@ func NewGlacierVaultNotificationOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_GlacierVaultNotificationOutputReference{}
 
 	_jsii_.Create(
-		"aws.glacierVault.GlacierVaultNotificationOutputReference",
+		"@cdktf/provider-aws.glacierVault.GlacierVaultNotificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGlacierVaultNotificationOutputReference_Override(g GlacierVaultNotificat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glacierVault.GlacierVaultNotificationOutputReference",
+		"@cdktf/provider-aws.glacierVault.GlacierVaultNotificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

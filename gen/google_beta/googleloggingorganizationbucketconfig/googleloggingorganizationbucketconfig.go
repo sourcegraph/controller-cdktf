@@ -459,7 +459,7 @@ func NewGoogleLoggingOrganizationBucketConfig(scope constructs.Construct, id *st
 	j := jsiiProxy_GoogleLoggingOrganizationBucketConfig{}
 
 	_jsii_.Create(
-		"google-beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfig",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewGoogleLoggingOrganizationBucketConfig_Override(g GoogleLoggingOrganizati
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfig",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfig",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -638,7 +638,7 @@ func GoogleLoggingOrganizationBucketConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfig",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func GoogleLoggingOrganizationBucketConfig_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfig",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func GoogleLoggingOrganizationBucketConfig_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfig",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func GoogleLoggingOrganizationBucketConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfig",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfig",
 		"tfResourceType",
 		&returns,
 	)

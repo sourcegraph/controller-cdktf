@@ -202,7 +202,7 @@ func NewComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference(terr
 	j := jsiiProxy_ComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

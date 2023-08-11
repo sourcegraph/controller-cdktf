@@ -204,7 +204,7 @@ func NewVpcIpv4CidrBlockAssociationTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_VpcIpv4CidrBlockAssociationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewVpcIpv4CidrBlockAssociationTimeoutsOutputReference_Override(v VpcIpv4Cid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

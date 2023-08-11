@@ -116,7 +116,7 @@ func NewGoogleComputeRegionBackendServiceBackendList(terraformResource cdktf.IIn
 	j := jsiiProxy_GoogleComputeRegionBackendServiceBackendList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceBackendList",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceBackendList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeRegionBackendServiceBackendList_Override(g GoogleComputeReg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceBackendList",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceBackendList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

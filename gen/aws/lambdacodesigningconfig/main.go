@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig",
+		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig",
 		reflect.TypeOf((*LambdaCodeSigningConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,11 +68,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigAllowedPublishers",
+		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigAllowedPublishers",
 		reflect.TypeOf((*LambdaCodeSigningConfigAllowedPublishers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigAllowedPublishersOutputReference",
+		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigAllowedPublishersOutputReference",
 		reflect.TypeOf((*LambdaCodeSigningConfigAllowedPublishersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -106,15 +106,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigConfig",
+		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigConfig",
 		reflect.TypeOf((*LambdaCodeSigningConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigPolicies",
+		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigPolicies",
 		reflect.TypeOf((*LambdaCodeSigningConfigPolicies)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigPoliciesOutputReference",
+		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigPoliciesOutputReference",
 		reflect.TypeOf((*LambdaCodeSigningConfigPoliciesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

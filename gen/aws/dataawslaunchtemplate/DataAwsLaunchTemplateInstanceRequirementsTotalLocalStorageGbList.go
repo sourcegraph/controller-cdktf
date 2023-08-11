@@ -104,7 +104,7 @@ func NewDataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbList(terrafo
 	j := jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

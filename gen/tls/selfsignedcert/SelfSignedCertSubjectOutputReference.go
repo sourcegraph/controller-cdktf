@@ -372,7 +372,7 @@ func NewSelfSignedCertSubjectOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_SelfSignedCertSubjectOutputReference{}
 
 	_jsii_.Create(
-		"tls.selfSignedCert.SelfSignedCertSubjectOutputReference",
+		"@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -384,7 +384,7 @@ func NewSelfSignedCertSubjectOutputReference_Override(s SelfSignedCertSubjectOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tls.selfSignedCert.SelfSignedCertSubjectOutputReference",
+		"@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -116,7 +116,7 @@ func NewAccessPolicyExcludeList(terraformResource cdktf.IInterpolatingParent, te
 	j := jsiiProxy_AccessPolicyExcludeList{}
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyExcludeList",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessPolicyExcludeList_Override(a AccessPolicyExcludeList, terraformRes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyExcludeList",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

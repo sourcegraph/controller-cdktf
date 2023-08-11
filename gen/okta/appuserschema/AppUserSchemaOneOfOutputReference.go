@@ -202,7 +202,7 @@ func NewAppUserSchemaOneOfOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_AppUserSchemaOneOfOutputReference{}
 
 	_jsii_.Create(
-		"okta.appUserSchema.AppUserSchemaOneOfOutputReference",
+		"@cdktf/provider-okta.appUserSchema.AppUserSchemaOneOfOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewAppUserSchemaOneOfOutputReference_Override(a AppUserSchemaOneOfOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appUserSchema.AppUserSchemaOneOfOutputReference",
+		"@cdktf/provider-okta.appUserSchema.AppUserSchemaOneOfOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

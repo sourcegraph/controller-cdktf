@@ -761,7 +761,7 @@ func NewZoneSettingsOverrideInitialSettingsOutputReference(terraformResource cdk
 	j := jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsOutputReference",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -773,7 +773,7 @@ func NewZoneSettingsOverrideInitialSettingsOutputReference_Override(z ZoneSettin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsOutputReference",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		z,
 	)

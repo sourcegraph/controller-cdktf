@@ -204,7 +204,7 @@ func NewGlueCatalogDatabaseCreateTableDefaultPermissionOutputReference(terraform
 	j := jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference",
+		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGlueCatalogDatabaseCreateTableDefaultPermissionOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference",
+		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

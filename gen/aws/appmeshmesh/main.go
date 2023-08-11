@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.appmeshMesh.AppmeshMesh",
+		"@cdktf/provider-aws.appmeshMesh.AppmeshMesh",
 		reflect.TypeOf((*AppmeshMesh)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,19 +72,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshMesh.AppmeshMeshConfig",
+		"@cdktf/provider-aws.appmeshMesh.AppmeshMeshConfig",
 		reflect.TypeOf((*AppmeshMeshConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshMesh.AppmeshMeshSpec",
+		"@cdktf/provider-aws.appmeshMesh.AppmeshMeshSpec",
 		reflect.TypeOf((*AppmeshMeshSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshMesh.AppmeshMeshSpecEgressFilter",
+		"@cdktf/provider-aws.appmeshMesh.AppmeshMeshSpecEgressFilter",
 		reflect.TypeOf((*AppmeshMeshSpecEgressFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshMesh.AppmeshMeshSpecEgressFilterOutputReference",
+		"@cdktf/provider-aws.appmeshMesh.AppmeshMeshSpecEgressFilterOutputReference",
 		reflect.TypeOf((*AppmeshMeshSpecEgressFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -119,7 +119,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshMesh.AppmeshMeshSpecOutputReference",
+		"@cdktf/provider-aws.appmeshMesh.AppmeshMeshSpecOutputReference",
 		reflect.TypeOf((*AppmeshMeshSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

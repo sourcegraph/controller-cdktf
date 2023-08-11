@@ -204,7 +204,7 @@ func NewNeptuneClusterServerlessV2ScalingConfigurationOutputReference(terraformR
 	j := jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.neptuneCluster.NeptuneClusterServerlessV2ScalingConfigurationOutputReference",
+		"@cdktf/provider-aws.neptuneCluster.NeptuneClusterServerlessV2ScalingConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewNeptuneClusterServerlessV2ScalingConfigurationOutputReference_Override(n
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.neptuneCluster.NeptuneClusterServerlessV2ScalingConfigurationOutputReference",
+		"@cdktf/provider-aws.neptuneCluster.NeptuneClusterServerlessV2ScalingConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

@@ -461,7 +461,7 @@ func NewVolumeAttachment(scope constructs.Construct, id *string, config *VolumeA
 	j := jsiiProxy_VolumeAttachment{}
 
 	_jsii_.Create(
-		"aws.volumeAttachment.VolumeAttachment",
+		"@cdktf/provider-aws.volumeAttachment.VolumeAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -474,7 +474,7 @@ func NewVolumeAttachment_Override(v VolumeAttachment, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.volumeAttachment.VolumeAttachment",
+		"@cdktf/provider-aws.volumeAttachment.VolumeAttachment",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -651,7 +651,7 @@ func VolumeAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.volumeAttachment.VolumeAttachment",
+		"@cdktf/provider-aws.volumeAttachment.VolumeAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -670,7 +670,7 @@ func VolumeAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.volumeAttachment.VolumeAttachment",
+		"@cdktf/provider-aws.volumeAttachment.VolumeAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func VolumeAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.volumeAttachment.VolumeAttachment",
+		"@cdktf/provider-aws.volumeAttachment.VolumeAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func VolumeAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.volumeAttachment.VolumeAttachment",
+		"@cdktf/provider-aws.volumeAttachment.VolumeAttachment",
 		"tfResourceType",
 		&returns,
 	)

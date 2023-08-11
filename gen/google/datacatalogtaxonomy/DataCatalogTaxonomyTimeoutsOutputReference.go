@@ -228,7 +228,7 @@ func NewDataCatalogTaxonomyTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_DataCatalogTaxonomyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataCatalogTaxonomy.DataCatalogTaxonomyTimeoutsOutputReference",
+		"@cdktf/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDataCatalogTaxonomyTimeoutsOutputReference_Override(d DataCatalogTaxonom
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogTaxonomy.DataCatalogTaxonomyTimeoutsOutputReference",
+		"@cdktf/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

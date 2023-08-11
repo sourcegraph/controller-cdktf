@@ -116,7 +116,7 @@ func NewAppmeshVirtualGatewaySpecListenerList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_AppmeshVirtualGatewaySpecListenerList{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerList",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppmeshVirtualGatewaySpecListenerList_Override(a AppmeshVirtualGatewaySp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerList",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

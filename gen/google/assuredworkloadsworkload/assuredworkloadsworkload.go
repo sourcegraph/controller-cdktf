@@ -564,7 +564,7 @@ func NewAssuredWorkloadsWorkload(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_AssuredWorkloadsWorkload{}
 
 	_jsii_.Create(
-		"google.assuredWorkloadsWorkload.AssuredWorkloadsWorkload",
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkload",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -577,7 +577,7 @@ func NewAssuredWorkloadsWorkload_Override(a AssuredWorkloadsWorkload, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.assuredWorkloadsWorkload.AssuredWorkloadsWorkload",
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkload",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -765,7 +765,7 @@ func AssuredWorkloadsWorkload_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.assuredWorkloadsWorkload.AssuredWorkloadsWorkload",
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkload",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -784,7 +784,7 @@ func AssuredWorkloadsWorkload_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.assuredWorkloadsWorkload.AssuredWorkloadsWorkload",
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkload",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -803,7 +803,7 @@ func AssuredWorkloadsWorkload_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.assuredWorkloadsWorkload.AssuredWorkloadsWorkload",
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkload",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -816,7 +816,7 @@ func AssuredWorkloadsWorkload_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.assuredWorkloadsWorkload.AssuredWorkloadsWorkload",
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkload",
 		"tfResourceType",
 		&returns,
 	)

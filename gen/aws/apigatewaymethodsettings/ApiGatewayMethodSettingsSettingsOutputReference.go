@@ -396,7 +396,7 @@ func NewApiGatewayMethodSettingsSettingsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.apiGatewayMethodSettings.ApiGatewayMethodSettingsSettingsOutputReference",
+		"@cdktf/provider-aws.apiGatewayMethodSettings.ApiGatewayMethodSettingsSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -408,7 +408,7 @@ func NewApiGatewayMethodSettingsSettingsOutputReference_Override(a ApiGatewayMet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayMethodSettings.ApiGatewayMethodSettingsSettingsOutputReference",
+		"@cdktf/provider-aws.apiGatewayMethodSettings.ApiGatewayMethodSettingsSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

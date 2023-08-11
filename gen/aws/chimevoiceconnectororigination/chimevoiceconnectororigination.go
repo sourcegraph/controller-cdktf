@@ -366,7 +366,7 @@ func NewChimeVoiceConnectorOrigination(scope constructs.Construct, id *string, c
 	j := jsiiProxy_ChimeVoiceConnectorOrigination{}
 
 	_jsii_.Create(
-		"aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination",
+		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewChimeVoiceConnectorOrigination_Override(c ChimeVoiceConnectorOrigination
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination",
+		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -512,7 +512,7 @@ func ChimeVoiceConnectorOrigination_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination",
+		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func ChimeVoiceConnectorOrigination_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination",
+		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func ChimeVoiceConnectorOrigination_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination",
+		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func ChimeVoiceConnectorOrigination_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination",
+		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination",
 		"tfResourceType",
 		&returns,
 	)

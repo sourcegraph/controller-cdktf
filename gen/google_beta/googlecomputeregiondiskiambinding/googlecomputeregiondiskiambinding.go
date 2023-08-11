@@ -448,7 +448,7 @@ func NewGoogleComputeRegionDiskIamBinding(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleComputeRegionDiskIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBinding",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleComputeRegionDiskIamBinding_Override(g GoogleComputeRegionDiskIamB
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBinding",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleComputeRegionDiskIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBinding",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleComputeRegionDiskIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBinding",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleComputeRegionDiskIamBinding_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBinding",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleComputeRegionDiskIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBinding",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBinding",
 		"tfResourceType",
 		&returns,
 	)

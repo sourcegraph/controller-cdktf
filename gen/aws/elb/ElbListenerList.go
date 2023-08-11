@@ -116,7 +116,7 @@ func NewElbListenerList(terraformResource cdktf.IInterpolatingParent, terraformA
 	j := jsiiProxy_ElbListenerList{}
 
 	_jsii_.Create(
-		"aws.elb.ElbListenerList",
+		"@cdktf/provider-aws.elb.ElbListenerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewElbListenerList_Override(e ElbListenerList, terraformResource cdktf.IInt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elb.ElbListenerList",
+		"@cdktf/provider-aws.elb.ElbListenerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

@@ -248,7 +248,7 @@ func NewElasticacheClusterLogDeliveryConfigurationOutputReference(terraformResou
 	j := jsiiProxy_ElasticacheClusterLogDeliveryConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticacheCluster.ElasticacheClusterLogDeliveryConfigurationOutputReference",
+		"@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterLogDeliveryConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -260,7 +260,7 @@ func NewElasticacheClusterLogDeliveryConfigurationOutputReference_Override(e Ela
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticacheCluster.ElasticacheClusterLogDeliveryConfigurationOutputReference",
+		"@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterLogDeliveryConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

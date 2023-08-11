@@ -226,7 +226,7 @@ func NewDataprocJobIamBindingConditionOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataprocJobIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocJobIamBinding.DataprocJobIamBindingConditionOutputReference",
+		"@cdktf/provider-google.dataprocJobIamBinding.DataprocJobIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDataprocJobIamBindingConditionOutputReference_Override(d DataprocJobIamB
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocJobIamBinding.DataprocJobIamBindingConditionOutputReference",
+		"@cdktf/provider-google.dataprocJobIamBinding.DataprocJobIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

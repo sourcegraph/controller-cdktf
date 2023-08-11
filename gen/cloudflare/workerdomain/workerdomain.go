@@ -412,7 +412,7 @@ func NewWorkerDomain(scope constructs.Construct, id *string, config *WorkerDomai
 	j := jsiiProxy_WorkerDomain{}
 
 	_jsii_.Create(
-		"cloudflare.workerDomain.WorkerDomain",
+		"@cdktf/provider-cloudflare.workerDomain.WorkerDomain",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -425,7 +425,7 @@ func NewWorkerDomain_Override(w WorkerDomain, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.workerDomain.WorkerDomain",
+		"@cdktf/provider-cloudflare.workerDomain.WorkerDomain",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -591,7 +591,7 @@ func WorkerDomain_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.workerDomain.WorkerDomain",
+		"@cdktf/provider-cloudflare.workerDomain.WorkerDomain",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func WorkerDomain_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.workerDomain.WorkerDomain",
+		"@cdktf/provider-cloudflare.workerDomain.WorkerDomain",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func WorkerDomain_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.workerDomain.WorkerDomain",
+		"@cdktf/provider-cloudflare.workerDomain.WorkerDomain",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func WorkerDomain_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.workerDomain.WorkerDomain",
+		"@cdktf/provider-cloudflare.workerDomain.WorkerDomain",
 		"tfResourceType",
 		&returns,
 	)

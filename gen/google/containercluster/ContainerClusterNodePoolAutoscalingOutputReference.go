@@ -276,7 +276,7 @@ func NewContainerClusterNodePoolAutoscalingOutputReference(terraformResource cdk
 	j := jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterNodePoolAutoscalingOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolAutoscalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewContainerClusterNodePoolAutoscalingOutputReference_Override(c ContainerC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterNodePoolAutoscalingOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolAutoscalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.variable.Variable",
+		"@cdktf/provider-tfe.variable.Variable",
 		reflect.TypeOf((*Variable)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.variable.VariableConfig",
+		"@cdktf/provider-tfe.variable.VariableConfig",
 		reflect.TypeOf((*VariableConfig)(nil)).Elem(),
 	)
 }

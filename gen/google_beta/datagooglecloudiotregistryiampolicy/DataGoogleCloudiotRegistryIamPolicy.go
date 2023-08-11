@@ -361,7 +361,7 @@ func NewDataGoogleCloudiotRegistryIamPolicy(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataGoogleCloudiotRegistryIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudiotRegistryIamPolicy.DataGoogleCloudiotRegistryIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleCloudiotRegistryIamPolicy.DataGoogleCloudiotRegistryIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -374,7 +374,7 @@ func NewDataGoogleCloudiotRegistryIamPolicy_Override(d DataGoogleCloudiotRegistr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudiotRegistryIamPolicy.DataGoogleCloudiotRegistryIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleCloudiotRegistryIamPolicy.DataGoogleCloudiotRegistryIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -496,7 +496,7 @@ func DataGoogleCloudiotRegistryIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleCloudiotRegistryIamPolicy.DataGoogleCloudiotRegistryIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleCloudiotRegistryIamPolicy.DataGoogleCloudiotRegistryIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func DataGoogleCloudiotRegistryIamPolicy_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleCloudiotRegistryIamPolicy.DataGoogleCloudiotRegistryIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleCloudiotRegistryIamPolicy.DataGoogleCloudiotRegistryIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataGoogleCloudiotRegistryIamPolicy_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleCloudiotRegistryIamPolicy.DataGoogleCloudiotRegistryIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleCloudiotRegistryIamPolicy.DataGoogleCloudiotRegistryIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +547,7 @@ func DataGoogleCloudiotRegistryIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleCloudiotRegistryIamPolicy.DataGoogleCloudiotRegistryIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleCloudiotRegistryIamPolicy.DataGoogleCloudiotRegistryIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

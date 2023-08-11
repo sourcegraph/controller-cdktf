@@ -116,7 +116,7 @@ func NewLexSlotTypeEnumerationValueList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_LexSlotTypeEnumerationValueList{}
 
 	_jsii_.Create(
-		"aws.lexSlotType.LexSlotTypeEnumerationValueList",
+		"@cdktf/provider-aws.lexSlotType.LexSlotTypeEnumerationValueList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLexSlotTypeEnumerationValueList_Override(l LexSlotTypeEnumerationValueLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexSlotType.LexSlotTypeEnumerationValueList",
+		"@cdktf/provider-aws.lexSlotType.LexSlotTypeEnumerationValueList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

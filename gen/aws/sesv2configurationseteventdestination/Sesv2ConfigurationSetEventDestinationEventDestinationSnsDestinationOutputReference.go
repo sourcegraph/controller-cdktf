@@ -179,7 +179,7 @@ func NewSesv2ConfigurationSetEventDestinationEventDestinationSnsDestinationOutpu
 	j := jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationSnsDestinationOutputReference{}
 
 	_jsii_.Create(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationSnsDestinationOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationSnsDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewSesv2ConfigurationSetEventDestinationEventDestinationSnsDestinationOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationSnsDestinationOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationSnsDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -511,7 +511,7 @@ func NewPinpointApnsSandboxChannel(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_PinpointApnsSandboxChannel{}
 
 	_jsii_.Create(
-		"aws.pinpointApnsSandboxChannel.PinpointApnsSandboxChannel",
+		"@cdktf/provider-aws.pinpointApnsSandboxChannel.PinpointApnsSandboxChannel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -524,7 +524,7 @@ func NewPinpointApnsSandboxChannel_Override(p PinpointApnsSandboxChannel, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.pinpointApnsSandboxChannel.PinpointApnsSandboxChannel",
+		"@cdktf/provider-aws.pinpointApnsSandboxChannel.PinpointApnsSandboxChannel",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -734,7 +734,7 @@ func PinpointApnsSandboxChannel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointApnsSandboxChannel.PinpointApnsSandboxChannel",
+		"@cdktf/provider-aws.pinpointApnsSandboxChannel.PinpointApnsSandboxChannel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -753,7 +753,7 @@ func PinpointApnsSandboxChannel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointApnsSandboxChannel.PinpointApnsSandboxChannel",
+		"@cdktf/provider-aws.pinpointApnsSandboxChannel.PinpointApnsSandboxChannel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -772,7 +772,7 @@ func PinpointApnsSandboxChannel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointApnsSandboxChannel.PinpointApnsSandboxChannel",
+		"@cdktf/provider-aws.pinpointApnsSandboxChannel.PinpointApnsSandboxChannel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -785,7 +785,7 @@ func PinpointApnsSandboxChannel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.pinpointApnsSandboxChannel.PinpointApnsSandboxChannel",
+		"@cdktf/provider-aws.pinpointApnsSandboxChannel.PinpointApnsSandboxChannel",
 		"tfResourceType",
 		&returns,
 	)

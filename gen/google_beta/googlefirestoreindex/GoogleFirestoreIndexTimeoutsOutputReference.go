@@ -204,7 +204,7 @@ func NewGoogleFirestoreIndexTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_GoogleFirestoreIndexTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleFirestoreIndex.GoogleFirestoreIndexTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleFirestoreIndexTimeoutsOutputReference_Override(g GoogleFirestoreIn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirestoreIndex.GoogleFirestoreIndexTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

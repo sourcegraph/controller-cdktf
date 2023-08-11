@@ -343,7 +343,7 @@ func NewGlueDataCatalogEncryptionSettings(scope constructs.Construct, id *string
 	j := jsiiProxy_GlueDataCatalogEncryptionSettings{}
 
 	_jsii_.Create(
-		"aws.glueDataCatalogEncryptionSettings.GlueDataCatalogEncryptionSettings",
+		"@cdktf/provider-aws.glueDataCatalogEncryptionSettings.GlueDataCatalogEncryptionSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewGlueDataCatalogEncryptionSettings_Override(g GlueDataCatalogEncryptionSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueDataCatalogEncryptionSettings.GlueDataCatalogEncryptionSettings",
+		"@cdktf/provider-aws.glueDataCatalogEncryptionSettings.GlueDataCatalogEncryptionSettings",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -478,7 +478,7 @@ func GlueDataCatalogEncryptionSettings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueDataCatalogEncryptionSettings.GlueDataCatalogEncryptionSettings",
+		"@cdktf/provider-aws.glueDataCatalogEncryptionSettings.GlueDataCatalogEncryptionSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -497,7 +497,7 @@ func GlueDataCatalogEncryptionSettings_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueDataCatalogEncryptionSettings.GlueDataCatalogEncryptionSettings",
+		"@cdktf/provider-aws.glueDataCatalogEncryptionSettings.GlueDataCatalogEncryptionSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func GlueDataCatalogEncryptionSettings_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueDataCatalogEncryptionSettings.GlueDataCatalogEncryptionSettings",
+		"@cdktf/provider-aws.glueDataCatalogEncryptionSettings.GlueDataCatalogEncryptionSettings",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func GlueDataCatalogEncryptionSettings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.glueDataCatalogEncryptionSettings.GlueDataCatalogEncryptionSettings",
+		"@cdktf/provider-aws.glueDataCatalogEncryptionSettings.GlueDataCatalogEncryptionSettings",
 		"tfResourceType",
 		&returns,
 	)

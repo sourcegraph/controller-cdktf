@@ -203,7 +203,7 @@ func NewCloudSchedulerJobHttpTargetOauthTokenOutputReference(terraformResource c
 	j := jsiiProxy_CloudSchedulerJobHttpTargetOauthTokenOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudSchedulerJob.CloudSchedulerJobHttpTargetOauthTokenOutputReference",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJobHttpTargetOauthTokenOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewCloudSchedulerJobHttpTargetOauthTokenOutputReference_Override(c CloudSch
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudSchedulerJob.CloudSchedulerJobHttpTargetOauthTokenOutputReference",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJobHttpTargetOauthTokenOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

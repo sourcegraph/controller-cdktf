@@ -424,7 +424,7 @@ func NewComputeSnapshotIamBinding(scope constructs.Construct, id *string, config
 	j := jsiiProxy_ComputeSnapshotIamBinding{}
 
 	_jsii_.Create(
-		"google.computeSnapshotIamBinding.ComputeSnapshotIamBinding",
+		"@cdktf/provider-google.computeSnapshotIamBinding.ComputeSnapshotIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewComputeSnapshotIamBinding_Override(c ComputeSnapshotIamBinding, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSnapshotIamBinding.ComputeSnapshotIamBinding",
+		"@cdktf/provider-google.computeSnapshotIamBinding.ComputeSnapshotIamBinding",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -592,7 +592,7 @@ func ComputeSnapshotIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSnapshotIamBinding.ComputeSnapshotIamBinding",
+		"@cdktf/provider-google.computeSnapshotIamBinding.ComputeSnapshotIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func ComputeSnapshotIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSnapshotIamBinding.ComputeSnapshotIamBinding",
+		"@cdktf/provider-google.computeSnapshotIamBinding.ComputeSnapshotIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func ComputeSnapshotIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSnapshotIamBinding.ComputeSnapshotIamBinding",
+		"@cdktf/provider-google.computeSnapshotIamBinding.ComputeSnapshotIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func ComputeSnapshotIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeSnapshotIamBinding.ComputeSnapshotIamBinding",
+		"@cdktf/provider-google.computeSnapshotIamBinding.ComputeSnapshotIamBinding",
 		"tfResourceType",
 		&returns,
 	)

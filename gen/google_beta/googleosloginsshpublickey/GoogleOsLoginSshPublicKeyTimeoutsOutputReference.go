@@ -228,7 +228,7 @@ func NewGoogleOsLoginSshPublicKeyTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleOsLoginSshPublicKeyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOsLoginSshPublicKey.GoogleOsLoginSshPublicKeyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleOsLoginSshPublicKey.GoogleOsLoginSshPublicKeyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleOsLoginSshPublicKeyTimeoutsOutputReference_Override(g GoogleOsLogi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsLoginSshPublicKey.GoogleOsLoginSshPublicKeyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleOsLoginSshPublicKey.GoogleOsLoginSshPublicKeyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

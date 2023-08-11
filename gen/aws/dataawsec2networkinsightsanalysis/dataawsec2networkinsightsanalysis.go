@@ -472,7 +472,7 @@ func NewDataAwsEc2NetworkInsightsAnalysis(scope constructs.Construct, id *string
 	j := jsiiProxy_DataAwsEc2NetworkInsightsAnalysis{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysis",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysis",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -485,7 +485,7 @@ func NewDataAwsEc2NetworkInsightsAnalysis_Override(d DataAwsEc2NetworkInsightsAn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysis",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysis",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -596,7 +596,7 @@ func DataAwsEc2NetworkInsightsAnalysis_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysis",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysis",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -615,7 +615,7 @@ func DataAwsEc2NetworkInsightsAnalysis_IsTerraformDataSource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysis",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysis",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func DataAwsEc2NetworkInsightsAnalysis_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysis",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysis",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -647,7 +647,7 @@ func DataAwsEc2NetworkInsightsAnalysis_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysis",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysis",
 		"tfResourceType",
 		&returns,
 	)

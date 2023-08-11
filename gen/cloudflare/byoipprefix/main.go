@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.byoIpPrefix.ByoIpPrefix",
+		"@cdktf/provider-cloudflare.byoIpPrefix.ByoIpPrefix",
 		reflect.TypeOf((*ByoIpPrefix)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.byoIpPrefix.ByoIpPrefixConfig",
+		"@cdktf/provider-cloudflare.byoIpPrefix.ByoIpPrefixConfig",
 		reflect.TypeOf((*ByoIpPrefixConfig)(nil)).Elem(),
 	)
 }

@@ -299,7 +299,7 @@ func NewServiceSpecPortOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_ServiceSpecPortOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.service.ServiceSpecPortOutputReference",
+		"@cdktf/provider-kubernetes.service.ServiceSpecPortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewServiceSpecPortOutputReference_Override(s ServiceSpecPortOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.service.ServiceSpecPortOutputReference",
+		"@cdktf/provider-kubernetes.service.ServiceSpecPortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

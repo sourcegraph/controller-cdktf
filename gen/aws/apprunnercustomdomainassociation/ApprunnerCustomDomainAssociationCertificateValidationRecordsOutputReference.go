@@ -200,7 +200,7 @@ func NewApprunnerCustomDomainAssociationCertificateValidationRecordsOutputRefere
 	j := jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference{}
 
 	_jsii_.Create(
-		"aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference",
+		"@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewApprunnerCustomDomainAssociationCertificateValidationRecordsOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference",
+		"@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

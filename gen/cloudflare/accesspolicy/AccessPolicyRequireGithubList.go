@@ -116,7 +116,7 @@ func NewAccessPolicyRequireGithubList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_AccessPolicyRequireGithubList{}
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyRequireGithubList",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireGithubList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessPolicyRequireGithubList_Override(a AccessPolicyRequireGithubList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyRequireGithubList",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireGithubList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

@@ -202,7 +202,7 @@ func NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowAction
 	j := jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionOutputReference",
+		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowAction
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionOutputReference",
+		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

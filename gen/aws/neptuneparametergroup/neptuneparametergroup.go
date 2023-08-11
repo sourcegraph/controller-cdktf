@@ -449,7 +449,7 @@ func NewNeptuneParameterGroup(scope constructs.Construct, id *string, config *Ne
 	j := jsiiProxy_NeptuneParameterGroup{}
 
 	_jsii_.Create(
-		"aws.neptuneParameterGroup.NeptuneParameterGroup",
+		"@cdktf/provider-aws.neptuneParameterGroup.NeptuneParameterGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -462,7 +462,7 @@ func NewNeptuneParameterGroup_Override(n NeptuneParameterGroup, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.neptuneParameterGroup.NeptuneParameterGroup",
+		"@cdktf/provider-aws.neptuneParameterGroup.NeptuneParameterGroup",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -628,7 +628,7 @@ func NeptuneParameterGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.neptuneParameterGroup.NeptuneParameterGroup",
+		"@cdktf/provider-aws.neptuneParameterGroup.NeptuneParameterGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -647,7 +647,7 @@ func NeptuneParameterGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.neptuneParameterGroup.NeptuneParameterGroup",
+		"@cdktf/provider-aws.neptuneParameterGroup.NeptuneParameterGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func NeptuneParameterGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.neptuneParameterGroup.NeptuneParameterGroup",
+		"@cdktf/provider-aws.neptuneParameterGroup.NeptuneParameterGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func NeptuneParameterGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.neptuneParameterGroup.NeptuneParameterGroup",
+		"@cdktf/provider-aws.neptuneParameterGroup.NeptuneParameterGroup",
 		"tfResourceType",
 		&returns,
 	)

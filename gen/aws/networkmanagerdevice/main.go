@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.networkmanagerDevice.NetworkmanagerDevice",
+		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDevice",
 		reflect.TypeOf((*NetworkmanagerDevice)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -94,11 +94,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocation",
+		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocation",
 		reflect.TypeOf((*NetworkmanagerDeviceAwsLocation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocationOutputReference",
+		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocationOutputReference",
 		reflect.TypeOf((*NetworkmanagerDeviceAwsLocationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -136,15 +136,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkmanagerDevice.NetworkmanagerDeviceConfig",
+		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig",
 		reflect.TypeOf((*NetworkmanagerDeviceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkmanagerDevice.NetworkmanagerDeviceLocation",
+		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocation",
 		reflect.TypeOf((*NetworkmanagerDeviceLocation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.networkmanagerDevice.NetworkmanagerDeviceLocationOutputReference",
+		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocationOutputReference",
 		reflect.TypeOf((*NetworkmanagerDeviceLocationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
@@ -185,11 +185,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkmanagerDevice.NetworkmanagerDeviceTimeouts",
+		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeouts",
 		reflect.TypeOf((*NetworkmanagerDeviceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.networkmanagerDevice.NetworkmanagerDeviceTimeoutsOutputReference",
+		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeoutsOutputReference",
 		reflect.TypeOf((*NetworkmanagerDeviceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

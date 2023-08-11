@@ -239,7 +239,7 @@ func NewAppBookmarkUsersOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_AppBookmarkUsersOutputReference{}
 
 	_jsii_.Create(
-		"okta.appBookmark.AppBookmarkUsersOutputReference",
+		"@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -251,7 +251,7 @@ func NewAppBookmarkUsersOutputReference_Override(a AppBookmarkUsersOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appBookmark.AppBookmarkUsersOutputReference",
+		"@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

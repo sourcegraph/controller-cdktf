@@ -228,7 +228,7 @@ func NewCloudsearchDomainScalingParametersOutputReference(terraformResource cdkt
 	j := jsiiProxy_CloudsearchDomainScalingParametersOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudsearchDomain.CloudsearchDomainScalingParametersOutputReference",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainScalingParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCloudsearchDomainScalingParametersOutputReference_Override(c Cloudsearch
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudsearchDomain.CloudsearchDomainScalingParametersOutputReference",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainScalingParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

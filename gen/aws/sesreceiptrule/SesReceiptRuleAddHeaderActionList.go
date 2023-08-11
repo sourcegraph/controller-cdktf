@@ -116,7 +116,7 @@ func NewSesReceiptRuleAddHeaderActionList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_SesReceiptRuleAddHeaderActionList{}
 
 	_jsii_.Create(
-		"aws.sesReceiptRule.SesReceiptRuleAddHeaderActionList",
+		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSesReceiptRuleAddHeaderActionList_Override(s SesReceiptRuleAddHeaderActi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesReceiptRule.SesReceiptRuleAddHeaderActionList",
+		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.cloudRunDomainMapping.CloudRunDomainMapping",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMapping",
 		reflect.TypeOf((*CloudRunDomainMapping)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingConfig",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingConfig",
 		reflect.TypeOf((*CloudRunDomainMappingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingMetadata",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingMetadata",
 		reflect.TypeOf((*CloudRunDomainMappingMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingMetadataOutputReference",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingMetadataOutputReference",
 		reflect.TypeOf((*CloudRunDomainMappingMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -125,11 +125,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingSpec",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingSpec",
 		reflect.TypeOf((*CloudRunDomainMappingSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingSpecOutputReference",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingSpecOutputReference",
 		reflect.TypeOf((*CloudRunDomainMappingSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateMode", GoGetter: "CertificateMode"},
@@ -169,15 +169,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingStatus",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatus",
 		reflect.TypeOf((*CloudRunDomainMappingStatus)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingStatusConditions",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatusConditions",
 		reflect.TypeOf((*CloudRunDomainMappingStatusConditions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingStatusConditionsList",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatusConditionsList",
 		reflect.TypeOf((*CloudRunDomainMappingStatusConditionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -197,7 +197,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingStatusConditionsOutputReference",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatusConditionsOutputReference",
 		reflect.TypeOf((*CloudRunDomainMappingStatusConditionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -233,7 +233,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingStatusList",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatusList",
 		reflect.TypeOf((*CloudRunDomainMappingStatusList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -253,7 +253,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingStatusOutputReference",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatusOutputReference",
 		reflect.TypeOf((*CloudRunDomainMappingStatusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -289,11 +289,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingStatusResourceRecords",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatusResourceRecords",
 		reflect.TypeOf((*CloudRunDomainMappingStatusResourceRecords)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingStatusResourceRecordsList",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatusResourceRecordsList",
 		reflect.TypeOf((*CloudRunDomainMappingStatusResourceRecordsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -313,7 +313,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingStatusResourceRecordsOutputReference",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatusResourceRecordsOutputReference",
 		reflect.TypeOf((*CloudRunDomainMappingStatusResourceRecordsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -348,11 +348,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingTimeouts",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingTimeouts",
 		reflect.TypeOf((*CloudRunDomainMappingTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingTimeoutsOutputReference",
 		reflect.TypeOf((*CloudRunDomainMappingTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

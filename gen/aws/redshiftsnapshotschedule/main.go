@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.redshiftSnapshotSchedule.RedshiftSnapshotSchedule",
+		"@cdktf/provider-aws.redshiftSnapshotSchedule.RedshiftSnapshotSchedule",
 		reflect.TypeOf((*RedshiftSnapshotSchedule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.redshiftSnapshotSchedule.RedshiftSnapshotScheduleConfig",
+		"@cdktf/provider-aws.redshiftSnapshotSchedule.RedshiftSnapshotScheduleConfig",
 		reflect.TypeOf((*RedshiftSnapshotScheduleConfig)(nil)).Elem(),
 	)
 }

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeDiskIamBinding.GoogleComputeDiskIamBinding",
+		"@cdktf/provider-google-beta.googleComputeDiskIamBinding.GoogleComputeDiskIamBinding",
 		reflect.TypeOf((*GoogleComputeDiskIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeDiskIamBinding.GoogleComputeDiskIamBindingCondition",
+		"@cdktf/provider-google-beta.googleComputeDiskIamBinding.GoogleComputeDiskIamBindingCondition",
 		reflect.TypeOf((*GoogleComputeDiskIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeDiskIamBinding.GoogleComputeDiskIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeDiskIamBinding.GoogleComputeDiskIamBindingConditionOutputReference",
 		reflect.TypeOf((*GoogleComputeDiskIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeDiskIamBinding.GoogleComputeDiskIamBindingConfig",
+		"@cdktf/provider-google-beta.googleComputeDiskIamBinding.GoogleComputeDiskIamBindingConfig",
 		reflect.TypeOf((*GoogleComputeDiskIamBindingConfig)(nil)).Elem(),
 	)
 }

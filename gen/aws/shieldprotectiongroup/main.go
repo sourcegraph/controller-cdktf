@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.shieldProtectionGroup.ShieldProtectionGroup",
+		"@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup",
 		reflect.TypeOf((*ShieldProtectionGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.shieldProtectionGroup.ShieldProtectionGroupConfig",
+		"@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroupConfig",
 		reflect.TypeOf((*ShieldProtectionGroupConfig)(nil)).Elem(),
 	)
 }

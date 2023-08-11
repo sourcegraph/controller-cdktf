@@ -301,7 +301,7 @@ func NewDataAwsPartition(scope constructs.Construct, id *string, config *DataAws
 	j := jsiiProxy_DataAwsPartition{}
 
 	_jsii_.Create(
-		"aws.dataAwsPartition.DataAwsPartition",
+		"@cdktf/provider-aws.dataAwsPartition.DataAwsPartition",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -314,7 +314,7 @@ func NewDataAwsPartition_Override(d DataAwsPartition, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsPartition.DataAwsPartition",
+		"@cdktf/provider-aws.dataAwsPartition.DataAwsPartition",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -403,7 +403,7 @@ func DataAwsPartition_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsPartition.DataAwsPartition",
+		"@cdktf/provider-aws.dataAwsPartition.DataAwsPartition",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -422,7 +422,7 @@ func DataAwsPartition_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsPartition.DataAwsPartition",
+		"@cdktf/provider-aws.dataAwsPartition.DataAwsPartition",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -441,7 +441,7 @@ func DataAwsPartition_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsPartition.DataAwsPartition",
+		"@cdktf/provider-aws.dataAwsPartition.DataAwsPartition",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -454,7 +454,7 @@ func DataAwsPartition_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsPartition.DataAwsPartition",
+		"@cdktf/provider-aws.dataAwsPartition.DataAwsPartition",
 		"tfResourceType",
 		&returns,
 	)

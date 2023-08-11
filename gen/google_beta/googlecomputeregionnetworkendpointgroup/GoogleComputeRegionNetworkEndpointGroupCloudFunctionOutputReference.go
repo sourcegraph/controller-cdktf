@@ -204,7 +204,7 @@ func NewGoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputReference(terr
 	j := jsiiProxy_GoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

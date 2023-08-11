@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.mskconnectWorkerConfiguration.MskconnectWorkerConfiguration",
+		"@cdktf/provider-aws.mskconnectWorkerConfiguration.MskconnectWorkerConfiguration",
 		reflect.TypeOf((*MskconnectWorkerConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskconnectWorkerConfiguration.MskconnectWorkerConfigurationConfig",
+		"@cdktf/provider-aws.mskconnectWorkerConfiguration.MskconnectWorkerConfigurationConfig",
 		reflect.TypeOf((*MskconnectWorkerConfigurationConfig)(nil)).Elem(),
 	)
 }

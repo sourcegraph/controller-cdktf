@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dialogflowAgent.DialogflowAgent",
+		"@cdktf/provider-google.dialogflowAgent.DialogflowAgent",
 		reflect.TypeOf((*DialogflowAgent)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,15 +93,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowAgent.DialogflowAgentConfig",
+		"@cdktf/provider-google.dialogflowAgent.DialogflowAgentConfig",
 		reflect.TypeOf((*DialogflowAgentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowAgent.DialogflowAgentTimeouts",
+		"@cdktf/provider-google.dialogflowAgent.DialogflowAgentTimeouts",
 		reflect.TypeOf((*DialogflowAgentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowAgent.DialogflowAgentTimeoutsOutputReference",
+		"@cdktf/provider-google.dialogflowAgent.DialogflowAgentTimeoutsOutputReference",
 		reflect.TypeOf((*DialogflowAgentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -203,7 +203,7 @@ func NewAppmeshGatewayRouteSpecHttp2RouteActionOutputReference(terraformResource
 	j := jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAppmeshGatewayRouteSpecHttp2RouteActionOutputReference_Override(a Appmes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

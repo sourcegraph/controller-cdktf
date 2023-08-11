@@ -226,7 +226,7 @@ func NewDataGoogleIamPolicyBindingOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_DataGoogleIamPolicyBindingOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingOutputReference",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDataGoogleIamPolicyBindingOutputReference_Override(d DataGoogleIamPolicy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingOutputReference",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

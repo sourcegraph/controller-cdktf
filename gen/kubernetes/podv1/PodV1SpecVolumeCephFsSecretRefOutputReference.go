@@ -204,7 +204,7 @@ func NewPodV1SpecVolumeCephFsSecretRefOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_PodV1SpecVolumeCephFsSecretRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumeCephFsSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeCephFsSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPodV1SpecVolumeCephFsSecretRefOutputReference_Override(p PodV1SpecVolume
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumeCephFsSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeCephFsSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

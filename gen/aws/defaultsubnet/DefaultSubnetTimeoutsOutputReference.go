@@ -204,7 +204,7 @@ func NewDefaultSubnetTimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_DefaultSubnetTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.defaultSubnet.DefaultSubnetTimeoutsOutputReference",
+		"@cdktf/provider-aws.defaultSubnet.DefaultSubnetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDefaultSubnetTimeoutsOutputReference_Override(d DefaultSubnetTimeoutsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.defaultSubnet.DefaultSubnetTimeoutsOutputReference",
+		"@cdktf/provider-aws.defaultSubnet.DefaultSubnetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

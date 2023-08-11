@@ -448,7 +448,7 @@ func NewGoogleDataprocJobIamMember(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleDataprocJobIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocJobIamMember.GoogleDataprocJobIamMember",
+		"@cdktf/provider-google-beta.googleDataprocJobIamMember.GoogleDataprocJobIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleDataprocJobIamMember_Override(g GoogleDataprocJobIamMember, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocJobIamMember.GoogleDataprocJobIamMember",
+		"@cdktf/provider-google-beta.googleDataprocJobIamMember.GoogleDataprocJobIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleDataprocJobIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocJobIamMember.GoogleDataprocJobIamMember",
+		"@cdktf/provider-google-beta.googleDataprocJobIamMember.GoogleDataprocJobIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleDataprocJobIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocJobIamMember.GoogleDataprocJobIamMember",
+		"@cdktf/provider-google-beta.googleDataprocJobIamMember.GoogleDataprocJobIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleDataprocJobIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocJobIamMember.GoogleDataprocJobIamMember",
+		"@cdktf/provider-google-beta.googleDataprocJobIamMember.GoogleDataprocJobIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleDataprocJobIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataprocJobIamMember.GoogleDataprocJobIamMember",
+		"@cdktf/provider-google-beta.googleDataprocJobIamMember.GoogleDataprocJobIamMember",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewWafregionalByteMatchSetByteMatchTuplesList(terraformResource cdktf.IInte
 	j := jsiiProxy_WafregionalByteMatchSetByteMatchTuplesList{}
 
 	_jsii_.Create(
-		"aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesList",
+		"@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafregionalByteMatchSetByteMatchTuplesList_Override(w WafregionalByteMat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesList",
+		"@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

@@ -116,7 +116,7 @@ func NewComputeInstanceGroupManagerStatefulDiskList(terraformResource cdktf.IInt
 	j := jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList{}
 
 	_jsii_.Create(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskList",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeInstanceGroupManagerStatefulDiskList_Override(c ComputeInstanceGr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskList",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

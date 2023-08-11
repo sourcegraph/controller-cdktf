@@ -401,7 +401,7 @@ func NewGoogleCloudRunV2JobIamPolicy(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleCloudRunV2JobIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleCloudRunV2JobIamPolicy_Override(g GoogleCloudRunV2JobIamPolicy, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GoogleCloudRunV2JobIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GoogleCloudRunV2JobIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GoogleCloudRunV2JobIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GoogleCloudRunV2JobIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

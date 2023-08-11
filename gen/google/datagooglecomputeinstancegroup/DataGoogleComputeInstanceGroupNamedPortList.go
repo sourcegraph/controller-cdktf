@@ -104,7 +104,7 @@ func NewDataGoogleComputeInstanceGroupNamedPortList(terraformResource cdktf.IInt
 	j := jsiiProxy_DataGoogleComputeInstanceGroupNamedPortList{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupNamedPortList",
+		"@cdktf/provider-google.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupNamedPortList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeInstanceGroupNamedPortList_Override(d DataGoogleCompute
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupNamedPortList",
+		"@cdktf/provider-google.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupNamedPortList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -529,7 +529,7 @@ func NewDataGoogleComputeSnapshot(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DataGoogleComputeSnapshot{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot",
+		"@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -542,7 +542,7 @@ func NewDataGoogleComputeSnapshot_Override(d DataGoogleComputeSnapshot, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot",
+		"@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -675,7 +675,7 @@ func DataGoogleComputeSnapshot_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot",
+		"@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -694,7 +694,7 @@ func DataGoogleComputeSnapshot_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot",
+		"@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -713,7 +713,7 @@ func DataGoogleComputeSnapshot_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot",
+		"@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -726,7 +726,7 @@ func DataGoogleComputeSnapshot_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot",
+		"@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot",
 		"tfResourceType",
 		&returns,
 	)

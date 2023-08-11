@@ -222,7 +222,7 @@ func NewDataAwsDxRouterConfigurationRouterOutputReference(terraformResource cdkt
 	j := jsiiProxy_DataAwsDxRouterConfigurationRouterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterOutputReference",
+		"@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -234,7 +234,7 @@ func NewDataAwsDxRouterConfigurationRouterOutputReference_Override(d DataAwsDxRo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterOutputReference",
+		"@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

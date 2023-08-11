@@ -360,7 +360,7 @@ func NewDataAwsKmsCustomKeyStore(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataAwsKmsCustomKeyStore{}
 
 	_jsii_.Create(
-		"aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore",
+		"@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -373,7 +373,7 @@ func NewDataAwsKmsCustomKeyStore_Override(d DataAwsKmsCustomKeyStore, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore",
+		"@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -484,7 +484,7 @@ func DataAwsKmsCustomKeyStore_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore",
+		"@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -503,7 +503,7 @@ func DataAwsKmsCustomKeyStore_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore",
+		"@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -522,7 +522,7 @@ func DataAwsKmsCustomKeyStore_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore",
+		"@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -535,7 +535,7 @@ func DataAwsKmsCustomKeyStore_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore",
+		"@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore",
 		"tfResourceType",
 		&returns,
 	)

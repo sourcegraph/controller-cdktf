@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.cloudRunV2ServiceIamPolicy.CloudRunV2ServiceIamPolicy",
+		"@cdktf/provider-google.cloudRunV2ServiceIamPolicy.CloudRunV2ServiceIamPolicy",
 		reflect.TypeOf((*CloudRunV2ServiceIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudRunV2ServiceIamPolicy.CloudRunV2ServiceIamPolicyConfig",
+		"@cdktf/provider-google.cloudRunV2ServiceIamPolicy.CloudRunV2ServiceIamPolicyConfig",
 		reflect.TypeOf((*CloudRunV2ServiceIamPolicyConfig)(nil)).Elem(),
 	)
 }

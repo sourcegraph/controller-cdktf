@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfile",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfile",
 		reflect.TypeOf((*DatastreamConnectionProfile)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -100,11 +100,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfileBigqueryProfile",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileBigqueryProfile",
 		reflect.TypeOf((*DatastreamConnectionProfileBigqueryProfile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfileBigqueryProfileOutputReference",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileBigqueryProfileOutputReference",
 		reflect.TypeOf((*DatastreamConnectionProfileBigqueryProfileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -136,15 +136,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfileConfig",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileConfig",
 		reflect.TypeOf((*DatastreamConnectionProfileConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfileForwardSshConnectivity",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileForwardSshConnectivity",
 		reflect.TypeOf((*DatastreamConnectionProfileForwardSshConnectivity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfileForwardSshConnectivityOutputReference",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileForwardSshConnectivityOutputReference",
 		reflect.TypeOf((*DatastreamConnectionProfileForwardSshConnectivityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -189,11 +189,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfileGcsProfile",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileGcsProfile",
 		reflect.TypeOf((*DatastreamConnectionProfileGcsProfile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfileGcsProfileOutputReference",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileGcsProfileOutputReference",
 		reflect.TypeOf((*DatastreamConnectionProfileGcsProfileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -230,11 +230,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfile",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfile",
 		reflect.TypeOf((*DatastreamConnectionProfileMysqlProfile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfileOutputReference",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfileOutputReference",
 		reflect.TypeOf((*DatastreamConnectionProfileMysqlProfileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -279,11 +279,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfileSslConfig",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfileSslConfig",
 		reflect.TypeOf((*DatastreamConnectionProfileMysqlProfileSslConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfileSslConfigOutputReference",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfileSslConfigOutputReference",
 		reflect.TypeOf((*DatastreamConnectionProfileMysqlProfileSslConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caCertificate", GoGetter: "CaCertificate"},
@@ -327,11 +327,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfileOracleProfile",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileOracleProfile",
 		reflect.TypeOf((*DatastreamConnectionProfileOracleProfile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfileOracleProfileOutputReference",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileOracleProfileOutputReference",
 		reflect.TypeOf((*DatastreamConnectionProfileOracleProfileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -377,11 +377,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfile",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfile",
 		reflect.TypeOf((*DatastreamConnectionProfilePostgresqlProfile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileOutputReference",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileOutputReference",
 		reflect.TypeOf((*DatastreamConnectionProfilePostgresqlProfileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -424,11 +424,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfilePrivateConnectivity",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePrivateConnectivity",
 		reflect.TypeOf((*DatastreamConnectionProfilePrivateConnectivity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfilePrivateConnectivityOutputReference",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePrivateConnectivityOutputReference",
 		reflect.TypeOf((*DatastreamConnectionProfilePrivateConnectivityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -462,11 +462,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfileTimeouts",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileTimeouts",
 		reflect.TypeOf((*DatastreamConnectionProfileTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfileTimeoutsOutputReference",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileTimeoutsOutputReference",
 		reflect.TypeOf((*DatastreamConnectionProfileTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

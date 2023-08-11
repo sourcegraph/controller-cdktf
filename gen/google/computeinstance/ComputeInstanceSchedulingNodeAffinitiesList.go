@@ -116,7 +116,7 @@ func NewComputeInstanceSchedulingNodeAffinitiesList(terraformResource cdktf.IInt
 	j := jsiiProxy_ComputeInstanceSchedulingNodeAffinitiesList{}
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceSchedulingNodeAffinitiesList",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceSchedulingNodeAffinitiesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeInstanceSchedulingNodeAffinitiesList_Override(c ComputeInstanceSc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceSchedulingNodeAffinitiesList",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceSchedulingNodeAffinitiesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

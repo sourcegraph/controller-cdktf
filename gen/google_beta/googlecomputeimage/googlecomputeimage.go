@@ -699,7 +699,7 @@ func NewGoogleComputeImage(scope constructs.Construct, id *string, config *Googl
 	j := jsiiProxy_GoogleComputeImage{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeImage.GoogleComputeImage",
+		"@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImage",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -712,7 +712,7 @@ func NewGoogleComputeImage_Override(g GoogleComputeImage, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeImage.GoogleComputeImage",
+		"@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImage",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -944,7 +944,7 @@ func GoogleComputeImage_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeImage.GoogleComputeImage",
+		"@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImage",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -963,7 +963,7 @@ func GoogleComputeImage_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeImage.GoogleComputeImage",
+		"@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImage",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -982,7 +982,7 @@ func GoogleComputeImage_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeImage.GoogleComputeImage",
+		"@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImage",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -995,7 +995,7 @@ func GoogleComputeImage_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeImage.GoogleComputeImage",
+		"@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImage",
 		"tfResourceType",
 		&returns,
 	)

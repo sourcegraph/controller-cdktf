@@ -179,7 +179,7 @@ func NewDatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference(terraform
 	j := jsiiProxy_DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference{}
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

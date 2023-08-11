@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.wafregionalWebAclAssociation.WafregionalWebAclAssociation",
+		"@cdktf/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociation",
 		reflect.TypeOf((*WafregionalWebAclAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafregionalWebAclAssociation.WafregionalWebAclAssociationConfig",
+		"@cdktf/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociationConfig",
 		reflect.TypeOf((*WafregionalWebAclAssociationConfig)(nil)).Elem(),
 	)
 }

@@ -104,7 +104,7 @@ func NewDataAwsCloudhsmV2ClusterClusterCertificatesList(terraformResource cdktf.
 	j := jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesList{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudhsmV2Cluster.DataAwsCloudhsmV2ClusterClusterCertificatesList",
+		"@cdktf/provider-aws.dataAwsCloudhsmV2Cluster.DataAwsCloudhsmV2ClusterClusterCertificatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsCloudhsmV2ClusterClusterCertificatesList_Override(d DataAwsCloudh
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudhsmV2Cluster.DataAwsCloudhsmV2ClusterClusterCertificatesList",
+		"@cdktf/provider-aws.dataAwsCloudhsmV2Cluster.DataAwsCloudhsmV2ClusterClusterCertificatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

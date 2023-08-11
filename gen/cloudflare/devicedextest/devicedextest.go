@@ -456,7 +456,7 @@ func NewDeviceDexTest(scope constructs.Construct, id *string, config *DeviceDexT
 	j := jsiiProxy_DeviceDexTest{}
 
 	_jsii_.Create(
-		"cloudflare.deviceDexTest.DeviceDexTest",
+		"@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -469,7 +469,7 @@ func NewDeviceDexTest_Override(d DeviceDexTest, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.deviceDexTest.DeviceDexTest",
+		"@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -635,7 +635,7 @@ func DeviceDexTest_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.deviceDexTest.DeviceDexTest",
+		"@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func DeviceDexTest_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.deviceDexTest.DeviceDexTest",
+		"@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -673,7 +673,7 @@ func DeviceDexTest_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.deviceDexTest.DeviceDexTest",
+		"@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -686,7 +686,7 @@ func DeviceDexTest_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.deviceDexTest.DeviceDexTest",
+		"@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest",
 		"tfResourceType",
 		&returns,
 	)

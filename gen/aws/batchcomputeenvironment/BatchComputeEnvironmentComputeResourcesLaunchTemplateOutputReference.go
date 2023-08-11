@@ -228,7 +228,7 @@ func NewBatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference(ter
 	j := jsiiProxy_BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference{}
 
 	_jsii_.Create(
-		"aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference",
+		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewBatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference",
+		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

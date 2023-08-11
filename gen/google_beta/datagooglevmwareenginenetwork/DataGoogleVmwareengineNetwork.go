@@ -393,7 +393,7 @@ func NewDataGoogleVmwareengineNetwork(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataGoogleVmwareengineNetwork{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetwork",
+		"@cdktf/provider-google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetwork",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -406,7 +406,7 @@ func NewDataGoogleVmwareengineNetwork_Override(d DataGoogleVmwareengineNetwork, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetwork",
+		"@cdktf/provider-google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetwork",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -528,7 +528,7 @@ func DataGoogleVmwareengineNetwork_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetwork",
+		"@cdktf/provider-google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetwork",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +547,7 @@ func DataGoogleVmwareengineNetwork_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetwork",
+		"@cdktf/provider-google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetwork",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -566,7 +566,7 @@ func DataGoogleVmwareengineNetwork_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetwork",
+		"@cdktf/provider-google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetwork",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -579,7 +579,7 @@ func DataGoogleVmwareengineNetwork_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetwork",
+		"@cdktf/provider-google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetwork",
 		"tfResourceType",
 		&returns,
 	)

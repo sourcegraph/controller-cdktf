@@ -204,7 +204,7 @@ func NewComputeImageImageEncryptionKeyOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_ComputeImageImageEncryptionKeyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeImage.ComputeImageImageEncryptionKeyOutputReference",
+		"@cdktf/provider-google.computeImage.ComputeImageImageEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeImageImageEncryptionKeyOutputReference_Override(c ComputeImageIma
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeImage.ComputeImageImageEncryptionKeyOutputReference",
+		"@cdktf/provider-google.computeImage.ComputeImageImageEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

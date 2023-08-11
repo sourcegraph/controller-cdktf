@@ -393,7 +393,7 @@ func NewDataAwsEcsService(scope constructs.Construct, id *string, config *DataAw
 	j := jsiiProxy_DataAwsEcsService{}
 
 	_jsii_.Create(
-		"aws.dataAwsEcsService.DataAwsEcsService",
+		"@cdktf/provider-aws.dataAwsEcsService.DataAwsEcsService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -406,7 +406,7 @@ func NewDataAwsEcsService_Override(d DataAwsEcsService, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEcsService.DataAwsEcsService",
+		"@cdktf/provider-aws.dataAwsEcsService.DataAwsEcsService",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -528,7 +528,7 @@ func DataAwsEcsService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEcsService.DataAwsEcsService",
+		"@cdktf/provider-aws.dataAwsEcsService.DataAwsEcsService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +547,7 @@ func DataAwsEcsService_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEcsService.DataAwsEcsService",
+		"@cdktf/provider-aws.dataAwsEcsService.DataAwsEcsService",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -566,7 +566,7 @@ func DataAwsEcsService_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEcsService.DataAwsEcsService",
+		"@cdktf/provider-aws.dataAwsEcsService.DataAwsEcsService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -579,7 +579,7 @@ func DataAwsEcsService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEcsService.DataAwsEcsService",
+		"@cdktf/provider-aws.dataAwsEcsService.DataAwsEcsService",
 		"tfResourceType",
 		&returns,
 	)

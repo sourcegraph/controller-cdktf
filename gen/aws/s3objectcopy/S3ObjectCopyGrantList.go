@@ -116,7 +116,7 @@ func NewS3ObjectCopyGrantList(terraformResource cdktf.IInterpolatingParent, terr
 	j := jsiiProxy_S3ObjectCopyGrantList{}
 
 	_jsii_.Create(
-		"aws.s3ObjectCopy.S3ObjectCopyGrantList",
+		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewS3ObjectCopyGrantList_Override(s S3ObjectCopyGrantList, terraformResourc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3ObjectCopy.S3ObjectCopyGrantList",
+		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

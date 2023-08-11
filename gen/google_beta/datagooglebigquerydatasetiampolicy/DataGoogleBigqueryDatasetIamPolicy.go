@@ -337,7 +337,7 @@ func NewDataGoogleBigqueryDatasetIamPolicy(scope constructs.Construct, id *strin
 	j := jsiiProxy_DataGoogleBigqueryDatasetIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBigqueryDatasetIamPolicy.DataGoogleBigqueryDatasetIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryDatasetIamPolicy.DataGoogleBigqueryDatasetIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -350,7 +350,7 @@ func NewDataGoogleBigqueryDatasetIamPolicy_Override(d DataGoogleBigqueryDatasetI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBigqueryDatasetIamPolicy.DataGoogleBigqueryDatasetIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryDatasetIamPolicy.DataGoogleBigqueryDatasetIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -461,7 +461,7 @@ func DataGoogleBigqueryDatasetIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBigqueryDatasetIamPolicy.DataGoogleBigqueryDatasetIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryDatasetIamPolicy.DataGoogleBigqueryDatasetIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataGoogleBigqueryDatasetIamPolicy_IsTerraformDataSource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBigqueryDatasetIamPolicy.DataGoogleBigqueryDatasetIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryDatasetIamPolicy.DataGoogleBigqueryDatasetIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataGoogleBigqueryDatasetIamPolicy_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBigqueryDatasetIamPolicy.DataGoogleBigqueryDatasetIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryDatasetIamPolicy.DataGoogleBigqueryDatasetIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataGoogleBigqueryDatasetIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleBigqueryDatasetIamPolicy.DataGoogleBigqueryDatasetIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryDatasetIamPolicy.DataGoogleBigqueryDatasetIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

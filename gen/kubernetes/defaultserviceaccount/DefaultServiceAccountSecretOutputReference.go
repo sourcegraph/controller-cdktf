@@ -180,7 +180,7 @@ func NewDefaultServiceAccountSecretOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_DefaultServiceAccountSecretOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.defaultServiceAccount.DefaultServiceAccountSecretOutputReference",
+		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountSecretOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDefaultServiceAccountSecretOutputReference_Override(d DefaultServiceAcco
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.defaultServiceAccount.DefaultServiceAccountSecretOutputReference",
+		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountSecretOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

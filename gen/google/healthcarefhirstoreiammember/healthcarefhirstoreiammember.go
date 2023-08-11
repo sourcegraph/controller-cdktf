@@ -400,7 +400,7 @@ func NewHealthcareFhirStoreIamMember(scope constructs.Construct, id *string, con
 	j := jsiiProxy_HealthcareFhirStoreIamMember{}
 
 	_jsii_.Create(
-		"google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMember",
+		"@cdktf/provider-google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewHealthcareFhirStoreIamMember_Override(h HealthcareFhirStoreIamMember, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMember",
+		"@cdktf/provider-google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMember",
 		[]interface{}{scope, id, config},
 		h,
 	)
@@ -557,7 +557,7 @@ func HealthcareFhirStoreIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMember",
+		"@cdktf/provider-google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func HealthcareFhirStoreIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMember",
+		"@cdktf/provider-google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func HealthcareFhirStoreIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMember",
+		"@cdktf/provider-google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func HealthcareFhirStoreIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMember",
+		"@cdktf/provider-google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMember",
 		"tfResourceType",
 		&returns,
 	)

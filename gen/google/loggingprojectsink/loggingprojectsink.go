@@ -521,7 +521,7 @@ func NewLoggingProjectSink(scope constructs.Construct, id *string, config *Loggi
 	j := jsiiProxy_LoggingProjectSink{}
 
 	_jsii_.Create(
-		"google.loggingProjectSink.LoggingProjectSink",
+		"@cdktf/provider-google.loggingProjectSink.LoggingProjectSink",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -534,7 +534,7 @@ func NewLoggingProjectSink_Override(l LoggingProjectSink, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingProjectSink.LoggingProjectSink",
+		"@cdktf/provider-google.loggingProjectSink.LoggingProjectSink",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -722,7 +722,7 @@ func LoggingProjectSink_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingProjectSink.LoggingProjectSink",
+		"@cdktf/provider-google.loggingProjectSink.LoggingProjectSink",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -741,7 +741,7 @@ func LoggingProjectSink_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingProjectSink.LoggingProjectSink",
+		"@cdktf/provider-google.loggingProjectSink.LoggingProjectSink",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -760,7 +760,7 @@ func LoggingProjectSink_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingProjectSink.LoggingProjectSink",
+		"@cdktf/provider-google.loggingProjectSink.LoggingProjectSink",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -773,7 +773,7 @@ func LoggingProjectSink_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.loggingProjectSink.LoggingProjectSink",
+		"@cdktf/provider-google.loggingProjectSink.LoggingProjectSink",
 		"tfResourceType",
 		&returns,
 	)

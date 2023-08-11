@@ -116,7 +116,7 @@ func NewComputeUrlMapDefaultRouteActionWeightedBackendServicesList(terraformReso
 	j := jsiiProxy_ComputeUrlMapDefaultRouteActionWeightedBackendServicesList{}
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapDefaultRouteActionWeightedBackendServicesList",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapDefaultRouteActionWeightedBackendServicesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeUrlMapDefaultRouteActionWeightedBackendServicesList_Override(c Co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapDefaultRouteActionWeightedBackendServicesList",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapDefaultRouteActionWeightedBackendServicesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

@@ -116,7 +116,7 @@ func NewPodSecurityPolicyV1Beta1SpecAllowedFlexVolumesList(terraformResource cdk
 	j := jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedFlexVolumesList{}
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1SpecAllowedFlexVolumesList",
+		"@cdktf/provider-kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1SpecAllowedFlexVolumesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodSecurityPolicyV1Beta1SpecAllowedFlexVolumesList_Override(p PodSecurit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1SpecAllowedFlexVolumesList",
+		"@cdktf/provider-kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1SpecAllowedFlexVolumesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

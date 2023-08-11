@@ -484,7 +484,7 @@ func NewRedshiftScheduledAction(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_RedshiftScheduledAction{}
 
 	_jsii_.Create(
-		"aws.redshiftScheduledAction.RedshiftScheduledAction",
+		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledAction",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -497,7 +497,7 @@ func NewRedshiftScheduledAction_Override(r RedshiftScheduledAction, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftScheduledAction.RedshiftScheduledAction",
+		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledAction",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -685,7 +685,7 @@ func RedshiftScheduledAction_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftScheduledAction.RedshiftScheduledAction",
+		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledAction",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -704,7 +704,7 @@ func RedshiftScheduledAction_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftScheduledAction.RedshiftScheduledAction",
+		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledAction",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -723,7 +723,7 @@ func RedshiftScheduledAction_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftScheduledAction.RedshiftScheduledAction",
+		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledAction",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -736,7 +736,7 @@ func RedshiftScheduledAction_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.redshiftScheduledAction.RedshiftScheduledAction",
+		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledAction",
 		"tfResourceType",
 		&returns,
 	)

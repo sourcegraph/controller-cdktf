@@ -116,7 +116,7 @@ func NewGameliftFleetRuntimeConfigurationServerProcessList(terraformResource cdk
 	j := jsiiProxy_GameliftFleetRuntimeConfigurationServerProcessList{}
 
 	_jsii_.Create(
-		"aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcessList",
+		"@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcessList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGameliftFleetRuntimeConfigurationServerProcessList_Override(g GameliftFl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcessList",
+		"@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcessList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

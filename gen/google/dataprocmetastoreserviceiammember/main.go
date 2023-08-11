@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMember",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMember",
 		reflect.TypeOf((*DataprocMetastoreServiceIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberCondition",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberCondition",
 		reflect.TypeOf((*DataprocMetastoreServiceIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConditionOutputReference",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConditionOutputReference",
 		reflect.TypeOf((*DataprocMetastoreServiceIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConfig",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConfig",
 		reflect.TypeOf((*DataprocMetastoreServiceIamMemberConfig)(nil)).Elem(),
 	)
 }

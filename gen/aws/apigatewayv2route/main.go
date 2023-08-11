@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.apigatewayv2Route.Apigatewayv2Route",
+		"@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2Route",
 		reflect.TypeOf((*Apigatewayv2Route)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,15 +90,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apigatewayv2Route.Apigatewayv2RouteConfig",
+		"@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteConfig",
 		reflect.TypeOf((*Apigatewayv2RouteConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.apigatewayv2Route.Apigatewayv2RouteRequestParameter",
+		"@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteRequestParameter",
 		reflect.TypeOf((*Apigatewayv2RouteRequestParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apigatewayv2Route.Apigatewayv2RouteRequestParameterList",
+		"@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteRequestParameterList",
 		reflect.TypeOf((*Apigatewayv2RouteRequestParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -119,7 +119,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.apigatewayv2Route.Apigatewayv2RouteRequestParameterOutputReference",
+		"@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteRequestParameterOutputReference",
 		reflect.TypeOf((*Apigatewayv2RouteRequestParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

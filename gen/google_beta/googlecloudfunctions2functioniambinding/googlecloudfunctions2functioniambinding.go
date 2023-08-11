@@ -448,7 +448,7 @@ func NewGoogleCloudfunctions2FunctionIamBinding(scope constructs.Construct, id *
 	j := jsiiProxy_GoogleCloudfunctions2FunctionIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBinding",
+		"@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleCloudfunctions2FunctionIamBinding_Override(g GoogleCloudfunctions2
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBinding",
+		"@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleCloudfunctions2FunctionIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBinding",
+		"@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleCloudfunctions2FunctionIamBinding_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBinding",
+		"@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleCloudfunctions2FunctionIamBinding_IsTerraformResource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBinding",
+		"@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleCloudfunctions2FunctionIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBinding",
+		"@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBinding",
 		"tfResourceType",
 		&returns,
 	)

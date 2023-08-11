@@ -104,7 +104,7 @@ func NewDataGooglePubsubSubscriptionPushConfigOidcTokenList(terraformResource cd
 	j := jsiiProxy_DataGooglePubsubSubscriptionPushConfigOidcTokenList{}
 
 	_jsii_.Create(
-		"google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOidcTokenList",
+		"@cdktf/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOidcTokenList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGooglePubsubSubscriptionPushConfigOidcTokenList_Override(d DataGoogl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOidcTokenList",
+		"@cdktf/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOidcTokenList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

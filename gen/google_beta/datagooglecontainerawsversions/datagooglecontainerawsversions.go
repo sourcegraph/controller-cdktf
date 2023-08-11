@@ -338,7 +338,7 @@ func NewDataGoogleContainerAwsVersions(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataGoogleContainerAwsVersions{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerAwsVersions.DataGoogleContainerAwsVersions",
+		"@cdktf/provider-google-beta.dataGoogleContainerAwsVersions.DataGoogleContainerAwsVersions",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -351,7 +351,7 @@ func NewDataGoogleContainerAwsVersions_Override(d DataGoogleContainerAwsVersions
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerAwsVersions.DataGoogleContainerAwsVersions",
+		"@cdktf/provider-google-beta.dataGoogleContainerAwsVersions.DataGoogleContainerAwsVersions",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -462,7 +462,7 @@ func DataGoogleContainerAwsVersions_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleContainerAwsVersions.DataGoogleContainerAwsVersions",
+		"@cdktf/provider-google-beta.dataGoogleContainerAwsVersions.DataGoogleContainerAwsVersions",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -481,7 +481,7 @@ func DataGoogleContainerAwsVersions_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleContainerAwsVersions.DataGoogleContainerAwsVersions",
+		"@cdktf/provider-google-beta.dataGoogleContainerAwsVersions.DataGoogleContainerAwsVersions",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -500,7 +500,7 @@ func DataGoogleContainerAwsVersions_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleContainerAwsVersions.DataGoogleContainerAwsVersions",
+		"@cdktf/provider-google-beta.dataGoogleContainerAwsVersions.DataGoogleContainerAwsVersions",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -513,7 +513,7 @@ func DataGoogleContainerAwsVersions_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleContainerAwsVersions.DataGoogleContainerAwsVersions",
+		"@cdktf/provider-google-beta.dataGoogleContainerAwsVersions.DataGoogleContainerAwsVersions",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.tagsTagKeyIamBinding.TagsTagKeyIamBinding",
+		"@cdktf/provider-google.tagsTagKeyIamBinding.TagsTagKeyIamBinding",
 		reflect.TypeOf((*TagsTagKeyIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,11 +66,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.tagsTagKeyIamBinding.TagsTagKeyIamBindingCondition",
+		"@cdktf/provider-google.tagsTagKeyIamBinding.TagsTagKeyIamBindingCondition",
 		reflect.TypeOf((*TagsTagKeyIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.tagsTagKeyIamBinding.TagsTagKeyIamBindingConditionOutputReference",
+		"@cdktf/provider-google.tagsTagKeyIamBinding.TagsTagKeyIamBindingConditionOutputReference",
 		reflect.TypeOf((*TagsTagKeyIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.tagsTagKeyIamBinding.TagsTagKeyIamBindingConfig",
+		"@cdktf/provider-google.tagsTagKeyIamBinding.TagsTagKeyIamBindingConfig",
 		reflect.TypeOf((*TagsTagKeyIamBindingConfig)(nil)).Elem(),
 	)
 }

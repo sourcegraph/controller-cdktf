@@ -104,7 +104,7 @@ func NewDataOktaBrandsBrandsList(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_DataOktaBrandsBrandsList{}
 
 	_jsii_.Create(
-		"okta.dataOktaBrands.DataOktaBrandsBrandsList",
+		"@cdktf/provider-okta.dataOktaBrands.DataOktaBrandsBrandsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataOktaBrandsBrandsList_Override(d DataOktaBrandsBrandsList, terraformR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaBrands.DataOktaBrandsBrandsList",
+		"@cdktf/provider-okta.dataOktaBrands.DataOktaBrandsBrandsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

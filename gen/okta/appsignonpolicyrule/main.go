@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.appSignonPolicyRule.AppSignonPolicyRule",
+		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule",
 		reflect.TypeOf((*AppSignonPolicyRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
@@ -123,15 +123,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.appSignonPolicyRule.AppSignonPolicyRuleConfig",
+		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRuleConfig",
 		reflect.TypeOf((*AppSignonPolicyRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.appSignonPolicyRule.AppSignonPolicyRulePlatformInclude",
+		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformInclude",
 		reflect.TypeOf((*AppSignonPolicyRulePlatformInclude)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.appSignonPolicyRule.AppSignonPolicyRulePlatformIncludeList",
+		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformIncludeList",
 		reflect.TypeOf((*AppSignonPolicyRulePlatformIncludeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -152,7 +152,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.appSignonPolicyRule.AppSignonPolicyRulePlatformIncludeOutputReference",
+		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformIncludeOutputReference",
 		reflect.TypeOf((*AppSignonPolicyRulePlatformIncludeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -116,7 +116,7 @@ func NewIamRoleInlinePolicyList(terraformResource cdktf.IInterpolatingParent, te
 	j := jsiiProxy_IamRoleInlinePolicyList{}
 
 	_jsii_.Create(
-		"aws.iamRole.IamRoleInlinePolicyList",
+		"@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewIamRoleInlinePolicyList_Override(i IamRoleInlinePolicyList, terraformRes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iamRole.IamRoleInlinePolicyList",
+		"@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

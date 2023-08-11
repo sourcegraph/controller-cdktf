@@ -203,7 +203,7 @@ func NewBigqueryJobQueryDefaultDatasetOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryJob.BigqueryJobQueryDefaultDatasetOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryDefaultDatasetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewBigqueryJobQueryDefaultDatasetOutputReference_Override(b BigqueryJobQuer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryJob.BigqueryJobQueryDefaultDatasetOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryDefaultDatasetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

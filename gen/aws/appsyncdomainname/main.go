@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.appsyncDomainName.AppsyncDomainName",
+		"@cdktf/provider-aws.appsyncDomainName.AppsyncDomainName",
 		reflect.TypeOf((*AppsyncDomainName)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appsyncDomainName.AppsyncDomainNameConfig",
+		"@cdktf/provider-aws.appsyncDomainName.AppsyncDomainNameConfig",
 		reflect.TypeOf((*AppsyncDomainNameConfig)(nil)).Elem(),
 	)
 }

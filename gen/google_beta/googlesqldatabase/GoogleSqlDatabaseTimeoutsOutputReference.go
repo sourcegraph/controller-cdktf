@@ -228,7 +228,7 @@ func NewGoogleSqlDatabaseTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_GoogleSqlDatabaseTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleSqlDatabase.GoogleSqlDatabaseTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleSqlDatabase.GoogleSqlDatabaseTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleSqlDatabaseTimeoutsOutputReference_Override(g GoogleSqlDatabaseTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSqlDatabase.GoogleSqlDatabaseTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleSqlDatabase.GoogleSqlDatabaseTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

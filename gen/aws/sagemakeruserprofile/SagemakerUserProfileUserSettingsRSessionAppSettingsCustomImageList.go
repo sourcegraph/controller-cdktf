@@ -116,7 +116,7 @@ func NewSagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageList(terra
 	j := jsiiProxy_SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageList{}
 
 	_jsii_.Create(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageList",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageList_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageList",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

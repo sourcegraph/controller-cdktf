@@ -178,7 +178,7 @@ func NewDataAwsBackupFrameworkControlInputParameterOutputReference(terraformReso
 	j := jsiiProxy_DataAwsBackupFrameworkControlInputParameterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsBackupFrameworkControlInputParameterOutputReference_Override(d Da
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

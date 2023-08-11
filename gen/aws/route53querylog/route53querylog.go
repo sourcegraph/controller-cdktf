@@ -353,7 +353,7 @@ func NewRoute53QueryLog(scope constructs.Construct, id *string, config *Route53Q
 	j := jsiiProxy_Route53QueryLog{}
 
 	_jsii_.Create(
-		"aws.route53QueryLog.Route53QueryLog",
+		"@cdktf/provider-aws.route53QueryLog.Route53QueryLog",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewRoute53QueryLog_Override(r Route53QueryLog, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53QueryLog.Route53QueryLog",
+		"@cdktf/provider-aws.route53QueryLog.Route53QueryLog",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -499,7 +499,7 @@ func Route53QueryLog_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53QueryLog.Route53QueryLog",
+		"@cdktf/provider-aws.route53QueryLog.Route53QueryLog",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func Route53QueryLog_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53QueryLog.Route53QueryLog",
+		"@cdktf/provider-aws.route53QueryLog.Route53QueryLog",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func Route53QueryLog_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53QueryLog.Route53QueryLog",
+		"@cdktf/provider-aws.route53QueryLog.Route53QueryLog",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func Route53QueryLog_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53QueryLog.Route53QueryLog",
+		"@cdktf/provider-aws.route53QueryLog.Route53QueryLog",
 		"tfResourceType",
 		&returns,
 	)

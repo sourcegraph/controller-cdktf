@@ -204,7 +204,7 @@ func NewTransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReferen
 	j := jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReference{}
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReference",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewTransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReference",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

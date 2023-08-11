@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.userSchemaProperty.UserSchemaProperty",
+		"@cdktf/provider-okta.userSchemaProperty.UserSchemaProperty",
 		reflect.TypeOf((*UserSchemaProperty)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -118,11 +118,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.userSchemaProperty.UserSchemaPropertyArrayOneOf",
+		"@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyArrayOneOf",
 		reflect.TypeOf((*UserSchemaPropertyArrayOneOf)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.userSchemaProperty.UserSchemaPropertyArrayOneOfList",
+		"@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyArrayOneOfList",
 		reflect.TypeOf((*UserSchemaPropertyArrayOneOfList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -143,7 +143,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.userSchemaProperty.UserSchemaPropertyArrayOneOfOutputReference",
+		"@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyArrayOneOfOutputReference",
 		reflect.TypeOf((*UserSchemaPropertyArrayOneOfOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -179,15 +179,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.userSchemaProperty.UserSchemaPropertyConfig",
+		"@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig",
 		reflect.TypeOf((*UserSchemaPropertyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriority",
+		"@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriority",
 		reflect.TypeOf((*UserSchemaPropertyMasterOverridePriority)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriorityList",
+		"@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriorityList",
 		reflect.TypeOf((*UserSchemaPropertyMasterOverridePriorityList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -208,7 +208,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriorityOutputReference",
+		"@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriorityOutputReference",
 		reflect.TypeOf((*UserSchemaPropertyMasterOverridePriorityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -245,11 +245,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.userSchemaProperty.UserSchemaPropertyOneOf",
+		"@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyOneOf",
 		reflect.TypeOf((*UserSchemaPropertyOneOf)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.userSchemaProperty.UserSchemaPropertyOneOfList",
+		"@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyOneOfList",
 		reflect.TypeOf((*UserSchemaPropertyOneOfList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -270,7 +270,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.userSchemaProperty.UserSchemaPropertyOneOfOutputReference",
+		"@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyOneOfOutputReference",
 		reflect.TypeOf((*UserSchemaPropertyOneOfOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

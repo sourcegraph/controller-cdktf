@@ -204,7 +204,7 @@ func NewAccessContextManagerServicePerimeterEgressPolicyEgressFromOutputReferenc
 	j := jsiiProxy_AccessContextManagerServicePerimeterEgressPolicyEgressFromOutputReference{}
 
 	_jsii_.Create(
-		"google.accessContextManagerServicePerimeterEgressPolicy.AccessContextManagerServicePerimeterEgressPolicyEgressFromOutputReference",
+		"@cdktf/provider-google.accessContextManagerServicePerimeterEgressPolicy.AccessContextManagerServicePerimeterEgressPolicyEgressFromOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAccessContextManagerServicePerimeterEgressPolicyEgressFromOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerServicePerimeterEgressPolicy.AccessContextManagerServicePerimeterEgressPolicyEgressFromOutputReference",
+		"@cdktf/provider-google.accessContextManagerServicePerimeterEgressPolicy.AccessContextManagerServicePerimeterEgressPolicyEgressFromOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

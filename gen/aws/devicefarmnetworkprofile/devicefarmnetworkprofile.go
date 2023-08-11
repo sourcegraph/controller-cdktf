@@ -641,7 +641,7 @@ func NewDevicefarmNetworkProfile(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DevicefarmNetworkProfile{}
 
 	_jsii_.Create(
-		"aws.devicefarmNetworkProfile.DevicefarmNetworkProfile",
+		"@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -654,7 +654,7 @@ func NewDevicefarmNetworkProfile_Override(d DevicefarmNetworkProfile, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.devicefarmNetworkProfile.DevicefarmNetworkProfile",
+		"@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -919,7 +919,7 @@ func DevicefarmNetworkProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.devicefarmNetworkProfile.DevicefarmNetworkProfile",
+		"@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -938,7 +938,7 @@ func DevicefarmNetworkProfile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.devicefarmNetworkProfile.DevicefarmNetworkProfile",
+		"@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -957,7 +957,7 @@ func DevicefarmNetworkProfile_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.devicefarmNetworkProfile.DevicefarmNetworkProfile",
+		"@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -970,7 +970,7 @@ func DevicefarmNetworkProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.devicefarmNetworkProfile.DevicefarmNetworkProfile",
+		"@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile",
 		"tfResourceType",
 		&returns,
 	)

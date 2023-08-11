@@ -179,7 +179,7 @@ func NewS3BucketInventoryScheduleOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_S3BucketInventoryScheduleOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketInventory.S3BucketInventoryScheduleOutputReference",
+		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewS3BucketInventoryScheduleOutputReference_Override(s S3BucketInventorySch
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketInventory.S3BucketInventoryScheduleOutputReference",
+		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

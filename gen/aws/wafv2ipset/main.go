@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.wafv2IpSet.Wafv2IpSet",
+		"@cdktf/provider-aws.wafv2IpSet.Wafv2IpSet",
 		reflect.TypeOf((*Wafv2IpSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafv2IpSet.Wafv2IpSetConfig",
+		"@cdktf/provider-aws.wafv2IpSet.Wafv2IpSetConfig",
 		reflect.TypeOf((*Wafv2IpSetConfig)(nil)).Elem(),
 	)
 }

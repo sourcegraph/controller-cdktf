@@ -202,7 +202,7 @@ func NewGoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputReference(te
 	j := jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputReference",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputReference",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -606,7 +606,7 @@ func NewSecretsmanagerSecret(scope constructs.Construct, id *string, config *Sec
 	j := jsiiProxy_SecretsmanagerSecret{}
 
 	_jsii_.Create(
-		"aws.secretsmanagerSecret.SecretsmanagerSecret",
+		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecret",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -619,7 +619,7 @@ func NewSecretsmanagerSecret_Override(s SecretsmanagerSecret, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.secretsmanagerSecret.SecretsmanagerSecret",
+		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecret",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -840,7 +840,7 @@ func SecretsmanagerSecret_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.secretsmanagerSecret.SecretsmanagerSecret",
+		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecret",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -859,7 +859,7 @@ func SecretsmanagerSecret_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.secretsmanagerSecret.SecretsmanagerSecret",
+		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecret",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -878,7 +878,7 @@ func SecretsmanagerSecret_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.secretsmanagerSecret.SecretsmanagerSecret",
+		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecret",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -891,7 +891,7 @@ func SecretsmanagerSecret_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.secretsmanagerSecret.SecretsmanagerSecret",
+		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecret",
 		"tfResourceType",
 		&returns,
 	)

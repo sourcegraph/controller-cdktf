@@ -179,7 +179,7 @@ func NewS3BucketWebsiteConfigurationIndexDocumentOutputReference(terraformResour
 	j := jsiiProxy_S3BucketWebsiteConfigurationIndexDocumentOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocumentOutputReference",
+		"@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocumentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewS3BucketWebsiteConfigurationIndexDocumentOutputReference_Override(s S3Bu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocumentOutputReference",
+		"@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocumentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

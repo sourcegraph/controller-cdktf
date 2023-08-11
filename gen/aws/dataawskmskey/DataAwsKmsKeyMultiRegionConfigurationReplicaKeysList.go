@@ -104,7 +104,7 @@ func NewDataAwsKmsKeyMultiRegionConfigurationReplicaKeysList(terraformResource c
 	j := jsiiProxy_DataAwsKmsKeyMultiRegionConfigurationReplicaKeysList{}
 
 	_jsii_.Create(
-		"aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationReplicaKeysList",
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationReplicaKeysList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsKmsKeyMultiRegionConfigurationReplicaKeysList_Override(d DataAwsK
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationReplicaKeysList",
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationReplicaKeysList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -228,7 +228,7 @@ func NewCloudhsmV2ClusterTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_CloudhsmV2ClusterTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudhsmV2Cluster.CloudhsmV2ClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCloudhsmV2ClusterTimeoutsOutputReference_Override(c CloudhsmV2ClusterTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudhsmV2Cluster.CloudhsmV2ClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

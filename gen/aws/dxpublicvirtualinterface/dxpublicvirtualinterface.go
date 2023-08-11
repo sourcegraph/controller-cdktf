@@ -611,7 +611,7 @@ func NewDxPublicVirtualInterface(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DxPublicVirtualInterface{}
 
 	_jsii_.Create(
-		"aws.dxPublicVirtualInterface.DxPublicVirtualInterface",
+		"@cdktf/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -624,7 +624,7 @@ func NewDxPublicVirtualInterface_Override(d DxPublicVirtualInterface, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dxPublicVirtualInterface.DxPublicVirtualInterface",
+		"@cdktf/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -856,7 +856,7 @@ func DxPublicVirtualInterface_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxPublicVirtualInterface.DxPublicVirtualInterface",
+		"@cdktf/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -875,7 +875,7 @@ func DxPublicVirtualInterface_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxPublicVirtualInterface.DxPublicVirtualInterface",
+		"@cdktf/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -894,7 +894,7 @@ func DxPublicVirtualInterface_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxPublicVirtualInterface.DxPublicVirtualInterface",
+		"@cdktf/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -907,7 +907,7 @@ func DxPublicVirtualInterface_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dxPublicVirtualInterface.DxPublicVirtualInterface",
+		"@cdktf/provider-aws.dxPublicVirtualInterface.DxPublicVirtualInterface",
 		"tfResourceType",
 		&returns,
 	)

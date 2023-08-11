@@ -459,7 +459,7 @@ func NewGoogleLoggingFolderBucketConfig(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleLoggingFolderBucketConfig{}
 
 	_jsii_.Create(
-		"google-beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig",
+		"@cdktf/provider-google-beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewGoogleLoggingFolderBucketConfig_Override(g GoogleLoggingFolderBucketConf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig",
+		"@cdktf/provider-google-beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -638,7 +638,7 @@ func GoogleLoggingFolderBucketConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig",
+		"@cdktf/provider-google-beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func GoogleLoggingFolderBucketConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig",
+		"@cdktf/provider-google-beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func GoogleLoggingFolderBucketConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig",
+		"@cdktf/provider-google-beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func GoogleLoggingFolderBucketConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig",
+		"@cdktf/provider-google-beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig",
 		"tfResourceType",
 		&returns,
 	)

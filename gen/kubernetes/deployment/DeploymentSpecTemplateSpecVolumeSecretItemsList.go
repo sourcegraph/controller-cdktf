@@ -116,7 +116,7 @@ func NewDeploymentSpecTemplateSpecVolumeSecretItemsList(terraformResource cdktf.
 	j := jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsList{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecVolumeSecretItemsList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeSecretItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDeploymentSpecTemplateSpecVolumeSecretItemsList_Override(d DeploymentSpe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecVolumeSecretItemsList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeSecretItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -104,7 +104,7 @@ func NewDataAwsBackupReportPlanReportDeliveryChannelList(terraformResource cdktf
 	j := jsiiProxy_DataAwsBackupReportPlanReportDeliveryChannelList{}
 
 	_jsii_.Create(
-		"aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportDeliveryChannelList",
+		"@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportDeliveryChannelList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsBackupReportPlanReportDeliveryChannelList_Override(d DataAwsBacku
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportDeliveryChannelList",
+		"@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportDeliveryChannelList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

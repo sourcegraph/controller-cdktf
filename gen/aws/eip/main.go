@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.eip.Eip",
+		"@cdktf/provider-aws.eip.Eip",
 		reflect.TypeOf((*Eip)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -98,15 +98,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.eip.EipConfig",
+		"@cdktf/provider-aws.eip.EipConfig",
 		reflect.TypeOf((*EipConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.eip.EipTimeouts",
+		"@cdktf/provider-aws.eip.EipTimeouts",
 		reflect.TypeOf((*EipTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.eip.EipTimeoutsOutputReference",
+		"@cdktf/provider-aws.eip.EipTimeoutsOutputReference",
 		reflect.TypeOf((*EipTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

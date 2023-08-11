@@ -202,7 +202,7 @@ func NewComputeBackendServiceSecuritySettingsOutputReference(terraformResource c
 	j := jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceSecuritySettingsOutputReference",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewComputeBackendServiceSecuritySettingsOutputReference_Override(c ComputeB
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceSecuritySettingsOutputReference",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

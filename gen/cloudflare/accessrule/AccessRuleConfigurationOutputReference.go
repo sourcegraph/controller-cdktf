@@ -202,7 +202,7 @@ func NewAccessRuleConfigurationOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_AccessRuleConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.accessRule.AccessRuleConfigurationOutputReference",
+		"@cdktf/provider-cloudflare.accessRule.AccessRuleConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewAccessRuleConfigurationOutputReference_Override(a AccessRuleConfiguratio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessRule.AccessRuleConfigurationOutputReference",
+		"@cdktf/provider-cloudflare.accessRule.AccessRuleConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

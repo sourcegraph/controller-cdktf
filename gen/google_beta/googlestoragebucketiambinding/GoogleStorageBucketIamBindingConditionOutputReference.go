@@ -226,7 +226,7 @@ func NewGoogleStorageBucketIamBindingConditionOutputReference(terraformResource 
 	j := jsiiProxy_GoogleStorageBucketIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleStorageBucketIamBindingConditionOutputReference_Override(g GoogleS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

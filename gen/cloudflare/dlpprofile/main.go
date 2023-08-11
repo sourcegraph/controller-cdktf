@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.dlpProfile.DlpProfile",
+		"@cdktf/provider-cloudflare.dlpProfile.DlpProfile",
 		reflect.TypeOf((*DlpProfile)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -69,15 +69,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.dlpProfile.DlpProfileConfig",
+		"@cdktf/provider-cloudflare.dlpProfile.DlpProfileConfig",
 		reflect.TypeOf((*DlpProfileConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.dlpProfile.DlpProfileEntry",
+		"@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntry",
 		reflect.TypeOf((*DlpProfileEntry)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.dlpProfile.DlpProfileEntryList",
+		"@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryList",
 		reflect.TypeOf((*DlpProfileEntryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -98,7 +98,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.dlpProfile.DlpProfileEntryOutputReference",
+		"@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryOutputReference",
 		reflect.TypeOf((*DlpProfileEntryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -142,11 +142,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.dlpProfile.DlpProfileEntryPattern",
+		"@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryPattern",
 		reflect.TypeOf((*DlpProfileEntryPattern)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.dlpProfile.DlpProfileEntryPatternOutputReference",
+		"@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryPatternOutputReference",
 		reflect.TypeOf((*DlpProfileEntryPatternOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

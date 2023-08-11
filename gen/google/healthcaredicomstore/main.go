@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.healthcareDicomStore.HealthcareDicomStore",
+		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStore",
 		reflect.TypeOf((*HealthcareDicomStore)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.healthcareDicomStore.HealthcareDicomStoreConfig",
+		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStoreConfig",
 		reflect.TypeOf((*HealthcareDicomStoreConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.healthcareDicomStore.HealthcareDicomStoreNotificationConfig",
+		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStoreNotificationConfig",
 		reflect.TypeOf((*HealthcareDicomStoreNotificationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.healthcareDicomStore.HealthcareDicomStoreNotificationConfigOutputReference",
+		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStoreNotificationConfigOutputReference",
 		reflect.TypeOf((*HealthcareDicomStoreNotificationConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -113,11 +113,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.healthcareDicomStore.HealthcareDicomStoreTimeouts",
+		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStoreTimeouts",
 		reflect.TypeOf((*HealthcareDicomStoreTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.healthcareDicomStore.HealthcareDicomStoreTimeoutsOutputReference",
+		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStoreTimeoutsOutputReference",
 		reflect.TypeOf((*HealthcareDicomStoreTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -338,7 +338,7 @@ func NewDataTlsCertificate(scope constructs.Construct, id *string, config *DataT
 	j := jsiiProxy_DataTlsCertificate{}
 
 	_jsii_.Create(
-		"tls.dataTlsCertificate.DataTlsCertificate",
+		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -351,7 +351,7 @@ func NewDataTlsCertificate_Override(d DataTlsCertificate, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tls.dataTlsCertificate.DataTlsCertificate",
+		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificate",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -462,7 +462,7 @@ func DataTlsCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tls.dataTlsCertificate.DataTlsCertificate",
+		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -481,7 +481,7 @@ func DataTlsCertificate_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tls.dataTlsCertificate.DataTlsCertificate",
+		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificate",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -500,7 +500,7 @@ func DataTlsCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tls.dataTlsCertificate.DataTlsCertificate",
+		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -513,7 +513,7 @@ func DataTlsCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tls.dataTlsCertificate.DataTlsCertificate",
+		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificate",
 		"tfResourceType",
 		&returns,
 	)

@@ -179,7 +179,7 @@ func NewResourceexplorer2ViewIncludedPropertyOutputReference(terraformResource c
 	j := jsiiProxy_Resourceexplorer2ViewIncludedPropertyOutputReference{}
 
 	_jsii_.Create(
-		"aws.resourceexplorer2View.Resourceexplorer2ViewIncludedPropertyOutputReference",
+		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewIncludedPropertyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewResourceexplorer2ViewIncludedPropertyOutputReference_Override(r Resource
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.resourceexplorer2View.Resourceexplorer2ViewIncludedPropertyOutputReference",
+		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewIncludedPropertyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

@@ -302,7 +302,7 @@ func NewDataCloudflareZones(scope constructs.Construct, id *string, config *Data
 	j := jsiiProxy_DataCloudflareZones{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareZones.DataCloudflareZones",
+		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZones",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataCloudflareZones_Override(d DataCloudflareZones, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareZones.DataCloudflareZones",
+		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZones",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -404,7 +404,7 @@ func DataCloudflareZones_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareZones.DataCloudflareZones",
+		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZones",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -423,7 +423,7 @@ func DataCloudflareZones_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareZones.DataCloudflareZones",
+		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZones",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -442,7 +442,7 @@ func DataCloudflareZones_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareZones.DataCloudflareZones",
+		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZones",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -455,7 +455,7 @@ func DataCloudflareZones_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.dataCloudflareZones.DataCloudflareZones",
+		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZones",
 		"tfResourceType",
 		&returns,
 	)

@@ -342,7 +342,7 @@ func NewCloudwatchLogDataProtectionPolicy(scope constructs.Construct, id *string
 	j := jsiiProxy_CloudwatchLogDataProtectionPolicy{}
 
 	_jsii_.Create(
-		"aws.cloudwatchLogDataProtectionPolicy.CloudwatchLogDataProtectionPolicy",
+		"@cdktf/provider-aws.cloudwatchLogDataProtectionPolicy.CloudwatchLogDataProtectionPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewCloudwatchLogDataProtectionPolicy_Override(c CloudwatchLogDataProtection
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchLogDataProtectionPolicy.CloudwatchLogDataProtectionPolicy",
+		"@cdktf/provider-aws.cloudwatchLogDataProtectionPolicy.CloudwatchLogDataProtectionPolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -488,7 +488,7 @@ func CloudwatchLogDataProtectionPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogDataProtectionPolicy.CloudwatchLogDataProtectionPolicy",
+		"@cdktf/provider-aws.cloudwatchLogDataProtectionPolicy.CloudwatchLogDataProtectionPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func CloudwatchLogDataProtectionPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogDataProtectionPolicy.CloudwatchLogDataProtectionPolicy",
+		"@cdktf/provider-aws.cloudwatchLogDataProtectionPolicy.CloudwatchLogDataProtectionPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func CloudwatchLogDataProtectionPolicy_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogDataProtectionPolicy.CloudwatchLogDataProtectionPolicy",
+		"@cdktf/provider-aws.cloudwatchLogDataProtectionPolicy.CloudwatchLogDataProtectionPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func CloudwatchLogDataProtectionPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudwatchLogDataProtectionPolicy.CloudwatchLogDataProtectionPolicy",
+		"@cdktf/provider-aws.cloudwatchLogDataProtectionPolicy.CloudwatchLogDataProtectionPolicy",
 		"tfResourceType",
 		&returns,
 	)

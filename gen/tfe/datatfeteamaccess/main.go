@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.dataTfeTeamAccess.DataTfeTeamAccess",
+		"@cdktf/provider-tfe.dataTfeTeamAccess.DataTfeTeamAccess",
 		reflect.TypeOf((*DataTfeTeamAccess)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
@@ -59,15 +59,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.dataTfeTeamAccess.DataTfeTeamAccessConfig",
+		"@cdktf/provider-tfe.dataTfeTeamAccess.DataTfeTeamAccessConfig",
 		reflect.TypeOf((*DataTfeTeamAccessConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"tfe.dataTfeTeamAccess.DataTfeTeamAccessPermissions",
+		"@cdktf/provider-tfe.dataTfeTeamAccess.DataTfeTeamAccessPermissions",
 		reflect.TypeOf((*DataTfeTeamAccessPermissions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"tfe.dataTfeTeamAccess.DataTfeTeamAccessPermissionsList",
+		"@cdktf/provider-tfe.dataTfeTeamAccess.DataTfeTeamAccessPermissionsList",
 		reflect.TypeOf((*DataTfeTeamAccessPermissionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -87,7 +87,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"tfe.dataTfeTeamAccess.DataTfeTeamAccessPermissionsOutputReference",
+		"@cdktf/provider-tfe.dataTfeTeamAccess.DataTfeTeamAccessPermissionsOutputReference",
 		reflect.TypeOf((*DataTfeTeamAccessPermissionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -226,7 +226,7 @@ func NewComputeSnapshotIamMemberConditionOutputReference(terraformResource cdktf
 	j := jsiiProxy_ComputeSnapshotIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.computeSnapshotIamMember.ComputeSnapshotIamMemberConditionOutputReference",
+		"@cdktf/provider-google.computeSnapshotIamMember.ComputeSnapshotIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewComputeSnapshotIamMemberConditionOutputReference_Override(c ComputeSnaps
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSnapshotIamMember.ComputeSnapshotIamMemberConditionOutputReference",
+		"@cdktf/provider-google.computeSnapshotIamMember.ComputeSnapshotIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -203,7 +203,7 @@ func NewLabelsMetadataOutputReference(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_LabelsMetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.labels.LabelsMetadataOutputReference",
+		"@cdktf/provider-kubernetes.labels.LabelsMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewLabelsMetadataOutputReference_Override(l LabelsMetadataOutputReference, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.labels.LabelsMetadataOutputReference",
+		"@cdktf/provider-kubernetes.labels.LabelsMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

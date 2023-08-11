@@ -251,7 +251,7 @@ func NewPodSpecVolumeGcePersistentDiskOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_PodSpecVolumeGcePersistentDiskOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeGcePersistentDiskOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeGcePersistentDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewPodSpecVolumeGcePersistentDiskOutputReference_Override(p PodSpecVolumeGc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeGcePersistentDiskOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeGcePersistentDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

@@ -367,7 +367,7 @@ func NewDynamodbContributorInsights(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DynamodbContributorInsights{}
 
 	_jsii_.Create(
-		"aws.dynamodbContributorInsights.DynamodbContributorInsights",
+		"@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewDynamodbContributorInsights_Override(d DynamodbContributorInsights, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dynamodbContributorInsights.DynamodbContributorInsights",
+		"@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -513,7 +513,7 @@ func DynamodbContributorInsights_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dynamodbContributorInsights.DynamodbContributorInsights",
+		"@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -532,7 +532,7 @@ func DynamodbContributorInsights_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dynamodbContributorInsights.DynamodbContributorInsights",
+		"@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func DynamodbContributorInsights_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dynamodbContributorInsights.DynamodbContributorInsights",
+		"@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func DynamodbContributorInsights_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dynamodbContributorInsights.DynamodbContributorInsights",
+		"@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference(terraf
 	j := jsiiProxy_GoogleMonitoringNotificationChannelSensitiveLabelsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannelSensitiveLabelsOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannelSensitiveLabelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannelSensitiveLabelsOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannelSensitiveLabelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

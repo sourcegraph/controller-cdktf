@@ -202,7 +202,7 @@ func NewHealthcheckHeaderOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_HealthcheckHeaderOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.healthcheck.HealthcheckHeaderOutputReference",
+		"@cdktf/provider-cloudflare.healthcheck.HealthcheckHeaderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewHealthcheckHeaderOutputReference_Override(h HealthcheckHeaderOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.healthcheck.HealthcheckHeaderOutputReference",
+		"@cdktf/provider-cloudflare.healthcheck.HealthcheckHeaderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		h,
 	)

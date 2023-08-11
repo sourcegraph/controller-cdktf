@@ -116,7 +116,7 @@ func NewPodV1SpecHostAliasesList(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_PodV1SpecHostAliasesList{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecHostAliasesList",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecHostAliasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodV1SpecHostAliasesList_Override(p PodV1SpecHostAliasesList, terraformR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecHostAliasesList",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecHostAliasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

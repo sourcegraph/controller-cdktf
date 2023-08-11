@@ -1046,7 +1046,7 @@ func NewEmrCluster(scope constructs.Construct, id *string, config *EmrClusterCon
 	j := jsiiProxy_EmrCluster{}
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrCluster",
+		"@cdktf/provider-aws.emrCluster.EmrCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1059,7 +1059,7 @@ func NewEmrCluster_Override(e EmrCluster, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrCluster",
+		"@cdktf/provider-aws.emrCluster.EmrCluster",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -1401,7 +1401,7 @@ func EmrCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrCluster.EmrCluster",
+		"@cdktf/provider-aws.emrCluster.EmrCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1420,7 +1420,7 @@ func EmrCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrCluster.EmrCluster",
+		"@cdktf/provider-aws.emrCluster.EmrCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1439,7 +1439,7 @@ func EmrCluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrCluster.EmrCluster",
+		"@cdktf/provider-aws.emrCluster.EmrCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1452,7 +1452,7 @@ func EmrCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.emrCluster.EmrCluster",
+		"@cdktf/provider-aws.emrCluster.EmrCluster",
 		"tfResourceType",
 		&returns,
 	)

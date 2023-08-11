@@ -279,7 +279,7 @@ func NewDataGoogleMonitoringUptimeCheckIps(scope constructs.Construct, id *strin
 	j := jsiiProxy_DataGoogleMonitoringUptimeCheckIps{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIps",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIps",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -292,7 +292,7 @@ func NewDataGoogleMonitoringUptimeCheckIps_Override(d DataGoogleMonitoringUptime
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIps",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIps",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -381,7 +381,7 @@ func DataGoogleMonitoringUptimeCheckIps_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIps",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIps",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -400,7 +400,7 @@ func DataGoogleMonitoringUptimeCheckIps_IsTerraformDataSource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIps",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIps",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -419,7 +419,7 @@ func DataGoogleMonitoringUptimeCheckIps_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIps",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIps",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -432,7 +432,7 @@ func DataGoogleMonitoringUptimeCheckIps_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIps",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIps",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewNetworkConnectivityHubTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_NetworkConnectivityHubTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.networkConnectivityHub.NetworkConnectivityHubTimeoutsOutputReference",
+		"@cdktf/provider-google.networkConnectivityHub.NetworkConnectivityHubTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewNetworkConnectivityHubTimeoutsOutputReference_Override(n NetworkConnecti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.networkConnectivityHub.NetworkConnectivityHubTimeoutsOutputReference",
+		"@cdktf/provider-google.networkConnectivityHub.NetworkConnectivityHubTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

@@ -316,7 +316,7 @@ func NewDataAwsWafregionalSubscribedRuleGroup(scope constructs.Construct, id *st
 	j := jsiiProxy_DataAwsWafregionalSubscribedRuleGroup{}
 
 	_jsii_.Create(
-		"aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroup",
+		"@cdktf/provider-aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -329,7 +329,7 @@ func NewDataAwsWafregionalSubscribedRuleGroup_Override(d DataAwsWafregionalSubsc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroup",
+		"@cdktf/provider-aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -440,7 +440,7 @@ func DataAwsWafregionalSubscribedRuleGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroup",
+		"@cdktf/provider-aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -459,7 +459,7 @@ func DataAwsWafregionalSubscribedRuleGroup_IsTerraformDataSource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroup",
+		"@cdktf/provider-aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroup",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -478,7 +478,7 @@ func DataAwsWafregionalSubscribedRuleGroup_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroup",
+		"@cdktf/provider-aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -491,7 +491,7 @@ func DataAwsWafregionalSubscribedRuleGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroup",
+		"@cdktf/provider-aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroup",
 		"tfResourceType",
 		&returns,
 	)

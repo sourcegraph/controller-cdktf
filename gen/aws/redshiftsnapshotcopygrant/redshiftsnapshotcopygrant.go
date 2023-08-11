@@ -402,7 +402,7 @@ func NewRedshiftSnapshotCopyGrant(scope constructs.Construct, id *string, config
 	j := jsiiProxy_RedshiftSnapshotCopyGrant{}
 
 	_jsii_.Create(
-		"aws.redshiftSnapshotCopyGrant.RedshiftSnapshotCopyGrant",
+		"@cdktf/provider-aws.redshiftSnapshotCopyGrant.RedshiftSnapshotCopyGrant",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -415,7 +415,7 @@ func NewRedshiftSnapshotCopyGrant_Override(r RedshiftSnapshotCopyGrant, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftSnapshotCopyGrant.RedshiftSnapshotCopyGrant",
+		"@cdktf/provider-aws.redshiftSnapshotCopyGrant.RedshiftSnapshotCopyGrant",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -570,7 +570,7 @@ func RedshiftSnapshotCopyGrant_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftSnapshotCopyGrant.RedshiftSnapshotCopyGrant",
+		"@cdktf/provider-aws.redshiftSnapshotCopyGrant.RedshiftSnapshotCopyGrant",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -589,7 +589,7 @@ func RedshiftSnapshotCopyGrant_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftSnapshotCopyGrant.RedshiftSnapshotCopyGrant",
+		"@cdktf/provider-aws.redshiftSnapshotCopyGrant.RedshiftSnapshotCopyGrant",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func RedshiftSnapshotCopyGrant_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftSnapshotCopyGrant.RedshiftSnapshotCopyGrant",
+		"@cdktf/provider-aws.redshiftSnapshotCopyGrant.RedshiftSnapshotCopyGrant",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func RedshiftSnapshotCopyGrant_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.redshiftSnapshotCopyGrant.RedshiftSnapshotCopyGrant",
+		"@cdktf/provider-aws.redshiftSnapshotCopyGrant.RedshiftSnapshotCopyGrant",
 		"tfResourceType",
 		&returns,
 	)

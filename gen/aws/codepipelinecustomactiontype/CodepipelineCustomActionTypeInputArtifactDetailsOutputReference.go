@@ -202,7 +202,7 @@ func NewCodepipelineCustomActionTypeInputArtifactDetailsOutputReference(terrafor
 	j := jsiiProxy_CodepipelineCustomActionTypeInputArtifactDetailsOutputReference{}
 
 	_jsii_.Create(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionTypeInputArtifactDetailsOutputReference",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeInputArtifactDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewCodepipelineCustomActionTypeInputArtifactDetailsOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionTypeInputArtifactDetailsOutputReference",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeInputArtifactDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

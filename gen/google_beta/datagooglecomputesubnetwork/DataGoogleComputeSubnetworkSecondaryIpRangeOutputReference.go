@@ -178,7 +178,7 @@ func NewDataGoogleComputeSubnetworkSecondaryIpRangeOutputReference(terraformReso
 	j := jsiiProxy_DataGoogleComputeSubnetworkSecondaryIpRangeOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetworkSecondaryIpRangeOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetworkSecondaryIpRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleComputeSubnetworkSecondaryIpRangeOutputReference_Override(d Da
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetworkSecondaryIpRangeOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetworkSecondaryIpRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

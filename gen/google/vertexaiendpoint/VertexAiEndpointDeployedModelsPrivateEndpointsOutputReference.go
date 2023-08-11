@@ -200,7 +200,7 @@ func NewVertexAiEndpointDeployedModelsPrivateEndpointsOutputReference(terraformR
 	j := jsiiProxy_VertexAiEndpointDeployedModelsPrivateEndpointsOutputReference{}
 
 	_jsii_.Create(
-		"google.vertexAiEndpoint.VertexAiEndpointDeployedModelsPrivateEndpointsOutputReference",
+		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsPrivateEndpointsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewVertexAiEndpointDeployedModelsPrivateEndpointsOutputReference_Override(v
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiEndpoint.VertexAiEndpointDeployedModelsPrivateEndpointsOutputReference",
+		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsPrivateEndpointsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		v,
 	)

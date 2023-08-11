@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataplexAssetIamMember.DataplexAssetIamMember",
+		"@cdktf/provider-google.dataplexAssetIamMember.DataplexAssetIamMember",
 		reflect.TypeOf((*DataplexAssetIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,11 +76,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataplexAssetIamMember.DataplexAssetIamMemberCondition",
+		"@cdktf/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberCondition",
 		reflect.TypeOf((*DataplexAssetIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataplexAssetIamMember.DataplexAssetIamMemberConditionOutputReference",
+		"@cdktf/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConditionOutputReference",
 		reflect.TypeOf((*DataplexAssetIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -119,7 +119,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataplexAssetIamMember.DataplexAssetIamMemberConfig",
+		"@cdktf/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig",
 		reflect.TypeOf((*DataplexAssetIamMemberConfig)(nil)).Elem(),
 	)
 }

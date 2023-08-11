@@ -204,7 +204,7 @@ func NewGlueCrawlerLakeFormationConfigurationOutputReference(terraformResource c
 	j := jsiiProxy_GlueCrawlerLakeFormationConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueCrawler.GlueCrawlerLakeFormationConfigurationOutputReference",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawlerLakeFormationConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGlueCrawlerLakeFormationConfigurationOutputReference_Override(g GlueCraw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueCrawler.GlueCrawlerLakeFormationConfigurationOutputReference",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawlerLakeFormationConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

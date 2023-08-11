@@ -228,7 +228,7 @@ func NewBigqueryDataTransferConfigScheduleOptionsOutputReference(terraformResour
 	j := jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsOutputReference",
+		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewBigqueryDataTransferConfigScheduleOptionsOutputReference_Override(b Bigq
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsOutputReference",
+		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

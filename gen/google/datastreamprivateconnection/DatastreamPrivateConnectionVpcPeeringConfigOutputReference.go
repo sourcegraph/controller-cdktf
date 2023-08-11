@@ -202,7 +202,7 @@ func NewDatastreamPrivateConnectionVpcPeeringConfigOutputReference(terraformReso
 	j := jsiiProxy_DatastreamPrivateConnectionVpcPeeringConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.datastreamPrivateConnection.DatastreamPrivateConnectionVpcPeeringConfigOutputReference",
+		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionVpcPeeringConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDatastreamPrivateConnectionVpcPeeringConfigOutputReference_Override(d Da
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamPrivateConnection.DatastreamPrivateConnectionVpcPeeringConfigOutputReference",
+		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionVpcPeeringConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.emailSender.EmailSender",
+		"@cdktf/provider-okta.emailSender.EmailSender",
 		reflect.TypeOf((*EmailSender)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.emailSender.EmailSenderConfig",
+		"@cdktf/provider-okta.emailSender.EmailSenderConfig",
 		reflect.TypeOf((*EmailSenderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.emailSender.EmailSenderDnsRecords",
+		"@cdktf/provider-okta.emailSender.EmailSenderDnsRecords",
 		reflect.TypeOf((*EmailSenderDnsRecords)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.emailSender.EmailSenderDnsRecordsList",
+		"@cdktf/provider-okta.emailSender.EmailSenderDnsRecordsList",
 		reflect.TypeOf((*EmailSenderDnsRecordsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -91,7 +91,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.emailSender.EmailSenderDnsRecordsOutputReference",
+		"@cdktf/provider-okta.emailSender.EmailSenderDnsRecordsOutputReference",
 		reflect.TypeOf((*EmailSenderDnsRecordsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

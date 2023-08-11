@@ -226,7 +226,7 @@ func NewGoogleIapWebTypeComputeIamMemberConditionOutputReference(terraformResour
 	j := jsiiProxy_GoogleIapWebTypeComputeIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleIapWebTypeComputeIamMemberConditionOutputReference_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

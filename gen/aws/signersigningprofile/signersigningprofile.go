@@ -505,7 +505,7 @@ func NewSignerSigningProfile(scope constructs.Construct, id *string, config *Sig
 	j := jsiiProxy_SignerSigningProfile{}
 
 	_jsii_.Create(
-		"aws.signerSigningProfile.SignerSigningProfile",
+		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -518,7 +518,7 @@ func NewSignerSigningProfile_Override(s SignerSigningProfile, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.signerSigningProfile.SignerSigningProfile",
+		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -684,7 +684,7 @@ func SignerSigningProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.signerSigningProfile.SignerSigningProfile",
+		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -703,7 +703,7 @@ func SignerSigningProfile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.signerSigningProfile.SignerSigningProfile",
+		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -722,7 +722,7 @@ func SignerSigningProfile_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.signerSigningProfile.SignerSigningProfile",
+		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func SignerSigningProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.signerSigningProfile.SignerSigningProfile",
+		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile",
 		"tfResourceType",
 		&returns,
 	)

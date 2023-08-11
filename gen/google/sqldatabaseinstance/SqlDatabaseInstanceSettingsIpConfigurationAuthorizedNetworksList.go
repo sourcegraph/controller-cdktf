@@ -116,7 +116,7 @@ func NewSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList(terrafo
 	j := jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList{}
 
 	_jsii_.Create(
-		"google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList",
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList",
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

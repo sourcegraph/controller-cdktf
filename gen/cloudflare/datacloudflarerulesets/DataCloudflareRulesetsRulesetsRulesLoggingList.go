@@ -104,7 +104,7 @@ func NewDataCloudflareRulesetsRulesetsRulesLoggingList(terraformResource cdktf.I
 	j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesLoggingList{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesLoggingList",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesLoggingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataCloudflareRulesetsRulesetsRulesLoggingList_Override(d DataCloudflare
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesLoggingList",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesLoggingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

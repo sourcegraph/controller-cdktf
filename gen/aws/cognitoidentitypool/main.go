@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cognitoIdentityPool.CognitoIdentityPool",
+		"@cdktf/provider-aws.cognitoIdentityPool.CognitoIdentityPool",
 		reflect.TypeOf((*CognitoIdentityPool)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,11 +86,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoIdentityPool.CognitoIdentityPoolCognitoIdentityProviders",
+		"@cdktf/provider-aws.cognitoIdentityPool.CognitoIdentityPoolCognitoIdentityProviders",
 		reflect.TypeOf((*CognitoIdentityPoolCognitoIdentityProviders)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoIdentityPool.CognitoIdentityPoolCognitoIdentityProvidersList",
+		"@cdktf/provider-aws.cognitoIdentityPool.CognitoIdentityPoolCognitoIdentityProvidersList",
 		reflect.TypeOf((*CognitoIdentityPoolCognitoIdentityProvidersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -111,7 +111,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoIdentityPool.CognitoIdentityPoolCognitoIdentityProvidersOutputReference",
+		"@cdktf/provider-aws.cognitoIdentityPool.CognitoIdentityPoolCognitoIdentityProvidersOutputReference",
 		reflect.TypeOf((*CognitoIdentityPoolCognitoIdentityProvidersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -152,7 +152,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoIdentityPool.CognitoIdentityPoolConfig",
+		"@cdktf/provider-aws.cognitoIdentityPool.CognitoIdentityPoolConfig",
 		reflect.TypeOf((*CognitoIdentityPoolConfig)(nil)).Elem(),
 	)
 }

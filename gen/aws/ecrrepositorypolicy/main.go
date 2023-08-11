@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ecrRepositoryPolicy.EcrRepositoryPolicy",
+		"@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy",
 		reflect.TypeOf((*EcrRepositoryPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig",
+		"@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig",
 		reflect.TypeOf((*EcrRepositoryPolicyConfig)(nil)).Elem(),
 	)
 }

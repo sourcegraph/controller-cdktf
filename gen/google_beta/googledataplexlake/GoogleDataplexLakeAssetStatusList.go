@@ -104,7 +104,7 @@ func NewGoogleDataplexLakeAssetStatusList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_GoogleDataplexLakeAssetStatusList{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexLake.GoogleDataplexLakeAssetStatusList",
+		"@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeAssetStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleDataplexLakeAssetStatusList_Override(g GoogleDataplexLakeAssetStat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexLake.GoogleDataplexLakeAssetStatusList",
+		"@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeAssetStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

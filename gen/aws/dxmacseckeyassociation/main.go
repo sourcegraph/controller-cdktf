@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation",
+		"@cdktf/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation",
 		reflect.TypeOf((*DxMacsecKeyAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig",
+		"@cdktf/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig",
 		reflect.TypeOf((*DxMacsecKeyAssociationConfig)(nil)).Elem(),
 	)
 }

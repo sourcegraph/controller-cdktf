@@ -203,7 +203,7 @@ func NewNotificationPolicyWebhooksIntegrationOutputReference(terraformResource c
 	j := jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegrationOutputReference",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegrationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewNotificationPolicyWebhooksIntegrationOutputReference_Override(n Notifica
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegrationOutputReference",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegrationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)

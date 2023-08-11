@@ -342,7 +342,7 @@ func NewLogpullRetention(scope constructs.Construct, id *string, config *Logpull
 	j := jsiiProxy_LogpullRetention{}
 
 	_jsii_.Create(
-		"cloudflare.logpullRetention.LogpullRetention",
+		"@cdktf/provider-cloudflare.logpullRetention.LogpullRetention",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewLogpullRetention_Override(l LogpullRetention, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.logpullRetention.LogpullRetention",
+		"@cdktf/provider-cloudflare.logpullRetention.LogpullRetention",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -488,7 +488,7 @@ func LogpullRetention_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.logpullRetention.LogpullRetention",
+		"@cdktf/provider-cloudflare.logpullRetention.LogpullRetention",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func LogpullRetention_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.logpullRetention.LogpullRetention",
+		"@cdktf/provider-cloudflare.logpullRetention.LogpullRetention",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func LogpullRetention_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.logpullRetention.LogpullRetention",
+		"@cdktf/provider-cloudflare.logpullRetention.LogpullRetention",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func LogpullRetention_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.logpullRetention.LogpullRetention",
+		"@cdktf/provider-cloudflare.logpullRetention.LogpullRetention",
 		"tfResourceType",
 		&returns,
 	)

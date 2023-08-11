@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRule",
+		"@cdktf/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRule",
 		reflect.TypeOf((*DataAwsWafregionalRateBasedRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -55,7 +55,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRuleConfig",
+		"@cdktf/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRuleConfig",
 		reflect.TypeOf((*DataAwsWafregionalRateBasedRuleConfig)(nil)).Elem(),
 	)
 }

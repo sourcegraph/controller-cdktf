@@ -180,7 +180,7 @@ func NewDbClusterSnapshotTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_DbClusterSnapshotTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dbClusterSnapshot.DbClusterSnapshotTimeoutsOutputReference",
+		"@cdktf/provider-aws.dbClusterSnapshot.DbClusterSnapshotTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDbClusterSnapshotTimeoutsOutputReference_Override(d DbClusterSnapshotTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbClusterSnapshot.DbClusterSnapshotTimeoutsOutputReference",
+		"@cdktf/provider-aws.dbClusterSnapshot.DbClusterSnapshotTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

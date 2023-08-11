@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sesDomainMailFrom.SesDomainMailFrom",
+		"@cdktf/provider-aws.sesDomainMailFrom.SesDomainMailFrom",
 		reflect.TypeOf((*SesDomainMailFrom)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesDomainMailFrom.SesDomainMailFromConfig",
+		"@cdktf/provider-aws.sesDomainMailFrom.SesDomainMailFromConfig",
 		reflect.TypeOf((*SesDomainMailFromConfig)(nil)).Elem(),
 	)
 }

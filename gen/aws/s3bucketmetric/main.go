@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.s3BucketMetric.S3BucketMetric",
+		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetric",
 		reflect.TypeOf((*S3BucketMetric)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketMetric.S3BucketMetricConfig",
+		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetricConfig",
 		reflect.TypeOf((*S3BucketMetricConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketMetric.S3BucketMetricFilter",
+		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetricFilter",
 		reflect.TypeOf((*S3BucketMetricFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketMetric.S3BucketMetricFilterOutputReference",
+		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetricFilterOutputReference",
 		reflect.TypeOf((*S3BucketMetricFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -104,7 +104,7 @@ func NewVpnConnectionRoutesList(terraformResource cdktf.IInterpolatingParent, te
 	j := jsiiProxy_VpnConnectionRoutesList{}
 
 	_jsii_.Create(
-		"aws.vpnConnection.VpnConnectionRoutesList",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewVpnConnectionRoutesList_Override(v VpnConnectionRoutesList, terraformRes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpnConnection.VpnConnectionRoutesList",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		v,
 	)

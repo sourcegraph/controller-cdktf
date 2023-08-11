@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.identitystoreGroup.IdentitystoreGroup",
+		"@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroup",
 		reflect.TypeOf((*IdentitystoreGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,15 +64,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.identitystoreGroup.IdentitystoreGroupConfig",
+		"@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroupConfig",
 		reflect.TypeOf((*IdentitystoreGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.identitystoreGroup.IdentitystoreGroupExternalIds",
+		"@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroupExternalIds",
 		reflect.TypeOf((*IdentitystoreGroupExternalIds)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.identitystoreGroup.IdentitystoreGroupExternalIdsList",
+		"@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroupExternalIdsList",
 		reflect.TypeOf((*IdentitystoreGroupExternalIdsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -92,7 +92,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.identitystoreGroup.IdentitystoreGroupExternalIdsOutputReference",
+		"@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroupExternalIdsOutputReference",
 		reflect.TypeOf((*IdentitystoreGroupExternalIdsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

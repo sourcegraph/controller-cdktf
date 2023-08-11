@@ -435,7 +435,7 @@ func NewApprunnerObservabilityConfiguration(scope constructs.Construct, id *stri
 	j := jsiiProxy_ApprunnerObservabilityConfiguration{}
 
 	_jsii_.Create(
-		"aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfiguration",
+		"@cdktf/provider-aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -448,7 +448,7 @@ func NewApprunnerObservabilityConfiguration_Override(a ApprunnerObservabilityCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfiguration",
+		"@cdktf/provider-aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfiguration",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -592,7 +592,7 @@ func ApprunnerObservabilityConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfiguration",
+		"@cdktf/provider-aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func ApprunnerObservabilityConfiguration_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfiguration",
+		"@cdktf/provider-aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func ApprunnerObservabilityConfiguration_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfiguration",
+		"@cdktf/provider-aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func ApprunnerObservabilityConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfiguration",
+		"@cdktf/provider-aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfiguration",
 		"tfResourceType",
 		&returns,
 	)

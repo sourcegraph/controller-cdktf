@@ -532,7 +532,7 @@ func NewGoogleComputePacketMirroring(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleComputePacketMirroring{}
 
 	_jsii_.Create(
-		"google-beta.googleComputePacketMirroring.GoogleComputePacketMirroring",
+		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroring",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -545,7 +545,7 @@ func NewGoogleComputePacketMirroring_Override(g GoogleComputePacketMirroring, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputePacketMirroring.GoogleComputePacketMirroring",
+		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroring",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -711,7 +711,7 @@ func GoogleComputePacketMirroring_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputePacketMirroring.GoogleComputePacketMirroring",
+		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroring",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -730,7 +730,7 @@ func GoogleComputePacketMirroring_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputePacketMirroring.GoogleComputePacketMirroring",
+		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroring",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -749,7 +749,7 @@ func GoogleComputePacketMirroring_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputePacketMirroring.GoogleComputePacketMirroring",
+		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroring",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func GoogleComputePacketMirroring_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputePacketMirroring.GoogleComputePacketMirroring",
+		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroring",
 		"tfResourceType",
 		&returns,
 	)

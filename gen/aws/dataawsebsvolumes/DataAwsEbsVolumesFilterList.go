@@ -116,7 +116,7 @@ func NewDataAwsEbsVolumesFilterList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_DataAwsEbsVolumesFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEbsVolumes.DataAwsEbsVolumesFilterList",
+		"@cdktf/provider-aws.dataAwsEbsVolumes.DataAwsEbsVolumesFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsEbsVolumesFilterList_Override(d DataAwsEbsVolumesFilterList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEbsVolumes.DataAwsEbsVolumesFilterList",
+		"@cdktf/provider-aws.dataAwsEbsVolumes.DataAwsEbsVolumesFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

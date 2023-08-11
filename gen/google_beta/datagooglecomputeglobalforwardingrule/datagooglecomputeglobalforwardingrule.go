@@ -502,7 +502,7 @@ func NewDataGoogleComputeGlobalForwardingRule(scope constructs.Construct, id *st
 	j := jsiiProxy_DataGoogleComputeGlobalForwardingRule{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
+		"@cdktf/provider-google-beta.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -515,7 +515,7 @@ func NewDataGoogleComputeGlobalForwardingRule_Override(d DataGoogleComputeGlobal
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
+		"@cdktf/provider-google-beta.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -626,7 +626,7 @@ func DataGoogleComputeGlobalForwardingRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
+		"@cdktf/provider-google-beta.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func DataGoogleComputeGlobalForwardingRule_IsTerraformDataSource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
+		"@cdktf/provider-google-beta.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -664,7 +664,7 @@ func DataGoogleComputeGlobalForwardingRule_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
+		"@cdktf/provider-google-beta.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func DataGoogleComputeGlobalForwardingRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
+		"@cdktf/provider-google-beta.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
 		"tfResourceType",
 		&returns,
 	)

@@ -300,7 +300,7 @@ func NewOsConfigPatchDeploymentPatchConfigZypperOutputReference(terraformResourc
 	j := jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference{}
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigZypperOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigZypperOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewOsConfigPatchDeploymentPatchConfigZypperOutputReference_Override(o OsCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigZypperOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigZypperOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

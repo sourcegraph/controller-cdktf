@@ -462,7 +462,7 @@ func NewBehavior(scope constructs.Construct, id *string, config *BehaviorConfig)
 	j := jsiiProxy_Behavior{}
 
 	_jsii_.Create(
-		"okta.behavior.Behavior",
+		"@cdktf/provider-okta.behavior.Behavior",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -475,7 +475,7 @@ func NewBehavior_Override(b Behavior, scope constructs.Construct, id *string, co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.behavior.Behavior",
+		"@cdktf/provider-okta.behavior.Behavior",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -663,7 +663,7 @@ func Behavior_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.behavior.Behavior",
+		"@cdktf/provider-okta.behavior.Behavior",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -682,7 +682,7 @@ func Behavior_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.behavior.Behavior",
+		"@cdktf/provider-okta.behavior.Behavior",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func Behavior_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.behavior.Behavior",
+		"@cdktf/provider-okta.behavior.Behavior",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +714,7 @@ func Behavior_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.behavior.Behavior",
+		"@cdktf/provider-okta.behavior.Behavior",
 		"tfResourceType",
 		&returns,
 	)

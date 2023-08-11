@@ -116,7 +116,7 @@ func NewLoadBalancerRulesOverridesRegionPoolsList(terraformResource cdktf.IInter
 	j := jsiiProxy_LoadBalancerRulesOverridesRegionPoolsList{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerRulesOverridesRegionPoolsList",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRegionPoolsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLoadBalancerRulesOverridesRegionPoolsList_Override(l LoadBalancerRulesOv
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerRulesOverridesRegionPoolsList",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesRegionPoolsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

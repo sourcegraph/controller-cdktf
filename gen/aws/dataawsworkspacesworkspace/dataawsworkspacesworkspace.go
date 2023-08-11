@@ -452,7 +452,7 @@ func NewDataAwsWorkspacesWorkspace(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataAwsWorkspacesWorkspace{}
 
 	_jsii_.Create(
-		"aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspace",
+		"@cdktf/provider-aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspace",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -465,7 +465,7 @@ func NewDataAwsWorkspacesWorkspace_Override(d DataAwsWorkspacesWorkspace, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspace",
+		"@cdktf/provider-aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspace",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -598,7 +598,7 @@ func DataAwsWorkspacesWorkspace_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspace",
+		"@cdktf/provider-aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspace",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -617,7 +617,7 @@ func DataAwsWorkspacesWorkspace_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspace",
+		"@cdktf/provider-aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspace",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -636,7 +636,7 @@ func DataAwsWorkspacesWorkspace_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspace",
+		"@cdktf/provider-aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspace",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -649,7 +649,7 @@ func DataAwsWorkspacesWorkspace_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspace",
+		"@cdktf/provider-aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspace",
 		"tfResourceType",
 		&returns,
 	)

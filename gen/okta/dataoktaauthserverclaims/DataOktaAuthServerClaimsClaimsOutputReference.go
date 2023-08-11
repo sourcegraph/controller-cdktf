@@ -244,7 +244,7 @@ func NewDataOktaAuthServerClaimsClaimsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataOktaAuthServerClaimsClaimsOutputReference{}
 
 	_jsii_.Create(
-		"okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaimsOutputReference",
+		"@cdktf/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaimsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -256,7 +256,7 @@ func NewDataOktaAuthServerClaimsClaimsOutputReference_Override(d DataOktaAuthSer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaimsOutputReference",
+		"@cdktf/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaimsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -214,7 +214,7 @@ func NewGoogleBinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference
 	j := jsiiProxy_GoogleBinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBinaryAuthorizationAttestor.GoogleBinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationAttestor.GoogleBinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -226,7 +226,7 @@ func NewGoogleBinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBinaryAuthorizationAttestor.GoogleBinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationAttestor.GoogleBinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

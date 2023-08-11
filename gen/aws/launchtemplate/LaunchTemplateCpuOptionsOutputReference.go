@@ -204,7 +204,7 @@ func NewLaunchTemplateCpuOptionsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_LaunchTemplateCpuOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateCpuOptionsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCpuOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewLaunchTemplateCpuOptionsOutputReference_Override(l LaunchTemplateCpuOpti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateCpuOptionsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCpuOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

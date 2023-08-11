@@ -448,7 +448,7 @@ func NewDataplexLakeIamBinding(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataplexLakeIamBinding{}
 
 	_jsii_.Create(
-		"google.dataplexLakeIamBinding.DataplexLakeIamBinding",
+		"@cdktf/provider-google.dataplexLakeIamBinding.DataplexLakeIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewDataplexLakeIamBinding_Override(d DataplexLakeIamBinding, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexLakeIamBinding.DataplexLakeIamBinding",
+		"@cdktf/provider-google.dataplexLakeIamBinding.DataplexLakeIamBinding",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -627,7 +627,7 @@ func DataplexLakeIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataplexLakeIamBinding.DataplexLakeIamBinding",
+		"@cdktf/provider-google.dataplexLakeIamBinding.DataplexLakeIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func DataplexLakeIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataplexLakeIamBinding.DataplexLakeIamBinding",
+		"@cdktf/provider-google.dataplexLakeIamBinding.DataplexLakeIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func DataplexLakeIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataplexLakeIamBinding.DataplexLakeIamBinding",
+		"@cdktf/provider-google.dataplexLakeIamBinding.DataplexLakeIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DataplexLakeIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataplexLakeIamBinding.DataplexLakeIamBinding",
+		"@cdktf/provider-google.dataplexLakeIamBinding.DataplexLakeIamBinding",
 		"tfResourceType",
 		&returns,
 	)

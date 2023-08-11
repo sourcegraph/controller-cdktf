@@ -424,7 +424,7 @@ func NewGoogleBigqueryDatasetIamBinding(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleBigqueryDatasetIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDatasetIamBinding.GoogleBigqueryDatasetIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamBinding.GoogleBigqueryDatasetIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleBigqueryDatasetIamBinding_Override(g GoogleBigqueryDatasetIamBindi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDatasetIamBinding.GoogleBigqueryDatasetIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamBinding.GoogleBigqueryDatasetIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleBigqueryDatasetIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryDatasetIamBinding.GoogleBigqueryDatasetIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamBinding.GoogleBigqueryDatasetIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleBigqueryDatasetIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryDatasetIamBinding.GoogleBigqueryDatasetIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamBinding.GoogleBigqueryDatasetIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleBigqueryDatasetIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryDatasetIamBinding.GoogleBigqueryDatasetIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamBinding.GoogleBigqueryDatasetIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleBigqueryDatasetIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigqueryDatasetIamBinding.GoogleBigqueryDatasetIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamBinding.GoogleBigqueryDatasetIamBinding",
 		"tfResourceType",
 		&returns,
 	)

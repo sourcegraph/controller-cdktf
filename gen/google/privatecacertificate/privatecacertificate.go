@@ -645,7 +645,7 @@ func NewPrivatecaCertificate(scope constructs.Construct, id *string, config *Pri
 	j := jsiiProxy_PrivatecaCertificate{}
 
 	_jsii_.Create(
-		"google.privatecaCertificate.PrivatecaCertificate",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -658,7 +658,7 @@ func NewPrivatecaCertificate_Override(p PrivatecaCertificate, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCertificate.PrivatecaCertificate",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificate",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -868,7 +868,7 @@ func PrivatecaCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCertificate.PrivatecaCertificate",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -887,7 +887,7 @@ func PrivatecaCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCertificate.PrivatecaCertificate",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -906,7 +906,7 @@ func PrivatecaCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCertificate.PrivatecaCertificate",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -919,7 +919,7 @@ func PrivatecaCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.privatecaCertificate.PrivatecaCertificate",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificate",
 		"tfResourceType",
 		&returns,
 	)

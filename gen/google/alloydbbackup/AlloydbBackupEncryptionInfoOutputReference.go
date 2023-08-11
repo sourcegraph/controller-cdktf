@@ -178,7 +178,7 @@ func NewAlloydbBackupEncryptionInfoOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_AlloydbBackupEncryptionInfoOutputReference{}
 
 	_jsii_.Create(
-		"google.alloydbBackup.AlloydbBackupEncryptionInfoOutputReference",
+		"@cdktf/provider-google.alloydbBackup.AlloydbBackupEncryptionInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewAlloydbBackupEncryptionInfoOutputReference_Override(a AlloydbBackupEncry
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.alloydbBackup.AlloydbBackupEncryptionInfoOutputReference",
+		"@cdktf/provider-google.alloydbBackup.AlloydbBackupEncryptionInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

@@ -425,7 +425,7 @@ func NewDataGoogleComputeGlobalAddress(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataGoogleComputeGlobalAddress{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeGlobalAddress.DataGoogleComputeGlobalAddress",
+		"@cdktf/provider-google-beta.dataGoogleComputeGlobalAddress.DataGoogleComputeGlobalAddress",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -438,7 +438,7 @@ func NewDataGoogleComputeGlobalAddress_Override(d DataGoogleComputeGlobalAddress
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeGlobalAddress.DataGoogleComputeGlobalAddress",
+		"@cdktf/provider-google-beta.dataGoogleComputeGlobalAddress.DataGoogleComputeGlobalAddress",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -549,7 +549,7 @@ func DataGoogleComputeGlobalAddress_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeGlobalAddress.DataGoogleComputeGlobalAddress",
+		"@cdktf/provider-google-beta.dataGoogleComputeGlobalAddress.DataGoogleComputeGlobalAddress",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -568,7 +568,7 @@ func DataGoogleComputeGlobalAddress_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeGlobalAddress.DataGoogleComputeGlobalAddress",
+		"@cdktf/provider-google-beta.dataGoogleComputeGlobalAddress.DataGoogleComputeGlobalAddress",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -587,7 +587,7 @@ func DataGoogleComputeGlobalAddress_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeGlobalAddress.DataGoogleComputeGlobalAddress",
+		"@cdktf/provider-google-beta.dataGoogleComputeGlobalAddress.DataGoogleComputeGlobalAddress",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -600,7 +600,7 @@ func DataGoogleComputeGlobalAddress_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleComputeGlobalAddress.DataGoogleComputeGlobalAddress",
+		"@cdktf/provider-google-beta.dataGoogleComputeGlobalAddress.DataGoogleComputeGlobalAddress",
 		"tfResourceType",
 		&returns,
 	)

@@ -212,7 +212,7 @@ func NewLoggingBillingAccountBucketConfigCmekSettingsOutputReference(terraformRe
 	j := jsiiProxy_LoggingBillingAccountBucketConfigCmekSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfigCmekSettingsOutputReference",
+		"@cdktf/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfigCmekSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -224,7 +224,7 @@ func NewLoggingBillingAccountBucketConfigCmekSettingsOutputReference_Override(l 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfigCmekSettingsOutputReference",
+		"@cdktf/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfigCmekSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

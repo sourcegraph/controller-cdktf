@@ -424,7 +424,7 @@ func NewGooglePubsubTopicIamBinding(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GooglePubsubTopicIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBinding",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGooglePubsubTopicIamBinding_Override(g GooglePubsubTopicIamBinding, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBinding",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GooglePubsubTopicIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBinding",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GooglePubsubTopicIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBinding",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GooglePubsubTopicIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBinding",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GooglePubsubTopicIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBinding",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBinding",
 		"tfResourceType",
 		&returns,
 	)

@@ -354,7 +354,7 @@ func NewWafregionalSizeConstraintSet(scope constructs.Construct, id *string, con
 	j := jsiiProxy_WafregionalSizeConstraintSet{}
 
 	_jsii_.Create(
-		"aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet",
+		"@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -367,7 +367,7 @@ func NewWafregionalSizeConstraintSet_Override(w WafregionalSizeConstraintSet, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet",
+		"@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -489,7 +489,7 @@ func WafregionalSizeConstraintSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet",
+		"@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func WafregionalSizeConstraintSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet",
+		"@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func WafregionalSizeConstraintSet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet",
+		"@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func WafregionalSizeConstraintSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet",
+		"@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSet",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.apiGatewayRequestValidator.ApiGatewayRequestValidator",
+		"@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator",
 		reflect.TypeOf((*ApiGatewayRequestValidator)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apiGatewayRequestValidator.ApiGatewayRequestValidatorConfig",
+		"@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidatorConfig",
 		reflect.TypeOf((*ApiGatewayRequestValidatorConfig)(nil)).Elem(),
 	)
 }

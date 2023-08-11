@@ -382,7 +382,7 @@ func NewDataAwsRoute53ResolverEndpoint(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataAwsRoute53ResolverEndpoint{}
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -395,7 +395,7 @@ func NewDataAwsRoute53ResolverEndpoint_Override(d DataAwsRoute53ResolverEndpoint
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -495,7 +495,7 @@ func DataAwsRoute53ResolverEndpoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -514,7 +514,7 @@ func DataAwsRoute53ResolverEndpoint_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -533,7 +533,7 @@ func DataAwsRoute53ResolverEndpoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -546,7 +546,7 @@ func DataAwsRoute53ResolverEndpoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint",
 		"tfResourceType",
 		&returns,
 	)

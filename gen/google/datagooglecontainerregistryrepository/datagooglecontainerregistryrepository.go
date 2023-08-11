@@ -327,7 +327,7 @@ func NewDataGoogleContainerRegistryRepository(scope constructs.Construct, id *st
 	j := jsiiProxy_DataGoogleContainerRegistryRepository{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository",
+		"@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -340,7 +340,7 @@ func NewDataGoogleContainerRegistryRepository_Override(d DataGoogleContainerRegi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository",
+		"@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -451,7 +451,7 @@ func DataGoogleContainerRegistryRepository_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository",
+		"@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -470,7 +470,7 @@ func DataGoogleContainerRegistryRepository_IsTerraformDataSource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository",
+		"@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -489,7 +489,7 @@ func DataGoogleContainerRegistryRepository_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository",
+		"@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -502,7 +502,7 @@ func DataGoogleContainerRegistryRepository_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository",
+		"@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository",
 		"tfResourceType",
 		&returns,
 	)

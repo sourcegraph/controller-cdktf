@@ -943,7 +943,7 @@ func NewMfaPolicy(scope constructs.Construct, id *string, config *MfaPolicyConfi
 	j := jsiiProxy_MfaPolicy{}
 
 	_jsii_.Create(
-		"okta.mfaPolicy.MfaPolicy",
+		"@cdktf/provider-okta.mfaPolicy.MfaPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -956,7 +956,7 @@ func NewMfaPolicy_Override(m MfaPolicy, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.mfaPolicy.MfaPolicy",
+		"@cdktf/provider-okta.mfaPolicy.MfaPolicy",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -1364,7 +1364,7 @@ func MfaPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.mfaPolicy.MfaPolicy",
+		"@cdktf/provider-okta.mfaPolicy.MfaPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1383,7 +1383,7 @@ func MfaPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.mfaPolicy.MfaPolicy",
+		"@cdktf/provider-okta.mfaPolicy.MfaPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1402,7 +1402,7 @@ func MfaPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.mfaPolicy.MfaPolicy",
+		"@cdktf/provider-okta.mfaPolicy.MfaPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1415,7 +1415,7 @@ func MfaPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.mfaPolicy.MfaPolicy",
+		"@cdktf/provider-okta.mfaPolicy.MfaPolicy",
 		"tfResourceType",
 		&returns,
 	)

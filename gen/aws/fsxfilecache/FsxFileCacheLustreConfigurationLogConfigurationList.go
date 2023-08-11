@@ -104,7 +104,7 @@ func NewFsxFileCacheLustreConfigurationLogConfigurationList(terraformResource cd
 	j := jsiiProxy_FsxFileCacheLustreConfigurationLogConfigurationList{}
 
 	_jsii_.Create(
-		"aws.fsxFileCache.FsxFileCacheLustreConfigurationLogConfigurationList",
+		"@cdktf/provider-aws.fsxFileCache.FsxFileCacheLustreConfigurationLogConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewFsxFileCacheLustreConfigurationLogConfigurationList_Override(f FsxFileCa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxFileCache.FsxFileCacheLustreConfigurationLogConfigurationList",
+		"@cdktf/provider-aws.fsxFileCache.FsxFileCacheLustreConfigurationLogConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)

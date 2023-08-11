@@ -116,7 +116,7 @@ func NewMedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorList(t
 	j := jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorList{}
 
 	_jsii_.Create(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorList",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorList_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorList",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

@@ -238,7 +238,7 @@ func NewDatabaseMigrationServiceConnectionProfileMysqlSslOutputReference(terrafo
 	j := jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference{}
 
 	_jsii_.Create(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -250,7 +250,7 @@ func NewDatabaseMigrationServiceConnectionProfileMysqlSslOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

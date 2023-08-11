@@ -367,7 +367,7 @@ func NewVpcEndpointPolicy(scope constructs.Construct, id *string, config *VpcEnd
 	j := jsiiProxy_VpcEndpointPolicy{}
 
 	_jsii_.Create(
-		"aws.vpcEndpointPolicy.VpcEndpointPolicy",
+		"@cdktf/provider-aws.vpcEndpointPolicy.VpcEndpointPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewVpcEndpointPolicy_Override(v VpcEndpointPolicy, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcEndpointPolicy.VpcEndpointPolicy",
+		"@cdktf/provider-aws.vpcEndpointPolicy.VpcEndpointPolicy",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -513,7 +513,7 @@ func VpcEndpointPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcEndpointPolicy.VpcEndpointPolicy",
+		"@cdktf/provider-aws.vpcEndpointPolicy.VpcEndpointPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -532,7 +532,7 @@ func VpcEndpointPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcEndpointPolicy.VpcEndpointPolicy",
+		"@cdktf/provider-aws.vpcEndpointPolicy.VpcEndpointPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func VpcEndpointPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcEndpointPolicy.VpcEndpointPolicy",
+		"@cdktf/provider-aws.vpcEndpointPolicy.VpcEndpointPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func VpcEndpointPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.vpcEndpointPolicy.VpcEndpointPolicy",
+		"@cdktf/provider-aws.vpcEndpointPolicy.VpcEndpointPolicy",
 		"tfResourceType",
 		&returns,
 	)

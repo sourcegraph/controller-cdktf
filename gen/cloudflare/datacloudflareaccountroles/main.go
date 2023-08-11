@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles",
+		"@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles",
 		reflect.TypeOf((*DataCloudflareAccountRoles)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -56,15 +56,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesConfig",
+		"@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesConfig",
 		reflect.TypeOf((*DataCloudflareAccountRolesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesRoles",
+		"@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesRoles",
 		reflect.TypeOf((*DataCloudflareAccountRolesRoles)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesRolesList",
+		"@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesRolesList",
 		reflect.TypeOf((*DataCloudflareAccountRolesRolesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -84,7 +84,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesRolesOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesRolesOutputReference",
 		reflect.TypeOf((*DataCloudflareAccountRolesRolesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

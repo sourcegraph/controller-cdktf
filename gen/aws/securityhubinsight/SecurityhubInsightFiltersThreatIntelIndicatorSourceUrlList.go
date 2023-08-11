@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList(terraformReso
 	j := jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList_Override(s Se
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

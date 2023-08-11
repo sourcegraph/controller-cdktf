@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation",
+		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation",
 		reflect.TypeOf((*FsxDataRepositoryAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,19 +86,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationConfig",
+		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationConfig",
 		reflect.TypeOf((*FsxDataRepositoryAssociationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3",
+		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3",
 		reflect.TypeOf((*FsxDataRepositoryAssociationS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoExportPolicy",
+		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoExportPolicy",
 		reflect.TypeOf((*FsxDataRepositoryAssociationS3AutoExportPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference",
+		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference",
 		reflect.TypeOf((*FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -133,11 +133,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoImportPolicy",
+		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoImportPolicy",
 		reflect.TypeOf((*FsxDataRepositoryAssociationS3AutoImportPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference",
+		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference",
 		reflect.TypeOf((*FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -172,7 +172,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3OutputReference",
+		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3OutputReference",
 		reflect.TypeOf((*FsxDataRepositoryAssociationS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoExportPolicy", GoGetter: "AutoExportPolicy"},
@@ -212,11 +212,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationTimeouts",
+		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationTimeouts",
 		reflect.TypeOf((*FsxDataRepositoryAssociationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationTimeoutsOutputReference",
 		reflect.TypeOf((*FsxDataRepositoryAssociationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

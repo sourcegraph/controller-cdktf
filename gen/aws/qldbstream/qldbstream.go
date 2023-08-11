@@ -494,7 +494,7 @@ func NewQldbStream(scope constructs.Construct, id *string, config *QldbStreamCon
 	j := jsiiProxy_QldbStream{}
 
 	_jsii_.Create(
-		"aws.qldbStream.QldbStream",
+		"@cdktf/provider-aws.qldbStream.QldbStream",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -507,7 +507,7 @@ func NewQldbStream_Override(q QldbStream, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.qldbStream.QldbStream",
+		"@cdktf/provider-aws.qldbStream.QldbStream",
 		[]interface{}{scope, id, config},
 		q,
 	)
@@ -695,7 +695,7 @@ func QldbStream_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.qldbStream.QldbStream",
+		"@cdktf/provider-aws.qldbStream.QldbStream",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +714,7 @@ func QldbStream_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.qldbStream.QldbStream",
+		"@cdktf/provider-aws.qldbStream.QldbStream",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -733,7 +733,7 @@ func QldbStream_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.qldbStream.QldbStream",
+		"@cdktf/provider-aws.qldbStream.QldbStream",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -746,7 +746,7 @@ func QldbStream_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.qldbStream.QldbStream",
+		"@cdktf/provider-aws.qldbStream.QldbStream",
 		"tfResourceType",
 		&returns,
 	)

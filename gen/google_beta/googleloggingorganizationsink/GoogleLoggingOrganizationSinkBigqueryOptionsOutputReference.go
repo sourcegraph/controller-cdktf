@@ -179,7 +179,7 @@ func NewGoogleLoggingOrganizationSinkBigqueryOptionsOutputReference(terraformRes
 	j := jsiiProxy_GoogleLoggingOrganizationSinkBigqueryOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSinkBigqueryOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSinkBigqueryOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleLoggingOrganizationSinkBigqueryOptionsOutputReference_Override(g G
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSinkBigqueryOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSinkBigqueryOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

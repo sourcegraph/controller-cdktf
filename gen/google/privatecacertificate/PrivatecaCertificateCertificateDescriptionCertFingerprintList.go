@@ -104,7 +104,7 @@ func NewPrivatecaCertificateCertificateDescriptionCertFingerprintList(terraformR
 	j := jsiiProxy_PrivatecaCertificateCertificateDescriptionCertFingerprintList{}
 
 	_jsii_.Create(
-		"google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionCertFingerprintList",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionCertFingerprintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewPrivatecaCertificateCertificateDescriptionCertFingerprintList_Override(p
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionCertFingerprintList",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionCertFingerprintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

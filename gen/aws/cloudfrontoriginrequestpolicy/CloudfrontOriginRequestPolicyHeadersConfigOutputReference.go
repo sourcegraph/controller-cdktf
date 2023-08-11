@@ -204,7 +204,7 @@ func NewCloudfrontOriginRequestPolicyHeadersConfigOutputReference(terraformResou
 	j := jsiiProxy_CloudfrontOriginRequestPolicyHeadersConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyHeadersConfigOutputReference",
+		"@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyHeadersConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCloudfrontOriginRequestPolicyHeadersConfigOutputReference_Override(c Clo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyHeadersConfigOutputReference",
+		"@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyHeadersConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

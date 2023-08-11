@@ -226,7 +226,7 @@ func NewCloudRunV2ServiceIamMemberConditionOutputReference(terraformResource cdk
 	j := jsiiProxy_CloudRunV2ServiceIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunV2ServiceIamMember.CloudRunV2ServiceIamMemberConditionOutputReference",
+		"@cdktf/provider-google.cloudRunV2ServiceIamMember.CloudRunV2ServiceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewCloudRunV2ServiceIamMemberConditionOutputReference_Override(c CloudRunV2
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2ServiceIamMember.CloudRunV2ServiceIamMemberConditionOutputReference",
+		"@cdktf/provider-google.cloudRunV2ServiceIamMember.CloudRunV2ServiceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

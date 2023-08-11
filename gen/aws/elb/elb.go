@@ -771,7 +771,7 @@ func NewElb(scope constructs.Construct, id *string, config *ElbConfig) Elb {
 	j := jsiiProxy_Elb{}
 
 	_jsii_.Create(
-		"aws.elb.Elb",
+		"@cdktf/provider-aws.elb.Elb",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -784,7 +784,7 @@ func NewElb_Override(e Elb, scope constructs.Construct, id *string, config *ElbC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elb.Elb",
+		"@cdktf/provider-aws.elb.Elb",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -1060,7 +1060,7 @@ func Elb_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elb.Elb",
+		"@cdktf/provider-aws.elb.Elb",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1079,7 +1079,7 @@ func Elb_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elb.Elb",
+		"@cdktf/provider-aws.elb.Elb",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1098,7 +1098,7 @@ func Elb_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elb.Elb",
+		"@cdktf/provider-aws.elb.Elb",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1111,7 +1111,7 @@ func Elb_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.elb.Elb",
+		"@cdktf/provider-aws.elb.Elb",
 		"tfResourceType",
 		&returns,
 	)

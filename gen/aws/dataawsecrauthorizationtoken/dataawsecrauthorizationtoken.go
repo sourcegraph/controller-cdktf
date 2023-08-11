@@ -347,7 +347,7 @@ func NewDataAwsEcrAuthorizationToken(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataAwsEcrAuthorizationToken{}
 
 	_jsii_.Create(
-		"aws.dataAwsEcrAuthorizationToken.DataAwsEcrAuthorizationToken",
+		"@cdktf/provider-aws.dataAwsEcrAuthorizationToken.DataAwsEcrAuthorizationToken",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewDataAwsEcrAuthorizationToken_Override(d DataAwsEcrAuthorizationToken, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEcrAuthorizationToken.DataAwsEcrAuthorizationToken",
+		"@cdktf/provider-aws.dataAwsEcrAuthorizationToken.DataAwsEcrAuthorizationToken",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -460,7 +460,7 @@ func DataAwsEcrAuthorizationToken_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEcrAuthorizationToken.DataAwsEcrAuthorizationToken",
+		"@cdktf/provider-aws.dataAwsEcrAuthorizationToken.DataAwsEcrAuthorizationToken",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -479,7 +479,7 @@ func DataAwsEcrAuthorizationToken_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEcrAuthorizationToken.DataAwsEcrAuthorizationToken",
+		"@cdktf/provider-aws.dataAwsEcrAuthorizationToken.DataAwsEcrAuthorizationToken",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -498,7 +498,7 @@ func DataAwsEcrAuthorizationToken_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEcrAuthorizationToken.DataAwsEcrAuthorizationToken",
+		"@cdktf/provider-aws.dataAwsEcrAuthorizationToken.DataAwsEcrAuthorizationToken",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -511,7 +511,7 @@ func DataAwsEcrAuthorizationToken_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEcrAuthorizationToken.DataAwsEcrAuthorizationToken",
+		"@cdktf/provider-aws.dataAwsEcrAuthorizationToken.DataAwsEcrAuthorizationToken",
 		"tfResourceType",
 		&returns,
 	)

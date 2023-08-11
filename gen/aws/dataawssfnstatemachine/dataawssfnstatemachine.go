@@ -346,7 +346,7 @@ func NewDataAwsSfnStateMachine(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataAwsSfnStateMachine{}
 
 	_jsii_.Create(
-		"aws.dataAwsSfnStateMachine.DataAwsSfnStateMachine",
+		"@cdktf/provider-aws.dataAwsSfnStateMachine.DataAwsSfnStateMachine",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -359,7 +359,7 @@ func NewDataAwsSfnStateMachine_Override(d DataAwsSfnStateMachine, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSfnStateMachine.DataAwsSfnStateMachine",
+		"@cdktf/provider-aws.dataAwsSfnStateMachine.DataAwsSfnStateMachine",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -459,7 +459,7 @@ func DataAwsSfnStateMachine_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSfnStateMachine.DataAwsSfnStateMachine",
+		"@cdktf/provider-aws.dataAwsSfnStateMachine.DataAwsSfnStateMachine",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -478,7 +478,7 @@ func DataAwsSfnStateMachine_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSfnStateMachine.DataAwsSfnStateMachine",
+		"@cdktf/provider-aws.dataAwsSfnStateMachine.DataAwsSfnStateMachine",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -497,7 +497,7 @@ func DataAwsSfnStateMachine_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSfnStateMachine.DataAwsSfnStateMachine",
+		"@cdktf/provider-aws.dataAwsSfnStateMachine.DataAwsSfnStateMachine",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -510,7 +510,7 @@ func DataAwsSfnStateMachine_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSfnStateMachine.DataAwsSfnStateMachine",
+		"@cdktf/provider-aws.dataAwsSfnStateMachine.DataAwsSfnStateMachine",
 		"tfResourceType",
 		&returns,
 	)

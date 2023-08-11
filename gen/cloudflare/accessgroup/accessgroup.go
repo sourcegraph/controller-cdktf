@@ -438,7 +438,7 @@ func NewAccessGroup(scope constructs.Construct, id *string, config *AccessGroupC
 	j := jsiiProxy_AccessGroup{}
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroup",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -451,7 +451,7 @@ func NewAccessGroup_Override(a AccessGroup, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroup",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroup",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -595,7 +595,7 @@ func AccessGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessGroup.AccessGroup",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -614,7 +614,7 @@ func AccessGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessGroup.AccessGroup",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func AccessGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessGroup.AccessGroup",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func AccessGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.accessGroup.AccessGroup",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroup",
 		"tfResourceType",
 		&returns,
 	)

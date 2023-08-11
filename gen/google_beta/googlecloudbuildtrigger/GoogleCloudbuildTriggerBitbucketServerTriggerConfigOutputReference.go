@@ -273,7 +273,7 @@ func NewGoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference(terra
 	j := jsiiProxy_GoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -285,7 +285,7 @@ func NewGoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

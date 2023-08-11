@@ -104,7 +104,7 @@ func NewMemcacheInstanceMemcacheNodesList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_MemcacheInstanceMemcacheNodesList{}
 
 	_jsii_.Create(
-		"google.memcacheInstance.MemcacheInstanceMemcacheNodesList",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMemcacheNodesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewMemcacheInstanceMemcacheNodesList_Override(m MemcacheInstanceMemcacheNod
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.memcacheInstance.MemcacheInstanceMemcacheNodesList",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMemcacheNodesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

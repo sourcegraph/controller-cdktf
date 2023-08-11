@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatus",
+		"@cdktf/provider-aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatus",
 		reflect.TypeOf((*SagemakerServicecatalogPortfolioStatus)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,7 +57,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatusConfig",
+		"@cdktf/provider-aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatusConfig",
 		reflect.TypeOf((*SagemakerServicecatalogPortfolioStatusConfig)(nil)).Elem(),
 	)
 }

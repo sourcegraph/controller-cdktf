@@ -180,7 +180,7 @@ func NewLambdaEventSourceMappingScalingConfigOutputReference(terraformResource c
 	j := jsiiProxy_LambdaEventSourceMappingScalingConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfigOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewLambdaEventSourceMappingScalingConfigOutputReference_Override(l LambdaEv
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfigOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

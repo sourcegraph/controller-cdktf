@@ -521,7 +521,7 @@ func NewCloudAssetProjectFeed(scope constructs.Construct, id *string, config *Cl
 	j := jsiiProxy_CloudAssetProjectFeed{}
 
 	_jsii_.Create(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeed",
+		"@cdktf/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -534,7 +534,7 @@ func NewCloudAssetProjectFeed_Override(c CloudAssetProjectFeed, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeed",
+		"@cdktf/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -711,7 +711,7 @@ func CloudAssetProjectFeed_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeed",
+		"@cdktf/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -730,7 +730,7 @@ func CloudAssetProjectFeed_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeed",
+		"@cdktf/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -749,7 +749,7 @@ func CloudAssetProjectFeed_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeed",
+		"@cdktf/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func CloudAssetProjectFeed_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeed",
+		"@cdktf/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplate",
+		"@cdktf/provider-aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplate",
 		reflect.TypeOf((*ElasticBeanstalkConfigurationTemplate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplateConfig",
+		"@cdktf/provider-aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplateConfig",
 		reflect.TypeOf((*ElasticBeanstalkConfigurationTemplateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplateSetting",
+		"@cdktf/provider-aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplateSetting",
 		reflect.TypeOf((*ElasticBeanstalkConfigurationTemplateSetting)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplateSettingList",
+		"@cdktf/provider-aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplateSettingList",
 		reflect.TypeOf((*ElasticBeanstalkConfigurationTemplateSettingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,7 +101,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplateSettingOutputReference",
+		"@cdktf/provider-aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplateSettingOutputReference",
 		reflect.TypeOf((*ElasticBeanstalkConfigurationTemplateSettingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

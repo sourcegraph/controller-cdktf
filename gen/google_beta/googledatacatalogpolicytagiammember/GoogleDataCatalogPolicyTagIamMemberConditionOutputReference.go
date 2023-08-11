@@ -226,7 +226,7 @@ func NewGoogleDataCatalogPolicyTagIamMemberConditionOutputReference(terraformRes
 	j := jsiiProxy_GoogleDataCatalogPolicyTagIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogPolicyTagIamMember.GoogleDataCatalogPolicyTagIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataCatalogPolicyTagIamMember.GoogleDataCatalogPolicyTagIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleDataCatalogPolicyTagIamMemberConditionOutputReference_Override(g G
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogPolicyTagIamMember.GoogleDataCatalogPolicyTagIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataCatalogPolicyTagIamMember.GoogleDataCatalogPolicyTagIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

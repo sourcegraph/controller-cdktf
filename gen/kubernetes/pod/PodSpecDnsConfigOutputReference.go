@@ -228,7 +228,7 @@ func NewPodSpecDnsConfigOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_PodSpecDnsConfigOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecDnsConfigOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecDnsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewPodSpecDnsConfigOutputReference_Override(p PodSpecDnsConfigOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecDnsConfigOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecDnsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

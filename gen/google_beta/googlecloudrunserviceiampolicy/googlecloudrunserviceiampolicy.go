@@ -401,7 +401,7 @@ func NewGoogleCloudRunServiceIamPolicy(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleCloudRunServiceIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunServiceIamPolicy.GoogleCloudRunServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudRunServiceIamPolicy.GoogleCloudRunServiceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleCloudRunServiceIamPolicy_Override(g GoogleCloudRunServiceIamPolicy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunServiceIamPolicy.GoogleCloudRunServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudRunServiceIamPolicy.GoogleCloudRunServiceIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GoogleCloudRunServiceIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunServiceIamPolicy.GoogleCloudRunServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudRunServiceIamPolicy.GoogleCloudRunServiceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GoogleCloudRunServiceIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunServiceIamPolicy.GoogleCloudRunServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudRunServiceIamPolicy.GoogleCloudRunServiceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GoogleCloudRunServiceIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunServiceIamPolicy.GoogleCloudRunServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudRunServiceIamPolicy.GoogleCloudRunServiceIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GoogleCloudRunServiceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudRunServiceIamPolicy.GoogleCloudRunServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudRunServiceIamPolicy.GoogleCloudRunServiceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

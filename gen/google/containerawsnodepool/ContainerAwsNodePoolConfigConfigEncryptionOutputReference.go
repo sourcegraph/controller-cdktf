@@ -179,7 +179,7 @@ func NewContainerAwsNodePoolConfigConfigEncryptionOutputReference(terraformResou
 	j := jsiiProxy_ContainerAwsNodePoolConfigConfigEncryptionOutputReference{}
 
 	_jsii_.Create(
-		"google.containerAwsNodePool.ContainerAwsNodePoolConfigConfigEncryptionOutputReference",
+		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigConfigEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewContainerAwsNodePoolConfigConfigEncryptionOutputReference_Override(c Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAwsNodePool.ContainerAwsNodePoolConfigConfigEncryptionOutputReference",
+		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigConfigEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

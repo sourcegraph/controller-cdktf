@@ -483,7 +483,7 @@ func NewRdsClusterEndpoint(scope constructs.Construct, id *string, config *RdsCl
 	j := jsiiProxy_RdsClusterEndpoint{}
 
 	_jsii_.Create(
-		"aws.rdsClusterEndpoint.RdsClusterEndpoint",
+		"@cdktf/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -496,7 +496,7 @@ func NewRdsClusterEndpoint_Override(r RdsClusterEndpoint, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rdsClusterEndpoint.RdsClusterEndpoint",
+		"@cdktf/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -684,7 +684,7 @@ func RdsClusterEndpoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rdsClusterEndpoint.RdsClusterEndpoint",
+		"@cdktf/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -703,7 +703,7 @@ func RdsClusterEndpoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rdsClusterEndpoint.RdsClusterEndpoint",
+		"@cdktf/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -722,7 +722,7 @@ func RdsClusterEndpoint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rdsClusterEndpoint.RdsClusterEndpoint",
+		"@cdktf/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func RdsClusterEndpoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.rdsClusterEndpoint.RdsClusterEndpoint",
+		"@cdktf/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint",
 		"tfResourceType",
 		&returns,
 	)

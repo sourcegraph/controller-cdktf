@@ -228,7 +228,7 @@ func NewAmiCopyTimeoutsOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_AmiCopyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.amiCopy.AmiCopyTimeoutsOutputReference",
+		"@cdktf/provider-aws.amiCopy.AmiCopyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAmiCopyTimeoutsOutputReference_Override(a AmiCopyTimeoutsOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.amiCopy.AmiCopyTimeoutsOutputReference",
+		"@cdktf/provider-aws.amiCopy.AmiCopyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

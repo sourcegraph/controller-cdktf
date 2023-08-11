@@ -379,7 +379,7 @@ func NewIdentityPlatformProjectDefaultConfig(scope constructs.Construct, id *str
 	j := jsiiProxy_IdentityPlatformProjectDefaultConfig{}
 
 	_jsii_.Create(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfig",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -392,7 +392,7 @@ func NewIdentityPlatformProjectDefaultConfig_Override(i IdentityPlatformProjectD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfig",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfig",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -514,7 +514,7 @@ func IdentityPlatformProjectDefaultConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfig",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -533,7 +533,7 @@ func IdentityPlatformProjectDefaultConfig_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfig",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -552,7 +552,7 @@ func IdentityPlatformProjectDefaultConfig_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfig",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func IdentityPlatformProjectDefaultConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfig",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfig",
 		"tfResourceType",
 		&returns,
 	)

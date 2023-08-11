@@ -251,7 +251,7 @@ func NewAppsyncGraphqlApiOpenidConnectConfigOutputReference(terraformResource cd
 	j := jsiiProxy_AppsyncGraphqlApiOpenidConnectConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.appsyncGraphqlApi.AppsyncGraphqlApiOpenidConnectConfigOutputReference",
+		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiOpenidConnectConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewAppsyncGraphqlApiOpenidConnectConfigOutputReference_Override(a AppsyncGr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appsyncGraphqlApi.AppsyncGraphqlApiOpenidConnectConfigOutputReference",
+		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiOpenidConnectConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

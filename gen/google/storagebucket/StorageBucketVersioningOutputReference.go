@@ -179,7 +179,7 @@ func NewStorageBucketVersioningOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_StorageBucketVersioningOutputReference{}
 
 	_jsii_.Create(
-		"google.storageBucket.StorageBucketVersioningOutputReference",
+		"@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewStorageBucketVersioningOutputReference_Override(s StorageBucketVersionin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageBucket.StorageBucketVersioningOutputReference",
+		"@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

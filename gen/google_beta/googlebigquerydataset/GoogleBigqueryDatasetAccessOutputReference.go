@@ -348,7 +348,7 @@ func NewGoogleBigqueryDatasetAccessOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleBigqueryDatasetAccessOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewGoogleBigqueryDatasetAccessOutputReference_Override(g GoogleBigqueryData
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

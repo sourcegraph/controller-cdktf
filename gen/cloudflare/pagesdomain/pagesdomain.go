@@ -376,7 +376,7 @@ func NewPagesDomain(scope constructs.Construct, id *string, config *PagesDomainC
 	j := jsiiProxy_PagesDomain{}
 
 	_jsii_.Create(
-		"cloudflare.pagesDomain.PagesDomain",
+		"@cdktf/provider-cloudflare.pagesDomain.PagesDomain",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -389,7 +389,7 @@ func NewPagesDomain_Override(p PagesDomain, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.pagesDomain.PagesDomain",
+		"@cdktf/provider-cloudflare.pagesDomain.PagesDomain",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -533,7 +533,7 @@ func PagesDomain_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.pagesDomain.PagesDomain",
+		"@cdktf/provider-cloudflare.pagesDomain.PagesDomain",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -552,7 +552,7 @@ func PagesDomain_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.pagesDomain.PagesDomain",
+		"@cdktf/provider-cloudflare.pagesDomain.PagesDomain",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -571,7 +571,7 @@ func PagesDomain_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.pagesDomain.PagesDomain",
+		"@cdktf/provider-cloudflare.pagesDomain.PagesDomain",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func PagesDomain_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.pagesDomain.PagesDomain",
+		"@cdktf/provider-cloudflare.pagesDomain.PagesDomain",
 		"tfResourceType",
 		&returns,
 	)

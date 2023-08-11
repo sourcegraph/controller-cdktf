@@ -321,7 +321,7 @@ func NewOpsworksNodejsAppLayerEbsVolumeOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_OpsworksNodejsAppLayerEbsVolumeOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerEbsVolumeOutputReference",
+		"@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerEbsVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -333,7 +333,7 @@ func NewOpsworksNodejsAppLayerEbsVolumeOutputReference_Override(o OpsworksNodejs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerEbsVolumeOutputReference",
+		"@cdktf/provider-aws.opsworksNodejsAppLayer.OpsworksNodejsAppLayerEbsVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)

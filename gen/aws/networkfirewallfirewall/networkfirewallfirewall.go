@@ -589,7 +589,7 @@ func NewNetworkfirewallFirewall(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_NetworkfirewallFirewall{}
 
 	_jsii_.Create(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewall",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewall",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -602,7 +602,7 @@ func NewNetworkfirewallFirewall_Override(n NetworkfirewallFirewall, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewall",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewall",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -812,7 +812,7 @@ func NetworkfirewallFirewall_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewall",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewall",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -831,7 +831,7 @@ func NetworkfirewallFirewall_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewall",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewall",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -850,7 +850,7 @@ func NetworkfirewallFirewall_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewall",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewall",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -863,7 +863,7 @@ func NetworkfirewallFirewall_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewall",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewall",
 		"tfResourceType",
 		&returns,
 	)

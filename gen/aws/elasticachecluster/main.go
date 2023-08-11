@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.elasticacheCluster.ElasticacheCluster",
+		"@cdktf/provider-aws.elasticacheCluster.ElasticacheCluster",
 		reflect.TypeOf((*ElasticacheCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -150,11 +150,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.elasticacheCluster.ElasticacheClusterCacheNodes",
+		"@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterCacheNodes",
 		reflect.TypeOf((*ElasticacheClusterCacheNodes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.elasticacheCluster.ElasticacheClusterCacheNodesList",
+		"@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterCacheNodesList",
 		reflect.TypeOf((*ElasticacheClusterCacheNodesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -174,7 +174,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.elasticacheCluster.ElasticacheClusterCacheNodesOutputReference",
+		"@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterCacheNodesOutputReference",
 		reflect.TypeOf((*ElasticacheClusterCacheNodesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
@@ -211,15 +211,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.elasticacheCluster.ElasticacheClusterConfig",
+		"@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterConfig",
 		reflect.TypeOf((*ElasticacheClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.elasticacheCluster.ElasticacheClusterLogDeliveryConfiguration",
+		"@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterLogDeliveryConfiguration",
 		reflect.TypeOf((*ElasticacheClusterLogDeliveryConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.elasticacheCluster.ElasticacheClusterLogDeliveryConfigurationList",
+		"@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterLogDeliveryConfigurationList",
 		reflect.TypeOf((*ElasticacheClusterLogDeliveryConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -240,7 +240,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.elasticacheCluster.ElasticacheClusterLogDeliveryConfigurationOutputReference",
+		"@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterLogDeliveryConfigurationOutputReference",
 		reflect.TypeOf((*ElasticacheClusterLogDeliveryConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

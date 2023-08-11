@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.cloudbuildWorkerPool.CloudbuildWorkerPool",
+		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool",
 		reflect.TypeOf((*CloudbuildWorkerPool)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,15 +85,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudbuildWorkerPool.CloudbuildWorkerPoolConfig",
+		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolConfig",
 		reflect.TypeOf((*CloudbuildWorkerPoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudbuildWorkerPool.CloudbuildWorkerPoolNetworkConfig",
+		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolNetworkConfig",
 		reflect.TypeOf((*CloudbuildWorkerPoolNetworkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudbuildWorkerPool.CloudbuildWorkerPoolNetworkConfigOutputReference",
+		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolNetworkConfigOutputReference",
 		reflect.TypeOf((*CloudbuildWorkerPoolNetworkConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -130,11 +130,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudbuildWorkerPool.CloudbuildWorkerPoolTimeouts",
+		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolTimeouts",
 		reflect.TypeOf((*CloudbuildWorkerPoolTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudbuildWorkerPool.CloudbuildWorkerPoolTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolTimeoutsOutputReference",
 		reflect.TypeOf((*CloudbuildWorkerPoolTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -175,11 +175,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudbuildWorkerPool.CloudbuildWorkerPoolWorkerConfig",
+		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolWorkerConfig",
 		reflect.TypeOf((*CloudbuildWorkerPoolWorkerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudbuildWorkerPool.CloudbuildWorkerPoolWorkerConfigOutputReference",
+		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolWorkerConfigOutputReference",
 		reflect.TypeOf((*CloudbuildWorkerPoolWorkerConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -104,7 +104,7 @@ func NewDataAwsLambdaFunctionFileSystemConfigList(terraformResource cdktf.IInter
 	j := jsiiProxy_DataAwsLambdaFunctionFileSystemConfigList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionFileSystemConfigList",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionFileSystemConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLambdaFunctionFileSystemConfigList_Override(d DataAwsLambdaFuncti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionFileSystemConfigList",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionFileSystemConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

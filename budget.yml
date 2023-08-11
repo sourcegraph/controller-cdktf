@@ -1,0 +1,11 @@
+name: budget
+
+module:
+  source: terraform-google-modules/project-factory/google//modules/budget
+  version: "14.0.0"
+
+target:
+  language: go
+  moduleName: github.com/sourcegraph/controller-cdktf/gen
+
+output: gen

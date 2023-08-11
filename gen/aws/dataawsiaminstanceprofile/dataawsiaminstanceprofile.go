@@ -357,7 +357,7 @@ func NewDataAwsIamInstanceProfile(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DataAwsIamInstanceProfile{}
 
 	_jsii_.Create(
-		"aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfile",
+		"@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -370,7 +370,7 @@ func NewDataAwsIamInstanceProfile_Override(d DataAwsIamInstanceProfile, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfile",
+		"@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfile",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -470,7 +470,7 @@ func DataAwsIamInstanceProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfile",
+		"@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -489,7 +489,7 @@ func DataAwsIamInstanceProfile_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfile",
+		"@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfile",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func DataAwsIamInstanceProfile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfile",
+		"@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -521,7 +521,7 @@ func DataAwsIamInstanceProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfile",
+		"@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfile",
 		"tfResourceType",
 		&returns,
 	)

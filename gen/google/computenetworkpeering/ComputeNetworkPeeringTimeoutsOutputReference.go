@@ -228,7 +228,7 @@ func NewComputeNetworkPeeringTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_ComputeNetworkPeeringTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeNetworkPeering.ComputeNetworkPeeringTimeoutsOutputReference",
+		"@cdktf/provider-google.computeNetworkPeering.ComputeNetworkPeeringTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeNetworkPeeringTimeoutsOutputReference_Override(c ComputeNetworkPe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeNetworkPeering.ComputeNetworkPeeringTimeoutsOutputReference",
+		"@cdktf/provider-google.computeNetworkPeering.ComputeNetworkPeeringTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

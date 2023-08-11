@@ -203,7 +203,7 @@ func NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridg
 	j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

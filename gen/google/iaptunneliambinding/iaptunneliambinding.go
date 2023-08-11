@@ -401,7 +401,7 @@ func NewIapTunnelIamBinding(scope constructs.Construct, id *string, config *IapT
 	j := jsiiProxy_IapTunnelIamBinding{}
 
 	_jsii_.Create(
-		"google.iapTunnelIamBinding.IapTunnelIamBinding",
+		"@cdktf/provider-google.iapTunnelIamBinding.IapTunnelIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewIapTunnelIamBinding_Override(i IapTunnelIamBinding, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapTunnelIamBinding.IapTunnelIamBinding",
+		"@cdktf/provider-google.iapTunnelIamBinding.IapTunnelIamBinding",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -558,7 +558,7 @@ func IapTunnelIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapTunnelIamBinding.IapTunnelIamBinding",
+		"@cdktf/provider-google.iapTunnelIamBinding.IapTunnelIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func IapTunnelIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapTunnelIamBinding.IapTunnelIamBinding",
+		"@cdktf/provider-google.iapTunnelIamBinding.IapTunnelIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func IapTunnelIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapTunnelIamBinding.IapTunnelIamBinding",
+		"@cdktf/provider-google.iapTunnelIamBinding.IapTunnelIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func IapTunnelIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.iapTunnelIamBinding.IapTunnelIamBinding",
+		"@cdktf/provider-google.iapTunnelIamBinding.IapTunnelIamBinding",
 		"tfResourceType",
 		&returns,
 	)

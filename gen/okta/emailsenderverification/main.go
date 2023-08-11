@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.emailSenderVerification.EmailSenderVerification",
+		"@cdktf/provider-okta.emailSenderVerification.EmailSenderVerification",
 		reflect.TypeOf((*EmailSenderVerification)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,7 +57,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.emailSenderVerification.EmailSenderVerificationConfig",
+		"@cdktf/provider-okta.emailSenderVerification.EmailSenderVerificationConfig",
 		reflect.TypeOf((*EmailSenderVerificationConfig)(nil)).Elem(),
 	)
 }

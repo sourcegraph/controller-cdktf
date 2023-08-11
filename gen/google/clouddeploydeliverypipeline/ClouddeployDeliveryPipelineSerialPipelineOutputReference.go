@@ -180,7 +180,7 @@ func NewClouddeployDeliveryPipelineSerialPipelineOutputReference(terraformResour
 	j := jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineOutputReference{}
 
 	_jsii_.Create(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineOutputReference",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewClouddeployDeliveryPipelineSerialPipelineOutputReference_Override(c Clou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineOutputReference",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

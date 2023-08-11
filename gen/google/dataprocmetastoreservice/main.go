@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataprocMetastoreService.DataprocMetastoreService",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreService",
 		reflect.TypeOf((*DataprocMetastoreService)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -111,15 +111,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceConfig",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceConfig",
 		reflect.TypeOf((*DataprocMetastoreServiceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceEncryptionConfig",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceEncryptionConfig",
 		reflect.TypeOf((*DataprocMetastoreServiceEncryptionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceEncryptionConfigOutputReference",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceEncryptionConfigOutputReference",
 		reflect.TypeOf((*DataprocMetastoreServiceEncryptionConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -153,19 +153,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfig",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfig",
 		reflect.TypeOf((*DataprocMetastoreServiceHiveMetastoreConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigKerberosConfig",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigKerberosConfig",
 		reflect.TypeOf((*DataprocMetastoreServiceHiveMetastoreConfigKerberosConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab",
 		reflect.TypeOf((*DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference",
 		reflect.TypeOf((*DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudSecret", GoGetter: "CloudSecret"},
@@ -199,7 +199,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference",
 		reflect.TypeOf((*DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -238,7 +238,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigOutputReference",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigOutputReference",
 		reflect.TypeOf((*DataprocMetastoreServiceHiveMetastoreConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -279,11 +279,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceMaintenanceWindow",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceMaintenanceWindow",
 		reflect.TypeOf((*DataprocMetastoreServiceMaintenanceWindow)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceMaintenanceWindowOutputReference",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceMaintenanceWindowOutputReference",
 		reflect.TypeOf((*DataprocMetastoreServiceMaintenanceWindowOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -319,15 +319,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceNetworkConfig",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceNetworkConfig",
 		reflect.TypeOf((*DataprocMetastoreServiceNetworkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceNetworkConfigConsumers",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceNetworkConfigConsumers",
 		reflect.TypeOf((*DataprocMetastoreServiceNetworkConfigConsumers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceNetworkConfigConsumersList",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceNetworkConfigConsumersList",
 		reflect.TypeOf((*DataprocMetastoreServiceNetworkConfigConsumersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -348,7 +348,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceNetworkConfigConsumersOutputReference",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceNetworkConfigConsumersOutputReference",
 		reflect.TypeOf((*DataprocMetastoreServiceNetworkConfigConsumersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -383,7 +383,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceNetworkConfigOutputReference",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceNetworkConfigOutputReference",
 		reflect.TypeOf((*DataprocMetastoreServiceNetworkConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -418,11 +418,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceTelemetryConfig",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceTelemetryConfig",
 		reflect.TypeOf((*DataprocMetastoreServiceTelemetryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceTelemetryConfigOutputReference",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceTelemetryConfigOutputReference",
 		reflect.TypeOf((*DataprocMetastoreServiceTelemetryConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -457,11 +457,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceTimeouts",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceTimeouts",
 		reflect.TypeOf((*DataprocMetastoreServiceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceTimeoutsOutputReference",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceTimeoutsOutputReference",
 		reflect.TypeOf((*DataprocMetastoreServiceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

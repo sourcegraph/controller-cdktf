@@ -204,7 +204,7 @@ func NewGoogleCloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference(terraf
 	j := jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleCloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

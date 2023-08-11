@@ -364,7 +364,7 @@ func NewKinesisStreamConsumer(scope constructs.Construct, id *string, config *Ki
 	j := jsiiProxy_KinesisStreamConsumer{}
 
 	_jsii_.Create(
-		"aws.kinesisStreamConsumer.KinesisStreamConsumer",
+		"@cdktf/provider-aws.kinesisStreamConsumer.KinesisStreamConsumer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -377,7 +377,7 @@ func NewKinesisStreamConsumer_Override(k KinesisStreamConsumer, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisStreamConsumer.KinesisStreamConsumer",
+		"@cdktf/provider-aws.kinesisStreamConsumer.KinesisStreamConsumer",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -510,7 +510,7 @@ func KinesisStreamConsumer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kinesisStreamConsumer.KinesisStreamConsumer",
+		"@cdktf/provider-aws.kinesisStreamConsumer.KinesisStreamConsumer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func KinesisStreamConsumer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kinesisStreamConsumer.KinesisStreamConsumer",
+		"@cdktf/provider-aws.kinesisStreamConsumer.KinesisStreamConsumer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -548,7 +548,7 @@ func KinesisStreamConsumer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kinesisStreamConsumer.KinesisStreamConsumer",
+		"@cdktf/provider-aws.kinesisStreamConsumer.KinesisStreamConsumer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func KinesisStreamConsumer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.kinesisStreamConsumer.KinesisStreamConsumer",
+		"@cdktf/provider-aws.kinesisStreamConsumer.KinesisStreamConsumer",
 		"tfResourceType",
 		&returns,
 	)

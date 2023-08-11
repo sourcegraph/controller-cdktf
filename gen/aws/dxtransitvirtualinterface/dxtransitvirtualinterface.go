@@ -670,7 +670,7 @@ func NewDxTransitVirtualInterface(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DxTransitVirtualInterface{}
 
 	_jsii_.Create(
-		"aws.dxTransitVirtualInterface.DxTransitVirtualInterface",
+		"@cdktf/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterface",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -683,7 +683,7 @@ func NewDxTransitVirtualInterface_Override(d DxTransitVirtualInterface, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dxTransitVirtualInterface.DxTransitVirtualInterface",
+		"@cdktf/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterface",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -937,7 +937,7 @@ func DxTransitVirtualInterface_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxTransitVirtualInterface.DxTransitVirtualInterface",
+		"@cdktf/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterface",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -956,7 +956,7 @@ func DxTransitVirtualInterface_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxTransitVirtualInterface.DxTransitVirtualInterface",
+		"@cdktf/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterface",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -975,7 +975,7 @@ func DxTransitVirtualInterface_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxTransitVirtualInterface.DxTransitVirtualInterface",
+		"@cdktf/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterface",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -988,7 +988,7 @@ func DxTransitVirtualInterface_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dxTransitVirtualInterface.DxTransitVirtualInterface",
+		"@cdktf/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterface",
 		"tfResourceType",
 		&returns,
 	)

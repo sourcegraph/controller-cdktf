@@ -116,7 +116,7 @@ func NewCloudwatchEventTargetEcsTargetPlacementConstraintList(terraformResource 
 	j := jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintList{}
 
 	_jsii_.Create(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetPlacementConstraintList",
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetPlacementConstraintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudwatchEventTargetEcsTargetPlacementConstraintList_Override(c Cloudwa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetPlacementConstraintList",
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetPlacementConstraintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

@@ -448,7 +448,7 @@ func NewGoogleCloudTasksQueueIamMember(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleCloudTasksQueueIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMember",
+		"@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleCloudTasksQueueIamMember_Override(g GoogleCloudTasksQueueIamMember
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMember",
+		"@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleCloudTasksQueueIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMember",
+		"@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleCloudTasksQueueIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMember",
+		"@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleCloudTasksQueueIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMember",
+		"@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleCloudTasksQueueIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMember",
+		"@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMember",
 		"tfResourceType",
 		&returns,
 	)

@@ -376,7 +376,7 @@ func NewSecurityhubInsight(scope constructs.Construct, id *string, config *Secur
 	j := jsiiProxy_SecurityhubInsight{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsight",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsight",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -389,7 +389,7 @@ func NewSecurityhubInsight_Override(s SecurityhubInsight, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsight",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsight",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -522,7 +522,7 @@ func SecurityhubInsight_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubInsight.SecurityhubInsight",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsight",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func SecurityhubInsight_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubInsight.SecurityhubInsight",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsight",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func SecurityhubInsight_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubInsight.SecurityhubInsight",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsight",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func SecurityhubInsight_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.securityhubInsight.SecurityhubInsight",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsight",
 		"tfResourceType",
 		&returns,
 	)

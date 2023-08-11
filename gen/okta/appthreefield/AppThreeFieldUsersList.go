@@ -116,7 +116,7 @@ func NewAppThreeFieldUsersList(terraformResource cdktf.IInterpolatingParent, ter
 	j := jsiiProxy_AppThreeFieldUsersList{}
 
 	_jsii_.Create(
-		"okta.appThreeField.AppThreeFieldUsersList",
+		"@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppThreeFieldUsersList_Override(a AppThreeFieldUsersList, terraformResou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appThreeField.AppThreeFieldUsersList",
+		"@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

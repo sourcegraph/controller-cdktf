@@ -458,7 +458,7 @@ func NewFolderAccessApprovalSettings(scope constructs.Construct, id *string, con
 	j := jsiiProxy_FolderAccessApprovalSettings{}
 
 	_jsii_.Create(
-		"google.folderAccessApprovalSettings.FolderAccessApprovalSettings",
+		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -471,7 +471,7 @@ func NewFolderAccessApprovalSettings_Override(f FolderAccessApprovalSettings, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.folderAccessApprovalSettings.FolderAccessApprovalSettings",
+		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettings",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -615,7 +615,7 @@ func FolderAccessApprovalSettings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.folderAccessApprovalSettings.FolderAccessApprovalSettings",
+		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func FolderAccessApprovalSettings_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.folderAccessApprovalSettings.FolderAccessApprovalSettings",
+		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func FolderAccessApprovalSettings_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.folderAccessApprovalSettings.FolderAccessApprovalSettings",
+		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettings",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func FolderAccessApprovalSettings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.folderAccessApprovalSettings.FolderAccessApprovalSettings",
+		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettings",
 		"tfResourceType",
 		&returns,
 	)

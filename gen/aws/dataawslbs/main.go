@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsLbs.DataAwsLbs",
+		"@cdktf/provider-aws.dataAwsLbs.DataAwsLbs",
 		reflect.TypeOf((*DataAwsLbs)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,7 +57,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLbs.DataAwsLbsConfig",
+		"@cdktf/provider-aws.dataAwsLbs.DataAwsLbsConfig",
 		reflect.TypeOf((*DataAwsLbsConfig)(nil)).Elem(),
 	)
 }

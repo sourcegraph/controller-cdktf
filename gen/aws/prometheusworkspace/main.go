@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.prometheusWorkspace.PrometheusWorkspace",
+		"@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspace",
 		reflect.TypeOf((*PrometheusWorkspace)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.prometheusWorkspace.PrometheusWorkspaceConfig",
+		"@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspaceConfig",
 		reflect.TypeOf((*PrometheusWorkspaceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.prometheusWorkspace.PrometheusWorkspaceLoggingConfiguration",
+		"@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspaceLoggingConfiguration",
 		reflect.TypeOf((*PrometheusWorkspaceLoggingConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.prometheusWorkspace.PrometheusWorkspaceLoggingConfigurationOutputReference",
+		"@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspaceLoggingConfigurationOutputReference",
 		reflect.TypeOf((*PrometheusWorkspaceLoggingConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

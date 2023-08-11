@@ -204,7 +204,7 @@ func NewSagemakerDomainDomainSettingsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_SagemakerDomainDomainSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerDomain.SagemakerDomainDomainSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDomainSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewSagemakerDomainDomainSettingsOutputReference_Override(s SagemakerDomainD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerDomain.SagemakerDomainDomainSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDomainSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

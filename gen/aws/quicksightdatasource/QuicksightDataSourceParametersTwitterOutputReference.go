@@ -202,7 +202,7 @@ func NewQuicksightDataSourceParametersTwitterOutputReference(terraformResource c
 	j := jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference{}
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersTwitterOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTwitterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewQuicksightDataSourceParametersTwitterOutputReference_Override(q Quicksig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersTwitterOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTwitterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)

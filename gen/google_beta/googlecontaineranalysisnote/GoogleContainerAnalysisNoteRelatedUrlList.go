@@ -116,7 +116,7 @@ func NewGoogleContainerAnalysisNoteRelatedUrlList(terraformResource cdktf.IInter
 	j := jsiiProxy_GoogleContainerAnalysisNoteRelatedUrlList{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteRelatedUrlList",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteRelatedUrlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleContainerAnalysisNoteRelatedUrlList_Override(g GoogleContainerAnal
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteRelatedUrlList",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteRelatedUrlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

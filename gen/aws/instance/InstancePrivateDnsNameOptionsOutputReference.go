@@ -228,7 +228,7 @@ func NewInstancePrivateDnsNameOptionsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_InstancePrivateDnsNameOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.instance.InstancePrivateDnsNameOptionsOutputReference",
+		"@cdktf/provider-aws.instance.InstancePrivateDnsNameOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewInstancePrivateDnsNameOptionsOutputReference_Override(i InstancePrivateD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.instance.InstancePrivateDnsNameOptionsOutputReference",
+		"@cdktf/provider-aws.instance.InstancePrivateDnsNameOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

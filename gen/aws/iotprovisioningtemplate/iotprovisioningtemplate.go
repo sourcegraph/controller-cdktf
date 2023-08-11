@@ -507,7 +507,7 @@ func NewIotProvisioningTemplate(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_IotProvisioningTemplate{}
 
 	_jsii_.Create(
-		"aws.iotProvisioningTemplate.IotProvisioningTemplate",
+		"@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -520,7 +520,7 @@ func NewIotProvisioningTemplate_Override(i IotProvisioningTemplate, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotProvisioningTemplate.IotProvisioningTemplate",
+		"@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplate",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -708,7 +708,7 @@ func IotProvisioningTemplate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotProvisioningTemplate.IotProvisioningTemplate",
+		"@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -727,7 +727,7 @@ func IotProvisioningTemplate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotProvisioningTemplate.IotProvisioningTemplate",
+		"@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -746,7 +746,7 @@ func IotProvisioningTemplate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotProvisioningTemplate.IotProvisioningTemplate",
+		"@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -759,7 +759,7 @@ func IotProvisioningTemplate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iotProvisioningTemplate.IotProvisioningTemplate",
+		"@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplate",
 		"tfResourceType",
 		&returns,
 	)

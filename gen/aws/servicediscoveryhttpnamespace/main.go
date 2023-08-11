@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.serviceDiscoveryHttpNamespace.ServiceDiscoveryHttpNamespace",
+		"@cdktf/provider-aws.serviceDiscoveryHttpNamespace.ServiceDiscoveryHttpNamespace",
 		reflect.TypeOf((*ServiceDiscoveryHttpNamespace)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.serviceDiscoveryHttpNamespace.ServiceDiscoveryHttpNamespaceConfig",
+		"@cdktf/provider-aws.serviceDiscoveryHttpNamespace.ServiceDiscoveryHttpNamespaceConfig",
 		reflect.TypeOf((*ServiceDiscoveryHttpNamespaceConfig)(nil)).Elem(),
 	)
 }

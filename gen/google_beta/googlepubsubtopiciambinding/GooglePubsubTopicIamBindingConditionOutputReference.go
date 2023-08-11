@@ -226,7 +226,7 @@ func NewGooglePubsubTopicIamBindingConditionOutputReference(terraformResource cd
 	j := jsiiProxy_GooglePubsubTopicIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGooglePubsubTopicIamBindingConditionOutputReference_Override(g GooglePub
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

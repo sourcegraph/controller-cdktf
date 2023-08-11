@@ -228,7 +228,7 @@ func NewManifestTimeoutsOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_ManifestTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.manifest.ManifestTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.manifest.ManifestTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewManifestTimeoutsOutputReference_Override(m ManifestTimeoutsOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.manifest.ManifestTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.manifest.ManifestTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

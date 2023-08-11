@@ -792,7 +792,7 @@ func NewGoogleComputeVpnTunnel(scope constructs.Construct, id *string, config *G
 	j := jsiiProxy_GoogleComputeVpnTunnel{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnel",
+		"@cdktf/provider-google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -805,7 +805,7 @@ func NewGoogleComputeVpnTunnel_Override(g GoogleComputeVpnTunnel, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnel",
+		"@cdktf/provider-google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnel",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1103,7 +1103,7 @@ func GoogleComputeVpnTunnel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnel",
+		"@cdktf/provider-google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1122,7 +1122,7 @@ func GoogleComputeVpnTunnel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnel",
+		"@cdktf/provider-google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1141,7 +1141,7 @@ func GoogleComputeVpnTunnel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnel",
+		"@cdktf/provider-google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1154,7 +1154,7 @@ func GoogleComputeVpnTunnel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnel",
+		"@cdktf/provider-google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnel",
 		"tfResourceType",
 		&returns,
 	)

@@ -189,7 +189,7 @@ func NewMwaaEnvironmentLastUpdatedOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_MwaaEnvironmentLastUpdatedOutputReference{}
 
 	_jsii_.Create(
-		"aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewMwaaEnvironmentLastUpdatedOutputReference_Override(m MwaaEnvironmentLast
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

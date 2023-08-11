@@ -366,7 +366,7 @@ func NewDetectiveGraph(scope constructs.Construct, id *string, config *Detective
 	j := jsiiProxy_DetectiveGraph{}
 
 	_jsii_.Create(
-		"aws.detectiveGraph.DetectiveGraph",
+		"@cdktf/provider-aws.detectiveGraph.DetectiveGraph",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewDetectiveGraph_Override(d DetectiveGraph, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.detectiveGraph.DetectiveGraph",
+		"@cdktf/provider-aws.detectiveGraph.DetectiveGraph",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -512,7 +512,7 @@ func DetectiveGraph_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.detectiveGraph.DetectiveGraph",
+		"@cdktf/provider-aws.detectiveGraph.DetectiveGraph",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func DetectiveGraph_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.detectiveGraph.DetectiveGraph",
+		"@cdktf/provider-aws.detectiveGraph.DetectiveGraph",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func DetectiveGraph_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.detectiveGraph.DetectiveGraph",
+		"@cdktf/provider-aws.detectiveGraph.DetectiveGraph",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func DetectiveGraph_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.detectiveGraph.DetectiveGraph",
+		"@cdktf/provider-aws.detectiveGraph.DetectiveGraph",
 		"tfResourceType",
 		&returns,
 	)

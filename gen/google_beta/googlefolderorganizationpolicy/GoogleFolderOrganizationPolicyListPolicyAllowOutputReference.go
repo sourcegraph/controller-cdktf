@@ -204,7 +204,7 @@ func NewGoogleFolderOrganizationPolicyListPolicyAllowOutputReference(terraformRe
 	j := jsiiProxy_GoogleFolderOrganizationPolicyListPolicyAllowOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyListPolicyAllowOutputReference",
+		"@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyListPolicyAllowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleFolderOrganizationPolicyListPolicyAllowOutputReference_Override(g 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyListPolicyAllowOutputReference",
+		"@cdktf/provider-google-beta.googleFolderOrganizationPolicy.GoogleFolderOrganizationPolicyListPolicyAllowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

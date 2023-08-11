@@ -271,7 +271,7 @@ func NewIotTopicRuleErrorActionElasticsearchOutputReference(terraformResource cd
 	j := jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleErrorActionElasticsearchOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -283,7 +283,7 @@ func NewIotTopicRuleErrorActionElasticsearchOutputReference_Override(i IotTopicR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleErrorActionElasticsearchOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

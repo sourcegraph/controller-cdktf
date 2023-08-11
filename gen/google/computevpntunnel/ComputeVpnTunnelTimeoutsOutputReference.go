@@ -204,7 +204,7 @@ func NewComputeVpnTunnelTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_ComputeVpnTunnelTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeVpnTunnel.ComputeVpnTunnelTimeoutsOutputReference",
+		"@cdktf/provider-google.computeVpnTunnel.ComputeVpnTunnelTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeVpnTunnelTimeoutsOutputReference_Override(c ComputeVpnTunnelTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeVpnTunnel.ComputeVpnTunnelTimeoutsOutputReference",
+		"@cdktf/provider-google.computeVpnTunnel.ComputeVpnTunnelTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -227,7 +227,7 @@ func NewPodV1SpecVolumeCinderOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_PodV1SpecVolumeCinderOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumeCinderOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeCinderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewPodV1SpecVolumeCinderOutputReference_Override(p PodV1SpecVolumeCinderOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumeCinderOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeCinderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

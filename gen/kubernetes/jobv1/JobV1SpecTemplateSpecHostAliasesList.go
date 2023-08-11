@@ -116,7 +116,7 @@ func NewJobV1SpecTemplateSpecHostAliasesList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_JobV1SpecTemplateSpecHostAliasesList{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecHostAliasesList",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecHostAliasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewJobV1SpecTemplateSpecHostAliasesList_Override(j JobV1SpecTemplateSpecHos
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecHostAliasesList",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecHostAliasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)

@@ -493,7 +493,7 @@ func NewConnectHoursOfOperation(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_ConnectHoursOfOperation{}
 
 	_jsii_.Create(
-		"aws.connectHoursOfOperation.ConnectHoursOfOperation",
+		"@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -506,7 +506,7 @@ func NewConnectHoursOfOperation_Override(c ConnectHoursOfOperation, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectHoursOfOperation.ConnectHoursOfOperation",
+		"@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperation",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -683,7 +683,7 @@ func ConnectHoursOfOperation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectHoursOfOperation.ConnectHoursOfOperation",
+		"@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func ConnectHoursOfOperation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectHoursOfOperation.ConnectHoursOfOperation",
+		"@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -721,7 +721,7 @@ func ConnectHoursOfOperation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectHoursOfOperation.ConnectHoursOfOperation",
+		"@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -734,7 +734,7 @@ func ConnectHoursOfOperation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.connectHoursOfOperation.ConnectHoursOfOperation",
+		"@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperation",
 		"tfResourceType",
 		&returns,
 	)

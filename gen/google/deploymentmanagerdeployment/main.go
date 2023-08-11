@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.deploymentManagerDeployment.DeploymentManagerDeployment",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment",
 		reflect.TypeOf((*DeploymentManagerDeployment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,15 +86,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig",
 		reflect.TypeOf((*DeploymentManagerDeploymentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels",
 		reflect.TypeOf((*DeploymentManagerDeploymentLabels)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsList",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsList",
 		reflect.TypeOf((*DeploymentManagerDeploymentLabelsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsOutputReference",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsOutputReference",
 		reflect.TypeOf((*DeploymentManagerDeploymentLabelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -153,15 +153,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.deploymentManagerDeployment.DeploymentManagerDeploymentTarget",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTarget",
 		reflect.TypeOf((*DeploymentManagerDeploymentTarget)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetConfig",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetConfig",
 		reflect.TypeOf((*DeploymentManagerDeploymentTargetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetConfigOutputReference",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetConfigOutputReference",
 		reflect.TypeOf((*DeploymentManagerDeploymentTargetConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -195,11 +195,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImports",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImports",
 		reflect.TypeOf((*DeploymentManagerDeploymentTargetImports)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsList",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsList",
 		reflect.TypeOf((*DeploymentManagerDeploymentTargetImportsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -220,7 +220,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsOutputReference",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsOutputReference",
 		reflect.TypeOf((*DeploymentManagerDeploymentTargetImportsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -258,7 +258,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetOutputReference",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetOutputReference",
 		reflect.TypeOf((*DeploymentManagerDeploymentTargetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -297,11 +297,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeouts",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeouts",
 		reflect.TypeOf((*DeploymentManagerDeploymentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeoutsOutputReference",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeoutsOutputReference",
 		reflect.TypeOf((*DeploymentManagerDeploymentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

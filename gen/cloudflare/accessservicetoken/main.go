@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.accessServiceToken.AccessServiceToken",
+		"@cdktf/provider-cloudflare.accessServiceToken.AccessServiceToken",
 		reflect.TypeOf((*AccessServiceToken)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -69,7 +69,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessServiceToken.AccessServiceTokenConfig",
+		"@cdktf/provider-cloudflare.accessServiceToken.AccessServiceTokenConfig",
 		reflect.TypeOf((*AccessServiceTokenConfig)(nil)).Elem(),
 	)
 }

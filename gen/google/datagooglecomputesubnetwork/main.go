@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetwork",
+		"@cdktf/provider-google.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetwork",
 		reflect.TypeOf((*DataGoogleComputeSubnetwork)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetworkConfig",
+		"@cdktf/provider-google.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetworkConfig",
 		reflect.TypeOf((*DataGoogleComputeSubnetworkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetworkSecondaryIpRange",
+		"@cdktf/provider-google.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetworkSecondaryIpRange",
 		reflect.TypeOf((*DataGoogleComputeSubnetworkSecondaryIpRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetworkSecondaryIpRangeList",
+		"@cdktf/provider-google.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetworkSecondaryIpRangeList",
 		reflect.TypeOf((*DataGoogleComputeSubnetworkSecondaryIpRangeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -99,7 +99,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetworkSecondaryIpRangeOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetworkSecondaryIpRangeOutputReference",
 		reflect.TypeOf((*DataGoogleComputeSubnetworkSecondaryIpRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

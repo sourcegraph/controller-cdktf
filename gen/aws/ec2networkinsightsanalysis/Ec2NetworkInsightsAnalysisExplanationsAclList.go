@@ -104,7 +104,7 @@ func NewEc2NetworkInsightsAnalysisExplanationsAclList(terraformResource cdktf.II
 	j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAclList{}
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewEc2NetworkInsightsAnalysisExplanationsAclList_Override(e Ec2NetworkInsig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

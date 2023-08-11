@@ -313,7 +313,7 @@ func NewDataKubernetesPod(scope constructs.Construct, id *string, config *DataKu
 	j := jsiiProxy_DataKubernetesPod{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPod",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPod",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -326,7 +326,7 @@ func NewDataKubernetesPod_Override(d DataKubernetesPod, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPod",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPod",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataKubernetesPod_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesPod.DataKubernetesPod",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPod",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataKubernetesPod_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesPod.DataKubernetesPod",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPod",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataKubernetesPod_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesPod.DataKubernetesPod",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPod",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataKubernetesPod_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.dataKubernetesPod.DataKubernetesPod",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPod",
 		"tfResourceType",
 		&returns,
 	)

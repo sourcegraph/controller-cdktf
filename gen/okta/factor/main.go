@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.factor.Factor",
+		"@cdktf/provider-okta.factor.Factor",
 		reflect.TypeOf((*Factor)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "active", GoGetter: "Active"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.factor.FactorConfig",
+		"@cdktf/provider-okta.factor.FactorConfig",
 		reflect.TypeOf((*FactorConfig)(nil)).Elem(),
 	)
 }

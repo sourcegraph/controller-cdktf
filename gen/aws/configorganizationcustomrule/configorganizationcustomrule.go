@@ -592,7 +592,7 @@ func NewConfigOrganizationCustomRule(scope constructs.Construct, id *string, con
 	j := jsiiProxy_ConfigOrganizationCustomRule{}
 
 	_jsii_.Create(
-		"aws.configOrganizationCustomRule.ConfigOrganizationCustomRule",
+		"@cdktf/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -605,7 +605,7 @@ func NewConfigOrganizationCustomRule_Override(c ConfigOrganizationCustomRule, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configOrganizationCustomRule.ConfigOrganizationCustomRule",
+		"@cdktf/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRule",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -837,7 +837,7 @@ func ConfigOrganizationCustomRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configOrganizationCustomRule.ConfigOrganizationCustomRule",
+		"@cdktf/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -856,7 +856,7 @@ func ConfigOrganizationCustomRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configOrganizationCustomRule.ConfigOrganizationCustomRule",
+		"@cdktf/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -875,7 +875,7 @@ func ConfigOrganizationCustomRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configOrganizationCustomRule.ConfigOrganizationCustomRule",
+		"@cdktf/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -888,7 +888,7 @@ func ConfigOrganizationCustomRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.configOrganizationCustomRule.ConfigOrganizationCustomRule",
+		"@cdktf/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRule",
 		"tfResourceType",
 		&returns,
 	)

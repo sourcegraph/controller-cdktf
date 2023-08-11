@@ -104,7 +104,7 @@ func NewDataTfeTeamAccessPermissionsList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_DataTfeTeamAccessPermissionsList{}
 
 	_jsii_.Create(
-		"tfe.dataTfeTeamAccess.DataTfeTeamAccessPermissionsList",
+		"@cdktf/provider-tfe.dataTfeTeamAccess.DataTfeTeamAccessPermissionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataTfeTeamAccessPermissionsList_Override(d DataTfeTeamAccessPermissions
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfeTeamAccess.DataTfeTeamAccessPermissionsList",
+		"@cdktf/provider-tfe.dataTfeTeamAccess.DataTfeTeamAccessPermissionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

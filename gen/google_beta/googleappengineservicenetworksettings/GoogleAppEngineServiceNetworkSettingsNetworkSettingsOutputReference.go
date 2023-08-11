@@ -180,7 +180,7 @@ func NewGoogleAppEngineServiceNetworkSettingsNetworkSettingsOutputReference(terr
 	j := jsiiProxy_GoogleAppEngineServiceNetworkSettingsNetworkSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineServiceNetworkSettings.GoogleAppEngineServiceNetworkSettingsNetworkSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineServiceNetworkSettings.GoogleAppEngineServiceNetworkSettingsNetworkSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleAppEngineServiceNetworkSettingsNetworkSettingsOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineServiceNetworkSettings.GoogleAppEngineServiceNetworkSettingsNetworkSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineServiceNetworkSettings.GoogleAppEngineServiceNetworkSettingsNetworkSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

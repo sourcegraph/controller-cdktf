@@ -204,7 +204,7 @@ func NewComputeRegionPerInstanceConfigPreservedStateOutputReference(terraformRes
 	j := jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateOutputReference",
+		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeRegionPerInstanceConfigPreservedStateOutputReference_Override(c C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateOutputReference",
+		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

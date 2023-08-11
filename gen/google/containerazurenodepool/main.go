@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.containerAzureNodePool.ContainerAzureNodePool",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePool",
 		reflect.TypeOf((*ContainerAzureNodePool)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,11 +93,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureNodePool.ContainerAzureNodePoolAutoscaling",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolAutoscaling",
 		reflect.TypeOf((*ContainerAzureNodePoolAutoscaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureNodePool.ContainerAzureNodePoolAutoscalingOutputReference",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolAutoscalingOutputReference",
 		reflect.TypeOf((*ContainerAzureNodePoolAutoscalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -133,15 +133,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureNodePool.ContainerAzureNodePoolConfig",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolConfig",
 		reflect.TypeOf((*ContainerAzureNodePoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureNodePool.ContainerAzureNodePoolConfigA",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolConfigA",
 		reflect.TypeOf((*ContainerAzureNodePoolConfigA)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureNodePool.ContainerAzureNodePoolConfigAOutputReference",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolConfigAOutputReference",
 		reflect.TypeOf((*ContainerAzureNodePoolConfigAOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -190,11 +190,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureNodePool.ContainerAzureNodePoolConfigProxyConfig",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolConfigProxyConfig",
 		reflect.TypeOf((*ContainerAzureNodePoolConfigProxyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureNodePool.ContainerAzureNodePoolConfigProxyConfigOutputReference",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolConfigProxyConfigOutputReference",
 		reflect.TypeOf((*ContainerAzureNodePoolConfigProxyConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -230,11 +230,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureNodePool.ContainerAzureNodePoolConfigRootVolume",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolConfigRootVolume",
 		reflect.TypeOf((*ContainerAzureNodePoolConfigRootVolume)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureNodePool.ContainerAzureNodePoolConfigRootVolumeOutputReference",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolConfigRootVolumeOutputReference",
 		reflect.TypeOf((*ContainerAzureNodePoolConfigRootVolumeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -269,11 +269,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureNodePool.ContainerAzureNodePoolConfigSshConfig",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolConfigSshConfig",
 		reflect.TypeOf((*ContainerAzureNodePoolConfigSshConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureNodePool.ContainerAzureNodePoolConfigSshConfigOutputReference",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolConfigSshConfigOutputReference",
 		reflect.TypeOf((*ContainerAzureNodePoolConfigSshConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizedKey", GoGetter: "AuthorizedKey"},
@@ -307,11 +307,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureNodePool.ContainerAzureNodePoolMaxPodsConstraint",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolMaxPodsConstraint",
 		reflect.TypeOf((*ContainerAzureNodePoolMaxPodsConstraint)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureNodePool.ContainerAzureNodePoolMaxPodsConstraintOutputReference",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolMaxPodsConstraintOutputReference",
 		reflect.TypeOf((*ContainerAzureNodePoolMaxPodsConstraintOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -345,11 +345,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureNodePool.ContainerAzureNodePoolTimeouts",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolTimeouts",
 		reflect.TypeOf((*ContainerAzureNodePoolTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureNodePool.ContainerAzureNodePoolTimeoutsOutputReference",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolTimeoutsOutputReference",
 		reflect.TypeOf((*ContainerAzureNodePoolTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

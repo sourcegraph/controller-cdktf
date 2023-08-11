@@ -470,7 +470,7 @@ func NewGoogleIapAppEngineVersionIamBinding(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleIapAppEngineVersionIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleIapAppEngineVersionIamBinding.GoogleIapAppEngineVersionIamBinding",
+		"@cdktf/provider-google-beta.googleIapAppEngineVersionIamBinding.GoogleIapAppEngineVersionIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -483,7 +483,7 @@ func NewGoogleIapAppEngineVersionIamBinding_Override(g GoogleIapAppEngineVersion
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIapAppEngineVersionIamBinding.GoogleIapAppEngineVersionIamBinding",
+		"@cdktf/provider-google-beta.googleIapAppEngineVersionIamBinding.GoogleIapAppEngineVersionIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -660,7 +660,7 @@ func GoogleIapAppEngineVersionIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapAppEngineVersionIamBinding.GoogleIapAppEngineVersionIamBinding",
+		"@cdktf/provider-google-beta.googleIapAppEngineVersionIamBinding.GoogleIapAppEngineVersionIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func GoogleIapAppEngineVersionIamBinding_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapAppEngineVersionIamBinding.GoogleIapAppEngineVersionIamBinding",
+		"@cdktf/provider-google-beta.googleIapAppEngineVersionIamBinding.GoogleIapAppEngineVersionIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -698,7 +698,7 @@ func GoogleIapAppEngineVersionIamBinding_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapAppEngineVersionIamBinding.GoogleIapAppEngineVersionIamBinding",
+		"@cdktf/provider-google-beta.googleIapAppEngineVersionIamBinding.GoogleIapAppEngineVersionIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -711,7 +711,7 @@ func GoogleIapAppEngineVersionIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleIapAppEngineVersionIamBinding.GoogleIapAppEngineVersionIamBinding",
+		"@cdktf/provider-google-beta.googleIapAppEngineVersionIamBinding.GoogleIapAppEngineVersionIamBinding",
 		"tfResourceType",
 		&returns,
 	)

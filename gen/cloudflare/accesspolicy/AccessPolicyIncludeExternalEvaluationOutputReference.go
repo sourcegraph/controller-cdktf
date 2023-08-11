@@ -204,7 +204,7 @@ func NewAccessPolicyIncludeExternalEvaluationOutputReference(terraformResource c
 	j := jsiiProxy_AccessPolicyIncludeExternalEvaluationOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyIncludeExternalEvaluationOutputReference",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeExternalEvaluationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAccessPolicyIncludeExternalEvaluationOutputReference_Override(a AccessPo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyIncludeExternalEvaluationOutputReference",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeExternalEvaluationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

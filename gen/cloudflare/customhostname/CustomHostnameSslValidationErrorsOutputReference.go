@@ -167,7 +167,7 @@ func NewCustomHostnameSslValidationErrorsOutputReference(terraformResource cdktf
 	j := jsiiProxy_CustomHostnameSslValidationErrorsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.customHostname.CustomHostnameSslValidationErrorsOutputReference",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationErrorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewCustomHostnameSslValidationErrorsOutputReference_Override(c CustomHostna
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.customHostname.CustomHostnameSslValidationErrorsOutputReference",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationErrorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

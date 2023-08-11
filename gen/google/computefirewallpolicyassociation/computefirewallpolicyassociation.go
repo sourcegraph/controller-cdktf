@@ -400,7 +400,7 @@ func NewComputeFirewallPolicyAssociation(scope constructs.Construct, id *string,
 	j := jsiiProxy_ComputeFirewallPolicyAssociation{}
 
 	_jsii_.Create(
-		"google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociation",
+		"@cdktf/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewComputeFirewallPolicyAssociation_Override(c ComputeFirewallPolicyAssocia
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociation",
+		"@cdktf/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociation",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -557,7 +557,7 @@ func ComputeFirewallPolicyAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociation",
+		"@cdktf/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func ComputeFirewallPolicyAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociation",
+		"@cdktf/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func ComputeFirewallPolicyAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociation",
+		"@cdktf/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func ComputeFirewallPolicyAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociation",
+		"@cdktf/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociation",
 		"tfResourceType",
 		&returns,
 	)

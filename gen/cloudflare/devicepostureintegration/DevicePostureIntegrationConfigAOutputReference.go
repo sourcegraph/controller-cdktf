@@ -300,7 +300,7 @@ func NewDevicePostureIntegrationConfigAOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_DevicePostureIntegrationConfigAOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference",
+		"@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewDevicePostureIntegrationConfigAOutputReference_Override(d DevicePostureI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference",
+		"@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.samlApp.SamlApp",
+		"@cdktf/provider-okta.samlApp.SamlApp",
 		reflect.TypeOf((*SamlApp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrl", GoGetter: "AccessibilityErrorRedirectUrl"},
@@ -221,11 +221,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.samlApp.SamlAppAttributeStatements",
+		"@cdktf/provider-okta.samlApp.SamlAppAttributeStatements",
 		reflect.TypeOf((*SamlAppAttributeStatements)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.samlApp.SamlAppAttributeStatementsList",
+		"@cdktf/provider-okta.samlApp.SamlAppAttributeStatementsList",
 		reflect.TypeOf((*SamlAppAttributeStatementsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -246,7 +246,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.samlApp.SamlAppAttributeStatementsOutputReference",
+		"@cdktf/provider-okta.samlApp.SamlAppAttributeStatementsOutputReference",
 		reflect.TypeOf((*SamlAppAttributeStatementsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -295,15 +295,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.samlApp.SamlAppConfig",
+		"@cdktf/provider-okta.samlApp.SamlAppConfig",
 		reflect.TypeOf((*SamlAppConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.samlApp.SamlAppKeys",
+		"@cdktf/provider-okta.samlApp.SamlAppKeys",
 		reflect.TypeOf((*SamlAppKeys)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.samlApp.SamlAppKeysList",
+		"@cdktf/provider-okta.samlApp.SamlAppKeysList",
 		reflect.TypeOf((*SamlAppKeysList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -323,7 +323,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.samlApp.SamlAppKeysOutputReference",
+		"@cdktf/provider-okta.samlApp.SamlAppKeysOutputReference",
 		reflect.TypeOf((*SamlAppKeysOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -365,11 +365,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.samlApp.SamlAppTimeouts",
+		"@cdktf/provider-okta.samlApp.SamlAppTimeouts",
 		reflect.TypeOf((*SamlAppTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.samlApp.SamlAppTimeoutsOutputReference",
+		"@cdktf/provider-okta.samlApp.SamlAppTimeoutsOutputReference",
 		reflect.TypeOf((*SamlAppTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -410,11 +410,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.samlApp.SamlAppUsers",
+		"@cdktf/provider-okta.samlApp.SamlAppUsers",
 		reflect.TypeOf((*SamlAppUsers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.samlApp.SamlAppUsersList",
+		"@cdktf/provider-okta.samlApp.SamlAppUsersList",
 		reflect.TypeOf((*SamlAppUsersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -435,7 +435,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.samlApp.SamlAppUsersOutputReference",
+		"@cdktf/provider-okta.samlApp.SamlAppUsersOutputReference",
 		reflect.TypeOf((*SamlAppUsersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

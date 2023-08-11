@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.vpcEndpointConnectionAccepter.VpcEndpointConnectionAccepter",
+		"@cdktf/provider-aws.vpcEndpointConnectionAccepter.VpcEndpointConnectionAccepter",
 		reflect.TypeOf((*VpcEndpointConnectionAccepter)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcEndpointConnectionAccepter.VpcEndpointConnectionAccepterConfig",
+		"@cdktf/provider-aws.vpcEndpointConnectionAccepter.VpcEndpointConnectionAccepterConfig",
 		reflect.TypeOf((*VpcEndpointConnectionAccepterConfig)(nil)).Elem(),
 	)
 }

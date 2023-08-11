@@ -104,7 +104,7 @@ func NewDataKubernetesServiceAccountV1SecretList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataKubernetesServiceAccountV1SecretList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1SecretList",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1SecretList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesServiceAccountV1SecretList_Override(d DataKubernetesServic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1SecretList",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1SecretList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

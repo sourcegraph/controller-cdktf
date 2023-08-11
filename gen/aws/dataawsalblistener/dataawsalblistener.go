@@ -443,7 +443,7 @@ func NewDataAwsAlbListener(scope constructs.Construct, id *string, config *DataA
 	j := jsiiProxy_DataAwsAlbListener{}
 
 	_jsii_.Create(
-		"aws.dataAwsAlbListener.DataAwsAlbListener",
+		"@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListener",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -456,7 +456,7 @@ func NewDataAwsAlbListener_Override(d DataAwsAlbListener, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAlbListener.DataAwsAlbListener",
+		"@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListener",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -589,7 +589,7 @@ func DataAwsAlbListener_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAlbListener.DataAwsAlbListener",
+		"@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListener",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func DataAwsAlbListener_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAlbListener.DataAwsAlbListener",
+		"@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListener",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -627,7 +627,7 @@ func DataAwsAlbListener_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAlbListener.DataAwsAlbListener",
+		"@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListener",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -640,7 +640,7 @@ func DataAwsAlbListener_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsAlbListener.DataAwsAlbListener",
+		"@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListener",
 		"tfResourceType",
 		&returns,
 	)

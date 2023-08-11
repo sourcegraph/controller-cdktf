@@ -506,7 +506,7 @@ func NewMqConfiguration(scope constructs.Construct, id *string, config *MqConfig
 	j := jsiiProxy_MqConfiguration{}
 
 	_jsii_.Create(
-		"aws.mqConfiguration.MqConfiguration",
+		"@cdktf/provider-aws.mqConfiguration.MqConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -519,7 +519,7 @@ func NewMqConfiguration_Override(m MqConfiguration, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mqConfiguration.MqConfiguration",
+		"@cdktf/provider-aws.mqConfiguration.MqConfiguration",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -718,7 +718,7 @@ func MqConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mqConfiguration.MqConfiguration",
+		"@cdktf/provider-aws.mqConfiguration.MqConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -737,7 +737,7 @@ func MqConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mqConfiguration.MqConfiguration",
+		"@cdktf/provider-aws.mqConfiguration.MqConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -756,7 +756,7 @@ func MqConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mqConfiguration.MqConfiguration",
+		"@cdktf/provider-aws.mqConfiguration.MqConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -769,7 +769,7 @@ func MqConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.mqConfiguration.MqConfiguration",
+		"@cdktf/provider-aws.mqConfiguration.MqConfiguration",
 		"tfResourceType",
 		&returns,
 	)

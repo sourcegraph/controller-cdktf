@@ -116,7 +116,7 @@ func NewReplicationControllerSpecTemplateSpecTolerationList(terraformResource cd
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecTolerationList{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTolerationList",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTolerationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewReplicationControllerSpecTemplateSpecTolerationList_Override(r Replicati
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTolerationList",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTolerationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

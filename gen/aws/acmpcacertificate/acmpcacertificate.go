@@ -445,7 +445,7 @@ func NewAcmpcaCertificate(scope constructs.Construct, id *string, config *Acmpca
 	j := jsiiProxy_AcmpcaCertificate{}
 
 	_jsii_.Create(
-		"aws.acmpcaCertificate.AcmpcaCertificate",
+		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -458,7 +458,7 @@ func NewAcmpcaCertificate_Override(a AcmpcaCertificate, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.acmpcaCertificate.AcmpcaCertificate",
+		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -613,7 +613,7 @@ func AcmpcaCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.acmpcaCertificate.AcmpcaCertificate",
+		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func AcmpcaCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.acmpcaCertificate.AcmpcaCertificate",
+		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -651,7 +651,7 @@ func AcmpcaCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.acmpcaCertificate.AcmpcaCertificate",
+		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -664,7 +664,7 @@ func AcmpcaCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.acmpcaCertificate.AcmpcaCertificate",
+		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate",
 		"tfResourceType",
 		&returns,
 	)

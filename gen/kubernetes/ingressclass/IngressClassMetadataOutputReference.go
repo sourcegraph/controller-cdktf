@@ -285,7 +285,7 @@ func NewIngressClassMetadataOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_IngressClassMetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.ingressClass.IngressClassMetadataOutputReference",
+		"@cdktf/provider-kubernetes.ingressClass.IngressClassMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -297,7 +297,7 @@ func NewIngressClassMetadataOutputReference_Override(i IngressClassMetadataOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.ingressClass.IngressClassMetadataOutputReference",
+		"@cdktf/provider-kubernetes.ingressClass.IngressClassMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

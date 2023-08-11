@@ -116,7 +116,7 @@ func NewLoadBalancerPolicyPolicyAttributeList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_LoadBalancerPolicyPolicyAttributeList{}
 
 	_jsii_.Create(
-		"aws.loadBalancerPolicy.LoadBalancerPolicyPolicyAttributeList",
+		"@cdktf/provider-aws.loadBalancerPolicy.LoadBalancerPolicyPolicyAttributeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLoadBalancerPolicyPolicyAttributeList_Override(l LoadBalancerPolicyPolic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.loadBalancerPolicy.LoadBalancerPolicyPolicyAttributeList",
+		"@cdktf/provider-aws.loadBalancerPolicy.LoadBalancerPolicyPolicyAttributeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

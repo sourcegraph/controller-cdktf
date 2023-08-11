@@ -319,7 +319,7 @@ func NewSecurityhubStandardsSubscription(scope constructs.Construct, id *string,
 	j := jsiiProxy_SecurityhubStandardsSubscription{}
 
 	_jsii_.Create(
-		"aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription",
+		"@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -332,7 +332,7 @@ func NewSecurityhubStandardsSubscription_Override(s SecurityhubStandardsSubscrip
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription",
+		"@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -454,7 +454,7 @@ func SecurityhubStandardsSubscription_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription",
+		"@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -473,7 +473,7 @@ func SecurityhubStandardsSubscription_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription",
+		"@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -492,7 +492,7 @@ func SecurityhubStandardsSubscription_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription",
+		"@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func SecurityhubStandardsSubscription_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription",
+		"@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription",
 		"tfResourceType",
 		&returns,
 	)

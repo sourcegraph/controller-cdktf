@@ -202,7 +202,7 @@ func NewSignonPolicyRuleFactorSequenceSecondaryCriteriaOutputReference(terraform
 	j := jsiiProxy_SignonPolicyRuleFactorSequenceSecondaryCriteriaOutputReference{}
 
 	_jsii_.Create(
-		"okta.signonPolicyRule.SignonPolicyRuleFactorSequenceSecondaryCriteriaOutputReference",
+		"@cdktf/provider-okta.signonPolicyRule.SignonPolicyRuleFactorSequenceSecondaryCriteriaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSignonPolicyRuleFactorSequenceSecondaryCriteriaOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.signonPolicyRule.SignonPolicyRuleFactorSequenceSecondaryCriteriaOutputReference",
+		"@cdktf/provider-okta.signonPolicyRule.SignonPolicyRuleFactorSequenceSecondaryCriteriaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

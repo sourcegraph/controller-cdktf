@@ -116,7 +116,7 @@ func NewRulesetRulesActionParametersCacheKeyList(terraformResource cdktf.IInterp
 	j := jsiiProxy_RulesetRulesActionParametersCacheKeyList{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersCacheKeyList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRulesetRulesActionParametersCacheKeyList_Override(r RulesetRulesActionPa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersCacheKeyList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

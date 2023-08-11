@@ -179,7 +179,7 @@ func NewSecretsmanagerSecretRotationRotationRulesOutputReference(terraformResour
 	j := jsiiProxy_SecretsmanagerSecretRotationRotationRulesOutputReference{}
 
 	_jsii_.Create(
-		"aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRulesOutputReference",
+		"@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewSecretsmanagerSecretRotationRotationRulesOutputReference_Override(s Secr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRulesOutputReference",
+		"@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

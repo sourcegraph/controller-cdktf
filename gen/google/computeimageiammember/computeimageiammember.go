@@ -424,7 +424,7 @@ func NewComputeImageIamMember(scope constructs.Construct, id *string, config *Co
 	j := jsiiProxy_ComputeImageIamMember{}
 
 	_jsii_.Create(
-		"google.computeImageIamMember.ComputeImageIamMember",
+		"@cdktf/provider-google.computeImageIamMember.ComputeImageIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewComputeImageIamMember_Override(c ComputeImageIamMember, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeImageIamMember.ComputeImageIamMember",
+		"@cdktf/provider-google.computeImageIamMember.ComputeImageIamMember",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -592,7 +592,7 @@ func ComputeImageIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeImageIamMember.ComputeImageIamMember",
+		"@cdktf/provider-google.computeImageIamMember.ComputeImageIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func ComputeImageIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeImageIamMember.ComputeImageIamMember",
+		"@cdktf/provider-google.computeImageIamMember.ComputeImageIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func ComputeImageIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeImageIamMember.ComputeImageIamMember",
+		"@cdktf/provider-google.computeImageIamMember.ComputeImageIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func ComputeImageIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeImageIamMember.ComputeImageIamMember",
+		"@cdktf/provider-google.computeImageIamMember.ComputeImageIamMember",
 		"tfResourceType",
 		&returns,
 	)

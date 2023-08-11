@@ -290,7 +290,7 @@ func NewDataGoogleComputeLbIpRanges(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataGoogleComputeLbIpRanges{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeLbIpRanges.DataGoogleComputeLbIpRanges",
+		"@cdktf/provider-google-beta.dataGoogleComputeLbIpRanges.DataGoogleComputeLbIpRanges",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -303,7 +303,7 @@ func NewDataGoogleComputeLbIpRanges_Override(d DataGoogleComputeLbIpRanges, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeLbIpRanges.DataGoogleComputeLbIpRanges",
+		"@cdktf/provider-google-beta.dataGoogleComputeLbIpRanges.DataGoogleComputeLbIpRanges",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -392,7 +392,7 @@ func DataGoogleComputeLbIpRanges_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeLbIpRanges.DataGoogleComputeLbIpRanges",
+		"@cdktf/provider-google-beta.dataGoogleComputeLbIpRanges.DataGoogleComputeLbIpRanges",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -411,7 +411,7 @@ func DataGoogleComputeLbIpRanges_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeLbIpRanges.DataGoogleComputeLbIpRanges",
+		"@cdktf/provider-google-beta.dataGoogleComputeLbIpRanges.DataGoogleComputeLbIpRanges",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -430,7 +430,7 @@ func DataGoogleComputeLbIpRanges_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeLbIpRanges.DataGoogleComputeLbIpRanges",
+		"@cdktf/provider-google-beta.dataGoogleComputeLbIpRanges.DataGoogleComputeLbIpRanges",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -443,7 +443,7 @@ func DataGoogleComputeLbIpRanges_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleComputeLbIpRanges.DataGoogleComputeLbIpRanges",
+		"@cdktf/provider-google-beta.dataGoogleComputeLbIpRanges.DataGoogleComputeLbIpRanges",
 		"tfResourceType",
 		&returns,
 	)

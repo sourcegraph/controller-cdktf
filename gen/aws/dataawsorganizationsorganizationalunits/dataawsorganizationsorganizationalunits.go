@@ -302,7 +302,7 @@ func NewDataAwsOrganizationsOrganizationalUnits(scope constructs.Construct, id *
 	j := jsiiProxy_DataAwsOrganizationsOrganizationalUnits{}
 
 	_jsii_.Create(
-		"aws.dataAwsOrganizationsOrganizationalUnits.DataAwsOrganizationsOrganizationalUnits",
+		"@cdktf/provider-aws.dataAwsOrganizationsOrganizationalUnits.DataAwsOrganizationsOrganizationalUnits",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataAwsOrganizationsOrganizationalUnits_Override(d DataAwsOrganizationsO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOrganizationsOrganizationalUnits.DataAwsOrganizationsOrganizationalUnits",
+		"@cdktf/provider-aws.dataAwsOrganizationsOrganizationalUnits.DataAwsOrganizationsOrganizationalUnits",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataAwsOrganizationsOrganizationalUnits_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOrganizationsOrganizationalUnits.DataAwsOrganizationsOrganizationalUnits",
+		"@cdktf/provider-aws.dataAwsOrganizationsOrganizationalUnits.DataAwsOrganizationsOrganizationalUnits",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataAwsOrganizationsOrganizationalUnits_IsTerraformDataSource(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOrganizationsOrganizationalUnits.DataAwsOrganizationsOrganizationalUnits",
+		"@cdktf/provider-aws.dataAwsOrganizationsOrganizationalUnits.DataAwsOrganizationsOrganizationalUnits",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataAwsOrganizationsOrganizationalUnits_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOrganizationsOrganizationalUnits.DataAwsOrganizationsOrganizationalUnits",
+		"@cdktf/provider-aws.dataAwsOrganizationsOrganizationalUnits.DataAwsOrganizationsOrganizationalUnits",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataAwsOrganizationsOrganizationalUnits_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsOrganizationsOrganizationalUnits.DataAwsOrganizationsOrganizationalUnits",
+		"@cdktf/provider-aws.dataAwsOrganizationsOrganizationalUnits.DataAwsOrganizationsOrganizationalUnits",
 		"tfResourceType",
 		&returns,
 	)

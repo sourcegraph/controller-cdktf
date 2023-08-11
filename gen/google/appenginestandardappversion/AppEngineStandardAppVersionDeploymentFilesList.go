@@ -116,7 +116,7 @@ func NewAppEngineStandardAppVersionDeploymentFilesList(terraformResource cdktf.I
 	j := jsiiProxy_AppEngineStandardAppVersionDeploymentFilesList{}
 
 	_jsii_.Create(
-		"google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesList",
+		"@cdktf/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppEngineStandardAppVersionDeploymentFilesList_Override(a AppEngineStand
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesList",
+		"@cdktf/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

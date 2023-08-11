@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.s3Object.S3Object",
+		"@cdktf/provider-aws.s3Object.S3Object",
 		reflect.TypeOf((*S3Object)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acl", GoGetter: "Acl"},
@@ -129,7 +129,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3Object.S3ObjectConfig",
+		"@cdktf/provider-aws.s3Object.S3ObjectConfig",
 		reflect.TypeOf((*S3ObjectConfig)(nil)).Elem(),
 	)
 }

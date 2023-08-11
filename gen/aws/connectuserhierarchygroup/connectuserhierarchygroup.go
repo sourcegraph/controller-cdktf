@@ -458,7 +458,7 @@ func NewConnectUserHierarchyGroup(scope constructs.Construct, id *string, config
 	j := jsiiProxy_ConnectUserHierarchyGroup{}
 
 	_jsii_.Create(
-		"aws.connectUserHierarchyGroup.ConnectUserHierarchyGroup",
+		"@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -471,7 +471,7 @@ func NewConnectUserHierarchyGroup_Override(c ConnectUserHierarchyGroup, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectUserHierarchyGroup.ConnectUserHierarchyGroup",
+		"@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroup",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -637,7 +637,7 @@ func ConnectUserHierarchyGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectUserHierarchyGroup.ConnectUserHierarchyGroup",
+		"@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -656,7 +656,7 @@ func ConnectUserHierarchyGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectUserHierarchyGroup.ConnectUserHierarchyGroup",
+		"@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -675,7 +675,7 @@ func ConnectUserHierarchyGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectUserHierarchyGroup.ConnectUserHierarchyGroup",
+		"@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func ConnectUserHierarchyGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.connectUserHierarchyGroup.ConnectUserHierarchyGroup",
+		"@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroup",
 		"tfResourceType",
 		&returns,
 	)

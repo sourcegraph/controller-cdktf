@@ -116,7 +116,7 @@ func NewGoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList(terr
 	j := jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList",
+		"@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList",
+		"@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilter",
+		"@cdktf/provider-aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilter",
 		reflect.TypeOf((*CloudwatchLogMetricFilter)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,15 +64,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilterConfig",
+		"@cdktf/provider-aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilterConfig",
 		reflect.TypeOf((*CloudwatchLogMetricFilterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilterMetricTransformation",
+		"@cdktf/provider-aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilterMetricTransformation",
 		reflect.TypeOf((*CloudwatchLogMetricFilterMetricTransformation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilterMetricTransformationOutputReference",
+		"@cdktf/provider-aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilterMetricTransformationOutputReference",
 		reflect.TypeOf((*CloudwatchLogMetricFilterMetricTransformationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

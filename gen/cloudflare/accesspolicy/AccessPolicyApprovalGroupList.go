@@ -116,7 +116,7 @@ func NewAccessPolicyApprovalGroupList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_AccessPolicyApprovalGroupList{}
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyApprovalGroupList",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyApprovalGroupList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessPolicyApprovalGroupList_Override(a AccessPolicyApprovalGroupList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyApprovalGroupList",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyApprovalGroupList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

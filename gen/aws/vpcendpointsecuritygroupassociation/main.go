@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.vpcEndpointSecurityGroupAssociation.VpcEndpointSecurityGroupAssociation",
+		"@cdktf/provider-aws.vpcEndpointSecurityGroupAssociation.VpcEndpointSecurityGroupAssociation",
 		reflect.TypeOf((*VpcEndpointSecurityGroupAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcEndpointSecurityGroupAssociation.VpcEndpointSecurityGroupAssociationConfig",
+		"@cdktf/provider-aws.vpcEndpointSecurityGroupAssociation.VpcEndpointSecurityGroupAssociationConfig",
 		reflect.TypeOf((*VpcEndpointSecurityGroupAssociationConfig)(nil)).Elem(),
 	)
 }

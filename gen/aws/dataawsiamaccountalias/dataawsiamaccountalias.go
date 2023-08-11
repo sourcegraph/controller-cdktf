@@ -279,7 +279,7 @@ func NewDataAwsIamAccountAlias(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataAwsIamAccountAlias{}
 
 	_jsii_.Create(
-		"aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias",
+		"@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -292,7 +292,7 @@ func NewDataAwsIamAccountAlias_Override(d DataAwsIamAccountAlias, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias",
+		"@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -381,7 +381,7 @@ func DataAwsIamAccountAlias_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias",
+		"@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -400,7 +400,7 @@ func DataAwsIamAccountAlias_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias",
+		"@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -419,7 +419,7 @@ func DataAwsIamAccountAlias_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias",
+		"@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -432,7 +432,7 @@ func DataAwsIamAccountAlias_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias",
+		"@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias",
 		"tfResourceType",
 		&returns,
 	)

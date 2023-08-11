@@ -530,7 +530,7 @@ func NewGoogleNetworkSecurityAddressGroup(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleNetworkSecurityAddressGroup{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkSecurityAddressGroup.GoogleNetworkSecurityAddressGroup",
+		"@cdktf/provider-google-beta.googleNetworkSecurityAddressGroup.GoogleNetworkSecurityAddressGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -543,7 +543,7 @@ func NewGoogleNetworkSecurityAddressGroup_Override(g GoogleNetworkSecurityAddres
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkSecurityAddressGroup.GoogleNetworkSecurityAddressGroup",
+		"@cdktf/provider-google-beta.googleNetworkSecurityAddressGroup.GoogleNetworkSecurityAddressGroup",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -742,7 +742,7 @@ func GoogleNetworkSecurityAddressGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkSecurityAddressGroup.GoogleNetworkSecurityAddressGroup",
+		"@cdktf/provider-google-beta.googleNetworkSecurityAddressGroup.GoogleNetworkSecurityAddressGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -761,7 +761,7 @@ func GoogleNetworkSecurityAddressGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkSecurityAddressGroup.GoogleNetworkSecurityAddressGroup",
+		"@cdktf/provider-google-beta.googleNetworkSecurityAddressGroup.GoogleNetworkSecurityAddressGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -780,7 +780,7 @@ func GoogleNetworkSecurityAddressGroup_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkSecurityAddressGroup.GoogleNetworkSecurityAddressGroup",
+		"@cdktf/provider-google-beta.googleNetworkSecurityAddressGroup.GoogleNetworkSecurityAddressGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -793,7 +793,7 @@ func GoogleNetworkSecurityAddressGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleNetworkSecurityAddressGroup.GoogleNetworkSecurityAddressGroup",
+		"@cdktf/provider-google-beta.googleNetworkSecurityAddressGroup.GoogleNetworkSecurityAddressGroup",
 		"tfResourceType",
 		&returns,
 	)

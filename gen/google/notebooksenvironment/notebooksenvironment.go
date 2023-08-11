@@ -521,7 +521,7 @@ func NewNotebooksEnvironment(scope constructs.Construct, id *string, config *Not
 	j := jsiiProxy_NotebooksEnvironment{}
 
 	_jsii_.Create(
-		"google.notebooksEnvironment.NotebooksEnvironment",
+		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -534,7 +534,7 @@ func NewNotebooksEnvironment_Override(n NotebooksEnvironment, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.notebooksEnvironment.NotebooksEnvironment",
+		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironment",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -711,7 +711,7 @@ func NotebooksEnvironment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.notebooksEnvironment.NotebooksEnvironment",
+		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -730,7 +730,7 @@ func NotebooksEnvironment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.notebooksEnvironment.NotebooksEnvironment",
+		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -749,7 +749,7 @@ func NotebooksEnvironment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.notebooksEnvironment.NotebooksEnvironment",
+		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func NotebooksEnvironment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.notebooksEnvironment.NotebooksEnvironment",
+		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironment",
 		"tfResourceType",
 		&returns,
 	)

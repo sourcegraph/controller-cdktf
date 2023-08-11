@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.mfaPolicyRule.MfaPolicyRule",
+		"@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRule",
 		reflect.TypeOf((*MfaPolicyRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,11 +92,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.mfaPolicyRule.MfaPolicyRuleAppExclude",
+		"@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppExclude",
 		reflect.TypeOf((*MfaPolicyRuleAppExclude)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.mfaPolicyRule.MfaPolicyRuleAppExcludeList",
+		"@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppExcludeList",
 		reflect.TypeOf((*MfaPolicyRuleAppExcludeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -117,7 +117,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.mfaPolicyRule.MfaPolicyRuleAppExcludeOutputReference",
+		"@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppExcludeOutputReference",
 		reflect.TypeOf((*MfaPolicyRuleAppExcludeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -157,11 +157,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.mfaPolicyRule.MfaPolicyRuleAppInclude",
+		"@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppInclude",
 		reflect.TypeOf((*MfaPolicyRuleAppInclude)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.mfaPolicyRule.MfaPolicyRuleAppIncludeList",
+		"@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppIncludeList",
 		reflect.TypeOf((*MfaPolicyRuleAppIncludeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -182,7 +182,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.mfaPolicyRule.MfaPolicyRuleAppIncludeOutputReference",
+		"@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppIncludeOutputReference",
 		reflect.TypeOf((*MfaPolicyRuleAppIncludeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -222,7 +222,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.mfaPolicyRule.MfaPolicyRuleConfig",
+		"@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleConfig",
 		reflect.TypeOf((*MfaPolicyRuleConfig)(nil)).Elem(),
 	)
 }

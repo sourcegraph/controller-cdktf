@@ -180,7 +180,7 @@ func NewLambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference
 	j := jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewLambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

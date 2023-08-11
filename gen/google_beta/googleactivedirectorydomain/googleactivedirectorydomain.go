@@ -507,7 +507,7 @@ func NewGoogleActiveDirectoryDomain(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleActiveDirectoryDomain{}
 
 	_jsii_.Create(
-		"google-beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomain",
+		"@cdktf/provider-google-beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomain",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -520,7 +520,7 @@ func NewGoogleActiveDirectoryDomain_Override(g GoogleActiveDirectoryDomain, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomain",
+		"@cdktf/provider-google-beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomain",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -708,7 +708,7 @@ func GoogleActiveDirectoryDomain_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomain",
+		"@cdktf/provider-google-beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomain",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -727,7 +727,7 @@ func GoogleActiveDirectoryDomain_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomain",
+		"@cdktf/provider-google-beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomain",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -746,7 +746,7 @@ func GoogleActiveDirectoryDomain_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomain",
+		"@cdktf/provider-google-beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomain",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -759,7 +759,7 @@ func GoogleActiveDirectoryDomain_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomain",
+		"@cdktf/provider-google-beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomain",
 		"tfResourceType",
 		&returns,
 	)

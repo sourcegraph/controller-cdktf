@@ -203,7 +203,7 @@ func NewLbListenerDefaultActionForwardStickinessOutputReference(terraformResourc
 	j := jsiiProxy_LbListenerDefaultActionForwardStickinessOutputReference{}
 
 	_jsii_.Create(
-		"aws.lbListener.LbListenerDefaultActionForwardStickinessOutputReference",
+		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardStickinessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewLbListenerDefaultActionForwardStickinessOutputReference_Override(l LbLis
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbListener.LbListenerDefaultActionForwardStickinessOutputReference",
+		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardStickinessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

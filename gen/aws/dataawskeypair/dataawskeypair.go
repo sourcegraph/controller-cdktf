@@ -467,7 +467,7 @@ func NewDataAwsKeyPair(scope constructs.Construct, id *string, config *DataAwsKe
 	j := jsiiProxy_DataAwsKeyPair{}
 
 	_jsii_.Create(
-		"aws.dataAwsKeyPair.DataAwsKeyPair",
+		"@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -480,7 +480,7 @@ func NewDataAwsKeyPair_Override(d DataAwsKeyPair, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKeyPair.DataAwsKeyPair",
+		"@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -613,7 +613,7 @@ func DataAwsKeyPair_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKeyPair.DataAwsKeyPair",
+		"@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func DataAwsKeyPair_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKeyPair.DataAwsKeyPair",
+		"@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -651,7 +651,7 @@ func DataAwsKeyPair_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKeyPair.DataAwsKeyPair",
+		"@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -664,7 +664,7 @@ func DataAwsKeyPair_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsKeyPair.DataAwsKeyPair",
+		"@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair",
 		"tfResourceType",
 		&returns,
 	)

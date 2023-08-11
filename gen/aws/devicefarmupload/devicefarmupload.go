@@ -433,7 +433,7 @@ func NewDevicefarmUpload(scope constructs.Construct, id *string, config *Devicef
 	j := jsiiProxy_DevicefarmUpload{}
 
 	_jsii_.Create(
-		"aws.devicefarmUpload.DevicefarmUpload",
+		"@cdktf/provider-aws.devicefarmUpload.DevicefarmUpload",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -446,7 +446,7 @@ func NewDevicefarmUpload_Override(d DevicefarmUpload, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.devicefarmUpload.DevicefarmUpload",
+		"@cdktf/provider-aws.devicefarmUpload.DevicefarmUpload",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -601,7 +601,7 @@ func DevicefarmUpload_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.devicefarmUpload.DevicefarmUpload",
+		"@cdktf/provider-aws.devicefarmUpload.DevicefarmUpload",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func DevicefarmUpload_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.devicefarmUpload.DevicefarmUpload",
+		"@cdktf/provider-aws.devicefarmUpload.DevicefarmUpload",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -639,7 +639,7 @@ func DevicefarmUpload_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.devicefarmUpload.DevicefarmUpload",
+		"@cdktf/provider-aws.devicefarmUpload.DevicefarmUpload",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -652,7 +652,7 @@ func DevicefarmUpload_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.devicefarmUpload.DevicefarmUpload",
+		"@cdktf/provider-aws.devicefarmUpload.DevicefarmUpload",
 		"tfResourceType",
 		&returns,
 	)

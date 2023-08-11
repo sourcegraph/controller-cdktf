@@ -180,7 +180,7 @@ func NewCloudformationStackSetTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_CloudformationStackSetTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudformationStackSet.CloudformationStackSetTimeoutsOutputReference",
+		"@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewCloudformationStackSetTimeoutsOutputReference_Override(c CloudformationS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudformationStackSet.CloudformationStackSetTimeoutsOutputReference",
+		"@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

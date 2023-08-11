@@ -116,7 +116,7 @@ func NewAppEngineFlexibleAppVersionResourcesVolumesList(terraformResource cdktf.
 	j := jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesList{}
 
 	_jsii_.Create(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionResourcesVolumesList",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionResourcesVolumesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppEngineFlexibleAppVersionResourcesVolumesList_Override(a AppEngineFlex
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionResourcesVolumesList",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionResourcesVolumesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

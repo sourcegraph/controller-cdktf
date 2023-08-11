@@ -472,7 +472,7 @@ func NewLocationGeofenceCollection(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_LocationGeofenceCollection{}
 
 	_jsii_.Create(
-		"aws.locationGeofenceCollection.LocationGeofenceCollection",
+		"@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollection",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -485,7 +485,7 @@ func NewLocationGeofenceCollection_Override(l LocationGeofenceCollection, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.locationGeofenceCollection.LocationGeofenceCollection",
+		"@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollection",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -651,7 +651,7 @@ func LocationGeofenceCollection_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.locationGeofenceCollection.LocationGeofenceCollection",
+		"@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollection",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -670,7 +670,7 @@ func LocationGeofenceCollection_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.locationGeofenceCollection.LocationGeofenceCollection",
+		"@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollection",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func LocationGeofenceCollection_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.locationGeofenceCollection.LocationGeofenceCollection",
+		"@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollection",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func LocationGeofenceCollection_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.locationGeofenceCollection.LocationGeofenceCollection",
+		"@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollection",
 		"tfResourceType",
 		&returns,
 	)

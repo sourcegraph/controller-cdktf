@@ -366,7 +366,7 @@ func NewLocationTrackerAssociation(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_LocationTrackerAssociation{}
 
 	_jsii_.Create(
-		"aws.locationTrackerAssociation.LocationTrackerAssociation",
+		"@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewLocationTrackerAssociation_Override(l LocationTrackerAssociation, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.locationTrackerAssociation.LocationTrackerAssociation",
+		"@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -512,7 +512,7 @@ func LocationTrackerAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.locationTrackerAssociation.LocationTrackerAssociation",
+		"@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func LocationTrackerAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.locationTrackerAssociation.LocationTrackerAssociation",
+		"@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func LocationTrackerAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.locationTrackerAssociation.LocationTrackerAssociation",
+		"@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func LocationTrackerAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.locationTrackerAssociation.LocationTrackerAssociation",
+		"@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation",
 		"tfResourceType",
 		&returns,
 	)

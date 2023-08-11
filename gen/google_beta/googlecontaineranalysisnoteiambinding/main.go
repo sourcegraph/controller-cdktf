@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBinding",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBinding",
 		reflect.TypeOf((*GoogleContainerAnalysisNoteIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,11 +69,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBindingCondition",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBindingCondition",
 		reflect.TypeOf((*GoogleContainerAnalysisNoteIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBindingConditionOutputReference",
 		reflect.TypeOf((*GoogleContainerAnalysisNoteIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -112,7 +112,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBindingConfig",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBindingConfig",
 		reflect.TypeOf((*GoogleContainerAnalysisNoteIamBindingConfig)(nil)).Elem(),
 	)
 }

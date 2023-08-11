@@ -401,7 +401,7 @@ func NewAdminRoleTargets(scope constructs.Construct, id *string, config *AdminRo
 	j := jsiiProxy_AdminRoleTargets{}
 
 	_jsii_.Create(
-		"okta.adminRoleTargets.AdminRoleTargets",
+		"@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewAdminRoleTargets_Override(a AdminRoleTargets, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.adminRoleTargets.AdminRoleTargets",
+		"@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -569,7 +569,7 @@ func AdminRoleTargets_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.adminRoleTargets.AdminRoleTargets",
+		"@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func AdminRoleTargets_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.adminRoleTargets.AdminRoleTargets",
+		"@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func AdminRoleTargets_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.adminRoleTargets.AdminRoleTargets",
+		"@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func AdminRoleTargets_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.adminRoleTargets.AdminRoleTargets",
+		"@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets",
 		"tfResourceType",
 		&returns,
 	)

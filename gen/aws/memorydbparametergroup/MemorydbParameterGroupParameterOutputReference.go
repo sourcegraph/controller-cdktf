@@ -202,7 +202,7 @@ func NewMemorydbParameterGroupParameterOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_MemorydbParameterGroupParameterOutputReference{}
 
 	_jsii_.Create(
-		"aws.memorydbParameterGroup.MemorydbParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroupParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewMemorydbParameterGroupParameterOutputReference_Override(m MemorydbParame
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.memorydbParameterGroup.MemorydbParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroupParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

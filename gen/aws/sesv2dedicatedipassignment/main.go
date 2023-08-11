@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignment",
+		"@cdktf/provider-aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignment",
 		reflect.TypeOf((*Sesv2DedicatedIpAssignment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignmentConfig",
+		"@cdktf/provider-aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignmentConfig",
 		reflect.TypeOf((*Sesv2DedicatedIpAssignmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignmentTimeouts",
+		"@cdktf/provider-aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignmentTimeouts",
 		reflect.TypeOf((*Sesv2DedicatedIpAssignmentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignmentTimeoutsOutputReference",
+		"@cdktf/provider-aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignmentTimeoutsOutputReference",
 		reflect.TypeOf((*Sesv2DedicatedIpAssignmentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

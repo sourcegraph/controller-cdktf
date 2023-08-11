@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersNetworkSourceMacList(terraformResource cdktf.II
 	j := jsiiProxy_SecurityhubInsightFiltersNetworkSourceMacList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersNetworkSourceMacList_Override(s SecurityhubInsi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

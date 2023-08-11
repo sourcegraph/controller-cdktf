@@ -424,7 +424,7 @@ func NewComputeNetworkFirewallPolicyAssociation(scope constructs.Construct, id *
 	j := jsiiProxy_ComputeNetworkFirewallPolicyAssociation{}
 
 	_jsii_.Create(
-		"google.computeNetworkFirewallPolicyAssociation.ComputeNetworkFirewallPolicyAssociation",
+		"@cdktf/provider-google.computeNetworkFirewallPolicyAssociation.ComputeNetworkFirewallPolicyAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewComputeNetworkFirewallPolicyAssociation_Override(c ComputeNetworkFirewal
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeNetworkFirewallPolicyAssociation.ComputeNetworkFirewallPolicyAssociation",
+		"@cdktf/provider-google.computeNetworkFirewallPolicyAssociation.ComputeNetworkFirewallPolicyAssociation",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -592,7 +592,7 @@ func ComputeNetworkFirewallPolicyAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeNetworkFirewallPolicyAssociation.ComputeNetworkFirewallPolicyAssociation",
+		"@cdktf/provider-google.computeNetworkFirewallPolicyAssociation.ComputeNetworkFirewallPolicyAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func ComputeNetworkFirewallPolicyAssociation_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeNetworkFirewallPolicyAssociation.ComputeNetworkFirewallPolicyAssociation",
+		"@cdktf/provider-google.computeNetworkFirewallPolicyAssociation.ComputeNetworkFirewallPolicyAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func ComputeNetworkFirewallPolicyAssociation_IsTerraformResource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeNetworkFirewallPolicyAssociation.ComputeNetworkFirewallPolicyAssociation",
+		"@cdktf/provider-google.computeNetworkFirewallPolicyAssociation.ComputeNetworkFirewallPolicyAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func ComputeNetworkFirewallPolicyAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeNetworkFirewallPolicyAssociation.ComputeNetworkFirewallPolicyAssociation",
+		"@cdktf/provider-google.computeNetworkFirewallPolicyAssociation.ComputeNetworkFirewallPolicyAssociation",
 		"tfResourceType",
 		&returns,
 	)

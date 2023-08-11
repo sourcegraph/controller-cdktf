@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.route53TrafficPolicy.Route53TrafficPolicy",
+		"@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy",
 		reflect.TypeOf((*Route53TrafficPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53TrafficPolicy.Route53TrafficPolicyConfig",
+		"@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig",
 		reflect.TypeOf((*Route53TrafficPolicyConfig)(nil)).Elem(),
 	)
 }

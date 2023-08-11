@@ -348,7 +348,7 @@ func NewTeamOrganizationAccessOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_TeamOrganizationAccessOutputReference{}
 
 	_jsii_.Create(
-		"tfe.team.TeamOrganizationAccessOutputReference",
+		"@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewTeamOrganizationAccessOutputReference_Override(t TeamOrganizationAccessO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.team.TeamOrganizationAccessOutputReference",
+		"@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

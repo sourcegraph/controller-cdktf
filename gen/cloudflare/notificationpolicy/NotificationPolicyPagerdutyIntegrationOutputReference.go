@@ -203,7 +203,7 @@ func NewNotificationPolicyPagerdutyIntegrationOutputReference(terraformResource 
 	j := jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegrationOutputReference",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegrationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewNotificationPolicyPagerdutyIntegrationOutputReference_Override(n Notific
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegrationOutputReference",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegrationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)

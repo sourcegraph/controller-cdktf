@@ -273,7 +273,7 @@ func NewIotTopicRuleKafkaOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_IotTopicRuleKafkaOutputReference{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleKafkaOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -285,7 +285,7 @@ func NewIotTopicRuleKafkaOutputReference_Override(i IotTopicRuleKafkaOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleKafkaOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

@@ -425,7 +425,7 @@ func NewWafregionalRuleGroup(scope constructs.Construct, id *string, config *Waf
 	j := jsiiProxy_WafregionalRuleGroup{}
 
 	_jsii_.Create(
-		"aws.wafregionalRuleGroup.WafregionalRuleGroup",
+		"@cdktf/provider-aws.wafregionalRuleGroup.WafregionalRuleGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -438,7 +438,7 @@ func NewWafregionalRuleGroup_Override(w WafregionalRuleGroup, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalRuleGroup.WafregionalRuleGroup",
+		"@cdktf/provider-aws.wafregionalRuleGroup.WafregionalRuleGroup",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -593,7 +593,7 @@ func WafregionalRuleGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalRuleGroup.WafregionalRuleGroup",
+		"@cdktf/provider-aws.wafregionalRuleGroup.WafregionalRuleGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func WafregionalRuleGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalRuleGroup.WafregionalRuleGroup",
+		"@cdktf/provider-aws.wafregionalRuleGroup.WafregionalRuleGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func WafregionalRuleGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalRuleGroup.WafregionalRuleGroup",
+		"@cdktf/provider-aws.wafregionalRuleGroup.WafregionalRuleGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func WafregionalRuleGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.wafregionalRuleGroup.WafregionalRuleGroup",
+		"@cdktf/provider-aws.wafregionalRuleGroup.WafregionalRuleGroup",
 		"tfResourceType",
 		&returns,
 	)

@@ -179,7 +179,7 @@ func NewEcsClusterServiceConnectDefaultsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_EcsClusterServiceConnectDefaultsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsCluster.EcsClusterServiceConnectDefaultsOutputReference",
+		"@cdktf/provider-aws.ecsCluster.EcsClusterServiceConnectDefaultsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewEcsClusterServiceConnectDefaultsOutputReference_Override(e EcsClusterSer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsCluster.EcsClusterServiceConnectDefaultsOutputReference",
+		"@cdktf/provider-aws.ecsCluster.EcsClusterServiceConnectDefaultsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

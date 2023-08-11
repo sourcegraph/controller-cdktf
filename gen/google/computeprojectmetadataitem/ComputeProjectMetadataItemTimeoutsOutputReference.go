@@ -228,7 +228,7 @@ func NewComputeProjectMetadataItemTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_ComputeProjectMetadataItemTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeoutsOutputReference",
+		"@cdktf/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeProjectMetadataItemTimeoutsOutputReference_Override(c ComputeProj
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeoutsOutputReference",
+		"@cdktf/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

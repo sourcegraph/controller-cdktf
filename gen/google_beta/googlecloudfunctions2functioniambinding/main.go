@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBinding",
+		"@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBinding",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBindingCondition",
+		"@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBindingCondition",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBindingConditionOutputReference",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBindingConfig",
+		"@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamBinding.GoogleCloudfunctions2FunctionIamBindingConfig",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionIamBindingConfig)(nil)).Elem(),
 	)
 }

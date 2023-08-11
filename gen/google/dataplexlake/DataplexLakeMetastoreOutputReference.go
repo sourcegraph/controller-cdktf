@@ -180,7 +180,7 @@ func NewDataplexLakeMetastoreOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_DataplexLakeMetastoreOutputReference{}
 
 	_jsii_.Create(
-		"google.dataplexLake.DataplexLakeMetastoreOutputReference",
+		"@cdktf/provider-google.dataplexLake.DataplexLakeMetastoreOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataplexLakeMetastoreOutputReference_Override(d DataplexLakeMetastoreOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexLake.DataplexLakeMetastoreOutputReference",
+		"@cdktf/provider-google.dataplexLake.DataplexLakeMetastoreOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

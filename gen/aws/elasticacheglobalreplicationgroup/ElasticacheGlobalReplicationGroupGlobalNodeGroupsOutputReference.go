@@ -178,7 +178,7 @@ func NewElasticacheGlobalReplicationGroupGlobalNodeGroupsOutputReference(terrafo
 	j := jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupGlobalNodeGroupsOutputReference",
+		"@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupGlobalNodeGroupsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewElasticacheGlobalReplicationGroupGlobalNodeGroupsOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupGlobalNodeGroupsOutputReference",
+		"@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupGlobalNodeGroupsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

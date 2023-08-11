@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ecsTag.EcsTag",
+		"@cdktf/provider-aws.ecsTag.EcsTag",
 		reflect.TypeOf((*EcsTag)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecsTag.EcsTagConfig",
+		"@cdktf/provider-aws.ecsTag.EcsTagConfig",
 		reflect.TypeOf((*EcsTagConfig)(nil)).Elem(),
 	)
 }

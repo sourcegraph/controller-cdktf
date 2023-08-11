@@ -228,7 +228,7 @@ func NewRedshiftEventSubscriptionTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeoutsOutputReference",
+		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewRedshiftEventSubscriptionTimeoutsOutputReference_Override(r RedshiftEven
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeoutsOutputReference",
+		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

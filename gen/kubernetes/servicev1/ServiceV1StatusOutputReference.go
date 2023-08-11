@@ -167,7 +167,7 @@ func NewServiceV1StatusOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_ServiceV1StatusOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.serviceV1.ServiceV1StatusOutputReference",
+		"@cdktf/provider-kubernetes.serviceV1.ServiceV1StatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewServiceV1StatusOutputReference_Override(s ServiceV1StatusOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.serviceV1.ServiceV1StatusOutputReference",
+		"@cdktf/provider-kubernetes.serviceV1.ServiceV1StatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

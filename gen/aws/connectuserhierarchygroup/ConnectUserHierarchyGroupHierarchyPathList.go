@@ -104,7 +104,7 @@ func NewConnectUserHierarchyGroupHierarchyPathList(terraformResource cdktf.IInte
 	j := jsiiProxy_ConnectUserHierarchyGroupHierarchyPathList{}
 
 	_jsii_.Create(
-		"aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathList",
+		"@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewConnectUserHierarchyGroupHierarchyPathList_Override(c ConnectUserHierarc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathList",
+		"@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

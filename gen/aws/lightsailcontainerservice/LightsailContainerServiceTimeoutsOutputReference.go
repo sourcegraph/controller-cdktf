@@ -228,7 +228,7 @@ func NewLightsailContainerServiceTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_LightsailContainerServiceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.lightsailContainerService.LightsailContainerServiceTimeoutsOutputReference",
+		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServiceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewLightsailContainerServiceTimeoutsOutputReference_Override(l LightsailCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailContainerService.LightsailContainerServiceTimeoutsOutputReference",
+		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServiceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

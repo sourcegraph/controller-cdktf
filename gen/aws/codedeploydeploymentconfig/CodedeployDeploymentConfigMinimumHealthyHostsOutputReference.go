@@ -204,7 +204,7 @@ func NewCodedeployDeploymentConfigMinimumHealthyHostsOutputReference(terraformRe
 	j := jsiiProxy_CodedeployDeploymentConfigMinimumHealthyHostsOutputReference{}
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentConfig.CodedeployDeploymentConfigMinimumHealthyHostsOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigMinimumHealthyHostsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCodedeployDeploymentConfigMinimumHealthyHostsOutputReference_Override(c 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentConfig.CodedeployDeploymentConfigMinimumHealthyHostsOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigMinimumHealthyHostsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

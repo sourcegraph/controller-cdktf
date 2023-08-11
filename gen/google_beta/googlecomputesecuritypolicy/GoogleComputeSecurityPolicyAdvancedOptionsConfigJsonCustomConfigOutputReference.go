@@ -179,7 +179,7 @@ func NewGoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputRe
 	j := jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -116,7 +116,7 @@ func NewWafv2RuleGroupRuleList(terraformResource cdktf.IInterpolatingParent, ter
 	j := jsiiProxy_Wafv2RuleGroupRuleList{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleList",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafv2RuleGroupRuleList_Override(w Wafv2RuleGroupRuleList, terraformResou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleList",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

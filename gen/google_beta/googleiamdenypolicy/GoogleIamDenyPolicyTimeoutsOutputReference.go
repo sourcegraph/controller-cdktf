@@ -228,7 +228,7 @@ func NewGoogleIamDenyPolicyTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleIamDenyPolicyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleIamDenyPolicyTimeoutsOutputReference_Override(g GoogleIamDenyPolic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

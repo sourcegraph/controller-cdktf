@@ -180,7 +180,7 @@ func NewDefaultServiceAccountTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_DefaultServiceAccountTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.defaultServiceAccount.DefaultServiceAccountTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDefaultServiceAccountTimeoutsOutputReference_Override(d DefaultServiceAc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.defaultServiceAccount.DefaultServiceAccountTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -662,7 +662,7 @@ func NewGoogleBigqueryAnalyticsHubListing(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleBigqueryAnalyticsHubListing{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryAnalyticsHubListing.GoogleBigqueryAnalyticsHubListing",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListing.GoogleBigqueryAnalyticsHubListing",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -675,7 +675,7 @@ func NewGoogleBigqueryAnalyticsHubListing_Override(g GoogleBigqueryAnalyticsHubL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryAnalyticsHubListing.GoogleBigqueryAnalyticsHubListing",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListing.GoogleBigqueryAnalyticsHubListing",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -907,7 +907,7 @@ func GoogleBigqueryAnalyticsHubListing_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryAnalyticsHubListing.GoogleBigqueryAnalyticsHubListing",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListing.GoogleBigqueryAnalyticsHubListing",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -926,7 +926,7 @@ func GoogleBigqueryAnalyticsHubListing_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryAnalyticsHubListing.GoogleBigqueryAnalyticsHubListing",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListing.GoogleBigqueryAnalyticsHubListing",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -945,7 +945,7 @@ func GoogleBigqueryAnalyticsHubListing_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryAnalyticsHubListing.GoogleBigqueryAnalyticsHubListing",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListing.GoogleBigqueryAnalyticsHubListing",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -958,7 +958,7 @@ func GoogleBigqueryAnalyticsHubListing_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigqueryAnalyticsHubListing.GoogleBigqueryAnalyticsHubListing",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListing.GoogleBigqueryAnalyticsHubListing",
 		"tfResourceType",
 		&returns,
 	)

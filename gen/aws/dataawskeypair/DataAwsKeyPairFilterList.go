@@ -116,7 +116,7 @@ func NewDataAwsKeyPairFilterList(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_DataAwsKeyPairFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsKeyPair.DataAwsKeyPairFilterList",
+		"@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsKeyPairFilterList_Override(d DataAwsKeyPairFilterList, terraformR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKeyPair.DataAwsKeyPairFilterList",
+		"@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

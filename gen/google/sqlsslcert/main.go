@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.sqlSslCert.SqlSslCert",
+		"@cdktf/provider-google.sqlSslCert.SqlSslCert",
 		reflect.TypeOf((*SqlSslCert)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.sqlSslCert.SqlSslCertConfig",
+		"@cdktf/provider-google.sqlSslCert.SqlSslCertConfig",
 		reflect.TypeOf((*SqlSslCertConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.sqlSslCert.SqlSslCertTimeouts",
+		"@cdktf/provider-google.sqlSslCert.SqlSslCertTimeouts",
 		reflect.TypeOf((*SqlSslCertTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.sqlSslCert.SqlSslCertTimeoutsOutputReference",
+		"@cdktf/provider-google.sqlSslCert.SqlSslCertTimeoutsOutputReference",
 		reflect.TypeOf((*SqlSslCertTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

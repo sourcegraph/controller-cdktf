@@ -202,7 +202,7 @@ func NewElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference(terraformRes
 	j := jsiiProxy_ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference_Override(e E
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

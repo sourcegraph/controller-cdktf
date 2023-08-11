@@ -448,7 +448,7 @@ func NewBigqueryConnectionIamMember(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_BigqueryConnectionIamMember{}
 
 	_jsii_.Create(
-		"google.bigqueryConnectionIamMember.BigqueryConnectionIamMember",
+		"@cdktf/provider-google.bigqueryConnectionIamMember.BigqueryConnectionIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewBigqueryConnectionIamMember_Override(b BigqueryConnectionIamMember, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryConnectionIamMember.BigqueryConnectionIamMember",
+		"@cdktf/provider-google.bigqueryConnectionIamMember.BigqueryConnectionIamMember",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -627,7 +627,7 @@ func BigqueryConnectionIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryConnectionIamMember.BigqueryConnectionIamMember",
+		"@cdktf/provider-google.bigqueryConnectionIamMember.BigqueryConnectionIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func BigqueryConnectionIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryConnectionIamMember.BigqueryConnectionIamMember",
+		"@cdktf/provider-google.bigqueryConnectionIamMember.BigqueryConnectionIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func BigqueryConnectionIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryConnectionIamMember.BigqueryConnectionIamMember",
+		"@cdktf/provider-google.bigqueryConnectionIamMember.BigqueryConnectionIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func BigqueryConnectionIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.bigqueryConnectionIamMember.BigqueryConnectionIamMember",
+		"@cdktf/provider-google.bigqueryConnectionIamMember.BigqueryConnectionIamMember",
 		"tfResourceType",
 		&returns,
 	)

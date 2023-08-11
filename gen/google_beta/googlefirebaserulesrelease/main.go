@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleFirebaserulesRelease.GoogleFirebaserulesRelease",
+		"@cdktf/provider-google-beta.googleFirebaserulesRelease.GoogleFirebaserulesRelease",
 		reflect.TypeOf((*GoogleFirebaserulesRelease)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,15 +69,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirebaserulesRelease.GoogleFirebaserulesReleaseConfig",
+		"@cdktf/provider-google-beta.googleFirebaserulesRelease.GoogleFirebaserulesReleaseConfig",
 		reflect.TypeOf((*GoogleFirebaserulesReleaseConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirebaserulesRelease.GoogleFirebaserulesReleaseTimeouts",
+		"@cdktf/provider-google-beta.googleFirebaserulesRelease.GoogleFirebaserulesReleaseTimeouts",
 		reflect.TypeOf((*GoogleFirebaserulesReleaseTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFirebaserulesRelease.GoogleFirebaserulesReleaseTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaserulesRelease.GoogleFirebaserulesReleaseTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleFirebaserulesReleaseTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

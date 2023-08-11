@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dialogflowCxEntityType.DialogflowCxEntityType",
+		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityType",
 		reflect.TypeOf((*DialogflowCxEntityType)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,15 +86,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxEntityType.DialogflowCxEntityTypeConfig",
+		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeConfig",
 		reflect.TypeOf((*DialogflowCxEntityTypeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxEntityType.DialogflowCxEntityTypeEntities",
+		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeEntities",
 		reflect.TypeOf((*DialogflowCxEntityTypeEntities)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxEntityType.DialogflowCxEntityTypeEntitiesList",
+		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeEntitiesList",
 		reflect.TypeOf((*DialogflowCxEntityTypeEntitiesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxEntityType.DialogflowCxEntityTypeEntitiesOutputReference",
+		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeEntitiesOutputReference",
 		reflect.TypeOf((*DialogflowCxEntityTypeEntitiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -153,11 +153,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxEntityType.DialogflowCxEntityTypeExcludedPhrases",
+		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeExcludedPhrases",
 		reflect.TypeOf((*DialogflowCxEntityTypeExcludedPhrases)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxEntityType.DialogflowCxEntityTypeExcludedPhrasesList",
+		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeExcludedPhrasesList",
 		reflect.TypeOf((*DialogflowCxEntityTypeExcludedPhrasesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -178,7 +178,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxEntityType.DialogflowCxEntityTypeExcludedPhrasesOutputReference",
+		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeExcludedPhrasesOutputReference",
 		reflect.TypeOf((*DialogflowCxEntityTypeExcludedPhrasesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -213,11 +213,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxEntityType.DialogflowCxEntityTypeTimeouts",
+		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeTimeouts",
 		reflect.TypeOf((*DialogflowCxEntityTypeTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxEntityType.DialogflowCxEntityTypeTimeoutsOutputReference",
+		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeTimeoutsOutputReference",
 		reflect.TypeOf((*DialogflowCxEntityTypeTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

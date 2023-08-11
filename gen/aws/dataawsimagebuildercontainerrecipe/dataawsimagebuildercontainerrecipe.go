@@ -480,7 +480,7 @@ func NewDataAwsImagebuilderContainerRecipe(scope constructs.Construct, id *strin
 	j := jsiiProxy_DataAwsImagebuilderContainerRecipe{}
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderContainerRecipe.DataAwsImagebuilderContainerRecipe",
+		"@cdktf/provider-aws.dataAwsImagebuilderContainerRecipe.DataAwsImagebuilderContainerRecipe",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -493,7 +493,7 @@ func NewDataAwsImagebuilderContainerRecipe_Override(d DataAwsImagebuilderContain
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderContainerRecipe.DataAwsImagebuilderContainerRecipe",
+		"@cdktf/provider-aws.dataAwsImagebuilderContainerRecipe.DataAwsImagebuilderContainerRecipe",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -604,7 +604,7 @@ func DataAwsImagebuilderContainerRecipe_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsImagebuilderContainerRecipe.DataAwsImagebuilderContainerRecipe",
+		"@cdktf/provider-aws.dataAwsImagebuilderContainerRecipe.DataAwsImagebuilderContainerRecipe",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -623,7 +623,7 @@ func DataAwsImagebuilderContainerRecipe_IsTerraformDataSource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsImagebuilderContainerRecipe.DataAwsImagebuilderContainerRecipe",
+		"@cdktf/provider-aws.dataAwsImagebuilderContainerRecipe.DataAwsImagebuilderContainerRecipe",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func DataAwsImagebuilderContainerRecipe_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsImagebuilderContainerRecipe.DataAwsImagebuilderContainerRecipe",
+		"@cdktf/provider-aws.dataAwsImagebuilderContainerRecipe.DataAwsImagebuilderContainerRecipe",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func DataAwsImagebuilderContainerRecipe_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsImagebuilderContainerRecipe.DataAwsImagebuilderContainerRecipe",
+		"@cdktf/provider-aws.dataAwsImagebuilderContainerRecipe.DataAwsImagebuilderContainerRecipe",
 		"tfResourceType",
 		&returns,
 	)

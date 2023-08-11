@@ -116,7 +116,7 @@ func NewDataAwsPricingProductFiltersList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_DataAwsPricingProductFiltersList{}
 
 	_jsii_.Create(
-		"aws.dataAwsPricingProduct.DataAwsPricingProductFiltersList",
+		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductFiltersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsPricingProductFiltersList_Override(d DataAwsPricingProductFilters
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsPricingProduct.DataAwsPricingProductFiltersList",
+		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductFiltersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -400,7 +400,7 @@ func NewGoogleBillingAccountIamBinding(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleBillingAccountIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleBillingAccountIamBinding.GoogleBillingAccountIamBinding",
+		"@cdktf/provider-google-beta.googleBillingAccountIamBinding.GoogleBillingAccountIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleBillingAccountIamBinding_Override(g GoogleBillingAccountIamBinding
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBillingAccountIamBinding.GoogleBillingAccountIamBinding",
+		"@cdktf/provider-google-beta.googleBillingAccountIamBinding.GoogleBillingAccountIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleBillingAccountIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBillingAccountIamBinding.GoogleBillingAccountIamBinding",
+		"@cdktf/provider-google-beta.googleBillingAccountIamBinding.GoogleBillingAccountIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleBillingAccountIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBillingAccountIamBinding.GoogleBillingAccountIamBinding",
+		"@cdktf/provider-google-beta.googleBillingAccountIamBinding.GoogleBillingAccountIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleBillingAccountIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBillingAccountIamBinding.GoogleBillingAccountIamBinding",
+		"@cdktf/provider-google-beta.googleBillingAccountIamBinding.GoogleBillingAccountIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleBillingAccountIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBillingAccountIamBinding.GoogleBillingAccountIamBinding",
+		"@cdktf/provider-google-beta.googleBillingAccountIamBinding.GoogleBillingAccountIamBinding",
 		"tfResourceType",
 		&returns,
 	)

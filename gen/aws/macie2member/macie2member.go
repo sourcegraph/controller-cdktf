@@ -576,7 +576,7 @@ func NewMacie2Member(scope constructs.Construct, id *string, config *Macie2Membe
 	j := jsiiProxy_Macie2Member{}
 
 	_jsii_.Create(
-		"aws.macie2Member.Macie2Member",
+		"@cdktf/provider-aws.macie2Member.Macie2Member",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -589,7 +589,7 @@ func NewMacie2Member_Override(m Macie2Member, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2Member.Macie2Member",
+		"@cdktf/provider-aws.macie2Member.Macie2Member",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -788,7 +788,7 @@ func Macie2Member_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2Member.Macie2Member",
+		"@cdktf/provider-aws.macie2Member.Macie2Member",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -807,7 +807,7 @@ func Macie2Member_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2Member.Macie2Member",
+		"@cdktf/provider-aws.macie2Member.Macie2Member",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -826,7 +826,7 @@ func Macie2Member_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2Member.Macie2Member",
+		"@cdktf/provider-aws.macie2Member.Macie2Member",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -839,7 +839,7 @@ func Macie2Member_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.macie2Member.Macie2Member",
+		"@cdktf/provider-aws.macie2Member.Macie2Member",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewHealthcareHl7V2StoreNotificationConfigsList(terraformResource cdktf.IInt
 	j := jsiiProxy_HealthcareHl7V2StoreNotificationConfigsList{}
 
 	_jsii_.Create(
-		"google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsList",
+		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewHealthcareHl7V2StoreNotificationConfigsList_Override(h HealthcareHl7V2St
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsList",
+		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		h,
 	)

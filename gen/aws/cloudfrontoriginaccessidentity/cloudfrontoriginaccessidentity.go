@@ -375,7 +375,7 @@ func NewCloudfrontOriginAccessIdentity(scope constructs.Construct, id *string, c
 	j := jsiiProxy_CloudfrontOriginAccessIdentity{}
 
 	_jsii_.Create(
-		"aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentity",
+		"@cdktf/provider-aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentity",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -388,7 +388,7 @@ func NewCloudfrontOriginAccessIdentity_Override(c CloudfrontOriginAccessIdentity
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentity",
+		"@cdktf/provider-aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentity",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -510,7 +510,7 @@ func CloudfrontOriginAccessIdentity_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentity",
+		"@cdktf/provider-aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentity",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func CloudfrontOriginAccessIdentity_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentity",
+		"@cdktf/provider-aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentity",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -548,7 +548,7 @@ func CloudfrontOriginAccessIdentity_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentity",
+		"@cdktf/provider-aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentity",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func CloudfrontOriginAccessIdentity_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentity",
+		"@cdktf/provider-aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentity",
 		"tfResourceType",
 		&returns,
 	)

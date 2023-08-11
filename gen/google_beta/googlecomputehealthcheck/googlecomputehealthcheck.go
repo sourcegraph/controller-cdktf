@@ -688,7 +688,7 @@ func NewGoogleComputeHealthCheck(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_GoogleComputeHealthCheck{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheck",
+		"@cdktf/provider-google-beta.googleComputeHealthCheck.GoogleComputeHealthCheck",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -701,7 +701,7 @@ func NewGoogleComputeHealthCheck_Override(g GoogleComputeHealthCheck, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheck",
+		"@cdktf/provider-google-beta.googleComputeHealthCheck.GoogleComputeHealthCheck",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -889,7 +889,7 @@ func GoogleComputeHealthCheck_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheck",
+		"@cdktf/provider-google-beta.googleComputeHealthCheck.GoogleComputeHealthCheck",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -908,7 +908,7 @@ func GoogleComputeHealthCheck_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheck",
+		"@cdktf/provider-google-beta.googleComputeHealthCheck.GoogleComputeHealthCheck",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -927,7 +927,7 @@ func GoogleComputeHealthCheck_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheck",
+		"@cdktf/provider-google-beta.googleComputeHealthCheck.GoogleComputeHealthCheck",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -940,7 +940,7 @@ func GoogleComputeHealthCheck_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheck",
+		"@cdktf/provider-google-beta.googleComputeHealthCheck.GoogleComputeHealthCheck",
 		"tfResourceType",
 		&returns,
 	)

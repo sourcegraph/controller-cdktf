@@ -342,7 +342,7 @@ func NewCodebuildResourcePolicy(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_CodebuildResourcePolicy{}
 
 	_jsii_.Create(
-		"aws.codebuildResourcePolicy.CodebuildResourcePolicy",
+		"@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewCodebuildResourcePolicy_Override(c CodebuildResourcePolicy, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildResourcePolicy.CodebuildResourcePolicy",
+		"@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -488,7 +488,7 @@ func CodebuildResourcePolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codebuildResourcePolicy.CodebuildResourcePolicy",
+		"@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func CodebuildResourcePolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codebuildResourcePolicy.CodebuildResourcePolicy",
+		"@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func CodebuildResourcePolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codebuildResourcePolicy.CodebuildResourcePolicy",
+		"@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func CodebuildResourcePolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.codebuildResourcePolicy.CodebuildResourcePolicy",
+		"@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicy",
 		"tfResourceType",
 		&returns,
 	)

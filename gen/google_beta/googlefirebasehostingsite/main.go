@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleFirebaseHostingSite.GoogleFirebaseHostingSite",
+		"@cdktf/provider-google-beta.googleFirebaseHostingSite.GoogleFirebaseHostingSite",
 		reflect.TypeOf((*GoogleFirebaseHostingSite)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirebaseHostingSite.GoogleFirebaseHostingSiteConfig",
+		"@cdktf/provider-google-beta.googleFirebaseHostingSite.GoogleFirebaseHostingSiteConfig",
 		reflect.TypeOf((*GoogleFirebaseHostingSiteConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirebaseHostingSite.GoogleFirebaseHostingSiteTimeouts",
+		"@cdktf/provider-google-beta.googleFirebaseHostingSite.GoogleFirebaseHostingSiteTimeouts",
 		reflect.TypeOf((*GoogleFirebaseHostingSiteTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFirebaseHostingSite.GoogleFirebaseHostingSiteTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaseHostingSite.GoogleFirebaseHostingSiteTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleFirebaseHostingSiteTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -226,7 +226,7 @@ func NewGoogleComputeRegionBackendServiceIamBindingConditionOutputReference(terr
 	j := jsiiProxy_GoogleComputeRegionBackendServiceIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionBackendServiceIamBinding.GoogleComputeRegionBackendServiceIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamBinding.GoogleComputeRegionBackendServiceIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleComputeRegionBackendServiceIamBindingConditionOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionBackendServiceIamBinding.GoogleComputeRegionBackendServiceIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamBinding.GoogleComputeRegionBackendServiceIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

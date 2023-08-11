@@ -339,7 +339,7 @@ func NewDataAwsOutpostsOutpostInstanceType(scope constructs.Construct, id *strin
 	j := jsiiProxy_DataAwsOutpostsOutpostInstanceType{}
 
 	_jsii_.Create(
-		"aws.dataAwsOutpostsOutpostInstanceType.DataAwsOutpostsOutpostInstanceType",
+		"@cdktf/provider-aws.dataAwsOutpostsOutpostInstanceType.DataAwsOutpostsOutpostInstanceType",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -352,7 +352,7 @@ func NewDataAwsOutpostsOutpostInstanceType_Override(d DataAwsOutpostsOutpostInst
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOutpostsOutpostInstanceType.DataAwsOutpostsOutpostInstanceType",
+		"@cdktf/provider-aws.dataAwsOutpostsOutpostInstanceType.DataAwsOutpostsOutpostInstanceType",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -474,7 +474,7 @@ func DataAwsOutpostsOutpostInstanceType_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOutpostsOutpostInstanceType.DataAwsOutpostsOutpostInstanceType",
+		"@cdktf/provider-aws.dataAwsOutpostsOutpostInstanceType.DataAwsOutpostsOutpostInstanceType",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -493,7 +493,7 @@ func DataAwsOutpostsOutpostInstanceType_IsTerraformDataSource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOutpostsOutpostInstanceType.DataAwsOutpostsOutpostInstanceType",
+		"@cdktf/provider-aws.dataAwsOutpostsOutpostInstanceType.DataAwsOutpostsOutpostInstanceType",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataAwsOutpostsOutpostInstanceType_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOutpostsOutpostInstanceType.DataAwsOutpostsOutpostInstanceType",
+		"@cdktf/provider-aws.dataAwsOutpostsOutpostInstanceType.DataAwsOutpostsOutpostInstanceType",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -525,7 +525,7 @@ func DataAwsOutpostsOutpostInstanceType_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsOutpostsOutpostInstanceType.DataAwsOutpostsOutpostInstanceType",
+		"@cdktf/provider-aws.dataAwsOutpostsOutpostInstanceType.DataAwsOutpostsOutpostInstanceType",
 		"tfResourceType",
 		&returns,
 	)

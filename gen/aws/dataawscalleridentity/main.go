@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsCallerIdentity.DataAwsCallerIdentity",
+		"@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity",
 		reflect.TypeOf((*DataAwsCallerIdentity)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -56,7 +56,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsCallerIdentity.DataAwsCallerIdentityConfig",
+		"@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentityConfig",
 		reflect.TypeOf((*DataAwsCallerIdentityConfig)(nil)).Elem(),
 	)
 }

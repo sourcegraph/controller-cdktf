@@ -367,7 +367,7 @@ func NewAppEngineApplicationUrlDispatchRules(scope constructs.Construct, id *str
 	j := jsiiProxy_AppEngineApplicationUrlDispatchRules{}
 
 	_jsii_.Create(
-		"google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRules",
+		"@cdktf/provider-google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRules",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewAppEngineApplicationUrlDispatchRules_Override(a AppEngineApplicationUrlD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRules",
+		"@cdktf/provider-google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRules",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -502,7 +502,7 @@ func AppEngineApplicationUrlDispatchRules_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRules",
+		"@cdktf/provider-google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRules",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -521,7 +521,7 @@ func AppEngineApplicationUrlDispatchRules_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRules",
+		"@cdktf/provider-google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRules",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func AppEngineApplicationUrlDispatchRules_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRules",
+		"@cdktf/provider-google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRules",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func AppEngineApplicationUrlDispatchRules_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRules",
+		"@cdktf/provider-google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRules",
 		"tfResourceType",
 		&returns,
 	)

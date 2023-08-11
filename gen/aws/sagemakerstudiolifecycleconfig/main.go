@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sagemakerStudioLifecycleConfig.SagemakerStudioLifecycleConfig",
+		"@cdktf/provider-aws.sagemakerStudioLifecycleConfig.SagemakerStudioLifecycleConfig",
 		reflect.TypeOf((*SagemakerStudioLifecycleConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerStudioLifecycleConfig.SagemakerStudioLifecycleConfigConfig",
+		"@cdktf/provider-aws.sagemakerStudioLifecycleConfig.SagemakerStudioLifecycleConfigConfig",
 		reflect.TypeOf((*SagemakerStudioLifecycleConfigConfig)(nil)).Elem(),
 	)
 }

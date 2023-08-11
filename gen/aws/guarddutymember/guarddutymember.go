@@ -472,7 +472,7 @@ func NewGuarddutyMember(scope constructs.Construct, id *string, config *Guarddut
 	j := jsiiProxy_GuarddutyMember{}
 
 	_jsii_.Create(
-		"aws.guarddutyMember.GuarddutyMember",
+		"@cdktf/provider-aws.guarddutyMember.GuarddutyMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -485,7 +485,7 @@ func NewGuarddutyMember_Override(g GuarddutyMember, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.guarddutyMember.GuarddutyMember",
+		"@cdktf/provider-aws.guarddutyMember.GuarddutyMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -662,7 +662,7 @@ func GuarddutyMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyMember.GuarddutyMember",
+		"@cdktf/provider-aws.guarddutyMember.GuarddutyMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -681,7 +681,7 @@ func GuarddutyMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyMember.GuarddutyMember",
+		"@cdktf/provider-aws.guarddutyMember.GuarddutyMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func GuarddutyMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyMember.GuarddutyMember",
+		"@cdktf/provider-aws.guarddutyMember.GuarddutyMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -713,7 +713,7 @@ func GuarddutyMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.guarddutyMember.GuarddutyMember",
+		"@cdktf/provider-aws.guarddutyMember.GuarddutyMember",
 		"tfResourceType",
 		&returns,
 	)

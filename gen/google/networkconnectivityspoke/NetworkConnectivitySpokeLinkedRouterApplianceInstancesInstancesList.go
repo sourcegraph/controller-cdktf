@@ -116,7 +116,7 @@ func NewNetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList(terr
 	j := jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList{}
 
 	_jsii_.Create(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewNetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.grafanaLicenseAssociation.GrafanaLicenseAssociation",
+		"@cdktf/provider-aws.grafanaLicenseAssociation.GrafanaLicenseAssociation",
 		reflect.TypeOf((*GrafanaLicenseAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,15 +65,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.grafanaLicenseAssociation.GrafanaLicenseAssociationConfig",
+		"@cdktf/provider-aws.grafanaLicenseAssociation.GrafanaLicenseAssociationConfig",
 		reflect.TypeOf((*GrafanaLicenseAssociationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.grafanaLicenseAssociation.GrafanaLicenseAssociationTimeouts",
+		"@cdktf/provider-aws.grafanaLicenseAssociation.GrafanaLicenseAssociationTimeouts",
 		reflect.TypeOf((*GrafanaLicenseAssociationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.grafanaLicenseAssociation.GrafanaLicenseAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.grafanaLicenseAssociation.GrafanaLicenseAssociationTimeoutsOutputReference",
 		reflect.TypeOf((*GrafanaLicenseAssociationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

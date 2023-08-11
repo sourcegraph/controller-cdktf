@@ -609,7 +609,7 @@ func NewStoragegatewayCachedIscsiVolume(scope constructs.Construct, id *string, 
 	j := jsiiProxy_StoragegatewayCachedIscsiVolume{}
 
 	_jsii_.Create(
-		"aws.storagegatewayCachedIscsiVolume.StoragegatewayCachedIscsiVolume",
+		"@cdktf/provider-aws.storagegatewayCachedIscsiVolume.StoragegatewayCachedIscsiVolume",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -622,7 +622,7 @@ func NewStoragegatewayCachedIscsiVolume_Override(s StoragegatewayCachedIscsiVolu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.storagegatewayCachedIscsiVolume.StoragegatewayCachedIscsiVolume",
+		"@cdktf/provider-aws.storagegatewayCachedIscsiVolume.StoragegatewayCachedIscsiVolume",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -843,7 +843,7 @@ func StoragegatewayCachedIscsiVolume_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.storagegatewayCachedIscsiVolume.StoragegatewayCachedIscsiVolume",
+		"@cdktf/provider-aws.storagegatewayCachedIscsiVolume.StoragegatewayCachedIscsiVolume",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -862,7 +862,7 @@ func StoragegatewayCachedIscsiVolume_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.storagegatewayCachedIscsiVolume.StoragegatewayCachedIscsiVolume",
+		"@cdktf/provider-aws.storagegatewayCachedIscsiVolume.StoragegatewayCachedIscsiVolume",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -881,7 +881,7 @@ func StoragegatewayCachedIscsiVolume_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.storagegatewayCachedIscsiVolume.StoragegatewayCachedIscsiVolume",
+		"@cdktf/provider-aws.storagegatewayCachedIscsiVolume.StoragegatewayCachedIscsiVolume",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -894,7 +894,7 @@ func StoragegatewayCachedIscsiVolume_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.storagegatewayCachedIscsiVolume.StoragegatewayCachedIscsiVolume",
+		"@cdktf/provider-aws.storagegatewayCachedIscsiVolume.StoragegatewayCachedIscsiVolume",
 		"tfResourceType",
 		&returns,
 	)

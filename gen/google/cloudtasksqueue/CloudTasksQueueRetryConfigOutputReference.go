@@ -276,7 +276,7 @@ func NewCloudTasksQueueRetryConfigOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_CloudTasksQueueRetryConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudTasksQueue.CloudTasksQueueRetryConfigOutputReference",
+		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueRetryConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewCloudTasksQueueRetryConfigOutputReference_Override(c CloudTasksQueueRetr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudTasksQueue.CloudTasksQueueRetryConfigOutputReference",
+		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueRetryConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

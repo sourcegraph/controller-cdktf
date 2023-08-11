@@ -228,7 +228,7 @@ func NewAccessGroupExcludeSamlOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_AccessGroupExcludeSamlOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupExcludeSamlOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSamlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAccessGroupExcludeSamlOutputReference_Override(a AccessGroupExcludeSamlO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupExcludeSamlOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSamlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

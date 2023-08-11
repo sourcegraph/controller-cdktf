@@ -249,7 +249,7 @@ func NewGameliftBuildStorageLocationOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_GameliftBuildStorageLocationOutputReference{}
 
 	_jsii_.Create(
-		"aws.gameliftBuild.GameliftBuildStorageLocationOutputReference",
+		"@cdktf/provider-aws.gameliftBuild.GameliftBuildStorageLocationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -261,7 +261,7 @@ func NewGameliftBuildStorageLocationOutputReference_Override(g GameliftBuildStor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftBuild.GameliftBuildStorageLocationOutputReference",
+		"@cdktf/provider-aws.gameliftBuild.GameliftBuildStorageLocationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

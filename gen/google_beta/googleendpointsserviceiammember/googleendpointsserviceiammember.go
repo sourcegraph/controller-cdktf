@@ -400,7 +400,7 @@ func NewGoogleEndpointsServiceIamMember(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleEndpointsServiceIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMember",
+		"@cdktf/provider-google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleEndpointsServiceIamMember_Override(g GoogleEndpointsServiceIamMemb
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMember",
+		"@cdktf/provider-google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleEndpointsServiceIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMember",
+		"@cdktf/provider-google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleEndpointsServiceIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMember",
+		"@cdktf/provider-google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleEndpointsServiceIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMember",
+		"@cdktf/provider-google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleEndpointsServiceIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMember",
+		"@cdktf/provider-google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMember",
 		"tfResourceType",
 		&returns,
 	)

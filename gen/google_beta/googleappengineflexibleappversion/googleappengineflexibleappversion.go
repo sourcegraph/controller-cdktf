@@ -1023,7 +1023,7 @@ func NewGoogleAppEngineFlexibleAppVersion(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleAppEngineFlexibleAppVersion{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersion",
+		"@cdktf/provider-google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1036,7 +1036,7 @@ func NewGoogleAppEngineFlexibleAppVersion_Override(g GoogleAppEngineFlexibleAppV
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersion",
+		"@cdktf/provider-google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersion",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1334,7 +1334,7 @@ func GoogleAppEngineFlexibleAppVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersion",
+		"@cdktf/provider-google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1353,7 +1353,7 @@ func GoogleAppEngineFlexibleAppVersion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersion",
+		"@cdktf/provider-google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1372,7 +1372,7 @@ func GoogleAppEngineFlexibleAppVersion_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersion",
+		"@cdktf/provider-google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1385,7 +1385,7 @@ func GoogleAppEngineFlexibleAppVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersion",
+		"@cdktf/provider-google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersion",
 		"tfResourceType",
 		&returns,
 	)

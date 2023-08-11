@@ -104,7 +104,7 @@ func NewDataGoogleComputeBackendBucketCdnPolicyList(terraformResource cdktf.IInt
 	j := jsiiProxy_DataGoogleComputeBackendBucketCdnPolicyList{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyList",
+		"@cdktf/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeBackendBucketCdnPolicyList_Override(d DataGoogleCompute
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyList",
+		"@cdktf/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

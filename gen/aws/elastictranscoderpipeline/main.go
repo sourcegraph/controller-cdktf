@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipeline",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipeline",
 		reflect.TypeOf((*ElastictranscoderPipeline)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,15 +89,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig",
 		reflect.TypeOf((*ElastictranscoderPipelineConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfig",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfig",
 		reflect.TypeOf((*ElastictranscoderPipelineContentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigOutputReference",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigOutputReference",
 		reflect.TypeOf((*ElastictranscoderPipelineContentConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -135,11 +135,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissions",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissions",
 		reflect.TypeOf((*ElastictranscoderPipelineContentConfigPermissions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissionsList",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissionsList",
 		reflect.TypeOf((*ElastictranscoderPipelineContentConfigPermissionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -160,7 +160,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissionsOutputReference",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissionsOutputReference",
 		reflect.TypeOf((*ElastictranscoderPipelineContentConfigPermissionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
@@ -201,11 +201,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineNotifications",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineNotifications",
 		reflect.TypeOf((*ElastictranscoderPipelineNotifications)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineNotificationsOutputReference",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineNotificationsOutputReference",
 		reflect.TypeOf((*ElastictranscoderPipelineNotificationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "completed", GoGetter: "Completed"},
@@ -249,11 +249,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfig",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfig",
 		reflect.TypeOf((*ElastictranscoderPipelineThumbnailConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigOutputReference",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigOutputReference",
 		reflect.TypeOf((*ElastictranscoderPipelineThumbnailConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -291,11 +291,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissions",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissions",
 		reflect.TypeOf((*ElastictranscoderPipelineThumbnailConfigPermissions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissionsList",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissionsList",
 		reflect.TypeOf((*ElastictranscoderPipelineThumbnailConfigPermissionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -316,7 +316,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference",
 		reflect.TypeOf((*ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},

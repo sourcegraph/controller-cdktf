@@ -179,7 +179,7 @@ func NewKinesisStreamStreamModeDetailsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_KinesisStreamStreamModeDetailsOutputReference{}
 
 	_jsii_.Create(
-		"aws.kinesisStream.KinesisStreamStreamModeDetailsOutputReference",
+		"@cdktf/provider-aws.kinesisStream.KinesisStreamStreamModeDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewKinesisStreamStreamModeDetailsOutputReference_Override(k KinesisStreamSt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisStream.KinesisStreamStreamModeDetailsOutputReference",
+		"@cdktf/provider-aws.kinesisStream.KinesisStreamStreamModeDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

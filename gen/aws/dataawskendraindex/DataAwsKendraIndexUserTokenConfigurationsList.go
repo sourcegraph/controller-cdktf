@@ -104,7 +104,7 @@ func NewDataAwsKendraIndexUserTokenConfigurationsList(terraformResource cdktf.II
 	j := jsiiProxy_DataAwsKendraIndexUserTokenConfigurationsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsKendraIndex.DataAwsKendraIndexUserTokenConfigurationsList",
+		"@cdktf/provider-aws.dataAwsKendraIndex.DataAwsKendraIndexUserTokenConfigurationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsKendraIndexUserTokenConfigurationsList_Override(d DataAwsKendraIn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKendraIndex.DataAwsKendraIndexUserTokenConfigurationsList",
+		"@cdktf/provider-aws.dataAwsKendraIndex.DataAwsKendraIndexUserTokenConfigurationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

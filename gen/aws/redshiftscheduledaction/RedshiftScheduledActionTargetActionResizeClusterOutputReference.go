@@ -275,7 +275,7 @@ func NewRedshiftScheduledActionTargetActionResizeClusterOutputReference(terrafor
 	j := jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference{}
 
 	_jsii_.Create(
-		"aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeClusterOutputReference",
+		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeClusterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewRedshiftScheduledActionTargetActionResizeClusterOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeClusterOutputReference",
+		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeClusterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

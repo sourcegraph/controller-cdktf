@@ -226,7 +226,7 @@ func NewGoogleFolderIamMemberConditionOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_GoogleFolderIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleFolderIamMember.GoogleFolderIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleFolderIamMemberConditionOutputReference_Override(g GoogleFolderIam
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFolderIamMember.GoogleFolderIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.loadBalancerBackendServerPolicy.LoadBalancerBackendServerPolicy",
+		"@cdktf/provider-aws.loadBalancerBackendServerPolicy.LoadBalancerBackendServerPolicy",
 		reflect.TypeOf((*LoadBalancerBackendServerPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.loadBalancerBackendServerPolicy.LoadBalancerBackendServerPolicyConfig",
+		"@cdktf/provider-aws.loadBalancerBackendServerPolicy.LoadBalancerBackendServerPolicyConfig",
 		reflect.TypeOf((*LoadBalancerBackendServerPolicyConfig)(nil)).Elem(),
 	)
 }

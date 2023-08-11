@@ -202,7 +202,7 @@ func NewConnectHoursOfOperationConfigEndTimeOutputReference(terraformResource cd
 	j := jsiiProxy_ConnectHoursOfOperationConfigEndTimeOutputReference{}
 
 	_jsii_.Create(
-		"aws.connectHoursOfOperation.ConnectHoursOfOperationConfigEndTimeOutputReference",
+		"@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigEndTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewConnectHoursOfOperationConfigEndTimeOutputReference_Override(c ConnectHo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectHoursOfOperation.ConnectHoursOfOperationConfigEndTimeOutputReference",
+		"@cdktf/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigEndTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

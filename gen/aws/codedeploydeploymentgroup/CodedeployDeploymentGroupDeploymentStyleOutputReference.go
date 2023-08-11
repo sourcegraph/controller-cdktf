@@ -204,7 +204,7 @@ func NewCodedeployDeploymentGroupDeploymentStyleOutputReference(terraformResourc
 	j := jsiiProxy_CodedeployDeploymentGroupDeploymentStyleOutputReference{}
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupDeploymentStyleOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupDeploymentStyleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCodedeployDeploymentGroupDeploymentStyleOutputReference_Override(c Coded
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupDeploymentStyleOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupDeploymentStyleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

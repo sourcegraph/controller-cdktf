@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.guarddutyThreatintelset.GuarddutyThreatintelset",
+		"@cdktf/provider-aws.guarddutyThreatintelset.GuarddutyThreatintelset",
 		reflect.TypeOf((*GuarddutyThreatintelset)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activate", GoGetter: "Activate"},
@@ -72,7 +72,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.guarddutyThreatintelset.GuarddutyThreatintelsetConfig",
+		"@cdktf/provider-aws.guarddutyThreatintelset.GuarddutyThreatintelsetConfig",
 		reflect.TypeOf((*GuarddutyThreatintelsetConfig)(nil)).Elem(),
 	)
 }

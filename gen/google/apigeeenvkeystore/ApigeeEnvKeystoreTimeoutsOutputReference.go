@@ -204,7 +204,7 @@ func NewApigeeEnvKeystoreTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_ApigeeEnvKeystoreTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.apigeeEnvKeystore.ApigeeEnvKeystoreTimeoutsOutputReference",
+		"@cdktf/provider-google.apigeeEnvKeystore.ApigeeEnvKeystoreTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewApigeeEnvKeystoreTimeoutsOutputReference_Override(a ApigeeEnvKeystoreTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeEnvKeystore.ApigeeEnvKeystoreTimeoutsOutputReference",
+		"@cdktf/provider-google.apigeeEnvKeystore.ApigeeEnvKeystoreTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -569,7 +569,7 @@ func NewGoogleSecurityScannerScanConfig(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleSecurityScannerScanConfig{}
 
 	_jsii_.Create(
-		"google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfig",
+		"@cdktf/provider-google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -582,7 +582,7 @@ func NewGoogleSecurityScannerScanConfig_Override(g GoogleSecurityScannerScanConf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfig",
+		"@cdktf/provider-google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfig",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -781,7 +781,7 @@ func GoogleSecurityScannerScanConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfig",
+		"@cdktf/provider-google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -800,7 +800,7 @@ func GoogleSecurityScannerScanConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfig",
+		"@cdktf/provider-google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -819,7 +819,7 @@ func GoogleSecurityScannerScanConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfig",
+		"@cdktf/provider-google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -832,7 +832,7 @@ func GoogleSecurityScannerScanConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfig",
+		"@cdktf/provider-google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfig",
 		"tfResourceType",
 		&returns,
 	)

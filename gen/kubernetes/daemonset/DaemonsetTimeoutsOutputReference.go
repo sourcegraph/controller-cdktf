@@ -228,7 +228,7 @@ func NewDaemonsetTimeoutsOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_DaemonsetTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDaemonsetTimeoutsOutputReference_Override(d DaemonsetTimeoutsOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

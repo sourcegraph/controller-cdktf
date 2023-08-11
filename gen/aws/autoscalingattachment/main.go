@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.autoscalingAttachment.AutoscalingAttachment",
+		"@cdktf/provider-aws.autoscalingAttachment.AutoscalingAttachment",
 		reflect.TypeOf((*AutoscalingAttachment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.autoscalingAttachment.AutoscalingAttachmentConfig",
+		"@cdktf/provider-aws.autoscalingAttachment.AutoscalingAttachmentConfig",
 		reflect.TypeOf((*AutoscalingAttachmentConfig)(nil)).Elem(),
 	)
 }

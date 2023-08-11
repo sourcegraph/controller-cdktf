@@ -785,7 +785,7 @@ func NewTransferServer(scope constructs.Construct, id *string, config *TransferS
 	j := jsiiProxy_TransferServer{}
 
 	_jsii_.Create(
-		"aws.transferServer.TransferServer",
+		"@cdktf/provider-aws.transferServer.TransferServer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -798,7 +798,7 @@ func NewTransferServer_Override(t TransferServer, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferServer.TransferServer",
+		"@cdktf/provider-aws.transferServer.TransferServer",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -1096,7 +1096,7 @@ func TransferServer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transferServer.TransferServer",
+		"@cdktf/provider-aws.transferServer.TransferServer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1115,7 +1115,7 @@ func TransferServer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transferServer.TransferServer",
+		"@cdktf/provider-aws.transferServer.TransferServer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1134,7 +1134,7 @@ func TransferServer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transferServer.TransferServer",
+		"@cdktf/provider-aws.transferServer.TransferServer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1147,7 +1147,7 @@ func TransferServer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.transferServer.TransferServer",
+		"@cdktf/provider-aws.transferServer.TransferServer",
 		"tfResourceType",
 		&returns,
 	)

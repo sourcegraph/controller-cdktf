@@ -530,7 +530,7 @@ func NewFsxOntapStorageVirtualMachine(scope constructs.Construct, id *string, co
 	j := jsiiProxy_FsxOntapStorageVirtualMachine{}
 
 	_jsii_.Create(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachine",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachine",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -543,7 +543,7 @@ func NewFsxOntapStorageVirtualMachine_Override(f FsxOntapStorageVirtualMachine, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachine",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachine",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -720,7 +720,7 @@ func FsxOntapStorageVirtualMachine_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachine",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachine",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -739,7 +739,7 @@ func FsxOntapStorageVirtualMachine_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachine",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachine",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -758,7 +758,7 @@ func FsxOntapStorageVirtualMachine_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachine",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachine",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -771,7 +771,7 @@ func FsxOntapStorageVirtualMachine_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachine",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachine",
 		"tfResourceType",
 		&returns,
 	)

@@ -401,7 +401,7 @@ func NewNotebooksRuntimeIamPolicy(scope constructs.Construct, id *string, config
 	j := jsiiProxy_NotebooksRuntimeIamPolicy{}
 
 	_jsii_.Create(
-		"google.notebooksRuntimeIamPolicy.NotebooksRuntimeIamPolicy",
+		"@cdktf/provider-google.notebooksRuntimeIamPolicy.NotebooksRuntimeIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewNotebooksRuntimeIamPolicy_Override(n NotebooksRuntimeIamPolicy, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.notebooksRuntimeIamPolicy.NotebooksRuntimeIamPolicy",
+		"@cdktf/provider-google.notebooksRuntimeIamPolicy.NotebooksRuntimeIamPolicy",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -569,7 +569,7 @@ func NotebooksRuntimeIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.notebooksRuntimeIamPolicy.NotebooksRuntimeIamPolicy",
+		"@cdktf/provider-google.notebooksRuntimeIamPolicy.NotebooksRuntimeIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func NotebooksRuntimeIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.notebooksRuntimeIamPolicy.NotebooksRuntimeIamPolicy",
+		"@cdktf/provider-google.notebooksRuntimeIamPolicy.NotebooksRuntimeIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func NotebooksRuntimeIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.notebooksRuntimeIamPolicy.NotebooksRuntimeIamPolicy",
+		"@cdktf/provider-google.notebooksRuntimeIamPolicy.NotebooksRuntimeIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func NotebooksRuntimeIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.notebooksRuntimeIamPolicy.NotebooksRuntimeIamPolicy",
+		"@cdktf/provider-google.notebooksRuntimeIamPolicy.NotebooksRuntimeIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

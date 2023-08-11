@@ -228,7 +228,7 @@ func NewRoute53ResolverRuleTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_Route53ResolverRuleTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.route53ResolverRule.Route53ResolverRuleTimeoutsOutputReference",
+		"@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewRoute53ResolverRuleTimeoutsOutputReference_Override(r Route53ResolverRul
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53ResolverRule.Route53ResolverRuleTimeoutsOutputReference",
+		"@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccount",
+		"@cdktf/provider-aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccount",
 		reflect.TypeOf((*Inspector2DelegatedAdminAccount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -62,15 +62,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccountConfig",
+		"@cdktf/provider-aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccountConfig",
 		reflect.TypeOf((*Inspector2DelegatedAdminAccountConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccountTimeouts",
+		"@cdktf/provider-aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccountTimeouts",
 		reflect.TypeOf((*Inspector2DelegatedAdminAccountTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccountTimeoutsOutputReference",
+		"@cdktf/provider-aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccountTimeoutsOutputReference",
 		reflect.TypeOf((*Inspector2DelegatedAdminAccountTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

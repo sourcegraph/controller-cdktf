@@ -179,7 +179,7 @@ func NewComputeSecurityPolicyRecaptchaOptionsConfigOutputReference(terraformReso
 	j := jsiiProxy_ComputeSecurityPolicyRecaptchaOptionsConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRecaptchaOptionsConfigOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRecaptchaOptionsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewComputeSecurityPolicyRecaptchaOptionsConfigOutputReference_Override(c Co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRecaptchaOptionsConfigOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRecaptchaOptionsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

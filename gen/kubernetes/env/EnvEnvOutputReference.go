@@ -227,7 +227,7 @@ func NewEnvEnvOutputReference(terraformResource cdktf.IInterpolatingParent, terr
 	j := jsiiProxy_EnvEnvOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.env.EnvEnvOutputReference",
+		"@cdktf/provider-kubernetes.env.EnvEnvOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewEnvEnvOutputReference_Override(e EnvEnvOutputReference, terraformResourc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.env.EnvEnvOutputReference",
+		"@cdktf/provider-kubernetes.env.EnvEnvOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

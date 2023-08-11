@@ -116,7 +116,7 @@ func NewCodebuildProjectSecondarySourceVersionList(terraformResource cdktf.IInte
 	j := jsiiProxy_CodebuildProjectSecondarySourceVersionList{}
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectSecondarySourceVersionList",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourceVersionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCodebuildProjectSecondarySourceVersionList_Override(c CodebuildProjectSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectSecondarySourceVersionList",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourceVersionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

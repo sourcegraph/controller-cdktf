@@ -366,7 +366,7 @@ func NewRoute53VpcAssociationAuthorization(scope constructs.Construct, id *strin
 	j := jsiiProxy_Route53VpcAssociationAuthorization{}
 
 	_jsii_.Create(
-		"aws.route53VpcAssociationAuthorization.Route53VpcAssociationAuthorization",
+		"@cdktf/provider-aws.route53VpcAssociationAuthorization.Route53VpcAssociationAuthorization",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewRoute53VpcAssociationAuthorization_Override(r Route53VpcAssociationAutho
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53VpcAssociationAuthorization.Route53VpcAssociationAuthorization",
+		"@cdktf/provider-aws.route53VpcAssociationAuthorization.Route53VpcAssociationAuthorization",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -523,7 +523,7 @@ func Route53VpcAssociationAuthorization_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53VpcAssociationAuthorization.Route53VpcAssociationAuthorization",
+		"@cdktf/provider-aws.route53VpcAssociationAuthorization.Route53VpcAssociationAuthorization",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func Route53VpcAssociationAuthorization_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53VpcAssociationAuthorization.Route53VpcAssociationAuthorization",
+		"@cdktf/provider-aws.route53VpcAssociationAuthorization.Route53VpcAssociationAuthorization",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func Route53VpcAssociationAuthorization_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53VpcAssociationAuthorization.Route53VpcAssociationAuthorization",
+		"@cdktf/provider-aws.route53VpcAssociationAuthorization.Route53VpcAssociationAuthorization",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func Route53VpcAssociationAuthorization_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53VpcAssociationAuthorization.Route53VpcAssociationAuthorization",
+		"@cdktf/provider-aws.route53VpcAssociationAuthorization.Route53VpcAssociationAuthorization",
 		"tfResourceType",
 		&returns,
 	)

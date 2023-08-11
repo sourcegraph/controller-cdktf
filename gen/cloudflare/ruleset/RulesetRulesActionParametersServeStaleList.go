@@ -116,7 +116,7 @@ func NewRulesetRulesActionParametersServeStaleList(terraformResource cdktf.IInte
 	j := jsiiProxy_RulesetRulesActionParametersServeStaleList{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersServeStaleList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRulesetRulesActionParametersServeStaleList_Override(r RulesetRulesAction
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersServeStaleList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

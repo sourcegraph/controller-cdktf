@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.opsworksApplication.OpsworksApplication",
+		"@cdktf/provider-aws.opsworksApplication.OpsworksApplication",
 		reflect.TypeOf((*OpsworksApplication)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -106,11 +106,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksApplication.OpsworksApplicationAppSource",
+		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationAppSource",
 		reflect.TypeOf((*OpsworksApplicationAppSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksApplication.OpsworksApplicationAppSourceList",
+		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationAppSourceList",
 		reflect.TypeOf((*OpsworksApplicationAppSourceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -131,7 +131,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksApplication.OpsworksApplicationAppSourceOutputReference",
+		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationAppSourceOutputReference",
 		reflect.TypeOf((*OpsworksApplicationAppSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -180,15 +180,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksApplication.OpsworksApplicationConfig",
+		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationConfig",
 		reflect.TypeOf((*OpsworksApplicationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksApplication.OpsworksApplicationEnvironment",
+		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationEnvironment",
 		reflect.TypeOf((*OpsworksApplicationEnvironment)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksApplication.OpsworksApplicationEnvironmentList",
+		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationEnvironmentList",
 		reflect.TypeOf((*OpsworksApplicationEnvironmentList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -209,7 +209,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksApplication.OpsworksApplicationEnvironmentOutputReference",
+		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationEnvironmentOutputReference",
 		reflect.TypeOf((*OpsworksApplicationEnvironmentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -248,11 +248,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksApplication.OpsworksApplicationSslConfiguration",
+		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationSslConfiguration",
 		reflect.TypeOf((*OpsworksApplicationSslConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksApplication.OpsworksApplicationSslConfigurationList",
+		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationSslConfigurationList",
 		reflect.TypeOf((*OpsworksApplicationSslConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -273,7 +273,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksApplication.OpsworksApplicationSslConfigurationOutputReference",
+		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationSslConfigurationOutputReference",
 		reflect.TypeOf((*OpsworksApplicationSslConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificate", GoGetter: "Certificate"},

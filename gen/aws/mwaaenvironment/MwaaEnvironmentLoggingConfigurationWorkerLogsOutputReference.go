@@ -215,7 +215,7 @@ func NewMwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference(terraformRe
 	j := jsiiProxy_MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference{}
 
 	_jsii_.Create(
-		"aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -227,7 +227,7 @@ func NewMwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference_Override(m 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

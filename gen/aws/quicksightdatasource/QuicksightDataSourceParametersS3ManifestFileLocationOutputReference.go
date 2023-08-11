@@ -202,7 +202,7 @@ func NewQuicksightDataSourceParametersS3ManifestFileLocationOutputReference(terr
 	j := jsiiProxy_QuicksightDataSourceParametersS3ManifestFileLocationOutputReference{}
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersS3ManifestFileLocationOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3ManifestFileLocationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewQuicksightDataSourceParametersS3ManifestFileLocationOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersS3ManifestFileLocationOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3ManifestFileLocationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)

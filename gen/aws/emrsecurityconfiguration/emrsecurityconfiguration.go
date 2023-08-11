@@ -378,7 +378,7 @@ func NewEmrSecurityConfiguration(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_EmrSecurityConfiguration{}
 
 	_jsii_.Create(
-		"aws.emrSecurityConfiguration.EmrSecurityConfiguration",
+		"@cdktf/provider-aws.emrSecurityConfiguration.EmrSecurityConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -391,7 +391,7 @@ func NewEmrSecurityConfiguration_Override(e EmrSecurityConfiguration, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrSecurityConfiguration.EmrSecurityConfiguration",
+		"@cdktf/provider-aws.emrSecurityConfiguration.EmrSecurityConfiguration",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -535,7 +535,7 @@ func EmrSecurityConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrSecurityConfiguration.EmrSecurityConfiguration",
+		"@cdktf/provider-aws.emrSecurityConfiguration.EmrSecurityConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -554,7 +554,7 @@ func EmrSecurityConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrSecurityConfiguration.EmrSecurityConfiguration",
+		"@cdktf/provider-aws.emrSecurityConfiguration.EmrSecurityConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func EmrSecurityConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrSecurityConfiguration.EmrSecurityConfiguration",
+		"@cdktf/provider-aws.emrSecurityConfiguration.EmrSecurityConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -586,7 +586,7 @@ func EmrSecurityConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.emrSecurityConfiguration.EmrSecurityConfiguration",
+		"@cdktf/provider-aws.emrSecurityConfiguration.EmrSecurityConfiguration",
 		"tfResourceType",
 		&returns,
 	)

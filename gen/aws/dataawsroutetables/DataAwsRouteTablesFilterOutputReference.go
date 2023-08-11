@@ -202,7 +202,7 @@ func NewDataAwsRouteTablesFilterOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataAwsRouteTablesFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsRouteTables.DataAwsRouteTablesFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTablesFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsRouteTablesFilterOutputReference_Override(d DataAwsRouteTablesFil
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRouteTables.DataAwsRouteTablesFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTablesFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

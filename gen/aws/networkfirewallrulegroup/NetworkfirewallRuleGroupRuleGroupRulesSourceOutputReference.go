@@ -252,7 +252,7 @@ func NewNetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference(terraformRes
 	j := jsiiProxy_NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference{}
 
 	_jsii_.Create(
-		"aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference",
+		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewNetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference_Override(n N
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference",
+		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

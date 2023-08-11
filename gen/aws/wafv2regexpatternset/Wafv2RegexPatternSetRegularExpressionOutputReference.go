@@ -179,7 +179,7 @@ func NewWafv2RegexPatternSetRegularExpressionOutputReference(terraformResource c
 	j := jsiiProxy_Wafv2RegexPatternSetRegularExpressionOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpressionOutputReference",
+		"@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpressionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewWafv2RegexPatternSetRegularExpressionOutputReference_Override(w Wafv2Reg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpressionOutputReference",
+		"@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpressionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy",
+		"@cdktf/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy",
 		reflect.TypeOf((*SpannerDatabaseIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicyConfig",
+		"@cdktf/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicyConfig",
 		reflect.TypeOf((*SpannerDatabaseIamPolicyConfig)(nil)).Elem(),
 	)
 }

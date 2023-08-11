@@ -104,7 +104,7 @@ func NewDataAwsKendraIndexCapacityUnitsList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataAwsKendraIndexCapacityUnitsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsKendraIndex.DataAwsKendraIndexCapacityUnitsList",
+		"@cdktf/provider-aws.dataAwsKendraIndex.DataAwsKendraIndexCapacityUnitsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsKendraIndexCapacityUnitsList_Override(d DataAwsKendraIndexCapacit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKendraIndex.DataAwsKendraIndexCapacityUnitsList",
+		"@cdktf/provider-aws.dataAwsKendraIndex.DataAwsKendraIndexCapacityUnitsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

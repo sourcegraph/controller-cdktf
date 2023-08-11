@@ -180,7 +180,7 @@ func NewGoogleBigtableTableTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleBigtableTableTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigtableTable.GoogleBigtableTableTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleBigtableTableTimeoutsOutputReference_Override(g GoogleBigtableTabl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigtableTable.GoogleBigtableTableTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

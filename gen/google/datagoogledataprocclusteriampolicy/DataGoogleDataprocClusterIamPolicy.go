@@ -361,7 +361,7 @@ func NewDataGoogleDataprocClusterIamPolicy(scope constructs.Construct, id *strin
 	j := jsiiProxy_DataGoogleDataprocClusterIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleDataprocClusterIamPolicy.DataGoogleDataprocClusterIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataprocClusterIamPolicy.DataGoogleDataprocClusterIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -374,7 +374,7 @@ func NewDataGoogleDataprocClusterIamPolicy_Override(d DataGoogleDataprocClusterI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleDataprocClusterIamPolicy.DataGoogleDataprocClusterIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataprocClusterIamPolicy.DataGoogleDataprocClusterIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -496,7 +496,7 @@ func DataGoogleDataprocClusterIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDataprocClusterIamPolicy.DataGoogleDataprocClusterIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataprocClusterIamPolicy.DataGoogleDataprocClusterIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func DataGoogleDataprocClusterIamPolicy_IsTerraformDataSource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDataprocClusterIamPolicy.DataGoogleDataprocClusterIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataprocClusterIamPolicy.DataGoogleDataprocClusterIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataGoogleDataprocClusterIamPolicy_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDataprocClusterIamPolicy.DataGoogleDataprocClusterIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataprocClusterIamPolicy.DataGoogleDataprocClusterIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +547,7 @@ func DataGoogleDataprocClusterIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleDataprocClusterIamPolicy.DataGoogleDataprocClusterIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataprocClusterIamPolicy.DataGoogleDataprocClusterIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

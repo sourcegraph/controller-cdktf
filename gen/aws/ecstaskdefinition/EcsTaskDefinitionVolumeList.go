@@ -116,7 +116,7 @@ func NewEcsTaskDefinitionVolumeList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_EcsTaskDefinitionVolumeList{}
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeList",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEcsTaskDefinitionVolumeList_Override(e EcsTaskDefinitionVolumeList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeList",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

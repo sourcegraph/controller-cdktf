@@ -180,7 +180,7 @@ func NewTunnelConfigConfigWarpRoutingOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.tunnelConfig.TunnelConfigConfigWarpRoutingOutputReference",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigWarpRoutingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewTunnelConfigConfigWarpRoutingOutputReference_Override(t TunnelConfigConf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.tunnelConfig.TunnelConfigConfigWarpRoutingOutputReference",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigWarpRoutingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

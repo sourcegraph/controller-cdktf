@@ -1024,7 +1024,7 @@ func NewSwaApp(scope constructs.Construct, id *string, config *SwaAppConfig) Swa
 	j := jsiiProxy_SwaApp{}
 
 	_jsii_.Create(
-		"okta.swaApp.SwaApp",
+		"@cdktf/provider-okta.swaApp.SwaApp",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1037,7 +1037,7 @@ func NewSwaApp_Override(s SwaApp, scope constructs.Construct, id *string, config
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.swaApp.SwaApp",
+		"@cdktf/provider-okta.swaApp.SwaApp",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -1445,7 +1445,7 @@ func SwaApp_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.swaApp.SwaApp",
+		"@cdktf/provider-okta.swaApp.SwaApp",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1464,7 +1464,7 @@ func SwaApp_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.swaApp.SwaApp",
+		"@cdktf/provider-okta.swaApp.SwaApp",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1483,7 +1483,7 @@ func SwaApp_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.swaApp.SwaApp",
+		"@cdktf/provider-okta.swaApp.SwaApp",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1496,7 +1496,7 @@ func SwaApp_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.swaApp.SwaApp",
+		"@cdktf/provider-okta.swaApp.SwaApp",
 		"tfResourceType",
 		&returns,
 	)

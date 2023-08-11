@@ -116,7 +116,7 @@ func NewBackupSelectionConditionStringNotLikeList(terraformResource cdktf.IInter
 	j := jsiiProxy_BackupSelectionConditionStringNotLikeList{}
 
 	_jsii_.Create(
-		"aws.backupSelection.BackupSelectionConditionStringNotLikeList",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLikeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewBackupSelectionConditionStringNotLikeList_Override(b BackupSelectionCond
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupSelection.BackupSelectionConditionStringNotLikeList",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLikeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)

@@ -1024,7 +1024,7 @@ func NewAppSwa(scope constructs.Construct, id *string, config *AppSwaConfig) App
 	j := jsiiProxy_AppSwa{}
 
 	_jsii_.Create(
-		"okta.appSwa.AppSwa",
+		"@cdktf/provider-okta.appSwa.AppSwa",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1037,7 +1037,7 @@ func NewAppSwa_Override(a AppSwa, scope constructs.Construct, id *string, config
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appSwa.AppSwa",
+		"@cdktf/provider-okta.appSwa.AppSwa",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -1445,7 +1445,7 @@ func AppSwa_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appSwa.AppSwa",
+		"@cdktf/provider-okta.appSwa.AppSwa",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1464,7 +1464,7 @@ func AppSwa_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appSwa.AppSwa",
+		"@cdktf/provider-okta.appSwa.AppSwa",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1483,7 +1483,7 @@ func AppSwa_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appSwa.AppSwa",
+		"@cdktf/provider-okta.appSwa.AppSwa",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1496,7 +1496,7 @@ func AppSwa_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.appSwa.AppSwa",
+		"@cdktf/provider-okta.appSwa.AppSwa",
 		"tfResourceType",
 		&returns,
 	)

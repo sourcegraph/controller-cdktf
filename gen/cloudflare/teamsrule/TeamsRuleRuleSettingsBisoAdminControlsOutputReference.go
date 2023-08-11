@@ -276,7 +276,7 @@ func NewTeamsRuleRuleSettingsBisoAdminControlsOutputReference(terraformResource 
 	j := jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewTeamsRuleRuleSettingsBisoAdminControlsOutputReference_Override(t TeamsRu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

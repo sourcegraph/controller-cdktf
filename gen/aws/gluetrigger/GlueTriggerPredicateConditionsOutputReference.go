@@ -276,7 +276,7 @@ func NewGlueTriggerPredicateConditionsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_GlueTriggerPredicateConditionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueTrigger.GlueTriggerPredicateConditionsOutputReference",
+		"@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewGlueTriggerPredicateConditionsOutputReference_Override(g GlueTriggerPred
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueTrigger.GlueTriggerPredicateConditionsOutputReference",
+		"@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

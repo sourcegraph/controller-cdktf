@@ -427,7 +427,7 @@ func NewVpnGateway(scope constructs.Construct, id *string, config *VpnGatewayCon
 	j := jsiiProxy_VpnGateway{}
 
 	_jsii_.Create(
-		"aws.vpnGateway.VpnGateway",
+		"@cdktf/provider-aws.vpnGateway.VpnGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -440,7 +440,7 @@ func NewVpnGateway_Override(v VpnGateway, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpnGateway.VpnGateway",
+		"@cdktf/provider-aws.vpnGateway.VpnGateway",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -606,7 +606,7 @@ func VpnGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpnGateway.VpnGateway",
+		"@cdktf/provider-aws.vpnGateway.VpnGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -625,7 +625,7 @@ func VpnGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpnGateway.VpnGateway",
+		"@cdktf/provider-aws.vpnGateway.VpnGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func VpnGateway_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpnGateway.VpnGateway",
+		"@cdktf/provider-aws.vpnGateway.VpnGateway",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func VpnGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.vpnGateway.VpnGateway",
+		"@cdktf/provider-aws.vpnGateway.VpnGateway",
 		"tfResourceType",
 		&returns,
 	)

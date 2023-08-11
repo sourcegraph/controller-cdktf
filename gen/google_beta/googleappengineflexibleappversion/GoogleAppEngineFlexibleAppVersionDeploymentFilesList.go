@@ -116,7 +116,7 @@ func NewGoogleAppEngineFlexibleAppVersionDeploymentFilesList(terraformResource c
 	j := jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentFilesList{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionDeploymentFilesList",
+		"@cdktf/provider-google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionDeploymentFilesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleAppEngineFlexibleAppVersionDeploymentFilesList_Override(g GoogleAp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionDeploymentFilesList",
+		"@cdktf/provider-google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionDeploymentFilesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -228,7 +228,7 @@ func NewSccMuteConfigTimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_SccMuteConfigTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.sccMuteConfig.SccMuteConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.sccMuteConfig.SccMuteConfigTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSccMuteConfigTimeoutsOutputReference_Override(s SccMuteConfigTimeoutsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sccMuteConfig.SccMuteConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.sccMuteConfig.SccMuteConfigTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

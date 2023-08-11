@@ -906,7 +906,7 @@ func NewOpsworksMemcachedLayer(scope constructs.Construct, id *string, config *O
 	j := jsiiProxy_OpsworksMemcachedLayer{}
 
 	_jsii_.Create(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -919,7 +919,7 @@ func NewOpsworksMemcachedLayer_Override(o OpsworksMemcachedLayer, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -1272,7 +1272,7 @@ func OpsworksMemcachedLayer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1291,7 +1291,7 @@ func OpsworksMemcachedLayer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1310,7 +1310,7 @@ func OpsworksMemcachedLayer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1323,7 +1323,7 @@ func OpsworksMemcachedLayer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewAlbListenerDefaultActionList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_AlbListenerDefaultActionList{}
 
 	_jsii_.Create(
-		"aws.albListener.AlbListenerDefaultActionList",
+		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAlbListenerDefaultActionList_Override(a AlbListenerDefaultActionList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albListener.AlbListenerDefaultActionList",
+		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

@@ -435,7 +435,7 @@ func NewMemorydbUser(scope constructs.Construct, id *string, config *MemorydbUse
 	j := jsiiProxy_MemorydbUser{}
 
 	_jsii_.Create(
-		"aws.memorydbUser.MemorydbUser",
+		"@cdktf/provider-aws.memorydbUser.MemorydbUser",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -448,7 +448,7 @@ func NewMemorydbUser_Override(m MemorydbUser, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.memorydbUser.MemorydbUser",
+		"@cdktf/provider-aws.memorydbUser.MemorydbUser",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -603,7 +603,7 @@ func MemorydbUser_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.memorydbUser.MemorydbUser",
+		"@cdktf/provider-aws.memorydbUser.MemorydbUser",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func MemorydbUser_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.memorydbUser.MemorydbUser",
+		"@cdktf/provider-aws.memorydbUser.MemorydbUser",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -641,7 +641,7 @@ func MemorydbUser_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.memorydbUser.MemorydbUser",
+		"@cdktf/provider-aws.memorydbUser.MemorydbUser",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func MemorydbUser_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.memorydbUser.MemorydbUser",
+		"@cdktf/provider-aws.memorydbUser.MemorydbUser",
 		"tfResourceType",
 		&returns,
 	)

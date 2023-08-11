@@ -325,7 +325,7 @@ func NewDataOktaRoleSubscription(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataOktaRoleSubscription{}
 
 	_jsii_.Create(
-		"okta.dataOktaRoleSubscription.DataOktaRoleSubscription",
+		"@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscription",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -338,7 +338,7 @@ func NewDataOktaRoleSubscription_Override(d DataOktaRoleSubscription, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaRoleSubscription.DataOktaRoleSubscription",
+		"@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscription",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -449,7 +449,7 @@ func DataOktaRoleSubscription_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaRoleSubscription.DataOktaRoleSubscription",
+		"@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscription",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -468,7 +468,7 @@ func DataOktaRoleSubscription_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaRoleSubscription.DataOktaRoleSubscription",
+		"@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscription",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -487,7 +487,7 @@ func DataOktaRoleSubscription_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaRoleSubscription.DataOktaRoleSubscription",
+		"@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscription",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -500,7 +500,7 @@ func DataOktaRoleSubscription_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.dataOktaRoleSubscription.DataOktaRoleSubscription",
+		"@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscription",
 		"tfResourceType",
 		&returns,
 	)

@@ -458,7 +458,7 @@ func NewGoogleOrganizationIamCustomRole(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleOrganizationIamCustomRole{}
 
 	_jsii_.Create(
-		"google-beta.googleOrganizationIamCustomRole.GoogleOrganizationIamCustomRole",
+		"@cdktf/provider-google-beta.googleOrganizationIamCustomRole.GoogleOrganizationIamCustomRole",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -471,7 +471,7 @@ func NewGoogleOrganizationIamCustomRole_Override(g GoogleOrganizationIamCustomRo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOrganizationIamCustomRole.GoogleOrganizationIamCustomRole",
+		"@cdktf/provider-google-beta.googleOrganizationIamCustomRole.GoogleOrganizationIamCustomRole",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -648,7 +648,7 @@ func GoogleOrganizationIamCustomRole_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrganizationIamCustomRole.GoogleOrganizationIamCustomRole",
+		"@cdktf/provider-google-beta.googleOrganizationIamCustomRole.GoogleOrganizationIamCustomRole",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func GoogleOrganizationIamCustomRole_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrganizationIamCustomRole.GoogleOrganizationIamCustomRole",
+		"@cdktf/provider-google-beta.googleOrganizationIamCustomRole.GoogleOrganizationIamCustomRole",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -686,7 +686,7 @@ func GoogleOrganizationIamCustomRole_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrganizationIamCustomRole.GoogleOrganizationIamCustomRole",
+		"@cdktf/provider-google-beta.googleOrganizationIamCustomRole.GoogleOrganizationIamCustomRole",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -699,7 +699,7 @@ func GoogleOrganizationIamCustomRole_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleOrganizationIamCustomRole.GoogleOrganizationIamCustomRole",
+		"@cdktf/provider-google-beta.googleOrganizationIamCustomRole.GoogleOrganizationIamCustomRole",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.daxParameterGroup.DaxParameterGroup",
+		"@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup",
 		reflect.TypeOf((*DaxParameterGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,15 +64,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.daxParameterGroup.DaxParameterGroupConfig",
+		"@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupConfig",
 		reflect.TypeOf((*DaxParameterGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.daxParameterGroup.DaxParameterGroupParameters",
+		"@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParameters",
 		reflect.TypeOf((*DaxParameterGroupParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.daxParameterGroup.DaxParameterGroupParametersList",
+		"@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParametersList",
 		reflect.TypeOf((*DaxParameterGroupParametersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -93,7 +93,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.daxParameterGroup.DaxParameterGroupParametersOutputReference",
+		"@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParametersOutputReference",
 		reflect.TypeOf((*DaxParameterGroupParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

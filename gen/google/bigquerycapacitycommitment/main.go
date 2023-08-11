@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.bigqueryCapacityCommitment.BigqueryCapacityCommitment",
+		"@cdktf/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitment",
 		reflect.TypeOf((*BigqueryCapacityCommitment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,15 +85,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentConfig",
+		"@cdktf/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentConfig",
 		reflect.TypeOf((*BigqueryCapacityCommitmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentTimeouts",
+		"@cdktf/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentTimeouts",
 		reflect.TypeOf((*BigqueryCapacityCommitmentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentTimeoutsOutputReference",
 		reflect.TypeOf((*BigqueryCapacityCommitmentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

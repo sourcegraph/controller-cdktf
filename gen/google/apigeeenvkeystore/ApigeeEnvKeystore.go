@@ -378,7 +378,7 @@ func NewApigeeEnvKeystore(scope constructs.Construct, id *string, config *Apigee
 	j := jsiiProxy_ApigeeEnvKeystore{}
 
 	_jsii_.Create(
-		"google.apigeeEnvKeystore.ApigeeEnvKeystore",
+		"@cdktf/provider-google.apigeeEnvKeystore.ApigeeEnvKeystore",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -391,7 +391,7 @@ func NewApigeeEnvKeystore_Override(a ApigeeEnvKeystore, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeEnvKeystore.ApigeeEnvKeystore",
+		"@cdktf/provider-google.apigeeEnvKeystore.ApigeeEnvKeystore",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -524,7 +524,7 @@ func ApigeeEnvKeystore_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeEnvKeystore.ApigeeEnvKeystore",
+		"@cdktf/provider-google.apigeeEnvKeystore.ApigeeEnvKeystore",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func ApigeeEnvKeystore_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeEnvKeystore.ApigeeEnvKeystore",
+		"@cdktf/provider-google.apigeeEnvKeystore.ApigeeEnvKeystore",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func ApigeeEnvKeystore_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeEnvKeystore.ApigeeEnvKeystore",
+		"@cdktf/provider-google.apigeeEnvKeystore.ApigeeEnvKeystore",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func ApigeeEnvKeystore_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.apigeeEnvKeystore.ApigeeEnvKeystore",
+		"@cdktf/provider-google.apigeeEnvKeystore.ApigeeEnvKeystore",
 		"tfResourceType",
 		&returns,
 	)

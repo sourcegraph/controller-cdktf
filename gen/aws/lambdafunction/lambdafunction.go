@@ -1185,7 +1185,7 @@ func NewLambdaFunction(scope constructs.Construct, id *string, config *LambdaFun
 	j := jsiiProxy_LambdaFunction{}
 
 	_jsii_.Create(
-		"aws.lambdaFunction.LambdaFunction",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunction",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1198,7 +1198,7 @@ func NewLambdaFunction_Override(l LambdaFunction, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaFunction.LambdaFunction",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunction",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -1573,7 +1573,7 @@ func LambdaFunction_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaFunction.LambdaFunction",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunction",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1592,7 +1592,7 @@ func LambdaFunction_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaFunction.LambdaFunction",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunction",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1611,7 +1611,7 @@ func LambdaFunction_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaFunction.LambdaFunction",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunction",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1624,7 +1624,7 @@ func LambdaFunction_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lambdaFunction.LambdaFunction",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunction",
 		"tfResourceType",
 		&returns,
 	)

@@ -443,7 +443,7 @@ func NewSecurityhubStandardsControl(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_SecurityhubStandardsControl{}
 
 	_jsii_.Create(
-		"aws.securityhubStandardsControl.SecurityhubStandardsControl",
+		"@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControl",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -456,7 +456,7 @@ func NewSecurityhubStandardsControl_Override(s SecurityhubStandardsControl, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubStandardsControl.SecurityhubStandardsControl",
+		"@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControl",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -600,7 +600,7 @@ func SecurityhubStandardsControl_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubStandardsControl.SecurityhubStandardsControl",
+		"@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControl",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func SecurityhubStandardsControl_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubStandardsControl.SecurityhubStandardsControl",
+		"@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControl",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -638,7 +638,7 @@ func SecurityhubStandardsControl_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubStandardsControl.SecurityhubStandardsControl",
+		"@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControl",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -651,7 +651,7 @@ func SecurityhubStandardsControl_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.securityhubStandardsControl.SecurityhubStandardsControl",
+		"@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControl",
 		"tfResourceType",
 		&returns,
 	)

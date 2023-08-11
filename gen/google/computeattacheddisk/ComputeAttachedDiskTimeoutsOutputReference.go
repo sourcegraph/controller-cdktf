@@ -204,7 +204,7 @@ func NewComputeAttachedDiskTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_ComputeAttachedDiskTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeAttachedDisk.ComputeAttachedDiskTimeoutsOutputReference",
+		"@cdktf/provider-google.computeAttachedDisk.ComputeAttachedDiskTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeAttachedDiskTimeoutsOutputReference_Override(c ComputeAttachedDis
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeAttachedDisk.ComputeAttachedDiskTimeoutsOutputReference",
+		"@cdktf/provider-google.computeAttachedDisk.ComputeAttachedDiskTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

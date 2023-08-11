@@ -367,7 +367,7 @@ func NewOpensearchDomainSamlOptions(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_OpensearchDomainSamlOptions{}
 
 	_jsii_.Create(
-		"aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptions",
+		"@cdktf/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptions",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewOpensearchDomainSamlOptions_Override(o OpensearchDomainSamlOptions, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptions",
+		"@cdktf/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptions",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -502,7 +502,7 @@ func OpensearchDomainSamlOptions_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptions",
+		"@cdktf/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptions",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -521,7 +521,7 @@ func OpensearchDomainSamlOptions_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptions",
+		"@cdktf/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptions",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func OpensearchDomainSamlOptions_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptions",
+		"@cdktf/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptions",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func OpensearchDomainSamlOptions_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptions",
+		"@cdktf/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptions",
 		"tfResourceType",
 		&returns,
 	)

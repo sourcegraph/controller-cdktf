@@ -369,7 +369,7 @@ func NewLexIntentSlotOutputReference(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_LexIntentSlotOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentSlotOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentSlotOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -381,7 +381,7 @@ func NewLexIntentSlotOutputReference_Override(l LexIntentSlotOutputReference, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentSlotOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentSlotOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

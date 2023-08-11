@@ -342,7 +342,7 @@ func NewRamResourceAssociation(scope constructs.Construct, id *string, config *R
 	j := jsiiProxy_RamResourceAssociation{}
 
 	_jsii_.Create(
-		"aws.ramResourceAssociation.RamResourceAssociation",
+		"@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewRamResourceAssociation_Override(r RamResourceAssociation, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ramResourceAssociation.RamResourceAssociation",
+		"@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -488,7 +488,7 @@ func RamResourceAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ramResourceAssociation.RamResourceAssociation",
+		"@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func RamResourceAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ramResourceAssociation.RamResourceAssociation",
+		"@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func RamResourceAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ramResourceAssociation.RamResourceAssociation",
+		"@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func RamResourceAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ramResourceAssociation.RamResourceAssociation",
+		"@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation",
 		"tfResourceType",
 		&returns,
 	)

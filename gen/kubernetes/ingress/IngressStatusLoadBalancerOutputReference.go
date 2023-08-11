@@ -167,7 +167,7 @@ func NewIngressStatusLoadBalancerOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_IngressStatusLoadBalancerOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.ingress.IngressStatusLoadBalancerOutputReference",
+		"@cdktf/provider-kubernetes.ingress.IngressStatusLoadBalancerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewIngressStatusLoadBalancerOutputReference_Override(i IngressStatusLoadBal
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.ingress.IngressStatusLoadBalancerOutputReference",
+		"@cdktf/provider-kubernetes.ingress.IngressStatusLoadBalancerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

@@ -425,7 +425,7 @@ func NewHealthcareDicomStore(scope constructs.Construct, id *string, config *Hea
 	j := jsiiProxy_HealthcareDicomStore{}
 
 	_jsii_.Create(
-		"google.healthcareDicomStore.HealthcareDicomStore",
+		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStore",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -438,7 +438,7 @@ func NewHealthcareDicomStore_Override(h HealthcareDicomStore, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareDicomStore.HealthcareDicomStore",
+		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStore",
 		[]interface{}{scope, id, config},
 		h,
 	)
@@ -582,7 +582,7 @@ func HealthcareDicomStore_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareDicomStore.HealthcareDicomStore",
+		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStore",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func HealthcareDicomStore_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareDicomStore.HealthcareDicomStore",
+		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStore",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func HealthcareDicomStore_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareDicomStore.HealthcareDicomStore",
+		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStore",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func HealthcareDicomStore_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.healthcareDicomStore.HealthcareDicomStore",
+		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStore",
 		"tfResourceType",
 		&returns,
 	)

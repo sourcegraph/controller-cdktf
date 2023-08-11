@@ -462,7 +462,7 @@ func NewComputeAttachedDisk(scope constructs.Construct, id *string, config *Comp
 	j := jsiiProxy_ComputeAttachedDisk{}
 
 	_jsii_.Create(
-		"google.computeAttachedDisk.ComputeAttachedDisk",
+		"@cdktf/provider-google.computeAttachedDisk.ComputeAttachedDisk",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -475,7 +475,7 @@ func NewComputeAttachedDisk_Override(c ComputeAttachedDisk, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeAttachedDisk.ComputeAttachedDisk",
+		"@cdktf/provider-google.computeAttachedDisk.ComputeAttachedDisk",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -652,7 +652,7 @@ func ComputeAttachedDisk_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeAttachedDisk.ComputeAttachedDisk",
+		"@cdktf/provider-google.computeAttachedDisk.ComputeAttachedDisk",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -671,7 +671,7 @@ func ComputeAttachedDisk_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeAttachedDisk.ComputeAttachedDisk",
+		"@cdktf/provider-google.computeAttachedDisk.ComputeAttachedDisk",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -690,7 +690,7 @@ func ComputeAttachedDisk_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeAttachedDisk.ComputeAttachedDisk",
+		"@cdktf/provider-google.computeAttachedDisk.ComputeAttachedDisk",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -703,7 +703,7 @@ func ComputeAttachedDisk_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeAttachedDisk.ComputeAttachedDisk",
+		"@cdktf/provider-google.computeAttachedDisk.ComputeAttachedDisk",
 		"tfResourceType",
 		&returns,
 	)

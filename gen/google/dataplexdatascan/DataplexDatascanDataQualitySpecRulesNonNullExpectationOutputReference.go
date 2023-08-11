@@ -156,7 +156,7 @@ func NewDataplexDatascanDataQualitySpecRulesNonNullExpectationOutputReference(te
 	j := jsiiProxy_DataplexDatascanDataQualitySpecRulesNonNullExpectationOutputReference{}
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesNonNullExpectationOutputReference",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesNonNullExpectationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewDataplexDatascanDataQualitySpecRulesNonNullExpectationOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesNonNullExpectationOutputReference",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesNonNullExpectationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

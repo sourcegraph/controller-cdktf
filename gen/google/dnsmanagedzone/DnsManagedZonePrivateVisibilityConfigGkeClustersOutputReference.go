@@ -179,7 +179,7 @@ func NewDnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference(terrafor
 	j := jsiiProxy_DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference{}
 
 	_jsii_.Create(
-		"google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference",
+		"@cdktf/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference",
+		"@cdktf/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

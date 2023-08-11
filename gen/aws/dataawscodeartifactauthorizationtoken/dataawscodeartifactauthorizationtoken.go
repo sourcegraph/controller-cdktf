@@ -361,7 +361,7 @@ func NewDataAwsCodeartifactAuthorizationToken(scope constructs.Construct, id *st
 	j := jsiiProxy_DataAwsCodeartifactAuthorizationToken{}
 
 	_jsii_.Create(
-		"aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken",
+		"@cdktf/provider-aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -374,7 +374,7 @@ func NewDataAwsCodeartifactAuthorizationToken_Override(d DataAwsCodeartifactAuth
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken",
+		"@cdktf/provider-aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -496,7 +496,7 @@ func DataAwsCodeartifactAuthorizationToken_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken",
+		"@cdktf/provider-aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func DataAwsCodeartifactAuthorizationToken_IsTerraformDataSource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken",
+		"@cdktf/provider-aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataAwsCodeartifactAuthorizationToken_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken",
+		"@cdktf/provider-aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +547,7 @@ func DataAwsCodeartifactAuthorizationToken_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken",
+		"@cdktf/provider-aws.dataAwsCodeartifactAuthorizationToken.DataAwsCodeartifactAuthorizationToken",
 		"tfResourceType",
 		&returns,
 	)

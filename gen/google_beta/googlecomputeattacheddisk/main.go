@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDisk",
+		"@cdktf/provider-google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDisk",
 		reflect.TypeOf((*GoogleComputeAttachedDisk)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,15 +75,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDiskConfig",
+		"@cdktf/provider-google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDiskConfig",
 		reflect.TypeOf((*GoogleComputeAttachedDiskConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDiskTimeouts",
+		"@cdktf/provider-google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDiskTimeouts",
 		reflect.TypeOf((*GoogleComputeAttachedDiskTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDiskTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDiskTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleComputeAttachedDiskTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

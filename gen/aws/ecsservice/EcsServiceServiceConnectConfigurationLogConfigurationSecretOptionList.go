@@ -116,7 +116,7 @@ func NewEcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList(te
 	j := jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList{}
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList",
+		"@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList",
+		"@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

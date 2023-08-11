@@ -366,7 +366,7 @@ func NewVpcEndpointSecurityGroupAssociation(scope constructs.Construct, id *stri
 	j := jsiiProxy_VpcEndpointSecurityGroupAssociation{}
 
 	_jsii_.Create(
-		"aws.vpcEndpointSecurityGroupAssociation.VpcEndpointSecurityGroupAssociation",
+		"@cdktf/provider-aws.vpcEndpointSecurityGroupAssociation.VpcEndpointSecurityGroupAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewVpcEndpointSecurityGroupAssociation_Override(v VpcEndpointSecurityGroupA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcEndpointSecurityGroupAssociation.VpcEndpointSecurityGroupAssociation",
+		"@cdktf/provider-aws.vpcEndpointSecurityGroupAssociation.VpcEndpointSecurityGroupAssociation",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -523,7 +523,7 @@ func VpcEndpointSecurityGroupAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcEndpointSecurityGroupAssociation.VpcEndpointSecurityGroupAssociation",
+		"@cdktf/provider-aws.vpcEndpointSecurityGroupAssociation.VpcEndpointSecurityGroupAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func VpcEndpointSecurityGroupAssociation_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcEndpointSecurityGroupAssociation.VpcEndpointSecurityGroupAssociation",
+		"@cdktf/provider-aws.vpcEndpointSecurityGroupAssociation.VpcEndpointSecurityGroupAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func VpcEndpointSecurityGroupAssociation_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcEndpointSecurityGroupAssociation.VpcEndpointSecurityGroupAssociation",
+		"@cdktf/provider-aws.vpcEndpointSecurityGroupAssociation.VpcEndpointSecurityGroupAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func VpcEndpointSecurityGroupAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.vpcEndpointSecurityGroupAssociation.VpcEndpointSecurityGroupAssociation",
+		"@cdktf/provider-aws.vpcEndpointSecurityGroupAssociation.VpcEndpointSecurityGroupAssociation",
 		"tfResourceType",
 		&returns,
 	)

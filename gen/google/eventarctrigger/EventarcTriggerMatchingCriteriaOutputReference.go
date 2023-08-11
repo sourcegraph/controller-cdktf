@@ -226,7 +226,7 @@ func NewEventarcTriggerMatchingCriteriaOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference{}
 
 	_jsii_.Create(
-		"google.eventarcTrigger.EventarcTriggerMatchingCriteriaOutputReference",
+		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerMatchingCriteriaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewEventarcTriggerMatchingCriteriaOutputReference_Override(e EventarcTrigge
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.eventarcTrigger.EventarcTriggerMatchingCriteriaOutputReference",
+		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerMatchingCriteriaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

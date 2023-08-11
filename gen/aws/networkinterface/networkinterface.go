@@ -854,7 +854,7 @@ func NewNetworkInterface(scope constructs.Construct, id *string, config *Network
 	j := jsiiProxy_NetworkInterface{}
 
 	_jsii_.Create(
-		"aws.networkInterface.NetworkInterface",
+		"@cdktf/provider-aws.networkInterface.NetworkInterface",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -867,7 +867,7 @@ func NewNetworkInterface_Override(n NetworkInterface, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkInterface.NetworkInterface",
+		"@cdktf/provider-aws.networkInterface.NetworkInterface",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -1198,7 +1198,7 @@ func NetworkInterface_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkInterface.NetworkInterface",
+		"@cdktf/provider-aws.networkInterface.NetworkInterface",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1217,7 +1217,7 @@ func NetworkInterface_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkInterface.NetworkInterface",
+		"@cdktf/provider-aws.networkInterface.NetworkInterface",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1236,7 +1236,7 @@ func NetworkInterface_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkInterface.NetworkInterface",
+		"@cdktf/provider-aws.networkInterface.NetworkInterface",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1249,7 +1249,7 @@ func NetworkInterface_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkInterface.NetworkInterface",
+		"@cdktf/provider-aws.networkInterface.NetworkInterface",
 		"tfResourceType",
 		&returns,
 	)

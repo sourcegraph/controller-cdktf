@@ -179,7 +179,7 @@ func NewContainerAzureClusterAuthorizationAdminUsersOutputReference(terraformRes
 	j := jsiiProxy_ContainerAzureClusterAuthorizationAdminUsersOutputReference{}
 
 	_jsii_.Create(
-		"google.containerAzureCluster.ContainerAzureClusterAuthorizationAdminUsersOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterAuthorizationAdminUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewContainerAzureClusterAuthorizationAdminUsersOutputReference_Override(c C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAzureCluster.ContainerAzureClusterAuthorizationAdminUsersOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterAuthorizationAdminUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

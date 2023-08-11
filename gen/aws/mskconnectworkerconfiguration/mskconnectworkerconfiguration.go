@@ -388,7 +388,7 @@ func NewMskconnectWorkerConfiguration(scope constructs.Construct, id *string, co
 	j := jsiiProxy_MskconnectWorkerConfiguration{}
 
 	_jsii_.Create(
-		"aws.mskconnectWorkerConfiguration.MskconnectWorkerConfiguration",
+		"@cdktf/provider-aws.mskconnectWorkerConfiguration.MskconnectWorkerConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -401,7 +401,7 @@ func NewMskconnectWorkerConfiguration_Override(m MskconnectWorkerConfiguration, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskconnectWorkerConfiguration.MskconnectWorkerConfiguration",
+		"@cdktf/provider-aws.mskconnectWorkerConfiguration.MskconnectWorkerConfiguration",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -545,7 +545,7 @@ func MskconnectWorkerConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mskconnectWorkerConfiguration.MskconnectWorkerConfiguration",
+		"@cdktf/provider-aws.mskconnectWorkerConfiguration.MskconnectWorkerConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func MskconnectWorkerConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mskconnectWorkerConfiguration.MskconnectWorkerConfiguration",
+		"@cdktf/provider-aws.mskconnectWorkerConfiguration.MskconnectWorkerConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func MskconnectWorkerConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mskconnectWorkerConfiguration.MskconnectWorkerConfiguration",
+		"@cdktf/provider-aws.mskconnectWorkerConfiguration.MskconnectWorkerConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func MskconnectWorkerConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.mskconnectWorkerConfiguration.MskconnectWorkerConfiguration",
+		"@cdktf/provider-aws.mskconnectWorkerConfiguration.MskconnectWorkerConfiguration",
 		"tfResourceType",
 		&returns,
 	)

@@ -167,7 +167,7 @@ func NewS3OutpostsEndpointNetworkInterfacesOutputReference(terraformResource cdk
 	j := jsiiProxy_S3OutpostsEndpointNetworkInterfacesOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3OutpostsEndpoint.S3OutpostsEndpointNetworkInterfacesOutputReference",
+		"@cdktf/provider-aws.s3OutpostsEndpoint.S3OutpostsEndpointNetworkInterfacesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewS3OutpostsEndpointNetworkInterfacesOutputReference_Override(s S3Outposts
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3OutpostsEndpoint.S3OutpostsEndpointNetworkInterfacesOutputReference",
+		"@cdktf/provider-aws.s3OutpostsEndpoint.S3OutpostsEndpointNetworkInterfacesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

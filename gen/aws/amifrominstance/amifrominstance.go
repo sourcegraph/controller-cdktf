@@ -776,7 +776,7 @@ func NewAmiFromInstance(scope constructs.Construct, id *string, config *AmiFromI
 	j := jsiiProxy_AmiFromInstance{}
 
 	_jsii_.Create(
-		"aws.amiFromInstance.AmiFromInstance",
+		"@cdktf/provider-aws.amiFromInstance.AmiFromInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -789,7 +789,7 @@ func NewAmiFromInstance_Override(a AmiFromInstance, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.amiFromInstance.AmiFromInstance",
+		"@cdktf/provider-aws.amiFromInstance.AmiFromInstance",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -977,7 +977,7 @@ func AmiFromInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amiFromInstance.AmiFromInstance",
+		"@cdktf/provider-aws.amiFromInstance.AmiFromInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -996,7 +996,7 @@ func AmiFromInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amiFromInstance.AmiFromInstance",
+		"@cdktf/provider-aws.amiFromInstance.AmiFromInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1015,7 +1015,7 @@ func AmiFromInstance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amiFromInstance.AmiFromInstance",
+		"@cdktf/provider-aws.amiFromInstance.AmiFromInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1028,7 +1028,7 @@ func AmiFromInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.amiFromInstance.AmiFromInstance",
+		"@cdktf/provider-aws.amiFromInstance.AmiFromInstance",
 		"tfResourceType",
 		&returns,
 	)

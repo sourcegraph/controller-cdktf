@@ -228,7 +228,7 @@ func NewComputePacketMirroringTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_ComputePacketMirroringTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computePacketMirroring.ComputePacketMirroringTimeoutsOutputReference",
+		"@cdktf/provider-google.computePacketMirroring.ComputePacketMirroringTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputePacketMirroringTimeoutsOutputReference_Override(c ComputePacketMi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computePacketMirroring.ComputePacketMirroringTimeoutsOutputReference",
+		"@cdktf/provider-google.computePacketMirroring.ComputePacketMirroringTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -104,7 +104,7 @@ func NewDataKubernetesIngressSpecRuleHttpList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataKubernetesIngressSpecRuleHttpList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesIngress.DataKubernetesIngressSpecRuleHttpList",
+		"@cdktf/provider-kubernetes.dataKubernetesIngress.DataKubernetesIngressSpecRuleHttpList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesIngressSpecRuleHttpList_Override(d DataKubernetesIngressSp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesIngress.DataKubernetesIngressSpecRuleHttpList",
+		"@cdktf/provider-kubernetes.dataKubernetesIngress.DataKubernetesIngressSpecRuleHttpList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -116,7 +116,7 @@ func NewCodestarnotificationsNotificationRuleTargetList(terraformResource cdktf.
 	j := jsiiProxy_CodestarnotificationsNotificationRuleTargetList{}
 
 	_jsii_.Create(
-		"aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRuleTargetList",
+		"@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRuleTargetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCodestarnotificationsNotificationRuleTargetList_Override(c Codestarnotif
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRuleTargetList",
+		"@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRuleTargetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

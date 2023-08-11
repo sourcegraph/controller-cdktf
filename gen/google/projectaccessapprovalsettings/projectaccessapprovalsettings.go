@@ -482,7 +482,7 @@ func NewProjectAccessApprovalSettings(scope constructs.Construct, id *string, co
 	j := jsiiProxy_ProjectAccessApprovalSettings{}
 
 	_jsii_.Create(
-		"google.projectAccessApprovalSettings.ProjectAccessApprovalSettings",
+		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -495,7 +495,7 @@ func NewProjectAccessApprovalSettings_Override(p ProjectAccessApprovalSettings, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.projectAccessApprovalSettings.ProjectAccessApprovalSettings",
+		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -650,7 +650,7 @@ func ProjectAccessApprovalSettings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectAccessApprovalSettings.ProjectAccessApprovalSettings",
+		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func ProjectAccessApprovalSettings_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectAccessApprovalSettings.ProjectAccessApprovalSettings",
+		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func ProjectAccessApprovalSettings_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectAccessApprovalSettings.ProjectAccessApprovalSettings",
+		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func ProjectAccessApprovalSettings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.projectAccessApprovalSettings.ProjectAccessApprovalSettings",
+		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings",
 		"tfResourceType",
 		&returns,
 	)

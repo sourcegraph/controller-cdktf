@@ -202,7 +202,7 @@ func NewCodebuildProjectSecondarySourceVersionOutputReference(terraformResource 
 	j := jsiiProxy_CodebuildProjectSecondarySourceVersionOutputReference{}
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectSecondarySourceVersionOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourceVersionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewCodebuildProjectSecondarySourceVersionOutputReference_Override(c Codebui
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectSecondarySourceVersionOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourceVersionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

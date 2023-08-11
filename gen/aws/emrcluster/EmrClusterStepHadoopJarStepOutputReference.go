@@ -252,7 +252,7 @@ func NewEmrClusterStepHadoopJarStepOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_EmrClusterStepHadoopJarStepOutputReference{}
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterStepHadoopJarStepOutputReference",
+		"@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStepOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewEmrClusterStepHadoopJarStepOutputReference_Override(e EmrClusterStepHado
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterStepHadoopJarStepOutputReference",
+		"@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStepOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

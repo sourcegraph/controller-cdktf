@@ -365,7 +365,7 @@ func NewRoleBinding(scope constructs.Construct, id *string, config *RoleBindingC
 	j := jsiiProxy_RoleBinding{}
 
 	_jsii_.Create(
-		"kubernetes.roleBinding.RoleBinding",
+		"@cdktf/provider-kubernetes.roleBinding.RoleBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewRoleBinding_Override(r RoleBinding, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.roleBinding.RoleBinding",
+		"@cdktf/provider-kubernetes.roleBinding.RoleBinding",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -489,7 +489,7 @@ func RoleBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.roleBinding.RoleBinding",
+		"@cdktf/provider-kubernetes.roleBinding.RoleBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func RoleBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.roleBinding.RoleBinding",
+		"@cdktf/provider-kubernetes.roleBinding.RoleBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func RoleBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.roleBinding.RoleBinding",
+		"@cdktf/provider-kubernetes.roleBinding.RoleBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func RoleBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.roleBinding.RoleBinding",
+		"@cdktf/provider-kubernetes.roleBinding.RoleBinding",
 		"tfResourceType",
 		&returns,
 	)

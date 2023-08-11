@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.apiGatewayMethodSettings.ApiGatewayMethodSettings",
+		"@cdktf/provider-aws.apiGatewayMethodSettings.ApiGatewayMethodSettings",
 		reflect.TypeOf((*ApiGatewayMethodSettings)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,15 +64,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apiGatewayMethodSettings.ApiGatewayMethodSettingsConfig",
+		"@cdktf/provider-aws.apiGatewayMethodSettings.ApiGatewayMethodSettingsConfig",
 		reflect.TypeOf((*ApiGatewayMethodSettingsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.apiGatewayMethodSettings.ApiGatewayMethodSettingsSettings",
+		"@cdktf/provider-aws.apiGatewayMethodSettings.ApiGatewayMethodSettingsSettings",
 		reflect.TypeOf((*ApiGatewayMethodSettingsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apiGatewayMethodSettings.ApiGatewayMethodSettingsSettingsOutputReference",
+		"@cdktf/provider-aws.apiGatewayMethodSettings.ApiGatewayMethodSettingsSettingsOutputReference",
 		reflect.TypeOf((*ApiGatewayMethodSettingsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cacheDataEncrypted", GoGetter: "CacheDataEncrypted"},

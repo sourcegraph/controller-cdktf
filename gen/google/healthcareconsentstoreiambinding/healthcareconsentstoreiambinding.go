@@ -423,7 +423,7 @@ func NewHealthcareConsentStoreIamBinding(scope constructs.Construct, id *string,
 	j := jsiiProxy_HealthcareConsentStoreIamBinding{}
 
 	_jsii_.Create(
-		"google.healthcareConsentStoreIamBinding.HealthcareConsentStoreIamBinding",
+		"@cdktf/provider-google.healthcareConsentStoreIamBinding.HealthcareConsentStoreIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewHealthcareConsentStoreIamBinding_Override(h HealthcareConsentStoreIamBin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareConsentStoreIamBinding.HealthcareConsentStoreIamBinding",
+		"@cdktf/provider-google.healthcareConsentStoreIamBinding.HealthcareConsentStoreIamBinding",
 		[]interface{}{scope, id, config},
 		h,
 	)
@@ -591,7 +591,7 @@ func HealthcareConsentStoreIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareConsentStoreIamBinding.HealthcareConsentStoreIamBinding",
+		"@cdktf/provider-google.healthcareConsentStoreIamBinding.HealthcareConsentStoreIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func HealthcareConsentStoreIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareConsentStoreIamBinding.HealthcareConsentStoreIamBinding",
+		"@cdktf/provider-google.healthcareConsentStoreIamBinding.HealthcareConsentStoreIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func HealthcareConsentStoreIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareConsentStoreIamBinding.HealthcareConsentStoreIamBinding",
+		"@cdktf/provider-google.healthcareConsentStoreIamBinding.HealthcareConsentStoreIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func HealthcareConsentStoreIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.healthcareConsentStoreIamBinding.HealthcareConsentStoreIamBinding",
+		"@cdktf/provider-google.healthcareConsentStoreIamBinding.HealthcareConsentStoreIamBinding",
 		"tfResourceType",
 		&returns,
 	)

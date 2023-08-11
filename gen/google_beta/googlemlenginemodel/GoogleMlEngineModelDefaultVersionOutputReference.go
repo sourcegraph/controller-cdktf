@@ -179,7 +179,7 @@ func NewGoogleMlEngineModelDefaultVersionOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleMlEngineModelDefaultVersionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMlEngineModel.GoogleMlEngineModelDefaultVersionOutputReference",
+		"@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelDefaultVersionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleMlEngineModelDefaultVersionOutputReference_Override(g GoogleMlEngi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMlEngineModel.GoogleMlEngineModelDefaultVersionOutputReference",
+		"@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelDefaultVersionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

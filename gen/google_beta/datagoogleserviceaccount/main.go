@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleServiceAccount.DataGoogleServiceAccount",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccount.DataGoogleServiceAccount",
 		reflect.TypeOf((*DataGoogleServiceAccount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleServiceAccount.DataGoogleServiceAccountConfig",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccount.DataGoogleServiceAccountConfig",
 		reflect.TypeOf((*DataGoogleServiceAccountConfig)(nil)).Elem(),
 	)
 }

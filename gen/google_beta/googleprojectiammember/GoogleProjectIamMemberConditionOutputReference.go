@@ -226,7 +226,7 @@ func NewGoogleProjectIamMemberConditionOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GoogleProjectIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleProjectIamMember.GoogleProjectIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleProjectIamMember.GoogleProjectIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleProjectIamMemberConditionOutputReference_Override(g GoogleProjectI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleProjectIamMember.GoogleProjectIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleProjectIamMember.GoogleProjectIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

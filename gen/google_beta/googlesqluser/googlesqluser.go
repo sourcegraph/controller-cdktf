@@ -521,7 +521,7 @@ func NewGoogleSqlUser(scope constructs.Construct, id *string, config *GoogleSqlU
 	j := jsiiProxy_GoogleSqlUser{}
 
 	_jsii_.Create(
-		"google-beta.googleSqlUser.GoogleSqlUser",
+		"@cdktf/provider-google-beta.googleSqlUser.GoogleSqlUser",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -534,7 +534,7 @@ func NewGoogleSqlUser_Override(g GoogleSqlUser, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSqlUser.GoogleSqlUser",
+		"@cdktf/provider-google-beta.googleSqlUser.GoogleSqlUser",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -722,7 +722,7 @@ func GoogleSqlUser_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSqlUser.GoogleSqlUser",
+		"@cdktf/provider-google-beta.googleSqlUser.GoogleSqlUser",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -741,7 +741,7 @@ func GoogleSqlUser_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSqlUser.GoogleSqlUser",
+		"@cdktf/provider-google-beta.googleSqlUser.GoogleSqlUser",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -760,7 +760,7 @@ func GoogleSqlUser_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSqlUser.GoogleSqlUser",
+		"@cdktf/provider-google-beta.googleSqlUser.GoogleSqlUser",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -773,7 +773,7 @@ func GoogleSqlUser_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleSqlUser.GoogleSqlUser",
+		"@cdktf/provider-google-beta.googleSqlUser.GoogleSqlUser",
 		"tfResourceType",
 		&returns,
 	)

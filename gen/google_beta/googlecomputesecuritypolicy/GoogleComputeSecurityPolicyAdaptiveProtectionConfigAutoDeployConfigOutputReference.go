@@ -252,7 +252,7 @@ func NewGoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutpu
 	j := jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

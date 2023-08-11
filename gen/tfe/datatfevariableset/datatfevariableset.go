@@ -385,7 +385,7 @@ func NewDataTfeVariableSet(scope constructs.Construct, id *string, config *DataT
 	j := jsiiProxy_DataTfeVariableSet{}
 
 	_jsii_.Create(
-		"tfe.dataTfeVariableSet.DataTfeVariableSet",
+		"@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -398,7 +398,7 @@ func NewDataTfeVariableSet_Override(d DataTfeVariableSet, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfeVariableSet.DataTfeVariableSet",
+		"@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSet",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -531,7 +531,7 @@ func DataTfeVariableSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeVariableSet.DataTfeVariableSet",
+		"@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func DataTfeVariableSet_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeVariableSet.DataTfeVariableSet",
+		"@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSet",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -569,7 +569,7 @@ func DataTfeVariableSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeVariableSet.DataTfeVariableSet",
+		"@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -582,7 +582,7 @@ func DataTfeVariableSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.dataTfeVariableSet.DataTfeVariableSet",
+		"@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSet",
 		"tfResourceType",
 		&returns,
 	)

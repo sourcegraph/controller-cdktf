@@ -228,7 +228,7 @@ func NewApikeysKeyTimeoutsOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_ApikeysKeyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.apikeysKey.ApikeysKeyTimeoutsOutputReference",
+		"@cdktf/provider-google.apikeysKey.ApikeysKeyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewApikeysKeyTimeoutsOutputReference_Override(a ApikeysKeyTimeoutsOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apikeysKey.ApikeysKeyTimeoutsOutputReference",
+		"@cdktf/provider-google.apikeysKey.ApikeysKeyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

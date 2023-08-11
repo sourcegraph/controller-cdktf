@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline",
+		"@cdktf/provider-aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline",
 		reflect.TypeOf((*SsmDefaultPatchBaseline)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaselineConfig",
+		"@cdktf/provider-aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaselineConfig",
 		reflect.TypeOf((*SsmDefaultPatchBaselineConfig)(nil)).Elem(),
 	)
 }

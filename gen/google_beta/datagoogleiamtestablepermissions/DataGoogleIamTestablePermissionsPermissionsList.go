@@ -104,7 +104,7 @@ func NewDataGoogleIamTestablePermissionsPermissionsList(terraformResource cdktf.
 	j := jsiiProxy_DataGoogleIamTestablePermissionsPermissionsList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsPermissionsList",
+		"@cdktf/provider-google-beta.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsPermissionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleIamTestablePermissionsPermissionsList_Override(d DataGoogleIam
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsPermissionsList",
+		"@cdktf/provider-google-beta.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsPermissionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

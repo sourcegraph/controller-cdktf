@@ -401,7 +401,7 @@ func NewGoogleProjectDefaultServiceAccounts(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleProjectDefaultServiceAccounts{}
 
 	_jsii_.Create(
-		"google-beta.googleProjectDefaultServiceAccounts.GoogleProjectDefaultServiceAccounts",
+		"@cdktf/provider-google-beta.googleProjectDefaultServiceAccounts.GoogleProjectDefaultServiceAccounts",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleProjectDefaultServiceAccounts_Override(g GoogleProjectDefaultServi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleProjectDefaultServiceAccounts.GoogleProjectDefaultServiceAccounts",
+		"@cdktf/provider-google-beta.googleProjectDefaultServiceAccounts.GoogleProjectDefaultServiceAccounts",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -558,7 +558,7 @@ func GoogleProjectDefaultServiceAccounts_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectDefaultServiceAccounts.GoogleProjectDefaultServiceAccounts",
+		"@cdktf/provider-google-beta.googleProjectDefaultServiceAccounts.GoogleProjectDefaultServiceAccounts",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func GoogleProjectDefaultServiceAccounts_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectDefaultServiceAccounts.GoogleProjectDefaultServiceAccounts",
+		"@cdktf/provider-google-beta.googleProjectDefaultServiceAccounts.GoogleProjectDefaultServiceAccounts",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func GoogleProjectDefaultServiceAccounts_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectDefaultServiceAccounts.GoogleProjectDefaultServiceAccounts",
+		"@cdktf/provider-google-beta.googleProjectDefaultServiceAccounts.GoogleProjectDefaultServiceAccounts",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func GoogleProjectDefaultServiceAccounts_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleProjectDefaultServiceAccounts.GoogleProjectDefaultServiceAccounts",
+		"@cdktf/provider-google-beta.googleProjectDefaultServiceAccounts.GoogleProjectDefaultServiceAccounts",
 		"tfResourceType",
 		&returns,
 	)

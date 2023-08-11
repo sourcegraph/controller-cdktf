@@ -116,7 +116,7 @@ func NewRouteTableRouteList(terraformResource cdktf.IInterpolatingParent, terraf
 	j := jsiiProxy_RouteTableRouteList{}
 
 	_jsii_.Create(
-		"aws.routeTable.RouteTableRouteList",
+		"@cdktf/provider-aws.routeTable.RouteTableRouteList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRouteTableRouteList_Override(r RouteTableRouteList, terraformResource cd
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.routeTable.RouteTableRouteList",
+		"@cdktf/provider-aws.routeTable.RouteTableRouteList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

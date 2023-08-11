@@ -512,7 +512,7 @@ func NewGoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference(
 	j := jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference",
+		"@cdktf/provider-google-beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -524,7 +524,7 @@ func NewGoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference",
+		"@cdktf/provider-google-beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

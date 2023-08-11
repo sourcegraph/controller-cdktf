@@ -204,7 +204,7 @@ func NewLaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference(terraf
 	j := jsiiProxy_LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewLaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

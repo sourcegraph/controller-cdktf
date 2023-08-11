@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsMskCluster.DataAwsMskCluster",
+		"@cdktf/provider-aws.dataAwsMskCluster.DataAwsMskCluster",
 		reflect.TypeOf((*DataAwsMskCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsMskCluster.DataAwsMskClusterConfig",
+		"@cdktf/provider-aws.dataAwsMskCluster.DataAwsMskClusterConfig",
 		reflect.TypeOf((*DataAwsMskClusterConfig)(nil)).Elem(),
 	)
 }

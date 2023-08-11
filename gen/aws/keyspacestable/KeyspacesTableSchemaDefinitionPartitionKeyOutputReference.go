@@ -179,7 +179,7 @@ func NewKeyspacesTableSchemaDefinitionPartitionKeyOutputReference(terraformResou
 	j := jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyOutputReference{}
 
 	_jsii_.Create(
-		"aws.keyspacesTable.KeyspacesTableSchemaDefinitionPartitionKeyOutputReference",
+		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionPartitionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewKeyspacesTableSchemaDefinitionPartitionKeyOutputReference_Override(k Key
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.keyspacesTable.KeyspacesTableSchemaDefinitionPartitionKeyOutputReference",
+		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionPartitionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		k,
 	)

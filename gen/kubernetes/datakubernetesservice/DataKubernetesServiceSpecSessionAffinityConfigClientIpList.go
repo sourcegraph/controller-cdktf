@@ -104,7 +104,7 @@ func NewDataKubernetesServiceSpecSessionAffinityConfigClientIpList(terraformReso
 	j := jsiiProxy_DataKubernetesServiceSpecSessionAffinityConfigClientIpList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesService.DataKubernetesServiceSpecSessionAffinityConfigClientIpList",
+		"@cdktf/provider-kubernetes.dataKubernetesService.DataKubernetesServiceSpecSessionAffinityConfigClientIpList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesServiceSpecSessionAffinityConfigClientIpList_Override(d Da
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesService.DataKubernetesServiceSpecSessionAffinityConfigClientIpList",
+		"@cdktf/provider-kubernetes.dataKubernetesService.DataKubernetesServiceSpecSessionAffinityConfigClientIpList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

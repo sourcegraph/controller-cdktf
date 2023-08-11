@@ -202,7 +202,7 @@ func NewApigatewayv2RouteRequestParameterOutputReference(terraformResource cdktf
 	j := jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference{}
 
 	_jsii_.Create(
-		"aws.apigatewayv2Route.Apigatewayv2RouteRequestParameterOutputReference",
+		"@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteRequestParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewApigatewayv2RouteRequestParameterOutputReference_Override(a Apigatewayv2
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apigatewayv2Route.Apigatewayv2RouteRequestParameterOutputReference",
+		"@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteRequestParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

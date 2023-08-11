@@ -204,7 +204,7 @@ func NewMacie2MemberTimeoutsOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_Macie2MemberTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.macie2Member.Macie2MemberTimeoutsOutputReference",
+		"@cdktf/provider-aws.macie2Member.Macie2MemberTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMacie2MemberTimeoutsOutputReference_Override(m Macie2MemberTimeoutsOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2Member.Macie2MemberTimeoutsOutputReference",
+		"@cdktf/provider-aws.macie2Member.Macie2MemberTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

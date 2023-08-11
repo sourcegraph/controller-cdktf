@@ -116,7 +116,7 @@ func NewDlpProfileEntryList(terraformResource cdktf.IInterpolatingParent, terraf
 	j := jsiiProxy_DlpProfileEntryList{}
 
 	_jsii_.Create(
-		"cloudflare.dlpProfile.DlpProfileEntryList",
+		"@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDlpProfileEntryList_Override(d DlpProfileEntryList, terraformResource cd
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dlpProfile.DlpProfileEntryList",
+		"@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

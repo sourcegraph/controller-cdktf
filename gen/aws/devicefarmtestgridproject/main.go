@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.devicefarmTestGridProject.DevicefarmTestGridProject",
+		"@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProject",
 		reflect.TypeOf((*DevicefarmTestGridProject)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.devicefarmTestGridProject.DevicefarmTestGridProjectConfig",
+		"@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProjectConfig",
 		reflect.TypeOf((*DevicefarmTestGridProjectConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.devicefarmTestGridProject.DevicefarmTestGridProjectVpcConfig",
+		"@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProjectVpcConfig",
 		reflect.TypeOf((*DevicefarmTestGridProjectVpcConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.devicefarmTestGridProject.DevicefarmTestGridProjectVpcConfigOutputReference",
+		"@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProjectVpcConfigOutputReference",
 		reflect.TypeOf((*DevicefarmTestGridProjectVpcConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

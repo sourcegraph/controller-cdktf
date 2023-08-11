@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleDataplexLake.GoogleDataplexLake",
+		"@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLake",
 		reflect.TypeOf((*GoogleDataplexLake)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,11 +86,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataplexLake.GoogleDataplexLakeAssetStatus",
+		"@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeAssetStatus",
 		reflect.TypeOf((*GoogleDataplexLakeAssetStatus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataplexLake.GoogleDataplexLakeAssetStatusList",
+		"@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeAssetStatusList",
 		reflect.TypeOf((*GoogleDataplexLakeAssetStatusList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -110,7 +110,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataplexLake.GoogleDataplexLakeAssetStatusOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeAssetStatusOutputReference",
 		reflect.TypeOf((*GoogleDataplexLakeAssetStatusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeAssets", GoGetter: "ActiveAssets"},
@@ -145,15 +145,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataplexLake.GoogleDataplexLakeConfig",
+		"@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeConfig",
 		reflect.TypeOf((*GoogleDataplexLakeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataplexLake.GoogleDataplexLakeMetastore",
+		"@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeMetastore",
 		reflect.TypeOf((*GoogleDataplexLakeMetastore)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataplexLake.GoogleDataplexLakeMetastoreOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeMetastoreOutputReference",
 		reflect.TypeOf((*GoogleDataplexLakeMetastoreOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -188,11 +188,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataplexLake.GoogleDataplexLakeMetastoreStatus",
+		"@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeMetastoreStatus",
 		reflect.TypeOf((*GoogleDataplexLakeMetastoreStatus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataplexLake.GoogleDataplexLakeMetastoreStatusList",
+		"@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeMetastoreStatusList",
 		reflect.TypeOf((*GoogleDataplexLakeMetastoreStatusList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -212,7 +212,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataplexLake.GoogleDataplexLakeMetastoreStatusOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeMetastoreStatusOutputReference",
 		reflect.TypeOf((*GoogleDataplexLakeMetastoreStatusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -248,11 +248,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataplexLake.GoogleDataplexLakeTimeouts",
+		"@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeTimeouts",
 		reflect.TypeOf((*GoogleDataplexLakeTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataplexLake.GoogleDataplexLakeTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleDataplexLakeTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

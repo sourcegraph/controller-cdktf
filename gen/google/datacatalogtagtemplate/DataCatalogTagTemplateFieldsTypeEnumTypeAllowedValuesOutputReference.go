@@ -179,7 +179,7 @@ func NewDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference(ter
 	j := jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference{}
 
 	_jsii_.Create(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

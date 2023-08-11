@@ -104,7 +104,7 @@ func NewGoogleDataplexDatascanDataProfileResultProfileFieldsProfileTopNValuesLis
 	j := jsiiProxy_GoogleDataplexDatascanDataProfileResultProfileFieldsProfileTopNValuesList{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileResultProfileFieldsProfileTopNValuesList",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileResultProfileFieldsProfileTopNValuesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleDataplexDatascanDataProfileResultProfileFieldsProfileTopNValuesLis
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileResultProfileFieldsProfileTopNValuesList",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileResultProfileFieldsProfileTopNValuesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -439,7 +439,7 @@ func NewFactorTotp(scope constructs.Construct, id *string, config *FactorTotpCon
 	j := jsiiProxy_FactorTotp{}
 
 	_jsii_.Create(
-		"okta.factorTotp.FactorTotp",
+		"@cdktf/provider-okta.factorTotp.FactorTotp",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -452,7 +452,7 @@ func NewFactorTotp_Override(f FactorTotp, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.factorTotp.FactorTotp",
+		"@cdktf/provider-okta.factorTotp.FactorTotp",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -629,7 +629,7 @@ func FactorTotp_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.factorTotp.FactorTotp",
+		"@cdktf/provider-okta.factorTotp.FactorTotp",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -648,7 +648,7 @@ func FactorTotp_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.factorTotp.FactorTotp",
+		"@cdktf/provider-okta.factorTotp.FactorTotp",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func FactorTotp_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.factorTotp.FactorTotp",
+		"@cdktf/provider-okta.factorTotp.FactorTotp",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func FactorTotp_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.factorTotp.FactorTotp",
+		"@cdktf/provider-okta.factorTotp.FactorTotp",
 		"tfResourceType",
 		&returns,
 	)

@@ -484,7 +484,7 @@ func NewGoogleComputeMachineImage(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleComputeMachineImage{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeMachineImage.GoogleComputeMachineImage",
+		"@cdktf/provider-google-beta.googleComputeMachineImage.GoogleComputeMachineImage",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -497,7 +497,7 @@ func NewGoogleComputeMachineImage_Override(g GoogleComputeMachineImage, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeMachineImage.GoogleComputeMachineImage",
+		"@cdktf/provider-google-beta.googleComputeMachineImage.GoogleComputeMachineImage",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -663,7 +663,7 @@ func GoogleComputeMachineImage_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeMachineImage.GoogleComputeMachineImage",
+		"@cdktf/provider-google-beta.googleComputeMachineImage.GoogleComputeMachineImage",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -682,7 +682,7 @@ func GoogleComputeMachineImage_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeMachineImage.GoogleComputeMachineImage",
+		"@cdktf/provider-google-beta.googleComputeMachineImage.GoogleComputeMachineImage",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func GoogleComputeMachineImage_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeMachineImage.GoogleComputeMachineImage",
+		"@cdktf/provider-google-beta.googleComputeMachineImage.GoogleComputeMachineImage",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +714,7 @@ func GoogleComputeMachineImage_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeMachineImage.GoogleComputeMachineImage",
+		"@cdktf/provider-google-beta.googleComputeMachineImage.GoogleComputeMachineImage",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewPrivatecaCertificateConfigX509ConfigPolicyIdsList(terraformResource cdkt
 	j := jsiiProxy_PrivatecaCertificateConfigX509ConfigPolicyIdsList{}
 
 	_jsii_.Create(
-		"google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsList",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPrivatecaCertificateConfigX509ConfigPolicyIdsList_Override(p PrivatecaCe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsList",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

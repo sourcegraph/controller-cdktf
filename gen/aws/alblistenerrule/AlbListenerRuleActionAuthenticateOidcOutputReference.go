@@ -414,7 +414,7 @@ func NewAlbListenerRuleActionAuthenticateOidcOutputReference(terraformResource c
 	j := jsiiProxy_AlbListenerRuleActionAuthenticateOidcOutputReference{}
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRuleActionAuthenticateOidcOutputReference",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewAlbListenerRuleActionAuthenticateOidcOutputReference_Override(a AlbListe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRuleActionAuthenticateOidcOutputReference",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

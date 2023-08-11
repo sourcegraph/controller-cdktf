@@ -228,7 +228,7 @@ func NewGoogleSpannerInstanceTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_GoogleSpannerInstanceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleSpannerInstance.GoogleSpannerInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleSpannerInstance.GoogleSpannerInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleSpannerInstanceTimeoutsOutputReference_Override(g GoogleSpannerIns
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSpannerInstance.GoogleSpannerInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleSpannerInstance.GoogleSpannerInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

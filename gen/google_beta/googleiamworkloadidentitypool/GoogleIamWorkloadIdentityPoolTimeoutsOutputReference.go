@@ -228,7 +228,7 @@ func NewGoogleIamWorkloadIdentityPoolTimeoutsOutputReference(terraformResource c
 	j := jsiiProxy_GoogleIamWorkloadIdentityPoolTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPoolTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPoolTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleIamWorkloadIdentityPoolTimeoutsOutputReference_Override(g GoogleIa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPoolTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPoolTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

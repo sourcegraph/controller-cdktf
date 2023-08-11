@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.rumAppMonitor.RumAppMonitor",
+		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitor",
 		reflect.TypeOf((*RumAppMonitor)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,11 +79,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration",
+		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfiguration",
 		reflect.TypeOf((*RumAppMonitorAppMonitorConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.rumAppMonitor.RumAppMonitorAppMonitorConfigurationOutputReference",
+		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfigurationOutputReference",
 		reflect.TypeOf((*RumAppMonitorAppMonitorConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowCookies", GoGetter: "AllowCookies"},
@@ -142,15 +142,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.rumAppMonitor.RumAppMonitorConfig",
+		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitorConfig",
 		reflect.TypeOf((*RumAppMonitorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.rumAppMonitor.RumAppMonitorCustomEvents",
+		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitorCustomEvents",
 		reflect.TypeOf((*RumAppMonitorCustomEvents)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.rumAppMonitor.RumAppMonitorCustomEventsOutputReference",
+		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitorCustomEventsOutputReference",
 		reflect.TypeOf((*RumAppMonitorCustomEventsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

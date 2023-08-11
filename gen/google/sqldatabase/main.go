@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.sqlDatabase.SqlDatabase",
+		"@cdktf/provider-google.sqlDatabase.SqlDatabase",
 		reflect.TypeOf((*SqlDatabase)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,15 +76,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.sqlDatabase.SqlDatabaseConfig",
+		"@cdktf/provider-google.sqlDatabase.SqlDatabaseConfig",
 		reflect.TypeOf((*SqlDatabaseConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.sqlDatabase.SqlDatabaseTimeouts",
+		"@cdktf/provider-google.sqlDatabase.SqlDatabaseTimeouts",
 		reflect.TypeOf((*SqlDatabaseTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.sqlDatabase.SqlDatabaseTimeoutsOutputReference",
+		"@cdktf/provider-google.sqlDatabase.SqlDatabaseTimeoutsOutputReference",
 		reflect.TypeOf((*SqlDatabaseTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

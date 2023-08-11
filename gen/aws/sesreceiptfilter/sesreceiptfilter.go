@@ -376,7 +376,7 @@ func NewSesReceiptFilter(scope constructs.Construct, id *string, config *SesRece
 	j := jsiiProxy_SesReceiptFilter{}
 
 	_jsii_.Create(
-		"aws.sesReceiptFilter.SesReceiptFilter",
+		"@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -389,7 +389,7 @@ func NewSesReceiptFilter_Override(s SesReceiptFilter, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesReceiptFilter.SesReceiptFilter",
+		"@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilter",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -533,7 +533,7 @@ func SesReceiptFilter_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesReceiptFilter.SesReceiptFilter",
+		"@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -552,7 +552,7 @@ func SesReceiptFilter_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesReceiptFilter.SesReceiptFilter",
+		"@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -571,7 +571,7 @@ func SesReceiptFilter_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesReceiptFilter.SesReceiptFilter",
+		"@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilter",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func SesReceiptFilter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sesReceiptFilter.SesReceiptFilter",
+		"@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilter",
 		"tfResourceType",
 		&returns,
 	)

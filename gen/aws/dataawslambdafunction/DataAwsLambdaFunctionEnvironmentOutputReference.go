@@ -167,7 +167,7 @@ func NewDataAwsLambdaFunctionEnvironmentOutputReference(terraformResource cdktf.
 	j := jsiiProxy_DataAwsLambdaFunctionEnvironmentOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEnvironmentOutputReference",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEnvironmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsLambdaFunctionEnvironmentOutputReference_Override(d DataAwsLambda
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEnvironmentOutputReference",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEnvironmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

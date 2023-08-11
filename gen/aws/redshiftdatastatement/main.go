@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.redshiftdataStatement.RedshiftdataStatement",
+		"@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatement",
 		reflect.TypeOf((*RedshiftdataStatement)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,15 +85,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.redshiftdataStatement.RedshiftdataStatementConfig",
+		"@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatementConfig",
 		reflect.TypeOf((*RedshiftdataStatementConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.redshiftdataStatement.RedshiftdataStatementParameters",
+		"@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatementParameters",
 		reflect.TypeOf((*RedshiftdataStatementParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.redshiftdataStatement.RedshiftdataStatementParametersList",
+		"@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatementParametersList",
 		reflect.TypeOf((*RedshiftdataStatementParametersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -114,7 +114,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.redshiftdataStatement.RedshiftdataStatementParametersOutputReference",
+		"@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatementParametersOutputReference",
 		reflect.TypeOf((*RedshiftdataStatementParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -150,11 +150,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.redshiftdataStatement.RedshiftdataStatementTimeouts",
+		"@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatementTimeouts",
 		reflect.TypeOf((*RedshiftdataStatementTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.redshiftdataStatement.RedshiftdataStatementTimeoutsOutputReference",
+		"@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatementTimeoutsOutputReference",
 		reflect.TypeOf((*RedshiftdataStatementTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

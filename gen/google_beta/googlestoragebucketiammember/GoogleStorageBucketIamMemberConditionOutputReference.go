@@ -226,7 +226,7 @@ func NewGoogleStorageBucketIamMemberConditionOutputReference(terraformResource c
 	j := jsiiProxy_GoogleStorageBucketIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleStorageBucketIamMemberConditionOutputReference_Override(g GoogleSt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

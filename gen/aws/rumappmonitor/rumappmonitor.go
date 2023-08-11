@@ -495,7 +495,7 @@ func NewRumAppMonitor(scope constructs.Construct, id *string, config *RumAppMoni
 	j := jsiiProxy_RumAppMonitor{}
 
 	_jsii_.Create(
-		"aws.rumAppMonitor.RumAppMonitor",
+		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitor",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -508,7 +508,7 @@ func NewRumAppMonitor_Override(r RumAppMonitor, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rumAppMonitor.RumAppMonitor",
+		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitor",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -674,7 +674,7 @@ func RumAppMonitor_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rumAppMonitor.RumAppMonitor",
+		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitor",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -693,7 +693,7 @@ func RumAppMonitor_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rumAppMonitor.RumAppMonitor",
+		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitor",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +712,7 @@ func RumAppMonitor_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rumAppMonitor.RumAppMonitor",
+		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitor",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -725,7 +725,7 @@ func RumAppMonitor_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.rumAppMonitor.RumAppMonitor",
+		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitor",
 		"tfResourceType",
 		&returns,
 	)

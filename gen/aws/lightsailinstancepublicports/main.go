@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts",
+		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts",
 		reflect.TypeOf((*LightsailInstancePublicPorts)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,15 +60,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsConfig",
+		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsConfig",
 		reflect.TypeOf((*LightsailInstancePublicPortsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfo",
+		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfo",
 		reflect.TypeOf((*LightsailInstancePublicPortsPortInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoList",
+		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoList",
 		reflect.TypeOf((*LightsailInstancePublicPortsPortInfoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -89,7 +89,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoOutputReference",
+		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoOutputReference",
 		reflect.TypeOf((*LightsailInstancePublicPortsPortInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidrListAliases", GoGetter: "CidrListAliases"},

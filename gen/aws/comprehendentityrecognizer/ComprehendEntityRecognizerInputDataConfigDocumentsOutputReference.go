@@ -227,7 +227,7 @@ func NewComprehendEntityRecognizerInputDataConfigDocumentsOutputReference(terraf
 	j := jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference{}
 
 	_jsii_.Create(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewComprehendEntityRecognizerInputDataConfigDocumentsOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

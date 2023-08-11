@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.cloudiotRegistry.CloudiotRegistry",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistry",
 		reflect.TypeOf((*CloudiotRegistry)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,15 +87,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudiotRegistry.CloudiotRegistryConfig",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistryConfig",
 		reflect.TypeOf((*CloudiotRegistryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudiotRegistry.CloudiotRegistryCredentials",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistryCredentials",
 		reflect.TypeOf((*CloudiotRegistryCredentials)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudiotRegistry.CloudiotRegistryCredentialsList",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistryCredentialsList",
 		reflect.TypeOf((*CloudiotRegistryCredentialsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -116,7 +116,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.cloudiotRegistry.CloudiotRegistryCredentialsOutputReference",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistryCredentialsOutputReference",
 		reflect.TypeOf((*CloudiotRegistryCredentialsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -150,11 +150,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudiotRegistry.CloudiotRegistryEventNotificationConfigs",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistryEventNotificationConfigs",
 		reflect.TypeOf((*CloudiotRegistryEventNotificationConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudiotRegistry.CloudiotRegistryEventNotificationConfigsList",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistryEventNotificationConfigsList",
 		reflect.TypeOf((*CloudiotRegistryEventNotificationConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -175,7 +175,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.cloudiotRegistry.CloudiotRegistryEventNotificationConfigsOutputReference",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistryEventNotificationConfigsOutputReference",
 		reflect.TypeOf((*CloudiotRegistryEventNotificationConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -212,11 +212,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudiotRegistry.CloudiotRegistryTimeouts",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistryTimeouts",
 		reflect.TypeOf((*CloudiotRegistryTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudiotRegistry.CloudiotRegistryTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistryTimeoutsOutputReference",
 		reflect.TypeOf((*CloudiotRegistryTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

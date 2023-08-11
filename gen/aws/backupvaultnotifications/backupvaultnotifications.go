@@ -376,7 +376,7 @@ func NewBackupVaultNotifications(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_BackupVaultNotifications{}
 
 	_jsii_.Create(
-		"aws.backupVaultNotifications.BackupVaultNotifications",
+		"@cdktf/provider-aws.backupVaultNotifications.BackupVaultNotifications",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -389,7 +389,7 @@ func NewBackupVaultNotifications_Override(b BackupVaultNotifications, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupVaultNotifications.BackupVaultNotifications",
+		"@cdktf/provider-aws.backupVaultNotifications.BackupVaultNotifications",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -533,7 +533,7 @@ func BackupVaultNotifications_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupVaultNotifications.BackupVaultNotifications",
+		"@cdktf/provider-aws.backupVaultNotifications.BackupVaultNotifications",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -552,7 +552,7 @@ func BackupVaultNotifications_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupVaultNotifications.BackupVaultNotifications",
+		"@cdktf/provider-aws.backupVaultNotifications.BackupVaultNotifications",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -571,7 +571,7 @@ func BackupVaultNotifications_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupVaultNotifications.BackupVaultNotifications",
+		"@cdktf/provider-aws.backupVaultNotifications.BackupVaultNotifications",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func BackupVaultNotifications_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.backupVaultNotifications.BackupVaultNotifications",
+		"@cdktf/provider-aws.backupVaultNotifications.BackupVaultNotifications",
 		"tfResourceType",
 		&returns,
 	)

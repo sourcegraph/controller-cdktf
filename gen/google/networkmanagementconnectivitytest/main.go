@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.networkManagementConnectivityTest.NetworkManagementConnectivityTest",
+		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTest",
 		reflect.TypeOf((*NetworkManagementConnectivityTest)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,15 +82,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.networkManagementConnectivityTest.NetworkManagementConnectivityTestConfig",
+		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTestConfig",
 		reflect.TypeOf((*NetworkManagementConnectivityTestConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.networkManagementConnectivityTest.NetworkManagementConnectivityTestDestination",
+		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTestDestination",
 		reflect.TypeOf((*NetworkManagementConnectivityTestDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.networkManagementConnectivityTest.NetworkManagementConnectivityTestDestinationOutputReference",
+		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTestDestinationOutputReference",
 		reflect.TypeOf((*NetworkManagementConnectivityTestDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -137,11 +137,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.networkManagementConnectivityTest.NetworkManagementConnectivityTestSource",
+		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTestSource",
 		reflect.TypeOf((*NetworkManagementConnectivityTestSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.networkManagementConnectivityTest.NetworkManagementConnectivityTestSourceOutputReference",
+		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTestSourceOutputReference",
 		reflect.TypeOf((*NetworkManagementConnectivityTestSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -191,11 +191,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.networkManagementConnectivityTest.NetworkManagementConnectivityTestTimeouts",
+		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTestTimeouts",
 		reflect.TypeOf((*NetworkManagementConnectivityTestTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.networkManagementConnectivityTest.NetworkManagementConnectivityTestTimeoutsOutputReference",
+		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTestTimeoutsOutputReference",
 		reflect.TypeOf((*NetworkManagementConnectivityTestTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

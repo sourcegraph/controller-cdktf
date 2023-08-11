@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.simpledbDomain.SimpledbDomain",
+		"@cdktf/provider-aws.simpledbDomain.SimpledbDomain",
 		reflect.TypeOf((*SimpledbDomain)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -55,7 +55,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.simpledbDomain.SimpledbDomainConfig",
+		"@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig",
 		reflect.TypeOf((*SimpledbDomainConfig)(nil)).Elem(),
 	)
 }

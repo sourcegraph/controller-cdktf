@@ -179,7 +179,7 @@ func NewGuarddutyFilterFindingCriteriaOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_GuarddutyFilterFindingCriteriaOutputReference{}
 
 	_jsii_.Create(
-		"aws.guarddutyFilter.GuarddutyFilterFindingCriteriaOutputReference",
+		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilterFindingCriteriaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGuarddutyFilterFindingCriteriaOutputReference_Override(g GuarddutyFilter
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.guarddutyFilter.GuarddutyFilterFindingCriteriaOutputReference",
+		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilterFindingCriteriaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -228,7 +228,7 @@ func NewDocdbEventSubscriptionTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DocdbEventSubscriptionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.docdbEventSubscription.DocdbEventSubscriptionTimeoutsOutputReference",
+		"@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDocdbEventSubscriptionTimeoutsOutputReference_Override(d DocdbEventSubsc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.docdbEventSubscription.DocdbEventSubscriptionTimeoutsOutputReference",
+		"@cdktf/provider-aws.docdbEventSubscription.DocdbEventSubscriptionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

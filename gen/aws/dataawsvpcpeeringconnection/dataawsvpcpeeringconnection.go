@@ -600,7 +600,7 @@ func NewDataAwsVpcPeeringConnection(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataAwsVpcPeeringConnection{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnection",
+		"@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnection",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -613,7 +613,7 @@ func NewDataAwsVpcPeeringConnection_Override(d DataAwsVpcPeeringConnection, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnection",
+		"@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnection",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -812,7 +812,7 @@ func DataAwsVpcPeeringConnection_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnection",
+		"@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnection",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -831,7 +831,7 @@ func DataAwsVpcPeeringConnection_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnection",
+		"@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnection",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -850,7 +850,7 @@ func DataAwsVpcPeeringConnection_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnection",
+		"@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnection",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -863,7 +863,7 @@ func DataAwsVpcPeeringConnection_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnection",
+		"@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnection",
 		"tfResourceType",
 		&returns,
 	)

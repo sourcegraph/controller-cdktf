@@ -225,7 +225,7 @@ func NewCloudwatchEventPermissionConditionOutputReference(terraformResource cdkt
 	j := jsiiProxy_CloudwatchEventPermissionConditionOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudwatchEventPermission.CloudwatchEventPermissionConditionOutputReference",
+		"@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewCloudwatchEventPermissionConditionOutputReference_Override(c CloudwatchE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchEventPermission.CloudwatchEventPermissionConditionOutputReference",
+		"@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

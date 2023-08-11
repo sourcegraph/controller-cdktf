@@ -104,7 +104,7 @@ func NewGoogleGkeonpremBareMetalClusterFleetList(terraformResource cdktf.IInterp
 	j := jsiiProxy_GoogleGkeonpremBareMetalClusterFleetList{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterFleetList",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterFleetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleGkeonpremBareMetalClusterFleetList_Override(g GoogleGkeonpremBareM
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterFleetList",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterFleetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

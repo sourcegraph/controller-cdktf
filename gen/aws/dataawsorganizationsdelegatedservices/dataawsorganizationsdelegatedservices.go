@@ -302,7 +302,7 @@ func NewDataAwsOrganizationsDelegatedServices(scope constructs.Construct, id *st
 	j := jsiiProxy_DataAwsOrganizationsDelegatedServices{}
 
 	_jsii_.Create(
-		"aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServices",
+		"@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServices",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataAwsOrganizationsDelegatedServices_Override(d DataAwsOrganizationsDel
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServices",
+		"@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServices",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataAwsOrganizationsDelegatedServices_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServices",
+		"@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServices",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataAwsOrganizationsDelegatedServices_IsTerraformDataSource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServices",
+		"@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServices",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataAwsOrganizationsDelegatedServices_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServices",
+		"@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServices",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataAwsOrganizationsDelegatedServices_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServices",
+		"@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServices",
 		"tfResourceType",
 		&returns,
 	)

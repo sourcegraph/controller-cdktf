@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.runTrigger.RunTrigger",
+		"@cdktf/provider-tfe.runTrigger.RunTrigger",
 		reflect.TypeOf((*RunTrigger)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.runTrigger.RunTriggerConfig",
+		"@cdktf/provider-tfe.runTrigger.RunTriggerConfig",
 		reflect.TypeOf((*RunTriggerConfig)(nil)).Elem(),
 	)
 }

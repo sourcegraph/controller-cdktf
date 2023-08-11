@@ -317,7 +317,7 @@ func NewAuditmanagerOrganizationAdminAccountRegistration(scope constructs.Constr
 	j := jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration{}
 
 	_jsii_.Create(
-		"aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration",
+		"@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -330,7 +330,7 @@ func NewAuditmanagerOrganizationAdminAccountRegistration_Override(a Auditmanager
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration",
+		"@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -441,7 +441,7 @@ func AuditmanagerOrganizationAdminAccountRegistration_IsConstruct(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration",
+		"@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -460,7 +460,7 @@ func AuditmanagerOrganizationAdminAccountRegistration_IsTerraformElement(x inter
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration",
+		"@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -479,7 +479,7 @@ func AuditmanagerOrganizationAdminAccountRegistration_IsTerraformResource(x inte
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration",
+		"@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -492,7 +492,7 @@ func AuditmanagerOrganizationAdminAccountRegistration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration",
+		"@cdktf/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration",
 		"tfResourceType",
 		&returns,
 	)

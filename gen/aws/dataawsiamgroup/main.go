@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsIamGroup.DataAwsIamGroup",
+		"@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroup",
 		reflect.TypeOf((*DataAwsIamGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,15 +59,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsIamGroup.DataAwsIamGroupConfig",
+		"@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupConfig",
 		reflect.TypeOf((*DataAwsIamGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsIamGroup.DataAwsIamGroupUsers",
+		"@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupUsers",
 		reflect.TypeOf((*DataAwsIamGroupUsers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsIamGroup.DataAwsIamGroupUsersList",
+		"@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupUsersList",
 		reflect.TypeOf((*DataAwsIamGroupUsersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -87,7 +87,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsIamGroup.DataAwsIamGroupUsersOutputReference",
+		"@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupUsersOutputReference",
 		reflect.TypeOf((*DataAwsIamGroupUsersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},

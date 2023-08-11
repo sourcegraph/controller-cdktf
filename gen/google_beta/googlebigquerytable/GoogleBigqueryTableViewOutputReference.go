@@ -203,7 +203,7 @@ func NewGoogleBigqueryTableViewOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_GoogleBigqueryTableViewOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableViewOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableViewOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleBigqueryTableViewOutputReference_Override(g GoogleBigqueryTableVie
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableViewOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableViewOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

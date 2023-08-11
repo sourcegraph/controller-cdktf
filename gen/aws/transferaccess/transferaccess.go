@@ -486,7 +486,7 @@ func NewTransferAccess(scope constructs.Construct, id *string, config *TransferA
 	j := jsiiProxy_TransferAccess{}
 
 	_jsii_.Create(
-		"aws.transferAccess.TransferAccess",
+		"@cdktf/provider-aws.transferAccess.TransferAccess",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -499,7 +499,7 @@ func NewTransferAccess_Override(t TransferAccess, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferAccess.TransferAccess",
+		"@cdktf/provider-aws.transferAccess.TransferAccess",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -676,7 +676,7 @@ func TransferAccess_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transferAccess.TransferAccess",
+		"@cdktf/provider-aws.transferAccess.TransferAccess",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -695,7 +695,7 @@ func TransferAccess_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transferAccess.TransferAccess",
+		"@cdktf/provider-aws.transferAccess.TransferAccess",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +714,7 @@ func TransferAccess_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transferAccess.TransferAccess",
+		"@cdktf/provider-aws.transferAccess.TransferAccess",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -727,7 +727,7 @@ func TransferAccess_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.transferAccess.TransferAccess",
+		"@cdktf/provider-aws.transferAccess.TransferAccess",
 		"tfResourceType",
 		&returns,
 	)

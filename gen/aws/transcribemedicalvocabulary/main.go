@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.transcribeMedicalVocabulary.TranscribeMedicalVocabulary",
+		"@cdktf/provider-aws.transcribeMedicalVocabulary.TranscribeMedicalVocabulary",
 		reflect.TypeOf((*TranscribeMedicalVocabulary)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.transcribeMedicalVocabulary.TranscribeMedicalVocabularyConfig",
+		"@cdktf/provider-aws.transcribeMedicalVocabulary.TranscribeMedicalVocabularyConfig",
 		reflect.TypeOf((*TranscribeMedicalVocabularyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.transcribeMedicalVocabulary.TranscribeMedicalVocabularyTimeouts",
+		"@cdktf/provider-aws.transcribeMedicalVocabulary.TranscribeMedicalVocabularyTimeouts",
 		reflect.TypeOf((*TranscribeMedicalVocabularyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.transcribeMedicalVocabulary.TranscribeMedicalVocabularyTimeoutsOutputReference",
+		"@cdktf/provider-aws.transcribeMedicalVocabulary.TranscribeMedicalVocabularyTimeoutsOutputReference",
 		reflect.TypeOf((*TranscribeMedicalVocabularyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

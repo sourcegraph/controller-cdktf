@@ -179,7 +179,7 @@ func NewDynamodbGlobalTableReplicaOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_DynamodbGlobalTableReplicaOutputReference{}
 
 	_jsii_.Create(
-		"aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference",
+		"@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDynamodbGlobalTableReplicaOutputReference_Override(d DynamodbGlobalTable
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference",
+		"@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

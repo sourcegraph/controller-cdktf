@@ -116,7 +116,7 @@ func NewLoadBalancerRulesOverridesLocationStrategyList(terraformResource cdktf.I
 	j := jsiiProxy_LoadBalancerRulesOverridesLocationStrategyList{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategyList",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLoadBalancerRulesOverridesLocationStrategyList_Override(l LoadBalancerRu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategyList",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesLocationStrategyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

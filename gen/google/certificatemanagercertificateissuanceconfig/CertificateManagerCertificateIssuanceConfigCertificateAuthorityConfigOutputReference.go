@@ -180,7 +180,7 @@ func NewCertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigOut
 	j := jsiiProxy_CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.certificateManagerCertificateIssuanceConfig.CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigOutputReference",
+		"@cdktf/provider-google.certificateManagerCertificateIssuanceConfig.CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewCertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.certificateManagerCertificateIssuanceConfig.CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigOutputReference",
+		"@cdktf/provider-google.certificateManagerCertificateIssuanceConfig.CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

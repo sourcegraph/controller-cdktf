@@ -116,7 +116,7 @@ func NewDataAwsNatGatewaysFilterList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_DataAwsNatGatewaysFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsNatGateways.DataAwsNatGatewaysFilterList",
+		"@cdktf/provider-aws.dataAwsNatGateways.DataAwsNatGatewaysFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsNatGatewaysFilterList_Override(d DataAwsNatGatewaysFilterList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNatGateways.DataAwsNatGatewaysFilterList",
+		"@cdktf/provider-aws.dataAwsNatGateways.DataAwsNatGatewaysFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

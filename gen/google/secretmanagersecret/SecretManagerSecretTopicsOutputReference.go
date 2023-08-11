@@ -179,7 +179,7 @@ func NewSecretManagerSecretTopicsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_SecretManagerSecretTopicsOutputReference{}
 
 	_jsii_.Create(
-		"google.secretManagerSecret.SecretManagerSecretTopicsOutputReference",
+		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretTopicsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewSecretManagerSecretTopicsOutputReference_Override(s SecretManagerSecretT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.secretManagerSecret.SecretManagerSecretTopicsOutputReference",
+		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretTopicsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

@@ -116,7 +116,7 @@ func NewGameServicesGameServerConfigFleetConfigsList(terraformResource cdktf.IIn
 	j := jsiiProxy_GameServicesGameServerConfigFleetConfigsList{}
 
 	_jsii_.Create(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigFleetConfigsList",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigFleetConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGameServicesGameServerConfigFleetConfigsList_Override(g GameServicesGame
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigFleetConfigsList",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigFleetConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

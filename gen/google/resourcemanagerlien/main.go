@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.resourceManagerLien.ResourceManagerLien",
+		"@cdktf/provider-google.resourceManagerLien.ResourceManagerLien",
 		reflect.TypeOf((*ResourceManagerLien)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,15 +69,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.resourceManagerLien.ResourceManagerLienConfig",
+		"@cdktf/provider-google.resourceManagerLien.ResourceManagerLienConfig",
 		reflect.TypeOf((*ResourceManagerLienConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.resourceManagerLien.ResourceManagerLienTimeouts",
+		"@cdktf/provider-google.resourceManagerLien.ResourceManagerLienTimeouts",
 		reflect.TypeOf((*ResourceManagerLienTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.resourceManagerLien.ResourceManagerLienTimeoutsOutputReference",
+		"@cdktf/provider-google.resourceManagerLien.ResourceManagerLienTimeoutsOutputReference",
 		reflect.TypeOf((*ResourceManagerLienTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

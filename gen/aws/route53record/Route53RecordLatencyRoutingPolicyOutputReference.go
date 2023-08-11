@@ -179,7 +179,7 @@ func NewRoute53RecordLatencyRoutingPolicyOutputReference(terraformResource cdktf
 	j := jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.route53Record.Route53RecordLatencyRoutingPolicyOutputReference",
+		"@cdktf/provider-aws.route53Record.Route53RecordLatencyRoutingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewRoute53RecordLatencyRoutingPolicyOutputReference_Override(r Route53Recor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53Record.Route53RecordLatencyRoutingPolicyOutputReference",
+		"@cdktf/provider-aws.route53Record.Route53RecordLatencyRoutingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

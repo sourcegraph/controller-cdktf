@@ -226,7 +226,7 @@ func NewApigeeEnvironmentIamMemberConditionOutputReference(terraformResource cdk
 	j := jsiiProxy_ApigeeEnvironmentIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.apigeeEnvironmentIamMember.ApigeeEnvironmentIamMemberConditionOutputReference",
+		"@cdktf/provider-google.apigeeEnvironmentIamMember.ApigeeEnvironmentIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewApigeeEnvironmentIamMemberConditionOutputReference_Override(a ApigeeEnvi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeEnvironmentIamMember.ApigeeEnvironmentIamMemberConditionOutputReference",
+		"@cdktf/provider-google.apigeeEnvironmentIamMember.ApigeeEnvironmentIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

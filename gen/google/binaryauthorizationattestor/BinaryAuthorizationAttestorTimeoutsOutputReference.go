@@ -228,7 +228,7 @@ func NewBinaryAuthorizationAttestorTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_BinaryAuthorizationAttestorTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeoutsOutputReference",
+		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewBinaryAuthorizationAttestorTimeoutsOutputReference_Override(b BinaryAuth
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeoutsOutputReference",
+		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

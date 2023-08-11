@@ -178,7 +178,7 @@ func NewDataAwsAppconfigEnvironmentMonitorOutputReference(terraformResource cdkt
 	j := jsiiProxy_DataAwsAppconfigEnvironmentMonitorOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentMonitorOutputReference",
+		"@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentMonitorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsAppconfigEnvironmentMonitorOutputReference_Override(d DataAwsAppc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentMonitorOutputReference",
+		"@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentMonitorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

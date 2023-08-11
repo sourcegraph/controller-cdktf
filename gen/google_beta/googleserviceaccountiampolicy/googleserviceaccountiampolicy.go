@@ -353,7 +353,7 @@ func NewGoogleServiceAccountIamPolicy(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleServiceAccountIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicy",
+		"@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewGoogleServiceAccountIamPolicy_Override(g GoogleServiceAccountIamPolicy, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicy",
+		"@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -499,7 +499,7 @@ func GoogleServiceAccountIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicy",
+		"@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func GoogleServiceAccountIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicy",
+		"@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func GoogleServiceAccountIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicy",
+		"@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func GoogleServiceAccountIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicy",
+		"@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

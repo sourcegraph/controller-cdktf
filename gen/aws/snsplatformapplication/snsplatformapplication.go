@@ -616,7 +616,7 @@ func NewSnsPlatformApplication(scope constructs.Construct, id *string, config *S
 	j := jsiiProxy_SnsPlatformApplication{}
 
 	_jsii_.Create(
-		"aws.snsPlatformApplication.SnsPlatformApplication",
+		"@cdktf/provider-aws.snsPlatformApplication.SnsPlatformApplication",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -629,7 +629,7 @@ func NewSnsPlatformApplication_Override(s SnsPlatformApplication, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.snsPlatformApplication.SnsPlatformApplication",
+		"@cdktf/provider-aws.snsPlatformApplication.SnsPlatformApplication",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -883,7 +883,7 @@ func SnsPlatformApplication_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.snsPlatformApplication.SnsPlatformApplication",
+		"@cdktf/provider-aws.snsPlatformApplication.SnsPlatformApplication",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -902,7 +902,7 @@ func SnsPlatformApplication_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.snsPlatformApplication.SnsPlatformApplication",
+		"@cdktf/provider-aws.snsPlatformApplication.SnsPlatformApplication",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -921,7 +921,7 @@ func SnsPlatformApplication_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.snsPlatformApplication.SnsPlatformApplication",
+		"@cdktf/provider-aws.snsPlatformApplication.SnsPlatformApplication",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -934,7 +934,7 @@ func SnsPlatformApplication_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.snsPlatformApplication.SnsPlatformApplication",
+		"@cdktf/provider-aws.snsPlatformApplication.SnsPlatformApplication",
 		"tfResourceType",
 		&returns,
 	)

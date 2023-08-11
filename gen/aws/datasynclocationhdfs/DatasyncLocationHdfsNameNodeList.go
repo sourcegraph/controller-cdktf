@@ -116,7 +116,7 @@ func NewDatasyncLocationHdfsNameNodeList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_DatasyncLocationHdfsNameNodeList{}
 
 	_jsii_.Create(
-		"aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNodeList",
+		"@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNodeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDatasyncLocationHdfsNameNodeList_Override(d DatasyncLocationHdfsNameNode
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNodeList",
+		"@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNodeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

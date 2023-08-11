@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.spannerInstanceIamPolicy.SpannerInstanceIamPolicy",
+		"@cdktf/provider-google.spannerInstanceIamPolicy.SpannerInstanceIamPolicy",
 		reflect.TypeOf((*SpannerInstanceIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.spannerInstanceIamPolicy.SpannerInstanceIamPolicyConfig",
+		"@cdktf/provider-google.spannerInstanceIamPolicy.SpannerInstanceIamPolicyConfig",
 		reflect.TypeOf((*SpannerInstanceIamPolicyConfig)(nil)).Elem(),
 	)
 }

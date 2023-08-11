@@ -342,7 +342,7 @@ func NewShieldProtectionHealthCheckAssociation(scope constructs.Construct, id *s
 	j := jsiiProxy_ShieldProtectionHealthCheckAssociation{}
 
 	_jsii_.Create(
-		"aws.shieldProtectionHealthCheckAssociation.ShieldProtectionHealthCheckAssociation",
+		"@cdktf/provider-aws.shieldProtectionHealthCheckAssociation.ShieldProtectionHealthCheckAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewShieldProtectionHealthCheckAssociation_Override(s ShieldProtectionHealth
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.shieldProtectionHealthCheckAssociation.ShieldProtectionHealthCheckAssociation",
+		"@cdktf/provider-aws.shieldProtectionHealthCheckAssociation.ShieldProtectionHealthCheckAssociation",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -488,7 +488,7 @@ func ShieldProtectionHealthCheckAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.shieldProtectionHealthCheckAssociation.ShieldProtectionHealthCheckAssociation",
+		"@cdktf/provider-aws.shieldProtectionHealthCheckAssociation.ShieldProtectionHealthCheckAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func ShieldProtectionHealthCheckAssociation_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.shieldProtectionHealthCheckAssociation.ShieldProtectionHealthCheckAssociation",
+		"@cdktf/provider-aws.shieldProtectionHealthCheckAssociation.ShieldProtectionHealthCheckAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func ShieldProtectionHealthCheckAssociation_IsTerraformResource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.shieldProtectionHealthCheckAssociation.ShieldProtectionHealthCheckAssociation",
+		"@cdktf/provider-aws.shieldProtectionHealthCheckAssociation.ShieldProtectionHealthCheckAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func ShieldProtectionHealthCheckAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.shieldProtectionHealthCheckAssociation.ShieldProtectionHealthCheckAssociation",
+		"@cdktf/provider-aws.shieldProtectionHealthCheckAssociation.ShieldProtectionHealthCheckAssociation",
 		"tfResourceType",
 		&returns,
 	)

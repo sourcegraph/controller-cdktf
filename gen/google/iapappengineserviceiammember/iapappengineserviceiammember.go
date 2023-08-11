@@ -447,7 +447,7 @@ func NewIapAppEngineServiceIamMember(scope constructs.Construct, id *string, con
 	j := jsiiProxy_IapAppEngineServiceIamMember{}
 
 	_jsii_.Create(
-		"google.iapAppEngineServiceIamMember.IapAppEngineServiceIamMember",
+		"@cdktf/provider-google.iapAppEngineServiceIamMember.IapAppEngineServiceIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewIapAppEngineServiceIamMember_Override(i IapAppEngineServiceIamMember, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapAppEngineServiceIamMember.IapAppEngineServiceIamMember",
+		"@cdktf/provider-google.iapAppEngineServiceIamMember.IapAppEngineServiceIamMember",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -626,7 +626,7 @@ func IapAppEngineServiceIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapAppEngineServiceIamMember.IapAppEngineServiceIamMember",
+		"@cdktf/provider-google.iapAppEngineServiceIamMember.IapAppEngineServiceIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func IapAppEngineServiceIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapAppEngineServiceIamMember.IapAppEngineServiceIamMember",
+		"@cdktf/provider-google.iapAppEngineServiceIamMember.IapAppEngineServiceIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -664,7 +664,7 @@ func IapAppEngineServiceIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapAppEngineServiceIamMember.IapAppEngineServiceIamMember",
+		"@cdktf/provider-google.iapAppEngineServiceIamMember.IapAppEngineServiceIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func IapAppEngineServiceIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.iapAppEngineServiceIamMember.IapAppEngineServiceIamMember",
+		"@cdktf/provider-google.iapAppEngineServiceIamMember.IapAppEngineServiceIamMember",
 		"tfResourceType",
 		&returns,
 	)

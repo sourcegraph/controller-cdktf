@@ -225,7 +225,7 @@ func NewDlmLifecyclePolicyPolicyDetailsEventSourceParametersOutputReference(terr
 	j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsEventSourceParametersOutputReference{}
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSourceParametersOutputReference",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSourceParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewDlmLifecyclePolicyPolicyDetailsEventSourceParametersOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSourceParametersOutputReference",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsEventSourceParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

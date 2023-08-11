@@ -179,7 +179,7 @@ func NewContainerClusterMeshCertificatesOutputReference(terraformResource cdktf.
 	j := jsiiProxy_ContainerClusterMeshCertificatesOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterMeshCertificatesOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMeshCertificatesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewContainerClusterMeshCertificatesOutputReference_Override(c ContainerClus
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterMeshCertificatesOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMeshCertificatesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

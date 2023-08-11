@@ -1026,7 +1026,7 @@ func NewOpsworksRailsAppLayer(scope constructs.Construct, id *string, config *Op
 	j := jsiiProxy_OpsworksRailsAppLayer{}
 
 	_jsii_.Create(
-		"aws.opsworksRailsAppLayer.OpsworksRailsAppLayer",
+		"@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1039,7 +1039,7 @@ func NewOpsworksRailsAppLayer_Override(o OpsworksRailsAppLayer, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksRailsAppLayer.OpsworksRailsAppLayer",
+		"@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayer",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -1447,7 +1447,7 @@ func OpsworksRailsAppLayer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksRailsAppLayer.OpsworksRailsAppLayer",
+		"@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1466,7 +1466,7 @@ func OpsworksRailsAppLayer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksRailsAppLayer.OpsworksRailsAppLayer",
+		"@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1485,7 +1485,7 @@ func OpsworksRailsAppLayer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksRailsAppLayer.OpsworksRailsAppLayer",
+		"@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1498,7 +1498,7 @@ func OpsworksRailsAppLayer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.opsworksRailsAppLayer.OpsworksRailsAppLayer",
+		"@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayer",
 		"tfResourceType",
 		&returns,
 	)

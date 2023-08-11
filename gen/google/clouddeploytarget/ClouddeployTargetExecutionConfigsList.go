@@ -116,7 +116,7 @@ func NewClouddeployTargetExecutionConfigsList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_ClouddeployTargetExecutionConfigsList{}
 
 	_jsii_.Create(
-		"google.clouddeployTarget.ClouddeployTargetExecutionConfigsList",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewClouddeployTargetExecutionConfigsList_Override(c ClouddeployTargetExecut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.clouddeployTarget.ClouddeployTargetExecutionConfigsList",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

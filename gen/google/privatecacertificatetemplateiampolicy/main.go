@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.privatecaCertificateTemplateIamPolicy.PrivatecaCertificateTemplateIamPolicy",
+		"@cdktf/provider-google.privatecaCertificateTemplateIamPolicy.PrivatecaCertificateTemplateIamPolicy",
 		reflect.TypeOf((*PrivatecaCertificateTemplateIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.privatecaCertificateTemplateIamPolicy.PrivatecaCertificateTemplateIamPolicyConfig",
+		"@cdktf/provider-google.privatecaCertificateTemplateIamPolicy.PrivatecaCertificateTemplateIamPolicyConfig",
 		reflect.TypeOf((*PrivatecaCertificateTemplateIamPolicyConfig)(nil)).Elem(),
 	)
 }

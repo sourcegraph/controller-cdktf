@@ -1716,7 +1716,7 @@ func NewContainerCluster(scope constructs.Construct, id *string, config *Contain
 	j := jsiiProxy_ContainerCluster{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerCluster",
+		"@cdktf/provider-google.containerCluster.ContainerCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1729,7 +1729,7 @@ func NewContainerCluster_Override(c ContainerCluster, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerCluster",
+		"@cdktf/provider-google.containerCluster.ContainerCluster",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -2137,7 +2137,7 @@ func ContainerCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerCluster.ContainerCluster",
+		"@cdktf/provider-google.containerCluster.ContainerCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -2156,7 +2156,7 @@ func ContainerCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerCluster.ContainerCluster",
+		"@cdktf/provider-google.containerCluster.ContainerCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -2175,7 +2175,7 @@ func ContainerCluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerCluster.ContainerCluster",
+		"@cdktf/provider-google.containerCluster.ContainerCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -2188,7 +2188,7 @@ func ContainerCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.containerCluster.ContainerCluster",
+		"@cdktf/provider-google.containerCluster.ContainerCluster",
 		"tfResourceType",
 		&returns,
 	)

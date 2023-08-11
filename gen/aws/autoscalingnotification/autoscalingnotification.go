@@ -365,7 +365,7 @@ func NewAutoscalingNotification(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_AutoscalingNotification{}
 
 	_jsii_.Create(
-		"aws.autoscalingNotification.AutoscalingNotification",
+		"@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewAutoscalingNotification_Override(a AutoscalingNotification, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingNotification.AutoscalingNotification",
+		"@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -522,7 +522,7 @@ func AutoscalingNotification_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingNotification.AutoscalingNotification",
+		"@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func AutoscalingNotification_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingNotification.AutoscalingNotification",
+		"@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func AutoscalingNotification_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingNotification.AutoscalingNotification",
+		"@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func AutoscalingNotification_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.autoscalingNotification.AutoscalingNotification",
+		"@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification",
 		"tfResourceType",
 		&returns,
 	)

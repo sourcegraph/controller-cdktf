@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings",
+		"@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings",
 		reflect.TypeOf((*DataGoogleLoggingProjectCmekSettings)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettingsConfig",
+		"@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettingsConfig",
 		reflect.TypeOf((*DataGoogleLoggingProjectCmekSettingsConfig)(nil)).Elem(),
 	)
 }

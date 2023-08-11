@@ -226,7 +226,7 @@ func NewIapTunnelInstanceIamMemberConditionOutputReference(terraformResource cdk
 	j := jsiiProxy_IapTunnelInstanceIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.iapTunnelInstanceIamMember.IapTunnelInstanceIamMemberConditionOutputReference",
+		"@cdktf/provider-google.iapTunnelInstanceIamMember.IapTunnelInstanceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewIapTunnelInstanceIamMemberConditionOutputReference_Override(i IapTunnelI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapTunnelInstanceIamMember.IapTunnelInstanceIamMemberConditionOutputReference",
+		"@cdktf/provider-google.iapTunnelInstanceIamMember.IapTunnelInstanceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

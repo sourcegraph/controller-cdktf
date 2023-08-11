@@ -179,7 +179,7 @@ func NewKendraIndexUserGroupResolutionConfigurationOutputReference(terraformReso
 	j := jsiiProxy_KendraIndexUserGroupResolutionConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.kendraIndex.KendraIndexUserGroupResolutionConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexUserGroupResolutionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewKendraIndexUserGroupResolutionConfigurationOutputReference_Override(k Ke
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraIndex.KendraIndexUserGroupResolutionConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexUserGroupResolutionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

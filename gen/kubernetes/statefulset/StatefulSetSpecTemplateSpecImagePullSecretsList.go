@@ -116,7 +116,7 @@ func NewStatefulSetSpecTemplateSpecImagePullSecretsList(terraformResource cdktf.
 	j := jsiiProxy_StatefulSetSpecTemplateSpecImagePullSecretsList{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecImagePullSecretsList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecImagePullSecretsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewStatefulSetSpecTemplateSpecImagePullSecretsList_Override(s StatefulSetSp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecImagePullSecretsList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecImagePullSecretsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

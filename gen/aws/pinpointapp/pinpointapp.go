@@ -486,7 +486,7 @@ func NewPinpointApp(scope constructs.Construct, id *string, config *PinpointAppC
 	j := jsiiProxy_PinpointApp{}
 
 	_jsii_.Create(
-		"aws.pinpointApp.PinpointApp",
+		"@cdktf/provider-aws.pinpointApp.PinpointApp",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -499,7 +499,7 @@ func NewPinpointApp_Override(p PinpointApp, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.pinpointApp.PinpointApp",
+		"@cdktf/provider-aws.pinpointApp.PinpointApp",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -654,7 +654,7 @@ func PinpointApp_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointApp.PinpointApp",
+		"@cdktf/provider-aws.pinpointApp.PinpointApp",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -673,7 +673,7 @@ func PinpointApp_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointApp.PinpointApp",
+		"@cdktf/provider-aws.pinpointApp.PinpointApp",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -692,7 +692,7 @@ func PinpointApp_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointApp.PinpointApp",
+		"@cdktf/provider-aws.pinpointApp.PinpointApp",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -705,7 +705,7 @@ func PinpointApp_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.pinpointApp.PinpointApp",
+		"@cdktf/provider-aws.pinpointApp.PinpointApp",
 		"tfResourceType",
 		&returns,
 	)

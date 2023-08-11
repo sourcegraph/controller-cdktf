@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeImageIamBinding.ComputeImageIamBinding",
+		"@cdktf/provider-google.computeImageIamBinding.ComputeImageIamBinding",
 		reflect.TypeOf((*ComputeImageIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,11 +69,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeImageIamBinding.ComputeImageIamBindingCondition",
+		"@cdktf/provider-google.computeImageIamBinding.ComputeImageIamBindingCondition",
 		reflect.TypeOf((*ComputeImageIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeImageIamBinding.ComputeImageIamBindingConditionOutputReference",
+		"@cdktf/provider-google.computeImageIamBinding.ComputeImageIamBindingConditionOutputReference",
 		reflect.TypeOf((*ComputeImageIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -112,7 +112,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeImageIamBinding.ComputeImageIamBindingConfig",
+		"@cdktf/provider-google.computeImageIamBinding.ComputeImageIamBindingConfig",
 		reflect.TypeOf((*ComputeImageIamBindingConfig)(nil)).Elem(),
 	)
 }

@@ -203,7 +203,7 @@ func NewGoogleMonitoringAlertPolicyConditionsConditionMatchedLogOutputReference(
 	j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionMatchedLogOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMatchedLogOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMatchedLogOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleMonitoringAlertPolicyConditionsConditionMatchedLogOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMatchedLogOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMatchedLogOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

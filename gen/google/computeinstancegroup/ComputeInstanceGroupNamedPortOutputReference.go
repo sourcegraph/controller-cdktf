@@ -202,7 +202,7 @@ func NewComputeInstanceGroupNamedPortOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_ComputeInstanceGroupNamedPortOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstanceGroup.ComputeInstanceGroupNamedPortOutputReference",
+		"@cdktf/provider-google.computeInstanceGroup.ComputeInstanceGroupNamedPortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewComputeInstanceGroupNamedPortOutputReference_Override(c ComputeInstanceG
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceGroup.ComputeInstanceGroupNamedPortOutputReference",
+		"@cdktf/provider-google.computeInstanceGroup.ComputeInstanceGroupNamedPortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

@@ -104,7 +104,7 @@ func NewGoogleComputeInterconnectAttachmentPrivateInterconnectInfoList(terraform
 	j := jsiiProxy_GoogleComputeInterconnectAttachmentPrivateInterconnectInfoList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachmentPrivateInterconnectInfoList",
+		"@cdktf/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachmentPrivateInterconnectInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleComputeInterconnectAttachmentPrivateInterconnectInfoList_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachmentPrivateInterconnectInfoList",
+		"@cdktf/provider-google-beta.googleComputeInterconnectAttachment.GoogleComputeInterconnectAttachmentPrivateInterconnectInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -400,7 +400,7 @@ func NewGoogleHealthcareFhirStoreIamBinding(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleHealthcareFhirStoreIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareFhirStoreIamBinding.GoogleHealthcareFhirStoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStoreIamBinding.GoogleHealthcareFhirStoreIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleHealthcareFhirStoreIamBinding_Override(g GoogleHealthcareFhirStore
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareFhirStoreIamBinding.GoogleHealthcareFhirStoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStoreIamBinding.GoogleHealthcareFhirStoreIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleHealthcareFhirStoreIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareFhirStoreIamBinding.GoogleHealthcareFhirStoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStoreIamBinding.GoogleHealthcareFhirStoreIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleHealthcareFhirStoreIamBinding_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareFhirStoreIamBinding.GoogleHealthcareFhirStoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStoreIamBinding.GoogleHealthcareFhirStoreIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleHealthcareFhirStoreIamBinding_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareFhirStoreIamBinding.GoogleHealthcareFhirStoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStoreIamBinding.GoogleHealthcareFhirStoreIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleHealthcareFhirStoreIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleHealthcareFhirStoreIamBinding.GoogleHealthcareFhirStoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStoreIamBinding.GoogleHealthcareFhirStoreIamBinding",
 		"tfResourceType",
 		&returns,
 	)

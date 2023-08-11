@@ -400,7 +400,7 @@ func NewGoogleServiceAccountIamMember(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleServiceAccountIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleServiceAccountIamMember.GoogleServiceAccountIamMember",
+		"@cdktf/provider-google-beta.googleServiceAccountIamMember.GoogleServiceAccountIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleServiceAccountIamMember_Override(g GoogleServiceAccountIamMember, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleServiceAccountIamMember.GoogleServiceAccountIamMember",
+		"@cdktf/provider-google-beta.googleServiceAccountIamMember.GoogleServiceAccountIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleServiceAccountIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceAccountIamMember.GoogleServiceAccountIamMember",
+		"@cdktf/provider-google-beta.googleServiceAccountIamMember.GoogleServiceAccountIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleServiceAccountIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceAccountIamMember.GoogleServiceAccountIamMember",
+		"@cdktf/provider-google-beta.googleServiceAccountIamMember.GoogleServiceAccountIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleServiceAccountIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceAccountIamMember.GoogleServiceAccountIamMember",
+		"@cdktf/provider-google-beta.googleServiceAccountIamMember.GoogleServiceAccountIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleServiceAccountIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleServiceAccountIamMember.GoogleServiceAccountIamMember",
+		"@cdktf/provider-google-beta.googleServiceAccountIamMember.GoogleServiceAccountIamMember",
 		"tfResourceType",
 		&returns,
 	)

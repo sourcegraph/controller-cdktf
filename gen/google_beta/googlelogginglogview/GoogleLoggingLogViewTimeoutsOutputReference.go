@@ -228,7 +228,7 @@ func NewGoogleLoggingLogViewTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_GoogleLoggingLogViewTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleLoggingLogView.GoogleLoggingLogViewTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleLoggingLogViewTimeoutsOutputReference_Override(g GoogleLoggingLogV
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleLoggingLogView.GoogleLoggingLogViewTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

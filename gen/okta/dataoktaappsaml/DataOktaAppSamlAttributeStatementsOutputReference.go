@@ -222,7 +222,7 @@ func NewDataOktaAppSamlAttributeStatementsOutputReference(terraformResource cdkt
 	j := jsiiProxy_DataOktaAppSamlAttributeStatementsOutputReference{}
 
 	_jsii_.Create(
-		"okta.dataOktaAppSaml.DataOktaAppSamlAttributeStatementsOutputReference",
+		"@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlAttributeStatementsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -234,7 +234,7 @@ func NewDataOktaAppSamlAttributeStatementsOutputReference_Override(d DataOktaApp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaAppSaml.DataOktaAppSamlAttributeStatementsOutputReference",
+		"@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlAttributeStatementsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

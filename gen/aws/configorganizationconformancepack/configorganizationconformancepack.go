@@ -498,7 +498,7 @@ func NewConfigOrganizationConformancePack(scope constructs.Construct, id *string
 	j := jsiiProxy_ConfigOrganizationConformancePack{}
 
 	_jsii_.Create(
-		"aws.configOrganizationConformancePack.ConfigOrganizationConformancePack",
+		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePack",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -511,7 +511,7 @@ func NewConfigOrganizationConformancePack_Override(c ConfigOrganizationConforman
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configOrganizationConformancePack.ConfigOrganizationConformancePack",
+		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePack",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -688,7 +688,7 @@ func ConfigOrganizationConformancePack_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configOrganizationConformancePack.ConfigOrganizationConformancePack",
+		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePack",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -707,7 +707,7 @@ func ConfigOrganizationConformancePack_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configOrganizationConformancePack.ConfigOrganizationConformancePack",
+		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePack",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -726,7 +726,7 @@ func ConfigOrganizationConformancePack_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configOrganizationConformancePack.ConfigOrganizationConformancePack",
+		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePack",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -739,7 +739,7 @@ func ConfigOrganizationConformancePack_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.configOrganizationConformancePack.ConfigOrganizationConformancePack",
+		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePack",
 		"tfResourceType",
 		&returns,
 	)

@@ -484,7 +484,7 @@ func NewFisExperimentTemplate(scope constructs.Construct, id *string, config *Fi
 	j := jsiiProxy_FisExperimentTemplate{}
 
 	_jsii_.Create(
-		"aws.fisExperimentTemplate.FisExperimentTemplate",
+		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -497,7 +497,7 @@ func NewFisExperimentTemplate_Override(f FisExperimentTemplate, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fisExperimentTemplate.FisExperimentTemplate",
+		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplate",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -652,7 +652,7 @@ func FisExperimentTemplate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fisExperimentTemplate.FisExperimentTemplate",
+		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -671,7 +671,7 @@ func FisExperimentTemplate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fisExperimentTemplate.FisExperimentTemplate",
+		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -690,7 +690,7 @@ func FisExperimentTemplate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fisExperimentTemplate.FisExperimentTemplate",
+		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -703,7 +703,7 @@ func FisExperimentTemplate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.fisExperimentTemplate.FisExperimentTemplate",
+		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplate",
 		"tfResourceType",
 		&returns,
 	)

@@ -401,7 +401,7 @@ func NewGoogleDataprocMetastoreFederationIamPolicy(scope constructs.Construct, i
 	j := jsiiProxy_GoogleDataprocMetastoreFederationIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocMetastoreFederationIamPolicy.GoogleDataprocMetastoreFederationIamPolicy",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamPolicy.GoogleDataprocMetastoreFederationIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleDataprocMetastoreFederationIamPolicy_Override(g GoogleDataprocMeta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocMetastoreFederationIamPolicy.GoogleDataprocMetastoreFederationIamPolicy",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamPolicy.GoogleDataprocMetastoreFederationIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GoogleDataprocMetastoreFederationIamPolicy_IsConstruct(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocMetastoreFederationIamPolicy.GoogleDataprocMetastoreFederationIamPolicy",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamPolicy.GoogleDataprocMetastoreFederationIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GoogleDataprocMetastoreFederationIamPolicy_IsTerraformElement(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocMetastoreFederationIamPolicy.GoogleDataprocMetastoreFederationIamPolicy",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamPolicy.GoogleDataprocMetastoreFederationIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GoogleDataprocMetastoreFederationIamPolicy_IsTerraformResource(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocMetastoreFederationIamPolicy.GoogleDataprocMetastoreFederationIamPolicy",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamPolicy.GoogleDataprocMetastoreFederationIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GoogleDataprocMetastoreFederationIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataprocMetastoreFederationIamPolicy.GoogleDataprocMetastoreFederationIamPolicy",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamPolicy.GoogleDataprocMetastoreFederationIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

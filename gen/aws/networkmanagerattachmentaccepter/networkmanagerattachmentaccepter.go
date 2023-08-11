@@ -454,7 +454,7 @@ func NewNetworkmanagerAttachmentAccepter(scope constructs.Construct, id *string,
 	j := jsiiProxy_NetworkmanagerAttachmentAccepter{}
 
 	_jsii_.Create(
-		"aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepter",
+		"@cdktf/provider-aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -467,7 +467,7 @@ func NewNetworkmanagerAttachmentAccepter_Override(n NetworkmanagerAttachmentAcce
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepter",
+		"@cdktf/provider-aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepter",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -600,7 +600,7 @@ func NetworkmanagerAttachmentAccepter_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepter",
+		"@cdktf/provider-aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func NetworkmanagerAttachmentAccepter_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepter",
+		"@cdktf/provider-aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -638,7 +638,7 @@ func NetworkmanagerAttachmentAccepter_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepter",
+		"@cdktf/provider-aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepter",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -651,7 +651,7 @@ func NetworkmanagerAttachmentAccepter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepter",
+		"@cdktf/provider-aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepter",
 		"tfResourceType",
 		&returns,
 	)

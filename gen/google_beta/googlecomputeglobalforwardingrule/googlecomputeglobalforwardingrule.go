@@ -709,7 +709,7 @@ func NewGoogleComputeGlobalForwardingRule(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleComputeGlobalForwardingRule{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRule",
+		"@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -722,7 +722,7 @@ func NewGoogleComputeGlobalForwardingRule_Override(g GoogleComputeGlobalForwardi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRule",
+		"@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRule",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -976,7 +976,7 @@ func GoogleComputeGlobalForwardingRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRule",
+		"@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -995,7 +995,7 @@ func GoogleComputeGlobalForwardingRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRule",
+		"@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1014,7 +1014,7 @@ func GoogleComputeGlobalForwardingRule_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRule",
+		"@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1027,7 +1027,7 @@ func GoogleComputeGlobalForwardingRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRule",
+		"@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRule",
 		"tfResourceType",
 		&returns,
 	)

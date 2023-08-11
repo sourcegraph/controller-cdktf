@@ -448,7 +448,7 @@ func NewCloudfunctions2FunctionIamBinding(scope constructs.Construct, id *string
 	j := jsiiProxy_Cloudfunctions2FunctionIamBinding{}
 
 	_jsii_.Create(
-		"google.cloudfunctions2FunctionIamBinding.Cloudfunctions2FunctionIamBinding",
+		"@cdktf/provider-google.cloudfunctions2FunctionIamBinding.Cloudfunctions2FunctionIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewCloudfunctions2FunctionIamBinding_Override(c Cloudfunctions2FunctionIamB
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudfunctions2FunctionIamBinding.Cloudfunctions2FunctionIamBinding",
+		"@cdktf/provider-google.cloudfunctions2FunctionIamBinding.Cloudfunctions2FunctionIamBinding",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -627,7 +627,7 @@ func Cloudfunctions2FunctionIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudfunctions2FunctionIamBinding.Cloudfunctions2FunctionIamBinding",
+		"@cdktf/provider-google.cloudfunctions2FunctionIamBinding.Cloudfunctions2FunctionIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func Cloudfunctions2FunctionIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudfunctions2FunctionIamBinding.Cloudfunctions2FunctionIamBinding",
+		"@cdktf/provider-google.cloudfunctions2FunctionIamBinding.Cloudfunctions2FunctionIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func Cloudfunctions2FunctionIamBinding_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudfunctions2FunctionIamBinding.Cloudfunctions2FunctionIamBinding",
+		"@cdktf/provider-google.cloudfunctions2FunctionIamBinding.Cloudfunctions2FunctionIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func Cloudfunctions2FunctionIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudfunctions2FunctionIamBinding.Cloudfunctions2FunctionIamBinding",
+		"@cdktf/provider-google.cloudfunctions2FunctionIamBinding.Cloudfunctions2FunctionIamBinding",
 		"tfResourceType",
 		&returns,
 	)

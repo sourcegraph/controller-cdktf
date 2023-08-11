@@ -469,7 +469,7 @@ func NewDataAwsEksCluster(scope constructs.Construct, id *string, config *DataAw
 	j := jsiiProxy_DataAwsEksCluster{}
 
 	_jsii_.Create(
-		"aws.dataAwsEksCluster.DataAwsEksCluster",
+		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -482,7 +482,7 @@ func NewDataAwsEksCluster_Override(d DataAwsEksCluster, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEksCluster.DataAwsEksCluster",
+		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksCluster",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -593,7 +593,7 @@ func DataAwsEksCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEksCluster.DataAwsEksCluster",
+		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func DataAwsEksCluster_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEksCluster.DataAwsEksCluster",
+		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksCluster",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func DataAwsEksCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEksCluster.DataAwsEksCluster",
+		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func DataAwsEksCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEksCluster.DataAwsEksCluster",
+		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksCluster",
 		"tfResourceType",
 		&returns,
 	)

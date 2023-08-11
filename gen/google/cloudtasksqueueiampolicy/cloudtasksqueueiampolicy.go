@@ -401,7 +401,7 @@ func NewCloudTasksQueueIamPolicy(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_CloudTasksQueueIamPolicy{}
 
 	_jsii_.Create(
-		"google.cloudTasksQueueIamPolicy.CloudTasksQueueIamPolicy",
+		"@cdktf/provider-google.cloudTasksQueueIamPolicy.CloudTasksQueueIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewCloudTasksQueueIamPolicy_Override(c CloudTasksQueueIamPolicy, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudTasksQueueIamPolicy.CloudTasksQueueIamPolicy",
+		"@cdktf/provider-google.cloudTasksQueueIamPolicy.CloudTasksQueueIamPolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -569,7 +569,7 @@ func CloudTasksQueueIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudTasksQueueIamPolicy.CloudTasksQueueIamPolicy",
+		"@cdktf/provider-google.cloudTasksQueueIamPolicy.CloudTasksQueueIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func CloudTasksQueueIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudTasksQueueIamPolicy.CloudTasksQueueIamPolicy",
+		"@cdktf/provider-google.cloudTasksQueueIamPolicy.CloudTasksQueueIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func CloudTasksQueueIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudTasksQueueIamPolicy.CloudTasksQueueIamPolicy",
+		"@cdktf/provider-google.cloudTasksQueueIamPolicy.CloudTasksQueueIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func CloudTasksQueueIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudTasksQueueIamPolicy.CloudTasksQueueIamPolicy",
+		"@cdktf/provider-google.cloudTasksQueueIamPolicy.CloudTasksQueueIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

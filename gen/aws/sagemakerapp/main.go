@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sagemakerApp.SagemakerApp",
+		"@cdktf/provider-aws.sagemakerApp.SagemakerApp",
 		reflect.TypeOf((*SagemakerApp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,15 +78,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerApp.SagemakerAppConfig",
+		"@cdktf/provider-aws.sagemakerApp.SagemakerAppConfig",
 		reflect.TypeOf((*SagemakerAppConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerApp.SagemakerAppResourceSpec",
+		"@cdktf/provider-aws.sagemakerApp.SagemakerAppResourceSpec",
 		reflect.TypeOf((*SagemakerAppResourceSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerApp.SagemakerAppResourceSpecOutputReference",
+		"@cdktf/provider-aws.sagemakerApp.SagemakerAppResourceSpecOutputReference",
 		reflect.TypeOf((*SagemakerAppResourceSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

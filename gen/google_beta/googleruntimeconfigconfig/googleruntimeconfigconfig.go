@@ -367,7 +367,7 @@ func NewGoogleRuntimeconfigConfig(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleRuntimeconfigConfig{}
 
 	_jsii_.Create(
-		"google-beta.googleRuntimeconfigConfig.GoogleRuntimeconfigConfig",
+		"@cdktf/provider-google-beta.googleRuntimeconfigConfig.GoogleRuntimeconfigConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewGoogleRuntimeconfigConfig_Override(g GoogleRuntimeconfigConfig, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleRuntimeconfigConfig.GoogleRuntimeconfigConfig",
+		"@cdktf/provider-google-beta.googleRuntimeconfigConfig.GoogleRuntimeconfigConfig",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -524,7 +524,7 @@ func GoogleRuntimeconfigConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleRuntimeconfigConfig.GoogleRuntimeconfigConfig",
+		"@cdktf/provider-google-beta.googleRuntimeconfigConfig.GoogleRuntimeconfigConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func GoogleRuntimeconfigConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleRuntimeconfigConfig.GoogleRuntimeconfigConfig",
+		"@cdktf/provider-google-beta.googleRuntimeconfigConfig.GoogleRuntimeconfigConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func GoogleRuntimeconfigConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleRuntimeconfigConfig.GoogleRuntimeconfigConfig",
+		"@cdktf/provider-google-beta.googleRuntimeconfigConfig.GoogleRuntimeconfigConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func GoogleRuntimeconfigConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleRuntimeconfigConfig.GoogleRuntimeconfigConfig",
+		"@cdktf/provider-google-beta.googleRuntimeconfigConfig.GoogleRuntimeconfigConfig",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.alb.Alb",
+		"@cdktf/provider-aws.alb.Alb",
 		reflect.TypeOf((*Alb)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessLogs", GoGetter: "AccessLogs"},
@@ -126,11 +126,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.alb.AlbAccessLogs",
+		"@cdktf/provider-aws.alb.AlbAccessLogs",
 		reflect.TypeOf((*AlbAccessLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.alb.AlbAccessLogsOutputReference",
+		"@cdktf/provider-aws.alb.AlbAccessLogsOutputReference",
 		reflect.TypeOf((*AlbAccessLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -170,15 +170,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.alb.AlbConfig",
+		"@cdktf/provider-aws.alb.AlbConfig",
 		reflect.TypeOf((*AlbConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.alb.AlbSubnetMapping",
+		"@cdktf/provider-aws.alb.AlbSubnetMapping",
 		reflect.TypeOf((*AlbSubnetMapping)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.alb.AlbSubnetMappingList",
+		"@cdktf/provider-aws.alb.AlbSubnetMappingList",
 		reflect.TypeOf((*AlbSubnetMappingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -199,7 +199,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.alb.AlbSubnetMappingOutputReference",
+		"@cdktf/provider-aws.alb.AlbSubnetMappingOutputReference",
 		reflect.TypeOf((*AlbSubnetMappingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocationId", GoGetter: "AllocationId"},
@@ -243,11 +243,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.alb.AlbTimeouts",
+		"@cdktf/provider-aws.alb.AlbTimeouts",
 		reflect.TypeOf((*AlbTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.alb.AlbTimeoutsOutputReference",
+		"@cdktf/provider-aws.alb.AlbTimeoutsOutputReference",
 		reflect.TypeOf((*AlbTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

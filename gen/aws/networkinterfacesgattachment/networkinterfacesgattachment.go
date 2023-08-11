@@ -342,7 +342,7 @@ func NewNetworkInterfaceSgAttachment(scope constructs.Construct, id *string, con
 	j := jsiiProxy_NetworkInterfaceSgAttachment{}
 
 	_jsii_.Create(
-		"aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachment",
+		"@cdktf/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewNetworkInterfaceSgAttachment_Override(n NetworkInterfaceSgAttachment, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachment",
+		"@cdktf/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachment",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -488,7 +488,7 @@ func NetworkInterfaceSgAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachment",
+		"@cdktf/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func NetworkInterfaceSgAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachment",
+		"@cdktf/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func NetworkInterfaceSgAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachment",
+		"@cdktf/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func NetworkInterfaceSgAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachment",
+		"@cdktf/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachment",
 		"tfResourceType",
 		&returns,
 	)

@@ -336,7 +336,7 @@ func NewDataAwsWafv2RuleGroup(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataAwsWafv2RuleGroup{}
 
 	_jsii_.Create(
-		"aws.dataAwsWafv2RuleGroup.DataAwsWafv2RuleGroup",
+		"@cdktf/provider-aws.dataAwsWafv2RuleGroup.DataAwsWafv2RuleGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -349,7 +349,7 @@ func NewDataAwsWafv2RuleGroup_Override(d DataAwsWafv2RuleGroup, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsWafv2RuleGroup.DataAwsWafv2RuleGroup",
+		"@cdktf/provider-aws.dataAwsWafv2RuleGroup.DataAwsWafv2RuleGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -460,7 +460,7 @@ func DataAwsWafv2RuleGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafv2RuleGroup.DataAwsWafv2RuleGroup",
+		"@cdktf/provider-aws.dataAwsWafv2RuleGroup.DataAwsWafv2RuleGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -479,7 +479,7 @@ func DataAwsWafv2RuleGroup_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafv2RuleGroup.DataAwsWafv2RuleGroup",
+		"@cdktf/provider-aws.dataAwsWafv2RuleGroup.DataAwsWafv2RuleGroup",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -498,7 +498,7 @@ func DataAwsWafv2RuleGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafv2RuleGroup.DataAwsWafv2RuleGroup",
+		"@cdktf/provider-aws.dataAwsWafv2RuleGroup.DataAwsWafv2RuleGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -511,7 +511,7 @@ func DataAwsWafv2RuleGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsWafv2RuleGroup.DataAwsWafv2RuleGroup",
+		"@cdktf/provider-aws.dataAwsWafv2RuleGroup.DataAwsWafv2RuleGroup",
 		"tfResourceType",
 		&returns,
 	)

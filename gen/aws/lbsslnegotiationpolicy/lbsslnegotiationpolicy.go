@@ -389,7 +389,7 @@ func NewLbSslNegotiationPolicy(scope constructs.Construct, id *string, config *L
 	j := jsiiProxy_LbSslNegotiationPolicy{}
 
 	_jsii_.Create(
-		"aws.lbSslNegotiationPolicy.LbSslNegotiationPolicy",
+		"@cdktf/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -402,7 +402,7 @@ func NewLbSslNegotiationPolicy_Override(l LbSslNegotiationPolicy, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbSslNegotiationPolicy.LbSslNegotiationPolicy",
+		"@cdktf/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicy",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -546,7 +546,7 @@ func LbSslNegotiationPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lbSslNegotiationPolicy.LbSslNegotiationPolicy",
+		"@cdktf/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func LbSslNegotiationPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lbSslNegotiationPolicy.LbSslNegotiationPolicy",
+		"@cdktf/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func LbSslNegotiationPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lbSslNegotiationPolicy.LbSslNegotiationPolicy",
+		"@cdktf/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func LbSslNegotiationPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lbSslNegotiationPolicy.LbSslNegotiationPolicy",
+		"@cdktf/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicy",
 		"tfResourceType",
 		&returns,
 	)

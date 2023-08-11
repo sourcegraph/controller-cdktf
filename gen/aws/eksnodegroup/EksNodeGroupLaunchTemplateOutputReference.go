@@ -227,7 +227,7 @@ func NewEksNodeGroupLaunchTemplateOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_EksNodeGroupLaunchTemplateOutputReference{}
 
 	_jsii_.Create(
-		"aws.eksNodeGroup.EksNodeGroupLaunchTemplateOutputReference",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewEksNodeGroupLaunchTemplateOutputReference_Override(e EksNodeGroupLaunchT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksNodeGroup.EksNodeGroupLaunchTemplateOutputReference",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupLaunchTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

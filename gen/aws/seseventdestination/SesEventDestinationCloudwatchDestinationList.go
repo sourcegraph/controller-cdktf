@@ -116,7 +116,7 @@ func NewSesEventDestinationCloudwatchDestinationList(terraformResource cdktf.IIn
 	j := jsiiProxy_SesEventDestinationCloudwatchDestinationList{}
 
 	_jsii_.Create(
-		"aws.sesEventDestination.SesEventDestinationCloudwatchDestinationList",
+		"@cdktf/provider-aws.sesEventDestination.SesEventDestinationCloudwatchDestinationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSesEventDestinationCloudwatchDestinationList_Override(s SesEventDestinat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesEventDestination.SesEventDestinationCloudwatchDestinationList",
+		"@cdktf/provider-aws.sesEventDestination.SesEventDestinationCloudwatchDestinationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

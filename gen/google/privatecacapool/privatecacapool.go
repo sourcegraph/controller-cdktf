@@ -485,7 +485,7 @@ func NewPrivatecaCaPool(scope constructs.Construct, id *string, config *Privatec
 	j := jsiiProxy_PrivatecaCaPool{}
 
 	_jsii_.Create(
-		"google.privatecaCaPool.PrivatecaCaPool",
+		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -498,7 +498,7 @@ func NewPrivatecaCaPool_Override(p PrivatecaCaPool, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCaPool.PrivatecaCaPool",
+		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPool",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -664,7 +664,7 @@ func PrivatecaCaPool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCaPool.PrivatecaCaPool",
+		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -683,7 +683,7 @@ func PrivatecaCaPool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCaPool.PrivatecaCaPool",
+		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func PrivatecaCaPool_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCaPool.PrivatecaCaPool",
+		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPool",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func PrivatecaCaPool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.privatecaCaPool.PrivatecaCaPool",
+		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPool",
 		"tfResourceType",
 		&returns,
 	)

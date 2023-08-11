@@ -461,7 +461,7 @@ func NewIamWorkloadIdentityPool(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_IamWorkloadIdentityPool{}
 
 	_jsii_.Create(
-		"google.iamWorkloadIdentityPool.IamWorkloadIdentityPool",
+		"@cdktf/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -474,7 +474,7 @@ func NewIamWorkloadIdentityPool_Override(i IamWorkloadIdentityPool, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iamWorkloadIdentityPool.IamWorkloadIdentityPool",
+		"@cdktf/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPool",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -640,7 +640,7 @@ func IamWorkloadIdentityPool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iamWorkloadIdentityPool.IamWorkloadIdentityPool",
+		"@cdktf/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -659,7 +659,7 @@ func IamWorkloadIdentityPool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iamWorkloadIdentityPool.IamWorkloadIdentityPool",
+		"@cdktf/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func IamWorkloadIdentityPool_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iamWorkloadIdentityPool.IamWorkloadIdentityPool",
+		"@cdktf/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPool",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func IamWorkloadIdentityPool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.iamWorkloadIdentityPool.IamWorkloadIdentityPool",
+		"@cdktf/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPool",
 		"tfResourceType",
 		&returns,
 	)

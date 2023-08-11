@@ -116,7 +116,7 @@ func NewOpensearchDomainLogPublishingOptionsList(terraformResource cdktf.IInterp
 	j := jsiiProxy_OpensearchDomainLogPublishingOptionsList{}
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainLogPublishingOptionsList",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainLogPublishingOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOpensearchDomainLogPublishingOptionsList_Override(o OpensearchDomainLogP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainLogPublishingOptionsList",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainLogPublishingOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

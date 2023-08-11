@@ -448,7 +448,7 @@ func NewDataCatalogTaxonomyIamBinding(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataCatalogTaxonomyIamBinding{}
 
 	_jsii_.Create(
-		"google.dataCatalogTaxonomyIamBinding.DataCatalogTaxonomyIamBinding",
+		"@cdktf/provider-google.dataCatalogTaxonomyIamBinding.DataCatalogTaxonomyIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewDataCatalogTaxonomyIamBinding_Override(d DataCatalogTaxonomyIamBinding, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogTaxonomyIamBinding.DataCatalogTaxonomyIamBinding",
+		"@cdktf/provider-google.dataCatalogTaxonomyIamBinding.DataCatalogTaxonomyIamBinding",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -627,7 +627,7 @@ func DataCatalogTaxonomyIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTaxonomyIamBinding.DataCatalogTaxonomyIamBinding",
+		"@cdktf/provider-google.dataCatalogTaxonomyIamBinding.DataCatalogTaxonomyIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func DataCatalogTaxonomyIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTaxonomyIamBinding.DataCatalogTaxonomyIamBinding",
+		"@cdktf/provider-google.dataCatalogTaxonomyIamBinding.DataCatalogTaxonomyIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func DataCatalogTaxonomyIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTaxonomyIamBinding.DataCatalogTaxonomyIamBinding",
+		"@cdktf/provider-google.dataCatalogTaxonomyIamBinding.DataCatalogTaxonomyIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DataCatalogTaxonomyIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataCatalogTaxonomyIamBinding.DataCatalogTaxonomyIamBinding",
+		"@cdktf/provider-google.dataCatalogTaxonomyIamBinding.DataCatalogTaxonomyIamBinding",
 		"tfResourceType",
 		&returns,
 	)

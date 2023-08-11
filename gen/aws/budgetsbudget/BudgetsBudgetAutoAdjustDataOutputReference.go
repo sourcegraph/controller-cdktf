@@ -214,7 +214,7 @@ func NewBudgetsBudgetAutoAdjustDataOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_BudgetsBudgetAutoAdjustDataOutputReference{}
 
 	_jsii_.Create(
-		"aws.budgetsBudget.BudgetsBudgetAutoAdjustDataOutputReference",
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -226,7 +226,7 @@ func NewBudgetsBudgetAutoAdjustDataOutputReference_Override(b BudgetsBudgetAutoA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.budgetsBudget.BudgetsBudgetAutoAdjustDataOutputReference",
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

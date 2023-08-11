@@ -387,7 +387,7 @@ func NewTunnel(scope constructs.Construct, id *string, config *TunnelConfig) Tun
 	j := jsiiProxy_Tunnel{}
 
 	_jsii_.Create(
-		"cloudflare.tunnel.Tunnel",
+		"@cdktf/provider-cloudflare.tunnel.Tunnel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -400,7 +400,7 @@ func NewTunnel_Override(t Tunnel, scope constructs.Construct, id *string, config
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.tunnel.Tunnel",
+		"@cdktf/provider-cloudflare.tunnel.Tunnel",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -544,7 +544,7 @@ func Tunnel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.tunnel.Tunnel",
+		"@cdktf/provider-cloudflare.tunnel.Tunnel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func Tunnel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.tunnel.Tunnel",
+		"@cdktf/provider-cloudflare.tunnel.Tunnel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -582,7 +582,7 @@ func Tunnel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.tunnel.Tunnel",
+		"@cdktf/provider-cloudflare.tunnel.Tunnel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func Tunnel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.tunnel.Tunnel",
+		"@cdktf/provider-cloudflare.tunnel.Tunnel",
 		"tfResourceType",
 		&returns,
 	)

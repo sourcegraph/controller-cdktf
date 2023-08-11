@@ -104,7 +104,7 @@ func NewZoneSettingsOverrideInitialSettingsSecurityHeaderList(terraformResource 
 	j := jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList{}
 
 	_jsii_.Create(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsSecurityHeaderList",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsSecurityHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewZoneSettingsOverrideInitialSettingsSecurityHeaderList_Override(z ZoneSet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsSecurityHeaderList",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsSecurityHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		z,
 	)

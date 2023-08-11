@@ -589,7 +589,7 @@ func NewDataAwsRdsEngineVersion(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataAwsRdsEngineVersion{}
 
 	_jsii_.Create(
-		"aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion",
+		"@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -602,7 +602,7 @@ func NewDataAwsRdsEngineVersion_Override(d DataAwsRdsEngineVersion, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion",
+		"@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -757,7 +757,7 @@ func DataAwsRdsEngineVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion",
+		"@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -776,7 +776,7 @@ func DataAwsRdsEngineVersion_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion",
+		"@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -795,7 +795,7 @@ func DataAwsRdsEngineVersion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion",
+		"@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -808,7 +808,7 @@ func DataAwsRdsEngineVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion",
+		"@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion",
 		"tfResourceType",
 		&returns,
 	)

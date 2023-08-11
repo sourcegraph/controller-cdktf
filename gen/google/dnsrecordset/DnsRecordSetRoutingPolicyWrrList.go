@@ -116,7 +116,7 @@ func NewDnsRecordSetRoutingPolicyWrrList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_DnsRecordSetRoutingPolicyWrrList{}
 
 	_jsii_.Create(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrList",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDnsRecordSetRoutingPolicyWrrList_Override(d DnsRecordSetRoutingPolicyWrr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrList",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

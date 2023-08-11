@@ -179,7 +179,7 @@ func NewAthenaDatabaseAclConfigurationOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_AthenaDatabaseAclConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.athenaDatabase.AthenaDatabaseAclConfigurationOutputReference",
+		"@cdktf/provider-aws.athenaDatabase.AthenaDatabaseAclConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAthenaDatabaseAclConfigurationOutputReference_Override(a AthenaDatabaseA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.athenaDatabase.AthenaDatabaseAclConfigurationOutputReference",
+		"@cdktf/provider-aws.athenaDatabase.AthenaDatabaseAclConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

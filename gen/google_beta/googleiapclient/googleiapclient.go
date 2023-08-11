@@ -388,7 +388,7 @@ func NewGoogleIapClient(scope constructs.Construct, id *string, config *GoogleIa
 	j := jsiiProxy_GoogleIapClient{}
 
 	_jsii_.Create(
-		"google-beta.googleIapClient.GoogleIapClient",
+		"@cdktf/provider-google-beta.googleIapClient.GoogleIapClient",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -401,7 +401,7 @@ func NewGoogleIapClient_Override(g GoogleIapClient, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIapClient.GoogleIapClient",
+		"@cdktf/provider-google-beta.googleIapClient.GoogleIapClient",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -534,7 +534,7 @@ func GoogleIapClient_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapClient.GoogleIapClient",
+		"@cdktf/provider-google-beta.googleIapClient.GoogleIapClient",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func GoogleIapClient_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapClient.GoogleIapClient",
+		"@cdktf/provider-google-beta.googleIapClient.GoogleIapClient",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func GoogleIapClient_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapClient.GoogleIapClient",
+		"@cdktf/provider-google-beta.googleIapClient.GoogleIapClient",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func GoogleIapClient_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleIapClient.GoogleIapClient",
+		"@cdktf/provider-google-beta.googleIapClient.GoogleIapClient",
 		"tfResourceType",
 		&returns,
 	)

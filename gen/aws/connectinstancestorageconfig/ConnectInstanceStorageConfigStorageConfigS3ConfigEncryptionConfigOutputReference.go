@@ -202,7 +202,7 @@ func NewConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputR
 	j := jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

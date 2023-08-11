@@ -337,7 +337,7 @@ func NewDataGoogleComputeImageIamPolicy(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataGoogleComputeImageIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeImageIamPolicy.DataGoogleComputeImageIamPolicy",
+		"@cdktf/provider-google.dataGoogleComputeImageIamPolicy.DataGoogleComputeImageIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -350,7 +350,7 @@ func NewDataGoogleComputeImageIamPolicy_Override(d DataGoogleComputeImageIamPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeImageIamPolicy.DataGoogleComputeImageIamPolicy",
+		"@cdktf/provider-google.dataGoogleComputeImageIamPolicy.DataGoogleComputeImageIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -461,7 +461,7 @@ func DataGoogleComputeImageIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeImageIamPolicy.DataGoogleComputeImageIamPolicy",
+		"@cdktf/provider-google.dataGoogleComputeImageIamPolicy.DataGoogleComputeImageIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataGoogleComputeImageIamPolicy_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeImageIamPolicy.DataGoogleComputeImageIamPolicy",
+		"@cdktf/provider-google.dataGoogleComputeImageIamPolicy.DataGoogleComputeImageIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataGoogleComputeImageIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeImageIamPolicy.DataGoogleComputeImageIamPolicy",
+		"@cdktf/provider-google.dataGoogleComputeImageIamPolicy.DataGoogleComputeImageIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataGoogleComputeImageIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleComputeImageIamPolicy.DataGoogleComputeImageIamPolicy",
+		"@cdktf/provider-google.dataGoogleComputeImageIamPolicy.DataGoogleComputeImageIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewNetworkConnectivitySpokeTimeoutsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_NetworkConnectivitySpokeTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpokeTimeoutsOutputReference",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewNetworkConnectivitySpokeTimeoutsOutputReference_Override(n NetworkConnec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpokeTimeoutsOutputReference",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

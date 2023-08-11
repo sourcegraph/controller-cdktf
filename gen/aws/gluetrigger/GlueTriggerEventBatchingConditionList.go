@@ -116,7 +116,7 @@ func NewGlueTriggerEventBatchingConditionList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_GlueTriggerEventBatchingConditionList{}
 
 	_jsii_.Create(
-		"aws.glueTrigger.GlueTriggerEventBatchingConditionList",
+		"@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingConditionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGlueTriggerEventBatchingConditionList_Override(g GlueTriggerEventBatchin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueTrigger.GlueTriggerEventBatchingConditionList",
+		"@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingConditionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

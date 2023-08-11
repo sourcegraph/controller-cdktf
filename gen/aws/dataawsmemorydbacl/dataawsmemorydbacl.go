@@ -348,7 +348,7 @@ func NewDataAwsMemorydbAcl(scope constructs.Construct, id *string, config *DataA
 	j := jsiiProxy_DataAwsMemorydbAcl{}
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl",
+		"@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -361,7 +361,7 @@ func NewDataAwsMemorydbAcl_Override(d DataAwsMemorydbAcl, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl",
+		"@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -472,7 +472,7 @@ func DataAwsMemorydbAcl_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl",
+		"@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -491,7 +491,7 @@ func DataAwsMemorydbAcl_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl",
+		"@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -510,7 +510,7 @@ func DataAwsMemorydbAcl_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl",
+		"@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +523,7 @@ func DataAwsMemorydbAcl_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl",
+		"@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl",
 		"tfResourceType",
 		&returns,
 	)

@@ -603,7 +603,7 @@ func NewGoogleTpuNode(scope constructs.Construct, id *string, config *GoogleTpuN
 	j := jsiiProxy_GoogleTpuNode{}
 
 	_jsii_.Create(
-		"google-beta.googleTpuNode.GoogleTpuNode",
+		"@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNode",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -616,7 +616,7 @@ func NewGoogleTpuNode_Override(g GoogleTpuNode, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleTpuNode.GoogleTpuNode",
+		"@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNode",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -837,7 +837,7 @@ func GoogleTpuNode_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTpuNode.GoogleTpuNode",
+		"@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNode",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -856,7 +856,7 @@ func GoogleTpuNode_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTpuNode.GoogleTpuNode",
+		"@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNode",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -875,7 +875,7 @@ func GoogleTpuNode_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTpuNode.GoogleTpuNode",
+		"@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNode",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -888,7 +888,7 @@ func GoogleTpuNode_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleTpuNode.GoogleTpuNode",
+		"@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNode",
 		"tfResourceType",
 		&returns,
 	)

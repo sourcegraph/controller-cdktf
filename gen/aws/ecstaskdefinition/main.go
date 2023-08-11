@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinition",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition",
 		reflect.TypeOf((*EcsTaskDefinition)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -118,15 +118,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionConfig",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig",
 		reflect.TypeOf((*EcsTaskDefinitionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorage",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorage",
 		reflect.TypeOf((*EcsTaskDefinitionEphemeralStorage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorageOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorageOutputReference",
 		reflect.TypeOf((*EcsTaskDefinitionEphemeralStorageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -160,11 +160,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAccelerator",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAccelerator",
 		reflect.TypeOf((*EcsTaskDefinitionInferenceAccelerator)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorList",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorList",
 		reflect.TypeOf((*EcsTaskDefinitionInferenceAcceleratorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -185,7 +185,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorOutputReference",
 		reflect.TypeOf((*EcsTaskDefinitionInferenceAcceleratorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -221,11 +221,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraints",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraints",
 		reflect.TypeOf((*EcsTaskDefinitionPlacementConstraints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsList",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsList",
 		reflect.TypeOf((*EcsTaskDefinitionPlacementConstraintsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -246,7 +246,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsOutputReference",
 		reflect.TypeOf((*EcsTaskDefinitionPlacementConstraintsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -283,11 +283,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfiguration",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfiguration",
 		reflect.TypeOf((*EcsTaskDefinitionProxyConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfigurationOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfigurationOutputReference",
 		reflect.TypeOf((*EcsTaskDefinitionProxyConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -327,11 +327,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatform",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatform",
 		reflect.TypeOf((*EcsTaskDefinitionRuntimePlatform)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatformOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatformOutputReference",
 		reflect.TypeOf((*EcsTaskDefinitionRuntimePlatformOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -369,15 +369,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolume",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolume",
 		reflect.TypeOf((*EcsTaskDefinitionVolume)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration",
 		reflect.TypeOf((*EcsTaskDefinitionVolumeDockerVolumeConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference",
 		reflect.TypeOf((*EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoprovision", GoGetter: "Autoprovision"},
@@ -424,15 +424,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration",
 		reflect.TypeOf((*EcsTaskDefinitionVolumeEfsVolumeConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig",
 		reflect.TypeOf((*EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference",
 		reflect.TypeOf((*EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessPointId", GoGetter: "AccessPointId"},
@@ -470,7 +470,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference",
 		reflect.TypeOf((*EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizationConfig", GoGetter: "AuthorizationConfig"},
@@ -517,15 +517,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration",
 		reflect.TypeOf((*EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig",
 		reflect.TypeOf((*EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference",
 		reflect.TypeOf((*EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -561,7 +561,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference",
 		reflect.TypeOf((*EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizationConfig", GoGetter: "AuthorizationConfig"},
@@ -600,7 +600,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeList",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeList",
 		reflect.TypeOf((*EcsTaskDefinitionVolumeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -621,7 +621,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeOutputReference",
 		reflect.TypeOf((*EcsTaskDefinitionVolumeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

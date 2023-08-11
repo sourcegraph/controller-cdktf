@@ -678,7 +678,7 @@ func NewGooglePubsubSubscription(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_GooglePubsubSubscription{}
 
 	_jsii_.Create(
-		"google-beta.googlePubsubSubscription.GooglePubsubSubscription",
+		"@cdktf/provider-google-beta.googlePubsubSubscription.GooglePubsubSubscription",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -691,7 +691,7 @@ func NewGooglePubsubSubscription_Override(g GooglePubsubSubscription, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePubsubSubscription.GooglePubsubSubscription",
+		"@cdktf/provider-google-beta.googlePubsubSubscription.GooglePubsubSubscription",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -912,7 +912,7 @@ func GooglePubsubSubscription_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubSubscription.GooglePubsubSubscription",
+		"@cdktf/provider-google-beta.googlePubsubSubscription.GooglePubsubSubscription",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -931,7 +931,7 @@ func GooglePubsubSubscription_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubSubscription.GooglePubsubSubscription",
+		"@cdktf/provider-google-beta.googlePubsubSubscription.GooglePubsubSubscription",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -950,7 +950,7 @@ func GooglePubsubSubscription_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubSubscription.GooglePubsubSubscription",
+		"@cdktf/provider-google-beta.googlePubsubSubscription.GooglePubsubSubscription",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -963,7 +963,7 @@ func GooglePubsubSubscription_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googlePubsubSubscription.GooglePubsubSubscription",
+		"@cdktf/provider-google-beta.googlePubsubSubscription.GooglePubsubSubscription",
 		"tfResourceType",
 		&returns,
 	)

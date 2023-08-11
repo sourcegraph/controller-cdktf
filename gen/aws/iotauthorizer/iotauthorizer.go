@@ -473,7 +473,7 @@ func NewIotAuthorizer(scope constructs.Construct, id *string, config *IotAuthori
 	j := jsiiProxy_IotAuthorizer{}
 
 	_jsii_.Create(
-		"aws.iotAuthorizer.IotAuthorizer",
+		"@cdktf/provider-aws.iotAuthorizer.IotAuthorizer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -486,7 +486,7 @@ func NewIotAuthorizer_Override(i IotAuthorizer, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotAuthorizer.IotAuthorizer",
+		"@cdktf/provider-aws.iotAuthorizer.IotAuthorizer",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -674,7 +674,7 @@ func IotAuthorizer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotAuthorizer.IotAuthorizer",
+		"@cdktf/provider-aws.iotAuthorizer.IotAuthorizer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -693,7 +693,7 @@ func IotAuthorizer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotAuthorizer.IotAuthorizer",
+		"@cdktf/provider-aws.iotAuthorizer.IotAuthorizer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +712,7 @@ func IotAuthorizer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotAuthorizer.IotAuthorizer",
+		"@cdktf/provider-aws.iotAuthorizer.IotAuthorizer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -725,7 +725,7 @@ func IotAuthorizer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iotAuthorizer.IotAuthorizer",
+		"@cdktf/provider-aws.iotAuthorizer.IotAuthorizer",
 		"tfResourceType",
 		&returns,
 	)

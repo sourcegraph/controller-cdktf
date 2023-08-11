@@ -261,7 +261,7 @@ func NewPersistentVolumeV1MetadataOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_PersistentVolumeV1MetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.persistentVolumeV1.PersistentVolumeV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolumeV1.PersistentVolumeV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -273,7 +273,7 @@ func NewPersistentVolumeV1MetadataOutputReference_Override(p PersistentVolumeV1M
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.persistentVolumeV1.PersistentVolumeV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolumeV1.PersistentVolumeV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

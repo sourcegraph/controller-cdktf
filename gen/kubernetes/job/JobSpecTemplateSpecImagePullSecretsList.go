@@ -116,7 +116,7 @@ func NewJobSpecTemplateSpecImagePullSecretsList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_JobSpecTemplateSpecImagePullSecretsList{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecImagePullSecretsList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecImagePullSecretsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewJobSpecTemplateSpecImagePullSecretsList_Override(j JobSpecTemplateSpecIm
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecImagePullSecretsList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecImagePullSecretsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)

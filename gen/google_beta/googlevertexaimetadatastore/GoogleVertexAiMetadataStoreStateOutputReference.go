@@ -167,7 +167,7 @@ func NewGoogleVertexAiMetadataStoreStateOutputReference(terraformResource cdktf.
 	j := jsiiProxy_GoogleVertexAiMetadataStoreStateOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreStateOutputReference",
+		"@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreStateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewGoogleVertexAiMetadataStoreStateOutputReference_Override(g GoogleVertexA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreStateOutputReference",
+		"@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreStateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

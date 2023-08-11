@@ -519,7 +519,7 @@ func NewIamServerCertificate(scope constructs.Construct, id *string, config *Iam
 	j := jsiiProxy_IamServerCertificate{}
 
 	_jsii_.Create(
-		"aws.iamServerCertificate.IamServerCertificate",
+		"@cdktf/provider-aws.iamServerCertificate.IamServerCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -532,7 +532,7 @@ func NewIamServerCertificate_Override(i IamServerCertificate, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iamServerCertificate.IamServerCertificate",
+		"@cdktf/provider-aws.iamServerCertificate.IamServerCertificate",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -731,7 +731,7 @@ func IamServerCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamServerCertificate.IamServerCertificate",
+		"@cdktf/provider-aws.iamServerCertificate.IamServerCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -750,7 +750,7 @@ func IamServerCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamServerCertificate.IamServerCertificate",
+		"@cdktf/provider-aws.iamServerCertificate.IamServerCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -769,7 +769,7 @@ func IamServerCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamServerCertificate.IamServerCertificate",
+		"@cdktf/provider-aws.iamServerCertificate.IamServerCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -782,7 +782,7 @@ func IamServerCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iamServerCertificate.IamServerCertificate",
+		"@cdktf/provider-aws.iamServerCertificate.IamServerCertificate",
 		"tfResourceType",
 		&returns,
 	)

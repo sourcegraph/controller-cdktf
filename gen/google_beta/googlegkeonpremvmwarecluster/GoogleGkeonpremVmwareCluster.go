@@ -866,7 +866,7 @@ func NewGoogleGkeonpremVmwareCluster(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleGkeonpremVmwareCluster{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareCluster",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -879,7 +879,7 @@ func NewGoogleGkeonpremVmwareCluster_Override(g GoogleGkeonpremVmwareCluster, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareCluster",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareCluster",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1089,7 +1089,7 @@ func GoogleGkeonpremVmwareCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareCluster",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1108,7 +1108,7 @@ func GoogleGkeonpremVmwareCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareCluster",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1127,7 +1127,7 @@ func GoogleGkeonpremVmwareCluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareCluster",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1140,7 +1140,7 @@ func GoogleGkeonpremVmwareCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareCluster",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareCluster",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewContainerNodePoolNodeConfigTaintOutputReference(terraformResource cdktf.
 	j := jsiiProxy_ContainerNodePoolNodeConfigTaintOutputReference{}
 
 	_jsii_.Create(
-		"google.containerNodePool.ContainerNodePoolNodeConfigTaintOutputReference",
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigTaintOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewContainerNodePoolNodeConfigTaintOutputReference_Override(c ContainerNode
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerNodePool.ContainerNodePoolNodeConfigTaintOutputReference",
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigTaintOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

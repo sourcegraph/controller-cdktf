@@ -215,7 +215,7 @@ func NewCloudTasksQueueRateLimitsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_CloudTasksQueueRateLimitsOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudTasksQueue.CloudTasksQueueRateLimitsOutputReference",
+		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueRateLimitsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -227,7 +227,7 @@ func NewCloudTasksQueueRateLimitsOutputReference_Override(c CloudTasksQueueRateL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudTasksQueue.CloudTasksQueueRateLimitsOutputReference",
+		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueRateLimitsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

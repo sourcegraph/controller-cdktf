@@ -389,7 +389,7 @@ func NewDomain(scope constructs.Construct, id *string, config *DomainConfig) Dom
 	j := jsiiProxy_Domain{}
 
 	_jsii_.Create(
-		"okta.domain.Domain",
+		"@cdktf/provider-okta.domain.Domain",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -402,7 +402,7 @@ func NewDomain_Override(d Domain, scope constructs.Construct, id *string, config
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.domain.Domain",
+		"@cdktf/provider-okta.domain.Domain",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -546,7 +546,7 @@ func Domain_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.domain.Domain",
+		"@cdktf/provider-okta.domain.Domain",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func Domain_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.domain.Domain",
+		"@cdktf/provider-okta.domain.Domain",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func Domain_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.domain.Domain",
+		"@cdktf/provider-okta.domain.Domain",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func Domain_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.domain.Domain",
+		"@cdktf/provider-okta.domain.Domain",
 		"tfResourceType",
 		&returns,
 	)

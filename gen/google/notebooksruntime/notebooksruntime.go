@@ -495,7 +495,7 @@ func NewNotebooksRuntime(scope constructs.Construct, id *string, config *Noteboo
 	j := jsiiProxy_NotebooksRuntime{}
 
 	_jsii_.Create(
-		"google.notebooksRuntime.NotebooksRuntime",
+		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntime",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -508,7 +508,7 @@ func NewNotebooksRuntime_Override(n NotebooksRuntime, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.notebooksRuntime.NotebooksRuntime",
+		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntime",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -652,7 +652,7 @@ func NotebooksRuntime_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.notebooksRuntime.NotebooksRuntime",
+		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntime",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -671,7 +671,7 @@ func NotebooksRuntime_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.notebooksRuntime.NotebooksRuntime",
+		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntime",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -690,7 +690,7 @@ func NotebooksRuntime_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.notebooksRuntime.NotebooksRuntime",
+		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntime",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -703,7 +703,7 @@ func NotebooksRuntime_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.notebooksRuntime.NotebooksRuntime",
+		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntime",
 		"tfResourceType",
 		&returns,
 	)

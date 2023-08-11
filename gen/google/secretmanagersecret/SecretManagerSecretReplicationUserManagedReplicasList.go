@@ -116,7 +116,7 @@ func NewSecretManagerSecretReplicationUserManagedReplicasList(terraformResource 
 	j := jsiiProxy_SecretManagerSecretReplicationUserManagedReplicasList{}
 
 	_jsii_.Create(
-		"google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasList",
+		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecretManagerSecretReplicationUserManagedReplicasList_Override(s SecretM
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasList",
+		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

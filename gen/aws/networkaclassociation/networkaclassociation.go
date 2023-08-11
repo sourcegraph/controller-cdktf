@@ -342,7 +342,7 @@ func NewNetworkAclAssociation(scope constructs.Construct, id *string, config *Ne
 	j := jsiiProxy_NetworkAclAssociation{}
 
 	_jsii_.Create(
-		"aws.networkAclAssociation.NetworkAclAssociation",
+		"@cdktf/provider-aws.networkAclAssociation.NetworkAclAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewNetworkAclAssociation_Override(n NetworkAclAssociation, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkAclAssociation.NetworkAclAssociation",
+		"@cdktf/provider-aws.networkAclAssociation.NetworkAclAssociation",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -488,7 +488,7 @@ func NetworkAclAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkAclAssociation.NetworkAclAssociation",
+		"@cdktf/provider-aws.networkAclAssociation.NetworkAclAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func NetworkAclAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkAclAssociation.NetworkAclAssociation",
+		"@cdktf/provider-aws.networkAclAssociation.NetworkAclAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func NetworkAclAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkAclAssociation.NetworkAclAssociation",
+		"@cdktf/provider-aws.networkAclAssociation.NetworkAclAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func NetworkAclAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkAclAssociation.NetworkAclAssociation",
+		"@cdktf/provider-aws.networkAclAssociation.NetworkAclAssociation",
 		"tfResourceType",
 		&returns,
 	)

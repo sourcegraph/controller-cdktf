@@ -354,7 +354,7 @@ func NewWafregionalIpset(scope constructs.Construct, id *string, config *Wafregi
 	j := jsiiProxy_WafregionalIpset{}
 
 	_jsii_.Create(
-		"aws.wafregionalIpset.WafregionalIpset",
+		"@cdktf/provider-aws.wafregionalIpset.WafregionalIpset",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -367,7 +367,7 @@ func NewWafregionalIpset_Override(w WafregionalIpset, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalIpset.WafregionalIpset",
+		"@cdktf/provider-aws.wafregionalIpset.WafregionalIpset",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -489,7 +489,7 @@ func WafregionalIpset_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalIpset.WafregionalIpset",
+		"@cdktf/provider-aws.wafregionalIpset.WafregionalIpset",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func WafregionalIpset_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalIpset.WafregionalIpset",
+		"@cdktf/provider-aws.wafregionalIpset.WafregionalIpset",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func WafregionalIpset_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalIpset.WafregionalIpset",
+		"@cdktf/provider-aws.wafregionalIpset.WafregionalIpset",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func WafregionalIpset_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.wafregionalIpset.WafregionalIpset",
+		"@cdktf/provider-aws.wafregionalIpset.WafregionalIpset",
 		"tfResourceType",
 		&returns,
 	)

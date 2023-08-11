@@ -116,7 +116,7 @@ func NewImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigura
 	j := jsiiProxy_ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList{}
 
 	_jsii_.Create(
-		"aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList",
+		"@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigura
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList",
+		"@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

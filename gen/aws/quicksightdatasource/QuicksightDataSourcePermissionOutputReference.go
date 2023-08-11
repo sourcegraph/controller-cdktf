@@ -202,7 +202,7 @@ func NewQuicksightDataSourcePermissionOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_QuicksightDataSourcePermissionOutputReference{}
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourcePermissionOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermissionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewQuicksightDataSourcePermissionOutputReference_Override(q QuicksightDataS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourcePermissionOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermissionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		q,
 	)

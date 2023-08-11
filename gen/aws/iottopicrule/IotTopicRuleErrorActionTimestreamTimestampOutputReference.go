@@ -202,7 +202,7 @@ func NewIotTopicRuleErrorActionTimestreamTimestampOutputReference(terraformResou
 	j := jsiiProxy_IotTopicRuleErrorActionTimestreamTimestampOutputReference{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestampOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestampOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewIotTopicRuleErrorActionTimestreamTimestampOutputReference_Override(i Iot
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestampOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestampOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

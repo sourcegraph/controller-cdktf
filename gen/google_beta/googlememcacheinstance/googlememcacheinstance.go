@@ -660,7 +660,7 @@ func NewGoogleMemcacheInstance(scope constructs.Construct, id *string, config *G
 	j := jsiiProxy_GoogleMemcacheInstance{}
 
 	_jsii_.Create(
-		"google-beta.googleMemcacheInstance.GoogleMemcacheInstance",
+		"@cdktf/provider-google-beta.googleMemcacheInstance.GoogleMemcacheInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -673,7 +673,7 @@ func NewGoogleMemcacheInstance_Override(g GoogleMemcacheInstance, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMemcacheInstance.GoogleMemcacheInstance",
+		"@cdktf/provider-google-beta.googleMemcacheInstance.GoogleMemcacheInstance",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -883,7 +883,7 @@ func GoogleMemcacheInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMemcacheInstance.GoogleMemcacheInstance",
+		"@cdktf/provider-google-beta.googleMemcacheInstance.GoogleMemcacheInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -902,7 +902,7 @@ func GoogleMemcacheInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMemcacheInstance.GoogleMemcacheInstance",
+		"@cdktf/provider-google-beta.googleMemcacheInstance.GoogleMemcacheInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -921,7 +921,7 @@ func GoogleMemcacheInstance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMemcacheInstance.GoogleMemcacheInstance",
+		"@cdktf/provider-google-beta.googleMemcacheInstance.GoogleMemcacheInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -934,7 +934,7 @@ func GoogleMemcacheInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleMemcacheInstance.GoogleMemcacheInstance",
+		"@cdktf/provider-google-beta.googleMemcacheInstance.GoogleMemcacheInstance",
 		"tfResourceType",
 		&returns,
 	)

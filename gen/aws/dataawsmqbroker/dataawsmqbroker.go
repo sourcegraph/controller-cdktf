@@ -538,7 +538,7 @@ func NewDataAwsMqBroker(scope constructs.Construct, id *string, config *DataAwsM
 	j := jsiiProxy_DataAwsMqBroker{}
 
 	_jsii_.Create(
-		"aws.dataAwsMqBroker.DataAwsMqBroker",
+		"@cdktf/provider-aws.dataAwsMqBroker.DataAwsMqBroker",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -551,7 +551,7 @@ func NewDataAwsMqBroker_Override(d DataAwsMqBroker, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMqBroker.DataAwsMqBroker",
+		"@cdktf/provider-aws.dataAwsMqBroker.DataAwsMqBroker",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -673,7 +673,7 @@ func DataAwsMqBroker_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMqBroker.DataAwsMqBroker",
+		"@cdktf/provider-aws.dataAwsMqBroker.DataAwsMqBroker",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -692,7 +692,7 @@ func DataAwsMqBroker_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMqBroker.DataAwsMqBroker",
+		"@cdktf/provider-aws.dataAwsMqBroker.DataAwsMqBroker",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -711,7 +711,7 @@ func DataAwsMqBroker_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMqBroker.DataAwsMqBroker",
+		"@cdktf/provider-aws.dataAwsMqBroker.DataAwsMqBroker",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -724,7 +724,7 @@ func DataAwsMqBroker_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsMqBroker.DataAwsMqBroker",
+		"@cdktf/provider-aws.dataAwsMqBroker.DataAwsMqBroker",
 		"tfResourceType",
 		&returns,
 	)

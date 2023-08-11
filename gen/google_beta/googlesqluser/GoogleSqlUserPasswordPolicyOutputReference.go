@@ -263,7 +263,7 @@ func NewGoogleSqlUserPasswordPolicyOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleSqlUser.GoogleSqlUserPasswordPolicyOutputReference",
+		"@cdktf/provider-google-beta.googleSqlUser.GoogleSqlUserPasswordPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -275,7 +275,7 @@ func NewGoogleSqlUserPasswordPolicyOutputReference_Override(g GoogleSqlUserPassw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSqlUser.GoogleSqlUserPasswordPolicyOutputReference",
+		"@cdktf/provider-google-beta.googleSqlUser.GoogleSqlUserPasswordPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

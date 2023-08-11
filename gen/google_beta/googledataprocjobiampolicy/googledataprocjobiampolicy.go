@@ -401,7 +401,7 @@ func NewGoogleDataprocJobIamPolicy(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleDataprocJobIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy",
+		"@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleDataprocJobIamPolicy_Override(g GoogleDataprocJobIamPolicy, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy",
+		"@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GoogleDataprocJobIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy",
+		"@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GoogleDataprocJobIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy",
+		"@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GoogleDataprocJobIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy",
+		"@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GoogleDataprocJobIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy",
+		"@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

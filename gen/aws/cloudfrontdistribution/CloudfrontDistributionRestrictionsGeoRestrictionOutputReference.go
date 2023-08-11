@@ -203,7 +203,7 @@ func NewCloudfrontDistributionRestrictionsGeoRestrictionOutputReference(terrafor
 	j := jsiiProxy_CloudfrontDistributionRestrictionsGeoRestrictionOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionRestrictionsGeoRestrictionOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionRestrictionsGeoRestrictionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewCloudfrontDistributionRestrictionsGeoRestrictionOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionRestrictionsGeoRestrictionOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionRestrictionsGeoRestrictionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

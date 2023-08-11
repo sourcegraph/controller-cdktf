@@ -179,7 +179,7 @@ func NewApprunnerServiceEncryptionConfigurationOutputReference(terraformResource
 	j := jsiiProxy_ApprunnerServiceEncryptionConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.apprunnerService.ApprunnerServiceEncryptionConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceEncryptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewApprunnerServiceEncryptionConfigurationOutputReference_Override(a Apprun
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apprunnerService.ApprunnerServiceEncryptionConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceEncryptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

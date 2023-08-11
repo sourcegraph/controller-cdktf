@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.kinesisStreamConsumer.KinesisStreamConsumer",
+		"@cdktf/provider-aws.kinesisStreamConsumer.KinesisStreamConsumer",
 		reflect.TypeOf((*KinesisStreamConsumer)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kinesisStreamConsumer.KinesisStreamConsumerConfig",
+		"@cdktf/provider-aws.kinesisStreamConsumer.KinesisStreamConsumerConfig",
 		reflect.TypeOf((*KinesisStreamConsumerConfig)(nil)).Elem(),
 	)
 }

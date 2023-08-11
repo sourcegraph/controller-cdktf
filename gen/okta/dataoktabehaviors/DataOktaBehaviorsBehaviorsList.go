@@ -104,7 +104,7 @@ func NewDataOktaBehaviorsBehaviorsList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_DataOktaBehaviorsBehaviorsList{}
 
 	_jsii_.Create(
-		"okta.dataOktaBehaviors.DataOktaBehaviorsBehaviorsList",
+		"@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviorsBehaviorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataOktaBehaviorsBehaviorsList_Override(d DataOktaBehaviorsBehaviorsList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaBehaviors.DataOktaBehaviorsBehaviorsList",
+		"@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviorsBehaviorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

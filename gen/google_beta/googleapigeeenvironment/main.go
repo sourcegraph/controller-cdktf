@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment",
+		"@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment",
 		reflect.TypeOf((*GoogleApigeeEnvironment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,15 +79,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentConfig",
+		"@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentConfig",
 		reflect.TypeOf((*GoogleApigeeEnvironmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentNodeConfig",
+		"@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentNodeConfig",
 		reflect.TypeOf((*GoogleApigeeEnvironmentNodeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentNodeConfigOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentNodeConfigOutputReference",
 		reflect.TypeOf((*GoogleApigeeEnvironmentNodeConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -126,11 +126,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentTimeouts",
+		"@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentTimeouts",
 		reflect.TypeOf((*GoogleApigeeEnvironmentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleApigeeEnvironmentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

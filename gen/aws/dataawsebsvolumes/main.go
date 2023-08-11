@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsEbsVolumes.DataAwsEbsVolumes",
+		"@cdktf/provider-aws.dataAwsEbsVolumes.DataAwsEbsVolumes",
 		reflect.TypeOf((*DataAwsEbsVolumes)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,15 +65,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEbsVolumes.DataAwsEbsVolumesConfig",
+		"@cdktf/provider-aws.dataAwsEbsVolumes.DataAwsEbsVolumesConfig",
 		reflect.TypeOf((*DataAwsEbsVolumesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEbsVolumes.DataAwsEbsVolumesFilter",
+		"@cdktf/provider-aws.dataAwsEbsVolumes.DataAwsEbsVolumesFilter",
 		reflect.TypeOf((*DataAwsEbsVolumesFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEbsVolumes.DataAwsEbsVolumesFilterList",
+		"@cdktf/provider-aws.dataAwsEbsVolumes.DataAwsEbsVolumesFilterList",
 		reflect.TypeOf((*DataAwsEbsVolumesFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -94,7 +94,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEbsVolumes.DataAwsEbsVolumesFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEbsVolumes.DataAwsEbsVolumesFilterOutputReference",
 		reflect.TypeOf((*DataAwsEbsVolumesFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -130,11 +130,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEbsVolumes.DataAwsEbsVolumesTimeouts",
+		"@cdktf/provider-aws.dataAwsEbsVolumes.DataAwsEbsVolumesTimeouts",
 		reflect.TypeOf((*DataAwsEbsVolumesTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEbsVolumes.DataAwsEbsVolumesTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEbsVolumes.DataAwsEbsVolumesTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsEbsVolumesTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -303,7 +303,7 @@ func NewDataAwsEmrReleaseLabels(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataAwsEmrReleaseLabels{}
 
 	_jsii_.Create(
-		"aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabels",
+		"@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabels",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -316,7 +316,7 @@ func NewDataAwsEmrReleaseLabels_Override(d DataAwsEmrReleaseLabels, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabels",
+		"@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabels",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -405,7 +405,7 @@ func DataAwsEmrReleaseLabels_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabels",
+		"@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabels",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -424,7 +424,7 @@ func DataAwsEmrReleaseLabels_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabels",
+		"@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabels",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -443,7 +443,7 @@ func DataAwsEmrReleaseLabels_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabels",
+		"@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabels",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -456,7 +456,7 @@ func DataAwsEmrReleaseLabels_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabels",
+		"@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabels",
 		"tfResourceType",
 		&returns,
 	)

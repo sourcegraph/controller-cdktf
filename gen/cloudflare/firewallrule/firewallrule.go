@@ -461,7 +461,7 @@ func NewFirewallRule(scope constructs.Construct, id *string, config *FirewallRul
 	j := jsiiProxy_FirewallRule{}
 
 	_jsii_.Create(
-		"cloudflare.firewallRule.FirewallRule",
+		"@cdktf/provider-cloudflare.firewallRule.FirewallRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -474,7 +474,7 @@ func NewFirewallRule_Override(f FirewallRule, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.firewallRule.FirewallRule",
+		"@cdktf/provider-cloudflare.firewallRule.FirewallRule",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -662,7 +662,7 @@ func FirewallRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.firewallRule.FirewallRule",
+		"@cdktf/provider-cloudflare.firewallRule.FirewallRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -681,7 +681,7 @@ func FirewallRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.firewallRule.FirewallRule",
+		"@cdktf/provider-cloudflare.firewallRule.FirewallRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func FirewallRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.firewallRule.FirewallRule",
+		"@cdktf/provider-cloudflare.firewallRule.FirewallRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -713,7 +713,7 @@ func FirewallRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.firewallRule.FirewallRule",
+		"@cdktf/provider-cloudflare.firewallRule.FirewallRule",
 		"tfResourceType",
 		&returns,
 	)

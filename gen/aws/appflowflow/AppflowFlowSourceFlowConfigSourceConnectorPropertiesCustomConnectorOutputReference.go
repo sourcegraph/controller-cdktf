@@ -203,7 +203,7 @@ func NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorOutpu
 	j := jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -302,7 +302,7 @@ func NewDataCloudflareOriginCaRootCertificate(scope constructs.Construct, id *st
 	j := jsiiProxy_DataCloudflareOriginCaRootCertificate{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate",
+		"@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataCloudflareOriginCaRootCertificate_Override(d DataCloudflareOriginCaR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate",
+		"@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataCloudflareOriginCaRootCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate",
+		"@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataCloudflareOriginCaRootCertificate_IsTerraformDataSource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate",
+		"@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataCloudflareOriginCaRootCertificate_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate",
+		"@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataCloudflareOriginCaRootCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate",
+		"@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate",
 		"tfResourceType",
 		&returns,
 	)

@@ -376,7 +376,7 @@ func NewFolderIamAuditConfig(scope constructs.Construct, id *string, config *Fol
 	j := jsiiProxy_FolderIamAuditConfig{}
 
 	_jsii_.Create(
-		"google.folderIamAuditConfig.FolderIamAuditConfig",
+		"@cdktf/provider-google.folderIamAuditConfig.FolderIamAuditConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -389,7 +389,7 @@ func NewFolderIamAuditConfig_Override(f FolderIamAuditConfig, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.folderIamAuditConfig.FolderIamAuditConfig",
+		"@cdktf/provider-google.folderIamAuditConfig.FolderIamAuditConfig",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -522,7 +522,7 @@ func FolderIamAuditConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.folderIamAuditConfig.FolderIamAuditConfig",
+		"@cdktf/provider-google.folderIamAuditConfig.FolderIamAuditConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func FolderIamAuditConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.folderIamAuditConfig.FolderIamAuditConfig",
+		"@cdktf/provider-google.folderIamAuditConfig.FolderIamAuditConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func FolderIamAuditConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.folderIamAuditConfig.FolderIamAuditConfig",
+		"@cdktf/provider-google.folderIamAuditConfig.FolderIamAuditConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func FolderIamAuditConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.folderIamAuditConfig.FolderIamAuditConfig",
+		"@cdktf/provider-google.folderIamAuditConfig.FolderIamAuditConfig",
 		"tfResourceType",
 		&returns,
 	)

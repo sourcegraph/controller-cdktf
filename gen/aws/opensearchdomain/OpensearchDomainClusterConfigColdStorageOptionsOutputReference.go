@@ -180,7 +180,7 @@ func NewOpensearchDomainClusterConfigColdStorageOptionsOutputReference(terraform
 	j := jsiiProxy_OpensearchDomainClusterConfigColdStorageOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainClusterConfigColdStorageOptionsOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainClusterConfigColdStorageOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewOpensearchDomainClusterConfigColdStorageOptionsOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainClusterConfigColdStorageOptionsOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainClusterConfigColdStorageOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

@@ -438,7 +438,7 @@ func NewEc2ClientVpnAuthorizationRule(scope constructs.Construct, id *string, co
 	j := jsiiProxy_Ec2ClientVpnAuthorizationRule{}
 
 	_jsii_.Create(
-		"aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule",
+		"@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -451,7 +451,7 @@ func NewEc2ClientVpnAuthorizationRule_Override(e Ec2ClientVpnAuthorizationRule, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule",
+		"@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -617,7 +617,7 @@ func Ec2ClientVpnAuthorizationRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule",
+		"@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -636,7 +636,7 @@ func Ec2ClientVpnAuthorizationRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule",
+		"@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func Ec2ClientVpnAuthorizationRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule",
+		"@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func Ec2ClientVpnAuthorizationRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule",
+		"@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRule",
 		"tfResourceType",
 		&returns,
 	)

@@ -276,7 +276,7 @@ func NewAccessOrganizationLoginDesignOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_AccessOrganizationLoginDesignOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.accessOrganization.AccessOrganizationLoginDesignOutputReference",
+		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesignOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewAccessOrganizationLoginDesignOutputReference_Override(a AccessOrganizati
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessOrganization.AccessOrganizationLoginDesignOutputReference",
+		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesignOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

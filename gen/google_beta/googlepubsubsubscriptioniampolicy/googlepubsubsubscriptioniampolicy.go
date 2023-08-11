@@ -377,7 +377,7 @@ func NewGooglePubsubSubscriptionIamPolicy(scope constructs.Construct, id *string
 	j := jsiiProxy_GooglePubsubSubscriptionIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicy",
+		"@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewGooglePubsubSubscriptionIamPolicy_Override(g GooglePubsubSubscriptionIam
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicy",
+		"@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -534,7 +534,7 @@ func GooglePubsubSubscriptionIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicy",
+		"@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func GooglePubsubSubscriptionIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicy",
+		"@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func GooglePubsubSubscriptionIamPolicy_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicy",
+		"@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func GooglePubsubSubscriptionIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicy",
+		"@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy.GooglePubsubSubscriptionIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

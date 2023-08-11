@@ -377,7 +377,7 @@ func NewSecretManagerSecretIamPolicy(scope constructs.Construct, id *string, con
 	j := jsiiProxy_SecretManagerSecretIamPolicy{}
 
 	_jsii_.Create(
-		"google.secretManagerSecretIamPolicy.SecretManagerSecretIamPolicy",
+		"@cdktf/provider-google.secretManagerSecretIamPolicy.SecretManagerSecretIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewSecretManagerSecretIamPolicy_Override(s SecretManagerSecretIamPolicy, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.secretManagerSecretIamPolicy.SecretManagerSecretIamPolicy",
+		"@cdktf/provider-google.secretManagerSecretIamPolicy.SecretManagerSecretIamPolicy",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -534,7 +534,7 @@ func SecretManagerSecretIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.secretManagerSecretIamPolicy.SecretManagerSecretIamPolicy",
+		"@cdktf/provider-google.secretManagerSecretIamPolicy.SecretManagerSecretIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func SecretManagerSecretIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.secretManagerSecretIamPolicy.SecretManagerSecretIamPolicy",
+		"@cdktf/provider-google.secretManagerSecretIamPolicy.SecretManagerSecretIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func SecretManagerSecretIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.secretManagerSecretIamPolicy.SecretManagerSecretIamPolicy",
+		"@cdktf/provider-google.secretManagerSecretIamPolicy.SecretManagerSecretIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func SecretManagerSecretIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.secretManagerSecretIamPolicy.SecretManagerSecretIamPolicy",
+		"@cdktf/provider-google.secretManagerSecretIamPolicy.SecretManagerSecretIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

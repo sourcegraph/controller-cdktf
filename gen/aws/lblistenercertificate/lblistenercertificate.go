@@ -342,7 +342,7 @@ func NewLbListenerCertificate(scope constructs.Construct, id *string, config *Lb
 	j := jsiiProxy_LbListenerCertificate{}
 
 	_jsii_.Create(
-		"aws.lbListenerCertificate.LbListenerCertificate",
+		"@cdktf/provider-aws.lbListenerCertificate.LbListenerCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewLbListenerCertificate_Override(l LbListenerCertificate, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbListenerCertificate.LbListenerCertificate",
+		"@cdktf/provider-aws.lbListenerCertificate.LbListenerCertificate",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -488,7 +488,7 @@ func LbListenerCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lbListenerCertificate.LbListenerCertificate",
+		"@cdktf/provider-aws.lbListenerCertificate.LbListenerCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func LbListenerCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lbListenerCertificate.LbListenerCertificate",
+		"@cdktf/provider-aws.lbListenerCertificate.LbListenerCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func LbListenerCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lbListenerCertificate.LbListenerCertificate",
+		"@cdktf/provider-aws.lbListenerCertificate.LbListenerCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func LbListenerCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lbListenerCertificate.LbListenerCertificate",
+		"@cdktf/provider-aws.lbListenerCertificate.LbListenerCertificate",
 		"tfResourceType",
 		&returns,
 	)

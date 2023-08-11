@@ -509,7 +509,7 @@ func NewGoogleNetworkManagementConnectivityTest(scope constructs.Construct, id *
 	j := jsiiProxy_GoogleNetworkManagementConnectivityTest{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTest",
+		"@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTest",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -522,7 +522,7 @@ func NewGoogleNetworkManagementConnectivityTest_Override(g GoogleNetworkManageme
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTest",
+		"@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTest",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -699,7 +699,7 @@ func GoogleNetworkManagementConnectivityTest_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTest",
+		"@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTest",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -718,7 +718,7 @@ func GoogleNetworkManagementConnectivityTest_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTest",
+		"@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTest",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -737,7 +737,7 @@ func GoogleNetworkManagementConnectivityTest_IsTerraformResource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTest",
+		"@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTest",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -750,7 +750,7 @@ func GoogleNetworkManagementConnectivityTest_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTest",
+		"@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTest",
 		"tfResourceType",
 		&returns,
 	)

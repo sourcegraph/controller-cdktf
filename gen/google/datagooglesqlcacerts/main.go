@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts",
+		"@cdktf/provider-google.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts",
 		reflect.TypeOf((*DataGoogleSqlCaCerts)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeVersion", GoGetter: "ActiveVersion"},
@@ -60,11 +60,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsCerts",
+		"@cdktf/provider-google.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsCerts",
 		reflect.TypeOf((*DataGoogleSqlCaCertsCerts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsCertsList",
+		"@cdktf/provider-google.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsCertsList",
 		reflect.TypeOf((*DataGoogleSqlCaCertsCertsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -84,7 +84,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsCertsOutputReference",
+		"@cdktf/provider-google.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsCertsOutputReference",
 		reflect.TypeOf((*DataGoogleSqlCaCertsCertsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cert", GoGetter: "Cert"},
@@ -121,7 +121,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsConfig",
+		"@cdktf/provider-google.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsConfig",
 		reflect.TypeOf((*DataGoogleSqlCaCertsConfig)(nil)).Elem(),
 	)
 }

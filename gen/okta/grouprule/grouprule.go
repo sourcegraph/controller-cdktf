@@ -461,7 +461,7 @@ func NewGroupRule(scope constructs.Construct, id *string, config *GroupRuleConfi
 	j := jsiiProxy_GroupRule{}
 
 	_jsii_.Create(
-		"okta.groupRule.GroupRule",
+		"@cdktf/provider-okta.groupRule.GroupRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -474,7 +474,7 @@ func NewGroupRule_Override(g GroupRule, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.groupRule.GroupRule",
+		"@cdktf/provider-okta.groupRule.GroupRule",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -662,7 +662,7 @@ func GroupRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.groupRule.GroupRule",
+		"@cdktf/provider-okta.groupRule.GroupRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -681,7 +681,7 @@ func GroupRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.groupRule.GroupRule",
+		"@cdktf/provider-okta.groupRule.GroupRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func GroupRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.groupRule.GroupRule",
+		"@cdktf/provider-okta.groupRule.GroupRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -713,7 +713,7 @@ func GroupRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.groupRule.GroupRule",
+		"@cdktf/provider-okta.groupRule.GroupRule",
 		"tfResourceType",
 		&returns,
 	)

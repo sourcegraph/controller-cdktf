@@ -227,7 +227,7 @@ func NewMonitoringMetricDescriptorLabelsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference{}
 
 	_jsii_.Create(
-		"google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsOutputReference",
+		"@cdktf/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewMonitoringMetricDescriptorLabelsOutputReference_Override(m MonitoringMet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsOutputReference",
+		"@cdktf/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

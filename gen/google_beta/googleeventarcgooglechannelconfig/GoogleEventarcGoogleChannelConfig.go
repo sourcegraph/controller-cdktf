@@ -425,7 +425,7 @@ func NewGoogleEventarcGoogleChannelConfig(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleEventarcGoogleChannelConfig{}
 
 	_jsii_.Create(
-		"google-beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfig",
+		"@cdktf/provider-google-beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -438,7 +438,7 @@ func NewGoogleEventarcGoogleChannelConfig_Override(g GoogleEventarcGoogleChannel
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfig",
+		"@cdktf/provider-google-beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfig",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -593,7 +593,7 @@ func GoogleEventarcGoogleChannelConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfig",
+		"@cdktf/provider-google-beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func GoogleEventarcGoogleChannelConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfig",
+		"@cdktf/provider-google-beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func GoogleEventarcGoogleChannelConfig_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfig",
+		"@cdktf/provider-google-beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func GoogleEventarcGoogleChannelConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfig",
+		"@cdktf/provider-google-beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfig",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewGoogleMonitoringSloRequestBasedSliOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleMonitoringSloRequestBasedSliOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleMonitoringSloRequestBasedSliOutputReference_Override(g GoogleMonit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

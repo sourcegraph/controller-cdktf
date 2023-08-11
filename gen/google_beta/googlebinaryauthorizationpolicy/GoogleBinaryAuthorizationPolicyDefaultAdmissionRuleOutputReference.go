@@ -226,7 +226,7 @@ func NewGoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference(terra
 	j := jsiiProxy_GoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

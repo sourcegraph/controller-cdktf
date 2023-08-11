@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroup",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroup",
 		reflect.TypeOf((*CodedeployDeploymentGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -116,11 +116,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAlarmConfiguration",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAlarmConfiguration",
 		reflect.TypeOf((*CodedeployDeploymentGroupAlarmConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAlarmConfigurationOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAlarmConfigurationOutputReference",
 		reflect.TypeOf((*CodedeployDeploymentGroupAlarmConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarms", GoGetter: "Alarms"},
@@ -161,11 +161,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAutoRollbackConfiguration",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAutoRollbackConfiguration",
 		reflect.TypeOf((*CodedeployDeploymentGroupAutoRollbackConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAutoRollbackConfigurationOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAutoRollbackConfigurationOutputReference",
 		reflect.TypeOf((*CodedeployDeploymentGroupAutoRollbackConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -203,15 +203,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfig",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfig",
 		reflect.TypeOf((*CodedeployDeploymentGroupBlueGreenDeploymentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption",
 		reflect.TypeOf((*CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionOutputReference",
 		reflect.TypeOf((*CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionOnTimeout", GoGetter: "ActionOnTimeout"},
@@ -249,11 +249,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption",
 		reflect.TypeOf((*CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionOutputReference",
 		reflect.TypeOf((*CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -288,7 +288,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference",
 		reflect.TypeOf((*CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -332,11 +332,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess",
 		reflect.TypeOf((*CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessOutputReference",
 		reflect.TypeOf((*CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -374,15 +374,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupConfig",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupConfig",
 		reflect.TypeOf((*CodedeployDeploymentGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupDeploymentStyle",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupDeploymentStyle",
 		reflect.TypeOf((*CodedeployDeploymentGroupDeploymentStyle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupDeploymentStyleOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupDeploymentStyleOutputReference",
 		reflect.TypeOf((*CodedeployDeploymentGroupDeploymentStyleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -420,11 +420,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagFilter",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagFilter",
 		reflect.TypeOf((*CodedeployDeploymentGroupEc2TagFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagFilterList",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagFilterList",
 		reflect.TypeOf((*CodedeployDeploymentGroupEc2TagFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -445,7 +445,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagFilterOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagFilterOutputReference",
 		reflect.TypeOf((*CodedeployDeploymentGroupEc2TagFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -486,15 +486,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSet",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSet",
 		reflect.TypeOf((*CodedeployDeploymentGroupEc2TagSet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSetEc2TagFilter",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSetEc2TagFilter",
 		reflect.TypeOf((*CodedeployDeploymentGroupEc2TagSetEc2TagFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSetEc2TagFilterList",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSetEc2TagFilterList",
 		reflect.TypeOf((*CodedeployDeploymentGroupEc2TagSetEc2TagFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -515,7 +515,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSetEc2TagFilterOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSetEc2TagFilterOutputReference",
 		reflect.TypeOf((*CodedeployDeploymentGroupEc2TagSetEc2TagFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -556,7 +556,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSetList",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSetList",
 		reflect.TypeOf((*CodedeployDeploymentGroupEc2TagSetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -577,7 +577,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSetOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSetOutputReference",
 		reflect.TypeOf((*CodedeployDeploymentGroupEc2TagSetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -613,11 +613,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEcsService",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEcsService",
 		reflect.TypeOf((*CodedeployDeploymentGroupEcsService)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEcsServiceOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEcsServiceOutputReference",
 		reflect.TypeOf((*CodedeployDeploymentGroupEcsServiceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterName", GoGetter: "ClusterName"},
@@ -653,15 +653,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfo",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfo",
 		reflect.TypeOf((*CodedeployDeploymentGroupLoadBalancerInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoElbInfo",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoElbInfo",
 		reflect.TypeOf((*CodedeployDeploymentGroupLoadBalancerInfoElbInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoElbInfoList",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoElbInfoList",
 		reflect.TypeOf((*CodedeployDeploymentGroupLoadBalancerInfoElbInfoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -682,7 +682,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoElbInfoOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoElbInfoOutputReference",
 		reflect.TypeOf((*CodedeployDeploymentGroupLoadBalancerInfoElbInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -717,7 +717,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoOutputReference",
 		reflect.TypeOf((*CodedeployDeploymentGroupLoadBalancerInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -761,11 +761,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfo",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfo",
 		reflect.TypeOf((*CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoList",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoList",
 		reflect.TypeOf((*CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -786,7 +786,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoOutputReference",
 		reflect.TypeOf((*CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -821,11 +821,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfo",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfo",
 		reflect.TypeOf((*CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoOutputReference",
 		reflect.TypeOf((*CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -867,11 +867,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute",
 		reflect.TypeOf((*CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteOutputReference",
 		reflect.TypeOf((*CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -905,11 +905,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup",
 		reflect.TypeOf((*CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupList",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupList",
 		reflect.TypeOf((*CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -930,7 +930,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupOutputReference",
 		reflect.TypeOf((*CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -964,11 +964,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute",
 		reflect.TypeOf((*CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteOutputReference",
 		reflect.TypeOf((*CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1002,11 +1002,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupOnPremisesInstanceTagFilter",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupOnPremisesInstanceTagFilter",
 		reflect.TypeOf((*CodedeployDeploymentGroupOnPremisesInstanceTagFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupOnPremisesInstanceTagFilterList",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupOnPremisesInstanceTagFilterList",
 		reflect.TypeOf((*CodedeployDeploymentGroupOnPremisesInstanceTagFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1027,7 +1027,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupOnPremisesInstanceTagFilterOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupOnPremisesInstanceTagFilterOutputReference",
 		reflect.TypeOf((*CodedeployDeploymentGroupOnPremisesInstanceTagFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1068,11 +1068,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupTriggerConfiguration",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupTriggerConfiguration",
 		reflect.TypeOf((*CodedeployDeploymentGroupTriggerConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupTriggerConfigurationList",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupTriggerConfigurationList",
 		reflect.TypeOf((*CodedeployDeploymentGroupTriggerConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1093,7 +1093,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupTriggerConfigurationOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupTriggerConfigurationOutputReference",
 		reflect.TypeOf((*CodedeployDeploymentGroupTriggerConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

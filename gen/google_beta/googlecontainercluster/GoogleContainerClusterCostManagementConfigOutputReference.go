@@ -179,7 +179,7 @@ func NewGoogleContainerClusterCostManagementConfigOutputReference(terraformResou
 	j := jsiiProxy_GoogleContainerClusterCostManagementConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterCostManagementConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterCostManagementConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleContainerClusterCostManagementConfigOutputReference_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterCostManagementConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterCostManagementConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

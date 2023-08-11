@@ -424,7 +424,7 @@ func NewGoogleDnsManagedZoneIamBinding(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleDnsManagedZoneIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleDnsManagedZoneIamBinding.GoogleDnsManagedZoneIamBinding",
+		"@cdktf/provider-google-beta.googleDnsManagedZoneIamBinding.GoogleDnsManagedZoneIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleDnsManagedZoneIamBinding_Override(g GoogleDnsManagedZoneIamBinding
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDnsManagedZoneIamBinding.GoogleDnsManagedZoneIamBinding",
+		"@cdktf/provider-google-beta.googleDnsManagedZoneIamBinding.GoogleDnsManagedZoneIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleDnsManagedZoneIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDnsManagedZoneIamBinding.GoogleDnsManagedZoneIamBinding",
+		"@cdktf/provider-google-beta.googleDnsManagedZoneIamBinding.GoogleDnsManagedZoneIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleDnsManagedZoneIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDnsManagedZoneIamBinding.GoogleDnsManagedZoneIamBinding",
+		"@cdktf/provider-google-beta.googleDnsManagedZoneIamBinding.GoogleDnsManagedZoneIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleDnsManagedZoneIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDnsManagedZoneIamBinding.GoogleDnsManagedZoneIamBinding",
+		"@cdktf/provider-google-beta.googleDnsManagedZoneIamBinding.GoogleDnsManagedZoneIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleDnsManagedZoneIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDnsManagedZoneIamBinding.GoogleDnsManagedZoneIamBinding",
+		"@cdktf/provider-google-beta.googleDnsManagedZoneIamBinding.GoogleDnsManagedZoneIamBinding",
 		"tfResourceType",
 		&returns,
 	)

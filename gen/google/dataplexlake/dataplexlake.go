@@ -563,7 +563,7 @@ func NewDataplexLake(scope constructs.Construct, id *string, config *DataplexLak
 	j := jsiiProxy_DataplexLake{}
 
 	_jsii_.Create(
-		"google.dataplexLake.DataplexLake",
+		"@cdktf/provider-google.dataplexLake.DataplexLake",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -576,7 +576,7 @@ func NewDataplexLake_Override(d DataplexLake, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexLake.DataplexLake",
+		"@cdktf/provider-google.dataplexLake.DataplexLake",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -753,7 +753,7 @@ func DataplexLake_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataplexLake.DataplexLake",
+		"@cdktf/provider-google.dataplexLake.DataplexLake",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -772,7 +772,7 @@ func DataplexLake_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataplexLake.DataplexLake",
+		"@cdktf/provider-google.dataplexLake.DataplexLake",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -791,7 +791,7 @@ func DataplexLake_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataplexLake.DataplexLake",
+		"@cdktf/provider-google.dataplexLake.DataplexLake",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -804,7 +804,7 @@ func DataplexLake_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataplexLake.DataplexLake",
+		"@cdktf/provider-google.dataplexLake.DataplexLake",
 		"tfResourceType",
 		&returns,
 	)

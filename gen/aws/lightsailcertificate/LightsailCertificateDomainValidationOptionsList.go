@@ -104,7 +104,7 @@ func NewLightsailCertificateDomainValidationOptionsList(terraformResource cdktf.
 	j := jsiiProxy_LightsailCertificateDomainValidationOptionsList{}
 
 	_jsii_.Create(
-		"aws.lightsailCertificate.LightsailCertificateDomainValidationOptionsList",
+		"@cdktf/provider-aws.lightsailCertificate.LightsailCertificateDomainValidationOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewLightsailCertificateDomainValidationOptionsList_Override(l LightsailCert
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailCertificate.LightsailCertificateDomainValidationOptionsList",
+		"@cdktf/provider-aws.lightsailCertificate.LightsailCertificateDomainValidationOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

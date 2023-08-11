@@ -276,7 +276,7 @@ func NewGoogleComputeSubnetworkLogConfigOutputReference(terraformResource cdktf.
 	j := jsiiProxy_GoogleComputeSubnetworkLogConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkLogConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewGoogleComputeSubnetworkLogConfigOutputReference_Override(g GoogleCompute
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkLogConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

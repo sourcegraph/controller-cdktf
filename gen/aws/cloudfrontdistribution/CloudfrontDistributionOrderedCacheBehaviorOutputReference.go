@@ -631,7 +631,7 @@ func NewCloudfrontDistributionOrderedCacheBehaviorOutputReference(terraformResou
 	j := jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -643,7 +643,7 @@ func NewCloudfrontDistributionOrderedCacheBehaviorOutputReference_Override(c Clo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

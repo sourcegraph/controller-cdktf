@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.bigtableGcPolicy.BigtableGcPolicy",
+		"@cdktf/provider-google.bigtableGcPolicy.BigtableGcPolicy",
 		reflect.TypeOf((*BigtableGcPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,15 +81,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigtableGcPolicy.BigtableGcPolicyConfig",
+		"@cdktf/provider-google.bigtableGcPolicy.BigtableGcPolicyConfig",
 		reflect.TypeOf((*BigtableGcPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.bigtableGcPolicy.BigtableGcPolicyMaxAge",
+		"@cdktf/provider-google.bigtableGcPolicy.BigtableGcPolicyMaxAge",
 		reflect.TypeOf((*BigtableGcPolicyMaxAge)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigtableGcPolicy.BigtableGcPolicyMaxAgeOutputReference",
+		"@cdktf/provider-google.bigtableGcPolicy.BigtableGcPolicyMaxAgeOutputReference",
 		reflect.TypeOf((*BigtableGcPolicyMaxAgeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -127,11 +127,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigtableGcPolicy.BigtableGcPolicyMaxVersion",
+		"@cdktf/provider-google.bigtableGcPolicy.BigtableGcPolicyMaxVersion",
 		reflect.TypeOf((*BigtableGcPolicyMaxVersion)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigtableGcPolicy.BigtableGcPolicyMaxVersionList",
+		"@cdktf/provider-google.bigtableGcPolicy.BigtableGcPolicyMaxVersionList",
 		reflect.TypeOf((*BigtableGcPolicyMaxVersionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -152,7 +152,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.bigtableGcPolicy.BigtableGcPolicyMaxVersionOutputReference",
+		"@cdktf/provider-google.bigtableGcPolicy.BigtableGcPolicyMaxVersionOutputReference",
 		reflect.TypeOf((*BigtableGcPolicyMaxVersionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

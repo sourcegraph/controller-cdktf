@@ -203,7 +203,7 @@ func NewGoogleBillingBudgetThresholdRulesOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleBillingBudgetThresholdRulesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBillingBudget.GoogleBillingBudgetThresholdRulesOutputReference",
+		"@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetThresholdRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleBillingBudgetThresholdRulesOutputReference_Override(g GoogleBillin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBillingBudget.GoogleBillingBudgetThresholdRulesOutputReference",
+		"@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetThresholdRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

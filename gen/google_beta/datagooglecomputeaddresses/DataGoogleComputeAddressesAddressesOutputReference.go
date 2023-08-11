@@ -244,7 +244,7 @@ func NewDataGoogleComputeAddressesAddressesOutputReference(terraformResource cdk
 	j := jsiiProxy_DataGoogleComputeAddressesAddressesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -256,7 +256,7 @@ func NewDataGoogleComputeAddressesAddressesOutputReference_Override(d DataGoogle
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -116,7 +116,7 @@ func NewGoogleDialogflowCxIntentTrainingPhrasesList(terraformResource cdktf.IInt
 	j := jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesList{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentTrainingPhrasesList",
+		"@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentTrainingPhrasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDialogflowCxIntentTrainingPhrasesList_Override(g GoogleDialogflowC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentTrainingPhrasesList",
+		"@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentTrainingPhrasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

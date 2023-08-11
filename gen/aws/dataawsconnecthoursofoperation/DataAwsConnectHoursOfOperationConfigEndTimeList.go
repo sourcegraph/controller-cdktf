@@ -104,7 +104,7 @@ func NewDataAwsConnectHoursOfOperationConfigEndTimeList(terraformResource cdktf.
 	j := jsiiProxy_DataAwsConnectHoursOfOperationConfigEndTimeList{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfigEndTimeList",
+		"@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfigEndTimeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsConnectHoursOfOperationConfigEndTimeList_Override(d DataAwsConnec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfigEndTimeList",
+		"@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfigEndTimeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -179,7 +179,7 @@ func NewDnsManagedZonePrivateVisibilityConfigNetworksOutputReference(terraformRe
 	j := jsiiProxy_DnsManagedZonePrivateVisibilityConfigNetworksOutputReference{}
 
 	_jsii_.Create(
-		"google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksOutputReference",
+		"@cdktf/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDnsManagedZonePrivateVisibilityConfigNetworksOutputReference_Override(d 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksOutputReference",
+		"@cdktf/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

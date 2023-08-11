@@ -342,7 +342,7 @@ func NewDynamodbKinesisStreamingDestination(scope constructs.Construct, id *stri
 	j := jsiiProxy_DynamodbKinesisStreamingDestination{}
 
 	_jsii_.Create(
-		"aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestination",
+		"@cdktf/provider-aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestination",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewDynamodbKinesisStreamingDestination_Override(d DynamodbKinesisStreamingD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestination",
+		"@cdktf/provider-aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestination",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -488,7 +488,7 @@ func DynamodbKinesisStreamingDestination_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestination",
+		"@cdktf/provider-aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestination",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func DynamodbKinesisStreamingDestination_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestination",
+		"@cdktf/provider-aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestination",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func DynamodbKinesisStreamingDestination_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestination",
+		"@cdktf/provider-aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestination",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func DynamodbKinesisStreamingDestination_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestination",
+		"@cdktf/provider-aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestination",
 		"tfResourceType",
 		&returns,
 	)

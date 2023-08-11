@@ -371,7 +371,7 @@ func NewDataGoogleOrganization(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataGoogleOrganization{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleOrganization.DataGoogleOrganization",
+		"@cdktf/provider-google-beta.dataGoogleOrganization.DataGoogleOrganization",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -384,7 +384,7 @@ func NewDataGoogleOrganization_Override(d DataGoogleOrganization, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleOrganization.DataGoogleOrganization",
+		"@cdktf/provider-google-beta.dataGoogleOrganization.DataGoogleOrganization",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -495,7 +495,7 @@ func DataGoogleOrganization_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleOrganization.DataGoogleOrganization",
+		"@cdktf/provider-google-beta.dataGoogleOrganization.DataGoogleOrganization",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -514,7 +514,7 @@ func DataGoogleOrganization_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleOrganization.DataGoogleOrganization",
+		"@cdktf/provider-google-beta.dataGoogleOrganization.DataGoogleOrganization",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -533,7 +533,7 @@ func DataGoogleOrganization_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleOrganization.DataGoogleOrganization",
+		"@cdktf/provider-google-beta.dataGoogleOrganization.DataGoogleOrganization",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -546,7 +546,7 @@ func DataGoogleOrganization_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleOrganization.DataGoogleOrganization",
+		"@cdktf/provider-google-beta.dataGoogleOrganization.DataGoogleOrganization",
 		"tfResourceType",
 		&returns,
 	)

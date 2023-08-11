@@ -104,7 +104,7 @@ func NewDataAwsOrganizationsOrganizationalUnitsChildrenList(terraformResource cd
 	j := jsiiProxy_DataAwsOrganizationsOrganizationalUnitsChildrenList{}
 
 	_jsii_.Create(
-		"aws.dataAwsOrganizationsOrganizationalUnits.DataAwsOrganizationsOrganizationalUnitsChildrenList",
+		"@cdktf/provider-aws.dataAwsOrganizationsOrganizationalUnits.DataAwsOrganizationsOrganizationalUnitsChildrenList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsOrganizationsOrganizationalUnitsChildrenList_Override(d DataAwsOr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOrganizationsOrganizationalUnits.DataAwsOrganizationsOrganizationalUnitsChildrenList",
+		"@cdktf/provider-aws.dataAwsOrganizationsOrganizationalUnits.DataAwsOrganizationsOrganizationalUnitsChildrenList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

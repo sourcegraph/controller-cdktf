@@ -104,7 +104,7 @@ func NewDataKubernetesPodSpecVolumeAzureFileList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataKubernetesPodSpecVolumeAzureFileList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeAzureFileList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeAzureFileList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodSpecVolumeAzureFileList_Override(d DataKubernetesPodSpe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeAzureFileList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeAzureFileList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

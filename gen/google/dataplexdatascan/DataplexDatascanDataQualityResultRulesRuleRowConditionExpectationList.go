@@ -104,7 +104,7 @@ func NewDataplexDatascanDataQualityResultRulesRuleRowConditionExpectationList(te
 	j := jsiiProxy_DataplexDatascanDataQualityResultRulesRuleRowConditionExpectationList{}
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataQualityResultRulesRuleRowConditionExpectationList",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualityResultRulesRuleRowConditionExpectationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataplexDatascanDataQualityResultRulesRuleRowConditionExpectationList_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataQualityResultRulesRuleRowConditionExpectationList",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualityResultRulesRuleRowConditionExpectationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

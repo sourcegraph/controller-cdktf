@@ -424,7 +424,7 @@ func NewIotCertificate(scope constructs.Construct, id *string, config *IotCertif
 	j := jsiiProxy_IotCertificate{}
 
 	_jsii_.Create(
-		"aws.iotCertificate.IotCertificate",
+		"@cdktf/provider-aws.iotCertificate.IotCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewIotCertificate_Override(i IotCertificate, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotCertificate.IotCertificate",
+		"@cdktf/provider-aws.iotCertificate.IotCertificate",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -592,7 +592,7 @@ func IotCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotCertificate.IotCertificate",
+		"@cdktf/provider-aws.iotCertificate.IotCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func IotCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotCertificate.IotCertificate",
+		"@cdktf/provider-aws.iotCertificate.IotCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func IotCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotCertificate.IotCertificate",
+		"@cdktf/provider-aws.iotCertificate.IotCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func IotCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iotCertificate.IotCertificate",
+		"@cdktf/provider-aws.iotCertificate.IotCertificate",
 		"tfResourceType",
 		&returns,
 	)

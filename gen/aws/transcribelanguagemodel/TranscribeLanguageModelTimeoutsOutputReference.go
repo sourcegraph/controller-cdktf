@@ -180,7 +180,7 @@ func NewTranscribeLanguageModelTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_TranscribeLanguageModelTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.transcribeLanguageModel.TranscribeLanguageModelTimeoutsOutputReference",
+		"@cdktf/provider-aws.transcribeLanguageModel.TranscribeLanguageModelTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewTranscribeLanguageModelTimeoutsOutputReference_Override(t TranscribeLang
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transcribeLanguageModel.TranscribeLanguageModelTimeoutsOutputReference",
+		"@cdktf/provider-aws.transcribeLanguageModel.TranscribeLanguageModelTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

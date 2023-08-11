@@ -203,7 +203,7 @@ func NewPodV1SpecVolumePhotonPersistentDiskOutputReference(terraformResource cdk
 	j := jsiiProxy_PodV1SpecVolumePhotonPersistentDiskOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumePhotonPersistentDiskOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumePhotonPersistentDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewPodV1SpecVolumePhotonPersistentDiskOutputReference_Override(p PodV1SpecV
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumePhotonPersistentDiskOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumePhotonPersistentDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

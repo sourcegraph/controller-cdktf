@@ -203,7 +203,7 @@ func NewWafregionalWebAclLoggingConfigurationOutputReference(terraformResource c
 	j := jsiiProxy_WafregionalWebAclLoggingConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationOutputReference",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewWafregionalWebAclLoggingConfigurationOutputReference_Override(w Wafregio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationOutputReference",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

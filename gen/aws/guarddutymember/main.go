@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.guarddutyMember.GuarddutyMember",
+		"@cdktf/provider-aws.guarddutyMember.GuarddutyMember",
 		reflect.TypeOf((*GuarddutyMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -75,15 +75,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.guarddutyMember.GuarddutyMemberConfig",
+		"@cdktf/provider-aws.guarddutyMember.GuarddutyMemberConfig",
 		reflect.TypeOf((*GuarddutyMemberConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.guarddutyMember.GuarddutyMemberTimeouts",
+		"@cdktf/provider-aws.guarddutyMember.GuarddutyMemberTimeouts",
 		reflect.TypeOf((*GuarddutyMemberTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.guarddutyMember.GuarddutyMemberTimeoutsOutputReference",
+		"@cdktf/provider-aws.guarddutyMember.GuarddutyMemberTimeoutsOutputReference",
 		reflect.TypeOf((*GuarddutyMemberTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

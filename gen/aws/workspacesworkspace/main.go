@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.workspacesWorkspace.WorkspacesWorkspace",
+		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspace",
 		reflect.TypeOf((*WorkspacesWorkspace)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,15 +87,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.workspacesWorkspace.WorkspacesWorkspaceConfig",
+		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspaceConfig",
 		reflect.TypeOf((*WorkspacesWorkspaceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.workspacesWorkspace.WorkspacesWorkspaceTimeouts",
+		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspaceTimeouts",
 		reflect.TypeOf((*WorkspacesWorkspaceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.workspacesWorkspace.WorkspacesWorkspaceTimeoutsOutputReference",
+		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspaceTimeoutsOutputReference",
 		reflect.TypeOf((*WorkspacesWorkspaceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -136,11 +136,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.workspacesWorkspace.WorkspacesWorkspaceWorkspaceProperties",
+		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspaceWorkspaceProperties",
 		reflect.TypeOf((*WorkspacesWorkspaceWorkspaceProperties)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.workspacesWorkspace.WorkspacesWorkspaceWorkspacePropertiesOutputReference",
+		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspaceWorkspacePropertiesOutputReference",
 		reflect.TypeOf((*WorkspacesWorkspaceWorkspacePropertiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

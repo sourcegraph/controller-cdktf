@@ -413,7 +413,7 @@ func NewMedialiveInputSecurityGroup(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_MedialiveInputSecurityGroup{}
 
 	_jsii_.Create(
-		"aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroup",
+		"@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewMedialiveInputSecurityGroup_Override(m MedialiveInputSecurityGroup, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroup",
+		"@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroup",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -559,7 +559,7 @@ func MedialiveInputSecurityGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroup",
+		"@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -578,7 +578,7 @@ func MedialiveInputSecurityGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroup",
+		"@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func MedialiveInputSecurityGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroup",
+		"@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func MedialiveInputSecurityGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroup",
+		"@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroup",
 		"tfResourceType",
 		&returns,
 	)

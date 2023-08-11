@@ -423,7 +423,7 @@ func NewRoute53ResolverQueryLogConfig(scope constructs.Construct, id *string, co
 	j := jsiiProxy_Route53ResolverQueryLogConfig{}
 
 	_jsii_.Create(
-		"aws.route53ResolverQueryLogConfig.Route53ResolverQueryLogConfig",
+		"@cdktf/provider-aws.route53ResolverQueryLogConfig.Route53ResolverQueryLogConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewRoute53ResolverQueryLogConfig_Override(r Route53ResolverQueryLogConfig, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53ResolverQueryLogConfig.Route53ResolverQueryLogConfig",
+		"@cdktf/provider-aws.route53ResolverQueryLogConfig.Route53ResolverQueryLogConfig",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -591,7 +591,7 @@ func Route53ResolverQueryLogConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverQueryLogConfig.Route53ResolverQueryLogConfig",
+		"@cdktf/provider-aws.route53ResolverQueryLogConfig.Route53ResolverQueryLogConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func Route53ResolverQueryLogConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverQueryLogConfig.Route53ResolverQueryLogConfig",
+		"@cdktf/provider-aws.route53ResolverQueryLogConfig.Route53ResolverQueryLogConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func Route53ResolverQueryLogConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverQueryLogConfig.Route53ResolverQueryLogConfig",
+		"@cdktf/provider-aws.route53ResolverQueryLogConfig.Route53ResolverQueryLogConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func Route53ResolverQueryLogConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53ResolverQueryLogConfig.Route53ResolverQueryLogConfig",
+		"@cdktf/provider-aws.route53ResolverQueryLogConfig.Route53ResolverQueryLogConfig",
 		"tfResourceType",
 		&returns,
 	)

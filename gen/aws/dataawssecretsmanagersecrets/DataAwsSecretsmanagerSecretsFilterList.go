@@ -116,7 +116,7 @@ func NewDataAwsSecretsmanagerSecretsFilterList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataAwsSecretsmanagerSecretsFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecretsFilterList",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecretsFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsSecretsmanagerSecretsFilterList_Override(d DataAwsSecretsmanagerS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecretsFilterList",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecretsFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

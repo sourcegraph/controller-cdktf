@@ -116,7 +116,7 @@ func NewComputeInstanceAttachedDiskList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_ComputeInstanceAttachedDiskList{}
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceAttachedDiskList",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceAttachedDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeInstanceAttachedDiskList_Override(c ComputeInstanceAttachedDiskLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceAttachedDiskList",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceAttachedDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

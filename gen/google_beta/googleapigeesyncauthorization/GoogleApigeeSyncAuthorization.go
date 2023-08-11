@@ -377,7 +377,7 @@ func NewGoogleApigeeSyncAuthorization(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleApigeeSyncAuthorization{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorization",
+		"@cdktf/provider-google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorization",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewGoogleApigeeSyncAuthorization_Override(g GoogleApigeeSyncAuthorization, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorization",
+		"@cdktf/provider-google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorization",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -523,7 +523,7 @@ func GoogleApigeeSyncAuthorization_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorization",
+		"@cdktf/provider-google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorization",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func GoogleApigeeSyncAuthorization_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorization",
+		"@cdktf/provider-google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorization",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func GoogleApigeeSyncAuthorization_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorization",
+		"@cdktf/provider-google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorization",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func GoogleApigeeSyncAuthorization_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorization",
+		"@cdktf/provider-google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorization",
 		"tfResourceType",
 		&returns,
 	)

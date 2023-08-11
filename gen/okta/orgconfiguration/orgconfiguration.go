@@ -677,7 +677,7 @@ func NewOrgConfiguration(scope constructs.Construct, id *string, config *OrgConf
 	j := jsiiProxy_OrgConfiguration{}
 
 	_jsii_.Create(
-		"okta.orgConfiguration.OrgConfiguration",
+		"@cdktf/provider-okta.orgConfiguration.OrgConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -690,7 +690,7 @@ func NewOrgConfiguration_Override(o OrgConfiguration, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.orgConfiguration.OrgConfiguration",
+		"@cdktf/provider-okta.orgConfiguration.OrgConfiguration",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -966,7 +966,7 @@ func OrgConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.orgConfiguration.OrgConfiguration",
+		"@cdktf/provider-okta.orgConfiguration.OrgConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -985,7 +985,7 @@ func OrgConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.orgConfiguration.OrgConfiguration",
+		"@cdktf/provider-okta.orgConfiguration.OrgConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1004,7 +1004,7 @@ func OrgConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.orgConfiguration.OrgConfiguration",
+		"@cdktf/provider-okta.orgConfiguration.OrgConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1017,7 +1017,7 @@ func OrgConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.orgConfiguration.OrgConfiguration",
+		"@cdktf/provider-okta.orgConfiguration.OrgConfiguration",
 		"tfResourceType",
 		&returns,
 	)

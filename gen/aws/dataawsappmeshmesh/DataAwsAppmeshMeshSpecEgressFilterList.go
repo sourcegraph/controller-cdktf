@@ -104,7 +104,7 @@ func NewDataAwsAppmeshMeshSpecEgressFilterList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataAwsAppmeshMeshSpecEgressFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecEgressFilterList",
+		"@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecEgressFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsAppmeshMeshSpecEgressFilterList_Override(d DataAwsAppmeshMeshSpec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecEgressFilterList",
+		"@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecEgressFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersion",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersion",
 		reflect.TypeOf((*KmsCryptoKeyVersion)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,15 +69,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestation",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestation",
 		reflect.TypeOf((*KmsCryptoKeyVersionAttestation)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationCertChains",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationCertChains",
 		reflect.TypeOf((*KmsCryptoKeyVersionAttestationCertChains)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationCertChainsList",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationCertChainsList",
 		reflect.TypeOf((*KmsCryptoKeyVersionAttestationCertChainsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -97,7 +97,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationCertChainsOutputReference",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationCertChainsOutputReference",
 		reflect.TypeOf((*KmsCryptoKeyVersionAttestationCertChainsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caviumCerts", GoGetter: "CaviumCerts"},
@@ -132,11 +132,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationExternalProtectionLevelOptions",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationExternalProtectionLevelOptions",
 		reflect.TypeOf((*KmsCryptoKeyVersionAttestationExternalProtectionLevelOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList",
 		reflect.TypeOf((*KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -156,7 +156,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsOutputReference",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsOutputReference",
 		reflect.TypeOf((*KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -190,7 +190,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationList",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationList",
 		reflect.TypeOf((*KmsCryptoKeyVersionAttestationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -210,7 +210,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationOutputReference",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationOutputReference",
 		reflect.TypeOf((*KmsCryptoKeyVersionAttestationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certChains", GoGetter: "CertChains"},
@@ -246,15 +246,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersionConfig",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionConfig",
 		reflect.TypeOf((*KmsCryptoKeyVersionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersionTimeouts",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionTimeouts",
 		reflect.TypeOf((*KmsCryptoKeyVersionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersionTimeoutsOutputReference",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionTimeoutsOutputReference",
 		reflect.TypeOf((*KmsCryptoKeyVersionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

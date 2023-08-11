@@ -104,7 +104,7 @@ func NewGoogleSqlDatabaseInstanceServerCaCertList(terraformResource cdktf.IInter
 	j := jsiiProxy_GoogleSqlDatabaseInstanceServerCaCertList{}
 
 	_jsii_.Create(
-		"google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceServerCaCertList",
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceServerCaCertList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleSqlDatabaseInstanceServerCaCertList_Override(g GoogleSqlDatabaseIn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceServerCaCertList",
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceServerCaCertList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

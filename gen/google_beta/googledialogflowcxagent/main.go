@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleDialogflowCxAgent.GoogleDialogflowCxAgent",
+		"@cdktf/provider-google-beta.googleDialogflowCxAgent.GoogleDialogflowCxAgent",
 		reflect.TypeOf((*GoogleDialogflowCxAgent)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -94,15 +94,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDialogflowCxAgent.GoogleDialogflowCxAgentConfig",
+		"@cdktf/provider-google-beta.googleDialogflowCxAgent.GoogleDialogflowCxAgentConfig",
 		reflect.TypeOf((*GoogleDialogflowCxAgentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDialogflowCxAgent.GoogleDialogflowCxAgentSpeechToTextSettings",
+		"@cdktf/provider-google-beta.googleDialogflowCxAgent.GoogleDialogflowCxAgentSpeechToTextSettings",
 		reflect.TypeOf((*GoogleDialogflowCxAgentSpeechToTextSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDialogflowCxAgent.GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowCxAgent.GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference",
 		reflect.TypeOf((*GoogleDialogflowCxAgentSpeechToTextSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -137,11 +137,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDialogflowCxAgent.GoogleDialogflowCxAgentTimeouts",
+		"@cdktf/provider-google-beta.googleDialogflowCxAgent.GoogleDialogflowCxAgentTimeouts",
 		reflect.TypeOf((*GoogleDialogflowCxAgentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDialogflowCxAgent.GoogleDialogflowCxAgentTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowCxAgent.GoogleDialogflowCxAgentTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleDialogflowCxAgentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

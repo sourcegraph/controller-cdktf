@@ -189,7 +189,7 @@ func NewDataplexLakeAssetStatusOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataplexLakeAssetStatusOutputReference{}
 
 	_jsii_.Create(
-		"google.dataplexLake.DataplexLakeAssetStatusOutputReference",
+		"@cdktf/provider-google.dataplexLake.DataplexLakeAssetStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataplexLakeAssetStatusOutputReference_Override(d DataplexLakeAssetStatu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexLake.DataplexLakeAssetStatusOutputReference",
+		"@cdktf/provider-google.dataplexLake.DataplexLakeAssetStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

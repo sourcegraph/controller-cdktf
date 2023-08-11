@@ -449,7 +449,7 @@ func NewCeAnomalyMonitor(scope constructs.Construct, id *string, config *CeAnoma
 	j := jsiiProxy_CeAnomalyMonitor{}
 
 	_jsii_.Create(
-		"aws.ceAnomalyMonitor.CeAnomalyMonitor",
+		"@cdktf/provider-aws.ceAnomalyMonitor.CeAnomalyMonitor",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -462,7 +462,7 @@ func NewCeAnomalyMonitor_Override(c CeAnomalyMonitor, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ceAnomalyMonitor.CeAnomalyMonitor",
+		"@cdktf/provider-aws.ceAnomalyMonitor.CeAnomalyMonitor",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -639,7 +639,7 @@ func CeAnomalyMonitor_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ceAnomalyMonitor.CeAnomalyMonitor",
+		"@cdktf/provider-aws.ceAnomalyMonitor.CeAnomalyMonitor",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -658,7 +658,7 @@ func CeAnomalyMonitor_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ceAnomalyMonitor.CeAnomalyMonitor",
+		"@cdktf/provider-aws.ceAnomalyMonitor.CeAnomalyMonitor",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func CeAnomalyMonitor_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ceAnomalyMonitor.CeAnomalyMonitor",
+		"@cdktf/provider-aws.ceAnomalyMonitor.CeAnomalyMonitor",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -690,7 +690,7 @@ func CeAnomalyMonitor_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ceAnomalyMonitor.CeAnomalyMonitor",
+		"@cdktf/provider-aws.ceAnomalyMonitor.CeAnomalyMonitor",
 		"tfResourceType",
 		&returns,
 	)

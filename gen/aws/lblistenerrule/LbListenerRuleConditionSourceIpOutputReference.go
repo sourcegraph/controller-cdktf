@@ -179,7 +179,7 @@ func NewLbListenerRuleConditionSourceIpOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_LbListenerRuleConditionSourceIpOutputReference{}
 
 	_jsii_.Create(
-		"aws.lbListenerRule.LbListenerRuleConditionSourceIpOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionSourceIpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewLbListenerRuleConditionSourceIpOutputReference_Override(l LbListenerRule
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbListenerRule.LbListenerRuleConditionSourceIpOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionSourceIpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

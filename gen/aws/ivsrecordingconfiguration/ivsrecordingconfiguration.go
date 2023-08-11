@@ -485,7 +485,7 @@ func NewIvsRecordingConfiguration(scope constructs.Construct, id *string, config
 	j := jsiiProxy_IvsRecordingConfiguration{}
 
 	_jsii_.Create(
-		"aws.ivsRecordingConfiguration.IvsRecordingConfiguration",
+		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -498,7 +498,7 @@ func NewIvsRecordingConfiguration_Override(i IvsRecordingConfiguration, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ivsRecordingConfiguration.IvsRecordingConfiguration",
+		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfiguration",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -653,7 +653,7 @@ func IvsRecordingConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ivsRecordingConfiguration.IvsRecordingConfiguration",
+		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -672,7 +672,7 @@ func IvsRecordingConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ivsRecordingConfiguration.IvsRecordingConfiguration",
+		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func IvsRecordingConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ivsRecordingConfiguration.IvsRecordingConfiguration",
+		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -704,7 +704,7 @@ func IvsRecordingConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ivsRecordingConfiguration.IvsRecordingConfiguration",
+		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfiguration",
 		"tfResourceType",
 		&returns,
 	)

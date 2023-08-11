@@ -204,7 +204,7 @@ func NewIvsPlaybackKeyPairTimeoutsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_IvsPlaybackKeyPairTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeoutsOutputReference",
+		"@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewIvsPlaybackKeyPairTimeoutsOutputReference_Override(i IvsPlaybackKeyPairT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeoutsOutputReference",
+		"@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

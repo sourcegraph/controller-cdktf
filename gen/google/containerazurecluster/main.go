@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureCluster",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureCluster",
 		reflect.TypeOf((*ContainerAzureCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -103,15 +103,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterAuthorization",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterAuthorization",
 		reflect.TypeOf((*ContainerAzureClusterAuthorization)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterAuthorizationAdminUsers",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterAuthorizationAdminUsers",
 		reflect.TypeOf((*ContainerAzureClusterAuthorizationAdminUsers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterAuthorizationAdminUsersList",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterAuthorizationAdminUsersList",
 		reflect.TypeOf((*ContainerAzureClusterAuthorizationAdminUsersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -132,7 +132,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterAuthorizationAdminUsersOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterAuthorizationAdminUsersOutputReference",
 		reflect.TypeOf((*ContainerAzureClusterAuthorizationAdminUsersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -166,7 +166,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterAuthorizationOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterAuthorizationOutputReference",
 		reflect.TypeOf((*ContainerAzureClusterAuthorizationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "adminUsers", GoGetter: "AdminUsers"},
@@ -201,11 +201,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterAzureServicesAuthentication",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterAzureServicesAuthentication",
 		reflect.TypeOf((*ContainerAzureClusterAzureServicesAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterAzureServicesAuthenticationOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterAzureServicesAuthenticationOutputReference",
 		reflect.TypeOf((*ContainerAzureClusterAzureServicesAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applicationId", GoGetter: "ApplicationId"},
@@ -241,19 +241,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterConfig",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterConfig",
 		reflect.TypeOf((*ContainerAzureClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlane",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlane",
 		reflect.TypeOf((*ContainerAzureClusterControlPlane)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneDatabaseEncryption",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneDatabaseEncryption",
 		reflect.TypeOf((*ContainerAzureClusterControlPlaneDatabaseEncryption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneDatabaseEncryptionOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneDatabaseEncryptionOutputReference",
 		reflect.TypeOf((*ContainerAzureClusterControlPlaneDatabaseEncryptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -287,11 +287,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneMainVolume",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneMainVolume",
 		reflect.TypeOf((*ContainerAzureClusterControlPlaneMainVolume)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneMainVolumeOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneMainVolumeOutputReference",
 		reflect.TypeOf((*ContainerAzureClusterControlPlaneMainVolumeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -326,7 +326,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneOutputReference",
 		reflect.TypeOf((*ContainerAzureClusterControlPlaneOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -391,11 +391,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneProxyConfig",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneProxyConfig",
 		reflect.TypeOf((*ContainerAzureClusterControlPlaneProxyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneProxyConfigOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneProxyConfigOutputReference",
 		reflect.TypeOf((*ContainerAzureClusterControlPlaneProxyConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -431,11 +431,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneReplicaPlacements",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneReplicaPlacements",
 		reflect.TypeOf((*ContainerAzureClusterControlPlaneReplicaPlacements)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneReplicaPlacementsList",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneReplicaPlacementsList",
 		reflect.TypeOf((*ContainerAzureClusterControlPlaneReplicaPlacementsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -456,7 +456,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneReplicaPlacementsOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneReplicaPlacementsOutputReference",
 		reflect.TypeOf((*ContainerAzureClusterControlPlaneReplicaPlacementsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "azureAvailabilityZone", GoGetter: "AzureAvailabilityZone"},
@@ -492,11 +492,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneRootVolume",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneRootVolume",
 		reflect.TypeOf((*ContainerAzureClusterControlPlaneRootVolume)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneRootVolumeOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneRootVolumeOutputReference",
 		reflect.TypeOf((*ContainerAzureClusterControlPlaneRootVolumeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -531,11 +531,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneSshConfig",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneSshConfig",
 		reflect.TypeOf((*ContainerAzureClusterControlPlaneSshConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneSshConfigOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneSshConfigOutputReference",
 		reflect.TypeOf((*ContainerAzureClusterControlPlaneSshConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizedKey", GoGetter: "AuthorizedKey"},
@@ -569,11 +569,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterFleet",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterFleet",
 		reflect.TypeOf((*ContainerAzureClusterFleet)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterFleetOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterFleetOutputReference",
 		reflect.TypeOf((*ContainerAzureClusterFleetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -609,11 +609,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterNetworking",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterNetworking",
 		reflect.TypeOf((*ContainerAzureClusterNetworking)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterNetworkingOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterNetworkingOutputReference",
 		reflect.TypeOf((*ContainerAzureClusterNetworkingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -651,11 +651,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterTimeouts",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterTimeouts",
 		reflect.TypeOf((*ContainerAzureClusterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterTimeoutsOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterTimeoutsOutputReference",
 		reflect.TypeOf((*ContainerAzureClusterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -696,11 +696,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureCluster.ContainerAzureClusterWorkloadIdentityConfig",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterWorkloadIdentityConfig",
 		reflect.TypeOf((*ContainerAzureClusterWorkloadIdentityConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterWorkloadIdentityConfigList",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterWorkloadIdentityConfigList",
 		reflect.TypeOf((*ContainerAzureClusterWorkloadIdentityConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -720,7 +720,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureCluster.ContainerAzureClusterWorkloadIdentityConfigOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterWorkloadIdentityConfigOutputReference",
 		reflect.TypeOf((*ContainerAzureClusterWorkloadIdentityConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

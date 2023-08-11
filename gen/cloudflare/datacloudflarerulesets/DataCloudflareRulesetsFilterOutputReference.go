@@ -276,7 +276,7 @@ func NewDataCloudflareRulesetsFilterOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DataCloudflareRulesetsFilterOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsFilterOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewDataCloudflareRulesetsFilterOutputReference_Override(d DataCloudflareRul
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsFilterOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

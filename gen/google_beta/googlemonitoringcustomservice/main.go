@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringCustomService.GoogleMonitoringCustomService",
+		"@cdktf/provider-google-beta.googleMonitoringCustomService.GoogleMonitoringCustomService",
 		reflect.TypeOf((*GoogleMonitoringCustomService)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,15 +76,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringCustomService.GoogleMonitoringCustomServiceConfig",
+		"@cdktf/provider-google-beta.googleMonitoringCustomService.GoogleMonitoringCustomServiceConfig",
 		reflect.TypeOf((*GoogleMonitoringCustomServiceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringCustomService.GoogleMonitoringCustomServiceTelemetry",
+		"@cdktf/provider-google-beta.googleMonitoringCustomService.GoogleMonitoringCustomServiceTelemetry",
 		reflect.TypeOf((*GoogleMonitoringCustomServiceTelemetry)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringCustomService.GoogleMonitoringCustomServiceTelemetryOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringCustomService.GoogleMonitoringCustomServiceTelemetryOutputReference",
 		reflect.TypeOf((*GoogleMonitoringCustomServiceTelemetryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -119,11 +119,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringCustomService.GoogleMonitoringCustomServiceTimeouts",
+		"@cdktf/provider-google-beta.googleMonitoringCustomService.GoogleMonitoringCustomServiceTimeouts",
 		reflect.TypeOf((*GoogleMonitoringCustomServiceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringCustomService.GoogleMonitoringCustomServiceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringCustomService.GoogleMonitoringCustomServiceTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleMonitoringCustomServiceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

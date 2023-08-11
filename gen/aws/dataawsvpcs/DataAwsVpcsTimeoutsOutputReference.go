@@ -180,7 +180,7 @@ func NewDataAwsVpcsTimeoutsOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataAwsVpcsTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpcs.DataAwsVpcsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsVpcsTimeoutsOutputReference_Override(d DataAwsVpcsTimeoutsOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpcs.DataAwsVpcsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

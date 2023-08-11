@@ -367,7 +367,7 @@ func NewArgo(scope constructs.Construct, id *string, config *ArgoConfig) Argo {
 	j := jsiiProxy_Argo{}
 
 	_jsii_.Create(
-		"cloudflare.argo.Argo",
+		"@cdktf/provider-cloudflare.argo.Argo",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewArgo_Override(a Argo, scope constructs.Construct, id *string, config *Ar
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.argo.Argo",
+		"@cdktf/provider-cloudflare.argo.Argo",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -524,7 +524,7 @@ func Argo_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.argo.Argo",
+		"@cdktf/provider-cloudflare.argo.Argo",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func Argo_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.argo.Argo",
+		"@cdktf/provider-cloudflare.argo.Argo",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func Argo_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.argo.Argo",
+		"@cdktf/provider-cloudflare.argo.Argo",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func Argo_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.argo.Argo",
+		"@cdktf/provider-cloudflare.argo.Argo",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewPodV1SpecInitContainerStartupProbeTcpSocketList(terraformResource cdktf.
 	j := jsiiProxy_PodV1SpecInitContainerStartupProbeTcpSocketList{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecInitContainerStartupProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecInitContainerStartupProbeTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodV1SpecInitContainerStartupProbeTcpSocketList_Override(p PodV1SpecInit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecInitContainerStartupProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecInitContainerStartupProbeTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

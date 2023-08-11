@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeInstanceGroup.ComputeInstanceGroup",
+		"@cdktf/provider-google.computeInstanceGroup.ComputeInstanceGroup",
 		reflect.TypeOf((*ComputeInstanceGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,15 +82,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeInstanceGroup.ComputeInstanceGroupConfig",
+		"@cdktf/provider-google.computeInstanceGroup.ComputeInstanceGroupConfig",
 		reflect.TypeOf((*ComputeInstanceGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeInstanceGroup.ComputeInstanceGroupNamedPort",
+		"@cdktf/provider-google.computeInstanceGroup.ComputeInstanceGroupNamedPort",
 		reflect.TypeOf((*ComputeInstanceGroupNamedPort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeInstanceGroup.ComputeInstanceGroupNamedPortList",
+		"@cdktf/provider-google.computeInstanceGroup.ComputeInstanceGroupNamedPortList",
 		reflect.TypeOf((*ComputeInstanceGroupNamedPortList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -111,7 +111,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeInstanceGroup.ComputeInstanceGroupNamedPortOutputReference",
+		"@cdktf/provider-google.computeInstanceGroup.ComputeInstanceGroupNamedPortOutputReference",
 		reflect.TypeOf((*ComputeInstanceGroupNamedPortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -147,11 +147,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeInstanceGroup.ComputeInstanceGroupTimeouts",
+		"@cdktf/provider-google.computeInstanceGroup.ComputeInstanceGroupTimeouts",
 		reflect.TypeOf((*ComputeInstanceGroupTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeInstanceGroup.ComputeInstanceGroupTimeoutsOutputReference",
+		"@cdktf/provider-google.computeInstanceGroup.ComputeInstanceGroupTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeInstanceGroupTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

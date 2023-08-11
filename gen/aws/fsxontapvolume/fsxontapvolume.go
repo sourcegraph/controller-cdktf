@@ -610,7 +610,7 @@ func NewFsxOntapVolume(scope constructs.Construct, id *string, config *FsxOntapV
 	j := jsiiProxy_FsxOntapVolume{}
 
 	_jsii_.Create(
-		"aws.fsxOntapVolume.FsxOntapVolume",
+		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -623,7 +623,7 @@ func NewFsxOntapVolume_Override(f FsxOntapVolume, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOntapVolume.FsxOntapVolume",
+		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -833,7 +833,7 @@ func FsxOntapVolume_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxOntapVolume.FsxOntapVolume",
+		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -852,7 +852,7 @@ func FsxOntapVolume_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxOntapVolume.FsxOntapVolume",
+		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -871,7 +871,7 @@ func FsxOntapVolume_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxOntapVolume.FsxOntapVolume",
+		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -884,7 +884,7 @@ func FsxOntapVolume_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.fsxOntapVolume.FsxOntapVolume",
+		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume",
 		"tfResourceType",
 		&returns,
 	)

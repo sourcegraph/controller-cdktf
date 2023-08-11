@@ -116,7 +116,7 @@ func NewDataAwsEc2HostFilterList(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_DataAwsEc2HostFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2Host.DataAwsEc2HostFilterList",
+		"@cdktf/provider-aws.dataAwsEc2Host.DataAwsEc2HostFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsEc2HostFilterList_Override(d DataAwsEc2HostFilterList, terraformR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2Host.DataAwsEc2HostFilterList",
+		"@cdktf/provider-aws.dataAwsEc2Host.DataAwsEc2HostFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

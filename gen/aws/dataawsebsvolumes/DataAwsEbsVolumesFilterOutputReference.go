@@ -202,7 +202,7 @@ func NewDataAwsEbsVolumesFilterOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataAwsEbsVolumesFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEbsVolumes.DataAwsEbsVolumesFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEbsVolumes.DataAwsEbsVolumesFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsEbsVolumesFilterOutputReference_Override(d DataAwsEbsVolumesFilte
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEbsVolumes.DataAwsEbsVolumesFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEbsVolumes.DataAwsEbsVolumesFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

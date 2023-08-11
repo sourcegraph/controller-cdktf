@@ -514,7 +514,7 @@ func NewGoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputRefe
 	j := jsiiProxy_GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -526,7 +526,7 @@ func NewGoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

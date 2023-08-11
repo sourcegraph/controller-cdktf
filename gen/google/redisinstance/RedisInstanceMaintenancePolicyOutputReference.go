@@ -226,7 +226,7 @@ func NewRedisInstanceMaintenancePolicyOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_RedisInstanceMaintenancePolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.redisInstance.RedisInstanceMaintenancePolicyOutputReference",
+		"@cdktf/provider-google.redisInstance.RedisInstanceMaintenancePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewRedisInstanceMaintenancePolicyOutputReference_Override(r RedisInstanceMa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.redisInstance.RedisInstanceMaintenancePolicyOutputReference",
+		"@cdktf/provider-google.redisInstance.RedisInstanceMaintenancePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

@@ -227,7 +227,7 @@ func NewTunnelConfigConfigIngressRuleOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_TunnelConfigConfigIngressRuleOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleOutputReference",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewTunnelConfigConfigIngressRuleOutputReference_Override(t TunnelConfigConf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleOutputReference",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		t,
 	)

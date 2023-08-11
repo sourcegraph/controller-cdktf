@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.storageTransferAgentPool.StorageTransferAgentPool",
+		"@cdktf/provider-google.storageTransferAgentPool.StorageTransferAgentPool",
 		reflect.TypeOf((*StorageTransferAgentPool)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.storageTransferAgentPool.StorageTransferAgentPoolBandwidthLimit",
+		"@cdktf/provider-google.storageTransferAgentPool.StorageTransferAgentPoolBandwidthLimit",
 		reflect.TypeOf((*StorageTransferAgentPoolBandwidthLimit)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.storageTransferAgentPool.StorageTransferAgentPoolBandwidthLimitOutputReference",
+		"@cdktf/provider-google.storageTransferAgentPool.StorageTransferAgentPoolBandwidthLimitOutputReference",
 		reflect.TypeOf((*StorageTransferAgentPoolBandwidthLimitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -110,15 +110,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.storageTransferAgentPool.StorageTransferAgentPoolConfig",
+		"@cdktf/provider-google.storageTransferAgentPool.StorageTransferAgentPoolConfig",
 		reflect.TypeOf((*StorageTransferAgentPoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.storageTransferAgentPool.StorageTransferAgentPoolTimeouts",
+		"@cdktf/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeouts",
 		reflect.TypeOf((*StorageTransferAgentPoolTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.storageTransferAgentPool.StorageTransferAgentPoolTimeoutsOutputReference",
+		"@cdktf/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeoutsOutputReference",
 		reflect.TypeOf((*StorageTransferAgentPoolTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

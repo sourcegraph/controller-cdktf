@@ -228,7 +228,7 @@ func NewConfigConfigurationRecorderRecordingGroupOutputReference(terraformResour
 	j := jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference{}
 
 	_jsii_.Create(
-		"aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupOutputReference",
+		"@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewConfigConfigurationRecorderRecordingGroupOutputReference_Override(c Conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupOutputReference",
+		"@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

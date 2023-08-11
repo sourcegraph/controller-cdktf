@@ -423,7 +423,7 @@ func NewEndpointsServiceConsumersIamBinding(scope constructs.Construct, id *stri
 	j := jsiiProxy_EndpointsServiceConsumersIamBinding{}
 
 	_jsii_.Create(
-		"google.endpointsServiceConsumersIamBinding.EndpointsServiceConsumersIamBinding",
+		"@cdktf/provider-google.endpointsServiceConsumersIamBinding.EndpointsServiceConsumersIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewEndpointsServiceConsumersIamBinding_Override(e EndpointsServiceConsumers
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.endpointsServiceConsumersIamBinding.EndpointsServiceConsumersIamBinding",
+		"@cdktf/provider-google.endpointsServiceConsumersIamBinding.EndpointsServiceConsumersIamBinding",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -591,7 +591,7 @@ func EndpointsServiceConsumersIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.endpointsServiceConsumersIamBinding.EndpointsServiceConsumersIamBinding",
+		"@cdktf/provider-google.endpointsServiceConsumersIamBinding.EndpointsServiceConsumersIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func EndpointsServiceConsumersIamBinding_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.endpointsServiceConsumersIamBinding.EndpointsServiceConsumersIamBinding",
+		"@cdktf/provider-google.endpointsServiceConsumersIamBinding.EndpointsServiceConsumersIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func EndpointsServiceConsumersIamBinding_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.endpointsServiceConsumersIamBinding.EndpointsServiceConsumersIamBinding",
+		"@cdktf/provider-google.endpointsServiceConsumersIamBinding.EndpointsServiceConsumersIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func EndpointsServiceConsumersIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.endpointsServiceConsumersIamBinding.EndpointsServiceConsumersIamBinding",
+		"@cdktf/provider-google.endpointsServiceConsumersIamBinding.EndpointsServiceConsumersIamBinding",
 		"tfResourceType",
 		&returns,
 	)

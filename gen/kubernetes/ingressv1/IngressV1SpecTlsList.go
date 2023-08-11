@@ -116,7 +116,7 @@ func NewIngressV1SpecTlsList(terraformResource cdktf.IInterpolatingParent, terra
 	j := jsiiProxy_IngressV1SpecTlsList{}
 
 	_jsii_.Create(
-		"kubernetes.ingressV1.IngressV1SpecTlsList",
+		"@cdktf/provider-kubernetes.ingressV1.IngressV1SpecTlsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewIngressV1SpecTlsList_Override(i IngressV1SpecTlsList, terraformResource 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.ingressV1.IngressV1SpecTlsList",
+		"@cdktf/provider-kubernetes.ingressV1.IngressV1SpecTlsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

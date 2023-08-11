@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cloudwatchDashboard.CloudwatchDashboard",
+		"@cdktf/provider-aws.cloudwatchDashboard.CloudwatchDashboard",
 		reflect.TypeOf((*CloudwatchDashboard)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudwatchDashboard.CloudwatchDashboardConfig",
+		"@cdktf/provider-aws.cloudwatchDashboard.CloudwatchDashboardConfig",
 		reflect.TypeOf((*CloudwatchDashboardConfig)(nil)).Elem(),
 	)
 }

@@ -228,7 +228,7 @@ func NewGoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigOutputRe
 	j := jsiiProxy_GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigOutputRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

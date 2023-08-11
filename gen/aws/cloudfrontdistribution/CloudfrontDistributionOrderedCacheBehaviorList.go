@@ -116,7 +116,7 @@ func NewCloudfrontDistributionOrderedCacheBehaviorList(terraformResource cdktf.I
 	j := jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorList{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorList",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudfrontDistributionOrderedCacheBehaviorList_Override(c CloudfrontDist
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorList",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

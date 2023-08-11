@@ -104,7 +104,7 @@ func NewDataAwsEcrRepositoryEncryptionConfigurationList(terraformResource cdktf.
 	j := jsiiProxy_DataAwsEcrRepositoryEncryptionConfigurationList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEcrRepository.DataAwsEcrRepositoryEncryptionConfigurationList",
+		"@cdktf/provider-aws.dataAwsEcrRepository.DataAwsEcrRepositoryEncryptionConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEcrRepositoryEncryptionConfigurationList_Override(d DataAwsEcrRep
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEcrRepository.DataAwsEcrRepositoryEncryptionConfigurationList",
+		"@cdktf/provider-aws.dataAwsEcrRepository.DataAwsEcrRepositoryEncryptionConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

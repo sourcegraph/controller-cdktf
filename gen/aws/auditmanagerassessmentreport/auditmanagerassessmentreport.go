@@ -375,7 +375,7 @@ func NewAuditmanagerAssessmentReport(scope constructs.Construct, id *string, con
 	j := jsiiProxy_AuditmanagerAssessmentReport{}
 
 	_jsii_.Create(
-		"aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReport",
+		"@cdktf/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReport",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -388,7 +388,7 @@ func NewAuditmanagerAssessmentReport_Override(a AuditmanagerAssessmentReport, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReport",
+		"@cdktf/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReport",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -521,7 +521,7 @@ func AuditmanagerAssessmentReport_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReport",
+		"@cdktf/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReport",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func AuditmanagerAssessmentReport_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReport",
+		"@cdktf/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReport",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -559,7 +559,7 @@ func AuditmanagerAssessmentReport_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReport",
+		"@cdktf/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReport",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func AuditmanagerAssessmentReport_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReport",
+		"@cdktf/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReport",
 		"tfResourceType",
 		&returns,
 	)

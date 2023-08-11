@@ -448,7 +448,7 @@ func NewCertificateManagerCertificateMap(scope constructs.Construct, id *string,
 	j := jsiiProxy_CertificateManagerCertificateMap{}
 
 	_jsii_.Create(
-		"google.certificateManagerCertificateMap.CertificateManagerCertificateMap",
+		"@cdktf/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewCertificateManagerCertificateMap_Override(c CertificateManagerCertificat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.certificateManagerCertificateMap.CertificateManagerCertificateMap",
+		"@cdktf/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -616,7 +616,7 @@ func CertificateManagerCertificateMap_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.certificateManagerCertificateMap.CertificateManagerCertificateMap",
+		"@cdktf/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -635,7 +635,7 @@ func CertificateManagerCertificateMap_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.certificateManagerCertificateMap.CertificateManagerCertificateMap",
+		"@cdktf/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func CertificateManagerCertificateMap_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.certificateManagerCertificateMap.CertificateManagerCertificateMap",
+		"@cdktf/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func CertificateManagerCertificateMap_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.certificateManagerCertificateMap.CertificateManagerCertificateMap",
+		"@cdktf/provider-google.certificateManagerCertificateMap.CertificateManagerCertificateMap",
 		"tfResourceType",
 		&returns,
 	)

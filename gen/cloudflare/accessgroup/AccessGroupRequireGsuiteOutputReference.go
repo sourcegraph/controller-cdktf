@@ -204,7 +204,7 @@ func NewAccessGroupRequireGsuiteOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_AccessGroupRequireGsuiteOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupRequireGsuiteOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuiteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAccessGroupRequireGsuiteOutputReference_Override(a AccessGroupRequireGsu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupRequireGsuiteOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuiteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

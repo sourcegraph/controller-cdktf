@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.secretsmanagerSecretPolicy.SecretsmanagerSecretPolicy",
+		"@cdktf/provider-aws.secretsmanagerSecretPolicy.SecretsmanagerSecretPolicy",
 		reflect.TypeOf((*SecretsmanagerSecretPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.secretsmanagerSecretPolicy.SecretsmanagerSecretPolicyConfig",
+		"@cdktf/provider-aws.secretsmanagerSecretPolicy.SecretsmanagerSecretPolicyConfig",
 		reflect.TypeOf((*SecretsmanagerSecretPolicyConfig)(nil)).Elem(),
 	)
 }

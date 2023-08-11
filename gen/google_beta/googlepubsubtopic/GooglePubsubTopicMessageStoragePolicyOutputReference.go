@@ -179,7 +179,7 @@ func NewGooglePubsubTopicMessageStoragePolicyOutputReference(terraformResource c
 	j := jsiiProxy_GooglePubsubTopicMessageStoragePolicyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googlePubsubTopic.GooglePubsubTopicMessageStoragePolicyOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubTopic.GooglePubsubTopicMessageStoragePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGooglePubsubTopicMessageStoragePolicyOutputReference_Override(g GooglePu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePubsubTopic.GooglePubsubTopicMessageStoragePolicyOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubTopic.GooglePubsubTopicMessageStoragePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.apiGatewayIntegration.ApiGatewayIntegration",
+		"@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegration",
 		reflect.TypeOf((*ApiGatewayIntegration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -103,15 +103,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apiGatewayIntegration.ApiGatewayIntegrationConfig",
+		"@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig",
 		reflect.TypeOf((*ApiGatewayIntegrationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.apiGatewayIntegration.ApiGatewayIntegrationTlsConfig",
+		"@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationTlsConfig",
 		reflect.TypeOf((*ApiGatewayIntegrationTlsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apiGatewayIntegration.ApiGatewayIntegrationTlsConfigOutputReference",
+		"@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationTlsConfigOutputReference",
 		reflect.TypeOf((*ApiGatewayIntegrationTlsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

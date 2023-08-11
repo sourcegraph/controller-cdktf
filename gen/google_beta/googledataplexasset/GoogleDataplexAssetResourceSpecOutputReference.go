@@ -203,7 +203,7 @@ func NewGoogleDataplexAssetResourceSpecOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GoogleDataplexAssetResourceSpecOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexAsset.GoogleDataplexAssetResourceSpecOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetResourceSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleDataplexAssetResourceSpecOutputReference_Override(g GoogleDataplex
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexAsset.GoogleDataplexAssetResourceSpecOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetResourceSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

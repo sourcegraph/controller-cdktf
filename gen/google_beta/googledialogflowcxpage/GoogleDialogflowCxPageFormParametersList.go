@@ -116,7 +116,7 @@ func NewGoogleDialogflowCxPageFormParametersList(terraformResource cdktf.IInterp
 	j := jsiiProxy_GoogleDialogflowCxPageFormParametersList{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageFormParametersList",
+		"@cdktf/provider-google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageFormParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDialogflowCxPageFormParametersList_Override(g GoogleDialogflowCxPa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageFormParametersList",
+		"@cdktf/provider-google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageFormParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

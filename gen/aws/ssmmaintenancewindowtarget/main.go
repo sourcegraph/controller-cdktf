@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTarget",
+		"@cdktf/provider-aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTarget",
 		reflect.TypeOf((*SsmMaintenanceWindowTarget)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTargetConfig",
+		"@cdktf/provider-aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTargetConfig",
 		reflect.TypeOf((*SsmMaintenanceWindowTargetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTargetTargets",
+		"@cdktf/provider-aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTargetTargets",
 		reflect.TypeOf((*SsmMaintenanceWindowTargetTargets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTargetTargetsList",
+		"@cdktf/provider-aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTargetTargetsList",
 		reflect.TypeOf((*SsmMaintenanceWindowTargetTargetsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -100,7 +100,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTargetTargetsOutputReference",
+		"@cdktf/provider-aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTargetTargetsOutputReference",
 		reflect.TypeOf((*SsmMaintenanceWindowTargetTargetsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

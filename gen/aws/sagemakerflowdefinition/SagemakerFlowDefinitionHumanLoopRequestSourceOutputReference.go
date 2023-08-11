@@ -179,7 +179,7 @@ func NewSagemakerFlowDefinitionHumanLoopRequestSourceOutputReference(terraformRe
 	j := jsiiProxy_SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference",
+		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewSagemakerFlowDefinitionHumanLoopRequestSourceOutputReference_Override(s 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference",
+		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

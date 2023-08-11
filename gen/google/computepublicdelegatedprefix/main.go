@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix",
+		"@cdktf/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix",
 		reflect.TypeOf((*ComputePublicDelegatedPrefix)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixConfig",
+		"@cdktf/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixConfig",
 		reflect.TypeOf((*ComputePublicDelegatedPrefixConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixTimeouts",
+		"@cdktf/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixTimeouts",
 		reflect.TypeOf((*ComputePublicDelegatedPrefixTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixTimeoutsOutputReference",
+		"@cdktf/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixTimeoutsOutputReference",
 		reflect.TypeOf((*ComputePublicDelegatedPrefixTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

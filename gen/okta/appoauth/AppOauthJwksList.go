@@ -116,7 +116,7 @@ func NewAppOauthJwksList(terraformResource cdktf.IInterpolatingParent, terraform
 	j := jsiiProxy_AppOauthJwksList{}
 
 	_jsii_.Create(
-		"okta.appOauth.AppOauthJwksList",
+		"@cdktf/provider-okta.appOauth.AppOauthJwksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppOauthJwksList_Override(a AppOauthJwksList, terraformResource cdktf.II
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appOauth.AppOauthJwksList",
+		"@cdktf/provider-okta.appOauth.AppOauthJwksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

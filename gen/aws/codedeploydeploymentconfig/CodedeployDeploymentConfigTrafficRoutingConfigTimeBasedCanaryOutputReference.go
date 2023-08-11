@@ -204,7 +204,7 @@ func NewCodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputRefer
 	j := jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference{}
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

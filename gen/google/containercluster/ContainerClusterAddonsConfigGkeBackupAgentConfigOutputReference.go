@@ -179,7 +179,7 @@ func NewContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference(terrafor
 	j := jsiiProxy_ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

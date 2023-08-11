@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.fsxBackup.FsxBackup",
+		"@cdktf/provider-aws.fsxBackup.FsxBackup",
 		reflect.TypeOf((*FsxBackup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,15 +75,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxBackup.FsxBackupConfig",
+		"@cdktf/provider-aws.fsxBackup.FsxBackupConfig",
 		reflect.TypeOf((*FsxBackupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxBackup.FsxBackupTimeouts",
+		"@cdktf/provider-aws.fsxBackup.FsxBackupTimeouts",
 		reflect.TypeOf((*FsxBackupTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxBackup.FsxBackupTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxBackup.FsxBackupTimeoutsOutputReference",
 		reflect.TypeOf((*FsxBackupTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

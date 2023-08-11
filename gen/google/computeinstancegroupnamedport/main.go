@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA",
+		"@cdktf/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA",
 		reflect.TypeOf((*ComputeInstanceGroupNamedPortA)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortAConfig",
+		"@cdktf/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortAConfig",
 		reflect.TypeOf((*ComputeInstanceGroupNamedPortAConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortTimeouts",
+		"@cdktf/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortTimeouts",
 		reflect.TypeOf((*ComputeInstanceGroupNamedPortTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortTimeoutsOutputReference",
+		"@cdktf/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeInstanceGroupNamedPortTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -448,7 +448,7 @@ func NewGkeBackupBackupPlanIamMember(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GkeBackupBackupPlanIamMember{}
 
 	_jsii_.Create(
-		"google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGkeBackupBackupPlanIamMember_Override(g GkeBackupBackupPlanIamMember, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GkeBackupBackupPlanIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GkeBackupBackupPlanIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GkeBackupBackupPlanIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GkeBackupBackupPlanIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember",
 		"tfResourceType",
 		&returns,
 	)

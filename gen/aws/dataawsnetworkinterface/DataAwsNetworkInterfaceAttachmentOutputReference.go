@@ -200,7 +200,7 @@ func NewDataAwsNetworkInterfaceAttachmentOutputReference(terraformResource cdktf
 	j := jsiiProxy_DataAwsNetworkInterfaceAttachmentOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachmentOutputReference",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataAwsNetworkInterfaceAttachmentOutputReference_Override(d DataAwsNetwo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachmentOutputReference",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

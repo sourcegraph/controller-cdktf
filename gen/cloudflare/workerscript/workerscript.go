@@ -629,7 +629,7 @@ func NewWorkerScript(scope constructs.Construct, id *string, config *WorkerScrip
 	j := jsiiProxy_WorkerScript{}
 
 	_jsii_.Create(
-		"cloudflare.workerScript.WorkerScript",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScript",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -642,7 +642,7 @@ func NewWorkerScript_Override(w WorkerScript, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.workerScript.WorkerScript",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScript",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -819,7 +819,7 @@ func WorkerScript_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.workerScript.WorkerScript",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScript",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -838,7 +838,7 @@ func WorkerScript_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.workerScript.WorkerScript",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScript",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -857,7 +857,7 @@ func WorkerScript_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.workerScript.WorkerScript",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScript",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -870,7 +870,7 @@ func WorkerScript_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.workerScript.WorkerScript",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScript",
 		"tfResourceType",
 		&returns,
 	)

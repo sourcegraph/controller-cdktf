@@ -204,7 +204,7 @@ func NewRamResourceShareTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_RamResourceShareTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ramResourceShare.RamResourceShareTimeoutsOutputReference",
+		"@cdktf/provider-aws.ramResourceShare.RamResourceShareTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewRamResourceShareTimeoutsOutputReference_Override(r RamResourceShareTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ramResourceShare.RamResourceShareTimeoutsOutputReference",
+		"@cdktf/provider-aws.ramResourceShare.RamResourceShareTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

@@ -375,7 +375,7 @@ func NewDataAwsPrefixList(scope constructs.Construct, id *string, config *DataAw
 	j := jsiiProxy_DataAwsPrefixList{}
 
 	_jsii_.Create(
-		"aws.dataAwsPrefixList.DataAwsPrefixList",
+		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -388,7 +388,7 @@ func NewDataAwsPrefixList_Override(d DataAwsPrefixList, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsPrefixList.DataAwsPrefixList",
+		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -499,7 +499,7 @@ func DataAwsPrefixList_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsPrefixList.DataAwsPrefixList",
+		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func DataAwsPrefixList_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsPrefixList.DataAwsPrefixList",
+		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func DataAwsPrefixList_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsPrefixList.DataAwsPrefixList",
+		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func DataAwsPrefixList_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsPrefixList.DataAwsPrefixList",
+		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList",
 		"tfResourceType",
 		&returns,
 	)

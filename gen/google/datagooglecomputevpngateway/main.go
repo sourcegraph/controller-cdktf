@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleComputeVpnGateway.DataGoogleComputeVpnGateway",
+		"@cdktf/provider-google.dataGoogleComputeVpnGateway.DataGoogleComputeVpnGateway",
 		reflect.TypeOf((*DataGoogleComputeVpnGateway)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleComputeVpnGateway.DataGoogleComputeVpnGatewayConfig",
+		"@cdktf/provider-google.dataGoogleComputeVpnGateway.DataGoogleComputeVpnGatewayConfig",
 		reflect.TypeOf((*DataGoogleComputeVpnGatewayConfig)(nil)).Elem(),
 	)
 }

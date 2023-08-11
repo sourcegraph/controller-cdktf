@@ -424,7 +424,7 @@ func NewSecretManagerSecretIamBinding(scope constructs.Construct, id *string, co
 	j := jsiiProxy_SecretManagerSecretIamBinding{}
 
 	_jsii_.Create(
-		"google.secretManagerSecretIamBinding.SecretManagerSecretIamBinding",
+		"@cdktf/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewSecretManagerSecretIamBinding_Override(s SecretManagerSecretIamBinding, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.secretManagerSecretIamBinding.SecretManagerSecretIamBinding",
+		"@cdktf/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBinding",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -592,7 +592,7 @@ func SecretManagerSecretIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.secretManagerSecretIamBinding.SecretManagerSecretIamBinding",
+		"@cdktf/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func SecretManagerSecretIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.secretManagerSecretIamBinding.SecretManagerSecretIamBinding",
+		"@cdktf/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func SecretManagerSecretIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.secretManagerSecretIamBinding.SecretManagerSecretIamBinding",
+		"@cdktf/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func SecretManagerSecretIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.secretManagerSecretIamBinding.SecretManagerSecretIamBinding",
+		"@cdktf/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBinding",
 		"tfResourceType",
 		&returns,
 	)

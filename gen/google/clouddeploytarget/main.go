@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.clouddeployTarget.ClouddeployTarget",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTarget",
 		reflect.TypeOf((*ClouddeployTarget)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -99,11 +99,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.clouddeployTarget.ClouddeployTargetAnthosCluster",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetAnthosCluster",
 		reflect.TypeOf((*ClouddeployTargetAnthosCluster)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.clouddeployTarget.ClouddeployTargetAnthosClusterOutputReference",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetAnthosClusterOutputReference",
 		reflect.TypeOf((*ClouddeployTargetAnthosClusterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -138,15 +138,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.clouddeployTarget.ClouddeployTargetConfig",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetConfig",
 		reflect.TypeOf((*ClouddeployTargetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.clouddeployTarget.ClouddeployTargetExecutionConfigs",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs",
 		reflect.TypeOf((*ClouddeployTargetExecutionConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.clouddeployTarget.ClouddeployTargetExecutionConfigsList",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsList",
 		reflect.TypeOf((*ClouddeployTargetExecutionConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -167,7 +167,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference",
 		reflect.TypeOf((*ClouddeployTargetExecutionConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "artifactStorage", GoGetter: "ArtifactStorage"},
@@ -213,11 +213,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.clouddeployTarget.ClouddeployTargetGke",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetGke",
 		reflect.TypeOf((*ClouddeployTargetGke)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.clouddeployTarget.ClouddeployTargetGkeOutputReference",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference",
 		reflect.TypeOf((*ClouddeployTargetGkeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cluster", GoGetter: "Cluster"},
@@ -255,11 +255,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.clouddeployTarget.ClouddeployTargetRun",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetRun",
 		reflect.TypeOf((*ClouddeployTargetRun)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.clouddeployTarget.ClouddeployTargetRunOutputReference",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetRunOutputReference",
 		reflect.TypeOf((*ClouddeployTargetRunOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -293,11 +293,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.clouddeployTarget.ClouddeployTargetTimeouts",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetTimeouts",
 		reflect.TypeOf((*ClouddeployTargetTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.clouddeployTarget.ClouddeployTargetTimeoutsOutputReference",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetTimeoutsOutputReference",
 		reflect.TypeOf((*ClouddeployTargetTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -494,7 +494,7 @@ func NewDataplexAssetIamBinding(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataplexAssetIamBinding{}
 
 	_jsii_.Create(
-		"google.dataplexAssetIamBinding.DataplexAssetIamBinding",
+		"@cdktf/provider-google.dataplexAssetIamBinding.DataplexAssetIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -507,7 +507,7 @@ func NewDataplexAssetIamBinding_Override(d DataplexAssetIamBinding, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexAssetIamBinding.DataplexAssetIamBinding",
+		"@cdktf/provider-google.dataplexAssetIamBinding.DataplexAssetIamBinding",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -695,7 +695,7 @@ func DataplexAssetIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataplexAssetIamBinding.DataplexAssetIamBinding",
+		"@cdktf/provider-google.dataplexAssetIamBinding.DataplexAssetIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +714,7 @@ func DataplexAssetIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataplexAssetIamBinding.DataplexAssetIamBinding",
+		"@cdktf/provider-google.dataplexAssetIamBinding.DataplexAssetIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -733,7 +733,7 @@ func DataplexAssetIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataplexAssetIamBinding.DataplexAssetIamBinding",
+		"@cdktf/provider-google.dataplexAssetIamBinding.DataplexAssetIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -746,7 +746,7 @@ func DataplexAssetIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataplexAssetIamBinding.DataplexAssetIamBinding",
+		"@cdktf/provider-google.dataplexAssetIamBinding.DataplexAssetIamBinding",
 		"tfResourceType",
 		&returns,
 	)

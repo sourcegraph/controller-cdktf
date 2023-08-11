@@ -228,7 +228,7 @@ func NewDataAwsCeTagsFilterNotOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataAwsCeTagsFilterNotOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsCeTags.DataAwsCeTagsFilterNotOutputReference",
+		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDataAwsCeTagsFilterNotOutputReference_Override(d DataAwsCeTagsFilterNotO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCeTags.DataAwsCeTagsFilterNotOutputReference",
+		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

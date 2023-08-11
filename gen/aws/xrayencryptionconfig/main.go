@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.xrayEncryptionConfig.XrayEncryptionConfig",
+		"@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig",
 		reflect.TypeOf((*XrayEncryptionConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.xrayEncryptionConfig.XrayEncryptionConfigConfig",
+		"@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig",
 		reflect.TypeOf((*XrayEncryptionConfigConfig)(nil)).Elem(),
 	)
 }

@@ -688,7 +688,7 @@ func NewGoogleDataprocJob(scope constructs.Construct, id *string, config *Google
 	j := jsiiProxy_GoogleDataprocJob{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocJob.GoogleDataprocJob",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -701,7 +701,7 @@ func NewGoogleDataprocJob_Override(g GoogleDataprocJob, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocJob.GoogleDataprocJob",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -856,7 +856,7 @@ func GoogleDataprocJob_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocJob.GoogleDataprocJob",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -875,7 +875,7 @@ func GoogleDataprocJob_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocJob.GoogleDataprocJob",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -894,7 +894,7 @@ func GoogleDataprocJob_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocJob.GoogleDataprocJob",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -907,7 +907,7 @@ func GoogleDataprocJob_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataprocJob.GoogleDataprocJob",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob",
 		"tfResourceType",
 		&returns,
 	)

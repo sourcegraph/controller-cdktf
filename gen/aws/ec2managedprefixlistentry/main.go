@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryA",
+		"@cdktf/provider-aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryA",
 		reflect.TypeOf((*Ec2ManagedPrefixListEntryA)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryAConfig",
+		"@cdktf/provider-aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryAConfig",
 		reflect.TypeOf((*Ec2ManagedPrefixListEntryAConfig)(nil)).Elem(),
 	)
 }

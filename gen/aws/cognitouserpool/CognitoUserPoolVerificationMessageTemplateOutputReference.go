@@ -300,7 +300,7 @@ func NewCognitoUserPoolVerificationMessageTemplateOutputReference(terraformResou
 	j := jsiiProxy_CognitoUserPoolVerificationMessageTemplateOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolVerificationMessageTemplateOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolVerificationMessageTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewCognitoUserPoolVerificationMessageTemplateOutputReference_Override(c Cog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolVerificationMessageTemplateOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolVerificationMessageTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

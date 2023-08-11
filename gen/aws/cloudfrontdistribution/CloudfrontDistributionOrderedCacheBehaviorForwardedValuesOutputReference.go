@@ -250,7 +250,7 @@ func NewCloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference
 	j := jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewCloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

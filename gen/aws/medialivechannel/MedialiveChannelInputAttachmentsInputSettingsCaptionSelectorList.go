@@ -116,7 +116,7 @@ func NewMedialiveChannelInputAttachmentsInputSettingsCaptionSelectorList(terrafo
 	j := jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorList{}
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMedialiveChannelInputAttachmentsInputSettingsCaptionSelectorList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

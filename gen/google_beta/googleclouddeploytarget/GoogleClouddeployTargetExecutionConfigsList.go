@@ -116,7 +116,7 @@ func NewGoogleClouddeployTargetExecutionConfigsList(terraformResource cdktf.IInt
 	j := jsiiProxy_GoogleClouddeployTargetExecutionConfigsList{}
 
 	_jsii_.Create(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetExecutionConfigsList",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetExecutionConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleClouddeployTargetExecutionConfigsList_Override(g GoogleClouddeploy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetExecutionConfigsList",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetExecutionConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

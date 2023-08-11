@@ -202,7 +202,7 @@ func NewDataAwsImagebuilderComponentsFilterOutputReference(terraformResource cdk
 	j := jsiiProxy_DataAwsImagebuilderComponentsFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsImagebuilderComponentsFilterOutputReference_Override(d DataAwsIma
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

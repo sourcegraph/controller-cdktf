@@ -568,7 +568,7 @@ func NewDataAwsMemorydbCluster(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataAwsMemorydbCluster{}
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbCluster.DataAwsMemorydbCluster",
+		"@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -581,7 +581,7 @@ func NewDataAwsMemorydbCluster_Override(d DataAwsMemorydbCluster, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbCluster.DataAwsMemorydbCluster",
+		"@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbCluster",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -692,7 +692,7 @@ func DataAwsMemorydbCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMemorydbCluster.DataAwsMemorydbCluster",
+		"@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -711,7 +711,7 @@ func DataAwsMemorydbCluster_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMemorydbCluster.DataAwsMemorydbCluster",
+		"@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbCluster",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -730,7 +730,7 @@ func DataAwsMemorydbCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMemorydbCluster.DataAwsMemorydbCluster",
+		"@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -743,7 +743,7 @@ func DataAwsMemorydbCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsMemorydbCluster.DataAwsMemorydbCluster",
+		"@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbCluster",
 		"tfResourceType",
 		&returns,
 	)

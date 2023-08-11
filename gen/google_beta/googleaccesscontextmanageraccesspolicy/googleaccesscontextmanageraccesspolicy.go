@@ -423,7 +423,7 @@ func NewGoogleAccessContextManagerAccessPolicy(scope constructs.Construct, id *s
 	j := jsiiProxy_GoogleAccessContextManagerAccessPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleAccessContextManagerAccessPolicy.GoogleAccessContextManagerAccessPolicy",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicy.GoogleAccessContextManagerAccessPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewGoogleAccessContextManagerAccessPolicy_Override(g GoogleAccessContextMan
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAccessContextManagerAccessPolicy.GoogleAccessContextManagerAccessPolicy",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicy.GoogleAccessContextManagerAccessPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -580,7 +580,7 @@ func GoogleAccessContextManagerAccessPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAccessContextManagerAccessPolicy.GoogleAccessContextManagerAccessPolicy",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicy.GoogleAccessContextManagerAccessPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +599,7 @@ func GoogleAccessContextManagerAccessPolicy_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAccessContextManagerAccessPolicy.GoogleAccessContextManagerAccessPolicy",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicy.GoogleAccessContextManagerAccessPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -618,7 +618,7 @@ func GoogleAccessContextManagerAccessPolicy_IsTerraformResource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAccessContextManagerAccessPolicy.GoogleAccessContextManagerAccessPolicy",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicy.GoogleAccessContextManagerAccessPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func GoogleAccessContextManagerAccessPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleAccessContextManagerAccessPolicy.GoogleAccessContextManagerAccessPolicy",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicy.GoogleAccessContextManagerAccessPolicy",
 		"tfResourceType",
 		&returns,
 	)

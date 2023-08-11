@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lightsailLbStickinessPolicy.LightsailLbStickinessPolicy",
+		"@cdktf/provider-aws.lightsailLbStickinessPolicy.LightsailLbStickinessPolicy",
 		reflect.TypeOf((*LightsailLbStickinessPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lightsailLbStickinessPolicy.LightsailLbStickinessPolicyConfig",
+		"@cdktf/provider-aws.lightsailLbStickinessPolicy.LightsailLbStickinessPolicyConfig",
 		reflect.TypeOf((*LightsailLbStickinessPolicyConfig)(nil)).Elem(),
 	)
 }

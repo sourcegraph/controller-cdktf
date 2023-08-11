@@ -518,7 +518,7 @@ func NewConnectPhoneNumber(scope constructs.Construct, id *string, config *Conne
 	j := jsiiProxy_ConnectPhoneNumber{}
 
 	_jsii_.Create(
-		"aws.connectPhoneNumber.ConnectPhoneNumber",
+		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumber",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -531,7 +531,7 @@ func NewConnectPhoneNumber_Override(c ConnectPhoneNumber, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectPhoneNumber.ConnectPhoneNumber",
+		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumber",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -719,7 +719,7 @@ func ConnectPhoneNumber_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectPhoneNumber.ConnectPhoneNumber",
+		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumber",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -738,7 +738,7 @@ func ConnectPhoneNumber_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectPhoneNumber.ConnectPhoneNumber",
+		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumber",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -757,7 +757,7 @@ func ConnectPhoneNumber_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectPhoneNumber.ConnectPhoneNumber",
+		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumber",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -770,7 +770,7 @@ func ConnectPhoneNumber_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.connectPhoneNumber.ConnectPhoneNumber",
+		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumber",
 		"tfResourceType",
 		&returns,
 	)

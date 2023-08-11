@@ -319,7 +319,7 @@ func NewDetectiveInvitationAccepter(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DetectiveInvitationAccepter{}
 
 	_jsii_.Create(
-		"aws.detectiveInvitationAccepter.DetectiveInvitationAccepter",
+		"@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -332,7 +332,7 @@ func NewDetectiveInvitationAccepter_Override(d DetectiveInvitationAccepter, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.detectiveInvitationAccepter.DetectiveInvitationAccepter",
+		"@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -454,7 +454,7 @@ func DetectiveInvitationAccepter_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.detectiveInvitationAccepter.DetectiveInvitationAccepter",
+		"@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -473,7 +473,7 @@ func DetectiveInvitationAccepter_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.detectiveInvitationAccepter.DetectiveInvitationAccepter",
+		"@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -492,7 +492,7 @@ func DetectiveInvitationAccepter_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.detectiveInvitationAccepter.DetectiveInvitationAccepter",
+		"@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func DetectiveInvitationAccepter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.detectiveInvitationAccepter.DetectiveInvitationAccepter",
+		"@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter",
 		"tfResourceType",
 		&returns,
 	)

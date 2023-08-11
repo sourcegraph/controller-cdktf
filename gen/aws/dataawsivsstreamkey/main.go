@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey",
+		"@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey",
 		reflect.TypeOf((*DataAwsIvsStreamKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig",
+		"@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig",
 		reflect.TypeOf((*DataAwsIvsStreamKeyConfig)(nil)).Elem(),
 	)
 }

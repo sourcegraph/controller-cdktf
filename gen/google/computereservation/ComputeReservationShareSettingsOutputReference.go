@@ -204,7 +204,7 @@ func NewComputeReservationShareSettingsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_ComputeReservationShareSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeReservation.ComputeReservationShareSettingsOutputReference",
+		"@cdktf/provider-google.computeReservation.ComputeReservationShareSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeReservationShareSettingsOutputReference_Override(c ComputeReserva
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeReservation.ComputeReservationShareSettingsOutputReference",
+		"@cdktf/provider-google.computeReservation.ComputeReservationShareSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

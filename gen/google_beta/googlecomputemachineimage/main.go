@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeMachineImage.GoogleComputeMachineImage",
+		"@cdktf/provider-google-beta.googleComputeMachineImage.GoogleComputeMachineImage",
 		reflect.TypeOf((*GoogleComputeMachineImage)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,15 +78,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeMachineImage.GoogleComputeMachineImageConfig",
+		"@cdktf/provider-google-beta.googleComputeMachineImage.GoogleComputeMachineImageConfig",
 		reflect.TypeOf((*GoogleComputeMachineImageConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeMachineImage.GoogleComputeMachineImageMachineImageEncryptionKey",
+		"@cdktf/provider-google-beta.googleComputeMachineImage.GoogleComputeMachineImageMachineImageEncryptionKey",
 		reflect.TypeOf((*GoogleComputeMachineImageMachineImageEncryptionKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeMachineImage.GoogleComputeMachineImageMachineImageEncryptionKeyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeMachineImage.GoogleComputeMachineImageMachineImageEncryptionKeyOutputReference",
 		reflect.TypeOf((*GoogleComputeMachineImageMachineImageEncryptionKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -128,11 +128,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeMachineImage.GoogleComputeMachineImageTimeouts",
+		"@cdktf/provider-google-beta.googleComputeMachineImage.GoogleComputeMachineImageTimeouts",
 		reflect.TypeOf((*GoogleComputeMachineImageTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeMachineImage.GoogleComputeMachineImageTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeMachineImage.GoogleComputeMachineImageTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleComputeMachineImageTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

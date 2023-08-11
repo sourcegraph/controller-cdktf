@@ -377,7 +377,7 @@ func NewGoogleGkeHubMembershipIamPolicy(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleGkeHubMembershipIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy",
+		"@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewGoogleGkeHubMembershipIamPolicy_Override(g GoogleGkeHubMembershipIamPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy",
+		"@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -534,7 +534,7 @@ func GoogleGkeHubMembershipIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy",
+		"@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func GoogleGkeHubMembershipIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy",
+		"@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func GoogleGkeHubMembershipIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy",
+		"@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func GoogleGkeHubMembershipIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy",
+		"@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

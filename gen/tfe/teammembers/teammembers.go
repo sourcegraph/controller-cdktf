@@ -342,7 +342,7 @@ func NewTeamMembers(scope constructs.Construct, id *string, config *TeamMembersC
 	j := jsiiProxy_TeamMembers{}
 
 	_jsii_.Create(
-		"tfe.teamMembers.TeamMembers",
+		"@cdktf/provider-tfe.teamMembers.TeamMembers",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewTeamMembers_Override(t TeamMembers, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.teamMembers.TeamMembers",
+		"@cdktf/provider-tfe.teamMembers.TeamMembers",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -488,7 +488,7 @@ func TeamMembers_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.teamMembers.TeamMembers",
+		"@cdktf/provider-tfe.teamMembers.TeamMembers",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func TeamMembers_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.teamMembers.TeamMembers",
+		"@cdktf/provider-tfe.teamMembers.TeamMembers",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func TeamMembers_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.teamMembers.TeamMembers",
+		"@cdktf/provider-tfe.teamMembers.TeamMembers",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func TeamMembers_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.teamMembers.TeamMembers",
+		"@cdktf/provider-tfe.teamMembers.TeamMembers",
 		"tfResourceType",
 		&returns,
 	)

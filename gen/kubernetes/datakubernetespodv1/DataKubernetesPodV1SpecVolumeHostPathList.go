@@ -104,7 +104,7 @@ func NewDataKubernetesPodV1SpecVolumeHostPathList(terraformResource cdktf.IInter
 	j := jsiiProxy_DataKubernetesPodV1SpecVolumeHostPathList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeHostPathList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeHostPathList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodV1SpecVolumeHostPathList_Override(d DataKubernetesPodV1
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeHostPathList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeHostPathList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

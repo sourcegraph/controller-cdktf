@@ -252,7 +252,7 @@ func NewPinpointAppLimitsOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_PinpointAppLimitsOutputReference{}
 
 	_jsii_.Create(
-		"aws.pinpointApp.PinpointAppLimitsOutputReference",
+		"@cdktf/provider-aws.pinpointApp.PinpointAppLimitsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewPinpointAppLimitsOutputReference_Override(p PinpointAppLimitsOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.pinpointApp.PinpointAppLimitsOutputReference",
+		"@cdktf/provider-aws.pinpointApp.PinpointAppLimitsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

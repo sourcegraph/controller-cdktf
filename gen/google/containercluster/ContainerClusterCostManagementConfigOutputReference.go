@@ -179,7 +179,7 @@ func NewContainerClusterCostManagementConfigOutputReference(terraformResource cd
 	j := jsiiProxy_ContainerClusterCostManagementConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterCostManagementConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterCostManagementConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewContainerClusterCostManagementConfigOutputReference_Override(c Container
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterCostManagementConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterCostManagementConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

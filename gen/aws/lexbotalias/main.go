@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lexBotAlias.LexBotAlias",
+		"@cdktf/provider-aws.lexBotAlias.LexBotAlias",
 		reflect.TypeOf((*LexBotAlias)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,19 +76,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexBotAlias.LexBotAliasConfig",
+		"@cdktf/provider-aws.lexBotAlias.LexBotAliasConfig",
 		reflect.TypeOf((*LexBotAliasConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexBotAlias.LexBotAliasConversationLogs",
+		"@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogs",
 		reflect.TypeOf((*LexBotAliasConversationLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexBotAlias.LexBotAliasConversationLogsLogSettings",
+		"@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettings",
 		reflect.TypeOf((*LexBotAliasConversationLogsLogSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsList",
+		"@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsList",
 		reflect.TypeOf((*LexBotAliasConversationLogsLogSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsOutputReference",
+		"@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsOutputReference",
 		reflect.TypeOf((*LexBotAliasConversationLogsLogSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -151,7 +151,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lexBotAlias.LexBotAliasConversationLogsOutputReference",
+		"@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsOutputReference",
 		reflect.TypeOf((*LexBotAliasConversationLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -189,11 +189,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexBotAlias.LexBotAliasTimeouts",
+		"@cdktf/provider-aws.lexBotAlias.LexBotAliasTimeouts",
 		reflect.TypeOf((*LexBotAliasTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lexBotAlias.LexBotAliasTimeoutsOutputReference",
+		"@cdktf/provider-aws.lexBotAlias.LexBotAliasTimeoutsOutputReference",
 		reflect.TypeOf((*LexBotAliasTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

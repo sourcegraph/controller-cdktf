@@ -491,7 +491,7 @@ func NewNetworkmanagerTransitGatewayPeering(scope constructs.Construct, id *stri
 	j := jsiiProxy_NetworkmanagerTransitGatewayPeering{}
 
 	_jsii_.Create(
-		"aws.networkmanagerTransitGatewayPeering.NetworkmanagerTransitGatewayPeering",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayPeering.NetworkmanagerTransitGatewayPeering",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -504,7 +504,7 @@ func NewNetworkmanagerTransitGatewayPeering_Override(n NetworkmanagerTransitGate
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerTransitGatewayPeering.NetworkmanagerTransitGatewayPeering",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayPeering.NetworkmanagerTransitGatewayPeering",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -659,7 +659,7 @@ func NetworkmanagerTransitGatewayPeering_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerTransitGatewayPeering.NetworkmanagerTransitGatewayPeering",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayPeering.NetworkmanagerTransitGatewayPeering",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func NetworkmanagerTransitGatewayPeering_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerTransitGatewayPeering.NetworkmanagerTransitGatewayPeering",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayPeering.NetworkmanagerTransitGatewayPeering",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -697,7 +697,7 @@ func NetworkmanagerTransitGatewayPeering_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerTransitGatewayPeering.NetworkmanagerTransitGatewayPeering",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayPeering.NetworkmanagerTransitGatewayPeering",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -710,7 +710,7 @@ func NetworkmanagerTransitGatewayPeering_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkmanagerTransitGatewayPeering.NetworkmanagerTransitGatewayPeering",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayPeering.NetworkmanagerTransitGatewayPeering",
 		"tfResourceType",
 		&returns,
 	)

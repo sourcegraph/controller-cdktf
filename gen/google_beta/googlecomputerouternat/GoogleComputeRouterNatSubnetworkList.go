@@ -116,7 +116,7 @@ func NewGoogleComputeRouterNatSubnetworkList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_GoogleComputeRouterNatSubnetworkList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRouterNat.GoogleComputeRouterNatSubnetworkList",
+		"@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatSubnetworkList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeRouterNatSubnetworkList_Override(g GoogleComputeRouterNatSu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRouterNat.GoogleComputeRouterNatSubnetworkList",
+		"@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatSubnetworkList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

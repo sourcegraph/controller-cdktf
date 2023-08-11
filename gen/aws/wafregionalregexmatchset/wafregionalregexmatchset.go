@@ -343,7 +343,7 @@ func NewWafregionalRegexMatchSet(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_WafregionalRegexMatchSet{}
 
 	_jsii_.Create(
-		"aws.wafregionalRegexMatchSet.WafregionalRegexMatchSet",
+		"@cdktf/provider-aws.wafregionalRegexMatchSet.WafregionalRegexMatchSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewWafregionalRegexMatchSet_Override(w WafregionalRegexMatchSet, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalRegexMatchSet.WafregionalRegexMatchSet",
+		"@cdktf/provider-aws.wafregionalRegexMatchSet.WafregionalRegexMatchSet",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -478,7 +478,7 @@ func WafregionalRegexMatchSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalRegexMatchSet.WafregionalRegexMatchSet",
+		"@cdktf/provider-aws.wafregionalRegexMatchSet.WafregionalRegexMatchSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -497,7 +497,7 @@ func WafregionalRegexMatchSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalRegexMatchSet.WafregionalRegexMatchSet",
+		"@cdktf/provider-aws.wafregionalRegexMatchSet.WafregionalRegexMatchSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func WafregionalRegexMatchSet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalRegexMatchSet.WafregionalRegexMatchSet",
+		"@cdktf/provider-aws.wafregionalRegexMatchSet.WafregionalRegexMatchSet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func WafregionalRegexMatchSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.wafregionalRegexMatchSet.WafregionalRegexMatchSet",
+		"@cdktf/provider-aws.wafregionalRegexMatchSet.WafregionalRegexMatchSet",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewNetworkmanagerLinkBandwidthOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_NetworkmanagerLinkBandwidthOutputReference{}
 
 	_jsii_.Create(
-		"aws.networkmanagerLink.NetworkmanagerLinkBandwidthOutputReference",
+		"@cdktf/provider-aws.networkmanagerLink.NetworkmanagerLinkBandwidthOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewNetworkmanagerLinkBandwidthOutputReference_Override(n NetworkmanagerLink
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerLink.NetworkmanagerLinkBandwidthOutputReference",
+		"@cdktf/provider-aws.networkmanagerLink.NetworkmanagerLinkBandwidthOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

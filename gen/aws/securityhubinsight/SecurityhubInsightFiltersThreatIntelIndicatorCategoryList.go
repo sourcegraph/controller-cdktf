@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersThreatIntelIndicatorCategoryList(terraformResou
 	j := jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorCategoryList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersThreatIntelIndicatorCategoryList_Override(s Sec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

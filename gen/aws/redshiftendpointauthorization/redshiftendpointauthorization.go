@@ -434,7 +434,7 @@ func NewRedshiftEndpointAuthorization(scope constructs.Construct, id *string, co
 	j := jsiiProxy_RedshiftEndpointAuthorization{}
 
 	_jsii_.Create(
-		"aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorization",
+		"@cdktf/provider-aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorization",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -447,7 +447,7 @@ func NewRedshiftEndpointAuthorization_Override(r RedshiftEndpointAuthorization, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorization",
+		"@cdktf/provider-aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorization",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -602,7 +602,7 @@ func RedshiftEndpointAuthorization_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorization",
+		"@cdktf/provider-aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorization",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func RedshiftEndpointAuthorization_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorization",
+		"@cdktf/provider-aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorization",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -640,7 +640,7 @@ func RedshiftEndpointAuthorization_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorization",
+		"@cdktf/provider-aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorization",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func RedshiftEndpointAuthorization_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorization",
+		"@cdktf/provider-aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorization",
 		"tfResourceType",
 		&returns,
 	)

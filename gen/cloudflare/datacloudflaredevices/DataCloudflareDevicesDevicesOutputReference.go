@@ -387,7 +387,7 @@ func NewDataCloudflareDevicesDevicesOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DataCloudflareDevicesDevicesOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevicesOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevicesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -399,7 +399,7 @@ func NewDataCloudflareDevicesDevicesOutputReference_Override(d DataCloudflareDev
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevicesOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevicesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

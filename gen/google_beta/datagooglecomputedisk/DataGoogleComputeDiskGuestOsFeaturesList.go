@@ -104,7 +104,7 @@ func NewDataGoogleComputeDiskGuestOsFeaturesList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataGoogleComputeDiskGuestOsFeaturesList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskGuestOsFeaturesList",
+		"@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskGuestOsFeaturesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeDiskGuestOsFeaturesList_Override(d DataGoogleComputeDis
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskGuestOsFeaturesList",
+		"@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskGuestOsFeaturesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -202,7 +202,7 @@ func NewDataAwsRdsClustersFilterOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataAwsRdsClustersFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsRdsClusters.DataAwsRdsClustersFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsRdsClusters.DataAwsRdsClustersFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsRdsClustersFilterOutputReference_Override(d DataAwsRdsClustersFil
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRdsClusters.DataAwsRdsClustersFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsRdsClusters.DataAwsRdsClustersFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

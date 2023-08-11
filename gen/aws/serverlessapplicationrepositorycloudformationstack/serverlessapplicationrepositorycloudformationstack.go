@@ -496,7 +496,7 @@ func NewServerlessapplicationrepositoryCloudformationStack(scope constructs.Cons
 	j := jsiiProxy_ServerlessapplicationrepositoryCloudformationStack{}
 
 	_jsii_.Create(
-		"aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack",
+		"@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -509,7 +509,7 @@ func NewServerlessapplicationrepositoryCloudformationStack_Override(s Serverless
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack",
+		"@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -697,7 +697,7 @@ func ServerlessapplicationrepositoryCloudformationStack_IsConstruct(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack",
+		"@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -716,7 +716,7 @@ func ServerlessapplicationrepositoryCloudformationStack_IsTerraformElement(x int
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack",
+		"@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func ServerlessapplicationrepositoryCloudformationStack_IsTerraformResource(x in
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack",
+		"@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -748,7 +748,7 @@ func ServerlessapplicationrepositoryCloudformationStack_TfResourceType() *string
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack",
+		"@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack",
 		"tfResourceType",
 		&returns,
 	)

@@ -448,7 +448,7 @@ func NewGoogleApiGatewayGatewayIamBinding(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleApiGatewayGatewayIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding",
+		"@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleApiGatewayGatewayIamBinding_Override(g GoogleApiGatewayGatewayIamB
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding",
+		"@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleApiGatewayGatewayIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding",
+		"@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleApiGatewayGatewayIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding",
+		"@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleApiGatewayGatewayIamBinding_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding",
+		"@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleApiGatewayGatewayIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding",
+		"@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding",
 		"tfResourceType",
 		&returns,
 	)

@@ -203,7 +203,7 @@ func NewGoogleComputeRouterBgpAdvertisedIpRangesOutputReference(terraformResourc
 	j := jsiiProxy_GoogleComputeRouterBgpAdvertisedIpRangesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRouter.GoogleComputeRouterBgpAdvertisedIpRangesOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouterBgpAdvertisedIpRangesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleComputeRouterBgpAdvertisedIpRangesOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRouter.GoogleComputeRouterBgpAdvertisedIpRangesOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouterBgpAdvertisedIpRangesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

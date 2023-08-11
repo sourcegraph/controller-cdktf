@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMember",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMember",
 		reflect.TypeOf((*GoogleKmsCryptoKeyIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,11 +66,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberCondition",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberCondition",
 		reflect.TypeOf((*GoogleKmsCryptoKeyIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberConditionOutputReference",
 		reflect.TypeOf((*GoogleKmsCryptoKeyIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberConfig",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberConfig",
 		reflect.TypeOf((*GoogleKmsCryptoKeyIamMemberConfig)(nil)).Elem(),
 	)
 }

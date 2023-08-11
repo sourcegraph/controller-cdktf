@@ -179,7 +179,7 @@ func NewComputePacketMirroringMirroredResourcesInstancesOutputReference(terrafor
 	j := jsiiProxy_ComputePacketMirroringMirroredResourcesInstancesOutputReference{}
 
 	_jsii_.Create(
-		"google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesOutputReference",
+		"@cdktf/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewComputePacketMirroringMirroredResourcesInstancesOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesOutputReference",
+		"@cdktf/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

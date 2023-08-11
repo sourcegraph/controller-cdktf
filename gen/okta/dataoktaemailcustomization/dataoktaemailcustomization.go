@@ -379,7 +379,7 @@ func NewDataOktaEmailCustomization(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataOktaEmailCustomization{}
 
 	_jsii_.Create(
-		"okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
+		"@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -392,7 +392,7 @@ func NewDataOktaEmailCustomization_Override(d DataOktaEmailCustomization, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
+		"@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -503,7 +503,7 @@ func DataOktaEmailCustomization_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
+		"@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -522,7 +522,7 @@ func DataOktaEmailCustomization_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
+		"@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func DataOktaEmailCustomization_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
+		"@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -554,7 +554,7 @@ func DataOktaEmailCustomization_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
+		"@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
 		"tfResourceType",
 		&returns,
 	)

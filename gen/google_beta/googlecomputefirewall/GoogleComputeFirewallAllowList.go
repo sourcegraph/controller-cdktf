@@ -116,7 +116,7 @@ func NewGoogleComputeFirewallAllowList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_GoogleComputeFirewallAllowList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallAllowList",
+		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallAllowList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeFirewallAllowList_Override(g GoogleComputeFirewallAllowList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallAllowList",
+		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallAllowList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

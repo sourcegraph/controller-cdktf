@@ -351,7 +351,7 @@ func NewDataAwsSubnets(scope constructs.Construct, id *string, config *DataAwsSu
 	j := jsiiProxy_DataAwsSubnets{}
 
 	_jsii_.Create(
-		"aws.dataAwsSubnets.DataAwsSubnets",
+		"@cdktf/provider-aws.dataAwsSubnets.DataAwsSubnets",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -364,7 +364,7 @@ func NewDataAwsSubnets_Override(d DataAwsSubnets, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSubnets.DataAwsSubnets",
+		"@cdktf/provider-aws.dataAwsSubnets.DataAwsSubnets",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -464,7 +464,7 @@ func DataAwsSubnets_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSubnets.DataAwsSubnets",
+		"@cdktf/provider-aws.dataAwsSubnets.DataAwsSubnets",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -483,7 +483,7 @@ func DataAwsSubnets_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSubnets.DataAwsSubnets",
+		"@cdktf/provider-aws.dataAwsSubnets.DataAwsSubnets",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -502,7 +502,7 @@ func DataAwsSubnets_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSubnets.DataAwsSubnets",
+		"@cdktf/provider-aws.dataAwsSubnets.DataAwsSubnets",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func DataAwsSubnets_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSubnets.DataAwsSubnets",
+		"@cdktf/provider-aws.dataAwsSubnets.DataAwsSubnets",
 		"tfResourceType",
 		&returns,
 	)

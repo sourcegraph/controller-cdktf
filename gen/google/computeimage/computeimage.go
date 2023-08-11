@@ -699,7 +699,7 @@ func NewComputeImage(scope constructs.Construct, id *string, config *ComputeImag
 	j := jsiiProxy_ComputeImage{}
 
 	_jsii_.Create(
-		"google.computeImage.ComputeImage",
+		"@cdktf/provider-google.computeImage.ComputeImage",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -712,7 +712,7 @@ func NewComputeImage_Override(c ComputeImage, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeImage.ComputeImage",
+		"@cdktf/provider-google.computeImage.ComputeImage",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -944,7 +944,7 @@ func ComputeImage_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeImage.ComputeImage",
+		"@cdktf/provider-google.computeImage.ComputeImage",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -963,7 +963,7 @@ func ComputeImage_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeImage.ComputeImage",
+		"@cdktf/provider-google.computeImage.ComputeImage",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -982,7 +982,7 @@ func ComputeImage_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeImage.ComputeImage",
+		"@cdktf/provider-google.computeImage.ComputeImage",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -995,7 +995,7 @@ func ComputeImage_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeImage.ComputeImage",
+		"@cdktf/provider-google.computeImage.ComputeImage",
 		"tfResourceType",
 		&returns,
 	)

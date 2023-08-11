@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
+		"@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
 		reflect.TypeOf((*DataOktaEmailCustomization)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaEmailCustomization.DataOktaEmailCustomizationConfig",
+		"@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomizationConfig",
 		reflect.TypeOf((*DataOktaEmailCustomizationConfig)(nil)).Elem(),
 	)
 }

@@ -156,7 +156,7 @@ func NewWafv2WebAclRuleOverrideActionCountOutputReference(terraformResource cdkt
 	j := jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionCountOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionCountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewWafv2WebAclRuleOverrideActionCountOutputReference_Override(w Wafv2WebAcl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionCountOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionCountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

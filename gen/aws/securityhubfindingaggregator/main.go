@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.securityhubFindingAggregator.SecurityhubFindingAggregator",
+		"@cdktf/provider-aws.securityhubFindingAggregator.SecurityhubFindingAggregator",
 		reflect.TypeOf((*SecurityhubFindingAggregator)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.securityhubFindingAggregator.SecurityhubFindingAggregatorConfig",
+		"@cdktf/provider-aws.securityhubFindingAggregator.SecurityhubFindingAggregatorConfig",
 		reflect.TypeOf((*SecurityhubFindingAggregatorConfig)(nil)).Elem(),
 	)
 }

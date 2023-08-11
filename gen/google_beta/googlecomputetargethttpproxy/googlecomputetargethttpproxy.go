@@ -471,7 +471,7 @@ func NewGoogleComputeTargetHttpProxy(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleComputeTargetHttpProxy{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeTargetHttpProxy.GoogleComputeTargetHttpProxy",
+		"@cdktf/provider-google-beta.googleComputeTargetHttpProxy.GoogleComputeTargetHttpProxy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -484,7 +484,7 @@ func NewGoogleComputeTargetHttpProxy_Override(g GoogleComputeTargetHttpProxy, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeTargetHttpProxy.GoogleComputeTargetHttpProxy",
+		"@cdktf/provider-google-beta.googleComputeTargetHttpProxy.GoogleComputeTargetHttpProxy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -650,7 +650,7 @@ func GoogleComputeTargetHttpProxy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeTargetHttpProxy.GoogleComputeTargetHttpProxy",
+		"@cdktf/provider-google-beta.googleComputeTargetHttpProxy.GoogleComputeTargetHttpProxy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func GoogleComputeTargetHttpProxy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeTargetHttpProxy.GoogleComputeTargetHttpProxy",
+		"@cdktf/provider-google-beta.googleComputeTargetHttpProxy.GoogleComputeTargetHttpProxy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func GoogleComputeTargetHttpProxy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeTargetHttpProxy.GoogleComputeTargetHttpProxy",
+		"@cdktf/provider-google-beta.googleComputeTargetHttpProxy.GoogleComputeTargetHttpProxy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func GoogleComputeTargetHttpProxy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeTargetHttpProxy.GoogleComputeTargetHttpProxy",
+		"@cdktf/provider-google-beta.googleComputeTargetHttpProxy.GoogleComputeTargetHttpProxy",
 		"tfResourceType",
 		&returns,
 	)

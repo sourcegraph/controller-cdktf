@@ -179,7 +179,7 @@ func NewMedialiveInputSecurityGroupWhitelistRulesOutputReference(terraformResour
 	j := jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesOutputReference{}
 
 	_jsii_.Create(
-		"aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupWhitelistRulesOutputReference",
+		"@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupWhitelistRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewMedialiveInputSecurityGroupWhitelistRulesOutputReference_Override(m Medi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupWhitelistRulesOutputReference",
+		"@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupWhitelistRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

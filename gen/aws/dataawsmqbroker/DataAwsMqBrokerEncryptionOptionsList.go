@@ -104,7 +104,7 @@ func NewDataAwsMqBrokerEncryptionOptionsList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_DataAwsMqBrokerEncryptionOptionsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsMqBroker.DataAwsMqBrokerEncryptionOptionsList",
+		"@cdktf/provider-aws.dataAwsMqBroker.DataAwsMqBrokerEncryptionOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsMqBrokerEncryptionOptionsList_Override(d DataAwsMqBrokerEncryptio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMqBroker.DataAwsMqBrokerEncryptionOptionsList",
+		"@cdktf/provider-aws.dataAwsMqBroker.DataAwsMqBrokerEncryptionOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -116,7 +116,7 @@ func NewDaemonsetSpecTemplateSpecHostAliasesList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DaemonsetSpecTemplateSpecHostAliasesList{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecHostAliasesList",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecHostAliasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDaemonsetSpecTemplateSpecHostAliasesList_Override(d DaemonsetSpecTemplat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecHostAliasesList",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecHostAliasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

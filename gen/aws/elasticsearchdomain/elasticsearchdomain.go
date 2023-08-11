@@ -771,7 +771,7 @@ func NewElasticsearchDomain(scope constructs.Construct, id *string, config *Elas
 	j := jsiiProxy_ElasticsearchDomain{}
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomain",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomain",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -784,7 +784,7 @@ func NewElasticsearchDomain_Override(e ElasticsearchDomain, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomain",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomain",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -961,7 +961,7 @@ func ElasticsearchDomain_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticsearchDomain.ElasticsearchDomain",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomain",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -980,7 +980,7 @@ func ElasticsearchDomain_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticsearchDomain.ElasticsearchDomain",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomain",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -999,7 +999,7 @@ func ElasticsearchDomain_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticsearchDomain.ElasticsearchDomain",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomain",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1012,7 +1012,7 @@ func ElasticsearchDomain_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.elasticsearchDomain.ElasticsearchDomain",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomain",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewDialogflowCxEntityTypeExcludedPhrasesList(terraformResource cdktf.IInter
 	j := jsiiProxy_DialogflowCxEntityTypeExcludedPhrasesList{}
 
 	_jsii_.Create(
-		"google.dialogflowCxEntityType.DialogflowCxEntityTypeExcludedPhrasesList",
+		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeExcludedPhrasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDialogflowCxEntityTypeExcludedPhrasesList_Override(d DialogflowCxEntityT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxEntityType.DialogflowCxEntityTypeExcludedPhrasesList",
+		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeExcludedPhrasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

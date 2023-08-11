@@ -300,7 +300,7 @@ func NewLambdaFunctionUrlCorsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_LambdaFunctionUrlCorsOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaFunctionUrl.LambdaFunctionUrlCorsOutputReference",
+		"@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewLambdaFunctionUrlCorsOutputReference_Override(l LambdaFunctionUrlCorsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaFunctionUrl.LambdaFunctionUrlCorsOutputReference",
+		"@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlCorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleContainerAzureVersions.DataGoogleContainerAzureVersions",
+		"@cdktf/provider-google-beta.dataGoogleContainerAzureVersions.DataGoogleContainerAzureVersions",
 		reflect.TypeOf((*DataGoogleContainerAzureVersions)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleContainerAzureVersions.DataGoogleContainerAzureVersionsConfig",
+		"@cdktf/provider-google-beta.dataGoogleContainerAzureVersions.DataGoogleContainerAzureVersionsConfig",
 		reflect.TypeOf((*DataGoogleContainerAzureVersionsConfig)(nil)).Elem(),
 	)
 }

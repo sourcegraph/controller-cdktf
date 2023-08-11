@@ -582,7 +582,7 @@ func NewRdsReservedInstance(scope constructs.Construct, id *string, config *RdsR
 	j := jsiiProxy_RdsReservedInstance{}
 
 	_jsii_.Create(
-		"aws.rdsReservedInstance.RdsReservedInstance",
+		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -595,7 +595,7 @@ func NewRdsReservedInstance_Override(r RdsReservedInstance, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rdsReservedInstance.RdsReservedInstance",
+		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstance",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -761,7 +761,7 @@ func RdsReservedInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rdsReservedInstance.RdsReservedInstance",
+		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -780,7 +780,7 @@ func RdsReservedInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rdsReservedInstance.RdsReservedInstance",
+		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -799,7 +799,7 @@ func RdsReservedInstance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rdsReservedInstance.RdsReservedInstance",
+		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -812,7 +812,7 @@ func RdsReservedInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.rdsReservedInstance.RdsReservedInstance",
+		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstance",
 		"tfResourceType",
 		&returns,
 	)

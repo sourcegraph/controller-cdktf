@@ -204,7 +204,7 @@ func NewMonitoringMonitoredProjectTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_MonitoringMonitoredProjectTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeoutsOutputReference",
+		"@cdktf/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMonitoringMonitoredProjectTimeoutsOutputReference_Override(m MonitoringM
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeoutsOutputReference",
+		"@cdktf/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

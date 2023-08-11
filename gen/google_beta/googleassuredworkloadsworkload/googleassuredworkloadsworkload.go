@@ -564,7 +564,7 @@ func NewGoogleAssuredWorkloadsWorkload(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleAssuredWorkloadsWorkload{}
 
 	_jsii_.Create(
-		"google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkload",
+		"@cdktf/provider-google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkload",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -577,7 +577,7 @@ func NewGoogleAssuredWorkloadsWorkload_Override(g GoogleAssuredWorkloadsWorkload
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkload",
+		"@cdktf/provider-google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkload",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -765,7 +765,7 @@ func GoogleAssuredWorkloadsWorkload_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkload",
+		"@cdktf/provider-google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkload",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -784,7 +784,7 @@ func GoogleAssuredWorkloadsWorkload_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkload",
+		"@cdktf/provider-google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkload",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -803,7 +803,7 @@ func GoogleAssuredWorkloadsWorkload_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkload",
+		"@cdktf/provider-google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkload",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -816,7 +816,7 @@ func GoogleAssuredWorkloadsWorkload_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkload",
+		"@cdktf/provider-google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkload",
 		"tfResourceType",
 		&returns,
 	)

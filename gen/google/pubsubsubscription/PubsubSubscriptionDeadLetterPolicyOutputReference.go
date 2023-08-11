@@ -204,7 +204,7 @@ func NewPubsubSubscriptionDeadLetterPolicyOutputReference(terraformResource cdkt
 	j := jsiiProxy_PubsubSubscriptionDeadLetterPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.pubsubSubscription.PubsubSubscriptionDeadLetterPolicyOutputReference",
+		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionDeadLetterPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPubsubSubscriptionDeadLetterPolicyOutputReference_Override(p PubsubSubsc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.pubsubSubscription.PubsubSubscriptionDeadLetterPolicyOutputReference",
+		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionDeadLetterPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

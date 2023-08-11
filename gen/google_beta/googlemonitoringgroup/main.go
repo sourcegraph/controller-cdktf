@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringGroup.GoogleMonitoringGroup",
+		"@cdktf/provider-google-beta.googleMonitoringGroup.GoogleMonitoringGroup",
 		reflect.TypeOf((*GoogleMonitoringGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringGroup.GoogleMonitoringGroupConfig",
+		"@cdktf/provider-google-beta.googleMonitoringGroup.GoogleMonitoringGroupConfig",
 		reflect.TypeOf((*GoogleMonitoringGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringGroup.GoogleMonitoringGroupTimeouts",
+		"@cdktf/provider-google-beta.googleMonitoringGroup.GoogleMonitoringGroupTimeouts",
 		reflect.TypeOf((*GoogleMonitoringGroupTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringGroup.GoogleMonitoringGroupTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringGroup.GoogleMonitoringGroupTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleMonitoringGroupTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

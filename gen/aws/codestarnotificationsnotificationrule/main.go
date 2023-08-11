@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRule",
+		"@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRule",
 		reflect.TypeOf((*CodestarnotificationsNotificationRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRuleConfig",
+		"@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRuleConfig",
 		reflect.TypeOf((*CodestarnotificationsNotificationRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRuleTarget",
+		"@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRuleTarget",
 		reflect.TypeOf((*CodestarnotificationsNotificationRuleTarget)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRuleTargetList",
+		"@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRuleTargetList",
 		reflect.TypeOf((*CodestarnotificationsNotificationRuleTargetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRuleTargetOutputReference",
+		"@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRuleTargetOutputReference",
 		reflect.TypeOf((*CodestarnotificationsNotificationRuleTargetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},

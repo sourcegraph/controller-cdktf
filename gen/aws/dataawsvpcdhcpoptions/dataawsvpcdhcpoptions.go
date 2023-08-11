@@ -441,7 +441,7 @@ func NewDataAwsVpcDhcpOptions(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataAwsVpcDhcpOptions{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions",
+		"@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -454,7 +454,7 @@ func NewDataAwsVpcDhcpOptions_Override(d DataAwsVpcDhcpOptions, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions",
+		"@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -565,7 +565,7 @@ func DataAwsVpcDhcpOptions_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions",
+		"@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func DataAwsVpcDhcpOptions_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions",
+		"@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -603,7 +603,7 @@ func DataAwsVpcDhcpOptions_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions",
+		"@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -616,7 +616,7 @@ func DataAwsVpcDhcpOptions_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions",
+		"@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewCognitoUserPoolAdminCreateUserConfigOutputReference(terraformResource cd
 	j := jsiiProxy_CognitoUserPoolAdminCreateUserConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfigOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCognitoUserPoolAdminCreateUserConfigOutputReference_Override(c CognitoUs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfigOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

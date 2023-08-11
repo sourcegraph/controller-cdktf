@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.appconfigDeploymentStrategy.AppconfigDeploymentStrategy",
+		"@cdktf/provider-aws.appconfigDeploymentStrategy.AppconfigDeploymentStrategy",
 		reflect.TypeOf((*AppconfigDeploymentStrategy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appconfigDeploymentStrategy.AppconfigDeploymentStrategyConfig",
+		"@cdktf/provider-aws.appconfigDeploymentStrategy.AppconfigDeploymentStrategyConfig",
 		reflect.TypeOf((*AppconfigDeploymentStrategyConfig)(nil)).Elem(),
 	)
 }

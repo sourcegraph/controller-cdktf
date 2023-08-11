@@ -450,7 +450,7 @@ func NewRamResourceShare(scope constructs.Construct, id *string, config *RamReso
 	j := jsiiProxy_RamResourceShare{}
 
 	_jsii_.Create(
-		"aws.ramResourceShare.RamResourceShare",
+		"@cdktf/provider-aws.ramResourceShare.RamResourceShare",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -463,7 +463,7 @@ func NewRamResourceShare_Override(r RamResourceShare, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ramResourceShare.RamResourceShare",
+		"@cdktf/provider-aws.ramResourceShare.RamResourceShare",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -629,7 +629,7 @@ func RamResourceShare_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ramResourceShare.RamResourceShare",
+		"@cdktf/provider-aws.ramResourceShare.RamResourceShare",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -648,7 +648,7 @@ func RamResourceShare_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ramResourceShare.RamResourceShare",
+		"@cdktf/provider-aws.ramResourceShare.RamResourceShare",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func RamResourceShare_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ramResourceShare.RamResourceShare",
+		"@cdktf/provider-aws.ramResourceShare.RamResourceShare",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func RamResourceShare_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ramResourceShare.RamResourceShare",
+		"@cdktf/provider-aws.ramResourceShare.RamResourceShare",
 		"tfResourceType",
 		&returns,
 	)

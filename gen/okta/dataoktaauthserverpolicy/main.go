@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicy",
+		"@cdktf/provider-okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicy",
 		reflect.TypeOf((*DataOktaAuthServerPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicyConfig",
+		"@cdktf/provider-okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicyConfig",
 		reflect.TypeOf((*DataOktaAuthServerPolicyConfig)(nil)).Elem(),
 	)
 }

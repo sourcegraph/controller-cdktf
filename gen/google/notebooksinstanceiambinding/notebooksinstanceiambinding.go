@@ -448,7 +448,7 @@ func NewNotebooksInstanceIamBinding(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_NotebooksInstanceIamBinding{}
 
 	_jsii_.Create(
-		"google.notebooksInstanceIamBinding.NotebooksInstanceIamBinding",
+		"@cdktf/provider-google.notebooksInstanceIamBinding.NotebooksInstanceIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewNotebooksInstanceIamBinding_Override(n NotebooksInstanceIamBinding, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.notebooksInstanceIamBinding.NotebooksInstanceIamBinding",
+		"@cdktf/provider-google.notebooksInstanceIamBinding.NotebooksInstanceIamBinding",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -627,7 +627,7 @@ func NotebooksInstanceIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.notebooksInstanceIamBinding.NotebooksInstanceIamBinding",
+		"@cdktf/provider-google.notebooksInstanceIamBinding.NotebooksInstanceIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func NotebooksInstanceIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.notebooksInstanceIamBinding.NotebooksInstanceIamBinding",
+		"@cdktf/provider-google.notebooksInstanceIamBinding.NotebooksInstanceIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func NotebooksInstanceIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.notebooksInstanceIamBinding.NotebooksInstanceIamBinding",
+		"@cdktf/provider-google.notebooksInstanceIamBinding.NotebooksInstanceIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func NotebooksInstanceIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.notebooksInstanceIamBinding.NotebooksInstanceIamBinding",
+		"@cdktf/provider-google.notebooksInstanceIamBinding.NotebooksInstanceIamBinding",
 		"tfResourceType",
 		&returns,
 	)

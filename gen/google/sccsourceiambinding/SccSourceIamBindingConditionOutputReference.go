@@ -226,7 +226,7 @@ func NewSccSourceIamBindingConditionOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_SccSourceIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.sccSourceIamBinding.SccSourceIamBindingConditionOutputReference",
+		"@cdktf/provider-google.sccSourceIamBinding.SccSourceIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewSccSourceIamBindingConditionOutputReference_Override(s SccSourceIamBindi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sccSourceIamBinding.SccSourceIamBindingConditionOutputReference",
+		"@cdktf/provider-google.sccSourceIamBinding.SccSourceIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

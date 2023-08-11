@@ -424,7 +424,7 @@ func NewGoogleComputeMachineImageIamMember(scope constructs.Construct, id *strin
 	j := jsiiProxy_GoogleComputeMachineImageIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember",
+		"@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleComputeMachineImageIamMember_Override(g GoogleComputeMachineImageI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember",
+		"@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleComputeMachineImageIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember",
+		"@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleComputeMachineImageIamMember_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember",
+		"@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleComputeMachineImageIamMember_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember",
+		"@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleComputeMachineImageIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember",
+		"@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember",
 		"tfResourceType",
 		&returns,
 	)

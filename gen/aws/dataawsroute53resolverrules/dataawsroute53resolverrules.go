@@ -399,7 +399,7 @@ func NewDataAwsRoute53ResolverRules(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataAwsRoute53ResolverRules{}
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53ResolverRules.DataAwsRoute53ResolverRules",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverRules.DataAwsRoute53ResolverRules",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -412,7 +412,7 @@ func NewDataAwsRoute53ResolverRules_Override(d DataAwsRoute53ResolverRules, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53ResolverRules.DataAwsRoute53ResolverRules",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverRules.DataAwsRoute53ResolverRules",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -556,7 +556,7 @@ func DataAwsRoute53ResolverRules_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53ResolverRules.DataAwsRoute53ResolverRules",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverRules.DataAwsRoute53ResolverRules",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func DataAwsRoute53ResolverRules_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53ResolverRules.DataAwsRoute53ResolverRules",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverRules.DataAwsRoute53ResolverRules",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -594,7 +594,7 @@ func DataAwsRoute53ResolverRules_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53ResolverRules.DataAwsRoute53ResolverRules",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverRules.DataAwsRoute53ResolverRules",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func DataAwsRoute53ResolverRules_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsRoute53ResolverRules.DataAwsRoute53ResolverRules",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverRules.DataAwsRoute53ResolverRules",
 		"tfResourceType",
 		&returns,
 	)

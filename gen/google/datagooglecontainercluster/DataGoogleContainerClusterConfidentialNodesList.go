@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterConfidentialNodesList(terraformResource cdktf.
 	j := jsiiProxy_DataGoogleContainerClusterConfidentialNodesList{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterConfidentialNodesList_Override(d DataGoogleCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

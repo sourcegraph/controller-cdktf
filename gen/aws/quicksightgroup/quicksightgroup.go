@@ -402,7 +402,7 @@ func NewQuicksightGroup(scope constructs.Construct, id *string, config *Quicksig
 	j := jsiiProxy_QuicksightGroup{}
 
 	_jsii_.Create(
-		"aws.quicksightGroup.QuicksightGroup",
+		"@cdktf/provider-aws.quicksightGroup.QuicksightGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -415,7 +415,7 @@ func NewQuicksightGroup_Override(q QuicksightGroup, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightGroup.QuicksightGroup",
+		"@cdktf/provider-aws.quicksightGroup.QuicksightGroup",
 		[]interface{}{scope, id, config},
 		q,
 	)
@@ -570,7 +570,7 @@ func QuicksightGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.quicksightGroup.QuicksightGroup",
+		"@cdktf/provider-aws.quicksightGroup.QuicksightGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -589,7 +589,7 @@ func QuicksightGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.quicksightGroup.QuicksightGroup",
+		"@cdktf/provider-aws.quicksightGroup.QuicksightGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func QuicksightGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.quicksightGroup.QuicksightGroup",
+		"@cdktf/provider-aws.quicksightGroup.QuicksightGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func QuicksightGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.quicksightGroup.QuicksightGroup",
+		"@cdktf/provider-aws.quicksightGroup.QuicksightGroup",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewDynamodbTableAttributeList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_DynamodbTableAttributeList{}
 
 	_jsii_.Create(
-		"aws.dynamodbTable.DynamodbTableAttributeList",
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTableAttributeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDynamodbTableAttributeList_Override(d DynamodbTableAttributeList, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dynamodbTable.DynamodbTableAttributeList",
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTableAttributeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

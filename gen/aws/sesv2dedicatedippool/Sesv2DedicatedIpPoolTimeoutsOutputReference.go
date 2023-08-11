@@ -228,7 +228,7 @@ func NewSesv2DedicatedIpPoolTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPoolTimeoutsOutputReference",
+		"@cdktf/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPoolTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSesv2DedicatedIpPoolTimeoutsOutputReference_Override(s Sesv2DedicatedIpP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPoolTimeoutsOutputReference",
+		"@cdktf/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPoolTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

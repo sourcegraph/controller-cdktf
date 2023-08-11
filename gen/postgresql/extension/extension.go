@@ -439,7 +439,7 @@ func NewExtension(scope constructs.Construct, id *string, config *ExtensionConfi
 	j := jsiiProxy_Extension{}
 
 	_jsii_.Create(
-		"postgresql.extension.Extension",
+		"@cdktf/provider-postgresql.extension.Extension",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -452,7 +452,7 @@ func NewExtension_Override(e Extension, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"postgresql.extension.Extension",
+		"@cdktf/provider-postgresql.extension.Extension",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -629,7 +629,7 @@ func Extension_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.extension.Extension",
+		"@cdktf/provider-postgresql.extension.Extension",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -648,7 +648,7 @@ func Extension_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.extension.Extension",
+		"@cdktf/provider-postgresql.extension.Extension",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func Extension_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.extension.Extension",
+		"@cdktf/provider-postgresql.extension.Extension",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func Extension_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"postgresql.extension.Extension",
+		"@cdktf/provider-postgresql.extension.Extension",
 		"tfResourceType",
 		&returns,
 	)

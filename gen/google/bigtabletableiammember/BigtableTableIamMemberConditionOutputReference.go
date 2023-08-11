@@ -226,7 +226,7 @@ func NewBigtableTableIamMemberConditionOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_BigtableTableIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.bigtableTableIamMember.BigtableTableIamMemberConditionOutputReference",
+		"@cdktf/provider-google.bigtableTableIamMember.BigtableTableIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewBigtableTableIamMemberConditionOutputReference_Override(b BigtableTableI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigtableTableIamMember.BigtableTableIamMemberConditionOutputReference",
+		"@cdktf/provider-google.bigtableTableIamMember.BigtableTableIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

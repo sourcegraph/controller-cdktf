@@ -228,7 +228,7 @@ func NewClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputRefe
 	j := jsiiProxy_ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

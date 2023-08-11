@@ -612,7 +612,7 @@ func NewComputeServiceAttachment(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_ComputeServiceAttachment{}
 
 	_jsii_.Create(
-		"google.computeServiceAttachment.ComputeServiceAttachment",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -625,7 +625,7 @@ func NewComputeServiceAttachment_Override(c ComputeServiceAttachment, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeServiceAttachment.ComputeServiceAttachment",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachment",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -846,7 +846,7 @@ func ComputeServiceAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeServiceAttachment.ComputeServiceAttachment",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -865,7 +865,7 @@ func ComputeServiceAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeServiceAttachment.ComputeServiceAttachment",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -884,7 +884,7 @@ func ComputeServiceAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeServiceAttachment.ComputeServiceAttachment",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -897,7 +897,7 @@ func ComputeServiceAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeServiceAttachment.ComputeServiceAttachment",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachment",
 		"tfResourceType",
 		&returns,
 	)

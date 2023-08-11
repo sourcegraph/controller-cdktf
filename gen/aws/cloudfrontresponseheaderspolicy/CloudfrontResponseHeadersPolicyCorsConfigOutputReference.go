@@ -319,7 +319,7 @@ func NewCloudfrontResponseHeadersPolicyCorsConfigOutputReference(terraformResour
 	j := jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigOutputReference",
+		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -331,7 +331,7 @@ func NewCloudfrontResponseHeadersPolicyCorsConfigOutputReference_Override(c Clou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigOutputReference",
+		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

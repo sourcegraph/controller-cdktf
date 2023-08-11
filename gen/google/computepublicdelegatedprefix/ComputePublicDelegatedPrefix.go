@@ -495,7 +495,7 @@ func NewComputePublicDelegatedPrefix(scope constructs.Construct, id *string, con
 	j := jsiiProxy_ComputePublicDelegatedPrefix{}
 
 	_jsii_.Create(
-		"google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix",
+		"@cdktf/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -508,7 +508,7 @@ func NewComputePublicDelegatedPrefix_Override(c ComputePublicDelegatedPrefix, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix",
+		"@cdktf/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -696,7 +696,7 @@ func ComputePublicDelegatedPrefix_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix",
+		"@cdktf/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func ComputePublicDelegatedPrefix_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix",
+		"@cdktf/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -734,7 +734,7 @@ func ComputePublicDelegatedPrefix_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix",
+		"@cdktf/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -747,7 +747,7 @@ func ComputePublicDelegatedPrefix_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix",
+		"@cdktf/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.transferAccess.TransferAccess",
+		"@cdktf/provider-aws.transferAccess.TransferAccess",
 		reflect.TypeOf((*TransferAccess)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,15 +79,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.transferAccess.TransferAccessConfig",
+		"@cdktf/provider-aws.transferAccess.TransferAccessConfig",
 		reflect.TypeOf((*TransferAccessConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.transferAccess.TransferAccessHomeDirectoryMappings",
+		"@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappings",
 		reflect.TypeOf((*TransferAccessHomeDirectoryMappings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.transferAccess.TransferAccessHomeDirectoryMappingsList",
+		"@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsList",
 		reflect.TypeOf((*TransferAccessHomeDirectoryMappingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.transferAccess.TransferAccessHomeDirectoryMappingsOutputReference",
+		"@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsOutputReference",
 		reflect.TypeOf((*TransferAccessHomeDirectoryMappingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -144,11 +144,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.transferAccess.TransferAccessPosixProfile",
+		"@cdktf/provider-aws.transferAccess.TransferAccessPosixProfile",
 		reflect.TypeOf((*TransferAccessPosixProfile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.transferAccess.TransferAccessPosixProfileOutputReference",
+		"@cdktf/provider-aws.transferAccess.TransferAccessPosixProfileOutputReference",
 		reflect.TypeOf((*TransferAccessPosixProfileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

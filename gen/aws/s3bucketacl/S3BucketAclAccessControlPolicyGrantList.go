@@ -116,7 +116,7 @@ func NewS3BucketAclAccessControlPolicyGrantList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_S3BucketAclAccessControlPolicyGrantList{}
 
 	_jsii_.Create(
-		"aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantList",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewS3BucketAclAccessControlPolicyGrantList_Override(s S3BucketAclAccessCont
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantList",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

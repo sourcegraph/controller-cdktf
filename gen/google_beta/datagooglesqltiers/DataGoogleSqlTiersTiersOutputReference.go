@@ -200,7 +200,7 @@ func NewDataGoogleSqlTiersTiersOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataGoogleSqlTiersTiersOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSqlTiers.DataGoogleSqlTiersTiersOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleSqlTiers.DataGoogleSqlTiersTiersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataGoogleSqlTiersTiersOutputReference_Override(d DataGoogleSqlTiersTier
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSqlTiers.DataGoogleSqlTiersTiersOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleSqlTiers.DataGoogleSqlTiersTiersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

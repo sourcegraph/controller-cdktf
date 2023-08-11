@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.wafIpset.WafIpset",
+		"@cdktf/provider-aws.wafIpset.WafIpset",
 		reflect.TypeOf((*WafIpset)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,15 +62,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafIpset.WafIpsetConfig",
+		"@cdktf/provider-aws.wafIpset.WafIpsetConfig",
 		reflect.TypeOf((*WafIpsetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafIpset.WafIpsetIpSetDescriptors",
+		"@cdktf/provider-aws.wafIpset.WafIpsetIpSetDescriptors",
 		reflect.TypeOf((*WafIpsetIpSetDescriptors)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafIpset.WafIpsetIpSetDescriptorsList",
+		"@cdktf/provider-aws.wafIpset.WafIpsetIpSetDescriptorsList",
 		reflect.TypeOf((*WafIpsetIpSetDescriptorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -91,7 +91,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafIpset.WafIpsetIpSetDescriptorsOutputReference",
+		"@cdktf/provider-aws.wafIpset.WafIpsetIpSetDescriptorsOutputReference",
 		reflect.TypeOf((*WafIpsetIpSetDescriptorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

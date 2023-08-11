@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ssmParameter.SsmParameter",
+		"@cdktf/provider-aws.ssmParameter.SsmParameter",
 		reflect.TypeOf((*SsmParameter)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,7 +93,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssmParameter.SsmParameterConfig",
+		"@cdktf/provider-aws.ssmParameter.SsmParameterConfig",
 		reflect.TypeOf((*SsmParameterConfig)(nil)).Elem(),
 	)
 }

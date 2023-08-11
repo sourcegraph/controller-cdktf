@@ -448,7 +448,7 @@ func NewGoogleDocumentAiProcessor(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleDocumentAiProcessor{}
 
 	_jsii_.Create(
-		"google-beta.googleDocumentAiProcessor.GoogleDocumentAiProcessor",
+		"@cdktf/provider-google-beta.googleDocumentAiProcessor.GoogleDocumentAiProcessor",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleDocumentAiProcessor_Override(g GoogleDocumentAiProcessor, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDocumentAiProcessor.GoogleDocumentAiProcessor",
+		"@cdktf/provider-google-beta.googleDocumentAiProcessor.GoogleDocumentAiProcessor",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleDocumentAiProcessor_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDocumentAiProcessor.GoogleDocumentAiProcessor",
+		"@cdktf/provider-google-beta.googleDocumentAiProcessor.GoogleDocumentAiProcessor",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleDocumentAiProcessor_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDocumentAiProcessor.GoogleDocumentAiProcessor",
+		"@cdktf/provider-google-beta.googleDocumentAiProcessor.GoogleDocumentAiProcessor",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleDocumentAiProcessor_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDocumentAiProcessor.GoogleDocumentAiProcessor",
+		"@cdktf/provider-google-beta.googleDocumentAiProcessor.GoogleDocumentAiProcessor",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleDocumentAiProcessor_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDocumentAiProcessor.GoogleDocumentAiProcessor",
+		"@cdktf/provider-google-beta.googleDocumentAiProcessor.GoogleDocumentAiProcessor",
 		"tfResourceType",
 		&returns,
 	)

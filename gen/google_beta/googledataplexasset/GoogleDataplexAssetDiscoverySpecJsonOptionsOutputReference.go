@@ -204,7 +204,7 @@ func NewGoogleDataplexAssetDiscoverySpecJsonOptionsOutputReference(terraformReso
 	j := jsiiProxy_GoogleDataplexAssetDiscoverySpecJsonOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexAsset.GoogleDataplexAssetDiscoverySpecJsonOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetDiscoverySpecJsonOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleDataplexAssetDiscoverySpecJsonOptionsOutputReference_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexAsset.GoogleDataplexAssetDiscoverySpecJsonOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetDiscoverySpecJsonOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

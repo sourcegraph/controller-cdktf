@@ -200,7 +200,7 @@ func NewCloudiotDeviceConfigAOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_CloudiotDeviceConfigAOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudiotDevice.CloudiotDeviceConfigAOutputReference",
+		"@cdktf/provider-google.cloudiotDevice.CloudiotDeviceConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewCloudiotDeviceConfigAOutputReference_Override(c CloudiotDeviceConfigAOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudiotDevice.CloudiotDeviceConfigAOutputReference",
+		"@cdktf/provider-google.cloudiotDevice.CloudiotDeviceConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

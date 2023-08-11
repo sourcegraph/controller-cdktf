@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.organizationIamMember.OrganizationIamMember",
+		"@cdktf/provider-google.organizationIamMember.OrganizationIamMember",
 		reflect.TypeOf((*OrganizationIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,11 +66,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.organizationIamMember.OrganizationIamMemberCondition",
+		"@cdktf/provider-google.organizationIamMember.OrganizationIamMemberCondition",
 		reflect.TypeOf((*OrganizationIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.organizationIamMember.OrganizationIamMemberConditionOutputReference",
+		"@cdktf/provider-google.organizationIamMember.OrganizationIamMemberConditionOutputReference",
 		reflect.TypeOf((*OrganizationIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.organizationIamMember.OrganizationIamMemberConfig",
+		"@cdktf/provider-google.organizationIamMember.OrganizationIamMemberConfig",
 		reflect.TypeOf((*OrganizationIamMemberConfig)(nil)).Elem(),
 	)
 }

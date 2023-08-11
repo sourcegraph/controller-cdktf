@@ -180,7 +180,7 @@ func NewAppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference(terr
 	j := jsiiProxy_AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference",
+		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewAppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference",
+		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

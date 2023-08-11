@@ -116,7 +116,7 @@ func NewEc2ClientVpnEndpointAuthenticationOptionsList(terraformResource cdktf.II
 	j := jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsList{}
 
 	_jsii_.Create(
-		"aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptionsList",
+		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEc2ClientVpnEndpointAuthenticationOptionsList_Override(e Ec2ClientVpnEnd
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptionsList",
+		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

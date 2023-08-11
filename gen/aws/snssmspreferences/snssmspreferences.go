@@ -440,7 +440,7 @@ func NewSnsSmsPreferences(scope constructs.Construct, id *string, config *SnsSms
 	j := jsiiProxy_SnsSmsPreferences{}
 
 	_jsii_.Create(
-		"aws.snsSmsPreferences.SnsSmsPreferences",
+		"@cdktf/provider-aws.snsSmsPreferences.SnsSmsPreferences",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -453,7 +453,7 @@ func NewSnsSmsPreferences_Override(s SnsSmsPreferences, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.snsSmsPreferences.SnsSmsPreferences",
+		"@cdktf/provider-aws.snsSmsPreferences.SnsSmsPreferences",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -630,7 +630,7 @@ func SnsSmsPreferences_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.snsSmsPreferences.SnsSmsPreferences",
+		"@cdktf/provider-aws.snsSmsPreferences.SnsSmsPreferences",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -649,7 +649,7 @@ func SnsSmsPreferences_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.snsSmsPreferences.SnsSmsPreferences",
+		"@cdktf/provider-aws.snsSmsPreferences.SnsSmsPreferences",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func SnsSmsPreferences_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.snsSmsPreferences.SnsSmsPreferences",
+		"@cdktf/provider-aws.snsSmsPreferences.SnsSmsPreferences",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -681,7 +681,7 @@ func SnsSmsPreferences_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.snsSmsPreferences.SnsSmsPreferences",
+		"@cdktf/provider-aws.snsSmsPreferences.SnsSmsPreferences",
 		"tfResourceType",
 		&returns,
 	)

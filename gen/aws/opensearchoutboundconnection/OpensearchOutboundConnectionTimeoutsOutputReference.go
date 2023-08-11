@@ -204,7 +204,7 @@ func NewOpensearchOutboundConnectionTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_OpensearchOutboundConnectionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.opensearchOutboundConnection.OpensearchOutboundConnectionTimeoutsOutputReference",
+		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewOpensearchOutboundConnectionTimeoutsOutputReference_Override(o Opensearc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchOutboundConnection.OpensearchOutboundConnectionTimeoutsOutputReference",
+		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

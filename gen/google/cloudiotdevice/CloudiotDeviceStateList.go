@@ -104,7 +104,7 @@ func NewCloudiotDeviceStateList(terraformResource cdktf.IInterpolatingParent, te
 	j := jsiiProxy_CloudiotDeviceStateList{}
 
 	_jsii_.Create(
-		"google.cloudiotDevice.CloudiotDeviceStateList",
+		"@cdktf/provider-google.cloudiotDevice.CloudiotDeviceStateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewCloudiotDeviceStateList_Override(c CloudiotDeviceStateList, terraformRes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudiotDevice.CloudiotDeviceStateList",
+		"@cdktf/provider-google.cloudiotDevice.CloudiotDeviceStateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

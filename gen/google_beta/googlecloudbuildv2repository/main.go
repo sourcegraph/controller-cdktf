@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository",
 		reflect.TypeOf((*GoogleCloudbuildv2Repository)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryConfig",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryConfig",
 		reflect.TypeOf((*GoogleCloudbuildv2RepositoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeouts",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeouts",
 		reflect.TypeOf((*GoogleCloudbuildv2RepositoryTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleCloudbuildv2RepositoryTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

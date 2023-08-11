@@ -511,7 +511,7 @@ func NewMlEngineModel(scope constructs.Construct, id *string, config *MlEngineMo
 	j := jsiiProxy_MlEngineModel{}
 
 	_jsii_.Create(
-		"google.mlEngineModel.MlEngineModel",
+		"@cdktf/provider-google.mlEngineModel.MlEngineModel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -524,7 +524,7 @@ func NewMlEngineModel_Override(m MlEngineModel, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.mlEngineModel.MlEngineModel",
+		"@cdktf/provider-google.mlEngineModel.MlEngineModel",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -712,7 +712,7 @@ func MlEngineModel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.mlEngineModel.MlEngineModel",
+		"@cdktf/provider-google.mlEngineModel.MlEngineModel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -731,7 +731,7 @@ func MlEngineModel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.mlEngineModel.MlEngineModel",
+		"@cdktf/provider-google.mlEngineModel.MlEngineModel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -750,7 +750,7 @@ func MlEngineModel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.mlEngineModel.MlEngineModel",
+		"@cdktf/provider-google.mlEngineModel.MlEngineModel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -763,7 +763,7 @@ func MlEngineModel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.mlEngineModel.MlEngineModel",
+		"@cdktf/provider-google.mlEngineModel.MlEngineModel",
 		"tfResourceType",
 		&returns,
 	)

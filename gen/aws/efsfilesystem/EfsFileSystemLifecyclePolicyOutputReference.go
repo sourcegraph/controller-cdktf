@@ -204,7 +204,7 @@ func NewEfsFileSystemLifecyclePolicyOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_EfsFileSystemLifecyclePolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference",
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEfsFileSystemLifecyclePolicyOutputReference_Override(e EfsFileSystemLife
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference",
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

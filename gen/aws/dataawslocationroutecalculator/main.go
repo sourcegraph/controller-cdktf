@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator",
+		"@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator",
 		reflect.TypeOf((*DataAwsLocationRouteCalculator)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig",
+		"@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig",
 		reflect.TypeOf((*DataAwsLocationRouteCalculatorConfig)(nil)).Elem(),
 	)
 }

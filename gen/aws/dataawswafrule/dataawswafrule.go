@@ -291,7 +291,7 @@ func NewDataAwsWafRule(scope constructs.Construct, id *string, config *DataAwsWa
 	j := jsiiProxy_DataAwsWafRule{}
 
 	_jsii_.Create(
-		"aws.dataAwsWafRule.DataAwsWafRule",
+		"@cdktf/provider-aws.dataAwsWafRule.DataAwsWafRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -304,7 +304,7 @@ func NewDataAwsWafRule_Override(d DataAwsWafRule, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsWafRule.DataAwsWafRule",
+		"@cdktf/provider-aws.dataAwsWafRule.DataAwsWafRule",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -404,7 +404,7 @@ func DataAwsWafRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafRule.DataAwsWafRule",
+		"@cdktf/provider-aws.dataAwsWafRule.DataAwsWafRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -423,7 +423,7 @@ func DataAwsWafRule_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafRule.DataAwsWafRule",
+		"@cdktf/provider-aws.dataAwsWafRule.DataAwsWafRule",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -442,7 +442,7 @@ func DataAwsWafRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafRule.DataAwsWafRule",
+		"@cdktf/provider-aws.dataAwsWafRule.DataAwsWafRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -455,7 +455,7 @@ func DataAwsWafRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsWafRule.DataAwsWafRule",
+		"@cdktf/provider-aws.dataAwsWafRule.DataAwsWafRule",
 		"tfResourceType",
 		&returns,
 	)

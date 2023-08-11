@@ -396,7 +396,7 @@ func NewAmplifyAppAutoBranchCreationConfigOutputReference(terraformResource cdkt
 	j := jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference",
+		"@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -408,7 +408,7 @@ func NewAmplifyAppAutoBranchCreationConfigOutputReference_Override(a AmplifyAppA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference",
+		"@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -204,7 +204,7 @@ func NewGoogleMonitoringAlertPolicyConditionsConditionThresholdTriggerOutputRefe
 	j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleMonitoringAlertPolicyConditionsConditionThresholdTriggerOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -480,7 +480,7 @@ func NewDataAwsImagebuilderImagePipeline(scope constructs.Construct, id *string,
 	j := jsiiProxy_DataAwsImagebuilderImagePipeline{}
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipeline",
+		"@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipeline",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -493,7 +493,7 @@ func NewDataAwsImagebuilderImagePipeline_Override(d DataAwsImagebuilderImagePipe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipeline",
+		"@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipeline",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -604,7 +604,7 @@ func DataAwsImagebuilderImagePipeline_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipeline",
+		"@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipeline",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -623,7 +623,7 @@ func DataAwsImagebuilderImagePipeline_IsTerraformDataSource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipeline",
+		"@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipeline",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func DataAwsImagebuilderImagePipeline_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipeline",
+		"@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipeline",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func DataAwsImagebuilderImagePipeline_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipeline",
+		"@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipeline",
 		"tfResourceType",
 		&returns,
 	)

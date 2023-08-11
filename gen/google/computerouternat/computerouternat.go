@@ -796,7 +796,7 @@ func NewComputeRouterNat(scope constructs.Construct, id *string, config *Compute
 	j := jsiiProxy_ComputeRouterNat{}
 
 	_jsii_.Create(
-		"google.computeRouterNat.ComputeRouterNat",
+		"@cdktf/provider-google.computeRouterNat.ComputeRouterNat",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -809,7 +809,7 @@ func NewComputeRouterNat_Override(c ComputeRouterNat, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRouterNat.ComputeRouterNat",
+		"@cdktf/provider-google.computeRouterNat.ComputeRouterNat",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -1107,7 +1107,7 @@ func ComputeRouterNat_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRouterNat.ComputeRouterNat",
+		"@cdktf/provider-google.computeRouterNat.ComputeRouterNat",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1126,7 +1126,7 @@ func ComputeRouterNat_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRouterNat.ComputeRouterNat",
+		"@cdktf/provider-google.computeRouterNat.ComputeRouterNat",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1145,7 +1145,7 @@ func ComputeRouterNat_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRouterNat.ComputeRouterNat",
+		"@cdktf/provider-google.computeRouterNat.ComputeRouterNat",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1158,7 +1158,7 @@ func ComputeRouterNat_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeRouterNat.ComputeRouterNat",
+		"@cdktf/provider-google.computeRouterNat.ComputeRouterNat",
 		"tfResourceType",
 		&returns,
 	)

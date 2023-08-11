@@ -116,7 +116,7 @@ func NewJobV1SpecTemplateSpecTolerationList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_JobV1SpecTemplateSpecTolerationList{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecTolerationList",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecTolerationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewJobV1SpecTemplateSpecTolerationList_Override(j JobV1SpecTemplateSpecTole
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecTolerationList",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecTolerationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)

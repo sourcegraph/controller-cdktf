@@ -482,7 +482,7 @@ func NewGoogleStorageTransferJob(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_GoogleStorageTransferJob{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageTransferJob.GoogleStorageTransferJob",
+		"@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJob",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -495,7 +495,7 @@ func NewGoogleStorageTransferJob_Override(g GoogleStorageTransferJob, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageTransferJob.GoogleStorageTransferJob",
+		"@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJob",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -639,7 +639,7 @@ func GoogleStorageTransferJob_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageTransferJob.GoogleStorageTransferJob",
+		"@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJob",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -658,7 +658,7 @@ func GoogleStorageTransferJob_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageTransferJob.GoogleStorageTransferJob",
+		"@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJob",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func GoogleStorageTransferJob_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageTransferJob.GoogleStorageTransferJob",
+		"@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJob",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -690,7 +690,7 @@ func GoogleStorageTransferJob_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleStorageTransferJob.GoogleStorageTransferJob",
+		"@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJob",
 		"tfResourceType",
 		&returns,
 	)

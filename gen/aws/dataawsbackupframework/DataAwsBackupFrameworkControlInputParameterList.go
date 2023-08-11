@@ -104,7 +104,7 @@ func NewDataAwsBackupFrameworkControlInputParameterList(terraformResource cdktf.
 	j := jsiiProxy_DataAwsBackupFrameworkControlInputParameterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsBackupFrameworkControlInputParameterList_Override(d DataAwsBackup
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

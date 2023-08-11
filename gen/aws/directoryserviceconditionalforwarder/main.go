@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.directoryServiceConditionalForwarder.DirectoryServiceConditionalForwarder",
+		"@cdktf/provider-aws.directoryServiceConditionalForwarder.DirectoryServiceConditionalForwarder",
 		reflect.TypeOf((*DirectoryServiceConditionalForwarder)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.directoryServiceConditionalForwarder.DirectoryServiceConditionalForwarderConfig",
+		"@cdktf/provider-aws.directoryServiceConditionalForwarder.DirectoryServiceConditionalForwarderConfig",
 		reflect.TypeOf((*DirectoryServiceConditionalForwarderConfig)(nil)).Elem(),
 	)
 }

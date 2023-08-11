@@ -116,7 +116,7 @@ func NewGlueCatalogDatabaseCreateTableDefaultPermissionList(terraformResource cd
 	j := jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList{}
 
 	_jsii_.Create(
-		"aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionList",
+		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGlueCatalogDatabaseCreateTableDefaultPermissionList_Override(g GlueCatal
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionList",
+		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

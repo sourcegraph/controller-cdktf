@@ -116,7 +116,7 @@ func NewEmrInstanceGroupEbsConfigList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_EmrInstanceGroupEbsConfigList{}
 
 	_jsii_.Create(
-		"aws.emrInstanceGroup.EmrInstanceGroupEbsConfigList",
+		"@cdktf/provider-aws.emrInstanceGroup.EmrInstanceGroupEbsConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEmrInstanceGroupEbsConfigList_Override(e EmrInstanceGroupEbsConfigList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrInstanceGroup.EmrInstanceGroupEbsConfigList",
+		"@cdktf/provider-aws.emrInstanceGroup.EmrInstanceGroupEbsConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

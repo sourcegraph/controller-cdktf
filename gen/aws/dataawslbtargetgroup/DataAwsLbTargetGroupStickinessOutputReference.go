@@ -200,7 +200,7 @@ func NewDataAwsLbTargetGroupStickinessOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataAwsLbTargetGroupStickinessOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsLbTargetGroup.DataAwsLbTargetGroupStickinessOutputReference",
+		"@cdktf/provider-aws.dataAwsLbTargetGroup.DataAwsLbTargetGroupStickinessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataAwsLbTargetGroupStickinessOutputReference_Override(d DataAwsLbTarget
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLbTargetGroup.DataAwsLbTargetGroupStickinessOutputReference",
+		"@cdktf/provider-aws.dataAwsLbTargetGroup.DataAwsLbTargetGroupStickinessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -190,7 +190,7 @@ func NewBigqueryJobQueryDestinationEncryptionConfigurationOutputReference(terraf
 	j := jsiiProxy_BigqueryJobQueryDestinationEncryptionConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryJob.BigqueryJobQueryDestinationEncryptionConfigurationOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryDestinationEncryptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -202,7 +202,7 @@ func NewBigqueryJobQueryDestinationEncryptionConfigurationOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryJob.BigqueryJobQueryDestinationEncryptionConfigurationOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryDestinationEncryptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

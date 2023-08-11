@@ -436,7 +436,7 @@ func NewComputeNetworkPeeringRoutesConfig(scope constructs.Construct, id *string
 	j := jsiiProxy_ComputeNetworkPeeringRoutesConfig{}
 
 	_jsii_.Create(
-		"google.computeNetworkPeeringRoutesConfig.ComputeNetworkPeeringRoutesConfig",
+		"@cdktf/provider-google.computeNetworkPeeringRoutesConfig.ComputeNetworkPeeringRoutesConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -449,7 +449,7 @@ func NewComputeNetworkPeeringRoutesConfig_Override(c ComputeNetworkPeeringRoutes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeNetworkPeeringRoutesConfig.ComputeNetworkPeeringRoutesConfig",
+		"@cdktf/provider-google.computeNetworkPeeringRoutesConfig.ComputeNetworkPeeringRoutesConfig",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -615,7 +615,7 @@ func ComputeNetworkPeeringRoutesConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeNetworkPeeringRoutesConfig.ComputeNetworkPeeringRoutesConfig",
+		"@cdktf/provider-google.computeNetworkPeeringRoutesConfig.ComputeNetworkPeeringRoutesConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func ComputeNetworkPeeringRoutesConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeNetworkPeeringRoutesConfig.ComputeNetworkPeeringRoutesConfig",
+		"@cdktf/provider-google.computeNetworkPeeringRoutesConfig.ComputeNetworkPeeringRoutesConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func ComputeNetworkPeeringRoutesConfig_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeNetworkPeeringRoutesConfig.ComputeNetworkPeeringRoutesConfig",
+		"@cdktf/provider-google.computeNetworkPeeringRoutesConfig.ComputeNetworkPeeringRoutesConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func ComputeNetworkPeeringRoutesConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeNetworkPeeringRoutesConfig.ComputeNetworkPeeringRoutesConfig",
+		"@cdktf/provider-google.computeNetworkPeeringRoutesConfig.ComputeNetworkPeeringRoutesConfig",
 		"tfResourceType",
 		&returns,
 	)

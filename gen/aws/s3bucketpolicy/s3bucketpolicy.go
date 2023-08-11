@@ -342,7 +342,7 @@ func NewS3BucketPolicy(scope constructs.Construct, id *string, config *S3BucketP
 	j := jsiiProxy_S3BucketPolicy{}
 
 	_jsii_.Create(
-		"aws.s3BucketPolicy.S3BucketPolicy",
+		"@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewS3BucketPolicy_Override(s S3BucketPolicy, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketPolicy.S3BucketPolicy",
+		"@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicy",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -488,7 +488,7 @@ func S3BucketPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketPolicy.S3BucketPolicy",
+		"@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func S3BucketPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketPolicy.S3BucketPolicy",
+		"@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func S3BucketPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketPolicy.S3BucketPolicy",
+		"@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func S3BucketPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3BucketPolicy.S3BucketPolicy",
+		"@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicy",
 		"tfResourceType",
 		&returns,
 	)

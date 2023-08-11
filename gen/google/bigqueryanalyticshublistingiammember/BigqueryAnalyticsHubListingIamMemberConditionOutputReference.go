@@ -226,7 +226,7 @@ func NewBigqueryAnalyticsHubListingIamMemberConditionOutputReference(terraformRe
 	j := jsiiProxy_BigqueryAnalyticsHubListingIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryAnalyticsHubListingIamMember.BigqueryAnalyticsHubListingIamMemberConditionOutputReference",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListingIamMember.BigqueryAnalyticsHubListingIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewBigqueryAnalyticsHubListingIamMemberConditionOutputReference_Override(b 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryAnalyticsHubListingIamMember.BigqueryAnalyticsHubListingIamMemberConditionOutputReference",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListingIamMember.BigqueryAnalyticsHubListingIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

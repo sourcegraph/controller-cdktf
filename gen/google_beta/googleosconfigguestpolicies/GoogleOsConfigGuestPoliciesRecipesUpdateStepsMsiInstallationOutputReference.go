@@ -227,7 +227,7 @@ func NewGoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallationOutputRefere
 	j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallationOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallationOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewGoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallationOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallationOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

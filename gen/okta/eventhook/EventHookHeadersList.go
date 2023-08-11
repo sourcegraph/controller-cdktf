@@ -116,7 +116,7 @@ func NewEventHookHeadersList(terraformResource cdktf.IInterpolatingParent, terra
 	j := jsiiProxy_EventHookHeadersList{}
 
 	_jsii_.Create(
-		"okta.eventHook.EventHookHeadersList",
+		"@cdktf/provider-okta.eventHook.EventHookHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEventHookHeadersList_Override(e EventHookHeadersList, terraformResource 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.eventHook.EventHookHeadersList",
+		"@cdktf/provider-okta.eventHook.EventHookHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

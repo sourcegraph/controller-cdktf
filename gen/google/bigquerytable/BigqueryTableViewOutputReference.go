@@ -203,7 +203,7 @@ func NewBigqueryTableViewOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_BigqueryTableViewOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryTable.BigqueryTableViewOutputReference",
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableViewOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewBigqueryTableViewOutputReference_Override(b BigqueryTableViewOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryTable.BigqueryTableViewOutputReference",
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableViewOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

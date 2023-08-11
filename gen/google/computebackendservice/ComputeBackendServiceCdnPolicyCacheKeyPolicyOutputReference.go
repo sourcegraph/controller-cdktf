@@ -324,7 +324,7 @@ func NewComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference(terraformRes
 	j := jsiiProxy_ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference_Override(c C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -249,7 +249,7 @@ func NewIdentityPlatformInboundSamlConfigIdpConfigOutputReference(terraformResou
 	j := jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.identityPlatformInboundSamlConfig.IdentityPlatformInboundSamlConfigIdpConfigOutputReference",
+		"@cdktf/provider-google.identityPlatformInboundSamlConfig.IdentityPlatformInboundSamlConfigIdpConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -261,7 +261,7 @@ func NewIdentityPlatformInboundSamlConfigIdpConfigOutputReference_Override(i Ide
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.identityPlatformInboundSamlConfig.IdentityPlatformInboundSamlConfigIdpConfigOutputReference",
+		"@cdktf/provider-google.identityPlatformInboundSamlConfig.IdentityPlatformInboundSamlConfigIdpConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

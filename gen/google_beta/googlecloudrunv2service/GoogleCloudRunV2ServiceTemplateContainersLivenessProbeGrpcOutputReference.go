@@ -204,7 +204,7 @@ func NewGoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReferenc
 	j := jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

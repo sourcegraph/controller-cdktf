@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsBatchJobQueue.DataAwsBatchJobQueue",
+		"@cdktf/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueue",
 		reflect.TypeOf((*DataAwsBatchJobQueue)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,11 +65,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueComputeEnvironmentOrder",
+		"@cdktf/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueComputeEnvironmentOrder",
 		reflect.TypeOf((*DataAwsBatchJobQueueComputeEnvironmentOrder)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueComputeEnvironmentOrderList",
+		"@cdktf/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueComputeEnvironmentOrderList",
 		reflect.TypeOf((*DataAwsBatchJobQueueComputeEnvironmentOrderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -89,7 +89,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueComputeEnvironmentOrderOutputReference",
+		"@cdktf/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueComputeEnvironmentOrderOutputReference",
 		reflect.TypeOf((*DataAwsBatchJobQueueComputeEnvironmentOrderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -123,7 +123,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueConfig",
+		"@cdktf/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueConfig",
 		reflect.TypeOf((*DataAwsBatchJobQueueConfig)(nil)).Elem(),
 	)
 }

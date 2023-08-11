@@ -464,7 +464,7 @@ func NewRegistryModule(scope constructs.Construct, id *string, config *RegistryM
 	j := jsiiProxy_RegistryModule{}
 
 	_jsii_.Create(
-		"tfe.registryModule.RegistryModule",
+		"@cdktf/provider-tfe.registryModule.RegistryModule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -477,7 +477,7 @@ func NewRegistryModule_Override(r RegistryModule, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.registryModule.RegistryModule",
+		"@cdktf/provider-tfe.registryModule.RegistryModule",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -654,7 +654,7 @@ func RegistryModule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.registryModule.RegistryModule",
+		"@cdktf/provider-tfe.registryModule.RegistryModule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -673,7 +673,7 @@ func RegistryModule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.registryModule.RegistryModule",
+		"@cdktf/provider-tfe.registryModule.RegistryModule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -692,7 +692,7 @@ func RegistryModule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.registryModule.RegistryModule",
+		"@cdktf/provider-tfe.registryModule.RegistryModule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -705,7 +705,7 @@ func RegistryModule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.registryModule.RegistryModule",
+		"@cdktf/provider-tfe.registryModule.RegistryModule",
 		"tfResourceType",
 		&returns,
 	)

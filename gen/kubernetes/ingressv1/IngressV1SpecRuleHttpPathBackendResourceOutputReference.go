@@ -225,7 +225,7 @@ func NewIngressV1SpecRuleHttpPathBackendResourceOutputReference(terraformResourc
 	j := jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.ingressV1.IngressV1SpecRuleHttpPathBackendResourceOutputReference",
+		"@cdktf/provider-kubernetes.ingressV1.IngressV1SpecRuleHttpPathBackendResourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewIngressV1SpecRuleHttpPathBackendResourceOutputReference_Override(i Ingre
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.ingressV1.IngressV1SpecRuleHttpPathBackendResourceOutputReference",
+		"@cdktf/provider-kubernetes.ingressV1.IngressV1SpecRuleHttpPathBackendResourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

@@ -612,7 +612,7 @@ func NewLaunchTemplateNetworkInterfacesOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateNetworkInterfacesOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -624,7 +624,7 @@ func NewLaunchTemplateNetworkInterfacesOutputReference_Override(l LaunchTemplate
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateNetworkInterfacesOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeering",
+		"@cdktf/provider-google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeering",
 		reflect.TypeOf((*GoogleComputeNetworkPeering)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,15 +82,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeeringConfig",
+		"@cdktf/provider-google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeeringConfig",
 		reflect.TypeOf((*GoogleComputeNetworkPeeringConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeeringTimeouts",
+		"@cdktf/provider-google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeeringTimeouts",
 		reflect.TypeOf((*GoogleComputeNetworkPeeringTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeeringTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeeringTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleComputeNetworkPeeringTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

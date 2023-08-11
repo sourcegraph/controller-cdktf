@@ -116,7 +116,7 @@ func NewRedshiftSecurityGroupIngressList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_RedshiftSecurityGroupIngressList{}
 
 	_jsii_.Create(
-		"aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressList",
+		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRedshiftSecurityGroupIngressList_Override(r RedshiftSecurityGroupIngress
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressList",
+		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

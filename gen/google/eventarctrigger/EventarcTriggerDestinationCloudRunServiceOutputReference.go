@@ -227,7 +227,7 @@ func NewEventarcTriggerDestinationCloudRunServiceOutputReference(terraformResour
 	j := jsiiProxy_EventarcTriggerDestinationCloudRunServiceOutputReference{}
 
 	_jsii_.Create(
-		"google.eventarcTrigger.EventarcTriggerDestinationCloudRunServiceOutputReference",
+		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestinationCloudRunServiceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewEventarcTriggerDestinationCloudRunServiceOutputReference_Override(e Even
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.eventarcTrigger.EventarcTriggerDestinationCloudRunServiceOutputReference",
+		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestinationCloudRunServiceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

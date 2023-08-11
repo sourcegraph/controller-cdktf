@@ -180,7 +180,7 @@ func NewEvidentlyProjectDataDeliveryCloudwatchLogsOutputReference(terraformResou
 	j := jsiiProxy_EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference{}
 
 	_jsii_.Create(
-		"aws.evidentlyProject.EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference",
+		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewEvidentlyProjectDataDeliveryCloudwatchLogsOutputReference_Override(e Evi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.evidentlyProject.EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference",
+		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

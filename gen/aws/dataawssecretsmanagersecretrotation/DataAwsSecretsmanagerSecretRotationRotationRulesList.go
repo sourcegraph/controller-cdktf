@@ -104,7 +104,7 @@ func NewDataAwsSecretsmanagerSecretRotationRotationRulesList(terraformResource c
 	j := jsiiProxy_DataAwsSecretsmanagerSecretRotationRotationRulesList{}
 
 	_jsii_.Create(
-		"aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationRotationRulesList",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationRotationRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsSecretsmanagerSecretRotationRotationRulesList_Override(d DataAwsS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationRotationRulesList",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotationRotationRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

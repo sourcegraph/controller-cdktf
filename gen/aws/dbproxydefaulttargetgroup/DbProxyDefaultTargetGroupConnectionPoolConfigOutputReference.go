@@ -276,7 +276,7 @@ func NewDbProxyDefaultTargetGroupConnectionPoolConfigOutputReference(terraformRe
 	j := jsiiProxy_DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference",
+		"@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewDbProxyDefaultTargetGroupConnectionPoolConfigOutputReference_Override(d 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference",
+		"@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

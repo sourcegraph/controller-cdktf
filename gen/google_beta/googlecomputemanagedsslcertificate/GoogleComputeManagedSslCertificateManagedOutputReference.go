@@ -179,7 +179,7 @@ func NewGoogleComputeManagedSslCertificateManagedOutputReference(terraformResour
 	j := jsiiProxy_GoogleComputeManagedSslCertificateManagedOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificateManagedOutputReference",
+		"@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificateManagedOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleComputeManagedSslCertificateManagedOutputReference_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificateManagedOutputReference",
+		"@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificateManagedOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -116,7 +116,7 @@ func NewGoogleFirebaserulesRulesetSourceFilesList(terraformResource cdktf.IInter
 	j := jsiiProxy_GoogleFirebaserulesRulesetSourceFilesList{}
 
 	_jsii_.Create(
-		"google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetSourceFilesList",
+		"@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetSourceFilesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleFirebaserulesRulesetSourceFilesList_Override(g GoogleFirebaserules
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetSourceFilesList",
+		"@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetSourceFilesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

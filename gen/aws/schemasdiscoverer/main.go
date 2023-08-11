@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.schemasDiscoverer.SchemasDiscoverer",
+		"@cdktf/provider-aws.schemasDiscoverer.SchemasDiscoverer",
 		reflect.TypeOf((*SchemasDiscoverer)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.schemasDiscoverer.SchemasDiscovererConfig",
+		"@cdktf/provider-aws.schemasDiscoverer.SchemasDiscovererConfig",
 		reflect.TypeOf((*SchemasDiscovererConfig)(nil)).Elem(),
 	)
 }

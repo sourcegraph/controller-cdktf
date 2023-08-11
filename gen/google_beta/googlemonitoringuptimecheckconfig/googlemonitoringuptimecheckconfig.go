@@ -604,7 +604,7 @@ func NewGoogleMonitoringUptimeCheckConfig(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleMonitoringUptimeCheckConfig{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfig",
+		"@cdktf/provider-google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -617,7 +617,7 @@ func NewGoogleMonitoringUptimeCheckConfig_Override(g GoogleMonitoringUptimeCheck
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfig",
+		"@cdktf/provider-google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfig",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -794,7 +794,7 @@ func GoogleMonitoringUptimeCheckConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfig",
+		"@cdktf/provider-google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -813,7 +813,7 @@ func GoogleMonitoringUptimeCheckConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfig",
+		"@cdktf/provider-google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -832,7 +832,7 @@ func GoogleMonitoringUptimeCheckConfig_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfig",
+		"@cdktf/provider-google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -845,7 +845,7 @@ func GoogleMonitoringUptimeCheckConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfig",
+		"@cdktf/provider-google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfig",
 		"tfResourceType",
 		&returns,
 	)

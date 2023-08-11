@@ -226,7 +226,7 @@ func NewDataplexDatascanIamBindingConditionOutputReference(terraformResource cdk
 	j := jsiiProxy_DataplexDatascanIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.dataplexDatascanIamBinding.DataplexDatascanIamBindingConditionOutputReference",
+		"@cdktf/provider-google.dataplexDatascanIamBinding.DataplexDatascanIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDataplexDatascanIamBindingConditionOutputReference_Override(d DataplexDa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexDatascanIamBinding.DataplexDatascanIamBindingConditionOutputReference",
+		"@cdktf/provider-google.dataplexDatascanIamBinding.DataplexDatascanIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

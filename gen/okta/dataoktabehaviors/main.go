@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.dataOktaBehaviors.DataOktaBehaviors",
+		"@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviors",
 		reflect.TypeOf((*DataOktaBehaviors)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,11 +57,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaBehaviors.DataOktaBehaviorsBehaviors",
+		"@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviorsBehaviors",
 		reflect.TypeOf((*DataOktaBehaviorsBehaviors)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaBehaviors.DataOktaBehaviorsBehaviorsList",
+		"@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviorsBehaviorsList",
 		reflect.TypeOf((*DataOktaBehaviorsBehaviorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -81,7 +81,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaBehaviors.DataOktaBehaviorsBehaviorsOutputReference",
+		"@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviorsBehaviorsOutputReference",
 		reflect.TypeOf((*DataOktaBehaviorsBehaviorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -118,7 +118,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaBehaviors.DataOktaBehaviorsConfig",
+		"@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviorsConfig",
 		reflect.TypeOf((*DataOktaBehaviorsConfig)(nil)).Elem(),
 	)
 }

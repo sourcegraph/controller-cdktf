@@ -228,7 +228,7 @@ func NewGoogleDataFusionInstanceTimeoutsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_GoogleDataFusionInstanceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleDataFusionInstanceTimeoutsOutputReference_Override(g GoogleDataFus
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

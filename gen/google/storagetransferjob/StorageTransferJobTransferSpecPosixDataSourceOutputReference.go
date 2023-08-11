@@ -179,7 +179,7 @@ func NewStorageTransferJobTransferSpecPosixDataSourceOutputReference(terraformRe
 	j := jsiiProxy_StorageTransferJobTransferSpecPosixDataSourceOutputReference{}
 
 	_jsii_.Create(
-		"google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSourceOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewStorageTransferJobTransferSpecPosixDataSourceOutputReference_Override(s 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSourceOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -180,7 +180,7 @@ func NewClouddeployTargetAnthosClusterOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_ClouddeployTargetAnthosClusterOutputReference{}
 
 	_jsii_.Create(
-		"google.clouddeployTarget.ClouddeployTargetAnthosClusterOutputReference",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetAnthosClusterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewClouddeployTargetAnthosClusterOutputReference_Override(c ClouddeployTarg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.clouddeployTarget.ClouddeployTargetAnthosClusterOutputReference",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetAnthosClusterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -116,7 +116,7 @@ func NewCloudwatchEventTargetRunCommandTargetsList(terraformResource cdktf.IInte
 	j := jsiiProxy_CloudwatchEventTargetRunCommandTargetsList{}
 
 	_jsii_.Create(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetRunCommandTargetsList",
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetRunCommandTargetsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudwatchEventTargetRunCommandTargetsList_Override(c CloudwatchEventTar
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetRunCommandTargetsList",
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetRunCommandTargetsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

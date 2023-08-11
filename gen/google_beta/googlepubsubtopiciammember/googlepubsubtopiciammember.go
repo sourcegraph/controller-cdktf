@@ -424,7 +424,7 @@ func NewGooglePubsubTopicIamMember(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GooglePubsubTopicIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGooglePubsubTopicIamMember_Override(g GooglePubsubTopicIamMember, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GooglePubsubTopicIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GooglePubsubTopicIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GooglePubsubTopicIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GooglePubsubTopicIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember",
 		"tfResourceType",
 		&returns,
 	)

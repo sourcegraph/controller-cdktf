@@ -116,7 +116,7 @@ func NewOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsList(terraformResource
 	j := jsiiProxy_OsConfigOsPolicyAssignmentOsPoliciesResourceGroupsList{}
 
 	_jsii_.Create(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentOsPoliciesResourceGroupsList",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentOsPoliciesResourceGroupsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsList_Override(o OsConf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentOsPoliciesResourceGroupsList",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentOsPoliciesResourceGroupsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

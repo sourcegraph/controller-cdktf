@@ -387,7 +387,7 @@ func NewUserFactorQuestion(scope constructs.Construct, id *string, config *UserF
 	j := jsiiProxy_UserFactorQuestion{}
 
 	_jsii_.Create(
-		"okta.userFactorQuestion.UserFactorQuestion",
+		"@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -400,7 +400,7 @@ func NewUserFactorQuestion_Override(u UserFactorQuestion, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.userFactorQuestion.UserFactorQuestion",
+		"@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion",
 		[]interface{}{scope, id, config},
 		u,
 	)
@@ -544,7 +544,7 @@ func UserFactorQuestion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.userFactorQuestion.UserFactorQuestion",
+		"@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func UserFactorQuestion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.userFactorQuestion.UserFactorQuestion",
+		"@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -582,7 +582,7 @@ func UserFactorQuestion_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.userFactorQuestion.UserFactorQuestion",
+		"@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func UserFactorQuestion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.userFactorQuestion.UserFactorQuestion",
+		"@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion",
 		"tfResourceType",
 		&returns,
 	)

@@ -327,7 +327,7 @@ func NewDataAwsSfnActivity(scope constructs.Construct, id *string, config *DataA
 	j := jsiiProxy_DataAwsSfnActivity{}
 
 	_jsii_.Create(
-		"aws.dataAwsSfnActivity.DataAwsSfnActivity",
+		"@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivity",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -340,7 +340,7 @@ func NewDataAwsSfnActivity_Override(d DataAwsSfnActivity, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSfnActivity.DataAwsSfnActivity",
+		"@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivity",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -451,7 +451,7 @@ func DataAwsSfnActivity_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSfnActivity.DataAwsSfnActivity",
+		"@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivity",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -470,7 +470,7 @@ func DataAwsSfnActivity_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSfnActivity.DataAwsSfnActivity",
+		"@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivity",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -489,7 +489,7 @@ func DataAwsSfnActivity_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSfnActivity.DataAwsSfnActivity",
+		"@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivity",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -502,7 +502,7 @@ func DataAwsSfnActivity_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSfnActivity.DataAwsSfnActivity",
+		"@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivity",
 		"tfResourceType",
 		&returns,
 	)

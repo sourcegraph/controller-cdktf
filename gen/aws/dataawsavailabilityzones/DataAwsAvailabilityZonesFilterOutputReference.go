@@ -202,7 +202,7 @@ func NewDataAwsAvailabilityZonesFilterOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataAwsAvailabilityZonesFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsAvailabilityZonesFilterOutputReference_Override(d DataAwsAvailabi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

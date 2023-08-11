@@ -366,7 +366,7 @@ func NewEc2ManagedPrefixListEntryA(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_Ec2ManagedPrefixListEntryA{}
 
 	_jsii_.Create(
-		"aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryA",
+		"@cdktf/provider-aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryA",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewEc2ManagedPrefixListEntryA_Override(e Ec2ManagedPrefixListEntryA, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryA",
+		"@cdktf/provider-aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryA",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -523,7 +523,7 @@ func Ec2ManagedPrefixListEntryA_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryA",
+		"@cdktf/provider-aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryA",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func Ec2ManagedPrefixListEntryA_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryA",
+		"@cdktf/provider-aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryA",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func Ec2ManagedPrefixListEntryA_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryA",
+		"@cdktf/provider-aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryA",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func Ec2ManagedPrefixListEntryA_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryA",
+		"@cdktf/provider-aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryA",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewGoogleCloudAssetFolderFeedTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleCloudAssetFolderFeedTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleCloudAssetFolderFeedTimeoutsOutputReference_Override(g GoogleCloud
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

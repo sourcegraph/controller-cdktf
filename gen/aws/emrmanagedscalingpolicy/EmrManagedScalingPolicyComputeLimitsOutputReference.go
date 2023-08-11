@@ -273,7 +273,7 @@ func NewEmrManagedScalingPolicyComputeLimitsOutputReference(terraformResource cd
 	j := jsiiProxy_EmrManagedScalingPolicyComputeLimitsOutputReference{}
 
 	_jsii_.Create(
-		"aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimitsOutputReference",
+		"@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimitsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -285,7 +285,7 @@ func NewEmrManagedScalingPolicyComputeLimitsOutputReference_Override(e EmrManage
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimitsOutputReference",
+		"@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimitsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

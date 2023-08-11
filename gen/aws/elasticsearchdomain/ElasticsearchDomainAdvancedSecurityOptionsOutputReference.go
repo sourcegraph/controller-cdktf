@@ -227,7 +227,7 @@ func NewElasticsearchDomainAdvancedSecurityOptionsOutputReference(terraformResou
 	j := jsiiProxy_ElasticsearchDomainAdvancedSecurityOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainAdvancedSecurityOptionsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAdvancedSecurityOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewElasticsearchDomainAdvancedSecurityOptionsOutputReference_Override(e Ela
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainAdvancedSecurityOptionsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAdvancedSecurityOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

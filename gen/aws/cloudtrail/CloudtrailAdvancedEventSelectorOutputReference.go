@@ -203,7 +203,7 @@ func NewCloudtrailAdvancedEventSelectorOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudtrail.CloudtrailAdvancedEventSelectorOutputReference",
+		"@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewCloudtrailAdvancedEventSelectorOutputReference_Override(c CloudtrailAdva
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudtrail.CloudtrailAdvancedEventSelectorOutputReference",
+		"@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

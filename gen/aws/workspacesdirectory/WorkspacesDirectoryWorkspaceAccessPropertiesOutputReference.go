@@ -348,7 +348,7 @@ func NewWorkspacesDirectoryWorkspaceAccessPropertiesOutputReference(terraformRes
 	j := jsiiProxy_WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference{}
 
 	_jsii_.Create(
-		"aws.workspacesDirectory.WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference",
+		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewWorkspacesDirectoryWorkspaceAccessPropertiesOutputReference_Override(w W
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.workspacesDirectory.WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference",
+		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

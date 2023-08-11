@@ -104,7 +104,7 @@ func NewDataGoogleComputeBackendServiceConsistentHashList(terraformResource cdkt
 	j := jsiiProxy_DataGoogleComputeBackendServiceConsistentHashList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceConsistentHashList",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceConsistentHashList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeBackendServiceConsistentHashList_Override(d DataGoogleC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceConsistentHashList",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceConsistentHashList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

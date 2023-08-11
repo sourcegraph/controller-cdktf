@@ -228,7 +228,7 @@ func NewResourceQuotaV1SpecOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_ResourceQuotaV1SpecOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.resourceQuotaV1.ResourceQuotaV1SpecOutputReference",
+		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1SpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewResourceQuotaV1SpecOutputReference_Override(r ResourceQuotaV1SpecOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.resourceQuotaV1.ResourceQuotaV1SpecOutputReference",
+		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1SpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

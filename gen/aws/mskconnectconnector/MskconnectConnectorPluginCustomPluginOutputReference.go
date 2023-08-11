@@ -202,7 +202,7 @@ func NewMskconnectConnectorPluginCustomPluginOutputReference(terraformResource c
 	j := jsiiProxy_MskconnectConnectorPluginCustomPluginOutputReference{}
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnectorPluginCustomPluginOutputReference",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorPluginCustomPluginOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewMskconnectConnectorPluginCustomPluginOutputReference_Override(m Mskconne
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnectorPluginCustomPluginOutputReference",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorPluginCustomPluginOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

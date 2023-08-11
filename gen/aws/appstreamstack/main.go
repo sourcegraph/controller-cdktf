@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.appstreamStack.AppstreamStack",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStack",
 		reflect.TypeOf((*AppstreamStack)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessEndpoints", GoGetter: "AccessEndpoints"},
@@ -96,11 +96,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appstreamStack.AppstreamStackAccessEndpoints",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpoints",
 		reflect.TypeOf((*AppstreamStackAccessEndpoints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appstreamStack.AppstreamStackAccessEndpointsList",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpointsList",
 		reflect.TypeOf((*AppstreamStackAccessEndpointsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -121,7 +121,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appstreamStack.AppstreamStackAccessEndpointsOutputReference",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpointsOutputReference",
 		reflect.TypeOf((*AppstreamStackAccessEndpointsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -158,11 +158,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appstreamStack.AppstreamStackApplicationSettings",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackApplicationSettings",
 		reflect.TypeOf((*AppstreamStackApplicationSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appstreamStack.AppstreamStackApplicationSettingsOutputReference",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackApplicationSettingsOutputReference",
 		reflect.TypeOf((*AppstreamStackApplicationSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -199,15 +199,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appstreamStack.AppstreamStackConfig",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackConfig",
 		reflect.TypeOf((*AppstreamStackConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appstreamStack.AppstreamStackStorageConnectors",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectors",
 		reflect.TypeOf((*AppstreamStackStorageConnectors)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appstreamStack.AppstreamStackStorageConnectorsList",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsList",
 		reflect.TypeOf((*AppstreamStackStorageConnectorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -228,7 +228,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appstreamStack.AppstreamStackStorageConnectorsOutputReference",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsOutputReference",
 		reflect.TypeOf((*AppstreamStackStorageConnectorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -268,11 +268,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appstreamStack.AppstreamStackUserSettings",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettings",
 		reflect.TypeOf((*AppstreamStackUserSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appstreamStack.AppstreamStackUserSettingsList",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettingsList",
 		reflect.TypeOf((*AppstreamStackUserSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -293,7 +293,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appstreamStack.AppstreamStackUserSettingsOutputReference",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettingsOutputReference",
 		reflect.TypeOf((*AppstreamStackUserSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},

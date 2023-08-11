@@ -116,7 +116,7 @@ func NewMonitoringAlertPolicyConditionsConditionAbsentAggregationsList(terraform
 	j := jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentAggregationsList{}
 
 	_jsii_.Create(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentAggregationsList",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentAggregationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMonitoringAlertPolicyConditionsConditionAbsentAggregationsList_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentAggregationsList",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentAggregationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

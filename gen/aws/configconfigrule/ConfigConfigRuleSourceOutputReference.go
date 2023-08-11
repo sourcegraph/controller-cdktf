@@ -251,7 +251,7 @@ func NewConfigConfigRuleSourceOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_ConfigConfigRuleSourceOutputReference{}
 
 	_jsii_.Create(
-		"aws.configConfigRule.ConfigConfigRuleSourceOutputReference",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewConfigConfigRuleSourceOutputReference_Override(c ConfigConfigRuleSourceO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configConfigRule.ConfigConfigRuleSourceOutputReference",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

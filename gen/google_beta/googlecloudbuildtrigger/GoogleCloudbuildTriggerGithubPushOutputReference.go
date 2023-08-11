@@ -228,7 +228,7 @@ func NewGoogleCloudbuildTriggerGithubPushOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleCloudbuildTriggerGithubPushOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerGithubPushOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerGithubPushOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleCloudbuildTriggerGithubPushOutputReference_Override(g GoogleCloudb
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerGithubPushOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerGithubPushOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -1860,7 +1860,7 @@ func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *G
 	j := jsiiProxy_GoogleContainerCluster{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerCluster",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1873,7 +1873,7 @@ func NewGoogleContainerCluster_Override(g GoogleContainerCluster, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerCluster",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -2281,7 +2281,7 @@ func GoogleContainerCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerCluster.GoogleContainerCluster",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -2300,7 +2300,7 @@ func GoogleContainerCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerCluster.GoogleContainerCluster",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -2319,7 +2319,7 @@ func GoogleContainerCluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerCluster.GoogleContainerCluster",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -2332,7 +2332,7 @@ func GoogleContainerCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleContainerCluster.GoogleContainerCluster",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster",
 		"tfResourceType",
 		&returns,
 	)

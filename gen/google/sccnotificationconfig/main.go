@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.sccNotificationConfig.SccNotificationConfig",
+		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfig",
 		reflect.TypeOf((*SccNotificationConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.sccNotificationConfig.SccNotificationConfigConfig",
+		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfigConfig",
 		reflect.TypeOf((*SccNotificationConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.sccNotificationConfig.SccNotificationConfigStreamingConfig",
+		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfigStreamingConfig",
 		reflect.TypeOf((*SccNotificationConfigStreamingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.sccNotificationConfig.SccNotificationConfigStreamingConfigOutputReference",
+		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfigStreamingConfigOutputReference",
 		reflect.TypeOf((*SccNotificationConfigStreamingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,11 +115,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.sccNotificationConfig.SccNotificationConfigTimeouts",
+		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfigTimeouts",
 		reflect.TypeOf((*SccNotificationConfigTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.sccNotificationConfig.SccNotificationConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfigTimeoutsOutputReference",
 		reflect.TypeOf((*SccNotificationConfigTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

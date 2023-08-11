@@ -388,7 +388,7 @@ func NewIdentitystoreGroup(scope constructs.Construct, id *string, config *Ident
 	j := jsiiProxy_IdentitystoreGroup{}
 
 	_jsii_.Create(
-		"aws.identitystoreGroup.IdentitystoreGroup",
+		"@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -401,7 +401,7 @@ func NewIdentitystoreGroup_Override(i IdentitystoreGroup, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.identitystoreGroup.IdentitystoreGroup",
+		"@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroup",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -545,7 +545,7 @@ func IdentitystoreGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.identitystoreGroup.IdentitystoreGroup",
+		"@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func IdentitystoreGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.identitystoreGroup.IdentitystoreGroup",
+		"@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func IdentitystoreGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.identitystoreGroup.IdentitystoreGroup",
+		"@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func IdentitystoreGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.identitystoreGroup.IdentitystoreGroup",
+		"@cdktf/provider-aws.identitystoreGroup.IdentitystoreGroup",
 		"tfResourceType",
 		&returns,
 	)

@@ -342,7 +342,7 @@ func NewLightsailLbHttpsRedirectionPolicy(scope constructs.Construct, id *string
 	j := jsiiProxy_LightsailLbHttpsRedirectionPolicy{}
 
 	_jsii_.Create(
-		"aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicy",
+		"@cdktf/provider-aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewLightsailLbHttpsRedirectionPolicy_Override(l LightsailLbHttpsRedirection
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicy",
+		"@cdktf/provider-aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicy",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -488,7 +488,7 @@ func LightsailLbHttpsRedirectionPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicy",
+		"@cdktf/provider-aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func LightsailLbHttpsRedirectionPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicy",
+		"@cdktf/provider-aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func LightsailLbHttpsRedirectionPolicy_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicy",
+		"@cdktf/provider-aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func LightsailLbHttpsRedirectionPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicy",
+		"@cdktf/provider-aws.lightsailLbHttpsRedirectionPolicy.LightsailLbHttpsRedirectionPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -359,7 +359,7 @@ func NewDataAwsQldbLedger(scope constructs.Construct, id *string, config *DataAw
 	j := jsiiProxy_DataAwsQldbLedger{}
 
 	_jsii_.Create(
-		"aws.dataAwsQldbLedger.DataAwsQldbLedger",
+		"@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -372,7 +372,7 @@ func NewDataAwsQldbLedger_Override(d DataAwsQldbLedger, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsQldbLedger.DataAwsQldbLedger",
+		"@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -483,7 +483,7 @@ func DataAwsQldbLedger_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsQldbLedger.DataAwsQldbLedger",
+		"@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -502,7 +502,7 @@ func DataAwsQldbLedger_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsQldbLedger.DataAwsQldbLedger",
+		"@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -521,7 +521,7 @@ func DataAwsQldbLedger_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsQldbLedger.DataAwsQldbLedger",
+		"@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataAwsQldbLedger_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsQldbLedger.DataAwsQldbLedger",
+		"@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger",
 		"tfResourceType",
 		&returns,
 	)

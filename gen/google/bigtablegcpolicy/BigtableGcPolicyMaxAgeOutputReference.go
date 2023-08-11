@@ -204,7 +204,7 @@ func NewBigtableGcPolicyMaxAgeOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_BigtableGcPolicyMaxAgeOutputReference{}
 
 	_jsii_.Create(
-		"google.bigtableGcPolicy.BigtableGcPolicyMaxAgeOutputReference",
+		"@cdktf/provider-google.bigtableGcPolicy.BigtableGcPolicyMaxAgeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewBigtableGcPolicyMaxAgeOutputReference_Override(b BigtableGcPolicyMaxAgeO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigtableGcPolicy.BigtableGcPolicyMaxAgeOutputReference",
+		"@cdktf/provider-google.bigtableGcPolicy.BigtableGcPolicyMaxAgeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

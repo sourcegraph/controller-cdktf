@@ -204,7 +204,7 @@ func NewDocumentAiProcessorDefaultVersionTimeoutsOutputReference(terraformResour
 	j := jsiiProxy_DocumentAiProcessorDefaultVersionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.documentAiProcessorDefaultVersion.DocumentAiProcessorDefaultVersionTimeoutsOutputReference",
+		"@cdktf/provider-google.documentAiProcessorDefaultVersion.DocumentAiProcessorDefaultVersionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDocumentAiProcessorDefaultVersionTimeoutsOutputReference_Override(d Docu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.documentAiProcessorDefaultVersion.DocumentAiProcessorDefaultVersionTimeoutsOutputReference",
+		"@cdktf/provider-google.documentAiProcessorDefaultVersion.DocumentAiProcessorDefaultVersionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

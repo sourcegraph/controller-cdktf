@@ -366,7 +366,7 @@ func NewElasticsearchDomainPolicy(scope constructs.Construct, id *string, config
 	j := jsiiProxy_ElasticsearchDomainPolicy{}
 
 	_jsii_.Create(
-		"aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy",
+		"@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewElasticsearchDomainPolicy_Override(e ElasticsearchDomainPolicy, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy",
+		"@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -512,7 +512,7 @@ func ElasticsearchDomainPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy",
+		"@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func ElasticsearchDomainPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy",
+		"@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func ElasticsearchDomainPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy",
+		"@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func ElasticsearchDomainPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy",
+		"@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy",
 		"tfResourceType",
 		&returns,
 	)

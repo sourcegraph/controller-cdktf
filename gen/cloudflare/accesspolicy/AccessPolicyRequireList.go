@@ -116,7 +116,7 @@ func NewAccessPolicyRequireList(terraformResource cdktf.IInterpolatingParent, te
 	j := jsiiProxy_AccessPolicyRequireList{}
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyRequireList",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessPolicyRequireList_Override(a AccessPolicyRequireList, terraformRes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyRequireList",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

@@ -116,7 +116,7 @@ func NewLexIntentFollowUpPromptRejectionStatementMessageList(terraformResource c
 	j := jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageList{}
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageList",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLexIntentFollowUpPromptRejectionStatementMessageList_Override(l LexInten
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageList",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

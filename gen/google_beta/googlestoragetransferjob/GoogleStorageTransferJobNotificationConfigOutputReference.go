@@ -226,7 +226,7 @@ func NewGoogleStorageTransferJobNotificationConfigOutputReference(terraformResou
 	j := jsiiProxy_GoogleStorageTransferJobNotificationConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageTransferJob.GoogleStorageTransferJobNotificationConfigOutputReference",
+		"@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobNotificationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleStorageTransferJobNotificationConfigOutputReference_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageTransferJob.GoogleStorageTransferJobNotificationConfigOutputReference",
+		"@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobNotificationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

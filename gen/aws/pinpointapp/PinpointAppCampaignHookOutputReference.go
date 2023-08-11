@@ -228,7 +228,7 @@ func NewPinpointAppCampaignHookOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_PinpointAppCampaignHookOutputReference{}
 
 	_jsii_.Create(
-		"aws.pinpointApp.PinpointAppCampaignHookOutputReference",
+		"@cdktf/provider-aws.pinpointApp.PinpointAppCampaignHookOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewPinpointAppCampaignHookOutputReference_Override(p PinpointAppCampaignHoo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.pinpointApp.PinpointAppCampaignHookOutputReference",
+		"@cdktf/provider-aws.pinpointApp.PinpointAppCampaignHookOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

@@ -484,7 +484,7 @@ func NewFolderOrganizationPolicy(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_FolderOrganizationPolicy{}
 
 	_jsii_.Create(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicy",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -497,7 +497,7 @@ func NewFolderOrganizationPolicy_Override(f FolderOrganizationPolicy, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicy",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicy",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -641,7 +641,7 @@ func FolderOrganizationPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicy",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -660,7 +660,7 @@ func FolderOrganizationPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicy",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func FolderOrganizationPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicy",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -692,7 +692,7 @@ func FolderOrganizationPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicy",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicy",
 		"tfResourceType",
 		&returns,
 	)

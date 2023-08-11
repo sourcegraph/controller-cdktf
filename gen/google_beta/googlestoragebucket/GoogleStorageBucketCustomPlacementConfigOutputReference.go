@@ -179,7 +179,7 @@ func NewGoogleStorageBucketCustomPlacementConfigOutputReference(terraformResourc
 	j := jsiiProxy_GoogleStorageBucketCustomPlacementConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucket.GoogleStorageBucketCustomPlacementConfigOutputReference",
+		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketCustomPlacementConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleStorageBucketCustomPlacementConfigOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucket.GoogleStorageBucketCustomPlacementConfigOutputReference",
+		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketCustomPlacementConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

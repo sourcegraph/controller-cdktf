@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.beyondcorpAppConnection.BeyondcorpAppConnection",
+		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection",
 		reflect.TypeOf((*BeyondcorpAppConnection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,11 +86,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.beyondcorpAppConnection.BeyondcorpAppConnectionApplicationEndpoint",
+		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionApplicationEndpoint",
 		reflect.TypeOf((*BeyondcorpAppConnectionApplicationEndpoint)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.beyondcorpAppConnection.BeyondcorpAppConnectionApplicationEndpointOutputReference",
+		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionApplicationEndpointOutputReference",
 		reflect.TypeOf((*BeyondcorpAppConnectionApplicationEndpointOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -126,15 +126,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.beyondcorpAppConnection.BeyondcorpAppConnectionConfig",
+		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionConfig",
 		reflect.TypeOf((*BeyondcorpAppConnectionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.beyondcorpAppConnection.BeyondcorpAppConnectionGateway",
+		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionGateway",
 		reflect.TypeOf((*BeyondcorpAppConnectionGateway)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.beyondcorpAppConnection.BeyondcorpAppConnectionGatewayOutputReference",
+		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionGatewayOutputReference",
 		reflect.TypeOf((*BeyondcorpAppConnectionGatewayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appGateway", GoGetter: "AppGateway"},
@@ -173,11 +173,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.beyondcorpAppConnection.BeyondcorpAppConnectionTimeouts",
+		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionTimeouts",
 		reflect.TypeOf((*BeyondcorpAppConnectionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.beyondcorpAppConnection.BeyondcorpAppConnectionTimeoutsOutputReference",
+		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionTimeoutsOutputReference",
 		reflect.TypeOf((*BeyondcorpAppConnectionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

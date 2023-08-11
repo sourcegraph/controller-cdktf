@@ -487,7 +487,7 @@ func NewDocdbClusterSnapshot(scope constructs.Construct, id *string, config *Doc
 	j := jsiiProxy_DocdbClusterSnapshot{}
 
 	_jsii_.Create(
-		"aws.docdbClusterSnapshot.DocdbClusterSnapshot",
+		"@cdktf/provider-aws.docdbClusterSnapshot.DocdbClusterSnapshot",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -500,7 +500,7 @@ func NewDocdbClusterSnapshot_Override(d DocdbClusterSnapshot, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.docdbClusterSnapshot.DocdbClusterSnapshot",
+		"@cdktf/provider-aws.docdbClusterSnapshot.DocdbClusterSnapshot",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -633,7 +633,7 @@ func DocdbClusterSnapshot_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.docdbClusterSnapshot.DocdbClusterSnapshot",
+		"@cdktf/provider-aws.docdbClusterSnapshot.DocdbClusterSnapshot",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -652,7 +652,7 @@ func DocdbClusterSnapshot_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.docdbClusterSnapshot.DocdbClusterSnapshot",
+		"@cdktf/provider-aws.docdbClusterSnapshot.DocdbClusterSnapshot",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -671,7 +671,7 @@ func DocdbClusterSnapshot_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.docdbClusterSnapshot.DocdbClusterSnapshot",
+		"@cdktf/provider-aws.docdbClusterSnapshot.DocdbClusterSnapshot",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -684,7 +684,7 @@ func DocdbClusterSnapshot_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.docdbClusterSnapshot.DocdbClusterSnapshot",
+		"@cdktf/provider-aws.docdbClusterSnapshot.DocdbClusterSnapshot",
 		"tfResourceType",
 		&returns,
 	)

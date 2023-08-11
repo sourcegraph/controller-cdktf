@@ -250,7 +250,7 @@ func NewAppsyncGraphqlApiUserPoolConfigOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_AppsyncGraphqlApiUserPoolConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.appsyncGraphqlApi.AppsyncGraphqlApiUserPoolConfigOutputReference",
+		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiUserPoolConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewAppsyncGraphqlApiUserPoolConfigOutputReference_Override(a AppsyncGraphql
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appsyncGraphqlApi.AppsyncGraphqlApiUserPoolConfigOutputReference",
+		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiUserPoolConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

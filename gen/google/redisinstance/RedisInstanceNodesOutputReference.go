@@ -178,7 +178,7 @@ func NewRedisInstanceNodesOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_RedisInstanceNodesOutputReference{}
 
 	_jsii_.Create(
-		"google.redisInstance.RedisInstanceNodesOutputReference",
+		"@cdktf/provider-google.redisInstance.RedisInstanceNodesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewRedisInstanceNodesOutputReference_Override(r RedisInstanceNodesOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.redisInstance.RedisInstanceNodesOutputReference",
+		"@cdktf/provider-google.redisInstance.RedisInstanceNodesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

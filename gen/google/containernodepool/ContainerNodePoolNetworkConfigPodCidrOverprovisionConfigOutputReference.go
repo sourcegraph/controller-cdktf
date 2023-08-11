@@ -179,7 +179,7 @@ func NewContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference(
 	j := jsiiProxy_ContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.containerNodePool.ContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference",
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerNodePool.ContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference",
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

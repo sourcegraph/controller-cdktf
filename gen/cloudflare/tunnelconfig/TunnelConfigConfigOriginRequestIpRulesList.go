@@ -116,7 +116,7 @@ func NewTunnelConfigConfigOriginRequestIpRulesList(terraformResource cdktf.IInte
 	j := jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList{}
 
 	_jsii_.Create(
-		"cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRulesList",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewTunnelConfigConfigOriginRequestIpRulesList_Override(t TunnelConfigConfig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRulesList",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		t,
 	)

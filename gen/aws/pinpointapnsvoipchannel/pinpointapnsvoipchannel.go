@@ -511,7 +511,7 @@ func NewPinpointApnsVoipChannel(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_PinpointApnsVoipChannel{}
 
 	_jsii_.Create(
-		"aws.pinpointApnsVoipChannel.PinpointApnsVoipChannel",
+		"@cdktf/provider-aws.pinpointApnsVoipChannel.PinpointApnsVoipChannel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -524,7 +524,7 @@ func NewPinpointApnsVoipChannel_Override(p PinpointApnsVoipChannel, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.pinpointApnsVoipChannel.PinpointApnsVoipChannel",
+		"@cdktf/provider-aws.pinpointApnsVoipChannel.PinpointApnsVoipChannel",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -734,7 +734,7 @@ func PinpointApnsVoipChannel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointApnsVoipChannel.PinpointApnsVoipChannel",
+		"@cdktf/provider-aws.pinpointApnsVoipChannel.PinpointApnsVoipChannel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -753,7 +753,7 @@ func PinpointApnsVoipChannel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointApnsVoipChannel.PinpointApnsVoipChannel",
+		"@cdktf/provider-aws.pinpointApnsVoipChannel.PinpointApnsVoipChannel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -772,7 +772,7 @@ func PinpointApnsVoipChannel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointApnsVoipChannel.PinpointApnsVoipChannel",
+		"@cdktf/provider-aws.pinpointApnsVoipChannel.PinpointApnsVoipChannel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -785,7 +785,7 @@ func PinpointApnsVoipChannel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.pinpointApnsVoipChannel.PinpointApnsVoipChannel",
+		"@cdktf/provider-aws.pinpointApnsVoipChannel.PinpointApnsVoipChannel",
 		"tfResourceType",
 		&returns,
 	)

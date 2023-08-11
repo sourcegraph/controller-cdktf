@@ -179,7 +179,7 @@ func NewLaunchTemplateElasticInferenceAcceleratorOutputReference(terraformResour
 	j := jsiiProxy_LaunchTemplateElasticInferenceAcceleratorOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateElasticInferenceAcceleratorOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticInferenceAcceleratorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewLaunchTemplateElasticInferenceAcceleratorOutputReference_Override(l Laun
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateElasticInferenceAcceleratorOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticInferenceAcceleratorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

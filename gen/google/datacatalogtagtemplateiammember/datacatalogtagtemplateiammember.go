@@ -448,7 +448,7 @@ func NewDataCatalogTagTemplateIamMember(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataCatalogTagTemplateIamMember{}
 
 	_jsii_.Create(
-		"google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMember",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewDataCatalogTagTemplateIamMember_Override(d DataCatalogTagTemplateIamMemb
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMember",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMember",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -627,7 +627,7 @@ func DataCatalogTagTemplateIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMember",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func DataCatalogTagTemplateIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMember",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func DataCatalogTagTemplateIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMember",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DataCatalogTagTemplateIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMember",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMember",
 		"tfResourceType",
 		&returns,
 	)

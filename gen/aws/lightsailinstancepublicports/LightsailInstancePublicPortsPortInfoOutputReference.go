@@ -297,7 +297,7 @@ func NewLightsailInstancePublicPortsPortInfoOutputReference(terraformResource cd
 	j := jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference{}
 
 	_jsii_.Create(
-		"aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoOutputReference",
+		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -309,7 +309,7 @@ func NewLightsailInstancePublicPortsPortInfoOutputReference_Override(l Lightsail
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoOutputReference",
+		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

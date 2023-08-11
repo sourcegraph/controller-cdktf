@@ -202,7 +202,7 @@ func NewAppmeshVirtualNodeSpecListenerPortMappingOutputReference(terraformResour
 	j := jsiiProxy_AppmeshVirtualNodeSpecListenerPortMappingOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerPortMappingOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerPortMappingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewAppmeshVirtualNodeSpecListenerPortMappingOutputReference_Override(a Appm
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerPortMappingOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerPortMappingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

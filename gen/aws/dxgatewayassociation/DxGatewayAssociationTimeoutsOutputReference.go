@@ -228,7 +228,7 @@ func NewDxGatewayAssociationTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DxGatewayAssociationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dxGatewayAssociation.DxGatewayAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDxGatewayAssociationTimeoutsOutputReference_Override(d DxGatewayAssociat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dxGatewayAssociation.DxGatewayAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

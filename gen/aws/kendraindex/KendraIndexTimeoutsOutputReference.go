@@ -228,7 +228,7 @@ func NewKendraIndexTimeoutsOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_KendraIndexTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.kendraIndex.KendraIndexTimeoutsOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewKendraIndexTimeoutsOutputReference_Override(k KendraIndexTimeoutsOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraIndex.KendraIndexTimeoutsOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

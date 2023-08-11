@@ -202,7 +202,7 @@ func NewComputeServiceAttachmentConsumerAcceptListsOutputReference(terraformReso
 	j := jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewComputeServiceAttachmentConsumerAcceptListsOutputReference_Override(c Co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

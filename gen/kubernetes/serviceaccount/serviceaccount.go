@@ -426,7 +426,7 @@ func NewServiceAccount(scope constructs.Construct, id *string, config *ServiceAc
 	j := jsiiProxy_ServiceAccount{}
 
 	_jsii_.Create(
-		"kubernetes.serviceAccount.ServiceAccount",
+		"@cdktf/provider-kubernetes.serviceAccount.ServiceAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -439,7 +439,7 @@ func NewServiceAccount_Override(s ServiceAccount, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.serviceAccount.ServiceAccount",
+		"@cdktf/provider-kubernetes.serviceAccount.ServiceAccount",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -561,7 +561,7 @@ func ServiceAccount_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.serviceAccount.ServiceAccount",
+		"@cdktf/provider-kubernetes.serviceAccount.ServiceAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -580,7 +580,7 @@ func ServiceAccount_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.serviceAccount.ServiceAccount",
+		"@cdktf/provider-kubernetes.serviceAccount.ServiceAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +599,7 @@ func ServiceAccount_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.serviceAccount.ServiceAccount",
+		"@cdktf/provider-kubernetes.serviceAccount.ServiceAccount",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func ServiceAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.serviceAccount.ServiceAccount",
+		"@cdktf/provider-kubernetes.serviceAccount.ServiceAccount",
 		"tfResourceType",
 		&returns,
 	)

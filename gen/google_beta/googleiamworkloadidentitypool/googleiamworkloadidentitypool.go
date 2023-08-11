@@ -461,7 +461,7 @@ func NewGoogleIamWorkloadIdentityPool(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleIamWorkloadIdentityPool{}
 
 	_jsii_.Create(
-		"google-beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPool",
+		"@cdktf/provider-google-beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -474,7 +474,7 @@ func NewGoogleIamWorkloadIdentityPool_Override(g GoogleIamWorkloadIdentityPool, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPool",
+		"@cdktf/provider-google-beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPool",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -640,7 +640,7 @@ func GoogleIamWorkloadIdentityPool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPool",
+		"@cdktf/provider-google-beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -659,7 +659,7 @@ func GoogleIamWorkloadIdentityPool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPool",
+		"@cdktf/provider-google-beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleIamWorkloadIdentityPool_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPool",
+		"@cdktf/provider-google-beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPool",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func GoogleIamWorkloadIdentityPool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPool",
+		"@cdktf/provider-google-beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPool",
 		"tfResourceType",
 		&returns,
 	)

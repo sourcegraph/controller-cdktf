@@ -400,7 +400,7 @@ func NewCodebuildSourceCredential(scope constructs.Construct, id *string, config
 	j := jsiiProxy_CodebuildSourceCredential{}
 
 	_jsii_.Create(
-		"aws.codebuildSourceCredential.CodebuildSourceCredential",
+		"@cdktf/provider-aws.codebuildSourceCredential.CodebuildSourceCredential",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewCodebuildSourceCredential_Override(c CodebuildSourceCredential, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildSourceCredential.CodebuildSourceCredential",
+		"@cdktf/provider-aws.codebuildSourceCredential.CodebuildSourceCredential",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -568,7 +568,7 @@ func CodebuildSourceCredential_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codebuildSourceCredential.CodebuildSourceCredential",
+		"@cdktf/provider-aws.codebuildSourceCredential.CodebuildSourceCredential",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -587,7 +587,7 @@ func CodebuildSourceCredential_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codebuildSourceCredential.CodebuildSourceCredential",
+		"@cdktf/provider-aws.codebuildSourceCredential.CodebuildSourceCredential",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -606,7 +606,7 @@ func CodebuildSourceCredential_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codebuildSourceCredential.CodebuildSourceCredential",
+		"@cdktf/provider-aws.codebuildSourceCredential.CodebuildSourceCredential",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func CodebuildSourceCredential_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.codebuildSourceCredential.CodebuildSourceCredential",
+		"@cdktf/provider-aws.codebuildSourceCredential.CodebuildSourceCredential",
 		"tfResourceType",
 		&returns,
 	)

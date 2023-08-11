@@ -204,7 +204,7 @@ func NewGoogleFirebaseHostingReleaseTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleFirebaseHostingReleaseTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseHostingRelease.GoogleFirebaseHostingReleaseTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaseHostingRelease.GoogleFirebaseHostingReleaseTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleFirebaseHostingReleaseTimeoutsOutputReference_Override(g GoogleFir
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseHostingRelease.GoogleFirebaseHostingReleaseTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaseHostingRelease.GoogleFirebaseHostingReleaseTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

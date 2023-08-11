@@ -179,7 +179,7 @@ func NewGuarddutyOrganizationConfigurationDatasourcesKubernetesAuditLogsOutputRe
 	j := jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesKubernetesAuditLogsOutputReference{}
 
 	_jsii_.Create(
-		"aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfigurationDatasourcesKubernetesAuditLogsOutputReference",
+		"@cdktf/provider-aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfigurationDatasourcesKubernetesAuditLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGuarddutyOrganizationConfigurationDatasourcesKubernetesAuditLogsOutputRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfigurationDatasourcesKubernetesAuditLogsOutputReference",
+		"@cdktf/provider-aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfigurationDatasourcesKubernetesAuditLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

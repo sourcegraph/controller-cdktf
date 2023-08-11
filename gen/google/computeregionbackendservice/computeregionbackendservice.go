@@ -904,7 +904,7 @@ func NewComputeRegionBackendService(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_ComputeRegionBackendService{}
 
 	_jsii_.Create(
-		"google.computeRegionBackendService.ComputeRegionBackendService",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -917,7 +917,7 @@ func NewComputeRegionBackendService_Override(c ComputeRegionBackendService, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionBackendService.ComputeRegionBackendService",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendService",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -1193,7 +1193,7 @@ func ComputeRegionBackendService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionBackendService.ComputeRegionBackendService",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1212,7 +1212,7 @@ func ComputeRegionBackendService_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionBackendService.ComputeRegionBackendService",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1231,7 +1231,7 @@ func ComputeRegionBackendService_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionBackendService.ComputeRegionBackendService",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendService",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1244,7 +1244,7 @@ func ComputeRegionBackendService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeRegionBackendService.ComputeRegionBackendService",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendService",
 		"tfResourceType",
 		&returns,
 	)

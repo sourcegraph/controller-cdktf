@@ -227,7 +227,7 @@ func NewMfaPolicyRuleAppExcludeOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_MfaPolicyRuleAppExcludeOutputReference{}
 
 	_jsii_.Create(
-		"okta.mfaPolicyRule.MfaPolicyRuleAppExcludeOutputReference",
+		"@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppExcludeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewMfaPolicyRuleAppExcludeOutputReference_Override(m MfaPolicyRuleAppExclud
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.mfaPolicyRule.MfaPolicyRuleAppExcludeOutputReference",
+		"@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppExcludeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

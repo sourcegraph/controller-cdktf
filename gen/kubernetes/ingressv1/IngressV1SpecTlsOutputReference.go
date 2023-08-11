@@ -204,7 +204,7 @@ func NewIngressV1SpecTlsOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_IngressV1SpecTlsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.ingressV1.IngressV1SpecTlsOutputReference",
+		"@cdktf/provider-kubernetes.ingressV1.IngressV1SpecTlsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewIngressV1SpecTlsOutputReference_Override(i IngressV1SpecTlsOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.ingressV1.IngressV1SpecTlsOutputReference",
+		"@cdktf/provider-kubernetes.ingressV1.IngressV1SpecTlsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

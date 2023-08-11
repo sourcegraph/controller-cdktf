@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks",
+		"@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks",
 		reflect.TypeOf((*NotificationPolicyWebhooks)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -69,7 +69,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooksConfig",
+		"@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooksConfig",
 		reflect.TypeOf((*NotificationPolicyWebhooksConfig)(nil)).Elem(),
 	)
 }

@@ -202,7 +202,7 @@ func NewGoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference(terraformR
 	j := jsiiProxy_GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference",
+		"@cdktf/provider-google-beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference_Override(g
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference",
+		"@cdktf/provider-google-beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -322,7 +322,7 @@ func NewWafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference(terrafo
 	j := jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -334,7 +334,7 @@ func NewWafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

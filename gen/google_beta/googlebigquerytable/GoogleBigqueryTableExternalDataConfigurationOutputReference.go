@@ -465,7 +465,7 @@ func NewGoogleBigqueryTableExternalDataConfigurationOutputReference(terraformRes
 	j := jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -477,7 +477,7 @@ func NewGoogleBigqueryTableExternalDataConfigurationOutputReference_Override(g G
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

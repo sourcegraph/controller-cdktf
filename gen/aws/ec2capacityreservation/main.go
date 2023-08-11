@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2CapacityReservation.Ec2CapacityReservation",
+		"@cdktf/provider-aws.ec2CapacityReservation.Ec2CapacityReservation",
 		reflect.TypeOf((*Ec2CapacityReservation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -95,7 +95,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2CapacityReservation.Ec2CapacityReservationConfig",
+		"@cdktf/provider-aws.ec2CapacityReservation.Ec2CapacityReservationConfig",
 		reflect.TypeOf((*Ec2CapacityReservationConfig)(nil)).Elem(),
 	)
 }

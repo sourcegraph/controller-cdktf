@@ -104,7 +104,7 @@ func NewDataGoogleComputeAddressesAddressesList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataGoogleComputeAddressesAddressesList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesList",
+		"@cdktf/provider-google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeAddressesAddressesList_Override(d DataGoogleComputeAddr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesList",
+		"@cdktf/provider-google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -179,7 +179,7 @@ func NewCloudfrontDistributionOriginGroupFailoverCriteriaOutputReference(terrafo
 	j := jsiiProxy_CloudfrontDistributionOriginGroupFailoverCriteriaOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionOriginGroupFailoverCriteriaOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginGroupFailoverCriteriaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewCloudfrontDistributionOriginGroupFailoverCriteriaOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionOriginGroupFailoverCriteriaOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginGroupFailoverCriteriaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

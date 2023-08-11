@@ -204,7 +204,7 @@ func NewKmsKeyRingTimeoutsOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_KmsKeyRingTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.kmsKeyRing.KmsKeyRingTimeoutsOutputReference",
+		"@cdktf/provider-google.kmsKeyRing.KmsKeyRingTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewKmsKeyRingTimeoutsOutputReference_Override(k KmsKeyRingTimeoutsOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.kmsKeyRing.KmsKeyRingTimeoutsOutputReference",
+		"@cdktf/provider-google.kmsKeyRing.KmsKeyRingTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

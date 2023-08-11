@@ -104,7 +104,7 @@ func NewGoogleCloudRunServiceStatusList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_GoogleCloudRunServiceStatusList{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceStatusList",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleCloudRunServiceStatusList_Override(g GoogleCloudRunServiceStatusLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceStatusList",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

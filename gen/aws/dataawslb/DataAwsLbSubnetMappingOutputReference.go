@@ -211,7 +211,7 @@ func NewDataAwsLbSubnetMappingOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataAwsLbSubnetMappingOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsLb.DataAwsLbSubnetMappingOutputReference",
+		"@cdktf/provider-aws.dataAwsLb.DataAwsLbSubnetMappingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataAwsLbSubnetMappingOutputReference_Override(d DataAwsLbSubnetMappingO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLb.DataAwsLbSubnetMappingOutputReference",
+		"@cdktf/provider-aws.dataAwsLb.DataAwsLbSubnetMappingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

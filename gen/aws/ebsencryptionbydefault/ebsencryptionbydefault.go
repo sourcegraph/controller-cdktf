@@ -320,7 +320,7 @@ func NewEbsEncryptionByDefault(scope constructs.Construct, id *string, config *E
 	j := jsiiProxy_EbsEncryptionByDefault{}
 
 	_jsii_.Create(
-		"aws.ebsEncryptionByDefault.EbsEncryptionByDefault",
+		"@cdktf/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefault",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -333,7 +333,7 @@ func NewEbsEncryptionByDefault_Override(e EbsEncryptionByDefault, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ebsEncryptionByDefault.EbsEncryptionByDefault",
+		"@cdktf/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefault",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -455,7 +455,7 @@ func EbsEncryptionByDefault_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ebsEncryptionByDefault.EbsEncryptionByDefault",
+		"@cdktf/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefault",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -474,7 +474,7 @@ func EbsEncryptionByDefault_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ebsEncryptionByDefault.EbsEncryptionByDefault",
+		"@cdktf/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefault",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -493,7 +493,7 @@ func EbsEncryptionByDefault_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ebsEncryptionByDefault.EbsEncryptionByDefault",
+		"@cdktf/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefault",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -506,7 +506,7 @@ func EbsEncryptionByDefault_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ebsEncryptionByDefault.EbsEncryptionByDefault",
+		"@cdktf/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefault",
 		"tfResourceType",
 		&returns,
 	)

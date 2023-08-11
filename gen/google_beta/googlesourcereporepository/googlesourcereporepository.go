@@ -413,7 +413,7 @@ func NewGoogleSourcerepoRepository(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleSourcerepoRepository{}
 
 	_jsii_.Create(
-		"google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository",
+		"@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewGoogleSourcerepoRepository_Override(g GoogleSourcerepoRepository, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository",
+		"@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -559,7 +559,7 @@ func GoogleSourcerepoRepository_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository",
+		"@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -578,7 +578,7 @@ func GoogleSourcerepoRepository_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository",
+		"@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func GoogleSourcerepoRepository_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository",
+		"@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func GoogleSourcerepoRepository_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository",
+		"@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository",
 		"tfResourceType",
 		&returns,
 	)

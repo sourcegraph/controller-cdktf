@@ -104,7 +104,7 @@ func NewDataKubernetesServiceAccountImagePullSecretList(terraformResource cdktf.
 	j := jsiiProxy_DataKubernetesServiceAccountImagePullSecretList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesServiceAccount.DataKubernetesServiceAccountImagePullSecretList",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceAccount.DataKubernetesServiceAccountImagePullSecretList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesServiceAccountImagePullSecretList_Override(d DataKubernete
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesServiceAccount.DataKubernetesServiceAccountImagePullSecretList",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceAccount.DataKubernetesServiceAccountImagePullSecretList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

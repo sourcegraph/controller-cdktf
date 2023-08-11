@@ -104,7 +104,7 @@ func NewDatastreamPrivateConnectionErrorList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_DatastreamPrivateConnectionErrorList{}
 
 	_jsii_.Create(
-		"google.datastreamPrivateConnection.DatastreamPrivateConnectionErrorList",
+		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionErrorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDatastreamPrivateConnectionErrorList_Override(d DatastreamPrivateConnect
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamPrivateConnection.DatastreamPrivateConnectionErrorList",
+		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionErrorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

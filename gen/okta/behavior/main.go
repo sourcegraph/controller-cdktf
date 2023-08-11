@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.behavior.Behavior",
+		"@cdktf/provider-okta.behavior.Behavior",
 		reflect.TypeOf((*Behavior)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.behavior.BehaviorConfig",
+		"@cdktf/provider-okta.behavior.BehaviorConfig",
 		reflect.TypeOf((*BehaviorConfig)(nil)).Elem(),
 	)
 }

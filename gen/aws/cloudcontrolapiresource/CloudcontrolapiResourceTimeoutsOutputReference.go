@@ -228,7 +228,7 @@ func NewCloudcontrolapiResourceTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_CloudcontrolapiResourceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudcontrolapiResource.CloudcontrolapiResourceTimeoutsOutputReference",
+		"@cdktf/provider-aws.cloudcontrolapiResource.CloudcontrolapiResourceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCloudcontrolapiResourceTimeoutsOutputReference_Override(c Cloudcontrolap
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudcontrolapiResource.CloudcontrolapiResourceTimeoutsOutputReference",
+		"@cdktf/provider-aws.cloudcontrolapiResource.CloudcontrolapiResourceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -438,7 +438,7 @@ func NewAppGroupAssignment(scope constructs.Construct, id *string, config *AppGr
 	j := jsiiProxy_AppGroupAssignment{}
 
 	_jsii_.Create(
-		"okta.appGroupAssignment.AppGroupAssignment",
+		"@cdktf/provider-okta.appGroupAssignment.AppGroupAssignment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -451,7 +451,7 @@ func NewAppGroupAssignment_Override(a AppGroupAssignment, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appGroupAssignment.AppGroupAssignment",
+		"@cdktf/provider-okta.appGroupAssignment.AppGroupAssignment",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -617,7 +617,7 @@ func AppGroupAssignment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appGroupAssignment.AppGroupAssignment",
+		"@cdktf/provider-okta.appGroupAssignment.AppGroupAssignment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -636,7 +636,7 @@ func AppGroupAssignment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appGroupAssignment.AppGroupAssignment",
+		"@cdktf/provider-okta.appGroupAssignment.AppGroupAssignment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func AppGroupAssignment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appGroupAssignment.AppGroupAssignment",
+		"@cdktf/provider-okta.appGroupAssignment.AppGroupAssignment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func AppGroupAssignment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.appGroupAssignment.AppGroupAssignment",
+		"@cdktf/provider-okta.appGroupAssignment.AppGroupAssignment",
 		"tfResourceType",
 		&returns,
 	)

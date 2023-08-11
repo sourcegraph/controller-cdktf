@@ -685,7 +685,7 @@ func NewComputeGlobalForwardingRule(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_ComputeGlobalForwardingRule{}
 
 	_jsii_.Create(
-		"google.computeGlobalForwardingRule.ComputeGlobalForwardingRule",
+		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -698,7 +698,7 @@ func NewComputeGlobalForwardingRule_Override(c ComputeGlobalForwardingRule, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeGlobalForwardingRule.ComputeGlobalForwardingRule",
+		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -941,7 +941,7 @@ func ComputeGlobalForwardingRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeGlobalForwardingRule.ComputeGlobalForwardingRule",
+		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -960,7 +960,7 @@ func ComputeGlobalForwardingRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeGlobalForwardingRule.ComputeGlobalForwardingRule",
+		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -979,7 +979,7 @@ func ComputeGlobalForwardingRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeGlobalForwardingRule.ComputeGlobalForwardingRule",
+		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -992,7 +992,7 @@ func ComputeGlobalForwardingRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeGlobalForwardingRule.ComputeGlobalForwardingRule",
+		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule",
 		"tfResourceType",
 		&returns,
 	)

@@ -555,7 +555,7 @@ func NewBatchComputeEnvironment(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_BatchComputeEnvironment{}
 
 	_jsii_.Create(
-		"aws.batchComputeEnvironment.BatchComputeEnvironment",
+		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -568,7 +568,7 @@ func NewBatchComputeEnvironment_Override(b BatchComputeEnvironment, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.batchComputeEnvironment.BatchComputeEnvironment",
+		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironment",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -756,7 +756,7 @@ func BatchComputeEnvironment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.batchComputeEnvironment.BatchComputeEnvironment",
+		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -775,7 +775,7 @@ func BatchComputeEnvironment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.batchComputeEnvironment.BatchComputeEnvironment",
+		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -794,7 +794,7 @@ func BatchComputeEnvironment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.batchComputeEnvironment.BatchComputeEnvironment",
+		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -807,7 +807,7 @@ func BatchComputeEnvironment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.batchComputeEnvironment.BatchComputeEnvironment",
+		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironment",
 		"tfResourceType",
 		&returns,
 	)

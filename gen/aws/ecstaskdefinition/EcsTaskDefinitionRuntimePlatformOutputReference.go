@@ -204,7 +204,7 @@ func NewEcsTaskDefinitionRuntimePlatformOutputReference(terraformResource cdktf.
 	j := jsiiProxy_EcsTaskDefinitionRuntimePlatformOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatformOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatformOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEcsTaskDefinitionRuntimePlatformOutputReference_Override(e EcsTaskDefini
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatformOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatformOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

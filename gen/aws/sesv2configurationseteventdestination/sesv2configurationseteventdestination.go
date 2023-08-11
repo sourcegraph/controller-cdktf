@@ -365,7 +365,7 @@ func NewSesv2ConfigurationSetEventDestination(scope constructs.Construct, id *st
 	j := jsiiProxy_Sesv2ConfigurationSetEventDestination{}
 
 	_jsii_.Create(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestination",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestination",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewSesv2ConfigurationSetEventDestination_Override(s Sesv2ConfigurationSetEv
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestination",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestination",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -511,7 +511,7 @@ func Sesv2ConfigurationSetEventDestination_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestination",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestination",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -530,7 +530,7 @@ func Sesv2ConfigurationSetEventDestination_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestination",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestination",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -549,7 +549,7 @@ func Sesv2ConfigurationSetEventDestination_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestination",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestination",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func Sesv2ConfigurationSetEventDestination_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestination",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestination",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewNeptuneEventSubscriptionTimeoutsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_NeptuneEventSubscriptionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.neptuneEventSubscription.NeptuneEventSubscriptionTimeoutsOutputReference",
+		"@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewNeptuneEventSubscriptionTimeoutsOutputReference_Override(n NeptuneEventS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.neptuneEventSubscription.NeptuneEventSubscriptionTimeoutsOutputReference",
+		"@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

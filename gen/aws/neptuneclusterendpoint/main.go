@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.neptuneClusterEndpoint.NeptuneClusterEndpoint",
+		"@cdktf/provider-aws.neptuneClusterEndpoint.NeptuneClusterEndpoint",
 		reflect.TypeOf((*NeptuneClusterEndpoint)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.neptuneClusterEndpoint.NeptuneClusterEndpointConfig",
+		"@cdktf/provider-aws.neptuneClusterEndpoint.NeptuneClusterEndpointConfig",
 		reflect.TypeOf((*NeptuneClusterEndpointConfig)(nil)).Elem(),
 	)
 }

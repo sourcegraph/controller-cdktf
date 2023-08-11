@@ -116,7 +116,7 @@ func NewSsmPatchBaselineApprovalRuleList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_SsmPatchBaselineApprovalRuleList{}
 
 	_jsii_.Create(
-		"aws.ssmPatchBaseline.SsmPatchBaselineApprovalRuleList",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineApprovalRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSsmPatchBaselineApprovalRuleList_Override(s SsmPatchBaselineApprovalRule
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmPatchBaseline.SsmPatchBaselineApprovalRuleList",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineApprovalRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

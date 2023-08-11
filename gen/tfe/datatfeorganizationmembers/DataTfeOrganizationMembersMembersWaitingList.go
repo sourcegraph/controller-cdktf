@@ -104,7 +104,7 @@ func NewDataTfeOrganizationMembersMembersWaitingList(terraformResource cdktf.IIn
 	j := jsiiProxy_DataTfeOrganizationMembersMembersWaitingList{}
 
 	_jsii_.Create(
-		"tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersWaitingList",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersWaitingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataTfeOrganizationMembersMembersWaitingList_Override(d DataTfeOrganizat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersWaitingList",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersWaitingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

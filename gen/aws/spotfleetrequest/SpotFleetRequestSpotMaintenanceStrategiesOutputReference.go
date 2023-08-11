@@ -180,7 +180,7 @@ func NewSpotFleetRequestSpotMaintenanceStrategiesOutputReference(terraformResour
 	j := jsiiProxy_SpotFleetRequestSpotMaintenanceStrategiesOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestSpotMaintenanceStrategiesOutputReference",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestSpotMaintenanceStrategiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewSpotFleetRequestSpotMaintenanceStrategiesOutputReference_Override(s Spot
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestSpotMaintenanceStrategiesOutputReference",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestSpotMaintenanceStrategiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

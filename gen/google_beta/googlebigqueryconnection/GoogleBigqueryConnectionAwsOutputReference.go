@@ -179,7 +179,7 @@ func NewGoogleBigqueryConnectionAwsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleBigqueryConnectionAwsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionAwsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionAwsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleBigqueryConnectionAwsOutputReference_Override(g GoogleBigqueryConn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionAwsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionAwsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

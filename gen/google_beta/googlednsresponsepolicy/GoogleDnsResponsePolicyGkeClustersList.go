@@ -116,7 +116,7 @@ func NewGoogleDnsResponsePolicyGkeClustersList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_GoogleDnsResponsePolicyGkeClustersList{}
 
 	_jsii_.Create(
-		"google-beta.googleDnsResponsePolicy.GoogleDnsResponsePolicyGkeClustersList",
+		"@cdktf/provider-google-beta.googleDnsResponsePolicy.GoogleDnsResponsePolicyGkeClustersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDnsResponsePolicyGkeClustersList_Override(g GoogleDnsResponsePolic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDnsResponsePolicy.GoogleDnsResponsePolicyGkeClustersList",
+		"@cdktf/provider-google-beta.googleDnsResponsePolicy.GoogleDnsResponsePolicyGkeClustersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

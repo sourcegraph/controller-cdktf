@@ -594,7 +594,7 @@ func NewGoogleBigqueryDatasetAccessA(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleBigqueryDatasetAccessA{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessA",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessA",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -607,7 +607,7 @@ func NewGoogleBigqueryDatasetAccessA_Override(g GoogleBigqueryDatasetAccessA, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessA",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessA",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -806,7 +806,7 @@ func GoogleBigqueryDatasetAccessA_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessA",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessA",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -825,7 +825,7 @@ func GoogleBigqueryDatasetAccessA_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessA",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessA",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -844,7 +844,7 @@ func GoogleBigqueryDatasetAccessA_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessA",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessA",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -857,7 +857,7 @@ func GoogleBigqueryDatasetAccessA_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessA",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessA",
 		"tfResourceType",
 		&returns,
 	)

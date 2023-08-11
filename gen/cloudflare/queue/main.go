@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.queue.Queue",
+		"@cdktf/provider-cloudflare.queue.Queue",
 		reflect.TypeOf((*Queue)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.queue.QueueConfig",
+		"@cdktf/provider-cloudflare.queue.QueueConfig",
 		reflect.TypeOf((*QueueConfig)(nil)).Elem(),
 	)
 }

@@ -116,7 +116,7 @@ func NewDataAwsRouteTablesFilterList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_DataAwsRouteTablesFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsRouteTables.DataAwsRouteTablesFilterList",
+		"@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTablesFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsRouteTablesFilterList_Override(d DataAwsRouteTablesFilterList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRouteTables.DataAwsRouteTablesFilterList",
+		"@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTablesFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

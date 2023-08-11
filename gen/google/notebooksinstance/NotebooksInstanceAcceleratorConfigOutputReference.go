@@ -202,7 +202,7 @@ func NewNotebooksInstanceAcceleratorConfigOutputReference(terraformResource cdkt
 	j := jsiiProxy_NotebooksInstanceAcceleratorConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.notebooksInstance.NotebooksInstanceAcceleratorConfigOutputReference",
+		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceAcceleratorConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewNotebooksInstanceAcceleratorConfigOutputReference_Override(n NotebooksIn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.notebooksInstance.NotebooksInstanceAcceleratorConfigOutputReference",
+		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceAcceleratorConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

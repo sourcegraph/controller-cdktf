@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicy",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicy",
 		reflect.TypeOf((*PodSecurityPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,15 +61,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicyConfig",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicyConfig",
 		reflect.TypeOf((*PodSecurityPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicyMetadata",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicyMetadata",
 		reflect.TypeOf((*PodSecurityPolicyMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicyMetadataOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicyMetadataOutputReference",
 		reflect.TypeOf((*PodSecurityPolicyMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -113,15 +113,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpec",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpec",
 		reflect.TypeOf((*PodSecurityPolicySpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecAllowedFlexVolumes",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecAllowedFlexVolumes",
 		reflect.TypeOf((*PodSecurityPolicySpecAllowedFlexVolumes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecAllowedFlexVolumesList",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecAllowedFlexVolumesList",
 		reflect.TypeOf((*PodSecurityPolicySpecAllowedFlexVolumesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -142,7 +142,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecAllowedFlexVolumesOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecAllowedFlexVolumesOutputReference",
 		reflect.TypeOf((*PodSecurityPolicySpecAllowedFlexVolumesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -176,11 +176,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecAllowedHostPaths",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecAllowedHostPaths",
 		reflect.TypeOf((*PodSecurityPolicySpecAllowedHostPaths)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecAllowedHostPathsList",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecAllowedHostPathsList",
 		reflect.TypeOf((*PodSecurityPolicySpecAllowedHostPathsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -201,7 +201,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecAllowedHostPathsOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecAllowedHostPathsOutputReference",
 		reflect.TypeOf((*PodSecurityPolicySpecAllowedHostPathsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -238,11 +238,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecFsGroup",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecFsGroup",
 		reflect.TypeOf((*PodSecurityPolicySpecFsGroup)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecFsGroupOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecFsGroupOutputReference",
 		reflect.TypeOf((*PodSecurityPolicySpecFsGroupOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -280,11 +280,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecFsGroupRange",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecFsGroupRange",
 		reflect.TypeOf((*PodSecurityPolicySpecFsGroupRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecFsGroupRangeList",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecFsGroupRangeList",
 		reflect.TypeOf((*PodSecurityPolicySpecFsGroupRangeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -305,7 +305,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecFsGroupRangeOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecFsGroupRangeOutputReference",
 		reflect.TypeOf((*PodSecurityPolicySpecFsGroupRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -341,11 +341,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecHostPorts",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecHostPorts",
 		reflect.TypeOf((*PodSecurityPolicySpecHostPorts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecHostPortsList",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecHostPortsList",
 		reflect.TypeOf((*PodSecurityPolicySpecHostPortsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -366,7 +366,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecHostPortsOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecHostPortsOutputReference",
 		reflect.TypeOf((*PodSecurityPolicySpecHostPortsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -402,7 +402,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecOutputReference",
 		reflect.TypeOf((*PodSecurityPolicySpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedCapabilities", GoGetter: "AllowedCapabilities"},
@@ -505,11 +505,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsGroup",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsGroup",
 		reflect.TypeOf((*PodSecurityPolicySpecRunAsGroup)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsGroupOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsGroupOutputReference",
 		reflect.TypeOf((*PodSecurityPolicySpecRunAsGroupOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -547,11 +547,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsGroupRange",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsGroupRange",
 		reflect.TypeOf((*PodSecurityPolicySpecRunAsGroupRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsGroupRangeList",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsGroupRangeList",
 		reflect.TypeOf((*PodSecurityPolicySpecRunAsGroupRangeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -572,7 +572,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsGroupRangeOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsGroupRangeOutputReference",
 		reflect.TypeOf((*PodSecurityPolicySpecRunAsGroupRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -608,11 +608,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsUser",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsUser",
 		reflect.TypeOf((*PodSecurityPolicySpecRunAsUser)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsUserOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsUserOutputReference",
 		reflect.TypeOf((*PodSecurityPolicySpecRunAsUserOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -650,11 +650,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsUserRange",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsUserRange",
 		reflect.TypeOf((*PodSecurityPolicySpecRunAsUserRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsUserRangeList",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsUserRangeList",
 		reflect.TypeOf((*PodSecurityPolicySpecRunAsUserRangeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -675,7 +675,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsUserRangeOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsUserRangeOutputReference",
 		reflect.TypeOf((*PodSecurityPolicySpecRunAsUserRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -711,11 +711,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecSeLinux",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecSeLinux",
 		reflect.TypeOf((*PodSecurityPolicySpecSeLinux)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecSeLinuxOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecSeLinuxOutputReference",
 		reflect.TypeOf((*PodSecurityPolicySpecSeLinuxOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -753,11 +753,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecSeLinuxSeLinuxOptions",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecSeLinuxSeLinuxOptions",
 		reflect.TypeOf((*PodSecurityPolicySpecSeLinuxSeLinuxOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecSeLinuxSeLinuxOptionsList",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecSeLinuxSeLinuxOptionsList",
 		reflect.TypeOf((*PodSecurityPolicySpecSeLinuxSeLinuxOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -778,7 +778,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecSeLinuxSeLinuxOptionsOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecSeLinuxSeLinuxOptionsOutputReference",
 		reflect.TypeOf((*PodSecurityPolicySpecSeLinuxSeLinuxOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -818,11 +818,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecSupplementalGroups",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecSupplementalGroups",
 		reflect.TypeOf((*PodSecurityPolicySpecSupplementalGroups)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecSupplementalGroupsOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecSupplementalGroupsOutputReference",
 		reflect.TypeOf((*PodSecurityPolicySpecSupplementalGroupsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -860,11 +860,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecSupplementalGroupsRange",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecSupplementalGroupsRange",
 		reflect.TypeOf((*PodSecurityPolicySpecSupplementalGroupsRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecSupplementalGroupsRangeList",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecSupplementalGroupsRangeList",
 		reflect.TypeOf((*PodSecurityPolicySpecSupplementalGroupsRangeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -885,7 +885,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecSupplementalGroupsRangeOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecSupplementalGroupsRangeOutputReference",
 		reflect.TypeOf((*PodSecurityPolicySpecSupplementalGroupsRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

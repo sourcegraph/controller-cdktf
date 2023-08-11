@@ -388,7 +388,7 @@ func NewRoute53RecoverycontrolconfigRoutingControl(scope constructs.Construct, i
 	j := jsiiProxy_Route53RecoverycontrolconfigRoutingControl{}
 
 	_jsii_.Create(
-		"aws.route53RecoverycontrolconfigRoutingControl.Route53RecoverycontrolconfigRoutingControl",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigRoutingControl.Route53RecoverycontrolconfigRoutingControl",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -401,7 +401,7 @@ func NewRoute53RecoverycontrolconfigRoutingControl_Override(r Route53Recoverycon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53RecoverycontrolconfigRoutingControl.Route53RecoverycontrolconfigRoutingControl",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigRoutingControl.Route53RecoverycontrolconfigRoutingControl",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -545,7 +545,7 @@ func Route53RecoverycontrolconfigRoutingControl_IsConstruct(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53RecoverycontrolconfigRoutingControl.Route53RecoverycontrolconfigRoutingControl",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigRoutingControl.Route53RecoverycontrolconfigRoutingControl",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func Route53RecoverycontrolconfigRoutingControl_IsTerraformElement(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53RecoverycontrolconfigRoutingControl.Route53RecoverycontrolconfigRoutingControl",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigRoutingControl.Route53RecoverycontrolconfigRoutingControl",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func Route53RecoverycontrolconfigRoutingControl_IsTerraformResource(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53RecoverycontrolconfigRoutingControl.Route53RecoverycontrolconfigRoutingControl",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigRoutingControl.Route53RecoverycontrolconfigRoutingControl",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func Route53RecoverycontrolconfigRoutingControl_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53RecoverycontrolconfigRoutingControl.Route53RecoverycontrolconfigRoutingControl",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigRoutingControl.Route53RecoverycontrolconfigRoutingControl",
 		"tfResourceType",
 		&returns,
 	)

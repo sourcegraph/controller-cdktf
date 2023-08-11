@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sagemakerNotebookInstance.SagemakerNotebookInstance",
+		"@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstance",
 		reflect.TypeOf((*SagemakerNotebookInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorTypes", GoGetter: "AcceleratorTypes"},
@@ -107,15 +107,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerNotebookInstance.SagemakerNotebookInstanceConfig",
+		"@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstanceConfig",
 		reflect.TypeOf((*SagemakerNotebookInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerNotebookInstance.SagemakerNotebookInstanceInstanceMetadataServiceConfiguration",
+		"@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstanceInstanceMetadataServiceConfiguration",
 		reflect.TypeOf((*SagemakerNotebookInstanceInstanceMetadataServiceConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerNotebookInstance.SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference",
+		"@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference",
 		reflect.TypeOf((*SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

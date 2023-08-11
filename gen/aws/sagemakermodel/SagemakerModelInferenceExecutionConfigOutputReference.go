@@ -179,7 +179,7 @@ func NewSagemakerModelInferenceExecutionConfigOutputReference(terraformResource 
 	j := jsiiProxy_SagemakerModelInferenceExecutionConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerModel.SagemakerModelInferenceExecutionConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerModel.SagemakerModelInferenceExecutionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewSagemakerModelInferenceExecutionConfigOutputReference_Override(s Sagemak
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerModel.SagemakerModelInferenceExecutionConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerModel.SagemakerModelInferenceExecutionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

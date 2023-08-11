@@ -116,7 +116,7 @@ func NewListItemList(terraformResource cdktf.IInterpolatingParent, terraformAttr
 	j := jsiiProxy_ListItemList{}
 
 	_jsii_.Create(
-		"cloudflare.list.ListItemList",
+		"@cdktf/provider-cloudflare.list.ListItemList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewListItemList_Override(l ListItemList, terraformResource cdktf.IInterpola
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.list.ListItemList",
+		"@cdktf/provider-cloudflare.list.ListItemList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

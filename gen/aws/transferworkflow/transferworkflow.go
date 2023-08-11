@@ -426,7 +426,7 @@ func NewTransferWorkflow(scope constructs.Construct, id *string, config *Transfe
 	j := jsiiProxy_TransferWorkflow{}
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflow",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflow",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -439,7 +439,7 @@ func NewTransferWorkflow_Override(t TransferWorkflow, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflow",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflow",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -583,7 +583,7 @@ func TransferWorkflow_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transferWorkflow.TransferWorkflow",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflow",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -602,7 +602,7 @@ func TransferWorkflow_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transferWorkflow.TransferWorkflow",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflow",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func TransferWorkflow_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transferWorkflow.TransferWorkflow",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflow",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func TransferWorkflow_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.transferWorkflow.TransferWorkflow",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflow",
 		"tfResourceType",
 		&returns,
 	)

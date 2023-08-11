@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionBackendServiceIamBinding.GoogleComputeRegionBackendServiceIamBinding",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamBinding.GoogleComputeRegionBackendServiceIamBinding",
 		reflect.TypeOf((*GoogleComputeRegionBackendServiceIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionBackendServiceIamBinding.GoogleComputeRegionBackendServiceIamBindingCondition",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamBinding.GoogleComputeRegionBackendServiceIamBindingCondition",
 		reflect.TypeOf((*GoogleComputeRegionBackendServiceIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionBackendServiceIamBinding.GoogleComputeRegionBackendServiceIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamBinding.GoogleComputeRegionBackendServiceIamBindingConditionOutputReference",
 		reflect.TypeOf((*GoogleComputeRegionBackendServiceIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionBackendServiceIamBinding.GoogleComputeRegionBackendServiceIamBindingConfig",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamBinding.GoogleComputeRegionBackendServiceIamBindingConfig",
 		reflect.TypeOf((*GoogleComputeRegionBackendServiceIamBindingConfig)(nil)).Elem(),
 	)
 }

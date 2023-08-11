@@ -226,7 +226,7 @@ func NewEvidentlyLaunchScheduledSplitsConfigStepsOutputReference(terraformResour
 	j := jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference{}
 
 	_jsii_.Create(
-		"aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsOutputReference",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewEvidentlyLaunchScheduledSplitsConfigStepsOutputReference_Override(e Evid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsOutputReference",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

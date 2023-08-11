@@ -116,7 +116,7 @@ func NewLexIntentSlotList(terraformResource cdktf.IInterpolatingParent, terrafor
 	j := jsiiProxy_LexIntentSlotList{}
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentSlotList",
+		"@cdktf/provider-aws.lexIntent.LexIntentSlotList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLexIntentSlotList_Override(l LexIntentSlotList, terraformResource cdktf.
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentSlotList",
+		"@cdktf/provider-aws.lexIntent.LexIntentSlotList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

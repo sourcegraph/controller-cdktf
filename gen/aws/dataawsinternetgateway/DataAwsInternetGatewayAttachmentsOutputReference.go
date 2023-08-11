@@ -178,7 +178,7 @@ func NewDataAwsInternetGatewayAttachmentsOutputReference(terraformResource cdktf
 	j := jsiiProxy_DataAwsInternetGatewayAttachmentsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsInternetGateway.DataAwsInternetGatewayAttachmentsOutputReference",
+		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayAttachmentsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsInternetGatewayAttachmentsOutputReference_Override(d DataAwsInter
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInternetGateway.DataAwsInternetGatewayAttachmentsOutputReference",
+		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayAttachmentsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -412,7 +412,7 @@ func NewApprunnerConnection(scope constructs.Construct, id *string, config *Appr
 	j := jsiiProxy_ApprunnerConnection{}
 
 	_jsii_.Create(
-		"aws.apprunnerConnection.ApprunnerConnection",
+		"@cdktf/provider-aws.apprunnerConnection.ApprunnerConnection",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -425,7 +425,7 @@ func NewApprunnerConnection_Override(a ApprunnerConnection, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apprunnerConnection.ApprunnerConnection",
+		"@cdktf/provider-aws.apprunnerConnection.ApprunnerConnection",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -580,7 +580,7 @@ func ApprunnerConnection_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apprunnerConnection.ApprunnerConnection",
+		"@cdktf/provider-aws.apprunnerConnection.ApprunnerConnection",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +599,7 @@ func ApprunnerConnection_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apprunnerConnection.ApprunnerConnection",
+		"@cdktf/provider-aws.apprunnerConnection.ApprunnerConnection",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -618,7 +618,7 @@ func ApprunnerConnection_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apprunnerConnection.ApprunnerConnection",
+		"@cdktf/provider-aws.apprunnerConnection.ApprunnerConnection",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func ApprunnerConnection_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apprunnerConnection.ApprunnerConnection",
+		"@cdktf/provider-aws.apprunnerConnection.ApprunnerConnection",
 		"tfResourceType",
 		&returns,
 	)

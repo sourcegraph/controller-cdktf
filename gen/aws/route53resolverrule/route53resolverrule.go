@@ -519,7 +519,7 @@ func NewRoute53ResolverRule(scope constructs.Construct, id *string, config *Rout
 	j := jsiiProxy_Route53ResolverRule{}
 
 	_jsii_.Create(
-		"aws.route53ResolverRule.Route53ResolverRule",
+		"@cdktf/provider-aws.route53ResolverRule.Route53ResolverRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -532,7 +532,7 @@ func NewRoute53ResolverRule_Override(r Route53ResolverRule, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53ResolverRule.Route53ResolverRule",
+		"@cdktf/provider-aws.route53ResolverRule.Route53ResolverRule",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -709,7 +709,7 @@ func Route53ResolverRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverRule.Route53ResolverRule",
+		"@cdktf/provider-aws.route53ResolverRule.Route53ResolverRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -728,7 +728,7 @@ func Route53ResolverRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverRule.Route53ResolverRule",
+		"@cdktf/provider-aws.route53ResolverRule.Route53ResolverRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -747,7 +747,7 @@ func Route53ResolverRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverRule.Route53ResolverRule",
+		"@cdktf/provider-aws.route53ResolverRule.Route53ResolverRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -760,7 +760,7 @@ func Route53ResolverRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53ResolverRule.Route53ResolverRule",
+		"@cdktf/provider-aws.route53ResolverRule.Route53ResolverRule",
 		"tfResourceType",
 		&returns,
 	)

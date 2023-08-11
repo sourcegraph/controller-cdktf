@@ -179,7 +179,7 @@ func NewGkeHubMembershipAuthorityOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_GkeHubMembershipAuthorityOutputReference{}
 
 	_jsii_.Create(
-		"google.gkeHubMembership.GkeHubMembershipAuthorityOutputReference",
+		"@cdktf/provider-google.gkeHubMembership.GkeHubMembershipAuthorityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGkeHubMembershipAuthorityOutputReference_Override(g GkeHubMembershipAuth
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gkeHubMembership.GkeHubMembershipAuthorityOutputReference",
+		"@cdktf/provider-google.gkeHubMembership.GkeHubMembershipAuthorityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -202,7 +202,7 @@ func NewOsConfigPatchDeploymentRolloutOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_OsConfigPatchDeploymentRolloutOutputReference{}
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRolloutOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRolloutOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewOsConfigPatchDeploymentRolloutOutputReference_Override(o OsConfigPatchDe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRolloutOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRolloutOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

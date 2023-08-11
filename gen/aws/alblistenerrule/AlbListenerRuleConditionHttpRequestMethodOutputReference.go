@@ -179,7 +179,7 @@ func NewAlbListenerRuleConditionHttpRequestMethodOutputReference(terraformResour
 	j := jsiiProxy_AlbListenerRuleConditionHttpRequestMethodOutputReference{}
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRuleConditionHttpRequestMethodOutputReference",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionHttpRequestMethodOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAlbListenerRuleConditionHttpRequestMethodOutputReference_Override(a AlbL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRuleConditionHttpRequestMethodOutputReference",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionHttpRequestMethodOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

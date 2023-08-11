@@ -202,7 +202,7 @@ func NewSecurityhubInsightFiltersTypeOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_SecurityhubInsightFiltersTypeOutputReference{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSecurityhubInsightFiltersTypeOutputReference_Override(s SecurityhubInsig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

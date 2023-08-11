@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lakeformationResource.LakeformationResource",
+		"@cdktf/provider-aws.lakeformationResource.LakeformationResource",
 		reflect.TypeOf((*LakeformationResource)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lakeformationResource.LakeformationResourceConfig",
+		"@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig",
 		reflect.TypeOf((*LakeformationResourceConfig)(nil)).Elem(),
 	)
 }

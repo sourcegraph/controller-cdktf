@@ -116,7 +116,7 @@ func NewWafGeoMatchSetGeoMatchConstraintList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_WafGeoMatchSetGeoMatchConstraintList{}
 
 	_jsii_.Create(
-		"aws.wafGeoMatchSet.WafGeoMatchSetGeoMatchConstraintList",
+		"@cdktf/provider-aws.wafGeoMatchSet.WafGeoMatchSetGeoMatchConstraintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafGeoMatchSetGeoMatchConstraintList_Override(w WafGeoMatchSetGeoMatchCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafGeoMatchSet.WafGeoMatchSetGeoMatchConstraintList",
+		"@cdktf/provider-aws.wafGeoMatchSet.WafGeoMatchSetGeoMatchConstraintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

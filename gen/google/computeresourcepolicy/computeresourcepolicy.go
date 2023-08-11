@@ -498,7 +498,7 @@ func NewComputeResourcePolicy(scope constructs.Construct, id *string, config *Co
 	j := jsiiProxy_ComputeResourcePolicy{}
 
 	_jsii_.Create(
-		"google.computeResourcePolicy.ComputeResourcePolicy",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -511,7 +511,7 @@ func NewComputeResourcePolicy_Override(c ComputeResourcePolicy, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeResourcePolicy.ComputeResourcePolicy",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -666,7 +666,7 @@ func ComputeResourcePolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeResourcePolicy.ComputeResourcePolicy",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -685,7 +685,7 @@ func ComputeResourcePolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeResourcePolicy.ComputeResourcePolicy",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -704,7 +704,7 @@ func ComputeResourcePolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeResourcePolicy.ComputeResourcePolicy",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -717,7 +717,7 @@ func ComputeResourcePolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeResourcePolicy.ComputeResourcePolicy",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicy",
 		"tfResourceType",
 		&returns,
 	)

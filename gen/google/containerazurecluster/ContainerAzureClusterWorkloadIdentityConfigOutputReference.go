@@ -189,7 +189,7 @@ func NewContainerAzureClusterWorkloadIdentityConfigOutputReference(terraformReso
 	j := jsiiProxy_ContainerAzureClusterWorkloadIdentityConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.containerAzureCluster.ContainerAzureClusterWorkloadIdentityConfigOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterWorkloadIdentityConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewContainerAzureClusterWorkloadIdentityConfigOutputReference_Override(c Co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAzureCluster.ContainerAzureClusterWorkloadIdentityConfigOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterWorkloadIdentityConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

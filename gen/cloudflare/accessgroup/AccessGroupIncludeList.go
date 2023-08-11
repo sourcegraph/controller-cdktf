@@ -116,7 +116,7 @@ func NewAccessGroupIncludeList(terraformResource cdktf.IInterpolatingParent, ter
 	j := jsiiProxy_AccessGroupIncludeList{}
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupIncludeList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessGroupIncludeList_Override(a AccessGroupIncludeList, terraformResou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupIncludeList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

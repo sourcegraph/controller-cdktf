@@ -116,7 +116,7 @@ func NewGoogleDeploymentManagerDeploymentTargetImportsList(terraformResource cdk
 	j := jsiiProxy_GoogleDeploymentManagerDeploymentTargetImportsList{}
 
 	_jsii_.Create(
-		"google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentTargetImportsList",
+		"@cdktf/provider-google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentTargetImportsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDeploymentManagerDeploymentTargetImportsList_Override(g GoogleDepl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentTargetImportsList",
+		"@cdktf/provider-google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentTargetImportsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -342,7 +342,7 @@ func NewRedshiftserverlessResourcePolicy(scope constructs.Construct, id *string,
 	j := jsiiProxy_RedshiftserverlessResourcePolicy{}
 
 	_jsii_.Create(
-		"aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicy",
+		"@cdktf/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewRedshiftserverlessResourcePolicy_Override(r RedshiftserverlessResourcePo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicy",
+		"@cdktf/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicy",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -488,7 +488,7 @@ func RedshiftserverlessResourcePolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicy",
+		"@cdktf/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func RedshiftserverlessResourcePolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicy",
+		"@cdktf/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func RedshiftserverlessResourcePolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicy",
+		"@cdktf/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func RedshiftserverlessResourcePolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicy",
+		"@cdktf/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicy",
 		"tfResourceType",
 		&returns,
 	)

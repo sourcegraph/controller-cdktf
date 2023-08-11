@@ -204,7 +204,7 @@ func NewAppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference(terrafor
 	j := jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

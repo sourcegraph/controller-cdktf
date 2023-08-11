@@ -116,7 +116,7 @@ func NewMedialiveChannelDestinationsMediaPackageSettingsList(terraformResource c
 	j := jsiiProxy_MedialiveChannelDestinationsMediaPackageSettingsList{}
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelDestinationsMediaPackageSettingsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsMediaPackageSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMedialiveChannelDestinationsMediaPackageSettingsList_Override(m Medialiv
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelDestinationsMediaPackageSettingsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsMediaPackageSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

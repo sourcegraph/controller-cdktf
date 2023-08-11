@@ -400,7 +400,7 @@ func NewGoogleHealthcareHl7V2StoreIamBinding(scope constructs.Construct, id *str
 	j := jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareHl7V2StoreIamBinding.GoogleHealthcareHl7V2StoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamBinding.GoogleHealthcareHl7V2StoreIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleHealthcareHl7V2StoreIamBinding_Override(g GoogleHealthcareHl7V2Sto
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareHl7V2StoreIamBinding.GoogleHealthcareHl7V2StoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamBinding.GoogleHealthcareHl7V2StoreIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleHealthcareHl7V2StoreIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareHl7V2StoreIamBinding.GoogleHealthcareHl7V2StoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamBinding.GoogleHealthcareHl7V2StoreIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleHealthcareHl7V2StoreIamBinding_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareHl7V2StoreIamBinding.GoogleHealthcareHl7V2StoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamBinding.GoogleHealthcareHl7V2StoreIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleHealthcareHl7V2StoreIamBinding_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareHl7V2StoreIamBinding.GoogleHealthcareHl7V2StoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamBinding.GoogleHealthcareHl7V2StoreIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleHealthcareHl7V2StoreIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleHealthcareHl7V2StoreIamBinding.GoogleHealthcareHl7V2StoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamBinding.GoogleHealthcareHl7V2StoreIamBinding",
 		"tfResourceType",
 		&returns,
 	)

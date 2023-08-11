@@ -116,7 +116,7 @@ func NewAppstreamStackStorageConnectorsList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_AppstreamStackStorageConnectorsList{}
 
 	_jsii_.Create(
-		"aws.appstreamStack.AppstreamStackStorageConnectorsList",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppstreamStackStorageConnectorsList_Override(a AppstreamStackStorageConn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appstreamStack.AppstreamStackStorageConnectorsList",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

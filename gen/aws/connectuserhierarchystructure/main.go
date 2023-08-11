@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure",
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure",
 		reflect.TypeOf((*ConnectUserHierarchyStructure)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,19 +60,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureConfig",
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureConfig",
 		reflect.TypeOf((*ConnectUserHierarchyStructureConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructure",
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructure",
 		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructure)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFive",
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFive",
 		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructureLevelFive)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFiveOutputReference",
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFiveOutputReference",
 		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructureLevelFiveOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -108,11 +108,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFour",
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFour",
 		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructureLevelFour)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference",
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference",
 		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -148,11 +148,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelOne",
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelOne",
 		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructureLevelOne)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelOneOutputReference",
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelOneOutputReference",
 		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructureLevelOneOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -188,11 +188,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelThree",
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelThree",
 		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructureLevelThree)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelThreeOutputReference",
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelThreeOutputReference",
 		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructureLevelThreeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -228,11 +228,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelTwo",
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelTwo",
 		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructureLevelTwo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference",
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference",
 		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -268,7 +268,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureOutputReference",
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureOutputReference",
 		reflect.TypeOf((*ConnectUserHierarchyStructureHierarchyStructureOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

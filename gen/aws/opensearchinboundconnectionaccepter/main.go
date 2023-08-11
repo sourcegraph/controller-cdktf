@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter",
+		"@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter",
 		reflect.TypeOf((*OpensearchInboundConnectionAccepter)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,15 +62,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterConfig",
+		"@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterConfig",
 		reflect.TypeOf((*OpensearchInboundConnectionAccepterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts",
+		"@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts",
 		reflect.TypeOf((*OpensearchInboundConnectionAccepterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeoutsOutputReference",
+		"@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeoutsOutputReference",
 		reflect.TypeOf((*OpensearchInboundConnectionAccepterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

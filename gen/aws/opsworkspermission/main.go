@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.opsworksPermission.OpsworksPermission",
+		"@cdktf/provider-aws.opsworksPermission.OpsworksPermission",
 		reflect.TypeOf((*OpsworksPermission)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksPermission.OpsworksPermissionConfig",
+		"@cdktf/provider-aws.opsworksPermission.OpsworksPermissionConfig",
 		reflect.TypeOf((*OpsworksPermissionConfig)(nil)).Elem(),
 	)
 }

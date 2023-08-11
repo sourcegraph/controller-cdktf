@@ -202,7 +202,7 @@ func NewComprehendDocumentClassifierVpcConfigOutputReference(terraformResource c
 	j := jsiiProxy_ComprehendDocumentClassifierVpcConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifierVpcConfigOutputReference",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewComprehendDocumentClassifierVpcConfigOutputReference_Override(c Comprehe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifierVpcConfigOutputReference",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -342,7 +342,7 @@ func NewStoragegatewayWorkingStorage(scope constructs.Construct, id *string, con
 	j := jsiiProxy_StoragegatewayWorkingStorage{}
 
 	_jsii_.Create(
-		"aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage",
+		"@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewStoragegatewayWorkingStorage_Override(s StoragegatewayWorkingStorage, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage",
+		"@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -488,7 +488,7 @@ func StoragegatewayWorkingStorage_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage",
+		"@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func StoragegatewayWorkingStorage_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage",
+		"@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func StoragegatewayWorkingStorage_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage",
+		"@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func StoragegatewayWorkingStorage_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage",
+		"@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage",
 		"tfResourceType",
 		&returns,
 	)

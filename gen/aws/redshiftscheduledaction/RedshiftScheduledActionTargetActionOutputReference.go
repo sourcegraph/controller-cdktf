@@ -228,7 +228,7 @@ func NewRedshiftScheduledActionTargetActionOutputReference(terraformResource cdk
 	j := jsiiProxy_RedshiftScheduledActionTargetActionOutputReference{}
 
 	_jsii_.Create(
-		"aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionOutputReference",
+		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewRedshiftScheduledActionTargetActionOutputReference_Override(r RedshiftSc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionOutputReference",
+		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

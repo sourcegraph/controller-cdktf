@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dynamodbTableReplica.DynamodbTableReplicaA",
+		"@cdktf/provider-aws.dynamodbTableReplica.DynamodbTableReplicaA",
 		reflect.TypeOf((*DynamodbTableReplicaA)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dynamodbTableReplica.DynamodbTableReplicaAConfig",
+		"@cdktf/provider-aws.dynamodbTableReplica.DynamodbTableReplicaAConfig",
 		reflect.TypeOf((*DynamodbTableReplicaAConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dynamodbTableReplica.DynamodbTableReplicaTimeouts",
+		"@cdktf/provider-aws.dynamodbTableReplica.DynamodbTableReplicaTimeouts",
 		reflect.TypeOf((*DynamodbTableReplicaTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dynamodbTableReplica.DynamodbTableReplicaTimeoutsOutputReference",
+		"@cdktf/provider-aws.dynamodbTableReplica.DynamodbTableReplicaTimeoutsOutputReference",
 		reflect.TypeOf((*DynamodbTableReplicaTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

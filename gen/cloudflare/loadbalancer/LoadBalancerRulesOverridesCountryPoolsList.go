@@ -116,7 +116,7 @@ func NewLoadBalancerRulesOverridesCountryPoolsList(terraformResource cdktf.IInte
 	j := jsiiProxy_LoadBalancerRulesOverridesCountryPoolsList{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerRulesOverridesCountryPoolsList",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesCountryPoolsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLoadBalancerRulesOverridesCountryPoolsList_Override(l LoadBalancerRulesO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerRulesOverridesCountryPoolsList",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesCountryPoolsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

@@ -340,7 +340,7 @@ func NewFsxFileCacheDataRepositoryAssociationOutputReference(terraformResource c
 	j := jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationOutputReference",
+		"@cdktf/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -352,7 +352,7 @@ func NewFsxFileCacheDataRepositoryAssociationOutputReference_Override(f FsxFileC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationOutputReference",
+		"@cdktf/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)

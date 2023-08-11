@@ -228,7 +228,7 @@ func NewGoogleWorkstationsWorkstationTimeoutsOutputReference(terraformResource c
 	j := jsiiProxy_GoogleWorkstationsWorkstationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleWorkstationsWorkstationTimeoutsOutputReference_Override(g GoogleWo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

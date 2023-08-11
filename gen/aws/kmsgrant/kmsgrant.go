@@ -507,7 +507,7 @@ func NewKmsGrant(scope constructs.Construct, id *string, config *KmsGrantConfig)
 	j := jsiiProxy_KmsGrant{}
 
 	_jsii_.Create(
-		"aws.kmsGrant.KmsGrant",
+		"@cdktf/provider-aws.kmsGrant.KmsGrant",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -520,7 +520,7 @@ func NewKmsGrant_Override(k KmsGrant, scope constructs.Construct, id *string, co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kmsGrant.KmsGrant",
+		"@cdktf/provider-aws.kmsGrant.KmsGrant",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -708,7 +708,7 @@ func KmsGrant_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kmsGrant.KmsGrant",
+		"@cdktf/provider-aws.kmsGrant.KmsGrant",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -727,7 +727,7 @@ func KmsGrant_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kmsGrant.KmsGrant",
+		"@cdktf/provider-aws.kmsGrant.KmsGrant",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -746,7 +746,7 @@ func KmsGrant_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kmsGrant.KmsGrant",
+		"@cdktf/provider-aws.kmsGrant.KmsGrant",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -759,7 +759,7 @@ func KmsGrant_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.kmsGrant.KmsGrant",
+		"@cdktf/provider-aws.kmsGrant.KmsGrant",
 		"tfResourceType",
 		&returns,
 	)

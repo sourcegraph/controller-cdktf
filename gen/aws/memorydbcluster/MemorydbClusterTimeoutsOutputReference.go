@@ -228,7 +228,7 @@ func NewMemorydbClusterTimeoutsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_MemorydbClusterTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.memorydbCluster.MemorydbClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewMemorydbClusterTimeoutsOutputReference_Override(m MemorydbClusterTimeout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.memorydbCluster.MemorydbClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

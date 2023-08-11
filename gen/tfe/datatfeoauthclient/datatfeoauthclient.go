@@ -430,7 +430,7 @@ func NewDataTfeOauthClient(scope constructs.Construct, id *string, config *DataT
 	j := jsiiProxy_DataTfeOauthClient{}
 
 	_jsii_.Create(
-		"tfe.dataTfeOauthClient.DataTfeOauthClient",
+		"@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClient",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -443,7 +443,7 @@ func NewDataTfeOauthClient_Override(d DataTfeOauthClient, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfeOauthClient.DataTfeOauthClient",
+		"@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClient",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -576,7 +576,7 @@ func DataTfeOauthClient_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeOauthClient.DataTfeOauthClient",
+		"@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClient",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func DataTfeOauthClient_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeOauthClient.DataTfeOauthClient",
+		"@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClient",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -614,7 +614,7 @@ func DataTfeOauthClient_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeOauthClient.DataTfeOauthClient",
+		"@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClient",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -627,7 +627,7 @@ func DataTfeOauthClient_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.dataTfeOauthClient.DataTfeOauthClient",
+		"@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClient",
 		"tfResourceType",
 		&returns,
 	)

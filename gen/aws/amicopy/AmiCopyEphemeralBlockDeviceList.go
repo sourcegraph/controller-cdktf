@@ -116,7 +116,7 @@ func NewAmiCopyEphemeralBlockDeviceList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_AmiCopyEphemeralBlockDeviceList{}
 
 	_jsii_.Create(
-		"aws.amiCopy.AmiCopyEphemeralBlockDeviceList",
+		"@cdktf/provider-aws.amiCopy.AmiCopyEphemeralBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAmiCopyEphemeralBlockDeviceList_Override(a AmiCopyEphemeralBlockDeviceLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.amiCopy.AmiCopyEphemeralBlockDeviceList",
+		"@cdktf/provider-aws.amiCopy.AmiCopyEphemeralBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

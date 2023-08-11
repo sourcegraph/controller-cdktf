@@ -302,7 +302,7 @@ func NewDataAwsServicequotasService(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataAwsServicequotasService{}
 
 	_jsii_.Create(
-		"aws.dataAwsServicequotasService.DataAwsServicequotasService",
+		"@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataAwsServicequotasService_Override(d DataAwsServicequotasService, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsServicequotasService.DataAwsServicequotasService",
+		"@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataAwsServicequotasService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServicequotasService.DataAwsServicequotasService",
+		"@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataAwsServicequotasService_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServicequotasService.DataAwsServicequotasService",
+		"@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataAwsServicequotasService_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServicequotasService.DataAwsServicequotasService",
+		"@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataAwsServicequotasService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsServicequotasService.DataAwsServicequotasService",
+		"@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService",
 		"tfResourceType",
 		&returns,
 	)

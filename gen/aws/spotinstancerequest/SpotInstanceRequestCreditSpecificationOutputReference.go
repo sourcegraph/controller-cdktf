@@ -180,7 +180,7 @@ func NewSpotInstanceRequestCreditSpecificationOutputReference(terraformResource 
 	j := jsiiProxy_SpotInstanceRequestCreditSpecificationOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestCreditSpecificationOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestCreditSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewSpotInstanceRequestCreditSpecificationOutputReference_Override(s SpotIns
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestCreditSpecificationOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestCreditSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

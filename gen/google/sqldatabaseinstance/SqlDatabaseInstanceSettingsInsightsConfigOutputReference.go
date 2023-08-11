@@ -276,7 +276,7 @@ func NewSqlDatabaseInstanceSettingsInsightsConfigOutputReference(terraformResour
 	j := jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference",
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewSqlDatabaseInstanceSettingsInsightsConfigOutputReference_Override(s SqlD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference",
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

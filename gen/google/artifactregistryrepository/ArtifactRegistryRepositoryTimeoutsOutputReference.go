@@ -228,7 +228,7 @@ func NewArtifactRegistryRepositoryTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_ArtifactRegistryRepositoryTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryTimeoutsOutputReference",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewArtifactRegistryRepositoryTimeoutsOutputReference_Override(a ArtifactReg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryTimeoutsOutputReference",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -437,7 +437,7 @@ func NewEventHook(scope constructs.Construct, id *string, config *EventHookConfi
 	j := jsiiProxy_EventHook{}
 
 	_jsii_.Create(
-		"okta.eventHook.EventHook",
+		"@cdktf/provider-okta.eventHook.EventHook",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -450,7 +450,7 @@ func NewEventHook_Override(e EventHook, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.eventHook.EventHook",
+		"@cdktf/provider-okta.eventHook.EventHook",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -616,7 +616,7 @@ func EventHook_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.eventHook.EventHook",
+		"@cdktf/provider-okta.eventHook.EventHook",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -635,7 +635,7 @@ func EventHook_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.eventHook.EventHook",
+		"@cdktf/provider-okta.eventHook.EventHook",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func EventHook_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.eventHook.EventHook",
+		"@cdktf/provider-okta.eventHook.EventHook",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func EventHook_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.eventHook.EventHook",
+		"@cdktf/provider-okta.eventHook.EventHook",
 		"tfResourceType",
 		&returns,
 	)

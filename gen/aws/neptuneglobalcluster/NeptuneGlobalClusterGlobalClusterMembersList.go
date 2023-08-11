@@ -104,7 +104,7 @@ func NewNeptuneGlobalClusterGlobalClusterMembersList(terraformResource cdktf.IIn
 	j := jsiiProxy_NeptuneGlobalClusterGlobalClusterMembersList{}
 
 	_jsii_.Create(
-		"aws.neptuneGlobalCluster.NeptuneGlobalClusterGlobalClusterMembersList",
+		"@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalClusterGlobalClusterMembersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewNeptuneGlobalClusterGlobalClusterMembersList_Override(n NeptuneGlobalClu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.neptuneGlobalCluster.NeptuneGlobalClusterGlobalClusterMembersList",
+		"@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalClusterGlobalClusterMembersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

@@ -446,7 +446,7 @@ func NewDataKubernetesStorageClassV1(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataKubernetesStorageClassV1{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesStorageClassV1.DataKubernetesStorageClassV1",
+		"@cdktf/provider-kubernetes.dataKubernetesStorageClassV1.DataKubernetesStorageClassV1",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -459,7 +459,7 @@ func NewDataKubernetesStorageClassV1_Override(d DataKubernetesStorageClassV1, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesStorageClassV1.DataKubernetesStorageClassV1",
+		"@cdktf/provider-kubernetes.dataKubernetesStorageClassV1.DataKubernetesStorageClassV1",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -603,7 +603,7 @@ func DataKubernetesStorageClassV1_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesStorageClassV1.DataKubernetesStorageClassV1",
+		"@cdktf/provider-kubernetes.dataKubernetesStorageClassV1.DataKubernetesStorageClassV1",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func DataKubernetesStorageClassV1_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesStorageClassV1.DataKubernetesStorageClassV1",
+		"@cdktf/provider-kubernetes.dataKubernetesStorageClassV1.DataKubernetesStorageClassV1",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -641,7 +641,7 @@ func DataKubernetesStorageClassV1_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesStorageClassV1.DataKubernetesStorageClassV1",
+		"@cdktf/provider-kubernetes.dataKubernetesStorageClassV1.DataKubernetesStorageClassV1",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func DataKubernetesStorageClassV1_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.dataKubernetesStorageClassV1.DataKubernetesStorageClassV1",
+		"@cdktf/provider-kubernetes.dataKubernetesStorageClassV1.DataKubernetesStorageClassV1",
 		"tfResourceType",
 		&returns,
 	)

@@ -239,7 +239,7 @@ func NewDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference(terra
 	j := jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -251,7 +251,7 @@ func NewDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -414,7 +414,7 @@ func NewAppEngineServiceSplitTraffic(scope constructs.Construct, id *string, con
 	j := jsiiProxy_AppEngineServiceSplitTraffic{}
 
 	_jsii_.Create(
-		"google.appEngineServiceSplitTraffic.AppEngineServiceSplitTraffic",
+		"@cdktf/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTraffic",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewAppEngineServiceSplitTraffic_Override(a AppEngineServiceSplitTraffic, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineServiceSplitTraffic.AppEngineServiceSplitTraffic",
+		"@cdktf/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTraffic",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -571,7 +571,7 @@ func AppEngineServiceSplitTraffic_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineServiceSplitTraffic.AppEngineServiceSplitTraffic",
+		"@cdktf/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTraffic",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -590,7 +590,7 @@ func AppEngineServiceSplitTraffic_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineServiceSplitTraffic.AppEngineServiceSplitTraffic",
+		"@cdktf/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTraffic",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func AppEngineServiceSplitTraffic_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineServiceSplitTraffic.AppEngineServiceSplitTraffic",
+		"@cdktf/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTraffic",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func AppEngineServiceSplitTraffic_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.appEngineServiceSplitTraffic.AppEngineServiceSplitTraffic",
+		"@cdktf/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTraffic",
 		"tfResourceType",
 		&returns,
 	)

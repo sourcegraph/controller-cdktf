@@ -116,7 +116,7 @@ func NewChimeVoiceConnectorOriginationRouteList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_ChimeVoiceConnectorOriginationRouteList{}
 
 	_jsii_.Create(
-		"aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationRouteList",
+		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationRouteList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewChimeVoiceConnectorOriginationRouteList_Override(c ChimeVoiceConnectorOr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationRouteList",
+		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationRouteList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKey",
+		"@cdktf/provider-google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKey",
 		reflect.TypeOf((*ComputeBackendBucketSignedUrlKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,15 +68,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKeyConfig",
+		"@cdktf/provider-google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKeyConfig",
 		reflect.TypeOf((*ComputeBackendBucketSignedUrlKeyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKeyTimeouts",
+		"@cdktf/provider-google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKeyTimeouts",
 		reflect.TypeOf((*ComputeBackendBucketSignedUrlKeyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKeyTimeoutsOutputReference",
+		"@cdktf/provider-google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKeyTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeBackendBucketSignedUrlKeyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

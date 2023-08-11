@@ -116,7 +116,7 @@ func NewWafSqlInjectionMatchSetSqlInjectionMatchTuplesList(terraformResource cdk
 	j := jsiiProxy_WafSqlInjectionMatchSetSqlInjectionMatchTuplesList{}
 
 	_jsii_.Create(
-		"aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesList",
+		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafSqlInjectionMatchSetSqlInjectionMatchTuplesList_Override(w WafSqlInje
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesList",
+		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

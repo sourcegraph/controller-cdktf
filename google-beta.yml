@@ -1,0 +1,14 @@
+name: google-beta
+
+provider:
+  source: registry.terraform.io/hashicorp/google-beta
+  version: 4.69.1
+
+target:
+  language: go
+  moduleName: github.com/sourcegraph/controller-cdktf/gen
+  # we want to retain the prev pkg name
+  # to minimize the diff for this migration
+  packageName: google_beta
+
+output: gen

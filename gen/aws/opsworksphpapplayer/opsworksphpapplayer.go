@@ -882,7 +882,7 @@ func NewOpsworksPhpAppLayer(scope constructs.Construct, id *string, config *Opsw
 	j := jsiiProxy_OpsworksPhpAppLayer{}
 
 	_jsii_.Create(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayer",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -895,7 +895,7 @@ func NewOpsworksPhpAppLayer_Override(o OpsworksPhpAppLayer, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayer",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -1237,7 +1237,7 @@ func OpsworksPhpAppLayer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayer",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1256,7 +1256,7 @@ func OpsworksPhpAppLayer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayer",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1275,7 +1275,7 @@ func OpsworksPhpAppLayer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayer",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1288,7 +1288,7 @@ func OpsworksPhpAppLayer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayer",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer",
 		"tfResourceType",
 		&returns,
 	)

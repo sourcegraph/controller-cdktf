@@ -252,7 +252,7 @@ func NewEbsSnapshotImportClientDataOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_EbsSnapshotImportClientDataOutputReference{}
 
 	_jsii_.Create(
-		"aws.ebsSnapshotImport.EbsSnapshotImportClientDataOutputReference",
+		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportClientDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewEbsSnapshotImportClientDataOutputReference_Override(e EbsSnapshotImportC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ebsSnapshotImport.EbsSnapshotImportClientDataOutputReference",
+		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportClientDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

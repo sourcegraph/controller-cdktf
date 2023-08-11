@@ -519,7 +519,7 @@ func NewComputeRegionTargetTcpProxy(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_ComputeRegionTargetTcpProxy{}
 
 	_jsii_.Create(
-		"google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy",
+		"@cdktf/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -532,7 +532,7 @@ func NewComputeRegionTargetTcpProxy_Override(c ComputeRegionTargetTcpProxy, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy",
+		"@cdktf/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -720,7 +720,7 @@ func ComputeRegionTargetTcpProxy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy",
+		"@cdktf/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -739,7 +739,7 @@ func ComputeRegionTargetTcpProxy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy",
+		"@cdktf/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -758,7 +758,7 @@ func ComputeRegionTargetTcpProxy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy",
+		"@cdktf/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -771,7 +771,7 @@ func ComputeRegionTargetTcpProxy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy",
+		"@cdktf/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy",
 		"tfResourceType",
 		&returns,
 	)

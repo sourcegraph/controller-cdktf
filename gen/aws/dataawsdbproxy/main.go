@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsDbProxy.DataAwsDbProxy",
+		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxy",
 		reflect.TypeOf((*DataAwsDbProxy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,11 +66,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsDbProxy.DataAwsDbProxyAuth",
+		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyAuth",
 		reflect.TypeOf((*DataAwsDbProxyAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsDbProxy.DataAwsDbProxyAuthList",
+		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyAuthList",
 		reflect.TypeOf((*DataAwsDbProxyAuthList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -90,7 +90,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsDbProxy.DataAwsDbProxyAuthOutputReference",
+		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyAuthOutputReference",
 		reflect.TypeOf((*DataAwsDbProxyAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authScheme", GoGetter: "AuthScheme"},
@@ -127,7 +127,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsDbProxy.DataAwsDbProxyConfig",
+		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyConfig",
 		reflect.TypeOf((*DataAwsDbProxyConfig)(nil)).Elem(),
 	)
 }

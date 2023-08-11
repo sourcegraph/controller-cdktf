@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersProcessPidList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_SecurityhubInsightFiltersProcessPidList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersProcessPidList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersProcessPidList_Override(s SecurityhubInsightFil
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersProcessPidList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

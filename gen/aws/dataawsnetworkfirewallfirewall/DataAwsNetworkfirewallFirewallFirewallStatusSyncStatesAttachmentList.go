@@ -104,7 +104,7 @@ func NewDataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentList(ter
 	j := jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentList{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentList",
+		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentList_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentList",
+		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -302,7 +302,7 @@ func NewDataCloudflareAccountRoles(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataCloudflareAccountRoles{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles",
+		"@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataCloudflareAccountRoles_Override(d DataCloudflareAccountRoles, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles",
+		"@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataCloudflareAccountRoles_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles",
+		"@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataCloudflareAccountRoles_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles",
+		"@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataCloudflareAccountRoles_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles",
+		"@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataCloudflareAccountRoles_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles",
+		"@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles",
 		"tfResourceType",
 		&returns,
 	)

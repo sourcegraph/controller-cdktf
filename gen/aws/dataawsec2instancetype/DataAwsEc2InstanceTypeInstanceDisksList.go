@@ -104,7 +104,7 @@ func NewDataAwsEc2InstanceTypeInstanceDisksList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataAwsEc2InstanceTypeInstanceDisksList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInstanceDisksList",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInstanceDisksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEc2InstanceTypeInstanceDisksList_Override(d DataAwsEc2InstanceTyp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInstanceDisksList",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInstanceDisksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

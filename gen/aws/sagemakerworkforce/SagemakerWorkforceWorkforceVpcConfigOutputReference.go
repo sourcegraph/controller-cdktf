@@ -239,7 +239,7 @@ func NewSagemakerWorkforceWorkforceVpcConfigOutputReference(terraformResource cd
 	j := jsiiProxy_SagemakerWorkforceWorkforceVpcConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -251,7 +251,7 @@ func NewSagemakerWorkforceWorkforceVpcConfigOutputReference_Override(s Sagemaker
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

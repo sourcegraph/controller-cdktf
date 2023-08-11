@@ -621,7 +621,7 @@ func NewMskconnectConnector(scope constructs.Construct, id *string, config *Mskc
 	j := jsiiProxy_MskconnectConnector{}
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnector",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnector",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -634,7 +634,7 @@ func NewMskconnectConnector_Override(m MskconnectConnector, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnector",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnector",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -800,7 +800,7 @@ func MskconnectConnector_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mskconnectConnector.MskconnectConnector",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnector",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -819,7 +819,7 @@ func MskconnectConnector_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mskconnectConnector.MskconnectConnector",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnector",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -838,7 +838,7 @@ func MskconnectConnector_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mskconnectConnector.MskconnectConnector",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnector",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -851,7 +851,7 @@ func MskconnectConnector_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.mskconnectConnector.MskconnectConnector",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnector",
 		"tfResourceType",
 		&returns,
 	)

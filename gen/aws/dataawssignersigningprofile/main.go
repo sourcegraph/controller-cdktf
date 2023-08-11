@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfile",
+		"@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfile",
 		reflect.TypeOf((*DataAwsSignerSigningProfile)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,15 +66,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileConfig",
+		"@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileConfig",
 		reflect.TypeOf((*DataAwsSignerSigningProfileConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileRevocationRecord",
+		"@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileRevocationRecord",
 		reflect.TypeOf((*DataAwsSignerSigningProfileRevocationRecord)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileRevocationRecordList",
+		"@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileRevocationRecordList",
 		reflect.TypeOf((*DataAwsSignerSigningProfileRevocationRecordList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -94,7 +94,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileRevocationRecordOutputReference",
+		"@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileRevocationRecordOutputReference",
 		reflect.TypeOf((*DataAwsSignerSigningProfileRevocationRecordOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -129,11 +129,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileSignatureValidityPeriod",
+		"@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileSignatureValidityPeriod",
 		reflect.TypeOf((*DataAwsSignerSigningProfileSignatureValidityPeriod)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileSignatureValidityPeriodList",
+		"@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileSignatureValidityPeriodList",
 		reflect.TypeOf((*DataAwsSignerSigningProfileSignatureValidityPeriodList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -153,7 +153,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileSignatureValidityPeriodOutputReference",
+		"@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileSignatureValidityPeriodOutputReference",
 		reflect.TypeOf((*DataAwsSignerSigningProfileSignatureValidityPeriodOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

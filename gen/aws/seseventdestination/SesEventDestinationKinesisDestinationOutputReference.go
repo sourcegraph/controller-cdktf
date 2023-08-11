@@ -202,7 +202,7 @@ func NewSesEventDestinationKinesisDestinationOutputReference(terraformResource c
 	j := jsiiProxy_SesEventDestinationKinesisDestinationOutputReference{}
 
 	_jsii_.Create(
-		"aws.sesEventDestination.SesEventDestinationKinesisDestinationOutputReference",
+		"@cdktf/provider-aws.sesEventDestination.SesEventDestinationKinesisDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSesEventDestinationKinesisDestinationOutputReference_Override(s SesEvent
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesEventDestination.SesEventDestinationKinesisDestinationOutputReference",
+		"@cdktf/provider-aws.sesEventDestination.SesEventDestinationKinesisDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

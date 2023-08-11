@@ -342,7 +342,7 @@ func NewAppstreamFleetStackAssociation(scope constructs.Construct, id *string, c
 	j := jsiiProxy_AppstreamFleetStackAssociation{}
 
 	_jsii_.Create(
-		"aws.appstreamFleetStackAssociation.AppstreamFleetStackAssociation",
+		"@cdktf/provider-aws.appstreamFleetStackAssociation.AppstreamFleetStackAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewAppstreamFleetStackAssociation_Override(a AppstreamFleetStackAssociation
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appstreamFleetStackAssociation.AppstreamFleetStackAssociation",
+		"@cdktf/provider-aws.appstreamFleetStackAssociation.AppstreamFleetStackAssociation",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -488,7 +488,7 @@ func AppstreamFleetStackAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appstreamFleetStackAssociation.AppstreamFleetStackAssociation",
+		"@cdktf/provider-aws.appstreamFleetStackAssociation.AppstreamFleetStackAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func AppstreamFleetStackAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appstreamFleetStackAssociation.AppstreamFleetStackAssociation",
+		"@cdktf/provider-aws.appstreamFleetStackAssociation.AppstreamFleetStackAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func AppstreamFleetStackAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appstreamFleetStackAssociation.AppstreamFleetStackAssociation",
+		"@cdktf/provider-aws.appstreamFleetStackAssociation.AppstreamFleetStackAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func AppstreamFleetStackAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appstreamFleetStackAssociation.AppstreamFleetStackAssociation",
+		"@cdktf/provider-aws.appstreamFleetStackAssociation.AppstreamFleetStackAssociation",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewDlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList(terraformResour
 	j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList{}
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList_Override(d DlmL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

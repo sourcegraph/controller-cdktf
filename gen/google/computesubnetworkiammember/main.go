@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeSubnetworkIamMember.ComputeSubnetworkIamMember",
+		"@cdktf/provider-google.computeSubnetworkIamMember.ComputeSubnetworkIamMember",
 		reflect.TypeOf((*ComputeSubnetworkIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSubnetworkIamMember.ComputeSubnetworkIamMemberCondition",
+		"@cdktf/provider-google.computeSubnetworkIamMember.ComputeSubnetworkIamMemberCondition",
 		reflect.TypeOf((*ComputeSubnetworkIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeSubnetworkIamMember.ComputeSubnetworkIamMemberConditionOutputReference",
+		"@cdktf/provider-google.computeSubnetworkIamMember.ComputeSubnetworkIamMemberConditionOutputReference",
 		reflect.TypeOf((*ComputeSubnetworkIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSubnetworkIamMember.ComputeSubnetworkIamMemberConfig",
+		"@cdktf/provider-google.computeSubnetworkIamMember.ComputeSubnetworkIamMemberConfig",
 		reflect.TypeOf((*ComputeSubnetworkIamMemberConfig)(nil)).Elem(),
 	)
 }

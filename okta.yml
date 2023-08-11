@@ -1,0 +1,11 @@
+name: okta
+
+provider:
+  source: registry.terraform.io/okta/okta
+  version: 3.41.0
+
+target:
+  language: go
+  moduleName: github.com/sourcegraph/controller-cdktf/gen
+
+output: gen

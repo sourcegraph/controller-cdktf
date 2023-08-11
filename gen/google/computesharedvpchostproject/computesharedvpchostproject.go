@@ -343,7 +343,7 @@ func NewComputeSharedVpcHostProject(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_ComputeSharedVpcHostProject{}
 
 	_jsii_.Create(
-		"google.computeSharedVpcHostProject.ComputeSharedVpcHostProject",
+		"@cdktf/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProject",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewComputeSharedVpcHostProject_Override(c ComputeSharedVpcHostProject, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSharedVpcHostProject.ComputeSharedVpcHostProject",
+		"@cdktf/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProject",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -478,7 +478,7 @@ func ComputeSharedVpcHostProject_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSharedVpcHostProject.ComputeSharedVpcHostProject",
+		"@cdktf/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProject",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -497,7 +497,7 @@ func ComputeSharedVpcHostProject_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSharedVpcHostProject.ComputeSharedVpcHostProject",
+		"@cdktf/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProject",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func ComputeSharedVpcHostProject_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSharedVpcHostProject.ComputeSharedVpcHostProject",
+		"@cdktf/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProject",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func ComputeSharedVpcHostProject_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeSharedVpcHostProject.ComputeSharedVpcHostProject",
+		"@cdktf/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProject",
 		"tfResourceType",
 		&returns,
 	)

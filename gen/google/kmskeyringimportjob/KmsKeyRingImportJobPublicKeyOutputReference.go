@@ -167,7 +167,7 @@ func NewKmsKeyRingImportJobPublicKeyOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_KmsKeyRingImportJobPublicKeyOutputReference{}
 
 	_jsii_.Create(
-		"google.kmsKeyRingImportJob.KmsKeyRingImportJobPublicKeyOutputReference",
+		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJobPublicKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewKmsKeyRingImportJobPublicKeyOutputReference_Override(k KmsKeyRingImportJ
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.kmsKeyRingImportJob.KmsKeyRingImportJobPublicKeyOutputReference",
+		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJobPublicKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		k,
 	)

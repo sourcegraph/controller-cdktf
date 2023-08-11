@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ssmMaintenanceWindow.SsmMaintenanceWindow",
+		"@cdktf/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindow",
 		reflect.TypeOf((*SsmMaintenanceWindow)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig",
+		"@cdktf/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig",
 		reflect.TypeOf((*SsmMaintenanceWindowConfig)(nil)).Elem(),
 	)
 }

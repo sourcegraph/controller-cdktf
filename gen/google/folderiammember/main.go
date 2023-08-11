@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.folderIamMember.FolderIamMember",
+		"@cdktf/provider-google.folderIamMember.FolderIamMember",
 		reflect.TypeOf((*FolderIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,11 +66,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.folderIamMember.FolderIamMemberCondition",
+		"@cdktf/provider-google.folderIamMember.FolderIamMemberCondition",
 		reflect.TypeOf((*FolderIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.folderIamMember.FolderIamMemberConditionOutputReference",
+		"@cdktf/provider-google.folderIamMember.FolderIamMemberConditionOutputReference",
 		reflect.TypeOf((*FolderIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.folderIamMember.FolderIamMemberConfig",
+		"@cdktf/provider-google.folderIamMember.FolderIamMemberConfig",
 		reflect.TypeOf((*FolderIamMemberConfig)(nil)).Elem(),
 	)
 }

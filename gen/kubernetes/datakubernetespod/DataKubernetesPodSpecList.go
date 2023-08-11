@@ -104,7 +104,7 @@ func NewDataKubernetesPodSpecList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_DataKubernetesPodSpecList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodSpecList_Override(d DataKubernetesPodSpecList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

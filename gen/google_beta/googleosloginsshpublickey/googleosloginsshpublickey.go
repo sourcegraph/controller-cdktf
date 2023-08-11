@@ -425,7 +425,7 @@ func NewGoogleOsLoginSshPublicKey(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleOsLoginSshPublicKey{}
 
 	_jsii_.Create(
-		"google-beta.googleOsLoginSshPublicKey.GoogleOsLoginSshPublicKey",
+		"@cdktf/provider-google-beta.googleOsLoginSshPublicKey.GoogleOsLoginSshPublicKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -438,7 +438,7 @@ func NewGoogleOsLoginSshPublicKey_Override(g GoogleOsLoginSshPublicKey, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsLoginSshPublicKey.GoogleOsLoginSshPublicKey",
+		"@cdktf/provider-google-beta.googleOsLoginSshPublicKey.GoogleOsLoginSshPublicKey",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -593,7 +593,7 @@ func GoogleOsLoginSshPublicKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOsLoginSshPublicKey.GoogleOsLoginSshPublicKey",
+		"@cdktf/provider-google-beta.googleOsLoginSshPublicKey.GoogleOsLoginSshPublicKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func GoogleOsLoginSshPublicKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOsLoginSshPublicKey.GoogleOsLoginSshPublicKey",
+		"@cdktf/provider-google-beta.googleOsLoginSshPublicKey.GoogleOsLoginSshPublicKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func GoogleOsLoginSshPublicKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOsLoginSshPublicKey.GoogleOsLoginSshPublicKey",
+		"@cdktf/provider-google-beta.googleOsLoginSshPublicKey.GoogleOsLoginSshPublicKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func GoogleOsLoginSshPublicKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleOsLoginSshPublicKey.GoogleOsLoginSshPublicKey",
+		"@cdktf/provider-google-beta.googleOsLoginSshPublicKey.GoogleOsLoginSshPublicKey",
 		"tfResourceType",
 		&returns,
 	)

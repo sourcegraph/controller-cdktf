@@ -228,7 +228,7 @@ func NewComputeNodeGroupAutoscalingPolicyOutputReference(terraformResource cdktf
 	j := jsiiProxy_ComputeNodeGroupAutoscalingPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeNodeGroup.ComputeNodeGroupAutoscalingPolicyOutputReference",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroupAutoscalingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeNodeGroupAutoscalingPolicyOutputReference_Override(c ComputeNodeG
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeNodeGroup.ComputeNodeGroupAutoscalingPolicyOutputReference",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroupAutoscalingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

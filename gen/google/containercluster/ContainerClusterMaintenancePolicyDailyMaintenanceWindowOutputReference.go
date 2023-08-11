@@ -190,7 +190,7 @@ func NewContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference(t
 	j := jsiiProxy_ContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -202,7 +202,7 @@ func NewContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -202,7 +202,7 @@ func NewGoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference(terraf
 	j := jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

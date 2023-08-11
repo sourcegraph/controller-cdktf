@@ -116,7 +116,7 @@ func NewWafRateBasedRulePredicatesList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_WafRateBasedRulePredicatesList{}
 
 	_jsii_.Create(
-		"aws.wafRateBasedRule.WafRateBasedRulePredicatesList",
+		"@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRulePredicatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafRateBasedRulePredicatesList_Override(w WafRateBasedRulePredicatesList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafRateBasedRule.WafRateBasedRulePredicatesList",
+		"@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRulePredicatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

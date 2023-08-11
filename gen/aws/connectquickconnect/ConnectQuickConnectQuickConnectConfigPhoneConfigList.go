@@ -116,7 +116,7 @@ func NewConnectQuickConnectQuickConnectConfigPhoneConfigList(terraformResource c
 	j := jsiiProxy_ConnectQuickConnectQuickConnectConfigPhoneConfigList{}
 
 	_jsii_.Create(
-		"aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigPhoneConfigList",
+		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigPhoneConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewConnectQuickConnectQuickConnectConfigPhoneConfigList_Override(c ConnectQ
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigPhoneConfigList",
+		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigPhoneConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

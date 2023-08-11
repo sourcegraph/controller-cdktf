@@ -179,7 +179,7 @@ func NewConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputRefe
 	j := jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

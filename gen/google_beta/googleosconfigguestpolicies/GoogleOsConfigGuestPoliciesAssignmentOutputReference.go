@@ -276,7 +276,7 @@ func NewGoogleOsConfigGuestPoliciesAssignmentOutputReference(terraformResource c
 	j := jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignmentOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewGoogleOsConfigGuestPoliciesAssignmentOutputReference_Override(g GoogleOs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignmentOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

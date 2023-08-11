@@ -771,7 +771,7 @@ func NewOpensearchDomain(scope constructs.Construct, id *string, config *Opensea
 	j := jsiiProxy_OpensearchDomain{}
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomain",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomain",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -784,7 +784,7 @@ func NewOpensearchDomain_Override(o OpensearchDomain, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomain",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomain",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -961,7 +961,7 @@ func OpensearchDomain_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opensearchDomain.OpensearchDomain",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomain",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -980,7 +980,7 @@ func OpensearchDomain_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opensearchDomain.OpensearchDomain",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomain",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -999,7 +999,7 @@ func OpensearchDomain_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opensearchDomain.OpensearchDomain",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomain",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1012,7 +1012,7 @@ func OpensearchDomain_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.opensearchDomain.OpensearchDomain",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomain",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewIotTopicRuleTimestreamDimensionList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_IotTopicRuleTimestreamDimensionList{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleTimestreamDimensionList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewIotTopicRuleTimestreamDimensionList_Override(i IotTopicRuleTimestreamDim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleTimestreamDimensionList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

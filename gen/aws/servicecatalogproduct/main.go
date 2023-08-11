@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.servicecatalogProduct.ServicecatalogProduct",
+		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProduct",
 		reflect.TypeOf((*ServicecatalogProduct)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceptLanguage", GoGetter: "AcceptLanguage"},
@@ -96,15 +96,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.servicecatalogProduct.ServicecatalogProductConfig",
+		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProductConfig",
 		reflect.TypeOf((*ServicecatalogProductConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.servicecatalogProduct.ServicecatalogProductProvisioningArtifactParameters",
+		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProductProvisioningArtifactParameters",
 		reflect.TypeOf((*ServicecatalogProductProvisioningArtifactParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.servicecatalogProduct.ServicecatalogProductProvisioningArtifactParametersOutputReference",
+		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProductProvisioningArtifactParametersOutputReference",
 		reflect.TypeOf((*ServicecatalogProductProvisioningArtifactParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -154,11 +154,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.servicecatalogProduct.ServicecatalogProductTimeouts",
+		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProductTimeouts",
 		reflect.TypeOf((*ServicecatalogProductTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.servicecatalogProduct.ServicecatalogProductTimeoutsOutputReference",
+		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProductTimeoutsOutputReference",
 		reflect.TypeOf((*ServicecatalogProductTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

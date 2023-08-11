@@ -303,7 +303,7 @@ func NewDataAwsEbsDefaultKmsKey(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataAwsEbsDefaultKmsKey{}
 
 	_jsii_.Create(
-		"aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey",
+		"@cdktf/provider-aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -316,7 +316,7 @@ func NewDataAwsEbsDefaultKmsKey_Override(d DataAwsEbsDefaultKmsKey, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey",
+		"@cdktf/provider-aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -405,7 +405,7 @@ func DataAwsEbsDefaultKmsKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey",
+		"@cdktf/provider-aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -424,7 +424,7 @@ func DataAwsEbsDefaultKmsKey_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey",
+		"@cdktf/provider-aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -443,7 +443,7 @@ func DataAwsEbsDefaultKmsKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey",
+		"@cdktf/provider-aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -456,7 +456,7 @@ func DataAwsEbsDefaultKmsKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey",
+		"@cdktf/provider-aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKey",
 		"tfResourceType",
 		&returns,
 	)

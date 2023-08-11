@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPrice",
+		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPrice",
 		reflect.TypeOf((*DataAwsEc2SpotPrice)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,15 +69,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceConfig",
+		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceConfig",
 		reflect.TypeOf((*DataAwsEc2SpotPriceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceFilter",
+		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceFilter",
 		reflect.TypeOf((*DataAwsEc2SpotPriceFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceFilterList",
+		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceFilterList",
 		reflect.TypeOf((*DataAwsEc2SpotPriceFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -98,7 +98,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceFilterOutputReference",
 		reflect.TypeOf((*DataAwsEc2SpotPriceFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -134,11 +134,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceTimeouts",
+		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceTimeouts",
 		reflect.TypeOf((*DataAwsEc2SpotPriceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsEc2SpotPriceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

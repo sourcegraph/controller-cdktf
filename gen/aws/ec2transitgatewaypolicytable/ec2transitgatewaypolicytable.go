@@ -389,7 +389,7 @@ func NewEc2TransitGatewayPolicyTable(scope constructs.Construct, id *string, con
 	j := jsiiProxy_Ec2TransitGatewayPolicyTable{}
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable",
+		"@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -402,7 +402,7 @@ func NewEc2TransitGatewayPolicyTable_Override(e Ec2TransitGatewayPolicyTable, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable",
+		"@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -546,7 +546,7 @@ func Ec2TransitGatewayPolicyTable_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable",
+		"@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func Ec2TransitGatewayPolicyTable_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable",
+		"@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func Ec2TransitGatewayPolicyTable_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable",
+		"@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func Ec2TransitGatewayPolicyTable_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable",
+		"@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable",
 		"tfResourceType",
 		&returns,
 	)

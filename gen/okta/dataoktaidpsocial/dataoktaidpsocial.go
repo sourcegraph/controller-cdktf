@@ -567,7 +567,7 @@ func NewDataOktaIdpSocial(scope constructs.Construct, id *string, config *DataOk
 	j := jsiiProxy_DataOktaIdpSocial{}
 
 	_jsii_.Create(
-		"okta.dataOktaIdpSocial.DataOktaIdpSocial",
+		"@cdktf/provider-okta.dataOktaIdpSocial.DataOktaIdpSocial",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -580,7 +580,7 @@ func NewDataOktaIdpSocial_Override(d DataOktaIdpSocial, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaIdpSocial.DataOktaIdpSocial",
+		"@cdktf/provider-okta.dataOktaIdpSocial.DataOktaIdpSocial",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -680,7 +680,7 @@ func DataOktaIdpSocial_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaIdpSocial.DataOktaIdpSocial",
+		"@cdktf/provider-okta.dataOktaIdpSocial.DataOktaIdpSocial",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -699,7 +699,7 @@ func DataOktaIdpSocial_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaIdpSocial.DataOktaIdpSocial",
+		"@cdktf/provider-okta.dataOktaIdpSocial.DataOktaIdpSocial",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -718,7 +718,7 @@ func DataOktaIdpSocial_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaIdpSocial.DataOktaIdpSocial",
+		"@cdktf/provider-okta.dataOktaIdpSocial.DataOktaIdpSocial",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -731,7 +731,7 @@ func DataOktaIdpSocial_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.dataOktaIdpSocial.DataOktaIdpSocial",
+		"@cdktf/provider-okta.dataOktaIdpSocial.DataOktaIdpSocial",
 		"tfResourceType",
 		&returns,
 	)

@@ -202,7 +202,7 @@ func NewOpensearchDomainSamlOptionsSamlOptionsIdpOutputReference(terraformResour
 	j := jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsIdpOutputReference{}
 
 	_jsii_.Create(
-		"aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsSamlOptionsIdpOutputReference",
+		"@cdktf/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsSamlOptionsIdpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewOpensearchDomainSamlOptionsSamlOptionsIdpOutputReference_Override(o Open
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsSamlOptionsIdpOutputReference",
+		"@cdktf/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsSamlOptionsIdpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

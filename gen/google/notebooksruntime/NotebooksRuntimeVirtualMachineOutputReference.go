@@ -202,7 +202,7 @@ func NewNotebooksRuntimeVirtualMachineOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_NotebooksRuntimeVirtualMachineOutputReference{}
 
 	_jsii_.Create(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineOutputReference",
+		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntimeVirtualMachineOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewNotebooksRuntimeVirtualMachineOutputReference_Override(n NotebooksRuntim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineOutputReference",
+		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntimeVirtualMachineOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

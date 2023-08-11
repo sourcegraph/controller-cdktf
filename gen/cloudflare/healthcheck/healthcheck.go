@@ -818,7 +818,7 @@ func NewHealthcheck(scope constructs.Construct, id *string, config *HealthcheckC
 	j := jsiiProxy_Healthcheck{}
 
 	_jsii_.Create(
-		"cloudflare.healthcheck.Healthcheck",
+		"@cdktf/provider-cloudflare.healthcheck.Healthcheck",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -831,7 +831,7 @@ func NewHealthcheck_Override(h Healthcheck, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.healthcheck.Healthcheck",
+		"@cdktf/provider-cloudflare.healthcheck.Healthcheck",
 		[]interface{}{scope, id, config},
 		h,
 	)
@@ -1151,7 +1151,7 @@ func Healthcheck_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.healthcheck.Healthcheck",
+		"@cdktf/provider-cloudflare.healthcheck.Healthcheck",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1170,7 +1170,7 @@ func Healthcheck_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.healthcheck.Healthcheck",
+		"@cdktf/provider-cloudflare.healthcheck.Healthcheck",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1189,7 +1189,7 @@ func Healthcheck_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.healthcheck.Healthcheck",
+		"@cdktf/provider-cloudflare.healthcheck.Healthcheck",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1202,7 +1202,7 @@ func Healthcheck_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.healthcheck.Healthcheck",
+		"@cdktf/provider-cloudflare.healthcheck.Healthcheck",
 		"tfResourceType",
 		&returns,
 	)

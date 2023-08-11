@@ -635,7 +635,7 @@ func NewComputeSnapshot(scope constructs.Construct, id *string, config *ComputeS
 	j := jsiiProxy_ComputeSnapshot{}
 
 	_jsii_.Create(
-		"google.computeSnapshot.ComputeSnapshot",
+		"@cdktf/provider-google.computeSnapshot.ComputeSnapshot",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -648,7 +648,7 @@ func NewComputeSnapshot_Override(c ComputeSnapshot, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSnapshot.ComputeSnapshot",
+		"@cdktf/provider-google.computeSnapshot.ComputeSnapshot",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -847,7 +847,7 @@ func ComputeSnapshot_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSnapshot.ComputeSnapshot",
+		"@cdktf/provider-google.computeSnapshot.ComputeSnapshot",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -866,7 +866,7 @@ func ComputeSnapshot_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSnapshot.ComputeSnapshot",
+		"@cdktf/provider-google.computeSnapshot.ComputeSnapshot",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -885,7 +885,7 @@ func ComputeSnapshot_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSnapshot.ComputeSnapshot",
+		"@cdktf/provider-google.computeSnapshot.ComputeSnapshot",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -898,7 +898,7 @@ func ComputeSnapshot_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeSnapshot.ComputeSnapshot",
+		"@cdktf/provider-google.computeSnapshot.ComputeSnapshot",
 		"tfResourceType",
 		&returns,
 	)

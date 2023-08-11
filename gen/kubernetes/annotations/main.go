@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"kubernetes.annotations.Annotations",
+		"@cdktf/provider-kubernetes.annotations.Annotations",
 		reflect.TypeOf((*Annotations)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.annotations.AnnotationsConfig",
+		"@cdktf/provider-kubernetes.annotations.AnnotationsConfig",
 		reflect.TypeOf((*AnnotationsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.annotations.AnnotationsMetadata",
+		"@cdktf/provider-kubernetes.annotations.AnnotationsMetadata",
 		reflect.TypeOf((*AnnotationsMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.annotations.AnnotationsMetadataOutputReference",
+		"@cdktf/provider-kubernetes.annotations.AnnotationsMetadataOutputReference",
 		reflect.TypeOf((*AnnotationsMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

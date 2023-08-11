@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.elb.Elb",
+		"@cdktf/provider-aws.elb.Elb",
 		reflect.TypeOf((*Elb)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessLogs", GoGetter: "AccessLogs"},
@@ -115,11 +115,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.elb.ElbAccessLogs",
+		"@cdktf/provider-aws.elb.ElbAccessLogs",
 		reflect.TypeOf((*ElbAccessLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.elb.ElbAccessLogsOutputReference",
+		"@cdktf/provider-aws.elb.ElbAccessLogsOutputReference",
 		reflect.TypeOf((*ElbAccessLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -162,15 +162,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.elb.ElbConfig",
+		"@cdktf/provider-aws.elb.ElbConfig",
 		reflect.TypeOf((*ElbConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.elb.ElbHealthCheck",
+		"@cdktf/provider-aws.elb.ElbHealthCheck",
 		reflect.TypeOf((*ElbHealthCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.elb.ElbHealthCheckOutputReference",
+		"@cdktf/provider-aws.elb.ElbHealthCheckOutputReference",
 		reflect.TypeOf((*ElbHealthCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -212,11 +212,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.elb.ElbListener",
+		"@cdktf/provider-aws.elb.ElbListener",
 		reflect.TypeOf((*ElbListener)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.elb.ElbListenerList",
+		"@cdktf/provider-aws.elb.ElbListenerList",
 		reflect.TypeOf((*ElbListenerList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -237,7 +237,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.elb.ElbListenerOutputReference",
+		"@cdktf/provider-aws.elb.ElbListenerOutputReference",
 		reflect.TypeOf((*ElbListenerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

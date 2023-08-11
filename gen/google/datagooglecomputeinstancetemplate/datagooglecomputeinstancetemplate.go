@@ -663,7 +663,7 @@ func NewDataGoogleComputeInstanceTemplate(scope constructs.Construct, id *string
 	j := jsiiProxy_DataGoogleComputeInstanceTemplate{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplate",
+		"@cdktf/provider-google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -676,7 +676,7 @@ func NewDataGoogleComputeInstanceTemplate_Override(d DataGoogleComputeInstanceTe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplate",
+		"@cdktf/provider-google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplate",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -820,7 +820,7 @@ func DataGoogleComputeInstanceTemplate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplate",
+		"@cdktf/provider-google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -839,7 +839,7 @@ func DataGoogleComputeInstanceTemplate_IsTerraformDataSource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplate",
+		"@cdktf/provider-google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplate",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -858,7 +858,7 @@ func DataGoogleComputeInstanceTemplate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplate",
+		"@cdktf/provider-google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -871,7 +871,7 @@ func DataGoogleComputeInstanceTemplate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplate",
+		"@cdktf/provider-google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplate",
 		"tfResourceType",
 		&returns,
 	)

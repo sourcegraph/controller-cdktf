@@ -116,7 +116,7 @@ func NewAppUserSchemaPropertyOneOfList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_AppUserSchemaPropertyOneOfList{}
 
 	_jsii_.Create(
-		"okta.appUserSchemaProperty.AppUserSchemaPropertyOneOfList",
+		"@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaPropertyOneOfList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppUserSchemaPropertyOneOfList_Override(a AppUserSchemaPropertyOneOfList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appUserSchemaProperty.AppUserSchemaPropertyOneOfList",
+		"@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaPropertyOneOfList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

@@ -227,7 +227,7 @@ func NewContainerClusterNotificationConfigPubsubOutputReference(terraformResourc
 	j := jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewContainerClusterNotificationConfigPubsubOutputReference_Override(c Conta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

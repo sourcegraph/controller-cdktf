@@ -506,7 +506,7 @@ func NewGoogleActiveDirectoryDomainTrust(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleActiveDirectoryDomainTrust{}
 
 	_jsii_.Create(
-		"google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust",
+		"@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -519,7 +519,7 @@ func NewGoogleActiveDirectoryDomainTrust_Override(g GoogleActiveDirectoryDomainT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust",
+		"@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -718,7 +718,7 @@ func GoogleActiveDirectoryDomainTrust_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust",
+		"@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -737,7 +737,7 @@ func GoogleActiveDirectoryDomainTrust_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust",
+		"@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -756,7 +756,7 @@ func GoogleActiveDirectoryDomainTrust_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust",
+		"@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -769,7 +769,7 @@ func GoogleActiveDirectoryDomainTrust_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust",
+		"@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust",
 		"tfResourceType",
 		&returns,
 	)

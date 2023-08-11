@@ -302,7 +302,7 @@ func NewDataAwsEksNodeGroups(scope constructs.Construct, id *string, config *Dat
 	j := jsiiProxy_DataAwsEksNodeGroups{}
 
 	_jsii_.Create(
-		"aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups",
+		"@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataAwsEksNodeGroups_Override(d DataAwsEksNodeGroups, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups",
+		"@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataAwsEksNodeGroups_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups",
+		"@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataAwsEksNodeGroups_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups",
+		"@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataAwsEksNodeGroups_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups",
+		"@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataAwsEksNodeGroups_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups",
+		"@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups",
 		"tfResourceType",
 		&returns,
 	)

@@ -504,7 +504,7 @@ func NewApigeeKeystoresAliasesPkcs12(scope constructs.Construct, id *string, con
 	j := jsiiProxy_ApigeeKeystoresAliasesPkcs12{}
 
 	_jsii_.Create(
-		"google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12",
+		"@cdktf/provider-google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -517,7 +517,7 @@ func NewApigeeKeystoresAliasesPkcs12_Override(a ApigeeKeystoresAliasesPkcs12, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12",
+		"@cdktf/provider-google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -705,7 +705,7 @@ func ApigeeKeystoresAliasesPkcs12_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12",
+		"@cdktf/provider-google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -724,7 +724,7 @@ func ApigeeKeystoresAliasesPkcs12_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12",
+		"@cdktf/provider-google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -743,7 +743,7 @@ func ApigeeKeystoresAliasesPkcs12_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12",
+		"@cdktf/provider-google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -756,7 +756,7 @@ func ApigeeKeystoresAliasesPkcs12_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12",
+		"@cdktf/provider-google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12",
 		"tfResourceType",
 		&returns,
 	)

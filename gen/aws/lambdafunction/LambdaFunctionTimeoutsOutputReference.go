@@ -204,7 +204,7 @@ func NewLambdaFunctionTimeoutsOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_LambdaFunctionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewLambdaFunctionTimeoutsOutputReference_Override(l LambdaFunctionTimeoutsO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

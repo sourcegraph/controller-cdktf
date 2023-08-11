@@ -180,7 +180,7 @@ func NewVpnConnectionTunnel1LogOptionsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_VpnConnectionTunnel1LogOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewVpnConnectionTunnel1LogOptionsOutputReference_Override(v VpnConnectionTu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

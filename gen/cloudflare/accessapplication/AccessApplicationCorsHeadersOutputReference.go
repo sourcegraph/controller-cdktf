@@ -348,7 +348,7 @@ func NewAccessApplicationCorsHeadersOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_AccessApplicationCorsHeadersOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.accessApplication.AccessApplicationCorsHeadersOutputReference",
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationCorsHeadersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewAccessApplicationCorsHeadersOutputReference_Override(a AccessApplication
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessApplication.AccessApplicationCorsHeadersOutputReference",
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationCorsHeadersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

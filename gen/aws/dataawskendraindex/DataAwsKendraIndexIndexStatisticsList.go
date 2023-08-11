@@ -104,7 +104,7 @@ func NewDataAwsKendraIndexIndexStatisticsList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataAwsKendraIndexIndexStatisticsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsKendraIndex.DataAwsKendraIndexIndexStatisticsList",
+		"@cdktf/provider-aws.dataAwsKendraIndex.DataAwsKendraIndexIndexStatisticsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsKendraIndexIndexStatisticsList_Override(d DataAwsKendraIndexIndex
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKendraIndex.DataAwsKendraIndexIndexStatisticsList",
+		"@cdktf/provider-aws.dataAwsKendraIndex.DataAwsKendraIndexIndexStatisticsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

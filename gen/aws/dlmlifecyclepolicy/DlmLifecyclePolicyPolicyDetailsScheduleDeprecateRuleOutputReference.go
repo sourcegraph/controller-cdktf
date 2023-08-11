@@ -228,7 +228,7 @@ func NewDlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputReference(terr
 	j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputReference{}
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputReference",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputReference",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

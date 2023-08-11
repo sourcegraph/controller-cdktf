@@ -227,7 +227,7 @@ func NewGoogleBigqueryJobQueryDestinationTableOutputReference(terraformResource 
 	j := jsiiProxy_GoogleBigqueryJobQueryDestinationTableOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryJob.GoogleBigqueryJobQueryDestinationTableOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryJob.GoogleBigqueryJobQueryDestinationTableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewGoogleBigqueryJobQueryDestinationTableOutputReference_Override(g GoogleB
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryJob.GoogleBigqueryJobQueryDestinationTableOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryJob.GoogleBigqueryJobQueryDestinationTableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

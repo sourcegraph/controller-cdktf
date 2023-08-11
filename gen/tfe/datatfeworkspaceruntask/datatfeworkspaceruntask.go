@@ -336,7 +336,7 @@ func NewDataTfeWorkspaceRunTask(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataTfeWorkspaceRunTask{}
 
 	_jsii_.Create(
-		"tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask",
+		"@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -349,7 +349,7 @@ func NewDataTfeWorkspaceRunTask_Override(d DataTfeWorkspaceRunTask, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask",
+		"@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -460,7 +460,7 @@ func DataTfeWorkspaceRunTask_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask",
+		"@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -479,7 +479,7 @@ func DataTfeWorkspaceRunTask_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask",
+		"@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -498,7 +498,7 @@ func DataTfeWorkspaceRunTask_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask",
+		"@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -511,7 +511,7 @@ func DataTfeWorkspaceRunTask_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask",
+		"@cdktf/provider-tfe.dataTfeWorkspaceRunTask.DataTfeWorkspaceRunTask",
 		"tfResourceType",
 		&returns,
 	)

@@ -252,7 +252,7 @@ func NewDialogflowCxPageEntryFulfillmentOutputReference(terraformResource cdktf.
 	j := jsiiProxy_DialogflowCxPageEntryFulfillmentOutputReference{}
 
 	_jsii_.Create(
-		"google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewDialogflowCxPageEntryFulfillmentOutputReference_Override(d DialogflowCxP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

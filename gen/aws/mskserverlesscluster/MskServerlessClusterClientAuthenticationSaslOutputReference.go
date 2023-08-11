@@ -179,7 +179,7 @@ func NewMskServerlessClusterClientAuthenticationSaslOutputReference(terraformRes
 	j := jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference{}
 
 	_jsii_.Create(
-		"aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationSaslOutputReference",
+		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationSaslOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewMskServerlessClusterClientAuthenticationSaslOutputReference_Override(m M
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationSaslOutputReference",
+		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationSaslOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

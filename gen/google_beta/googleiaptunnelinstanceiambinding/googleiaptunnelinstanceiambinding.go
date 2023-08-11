@@ -448,7 +448,7 @@ func NewGoogleIapTunnelInstanceIamBinding(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleIapTunnelInstanceIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleIapTunnelInstanceIamBinding.GoogleIapTunnelInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleIapTunnelInstanceIamBinding.GoogleIapTunnelInstanceIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleIapTunnelInstanceIamBinding_Override(g GoogleIapTunnelInstanceIamB
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIapTunnelInstanceIamBinding.GoogleIapTunnelInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleIapTunnelInstanceIamBinding.GoogleIapTunnelInstanceIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleIapTunnelInstanceIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapTunnelInstanceIamBinding.GoogleIapTunnelInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleIapTunnelInstanceIamBinding.GoogleIapTunnelInstanceIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleIapTunnelInstanceIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapTunnelInstanceIamBinding.GoogleIapTunnelInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleIapTunnelInstanceIamBinding.GoogleIapTunnelInstanceIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleIapTunnelInstanceIamBinding_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapTunnelInstanceIamBinding.GoogleIapTunnelInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleIapTunnelInstanceIamBinding.GoogleIapTunnelInstanceIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleIapTunnelInstanceIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleIapTunnelInstanceIamBinding.GoogleIapTunnelInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleIapTunnelInstanceIamBinding.GoogleIapTunnelInstanceIamBinding",
 		"tfResourceType",
 		&returns,
 	)

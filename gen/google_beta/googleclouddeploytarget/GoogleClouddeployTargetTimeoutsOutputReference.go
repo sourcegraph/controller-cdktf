@@ -228,7 +228,7 @@ func NewGoogleClouddeployTargetTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GoogleClouddeployTargetTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleClouddeployTargetTimeoutsOutputReference_Override(g GoogleClouddep
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

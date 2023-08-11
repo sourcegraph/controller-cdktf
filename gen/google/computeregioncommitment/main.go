@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeRegionCommitment.ComputeRegionCommitment",
+		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitment",
 		reflect.TypeOf((*ComputeRegionCommitment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -96,15 +96,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionCommitment.ComputeRegionCommitmentConfig",
+		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentConfig",
 		reflect.TypeOf((*ComputeRegionCommitmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionCommitment.ComputeRegionCommitmentLicenseResource",
+		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentLicenseResource",
 		reflect.TypeOf((*ComputeRegionCommitmentLicenseResource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionCommitment.ComputeRegionCommitmentLicenseResourceOutputReference",
+		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentLicenseResourceOutputReference",
 		reflect.TypeOf((*ComputeRegionCommitmentLicenseResourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "amount", GoGetter: "Amount"},
@@ -144,11 +144,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionCommitment.ComputeRegionCommitmentResources",
+		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentResources",
 		reflect.TypeOf((*ComputeRegionCommitmentResources)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionCommitment.ComputeRegionCommitmentResourcesList",
+		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentResourcesList",
 		reflect.TypeOf((*ComputeRegionCommitmentResourcesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -169,7 +169,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionCommitment.ComputeRegionCommitmentResourcesOutputReference",
+		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentResourcesOutputReference",
 		reflect.TypeOf((*ComputeRegionCommitmentResourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorType", GoGetter: "AcceleratorType"},
@@ -210,11 +210,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionCommitment.ComputeRegionCommitmentTimeouts",
+		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentTimeouts",
 		reflect.TypeOf((*ComputeRegionCommitmentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionCommitment.ComputeRegionCommitmentTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeRegionCommitmentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

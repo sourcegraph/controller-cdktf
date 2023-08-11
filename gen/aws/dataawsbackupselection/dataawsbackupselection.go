@@ -347,7 +347,7 @@ func NewDataAwsBackupSelection(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataAwsBackupSelection{}
 
 	_jsii_.Create(
-		"aws.dataAwsBackupSelection.DataAwsBackupSelection",
+		"@cdktf/provider-aws.dataAwsBackupSelection.DataAwsBackupSelection",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewDataAwsBackupSelection_Override(d DataAwsBackupSelection, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsBackupSelection.DataAwsBackupSelection",
+		"@cdktf/provider-aws.dataAwsBackupSelection.DataAwsBackupSelection",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -471,7 +471,7 @@ func DataAwsBackupSelection_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsBackupSelection.DataAwsBackupSelection",
+		"@cdktf/provider-aws.dataAwsBackupSelection.DataAwsBackupSelection",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -490,7 +490,7 @@ func DataAwsBackupSelection_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsBackupSelection.DataAwsBackupSelection",
+		"@cdktf/provider-aws.dataAwsBackupSelection.DataAwsBackupSelection",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -509,7 +509,7 @@ func DataAwsBackupSelection_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsBackupSelection.DataAwsBackupSelection",
+		"@cdktf/provider-aws.dataAwsBackupSelection.DataAwsBackupSelection",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -522,7 +522,7 @@ func DataAwsBackupSelection_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsBackupSelection.DataAwsBackupSelection",
+		"@cdktf/provider-aws.dataAwsBackupSelection.DataAwsBackupSelection",
 		"tfResourceType",
 		&returns,
 	)

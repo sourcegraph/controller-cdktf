@@ -204,7 +204,7 @@ func NewMskconnectCustomPluginTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_MskconnectCustomPluginTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.mskconnectCustomPlugin.MskconnectCustomPluginTimeoutsOutputReference",
+		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMskconnectCustomPluginTimeoutsOutputReference_Override(m MskconnectCusto
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskconnectCustomPlugin.MskconnectCustomPluginTimeoutsOutputReference",
+		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

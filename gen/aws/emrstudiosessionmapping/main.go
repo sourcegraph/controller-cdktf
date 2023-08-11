@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.emrStudioSessionMapping.EmrStudioSessionMapping",
+		"@cdktf/provider-aws.emrStudioSessionMapping.EmrStudioSessionMapping",
 		reflect.TypeOf((*EmrStudioSessionMapping)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.emrStudioSessionMapping.EmrStudioSessionMappingConfig",
+		"@cdktf/provider-aws.emrStudioSessionMapping.EmrStudioSessionMappingConfig",
 		reflect.TypeOf((*EmrStudioSessionMappingConfig)(nil)).Elem(),
 	)
 }

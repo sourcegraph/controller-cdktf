@@ -359,7 +359,7 @@ func NewDataGoogleFirebaseWebApp(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataGoogleFirebaseWebApp{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -372,7 +372,7 @@ func NewDataGoogleFirebaseWebApp_Override(d DataGoogleFirebaseWebApp, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -483,7 +483,7 @@ func DataGoogleFirebaseWebApp_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -502,7 +502,7 @@ func DataGoogleFirebaseWebApp_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -521,7 +521,7 @@ func DataGoogleFirebaseWebApp_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataGoogleFirebaseWebApp_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp",
 		"tfResourceType",
 		&returns,
 	)

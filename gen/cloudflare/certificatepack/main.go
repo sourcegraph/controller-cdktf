@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.certificatePack.CertificatePack",
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePack",
 		reflect.TypeOf((*CertificatePack)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,15 +81,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.certificatePack.CertificatePackConfig",
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePackConfig",
 		reflect.TypeOf((*CertificatePackConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.certificatePack.CertificatePackValidationErrors",
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationErrors",
 		reflect.TypeOf((*CertificatePackValidationErrors)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.certificatePack.CertificatePackValidationErrorsList",
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationErrorsList",
 		reflect.TypeOf((*CertificatePackValidationErrorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -110,7 +110,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.certificatePack.CertificatePackValidationErrorsOutputReference",
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationErrorsOutputReference",
 		reflect.TypeOf((*CertificatePackValidationErrorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -143,11 +143,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.certificatePack.CertificatePackValidationRecords",
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationRecords",
 		reflect.TypeOf((*CertificatePackValidationRecords)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.certificatePack.CertificatePackValidationRecordsList",
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationRecordsList",
 		reflect.TypeOf((*CertificatePackValidationRecordsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -168,7 +168,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.certificatePack.CertificatePackValidationRecordsOutputReference",
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationRecordsOutputReference",
 		reflect.TypeOf((*CertificatePackValidationRecordsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cnameName", GoGetter: "CnameName"},

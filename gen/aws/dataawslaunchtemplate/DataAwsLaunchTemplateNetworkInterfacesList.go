@@ -104,7 +104,7 @@ func NewDataAwsLaunchTemplateNetworkInterfacesList(terraformResource cdktf.IInte
 	j := jsiiProxy_DataAwsLaunchTemplateNetworkInterfacesList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkInterfacesList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkInterfacesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLaunchTemplateNetworkInterfacesList_Override(d DataAwsLaunchTempl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkInterfacesList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkInterfacesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

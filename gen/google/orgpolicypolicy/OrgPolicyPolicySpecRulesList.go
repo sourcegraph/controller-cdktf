@@ -116,7 +116,7 @@ func NewOrgPolicyPolicySpecRulesList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_OrgPolicyPolicySpecRulesList{}
 
 	_jsii_.Create(
-		"google.orgPolicyPolicy.OrgPolicyPolicySpecRulesList",
+		"@cdktf/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOrgPolicyPolicySpecRulesList_Override(o OrgPolicyPolicySpecRulesList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.orgPolicyPolicy.OrgPolicyPolicySpecRulesList",
+		"@cdktf/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

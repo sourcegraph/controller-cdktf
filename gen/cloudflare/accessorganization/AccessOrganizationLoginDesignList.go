@@ -116,7 +116,7 @@ func NewAccessOrganizationLoginDesignList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_AccessOrganizationLoginDesignList{}
 
 	_jsii_.Create(
-		"cloudflare.accessOrganization.AccessOrganizationLoginDesignList",
+		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesignList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessOrganizationLoginDesignList_Override(a AccessOrganizationLoginDesi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessOrganization.AccessOrganizationLoginDesignList",
+		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesignList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

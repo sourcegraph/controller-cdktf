@@ -379,7 +379,7 @@ func NewDataAwsGlueConnection(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataAwsGlueConnection{}
 
 	_jsii_.Create(
-		"aws.dataAwsGlueConnection.DataAwsGlueConnection",
+		"@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnection",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -392,7 +392,7 @@ func NewDataAwsGlueConnection_Override(d DataAwsGlueConnection, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsGlueConnection.DataAwsGlueConnection",
+		"@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnection",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -492,7 +492,7 @@ func DataAwsGlueConnection_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsGlueConnection.DataAwsGlueConnection",
+		"@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnection",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -511,7 +511,7 @@ func DataAwsGlueConnection_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsGlueConnection.DataAwsGlueConnection",
+		"@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnection",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -530,7 +530,7 @@ func DataAwsGlueConnection_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsGlueConnection.DataAwsGlueConnection",
+		"@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnection",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func DataAwsGlueConnection_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsGlueConnection.DataAwsGlueConnection",
+		"@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnection",
 		"tfResourceType",
 		&returns,
 	)

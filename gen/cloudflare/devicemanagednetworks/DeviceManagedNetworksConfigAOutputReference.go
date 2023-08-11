@@ -202,7 +202,7 @@ func NewDeviceManagedNetworksConfigAOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DeviceManagedNetworksConfigAOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfigAOutputReference",
+		"@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDeviceManagedNetworksConfigAOutputReference_Override(d DeviceManagedNetw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfigAOutputReference",
+		"@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

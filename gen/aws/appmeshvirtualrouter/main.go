@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualRouter.AppmeshVirtualRouter",
+		"@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouter",
 		reflect.TypeOf((*AppmeshVirtualRouter)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,19 +75,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualRouter.AppmeshVirtualRouterConfig",
+		"@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterConfig",
 		reflect.TypeOf((*AppmeshVirtualRouterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualRouter.AppmeshVirtualRouterSpec",
+		"@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpec",
 		reflect.TypeOf((*AppmeshVirtualRouterSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListener",
+		"@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListener",
 		reflect.TypeOf((*AppmeshVirtualRouterSpecListener)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerList",
+		"@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerList",
 		reflect.TypeOf((*AppmeshVirtualRouterSpecListenerList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerOutputReference",
 		reflect.TypeOf((*AppmeshVirtualRouterSpecListenerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -143,11 +143,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerPortMapping",
+		"@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerPortMapping",
 		reflect.TypeOf((*AppmeshVirtualRouterSpecListenerPortMapping)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerPortMappingOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerPortMappingOutputReference",
 		reflect.TypeOf((*AppmeshVirtualRouterSpecListenerPortMappingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -183,7 +183,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecOutputReference",
 		reflect.TypeOf((*AppmeshVirtualRouterSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

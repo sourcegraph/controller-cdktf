@@ -204,7 +204,7 @@ func NewGameliftGameServerGroupTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GameliftGameServerGroupTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.gameliftGameServerGroup.GameliftGameServerGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGameliftGameServerGroupTimeoutsOutputReference_Override(g GameliftGameSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftGameServerGroup.GameliftGameServerGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.list.List",
+		"@cdktf/provider-cloudflare.list.List",
 		reflect.TypeOf((*List)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -68,15 +68,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.list.ListConfig",
+		"@cdktf/provider-cloudflare.list.ListConfig",
 		reflect.TypeOf((*ListConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.list.ListItem",
+		"@cdktf/provider-cloudflare.list.ListItem",
 		reflect.TypeOf((*ListItem)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.list.ListItemList",
+		"@cdktf/provider-cloudflare.list.ListItemList",
 		reflect.TypeOf((*ListItemList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -97,7 +97,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.list.ListItemOutputReference",
+		"@cdktf/provider-cloudflare.list.ListItemOutputReference",
 		reflect.TypeOf((*ListItemOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
@@ -135,11 +135,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.list.ListItemValue",
+		"@cdktf/provider-cloudflare.list.ListItemValue",
 		reflect.TypeOf((*ListItemValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.list.ListItemValueOutputReference",
+		"@cdktf/provider-cloudflare.list.ListItemValueOutputReference",
 		reflect.TypeOf((*ListItemValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -178,11 +178,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.list.ListItemValueRedirect",
+		"@cdktf/provider-cloudflare.list.ListItemValueRedirect",
 		reflect.TypeOf((*ListItemValueRedirect)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.list.ListItemValueRedirectList",
+		"@cdktf/provider-cloudflare.list.ListItemValueRedirectList",
 		reflect.TypeOf((*ListItemValueRedirectList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -203,7 +203,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.list.ListItemValueRedirectOutputReference",
+		"@cdktf/provider-cloudflare.list.ListItemValueRedirectOutputReference",
 		reflect.TypeOf((*ListItemValueRedirectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

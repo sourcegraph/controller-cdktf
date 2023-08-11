@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator",
+		"@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator",
 		reflect.TypeOf((*OrganizationsDelegatedAdministrator)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministratorConfig",
+		"@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministratorConfig",
 		reflect.TypeOf((*OrganizationsDelegatedAdministratorConfig)(nil)).Elem(),
 	)
 }

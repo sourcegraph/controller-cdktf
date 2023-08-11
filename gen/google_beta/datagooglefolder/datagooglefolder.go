@@ -392,7 +392,7 @@ func NewDataGoogleFolder(scope constructs.Construct, id *string, config *DataGoo
 	j := jsiiProxy_DataGoogleFolder{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleFolder.DataGoogleFolder",
+		"@cdktf/provider-google-beta.dataGoogleFolder.DataGoogleFolder",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -405,7 +405,7 @@ func NewDataGoogleFolder_Override(d DataGoogleFolder, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleFolder.DataGoogleFolder",
+		"@cdktf/provider-google-beta.dataGoogleFolder.DataGoogleFolder",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -516,7 +516,7 @@ func DataGoogleFolder_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleFolder.DataGoogleFolder",
+		"@cdktf/provider-google-beta.dataGoogleFolder.DataGoogleFolder",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -535,7 +535,7 @@ func DataGoogleFolder_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleFolder.DataGoogleFolder",
+		"@cdktf/provider-google-beta.dataGoogleFolder.DataGoogleFolder",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -554,7 +554,7 @@ func DataGoogleFolder_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleFolder.DataGoogleFolder",
+		"@cdktf/provider-google-beta.dataGoogleFolder.DataGoogleFolder",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -567,7 +567,7 @@ func DataGoogleFolder_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleFolder.DataGoogleFolder",
+		"@cdktf/provider-google-beta.dataGoogleFolder.DataGoogleFolder",
 		"tfResourceType",
 		&returns,
 	)

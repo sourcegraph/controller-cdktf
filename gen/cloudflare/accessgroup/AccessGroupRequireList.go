@@ -116,7 +116,7 @@ func NewAccessGroupRequireList(terraformResource cdktf.IInterpolatingParent, ter
 	j := jsiiProxy_AccessGroupRequireList{}
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupRequireList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessGroupRequireList_Override(a AccessGroupRequireList, terraformResou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupRequireList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

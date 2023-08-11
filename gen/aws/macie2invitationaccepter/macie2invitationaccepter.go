@@ -354,7 +354,7 @@ func NewMacie2InvitationAccepter(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_Macie2InvitationAccepter{}
 
 	_jsii_.Create(
-		"aws.macie2InvitationAccepter.Macie2InvitationAccepter",
+		"@cdktf/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -367,7 +367,7 @@ func NewMacie2InvitationAccepter_Override(m Macie2InvitationAccepter, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2InvitationAccepter.Macie2InvitationAccepter",
+		"@cdktf/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepter",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -489,7 +489,7 @@ func Macie2InvitationAccepter_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2InvitationAccepter.Macie2InvitationAccepter",
+		"@cdktf/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func Macie2InvitationAccepter_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2InvitationAccepter.Macie2InvitationAccepter",
+		"@cdktf/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func Macie2InvitationAccepter_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2InvitationAccepter.Macie2InvitationAccepter",
+		"@cdktf/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepter",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func Macie2InvitationAccepter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.macie2InvitationAccepter.Macie2InvitationAccepter",
+		"@cdktf/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepter",
 		"tfResourceType",
 		&returns,
 	)

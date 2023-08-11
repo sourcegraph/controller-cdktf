@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetric",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric",
 		reflect.TypeOf((*GoogleLoggingMetric)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,15 +89,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptions",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptions",
 		reflect.TypeOf((*GoogleLoggingMetricBucketOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExplicitBuckets",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExplicitBuckets",
 		reflect.TypeOf((*GoogleLoggingMetricBucketOptionsExplicitBuckets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExplicitBucketsOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExplicitBucketsOutputReference",
 		reflect.TypeOf((*GoogleLoggingMetricBucketOptionsExplicitBucketsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bounds", GoGetter: "Bounds"},
@@ -131,11 +131,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExponentialBuckets",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExponentialBuckets",
 		reflect.TypeOf((*GoogleLoggingMetricBucketOptionsExponentialBuckets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExponentialBucketsOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExponentialBucketsOutputReference",
 		reflect.TypeOf((*GoogleLoggingMetricBucketOptionsExponentialBucketsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -176,11 +176,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsLinearBuckets",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsLinearBuckets",
 		reflect.TypeOf((*GoogleLoggingMetricBucketOptionsLinearBuckets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference",
 		reflect.TypeOf((*GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -221,7 +221,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsOutputReference",
 		reflect.TypeOf((*GoogleLoggingMetricBucketOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -265,19 +265,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetricConfig",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig",
 		reflect.TypeOf((*GoogleLoggingMetricConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptor",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptor",
 		reflect.TypeOf((*GoogleLoggingMetricMetricDescriptor)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabels",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabels",
 		reflect.TypeOf((*GoogleLoggingMetricMetricDescriptorLabels)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabelsList",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabelsList",
 		reflect.TypeOf((*GoogleLoggingMetricMetricDescriptorLabelsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -298,7 +298,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabelsOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabelsOutputReference",
 		reflect.TypeOf((*GoogleLoggingMetricMetricDescriptorLabelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -338,7 +338,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorOutputReference",
 		reflect.TypeOf((*GoogleLoggingMetricMetricDescriptorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -384,11 +384,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetricTimeouts",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricTimeouts",
 		reflect.TypeOf((*GoogleLoggingMetricTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetricTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleLoggingMetricTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

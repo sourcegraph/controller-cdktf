@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroup",
+		"@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroup",
 		reflect.TypeOf((*ChimeVoiceConnectorGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,15 +61,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroupConfig",
+		"@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroupConfig",
 		reflect.TypeOf((*ChimeVoiceConnectorGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroupConnector",
+		"@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroupConnector",
 		reflect.TypeOf((*ChimeVoiceConnectorGroupConnector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroupConnectorList",
+		"@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroupConnectorList",
 		reflect.TypeOf((*ChimeVoiceConnectorGroupConnectorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -90,7 +90,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroupConnectorOutputReference",
+		"@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroupConnectorOutputReference",
 		reflect.TypeOf((*ChimeVoiceConnectorGroupConnectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

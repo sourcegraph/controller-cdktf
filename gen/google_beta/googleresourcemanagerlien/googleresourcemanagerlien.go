@@ -434,7 +434,7 @@ func NewGoogleResourceManagerLien(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleResourceManagerLien{}
 
 	_jsii_.Create(
-		"google-beta.googleResourceManagerLien.GoogleResourceManagerLien",
+		"@cdktf/provider-google-beta.googleResourceManagerLien.GoogleResourceManagerLien",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -447,7 +447,7 @@ func NewGoogleResourceManagerLien_Override(g GoogleResourceManagerLien, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleResourceManagerLien.GoogleResourceManagerLien",
+		"@cdktf/provider-google-beta.googleResourceManagerLien.GoogleResourceManagerLien",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -602,7 +602,7 @@ func GoogleResourceManagerLien_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleResourceManagerLien.GoogleResourceManagerLien",
+		"@cdktf/provider-google-beta.googleResourceManagerLien.GoogleResourceManagerLien",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func GoogleResourceManagerLien_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleResourceManagerLien.GoogleResourceManagerLien",
+		"@cdktf/provider-google-beta.googleResourceManagerLien.GoogleResourceManagerLien",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -640,7 +640,7 @@ func GoogleResourceManagerLien_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleResourceManagerLien.GoogleResourceManagerLien",
+		"@cdktf/provider-google-beta.googleResourceManagerLien.GoogleResourceManagerLien",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func GoogleResourceManagerLien_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleResourceManagerLien.GoogleResourceManagerLien",
+		"@cdktf/provider-google-beta.googleResourceManagerLien.GoogleResourceManagerLien",
 		"tfResourceType",
 		&returns,
 	)

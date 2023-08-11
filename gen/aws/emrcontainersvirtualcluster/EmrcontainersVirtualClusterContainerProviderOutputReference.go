@@ -225,7 +225,7 @@ func NewEmrcontainersVirtualClusterContainerProviderOutputReference(terraformRes
 	j := jsiiProxy_EmrcontainersVirtualClusterContainerProviderOutputReference{}
 
 	_jsii_.Create(
-		"aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProviderOutputReference",
+		"@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProviderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewEmrcontainersVirtualClusterContainerProviderOutputReference_Override(e E
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProviderOutputReference",
+		"@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProviderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

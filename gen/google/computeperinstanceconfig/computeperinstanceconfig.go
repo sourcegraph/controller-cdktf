@@ -510,7 +510,7 @@ func NewComputePerInstanceConfig(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_ComputePerInstanceConfig{}
 
 	_jsii_.Create(
-		"google.computePerInstanceConfig.ComputePerInstanceConfig",
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -523,7 +523,7 @@ func NewComputePerInstanceConfig_Override(c ComputePerInstanceConfig, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computePerInstanceConfig.ComputePerInstanceConfig",
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfig",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -711,7 +711,7 @@ func ComputePerInstanceConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computePerInstanceConfig.ComputePerInstanceConfig",
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -730,7 +730,7 @@ func ComputePerInstanceConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computePerInstanceConfig.ComputePerInstanceConfig",
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -749,7 +749,7 @@ func ComputePerInstanceConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computePerInstanceConfig.ComputePerInstanceConfig",
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func ComputePerInstanceConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computePerInstanceConfig.ComputePerInstanceConfig",
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfig",
 		"tfResourceType",
 		&returns,
 	)

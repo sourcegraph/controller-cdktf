@@ -323,7 +323,7 @@ func NewAppflowFlowTriggerConfigTriggerPropertiesScheduledOutputReference(terraf
 	j := jsiiProxy_AppflowFlowTriggerConfigTriggerPropertiesScheduledOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduledOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduledOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -335,7 +335,7 @@ func NewAppflowFlowTriggerConfigTriggerPropertiesScheduledOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduledOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduledOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

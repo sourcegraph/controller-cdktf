@@ -226,7 +226,7 @@ func NewSourcerepoRepositoryPubsubConfigsOutputReference(terraformResource cdktf
 	j := jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference{}
 
 	_jsii_.Create(
-		"google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsOutputReference",
+		"@cdktf/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewSourcerepoRepositoryPubsubConfigsOutputReference_Override(s SourcerepoRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsOutputReference",
+		"@cdktf/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

@@ -388,7 +388,7 @@ func NewDeviceManagedNetworks(scope constructs.Construct, id *string, config *De
 	j := jsiiProxy_DeviceManagedNetworks{}
 
 	_jsii_.Create(
-		"cloudflare.deviceManagedNetworks.DeviceManagedNetworks",
+		"@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworks",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -401,7 +401,7 @@ func NewDeviceManagedNetworks_Override(d DeviceManagedNetworks, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.deviceManagedNetworks.DeviceManagedNetworks",
+		"@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworks",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -545,7 +545,7 @@ func DeviceManagedNetworks_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.deviceManagedNetworks.DeviceManagedNetworks",
+		"@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworks",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func DeviceManagedNetworks_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.deviceManagedNetworks.DeviceManagedNetworks",
+		"@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworks",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func DeviceManagedNetworks_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.deviceManagedNetworks.DeviceManagedNetworks",
+		"@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworks",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func DeviceManagedNetworks_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.deviceManagedNetworks.DeviceManagedNetworks",
+		"@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworks",
 		"tfResourceType",
 		&returns,
 	)

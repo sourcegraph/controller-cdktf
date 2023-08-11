@@ -545,7 +545,7 @@ func NewAlbListener(scope constructs.Construct, id *string, config *AlbListenerC
 	j := jsiiProxy_AlbListener{}
 
 	_jsii_.Create(
-		"aws.albListener.AlbListener",
+		"@cdktf/provider-aws.albListener.AlbListener",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -558,7 +558,7 @@ func NewAlbListener_Override(a AlbListener, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albListener.AlbListener",
+		"@cdktf/provider-aws.albListener.AlbListener",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -757,7 +757,7 @@ func AlbListener_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.albListener.AlbListener",
+		"@cdktf/provider-aws.albListener.AlbListener",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -776,7 +776,7 @@ func AlbListener_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.albListener.AlbListener",
+		"@cdktf/provider-aws.albListener.AlbListener",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -795,7 +795,7 @@ func AlbListener_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.albListener.AlbListener",
+		"@cdktf/provider-aws.albListener.AlbListener",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -808,7 +808,7 @@ func AlbListener_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.albListener.AlbListener",
+		"@cdktf/provider-aws.albListener.AlbListener",
 		"tfResourceType",
 		&returns,
 	)

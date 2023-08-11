@@ -353,7 +353,7 @@ func NewAccessContextManagerAccessPolicyIamPolicy(scope constructs.Construct, id
 	j := jsiiProxy_AccessContextManagerAccessPolicyIamPolicy{}
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessPolicyIamPolicy.AccessContextManagerAccessPolicyIamPolicy",
+		"@cdktf/provider-google.accessContextManagerAccessPolicyIamPolicy.AccessContextManagerAccessPolicyIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewAccessContextManagerAccessPolicyIamPolicy_Override(a AccessContextManage
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessPolicyIamPolicy.AccessContextManagerAccessPolicyIamPolicy",
+		"@cdktf/provider-google.accessContextManagerAccessPolicyIamPolicy.AccessContextManagerAccessPolicyIamPolicy",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -499,7 +499,7 @@ func AccessContextManagerAccessPolicyIamPolicy_IsConstruct(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerAccessPolicyIamPolicy.AccessContextManagerAccessPolicyIamPolicy",
+		"@cdktf/provider-google.accessContextManagerAccessPolicyIamPolicy.AccessContextManagerAccessPolicyIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func AccessContextManagerAccessPolicyIamPolicy_IsTerraformElement(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerAccessPolicyIamPolicy.AccessContextManagerAccessPolicyIamPolicy",
+		"@cdktf/provider-google.accessContextManagerAccessPolicyIamPolicy.AccessContextManagerAccessPolicyIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func AccessContextManagerAccessPolicyIamPolicy_IsTerraformResource(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerAccessPolicyIamPolicy.AccessContextManagerAccessPolicyIamPolicy",
+		"@cdktf/provider-google.accessContextManagerAccessPolicyIamPolicy.AccessContextManagerAccessPolicyIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func AccessContextManagerAccessPolicyIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.accessContextManagerAccessPolicyIamPolicy.AccessContextManagerAccessPolicyIamPolicy",
+		"@cdktf/provider-google.accessContextManagerAccessPolicyIamPolicy.AccessContextManagerAccessPolicyIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

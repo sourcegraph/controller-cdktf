@@ -180,7 +180,7 @@ func NewStatefulSetSpecUpdateStrategyRollingUpdateOutputReference(terraformResou
 	j := jsiiProxy_StatefulSetSpecUpdateStrategyRollingUpdateOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecUpdateStrategyRollingUpdateOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecUpdateStrategyRollingUpdateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewStatefulSetSpecUpdateStrategyRollingUpdateOutputReference_Override(s Sta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecUpdateStrategyRollingUpdateOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecUpdateStrategyRollingUpdateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

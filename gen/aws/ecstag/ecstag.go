@@ -365,7 +365,7 @@ func NewEcsTag(scope constructs.Construct, id *string, config *EcsTagConfig) Ecs
 	j := jsiiProxy_EcsTag{}
 
 	_jsii_.Create(
-		"aws.ecsTag.EcsTag",
+		"@cdktf/provider-aws.ecsTag.EcsTag",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewEcsTag_Override(e EcsTag, scope constructs.Construct, id *string, config
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsTag.EcsTag",
+		"@cdktf/provider-aws.ecsTag.EcsTag",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -522,7 +522,7 @@ func EcsTag_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsTag.EcsTag",
+		"@cdktf/provider-aws.ecsTag.EcsTag",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func EcsTag_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsTag.EcsTag",
+		"@cdktf/provider-aws.ecsTag.EcsTag",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func EcsTag_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsTag.EcsTag",
+		"@cdktf/provider-aws.ecsTag.EcsTag",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func EcsTag_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ecsTag.EcsTag",
+		"@cdktf/provider-aws.ecsTag.EcsTag",
 		"tfResourceType",
 		&returns,
 	)

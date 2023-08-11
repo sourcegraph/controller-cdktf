@@ -366,7 +366,7 @@ func NewIotLoggingOptions(scope constructs.Construct, id *string, config *IotLog
 	j := jsiiProxy_IotLoggingOptions{}
 
 	_jsii_.Create(
-		"aws.iotLoggingOptions.IotLoggingOptions",
+		"@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewIotLoggingOptions_Override(i IotLoggingOptions, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotLoggingOptions.IotLoggingOptions",
+		"@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -523,7 +523,7 @@ func IotLoggingOptions_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotLoggingOptions.IotLoggingOptions",
+		"@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func IotLoggingOptions_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotLoggingOptions.IotLoggingOptions",
+		"@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func IotLoggingOptions_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotLoggingOptions.IotLoggingOptions",
+		"@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func IotLoggingOptions_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iotLoggingOptions.IotLoggingOptions",
+		"@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions",
 		"tfResourceType",
 		&returns,
 	)

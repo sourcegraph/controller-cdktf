@@ -179,7 +179,7 @@ func NewRedshiftScheduledActionTargetActionPauseClusterOutputReference(terraform
 	j := jsiiProxy_RedshiftScheduledActionTargetActionPauseClusterOutputReference{}
 
 	_jsii_.Create(
-		"aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionPauseClusterOutputReference",
+		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionPauseClusterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewRedshiftScheduledActionTargetActionPauseClusterOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionPauseClusterOutputReference",
+		"@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionPauseClusterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

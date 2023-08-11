@@ -203,7 +203,7 @@ func NewMedialiveInputVpcOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_MedialiveInputVpcOutputReference{}
 
 	_jsii_.Create(
-		"aws.medialiveInput.MedialiveInputVpcOutputReference",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputVpcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewMedialiveInputVpcOutputReference_Override(m MedialiveInputVpcOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveInput.MedialiveInputVpcOutputReference",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputVpcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

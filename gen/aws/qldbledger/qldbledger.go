@@ -450,7 +450,7 @@ func NewQldbLedger(scope constructs.Construct, id *string, config *QldbLedgerCon
 	j := jsiiProxy_QldbLedger{}
 
 	_jsii_.Create(
-		"aws.qldbLedger.QldbLedger",
+		"@cdktf/provider-aws.qldbLedger.QldbLedger",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -463,7 +463,7 @@ func NewQldbLedger_Override(q QldbLedger, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.qldbLedger.QldbLedger",
+		"@cdktf/provider-aws.qldbLedger.QldbLedger",
 		[]interface{}{scope, id, config},
 		q,
 	)
@@ -640,7 +640,7 @@ func QldbLedger_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.qldbLedger.QldbLedger",
+		"@cdktf/provider-aws.qldbLedger.QldbLedger",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -659,7 +659,7 @@ func QldbLedger_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.qldbLedger.QldbLedger",
+		"@cdktf/provider-aws.qldbLedger.QldbLedger",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func QldbLedger_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.qldbLedger.QldbLedger",
+		"@cdktf/provider-aws.qldbLedger.QldbLedger",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func QldbLedger_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.qldbLedger.QldbLedger",
+		"@cdktf/provider-aws.qldbLedger.QldbLedger",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewDataAwsAppconfigEnvironmentMonitorList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataAwsAppconfigEnvironmentMonitorList{}
 
 	_jsii_.Create(
-		"aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentMonitorList",
+		"@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentMonitorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsAppconfigEnvironmentMonitorList_Override(d DataAwsAppconfigEnviro
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentMonitorList",
+		"@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentMonitorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

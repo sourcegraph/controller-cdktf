@@ -179,7 +179,7 @@ func NewBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference(terraformRe
 	j := jsiiProxy_BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryDatapolicyDataPolicy.BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference",
+		"@cdktf/provider-google.bigqueryDatapolicyDataPolicy.BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference_Override(b 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryDatapolicyDataPolicy.BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference",
+		"@cdktf/provider-google.bigqueryDatapolicyDataPolicy.BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

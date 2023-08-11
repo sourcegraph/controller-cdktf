@@ -401,7 +401,7 @@ func NewDataprocClusterIamPolicy(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataprocClusterIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataprocClusterIamPolicy.DataprocClusterIamPolicy",
+		"@cdktf/provider-google.dataprocClusterIamPolicy.DataprocClusterIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewDataprocClusterIamPolicy_Override(d DataprocClusterIamPolicy, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocClusterIamPolicy.DataprocClusterIamPolicy",
+		"@cdktf/provider-google.dataprocClusterIamPolicy.DataprocClusterIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -569,7 +569,7 @@ func DataprocClusterIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocClusterIamPolicy.DataprocClusterIamPolicy",
+		"@cdktf/provider-google.dataprocClusterIamPolicy.DataprocClusterIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func DataprocClusterIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocClusterIamPolicy.DataprocClusterIamPolicy",
+		"@cdktf/provider-google.dataprocClusterIamPolicy.DataprocClusterIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func DataprocClusterIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocClusterIamPolicy.DataprocClusterIamPolicy",
+		"@cdktf/provider-google.dataprocClusterIamPolicy.DataprocClusterIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func DataprocClusterIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataprocClusterIamPolicy.DataprocClusterIamPolicy",
+		"@cdktf/provider-google.dataprocClusterIamPolicy.DataprocClusterIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

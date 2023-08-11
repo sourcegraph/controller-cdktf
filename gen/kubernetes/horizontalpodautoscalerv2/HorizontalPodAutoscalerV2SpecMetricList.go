@@ -116,7 +116,7 @@ func NewHorizontalPodAutoscalerV2SpecMetricList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_HorizontalPodAutoscalerV2SpecMetricList{}
 
 	_jsii_.Create(
-		"kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecMetricList",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecMetricList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewHorizontalPodAutoscalerV2SpecMetricList_Override(h HorizontalPodAutoscal
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecMetricList",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecMetricList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		h,
 	)

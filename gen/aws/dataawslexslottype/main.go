@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsLexSlotType.DataAwsLexSlotType",
+		"@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType",
 		reflect.TypeOf((*DataAwsLexSlotType)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,15 +64,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig",
+		"@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig",
 		reflect.TypeOf((*DataAwsLexSlotTypeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLexSlotType.DataAwsLexSlotTypeEnumerationValue",
+		"@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeEnumerationValue",
 		reflect.TypeOf((*DataAwsLexSlotTypeEnumerationValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLexSlotType.DataAwsLexSlotTypeEnumerationValueList",
+		"@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeEnumerationValueList",
 		reflect.TypeOf((*DataAwsLexSlotTypeEnumerationValueList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -92,7 +92,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLexSlotType.DataAwsLexSlotTypeEnumerationValueOutputReference",
+		"@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeEnumerationValueOutputReference",
 		reflect.TypeOf((*DataAwsLexSlotTypeEnumerationValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -286,7 +286,7 @@ func NewGoogleComputeInstanceAttachedDiskOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleComputeInstanceAttachedDiskOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceAttachedDiskOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceAttachedDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -298,7 +298,7 @@ func NewGoogleComputeInstanceAttachedDiskOutputReference_Override(g GoogleComput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceAttachedDiskOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceAttachedDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

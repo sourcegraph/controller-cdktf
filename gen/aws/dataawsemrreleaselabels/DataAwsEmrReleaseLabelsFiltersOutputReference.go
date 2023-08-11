@@ -204,7 +204,7 @@ func NewDataAwsEmrReleaseLabelsFiltersOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataAwsEmrReleaseLabelsFiltersOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsFiltersOutputReference",
+		"@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDataAwsEmrReleaseLabelsFiltersOutputReference_Override(d DataAwsEmrRelea
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsFiltersOutputReference",
+		"@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

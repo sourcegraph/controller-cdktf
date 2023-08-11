@@ -725,7 +725,7 @@ func NewGoogleContainerAttachedCluster(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleContainerAttachedCluster{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAttachedCluster.GoogleContainerAttachedCluster",
+		"@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -738,7 +738,7 @@ func NewGoogleContainerAttachedCluster_Override(g GoogleContainerAttachedCluster
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAttachedCluster.GoogleContainerAttachedCluster",
+		"@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedCluster",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -937,7 +937,7 @@ func GoogleContainerAttachedCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAttachedCluster.GoogleContainerAttachedCluster",
+		"@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -956,7 +956,7 @@ func GoogleContainerAttachedCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAttachedCluster.GoogleContainerAttachedCluster",
+		"@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -975,7 +975,7 @@ func GoogleContainerAttachedCluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAttachedCluster.GoogleContainerAttachedCluster",
+		"@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -988,7 +988,7 @@ func GoogleContainerAttachedCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleContainerAttachedCluster.GoogleContainerAttachedCluster",
+		"@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedCluster",
 		"tfResourceType",
 		&returns,
 	)

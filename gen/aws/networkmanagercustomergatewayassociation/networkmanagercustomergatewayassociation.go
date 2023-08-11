@@ -413,7 +413,7 @@ func NewNetworkmanagerCustomerGatewayAssociation(scope constructs.Construct, id 
 	j := jsiiProxy_NetworkmanagerCustomerGatewayAssociation{}
 
 	_jsii_.Create(
-		"aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation",
+		"@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewNetworkmanagerCustomerGatewayAssociation_Override(n NetworkmanagerCustom
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation",
+		"@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -581,7 +581,7 @@ func NetworkmanagerCustomerGatewayAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation",
+		"@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -600,7 +600,7 @@ func NetworkmanagerCustomerGatewayAssociation_IsTerraformElement(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation",
+		"@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func NetworkmanagerCustomerGatewayAssociation_IsTerraformResource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation",
+		"@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func NetworkmanagerCustomerGatewayAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation",
+		"@cdktf/provider-aws.networkmanagerCustomerGatewayAssociation.NetworkmanagerCustomerGatewayAssociation",
 		"tfResourceType",
 		&returns,
 	)

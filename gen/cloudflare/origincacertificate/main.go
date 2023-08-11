@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.originCaCertificate.OriginCaCertificate",
+		"@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate",
 		reflect.TypeOf((*OriginCaCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.originCaCertificate.OriginCaCertificateConfig",
+		"@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificateConfig",
 		reflect.TypeOf((*OriginCaCertificateConfig)(nil)).Elem(),
 	)
 }

@@ -228,7 +228,7 @@ func NewDataCatalogEntryGroupTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeoutsOutputReference",
+		"@cdktf/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDataCatalogEntryGroupTimeoutsOutputReference_Override(d DataCatalogEntry
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeoutsOutputReference",
+		"@cdktf/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

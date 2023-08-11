@@ -116,7 +116,7 @@ func NewCloudRunV2ServiceTemplateVolumesList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_CloudRunV2ServiceTemplateVolumesList{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesList",
+		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudRunV2ServiceTemplateVolumesList_Override(c CloudRunV2ServiceTemplat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesList",
+		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

@@ -276,7 +276,7 @@ func NewCloudfrontDistributionViewerCertificateOutputReference(terraformResource
 	j := jsiiProxy_CloudfrontDistributionViewerCertificateOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionViewerCertificateOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionViewerCertificateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewCloudfrontDistributionViewerCertificateOutputReference_Override(c Cloudf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionViewerCertificateOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionViewerCertificateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

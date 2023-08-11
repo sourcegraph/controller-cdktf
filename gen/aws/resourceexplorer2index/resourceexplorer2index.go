@@ -376,7 +376,7 @@ func NewResourceexplorer2Index(scope constructs.Construct, id *string, config *R
 	j := jsiiProxy_Resourceexplorer2Index{}
 
 	_jsii_.Create(
-		"aws.resourceexplorer2Index.Resourceexplorer2Index",
+		"@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2Index",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -389,7 +389,7 @@ func NewResourceexplorer2Index_Override(r Resourceexplorer2Index, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.resourceexplorer2Index.Resourceexplorer2Index",
+		"@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2Index",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -511,7 +511,7 @@ func Resourceexplorer2Index_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.resourceexplorer2Index.Resourceexplorer2Index",
+		"@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2Index",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -530,7 +530,7 @@ func Resourceexplorer2Index_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.resourceexplorer2Index.Resourceexplorer2Index",
+		"@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2Index",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -549,7 +549,7 @@ func Resourceexplorer2Index_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.resourceexplorer2Index.Resourceexplorer2Index",
+		"@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2Index",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func Resourceexplorer2Index_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.resourceexplorer2Index.Resourceexplorer2Index",
+		"@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2Index",
 		"tfResourceType",
 		&returns,
 	)

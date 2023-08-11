@@ -496,7 +496,7 @@ func NewGoogleLoggingBillingAccountSink(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleLoggingBillingAccountSink{}
 
 	_jsii_.Create(
-		"google-beta.googleLoggingBillingAccountSink.GoogleLoggingBillingAccountSink",
+		"@cdktf/provider-google-beta.googleLoggingBillingAccountSink.GoogleLoggingBillingAccountSink",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -509,7 +509,7 @@ func NewGoogleLoggingBillingAccountSink_Override(g GoogleLoggingBillingAccountSi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleLoggingBillingAccountSink.GoogleLoggingBillingAccountSink",
+		"@cdktf/provider-google-beta.googleLoggingBillingAccountSink.GoogleLoggingBillingAccountSink",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -686,7 +686,7 @@ func GoogleLoggingBillingAccountSink_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingBillingAccountSink.GoogleLoggingBillingAccountSink",
+		"@cdktf/provider-google-beta.googleLoggingBillingAccountSink.GoogleLoggingBillingAccountSink",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -705,7 +705,7 @@ func GoogleLoggingBillingAccountSink_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingBillingAccountSink.GoogleLoggingBillingAccountSink",
+		"@cdktf/provider-google-beta.googleLoggingBillingAccountSink.GoogleLoggingBillingAccountSink",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -724,7 +724,7 @@ func GoogleLoggingBillingAccountSink_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingBillingAccountSink.GoogleLoggingBillingAccountSink",
+		"@cdktf/provider-google-beta.googleLoggingBillingAccountSink.GoogleLoggingBillingAccountSink",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -737,7 +737,7 @@ func GoogleLoggingBillingAccountSink_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleLoggingBillingAccountSink.GoogleLoggingBillingAccountSink",
+		"@cdktf/provider-google-beta.googleLoggingBillingAccountSink.GoogleLoggingBillingAccountSink",
 		"tfResourceType",
 		&returns,
 	)

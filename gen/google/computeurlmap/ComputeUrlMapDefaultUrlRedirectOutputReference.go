@@ -299,7 +299,7 @@ func NewComputeUrlMapDefaultUrlRedirectOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_ComputeUrlMapDefaultUrlRedirectOutputReference{}
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapDefaultUrlRedirectOutputReference",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapDefaultUrlRedirectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewComputeUrlMapDefaultUrlRedirectOutputReference_Override(c ComputeUrlMapD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapDefaultUrlRedirectOutputReference",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapDefaultUrlRedirectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

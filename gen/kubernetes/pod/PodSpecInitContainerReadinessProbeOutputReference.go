@@ -348,7 +348,7 @@ func NewPodSpecInitContainerReadinessProbeOutputReference(terraformResource cdkt
 	j := jsiiProxy_PodSpecInitContainerReadinessProbeOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecInitContainerReadinessProbeOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecInitContainerReadinessProbeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewPodSpecInitContainerReadinessProbeOutputReference_Override(p PodSpecInit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecInitContainerReadinessProbeOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecInitContainerReadinessProbeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

@@ -557,7 +557,7 @@ func NewLambdaPermission(scope constructs.Construct, id *string, config *LambdaP
 	j := jsiiProxy_LambdaPermission{}
 
 	_jsii_.Create(
-		"aws.lambdaPermission.LambdaPermission",
+		"@cdktf/provider-aws.lambdaPermission.LambdaPermission",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -570,7 +570,7 @@ func NewLambdaPermission_Override(l LambdaPermission, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaPermission.LambdaPermission",
+		"@cdktf/provider-aws.lambdaPermission.LambdaPermission",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -802,7 +802,7 @@ func LambdaPermission_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaPermission.LambdaPermission",
+		"@cdktf/provider-aws.lambdaPermission.LambdaPermission",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -821,7 +821,7 @@ func LambdaPermission_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaPermission.LambdaPermission",
+		"@cdktf/provider-aws.lambdaPermission.LambdaPermission",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -840,7 +840,7 @@ func LambdaPermission_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaPermission.LambdaPermission",
+		"@cdktf/provider-aws.lambdaPermission.LambdaPermission",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -853,7 +853,7 @@ func LambdaPermission_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lambdaPermission.LambdaPermission",
+		"@cdktf/provider-aws.lambdaPermission.LambdaPermission",
 		"tfResourceType",
 		&returns,
 	)

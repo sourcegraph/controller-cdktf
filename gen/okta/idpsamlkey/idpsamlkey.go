@@ -385,7 +385,7 @@ func NewIdpSamlKey(scope constructs.Construct, id *string, config *IdpSamlKeyCon
 	j := jsiiProxy_IdpSamlKey{}
 
 	_jsii_.Create(
-		"okta.idpSamlKey.IdpSamlKey",
+		"@cdktf/provider-okta.idpSamlKey.IdpSamlKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -398,7 +398,7 @@ func NewIdpSamlKey_Override(i IdpSamlKey, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.idpSamlKey.IdpSamlKey",
+		"@cdktf/provider-okta.idpSamlKey.IdpSamlKey",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -520,7 +520,7 @@ func IdpSamlKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.idpSamlKey.IdpSamlKey",
+		"@cdktf/provider-okta.idpSamlKey.IdpSamlKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func IdpSamlKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.idpSamlKey.IdpSamlKey",
+		"@cdktf/provider-okta.idpSamlKey.IdpSamlKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -558,7 +558,7 @@ func IdpSamlKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.idpSamlKey.IdpSamlKey",
+		"@cdktf/provider-okta.idpSamlKey.IdpSamlKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -571,7 +571,7 @@ func IdpSamlKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.idpSamlKey.IdpSamlKey",
+		"@cdktf/provider-okta.idpSamlKey.IdpSamlKey",
 		"tfResourceType",
 		&returns,
 	)

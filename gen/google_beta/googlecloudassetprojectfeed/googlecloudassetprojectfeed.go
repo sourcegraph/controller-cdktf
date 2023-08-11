@@ -521,7 +521,7 @@ func NewGoogleCloudAssetProjectFeed(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleCloudAssetProjectFeed{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeed",
+		"@cdktf/provider-google-beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeed",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -534,7 +534,7 @@ func NewGoogleCloudAssetProjectFeed_Override(g GoogleCloudAssetProjectFeed, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeed",
+		"@cdktf/provider-google-beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeed",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -711,7 +711,7 @@ func GoogleCloudAssetProjectFeed_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeed",
+		"@cdktf/provider-google-beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeed",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -730,7 +730,7 @@ func GoogleCloudAssetProjectFeed_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeed",
+		"@cdktf/provider-google-beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeed",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -749,7 +749,7 @@ func GoogleCloudAssetProjectFeed_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeed",
+		"@cdktf/provider-google-beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeed",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func GoogleCloudAssetProjectFeed_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeed",
+		"@cdktf/provider-google-beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeed",
 		"tfResourceType",
 		&returns,
 	)

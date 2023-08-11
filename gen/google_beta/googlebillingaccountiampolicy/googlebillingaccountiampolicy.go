@@ -353,7 +353,7 @@ func NewGoogleBillingAccountIamPolicy(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleBillingAccountIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy",
+		"@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewGoogleBillingAccountIamPolicy_Override(g GoogleBillingAccountIamPolicy, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy",
+		"@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -499,7 +499,7 @@ func GoogleBillingAccountIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy",
+		"@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func GoogleBillingAccountIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy",
+		"@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func GoogleBillingAccountIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy",
+		"@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func GoogleBillingAccountIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy",
+		"@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

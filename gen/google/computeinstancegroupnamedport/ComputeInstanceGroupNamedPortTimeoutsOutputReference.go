@@ -204,7 +204,7 @@ func NewComputeInstanceGroupNamedPortTimeoutsOutputReference(terraformResource c
 	j := jsiiProxy_ComputeInstanceGroupNamedPortTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortTimeoutsOutputReference",
+		"@cdktf/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeInstanceGroupNamedPortTimeoutsOutputReference_Override(c ComputeI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortTimeoutsOutputReference",
+		"@cdktf/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

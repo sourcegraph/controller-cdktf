@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.codebuildReportGroup.CodebuildReportGroup",
+		"@cdktf/provider-aws.codebuildReportGroup.CodebuildReportGroup",
 		reflect.TypeOf((*CodebuildReportGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildReportGroup.CodebuildReportGroupConfig",
+		"@cdktf/provider-aws.codebuildReportGroup.CodebuildReportGroupConfig",
 		reflect.TypeOf((*CodebuildReportGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildReportGroup.CodebuildReportGroupExportConfig",
+		"@cdktf/provider-aws.codebuildReportGroup.CodebuildReportGroupExportConfig",
 		reflect.TypeOf((*CodebuildReportGroupExportConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildReportGroup.CodebuildReportGroupExportConfigOutputReference",
+		"@cdktf/provider-aws.codebuildReportGroup.CodebuildReportGroupExportConfigOutputReference",
 		reflect.TypeOf((*CodebuildReportGroupExportConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -119,11 +119,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildReportGroup.CodebuildReportGroupExportConfigS3Destination",
+		"@cdktf/provider-aws.codebuildReportGroup.CodebuildReportGroupExportConfigS3Destination",
 		reflect.TypeOf((*CodebuildReportGroupExportConfigS3Destination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildReportGroup.CodebuildReportGroupExportConfigS3DestinationOutputReference",
+		"@cdktf/provider-aws.codebuildReportGroup.CodebuildReportGroupExportConfigS3DestinationOutputReference",
 		reflect.TypeOf((*CodebuildReportGroupExportConfigS3DestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},

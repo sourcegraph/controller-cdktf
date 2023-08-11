@@ -167,7 +167,7 @@ func NewDataAwsAppmeshMeshSpecOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataAwsAppmeshMeshSpecOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecOutputReference",
+		"@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsAppmeshMeshSpecOutputReference_Override(d DataAwsAppmeshMeshSpecO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecOutputReference",
+		"@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

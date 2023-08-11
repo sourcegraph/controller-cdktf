@@ -390,7 +390,7 @@ func NewStatefulSet(scope constructs.Construct, id *string, config *StatefulSetC
 	j := jsiiProxy_StatefulSet{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSet",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewStatefulSet_Override(s StatefulSet, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSet",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSet",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -525,7 +525,7 @@ func StatefulSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.statefulSet.StatefulSet",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -544,7 +544,7 @@ func StatefulSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.statefulSet.StatefulSet",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func StatefulSet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.statefulSet.StatefulSet",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func StatefulSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.statefulSet.StatefulSet",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSet",
 		"tfResourceType",
 		&returns,
 	)

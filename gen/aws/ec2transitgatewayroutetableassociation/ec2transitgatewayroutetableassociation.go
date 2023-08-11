@@ -364,7 +364,7 @@ func NewEc2TransitGatewayRouteTableAssociation(scope constructs.Construct, id *s
 	j := jsiiProxy_Ec2TransitGatewayRouteTableAssociation{}
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayRouteTableAssociation.Ec2TransitGatewayRouteTableAssociation",
+		"@cdktf/provider-aws.ec2TransitGatewayRouteTableAssociation.Ec2TransitGatewayRouteTableAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -377,7 +377,7 @@ func NewEc2TransitGatewayRouteTableAssociation_Override(e Ec2TransitGatewayRoute
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayRouteTableAssociation.Ec2TransitGatewayRouteTableAssociation",
+		"@cdktf/provider-aws.ec2TransitGatewayRouteTableAssociation.Ec2TransitGatewayRouteTableAssociation",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -510,7 +510,7 @@ func Ec2TransitGatewayRouteTableAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayRouteTableAssociation.Ec2TransitGatewayRouteTableAssociation",
+		"@cdktf/provider-aws.ec2TransitGatewayRouteTableAssociation.Ec2TransitGatewayRouteTableAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func Ec2TransitGatewayRouteTableAssociation_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayRouteTableAssociation.Ec2TransitGatewayRouteTableAssociation",
+		"@cdktf/provider-aws.ec2TransitGatewayRouteTableAssociation.Ec2TransitGatewayRouteTableAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -548,7 +548,7 @@ func Ec2TransitGatewayRouteTableAssociation_IsTerraformResource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayRouteTableAssociation.Ec2TransitGatewayRouteTableAssociation",
+		"@cdktf/provider-aws.ec2TransitGatewayRouteTableAssociation.Ec2TransitGatewayRouteTableAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func Ec2TransitGatewayRouteTableAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2TransitGatewayRouteTableAssociation.Ec2TransitGatewayRouteTableAssociation",
+		"@cdktf/provider-aws.ec2TransitGatewayRouteTableAssociation.Ec2TransitGatewayRouteTableAssociation",
 		"tfResourceType",
 		&returns,
 	)

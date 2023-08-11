@@ -228,7 +228,7 @@ func NewGoogleActiveDirectoryPeeringTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleActiveDirectoryPeeringTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeeringTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeeringTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleActiveDirectoryPeeringTimeoutsOutputReference_Override(g GoogleAct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeeringTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeeringTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

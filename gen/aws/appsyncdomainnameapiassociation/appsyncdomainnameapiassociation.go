@@ -342,7 +342,7 @@ func NewAppsyncDomainNameApiAssociation(scope constructs.Construct, id *string, 
 	j := jsiiProxy_AppsyncDomainNameApiAssociation{}
 
 	_jsii_.Create(
-		"aws.appsyncDomainNameApiAssociation.AppsyncDomainNameApiAssociation",
+		"@cdktf/provider-aws.appsyncDomainNameApiAssociation.AppsyncDomainNameApiAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewAppsyncDomainNameApiAssociation_Override(a AppsyncDomainNameApiAssociati
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appsyncDomainNameApiAssociation.AppsyncDomainNameApiAssociation",
+		"@cdktf/provider-aws.appsyncDomainNameApiAssociation.AppsyncDomainNameApiAssociation",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -488,7 +488,7 @@ func AppsyncDomainNameApiAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appsyncDomainNameApiAssociation.AppsyncDomainNameApiAssociation",
+		"@cdktf/provider-aws.appsyncDomainNameApiAssociation.AppsyncDomainNameApiAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func AppsyncDomainNameApiAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appsyncDomainNameApiAssociation.AppsyncDomainNameApiAssociation",
+		"@cdktf/provider-aws.appsyncDomainNameApiAssociation.AppsyncDomainNameApiAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func AppsyncDomainNameApiAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appsyncDomainNameApiAssociation.AppsyncDomainNameApiAssociation",
+		"@cdktf/provider-aws.appsyncDomainNameApiAssociation.AppsyncDomainNameApiAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func AppsyncDomainNameApiAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appsyncDomainNameApiAssociation.AppsyncDomainNameApiAssociation",
+		"@cdktf/provider-aws.appsyncDomainNameApiAssociation.AppsyncDomainNameApiAssociation",
 		"tfResourceType",
 		&returns,
 	)

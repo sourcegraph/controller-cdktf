@@ -498,7 +498,7 @@ func NewDataLossPreventionStoredInfoType(scope constructs.Construct, id *string,
 	j := jsiiProxy_DataLossPreventionStoredInfoType{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoType",
+		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoType",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -511,7 +511,7 @@ func NewDataLossPreventionStoredInfoType_Override(d DataLossPreventionStoredInfo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoType",
+		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoType",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -666,7 +666,7 @@ func DataLossPreventionStoredInfoType_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoType",
+		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoType",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -685,7 +685,7 @@ func DataLossPreventionStoredInfoType_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoType",
+		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoType",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -704,7 +704,7 @@ func DataLossPreventionStoredInfoType_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoType",
+		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoType",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -717,7 +717,7 @@ func DataLossPreventionStoredInfoType_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoType",
+		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoType",
 		"tfResourceType",
 		&returns,
 	)

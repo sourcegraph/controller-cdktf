@@ -156,7 +156,7 @@ func NewWafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference(terrafo
 	j := jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewWafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

@@ -116,7 +116,7 @@ func NewServicecatalogProvisionedProductProvisioningParametersList(terraformReso
 	j := jsiiProxy_ServicecatalogProvisionedProductProvisioningParametersList{}
 
 	_jsii_.Create(
-		"aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductProvisioningParametersList",
+		"@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductProvisioningParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewServicecatalogProvisionedProductProvisioningParametersList_Override(s Se
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductProvisioningParametersList",
+		"@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductProvisioningParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

@@ -116,7 +116,7 @@ func NewCloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyList(
 	j := jsiiProxy_CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyList{}
 
 	_jsii_.Create(
-		"aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyList",
+		"@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyList_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyList",
+		"@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

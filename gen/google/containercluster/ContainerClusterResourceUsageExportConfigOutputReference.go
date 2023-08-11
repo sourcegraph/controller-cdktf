@@ -227,7 +227,7 @@ func NewContainerClusterResourceUsageExportConfigOutputReference(terraformResour
 	j := jsiiProxy_ContainerClusterResourceUsageExportConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewContainerClusterResourceUsageExportConfigOutputReference_Override(c Cont
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

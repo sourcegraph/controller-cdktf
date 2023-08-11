@@ -179,7 +179,7 @@ func NewAppsyncDatasourceLambdaConfigOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_AppsyncDatasourceLambdaConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.appsyncDatasource.AppsyncDatasourceLambdaConfigOutputReference",
+		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceLambdaConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAppsyncDatasourceLambdaConfigOutputReference_Override(a AppsyncDatasourc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appsyncDatasource.AppsyncDatasourceLambdaConfigOutputReference",
+		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceLambdaConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

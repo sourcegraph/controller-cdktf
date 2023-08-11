@@ -204,7 +204,7 @@ func NewAccessPolicyRequireOktaOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_AccessPolicyRequireOktaOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyRequireOktaOutputReference",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireOktaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAccessPolicyRequireOktaOutputReference_Override(a AccessPolicyRequireOkt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyRequireOktaOutputReference",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireOktaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

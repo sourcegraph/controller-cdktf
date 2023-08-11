@@ -227,7 +227,7 @@ func NewWafv2WebAclDefaultActionBlockCustomResponseOutputReference(terraformReso
 	j := jsiiProxy_Wafv2WebAclDefaultActionBlockCustomResponseOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewWafv2WebAclDefaultActionBlockCustomResponseOutputReference_Override(w Wa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

@@ -203,7 +203,7 @@ func NewComputeRegionAutoscalerAutoscalingPolicyCpuUtilizationOutputReference(te
 	j := jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyCpuUtilizationOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyCpuUtilizationOutputReference",
+		"@cdktf/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyCpuUtilizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewComputeRegionAutoscalerAutoscalingPolicyCpuUtilizationOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyCpuUtilizationOutputReference",
+		"@cdktf/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyCpuUtilizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -104,7 +104,7 @@ func NewAppSamlKeysList(terraformResource cdktf.IInterpolatingParent, terraformA
 	j := jsiiProxy_AppSamlKeysList{}
 
 	_jsii_.Create(
-		"okta.appSaml.AppSamlKeysList",
+		"@cdktf/provider-okta.appSaml.AppSamlKeysList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewAppSamlKeysList_Override(a AppSamlKeysList, terraformResource cdktf.IInt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appSaml.AppSamlKeysList",
+		"@cdktf/provider-okta.appSaml.AppSamlKeysList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

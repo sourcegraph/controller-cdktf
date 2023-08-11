@@ -437,7 +437,7 @@ func NewSignerSigningProfilePermission(scope constructs.Construct, id *string, c
 	j := jsiiProxy_SignerSigningProfilePermission{}
 
 	_jsii_.Create(
-		"aws.signerSigningProfilePermission.SignerSigningProfilePermission",
+		"@cdktf/provider-aws.signerSigningProfilePermission.SignerSigningProfilePermission",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -450,7 +450,7 @@ func NewSignerSigningProfilePermission_Override(s SignerSigningProfilePermission
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.signerSigningProfilePermission.SignerSigningProfilePermission",
+		"@cdktf/provider-aws.signerSigningProfilePermission.SignerSigningProfilePermission",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -627,7 +627,7 @@ func SignerSigningProfilePermission_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.signerSigningProfilePermission.SignerSigningProfilePermission",
+		"@cdktf/provider-aws.signerSigningProfilePermission.SignerSigningProfilePermission",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func SignerSigningProfilePermission_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.signerSigningProfilePermission.SignerSigningProfilePermission",
+		"@cdktf/provider-aws.signerSigningProfilePermission.SignerSigningProfilePermission",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func SignerSigningProfilePermission_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.signerSigningProfilePermission.SignerSigningProfilePermission",
+		"@cdktf/provider-aws.signerSigningProfilePermission.SignerSigningProfilePermission",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func SignerSigningProfilePermission_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.signerSigningProfilePermission.SignerSigningProfilePermission",
+		"@cdktf/provider-aws.signerSigningProfilePermission.SignerSigningProfilePermission",
 		"tfResourceType",
 		&returns,
 	)

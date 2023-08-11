@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cloudformationStack.CloudformationStack",
+		"@cdktf/provider-aws.cloudformationStack.CloudformationStack",
 		reflect.TypeOf((*CloudformationStack)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -101,15 +101,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudformationStack.CloudformationStackConfig",
+		"@cdktf/provider-aws.cloudformationStack.CloudformationStackConfig",
 		reflect.TypeOf((*CloudformationStackConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudformationStack.CloudformationStackTimeouts",
+		"@cdktf/provider-aws.cloudformationStack.CloudformationStackTimeouts",
 		reflect.TypeOf((*CloudformationStackTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudformationStack.CloudformationStackTimeoutsOutputReference",
+		"@cdktf/provider-aws.cloudformationStack.CloudformationStackTimeoutsOutputReference",
 		reflect.TypeOf((*CloudformationStackTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

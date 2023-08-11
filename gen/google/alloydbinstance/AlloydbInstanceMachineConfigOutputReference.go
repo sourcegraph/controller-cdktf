@@ -180,7 +180,7 @@ func NewAlloydbInstanceMachineConfigOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_AlloydbInstanceMachineConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.alloydbInstance.AlloydbInstanceMachineConfigOutputReference",
+		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceMachineConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewAlloydbInstanceMachineConfigOutputReference_Override(a AlloydbInstanceMa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.alloydbInstance.AlloydbInstanceMachineConfigOutputReference",
+		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceMachineConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

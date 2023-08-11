@@ -228,7 +228,7 @@ func NewMonitoringNotificationChannelTimeoutsOutputReference(terraformResource c
 	j := jsiiProxy_MonitoringNotificationChannelTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.monitoringNotificationChannel.MonitoringNotificationChannelTimeoutsOutputReference",
+		"@cdktf/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewMonitoringNotificationChannelTimeoutsOutputReference_Override(m Monitori
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringNotificationChannel.MonitoringNotificationChannelTimeoutsOutputReference",
+		"@cdktf/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

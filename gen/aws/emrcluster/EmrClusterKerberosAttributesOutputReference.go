@@ -274,7 +274,7 @@ func NewEmrClusterKerberosAttributesOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_EmrClusterKerberosAttributesOutputReference{}
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterKerberosAttributesOutputReference",
+		"@cdktf/provider-aws.emrCluster.EmrClusterKerberosAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -286,7 +286,7 @@ func NewEmrClusterKerberosAttributesOutputReference_Override(e EmrClusterKerbero
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterKerberosAttributesOutputReference",
+		"@cdktf/provider-aws.emrCluster.EmrClusterKerberosAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

@@ -104,7 +104,7 @@ func NewDataTfeWorkspaceVcsRepoList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_DataTfeWorkspaceVcsRepoList{}
 
 	_jsii_.Create(
-		"tfe.dataTfeWorkspace.DataTfeWorkspaceVcsRepoList",
+		"@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceVcsRepoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataTfeWorkspaceVcsRepoList_Override(d DataTfeWorkspaceVcsRepoList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfeWorkspace.DataTfeWorkspaceVcsRepoList",
+		"@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceVcsRepoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

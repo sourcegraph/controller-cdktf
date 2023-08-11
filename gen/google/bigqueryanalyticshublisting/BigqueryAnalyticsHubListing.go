@@ -662,7 +662,7 @@ func NewBigqueryAnalyticsHubListing(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_BigqueryAnalyticsHubListing{}
 
 	_jsii_.Create(
-		"google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListing",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListing",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -675,7 +675,7 @@ func NewBigqueryAnalyticsHubListing_Override(b BigqueryAnalyticsHubListing, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListing",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListing",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -907,7 +907,7 @@ func BigqueryAnalyticsHubListing_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListing",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListing",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -926,7 +926,7 @@ func BigqueryAnalyticsHubListing_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListing",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListing",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -945,7 +945,7 @@ func BigqueryAnalyticsHubListing_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListing",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListing",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -958,7 +958,7 @@ func BigqueryAnalyticsHubListing_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListing",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListing",
 		"tfResourceType",
 		&returns,
 	)

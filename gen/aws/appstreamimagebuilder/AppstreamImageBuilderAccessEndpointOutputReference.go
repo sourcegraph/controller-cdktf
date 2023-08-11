@@ -203,7 +203,7 @@ func NewAppstreamImageBuilderAccessEndpointOutputReference(terraformResource cdk
 	j := jsiiProxy_AppstreamImageBuilderAccessEndpointOutputReference{}
 
 	_jsii_.Create(
-		"aws.appstreamImageBuilder.AppstreamImageBuilderAccessEndpointOutputReference",
+		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilderAccessEndpointOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAppstreamImageBuilderAccessEndpointOutputReference_Override(a AppstreamI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appstreamImageBuilder.AppstreamImageBuilderAccessEndpointOutputReference",
+		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilderAccessEndpointOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

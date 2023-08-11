@@ -104,7 +104,7 @@ func NewDataAwsInstancePrivateDnsNameOptionsList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataAwsInstancePrivateDnsNameOptionsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstancePrivateDnsNameOptionsList",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstancePrivateDnsNameOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsInstancePrivateDnsNameOptionsList_Override(d DataAwsInstancePriva
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstancePrivateDnsNameOptionsList",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstancePrivateDnsNameOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

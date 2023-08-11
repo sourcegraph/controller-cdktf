@@ -493,7 +493,7 @@ func NewCloudhsmV2Cluster(scope constructs.Construct, id *string, config *Cloudh
 	j := jsiiProxy_CloudhsmV2Cluster{}
 
 	_jsii_.Create(
-		"aws.cloudhsmV2Cluster.CloudhsmV2Cluster",
+		"@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2Cluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -506,7 +506,7 @@ func NewCloudhsmV2Cluster_Override(c CloudhsmV2Cluster, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudhsmV2Cluster.CloudhsmV2Cluster",
+		"@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2Cluster",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -672,7 +672,7 @@ func CloudhsmV2Cluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudhsmV2Cluster.CloudhsmV2Cluster",
+		"@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2Cluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func CloudhsmV2Cluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudhsmV2Cluster.CloudhsmV2Cluster",
+		"@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2Cluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -710,7 +710,7 @@ func CloudhsmV2Cluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudhsmV2Cluster.CloudhsmV2Cluster",
+		"@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2Cluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -723,7 +723,7 @@ func CloudhsmV2Cluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudhsmV2Cluster.CloudhsmV2Cluster",
+		"@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2Cluster",
 		"tfResourceType",
 		&returns,
 	)

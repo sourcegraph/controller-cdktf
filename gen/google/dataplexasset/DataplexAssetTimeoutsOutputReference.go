@@ -228,7 +228,7 @@ func NewDataplexAssetTimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_DataplexAssetTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataplexAsset.DataplexAssetTimeoutsOutputReference",
+		"@cdktf/provider-google.dataplexAsset.DataplexAssetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDataplexAssetTimeoutsOutputReference_Override(d DataplexAssetTimeoutsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexAsset.DataplexAssetTimeoutsOutputReference",
+		"@cdktf/provider-google.dataplexAsset.DataplexAssetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

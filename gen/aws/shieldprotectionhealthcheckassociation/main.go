@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.shieldProtectionHealthCheckAssociation.ShieldProtectionHealthCheckAssociation",
+		"@cdktf/provider-aws.shieldProtectionHealthCheckAssociation.ShieldProtectionHealthCheckAssociation",
 		reflect.TypeOf((*ShieldProtectionHealthCheckAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.shieldProtectionHealthCheckAssociation.ShieldProtectionHealthCheckAssociationConfig",
+		"@cdktf/provider-aws.shieldProtectionHealthCheckAssociation.ShieldProtectionHealthCheckAssociationConfig",
 		reflect.TypeOf((*ShieldProtectionHealthCheckAssociationConfig)(nil)).Elem(),
 	)
 }

@@ -366,7 +366,7 @@ func NewTotalTls(scope constructs.Construct, id *string, config *TotalTlsConfig)
 	j := jsiiProxy_TotalTls{}
 
 	_jsii_.Create(
-		"cloudflare.totalTls.TotalTls",
+		"@cdktf/provider-cloudflare.totalTls.TotalTls",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewTotalTls_Override(t TotalTls, scope constructs.Construct, id *string, co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.totalTls.TotalTls",
+		"@cdktf/provider-cloudflare.totalTls.TotalTls",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -523,7 +523,7 @@ func TotalTls_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.totalTls.TotalTls",
+		"@cdktf/provider-cloudflare.totalTls.TotalTls",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func TotalTls_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.totalTls.TotalTls",
+		"@cdktf/provider-cloudflare.totalTls.TotalTls",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func TotalTls_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.totalTls.TotalTls",
+		"@cdktf/provider-cloudflare.totalTls.TotalTls",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func TotalTls_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.totalTls.TotalTls",
+		"@cdktf/provider-cloudflare.totalTls.TotalTls",
 		"tfResourceType",
 		&returns,
 	)

@@ -179,7 +179,7 @@ func NewGoogleDnsPolicyAlternativeNameServerConfigOutputReference(terraformResou
 	j := jsiiProxy_GoogleDnsPolicyAlternativeNameServerConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDnsPolicy.GoogleDnsPolicyAlternativeNameServerConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicyAlternativeNameServerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleDnsPolicyAlternativeNameServerConfigOutputReference_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDnsPolicy.GoogleDnsPolicyAlternativeNameServerConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicyAlternativeNameServerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

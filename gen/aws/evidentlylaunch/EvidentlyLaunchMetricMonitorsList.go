@@ -116,7 +116,7 @@ func NewEvidentlyLaunchMetricMonitorsList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_EvidentlyLaunchMetricMonitorsList{}
 
 	_jsii_.Create(
-		"aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsList",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEvidentlyLaunchMetricMonitorsList_Override(e EvidentlyLaunchMetricMonito
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsList",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

@@ -116,7 +116,7 @@ func NewLoggingOrganizationSinkExclusionsList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_LoggingOrganizationSinkExclusionsList{}
 
 	_jsii_.Create(
-		"google.loggingOrganizationSink.LoggingOrganizationSinkExclusionsList",
+		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSinkExclusionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLoggingOrganizationSinkExclusionsList_Override(l LoggingOrganizationSink
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingOrganizationSink.LoggingOrganizationSinkExclusionsList",
+		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSinkExclusionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

@@ -180,7 +180,7 @@ func NewEc2FleetSpotOptionsMaintenanceStrategiesOutputReference(terraformResourc
 	j := jsiiProxy_Ec2FleetSpotOptionsMaintenanceStrategiesOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesOutputReference",
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewEc2FleetSpotOptionsMaintenanceStrategiesOutputReference_Override(e Ec2Fl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesOutputReference",
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

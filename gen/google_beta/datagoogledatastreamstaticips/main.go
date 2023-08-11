@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps",
+		"@cdktf/provider-google-beta.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps",
 		reflect.TypeOf((*DataGoogleDatastreamStaticIps)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig",
+		"@cdktf/provider-google-beta.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig",
 		reflect.TypeOf((*DataGoogleDatastreamStaticIpsConfig)(nil)).Elem(),
 	)
 }

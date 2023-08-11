@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dbSecurityGroup.DbSecurityGroup",
+		"@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroup",
 		reflect.TypeOf((*DbSecurityGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbSecurityGroup.DbSecurityGroupConfig",
+		"@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupConfig",
 		reflect.TypeOf((*DbSecurityGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbSecurityGroup.DbSecurityGroupIngress",
+		"@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngress",
 		reflect.TypeOf((*DbSecurityGroupIngress)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dbSecurityGroup.DbSecurityGroupIngressList",
+		"@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngressList",
 		reflect.TypeOf((*DbSecurityGroupIngressList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -99,7 +99,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dbSecurityGroup.DbSecurityGroupIngressOutputReference",
+		"@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngressOutputReference",
 		reflect.TypeOf((*DbSecurityGroupIngressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},

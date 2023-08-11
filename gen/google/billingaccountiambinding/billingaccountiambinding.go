@@ -400,7 +400,7 @@ func NewBillingAccountIamBinding(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_BillingAccountIamBinding{}
 
 	_jsii_.Create(
-		"google.billingAccountIamBinding.BillingAccountIamBinding",
+		"@cdktf/provider-google.billingAccountIamBinding.BillingAccountIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewBillingAccountIamBinding_Override(b BillingAccountIamBinding, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.billingAccountIamBinding.BillingAccountIamBinding",
+		"@cdktf/provider-google.billingAccountIamBinding.BillingAccountIamBinding",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -557,7 +557,7 @@ func BillingAccountIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.billingAccountIamBinding.BillingAccountIamBinding",
+		"@cdktf/provider-google.billingAccountIamBinding.BillingAccountIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func BillingAccountIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.billingAccountIamBinding.BillingAccountIamBinding",
+		"@cdktf/provider-google.billingAccountIamBinding.BillingAccountIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func BillingAccountIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.billingAccountIamBinding.BillingAccountIamBinding",
+		"@cdktf/provider-google.billingAccountIamBinding.BillingAccountIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func BillingAccountIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.billingAccountIamBinding.BillingAccountIamBinding",
+		"@cdktf/provider-google.billingAccountIamBinding.BillingAccountIamBinding",
 		"tfResourceType",
 		&returns,
 	)

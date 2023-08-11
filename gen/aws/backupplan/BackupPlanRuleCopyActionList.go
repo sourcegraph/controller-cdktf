@@ -116,7 +116,7 @@ func NewBackupPlanRuleCopyActionList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_BackupPlanRuleCopyActionList{}
 
 	_jsii_.Create(
-		"aws.backupPlan.BackupPlanRuleCopyActionList",
+		"@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewBackupPlanRuleCopyActionList_Override(b BackupPlanRuleCopyActionList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupPlan.BackupPlanRuleCopyActionList",
+		"@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)

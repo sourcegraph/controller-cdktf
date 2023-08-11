@@ -204,7 +204,7 @@ func NewManifestWaitConditionOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_ManifestWaitConditionOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.manifest.ManifestWaitConditionOutputReference",
+		"@cdktf/provider-kubernetes.manifest.ManifestWaitConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewManifestWaitConditionOutputReference_Override(m ManifestWaitConditionOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.manifest.ManifestWaitConditionOutputReference",
+		"@cdktf/provider-kubernetes.manifest.ManifestWaitConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

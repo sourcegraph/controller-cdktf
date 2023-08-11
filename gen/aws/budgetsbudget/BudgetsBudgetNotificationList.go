@@ -116,7 +116,7 @@ func NewBudgetsBudgetNotificationList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_BudgetsBudgetNotificationList{}
 
 	_jsii_.Create(
-		"aws.budgetsBudget.BudgetsBudgetNotificationList",
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotificationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewBudgetsBudgetNotificationList_Override(b BudgetsBudgetNotificationList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.budgetsBudget.BudgetsBudgetNotificationList",
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotificationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)

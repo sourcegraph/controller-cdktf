@@ -179,7 +179,7 @@ func NewComputeInstanceTemplateConfidentialInstanceConfigOutputReference(terrafo
 	j := jsiiProxy_ComputeInstanceTemplateConfidentialInstanceConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstanceTemplate.ComputeInstanceTemplateConfidentialInstanceConfigOutputReference",
+		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateConfidentialInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewComputeInstanceTemplateConfidentialInstanceConfigOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceTemplate.ComputeInstanceTemplateConfidentialInstanceConfigOutputReference",
+		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateConfidentialInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

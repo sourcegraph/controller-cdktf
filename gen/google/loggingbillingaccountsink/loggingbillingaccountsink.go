@@ -496,7 +496,7 @@ func NewLoggingBillingAccountSink(scope constructs.Construct, id *string, config
 	j := jsiiProxy_LoggingBillingAccountSink{}
 
 	_jsii_.Create(
-		"google.loggingBillingAccountSink.LoggingBillingAccountSink",
+		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -509,7 +509,7 @@ func NewLoggingBillingAccountSink_Override(l LoggingBillingAccountSink, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingBillingAccountSink.LoggingBillingAccountSink",
+		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -686,7 +686,7 @@ func LoggingBillingAccountSink_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingBillingAccountSink.LoggingBillingAccountSink",
+		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -705,7 +705,7 @@ func LoggingBillingAccountSink_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingBillingAccountSink.LoggingBillingAccountSink",
+		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -724,7 +724,7 @@ func LoggingBillingAccountSink_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingBillingAccountSink.LoggingBillingAccountSink",
+		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -737,7 +737,7 @@ func LoggingBillingAccountSink_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.loggingBillingAccountSink.LoggingBillingAccountSink",
+		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink",
 		"tfResourceType",
 		&returns,
 	)

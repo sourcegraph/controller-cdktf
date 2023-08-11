@@ -116,7 +116,7 @@ func NewSesReceiptRuleStopActionList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_SesReceiptRuleStopActionList{}
 
 	_jsii_.Create(
-		"aws.sesReceiptRule.SesReceiptRuleStopActionList",
+		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSesReceiptRuleStopActionList_Override(s SesReceiptRuleStopActionList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesReceiptRule.SesReceiptRuleStopActionList",
+		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

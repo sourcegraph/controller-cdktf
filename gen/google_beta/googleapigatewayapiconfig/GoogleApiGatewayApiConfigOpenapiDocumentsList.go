@@ -116,7 +116,7 @@ func NewGoogleApiGatewayApiConfigOpenapiDocumentsList(terraformResource cdktf.II
 	j := jsiiProxy_GoogleApiGatewayApiConfigOpenapiDocumentsList{}
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigOpenapiDocumentsList",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigOpenapiDocumentsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleApiGatewayApiConfigOpenapiDocumentsList_Override(g GoogleApiGatewa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigOpenapiDocumentsList",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigOpenapiDocumentsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

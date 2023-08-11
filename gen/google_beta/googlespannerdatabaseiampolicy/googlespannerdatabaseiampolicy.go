@@ -400,7 +400,7 @@ func NewGoogleSpannerDatabaseIamPolicy(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleSpannerDatabaseIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleSpannerDatabaseIamPolicy.GoogleSpannerDatabaseIamPolicy",
+		"@cdktf/provider-google-beta.googleSpannerDatabaseIamPolicy.GoogleSpannerDatabaseIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleSpannerDatabaseIamPolicy_Override(g GoogleSpannerDatabaseIamPolicy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSpannerDatabaseIamPolicy.GoogleSpannerDatabaseIamPolicy",
+		"@cdktf/provider-google-beta.googleSpannerDatabaseIamPolicy.GoogleSpannerDatabaseIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -568,7 +568,7 @@ func GoogleSpannerDatabaseIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSpannerDatabaseIamPolicy.GoogleSpannerDatabaseIamPolicy",
+		"@cdktf/provider-google-beta.googleSpannerDatabaseIamPolicy.GoogleSpannerDatabaseIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -587,7 +587,7 @@ func GoogleSpannerDatabaseIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSpannerDatabaseIamPolicy.GoogleSpannerDatabaseIamPolicy",
+		"@cdktf/provider-google-beta.googleSpannerDatabaseIamPolicy.GoogleSpannerDatabaseIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -606,7 +606,7 @@ func GoogleSpannerDatabaseIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSpannerDatabaseIamPolicy.GoogleSpannerDatabaseIamPolicy",
+		"@cdktf/provider-google-beta.googleSpannerDatabaseIamPolicy.GoogleSpannerDatabaseIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func GoogleSpannerDatabaseIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleSpannerDatabaseIamPolicy.GoogleSpannerDatabaseIamPolicy",
+		"@cdktf/provider-google-beta.googleSpannerDatabaseIamPolicy.GoogleSpannerDatabaseIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

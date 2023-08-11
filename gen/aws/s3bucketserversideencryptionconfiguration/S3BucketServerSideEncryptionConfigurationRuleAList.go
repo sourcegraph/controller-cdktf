@@ -116,7 +116,7 @@ func NewS3BucketServerSideEncryptionConfigurationRuleAList(terraformResource cdk
 	j := jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAList{}
 
 	_jsii_.Create(
-		"aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleAList",
+		"@cdktf/provider-aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleAList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewS3BucketServerSideEncryptionConfigurationRuleAList_Override(s S3BucketSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleAList",
+		"@cdktf/provider-aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleAList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

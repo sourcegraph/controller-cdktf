@@ -180,7 +180,7 @@ func NewAcmpcaCertificateAuthorityTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_AcmpcaCertificateAuthorityTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityTimeoutsOutputReference",
+		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewAcmpcaCertificateAuthorityTimeoutsOutputReference_Override(a AcmpcaCerti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityTimeoutsOutputReference",
+		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

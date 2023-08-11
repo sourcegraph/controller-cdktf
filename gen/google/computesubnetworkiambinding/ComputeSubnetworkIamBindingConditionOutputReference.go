@@ -226,7 +226,7 @@ func NewComputeSubnetworkIamBindingConditionOutputReference(terraformResource cd
 	j := jsiiProxy_ComputeSubnetworkIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConditionOutputReference",
+		"@cdktf/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewComputeSubnetworkIamBindingConditionOutputReference_Override(c ComputeSu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConditionOutputReference",
+		"@cdktf/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

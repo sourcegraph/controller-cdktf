@@ -228,7 +228,7 @@ func NewEnvEnvValueFromConfigMapKeyRefOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_EnvEnvValueFromConfigMapKeyRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.env.EnvEnvValueFromConfigMapKeyRefOutputReference",
+		"@cdktf/provider-kubernetes.env.EnvEnvValueFromConfigMapKeyRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewEnvEnvValueFromConfigMapKeyRefOutputReference_Override(e EnvEnvValueFrom
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.env.EnvEnvValueFromConfigMapKeyRefOutputReference",
+		"@cdktf/provider-kubernetes.env.EnvEnvValueFromConfigMapKeyRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

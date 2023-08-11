@@ -203,7 +203,7 @@ func NewNotebooksEnvironmentContainerImageOutputReference(terraformResource cdkt
 	j := jsiiProxy_NotebooksEnvironmentContainerImageOutputReference{}
 
 	_jsii_.Create(
-		"google.notebooksEnvironment.NotebooksEnvironmentContainerImageOutputReference",
+		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironmentContainerImageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewNotebooksEnvironmentContainerImageOutputReference_Override(n NotebooksEn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.notebooksEnvironment.NotebooksEnvironmentContainerImageOutputReference",
+		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironmentContainerImageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

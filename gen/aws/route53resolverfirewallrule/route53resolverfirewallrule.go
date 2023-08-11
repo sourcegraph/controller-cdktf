@@ -507,7 +507,7 @@ func NewRoute53ResolverFirewallRule(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_Route53ResolverFirewallRule{}
 
 	_jsii_.Create(
-		"aws.route53ResolverFirewallRule.Route53ResolverFirewallRule",
+		"@cdktf/provider-aws.route53ResolverFirewallRule.Route53ResolverFirewallRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -520,7 +520,7 @@ func NewRoute53ResolverFirewallRule_Override(r Route53ResolverFirewallRule, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53ResolverFirewallRule.Route53ResolverFirewallRule",
+		"@cdktf/provider-aws.route53ResolverFirewallRule.Route53ResolverFirewallRule",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -730,7 +730,7 @@ func Route53ResolverFirewallRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverFirewallRule.Route53ResolverFirewallRule",
+		"@cdktf/provider-aws.route53ResolverFirewallRule.Route53ResolverFirewallRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -749,7 +749,7 @@ func Route53ResolverFirewallRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverFirewallRule.Route53ResolverFirewallRule",
+		"@cdktf/provider-aws.route53ResolverFirewallRule.Route53ResolverFirewallRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -768,7 +768,7 @@ func Route53ResolverFirewallRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverFirewallRule.Route53ResolverFirewallRule",
+		"@cdktf/provider-aws.route53ResolverFirewallRule.Route53ResolverFirewallRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -781,7 +781,7 @@ func Route53ResolverFirewallRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53ResolverFirewallRule.Route53ResolverFirewallRule",
+		"@cdktf/provider-aws.route53ResolverFirewallRule.Route53ResolverFirewallRule",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewDataprocClusterClusterConfigMasterConfigAcceleratorsList(terraformResour
 	j := jsiiProxy_DataprocClusterClusterConfigMasterConfigAcceleratorsList{}
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsList",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataprocClusterClusterConfigMasterConfigAcceleratorsList_Override(d Data
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsList",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

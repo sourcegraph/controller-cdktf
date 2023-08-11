@@ -250,7 +250,7 @@ func NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeO
 	j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

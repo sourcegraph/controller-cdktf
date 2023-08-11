@@ -104,7 +104,7 @@ func NewDataGoogleRedisInstanceMaintenancePolicyList(terraformResource cdktf.IIn
 	j := jsiiProxy_DataGoogleRedisInstanceMaintenancePolicyList{}
 
 	_jsii_.Create(
-		"google.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyList",
+		"@cdktf/provider-google.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleRedisInstanceMaintenancePolicyList_Override(d DataGoogleRedisI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyList",
+		"@cdktf/provider-google.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

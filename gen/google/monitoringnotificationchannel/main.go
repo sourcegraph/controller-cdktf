@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.monitoringNotificationChannel.MonitoringNotificationChannel",
+		"@cdktf/provider-google.monitoringNotificationChannel.MonitoringNotificationChannel",
 		reflect.TypeOf((*MonitoringNotificationChannel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,15 +88,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringNotificationChannel.MonitoringNotificationChannelConfig",
+		"@cdktf/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelConfig",
 		reflect.TypeOf((*MonitoringNotificationChannelConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabels",
+		"@cdktf/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabels",
 		reflect.TypeOf((*MonitoringNotificationChannelSensitiveLabels)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference",
+		"@cdktf/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference",
 		reflect.TypeOf((*MonitoringNotificationChannelSensitiveLabelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authToken", GoGetter: "AuthToken"},
@@ -137,11 +137,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringNotificationChannel.MonitoringNotificationChannelTimeouts",
+		"@cdktf/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelTimeouts",
 		reflect.TypeOf((*MonitoringNotificationChannelTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringNotificationChannel.MonitoringNotificationChannelTimeoutsOutputReference",
+		"@cdktf/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelTimeoutsOutputReference",
 		reflect.TypeOf((*MonitoringNotificationChannelTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

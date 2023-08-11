@@ -228,7 +228,7 @@ func NewSplitTunnelTunnelsOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_SplitTunnelTunnelsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.splitTunnel.SplitTunnelTunnelsOutputReference",
+		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnelTunnelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSplitTunnelTunnelsOutputReference_Override(s SplitTunnelTunnelsOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.splitTunnel.SplitTunnelTunnelsOutputReference",
+		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnelTunnelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

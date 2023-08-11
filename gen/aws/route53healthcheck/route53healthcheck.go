@@ -834,7 +834,7 @@ func NewRoute53HealthCheck(scope constructs.Construct, id *string, config *Route
 	j := jsiiProxy_Route53HealthCheck{}
 
 	_jsii_.Create(
-		"aws.route53HealthCheck.Route53HealthCheck",
+		"@cdktf/provider-aws.route53HealthCheck.Route53HealthCheck",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -847,7 +847,7 @@ func NewRoute53HealthCheck_Override(r Route53HealthCheck, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53HealthCheck.Route53HealthCheck",
+		"@cdktf/provider-aws.route53HealthCheck.Route53HealthCheck",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -1200,7 +1200,7 @@ func Route53HealthCheck_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53HealthCheck.Route53HealthCheck",
+		"@cdktf/provider-aws.route53HealthCheck.Route53HealthCheck",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1219,7 +1219,7 @@ func Route53HealthCheck_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53HealthCheck.Route53HealthCheck",
+		"@cdktf/provider-aws.route53HealthCheck.Route53HealthCheck",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1238,7 +1238,7 @@ func Route53HealthCheck_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53HealthCheck.Route53HealthCheck",
+		"@cdktf/provider-aws.route53HealthCheck.Route53HealthCheck",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1251,7 +1251,7 @@ func Route53HealthCheck_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53HealthCheck.Route53HealthCheck",
+		"@cdktf/provider-aws.route53HealthCheck.Route53HealthCheck",
 		"tfResourceType",
 		&returns,
 	)

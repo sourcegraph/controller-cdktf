@@ -116,7 +116,7 @@ func NewNetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionList(ter
 	j := jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionList{}
 
 	_jsii_.Create(
-		"aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionList",
+		"@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewNetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionList_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionList",
+		"@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

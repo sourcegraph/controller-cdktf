@@ -116,7 +116,7 @@ func NewCodebuildProjectEnvironmentEnvironmentVariableList(terraformResource cdk
 	j := jsiiProxy_CodebuildProjectEnvironmentEnvironmentVariableList{}
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectEnvironmentEnvironmentVariableList",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentEnvironmentVariableList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCodebuildProjectEnvironmentEnvironmentVariableList_Override(c CodebuildP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectEnvironmentEnvironmentVariableList",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentEnvironmentVariableList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

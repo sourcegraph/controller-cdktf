@@ -533,7 +533,7 @@ func NewComputeSecurityPolicy(scope constructs.Construct, id *string, config *Co
 	j := jsiiProxy_ComputeSecurityPolicy{}
 
 	_jsii_.Create(
-		"google.computeSecurityPolicy.ComputeSecurityPolicy",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -546,7 +546,7 @@ func NewComputeSecurityPolicy_Override(c ComputeSecurityPolicy, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSecurityPolicy.ComputeSecurityPolicy",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -701,7 +701,7 @@ func ComputeSecurityPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSecurityPolicy.ComputeSecurityPolicy",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -720,7 +720,7 @@ func ComputeSecurityPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSecurityPolicy.ComputeSecurityPolicy",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -739,7 +739,7 @@ func ComputeSecurityPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSecurityPolicy.ComputeSecurityPolicy",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -752,7 +752,7 @@ func ComputeSecurityPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeSecurityPolicy.ComputeSecurityPolicy",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicy",
 		"tfResourceType",
 		&returns,
 	)

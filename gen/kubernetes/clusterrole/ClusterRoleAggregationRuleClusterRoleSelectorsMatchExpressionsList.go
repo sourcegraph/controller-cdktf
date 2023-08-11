@@ -116,7 +116,7 @@ func NewClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList(terra
 	j := jsiiProxy_ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList{}
 
 	_jsii_.Create(
-		"kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList",
+		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList",
+		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

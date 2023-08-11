@@ -645,7 +645,7 @@ func NewGooglePrivatecaCertificate(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GooglePrivatecaCertificate{}
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificate",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -658,7 +658,7 @@ func NewGooglePrivatecaCertificate_Override(g GooglePrivatecaCertificate, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificate",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificate",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -868,7 +868,7 @@ func GooglePrivatecaCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificate",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -887,7 +887,7 @@ func GooglePrivatecaCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificate",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -906,7 +906,7 @@ func GooglePrivatecaCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificate",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -919,7 +919,7 @@ func GooglePrivatecaCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificate",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificate",
 		"tfResourceType",
 		&returns,
 	)

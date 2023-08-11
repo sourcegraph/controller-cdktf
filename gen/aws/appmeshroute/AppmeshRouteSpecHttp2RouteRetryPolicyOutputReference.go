@@ -250,7 +250,7 @@ func NewAppmeshRouteSpecHttp2RouteRetryPolicyOutputReference(terraformResource c
 	j := jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewAppmeshRouteSpecHttp2RouteRetryPolicyOutputReference_Override(a AppmeshR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

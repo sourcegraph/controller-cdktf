@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.bigqueryReservationAssignment.BigqueryReservationAssignment",
+		"@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment",
 		reflect.TypeOf((*BigqueryReservationAssignment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig",
+		"@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig",
 		reflect.TypeOf((*BigqueryReservationAssignmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts",
+		"@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts",
 		reflect.TypeOf((*BigqueryReservationAssignmentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference",
 		reflect.TypeOf((*BigqueryReservationAssignmentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

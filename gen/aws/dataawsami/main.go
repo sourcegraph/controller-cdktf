@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsAmi.DataAwsAmi",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmi",
 		reflect.TypeOf((*DataAwsAmi)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -110,11 +110,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAmi.DataAwsAmiBlockDeviceMappings",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmiBlockDeviceMappings",
 		reflect.TypeOf((*DataAwsAmiBlockDeviceMappings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAmi.DataAwsAmiBlockDeviceMappingsList",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmiBlockDeviceMappingsList",
 		reflect.TypeOf((*DataAwsAmiBlockDeviceMappingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -134,7 +134,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAmi.DataAwsAmiBlockDeviceMappingsOutputReference",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmiBlockDeviceMappingsOutputReference",
 		reflect.TypeOf((*DataAwsAmiBlockDeviceMappingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -170,15 +170,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAmi.DataAwsAmiConfig",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmiConfig",
 		reflect.TypeOf((*DataAwsAmiConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAmi.DataAwsAmiFilter",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmiFilter",
 		reflect.TypeOf((*DataAwsAmiFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAmi.DataAwsAmiFilterList",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmiFilterList",
 		reflect.TypeOf((*DataAwsAmiFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -199,7 +199,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAmi.DataAwsAmiFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmiFilterOutputReference",
 		reflect.TypeOf((*DataAwsAmiFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -235,11 +235,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAmi.DataAwsAmiProductCodes",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmiProductCodes",
 		reflect.TypeOf((*DataAwsAmiProductCodes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAmi.DataAwsAmiProductCodesList",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmiProductCodesList",
 		reflect.TypeOf((*DataAwsAmiProductCodesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -259,7 +259,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAmi.DataAwsAmiProductCodesOutputReference",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmiProductCodesOutputReference",
 		reflect.TypeOf((*DataAwsAmiProductCodesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -293,11 +293,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAmi.DataAwsAmiTimeouts",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmiTimeouts",
 		reflect.TypeOf((*DataAwsAmiTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAmi.DataAwsAmiTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmiTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsAmiTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

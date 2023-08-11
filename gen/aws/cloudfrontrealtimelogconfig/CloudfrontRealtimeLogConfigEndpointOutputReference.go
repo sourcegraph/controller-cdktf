@@ -202,7 +202,7 @@ func NewCloudfrontRealtimeLogConfigEndpointOutputReference(terraformResource cdk
 	j := jsiiProxy_CloudfrontRealtimeLogConfigEndpointOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigEndpointOutputReference",
+		"@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigEndpointOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewCloudfrontRealtimeLogConfigEndpointOutputReference_Override(c Cloudfront
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigEndpointOutputReference",
+		"@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigEndpointOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

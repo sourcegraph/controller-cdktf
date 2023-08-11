@@ -116,7 +116,7 @@ func NewGlueTriggerPredicateConditionsList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_GlueTriggerPredicateConditionsList{}
 
 	_jsii_.Create(
-		"aws.glueTrigger.GlueTriggerPredicateConditionsList",
+		"@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGlueTriggerPredicateConditionsList_Override(g GlueTriggerPredicateCondit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueTrigger.GlueTriggerPredicateConditionsList",
+		"@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

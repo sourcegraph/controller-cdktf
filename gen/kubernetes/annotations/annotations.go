@@ -436,7 +436,7 @@ func NewAnnotations(scope constructs.Construct, id *string, config *AnnotationsC
 	j := jsiiProxy_Annotations{}
 
 	_jsii_.Create(
-		"kubernetes.annotations.Annotations",
+		"@cdktf/provider-kubernetes.annotations.Annotations",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -449,7 +449,7 @@ func NewAnnotations_Override(a Annotations, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.annotations.Annotations",
+		"@cdktf/provider-kubernetes.annotations.Annotations",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -615,7 +615,7 @@ func Annotations_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.annotations.Annotations",
+		"@cdktf/provider-kubernetes.annotations.Annotations",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func Annotations_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.annotations.Annotations",
+		"@cdktf/provider-kubernetes.annotations.Annotations",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func Annotations_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.annotations.Annotations",
+		"@cdktf/provider-kubernetes.annotations.Annotations",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func Annotations_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.annotations.Annotations",
+		"@cdktf/provider-kubernetes.annotations.Annotations",
 		"tfResourceType",
 		&returns,
 	)

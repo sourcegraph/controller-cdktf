@@ -366,7 +366,7 @@ func NewElasticacheSecurityGroup(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_ElasticacheSecurityGroup{}
 
 	_jsii_.Create(
-		"aws.elasticacheSecurityGroup.ElasticacheSecurityGroup",
+		"@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewElasticacheSecurityGroup_Override(e ElasticacheSecurityGroup, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticacheSecurityGroup.ElasticacheSecurityGroup",
+		"@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroup",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -523,7 +523,7 @@ func ElasticacheSecurityGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticacheSecurityGroup.ElasticacheSecurityGroup",
+		"@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func ElasticacheSecurityGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticacheSecurityGroup.ElasticacheSecurityGroup",
+		"@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func ElasticacheSecurityGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticacheSecurityGroup.ElasticacheSecurityGroup",
+		"@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func ElasticacheSecurityGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.elasticacheSecurityGroup.ElasticacheSecurityGroup",
+		"@cdktf/provider-aws.elasticacheSecurityGroup.ElasticacheSecurityGroup",
 		"tfResourceType",
 		&returns,
 	)

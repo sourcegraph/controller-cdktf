@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.configAggregateAuthorization.ConfigAggregateAuthorization",
+		"@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization",
 		reflect.TypeOf((*ConfigAggregateAuthorization)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig",
+		"@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig",
 		reflect.TypeOf((*ConfigAggregateAuthorizationConfig)(nil)).Elem(),
 	)
 }

@@ -300,7 +300,7 @@ func NewGoogleContainerClusterIpAllocationPolicyOutputReference(terraformResourc
 	j := jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterIpAllocationPolicyOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterIpAllocationPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewGoogleContainerClusterIpAllocationPolicyOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterIpAllocationPolicyOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterIpAllocationPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

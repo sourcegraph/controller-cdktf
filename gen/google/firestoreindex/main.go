@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.firestoreIndex.FirestoreIndex",
+		"@cdktf/provider-google.firestoreIndex.FirestoreIndex",
 		reflect.TypeOf((*FirestoreIndex)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.firestoreIndex.FirestoreIndexConfig",
+		"@cdktf/provider-google.firestoreIndex.FirestoreIndexConfig",
 		reflect.TypeOf((*FirestoreIndexConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.firestoreIndex.FirestoreIndexFields",
+		"@cdktf/provider-google.firestoreIndex.FirestoreIndexFields",
 		reflect.TypeOf((*FirestoreIndexFields)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.firestoreIndex.FirestoreIndexFieldsList",
+		"@cdktf/provider-google.firestoreIndex.FirestoreIndexFieldsList",
 		reflect.TypeOf((*FirestoreIndexFieldsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.firestoreIndex.FirestoreIndexFieldsOutputReference",
+		"@cdktf/provider-google.firestoreIndex.FirestoreIndexFieldsOutputReference",
 		reflect.TypeOf((*FirestoreIndexFieldsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arrayConfig", GoGetter: "ArrayConfig"},
@@ -144,11 +144,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.firestoreIndex.FirestoreIndexTimeouts",
+		"@cdktf/provider-google.firestoreIndex.FirestoreIndexTimeouts",
 		reflect.TypeOf((*FirestoreIndexTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.firestoreIndex.FirestoreIndexTimeoutsOutputReference",
+		"@cdktf/provider-google.firestoreIndex.FirestoreIndexTimeoutsOutputReference",
 		reflect.TypeOf((*FirestoreIndexTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

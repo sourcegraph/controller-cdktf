@@ -407,7 +407,7 @@ func NewDataAwsSsoadminPermissionSet(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataAwsSsoadminPermissionSet{}
 
 	_jsii_.Create(
-		"aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet",
+		"@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -420,7 +420,7 @@ func NewDataAwsSsoadminPermissionSet_Override(d DataAwsSsoadminPermissionSet, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet",
+		"@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -553,7 +553,7 @@ func DataAwsSsoadminPermissionSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet",
+		"@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func DataAwsSsoadminPermissionSet_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet",
+		"@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -591,7 +591,7 @@ func DataAwsSsoadminPermissionSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet",
+		"@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -604,7 +604,7 @@ func DataAwsSsoadminPermissionSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet",
+		"@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet",
 		"tfResourceType",
 		&returns,
 	)

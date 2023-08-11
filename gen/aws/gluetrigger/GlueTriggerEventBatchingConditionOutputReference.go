@@ -203,7 +203,7 @@ func NewGlueTriggerEventBatchingConditionOutputReference(terraformResource cdktf
 	j := jsiiProxy_GlueTriggerEventBatchingConditionOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueTrigger.GlueTriggerEventBatchingConditionOutputReference",
+		"@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGlueTriggerEventBatchingConditionOutputReference_Override(g GlueTriggerE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueTrigger.GlueTriggerEventBatchingConditionOutputReference",
+		"@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

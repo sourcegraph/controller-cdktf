@@ -104,7 +104,7 @@ func NewElasticacheClusterCacheNodesList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_ElasticacheClusterCacheNodesList{}
 
 	_jsii_.Create(
-		"aws.elasticacheCluster.ElasticacheClusterCacheNodesList",
+		"@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterCacheNodesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewElasticacheClusterCacheNodesList_Override(e ElasticacheClusterCacheNodes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticacheCluster.ElasticacheClusterCacheNodesList",
+		"@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterCacheNodesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

@@ -203,7 +203,7 @@ func NewContainerClusterDatabaseEncryptionOutputReference(terraformResource cdkt
 	j := jsiiProxy_ContainerClusterDatabaseEncryptionOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterDatabaseEncryptionOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterDatabaseEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewContainerClusterDatabaseEncryptionOutputReference_Override(c ContainerCl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterDatabaseEncryptionOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterDatabaseEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

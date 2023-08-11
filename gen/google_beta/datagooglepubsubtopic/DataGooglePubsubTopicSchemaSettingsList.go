@@ -104,7 +104,7 @@ func NewDataGooglePubsubTopicSchemaSettingsList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataGooglePubsubTopicSchemaSettingsList{}
 
 	_jsii_.Create(
-		"google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsList",
+		"@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGooglePubsubTopicSchemaSettingsList_Override(d DataGooglePubsubTopic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsList",
+		"@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

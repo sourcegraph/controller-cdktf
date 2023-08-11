@@ -179,7 +179,7 @@ func NewGoogleContainerClusterServiceExternalIpsConfigOutputReference(terraformR
 	j := jsiiProxy_GoogleContainerClusterServiceExternalIpsConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterServiceExternalIpsConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterServiceExternalIpsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleContainerClusterServiceExternalIpsConfigOutputReference_Override(g
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterServiceExternalIpsConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterServiceExternalIpsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

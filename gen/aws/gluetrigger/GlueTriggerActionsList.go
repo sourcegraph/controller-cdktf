@@ -116,7 +116,7 @@ func NewGlueTriggerActionsList(terraformResource cdktf.IInterpolatingParent, ter
 	j := jsiiProxy_GlueTriggerActionsList{}
 
 	_jsii_.Create(
-		"aws.glueTrigger.GlueTriggerActionsList",
+		"@cdktf/provider-aws.glueTrigger.GlueTriggerActionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGlueTriggerActionsList_Override(g GlueTriggerActionsList, terraformResou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueTrigger.GlueTriggerActionsList",
+		"@cdktf/provider-aws.glueTrigger.GlueTriggerActionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

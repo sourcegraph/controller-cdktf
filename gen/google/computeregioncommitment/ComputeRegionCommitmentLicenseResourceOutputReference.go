@@ -227,7 +227,7 @@ func NewComputeRegionCommitmentLicenseResourceOutputReference(terraformResource 
 	j := jsiiProxy_ComputeRegionCommitmentLicenseResourceOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionCommitment.ComputeRegionCommitmentLicenseResourceOutputReference",
+		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentLicenseResourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewComputeRegionCommitmentLicenseResourceOutputReference_Override(c Compute
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionCommitment.ComputeRegionCommitmentLicenseResourceOutputReference",
+		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentLicenseResourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

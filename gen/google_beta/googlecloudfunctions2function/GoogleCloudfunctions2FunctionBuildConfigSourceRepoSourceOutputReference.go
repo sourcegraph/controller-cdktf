@@ -324,7 +324,7 @@ func NewGoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference(
 	j := jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewGoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

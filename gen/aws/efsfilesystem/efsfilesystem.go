@@ -602,7 +602,7 @@ func NewEfsFileSystem(scope constructs.Construct, id *string, config *EfsFileSys
 	j := jsiiProxy_EfsFileSystem{}
 
 	_jsii_.Create(
-		"aws.efsFileSystem.EfsFileSystem",
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystem",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -615,7 +615,7 @@ func NewEfsFileSystem_Override(e EfsFileSystem, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.efsFileSystem.EfsFileSystem",
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystem",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -825,7 +825,7 @@ func EfsFileSystem_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.efsFileSystem.EfsFileSystem",
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystem",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -844,7 +844,7 @@ func EfsFileSystem_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.efsFileSystem.EfsFileSystem",
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystem",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -863,7 +863,7 @@ func EfsFileSystem_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.efsFileSystem.EfsFileSystem",
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystem",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -876,7 +876,7 @@ func EfsFileSystem_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.efsFileSystem.EfsFileSystem",
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystem",
 		"tfResourceType",
 		&returns,
 	)

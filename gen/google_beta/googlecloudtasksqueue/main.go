@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudTasksQueue.GoogleCloudTasksQueue",
+		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueue",
 		reflect.TypeOf((*GoogleCloudTasksQueue)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,11 +83,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueAppEngineRoutingOverride",
+		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueAppEngineRoutingOverride",
 		reflect.TypeOf((*GoogleCloudTasksQueueAppEngineRoutingOverride)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueAppEngineRoutingOverrideOutputReference",
+		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueAppEngineRoutingOverrideOutputReference",
 		reflect.TypeOf((*GoogleCloudTasksQueueAppEngineRoutingOverrideOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -129,15 +129,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueConfig",
+		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueConfig",
 		reflect.TypeOf((*GoogleCloudTasksQueueConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueRateLimits",
+		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueRateLimits",
 		reflect.TypeOf((*GoogleCloudTasksQueueRateLimits)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueRateLimitsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueRateLimitsOutputReference",
 		reflect.TypeOf((*GoogleCloudTasksQueueRateLimitsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -176,11 +176,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueRetryConfig",
+		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueRetryConfig",
 		reflect.TypeOf((*GoogleCloudTasksQueueRetryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueRetryConfigOutputReference",
+		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueRetryConfigOutputReference",
 		reflect.TypeOf((*GoogleCloudTasksQueueRetryConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -227,11 +227,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueStackdriverLoggingConfig",
+		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueStackdriverLoggingConfig",
 		reflect.TypeOf((*GoogleCloudTasksQueueStackdriverLoggingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueStackdriverLoggingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueStackdriverLoggingConfigOutputReference",
 		reflect.TypeOf((*GoogleCloudTasksQueueStackdriverLoggingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -265,11 +265,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueTimeouts",
+		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueTimeouts",
 		reflect.TypeOf((*GoogleCloudTasksQueueTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleCloudTasksQueueTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

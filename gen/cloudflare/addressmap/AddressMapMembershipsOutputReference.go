@@ -213,7 +213,7 @@ func NewAddressMapMembershipsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_AddressMapMembershipsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.addressMap.AddressMapMembershipsOutputReference",
+		"@cdktf/provider-cloudflare.addressMap.AddressMapMembershipsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -225,7 +225,7 @@ func NewAddressMapMembershipsOutputReference_Override(a AddressMapMembershipsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.addressMap.AddressMapMembershipsOutputReference",
+		"@cdktf/provider-cloudflare.addressMap.AddressMapMembershipsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

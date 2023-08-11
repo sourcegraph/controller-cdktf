@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.volumeAttachment.VolumeAttachment",
+		"@cdktf/provider-aws.volumeAttachment.VolumeAttachment",
 		reflect.TypeOf((*VolumeAttachment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.volumeAttachment.VolumeAttachmentConfig",
+		"@cdktf/provider-aws.volumeAttachment.VolumeAttachmentConfig",
 		reflect.TypeOf((*VolumeAttachmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.volumeAttachment.VolumeAttachmentTimeouts",
+		"@cdktf/provider-aws.volumeAttachment.VolumeAttachmentTimeouts",
 		reflect.TypeOf((*VolumeAttachmentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.volumeAttachment.VolumeAttachmentTimeoutsOutputReference",
+		"@cdktf/provider-aws.volumeAttachment.VolumeAttachmentTimeoutsOutputReference",
 		reflect.TypeOf((*VolumeAttachmentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

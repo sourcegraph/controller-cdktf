@@ -367,7 +367,7 @@ func NewComputeProjectMetadata(scope constructs.Construct, id *string, config *C
 	j := jsiiProxy_ComputeProjectMetadata{}
 
 	_jsii_.Create(
-		"google.computeProjectMetadata.ComputeProjectMetadata",
+		"@cdktf/provider-google.computeProjectMetadata.ComputeProjectMetadata",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewComputeProjectMetadata_Override(c ComputeProjectMetadata, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeProjectMetadata.ComputeProjectMetadata",
+		"@cdktf/provider-google.computeProjectMetadata.ComputeProjectMetadata",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -513,7 +513,7 @@ func ComputeProjectMetadata_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeProjectMetadata.ComputeProjectMetadata",
+		"@cdktf/provider-google.computeProjectMetadata.ComputeProjectMetadata",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -532,7 +532,7 @@ func ComputeProjectMetadata_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeProjectMetadata.ComputeProjectMetadata",
+		"@cdktf/provider-google.computeProjectMetadata.ComputeProjectMetadata",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func ComputeProjectMetadata_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeProjectMetadata.ComputeProjectMetadata",
+		"@cdktf/provider-google.computeProjectMetadata.ComputeProjectMetadata",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func ComputeProjectMetadata_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeProjectMetadata.ComputeProjectMetadata",
+		"@cdktf/provider-google.computeProjectMetadata.ComputeProjectMetadata",
 		"tfResourceType",
 		&returns,
 	)

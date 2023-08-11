@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination",
+		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination",
 		reflect.TypeOf((*ChimeVoiceConnectorOrigination)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationConfig",
+		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationConfig",
 		reflect.TypeOf((*ChimeVoiceConnectorOriginationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationRoute",
+		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationRoute",
 		reflect.TypeOf((*ChimeVoiceConnectorOriginationRoute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationRouteList",
+		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationRouteList",
 		reflect.TypeOf((*ChimeVoiceConnectorOriginationRouteList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -92,7 +92,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationRouteOutputReference",
+		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationRouteOutputReference",
 		reflect.TypeOf((*ChimeVoiceConnectorOriginationRouteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

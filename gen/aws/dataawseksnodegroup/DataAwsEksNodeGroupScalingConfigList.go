@@ -104,7 +104,7 @@ func NewDataAwsEksNodeGroupScalingConfigList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_DataAwsEksNodeGroupScalingConfigList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupScalingConfigList",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupScalingConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEksNodeGroupScalingConfigList_Override(d DataAwsEksNodeGroupScali
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupScalingConfigList",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupScalingConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

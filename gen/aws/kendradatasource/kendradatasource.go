@@ -647,7 +647,7 @@ func NewKendraDataSource(scope constructs.Construct, id *string, config *KendraD
 	j := jsiiProxy_KendraDataSource{}
 
 	_jsii_.Create(
-		"aws.kendraDataSource.KendraDataSource",
+		"@cdktf/provider-aws.kendraDataSource.KendraDataSource",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -660,7 +660,7 @@ func NewKendraDataSource_Override(k KendraDataSource, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraDataSource.KendraDataSource",
+		"@cdktf/provider-aws.kendraDataSource.KendraDataSource",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -870,7 +870,7 @@ func KendraDataSource_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kendraDataSource.KendraDataSource",
+		"@cdktf/provider-aws.kendraDataSource.KendraDataSource",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -889,7 +889,7 @@ func KendraDataSource_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kendraDataSource.KendraDataSource",
+		"@cdktf/provider-aws.kendraDataSource.KendraDataSource",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -908,7 +908,7 @@ func KendraDataSource_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kendraDataSource.KendraDataSource",
+		"@cdktf/provider-aws.kendraDataSource.KendraDataSource",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -921,7 +921,7 @@ func KendraDataSource_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.kendraDataSource.KendraDataSource",
+		"@cdktf/provider-aws.kendraDataSource.KendraDataSource",
 		"tfResourceType",
 		&returns,
 	)

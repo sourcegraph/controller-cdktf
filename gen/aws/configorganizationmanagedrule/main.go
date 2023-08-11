@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.configOrganizationManagedRule.ConfigOrganizationManagedRule",
+		"@cdktf/provider-aws.configOrganizationManagedRule.ConfigOrganizationManagedRule",
 		reflect.TypeOf((*ConfigOrganizationManagedRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,15 +88,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.configOrganizationManagedRule.ConfigOrganizationManagedRuleConfig",
+		"@cdktf/provider-aws.configOrganizationManagedRule.ConfigOrganizationManagedRuleConfig",
 		reflect.TypeOf((*ConfigOrganizationManagedRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.configOrganizationManagedRule.ConfigOrganizationManagedRuleTimeouts",
+		"@cdktf/provider-aws.configOrganizationManagedRule.ConfigOrganizationManagedRuleTimeouts",
 		reflect.TypeOf((*ConfigOrganizationManagedRuleTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.configOrganizationManagedRule.ConfigOrganizationManagedRuleTimeoutsOutputReference",
+		"@cdktf/provider-aws.configOrganizationManagedRule.ConfigOrganizationManagedRuleTimeoutsOutputReference",
 		reflect.TypeOf((*ConfigOrganizationManagedRuleTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

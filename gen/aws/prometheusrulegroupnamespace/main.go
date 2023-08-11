@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace",
+		"@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace",
 		reflect.TypeOf((*PrometheusRuleGroupNamespace)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig",
+		"@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig",
 		reflect.TypeOf((*PrometheusRuleGroupNamespaceConfig)(nil)).Elem(),
 	)
 }

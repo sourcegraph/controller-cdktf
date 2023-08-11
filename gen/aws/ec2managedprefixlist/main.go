@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2ManagedPrefixList.Ec2ManagedPrefixList",
+		"@cdktf/provider-aws.ec2ManagedPrefixList.Ec2ManagedPrefixList",
 		reflect.TypeOf((*Ec2ManagedPrefixList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2ManagedPrefixList.Ec2ManagedPrefixListConfig",
+		"@cdktf/provider-aws.ec2ManagedPrefixList.Ec2ManagedPrefixListConfig",
 		reflect.TypeOf((*Ec2ManagedPrefixListConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2ManagedPrefixList.Ec2ManagedPrefixListEntry",
+		"@cdktf/provider-aws.ec2ManagedPrefixList.Ec2ManagedPrefixListEntry",
 		reflect.TypeOf((*Ec2ManagedPrefixListEntry)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2ManagedPrefixList.Ec2ManagedPrefixListEntryList",
+		"@cdktf/provider-aws.ec2ManagedPrefixList.Ec2ManagedPrefixListEntryList",
 		reflect.TypeOf((*Ec2ManagedPrefixListEntryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2ManagedPrefixList.Ec2ManagedPrefixListEntryOutputReference",
+		"@cdktf/provider-aws.ec2ManagedPrefixList.Ec2ManagedPrefixListEntryOutputReference",
 		reflect.TypeOf((*Ec2ManagedPrefixListEntryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},

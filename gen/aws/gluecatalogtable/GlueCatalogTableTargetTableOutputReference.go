@@ -225,7 +225,7 @@ func NewGlueCatalogTableTargetTableOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_GlueCatalogTableTargetTableOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueCatalogTable.GlueCatalogTableTargetTableOutputReference",
+		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableTargetTableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewGlueCatalogTableTargetTableOutputReference_Override(g GlueCatalogTableTa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueCatalogTable.GlueCatalogTableTargetTableOutputReference",
+		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableTargetTableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

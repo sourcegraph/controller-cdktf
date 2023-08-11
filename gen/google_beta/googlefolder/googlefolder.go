@@ -410,7 +410,7 @@ func NewGoogleFolder(scope constructs.Construct, id *string, config *GoogleFolde
 	j := jsiiProxy_GoogleFolder{}
 
 	_jsii_.Create(
-		"google-beta.googleFolder.GoogleFolder",
+		"@cdktf/provider-google-beta.googleFolder.GoogleFolder",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -423,7 +423,7 @@ func NewGoogleFolder_Override(g GoogleFolder, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFolder.GoogleFolder",
+		"@cdktf/provider-google-beta.googleFolder.GoogleFolder",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -556,7 +556,7 @@ func GoogleFolder_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFolder.GoogleFolder",
+		"@cdktf/provider-google-beta.googleFolder.GoogleFolder",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func GoogleFolder_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFolder.GoogleFolder",
+		"@cdktf/provider-google-beta.googleFolder.GoogleFolder",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -594,7 +594,7 @@ func GoogleFolder_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFolder.GoogleFolder",
+		"@cdktf/provider-google-beta.googleFolder.GoogleFolder",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GoogleFolder_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleFolder.GoogleFolder",
+		"@cdktf/provider-google-beta.googleFolder.GoogleFolder",
 		"tfResourceType",
 		&returns,
 	)

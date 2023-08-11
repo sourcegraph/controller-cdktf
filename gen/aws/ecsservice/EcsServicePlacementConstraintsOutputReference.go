@@ -203,7 +203,7 @@ func NewEcsServicePlacementConstraintsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_EcsServicePlacementConstraintsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServicePlacementConstraintsOutputReference",
+		"@cdktf/provider-aws.ecsService.EcsServicePlacementConstraintsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewEcsServicePlacementConstraintsOutputReference_Override(e EcsServicePlace
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServicePlacementConstraintsOutputReference",
+		"@cdktf/provider-aws.ecsService.EcsServicePlacementConstraintsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

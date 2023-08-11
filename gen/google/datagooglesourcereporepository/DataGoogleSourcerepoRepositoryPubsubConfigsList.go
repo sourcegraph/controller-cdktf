@@ -104,7 +104,7 @@ func NewDataGoogleSourcerepoRepositoryPubsubConfigsList(terraformResource cdktf.
 	j := jsiiProxy_DataGoogleSourcerepoRepositoryPubsubConfigsList{}
 
 	_jsii_.Create(
-		"google.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepositoryPubsubConfigsList",
+		"@cdktf/provider-google.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepositoryPubsubConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleSourcerepoRepositoryPubsubConfigsList_Override(d DataGoogleSou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepositoryPubsubConfigsList",
+		"@cdktf/provider-google.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepositoryPubsubConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

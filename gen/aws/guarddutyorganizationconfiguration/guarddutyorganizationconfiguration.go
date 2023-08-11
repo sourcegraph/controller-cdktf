@@ -366,7 +366,7 @@ func NewGuarddutyOrganizationConfiguration(scope constructs.Construct, id *strin
 	j := jsiiProxy_GuarddutyOrganizationConfiguration{}
 
 	_jsii_.Create(
-		"aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfiguration",
+		"@cdktf/provider-aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewGuarddutyOrganizationConfiguration_Override(g GuarddutyOrganizationConfi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfiguration",
+		"@cdktf/provider-aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfiguration",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -512,7 +512,7 @@ func GuarddutyOrganizationConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfiguration",
+		"@cdktf/provider-aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func GuarddutyOrganizationConfiguration_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfiguration",
+		"@cdktf/provider-aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func GuarddutyOrganizationConfiguration_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfiguration",
+		"@cdktf/provider-aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func GuarddutyOrganizationConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfiguration",
+		"@cdktf/provider-aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfiguration",
 		"tfResourceType",
 		&returns,
 	)

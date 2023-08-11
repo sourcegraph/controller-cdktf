@@ -309,7 +309,7 @@ func NewGoogleDataCatalogTagTemplateFieldsOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleDataCatalogTagTemplateFieldsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogTagTemplate.GoogleDataCatalogTagTemplateFieldsOutputReference",
+		"@cdktf/provider-google-beta.googleDataCatalogTagTemplate.GoogleDataCatalogTagTemplateFieldsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -321,7 +321,7 @@ func NewGoogleDataCatalogTagTemplateFieldsOutputReference_Override(g GoogleDataC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogTagTemplate.GoogleDataCatalogTagTemplateFieldsOutputReference",
+		"@cdktf/provider-google-beta.googleDataCatalogTagTemplate.GoogleDataCatalogTagTemplateFieldsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

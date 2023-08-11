@@ -226,7 +226,7 @@ func NewEfsAccessPointPosixUserOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_EfsAccessPointPosixUserOutputReference{}
 
 	_jsii_.Create(
-		"aws.efsAccessPoint.EfsAccessPointPosixUserOutputReference",
+		"@cdktf/provider-aws.efsAccessPoint.EfsAccessPointPosixUserOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewEfsAccessPointPosixUserOutputReference_Override(e EfsAccessPointPosixUse
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.efsAccessPoint.EfsAccessPointPosixUserOutputReference",
+		"@cdktf/provider-aws.efsAccessPoint.EfsAccessPointPosixUserOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

@@ -226,7 +226,7 @@ func NewGoogleDataprocClusterIamBindingConditionOutputReference(terraformResourc
 	j := jsiiProxy_GoogleDataprocClusterIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleDataprocClusterIamBindingConditionOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

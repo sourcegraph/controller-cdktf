@@ -179,7 +179,7 @@ func NewOpensearchDomainNodeToNodeEncryptionOutputReference(terraformResource cd
 	j := jsiiProxy_OpensearchDomainNodeToNodeEncryptionOutputReference{}
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainNodeToNodeEncryptionOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainNodeToNodeEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewOpensearchDomainNodeToNodeEncryptionOutputReference_Override(o Opensearc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainNodeToNodeEncryptionOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainNodeToNodeEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

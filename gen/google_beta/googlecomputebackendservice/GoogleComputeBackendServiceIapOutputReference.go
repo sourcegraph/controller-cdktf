@@ -213,7 +213,7 @@ func NewGoogleComputeBackendServiceIapOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_GoogleComputeBackendServiceIapOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendServiceIapOutputReference",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceIapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -225,7 +225,7 @@ func NewGoogleComputeBackendServiceIapOutputReference_Override(g GoogleComputeBa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendServiceIapOutputReference",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceIapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

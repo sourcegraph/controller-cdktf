@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.dataTfePolicySet.DataTfePolicySet",
+		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySet",
 		reflect.TypeOf((*DataTfePolicySet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.dataTfePolicySet.DataTfePolicySetConfig",
+		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySetConfig",
 		reflect.TypeOf((*DataTfePolicySetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"tfe.dataTfePolicySet.DataTfePolicySetVcsRepo",
+		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySetVcsRepo",
 		reflect.TypeOf((*DataTfePolicySetVcsRepo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"tfe.dataTfePolicySet.DataTfePolicySetVcsRepoList",
+		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySetVcsRepoList",
 		reflect.TypeOf((*DataTfePolicySetVcsRepoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -98,7 +98,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"tfe.dataTfePolicySet.DataTfePolicySetVcsRepoOutputReference",
+		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySetVcsRepoOutputReference",
 		reflect.TypeOf((*DataTfePolicySetVcsRepoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},

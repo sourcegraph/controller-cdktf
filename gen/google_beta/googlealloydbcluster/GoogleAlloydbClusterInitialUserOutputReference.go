@@ -203,7 +203,7 @@ func NewGoogleAlloydbClusterInitialUserOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GoogleAlloydbClusterInitialUserOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAlloydbCluster.GoogleAlloydbClusterInitialUserOutputReference",
+		"@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterInitialUserOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleAlloydbClusterInitialUserOutputReference_Override(g GoogleAlloydbC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAlloydbCluster.GoogleAlloydbClusterInitialUserOutputReference",
+		"@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterInitialUserOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

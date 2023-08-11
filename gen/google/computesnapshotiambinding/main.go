@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeSnapshotIamBinding.ComputeSnapshotIamBinding",
+		"@cdktf/provider-google.computeSnapshotIamBinding.ComputeSnapshotIamBinding",
 		reflect.TypeOf((*ComputeSnapshotIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,11 +69,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSnapshotIamBinding.ComputeSnapshotIamBindingCondition",
+		"@cdktf/provider-google.computeSnapshotIamBinding.ComputeSnapshotIamBindingCondition",
 		reflect.TypeOf((*ComputeSnapshotIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeSnapshotIamBinding.ComputeSnapshotIamBindingConditionOutputReference",
+		"@cdktf/provider-google.computeSnapshotIamBinding.ComputeSnapshotIamBindingConditionOutputReference",
 		reflect.TypeOf((*ComputeSnapshotIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -112,7 +112,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSnapshotIamBinding.ComputeSnapshotIamBindingConfig",
+		"@cdktf/provider-google.computeSnapshotIamBinding.ComputeSnapshotIamBindingConfig",
 		reflect.TypeOf((*ComputeSnapshotIamBindingConfig)(nil)).Elem(),
 	)
 }

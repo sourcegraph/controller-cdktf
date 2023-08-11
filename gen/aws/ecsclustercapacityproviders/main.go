@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ecsClusterCapacityProviders.EcsClusterCapacityProviders",
+		"@cdktf/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProviders",
 		reflect.TypeOf((*EcsClusterCapacityProviders)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,15 +64,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecsClusterCapacityProviders.EcsClusterCapacityProvidersConfig",
+		"@cdktf/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProvidersConfig",
 		reflect.TypeOf((*EcsClusterCapacityProvidersConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecsClusterCapacityProviders.EcsClusterCapacityProvidersDefaultCapacityProviderStrategy",
+		"@cdktf/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProvidersDefaultCapacityProviderStrategy",
 		reflect.TypeOf((*EcsClusterCapacityProvidersDefaultCapacityProviderStrategy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ecsClusterCapacityProviders.EcsClusterCapacityProvidersDefaultCapacityProviderStrategyList",
+		"@cdktf/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProvidersDefaultCapacityProviderStrategyList",
 		reflect.TypeOf((*EcsClusterCapacityProvidersDefaultCapacityProviderStrategyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -93,7 +93,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ecsClusterCapacityProviders.EcsClusterCapacityProvidersDefaultCapacityProviderStrategyOutputReference",
+		"@cdktf/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProvidersDefaultCapacityProviderStrategyOutputReference",
 		reflect.TypeOf((*EcsClusterCapacityProvidersDefaultCapacityProviderStrategyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "base", GoGetter: "Base"},

@@ -116,7 +116,7 @@ func NewOsConfigOsPolicyAssignmentInstanceFilterInventoriesList(terraformResourc
 	j := jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList{}
 
 	_jsii_.Create(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentInstanceFilterInventoriesList",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentInstanceFilterInventoriesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOsConfigOsPolicyAssignmentInstanceFilterInventoriesList_Override(o OsCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentInstanceFilterInventoriesList",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentInstanceFilterInventoriesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

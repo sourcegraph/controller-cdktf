@@ -116,7 +116,7 @@ func NewDataAwsCeTagsFilterOrList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_DataAwsCeTagsFilterOrList{}
 
 	_jsii_.Create(
-		"aws.dataAwsCeTags.DataAwsCeTagsFilterOrList",
+		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsCeTagsFilterOrList_Override(d DataAwsCeTagsFilterOrList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCeTags.DataAwsCeTagsFilterOrList",
+		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

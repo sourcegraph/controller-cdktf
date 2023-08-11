@@ -702,7 +702,7 @@ func NewDeviceSettingsPolicy(scope constructs.Construct, id *string, config *Dev
 	j := jsiiProxy_DeviceSettingsPolicy{}
 
 	_jsii_.Create(
-		"cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy",
+		"@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -715,7 +715,7 @@ func NewDeviceSettingsPolicy_Override(d DeviceSettingsPolicy, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy",
+		"@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -1013,7 +1013,7 @@ func DeviceSettingsPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy",
+		"@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1032,7 +1032,7 @@ func DeviceSettingsPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy",
+		"@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1051,7 +1051,7 @@ func DeviceSettingsPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy",
+		"@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1064,7 +1064,7 @@ func DeviceSettingsPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy",
+		"@cdktf/provider-cloudflare.deviceSettingsPolicy.DeviceSettingsPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -424,7 +424,7 @@ func NewCloudwatchLogDestination(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_CloudwatchLogDestination{}
 
 	_jsii_.Create(
-		"aws.cloudwatchLogDestination.CloudwatchLogDestination",
+		"@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewCloudwatchLogDestination_Override(c CloudwatchLogDestination, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchLogDestination.CloudwatchLogDestination",
+		"@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -603,7 +603,7 @@ func CloudwatchLogDestination_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogDestination.CloudwatchLogDestination",
+		"@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func CloudwatchLogDestination_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogDestination.CloudwatchLogDestination",
+		"@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -641,7 +641,7 @@ func CloudwatchLogDestination_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogDestination.CloudwatchLogDestination",
+		"@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func CloudwatchLogDestination_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudwatchLogDestination.CloudwatchLogDestination",
+		"@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination",
 		"tfResourceType",
 		&returns,
 	)

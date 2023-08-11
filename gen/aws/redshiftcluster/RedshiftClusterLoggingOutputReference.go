@@ -275,7 +275,7 @@ func NewRedshiftClusterLoggingOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_RedshiftClusterLoggingOutputReference{}
 
 	_jsii_.Create(
-		"aws.redshiftCluster.RedshiftClusterLoggingOutputReference",
+		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterLoggingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewRedshiftClusterLoggingOutputReference_Override(r RedshiftClusterLoggingO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftCluster.RedshiftClusterLoggingOutputReference",
+		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterLoggingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

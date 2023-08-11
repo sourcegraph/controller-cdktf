@@ -104,7 +104,7 @@ func NewS3OutpostsEndpointNetworkInterfacesList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_S3OutpostsEndpointNetworkInterfacesList{}
 
 	_jsii_.Create(
-		"aws.s3OutpostsEndpoint.S3OutpostsEndpointNetworkInterfacesList",
+		"@cdktf/provider-aws.s3OutpostsEndpoint.S3OutpostsEndpointNetworkInterfacesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewS3OutpostsEndpointNetworkInterfacesList_Override(s S3OutpostsEndpointNet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3OutpostsEndpoint.S3OutpostsEndpointNetworkInterfacesList",
+		"@cdktf/provider-aws.s3OutpostsEndpoint.S3OutpostsEndpointNetworkInterfacesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

@@ -180,7 +180,7 @@ func NewKinesisAnalyticsApplicationInputsParallelismOutputReference(terraformRes
 	j := jsiiProxy_KinesisAnalyticsApplicationInputsParallelismOutputReference{}
 
 	_jsii_.Create(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsParallelismOutputReference",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsParallelismOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewKinesisAnalyticsApplicationInputsParallelismOutputReference_Override(k K
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsParallelismOutputReference",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsParallelismOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

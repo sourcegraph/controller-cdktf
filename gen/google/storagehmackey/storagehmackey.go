@@ -435,7 +435,7 @@ func NewStorageHmacKey(scope constructs.Construct, id *string, config *StorageHm
 	j := jsiiProxy_StorageHmacKey{}
 
 	_jsii_.Create(
-		"google.storageHmacKey.StorageHmacKey",
+		"@cdktf/provider-google.storageHmacKey.StorageHmacKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -448,7 +448,7 @@ func NewStorageHmacKey_Override(s StorageHmacKey, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageHmacKey.StorageHmacKey",
+		"@cdktf/provider-google.storageHmacKey.StorageHmacKey",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -592,7 +592,7 @@ func StorageHmacKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageHmacKey.StorageHmacKey",
+		"@cdktf/provider-google.storageHmacKey.StorageHmacKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func StorageHmacKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageHmacKey.StorageHmacKey",
+		"@cdktf/provider-google.storageHmacKey.StorageHmacKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func StorageHmacKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageHmacKey.StorageHmacKey",
+		"@cdktf/provider-google.storageHmacKey.StorageHmacKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func StorageHmacKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.storageHmacKey.StorageHmacKey",
+		"@cdktf/provider-google.storageHmacKey.StorageHmacKey",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewMwaaEnvironmentTimeoutsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_MwaaEnvironmentTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.mwaaEnvironment.MwaaEnvironmentTimeoutsOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewMwaaEnvironmentTimeoutsOutputReference_Override(m MwaaEnvironmentTimeout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mwaaEnvironment.MwaaEnvironmentTimeoutsOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

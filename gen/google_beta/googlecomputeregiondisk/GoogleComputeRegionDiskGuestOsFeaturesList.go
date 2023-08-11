@@ -116,7 +116,7 @@ func NewGoogleComputeRegionDiskGuestOsFeaturesList(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskGuestOsFeaturesList",
+		"@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskGuestOsFeaturesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeRegionDiskGuestOsFeaturesList_Override(g GoogleComputeRegio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskGuestOsFeaturesList",
+		"@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskGuestOsFeaturesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

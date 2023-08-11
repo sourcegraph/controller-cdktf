@@ -646,7 +646,7 @@ func NewEmrStudio(scope constructs.Construct, id *string, config *EmrStudioConfi
 	j := jsiiProxy_EmrStudio{}
 
 	_jsii_.Create(
-		"aws.emrStudio.EmrStudio",
+		"@cdktf/provider-aws.emrStudio.EmrStudio",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -659,7 +659,7 @@ func NewEmrStudio_Override(e EmrStudio, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrStudio.EmrStudio",
+		"@cdktf/provider-aws.emrStudio.EmrStudio",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -924,7 +924,7 @@ func EmrStudio_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrStudio.EmrStudio",
+		"@cdktf/provider-aws.emrStudio.EmrStudio",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -943,7 +943,7 @@ func EmrStudio_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrStudio.EmrStudio",
+		"@cdktf/provider-aws.emrStudio.EmrStudio",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -962,7 +962,7 @@ func EmrStudio_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrStudio.EmrStudio",
+		"@cdktf/provider-aws.emrStudio.EmrStudio",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -975,7 +975,7 @@ func EmrStudio_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.emrStudio.EmrStudio",
+		"@cdktf/provider-aws.emrStudio.EmrStudio",
 		"tfResourceType",
 		&returns,
 	)

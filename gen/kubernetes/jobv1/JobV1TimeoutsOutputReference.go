@@ -228,7 +228,7 @@ func NewJobV1TimeoutsOutputReference(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_JobV1TimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1TimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1TimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewJobV1TimeoutsOutputReference_Override(j JobV1TimeoutsOutputReference, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1TimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1TimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

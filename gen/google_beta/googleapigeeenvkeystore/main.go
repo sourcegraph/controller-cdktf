@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleApigeeEnvKeystore.GoogleApigeeEnvKeystore",
+		"@cdktf/provider-google-beta.googleApigeeEnvKeystore.GoogleApigeeEnvKeystore",
 		reflect.TypeOf((*GoogleApigeeEnvKeystore)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,15 +65,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApigeeEnvKeystore.GoogleApigeeEnvKeystoreConfig",
+		"@cdktf/provider-google-beta.googleApigeeEnvKeystore.GoogleApigeeEnvKeystoreConfig",
 		reflect.TypeOf((*GoogleApigeeEnvKeystoreConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApigeeEnvKeystore.GoogleApigeeEnvKeystoreTimeouts",
+		"@cdktf/provider-google-beta.googleApigeeEnvKeystore.GoogleApigeeEnvKeystoreTimeouts",
 		reflect.TypeOf((*GoogleApigeeEnvKeystoreTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApigeeEnvKeystore.GoogleApigeeEnvKeystoreTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeEnvKeystore.GoogleApigeeEnvKeystoreTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleApigeeEnvKeystoreTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -508,7 +508,7 @@ func NewConfigConfigRule(scope constructs.Construct, id *string, config *ConfigC
 	j := jsiiProxy_ConfigConfigRule{}
 
 	_jsii_.Create(
-		"aws.configConfigRule.ConfigConfigRule",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -521,7 +521,7 @@ func NewConfigConfigRule_Override(c ConfigConfigRule, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configConfigRule.ConfigConfigRule",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRule",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -698,7 +698,7 @@ func ConfigConfigRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configConfigRule.ConfigConfigRule",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -717,7 +717,7 @@ func ConfigConfigRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configConfigRule.ConfigConfigRule",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -736,7 +736,7 @@ func ConfigConfigRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configConfigRule.ConfigConfigRule",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -749,7 +749,7 @@ func ConfigConfigRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.configConfigRule.ConfigConfigRule",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRule",
 		"tfResourceType",
 		&returns,
 	)

@@ -180,7 +180,7 @@ func NewAppflowFlowSourceFlowConfigIncrementalPullConfigOutputReference(terrafor
 	j := jsiiProxy_AppflowFlowSourceFlowConfigIncrementalPullConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigIncrementalPullConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigIncrementalPullConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewAppflowFlowSourceFlowConfigIncrementalPullConfigOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigIncrementalPullConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigIncrementalPullConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

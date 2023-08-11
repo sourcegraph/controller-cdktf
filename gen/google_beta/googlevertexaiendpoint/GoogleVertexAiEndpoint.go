@@ -588,7 +588,7 @@ func NewGoogleVertexAiEndpoint(scope constructs.Construct, id *string, config *G
 	j := jsiiProxy_GoogleVertexAiEndpoint{}
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpoint",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -601,7 +601,7 @@ func NewGoogleVertexAiEndpoint_Override(g GoogleVertexAiEndpoint, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpoint",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpoint",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -800,7 +800,7 @@ func GoogleVertexAiEndpoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpoint",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -819,7 +819,7 @@ func GoogleVertexAiEndpoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpoint",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -838,7 +838,7 @@ func GoogleVertexAiEndpoint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpoint",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpoint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -851,7 +851,7 @@ func GoogleVertexAiEndpoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpoint",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpoint",
 		"tfResourceType",
 		&returns,
 	)

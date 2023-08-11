@@ -204,7 +204,7 @@ func NewComputeSharedVpcServiceProjectTimeoutsOutputReference(terraformResource 
 	j := jsiiProxy_ComputeSharedVpcServiceProjectTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProjectTimeoutsOutputReference",
+		"@cdktf/provider-google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProjectTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeSharedVpcServiceProjectTimeoutsOutputReference_Override(c Compute
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProjectTimeoutsOutputReference",
+		"@cdktf/provider-google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProjectTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

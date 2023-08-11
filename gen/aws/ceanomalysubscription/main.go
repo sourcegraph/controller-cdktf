@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ceAnomalySubscription.CeAnomalySubscription",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscription",
 		reflect.TypeOf((*CeAnomalySubscription)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -81,15 +81,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionConfig",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionConfig",
 		reflect.TypeOf((*CeAnomalySubscriptionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriber",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriber",
 		reflect.TypeOf((*CeAnomalySubscriptionSubscriber)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriberList",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriberList",
 		reflect.TypeOf((*CeAnomalySubscriptionSubscriberList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -110,7 +110,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriberOutputReference",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriberOutputReference",
 		reflect.TypeOf((*CeAnomalySubscriptionSubscriberOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
@@ -146,19 +146,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpression",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpression",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpression)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAnd",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAnd",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionAnd)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndCostCategory",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndCostCategory",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionAndCostCategory)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -199,11 +199,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndDimension",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndDimension",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionAndDimension)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndDimensionOutputReference",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndDimensionOutputReference",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionAndDimensionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -244,7 +244,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndList",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndList",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionAndList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -265,7 +265,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndOutputReference",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndOutputReference",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionAndOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -309,11 +309,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndTags",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndTags",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionAndTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -354,11 +354,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionCostCategory",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionCostCategory",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionCostCategory)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionCostCategoryOutputReference",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionCostCategoryOutputReference",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionCostCategoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -399,11 +399,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionDimension",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionDimension",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionDimension)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionDimensionOutputReference",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionDimensionOutputReference",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionDimensionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -444,15 +444,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNot",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNot",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionNot)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotCostCategory",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotCostCategory",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionNotCostCategory)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputReference",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputReference",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -493,11 +493,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotDimension",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotDimension",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionNotDimension)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotDimensionOutputReference",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotDimensionOutputReference",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionNotDimensionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -538,7 +538,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotOutputReference",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotOutputReference",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionNotOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -582,11 +582,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotTags",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotTags",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionNotTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotTagsOutputReference",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotTagsOutputReference",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionNotTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -627,15 +627,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOr",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOr",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionOr)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrCostCategory",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrCostCategory",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionOrCostCategory)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrCostCategoryOutputReference",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrCostCategoryOutputReference",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionOrCostCategoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -676,11 +676,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrDimension",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrDimension",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionOrDimension)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -721,7 +721,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrList",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrList",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionOrList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -742,7 +742,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrOutputReference",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrOutputReference",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionOrOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -786,11 +786,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrTags",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrTags",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionOrTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrTagsOutputReference",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrTagsOutputReference",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionOrTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -831,7 +831,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOutputReference",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOutputReference",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "and", GoGetter: "And"},
@@ -887,11 +887,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionTags",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionTags",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionTagsOutputReference",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionTagsOutputReference",
 		reflect.TypeOf((*CeAnomalySubscriptionThresholdExpressionTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -179,7 +179,7 @@ func NewGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountOutputReference(t
 	j := jsiiProxy_GoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountOutputReference",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountOutputReference",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

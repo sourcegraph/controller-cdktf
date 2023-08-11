@@ -116,7 +116,7 @@ func NewFsxFileCacheDataRepositoryAssociationList(terraformResource cdktf.IInter
 	j := jsiiProxy_FsxFileCacheDataRepositoryAssociationList{}
 
 	_jsii_.Create(
-		"aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationList",
+		"@cdktf/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewFsxFileCacheDataRepositoryAssociationList_Override(f FsxFileCacheDataRep
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationList",
+		"@cdktf/provider-aws.fsxFileCache.FsxFileCacheDataRepositoryAssociationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)

@@ -228,7 +228,7 @@ func NewNetworkmanagerDeviceLocationOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_NetworkmanagerDeviceLocationOutputReference{}
 
 	_jsii_.Create(
-		"aws.networkmanagerDevice.NetworkmanagerDeviceLocationOutputReference",
+		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewNetworkmanagerDeviceLocationOutputReference_Override(n NetworkmanagerDev
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerDevice.NetworkmanagerDeviceLocationOutputReference",
+		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

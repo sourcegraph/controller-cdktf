@@ -180,7 +180,7 @@ func NewDataAwsEbsEncryptionByDefaultTimeoutsOutputReference(terraformResource c
 	j := jsiiProxy_DataAwsEbsEncryptionByDefaultTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefaultTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefaultTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsEbsEncryptionByDefaultTimeoutsOutputReference_Override(d DataAwsE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefaultTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefaultTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

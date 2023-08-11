@@ -448,7 +448,7 @@ func NewGoogleComputeRegionBackendServiceIamMember(scope constructs.Construct, i
 	j := jsiiProxy_GoogleComputeRegionBackendServiceIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionBackendServiceIamMember.GoogleComputeRegionBackendServiceIamMember",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamMember.GoogleComputeRegionBackendServiceIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleComputeRegionBackendServiceIamMember_Override(g GoogleComputeRegio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionBackendServiceIamMember.GoogleComputeRegionBackendServiceIamMember",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamMember.GoogleComputeRegionBackendServiceIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleComputeRegionBackendServiceIamMember_IsConstruct(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionBackendServiceIamMember.GoogleComputeRegionBackendServiceIamMember",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamMember.GoogleComputeRegionBackendServiceIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleComputeRegionBackendServiceIamMember_IsTerraformElement(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionBackendServiceIamMember.GoogleComputeRegionBackendServiceIamMember",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamMember.GoogleComputeRegionBackendServiceIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleComputeRegionBackendServiceIamMember_IsTerraformResource(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionBackendServiceIamMember.GoogleComputeRegionBackendServiceIamMember",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamMember.GoogleComputeRegionBackendServiceIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleComputeRegionBackendServiceIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeRegionBackendServiceIamMember.GoogleComputeRegionBackendServiceIamMember",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamMember.GoogleComputeRegionBackendServiceIamMember",
 		"tfResourceType",
 		&returns,
 	)

@@ -179,7 +179,7 @@ func NewGoogleContainerClusterConfidentialNodesOutputReference(terraformResource
 	j := jsiiProxy_GoogleContainerClusterConfidentialNodesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterConfidentialNodesOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterConfidentialNodesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleContainerClusterConfidentialNodesOutputReference_Override(g Google
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterConfidentialNodesOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterConfidentialNodesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

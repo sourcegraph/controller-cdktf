@@ -178,7 +178,7 @@ func NewConnectPhoneNumberStatusOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_ConnectPhoneNumberStatusOutputReference{}
 
 	_jsii_.Create(
-		"aws.connectPhoneNumber.ConnectPhoneNumberStatusOutputReference",
+		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewConnectPhoneNumberStatusOutputReference_Override(c ConnectPhoneNumberSta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectPhoneNumber.ConnectPhoneNumberStatusOutputReference",
+		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

@@ -190,7 +190,7 @@ func NewTeamsLocationNetworksOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_TeamsLocationNetworksOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.teamsLocation.TeamsLocationNetworksOutputReference",
+		"@cdktf/provider-cloudflare.teamsLocation.TeamsLocationNetworksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -202,7 +202,7 @@ func NewTeamsLocationNetworksOutputReference_Override(t TeamsLocationNetworksOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.teamsLocation.TeamsLocationNetworksOutputReference",
+		"@cdktf/provider-cloudflare.teamsLocation.TeamsLocationNetworksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		t,
 	)

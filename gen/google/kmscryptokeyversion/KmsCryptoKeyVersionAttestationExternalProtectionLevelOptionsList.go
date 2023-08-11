@@ -104,7 +104,7 @@ func NewKmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList(terrafo
 	j := jsiiProxy_KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList{}
 
 	_jsii_.Create(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewKmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		k,
 	)

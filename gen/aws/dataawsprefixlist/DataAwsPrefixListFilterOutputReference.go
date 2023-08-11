@@ -202,7 +202,7 @@ func NewDataAwsPrefixListFilterOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataAwsPrefixListFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsPrefixList.DataAwsPrefixListFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsPrefixListFilterOutputReference_Override(d DataAwsPrefixListFilte
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsPrefixList.DataAwsPrefixListFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

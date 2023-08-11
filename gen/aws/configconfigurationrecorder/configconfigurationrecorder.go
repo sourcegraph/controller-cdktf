@@ -367,7 +367,7 @@ func NewConfigConfigurationRecorder(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_ConfigConfigurationRecorder{}
 
 	_jsii_.Create(
-		"aws.configConfigurationRecorder.ConfigConfigurationRecorder",
+		"@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorder",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewConfigConfigurationRecorder_Override(c ConfigConfigurationRecorder, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configConfigurationRecorder.ConfigConfigurationRecorder",
+		"@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorder",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -513,7 +513,7 @@ func ConfigConfigurationRecorder_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configConfigurationRecorder.ConfigConfigurationRecorder",
+		"@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorder",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -532,7 +532,7 @@ func ConfigConfigurationRecorder_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configConfigurationRecorder.ConfigConfigurationRecorder",
+		"@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorder",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func ConfigConfigurationRecorder_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configConfigurationRecorder.ConfigConfigurationRecorder",
+		"@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorder",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func ConfigConfigurationRecorder_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.configConfigurationRecorder.ConfigConfigurationRecorder",
+		"@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorder",
 		"tfResourceType",
 		&returns,
 	)

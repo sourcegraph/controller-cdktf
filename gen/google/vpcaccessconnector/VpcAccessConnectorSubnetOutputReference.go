@@ -204,7 +204,7 @@ func NewVpcAccessConnectorSubnetOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_VpcAccessConnectorSubnetOutputReference{}
 
 	_jsii_.Create(
-		"google.vpcAccessConnector.VpcAccessConnectorSubnetOutputReference",
+		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnectorSubnetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewVpcAccessConnectorSubnetOutputReference_Override(v VpcAccessConnectorSub
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vpcAccessConnector.VpcAccessConnectorSubnetOutputReference",
+		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnectorSubnetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

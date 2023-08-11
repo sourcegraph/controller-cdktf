@@ -521,7 +521,7 @@ func NewCloudwatchCompositeAlarm(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_CloudwatchCompositeAlarm{}
 
 	_jsii_.Create(
-		"aws.cloudwatchCompositeAlarm.CloudwatchCompositeAlarm",
+		"@cdktf/provider-aws.cloudwatchCompositeAlarm.CloudwatchCompositeAlarm",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -534,7 +534,7 @@ func NewCloudwatchCompositeAlarm_Override(c CloudwatchCompositeAlarm, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchCompositeAlarm.CloudwatchCompositeAlarm",
+		"@cdktf/provider-aws.cloudwatchCompositeAlarm.CloudwatchCompositeAlarm",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -744,7 +744,7 @@ func CloudwatchCompositeAlarm_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchCompositeAlarm.CloudwatchCompositeAlarm",
+		"@cdktf/provider-aws.cloudwatchCompositeAlarm.CloudwatchCompositeAlarm",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -763,7 +763,7 @@ func CloudwatchCompositeAlarm_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchCompositeAlarm.CloudwatchCompositeAlarm",
+		"@cdktf/provider-aws.cloudwatchCompositeAlarm.CloudwatchCompositeAlarm",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -782,7 +782,7 @@ func CloudwatchCompositeAlarm_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchCompositeAlarm.CloudwatchCompositeAlarm",
+		"@cdktf/provider-aws.cloudwatchCompositeAlarm.CloudwatchCompositeAlarm",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -795,7 +795,7 @@ func CloudwatchCompositeAlarm_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudwatchCompositeAlarm.CloudwatchCompositeAlarm",
+		"@cdktf/provider-aws.cloudwatchCompositeAlarm.CloudwatchCompositeAlarm",
 		"tfResourceType",
 		&returns,
 	)

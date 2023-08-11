@@ -402,7 +402,7 @@ func NewDataAwsEcsContainerDefinition(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataAwsEcsContainerDefinition{}
 
 	_jsii_.Create(
-		"aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition",
+		"@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -415,7 +415,7 @@ func NewDataAwsEcsContainerDefinition_Override(d DataAwsEcsContainerDefinition, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition",
+		"@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -526,7 +526,7 @@ func DataAwsEcsContainerDefinition_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition",
+		"@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -545,7 +545,7 @@ func DataAwsEcsContainerDefinition_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition",
+		"@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func DataAwsEcsContainerDefinition_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition",
+		"@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func DataAwsEcsContainerDefinition_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition",
+		"@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewGkeHubMembershipTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_GkeHubMembershipTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.gkeHubMembership.GkeHubMembershipTimeoutsOutputReference",
+		"@cdktf/provider-google.gkeHubMembership.GkeHubMembershipTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGkeHubMembershipTimeoutsOutputReference_Override(g GkeHubMembershipTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gkeHubMembership.GkeHubMembershipTimeoutsOutputReference",
+		"@cdktf/provider-google.gkeHubMembership.GkeHubMembershipTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

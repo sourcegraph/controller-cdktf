@@ -297,7 +297,7 @@ func NewPodSpecVolumeAzureDiskOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_PodSpecVolumeAzureDiskOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeAzureDiskOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeAzureDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -309,7 +309,7 @@ func NewPodSpecVolumeAzureDiskOutputReference_Override(p PodSpecVolumeAzureDiskO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeAzureDiskOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeAzureDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

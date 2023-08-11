@@ -202,7 +202,7 @@ func NewInspector2OrganizationConfigurationAutoEnableOutputReference(terraformRe
 	j := jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference{}
 
 	_jsii_.Create(
-		"aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference",
+		"@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewInspector2OrganizationConfigurationAutoEnableOutputReference_Override(i 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference",
+		"@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

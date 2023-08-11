@@ -116,7 +116,7 @@ func NewDataAwsFsxOpenzfsSnapshotFilterList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataAwsFsxOpenzfsSnapshotFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsFsxOpenzfsSnapshot.DataAwsFsxOpenzfsSnapshotFilterList",
+		"@cdktf/provider-aws.dataAwsFsxOpenzfsSnapshot.DataAwsFsxOpenzfsSnapshotFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsFsxOpenzfsSnapshotFilterList_Override(d DataAwsFsxOpenzfsSnapshot
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsFsxOpenzfsSnapshot.DataAwsFsxOpenzfsSnapshotFilterList",
+		"@cdktf/provider-aws.dataAwsFsxOpenzfsSnapshot.DataAwsFsxOpenzfsSnapshotFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

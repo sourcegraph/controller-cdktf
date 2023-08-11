@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsBackupFramework.DataAwsBackupFramework",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework",
 		reflect.TypeOf((*DataAwsBackupFramework)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,19 +64,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig",
 		reflect.TypeOf((*DataAwsBackupFrameworkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsBackupFramework.DataAwsBackupFrameworkControl",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControl",
 		reflect.TypeOf((*DataAwsBackupFrameworkControl)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameter",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameter",
 		reflect.TypeOf((*DataAwsBackupFrameworkControlInputParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList",
 		reflect.TypeOf((*DataAwsBackupFrameworkControlInputParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -96,7 +96,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference",
 		reflect.TypeOf((*DataAwsBackupFrameworkControlInputParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -130,7 +130,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList",
 		reflect.TypeOf((*DataAwsBackupFrameworkControlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -150,7 +150,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference",
 		reflect.TypeOf((*DataAwsBackupFrameworkControlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -185,11 +185,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScope",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScope",
 		reflect.TypeOf((*DataAwsBackupFrameworkControlScope)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList",
 		reflect.TypeOf((*DataAwsBackupFrameworkControlScopeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -209,7 +209,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference",
 		reflect.TypeOf((*DataAwsBackupFrameworkControlScopeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

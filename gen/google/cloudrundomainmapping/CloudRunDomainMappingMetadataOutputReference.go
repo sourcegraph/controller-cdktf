@@ -271,7 +271,7 @@ func NewCloudRunDomainMappingMetadataOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_CloudRunDomainMappingMetadataOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingMetadataOutputReference",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -283,7 +283,7 @@ func NewCloudRunDomainMappingMetadataOutputReference_Override(c CloudRunDomainMa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingMetadataOutputReference",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

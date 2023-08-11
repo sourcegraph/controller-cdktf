@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.wafRule.WafRule",
+		"@cdktf/provider-aws.wafRule.WafRule",
 		reflect.TypeOf((*WafRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafRule.WafRuleConfig",
+		"@cdktf/provider-aws.wafRule.WafRuleConfig",
 		reflect.TypeOf((*WafRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafRule.WafRulePredicates",
+		"@cdktf/provider-aws.wafRule.WafRulePredicates",
 		reflect.TypeOf((*WafRulePredicates)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafRule.WafRulePredicatesList",
+		"@cdktf/provider-aws.wafRule.WafRulePredicatesList",
 		reflect.TypeOf((*WafRulePredicatesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -99,7 +99,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafRule.WafRulePredicatesOutputReference",
+		"@cdktf/provider-aws.wafRule.WafRulePredicatesOutputReference",
 		reflect.TypeOf((*WafRulePredicatesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

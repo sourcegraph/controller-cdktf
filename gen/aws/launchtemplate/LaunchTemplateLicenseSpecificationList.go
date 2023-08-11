@@ -116,7 +116,7 @@ func NewLaunchTemplateLicenseSpecificationList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_LaunchTemplateLicenseSpecificationList{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateLicenseSpecificationList",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecificationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLaunchTemplateLicenseSpecificationList_Override(l LaunchTemplateLicenseS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateLicenseSpecificationList",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecificationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

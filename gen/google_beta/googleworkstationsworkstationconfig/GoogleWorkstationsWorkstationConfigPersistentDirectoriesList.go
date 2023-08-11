@@ -116,7 +116,7 @@ func NewGoogleWorkstationsWorkstationConfigPersistentDirectoriesList(terraformRe
 	j := jsiiProxy_GoogleWorkstationsWorkstationConfigPersistentDirectoriesList{}
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigPersistentDirectoriesList",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigPersistentDirectoriesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleWorkstationsWorkstationConfigPersistentDirectoriesList_Override(g 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigPersistentDirectoriesList",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigPersistentDirectoriesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

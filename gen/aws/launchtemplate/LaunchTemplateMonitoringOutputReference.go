@@ -180,7 +180,7 @@ func NewLaunchTemplateMonitoringOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_LaunchTemplateMonitoringOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateMonitoringOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateMonitoringOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewLaunchTemplateMonitoringOutputReference_Override(l LaunchTemplateMonitor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateMonitoringOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateMonitoringOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

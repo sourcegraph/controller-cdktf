@@ -104,7 +104,7 @@ func NewDataAwsEfsAccessPointPosixUserList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataAwsEfsAccessPointPosixUserList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointPosixUserList",
+		"@cdktf/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointPosixUserList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEfsAccessPointPosixUserList_Override(d DataAwsEfsAccessPointPosix
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointPosixUserList",
+		"@cdktf/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointPosixUserList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

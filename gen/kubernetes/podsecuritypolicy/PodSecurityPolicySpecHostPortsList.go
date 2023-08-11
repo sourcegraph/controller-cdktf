@@ -116,7 +116,7 @@ func NewPodSecurityPolicySpecHostPortsList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_PodSecurityPolicySpecHostPortsList{}
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecHostPortsList",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecHostPortsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodSecurityPolicySpecHostPortsList_Override(p PodSecurityPolicySpecHostP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecHostPortsList",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecHostPortsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

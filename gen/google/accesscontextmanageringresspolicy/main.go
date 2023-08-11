@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy",
+		"@cdktf/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicy",
 		reflect.TypeOf((*AccessContextManagerIngressPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicyConfig",
+		"@cdktf/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicyConfig",
 		reflect.TypeOf((*AccessContextManagerIngressPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicyTimeouts",
+		"@cdktf/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicyTimeouts",
 		reflect.TypeOf((*AccessContextManagerIngressPolicyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google.accessContextManagerIngressPolicy.AccessContextManagerIngressPolicyTimeoutsOutputReference",
 		reflect.TypeOf((*AccessContextManagerIngressPolicyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

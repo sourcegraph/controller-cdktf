@@ -760,7 +760,7 @@ func NewGlueJob(scope constructs.Construct, id *string, config *GlueJobConfig) G
 	j := jsiiProxy_GlueJob{}
 
 	_jsii_.Create(
-		"aws.glueJob.GlueJob",
+		"@cdktf/provider-aws.glueJob.GlueJob",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -773,7 +773,7 @@ func NewGlueJob_Override(g GlueJob, scope constructs.Construct, id *string, conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueJob.GlueJob",
+		"@cdktf/provider-aws.glueJob.GlueJob",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1060,7 +1060,7 @@ func GlueJob_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueJob.GlueJob",
+		"@cdktf/provider-aws.glueJob.GlueJob",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1079,7 +1079,7 @@ func GlueJob_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueJob.GlueJob",
+		"@cdktf/provider-aws.glueJob.GlueJob",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1098,7 +1098,7 @@ func GlueJob_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueJob.GlueJob",
+		"@cdktf/provider-aws.glueJob.GlueJob",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1111,7 +1111,7 @@ func GlueJob_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.glueJob.GlueJob",
+		"@cdktf/provider-aws.glueJob.GlueJob",
 		"tfResourceType",
 		&returns,
 	)

@@ -203,7 +203,7 @@ func NewLbListenerRuleConditionQueryStringOutputReference(terraformResource cdkt
 	j := jsiiProxy_LbListenerRuleConditionQueryStringOutputReference{}
 
 	_jsii_.Create(
-		"aws.lbListenerRule.LbListenerRuleConditionQueryStringOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewLbListenerRuleConditionQueryStringOutputReference_Override(l LbListenerR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbListenerRule.LbListenerRuleConditionQueryStringOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

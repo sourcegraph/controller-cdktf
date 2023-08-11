@@ -104,7 +104,7 @@ func NewDataAwsWorkspacesBundleUserStorageList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataAwsWorkspacesBundleUserStorageList{}
 
 	_jsii_.Create(
-		"aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleUserStorageList",
+		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleUserStorageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsWorkspacesBundleUserStorageList_Override(d DataAwsWorkspacesBundl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleUserStorageList",
+		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleUserStorageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

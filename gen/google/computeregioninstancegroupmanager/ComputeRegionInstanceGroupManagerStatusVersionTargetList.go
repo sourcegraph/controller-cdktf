@@ -104,7 +104,7 @@ func NewComputeRegionInstanceGroupManagerStatusVersionTargetList(terraformResour
 	j := jsiiProxy_ComputeRegionInstanceGroupManagerStatusVersionTargetList{}
 
 	_jsii_.Create(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusVersionTargetList",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusVersionTargetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewComputeRegionInstanceGroupManagerStatusVersionTargetList_Override(c Comp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusVersionTargetList",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusVersionTargetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

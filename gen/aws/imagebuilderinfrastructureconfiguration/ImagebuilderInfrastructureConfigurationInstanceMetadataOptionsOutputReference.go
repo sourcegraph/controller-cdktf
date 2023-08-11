@@ -204,7 +204,7 @@ func NewImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputRefe
 	j := jsiiProxy_ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference",
+		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference",
+		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

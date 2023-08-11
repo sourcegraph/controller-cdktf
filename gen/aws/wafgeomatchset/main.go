@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.wafGeoMatchSet.WafGeoMatchSet",
+		"@cdktf/provider-aws.wafGeoMatchSet.WafGeoMatchSet",
 		reflect.TypeOf((*WafGeoMatchSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,15 +62,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafGeoMatchSet.WafGeoMatchSetConfig",
+		"@cdktf/provider-aws.wafGeoMatchSet.WafGeoMatchSetConfig",
 		reflect.TypeOf((*WafGeoMatchSetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafGeoMatchSet.WafGeoMatchSetGeoMatchConstraint",
+		"@cdktf/provider-aws.wafGeoMatchSet.WafGeoMatchSetGeoMatchConstraint",
 		reflect.TypeOf((*WafGeoMatchSetGeoMatchConstraint)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafGeoMatchSet.WafGeoMatchSetGeoMatchConstraintList",
+		"@cdktf/provider-aws.wafGeoMatchSet.WafGeoMatchSetGeoMatchConstraintList",
 		reflect.TypeOf((*WafGeoMatchSetGeoMatchConstraintList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -91,7 +91,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafGeoMatchSet.WafGeoMatchSetGeoMatchConstraintOutputReference",
+		"@cdktf/provider-aws.wafGeoMatchSet.WafGeoMatchSetGeoMatchConstraintOutputReference",
 		reflect.TypeOf((*WafGeoMatchSetGeoMatchConstraintOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -116,7 +116,7 @@ func NewDataGoogleIamPolicyAuditConfigList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataGoogleIamPolicyAuditConfigList{}
 
 	_jsii_.Create(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigList",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataGoogleIamPolicyAuditConfigList_Override(d DataGoogleIamPolicyAuditCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigList",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

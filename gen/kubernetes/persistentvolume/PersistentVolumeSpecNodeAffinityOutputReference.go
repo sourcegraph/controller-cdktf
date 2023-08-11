@@ -180,7 +180,7 @@ func NewPersistentVolumeSpecNodeAffinityOutputReference(terraformResource cdktf.
 	j := jsiiProxy_PersistentVolumeSpecNodeAffinityOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.persistentVolume.PersistentVolumeSpecNodeAffinityOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeSpecNodeAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewPersistentVolumeSpecNodeAffinityOutputReference_Override(p PersistentVol
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.persistentVolume.PersistentVolumeSpecNodeAffinityOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeSpecNodeAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

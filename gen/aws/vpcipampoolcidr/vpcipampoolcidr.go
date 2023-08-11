@@ -426,7 +426,7 @@ func NewVpcIpamPoolCidr(scope constructs.Construct, id *string, config *VpcIpamP
 	j := jsiiProxy_VpcIpamPoolCidr{}
 
 	_jsii_.Create(
-		"aws.vpcIpamPoolCidr.VpcIpamPoolCidr",
+		"@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidr",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -439,7 +439,7 @@ func NewVpcIpamPoolCidr_Override(v VpcIpamPoolCidr, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcIpamPoolCidr.VpcIpamPoolCidr",
+		"@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidr",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -583,7 +583,7 @@ func VpcIpamPoolCidr_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcIpamPoolCidr.VpcIpamPoolCidr",
+		"@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidr",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -602,7 +602,7 @@ func VpcIpamPoolCidr_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcIpamPoolCidr.VpcIpamPoolCidr",
+		"@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidr",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func VpcIpamPoolCidr_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcIpamPoolCidr.VpcIpamPoolCidr",
+		"@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidr",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func VpcIpamPoolCidr_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.vpcIpamPoolCidr.VpcIpamPoolCidr",
+		"@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidr",
 		"tfResourceType",
 		&returns,
 	)

@@ -373,7 +373,7 @@ func NewDataGoogleComputeInstanceSerialPort(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataGoogleComputeInstanceSerialPort{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstanceSerialPort.DataGoogleComputeInstanceSerialPort",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstanceSerialPort.DataGoogleComputeInstanceSerialPort",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -386,7 +386,7 @@ func NewDataGoogleComputeInstanceSerialPort_Override(d DataGoogleComputeInstance
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstanceSerialPort.DataGoogleComputeInstanceSerialPort",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstanceSerialPort.DataGoogleComputeInstanceSerialPort",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -519,7 +519,7 @@ func DataGoogleComputeInstanceSerialPort_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeInstanceSerialPort.DataGoogleComputeInstanceSerialPort",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstanceSerialPort.DataGoogleComputeInstanceSerialPort",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -538,7 +538,7 @@ func DataGoogleComputeInstanceSerialPort_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeInstanceSerialPort.DataGoogleComputeInstanceSerialPort",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstanceSerialPort.DataGoogleComputeInstanceSerialPort",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -557,7 +557,7 @@ func DataGoogleComputeInstanceSerialPort_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeInstanceSerialPort.DataGoogleComputeInstanceSerialPort",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstanceSerialPort.DataGoogleComputeInstanceSerialPort",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -570,7 +570,7 @@ func DataGoogleComputeInstanceSerialPort_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleComputeInstanceSerialPort.DataGoogleComputeInstanceSerialPort",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstanceSerialPort.DataGoogleComputeInstanceSerialPort",
 		"tfResourceType",
 		&returns,
 	)

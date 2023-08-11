@@ -424,7 +424,7 @@ func NewGooglePubsubSubscriptionIamBinding(scope constructs.Construct, id *strin
 	j := jsiiProxy_GooglePubsubSubscriptionIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding",
+		"@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGooglePubsubSubscriptionIamBinding_Override(g GooglePubsubSubscriptionIa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding",
+		"@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GooglePubsubSubscriptionIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding",
+		"@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GooglePubsubSubscriptionIamBinding_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding",
+		"@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GooglePubsubSubscriptionIamBinding_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding",
+		"@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GooglePubsubSubscriptionIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding",
+		"@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding",
 		"tfResourceType",
 		&returns,
 	)

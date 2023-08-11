@@ -481,7 +481,7 @@ func NewAppmeshVirtualNode(scope constructs.Construct, id *string, config *Appme
 	j := jsiiProxy_AppmeshVirtualNode{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNode",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -494,7 +494,7 @@ func NewAppmeshVirtualNode_Override(a AppmeshVirtualNode, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNode",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -660,7 +660,7 @@ func AppmeshVirtualNode_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appmeshVirtualNode.AppmeshVirtualNode",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func AppmeshVirtualNode_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appmeshVirtualNode.AppmeshVirtualNode",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -698,7 +698,7 @@ func AppmeshVirtualNode_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appmeshVirtualNode.AppmeshVirtualNode",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -711,7 +711,7 @@ func AppmeshVirtualNode_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appmeshVirtualNode.AppmeshVirtualNode",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNode",
 		"tfResourceType",
 		&returns,
 	)

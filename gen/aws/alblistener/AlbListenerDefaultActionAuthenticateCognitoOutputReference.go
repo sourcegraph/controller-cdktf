@@ -345,7 +345,7 @@ func NewAlbListenerDefaultActionAuthenticateCognitoOutputReference(terraformReso
 	j := jsiiProxy_AlbListenerDefaultActionAuthenticateCognitoOutputReference{}
 
 	_jsii_.Create(
-		"aws.albListener.AlbListenerDefaultActionAuthenticateCognitoOutputReference",
+		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognitoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -357,7 +357,7 @@ func NewAlbListenerDefaultActionAuthenticateCognitoOutputReference_Override(a Al
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albListener.AlbListenerDefaultActionAuthenticateCognitoOutputReference",
+		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognitoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

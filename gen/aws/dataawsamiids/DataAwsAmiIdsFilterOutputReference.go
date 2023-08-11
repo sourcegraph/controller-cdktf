@@ -202,7 +202,7 @@ func NewDataAwsAmiIdsFilterOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataAwsAmiIdsFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsAmiIds.DataAwsAmiIdsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsAmiIdsFilterOutputReference_Override(d DataAwsAmiIdsFilterOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAmiIds.DataAwsAmiIdsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

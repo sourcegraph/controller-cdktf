@@ -228,7 +228,7 @@ func NewGoogleComputeImageTimeoutsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_GoogleComputeImageTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeImage.GoogleComputeImageTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeImageTimeoutsOutputReference_Override(g GoogleComputeImageT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeImage.GoogleComputeImageTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

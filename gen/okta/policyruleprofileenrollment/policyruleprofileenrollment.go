@@ -508,7 +508,7 @@ func NewPolicyRuleProfileEnrollment(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_PolicyRuleProfileEnrollment{}
 
 	_jsii_.Create(
-		"okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment",
+		"@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -521,7 +521,7 @@ func NewPolicyRuleProfileEnrollment_Override(p PolicyRuleProfileEnrollment, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment",
+		"@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -709,7 +709,7 @@ func PolicyRuleProfileEnrollment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment",
+		"@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -728,7 +728,7 @@ func PolicyRuleProfileEnrollment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment",
+		"@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -747,7 +747,7 @@ func PolicyRuleProfileEnrollment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment",
+		"@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -760,7 +760,7 @@ func PolicyRuleProfileEnrollment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment",
+		"@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment",
 		"tfResourceType",
 		&returns,
 	)

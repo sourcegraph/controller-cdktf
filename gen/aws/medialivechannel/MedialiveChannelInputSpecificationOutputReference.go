@@ -225,7 +225,7 @@ func NewMedialiveChannelInputSpecificationOutputReference(terraformResource cdkt
 	j := jsiiProxy_MedialiveChannelInputSpecificationOutputReference{}
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelInputSpecificationOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewMedialiveChannelInputSpecificationOutputReference_Override(m MedialiveCh
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelInputSpecificationOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

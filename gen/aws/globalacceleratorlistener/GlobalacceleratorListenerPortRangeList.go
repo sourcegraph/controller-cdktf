@@ -116,7 +116,7 @@ func NewGlobalacceleratorListenerPortRangeList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_GlobalacceleratorListenerPortRangeList{}
 
 	_jsii_.Create(
-		"aws.globalacceleratorListener.GlobalacceleratorListenerPortRangeList",
+		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListenerPortRangeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGlobalacceleratorListenerPortRangeList_Override(g GlobalacceleratorListe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.globalacceleratorListener.GlobalacceleratorListenerPortRangeList",
+		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListenerPortRangeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

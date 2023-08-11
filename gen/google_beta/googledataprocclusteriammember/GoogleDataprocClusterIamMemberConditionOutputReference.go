@@ -226,7 +226,7 @@ func NewGoogleDataprocClusterIamMemberConditionOutputReference(terraformResource
 	j := jsiiProxy_GoogleDataprocClusterIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleDataprocClusterIamMemberConditionOutputReference_Override(g Google
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

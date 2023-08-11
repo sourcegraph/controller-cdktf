@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.bigqueryTableIamBinding.BigqueryTableIamBinding",
+		"@cdktf/provider-google.bigqueryTableIamBinding.BigqueryTableIamBinding",
 		reflect.TypeOf((*BigqueryTableIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,11 +71,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryTableIamBinding.BigqueryTableIamBindingCondition",
+		"@cdktf/provider-google.bigqueryTableIamBinding.BigqueryTableIamBindingCondition",
 		reflect.TypeOf((*BigqueryTableIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryTableIamBinding.BigqueryTableIamBindingConditionOutputReference",
+		"@cdktf/provider-google.bigqueryTableIamBinding.BigqueryTableIamBindingConditionOutputReference",
 		reflect.TypeOf((*BigqueryTableIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -114,7 +114,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryTableIamBinding.BigqueryTableIamBindingConfig",
+		"@cdktf/provider-google.bigqueryTableIamBinding.BigqueryTableIamBindingConfig",
 		reflect.TypeOf((*BigqueryTableIamBindingConfig)(nil)).Elem(),
 	)
 }

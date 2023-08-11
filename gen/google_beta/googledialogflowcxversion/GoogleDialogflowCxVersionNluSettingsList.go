@@ -104,7 +104,7 @@ func NewGoogleDialogflowCxVersionNluSettingsList(terraformResource cdktf.IInterp
 	j := jsiiProxy_GoogleDialogflowCxVersionNluSettingsList{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionNluSettingsList",
+		"@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionNluSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleDialogflowCxVersionNluSettingsList_Override(g GoogleDialogflowCxVe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionNluSettingsList",
+		"@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionNluSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

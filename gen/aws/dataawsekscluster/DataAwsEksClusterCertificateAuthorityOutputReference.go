@@ -167,7 +167,7 @@ func NewDataAwsEksClusterCertificateAuthorityOutputReference(terraformResource c
 	j := jsiiProxy_DataAwsEksClusterCertificateAuthorityOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEksCluster.DataAwsEksClusterCertificateAuthorityOutputReference",
+		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterCertificateAuthorityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsEksClusterCertificateAuthorityOutputReference_Override(d DataAwsE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEksCluster.DataAwsEksClusterCertificateAuthorityOutputReference",
+		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterCertificateAuthorityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

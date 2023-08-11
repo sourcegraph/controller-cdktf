@@ -546,7 +546,7 @@ func NewDialogflowCxIntent(scope constructs.Construct, id *string, config *Dialo
 	j := jsiiProxy_DialogflowCxIntent{}
 
 	_jsii_.Create(
-		"google.dialogflowCxIntent.DialogflowCxIntent",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntent",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -559,7 +559,7 @@ func NewDialogflowCxIntent_Override(d DialogflowCxIntent, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxIntent.DialogflowCxIntent",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntent",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -747,7 +747,7 @@ func DialogflowCxIntent_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dialogflowCxIntent.DialogflowCxIntent",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntent",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -766,7 +766,7 @@ func DialogflowCxIntent_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dialogflowCxIntent.DialogflowCxIntent",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntent",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -785,7 +785,7 @@ func DialogflowCxIntent_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dialogflowCxIntent.DialogflowCxIntent",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntent",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -798,7 +798,7 @@ func DialogflowCxIntent_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dialogflowCxIntent.DialogflowCxIntent",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntent",
 		"tfResourceType",
 		&returns,
 	)

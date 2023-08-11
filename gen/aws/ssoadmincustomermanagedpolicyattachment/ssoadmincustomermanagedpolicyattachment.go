@@ -365,7 +365,7 @@ func NewSsoadminCustomerManagedPolicyAttachment(scope constructs.Construct, id *
 	j := jsiiProxy_SsoadminCustomerManagedPolicyAttachment{}
 
 	_jsii_.Create(
-		"aws.ssoadminCustomerManagedPolicyAttachment.SsoadminCustomerManagedPolicyAttachment",
+		"@cdktf/provider-aws.ssoadminCustomerManagedPolicyAttachment.SsoadminCustomerManagedPolicyAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewSsoadminCustomerManagedPolicyAttachment_Override(s SsoadminCustomerManag
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssoadminCustomerManagedPolicyAttachment.SsoadminCustomerManagedPolicyAttachment",
+		"@cdktf/provider-aws.ssoadminCustomerManagedPolicyAttachment.SsoadminCustomerManagedPolicyAttachment",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -511,7 +511,7 @@ func SsoadminCustomerManagedPolicyAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssoadminCustomerManagedPolicyAttachment.SsoadminCustomerManagedPolicyAttachment",
+		"@cdktf/provider-aws.ssoadminCustomerManagedPolicyAttachment.SsoadminCustomerManagedPolicyAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -530,7 +530,7 @@ func SsoadminCustomerManagedPolicyAttachment_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssoadminCustomerManagedPolicyAttachment.SsoadminCustomerManagedPolicyAttachment",
+		"@cdktf/provider-aws.ssoadminCustomerManagedPolicyAttachment.SsoadminCustomerManagedPolicyAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -549,7 +549,7 @@ func SsoadminCustomerManagedPolicyAttachment_IsTerraformResource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssoadminCustomerManagedPolicyAttachment.SsoadminCustomerManagedPolicyAttachment",
+		"@cdktf/provider-aws.ssoadminCustomerManagedPolicyAttachment.SsoadminCustomerManagedPolicyAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func SsoadminCustomerManagedPolicyAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ssoadminCustomerManagedPolicyAttachment.SsoadminCustomerManagedPolicyAttachment",
+		"@cdktf/provider-aws.ssoadminCustomerManagedPolicyAttachment.SsoadminCustomerManagedPolicyAttachment",
 		"tfResourceType",
 		&returns,
 	)

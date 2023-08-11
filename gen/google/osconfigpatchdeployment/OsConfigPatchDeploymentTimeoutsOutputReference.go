@@ -204,7 +204,7 @@ func NewOsConfigPatchDeploymentTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_OsConfigPatchDeploymentTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentTimeoutsOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewOsConfigPatchDeploymentTimeoutsOutputReference_Override(o OsConfigPatchD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentTimeoutsOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

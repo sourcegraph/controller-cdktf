@@ -104,7 +104,7 @@ func NewGoogleDataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsList(terraformReso
 	j := jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsList{}
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogEntry.GoogleDataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsList",
+		"@cdktf/provider-google-beta.googleDataCatalogEntry.GoogleDataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleDataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsList_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogEntry.GoogleDataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsList",
+		"@cdktf/provider-google-beta.googleDataCatalogEntry.GoogleDataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

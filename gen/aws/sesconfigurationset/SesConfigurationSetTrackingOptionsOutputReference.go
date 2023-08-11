@@ -180,7 +180,7 @@ func NewSesConfigurationSetTrackingOptionsOutputReference(terraformResource cdkt
 	j := jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.sesConfigurationSet.SesConfigurationSetTrackingOptionsOutputReference",
+		"@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSetTrackingOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewSesConfigurationSetTrackingOptionsOutputReference_Override(s SesConfigur
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesConfigurationSet.SesConfigurationSetTrackingOptionsOutputReference",
+		"@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSetTrackingOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

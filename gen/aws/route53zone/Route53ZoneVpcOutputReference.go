@@ -203,7 +203,7 @@ func NewRoute53ZoneVpcOutputReference(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_Route53ZoneVpcOutputReference{}
 
 	_jsii_.Create(
-		"aws.route53Zone.Route53ZoneVpcOutputReference",
+		"@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewRoute53ZoneVpcOutputReference_Override(r Route53ZoneVpcOutputReference, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53Zone.Route53ZoneVpcOutputReference",
+		"@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

@@ -483,7 +483,7 @@ func NewVpcIpam(scope constructs.Construct, id *string, config *VpcIpamConfig) V
 	j := jsiiProxy_VpcIpam{}
 
 	_jsii_.Create(
-		"aws.vpcIpam.VpcIpam",
+		"@cdktf/provider-aws.vpcIpam.VpcIpam",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -496,7 +496,7 @@ func NewVpcIpam_Override(v VpcIpam, scope constructs.Construct, id *string, conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcIpam.VpcIpam",
+		"@cdktf/provider-aws.vpcIpam.VpcIpam",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -651,7 +651,7 @@ func VpcIpam_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcIpam.VpcIpam",
+		"@cdktf/provider-aws.vpcIpam.VpcIpam",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -670,7 +670,7 @@ func VpcIpam_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcIpam.VpcIpam",
+		"@cdktf/provider-aws.vpcIpam.VpcIpam",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func VpcIpam_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcIpam.VpcIpam",
+		"@cdktf/provider-aws.vpcIpam.VpcIpam",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func VpcIpam_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.vpcIpam.VpcIpam",
+		"@cdktf/provider-aws.vpcIpam.VpcIpam",
 		"tfResourceType",
 		&returns,
 	)

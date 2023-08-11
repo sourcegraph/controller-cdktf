@@ -228,7 +228,7 @@ func NewOsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference(terraform
 	j := jsiiProxy_OsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference{}
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewOsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

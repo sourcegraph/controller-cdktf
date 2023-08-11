@@ -180,7 +180,7 @@ func NewEcrRepositoryTimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_EcrRepositoryTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecrRepository.EcrRepositoryTimeoutsOutputReference",
+		"@cdktf/provider-aws.ecrRepository.EcrRepositoryTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewEcrRepositoryTimeoutsOutputReference_Override(e EcrRepositoryTimeoutsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecrRepository.EcrRepositoryTimeoutsOutputReference",
+		"@cdktf/provider-aws.ecrRepository.EcrRepositoryTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

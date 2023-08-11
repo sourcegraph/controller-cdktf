@@ -180,7 +180,7 @@ func NewDataKubernetesStorageClassV1AllowedTopologiesOutputReference(terraformRe
 	j := jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesStorageClassV1.DataKubernetesStorageClassV1AllowedTopologiesOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesStorageClassV1.DataKubernetesStorageClassV1AllowedTopologiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataKubernetesStorageClassV1AllowedTopologiesOutputReference_Override(d 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesStorageClassV1.DataKubernetesStorageClassV1AllowedTopologiesOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesStorageClassV1.DataKubernetesStorageClassV1AllowedTopologiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

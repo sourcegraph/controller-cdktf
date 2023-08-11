@@ -225,7 +225,7 @@ func NewAcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReferen
 	j := jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference",
+		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewAcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference",
+		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

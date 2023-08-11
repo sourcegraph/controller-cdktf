@@ -116,7 +116,7 @@ func NewAppBasicAuthUsersList(terraformResource cdktf.IInterpolatingParent, terr
 	j := jsiiProxy_AppBasicAuthUsersList{}
 
 	_jsii_.Create(
-		"okta.appBasicAuth.AppBasicAuthUsersList",
+		"@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppBasicAuthUsersList_Override(a AppBasicAuthUsersList, terraformResourc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appBasicAuth.AppBasicAuthUsersList",
+		"@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

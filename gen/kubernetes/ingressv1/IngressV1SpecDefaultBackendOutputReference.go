@@ -204,7 +204,7 @@ func NewIngressV1SpecDefaultBackendOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_IngressV1SpecDefaultBackendOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.ingressV1.IngressV1SpecDefaultBackendOutputReference",
+		"@cdktf/provider-kubernetes.ingressV1.IngressV1SpecDefaultBackendOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewIngressV1SpecDefaultBackendOutputReference_Override(i IngressV1SpecDefau
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.ingressV1.IngressV1SpecDefaultBackendOutputReference",
+		"@cdktf/provider-kubernetes.ingressV1.IngressV1SpecDefaultBackendOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

@@ -448,7 +448,7 @@ func NewDataCatalogEntryGroupIamBinding(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataCatalogEntryGroupIamBinding{}
 
 	_jsii_.Create(
-		"google.dataCatalogEntryGroupIamBinding.DataCatalogEntryGroupIamBinding",
+		"@cdktf/provider-google.dataCatalogEntryGroupIamBinding.DataCatalogEntryGroupIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewDataCatalogEntryGroupIamBinding_Override(d DataCatalogEntryGroupIamBindi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogEntryGroupIamBinding.DataCatalogEntryGroupIamBinding",
+		"@cdktf/provider-google.dataCatalogEntryGroupIamBinding.DataCatalogEntryGroupIamBinding",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -627,7 +627,7 @@ func DataCatalogEntryGroupIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogEntryGroupIamBinding.DataCatalogEntryGroupIamBinding",
+		"@cdktf/provider-google.dataCatalogEntryGroupIamBinding.DataCatalogEntryGroupIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func DataCatalogEntryGroupIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogEntryGroupIamBinding.DataCatalogEntryGroupIamBinding",
+		"@cdktf/provider-google.dataCatalogEntryGroupIamBinding.DataCatalogEntryGroupIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func DataCatalogEntryGroupIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogEntryGroupIamBinding.DataCatalogEntryGroupIamBinding",
+		"@cdktf/provider-google.dataCatalogEntryGroupIamBinding.DataCatalogEntryGroupIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DataCatalogEntryGroupIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataCatalogEntryGroupIamBinding.DataCatalogEntryGroupIamBinding",
+		"@cdktf/provider-google.dataCatalogEntryGroupIamBinding.DataCatalogEntryGroupIamBinding",
 		"tfResourceType",
 		&returns,
 	)

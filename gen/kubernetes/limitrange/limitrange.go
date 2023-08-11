@@ -343,7 +343,7 @@ func NewLimitRange(scope constructs.Construct, id *string, config *LimitRangeCon
 	j := jsiiProxy_LimitRange{}
 
 	_jsii_.Create(
-		"kubernetes.limitRange.LimitRange",
+		"@cdktf/provider-kubernetes.limitRange.LimitRange",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewLimitRange_Override(l LimitRange, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.limitRange.LimitRange",
+		"@cdktf/provider-kubernetes.limitRange.LimitRange",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -467,7 +467,7 @@ func LimitRange_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.limitRange.LimitRange",
+		"@cdktf/provider-kubernetes.limitRange.LimitRange",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -486,7 +486,7 @@ func LimitRange_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.limitRange.LimitRange",
+		"@cdktf/provider-kubernetes.limitRange.LimitRange",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func LimitRange_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.limitRange.LimitRange",
+		"@cdktf/provider-kubernetes.limitRange.LimitRange",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func LimitRange_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.limitRange.LimitRange",
+		"@cdktf/provider-kubernetes.limitRange.LimitRange",
 		"tfResourceType",
 		&returns,
 	)

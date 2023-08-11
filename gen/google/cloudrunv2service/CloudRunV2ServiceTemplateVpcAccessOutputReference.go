@@ -204,7 +204,7 @@ func NewCloudRunV2ServiceTemplateVpcAccessOutputReference(terraformResource cdkt
 	j := jsiiProxy_CloudRunV2ServiceTemplateVpcAccessOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Service.CloudRunV2ServiceTemplateVpcAccessOutputReference",
+		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVpcAccessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCloudRunV2ServiceTemplateVpcAccessOutputReference_Override(c CloudRunV2S
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Service.CloudRunV2ServiceTemplateVpcAccessOutputReference",
+		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVpcAccessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

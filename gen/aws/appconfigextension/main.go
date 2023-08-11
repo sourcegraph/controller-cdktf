@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.appconfigExtension.AppconfigExtension",
+		"@cdktf/provider-aws.appconfigExtension.AppconfigExtension",
 		reflect.TypeOf((*AppconfigExtension)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionPoint", GoGetter: "ActionPoint"},
@@ -75,15 +75,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appconfigExtension.AppconfigExtensionActionPoint",
+		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPoint",
 		reflect.TypeOf((*AppconfigExtensionActionPoint)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appconfigExtension.AppconfigExtensionActionPointAction",
+		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointAction",
 		reflect.TypeOf((*AppconfigExtensionActionPointAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appconfigExtension.AppconfigExtensionActionPointActionList",
+		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointActionList",
 		reflect.TypeOf((*AppconfigExtensionActionPointActionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -104,7 +104,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appconfigExtension.AppconfigExtensionActionPointActionOutputReference",
+		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointActionOutputReference",
 		reflect.TypeOf((*AppconfigExtensionActionPointActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -145,7 +145,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appconfigExtension.AppconfigExtensionActionPointList",
+		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointList",
 		reflect.TypeOf((*AppconfigExtensionActionPointList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -166,7 +166,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appconfigExtension.AppconfigExtensionActionPointOutputReference",
+		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointOutputReference",
 		reflect.TypeOf((*AppconfigExtensionActionPointOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -203,15 +203,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appconfigExtension.AppconfigExtensionConfig",
+		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionConfig",
 		reflect.TypeOf((*AppconfigExtensionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appconfigExtension.AppconfigExtensionParameter",
+		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameter",
 		reflect.TypeOf((*AppconfigExtensionParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appconfigExtension.AppconfigExtensionParameterList",
+		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameterList",
 		reflect.TypeOf((*AppconfigExtensionParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -232,7 +232,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appconfigExtension.AppconfigExtensionParameterOutputReference",
+		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameterOutputReference",
 		reflect.TypeOf((*AppconfigExtensionParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

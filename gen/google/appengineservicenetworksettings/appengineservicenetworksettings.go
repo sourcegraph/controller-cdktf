@@ -390,7 +390,7 @@ func NewAppEngineServiceNetworkSettings(scope constructs.Construct, id *string, 
 	j := jsiiProxy_AppEngineServiceNetworkSettings{}
 
 	_jsii_.Create(
-		"google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettings",
+		"@cdktf/provider-google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewAppEngineServiceNetworkSettings_Override(a AppEngineServiceNetworkSettin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettings",
+		"@cdktf/provider-google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettings",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -536,7 +536,7 @@ func AppEngineServiceNetworkSettings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettings",
+		"@cdktf/provider-google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -555,7 +555,7 @@ func AppEngineServiceNetworkSettings_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettings",
+		"@cdktf/provider-google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func AppEngineServiceNetworkSettings_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettings",
+		"@cdktf/provider-google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettings",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -587,7 +587,7 @@ func AppEngineServiceNetworkSettings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettings",
+		"@cdktf/provider-google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettings",
 		"tfResourceType",
 		&returns,
 	)

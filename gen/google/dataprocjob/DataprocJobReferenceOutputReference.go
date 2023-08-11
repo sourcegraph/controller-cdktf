@@ -180,7 +180,7 @@ func NewDataprocJobReferenceOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataprocJobReferenceOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocJob.DataprocJobReferenceOutputReference",
+		"@cdktf/provider-google.dataprocJob.DataprocJobReferenceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataprocJobReferenceOutputReference_Override(d DataprocJobReferenceOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocJob.DataprocJobReferenceOutputReference",
+		"@cdktf/provider-google.dataprocJob.DataprocJobReferenceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

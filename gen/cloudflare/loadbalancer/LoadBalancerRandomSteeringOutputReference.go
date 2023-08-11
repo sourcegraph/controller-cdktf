@@ -204,7 +204,7 @@ func NewLoadBalancerRandomSteeringOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_LoadBalancerRandomSteeringOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerRandomSteeringOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteeringOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewLoadBalancerRandomSteeringOutputReference_Override(l LoadBalancerRandomS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerRandomSteeringOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteeringOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

@@ -303,7 +303,7 @@ func NewDataAwsEbsEncryptionByDefault(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataAwsEbsEncryptionByDefault{}
 
 	_jsii_.Create(
-		"aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefault",
+		"@cdktf/provider-aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefault",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -316,7 +316,7 @@ func NewDataAwsEbsEncryptionByDefault_Override(d DataAwsEbsEncryptionByDefault, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefault",
+		"@cdktf/provider-aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefault",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -405,7 +405,7 @@ func DataAwsEbsEncryptionByDefault_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefault",
+		"@cdktf/provider-aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefault",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -424,7 +424,7 @@ func DataAwsEbsEncryptionByDefault_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefault",
+		"@cdktf/provider-aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefault",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -443,7 +443,7 @@ func DataAwsEbsEncryptionByDefault_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefault",
+		"@cdktf/provider-aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefault",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -456,7 +456,7 @@ func DataAwsEbsEncryptionByDefault_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefault",
+		"@cdktf/provider-aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefault",
 		"tfResourceType",
 		&returns,
 	)

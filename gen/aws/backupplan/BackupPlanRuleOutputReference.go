@@ -370,7 +370,7 @@ func NewBackupPlanRuleOutputReference(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_BackupPlanRuleOutputReference{}
 
 	_jsii_.Create(
-		"aws.backupPlan.BackupPlanRuleOutputReference",
+		"@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -382,7 +382,7 @@ func NewBackupPlanRuleOutputReference_Override(b BackupPlanRuleOutputReference, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupPlan.BackupPlanRuleOutputReference",
+		"@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)

@@ -605,7 +605,7 @@ func NewGoogleComputeNodeGroup(scope constructs.Construct, id *string, config *G
 	j := jsiiProxy_GoogleComputeNodeGroup{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeNodeGroup.GoogleComputeNodeGroup",
+		"@cdktf/provider-google-beta.googleComputeNodeGroup.GoogleComputeNodeGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -618,7 +618,7 @@ func NewGoogleComputeNodeGroup_Override(g GoogleComputeNodeGroup, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeNodeGroup.GoogleComputeNodeGroup",
+		"@cdktf/provider-google-beta.googleComputeNodeGroup.GoogleComputeNodeGroup",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -817,7 +817,7 @@ func GoogleComputeNodeGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeNodeGroup.GoogleComputeNodeGroup",
+		"@cdktf/provider-google-beta.googleComputeNodeGroup.GoogleComputeNodeGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -836,7 +836,7 @@ func GoogleComputeNodeGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeNodeGroup.GoogleComputeNodeGroup",
+		"@cdktf/provider-google-beta.googleComputeNodeGroup.GoogleComputeNodeGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -855,7 +855,7 @@ func GoogleComputeNodeGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeNodeGroup.GoogleComputeNodeGroup",
+		"@cdktf/provider-google-beta.googleComputeNodeGroup.GoogleComputeNodeGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -868,7 +868,7 @@ func GoogleComputeNodeGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeNodeGroup.GoogleComputeNodeGroup",
+		"@cdktf/provider-google-beta.googleComputeNodeGroup.GoogleComputeNodeGroup",
 		"tfResourceType",
 		&returns,
 	)

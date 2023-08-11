@@ -510,7 +510,7 @@ func NewComputeRegionPerInstanceConfig(scope constructs.Construct, id *string, c
 	j := jsiiProxy_ComputeRegionPerInstanceConfig{}
 
 	_jsii_.Create(
-		"google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfig",
+		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -523,7 +523,7 @@ func NewComputeRegionPerInstanceConfig_Override(c ComputeRegionPerInstanceConfig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfig",
+		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfig",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -711,7 +711,7 @@ func ComputeRegionPerInstanceConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfig",
+		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -730,7 +730,7 @@ func ComputeRegionPerInstanceConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfig",
+		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -749,7 +749,7 @@ func ComputeRegionPerInstanceConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfig",
+		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func ComputeRegionPerInstanceConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfig",
+		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfig",
 		"tfResourceType",
 		&returns,
 	)

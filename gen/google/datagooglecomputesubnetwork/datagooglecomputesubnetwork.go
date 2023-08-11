@@ -430,7 +430,7 @@ func NewDataGoogleComputeSubnetwork(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataGoogleComputeSubnetwork{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetwork",
+		"@cdktf/provider-google.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetwork",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -443,7 +443,7 @@ func NewDataGoogleComputeSubnetwork_Override(d DataGoogleComputeSubnetwork, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetwork",
+		"@cdktf/provider-google.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetwork",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -576,7 +576,7 @@ func DataGoogleComputeSubnetwork_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetwork",
+		"@cdktf/provider-google.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetwork",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func DataGoogleComputeSubnetwork_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetwork",
+		"@cdktf/provider-google.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetwork",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -614,7 +614,7 @@ func DataGoogleComputeSubnetwork_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetwork",
+		"@cdktf/provider-google.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetwork",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -627,7 +627,7 @@ func DataGoogleComputeSubnetwork_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetwork",
+		"@cdktf/provider-google.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetwork",
 		"tfResourceType",
 		&returns,
 	)

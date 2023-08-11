@@ -348,7 +348,7 @@ func NewRulesetRulesRatelimitOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_RulesetRulesRatelimitOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesRatelimitOutputReference",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewRulesetRulesRatelimitOutputReference_Override(r RulesetRulesRatelimitOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesRatelimitOutputReference",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

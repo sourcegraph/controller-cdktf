@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsIpRanges.DataAwsIpRanges",
+		"@cdktf/provider-aws.dataAwsIpRanges.DataAwsIpRanges",
 		reflect.TypeOf((*DataAwsIpRanges)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsIpRanges.DataAwsIpRangesConfig",
+		"@cdktf/provider-aws.dataAwsIpRanges.DataAwsIpRangesConfig",
 		reflect.TypeOf((*DataAwsIpRangesConfig)(nil)).Elem(),
 	)
 }

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.signerSigningProfile.SignerSigningProfile",
+		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile",
 		reflect.TypeOf((*SignerSigningProfile)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,15 +79,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.signerSigningProfile.SignerSigningProfileConfig",
+		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileConfig",
 		reflect.TypeOf((*SignerSigningProfileConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.signerSigningProfile.SignerSigningProfileRevocationRecord",
+		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileRevocationRecord",
 		reflect.TypeOf((*SignerSigningProfileRevocationRecord)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.signerSigningProfile.SignerSigningProfileRevocationRecordList",
+		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileRevocationRecordList",
 		reflect.TypeOf((*SignerSigningProfileRevocationRecordList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.signerSigningProfile.SignerSigningProfileRevocationRecordOutputReference",
+		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileRevocationRecordOutputReference",
 		reflect.TypeOf((*SignerSigningProfileRevocationRecordOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -142,11 +142,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.signerSigningProfile.SignerSigningProfileSignatureValidityPeriod",
+		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSignatureValidityPeriod",
 		reflect.TypeOf((*SignerSigningProfileSignatureValidityPeriod)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.signerSigningProfile.SignerSigningProfileSignatureValidityPeriodOutputReference",
+		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSignatureValidityPeriodOutputReference",
 		reflect.TypeOf((*SignerSigningProfileSignatureValidityPeriodOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

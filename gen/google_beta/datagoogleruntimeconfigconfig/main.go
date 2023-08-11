@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfig",
+		"@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfig",
 		reflect.TypeOf((*DataGoogleRuntimeconfigConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfigConfig",
+		"@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfigConfig",
 		reflect.TypeOf((*DataGoogleRuntimeconfigConfigConfig)(nil)).Elem(),
 	)
 }

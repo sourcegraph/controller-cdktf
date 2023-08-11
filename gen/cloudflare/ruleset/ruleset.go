@@ -472,7 +472,7 @@ func NewRuleset(scope constructs.Construct, id *string, config *RulesetConfig) R
 	j := jsiiProxy_Ruleset{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.Ruleset",
+		"@cdktf/provider-cloudflare.ruleset.Ruleset",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -485,7 +485,7 @@ func NewRuleset_Override(r Ruleset, scope constructs.Construct, id *string, conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.Ruleset",
+		"@cdktf/provider-cloudflare.ruleset.Ruleset",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -662,7 +662,7 @@ func Ruleset_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.ruleset.Ruleset",
+		"@cdktf/provider-cloudflare.ruleset.Ruleset",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -681,7 +681,7 @@ func Ruleset_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.ruleset.Ruleset",
+		"@cdktf/provider-cloudflare.ruleset.Ruleset",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func Ruleset_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.ruleset.Ruleset",
+		"@cdktf/provider-cloudflare.ruleset.Ruleset",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -713,7 +713,7 @@ func Ruleset_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.ruleset.Ruleset",
+		"@cdktf/provider-cloudflare.ruleset.Ruleset",
 		"tfResourceType",
 		&returns,
 	)

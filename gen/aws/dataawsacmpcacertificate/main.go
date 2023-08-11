@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificate",
+		"@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificate",
 		reflect.TypeOf((*DataAwsAcmpcaCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificateConfig",
+		"@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificateConfig",
 		reflect.TypeOf((*DataAwsAcmpcaCertificateConfig)(nil)).Elem(),
 	)
 }

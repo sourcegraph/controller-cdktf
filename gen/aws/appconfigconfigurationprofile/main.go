@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.appconfigConfigurationProfile.AppconfigConfigurationProfile",
+		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfile",
 		reflect.TypeOf((*AppconfigConfigurationProfile)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,15 +82,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appconfigConfigurationProfile.AppconfigConfigurationProfileConfig",
+		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileConfig",
 		reflect.TypeOf((*AppconfigConfigurationProfileConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidator",
+		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidator",
 		reflect.TypeOf((*AppconfigConfigurationProfileValidator)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidatorList",
+		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidatorList",
 		reflect.TypeOf((*AppconfigConfigurationProfileValidatorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -111,7 +111,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidatorOutputReference",
+		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidatorOutputReference",
 		reflect.TypeOf((*AppconfigConfigurationProfileValidatorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

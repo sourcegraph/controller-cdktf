@@ -104,7 +104,7 @@ func NewSyntheticsCanaryTimelineList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_SyntheticsCanaryTimelineList{}
 
 	_jsii_.Create(
-		"aws.syntheticsCanary.SyntheticsCanaryTimelineList",
+		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryTimelineList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewSyntheticsCanaryTimelineList_Override(s SyntheticsCanaryTimelineList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.syntheticsCanary.SyntheticsCanaryTimelineList",
+		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryTimelineList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

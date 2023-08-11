@@ -180,7 +180,7 @@ func NewLambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReferen
 	j := jsiiProxy_LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewLambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

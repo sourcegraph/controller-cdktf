@@ -227,7 +227,7 @@ func NewComputeImageRawDiskOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_ComputeImageRawDiskOutputReference{}
 
 	_jsii_.Create(
-		"google.computeImage.ComputeImageRawDiskOutputReference",
+		"@cdktf/provider-google.computeImage.ComputeImageRawDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewComputeImageRawDiskOutputReference_Override(c ComputeImageRawDiskOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeImage.ComputeImageRawDiskOutputReference",
+		"@cdktf/provider-google.computeImage.ComputeImageRawDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

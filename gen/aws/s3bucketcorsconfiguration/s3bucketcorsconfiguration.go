@@ -366,7 +366,7 @@ func NewS3BucketCorsConfiguration(scope constructs.Construct, id *string, config
 	j := jsiiProxy_S3BucketCorsConfiguration{}
 
 	_jsii_.Create(
-		"aws.s3BucketCorsConfiguration.S3BucketCorsConfiguration",
+		"@cdktf/provider-aws.s3BucketCorsConfiguration.S3BucketCorsConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewS3BucketCorsConfiguration_Override(s S3BucketCorsConfiguration, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketCorsConfiguration.S3BucketCorsConfiguration",
+		"@cdktf/provider-aws.s3BucketCorsConfiguration.S3BucketCorsConfiguration",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -512,7 +512,7 @@ func S3BucketCorsConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketCorsConfiguration.S3BucketCorsConfiguration",
+		"@cdktf/provider-aws.s3BucketCorsConfiguration.S3BucketCorsConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func S3BucketCorsConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketCorsConfiguration.S3BucketCorsConfiguration",
+		"@cdktf/provider-aws.s3BucketCorsConfiguration.S3BucketCorsConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func S3BucketCorsConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketCorsConfiguration.S3BucketCorsConfiguration",
+		"@cdktf/provider-aws.s3BucketCorsConfiguration.S3BucketCorsConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func S3BucketCorsConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3BucketCorsConfiguration.S3BucketCorsConfiguration",
+		"@cdktf/provider-aws.s3BucketCorsConfiguration.S3BucketCorsConfiguration",
 		"tfResourceType",
 		&returns,
 	)

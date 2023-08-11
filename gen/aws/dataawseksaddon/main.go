@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsEksAddon.DataAwsEksAddon",
+		"@cdktf/provider-aws.dataAwsEksAddon.DataAwsEksAddon",
 		reflect.TypeOf((*DataAwsEksAddon)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addonName", GoGetter: "AddonName"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEksAddon.DataAwsEksAddonConfig",
+		"@cdktf/provider-aws.dataAwsEksAddon.DataAwsEksAddonConfig",
 		reflect.TypeOf((*DataAwsEksAddonConfig)(nil)).Elem(),
 	)
 }

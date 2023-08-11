@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.opsworksStack.OpsworksStack",
+		"@cdktf/provider-aws.opsworksStack.OpsworksStack",
 		reflect.TypeOf((*OpsworksStack)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -127,15 +127,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksStack.OpsworksStackConfig",
+		"@cdktf/provider-aws.opsworksStack.OpsworksStackConfig",
 		reflect.TypeOf((*OpsworksStackConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksStack.OpsworksStackCustomCookbooksSource",
+		"@cdktf/provider-aws.opsworksStack.OpsworksStackCustomCookbooksSource",
 		reflect.TypeOf((*OpsworksStackCustomCookbooksSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksStack.OpsworksStackCustomCookbooksSourceOutputReference",
+		"@cdktf/provider-aws.opsworksStack.OpsworksStackCustomCookbooksSourceOutputReference",
 		reflect.TypeOf((*OpsworksStackCustomCookbooksSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -183,11 +183,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksStack.OpsworksStackTimeouts",
+		"@cdktf/provider-aws.opsworksStack.OpsworksStackTimeouts",
 		reflect.TypeOf((*OpsworksStackTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksStack.OpsworksStackTimeoutsOutputReference",
+		"@cdktf/provider-aws.opsworksStack.OpsworksStackTimeoutsOutputReference",
 		reflect.TypeOf((*OpsworksStackTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

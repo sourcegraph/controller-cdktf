@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.dataOktaUsers.DataOktaUsers",
+		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsers",
 		reflect.TypeOf((*DataOktaUsers)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaUsers.DataOktaUsersConfig",
+		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersConfig",
 		reflect.TypeOf((*DataOktaUsersConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaUsers.DataOktaUsersSearch",
+		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearch",
 		reflect.TypeOf((*DataOktaUsersSearch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaUsers.DataOktaUsersSearchList",
+		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearchList",
 		reflect.TypeOf((*DataOktaUsersSearchList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -102,7 +102,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaUsers.DataOktaUsersSearchOutputReference",
+		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearchOutputReference",
 		reflect.TypeOf((*DataOktaUsersSearchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
@@ -146,11 +146,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaUsers.DataOktaUsersUsers",
+		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersUsers",
 		reflect.TypeOf((*DataOktaUsersUsers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaUsers.DataOktaUsersUsersList",
+		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersUsersList",
 		reflect.TypeOf((*DataOktaUsersUsersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -170,7 +170,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaUsers.DataOktaUsersUsersOutputReference",
+		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersUsersOutputReference",
 		reflect.TypeOf((*DataOktaUsersUsersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "adminRoles", GoGetter: "AdminRoles"},

@@ -116,7 +116,7 @@ func NewRulesetRulesActionParametersUriList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_RulesetRulesActionParametersUriList{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersUriList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRulesetRulesActionParametersUriList_Override(r RulesetRulesActionParamet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersUriList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

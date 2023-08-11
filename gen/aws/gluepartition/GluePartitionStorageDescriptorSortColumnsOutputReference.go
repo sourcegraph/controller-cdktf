@@ -202,7 +202,7 @@ func NewGluePartitionStorageDescriptorSortColumnsOutputReference(terraformResour
 	j := jsiiProxy_GluePartitionStorageDescriptorSortColumnsOutputReference{}
 
 	_jsii_.Create(
-		"aws.gluePartition.GluePartitionStorageDescriptorSortColumnsOutputReference",
+		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumnsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGluePartitionStorageDescriptorSortColumnsOutputReference_Override(g Glue
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gluePartition.GluePartitionStorageDescriptorSortColumnsOutputReference",
+		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumnsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

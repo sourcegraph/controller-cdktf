@@ -180,7 +180,7 @@ func NewInstanceCreditSpecificationOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_InstanceCreditSpecificationOutputReference{}
 
 	_jsii_.Create(
-		"aws.instance.InstanceCreditSpecificationOutputReference",
+		"@cdktf/provider-aws.instance.InstanceCreditSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewInstanceCreditSpecificationOutputReference_Override(i InstanceCreditSpec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.instance.InstanceCreditSpecificationOutputReference",
+		"@cdktf/provider-aws.instance.InstanceCreditSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

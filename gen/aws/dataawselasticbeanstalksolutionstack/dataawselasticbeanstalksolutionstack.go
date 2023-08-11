@@ -326,7 +326,7 @@ func NewDataAwsElasticBeanstalkSolutionStack(scope constructs.Construct, id *str
 	j := jsiiProxy_DataAwsElasticBeanstalkSolutionStack{}
 
 	_jsii_.Create(
-		"aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStack",
+		"@cdktf/provider-aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStack",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -339,7 +339,7 @@ func NewDataAwsElasticBeanstalkSolutionStack_Override(d DataAwsElasticBeanstalkS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStack",
+		"@cdktf/provider-aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStack",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -450,7 +450,7 @@ func DataAwsElasticBeanstalkSolutionStack_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStack",
+		"@cdktf/provider-aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStack",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -469,7 +469,7 @@ func DataAwsElasticBeanstalkSolutionStack_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStack",
+		"@cdktf/provider-aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStack",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -488,7 +488,7 @@ func DataAwsElasticBeanstalkSolutionStack_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStack",
+		"@cdktf/provider-aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStack",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -501,7 +501,7 @@ func DataAwsElasticBeanstalkSolutionStack_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStack",
+		"@cdktf/provider-aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStack",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.pinpointApp.PinpointApp",
+		"@cdktf/provider-aws.pinpointApp.PinpointApp",
 		reflect.TypeOf((*PinpointApp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,11 +81,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.pinpointApp.PinpointAppCampaignHook",
+		"@cdktf/provider-aws.pinpointApp.PinpointAppCampaignHook",
 		reflect.TypeOf((*PinpointAppCampaignHook)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.pinpointApp.PinpointAppCampaignHookOutputReference",
+		"@cdktf/provider-aws.pinpointApp.PinpointAppCampaignHookOutputReference",
 		reflect.TypeOf((*PinpointAppCampaignHookOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -126,15 +126,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.pinpointApp.PinpointAppConfig",
+		"@cdktf/provider-aws.pinpointApp.PinpointAppConfig",
 		reflect.TypeOf((*PinpointAppConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.pinpointApp.PinpointAppLimits",
+		"@cdktf/provider-aws.pinpointApp.PinpointAppLimits",
 		reflect.TypeOf((*PinpointAppLimits)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.pinpointApp.PinpointAppLimitsOutputReference",
+		"@cdktf/provider-aws.pinpointApp.PinpointAppLimitsOutputReference",
 		reflect.TypeOf((*PinpointAppLimitsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -178,11 +178,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.pinpointApp.PinpointAppQuietTime",
+		"@cdktf/provider-aws.pinpointApp.PinpointAppQuietTime",
 		reflect.TypeOf((*PinpointAppQuietTime)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.pinpointApp.PinpointAppQuietTimeOutputReference",
+		"@cdktf/provider-aws.pinpointApp.PinpointAppQuietTimeOutputReference",
 		reflect.TypeOf((*PinpointAppQuietTimeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

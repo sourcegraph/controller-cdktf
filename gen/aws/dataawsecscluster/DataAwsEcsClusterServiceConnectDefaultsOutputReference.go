@@ -167,7 +167,7 @@ func NewDataAwsEcsClusterServiceConnectDefaultsOutputReference(terraformResource
 	j := jsiiProxy_DataAwsEcsClusterServiceConnectDefaultsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEcsCluster.DataAwsEcsClusterServiceConnectDefaultsOutputReference",
+		"@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsClusterServiceConnectDefaultsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsEcsClusterServiceConnectDefaultsOutputReference_Override(d DataAw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEcsCluster.DataAwsEcsClusterServiceConnectDefaultsOutputReference",
+		"@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsClusterServiceConnectDefaultsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

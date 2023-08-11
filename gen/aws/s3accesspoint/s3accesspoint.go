@@ -528,7 +528,7 @@ func NewS3AccessPoint(scope constructs.Construct, id *string, config *S3AccessPo
 	j := jsiiProxy_S3AccessPoint{}
 
 	_jsii_.Create(
-		"aws.s3AccessPoint.S3AccessPoint",
+		"@cdktf/provider-aws.s3AccessPoint.S3AccessPoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -541,7 +541,7 @@ func NewS3AccessPoint_Override(s S3AccessPoint, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3AccessPoint.S3AccessPoint",
+		"@cdktf/provider-aws.s3AccessPoint.S3AccessPoint",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -707,7 +707,7 @@ func S3AccessPoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3AccessPoint.S3AccessPoint",
+		"@cdktf/provider-aws.s3AccessPoint.S3AccessPoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -726,7 +726,7 @@ func S3AccessPoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3AccessPoint.S3AccessPoint",
+		"@cdktf/provider-aws.s3AccessPoint.S3AccessPoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -745,7 +745,7 @@ func S3AccessPoint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3AccessPoint.S3AccessPoint",
+		"@cdktf/provider-aws.s3AccessPoint.S3AccessPoint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -758,7 +758,7 @@ func S3AccessPoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3AccessPoint.S3AccessPoint",
+		"@cdktf/provider-aws.s3AccessPoint.S3AccessPoint",
 		"tfResourceType",
 		&returns,
 	)

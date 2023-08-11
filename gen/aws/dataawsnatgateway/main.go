@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsNatGateway.DataAwsNatGateway",
+		"@cdktf/provider-aws.dataAwsNatGateway.DataAwsNatGateway",
 		reflect.TypeOf((*DataAwsNatGateway)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,15 +78,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsNatGateway.DataAwsNatGatewayConfig",
+		"@cdktf/provider-aws.dataAwsNatGateway.DataAwsNatGatewayConfig",
 		reflect.TypeOf((*DataAwsNatGatewayConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsNatGateway.DataAwsNatGatewayFilter",
+		"@cdktf/provider-aws.dataAwsNatGateway.DataAwsNatGatewayFilter",
 		reflect.TypeOf((*DataAwsNatGatewayFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsNatGateway.DataAwsNatGatewayFilterList",
+		"@cdktf/provider-aws.dataAwsNatGateway.DataAwsNatGatewayFilterList",
 		reflect.TypeOf((*DataAwsNatGatewayFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsNatGateway.DataAwsNatGatewayFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsNatGateway.DataAwsNatGatewayFilterOutputReference",
 		reflect.TypeOf((*DataAwsNatGatewayFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -143,11 +143,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsNatGateway.DataAwsNatGatewayTimeouts",
+		"@cdktf/provider-aws.dataAwsNatGateway.DataAwsNatGatewayTimeouts",
 		reflect.TypeOf((*DataAwsNatGatewayTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsNatGateway.DataAwsNatGatewayTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsNatGateway.DataAwsNatGatewayTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsNatGatewayTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

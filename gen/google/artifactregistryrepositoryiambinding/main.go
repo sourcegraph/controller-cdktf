@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBinding",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBinding",
 		reflect.TypeOf((*ArtifactRegistryRepositoryIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBindingCondition",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBindingCondition",
 		reflect.TypeOf((*ArtifactRegistryRepositoryIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBindingConditionOutputReference",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBindingConditionOutputReference",
 		reflect.TypeOf((*ArtifactRegistryRepositoryIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBindingConfig",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBindingConfig",
 		reflect.TypeOf((*ArtifactRegistryRepositoryIamBindingConfig)(nil)).Elem(),
 	)
 }

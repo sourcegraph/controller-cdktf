@@ -226,7 +226,7 @@ func NewOpensearchDomainVpcOptionsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_OpensearchDomainVpcOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainVpcOptionsOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainVpcOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewOpensearchDomainVpcOptionsOutputReference_Override(o OpensearchDomainVpc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainVpcOptionsOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainVpcOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

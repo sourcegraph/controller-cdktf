@@ -204,7 +204,7 @@ func NewGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference(
 	j := jsiiProxy_GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeForwardingRule.GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeForwardingRule.GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeForwardingRule.GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeForwardingRule.GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

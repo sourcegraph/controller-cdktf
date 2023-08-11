@@ -104,7 +104,7 @@ func NewDataAwsMemorydbSnapshotClusterConfigurationList(terraformResource cdktf.
 	j := jsiiProxy_DataAwsMemorydbSnapshotClusterConfigurationList{}
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotClusterConfigurationList",
+		"@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotClusterConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsMemorydbSnapshotClusterConfigurationList_Override(d DataAwsMemory
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotClusterConfigurationList",
+		"@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotClusterConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccount",
+		"@cdktf/provider-aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccount",
 		reflect.TypeOf((*DataAwsRedshiftServiceAccount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,7 +57,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccountConfig",
+		"@cdktf/provider-aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccountConfig",
 		reflect.TypeOf((*DataAwsRedshiftServiceAccountConfig)(nil)).Elem(),
 	)
 }

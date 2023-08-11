@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.resourceSet.ResourceSet",
+		"@cdktf/provider-okta.resourceSet.ResourceSet",
 		reflect.TypeOf((*ResourceSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.resourceSet.ResourceSetConfig",
+		"@cdktf/provider-okta.resourceSet.ResourceSetConfig",
 		reflect.TypeOf((*ResourceSetConfig)(nil)).Elem(),
 	)
 }

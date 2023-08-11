@@ -545,7 +545,7 @@ func NewGoogleVertexAiFeaturestore(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleVertexAiFeaturestore{}
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiFeaturestore.GoogleVertexAiFeaturestore",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestore.GoogleVertexAiFeaturestore",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -558,7 +558,7 @@ func NewGoogleVertexAiFeaturestore_Override(g GoogleVertexAiFeaturestore, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiFeaturestore.GoogleVertexAiFeaturestore",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestore.GoogleVertexAiFeaturestore",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -735,7 +735,7 @@ func GoogleVertexAiFeaturestore_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVertexAiFeaturestore.GoogleVertexAiFeaturestore",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestore.GoogleVertexAiFeaturestore",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -754,7 +754,7 @@ func GoogleVertexAiFeaturestore_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVertexAiFeaturestore.GoogleVertexAiFeaturestore",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestore.GoogleVertexAiFeaturestore",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -773,7 +773,7 @@ func GoogleVertexAiFeaturestore_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVertexAiFeaturestore.GoogleVertexAiFeaturestore",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestore.GoogleVertexAiFeaturestore",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -786,7 +786,7 @@ func GoogleVertexAiFeaturestore_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleVertexAiFeaturestore.GoogleVertexAiFeaturestore",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestore.GoogleVertexAiFeaturestore",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterVerticalPodAutoscalingList(terraformResource c
 	j := jsiiProxy_DataGoogleContainerClusterVerticalPodAutoscalingList{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterVerticalPodAutoscalingList_Override(d DataGoog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

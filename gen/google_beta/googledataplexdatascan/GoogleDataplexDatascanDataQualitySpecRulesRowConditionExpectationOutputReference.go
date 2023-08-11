@@ -179,7 +179,7 @@ func NewGoogleDataplexDatascanDataQualitySpecRulesRowConditionExpectationOutputR
 	j := jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesRowConditionExpectationOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesRowConditionExpectationOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesRowConditionExpectationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleDataplexDatascanDataQualitySpecRulesRowConditionExpectationOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesRowConditionExpectationOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesRowConditionExpectationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -116,7 +116,7 @@ func NewAutoLoginAppUsersList(terraformResource cdktf.IInterpolatingParent, terr
 	j := jsiiProxy_AutoLoginAppUsersList{}
 
 	_jsii_.Create(
-		"okta.autoLoginApp.AutoLoginAppUsersList",
+		"@cdktf/provider-okta.autoLoginApp.AutoLoginAppUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAutoLoginAppUsersList_Override(a AutoLoginAppUsersList, terraformResourc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.autoLoginApp.AutoLoginAppUsersList",
+		"@cdktf/provider-okta.autoLoginApp.AutoLoginAppUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

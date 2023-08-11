@@ -1075,7 +1075,7 @@ func NewIdpOidc(scope constructs.Construct, id *string, config *IdpOidcConfig) I
 	j := jsiiProxy_IdpOidc{}
 
 	_jsii_.Create(
-		"okta.idpOidc.IdpOidc",
+		"@cdktf/provider-okta.idpOidc.IdpOidc",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1088,7 +1088,7 @@ func NewIdpOidc_Override(i IdpOidc, scope constructs.Construct, id *string, conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.idpOidc.IdpOidc",
+		"@cdktf/provider-okta.idpOidc.IdpOidc",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -1551,7 +1551,7 @@ func IdpOidc_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.idpOidc.IdpOidc",
+		"@cdktf/provider-okta.idpOidc.IdpOidc",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1570,7 +1570,7 @@ func IdpOidc_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.idpOidc.IdpOidc",
+		"@cdktf/provider-okta.idpOidc.IdpOidc",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1589,7 +1589,7 @@ func IdpOidc_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.idpOidc.IdpOidc",
+		"@cdktf/provider-okta.idpOidc.IdpOidc",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1602,7 +1602,7 @@ func IdpOidc_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.idpOidc.IdpOidc",
+		"@cdktf/provider-okta.idpOidc.IdpOidc",
 		"tfResourceType",
 		&returns,
 	)

@@ -342,7 +342,7 @@ func NewMskScramSecretAssociation(scope constructs.Construct, id *string, config
 	j := jsiiProxy_MskScramSecretAssociation{}
 
 	_jsii_.Create(
-		"aws.mskScramSecretAssociation.MskScramSecretAssociation",
+		"@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewMskScramSecretAssociation_Override(m MskScramSecretAssociation, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskScramSecretAssociation.MskScramSecretAssociation",
+		"@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociation",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -488,7 +488,7 @@ func MskScramSecretAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mskScramSecretAssociation.MskScramSecretAssociation",
+		"@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func MskScramSecretAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mskScramSecretAssociation.MskScramSecretAssociation",
+		"@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func MskScramSecretAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mskScramSecretAssociation.MskScramSecretAssociation",
+		"@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func MskScramSecretAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.mskScramSecretAssociation.MskScramSecretAssociation",
+		"@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociation",
 		"tfResourceType",
 		&returns,
 	)

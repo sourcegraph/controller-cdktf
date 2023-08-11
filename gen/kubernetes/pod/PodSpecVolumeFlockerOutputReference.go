@@ -204,7 +204,7 @@ func NewPodSpecVolumeFlockerOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_PodSpecVolumeFlockerOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeFlockerOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeFlockerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPodSpecVolumeFlockerOutputReference_Override(p PodSpecVolumeFlockerOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeFlockerOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeFlockerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

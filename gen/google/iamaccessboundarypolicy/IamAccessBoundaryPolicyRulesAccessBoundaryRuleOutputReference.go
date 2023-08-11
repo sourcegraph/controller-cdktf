@@ -228,7 +228,7 @@ func NewIamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference(terraformR
 	j := jsiiProxy_IamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference{}
 
 	_jsii_.Create(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewIamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference_Override(i
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

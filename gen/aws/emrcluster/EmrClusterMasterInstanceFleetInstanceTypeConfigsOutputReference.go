@@ -299,7 +299,7 @@ func NewEmrClusterMasterInstanceFleetInstanceTypeConfigsOutputReference(terrafor
 	j := jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsOutputReference{}
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsOutputReference",
+		"@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewEmrClusterMasterInstanceFleetInstanceTypeConfigsOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsOutputReference",
+		"@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

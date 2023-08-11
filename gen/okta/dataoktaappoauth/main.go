@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.dataOktaAppOauth.DataOktaAppOauth",
+		"@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth",
 		reflect.TypeOf((*DataOktaAppOauth)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeOnly", GoGetter: "ActiveOnly"},
@@ -90,7 +90,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaAppOauth.DataOktaAppOauthConfig",
+		"@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauthConfig",
 		reflect.TypeOf((*DataOktaAppOauthConfig)(nil)).Elem(),
 	)
 }

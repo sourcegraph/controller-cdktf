@@ -519,7 +519,7 @@ func NewAppconfigDeploymentStrategy(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_AppconfigDeploymentStrategy{}
 
 	_jsii_.Create(
-		"aws.appconfigDeploymentStrategy.AppconfigDeploymentStrategy",
+		"@cdktf/provider-aws.appconfigDeploymentStrategy.AppconfigDeploymentStrategy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -532,7 +532,7 @@ func NewAppconfigDeploymentStrategy_Override(a AppconfigDeploymentStrategy, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appconfigDeploymentStrategy.AppconfigDeploymentStrategy",
+		"@cdktf/provider-aws.appconfigDeploymentStrategy.AppconfigDeploymentStrategy",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -742,7 +742,7 @@ func AppconfigDeploymentStrategy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appconfigDeploymentStrategy.AppconfigDeploymentStrategy",
+		"@cdktf/provider-aws.appconfigDeploymentStrategy.AppconfigDeploymentStrategy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -761,7 +761,7 @@ func AppconfigDeploymentStrategy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appconfigDeploymentStrategy.AppconfigDeploymentStrategy",
+		"@cdktf/provider-aws.appconfigDeploymentStrategy.AppconfigDeploymentStrategy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -780,7 +780,7 @@ func AppconfigDeploymentStrategy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appconfigDeploymentStrategy.AppconfigDeploymentStrategy",
+		"@cdktf/provider-aws.appconfigDeploymentStrategy.AppconfigDeploymentStrategy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -793,7 +793,7 @@ func AppconfigDeploymentStrategy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appconfigDeploymentStrategy.AppconfigDeploymentStrategy",
+		"@cdktf/provider-aws.appconfigDeploymentStrategy.AppconfigDeploymentStrategy",
 		"tfResourceType",
 		&returns,
 	)

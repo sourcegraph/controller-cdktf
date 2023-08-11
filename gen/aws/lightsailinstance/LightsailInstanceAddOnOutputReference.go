@@ -225,7 +225,7 @@ func NewLightsailInstanceAddOnOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_LightsailInstanceAddOnOutputReference{}
 
 	_jsii_.Create(
-		"aws.lightsailInstance.LightsailInstanceAddOnOutputReference",
+		"@cdktf/provider-aws.lightsailInstance.LightsailInstanceAddOnOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewLightsailInstanceAddOnOutputReference_Override(l LightsailInstanceAddOnO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailInstance.LightsailInstanceAddOnOutputReference",
+		"@cdktf/provider-aws.lightsailInstance.LightsailInstanceAddOnOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

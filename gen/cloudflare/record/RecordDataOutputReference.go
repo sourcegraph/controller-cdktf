@@ -1092,7 +1092,7 @@ func NewRecordDataOutputReference(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_RecordDataOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.record.RecordDataOutputReference",
+		"@cdktf/provider-cloudflare.record.RecordDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -1104,7 +1104,7 @@ func NewRecordDataOutputReference_Override(r RecordDataOutputReference, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.record.RecordDataOutputReference",
+		"@cdktf/provider-cloudflare.record.RecordDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

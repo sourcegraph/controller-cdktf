@@ -228,7 +228,7 @@ func NewComputeInstanceTemplateShieldedInstanceConfigOutputReference(terraformRe
 	j := jsiiProxy_ComputeInstanceTemplateShieldedInstanceConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstanceTemplate.ComputeInstanceTemplateShieldedInstanceConfigOutputReference",
+		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateShieldedInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeInstanceTemplateShieldedInstanceConfigOutputReference_Override(c 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceTemplate.ComputeInstanceTemplateShieldedInstanceConfigOutputReference",
+		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateShieldedInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

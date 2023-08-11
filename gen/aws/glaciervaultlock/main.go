@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.glacierVaultLock.GlacierVaultLock",
+		"@cdktf/provider-aws.glacierVaultLock.GlacierVaultLock",
 		reflect.TypeOf((*GlacierVaultLock)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.glacierVaultLock.GlacierVaultLockConfig",
+		"@cdktf/provider-aws.glacierVaultLock.GlacierVaultLockConfig",
 		reflect.TypeOf((*GlacierVaultLockConfig)(nil)).Elem(),
 	)
 }

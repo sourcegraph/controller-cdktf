@@ -354,7 +354,7 @@ func NewIapTunnelIamPolicy(scope constructs.Construct, id *string, config *IapTu
 	j := jsiiProxy_IapTunnelIamPolicy{}
 
 	_jsii_.Create(
-		"google.iapTunnelIamPolicy.IapTunnelIamPolicy",
+		"@cdktf/provider-google.iapTunnelIamPolicy.IapTunnelIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -367,7 +367,7 @@ func NewIapTunnelIamPolicy_Override(i IapTunnelIamPolicy, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapTunnelIamPolicy.IapTunnelIamPolicy",
+		"@cdktf/provider-google.iapTunnelIamPolicy.IapTunnelIamPolicy",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -500,7 +500,7 @@ func IapTunnelIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapTunnelIamPolicy.IapTunnelIamPolicy",
+		"@cdktf/provider-google.iapTunnelIamPolicy.IapTunnelIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -519,7 +519,7 @@ func IapTunnelIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapTunnelIamPolicy.IapTunnelIamPolicy",
+		"@cdktf/provider-google.iapTunnelIamPolicy.IapTunnelIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -538,7 +538,7 @@ func IapTunnelIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapTunnelIamPolicy.IapTunnelIamPolicy",
+		"@cdktf/provider-google.iapTunnelIamPolicy.IapTunnelIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func IapTunnelIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.iapTunnelIamPolicy.IapTunnelIamPolicy",
+		"@cdktf/provider-google.iapTunnelIamPolicy.IapTunnelIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

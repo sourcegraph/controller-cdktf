@@ -396,7 +396,7 @@ func NewDataAwsEcrImage(scope constructs.Construct, id *string, config *DataAwsE
 	j := jsiiProxy_DataAwsEcrImage{}
 
 	_jsii_.Create(
-		"aws.dataAwsEcrImage.DataAwsEcrImage",
+		"@cdktf/provider-aws.dataAwsEcrImage.DataAwsEcrImage",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -409,7 +409,7 @@ func NewDataAwsEcrImage_Override(d DataAwsEcrImage, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEcrImage.DataAwsEcrImage",
+		"@cdktf/provider-aws.dataAwsEcrImage.DataAwsEcrImage",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -542,7 +542,7 @@ func DataAwsEcrImage_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEcrImage.DataAwsEcrImage",
+		"@cdktf/provider-aws.dataAwsEcrImage.DataAwsEcrImage",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func DataAwsEcrImage_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEcrImage.DataAwsEcrImage",
+		"@cdktf/provider-aws.dataAwsEcrImage.DataAwsEcrImage",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -580,7 +580,7 @@ func DataAwsEcrImage_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEcrImage.DataAwsEcrImage",
+		"@cdktf/provider-aws.dataAwsEcrImage.DataAwsEcrImage",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -593,7 +593,7 @@ func DataAwsEcrImage_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEcrImage.DataAwsEcrImage",
+		"@cdktf/provider-aws.dataAwsEcrImage.DataAwsEcrImage",
 		"tfResourceType",
 		&returns,
 	)

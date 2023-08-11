@@ -433,7 +433,7 @@ func NewRedshiftserverlessEndpointAccess(scope constructs.Construct, id *string,
 	j := jsiiProxy_RedshiftserverlessEndpointAccess{}
 
 	_jsii_.Create(
-		"aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccess",
+		"@cdktf/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccess",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -446,7 +446,7 @@ func NewRedshiftserverlessEndpointAccess_Override(r RedshiftserverlessEndpointAc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccess",
+		"@cdktf/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccess",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -601,7 +601,7 @@ func RedshiftserverlessEndpointAccess_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccess",
+		"@cdktf/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccess",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func RedshiftserverlessEndpointAccess_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccess",
+		"@cdktf/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccess",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -639,7 +639,7 @@ func RedshiftserverlessEndpointAccess_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccess",
+		"@cdktf/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccess",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -652,7 +652,7 @@ func RedshiftserverlessEndpointAccess_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccess",
+		"@cdktf/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccess",
 		"tfResourceType",
 		&returns,
 	)

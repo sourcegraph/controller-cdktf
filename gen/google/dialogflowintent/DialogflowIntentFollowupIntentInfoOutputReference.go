@@ -178,7 +178,7 @@ func NewDialogflowIntentFollowupIntentInfoOutputReference(terraformResource cdkt
 	j := jsiiProxy_DialogflowIntentFollowupIntentInfoOutputReference{}
 
 	_jsii_.Create(
-		"google.dialogflowIntent.DialogflowIntentFollowupIntentInfoOutputReference",
+		"@cdktf/provider-google.dialogflowIntent.DialogflowIntentFollowupIntentInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDialogflowIntentFollowupIntentInfoOutputReference_Override(d DialogflowI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowIntent.DialogflowIntentFollowupIntentInfoOutputReference",
+		"@cdktf/provider-google.dialogflowIntent.DialogflowIntentFollowupIntentInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

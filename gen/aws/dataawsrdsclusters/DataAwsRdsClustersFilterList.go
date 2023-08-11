@@ -116,7 +116,7 @@ func NewDataAwsRdsClustersFilterList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_DataAwsRdsClustersFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsRdsClusters.DataAwsRdsClustersFilterList",
+		"@cdktf/provider-aws.dataAwsRdsClusters.DataAwsRdsClustersFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsRdsClustersFilterList_Override(d DataAwsRdsClustersFilterList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRdsClusters.DataAwsRdsClustersFilterList",
+		"@cdktf/provider-aws.dataAwsRdsClusters.DataAwsRdsClustersFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

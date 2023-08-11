@@ -313,7 +313,7 @@ func NewDataAwsSesDomainIdentity(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataAwsSesDomainIdentity{}
 
 	_jsii_.Create(
-		"aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentity",
+		"@cdktf/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentity",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -326,7 +326,7 @@ func NewDataAwsSesDomainIdentity_Override(d DataAwsSesDomainIdentity, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentity",
+		"@cdktf/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentity",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -426,7 +426,7 @@ func DataAwsSesDomainIdentity_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentity",
+		"@cdktf/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentity",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +445,7 @@ func DataAwsSesDomainIdentity_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentity",
+		"@cdktf/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentity",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -464,7 +464,7 @@ func DataAwsSesDomainIdentity_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentity",
+		"@cdktf/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentity",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataAwsSesDomainIdentity_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentity",
+		"@cdktf/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentity",
 		"tfResourceType",
 		&returns,
 	)

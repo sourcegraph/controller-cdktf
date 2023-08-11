@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.glueMlTransform.GlueMlTransform",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransform",
 		reflect.TypeOf((*GlueMlTransform)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -95,15 +95,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueMlTransform.GlueMlTransformConfig",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig",
 		reflect.TypeOf((*GlueMlTransformConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueMlTransform.GlueMlTransformInputRecordTables",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTables",
 		reflect.TypeOf((*GlueMlTransformInputRecordTables)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.glueMlTransform.GlueMlTransformInputRecordTablesList",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTablesList",
 		reflect.TypeOf((*GlueMlTransformInputRecordTablesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -124,7 +124,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.glueMlTransform.GlueMlTransformInputRecordTablesOutputReference",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTablesOutputReference",
 		reflect.TypeOf((*GlueMlTransformInputRecordTablesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalogId", GoGetter: "CatalogId"},
@@ -166,15 +166,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueMlTransform.GlueMlTransformParameters",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformParameters",
 		reflect.TypeOf((*GlueMlTransformParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueMlTransform.GlueMlTransformParametersFindMatchesParameters",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersFindMatchesParameters",
 		reflect.TypeOf((*GlueMlTransformParametersFindMatchesParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.glueMlTransform.GlueMlTransformParametersFindMatchesParametersOutputReference",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersFindMatchesParametersOutputReference",
 		reflect.TypeOf((*GlueMlTransformParametersFindMatchesParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accuracyCostTradeOff", GoGetter: "AccuracyCostTradeOff"},
@@ -218,7 +218,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.glueMlTransform.GlueMlTransformParametersOutputReference",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersOutputReference",
 		reflect.TypeOf((*GlueMlTransformParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -255,11 +255,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueMlTransform.GlueMlTransformSchema",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformSchema",
 		reflect.TypeOf((*GlueMlTransformSchema)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.glueMlTransform.GlueMlTransformSchemaList",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformSchemaList",
 		reflect.TypeOf((*GlueMlTransformSchemaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -279,7 +279,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.glueMlTransform.GlueMlTransformSchemaOutputReference",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformSchemaOutputReference",
 		reflect.TypeOf((*GlueMlTransformSchemaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

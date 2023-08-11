@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.batchJobQueue.BatchJobQueue",
+		"@cdktf/provider-aws.batchJobQueue.BatchJobQueue",
 		reflect.TypeOf((*BatchJobQueue)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.batchJobQueue.BatchJobQueueConfig",
+		"@cdktf/provider-aws.batchJobQueue.BatchJobQueueConfig",
 		reflect.TypeOf((*BatchJobQueueConfig)(nil)).Elem(),
 	)
 }

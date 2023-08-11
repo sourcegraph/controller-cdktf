@@ -116,7 +116,7 @@ func NewDataAwsRdsEngineVersionFilterList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_DataAwsRdsEngineVersionFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionFilterList",
+		"@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsRdsEngineVersionFilterList_Override(d DataAwsRdsEngineVersionFilt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionFilterList",
+		"@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

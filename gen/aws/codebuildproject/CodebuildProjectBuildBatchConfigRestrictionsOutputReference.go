@@ -204,7 +204,7 @@ func NewCodebuildProjectBuildBatchConfigRestrictionsOutputReference(terraformRes
 	j := jsiiProxy_CodebuildProjectBuildBatchConfigRestrictionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectBuildBatchConfigRestrictionsOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectBuildBatchConfigRestrictionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCodebuildProjectBuildBatchConfigRestrictionsOutputReference_Override(c C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectBuildBatchConfigRestrictionsOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectBuildBatchConfigRestrictionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

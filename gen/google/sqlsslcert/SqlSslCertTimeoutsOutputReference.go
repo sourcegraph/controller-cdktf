@@ -204,7 +204,7 @@ func NewSqlSslCertTimeoutsOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_SqlSslCertTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.sqlSslCert.SqlSslCertTimeoutsOutputReference",
+		"@cdktf/provider-google.sqlSslCert.SqlSslCertTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewSqlSslCertTimeoutsOutputReference_Override(s SqlSslCertTimeoutsOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sqlSslCert.SqlSslCertTimeoutsOutputReference",
+		"@cdktf/provider-google.sqlSslCert.SqlSslCertTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

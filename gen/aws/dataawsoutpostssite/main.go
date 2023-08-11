@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsOutpostsSite.DataAwsOutpostsSite",
+		"@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite",
 		reflect.TypeOf((*DataAwsOutpostsSite)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -58,7 +58,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig",
+		"@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig",
 		reflect.TypeOf((*DataAwsOutpostsSiteConfig)(nil)).Elem(),
 	)
 }

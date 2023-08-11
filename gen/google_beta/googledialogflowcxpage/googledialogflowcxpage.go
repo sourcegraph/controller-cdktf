@@ -522,7 +522,7 @@ func NewGoogleDialogflowCxPage(scope constructs.Construct, id *string, config *G
 	j := jsiiProxy_GoogleDialogflowCxPage{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxPage.GoogleDialogflowCxPage",
+		"@cdktf/provider-google-beta.googleDialogflowCxPage.GoogleDialogflowCxPage",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -535,7 +535,7 @@ func NewGoogleDialogflowCxPage_Override(g GoogleDialogflowCxPage, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxPage.GoogleDialogflowCxPage",
+		"@cdktf/provider-google-beta.googleDialogflowCxPage.GoogleDialogflowCxPage",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -690,7 +690,7 @@ func GoogleDialogflowCxPage_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDialogflowCxPage.GoogleDialogflowCxPage",
+		"@cdktf/provider-google-beta.googleDialogflowCxPage.GoogleDialogflowCxPage",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -709,7 +709,7 @@ func GoogleDialogflowCxPage_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDialogflowCxPage.GoogleDialogflowCxPage",
+		"@cdktf/provider-google-beta.googleDialogflowCxPage.GoogleDialogflowCxPage",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -728,7 +728,7 @@ func GoogleDialogflowCxPage_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDialogflowCxPage.GoogleDialogflowCxPage",
+		"@cdktf/provider-google-beta.googleDialogflowCxPage.GoogleDialogflowCxPage",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -741,7 +741,7 @@ func GoogleDialogflowCxPage_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDialogflowCxPage.GoogleDialogflowCxPage",
+		"@cdktf/provider-google-beta.googleDialogflowCxPage.GoogleDialogflowCxPage",
 		"tfResourceType",
 		&returns,
 	)

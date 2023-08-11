@@ -322,7 +322,7 @@ func NewCognitoUserPoolSchemaOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_CognitoUserPoolSchemaOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolSchemaOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -334,7 +334,7 @@ func NewCognitoUserPoolSchemaOutputReference_Override(c CognitoUserPoolSchemaOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolSchemaOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

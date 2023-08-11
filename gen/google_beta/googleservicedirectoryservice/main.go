@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleServiceDirectoryService.GoogleServiceDirectoryService",
+		"@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryService",
 		reflect.TypeOf((*GoogleServiceDirectoryService)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceConfig",
+		"@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceConfig",
 		reflect.TypeOf((*GoogleServiceDirectoryServiceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeouts",
+		"@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeouts",
 		reflect.TypeOf((*GoogleServiceDirectoryServiceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleServiceDirectoryServiceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

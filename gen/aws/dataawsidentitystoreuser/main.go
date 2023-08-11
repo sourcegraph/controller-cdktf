@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUser",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUser",
 		reflect.TypeOf((*DataAwsIdentitystoreUser)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,11 +80,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAddresses",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAddresses",
 		reflect.TypeOf((*DataAwsIdentitystoreUserAddresses)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAddressesList",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAddressesList",
 		reflect.TypeOf((*DataAwsIdentitystoreUserAddressesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -104,7 +104,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAddressesOutputReference",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAddressesOutputReference",
 		reflect.TypeOf((*DataAwsIdentitystoreUserAddressesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -144,15 +144,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAlternateIdentifier",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAlternateIdentifier",
 		reflect.TypeOf((*DataAwsIdentitystoreUserAlternateIdentifier)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAlternateIdentifierExternalId",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAlternateIdentifierExternalId",
 		reflect.TypeOf((*DataAwsIdentitystoreUserAlternateIdentifierExternalId)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputReference",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputReference",
 		reflect.TypeOf((*DataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -188,7 +188,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAlternateIdentifierOutputReference",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAlternateIdentifierOutputReference",
 		reflect.TypeOf((*DataAwsIdentitystoreUserAlternateIdentifierOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -228,11 +228,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAlternateIdentifierUniqueAttribute",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAlternateIdentifierUniqueAttribute",
 		reflect.TypeOf((*DataAwsIdentitystoreUserAlternateIdentifierUniqueAttribute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAlternateIdentifierUniqueAttributeOutputReference",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAlternateIdentifierUniqueAttributeOutputReference",
 		reflect.TypeOf((*DataAwsIdentitystoreUserAlternateIdentifierUniqueAttributeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributePath", GoGetter: "AttributePath"},
@@ -268,15 +268,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserConfig",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserConfig",
 		reflect.TypeOf((*DataAwsIdentitystoreUserConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserEmails",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserEmails",
 		reflect.TypeOf((*DataAwsIdentitystoreUserEmails)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserEmailsList",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserEmailsList",
 		reflect.TypeOf((*DataAwsIdentitystoreUserEmailsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -296,7 +296,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserEmailsOutputReference",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserEmailsOutputReference",
 		reflect.TypeOf((*DataAwsIdentitystoreUserEmailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -331,11 +331,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserExternalIds",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserExternalIds",
 		reflect.TypeOf((*DataAwsIdentitystoreUserExternalIds)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserExternalIdsList",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserExternalIdsList",
 		reflect.TypeOf((*DataAwsIdentitystoreUserExternalIdsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -355,7 +355,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserExternalIdsOutputReference",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserExternalIdsOutputReference",
 		reflect.TypeOf((*DataAwsIdentitystoreUserExternalIdsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -389,11 +389,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserFilter",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserFilter",
 		reflect.TypeOf((*DataAwsIdentitystoreUserFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserFilterOutputReference",
 		reflect.TypeOf((*DataAwsIdentitystoreUserFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributePath", GoGetter: "AttributePath"},
@@ -429,11 +429,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserName",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserName",
 		reflect.TypeOf((*DataAwsIdentitystoreUserName)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserNameList",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserNameList",
 		reflect.TypeOf((*DataAwsIdentitystoreUserNameList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -453,7 +453,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserNameOutputReference",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserNameOutputReference",
 		reflect.TypeOf((*DataAwsIdentitystoreUserNameOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -491,11 +491,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserPhoneNumbers",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserPhoneNumbers",
 		reflect.TypeOf((*DataAwsIdentitystoreUserPhoneNumbers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserPhoneNumbersList",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserPhoneNumbersList",
 		reflect.TypeOf((*DataAwsIdentitystoreUserPhoneNumbersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -515,7 +515,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserPhoneNumbersOutputReference",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserPhoneNumbersOutputReference",
 		reflect.TypeOf((*DataAwsIdentitystoreUserPhoneNumbersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

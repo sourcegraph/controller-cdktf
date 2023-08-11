@@ -468,7 +468,7 @@ func NewCloudRunV2ServiceTemplateOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_CloudRunV2ServiceTemplateOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference",
+		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -480,7 +480,7 @@ func NewCloudRunV2ServiceTemplateOutputReference_Override(c CloudRunV2ServiceTem
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference",
+		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

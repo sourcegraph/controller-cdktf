@@ -228,7 +228,7 @@ func NewKinesisVideoStreamTimeoutsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_KinesisVideoStreamTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.kinesisVideoStream.KinesisVideoStreamTimeoutsOutputReference",
+		"@cdktf/provider-aws.kinesisVideoStream.KinesisVideoStreamTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewKinesisVideoStreamTimeoutsOutputReference_Override(k KinesisVideoStreamT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisVideoStream.KinesisVideoStreamTimeoutsOutputReference",
+		"@cdktf/provider-aws.kinesisVideoStream.KinesisVideoStreamTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

@@ -178,7 +178,7 @@ func NewKendraExperienceEndpointsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_KendraExperienceEndpointsOutputReference{}
 
 	_jsii_.Create(
-		"aws.kendraExperience.KendraExperienceEndpointsOutputReference",
+		"@cdktf/provider-aws.kendraExperience.KendraExperienceEndpointsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewKendraExperienceEndpointsOutputReference_Override(k KendraExperienceEndp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraExperience.KendraExperienceEndpointsOutputReference",
+		"@cdktf/provider-aws.kendraExperience.KendraExperienceEndpointsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		k,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.apigeeEndpointAttachment.ApigeeEndpointAttachment",
+		"@cdktf/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment",
 		reflect.TypeOf((*ApigeeEndpointAttachment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeEndpointAttachment.ApigeeEndpointAttachmentConfig",
+		"@cdktf/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachmentConfig",
 		reflect.TypeOf((*ApigeeEndpointAttachmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeEndpointAttachment.ApigeeEndpointAttachmentTimeouts",
+		"@cdktf/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachmentTimeouts",
 		reflect.TypeOf((*ApigeeEndpointAttachmentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeEndpointAttachment.ApigeeEndpointAttachmentTimeoutsOutputReference",
+		"@cdktf/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachmentTimeoutsOutputReference",
 		reflect.TypeOf((*ApigeeEndpointAttachmentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

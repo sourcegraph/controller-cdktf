@@ -443,7 +443,7 @@ func NewCloudwatchEventTargetEcsTargetOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetOutputReference",
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -455,7 +455,7 @@ func NewCloudwatchEventTargetEcsTargetOutputReference_Override(c CloudwatchEvent
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetOutputReference",
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

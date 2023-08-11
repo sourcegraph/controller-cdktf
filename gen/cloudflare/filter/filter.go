@@ -414,7 +414,7 @@ func NewFilter(scope constructs.Construct, id *string, config *FilterConfig) Fil
 	j := jsiiProxy_Filter{}
 
 	_jsii_.Create(
-		"cloudflare.filter.Filter",
+		"@cdktf/provider-cloudflare.filter.Filter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewFilter_Override(f Filter, scope constructs.Construct, id *string, config
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.filter.Filter",
+		"@cdktf/provider-cloudflare.filter.Filter",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -593,7 +593,7 @@ func Filter_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.filter.Filter",
+		"@cdktf/provider-cloudflare.filter.Filter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func Filter_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.filter.Filter",
+		"@cdktf/provider-cloudflare.filter.Filter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func Filter_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.filter.Filter",
+		"@cdktf/provider-cloudflare.filter.Filter",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func Filter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.filter.Filter",
+		"@cdktf/provider-cloudflare.filter.Filter",
 		"tfResourceType",
 		&returns,
 	)

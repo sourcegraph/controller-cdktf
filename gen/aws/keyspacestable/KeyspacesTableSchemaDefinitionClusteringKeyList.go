@@ -116,7 +116,7 @@ func NewKeyspacesTableSchemaDefinitionClusteringKeyList(terraformResource cdktf.
 	j := jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyList{}
 
 	_jsii_.Create(
-		"aws.keyspacesTable.KeyspacesTableSchemaDefinitionClusteringKeyList",
+		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionClusteringKeyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewKeyspacesTableSchemaDefinitionClusteringKeyList_Override(k KeyspacesTabl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.keyspacesTable.KeyspacesTableSchemaDefinitionClusteringKeyList",
+		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionClusteringKeyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		k,
 	)

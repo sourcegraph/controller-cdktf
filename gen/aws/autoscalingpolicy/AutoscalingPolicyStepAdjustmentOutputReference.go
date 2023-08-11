@@ -227,7 +227,7 @@ func NewAutoscalingPolicyStepAdjustmentOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_AutoscalingPolicyStepAdjustmentOutputReference{}
 
 	_jsii_.Create(
-		"aws.autoscalingPolicy.AutoscalingPolicyStepAdjustmentOutputReference",
+		"@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyStepAdjustmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewAutoscalingPolicyStepAdjustmentOutputReference_Override(a AutoscalingPol
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingPolicy.AutoscalingPolicyStepAdjustmentOutputReference",
+		"@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyStepAdjustmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

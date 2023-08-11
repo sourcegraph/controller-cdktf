@@ -202,7 +202,7 @@ func NewCodepipelineWebhookFilterOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_CodepipelineWebhookFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.codepipelineWebhook.CodepipelineWebhookFilterOutputReference",
+		"@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewCodepipelineWebhookFilterOutputReference_Override(c CodepipelineWebhookF
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codepipelineWebhook.CodepipelineWebhookFilterOutputReference",
+		"@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

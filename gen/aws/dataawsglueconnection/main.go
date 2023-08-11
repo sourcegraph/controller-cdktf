@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsGlueConnection.DataAwsGlueConnection",
+		"@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnection",
 		reflect.TypeOf((*DataAwsGlueConnection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsGlueConnection.DataAwsGlueConnectionConfig",
+		"@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionConfig",
 		reflect.TypeOf((*DataAwsGlueConnectionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsGlueConnection.DataAwsGlueConnectionPhysicalConnectionRequirements",
+		"@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionPhysicalConnectionRequirements",
 		reflect.TypeOf((*DataAwsGlueConnectionPhysicalConnectionRequirements)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsGlueConnection.DataAwsGlueConnectionPhysicalConnectionRequirementsList",
+		"@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionPhysicalConnectionRequirementsList",
 		reflect.TypeOf((*DataAwsGlueConnectionPhysicalConnectionRequirementsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -91,7 +91,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsGlueConnection.DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference",
+		"@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference",
 		reflect.TypeOf((*DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZone", GoGetter: "AvailabilityZone"},

@@ -116,7 +116,7 @@ func NewS3BucketReplicationConfigurationRulesList(terraformResource cdktf.IInter
 	j := jsiiProxy_S3BucketReplicationConfigurationRulesList{}
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketReplicationConfigurationRulesList",
+		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewS3BucketReplicationConfigurationRulesList_Override(s S3BucketReplication
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketReplicationConfigurationRulesList",
+		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

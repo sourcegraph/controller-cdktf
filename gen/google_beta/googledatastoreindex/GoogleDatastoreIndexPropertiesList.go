@@ -116,7 +116,7 @@ func NewGoogleDatastoreIndexPropertiesList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_GoogleDatastoreIndexPropertiesList{}
 
 	_jsii_.Create(
-		"google-beta.googleDatastoreIndex.GoogleDatastoreIndexPropertiesList",
+		"@cdktf/provider-google-beta.googleDatastoreIndex.GoogleDatastoreIndexPropertiesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDatastoreIndexPropertiesList_Override(g GoogleDatastoreIndexProper
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatastoreIndex.GoogleDatastoreIndexPropertiesList",
+		"@cdktf/provider-google-beta.googleDatastoreIndex.GoogleDatastoreIndexPropertiesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

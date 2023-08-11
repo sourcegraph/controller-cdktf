@@ -104,7 +104,7 @@ func NewDataGoogleStorageBucketAutoclassList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_DataGoogleStorageBucketAutoclassList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketAutoclassList",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketAutoclassList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleStorageBucketAutoclassList_Override(d DataGoogleStorageBucketA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketAutoclassList",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketAutoclassList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

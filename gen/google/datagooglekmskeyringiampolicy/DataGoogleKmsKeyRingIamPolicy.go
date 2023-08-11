@@ -313,7 +313,7 @@ func NewDataGoogleKmsKeyRingIamPolicy(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataGoogleKmsKeyRingIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleKmsKeyRingIamPolicy.DataGoogleKmsKeyRingIamPolicy",
+		"@cdktf/provider-google.dataGoogleKmsKeyRingIamPolicy.DataGoogleKmsKeyRingIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -326,7 +326,7 @@ func NewDataGoogleKmsKeyRingIamPolicy_Override(d DataGoogleKmsKeyRingIamPolicy, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleKmsKeyRingIamPolicy.DataGoogleKmsKeyRingIamPolicy",
+		"@cdktf/provider-google.dataGoogleKmsKeyRingIamPolicy.DataGoogleKmsKeyRingIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -426,7 +426,7 @@ func DataGoogleKmsKeyRingIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleKmsKeyRingIamPolicy.DataGoogleKmsKeyRingIamPolicy",
+		"@cdktf/provider-google.dataGoogleKmsKeyRingIamPolicy.DataGoogleKmsKeyRingIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +445,7 @@ func DataGoogleKmsKeyRingIamPolicy_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleKmsKeyRingIamPolicy.DataGoogleKmsKeyRingIamPolicy",
+		"@cdktf/provider-google.dataGoogleKmsKeyRingIamPolicy.DataGoogleKmsKeyRingIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -464,7 +464,7 @@ func DataGoogleKmsKeyRingIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleKmsKeyRingIamPolicy.DataGoogleKmsKeyRingIamPolicy",
+		"@cdktf/provider-google.dataGoogleKmsKeyRingIamPolicy.DataGoogleKmsKeyRingIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataGoogleKmsKeyRingIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleKmsKeyRingIamPolicy.DataGoogleKmsKeyRingIamPolicy",
+		"@cdktf/provider-google.dataGoogleKmsKeyRingIamPolicy.DataGoogleKmsKeyRingIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

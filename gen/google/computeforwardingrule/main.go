@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeForwardingRule.ComputeForwardingRule",
+		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRule",
 		reflect.TypeOf((*ComputeForwardingRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -132,15 +132,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeForwardingRule.ComputeForwardingRuleConfig",
+		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRuleConfig",
 		reflect.TypeOf((*ComputeForwardingRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeForwardingRule.ComputeForwardingRuleServiceDirectoryRegistrations",
+		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRuleServiceDirectoryRegistrations",
 		reflect.TypeOf((*ComputeForwardingRuleServiceDirectoryRegistrations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeForwardingRule.ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference",
+		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference",
 		reflect.TypeOf((*ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -178,11 +178,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeForwardingRule.ComputeForwardingRuleTimeouts",
+		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRuleTimeouts",
 		reflect.TypeOf((*ComputeForwardingRuleTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeForwardingRule.ComputeForwardingRuleTimeoutsOutputReference",
+		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRuleTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeForwardingRuleTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

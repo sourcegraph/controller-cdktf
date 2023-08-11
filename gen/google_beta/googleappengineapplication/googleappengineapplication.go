@@ -564,7 +564,7 @@ func NewGoogleAppEngineApplication(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleAppEngineApplication{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineApplication.GoogleAppEngineApplication",
+		"@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplication",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -577,7 +577,7 @@ func NewGoogleAppEngineApplication_Override(g GoogleAppEngineApplication, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineApplication.GoogleAppEngineApplication",
+		"@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplication",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -743,7 +743,7 @@ func GoogleAppEngineApplication_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAppEngineApplication.GoogleAppEngineApplication",
+		"@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplication",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func GoogleAppEngineApplication_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAppEngineApplication.GoogleAppEngineApplication",
+		"@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplication",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -781,7 +781,7 @@ func GoogleAppEngineApplication_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAppEngineApplication.GoogleAppEngineApplication",
+		"@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplication",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -794,7 +794,7 @@ func GoogleAppEngineApplication_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleAppEngineApplication.GoogleAppEngineApplication",
+		"@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplication",
 		"tfResourceType",
 		&returns,
 	)

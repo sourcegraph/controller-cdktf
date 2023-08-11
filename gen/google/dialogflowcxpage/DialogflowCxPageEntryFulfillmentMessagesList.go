@@ -116,7 +116,7 @@ func NewDialogflowCxPageEntryFulfillmentMessagesList(terraformResource cdktf.IIn
 	j := jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesList{}
 
 	_jsii_.Create(
-		"google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessagesList",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessagesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDialogflowCxPageEntryFulfillmentMessagesList_Override(d DialogflowCxPage
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessagesList",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessagesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -413,7 +413,7 @@ func NewTimestreamwriteDatabase(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_TimestreamwriteDatabase{}
 
 	_jsii_.Create(
-		"aws.timestreamwriteDatabase.TimestreamwriteDatabase",
+		"@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewTimestreamwriteDatabase_Override(t TimestreamwriteDatabase, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.timestreamwriteDatabase.TimestreamwriteDatabase",
+		"@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -581,7 +581,7 @@ func TimestreamwriteDatabase_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.timestreamwriteDatabase.TimestreamwriteDatabase",
+		"@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -600,7 +600,7 @@ func TimestreamwriteDatabase_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.timestreamwriteDatabase.TimestreamwriteDatabase",
+		"@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func TimestreamwriteDatabase_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.timestreamwriteDatabase.TimestreamwriteDatabase",
+		"@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func TimestreamwriteDatabase_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.timestreamwriteDatabase.TimestreamwriteDatabase",
+		"@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase",
 		"tfResourceType",
 		&returns,
 	)

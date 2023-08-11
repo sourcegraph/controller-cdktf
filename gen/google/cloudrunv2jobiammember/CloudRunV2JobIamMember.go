@@ -448,7 +448,7 @@ func NewCloudRunV2JobIamMember(scope constructs.Construct, id *string, config *C
 	j := jsiiProxy_CloudRunV2JobIamMember{}
 
 	_jsii_.Create(
-		"google.cloudRunV2JobIamMember.CloudRunV2JobIamMember",
+		"@cdktf/provider-google.cloudRunV2JobIamMember.CloudRunV2JobIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewCloudRunV2JobIamMember_Override(c CloudRunV2JobIamMember, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2JobIamMember.CloudRunV2JobIamMember",
+		"@cdktf/provider-google.cloudRunV2JobIamMember.CloudRunV2JobIamMember",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -627,7 +627,7 @@ func CloudRunV2JobIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunV2JobIamMember.CloudRunV2JobIamMember",
+		"@cdktf/provider-google.cloudRunV2JobIamMember.CloudRunV2JobIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func CloudRunV2JobIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunV2JobIamMember.CloudRunV2JobIamMember",
+		"@cdktf/provider-google.cloudRunV2JobIamMember.CloudRunV2JobIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func CloudRunV2JobIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunV2JobIamMember.CloudRunV2JobIamMember",
+		"@cdktf/provider-google.cloudRunV2JobIamMember.CloudRunV2JobIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func CloudRunV2JobIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudRunV2JobIamMember.CloudRunV2JobIamMember",
+		"@cdktf/provider-google.cloudRunV2JobIamMember.CloudRunV2JobIamMember",
 		"tfResourceType",
 		&returns,
 	)

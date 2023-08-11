@@ -228,7 +228,7 @@ func NewThreeFieldAppTimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_ThreeFieldAppTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"okta.threeFieldApp.ThreeFieldAppTimeoutsOutputReference",
+		"@cdktf/provider-okta.threeFieldApp.ThreeFieldAppTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewThreeFieldAppTimeoutsOutputReference_Override(t ThreeFieldAppTimeoutsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.threeFieldApp.ThreeFieldAppTimeoutsOutputReference",
+		"@cdktf/provider-okta.threeFieldApp.ThreeFieldAppTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

@@ -202,7 +202,7 @@ func NewNetworkServicesEdgeCacheServiceRoutingOutputReference(terraformResource 
 	j := jsiiProxy_NetworkServicesEdgeCacheServiceRoutingOutputReference{}
 
 	_jsii_.Create(
-		"google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheServiceRoutingOutputReference",
+		"@cdktf/provider-google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheServiceRoutingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewNetworkServicesEdgeCacheServiceRoutingOutputReference_Override(n Network
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheServiceRoutingOutputReference",
+		"@cdktf/provider-google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheServiceRoutingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

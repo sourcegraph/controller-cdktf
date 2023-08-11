@@ -419,7 +419,7 @@ func NewOrganizationsDelegatedAdministrator(scope constructs.Construct, id *stri
 	j := jsiiProxy_OrganizationsDelegatedAdministrator{}
 
 	_jsii_.Create(
-		"aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator",
+		"@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -432,7 +432,7 @@ func NewOrganizationsDelegatedAdministrator_Override(o OrganizationsDelegatedAdm
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator",
+		"@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -565,7 +565,7 @@ func OrganizationsDelegatedAdministrator_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator",
+		"@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func OrganizationsDelegatedAdministrator_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator",
+		"@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -603,7 +603,7 @@ func OrganizationsDelegatedAdministrator_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator",
+		"@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -616,7 +616,7 @@ func OrganizationsDelegatedAdministrator_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator",
+		"@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewClusterRoleBindingV1SubjectList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_ClusterRoleBindingV1SubjectList{}
 
 	_jsii_.Create(
-		"kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1SubjectList",
+		"@cdktf/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1SubjectList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewClusterRoleBindingV1SubjectList_Override(c ClusterRoleBindingV1SubjectLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1SubjectList",
+		"@cdktf/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1SubjectList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

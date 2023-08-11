@@ -712,7 +712,7 @@ func NewComputeRegionHealthCheck(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_ComputeRegionHealthCheck{}
 
 	_jsii_.Create(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheck",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -725,7 +725,7 @@ func NewComputeRegionHealthCheck_Override(c ComputeRegionHealthCheck, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheck",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -924,7 +924,7 @@ func ComputeRegionHealthCheck_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheck",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -943,7 +943,7 @@ func ComputeRegionHealthCheck_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheck",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -962,7 +962,7 @@ func ComputeRegionHealthCheck_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheck",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -975,7 +975,7 @@ func ComputeRegionHealthCheck_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheck",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck",
 		"tfResourceType",
 		&returns,
 	)

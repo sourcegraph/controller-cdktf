@@ -116,7 +116,7 @@ func NewGoogleGkeonpremBareMetalClusterControlPlaneApiServerArgsList(terraformRe
 	j := jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneApiServerArgsList{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterControlPlaneApiServerArgsList",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterControlPlaneApiServerArgsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleGkeonpremBareMetalClusterControlPlaneApiServerArgsList_Override(g 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterControlPlaneApiServerArgsList",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterControlPlaneApiServerArgsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

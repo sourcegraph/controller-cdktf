@@ -228,7 +228,7 @@ func NewEvidentlyFeatureTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_EvidentlyFeatureTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.evidentlyFeature.EvidentlyFeatureTimeoutsOutputReference",
+		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewEvidentlyFeatureTimeoutsOutputReference_Override(e EvidentlyFeatureTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.evidentlyFeature.EvidentlyFeatureTimeoutsOutputReference",
+		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

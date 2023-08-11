@@ -413,7 +413,7 @@ func NewPageRule(scope constructs.Construct, id *string, config *PageRuleConfig)
 	j := jsiiProxy_PageRule{}
 
 	_jsii_.Create(
-		"cloudflare.pageRule.PageRule",
+		"@cdktf/provider-cloudflare.pageRule.PageRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewPageRule_Override(p PageRule, scope constructs.Construct, id *string, co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.pageRule.PageRule",
+		"@cdktf/provider-cloudflare.pageRule.PageRule",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -581,7 +581,7 @@ func PageRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.pageRule.PageRule",
+		"@cdktf/provider-cloudflare.pageRule.PageRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -600,7 +600,7 @@ func PageRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.pageRule.PageRule",
+		"@cdktf/provider-cloudflare.pageRule.PageRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func PageRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.pageRule.PageRule",
+		"@cdktf/provider-cloudflare.pageRule.PageRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func PageRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.pageRule.PageRule",
+		"@cdktf/provider-cloudflare.pageRule.PageRule",
 		"tfResourceType",
 		&returns,
 	)

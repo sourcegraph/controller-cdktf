@@ -424,7 +424,7 @@ func NewIamVirtualMfaDevice(scope constructs.Construct, id *string, config *IamV
 	j := jsiiProxy_IamVirtualMfaDevice{}
 
 	_jsii_.Create(
-		"aws.iamVirtualMfaDevice.IamVirtualMfaDevice",
+		"@cdktf/provider-aws.iamVirtualMfaDevice.IamVirtualMfaDevice",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewIamVirtualMfaDevice_Override(i IamVirtualMfaDevice, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iamVirtualMfaDevice.IamVirtualMfaDevice",
+		"@cdktf/provider-aws.iamVirtualMfaDevice.IamVirtualMfaDevice",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -592,7 +592,7 @@ func IamVirtualMfaDevice_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamVirtualMfaDevice.IamVirtualMfaDevice",
+		"@cdktf/provider-aws.iamVirtualMfaDevice.IamVirtualMfaDevice",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func IamVirtualMfaDevice_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamVirtualMfaDevice.IamVirtualMfaDevice",
+		"@cdktf/provider-aws.iamVirtualMfaDevice.IamVirtualMfaDevice",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func IamVirtualMfaDevice_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamVirtualMfaDevice.IamVirtualMfaDevice",
+		"@cdktf/provider-aws.iamVirtualMfaDevice.IamVirtualMfaDevice",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func IamVirtualMfaDevice_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iamVirtualMfaDevice.IamVirtualMfaDevice",
+		"@cdktf/provider-aws.iamVirtualMfaDevice.IamVirtualMfaDevice",
 		"tfResourceType",
 		&returns,
 	)

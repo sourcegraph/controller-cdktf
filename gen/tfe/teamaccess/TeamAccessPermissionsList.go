@@ -116,7 +116,7 @@ func NewTeamAccessPermissionsList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_TeamAccessPermissionsList{}
 
 	_jsii_.Create(
-		"tfe.teamAccess.TeamAccessPermissionsList",
+		"@cdktf/provider-tfe.teamAccess.TeamAccessPermissionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewTeamAccessPermissionsList_Override(t TeamAccessPermissionsList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.teamAccess.TeamAccessPermissionsList",
+		"@cdktf/provider-tfe.teamAccess.TeamAccessPermissionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		t,
 	)

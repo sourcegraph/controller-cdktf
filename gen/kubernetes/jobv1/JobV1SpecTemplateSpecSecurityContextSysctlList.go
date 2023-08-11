@@ -116,7 +116,7 @@ func NewJobV1SpecTemplateSpecSecurityContextSysctlList(terraformResource cdktf.I
 	j := jsiiProxy_JobV1SpecTemplateSpecSecurityContextSysctlList{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecSecurityContextSysctlList",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecSecurityContextSysctlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewJobV1SpecTemplateSpecSecurityContextSysctlList_Override(j JobV1SpecTempl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecSecurityContextSysctlList",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecSecurityContextSysctlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)

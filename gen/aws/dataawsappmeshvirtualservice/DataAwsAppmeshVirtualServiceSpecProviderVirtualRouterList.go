@@ -104,7 +104,7 @@ func NewDataAwsAppmeshVirtualServiceSpecProviderVirtualRouterList(terraformResou
 	j := jsiiProxy_DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterList",
+		"@cdktf/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsAppmeshVirtualServiceSpecProviderVirtualRouterList_Override(d Dat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterList",
+		"@cdktf/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

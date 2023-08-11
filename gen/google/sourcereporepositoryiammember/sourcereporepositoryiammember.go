@@ -424,7 +424,7 @@ func NewSourcerepoRepositoryIamMember(scope constructs.Construct, id *string, co
 	j := jsiiProxy_SourcerepoRepositoryIamMember{}
 
 	_jsii_.Create(
-		"google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMember",
+		"@cdktf/provider-google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewSourcerepoRepositoryIamMember_Override(s SourcerepoRepositoryIamMember, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMember",
+		"@cdktf/provider-google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMember",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -592,7 +592,7 @@ func SourcerepoRepositoryIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMember",
+		"@cdktf/provider-google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func SourcerepoRepositoryIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMember",
+		"@cdktf/provider-google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func SourcerepoRepositoryIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMember",
+		"@cdktf/provider-google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func SourcerepoRepositoryIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMember",
+		"@cdktf/provider-google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMember",
 		"tfResourceType",
 		&returns,
 	)

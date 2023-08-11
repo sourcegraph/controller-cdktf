@@ -226,7 +226,7 @@ func NewGlueCrawlerDeltaTargetOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_GlueCrawlerDeltaTargetOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGlueCrawlerDeltaTargetOutputReference_Override(g GlueCrawlerDeltaTargetO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

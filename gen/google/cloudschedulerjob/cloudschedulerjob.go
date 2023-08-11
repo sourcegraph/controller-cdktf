@@ -618,7 +618,7 @@ func NewCloudSchedulerJob(scope constructs.Construct, id *string, config *CloudS
 	j := jsiiProxy_CloudSchedulerJob{}
 
 	_jsii_.Create(
-		"google.cloudSchedulerJob.CloudSchedulerJob",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJob",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -631,7 +631,7 @@ func NewCloudSchedulerJob_Override(c CloudSchedulerJob, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudSchedulerJob.CloudSchedulerJob",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJob",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -830,7 +830,7 @@ func CloudSchedulerJob_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudSchedulerJob.CloudSchedulerJob",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJob",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -849,7 +849,7 @@ func CloudSchedulerJob_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudSchedulerJob.CloudSchedulerJob",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJob",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -868,7 +868,7 @@ func CloudSchedulerJob_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudSchedulerJob.CloudSchedulerJob",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJob",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -881,7 +881,7 @@ func CloudSchedulerJob_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudSchedulerJob.CloudSchedulerJob",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJob",
 		"tfResourceType",
 		&returns,
 	)

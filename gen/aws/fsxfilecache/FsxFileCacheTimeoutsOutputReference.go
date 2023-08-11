@@ -228,7 +228,7 @@ func NewFsxFileCacheTimeoutsOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_FsxFileCacheTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxFileCache.FsxFileCacheTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxFileCache.FsxFileCacheTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewFsxFileCacheTimeoutsOutputReference_Override(f FsxFileCacheTimeoutsOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxFileCache.FsxFileCacheTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxFileCache.FsxFileCacheTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

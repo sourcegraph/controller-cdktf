@@ -515,7 +515,7 @@ func NewConnectVocabulary(scope constructs.Construct, id *string, config *Connec
 	j := jsiiProxy_ConnectVocabulary{}
 
 	_jsii_.Create(
-		"aws.connectVocabulary.ConnectVocabulary",
+		"@cdktf/provider-aws.connectVocabulary.ConnectVocabulary",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -528,7 +528,7 @@ func NewConnectVocabulary_Override(c ConnectVocabulary, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectVocabulary.ConnectVocabulary",
+		"@cdktf/provider-aws.connectVocabulary.ConnectVocabulary",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -705,7 +705,7 @@ func ConnectVocabulary_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectVocabulary.ConnectVocabulary",
+		"@cdktf/provider-aws.connectVocabulary.ConnectVocabulary",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -724,7 +724,7 @@ func ConnectVocabulary_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectVocabulary.ConnectVocabulary",
+		"@cdktf/provider-aws.connectVocabulary.ConnectVocabulary",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -743,7 +743,7 @@ func ConnectVocabulary_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectVocabulary.ConnectVocabulary",
+		"@cdktf/provider-aws.connectVocabulary.ConnectVocabulary",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -756,7 +756,7 @@ func ConnectVocabulary_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.connectVocabulary.ConnectVocabulary",
+		"@cdktf/provider-aws.connectVocabulary.ConnectVocabulary",
 		"tfResourceType",
 		&returns,
 	)

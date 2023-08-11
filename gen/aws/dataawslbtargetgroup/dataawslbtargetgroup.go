@@ -529,7 +529,7 @@ func NewDataAwsLbTargetGroup(scope constructs.Construct, id *string, config *Dat
 	j := jsiiProxy_DataAwsLbTargetGroup{}
 
 	_jsii_.Create(
-		"aws.dataAwsLbTargetGroup.DataAwsLbTargetGroup",
+		"@cdktf/provider-aws.dataAwsLbTargetGroup.DataAwsLbTargetGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -542,7 +542,7 @@ func NewDataAwsLbTargetGroup_Override(d DataAwsLbTargetGroup, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLbTargetGroup.DataAwsLbTargetGroup",
+		"@cdktf/provider-aws.dataAwsLbTargetGroup.DataAwsLbTargetGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -664,7 +664,7 @@ func DataAwsLbTargetGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLbTargetGroup.DataAwsLbTargetGroup",
+		"@cdktf/provider-aws.dataAwsLbTargetGroup.DataAwsLbTargetGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -683,7 +683,7 @@ func DataAwsLbTargetGroup_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLbTargetGroup.DataAwsLbTargetGroup",
+		"@cdktf/provider-aws.dataAwsLbTargetGroup.DataAwsLbTargetGroup",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func DataAwsLbTargetGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLbTargetGroup.DataAwsLbTargetGroup",
+		"@cdktf/provider-aws.dataAwsLbTargetGroup.DataAwsLbTargetGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func DataAwsLbTargetGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsLbTargetGroup.DataAwsLbTargetGroup",
+		"@cdktf/provider-aws.dataAwsLbTargetGroup.DataAwsLbTargetGroup",
 		"tfResourceType",
 		&returns,
 	)

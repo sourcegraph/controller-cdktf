@@ -228,7 +228,7 @@ func NewWorkspacesWorkspaceTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_WorkspacesWorkspaceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.workspacesWorkspace.WorkspacesWorkspaceTimeoutsOutputReference",
+		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspaceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewWorkspacesWorkspaceTimeoutsOutputReference_Override(w WorkspacesWorkspac
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.workspacesWorkspace.WorkspacesWorkspaceTimeoutsOutputReference",
+		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspaceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

@@ -228,7 +228,7 @@ func NewRedshiftClusterTimeoutsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_RedshiftClusterTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.redshiftCluster.RedshiftClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewRedshiftClusterTimeoutsOutputReference_Override(r RedshiftClusterTimeout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftCluster.RedshiftClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

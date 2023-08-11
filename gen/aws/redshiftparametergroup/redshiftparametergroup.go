@@ -449,7 +449,7 @@ func NewRedshiftParameterGroup(scope constructs.Construct, id *string, config *R
 	j := jsiiProxy_RedshiftParameterGroup{}
 
 	_jsii_.Create(
-		"aws.redshiftParameterGroup.RedshiftParameterGroup",
+		"@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -462,7 +462,7 @@ func NewRedshiftParameterGroup_Override(r RedshiftParameterGroup, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftParameterGroup.RedshiftParameterGroup",
+		"@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroup",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -628,7 +628,7 @@ func RedshiftParameterGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftParameterGroup.RedshiftParameterGroup",
+		"@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -647,7 +647,7 @@ func RedshiftParameterGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftParameterGroup.RedshiftParameterGroup",
+		"@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func RedshiftParameterGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftParameterGroup.RedshiftParameterGroup",
+		"@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func RedshiftParameterGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.redshiftParameterGroup.RedshiftParameterGroup",
+		"@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroup",
 		"tfResourceType",
 		&returns,
 	)

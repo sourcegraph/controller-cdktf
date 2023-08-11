@@ -104,7 +104,7 @@ func NewGoogleMonitoringServiceTelemetryList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_GoogleMonitoringServiceTelemetryList{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringService.GoogleMonitoringServiceTelemetryList",
+		"@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTelemetryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleMonitoringServiceTelemetryList_Override(g GoogleMonitoringServiceT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringService.GoogleMonitoringServiceTelemetryList",
+		"@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTelemetryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

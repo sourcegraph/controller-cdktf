@@ -368,7 +368,7 @@ func NewDataAwsCodecommitApprovalRuleTemplate(scope constructs.Construct, id *st
 	j := jsiiProxy_DataAwsCodecommitApprovalRuleTemplate{}
 
 	_jsii_.Create(
-		"aws.dataAwsCodecommitApprovalRuleTemplate.DataAwsCodecommitApprovalRuleTemplate",
+		"@cdktf/provider-aws.dataAwsCodecommitApprovalRuleTemplate.DataAwsCodecommitApprovalRuleTemplate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -381,7 +381,7 @@ func NewDataAwsCodecommitApprovalRuleTemplate_Override(d DataAwsCodecommitApprov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCodecommitApprovalRuleTemplate.DataAwsCodecommitApprovalRuleTemplate",
+		"@cdktf/provider-aws.dataAwsCodecommitApprovalRuleTemplate.DataAwsCodecommitApprovalRuleTemplate",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -481,7 +481,7 @@ func DataAwsCodecommitApprovalRuleTemplate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCodecommitApprovalRuleTemplate.DataAwsCodecommitApprovalRuleTemplate",
+		"@cdktf/provider-aws.dataAwsCodecommitApprovalRuleTemplate.DataAwsCodecommitApprovalRuleTemplate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -500,7 +500,7 @@ func DataAwsCodecommitApprovalRuleTemplate_IsTerraformDataSource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCodecommitApprovalRuleTemplate.DataAwsCodecommitApprovalRuleTemplate",
+		"@cdktf/provider-aws.dataAwsCodecommitApprovalRuleTemplate.DataAwsCodecommitApprovalRuleTemplate",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -519,7 +519,7 @@ func DataAwsCodecommitApprovalRuleTemplate_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCodecommitApprovalRuleTemplate.DataAwsCodecommitApprovalRuleTemplate",
+		"@cdktf/provider-aws.dataAwsCodecommitApprovalRuleTemplate.DataAwsCodecommitApprovalRuleTemplate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -532,7 +532,7 @@ func DataAwsCodecommitApprovalRuleTemplate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsCodecommitApprovalRuleTemplate.DataAwsCodecommitApprovalRuleTemplate",
+		"@cdktf/provider-aws.dataAwsCodecommitApprovalRuleTemplate.DataAwsCodecommitApprovalRuleTemplate",
 		"tfResourceType",
 		&returns,
 	)

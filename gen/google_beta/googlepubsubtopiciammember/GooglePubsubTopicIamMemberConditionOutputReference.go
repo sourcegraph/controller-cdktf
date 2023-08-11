@@ -226,7 +226,7 @@ func NewGooglePubsubTopicIamMemberConditionOutputReference(terraformResource cdk
 	j := jsiiProxy_GooglePubsubTopicIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGooglePubsubTopicIamMemberConditionOutputReference_Override(g GooglePubs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

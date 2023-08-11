@@ -226,7 +226,7 @@ func NewIotTopicRuleStepFunctionsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_IotTopicRuleStepFunctionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewIotTopicRuleStepFunctionsOutputReference_Override(i IotTopicRuleStepFunc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

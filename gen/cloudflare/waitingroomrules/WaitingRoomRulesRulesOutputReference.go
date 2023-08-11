@@ -272,7 +272,7 @@ func NewWaitingRoomRulesRulesOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_WaitingRoomRulesRulesOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.waitingRoomRules.WaitingRoomRulesRulesOutputReference",
+		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -284,7 +284,7 @@ func NewWaitingRoomRulesRulesOutputReference_Override(w WaitingRoomRulesRulesOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.waitingRoomRules.WaitingRoomRulesRulesOutputReference",
+		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2TransitGatewayConnect.Ec2TransitGatewayConnect",
+		"@cdktf/provider-aws.ec2TransitGatewayConnect.Ec2TransitGatewayConnect",
 		reflect.TypeOf((*Ec2TransitGatewayConnect)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,15 +78,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2TransitGatewayConnect.Ec2TransitGatewayConnectConfig",
+		"@cdktf/provider-aws.ec2TransitGatewayConnect.Ec2TransitGatewayConnectConfig",
 		reflect.TypeOf((*Ec2TransitGatewayConnectConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2TransitGatewayConnect.Ec2TransitGatewayConnectTimeouts",
+		"@cdktf/provider-aws.ec2TransitGatewayConnect.Ec2TransitGatewayConnectTimeouts",
 		reflect.TypeOf((*Ec2TransitGatewayConnectTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2TransitGatewayConnect.Ec2TransitGatewayConnectTimeoutsOutputReference",
+		"@cdktf/provider-aws.ec2TransitGatewayConnect.Ec2TransitGatewayConnectTimeoutsOutputReference",
 		reflect.TypeOf((*Ec2TransitGatewayConnectTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

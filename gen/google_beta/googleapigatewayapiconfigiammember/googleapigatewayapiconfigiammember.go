@@ -447,7 +447,7 @@ func NewGoogleApiGatewayApiConfigIamMember(scope constructs.Construct, id *strin
 	j := jsiiProxy_GoogleApiGatewayApiConfigIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayApiConfigIamMember.GoogleApiGatewayApiConfigIamMember",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfigIamMember.GoogleApiGatewayApiConfigIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewGoogleApiGatewayApiConfigIamMember_Override(g GoogleApiGatewayApiConfigI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayApiConfigIamMember.GoogleApiGatewayApiConfigIamMember",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfigIamMember.GoogleApiGatewayApiConfigIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -626,7 +626,7 @@ func GoogleApiGatewayApiConfigIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApiGatewayApiConfigIamMember.GoogleApiGatewayApiConfigIamMember",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfigIamMember.GoogleApiGatewayApiConfigIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func GoogleApiGatewayApiConfigIamMember_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApiGatewayApiConfigIamMember.GoogleApiGatewayApiConfigIamMember",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfigIamMember.GoogleApiGatewayApiConfigIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -664,7 +664,7 @@ func GoogleApiGatewayApiConfigIamMember_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApiGatewayApiConfigIamMember.GoogleApiGatewayApiConfigIamMember",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfigIamMember.GoogleApiGatewayApiConfigIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func GoogleApiGatewayApiConfigIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleApiGatewayApiConfigIamMember.GoogleApiGatewayApiConfigIamMember",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfigIamMember.GoogleApiGatewayApiConfigIamMember",
 		"tfResourceType",
 		&returns,
 	)

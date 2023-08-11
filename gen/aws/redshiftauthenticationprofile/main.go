@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.redshiftAuthenticationProfile.RedshiftAuthenticationProfile",
+		"@cdktf/provider-aws.redshiftAuthenticationProfile.RedshiftAuthenticationProfile",
 		reflect.TypeOf((*RedshiftAuthenticationProfile)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.redshiftAuthenticationProfile.RedshiftAuthenticationProfileConfig",
+		"@cdktf/provider-aws.redshiftAuthenticationProfile.RedshiftAuthenticationProfileConfig",
 		reflect.TypeOf((*RedshiftAuthenticationProfileConfig)(nil)).Elem(),
 	)
 }

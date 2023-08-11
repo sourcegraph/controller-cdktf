@@ -251,7 +251,7 @@ func NewSagemakerProjectServiceCatalogProvisioningDetailsOutputReference(terrafo
 	j := jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsOutputReference",
+		"@cdktf/provider-aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewSagemakerProjectServiceCatalogProvisioningDetailsOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsOutputReference",
+		"@cdktf/provider-aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

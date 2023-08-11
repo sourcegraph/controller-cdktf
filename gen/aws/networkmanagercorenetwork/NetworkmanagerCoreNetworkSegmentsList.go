@@ -104,7 +104,7 @@ func NewNetworkmanagerCoreNetworkSegmentsList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_NetworkmanagerCoreNetworkSegmentsList{}
 
 	_jsii_.Create(
-		"aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkSegmentsList",
+		"@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkSegmentsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewNetworkmanagerCoreNetworkSegmentsList_Override(n NetworkmanagerCoreNetwo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkSegmentsList",
+		"@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkSegmentsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

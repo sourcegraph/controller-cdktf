@@ -286,7 +286,7 @@ func NewTfeProvider(scope constructs.Construct, id *string, config *TfeProviderC
 	j := jsiiProxy_TfeProvider{}
 
 	_jsii_.Create(
-		"tfe.provider.TfeProvider",
+		"@cdktf/provider-tfe.provider.TfeProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -299,7 +299,7 @@ func NewTfeProvider_Override(t TfeProvider, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.provider.TfeProvider",
+		"@cdktf/provider-tfe.provider.TfeProvider",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -374,7 +374,7 @@ func TfeProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.provider.TfeProvider",
+		"@cdktf/provider-tfe.provider.TfeProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -393,7 +393,7 @@ func TfeProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.provider.TfeProvider",
+		"@cdktf/provider-tfe.provider.TfeProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -412,7 +412,7 @@ func TfeProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.provider.TfeProvider",
+		"@cdktf/provider-tfe.provider.TfeProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -425,7 +425,7 @@ func TfeProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.provider.TfeProvider",
+		"@cdktf/provider-tfe.provider.TfeProvider",
 		"tfResourceType",
 		&returns,
 	)

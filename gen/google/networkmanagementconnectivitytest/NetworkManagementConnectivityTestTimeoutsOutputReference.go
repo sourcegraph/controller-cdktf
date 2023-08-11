@@ -228,7 +228,7 @@ func NewNetworkManagementConnectivityTestTimeoutsOutputReference(terraformResour
 	j := jsiiProxy_NetworkManagementConnectivityTestTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.networkManagementConnectivityTest.NetworkManagementConnectivityTestTimeoutsOutputReference",
+		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTestTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewNetworkManagementConnectivityTestTimeoutsOutputReference_Override(n Netw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.networkManagementConnectivityTest.NetworkManagementConnectivityTestTimeoutsOutputReference",
+		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTestTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

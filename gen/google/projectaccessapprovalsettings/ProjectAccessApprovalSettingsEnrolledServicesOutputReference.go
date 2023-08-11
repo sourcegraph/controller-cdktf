@@ -203,7 +203,7 @@ func NewProjectAccessApprovalSettingsEnrolledServicesOutputReference(terraformRe
 	j := jsiiProxy_ProjectAccessApprovalSettingsEnrolledServicesOutputReference{}
 
 	_jsii_.Create(
-		"google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsEnrolledServicesOutputReference",
+		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsEnrolledServicesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewProjectAccessApprovalSettingsEnrolledServicesOutputReference_Override(p 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsEnrolledServicesOutputReference",
+		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsEnrolledServicesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

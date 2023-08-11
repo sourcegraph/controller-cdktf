@@ -211,7 +211,7 @@ func NewIdentityPlatformProjectDefaultConfigSignInHashConfigOutputReference(terr
 	j := jsiiProxy_IdentityPlatformProjectDefaultConfigSignInHashConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInHashConfigOutputReference",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInHashConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewIdentityPlatformProjectDefaultConfigSignInHashConfigOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInHashConfigOutputReference",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInHashConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

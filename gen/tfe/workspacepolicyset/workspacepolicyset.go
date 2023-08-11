@@ -342,7 +342,7 @@ func NewWorkspacePolicySet(scope constructs.Construct, id *string, config *Works
 	j := jsiiProxy_WorkspacePolicySet{}
 
 	_jsii_.Create(
-		"tfe.workspacePolicySet.WorkspacePolicySet",
+		"@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewWorkspacePolicySet_Override(w WorkspacePolicySet, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.workspacePolicySet.WorkspacePolicySet",
+		"@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySet",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -488,7 +488,7 @@ func WorkspacePolicySet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.workspacePolicySet.WorkspacePolicySet",
+		"@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func WorkspacePolicySet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.workspacePolicySet.WorkspacePolicySet",
+		"@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func WorkspacePolicySet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.workspacePolicySet.WorkspacePolicySet",
+		"@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func WorkspacePolicySet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.workspacePolicySet.WorkspacePolicySet",
+		"@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySet",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewVpcIpamPoolCidrTimeoutsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_VpcIpamPoolCidrTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.vpcIpamPoolCidr.VpcIpamPoolCidrTimeoutsOutputReference",
+		"@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewVpcIpamPoolCidrTimeoutsOutputReference_Override(v VpcIpamPoolCidrTimeout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcIpamPoolCidr.VpcIpamPoolCidrTimeoutsOutputReference",
+		"@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

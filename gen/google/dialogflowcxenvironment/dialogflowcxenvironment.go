@@ -436,7 +436,7 @@ func NewDialogflowCxEnvironment(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DialogflowCxEnvironment{}
 
 	_jsii_.Create(
-		"google.dialogflowCxEnvironment.DialogflowCxEnvironment",
+		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -449,7 +449,7 @@ func NewDialogflowCxEnvironment_Override(d DialogflowCxEnvironment, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxEnvironment.DialogflowCxEnvironment",
+		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironment",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -593,7 +593,7 @@ func DialogflowCxEnvironment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dialogflowCxEnvironment.DialogflowCxEnvironment",
+		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func DialogflowCxEnvironment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dialogflowCxEnvironment.DialogflowCxEnvironment",
+		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func DialogflowCxEnvironment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dialogflowCxEnvironment.DialogflowCxEnvironment",
+		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func DialogflowCxEnvironment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dialogflowCxEnvironment.DialogflowCxEnvironment",
+		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironment",
 		"tfResourceType",
 		&returns,
 	)

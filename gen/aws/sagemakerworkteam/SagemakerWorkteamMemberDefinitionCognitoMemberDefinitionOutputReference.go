@@ -225,7 +225,7 @@ func NewSagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference(
 	j := jsiiProxy_SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference",
+		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewSagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference",
+		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -178,7 +178,7 @@ func NewDataAwsEcrRepositoryEncryptionConfigurationOutputReference(terraformReso
 	j := jsiiProxy_DataAwsEcrRepositoryEncryptionConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEcrRepository.DataAwsEcrRepositoryEncryptionConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsEcrRepository.DataAwsEcrRepositoryEncryptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsEcrRepositoryEncryptionConfigurationOutputReference_Override(d Da
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEcrRepository.DataAwsEcrRepositoryEncryptionConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsEcrRepository.DataAwsEcrRepositoryEncryptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

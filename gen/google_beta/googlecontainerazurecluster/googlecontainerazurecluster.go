@@ -736,7 +736,7 @@ func NewGoogleContainerAzureCluster(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleContainerAzureCluster{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAzureCluster.GoogleContainerAzureCluster",
+		"@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -749,7 +749,7 @@ func NewGoogleContainerAzureCluster_Override(g GoogleContainerAzureCluster, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAzureCluster.GoogleContainerAzureCluster",
+		"@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureCluster",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -948,7 +948,7 @@ func GoogleContainerAzureCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAzureCluster.GoogleContainerAzureCluster",
+		"@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -967,7 +967,7 @@ func GoogleContainerAzureCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAzureCluster.GoogleContainerAzureCluster",
+		"@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -986,7 +986,7 @@ func GoogleContainerAzureCluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAzureCluster.GoogleContainerAzureCluster",
+		"@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -999,7 +999,7 @@ func GoogleContainerAzureCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleContainerAzureCluster.GoogleContainerAzureCluster",
+		"@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureCluster",
 		"tfResourceType",
 		&returns,
 	)

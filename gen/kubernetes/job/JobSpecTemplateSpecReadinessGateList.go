@@ -116,7 +116,7 @@ func NewJobSpecTemplateSpecReadinessGateList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_JobSpecTemplateSpecReadinessGateList{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecReadinessGateList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecReadinessGateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewJobSpecTemplateSpecReadinessGateList_Override(j JobSpecTemplateSpecReadi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecReadinessGateList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecReadinessGateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)

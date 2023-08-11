@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket",
+		"@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket",
 		reflect.TypeOf((*GoogleFirebaseStorageBucket)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,15 +66,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketConfig",
+		"@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketConfig",
 		reflect.TypeOf((*GoogleFirebaseStorageBucketConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeouts",
+		"@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeouts",
 		reflect.TypeOf((*GoogleFirebaseStorageBucketTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleFirebaseStorageBucketTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

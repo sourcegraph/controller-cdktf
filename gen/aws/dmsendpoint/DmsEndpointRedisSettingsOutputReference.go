@@ -321,7 +321,7 @@ func NewDmsEndpointRedisSettingsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DmsEndpointRedisSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dmsEndpoint.DmsEndpointRedisSettingsOutputReference",
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointRedisSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -333,7 +333,7 @@ func NewDmsEndpointRedisSettingsOutputReference_Override(d DmsEndpointRedisSetti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dmsEndpoint.DmsEndpointRedisSettingsOutputReference",
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointRedisSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

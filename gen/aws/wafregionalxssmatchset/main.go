@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.wafregionalXssMatchSet.WafregionalXssMatchSet",
+		"@cdktf/provider-aws.wafregionalXssMatchSet.WafregionalXssMatchSet",
 		reflect.TypeOf((*WafregionalXssMatchSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,19 +61,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafregionalXssMatchSet.WafregionalXssMatchSetConfig",
+		"@cdktf/provider-aws.wafregionalXssMatchSet.WafregionalXssMatchSetConfig",
 		reflect.TypeOf((*WafregionalXssMatchSetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTuple",
+		"@cdktf/provider-aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTuple",
 		reflect.TypeOf((*WafregionalXssMatchSetXssMatchTuple)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTupleFieldToMatch",
+		"@cdktf/provider-aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTupleFieldToMatch",
 		reflect.TypeOf((*WafregionalXssMatchSetXssMatchTupleFieldToMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTupleFieldToMatchOutputReference",
+		"@cdktf/provider-aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTupleFieldToMatchOutputReference",
 		reflect.TypeOf((*WafregionalXssMatchSetXssMatchTupleFieldToMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -110,7 +110,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTupleList",
+		"@cdktf/provider-aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTupleList",
 		reflect.TypeOf((*WafregionalXssMatchSetXssMatchTupleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -131,7 +131,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTupleOutputReference",
+		"@cdktf/provider-aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTupleOutputReference",
 		reflect.TypeOf((*WafregionalXssMatchSetXssMatchTupleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

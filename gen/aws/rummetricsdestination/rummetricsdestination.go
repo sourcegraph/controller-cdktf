@@ -390,7 +390,7 @@ func NewRumMetricsDestination(scope constructs.Construct, id *string, config *Ru
 	j := jsiiProxy_RumMetricsDestination{}
 
 	_jsii_.Create(
-		"aws.rumMetricsDestination.RumMetricsDestination",
+		"@cdktf/provider-aws.rumMetricsDestination.RumMetricsDestination",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewRumMetricsDestination_Override(r RumMetricsDestination, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rumMetricsDestination.RumMetricsDestination",
+		"@cdktf/provider-aws.rumMetricsDestination.RumMetricsDestination",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -558,7 +558,7 @@ func RumMetricsDestination_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rumMetricsDestination.RumMetricsDestination",
+		"@cdktf/provider-aws.rumMetricsDestination.RumMetricsDestination",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func RumMetricsDestination_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rumMetricsDestination.RumMetricsDestination",
+		"@cdktf/provider-aws.rumMetricsDestination.RumMetricsDestination",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func RumMetricsDestination_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rumMetricsDestination.RumMetricsDestination",
+		"@cdktf/provider-aws.rumMetricsDestination.RumMetricsDestination",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func RumMetricsDestination_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.rumMetricsDestination.RumMetricsDestination",
+		"@cdktf/provider-aws.rumMetricsDestination.RumMetricsDestination",
 		"tfResourceType",
 		&returns,
 	)

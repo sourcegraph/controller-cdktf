@@ -343,7 +343,7 @@ func NewCloudwatchEventBusPolicy(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_CloudwatchEventBusPolicy{}
 
 	_jsii_.Create(
-		"aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicy",
+		"@cdktf/provider-aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewCloudwatchEventBusPolicy_Override(c CloudwatchEventBusPolicy, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicy",
+		"@cdktf/provider-aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -489,7 +489,7 @@ func CloudwatchEventBusPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicy",
+		"@cdktf/provider-aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func CloudwatchEventBusPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicy",
+		"@cdktf/provider-aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func CloudwatchEventBusPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicy",
+		"@cdktf/provider-aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func CloudwatchEventBusPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicy",
+		"@cdktf/provider-aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicy",
 		"tfResourceType",
 		&returns,
 	)

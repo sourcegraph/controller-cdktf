@@ -252,7 +252,7 @@ func NewS3BucketTimeoutsOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_S3BucketTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketTimeoutsOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewS3BucketTimeoutsOutputReference_Override(s S3BucketTimeoutsOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketTimeoutsOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -425,7 +425,7 @@ func NewRoute53RecoveryreadinessReadinessCheck(scope constructs.Construct, id *s
 	j := jsiiProxy_Route53RecoveryreadinessReadinessCheck{}
 
 	_jsii_.Create(
-		"aws.route53RecoveryreadinessReadinessCheck.Route53RecoveryreadinessReadinessCheck",
+		"@cdktf/provider-aws.route53RecoveryreadinessReadinessCheck.Route53RecoveryreadinessReadinessCheck",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -438,7 +438,7 @@ func NewRoute53RecoveryreadinessReadinessCheck_Override(r Route53Recoveryreadine
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53RecoveryreadinessReadinessCheck.Route53RecoveryreadinessReadinessCheck",
+		"@cdktf/provider-aws.route53RecoveryreadinessReadinessCheck.Route53RecoveryreadinessReadinessCheck",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -593,7 +593,7 @@ func Route53RecoveryreadinessReadinessCheck_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53RecoveryreadinessReadinessCheck.Route53RecoveryreadinessReadinessCheck",
+		"@cdktf/provider-aws.route53RecoveryreadinessReadinessCheck.Route53RecoveryreadinessReadinessCheck",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func Route53RecoveryreadinessReadinessCheck_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53RecoveryreadinessReadinessCheck.Route53RecoveryreadinessReadinessCheck",
+		"@cdktf/provider-aws.route53RecoveryreadinessReadinessCheck.Route53RecoveryreadinessReadinessCheck",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func Route53RecoveryreadinessReadinessCheck_IsTerraformResource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53RecoveryreadinessReadinessCheck.Route53RecoveryreadinessReadinessCheck",
+		"@cdktf/provider-aws.route53RecoveryreadinessReadinessCheck.Route53RecoveryreadinessReadinessCheck",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func Route53RecoveryreadinessReadinessCheck_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53RecoveryreadinessReadinessCheck.Route53RecoveryreadinessReadinessCheck",
+		"@cdktf/provider-aws.route53RecoveryreadinessReadinessCheck.Route53RecoveryreadinessReadinessCheck",
 		"tfResourceType",
 		&returns,
 	)

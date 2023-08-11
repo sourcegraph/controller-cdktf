@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.datasyncLocationS3.DatasyncLocationS3",
+		"@cdktf/provider-aws.datasyncLocationS3.DatasyncLocationS3",
 		reflect.TypeOf((*DatasyncLocationS3)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,15 +76,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.datasyncLocationS3.DatasyncLocationS3Config",
+		"@cdktf/provider-aws.datasyncLocationS3.DatasyncLocationS3Config",
 		reflect.TypeOf((*DatasyncLocationS3Config)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.datasyncLocationS3.DatasyncLocationS3S3Config",
+		"@cdktf/provider-aws.datasyncLocationS3.DatasyncLocationS3S3Config",
 		reflect.TypeOf((*DatasyncLocationS3S3Config)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.datasyncLocationS3.DatasyncLocationS3S3ConfigOutputReference",
+		"@cdktf/provider-aws.datasyncLocationS3.DatasyncLocationS3S3ConfigOutputReference",
 		reflect.TypeOf((*DatasyncLocationS3S3ConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketAccessRoleArn", GoGetter: "BucketAccessRoleArn"},

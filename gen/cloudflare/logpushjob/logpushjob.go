@@ -558,7 +558,7 @@ func NewLogpushJob(scope constructs.Construct, id *string, config *LogpushJobCon
 	j := jsiiProxy_LogpushJob{}
 
 	_jsii_.Create(
-		"cloudflare.logpushJob.LogpushJob",
+		"@cdktf/provider-cloudflare.logpushJob.LogpushJob",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -571,7 +571,7 @@ func NewLogpushJob_Override(l LogpushJob, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.logpushJob.LogpushJob",
+		"@cdktf/provider-cloudflare.logpushJob.LogpushJob",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -803,7 +803,7 @@ func LogpushJob_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.logpushJob.LogpushJob",
+		"@cdktf/provider-cloudflare.logpushJob.LogpushJob",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -822,7 +822,7 @@ func LogpushJob_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.logpushJob.LogpushJob",
+		"@cdktf/provider-cloudflare.logpushJob.LogpushJob",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -841,7 +841,7 @@ func LogpushJob_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.logpushJob.LogpushJob",
+		"@cdktf/provider-cloudflare.logpushJob.LogpushJob",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -854,7 +854,7 @@ func LogpushJob_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.logpushJob.LogpushJob",
+		"@cdktf/provider-cloudflare.logpushJob.LogpushJob",
 		"tfResourceType",
 		&returns,
 	)

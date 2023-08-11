@@ -353,7 +353,7 @@ func NewEcrPullThroughCacheRule(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_EcrPullThroughCacheRule{}
 
 	_jsii_.Create(
-		"aws.ecrPullThroughCacheRule.EcrPullThroughCacheRule",
+		"@cdktf/provider-aws.ecrPullThroughCacheRule.EcrPullThroughCacheRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewEcrPullThroughCacheRule_Override(e EcrPullThroughCacheRule, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecrPullThroughCacheRule.EcrPullThroughCacheRule",
+		"@cdktf/provider-aws.ecrPullThroughCacheRule.EcrPullThroughCacheRule",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -499,7 +499,7 @@ func EcrPullThroughCacheRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecrPullThroughCacheRule.EcrPullThroughCacheRule",
+		"@cdktf/provider-aws.ecrPullThroughCacheRule.EcrPullThroughCacheRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func EcrPullThroughCacheRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecrPullThroughCacheRule.EcrPullThroughCacheRule",
+		"@cdktf/provider-aws.ecrPullThroughCacheRule.EcrPullThroughCacheRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func EcrPullThroughCacheRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecrPullThroughCacheRule.EcrPullThroughCacheRule",
+		"@cdktf/provider-aws.ecrPullThroughCacheRule.EcrPullThroughCacheRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func EcrPullThroughCacheRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ecrPullThroughCacheRule.EcrPullThroughCacheRule",
+		"@cdktf/provider-aws.ecrPullThroughCacheRule.EcrPullThroughCacheRule",
 		"tfResourceType",
 		&returns,
 	)

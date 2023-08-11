@@ -474,7 +474,7 @@ func NewGameliftGameSessionQueue(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_GameliftGameSessionQueue{}
 
 	_jsii_.Create(
-		"aws.gameliftGameSessionQueue.GameliftGameSessionQueue",
+		"@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueue",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -487,7 +487,7 @@ func NewGameliftGameSessionQueue_Override(g GameliftGameSessionQueue, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftGameSessionQueue.GameliftGameSessionQueue",
+		"@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueue",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -664,7 +664,7 @@ func GameliftGameSessionQueue_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.gameliftGameSessionQueue.GameliftGameSessionQueue",
+		"@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueue",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -683,7 +683,7 @@ func GameliftGameSessionQueue_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.gameliftGameSessionQueue.GameliftGameSessionQueue",
+		"@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueue",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func GameliftGameSessionQueue_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.gameliftGameSessionQueue.GameliftGameSessionQueue",
+		"@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueue",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func GameliftGameSessionQueue_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.gameliftGameSessionQueue.GameliftGameSessionQueue",
+		"@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueue",
 		"tfResourceType",
 		&returns,
 	)

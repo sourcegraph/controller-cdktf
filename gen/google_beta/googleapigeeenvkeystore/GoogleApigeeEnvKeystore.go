@@ -378,7 +378,7 @@ func NewGoogleApigeeEnvKeystore(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_GoogleApigeeEnvKeystore{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeEnvKeystore.GoogleApigeeEnvKeystore",
+		"@cdktf/provider-google-beta.googleApigeeEnvKeystore.GoogleApigeeEnvKeystore",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -391,7 +391,7 @@ func NewGoogleApigeeEnvKeystore_Override(g GoogleApigeeEnvKeystore, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeEnvKeystore.GoogleApigeeEnvKeystore",
+		"@cdktf/provider-google-beta.googleApigeeEnvKeystore.GoogleApigeeEnvKeystore",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -524,7 +524,7 @@ func GoogleApigeeEnvKeystore_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeEnvKeystore.GoogleApigeeEnvKeystore",
+		"@cdktf/provider-google-beta.googleApigeeEnvKeystore.GoogleApigeeEnvKeystore",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func GoogleApigeeEnvKeystore_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeEnvKeystore.GoogleApigeeEnvKeystore",
+		"@cdktf/provider-google-beta.googleApigeeEnvKeystore.GoogleApigeeEnvKeystore",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func GoogleApigeeEnvKeystore_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeEnvKeystore.GoogleApigeeEnvKeystore",
+		"@cdktf/provider-google-beta.googleApigeeEnvKeystore.GoogleApigeeEnvKeystore",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func GoogleApigeeEnvKeystore_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleApigeeEnvKeystore.GoogleApigeeEnvKeystore",
+		"@cdktf/provider-google-beta.googleApigeeEnvKeystore.GoogleApigeeEnvKeystore",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewComputeNodeTemplateTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_ComputeNodeTemplateTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeNodeTemplate.ComputeNodeTemplateTimeoutsOutputReference",
+		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplateTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeNodeTemplateTimeoutsOutputReference_Override(c ComputeNodeTemplat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeNodeTemplate.ComputeNodeTemplateTimeoutsOutputReference",
+		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplateTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

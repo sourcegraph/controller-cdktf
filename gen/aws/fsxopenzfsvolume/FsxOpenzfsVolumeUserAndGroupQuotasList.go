@@ -116,7 +116,7 @@ func NewFsxOpenzfsVolumeUserAndGroupQuotasList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_FsxOpenzfsVolumeUserAndGroupQuotasList{}
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsVolume.FsxOpenzfsVolumeUserAndGroupQuotasList",
+		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeUserAndGroupQuotasList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewFsxOpenzfsVolumeUserAndGroupQuotasList_Override(f FsxOpenzfsVolumeUserAn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsVolume.FsxOpenzfsVolumeUserAndGroupQuotasList",
+		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeUserAndGroupQuotasList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)

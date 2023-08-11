@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.vpcIpamOrganizationAdminAccount.VpcIpamOrganizationAdminAccount",
+		"@cdktf/provider-aws.vpcIpamOrganizationAdminAccount.VpcIpamOrganizationAdminAccount",
 		reflect.TypeOf((*VpcIpamOrganizationAdminAccount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcIpamOrganizationAdminAccount.VpcIpamOrganizationAdminAccountConfig",
+		"@cdktf/provider-aws.vpcIpamOrganizationAdminAccount.VpcIpamOrganizationAdminAccountConfig",
 		reflect.TypeOf((*VpcIpamOrganizationAdminAccountConfig)(nil)).Elem(),
 	)
 }

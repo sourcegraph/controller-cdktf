@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ssmActivation.SsmActivation",
+		"@cdktf/provider-aws.ssmActivation.SsmActivation",
 		reflect.TypeOf((*SsmActivation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activationCode", GoGetter: "ActivationCode"},
@@ -78,7 +78,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssmActivation.SsmActivationConfig",
+		"@cdktf/provider-aws.ssmActivation.SsmActivationConfig",
 		reflect.TypeOf((*SsmActivationConfig)(nil)).Elem(),
 	)
 }

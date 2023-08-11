@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.acmCertificate.AcmCertificate",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificate",
 		reflect.TypeOf((*AcmCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -106,15 +106,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.acmCertificate.AcmCertificateConfig",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificateConfig",
 		reflect.TypeOf((*AcmCertificateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.acmCertificate.AcmCertificateDomainValidationOptions",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificateDomainValidationOptions",
 		reflect.TypeOf((*AcmCertificateDomainValidationOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.acmCertificate.AcmCertificateDomainValidationOptionsList",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificateDomainValidationOptionsList",
 		reflect.TypeOf((*AcmCertificateDomainValidationOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -134,7 +134,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.acmCertificate.AcmCertificateDomainValidationOptionsOutputReference",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificateDomainValidationOptionsOutputReference",
 		reflect.TypeOf((*AcmCertificateDomainValidationOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -170,11 +170,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.acmCertificate.AcmCertificateOptions",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificateOptions",
 		reflect.TypeOf((*AcmCertificateOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.acmCertificate.AcmCertificateOptionsOutputReference",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificateOptionsOutputReference",
 		reflect.TypeOf((*AcmCertificateOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateTransparencyLoggingPreference", GoGetter: "CertificateTransparencyLoggingPreference"},
@@ -209,11 +209,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.acmCertificate.AcmCertificateRenewalSummary",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificateRenewalSummary",
 		reflect.TypeOf((*AcmCertificateRenewalSummary)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.acmCertificate.AcmCertificateRenewalSummaryList",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificateRenewalSummaryList",
 		reflect.TypeOf((*AcmCertificateRenewalSummaryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -233,7 +233,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.acmCertificate.AcmCertificateRenewalSummaryOutputReference",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificateRenewalSummaryOutputReference",
 		reflect.TypeOf((*AcmCertificateRenewalSummaryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -268,11 +268,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.acmCertificate.AcmCertificateValidationOption",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificateValidationOption",
 		reflect.TypeOf((*AcmCertificateValidationOption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.acmCertificate.AcmCertificateValidationOptionList",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificateValidationOptionList",
 		reflect.TypeOf((*AcmCertificateValidationOptionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -293,7 +293,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.acmCertificate.AcmCertificateValidationOptionOutputReference",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificateValidationOptionOutputReference",
 		reflect.TypeOf((*AcmCertificateValidationOptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -472,7 +472,7 @@ func NewEcrpublicRepository(scope constructs.Construct, id *string, config *Ecrp
 	j := jsiiProxy_EcrpublicRepository{}
 
 	_jsii_.Create(
-		"aws.ecrpublicRepository.EcrpublicRepository",
+		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -485,7 +485,7 @@ func NewEcrpublicRepository_Override(e EcrpublicRepository, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecrpublicRepository.EcrpublicRepository",
+		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -640,7 +640,7 @@ func EcrpublicRepository_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecrpublicRepository.EcrpublicRepository",
+		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -659,7 +659,7 @@ func EcrpublicRepository_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecrpublicRepository.EcrpublicRepository",
+		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func EcrpublicRepository_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecrpublicRepository.EcrpublicRepository",
+		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func EcrpublicRepository_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ecrpublicRepository.EcrpublicRepository",
+		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository",
 		"tfResourceType",
 		&returns,
 	)

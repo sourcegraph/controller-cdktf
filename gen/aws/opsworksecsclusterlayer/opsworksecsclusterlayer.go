@@ -905,7 +905,7 @@ func NewOpsworksEcsClusterLayer(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_OpsworksEcsClusterLayer{}
 
 	_jsii_.Create(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayer",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -918,7 +918,7 @@ func NewOpsworksEcsClusterLayer_Override(o OpsworksEcsClusterLayer, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayer",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayer",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -1271,7 +1271,7 @@ func OpsworksEcsClusterLayer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayer",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1290,7 +1290,7 @@ func OpsworksEcsClusterLayer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayer",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1309,7 +1309,7 @@ func OpsworksEcsClusterLayer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayer",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1322,7 +1322,7 @@ func OpsworksEcsClusterLayer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayer",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayer",
 		"tfResourceType",
 		&returns,
 	)

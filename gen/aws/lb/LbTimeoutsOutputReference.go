@@ -228,7 +228,7 @@ func NewLbTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_LbTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.lb.LbTimeoutsOutputReference",
+		"@cdktf/provider-aws.lb.LbTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewLbTimeoutsOutputReference_Override(l LbTimeoutsOutputReference, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lb.LbTimeoutsOutputReference",
+		"@cdktf/provider-aws.lb.LbTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

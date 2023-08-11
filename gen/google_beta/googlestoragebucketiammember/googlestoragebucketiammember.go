@@ -400,7 +400,7 @@ func NewGoogleStorageBucketIamMember(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleStorageBucketIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMember",
+		"@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleStorageBucketIamMember_Override(g GoogleStorageBucketIamMember, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMember",
+		"@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleStorageBucketIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMember",
+		"@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleStorageBucketIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMember",
+		"@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleStorageBucketIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMember",
+		"@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleStorageBucketIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMember",
+		"@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMember",
 		"tfResourceType",
 		&returns,
 	)

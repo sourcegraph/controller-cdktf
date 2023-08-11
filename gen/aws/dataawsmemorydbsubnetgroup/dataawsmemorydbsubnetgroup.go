@@ -359,7 +359,7 @@ func NewDataAwsMemorydbSubnetGroup(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataAwsMemorydbSubnetGroup{}
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbSubnetGroup.DataAwsMemorydbSubnetGroup",
+		"@cdktf/provider-aws.dataAwsMemorydbSubnetGroup.DataAwsMemorydbSubnetGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -372,7 +372,7 @@ func NewDataAwsMemorydbSubnetGroup_Override(d DataAwsMemorydbSubnetGroup, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbSubnetGroup.DataAwsMemorydbSubnetGroup",
+		"@cdktf/provider-aws.dataAwsMemorydbSubnetGroup.DataAwsMemorydbSubnetGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -483,7 +483,7 @@ func DataAwsMemorydbSubnetGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMemorydbSubnetGroup.DataAwsMemorydbSubnetGroup",
+		"@cdktf/provider-aws.dataAwsMemorydbSubnetGroup.DataAwsMemorydbSubnetGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -502,7 +502,7 @@ func DataAwsMemorydbSubnetGroup_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMemorydbSubnetGroup.DataAwsMemorydbSubnetGroup",
+		"@cdktf/provider-aws.dataAwsMemorydbSubnetGroup.DataAwsMemorydbSubnetGroup",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -521,7 +521,7 @@ func DataAwsMemorydbSubnetGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMemorydbSubnetGroup.DataAwsMemorydbSubnetGroup",
+		"@cdktf/provider-aws.dataAwsMemorydbSubnetGroup.DataAwsMemorydbSubnetGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataAwsMemorydbSubnetGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsMemorydbSubnetGroup.DataAwsMemorydbSubnetGroup",
+		"@cdktf/provider-aws.dataAwsMemorydbSubnetGroup.DataAwsMemorydbSubnetGroup",
 		"tfResourceType",
 		&returns,
 	)

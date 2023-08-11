@@ -116,7 +116,7 @@ func NewRoute53DomainsRegisteredDomainNameServerList(terraformResource cdktf.IIn
 	j := jsiiProxy_Route53DomainsRegisteredDomainNameServerList{}
 
 	_jsii_.Create(
-		"aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainNameServerList",
+		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainNameServerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRoute53DomainsRegisteredDomainNameServerList_Override(r Route53DomainsRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainNameServerList",
+		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainNameServerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

@@ -343,7 +343,7 @@ func NewApiShield(scope constructs.Construct, id *string, config *ApiShieldConfi
 	j := jsiiProxy_ApiShield{}
 
 	_jsii_.Create(
-		"cloudflare.apiShield.ApiShield",
+		"@cdktf/provider-cloudflare.apiShield.ApiShield",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewApiShield_Override(a ApiShield, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.apiShield.ApiShield",
+		"@cdktf/provider-cloudflare.apiShield.ApiShield",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -478,7 +478,7 @@ func ApiShield_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.apiShield.ApiShield",
+		"@cdktf/provider-cloudflare.apiShield.ApiShield",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -497,7 +497,7 @@ func ApiShield_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.apiShield.ApiShield",
+		"@cdktf/provider-cloudflare.apiShield.ApiShield",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func ApiShield_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.apiShield.ApiShield",
+		"@cdktf/provider-cloudflare.apiShield.ApiShield",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func ApiShield_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.apiShield.ApiShield",
+		"@cdktf/provider-cloudflare.apiShield.ApiShield",
 		"tfResourceType",
 		&returns,
 	)

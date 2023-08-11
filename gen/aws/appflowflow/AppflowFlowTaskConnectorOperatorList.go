@@ -116,7 +116,7 @@ func NewAppflowFlowTaskConnectorOperatorList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_AppflowFlowTaskConnectorOperatorList{}
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowTaskConnectorOperatorList",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppflowFlowTaskConnectorOperatorList_Override(a AppflowFlowTaskConnector
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowTaskConnectorOperatorList",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

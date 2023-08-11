@@ -179,7 +179,7 @@ func NewAppintegrationsEventIntegrationEventFilterOutputReference(terraformResou
 	j := jsiiProxy_AppintegrationsEventIntegrationEventFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationEventFilterOutputReference",
+		"@cdktf/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationEventFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAppintegrationsEventIntegrationEventFilterOutputReference_Override(a App
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationEventFilterOutputReference",
+		"@cdktf/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationEventFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

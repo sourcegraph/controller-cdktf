@@ -228,7 +228,7 @@ func NewFilestoreBackupTimeoutsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_FilestoreBackupTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.filestoreBackup.FilestoreBackupTimeoutsOutputReference",
+		"@cdktf/provider-google.filestoreBackup.FilestoreBackupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewFilestoreBackupTimeoutsOutputReference_Override(f FilestoreBackupTimeout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.filestoreBackup.FilestoreBackupTimeoutsOutputReference",
+		"@cdktf/provider-google.filestoreBackup.FilestoreBackupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

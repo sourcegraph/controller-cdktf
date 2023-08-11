@@ -390,7 +390,7 @@ func NewAuthenticatedOriginPulls(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_AuthenticatedOriginPulls{}
 
 	_jsii_.Create(
-		"cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
+		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewAuthenticatedOriginPulls_Override(a AuthenticatedOriginPulls, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
+		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -558,7 +558,7 @@ func AuthenticatedOriginPulls_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
+		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func AuthenticatedOriginPulls_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
+		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func AuthenticatedOriginPulls_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
+		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func AuthenticatedOriginPulls_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
+		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
 		"tfResourceType",
 		&returns,
 	)

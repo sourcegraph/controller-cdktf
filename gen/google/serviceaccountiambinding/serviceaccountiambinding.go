@@ -400,7 +400,7 @@ func NewServiceAccountIamBinding(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_ServiceAccountIamBinding{}
 
 	_jsii_.Create(
-		"google.serviceAccountIamBinding.ServiceAccountIamBinding",
+		"@cdktf/provider-google.serviceAccountIamBinding.ServiceAccountIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewServiceAccountIamBinding_Override(s ServiceAccountIamBinding, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.serviceAccountIamBinding.ServiceAccountIamBinding",
+		"@cdktf/provider-google.serviceAccountIamBinding.ServiceAccountIamBinding",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -557,7 +557,7 @@ func ServiceAccountIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.serviceAccountIamBinding.ServiceAccountIamBinding",
+		"@cdktf/provider-google.serviceAccountIamBinding.ServiceAccountIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func ServiceAccountIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.serviceAccountIamBinding.ServiceAccountIamBinding",
+		"@cdktf/provider-google.serviceAccountIamBinding.ServiceAccountIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func ServiceAccountIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.serviceAccountIamBinding.ServiceAccountIamBinding",
+		"@cdktf/provider-google.serviceAccountIamBinding.ServiceAccountIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func ServiceAccountIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.serviceAccountIamBinding.ServiceAccountIamBinding",
+		"@cdktf/provider-google.serviceAccountIamBinding.ServiceAccountIamBinding",
 		"tfResourceType",
 		&returns,
 	)

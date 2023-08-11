@@ -116,7 +116,7 @@ func NewLbTargetGroupTargetFailoverList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_LbTargetGroupTargetFailoverList{}
 
 	_jsii_.Create(
-		"aws.lbTargetGroup.LbTargetGroupTargetFailoverList",
+		"@cdktf/provider-aws.lbTargetGroup.LbTargetGroupTargetFailoverList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLbTargetGroupTargetFailoverList_Override(l LbTargetGroupTargetFailoverLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbTargetGroup.LbTargetGroupTargetFailoverList",
+		"@cdktf/provider-aws.lbTargetGroup.LbTargetGroupTargetFailoverList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

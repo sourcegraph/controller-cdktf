@@ -435,7 +435,7 @@ func NewCodestarconnectionsHost(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_CodestarconnectionsHost{}
 
 	_jsii_.Create(
-		"aws.codestarconnectionsHost.CodestarconnectionsHost",
+		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -448,7 +448,7 @@ func NewCodestarconnectionsHost_Override(c CodestarconnectionsHost, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codestarconnectionsHost.CodestarconnectionsHost",
+		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -592,7 +592,7 @@ func CodestarconnectionsHost_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codestarconnectionsHost.CodestarconnectionsHost",
+		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func CodestarconnectionsHost_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codestarconnectionsHost.CodestarconnectionsHost",
+		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func CodestarconnectionsHost_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codestarconnectionsHost.CodestarconnectionsHost",
+		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func CodestarconnectionsHost_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.codestarconnectionsHost.CodestarconnectionsHost",
+		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost",
 		"tfResourceType",
 		&returns,
 	)

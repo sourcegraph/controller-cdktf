@@ -202,7 +202,7 @@ func NewLexIntentDialogCodeHookOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_LexIntentDialogCodeHookOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentDialogCodeHookOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentDialogCodeHookOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewLexIntentDialogCodeHookOutputReference_Override(l LexIntentDialogCodeHoo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentDialogCodeHookOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentDialogCodeHookOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

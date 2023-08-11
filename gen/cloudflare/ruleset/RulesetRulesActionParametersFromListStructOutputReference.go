@@ -204,7 +204,7 @@ func NewRulesetRulesActionParametersFromListStructOutputReference(terraformResou
 	j := jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewRulesetRulesActionParametersFromListStructOutputReference_Override(r Rul
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

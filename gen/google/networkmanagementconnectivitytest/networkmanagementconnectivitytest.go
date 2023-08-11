@@ -509,7 +509,7 @@ func NewNetworkManagementConnectivityTest(scope constructs.Construct, id *string
 	j := jsiiProxy_NetworkManagementConnectivityTest{}
 
 	_jsii_.Create(
-		"google.networkManagementConnectivityTest.NetworkManagementConnectivityTest",
+		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTest",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -522,7 +522,7 @@ func NewNetworkManagementConnectivityTest_Override(n NetworkManagementConnectivi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.networkManagementConnectivityTest.NetworkManagementConnectivityTest",
+		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTest",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -699,7 +699,7 @@ func NetworkManagementConnectivityTest_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.networkManagementConnectivityTest.NetworkManagementConnectivityTest",
+		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTest",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -718,7 +718,7 @@ func NetworkManagementConnectivityTest_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.networkManagementConnectivityTest.NetworkManagementConnectivityTest",
+		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTest",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -737,7 +737,7 @@ func NetworkManagementConnectivityTest_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.networkManagementConnectivityTest.NetworkManagementConnectivityTest",
+		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTest",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -750,7 +750,7 @@ func NetworkManagementConnectivityTest_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.networkManagementConnectivityTest.NetworkManagementConnectivityTest",
+		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTest",
 		"tfResourceType",
 		&returns,
 	)

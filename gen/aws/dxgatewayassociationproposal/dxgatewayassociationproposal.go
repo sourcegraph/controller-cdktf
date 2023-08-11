@@ -411,7 +411,7 @@ func NewDxGatewayAssociationProposal(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DxGatewayAssociationProposal{}
 
 	_jsii_.Create(
-		"aws.dxGatewayAssociationProposal.DxGatewayAssociationProposal",
+		"@cdktf/provider-aws.dxGatewayAssociationProposal.DxGatewayAssociationProposal",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -424,7 +424,7 @@ func NewDxGatewayAssociationProposal_Override(d DxGatewayAssociationProposal, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dxGatewayAssociationProposal.DxGatewayAssociationProposal",
+		"@cdktf/provider-aws.dxGatewayAssociationProposal.DxGatewayAssociationProposal",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -579,7 +579,7 @@ func DxGatewayAssociationProposal_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxGatewayAssociationProposal.DxGatewayAssociationProposal",
+		"@cdktf/provider-aws.dxGatewayAssociationProposal.DxGatewayAssociationProposal",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -598,7 +598,7 @@ func DxGatewayAssociationProposal_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxGatewayAssociationProposal.DxGatewayAssociationProposal",
+		"@cdktf/provider-aws.dxGatewayAssociationProposal.DxGatewayAssociationProposal",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -617,7 +617,7 @@ func DxGatewayAssociationProposal_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxGatewayAssociationProposal.DxGatewayAssociationProposal",
+		"@cdktf/provider-aws.dxGatewayAssociationProposal.DxGatewayAssociationProposal",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func DxGatewayAssociationProposal_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dxGatewayAssociationProposal.DxGatewayAssociationProposal",
+		"@cdktf/provider-aws.dxGatewayAssociationProposal.DxGatewayAssociationProposal",
 		"tfResourceType",
 		&returns,
 	)

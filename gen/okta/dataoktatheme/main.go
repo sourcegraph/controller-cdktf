@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.dataOktaTheme.DataOktaTheme",
+		"@cdktf/provider-okta.dataOktaTheme.DataOktaTheme",
 		reflect.TypeOf((*DataOktaTheme)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaTheme.DataOktaThemeConfig",
+		"@cdktf/provider-okta.dataOktaTheme.DataOktaThemeConfig",
 		reflect.TypeOf((*DataOktaThemeConfig)(nil)).Elem(),
 	)
 }

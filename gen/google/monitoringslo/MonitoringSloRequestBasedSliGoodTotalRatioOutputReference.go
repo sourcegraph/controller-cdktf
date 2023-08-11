@@ -228,7 +228,7 @@ func NewMonitoringSloRequestBasedSliGoodTotalRatioOutputReference(terraformResou
 	j := jsiiProxy_MonitoringSloRequestBasedSliGoodTotalRatioOutputReference{}
 
 	_jsii_.Create(
-		"google.monitoringSlo.MonitoringSloRequestBasedSliGoodTotalRatioOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloRequestBasedSliGoodTotalRatioOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewMonitoringSloRequestBasedSliGoodTotalRatioOutputReference_Override(m Mon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringSlo.MonitoringSloRequestBasedSliGoodTotalRatioOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloRequestBasedSliGoodTotalRatioOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

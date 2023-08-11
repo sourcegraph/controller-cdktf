@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.dataOktaBrands.DataOktaBrands",
+		"@cdktf/provider-okta.dataOktaBrands.DataOktaBrands",
 		reflect.TypeOf((*DataOktaBrands)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -54,11 +54,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaBrands.DataOktaBrandsBrands",
+		"@cdktf/provider-okta.dataOktaBrands.DataOktaBrandsBrands",
 		reflect.TypeOf((*DataOktaBrandsBrands)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaBrands.DataOktaBrandsBrandsList",
+		"@cdktf/provider-okta.dataOktaBrands.DataOktaBrandsBrandsList",
 		reflect.TypeOf((*DataOktaBrandsBrandsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -78,7 +78,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaBrands.DataOktaBrandsBrandsOutputReference",
+		"@cdktf/provider-okta.dataOktaBrands.DataOktaBrandsBrandsOutputReference",
 		reflect.TypeOf((*DataOktaBrandsBrandsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -114,7 +114,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaBrands.DataOktaBrandsConfig",
+		"@cdktf/provider-okta.dataOktaBrands.DataOktaBrandsConfig",
 		reflect.TypeOf((*DataOktaBrandsConfig)(nil)).Elem(),
 	)
 }

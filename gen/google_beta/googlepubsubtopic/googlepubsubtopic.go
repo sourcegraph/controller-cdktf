@@ -487,7 +487,7 @@ func NewGooglePubsubTopic(scope constructs.Construct, id *string, config *Google
 	j := jsiiProxy_GooglePubsubTopic{}
 
 	_jsii_.Create(
-		"google-beta.googlePubsubTopic.GooglePubsubTopic",
+		"@cdktf/provider-google-beta.googlePubsubTopic.GooglePubsubTopic",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -500,7 +500,7 @@ func NewGooglePubsubTopic_Override(g GooglePubsubTopic, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePubsubTopic.GooglePubsubTopic",
+		"@cdktf/provider-google-beta.googlePubsubTopic.GooglePubsubTopic",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -666,7 +666,7 @@ func GooglePubsubTopic_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubTopic.GooglePubsubTopic",
+		"@cdktf/provider-google-beta.googlePubsubTopic.GooglePubsubTopic",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -685,7 +685,7 @@ func GooglePubsubTopic_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubTopic.GooglePubsubTopic",
+		"@cdktf/provider-google-beta.googlePubsubTopic.GooglePubsubTopic",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -704,7 +704,7 @@ func GooglePubsubTopic_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubTopic.GooglePubsubTopic",
+		"@cdktf/provider-google-beta.googlePubsubTopic.GooglePubsubTopic",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -717,7 +717,7 @@ func GooglePubsubTopic_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googlePubsubTopic.GooglePubsubTopic",
+		"@cdktf/provider-google-beta.googlePubsubTopic.GooglePubsubTopic",
 		"tfResourceType",
 		&returns,
 	)

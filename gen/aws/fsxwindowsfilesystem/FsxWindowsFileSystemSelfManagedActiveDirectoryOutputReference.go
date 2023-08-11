@@ -296,7 +296,7 @@ func NewFsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference(terraformR
 	j := jsiiProxy_FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxWindowsFileSystem.FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference",
+		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -308,7 +308,7 @@ func NewFsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference_Override(f
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxWindowsFileSystem.FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference",
+		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

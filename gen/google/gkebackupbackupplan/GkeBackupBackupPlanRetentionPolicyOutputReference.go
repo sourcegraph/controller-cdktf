@@ -228,7 +228,7 @@ func NewGkeBackupBackupPlanRetentionPolicyOutputReference(terraformResource cdkt
 	j := jsiiProxy_GkeBackupBackupPlanRetentionPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanRetentionPolicyOutputReference",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanRetentionPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGkeBackupBackupPlanRetentionPolicyOutputReference_Override(g GkeBackupBa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanRetentionPolicyOutputReference",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanRetentionPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

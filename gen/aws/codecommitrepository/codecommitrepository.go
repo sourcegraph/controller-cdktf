@@ -459,7 +459,7 @@ func NewCodecommitRepository(scope constructs.Construct, id *string, config *Cod
 	j := jsiiProxy_CodecommitRepository{}
 
 	_jsii_.Create(
-		"aws.codecommitRepository.CodecommitRepository",
+		"@cdktf/provider-aws.codecommitRepository.CodecommitRepository",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewCodecommitRepository_Override(c CodecommitRepository, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codecommitRepository.CodecommitRepository",
+		"@cdktf/provider-aws.codecommitRepository.CodecommitRepository",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -638,7 +638,7 @@ func CodecommitRepository_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codecommitRepository.CodecommitRepository",
+		"@cdktf/provider-aws.codecommitRepository.CodecommitRepository",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func CodecommitRepository_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codecommitRepository.CodecommitRepository",
+		"@cdktf/provider-aws.codecommitRepository.CodecommitRepository",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func CodecommitRepository_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codecommitRepository.CodecommitRepository",
+		"@cdktf/provider-aws.codecommitRepository.CodecommitRepository",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func CodecommitRepository_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.codecommitRepository.CodecommitRepository",
+		"@cdktf/provider-aws.codecommitRepository.CodecommitRepository",
 		"tfResourceType",
 		&returns,
 	)

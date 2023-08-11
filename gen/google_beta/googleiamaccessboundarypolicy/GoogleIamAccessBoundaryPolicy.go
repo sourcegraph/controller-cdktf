@@ -424,7 +424,7 @@ func NewGoogleIamAccessBoundaryPolicy(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleIamAccessBoundaryPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicy",
+		"@cdktf/provider-google-beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleIamAccessBoundaryPolicy_Override(g GoogleIamAccessBoundaryPolicy, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicy",
+		"@cdktf/provider-google-beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -581,7 +581,7 @@ func GoogleIamAccessBoundaryPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicy",
+		"@cdktf/provider-google-beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -600,7 +600,7 @@ func GoogleIamAccessBoundaryPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicy",
+		"@cdktf/provider-google-beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func GoogleIamAccessBoundaryPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicy",
+		"@cdktf/provider-google-beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func GoogleIamAccessBoundaryPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicy",
+		"@cdktf/provider-google-beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicy",
 		"tfResourceType",
 		&returns,
 	)

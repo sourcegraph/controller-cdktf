@@ -104,7 +104,7 @@ func NewDataAwsIamGroupUsersList(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_DataAwsIamGroupUsersList{}
 
 	_jsii_.Create(
-		"aws.dataAwsIamGroup.DataAwsIamGroupUsersList",
+		"@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsIamGroupUsersList_Override(d DataAwsIamGroupUsersList, terraformR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIamGroup.DataAwsIamGroupUsersList",
+		"@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

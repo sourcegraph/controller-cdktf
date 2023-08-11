@@ -252,7 +252,7 @@ func NewCodepipelineCustomActionTypeSettingsOutputReference(terraformResource cd
 	j := jsiiProxy_CodepipelineCustomActionTypeSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionTypeSettingsOutputReference",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewCodepipelineCustomActionTypeSettingsOutputReference_Override(c Codepipel
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionTypeSettingsOutputReference",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

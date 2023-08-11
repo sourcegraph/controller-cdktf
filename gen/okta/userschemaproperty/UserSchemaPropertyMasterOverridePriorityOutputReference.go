@@ -203,7 +203,7 @@ func NewUserSchemaPropertyMasterOverridePriorityOutputReference(terraformResourc
 	j := jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference{}
 
 	_jsii_.Create(
-		"okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriorityOutputReference",
+		"@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriorityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewUserSchemaPropertyMasterOverridePriorityOutputReference_Override(u UserS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriorityOutputReference",
+		"@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriorityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		u,
 	)

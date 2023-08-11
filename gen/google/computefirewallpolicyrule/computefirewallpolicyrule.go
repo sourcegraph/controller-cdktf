@@ -577,7 +577,7 @@ func NewComputeFirewallPolicyRule(scope constructs.Construct, id *string, config
 	j := jsiiProxy_ComputeFirewallPolicyRule{}
 
 	_jsii_.Create(
-		"google.computeFirewallPolicyRule.ComputeFirewallPolicyRule",
+		"@cdktf/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -590,7 +590,7 @@ func NewComputeFirewallPolicyRule_Override(c ComputeFirewallPolicyRule, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeFirewallPolicyRule.ComputeFirewallPolicyRule",
+		"@cdktf/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -800,7 +800,7 @@ func ComputeFirewallPolicyRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeFirewallPolicyRule.ComputeFirewallPolicyRule",
+		"@cdktf/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -819,7 +819,7 @@ func ComputeFirewallPolicyRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeFirewallPolicyRule.ComputeFirewallPolicyRule",
+		"@cdktf/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -838,7 +838,7 @@ func ComputeFirewallPolicyRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeFirewallPolicyRule.ComputeFirewallPolicyRule",
+		"@cdktf/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -851,7 +851,7 @@ func ComputeFirewallPolicyRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeFirewallPolicyRule.ComputeFirewallPolicyRule",
+		"@cdktf/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule",
 		"tfResourceType",
 		&returns,
 	)

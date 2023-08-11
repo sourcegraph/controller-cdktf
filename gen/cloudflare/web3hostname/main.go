@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.web3Hostname.Web3Hostname",
+		"@cdktf/provider-cloudflare.web3Hostname.Web3Hostname",
 		reflect.TypeOf((*Web3Hostname)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.web3Hostname.Web3HostnameConfig",
+		"@cdktf/provider-cloudflare.web3Hostname.Web3HostnameConfig",
 		reflect.TypeOf((*Web3HostnameConfig)(nil)).Elem(),
 	)
 }

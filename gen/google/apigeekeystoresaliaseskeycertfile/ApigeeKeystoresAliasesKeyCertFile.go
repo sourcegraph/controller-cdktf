@@ -518,7 +518,7 @@ func NewApigeeKeystoresAliasesKeyCertFile(scope constructs.Construct, id *string
 	j := jsiiProxy_ApigeeKeystoresAliasesKeyCertFile{}
 
 	_jsii_.Create(
-		"google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFile",
+		"@cdktf/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -531,7 +531,7 @@ func NewApigeeKeystoresAliasesKeyCertFile_Override(a ApigeeKeystoresAliasesKeyCe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFile",
+		"@cdktf/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFile",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -719,7 +719,7 @@ func ApigeeKeystoresAliasesKeyCertFile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFile",
+		"@cdktf/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -738,7 +738,7 @@ func ApigeeKeystoresAliasesKeyCertFile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFile",
+		"@cdktf/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -757,7 +757,7 @@ func ApigeeKeystoresAliasesKeyCertFile_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFile",
+		"@cdktf/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -770,7 +770,7 @@ func ApigeeKeystoresAliasesKeyCertFile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFile",
+		"@cdktf/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFile",
 		"tfResourceType",
 		&returns,
 	)

@@ -202,7 +202,7 @@ func NewPageRuleActionsForwardingUrlOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_PageRuleActionsForwardingUrlOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.pageRule.PageRuleActionsForwardingUrlOutputReference",
+		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsForwardingUrlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewPageRuleActionsForwardingUrlOutputReference_Override(p PageRuleActionsFo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.pageRule.PageRuleActionsForwardingUrlOutputReference",
+		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsForwardingUrlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

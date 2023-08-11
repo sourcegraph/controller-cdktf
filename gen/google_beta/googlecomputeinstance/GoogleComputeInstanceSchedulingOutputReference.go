@@ -372,7 +372,7 @@ func NewGoogleComputeInstanceSchedulingOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GoogleComputeInstanceSchedulingOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceSchedulingOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceSchedulingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -384,7 +384,7 @@ func NewGoogleComputeInstanceSchedulingOutputReference_Override(g GoogleComputeI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceSchedulingOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceSchedulingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

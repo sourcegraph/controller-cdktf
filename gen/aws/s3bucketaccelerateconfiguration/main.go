@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.s3BucketAccelerateConfiguration.S3BucketAccelerateConfiguration",
+		"@cdktf/provider-aws.s3BucketAccelerateConfiguration.S3BucketAccelerateConfiguration",
 		reflect.TypeOf((*S3BucketAccelerateConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketAccelerateConfiguration.S3BucketAccelerateConfigurationConfig",
+		"@cdktf/provider-aws.s3BucketAccelerateConfiguration.S3BucketAccelerateConfigurationConfig",
 		reflect.TypeOf((*S3BucketAccelerateConfigurationConfig)(nil)).Elem(),
 	)
 }

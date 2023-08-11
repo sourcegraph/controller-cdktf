@@ -494,7 +494,7 @@ func NewGoogleGkeHubFeature(scope constructs.Construct, id *string, config *Goog
 	j := jsiiProxy_GoogleGkeHubFeature{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeature",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeature",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -507,7 +507,7 @@ func NewGoogleGkeHubFeature_Override(g GoogleGkeHubFeature, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeature",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeature",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -662,7 +662,7 @@ func GoogleGkeHubFeature_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeature",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeature",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -681,7 +681,7 @@ func GoogleGkeHubFeature_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeature",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeature",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func GoogleGkeHubFeature_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeature",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeature",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -713,7 +713,7 @@ func GoogleGkeHubFeature_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeature",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeature",
 		"tfResourceType",
 		&returns,
 	)

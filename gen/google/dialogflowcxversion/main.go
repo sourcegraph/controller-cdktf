@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dialogflowCxVersion.DialogflowCxVersion",
+		"@cdktf/provider-google.dialogflowCxVersion.DialogflowCxVersion",
 		reflect.TypeOf((*DialogflowCxVersion)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxVersion.DialogflowCxVersionConfig",
+		"@cdktf/provider-google.dialogflowCxVersion.DialogflowCxVersionConfig",
 		reflect.TypeOf((*DialogflowCxVersionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxVersion.DialogflowCxVersionNluSettings",
+		"@cdktf/provider-google.dialogflowCxVersion.DialogflowCxVersionNluSettings",
 		reflect.TypeOf((*DialogflowCxVersionNluSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxVersion.DialogflowCxVersionNluSettingsList",
+		"@cdktf/provider-google.dialogflowCxVersion.DialogflowCxVersionNluSettingsList",
 		reflect.TypeOf((*DialogflowCxVersionNluSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -99,7 +99,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxVersion.DialogflowCxVersionNluSettingsOutputReference",
+		"@cdktf/provider-google.dialogflowCxVersion.DialogflowCxVersionNluSettingsOutputReference",
 		reflect.TypeOf((*DialogflowCxVersionNluSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "classificationThreshold", GoGetter: "ClassificationThreshold"},
@@ -134,11 +134,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxVersion.DialogflowCxVersionTimeouts",
+		"@cdktf/provider-google.dialogflowCxVersion.DialogflowCxVersionTimeouts",
 		reflect.TypeOf((*DialogflowCxVersionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxVersion.DialogflowCxVersionTimeoutsOutputReference",
+		"@cdktf/provider-google.dialogflowCxVersion.DialogflowCxVersionTimeoutsOutputReference",
 		reflect.TypeOf((*DialogflowCxVersionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

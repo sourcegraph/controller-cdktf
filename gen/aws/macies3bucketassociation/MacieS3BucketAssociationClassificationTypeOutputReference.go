@@ -204,7 +204,7 @@ func NewMacieS3BucketAssociationClassificationTypeOutputReference(terraformResou
 	j := jsiiProxy_MacieS3BucketAssociationClassificationTypeOutputReference{}
 
 	_jsii_.Create(
-		"aws.macieS3BucketAssociation.MacieS3BucketAssociationClassificationTypeOutputReference",
+		"@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationClassificationTypeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMacieS3BucketAssociationClassificationTypeOutputReference_Override(m Mac
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macieS3BucketAssociation.MacieS3BucketAssociationClassificationTypeOutputReference",
+		"@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationClassificationTypeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

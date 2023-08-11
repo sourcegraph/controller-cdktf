@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.docdbCluster.DocdbCluster",
+		"@cdktf/provider-aws.docdbCluster.DocdbCluster",
 		reflect.TypeOf((*DocdbCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -142,15 +142,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.docdbCluster.DocdbClusterConfig",
+		"@cdktf/provider-aws.docdbCluster.DocdbClusterConfig",
 		reflect.TypeOf((*DocdbClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.docdbCluster.DocdbClusterTimeouts",
+		"@cdktf/provider-aws.docdbCluster.DocdbClusterTimeouts",
 		reflect.TypeOf((*DocdbClusterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.docdbCluster.DocdbClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.docdbCluster.DocdbClusterTimeoutsOutputReference",
 		reflect.TypeOf((*DocdbClusterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

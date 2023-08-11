@@ -297,7 +297,7 @@ func NewPersistentVolumeV1SpecPersistentVolumeSourceAzureDiskOutputReference(ter
 	j := jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAzureDiskOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.persistentVolumeV1.PersistentVolumeV1SpecPersistentVolumeSourceAzureDiskOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolumeV1.PersistentVolumeV1SpecPersistentVolumeSourceAzureDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -309,7 +309,7 @@ func NewPersistentVolumeV1SpecPersistentVolumeSourceAzureDiskOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.persistentVolumeV1.PersistentVolumeV1SpecPersistentVolumeSourceAzureDiskOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolumeV1.PersistentVolumeV1SpecPersistentVolumeSourceAzureDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

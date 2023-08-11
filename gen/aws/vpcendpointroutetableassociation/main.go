@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation",
+		"@cdktf/provider-aws.vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation",
 		reflect.TypeOf((*VpcEndpointRouteTableAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociationConfig",
+		"@cdktf/provider-aws.vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociationConfig",
 		reflect.TypeOf((*VpcEndpointRouteTableAssociationConfig)(nil)).Elem(),
 	)
 }

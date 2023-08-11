@@ -228,7 +228,7 @@ func NewComputeSecurityPolicyAdvancedOptionsConfigOutputReference(terraformResou
 	j := jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyAdvancedOptionsConfigOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdvancedOptionsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeSecurityPolicyAdvancedOptionsConfigOutputReference_Override(c Com
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyAdvancedOptionsConfigOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdvancedOptionsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

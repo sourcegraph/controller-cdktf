@@ -191,7 +191,7 @@ func NewEventarcTriggerTransportPubsubOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_EventarcTriggerTransportPubsubOutputReference{}
 
 	_jsii_.Create(
-		"google.eventarcTrigger.EventarcTriggerTransportPubsubOutputReference",
+		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerTransportPubsubOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -203,7 +203,7 @@ func NewEventarcTriggerTransportPubsubOutputReference_Override(e EventarcTrigger
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.eventarcTrigger.EventarcTriggerTransportPubsubOutputReference",
+		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerTransportPubsubOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

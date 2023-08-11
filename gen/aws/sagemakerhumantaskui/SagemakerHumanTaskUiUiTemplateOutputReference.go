@@ -202,7 +202,7 @@ func NewSagemakerHumanTaskUiUiTemplateOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerHumanTaskUi.SagemakerHumanTaskUiUiTemplateOutputReference",
+		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUiUiTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSagemakerHumanTaskUiUiTemplateOutputReference_Override(s SagemakerHumanT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerHumanTaskUi.SagemakerHumanTaskUiUiTemplateOutputReference",
+		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUiUiTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

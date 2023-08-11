@@ -116,7 +116,7 @@ func NewNetworkPolicyV1SpecEgressPortsList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_NetworkPolicyV1SpecEgressPortsList{}
 
 	_jsii_.Create(
-		"kubernetes.networkPolicyV1.NetworkPolicyV1SpecEgressPortsList",
+		"@cdktf/provider-kubernetes.networkPolicyV1.NetworkPolicyV1SpecEgressPortsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewNetworkPolicyV1SpecEgressPortsList_Override(n NetworkPolicyV1SpecEgressP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.networkPolicyV1.NetworkPolicyV1SpecEgressPortsList",
+		"@cdktf/provider-kubernetes.networkPolicyV1.NetworkPolicyV1SpecEgressPortsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

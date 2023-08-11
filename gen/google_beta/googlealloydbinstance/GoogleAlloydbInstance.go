@@ -658,7 +658,7 @@ func NewGoogleAlloydbInstance(scope constructs.Construct, id *string, config *Go
 	j := jsiiProxy_GoogleAlloydbInstance{}
 
 	_jsii_.Create(
-		"google-beta.googleAlloydbInstance.GoogleAlloydbInstance",
+		"@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -671,7 +671,7 @@ func NewGoogleAlloydbInstance_Override(g GoogleAlloydbInstance, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAlloydbInstance.GoogleAlloydbInstance",
+		"@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstance",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -881,7 +881,7 @@ func GoogleAlloydbInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAlloydbInstance.GoogleAlloydbInstance",
+		"@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -900,7 +900,7 @@ func GoogleAlloydbInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAlloydbInstance.GoogleAlloydbInstance",
+		"@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -919,7 +919,7 @@ func GoogleAlloydbInstance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAlloydbInstance.GoogleAlloydbInstance",
+		"@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -932,7 +932,7 @@ func GoogleAlloydbInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleAlloydbInstance.GoogleAlloydbInstance",
+		"@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstance",
 		"tfResourceType",
 		&returns,
 	)

@@ -566,7 +566,7 @@ func NewWorkspacesWorkspace(scope constructs.Construct, id *string, config *Work
 	j := jsiiProxy_WorkspacesWorkspace{}
 
 	_jsii_.Create(
-		"aws.workspacesWorkspace.WorkspacesWorkspace",
+		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspace",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -579,7 +579,7 @@ func NewWorkspacesWorkspace_Override(w WorkspacesWorkspace, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.workspacesWorkspace.WorkspacesWorkspace",
+		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspace",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -778,7 +778,7 @@ func WorkspacesWorkspace_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.workspacesWorkspace.WorkspacesWorkspace",
+		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspace",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -797,7 +797,7 @@ func WorkspacesWorkspace_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.workspacesWorkspace.WorkspacesWorkspace",
+		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspace",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -816,7 +816,7 @@ func WorkspacesWorkspace_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.workspacesWorkspace.WorkspacesWorkspace",
+		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspace",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -829,7 +829,7 @@ func WorkspacesWorkspace_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.workspacesWorkspace.WorkspacesWorkspace",
+		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspace",
 		"tfResourceType",
 		&returns,
 	)

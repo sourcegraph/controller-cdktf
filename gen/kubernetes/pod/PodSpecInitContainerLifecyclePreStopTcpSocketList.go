@@ -116,7 +116,7 @@ func NewPodSpecInitContainerLifecyclePreStopTcpSocketList(terraformResource cdkt
 	j := jsiiProxy_PodSpecInitContainerLifecyclePreStopTcpSocketList{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecInitContainerLifecyclePreStopTcpSocketList",
+		"@cdktf/provider-kubernetes.pod.PodSpecInitContainerLifecyclePreStopTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodSpecInitContainerLifecyclePreStopTcpSocketList_Override(p PodSpecInit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecInitContainerLifecyclePreStopTcpSocketList",
+		"@cdktf/provider-kubernetes.pod.PodSpecInitContainerLifecyclePreStopTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

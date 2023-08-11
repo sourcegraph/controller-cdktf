@@ -228,7 +228,7 @@ func NewSwaAppTimeoutsOutputReference(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_SwaAppTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"okta.swaApp.SwaAppTimeoutsOutputReference",
+		"@cdktf/provider-okta.swaApp.SwaAppTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSwaAppTimeoutsOutputReference_Override(s SwaAppTimeoutsOutputReference, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.swaApp.SwaAppTimeoutsOutputReference",
+		"@cdktf/provider-okta.swaApp.SwaAppTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

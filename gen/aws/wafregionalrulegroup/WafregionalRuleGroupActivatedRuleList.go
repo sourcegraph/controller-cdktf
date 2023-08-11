@@ -116,7 +116,7 @@ func NewWafregionalRuleGroupActivatedRuleList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_WafregionalRuleGroupActivatedRuleList{}
 
 	_jsii_.Create(
-		"aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleList",
+		"@cdktf/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafregionalRuleGroupActivatedRuleList_Override(w WafregionalRuleGroupAct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleList",
+		"@cdktf/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

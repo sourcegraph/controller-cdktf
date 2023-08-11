@@ -252,7 +252,7 @@ func NewElastictranscoderPresetAudioCodecOptionsOutputReference(terraformResourc
 	j := jsiiProxy_ElastictranscoderPresetAudioCodecOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.elastictranscoderPreset.ElastictranscoderPresetAudioCodecOptionsOutputReference",
+		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetAudioCodecOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewElastictranscoderPresetAudioCodecOptionsOutputReference_Override(e Elast
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elastictranscoderPreset.ElastictranscoderPresetAudioCodecOptionsOutputReference",
+		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetAudioCodecOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

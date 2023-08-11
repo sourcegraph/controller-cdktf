@@ -180,7 +180,7 @@ func NewDataAwsEbsDefaultKmsKeyTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_DataAwsEbsDefaultKmsKeyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKeyTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKeyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsEbsDefaultKmsKeyTimeoutsOutputReference_Override(d DataAwsEbsDefa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKeyTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEbsDefaultKmsKey.DataAwsEbsDefaultKmsKeyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

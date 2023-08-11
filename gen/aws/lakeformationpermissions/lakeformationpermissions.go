@@ -558,7 +558,7 @@ func NewLakeformationPermissions(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_LakeformationPermissions{}
 
 	_jsii_.Create(
-		"aws.lakeformationPermissions.LakeformationPermissions",
+		"@cdktf/provider-aws.lakeformationPermissions.LakeformationPermissions",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -571,7 +571,7 @@ func NewLakeformationPermissions_Override(l LakeformationPermissions, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lakeformationPermissions.LakeformationPermissions",
+		"@cdktf/provider-aws.lakeformationPermissions.LakeformationPermissions",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -737,7 +737,7 @@ func LakeformationPermissions_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lakeformationPermissions.LakeformationPermissions",
+		"@cdktf/provider-aws.lakeformationPermissions.LakeformationPermissions",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -756,7 +756,7 @@ func LakeformationPermissions_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lakeformationPermissions.LakeformationPermissions",
+		"@cdktf/provider-aws.lakeformationPermissions.LakeformationPermissions",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -775,7 +775,7 @@ func LakeformationPermissions_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lakeformationPermissions.LakeformationPermissions",
+		"@cdktf/provider-aws.lakeformationPermissions.LakeformationPermissions",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -788,7 +788,7 @@ func LakeformationPermissions_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lakeformationPermissions.LakeformationPermissions",
+		"@cdktf/provider-aws.lakeformationPermissions.LakeformationPermissions",
 		"tfResourceType",
 		&returns,
 	)

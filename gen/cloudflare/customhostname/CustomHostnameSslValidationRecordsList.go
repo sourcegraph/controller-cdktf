@@ -104,7 +104,7 @@ func NewCustomHostnameSslValidationRecordsList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_CustomHostnameSslValidationRecordsList{}
 
 	_jsii_.Create(
-		"cloudflare.customHostname.CustomHostnameSslValidationRecordsList",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationRecordsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewCustomHostnameSslValidationRecordsList_Override(c CustomHostnameSslValid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.customHostname.CustomHostnameSslValidationRecordsList",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationRecordsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

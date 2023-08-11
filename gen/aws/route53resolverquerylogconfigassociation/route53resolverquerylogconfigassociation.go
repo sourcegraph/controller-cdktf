@@ -342,7 +342,7 @@ func NewRoute53ResolverQueryLogConfigAssociation(scope constructs.Construct, id 
 	j := jsiiProxy_Route53ResolverQueryLogConfigAssociation{}
 
 	_jsii_.Create(
-		"aws.route53ResolverQueryLogConfigAssociation.Route53ResolverQueryLogConfigAssociation",
+		"@cdktf/provider-aws.route53ResolverQueryLogConfigAssociation.Route53ResolverQueryLogConfigAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewRoute53ResolverQueryLogConfigAssociation_Override(r Route53ResolverQuery
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53ResolverQueryLogConfigAssociation.Route53ResolverQueryLogConfigAssociation",
+		"@cdktf/provider-aws.route53ResolverQueryLogConfigAssociation.Route53ResolverQueryLogConfigAssociation",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -488,7 +488,7 @@ func Route53ResolverQueryLogConfigAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverQueryLogConfigAssociation.Route53ResolverQueryLogConfigAssociation",
+		"@cdktf/provider-aws.route53ResolverQueryLogConfigAssociation.Route53ResolverQueryLogConfigAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func Route53ResolverQueryLogConfigAssociation_IsTerraformElement(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverQueryLogConfigAssociation.Route53ResolverQueryLogConfigAssociation",
+		"@cdktf/provider-aws.route53ResolverQueryLogConfigAssociation.Route53ResolverQueryLogConfigAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func Route53ResolverQueryLogConfigAssociation_IsTerraformResource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverQueryLogConfigAssociation.Route53ResolverQueryLogConfigAssociation",
+		"@cdktf/provider-aws.route53ResolverQueryLogConfigAssociation.Route53ResolverQueryLogConfigAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func Route53ResolverQueryLogConfigAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53ResolverQueryLogConfigAssociation.Route53ResolverQueryLogConfigAssociation",
+		"@cdktf/provider-aws.route53ResolverQueryLogConfigAssociation.Route53ResolverQueryLogConfigAssociation",
 		"tfResourceType",
 		&returns,
 	)

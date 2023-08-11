@@ -226,7 +226,7 @@ func NewGoogleApiGatewayGatewayIamBindingConditionOutputReference(terraformResou
 	j := jsiiProxy_GoogleApiGatewayGatewayIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleApiGatewayGatewayIamBindingConditionOutputReference_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

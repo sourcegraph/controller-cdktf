@@ -116,7 +116,7 @@ func NewJobV1SpecTemplateSpecTopologySpreadConstraintList(terraformResource cdkt
 	j := jsiiProxy_JobV1SpecTemplateSpecTopologySpreadConstraintList{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecTopologySpreadConstraintList",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecTopologySpreadConstraintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewJobV1SpecTemplateSpecTopologySpreadConstraintList_Override(j JobV1SpecTe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecTopologySpreadConstraintList",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecTopologySpreadConstraintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)

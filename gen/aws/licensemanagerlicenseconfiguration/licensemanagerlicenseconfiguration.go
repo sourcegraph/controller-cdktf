@@ -508,7 +508,7 @@ func NewLicensemanagerLicenseConfiguration(scope constructs.Construct, id *strin
 	j := jsiiProxy_LicensemanagerLicenseConfiguration{}
 
 	_jsii_.Create(
-		"aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration",
+		"@cdktf/provider-aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -521,7 +521,7 @@ func NewLicensemanagerLicenseConfiguration_Override(l LicensemanagerLicenseConfi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration",
+		"@cdktf/provider-aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -720,7 +720,7 @@ func LicensemanagerLicenseConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration",
+		"@cdktf/provider-aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -739,7 +739,7 @@ func LicensemanagerLicenseConfiguration_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration",
+		"@cdktf/provider-aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -758,7 +758,7 @@ func LicensemanagerLicenseConfiguration_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration",
+		"@cdktf/provider-aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -771,7 +771,7 @@ func LicensemanagerLicenseConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration",
+		"@cdktf/provider-aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration",
 		"tfResourceType",
 		&returns,
 	)

@@ -203,7 +203,7 @@ func NewLexIntentRejectionStatementOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_LexIntentRejectionStatementOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentRejectionStatementOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewLexIntentRejectionStatementOutputReference_Override(l LexIntentRejection
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentRejectionStatementOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

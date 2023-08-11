@@ -228,7 +228,7 @@ func NewComputeRegionBackendServiceConsistentHashOutputReference(terraformResour
 	j := jsiiProxy_ComputeRegionBackendServiceConsistentHashOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionBackendService.ComputeRegionBackendServiceConsistentHashOutputReference",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConsistentHashOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeRegionBackendServiceConsistentHashOutputReference_Override(c Comp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionBackendService.ComputeRegionBackendServiceConsistentHashOutputReference",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConsistentHashOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

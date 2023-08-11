@@ -178,7 +178,7 @@ func NewDataAwsKendraFaqS3PathOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataAwsKendraFaqS3PathOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsKendraFaq.DataAwsKendraFaqS3PathOutputReference",
+		"@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqS3PathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsKendraFaqS3PathOutputReference_Override(d DataAwsKendraFaqS3PathO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKendraFaq.DataAwsKendraFaqS3PathOutputReference",
+		"@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqS3PathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

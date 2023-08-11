@@ -365,7 +365,7 @@ func NewSsoadminPermissionsBoundaryAttachment(scope constructs.Construct, id *st
 	j := jsiiProxy_SsoadminPermissionsBoundaryAttachment{}
 
 	_jsii_.Create(
-		"aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachment",
+		"@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewSsoadminPermissionsBoundaryAttachment_Override(s SsoadminPermissionsBoun
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachment",
+		"@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachment",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -511,7 +511,7 @@ func SsoadminPermissionsBoundaryAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachment",
+		"@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -530,7 +530,7 @@ func SsoadminPermissionsBoundaryAttachment_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachment",
+		"@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -549,7 +549,7 @@ func SsoadminPermissionsBoundaryAttachment_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachment",
+		"@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func SsoadminPermissionsBoundaryAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachment",
+		"@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachment",
 		"tfResourceType",
 		&returns,
 	)

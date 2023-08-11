@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sagemakerCodeRepository.SagemakerCodeRepository",
+		"@cdktf/provider-aws.sagemakerCodeRepository.SagemakerCodeRepository",
 		reflect.TypeOf((*SagemakerCodeRepository)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerCodeRepository.SagemakerCodeRepositoryConfig",
+		"@cdktf/provider-aws.sagemakerCodeRepository.SagemakerCodeRepositoryConfig",
 		reflect.TypeOf((*SagemakerCodeRepositoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerCodeRepository.SagemakerCodeRepositoryGitConfig",
+		"@cdktf/provider-aws.sagemakerCodeRepository.SagemakerCodeRepositoryGitConfig",
 		reflect.TypeOf((*SagemakerCodeRepositoryGitConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerCodeRepository.SagemakerCodeRepositoryGitConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerCodeRepository.SagemakerCodeRepositoryGitConfigOutputReference",
 		reflect.TypeOf((*SagemakerCodeRepositoryGitConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},

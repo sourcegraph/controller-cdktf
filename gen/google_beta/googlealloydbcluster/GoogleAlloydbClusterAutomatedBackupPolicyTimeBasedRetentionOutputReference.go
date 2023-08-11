@@ -180,7 +180,7 @@ func NewGoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputReferen
 	j := jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputReference",
+		"@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputReference",
+		"@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

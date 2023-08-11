@@ -459,7 +459,7 @@ func NewDmsReplicationSubnetGroup(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DmsReplicationSubnetGroup{}
 
 	_jsii_.Create(
-		"aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroup",
+		"@cdktf/provider-aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewDmsReplicationSubnetGroup_Override(d DmsReplicationSubnetGroup, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroup",
+		"@cdktf/provider-aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -638,7 +638,7 @@ func DmsReplicationSubnetGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroup",
+		"@cdktf/provider-aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func DmsReplicationSubnetGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroup",
+		"@cdktf/provider-aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func DmsReplicationSubnetGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroup",
+		"@cdktf/provider-aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func DmsReplicationSubnetGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroup",
+		"@cdktf/provider-aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroup",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewIdentitystoreUserExternalIdsList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_IdentitystoreUserExternalIdsList{}
 
 	_jsii_.Create(
-		"aws.identitystoreUser.IdentitystoreUserExternalIdsList",
+		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserExternalIdsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewIdentitystoreUserExternalIdsList_Override(i IdentitystoreUserExternalIds
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.identitystoreUser.IdentitystoreUserExternalIdsList",
+		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserExternalIdsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

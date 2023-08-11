@@ -348,7 +348,7 @@ func NewBillingBudgetBudgetFilterOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_BillingBudgetBudgetFilterOutputReference{}
 
 	_jsii_.Create(
-		"google.billingBudget.BillingBudgetBudgetFilterOutputReference",
+		"@cdktf/provider-google.billingBudget.BillingBudgetBudgetFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewBillingBudgetBudgetFilterOutputReference_Override(b BillingBudgetBudgetF
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.billingBudget.BillingBudgetBudgetFilterOutputReference",
+		"@cdktf/provider-google.billingBudget.BillingBudgetBudgetFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

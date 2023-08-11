@@ -542,7 +542,7 @@ func NewKmsReplicaKey(scope constructs.Construct, id *string, config *KmsReplica
 	j := jsiiProxy_KmsReplicaKey{}
 
 	_jsii_.Create(
-		"aws.kmsReplicaKey.KmsReplicaKey",
+		"@cdktf/provider-aws.kmsReplicaKey.KmsReplicaKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -555,7 +555,7 @@ func NewKmsReplicaKey_Override(k KmsReplicaKey, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kmsReplicaKey.KmsReplicaKey",
+		"@cdktf/provider-aws.kmsReplicaKey.KmsReplicaKey",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -754,7 +754,7 @@ func KmsReplicaKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kmsReplicaKey.KmsReplicaKey",
+		"@cdktf/provider-aws.kmsReplicaKey.KmsReplicaKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -773,7 +773,7 @@ func KmsReplicaKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kmsReplicaKey.KmsReplicaKey",
+		"@cdktf/provider-aws.kmsReplicaKey.KmsReplicaKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -792,7 +792,7 @@ func KmsReplicaKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kmsReplicaKey.KmsReplicaKey",
+		"@cdktf/provider-aws.kmsReplicaKey.KmsReplicaKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -805,7 +805,7 @@ func KmsReplicaKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.kmsReplicaKey.KmsReplicaKey",
+		"@cdktf/provider-aws.kmsReplicaKey.KmsReplicaKey",
 		"tfResourceType",
 		&returns,
 	)

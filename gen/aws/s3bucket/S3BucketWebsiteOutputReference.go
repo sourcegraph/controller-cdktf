@@ -252,7 +252,7 @@ func NewS3BucketWebsiteOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_S3BucketWebsiteOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketWebsiteOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketWebsiteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewS3BucketWebsiteOutputReference_Override(s S3BucketWebsiteOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketWebsiteOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketWebsiteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

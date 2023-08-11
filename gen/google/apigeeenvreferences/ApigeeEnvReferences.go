@@ -436,7 +436,7 @@ func NewApigeeEnvReferences(scope constructs.Construct, id *string, config *Apig
 	j := jsiiProxy_ApigeeEnvReferences{}
 
 	_jsii_.Create(
-		"google.apigeeEnvReferences.ApigeeEnvReferences",
+		"@cdktf/provider-google.apigeeEnvReferences.ApigeeEnvReferences",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -449,7 +449,7 @@ func NewApigeeEnvReferences_Override(a ApigeeEnvReferences, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeEnvReferences.ApigeeEnvReferences",
+		"@cdktf/provider-google.apigeeEnvReferences.ApigeeEnvReferences",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -615,7 +615,7 @@ func ApigeeEnvReferences_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeEnvReferences.ApigeeEnvReferences",
+		"@cdktf/provider-google.apigeeEnvReferences.ApigeeEnvReferences",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func ApigeeEnvReferences_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeEnvReferences.ApigeeEnvReferences",
+		"@cdktf/provider-google.apigeeEnvReferences.ApigeeEnvReferences",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func ApigeeEnvReferences_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeEnvReferences.ApigeeEnvReferences",
+		"@cdktf/provider-google.apigeeEnvReferences.ApigeeEnvReferences",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func ApigeeEnvReferences_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.apigeeEnvReferences.ApigeeEnvReferences",
+		"@cdktf/provider-google.apigeeEnvReferences.ApigeeEnvReferences",
 		"tfResourceType",
 		&returns,
 	)

@@ -215,7 +215,7 @@ func NewApigeeEnvironmentNodeConfigOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_ApigeeEnvironmentNodeConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.apigeeEnvironment.ApigeeEnvironmentNodeConfigOutputReference",
+		"@cdktf/provider-google.apigeeEnvironment.ApigeeEnvironmentNodeConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -227,7 +227,7 @@ func NewApigeeEnvironmentNodeConfigOutputReference_Override(a ApigeeEnvironmentN
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeEnvironment.ApigeeEnvironmentNodeConfigOutputReference",
+		"@cdktf/provider-google.apigeeEnvironment.ApigeeEnvironmentNodeConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -179,7 +179,7 @@ func NewIdentityPlatformProjectDefaultConfigSignInAnonymousOutputReference(terra
 	j := jsiiProxy_IdentityPlatformProjectDefaultConfigSignInAnonymousOutputReference{}
 
 	_jsii_.Create(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInAnonymousOutputReference",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInAnonymousOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewIdentityPlatformProjectDefaultConfigSignInAnonymousOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInAnonymousOutputReference",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInAnonymousOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

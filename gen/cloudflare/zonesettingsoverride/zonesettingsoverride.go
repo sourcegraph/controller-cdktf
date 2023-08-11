@@ -398,7 +398,7 @@ func NewZoneSettingsOverride(scope constructs.Construct, id *string, config *Zon
 	j := jsiiProxy_ZoneSettingsOverride{}
 
 	_jsii_.Create(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -411,7 +411,7 @@ func NewZoneSettingsOverride_Override(z ZoneSettingsOverride, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
 		[]interface{}{scope, id, config},
 		z,
 	)
@@ -533,7 +533,7 @@ func ZoneSettingsOverride_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -552,7 +552,7 @@ func ZoneSettingsOverride_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -571,7 +571,7 @@ func ZoneSettingsOverride_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func ZoneSettingsOverride_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
 		"tfResourceType",
 		&returns,
 	)

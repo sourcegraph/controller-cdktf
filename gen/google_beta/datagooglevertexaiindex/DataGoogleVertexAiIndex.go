@@ -459,7 +459,7 @@ func NewDataGoogleVertexAiIndex(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataGoogleVertexAiIndex{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndex",
+		"@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndex",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewDataGoogleVertexAiIndex_Override(d DataGoogleVertexAiIndex, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndex",
+		"@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndex",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -594,7 +594,7 @@ func DataGoogleVertexAiIndex_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndex",
+		"@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndex",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -613,7 +613,7 @@ func DataGoogleVertexAiIndex_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndex",
+		"@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndex",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func DataGoogleVertexAiIndex_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndex",
+		"@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndex",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func DataGoogleVertexAiIndex_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndex",
+		"@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndex",
 		"tfResourceType",
 		&returns,
 	)

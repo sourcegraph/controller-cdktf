@@ -116,7 +116,7 @@ func NewDataAwsRegionsFilterList(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_DataAwsRegionsFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsRegions.DataAwsRegionsFilterList",
+		"@cdktf/provider-aws.dataAwsRegions.DataAwsRegionsFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsRegionsFilterList_Override(d DataAwsRegionsFilterList, terraformR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRegions.DataAwsRegionsFilterList",
+		"@cdktf/provider-aws.dataAwsRegions.DataAwsRegionsFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

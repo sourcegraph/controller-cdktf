@@ -178,7 +178,7 @@ func NewDataAwsMqBrokerEncryptionOptionsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_DataAwsMqBrokerEncryptionOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsMqBroker.DataAwsMqBrokerEncryptionOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsMqBroker.DataAwsMqBrokerEncryptionOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsMqBrokerEncryptionOptionsOutputReference_Override(d DataAwsMqBrok
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMqBroker.DataAwsMqBrokerEncryptionOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsMqBroker.DataAwsMqBrokerEncryptionOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

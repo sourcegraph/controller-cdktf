@@ -352,7 +352,7 @@ func NewRoute53RecoverycontrolconfigCluster(scope constructs.Construct, id *stri
 	j := jsiiProxy_Route53RecoverycontrolconfigCluster{}
 
 	_jsii_.Create(
-		"aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -365,7 +365,7 @@ func NewRoute53RecoverycontrolconfigCluster_Override(r Route53Recoverycontrolcon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -487,7 +487,7 @@ func Route53RecoverycontrolconfigCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -506,7 +506,7 @@ func Route53RecoverycontrolconfigCluster_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -525,7 +525,7 @@ func Route53RecoverycontrolconfigCluster_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -538,7 +538,7 @@ func Route53RecoverycontrolconfigCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster",
 		"tfResourceType",
 		&returns,
 	)

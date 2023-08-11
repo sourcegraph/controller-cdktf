@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleApiGatewayGateway.GoogleApiGatewayGateway",
+		"@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGateway",
 		reflect.TypeOf((*GoogleApiGatewayGateway)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayConfig",
+		"@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayConfig",
 		reflect.TypeOf((*GoogleApiGatewayGatewayConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayTimeouts",
+		"@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayTimeouts",
 		reflect.TypeOf((*GoogleApiGatewayGatewayTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleApiGatewayGatewayTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

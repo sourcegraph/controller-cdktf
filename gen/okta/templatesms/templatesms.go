@@ -366,7 +366,7 @@ func NewTemplateSms(scope constructs.Construct, id *string, config *TemplateSmsC
 	j := jsiiProxy_TemplateSms{}
 
 	_jsii_.Create(
-		"okta.templateSms.TemplateSms",
+		"@cdktf/provider-okta.templateSms.TemplateSms",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewTemplateSms_Override(t TemplateSms, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.templateSms.TemplateSms",
+		"@cdktf/provider-okta.templateSms.TemplateSms",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -512,7 +512,7 @@ func TemplateSms_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.templateSms.TemplateSms",
+		"@cdktf/provider-okta.templateSms.TemplateSms",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func TemplateSms_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.templateSms.TemplateSms",
+		"@cdktf/provider-okta.templateSms.TemplateSms",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func TemplateSms_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.templateSms.TemplateSms",
+		"@cdktf/provider-okta.templateSms.TemplateSms",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func TemplateSms_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.templateSms.TemplateSms",
+		"@cdktf/provider-okta.templateSms.TemplateSms",
 		"tfResourceType",
 		&returns,
 	)

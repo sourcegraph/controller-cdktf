@@ -369,7 +369,7 @@ func NewDataGoogleFirebaseHostingChannel(scope constructs.Construct, id *string,
 	j := jsiiProxy_DataGoogleFirebaseHostingChannel{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannel",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -382,7 +382,7 @@ func NewDataGoogleFirebaseHostingChannel_Override(d DataGoogleFirebaseHostingCha
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannel",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannel",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -493,7 +493,7 @@ func DataGoogleFirebaseHostingChannel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannel",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataGoogleFirebaseHostingChannel_IsTerraformDataSource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannel",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannel",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func DataGoogleFirebaseHostingChannel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannel",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -544,7 +544,7 @@ func DataGoogleFirebaseHostingChannel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannel",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannel",
 		"tfResourceType",
 		&returns,
 	)

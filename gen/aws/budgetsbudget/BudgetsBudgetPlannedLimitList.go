@@ -116,7 +116,7 @@ func NewBudgetsBudgetPlannedLimitList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_BudgetsBudgetPlannedLimitList{}
 
 	_jsii_.Create(
-		"aws.budgetsBudget.BudgetsBudgetPlannedLimitList",
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimitList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewBudgetsBudgetPlannedLimitList_Override(b BudgetsBudgetPlannedLimitList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.budgetsBudget.BudgetsBudgetPlannedLimitList",
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimitList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)

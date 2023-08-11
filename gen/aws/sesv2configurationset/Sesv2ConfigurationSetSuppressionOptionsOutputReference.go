@@ -180,7 +180,7 @@ func NewSesv2ConfigurationSetSuppressionOptionsOutputReference(terraformResource
 	j := jsiiProxy_Sesv2ConfigurationSetSuppressionOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSuppressionOptionsOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSuppressionOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewSesv2ConfigurationSetSuppressionOptionsOutputReference_Override(s Sesv2C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSuppressionOptionsOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSuppressionOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

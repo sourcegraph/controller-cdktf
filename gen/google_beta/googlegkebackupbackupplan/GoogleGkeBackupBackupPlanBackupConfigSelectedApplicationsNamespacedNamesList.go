@@ -116,7 +116,7 @@ func NewGoogleGkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNames
 	j := jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesList{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesList",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleGkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNames
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesList",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

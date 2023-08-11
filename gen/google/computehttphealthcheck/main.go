@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeHttpHealthCheck.ComputeHttpHealthCheck",
+		"@cdktf/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck",
 		reflect.TypeOf((*ComputeHttpHealthCheck)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,15 +90,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig",
+		"@cdktf/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig",
 		reflect.TypeOf((*ComputeHttpHealthCheckConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeHttpHealthCheck.ComputeHttpHealthCheckTimeouts",
+		"@cdktf/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckTimeouts",
 		reflect.TypeOf((*ComputeHttpHealthCheckTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeHttpHealthCheck.ComputeHttpHealthCheckTimeoutsOutputReference",
+		"@cdktf/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeHttpHealthCheckTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

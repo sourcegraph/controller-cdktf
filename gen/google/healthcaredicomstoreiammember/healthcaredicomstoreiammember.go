@@ -400,7 +400,7 @@ func NewHealthcareDicomStoreIamMember(scope constructs.Construct, id *string, co
 	j := jsiiProxy_HealthcareDicomStoreIamMember{}
 
 	_jsii_.Create(
-		"google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember",
+		"@cdktf/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewHealthcareDicomStoreIamMember_Override(h HealthcareDicomStoreIamMember, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember",
+		"@cdktf/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember",
 		[]interface{}{scope, id, config},
 		h,
 	)
@@ -557,7 +557,7 @@ func HealthcareDicomStoreIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember",
+		"@cdktf/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func HealthcareDicomStoreIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember",
+		"@cdktf/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func HealthcareDicomStoreIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember",
+		"@cdktf/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func HealthcareDicomStoreIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember",
+		"@cdktf/provider-google.healthcareDicomStoreIamMember.HealthcareDicomStoreIamMember",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewPrivatecaCertificateTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_PrivatecaCertificateTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.privatecaCertificate.PrivatecaCertificateTimeoutsOutputReference",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificateTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewPrivatecaCertificateTimeoutsOutputReference_Override(p PrivatecaCertific
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCertificate.PrivatecaCertificateTimeoutsOutputReference",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificateTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

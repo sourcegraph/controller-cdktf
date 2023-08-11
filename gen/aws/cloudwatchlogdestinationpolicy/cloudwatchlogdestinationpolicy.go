@@ -366,7 +366,7 @@ func NewCloudwatchLogDestinationPolicy(scope constructs.Construct, id *string, c
 	j := jsiiProxy_CloudwatchLogDestinationPolicy{}
 
 	_jsii_.Create(
-		"aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicy",
+		"@cdktf/provider-aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewCloudwatchLogDestinationPolicy_Override(c CloudwatchLogDestinationPolicy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicy",
+		"@cdktf/provider-aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -523,7 +523,7 @@ func CloudwatchLogDestinationPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicy",
+		"@cdktf/provider-aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func CloudwatchLogDestinationPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicy",
+		"@cdktf/provider-aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func CloudwatchLogDestinationPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicy",
+		"@cdktf/provider-aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func CloudwatchLogDestinationPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicy",
+		"@cdktf/provider-aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicy",
 		"tfResourceType",
 		&returns,
 	)

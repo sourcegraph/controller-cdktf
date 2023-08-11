@@ -226,7 +226,7 @@ func NewGoogleCloudiotDeviceGatewayConfigOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleCloudiotDeviceGatewayConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceGatewayConfigOutputReference",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceGatewayConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleCloudiotDeviceGatewayConfigOutputReference_Override(g GoogleCloudi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceGatewayConfigOutputReference",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceGatewayConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

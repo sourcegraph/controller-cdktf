@@ -486,7 +486,7 @@ func NewNetworkZone(scope constructs.Construct, id *string, config *NetworkZoneC
 	j := jsiiProxy_NetworkZone{}
 
 	_jsii_.Create(
-		"okta.networkZone.NetworkZone",
+		"@cdktf/provider-okta.networkZone.NetworkZone",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -499,7 +499,7 @@ func NewNetworkZone_Override(n NetworkZone, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.networkZone.NetworkZone",
+		"@cdktf/provider-okta.networkZone.NetworkZone",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -698,7 +698,7 @@ func NetworkZone_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.networkZone.NetworkZone",
+		"@cdktf/provider-okta.networkZone.NetworkZone",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -717,7 +717,7 @@ func NetworkZone_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.networkZone.NetworkZone",
+		"@cdktf/provider-okta.networkZone.NetworkZone",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -736,7 +736,7 @@ func NetworkZone_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.networkZone.NetworkZone",
+		"@cdktf/provider-okta.networkZone.NetworkZone",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -749,7 +749,7 @@ func NetworkZone_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.networkZone.NetworkZone",
+		"@cdktf/provider-okta.networkZone.NetworkZone",
 		"tfResourceType",
 		&returns,
 	)

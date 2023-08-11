@@ -116,7 +116,7 @@ func NewDataAwsGlueScriptDagEdgeList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_DataAwsGlueScriptDagEdgeList{}
 
 	_jsii_.Create(
-		"aws.dataAwsGlueScript.DataAwsGlueScriptDagEdgeList",
+		"@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScriptDagEdgeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsGlueScriptDagEdgeList_Override(d DataAwsGlueScriptDagEdgeList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsGlueScript.DataAwsGlueScriptDagEdgeList",
+		"@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScriptDagEdgeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

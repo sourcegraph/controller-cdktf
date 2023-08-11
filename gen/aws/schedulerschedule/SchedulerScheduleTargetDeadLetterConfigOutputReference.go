@@ -180,7 +180,7 @@ func NewSchedulerScheduleTargetDeadLetterConfigOutputReference(terraformResource
 	j := jsiiProxy_SchedulerScheduleTargetDeadLetterConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewSchedulerScheduleTargetDeadLetterConfigOutputReference_Override(s Schedu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

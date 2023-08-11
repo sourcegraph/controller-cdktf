@@ -104,7 +104,7 @@ func NewLightsailLbCertificateDomainValidationRecordsList(terraformResource cdkt
 	j := jsiiProxy_LightsailLbCertificateDomainValidationRecordsList{}
 
 	_jsii_.Create(
-		"aws.lightsailLbCertificate.LightsailLbCertificateDomainValidationRecordsList",
+		"@cdktf/provider-aws.lightsailLbCertificate.LightsailLbCertificateDomainValidationRecordsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewLightsailLbCertificateDomainValidationRecordsList_Override(l LightsailLb
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailLbCertificate.LightsailLbCertificateDomainValidationRecordsList",
+		"@cdktf/provider-aws.lightsailLbCertificate.LightsailLbCertificateDomainValidationRecordsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

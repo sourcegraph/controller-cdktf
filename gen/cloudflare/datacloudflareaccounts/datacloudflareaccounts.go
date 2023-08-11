@@ -303,7 +303,7 @@ func NewDataCloudflareAccounts(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataCloudflareAccounts{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareAccounts.DataCloudflareAccounts",
+		"@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccounts",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -316,7 +316,7 @@ func NewDataCloudflareAccounts_Override(d DataCloudflareAccounts, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareAccounts.DataCloudflareAccounts",
+		"@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccounts",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -416,7 +416,7 @@ func DataCloudflareAccounts_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareAccounts.DataCloudflareAccounts",
+		"@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccounts",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -435,7 +435,7 @@ func DataCloudflareAccounts_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareAccounts.DataCloudflareAccounts",
+		"@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccounts",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -454,7 +454,7 @@ func DataCloudflareAccounts_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareAccounts.DataCloudflareAccounts",
+		"@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccounts",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -467,7 +467,7 @@ func DataCloudflareAccounts_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.dataCloudflareAccounts.DataCloudflareAccounts",
+		"@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccounts",
 		"tfResourceType",
 		&returns,
 	)

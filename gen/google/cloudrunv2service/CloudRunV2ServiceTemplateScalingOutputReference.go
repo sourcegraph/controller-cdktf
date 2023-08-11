@@ -204,7 +204,7 @@ func NewCloudRunV2ServiceTemplateScalingOutputReference(terraformResource cdktf.
 	j := jsiiProxy_CloudRunV2ServiceTemplateScalingOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Service.CloudRunV2ServiceTemplateScalingOutputReference",
+		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCloudRunV2ServiceTemplateScalingOutputReference_Override(c CloudRunV2Ser
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Service.CloudRunV2ServiceTemplateScalingOutputReference",
+		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

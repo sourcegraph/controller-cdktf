@@ -342,7 +342,7 @@ func NewCloudwatchLogResourcePolicy(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_CloudwatchLogResourcePolicy{}
 
 	_jsii_.Create(
-		"aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy",
+		"@cdktf/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewCloudwatchLogResourcePolicy_Override(c CloudwatchLogResourcePolicy, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy",
+		"@cdktf/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -488,7 +488,7 @@ func CloudwatchLogResourcePolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy",
+		"@cdktf/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func CloudwatchLogResourcePolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy",
+		"@cdktf/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func CloudwatchLogResourcePolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy",
+		"@cdktf/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func CloudwatchLogResourcePolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy",
+		"@cdktf/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy",
 		"tfResourceType",
 		&returns,
 	)

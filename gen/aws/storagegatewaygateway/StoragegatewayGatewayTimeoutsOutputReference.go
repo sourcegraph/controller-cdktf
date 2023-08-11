@@ -180,7 +180,7 @@ func NewStoragegatewayGatewayTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_StoragegatewayGatewayTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.storagegatewayGateway.StoragegatewayGatewayTimeoutsOutputReference",
+		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewStoragegatewayGatewayTimeoutsOutputReference_Override(s StoragegatewayGa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.storagegatewayGateway.StoragegatewayGatewayTimeoutsOutputReference",
+		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

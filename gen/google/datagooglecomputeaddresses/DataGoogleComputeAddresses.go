@@ -351,7 +351,7 @@ func NewDataGoogleComputeAddresses(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataGoogleComputeAddresses{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeAddresses.DataGoogleComputeAddresses",
+		"@cdktf/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddresses",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -364,7 +364,7 @@ func NewDataGoogleComputeAddresses_Override(d DataGoogleComputeAddresses, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeAddresses.DataGoogleComputeAddresses",
+		"@cdktf/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddresses",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -486,7 +486,7 @@ func DataGoogleComputeAddresses_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeAddresses.DataGoogleComputeAddresses",
+		"@cdktf/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddresses",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func DataGoogleComputeAddresses_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeAddresses.DataGoogleComputeAddresses",
+		"@cdktf/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddresses",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -524,7 +524,7 @@ func DataGoogleComputeAddresses_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeAddresses.DataGoogleComputeAddresses",
+		"@cdktf/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddresses",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func DataGoogleComputeAddresses_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleComputeAddresses.DataGoogleComputeAddresses",
+		"@cdktf/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddresses",
 		"tfResourceType",
 		&returns,
 	)

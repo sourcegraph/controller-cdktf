@@ -228,7 +228,7 @@ func NewGoogleComputeRouterTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleComputeRouterTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRouter.GoogleComputeRouterTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeRouterTimeoutsOutputReference_Override(g GoogleComputeRoute
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRouter.GoogleComputeRouterTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -116,7 +116,7 @@ func NewOpsworksHaproxyLayerEbsVolumeList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_OpsworksHaproxyLayerEbsVolumeList{}
 
 	_jsii_.Create(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolumeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOpsworksHaproxyLayerEbsVolumeList_Override(o OpsworksHaproxyLayerEbsVolu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolumeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

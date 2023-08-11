@@ -667,7 +667,7 @@ func NewFlowLog(scope constructs.Construct, id *string, config *FlowLogConfig) F
 	j := jsiiProxy_FlowLog{}
 
 	_jsii_.Create(
-		"aws.flowLog.FlowLog",
+		"@cdktf/provider-aws.flowLog.FlowLog",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -680,7 +680,7 @@ func NewFlowLog_Override(f FlowLog, scope constructs.Construct, id *string, conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.flowLog.FlowLog",
+		"@cdktf/provider-aws.flowLog.FlowLog",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -945,7 +945,7 @@ func FlowLog_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.flowLog.FlowLog",
+		"@cdktf/provider-aws.flowLog.FlowLog",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -964,7 +964,7 @@ func FlowLog_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.flowLog.FlowLog",
+		"@cdktf/provider-aws.flowLog.FlowLog",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -983,7 +983,7 @@ func FlowLog_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.flowLog.FlowLog",
+		"@cdktf/provider-aws.flowLog.FlowLog",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -996,7 +996,7 @@ func FlowLog_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.flowLog.FlowLog",
+		"@cdktf/provider-aws.flowLog.FlowLog",
 		"tfResourceType",
 		&returns,
 	)

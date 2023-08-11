@@ -204,7 +204,7 @@ func NewBigqueryJobQueryUserDefinedFunctionResourcesOutputReference(terraformRes
 	j := jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryJob.BigqueryJobQueryUserDefinedFunctionResourcesOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryUserDefinedFunctionResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewBigqueryJobQueryUserDefinedFunctionResourcesOutputReference_Override(b B
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryJob.BigqueryJobQueryUserDefinedFunctionResourcesOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryUserDefinedFunctionResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)

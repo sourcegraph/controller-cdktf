@@ -202,7 +202,7 @@ func NewAppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference(terraformR
 	j := jsiiProxy_AppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewAppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference_Override(a
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.batchJobDefinition.BatchJobDefinition",
+		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinition",
 		reflect.TypeOf((*BatchJobDefinition)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,19 +87,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.batchJobDefinition.BatchJobDefinitionConfig",
+		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionConfig",
 		reflect.TypeOf((*BatchJobDefinitionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.batchJobDefinition.BatchJobDefinitionRetryStrategy",
+		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategy",
 		reflect.TypeOf((*BatchJobDefinitionRetryStrategy)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.batchJobDefinition.BatchJobDefinitionRetryStrategyEvaluateOnExit",
+		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyEvaluateOnExit",
 		reflect.TypeOf((*BatchJobDefinitionRetryStrategyEvaluateOnExit)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.batchJobDefinition.BatchJobDefinitionRetryStrategyEvaluateOnExitList",
+		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyEvaluateOnExitList",
 		reflect.TypeOf((*BatchJobDefinitionRetryStrategyEvaluateOnExitList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -120,7 +120,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.batchJobDefinition.BatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference",
+		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference",
 		reflect.TypeOf((*BatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -163,7 +163,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.batchJobDefinition.BatchJobDefinitionRetryStrategyOutputReference",
+		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyOutputReference",
 		reflect.TypeOf((*BatchJobDefinitionRetryStrategyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attempts", GoGetter: "Attempts"},
@@ -202,11 +202,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.batchJobDefinition.BatchJobDefinitionTimeout",
+		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionTimeout",
 		reflect.TypeOf((*BatchJobDefinitionTimeout)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.batchJobDefinition.BatchJobDefinitionTimeoutOutputReference",
+		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionTimeoutOutputReference",
 		reflect.TypeOf((*BatchJobDefinitionTimeoutOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attemptDurationSeconds", GoGetter: "AttemptDurationSeconds"},

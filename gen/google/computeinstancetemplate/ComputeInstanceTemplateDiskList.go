@@ -116,7 +116,7 @@ func NewComputeInstanceTemplateDiskList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_ComputeInstanceTemplateDiskList{}
 
 	_jsii_.Create(
-		"google.computeInstanceTemplate.ComputeInstanceTemplateDiskList",
+		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeInstanceTemplateDiskList_Override(c ComputeInstanceTemplateDiskLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceTemplate.ComputeInstanceTemplateDiskList",
+		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

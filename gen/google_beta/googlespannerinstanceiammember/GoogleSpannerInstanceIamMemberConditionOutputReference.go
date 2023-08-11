@@ -226,7 +226,7 @@ func NewGoogleSpannerInstanceIamMemberConditionOutputReference(terraformResource
 	j := jsiiProxy_GoogleSpannerInstanceIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleSpannerInstanceIamMemberConditionOutputReference_Override(g Google
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

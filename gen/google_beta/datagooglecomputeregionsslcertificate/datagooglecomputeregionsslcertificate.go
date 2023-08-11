@@ -427,7 +427,7 @@ func NewDataGoogleComputeRegionSslCertificate(scope constructs.Construct, id *st
 	j := jsiiProxy_DataGoogleComputeRegionSslCertificate{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRegionSslCertificate.DataGoogleComputeRegionSslCertificate",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionSslCertificate.DataGoogleComputeRegionSslCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -440,7 +440,7 @@ func NewDataGoogleComputeRegionSslCertificate_Override(d DataGoogleComputeRegion
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRegionSslCertificate.DataGoogleComputeRegionSslCertificate",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionSslCertificate.DataGoogleComputeRegionSslCertificate",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -562,7 +562,7 @@ func DataGoogleComputeRegionSslCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeRegionSslCertificate.DataGoogleComputeRegionSslCertificate",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionSslCertificate.DataGoogleComputeRegionSslCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -581,7 +581,7 @@ func DataGoogleComputeRegionSslCertificate_IsTerraformDataSource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeRegionSslCertificate.DataGoogleComputeRegionSslCertificate",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionSslCertificate.DataGoogleComputeRegionSslCertificate",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -600,7 +600,7 @@ func DataGoogleComputeRegionSslCertificate_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeRegionSslCertificate.DataGoogleComputeRegionSslCertificate",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionSslCertificate.DataGoogleComputeRegionSslCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -613,7 +613,7 @@ func DataGoogleComputeRegionSslCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleComputeRegionSslCertificate.DataGoogleComputeRegionSslCertificate",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionSslCertificate.DataGoogleComputeRegionSslCertificate",
 		"tfResourceType",
 		&returns,
 	)

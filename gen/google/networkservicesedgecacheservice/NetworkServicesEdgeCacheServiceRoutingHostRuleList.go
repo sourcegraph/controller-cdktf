@@ -116,7 +116,7 @@ func NewNetworkServicesEdgeCacheServiceRoutingHostRuleList(terraformResource cdk
 	j := jsiiProxy_NetworkServicesEdgeCacheServiceRoutingHostRuleList{}
 
 	_jsii_.Create(
-		"google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheServiceRoutingHostRuleList",
+		"@cdktf/provider-google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheServiceRoutingHostRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewNetworkServicesEdgeCacheServiceRoutingHostRuleList_Override(n NetworkSer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheServiceRoutingHostRuleList",
+		"@cdktf/provider-google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheServiceRoutingHostRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

@@ -424,7 +424,7 @@ func NewGoogleSourcerepoRepositoryIamBinding(scope constructs.Construct, id *str
 	j := jsiiProxy_GoogleSourcerepoRepositoryIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleSourcerepoRepositoryIamBinding.GoogleSourcerepoRepositoryIamBinding",
+		"@cdktf/provider-google-beta.googleSourcerepoRepositoryIamBinding.GoogleSourcerepoRepositoryIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleSourcerepoRepositoryIamBinding_Override(g GoogleSourcerepoReposito
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSourcerepoRepositoryIamBinding.GoogleSourcerepoRepositoryIamBinding",
+		"@cdktf/provider-google-beta.googleSourcerepoRepositoryIamBinding.GoogleSourcerepoRepositoryIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleSourcerepoRepositoryIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSourcerepoRepositoryIamBinding.GoogleSourcerepoRepositoryIamBinding",
+		"@cdktf/provider-google-beta.googleSourcerepoRepositoryIamBinding.GoogleSourcerepoRepositoryIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleSourcerepoRepositoryIamBinding_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSourcerepoRepositoryIamBinding.GoogleSourcerepoRepositoryIamBinding",
+		"@cdktf/provider-google-beta.googleSourcerepoRepositoryIamBinding.GoogleSourcerepoRepositoryIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleSourcerepoRepositoryIamBinding_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSourcerepoRepositoryIamBinding.GoogleSourcerepoRepositoryIamBinding",
+		"@cdktf/provider-google-beta.googleSourcerepoRepositoryIamBinding.GoogleSourcerepoRepositoryIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleSourcerepoRepositoryIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleSourcerepoRepositoryIamBinding.GoogleSourcerepoRepositoryIamBinding",
+		"@cdktf/provider-google-beta.googleSourcerepoRepositoryIamBinding.GoogleSourcerepoRepositoryIamBinding",
 		"tfResourceType",
 		&returns,
 	)

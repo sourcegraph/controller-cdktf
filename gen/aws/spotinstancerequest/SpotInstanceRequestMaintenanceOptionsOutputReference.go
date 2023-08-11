@@ -180,7 +180,7 @@ func NewSpotInstanceRequestMaintenanceOptionsOutputReference(terraformResource c
 	j := jsiiProxy_SpotInstanceRequestMaintenanceOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestMaintenanceOptionsOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestMaintenanceOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewSpotInstanceRequestMaintenanceOptionsOutputReference_Override(s SpotInst
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestMaintenanceOptionsOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestMaintenanceOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -116,7 +116,7 @@ func NewApiGatewayUsagePlanApiStagesList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_ApiGatewayUsagePlanApiStagesList{}
 
 	_jsii_.Create(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesList",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewApiGatewayUsagePlanApiStagesList_Override(a ApiGatewayUsagePlanApiStages
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesList",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

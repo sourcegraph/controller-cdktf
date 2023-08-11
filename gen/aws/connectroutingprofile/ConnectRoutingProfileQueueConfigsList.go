@@ -116,7 +116,7 @@ func NewConnectRoutingProfileQueueConfigsList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_ConnectRoutingProfileQueueConfigsList{}
 
 	_jsii_.Create(
-		"aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsList",
+		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewConnectRoutingProfileQueueConfigsList_Override(c ConnectRoutingProfileQu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsList",
+		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

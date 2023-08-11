@@ -447,7 +447,7 @@ func NewGoogleSpannerDatabaseIamMember(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleSpannerDatabaseIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleSpannerDatabaseIamMember.GoogleSpannerDatabaseIamMember",
+		"@cdktf/provider-google-beta.googleSpannerDatabaseIamMember.GoogleSpannerDatabaseIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewGoogleSpannerDatabaseIamMember_Override(g GoogleSpannerDatabaseIamMember
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSpannerDatabaseIamMember.GoogleSpannerDatabaseIamMember",
+		"@cdktf/provider-google-beta.googleSpannerDatabaseIamMember.GoogleSpannerDatabaseIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -626,7 +626,7 @@ func GoogleSpannerDatabaseIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSpannerDatabaseIamMember.GoogleSpannerDatabaseIamMember",
+		"@cdktf/provider-google-beta.googleSpannerDatabaseIamMember.GoogleSpannerDatabaseIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func GoogleSpannerDatabaseIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSpannerDatabaseIamMember.GoogleSpannerDatabaseIamMember",
+		"@cdktf/provider-google-beta.googleSpannerDatabaseIamMember.GoogleSpannerDatabaseIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -664,7 +664,7 @@ func GoogleSpannerDatabaseIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSpannerDatabaseIamMember.GoogleSpannerDatabaseIamMember",
+		"@cdktf/provider-google-beta.googleSpannerDatabaseIamMember.GoogleSpannerDatabaseIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func GoogleSpannerDatabaseIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleSpannerDatabaseIamMember.GoogleSpannerDatabaseIamMember",
+		"@cdktf/provider-google-beta.googleSpannerDatabaseIamMember.GoogleSpannerDatabaseIamMember",
 		"tfResourceType",
 		&returns,
 	)

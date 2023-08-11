@@ -179,7 +179,7 @@ func NewQuicksightDataSourceParametersS3OutputReference(terraformResource cdktf.
 	j := jsiiProxy_QuicksightDataSourceParametersS3OutputReference{}
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersS3OutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewQuicksightDataSourceParametersS3OutputReference_Override(q QuicksightDat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersS3OutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)

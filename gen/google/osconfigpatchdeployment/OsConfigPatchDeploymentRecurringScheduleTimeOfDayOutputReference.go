@@ -252,7 +252,7 @@ func NewOsConfigPatchDeploymentRecurringScheduleTimeOfDayOutputReference(terrafo
 	j := jsiiProxy_OsConfigPatchDeploymentRecurringScheduleTimeOfDayOutputReference{}
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleTimeOfDayOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleTimeOfDayOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewOsConfigPatchDeploymentRecurringScheduleTimeOfDayOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleTimeOfDayOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleTimeOfDayOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

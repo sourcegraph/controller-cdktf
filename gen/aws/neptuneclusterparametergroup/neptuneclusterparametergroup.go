@@ -474,7 +474,7 @@ func NewNeptuneClusterParameterGroup(scope constructs.Construct, id *string, con
 	j := jsiiProxy_NeptuneClusterParameterGroup{}
 
 	_jsii_.Create(
-		"aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup",
+		"@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -487,7 +487,7 @@ func NewNeptuneClusterParameterGroup_Override(n NeptuneClusterParameterGroup, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup",
+		"@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -664,7 +664,7 @@ func NeptuneClusterParameterGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup",
+		"@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -683,7 +683,7 @@ func NeptuneClusterParameterGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup",
+		"@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func NeptuneClusterParameterGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup",
+		"@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func NeptuneClusterParameterGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup",
+		"@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup",
 		"tfResourceType",
 		&returns,
 	)

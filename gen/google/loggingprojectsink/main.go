@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.loggingProjectSink.LoggingProjectSink",
+		"@cdktf/provider-google.loggingProjectSink.LoggingProjectSink",
 		reflect.TypeOf((*LoggingProjectSink)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,11 +83,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingProjectSink.LoggingProjectSinkBigqueryOptions",
+		"@cdktf/provider-google.loggingProjectSink.LoggingProjectSinkBigqueryOptions",
 		reflect.TypeOf((*LoggingProjectSinkBigqueryOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.loggingProjectSink.LoggingProjectSinkBigqueryOptionsOutputReference",
+		"@cdktf/provider-google.loggingProjectSink.LoggingProjectSinkBigqueryOptionsOutputReference",
 		reflect.TypeOf((*LoggingProjectSinkBigqueryOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -121,15 +121,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingProjectSink.LoggingProjectSinkConfig",
+		"@cdktf/provider-google.loggingProjectSink.LoggingProjectSinkConfig",
 		reflect.TypeOf((*LoggingProjectSinkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingProjectSink.LoggingProjectSinkExclusions",
+		"@cdktf/provider-google.loggingProjectSink.LoggingProjectSinkExclusions",
 		reflect.TypeOf((*LoggingProjectSinkExclusions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.loggingProjectSink.LoggingProjectSinkExclusionsList",
+		"@cdktf/provider-google.loggingProjectSink.LoggingProjectSinkExclusionsList",
 		reflect.TypeOf((*LoggingProjectSinkExclusionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -150,7 +150,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.loggingProjectSink.LoggingProjectSinkExclusionsOutputReference",
+		"@cdktf/provider-google.loggingProjectSink.LoggingProjectSinkExclusionsOutputReference",
 		reflect.TypeOf((*LoggingProjectSinkExclusionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

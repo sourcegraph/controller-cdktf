@@ -202,7 +202,7 @@ func NewBudgetsBudgetActionDefinitionScpActionDefinitionOutputReference(terrafor
 	j := jsiiProxy_BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference",
+		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewBudgetsBudgetActionDefinitionScpActionDefinitionOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference",
+		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

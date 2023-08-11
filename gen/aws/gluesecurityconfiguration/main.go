@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.glueSecurityConfiguration.GlueSecurityConfiguration",
+		"@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfiguration",
 		reflect.TypeOf((*GlueSecurityConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,19 +60,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueSecurityConfiguration.GlueSecurityConfigurationConfig",
+		"@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationConfig",
 		reflect.TypeOf((*GlueSecurityConfigurationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfiguration",
+		"@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfiguration",
 		reflect.TypeOf((*GlueSecurityConfigurationEncryptionConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption",
+		"@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption",
 		reflect.TypeOf((*GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOutputReference",
+		"@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOutputReference",
 		reflect.TypeOf((*GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchEncryptionMode", GoGetter: "CloudwatchEncryptionMode"},
@@ -110,11 +110,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption",
+		"@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption",
 		reflect.TypeOf((*GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionOutputReference",
+		"@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionOutputReference",
 		reflect.TypeOf((*GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -152,7 +152,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationOutputReference",
+		"@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationOutputReference",
 		reflect.TypeOf((*GlueSecurityConfigurationEncryptionConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchEncryption", GoGetter: "CloudwatchEncryption"},
@@ -193,11 +193,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationS3Encryption",
+		"@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationS3Encryption",
 		reflect.TypeOf((*GlueSecurityConfigurationEncryptionConfigurationS3Encryption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference",
+		"@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference",
 		reflect.TypeOf((*GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -348,7 +348,7 @@ func NewDataAwsElasticacheSubnetGroup(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataAwsElasticacheSubnetGroup{}
 
 	_jsii_.Create(
-		"aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup",
+		"@cdktf/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -361,7 +361,7 @@ func NewDataAwsElasticacheSubnetGroup_Override(d DataAwsElasticacheSubnetGroup, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup",
+		"@cdktf/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -472,7 +472,7 @@ func DataAwsElasticacheSubnetGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup",
+		"@cdktf/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -491,7 +491,7 @@ func DataAwsElasticacheSubnetGroup_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup",
+		"@cdktf/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -510,7 +510,7 @@ func DataAwsElasticacheSubnetGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup",
+		"@cdktf/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +523,7 @@ func DataAwsElasticacheSubnetGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup",
+		"@cdktf/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup",
 		"tfResourceType",
 		&returns,
 	)

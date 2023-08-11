@@ -116,7 +116,7 @@ func NewLambdaEventSourceMappingSourceAccessConfigurationList(terraformResource 
 	j := jsiiProxy_LambdaEventSourceMappingSourceAccessConfigurationList{}
 
 	_jsii_.Create(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfigurationList",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLambdaEventSourceMappingSourceAccessConfigurationList_Override(l LambdaE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfigurationList",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

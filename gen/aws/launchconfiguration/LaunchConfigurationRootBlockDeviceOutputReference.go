@@ -300,7 +300,7 @@ func NewLaunchConfigurationRootBlockDeviceOutputReference(terraformResource cdkt
 	j := jsiiProxy_LaunchConfigurationRootBlockDeviceOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchConfiguration.LaunchConfigurationRootBlockDeviceOutputReference",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewLaunchConfigurationRootBlockDeviceOutputReference_Override(l LaunchConfi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchConfiguration.LaunchConfigurationRootBlockDeviceOutputReference",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

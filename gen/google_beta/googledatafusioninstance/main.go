@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstance",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstance",
 		reflect.TypeOf((*GoogleDataFusionInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accelerators", GoGetter: "Accelerators"},
@@ -128,11 +128,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstanceAccelerators",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstanceAccelerators",
 		reflect.TypeOf((*GoogleDataFusionInstanceAccelerators)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstanceAcceleratorsList",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstanceAcceleratorsList",
 		reflect.TypeOf((*GoogleDataFusionInstanceAcceleratorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -153,7 +153,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstanceAcceleratorsOutputReference",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstanceAcceleratorsOutputReference",
 		reflect.TypeOf((*GoogleDataFusionInstanceAcceleratorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorType", GoGetter: "AcceleratorType"},
@@ -189,15 +189,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstanceConfig",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstanceConfig",
 		reflect.TypeOf((*GoogleDataFusionInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstanceCryptoKeyConfig",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstanceCryptoKeyConfig",
 		reflect.TypeOf((*GoogleDataFusionInstanceCryptoKeyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstanceCryptoKeyConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstanceCryptoKeyConfigOutputReference",
 		reflect.TypeOf((*GoogleDataFusionInstanceCryptoKeyConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -231,11 +231,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstanceEventPublishConfig",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstanceEventPublishConfig",
 		reflect.TypeOf((*GoogleDataFusionInstanceEventPublishConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstanceEventPublishConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstanceEventPublishConfigOutputReference",
 		reflect.TypeOf((*GoogleDataFusionInstanceEventPublishConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -271,11 +271,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstanceNetworkConfig",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstanceNetworkConfig",
 		reflect.TypeOf((*GoogleDataFusionInstanceNetworkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstanceNetworkConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstanceNetworkConfigOutputReference",
 		reflect.TypeOf((*GoogleDataFusionInstanceNetworkConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -311,11 +311,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstanceTimeouts",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstanceTimeouts",
 		reflect.TypeOf((*GoogleDataFusionInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleDataFusionInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

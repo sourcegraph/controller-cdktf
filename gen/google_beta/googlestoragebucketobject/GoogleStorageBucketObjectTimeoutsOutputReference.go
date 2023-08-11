@@ -228,7 +228,7 @@ func NewGoogleStorageBucketObjectTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleStorageBucketObjectTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucketObject.GoogleStorageBucketObjectTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleStorageBucketObject.GoogleStorageBucketObjectTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleStorageBucketObjectTimeoutsOutputReference_Override(g GoogleStorag
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucketObject.GoogleStorageBucketObjectTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleStorageBucketObject.GoogleStorageBucketObjectTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

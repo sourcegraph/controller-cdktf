@@ -303,7 +303,7 @@ func NewDataAwsRedshiftServiceAccount(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataAwsRedshiftServiceAccount{}
 
 	_jsii_.Create(
-		"aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccount",
+		"@cdktf/provider-aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -316,7 +316,7 @@ func NewDataAwsRedshiftServiceAccount_Override(d DataAwsRedshiftServiceAccount, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccount",
+		"@cdktf/provider-aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccount",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -416,7 +416,7 @@ func DataAwsRedshiftServiceAccount_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccount",
+		"@cdktf/provider-aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -435,7 +435,7 @@ func DataAwsRedshiftServiceAccount_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccount",
+		"@cdktf/provider-aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccount",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -454,7 +454,7 @@ func DataAwsRedshiftServiceAccount_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccount",
+		"@cdktf/provider-aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -467,7 +467,7 @@ func DataAwsRedshiftServiceAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccount",
+		"@cdktf/provider-aws.dataAwsRedshiftServiceAccount.DataAwsRedshiftServiceAccount",
 		"tfResourceType",
 		&returns,
 	)

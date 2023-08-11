@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.alloydbInstance.AlloydbInstance",
+		"@cdktf/provider-google.alloydbInstance.AlloydbInstance",
 		reflect.TypeOf((*AlloydbInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -98,15 +98,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.alloydbInstance.AlloydbInstanceConfig",
+		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceConfig",
 		reflect.TypeOf((*AlloydbInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.alloydbInstance.AlloydbInstanceMachineConfig",
+		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceMachineConfig",
 		reflect.TypeOf((*AlloydbInstanceMachineConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.alloydbInstance.AlloydbInstanceMachineConfigOutputReference",
+		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceMachineConfigOutputReference",
 		reflect.TypeOf((*AlloydbInstanceMachineConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -141,11 +141,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.alloydbInstance.AlloydbInstanceReadPoolConfig",
+		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceReadPoolConfig",
 		reflect.TypeOf((*AlloydbInstanceReadPoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.alloydbInstance.AlloydbInstanceReadPoolConfigOutputReference",
+		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceReadPoolConfigOutputReference",
 		reflect.TypeOf((*AlloydbInstanceReadPoolConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -180,11 +180,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.alloydbInstance.AlloydbInstanceTimeouts",
+		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceTimeouts",
 		reflect.TypeOf((*AlloydbInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.alloydbInstance.AlloydbInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*AlloydbInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

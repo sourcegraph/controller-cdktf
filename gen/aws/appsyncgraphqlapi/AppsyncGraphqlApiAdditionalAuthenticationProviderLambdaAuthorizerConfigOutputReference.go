@@ -227,7 +227,7 @@ func NewAppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigO
 	j := jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference",
+		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewAppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference",
+		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

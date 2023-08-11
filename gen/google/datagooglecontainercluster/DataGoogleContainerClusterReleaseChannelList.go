@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterReleaseChannelList(terraformResource cdktf.IIn
 	j := jsiiProxy_DataGoogleContainerClusterReleaseChannelList{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterReleaseChannelList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterReleaseChannelList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterReleaseChannelList_Override(d DataGoogleContai
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterReleaseChannelList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterReleaseChannelList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

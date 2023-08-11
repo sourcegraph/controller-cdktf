@@ -204,7 +204,7 @@ func NewGlueCrawlerSchemaChangePolicyOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_GlueCrawlerSchemaChangePolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueCrawler.GlueCrawlerSchemaChangePolicyOutputReference",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGlueCrawlerSchemaChangePolicyOutputReference_Override(g GlueCrawlerSchem
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueCrawler.GlueCrawlerSchemaChangePolicyOutputReference",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

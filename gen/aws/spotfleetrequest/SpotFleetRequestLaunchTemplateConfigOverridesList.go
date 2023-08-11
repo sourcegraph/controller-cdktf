@@ -116,7 +116,7 @@ func NewSpotFleetRequestLaunchTemplateConfigOverridesList(terraformResource cdkt
 	j := jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesList{}
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesList",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSpotFleetRequestLaunchTemplateConfigOverridesList_Override(s SpotFleetRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesList",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

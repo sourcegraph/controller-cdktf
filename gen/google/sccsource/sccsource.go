@@ -401,7 +401,7 @@ func NewSccSource(scope constructs.Construct, id *string, config *SccSourceConfi
 	j := jsiiProxy_SccSource{}
 
 	_jsii_.Create(
-		"google.sccSource.SccSource",
+		"@cdktf/provider-google.sccSource.SccSource",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewSccSource_Override(s SccSource, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sccSource.SccSource",
+		"@cdktf/provider-google.sccSource.SccSource",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -558,7 +558,7 @@ func SccSource_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sccSource.SccSource",
+		"@cdktf/provider-google.sccSource.SccSource",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func SccSource_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sccSource.SccSource",
+		"@cdktf/provider-google.sccSource.SccSource",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func SccSource_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sccSource.SccSource",
+		"@cdktf/provider-google.sccSource.SccSource",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func SccSource_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.sccSource.SccSource",
+		"@cdktf/provider-google.sccSource.SccSource",
 		"tfResourceType",
 		&returns,
 	)

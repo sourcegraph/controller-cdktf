@@ -401,7 +401,7 @@ func NewGoogleNotebooksInstanceIamPolicy(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleNotebooksInstanceIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksInstanceIamPolicy.GoogleNotebooksInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleNotebooksInstanceIamPolicy.GoogleNotebooksInstanceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleNotebooksInstanceIamPolicy_Override(g GoogleNotebooksInstanceIamPo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksInstanceIamPolicy.GoogleNotebooksInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleNotebooksInstanceIamPolicy.GoogleNotebooksInstanceIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GoogleNotebooksInstanceIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNotebooksInstanceIamPolicy.GoogleNotebooksInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleNotebooksInstanceIamPolicy.GoogleNotebooksInstanceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GoogleNotebooksInstanceIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNotebooksInstanceIamPolicy.GoogleNotebooksInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleNotebooksInstanceIamPolicy.GoogleNotebooksInstanceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GoogleNotebooksInstanceIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNotebooksInstanceIamPolicy.GoogleNotebooksInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleNotebooksInstanceIamPolicy.GoogleNotebooksInstanceIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GoogleNotebooksInstanceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleNotebooksInstanceIamPolicy.GoogleNotebooksInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleNotebooksInstanceIamPolicy.GoogleNotebooksInstanceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

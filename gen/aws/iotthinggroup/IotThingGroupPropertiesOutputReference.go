@@ -204,7 +204,7 @@ func NewIotThingGroupPropertiesOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_IotThingGroupPropertiesOutputReference{}
 
 	_jsii_.Create(
-		"aws.iotThingGroup.IotThingGroupPropertiesOutputReference",
+		"@cdktf/provider-aws.iotThingGroup.IotThingGroupPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewIotThingGroupPropertiesOutputReference_Override(i IotThingGroupPropertie
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotThingGroup.IotThingGroupPropertiesOutputReference",
+		"@cdktf/provider-aws.iotThingGroup.IotThingGroupPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

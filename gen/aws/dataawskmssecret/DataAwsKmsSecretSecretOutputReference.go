@@ -250,7 +250,7 @@ func NewDataAwsKmsSecretSecretOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataAwsKmsSecretSecretOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsKmsSecret.DataAwsKmsSecretSecretOutputReference",
+		"@cdktf/provider-aws.dataAwsKmsSecret.DataAwsKmsSecretSecretOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewDataAwsKmsSecretSecretOutputReference_Override(d DataAwsKmsSecretSecretO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKmsSecret.DataAwsKmsSecretSecretOutputReference",
+		"@cdktf/provider-aws.dataAwsKmsSecret.DataAwsKmsSecretSecretOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

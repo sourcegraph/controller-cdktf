@@ -423,7 +423,7 @@ func NewSccSourceIamMember(scope constructs.Construct, id *string, config *SccSo
 	j := jsiiProxy_SccSourceIamMember{}
 
 	_jsii_.Create(
-		"google.sccSourceIamMember.SccSourceIamMember",
+		"@cdktf/provider-google.sccSourceIamMember.SccSourceIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewSccSourceIamMember_Override(s SccSourceIamMember, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sccSourceIamMember.SccSourceIamMember",
+		"@cdktf/provider-google.sccSourceIamMember.SccSourceIamMember",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -591,7 +591,7 @@ func SccSourceIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sccSourceIamMember.SccSourceIamMember",
+		"@cdktf/provider-google.sccSourceIamMember.SccSourceIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func SccSourceIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sccSourceIamMember.SccSourceIamMember",
+		"@cdktf/provider-google.sccSourceIamMember.SccSourceIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func SccSourceIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sccSourceIamMember.SccSourceIamMember",
+		"@cdktf/provider-google.sccSourceIamMember.SccSourceIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func SccSourceIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.sccSourceIamMember.SccSourceIamMember",
+		"@cdktf/provider-google.sccSourceIamMember.SccSourceIamMember",
 		"tfResourceType",
 		&returns,
 	)

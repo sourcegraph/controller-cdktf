@@ -529,7 +529,7 @@ func NewDatasyncLocationSmb(scope constructs.Construct, id *string, config *Data
 	j := jsiiProxy_DatasyncLocationSmb{}
 
 	_jsii_.Create(
-		"aws.datasyncLocationSmb.DatasyncLocationSmb",
+		"@cdktf/provider-aws.datasyncLocationSmb.DatasyncLocationSmb",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -542,7 +542,7 @@ func NewDatasyncLocationSmb_Override(d DatasyncLocationSmb, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datasyncLocationSmb.DatasyncLocationSmb",
+		"@cdktf/provider-aws.datasyncLocationSmb.DatasyncLocationSmb",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -741,7 +741,7 @@ func DatasyncLocationSmb_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datasyncLocationSmb.DatasyncLocationSmb",
+		"@cdktf/provider-aws.datasyncLocationSmb.DatasyncLocationSmb",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -760,7 +760,7 @@ func DatasyncLocationSmb_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datasyncLocationSmb.DatasyncLocationSmb",
+		"@cdktf/provider-aws.datasyncLocationSmb.DatasyncLocationSmb",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -779,7 +779,7 @@ func DatasyncLocationSmb_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datasyncLocationSmb.DatasyncLocationSmb",
+		"@cdktf/provider-aws.datasyncLocationSmb.DatasyncLocationSmb",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -792,7 +792,7 @@ func DatasyncLocationSmb_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.datasyncLocationSmb.DatasyncLocationSmb",
+		"@cdktf/provider-aws.datasyncLocationSmb.DatasyncLocationSmb",
 		"tfResourceType",
 		&returns,
 	)

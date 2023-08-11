@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.serviceDiscoveryService.ServiceDiscoveryService",
+		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryService",
 		reflect.TypeOf((*ServiceDiscoveryService)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,19 +88,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig",
+		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig",
 		reflect.TypeOf((*ServiceDiscoveryServiceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfig",
+		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfig",
 		reflect.TypeOf((*ServiceDiscoveryServiceDnsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigDnsRecords",
+		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigDnsRecords",
 		reflect.TypeOf((*ServiceDiscoveryServiceDnsConfigDnsRecords)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigDnsRecordsList",
+		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigDnsRecordsList",
 		reflect.TypeOf((*ServiceDiscoveryServiceDnsConfigDnsRecordsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -121,7 +121,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference",
+		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference",
 		reflect.TypeOf((*ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -157,7 +157,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigOutputReference",
+		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigOutputReference",
 		reflect.TypeOf((*ServiceDiscoveryServiceDnsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -197,11 +197,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckConfig",
+		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckConfig",
 		reflect.TypeOf((*ServiceDiscoveryServiceHealthCheckConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckConfigOutputReference",
+		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckConfigOutputReference",
 		reflect.TypeOf((*ServiceDiscoveryServiceHealthCheckConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -242,11 +242,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckCustomConfig",
+		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckCustomConfig",
 		reflect.TypeOf((*ServiceDiscoveryServiceHealthCheckCustomConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference",
+		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference",
 		reflect.TypeOf((*ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

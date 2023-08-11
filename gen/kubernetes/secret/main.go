@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"kubernetes.secret.Secret",
+		"@cdktf/provider-kubernetes.secret.Secret",
 		reflect.TypeOf((*Secret)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.secret.SecretConfig",
+		"@cdktf/provider-kubernetes.secret.SecretConfig",
 		reflect.TypeOf((*SecretConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.secret.SecretMetadata",
+		"@cdktf/provider-kubernetes.secret.SecretMetadata",
 		reflect.TypeOf((*SecretMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.secret.SecretMetadataOutputReference",
+		"@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference",
 		reflect.TypeOf((*SecretMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -135,11 +135,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.secret.SecretTimeouts",
+		"@cdktf/provider-kubernetes.secret.SecretTimeouts",
 		reflect.TypeOf((*SecretTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.secret.SecretTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference",
 		reflect.TypeOf((*SecretTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

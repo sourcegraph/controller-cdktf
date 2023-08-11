@@ -104,7 +104,7 @@ func NewApigeeKeystoresAliasesPkcs12CertsInfoList(terraformResource cdktf.IInter
 	j := jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoList{}
 
 	_jsii_.Create(
-		"google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12CertsInfoList",
+		"@cdktf/provider-google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12CertsInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewApigeeKeystoresAliasesPkcs12CertsInfoList_Override(a ApigeeKeystoresAlia
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12CertsInfoList",
+		"@cdktf/provider-google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12CertsInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

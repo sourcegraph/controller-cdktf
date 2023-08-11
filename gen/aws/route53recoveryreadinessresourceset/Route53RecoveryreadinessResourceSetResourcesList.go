@@ -116,7 +116,7 @@ func NewRoute53RecoveryreadinessResourceSetResourcesList(terraformResource cdktf
 	j := jsiiProxy_Route53RecoveryreadinessResourceSetResourcesList{}
 
 	_jsii_.Create(
-		"aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesList",
+		"@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRoute53RecoveryreadinessResourceSetResourcesList_Override(r Route53Recov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesList",
+		"@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

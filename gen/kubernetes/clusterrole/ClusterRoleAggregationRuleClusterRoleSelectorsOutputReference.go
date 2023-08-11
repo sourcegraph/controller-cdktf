@@ -204,7 +204,7 @@ func NewClusterRoleAggregationRuleClusterRoleSelectorsOutputReference(terraformR
 	j := jsiiProxy_ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference",
+		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewClusterRoleAggregationRuleClusterRoleSelectorsOutputReference_Override(c
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference",
+		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

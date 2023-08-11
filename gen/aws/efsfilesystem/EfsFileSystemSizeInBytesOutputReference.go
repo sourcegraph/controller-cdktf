@@ -189,7 +189,7 @@ func NewEfsFileSystemSizeInBytesOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_EfsFileSystemSizeInBytesOutputReference{}
 
 	_jsii_.Create(
-		"aws.efsFileSystem.EfsFileSystemSizeInBytesOutputReference",
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemSizeInBytesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewEfsFileSystemSizeInBytesOutputReference_Override(e EfsFileSystemSizeInBy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.efsFileSystem.EfsFileSystemSizeInBytesOutputReference",
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemSizeInBytesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

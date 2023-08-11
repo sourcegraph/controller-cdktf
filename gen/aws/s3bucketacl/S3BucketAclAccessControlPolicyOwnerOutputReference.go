@@ -203,7 +203,7 @@ func NewS3BucketAclAccessControlPolicyOwnerOutputReference(terraformResource cdk
 	j := jsiiProxy_S3BucketAclAccessControlPolicyOwnerOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketAcl.S3BucketAclAccessControlPolicyOwnerOutputReference",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyOwnerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewS3BucketAclAccessControlPolicyOwnerOutputReference_Override(s S3BucketAc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketAcl.S3BucketAclAccessControlPolicyOwnerOutputReference",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyOwnerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

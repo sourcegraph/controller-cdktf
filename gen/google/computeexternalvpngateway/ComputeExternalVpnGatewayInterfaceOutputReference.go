@@ -204,7 +204,7 @@ func NewComputeExternalVpnGatewayInterfaceOutputReference(terraformResource cdkt
 	j := jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference{}
 
 	_jsii_.Create(
-		"google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterfaceOutputReference",
+		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterfaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeExternalVpnGatewayInterfaceOutputReference_Override(c ComputeExte
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterfaceOutputReference",
+		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterfaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

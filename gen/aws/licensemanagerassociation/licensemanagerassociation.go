@@ -342,7 +342,7 @@ func NewLicensemanagerAssociation(scope constructs.Construct, id *string, config
 	j := jsiiProxy_LicensemanagerAssociation{}
 
 	_jsii_.Create(
-		"aws.licensemanagerAssociation.LicensemanagerAssociation",
+		"@cdktf/provider-aws.licensemanagerAssociation.LicensemanagerAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewLicensemanagerAssociation_Override(l LicensemanagerAssociation, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.licensemanagerAssociation.LicensemanagerAssociation",
+		"@cdktf/provider-aws.licensemanagerAssociation.LicensemanagerAssociation",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -488,7 +488,7 @@ func LicensemanagerAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.licensemanagerAssociation.LicensemanagerAssociation",
+		"@cdktf/provider-aws.licensemanagerAssociation.LicensemanagerAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func LicensemanagerAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.licensemanagerAssociation.LicensemanagerAssociation",
+		"@cdktf/provider-aws.licensemanagerAssociation.LicensemanagerAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func LicensemanagerAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.licensemanagerAssociation.LicensemanagerAssociation",
+		"@cdktf/provider-aws.licensemanagerAssociation.LicensemanagerAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func LicensemanagerAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.licensemanagerAssociation.LicensemanagerAssociation",
+		"@cdktf/provider-aws.licensemanagerAssociation.LicensemanagerAssociation",
 		"tfResourceType",
 		&returns,
 	)

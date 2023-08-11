@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.spannerDatabase.SpannerDatabase",
+		"@cdktf/provider-google.spannerDatabase.SpannerDatabase",
 		reflect.TypeOf((*SpannerDatabase)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,15 +83,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.spannerDatabase.SpannerDatabaseConfig",
+		"@cdktf/provider-google.spannerDatabase.SpannerDatabaseConfig",
 		reflect.TypeOf((*SpannerDatabaseConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.spannerDatabase.SpannerDatabaseEncryptionConfig",
+		"@cdktf/provider-google.spannerDatabase.SpannerDatabaseEncryptionConfig",
 		reflect.TypeOf((*SpannerDatabaseEncryptionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.spannerDatabase.SpannerDatabaseEncryptionConfigOutputReference",
+		"@cdktf/provider-google.spannerDatabase.SpannerDatabaseEncryptionConfigOutputReference",
 		reflect.TypeOf((*SpannerDatabaseEncryptionConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -125,11 +125,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.spannerDatabase.SpannerDatabaseTimeouts",
+		"@cdktf/provider-google.spannerDatabase.SpannerDatabaseTimeouts",
 		reflect.TypeOf((*SpannerDatabaseTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.spannerDatabase.SpannerDatabaseTimeoutsOutputReference",
+		"@cdktf/provider-google.spannerDatabase.SpannerDatabaseTimeoutsOutputReference",
 		reflect.TypeOf((*SpannerDatabaseTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

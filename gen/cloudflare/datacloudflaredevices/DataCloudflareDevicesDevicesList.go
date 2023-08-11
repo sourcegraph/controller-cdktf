@@ -104,7 +104,7 @@ func NewDataCloudflareDevicesDevicesList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_DataCloudflareDevicesDevicesList{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevicesList",
+		"@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevicesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataCloudflareDevicesDevicesList_Override(d DataCloudflareDevicesDevices
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevicesList",
+		"@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevicesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

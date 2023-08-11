@@ -252,7 +252,7 @@ func NewGoogleHealthcareHl7V2StoreParserConfigOutputReference(terraformResource 
 	j := jsiiProxy_GoogleHealthcareHl7V2StoreParserConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareHl7V2Store.GoogleHealthcareHl7V2StoreParserConfigOutputReference",
+		"@cdktf/provider-google-beta.googleHealthcareHl7V2Store.GoogleHealthcareHl7V2StoreParserConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGoogleHealthcareHl7V2StoreParserConfigOutputReference_Override(g GoogleH
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareHl7V2Store.GoogleHealthcareHl7V2StoreParserConfigOutputReference",
+		"@cdktf/provider-google-beta.googleHealthcareHl7V2Store.GoogleHealthcareHl7V2StoreParserConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

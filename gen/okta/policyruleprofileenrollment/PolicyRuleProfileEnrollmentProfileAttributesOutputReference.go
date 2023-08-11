@@ -226,7 +226,7 @@ func NewPolicyRuleProfileEnrollmentProfileAttributesOutputReference(terraformRes
 	j := jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesOutputReference{}
 
 	_jsii_.Create(
-		"okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributesOutputReference",
+		"@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewPolicyRuleProfileEnrollmentProfileAttributesOutputReference_Override(p P
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributesOutputReference",
+		"@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

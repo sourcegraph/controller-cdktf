@@ -446,7 +446,7 @@ func NewCodeartifactDomain(scope constructs.Construct, id *string, config *Codea
 	j := jsiiProxy_CodeartifactDomain{}
 
 	_jsii_.Create(
-		"aws.codeartifactDomain.CodeartifactDomain",
+		"@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -459,7 +459,7 @@ func NewCodeartifactDomain_Override(c CodeartifactDomain, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codeartifactDomain.CodeartifactDomain",
+		"@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -614,7 +614,7 @@ func CodeartifactDomain_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codeartifactDomain.CodeartifactDomain",
+		"@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func CodeartifactDomain_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codeartifactDomain.CodeartifactDomain",
+		"@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -652,7 +652,7 @@ func CodeartifactDomain_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codeartifactDomain.CodeartifactDomain",
+		"@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func CodeartifactDomain_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.codeartifactDomain.CodeartifactDomain",
+		"@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain",
 		"tfResourceType",
 		&returns,
 	)

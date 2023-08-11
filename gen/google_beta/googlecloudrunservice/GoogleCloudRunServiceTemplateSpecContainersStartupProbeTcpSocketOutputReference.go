@@ -180,7 +180,7 @@ func NewGoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputRe
 	j := jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

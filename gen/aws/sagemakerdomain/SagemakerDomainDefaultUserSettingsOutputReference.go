@@ -347,7 +347,7 @@ func NewSagemakerDomainDefaultUserSettingsOutputReference(terraformResource cdkt
 	j := jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -359,7 +359,7 @@ func NewSagemakerDomainDefaultUserSettingsOutputReference_Override(s SagemakerDo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

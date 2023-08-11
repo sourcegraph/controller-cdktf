@@ -116,7 +116,7 @@ func NewWafv2RuleGroupCustomResponseBodyList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_Wafv2RuleGroupCustomResponseBodyList{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBodyList",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBodyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafv2RuleGroupCustomResponseBodyList_Override(w Wafv2RuleGroupCustomResp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBodyList",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBodyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

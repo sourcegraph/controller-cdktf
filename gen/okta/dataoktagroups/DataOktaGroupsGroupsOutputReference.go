@@ -211,7 +211,7 @@ func NewDataOktaGroupsGroupsOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataOktaGroupsGroupsOutputReference{}
 
 	_jsii_.Create(
-		"okta.dataOktaGroups.DataOktaGroupsGroupsOutputReference",
+		"@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsGroupsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataOktaGroupsGroupsOutputReference_Override(d DataOktaGroupsGroupsOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaGroups.DataOktaGroupsGroupsOutputReference",
+		"@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsGroupsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

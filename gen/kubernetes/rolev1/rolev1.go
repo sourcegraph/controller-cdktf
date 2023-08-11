@@ -342,7 +342,7 @@ func NewRoleV1(scope constructs.Construct, id *string, config *RoleV1Config) Rol
 	j := jsiiProxy_RoleV1{}
 
 	_jsii_.Create(
-		"kubernetes.roleV1.RoleV1",
+		"@cdktf/provider-kubernetes.roleV1.RoleV1",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewRoleV1_Override(r RoleV1, scope constructs.Construct, id *string, config
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.roleV1.RoleV1",
+		"@cdktf/provider-kubernetes.roleV1.RoleV1",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -466,7 +466,7 @@ func RoleV1_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.roleV1.RoleV1",
+		"@cdktf/provider-kubernetes.roleV1.RoleV1",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -485,7 +485,7 @@ func RoleV1_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.roleV1.RoleV1",
+		"@cdktf/provider-kubernetes.roleV1.RoleV1",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -504,7 +504,7 @@ func RoleV1_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.roleV1.RoleV1",
+		"@cdktf/provider-kubernetes.roleV1.RoleV1",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -517,7 +517,7 @@ func RoleV1_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.roleV1.RoleV1",
+		"@cdktf/provider-kubernetes.roleV1.RoleV1",
 		"tfResourceType",
 		&returns,
 	)

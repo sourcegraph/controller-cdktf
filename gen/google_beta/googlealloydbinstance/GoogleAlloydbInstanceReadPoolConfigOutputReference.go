@@ -180,7 +180,7 @@ func NewGoogleAlloydbInstanceReadPoolConfigOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleAlloydbInstanceReadPoolConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAlloydbInstance.GoogleAlloydbInstanceReadPoolConfigOutputReference",
+		"@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstanceReadPoolConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleAlloydbInstanceReadPoolConfigOutputReference_Override(g GoogleAllo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAlloydbInstance.GoogleAlloydbInstanceReadPoolConfigOutputReference",
+		"@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstanceReadPoolConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

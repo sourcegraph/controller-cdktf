@@ -1023,7 +1023,7 @@ func NewAppEngineFlexibleAppVersion(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_AppEngineFlexibleAppVersion{}
 
 	_jsii_.Create(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersion",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1036,7 +1036,7 @@ func NewAppEngineFlexibleAppVersion_Override(a AppEngineFlexibleAppVersion, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersion",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersion",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -1334,7 +1334,7 @@ func AppEngineFlexibleAppVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersion",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1353,7 +1353,7 @@ func AppEngineFlexibleAppVersion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersion",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1372,7 +1372,7 @@ func AppEngineFlexibleAppVersion_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersion",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1385,7 +1385,7 @@ func AppEngineFlexibleAppVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersion",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersion",
 		"tfResourceType",
 		&returns,
 	)

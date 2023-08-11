@@ -178,7 +178,7 @@ func NewDataCloudflareZonesZonesOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataCloudflareZonesZonesOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareZones.DataCloudflareZonesZonesOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesZonesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataCloudflareZonesZonesOutputReference_Override(d DataCloudflareZonesZo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareZones.DataCloudflareZonesZonesOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesZonesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

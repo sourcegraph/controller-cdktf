@@ -116,7 +116,7 @@ func NewRoute53ResolverRuleTargetIpList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_Route53ResolverRuleTargetIpList{}
 
 	_jsii_.Create(
-		"aws.route53ResolverRule.Route53ResolverRuleTargetIpList",
+		"@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIpList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRoute53ResolverRuleTargetIpList_Override(r Route53ResolverRuleTargetIpLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53ResolverRule.Route53ResolverRuleTargetIpList",
+		"@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIpList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

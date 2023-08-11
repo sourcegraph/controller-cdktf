@@ -202,7 +202,7 @@ func NewLexIntentFollowUpPromptOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_LexIntentFollowUpPromptOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentFollowUpPromptOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewLexIntentFollowUpPromptOutputReference_Override(l LexIntentFollowUpPromp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentFollowUpPromptOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

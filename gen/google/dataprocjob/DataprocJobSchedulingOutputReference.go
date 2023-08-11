@@ -202,7 +202,7 @@ func NewDataprocJobSchedulingOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_DataprocJobSchedulingOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocJob.DataprocJobSchedulingOutputReference",
+		"@cdktf/provider-google.dataprocJob.DataprocJobSchedulingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataprocJobSchedulingOutputReference_Override(d DataprocJobSchedulingOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocJob.DataprocJobSchedulingOutputReference",
+		"@cdktf/provider-google.dataprocJob.DataprocJobSchedulingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

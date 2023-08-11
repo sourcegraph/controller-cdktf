@@ -420,7 +420,7 @@ func NewMqBrokerLdapServerMetadataOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_MqBrokerLdapServerMetadataOutputReference{}
 
 	_jsii_.Create(
-		"aws.mqBroker.MqBrokerLdapServerMetadataOutputReference",
+		"@cdktf/provider-aws.mqBroker.MqBrokerLdapServerMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -432,7 +432,7 @@ func NewMqBrokerLdapServerMetadataOutputReference_Override(m MqBrokerLdapServerM
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mqBroker.MqBrokerLdapServerMetadataOutputReference",
+		"@cdktf/provider-aws.mqBroker.MqBrokerLdapServerMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

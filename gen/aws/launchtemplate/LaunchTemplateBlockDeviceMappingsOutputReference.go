@@ -252,7 +252,7 @@ func NewLaunchTemplateBlockDeviceMappingsOutputReference(terraformResource cdktf
 	j := jsiiProxy_LaunchTemplateBlockDeviceMappingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateBlockDeviceMappingsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewLaunchTemplateBlockDeviceMappingsOutputReference_Override(l LaunchTempla
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateBlockDeviceMappingsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

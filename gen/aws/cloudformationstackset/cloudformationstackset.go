@@ -677,7 +677,7 @@ func NewCloudformationStackSet(scope constructs.Construct, id *string, config *C
 	j := jsiiProxy_CloudformationStackSet{}
 
 	_jsii_.Create(
-		"aws.cloudformationStackSet.CloudformationStackSet",
+		"@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -690,7 +690,7 @@ func NewCloudformationStackSet_Override(c CloudformationStackSet, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudformationStackSet.CloudformationStackSet",
+		"@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSet",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -933,7 +933,7 @@ func CloudformationStackSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudformationStackSet.CloudformationStackSet",
+		"@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -952,7 +952,7 @@ func CloudformationStackSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudformationStackSet.CloudformationStackSet",
+		"@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -971,7 +971,7 @@ func CloudformationStackSet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudformationStackSet.CloudformationStackSet",
+		"@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -984,7 +984,7 @@ func CloudformationStackSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudformationStackSet.CloudformationStackSet",
+		"@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSet",
 		"tfResourceType",
 		&returns,
 	)

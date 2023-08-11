@@ -116,7 +116,7 @@ func NewBackupPlanAdvancedBackupSettingList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_BackupPlanAdvancedBackupSettingList{}
 
 	_jsii_.Create(
-		"aws.backupPlan.BackupPlanAdvancedBackupSettingList",
+		"@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewBackupPlanAdvancedBackupSettingList_Override(b BackupPlanAdvancedBackupS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupPlan.BackupPlanAdvancedBackupSettingList",
+		"@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)

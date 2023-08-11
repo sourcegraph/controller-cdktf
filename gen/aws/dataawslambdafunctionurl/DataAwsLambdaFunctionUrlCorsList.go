@@ -104,7 +104,7 @@ func NewDataAwsLambdaFunctionUrlCorsList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_DataAwsLambdaFunctionUrlCorsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlCorsList",
+		"@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlCorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLambdaFunctionUrlCorsList_Override(d DataAwsLambdaFunctionUrlCors
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlCorsList",
+		"@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlCorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

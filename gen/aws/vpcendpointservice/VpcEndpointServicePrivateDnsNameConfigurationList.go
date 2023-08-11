@@ -104,7 +104,7 @@ func NewVpcEndpointServicePrivateDnsNameConfigurationList(terraformResource cdkt
 	j := jsiiProxy_VpcEndpointServicePrivateDnsNameConfigurationList{}
 
 	_jsii_.Create(
-		"aws.vpcEndpointService.VpcEndpointServicePrivateDnsNameConfigurationList",
+		"@cdktf/provider-aws.vpcEndpointService.VpcEndpointServicePrivateDnsNameConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewVpcEndpointServicePrivateDnsNameConfigurationList_Override(v VpcEndpoint
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcEndpointService.VpcEndpointServicePrivateDnsNameConfigurationList",
+		"@cdktf/provider-aws.vpcEndpointService.VpcEndpointServicePrivateDnsNameConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		v,
 	)

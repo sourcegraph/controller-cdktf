@@ -350,7 +350,7 @@ func NewDataAwsNetworkmanagerConnections(scope constructs.Construct, id *string,
 	j := jsiiProxy_DataAwsNetworkmanagerConnections{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnections",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnections",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -363,7 +363,7 @@ func NewDataAwsNetworkmanagerConnections_Override(d DataAwsNetworkmanagerConnect
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnections",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnections",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -485,7 +485,7 @@ func DataAwsNetworkmanagerConnections_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnections",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnections",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -504,7 +504,7 @@ func DataAwsNetworkmanagerConnections_IsTerraformDataSource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnections",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnections",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +523,7 @@ func DataAwsNetworkmanagerConnections_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnections",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnections",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -536,7 +536,7 @@ func DataAwsNetworkmanagerConnections_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnections",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerConnections.DataAwsNetworkmanagerConnections",
 		"tfResourceType",
 		&returns,
 	)

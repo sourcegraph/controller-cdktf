@@ -598,7 +598,7 @@ func NewOktaProvider(scope constructs.Construct, id *string, config *OktaProvide
 	j := jsiiProxy_OktaProvider{}
 
 	_jsii_.Create(
-		"okta.provider.OktaProvider",
+		"@cdktf/provider-okta.provider.OktaProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -611,7 +611,7 @@ func NewOktaProvider_Override(o OktaProvider, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.provider.OktaProvider",
+		"@cdktf/provider-okta.provider.OktaProvider",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -790,7 +790,7 @@ func OktaProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.provider.OktaProvider",
+		"@cdktf/provider-okta.provider.OktaProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -809,7 +809,7 @@ func OktaProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.provider.OktaProvider",
+		"@cdktf/provider-okta.provider.OktaProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -828,7 +828,7 @@ func OktaProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.provider.OktaProvider",
+		"@cdktf/provider-okta.provider.OktaProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -841,7 +841,7 @@ func OktaProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.provider.OktaProvider",
+		"@cdktf/provider-okta.provider.OktaProvider",
 		"tfResourceType",
 		&returns,
 	)

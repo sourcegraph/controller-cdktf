@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ssmAssociation.SsmAssociation",
+		"@cdktf/provider-aws.ssmAssociation.SsmAssociation",
 		reflect.TypeOf((*SsmAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -100,15 +100,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssmAssociation.SsmAssociationConfig",
+		"@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig",
 		reflect.TypeOf((*SsmAssociationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssmAssociation.SsmAssociationOutputLocation",
+		"@cdktf/provider-aws.ssmAssociation.SsmAssociationOutputLocation",
 		reflect.TypeOf((*SsmAssociationOutputLocation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ssmAssociation.SsmAssociationOutputLocationOutputReference",
+		"@cdktf/provider-aws.ssmAssociation.SsmAssociationOutputLocationOutputReference",
 		reflect.TypeOf((*SsmAssociationOutputLocationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -148,11 +148,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssmAssociation.SsmAssociationTargets",
+		"@cdktf/provider-aws.ssmAssociation.SsmAssociationTargets",
 		reflect.TypeOf((*SsmAssociationTargets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ssmAssociation.SsmAssociationTargetsList",
+		"@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsList",
 		reflect.TypeOf((*SsmAssociationTargetsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -173,7 +173,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ssmAssociation.SsmAssociationTargetsOutputReference",
+		"@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsOutputReference",
 		reflect.TypeOf((*SsmAssociationTargetsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

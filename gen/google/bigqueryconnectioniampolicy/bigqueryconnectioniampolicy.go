@@ -401,7 +401,7 @@ func NewBigqueryConnectionIamPolicy(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_BigqueryConnectionIamPolicy{}
 
 	_jsii_.Create(
-		"google.bigqueryConnectionIamPolicy.BigqueryConnectionIamPolicy",
+		"@cdktf/provider-google.bigqueryConnectionIamPolicy.BigqueryConnectionIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewBigqueryConnectionIamPolicy_Override(b BigqueryConnectionIamPolicy, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryConnectionIamPolicy.BigqueryConnectionIamPolicy",
+		"@cdktf/provider-google.bigqueryConnectionIamPolicy.BigqueryConnectionIamPolicy",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -569,7 +569,7 @@ func BigqueryConnectionIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryConnectionIamPolicy.BigqueryConnectionIamPolicy",
+		"@cdktf/provider-google.bigqueryConnectionIamPolicy.BigqueryConnectionIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func BigqueryConnectionIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryConnectionIamPolicy.BigqueryConnectionIamPolicy",
+		"@cdktf/provider-google.bigqueryConnectionIamPolicy.BigqueryConnectionIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func BigqueryConnectionIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryConnectionIamPolicy.BigqueryConnectionIamPolicy",
+		"@cdktf/provider-google.bigqueryConnectionIamPolicy.BigqueryConnectionIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func BigqueryConnectionIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.bigqueryConnectionIamPolicy.BigqueryConnectionIamPolicy",
+		"@cdktf/provider-google.bigqueryConnectionIamPolicy.BigqueryConnectionIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

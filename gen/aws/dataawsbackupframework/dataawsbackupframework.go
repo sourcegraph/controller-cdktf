@@ -381,7 +381,7 @@ func NewDataAwsBackupFramework(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataAwsBackupFramework{}
 
 	_jsii_.Create(
-		"aws.dataAwsBackupFramework.DataAwsBackupFramework",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -394,7 +394,7 @@ func NewDataAwsBackupFramework_Override(d DataAwsBackupFramework, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsBackupFramework.DataAwsBackupFramework",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -505,7 +505,7 @@ func DataAwsBackupFramework_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsBackupFramework.DataAwsBackupFramework",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -524,7 +524,7 @@ func DataAwsBackupFramework_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsBackupFramework.DataAwsBackupFramework",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func DataAwsBackupFramework_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsBackupFramework.DataAwsBackupFramework",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -556,7 +556,7 @@ func DataAwsBackupFramework_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsBackupFramework.DataAwsBackupFramework",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework",
 		"tfResourceType",
 		&returns,
 	)

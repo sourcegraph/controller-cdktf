@@ -251,7 +251,7 @@ func NewComputeRouterPeerBfdOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_ComputeRouterPeerBfdOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRouterPeer.ComputeRouterPeerBfdOutputReference",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerBfdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewComputeRouterPeerBfdOutputReference_Override(c ComputeRouterPeerBfdOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRouterPeer.ComputeRouterPeerBfdOutputReference",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerBfdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

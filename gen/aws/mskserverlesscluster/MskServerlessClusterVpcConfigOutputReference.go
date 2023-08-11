@@ -203,7 +203,7 @@ func NewMskServerlessClusterVpcConfigOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_MskServerlessClusterVpcConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.mskServerlessCluster.MskServerlessClusterVpcConfigOutputReference",
+		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewMskServerlessClusterVpcConfigOutputReference_Override(m MskServerlessClu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskServerlessCluster.MskServerlessClusterVpcConfigOutputReference",
+		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

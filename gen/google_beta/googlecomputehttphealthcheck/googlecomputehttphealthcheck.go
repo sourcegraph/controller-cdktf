@@ -581,7 +581,7 @@ func NewGoogleComputeHttpHealthCheck(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleComputeHttpHealthCheck{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeHttpHealthCheck.GoogleComputeHttpHealthCheck",
+		"@cdktf/provider-google-beta.googleComputeHttpHealthCheck.GoogleComputeHttpHealthCheck",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -594,7 +594,7 @@ func NewGoogleComputeHttpHealthCheck_Override(g GoogleComputeHttpHealthCheck, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeHttpHealthCheck.GoogleComputeHttpHealthCheck",
+		"@cdktf/provider-google-beta.googleComputeHttpHealthCheck.GoogleComputeHttpHealthCheck",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -815,7 +815,7 @@ func GoogleComputeHttpHealthCheck_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeHttpHealthCheck.GoogleComputeHttpHealthCheck",
+		"@cdktf/provider-google-beta.googleComputeHttpHealthCheck.GoogleComputeHttpHealthCheck",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -834,7 +834,7 @@ func GoogleComputeHttpHealthCheck_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeHttpHealthCheck.GoogleComputeHttpHealthCheck",
+		"@cdktf/provider-google-beta.googleComputeHttpHealthCheck.GoogleComputeHttpHealthCheck",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -853,7 +853,7 @@ func GoogleComputeHttpHealthCheck_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeHttpHealthCheck.GoogleComputeHttpHealthCheck",
+		"@cdktf/provider-google-beta.googleComputeHttpHealthCheck.GoogleComputeHttpHealthCheck",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -866,7 +866,7 @@ func GoogleComputeHttpHealthCheck_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeHttpHealthCheck.GoogleComputeHttpHealthCheck",
+		"@cdktf/provider-google-beta.googleComputeHttpHealthCheck.GoogleComputeHttpHealthCheck",
 		"tfResourceType",
 		&returns,
 	)

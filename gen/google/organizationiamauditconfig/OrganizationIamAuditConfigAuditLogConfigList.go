@@ -116,7 +116,7 @@ func NewOrganizationIamAuditConfigAuditLogConfigList(terraformResource cdktf.IIn
 	j := jsiiProxy_OrganizationIamAuditConfigAuditLogConfigList{}
 
 	_jsii_.Create(
-		"google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigList",
+		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOrganizationIamAuditConfigAuditLogConfigList_Override(o OrganizationIamA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigList",
+		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

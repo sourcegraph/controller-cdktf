@@ -202,7 +202,7 @@ func NewDataAwsVpnGatewayFilterOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataAwsVpnGatewayFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpnGateway.DataAwsVpnGatewayFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGatewayFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsVpnGatewayFilterOutputReference_Override(d DataAwsVpnGatewayFilte
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpnGateway.DataAwsVpnGatewayFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGatewayFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

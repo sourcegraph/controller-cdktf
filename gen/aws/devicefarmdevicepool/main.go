@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.devicefarmDevicePool.DevicefarmDevicePool",
+		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePool",
 		reflect.TypeOf((*DevicefarmDevicePool)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,15 +76,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.devicefarmDevicePool.DevicefarmDevicePoolConfig",
+		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolConfig",
 		reflect.TypeOf((*DevicefarmDevicePoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.devicefarmDevicePool.DevicefarmDevicePoolRule",
+		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolRule",
 		reflect.TypeOf((*DevicefarmDevicePoolRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.devicefarmDevicePool.DevicefarmDevicePoolRuleList",
+		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolRuleList",
 		reflect.TypeOf((*DevicefarmDevicePoolRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.devicefarmDevicePool.DevicefarmDevicePoolRuleOutputReference",
+		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolRuleOutputReference",
 		reflect.TypeOf((*DevicefarmDevicePoolRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attribute", GoGetter: "Attribute"},

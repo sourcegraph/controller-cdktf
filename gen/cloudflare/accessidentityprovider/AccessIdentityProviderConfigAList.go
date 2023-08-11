@@ -116,7 +116,7 @@ func NewAccessIdentityProviderConfigAList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_AccessIdentityProviderConfigAList{}
 
 	_jsii_.Create(
-		"cloudflare.accessIdentityProvider.AccessIdentityProviderConfigAList",
+		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderConfigAList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessIdentityProviderConfigAList_Override(a AccessIdentityProviderConfi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessIdentityProvider.AccessIdentityProviderConfigAList",
+		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderConfigAList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

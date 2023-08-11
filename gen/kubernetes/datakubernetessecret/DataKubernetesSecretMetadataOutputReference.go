@@ -285,7 +285,7 @@ func NewDataKubernetesSecretMetadataOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DataKubernetesSecretMetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesSecret.DataKubernetesSecretMetadataOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesSecret.DataKubernetesSecretMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -297,7 +297,7 @@ func NewDataKubernetesSecretMetadataOutputReference_Override(d DataKubernetesSec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesSecret.DataKubernetesSecretMetadataOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesSecret.DataKubernetesSecretMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

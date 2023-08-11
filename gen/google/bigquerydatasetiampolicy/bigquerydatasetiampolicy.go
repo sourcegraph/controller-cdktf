@@ -377,7 +377,7 @@ func NewBigqueryDatasetIamPolicy(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_BigqueryDatasetIamPolicy{}
 
 	_jsii_.Create(
-		"google.bigqueryDatasetIamPolicy.BigqueryDatasetIamPolicy",
+		"@cdktf/provider-google.bigqueryDatasetIamPolicy.BigqueryDatasetIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewBigqueryDatasetIamPolicy_Override(b BigqueryDatasetIamPolicy, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryDatasetIamPolicy.BigqueryDatasetIamPolicy",
+		"@cdktf/provider-google.bigqueryDatasetIamPolicy.BigqueryDatasetIamPolicy",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -534,7 +534,7 @@ func BigqueryDatasetIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryDatasetIamPolicy.BigqueryDatasetIamPolicy",
+		"@cdktf/provider-google.bigqueryDatasetIamPolicy.BigqueryDatasetIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func BigqueryDatasetIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryDatasetIamPolicy.BigqueryDatasetIamPolicy",
+		"@cdktf/provider-google.bigqueryDatasetIamPolicy.BigqueryDatasetIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func BigqueryDatasetIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryDatasetIamPolicy.BigqueryDatasetIamPolicy",
+		"@cdktf/provider-google.bigqueryDatasetIamPolicy.BigqueryDatasetIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func BigqueryDatasetIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.bigqueryDatasetIamPolicy.BigqueryDatasetIamPolicy",
+		"@cdktf/provider-google.bigqueryDatasetIamPolicy.BigqueryDatasetIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

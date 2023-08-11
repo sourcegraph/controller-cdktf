@@ -104,7 +104,7 @@ func NewDataAwsEfsAccessPointRootDirectoryList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataAwsEfsAccessPointRootDirectoryList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectoryList",
+		"@cdktf/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectoryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEfsAccessPointRootDirectoryList_Override(d DataAwsEfsAccessPointR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectoryList",
+		"@cdktf/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectoryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

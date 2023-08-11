@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lightsailDomainEntry.LightsailDomainEntry",
+		"@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntry",
 		reflect.TypeOf((*LightsailDomainEntry)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lightsailDomainEntry.LightsailDomainEntryConfig",
+		"@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntryConfig",
 		reflect.TypeOf((*LightsailDomainEntryConfig)(nil)).Elem(),
 	)
 }

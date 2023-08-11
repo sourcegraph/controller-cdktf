@@ -521,7 +521,7 @@ func NewGoogleProject(scope constructs.Construct, id *string, config *GoogleProj
 	j := jsiiProxy_GoogleProject{}
 
 	_jsii_.Create(
-		"google-beta.googleProject.GoogleProject",
+		"@cdktf/provider-google-beta.googleProject.GoogleProject",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -534,7 +534,7 @@ func NewGoogleProject_Override(g GoogleProject, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleProject.GoogleProject",
+		"@cdktf/provider-google-beta.googleProject.GoogleProject",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -733,7 +733,7 @@ func GoogleProject_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProject.GoogleProject",
+		"@cdktf/provider-google-beta.googleProject.GoogleProject",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -752,7 +752,7 @@ func GoogleProject_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProject.GoogleProject",
+		"@cdktf/provider-google-beta.googleProject.GoogleProject",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -771,7 +771,7 @@ func GoogleProject_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProject.GoogleProject",
+		"@cdktf/provider-google-beta.googleProject.GoogleProject",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -784,7 +784,7 @@ func GoogleProject_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleProject.GoogleProject",
+		"@cdktf/provider-google-beta.googleProject.GoogleProject",
 		"tfResourceType",
 		&returns,
 	)

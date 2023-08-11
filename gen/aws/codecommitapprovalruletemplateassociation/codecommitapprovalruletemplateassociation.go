@@ -342,7 +342,7 @@ func NewCodecommitApprovalRuleTemplateAssociation(scope constructs.Construct, id
 	j := jsiiProxy_CodecommitApprovalRuleTemplateAssociation{}
 
 	_jsii_.Create(
-		"aws.codecommitApprovalRuleTemplateAssociation.CodecommitApprovalRuleTemplateAssociation",
+		"@cdktf/provider-aws.codecommitApprovalRuleTemplateAssociation.CodecommitApprovalRuleTemplateAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewCodecommitApprovalRuleTemplateAssociation_Override(c CodecommitApprovalR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codecommitApprovalRuleTemplateAssociation.CodecommitApprovalRuleTemplateAssociation",
+		"@cdktf/provider-aws.codecommitApprovalRuleTemplateAssociation.CodecommitApprovalRuleTemplateAssociation",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -488,7 +488,7 @@ func CodecommitApprovalRuleTemplateAssociation_IsConstruct(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codecommitApprovalRuleTemplateAssociation.CodecommitApprovalRuleTemplateAssociation",
+		"@cdktf/provider-aws.codecommitApprovalRuleTemplateAssociation.CodecommitApprovalRuleTemplateAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func CodecommitApprovalRuleTemplateAssociation_IsTerraformElement(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codecommitApprovalRuleTemplateAssociation.CodecommitApprovalRuleTemplateAssociation",
+		"@cdktf/provider-aws.codecommitApprovalRuleTemplateAssociation.CodecommitApprovalRuleTemplateAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func CodecommitApprovalRuleTemplateAssociation_IsTerraformResource(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codecommitApprovalRuleTemplateAssociation.CodecommitApprovalRuleTemplateAssociation",
+		"@cdktf/provider-aws.codecommitApprovalRuleTemplateAssociation.CodecommitApprovalRuleTemplateAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func CodecommitApprovalRuleTemplateAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.codecommitApprovalRuleTemplateAssociation.CodecommitApprovalRuleTemplateAssociation",
+		"@cdktf/provider-aws.codecommitApprovalRuleTemplateAssociation.CodecommitApprovalRuleTemplateAssociation",
 		"tfResourceType",
 		&returns,
 	)

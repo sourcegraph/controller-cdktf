@@ -203,7 +203,7 @@ func NewComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference(terrafor
 	j := jsiiProxy_ComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference{}
 
 	_jsii_.Create(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

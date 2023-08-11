@@ -104,7 +104,7 @@ func NewDataAwsInstanceRootBlockDeviceList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataAwsInstanceRootBlockDeviceList{}
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceRootBlockDeviceList",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceRootBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsInstanceRootBlockDeviceList_Override(d DataAwsInstanceRootBlockDe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceRootBlockDeviceList",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceRootBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

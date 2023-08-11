@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroup",
+		"@cdktf/provider-aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroup",
 		reflect.TypeOf((*DmsReplicationSubnetGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroupConfig",
+		"@cdktf/provider-aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroupConfig",
 		reflect.TypeOf((*DmsReplicationSubnetGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroupTimeouts",
+		"@cdktf/provider-aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroupTimeouts",
 		reflect.TypeOf((*DmsReplicationSubnetGroupTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroupTimeoutsOutputReference",
 		reflect.TypeOf((*DmsReplicationSubnetGroupTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

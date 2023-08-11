@@ -448,7 +448,7 @@ func NewGoogleCloudiotRegistryIamBinding(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleCloudiotRegistryIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBinding",
+		"@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleCloudiotRegistryIamBinding_Override(g GoogleCloudiotRegistryIamBin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBinding",
+		"@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleCloudiotRegistryIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBinding",
+		"@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleCloudiotRegistryIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBinding",
+		"@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleCloudiotRegistryIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBinding",
+		"@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleCloudiotRegistryIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBinding",
+		"@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBinding",
 		"tfResourceType",
 		&returns,
 	)

@@ -372,7 +372,7 @@ func NewDataAwsRedshiftserverlessCredentials(scope constructs.Construct, id *str
 	j := jsiiProxy_DataAwsRedshiftserverlessCredentials{}
 
 	_jsii_.Create(
-		"aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials",
+		"@cdktf/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -385,7 +385,7 @@ func NewDataAwsRedshiftserverlessCredentials_Override(d DataAwsRedshiftserverles
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials",
+		"@cdktf/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -507,7 +507,7 @@ func DataAwsRedshiftserverlessCredentials_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials",
+		"@cdktf/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func DataAwsRedshiftserverlessCredentials_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials",
+		"@cdktf/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -545,7 +545,7 @@ func DataAwsRedshiftserverlessCredentials_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials",
+		"@cdktf/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -558,7 +558,7 @@ func DataAwsRedshiftserverlessCredentials_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials",
+		"@cdktf/provider-aws.dataAwsRedshiftserverlessCredentials.DataAwsRedshiftserverlessCredentials",
 		"tfResourceType",
 		&returns,
 	)

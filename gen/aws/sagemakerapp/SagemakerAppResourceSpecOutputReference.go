@@ -252,7 +252,7 @@ func NewSagemakerAppResourceSpecOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_SagemakerAppResourceSpecOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerApp.SagemakerAppResourceSpecOutputReference",
+		"@cdktf/provider-aws.sagemakerApp.SagemakerAppResourceSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewSagemakerAppResourceSpecOutputReference_Override(s SagemakerAppResourceS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerApp.SagemakerAppResourceSpecOutputReference",
+		"@cdktf/provider-aws.sagemakerApp.SagemakerAppResourceSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

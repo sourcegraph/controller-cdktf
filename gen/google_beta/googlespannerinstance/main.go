@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleSpannerInstance.GoogleSpannerInstance",
+		"@cdktf/provider-google-beta.googleSpannerInstance.GoogleSpannerInstance",
 		reflect.TypeOf((*GoogleSpannerInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,15 +82,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleSpannerInstance.GoogleSpannerInstanceConfig",
+		"@cdktf/provider-google-beta.googleSpannerInstance.GoogleSpannerInstanceConfig",
 		reflect.TypeOf((*GoogleSpannerInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleSpannerInstance.GoogleSpannerInstanceTimeouts",
+		"@cdktf/provider-google-beta.googleSpannerInstance.GoogleSpannerInstanceTimeouts",
 		reflect.TypeOf((*GoogleSpannerInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleSpannerInstance.GoogleSpannerInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleSpannerInstance.GoogleSpannerInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleSpannerInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

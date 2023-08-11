@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.locationGeofenceCollection.LocationGeofenceCollection",
+		"@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollection",
 		reflect.TypeOf((*LocationGeofenceCollection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,15 +76,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.locationGeofenceCollection.LocationGeofenceCollectionConfig",
+		"@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollectionConfig",
 		reflect.TypeOf((*LocationGeofenceCollectionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.locationGeofenceCollection.LocationGeofenceCollectionTimeouts",
+		"@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollectionTimeouts",
 		reflect.TypeOf((*LocationGeofenceCollectionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.locationGeofenceCollection.LocationGeofenceCollectionTimeoutsOutputReference",
+		"@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollectionTimeoutsOutputReference",
 		reflect.TypeOf((*LocationGeofenceCollectionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

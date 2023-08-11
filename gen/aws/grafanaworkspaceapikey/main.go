@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey",
+		"@cdktf/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey",
 		reflect.TypeOf((*GrafanaWorkspaceApiKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKeyConfig",
+		"@cdktf/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKeyConfig",
 		reflect.TypeOf((*GrafanaWorkspaceApiKeyConfig)(nil)).Elem(),
 	)
 }

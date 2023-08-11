@@ -309,7 +309,7 @@ func NewDeploymentMetadataOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_DeploymentMetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentMetadataOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -321,7 +321,7 @@ func NewDeploymentMetadataOutputReference_Override(d DeploymentMetadataOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentMetadataOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

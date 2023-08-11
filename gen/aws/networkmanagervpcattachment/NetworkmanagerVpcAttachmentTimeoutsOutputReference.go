@@ -228,7 +228,7 @@ func NewNetworkmanagerVpcAttachmentTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachmentTimeoutsOutputReference",
+		"@cdktf/provider-aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewNetworkmanagerVpcAttachmentTimeoutsOutputReference_Override(n Networkman
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachmentTimeoutsOutputReference",
+		"@cdktf/provider-aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

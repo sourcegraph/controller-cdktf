@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.opsworksInstance.OpsworksInstance",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstance",
 		reflect.TypeOf((*OpsworksInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -165,15 +165,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksInstance.OpsworksInstanceConfig",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceConfig",
 		reflect.TypeOf((*OpsworksInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksInstance.OpsworksInstanceEbsBlockDevice",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEbsBlockDevice",
 		reflect.TypeOf((*OpsworksInstanceEbsBlockDevice)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksInstance.OpsworksInstanceEbsBlockDeviceList",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEbsBlockDeviceList",
 		reflect.TypeOf((*OpsworksInstanceEbsBlockDeviceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -194,7 +194,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksInstance.OpsworksInstanceEbsBlockDeviceOutputReference",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEbsBlockDeviceOutputReference",
 		reflect.TypeOf((*OpsworksInstanceEbsBlockDeviceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -243,11 +243,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksInstance.OpsworksInstanceEphemeralBlockDevice",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEphemeralBlockDevice",
 		reflect.TypeOf((*OpsworksInstanceEphemeralBlockDevice)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksInstance.OpsworksInstanceEphemeralBlockDeviceList",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEphemeralBlockDeviceList",
 		reflect.TypeOf((*OpsworksInstanceEphemeralBlockDeviceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -268,7 +268,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksInstance.OpsworksInstanceEphemeralBlockDeviceOutputReference",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEphemeralBlockDeviceOutputReference",
 		reflect.TypeOf((*OpsworksInstanceEphemeralBlockDeviceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -304,11 +304,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksInstance.OpsworksInstanceRootBlockDevice",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceRootBlockDevice",
 		reflect.TypeOf((*OpsworksInstanceRootBlockDevice)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksInstance.OpsworksInstanceRootBlockDeviceList",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceRootBlockDeviceList",
 		reflect.TypeOf((*OpsworksInstanceRootBlockDeviceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -329,7 +329,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksInstance.OpsworksInstanceRootBlockDeviceOutputReference",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceRootBlockDeviceOutputReference",
 		reflect.TypeOf((*OpsworksInstanceRootBlockDeviceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -373,11 +373,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksInstance.OpsworksInstanceTimeouts",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceTimeouts",
 		reflect.TypeOf((*OpsworksInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksInstance.OpsworksInstanceTimeoutsOutputReference",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*OpsworksInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

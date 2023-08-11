@@ -116,7 +116,7 @@ func NewAppSamlUsersList(terraformResource cdktf.IInterpolatingParent, terraform
 	j := jsiiProxy_AppSamlUsersList{}
 
 	_jsii_.Create(
-		"okta.appSaml.AppSamlUsersList",
+		"@cdktf/provider-okta.appSaml.AppSamlUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppSamlUsersList_Override(a AppSamlUsersList, terraformResource cdktf.II
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appSaml.AppSamlUsersList",
+		"@cdktf/provider-okta.appSaml.AppSamlUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

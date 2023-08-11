@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.route53ResolverRule.Route53ResolverRule",
+		"@cdktf/provider-aws.route53ResolverRule.Route53ResolverRule",
 		reflect.TypeOf((*Route53ResolverRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,15 +82,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53ResolverRule.Route53ResolverRuleConfig",
+		"@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleConfig",
 		reflect.TypeOf((*Route53ResolverRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53ResolverRule.Route53ResolverRuleTargetIp",
+		"@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIp",
 		reflect.TypeOf((*Route53ResolverRuleTargetIp)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.route53ResolverRule.Route53ResolverRuleTargetIpList",
+		"@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIpList",
 		reflect.TypeOf((*Route53ResolverRuleTargetIpList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -111,7 +111,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.route53ResolverRule.Route53ResolverRuleTargetIpOutputReference",
+		"@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIpOutputReference",
 		reflect.TypeOf((*Route53ResolverRuleTargetIpOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -148,11 +148,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53ResolverRule.Route53ResolverRuleTimeouts",
+		"@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTimeouts",
 		reflect.TypeOf((*Route53ResolverRuleTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.route53ResolverRule.Route53ResolverRuleTimeoutsOutputReference",
+		"@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTimeoutsOutputReference",
 		reflect.TypeOf((*Route53ResolverRuleTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

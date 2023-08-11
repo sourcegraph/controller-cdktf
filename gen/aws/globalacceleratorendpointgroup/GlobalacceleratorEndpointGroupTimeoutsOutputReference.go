@@ -228,7 +228,7 @@ func NewGlobalacceleratorEndpointGroupTimeoutsOutputReference(terraformResource 
 	j := jsiiProxy_GlobalacceleratorEndpointGroupTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGlobalacceleratorEndpointGroupTimeoutsOutputReference_Override(g Globala
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

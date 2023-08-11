@@ -385,7 +385,7 @@ func NewSamlIdpSigningKey(scope constructs.Construct, id *string, config *SamlId
 	j := jsiiProxy_SamlIdpSigningKey{}
 
 	_jsii_.Create(
-		"okta.samlIdpSigningKey.SamlIdpSigningKey",
+		"@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -398,7 +398,7 @@ func NewSamlIdpSigningKey_Override(s SamlIdpSigningKey, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.samlIdpSigningKey.SamlIdpSigningKey",
+		"@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -520,7 +520,7 @@ func SamlIdpSigningKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.samlIdpSigningKey.SamlIdpSigningKey",
+		"@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func SamlIdpSigningKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.samlIdpSigningKey.SamlIdpSigningKey",
+		"@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -558,7 +558,7 @@ func SamlIdpSigningKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.samlIdpSigningKey.SamlIdpSigningKey",
+		"@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -571,7 +571,7 @@ func SamlIdpSigningKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.samlIdpSigningKey.SamlIdpSigningKey",
+		"@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey",
 		"tfResourceType",
 		&returns,
 	)

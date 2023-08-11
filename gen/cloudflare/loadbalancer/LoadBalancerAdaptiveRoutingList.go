@@ -116,7 +116,7 @@ func NewLoadBalancerAdaptiveRoutingList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_LoadBalancerAdaptiveRoutingList{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingList",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLoadBalancerAdaptiveRoutingList_Override(l LoadBalancerAdaptiveRoutingLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingList",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

@@ -448,7 +448,7 @@ func NewComputePublicAdvertisedPrefix(scope constructs.Construct, id *string, co
 	j := jsiiProxy_ComputePublicAdvertisedPrefix{}
 
 	_jsii_.Create(
-		"google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix",
+		"@cdktf/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewComputePublicAdvertisedPrefix_Override(c ComputePublicAdvertisedPrefix, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix",
+		"@cdktf/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -627,7 +627,7 @@ func ComputePublicAdvertisedPrefix_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix",
+		"@cdktf/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func ComputePublicAdvertisedPrefix_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix",
+		"@cdktf/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func ComputePublicAdvertisedPrefix_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix",
+		"@cdktf/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func ComputePublicAdvertisedPrefix_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix",
+		"@cdktf/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix",
 		"tfResourceType",
 		&returns,
 	)

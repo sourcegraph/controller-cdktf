@@ -202,7 +202,7 @@ func NewWafIpsetIpSetDescriptorsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_WafIpsetIpSetDescriptorsOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafIpset.WafIpsetIpSetDescriptorsOutputReference",
+		"@cdktf/provider-aws.wafIpset.WafIpsetIpSetDescriptorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewWafIpsetIpSetDescriptorsOutputReference_Override(w WafIpsetIpSetDescript
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafIpset.WafIpsetIpSetDescriptorsOutputReference",
+		"@cdktf/provider-aws.wafIpset.WafIpsetIpSetDescriptorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

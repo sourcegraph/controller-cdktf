@@ -388,7 +388,7 @@ func NewGrafanaLicenseAssociation(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GrafanaLicenseAssociation{}
 
 	_jsii_.Create(
-		"aws.grafanaLicenseAssociation.GrafanaLicenseAssociation",
+		"@cdktf/provider-aws.grafanaLicenseAssociation.GrafanaLicenseAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -401,7 +401,7 @@ func NewGrafanaLicenseAssociation_Override(g GrafanaLicenseAssociation, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.grafanaLicenseAssociation.GrafanaLicenseAssociation",
+		"@cdktf/provider-aws.grafanaLicenseAssociation.GrafanaLicenseAssociation",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -534,7 +534,7 @@ func GrafanaLicenseAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.grafanaLicenseAssociation.GrafanaLicenseAssociation",
+		"@cdktf/provider-aws.grafanaLicenseAssociation.GrafanaLicenseAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func GrafanaLicenseAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.grafanaLicenseAssociation.GrafanaLicenseAssociation",
+		"@cdktf/provider-aws.grafanaLicenseAssociation.GrafanaLicenseAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func GrafanaLicenseAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.grafanaLicenseAssociation.GrafanaLicenseAssociation",
+		"@cdktf/provider-aws.grafanaLicenseAssociation.GrafanaLicenseAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func GrafanaLicenseAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.grafanaLicenseAssociation.GrafanaLicenseAssociation",
+		"@cdktf/provider-aws.grafanaLicenseAssociation.GrafanaLicenseAssociation",
 		"tfResourceType",
 		&returns,
 	)

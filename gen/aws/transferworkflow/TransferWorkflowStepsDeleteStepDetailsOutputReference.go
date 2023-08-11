@@ -204,7 +204,7 @@ func NewTransferWorkflowStepsDeleteStepDetailsOutputReference(terraformResource 
 	j := jsiiProxy_TransferWorkflowStepsDeleteStepDetailsOutputReference{}
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflowStepsDeleteStepDetailsOutputReference",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsDeleteStepDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewTransferWorkflowStepsDeleteStepDetailsOutputReference_Override(t Transfe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflowStepsDeleteStepDetailsOutputReference",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsDeleteStepDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.workspaceVariableSet.WorkspaceVariableSet",
+		"@cdktf/provider-tfe.workspaceVariableSet.WorkspaceVariableSet",
 		reflect.TypeOf((*WorkspaceVariableSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.workspaceVariableSet.WorkspaceVariableSetConfig",
+		"@cdktf/provider-tfe.workspaceVariableSet.WorkspaceVariableSetConfig",
 		reflect.TypeOf((*WorkspaceVariableSetConfig)(nil)).Elem(),
 	)
 }

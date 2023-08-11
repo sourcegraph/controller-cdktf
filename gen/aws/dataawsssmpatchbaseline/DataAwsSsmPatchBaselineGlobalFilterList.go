@@ -104,7 +104,7 @@ func NewDataAwsSsmPatchBaselineGlobalFilterList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataAwsSsmPatchBaselineGlobalFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineGlobalFilterList",
+		"@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineGlobalFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsSsmPatchBaselineGlobalFilterList_Override(d DataAwsSsmPatchBaseli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineGlobalFilterList",
+		"@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineGlobalFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleSqlDatabaseInstancesInstancesCloneList(terraformResource cdktf
 	j := jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesCloneList{}
 
 	_jsii_.Create(
-		"google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesCloneList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesCloneList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleSqlDatabaseInstancesInstancesCloneList_Override(d DataGoogleSq
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesCloneList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesCloneList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

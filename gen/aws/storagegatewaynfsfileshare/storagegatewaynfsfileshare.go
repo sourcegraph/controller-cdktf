@@ -853,7 +853,7 @@ func NewStoragegatewayNfsFileShare(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_StoragegatewayNfsFileShare{}
 
 	_jsii_.Create(
-		"aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
+		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -866,7 +866,7 @@ func NewStoragegatewayNfsFileShare_Override(s StoragegatewayNfsFileShare, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
+		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -1186,7 +1186,7 @@ func StoragegatewayNfsFileShare_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
+		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1205,7 +1205,7 @@ func StoragegatewayNfsFileShare_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
+		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1224,7 +1224,7 @@ func StoragegatewayNfsFileShare_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
+		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1237,7 +1237,7 @@ func StoragegatewayNfsFileShare_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
+		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
 		"tfResourceType",
 		&returns,
 	)

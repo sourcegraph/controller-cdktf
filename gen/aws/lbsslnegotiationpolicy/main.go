@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lbSslNegotiationPolicy.LbSslNegotiationPolicy",
+		"@cdktf/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicy",
 		reflect.TypeOf((*LbSslNegotiationPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,11 +65,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyAttribute",
+		"@cdktf/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyAttribute",
 		reflect.TypeOf((*LbSslNegotiationPolicyAttribute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyAttributeList",
+		"@cdktf/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyAttributeList",
 		reflect.TypeOf((*LbSslNegotiationPolicyAttributeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -90,7 +90,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyAttributeOutputReference",
+		"@cdktf/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyAttributeOutputReference",
 		reflect.TypeOf((*LbSslNegotiationPolicyAttributeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -126,7 +126,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyConfig",
+		"@cdktf/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyConfig",
 		reflect.TypeOf((*LbSslNegotiationPolicyConfig)(nil)).Elem(),
 	)
 }

@@ -425,7 +425,7 @@ func NewWafRuleGroup(scope constructs.Construct, id *string, config *WafRuleGrou
 	j := jsiiProxy_WafRuleGroup{}
 
 	_jsii_.Create(
-		"aws.wafRuleGroup.WafRuleGroup",
+		"@cdktf/provider-aws.wafRuleGroup.WafRuleGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -438,7 +438,7 @@ func NewWafRuleGroup_Override(w WafRuleGroup, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafRuleGroup.WafRuleGroup",
+		"@cdktf/provider-aws.wafRuleGroup.WafRuleGroup",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -593,7 +593,7 @@ func WafRuleGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafRuleGroup.WafRuleGroup",
+		"@cdktf/provider-aws.wafRuleGroup.WafRuleGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func WafRuleGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafRuleGroup.WafRuleGroup",
+		"@cdktf/provider-aws.wafRuleGroup.WafRuleGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func WafRuleGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafRuleGroup.WafRuleGroup",
+		"@cdktf/provider-aws.wafRuleGroup.WafRuleGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func WafRuleGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.wafRuleGroup.WafRuleGroup",
+		"@cdktf/provider-aws.wafRuleGroup.WafRuleGroup",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewDataAwsEbsSnapshotFilterList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_DataAwsEbsSnapshotFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEbsSnapshot.DataAwsEbsSnapshotFilterList",
+		"@cdktf/provider-aws.dataAwsEbsSnapshot.DataAwsEbsSnapshotFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsEbsSnapshotFilterList_Override(d DataAwsEbsSnapshotFilterList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEbsSnapshot.DataAwsEbsSnapshotFilterList",
+		"@cdktf/provider-aws.dataAwsEbsSnapshot.DataAwsEbsSnapshotFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

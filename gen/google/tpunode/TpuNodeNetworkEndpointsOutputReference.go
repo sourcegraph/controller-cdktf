@@ -178,7 +178,7 @@ func NewTpuNodeNetworkEndpointsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_TpuNodeNetworkEndpointsOutputReference{}
 
 	_jsii_.Create(
-		"google.tpuNode.TpuNodeNetworkEndpointsOutputReference",
+		"@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewTpuNodeNetworkEndpointsOutputReference_Override(t TpuNodeNetworkEndpoint
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.tpuNode.TpuNodeNetworkEndpointsOutputReference",
+		"@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		t,
 	)

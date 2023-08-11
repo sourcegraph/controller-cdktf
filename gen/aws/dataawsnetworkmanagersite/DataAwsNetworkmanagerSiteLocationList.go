@@ -104,7 +104,7 @@ func NewDataAwsNetworkmanagerSiteLocationList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataAwsNetworkmanagerSiteLocationList{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSiteLocationList",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSiteLocationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsNetworkmanagerSiteLocationList_Override(d DataAwsNetworkmanagerSi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSiteLocationList",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSiteLocationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

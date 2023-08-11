@@ -116,7 +116,7 @@ func NewGoogleComputeReservationSpecificReservationInstancePropertiesLocalSsdsLi
 	j := jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesLocalSsdsList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationInstancePropertiesLocalSsdsList",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationInstancePropertiesLocalSsdsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeReservationSpecificReservationInstancePropertiesLocalSsdsLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationInstancePropertiesLocalSsdsList",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationInstancePropertiesLocalSsdsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -179,7 +179,7 @@ func NewGoogleContainerClusterDefaultSnatStatusOutputReference(terraformResource
 	j := jsiiProxy_GoogleContainerClusterDefaultSnatStatusOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterDefaultSnatStatusOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterDefaultSnatStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleContainerClusterDefaultSnatStatusOutputReference_Override(g Google
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterDefaultSnatStatusOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterDefaultSnatStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

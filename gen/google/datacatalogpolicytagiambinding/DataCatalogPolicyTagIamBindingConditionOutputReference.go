@@ -226,7 +226,7 @@ func NewDataCatalogPolicyTagIamBindingConditionOutputReference(terraformResource
 	j := jsiiProxy_DataCatalogPolicyTagIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.dataCatalogPolicyTagIamBinding.DataCatalogPolicyTagIamBindingConditionOutputReference",
+		"@cdktf/provider-google.dataCatalogPolicyTagIamBinding.DataCatalogPolicyTagIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDataCatalogPolicyTagIamBindingConditionOutputReference_Override(d DataCa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogPolicyTagIamBinding.DataCatalogPolicyTagIamBindingConditionOutputReference",
+		"@cdktf/provider-google.dataCatalogPolicyTagIamBinding.DataCatalogPolicyTagIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

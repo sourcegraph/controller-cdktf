@@ -520,7 +520,7 @@ func NewBeyondcorpAppGateway(scope constructs.Construct, id *string, config *Bey
 	j := jsiiProxy_BeyondcorpAppGateway{}
 
 	_jsii_.Create(
-		"google.beyondcorpAppGateway.BeyondcorpAppGateway",
+		"@cdktf/provider-google.beyondcorpAppGateway.BeyondcorpAppGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -533,7 +533,7 @@ func NewBeyondcorpAppGateway_Override(b BeyondcorpAppGateway, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.beyondcorpAppGateway.BeyondcorpAppGateway",
+		"@cdktf/provider-google.beyondcorpAppGateway.BeyondcorpAppGateway",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -721,7 +721,7 @@ func BeyondcorpAppGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.beyondcorpAppGateway.BeyondcorpAppGateway",
+		"@cdktf/provider-google.beyondcorpAppGateway.BeyondcorpAppGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -740,7 +740,7 @@ func BeyondcorpAppGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.beyondcorpAppGateway.BeyondcorpAppGateway",
+		"@cdktf/provider-google.beyondcorpAppGateway.BeyondcorpAppGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -759,7 +759,7 @@ func BeyondcorpAppGateway_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.beyondcorpAppGateway.BeyondcorpAppGateway",
+		"@cdktf/provider-google.beyondcorpAppGateway.BeyondcorpAppGateway",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -772,7 +772,7 @@ func BeyondcorpAppGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.beyondcorpAppGateway.BeyondcorpAppGateway",
+		"@cdktf/provider-google.beyondcorpAppGateway.BeyondcorpAppGateway",
 		"tfResourceType",
 		&returns,
 	)

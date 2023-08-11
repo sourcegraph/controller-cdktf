@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.wafv2RegexPatternSet.Wafv2RegexPatternSet",
+		"@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSet",
 		reflect.TypeOf((*Wafv2RegexPatternSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafv2RegexPatternSet.Wafv2RegexPatternSetConfig",
+		"@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetConfig",
 		reflect.TypeOf((*Wafv2RegexPatternSetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpression",
+		"@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpression",
 		reflect.TypeOf((*Wafv2RegexPatternSetRegularExpression)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpressionList",
+		"@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpressionList",
 		reflect.TypeOf((*Wafv2RegexPatternSetRegularExpressionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpressionOutputReference",
+		"@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpressionOutputReference",
 		reflect.TypeOf((*Wafv2RegexPatternSetRegularExpressionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

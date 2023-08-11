@@ -319,7 +319,7 @@ func NewSecurityhubOrganizationAdminAccount(scope constructs.Construct, id *stri
 	j := jsiiProxy_SecurityhubOrganizationAdminAccount{}
 
 	_jsii_.Create(
-		"aws.securityhubOrganizationAdminAccount.SecurityhubOrganizationAdminAccount",
+		"@cdktf/provider-aws.securityhubOrganizationAdminAccount.SecurityhubOrganizationAdminAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -332,7 +332,7 @@ func NewSecurityhubOrganizationAdminAccount_Override(s SecurityhubOrganizationAd
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubOrganizationAdminAccount.SecurityhubOrganizationAdminAccount",
+		"@cdktf/provider-aws.securityhubOrganizationAdminAccount.SecurityhubOrganizationAdminAccount",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -454,7 +454,7 @@ func SecurityhubOrganizationAdminAccount_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubOrganizationAdminAccount.SecurityhubOrganizationAdminAccount",
+		"@cdktf/provider-aws.securityhubOrganizationAdminAccount.SecurityhubOrganizationAdminAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -473,7 +473,7 @@ func SecurityhubOrganizationAdminAccount_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubOrganizationAdminAccount.SecurityhubOrganizationAdminAccount",
+		"@cdktf/provider-aws.securityhubOrganizationAdminAccount.SecurityhubOrganizationAdminAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -492,7 +492,7 @@ func SecurityhubOrganizationAdminAccount_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubOrganizationAdminAccount.SecurityhubOrganizationAdminAccount",
+		"@cdktf/provider-aws.securityhubOrganizationAdminAccount.SecurityhubOrganizationAdminAccount",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func SecurityhubOrganizationAdminAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.securityhubOrganizationAdminAccount.SecurityhubOrganizationAdminAccount",
+		"@cdktf/provider-aws.securityhubOrganizationAdminAccount.SecurityhubOrganizationAdminAccount",
 		"tfResourceType",
 		&returns,
 	)

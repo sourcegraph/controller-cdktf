@@ -426,7 +426,7 @@ func NewDataGoogleCloudfunctions2Function(scope constructs.Construct, id *string
 	j := jsiiProxy_DataGoogleCloudfunctions2Function{}
 
 	_jsii_.Create(
-		"google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2Function",
+		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2Function",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -439,7 +439,7 @@ func NewDataGoogleCloudfunctions2Function_Override(d DataGoogleCloudfunctions2Fu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2Function",
+		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2Function",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -561,7 +561,7 @@ func DataGoogleCloudfunctions2Function_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2Function",
+		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2Function",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -580,7 +580,7 @@ func DataGoogleCloudfunctions2Function_IsTerraformDataSource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2Function",
+		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2Function",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +599,7 @@ func DataGoogleCloudfunctions2Function_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2Function",
+		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2Function",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func DataGoogleCloudfunctions2Function_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2Function",
+		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2Function",
 		"tfResourceType",
 		&returns,
 	)

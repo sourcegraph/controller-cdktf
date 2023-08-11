@@ -461,7 +461,7 @@ func NewDataAwsEfsFileSystem(scope constructs.Construct, id *string, config *Dat
 	j := jsiiProxy_DataAwsEfsFileSystem{}
 
 	_jsii_.Create(
-		"aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem",
+		"@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -474,7 +474,7 @@ func NewDataAwsEfsFileSystem_Override(d DataAwsEfsFileSystem, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem",
+		"@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -596,7 +596,7 @@ func DataAwsEfsFileSystem_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem",
+		"@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -615,7 +615,7 @@ func DataAwsEfsFileSystem_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem",
+		"@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func DataAwsEfsFileSystem_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem",
+		"@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -647,7 +647,7 @@ func DataAwsEfsFileSystem_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem",
+		"@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem",
 		"tfResourceType",
 		&returns,
 	)

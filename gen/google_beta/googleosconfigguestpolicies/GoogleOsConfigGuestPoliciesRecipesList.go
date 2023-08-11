@@ -116,7 +116,7 @@ func NewGoogleOsConfigGuestPoliciesRecipesList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesList{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesList",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleOsConfigGuestPoliciesRecipesList_Override(g GoogleOsConfigGuestPol
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesList",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion",
+		"@cdktf/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion",
 		reflect.TypeOf((*LoggingBillingAccountExclusion)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig",
+		"@cdktf/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig",
 		reflect.TypeOf((*LoggingBillingAccountExclusionConfig)(nil)).Elem(),
 	)
 }

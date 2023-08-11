@@ -116,7 +116,7 @@ func NewOpsworksMemcachedLayerEbsVolumeList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_OpsworksMemcachedLayerEbsVolumeList{}
 
 	_jsii_.Create(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerEbsVolumeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOpsworksMemcachedLayerEbsVolumeList_Override(o OpsworksMemcachedLayerEbs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerEbsVolumeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

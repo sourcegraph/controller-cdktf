@@ -104,7 +104,7 @@ func NewServicecatalogProvisionedProductOutputsList(terraformResource cdktf.IInt
 	j := jsiiProxy_ServicecatalogProvisionedProductOutputsList{}
 
 	_jsii_.Create(
-		"aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductOutputsList",
+		"@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductOutputsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewServicecatalogProvisionedProductOutputsList_Override(s ServicecatalogPro
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductOutputsList",
+		"@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductOutputsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

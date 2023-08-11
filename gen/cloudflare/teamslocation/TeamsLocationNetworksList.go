@@ -116,7 +116,7 @@ func NewTeamsLocationNetworksList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_TeamsLocationNetworksList{}
 
 	_jsii_.Create(
-		"cloudflare.teamsLocation.TeamsLocationNetworksList",
+		"@cdktf/provider-cloudflare.teamsLocation.TeamsLocationNetworksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewTeamsLocationNetworksList_Override(t TeamsLocationNetworksList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.teamsLocation.TeamsLocationNetworksList",
+		"@cdktf/provider-cloudflare.teamsLocation.TeamsLocationNetworksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		t,
 	)

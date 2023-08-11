@@ -251,7 +251,7 @@ func NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskOut
 	j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

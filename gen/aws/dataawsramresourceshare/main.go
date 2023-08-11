@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsRamResourceShare.DataAwsRamResourceShare",
+		"@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShare",
 		reflect.TypeOf((*DataAwsRamResourceShare)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsRamResourceShare.DataAwsRamResourceShareConfig",
+		"@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShareConfig",
 		reflect.TypeOf((*DataAwsRamResourceShareConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsRamResourceShare.DataAwsRamResourceShareFilter",
+		"@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShareFilter",
 		reflect.TypeOf((*DataAwsRamResourceShareFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsRamResourceShare.DataAwsRamResourceShareFilterList",
+		"@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShareFilterList",
 		reflect.TypeOf((*DataAwsRamResourceShareFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -99,7 +99,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsRamResourceShare.DataAwsRamResourceShareFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShareFilterOutputReference",
 		reflect.TypeOf((*DataAwsRamResourceShareFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

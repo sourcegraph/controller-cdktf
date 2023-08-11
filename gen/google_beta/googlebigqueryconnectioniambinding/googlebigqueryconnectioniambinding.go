@@ -448,7 +448,7 @@ func NewGoogleBigqueryConnectionIamBinding(scope constructs.Construct, id *strin
 	j := jsiiProxy_GoogleBigqueryConnectionIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryConnectionIamBinding.GoogleBigqueryConnectionIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryConnectionIamBinding.GoogleBigqueryConnectionIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleBigqueryConnectionIamBinding_Override(g GoogleBigqueryConnectionIa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryConnectionIamBinding.GoogleBigqueryConnectionIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryConnectionIamBinding.GoogleBigqueryConnectionIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleBigqueryConnectionIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryConnectionIamBinding.GoogleBigqueryConnectionIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryConnectionIamBinding.GoogleBigqueryConnectionIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleBigqueryConnectionIamBinding_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryConnectionIamBinding.GoogleBigqueryConnectionIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryConnectionIamBinding.GoogleBigqueryConnectionIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleBigqueryConnectionIamBinding_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryConnectionIamBinding.GoogleBigqueryConnectionIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryConnectionIamBinding.GoogleBigqueryConnectionIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleBigqueryConnectionIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigqueryConnectionIamBinding.GoogleBigqueryConnectionIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryConnectionIamBinding.GoogleBigqueryConnectionIamBinding",
 		"tfResourceType",
 		&returns,
 	)

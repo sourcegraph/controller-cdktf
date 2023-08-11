@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRule",
+		"@cdktf/provider-google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRule",
 		reflect.TypeOf((*GoogleAppEngineFirewallRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRuleConfig",
+		"@cdktf/provider-google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRuleConfig",
 		reflect.TypeOf((*GoogleAppEngineFirewallRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRuleTimeouts",
+		"@cdktf/provider-google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRuleTimeouts",
 		reflect.TypeOf((*GoogleAppEngineFirewallRuleTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRuleTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRuleTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleAppEngineFirewallRuleTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

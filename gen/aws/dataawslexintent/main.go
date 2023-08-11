@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsLexIntent.DataAwsLexIntent",
+		"@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent",
 		reflect.TypeOf((*DataAwsLexIntent)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLexIntent.DataAwsLexIntentConfig",
+		"@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntentConfig",
 		reflect.TypeOf((*DataAwsLexIntentConfig)(nil)).Elem(),
 	)
 }

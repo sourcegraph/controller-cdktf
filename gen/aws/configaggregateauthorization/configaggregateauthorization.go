@@ -401,7 +401,7 @@ func NewConfigAggregateAuthorization(scope constructs.Construct, id *string, con
 	j := jsiiProxy_ConfigAggregateAuthorization{}
 
 	_jsii_.Create(
-		"aws.configAggregateAuthorization.ConfigAggregateAuthorization",
+		"@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewConfigAggregateAuthorization_Override(c ConfigAggregateAuthorization, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configAggregateAuthorization.ConfigAggregateAuthorization",
+		"@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -569,7 +569,7 @@ func ConfigAggregateAuthorization_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configAggregateAuthorization.ConfigAggregateAuthorization",
+		"@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func ConfigAggregateAuthorization_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configAggregateAuthorization.ConfigAggregateAuthorization",
+		"@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func ConfigAggregateAuthorization_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configAggregateAuthorization.ConfigAggregateAuthorization",
+		"@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func ConfigAggregateAuthorization_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.configAggregateAuthorization.ConfigAggregateAuthorization",
+		"@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization",
 		"tfResourceType",
 		&returns,
 	)

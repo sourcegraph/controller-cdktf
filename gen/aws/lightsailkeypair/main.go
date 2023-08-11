@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lightsailKeyPair.LightsailKeyPair",
+		"@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair",
 		reflect.TypeOf((*LightsailKeyPair)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lightsailKeyPair.LightsailKeyPairConfig",
+		"@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPairConfig",
 		reflect.TypeOf((*LightsailKeyPairConfig)(nil)).Elem(),
 	)
 }

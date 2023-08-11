@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.provider.OktaProvider",
+		"@cdktf/provider-okta.provider.OktaProvider",
 		reflect.TypeOf((*OktaProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessToken", GoGetter: "AccessToken"},
@@ -90,7 +90,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.provider.OktaProviderConfig",
+		"@cdktf/provider-okta.provider.OktaProviderConfig",
 		reflect.TypeOf((*OktaProviderConfig)(nil)).Elem(),
 	)
 }

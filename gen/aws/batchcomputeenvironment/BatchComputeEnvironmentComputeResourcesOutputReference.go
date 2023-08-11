@@ -537,7 +537,7 @@ func NewBatchComputeEnvironmentComputeResourcesOutputReference(terraformResource
 	j := jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference{}
 
 	_jsii_.Create(
-		"aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesOutputReference",
+		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -549,7 +549,7 @@ func NewBatchComputeEnvironmentComputeResourcesOutputReference_Override(b BatchC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesOutputReference",
+		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

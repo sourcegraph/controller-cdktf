@@ -116,7 +116,7 @@ func NewUserSchemaOneOfList(terraformResource cdktf.IInterpolatingParent, terraf
 	j := jsiiProxy_UserSchemaOneOfList{}
 
 	_jsii_.Create(
-		"okta.userSchema.UserSchemaOneOfList",
+		"@cdktf/provider-okta.userSchema.UserSchemaOneOfList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewUserSchemaOneOfList_Override(u UserSchemaOneOfList, terraformResource cd
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.userSchema.UserSchemaOneOfList",
+		"@cdktf/provider-okta.userSchema.UserSchemaOneOfList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		u,
 	)

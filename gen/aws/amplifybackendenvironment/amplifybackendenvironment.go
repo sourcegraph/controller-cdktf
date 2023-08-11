@@ -401,7 +401,7 @@ func NewAmplifyBackendEnvironment(scope constructs.Construct, id *string, config
 	j := jsiiProxy_AmplifyBackendEnvironment{}
 
 	_jsii_.Create(
-		"aws.amplifyBackendEnvironment.AmplifyBackendEnvironment",
+		"@cdktf/provider-aws.amplifyBackendEnvironment.AmplifyBackendEnvironment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewAmplifyBackendEnvironment_Override(a AmplifyBackendEnvironment, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.amplifyBackendEnvironment.AmplifyBackendEnvironment",
+		"@cdktf/provider-aws.amplifyBackendEnvironment.AmplifyBackendEnvironment",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -569,7 +569,7 @@ func AmplifyBackendEnvironment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amplifyBackendEnvironment.AmplifyBackendEnvironment",
+		"@cdktf/provider-aws.amplifyBackendEnvironment.AmplifyBackendEnvironment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func AmplifyBackendEnvironment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amplifyBackendEnvironment.AmplifyBackendEnvironment",
+		"@cdktf/provider-aws.amplifyBackendEnvironment.AmplifyBackendEnvironment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func AmplifyBackendEnvironment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amplifyBackendEnvironment.AmplifyBackendEnvironment",
+		"@cdktf/provider-aws.amplifyBackendEnvironment.AmplifyBackendEnvironment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func AmplifyBackendEnvironment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.amplifyBackendEnvironment.AmplifyBackendEnvironment",
+		"@cdktf/provider-aws.amplifyBackendEnvironment.AmplifyBackendEnvironment",
 		"tfResourceType",
 		&returns,
 	)

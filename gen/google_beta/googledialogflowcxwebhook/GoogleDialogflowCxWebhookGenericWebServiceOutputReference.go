@@ -227,7 +227,7 @@ func NewGoogleDialogflowCxWebhookGenericWebServiceOutputReference(terraformResou
 	j := jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookGenericWebServiceOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookGenericWebServiceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewGoogleDialogflowCxWebhookGenericWebServiceOutputReference_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookGenericWebServiceOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookGenericWebServiceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

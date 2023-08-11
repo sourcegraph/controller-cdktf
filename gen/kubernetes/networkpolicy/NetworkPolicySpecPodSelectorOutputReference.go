@@ -204,7 +204,7 @@ func NewNetworkPolicySpecPodSelectorOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_NetworkPolicySpecPodSelectorOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.networkPolicy.NetworkPolicySpecPodSelectorOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecPodSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewNetworkPolicySpecPodSelectorOutputReference_Override(n NetworkPolicySpec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.networkPolicy.NetworkPolicySpecPodSelectorOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecPodSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

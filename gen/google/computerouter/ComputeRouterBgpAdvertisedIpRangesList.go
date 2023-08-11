@@ -116,7 +116,7 @@ func NewComputeRouterBgpAdvertisedIpRangesList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_ComputeRouterBgpAdvertisedIpRangesList{}
 
 	_jsii_.Create(
-		"google.computeRouter.ComputeRouterBgpAdvertisedIpRangesList",
+		"@cdktf/provider-google.computeRouter.ComputeRouterBgpAdvertisedIpRangesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeRouterBgpAdvertisedIpRangesList_Override(c ComputeRouterBgpAdvert
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRouter.ComputeRouterBgpAdvertisedIpRangesList",
+		"@cdktf/provider-google.computeRouter.ComputeRouterBgpAdvertisedIpRangesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

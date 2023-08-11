@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"kubernetes.resourceQuota.ResourceQuota",
+		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuota",
 		reflect.TypeOf((*ResourceQuota)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,15 +66,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.resourceQuota.ResourceQuotaConfig",
+		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuotaConfig",
 		reflect.TypeOf((*ResourceQuotaConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.resourceQuota.ResourceQuotaMetadata",
+		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuotaMetadata",
 		reflect.TypeOf((*ResourceQuotaMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.resourceQuota.ResourceQuotaMetadataOutputReference",
+		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuotaMetadataOutputReference",
 		reflect.TypeOf((*ResourceQuotaMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -124,11 +124,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.resourceQuota.ResourceQuotaSpec",
+		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuotaSpec",
 		reflect.TypeOf((*ResourceQuotaSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.resourceQuota.ResourceQuotaSpecOutputReference",
+		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuotaSpecOutputReference",
 		reflect.TypeOf((*ResourceQuotaSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -170,15 +170,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.resourceQuota.ResourceQuotaSpecScopeSelector",
+		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuotaSpecScopeSelector",
 		reflect.TypeOf((*ResourceQuotaSpecScopeSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.resourceQuota.ResourceQuotaSpecScopeSelectorMatchExpression",
+		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuotaSpecScopeSelectorMatchExpression",
 		reflect.TypeOf((*ResourceQuotaSpecScopeSelectorMatchExpression)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.resourceQuota.ResourceQuotaSpecScopeSelectorMatchExpressionList",
+		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuotaSpecScopeSelectorMatchExpressionList",
 		reflect.TypeOf((*ResourceQuotaSpecScopeSelectorMatchExpressionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -199,7 +199,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.resourceQuota.ResourceQuotaSpecScopeSelectorMatchExpressionOutputReference",
+		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuotaSpecScopeSelectorMatchExpressionOutputReference",
 		reflect.TypeOf((*ResourceQuotaSpecScopeSelectorMatchExpressionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -238,7 +238,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.resourceQuota.ResourceQuotaSpecScopeSelectorOutputReference",
+		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuotaSpecScopeSelectorOutputReference",
 		reflect.TypeOf((*ResourceQuotaSpecScopeSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -274,11 +274,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.resourceQuota.ResourceQuotaTimeouts",
+		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuotaTimeouts",
 		reflect.TypeOf((*ResourceQuotaTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.resourceQuota.ResourceQuotaTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuotaTimeoutsOutputReference",
 		reflect.TypeOf((*ResourceQuotaTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

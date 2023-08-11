@@ -286,7 +286,7 @@ func NewComputeInstanceAttachedDiskOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_ComputeInstanceAttachedDiskOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceAttachedDiskOutputReference",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceAttachedDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -298,7 +298,7 @@ func NewComputeInstanceAttachedDiskOutputReference_Override(c ComputeInstanceAtt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceAttachedDiskOutputReference",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceAttachedDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

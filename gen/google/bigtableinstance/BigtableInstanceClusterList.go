@@ -116,7 +116,7 @@ func NewBigtableInstanceClusterList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_BigtableInstanceClusterList{}
 
 	_jsii_.Create(
-		"google.bigtableInstance.BigtableInstanceClusterList",
+		"@cdktf/provider-google.bigtableInstance.BigtableInstanceClusterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewBigtableInstanceClusterList_Override(b BigtableInstanceClusterList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigtableInstance.BigtableInstanceClusterList",
+		"@cdktf/provider-google.bigtableInstance.BigtableInstanceClusterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)

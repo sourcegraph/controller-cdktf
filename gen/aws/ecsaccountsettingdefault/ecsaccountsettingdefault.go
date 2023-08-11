@@ -353,7 +353,7 @@ func NewEcsAccountSettingDefault(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_EcsAccountSettingDefault{}
 
 	_jsii_.Create(
-		"aws.ecsAccountSettingDefault.EcsAccountSettingDefault",
+		"@cdktf/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefault",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewEcsAccountSettingDefault_Override(e EcsAccountSettingDefault, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsAccountSettingDefault.EcsAccountSettingDefault",
+		"@cdktf/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefault",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -499,7 +499,7 @@ func EcsAccountSettingDefault_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsAccountSettingDefault.EcsAccountSettingDefault",
+		"@cdktf/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefault",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func EcsAccountSettingDefault_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsAccountSettingDefault.EcsAccountSettingDefault",
+		"@cdktf/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefault",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func EcsAccountSettingDefault_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsAccountSettingDefault.EcsAccountSettingDefault",
+		"@cdktf/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefault",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func EcsAccountSettingDefault_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ecsAccountSettingDefault.EcsAccountSettingDefault",
+		"@cdktf/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefault",
 		"tfResourceType",
 		&returns,
 	)

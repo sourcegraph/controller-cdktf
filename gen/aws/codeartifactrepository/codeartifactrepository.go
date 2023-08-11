@@ -508,7 +508,7 @@ func NewCodeartifactRepository(scope constructs.Construct, id *string, config *C
 	j := jsiiProxy_CodeartifactRepository{}
 
 	_jsii_.Create(
-		"aws.codeartifactRepository.CodeartifactRepository",
+		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepository",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -521,7 +521,7 @@ func NewCodeartifactRepository_Override(c CodeartifactRepository, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codeartifactRepository.CodeartifactRepository",
+		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepository",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -698,7 +698,7 @@ func CodeartifactRepository_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codeartifactRepository.CodeartifactRepository",
+		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepository",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -717,7 +717,7 @@ func CodeartifactRepository_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codeartifactRepository.CodeartifactRepository",
+		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepository",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -736,7 +736,7 @@ func CodeartifactRepository_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codeartifactRepository.CodeartifactRepository",
+		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepository",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -749,7 +749,7 @@ func CodeartifactRepository_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.codeartifactRepository.CodeartifactRepository",
+		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepository",
 		"tfResourceType",
 		&returns,
 	)

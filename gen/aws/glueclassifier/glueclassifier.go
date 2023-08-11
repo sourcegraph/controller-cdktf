@@ -415,7 +415,7 @@ func NewGlueClassifier(scope constructs.Construct, id *string, config *GlueClass
 	j := jsiiProxy_GlueClassifier{}
 
 	_jsii_.Create(
-		"aws.glueClassifier.GlueClassifier",
+		"@cdktf/provider-aws.glueClassifier.GlueClassifier",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -428,7 +428,7 @@ func NewGlueClassifier_Override(g GlueClassifier, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueClassifier.GlueClassifier",
+		"@cdktf/provider-aws.glueClassifier.GlueClassifier",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -550,7 +550,7 @@ func GlueClassifier_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueClassifier.GlueClassifier",
+		"@cdktf/provider-aws.glueClassifier.GlueClassifier",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -569,7 +569,7 @@ func GlueClassifier_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueClassifier.GlueClassifier",
+		"@cdktf/provider-aws.glueClassifier.GlueClassifier",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GlueClassifier_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueClassifier.GlueClassifier",
+		"@cdktf/provider-aws.glueClassifier.GlueClassifier",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func GlueClassifier_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.glueClassifier.GlueClassifier",
+		"@cdktf/provider-aws.glueClassifier.GlueClassifier",
 		"tfResourceType",
 		&returns,
 	)

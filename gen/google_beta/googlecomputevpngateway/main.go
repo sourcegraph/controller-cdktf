@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeVpnGateway.GoogleComputeVpnGateway",
+		"@cdktf/provider-google-beta.googleComputeVpnGateway.GoogleComputeVpnGateway",
 		reflect.TypeOf((*GoogleComputeVpnGateway)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,15 +75,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayConfig",
+		"@cdktf/provider-google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayConfig",
 		reflect.TypeOf((*GoogleComputeVpnGatewayConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayTimeouts",
+		"@cdktf/provider-google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayTimeouts",
 		reflect.TypeOf((*GoogleComputeVpnGatewayTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleComputeVpnGatewayTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

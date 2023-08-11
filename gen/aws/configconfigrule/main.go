@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.configConfigRule.ConfigConfigRule",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRule",
 		reflect.TypeOf((*ConfigConfigRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,15 +81,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.configConfigRule.ConfigConfigRuleConfig",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig",
 		reflect.TypeOf((*ConfigConfigRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.configConfigRule.ConfigConfigRuleScope",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope",
 		reflect.TypeOf((*ConfigConfigRuleScope)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.configConfigRule.ConfigConfigRuleScopeOutputReference",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference",
 		reflect.TypeOf((*ConfigConfigRuleScopeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -133,15 +133,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.configConfigRule.ConfigConfigRuleSource",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource",
 		reflect.TypeOf((*ConfigConfigRuleSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails",
 		reflect.TypeOf((*ConfigConfigRuleSourceCustomPolicyDetails)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference",
 		reflect.TypeOf((*ConfigConfigRuleSourceCustomPolicyDetailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -180,7 +180,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.configConfigRule.ConfigConfigRuleSourceOutputReference",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference",
 		reflect.TypeOf((*ConfigConfigRuleSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -225,11 +225,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.configConfigRule.ConfigConfigRuleSourceSourceDetail",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail",
 		reflect.TypeOf((*ConfigConfigRuleSourceSourceDetail)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList",
 		reflect.TypeOf((*ConfigConfigRuleSourceSourceDetailList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -250,7 +250,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference",
 		reflect.TypeOf((*ConfigConfigRuleSourceSourceDetailOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -203,7 +203,7 @@ func NewAppstreamStackApplicationSettingsOutputReference(terraformResource cdktf
 	j := jsiiProxy_AppstreamStackApplicationSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.appstreamStack.AppstreamStackApplicationSettingsOutputReference",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackApplicationSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAppstreamStackApplicationSettingsOutputReference_Override(a AppstreamSta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appstreamStack.AppstreamStackApplicationSettingsOutputReference",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackApplicationSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

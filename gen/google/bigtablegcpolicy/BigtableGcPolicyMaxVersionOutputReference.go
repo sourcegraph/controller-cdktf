@@ -179,7 +179,7 @@ func NewBigtableGcPolicyMaxVersionOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_BigtableGcPolicyMaxVersionOutputReference{}
 
 	_jsii_.Create(
-		"google.bigtableGcPolicy.BigtableGcPolicyMaxVersionOutputReference",
+		"@cdktf/provider-google.bigtableGcPolicy.BigtableGcPolicyMaxVersionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewBigtableGcPolicyMaxVersionOutputReference_Override(b BigtableGcPolicyMax
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigtableGcPolicy.BigtableGcPolicyMaxVersionOutputReference",
+		"@cdktf/provider-google.bigtableGcPolicy.BigtableGcPolicyMaxVersionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)

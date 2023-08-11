@@ -577,7 +577,7 @@ func NewDataAwsVpcEndpoint(scope constructs.Construct, id *string, config *DataA
 	j := jsiiProxy_DataAwsVpcEndpoint{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -590,7 +590,7 @@ func NewDataAwsVpcEndpoint_Override(d DataAwsVpcEndpoint, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -723,7 +723,7 @@ func DataAwsVpcEndpoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -742,7 +742,7 @@ func DataAwsVpcEndpoint_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -761,7 +761,7 @@ func DataAwsVpcEndpoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -774,7 +774,7 @@ func DataAwsVpcEndpoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint",
 		"tfResourceType",
 		&returns,
 	)

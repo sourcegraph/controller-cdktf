@@ -203,7 +203,7 @@ func NewPubsubTopicSchemaSettingsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_PubsubTopicSchemaSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google.pubsubTopic.PubsubTopicSchemaSettingsOutputReference",
+		"@cdktf/provider-google.pubsubTopic.PubsubTopicSchemaSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewPubsubTopicSchemaSettingsOutputReference_Override(p PubsubTopicSchemaSet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.pubsubTopic.PubsubTopicSchemaSettingsOutputReference",
+		"@cdktf/provider-google.pubsubTopic.PubsubTopicSchemaSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

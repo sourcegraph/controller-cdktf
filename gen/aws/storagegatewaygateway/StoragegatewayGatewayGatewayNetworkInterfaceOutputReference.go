@@ -167,7 +167,7 @@ func NewStoragegatewayGatewayGatewayNetworkInterfaceOutputReference(terraformRes
 	j := jsiiProxy_StoragegatewayGatewayGatewayNetworkInterfaceOutputReference{}
 
 	_jsii_.Create(
-		"aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterfaceOutputReference",
+		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterfaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewStoragegatewayGatewayGatewayNetworkInterfaceOutputReference_Override(s S
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterfaceOutputReference",
+		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterfaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

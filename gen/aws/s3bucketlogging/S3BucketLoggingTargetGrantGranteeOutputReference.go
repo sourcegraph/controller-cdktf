@@ -262,7 +262,7 @@ func NewS3BucketLoggingTargetGrantGranteeOutputReference(terraformResource cdktf
 	j := jsiiProxy_S3BucketLoggingTargetGrantGranteeOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketLogging.S3BucketLoggingTargetGrantGranteeOutputReference",
+		"@cdktf/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantGranteeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -274,7 +274,7 @@ func NewS3BucketLoggingTargetGrantGranteeOutputReference_Override(s S3BucketLogg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketLogging.S3BucketLoggingTargetGrantGranteeOutputReference",
+		"@cdktf/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantGranteeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

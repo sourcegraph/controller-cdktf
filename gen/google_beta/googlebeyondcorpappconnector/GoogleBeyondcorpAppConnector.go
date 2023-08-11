@@ -473,7 +473,7 @@ func NewGoogleBeyondcorpAppConnector(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleBeyondcorpAppConnector{}
 
 	_jsii_.Create(
-		"google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnector",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnector",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -486,7 +486,7 @@ func NewGoogleBeyondcorpAppConnector_Override(g GoogleBeyondcorpAppConnector, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnector",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnector",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -652,7 +652,7 @@ func GoogleBeyondcorpAppConnector_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnector",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnector",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -671,7 +671,7 @@ func GoogleBeyondcorpAppConnector_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnector",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnector",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -690,7 +690,7 @@ func GoogleBeyondcorpAppConnector_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnector",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnector",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -703,7 +703,7 @@ func GoogleBeyondcorpAppConnector_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnector",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnector",
 		"tfResourceType",
 		&returns,
 	)

@@ -353,7 +353,7 @@ func NewCustomHostnameFallbackOrigin(scope constructs.Construct, id *string, con
 	j := jsiiProxy_CustomHostnameFallbackOrigin{}
 
 	_jsii_.Create(
-		"cloudflare.customHostnameFallbackOrigin.CustomHostnameFallbackOrigin",
+		"@cdktf/provider-cloudflare.customHostnameFallbackOrigin.CustomHostnameFallbackOrigin",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewCustomHostnameFallbackOrigin_Override(c CustomHostnameFallbackOrigin, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.customHostnameFallbackOrigin.CustomHostnameFallbackOrigin",
+		"@cdktf/provider-cloudflare.customHostnameFallbackOrigin.CustomHostnameFallbackOrigin",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -499,7 +499,7 @@ func CustomHostnameFallbackOrigin_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.customHostnameFallbackOrigin.CustomHostnameFallbackOrigin",
+		"@cdktf/provider-cloudflare.customHostnameFallbackOrigin.CustomHostnameFallbackOrigin",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func CustomHostnameFallbackOrigin_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.customHostnameFallbackOrigin.CustomHostnameFallbackOrigin",
+		"@cdktf/provider-cloudflare.customHostnameFallbackOrigin.CustomHostnameFallbackOrigin",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func CustomHostnameFallbackOrigin_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.customHostnameFallbackOrigin.CustomHostnameFallbackOrigin",
+		"@cdktf/provider-cloudflare.customHostnameFallbackOrigin.CustomHostnameFallbackOrigin",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func CustomHostnameFallbackOrigin_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.customHostnameFallbackOrigin.CustomHostnameFallbackOrigin",
+		"@cdktf/provider-cloudflare.customHostnameFallbackOrigin.CustomHostnameFallbackOrigin",
 		"tfResourceType",
 		&returns,
 	)

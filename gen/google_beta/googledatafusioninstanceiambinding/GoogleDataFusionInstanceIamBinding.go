@@ -448,7 +448,7 @@ func NewGoogleDataFusionInstanceIamBinding(scope constructs.Construct, id *strin
 	j := jsiiProxy_GoogleDataFusionInstanceIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleDataFusionInstanceIamBinding.GoogleDataFusionInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleDataFusionInstanceIamBinding.GoogleDataFusionInstanceIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleDataFusionInstanceIamBinding_Override(g GoogleDataFusionInstanceIa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataFusionInstanceIamBinding.GoogleDataFusionInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleDataFusionInstanceIamBinding.GoogleDataFusionInstanceIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleDataFusionInstanceIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataFusionInstanceIamBinding.GoogleDataFusionInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleDataFusionInstanceIamBinding.GoogleDataFusionInstanceIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleDataFusionInstanceIamBinding_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataFusionInstanceIamBinding.GoogleDataFusionInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleDataFusionInstanceIamBinding.GoogleDataFusionInstanceIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleDataFusionInstanceIamBinding_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataFusionInstanceIamBinding.GoogleDataFusionInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleDataFusionInstanceIamBinding.GoogleDataFusionInstanceIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleDataFusionInstanceIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataFusionInstanceIamBinding.GoogleDataFusionInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleDataFusionInstanceIamBinding.GoogleDataFusionInstanceIamBinding",
 		"tfResourceType",
 		&returns,
 	)

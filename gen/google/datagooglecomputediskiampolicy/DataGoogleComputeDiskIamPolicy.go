@@ -361,7 +361,7 @@ func NewDataGoogleComputeDiskIamPolicy(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataGoogleComputeDiskIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeDiskIamPolicy.DataGoogleComputeDiskIamPolicy",
+		"@cdktf/provider-google.dataGoogleComputeDiskIamPolicy.DataGoogleComputeDiskIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -374,7 +374,7 @@ func NewDataGoogleComputeDiskIamPolicy_Override(d DataGoogleComputeDiskIamPolicy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeDiskIamPolicy.DataGoogleComputeDiskIamPolicy",
+		"@cdktf/provider-google.dataGoogleComputeDiskIamPolicy.DataGoogleComputeDiskIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -496,7 +496,7 @@ func DataGoogleComputeDiskIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeDiskIamPolicy.DataGoogleComputeDiskIamPolicy",
+		"@cdktf/provider-google.dataGoogleComputeDiskIamPolicy.DataGoogleComputeDiskIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func DataGoogleComputeDiskIamPolicy_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeDiskIamPolicy.DataGoogleComputeDiskIamPolicy",
+		"@cdktf/provider-google.dataGoogleComputeDiskIamPolicy.DataGoogleComputeDiskIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataGoogleComputeDiskIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeDiskIamPolicy.DataGoogleComputeDiskIamPolicy",
+		"@cdktf/provider-google.dataGoogleComputeDiskIamPolicy.DataGoogleComputeDiskIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +547,7 @@ func DataGoogleComputeDiskIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleComputeDiskIamPolicy.DataGoogleComputeDiskIamPolicy",
+		"@cdktf/provider-google.dataGoogleComputeDiskIamPolicy.DataGoogleComputeDiskIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -202,7 +202,7 @@ func NewSchedulerScheduleTargetEventbridgeParametersOutputReference(terraformRes
 	j := jsiiProxy_SchedulerScheduleTargetEventbridgeParametersOutputReference{}
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetEventbridgeParametersOutputReference",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEventbridgeParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSchedulerScheduleTargetEventbridgeParametersOutputReference_Override(s S
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetEventbridgeParametersOutputReference",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEventbridgeParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

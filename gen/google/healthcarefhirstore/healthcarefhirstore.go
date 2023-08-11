@@ -568,7 +568,7 @@ func NewHealthcareFhirStore(scope constructs.Construct, id *string, config *Heal
 	j := jsiiProxy_HealthcareFhirStore{}
 
 	_jsii_.Create(
-		"google.healthcareFhirStore.HealthcareFhirStore",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStore",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -581,7 +581,7 @@ func NewHealthcareFhirStore_Override(h HealthcareFhirStore, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareFhirStore.HealthcareFhirStore",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStore",
 		[]interface{}{scope, id, config},
 		h,
 	)
@@ -780,7 +780,7 @@ func HealthcareFhirStore_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareFhirStore.HealthcareFhirStore",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStore",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -799,7 +799,7 @@ func HealthcareFhirStore_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareFhirStore.HealthcareFhirStore",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStore",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -818,7 +818,7 @@ func HealthcareFhirStore_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareFhirStore.HealthcareFhirStore",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStore",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -831,7 +831,7 @@ func HealthcareFhirStore_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.healthcareFhirStore.HealthcareFhirStore",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStore",
 		"tfResourceType",
 		&returns,
 	)

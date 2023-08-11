@@ -203,7 +203,7 @@ func NewGoogleSecurityScannerScanConfigScheduleOutputReference(terraformResource
 	j := jsiiProxy_GoogleSecurityScannerScanConfigScheduleOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigScheduleOutputReference",
+		"@cdktf/provider-google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleSecurityScannerScanConfigScheduleOutputReference_Override(g Google
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigScheduleOutputReference",
+		"@cdktf/provider-google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

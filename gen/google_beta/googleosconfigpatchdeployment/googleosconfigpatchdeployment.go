@@ -578,7 +578,7 @@ func NewGoogleOsConfigPatchDeployment(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleOsConfigPatchDeployment{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment",
+		"@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -591,7 +591,7 @@ func NewGoogleOsConfigPatchDeployment_Override(g GoogleOsConfigPatchDeployment, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment",
+		"@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -746,7 +746,7 @@ func GoogleOsConfigPatchDeployment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment",
+		"@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -765,7 +765,7 @@ func GoogleOsConfigPatchDeployment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment",
+		"@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -784,7 +784,7 @@ func GoogleOsConfigPatchDeployment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment",
+		"@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -797,7 +797,7 @@ func GoogleOsConfigPatchDeployment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment",
+		"@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment",
 		"tfResourceType",
 		&returns,
 	)

@@ -415,7 +415,7 @@ func NewCognitoRiskConfiguration(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_CognitoRiskConfiguration{}
 
 	_jsii_.Create(
-		"aws.cognitoRiskConfiguration.CognitoRiskConfiguration",
+		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -428,7 +428,7 @@ func NewCognitoRiskConfiguration_Override(c CognitoRiskConfiguration, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoRiskConfiguration.CognitoRiskConfiguration",
+		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -561,7 +561,7 @@ func CognitoRiskConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoRiskConfiguration.CognitoRiskConfiguration",
+		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -580,7 +580,7 @@ func CognitoRiskConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoRiskConfiguration.CognitoRiskConfiguration",
+		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +599,7 @@ func CognitoRiskConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoRiskConfiguration.CognitoRiskConfiguration",
+		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func CognitoRiskConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cognitoRiskConfiguration.CognitoRiskConfiguration",
+		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration",
 		"tfResourceType",
 		&returns,
 	)

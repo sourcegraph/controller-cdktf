@@ -474,7 +474,7 @@ func NewDocdbClusterParameterGroup(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DocdbClusterParameterGroup{}
 
 	_jsii_.Create(
-		"aws.docdbClusterParameterGroup.DocdbClusterParameterGroup",
+		"@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -487,7 +487,7 @@ func NewDocdbClusterParameterGroup_Override(d DocdbClusterParameterGroup, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.docdbClusterParameterGroup.DocdbClusterParameterGroup",
+		"@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -664,7 +664,7 @@ func DocdbClusterParameterGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.docdbClusterParameterGroup.DocdbClusterParameterGroup",
+		"@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -683,7 +683,7 @@ func DocdbClusterParameterGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.docdbClusterParameterGroup.DocdbClusterParameterGroup",
+		"@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func DocdbClusterParameterGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.docdbClusterParameterGroup.DocdbClusterParameterGroup",
+		"@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func DocdbClusterParameterGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.docdbClusterParameterGroup.DocdbClusterParameterGroup",
+		"@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroup",
 		"tfResourceType",
 		&returns,
 	)

@@ -365,7 +365,7 @@ func NewTeamProjectAccess(scope constructs.Construct, id *string, config *TeamPr
 	j := jsiiProxy_TeamProjectAccess{}
 
 	_jsii_.Create(
-		"tfe.teamProjectAccess.TeamProjectAccess",
+		"@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccess",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewTeamProjectAccess_Override(t TeamProjectAccess, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.teamProjectAccess.TeamProjectAccess",
+		"@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccess",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -522,7 +522,7 @@ func TeamProjectAccess_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.teamProjectAccess.TeamProjectAccess",
+		"@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccess",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func TeamProjectAccess_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.teamProjectAccess.TeamProjectAccess",
+		"@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccess",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func TeamProjectAccess_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.teamProjectAccess.TeamProjectAccess",
+		"@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccess",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func TeamProjectAccess_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.teamProjectAccess.TeamProjectAccess",
+		"@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccess",
 		"tfResourceType",
 		&returns,
 	)

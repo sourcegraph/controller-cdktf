@@ -381,7 +381,7 @@ func NewDataAwsLocationPlaceIndex(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DataAwsLocationPlaceIndex{}
 
 	_jsii_.Create(
-		"aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndex",
+		"@cdktf/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndex",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -394,7 +394,7 @@ func NewDataAwsLocationPlaceIndex_Override(d DataAwsLocationPlaceIndex, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndex",
+		"@cdktf/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndex",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -505,7 +505,7 @@ func DataAwsLocationPlaceIndex_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndex",
+		"@cdktf/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndex",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -524,7 +524,7 @@ func DataAwsLocationPlaceIndex_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndex",
+		"@cdktf/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndex",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func DataAwsLocationPlaceIndex_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndex",
+		"@cdktf/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndex",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -556,7 +556,7 @@ func DataAwsLocationPlaceIndex_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndex",
+		"@cdktf/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndex",
 		"tfResourceType",
 		&returns,
 	)

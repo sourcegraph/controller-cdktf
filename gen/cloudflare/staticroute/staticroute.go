@@ -485,7 +485,7 @@ func NewStaticRoute(scope constructs.Construct, id *string, config *StaticRouteC
 	j := jsiiProxy_StaticRoute{}
 
 	_jsii_.Create(
-		"cloudflare.staticRoute.StaticRoute",
+		"@cdktf/provider-cloudflare.staticRoute.StaticRoute",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -498,7 +498,7 @@ func NewStaticRoute_Override(s StaticRoute, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.staticRoute.StaticRoute",
+		"@cdktf/provider-cloudflare.staticRoute.StaticRoute",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -697,7 +697,7 @@ func StaticRoute_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.staticRoute.StaticRoute",
+		"@cdktf/provider-cloudflare.staticRoute.StaticRoute",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -716,7 +716,7 @@ func StaticRoute_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.staticRoute.StaticRoute",
+		"@cdktf/provider-cloudflare.staticRoute.StaticRoute",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func StaticRoute_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.staticRoute.StaticRoute",
+		"@cdktf/provider-cloudflare.staticRoute.StaticRoute",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -748,7 +748,7 @@ func StaticRoute_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.staticRoute.StaticRoute",
+		"@cdktf/provider-cloudflare.staticRoute.StaticRoute",
 		"tfResourceType",
 		&returns,
 	)

@@ -366,7 +366,7 @@ func NewPersistentVolumeV1(scope constructs.Construct, id *string, config *Persi
 	j := jsiiProxy_PersistentVolumeV1{}
 
 	_jsii_.Create(
-		"kubernetes.persistentVolumeV1.PersistentVolumeV1",
+		"@cdktf/provider-kubernetes.persistentVolumeV1.PersistentVolumeV1",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewPersistentVolumeV1_Override(p PersistentVolumeV1, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.persistentVolumeV1.PersistentVolumeV1",
+		"@cdktf/provider-kubernetes.persistentVolumeV1.PersistentVolumeV1",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -490,7 +490,7 @@ func PersistentVolumeV1_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.persistentVolumeV1.PersistentVolumeV1",
+		"@cdktf/provider-kubernetes.persistentVolumeV1.PersistentVolumeV1",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -509,7 +509,7 @@ func PersistentVolumeV1_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.persistentVolumeV1.PersistentVolumeV1",
+		"@cdktf/provider-kubernetes.persistentVolumeV1.PersistentVolumeV1",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -528,7 +528,7 @@ func PersistentVolumeV1_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.persistentVolumeV1.PersistentVolumeV1",
+		"@cdktf/provider-kubernetes.persistentVolumeV1.PersistentVolumeV1",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func PersistentVolumeV1_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.persistentVolumeV1.PersistentVolumeV1",
+		"@cdktf/provider-kubernetes.persistentVolumeV1.PersistentVolumeV1",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleDnsManagedZone.DataGoogleDnsManagedZone",
+		"@cdktf/provider-google-beta.dataGoogleDnsManagedZone.DataGoogleDnsManagedZone",
 		reflect.TypeOf((*DataGoogleDnsManagedZone)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleDnsManagedZone.DataGoogleDnsManagedZoneConfig",
+		"@cdktf/provider-google-beta.dataGoogleDnsManagedZone.DataGoogleDnsManagedZoneConfig",
 		reflect.TypeOf((*DataGoogleDnsManagedZoneConfig)(nil)).Elem(),
 	)
 }

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.amiCopy.AmiCopy",
+		"@cdktf/provider-aws.amiCopy.AmiCopy",
 		reflect.TypeOf((*AmiCopy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -116,15 +116,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.amiCopy.AmiCopyConfig",
+		"@cdktf/provider-aws.amiCopy.AmiCopyConfig",
 		reflect.TypeOf((*AmiCopyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.amiCopy.AmiCopyEbsBlockDevice",
+		"@cdktf/provider-aws.amiCopy.AmiCopyEbsBlockDevice",
 		reflect.TypeOf((*AmiCopyEbsBlockDevice)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.amiCopy.AmiCopyEbsBlockDeviceList",
+		"@cdktf/provider-aws.amiCopy.AmiCopyEbsBlockDeviceList",
 		reflect.TypeOf((*AmiCopyEbsBlockDeviceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -145,7 +145,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.amiCopy.AmiCopyEbsBlockDeviceOutputReference",
+		"@cdktf/provider-aws.amiCopy.AmiCopyEbsBlockDeviceOutputReference",
 		reflect.TypeOf((*AmiCopyEbsBlockDeviceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -186,11 +186,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.amiCopy.AmiCopyEphemeralBlockDevice",
+		"@cdktf/provider-aws.amiCopy.AmiCopyEphemeralBlockDevice",
 		reflect.TypeOf((*AmiCopyEphemeralBlockDevice)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.amiCopy.AmiCopyEphemeralBlockDeviceList",
+		"@cdktf/provider-aws.amiCopy.AmiCopyEphemeralBlockDeviceList",
 		reflect.TypeOf((*AmiCopyEphemeralBlockDeviceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -211,7 +211,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.amiCopy.AmiCopyEphemeralBlockDeviceOutputReference",
+		"@cdktf/provider-aws.amiCopy.AmiCopyEphemeralBlockDeviceOutputReference",
 		reflect.TypeOf((*AmiCopyEphemeralBlockDeviceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -245,11 +245,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.amiCopy.AmiCopyTimeouts",
+		"@cdktf/provider-aws.amiCopy.AmiCopyTimeouts",
 		reflect.TypeOf((*AmiCopyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.amiCopy.AmiCopyTimeoutsOutputReference",
+		"@cdktf/provider-aws.amiCopy.AmiCopyTimeoutsOutputReference",
 		reflect.TypeOf((*AmiCopyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

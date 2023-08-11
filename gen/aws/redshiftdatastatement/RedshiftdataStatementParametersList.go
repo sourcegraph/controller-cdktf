@@ -116,7 +116,7 @@ func NewRedshiftdataStatementParametersList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_RedshiftdataStatementParametersList{}
 
 	_jsii_.Create(
-		"aws.redshiftdataStatement.RedshiftdataStatementParametersList",
+		"@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatementParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRedshiftdataStatementParametersList_Override(r RedshiftdataStatementPara
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftdataStatement.RedshiftdataStatementParametersList",
+		"@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatementParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

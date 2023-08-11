@@ -419,7 +419,7 @@ func NewDataAwsDocdbEngineVersion(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DataAwsDocdbEngineVersion{}
 
 	_jsii_.Create(
-		"aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion",
+		"@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -432,7 +432,7 @@ func NewDataAwsDocdbEngineVersion_Override(d DataAwsDocdbEngineVersion, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion",
+		"@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -565,7 +565,7 @@ func DataAwsDocdbEngineVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion",
+		"@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func DataAwsDocdbEngineVersion_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion",
+		"@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -603,7 +603,7 @@ func DataAwsDocdbEngineVersion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion",
+		"@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -616,7 +616,7 @@ func DataAwsDocdbEngineVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion",
+		"@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion",
 		"tfResourceType",
 		&returns,
 	)

@@ -251,7 +251,7 @@ func NewAlbTargetGroupStickinessOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_AlbTargetGroupStickinessOutputReference{}
 
 	_jsii_.Create(
-		"aws.albTargetGroup.AlbTargetGroupStickinessOutputReference",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupStickinessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewAlbTargetGroupStickinessOutputReference_Override(a AlbTargetGroupStickin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albTargetGroup.AlbTargetGroupStickinessOutputReference",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupStickinessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

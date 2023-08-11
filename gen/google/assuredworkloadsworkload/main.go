@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.assuredWorkloadsWorkload.AssuredWorkloadsWorkload",
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkload",
 		reflect.TypeOf((*AssuredWorkloadsWorkload)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,15 +86,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadConfig",
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadConfig",
 		reflect.TypeOf((*AssuredWorkloadsWorkloadConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadKmsSettings",
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadKmsSettings",
 		reflect.TypeOf((*AssuredWorkloadsWorkloadKmsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadKmsSettingsOutputReference",
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadKmsSettingsOutputReference",
 		reflect.TypeOf((*AssuredWorkloadsWorkloadKmsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -130,11 +130,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadResourceSettings",
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadResourceSettings",
 		reflect.TypeOf((*AssuredWorkloadsWorkloadResourceSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadResourceSettingsList",
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadResourceSettingsList",
 		reflect.TypeOf((*AssuredWorkloadsWorkloadResourceSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -155,7 +155,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadResourceSettingsOutputReference",
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadResourceSettingsOutputReference",
 		reflect.TypeOf((*AssuredWorkloadsWorkloadResourceSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -193,11 +193,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadResources",
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadResources",
 		reflect.TypeOf((*AssuredWorkloadsWorkloadResources)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadResourcesList",
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadResourcesList",
 		reflect.TypeOf((*AssuredWorkloadsWorkloadResourcesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -217,7 +217,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadResourcesOutputReference",
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadResourcesOutputReference",
 		reflect.TypeOf((*AssuredWorkloadsWorkloadResourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -251,11 +251,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadTimeouts",
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadTimeouts",
 		reflect.TypeOf((*AssuredWorkloadsWorkloadTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadTimeoutsOutputReference",
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadTimeoutsOutputReference",
 		reflect.TypeOf((*AssuredWorkloadsWorkloadTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

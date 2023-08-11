@@ -417,7 +417,7 @@ func NewDataAwsEc2NetworkInsightsPath(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataAwsEc2NetworkInsightsPath{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPath",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPath",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -430,7 +430,7 @@ func NewDataAwsEc2NetworkInsightsPath_Override(d DataAwsEc2NetworkInsightsPath, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPath",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPath",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -541,7 +541,7 @@ func DataAwsEc2NetworkInsightsPath_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPath",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPath",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func DataAwsEc2NetworkInsightsPath_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPath",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPath",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -579,7 +579,7 @@ func DataAwsEc2NetworkInsightsPath_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPath",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPath",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -592,7 +592,7 @@ func DataAwsEc2NetworkInsightsPath_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPath",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPath",
 		"tfResourceType",
 		&returns,
 	)

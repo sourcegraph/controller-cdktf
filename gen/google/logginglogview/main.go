@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.loggingLogView.LoggingLogView",
+		"@cdktf/provider-google.loggingLogView.LoggingLogView",
 		reflect.TypeOf((*LoggingLogView)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingLogView.LoggingLogViewConfig",
+		"@cdktf/provider-google.loggingLogView.LoggingLogViewConfig",
 		reflect.TypeOf((*LoggingLogViewConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingLogView.LoggingLogViewTimeouts",
+		"@cdktf/provider-google.loggingLogView.LoggingLogViewTimeouts",
 		reflect.TypeOf((*LoggingLogViewTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.loggingLogView.LoggingLogViewTimeoutsOutputReference",
+		"@cdktf/provider-google.loggingLogView.LoggingLogViewTimeoutsOutputReference",
 		reflect.TypeOf((*LoggingLogViewTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

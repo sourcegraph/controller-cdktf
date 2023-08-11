@@ -228,7 +228,7 @@ func NewConnectPhoneNumberTimeoutsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_ConnectPhoneNumberTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.connectPhoneNumber.ConnectPhoneNumberTimeoutsOutputReference",
+		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewConnectPhoneNumberTimeoutsOutputReference_Override(c ConnectPhoneNumberT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectPhoneNumber.ConnectPhoneNumberTimeoutsOutputReference",
+		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

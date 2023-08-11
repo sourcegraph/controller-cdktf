@@ -302,7 +302,7 @@ func NewDataAwsEksClusterAuth(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataAwsEksClusterAuth{}
 
 	_jsii_.Create(
-		"aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth",
+		"@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataAwsEksClusterAuth_Override(d DataAwsEksClusterAuth, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth",
+		"@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataAwsEksClusterAuth_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth",
+		"@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataAwsEksClusterAuth_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth",
+		"@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataAwsEksClusterAuth_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth",
+		"@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataAwsEksClusterAuth_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth",
+		"@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth",
 		"tfResourceType",
 		&returns,
 	)

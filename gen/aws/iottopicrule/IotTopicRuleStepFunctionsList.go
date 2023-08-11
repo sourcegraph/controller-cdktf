@@ -116,7 +116,7 @@ func NewIotTopicRuleStepFunctionsList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_IotTopicRuleStepFunctionsList{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleStepFunctionsList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewIotTopicRuleStepFunctionsList_Override(i IotTopicRuleStepFunctionsList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleStepFunctionsList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

@@ -116,7 +116,7 @@ func NewGoogleOsConfigGuestPoliciesPackageRepositoriesList(terraformResource cdk
 	j := jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesList{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesList",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleOsConfigGuestPoliciesPackageRepositoriesList_Override(g GoogleOsCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesList",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

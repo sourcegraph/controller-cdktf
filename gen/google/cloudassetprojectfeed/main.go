@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeed",
+		"@cdktf/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed",
 		reflect.TypeOf((*CloudAssetProjectFeed)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,11 +84,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeedCondition",
+		"@cdktf/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedCondition",
 		reflect.TypeOf((*CloudAssetProjectFeedCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeedConditionOutputReference",
+		"@cdktf/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedConditionOutputReference",
 		reflect.TypeOf((*CloudAssetProjectFeedConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -131,15 +131,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeedConfig",
+		"@cdktf/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedConfig",
 		reflect.TypeOf((*CloudAssetProjectFeedConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeedFeedOutputConfig",
+		"@cdktf/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedFeedOutputConfig",
 		reflect.TypeOf((*CloudAssetProjectFeedFeedOutputConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeedFeedOutputConfigOutputReference",
+		"@cdktf/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedFeedOutputConfigOutputReference",
 		reflect.TypeOf((*CloudAssetProjectFeedFeedOutputConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -174,11 +174,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeedFeedOutputConfigPubsubDestination",
+		"@cdktf/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedFeedOutputConfigPubsubDestination",
 		reflect.TypeOf((*CloudAssetProjectFeedFeedOutputConfigPubsubDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeedFeedOutputConfigPubsubDestinationOutputReference",
+		"@cdktf/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedFeedOutputConfigPubsubDestinationOutputReference",
 		reflect.TypeOf((*CloudAssetProjectFeedFeedOutputConfigPubsubDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -212,11 +212,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeedTimeouts",
+		"@cdktf/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedTimeouts",
 		reflect.TypeOf((*CloudAssetProjectFeedTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudAssetProjectFeed.CloudAssetProjectFeedTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedTimeoutsOutputReference",
 		reflect.TypeOf((*CloudAssetProjectFeedTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

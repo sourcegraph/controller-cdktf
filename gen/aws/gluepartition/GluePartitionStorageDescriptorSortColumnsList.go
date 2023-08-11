@@ -116,7 +116,7 @@ func NewGluePartitionStorageDescriptorSortColumnsList(terraformResource cdktf.II
 	j := jsiiProxy_GluePartitionStorageDescriptorSortColumnsList{}
 
 	_jsii_.Create(
-		"aws.gluePartition.GluePartitionStorageDescriptorSortColumnsList",
+		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumnsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGluePartitionStorageDescriptorSortColumnsList_Override(g GluePartitionSt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gluePartition.GluePartitionStorageDescriptorSortColumnsList",
+		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumnsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

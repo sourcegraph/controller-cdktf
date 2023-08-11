@@ -116,7 +116,7 @@ func NewGlueCrawlerMongodbTargetList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_GlueCrawlerMongodbTargetList{}
 
 	_jsii_.Create(
-		"aws.glueCrawler.GlueCrawlerMongodbTargetList",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawlerMongodbTargetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGlueCrawlerMongodbTargetList_Override(g GlueCrawlerMongodbTargetList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueCrawler.GlueCrawlerMongodbTargetList",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawlerMongodbTargetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

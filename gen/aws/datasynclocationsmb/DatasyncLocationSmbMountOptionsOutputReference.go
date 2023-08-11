@@ -180,7 +180,7 @@ func NewDatasyncLocationSmbMountOptionsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_DatasyncLocationSmbMountOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.datasyncLocationSmb.DatasyncLocationSmbMountOptionsOutputReference",
+		"@cdktf/provider-aws.datasyncLocationSmb.DatasyncLocationSmbMountOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDatasyncLocationSmbMountOptionsOutputReference_Override(d DatasyncLocati
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datasyncLocationSmb.DatasyncLocationSmbMountOptionsOutputReference",
+		"@cdktf/provider-aws.datasyncLocationSmb.DatasyncLocationSmbMountOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

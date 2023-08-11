@@ -228,7 +228,7 @@ func NewGoogleGkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputRe
 	j := jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubFeatureMembership.GoogleGkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubFeatureMembership.GoogleGkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleGkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubFeatureMembership.GoogleGkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubFeatureMembership.GoogleGkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

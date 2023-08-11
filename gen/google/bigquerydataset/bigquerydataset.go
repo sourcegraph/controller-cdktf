@@ -699,7 +699,7 @@ func NewBigqueryDataset(scope constructs.Construct, id *string, config *Bigquery
 	j := jsiiProxy_BigqueryDataset{}
 
 	_jsii_.Create(
-		"google.bigqueryDataset.BigqueryDataset",
+		"@cdktf/provider-google.bigqueryDataset.BigqueryDataset",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -712,7 +712,7 @@ func NewBigqueryDataset_Override(b BigqueryDataset, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryDataset.BigqueryDataset",
+		"@cdktf/provider-google.bigqueryDataset.BigqueryDataset",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -955,7 +955,7 @@ func BigqueryDataset_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryDataset.BigqueryDataset",
+		"@cdktf/provider-google.bigqueryDataset.BigqueryDataset",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -974,7 +974,7 @@ func BigqueryDataset_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryDataset.BigqueryDataset",
+		"@cdktf/provider-google.bigqueryDataset.BigqueryDataset",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -993,7 +993,7 @@ func BigqueryDataset_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryDataset.BigqueryDataset",
+		"@cdktf/provider-google.bigqueryDataset.BigqueryDataset",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1006,7 +1006,7 @@ func BigqueryDataset_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.bigqueryDataset.BigqueryDataset",
+		"@cdktf/provider-google.bigqueryDataset.BigqueryDataset",
 		"tfResourceType",
 		&returns,
 	)

@@ -315,7 +315,7 @@ func NewDataTfeSshKey(scope constructs.Construct, id *string, config *DataTfeSsh
 	j := jsiiProxy_DataTfeSshKey{}
 
 	_jsii_.Create(
-		"tfe.dataTfeSshKey.DataTfeSshKey",
+		"@cdktf/provider-tfe.dataTfeSshKey.DataTfeSshKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -328,7 +328,7 @@ func NewDataTfeSshKey_Override(d DataTfeSshKey, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfeSshKey.DataTfeSshKey",
+		"@cdktf/provider-tfe.dataTfeSshKey.DataTfeSshKey",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -439,7 +439,7 @@ func DataTfeSshKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeSshKey.DataTfeSshKey",
+		"@cdktf/provider-tfe.dataTfeSshKey.DataTfeSshKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -458,7 +458,7 @@ func DataTfeSshKey_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeSshKey.DataTfeSshKey",
+		"@cdktf/provider-tfe.dataTfeSshKey.DataTfeSshKey",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataTfeSshKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeSshKey.DataTfeSshKey",
+		"@cdktf/provider-tfe.dataTfeSshKey.DataTfeSshKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -490,7 +490,7 @@ func DataTfeSshKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.dataTfeSshKey.DataTfeSshKey",
+		"@cdktf/provider-tfe.dataTfeSshKey.DataTfeSshKey",
 		"tfResourceType",
 		&returns,
 	)

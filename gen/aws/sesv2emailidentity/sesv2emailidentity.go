@@ -448,7 +448,7 @@ func NewSesv2EmailIdentity(scope constructs.Construct, id *string, config *Sesv2
 	j := jsiiProxy_Sesv2EmailIdentity{}
 
 	_jsii_.Create(
-		"aws.sesv2EmailIdentity.Sesv2EmailIdentity",
+		"@cdktf/provider-aws.sesv2EmailIdentity.Sesv2EmailIdentity",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewSesv2EmailIdentity_Override(s Sesv2EmailIdentity, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesv2EmailIdentity.Sesv2EmailIdentity",
+		"@cdktf/provider-aws.sesv2EmailIdentity.Sesv2EmailIdentity",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -616,7 +616,7 @@ func Sesv2EmailIdentity_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesv2EmailIdentity.Sesv2EmailIdentity",
+		"@cdktf/provider-aws.sesv2EmailIdentity.Sesv2EmailIdentity",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -635,7 +635,7 @@ func Sesv2EmailIdentity_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesv2EmailIdentity.Sesv2EmailIdentity",
+		"@cdktf/provider-aws.sesv2EmailIdentity.Sesv2EmailIdentity",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func Sesv2EmailIdentity_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesv2EmailIdentity.Sesv2EmailIdentity",
+		"@cdktf/provider-aws.sesv2EmailIdentity.Sesv2EmailIdentity",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func Sesv2EmailIdentity_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sesv2EmailIdentity.Sesv2EmailIdentity",
+		"@cdktf/provider-aws.sesv2EmailIdentity.Sesv2EmailIdentity",
 		"tfResourceType",
 		&returns,
 	)

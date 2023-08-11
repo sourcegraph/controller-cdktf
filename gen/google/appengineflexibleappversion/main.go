@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersion",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersion",
 		reflect.TypeOf((*AppEngineFlexibleAppVersion)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -155,11 +155,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionApiConfig",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionApiConfig",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionApiConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionApiConfigOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionApiConfigOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionApiConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authFailAction", GoGetter: "AuthFailAction"},
@@ -205,15 +205,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScaling",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScaling",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionAutomaticScaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingCpuUtilization",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingCpuUtilization",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionAutomaticScalingCpuUtilization)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingCpuUtilizationOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingCpuUtilizationOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionAutomaticScalingCpuUtilizationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregationWindowLength", GoGetter: "AggregationWindowLength"},
@@ -250,11 +250,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingDiskUtilization",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingDiskUtilization",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionAutomaticScalingDiskUtilization)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -298,11 +298,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingNetworkUtilization",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingNetworkUtilization",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionAutomaticScalingNetworkUtilization)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingNetworkUtilizationOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingNetworkUtilizationOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionAutomaticScalingNetworkUtilizationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -346,7 +346,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionAutomaticScalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -417,11 +417,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingRequestUtilization",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingRequestUtilization",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionAutomaticScalingRequestUtilization)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingRequestUtilizationOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingRequestUtilizationOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionAutomaticScalingRequestUtilizationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -459,19 +459,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionConfig",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionConfig",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeployment",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeployment",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionDeployment)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentCloudBuildOptions",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentCloudBuildOptions",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionDeploymentCloudBuildOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appYamlPath", GoGetter: "AppYamlPath"},
@@ -508,11 +508,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentContainer",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentContainer",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionDeploymentContainer)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentContainerOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentContainerOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionDeploymentContainerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -546,11 +546,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentFiles",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentFiles",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionDeploymentFiles)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentFilesList",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentFilesList",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionDeploymentFilesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -571,7 +571,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentFilesOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentFilesOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionDeploymentFilesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -610,7 +610,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionDeploymentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudBuildOptions", GoGetter: "CloudBuildOptions"},
@@ -658,11 +658,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentZip",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentZip",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionDeploymentZip)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentZipOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentZipOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionDeploymentZipOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -699,11 +699,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionEndpointsApiService",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionEndpointsApiService",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionEndpointsApiService)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -746,11 +746,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionEntrypoint",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionEntrypoint",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionEntrypoint)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionEntrypointOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionEntrypointOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionEntrypointOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -784,11 +784,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlers",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlers",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionHandlers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlersList",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlersList",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionHandlersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -809,7 +809,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlersOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlersOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionHandlersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authFailAction", GoGetter: "AuthFailAction"},
@@ -864,11 +864,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlersScript",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlersScript",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionHandlersScript)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlersScriptOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlersScriptOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionHandlersScriptOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -902,11 +902,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlersStaticFiles",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlersStaticFiles",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionHandlersStaticFiles)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applicationReadable", GoGetter: "ApplicationReadable"},
@@ -959,11 +959,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionLivenessCheck",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionLivenessCheck",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionLivenessCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionLivenessCheckOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionLivenessCheckOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionLivenessCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkInterval", GoGetter: "CheckInterval"},
@@ -1015,11 +1015,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionManualScaling",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionManualScaling",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionManualScaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionManualScalingOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionManualScalingOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionManualScalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1053,11 +1053,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionNetwork",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionNetwork",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionNetwork)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionNetworkOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionNetworkOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionNetworkOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1103,11 +1103,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionReadinessCheck",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionReadinessCheck",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionReadinessCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionReadinessCheckOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionReadinessCheckOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionReadinessCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appStartTimeout", GoGetter: "AppStartTimeout"},
@@ -1159,11 +1159,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionResources",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionResources",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionResources)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionResourcesOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionResourcesOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionResourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1208,11 +1208,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionResourcesVolumes",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionResourcesVolumes",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionResourcesVolumes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionResourcesVolumesList",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionResourcesVolumesList",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionResourcesVolumesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1233,7 +1233,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionResourcesVolumesOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionResourcesVolumesOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionResourcesVolumesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1271,11 +1271,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionTimeouts",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionTimeouts",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionTimeoutsOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionTimeoutsOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1316,11 +1316,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionVpcAccessConnector",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionVpcAccessConnector",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionVpcAccessConnector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionVpcAccessConnectorOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionVpcAccessConnectorOutputReference",
 		reflect.TypeOf((*AppEngineFlexibleAppVersionVpcAccessConnectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

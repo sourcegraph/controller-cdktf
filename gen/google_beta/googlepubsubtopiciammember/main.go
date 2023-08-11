@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember",
 		reflect.TypeOf((*GooglePubsubTopicIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,11 +69,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberCondition",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberCondition",
 		reflect.TypeOf((*GooglePubsubTopicIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference",
 		reflect.TypeOf((*GooglePubsubTopicIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -112,7 +112,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig",
 		reflect.TypeOf((*GooglePubsubTopicIamMemberConfig)(nil)).Elem(),
 	)
 }

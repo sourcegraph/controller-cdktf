@@ -202,7 +202,7 @@ func NewDaxParameterGroupParametersOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_DaxParameterGroupParametersOutputReference{}
 
 	_jsii_.Create(
-		"aws.daxParameterGroup.DaxParameterGroupParametersOutputReference",
+		"@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDaxParameterGroupParametersOutputReference_Override(d DaxParameterGroupP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.daxParameterGroup.DaxParameterGroupParametersOutputReference",
+		"@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

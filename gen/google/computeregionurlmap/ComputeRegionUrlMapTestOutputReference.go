@@ -249,7 +249,7 @@ func NewComputeRegionUrlMapTestOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_ComputeRegionUrlMapTestOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapTestOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -261,7 +261,7 @@ func NewComputeRegionUrlMapTestOutputReference_Override(c ComputeRegionUrlMapTes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapTestOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

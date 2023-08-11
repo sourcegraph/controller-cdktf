@@ -400,7 +400,7 @@ func NewGoogleKmsKeyRingIamMember(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleKmsKeyRingIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember",
+		"@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleKmsKeyRingIamMember_Override(g GoogleKmsKeyRingIamMember, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember",
+		"@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleKmsKeyRingIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember",
+		"@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleKmsKeyRingIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember",
+		"@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleKmsKeyRingIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember",
+		"@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleKmsKeyRingIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember",
+		"@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember",
 		"tfResourceType",
 		&returns,
 	)

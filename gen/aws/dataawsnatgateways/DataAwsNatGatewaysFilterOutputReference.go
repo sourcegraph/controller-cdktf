@@ -202,7 +202,7 @@ func NewDataAwsNatGatewaysFilterOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataAwsNatGatewaysFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsNatGateways.DataAwsNatGatewaysFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsNatGateways.DataAwsNatGatewaysFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsNatGatewaysFilterOutputReference_Override(d DataAwsNatGatewaysFil
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNatGateways.DataAwsNatGatewaysFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsNatGateways.DataAwsNatGatewaysFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

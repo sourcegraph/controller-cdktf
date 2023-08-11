@@ -228,7 +228,7 @@ func NewBackupFrameworkTimeoutsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_BackupFrameworkTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.backupFramework.BackupFrameworkTimeoutsOutputReference",
+		"@cdktf/provider-aws.backupFramework.BackupFrameworkTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewBackupFrameworkTimeoutsOutputReference_Override(b BackupFrameworkTimeout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupFramework.BackupFrameworkTimeoutsOutputReference",
+		"@cdktf/provider-aws.backupFramework.BackupFrameworkTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

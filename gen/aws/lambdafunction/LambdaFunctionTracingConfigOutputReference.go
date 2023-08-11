@@ -179,7 +179,7 @@ func NewLambdaFunctionTracingConfigOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_LambdaFunctionTracingConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaFunction.LambdaFunctionTracingConfigOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionTracingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewLambdaFunctionTracingConfigOutputReference_Override(l LambdaFunctionTrac
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaFunction.LambdaFunctionTracingConfigOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionTracingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.devicePostureRule.DevicePostureRule",
+		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule",
 		reflect.TypeOf((*DevicePostureRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -79,15 +79,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.devicePostureRule.DevicePostureRuleConfig",
+		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleConfig",
 		reflect.TypeOf((*DevicePostureRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.devicePostureRule.DevicePostureRuleInput",
+		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInput",
 		reflect.TypeOf((*DevicePostureRuleInput)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.devicePostureRule.DevicePostureRuleInputList",
+		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputList",
 		reflect.TypeOf((*DevicePostureRuleInputList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference",
+		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference",
 		reflect.TypeOf((*DevicePostureRuleInputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkDisks", GoGetter: "CheckDisks"},
@@ -200,11 +200,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.devicePostureRule.DevicePostureRuleMatch",
+		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleMatch",
 		reflect.TypeOf((*DevicePostureRuleMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.devicePostureRule.DevicePostureRuleMatchList",
+		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleMatchList",
 		reflect.TypeOf((*DevicePostureRuleMatchList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -225,7 +225,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.devicePostureRule.DevicePostureRuleMatchOutputReference",
+		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleMatchOutputReference",
 		reflect.TypeOf((*DevicePostureRuleMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

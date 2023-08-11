@@ -401,7 +401,7 @@ func NewTagsLocationTagBinding(scope constructs.Construct, id *string, config *T
 	j := jsiiProxy_TagsLocationTagBinding{}
 
 	_jsii_.Create(
-		"google.tagsLocationTagBinding.TagsLocationTagBinding",
+		"@cdktf/provider-google.tagsLocationTagBinding.TagsLocationTagBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewTagsLocationTagBinding_Override(t TagsLocationTagBinding, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.tagsLocationTagBinding.TagsLocationTagBinding",
+		"@cdktf/provider-google.tagsLocationTagBinding.TagsLocationTagBinding",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -558,7 +558,7 @@ func TagsLocationTagBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.tagsLocationTagBinding.TagsLocationTagBinding",
+		"@cdktf/provider-google.tagsLocationTagBinding.TagsLocationTagBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func TagsLocationTagBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.tagsLocationTagBinding.TagsLocationTagBinding",
+		"@cdktf/provider-google.tagsLocationTagBinding.TagsLocationTagBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func TagsLocationTagBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.tagsLocationTagBinding.TagsLocationTagBinding",
+		"@cdktf/provider-google.tagsLocationTagBinding.TagsLocationTagBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func TagsLocationTagBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.tagsLocationTagBinding.TagsLocationTagBinding",
+		"@cdktf/provider-google.tagsLocationTagBinding.TagsLocationTagBinding",
 		"tfResourceType",
 		&returns,
 	)

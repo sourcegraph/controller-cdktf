@@ -389,7 +389,7 @@ func NewGlacierVaultLock(scope constructs.Construct, id *string, config *Glacier
 	j := jsiiProxy_GlacierVaultLock{}
 
 	_jsii_.Create(
-		"aws.glacierVaultLock.GlacierVaultLock",
+		"@cdktf/provider-aws.glacierVaultLock.GlacierVaultLock",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -402,7 +402,7 @@ func NewGlacierVaultLock_Override(g GlacierVaultLock, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glacierVaultLock.GlacierVaultLock",
+		"@cdktf/provider-aws.glacierVaultLock.GlacierVaultLock",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GlacierVaultLock_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glacierVaultLock.GlacierVaultLock",
+		"@cdktf/provider-aws.glacierVaultLock.GlacierVaultLock",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GlacierVaultLock_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glacierVaultLock.GlacierVaultLock",
+		"@cdktf/provider-aws.glacierVaultLock.GlacierVaultLock",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GlacierVaultLock_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glacierVaultLock.GlacierVaultLock",
+		"@cdktf/provider-aws.glacierVaultLock.GlacierVaultLock",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GlacierVaultLock_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.glacierVaultLock.GlacierVaultLock",
+		"@cdktf/provider-aws.glacierVaultLock.GlacierVaultLock",
 		"tfResourceType",
 		&returns,
 	)

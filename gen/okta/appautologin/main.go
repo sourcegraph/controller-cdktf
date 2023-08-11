@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.appAutoLogin.AppAutoLogin",
+		"@cdktf/provider-okta.appAutoLogin.AppAutoLogin",
 		reflect.TypeOf((*AppAutoLogin)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrl", GoGetter: "AccessibilityErrorRedirectUrl"},
@@ -146,15 +146,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.appAutoLogin.AppAutoLoginConfig",
+		"@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig",
 		reflect.TypeOf((*AppAutoLoginConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.appAutoLogin.AppAutoLoginTimeouts",
+		"@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeouts",
 		reflect.TypeOf((*AppAutoLoginTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.appAutoLogin.AppAutoLoginTimeoutsOutputReference",
+		"@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeoutsOutputReference",
 		reflect.TypeOf((*AppAutoLoginTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -195,11 +195,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.appAutoLogin.AppAutoLoginUsers",
+		"@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsers",
 		reflect.TypeOf((*AppAutoLoginUsers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.appAutoLogin.AppAutoLoginUsersList",
+		"@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList",
 		reflect.TypeOf((*AppAutoLoginUsersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -220,7 +220,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.appAutoLogin.AppAutoLoginUsersOutputReference",
+		"@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference",
 		reflect.TypeOf((*AppAutoLoginUsersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

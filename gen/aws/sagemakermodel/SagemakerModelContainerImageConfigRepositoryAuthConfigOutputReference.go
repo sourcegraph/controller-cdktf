@@ -179,7 +179,7 @@ func NewSagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference(te
 	j := jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerModel.SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewSagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerModel.SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

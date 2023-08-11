@@ -353,7 +353,7 @@ func NewEndpointsServiceIamPolicy(scope constructs.Construct, id *string, config
 	j := jsiiProxy_EndpointsServiceIamPolicy{}
 
 	_jsii_.Create(
-		"google.endpointsServiceIamPolicy.EndpointsServiceIamPolicy",
+		"@cdktf/provider-google.endpointsServiceIamPolicy.EndpointsServiceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewEndpointsServiceIamPolicy_Override(e EndpointsServiceIamPolicy, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.endpointsServiceIamPolicy.EndpointsServiceIamPolicy",
+		"@cdktf/provider-google.endpointsServiceIamPolicy.EndpointsServiceIamPolicy",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -499,7 +499,7 @@ func EndpointsServiceIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.endpointsServiceIamPolicy.EndpointsServiceIamPolicy",
+		"@cdktf/provider-google.endpointsServiceIamPolicy.EndpointsServiceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func EndpointsServiceIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.endpointsServiceIamPolicy.EndpointsServiceIamPolicy",
+		"@cdktf/provider-google.endpointsServiceIamPolicy.EndpointsServiceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func EndpointsServiceIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.endpointsServiceIamPolicy.EndpointsServiceIamPolicy",
+		"@cdktf/provider-google.endpointsServiceIamPolicy.EndpointsServiceIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func EndpointsServiceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.endpointsServiceIamPolicy.EndpointsServiceIamPolicy",
+		"@cdktf/provider-google.endpointsServiceIamPolicy.EndpointsServiceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

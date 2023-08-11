@@ -285,7 +285,7 @@ func NewPriorityClassV1MetadataOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_PriorityClassV1MetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.priorityClassV1.PriorityClassV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.priorityClassV1.PriorityClassV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -297,7 +297,7 @@ func NewPriorityClassV1MetadataOutputReference_Override(p PriorityClassV1Metadat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.priorityClassV1.PriorityClassV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.priorityClassV1.PriorityClassV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

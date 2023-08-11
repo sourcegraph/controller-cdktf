@@ -202,7 +202,7 @@ func NewSagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfigOutp
 	j := jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfigOutp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

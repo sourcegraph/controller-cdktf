@@ -387,7 +387,7 @@ func NewAuditmanagerFrameworkShare(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_AuditmanagerFrameworkShare{}
 
 	_jsii_.Create(
-		"aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare",
+		"@cdktf/provider-aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -400,7 +400,7 @@ func NewAuditmanagerFrameworkShare_Override(a AuditmanagerFrameworkShare, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare",
+		"@cdktf/provider-aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -544,7 +544,7 @@ func AuditmanagerFrameworkShare_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare",
+		"@cdktf/provider-aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func AuditmanagerFrameworkShare_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare",
+		"@cdktf/provider-aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -582,7 +582,7 @@ func AuditmanagerFrameworkShare_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare",
+		"@cdktf/provider-aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func AuditmanagerFrameworkShare_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare",
+		"@cdktf/provider-aws.auditmanagerFrameworkShare.AuditmanagerFrameworkShare",
 		"tfResourceType",
 		&returns,
 	)

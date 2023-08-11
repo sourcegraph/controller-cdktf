@@ -116,7 +116,7 @@ func NewLoadBalancerPopPoolsList(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_LoadBalancerPopPoolsList{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerPopPoolsList",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerPopPoolsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLoadBalancerPopPoolsList_Override(l LoadBalancerPopPoolsList, terraformR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerPopPoolsList",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerPopPoolsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

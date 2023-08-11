@@ -180,7 +180,7 @@ func NewVpcEndpointDnsOptionsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_VpcEndpointDnsOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.vpcEndpoint.VpcEndpointDnsOptionsOutputReference",
+		"@cdktf/provider-aws.vpcEndpoint.VpcEndpointDnsOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewVpcEndpointDnsOptionsOutputReference_Override(v VpcEndpointDnsOptionsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcEndpoint.VpcEndpointDnsOptionsOutputReference",
+		"@cdktf/provider-aws.vpcEndpoint.VpcEndpointDnsOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

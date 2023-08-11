@@ -390,7 +390,7 @@ func NewDataAwsCloudfrontDistribution(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataAwsCloudfrontDistribution{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistribution",
+		"@cdktf/provider-aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistribution",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewDataAwsCloudfrontDistribution_Override(d DataAwsCloudfrontDistribution, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistribution",
+		"@cdktf/provider-aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistribution",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -503,7 +503,7 @@ func DataAwsCloudfrontDistribution_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistribution",
+		"@cdktf/provider-aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistribution",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -522,7 +522,7 @@ func DataAwsCloudfrontDistribution_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistribution",
+		"@cdktf/provider-aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistribution",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func DataAwsCloudfrontDistribution_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistribution",
+		"@cdktf/provider-aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistribution",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -554,7 +554,7 @@ func DataAwsCloudfrontDistribution_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistribution",
+		"@cdktf/provider-aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistribution",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewKeyspacesTableCapacitySpecificationOutputReference(terraformResource cdk
 	j := jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference{}
 
 	_jsii_.Create(
-		"aws.keyspacesTable.KeyspacesTableCapacitySpecificationOutputReference",
+		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableCapacitySpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewKeyspacesTableCapacitySpecificationOutputReference_Override(k KeyspacesT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.keyspacesTable.KeyspacesTableCapacitySpecificationOutputReference",
+		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableCapacitySpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

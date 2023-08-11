@@ -262,7 +262,7 @@ func NewAlbSubnetMappingOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_AlbSubnetMappingOutputReference{}
 
 	_jsii_.Create(
-		"aws.alb.AlbSubnetMappingOutputReference",
+		"@cdktf/provider-aws.alb.AlbSubnetMappingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -274,7 +274,7 @@ func NewAlbSubnetMappingOutputReference_Override(a AlbSubnetMappingOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.alb.AlbSubnetMappingOutputReference",
+		"@cdktf/provider-aws.alb.AlbSubnetMappingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

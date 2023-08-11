@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinition",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinition",
 		reflect.TypeOf((*DatapipelinePipelineDefinition)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,19 +68,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionConfig",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionConfig",
 		reflect.TypeOf((*DatapipelinePipelineDefinitionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObject",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObject",
 		reflect.TypeOf((*DatapipelinePipelineDefinitionParameterObject)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectAttribute",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectAttribute",
 		reflect.TypeOf((*DatapipelinePipelineDefinitionParameterObjectAttribute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectAttributeList",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectAttributeList",
 		reflect.TypeOf((*DatapipelinePipelineDefinitionParameterObjectAttributeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,7 +101,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectAttributeOutputReference",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectAttributeOutputReference",
 		reflect.TypeOf((*DatapipelinePipelineDefinitionParameterObjectAttributeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -137,7 +137,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectList",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectList",
 		reflect.TypeOf((*DatapipelinePipelineDefinitionParameterObjectList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -158,7 +158,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectOutputReference",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectOutputReference",
 		reflect.TypeOf((*DatapipelinePipelineDefinitionParameterObjectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attribute", GoGetter: "Attribute"},
@@ -196,11 +196,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterValue",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterValue",
 		reflect.TypeOf((*DatapipelinePipelineDefinitionParameterValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterValueList",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterValueList",
 		reflect.TypeOf((*DatapipelinePipelineDefinitionParameterValueList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -221,7 +221,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterValueOutputReference",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterValueOutputReference",
 		reflect.TypeOf((*DatapipelinePipelineDefinitionParameterValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -257,15 +257,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObject",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObject",
 		reflect.TypeOf((*DatapipelinePipelineDefinitionPipelineObject)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectField",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectField",
 		reflect.TypeOf((*DatapipelinePipelineDefinitionPipelineObjectField)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectFieldList",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectFieldList",
 		reflect.TypeOf((*DatapipelinePipelineDefinitionPipelineObjectFieldList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -286,7 +286,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectFieldOutputReference",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectFieldOutputReference",
 		reflect.TypeOf((*DatapipelinePipelineDefinitionPipelineObjectFieldOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -326,7 +326,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectList",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectList",
 		reflect.TypeOf((*DatapipelinePipelineDefinitionPipelineObjectList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -347,7 +347,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectOutputReference",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectOutputReference",
 		reflect.TypeOf((*DatapipelinePipelineDefinitionPipelineObjectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

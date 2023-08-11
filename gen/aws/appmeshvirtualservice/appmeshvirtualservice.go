@@ -481,7 +481,7 @@ func NewAppmeshVirtualService(scope constructs.Construct, id *string, config *Ap
 	j := jsiiProxy_AppmeshVirtualService{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualService.AppmeshVirtualService",
+		"@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -494,7 +494,7 @@ func NewAppmeshVirtualService_Override(a AppmeshVirtualService, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualService.AppmeshVirtualService",
+		"@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualService",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -660,7 +660,7 @@ func AppmeshVirtualService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appmeshVirtualService.AppmeshVirtualService",
+		"@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func AppmeshVirtualService_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appmeshVirtualService.AppmeshVirtualService",
+		"@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -698,7 +698,7 @@ func AppmeshVirtualService_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appmeshVirtualService.AppmeshVirtualService",
+		"@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualService",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -711,7 +711,7 @@ func AppmeshVirtualService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appmeshVirtualService.AppmeshVirtualService",
+		"@cdktf/provider-aws.appmeshVirtualService.AppmeshVirtualService",
 		"tfResourceType",
 		&returns,
 	)

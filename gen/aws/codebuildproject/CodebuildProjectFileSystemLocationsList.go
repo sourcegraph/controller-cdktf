@@ -116,7 +116,7 @@ func NewCodebuildProjectFileSystemLocationsList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_CodebuildProjectFileSystemLocationsList{}
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectFileSystemLocationsList",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectFileSystemLocationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCodebuildProjectFileSystemLocationsList_Override(c CodebuildProjectFileS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectFileSystemLocationsList",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectFileSystemLocationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

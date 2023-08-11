@@ -228,7 +228,7 @@ func NewSecurePasswordStoreAppTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_SecurePasswordStoreAppTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"okta.securePasswordStoreApp.SecurePasswordStoreAppTimeoutsOutputReference",
+		"@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreAppTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSecurePasswordStoreAppTimeoutsOutputReference_Override(s SecurePasswordS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.securePasswordStoreApp.SecurePasswordStoreAppTimeoutsOutputReference",
+		"@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreAppTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

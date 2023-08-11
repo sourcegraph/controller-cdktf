@@ -509,7 +509,7 @@ func NewNotificationConfiguration(scope constructs.Construct, id *string, config
 	j := jsiiProxy_NotificationConfiguration{}
 
 	_jsii_.Create(
-		"tfe.notificationConfiguration.NotificationConfiguration",
+		"@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -522,7 +522,7 @@ func NewNotificationConfiguration_Override(n NotificationConfiguration, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.notificationConfiguration.NotificationConfiguration",
+		"@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -732,7 +732,7 @@ func NotificationConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.notificationConfiguration.NotificationConfiguration",
+		"@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -751,7 +751,7 @@ func NotificationConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.notificationConfiguration.NotificationConfiguration",
+		"@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -770,7 +770,7 @@ func NotificationConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.notificationConfiguration.NotificationConfiguration",
+		"@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -783,7 +783,7 @@ func NotificationConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.notificationConfiguration.NotificationConfiguration",
+		"@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration",
 		"tfResourceType",
 		&returns,
 	)

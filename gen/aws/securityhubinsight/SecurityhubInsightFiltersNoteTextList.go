@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersNoteTextList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_SecurityhubInsightFiltersNoteTextList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersNoteTextList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersNoteTextList_Override(s SecurityhubInsightFilte
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersNoteTextList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

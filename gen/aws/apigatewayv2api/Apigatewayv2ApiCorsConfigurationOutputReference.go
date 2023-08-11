@@ -300,7 +300,7 @@ func NewApigatewayv2ApiCorsConfigurationOutputReference(terraformResource cdktf.
 	j := jsiiProxy_Apigatewayv2ApiCorsConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference",
+		"@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewApigatewayv2ApiCorsConfigurationOutputReference_Override(a Apigatewayv2A
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference",
+		"@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannel",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannel",
 		reflect.TypeOf((*DataGoogleMonitoringNotificationChannel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelConfig",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelConfig",
 		reflect.TypeOf((*DataGoogleMonitoringNotificationChannelConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelSensitiveLabels",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelSensitiveLabels",
 		reflect.TypeOf((*DataGoogleMonitoringNotificationChannelSensitiveLabels)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelSensitiveLabelsList",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelSensitiveLabelsList",
 		reflect.TypeOf((*DataGoogleMonitoringNotificationChannelSensitiveLabelsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -102,7 +102,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference",
 		reflect.TypeOf((*DataGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authToken", GoGetter: "AuthToken"},

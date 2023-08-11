@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleProjectIamBinding.GoogleProjectIamBinding",
+		"@cdktf/provider-google-beta.googleProjectIamBinding.GoogleProjectIamBinding",
 		reflect.TypeOf((*GoogleProjectIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,11 +66,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleProjectIamBinding.GoogleProjectIamBindingCondition",
+		"@cdktf/provider-google-beta.googleProjectIamBinding.GoogleProjectIamBindingCondition",
 		reflect.TypeOf((*GoogleProjectIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleProjectIamBinding.GoogleProjectIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleProjectIamBinding.GoogleProjectIamBindingConditionOutputReference",
 		reflect.TypeOf((*GoogleProjectIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleProjectIamBinding.GoogleProjectIamBindingConfig",
+		"@cdktf/provider-google-beta.googleProjectIamBinding.GoogleProjectIamBindingConfig",
 		reflect.TypeOf((*GoogleProjectIamBindingConfig)(nil)).Elem(),
 	)
 }

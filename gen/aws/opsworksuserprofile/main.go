@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.opsworksUserProfile.OpsworksUserProfile",
+		"@cdktf/provider-aws.opsworksUserProfile.OpsworksUserProfile",
 		reflect.TypeOf((*OpsworksUserProfile)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksUserProfile.OpsworksUserProfileConfig",
+		"@cdktf/provider-aws.opsworksUserProfile.OpsworksUserProfileConfig",
 		reflect.TypeOf((*OpsworksUserProfileConfig)(nil)).Elem(),
 	)
 }

@@ -521,7 +521,7 @@ func NewSqlUser(scope constructs.Construct, id *string, config *SqlUserConfig) S
 	j := jsiiProxy_SqlUser{}
 
 	_jsii_.Create(
-		"google.sqlUser.SqlUser",
+		"@cdktf/provider-google.sqlUser.SqlUser",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -534,7 +534,7 @@ func NewSqlUser_Override(s SqlUser, scope constructs.Construct, id *string, conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sqlUser.SqlUser",
+		"@cdktf/provider-google.sqlUser.SqlUser",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -722,7 +722,7 @@ func SqlUser_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sqlUser.SqlUser",
+		"@cdktf/provider-google.sqlUser.SqlUser",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -741,7 +741,7 @@ func SqlUser_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sqlUser.SqlUser",
+		"@cdktf/provider-google.sqlUser.SqlUser",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -760,7 +760,7 @@ func SqlUser_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sqlUser.SqlUser",
+		"@cdktf/provider-google.sqlUser.SqlUser",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -773,7 +773,7 @@ func SqlUser_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.sqlUser.SqlUser",
+		"@cdktf/provider-google.sqlUser.SqlUser",
 		"tfResourceType",
 		&returns,
 	)

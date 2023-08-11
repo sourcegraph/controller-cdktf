@@ -401,7 +401,7 @@ func NewGoogleIapTunnelInstanceIamPolicy(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleIapTunnelInstanceIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleIapTunnelInstanceIamPolicy_Override(g GoogleIapTunnelInstanceIamPo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GoogleIapTunnelInstanceIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GoogleIapTunnelInstanceIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GoogleIapTunnelInstanceIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GoogleIapTunnelInstanceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

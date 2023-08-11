@@ -116,7 +116,7 @@ func NewCodedeployDeploymentGroupLoadBalancerInfoElbInfoList(terraformResource c
 	j := jsiiProxy_CodedeployDeploymentGroupLoadBalancerInfoElbInfoList{}
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoElbInfoList",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoElbInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCodedeployDeploymentGroupLoadBalancerInfoElbInfoList_Override(c Codedepl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoElbInfoList",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoElbInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

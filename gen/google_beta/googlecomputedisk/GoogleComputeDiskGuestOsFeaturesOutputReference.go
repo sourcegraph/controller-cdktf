@@ -179,7 +179,7 @@ func NewGoogleComputeDiskGuestOsFeaturesOutputReference(terraformResource cdktf.
 	j := jsiiProxy_GoogleComputeDiskGuestOsFeaturesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference",
+		"@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleComputeDiskGuestOsFeaturesOutputReference_Override(g GoogleCompute
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference",
+		"@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

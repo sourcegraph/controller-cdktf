@@ -179,7 +179,7 @@ func NewGoogleComputeNodeTemplateServerBindingOutputReference(terraformResource 
 	j := jsiiProxy_GoogleComputeNodeTemplateServerBindingOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplateServerBindingOutputReference",
+		"@cdktf/provider-google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplateServerBindingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleComputeNodeTemplateServerBindingOutputReference_Override(g GoogleC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplateServerBindingOutputReference",
+		"@cdktf/provider-google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplateServerBindingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -251,7 +251,7 @@ func NewDatastreamStreamSourceConfigOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DatastreamStreamSourceConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamSourceConfigOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewDatastreamStreamSourceConfigOutputReference_Override(d DatastreamStreamS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamSourceConfigOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

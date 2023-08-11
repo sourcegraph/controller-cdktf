@@ -354,7 +354,7 @@ func NewIapWebIamPolicy(scope constructs.Construct, id *string, config *IapWebIa
 	j := jsiiProxy_IapWebIamPolicy{}
 
 	_jsii_.Create(
-		"google.iapWebIamPolicy.IapWebIamPolicy",
+		"@cdktf/provider-google.iapWebIamPolicy.IapWebIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -367,7 +367,7 @@ func NewIapWebIamPolicy_Override(i IapWebIamPolicy, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapWebIamPolicy.IapWebIamPolicy",
+		"@cdktf/provider-google.iapWebIamPolicy.IapWebIamPolicy",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -500,7 +500,7 @@ func IapWebIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebIamPolicy.IapWebIamPolicy",
+		"@cdktf/provider-google.iapWebIamPolicy.IapWebIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -519,7 +519,7 @@ func IapWebIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebIamPolicy.IapWebIamPolicy",
+		"@cdktf/provider-google.iapWebIamPolicy.IapWebIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -538,7 +538,7 @@ func IapWebIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebIamPolicy.IapWebIamPolicy",
+		"@cdktf/provider-google.iapWebIamPolicy.IapWebIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func IapWebIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.iapWebIamPolicy.IapWebIamPolicy",
+		"@cdktf/provider-google.iapWebIamPolicy.IapWebIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

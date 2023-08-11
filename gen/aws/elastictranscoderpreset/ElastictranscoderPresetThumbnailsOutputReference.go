@@ -348,7 +348,7 @@ func NewElastictranscoderPresetThumbnailsOutputReference(terraformResource cdktf
 	j := jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference{}
 
 	_jsii_.Create(
-		"aws.elastictranscoderPreset.ElastictranscoderPresetThumbnailsOutputReference",
+		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetThumbnailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewElastictranscoderPresetThumbnailsOutputReference_Override(e Elastictrans
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elastictranscoderPreset.ElastictranscoderPresetThumbnailsOutputReference",
+		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetThumbnailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

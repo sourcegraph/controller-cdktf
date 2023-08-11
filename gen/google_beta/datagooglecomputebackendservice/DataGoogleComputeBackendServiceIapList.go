@@ -104,7 +104,7 @@ func NewDataGoogleComputeBackendServiceIapList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataGoogleComputeBackendServiceIapList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceIapList",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceIapList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeBackendServiceIapList_Override(d DataGoogleComputeBacke
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceIapList",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceIapList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

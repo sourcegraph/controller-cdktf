@@ -484,7 +484,7 @@ func NewSagemakerUserProfile(scope constructs.Construct, id *string, config *Sag
 	j := jsiiProxy_SagemakerUserProfile{}
 
 	_jsii_.Create(
-		"aws.sagemakerUserProfile.SagemakerUserProfile",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -497,7 +497,7 @@ func NewSagemakerUserProfile_Override(s SagemakerUserProfile, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerUserProfile.SagemakerUserProfile",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfile",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -674,7 +674,7 @@ func SagemakerUserProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerUserProfile.SagemakerUserProfile",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -693,7 +693,7 @@ func SagemakerUserProfile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerUserProfile.SagemakerUserProfile",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +712,7 @@ func SagemakerUserProfile_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerUserProfile.SagemakerUserProfile",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -725,7 +725,7 @@ func SagemakerUserProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sagemakerUserProfile.SagemakerUserProfile",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfile",
 		"tfResourceType",
 		&returns,
 	)

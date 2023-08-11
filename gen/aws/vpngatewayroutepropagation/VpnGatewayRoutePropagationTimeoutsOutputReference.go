@@ -204,7 +204,7 @@ func NewVpnGatewayRoutePropagationTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_VpnGatewayRoutePropagationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationTimeoutsOutputReference",
+		"@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewVpnGatewayRoutePropagationTimeoutsOutputReference_Override(v VpnGatewayR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationTimeoutsOutputReference",
+		"@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

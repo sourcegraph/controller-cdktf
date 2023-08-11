@@ -522,7 +522,7 @@ func NewCloudtrailEventDataStore(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_CloudtrailEventDataStore{}
 
 	_jsii_.Create(
-		"aws.cloudtrailEventDataStore.CloudtrailEventDataStore",
+		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -535,7 +535,7 @@ func NewCloudtrailEventDataStore_Override(c CloudtrailEventDataStore, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudtrailEventDataStore.CloudtrailEventDataStore",
+		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -723,7 +723,7 @@ func CloudtrailEventDataStore_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudtrailEventDataStore.CloudtrailEventDataStore",
+		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -742,7 +742,7 @@ func CloudtrailEventDataStore_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudtrailEventDataStore.CloudtrailEventDataStore",
+		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -761,7 +761,7 @@ func CloudtrailEventDataStore_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudtrailEventDataStore.CloudtrailEventDataStore",
+		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -774,7 +774,7 @@ func CloudtrailEventDataStore_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudtrailEventDataStore.CloudtrailEventDataStore",
+		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore",
 		"tfResourceType",
 		&returns,
 	)

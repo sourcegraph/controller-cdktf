@@ -448,7 +448,7 @@ func NewPrivatecaCaPoolIamMember(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_PrivatecaCaPoolIamMember{}
 
 	_jsii_.Create(
-		"google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMember",
+		"@cdktf/provider-google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewPrivatecaCaPoolIamMember_Override(p PrivatecaCaPoolIamMember, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMember",
+		"@cdktf/provider-google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMember",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -627,7 +627,7 @@ func PrivatecaCaPoolIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMember",
+		"@cdktf/provider-google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func PrivatecaCaPoolIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMember",
+		"@cdktf/provider-google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func PrivatecaCaPoolIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMember",
+		"@cdktf/provider-google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func PrivatecaCaPoolIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMember",
+		"@cdktf/provider-google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMember",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sesReceiptRuleSet.SesReceiptRuleSet",
+		"@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSet",
 		reflect.TypeOf((*SesReceiptRuleSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,7 +58,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesReceiptRuleSet.SesReceiptRuleSetConfig",
+		"@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig",
 		reflect.TypeOf((*SesReceiptRuleSetConfig)(nil)).Elem(),
 	)
 }

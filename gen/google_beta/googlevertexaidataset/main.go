@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleVertexAiDataset.GoogleVertexAiDataset",
+		"@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDataset",
 		reflect.TypeOf((*GoogleVertexAiDataset)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,15 +79,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleVertexAiDataset.GoogleVertexAiDatasetConfig",
+		"@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetConfig",
 		reflect.TypeOf((*GoogleVertexAiDatasetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleVertexAiDataset.GoogleVertexAiDatasetEncryptionSpec",
+		"@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetEncryptionSpec",
 		reflect.TypeOf((*GoogleVertexAiDatasetEncryptionSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleVertexAiDataset.GoogleVertexAiDatasetEncryptionSpecOutputReference",
+		"@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetEncryptionSpecOutputReference",
 		reflect.TypeOf((*GoogleVertexAiDatasetEncryptionSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -122,11 +122,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleVertexAiDataset.GoogleVertexAiDatasetTimeouts",
+		"@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetTimeouts",
 		reflect.TypeOf((*GoogleVertexAiDatasetTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleVertexAiDataset.GoogleVertexAiDatasetTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleVertexAiDatasetTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

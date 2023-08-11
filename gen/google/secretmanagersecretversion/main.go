@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.secretManagerSecretVersion.SecretManagerSecretVersion",
+		"@cdktf/provider-google.secretManagerSecretVersion.SecretManagerSecretVersion",
 		reflect.TypeOf((*SecretManagerSecretVersion)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.secretManagerSecretVersion.SecretManagerSecretVersionConfig",
+		"@cdktf/provider-google.secretManagerSecretVersion.SecretManagerSecretVersionConfig",
 		reflect.TypeOf((*SecretManagerSecretVersionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.secretManagerSecretVersion.SecretManagerSecretVersionTimeouts",
+		"@cdktf/provider-google.secretManagerSecretVersion.SecretManagerSecretVersionTimeouts",
 		reflect.TypeOf((*SecretManagerSecretVersionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.secretManagerSecretVersion.SecretManagerSecretVersionTimeoutsOutputReference",
+		"@cdktf/provider-google.secretManagerSecretVersion.SecretManagerSecretVersionTimeoutsOutputReference",
 		reflect.TypeOf((*SecretManagerSecretVersionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -277,7 +277,7 @@ func NewDataOktaUserProfileMappingSource(scope constructs.Construct, id *string,
 	j := jsiiProxy_DataOktaUserProfileMappingSource{}
 
 	_jsii_.Create(
-		"okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource",
+		"@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -290,7 +290,7 @@ func NewDataOktaUserProfileMappingSource_Override(d DataOktaUserProfileMappingSo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource",
+		"@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -368,7 +368,7 @@ func DataOktaUserProfileMappingSource_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource",
+		"@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -387,7 +387,7 @@ func DataOktaUserProfileMappingSource_IsTerraformDataSource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource",
+		"@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -406,7 +406,7 @@ func DataOktaUserProfileMappingSource_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource",
+		"@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -419,7 +419,7 @@ func DataOktaUserProfileMappingSource_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource",
+		"@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
+		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
 		reflect.TypeOf((*SagemakerHumanTaskUi)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerHumanTaskUi.SagemakerHumanTaskUiConfig",
+		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUiConfig",
 		reflect.TypeOf((*SagemakerHumanTaskUiConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerHumanTaskUi.SagemakerHumanTaskUiUiTemplate",
+		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUiUiTemplate",
 		reflect.TypeOf((*SagemakerHumanTaskUiUiTemplate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerHumanTaskUi.SagemakerHumanTaskUiUiTemplateOutputReference",
+		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUiUiTemplateOutputReference",
 		reflect.TypeOf((*SagemakerHumanTaskUiUiTemplateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

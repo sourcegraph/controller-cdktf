@@ -483,7 +483,7 @@ func NewGoogleComputeAutoscaler(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_GoogleComputeAutoscaler{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeAutoscaler.GoogleComputeAutoscaler",
+		"@cdktf/provider-google-beta.googleComputeAutoscaler.GoogleComputeAutoscaler",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -496,7 +496,7 @@ func NewGoogleComputeAutoscaler_Override(g GoogleComputeAutoscaler, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeAutoscaler.GoogleComputeAutoscaler",
+		"@cdktf/provider-google-beta.googleComputeAutoscaler.GoogleComputeAutoscaler",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -662,7 +662,7 @@ func GoogleComputeAutoscaler_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeAutoscaler.GoogleComputeAutoscaler",
+		"@cdktf/provider-google-beta.googleComputeAutoscaler.GoogleComputeAutoscaler",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -681,7 +681,7 @@ func GoogleComputeAutoscaler_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeAutoscaler.GoogleComputeAutoscaler",
+		"@cdktf/provider-google-beta.googleComputeAutoscaler.GoogleComputeAutoscaler",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func GoogleComputeAutoscaler_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeAutoscaler.GoogleComputeAutoscaler",
+		"@cdktf/provider-google-beta.googleComputeAutoscaler.GoogleComputeAutoscaler",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -713,7 +713,7 @@ func GoogleComputeAutoscaler_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeAutoscaler.GoogleComputeAutoscaler",
+		"@cdktf/provider-google-beta.googleComputeAutoscaler.GoogleComputeAutoscaler",
 		"tfResourceType",
 		&returns,
 	)

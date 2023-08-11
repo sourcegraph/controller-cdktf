@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.amplifyDomainAssociation.AmplifyDomainAssociation",
+		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociation",
 		reflect.TypeOf((*AmplifyDomainAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.amplifyDomainAssociation.AmplifyDomainAssociationConfig",
+		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociationConfig",
 		reflect.TypeOf((*AmplifyDomainAssociationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomain",
+		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomain",
 		reflect.TypeOf((*AmplifyDomainAssociationSubDomain)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomainList",
+		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomainList",
 		reflect.TypeOf((*AmplifyDomainAssociationSubDomainList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -96,7 +96,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomainOutputReference",
+		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomainOutputReference",
 		reflect.TypeOf((*AmplifyDomainAssociationSubDomainOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branchName", GoGetter: "BranchName"},

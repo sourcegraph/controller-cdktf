@@ -202,7 +202,7 @@ func NewBackupSelectionConditionStringNotLikeOutputReference(terraformResource c
 	j := jsiiProxy_BackupSelectionConditionStringNotLikeOutputReference{}
 
 	_jsii_.Create(
-		"aws.backupSelection.BackupSelectionConditionStringNotLikeOutputReference",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLikeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewBackupSelectionConditionStringNotLikeOutputReference_Override(b BackupSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupSelection.BackupSelectionConditionStringNotLikeOutputReference",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLikeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)

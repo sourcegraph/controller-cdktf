@@ -467,7 +467,7 @@ func NewStorageObjectAccessControl(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_StorageObjectAccessControl{}
 
 	_jsii_.Create(
-		"google.storageObjectAccessControl.StorageObjectAccessControl",
+		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControl",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -480,7 +480,7 @@ func NewStorageObjectAccessControl_Override(s StorageObjectAccessControl, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageObjectAccessControl.StorageObjectAccessControl",
+		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControl",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -635,7 +635,7 @@ func StorageObjectAccessControl_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageObjectAccessControl.StorageObjectAccessControl",
+		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControl",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func StorageObjectAccessControl_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageObjectAccessControl.StorageObjectAccessControl",
+		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControl",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -673,7 +673,7 @@ func StorageObjectAccessControl_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageObjectAccessControl.StorageObjectAccessControl",
+		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControl",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -686,7 +686,7 @@ func StorageObjectAccessControl_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.storageObjectAccessControl.StorageObjectAccessControl",
+		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControl",
 		"tfResourceType",
 		&returns,
 	)

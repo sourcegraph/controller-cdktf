@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.backupSelection.BackupSelection",
+		"@cdktf/provider-aws.backupSelection.BackupSelection",
 		reflect.TypeOf((*BackupSelection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,11 +75,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.backupSelection.BackupSelectionCondition",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionCondition",
 		reflect.TypeOf((*BackupSelectionCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.backupSelection.BackupSelectionConditionList",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionList",
 		reflect.TypeOf((*BackupSelectionConditionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -100,7 +100,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.backupSelection.BackupSelectionConditionOutputReference",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionOutputReference",
 		reflect.TypeOf((*BackupSelectionConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -148,11 +148,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.backupSelection.BackupSelectionConditionStringEquals",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEquals",
 		reflect.TypeOf((*BackupSelectionConditionStringEquals)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.backupSelection.BackupSelectionConditionStringEqualsList",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEqualsList",
 		reflect.TypeOf((*BackupSelectionConditionStringEqualsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -173,7 +173,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.backupSelection.BackupSelectionConditionStringEqualsOutputReference",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEqualsOutputReference",
 		reflect.TypeOf((*BackupSelectionConditionStringEqualsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -209,11 +209,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.backupSelection.BackupSelectionConditionStringLike",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLike",
 		reflect.TypeOf((*BackupSelectionConditionStringLike)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.backupSelection.BackupSelectionConditionStringLikeList",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLikeList",
 		reflect.TypeOf((*BackupSelectionConditionStringLikeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -234,7 +234,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.backupSelection.BackupSelectionConditionStringLikeOutputReference",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLikeOutputReference",
 		reflect.TypeOf((*BackupSelectionConditionStringLikeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -270,11 +270,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.backupSelection.BackupSelectionConditionStringNotEquals",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEquals",
 		reflect.TypeOf((*BackupSelectionConditionStringNotEquals)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.backupSelection.BackupSelectionConditionStringNotEqualsList",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEqualsList",
 		reflect.TypeOf((*BackupSelectionConditionStringNotEqualsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -295,7 +295,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.backupSelection.BackupSelectionConditionStringNotEqualsOutputReference",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEqualsOutputReference",
 		reflect.TypeOf((*BackupSelectionConditionStringNotEqualsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -331,11 +331,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.backupSelection.BackupSelectionConditionStringNotLike",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLike",
 		reflect.TypeOf((*BackupSelectionConditionStringNotLike)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.backupSelection.BackupSelectionConditionStringNotLikeList",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLikeList",
 		reflect.TypeOf((*BackupSelectionConditionStringNotLikeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -356,7 +356,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.backupSelection.BackupSelectionConditionStringNotLikeOutputReference",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLikeOutputReference",
 		reflect.TypeOf((*BackupSelectionConditionStringNotLikeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -392,15 +392,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.backupSelection.BackupSelectionConfig",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConfig",
 		reflect.TypeOf((*BackupSelectionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.backupSelection.BackupSelectionSelectionTag",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTag",
 		reflect.TypeOf((*BackupSelectionSelectionTag)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.backupSelection.BackupSelectionSelectionTagList",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTagList",
 		reflect.TypeOf((*BackupSelectionSelectionTagList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -421,7 +421,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.backupSelection.BackupSelectionSelectionTagOutputReference",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTagOutputReference",
 		reflect.TypeOf((*BackupSelectionSelectionTagOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

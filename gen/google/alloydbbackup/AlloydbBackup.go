@@ -573,7 +573,7 @@ func NewAlloydbBackup(scope constructs.Construct, id *string, config *AlloydbBac
 	j := jsiiProxy_AlloydbBackup{}
 
 	_jsii_.Create(
-		"google.alloydbBackup.AlloydbBackup",
+		"@cdktf/provider-google.alloydbBackup.AlloydbBackup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -586,7 +586,7 @@ func NewAlloydbBackup_Override(a AlloydbBackup, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.alloydbBackup.AlloydbBackup",
+		"@cdktf/provider-google.alloydbBackup.AlloydbBackup",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -763,7 +763,7 @@ func AlloydbBackup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.alloydbBackup.AlloydbBackup",
+		"@cdktf/provider-google.alloydbBackup.AlloydbBackup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -782,7 +782,7 @@ func AlloydbBackup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.alloydbBackup.AlloydbBackup",
+		"@cdktf/provider-google.alloydbBackup.AlloydbBackup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -801,7 +801,7 @@ func AlloydbBackup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.alloydbBackup.AlloydbBackup",
+		"@cdktf/provider-google.alloydbBackup.AlloydbBackup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -814,7 +814,7 @@ func AlloydbBackup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.alloydbBackup.AlloydbBackup",
+		"@cdktf/provider-google.alloydbBackup.AlloydbBackup",
 		"tfResourceType",
 		&returns,
 	)

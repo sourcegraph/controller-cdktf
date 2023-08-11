@@ -104,7 +104,7 @@ func NewMwaaEnvironmentLastUpdatedList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_MwaaEnvironmentLastUpdatedList{}
 
 	_jsii_.Create(
-		"aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedList",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewMwaaEnvironmentLastUpdatedList_Override(m MwaaEnvironmentLastUpdatedList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedList",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

@@ -272,7 +272,7 @@ func NewChimeVoiceConnectorOriginationRouteOutputReference(terraformResource cdk
 	j := jsiiProxy_ChimeVoiceConnectorOriginationRouteOutputReference{}
 
 	_jsii_.Create(
-		"aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationRouteOutputReference",
+		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationRouteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -284,7 +284,7 @@ func NewChimeVoiceConnectorOriginationRouteOutputReference_Override(c ChimeVoice
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationRouteOutputReference",
+		"@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationRouteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

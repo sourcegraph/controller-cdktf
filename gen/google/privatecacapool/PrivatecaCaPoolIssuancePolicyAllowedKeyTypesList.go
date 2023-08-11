@@ -116,7 +116,7 @@ func NewPrivatecaCaPoolIssuancePolicyAllowedKeyTypesList(terraformResource cdktf
 	j := jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesList{}
 
 	_jsii_.Create(
-		"google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedKeyTypesList",
+		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedKeyTypesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPrivatecaCaPoolIssuancePolicyAllowedKeyTypesList_Override(p PrivatecaCaP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedKeyTypesList",
+		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedKeyTypesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

@@ -507,7 +507,7 @@ func NewWorklinkFleet(scope constructs.Construct, id *string, config *WorklinkFl
 	j := jsiiProxy_WorklinkFleet{}
 
 	_jsii_.Create(
-		"aws.worklinkFleet.WorklinkFleet",
+		"@cdktf/provider-aws.worklinkFleet.WorklinkFleet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -520,7 +520,7 @@ func NewWorklinkFleet_Override(w WorklinkFleet, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.worklinkFleet.WorklinkFleet",
+		"@cdktf/provider-aws.worklinkFleet.WorklinkFleet",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -686,7 +686,7 @@ func WorklinkFleet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.worklinkFleet.WorklinkFleet",
+		"@cdktf/provider-aws.worklinkFleet.WorklinkFleet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -705,7 +705,7 @@ func WorklinkFleet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.worklinkFleet.WorklinkFleet",
+		"@cdktf/provider-aws.worklinkFleet.WorklinkFleet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -724,7 +724,7 @@ func WorklinkFleet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.worklinkFleet.WorklinkFleet",
+		"@cdktf/provider-aws.worklinkFleet.WorklinkFleet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -737,7 +737,7 @@ func WorklinkFleet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.worklinkFleet.WorklinkFleet",
+		"@cdktf/provider-aws.worklinkFleet.WorklinkFleet",
 		"tfResourceType",
 		&returns,
 	)

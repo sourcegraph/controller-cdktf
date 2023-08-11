@@ -415,7 +415,7 @@ func NewPubsubSchema(scope constructs.Construct, id *string, config *PubsubSchem
 	j := jsiiProxy_PubsubSchema{}
 
 	_jsii_.Create(
-		"google.pubsubSchema.PubsubSchema",
+		"@cdktf/provider-google.pubsubSchema.PubsubSchema",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -428,7 +428,7 @@ func NewPubsubSchema_Override(p PubsubSchema, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.pubsubSchema.PubsubSchema",
+		"@cdktf/provider-google.pubsubSchema.PubsubSchema",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -583,7 +583,7 @@ func PubsubSchema_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubSchema.PubsubSchema",
+		"@cdktf/provider-google.pubsubSchema.PubsubSchema",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -602,7 +602,7 @@ func PubsubSchema_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubSchema.PubsubSchema",
+		"@cdktf/provider-google.pubsubSchema.PubsubSchema",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func PubsubSchema_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubSchema.PubsubSchema",
+		"@cdktf/provider-google.pubsubSchema.PubsubSchema",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func PubsubSchema_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.pubsubSchema.PubsubSchema",
+		"@cdktf/provider-google.pubsubSchema.PubsubSchema",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dxConnection.DxConnection",
+		"@cdktf/provider-aws.dxConnection.DxConnection",
 		reflect.TypeOf((*DxConnection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dxConnection.DxConnectionConfig",
+		"@cdktf/provider-aws.dxConnection.DxConnectionConfig",
 		reflect.TypeOf((*DxConnectionConfig)(nil)).Elem(),
 	)
 }

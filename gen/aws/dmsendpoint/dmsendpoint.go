@@ -904,7 +904,7 @@ func NewDmsEndpoint(scope constructs.Construct, id *string, config *DmsEndpointC
 	j := jsiiProxy_DmsEndpoint{}
 
 	_jsii_.Create(
-		"aws.dmsEndpoint.DmsEndpoint",
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -917,7 +917,7 @@ func NewDmsEndpoint_Override(d DmsEndpoint, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dmsEndpoint.DmsEndpoint",
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpoint",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -1215,7 +1215,7 @@ func DmsEndpoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dmsEndpoint.DmsEndpoint",
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1234,7 +1234,7 @@ func DmsEndpoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dmsEndpoint.DmsEndpoint",
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1253,7 +1253,7 @@ func DmsEndpoint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dmsEndpoint.DmsEndpoint",
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpoint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1266,7 +1266,7 @@ func DmsEndpoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dmsEndpoint.DmsEndpoint",
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpoint",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.notebooksInstanceIamMember.NotebooksInstanceIamMember",
+		"@cdktf/provider-google.notebooksInstanceIamMember.NotebooksInstanceIamMember",
 		reflect.TypeOf((*NotebooksInstanceIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.notebooksInstanceIamMember.NotebooksInstanceIamMemberCondition",
+		"@cdktf/provider-google.notebooksInstanceIamMember.NotebooksInstanceIamMemberCondition",
 		reflect.TypeOf((*NotebooksInstanceIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.notebooksInstanceIamMember.NotebooksInstanceIamMemberConditionOutputReference",
+		"@cdktf/provider-google.notebooksInstanceIamMember.NotebooksInstanceIamMemberConditionOutputReference",
 		reflect.TypeOf((*NotebooksInstanceIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.notebooksInstanceIamMember.NotebooksInstanceIamMemberConfig",
+		"@cdktf/provider-google.notebooksInstanceIamMember.NotebooksInstanceIamMemberConfig",
 		reflect.TypeOf((*NotebooksInstanceIamMemberConfig)(nil)).Elem(),
 	)
 }

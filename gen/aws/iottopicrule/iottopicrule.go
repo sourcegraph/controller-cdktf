@@ -951,7 +951,7 @@ func NewIotTopicRule(scope constructs.Construct, id *string, config *IotTopicRul
 	j := jsiiProxy_IotTopicRule{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRule",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -964,7 +964,7 @@ func NewIotTopicRule_Override(i IotTopicRule, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRule",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRule",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -1152,7 +1152,7 @@ func IotTopicRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotTopicRule.IotTopicRule",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1171,7 +1171,7 @@ func IotTopicRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotTopicRule.IotTopicRule",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1190,7 +1190,7 @@ func IotTopicRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotTopicRule.IotTopicRule",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1203,7 +1203,7 @@ func IotTopicRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iotTopicRule.IotTopicRule",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRule",
 		"tfResourceType",
 		&returns,
 	)

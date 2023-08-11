@@ -226,7 +226,7 @@ func NewDataplexAssetIamMemberConditionOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_DataplexAssetIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.dataplexAssetIamMember.DataplexAssetIamMemberConditionOutputReference",
+		"@cdktf/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDataplexAssetIamMemberConditionOutputReference_Override(d DataplexAssetI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexAssetIamMember.DataplexAssetIamMemberConditionOutputReference",
+		"@cdktf/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -104,7 +104,7 @@ func NewNetworkfirewallFirewallFirewallStatusSyncStatesList(terraformResource cd
 	j := jsiiProxy_NetworkfirewallFirewallFirewallStatusSyncStatesList{}
 
 	_jsii_.Create(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesList",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewNetworkfirewallFirewallFirewallStatusSyncStatesList_Override(n Networkfi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesList",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

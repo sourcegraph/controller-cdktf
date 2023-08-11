@@ -167,7 +167,7 @@ func NewDataAwsKinesisStreamStreamModeDetailsOutputReference(terraformResource c
 	j := jsiiProxy_DataAwsKinesisStreamStreamModeDetailsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsKinesisStream.DataAwsKinesisStreamStreamModeDetailsOutputReference",
+		"@cdktf/provider-aws.dataAwsKinesisStream.DataAwsKinesisStreamStreamModeDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsKinesisStreamStreamModeDetailsOutputReference_Override(d DataAwsK
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKinesisStream.DataAwsKinesisStreamStreamModeDetailsOutputReference",
+		"@cdktf/provider-aws.dataAwsKinesisStream.DataAwsKinesisStreamStreamModeDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

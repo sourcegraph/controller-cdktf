@@ -104,7 +104,7 @@ func NewAppEngineApplicationUrlDispatchRuleList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_AppEngineApplicationUrlDispatchRuleList{}
 
 	_jsii_.Create(
-		"google.appEngineApplication.AppEngineApplicationUrlDispatchRuleList",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationUrlDispatchRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewAppEngineApplicationUrlDispatchRuleList_Override(a AppEngineApplicationU
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineApplication.AppEngineApplicationUrlDispatchRuleList",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationUrlDispatchRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

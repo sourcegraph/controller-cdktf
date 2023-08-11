@@ -226,7 +226,7 @@ func NewTagsTagValueIamMemberConditionOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_TagsTagValueIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.tagsTagValueIamMember.TagsTagValueIamMemberConditionOutputReference",
+		"@cdktf/provider-google.tagsTagValueIamMember.TagsTagValueIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewTagsTagValueIamMemberConditionOutputReference_Override(t TagsTagValueIam
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.tagsTagValueIamMember.TagsTagValueIamMemberConditionOutputReference",
+		"@cdktf/provider-google.tagsTagValueIamMember.TagsTagValueIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

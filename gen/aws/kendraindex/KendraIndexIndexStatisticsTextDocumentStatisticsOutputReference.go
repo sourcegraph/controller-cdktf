@@ -178,7 +178,7 @@ func NewKendraIndexIndexStatisticsTextDocumentStatisticsOutputReference(terrafor
 	j := jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsOutputReference{}
 
 	_jsii_.Create(
-		"aws.kendraIndex.KendraIndexIndexStatisticsTextDocumentStatisticsOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatisticsTextDocumentStatisticsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewKendraIndexIndexStatisticsTextDocumentStatisticsOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraIndex.KendraIndexIndexStatisticsTextDocumentStatisticsOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatisticsTextDocumentStatisticsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		k,
 	)

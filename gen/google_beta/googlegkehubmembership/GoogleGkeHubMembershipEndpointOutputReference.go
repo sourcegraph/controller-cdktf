@@ -180,7 +180,7 @@ func NewGoogleGkeHubMembershipEndpointOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_GoogleGkeHubMembershipEndpointOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubMembership.GoogleGkeHubMembershipEndpointOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipEndpointOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleGkeHubMembershipEndpointOutputReference_Override(g GoogleGkeHubMem
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubMembership.GoogleGkeHubMembershipEndpointOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipEndpointOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

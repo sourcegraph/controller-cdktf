@@ -532,7 +532,7 @@ func NewEmrInstanceGroup(scope constructs.Construct, id *string, config *EmrInst
 	j := jsiiProxy_EmrInstanceGroup{}
 
 	_jsii_.Create(
-		"aws.emrInstanceGroup.EmrInstanceGroup",
+		"@cdktf/provider-aws.emrInstanceGroup.EmrInstanceGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -545,7 +545,7 @@ func NewEmrInstanceGroup_Override(e EmrInstanceGroup, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrInstanceGroup.EmrInstanceGroup",
+		"@cdktf/provider-aws.emrInstanceGroup.EmrInstanceGroup",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -744,7 +744,7 @@ func EmrInstanceGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrInstanceGroup.EmrInstanceGroup",
+		"@cdktf/provider-aws.emrInstanceGroup.EmrInstanceGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -763,7 +763,7 @@ func EmrInstanceGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrInstanceGroup.EmrInstanceGroup",
+		"@cdktf/provider-aws.emrInstanceGroup.EmrInstanceGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -782,7 +782,7 @@ func EmrInstanceGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrInstanceGroup.EmrInstanceGroup",
+		"@cdktf/provider-aws.emrInstanceGroup.EmrInstanceGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -795,7 +795,7 @@ func EmrInstanceGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.emrInstanceGroup.EmrInstanceGroup",
+		"@cdktf/provider-aws.emrInstanceGroup.EmrInstanceGroup",
 		"tfResourceType",
 		&returns,
 	)

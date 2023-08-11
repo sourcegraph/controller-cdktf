@@ -252,7 +252,7 @@ func NewGoogleEventarcTriggerDestinationOutputReference(terraformResource cdktf.
 	j := jsiiProxy_GoogleEventarcTriggerDestinationOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleEventarcTrigger.GoogleEventarcTriggerDestinationOutputReference",
+		"@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGoogleEventarcTriggerDestinationOutputReference_Override(g GoogleEventar
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleEventarcTrigger.GoogleEventarcTriggerDestinationOutputReference",
+		"@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

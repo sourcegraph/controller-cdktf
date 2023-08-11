@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dynamodbTag.DynamodbTag",
+		"@cdktf/provider-aws.dynamodbTag.DynamodbTag",
 		reflect.TypeOf((*DynamodbTag)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dynamodbTag.DynamodbTagConfig",
+		"@cdktf/provider-aws.dynamodbTag.DynamodbTagConfig",
 		reflect.TypeOf((*DynamodbTagConfig)(nil)).Elem(),
 	)
 }

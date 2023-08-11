@@ -458,7 +458,7 @@ func NewAppflowConnectorProfile(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_AppflowConnectorProfile{}
 
 	_jsii_.Create(
-		"aws.appflowConnectorProfile.AppflowConnectorProfile",
+		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -471,7 +471,7 @@ func NewAppflowConnectorProfile_Override(a AppflowConnectorProfile, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowConnectorProfile.AppflowConnectorProfile",
+		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -637,7 +637,7 @@ func AppflowConnectorProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appflowConnectorProfile.AppflowConnectorProfile",
+		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -656,7 +656,7 @@ func AppflowConnectorProfile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appflowConnectorProfile.AppflowConnectorProfile",
+		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -675,7 +675,7 @@ func AppflowConnectorProfile_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appflowConnectorProfile.AppflowConnectorProfile",
+		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func AppflowConnectorProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appflowConnectorProfile.AppflowConnectorProfile",
+		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile",
 		"tfResourceType",
 		&returns,
 	)

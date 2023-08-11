@@ -417,7 +417,7 @@ func NewDataAwsServiceDiscoveryService(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataAwsServiceDiscoveryService{}
 
 	_jsii_.Create(
-		"aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService",
+		"@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -430,7 +430,7 @@ func NewDataAwsServiceDiscoveryService_Override(d DataAwsServiceDiscoveryService
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService",
+		"@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -563,7 +563,7 @@ func DataAwsServiceDiscoveryService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService",
+		"@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -582,7 +582,7 @@ func DataAwsServiceDiscoveryService_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService",
+		"@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func DataAwsServiceDiscoveryService_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService",
+		"@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -614,7 +614,7 @@ func DataAwsServiceDiscoveryService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService",
+		"@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService",
 		"tfResourceType",
 		&returns,
 	)

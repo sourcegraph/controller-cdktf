@@ -179,7 +179,7 @@ func NewRoute53RecordWeightedRoutingPolicyOutputReference(terraformResource cdkt
 	j := jsiiProxy_Route53RecordWeightedRoutingPolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.route53Record.Route53RecordWeightedRoutingPolicyOutputReference",
+		"@cdktf/provider-aws.route53Record.Route53RecordWeightedRoutingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewRoute53RecordWeightedRoutingPolicyOutputReference_Override(r Route53Reco
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53Record.Route53RecordWeightedRoutingPolicyOutputReference",
+		"@cdktf/provider-aws.route53Record.Route53RecordWeightedRoutingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

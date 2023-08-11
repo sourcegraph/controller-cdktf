@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.glueConnection.GlueConnection",
+		"@cdktf/provider-aws.glueConnection.GlueConnection",
 		reflect.TypeOf((*GlueConnection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,15 +83,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueConnection.GlueConnectionConfig",
+		"@cdktf/provider-aws.glueConnection.GlueConnectionConfig",
 		reflect.TypeOf((*GlueConnectionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueConnection.GlueConnectionPhysicalConnectionRequirements",
+		"@cdktf/provider-aws.glueConnection.GlueConnectionPhysicalConnectionRequirements",
 		reflect.TypeOf((*GlueConnectionPhysicalConnectionRequirements)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.glueConnection.GlueConnectionPhysicalConnectionRequirementsOutputReference",
+		"@cdktf/provider-aws.glueConnection.GlueConnectionPhysicalConnectionRequirementsOutputReference",
 		reflect.TypeOf((*GlueConnectionPhysicalConnectionRequirementsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZone", GoGetter: "AvailabilityZone"},

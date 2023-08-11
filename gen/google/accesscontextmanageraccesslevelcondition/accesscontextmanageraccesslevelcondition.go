@@ -487,7 +487,7 @@ func NewAccessContextManagerAccessLevelCondition(scope constructs.Construct, id 
 	j := jsiiProxy_AccessContextManagerAccessLevelCondition{}
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelCondition",
+		"@cdktf/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelCondition",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -500,7 +500,7 @@ func NewAccessContextManagerAccessLevelCondition_Override(a AccessContextManager
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelCondition",
+		"@cdktf/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelCondition",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -677,7 +677,7 @@ func AccessContextManagerAccessLevelCondition_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelCondition",
+		"@cdktf/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelCondition",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -696,7 +696,7 @@ func AccessContextManagerAccessLevelCondition_IsTerraformElement(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelCondition",
+		"@cdktf/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelCondition",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func AccessContextManagerAccessLevelCondition_IsTerraformResource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelCondition",
+		"@cdktf/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelCondition",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -728,7 +728,7 @@ func AccessContextManagerAccessLevelCondition_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelCondition",
+		"@cdktf/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelCondition",
 		"tfResourceType",
 		&returns,
 	)

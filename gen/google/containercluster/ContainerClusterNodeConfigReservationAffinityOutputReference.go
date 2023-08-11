@@ -227,7 +227,7 @@ func NewContainerClusterNodeConfigReservationAffinityOutputReference(terraformRe
 	j := jsiiProxy_ContainerClusterNodeConfigReservationAffinityOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterNodeConfigReservationAffinityOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigReservationAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewContainerClusterNodeConfigReservationAffinityOutputReference_Override(c 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterNodeConfigReservationAffinityOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigReservationAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

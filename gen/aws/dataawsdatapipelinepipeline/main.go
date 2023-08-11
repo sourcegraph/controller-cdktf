@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline",
+		"@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline",
 		reflect.TypeOf((*DataAwsDatapipelinePipeline)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig",
+		"@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig",
 		reflect.TypeOf((*DataAwsDatapipelinePipelineConfig)(nil)).Elem(),
 	)
 }

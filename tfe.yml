@@ -1,0 +1,11 @@
+name: tfe
+
+provider:
+  source: registry.terraform.io/hashicorp/tfe
+  version: "0.42.0"
+
+target:
+  language: go
+  moduleName: github.com/sourcegraph/controller-cdktf/gen
+
+output: gen

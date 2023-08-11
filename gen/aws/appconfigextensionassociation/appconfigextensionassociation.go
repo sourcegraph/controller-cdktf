@@ -388,7 +388,7 @@ func NewAppconfigExtensionAssociation(scope constructs.Construct, id *string, co
 	j := jsiiProxy_AppconfigExtensionAssociation{}
 
 	_jsii_.Create(
-		"aws.appconfigExtensionAssociation.AppconfigExtensionAssociation",
+		"@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -401,7 +401,7 @@ func NewAppconfigExtensionAssociation_Override(a AppconfigExtensionAssociation, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appconfigExtensionAssociation.AppconfigExtensionAssociation",
+		"@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -545,7 +545,7 @@ func AppconfigExtensionAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appconfigExtensionAssociation.AppconfigExtensionAssociation",
+		"@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func AppconfigExtensionAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appconfigExtensionAssociation.AppconfigExtensionAssociation",
+		"@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func AppconfigExtensionAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appconfigExtensionAssociation.AppconfigExtensionAssociation",
+		"@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func AppconfigExtensionAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appconfigExtensionAssociation.AppconfigExtensionAssociation",
+		"@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation",
 		"tfResourceType",
 		&returns,
 	)

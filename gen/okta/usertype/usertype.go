@@ -365,7 +365,7 @@ func NewUserType(scope constructs.Construct, id *string, config *UserTypeConfig)
 	j := jsiiProxy_UserType{}
 
 	_jsii_.Create(
-		"okta.userType.UserType",
+		"@cdktf/provider-okta.userType.UserType",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewUserType_Override(u UserType, scope constructs.Construct, id *string, co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.userType.UserType",
+		"@cdktf/provider-okta.userType.UserType",
 		[]interface{}{scope, id, config},
 		u,
 	)
@@ -522,7 +522,7 @@ func UserType_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.userType.UserType",
+		"@cdktf/provider-okta.userType.UserType",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func UserType_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.userType.UserType",
+		"@cdktf/provider-okta.userType.UserType",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func UserType_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.userType.UserType",
+		"@cdktf/provider-okta.userType.UserType",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func UserType_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.userType.UserType",
+		"@cdktf/provider-okta.userType.UserType",
 		"tfResourceType",
 		&returns,
 	)

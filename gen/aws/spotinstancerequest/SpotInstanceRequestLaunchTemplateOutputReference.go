@@ -228,7 +228,7 @@ func NewSpotInstanceRequestLaunchTemplateOutputReference(terraformResource cdktf
 	j := jsiiProxy_SpotInstanceRequestLaunchTemplateOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestLaunchTemplateOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestLaunchTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSpotInstanceRequestLaunchTemplateOutputReference_Override(s SpotInstance
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestLaunchTemplateOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestLaunchTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -279,7 +279,7 @@ func NewDataAwsBillingServiceAccount(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataAwsBillingServiceAccount{}
 
 	_jsii_.Create(
-		"aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount",
+		"@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -292,7 +292,7 @@ func NewDataAwsBillingServiceAccount_Override(d DataAwsBillingServiceAccount, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount",
+		"@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -381,7 +381,7 @@ func DataAwsBillingServiceAccount_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount",
+		"@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -400,7 +400,7 @@ func DataAwsBillingServiceAccount_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount",
+		"@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -419,7 +419,7 @@ func DataAwsBillingServiceAccount_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount",
+		"@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -432,7 +432,7 @@ func DataAwsBillingServiceAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount",
+		"@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount",
 		"tfResourceType",
 		&returns,
 	)

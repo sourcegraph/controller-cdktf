@@ -116,7 +116,7 @@ func NewS3BucketNotificationTopicList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_S3BucketNotificationTopicList{}
 
 	_jsii_.Create(
-		"aws.s3BucketNotification.S3BucketNotificationTopicList",
+		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotificationTopicList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewS3BucketNotificationTopicList_Override(s S3BucketNotificationTopicList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketNotification.S3BucketNotificationTopicList",
+		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotificationTopicList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

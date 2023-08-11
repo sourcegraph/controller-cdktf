@@ -116,7 +116,7 @@ func NewAutoscalingGroupTagList(terraformResource cdktf.IInterpolatingParent, te
 	j := jsiiProxy_AutoscalingGroupTagList{}
 
 	_jsii_.Create(
-		"aws.autoscalingGroup.AutoscalingGroupTagList",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupTagList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAutoscalingGroupTagList_Override(a AutoscalingGroupTagList, terraformRes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingGroup.AutoscalingGroupTagList",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupTagList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

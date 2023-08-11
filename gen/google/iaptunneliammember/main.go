@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.iapTunnelIamMember.IapTunnelIamMember",
+		"@cdktf/provider-google.iapTunnelIamMember.IapTunnelIamMember",
 		reflect.TypeOf((*IapTunnelIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,11 +67,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.iapTunnelIamMember.IapTunnelIamMemberCondition",
+		"@cdktf/provider-google.iapTunnelIamMember.IapTunnelIamMemberCondition",
 		reflect.TypeOf((*IapTunnelIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.iapTunnelIamMember.IapTunnelIamMemberConditionOutputReference",
+		"@cdktf/provider-google.iapTunnelIamMember.IapTunnelIamMemberConditionOutputReference",
 		reflect.TypeOf((*IapTunnelIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -110,7 +110,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.iapTunnelIamMember.IapTunnelIamMemberConfig",
+		"@cdktf/provider-google.iapTunnelIamMember.IapTunnelIamMemberConfig",
 		reflect.TypeOf((*IapTunnelIamMemberConfig)(nil)).Elem(),
 	)
 }

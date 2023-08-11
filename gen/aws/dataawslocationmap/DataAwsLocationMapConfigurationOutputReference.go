@@ -167,7 +167,7 @@ func NewDataAwsLocationMapConfigurationOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_DataAwsLocationMapConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsLocationMap.DataAwsLocationMapConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMapConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsLocationMapConfigurationOutputReference_Override(d DataAwsLocatio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLocationMap.DataAwsLocationMapConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMapConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

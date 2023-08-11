@@ -390,7 +390,7 @@ func NewApiGatewayRequestValidator(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_ApiGatewayRequestValidator{}
 
 	_jsii_.Create(
-		"aws.apiGatewayRequestValidator.ApiGatewayRequestValidator",
+		"@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewApiGatewayRequestValidator_Override(a ApiGatewayRequestValidator, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayRequestValidator.ApiGatewayRequestValidator",
+		"@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -558,7 +558,7 @@ func ApiGatewayRequestValidator_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayRequestValidator.ApiGatewayRequestValidator",
+		"@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func ApiGatewayRequestValidator_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayRequestValidator.ApiGatewayRequestValidator",
+		"@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func ApiGatewayRequestValidator_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayRequestValidator.ApiGatewayRequestValidator",
+		"@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func ApiGatewayRequestValidator_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apiGatewayRequestValidator.ApiGatewayRequestValidator",
+		"@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator",
 		"tfResourceType",
 		&returns,
 	)

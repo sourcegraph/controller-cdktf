@@ -116,7 +116,7 @@ func NewRulesetRulesActionParametersFromListStructList(terraformResource cdktf.I
 	j := jsiiProxy_RulesetRulesActionParametersFromListStructList{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersFromListStructList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRulesetRulesActionParametersFromListStructList_Override(r RulesetRulesAc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersFromListStructList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

@@ -516,7 +516,7 @@ func NewGoogleDataprocMetastoreFederation(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleDataprocMetastoreFederation{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocMetastoreFederation.GoogleDataprocMetastoreFederation",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreFederation.GoogleDataprocMetastoreFederation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -529,7 +529,7 @@ func NewGoogleDataprocMetastoreFederation_Override(g GoogleDataprocMetastoreFede
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocMetastoreFederation.GoogleDataprocMetastoreFederation",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreFederation.GoogleDataprocMetastoreFederation",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -695,7 +695,7 @@ func GoogleDataprocMetastoreFederation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocMetastoreFederation.GoogleDataprocMetastoreFederation",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreFederation.GoogleDataprocMetastoreFederation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +714,7 @@ func GoogleDataprocMetastoreFederation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocMetastoreFederation.GoogleDataprocMetastoreFederation",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreFederation.GoogleDataprocMetastoreFederation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -733,7 +733,7 @@ func GoogleDataprocMetastoreFederation_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocMetastoreFederation.GoogleDataprocMetastoreFederation",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreFederation.GoogleDataprocMetastoreFederation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -746,7 +746,7 @@ func GoogleDataprocMetastoreFederation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataprocMetastoreFederation.GoogleDataprocMetastoreFederation",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreFederation.GoogleDataprocMetastoreFederation",
 		"tfResourceType",
 		&returns,
 	)

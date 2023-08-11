@@ -603,7 +603,7 @@ func NewAccessPolicy(scope constructs.Construct, id *string, config *AccessPolic
 	j := jsiiProxy_AccessPolicy{}
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicy",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -616,7 +616,7 @@ func NewAccessPolicy_Override(a AccessPolicy, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicy",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicy",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -826,7 +826,7 @@ func AccessPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessPolicy.AccessPolicy",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -845,7 +845,7 @@ func AccessPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessPolicy.AccessPolicy",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -864,7 +864,7 @@ func AccessPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessPolicy.AccessPolicy",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -877,7 +877,7 @@ func AccessPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.accessPolicy.AccessPolicy",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicy",
 		"tfResourceType",
 		&returns,
 	)

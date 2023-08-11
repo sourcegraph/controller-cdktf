@@ -179,7 +179,7 @@ func NewGoogleTpuNodeSchedulingConfigOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_GoogleTpuNodeSchedulingConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleTpuNode.GoogleTpuNodeSchedulingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeSchedulingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleTpuNodeSchedulingConfigOutputReference_Override(g GoogleTpuNodeSch
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleTpuNode.GoogleTpuNodeSchedulingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeSchedulingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

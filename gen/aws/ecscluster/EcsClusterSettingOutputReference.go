@@ -202,7 +202,7 @@ func NewEcsClusterSettingOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_EcsClusterSettingOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsCluster.EcsClusterSettingOutputReference",
+		"@cdktf/provider-aws.ecsCluster.EcsClusterSettingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewEcsClusterSettingOutputReference_Override(e EcsClusterSettingOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsCluster.EcsClusterSettingOutputReference",
+		"@cdktf/provider-aws.ecsCluster.EcsClusterSettingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

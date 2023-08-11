@@ -204,7 +204,7 @@ func NewKeyspacesKeyspaceTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_KeyspacesKeyspaceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.keyspacesKeyspace.KeyspacesKeyspaceTimeoutsOutputReference",
+		"@cdktf/provider-aws.keyspacesKeyspace.KeyspacesKeyspaceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewKeyspacesKeyspaceTimeoutsOutputReference_Override(k KeyspacesKeyspaceTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.keyspacesKeyspace.KeyspacesKeyspaceTimeoutsOutputReference",
+		"@cdktf/provider-aws.keyspacesKeyspace.KeyspacesKeyspaceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

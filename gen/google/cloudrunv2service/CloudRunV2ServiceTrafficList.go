@@ -116,7 +116,7 @@ func NewCloudRunV2ServiceTrafficList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_CloudRunV2ServiceTrafficList{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Service.CloudRunV2ServiceTrafficList",
+		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTrafficList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudRunV2ServiceTrafficList_Override(c CloudRunV2ServiceTrafficList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Service.CloudRunV2ServiceTrafficList",
+		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTrafficList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

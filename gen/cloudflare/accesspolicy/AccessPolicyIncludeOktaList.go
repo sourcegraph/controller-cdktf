@@ -116,7 +116,7 @@ func NewAccessPolicyIncludeOktaList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_AccessPolicyIncludeOktaList{}
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyIncludeOktaList",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeOktaList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessPolicyIncludeOktaList_Override(a AccessPolicyIncludeOktaList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyIncludeOktaList",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeOktaList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

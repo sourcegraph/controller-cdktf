@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.loggingFolderSink.LoggingFolderSink",
+		"@cdktf/provider-google.loggingFolderSink.LoggingFolderSink",
 		reflect.TypeOf((*LoggingFolderSink)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,11 +82,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingFolderSink.LoggingFolderSinkBigqueryOptions",
+		"@cdktf/provider-google.loggingFolderSink.LoggingFolderSinkBigqueryOptions",
 		reflect.TypeOf((*LoggingFolderSinkBigqueryOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.loggingFolderSink.LoggingFolderSinkBigqueryOptionsOutputReference",
+		"@cdktf/provider-google.loggingFolderSink.LoggingFolderSinkBigqueryOptionsOutputReference",
 		reflect.TypeOf((*LoggingFolderSinkBigqueryOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -120,15 +120,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingFolderSink.LoggingFolderSinkConfig",
+		"@cdktf/provider-google.loggingFolderSink.LoggingFolderSinkConfig",
 		reflect.TypeOf((*LoggingFolderSinkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingFolderSink.LoggingFolderSinkExclusions",
+		"@cdktf/provider-google.loggingFolderSink.LoggingFolderSinkExclusions",
 		reflect.TypeOf((*LoggingFolderSinkExclusions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.loggingFolderSink.LoggingFolderSinkExclusionsList",
+		"@cdktf/provider-google.loggingFolderSink.LoggingFolderSinkExclusionsList",
 		reflect.TypeOf((*LoggingFolderSinkExclusionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -149,7 +149,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.loggingFolderSink.LoggingFolderSinkExclusionsOutputReference",
+		"@cdktf/provider-google.loggingFolderSink.LoggingFolderSinkExclusionsOutputReference",
 		reflect.TypeOf((*LoggingFolderSinkExclusionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -116,7 +116,7 @@ func NewGoogleAppEngineFlexibleAppVersionHandlersList(terraformResource cdktf.II
 	j := jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersList{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionHandlersList",
+		"@cdktf/provider-google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionHandlersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleAppEngineFlexibleAppVersionHandlersList_Override(g GoogleAppEngine
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionHandlersList",
+		"@cdktf/provider-google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionHandlersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

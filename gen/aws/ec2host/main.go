@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2Host.Ec2Host",
+		"@cdktf/provider-aws.ec2Host.Ec2Host",
 		reflect.TypeOf((*Ec2Host)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2Host.Ec2HostConfig",
+		"@cdktf/provider-aws.ec2Host.Ec2HostConfig",
 		reflect.TypeOf((*Ec2HostConfig)(nil)).Elem(),
 	)
 }

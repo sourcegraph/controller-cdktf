@@ -239,7 +239,7 @@ func NewSwaAppUsersOutputReference(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_SwaAppUsersOutputReference{}
 
 	_jsii_.Create(
-		"okta.swaApp.SwaAppUsersOutputReference",
+		"@cdktf/provider-okta.swaApp.SwaAppUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -251,7 +251,7 @@ func NewSwaAppUsersOutputReference_Override(s SwaAppUsersOutputReference, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.swaApp.SwaAppUsersOutputReference",
+		"@cdktf/provider-okta.swaApp.SwaAppUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

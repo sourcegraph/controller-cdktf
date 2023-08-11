@@ -228,7 +228,7 @@ func NewAppEngineFirewallRuleTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_AppEngineFirewallRuleTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.appEngineFirewallRule.AppEngineFirewallRuleTimeoutsOutputReference",
+		"@cdktf/provider-google.appEngineFirewallRule.AppEngineFirewallRuleTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAppEngineFirewallRuleTimeoutsOutputReference_Override(a AppEngineFirewal
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineFirewallRule.AppEngineFirewallRuleTimeoutsOutputReference",
+		"@cdktf/provider-google.appEngineFirewallRule.AppEngineFirewallRuleTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

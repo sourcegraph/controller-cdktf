@@ -180,7 +180,7 @@ func NewLoadBalancerAdaptiveRoutingOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewLoadBalancerAdaptiveRoutingOutputReference_Override(l LoadBalancerAdapti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

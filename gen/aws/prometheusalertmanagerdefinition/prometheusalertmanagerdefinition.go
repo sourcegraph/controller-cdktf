@@ -342,7 +342,7 @@ func NewPrometheusAlertManagerDefinition(scope constructs.Construct, id *string,
 	j := jsiiProxy_PrometheusAlertManagerDefinition{}
 
 	_jsii_.Create(
-		"aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition",
+		"@cdktf/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewPrometheusAlertManagerDefinition_Override(p PrometheusAlertManagerDefini
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition",
+		"@cdktf/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -488,7 +488,7 @@ func PrometheusAlertManagerDefinition_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition",
+		"@cdktf/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func PrometheusAlertManagerDefinition_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition",
+		"@cdktf/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func PrometheusAlertManagerDefinition_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition",
+		"@cdktf/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func PrometheusAlertManagerDefinition_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition",
+		"@cdktf/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition",
 		"tfResourceType",
 		&returns,
 	)

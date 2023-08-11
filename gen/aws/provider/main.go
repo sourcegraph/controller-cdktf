@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.provider.AwsProvider",
+		"@cdktf/provider-aws.provider.AwsProvider",
 		reflect.TypeOf((*AwsProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKey", GoGetter: "AccessKey"},
@@ -132,27 +132,27 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.provider.AwsProviderAssumeRole",
+		"@cdktf/provider-aws.provider.AwsProviderAssumeRole",
 		reflect.TypeOf((*AwsProviderAssumeRole)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.provider.AwsProviderAssumeRoleWithWebIdentity",
+		"@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity",
 		reflect.TypeOf((*AwsProviderAssumeRoleWithWebIdentity)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.provider.AwsProviderConfig",
+		"@cdktf/provider-aws.provider.AwsProviderConfig",
 		reflect.TypeOf((*AwsProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.provider.AwsProviderDefaultTags",
+		"@cdktf/provider-aws.provider.AwsProviderDefaultTags",
 		reflect.TypeOf((*AwsProviderDefaultTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.provider.AwsProviderEndpoints",
+		"@cdktf/provider-aws.provider.AwsProviderEndpoints",
 		reflect.TypeOf((*AwsProviderEndpoints)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.provider.AwsProviderIgnoreTags",
+		"@cdktf/provider-aws.provider.AwsProviderIgnoreTags",
 		reflect.TypeOf((*AwsProviderIgnoreTags)(nil)).Elem(),
 	)
 }

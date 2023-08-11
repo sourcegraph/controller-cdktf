@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
+		"@cdktf/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
 		reflect.TypeOf((*InspectorAssessmentTarget)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.inspectorAssessmentTarget.InspectorAssessmentTargetConfig",
+		"@cdktf/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTargetConfig",
 		reflect.TypeOf((*InspectorAssessmentTargetConfig)(nil)).Elem(),
 	)
 }

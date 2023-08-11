@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition",
+		"@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition",
 		reflect.TypeOf((*DataAwsCurReportDefinition)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalArtifacts", GoGetter: "AdditionalArtifacts"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig",
+		"@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig",
 		reflect.TypeOf((*DataAwsCurReportDefinitionConfig)(nil)).Elem(),
 	)
 }

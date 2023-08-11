@@ -104,7 +104,7 @@ func NewDataAwsElasticsearchDomainEncryptionAtRestList(terraformResource cdktf.I
 	j := jsiiProxy_DataAwsElasticsearchDomainEncryptionAtRestList{}
 
 	_jsii_.Create(
-		"aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainEncryptionAtRestList",
+		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainEncryptionAtRestList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsElasticsearchDomainEncryptionAtRestList_Override(d DataAwsElastic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainEncryptionAtRestList",
+		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainEncryptionAtRestList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -167,7 +167,7 @@ func NewDataAwsInstanceEnclaveOptionsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_DataAwsInstanceEnclaveOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceEnclaveOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEnclaveOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsInstanceEnclaveOptionsOutputReference_Override(d DataAwsInstanceE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceEnclaveOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEnclaveOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

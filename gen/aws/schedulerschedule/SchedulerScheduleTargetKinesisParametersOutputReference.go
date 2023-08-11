@@ -179,7 +179,7 @@ func NewSchedulerScheduleTargetKinesisParametersOutputReference(terraformResourc
 	j := jsiiProxy_SchedulerScheduleTargetKinesisParametersOutputReference{}
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetKinesisParametersOutputReference",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetKinesisParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewSchedulerScheduleTargetKinesisParametersOutputReference_Override(s Sched
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetKinesisParametersOutputReference",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetKinesisParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

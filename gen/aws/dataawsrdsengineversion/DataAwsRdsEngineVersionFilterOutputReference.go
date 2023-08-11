@@ -202,7 +202,7 @@ func NewDataAwsRdsEngineVersionFilterOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_DataAwsRdsEngineVersionFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsRdsEngineVersionFilterOutputReference_Override(d DataAwsRdsEngine
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

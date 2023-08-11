@@ -116,7 +116,7 @@ func NewDnsManagedZonePrivateVisibilityConfigNetworksList(terraformResource cdkt
 	j := jsiiProxy_DnsManagedZonePrivateVisibilityConfigNetworksList{}
 
 	_jsii_.Create(
-		"google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksList",
+		"@cdktf/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDnsManagedZonePrivateVisibilityConfigNetworksList_Override(d DnsManagedZ
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksList",
+		"@cdktf/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

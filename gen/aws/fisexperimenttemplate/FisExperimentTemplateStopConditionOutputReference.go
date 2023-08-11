@@ -203,7 +203,7 @@ func NewFisExperimentTemplateStopConditionOutputReference(terraformResource cdkt
 	j := jsiiProxy_FisExperimentTemplateStopConditionOutputReference{}
 
 	_jsii_.Create(
-		"aws.fisExperimentTemplate.FisExperimentTemplateStopConditionOutputReference",
+		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateStopConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewFisExperimentTemplateStopConditionOutputReference_Override(f FisExperime
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fisExperimentTemplate.FisExperimentTemplateStopConditionOutputReference",
+		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateStopConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)

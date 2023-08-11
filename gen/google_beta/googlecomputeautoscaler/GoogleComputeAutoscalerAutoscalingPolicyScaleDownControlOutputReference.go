@@ -204,7 +204,7 @@ func NewGoogleComputeAutoscalerAutoscalingPolicyScaleDownControlOutputReference(
 	j := jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyScaleDownControlOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerAutoscalingPolicyScaleDownControlOutputReference",
+		"@cdktf/provider-google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerAutoscalingPolicyScaleDownControlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleComputeAutoscalerAutoscalingPolicyScaleDownControlOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerAutoscalingPolicyScaleDownControlOutputReference",
+		"@cdktf/provider-google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerAutoscalingPolicyScaleDownControlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

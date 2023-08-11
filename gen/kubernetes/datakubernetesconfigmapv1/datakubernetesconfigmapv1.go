@@ -337,7 +337,7 @@ func NewDataKubernetesConfigMapV1(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DataKubernetesConfigMapV1{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesConfigMapV1.DataKubernetesConfigMapV1",
+		"@cdktf/provider-kubernetes.dataKubernetesConfigMapV1.DataKubernetesConfigMapV1",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -350,7 +350,7 @@ func NewDataKubernetesConfigMapV1_Override(d DataKubernetesConfigMapV1, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesConfigMapV1.DataKubernetesConfigMapV1",
+		"@cdktf/provider-kubernetes.dataKubernetesConfigMapV1.DataKubernetesConfigMapV1",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -450,7 +450,7 @@ func DataKubernetesConfigMapV1_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesConfigMapV1.DataKubernetesConfigMapV1",
+		"@cdktf/provider-kubernetes.dataKubernetesConfigMapV1.DataKubernetesConfigMapV1",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -469,7 +469,7 @@ func DataKubernetesConfigMapV1_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesConfigMapV1.DataKubernetesConfigMapV1",
+		"@cdktf/provider-kubernetes.dataKubernetesConfigMapV1.DataKubernetesConfigMapV1",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -488,7 +488,7 @@ func DataKubernetesConfigMapV1_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesConfigMapV1.DataKubernetesConfigMapV1",
+		"@cdktf/provider-kubernetes.dataKubernetesConfigMapV1.DataKubernetesConfigMapV1",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -501,7 +501,7 @@ func DataKubernetesConfigMapV1_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.dataKubernetesConfigMapV1.DataKubernetesConfigMapV1",
+		"@cdktf/provider-kubernetes.dataKubernetesConfigMapV1.DataKubernetesConfigMapV1",
 		"tfResourceType",
 		&returns,
 	)

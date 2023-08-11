@@ -203,7 +203,7 @@ func NewLaunchTemplateInstanceRequirementsVcpuCountOutputReference(terraformReso
 	j := jsiiProxy_LaunchTemplateInstanceRequirementsVcpuCountOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCountOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewLaunchTemplateInstanceRequirementsVcpuCountOutputReference_Override(l La
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCountOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

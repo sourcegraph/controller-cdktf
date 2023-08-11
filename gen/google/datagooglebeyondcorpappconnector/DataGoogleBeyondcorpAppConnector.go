@@ -383,7 +383,7 @@ func NewDataGoogleBeyondcorpAppConnector(scope constructs.Construct, id *string,
 	j := jsiiProxy_DataGoogleBeyondcorpAppConnector{}
 
 	_jsii_.Create(
-		"google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnector",
+		"@cdktf/provider-google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnector",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -396,7 +396,7 @@ func NewDataGoogleBeyondcorpAppConnector_Override(d DataGoogleBeyondcorpAppConne
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnector",
+		"@cdktf/provider-google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnector",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -518,7 +518,7 @@ func DataGoogleBeyondcorpAppConnector_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnector",
+		"@cdktf/provider-google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnector",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func DataGoogleBeyondcorpAppConnector_IsTerraformDataSource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnector",
+		"@cdktf/provider-google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnector",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -556,7 +556,7 @@ func DataGoogleBeyondcorpAppConnector_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnector",
+		"@cdktf/provider-google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnector",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -569,7 +569,7 @@ func DataGoogleBeyondcorpAppConnector_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnector",
+		"@cdktf/provider-google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnector",
 		"tfResourceType",
 		&returns,
 	)

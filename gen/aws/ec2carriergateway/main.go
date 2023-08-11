@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2CarrierGateway.Ec2CarrierGateway",
+		"@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway",
 		reflect.TypeOf((*Ec2CarrierGateway)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2CarrierGateway.Ec2CarrierGatewayConfig",
+		"@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGatewayConfig",
 		reflect.TypeOf((*Ec2CarrierGatewayConfig)(nil)).Elem(),
 	)
 }

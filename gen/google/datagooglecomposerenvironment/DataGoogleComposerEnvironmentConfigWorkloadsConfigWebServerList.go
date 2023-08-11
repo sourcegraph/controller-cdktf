@@ -104,7 +104,7 @@ func NewDataGoogleComposerEnvironmentConfigWorkloadsConfigWebServerList(terrafor
 	j := jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigWebServerList{}
 
 	_jsii_.Create(
-		"google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigWorkloadsConfigWebServerList",
+		"@cdktf/provider-google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigWorkloadsConfigWebServerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComposerEnvironmentConfigWorkloadsConfigWebServerList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigWorkloadsConfigWebServerList",
+		"@cdktf/provider-google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigWorkloadsConfigWebServerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -1,0 +1,11 @@
+name: awsvpc
+
+module:
+  source: terraform-aws-modules/vpc/aws
+  version: "3.19.0"
+
+target:
+  language: go
+  moduleName: github.com/sourcegraph/controller-cdktf/gen
+
+output: gen

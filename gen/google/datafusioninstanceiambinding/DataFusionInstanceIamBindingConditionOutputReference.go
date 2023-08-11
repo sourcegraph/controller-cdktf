@@ -226,7 +226,7 @@ func NewDataFusionInstanceIamBindingConditionOutputReference(terraformResource c
 	j := jsiiProxy_DataFusionInstanceIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.dataFusionInstanceIamBinding.DataFusionInstanceIamBindingConditionOutputReference",
+		"@cdktf/provider-google.dataFusionInstanceIamBinding.DataFusionInstanceIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDataFusionInstanceIamBindingConditionOutputReference_Override(d DataFusi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataFusionInstanceIamBinding.DataFusionInstanceIamBindingConditionOutputReference",
+		"@cdktf/provider-google.dataFusionInstanceIamBinding.DataFusionInstanceIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -202,7 +202,7 @@ func NewDataAwsEc2CoipPoolFilterOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataAwsEc2CoipPoolFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2CoipPool.DataAwsEc2CoipPoolFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2CoipPool.DataAwsEc2CoipPoolFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsEc2CoipPoolFilterOutputReference_Override(d DataAwsEc2CoipPoolFil
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2CoipPool.DataAwsEc2CoipPoolFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2CoipPool.DataAwsEc2CoipPoolFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -302,7 +302,7 @@ func NewDataCloudflareDevices(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataCloudflareDevices{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareDevices.DataCloudflareDevices",
+		"@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevices",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataCloudflareDevices_Override(d DataCloudflareDevices, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareDevices.DataCloudflareDevices",
+		"@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevices",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataCloudflareDevices_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareDevices.DataCloudflareDevices",
+		"@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevices",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataCloudflareDevices_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareDevices.DataCloudflareDevices",
+		"@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevices",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataCloudflareDevices_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareDevices.DataCloudflareDevices",
+		"@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevices",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataCloudflareDevices_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.dataCloudflareDevices.DataCloudflareDevices",
+		"@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevices",
 		"tfResourceType",
 		&returns,
 	)

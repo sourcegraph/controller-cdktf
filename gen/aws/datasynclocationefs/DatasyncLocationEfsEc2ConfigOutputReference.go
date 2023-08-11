@@ -202,7 +202,7 @@ func NewDatasyncLocationEfsEc2ConfigOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DatasyncLocationEfsEc2ConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.datasyncLocationEfs.DatasyncLocationEfsEc2ConfigOutputReference",
+		"@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfsEc2ConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDatasyncLocationEfsEc2ConfigOutputReference_Override(d DatasyncLocationE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datasyncLocationEfs.DatasyncLocationEfsEc2ConfigOutputReference",
+		"@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfsEc2ConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

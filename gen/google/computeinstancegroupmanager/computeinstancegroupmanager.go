@@ -732,7 +732,7 @@ func NewComputeInstanceGroupManager(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_ComputeInstanceGroupManager{}
 
 	_jsii_.Create(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManager",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -745,7 +745,7 @@ func NewComputeInstanceGroupManager_Override(c ComputeInstanceGroupManager, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManager",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -966,7 +966,7 @@ func ComputeInstanceGroupManager_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManager",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -985,7 +985,7 @@ func ComputeInstanceGroupManager_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManager",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1004,7 +1004,7 @@ func ComputeInstanceGroupManager_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManager",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1017,7 +1017,7 @@ func ComputeInstanceGroupManager_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManager",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager",
 		"tfResourceType",
 		&returns,
 	)

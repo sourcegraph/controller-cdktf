@@ -484,7 +484,7 @@ func NewGameServicesRealm(scope constructs.Construct, id *string, config *GameSe
 	j := jsiiProxy_GameServicesRealm{}
 
 	_jsii_.Create(
-		"google.gameServicesRealm.GameServicesRealm",
+		"@cdktf/provider-google.gameServicesRealm.GameServicesRealm",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -497,7 +497,7 @@ func NewGameServicesRealm_Override(g GameServicesRealm, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gameServicesRealm.GameServicesRealm",
+		"@cdktf/provider-google.gameServicesRealm.GameServicesRealm",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -674,7 +674,7 @@ func GameServicesRealm_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gameServicesRealm.GameServicesRealm",
+		"@cdktf/provider-google.gameServicesRealm.GameServicesRealm",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -693,7 +693,7 @@ func GameServicesRealm_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gameServicesRealm.GameServicesRealm",
+		"@cdktf/provider-google.gameServicesRealm.GameServicesRealm",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +712,7 @@ func GameServicesRealm_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gameServicesRealm.GameServicesRealm",
+		"@cdktf/provider-google.gameServicesRealm.GameServicesRealm",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -725,7 +725,7 @@ func GameServicesRealm_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.gameServicesRealm.GameServicesRealm",
+		"@cdktf/provider-google.gameServicesRealm.GameServicesRealm",
 		"tfResourceType",
 		&returns,
 	)

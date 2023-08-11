@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions",
+		"@cdktf/provider-google.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions",
 		reflect.TypeOf((*DataGoogleTpuTensorflowVersions)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersionsConfig",
+		"@cdktf/provider-google.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersionsConfig",
 		reflect.TypeOf((*DataGoogleTpuTensorflowVersionsConfig)(nil)).Elem(),
 	)
 }

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation",
+		"@cdktf/provider-aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation",
 		reflect.TypeOf((*AuditmanagerAssessmentDelegation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegationConfig",
+		"@cdktf/provider-aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegationConfig",
 		reflect.TypeOf((*AuditmanagerAssessmentDelegationConfig)(nil)).Elem(),
 	)
 }

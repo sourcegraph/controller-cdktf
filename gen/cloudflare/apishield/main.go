@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.apiShield.ApiShield",
+		"@cdktf/provider-cloudflare.apiShield.ApiShield",
 		reflect.TypeOf((*ApiShield)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,11 +61,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.apiShield.ApiShieldAuthIdCharacteristics",
+		"@cdktf/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristics",
 		reflect.TypeOf((*ApiShieldAuthIdCharacteristics)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.apiShield.ApiShieldAuthIdCharacteristicsList",
+		"@cdktf/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristicsList",
 		reflect.TypeOf((*ApiShieldAuthIdCharacteristicsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -86,7 +86,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.apiShield.ApiShieldAuthIdCharacteristicsOutputReference",
+		"@cdktf/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristicsOutputReference",
 		reflect.TypeOf((*ApiShieldAuthIdCharacteristicsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -124,7 +124,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.apiShield.ApiShieldConfig",
+		"@cdktf/provider-cloudflare.apiShield.ApiShieldConfig",
 		reflect.TypeOf((*ApiShieldConfig)(nil)).Elem(),
 	)
 }

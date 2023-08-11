@@ -459,7 +459,7 @@ func NewKeyPair(scope constructs.Construct, id *string, config *KeyPairConfig) K
 	j := jsiiProxy_KeyPair{}
 
 	_jsii_.Create(
-		"aws.keyPair.KeyPair",
+		"@cdktf/provider-aws.keyPair.KeyPair",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewKeyPair_Override(k KeyPair, scope constructs.Construct, id *string, conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.keyPair.KeyPair",
+		"@cdktf/provider-aws.keyPair.KeyPair",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -638,7 +638,7 @@ func KeyPair_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.keyPair.KeyPair",
+		"@cdktf/provider-aws.keyPair.KeyPair",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func KeyPair_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.keyPair.KeyPair",
+		"@cdktf/provider-aws.keyPair.KeyPair",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func KeyPair_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.keyPair.KeyPair",
+		"@cdktf/provider-aws.keyPair.KeyPair",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func KeyPair_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.keyPair.KeyPair",
+		"@cdktf/provider-aws.keyPair.KeyPair",
 		"tfResourceType",
 		&returns,
 	)

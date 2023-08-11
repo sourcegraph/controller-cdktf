@@ -353,7 +353,7 @@ func NewStorageBucketIamPolicy(scope constructs.Construct, id *string, config *S
 	j := jsiiProxy_StorageBucketIamPolicy{}
 
 	_jsii_.Create(
-		"google.storageBucketIamPolicy.StorageBucketIamPolicy",
+		"@cdktf/provider-google.storageBucketIamPolicy.StorageBucketIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewStorageBucketIamPolicy_Override(s StorageBucketIamPolicy, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageBucketIamPolicy.StorageBucketIamPolicy",
+		"@cdktf/provider-google.storageBucketIamPolicy.StorageBucketIamPolicy",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -499,7 +499,7 @@ func StorageBucketIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageBucketIamPolicy.StorageBucketIamPolicy",
+		"@cdktf/provider-google.storageBucketIamPolicy.StorageBucketIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func StorageBucketIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageBucketIamPolicy.StorageBucketIamPolicy",
+		"@cdktf/provider-google.storageBucketIamPolicy.StorageBucketIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func StorageBucketIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageBucketIamPolicy.StorageBucketIamPolicy",
+		"@cdktf/provider-google.storageBucketIamPolicy.StorageBucketIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func StorageBucketIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.storageBucketIamPolicy.StorageBucketIamPolicy",
+		"@cdktf/provider-google.storageBucketIamPolicy.StorageBucketIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -388,7 +388,7 @@ func NewCaptcha(scope constructs.Construct, id *string, config *CaptchaConfig) C
 	j := jsiiProxy_Captcha{}
 
 	_jsii_.Create(
-		"okta.captcha.Captcha",
+		"@cdktf/provider-okta.captcha.Captcha",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -401,7 +401,7 @@ func NewCaptcha_Override(c Captcha, scope constructs.Construct, id *string, conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.captcha.Captcha",
+		"@cdktf/provider-okta.captcha.Captcha",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -556,7 +556,7 @@ func Captcha_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.captcha.Captcha",
+		"@cdktf/provider-okta.captcha.Captcha",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func Captcha_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.captcha.Captcha",
+		"@cdktf/provider-okta.captcha.Captcha",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -594,7 +594,7 @@ func Captcha_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.captcha.Captcha",
+		"@cdktf/provider-okta.captcha.Captcha",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func Captcha_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.captcha.Captcha",
+		"@cdktf/provider-okta.captcha.Captcha",
 		"tfResourceType",
 		&returns,
 	)

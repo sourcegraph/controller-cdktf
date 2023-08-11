@@ -180,7 +180,7 @@ func NewDataCloudflareLoadBalancerPoolsFilterOutputReference(terraformResource c
 	j := jsiiProxy_DataCloudflareLoadBalancerPoolsFilterOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsFilterOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataCloudflareLoadBalancerPoolsFilterOutputReference_Override(d DataClou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsFilterOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

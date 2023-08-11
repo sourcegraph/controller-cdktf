@@ -116,7 +116,7 @@ func NewDataAwsAuditmanagerFrameworkControlSetsControlsList(terraformResource cd
 	j := jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsControlsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFrameworkControlSetsControlsList",
+		"@cdktf/provider-aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFrameworkControlSetsControlsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsAuditmanagerFrameworkControlSetsControlsList_Override(d DataAwsAu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFrameworkControlSetsControlsList",
+		"@cdktf/provider-aws.dataAwsAuditmanagerFramework.DataAwsAuditmanagerFrameworkControlSetsControlsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

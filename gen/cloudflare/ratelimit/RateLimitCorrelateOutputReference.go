@@ -180,7 +180,7 @@ func NewRateLimitCorrelateOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_RateLimitCorrelateOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.rateLimit.RateLimitCorrelateOutputReference",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimitCorrelateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewRateLimitCorrelateOutputReference_Override(r RateLimitCorrelateOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.rateLimit.RateLimitCorrelateOutputReference",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimitCorrelateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

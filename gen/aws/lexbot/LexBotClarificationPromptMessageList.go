@@ -116,7 +116,7 @@ func NewLexBotClarificationPromptMessageList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_LexBotClarificationPromptMessageList{}
 
 	_jsii_.Create(
-		"aws.lexBot.LexBotClarificationPromptMessageList",
+		"@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLexBotClarificationPromptMessageList_Override(l LexBotClarificationPromp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexBot.LexBotClarificationPromptMessageList",
+		"@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

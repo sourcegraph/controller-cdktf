@@ -252,7 +252,7 @@ func NewKendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference(ter
 	j := jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference{}
 
 	_jsii_.Create(
-		"aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewKendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

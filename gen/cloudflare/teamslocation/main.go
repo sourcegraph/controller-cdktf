@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.teamsLocation.TeamsLocation",
+		"@cdktf/provider-cloudflare.teamsLocation.TeamsLocation",
 		reflect.TypeOf((*TeamsLocation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.teamsLocation.TeamsLocationConfig",
+		"@cdktf/provider-cloudflare.teamsLocation.TeamsLocationConfig",
 		reflect.TypeOf((*TeamsLocationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.teamsLocation.TeamsLocationNetworks",
+		"@cdktf/provider-cloudflare.teamsLocation.TeamsLocationNetworks",
 		reflect.TypeOf((*TeamsLocationNetworks)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.teamsLocation.TeamsLocationNetworksList",
+		"@cdktf/provider-cloudflare.teamsLocation.TeamsLocationNetworksList",
 		reflect.TypeOf((*TeamsLocationNetworksList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -100,7 +100,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.teamsLocation.TeamsLocationNetworksOutputReference",
+		"@cdktf/provider-cloudflare.teamsLocation.TeamsLocationNetworksOutputReference",
 		reflect.TypeOf((*TeamsLocationNetworksOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

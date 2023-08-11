@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeFirewallPolicyRule.ComputeFirewallPolicyRule",
+		"@cdktf/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule",
 		reflect.TypeOf((*ComputeFirewallPolicyRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -87,19 +87,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig",
+		"@cdktf/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig",
 		reflect.TypeOf((*ComputeFirewallPolicyRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatch",
+		"@cdktf/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatch",
 		reflect.TypeOf((*ComputeFirewallPolicyRuleMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4Configs",
+		"@cdktf/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4Configs",
 		reflect.TypeOf((*ComputeFirewallPolicyRuleMatchLayer4Configs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsList",
+		"@cdktf/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsList",
 		reflect.TypeOf((*ComputeFirewallPolicyRuleMatchLayer4ConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -120,7 +120,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference",
+		"@cdktf/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference",
 		reflect.TypeOf((*ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -157,7 +157,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference",
+		"@cdktf/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference",
 		reflect.TypeOf((*ComputeFirewallPolicyRuleMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -222,11 +222,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeouts",
+		"@cdktf/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeouts",
 		reflect.TypeOf((*ComputeFirewallPolicyRuleTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeoutsOutputReference",
+		"@cdktf/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeFirewallPolicyRuleTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -496,7 +496,7 @@ func NewSsmActivation(scope constructs.Construct, id *string, config *SsmActivat
 	j := jsiiProxy_SsmActivation{}
 
 	_jsii_.Create(
-		"aws.ssmActivation.SsmActivation",
+		"@cdktf/provider-aws.ssmActivation.SsmActivation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -509,7 +509,7 @@ func NewSsmActivation_Override(s SsmActivation, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmActivation.SsmActivation",
+		"@cdktf/provider-aws.ssmActivation.SsmActivation",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -697,7 +697,7 @@ func SsmActivation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmActivation.SsmActivation",
+		"@cdktf/provider-aws.ssmActivation.SsmActivation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -716,7 +716,7 @@ func SsmActivation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmActivation.SsmActivation",
+		"@cdktf/provider-aws.ssmActivation.SsmActivation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func SsmActivation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmActivation.SsmActivation",
+		"@cdktf/provider-aws.ssmActivation.SsmActivation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -748,7 +748,7 @@ func SsmActivation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ssmActivation.SsmActivation",
+		"@cdktf/provider-aws.ssmActivation.SsmActivation",
 		"tfResourceType",
 		&returns,
 	)

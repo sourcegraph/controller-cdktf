@@ -116,7 +116,7 @@ func NewEmrManagedScalingPolicyComputeLimitsList(terraformResource cdktf.IInterp
 	j := jsiiProxy_EmrManagedScalingPolicyComputeLimitsList{}
 
 	_jsii_.Create(
-		"aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimitsList",
+		"@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimitsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEmrManagedScalingPolicyComputeLimitsList_Override(e EmrManagedScalingPol
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimitsList",
+		"@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicyComputeLimitsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

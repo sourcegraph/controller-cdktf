@@ -437,7 +437,7 @@ func NewGoogleApikeysKey(scope constructs.Construct, id *string, config *GoogleA
 	j := jsiiProxy_GoogleApikeysKey{}
 
 	_jsii_.Create(
-		"google-beta.googleApikeysKey.GoogleApikeysKey",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -450,7 +450,7 @@ func NewGoogleApikeysKey_Override(g GoogleApikeysKey, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApikeysKey.GoogleApikeysKey",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKey",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -594,7 +594,7 @@ func GoogleApikeysKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApikeysKey.GoogleApikeysKey",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -613,7 +613,7 @@ func GoogleApikeysKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApikeysKey.GoogleApikeysKey",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func GoogleApikeysKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApikeysKey.GoogleApikeysKey",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func GoogleApikeysKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleApikeysKey.GoogleApikeysKey",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKey",
 		"tfResourceType",
 		&returns,
 	)

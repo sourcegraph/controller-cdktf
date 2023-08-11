@@ -468,7 +468,7 @@ func NewDataAwsS3BucketObjects(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataAwsS3BucketObjects{}
 
 	_jsii_.Create(
-		"aws.dataAwsS3BucketObjects.DataAwsS3BucketObjects",
+		"@cdktf/provider-aws.dataAwsS3BucketObjects.DataAwsS3BucketObjects",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -481,7 +481,7 @@ func NewDataAwsS3BucketObjects_Override(d DataAwsS3BucketObjects, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsS3BucketObjects.DataAwsS3BucketObjects",
+		"@cdktf/provider-aws.dataAwsS3BucketObjects.DataAwsS3BucketObjects",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -647,7 +647,7 @@ func DataAwsS3BucketObjects_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsS3BucketObjects.DataAwsS3BucketObjects",
+		"@cdktf/provider-aws.dataAwsS3BucketObjects.DataAwsS3BucketObjects",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func DataAwsS3BucketObjects_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsS3BucketObjects.DataAwsS3BucketObjects",
+		"@cdktf/provider-aws.dataAwsS3BucketObjects.DataAwsS3BucketObjects",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -685,7 +685,7 @@ func DataAwsS3BucketObjects_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsS3BucketObjects.DataAwsS3BucketObjects",
+		"@cdktf/provider-aws.dataAwsS3BucketObjects.DataAwsS3BucketObjects",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -698,7 +698,7 @@ func DataAwsS3BucketObjects_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsS3BucketObjects.DataAwsS3BucketObjects",
+		"@cdktf/provider-aws.dataAwsS3BucketObjects.DataAwsS3BucketObjects",
 		"tfResourceType",
 		&returns,
 	)

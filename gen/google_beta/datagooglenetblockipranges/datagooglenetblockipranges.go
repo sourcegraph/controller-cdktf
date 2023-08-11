@@ -325,7 +325,7 @@ func NewDataGoogleNetblockIpRanges(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataGoogleNetblockIpRanges{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges",
+		"@cdktf/provider-google-beta.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -338,7 +338,7 @@ func NewDataGoogleNetblockIpRanges_Override(d DataGoogleNetblockIpRanges, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges",
+		"@cdktf/provider-google-beta.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -438,7 +438,7 @@ func DataGoogleNetblockIpRanges_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges",
+		"@cdktf/provider-google-beta.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -457,7 +457,7 @@ func DataGoogleNetblockIpRanges_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges",
+		"@cdktf/provider-google-beta.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -476,7 +476,7 @@ func DataGoogleNetblockIpRanges_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges",
+		"@cdktf/provider-google-beta.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -489,7 +489,7 @@ func DataGoogleNetblockIpRanges_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges",
+		"@cdktf/provider-google-beta.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges",
 		"tfResourceType",
 		&returns,
 	)

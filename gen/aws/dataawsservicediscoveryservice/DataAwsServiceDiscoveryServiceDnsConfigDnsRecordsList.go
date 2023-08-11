@@ -104,7 +104,7 @@ func NewDataAwsServiceDiscoveryServiceDnsConfigDnsRecordsList(terraformResource 
 	j := jsiiProxy_DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsList",
+		"@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsServiceDiscoveryServiceDnsConfigDnsRecordsList_Override(d DataAws
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsList",
+		"@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

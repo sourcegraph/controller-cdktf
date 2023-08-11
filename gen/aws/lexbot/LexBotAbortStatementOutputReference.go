@@ -203,7 +203,7 @@ func NewLexBotAbortStatementOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_LexBotAbortStatementOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexBot.LexBotAbortStatementOutputReference",
+		"@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewLexBotAbortStatementOutputReference_Override(l LexBotAbortStatementOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexBot.LexBotAbortStatementOutputReference",
+		"@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

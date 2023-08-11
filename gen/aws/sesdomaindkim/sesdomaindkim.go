@@ -330,7 +330,7 @@ func NewSesDomainDkim(scope constructs.Construct, id *string, config *SesDomainD
 	j := jsiiProxy_SesDomainDkim{}
 
 	_jsii_.Create(
-		"aws.sesDomainDkim.SesDomainDkim",
+		"@cdktf/provider-aws.sesDomainDkim.SesDomainDkim",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -343,7 +343,7 @@ func NewSesDomainDkim_Override(s SesDomainDkim, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesDomainDkim.SesDomainDkim",
+		"@cdktf/provider-aws.sesDomainDkim.SesDomainDkim",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -465,7 +465,7 @@ func SesDomainDkim_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesDomainDkim.SesDomainDkim",
+		"@cdktf/provider-aws.sesDomainDkim.SesDomainDkim",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -484,7 +484,7 @@ func SesDomainDkim_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesDomainDkim.SesDomainDkim",
+		"@cdktf/provider-aws.sesDomainDkim.SesDomainDkim",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -503,7 +503,7 @@ func SesDomainDkim_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesDomainDkim.SesDomainDkim",
+		"@cdktf/provider-aws.sesDomainDkim.SesDomainDkim",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func SesDomainDkim_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sesDomainDkim.SesDomainDkim",
+		"@cdktf/provider-aws.sesDomainDkim.SesDomainDkim",
 		"tfResourceType",
 		&returns,
 	)

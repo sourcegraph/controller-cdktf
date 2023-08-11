@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.dataOktaThemes.DataOktaThemes",
+		"@cdktf/provider-okta.dataOktaThemes.DataOktaThemes",
 		reflect.TypeOf((*DataOktaThemes)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -56,15 +56,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaThemes.DataOktaThemesConfig",
+		"@cdktf/provider-okta.dataOktaThemes.DataOktaThemesConfig",
 		reflect.TypeOf((*DataOktaThemesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaThemes.DataOktaThemesThemes",
+		"@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemes",
 		reflect.TypeOf((*DataOktaThemesThemes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaThemes.DataOktaThemesThemesList",
+		"@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemesList",
 		reflect.TypeOf((*DataOktaThemesThemesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -84,7 +84,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaThemes.DataOktaThemesThemesOutputReference",
+		"@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemesOutputReference",
 		reflect.TypeOf((*DataOktaThemesThemesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backgroundImageUrl", GoGetter: "BackgroundImageUrl"},

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.configDeliveryChannel.ConfigDeliveryChannel",
+		"@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannel",
 		reflect.TypeOf((*ConfigDeliveryChannel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.configDeliveryChannel.ConfigDeliveryChannelConfig",
+		"@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannelConfig",
 		reflect.TypeOf((*ConfigDeliveryChannelConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.configDeliveryChannel.ConfigDeliveryChannelSnapshotDeliveryProperties",
+		"@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannelSnapshotDeliveryProperties",
 		reflect.TypeOf((*ConfigDeliveryChannelSnapshotDeliveryProperties)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.configDeliveryChannel.ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference",
+		"@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference",
 		reflect.TypeOf((*ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

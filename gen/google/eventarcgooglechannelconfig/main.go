@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfig",
+		"@cdktf/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfig",
 		reflect.TypeOf((*EventarcGoogleChannelConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfigConfig",
+		"@cdktf/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfigConfig",
 		reflect.TypeOf((*EventarcGoogleChannelConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfigTimeouts",
+		"@cdktf/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfigTimeouts",
 		reflect.TypeOf((*EventarcGoogleChannelConfigTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfigTimeoutsOutputReference",
 		reflect.TypeOf((*EventarcGoogleChannelConfigTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

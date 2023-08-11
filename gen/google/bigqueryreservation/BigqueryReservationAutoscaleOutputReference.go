@@ -191,7 +191,7 @@ func NewBigqueryReservationAutoscaleOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_BigqueryReservationAutoscaleOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryReservation.BigqueryReservationAutoscaleOutputReference",
+		"@cdktf/provider-google.bigqueryReservation.BigqueryReservationAutoscaleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -203,7 +203,7 @@ func NewBigqueryReservationAutoscaleOutputReference_Override(b BigqueryReservati
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryReservation.BigqueryReservationAutoscaleOutputReference",
+		"@cdktf/provider-google.bigqueryReservation.BigqueryReservationAutoscaleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

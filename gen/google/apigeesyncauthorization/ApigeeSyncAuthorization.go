@@ -377,7 +377,7 @@ func NewApigeeSyncAuthorization(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_ApigeeSyncAuthorization{}
 
 	_jsii_.Create(
-		"google.apigeeSyncAuthorization.ApigeeSyncAuthorization",
+		"@cdktf/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorization",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewApigeeSyncAuthorization_Override(a ApigeeSyncAuthorization, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeSyncAuthorization.ApigeeSyncAuthorization",
+		"@cdktf/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorization",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -523,7 +523,7 @@ func ApigeeSyncAuthorization_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeSyncAuthorization.ApigeeSyncAuthorization",
+		"@cdktf/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorization",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func ApigeeSyncAuthorization_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeSyncAuthorization.ApigeeSyncAuthorization",
+		"@cdktf/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorization",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func ApigeeSyncAuthorization_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeSyncAuthorization.ApigeeSyncAuthorization",
+		"@cdktf/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorization",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func ApigeeSyncAuthorization_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.apigeeSyncAuthorization.ApigeeSyncAuthorization",
+		"@cdktf/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorization",
 		"tfResourceType",
 		&returns,
 	)

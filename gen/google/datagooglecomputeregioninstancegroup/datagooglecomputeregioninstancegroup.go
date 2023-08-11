@@ -386,7 +386,7 @@ func NewDataGoogleComputeRegionInstanceGroup(scope constructs.Construct, id *str
 	j := jsiiProxy_DataGoogleComputeRegionInstanceGroup{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeRegionInstanceGroup.DataGoogleComputeRegionInstanceGroup",
+		"@cdktf/provider-google.dataGoogleComputeRegionInstanceGroup.DataGoogleComputeRegionInstanceGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -399,7 +399,7 @@ func NewDataGoogleComputeRegionInstanceGroup_Override(d DataGoogleComputeRegionI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeRegionInstanceGroup.DataGoogleComputeRegionInstanceGroup",
+		"@cdktf/provider-google.dataGoogleComputeRegionInstanceGroup.DataGoogleComputeRegionInstanceGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -532,7 +532,7 @@ func DataGoogleComputeRegionInstanceGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeRegionInstanceGroup.DataGoogleComputeRegionInstanceGroup",
+		"@cdktf/provider-google.dataGoogleComputeRegionInstanceGroup.DataGoogleComputeRegionInstanceGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func DataGoogleComputeRegionInstanceGroup_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeRegionInstanceGroup.DataGoogleComputeRegionInstanceGroup",
+		"@cdktf/provider-google.dataGoogleComputeRegionInstanceGroup.DataGoogleComputeRegionInstanceGroup",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -570,7 +570,7 @@ func DataGoogleComputeRegionInstanceGroup_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeRegionInstanceGroup.DataGoogleComputeRegionInstanceGroup",
+		"@cdktf/provider-google.dataGoogleComputeRegionInstanceGroup.DataGoogleComputeRegionInstanceGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func DataGoogleComputeRegionInstanceGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleComputeRegionInstanceGroup.DataGoogleComputeRegionInstanceGroup",
+		"@cdktf/provider-google.dataGoogleComputeRegionInstanceGroup.DataGoogleComputeRegionInstanceGroup",
 		"tfResourceType",
 		&returns,
 	)

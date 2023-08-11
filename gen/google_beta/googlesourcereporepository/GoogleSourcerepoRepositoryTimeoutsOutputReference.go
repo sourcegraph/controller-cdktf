@@ -228,7 +228,7 @@ func NewGoogleSourcerepoRepositoryTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleSourcerepoRepositoryTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleSourcerepoRepositoryTimeoutsOutputReference_Override(g GoogleSourc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -300,7 +300,7 @@ func NewApprunnerServiceHealthCheckConfigurationOutputReference(terraformResourc
 	j := jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.apprunnerService.ApprunnerServiceHealthCheckConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceHealthCheckConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewApprunnerServiceHealthCheckConfigurationOutputReference_Override(a Appru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apprunnerService.ApprunnerServiceHealthCheckConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceHealthCheckConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

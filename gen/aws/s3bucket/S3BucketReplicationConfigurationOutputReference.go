@@ -202,7 +202,7 @@ func NewS3BucketReplicationConfigurationOutputReference(terraformResource cdktf.
 	j := jsiiProxy_S3BucketReplicationConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketReplicationConfigurationOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewS3BucketReplicationConfigurationOutputReference_Override(s S3BucketRepli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketReplicationConfigurationOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

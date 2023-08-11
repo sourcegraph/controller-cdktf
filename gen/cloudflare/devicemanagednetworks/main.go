@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.deviceManagedNetworks.DeviceManagedNetworks",
+		"@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworks",
 		reflect.TypeOf((*DeviceManagedNetworks)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -64,15 +64,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfig",
+		"@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfig",
 		reflect.TypeOf((*DeviceManagedNetworksConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfigA",
+		"@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfigA",
 		reflect.TypeOf((*DeviceManagedNetworksConfigA)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfigAOutputReference",
+		"@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfigAOutputReference",
 		reflect.TypeOf((*DeviceManagedNetworksConfigAOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

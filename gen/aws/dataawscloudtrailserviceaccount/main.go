@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount",
+		"@cdktf/provider-aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccount",
 		reflect.TypeOf((*DataAwsCloudtrailServiceAccount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,7 +57,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccountConfig",
+		"@cdktf/provider-aws.dataAwsCloudtrailServiceAccount.DataAwsCloudtrailServiceAccountConfig",
 		reflect.TypeOf((*DataAwsCloudtrailServiceAccountConfig)(nil)).Elem(),
 	)
 }

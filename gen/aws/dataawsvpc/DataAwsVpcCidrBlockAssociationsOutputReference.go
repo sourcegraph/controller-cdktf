@@ -189,7 +189,7 @@ func NewDataAwsVpcCidrBlockAssociationsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_DataAwsVpcCidrBlockAssociationsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpc.DataAwsVpcCidrBlockAssociationsOutputReference",
+		"@cdktf/provider-aws.dataAwsVpc.DataAwsVpcCidrBlockAssociationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsVpcCidrBlockAssociationsOutputReference_Override(d DataAwsVpcCidr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpc.DataAwsVpcCidrBlockAssociationsOutputReference",
+		"@cdktf/provider-aws.dataAwsVpc.DataAwsVpcCidrBlockAssociationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

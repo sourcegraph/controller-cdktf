@@ -734,7 +734,7 @@ func NewSagemakerNotebookInstance(scope constructs.Construct, id *string, config
 	j := jsiiProxy_SagemakerNotebookInstance{}
 
 	_jsii_.Create(
-		"aws.sagemakerNotebookInstance.SagemakerNotebookInstance",
+		"@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -747,7 +747,7 @@ func NewSagemakerNotebookInstance_Override(s SagemakerNotebookInstance, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerNotebookInstance.SagemakerNotebookInstance",
+		"@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstance",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -1034,7 +1034,7 @@ func SagemakerNotebookInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerNotebookInstance.SagemakerNotebookInstance",
+		"@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1053,7 +1053,7 @@ func SagemakerNotebookInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerNotebookInstance.SagemakerNotebookInstance",
+		"@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1072,7 +1072,7 @@ func SagemakerNotebookInstance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerNotebookInstance.SagemakerNotebookInstance",
+		"@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1085,7 +1085,7 @@ func SagemakerNotebookInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sagemakerNotebookInstance.SagemakerNotebookInstance",
+		"@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstance",
 		"tfResourceType",
 		&returns,
 	)

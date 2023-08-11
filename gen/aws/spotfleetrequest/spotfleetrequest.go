@@ -940,7 +940,7 @@ func NewSpotFleetRequest(scope constructs.Construct, id *string, config *SpotFle
 	j := jsiiProxy_SpotFleetRequest{}
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequest",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequest",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -953,7 +953,7 @@ func NewSpotFleetRequest_Override(s SpotFleetRequest, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequest",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequest",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -1306,7 +1306,7 @@ func SpotFleetRequest_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.spotFleetRequest.SpotFleetRequest",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequest",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1325,7 +1325,7 @@ func SpotFleetRequest_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.spotFleetRequest.SpotFleetRequest",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequest",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1344,7 +1344,7 @@ func SpotFleetRequest_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.spotFleetRequest.SpotFleetRequest",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequest",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1357,7 +1357,7 @@ func SpotFleetRequest_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.spotFleetRequest.SpotFleetRequest",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequest",
 		"tfResourceType",
 		&returns,
 	)

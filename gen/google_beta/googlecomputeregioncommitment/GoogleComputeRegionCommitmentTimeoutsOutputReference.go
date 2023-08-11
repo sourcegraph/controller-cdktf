@@ -204,7 +204,7 @@ func NewGoogleComputeRegionCommitmentTimeoutsOutputReference(terraformResource c
 	j := jsiiProxy_GoogleComputeRegionCommitmentTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleComputeRegionCommitmentTimeoutsOutputReference_Override(g GoogleCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -116,7 +116,7 @@ func NewIotTopicRuleRepublishList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_IotTopicRuleRepublishList{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleRepublishList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewIotTopicRuleRepublishList_Override(i IotTopicRuleRepublishList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleRepublishList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

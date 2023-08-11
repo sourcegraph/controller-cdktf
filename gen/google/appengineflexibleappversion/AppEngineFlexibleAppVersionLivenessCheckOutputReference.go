@@ -323,7 +323,7 @@ func NewAppEngineFlexibleAppVersionLivenessCheckOutputReference(terraformResourc
 	j := jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference{}
 
 	_jsii_.Create(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionLivenessCheckOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionLivenessCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -335,7 +335,7 @@ func NewAppEngineFlexibleAppVersionLivenessCheckOutputReference_Override(a AppEn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionLivenessCheckOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionLivenessCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

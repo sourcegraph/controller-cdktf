@@ -203,7 +203,7 @@ func NewSagemakerModelPrimaryContainerImageConfigOutputReference(terraformResour
 	j := jsiiProxy_SagemakerModelPrimaryContainerImageConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewSagemakerModelPrimaryContainerImageConfigOutputReference_Override(s Sage
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

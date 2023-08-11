@@ -204,7 +204,7 @@ func NewS3BucketVersioningOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_S3BucketVersioningOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketVersioningOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketVersioningOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewS3BucketVersioningOutputReference_Override(s S3BucketVersioningOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketVersioningOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketVersioningOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

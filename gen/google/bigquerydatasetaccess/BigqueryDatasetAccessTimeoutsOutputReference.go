@@ -204,7 +204,7 @@ func NewBigqueryDatasetAccessTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_BigqueryDatasetAccessTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryDatasetAccess.BigqueryDatasetAccessTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryDatasetAccess.BigqueryDatasetAccessTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewBigqueryDatasetAccessTimeoutsOutputReference_Override(b BigqueryDatasetA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryDatasetAccess.BigqueryDatasetAccessTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryDatasetAccess.BigqueryDatasetAccessTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

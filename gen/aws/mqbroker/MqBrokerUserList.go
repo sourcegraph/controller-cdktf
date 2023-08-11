@@ -116,7 +116,7 @@ func NewMqBrokerUserList(terraformResource cdktf.IInterpolatingParent, terraform
 	j := jsiiProxy_MqBrokerUserList{}
 
 	_jsii_.Create(
-		"aws.mqBroker.MqBrokerUserList",
+		"@cdktf/provider-aws.mqBroker.MqBrokerUserList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMqBrokerUserList_Override(m MqBrokerUserList, terraformResource cdktf.II
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mqBroker.MqBrokerUserList",
+		"@cdktf/provider-aws.mqBroker.MqBrokerUserList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

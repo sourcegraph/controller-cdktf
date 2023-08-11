@@ -496,7 +496,7 @@ func NewServicecatalogPortfolioShare(scope constructs.Construct, id *string, con
 	j := jsiiProxy_ServicecatalogPortfolioShare{}
 
 	_jsii_.Create(
-		"aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShare",
+		"@cdktf/provider-aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShare",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -509,7 +509,7 @@ func NewServicecatalogPortfolioShare_Override(s ServicecatalogPortfolioShare, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShare",
+		"@cdktf/provider-aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShare",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -697,7 +697,7 @@ func ServicecatalogPortfolioShare_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShare",
+		"@cdktf/provider-aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShare",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -716,7 +716,7 @@ func ServicecatalogPortfolioShare_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShare",
+		"@cdktf/provider-aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShare",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func ServicecatalogPortfolioShare_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShare",
+		"@cdktf/provider-aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShare",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -748,7 +748,7 @@ func ServicecatalogPortfolioShare_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShare",
+		"@cdktf/provider-aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShare",
 		"tfResourceType",
 		&returns,
 	)

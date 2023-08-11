@@ -415,7 +415,7 @@ func NewS3BucketObjectLockConfigurationA(scope constructs.Construct, id *string,
 	j := jsiiProxy_S3BucketObjectLockConfigurationA{}
 
 	_jsii_.Create(
-		"aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA",
+		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -428,7 +428,7 @@ func NewS3BucketObjectLockConfigurationA_Override(s S3BucketObjectLockConfigurat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA",
+		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -583,7 +583,7 @@ func S3BucketObjectLockConfigurationA_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA",
+		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -602,7 +602,7 @@ func S3BucketObjectLockConfigurationA_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA",
+		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func S3BucketObjectLockConfigurationA_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA",
+		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func S3BucketObjectLockConfigurationA_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA",
+		"@cdktf/provider-aws.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationA",
 		"tfResourceType",
 		&returns,
 	)

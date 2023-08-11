@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironment",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironment",
 		reflect.TypeOf((*ComposerEnvironment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.composerEnvironment.ComposerEnvironmentConfig",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfig",
 		reflect.TypeOf((*ComposerEnvironmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.composerEnvironment.ComposerEnvironmentConfigA",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigA",
 		reflect.TypeOf((*ComposerEnvironmentConfigA)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentConfigAOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigAOutputReference",
 		reflect.TypeOf((*ComposerEnvironmentConfigAOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "airflowUri", GoGetter: "AirflowUri"},
@@ -167,11 +167,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.composerEnvironment.ComposerEnvironmentConfigDatabaseConfig",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigDatabaseConfig",
 		reflect.TypeOf((*ComposerEnvironmentConfigDatabaseConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentConfigDatabaseConfigOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigDatabaseConfigOutputReference",
 		reflect.TypeOf((*ComposerEnvironmentConfigDatabaseConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -205,11 +205,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.composerEnvironment.ComposerEnvironmentConfigEncryptionConfig",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigEncryptionConfig",
 		reflect.TypeOf((*ComposerEnvironmentConfigEncryptionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentConfigEncryptionConfigOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigEncryptionConfigOutputReference",
 		reflect.TypeOf((*ComposerEnvironmentConfigEncryptionConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -243,11 +243,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.composerEnvironment.ComposerEnvironmentConfigMaintenanceWindow",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigMaintenanceWindow",
 		reflect.TypeOf((*ComposerEnvironmentConfigMaintenanceWindow)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentConfigMaintenanceWindowOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigMaintenanceWindowOutputReference",
 		reflect.TypeOf((*ComposerEnvironmentConfigMaintenanceWindowOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -285,15 +285,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.composerEnvironment.ComposerEnvironmentConfigMasterAuthorizedNetworksConfig",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigMasterAuthorizedNetworksConfig",
 		reflect.TypeOf((*ComposerEnvironmentConfigMasterAuthorizedNetworksConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.composerEnvironment.ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocks",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocks",
 		reflect.TypeOf((*ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocks)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksList",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksList",
 		reflect.TypeOf((*ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -314,7 +314,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference",
 		reflect.TypeOf((*ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidrBlock", GoGetter: "CidrBlock"},
@@ -351,7 +351,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentConfigMasterAuthorizedNetworksConfigOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigMasterAuthorizedNetworksConfigOutputReference",
 		reflect.TypeOf((*ComposerEnvironmentConfigMasterAuthorizedNetworksConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidrBlocks", GoGetter: "CidrBlocks"},
@@ -389,15 +389,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.composerEnvironment.ComposerEnvironmentConfigNodeConfig",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigNodeConfig",
 		reflect.TypeOf((*ComposerEnvironmentConfigNodeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.composerEnvironment.ComposerEnvironmentConfigNodeConfigIpAllocationPolicy",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigNodeConfigIpAllocationPolicy",
 		reflect.TypeOf((*ComposerEnvironmentConfigNodeConfigIpAllocationPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentConfigNodeConfigIpAllocationPolicyList",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigNodeConfigIpAllocationPolicyList",
 		reflect.TypeOf((*ComposerEnvironmentConfigNodeConfigIpAllocationPolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -418,7 +418,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference",
 		reflect.TypeOf((*ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterIpv4CidrBlock", GoGetter: "ClusterIpv4CidrBlock"},
@@ -465,7 +465,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentConfigNodeConfigOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigNodeConfigOutputReference",
 		reflect.TypeOf((*ComposerEnvironmentConfigNodeConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -528,11 +528,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.composerEnvironment.ComposerEnvironmentConfigPrivateEnvironmentConfig",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigPrivateEnvironmentConfig",
 		reflect.TypeOf((*ComposerEnvironmentConfigPrivateEnvironmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference",
 		reflect.TypeOf((*ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudComposerConnectionSubnetwork", GoGetter: "CloudComposerConnectionSubnetwork"},
@@ -585,11 +585,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.composerEnvironment.ComposerEnvironmentConfigRecoveryConfig",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigRecoveryConfig",
 		reflect.TypeOf((*ComposerEnvironmentConfigRecoveryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentConfigRecoveryConfigOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigRecoveryConfigOutputReference",
 		reflect.TypeOf((*ComposerEnvironmentConfigRecoveryConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -625,11 +625,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.composerEnvironment.ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfig",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfig",
 		reflect.TypeOf((*ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference",
 		reflect.TypeOf((*ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -672,11 +672,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.composerEnvironment.ComposerEnvironmentConfigSoftwareConfig",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigSoftwareConfig",
 		reflect.TypeOf((*ComposerEnvironmentConfigSoftwareConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentConfigSoftwareConfigOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigSoftwareConfigOutputReference",
 		reflect.TypeOf((*ComposerEnvironmentConfigSoftwareConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "airflowConfigOverrides", GoGetter: "AirflowConfigOverrides"},
@@ -726,11 +726,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.composerEnvironment.ComposerEnvironmentConfigWebServerConfig",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWebServerConfig",
 		reflect.TypeOf((*ComposerEnvironmentConfigWebServerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentConfigWebServerConfigOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWebServerConfigOutputReference",
 		reflect.TypeOf((*ComposerEnvironmentConfigWebServerConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -764,15 +764,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.composerEnvironment.ComposerEnvironmentConfigWebServerNetworkAccessControl",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWebServerNetworkAccessControl",
 		reflect.TypeOf((*ComposerEnvironmentConfigWebServerNetworkAccessControl)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.composerEnvironment.ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRange",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRange",
 		reflect.TypeOf((*ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeList",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeList",
 		reflect.TypeOf((*ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -793,7 +793,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeOutputReference",
 		reflect.TypeOf((*ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -830,7 +830,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentConfigWebServerNetworkAccessControlOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWebServerNetworkAccessControlOutputReference",
 		reflect.TypeOf((*ComposerEnvironmentConfigWebServerNetworkAccessControlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedIpRange", GoGetter: "AllowedIpRange"},
@@ -866,11 +866,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfig",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfig",
 		reflect.TypeOf((*ComposerEnvironmentConfigWorkloadsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigOutputReference",
 		reflect.TypeOf((*ComposerEnvironmentConfigWorkloadsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -914,11 +914,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigScheduler",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigScheduler",
 		reflect.TypeOf((*ComposerEnvironmentConfigWorkloadsConfigScheduler)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference",
 		reflect.TypeOf((*ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -962,11 +962,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigWebServer",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigWebServer",
 		reflect.TypeOf((*ComposerEnvironmentConfigWorkloadsConfigWebServer)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference",
 		reflect.TypeOf((*ComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1007,11 +1007,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigWorker",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigWorker",
 		reflect.TypeOf((*ComposerEnvironmentConfigWorkloadsConfigWorker)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigWorkerOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigWorkerOutputReference",
 		reflect.TypeOf((*ComposerEnvironmentConfigWorkloadsConfigWorkerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1058,11 +1058,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.composerEnvironment.ComposerEnvironmentTimeouts",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentTimeouts",
 		reflect.TypeOf((*ComposerEnvironmentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.composerEnvironment.ComposerEnvironmentTimeoutsOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentTimeoutsOutputReference",
 		reflect.TypeOf((*ComposerEnvironmentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

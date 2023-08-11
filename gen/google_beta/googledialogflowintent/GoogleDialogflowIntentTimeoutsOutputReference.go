@@ -228,7 +228,7 @@ func NewGoogleDialogflowIntentTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_GoogleDialogflowIntentTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowIntent.GoogleDialogflowIntentTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowIntent.GoogleDialogflowIntentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleDialogflowIntentTimeoutsOutputReference_Override(g GoogleDialogflo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowIntent.GoogleDialogflowIntentTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowIntent.GoogleDialogflowIntentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

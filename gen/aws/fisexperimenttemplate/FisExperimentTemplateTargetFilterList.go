@@ -116,7 +116,7 @@ func NewFisExperimentTemplateTargetFilterList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_FisExperimentTemplateTargetFilterList{}
 
 	_jsii_.Create(
-		"aws.fisExperimentTemplate.FisExperimentTemplateTargetFilterList",
+		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewFisExperimentTemplateTargetFilterList_Override(f FisExperimentTemplateTa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fisExperimentTemplate.FisExperimentTemplateTargetFilterList",
+		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)

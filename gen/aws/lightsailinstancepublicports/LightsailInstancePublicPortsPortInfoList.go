@@ -116,7 +116,7 @@ func NewLightsailInstancePublicPortsPortInfoList(terraformResource cdktf.IInterp
 	j := jsiiProxy_LightsailInstancePublicPortsPortInfoList{}
 
 	_jsii_.Create(
-		"aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoList",
+		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLightsailInstancePublicPortsPortInfoList_Override(l LightsailInstancePub
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoList",
+		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

@@ -202,7 +202,7 @@ func NewLoadBalancerCountryPoolsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_LoadBalancerCountryPoolsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerCountryPoolsOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerCountryPoolsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewLoadBalancerCountryPoolsOutputReference_Override(l LoadBalancerCountryPo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerCountryPoolsOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerCountryPoolsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

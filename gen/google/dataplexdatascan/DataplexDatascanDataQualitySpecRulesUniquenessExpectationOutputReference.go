@@ -156,7 +156,7 @@ func NewDataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference
 	j := jsiiProxy_DataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference{}
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewDataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.gkeHubMembership.GkeHubMembership",
+		"@cdktf/provider-google.gkeHubMembership.GkeHubMembership",
 		reflect.TypeOf((*GkeHubMembership)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,11 +76,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gkeHubMembership.GkeHubMembershipAuthority",
+		"@cdktf/provider-google.gkeHubMembership.GkeHubMembershipAuthority",
 		reflect.TypeOf((*GkeHubMembershipAuthority)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.gkeHubMembership.GkeHubMembershipAuthorityOutputReference",
+		"@cdktf/provider-google.gkeHubMembership.GkeHubMembershipAuthorityOutputReference",
 		reflect.TypeOf((*GkeHubMembershipAuthorityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -114,19 +114,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gkeHubMembership.GkeHubMembershipConfig",
+		"@cdktf/provider-google.gkeHubMembership.GkeHubMembershipConfig",
 		reflect.TypeOf((*GkeHubMembershipConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.gkeHubMembership.GkeHubMembershipEndpoint",
+		"@cdktf/provider-google.gkeHubMembership.GkeHubMembershipEndpoint",
 		reflect.TypeOf((*GkeHubMembershipEndpoint)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.gkeHubMembership.GkeHubMembershipEndpointGkeCluster",
+		"@cdktf/provider-google.gkeHubMembership.GkeHubMembershipEndpointGkeCluster",
 		reflect.TypeOf((*GkeHubMembershipEndpointGkeCluster)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.gkeHubMembership.GkeHubMembershipEndpointGkeClusterOutputReference",
+		"@cdktf/provider-google.gkeHubMembership.GkeHubMembershipEndpointGkeClusterOutputReference",
 		reflect.TypeOf((*GkeHubMembershipEndpointGkeClusterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -160,7 +160,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.gkeHubMembership.GkeHubMembershipEndpointOutputReference",
+		"@cdktf/provider-google.gkeHubMembership.GkeHubMembershipEndpointOutputReference",
 		reflect.TypeOf((*GkeHubMembershipEndpointOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -196,11 +196,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gkeHubMembership.GkeHubMembershipTimeouts",
+		"@cdktf/provider-google.gkeHubMembership.GkeHubMembershipTimeouts",
 		reflect.TypeOf((*GkeHubMembershipTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.gkeHubMembership.GkeHubMembershipTimeoutsOutputReference",
+		"@cdktf/provider-google.gkeHubMembership.GkeHubMembershipTimeoutsOutputReference",
 		reflect.TypeOf((*GkeHubMembershipTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

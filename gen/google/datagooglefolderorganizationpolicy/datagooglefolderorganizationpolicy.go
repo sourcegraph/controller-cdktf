@@ -380,7 +380,7 @@ func NewDataGoogleFolderOrganizationPolicy(scope constructs.Construct, id *strin
 	j := jsiiProxy_DataGoogleFolderOrganizationPolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy",
+		"@cdktf/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -393,7 +393,7 @@ func NewDataGoogleFolderOrganizationPolicy_Override(d DataGoogleFolderOrganizati
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy",
+		"@cdktf/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -504,7 +504,7 @@ func DataGoogleFolderOrganizationPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy",
+		"@cdktf/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +523,7 @@ func DataGoogleFolderOrganizationPolicy_IsTerraformDataSource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy",
+		"@cdktf/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func DataGoogleFolderOrganizationPolicy_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy",
+		"@cdktf/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -555,7 +555,7 @@ func DataGoogleFolderOrganizationPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy",
+		"@cdktf/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -332,7 +332,7 @@ func NewAuditmanagerControlControlMappingSourcesOutputReference(terraformResourc
 	j := jsiiProxy_AuditmanagerControlControlMappingSourcesOutputReference{}
 
 	_jsii_.Create(
-		"aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesOutputReference",
+		"@cdktf/provider-aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -344,7 +344,7 @@ func NewAuditmanagerControlControlMappingSourcesOutputReference_Override(a Audit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesOutputReference",
+		"@cdktf/provider-aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

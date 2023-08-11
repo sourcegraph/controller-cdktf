@@ -228,7 +228,7 @@ func NewPubsubLiteReservationTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_PubsubLiteReservationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.pubsubLiteReservation.PubsubLiteReservationTimeoutsOutputReference",
+		"@cdktf/provider-google.pubsubLiteReservation.PubsubLiteReservationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewPubsubLiteReservationTimeoutsOutputReference_Override(p PubsubLiteReserv
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.pubsubLiteReservation.PubsubLiteReservationTimeoutsOutputReference",
+		"@cdktf/provider-google.pubsubLiteReservation.PubsubLiteReservationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

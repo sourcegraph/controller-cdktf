@@ -378,7 +378,7 @@ func NewGoogleProjectServiceIdentity(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleProjectServiceIdentity{}
 
 	_jsii_.Create(
-		"google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentity",
+		"@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentity",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -391,7 +391,7 @@ func NewGoogleProjectServiceIdentity_Override(g GoogleProjectServiceIdentity, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentity",
+		"@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentity",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -524,7 +524,7 @@ func GoogleProjectServiceIdentity_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentity",
+		"@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentity",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func GoogleProjectServiceIdentity_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentity",
+		"@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentity",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func GoogleProjectServiceIdentity_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentity",
+		"@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentity",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func GoogleProjectServiceIdentity_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentity",
+		"@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentity",
 		"tfResourceType",
 		&returns,
 	)

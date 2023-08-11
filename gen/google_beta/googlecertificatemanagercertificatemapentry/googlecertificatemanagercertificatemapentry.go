@@ -542,7 +542,7 @@ func NewGoogleCertificateManagerCertificateMapEntry(scope constructs.Construct, 
 	j := jsiiProxy_GoogleCertificateManagerCertificateMapEntry{}
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntry",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntry",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -555,7 +555,7 @@ func NewGoogleCertificateManagerCertificateMapEntry_Override(g GoogleCertificate
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntry",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntry",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -754,7 +754,7 @@ func GoogleCertificateManagerCertificateMapEntry_IsConstruct(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntry",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntry",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -773,7 +773,7 @@ func GoogleCertificateManagerCertificateMapEntry_IsTerraformElement(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntry",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntry",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -792,7 +792,7 @@ func GoogleCertificateManagerCertificateMapEntry_IsTerraformResource(x interface
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntry",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntry",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -805,7 +805,7 @@ func GoogleCertificateManagerCertificateMapEntry_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntry",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntry",
 		"tfResourceType",
 		&returns,
 	)

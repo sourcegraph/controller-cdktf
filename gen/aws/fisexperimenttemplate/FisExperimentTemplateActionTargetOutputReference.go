@@ -202,7 +202,7 @@ func NewFisExperimentTemplateActionTargetOutputReference(terraformResource cdktf
 	j := jsiiProxy_FisExperimentTemplateActionTargetOutputReference{}
 
 	_jsii_.Create(
-		"aws.fisExperimentTemplate.FisExperimentTemplateActionTargetOutputReference",
+		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewFisExperimentTemplateActionTargetOutputReference_Override(f FisExperimen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fisExperimentTemplate.FisExperimentTemplateActionTargetOutputReference",
+		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

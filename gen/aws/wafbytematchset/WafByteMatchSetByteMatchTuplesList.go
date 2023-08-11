@@ -116,7 +116,7 @@ func NewWafByteMatchSetByteMatchTuplesList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_WafByteMatchSetByteMatchTuplesList{}
 
 	_jsii_.Create(
-		"aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesList",
+		"@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafByteMatchSetByteMatchTuplesList_Override(w WafByteMatchSetByteMatchTu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesList",
+		"@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

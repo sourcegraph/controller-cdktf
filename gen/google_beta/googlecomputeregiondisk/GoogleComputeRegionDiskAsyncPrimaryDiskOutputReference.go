@@ -179,7 +179,7 @@ func NewGoogleComputeRegionDiskAsyncPrimaryDiskOutputReference(terraformResource
 	j := jsiiProxy_GoogleComputeRegionDiskAsyncPrimaryDiskOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskAsyncPrimaryDiskOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskAsyncPrimaryDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleComputeRegionDiskAsyncPrimaryDiskOutputReference_Override(g Google
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskAsyncPrimaryDiskOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskAsyncPrimaryDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

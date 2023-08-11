@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleNotebooksInstanceIamBinding.GoogleNotebooksInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleNotebooksInstanceIamBinding.GoogleNotebooksInstanceIamBinding",
 		reflect.TypeOf((*GoogleNotebooksInstanceIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleNotebooksInstanceIamBinding.GoogleNotebooksInstanceIamBindingCondition",
+		"@cdktf/provider-google-beta.googleNotebooksInstanceIamBinding.GoogleNotebooksInstanceIamBindingCondition",
 		reflect.TypeOf((*GoogleNotebooksInstanceIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleNotebooksInstanceIamBinding.GoogleNotebooksInstanceIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleNotebooksInstanceIamBinding.GoogleNotebooksInstanceIamBindingConditionOutputReference",
 		reflect.TypeOf((*GoogleNotebooksInstanceIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleNotebooksInstanceIamBinding.GoogleNotebooksInstanceIamBindingConfig",
+		"@cdktf/provider-google-beta.googleNotebooksInstanceIamBinding.GoogleNotebooksInstanceIamBindingConfig",
 		reflect.TypeOf((*GoogleNotebooksInstanceIamBindingConfig)(nil)).Elem(),
 	)
 }

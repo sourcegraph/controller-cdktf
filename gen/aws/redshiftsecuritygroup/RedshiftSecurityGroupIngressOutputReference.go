@@ -228,7 +228,7 @@ func NewRedshiftSecurityGroupIngressOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_RedshiftSecurityGroupIngressOutputReference{}
 
 	_jsii_.Create(
-		"aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressOutputReference",
+		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewRedshiftSecurityGroupIngressOutputReference_Override(r RedshiftSecurityG
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressOutputReference",
+		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

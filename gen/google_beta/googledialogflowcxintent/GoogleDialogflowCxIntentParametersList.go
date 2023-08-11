@@ -116,7 +116,7 @@ func NewGoogleDialogflowCxIntentParametersList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_GoogleDialogflowCxIntentParametersList{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentParametersList",
+		"@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDialogflowCxIntentParametersList_Override(g GoogleDialogflowCxInte
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentParametersList",
+		"@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

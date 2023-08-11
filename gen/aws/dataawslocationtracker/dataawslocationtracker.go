@@ -381,7 +381,7 @@ func NewDataAwsLocationTracker(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataAwsLocationTracker{}
 
 	_jsii_.Create(
-		"aws.dataAwsLocationTracker.DataAwsLocationTracker",
+		"@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTracker",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -394,7 +394,7 @@ func NewDataAwsLocationTracker_Override(d DataAwsLocationTracker, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLocationTracker.DataAwsLocationTracker",
+		"@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTracker",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -505,7 +505,7 @@ func DataAwsLocationTracker_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLocationTracker.DataAwsLocationTracker",
+		"@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTracker",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -524,7 +524,7 @@ func DataAwsLocationTracker_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLocationTracker.DataAwsLocationTracker",
+		"@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTracker",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func DataAwsLocationTracker_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLocationTracker.DataAwsLocationTracker",
+		"@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTracker",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -556,7 +556,7 @@ func DataAwsLocationTracker_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsLocationTracker.DataAwsLocationTracker",
+		"@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTracker",
 		"tfResourceType",
 		&returns,
 	)

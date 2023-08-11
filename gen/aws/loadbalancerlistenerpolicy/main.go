@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.loadBalancerListenerPolicy.LoadBalancerListenerPolicy",
+		"@cdktf/provider-aws.loadBalancerListenerPolicy.LoadBalancerListenerPolicy",
 		reflect.TypeOf((*LoadBalancerListenerPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.loadBalancerListenerPolicy.LoadBalancerListenerPolicyConfig",
+		"@cdktf/provider-aws.loadBalancerListenerPolicy.LoadBalancerListenerPolicyConfig",
 		reflect.TypeOf((*LoadBalancerListenerPolicyConfig)(nil)).Elem(),
 	)
 }

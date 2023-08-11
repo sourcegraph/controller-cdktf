@@ -423,7 +423,7 @@ func NewEssentialContactsContact(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_EssentialContactsContact{}
 
 	_jsii_.Create(
-		"google.essentialContactsContact.EssentialContactsContact",
+		"@cdktf/provider-google.essentialContactsContact.EssentialContactsContact",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewEssentialContactsContact_Override(e EssentialContactsContact, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.essentialContactsContact.EssentialContactsContact",
+		"@cdktf/provider-google.essentialContactsContact.EssentialContactsContact",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -591,7 +591,7 @@ func EssentialContactsContact_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.essentialContactsContact.EssentialContactsContact",
+		"@cdktf/provider-google.essentialContactsContact.EssentialContactsContact",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func EssentialContactsContact_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.essentialContactsContact.EssentialContactsContact",
+		"@cdktf/provider-google.essentialContactsContact.EssentialContactsContact",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func EssentialContactsContact_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.essentialContactsContact.EssentialContactsContact",
+		"@cdktf/provider-google.essentialContactsContact.EssentialContactsContact",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func EssentialContactsContact_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.essentialContactsContact.EssentialContactsContact",
+		"@cdktf/provider-google.essentialContactsContact.EssentialContactsContact",
 		"tfResourceType",
 		&returns,
 	)

@@ -636,7 +636,7 @@ func NewRecord(scope constructs.Construct, id *string, config *RecordConfig) Rec
 	j := jsiiProxy_Record{}
 
 	_jsii_.Create(
-		"cloudflare.record.Record",
+		"@cdktf/provider-cloudflare.record.Record",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -649,7 +649,7 @@ func NewRecord_Override(r Record, scope constructs.Construct, id *string, config
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.record.Record",
+		"@cdktf/provider-cloudflare.record.Record",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -870,7 +870,7 @@ func Record_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.record.Record",
+		"@cdktf/provider-cloudflare.record.Record",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -889,7 +889,7 @@ func Record_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.record.Record",
+		"@cdktf/provider-cloudflare.record.Record",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -908,7 +908,7 @@ func Record_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.record.Record",
+		"@cdktf/provider-cloudflare.record.Record",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -921,7 +921,7 @@ func Record_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.record.Record",
+		"@cdktf/provider-cloudflare.record.Record",
 		"tfResourceType",
 		&returns,
 	)

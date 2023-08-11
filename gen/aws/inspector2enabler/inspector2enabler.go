@@ -366,7 +366,7 @@ func NewInspector2Enabler(scope constructs.Construct, id *string, config *Inspec
 	j := jsiiProxy_Inspector2Enabler{}
 
 	_jsii_.Create(
-		"aws.inspector2Enabler.Inspector2Enabler",
+		"@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewInspector2Enabler_Override(i Inspector2Enabler, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.inspector2Enabler.Inspector2Enabler",
+		"@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -512,7 +512,7 @@ func Inspector2Enabler_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.inspector2Enabler.Inspector2Enabler",
+		"@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func Inspector2Enabler_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.inspector2Enabler.Inspector2Enabler",
+		"@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func Inspector2Enabler_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.inspector2Enabler.Inspector2Enabler",
+		"@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func Inspector2Enabler_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.inspector2Enabler.Inspector2Enabler",
+		"@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler",
 		"tfResourceType",
 		&returns,
 	)

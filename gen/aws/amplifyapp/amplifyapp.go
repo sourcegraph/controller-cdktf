@@ -784,7 +784,7 @@ func NewAmplifyApp(scope constructs.Construct, id *string, config *AmplifyAppCon
 	j := jsiiProxy_AmplifyApp{}
 
 	_jsii_.Create(
-		"aws.amplifyApp.AmplifyApp",
+		"@cdktf/provider-aws.amplifyApp.AmplifyApp",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -797,7 +797,7 @@ func NewAmplifyApp_Override(a AmplifyApp, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.amplifyApp.AmplifyApp",
+		"@cdktf/provider-aws.amplifyApp.AmplifyApp",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -1095,7 +1095,7 @@ func AmplifyApp_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amplifyApp.AmplifyApp",
+		"@cdktf/provider-aws.amplifyApp.AmplifyApp",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1114,7 +1114,7 @@ func AmplifyApp_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amplifyApp.AmplifyApp",
+		"@cdktf/provider-aws.amplifyApp.AmplifyApp",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1133,7 +1133,7 @@ func AmplifyApp_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amplifyApp.AmplifyApp",
+		"@cdktf/provider-aws.amplifyApp.AmplifyApp",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1146,7 +1146,7 @@ func AmplifyApp_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.amplifyApp.AmplifyApp",
+		"@cdktf/provider-aws.amplifyApp.AmplifyApp",
 		"tfResourceType",
 		&returns,
 	)

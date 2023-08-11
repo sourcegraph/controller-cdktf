@@ -366,7 +366,7 @@ func NewGoogleAccessContextManagerIngressPolicy(scope constructs.Construct, id *
 	j := jsiiProxy_GoogleAccessContextManagerIngressPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicy",
+		"@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewGoogleAccessContextManagerIngressPolicy_Override(g GoogleAccessContextMa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicy",
+		"@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -512,7 +512,7 @@ func GoogleAccessContextManagerIngressPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicy",
+		"@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func GoogleAccessContextManagerIngressPolicy_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicy",
+		"@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func GoogleAccessContextManagerIngressPolicy_IsTerraformResource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicy",
+		"@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func GoogleAccessContextManagerIngressPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicy",
+		"@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -865,7 +865,7 @@ func NewGoogleComputeRegionInstanceGroupManager(scope constructs.Construct, id *
 	j := jsiiProxy_GoogleComputeRegionInstanceGroupManager{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManager",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManager",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -878,7 +878,7 @@ func NewGoogleComputeRegionInstanceGroupManager_Override(g GoogleComputeRegionIn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManager",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManager",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1121,7 +1121,7 @@ func GoogleComputeRegionInstanceGroupManager_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManager",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManager",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1140,7 +1140,7 @@ func GoogleComputeRegionInstanceGroupManager_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManager",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManager",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1159,7 +1159,7 @@ func GoogleComputeRegionInstanceGroupManager_IsTerraformResource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManager",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManager",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1172,7 +1172,7 @@ func GoogleComputeRegionInstanceGroupManager_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManager",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManager",
 		"tfResourceType",
 		&returns,
 	)

@@ -275,7 +275,7 @@ func NewRecaptchaEnterpriseKeyWebSettingsOutputReference(terraformResource cdktf
 	j := jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyWebSettingsOutputReference",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyWebSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewRecaptchaEnterpriseKeyWebSettingsOutputReference_Override(r RecaptchaEnt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyWebSettingsOutputReference",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyWebSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

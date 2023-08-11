@@ -226,7 +226,7 @@ func NewGoogleCloudbuildv2ConnectionIamBindingConditionOutputReference(terraform
 	j := jsiiProxy_GoogleCloudbuildv2ConnectionIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildv2ConnectionIamBinding.GoogleCloudbuildv2ConnectionIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamBinding.GoogleCloudbuildv2ConnectionIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleCloudbuildv2ConnectionIamBindingConditionOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildv2ConnectionIamBinding.GoogleCloudbuildv2ConnectionIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamBinding.GoogleCloudbuildv2ConnectionIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

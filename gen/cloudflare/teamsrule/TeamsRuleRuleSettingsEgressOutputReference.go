@@ -226,7 +226,7 @@ func NewTeamsRuleRuleSettingsEgressOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsEgressOutputReference",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsEgressOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewTeamsRuleRuleSettingsEgressOutputReference_Override(t TeamsRuleRuleSetti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsEgressOutputReference",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsEgressOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

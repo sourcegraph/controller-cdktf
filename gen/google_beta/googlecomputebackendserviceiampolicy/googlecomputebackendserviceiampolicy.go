@@ -377,7 +377,7 @@ func NewGoogleComputeBackendServiceIamPolicy(scope constructs.Construct, id *str
 	j := jsiiProxy_GoogleComputeBackendServiceIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendServiceIamPolicy.GoogleComputeBackendServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeBackendServiceIamPolicy.GoogleComputeBackendServiceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewGoogleComputeBackendServiceIamPolicy_Override(g GoogleComputeBackendServ
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendServiceIamPolicy.GoogleComputeBackendServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeBackendServiceIamPolicy.GoogleComputeBackendServiceIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -534,7 +534,7 @@ func GoogleComputeBackendServiceIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeBackendServiceIamPolicy.GoogleComputeBackendServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeBackendServiceIamPolicy.GoogleComputeBackendServiceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func GoogleComputeBackendServiceIamPolicy_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeBackendServiceIamPolicy.GoogleComputeBackendServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeBackendServiceIamPolicy.GoogleComputeBackendServiceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func GoogleComputeBackendServiceIamPolicy_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeBackendServiceIamPolicy.GoogleComputeBackendServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeBackendServiceIamPolicy.GoogleComputeBackendServiceIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func GoogleComputeBackendServiceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeBackendServiceIamPolicy.GoogleComputeBackendServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeBackendServiceIamPolicy.GoogleComputeBackendServiceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

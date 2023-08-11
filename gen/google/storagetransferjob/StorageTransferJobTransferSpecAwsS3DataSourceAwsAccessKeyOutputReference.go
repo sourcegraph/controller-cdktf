@@ -202,7 +202,7 @@ func NewStorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference
 	j := jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference{}
 
 	_jsii_.Create(
-		"google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewStorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

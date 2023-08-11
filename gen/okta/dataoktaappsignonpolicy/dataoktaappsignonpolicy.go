@@ -302,7 +302,7 @@ func NewDataOktaAppSignonPolicy(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataOktaAppSignonPolicy{}
 
 	_jsii_.Create(
-		"okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy",
+		"@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataOktaAppSignonPolicy_Override(d DataOktaAppSignonPolicy, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy",
+		"@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataOktaAppSignonPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy",
+		"@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataOktaAppSignonPolicy_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy",
+		"@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataOktaAppSignonPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy",
+		"@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataOktaAppSignonPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy",
+		"@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy",
 		"tfResourceType",
 		&returns,
 	)

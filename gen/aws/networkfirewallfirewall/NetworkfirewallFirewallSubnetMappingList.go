@@ -116,7 +116,7 @@ func NewNetworkfirewallFirewallSubnetMappingList(terraformResource cdktf.IInterp
 	j := jsiiProxy_NetworkfirewallFirewallSubnetMappingList{}
 
 	_jsii_.Create(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMappingList",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMappingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewNetworkfirewallFirewallSubnetMappingList_Override(n NetworkfirewallFirew
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMappingList",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMappingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

@@ -202,7 +202,7 @@ func NewDataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReferen
 	j := jsiiProxy_DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference",
+		"@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference",
+		"@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -116,7 +116,7 @@ func NewLbListenerRuleConditionQueryStringList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_LbListenerRuleConditionQueryStringList{}
 
 	_jsii_.Create(
-		"aws.lbListenerRule.LbListenerRuleConditionQueryStringList",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLbListenerRuleConditionQueryStringList_Override(l LbListenerRuleConditio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbListenerRule.LbListenerRuleConditionQueryStringList",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

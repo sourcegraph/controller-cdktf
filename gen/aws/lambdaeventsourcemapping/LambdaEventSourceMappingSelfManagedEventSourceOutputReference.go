@@ -179,7 +179,7 @@ func NewLambdaEventSourceMappingSelfManagedEventSourceOutputReference(terraformR
 	j := jsiiProxy_LambdaEventSourceMappingSelfManagedEventSourceOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSourceOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewLambdaEventSourceMappingSelfManagedEventSourceOutputReference_Override(l
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSourceOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

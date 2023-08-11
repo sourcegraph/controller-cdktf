@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.workspacesIpGroup.WorkspacesIpGroup",
+		"@cdktf/provider-aws.workspacesIpGroup.WorkspacesIpGroup",
 		reflect.TypeOf((*WorkspacesIpGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.workspacesIpGroup.WorkspacesIpGroupConfig",
+		"@cdktf/provider-aws.workspacesIpGroup.WorkspacesIpGroupConfig",
 		reflect.TypeOf((*WorkspacesIpGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.workspacesIpGroup.WorkspacesIpGroupRules",
+		"@cdktf/provider-aws.workspacesIpGroup.WorkspacesIpGroupRules",
 		reflect.TypeOf((*WorkspacesIpGroupRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.workspacesIpGroup.WorkspacesIpGroupRulesList",
+		"@cdktf/provider-aws.workspacesIpGroup.WorkspacesIpGroupRulesList",
 		reflect.TypeOf((*WorkspacesIpGroupRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -99,7 +99,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.workspacesIpGroup.WorkspacesIpGroupRulesOutputReference",
+		"@cdktf/provider-aws.workspacesIpGroup.WorkspacesIpGroupRulesOutputReference",
 		reflect.TypeOf((*WorkspacesIpGroupRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

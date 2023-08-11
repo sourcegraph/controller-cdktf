@@ -211,7 +211,7 @@ func NewDataAwsElbHealthCheckOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_DataAwsElbHealthCheckOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsElb.DataAwsElbHealthCheckOutputReference",
+		"@cdktf/provider-aws.dataAwsElb.DataAwsElbHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataAwsElbHealthCheckOutputReference_Override(d DataAwsElbHealthCheckOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsElb.DataAwsElbHealthCheckOutputReference",
+		"@cdktf/provider-aws.dataAwsElb.DataAwsElbHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

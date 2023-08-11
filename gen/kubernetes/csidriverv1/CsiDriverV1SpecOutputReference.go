@@ -227,7 +227,7 @@ func NewCsiDriverV1SpecOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_CsiDriverV1SpecOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.csiDriverV1.CsiDriverV1SpecOutputReference",
+		"@cdktf/provider-kubernetes.csiDriverV1.CsiDriverV1SpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewCsiDriverV1SpecOutputReference_Override(c CsiDriverV1SpecOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.csiDriverV1.CsiDriverV1SpecOutputReference",
+		"@cdktf/provider-kubernetes.csiDriverV1.CsiDriverV1SpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

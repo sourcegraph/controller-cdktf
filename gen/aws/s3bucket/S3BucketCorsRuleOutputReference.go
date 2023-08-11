@@ -274,7 +274,7 @@ func NewS3BucketCorsRuleOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_S3BucketCorsRuleOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketCorsRuleOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketCorsRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -286,7 +286,7 @@ func NewS3BucketCorsRuleOutputReference_Override(s S3BucketCorsRuleOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketCorsRuleOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketCorsRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

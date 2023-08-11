@@ -226,7 +226,7 @@ func NewComputeDiskIamBindingConditionOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_ComputeDiskIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.computeDiskIamBinding.ComputeDiskIamBindingConditionOutputReference",
+		"@cdktf/provider-google.computeDiskIamBinding.ComputeDiskIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewComputeDiskIamBindingConditionOutputReference_Override(c ComputeDiskIamB
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeDiskIamBinding.ComputeDiskIamBindingConditionOutputReference",
+		"@cdktf/provider-google.computeDiskIamBinding.ComputeDiskIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

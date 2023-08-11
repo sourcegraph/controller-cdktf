@@ -203,7 +203,7 @@ func NewGoogleContainerClusterAddonsConfigCloudrunConfigOutputReference(terrafor
 	j := jsiiProxy_GoogleContainerClusterAddonsConfigCloudrunConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigCloudrunConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigCloudrunConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleContainerClusterAddonsConfigCloudrunConfigOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigCloudrunConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigCloudrunConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

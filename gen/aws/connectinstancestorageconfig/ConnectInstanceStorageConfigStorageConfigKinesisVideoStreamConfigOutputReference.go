@@ -225,7 +225,7 @@ func NewConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputR
 	j := jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

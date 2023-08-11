@@ -593,7 +593,7 @@ func NewComputeRegionNetworkEndpointGroup(scope constructs.Construct, id *string
 	j := jsiiProxy_ComputeRegionNetworkEndpointGroup{}
 
 	_jsii_.Create(
-		"google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroup",
+		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -606,7 +606,7 @@ func NewComputeRegionNetworkEndpointGroup_Override(c ComputeRegionNetworkEndpoin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroup",
+		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroup",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -805,7 +805,7 @@ func ComputeRegionNetworkEndpointGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroup",
+		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -824,7 +824,7 @@ func ComputeRegionNetworkEndpointGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroup",
+		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -843,7 +843,7 @@ func ComputeRegionNetworkEndpointGroup_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroup",
+		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -856,7 +856,7 @@ func ComputeRegionNetworkEndpointGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroup",
+		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroup",
 		"tfResourceType",
 		&returns,
 	)

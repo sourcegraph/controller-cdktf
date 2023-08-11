@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext",
+		"@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext",
 		reflect.TypeOf((*DataAwsKmsCiphertext)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsKmsCiphertext.DataAwsKmsCiphertextConfig",
+		"@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertextConfig",
 		reflect.TypeOf((*DataAwsKmsCiphertextConfig)(nil)).Elem(),
 	)
 }

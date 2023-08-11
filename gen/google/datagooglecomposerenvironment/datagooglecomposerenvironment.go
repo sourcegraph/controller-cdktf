@@ -361,7 +361,7 @@ func NewDataGoogleComposerEnvironment(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataGoogleComposerEnvironment{}
 
 	_jsii_.Create(
-		"google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironment",
+		"@cdktf/provider-google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -374,7 +374,7 @@ func NewDataGoogleComposerEnvironment_Override(d DataGoogleComposerEnvironment, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironment",
+		"@cdktf/provider-google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironment",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -496,7 +496,7 @@ func DataGoogleComposerEnvironment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironment",
+		"@cdktf/provider-google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func DataGoogleComposerEnvironment_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironment",
+		"@cdktf/provider-google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironment",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataGoogleComposerEnvironment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironment",
+		"@cdktf/provider-google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +547,7 @@ func DataGoogleComposerEnvironment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironment",
+		"@cdktf/provider-google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironment",
 		"tfResourceType",
 		&returns,
 	)

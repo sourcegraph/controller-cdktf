@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.bigtableTable.BigtableTable",
+		"@cdktf/provider-google.bigtableTable.BigtableTable",
 		reflect.TypeOf((*BigtableTable)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,11 +76,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigtableTable.BigtableTableColumnFamily",
+		"@cdktf/provider-google.bigtableTable.BigtableTableColumnFamily",
 		reflect.TypeOf((*BigtableTableColumnFamily)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigtableTable.BigtableTableColumnFamilyList",
+		"@cdktf/provider-google.bigtableTable.BigtableTableColumnFamilyList",
 		reflect.TypeOf((*BigtableTableColumnFamilyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,7 +101,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.bigtableTable.BigtableTableColumnFamilyOutputReference",
+		"@cdktf/provider-google.bigtableTable.BigtableTableColumnFamilyOutputReference",
 		reflect.TypeOf((*BigtableTableColumnFamilyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -135,15 +135,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigtableTable.BigtableTableConfig",
+		"@cdktf/provider-google.bigtableTable.BigtableTableConfig",
 		reflect.TypeOf((*BigtableTableConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.bigtableTable.BigtableTableTimeouts",
+		"@cdktf/provider-google.bigtableTable.BigtableTableTimeouts",
 		reflect.TypeOf((*BigtableTableTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigtableTable.BigtableTableTimeoutsOutputReference",
+		"@cdktf/provider-google.bigtableTable.BigtableTableTimeoutsOutputReference",
 		reflect.TypeOf((*BigtableTableTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -516,7 +516,7 @@ func NewConnectRoutingProfile(scope constructs.Construct, id *string, config *Co
 	j := jsiiProxy_ConnectRoutingProfile{}
 
 	_jsii_.Create(
-		"aws.connectRoutingProfile.ConnectRoutingProfile",
+		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -529,7 +529,7 @@ func NewConnectRoutingProfile_Override(c ConnectRoutingProfile, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectRoutingProfile.ConnectRoutingProfile",
+		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfile",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -706,7 +706,7 @@ func ConnectRoutingProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectRoutingProfile.ConnectRoutingProfile",
+		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -725,7 +725,7 @@ func ConnectRoutingProfile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectRoutingProfile.ConnectRoutingProfile",
+		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -744,7 +744,7 @@ func ConnectRoutingProfile_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectRoutingProfile.ConnectRoutingProfile",
+		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -757,7 +757,7 @@ func ConnectRoutingProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.connectRoutingProfile.ConnectRoutingProfile",
+		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfile",
 		"tfResourceType",
 		&returns,
 	)

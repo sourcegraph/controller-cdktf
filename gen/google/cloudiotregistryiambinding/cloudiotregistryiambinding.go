@@ -448,7 +448,7 @@ func NewCloudiotRegistryIamBinding(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_CloudiotRegistryIamBinding{}
 
 	_jsii_.Create(
-		"google.cloudiotRegistryIamBinding.CloudiotRegistryIamBinding",
+		"@cdktf/provider-google.cloudiotRegistryIamBinding.CloudiotRegistryIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewCloudiotRegistryIamBinding_Override(c CloudiotRegistryIamBinding, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudiotRegistryIamBinding.CloudiotRegistryIamBinding",
+		"@cdktf/provider-google.cloudiotRegistryIamBinding.CloudiotRegistryIamBinding",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -627,7 +627,7 @@ func CloudiotRegistryIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudiotRegistryIamBinding.CloudiotRegistryIamBinding",
+		"@cdktf/provider-google.cloudiotRegistryIamBinding.CloudiotRegistryIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func CloudiotRegistryIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudiotRegistryIamBinding.CloudiotRegistryIamBinding",
+		"@cdktf/provider-google.cloudiotRegistryIamBinding.CloudiotRegistryIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func CloudiotRegistryIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudiotRegistryIamBinding.CloudiotRegistryIamBinding",
+		"@cdktf/provider-google.cloudiotRegistryIamBinding.CloudiotRegistryIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func CloudiotRegistryIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudiotRegistryIamBinding.CloudiotRegistryIamBinding",
+		"@cdktf/provider-google.cloudiotRegistryIamBinding.CloudiotRegistryIamBinding",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnection",
+		"@cdktf/provider-aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnection",
 		reflect.TypeOf((*ApprunnerVpcIngressConnection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnectionConfig",
+		"@cdktf/provider-aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnectionConfig",
 		reflect.TypeOf((*ApprunnerVpcIngressConnectionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnectionIngressVpcConfiguration",
+		"@cdktf/provider-aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnectionIngressVpcConfiguration",
 		reflect.TypeOf((*ApprunnerVpcIngressConnectionIngressVpcConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnectionIngressVpcConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnectionIngressVpcConfigurationOutputReference",
 		reflect.TypeOf((*ApprunnerVpcIngressConnectionIngressVpcConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

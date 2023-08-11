@@ -324,7 +324,7 @@ func NewDataAwsSecretsmanagerSecretRotation(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataAwsSecretsmanagerSecretRotation{}
 
 	_jsii_.Create(
-		"aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -337,7 +337,7 @@ func NewDataAwsSecretsmanagerSecretRotation_Override(d DataAwsSecretsmanagerSecr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -437,7 +437,7 @@ func DataAwsSecretsmanagerSecretRotation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -456,7 +456,7 @@ func DataAwsSecretsmanagerSecretRotation_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -475,7 +475,7 @@ func DataAwsSecretsmanagerSecretRotation_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -488,7 +488,7 @@ func DataAwsSecretsmanagerSecretRotation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecretRotation.DataAwsSecretsmanagerSecretRotation",
 		"tfResourceType",
 		&returns,
 	)

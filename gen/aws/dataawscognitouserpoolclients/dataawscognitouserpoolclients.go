@@ -313,7 +313,7 @@ func NewDataAwsCognitoUserPoolClients(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataAwsCognitoUserPoolClients{}
 
 	_jsii_.Create(
-		"aws.dataAwsCognitoUserPoolClients.DataAwsCognitoUserPoolClients",
+		"@cdktf/provider-aws.dataAwsCognitoUserPoolClients.DataAwsCognitoUserPoolClients",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -326,7 +326,7 @@ func NewDataAwsCognitoUserPoolClients_Override(d DataAwsCognitoUserPoolClients, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCognitoUserPoolClients.DataAwsCognitoUserPoolClients",
+		"@cdktf/provider-aws.dataAwsCognitoUserPoolClients.DataAwsCognitoUserPoolClients",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -426,7 +426,7 @@ func DataAwsCognitoUserPoolClients_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCognitoUserPoolClients.DataAwsCognitoUserPoolClients",
+		"@cdktf/provider-aws.dataAwsCognitoUserPoolClients.DataAwsCognitoUserPoolClients",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +445,7 @@ func DataAwsCognitoUserPoolClients_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCognitoUserPoolClients.DataAwsCognitoUserPoolClients",
+		"@cdktf/provider-aws.dataAwsCognitoUserPoolClients.DataAwsCognitoUserPoolClients",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -464,7 +464,7 @@ func DataAwsCognitoUserPoolClients_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCognitoUserPoolClients.DataAwsCognitoUserPoolClients",
+		"@cdktf/provider-aws.dataAwsCognitoUserPoolClients.DataAwsCognitoUserPoolClients",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataAwsCognitoUserPoolClients_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsCognitoUserPoolClients.DataAwsCognitoUserPoolClients",
+		"@cdktf/provider-aws.dataAwsCognitoUserPoolClients.DataAwsCognitoUserPoolClients",
 		"tfResourceType",
 		&returns,
 	)

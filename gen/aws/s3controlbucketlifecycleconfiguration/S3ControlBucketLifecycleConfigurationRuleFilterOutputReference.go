@@ -204,7 +204,7 @@ func NewS3ControlBucketLifecycleConfigurationRuleFilterOutputReference(terraform
 	j := jsiiProxy_S3ControlBucketLifecycleConfigurationRuleFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleFilterOutputReference",
+		"@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewS3ControlBucketLifecycleConfigurationRuleFilterOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleFilterOutputReference",
+		"@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfigurationRuleFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

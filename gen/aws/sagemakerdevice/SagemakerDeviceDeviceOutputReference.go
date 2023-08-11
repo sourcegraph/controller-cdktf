@@ -227,7 +227,7 @@ func NewSagemakerDeviceDeviceOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_SagemakerDeviceDeviceOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerDevice.SagemakerDeviceDeviceOutputReference",
+		"@cdktf/provider-aws.sagemakerDevice.SagemakerDeviceDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewSagemakerDeviceDeviceOutputReference_Override(s SagemakerDeviceDeviceOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerDevice.SagemakerDeviceDeviceOutputReference",
+		"@cdktf/provider-aws.sagemakerDevice.SagemakerDeviceDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

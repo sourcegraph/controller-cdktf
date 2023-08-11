@@ -190,7 +190,7 @@ func NewCloudbuildTriggerWebhookConfigOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_CloudbuildTriggerWebhookConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudbuildTrigger.CloudbuildTriggerWebhookConfigOutputReference",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerWebhookConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -202,7 +202,7 @@ func NewCloudbuildTriggerWebhookConfigOutputReference_Override(c CloudbuildTrigg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudbuildTrigger.CloudbuildTriggerWebhookConfigOutputReference",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerWebhookConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

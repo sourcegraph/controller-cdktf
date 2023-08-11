@@ -116,7 +116,7 @@ func NewEcsTaskSetLoadBalancerList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_EcsTaskSetLoadBalancerList{}
 
 	_jsii_.Create(
-		"aws.ecsTaskSet.EcsTaskSetLoadBalancerList",
+		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetLoadBalancerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEcsTaskSetLoadBalancerList_Override(e EcsTaskSetLoadBalancerList, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsTaskSet.EcsTaskSetLoadBalancerList",
+		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetLoadBalancerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

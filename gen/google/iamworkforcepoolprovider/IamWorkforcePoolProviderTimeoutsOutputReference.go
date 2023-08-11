@@ -228,7 +228,7 @@ func NewIamWorkforcePoolProviderTimeoutsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_IamWorkforcePoolProviderTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.iamWorkforcePoolProvider.IamWorkforcePoolProviderTimeoutsOutputReference",
+		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewIamWorkforcePoolProviderTimeoutsOutputReference_Override(i IamWorkforceP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iamWorkforcePoolProvider.IamWorkforcePoolProviderTimeoutsOutputReference",
+		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

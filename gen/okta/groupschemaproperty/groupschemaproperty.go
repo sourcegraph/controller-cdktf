@@ -749,7 +749,7 @@ func NewGroupSchemaProperty(scope constructs.Construct, id *string, config *Grou
 	j := jsiiProxy_GroupSchemaProperty{}
 
 	_jsii_.Create(
-		"okta.groupSchemaProperty.GroupSchemaProperty",
+		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -762,7 +762,7 @@ func NewGroupSchemaProperty_Override(g GroupSchemaProperty, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.groupSchemaProperty.GroupSchemaProperty",
+		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1049,7 +1049,7 @@ func GroupSchemaProperty_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.groupSchemaProperty.GroupSchemaProperty",
+		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1068,7 +1068,7 @@ func GroupSchemaProperty_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.groupSchemaProperty.GroupSchemaProperty",
+		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1087,7 +1087,7 @@ func GroupSchemaProperty_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.groupSchemaProperty.GroupSchemaProperty",
+		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1100,7 +1100,7 @@ func GroupSchemaProperty_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.groupSchemaProperty.GroupSchemaProperty",
+		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty",
 		"tfResourceType",
 		&returns,
 	)

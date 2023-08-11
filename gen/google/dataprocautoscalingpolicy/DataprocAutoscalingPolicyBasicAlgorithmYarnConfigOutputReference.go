@@ -273,7 +273,7 @@ func NewDataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference(terrafo
 	j := jsiiProxy_DataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference",
+		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -285,7 +285,7 @@ func NewDataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference",
+		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

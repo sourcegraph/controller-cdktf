@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"kubernetes.priorityClassV1.PriorityClassV1",
+		"@cdktf/provider-kubernetes.priorityClassV1.PriorityClassV1",
 		reflect.TypeOf((*PriorityClassV1)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,15 +69,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.priorityClassV1.PriorityClassV1Config",
+		"@cdktf/provider-kubernetes.priorityClassV1.PriorityClassV1Config",
 		reflect.TypeOf((*PriorityClassV1Config)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.priorityClassV1.PriorityClassV1Metadata",
+		"@cdktf/provider-kubernetes.priorityClassV1.PriorityClassV1Metadata",
 		reflect.TypeOf((*PriorityClassV1Metadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.priorityClassV1.PriorityClassV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.priorityClassV1.PriorityClassV1MetadataOutputReference",
 		reflect.TypeOf((*PriorityClassV1MetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},

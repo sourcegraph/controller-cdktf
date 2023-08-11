@@ -203,7 +203,7 @@ func NewCloudfrontOriginRequestPolicyQueryStringsConfigOutputReference(terraform
 	j := jsiiProxy_CloudfrontOriginRequestPolicyQueryStringsConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyQueryStringsConfigOutputReference",
+		"@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyQueryStringsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewCloudfrontOriginRequestPolicyQueryStringsConfigOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyQueryStringsConfigOutputReference",
+		"@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyQueryStringsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

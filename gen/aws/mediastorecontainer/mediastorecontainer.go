@@ -389,7 +389,7 @@ func NewMediaStoreContainer(scope constructs.Construct, id *string, config *Medi
 	j := jsiiProxy_MediaStoreContainer{}
 
 	_jsii_.Create(
-		"aws.mediaStoreContainer.MediaStoreContainer",
+		"@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -402,7 +402,7 @@ func NewMediaStoreContainer_Override(m MediaStoreContainer, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mediaStoreContainer.MediaStoreContainer",
+		"@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -546,7 +546,7 @@ func MediaStoreContainer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mediaStoreContainer.MediaStoreContainer",
+		"@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func MediaStoreContainer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mediaStoreContainer.MediaStoreContainer",
+		"@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func MediaStoreContainer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mediaStoreContainer.MediaStoreContainer",
+		"@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func MediaStoreContainer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.mediaStoreContainer.MediaStoreContainer",
+		"@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer",
 		"tfResourceType",
 		&returns,
 	)

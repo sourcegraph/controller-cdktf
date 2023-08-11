@@ -760,7 +760,7 @@ func NewSubnet(scope constructs.Construct, id *string, config *SubnetConfig) Sub
 	j := jsiiProxy_Subnet{}
 
 	_jsii_.Create(
-		"aws.subnet.Subnet",
+		"@cdktf/provider-aws.subnet.Subnet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -773,7 +773,7 @@ func NewSubnet_Override(s Subnet, scope constructs.Construct, id *string, config
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.subnet.Subnet",
+		"@cdktf/provider-aws.subnet.Subnet",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -1071,7 +1071,7 @@ func Subnet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.subnet.Subnet",
+		"@cdktf/provider-aws.subnet.Subnet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1090,7 +1090,7 @@ func Subnet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.subnet.Subnet",
+		"@cdktf/provider-aws.subnet.Subnet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1109,7 +1109,7 @@ func Subnet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.subnet.Subnet",
+		"@cdktf/provider-aws.subnet.Subnet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1122,7 +1122,7 @@ func Subnet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.subnet.Subnet",
+		"@cdktf/provider-aws.subnet.Subnet",
 		"tfResourceType",
 		&returns,
 	)

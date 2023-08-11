@@ -104,7 +104,7 @@ func NewDataAwsLambdaCodeSigningConfigPoliciesList(terraformResource cdktf.IInte
 	j := jsiiProxy_DataAwsLambdaCodeSigningConfigPoliciesList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfigPoliciesList",
+		"@cdktf/provider-aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfigPoliciesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLambdaCodeSigningConfigPoliciesList_Override(d DataAwsLambdaCodeS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfigPoliciesList",
+		"@cdktf/provider-aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfigPoliciesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -180,7 +180,7 @@ func NewGoogleClouddeployTargetAnthosClusterOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleClouddeployTargetAnthosClusterOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetAnthosClusterOutputReference",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetAnthosClusterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleClouddeployTargetAnthosClusterOutputReference_Override(g GoogleClo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetAnthosClusterOutputReference",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetAnthosClusterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

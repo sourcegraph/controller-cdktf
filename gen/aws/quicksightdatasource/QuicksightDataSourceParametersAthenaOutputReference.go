@@ -180,7 +180,7 @@ func NewQuicksightDataSourceParametersAthenaOutputReference(terraformResource cd
 	j := jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference{}
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersAthenaOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAthenaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewQuicksightDataSourceParametersAthenaOutputReference_Override(q Quicksigh
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersAthenaOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAthenaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)

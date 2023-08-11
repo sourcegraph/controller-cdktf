@@ -179,7 +179,7 @@ func NewDatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference(terr
 	j := jsiiProxy_DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference{}
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

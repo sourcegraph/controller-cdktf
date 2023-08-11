@@ -189,7 +189,7 @@ func NewGoogleDataplexZoneAssetStatusOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_GoogleDataplexZoneAssetStatusOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexZone.GoogleDataplexZoneAssetStatusOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneAssetStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewGoogleDataplexZoneAssetStatusOutputReference_Override(g GoogleDataplexZo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexZone.GoogleDataplexZoneAssetStatusOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneAssetStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

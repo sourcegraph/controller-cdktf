@@ -228,7 +228,7 @@ func NewPodSpecVolumeSecretItemsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_PodSpecVolumeSecretItemsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeSecretItemsOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeSecretItemsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewPodSpecVolumeSecretItemsOutputReference_Override(p PodSpecVolumeSecretIt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeSecretItemsOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeSecretItemsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

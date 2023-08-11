@@ -425,7 +425,7 @@ func NewGoogleRuntimeconfigVariable(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleRuntimeconfigVariable{}
 
 	_jsii_.Create(
-		"google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable",
+		"@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -438,7 +438,7 @@ func NewGoogleRuntimeconfigVariable_Override(g GoogleRuntimeconfigVariable, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable",
+		"@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -604,7 +604,7 @@ func GoogleRuntimeconfigVariable_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable",
+		"@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -623,7 +623,7 @@ func GoogleRuntimeconfigVariable_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable",
+		"@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func GoogleRuntimeconfigVariable_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable",
+		"@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func GoogleRuntimeconfigVariable_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable",
+		"@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable",
 		"tfResourceType",
 		&returns,
 	)

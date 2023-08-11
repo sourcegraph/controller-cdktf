@@ -203,7 +203,7 @@ func NewAthenaDatabaseEncryptionConfigurationOutputReference(terraformResource c
 	j := jsiiProxy_AthenaDatabaseEncryptionConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.athenaDatabase.AthenaDatabaseEncryptionConfigurationOutputReference",
+		"@cdktf/provider-aws.athenaDatabase.AthenaDatabaseEncryptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAthenaDatabaseEncryptionConfigurationOutputReference_Override(a AthenaDa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.athenaDatabase.AthenaDatabaseEncryptionConfigurationOutputReference",
+		"@cdktf/provider-aws.athenaDatabase.AthenaDatabaseEncryptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

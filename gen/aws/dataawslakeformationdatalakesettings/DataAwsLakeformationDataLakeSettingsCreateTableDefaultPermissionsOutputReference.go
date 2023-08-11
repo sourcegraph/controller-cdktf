@@ -178,7 +178,7 @@ func NewDataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputR
 	j := jsiiProxy_DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference",
+		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference",
+		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

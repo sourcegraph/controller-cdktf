@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.auditmanagerAssessment.AuditmanagerAssessment",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessment",
 		reflect.TypeOf((*AuditmanagerAssessment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,11 +78,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentAssessmentReportsDestination",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentAssessmentReportsDestination",
 		reflect.TypeOf((*AuditmanagerAssessmentAssessmentReportsDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentAssessmentReportsDestinationList",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentAssessmentReportsDestinationList",
 		reflect.TypeOf((*AuditmanagerAssessmentAssessmentReportsDestinationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentAssessmentReportsDestinationOutputReference",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentAssessmentReportsDestinationOutputReference",
 		reflect.TypeOf((*AuditmanagerAssessmentAssessmentReportsDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,19 +139,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentConfig",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentConfig",
 		reflect.TypeOf((*AuditmanagerAssessmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentRoles",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentRoles",
 		reflect.TypeOf((*AuditmanagerAssessmentRoles)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentRolesAll",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentRolesAll",
 		reflect.TypeOf((*AuditmanagerAssessmentRolesAll)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentRolesAllList",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentRolesAllList",
 		reflect.TypeOf((*AuditmanagerAssessmentRolesAllList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -171,7 +171,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentRolesAllOutputReference",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentRolesAllOutputReference",
 		reflect.TypeOf((*AuditmanagerAssessmentRolesAllOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -205,7 +205,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentRolesList",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentRolesList",
 		reflect.TypeOf((*AuditmanagerAssessmentRolesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -226,7 +226,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentRolesOutputReference",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentRolesOutputReference",
 		reflect.TypeOf((*AuditmanagerAssessmentRolesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -262,15 +262,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentScope",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScope",
 		reflect.TypeOf((*AuditmanagerAssessmentScope)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsAccounts",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsAccounts",
 		reflect.TypeOf((*AuditmanagerAssessmentScopeAwsAccounts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsAccountsList",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsAccountsList",
 		reflect.TypeOf((*AuditmanagerAssessmentScopeAwsAccountsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -291,7 +291,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsAccountsOutputReference",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsAccountsOutputReference",
 		reflect.TypeOf((*AuditmanagerAssessmentScopeAwsAccountsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -325,11 +325,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsServices",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsServices",
 		reflect.TypeOf((*AuditmanagerAssessmentScopeAwsServices)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsServicesList",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsServicesList",
 		reflect.TypeOf((*AuditmanagerAssessmentScopeAwsServicesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -350,7 +350,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsServicesOutputReference",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsServicesOutputReference",
 		reflect.TypeOf((*AuditmanagerAssessmentScopeAwsServicesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -384,7 +384,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentScopeList",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeList",
 		reflect.TypeOf((*AuditmanagerAssessmentScopeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -405,7 +405,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentScopeOutputReference",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeOutputReference",
 		reflect.TypeOf((*AuditmanagerAssessmentScopeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsAccounts", GoGetter: "AwsAccounts"},

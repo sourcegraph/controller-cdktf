@@ -204,7 +204,7 @@ func NewGoogleMonitoringServiceBasicServiceOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringService.GoogleMonitoringServiceBasicServiceOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceBasicServiceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleMonitoringServiceBasicServiceOutputReference_Override(g GoogleMoni
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringService.GoogleMonitoringServiceBasicServiceOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceBasicServiceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

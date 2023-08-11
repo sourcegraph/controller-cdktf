@@ -419,7 +419,7 @@ func NewComputeBackendServiceBackendOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_ComputeBackendServiceBackendOutputReference{}
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceBackendOutputReference",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -431,7 +431,7 @@ func NewComputeBackendServiceBackendOutputReference_Override(c ComputeBackendSer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceBackendOutputReference",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

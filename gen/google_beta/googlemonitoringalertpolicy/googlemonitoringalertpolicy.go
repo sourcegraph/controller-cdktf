@@ -555,7 +555,7 @@ func NewGoogleMonitoringAlertPolicy(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleMonitoringAlertPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -568,7 +568,7 @@ func NewGoogleMonitoringAlertPolicy_Override(g GoogleMonitoringAlertPolicy, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -745,7 +745,7 @@ func GoogleMonitoringAlertPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -764,7 +764,7 @@ func GoogleMonitoringAlertPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -783,7 +783,7 @@ func GoogleMonitoringAlertPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -796,7 +796,7 @@ func GoogleMonitoringAlertPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicy",
 		"tfResourceType",
 		&returns,
 	)

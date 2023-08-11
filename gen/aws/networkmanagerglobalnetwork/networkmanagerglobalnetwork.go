@@ -403,7 +403,7 @@ func NewNetworkmanagerGlobalNetwork(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_NetworkmanagerGlobalNetwork{}
 
 	_jsii_.Create(
-		"aws.networkmanagerGlobalNetwork.NetworkmanagerGlobalNetwork",
+		"@cdktf/provider-aws.networkmanagerGlobalNetwork.NetworkmanagerGlobalNetwork",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -416,7 +416,7 @@ func NewNetworkmanagerGlobalNetwork_Override(n NetworkmanagerGlobalNetwork, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerGlobalNetwork.NetworkmanagerGlobalNetwork",
+		"@cdktf/provider-aws.networkmanagerGlobalNetwork.NetworkmanagerGlobalNetwork",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -560,7 +560,7 @@ func NetworkmanagerGlobalNetwork_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerGlobalNetwork.NetworkmanagerGlobalNetwork",
+		"@cdktf/provider-aws.networkmanagerGlobalNetwork.NetworkmanagerGlobalNetwork",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -579,7 +579,7 @@ func NetworkmanagerGlobalNetwork_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerGlobalNetwork.NetworkmanagerGlobalNetwork",
+		"@cdktf/provider-aws.networkmanagerGlobalNetwork.NetworkmanagerGlobalNetwork",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -598,7 +598,7 @@ func NetworkmanagerGlobalNetwork_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerGlobalNetwork.NetworkmanagerGlobalNetwork",
+		"@cdktf/provider-aws.networkmanagerGlobalNetwork.NetworkmanagerGlobalNetwork",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func NetworkmanagerGlobalNetwork_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkmanagerGlobalNetwork.NetworkmanagerGlobalNetwork",
+		"@cdktf/provider-aws.networkmanagerGlobalNetwork.NetworkmanagerGlobalNetwork",
 		"tfResourceType",
 		&returns,
 	)

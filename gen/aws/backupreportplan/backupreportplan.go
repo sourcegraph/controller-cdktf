@@ -470,7 +470,7 @@ func NewBackupReportPlan(scope constructs.Construct, id *string, config *BackupR
 	j := jsiiProxy_BackupReportPlan{}
 
 	_jsii_.Create(
-		"aws.backupReportPlan.BackupReportPlan",
+		"@cdktf/provider-aws.backupReportPlan.BackupReportPlan",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -483,7 +483,7 @@ func NewBackupReportPlan_Override(b BackupReportPlan, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupReportPlan.BackupReportPlan",
+		"@cdktf/provider-aws.backupReportPlan.BackupReportPlan",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -638,7 +638,7 @@ func BackupReportPlan_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupReportPlan.BackupReportPlan",
+		"@cdktf/provider-aws.backupReportPlan.BackupReportPlan",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func BackupReportPlan_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupReportPlan.BackupReportPlan",
+		"@cdktf/provider-aws.backupReportPlan.BackupReportPlan",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func BackupReportPlan_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupReportPlan.BackupReportPlan",
+		"@cdktf/provider-aws.backupReportPlan.BackupReportPlan",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func BackupReportPlan_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.backupReportPlan.BackupReportPlan",
+		"@cdktf/provider-aws.backupReportPlan.BackupReportPlan",
 		"tfResourceType",
 		&returns,
 	)

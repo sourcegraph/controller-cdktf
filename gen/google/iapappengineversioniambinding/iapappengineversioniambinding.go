@@ -470,7 +470,7 @@ func NewIapAppEngineVersionIamBinding(scope constructs.Construct, id *string, co
 	j := jsiiProxy_IapAppEngineVersionIamBinding{}
 
 	_jsii_.Create(
-		"google.iapAppEngineVersionIamBinding.IapAppEngineVersionIamBinding",
+		"@cdktf/provider-google.iapAppEngineVersionIamBinding.IapAppEngineVersionIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -483,7 +483,7 @@ func NewIapAppEngineVersionIamBinding_Override(i IapAppEngineVersionIamBinding, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapAppEngineVersionIamBinding.IapAppEngineVersionIamBinding",
+		"@cdktf/provider-google.iapAppEngineVersionIamBinding.IapAppEngineVersionIamBinding",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -660,7 +660,7 @@ func IapAppEngineVersionIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapAppEngineVersionIamBinding.IapAppEngineVersionIamBinding",
+		"@cdktf/provider-google.iapAppEngineVersionIamBinding.IapAppEngineVersionIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func IapAppEngineVersionIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapAppEngineVersionIamBinding.IapAppEngineVersionIamBinding",
+		"@cdktf/provider-google.iapAppEngineVersionIamBinding.IapAppEngineVersionIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -698,7 +698,7 @@ func IapAppEngineVersionIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapAppEngineVersionIamBinding.IapAppEngineVersionIamBinding",
+		"@cdktf/provider-google.iapAppEngineVersionIamBinding.IapAppEngineVersionIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -711,7 +711,7 @@ func IapAppEngineVersionIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.iapAppEngineVersionIamBinding.IapAppEngineVersionIamBinding",
+		"@cdktf/provider-google.iapAppEngineVersionIamBinding.IapAppEngineVersionIamBinding",
 		"tfResourceType",
 		&returns,
 	)

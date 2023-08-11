@@ -116,7 +116,7 @@ func NewAppGroupAssignmentsGroupList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_AppGroupAssignmentsGroupList{}
 
 	_jsii_.Create(
-		"okta.appGroupAssignments.AppGroupAssignmentsGroupList",
+		"@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsGroupList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppGroupAssignmentsGroupList_Override(a AppGroupAssignmentsGroupList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appGroupAssignments.AppGroupAssignmentsGroupList",
+		"@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsGroupList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

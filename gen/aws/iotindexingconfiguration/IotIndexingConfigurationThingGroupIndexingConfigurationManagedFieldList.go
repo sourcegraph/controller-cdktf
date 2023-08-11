@@ -116,7 +116,7 @@ func NewIotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList(
 	j := jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList{}
 
 	_jsii_.Create(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewIotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

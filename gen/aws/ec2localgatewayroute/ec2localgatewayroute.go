@@ -365,7 +365,7 @@ func NewEc2LocalGatewayRoute(scope constructs.Construct, id *string, config *Ec2
 	j := jsiiProxy_Ec2LocalGatewayRoute{}
 
 	_jsii_.Create(
-		"aws.ec2LocalGatewayRoute.Ec2LocalGatewayRoute",
+		"@cdktf/provider-aws.ec2LocalGatewayRoute.Ec2LocalGatewayRoute",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewEc2LocalGatewayRoute_Override(e Ec2LocalGatewayRoute, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2LocalGatewayRoute.Ec2LocalGatewayRoute",
+		"@cdktf/provider-aws.ec2LocalGatewayRoute.Ec2LocalGatewayRoute",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -522,7 +522,7 @@ func Ec2LocalGatewayRoute_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2LocalGatewayRoute.Ec2LocalGatewayRoute",
+		"@cdktf/provider-aws.ec2LocalGatewayRoute.Ec2LocalGatewayRoute",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func Ec2LocalGatewayRoute_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2LocalGatewayRoute.Ec2LocalGatewayRoute",
+		"@cdktf/provider-aws.ec2LocalGatewayRoute.Ec2LocalGatewayRoute",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func Ec2LocalGatewayRoute_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2LocalGatewayRoute.Ec2LocalGatewayRoute",
+		"@cdktf/provider-aws.ec2LocalGatewayRoute.Ec2LocalGatewayRoute",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func Ec2LocalGatewayRoute_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2LocalGatewayRoute.Ec2LocalGatewayRoute",
+		"@cdktf/provider-aws.ec2LocalGatewayRoute.Ec2LocalGatewayRoute",
 		"tfResourceType",
 		&returns,
 	)

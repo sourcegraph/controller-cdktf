@@ -882,7 +882,7 @@ func NewOpsworksStaticWebLayer(scope constructs.Construct, id *string, config *O
 	j := jsiiProxy_OpsworksStaticWebLayer{}
 
 	_jsii_.Create(
-		"aws.opsworksStaticWebLayer.OpsworksStaticWebLayer",
+		"@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -895,7 +895,7 @@ func NewOpsworksStaticWebLayer_Override(o OpsworksStaticWebLayer, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksStaticWebLayer.OpsworksStaticWebLayer",
+		"@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -1237,7 +1237,7 @@ func OpsworksStaticWebLayer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksStaticWebLayer.OpsworksStaticWebLayer",
+		"@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1256,7 +1256,7 @@ func OpsworksStaticWebLayer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksStaticWebLayer.OpsworksStaticWebLayer",
+		"@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1275,7 +1275,7 @@ func OpsworksStaticWebLayer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksStaticWebLayer.OpsworksStaticWebLayer",
+		"@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1288,7 +1288,7 @@ func OpsworksStaticWebLayer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.opsworksStaticWebLayer.OpsworksStaticWebLayer",
+		"@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer",
 		"tfResourceType",
 		&returns,
 	)

@@ -227,7 +227,7 @@ func NewAlbAccessLogsOutputReference(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_AlbAccessLogsOutputReference{}
 
 	_jsii_.Create(
-		"aws.alb.AlbAccessLogsOutputReference",
+		"@cdktf/provider-aws.alb.AlbAccessLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewAlbAccessLogsOutputReference_Override(a AlbAccessLogsOutputReference, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.alb.AlbAccessLogsOutputReference",
+		"@cdktf/provider-aws.alb.AlbAccessLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

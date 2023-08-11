@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.tpuNode.TpuNode",
+		"@cdktf/provider-google.tpuNode.TpuNode",
 		reflect.TypeOf((*TpuNode)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorType", GoGetter: "AcceleratorType"},
@@ -92,15 +92,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.tpuNode.TpuNodeConfig",
+		"@cdktf/provider-google.tpuNode.TpuNodeConfig",
 		reflect.TypeOf((*TpuNodeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.tpuNode.TpuNodeNetworkEndpoints",
+		"@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpoints",
 		reflect.TypeOf((*TpuNodeNetworkEndpoints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.tpuNode.TpuNodeNetworkEndpointsList",
+		"@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList",
 		reflect.TypeOf((*TpuNodeNetworkEndpointsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -120,7 +120,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.tpuNode.TpuNodeNetworkEndpointsOutputReference",
+		"@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference",
 		reflect.TypeOf((*TpuNodeNetworkEndpointsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -154,11 +154,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.tpuNode.TpuNodeSchedulingConfig",
+		"@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfig",
 		reflect.TypeOf((*TpuNodeSchedulingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.tpuNode.TpuNodeSchedulingConfigOutputReference",
+		"@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference",
 		reflect.TypeOf((*TpuNodeSchedulingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -192,11 +192,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.tpuNode.TpuNodeTimeouts",
+		"@cdktf/provider-google.tpuNode.TpuNodeTimeouts",
 		reflect.TypeOf((*TpuNodeTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.tpuNode.TpuNodeTimeoutsOutputReference",
+		"@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference",
 		reflect.TypeOf((*TpuNodeTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

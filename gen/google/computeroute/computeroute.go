@@ -651,7 +651,7 @@ func NewComputeRoute(scope constructs.Construct, id *string, config *ComputeRout
 	j := jsiiProxy_ComputeRoute{}
 
 	_jsii_.Create(
-		"google.computeRoute.ComputeRoute",
+		"@cdktf/provider-google.computeRoute.ComputeRoute",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -664,7 +664,7 @@ func NewComputeRoute_Override(c ComputeRoute, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRoute.ComputeRoute",
+		"@cdktf/provider-google.computeRoute.ComputeRoute",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -918,7 +918,7 @@ func ComputeRoute_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRoute.ComputeRoute",
+		"@cdktf/provider-google.computeRoute.ComputeRoute",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -937,7 +937,7 @@ func ComputeRoute_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRoute.ComputeRoute",
+		"@cdktf/provider-google.computeRoute.ComputeRoute",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -956,7 +956,7 @@ func ComputeRoute_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRoute.ComputeRoute",
+		"@cdktf/provider-google.computeRoute.ComputeRoute",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -969,7 +969,7 @@ func ComputeRoute_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeRoute.ComputeRoute",
+		"@cdktf/provider-google.computeRoute.ComputeRoute",
 		"tfResourceType",
 		&returns,
 	)

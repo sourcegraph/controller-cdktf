@@ -178,7 +178,7 @@ func NewDatastreamPrivateConnectionErrorOutputReference(terraformResource cdktf.
 	j := jsiiProxy_DatastreamPrivateConnectionErrorOutputReference{}
 
 	_jsii_.Create(
-		"google.datastreamPrivateConnection.DatastreamPrivateConnectionErrorOutputReference",
+		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionErrorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDatastreamPrivateConnectionErrorOutputReference_Override(d DatastreamPri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamPrivateConnection.DatastreamPrivateConnectionErrorOutputReference",
+		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionErrorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

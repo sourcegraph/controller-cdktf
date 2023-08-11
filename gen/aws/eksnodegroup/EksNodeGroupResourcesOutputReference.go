@@ -178,7 +178,7 @@ func NewEksNodeGroupResourcesOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_EksNodeGroupResourcesOutputReference{}
 
 	_jsii_.Create(
-		"aws.eksNodeGroup.EksNodeGroupResourcesOutputReference",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewEksNodeGroupResourcesOutputReference_Override(e EksNodeGroupResourcesOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksNodeGroup.EksNodeGroupResourcesOutputReference",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

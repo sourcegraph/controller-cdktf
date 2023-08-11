@@ -365,7 +365,7 @@ func NewPinpointEventStream(scope constructs.Construct, id *string, config *Pinp
 	j := jsiiProxy_PinpointEventStream{}
 
 	_jsii_.Create(
-		"aws.pinpointEventStream.PinpointEventStream",
+		"@cdktf/provider-aws.pinpointEventStream.PinpointEventStream",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewPinpointEventStream_Override(p PinpointEventStream, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.pinpointEventStream.PinpointEventStream",
+		"@cdktf/provider-aws.pinpointEventStream.PinpointEventStream",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -522,7 +522,7 @@ func PinpointEventStream_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointEventStream.PinpointEventStream",
+		"@cdktf/provider-aws.pinpointEventStream.PinpointEventStream",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func PinpointEventStream_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointEventStream.PinpointEventStream",
+		"@cdktf/provider-aws.pinpointEventStream.PinpointEventStream",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func PinpointEventStream_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointEventStream.PinpointEventStream",
+		"@cdktf/provider-aws.pinpointEventStream.PinpointEventStream",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func PinpointEventStream_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.pinpointEventStream.PinpointEventStream",
+		"@cdktf/provider-aws.pinpointEventStream.PinpointEventStream",
 		"tfResourceType",
 		&returns,
 	)

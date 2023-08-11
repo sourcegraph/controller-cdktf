@@ -400,7 +400,7 @@ func NewGoogleStorageBucketIamBinding(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleStorageBucketIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBinding",
+		"@cdktf/provider-google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleStorageBucketIamBinding_Override(g GoogleStorageBucketIamBinding, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBinding",
+		"@cdktf/provider-google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleStorageBucketIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBinding",
+		"@cdktf/provider-google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleStorageBucketIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBinding",
+		"@cdktf/provider-google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleStorageBucketIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBinding",
+		"@cdktf/provider-google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleStorageBucketIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBinding",
+		"@cdktf/provider-google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBinding",
 		"tfResourceType",
 		&returns,
 	)

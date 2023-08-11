@@ -204,7 +204,7 @@ func NewGoogleMlEngineModelTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleMlEngineModelTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMlEngineModel.GoogleMlEngineModelTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleMlEngineModelTimeoutsOutputReference_Override(g GoogleMlEngineMode
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMlEngineModel.GoogleMlEngineModelTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

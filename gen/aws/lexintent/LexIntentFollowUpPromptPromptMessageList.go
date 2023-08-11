@@ -116,7 +116,7 @@ func NewLexIntentFollowUpPromptPromptMessageList(terraformResource cdktf.IInterp
 	j := jsiiProxy_LexIntentFollowUpPromptPromptMessageList{}
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentFollowUpPromptPromptMessageList",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLexIntentFollowUpPromptPromptMessageList_Override(l LexIntentFollowUpPro
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentFollowUpPromptPromptMessageList",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

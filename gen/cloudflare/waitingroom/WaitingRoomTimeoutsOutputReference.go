@@ -204,7 +204,7 @@ func NewWaitingRoomTimeoutsOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_WaitingRoomTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.waitingRoom.WaitingRoomTimeoutsOutputReference",
+		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewWaitingRoomTimeoutsOutputReference_Override(w WaitingRoomTimeoutsOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.waitingRoom.WaitingRoomTimeoutsOutputReference",
+		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

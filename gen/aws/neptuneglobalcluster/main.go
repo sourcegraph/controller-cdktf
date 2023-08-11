@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.neptuneGlobalCluster.NeptuneGlobalCluster",
+		"@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalCluster",
 		reflect.TypeOf((*NeptuneGlobalCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,15 +80,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.neptuneGlobalCluster.NeptuneGlobalClusterConfig",
+		"@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalClusterConfig",
 		reflect.TypeOf((*NeptuneGlobalClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.neptuneGlobalCluster.NeptuneGlobalClusterGlobalClusterMembers",
+		"@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalClusterGlobalClusterMembers",
 		reflect.TypeOf((*NeptuneGlobalClusterGlobalClusterMembers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.neptuneGlobalCluster.NeptuneGlobalClusterGlobalClusterMembersList",
+		"@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalClusterGlobalClusterMembersList",
 		reflect.TypeOf((*NeptuneGlobalClusterGlobalClusterMembersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.neptuneGlobalCluster.NeptuneGlobalClusterGlobalClusterMembersOutputReference",
+		"@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalClusterGlobalClusterMembersOutputReference",
 		reflect.TypeOf((*NeptuneGlobalClusterGlobalClusterMembersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -142,11 +142,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.neptuneGlobalCluster.NeptuneGlobalClusterTimeouts",
+		"@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalClusterTimeouts",
 		reflect.TypeOf((*NeptuneGlobalClusterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.neptuneGlobalCluster.NeptuneGlobalClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalClusterTimeoutsOutputReference",
 		reflect.TypeOf((*NeptuneGlobalClusterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

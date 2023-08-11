@@ -116,7 +116,7 @@ func NewEmailRoutingRuleMatcherList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_EmailRoutingRuleMatcherList{}
 
 	_jsii_.Create(
-		"cloudflare.emailRoutingRule.EmailRoutingRuleMatcherList",
+		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcherList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEmailRoutingRuleMatcherList_Override(e EmailRoutingRuleMatcherList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.emailRoutingRule.EmailRoutingRuleMatcherList",
+		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcherList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

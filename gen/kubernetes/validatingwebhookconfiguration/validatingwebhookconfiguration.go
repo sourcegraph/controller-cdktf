@@ -342,7 +342,7 @@ func NewValidatingWebhookConfiguration(scope constructs.Construct, id *string, c
 	j := jsiiProxy_ValidatingWebhookConfiguration{}
 
 	_jsii_.Create(
-		"kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfiguration",
+		"@cdktf/provider-kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewValidatingWebhookConfiguration_Override(v ValidatingWebhookConfiguration
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfiguration",
+		"@cdktf/provider-kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfiguration",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -466,7 +466,7 @@ func ValidatingWebhookConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfiguration",
+		"@cdktf/provider-kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -485,7 +485,7 @@ func ValidatingWebhookConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfiguration",
+		"@cdktf/provider-kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -504,7 +504,7 @@ func ValidatingWebhookConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfiguration",
+		"@cdktf/provider-kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -517,7 +517,7 @@ func ValidatingWebhookConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfiguration",
+		"@cdktf/provider-kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfiguration",
 		"tfResourceType",
 		&returns,
 	)

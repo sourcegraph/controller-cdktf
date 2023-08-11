@@ -481,7 +481,7 @@ func NewKendraExperience(scope constructs.Construct, id *string, config *KendraE
 	j := jsiiProxy_KendraExperience{}
 
 	_jsii_.Create(
-		"aws.kendraExperience.KendraExperience",
+		"@cdktf/provider-aws.kendraExperience.KendraExperience",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -494,7 +494,7 @@ func NewKendraExperience_Override(k KendraExperience, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraExperience.KendraExperience",
+		"@cdktf/provider-aws.kendraExperience.KendraExperience",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -649,7 +649,7 @@ func KendraExperience_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kendraExperience.KendraExperience",
+		"@cdktf/provider-aws.kendraExperience.KendraExperience",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func KendraExperience_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kendraExperience.KendraExperience",
+		"@cdktf/provider-aws.kendraExperience.KendraExperience",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -687,7 +687,7 @@ func KendraExperience_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kendraExperience.KendraExperience",
+		"@cdktf/provider-aws.kendraExperience.KendraExperience",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func KendraExperience_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.kendraExperience.KendraExperience",
+		"@cdktf/provider-aws.kendraExperience.KendraExperience",
 		"tfResourceType",
 		&returns,
 	)

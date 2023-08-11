@@ -251,7 +251,7 @@ func NewOpensearchDomainAdvancedSecurityOptionsOutputReference(terraformResource
 	j := jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewOpensearchDomainAdvancedSecurityOptionsOutputReference_Override(o Opense
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

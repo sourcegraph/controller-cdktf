@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion",
+		"@cdktf/provider-aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion",
 		reflect.TypeOf((*ElasticBeanstalkApplicationVersion)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersionConfig",
+		"@cdktf/provider-aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersionConfig",
 		reflect.TypeOf((*ElasticBeanstalkApplicationVersionConfig)(nil)).Elem(),
 	)
 }

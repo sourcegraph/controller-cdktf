@@ -228,7 +228,7 @@ func NewStorageObjectAccessControlTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.storageObjectAccessControl.StorageObjectAccessControlTimeoutsOutputReference",
+		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControlTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewStorageObjectAccessControlTimeoutsOutputReference_Override(s StorageObje
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageObjectAccessControl.StorageObjectAccessControlTimeoutsOutputReference",
+		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControlTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

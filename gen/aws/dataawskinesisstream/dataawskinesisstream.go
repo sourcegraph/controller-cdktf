@@ -403,7 +403,7 @@ func NewDataAwsKinesisStream(scope constructs.Construct, id *string, config *Dat
 	j := jsiiProxy_DataAwsKinesisStream{}
 
 	_jsii_.Create(
-		"aws.dataAwsKinesisStream.DataAwsKinesisStream",
+		"@cdktf/provider-aws.dataAwsKinesisStream.DataAwsKinesisStream",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -416,7 +416,7 @@ func NewDataAwsKinesisStream_Override(d DataAwsKinesisStream, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKinesisStream.DataAwsKinesisStream",
+		"@cdktf/provider-aws.dataAwsKinesisStream.DataAwsKinesisStream",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -527,7 +527,7 @@ func DataAwsKinesisStream_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKinesisStream.DataAwsKinesisStream",
+		"@cdktf/provider-aws.dataAwsKinesisStream.DataAwsKinesisStream",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -546,7 +546,7 @@ func DataAwsKinesisStream_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKinesisStream.DataAwsKinesisStream",
+		"@cdktf/provider-aws.dataAwsKinesisStream.DataAwsKinesisStream",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func DataAwsKinesisStream_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKinesisStream.DataAwsKinesisStream",
+		"@cdktf/provider-aws.dataAwsKinesisStream.DataAwsKinesisStream",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -578,7 +578,7 @@ func DataAwsKinesisStream_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsKinesisStream.DataAwsKinesisStream",
+		"@cdktf/provider-aws.dataAwsKinesisStream.DataAwsKinesisStream",
 		"tfResourceType",
 		&returns,
 	)

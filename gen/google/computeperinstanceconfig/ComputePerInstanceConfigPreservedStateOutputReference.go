@@ -204,7 +204,7 @@ func NewComputePerInstanceConfigPreservedStateOutputReference(terraformResource 
 	j := jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference{}
 
 	_jsii_.Create(
-		"google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateOutputReference",
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputePerInstanceConfigPreservedStateOutputReference_Override(c Compute
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateOutputReference",
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -292,7 +292,7 @@ func NewDataAwsElasticBeanstalkHostedZone(scope constructs.Construct, id *string
 	j := jsiiProxy_DataAwsElasticBeanstalkHostedZone{}
 
 	_jsii_.Create(
-		"aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone",
+		"@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -305,7 +305,7 @@ func NewDataAwsElasticBeanstalkHostedZone_Override(d DataAwsElasticBeanstalkHost
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone",
+		"@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -405,7 +405,7 @@ func DataAwsElasticBeanstalkHostedZone_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone",
+		"@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -424,7 +424,7 @@ func DataAwsElasticBeanstalkHostedZone_IsTerraformDataSource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone",
+		"@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -443,7 +443,7 @@ func DataAwsElasticBeanstalkHostedZone_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone",
+		"@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -456,7 +456,7 @@ func DataAwsElasticBeanstalkHostedZone_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone",
+		"@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone",
 		"tfResourceType",
 		&returns,
 	)

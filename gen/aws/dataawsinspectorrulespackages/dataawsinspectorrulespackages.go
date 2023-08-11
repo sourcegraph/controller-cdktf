@@ -279,7 +279,7 @@ func NewDataAwsInspectorRulesPackages(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataAwsInspectorRulesPackages{}
 
 	_jsii_.Create(
-		"aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages",
+		"@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -292,7 +292,7 @@ func NewDataAwsInspectorRulesPackages_Override(d DataAwsInspectorRulesPackages, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages",
+		"@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -381,7 +381,7 @@ func DataAwsInspectorRulesPackages_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages",
+		"@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -400,7 +400,7 @@ func DataAwsInspectorRulesPackages_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages",
+		"@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -419,7 +419,7 @@ func DataAwsInspectorRulesPackages_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages",
+		"@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -432,7 +432,7 @@ func DataAwsInspectorRulesPackages_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages",
+		"@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages",
 		"tfResourceType",
 		&returns,
 	)

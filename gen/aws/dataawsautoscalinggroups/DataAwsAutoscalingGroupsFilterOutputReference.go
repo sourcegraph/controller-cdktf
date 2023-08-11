@@ -202,7 +202,7 @@ func NewDataAwsAutoscalingGroupsFilterOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataAwsAutoscalingGroupsFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsAutoscalingGroups.DataAwsAutoscalingGroupsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsAutoscalingGroups.DataAwsAutoscalingGroupsFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsAutoscalingGroupsFilterOutputReference_Override(d DataAwsAutoscal
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAutoscalingGroups.DataAwsAutoscalingGroupsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsAutoscalingGroups.DataAwsAutoscalingGroupsFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

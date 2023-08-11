@@ -179,7 +179,7 @@ func NewBigtableTableColumnFamilyOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_BigtableTableColumnFamilyOutputReference{}
 
 	_jsii_.Create(
-		"google.bigtableTable.BigtableTableColumnFamilyOutputReference",
+		"@cdktf/provider-google.bigtableTable.BigtableTableColumnFamilyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewBigtableTableColumnFamilyOutputReference_Override(b BigtableTableColumnF
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigtableTable.BigtableTableColumnFamilyOutputReference",
+		"@cdktf/provider-google.bigtableTable.BigtableTableColumnFamilyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.wafByteMatchSet.WafByteMatchSet",
+		"@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSet",
 		reflect.TypeOf((*WafByteMatchSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,15 +61,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafByteMatchSet.WafByteMatchSetByteMatchTuples",
+		"@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuples",
 		reflect.TypeOf((*WafByteMatchSetByteMatchTuples)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesFieldToMatch",
+		"@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesFieldToMatch",
 		reflect.TypeOf((*WafByteMatchSetByteMatchTuplesFieldToMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesFieldToMatchOutputReference",
+		"@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesFieldToMatchOutputReference",
 		reflect.TypeOf((*WafByteMatchSetByteMatchTuplesFieldToMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -106,7 +106,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesList",
+		"@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesList",
 		reflect.TypeOf((*WafByteMatchSetByteMatchTuplesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -127,7 +127,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesOutputReference",
+		"@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesOutputReference",
 		reflect.TypeOf((*WafByteMatchSetByteMatchTuplesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -169,7 +169,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafByteMatchSet.WafByteMatchSetConfig",
+		"@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetConfig",
 		reflect.TypeOf((*WafByteMatchSetConfig)(nil)).Elem(),
 	)
 }

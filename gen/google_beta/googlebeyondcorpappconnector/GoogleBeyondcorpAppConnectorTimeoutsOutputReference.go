@@ -228,7 +228,7 @@ func NewGoogleBeyondcorpAppConnectorTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleBeyondcorpAppConnectorTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleBeyondcorpAppConnectorTimeoutsOutputReference_Override(g GoogleBey
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -116,7 +116,7 @@ func NewComputeServiceAttachmentConsumerAcceptListsList(terraformResource cdktf.
 	j := jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsList{}
 
 	_jsii_.Create(
-		"google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsList",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeServiceAttachmentConsumerAcceptListsList_Override(c ComputeServic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsList",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

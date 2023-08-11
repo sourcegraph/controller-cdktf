@@ -116,7 +116,7 @@ func NewSagemakerFeatureGroupFeatureDefinitionList(terraformResource cdktf.IInte
 	j := jsiiProxy_SagemakerFeatureGroupFeatureDefinitionList{}
 
 	_jsii_.Create(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupFeatureDefinitionList",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupFeatureDefinitionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSagemakerFeatureGroupFeatureDefinitionList_Override(s SagemakerFeatureGr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupFeatureDefinitionList",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupFeatureDefinitionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

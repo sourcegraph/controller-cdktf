@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeRouterPeer.GoogleComputeRouterPeer",
+		"@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeer",
 		reflect.TypeOf((*GoogleComputeRouterPeer)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -111,11 +111,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerAdvertisedIpRanges",
+		"@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerAdvertisedIpRanges",
 		reflect.TypeOf((*GoogleComputeRouterPeerAdvertisedIpRanges)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerAdvertisedIpRangesList",
+		"@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerAdvertisedIpRangesList",
 		reflect.TypeOf((*GoogleComputeRouterPeerAdvertisedIpRangesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -136,7 +136,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerAdvertisedIpRangesOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerAdvertisedIpRangesOutputReference",
 		reflect.TypeOf((*GoogleComputeRouterPeerAdvertisedIpRangesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -173,11 +173,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerBfd",
+		"@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerBfd",
 		reflect.TypeOf((*GoogleComputeRouterPeerBfd)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerBfdOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerBfdOutputReference",
 		reflect.TypeOf((*GoogleComputeRouterPeerBfdOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -220,15 +220,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerConfig",
+		"@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerConfig",
 		reflect.TypeOf((*GoogleComputeRouterPeerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerTimeouts",
+		"@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerTimeouts",
 		reflect.TypeOf((*GoogleComputeRouterPeerTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleComputeRouterPeerTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

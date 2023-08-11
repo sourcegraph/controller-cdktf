@@ -299,7 +299,7 @@ func NewOpsworksInstanceEbsBlockDeviceOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_OpsworksInstanceEbsBlockDeviceOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksInstance.OpsworksInstanceEbsBlockDeviceOutputReference",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEbsBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewOpsworksInstanceEbsBlockDeviceOutputReference_Override(o OpsworksInstanc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksInstance.OpsworksInstanceEbsBlockDeviceOutputReference",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEbsBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)

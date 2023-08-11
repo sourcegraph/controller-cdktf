@@ -342,7 +342,7 @@ func NewIotThingPrincipalAttachment(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_IotThingPrincipalAttachment{}
 
 	_jsii_.Create(
-		"aws.iotThingPrincipalAttachment.IotThingPrincipalAttachment",
+		"@cdktf/provider-aws.iotThingPrincipalAttachment.IotThingPrincipalAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewIotThingPrincipalAttachment_Override(i IotThingPrincipalAttachment, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotThingPrincipalAttachment.IotThingPrincipalAttachment",
+		"@cdktf/provider-aws.iotThingPrincipalAttachment.IotThingPrincipalAttachment",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -488,7 +488,7 @@ func IotThingPrincipalAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotThingPrincipalAttachment.IotThingPrincipalAttachment",
+		"@cdktf/provider-aws.iotThingPrincipalAttachment.IotThingPrincipalAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func IotThingPrincipalAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotThingPrincipalAttachment.IotThingPrincipalAttachment",
+		"@cdktf/provider-aws.iotThingPrincipalAttachment.IotThingPrincipalAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func IotThingPrincipalAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotThingPrincipalAttachment.IotThingPrincipalAttachment",
+		"@cdktf/provider-aws.iotThingPrincipalAttachment.IotThingPrincipalAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func IotThingPrincipalAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iotThingPrincipalAttachment.IotThingPrincipalAttachment",
+		"@cdktf/provider-aws.iotThingPrincipalAttachment.IotThingPrincipalAttachment",
 		"tfResourceType",
 		&returns,
 	)

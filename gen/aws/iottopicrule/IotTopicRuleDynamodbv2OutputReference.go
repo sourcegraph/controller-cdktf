@@ -203,7 +203,7 @@ func NewIotTopicRuleDynamodbv2OutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_IotTopicRuleDynamodbv2OutputReference{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewIotTopicRuleDynamodbv2OutputReference_Override(i IotTopicRuleDynamodbv2O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

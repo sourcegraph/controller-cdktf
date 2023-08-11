@@ -447,7 +447,7 @@ func NewGoogleBigqueryTableIamMember(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleBigqueryTableIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryTableIamMember.GoogleBigqueryTableIamMember",
+		"@cdktf/provider-google-beta.googleBigqueryTableIamMember.GoogleBigqueryTableIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewGoogleBigqueryTableIamMember_Override(g GoogleBigqueryTableIamMember, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryTableIamMember.GoogleBigqueryTableIamMember",
+		"@cdktf/provider-google-beta.googleBigqueryTableIamMember.GoogleBigqueryTableIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -626,7 +626,7 @@ func GoogleBigqueryTableIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryTableIamMember.GoogleBigqueryTableIamMember",
+		"@cdktf/provider-google-beta.googleBigqueryTableIamMember.GoogleBigqueryTableIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func GoogleBigqueryTableIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryTableIamMember.GoogleBigqueryTableIamMember",
+		"@cdktf/provider-google-beta.googleBigqueryTableIamMember.GoogleBigqueryTableIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -664,7 +664,7 @@ func GoogleBigqueryTableIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryTableIamMember.GoogleBigqueryTableIamMember",
+		"@cdktf/provider-google-beta.googleBigqueryTableIamMember.GoogleBigqueryTableIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func GoogleBigqueryTableIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigqueryTableIamMember.GoogleBigqueryTableIamMember",
+		"@cdktf/provider-google-beta.googleBigqueryTableIamMember.GoogleBigqueryTableIamMember",
 		"tfResourceType",
 		&returns,
 	)

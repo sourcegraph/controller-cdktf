@@ -104,7 +104,7 @@ func NewDataplexDatascanDataQualityResultScannedDataList(terraformResource cdktf
 	j := jsiiProxy_DataplexDatascanDataQualityResultScannedDataList{}
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataQualityResultScannedDataList",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualityResultScannedDataList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataplexDatascanDataQualityResultScannedDataList_Override(d DataplexData
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataQualityResultScannedDataList",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualityResultScannedDataList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

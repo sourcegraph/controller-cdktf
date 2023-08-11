@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iotLoggingOptions.IotLoggingOptions",
+		"@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions",
 		reflect.TypeOf((*IotLoggingOptions)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotLoggingOptions.IotLoggingOptionsConfig",
+		"@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptionsConfig",
 		reflect.TypeOf((*IotLoggingOptionsConfig)(nil)).Elem(),
 	)
 }

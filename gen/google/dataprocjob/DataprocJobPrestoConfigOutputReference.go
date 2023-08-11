@@ -324,7 +324,7 @@ func NewDataprocJobPrestoConfigOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataprocJobPrestoConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocJob.DataprocJobPrestoConfigOutputReference",
+		"@cdktf/provider-google.dataprocJob.DataprocJobPrestoConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewDataprocJobPrestoConfigOutputReference_Override(d DataprocJobPrestoConfi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocJob.DataprocJobPrestoConfigOutputReference",
+		"@cdktf/provider-google.dataprocJob.DataprocJobPrestoConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

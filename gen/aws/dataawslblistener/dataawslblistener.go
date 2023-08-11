@@ -443,7 +443,7 @@ func NewDataAwsLbListener(scope constructs.Construct, id *string, config *DataAw
 	j := jsiiProxy_DataAwsLbListener{}
 
 	_jsii_.Create(
-		"aws.dataAwsLbListener.DataAwsLbListener",
+		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -456,7 +456,7 @@ func NewDataAwsLbListener_Override(d DataAwsLbListener, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLbListener.DataAwsLbListener",
+		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -589,7 +589,7 @@ func DataAwsLbListener_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLbListener.DataAwsLbListener",
+		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func DataAwsLbListener_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLbListener.DataAwsLbListener",
+		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -627,7 +627,7 @@ func DataAwsLbListener_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLbListener.DataAwsLbListener",
+		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -640,7 +640,7 @@ func DataAwsLbListener_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsLbListener.DataAwsLbListener",
+		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener",
 		"tfResourceType",
 		&returns,
 	)

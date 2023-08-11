@@ -448,7 +448,7 @@ func NewGoogleDataCatalogTagTemplateIamMember(scope constructs.Construct, id *st
 	j := jsiiProxy_GoogleDataCatalogTagTemplateIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleDataCatalogTagTemplateIamMember_Override(g GoogleDataCatalogTagTem
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleDataCatalogTagTemplateIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleDataCatalogTagTemplateIamMember_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleDataCatalogTagTemplateIamMember_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleDataCatalogTagTemplateIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMember",
 		"tfResourceType",
 		&returns,
 	)

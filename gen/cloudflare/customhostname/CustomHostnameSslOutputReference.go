@@ -357,7 +357,7 @@ func NewCustomHostnameSslOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_CustomHostnameSslOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.customHostname.CustomHostnameSslOutputReference",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -369,7 +369,7 @@ func NewCustomHostnameSslOutputReference_Override(c CustomHostnameSslOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.customHostname.CustomHostnameSslOutputReference",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

@@ -116,7 +116,7 @@ func NewGoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList(
 	j := jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

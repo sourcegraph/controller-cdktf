@@ -204,7 +204,7 @@ func NewRecordTimeoutsOutputReference(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_RecordTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.record.RecordTimeoutsOutputReference",
+		"@cdktf/provider-cloudflare.record.RecordTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewRecordTimeoutsOutputReference_Override(r RecordTimeoutsOutputReference, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.record.RecordTimeoutsOutputReference",
+		"@cdktf/provider-cloudflare.record.RecordTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

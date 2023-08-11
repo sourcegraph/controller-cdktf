@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.elbAttachment.ElbAttachment",
+		"@cdktf/provider-aws.elbAttachment.ElbAttachment",
 		reflect.TypeOf((*ElbAttachment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.elbAttachment.ElbAttachmentConfig",
+		"@cdktf/provider-aws.elbAttachment.ElbAttachmentConfig",
 		reflect.TypeOf((*ElbAttachmentConfig)(nil)).Elem(),
 	)
 }

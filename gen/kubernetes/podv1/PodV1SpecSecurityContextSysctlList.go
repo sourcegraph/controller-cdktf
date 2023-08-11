@@ -116,7 +116,7 @@ func NewPodV1SpecSecurityContextSysctlList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_PodV1SpecSecurityContextSysctlList{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecSecurityContextSysctlList",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecSecurityContextSysctlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodV1SpecSecurityContextSysctlList_Override(p PodV1SpecSecurityContextSy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecSecurityContextSysctlList",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecSecurityContextSysctlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

@@ -688,7 +688,7 @@ func NewComputeHealthCheck(scope constructs.Construct, id *string, config *Compu
 	j := jsiiProxy_ComputeHealthCheck{}
 
 	_jsii_.Create(
-		"google.computeHealthCheck.ComputeHealthCheck",
+		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheck",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -701,7 +701,7 @@ func NewComputeHealthCheck_Override(c ComputeHealthCheck, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeHealthCheck.ComputeHealthCheck",
+		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheck",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -889,7 +889,7 @@ func ComputeHealthCheck_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeHealthCheck.ComputeHealthCheck",
+		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheck",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -908,7 +908,7 @@ func ComputeHealthCheck_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeHealthCheck.ComputeHealthCheck",
+		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheck",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -927,7 +927,7 @@ func ComputeHealthCheck_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeHealthCheck.ComputeHealthCheck",
+		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheck",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -940,7 +940,7 @@ func ComputeHealthCheck_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeHealthCheck.ComputeHealthCheck",
+		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheck",
 		"tfResourceType",
 		&returns,
 	)

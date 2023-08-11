@@ -204,7 +204,7 @@ func NewMonitoringServiceBasicServiceOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_MonitoringServiceBasicServiceOutputReference{}
 
 	_jsii_.Create(
-		"google.monitoringService.MonitoringServiceBasicServiceOutputReference",
+		"@cdktf/provider-google.monitoringService.MonitoringServiceBasicServiceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMonitoringServiceBasicServiceOutputReference_Override(m MonitoringServic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringService.MonitoringServiceBasicServiceOutputReference",
+		"@cdktf/provider-google.monitoringService.MonitoringServiceBasicServiceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

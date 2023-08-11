@@ -410,7 +410,7 @@ func NewRedshiftPartner(scope constructs.Construct, id *string, config *Redshift
 	j := jsiiProxy_RedshiftPartner{}
 
 	_jsii_.Create(
-		"aws.redshiftPartner.RedshiftPartner",
+		"@cdktf/provider-aws.redshiftPartner.RedshiftPartner",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -423,7 +423,7 @@ func NewRedshiftPartner_Override(r RedshiftPartner, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftPartner.RedshiftPartner",
+		"@cdktf/provider-aws.redshiftPartner.RedshiftPartner",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -578,7 +578,7 @@ func RedshiftPartner_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftPartner.RedshiftPartner",
+		"@cdktf/provider-aws.redshiftPartner.RedshiftPartner",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func RedshiftPartner_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftPartner.RedshiftPartner",
+		"@cdktf/provider-aws.redshiftPartner.RedshiftPartner",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -616,7 +616,7 @@ func RedshiftPartner_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftPartner.RedshiftPartner",
+		"@cdktf/provider-aws.redshiftPartner.RedshiftPartner",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func RedshiftPartner_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.redshiftPartner.RedshiftPartner",
+		"@cdktf/provider-aws.redshiftPartner.RedshiftPartner",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewApiShieldAuthIdCharacteristicsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_ApiShieldAuthIdCharacteristicsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.apiShield.ApiShieldAuthIdCharacteristicsOutputReference",
+		"@cdktf/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristicsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewApiShieldAuthIdCharacteristicsOutputReference_Override(a ApiShieldAuthId
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.apiShield.ApiShieldAuthIdCharacteristicsOutputReference",
+		"@cdktf/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristicsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

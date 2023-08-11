@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataplexDatascanIamBinding.DataplexDatascanIamBinding",
+		"@cdktf/provider-google.dataplexDatascanIamBinding.DataplexDatascanIamBinding",
 		reflect.TypeOf((*DataplexDatascanIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataplexDatascanIamBinding.DataplexDatascanIamBindingCondition",
+		"@cdktf/provider-google.dataplexDatascanIamBinding.DataplexDatascanIamBindingCondition",
 		reflect.TypeOf((*DataplexDatascanIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataplexDatascanIamBinding.DataplexDatascanIamBindingConditionOutputReference",
+		"@cdktf/provider-google.dataplexDatascanIamBinding.DataplexDatascanIamBindingConditionOutputReference",
 		reflect.TypeOf((*DataplexDatascanIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataplexDatascanIamBinding.DataplexDatascanIamBindingConfig",
+		"@cdktf/provider-google.dataplexDatascanIamBinding.DataplexDatascanIamBindingConfig",
 		reflect.TypeOf((*DataplexDatascanIamBindingConfig)(nil)).Elem(),
 	)
 }

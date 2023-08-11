@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.route53Zone.Route53Zone",
+		"@cdktf/provider-aws.route53Zone.Route53Zone",
 		reflect.TypeOf((*Route53Zone)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,15 +80,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53Zone.Route53ZoneConfig",
+		"@cdktf/provider-aws.route53Zone.Route53ZoneConfig",
 		reflect.TypeOf((*Route53ZoneConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53Zone.Route53ZoneVpc",
+		"@cdktf/provider-aws.route53Zone.Route53ZoneVpc",
 		reflect.TypeOf((*Route53ZoneVpc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.route53Zone.Route53ZoneVpcList",
+		"@cdktf/provider-aws.route53Zone.Route53ZoneVpcList",
 		reflect.TypeOf((*Route53ZoneVpcList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.route53Zone.Route53ZoneVpcOutputReference",
+		"@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference",
 		reflect.TypeOf((*Route53ZoneVpcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

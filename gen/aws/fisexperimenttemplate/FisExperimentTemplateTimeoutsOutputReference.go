@@ -228,7 +228,7 @@ func NewFisExperimentTemplateTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_FisExperimentTemplateTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.fisExperimentTemplate.FisExperimentTemplateTimeoutsOutputReference",
+		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewFisExperimentTemplateTimeoutsOutputReference_Override(f FisExperimentTem
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fisExperimentTemplate.FisExperimentTemplateTimeoutsOutputReference",
+		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

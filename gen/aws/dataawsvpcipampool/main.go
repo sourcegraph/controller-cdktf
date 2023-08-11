@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool",
+		"@cdktf/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool",
 		reflect.TypeOf((*DataAwsVpcIpamPool)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,15 +85,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolConfig",
+		"@cdktf/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolConfig",
 		reflect.TypeOf((*DataAwsVpcIpamPoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolFilter",
+		"@cdktf/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolFilter",
 		reflect.TypeOf((*DataAwsVpcIpamPoolFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolFilterList",
+		"@cdktf/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolFilterList",
 		reflect.TypeOf((*DataAwsVpcIpamPoolFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -114,7 +114,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolFilterOutputReference",
 		reflect.TypeOf((*DataAwsVpcIpamPoolFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -150,11 +150,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolTimeouts",
+		"@cdktf/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolTimeouts",
 		reflect.TypeOf((*DataAwsVpcIpamPoolTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsVpcIpamPoolTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

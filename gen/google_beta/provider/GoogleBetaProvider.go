@@ -3478,7 +3478,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	j := jsiiProxy_GoogleBetaProvider{}
 
 	_jsii_.Create(
-		"google-beta.provider.GoogleBetaProvider",
+		"@cdktf/provider-google-beta.provider.GoogleBetaProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -3491,7 +3491,7 @@ func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.provider.GoogleBetaProvider",
+		"@cdktf/provider-google-beta.provider.GoogleBetaProvider",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -4633,7 +4633,7 @@ func GoogleBetaProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.provider.GoogleBetaProvider",
+		"@cdktf/provider-google-beta.provider.GoogleBetaProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -4652,7 +4652,7 @@ func GoogleBetaProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.provider.GoogleBetaProvider",
+		"@cdktf/provider-google-beta.provider.GoogleBetaProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -4671,7 +4671,7 @@ func GoogleBetaProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.provider.GoogleBetaProvider",
+		"@cdktf/provider-google-beta.provider.GoogleBetaProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -4684,7 +4684,7 @@ func GoogleBetaProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.provider.GoogleBetaProvider",
+		"@cdktf/provider-google-beta.provider.GoogleBetaProvider",
 		"tfResourceType",
 		&returns,
 	)

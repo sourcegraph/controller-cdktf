@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.kmsReplicaExternalKey.KmsReplicaExternalKey",
+		"@cdktf/provider-aws.kmsReplicaExternalKey.KmsReplicaExternalKey",
 		reflect.TypeOf((*KmsReplicaExternalKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,7 +89,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kmsReplicaExternalKey.KmsReplicaExternalKeyConfig",
+		"@cdktf/provider-aws.kmsReplicaExternalKey.KmsReplicaExternalKeyConfig",
 		reflect.TypeOf((*KmsReplicaExternalKeyConfig)(nil)).Elem(),
 	)
 }

@@ -116,7 +116,7 @@ func NewDataCloudflareLoadBalancerPoolsPoolsList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsList{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsList",
+		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataCloudflareLoadBalancerPoolsPoolsList_Override(d DataCloudflareLoadBa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsList",
+		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

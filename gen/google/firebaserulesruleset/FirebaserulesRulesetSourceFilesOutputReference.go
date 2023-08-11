@@ -226,7 +226,7 @@ func NewFirebaserulesRulesetSourceFilesOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_FirebaserulesRulesetSourceFilesOutputReference{}
 
 	_jsii_.Create(
-		"google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesOutputReference",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewFirebaserulesRulesetSourceFilesOutputReference_Override(f FirebaserulesR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesOutputReference",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)

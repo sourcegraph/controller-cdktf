@@ -204,7 +204,7 @@ func NewElasticacheReplicationGroupClusterModeOutputReference(terraformResource 
 	j := jsiiProxy_ElasticacheReplicationGroupClusterModeOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticacheReplicationGroup.ElasticacheReplicationGroupClusterModeOutputReference",
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupClusterModeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewElasticacheReplicationGroupClusterModeOutputReference_Override(e Elastic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticacheReplicationGroup.ElasticacheReplicationGroupClusterModeOutputReference",
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupClusterModeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

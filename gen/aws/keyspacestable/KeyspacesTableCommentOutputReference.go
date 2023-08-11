@@ -180,7 +180,7 @@ func NewKeyspacesTableCommentOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_KeyspacesTableCommentOutputReference{}
 
 	_jsii_.Create(
-		"aws.keyspacesTable.KeyspacesTableCommentOutputReference",
+		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableCommentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewKeyspacesTableCommentOutputReference_Override(k KeyspacesTableCommentOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.keyspacesTable.KeyspacesTableCommentOutputReference",
+		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableCommentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

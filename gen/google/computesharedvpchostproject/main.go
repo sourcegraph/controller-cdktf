@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeSharedVpcHostProject.ComputeSharedVpcHostProject",
+		"@cdktf/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProject",
 		reflect.TypeOf((*ComputeSharedVpcHostProject)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,15 +61,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSharedVpcHostProject.ComputeSharedVpcHostProjectConfig",
+		"@cdktf/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProjectConfig",
 		reflect.TypeOf((*ComputeSharedVpcHostProjectConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSharedVpcHostProject.ComputeSharedVpcHostProjectTimeouts",
+		"@cdktf/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProjectTimeouts",
 		reflect.TypeOf((*ComputeSharedVpcHostProjectTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeSharedVpcHostProject.ComputeSharedVpcHostProjectTimeoutsOutputReference",
+		"@cdktf/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProjectTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeSharedVpcHostProjectTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

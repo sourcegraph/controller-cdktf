@@ -251,7 +251,7 @@ func NewLakeformationPermissionsTableOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_LakeformationPermissionsTableOutputReference{}
 
 	_jsii_.Create(
-		"aws.lakeformationPermissions.LakeformationPermissionsTableOutputReference",
+		"@cdktf/provider-aws.lakeformationPermissions.LakeformationPermissionsTableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewLakeformationPermissionsTableOutputReference_Override(l LakeformationPer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lakeformationPermissions.LakeformationPermissionsTableOutputReference",
+		"@cdktf/provider-aws.lakeformationPermissions.LakeformationPermissionsTableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

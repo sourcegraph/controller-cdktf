@@ -320,7 +320,7 @@ func NewWafv2WebAclRuleOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_Wafv2WebAclRuleOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -332,7 +332,7 @@ func NewWafv2WebAclRuleOutputReference_Override(w Wafv2WebAclRuleOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

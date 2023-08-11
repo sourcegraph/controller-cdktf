@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersCriticalityList(terraformResource cdktf.IInterp
 	j := jsiiProxy_SecurityhubInsightFiltersCriticalityList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersCriticalityList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersCriticalityList_Override(s SecurityhubInsightFi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersCriticalityList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

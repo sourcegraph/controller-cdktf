@@ -116,7 +116,7 @@ func NewAppSwaUsersList(terraformResource cdktf.IInterpolatingParent, terraformA
 	j := jsiiProxy_AppSwaUsersList{}
 
 	_jsii_.Create(
-		"okta.appSwa.AppSwaUsersList",
+		"@cdktf/provider-okta.appSwa.AppSwaUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppSwaUsersList_Override(a AppSwaUsersList, terraformResource cdktf.IInt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appSwa.AppSwaUsersList",
+		"@cdktf/provider-okta.appSwa.AppSwaUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

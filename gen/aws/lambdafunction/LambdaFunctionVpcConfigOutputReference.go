@@ -213,7 +213,7 @@ func NewLambdaFunctionVpcConfigOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_LambdaFunctionVpcConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaFunction.LambdaFunctionVpcConfigOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -225,7 +225,7 @@ func NewLambdaFunctionVpcConfigOutputReference_Override(l LambdaFunctionVpcConfi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaFunction.LambdaFunctionVpcConfigOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

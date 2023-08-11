@@ -203,7 +203,7 @@ func NewSecretManagerSecretReplicationUserManagedReplicasOutputReference(terrafo
 	j := jsiiProxy_SecretManagerSecretReplicationUserManagedReplicasOutputReference{}
 
 	_jsii_.Create(
-		"google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasOutputReference",
+		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewSecretManagerSecretReplicationUserManagedReplicasOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasOutputReference",
+		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"postgresql.functionResource.FunctionResource",
+		"@cdktf/provider-postgresql.functionResource.FunctionResource",
 		reflect.TypeOf((*FunctionResource)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,11 +75,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"postgresql.functionResource.FunctionResourceArg",
+		"@cdktf/provider-postgresql.functionResource.FunctionResourceArg",
 		reflect.TypeOf((*FunctionResourceArg)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"postgresql.functionResource.FunctionResourceArgList",
+		"@cdktf/provider-postgresql.functionResource.FunctionResourceArgList",
 		reflect.TypeOf((*FunctionResourceArgList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -100,7 +100,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"postgresql.functionResource.FunctionResourceArgOutputReference",
+		"@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference",
 		reflect.TypeOf((*FunctionResourceArgOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -143,7 +143,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"postgresql.functionResource.FunctionResourceConfig",
+		"@cdktf/provider-postgresql.functionResource.FunctionResourceConfig",
 		reflect.TypeOf((*FunctionResourceConfig)(nil)).Elem(),
 	)
 }

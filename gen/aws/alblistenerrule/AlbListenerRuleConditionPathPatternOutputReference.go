@@ -179,7 +179,7 @@ func NewAlbListenerRuleConditionPathPatternOutputReference(terraformResource cdk
 	j := jsiiProxy_AlbListenerRuleConditionPathPatternOutputReference{}
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRuleConditionPathPatternOutputReference",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionPathPatternOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAlbListenerRuleConditionPathPatternOutputReference_Override(a AlbListene
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRuleConditionPathPatternOutputReference",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionPathPatternOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

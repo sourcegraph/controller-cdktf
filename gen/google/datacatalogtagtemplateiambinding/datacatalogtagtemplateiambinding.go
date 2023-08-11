@@ -448,7 +448,7 @@ func NewDataCatalogTagTemplateIamBinding(scope constructs.Construct, id *string,
 	j := jsiiProxy_DataCatalogTagTemplateIamBinding{}
 
 	_jsii_.Create(
-		"google.dataCatalogTagTemplateIamBinding.DataCatalogTagTemplateIamBinding",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamBinding.DataCatalogTagTemplateIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewDataCatalogTagTemplateIamBinding_Override(d DataCatalogTagTemplateIamBin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogTagTemplateIamBinding.DataCatalogTagTemplateIamBinding",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamBinding.DataCatalogTagTemplateIamBinding",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -627,7 +627,7 @@ func DataCatalogTagTemplateIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTagTemplateIamBinding.DataCatalogTagTemplateIamBinding",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamBinding.DataCatalogTagTemplateIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func DataCatalogTagTemplateIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTagTemplateIamBinding.DataCatalogTagTemplateIamBinding",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamBinding.DataCatalogTagTemplateIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func DataCatalogTagTemplateIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTagTemplateIamBinding.DataCatalogTagTemplateIamBinding",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamBinding.DataCatalogTagTemplateIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DataCatalogTagTemplateIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataCatalogTagTemplateIamBinding.DataCatalogTagTemplateIamBinding",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamBinding.DataCatalogTagTemplateIamBinding",
 		"tfResourceType",
 		&returns,
 	)

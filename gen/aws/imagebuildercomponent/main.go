@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.imagebuilderComponent.ImagebuilderComponent",
+		"@cdktf/provider-aws.imagebuilderComponent.ImagebuilderComponent",
 		reflect.TypeOf((*ImagebuilderComponent)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,7 +93,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.imagebuilderComponent.ImagebuilderComponentConfig",
+		"@cdktf/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig",
 		reflect.TypeOf((*ImagebuilderComponentConfig)(nil)).Elem(),
 	)
 }

@@ -202,7 +202,7 @@ func NewElasticacheParameterGroupParameterOutputReference(terraformResource cdkt
 	j := jsiiProxy_ElasticacheParameterGroupParameterOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticacheParameterGroup.ElasticacheParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewElasticacheParameterGroupParameterOutputReference_Override(e Elasticache
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticacheParameterGroup.ElasticacheParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

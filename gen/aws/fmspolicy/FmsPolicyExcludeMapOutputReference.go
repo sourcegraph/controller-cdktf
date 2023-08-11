@@ -204,7 +204,7 @@ func NewFmsPolicyExcludeMapOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_FmsPolicyExcludeMapOutputReference{}
 
 	_jsii_.Create(
-		"aws.fmsPolicy.FmsPolicyExcludeMapOutputReference",
+		"@cdktf/provider-aws.fmsPolicy.FmsPolicyExcludeMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewFmsPolicyExcludeMapOutputReference_Override(f FmsPolicyExcludeMapOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fmsPolicy.FmsPolicyExcludeMapOutputReference",
+		"@cdktf/provider-aws.fmsPolicy.FmsPolicyExcludeMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

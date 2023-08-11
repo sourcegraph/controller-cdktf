@@ -366,7 +366,7 @@ func NewS3BucketRequestPaymentConfiguration(scope constructs.Construct, id *stri
 	j := jsiiProxy_S3BucketRequestPaymentConfiguration{}
 
 	_jsii_.Create(
-		"aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration",
+		"@cdktf/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewS3BucketRequestPaymentConfiguration_Override(s S3BucketRequestPaymentCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration",
+		"@cdktf/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -523,7 +523,7 @@ func S3BucketRequestPaymentConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration",
+		"@cdktf/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func S3BucketRequestPaymentConfiguration_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration",
+		"@cdktf/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func S3BucketRequestPaymentConfiguration_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration",
+		"@cdktf/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func S3BucketRequestPaymentConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration",
+		"@cdktf/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration",
 		"tfResourceType",
 		&returns,
 	)

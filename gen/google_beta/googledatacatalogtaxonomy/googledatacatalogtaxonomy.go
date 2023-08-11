@@ -450,7 +450,7 @@ func NewGoogleDataCatalogTaxonomy(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleDataCatalogTaxonomy{}
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomy",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -463,7 +463,7 @@ func NewGoogleDataCatalogTaxonomy_Override(g GoogleDataCatalogTaxonomy, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomy",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -629,7 +629,7 @@ func GoogleDataCatalogTaxonomy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomy",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -648,7 +648,7 @@ func GoogleDataCatalogTaxonomy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomy",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func GoogleDataCatalogTaxonomy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomy",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func GoogleDataCatalogTaxonomy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomy",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomy",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleSecretManagerSecretRotationList(terraformResource cdktf.IInter
 	j := jsiiProxy_DataGoogleSecretManagerSecretRotationList{}
 
 	_jsii_.Create(
-		"google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretRotationList",
+		"@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretRotationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleSecretManagerSecretRotationList_Override(d DataGoogleSecretMan
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretRotationList",
+		"@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretRotationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

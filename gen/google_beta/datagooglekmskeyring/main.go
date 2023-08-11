@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleKmsKeyRing.DataGoogleKmsKeyRing",
+		"@cdktf/provider-google-beta.dataGoogleKmsKeyRing.DataGoogleKmsKeyRing",
 		reflect.TypeOf((*DataGoogleKmsKeyRing)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleKmsKeyRing.DataGoogleKmsKeyRingConfig",
+		"@cdktf/provider-google-beta.dataGoogleKmsKeyRing.DataGoogleKmsKeyRingConfig",
 		reflect.TypeOf((*DataGoogleKmsKeyRingConfig)(nil)).Elem(),
 	)
 }

@@ -116,7 +116,7 @@ func NewComputeRouterPeerAdvertisedIpRangesList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_ComputeRouterPeerAdvertisedIpRangesList{}
 
 	_jsii_.Create(
-		"google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesList",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeRouterPeerAdvertisedIpRangesList_Override(c ComputeRouterPeerAdve
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesList",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

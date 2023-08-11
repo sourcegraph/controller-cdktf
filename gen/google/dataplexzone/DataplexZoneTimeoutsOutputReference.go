@@ -228,7 +228,7 @@ func NewDataplexZoneTimeoutsOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataplexZoneTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataplexZone.DataplexZoneTimeoutsOutputReference",
+		"@cdktf/provider-google.dataplexZone.DataplexZoneTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDataplexZoneTimeoutsOutputReference_Override(d DataplexZoneTimeoutsOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexZone.DataplexZoneTimeoutsOutputReference",
+		"@cdktf/provider-google.dataplexZone.DataplexZoneTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

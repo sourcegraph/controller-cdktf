@@ -494,7 +494,7 @@ func NewGoogleWorkstationsWorkstationIamMember(scope constructs.Construct, id *s
 	j := jsiiProxy_GoogleWorkstationsWorkstationIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstationIamMember.GoogleWorkstationsWorkstationIamMember",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationIamMember.GoogleWorkstationsWorkstationIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -507,7 +507,7 @@ func NewGoogleWorkstationsWorkstationIamMember_Override(g GoogleWorkstationsWork
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstationIamMember.GoogleWorkstationsWorkstationIamMember",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationIamMember.GoogleWorkstationsWorkstationIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -695,7 +695,7 @@ func GoogleWorkstationsWorkstationIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleWorkstationsWorkstationIamMember.GoogleWorkstationsWorkstationIamMember",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationIamMember.GoogleWorkstationsWorkstationIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +714,7 @@ func GoogleWorkstationsWorkstationIamMember_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleWorkstationsWorkstationIamMember.GoogleWorkstationsWorkstationIamMember",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationIamMember.GoogleWorkstationsWorkstationIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -733,7 +733,7 @@ func GoogleWorkstationsWorkstationIamMember_IsTerraformResource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleWorkstationsWorkstationIamMember.GoogleWorkstationsWorkstationIamMember",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationIamMember.GoogleWorkstationsWorkstationIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -746,7 +746,7 @@ func GoogleWorkstationsWorkstationIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleWorkstationsWorkstationIamMember.GoogleWorkstationsWorkstationIamMember",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationIamMember.GoogleWorkstationsWorkstationIamMember",
 		"tfResourceType",
 		&returns,
 	)

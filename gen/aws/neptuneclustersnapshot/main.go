@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.neptuneClusterSnapshot.NeptuneClusterSnapshot",
+		"@cdktf/provider-aws.neptuneClusterSnapshot.NeptuneClusterSnapshot",
 		reflect.TypeOf((*NeptuneClusterSnapshot)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,15 +76,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.neptuneClusterSnapshot.NeptuneClusterSnapshotConfig",
+		"@cdktf/provider-aws.neptuneClusterSnapshot.NeptuneClusterSnapshotConfig",
 		reflect.TypeOf((*NeptuneClusterSnapshotConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.neptuneClusterSnapshot.NeptuneClusterSnapshotTimeouts",
+		"@cdktf/provider-aws.neptuneClusterSnapshot.NeptuneClusterSnapshotTimeouts",
 		reflect.TypeOf((*NeptuneClusterSnapshotTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.neptuneClusterSnapshot.NeptuneClusterSnapshotTimeoutsOutputReference",
+		"@cdktf/provider-aws.neptuneClusterSnapshot.NeptuneClusterSnapshotTimeoutsOutputReference",
 		reflect.TypeOf((*NeptuneClusterSnapshotTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

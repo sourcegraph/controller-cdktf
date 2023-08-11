@@ -179,7 +179,7 @@ func NewComputeImageGuestOsFeaturesOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_ComputeImageGuestOsFeaturesOutputReference{}
 
 	_jsii_.Create(
-		"google.computeImage.ComputeImageGuestOsFeaturesOutputReference",
+		"@cdktf/provider-google.computeImage.ComputeImageGuestOsFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewComputeImageGuestOsFeaturesOutputReference_Override(c ComputeImageGuestO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeImage.ComputeImageGuestOsFeaturesOutputReference",
+		"@cdktf/provider-google.computeImage.ComputeImageGuestOsFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

@@ -204,7 +204,7 @@ func NewGoogleLoggingLinkedDatasetTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleLoggingLinkedDatasetTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleLoggingLinkedDatasetTimeoutsOutputReference_Override(g GoogleLoggi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

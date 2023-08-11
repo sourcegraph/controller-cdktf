@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ebsVolume.EbsVolume",
+		"@cdktf/provider-aws.ebsVolume.EbsVolume",
 		reflect.TypeOf((*EbsVolume)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -98,15 +98,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ebsVolume.EbsVolumeConfig",
+		"@cdktf/provider-aws.ebsVolume.EbsVolumeConfig",
 		reflect.TypeOf((*EbsVolumeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ebsVolume.EbsVolumeTimeouts",
+		"@cdktf/provider-aws.ebsVolume.EbsVolumeTimeouts",
 		reflect.TypeOf((*EbsVolumeTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ebsVolume.EbsVolumeTimeoutsOutputReference",
+		"@cdktf/provider-aws.ebsVolume.EbsVolumeTimeoutsOutputReference",
 		reflect.TypeOf((*EbsVolumeTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

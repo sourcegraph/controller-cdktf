@@ -202,7 +202,7 @@ func NewContainerAnalysisOccurrenceAttestationOutputReference(terraformResource 
 	j := jsiiProxy_ContainerAnalysisOccurrenceAttestationOutputReference{}
 
 	_jsii_.Create(
-		"google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestationOutputReference",
+		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewContainerAnalysisOccurrenceAttestationOutputReference_Override(c Contain
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestationOutputReference",
+		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

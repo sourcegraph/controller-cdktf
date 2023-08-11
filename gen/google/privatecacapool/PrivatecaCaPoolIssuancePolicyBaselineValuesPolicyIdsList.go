@@ -116,7 +116,7 @@ func NewPrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsList(terraformResour
 	j := jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsList{}
 
 	_jsii_.Create(
-		"google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsList",
+		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsList_Override(p Priv
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsList",
+		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

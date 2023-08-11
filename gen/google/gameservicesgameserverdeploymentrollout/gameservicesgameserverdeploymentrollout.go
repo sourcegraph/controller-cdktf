@@ -425,7 +425,7 @@ func NewGameServicesGameServerDeploymentRollout(scope constructs.Construct, id *
 	j := jsiiProxy_GameServicesGameServerDeploymentRollout{}
 
 	_jsii_.Create(
-		"google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRollout",
+		"@cdktf/provider-google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRollout",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -438,7 +438,7 @@ func NewGameServicesGameServerDeploymentRollout_Override(g GameServicesGameServe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRollout",
+		"@cdktf/provider-google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRollout",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -582,7 +582,7 @@ func GameServicesGameServerDeploymentRollout_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRollout",
+		"@cdktf/provider-google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRollout",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func GameServicesGameServerDeploymentRollout_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRollout",
+		"@cdktf/provider-google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRollout",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GameServicesGameServerDeploymentRollout_IsTerraformResource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRollout",
+		"@cdktf/provider-google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRollout",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func GameServicesGameServerDeploymentRollout_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRollout",
+		"@cdktf/provider-google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRollout",
 		"tfResourceType",
 		&returns,
 	)

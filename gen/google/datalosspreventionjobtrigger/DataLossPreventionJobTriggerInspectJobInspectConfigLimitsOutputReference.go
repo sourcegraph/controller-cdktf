@@ -228,7 +228,7 @@ func NewDataLossPreventionJobTriggerInspectJobInspectConfigLimitsOutputReference
 	j := jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigLimitsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigLimitsOutputReference",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigLimitsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDataLossPreventionJobTriggerInspectJobInspectConfigLimitsOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigLimitsOutputReference",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigLimitsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

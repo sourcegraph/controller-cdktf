@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.fsxOntapVolume.FsxOntapVolume",
+		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume",
 		reflect.TypeOf((*FsxOntapVolume)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,15 +90,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxOntapVolume.FsxOntapVolumeConfig",
+		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig",
 		reflect.TypeOf((*FsxOntapVolumeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxOntapVolume.FsxOntapVolumeTieringPolicy",
+		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTieringPolicy",
 		reflect.TypeOf((*FsxOntapVolumeTieringPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxOntapVolume.FsxOntapVolumeTieringPolicyOutputReference",
+		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTieringPolicyOutputReference",
 		reflect.TypeOf((*FsxOntapVolumeTieringPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -136,11 +136,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxOntapVolume.FsxOntapVolumeTimeouts",
+		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTimeouts",
 		reflect.TypeOf((*FsxOntapVolumeTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxOntapVolume.FsxOntapVolumeTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTimeoutsOutputReference",
 		reflect.TypeOf((*FsxOntapVolumeTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

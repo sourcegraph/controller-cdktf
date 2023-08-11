@@ -228,7 +228,7 @@ func NewRdsGlobalClusterTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_RdsGlobalClusterTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.rdsGlobalCluster.RdsGlobalClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.rdsGlobalCluster.RdsGlobalClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewRdsGlobalClusterTimeoutsOutputReference_Override(r RdsGlobalClusterTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rdsGlobalCluster.RdsGlobalClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.rdsGlobalCluster.RdsGlobalClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

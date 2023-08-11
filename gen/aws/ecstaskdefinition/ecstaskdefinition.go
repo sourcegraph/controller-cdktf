@@ -772,7 +772,7 @@ func NewEcsTaskDefinition(scope constructs.Construct, id *string, config *EcsTas
 	j := jsiiProxy_EcsTaskDefinition{}
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinition",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -785,7 +785,7 @@ func NewEcsTaskDefinition_Override(e EcsTaskDefinition, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinition",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -1039,7 +1039,7 @@ func EcsTaskDefinition_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsTaskDefinition.EcsTaskDefinition",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1058,7 +1058,7 @@ func EcsTaskDefinition_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsTaskDefinition.EcsTaskDefinition",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1077,7 +1077,7 @@ func EcsTaskDefinition_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsTaskDefinition.EcsTaskDefinition",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1090,7 +1090,7 @@ func EcsTaskDefinition_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ecsTaskDefinition.EcsTaskDefinition",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition",
 		"tfResourceType",
 		&returns,
 	)

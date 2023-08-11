@@ -517,7 +517,7 @@ func NewKendraThesaurus(scope constructs.Construct, id *string, config *KendraTh
 	j := jsiiProxy_KendraThesaurus{}
 
 	_jsii_.Create(
-		"aws.kendraThesaurus.KendraThesaurus",
+		"@cdktf/provider-aws.kendraThesaurus.KendraThesaurus",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -530,7 +530,7 @@ func NewKendraThesaurus_Override(k KendraThesaurus, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraThesaurus.KendraThesaurus",
+		"@cdktf/provider-aws.kendraThesaurus.KendraThesaurus",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -707,7 +707,7 @@ func KendraThesaurus_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kendraThesaurus.KendraThesaurus",
+		"@cdktf/provider-aws.kendraThesaurus.KendraThesaurus",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -726,7 +726,7 @@ func KendraThesaurus_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kendraThesaurus.KendraThesaurus",
+		"@cdktf/provider-aws.kendraThesaurus.KendraThesaurus",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -745,7 +745,7 @@ func KendraThesaurus_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kendraThesaurus.KendraThesaurus",
+		"@cdktf/provider-aws.kendraThesaurus.KendraThesaurus",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -758,7 +758,7 @@ func KendraThesaurus_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.kendraThesaurus.KendraThesaurus",
+		"@cdktf/provider-aws.kendraThesaurus.KendraThesaurus",
 		"tfResourceType",
 		&returns,
 	)

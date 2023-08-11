@@ -180,7 +180,7 @@ func NewNetworkmanagerConnectAttachmentOptionsOutputReference(terraformResource 
 	j := jsiiProxy_NetworkmanagerConnectAttachmentOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentOptionsOutputReference",
+		"@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewNetworkmanagerConnectAttachmentOptionsOutputReference_Override(n Network
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentOptionsOutputReference",
+		"@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

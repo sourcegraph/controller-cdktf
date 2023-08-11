@@ -226,7 +226,7 @@ func NewIamWorkforcePoolProviderOidcOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_IamWorkforcePoolProviderOidcOutputReference{}
 
 	_jsii_.Create(
-		"google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcOutputReference",
+		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewIamWorkforcePoolProviderOidcOutputReference_Override(i IamWorkforcePoolP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcOutputReference",
+		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

@@ -483,7 +483,7 @@ func NewEndpointsService(scope constructs.Construct, id *string, config *Endpoin
 	j := jsiiProxy_EndpointsService{}
 
 	_jsii_.Create(
-		"google.endpointsService.EndpointsService",
+		"@cdktf/provider-google.endpointsService.EndpointsService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -496,7 +496,7 @@ func NewEndpointsService_Override(e EndpointsService, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.endpointsService.EndpointsService",
+		"@cdktf/provider-google.endpointsService.EndpointsService",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -662,7 +662,7 @@ func EndpointsService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.endpointsService.EndpointsService",
+		"@cdktf/provider-google.endpointsService.EndpointsService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -681,7 +681,7 @@ func EndpointsService_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.endpointsService.EndpointsService",
+		"@cdktf/provider-google.endpointsService.EndpointsService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func EndpointsService_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.endpointsService.EndpointsService",
+		"@cdktf/provider-google.endpointsService.EndpointsService",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -713,7 +713,7 @@ func EndpointsService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.endpointsService.EndpointsService",
+		"@cdktf/provider-google.endpointsService.EndpointsService",
 		"tfResourceType",
 		&returns,
 	)

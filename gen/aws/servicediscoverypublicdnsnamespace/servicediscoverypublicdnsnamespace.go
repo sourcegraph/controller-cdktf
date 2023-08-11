@@ -413,7 +413,7 @@ func NewServiceDiscoveryPublicDnsNamespace(scope constructs.Construct, id *strin
 	j := jsiiProxy_ServiceDiscoveryPublicDnsNamespace{}
 
 	_jsii_.Create(
-		"aws.serviceDiscoveryPublicDnsNamespace.ServiceDiscoveryPublicDnsNamespace",
+		"@cdktf/provider-aws.serviceDiscoveryPublicDnsNamespace.ServiceDiscoveryPublicDnsNamespace",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewServiceDiscoveryPublicDnsNamespace_Override(s ServiceDiscoveryPublicDnsN
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.serviceDiscoveryPublicDnsNamespace.ServiceDiscoveryPublicDnsNamespace",
+		"@cdktf/provider-aws.serviceDiscoveryPublicDnsNamespace.ServiceDiscoveryPublicDnsNamespace",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -581,7 +581,7 @@ func ServiceDiscoveryPublicDnsNamespace_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.serviceDiscoveryPublicDnsNamespace.ServiceDiscoveryPublicDnsNamespace",
+		"@cdktf/provider-aws.serviceDiscoveryPublicDnsNamespace.ServiceDiscoveryPublicDnsNamespace",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -600,7 +600,7 @@ func ServiceDiscoveryPublicDnsNamespace_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.serviceDiscoveryPublicDnsNamespace.ServiceDiscoveryPublicDnsNamespace",
+		"@cdktf/provider-aws.serviceDiscoveryPublicDnsNamespace.ServiceDiscoveryPublicDnsNamespace",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func ServiceDiscoveryPublicDnsNamespace_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.serviceDiscoveryPublicDnsNamespace.ServiceDiscoveryPublicDnsNamespace",
+		"@cdktf/provider-aws.serviceDiscoveryPublicDnsNamespace.ServiceDiscoveryPublicDnsNamespace",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func ServiceDiscoveryPublicDnsNamespace_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.serviceDiscoveryPublicDnsNamespace.ServiceDiscoveryPublicDnsNamespace",
+		"@cdktf/provider-aws.serviceDiscoveryPublicDnsNamespace.ServiceDiscoveryPublicDnsNamespace",
 		"tfResourceType",
 		&returns,
 	)

@@ -252,7 +252,7 @@ func NewStatefulSetV1TimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_StatefulSetV1TimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1TimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1TimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewStatefulSetV1TimeoutsOutputReference_Override(s StatefulSetV1TimeoutsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1TimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1TimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -389,7 +389,7 @@ func NewEc2CarrierGateway(scope constructs.Construct, id *string, config *Ec2Car
 	j := jsiiProxy_Ec2CarrierGateway{}
 
 	_jsii_.Create(
-		"aws.ec2CarrierGateway.Ec2CarrierGateway",
+		"@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -402,7 +402,7 @@ func NewEc2CarrierGateway_Override(e Ec2CarrierGateway, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2CarrierGateway.Ec2CarrierGateway",
+		"@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -546,7 +546,7 @@ func Ec2CarrierGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2CarrierGateway.Ec2CarrierGateway",
+		"@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func Ec2CarrierGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2CarrierGateway.Ec2CarrierGateway",
+		"@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func Ec2CarrierGateway_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2CarrierGateway.Ec2CarrierGateway",
+		"@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func Ec2CarrierGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2CarrierGateway.Ec2CarrierGateway",
+		"@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway",
 		"tfResourceType",
 		&returns,
 	)

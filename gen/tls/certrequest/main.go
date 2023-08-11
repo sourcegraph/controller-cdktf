@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tls.certRequest.CertRequest",
+		"@cdktf/provider-tls.certRequest.CertRequest",
 		reflect.TypeOf((*CertRequest)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tls.certRequest.CertRequestConfig",
+		"@cdktf/provider-tls.certRequest.CertRequestConfig",
 		reflect.TypeOf((*CertRequestConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"tls.certRequest.CertRequestSubject",
+		"@cdktf/provider-tls.certRequest.CertRequestSubject",
 		reflect.TypeOf((*CertRequestSubject)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"tls.certRequest.CertRequestSubjectOutputReference",
+		"@cdktf/provider-tls.certRequest.CertRequestSubjectOutputReference",
 		reflect.TypeOf((*CertRequestSubjectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "commonName", GoGetter: "CommonName"},

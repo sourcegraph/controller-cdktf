@@ -202,7 +202,7 @@ func NewContainerAzureNodePoolConfigProxyConfigOutputReference(terraformResource
 	j := jsiiProxy_ContainerAzureNodePoolConfigProxyConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.containerAzureNodePool.ContainerAzureNodePoolConfigProxyConfigOutputReference",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolConfigProxyConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewContainerAzureNodePoolConfigProxyConfigOutputReference_Override(c Contai
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAzureNodePool.ContainerAzureNodePoolConfigProxyConfigOutputReference",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolConfigProxyConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

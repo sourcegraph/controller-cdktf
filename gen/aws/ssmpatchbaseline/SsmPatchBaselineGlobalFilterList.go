@@ -116,7 +116,7 @@ func NewSsmPatchBaselineGlobalFilterList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_SsmPatchBaselineGlobalFilterList{}
 
 	_jsii_.Create(
-		"aws.ssmPatchBaseline.SsmPatchBaselineGlobalFilterList",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineGlobalFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSsmPatchBaselineGlobalFilterList_Override(s SsmPatchBaselineGlobalFilter
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmPatchBaseline.SsmPatchBaselineGlobalFilterList",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineGlobalFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

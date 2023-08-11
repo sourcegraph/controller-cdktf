@@ -742,7 +742,7 @@ func NewGoogleSqlDatabaseInstanceSettingsOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -754,7 +754,7 @@ func NewGoogleSqlDatabaseInstanceSettingsOutputReference_Override(g GoogleSqlDat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

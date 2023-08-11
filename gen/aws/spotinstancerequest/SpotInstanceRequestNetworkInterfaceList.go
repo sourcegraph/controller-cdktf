@@ -116,7 +116,7 @@ func NewSpotInstanceRequestNetworkInterfaceList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_SpotInstanceRequestNetworkInterfaceList{}
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestNetworkInterfaceList",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestNetworkInterfaceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSpotInstanceRequestNetworkInterfaceList_Override(s SpotInstanceRequestNe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestNetworkInterfaceList",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestNetworkInterfaceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

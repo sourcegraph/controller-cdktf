@@ -228,7 +228,7 @@ func NewGoogleRedisInstanceTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleRedisInstanceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleRedisInstanceTimeoutsOutputReference_Override(g GoogleRedisInstanc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

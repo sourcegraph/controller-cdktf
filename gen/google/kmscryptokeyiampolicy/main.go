@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.kmsCryptoKeyIamPolicy.KmsCryptoKeyIamPolicy",
+		"@cdktf/provider-google.kmsCryptoKeyIamPolicy.KmsCryptoKeyIamPolicy",
 		reflect.TypeOf((*KmsCryptoKeyIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.kmsCryptoKeyIamPolicy.KmsCryptoKeyIamPolicyConfig",
+		"@cdktf/provider-google.kmsCryptoKeyIamPolicy.KmsCryptoKeyIamPolicyConfig",
 		reflect.TypeOf((*KmsCryptoKeyIamPolicyConfig)(nil)).Elem(),
 	)
 }

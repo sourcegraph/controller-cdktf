@@ -370,7 +370,7 @@ func NewDataGoogleKmsCryptoKeyVersion(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataGoogleKmsCryptoKeyVersion{}
 
 	_jsii_.Create(
-		"google.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersion",
+		"@cdktf/provider-google.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -383,7 +383,7 @@ func NewDataGoogleKmsCryptoKeyVersion_Override(d DataGoogleKmsCryptoKeyVersion, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersion",
+		"@cdktf/provider-google.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersion",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -494,7 +494,7 @@ func DataGoogleKmsCryptoKeyVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersion",
+		"@cdktf/provider-google.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -513,7 +513,7 @@ func DataGoogleKmsCryptoKeyVersion_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersion",
+		"@cdktf/provider-google.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersion",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -532,7 +532,7 @@ func DataGoogleKmsCryptoKeyVersion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersion",
+		"@cdktf/provider-google.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -545,7 +545,7 @@ func DataGoogleKmsCryptoKeyVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersion",
+		"@cdktf/provider-google.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersion",
 		"tfResourceType",
 		&returns,
 	)

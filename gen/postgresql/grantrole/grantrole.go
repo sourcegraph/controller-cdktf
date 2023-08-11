@@ -366,7 +366,7 @@ func NewGrantRole(scope constructs.Construct, id *string, config *GrantRoleConfi
 	j := jsiiProxy_GrantRole{}
 
 	_jsii_.Create(
-		"postgresql.grantRole.GrantRole",
+		"@cdktf/provider-postgresql.grantRole.GrantRole",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewGrantRole_Override(g GrantRole, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"postgresql.grantRole.GrantRole",
+		"@cdktf/provider-postgresql.grantRole.GrantRole",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -523,7 +523,7 @@ func GrantRole_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.grantRole.GrantRole",
+		"@cdktf/provider-postgresql.grantRole.GrantRole",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func GrantRole_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.grantRole.GrantRole",
+		"@cdktf/provider-postgresql.grantRole.GrantRole",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func GrantRole_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.grantRole.GrantRole",
+		"@cdktf/provider-postgresql.grantRole.GrantRole",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func GrantRole_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"postgresql.grantRole.GrantRole",
+		"@cdktf/provider-postgresql.grantRole.GrantRole",
 		"tfResourceType",
 		&returns,
 	)

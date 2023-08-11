@@ -225,7 +225,7 @@ func NewBillingBudgetBudgetFilterCustomPeriodStartDateOutputReference(terraformR
 	j := jsiiProxy_BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference{}
 
 	_jsii_.Create(
-		"google.billingBudget.BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference",
+		"@cdktf/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewBillingBudgetBudgetFilterCustomPeriodStartDateOutputReference_Override(b
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.billingBudget.BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference",
+		"@cdktf/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

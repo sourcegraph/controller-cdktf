@@ -180,7 +180,7 @@ func NewEc2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference
 	j := jsiiProxy_Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference",
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewEc2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference",
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

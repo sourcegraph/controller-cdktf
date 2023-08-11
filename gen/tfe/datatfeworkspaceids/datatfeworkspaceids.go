@@ -386,7 +386,7 @@ func NewDataTfeWorkspaceIds(scope constructs.Construct, id *string, config *Data
 	j := jsiiProxy_DataTfeWorkspaceIds{}
 
 	_jsii_.Create(
-		"tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds",
+		"@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -399,7 +399,7 @@ func NewDataTfeWorkspaceIds_Override(d DataTfeWorkspaceIds, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds",
+		"@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -532,7 +532,7 @@ func DataTfeWorkspaceIds_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds",
+		"@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func DataTfeWorkspaceIds_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds",
+		"@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -570,7 +570,7 @@ func DataTfeWorkspaceIds_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds",
+		"@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func DataTfeWorkspaceIds_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds",
+		"@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds",
 		"tfResourceType",
 		&returns,
 	)

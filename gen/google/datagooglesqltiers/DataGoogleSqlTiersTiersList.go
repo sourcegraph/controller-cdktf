@@ -104,7 +104,7 @@ func NewDataGoogleSqlTiersTiersList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_DataGoogleSqlTiersTiersList{}
 
 	_jsii_.Create(
-		"google.dataGoogleSqlTiers.DataGoogleSqlTiersTiersList",
+		"@cdktf/provider-google.dataGoogleSqlTiers.DataGoogleSqlTiersTiersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleSqlTiersTiersList_Override(d DataGoogleSqlTiersTiersList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleSqlTiers.DataGoogleSqlTiersTiersList",
+		"@cdktf/provider-google.dataGoogleSqlTiers.DataGoogleSqlTiersTiersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

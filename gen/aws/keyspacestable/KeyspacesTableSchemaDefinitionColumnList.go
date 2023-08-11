@@ -116,7 +116,7 @@ func NewKeyspacesTableSchemaDefinitionColumnList(terraformResource cdktf.IInterp
 	j := jsiiProxy_KeyspacesTableSchemaDefinitionColumnList{}
 
 	_jsii_.Create(
-		"aws.keyspacesTable.KeyspacesTableSchemaDefinitionColumnList",
+		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionColumnList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewKeyspacesTableSchemaDefinitionColumnList_Override(k KeyspacesTableSchema
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.keyspacesTable.KeyspacesTableSchemaDefinitionColumnList",
+		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionColumnList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		k,
 	)

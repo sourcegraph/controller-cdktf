@@ -448,7 +448,7 @@ func NewGkeBackupBackupPlanIamBinding(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GkeBackupBackupPlanIamBinding{}
 
 	_jsii_.Create(
-		"google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBinding",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGkeBackupBackupPlanIamBinding_Override(g GkeBackupBackupPlanIamBinding, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBinding",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GkeBackupBackupPlanIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBinding",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GkeBackupBackupPlanIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBinding",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GkeBackupBackupPlanIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBinding",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GkeBackupBackupPlanIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBinding",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBinding",
 		"tfResourceType",
 		&returns,
 	)

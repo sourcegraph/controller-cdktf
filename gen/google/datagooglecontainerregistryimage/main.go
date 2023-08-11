@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage",
+		"@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage",
 		reflect.TypeOf((*DataGoogleContainerRegistryImage)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig",
+		"@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig",
 		reflect.TypeOf((*DataGoogleContainerRegistryImageConfig)(nil)).Elem(),
 	)
 }

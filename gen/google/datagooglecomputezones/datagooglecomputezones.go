@@ -351,7 +351,7 @@ func NewDataGoogleComputeZones(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataGoogleComputeZones{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeZones.DataGoogleComputeZones",
+		"@cdktf/provider-google.dataGoogleComputeZones.DataGoogleComputeZones",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -364,7 +364,7 @@ func NewDataGoogleComputeZones_Override(d DataGoogleComputeZones, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeZones.DataGoogleComputeZones",
+		"@cdktf/provider-google.dataGoogleComputeZones.DataGoogleComputeZones",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -486,7 +486,7 @@ func DataGoogleComputeZones_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeZones.DataGoogleComputeZones",
+		"@cdktf/provider-google.dataGoogleComputeZones.DataGoogleComputeZones",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func DataGoogleComputeZones_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeZones.DataGoogleComputeZones",
+		"@cdktf/provider-google.dataGoogleComputeZones.DataGoogleComputeZones",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -524,7 +524,7 @@ func DataGoogleComputeZones_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeZones.DataGoogleComputeZones",
+		"@cdktf/provider-google.dataGoogleComputeZones.DataGoogleComputeZones",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func DataGoogleComputeZones_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleComputeZones.DataGoogleComputeZones",
+		"@cdktf/provider-google.dataGoogleComputeZones.DataGoogleComputeZones",
 		"tfResourceType",
 		&returns,
 	)

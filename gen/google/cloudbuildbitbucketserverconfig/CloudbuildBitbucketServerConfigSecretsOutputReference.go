@@ -225,7 +225,7 @@ func NewCloudbuildBitbucketServerConfigSecretsOutputReference(terraformResource 
 	j := jsiiProxy_CloudbuildBitbucketServerConfigSecretsOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigSecretsOutputReference",
+		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigSecretsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewCloudbuildBitbucketServerConfigSecretsOutputReference_Override(c Cloudbu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigSecretsOutputReference",
+		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigSecretsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

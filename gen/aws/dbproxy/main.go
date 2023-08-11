@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dbProxy.DbProxy",
+		"@cdktf/provider-aws.dbProxy.DbProxy",
 		reflect.TypeOf((*DbProxy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,11 +90,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbProxy.DbProxyAuth",
+		"@cdktf/provider-aws.dbProxy.DbProxyAuth",
 		reflect.TypeOf((*DbProxyAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dbProxy.DbProxyAuthList",
+		"@cdktf/provider-aws.dbProxy.DbProxyAuthList",
 		reflect.TypeOf((*DbProxyAuthList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dbProxy.DbProxyAuthOutputReference",
+		"@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference",
 		reflect.TypeOf((*DbProxyAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authScheme", GoGetter: "AuthScheme"},
@@ -162,15 +162,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbProxy.DbProxyConfig",
+		"@cdktf/provider-aws.dbProxy.DbProxyConfig",
 		reflect.TypeOf((*DbProxyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbProxy.DbProxyTimeouts",
+		"@cdktf/provider-aws.dbProxy.DbProxyTimeouts",
 		reflect.TypeOf((*DbProxyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dbProxy.DbProxyTimeoutsOutputReference",
+		"@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference",
 		reflect.TypeOf((*DbProxyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

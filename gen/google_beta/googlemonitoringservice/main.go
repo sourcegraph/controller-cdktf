@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringService.GoogleMonitoringService",
+		"@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringService",
 		reflect.TypeOf((*GoogleMonitoringService)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,11 +76,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringService.GoogleMonitoringServiceBasicService",
+		"@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceBasicService",
 		reflect.TypeOf((*GoogleMonitoringServiceBasicService)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringService.GoogleMonitoringServiceBasicServiceOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceBasicServiceOutputReference",
 		reflect.TypeOf((*GoogleMonitoringServiceBasicServiceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -118,15 +118,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringService.GoogleMonitoringServiceConfig",
+		"@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceConfig",
 		reflect.TypeOf((*GoogleMonitoringServiceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringService.GoogleMonitoringServiceTelemetry",
+		"@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTelemetry",
 		reflect.TypeOf((*GoogleMonitoringServiceTelemetry)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringService.GoogleMonitoringServiceTelemetryList",
+		"@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTelemetryList",
 		reflect.TypeOf((*GoogleMonitoringServiceTelemetryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -146,7 +146,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringService.GoogleMonitoringServiceTelemetryOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTelemetryOutputReference",
 		reflect.TypeOf((*GoogleMonitoringServiceTelemetryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -179,11 +179,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringService.GoogleMonitoringServiceTimeouts",
+		"@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTimeouts",
 		reflect.TypeOf((*GoogleMonitoringServiceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringService.GoogleMonitoringServiceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleMonitoringServiceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

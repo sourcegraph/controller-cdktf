@@ -658,7 +658,7 @@ func NewLaunchTemplateInstanceRequirementsOutputReference(terraformResource cdkt
 	j := jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateInstanceRequirementsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -670,7 +670,7 @@ func NewLaunchTemplateInstanceRequirementsOutputReference_Override(l LaunchTempl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateInstanceRequirementsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

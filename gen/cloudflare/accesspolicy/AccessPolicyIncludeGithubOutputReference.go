@@ -228,7 +228,7 @@ func NewAccessPolicyIncludeGithubOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_AccessPolicyIncludeGithubOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyIncludeGithubOutputReference",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeGithubOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAccessPolicyIncludeGithubOutputReference_Override(a AccessPolicyIncludeG
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyIncludeGithubOutputReference",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeGithubOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

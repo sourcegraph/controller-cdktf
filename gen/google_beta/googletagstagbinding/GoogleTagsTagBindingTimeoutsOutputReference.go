@@ -204,7 +204,7 @@ func NewGoogleTagsTagBindingTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_GoogleTagsTagBindingTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleTagsTagBinding.GoogleTagsTagBindingTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleTagsTagBinding.GoogleTagsTagBindingTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleTagsTagBindingTimeoutsOutputReference_Override(g GoogleTagsTagBind
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleTagsTagBinding.GoogleTagsTagBindingTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleTagsTagBinding.GoogleTagsTagBindingTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

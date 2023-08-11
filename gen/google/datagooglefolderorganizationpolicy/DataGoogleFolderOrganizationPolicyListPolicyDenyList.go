@@ -104,7 +104,7 @@ func NewDataGoogleFolderOrganizationPolicyListPolicyDenyList(terraformResource c
 	j := jsiiProxy_DataGoogleFolderOrganizationPolicyListPolicyDenyList{}
 
 	_jsii_.Create(
-		"google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyListPolicyDenyList",
+		"@cdktf/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyListPolicyDenyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleFolderOrganizationPolicyListPolicyDenyList_Override(d DataGoog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyListPolicyDenyList",
+		"@cdktf/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyListPolicyDenyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

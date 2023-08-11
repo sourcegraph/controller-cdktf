@@ -558,7 +558,7 @@ func NewGoogleComputeNodeTemplate(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleComputeNodeTemplate{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplate",
+		"@cdktf/provider-google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -571,7 +571,7 @@ func NewGoogleComputeNodeTemplate_Override(g GoogleComputeNodeTemplate, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplate",
+		"@cdktf/provider-google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplate",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -759,7 +759,7 @@ func GoogleComputeNodeTemplate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplate",
+		"@cdktf/provider-google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -778,7 +778,7 @@ func GoogleComputeNodeTemplate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplate",
+		"@cdktf/provider-google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -797,7 +797,7 @@ func GoogleComputeNodeTemplate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplate",
+		"@cdktf/provider-google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -810,7 +810,7 @@ func GoogleComputeNodeTemplate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplate",
+		"@cdktf/provider-google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplate",
 		"tfResourceType",
 		&returns,
 	)

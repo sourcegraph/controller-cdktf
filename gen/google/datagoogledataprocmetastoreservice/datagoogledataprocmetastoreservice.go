@@ -525,7 +525,7 @@ func NewDataGoogleDataprocMetastoreService(scope constructs.Construct, id *strin
 	j := jsiiProxy_DataGoogleDataprocMetastoreService{}
 
 	_jsii_.Create(
-		"google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreService",
+		"@cdktf/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -538,7 +538,7 @@ func NewDataGoogleDataprocMetastoreService_Override(d DataGoogleDataprocMetastor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreService",
+		"@cdktf/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreService",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -660,7 +660,7 @@ func DataGoogleDataprocMetastoreService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreService",
+		"@cdktf/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func DataGoogleDataprocMetastoreService_IsTerraformDataSource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreService",
+		"@cdktf/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreService",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -698,7 +698,7 @@ func DataGoogleDataprocMetastoreService_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreService",
+		"@cdktf/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -711,7 +711,7 @@ func DataGoogleDataprocMetastoreService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreService",
+		"@cdktf/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreService",
 		"tfResourceType",
 		&returns,
 	)

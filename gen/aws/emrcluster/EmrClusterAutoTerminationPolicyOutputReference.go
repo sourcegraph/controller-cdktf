@@ -180,7 +180,7 @@ func NewEmrClusterAutoTerminationPolicyOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterAutoTerminationPolicyOutputReference",
+		"@cdktf/provider-aws.emrCluster.EmrClusterAutoTerminationPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewEmrClusterAutoTerminationPolicyOutputReference_Override(e EmrClusterAuto
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterAutoTerminationPolicyOutputReference",
+		"@cdktf/provider-aws.emrCluster.EmrClusterAutoTerminationPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

@@ -717,7 +717,7 @@ func NewRoute53DomainsRegisteredDomain(scope constructs.Construct, id *string, c
 	j := jsiiProxy_Route53DomainsRegisteredDomain{}
 
 	_jsii_.Create(
-		"aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain",
+		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -730,7 +730,7 @@ func NewRoute53DomainsRegisteredDomain_Override(r Route53DomainsRegisteredDomain
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain",
+		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -929,7 +929,7 @@ func Route53DomainsRegisteredDomain_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain",
+		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -948,7 +948,7 @@ func Route53DomainsRegisteredDomain_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain",
+		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -967,7 +967,7 @@ func Route53DomainsRegisteredDomain_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain",
+		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -980,7 +980,7 @@ func Route53DomainsRegisteredDomain_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain",
+		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomain",
 		"tfResourceType",
 		&returns,
 	)

@@ -366,7 +366,7 @@ func NewSnapshotCreateVolumePermission(scope constructs.Construct, id *string, c
 	j := jsiiProxy_SnapshotCreateVolumePermission{}
 
 	_jsii_.Create(
-		"aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission",
+		"@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewSnapshotCreateVolumePermission_Override(s SnapshotCreateVolumePermission
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission",
+		"@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -512,7 +512,7 @@ func SnapshotCreateVolumePermission_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission",
+		"@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func SnapshotCreateVolumePermission_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission",
+		"@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func SnapshotCreateVolumePermission_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission",
+		"@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func SnapshotCreateVolumePermission_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission",
+		"@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission",
 		"tfResourceType",
 		&returns,
 	)

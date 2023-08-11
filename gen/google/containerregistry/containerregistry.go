@@ -355,7 +355,7 @@ func NewContainerRegistry(scope constructs.Construct, id *string, config *Contai
 	j := jsiiProxy_ContainerRegistry{}
 
 	_jsii_.Create(
-		"google.containerRegistry.ContainerRegistry",
+		"@cdktf/provider-google.containerRegistry.ContainerRegistry",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -368,7 +368,7 @@ func NewContainerRegistry_Override(c ContainerRegistry, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerRegistry.ContainerRegistry",
+		"@cdktf/provider-google.containerRegistry.ContainerRegistry",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -501,7 +501,7 @@ func ContainerRegistry_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerRegistry.ContainerRegistry",
+		"@cdktf/provider-google.containerRegistry.ContainerRegistry",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -520,7 +520,7 @@ func ContainerRegistry_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerRegistry.ContainerRegistry",
+		"@cdktf/provider-google.containerRegistry.ContainerRegistry",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func ContainerRegistry_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerRegistry.ContainerRegistry",
+		"@cdktf/provider-google.containerRegistry.ContainerRegistry",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -552,7 +552,7 @@ func ContainerRegistry_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.containerRegistry.ContainerRegistry",
+		"@cdktf/provider-google.containerRegistry.ContainerRegistry",
 		"tfResourceType",
 		&returns,
 	)

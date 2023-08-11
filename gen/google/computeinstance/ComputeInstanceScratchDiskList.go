@@ -116,7 +116,7 @@ func NewComputeInstanceScratchDiskList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_ComputeInstanceScratchDiskList{}
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceScratchDiskList",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceScratchDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeInstanceScratchDiskList_Override(c ComputeInstanceScratchDiskList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceScratchDiskList",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceScratchDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

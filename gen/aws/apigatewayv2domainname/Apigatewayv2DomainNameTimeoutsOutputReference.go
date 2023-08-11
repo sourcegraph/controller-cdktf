@@ -204,7 +204,7 @@ func NewApigatewayv2DomainNameTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_Apigatewayv2DomainNameTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.apigatewayv2DomainName.Apigatewayv2DomainNameTimeoutsOutputReference",
+		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewApigatewayv2DomainNameTimeoutsOutputReference_Override(a Apigatewayv2Dom
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apigatewayv2DomainName.Apigatewayv2DomainNameTimeoutsOutputReference",
+		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

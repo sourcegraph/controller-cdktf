@@ -598,7 +598,7 @@ func NewKendraFaq(scope constructs.Construct, id *string, config *KendraFaqConfi
 	j := jsiiProxy_KendraFaq{}
 
 	_jsii_.Create(
-		"aws.kendraFaq.KendraFaq",
+		"@cdktf/provider-aws.kendraFaq.KendraFaq",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -611,7 +611,7 @@ func NewKendraFaq_Override(k KendraFaq, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraFaq.KendraFaq",
+		"@cdktf/provider-aws.kendraFaq.KendraFaq",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -810,7 +810,7 @@ func KendraFaq_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kendraFaq.KendraFaq",
+		"@cdktf/provider-aws.kendraFaq.KendraFaq",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -829,7 +829,7 @@ func KendraFaq_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kendraFaq.KendraFaq",
+		"@cdktf/provider-aws.kendraFaq.KendraFaq",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -848,7 +848,7 @@ func KendraFaq_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kendraFaq.KendraFaq",
+		"@cdktf/provider-aws.kendraFaq.KendraFaq",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -861,7 +861,7 @@ func KendraFaq_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.kendraFaq.KendraFaq",
+		"@cdktf/provider-aws.kendraFaq.KendraFaq",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.gkeHubMembershipIamMember.GkeHubMembershipIamMember",
+		"@cdktf/provider-google.gkeHubMembershipIamMember.GkeHubMembershipIamMember",
 		reflect.TypeOf((*GkeHubMembershipIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,11 +69,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gkeHubMembershipIamMember.GkeHubMembershipIamMemberCondition",
+		"@cdktf/provider-google.gkeHubMembershipIamMember.GkeHubMembershipIamMemberCondition",
 		reflect.TypeOf((*GkeHubMembershipIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.gkeHubMembershipIamMember.GkeHubMembershipIamMemberConditionOutputReference",
+		"@cdktf/provider-google.gkeHubMembershipIamMember.GkeHubMembershipIamMemberConditionOutputReference",
 		reflect.TypeOf((*GkeHubMembershipIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -112,7 +112,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gkeHubMembershipIamMember.GkeHubMembershipIamMemberConfig",
+		"@cdktf/provider-google.gkeHubMembershipIamMember.GkeHubMembershipIamMemberConfig",
 		reflect.TypeOf((*GkeHubMembershipIamMemberConfig)(nil)).Elem(),
 	)
 }

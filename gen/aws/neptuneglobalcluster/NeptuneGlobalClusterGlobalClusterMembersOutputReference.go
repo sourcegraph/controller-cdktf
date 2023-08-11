@@ -178,7 +178,7 @@ func NewNeptuneGlobalClusterGlobalClusterMembersOutputReference(terraformResourc
 	j := jsiiProxy_NeptuneGlobalClusterGlobalClusterMembersOutputReference{}
 
 	_jsii_.Create(
-		"aws.neptuneGlobalCluster.NeptuneGlobalClusterGlobalClusterMembersOutputReference",
+		"@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalClusterGlobalClusterMembersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewNeptuneGlobalClusterGlobalClusterMembersOutputReference_Override(n Neptu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.neptuneGlobalCluster.NeptuneGlobalClusterGlobalClusterMembersOutputReference",
+		"@cdktf/provider-aws.neptuneGlobalCluster.NeptuneGlobalClusterGlobalClusterMembersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)

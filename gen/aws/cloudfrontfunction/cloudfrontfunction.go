@@ -457,7 +457,7 @@ func NewCloudfrontFunction(scope constructs.Construct, id *string, config *Cloud
 	j := jsiiProxy_CloudfrontFunction{}
 
 	_jsii_.Create(
-		"aws.cloudfrontFunction.CloudfrontFunction",
+		"@cdktf/provider-aws.cloudfrontFunction.CloudfrontFunction",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -470,7 +470,7 @@ func NewCloudfrontFunction_Override(c CloudfrontFunction, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontFunction.CloudfrontFunction",
+		"@cdktf/provider-aws.cloudfrontFunction.CloudfrontFunction",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -636,7 +636,7 @@ func CloudfrontFunction_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontFunction.CloudfrontFunction",
+		"@cdktf/provider-aws.cloudfrontFunction.CloudfrontFunction",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func CloudfrontFunction_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontFunction.CloudfrontFunction",
+		"@cdktf/provider-aws.cloudfrontFunction.CloudfrontFunction",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -674,7 +674,7 @@ func CloudfrontFunction_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontFunction.CloudfrontFunction",
+		"@cdktf/provider-aws.cloudfrontFunction.CloudfrontFunction",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -687,7 +687,7 @@ func CloudfrontFunction_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudfrontFunction.CloudfrontFunction",
+		"@cdktf/provider-aws.cloudfrontFunction.CloudfrontFunction",
 		"tfResourceType",
 		&returns,
 	)

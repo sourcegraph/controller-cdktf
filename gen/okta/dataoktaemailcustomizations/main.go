@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.dataOktaEmailCustomizations.DataOktaEmailCustomizations",
+		"@cdktf/provider-okta.dataOktaEmailCustomizations.DataOktaEmailCustomizations",
 		reflect.TypeOf((*DataOktaEmailCustomizations)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,15 +58,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaEmailCustomizations.DataOktaEmailCustomizationsConfig",
+		"@cdktf/provider-okta.dataOktaEmailCustomizations.DataOktaEmailCustomizationsConfig",
 		reflect.TypeOf((*DataOktaEmailCustomizationsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaEmailCustomizations.DataOktaEmailCustomizationsEmailCustomizations",
+		"@cdktf/provider-okta.dataOktaEmailCustomizations.DataOktaEmailCustomizationsEmailCustomizations",
 		reflect.TypeOf((*DataOktaEmailCustomizationsEmailCustomizations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaEmailCustomizations.DataOktaEmailCustomizationsEmailCustomizationsList",
+		"@cdktf/provider-okta.dataOktaEmailCustomizations.DataOktaEmailCustomizationsEmailCustomizationsList",
 		reflect.TypeOf((*DataOktaEmailCustomizationsEmailCustomizationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -86,7 +86,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaEmailCustomizations.DataOktaEmailCustomizationsEmailCustomizationsOutputReference",
+		"@cdktf/provider-okta.dataOktaEmailCustomizations.DataOktaEmailCustomizationsEmailCustomizationsOutputReference",
 		reflect.TypeOf((*DataOktaEmailCustomizationsEmailCustomizationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},

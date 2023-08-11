@@ -226,7 +226,7 @@ func NewAccessContextManagerAccessPolicyIamMemberConditionOutputReference(terraf
 	j := jsiiProxy_AccessContextManagerAccessPolicyIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessPolicyIamMember.AccessContextManagerAccessPolicyIamMemberConditionOutputReference",
+		"@cdktf/provider-google.accessContextManagerAccessPolicyIamMember.AccessContextManagerAccessPolicyIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewAccessContextManagerAccessPolicyIamMemberConditionOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessPolicyIamMember.AccessContextManagerAccessPolicyIamMemberConditionOutputReference",
+		"@cdktf/provider-google.accessContextManagerAccessPolicyIamMember.AccessContextManagerAccessPolicyIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

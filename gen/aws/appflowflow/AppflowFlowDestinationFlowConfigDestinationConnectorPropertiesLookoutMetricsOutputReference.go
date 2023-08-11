@@ -156,7 +156,7 @@ func NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMet
 	j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetricsOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetricsOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetricsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetricsOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetricsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -204,7 +204,7 @@ func NewGameServicesGameServerDeploymentRolloutGameServerConfigOverridesOutputRe
 	j := jsiiProxy_GameServicesGameServerDeploymentRolloutGameServerConfigOverridesOutputReference{}
 
 	_jsii_.Create(
-		"google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutGameServerConfigOverridesOutputReference",
+		"@cdktf/provider-google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutGameServerConfigOverridesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGameServicesGameServerDeploymentRolloutGameServerConfigOverridesOutputRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutGameServerConfigOverridesOutputReference",
+		"@cdktf/provider-google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutGameServerConfigOverridesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

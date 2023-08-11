@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dialogflowCxEnvironment.DialogflowCxEnvironment",
+		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironment",
 		reflect.TypeOf((*DialogflowCxEnvironment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxEnvironment.DialogflowCxEnvironmentConfig",
+		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentConfig",
 		reflect.TypeOf((*DialogflowCxEnvironmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxEnvironment.DialogflowCxEnvironmentTimeouts",
+		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentTimeouts",
 		reflect.TypeOf((*DialogflowCxEnvironmentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxEnvironment.DialogflowCxEnvironmentTimeoutsOutputReference",
+		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentTimeoutsOutputReference",
 		reflect.TypeOf((*DialogflowCxEnvironmentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -121,11 +121,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigs",
+		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigs",
 		reflect.TypeOf((*DialogflowCxEnvironmentVersionConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigsList",
+		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigsList",
 		reflect.TypeOf((*DialogflowCxEnvironmentVersionConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -146,7 +146,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigsOutputReference",
+		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigsOutputReference",
 		reflect.TypeOf((*DialogflowCxEnvironmentVersionConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

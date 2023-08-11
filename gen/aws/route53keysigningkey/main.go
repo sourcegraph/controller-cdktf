@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.route53KeySigningKey.Route53KeySigningKey",
+		"@cdktf/provider-aws.route53KeySigningKey.Route53KeySigningKey",
 		reflect.TypeOf((*Route53KeySigningKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53KeySigningKey.Route53KeySigningKeyConfig",
+		"@cdktf/provider-aws.route53KeySigningKey.Route53KeySigningKeyConfig",
 		reflect.TypeOf((*Route53KeySigningKeyConfig)(nil)).Elem(),
 	)
 }

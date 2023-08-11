@@ -251,7 +251,7 @@ func NewConnectQuickConnectQuickConnectConfigOutputReference(terraformResource c
 	j := jsiiProxy_ConnectQuickConnectQuickConnectConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigOutputReference",
+		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewConnectQuickConnectQuickConnectConfigOutputReference_Override(c ConnectQ
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigOutputReference",
+		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

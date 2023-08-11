@@ -204,7 +204,7 @@ func NewKendraExperienceConfigurationOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_KendraExperienceConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.kendraExperience.KendraExperienceConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewKendraExperienceConfigurationOutputReference_Override(k KendraExperience
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraExperience.KendraExperienceConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

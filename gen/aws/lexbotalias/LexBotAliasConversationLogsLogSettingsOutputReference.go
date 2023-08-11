@@ -260,7 +260,7 @@ func NewLexBotAliasConversationLogsLogSettingsOutputReference(terraformResource 
 	j := jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsOutputReference",
+		"@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -272,7 +272,7 @@ func NewLexBotAliasConversationLogsLogSettingsOutputReference_Override(l LexBotA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsOutputReference",
+		"@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

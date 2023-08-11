@@ -116,7 +116,7 @@ func NewAppmeshVirtualNodeSpecListenerConnectionPoolTcpList(terraformResource cd
 	j := jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolTcpList{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpList",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppmeshVirtualNodeSpecListenerConnectionPoolTcpList_Override(a AppmeshVi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpList",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolTcpList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

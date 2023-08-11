@@ -116,7 +116,7 @@ func NewCeCostCategoryRuleRuleOrList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_CeCostCategoryRuleRuleOrList{}
 
 	_jsii_.Create(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleOrList",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCeCostCategoryRuleRuleOrList_Override(c CeCostCategoryRuleRuleOrList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleOrList",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

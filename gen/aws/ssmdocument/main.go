@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ssmDocument.SsmDocument",
+		"@cdktf/provider-aws.ssmDocument.SsmDocument",
 		reflect.TypeOf((*SsmDocument)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -96,11 +96,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssmDocument.SsmDocumentAttachmentsSource",
+		"@cdktf/provider-aws.ssmDocument.SsmDocumentAttachmentsSource",
 		reflect.TypeOf((*SsmDocumentAttachmentsSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ssmDocument.SsmDocumentAttachmentsSourceList",
+		"@cdktf/provider-aws.ssmDocument.SsmDocumentAttachmentsSourceList",
 		reflect.TypeOf((*SsmDocumentAttachmentsSourceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -121,7 +121,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ssmDocument.SsmDocumentAttachmentsSourceOutputReference",
+		"@cdktf/provider-aws.ssmDocument.SsmDocumentAttachmentsSourceOutputReference",
 		reflect.TypeOf((*SsmDocumentAttachmentsSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -160,15 +160,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssmDocument.SsmDocumentConfig",
+		"@cdktf/provider-aws.ssmDocument.SsmDocumentConfig",
 		reflect.TypeOf((*SsmDocumentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssmDocument.SsmDocumentParameter",
+		"@cdktf/provider-aws.ssmDocument.SsmDocumentParameter",
 		reflect.TypeOf((*SsmDocumentParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ssmDocument.SsmDocumentParameterList",
+		"@cdktf/provider-aws.ssmDocument.SsmDocumentParameterList",
 		reflect.TypeOf((*SsmDocumentParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -188,7 +188,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ssmDocument.SsmDocumentParameterOutputReference",
+		"@cdktf/provider-aws.ssmDocument.SsmDocumentParameterOutputReference",
 		reflect.TypeOf((*SsmDocumentParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

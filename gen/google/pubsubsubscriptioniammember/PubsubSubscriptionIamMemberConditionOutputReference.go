@@ -226,7 +226,7 @@ func NewPubsubSubscriptionIamMemberConditionOutputReference(terraformResource cd
 	j := jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConditionOutputReference",
+		"@cdktf/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewPubsubSubscriptionIamMemberConditionOutputReference_Override(p PubsubSub
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConditionOutputReference",
+		"@cdktf/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

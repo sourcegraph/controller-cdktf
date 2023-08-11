@@ -179,7 +179,7 @@ func NewGoogleSpannerDatabaseEncryptionConfigOutputReference(terraformResource c
 	j := jsiiProxy_GoogleSpannerDatabaseEncryptionConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleSpannerDatabase.GoogleSpannerDatabaseEncryptionConfigOutputReference",
+		"@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseEncryptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleSpannerDatabaseEncryptionConfigOutputReference_Override(g GoogleSp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSpannerDatabase.GoogleSpannerDatabaseEncryptionConfigOutputReference",
+		"@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseEncryptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

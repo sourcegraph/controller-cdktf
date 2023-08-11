@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.qldbStream.QldbStream",
+		"@cdktf/provider-aws.qldbStream.QldbStream",
 		reflect.TypeOf((*QldbStream)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,15 +76,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.qldbStream.QldbStreamConfig",
+		"@cdktf/provider-aws.qldbStream.QldbStreamConfig",
 		reflect.TypeOf((*QldbStreamConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.qldbStream.QldbStreamKinesisConfiguration",
+		"@cdktf/provider-aws.qldbStream.QldbStreamKinesisConfiguration",
 		reflect.TypeOf((*QldbStreamKinesisConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.qldbStream.QldbStreamKinesisConfigurationOutputReference",
+		"@cdktf/provider-aws.qldbStream.QldbStreamKinesisConfigurationOutputReference",
 		reflect.TypeOf((*QldbStreamKinesisConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregationEnabled", GoGetter: "AggregationEnabled"},

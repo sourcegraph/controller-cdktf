@@ -104,7 +104,7 @@ func NewDataAwsBackupFrameworkControlList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_DataAwsBackupFrameworkControlList{}
 
 	_jsii_.Create(
-		"aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsBackupFrameworkControlList_Override(d DataAwsBackupFrameworkContr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList",
+		"@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

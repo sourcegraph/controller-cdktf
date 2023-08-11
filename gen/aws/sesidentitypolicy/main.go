@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sesIdentityPolicy.SesIdentityPolicy",
+		"@cdktf/provider-aws.sesIdentityPolicy.SesIdentityPolicy",
 		reflect.TypeOf((*SesIdentityPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesIdentityPolicy.SesIdentityPolicyConfig",
+		"@cdktf/provider-aws.sesIdentityPolicy.SesIdentityPolicyConfig",
 		reflect.TypeOf((*SesIdentityPolicyConfig)(nil)).Elem(),
 	)
 }

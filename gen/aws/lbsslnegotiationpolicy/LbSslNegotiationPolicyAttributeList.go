@@ -116,7 +116,7 @@ func NewLbSslNegotiationPolicyAttributeList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_LbSslNegotiationPolicyAttributeList{}
 
 	_jsii_.Create(
-		"aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyAttributeList",
+		"@cdktf/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyAttributeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLbSslNegotiationPolicyAttributeList_Override(l LbSslNegotiationPolicyAtt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyAttributeList",
+		"@cdktf/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyAttributeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

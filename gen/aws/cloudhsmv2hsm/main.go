@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cloudhsmV2Hsm.CloudhsmV2Hsm",
+		"@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2Hsm",
 		reflect.TypeOf((*CloudhsmV2Hsm)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudhsmV2Hsm.CloudhsmV2HsmConfig",
+		"@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2HsmConfig",
 		reflect.TypeOf((*CloudhsmV2HsmConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudhsmV2Hsm.CloudhsmV2HsmTimeouts",
+		"@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2HsmTimeouts",
 		reflect.TypeOf((*CloudhsmV2HsmTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudhsmV2Hsm.CloudhsmV2HsmTimeoutsOutputReference",
+		"@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2HsmTimeoutsOutputReference",
 		reflect.TypeOf((*CloudhsmV2HsmTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -204,7 +204,7 @@ func NewComputeBackendServiceLogConfigOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_ComputeBackendServiceLogConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceLogConfigOutputReference",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeBackendServiceLogConfigOutputReference_Override(c ComputeBackendS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceLogConfigOutputReference",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

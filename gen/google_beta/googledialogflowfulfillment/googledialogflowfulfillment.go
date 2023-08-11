@@ -450,7 +450,7 @@ func NewGoogleDialogflowFulfillment(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleDialogflowFulfillment{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowFulfillment.GoogleDialogflowFulfillment",
+		"@cdktf/provider-google-beta.googleDialogflowFulfillment.GoogleDialogflowFulfillment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -463,7 +463,7 @@ func NewGoogleDialogflowFulfillment_Override(g GoogleDialogflowFulfillment, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowFulfillment.GoogleDialogflowFulfillment",
+		"@cdktf/provider-google-beta.googleDialogflowFulfillment.GoogleDialogflowFulfillment",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -607,7 +607,7 @@ func GoogleDialogflowFulfillment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDialogflowFulfillment.GoogleDialogflowFulfillment",
+		"@cdktf/provider-google-beta.googleDialogflowFulfillment.GoogleDialogflowFulfillment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -626,7 +626,7 @@ func GoogleDialogflowFulfillment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDialogflowFulfillment.GoogleDialogflowFulfillment",
+		"@cdktf/provider-google-beta.googleDialogflowFulfillment.GoogleDialogflowFulfillment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func GoogleDialogflowFulfillment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDialogflowFulfillment.GoogleDialogflowFulfillment",
+		"@cdktf/provider-google-beta.googleDialogflowFulfillment.GoogleDialogflowFulfillment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -658,7 +658,7 @@ func GoogleDialogflowFulfillment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDialogflowFulfillment.GoogleDialogflowFulfillment",
+		"@cdktf/provider-google-beta.googleDialogflowFulfillment.GoogleDialogflowFulfillment",
 		"tfResourceType",
 		&returns,
 	)

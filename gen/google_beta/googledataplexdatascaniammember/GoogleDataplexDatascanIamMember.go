@@ -448,7 +448,7 @@ func NewGoogleDataplexDatascanIamMember(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleDataplexDatascanIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascanIamMember.GoogleDataplexDatascanIamMember",
+		"@cdktf/provider-google-beta.googleDataplexDatascanIamMember.GoogleDataplexDatascanIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleDataplexDatascanIamMember_Override(g GoogleDataplexDatascanIamMemb
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascanIamMember.GoogleDataplexDatascanIamMember",
+		"@cdktf/provider-google-beta.googleDataplexDatascanIamMember.GoogleDataplexDatascanIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleDataplexDatascanIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexDatascanIamMember.GoogleDataplexDatascanIamMember",
+		"@cdktf/provider-google-beta.googleDataplexDatascanIamMember.GoogleDataplexDatascanIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleDataplexDatascanIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexDatascanIamMember.GoogleDataplexDatascanIamMember",
+		"@cdktf/provider-google-beta.googleDataplexDatascanIamMember.GoogleDataplexDatascanIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleDataplexDatascanIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexDatascanIamMember.GoogleDataplexDatascanIamMember",
+		"@cdktf/provider-google-beta.googleDataplexDatascanIamMember.GoogleDataplexDatascanIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleDataplexDatascanIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataplexDatascanIamMember.GoogleDataplexDatascanIamMember",
+		"@cdktf/provider-google-beta.googleDataplexDatascanIamMember.GoogleDataplexDatascanIamMember",
 		"tfResourceType",
 		&returns,
 	)

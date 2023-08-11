@@ -420,7 +420,7 @@ func NewMonitoringUptimeCheckConfigHttpCheckOutputReference(terraformResource cd
 	j := jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference{}
 
 	_jsii_.Create(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigHttpCheckOutputReference",
+		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigHttpCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -432,7 +432,7 @@ func NewMonitoringUptimeCheckConfigHttpCheckOutputReference_Override(m Monitorin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigHttpCheckOutputReference",
+		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigHttpCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

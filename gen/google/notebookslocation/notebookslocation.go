@@ -379,7 +379,7 @@ func NewNotebooksLocation(scope constructs.Construct, id *string, config *Notebo
 	j := jsiiProxy_NotebooksLocation{}
 
 	_jsii_.Create(
-		"google.notebooksLocation.NotebooksLocation",
+		"@cdktf/provider-google.notebooksLocation.NotebooksLocation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -392,7 +392,7 @@ func NewNotebooksLocation_Override(n NotebooksLocation, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.notebooksLocation.NotebooksLocation",
+		"@cdktf/provider-google.notebooksLocation.NotebooksLocation",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -525,7 +525,7 @@ func NotebooksLocation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.notebooksLocation.NotebooksLocation",
+		"@cdktf/provider-google.notebooksLocation.NotebooksLocation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -544,7 +544,7 @@ func NotebooksLocation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.notebooksLocation.NotebooksLocation",
+		"@cdktf/provider-google.notebooksLocation.NotebooksLocation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func NotebooksLocation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.notebooksLocation.NotebooksLocation",
+		"@cdktf/provider-google.notebooksLocation.NotebooksLocation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func NotebooksLocation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.notebooksLocation.NotebooksLocation",
+		"@cdktf/provider-google.notebooksLocation.NotebooksLocation",
 		"tfResourceType",
 		&returns,
 	)

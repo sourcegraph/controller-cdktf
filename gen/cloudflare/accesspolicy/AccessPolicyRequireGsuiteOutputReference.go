@@ -204,7 +204,7 @@ func NewAccessPolicyRequireGsuiteOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_AccessPolicyRequireGsuiteOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyRequireGsuiteOutputReference",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireGsuiteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAccessPolicyRequireGsuiteOutputReference_Override(a AccessPolicyRequireG
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyRequireGsuiteOutputReference",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireGsuiteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

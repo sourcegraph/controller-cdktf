@@ -377,7 +377,7 @@ func NewApigeeEnvgroupAttachment(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_ApigeeEnvgroupAttachment{}
 
 	_jsii_.Create(
-		"google.apigeeEnvgroupAttachment.ApigeeEnvgroupAttachment",
+		"@cdktf/provider-google.apigeeEnvgroupAttachment.ApigeeEnvgroupAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewApigeeEnvgroupAttachment_Override(a ApigeeEnvgroupAttachment, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeEnvgroupAttachment.ApigeeEnvgroupAttachment",
+		"@cdktf/provider-google.apigeeEnvgroupAttachment.ApigeeEnvgroupAttachment",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -523,7 +523,7 @@ func ApigeeEnvgroupAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeEnvgroupAttachment.ApigeeEnvgroupAttachment",
+		"@cdktf/provider-google.apigeeEnvgroupAttachment.ApigeeEnvgroupAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func ApigeeEnvgroupAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeEnvgroupAttachment.ApigeeEnvgroupAttachment",
+		"@cdktf/provider-google.apigeeEnvgroupAttachment.ApigeeEnvgroupAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func ApigeeEnvgroupAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeEnvgroupAttachment.ApigeeEnvgroupAttachment",
+		"@cdktf/provider-google.apigeeEnvgroupAttachment.ApigeeEnvgroupAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func ApigeeEnvgroupAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.apigeeEnvgroupAttachment.ApigeeEnvgroupAttachment",
+		"@cdktf/provider-google.apigeeEnvgroupAttachment.ApigeeEnvgroupAttachment",
 		"tfResourceType",
 		&returns,
 	)

@@ -189,7 +189,7 @@ func NewAcmCertificateRenewalSummaryOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_AcmCertificateRenewalSummaryOutputReference{}
 
 	_jsii_.Create(
-		"aws.acmCertificate.AcmCertificateRenewalSummaryOutputReference",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificateRenewalSummaryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewAcmCertificateRenewalSummaryOutputReference_Override(a AcmCertificateRen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.acmCertificate.AcmCertificateRenewalSummaryOutputReference",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificateRenewalSummaryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

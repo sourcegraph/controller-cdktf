@@ -104,7 +104,7 @@ func NewDataGoogleRedisInstancePersistenceConfigList(terraformResource cdktf.IIn
 	j := jsiiProxy_DataGoogleRedisInstancePersistenceConfigList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleRedisInstance.DataGoogleRedisInstancePersistenceConfigList",
+		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstancePersistenceConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleRedisInstancePersistenceConfigList_Override(d DataGoogleRedisI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleRedisInstance.DataGoogleRedisInstancePersistenceConfigList",
+		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstancePersistenceConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

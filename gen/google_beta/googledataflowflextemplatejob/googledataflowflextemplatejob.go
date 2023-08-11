@@ -903,7 +903,7 @@ func NewGoogleDataflowFlexTemplateJob(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleDataflowFlexTemplateJob{}
 
 	_jsii_.Create(
-		"google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJob",
+		"@cdktf/provider-google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJob",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -916,7 +916,7 @@ func NewGoogleDataflowFlexTemplateJob_Override(g GoogleDataflowFlexTemplateJob, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJob",
+		"@cdktf/provider-google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJob",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1291,7 +1291,7 @@ func GoogleDataflowFlexTemplateJob_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJob",
+		"@cdktf/provider-google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJob",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1310,7 +1310,7 @@ func GoogleDataflowFlexTemplateJob_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJob",
+		"@cdktf/provider-google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJob",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1329,7 +1329,7 @@ func GoogleDataflowFlexTemplateJob_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJob",
+		"@cdktf/provider-google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJob",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1342,7 +1342,7 @@ func GoogleDataflowFlexTemplateJob_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJob",
+		"@cdktf/provider-google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJob",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewComputeBackendServiceBackendList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_ComputeBackendServiceBackendList{}
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceBackendList",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceBackendList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeBackendServiceBackendList_Override(c ComputeBackendServiceBackend
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceBackendList",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceBackendList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

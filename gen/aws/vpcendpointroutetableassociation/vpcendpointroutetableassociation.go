@@ -342,7 +342,7 @@ func NewVpcEndpointRouteTableAssociation(scope constructs.Construct, id *string,
 	j := jsiiProxy_VpcEndpointRouteTableAssociation{}
 
 	_jsii_.Create(
-		"aws.vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation",
+		"@cdktf/provider-aws.vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewVpcEndpointRouteTableAssociation_Override(v VpcEndpointRouteTableAssocia
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation",
+		"@cdktf/provider-aws.vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -488,7 +488,7 @@ func VpcEndpointRouteTableAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation",
+		"@cdktf/provider-aws.vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func VpcEndpointRouteTableAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation",
+		"@cdktf/provider-aws.vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func VpcEndpointRouteTableAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation",
+		"@cdktf/provider-aws.vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func VpcEndpointRouteTableAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation",
+		"@cdktf/provider-aws.vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation",
 		"tfResourceType",
 		&returns,
 	)

@@ -179,7 +179,7 @@ func NewDatasyncLocationNfsOnPremConfigOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_DatasyncLocationNfsOnPremConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.datasyncLocationNfs.DatasyncLocationNfsOnPremConfigOutputReference",
+		"@cdktf/provider-aws.datasyncLocationNfs.DatasyncLocationNfsOnPremConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDatasyncLocationNfsOnPremConfigOutputReference_Override(d DatasyncLocati
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datasyncLocationNfs.DatasyncLocationNfsOnPremConfigOutputReference",
+		"@cdktf/provider-aws.datasyncLocationNfs.DatasyncLocationNfsOnPremConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

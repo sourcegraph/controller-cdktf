@@ -224,7 +224,7 @@ func NewAmplifyDomainAssociationSubDomainOutputReference(terraformResource cdktf
 	j := jsiiProxy_AmplifyDomainAssociationSubDomainOutputReference{}
 
 	_jsii_.Create(
-		"aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomainOutputReference",
+		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomainOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -236,7 +236,7 @@ func NewAmplifyDomainAssociationSubDomainOutputReference_Override(a AmplifyDomai
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomainOutputReference",
+		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomainOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

@@ -116,7 +116,7 @@ func NewIotTopicRuleKafkaList(terraformResource cdktf.IInterpolatingParent, terr
 	j := jsiiProxy_IotTopicRuleKafkaList{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleKafkaList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewIotTopicRuleKafkaList_Override(i IotTopicRuleKafkaList, terraformResourc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleKafkaList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

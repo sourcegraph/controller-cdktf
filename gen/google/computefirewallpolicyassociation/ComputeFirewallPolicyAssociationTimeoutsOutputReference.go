@@ -204,7 +204,7 @@ func NewComputeFirewallPolicyAssociationTimeoutsOutputReference(terraformResourc
 	j := jsiiProxy_ComputeFirewallPolicyAssociationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationTimeoutsOutputReference",
+		"@cdktf/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeFirewallPolicyAssociationTimeoutsOutputReference_Override(c Compu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationTimeoutsOutputReference",
+		"@cdktf/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

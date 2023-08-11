@@ -178,7 +178,7 @@ func NewVertexAiIndexDeployedIndexesOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_VertexAiIndexDeployedIndexesOutputReference{}
 
 	_jsii_.Create(
-		"google.vertexAiIndex.VertexAiIndexDeployedIndexesOutputReference",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexDeployedIndexesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewVertexAiIndexDeployedIndexesOutputReference_Override(v VertexAiIndexDepl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiIndex.VertexAiIndexDeployedIndexesOutputReference",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexDeployedIndexesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		v,
 	)

@@ -424,7 +424,7 @@ func NewDataexchangeDataSet(scope constructs.Construct, id *string, config *Data
 	j := jsiiProxy_DataexchangeDataSet{}
 
 	_jsii_.Create(
-		"aws.dataexchangeDataSet.DataexchangeDataSet",
+		"@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewDataexchangeDataSet_Override(d DataexchangeDataSet, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataexchangeDataSet.DataexchangeDataSet",
+		"@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -603,7 +603,7 @@ func DataexchangeDataSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataexchangeDataSet.DataexchangeDataSet",
+		"@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func DataexchangeDataSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataexchangeDataSet.DataexchangeDataSet",
+		"@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -641,7 +641,7 @@ func DataexchangeDataSet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataexchangeDataSet.DataexchangeDataSet",
+		"@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func DataexchangeDataSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataexchangeDataSet.DataexchangeDataSet",
+		"@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet",
 		"tfResourceType",
 		&returns,
 	)

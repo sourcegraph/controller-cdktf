@@ -324,7 +324,7 @@ func NewComputeInstanceSchedulingOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_ComputeInstanceSchedulingOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceSchedulingOutputReference",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceSchedulingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewComputeInstanceSchedulingOutputReference_Override(c ComputeInstanceSched
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceSchedulingOutputReference",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceSchedulingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -391,7 +391,7 @@ func NewGoogleProjectUsageExportBucket(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleProjectUsageExportBucket{}
 
 	_jsii_.Create(
-		"google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucket",
+		"@cdktf/provider-google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucket",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -404,7 +404,7 @@ func NewGoogleProjectUsageExportBucket_Override(g GoogleProjectUsageExportBucket
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucket",
+		"@cdktf/provider-google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucket",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -548,7 +548,7 @@ func GoogleProjectUsageExportBucket_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucket",
+		"@cdktf/provider-google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucket",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -567,7 +567,7 @@ func GoogleProjectUsageExportBucket_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucket",
+		"@cdktf/provider-google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucket",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -586,7 +586,7 @@ func GoogleProjectUsageExportBucket_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucket",
+		"@cdktf/provider-google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucket",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +599,7 @@ func GoogleProjectUsageExportBucket_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucket",
+		"@cdktf/provider-google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucket",
 		"tfResourceType",
 		&returns,
 	)

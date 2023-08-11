@@ -367,7 +367,7 @@ func NewElasticsearchDomainSamlOptions(scope constructs.Construct, id *string, c
 	j := jsiiProxy_ElasticsearchDomainSamlOptions{}
 
 	_jsii_.Create(
-		"aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions",
+		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewElasticsearchDomainSamlOptions_Override(e ElasticsearchDomainSamlOptions
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions",
+		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -502,7 +502,7 @@ func ElasticsearchDomainSamlOptions_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions",
+		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -521,7 +521,7 @@ func ElasticsearchDomainSamlOptions_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions",
+		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func ElasticsearchDomainSamlOptions_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions",
+		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func ElasticsearchDomainSamlOptions_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions",
+		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions",
 		"tfResourceType",
 		&returns,
 	)

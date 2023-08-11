@@ -228,7 +228,7 @@ func NewIdentitystoreUserEmailsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_IdentitystoreUserEmailsOutputReference{}
 
 	_jsii_.Create(
-		"aws.identitystoreUser.IdentitystoreUserEmailsOutputReference",
+		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserEmailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewIdentitystoreUserEmailsOutputReference_Override(i IdentitystoreUserEmail
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.identitystoreUser.IdentitystoreUserEmailsOutputReference",
+		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserEmailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

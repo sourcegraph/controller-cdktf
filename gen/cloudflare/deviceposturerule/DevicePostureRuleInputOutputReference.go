@@ -636,7 +636,7 @@ func NewDevicePostureRuleInputOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DevicePostureRuleInputOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference",
+		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -648,7 +648,7 @@ func NewDevicePostureRuleInputOutputReference_Override(d DevicePostureRuleInputO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference",
+		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

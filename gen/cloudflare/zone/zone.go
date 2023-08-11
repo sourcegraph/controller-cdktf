@@ -493,7 +493,7 @@ func NewZone(scope constructs.Construct, id *string, config *ZoneConfig) Zone {
 	j := jsiiProxy_Zone{}
 
 	_jsii_.Create(
-		"cloudflare.zone.Zone",
+		"@cdktf/provider-cloudflare.zone.Zone",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -506,7 +506,7 @@ func NewZone_Override(z Zone, scope constructs.Construct, id *string, config *Zo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.zone.Zone",
+		"@cdktf/provider-cloudflare.zone.Zone",
 		[]interface{}{scope, id, config},
 		z,
 	)
@@ -683,7 +683,7 @@ func Zone_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.zone.Zone",
+		"@cdktf/provider-cloudflare.zone.Zone",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func Zone_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.zone.Zone",
+		"@cdktf/provider-cloudflare.zone.Zone",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -721,7 +721,7 @@ func Zone_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.zone.Zone",
+		"@cdktf/provider-cloudflare.zone.Zone",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -734,7 +734,7 @@ func Zone_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.zone.Zone",
+		"@cdktf/provider-cloudflare.zone.Zone",
 		"tfResourceType",
 		&returns,
 	)

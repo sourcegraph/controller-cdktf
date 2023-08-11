@@ -104,7 +104,7 @@ func NewDataGoogleMonitoringAppEngineServiceTelemetryList(terraformResource cdkt
 	j := jsiiProxy_DataGoogleMonitoringAppEngineServiceTelemetryList{}
 
 	_jsii_.Create(
-		"google.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineServiceTelemetryList",
+		"@cdktf/provider-google.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineServiceTelemetryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleMonitoringAppEngineServiceTelemetryList_Override(d DataGoogleM
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineServiceTelemetryList",
+		"@cdktf/provider-google.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineServiceTelemetryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

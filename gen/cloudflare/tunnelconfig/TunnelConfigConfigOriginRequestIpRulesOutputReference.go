@@ -228,7 +228,7 @@ func NewTunnelConfigConfigOriginRequestIpRulesOutputReference(terraformResource 
 	j := jsiiProxy_TunnelConfigConfigOriginRequestIpRulesOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRulesOutputReference",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewTunnelConfigConfigOriginRequestIpRulesOutputReference_Override(t TunnelC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRulesOutputReference",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		t,
 	)

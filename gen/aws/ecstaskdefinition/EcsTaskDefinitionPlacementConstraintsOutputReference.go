@@ -203,7 +203,7 @@ func NewEcsTaskDefinitionPlacementConstraintsOutputReference(terraformResource c
 	j := jsiiProxy_EcsTaskDefinitionPlacementConstraintsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewEcsTaskDefinitionPlacementConstraintsOutputReference_Override(e EcsTaskD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

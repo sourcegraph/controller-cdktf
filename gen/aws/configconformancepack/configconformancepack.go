@@ -450,7 +450,7 @@ func NewConfigConformancePack(scope constructs.Construct, id *string, config *Co
 	j := jsiiProxy_ConfigConformancePack{}
 
 	_jsii_.Create(
-		"aws.configConformancePack.ConfigConformancePack",
+		"@cdktf/provider-aws.configConformancePack.ConfigConformancePack",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -463,7 +463,7 @@ func NewConfigConformancePack_Override(c ConfigConformancePack, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configConformancePack.ConfigConformancePack",
+		"@cdktf/provider-aws.configConformancePack.ConfigConformancePack",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -629,7 +629,7 @@ func ConfigConformancePack_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configConformancePack.ConfigConformancePack",
+		"@cdktf/provider-aws.configConformancePack.ConfigConformancePack",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -648,7 +648,7 @@ func ConfigConformancePack_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configConformancePack.ConfigConformancePack",
+		"@cdktf/provider-aws.configConformancePack.ConfigConformancePack",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func ConfigConformancePack_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configConformancePack.ConfigConformancePack",
+		"@cdktf/provider-aws.configConformancePack.ConfigConformancePack",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func ConfigConformancePack_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.configConformancePack.ConfigConformancePack",
+		"@cdktf/provider-aws.configConformancePack.ConfigConformancePack",
 		"tfResourceType",
 		&returns,
 	)

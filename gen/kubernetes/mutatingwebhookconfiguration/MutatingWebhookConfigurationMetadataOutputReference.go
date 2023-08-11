@@ -285,7 +285,7 @@ func NewMutatingWebhookConfigurationMetadataOutputReference(terraformResource cd
 	j := jsiiProxy_MutatingWebhookConfigurationMetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.mutatingWebhookConfiguration.MutatingWebhookConfigurationMetadataOutputReference",
+		"@cdktf/provider-kubernetes.mutatingWebhookConfiguration.MutatingWebhookConfigurationMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -297,7 +297,7 @@ func NewMutatingWebhookConfigurationMetadataOutputReference_Override(m MutatingW
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.mutatingWebhookConfiguration.MutatingWebhookConfigurationMetadataOutputReference",
+		"@cdktf/provider-kubernetes.mutatingWebhookConfiguration.MutatingWebhookConfigurationMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

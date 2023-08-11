@@ -228,7 +228,7 @@ func NewFsxOpenzfsVolumeTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_FsxOpenzfsVolumeTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsVolume.FsxOpenzfsVolumeTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewFsxOpenzfsVolumeTimeoutsOutputReference_Override(f FsxOpenzfsVolumeTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsVolume.FsxOpenzfsVolumeTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

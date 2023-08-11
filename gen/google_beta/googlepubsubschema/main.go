@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googlePubsubSchema.GooglePubsubSchema",
+		"@cdktf/provider-google-beta.googlePubsubSchema.GooglePubsubSchema",
 		reflect.TypeOf((*GooglePubsubSchema)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePubsubSchema.GooglePubsubSchemaConfig",
+		"@cdktf/provider-google-beta.googlePubsubSchema.GooglePubsubSchemaConfig",
 		reflect.TypeOf((*GooglePubsubSchemaConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePubsubSchema.GooglePubsubSchemaTimeouts",
+		"@cdktf/provider-google-beta.googlePubsubSchema.GooglePubsubSchemaTimeouts",
 		reflect.TypeOf((*GooglePubsubSchemaTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePubsubSchema.GooglePubsubSchemaTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubSchema.GooglePubsubSchemaTimeoutsOutputReference",
 		reflect.TypeOf((*GooglePubsubSchemaTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

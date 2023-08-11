@@ -104,7 +104,7 @@ func NewDataAwsEksClusterIdentityList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_DataAwsEksClusterIdentityList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEksCluster.DataAwsEksClusterIdentityList",
+		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterIdentityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEksClusterIdentityList_Override(d DataAwsEksClusterIdentityList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEksCluster.DataAwsEksClusterIdentityList",
+		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterIdentityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

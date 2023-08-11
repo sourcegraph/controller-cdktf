@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.networkAclRule.NetworkAclRule",
+		"@cdktf/provider-aws.networkAclRule.NetworkAclRule",
 		reflect.TypeOf((*NetworkAclRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkAclRule.NetworkAclRuleConfig",
+		"@cdktf/provider-aws.networkAclRule.NetworkAclRuleConfig",
 		reflect.TypeOf((*NetworkAclRuleConfig)(nil)).Elem(),
 	)
 }

@@ -276,7 +276,7 @@ func NewCodebuildProjectFileSystemLocationsOutputReference(terraformResource cdk
 	j := jsiiProxy_CodebuildProjectFileSystemLocationsOutputReference{}
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectFileSystemLocationsOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectFileSystemLocationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewCodebuildProjectFileSystemLocationsOutputReference_Override(c CodebuildP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectFileSystemLocationsOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectFileSystemLocationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

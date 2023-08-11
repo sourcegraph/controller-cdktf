@@ -424,7 +424,7 @@ func NewGoogleComputeSnapshotIamBinding(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleComputeSnapshotIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeSnapshotIamBinding.GoogleComputeSnapshotIamBinding",
+		"@cdktf/provider-google-beta.googleComputeSnapshotIamBinding.GoogleComputeSnapshotIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleComputeSnapshotIamBinding_Override(g GoogleComputeSnapshotIamBindi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeSnapshotIamBinding.GoogleComputeSnapshotIamBinding",
+		"@cdktf/provider-google-beta.googleComputeSnapshotIamBinding.GoogleComputeSnapshotIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleComputeSnapshotIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSnapshotIamBinding.GoogleComputeSnapshotIamBinding",
+		"@cdktf/provider-google-beta.googleComputeSnapshotIamBinding.GoogleComputeSnapshotIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleComputeSnapshotIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSnapshotIamBinding.GoogleComputeSnapshotIamBinding",
+		"@cdktf/provider-google-beta.googleComputeSnapshotIamBinding.GoogleComputeSnapshotIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleComputeSnapshotIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSnapshotIamBinding.GoogleComputeSnapshotIamBinding",
+		"@cdktf/provider-google-beta.googleComputeSnapshotIamBinding.GoogleComputeSnapshotIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleComputeSnapshotIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeSnapshotIamBinding.GoogleComputeSnapshotIamBinding",
+		"@cdktf/provider-google-beta.googleComputeSnapshotIamBinding.GoogleComputeSnapshotIamBinding",
 		"tfResourceType",
 		&returns,
 	)

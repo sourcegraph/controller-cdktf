@@ -239,7 +239,7 @@ func NewGoogleComputeDiskSourceImageEncryptionKeyOutputReference(terraformResour
 	j := jsiiProxy_GoogleComputeDiskSourceImageEncryptionKeyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeDisk.GoogleComputeDiskSourceImageEncryptionKeyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskSourceImageEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -251,7 +251,7 @@ func NewGoogleComputeDiskSourceImageEncryptionKeyOutputReference_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeDisk.GoogleComputeDiskSourceImageEncryptionKeyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskSourceImageEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

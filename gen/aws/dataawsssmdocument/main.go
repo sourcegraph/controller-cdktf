@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsSsmDocument.DataAwsSsmDocument",
+		"@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument",
 		reflect.TypeOf((*DataAwsSsmDocument)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig",
+		"@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig",
 		reflect.TypeOf((*DataAwsSsmDocumentConfig)(nil)).Elem(),
 	)
 }

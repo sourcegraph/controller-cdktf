@@ -467,7 +467,7 @@ func NewGoogleStorageObjectAccessControl(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleStorageObjectAccessControl{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageObjectAccessControl.GoogleStorageObjectAccessControl",
+		"@cdktf/provider-google-beta.googleStorageObjectAccessControl.GoogleStorageObjectAccessControl",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -480,7 +480,7 @@ func NewGoogleStorageObjectAccessControl_Override(g GoogleStorageObjectAccessCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageObjectAccessControl.GoogleStorageObjectAccessControl",
+		"@cdktf/provider-google-beta.googleStorageObjectAccessControl.GoogleStorageObjectAccessControl",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -635,7 +635,7 @@ func GoogleStorageObjectAccessControl_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageObjectAccessControl.GoogleStorageObjectAccessControl",
+		"@cdktf/provider-google-beta.googleStorageObjectAccessControl.GoogleStorageObjectAccessControl",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func GoogleStorageObjectAccessControl_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageObjectAccessControl.GoogleStorageObjectAccessControl",
+		"@cdktf/provider-google-beta.googleStorageObjectAccessControl.GoogleStorageObjectAccessControl",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -673,7 +673,7 @@ func GoogleStorageObjectAccessControl_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageObjectAccessControl.GoogleStorageObjectAccessControl",
+		"@cdktf/provider-google-beta.googleStorageObjectAccessControl.GoogleStorageObjectAccessControl",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -686,7 +686,7 @@ func GoogleStorageObjectAccessControl_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleStorageObjectAccessControl.GoogleStorageObjectAccessControl",
+		"@cdktf/provider-google-beta.googleStorageObjectAccessControl.GoogleStorageObjectAccessControl",
 		"tfResourceType",
 		&returns,
 	)

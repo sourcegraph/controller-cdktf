@@ -460,7 +460,7 @@ func NewPlacementGroup(scope constructs.Construct, id *string, config *Placement
 	j := jsiiProxy_PlacementGroup{}
 
 	_jsii_.Create(
-		"aws.placementGroup.PlacementGroup",
+		"@cdktf/provider-aws.placementGroup.PlacementGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -473,7 +473,7 @@ func NewPlacementGroup_Override(p PlacementGroup, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.placementGroup.PlacementGroup",
+		"@cdktf/provider-aws.placementGroup.PlacementGroup",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -650,7 +650,7 @@ func PlacementGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.placementGroup.PlacementGroup",
+		"@cdktf/provider-aws.placementGroup.PlacementGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func PlacementGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.placementGroup.PlacementGroup",
+		"@cdktf/provider-aws.placementGroup.PlacementGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func PlacementGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.placementGroup.PlacementGroup",
+		"@cdktf/provider-aws.placementGroup.PlacementGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func PlacementGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.placementGroup.PlacementGroup",
+		"@cdktf/provider-aws.placementGroup.PlacementGroup",
 		"tfResourceType",
 		&returns,
 	)

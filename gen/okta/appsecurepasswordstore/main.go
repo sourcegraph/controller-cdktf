@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.appSecurePasswordStore.AppSecurePasswordStore",
+		"@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStore",
 		reflect.TypeOf((*AppSecurePasswordStore)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrl", GoGetter: "AccessibilityErrorRedirectUrl"},
@@ -158,15 +158,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.appSecurePasswordStore.AppSecurePasswordStoreConfig",
+		"@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreConfig",
 		reflect.TypeOf((*AppSecurePasswordStoreConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.appSecurePasswordStore.AppSecurePasswordStoreTimeouts",
+		"@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreTimeouts",
 		reflect.TypeOf((*AppSecurePasswordStoreTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.appSecurePasswordStore.AppSecurePasswordStoreTimeoutsOutputReference",
+		"@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreTimeoutsOutputReference",
 		reflect.TypeOf((*AppSecurePasswordStoreTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -207,11 +207,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.appSecurePasswordStore.AppSecurePasswordStoreUsers",
+		"@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreUsers",
 		reflect.TypeOf((*AppSecurePasswordStoreUsers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.appSecurePasswordStore.AppSecurePasswordStoreUsersList",
+		"@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreUsersList",
 		reflect.TypeOf((*AppSecurePasswordStoreUsersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -232,7 +232,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.appSecurePasswordStore.AppSecurePasswordStoreUsersOutputReference",
+		"@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreUsersOutputReference",
 		reflect.TypeOf((*AppSecurePasswordStoreUsersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

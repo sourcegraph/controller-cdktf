@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeSubnetworkIamBinding.ComputeSubnetworkIamBinding",
+		"@cdktf/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBinding",
 		reflect.TypeOf((*ComputeSubnetworkIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingCondition",
+		"@cdktf/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingCondition",
 		reflect.TypeOf((*ComputeSubnetworkIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConditionOutputReference",
+		"@cdktf/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConditionOutputReference",
 		reflect.TypeOf((*ComputeSubnetworkIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConfig",
+		"@cdktf/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConfig",
 		reflect.TypeOf((*ComputeSubnetworkIamBindingConfig)(nil)).Elem(),
 	)
 }

@@ -116,7 +116,7 @@ func NewCustomHostnameSslList(terraformResource cdktf.IInterpolatingParent, terr
 	j := jsiiProxy_CustomHostnameSslList{}
 
 	_jsii_.Create(
-		"cloudflare.customHostname.CustomHostnameSslList",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCustomHostnameSslList_Override(c CustomHostnameSslList, terraformResourc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.customHostname.CustomHostnameSslList",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

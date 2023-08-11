@@ -302,7 +302,7 @@ func NewDataOktaUserSecurityQuestions(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataOktaUserSecurityQuestions{}
 
 	_jsii_.Create(
-		"okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestions",
+		"@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestions",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataOktaUserSecurityQuestions_Override(d DataOktaUserSecurityQuestions, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestions",
+		"@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestions",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataOktaUserSecurityQuestions_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestions",
+		"@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestions",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataOktaUserSecurityQuestions_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestions",
+		"@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestions",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataOktaUserSecurityQuestions_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestions",
+		"@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestions",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataOktaUserSecurityQuestions_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestions",
+		"@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestions",
 		"tfResourceType",
 		&returns,
 	)

@@ -299,7 +299,7 @@ func NewSagemakerModelPrimaryContainerOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_SagemakerModelPrimaryContainerOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerModel.SagemakerModelPrimaryContainerOutputReference",
+		"@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewSagemakerModelPrimaryContainerOutputReference_Override(s SagemakerModelP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerModel.SagemakerModelPrimaryContainerOutputReference",
+		"@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

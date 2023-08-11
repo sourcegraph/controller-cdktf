@@ -343,7 +343,7 @@ func NewGlueResourcePolicy(scope constructs.Construct, id *string, config *GlueR
 	j := jsiiProxy_GlueResourcePolicy{}
 
 	_jsii_.Create(
-		"aws.glueResourcePolicy.GlueResourcePolicy",
+		"@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewGlueResourcePolicy_Override(g GlueResourcePolicy, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueResourcePolicy.GlueResourcePolicy",
+		"@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -489,7 +489,7 @@ func GlueResourcePolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueResourcePolicy.GlueResourcePolicy",
+		"@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func GlueResourcePolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueResourcePolicy.GlueResourcePolicy",
+		"@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func GlueResourcePolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueResourcePolicy.GlueResourcePolicy",
+		"@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func GlueResourcePolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.glueResourcePolicy.GlueResourcePolicy",
+		"@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy",
 		"tfResourceType",
 		&returns,
 	)

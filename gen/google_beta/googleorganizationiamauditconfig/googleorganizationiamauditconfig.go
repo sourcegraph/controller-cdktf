@@ -376,7 +376,7 @@ func NewGoogleOrganizationIamAuditConfig(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleOrganizationIamAuditConfig{}
 
 	_jsii_.Create(
-		"google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfig",
+		"@cdktf/provider-google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -389,7 +389,7 @@ func NewGoogleOrganizationIamAuditConfig_Override(g GoogleOrganizationIamAuditCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfig",
+		"@cdktf/provider-google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfig",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -522,7 +522,7 @@ func GoogleOrganizationIamAuditConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfig",
+		"@cdktf/provider-google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func GoogleOrganizationIamAuditConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfig",
+		"@cdktf/provider-google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func GoogleOrganizationIamAuditConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfig",
+		"@cdktf/provider-google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func GoogleOrganizationIamAuditConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfig",
+		"@cdktf/provider-google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfig",
 		"tfResourceType",
 		&returns,
 	)

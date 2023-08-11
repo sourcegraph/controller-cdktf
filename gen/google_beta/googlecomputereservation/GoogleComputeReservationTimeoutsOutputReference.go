@@ -228,7 +228,7 @@ func NewGoogleComputeReservationTimeoutsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_GoogleComputeReservationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeReservation.GoogleComputeReservationTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeReservationTimeoutsOutputReference_Override(g GoogleCompute
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeReservation.GoogleComputeReservationTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

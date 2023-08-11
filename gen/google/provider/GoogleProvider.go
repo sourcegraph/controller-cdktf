@@ -3094,7 +3094,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	j := jsiiProxy_GoogleProvider{}
 
 	_jsii_.Create(
-		"google.provider.GoogleProvider",
+		"@cdktf/provider-google.provider.GoogleProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -3107,7 +3107,7 @@ func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.provider.GoogleProvider",
+		"@cdktf/provider-google.provider.GoogleProvider",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -4121,7 +4121,7 @@ func GoogleProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.provider.GoogleProvider",
+		"@cdktf/provider-google.provider.GoogleProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -4140,7 +4140,7 @@ func GoogleProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.provider.GoogleProvider",
+		"@cdktf/provider-google.provider.GoogleProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -4159,7 +4159,7 @@ func GoogleProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.provider.GoogleProvider",
+		"@cdktf/provider-google.provider.GoogleProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -4172,7 +4172,7 @@ func GoogleProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.provider.GoogleProvider",
+		"@cdktf/provider-google.provider.GoogleProvider",
 		"tfResourceType",
 		&returns,
 	)

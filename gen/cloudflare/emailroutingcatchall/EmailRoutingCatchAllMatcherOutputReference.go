@@ -179,7 +179,7 @@ func NewEmailRoutingCatchAllMatcherOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_EmailRoutingCatchAllMatcherOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllMatcherOutputReference",
+		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllMatcherOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewEmailRoutingCatchAllMatcherOutputReference_Override(e EmailRoutingCatchA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllMatcherOutputReference",
+		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllMatcherOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

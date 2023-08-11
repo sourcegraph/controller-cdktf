@@ -400,7 +400,7 @@ func NewFolderIamMember(scope constructs.Construct, id *string, config *FolderIa
 	j := jsiiProxy_FolderIamMember{}
 
 	_jsii_.Create(
-		"google.folderIamMember.FolderIamMember",
+		"@cdktf/provider-google.folderIamMember.FolderIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewFolderIamMember_Override(f FolderIamMember, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.folderIamMember.FolderIamMember",
+		"@cdktf/provider-google.folderIamMember.FolderIamMember",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -557,7 +557,7 @@ func FolderIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.folderIamMember.FolderIamMember",
+		"@cdktf/provider-google.folderIamMember.FolderIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func FolderIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.folderIamMember.FolderIamMember",
+		"@cdktf/provider-google.folderIamMember.FolderIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func FolderIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.folderIamMember.FolderIamMember",
+		"@cdktf/provider-google.folderIamMember.FolderIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func FolderIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.folderIamMember.FolderIamMember",
+		"@cdktf/provider-google.folderIamMember.FolderIamMember",
 		"tfResourceType",
 		&returns,
 	)

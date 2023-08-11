@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.acmpcaCertificate.AcmpcaCertificate",
+		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate",
 		reflect.TypeOf((*AcmpcaCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.acmpcaCertificate.AcmpcaCertificateConfig",
+		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificateConfig",
 		reflect.TypeOf((*AcmpcaCertificateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.acmpcaCertificate.AcmpcaCertificateValidity",
+		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificateValidity",
 		reflect.TypeOf((*AcmpcaCertificateValidity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.acmpcaCertificate.AcmpcaCertificateValidityOutputReference",
+		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificateValidityOutputReference",
 		reflect.TypeOf((*AcmpcaCertificateValidityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

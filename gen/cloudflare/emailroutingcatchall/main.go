@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll",
+		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll",
 		reflect.TypeOf((*EmailRoutingCatchAll)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -69,11 +69,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllAction",
+		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllAction",
 		reflect.TypeOf((*EmailRoutingCatchAllAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActionList",
+		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActionList",
 		reflect.TypeOf((*EmailRoutingCatchAllActionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -94,7 +94,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActionOutputReference",
+		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActionOutputReference",
 		reflect.TypeOf((*EmailRoutingCatchAllActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -130,15 +130,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllConfig",
+		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllConfig",
 		reflect.TypeOf((*EmailRoutingCatchAllConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllMatcher",
+		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllMatcher",
 		reflect.TypeOf((*EmailRoutingCatchAllMatcher)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllMatcherList",
+		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllMatcherList",
 		reflect.TypeOf((*EmailRoutingCatchAllMatcherList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -159,7 +159,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllMatcherOutputReference",
+		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllMatcherOutputReference",
 		reflect.TypeOf((*EmailRoutingCatchAllMatcherOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

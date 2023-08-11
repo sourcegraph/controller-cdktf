@@ -276,7 +276,7 @@ func NewComputeSubnetworkLogConfigOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_ComputeSubnetworkLogConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference",
+		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewComputeSubnetworkLogConfigOutputReference_Override(c ComputeSubnetworkLo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference",
+		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

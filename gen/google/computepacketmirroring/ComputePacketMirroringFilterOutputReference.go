@@ -228,7 +228,7 @@ func NewComputePacketMirroringFilterOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_ComputePacketMirroringFilterOutputReference{}
 
 	_jsii_.Create(
-		"google.computePacketMirroring.ComputePacketMirroringFilterOutputReference",
+		"@cdktf/provider-google.computePacketMirroring.ComputePacketMirroringFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputePacketMirroringFilterOutputReference_Override(c ComputePacketMirr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computePacketMirroring.ComputePacketMirroringFilterOutputReference",
+		"@cdktf/provider-google.computePacketMirroring.ComputePacketMirroringFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

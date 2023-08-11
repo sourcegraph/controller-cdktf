@@ -116,7 +116,7 @@ func NewDefaultSecurityGroupEgressList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_DefaultSecurityGroupEgressList{}
 
 	_jsii_.Create(
-		"aws.defaultSecurityGroup.DefaultSecurityGroupEgressList",
+		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupEgressList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDefaultSecurityGroupEgressList_Override(d DefaultSecurityGroupEgressList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.defaultSecurityGroup.DefaultSecurityGroupEgressList",
+		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupEgressList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

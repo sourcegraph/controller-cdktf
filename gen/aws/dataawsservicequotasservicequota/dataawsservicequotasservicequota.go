@@ -405,7 +405,7 @@ func NewDataAwsServicequotasServiceQuota(scope constructs.Construct, id *string,
 	j := jsiiProxy_DataAwsServicequotasServiceQuota{}
 
 	_jsii_.Create(
-		"aws.dataAwsServicequotasServiceQuota.DataAwsServicequotasServiceQuota",
+		"@cdktf/provider-aws.dataAwsServicequotasServiceQuota.DataAwsServicequotasServiceQuota",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -418,7 +418,7 @@ func NewDataAwsServicequotasServiceQuota_Override(d DataAwsServicequotasServiceQ
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsServicequotasServiceQuota.DataAwsServicequotasServiceQuota",
+		"@cdktf/provider-aws.dataAwsServicequotasServiceQuota.DataAwsServicequotasServiceQuota",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -540,7 +540,7 @@ func DataAwsServicequotasServiceQuota_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServicequotasServiceQuota.DataAwsServicequotasServiceQuota",
+		"@cdktf/provider-aws.dataAwsServicequotasServiceQuota.DataAwsServicequotasServiceQuota",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -559,7 +559,7 @@ func DataAwsServicequotasServiceQuota_IsTerraformDataSource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServicequotasServiceQuota.DataAwsServicequotasServiceQuota",
+		"@cdktf/provider-aws.dataAwsServicequotasServiceQuota.DataAwsServicequotasServiceQuota",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -578,7 +578,7 @@ func DataAwsServicequotasServiceQuota_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServicequotasServiceQuota.DataAwsServicequotasServiceQuota",
+		"@cdktf/provider-aws.dataAwsServicequotasServiceQuota.DataAwsServicequotasServiceQuota",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -591,7 +591,7 @@ func DataAwsServicequotasServiceQuota_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsServicequotasServiceQuota.DataAwsServicequotasServiceQuota",
+		"@cdktf/provider-aws.dataAwsServicequotasServiceQuota.DataAwsServicequotasServiceQuota",
 		"tfResourceType",
 		&returns,
 	)

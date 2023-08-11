@@ -343,7 +343,7 @@ func NewCsiDriverV1(scope constructs.Construct, id *string, config *CsiDriverV1C
 	j := jsiiProxy_CsiDriverV1{}
 
 	_jsii_.Create(
-		"kubernetes.csiDriverV1.CsiDriverV1",
+		"@cdktf/provider-kubernetes.csiDriverV1.CsiDriverV1",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewCsiDriverV1_Override(c CsiDriverV1, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.csiDriverV1.CsiDriverV1",
+		"@cdktf/provider-kubernetes.csiDriverV1.CsiDriverV1",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -467,7 +467,7 @@ func CsiDriverV1_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.csiDriverV1.CsiDriverV1",
+		"@cdktf/provider-kubernetes.csiDriverV1.CsiDriverV1",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -486,7 +486,7 @@ func CsiDriverV1_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.csiDriverV1.CsiDriverV1",
+		"@cdktf/provider-kubernetes.csiDriverV1.CsiDriverV1",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func CsiDriverV1_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.csiDriverV1.CsiDriverV1",
+		"@cdktf/provider-kubernetes.csiDriverV1.CsiDriverV1",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func CsiDriverV1_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.csiDriverV1.CsiDriverV1",
+		"@cdktf/provider-kubernetes.csiDriverV1.CsiDriverV1",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.defaultRouteTable.DefaultRouteTable",
+		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTable",
 		reflect.TypeOf((*DefaultRouteTable)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.defaultRouteTable.DefaultRouteTableConfig",
+		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTableConfig",
 		reflect.TypeOf((*DefaultRouteTableConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.defaultRouteTable.DefaultRouteTableRoute",
+		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTableRoute",
 		reflect.TypeOf((*DefaultRouteTableRoute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.defaultRouteTable.DefaultRouteTableRouteList",
+		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTableRouteList",
 		reflect.TypeOf((*DefaultRouteTableRouteList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.defaultRouteTable.DefaultRouteTableRouteOutputReference",
+		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTableRouteOutputReference",
 		reflect.TypeOf((*DefaultRouteTableRouteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidrBlock", GoGetter: "CidrBlock"},
@@ -174,11 +174,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.defaultRouteTable.DefaultRouteTableTimeouts",
+		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTableTimeouts",
 		reflect.TypeOf((*DefaultRouteTableTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.defaultRouteTable.DefaultRouteTableTimeoutsOutputReference",
+		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTableTimeoutsOutputReference",
 		reflect.TypeOf((*DefaultRouteTableTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

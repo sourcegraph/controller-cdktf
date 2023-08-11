@@ -343,7 +343,7 @@ func NewSecurityhubFindingAggregator(scope constructs.Construct, id *string, con
 	j := jsiiProxy_SecurityhubFindingAggregator{}
 
 	_jsii_.Create(
-		"aws.securityhubFindingAggregator.SecurityhubFindingAggregator",
+		"@cdktf/provider-aws.securityhubFindingAggregator.SecurityhubFindingAggregator",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewSecurityhubFindingAggregator_Override(s SecurityhubFindingAggregator, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubFindingAggregator.SecurityhubFindingAggregator",
+		"@cdktf/provider-aws.securityhubFindingAggregator.SecurityhubFindingAggregator",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -489,7 +489,7 @@ func SecurityhubFindingAggregator_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubFindingAggregator.SecurityhubFindingAggregator",
+		"@cdktf/provider-aws.securityhubFindingAggregator.SecurityhubFindingAggregator",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func SecurityhubFindingAggregator_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubFindingAggregator.SecurityhubFindingAggregator",
+		"@cdktf/provider-aws.securityhubFindingAggregator.SecurityhubFindingAggregator",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func SecurityhubFindingAggregator_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubFindingAggregator.SecurityhubFindingAggregator",
+		"@cdktf/provider-aws.securityhubFindingAggregator.SecurityhubFindingAggregator",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func SecurityhubFindingAggregator_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.securityhubFindingAggregator.SecurityhubFindingAggregator",
+		"@cdktf/provider-aws.securityhubFindingAggregator.SecurityhubFindingAggregator",
 		"tfResourceType",
 		&returns,
 	)

@@ -252,7 +252,7 @@ func NewGoogleComputeInstanceBootDiskInitializeParamsOutputReference(terraformRe
 	j := jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceBootDiskInitializeParamsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceBootDiskInitializeParamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGoogleComputeInstanceBootDiskInitializeParamsOutputReference_Override(g 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceBootDiskInitializeParamsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceBootDiskInitializeParamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

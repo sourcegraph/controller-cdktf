@@ -116,7 +116,7 @@ func NewSsoadminInstanceAccessControlAttributesAttributeValueList(terraformResou
 	j := jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueList{}
 
 	_jsii_.Create(
-		"aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeValueList",
+		"@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeValueList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSsoadminInstanceAccessControlAttributesAttributeValueList_Override(s Sso
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeValueList",
+		"@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeValueList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

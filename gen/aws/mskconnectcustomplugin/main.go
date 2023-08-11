@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.mskconnectCustomPlugin.MskconnectCustomPlugin",
+		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPlugin",
 		reflect.TypeOf((*MskconnectCustomPlugin)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskconnectCustomPlugin.MskconnectCustomPluginConfig",
+		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginConfig",
 		reflect.TypeOf((*MskconnectCustomPluginConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskconnectCustomPlugin.MskconnectCustomPluginLocation",
+		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocation",
 		reflect.TypeOf((*MskconnectCustomPluginLocation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationOutputReference",
+		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationOutputReference",
 		reflect.TypeOf((*MskconnectCustomPluginLocationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,11 +115,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationS3",
+		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationS3",
 		reflect.TypeOf((*MskconnectCustomPluginLocationS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationS3OutputReference",
+		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationS3OutputReference",
 		reflect.TypeOf((*MskconnectCustomPluginLocationS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketArn", GoGetter: "BucketArn"},
@@ -158,11 +158,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskconnectCustomPlugin.MskconnectCustomPluginTimeouts",
+		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginTimeouts",
 		reflect.TypeOf((*MskconnectCustomPluginTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mskconnectCustomPlugin.MskconnectCustomPluginTimeoutsOutputReference",
+		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginTimeoutsOutputReference",
 		reflect.TypeOf((*MskconnectCustomPluginTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

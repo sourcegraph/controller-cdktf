@@ -366,7 +366,7 @@ func NewWaitingRoomRules(scope constructs.Construct, id *string, config *Waiting
 	j := jsiiProxy_WaitingRoomRules{}
 
 	_jsii_.Create(
-		"cloudflare.waitingRoomRules.WaitingRoomRules",
+		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewWaitingRoomRules_Override(w WaitingRoomRules, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.waitingRoomRules.WaitingRoomRules",
+		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -512,7 +512,7 @@ func WaitingRoomRules_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.waitingRoomRules.WaitingRoomRules",
+		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func WaitingRoomRules_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.waitingRoomRules.WaitingRoomRules",
+		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func WaitingRoomRules_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.waitingRoomRules.WaitingRoomRules",
+		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func WaitingRoomRules_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.waitingRoomRules.WaitingRoomRules",
+		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules",
 		"tfResourceType",
 		&returns,
 	)

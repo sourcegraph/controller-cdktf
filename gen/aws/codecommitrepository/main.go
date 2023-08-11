@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.codecommitRepository.CodecommitRepository",
+		"@cdktf/provider-aws.codecommitRepository.CodecommitRepository",
 		reflect.TypeOf((*CodecommitRepository)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codecommitRepository.CodecommitRepositoryConfig",
+		"@cdktf/provider-aws.codecommitRepository.CodecommitRepositoryConfig",
 		reflect.TypeOf((*CodecommitRepositoryConfig)(nil)).Elem(),
 	)
 }

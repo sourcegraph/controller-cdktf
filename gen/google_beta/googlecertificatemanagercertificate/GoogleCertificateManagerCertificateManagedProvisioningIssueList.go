@@ -104,7 +104,7 @@ func NewGoogleCertificateManagerCertificateManagedProvisioningIssueList(terrafor
 	j := jsiiProxy_GoogleCertificateManagerCertificateManagedProvisioningIssueList{}
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedProvisioningIssueList",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedProvisioningIssueList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleCertificateManagerCertificateManagedProvisioningIssueList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedProvisioningIssueList",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedProvisioningIssueList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

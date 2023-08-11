@@ -350,7 +350,7 @@ func NewDataCloudflareAccessIdentityProvider(scope constructs.Construct, id *str
 	j := jsiiProxy_DataCloudflareAccessIdentityProvider{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider",
+		"@cdktf/provider-cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -363,7 +363,7 @@ func NewDataCloudflareAccessIdentityProvider_Override(d DataCloudflareAccessIden
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider",
+		"@cdktf/provider-cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -485,7 +485,7 @@ func DataCloudflareAccessIdentityProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider",
+		"@cdktf/provider-cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -504,7 +504,7 @@ func DataCloudflareAccessIdentityProvider_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider",
+		"@cdktf/provider-cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +523,7 @@ func DataCloudflareAccessIdentityProvider_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider",
+		"@cdktf/provider-cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -536,7 +536,7 @@ func DataCloudflareAccessIdentityProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider",
+		"@cdktf/provider-cloudflare.dataCloudflareAccessIdentityProvider.DataCloudflareAccessIdentityProvider",
 		"tfResourceType",
 		&returns,
 	)

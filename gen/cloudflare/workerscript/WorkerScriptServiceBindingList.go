@@ -116,7 +116,7 @@ func NewWorkerScriptServiceBindingList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_WorkerScriptServiceBindingList{}
 
 	_jsii_.Create(
-		"cloudflare.workerScript.WorkerScriptServiceBindingList",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptServiceBindingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWorkerScriptServiceBindingList_Override(w WorkerScriptServiceBindingList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.workerScript.WorkerScriptServiceBindingList",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptServiceBindingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

@@ -116,7 +116,7 @@ func NewAppBookmarkUsersList(terraformResource cdktf.IInterpolatingParent, terra
 	j := jsiiProxy_AppBookmarkUsersList{}
 
 	_jsii_.Create(
-		"okta.appBookmark.AppBookmarkUsersList",
+		"@cdktf/provider-okta.appBookmark.AppBookmarkUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppBookmarkUsersList_Override(a AppBookmarkUsersList, terraformResource 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appBookmark.AppBookmarkUsersList",
+		"@cdktf/provider-okta.appBookmark.AppBookmarkUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

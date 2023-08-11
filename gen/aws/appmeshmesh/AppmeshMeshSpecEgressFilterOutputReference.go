@@ -180,7 +180,7 @@ func NewAppmeshMeshSpecEgressFilterOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_AppmeshMeshSpecEgressFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshMesh.AppmeshMeshSpecEgressFilterOutputReference",
+		"@cdktf/provider-aws.appmeshMesh.AppmeshMeshSpecEgressFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewAppmeshMeshSpecEgressFilterOutputReference_Override(a AppmeshMeshSpecEgr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshMesh.AppmeshMeshSpecEgressFilterOutputReference",
+		"@cdktf/provider-aws.appmeshMesh.AppmeshMeshSpecEgressFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

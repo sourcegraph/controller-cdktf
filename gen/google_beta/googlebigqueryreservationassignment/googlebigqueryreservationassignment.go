@@ -459,7 +459,7 @@ func NewGoogleBigqueryReservationAssignment(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleBigqueryReservationAssignment{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryReservationAssignment.GoogleBigqueryReservationAssignment",
+		"@cdktf/provider-google-beta.googleBigqueryReservationAssignment.GoogleBigqueryReservationAssignment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewGoogleBigqueryReservationAssignment_Override(g GoogleBigqueryReservation
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryReservationAssignment.GoogleBigqueryReservationAssignment",
+		"@cdktf/provider-google-beta.googleBigqueryReservationAssignment.GoogleBigqueryReservationAssignment",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -638,7 +638,7 @@ func GoogleBigqueryReservationAssignment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryReservationAssignment.GoogleBigqueryReservationAssignment",
+		"@cdktf/provider-google-beta.googleBigqueryReservationAssignment.GoogleBigqueryReservationAssignment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func GoogleBigqueryReservationAssignment_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryReservationAssignment.GoogleBigqueryReservationAssignment",
+		"@cdktf/provider-google-beta.googleBigqueryReservationAssignment.GoogleBigqueryReservationAssignment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func GoogleBigqueryReservationAssignment_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryReservationAssignment.GoogleBigqueryReservationAssignment",
+		"@cdktf/provider-google-beta.googleBigqueryReservationAssignment.GoogleBigqueryReservationAssignment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func GoogleBigqueryReservationAssignment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigqueryReservationAssignment.GoogleBigqueryReservationAssignment",
+		"@cdktf/provider-google-beta.googleBigqueryReservationAssignment.GoogleBigqueryReservationAssignment",
 		"tfResourceType",
 		&returns,
 	)

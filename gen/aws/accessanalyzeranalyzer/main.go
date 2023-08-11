@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzer",
+		"@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzer",
 		reflect.TypeOf((*AccessanalyzerAnalyzer)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfig",
+		"@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfig",
 		reflect.TypeOf((*AccessanalyzerAnalyzerConfig)(nil)).Elem(),
 	)
 }

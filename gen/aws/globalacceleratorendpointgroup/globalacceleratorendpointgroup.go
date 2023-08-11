@@ -570,7 +570,7 @@ func NewGlobalacceleratorEndpointGroup(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GlobalacceleratorEndpointGroup{}
 
 	_jsii_.Create(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -583,7 +583,7 @@ func NewGlobalacceleratorEndpointGroup_Override(g GlobalacceleratorEndpointGroup
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -782,7 +782,7 @@ func GlobalacceleratorEndpointGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -801,7 +801,7 @@ func GlobalacceleratorEndpointGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -820,7 +820,7 @@ func GlobalacceleratorEndpointGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -833,7 +833,7 @@ func GlobalacceleratorEndpointGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup",
 		"tfResourceType",
 		&returns,
 	)

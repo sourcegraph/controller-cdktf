@@ -275,7 +275,7 @@ func NewTransferWorkflowStepsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_TransferWorkflowStepsOutputReference{}
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflowStepsOutputReference",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewTransferWorkflowStepsOutputReference_Override(t TransferWorkflowStepsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflowStepsOutputReference",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		t,
 	)

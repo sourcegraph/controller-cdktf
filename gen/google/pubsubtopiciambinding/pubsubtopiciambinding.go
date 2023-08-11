@@ -424,7 +424,7 @@ func NewPubsubTopicIamBinding(scope constructs.Construct, id *string, config *Pu
 	j := jsiiProxy_PubsubTopicIamBinding{}
 
 	_jsii_.Create(
-		"google.pubsubTopicIamBinding.PubsubTopicIamBinding",
+		"@cdktf/provider-google.pubsubTopicIamBinding.PubsubTopicIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewPubsubTopicIamBinding_Override(p PubsubTopicIamBinding, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.pubsubTopicIamBinding.PubsubTopicIamBinding",
+		"@cdktf/provider-google.pubsubTopicIamBinding.PubsubTopicIamBinding",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -592,7 +592,7 @@ func PubsubTopicIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubTopicIamBinding.PubsubTopicIamBinding",
+		"@cdktf/provider-google.pubsubTopicIamBinding.PubsubTopicIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func PubsubTopicIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubTopicIamBinding.PubsubTopicIamBinding",
+		"@cdktf/provider-google.pubsubTopicIamBinding.PubsubTopicIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func PubsubTopicIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubTopicIamBinding.PubsubTopicIamBinding",
+		"@cdktf/provider-google.pubsubTopicIamBinding.PubsubTopicIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func PubsubTopicIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.pubsubTopicIamBinding.PubsubTopicIamBinding",
+		"@cdktf/provider-google.pubsubTopicIamBinding.PubsubTopicIamBinding",
 		"tfResourceType",
 		&returns,
 	)

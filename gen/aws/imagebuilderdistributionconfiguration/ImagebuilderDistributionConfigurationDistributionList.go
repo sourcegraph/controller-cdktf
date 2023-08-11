@@ -116,7 +116,7 @@ func NewImagebuilderDistributionConfigurationDistributionList(terraformResource 
 	j := jsiiProxy_ImagebuilderDistributionConfigurationDistributionList{}
 
 	_jsii_.Create(
-		"aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionList",
+		"@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewImagebuilderDistributionConfigurationDistributionList_Override(i Imagebu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionList",
+		"@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

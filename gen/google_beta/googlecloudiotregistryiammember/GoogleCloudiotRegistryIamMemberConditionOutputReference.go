@@ -226,7 +226,7 @@ func NewGoogleCloudiotRegistryIamMemberConditionOutputReference(terraformResourc
 	j := jsiiProxy_GoogleCloudiotRegistryIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudiotRegistryIamMember.GoogleCloudiotRegistryIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleCloudiotRegistryIamMember.GoogleCloudiotRegistryIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleCloudiotRegistryIamMemberConditionOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudiotRegistryIamMember.GoogleCloudiotRegistryIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleCloudiotRegistryIamMember.GoogleCloudiotRegistryIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

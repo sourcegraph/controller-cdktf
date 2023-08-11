@@ -200,7 +200,7 @@ func NewAmplifyAppProductionBranchOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_AmplifyAppProductionBranchOutputReference{}
 
 	_jsii_.Create(
-		"aws.amplifyApp.AmplifyAppProductionBranchOutputReference",
+		"@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewAmplifyAppProductionBranchOutputReference_Override(a AmplifyAppProductio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.amplifyApp.AmplifyAppProductionBranchOutputReference",
+		"@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

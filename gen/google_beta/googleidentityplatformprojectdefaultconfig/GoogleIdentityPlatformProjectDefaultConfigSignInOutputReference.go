@@ -263,7 +263,7 @@ func NewGoogleIdentityPlatformProjectDefaultConfigSignInOutputReference(terrafor
 	j := jsiiProxy_GoogleIdentityPlatformProjectDefaultConfigSignInOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleIdentityPlatformProjectDefaultConfig.GoogleIdentityPlatformProjectDefaultConfigSignInOutputReference",
+		"@cdktf/provider-google-beta.googleIdentityPlatformProjectDefaultConfig.GoogleIdentityPlatformProjectDefaultConfigSignInOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -275,7 +275,7 @@ func NewGoogleIdentityPlatformProjectDefaultConfigSignInOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIdentityPlatformProjectDefaultConfig.GoogleIdentityPlatformProjectDefaultConfigSignInOutputReference",
+		"@cdktf/provider-google-beta.googleIdentityPlatformProjectDefaultConfig.GoogleIdentityPlatformProjectDefaultConfigSignInOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

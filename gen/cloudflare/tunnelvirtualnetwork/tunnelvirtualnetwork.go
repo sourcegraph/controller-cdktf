@@ -390,7 +390,7 @@ func NewTunnelVirtualNetwork(scope constructs.Construct, id *string, config *Tun
 	j := jsiiProxy_TunnelVirtualNetwork{}
 
 	_jsii_.Create(
-		"cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork",
+		"@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewTunnelVirtualNetwork_Override(t TunnelVirtualNetwork, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork",
+		"@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -558,7 +558,7 @@ func TunnelVirtualNetwork_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork",
+		"@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func TunnelVirtualNetwork_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork",
+		"@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func TunnelVirtualNetwork_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork",
+		"@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func TunnelVirtualNetwork_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork",
+		"@cdktf/provider-cloudflare.tunnelVirtualNetwork.TunnelVirtualNetwork",
 		"tfResourceType",
 		&returns,
 	)

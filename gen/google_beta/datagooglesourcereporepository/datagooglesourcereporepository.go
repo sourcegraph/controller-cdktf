@@ -348,7 +348,7 @@ func NewDataGoogleSourcerepoRepository(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataGoogleSourcerepoRepository{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepository",
+		"@cdktf/provider-google-beta.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepository",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -361,7 +361,7 @@ func NewDataGoogleSourcerepoRepository_Override(d DataGoogleSourcerepoRepository
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepository",
+		"@cdktf/provider-google-beta.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepository",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -472,7 +472,7 @@ func DataGoogleSourcerepoRepository_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepository",
+		"@cdktf/provider-google-beta.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepository",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -491,7 +491,7 @@ func DataGoogleSourcerepoRepository_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepository",
+		"@cdktf/provider-google-beta.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepository",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -510,7 +510,7 @@ func DataGoogleSourcerepoRepository_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepository",
+		"@cdktf/provider-google-beta.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepository",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +523,7 @@ func DataGoogleSourcerepoRepository_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepository",
+		"@cdktf/provider-google-beta.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepository",
 		"tfResourceType",
 		&returns,
 	)

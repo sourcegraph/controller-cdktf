@@ -116,7 +116,7 @@ func NewContainerClusterNodeConfigTaintList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_ContainerClusterNodeConfigTaintList{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterNodeConfigTaintList",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigTaintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewContainerClusterNodeConfigTaintList_Override(c ContainerClusterNodeConfi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterNodeConfigTaintList",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigTaintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

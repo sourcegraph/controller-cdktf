@@ -401,7 +401,7 @@ func NewComputeInstanceIamPolicy(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_ComputeInstanceIamPolicy{}
 
 	_jsii_.Create(
-		"google.computeInstanceIamPolicy.ComputeInstanceIamPolicy",
+		"@cdktf/provider-google.computeInstanceIamPolicy.ComputeInstanceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewComputeInstanceIamPolicy_Override(c ComputeInstanceIamPolicy, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceIamPolicy.ComputeInstanceIamPolicy",
+		"@cdktf/provider-google.computeInstanceIamPolicy.ComputeInstanceIamPolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -569,7 +569,7 @@ func ComputeInstanceIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeInstanceIamPolicy.ComputeInstanceIamPolicy",
+		"@cdktf/provider-google.computeInstanceIamPolicy.ComputeInstanceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func ComputeInstanceIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeInstanceIamPolicy.ComputeInstanceIamPolicy",
+		"@cdktf/provider-google.computeInstanceIamPolicy.ComputeInstanceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func ComputeInstanceIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeInstanceIamPolicy.ComputeInstanceIamPolicy",
+		"@cdktf/provider-google.computeInstanceIamPolicy.ComputeInstanceIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func ComputeInstanceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeInstanceIamPolicy.ComputeInstanceIamPolicy",
+		"@cdktf/provider-google.computeInstanceIamPolicy.ComputeInstanceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

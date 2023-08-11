@@ -228,7 +228,7 @@ func NewDmsReplicationInstanceTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DmsReplicationInstanceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dmsReplicationInstance.DmsReplicationInstanceTimeoutsOutputReference",
+		"@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDmsReplicationInstanceTimeoutsOutputReference_Override(d DmsReplicationI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dmsReplicationInstance.DmsReplicationInstanceTimeoutsOutputReference",
+		"@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

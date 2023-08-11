@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.vpnGatewayAttachment.VpnGatewayAttachment",
+		"@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachment",
 		reflect.TypeOf((*VpnGatewayAttachment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpnGatewayAttachment.VpnGatewayAttachmentConfig",
+		"@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachmentConfig",
 		reflect.TypeOf((*VpnGatewayAttachmentConfig)(nil)).Elem(),
 	)
 }

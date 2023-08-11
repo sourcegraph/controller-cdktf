@@ -104,7 +104,7 @@ func NewGoogleContainerAzureClusterWorkloadIdentityConfigList(terraformResource 
 	j := jsiiProxy_GoogleContainerAzureClusterWorkloadIdentityConfigList{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterWorkloadIdentityConfigList",
+		"@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterWorkloadIdentityConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleContainerAzureClusterWorkloadIdentityConfigList_Override(g GoogleC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterWorkloadIdentityConfigList",
+		"@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterWorkloadIdentityConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -504,7 +504,7 @@ func NewSchemasSchema(scope constructs.Construct, id *string, config *SchemasSch
 	j := jsiiProxy_SchemasSchema{}
 
 	_jsii_.Create(
-		"aws.schemasSchema.SchemasSchema",
+		"@cdktf/provider-aws.schemasSchema.SchemasSchema",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -517,7 +517,7 @@ func NewSchemasSchema_Override(s SchemasSchema, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.schemasSchema.SchemasSchema",
+		"@cdktf/provider-aws.schemasSchema.SchemasSchema",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -705,7 +705,7 @@ func SchemasSchema_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.schemasSchema.SchemasSchema",
+		"@cdktf/provider-aws.schemasSchema.SchemasSchema",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -724,7 +724,7 @@ func SchemasSchema_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.schemasSchema.SchemasSchema",
+		"@cdktf/provider-aws.schemasSchema.SchemasSchema",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -743,7 +743,7 @@ func SchemasSchema_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.schemasSchema.SchemasSchema",
+		"@cdktf/provider-aws.schemasSchema.SchemasSchema",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -756,7 +756,7 @@ func SchemasSchema_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.schemasSchema.SchemasSchema",
+		"@cdktf/provider-aws.schemasSchema.SchemasSchema",
 		"tfResourceType",
 		&returns,
 	)

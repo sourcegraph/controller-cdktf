@@ -508,7 +508,7 @@ func NewAppUserBaseSchema(scope constructs.Construct, id *string, config *AppUse
 	j := jsiiProxy_AppUserBaseSchema{}
 
 	_jsii_.Create(
-		"okta.appUserBaseSchema.AppUserBaseSchema",
+		"@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchema",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -521,7 +521,7 @@ func NewAppUserBaseSchema_Override(a AppUserBaseSchema, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appUserBaseSchema.AppUserBaseSchema",
+		"@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchema",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -731,7 +731,7 @@ func AppUserBaseSchema_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appUserBaseSchema.AppUserBaseSchema",
+		"@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchema",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -750,7 +750,7 @@ func AppUserBaseSchema_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appUserBaseSchema.AppUserBaseSchema",
+		"@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchema",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -769,7 +769,7 @@ func AppUserBaseSchema_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appUserBaseSchema.AppUserBaseSchema",
+		"@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchema",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -782,7 +782,7 @@ func AppUserBaseSchema_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.appUserBaseSchema.AppUserBaseSchema",
+		"@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchema",
 		"tfResourceType",
 		&returns,
 	)

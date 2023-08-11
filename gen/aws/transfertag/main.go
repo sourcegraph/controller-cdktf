@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.transferTag.TransferTag",
+		"@cdktf/provider-aws.transferTag.TransferTag",
 		reflect.TypeOf((*TransferTag)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.transferTag.TransferTagConfig",
+		"@cdktf/provider-aws.transferTag.TransferTagConfig",
 		reflect.TypeOf((*TransferTagConfig)(nil)).Elem(),
 	)
 }

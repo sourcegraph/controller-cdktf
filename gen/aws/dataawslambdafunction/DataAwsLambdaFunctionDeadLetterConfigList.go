@@ -104,7 +104,7 @@ func NewDataAwsLambdaFunctionDeadLetterConfigList(terraformResource cdktf.IInter
 	j := jsiiProxy_DataAwsLambdaFunctionDeadLetterConfigList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionDeadLetterConfigList",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionDeadLetterConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLambdaFunctionDeadLetterConfigList_Override(d DataAwsLambdaFuncti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionDeadLetterConfigList",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionDeadLetterConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

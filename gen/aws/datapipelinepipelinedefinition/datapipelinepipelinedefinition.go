@@ -390,7 +390,7 @@ func NewDatapipelinePipelineDefinition(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DatapipelinePipelineDefinition{}
 
 	_jsii_.Create(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinition",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinition",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewDatapipelinePipelineDefinition_Override(d DatapipelinePipelineDefinition
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinition",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinition",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -525,7 +525,7 @@ func DatapipelinePipelineDefinition_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinition",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinition",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -544,7 +544,7 @@ func DatapipelinePipelineDefinition_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinition",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinition",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func DatapipelinePipelineDefinition_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinition",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinition",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func DatapipelinePipelineDefinition_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinition",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinition",
 		"tfResourceType",
 		&returns,
 	)

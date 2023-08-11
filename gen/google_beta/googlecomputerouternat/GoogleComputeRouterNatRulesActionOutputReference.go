@@ -204,7 +204,7 @@ func NewGoogleComputeRouterNatRulesActionOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleComputeRouterNatRulesActionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleComputeRouterNatRulesActionOutputReference_Override(g GoogleComput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

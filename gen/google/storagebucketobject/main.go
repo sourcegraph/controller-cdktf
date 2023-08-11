@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.storageBucketObject.StorageBucketObject",
+		"@cdktf/provider-google.storageBucketObject.StorageBucketObject",
 		reflect.TypeOf((*StorageBucketObject)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -111,15 +111,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.storageBucketObject.StorageBucketObjectConfig",
+		"@cdktf/provider-google.storageBucketObject.StorageBucketObjectConfig",
 		reflect.TypeOf((*StorageBucketObjectConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.storageBucketObject.StorageBucketObjectCustomerEncryption",
+		"@cdktf/provider-google.storageBucketObject.StorageBucketObjectCustomerEncryption",
 		reflect.TypeOf((*StorageBucketObjectCustomerEncryption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.storageBucketObject.StorageBucketObjectCustomerEncryptionOutputReference",
+		"@cdktf/provider-google.storageBucketObject.StorageBucketObjectCustomerEncryptionOutputReference",
 		reflect.TypeOf((*StorageBucketObjectCustomerEncryptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -156,11 +156,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.storageBucketObject.StorageBucketObjectTimeouts",
+		"@cdktf/provider-google.storageBucketObject.StorageBucketObjectTimeouts",
 		reflect.TypeOf((*StorageBucketObjectTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.storageBucketObject.StorageBucketObjectTimeoutsOutputReference",
+		"@cdktf/provider-google.storageBucketObject.StorageBucketObjectTimeoutsOutputReference",
 		reflect.TypeOf((*StorageBucketObjectTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

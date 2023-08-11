@@ -104,7 +104,7 @@ func NewDataTfeVariablesTerraformList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_DataTfeVariablesTerraformList{}
 
 	_jsii_.Create(
-		"tfe.dataTfeVariables.DataTfeVariablesTerraformList",
+		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesTerraformList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataTfeVariablesTerraformList_Override(d DataTfeVariablesTerraformList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfeVariables.DataTfeVariablesTerraformList",
+		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesTerraformList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

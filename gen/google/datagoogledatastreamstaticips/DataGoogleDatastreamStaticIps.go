@@ -326,7 +326,7 @@ func NewDataGoogleDatastreamStaticIps(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataGoogleDatastreamStaticIps{}
 
 	_jsii_.Create(
-		"google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps",
+		"@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -339,7 +339,7 @@ func NewDataGoogleDatastreamStaticIps_Override(d DataGoogleDatastreamStaticIps, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps",
+		"@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -450,7 +450,7 @@ func DataGoogleDatastreamStaticIps_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps",
+		"@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -469,7 +469,7 @@ func DataGoogleDatastreamStaticIps_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps",
+		"@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -488,7 +488,7 @@ func DataGoogleDatastreamStaticIps_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps",
+		"@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -501,7 +501,7 @@ func DataGoogleDatastreamStaticIps_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps",
+		"@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps",
 		"tfResourceType",
 		&returns,
 	)

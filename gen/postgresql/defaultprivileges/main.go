@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"postgresql.defaultPrivileges.DefaultPrivileges",
+		"@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges",
 		reflect.TypeOf((*DefaultPrivileges)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"postgresql.defaultPrivileges.DefaultPrivilegesConfig",
+		"@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig",
 		reflect.TypeOf((*DefaultPrivilegesConfig)(nil)).Elem(),
 	)
 }

@@ -228,7 +228,7 @@ func NewGoogleApigeeSharedflowTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_GoogleApigeeSharedflowTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleApigeeSharedflowTimeoutsOutputReference_Override(g GoogleApigeeSha
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

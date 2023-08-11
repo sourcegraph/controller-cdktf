@@ -203,7 +203,7 @@ func NewWorkspacesIpGroupRulesOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_WorkspacesIpGroupRulesOutputReference{}
 
 	_jsii_.Create(
-		"aws.workspacesIpGroup.WorkspacesIpGroupRulesOutputReference",
+		"@cdktf/provider-aws.workspacesIpGroup.WorkspacesIpGroupRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewWorkspacesIpGroupRulesOutputReference_Override(w WorkspacesIpGroupRulesO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.workspacesIpGroup.WorkspacesIpGroupRulesOutputReference",
+		"@cdktf/provider-aws.workspacesIpGroup.WorkspacesIpGroupRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

@@ -734,7 +734,7 @@ func NewCodedeployDeploymentGroup(scope constructs.Construct, id *string, config
 	j := jsiiProxy_CodedeployDeploymentGroup{}
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroup",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -747,7 +747,7 @@ func NewCodedeployDeploymentGroup_Override(c CodedeployDeploymentGroup, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroup",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroup",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -935,7 +935,7 @@ func CodedeployDeploymentGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroup",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -954,7 +954,7 @@ func CodedeployDeploymentGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroup",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -973,7 +973,7 @@ func CodedeployDeploymentGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroup",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -986,7 +986,7 @@ func CodedeployDeploymentGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroup",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroup",
 		"tfResourceType",
 		&returns,
 	)

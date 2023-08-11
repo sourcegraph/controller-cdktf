@@ -413,7 +413,7 @@ func NewSourcerepoRepository(scope constructs.Construct, id *string, config *Sou
 	j := jsiiProxy_SourcerepoRepository{}
 
 	_jsii_.Create(
-		"google.sourcerepoRepository.SourcerepoRepository",
+		"@cdktf/provider-google.sourcerepoRepository.SourcerepoRepository",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewSourcerepoRepository_Override(s SourcerepoRepository, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sourcerepoRepository.SourcerepoRepository",
+		"@cdktf/provider-google.sourcerepoRepository.SourcerepoRepository",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -559,7 +559,7 @@ func SourcerepoRepository_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sourcerepoRepository.SourcerepoRepository",
+		"@cdktf/provider-google.sourcerepoRepository.SourcerepoRepository",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -578,7 +578,7 @@ func SourcerepoRepository_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sourcerepoRepository.SourcerepoRepository",
+		"@cdktf/provider-google.sourcerepoRepository.SourcerepoRepository",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func SourcerepoRepository_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sourcerepoRepository.SourcerepoRepository",
+		"@cdktf/provider-google.sourcerepoRepository.SourcerepoRepository",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func SourcerepoRepository_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.sourcerepoRepository.SourcerepoRepository",
+		"@cdktf/provider-google.sourcerepoRepository.SourcerepoRepository",
 		"tfResourceType",
 		&returns,
 	)

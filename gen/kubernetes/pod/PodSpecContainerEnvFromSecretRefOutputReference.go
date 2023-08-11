@@ -203,7 +203,7 @@ func NewPodSpecContainerEnvFromSecretRefOutputReference(terraformResource cdktf.
 	j := jsiiProxy_PodSpecContainerEnvFromSecretRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerEnvFromSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerEnvFromSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewPodSpecContainerEnvFromSecretRefOutputReference_Override(p PodSpecContai
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerEnvFromSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerEnvFromSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

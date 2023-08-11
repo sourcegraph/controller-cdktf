@@ -731,7 +731,7 @@ func NewDaxCluster(scope constructs.Construct, id *string, config *DaxClusterCon
 	j := jsiiProxy_DaxCluster{}
 
 	_jsii_.Create(
-		"aws.daxCluster.DaxCluster",
+		"@cdktf/provider-aws.daxCluster.DaxCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -744,7 +744,7 @@ func NewDaxCluster_Override(d DaxCluster, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.daxCluster.DaxCluster",
+		"@cdktf/provider-aws.daxCluster.DaxCluster",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -1009,7 +1009,7 @@ func DaxCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.daxCluster.DaxCluster",
+		"@cdktf/provider-aws.daxCluster.DaxCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1028,7 +1028,7 @@ func DaxCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.daxCluster.DaxCluster",
+		"@cdktf/provider-aws.daxCluster.DaxCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1047,7 +1047,7 @@ func DaxCluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.daxCluster.DaxCluster",
+		"@cdktf/provider-aws.daxCluster.DaxCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1060,7 +1060,7 @@ func DaxCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.daxCluster.DaxCluster",
+		"@cdktf/provider-aws.daxCluster.DaxCluster",
 		"tfResourceType",
 		&returns,
 	)

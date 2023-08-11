@@ -272,7 +272,7 @@ func NewRdsClusterS3ImportOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_RdsClusterS3ImportOutputReference{}
 
 	_jsii_.Create(
-		"aws.rdsCluster.RdsClusterS3ImportOutputReference",
+		"@cdktf/provider-aws.rdsCluster.RdsClusterS3ImportOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -284,7 +284,7 @@ func NewRdsClusterS3ImportOutputReference_Override(r RdsClusterS3ImportOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rdsCluster.RdsClusterS3ImportOutputReference",
+		"@cdktf/provider-aws.rdsCluster.RdsClusterS3ImportOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

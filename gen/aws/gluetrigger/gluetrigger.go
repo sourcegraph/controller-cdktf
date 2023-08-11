@@ -627,7 +627,7 @@ func NewGlueTrigger(scope constructs.Construct, id *string, config *GlueTriggerC
 	j := jsiiProxy_GlueTrigger{}
 
 	_jsii_.Create(
-		"aws.glueTrigger.GlueTrigger",
+		"@cdktf/provider-aws.glueTrigger.GlueTrigger",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -640,7 +640,7 @@ func NewGlueTrigger_Override(g GlueTrigger, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueTrigger.GlueTrigger",
+		"@cdktf/provider-aws.glueTrigger.GlueTrigger",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -850,7 +850,7 @@ func GlueTrigger_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueTrigger.GlueTrigger",
+		"@cdktf/provider-aws.glueTrigger.GlueTrigger",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -869,7 +869,7 @@ func GlueTrigger_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueTrigger.GlueTrigger",
+		"@cdktf/provider-aws.glueTrigger.GlueTrigger",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -888,7 +888,7 @@ func GlueTrigger_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueTrigger.GlueTrigger",
+		"@cdktf/provider-aws.glueTrigger.GlueTrigger",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -901,7 +901,7 @@ func GlueTrigger_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.glueTrigger.GlueTrigger",
+		"@cdktf/provider-aws.glueTrigger.GlueTrigger",
 		"tfResourceType",
 		&returns,
 	)

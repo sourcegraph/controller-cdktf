@@ -446,7 +446,7 @@ func NewApprunnerVpcIngressConnection(scope constructs.Construct, id *string, co
 	j := jsiiProxy_ApprunnerVpcIngressConnection{}
 
 	_jsii_.Create(
-		"aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnection",
+		"@cdktf/provider-aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnection",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -459,7 +459,7 @@ func NewApprunnerVpcIngressConnection_Override(a ApprunnerVpcIngressConnection, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnection",
+		"@cdktf/provider-aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnection",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -614,7 +614,7 @@ func ApprunnerVpcIngressConnection_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnection",
+		"@cdktf/provider-aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnection",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func ApprunnerVpcIngressConnection_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnection",
+		"@cdktf/provider-aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnection",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -652,7 +652,7 @@ func ApprunnerVpcIngressConnection_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnection",
+		"@cdktf/provider-aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnection",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func ApprunnerVpcIngressConnection_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnection",
+		"@cdktf/provider-aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnection",
 		"tfResourceType",
 		&returns,
 	)

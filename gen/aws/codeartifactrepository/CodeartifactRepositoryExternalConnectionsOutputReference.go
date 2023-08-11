@@ -201,7 +201,7 @@ func NewCodeartifactRepositoryExternalConnectionsOutputReference(terraformResour
 	j := jsiiProxy_CodeartifactRepositoryExternalConnectionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.codeartifactRepository.CodeartifactRepositoryExternalConnectionsOutputReference",
+		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryExternalConnectionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -213,7 +213,7 @@ func NewCodeartifactRepositoryExternalConnectionsOutputReference_Override(c Code
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codeartifactRepository.CodeartifactRepositoryExternalConnectionsOutputReference",
+		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryExternalConnectionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

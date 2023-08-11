@@ -271,7 +271,7 @@ func NewElbHealthCheckOutputReference(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_ElbHealthCheckOutputReference{}
 
 	_jsii_.Create(
-		"aws.elb.ElbHealthCheckOutputReference",
+		"@cdktf/provider-aws.elb.ElbHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -283,7 +283,7 @@ func NewElbHealthCheckOutputReference_Override(e ElbHealthCheckOutputReference, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elb.ElbHealthCheckOutputReference",
+		"@cdktf/provider-aws.elb.ElbHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

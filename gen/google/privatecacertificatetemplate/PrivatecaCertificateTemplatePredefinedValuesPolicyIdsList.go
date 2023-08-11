@@ -116,7 +116,7 @@ func NewPrivatecaCertificateTemplatePredefinedValuesPolicyIdsList(terraformResou
 	j := jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesPolicyIdsList{}
 
 	_jsii_.Create(
-		"google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesPolicyIdsList",
+		"@cdktf/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesPolicyIdsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPrivatecaCertificateTemplatePredefinedValuesPolicyIdsList_Override(p Pri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesPolicyIdsList",
+		"@cdktf/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesPolicyIdsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

@@ -401,7 +401,7 @@ func NewGoogleIapWebIamMember(scope constructs.Construct, id *string, config *Go
 	j := jsiiProxy_GoogleIapWebIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleIapWebIamMember.GoogleIapWebIamMember",
+		"@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleIapWebIamMember_Override(g GoogleIapWebIamMember, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIapWebIamMember.GoogleIapWebIamMember",
+		"@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -558,7 +558,7 @@ func GoogleIapWebIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapWebIamMember.GoogleIapWebIamMember",
+		"@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func GoogleIapWebIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapWebIamMember.GoogleIapWebIamMember",
+		"@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func GoogleIapWebIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapWebIamMember.GoogleIapWebIamMember",
+		"@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func GoogleIapWebIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleIapWebIamMember.GoogleIapWebIamMember",
+		"@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMember",
 		"tfResourceType",
 		&returns,
 	)

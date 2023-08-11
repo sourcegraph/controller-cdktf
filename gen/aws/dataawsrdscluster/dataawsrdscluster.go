@@ -623,7 +623,7 @@ func NewDataAwsRdsCluster(scope constructs.Construct, id *string, config *DataAw
 	j := jsiiProxy_DataAwsRdsCluster{}
 
 	_jsii_.Create(
-		"aws.dataAwsRdsCluster.DataAwsRdsCluster",
+		"@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -636,7 +636,7 @@ func NewDataAwsRdsCluster_Override(d DataAwsRdsCluster, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRdsCluster.DataAwsRdsCluster",
+		"@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsCluster",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -747,7 +747,7 @@ func DataAwsRdsCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRdsCluster.DataAwsRdsCluster",
+		"@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -766,7 +766,7 @@ func DataAwsRdsCluster_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRdsCluster.DataAwsRdsCluster",
+		"@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsCluster",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -785,7 +785,7 @@ func DataAwsRdsCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRdsCluster.DataAwsRdsCluster",
+		"@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -798,7 +798,7 @@ func DataAwsRdsCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsRdsCluster.DataAwsRdsCluster",
+		"@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsCluster",
 		"tfResourceType",
 		&returns,
 	)

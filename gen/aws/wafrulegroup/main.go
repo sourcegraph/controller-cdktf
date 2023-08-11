@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.wafRuleGroup.WafRuleGroup",
+		"@cdktf/provider-aws.wafRuleGroup.WafRuleGroup",
 		reflect.TypeOf((*WafRuleGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activatedRule", GoGetter: "ActivatedRule"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafRuleGroup.WafRuleGroupActivatedRule",
+		"@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRule",
 		reflect.TypeOf((*WafRuleGroupActivatedRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafRuleGroup.WafRuleGroupActivatedRuleAction",
+		"@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRuleAction",
 		reflect.TypeOf((*WafRuleGroupActivatedRuleAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafRuleGroup.WafRuleGroupActivatedRuleActionOutputReference",
+		"@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRuleActionOutputReference",
 		reflect.TypeOf((*WafRuleGroupActivatedRuleActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -112,7 +112,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafRuleGroup.WafRuleGroupActivatedRuleList",
+		"@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRuleList",
 		reflect.TypeOf((*WafRuleGroupActivatedRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -133,7 +133,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafRuleGroup.WafRuleGroupActivatedRuleOutputReference",
+		"@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRuleOutputReference",
 		reflect.TypeOf((*WafRuleGroupActivatedRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -175,7 +175,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafRuleGroup.WafRuleGroupConfig",
+		"@cdktf/provider-aws.wafRuleGroup.WafRuleGroupConfig",
 		reflect.TypeOf((*WafRuleGroupConfig)(nil)).Elem(),
 	)
 }

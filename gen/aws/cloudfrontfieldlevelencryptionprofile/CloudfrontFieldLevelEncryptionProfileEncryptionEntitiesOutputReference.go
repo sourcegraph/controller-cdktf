@@ -180,7 +180,7 @@ func NewCloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputReference(t
 	j := jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontFieldLevelEncryptionProfile.CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputReference",
+		"@cdktf/provider-aws.cloudfrontFieldLevelEncryptionProfile.CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewCloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontFieldLevelEncryptionProfile.CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputReference",
+		"@cdktf/provider-aws.cloudfrontFieldLevelEncryptionProfile.CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

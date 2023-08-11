@@ -104,7 +104,7 @@ func NewDataAwsSesv2DedicatedIpPoolDedicatedIpsList(terraformResource cdktf.IInt
 	j := jsiiProxy_DataAwsSesv2DedicatedIpPoolDedicatedIpsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPoolDedicatedIpsList",
+		"@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPoolDedicatedIpsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsSesv2DedicatedIpPoolDedicatedIpsList_Override(d DataAwsSesv2Dedic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPoolDedicatedIpsList",
+		"@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPoolDedicatedIpsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

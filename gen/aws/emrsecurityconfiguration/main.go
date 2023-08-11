@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.emrSecurityConfiguration.EmrSecurityConfiguration",
+		"@cdktf/provider-aws.emrSecurityConfiguration.EmrSecurityConfiguration",
 		reflect.TypeOf((*EmrSecurityConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.emrSecurityConfiguration.EmrSecurityConfigurationConfig",
+		"@cdktf/provider-aws.emrSecurityConfiguration.EmrSecurityConfigurationConfig",
 		reflect.TypeOf((*EmrSecurityConfigurationConfig)(nil)).Elem(),
 	)
 }

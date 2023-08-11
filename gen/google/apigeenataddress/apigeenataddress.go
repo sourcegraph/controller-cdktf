@@ -388,7 +388,7 @@ func NewApigeeNatAddress(scope constructs.Construct, id *string, config *ApigeeN
 	j := jsiiProxy_ApigeeNatAddress{}
 
 	_jsii_.Create(
-		"google.apigeeNatAddress.ApigeeNatAddress",
+		"@cdktf/provider-google.apigeeNatAddress.ApigeeNatAddress",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -401,7 +401,7 @@ func NewApigeeNatAddress_Override(a ApigeeNatAddress, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeNatAddress.ApigeeNatAddress",
+		"@cdktf/provider-google.apigeeNatAddress.ApigeeNatAddress",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -534,7 +534,7 @@ func ApigeeNatAddress_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeNatAddress.ApigeeNatAddress",
+		"@cdktf/provider-google.apigeeNatAddress.ApigeeNatAddress",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func ApigeeNatAddress_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeNatAddress.ApigeeNatAddress",
+		"@cdktf/provider-google.apigeeNatAddress.ApigeeNatAddress",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func ApigeeNatAddress_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeNatAddress.ApigeeNatAddress",
+		"@cdktf/provider-google.apigeeNatAddress.ApigeeNatAddress",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func ApigeeNatAddress_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.apigeeNatAddress.ApigeeNatAddress",
+		"@cdktf/provider-google.apigeeNatAddress.ApigeeNatAddress",
 		"tfResourceType",
 		&returns,
 	)

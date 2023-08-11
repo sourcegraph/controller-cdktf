@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannel",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannel",
 		reflect.TypeOf((*DataGoogleFirebaseHostingChannel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannelConfig",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannelConfig",
 		reflect.TypeOf((*DataGoogleFirebaseHostingChannelConfig)(nil)).Elem(),
 	)
 }

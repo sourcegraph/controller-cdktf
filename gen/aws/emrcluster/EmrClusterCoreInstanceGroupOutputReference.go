@@ -310,7 +310,7 @@ func NewEmrClusterCoreInstanceGroupOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_EmrClusterCoreInstanceGroupOutputReference{}
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterCoreInstanceGroupOutputReference",
+		"@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -322,7 +322,7 @@ func NewEmrClusterCoreInstanceGroupOutputReference_Override(e EmrClusterCoreInst
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterCoreInstanceGroupOutputReference",
+		"@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

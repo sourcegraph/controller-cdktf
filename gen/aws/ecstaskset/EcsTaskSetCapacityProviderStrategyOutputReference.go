@@ -226,7 +226,7 @@ func NewEcsTaskSetCapacityProviderStrategyOutputReference(terraformResource cdkt
 	j := jsiiProxy_EcsTaskSetCapacityProviderStrategyOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategyOutputReference",
+		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewEcsTaskSetCapacityProviderStrategyOutputReference_Override(e EcsTaskSetC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategyOutputReference",
+		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

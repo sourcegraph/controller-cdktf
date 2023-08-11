@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.managedHeaders.ManagedHeaders",
+		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeaders",
 		reflect.TypeOf((*ManagedHeaders)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,15 +65,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.managedHeaders.ManagedHeadersConfig",
+		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersConfig",
 		reflect.TypeOf((*ManagedHeadersConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.managedHeaders.ManagedHeadersManagedRequestHeaders",
+		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeaders",
 		reflect.TypeOf((*ManagedHeadersManagedRequestHeaders)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersList",
+		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersList",
 		reflect.TypeOf((*ManagedHeadersManagedRequestHeadersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -94,7 +94,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersOutputReference",
+		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersOutputReference",
 		reflect.TypeOf((*ManagedHeadersManagedRequestHeadersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -130,11 +130,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.managedHeaders.ManagedHeadersManagedResponseHeaders",
+		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedResponseHeaders",
 		reflect.TypeOf((*ManagedHeadersManagedResponseHeaders)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.managedHeaders.ManagedHeadersManagedResponseHeadersList",
+		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedResponseHeadersList",
 		reflect.TypeOf((*ManagedHeadersManagedResponseHeadersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -155,7 +155,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.managedHeaders.ManagedHeadersManagedResponseHeadersOutputReference",
+		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedResponseHeadersOutputReference",
 		reflect.TypeOf((*ManagedHeadersManagedResponseHeadersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -226,7 +226,7 @@ func NewGoogleKmsKeyRingIamBindingConditionOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleKmsKeyRingIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleKmsKeyRingIamBindingConditionOutputReference_Override(g GoogleKmsK
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

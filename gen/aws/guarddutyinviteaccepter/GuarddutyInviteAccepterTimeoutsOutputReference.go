@@ -180,7 +180,7 @@ func NewGuarddutyInviteAccepterTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GuarddutyInviteAccepterTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.guarddutyInviteAccepter.GuarddutyInviteAccepterTimeoutsOutputReference",
+		"@cdktf/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGuarddutyInviteAccepterTimeoutsOutputReference_Override(g GuarddutyInvit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.guarddutyInviteAccepter.GuarddutyInviteAccepterTimeoutsOutputReference",
+		"@cdktf/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

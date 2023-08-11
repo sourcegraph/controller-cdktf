@@ -204,7 +204,7 @@ func NewLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReferen
 	j := jsiiProxy_LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

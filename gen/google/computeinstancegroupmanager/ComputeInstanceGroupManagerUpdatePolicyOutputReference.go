@@ -346,7 +346,7 @@ func NewComputeInstanceGroupManagerUpdatePolicyOutputReference(terraformResource
 	j := jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManagerUpdatePolicyOutputReference",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerUpdatePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -358,7 +358,7 @@ func NewComputeInstanceGroupManagerUpdatePolicyOutputReference_Override(c Comput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManagerUpdatePolicyOutputReference",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerUpdatePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

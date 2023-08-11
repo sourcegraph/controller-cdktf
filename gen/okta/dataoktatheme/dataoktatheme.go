@@ -433,7 +433,7 @@ func NewDataOktaTheme(scope constructs.Construct, id *string, config *DataOktaTh
 	j := jsiiProxy_DataOktaTheme{}
 
 	_jsii_.Create(
-		"okta.dataOktaTheme.DataOktaTheme",
+		"@cdktf/provider-okta.dataOktaTheme.DataOktaTheme",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -446,7 +446,7 @@ func NewDataOktaTheme_Override(d DataOktaTheme, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaTheme.DataOktaTheme",
+		"@cdktf/provider-okta.dataOktaTheme.DataOktaTheme",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -546,7 +546,7 @@ func DataOktaTheme_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaTheme.DataOktaTheme",
+		"@cdktf/provider-okta.dataOktaTheme.DataOktaTheme",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func DataOktaTheme_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaTheme.DataOktaTheme",
+		"@cdktf/provider-okta.dataOktaTheme.DataOktaTheme",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func DataOktaTheme_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaTheme.DataOktaTheme",
+		"@cdktf/provider-okta.dataOktaTheme.DataOktaTheme",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func DataOktaTheme_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.dataOktaTheme.DataOktaTheme",
+		"@cdktf/provider-okta.dataOktaTheme.DataOktaTheme",
 		"tfResourceType",
 		&returns,
 	)

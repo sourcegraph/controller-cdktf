@@ -116,7 +116,7 @@ func NewDialogflowCxPageEventHandlersTriggerFulfillmentMessagesList(terraformRes
 	j := jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentMessagesList{}
 
 	_jsii_.Create(
-		"google.dialogflowCxPage.DialogflowCxPageEventHandlersTriggerFulfillmentMessagesList",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEventHandlersTriggerFulfillmentMessagesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDialogflowCxPageEventHandlersTriggerFulfillmentMessagesList_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxPage.DialogflowCxPageEventHandlersTriggerFulfillmentMessagesList",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEventHandlersTriggerFulfillmentMessagesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

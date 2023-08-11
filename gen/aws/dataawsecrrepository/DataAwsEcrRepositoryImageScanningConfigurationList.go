@@ -104,7 +104,7 @@ func NewDataAwsEcrRepositoryImageScanningConfigurationList(terraformResource cdk
 	j := jsiiProxy_DataAwsEcrRepositoryImageScanningConfigurationList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEcrRepository.DataAwsEcrRepositoryImageScanningConfigurationList",
+		"@cdktf/provider-aws.dataAwsEcrRepository.DataAwsEcrRepositoryImageScanningConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEcrRepositoryImageScanningConfigurationList_Override(d DataAwsEcr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEcrRepository.DataAwsEcrRepositoryImageScanningConfigurationList",
+		"@cdktf/provider-aws.dataAwsEcrRepository.DataAwsEcrRepositoryImageScanningConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

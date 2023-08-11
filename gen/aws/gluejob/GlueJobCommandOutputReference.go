@@ -227,7 +227,7 @@ func NewGlueJobCommandOutputReference(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_GlueJobCommandOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueJob.GlueJobCommandOutputReference",
+		"@cdktf/provider-aws.glueJob.GlueJobCommandOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewGlueJobCommandOutputReference_Override(g GlueJobCommandOutputReference, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueJob.GlueJobCommandOutputReference",
+		"@cdktf/provider-aws.glueJob.GlueJobCommandOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment",
+		"@cdktf/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment",
 		reflect.TypeOf((*DataAwsBatchComputeEnvironment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironmentConfig",
+		"@cdktf/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironmentConfig",
 		reflect.TypeOf((*DataAwsBatchComputeEnvironmentConfig)(nil)).Elem(),
 	)
 }

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.appGroupAssignment.AppGroupAssignment",
+		"@cdktf/provider-okta.appGroupAssignment.AppGroupAssignment",
 		reflect.TypeOf((*AppGroupAssignment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.appGroupAssignment.AppGroupAssignmentConfig",
+		"@cdktf/provider-okta.appGroupAssignment.AppGroupAssignmentConfig",
 		reflect.TypeOf((*AppGroupAssignmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.appGroupAssignment.AppGroupAssignmentTimeouts",
+		"@cdktf/provider-okta.appGroupAssignment.AppGroupAssignmentTimeouts",
 		reflect.TypeOf((*AppGroupAssignmentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.appGroupAssignment.AppGroupAssignmentTimeoutsOutputReference",
+		"@cdktf/provider-okta.appGroupAssignment.AppGroupAssignmentTimeoutsOutputReference",
 		reflect.TypeOf((*AppGroupAssignmentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

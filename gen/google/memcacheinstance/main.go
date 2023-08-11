@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstance",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstance",
 		reflect.TypeOf((*MemcacheInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -100,15 +100,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.memcacheInstance.MemcacheInstanceConfig",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceConfig",
 		reflect.TypeOf((*MemcacheInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.memcacheInstance.MemcacheInstanceMaintenancePolicy",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenancePolicy",
 		reflect.TypeOf((*MemcacheInstanceMaintenancePolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstanceMaintenancePolicyOutputReference",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenancePolicyOutputReference",
 		reflect.TypeOf((*MemcacheInstanceMaintenancePolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -148,11 +148,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindow",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindow",
 		reflect.TypeOf((*MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindow)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList",
 		reflect.TypeOf((*MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -173,7 +173,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference",
 		reflect.TypeOf((*MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -212,11 +212,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime",
 		reflect.TypeOf((*MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference",
 		reflect.TypeOf((*MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -260,11 +260,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.memcacheInstance.MemcacheInstanceMaintenanceSchedule",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenanceSchedule",
 		reflect.TypeOf((*MemcacheInstanceMaintenanceSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstanceMaintenanceScheduleList",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenanceScheduleList",
 		reflect.TypeOf((*MemcacheInstanceMaintenanceScheduleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -284,7 +284,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstanceMaintenanceScheduleOutputReference",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenanceScheduleOutputReference",
 		reflect.TypeOf((*MemcacheInstanceMaintenanceScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -319,11 +319,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.memcacheInstance.MemcacheInstanceMemcacheNodes",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMemcacheNodes",
 		reflect.TypeOf((*MemcacheInstanceMemcacheNodes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstanceMemcacheNodesList",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMemcacheNodesList",
 		reflect.TypeOf((*MemcacheInstanceMemcacheNodesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -343,7 +343,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstanceMemcacheNodesOutputReference",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMemcacheNodesOutputReference",
 		reflect.TypeOf((*MemcacheInstanceMemcacheNodesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -380,11 +380,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.memcacheInstance.MemcacheInstanceMemcacheParameters",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMemcacheParameters",
 		reflect.TypeOf((*MemcacheInstanceMemcacheParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstanceMemcacheParametersOutputReference",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMemcacheParametersOutputReference",
 		reflect.TypeOf((*MemcacheInstanceMemcacheParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -420,11 +420,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.memcacheInstance.MemcacheInstanceNodeConfig",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceNodeConfig",
 		reflect.TypeOf((*MemcacheInstanceNodeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstanceNodeConfigOutputReference",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceNodeConfigOutputReference",
 		reflect.TypeOf((*MemcacheInstanceNodeConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -460,11 +460,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.memcacheInstance.MemcacheInstanceTimeouts",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceTimeouts",
 		reflect.TypeOf((*MemcacheInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.memcacheInstance.MemcacheInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*MemcacheInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

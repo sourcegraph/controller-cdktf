@@ -179,7 +179,7 @@ func NewClouddeployTargetRunOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_ClouddeployTargetRunOutputReference{}
 
 	_jsii_.Create(
-		"google.clouddeployTarget.ClouddeployTargetRunOutputReference",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetRunOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewClouddeployTargetRunOutputReference_Override(c ClouddeployTargetRunOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.clouddeployTarget.ClouddeployTargetRunOutputReference",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetRunOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

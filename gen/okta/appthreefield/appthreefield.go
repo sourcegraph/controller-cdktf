@@ -1090,7 +1090,7 @@ func NewAppThreeField(scope constructs.Construct, id *string, config *AppThreeFi
 	j := jsiiProxy_AppThreeField{}
 
 	_jsii_.Create(
-		"okta.appThreeField.AppThreeField",
+		"@cdktf/provider-okta.appThreeField.AppThreeField",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1103,7 +1103,7 @@ func NewAppThreeField_Override(a AppThreeField, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appThreeField.AppThreeField",
+		"@cdktf/provider-okta.appThreeField.AppThreeField",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -1544,7 +1544,7 @@ func AppThreeField_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appThreeField.AppThreeField",
+		"@cdktf/provider-okta.appThreeField.AppThreeField",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1563,7 +1563,7 @@ func AppThreeField_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appThreeField.AppThreeField",
+		"@cdktf/provider-okta.appThreeField.AppThreeField",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1582,7 +1582,7 @@ func AppThreeField_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appThreeField.AppThreeField",
+		"@cdktf/provider-okta.appThreeField.AppThreeField",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1595,7 +1595,7 @@ func AppThreeField_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.appThreeField.AppThreeField",
+		"@cdktf/provider-okta.appThreeField.AppThreeField",
 		"tfResourceType",
 		&returns,
 	)

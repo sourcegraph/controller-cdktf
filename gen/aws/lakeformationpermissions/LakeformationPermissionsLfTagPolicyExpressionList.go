@@ -116,7 +116,7 @@ func NewLakeformationPermissionsLfTagPolicyExpressionList(terraformResource cdkt
 	j := jsiiProxy_LakeformationPermissionsLfTagPolicyExpressionList{}
 
 	_jsii_.Create(
-		"aws.lakeformationPermissions.LakeformationPermissionsLfTagPolicyExpressionList",
+		"@cdktf/provider-aws.lakeformationPermissions.LakeformationPermissionsLfTagPolicyExpressionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLakeformationPermissionsLfTagPolicyExpressionList_Override(l Lakeformati
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lakeformationPermissions.LakeformationPermissionsLfTagPolicyExpressionList",
+		"@cdktf/provider-aws.lakeformationPermissions.LakeformationPermissionsLfTagPolicyExpressionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

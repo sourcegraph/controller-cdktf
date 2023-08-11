@@ -252,7 +252,7 @@ func NewGoogleFolderTimeoutsOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_GoogleFolderTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleFolder.GoogleFolderTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFolder.GoogleFolderTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGoogleFolderTimeoutsOutputReference_Override(g GoogleFolderTimeoutsOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFolder.GoogleFolderTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFolder.GoogleFolderTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

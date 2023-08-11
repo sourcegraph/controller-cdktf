@@ -116,7 +116,7 @@ func NewS3BucketNotificationLambdaFunctionList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_S3BucketNotificationLambdaFunctionList{}
 
 	_jsii_.Create(
-		"aws.s3BucketNotification.S3BucketNotificationLambdaFunctionList",
+		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotificationLambdaFunctionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewS3BucketNotificationLambdaFunctionList_Override(s S3BucketNotificationLa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketNotification.S3BucketNotificationLambdaFunctionList",
+		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotificationLambdaFunctionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

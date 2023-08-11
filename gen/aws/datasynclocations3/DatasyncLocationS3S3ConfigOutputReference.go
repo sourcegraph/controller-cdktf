@@ -179,7 +179,7 @@ func NewDatasyncLocationS3S3ConfigOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_DatasyncLocationS3S3ConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.datasyncLocationS3.DatasyncLocationS3S3ConfigOutputReference",
+		"@cdktf/provider-aws.datasyncLocationS3.DatasyncLocationS3S3ConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDatasyncLocationS3S3ConfigOutputReference_Override(d DatasyncLocationS3S
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datasyncLocationS3.DatasyncLocationS3S3ConfigOutputReference",
+		"@cdktf/provider-aws.datasyncLocationS3.DatasyncLocationS3S3ConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

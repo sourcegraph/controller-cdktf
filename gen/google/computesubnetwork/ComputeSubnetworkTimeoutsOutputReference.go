@@ -228,7 +228,7 @@ func NewComputeSubnetworkTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_ComputeSubnetworkTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference",
+		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeSubnetworkTimeoutsOutputReference_Override(c ComputeSubnetworkTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference",
+		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -461,7 +461,7 @@ func NewDbSubnetGroup(scope constructs.Construct, id *string, config *DbSubnetGr
 	j := jsiiProxy_DbSubnetGroup{}
 
 	_jsii_.Create(
-		"aws.dbSubnetGroup.DbSubnetGroup",
+		"@cdktf/provider-aws.dbSubnetGroup.DbSubnetGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -474,7 +474,7 @@ func NewDbSubnetGroup_Override(d DbSubnetGroup, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbSubnetGroup.DbSubnetGroup",
+		"@cdktf/provider-aws.dbSubnetGroup.DbSubnetGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -651,7 +651,7 @@ func DbSubnetGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbSubnetGroup.DbSubnetGroup",
+		"@cdktf/provider-aws.dbSubnetGroup.DbSubnetGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -670,7 +670,7 @@ func DbSubnetGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbSubnetGroup.DbSubnetGroup",
+		"@cdktf/provider-aws.dbSubnetGroup.DbSubnetGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func DbSubnetGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbSubnetGroup.DbSubnetGroup",
+		"@cdktf/provider-aws.dbSubnetGroup.DbSubnetGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func DbSubnetGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dbSubnetGroup.DbSubnetGroup",
+		"@cdktf/provider-aws.dbSubnetGroup.DbSubnetGroup",
 		"tfResourceType",
 		&returns,
 	)

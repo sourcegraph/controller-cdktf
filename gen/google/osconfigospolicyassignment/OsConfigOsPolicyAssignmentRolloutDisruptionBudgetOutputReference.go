@@ -204,7 +204,7 @@ func NewOsConfigOsPolicyAssignmentRolloutDisruptionBudgetOutputReference(terrafo
 	j := jsiiProxy_OsConfigOsPolicyAssignmentRolloutDisruptionBudgetOutputReference{}
 
 	_jsii_.Create(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentRolloutDisruptionBudgetOutputReference",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentRolloutDisruptionBudgetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewOsConfigOsPolicyAssignmentRolloutDisruptionBudgetOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentRolloutDisruptionBudgetOutputReference",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentRolloutDisruptionBudgetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

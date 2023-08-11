@@ -116,7 +116,7 @@ func NewKmsGrantConstraintsList(terraformResource cdktf.IInterpolatingParent, te
 	j := jsiiProxy_KmsGrantConstraintsList{}
 
 	_jsii_.Create(
-		"aws.kmsGrant.KmsGrantConstraintsList",
+		"@cdktf/provider-aws.kmsGrant.KmsGrantConstraintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewKmsGrantConstraintsList_Override(k KmsGrantConstraintsList, terraformRes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kmsGrant.KmsGrantConstraintsList",
+		"@cdktf/provider-aws.kmsGrant.KmsGrantConstraintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		k,
 	)

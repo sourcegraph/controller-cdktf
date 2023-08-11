@@ -116,7 +116,7 @@ func NewBudgetsBudgetCostFilterList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_BudgetsBudgetCostFilterList{}
 
 	_jsii_.Create(
-		"aws.budgetsBudget.BudgetsBudgetCostFilterList",
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewBudgetsBudgetCostFilterList_Override(b BudgetsBudgetCostFilterList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.budgetsBudget.BudgetsBudgetCostFilterList",
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)

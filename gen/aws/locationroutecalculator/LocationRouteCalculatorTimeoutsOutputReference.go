@@ -228,7 +228,7 @@ func NewLocationRouteCalculatorTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.locationRouteCalculator.LocationRouteCalculatorTimeoutsOutputReference",
+		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewLocationRouteCalculatorTimeoutsOutputReference_Override(l LocationRouteC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.locationRouteCalculator.LocationRouteCalculatorTimeoutsOutputReference",
+		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

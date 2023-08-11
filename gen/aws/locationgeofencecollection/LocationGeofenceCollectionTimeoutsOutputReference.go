@@ -228,7 +228,7 @@ func NewLocationGeofenceCollectionTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_LocationGeofenceCollectionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.locationGeofenceCollection.LocationGeofenceCollectionTimeoutsOutputReference",
+		"@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollectionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewLocationGeofenceCollectionTimeoutsOutputReference_Override(l LocationGeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.locationGeofenceCollection.LocationGeofenceCollectionTimeoutsOutputReference",
+		"@cdktf/provider-aws.locationGeofenceCollection.LocationGeofenceCollectionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

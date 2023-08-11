@@ -203,7 +203,7 @@ func NewLaunchTemplateInstanceRequirementsMemoryMibOutputReference(terraformReso
 	j := jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMibOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMibOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewLaunchTemplateInstanceRequirementsMemoryMibOutputReference_Override(l La
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMibOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMibOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

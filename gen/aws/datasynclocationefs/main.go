@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.datasyncLocationEfs.DatasyncLocationEfs",
+		"@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs",
 		reflect.TypeOf((*DatasyncLocationEfs)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessPointArn", GoGetter: "AccessPointArn"},
@@ -80,15 +80,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.datasyncLocationEfs.DatasyncLocationEfsConfig",
+		"@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig",
 		reflect.TypeOf((*DatasyncLocationEfsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.datasyncLocationEfs.DatasyncLocationEfsEc2Config",
+		"@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfsEc2Config",
 		reflect.TypeOf((*DatasyncLocationEfsEc2Config)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.datasyncLocationEfs.DatasyncLocationEfsEc2ConfigOutputReference",
+		"@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfsEc2ConfigOutputReference",
 		reflect.TypeOf((*DatasyncLocationEfsEc2ConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

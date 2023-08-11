@@ -237,7 +237,7 @@ func NewGoogleFilestoreInstanceFileSharesOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleFilestoreInstance.GoogleFilestoreInstanceFileSharesOutputReference",
+		"@cdktf/provider-google-beta.googleFilestoreInstance.GoogleFilestoreInstanceFileSharesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -249,7 +249,7 @@ func NewGoogleFilestoreInstanceFileSharesOutputReference_Override(g GoogleFilest
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFilestoreInstance.GoogleFilestoreInstanceFileSharesOutputReference",
+		"@cdktf/provider-google-beta.googleFilestoreInstance.GoogleFilestoreInstanceFileSharesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

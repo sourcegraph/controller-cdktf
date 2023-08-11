@@ -400,7 +400,7 @@ func NewGoogleKmsCryptoKeyIamBinding(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleKmsCryptoKeyIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBinding",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleKmsCryptoKeyIamBinding_Override(g GoogleKmsCryptoKeyIamBinding, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBinding",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleKmsCryptoKeyIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBinding",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleKmsCryptoKeyIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBinding",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleKmsCryptoKeyIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBinding",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleKmsCryptoKeyIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBinding",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBinding",
 		"tfResourceType",
 		&returns,
 	)

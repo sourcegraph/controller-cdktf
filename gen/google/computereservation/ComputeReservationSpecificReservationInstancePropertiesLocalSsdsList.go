@@ -116,7 +116,7 @@ func NewComputeReservationSpecificReservationInstancePropertiesLocalSsdsList(ter
 	j := jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesLocalSsdsList{}
 
 	_jsii_.Create(
-		"google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesLocalSsdsList",
+		"@cdktf/provider-google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesLocalSsdsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeReservationSpecificReservationInstancePropertiesLocalSsdsList_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesLocalSsdsList",
+		"@cdktf/provider-google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesLocalSsdsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

@@ -178,7 +178,7 @@ func NewDataTfeOrganizationMembersMembersWaitingOutputReference(terraformResourc
 	j := jsiiProxy_DataTfeOrganizationMembersMembersWaitingOutputReference{}
 
 	_jsii_.Create(
-		"tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersWaitingOutputReference",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersWaitingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataTfeOrganizationMembersMembersWaitingOutputReference_Override(d DataT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersWaitingOutputReference",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersWaitingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

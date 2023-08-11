@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
+		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls",
 		reflect.TypeOf((*AuthenticatedOriginPulls)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfig",
+		"@cdktf/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfig",
 		reflect.TypeOf((*AuthenticatedOriginPullsConfig)(nil)).Elem(),
 	)
 }

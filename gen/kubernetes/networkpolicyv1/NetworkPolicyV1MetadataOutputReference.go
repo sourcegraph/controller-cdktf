@@ -309,7 +309,7 @@ func NewNetworkPolicyV1MetadataOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_NetworkPolicyV1MetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.networkPolicyV1.NetworkPolicyV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicyV1.NetworkPolicyV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -321,7 +321,7 @@ func NewNetworkPolicyV1MetadataOutputReference_Override(n NetworkPolicyV1Metadat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.networkPolicyV1.NetworkPolicyV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicyV1.NetworkPolicyV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

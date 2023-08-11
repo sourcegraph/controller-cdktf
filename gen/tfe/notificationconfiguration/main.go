@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.notificationConfiguration.NotificationConfiguration",
+		"@cdktf/provider-tfe.notificationConfiguration.NotificationConfiguration",
 		reflect.TypeOf((*NotificationConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.notificationConfiguration.NotificationConfigurationConfig",
+		"@cdktf/provider-tfe.notificationConfiguration.NotificationConfigurationConfig",
 		reflect.TypeOf((*NotificationConfigurationConfig)(nil)).Elem(),
 	)
 }

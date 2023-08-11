@@ -661,7 +661,7 @@ func NewLexIntent(scope constructs.Construct, id *string, config *LexIntentConfi
 	j := jsiiProxy_LexIntent{}
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntent",
+		"@cdktf/provider-aws.lexIntent.LexIntent",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -674,7 +674,7 @@ func NewLexIntent_Override(l LexIntent, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntent",
+		"@cdktf/provider-aws.lexIntent.LexIntent",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -840,7 +840,7 @@ func LexIntent_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lexIntent.LexIntent",
+		"@cdktf/provider-aws.lexIntent.LexIntent",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -859,7 +859,7 @@ func LexIntent_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lexIntent.LexIntent",
+		"@cdktf/provider-aws.lexIntent.LexIntent",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -878,7 +878,7 @@ func LexIntent_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lexIntent.LexIntent",
+		"@cdktf/provider-aws.lexIntent.LexIntent",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -891,7 +891,7 @@ func LexIntent_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lexIntent.LexIntent",
+		"@cdktf/provider-aws.lexIntent.LexIntent",
 		"tfResourceType",
 		&returns,
 	)

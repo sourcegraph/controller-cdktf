@@ -204,7 +204,7 @@ func NewGoogleGkeHubFeatureSpecOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_GoogleGkeHubFeatureSpecOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleGkeHubFeatureSpecOutputReference_Override(g GoogleGkeHubFeatureSpe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

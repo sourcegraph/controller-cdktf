@@ -180,7 +180,7 @@ func NewSchedulerScheduleTargetSagemakerPipelineParametersOutputReference(terraf
 	j := jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersOutputReference{}
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersOutputReference",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewSchedulerScheduleTargetSagemakerPipelineParametersOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersOutputReference",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

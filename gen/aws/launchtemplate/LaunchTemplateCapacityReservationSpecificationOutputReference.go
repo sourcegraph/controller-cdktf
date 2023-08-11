@@ -204,7 +204,7 @@ func NewLaunchTemplateCapacityReservationSpecificationOutputReference(terraformR
 	j := jsiiProxy_LaunchTemplateCapacityReservationSpecificationOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewLaunchTemplateCapacityReservationSpecificationOutputReference_Override(l
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

@@ -397,7 +397,7 @@ func NewDataAwsInternetGateway(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataAwsInternetGateway{}
 
 	_jsii_.Create(
-		"aws.dataAwsInternetGateway.DataAwsInternetGateway",
+		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -410,7 +410,7 @@ func NewDataAwsInternetGateway_Override(d DataAwsInternetGateway, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInternetGateway.DataAwsInternetGateway",
+		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGateway",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -521,7 +521,7 @@ func DataAwsInternetGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsInternetGateway.DataAwsInternetGateway",
+		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func DataAwsInternetGateway_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsInternetGateway.DataAwsInternetGateway",
+		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGateway",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -559,7 +559,7 @@ func DataAwsInternetGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsInternetGateway.DataAwsInternetGateway",
+		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func DataAwsInternetGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsInternetGateway.DataAwsInternetGateway",
+		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGateway",
 		"tfResourceType",
 		&returns,
 	)

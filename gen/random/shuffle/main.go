@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"random.shuffle.Shuffle",
+		"@cdktf/provider-random.shuffle.Shuffle",
 		reflect.TypeOf((*Shuffle)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"random.shuffle.ShuffleConfig",
+		"@cdktf/provider-random.shuffle.ShuffleConfig",
 		reflect.TypeOf((*ShuffleConfig)(nil)).Elem(),
 	)
 }

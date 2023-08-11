@@ -116,7 +116,7 @@ func NewSecurePasswordStoreAppUsersList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_SecurePasswordStoreAppUsersList{}
 
 	_jsii_.Create(
-		"okta.securePasswordStoreApp.SecurePasswordStoreAppUsersList",
+		"@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreAppUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurePasswordStoreAppUsersList_Override(s SecurePasswordStoreAppUsersLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.securePasswordStoreApp.SecurePasswordStoreAppUsersList",
+		"@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreAppUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

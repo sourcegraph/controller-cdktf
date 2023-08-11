@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership",
 		reflect.TypeOf((*DataTfeOrganizationMembership)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembershipConfig",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembershipConfig",
 		reflect.TypeOf((*DataTfeOrganizationMembershipConfig)(nil)).Elem(),
 	)
 }

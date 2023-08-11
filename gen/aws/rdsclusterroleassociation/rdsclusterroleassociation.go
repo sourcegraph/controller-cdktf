@@ -365,7 +365,7 @@ func NewRdsClusterRoleAssociation(scope constructs.Construct, id *string, config
 	j := jsiiProxy_RdsClusterRoleAssociation{}
 
 	_jsii_.Create(
-		"aws.rdsClusterRoleAssociation.RdsClusterRoleAssociation",
+		"@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewRdsClusterRoleAssociation_Override(r RdsClusterRoleAssociation, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rdsClusterRoleAssociation.RdsClusterRoleAssociation",
+		"@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociation",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -522,7 +522,7 @@ func RdsClusterRoleAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rdsClusterRoleAssociation.RdsClusterRoleAssociation",
+		"@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func RdsClusterRoleAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rdsClusterRoleAssociation.RdsClusterRoleAssociation",
+		"@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func RdsClusterRoleAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rdsClusterRoleAssociation.RdsClusterRoleAssociation",
+		"@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func RdsClusterRoleAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.rdsClusterRoleAssociation.RdsClusterRoleAssociation",
+		"@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociation",
 		"tfResourceType",
 		&returns,
 	)

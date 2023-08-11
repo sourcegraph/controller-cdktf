@@ -521,7 +521,7 @@ func NewGoogleLoggingProjectSink(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_GoogleLoggingProjectSink{}
 
 	_jsii_.Create(
-		"google-beta.googleLoggingProjectSink.GoogleLoggingProjectSink",
+		"@cdktf/provider-google-beta.googleLoggingProjectSink.GoogleLoggingProjectSink",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -534,7 +534,7 @@ func NewGoogleLoggingProjectSink_Override(g GoogleLoggingProjectSink, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleLoggingProjectSink.GoogleLoggingProjectSink",
+		"@cdktf/provider-google-beta.googleLoggingProjectSink.GoogleLoggingProjectSink",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -722,7 +722,7 @@ func GoogleLoggingProjectSink_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingProjectSink.GoogleLoggingProjectSink",
+		"@cdktf/provider-google-beta.googleLoggingProjectSink.GoogleLoggingProjectSink",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -741,7 +741,7 @@ func GoogleLoggingProjectSink_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingProjectSink.GoogleLoggingProjectSink",
+		"@cdktf/provider-google-beta.googleLoggingProjectSink.GoogleLoggingProjectSink",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -760,7 +760,7 @@ func GoogleLoggingProjectSink_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingProjectSink.GoogleLoggingProjectSink",
+		"@cdktf/provider-google-beta.googleLoggingProjectSink.GoogleLoggingProjectSink",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -773,7 +773,7 @@ func GoogleLoggingProjectSink_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleLoggingProjectSink.GoogleLoggingProjectSink",
+		"@cdktf/provider-google-beta.googleLoggingProjectSink.GoogleLoggingProjectSink",
 		"tfResourceType",
 		&returns,
 	)

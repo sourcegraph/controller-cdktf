@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dbOptionGroup.DbOptionGroup",
+		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroup",
 		reflect.TypeOf((*DbOptionGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,15 +83,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbOptionGroup.DbOptionGroupConfig",
+		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroupConfig",
 		reflect.TypeOf((*DbOptionGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbOptionGroup.DbOptionGroupOption",
+		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroupOption",
 		reflect.TypeOf((*DbOptionGroupOption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dbOptionGroup.DbOptionGroupOptionList",
+		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroupOptionList",
 		reflect.TypeOf((*DbOptionGroupOptionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -112,11 +112,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbOptionGroup.DbOptionGroupOptionOptionSettings",
+		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroupOptionOptionSettings",
 		reflect.TypeOf((*DbOptionGroupOptionOptionSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dbOptionGroup.DbOptionGroupOptionOptionSettingsList",
+		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroupOptionOptionSettingsList",
 		reflect.TypeOf((*DbOptionGroupOptionOptionSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -137,7 +137,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dbOptionGroup.DbOptionGroupOptionOptionSettingsOutputReference",
+		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroupOptionOptionSettingsOutputReference",
 		reflect.TypeOf((*DbOptionGroupOptionOptionSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -173,7 +173,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dbOptionGroup.DbOptionGroupOptionOutputReference",
+		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroupOptionOutputReference",
 		reflect.TypeOf((*DbOptionGroupOptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -223,11 +223,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbOptionGroup.DbOptionGroupTimeouts",
+		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroupTimeouts",
 		reflect.TypeOf((*DbOptionGroupTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dbOptionGroup.DbOptionGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroupTimeoutsOutputReference",
 		reflect.TypeOf((*DbOptionGroupTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

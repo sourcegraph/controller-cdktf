@@ -342,7 +342,7 @@ func NewOauthAppRedirectUri(scope constructs.Construct, id *string, config *Oaut
 	j := jsiiProxy_OauthAppRedirectUri{}
 
 	_jsii_.Create(
-		"okta.oauthAppRedirectUri.OauthAppRedirectUri",
+		"@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewOauthAppRedirectUri_Override(o OauthAppRedirectUri, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.oauthAppRedirectUri.OauthAppRedirectUri",
+		"@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -488,7 +488,7 @@ func OauthAppRedirectUri_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.oauthAppRedirectUri.OauthAppRedirectUri",
+		"@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func OauthAppRedirectUri_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.oauthAppRedirectUri.OauthAppRedirectUri",
+		"@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func OauthAppRedirectUri_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.oauthAppRedirectUri.OauthAppRedirectUri",
+		"@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func OauthAppRedirectUri_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.oauthAppRedirectUri.OauthAppRedirectUri",
+		"@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri",
 		"tfResourceType",
 		&returns,
 	)

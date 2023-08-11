@@ -299,7 +299,7 @@ func NewAppSamlAttributeStatementsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_AppSamlAttributeStatementsOutputReference{}
 
 	_jsii_.Create(
-		"okta.appSaml.AppSamlAttributeStatementsOutputReference",
+		"@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewAppSamlAttributeStatementsOutputReference_Override(a AppSamlAttributeSta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appSaml.AppSamlAttributeStatementsOutputReference",
+		"@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

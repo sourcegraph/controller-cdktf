@@ -372,7 +372,7 @@ func NewRumAppMonitorAppMonitorConfigurationOutputReference(terraformResource cd
 	j := jsiiProxy_RumAppMonitorAppMonitorConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.rumAppMonitor.RumAppMonitorAppMonitorConfigurationOutputReference",
+		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -384,7 +384,7 @@ func NewRumAppMonitorAppMonitorConfigurationOutputReference_Override(r RumAppMon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rumAppMonitor.RumAppMonitorAppMonitorConfigurationOutputReference",
+		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitorAppMonitorConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

@@ -415,7 +415,7 @@ func NewLambdaFunctionEventInvokeConfig(scope constructs.Construct, id *string, 
 	j := jsiiProxy_LambdaFunctionEventInvokeConfig{}
 
 	_jsii_.Create(
-		"aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfig",
+		"@cdktf/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -428,7 +428,7 @@ func NewLambdaFunctionEventInvokeConfig_Override(l LambdaFunctionEventInvokeConf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfig",
+		"@cdktf/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfig",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -583,7 +583,7 @@ func LambdaFunctionEventInvokeConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfig",
+		"@cdktf/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -602,7 +602,7 @@ func LambdaFunctionEventInvokeConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfig",
+		"@cdktf/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func LambdaFunctionEventInvokeConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfig",
+		"@cdktf/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func LambdaFunctionEventInvokeConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfig",
+		"@cdktf/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfig",
 		"tfResourceType",
 		&returns,
 	)

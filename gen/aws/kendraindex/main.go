@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.kendraIndex.KendraIndex",
+		"@cdktf/provider-aws.kendraIndex.KendraIndex",
 		reflect.TypeOf((*KendraIndex)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -104,11 +104,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraIndex.KendraIndexCapacityUnits",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexCapacityUnits",
 		reflect.TypeOf((*KendraIndexCapacityUnits)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraIndex.KendraIndexCapacityUnitsOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexCapacityUnitsOutputReference",
 		reflect.TypeOf((*KendraIndexCapacityUnitsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -146,15 +146,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraIndex.KendraIndexConfig",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexConfig",
 		reflect.TypeOf((*KendraIndexConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdates",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdates",
 		reflect.TypeOf((*KendraIndexDocumentMetadataConfigurationUpdates)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesList",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesList",
 		reflect.TypeOf((*KendraIndexDocumentMetadataConfigurationUpdatesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -175,7 +175,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesOutputReference",
 		reflect.TypeOf((*KendraIndexDocumentMetadataConfigurationUpdatesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -219,11 +219,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesRelevance",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesRelevance",
 		reflect.TypeOf((*KendraIndexDocumentMetadataConfigurationUpdatesRelevance)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputReference",
 		reflect.TypeOf((*KendraIndexDocumentMetadataConfigurationUpdatesRelevanceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -270,11 +270,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesSearch",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesSearch",
 		reflect.TypeOf((*KendraIndexDocumentMetadataConfigurationUpdatesSearch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference",
 		reflect.TypeOf((*KendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -318,15 +318,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraIndex.KendraIndexIndexStatistics",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatistics",
 		reflect.TypeOf((*KendraIndexIndexStatistics)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraIndex.KendraIndexIndexStatisticsFaqStatistics",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatisticsFaqStatistics",
 		reflect.TypeOf((*KendraIndexIndexStatisticsFaqStatistics)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraIndex.KendraIndexIndexStatisticsFaqStatisticsList",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatisticsFaqStatisticsList",
 		reflect.TypeOf((*KendraIndexIndexStatisticsFaqStatisticsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -346,7 +346,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraIndex.KendraIndexIndexStatisticsFaqStatisticsOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatisticsFaqStatisticsOutputReference",
 		reflect.TypeOf((*KendraIndexIndexStatisticsFaqStatisticsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -379,7 +379,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraIndex.KendraIndexIndexStatisticsList",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatisticsList",
 		reflect.TypeOf((*KendraIndexIndexStatisticsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -399,7 +399,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraIndex.KendraIndexIndexStatisticsOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatisticsOutputReference",
 		reflect.TypeOf((*KendraIndexIndexStatisticsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -433,11 +433,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraIndex.KendraIndexIndexStatisticsTextDocumentStatistics",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatisticsTextDocumentStatistics",
 		reflect.TypeOf((*KendraIndexIndexStatisticsTextDocumentStatistics)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraIndex.KendraIndexIndexStatisticsTextDocumentStatisticsList",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatisticsTextDocumentStatisticsList",
 		reflect.TypeOf((*KendraIndexIndexStatisticsTextDocumentStatisticsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -457,7 +457,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraIndex.KendraIndexIndexStatisticsTextDocumentStatisticsOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatisticsTextDocumentStatisticsOutputReference",
 		reflect.TypeOf((*KendraIndexIndexStatisticsTextDocumentStatisticsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -491,11 +491,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraIndex.KendraIndexServerSideEncryptionConfiguration",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexServerSideEncryptionConfiguration",
 		reflect.TypeOf((*KendraIndexServerSideEncryptionConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraIndex.KendraIndexServerSideEncryptionConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexServerSideEncryptionConfigurationOutputReference",
 		reflect.TypeOf((*KendraIndexServerSideEncryptionConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -530,11 +530,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraIndex.KendraIndexTimeouts",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexTimeouts",
 		reflect.TypeOf((*KendraIndexTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraIndex.KendraIndexTimeoutsOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexTimeoutsOutputReference",
 		reflect.TypeOf((*KendraIndexTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -575,11 +575,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraIndex.KendraIndexUserGroupResolutionConfiguration",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexUserGroupResolutionConfiguration",
 		reflect.TypeOf((*KendraIndexUserGroupResolutionConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraIndex.KendraIndexUserGroupResolutionConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexUserGroupResolutionConfigurationOutputReference",
 		reflect.TypeOf((*KendraIndexUserGroupResolutionConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -613,15 +613,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraIndex.KendraIndexUserTokenConfigurations",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexUserTokenConfigurations",
 		reflect.TypeOf((*KendraIndexUserTokenConfigurations)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraIndex.KendraIndexUserTokenConfigurationsJsonTokenTypeConfiguration",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexUserTokenConfigurationsJsonTokenTypeConfiguration",
 		reflect.TypeOf((*KendraIndexUserTokenConfigurationsJsonTokenTypeConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraIndex.KendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationOutputReference",
 		reflect.TypeOf((*KendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -657,11 +657,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraIndex.KendraIndexUserTokenConfigurationsJwtTokenTypeConfiguration",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexUserTokenConfigurationsJwtTokenTypeConfiguration",
 		reflect.TypeOf((*KendraIndexUserTokenConfigurationsJwtTokenTypeConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraIndex.KendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReference",
 		reflect.TypeOf((*KendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "claimRegex", GoGetter: "ClaimRegex"},
@@ -713,7 +713,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraIndex.KendraIndexUserTokenConfigurationsOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexUserTokenConfigurationsOutputReference",
 		reflect.TypeOf((*KendraIndexUserTokenConfigurationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

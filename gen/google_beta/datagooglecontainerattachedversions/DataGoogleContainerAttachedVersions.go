@@ -325,7 +325,7 @@ func NewDataGoogleContainerAttachedVersions(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataGoogleContainerAttachedVersions{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
+		"@cdktf/provider-google-beta.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -338,7 +338,7 @@ func NewDataGoogleContainerAttachedVersions_Override(d DataGoogleContainerAttach
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
+		"@cdktf/provider-google-beta.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -449,7 +449,7 @@ func DataGoogleContainerAttachedVersions_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
+		"@cdktf/provider-google-beta.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -468,7 +468,7 @@ func DataGoogleContainerAttachedVersions_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
+		"@cdktf/provider-google-beta.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -487,7 +487,7 @@ func DataGoogleContainerAttachedVersions_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
+		"@cdktf/provider-google-beta.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -500,7 +500,7 @@ func DataGoogleContainerAttachedVersions_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
+		"@cdktf/provider-google-beta.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
 		"tfResourceType",
 		&returns,
 	)

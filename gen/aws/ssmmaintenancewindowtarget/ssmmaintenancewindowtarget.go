@@ -437,7 +437,7 @@ func NewSsmMaintenanceWindowTarget(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_SsmMaintenanceWindowTarget{}
 
 	_jsii_.Create(
-		"aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTarget",
+		"@cdktf/provider-aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTarget",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -450,7 +450,7 @@ func NewSsmMaintenanceWindowTarget_Override(s SsmMaintenanceWindowTarget, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTarget",
+		"@cdktf/provider-aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTarget",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -616,7 +616,7 @@ func SsmMaintenanceWindowTarget_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTarget",
+		"@cdktf/provider-aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTarget",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -635,7 +635,7 @@ func SsmMaintenanceWindowTarget_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTarget",
+		"@cdktf/provider-aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTarget",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func SsmMaintenanceWindowTarget_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTarget",
+		"@cdktf/provider-aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTarget",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func SsmMaintenanceWindowTarget_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTarget",
+		"@cdktf/provider-aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTarget",
 		"tfResourceType",
 		&returns,
 	)

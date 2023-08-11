@@ -402,7 +402,7 @@ func NewAccessanalyzerAnalyzer(scope constructs.Construct, id *string, config *A
 	j := jsiiProxy_AccessanalyzerAnalyzer{}
 
 	_jsii_.Create(
-		"aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzer",
+		"@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -415,7 +415,7 @@ func NewAccessanalyzerAnalyzer_Override(a AccessanalyzerAnalyzer, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzer",
+		"@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzer",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -570,7 +570,7 @@ func AccessanalyzerAnalyzer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzer",
+		"@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -589,7 +589,7 @@ func AccessanalyzerAnalyzer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzer",
+		"@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func AccessanalyzerAnalyzer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzer",
+		"@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func AccessanalyzerAnalyzer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzer",
+		"@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzer",
 		"tfResourceType",
 		&returns,
 	)

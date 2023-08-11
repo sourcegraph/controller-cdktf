@@ -179,7 +179,7 @@ func NewVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig
 	j := jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

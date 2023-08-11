@@ -274,7 +274,7 @@ func NewMedialiveChannelEncoderSettingsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_MedialiveChannelEncoderSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -286,7 +286,7 @@ func NewMedialiveChannelEncoderSettingsOutputReference_Override(m MedialiveChann
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

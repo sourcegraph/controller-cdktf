@@ -180,7 +180,7 @@ func NewFsxDataRepositoryAssociationS3AutoImportPolicyOutputReference(terraformR
 	j := jsiiProxy_FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference",
+		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewFsxDataRepositoryAssociationS3AutoImportPolicyOutputReference_Override(f
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference",
+		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

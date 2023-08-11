@@ -179,7 +179,7 @@ func NewGkeBackupBackupPlanBackupConfigSelectedApplicationsOutputReference(terra
 	j := jsiiProxy_GkeBackupBackupPlanBackupConfigSelectedApplicationsOutputReference{}
 
 	_jsii_.Create(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigSelectedApplicationsOutputReference",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigSelectedApplicationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGkeBackupBackupPlanBackupConfigSelectedApplicationsOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigSelectedApplicationsOutputReference",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigSelectedApplicationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

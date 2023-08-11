@@ -204,7 +204,7 @@ func NewVpcAccessConnectorTimeoutsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_VpcAccessConnectorTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.vpcAccessConnector.VpcAccessConnectorTimeoutsOutputReference",
+		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnectorTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewVpcAccessConnectorTimeoutsOutputReference_Override(v VpcAccessConnectorT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vpcAccessConnector.VpcAccessConnectorTimeoutsOutputReference",
+		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnectorTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

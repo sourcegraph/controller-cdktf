@@ -211,7 +211,7 @@ func NewDataGoogleAlloydbLocationsLocationsOutputReference(terraformResource cdk
 	j := jsiiProxy_DataGoogleAlloydbLocationsLocationsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataGoogleAlloydbLocationsLocationsOutputReference_Override(d DataGoogle
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

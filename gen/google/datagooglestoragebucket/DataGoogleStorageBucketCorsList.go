@@ -104,7 +104,7 @@ func NewDataGoogleStorageBucketCorsList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_DataGoogleStorageBucketCorsList{}
 
 	_jsii_.Create(
-		"google.dataGoogleStorageBucket.DataGoogleStorageBucketCorsList",
+		"@cdktf/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketCorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleStorageBucketCorsList_Override(d DataGoogleStorageBucketCorsLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleStorageBucket.DataGoogleStorageBucketCorsList",
+		"@cdktf/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketCorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

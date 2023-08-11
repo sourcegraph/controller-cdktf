@@ -1,0 +1,11 @@
+name: random
+
+provider:
+  source: registry.terraform.io/hashicorp/random
+  version: "3.5.1"
+
+target:
+  language: go
+  moduleName: github.com/sourcegraph/controller-cdktf/gen
+
+output: gen

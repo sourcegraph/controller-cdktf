@@ -116,7 +116,7 @@ func NewDataAwsCustomerGatewayFilterList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_DataAwsCustomerGatewayFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilterList",
+		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsCustomerGatewayFilterList_Override(d DataAwsCustomerGatewayFilter
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilterList",
+		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

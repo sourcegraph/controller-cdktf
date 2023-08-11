@@ -377,7 +377,7 @@ func NewIapWebBackendServiceIamPolicy(scope constructs.Construct, id *string, co
 	j := jsiiProxy_IapWebBackendServiceIamPolicy{}
 
 	_jsii_.Create(
-		"google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicy",
+		"@cdktf/provider-google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewIapWebBackendServiceIamPolicy_Override(i IapWebBackendServiceIamPolicy, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicy",
+		"@cdktf/provider-google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicy",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -534,7 +534,7 @@ func IapWebBackendServiceIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicy",
+		"@cdktf/provider-google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func IapWebBackendServiceIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicy",
+		"@cdktf/provider-google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func IapWebBackendServiceIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicy",
+		"@cdktf/provider-google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func IapWebBackendServiceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicy",
+		"@cdktf/provider-google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

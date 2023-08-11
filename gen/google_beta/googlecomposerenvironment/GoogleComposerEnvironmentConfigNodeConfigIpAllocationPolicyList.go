@@ -116,7 +116,7 @@ func NewGoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyList(terrafor
 	j := jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyList{}
 
 	_jsii_.Create(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyList",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyList",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

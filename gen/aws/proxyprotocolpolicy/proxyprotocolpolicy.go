@@ -342,7 +342,7 @@ func NewProxyProtocolPolicy(scope constructs.Construct, id *string, config *Prox
 	j := jsiiProxy_ProxyProtocolPolicy{}
 
 	_jsii_.Create(
-		"aws.proxyProtocolPolicy.ProxyProtocolPolicy",
+		"@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewProxyProtocolPolicy_Override(p ProxyProtocolPolicy, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.proxyProtocolPolicy.ProxyProtocolPolicy",
+		"@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicy",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -488,7 +488,7 @@ func ProxyProtocolPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.proxyProtocolPolicy.ProxyProtocolPolicy",
+		"@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func ProxyProtocolPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.proxyProtocolPolicy.ProxyProtocolPolicy",
+		"@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func ProxyProtocolPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.proxyProtocolPolicy.ProxyProtocolPolicy",
+		"@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func ProxyProtocolPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.proxyProtocolPolicy.ProxyProtocolPolicy",
+		"@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicy",
 		"tfResourceType",
 		&returns,
 	)

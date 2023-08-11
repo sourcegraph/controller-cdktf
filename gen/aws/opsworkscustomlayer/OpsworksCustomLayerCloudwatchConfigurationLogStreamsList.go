@@ -116,7 +116,7 @@ func NewOpsworksCustomLayerCloudwatchConfigurationLogStreamsList(terraformResour
 	j := jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsList{}
 
 	_jsii_.Create(
-		"aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreamsList",
+		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreamsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOpsworksCustomLayerCloudwatchConfigurationLogStreamsList_Override(o Opsw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreamsList",
+		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreamsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

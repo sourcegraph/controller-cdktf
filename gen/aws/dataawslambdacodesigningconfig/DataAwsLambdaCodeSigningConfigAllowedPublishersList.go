@@ -104,7 +104,7 @@ func NewDataAwsLambdaCodeSigningConfigAllowedPublishersList(terraformResource cd
 	j := jsiiProxy_DataAwsLambdaCodeSigningConfigAllowedPublishersList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfigAllowedPublishersList",
+		"@cdktf/provider-aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfigAllowedPublishersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLambdaCodeSigningConfigAllowedPublishersList_Override(d DataAwsLa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfigAllowedPublishersList",
+		"@cdktf/provider-aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfigAllowedPublishersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

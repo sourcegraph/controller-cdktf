@@ -449,7 +449,7 @@ func NewDataGoogleVpcAccessConnector(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataGoogleVpcAccessConnector{}
 
 	_jsii_.Create(
-		"google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnector",
+		"@cdktf/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnector",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -462,7 +462,7 @@ func NewDataGoogleVpcAccessConnector_Override(d DataGoogleVpcAccessConnector, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnector",
+		"@cdktf/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnector",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -584,7 +584,7 @@ func DataGoogleVpcAccessConnector_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnector",
+		"@cdktf/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnector",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -603,7 +603,7 @@ func DataGoogleVpcAccessConnector_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnector",
+		"@cdktf/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnector",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func DataGoogleVpcAccessConnector_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnector",
+		"@cdktf/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnector",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -635,7 +635,7 @@ func DataGoogleVpcAccessConnector_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnector",
+		"@cdktf/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnector",
 		"tfResourceType",
 		&returns,
 	)

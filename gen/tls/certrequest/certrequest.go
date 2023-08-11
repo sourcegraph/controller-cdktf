@@ -424,7 +424,7 @@ func NewCertRequest(scope constructs.Construct, id *string, config *CertRequestC
 	j := jsiiProxy_CertRequest{}
 
 	_jsii_.Create(
-		"tls.certRequest.CertRequest",
+		"@cdktf/provider-tls.certRequest.CertRequest",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewCertRequest_Override(c CertRequest, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tls.certRequest.CertRequest",
+		"@cdktf/provider-tls.certRequest.CertRequest",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -581,7 +581,7 @@ func CertRequest_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tls.certRequest.CertRequest",
+		"@cdktf/provider-tls.certRequest.CertRequest",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -600,7 +600,7 @@ func CertRequest_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tls.certRequest.CertRequest",
+		"@cdktf/provider-tls.certRequest.CertRequest",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func CertRequest_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tls.certRequest.CertRequest",
+		"@cdktf/provider-tls.certRequest.CertRequest",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func CertRequest_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tls.certRequest.CertRequest",
+		"@cdktf/provider-tls.certRequest.CertRequest",
 		"tfResourceType",
 		&returns,
 	)

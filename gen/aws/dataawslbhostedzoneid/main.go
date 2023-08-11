@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneId",
+		"@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneId",
 		reflect.TypeOf((*DataAwsLbHostedZoneId)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneIdConfig",
+		"@cdktf/provider-aws.dataAwsLbHostedZoneId.DataAwsLbHostedZoneIdConfig",
 		reflect.TypeOf((*DataAwsLbHostedZoneIdConfig)(nil)).Elem(),
 	)
 }

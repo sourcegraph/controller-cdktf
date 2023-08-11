@@ -116,7 +116,7 @@ func NewDaxParameterGroupParametersList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_DaxParameterGroupParametersList{}
 
 	_jsii_.Create(
-		"aws.daxParameterGroup.DaxParameterGroupParametersList",
+		"@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDaxParameterGroupParametersList_Override(d DaxParameterGroupParametersLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.daxParameterGroup.DaxParameterGroupParametersList",
+		"@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

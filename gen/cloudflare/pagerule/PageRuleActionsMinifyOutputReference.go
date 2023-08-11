@@ -225,7 +225,7 @@ func NewPageRuleActionsMinifyOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_PageRuleActionsMinifyOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.pageRule.PageRuleActionsMinifyOutputReference",
+		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsMinifyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewPageRuleActionsMinifyOutputReference_Override(p PageRuleActionsMinifyOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.pageRule.PageRuleActionsMinifyOutputReference",
+		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsMinifyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

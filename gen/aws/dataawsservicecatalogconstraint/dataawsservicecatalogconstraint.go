@@ -405,7 +405,7 @@ func NewDataAwsServicecatalogConstraint(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataAwsServicecatalogConstraint{}
 
 	_jsii_.Create(
-		"aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint",
+		"@cdktf/provider-aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -418,7 +418,7 @@ func NewDataAwsServicecatalogConstraint_Override(d DataAwsServicecatalogConstrai
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint",
+		"@cdktf/provider-aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -529,7 +529,7 @@ func DataAwsServicecatalogConstraint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint",
+		"@cdktf/provider-aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -548,7 +548,7 @@ func DataAwsServicecatalogConstraint_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint",
+		"@cdktf/provider-aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -567,7 +567,7 @@ func DataAwsServicecatalogConstraint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint",
+		"@cdktf/provider-aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -580,7 +580,7 @@ func DataAwsServicecatalogConstraint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint",
+		"@cdktf/provider-aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint",
 		"tfResourceType",
 		&returns,
 	)

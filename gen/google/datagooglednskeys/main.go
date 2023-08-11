@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleDnsKeys.DataGoogleDnsKeys",
+		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeys",
 		reflect.TypeOf((*DataGoogleDnsKeys)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,19 +58,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleDnsKeys.DataGoogleDnsKeysConfig",
+		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysConfig",
 		reflect.TypeOf((*DataGoogleDnsKeysConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeys",
+		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeys",
 		reflect.TypeOf((*DataGoogleDnsKeysKeySigningKeys)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysDigests",
+		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysDigests",
 		reflect.TypeOf((*DataGoogleDnsKeysKeySigningKeysDigests)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysDigestsList",
+		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysDigestsList",
 		reflect.TypeOf((*DataGoogleDnsKeysKeySigningKeysDigestsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -90,7 +90,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysDigestsOutputReference",
+		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysDigestsOutputReference",
 		reflect.TypeOf((*DataGoogleDnsKeysKeySigningKeysDigestsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -124,7 +124,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysList",
+		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysList",
 		reflect.TypeOf((*DataGoogleDnsKeysKeySigningKeysList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -144,7 +144,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysOutputReference",
+		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysOutputReference",
 		reflect.TypeOf((*DataGoogleDnsKeysKeySigningKeysOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},
@@ -186,15 +186,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeys",
+		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeys",
 		reflect.TypeOf((*DataGoogleDnsKeysZoneSigningKeys)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysDigests",
+		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysDigests",
 		reflect.TypeOf((*DataGoogleDnsKeysZoneSigningKeysDigests)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysDigestsList",
+		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysDigestsList",
 		reflect.TypeOf((*DataGoogleDnsKeysZoneSigningKeysDigestsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -214,7 +214,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysDigestsOutputReference",
+		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysDigestsOutputReference",
 		reflect.TypeOf((*DataGoogleDnsKeysZoneSigningKeysDigestsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -248,7 +248,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysList",
+		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysList",
 		reflect.TypeOf((*DataGoogleDnsKeysZoneSigningKeysList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -268,7 +268,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysOutputReference",
+		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysOutputReference",
 		reflect.TypeOf((*DataGoogleDnsKeysZoneSigningKeysOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.folderAccessApprovalSettings.FolderAccessApprovalSettings",
+		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettings",
 		reflect.TypeOf((*FolderAccessApprovalSettings)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeKeyVersion", GoGetter: "ActiveKeyVersion"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.folderAccessApprovalSettings.FolderAccessApprovalSettingsConfig",
+		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettingsConfig",
 		reflect.TypeOf((*FolderAccessApprovalSettingsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.folderAccessApprovalSettings.FolderAccessApprovalSettingsEnrolledServices",
+		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettingsEnrolledServices",
 		reflect.TypeOf((*FolderAccessApprovalSettingsEnrolledServices)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.folderAccessApprovalSettings.FolderAccessApprovalSettingsEnrolledServicesList",
+		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettingsEnrolledServicesList",
 		reflect.TypeOf((*FolderAccessApprovalSettingsEnrolledServicesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.folderAccessApprovalSettings.FolderAccessApprovalSettingsEnrolledServicesOutputReference",
+		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettingsEnrolledServicesOutputReference",
 		reflect.TypeOf((*FolderAccessApprovalSettingsEnrolledServicesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudProduct", GoGetter: "CloudProduct"},
@@ -140,11 +140,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.folderAccessApprovalSettings.FolderAccessApprovalSettingsTimeouts",
+		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettingsTimeouts",
 		reflect.TypeOf((*FolderAccessApprovalSettingsTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.folderAccessApprovalSettings.FolderAccessApprovalSettingsTimeoutsOutputReference",
+		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettingsTimeoutsOutputReference",
 		reflect.TypeOf((*FolderAccessApprovalSettingsTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

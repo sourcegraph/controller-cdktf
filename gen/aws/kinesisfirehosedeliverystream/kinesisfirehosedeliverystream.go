@@ -654,7 +654,7 @@ func NewKinesisFirehoseDeliveryStream(scope constructs.Construct, id *string, co
 	j := jsiiProxy_KinesisFirehoseDeliveryStream{}
 
 	_jsii_.Create(
-		"aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream",
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -667,7 +667,7 @@ func NewKinesisFirehoseDeliveryStream_Override(k KinesisFirehoseDeliveryStream, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream",
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -855,7 +855,7 @@ func KinesisFirehoseDeliveryStream_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream",
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -874,7 +874,7 @@ func KinesisFirehoseDeliveryStream_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream",
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -893,7 +893,7 @@ func KinesisFirehoseDeliveryStream_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream",
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -906,7 +906,7 @@ func KinesisFirehoseDeliveryStream_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream",
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream",
 		"tfResourceType",
 		&returns,
 	)

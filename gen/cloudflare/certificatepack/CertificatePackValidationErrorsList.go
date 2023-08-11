@@ -116,7 +116,7 @@ func NewCertificatePackValidationErrorsList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_CertificatePackValidationErrorsList{}
 
 	_jsii_.Create(
-		"cloudflare.certificatePack.CertificatePackValidationErrorsList",
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationErrorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCertificatePackValidationErrorsList_Override(c CertificatePackValidation
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.certificatePack.CertificatePackValidationErrorsList",
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationErrorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

@@ -228,7 +228,7 @@ func NewAccessGroupRequireGithubOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_AccessGroupRequireGithubOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupRequireGithubOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithubOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAccessGroupRequireGithubOutputReference_Override(a AccessGroupRequireGit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupRequireGithubOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithubOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

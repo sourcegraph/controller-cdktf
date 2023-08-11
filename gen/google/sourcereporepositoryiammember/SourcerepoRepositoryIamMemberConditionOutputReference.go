@@ -226,7 +226,7 @@ func NewSourcerepoRepositoryIamMemberConditionOutputReference(terraformResource 
 	j := jsiiProxy_SourcerepoRepositoryIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMemberConditionOutputReference",
+		"@cdktf/provider-google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewSourcerepoRepositoryIamMemberConditionOutputReference_Override(s Sourcer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMemberConditionOutputReference",
+		"@cdktf/provider-google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

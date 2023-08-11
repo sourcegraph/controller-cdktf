@@ -178,7 +178,7 @@ func NewGoogleRedisInstanceNodesOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_GoogleRedisInstanceNodesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceNodesOutputReference",
+		"@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceNodesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewGoogleRedisInstanceNodesOutputReference_Override(g GoogleRedisInstanceNo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceNodesOutputReference",
+		"@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceNodesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

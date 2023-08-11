@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.rdsCluster.RdsCluster",
+		"@cdktf/provider-aws.rdsCluster.RdsCluster",
 		reflect.TypeOf((*RdsCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -210,15 +210,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.rdsCluster.RdsClusterConfig",
+		"@cdktf/provider-aws.rdsCluster.RdsClusterConfig",
 		reflect.TypeOf((*RdsClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.rdsCluster.RdsClusterRestoreToPointInTime",
+		"@cdktf/provider-aws.rdsCluster.RdsClusterRestoreToPointInTime",
 		reflect.TypeOf((*RdsClusterRestoreToPointInTime)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.rdsCluster.RdsClusterRestoreToPointInTimeOutputReference",
+		"@cdktf/provider-aws.rdsCluster.RdsClusterRestoreToPointInTimeOutputReference",
 		reflect.TypeOf((*RdsClusterRestoreToPointInTimeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -261,11 +261,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.rdsCluster.RdsClusterS3Import",
+		"@cdktf/provider-aws.rdsCluster.RdsClusterS3Import",
 		reflect.TypeOf((*RdsClusterS3Import)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.rdsCluster.RdsClusterS3ImportOutputReference",
+		"@cdktf/provider-aws.rdsCluster.RdsClusterS3ImportOutputReference",
 		reflect.TypeOf((*RdsClusterS3ImportOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -308,11 +308,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.rdsCluster.RdsClusterScalingConfiguration",
+		"@cdktf/provider-aws.rdsCluster.RdsClusterScalingConfiguration",
 		reflect.TypeOf((*RdsClusterScalingConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.rdsCluster.RdsClusterScalingConfigurationOutputReference",
+		"@cdktf/provider-aws.rdsCluster.RdsClusterScalingConfigurationOutputReference",
 		reflect.TypeOf((*RdsClusterScalingConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoPause", GoGetter: "AutoPause"},
@@ -359,11 +359,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.rdsCluster.RdsClusterServerlessv2ScalingConfiguration",
+		"@cdktf/provider-aws.rdsCluster.RdsClusterServerlessv2ScalingConfiguration",
 		reflect.TypeOf((*RdsClusterServerlessv2ScalingConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.rdsCluster.RdsClusterServerlessv2ScalingConfigurationOutputReference",
+		"@cdktf/provider-aws.rdsCluster.RdsClusterServerlessv2ScalingConfigurationOutputReference",
 		reflect.TypeOf((*RdsClusterServerlessv2ScalingConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -399,11 +399,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.rdsCluster.RdsClusterTimeouts",
+		"@cdktf/provider-aws.rdsCluster.RdsClusterTimeouts",
 		reflect.TypeOf((*RdsClusterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.rdsCluster.RdsClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.rdsCluster.RdsClusterTimeoutsOutputReference",
 		reflect.TypeOf((*RdsClusterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -251,7 +251,7 @@ func NewElasticBeanstalkApplicationAppversionLifecycleOutputReference(terraformR
 	j := jsiiProxy_ElasticBeanstalkApplicationAppversionLifecycleOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticBeanstalkApplication.ElasticBeanstalkApplicationAppversionLifecycleOutputReference",
+		"@cdktf/provider-aws.elasticBeanstalkApplication.ElasticBeanstalkApplicationAppversionLifecycleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewElasticBeanstalkApplicationAppversionLifecycleOutputReference_Override(e
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticBeanstalkApplication.ElasticBeanstalkApplicationAppversionLifecycleOutputReference",
+		"@cdktf/provider-aws.elasticBeanstalkApplication.ElasticBeanstalkApplicationAppversionLifecycleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

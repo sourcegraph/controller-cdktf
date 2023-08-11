@@ -180,7 +180,7 @@ func NewGoogleApigeeOrganizationPropertiesOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleApigeeOrganizationPropertiesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeOrganization.GoogleApigeeOrganizationPropertiesOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganizationPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleApigeeOrganizationPropertiesOutputReference_Override(g GoogleApige
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeOrganization.GoogleApigeeOrganizationPropertiesOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganizationPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

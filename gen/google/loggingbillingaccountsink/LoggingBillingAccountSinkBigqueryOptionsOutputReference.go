@@ -179,7 +179,7 @@ func NewLoggingBillingAccountSinkBigqueryOptionsOutputReference(terraformResourc
 	j := jsiiProxy_LoggingBillingAccountSinkBigqueryOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google.loggingBillingAccountSink.LoggingBillingAccountSinkBigqueryOptionsOutputReference",
+		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkBigqueryOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewLoggingBillingAccountSinkBigqueryOptionsOutputReference_Override(l Loggi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingBillingAccountSink.LoggingBillingAccountSinkBigqueryOptionsOutputReference",
+		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkBigqueryOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

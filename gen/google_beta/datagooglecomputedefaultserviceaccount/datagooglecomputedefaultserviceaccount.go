@@ -336,7 +336,7 @@ func NewDataGoogleComputeDefaultServiceAccount(scope constructs.Construct, id *s
 	j := jsiiProxy_DataGoogleComputeDefaultServiceAccount{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeDefaultServiceAccount.DataGoogleComputeDefaultServiceAccount",
+		"@cdktf/provider-google-beta.dataGoogleComputeDefaultServiceAccount.DataGoogleComputeDefaultServiceAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -349,7 +349,7 @@ func NewDataGoogleComputeDefaultServiceAccount_Override(d DataGoogleComputeDefau
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeDefaultServiceAccount.DataGoogleComputeDefaultServiceAccount",
+		"@cdktf/provider-google-beta.dataGoogleComputeDefaultServiceAccount.DataGoogleComputeDefaultServiceAccount",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -449,7 +449,7 @@ func DataGoogleComputeDefaultServiceAccount_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeDefaultServiceAccount.DataGoogleComputeDefaultServiceAccount",
+		"@cdktf/provider-google-beta.dataGoogleComputeDefaultServiceAccount.DataGoogleComputeDefaultServiceAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -468,7 +468,7 @@ func DataGoogleComputeDefaultServiceAccount_IsTerraformDataSource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeDefaultServiceAccount.DataGoogleComputeDefaultServiceAccount",
+		"@cdktf/provider-google-beta.dataGoogleComputeDefaultServiceAccount.DataGoogleComputeDefaultServiceAccount",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -487,7 +487,7 @@ func DataGoogleComputeDefaultServiceAccount_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeDefaultServiceAccount.DataGoogleComputeDefaultServiceAccount",
+		"@cdktf/provider-google-beta.dataGoogleComputeDefaultServiceAccount.DataGoogleComputeDefaultServiceAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -500,7 +500,7 @@ func DataGoogleComputeDefaultServiceAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleComputeDefaultServiceAccount.DataGoogleComputeDefaultServiceAccount",
+		"@cdktf/provider-google-beta.dataGoogleComputeDefaultServiceAccount.DataGoogleComputeDefaultServiceAccount",
 		"tfResourceType",
 		&returns,
 	)

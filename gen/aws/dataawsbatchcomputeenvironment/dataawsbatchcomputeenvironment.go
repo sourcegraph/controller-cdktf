@@ -392,7 +392,7 @@ func NewDataAwsBatchComputeEnvironment(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataAwsBatchComputeEnvironment{}
 
 	_jsii_.Create(
-		"aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment",
+		"@cdktf/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -405,7 +405,7 @@ func NewDataAwsBatchComputeEnvironment_Override(d DataAwsBatchComputeEnvironment
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment",
+		"@cdktf/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -516,7 +516,7 @@ func DataAwsBatchComputeEnvironment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment",
+		"@cdktf/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -535,7 +535,7 @@ func DataAwsBatchComputeEnvironment_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment",
+		"@cdktf/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -554,7 +554,7 @@ func DataAwsBatchComputeEnvironment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment",
+		"@cdktf/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -567,7 +567,7 @@ func DataAwsBatchComputeEnvironment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment",
+		"@cdktf/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment",
 		"tfResourceType",
 		&returns,
 	)

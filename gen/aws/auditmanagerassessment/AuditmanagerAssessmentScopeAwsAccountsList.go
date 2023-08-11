@@ -116,7 +116,7 @@ func NewAuditmanagerAssessmentScopeAwsAccountsList(terraformResource cdktf.IInte
 	j := jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList{}
 
 	_jsii_.Create(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsAccountsList",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsAccountsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAuditmanagerAssessmentScopeAwsAccountsList_Override(a AuditmanagerAssess
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsAccountsList",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsAccountsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleEndpointsService.GoogleEndpointsService",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsService",
 		reflect.TypeOf((*GoogleEndpointsService)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,11 +77,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleEndpointsService.GoogleEndpointsServiceApis",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceApis",
 		reflect.TypeOf((*GoogleEndpointsServiceApis)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleEndpointsService.GoogleEndpointsServiceApisList",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceApisList",
 		reflect.TypeOf((*GoogleEndpointsServiceApisList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,11 +101,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleEndpointsService.GoogleEndpointsServiceApisMethods",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceApisMethods",
 		reflect.TypeOf((*GoogleEndpointsServiceApisMethods)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleEndpointsService.GoogleEndpointsServiceApisMethodsList",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceApisMethodsList",
 		reflect.TypeOf((*GoogleEndpointsServiceApisMethodsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -125,7 +125,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleEndpointsService.GoogleEndpointsServiceApisMethodsOutputReference",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceApisMethodsOutputReference",
 		reflect.TypeOf((*GoogleEndpointsServiceApisMethodsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -161,7 +161,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleEndpointsService.GoogleEndpointsServiceApisOutputReference",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceApisOutputReference",
 		reflect.TypeOf((*GoogleEndpointsServiceApisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -197,15 +197,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleEndpointsService.GoogleEndpointsServiceConfig",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceConfig",
 		reflect.TypeOf((*GoogleEndpointsServiceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleEndpointsService.GoogleEndpointsServiceEndpoints",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceEndpoints",
 		reflect.TypeOf((*GoogleEndpointsServiceEndpoints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleEndpointsService.GoogleEndpointsServiceEndpointsList",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceEndpointsList",
 		reflect.TypeOf((*GoogleEndpointsServiceEndpointsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -225,7 +225,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleEndpointsService.GoogleEndpointsServiceEndpointsOutputReference",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceEndpointsOutputReference",
 		reflect.TypeOf((*GoogleEndpointsServiceEndpointsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
@@ -259,11 +259,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleEndpointsService.GoogleEndpointsServiceTimeouts",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceTimeouts",
 		reflect.TypeOf((*GoogleEndpointsServiceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleEndpointsService.GoogleEndpointsServiceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleEndpointsServiceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

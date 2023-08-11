@@ -272,7 +272,7 @@ func NewIotTopicRuleTimestreamOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_IotTopicRuleTimestreamOutputReference{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleTimestreamOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -284,7 +284,7 @@ func NewIotTopicRuleTimestreamOutputReference_Override(i IotTopicRuleTimestreamO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleTimestreamOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

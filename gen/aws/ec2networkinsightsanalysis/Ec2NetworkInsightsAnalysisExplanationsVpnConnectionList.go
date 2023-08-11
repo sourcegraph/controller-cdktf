@@ -104,7 +104,7 @@ func NewEc2NetworkInsightsAnalysisExplanationsVpnConnectionList(terraformResourc
 	j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsVpnConnectionList{}
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpnConnectionList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpnConnectionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewEc2NetworkInsightsAnalysisExplanationsVpnConnectionList_Override(e Ec2Ne
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpnConnectionList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpnConnectionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

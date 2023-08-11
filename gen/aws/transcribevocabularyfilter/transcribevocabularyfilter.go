@@ -460,7 +460,7 @@ func NewTranscribeVocabularyFilter(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_TranscribeVocabularyFilter{}
 
 	_jsii_.Create(
-		"aws.transcribeVocabularyFilter.TranscribeVocabularyFilter",
+		"@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -473,7 +473,7 @@ func NewTranscribeVocabularyFilter_Override(t TranscribeVocabularyFilter, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transcribeVocabularyFilter.TranscribeVocabularyFilter",
+		"@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -650,7 +650,7 @@ func TranscribeVocabularyFilter_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transcribeVocabularyFilter.TranscribeVocabularyFilter",
+		"@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func TranscribeVocabularyFilter_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transcribeVocabularyFilter.TranscribeVocabularyFilter",
+		"@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func TranscribeVocabularyFilter_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transcribeVocabularyFilter.TranscribeVocabularyFilter",
+		"@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func TranscribeVocabularyFilter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.transcribeVocabularyFilter.TranscribeVocabularyFilter",
+		"@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.s3BucketAcl.S3BucketAcl",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAcl",
 		reflect.TypeOf((*S3BucketAcl)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessControlPolicy", GoGetter: "AccessControlPolicy"},
@@ -67,19 +67,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketAcl.S3BucketAclAccessControlPolicy",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicy",
 		reflect.TypeOf((*S3BucketAclAccessControlPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrant",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrant",
 		reflect.TypeOf((*S3BucketAclAccessControlPolicyGrant)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGrantee",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGrantee",
 		reflect.TypeOf((*S3BucketAclAccessControlPolicyGrantGrantee)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGranteeOutputReference",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGranteeOutputReference",
 		reflect.TypeOf((*S3BucketAclAccessControlPolicyGrantGranteeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -123,7 +123,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantList",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantList",
 		reflect.TypeOf((*S3BucketAclAccessControlPolicyGrantList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -144,7 +144,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantOutputReference",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantOutputReference",
 		reflect.TypeOf((*S3BucketAclAccessControlPolicyGrantOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -182,7 +182,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketAcl.S3BucketAclAccessControlPolicyOutputReference",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyOutputReference",
 		reflect.TypeOf((*S3BucketAclAccessControlPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -221,11 +221,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketAcl.S3BucketAclAccessControlPolicyOwner",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyOwner",
 		reflect.TypeOf((*S3BucketAclAccessControlPolicyOwner)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketAcl.S3BucketAclAccessControlPolicyOwnerOutputReference",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyOwnerOutputReference",
 		reflect.TypeOf((*S3BucketAclAccessControlPolicyOwnerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -262,7 +262,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketAcl.S3BucketAclConfig",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclConfig",
 		reflect.TypeOf((*S3BucketAclConfig)(nil)).Elem(),
 	)
 }

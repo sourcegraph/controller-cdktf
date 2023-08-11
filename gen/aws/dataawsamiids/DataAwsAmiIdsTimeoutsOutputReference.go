@@ -180,7 +180,7 @@ func NewDataAwsAmiIdsTimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_DataAwsAmiIdsTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsAmiIds.DataAwsAmiIdsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsAmiIdsTimeoutsOutputReference_Override(d DataAwsAmiIdsTimeoutsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAmiIds.DataAwsAmiIdsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -180,7 +180,7 @@ func NewCloudRunV2JobTemplateTemplateVolumesCloudSqlInstanceOutputReference(terr
 	j := jsiiProxy_CloudRunV2JobTemplateTemplateVolumesCloudSqlInstanceOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTemplateTemplateVolumesCloudSqlInstanceOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateTemplateVolumesCloudSqlInstanceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewCloudRunV2JobTemplateTemplateVolumesCloudSqlInstanceOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTemplateTemplateVolumesCloudSqlInstanceOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateTemplateVolumesCloudSqlInstanceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

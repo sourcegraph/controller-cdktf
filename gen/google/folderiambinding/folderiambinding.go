@@ -400,7 +400,7 @@ func NewFolderIamBinding(scope constructs.Construct, id *string, config *FolderI
 	j := jsiiProxy_FolderIamBinding{}
 
 	_jsii_.Create(
-		"google.folderIamBinding.FolderIamBinding",
+		"@cdktf/provider-google.folderIamBinding.FolderIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewFolderIamBinding_Override(f FolderIamBinding, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.folderIamBinding.FolderIamBinding",
+		"@cdktf/provider-google.folderIamBinding.FolderIamBinding",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -557,7 +557,7 @@ func FolderIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.folderIamBinding.FolderIamBinding",
+		"@cdktf/provider-google.folderIamBinding.FolderIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func FolderIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.folderIamBinding.FolderIamBinding",
+		"@cdktf/provider-google.folderIamBinding.FolderIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func FolderIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.folderIamBinding.FolderIamBinding",
+		"@cdktf/provider-google.folderIamBinding.FolderIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func FolderIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.folderIamBinding.FolderIamBinding",
+		"@cdktf/provider-google.folderIamBinding.FolderIamBinding",
 		"tfResourceType",
 		&returns,
 	)

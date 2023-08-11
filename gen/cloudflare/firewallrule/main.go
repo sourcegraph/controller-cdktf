@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.firewallRule.FirewallRule",
+		"@cdktf/provider-cloudflare.firewallRule.FirewallRule",
 		reflect.TypeOf((*FirewallRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -73,7 +73,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.firewallRule.FirewallRuleConfig",
+		"@cdktf/provider-cloudflare.firewallRule.FirewallRuleConfig",
 		reflect.TypeOf((*FirewallRuleConfig)(nil)).Elem(),
 	)
 }

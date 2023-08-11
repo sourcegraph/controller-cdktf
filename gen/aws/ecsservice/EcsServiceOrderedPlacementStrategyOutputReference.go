@@ -203,7 +203,7 @@ func NewEcsServiceOrderedPlacementStrategyOutputReference(terraformResource cdkt
 	j := jsiiProxy_EcsServiceOrderedPlacementStrategyOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServiceOrderedPlacementStrategyOutputReference",
+		"@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewEcsServiceOrderedPlacementStrategyOutputReference_Override(e EcsServiceO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServiceOrderedPlacementStrategyOutputReference",
+		"@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

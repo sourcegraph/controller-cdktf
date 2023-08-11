@@ -191,7 +191,7 @@ func NewSesv2ConfigurationSetReputationOptionsOutputReference(terraformResource 
 	j := jsiiProxy_Sesv2ConfigurationSetReputationOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSetReputationOptionsOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetReputationOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -203,7 +203,7 @@ func NewSesv2ConfigurationSetReputationOptionsOutputReference_Override(s Sesv2Co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSetReputationOptionsOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetReputationOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

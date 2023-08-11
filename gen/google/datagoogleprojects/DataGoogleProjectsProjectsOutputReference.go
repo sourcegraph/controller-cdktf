@@ -233,7 +233,7 @@ func NewDataGoogleProjectsProjectsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_DataGoogleProjectsProjectsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleProjects.DataGoogleProjectsProjectsOutputReference",
+		"@cdktf/provider-google.dataGoogleProjects.DataGoogleProjectsProjectsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -245,7 +245,7 @@ func NewDataGoogleProjectsProjectsOutputReference_Override(d DataGoogleProjectsP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleProjects.DataGoogleProjectsProjectsOutputReference",
+		"@cdktf/provider-google.dataGoogleProjects.DataGoogleProjectsProjectsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

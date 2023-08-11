@@ -204,7 +204,7 @@ func NewMskServerlessClusterTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_MskServerlessClusterTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.mskServerlessCluster.MskServerlessClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMskServerlessClusterTimeoutsOutputReference_Override(m MskServerlessClus
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskServerlessCluster.MskServerlessClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

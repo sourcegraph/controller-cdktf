@@ -116,7 +116,7 @@ func NewWafIpsetIpSetDescriptorsList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_WafIpsetIpSetDescriptorsList{}
 
 	_jsii_.Create(
-		"aws.wafIpset.WafIpsetIpSetDescriptorsList",
+		"@cdktf/provider-aws.wafIpset.WafIpsetIpSetDescriptorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafIpsetIpSetDescriptorsList_Override(w WafIpsetIpSetDescriptorsList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafIpset.WafIpsetIpSetDescriptorsList",
+		"@cdktf/provider-aws.wafIpset.WafIpsetIpSetDescriptorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

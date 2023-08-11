@@ -318,7 +318,7 @@ func NewGoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference
 	j := jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference",
+		"@cdktf/provider-google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -330,7 +330,7 @@ func NewGoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference",
+		"@cdktf/provider-google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

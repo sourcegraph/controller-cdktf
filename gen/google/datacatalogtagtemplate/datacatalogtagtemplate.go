@@ -473,7 +473,7 @@ func NewDataCatalogTagTemplate(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataCatalogTagTemplate{}
 
 	_jsii_.Create(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplate",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -486,7 +486,7 @@ func NewDataCatalogTagTemplate_Override(d DataCatalogTagTemplate, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplate",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplate",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -652,7 +652,7 @@ func DataCatalogTagTemplate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplate",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -671,7 +671,7 @@ func DataCatalogTagTemplate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplate",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -690,7 +690,7 @@ func DataCatalogTagTemplate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplate",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -703,7 +703,7 @@ func DataCatalogTagTemplate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplate",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplate",
 		"tfResourceType",
 		&returns,
 	)

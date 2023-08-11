@@ -391,7 +391,7 @@ func NewConfigMapV1(scope constructs.Construct, id *string, config *ConfigMapV1C
 	j := jsiiProxy_ConfigMapV1{}
 
 	_jsii_.Create(
-		"kubernetes.configMapV1.ConfigMapV1",
+		"@cdktf/provider-kubernetes.configMapV1.ConfigMapV1",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -404,7 +404,7 @@ func NewConfigMapV1_Override(c ConfigMapV1, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.configMapV1.ConfigMapV1",
+		"@cdktf/provider-kubernetes.configMapV1.ConfigMapV1",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -548,7 +548,7 @@ func ConfigMapV1_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.configMapV1.ConfigMapV1",
+		"@cdktf/provider-kubernetes.configMapV1.ConfigMapV1",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -567,7 +567,7 @@ func ConfigMapV1_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.configMapV1.ConfigMapV1",
+		"@cdktf/provider-kubernetes.configMapV1.ConfigMapV1",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -586,7 +586,7 @@ func ConfigMapV1_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.configMapV1.ConfigMapV1",
+		"@cdktf/provider-kubernetes.configMapV1.ConfigMapV1",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +599,7 @@ func ConfigMapV1_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.configMapV1.ConfigMapV1",
+		"@cdktf/provider-kubernetes.configMapV1.ConfigMapV1",
 		"tfResourceType",
 		&returns,
 	)

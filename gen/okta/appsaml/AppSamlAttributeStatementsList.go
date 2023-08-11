@@ -116,7 +116,7 @@ func NewAppSamlAttributeStatementsList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_AppSamlAttributeStatementsList{}
 
 	_jsii_.Create(
-		"okta.appSaml.AppSamlAttributeStatementsList",
+		"@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppSamlAttributeStatementsList_Override(a AppSamlAttributeStatementsList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appSaml.AppSamlAttributeStatementsList",
+		"@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

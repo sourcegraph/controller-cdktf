@@ -104,7 +104,7 @@ func NewGoogleDatastreamPrivateConnectionErrorList(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleDatastreamPrivateConnectionErrorList{}
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnectionErrorList",
+		"@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnectionErrorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleDatastreamPrivateConnectionErrorList_Override(g GoogleDatastreamPr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnectionErrorList",
+		"@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnectionErrorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

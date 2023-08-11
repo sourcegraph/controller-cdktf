@@ -368,6 +368,7 @@ func (j *jsiiProxy_Pet) TerraformResourceType() *string {
 	return returns
 }
 
+
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/pet random_pet} Resource.
 func NewPet(scope constructs.Construct, id *string, config *PetConfig) Pet {
 	_init_.Initialize()
@@ -378,7 +379,7 @@ func NewPet(scope constructs.Construct, id *string, config *PetConfig) Pet {
 	j := jsiiProxy_Pet{}
 
 	_jsii_.Create(
-		"random.pet.Pet",
+		"@cdktf/provider-random.pet.Pet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -391,13 +392,13 @@ func NewPet_Override(p Pet, scope constructs.Construct, id *string, config *PetC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"random.pet.Pet",
+		"@cdktf/provider-random.pet.Pet",
 		[]interface{}{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_Pet) SetConnection(val interface{}) {
+func (j *jsiiProxy_Pet)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +409,7 @@ func (j *jsiiProxy_Pet) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Pet) SetCount(val interface{}) {
+func (j *jsiiProxy_Pet)SetCount(val interface{}) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +420,7 @@ func (j *jsiiProxy_Pet) SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Pet) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Pet)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -427,7 +428,7 @@ func (j *jsiiProxy_Pet) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Pet) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Pet)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -435,7 +436,7 @@ func (j *jsiiProxy_Pet) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Pet) SetKeepers(val *map[string]*string) {
+func (j *jsiiProxy_Pet)SetKeepers(val *map[string]*string) {
 	if err := j.validateSetKeepersParameters(val); err != nil {
 		panic(err)
 	}
@@ -446,7 +447,7 @@ func (j *jsiiProxy_Pet) SetKeepers(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Pet) SetLength(val *float64) {
+func (j *jsiiProxy_Pet)SetLength(val *float64) {
 	if err := j.validateSetLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -457,7 +458,7 @@ func (j *jsiiProxy_Pet) SetLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Pet) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Pet)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,7 +469,7 @@ func (j *jsiiProxy_Pet) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Pet) SetPrefix(val *string) {
+func (j *jsiiProxy_Pet)SetPrefix(val *string) {
 	if err := j.validateSetPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +480,7 @@ func (j *jsiiProxy_Pet) SetPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Pet) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Pet)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -487,7 +488,7 @@ func (j *jsiiProxy_Pet) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Pet) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Pet)SetProvisioners(val *[]interface{}) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +499,7 @@ func (j *jsiiProxy_Pet) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Pet) SetSeparator(val *string) {
+func (j *jsiiProxy_Pet)SetSeparator(val *string) {
 	if err := j.validateSetSeparatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +536,7 @@ func Pet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.pet.Pet",
+		"@cdktf/provider-random.pet.Pet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -554,7 +555,7 @@ func Pet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.pet.Pet",
+		"@cdktf/provider-random.pet.Pet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +574,7 @@ func Pet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.pet.Pet",
+		"@cdktf/provider-random.pet.Pet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -586,7 +587,7 @@ func Pet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"random.pet.Pet",
+		"@cdktf/provider-random.pet.Pet",
 		"tfResourceType",
 		&returns,
 	)
@@ -866,3 +867,4 @@ func (p *jsiiProxy_Pet) ToTerraform() interface{} {
 
 	return returns
 }
+

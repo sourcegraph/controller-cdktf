@@ -180,7 +180,7 @@ func NewTransferServerWorkflowDetailsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_TransferServerWorkflowDetailsOutputReference{}
 
 	_jsii_.Create(
-		"aws.transferServer.TransferServerWorkflowDetailsOutputReference",
+		"@cdktf/provider-aws.transferServer.TransferServerWorkflowDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewTransferServerWorkflowDetailsOutputReference_Override(t TransferServerWo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferServer.TransferServerWorkflowDetailsOutputReference",
+		"@cdktf/provider-aws.transferServer.TransferServerWorkflowDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

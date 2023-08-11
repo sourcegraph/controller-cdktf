@@ -376,7 +376,7 @@ func NewHealthcareConsentStoreIamPolicy(scope constructs.Construct, id *string, 
 	j := jsiiProxy_HealthcareConsentStoreIamPolicy{}
 
 	_jsii_.Create(
-		"google.healthcareConsentStoreIamPolicy.HealthcareConsentStoreIamPolicy",
+		"@cdktf/provider-google.healthcareConsentStoreIamPolicy.HealthcareConsentStoreIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -389,7 +389,7 @@ func NewHealthcareConsentStoreIamPolicy_Override(h HealthcareConsentStoreIamPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareConsentStoreIamPolicy.HealthcareConsentStoreIamPolicy",
+		"@cdktf/provider-google.healthcareConsentStoreIamPolicy.HealthcareConsentStoreIamPolicy",
 		[]interface{}{scope, id, config},
 		h,
 	)
@@ -533,7 +533,7 @@ func HealthcareConsentStoreIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareConsentStoreIamPolicy.HealthcareConsentStoreIamPolicy",
+		"@cdktf/provider-google.healthcareConsentStoreIamPolicy.HealthcareConsentStoreIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -552,7 +552,7 @@ func HealthcareConsentStoreIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareConsentStoreIamPolicy.HealthcareConsentStoreIamPolicy",
+		"@cdktf/provider-google.healthcareConsentStoreIamPolicy.HealthcareConsentStoreIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -571,7 +571,7 @@ func HealthcareConsentStoreIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareConsentStoreIamPolicy.HealthcareConsentStoreIamPolicy",
+		"@cdktf/provider-google.healthcareConsentStoreIamPolicy.HealthcareConsentStoreIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func HealthcareConsentStoreIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.healthcareConsentStoreIamPolicy.HealthcareConsentStoreIamPolicy",
+		"@cdktf/provider-google.healthcareConsentStoreIamPolicy.HealthcareConsentStoreIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

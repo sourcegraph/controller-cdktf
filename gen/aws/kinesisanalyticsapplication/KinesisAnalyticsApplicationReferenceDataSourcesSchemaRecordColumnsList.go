@@ -116,7 +116,7 @@ func NewKinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsList(t
 	j := jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsList{}
 
 	_jsii_.Create(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsList",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewKinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsList_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsList",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		k,
 	)

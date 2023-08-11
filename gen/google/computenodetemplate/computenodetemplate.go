@@ -558,7 +558,7 @@ func NewComputeNodeTemplate(scope constructs.Construct, id *string, config *Comp
 	j := jsiiProxy_ComputeNodeTemplate{}
 
 	_jsii_.Create(
-		"google.computeNodeTemplate.ComputeNodeTemplate",
+		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -571,7 +571,7 @@ func NewComputeNodeTemplate_Override(c ComputeNodeTemplate, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeNodeTemplate.ComputeNodeTemplate",
+		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplate",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -759,7 +759,7 @@ func ComputeNodeTemplate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeNodeTemplate.ComputeNodeTemplate",
+		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -778,7 +778,7 @@ func ComputeNodeTemplate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeNodeTemplate.ComputeNodeTemplate",
+		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -797,7 +797,7 @@ func ComputeNodeTemplate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeNodeTemplate.ComputeNodeTemplate",
+		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -810,7 +810,7 @@ func ComputeNodeTemplate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeNodeTemplate.ComputeNodeTemplate",
+		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplate",
 		"tfResourceType",
 		&returns,
 	)

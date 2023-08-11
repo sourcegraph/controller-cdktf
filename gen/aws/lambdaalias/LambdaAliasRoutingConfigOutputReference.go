@@ -180,7 +180,7 @@ func NewLambdaAliasRoutingConfigOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_LambdaAliasRoutingConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaAlias.LambdaAliasRoutingConfigOutputReference",
+		"@cdktf/provider-aws.lambdaAlias.LambdaAliasRoutingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewLambdaAliasRoutingConfigOutputReference_Override(l LambdaAliasRoutingCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaAlias.LambdaAliasRoutingConfigOutputReference",
+		"@cdktf/provider-aws.lambdaAlias.LambdaAliasRoutingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

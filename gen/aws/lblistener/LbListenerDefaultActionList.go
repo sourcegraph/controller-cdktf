@@ -116,7 +116,7 @@ func NewLbListenerDefaultActionList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_LbListenerDefaultActionList{}
 
 	_jsii_.Create(
-		"aws.lbListener.LbListenerDefaultActionList",
+		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLbListenerDefaultActionList_Override(l LbListenerDefaultActionList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbListener.LbListenerDefaultActionList",
+		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

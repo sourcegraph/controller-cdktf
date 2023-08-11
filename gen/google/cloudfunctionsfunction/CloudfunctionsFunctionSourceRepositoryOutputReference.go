@@ -190,7 +190,7 @@ func NewCloudfunctionsFunctionSourceRepositoryOutputReference(terraformResource 
 	j := jsiiProxy_CloudfunctionsFunctionSourceRepositoryOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionSourceRepositoryOutputReference",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSourceRepositoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -202,7 +202,7 @@ func NewCloudfunctionsFunctionSourceRepositoryOutputReference_Override(c Cloudfu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionSourceRepositoryOutputReference",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSourceRepositoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

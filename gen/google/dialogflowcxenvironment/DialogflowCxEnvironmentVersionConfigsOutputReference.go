@@ -179,7 +179,7 @@ func NewDialogflowCxEnvironmentVersionConfigsOutputReference(terraformResource c
 	j := jsiiProxy_DialogflowCxEnvironmentVersionConfigsOutputReference{}
 
 	_jsii_.Create(
-		"google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigsOutputReference",
+		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDialogflowCxEnvironmentVersionConfigsOutputReference_Override(d Dialogfl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigsOutputReference",
+		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

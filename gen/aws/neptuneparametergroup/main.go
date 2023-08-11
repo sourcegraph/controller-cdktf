@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.neptuneParameterGroup.NeptuneParameterGroup",
+		"@cdktf/provider-aws.neptuneParameterGroup.NeptuneParameterGroup",
 		reflect.TypeOf((*NeptuneParameterGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.neptuneParameterGroup.NeptuneParameterGroupConfig",
+		"@cdktf/provider-aws.neptuneParameterGroup.NeptuneParameterGroupConfig",
 		reflect.TypeOf((*NeptuneParameterGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.neptuneParameterGroup.NeptuneParameterGroupParameter",
+		"@cdktf/provider-aws.neptuneParameterGroup.NeptuneParameterGroupParameter",
 		reflect.TypeOf((*NeptuneParameterGroupParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.neptuneParameterGroup.NeptuneParameterGroupParameterList",
+		"@cdktf/provider-aws.neptuneParameterGroup.NeptuneParameterGroupParameterList",
 		reflect.TypeOf((*NeptuneParameterGroupParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -102,7 +102,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.neptuneParameterGroup.NeptuneParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.neptuneParameterGroup.NeptuneParameterGroupParameterOutputReference",
 		reflect.TypeOf((*NeptuneParameterGroupParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applyMethod", GoGetter: "ApplyMethod"},

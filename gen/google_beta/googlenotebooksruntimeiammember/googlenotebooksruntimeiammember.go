@@ -448,7 +448,7 @@ func NewGoogleNotebooksRuntimeIamMember(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleNotebooksRuntimeIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember",
+		"@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleNotebooksRuntimeIamMember_Override(g GoogleNotebooksRuntimeIamMemb
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember",
+		"@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleNotebooksRuntimeIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember",
+		"@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleNotebooksRuntimeIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember",
+		"@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleNotebooksRuntimeIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember",
+		"@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleNotebooksRuntimeIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember",
+		"@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember",
 		"tfResourceType",
 		&returns,
 	)

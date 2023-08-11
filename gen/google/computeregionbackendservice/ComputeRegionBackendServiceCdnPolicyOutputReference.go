@@ -372,7 +372,7 @@ func NewComputeRegionBackendServiceCdnPolicyOutputReference(terraformResource cd
 	j := jsiiProxy_ComputeRegionBackendServiceCdnPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionBackendService.ComputeRegionBackendServiceCdnPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceCdnPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -384,7 +384,7 @@ func NewComputeRegionBackendServiceCdnPolicyOutputReference_Override(c ComputeRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionBackendService.ComputeRegionBackendServiceCdnPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceCdnPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

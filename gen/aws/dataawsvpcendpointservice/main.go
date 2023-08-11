@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcEndpointService.DataAwsVpcEndpointService",
+		"@cdktf/provider-aws.dataAwsVpcEndpointService.DataAwsVpcEndpointService",
 		reflect.TypeOf((*DataAwsVpcEndpointService)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceptanceRequired", GoGetter: "AcceptanceRequired"},
@@ -83,15 +83,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceConfig",
+		"@cdktf/provider-aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceConfig",
 		reflect.TypeOf((*DataAwsVpcEndpointServiceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceFilter",
+		"@cdktf/provider-aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceFilter",
 		reflect.TypeOf((*DataAwsVpcEndpointServiceFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceFilterList",
+		"@cdktf/provider-aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceFilterList",
 		reflect.TypeOf((*DataAwsVpcEndpointServiceFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -112,7 +112,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceFilterOutputReference",
 		reflect.TypeOf((*DataAwsVpcEndpointServiceFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -148,11 +148,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceTimeouts",
+		"@cdktf/provider-aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceTimeouts",
 		reflect.TypeOf((*DataAwsVpcEndpointServiceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsVpcEndpointServiceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

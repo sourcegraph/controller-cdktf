@@ -215,7 +215,7 @@ func NewGoogleNotebooksRuntimeAccessConfigOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleNotebooksRuntimeAccessConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksRuntime.GoogleNotebooksRuntimeAccessConfigOutputReference",
+		"@cdktf/provider-google-beta.googleNotebooksRuntime.GoogleNotebooksRuntimeAccessConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -227,7 +227,7 @@ func NewGoogleNotebooksRuntimeAccessConfigOutputReference_Override(g GoogleNoteb
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksRuntime.GoogleNotebooksRuntimeAccessConfigOutputReference",
+		"@cdktf/provider-google-beta.googleNotebooksRuntime.GoogleNotebooksRuntimeAccessConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

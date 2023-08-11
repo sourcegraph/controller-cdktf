@@ -494,7 +494,7 @@ func NewGoogleDataplexAssetIamBinding(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleDataplexAssetIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexAssetIamBinding.GoogleDataplexAssetIamBinding",
+		"@cdktf/provider-google-beta.googleDataplexAssetIamBinding.GoogleDataplexAssetIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -507,7 +507,7 @@ func NewGoogleDataplexAssetIamBinding_Override(g GoogleDataplexAssetIamBinding, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexAssetIamBinding.GoogleDataplexAssetIamBinding",
+		"@cdktf/provider-google-beta.googleDataplexAssetIamBinding.GoogleDataplexAssetIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -695,7 +695,7 @@ func GoogleDataplexAssetIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexAssetIamBinding.GoogleDataplexAssetIamBinding",
+		"@cdktf/provider-google-beta.googleDataplexAssetIamBinding.GoogleDataplexAssetIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +714,7 @@ func GoogleDataplexAssetIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexAssetIamBinding.GoogleDataplexAssetIamBinding",
+		"@cdktf/provider-google-beta.googleDataplexAssetIamBinding.GoogleDataplexAssetIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -733,7 +733,7 @@ func GoogleDataplexAssetIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexAssetIamBinding.GoogleDataplexAssetIamBinding",
+		"@cdktf/provider-google-beta.googleDataplexAssetIamBinding.GoogleDataplexAssetIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -746,7 +746,7 @@ func GoogleDataplexAssetIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataplexAssetIamBinding.GoogleDataplexAssetIamBinding",
+		"@cdktf/provider-google-beta.googleDataplexAssetIamBinding.GoogleDataplexAssetIamBinding",
 		"tfResourceType",
 		&returns,
 	)

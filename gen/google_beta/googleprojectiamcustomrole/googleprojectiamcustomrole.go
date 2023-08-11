@@ -459,7 +459,7 @@ func NewGoogleProjectIamCustomRole(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleProjectIamCustomRole{}
 
 	_jsii_.Create(
-		"google-beta.googleProjectIamCustomRole.GoogleProjectIamCustomRole",
+		"@cdktf/provider-google-beta.googleProjectIamCustomRole.GoogleProjectIamCustomRole",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewGoogleProjectIamCustomRole_Override(g GoogleProjectIamCustomRole, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleProjectIamCustomRole.GoogleProjectIamCustomRole",
+		"@cdktf/provider-google-beta.googleProjectIamCustomRole.GoogleProjectIamCustomRole",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -649,7 +649,7 @@ func GoogleProjectIamCustomRole_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectIamCustomRole.GoogleProjectIamCustomRole",
+		"@cdktf/provider-google-beta.googleProjectIamCustomRole.GoogleProjectIamCustomRole",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func GoogleProjectIamCustomRole_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectIamCustomRole.GoogleProjectIamCustomRole",
+		"@cdktf/provider-google-beta.googleProjectIamCustomRole.GoogleProjectIamCustomRole",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -687,7 +687,7 @@ func GoogleProjectIamCustomRole_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectIamCustomRole.GoogleProjectIamCustomRole",
+		"@cdktf/provider-google-beta.googleProjectIamCustomRole.GoogleProjectIamCustomRole",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func GoogleProjectIamCustomRole_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleProjectIamCustomRole.GoogleProjectIamCustomRole",
+		"@cdktf/provider-google-beta.googleProjectIamCustomRole.GoogleProjectIamCustomRole",
 		"tfResourceType",
 		&returns,
 	)

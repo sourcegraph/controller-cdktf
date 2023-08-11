@@ -180,7 +180,7 @@ func NewGlueJobExecutionPropertyOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_GlueJobExecutionPropertyOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueJob.GlueJobExecutionPropertyOutputReference",
+		"@cdktf/provider-aws.glueJob.GlueJobExecutionPropertyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGlueJobExecutionPropertyOutputReference_Override(g GlueJobExecutionPrope
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueJob.GlueJobExecutionPropertyOutputReference",
+		"@cdktf/provider-aws.glueJob.GlueJobExecutionPropertyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

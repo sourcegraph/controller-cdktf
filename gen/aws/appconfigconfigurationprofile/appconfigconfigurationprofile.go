@@ -531,7 +531,7 @@ func NewAppconfigConfigurationProfile(scope constructs.Construct, id *string, co
 	j := jsiiProxy_AppconfigConfigurationProfile{}
 
 	_jsii_.Create(
-		"aws.appconfigConfigurationProfile.AppconfigConfigurationProfile",
+		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -544,7 +544,7 @@ func NewAppconfigConfigurationProfile_Override(a AppconfigConfigurationProfile, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appconfigConfigurationProfile.AppconfigConfigurationProfile",
+		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfile",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -743,7 +743,7 @@ func AppconfigConfigurationProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appconfigConfigurationProfile.AppconfigConfigurationProfile",
+		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func AppconfigConfigurationProfile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appconfigConfigurationProfile.AppconfigConfigurationProfile",
+		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -781,7 +781,7 @@ func AppconfigConfigurationProfile_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appconfigConfigurationProfile.AppconfigConfigurationProfile",
+		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -794,7 +794,7 @@ func AppconfigConfigurationProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appconfigConfigurationProfile.AppconfigConfigurationProfile",
+		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfile",
 		"tfResourceType",
 		&returns,
 	)

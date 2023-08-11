@@ -204,7 +204,7 @@ func NewDataAwsCeTagsSortByOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataAwsCeTagsSortByOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsCeTags.DataAwsCeTagsSortByOutputReference",
+		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsSortByOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDataAwsCeTagsSortByOutputReference_Override(d DataAwsCeTagsSortByOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCeTags.DataAwsCeTagsSortByOutputReference",
+		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsSortByOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

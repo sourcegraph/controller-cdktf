@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.snsTopicPolicy.SnsTopicPolicy",
+		"@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicy",
 		reflect.TypeOf((*SnsTopicPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.snsTopicPolicy.SnsTopicPolicyConfig",
+		"@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicyConfig",
 		reflect.TypeOf((*SnsTopicPolicyConfig)(nil)).Elem(),
 	)
 }

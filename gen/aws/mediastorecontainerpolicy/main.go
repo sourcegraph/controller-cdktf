@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy",
+		"@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy",
 		reflect.TypeOf((*MediaStoreContainerPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig",
+		"@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig",
 		reflect.TypeOf((*MediaStoreContainerPolicyConfig)(nil)).Elem(),
 	)
 }

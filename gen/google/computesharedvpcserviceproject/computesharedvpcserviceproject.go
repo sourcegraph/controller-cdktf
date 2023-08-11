@@ -390,7 +390,7 @@ func NewComputeSharedVpcServiceProject(scope constructs.Construct, id *string, c
 	j := jsiiProxy_ComputeSharedVpcServiceProject{}
 
 	_jsii_.Create(
-		"google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject",
+		"@cdktf/provider-google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewComputeSharedVpcServiceProject_Override(c ComputeSharedVpcServiceProject
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject",
+		"@cdktf/provider-google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -547,7 +547,7 @@ func ComputeSharedVpcServiceProject_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject",
+		"@cdktf/provider-google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -566,7 +566,7 @@ func ComputeSharedVpcServiceProject_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject",
+		"@cdktf/provider-google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func ComputeSharedVpcServiceProject_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject",
+		"@cdktf/provider-google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -598,7 +598,7 @@ func ComputeSharedVpcServiceProject_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject",
+		"@cdktf/provider-google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject",
 		"tfResourceType",
 		&returns,
 	)

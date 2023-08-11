@@ -521,7 +521,7 @@ func NewRolesanywhereProfile(scope constructs.Construct, id *string, config *Rol
 	j := jsiiProxy_RolesanywhereProfile{}
 
 	_jsii_.Create(
-		"aws.rolesanywhereProfile.RolesanywhereProfile",
+		"@cdktf/provider-aws.rolesanywhereProfile.RolesanywhereProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -534,7 +534,7 @@ func NewRolesanywhereProfile_Override(r RolesanywhereProfile, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rolesanywhereProfile.RolesanywhereProfile",
+		"@cdktf/provider-aws.rolesanywhereProfile.RolesanywhereProfile",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -744,7 +744,7 @@ func RolesanywhereProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rolesanywhereProfile.RolesanywhereProfile",
+		"@cdktf/provider-aws.rolesanywhereProfile.RolesanywhereProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -763,7 +763,7 @@ func RolesanywhereProfile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rolesanywhereProfile.RolesanywhereProfile",
+		"@cdktf/provider-aws.rolesanywhereProfile.RolesanywhereProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -782,7 +782,7 @@ func RolesanywhereProfile_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rolesanywhereProfile.RolesanywhereProfile",
+		"@cdktf/provider-aws.rolesanywhereProfile.RolesanywhereProfile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -795,7 +795,7 @@ func RolesanywhereProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.rolesanywhereProfile.RolesanywhereProfile",
+		"@cdktf/provider-aws.rolesanywhereProfile.RolesanywhereProfile",
 		"tfResourceType",
 		&returns,
 	)

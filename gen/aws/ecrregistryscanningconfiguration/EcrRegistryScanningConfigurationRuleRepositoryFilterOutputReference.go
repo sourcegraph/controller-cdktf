@@ -202,7 +202,7 @@ func NewEcrRegistryScanningConfigurationRuleRepositoryFilterOutputReference(terr
 	j := jsiiProxy_EcrRegistryScanningConfigurationRuleRepositoryFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfigurationRuleRepositoryFilterOutputReference",
+		"@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfigurationRuleRepositoryFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewEcrRegistryScanningConfigurationRuleRepositoryFilterOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfigurationRuleRepositoryFilterOutputReference",
+		"@cdktf/provider-aws.ecrRegistryScanningConfiguration.EcrRegistryScanningConfigurationRuleRepositoryFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

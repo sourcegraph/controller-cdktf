@@ -228,7 +228,7 @@ func NewGoogleApiGatewayGatewayTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GoogleApiGatewayGatewayTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleApiGatewayGatewayTimeoutsOutputReference_Override(g GoogleApiGatew
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

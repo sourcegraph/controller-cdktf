@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.route53Record.Route53Record",
+		"@cdktf/provider-aws.route53Record.Route53Record",
 		reflect.TypeOf((*Route53Record)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -100,11 +100,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53Record.Route53RecordAlias",
+		"@cdktf/provider-aws.route53Record.Route53RecordAlias",
 		reflect.TypeOf((*Route53RecordAlias)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.route53Record.Route53RecordAliasOutputReference",
+		"@cdktf/provider-aws.route53Record.Route53RecordAliasOutputReference",
 		reflect.TypeOf((*Route53RecordAliasOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -142,15 +142,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53Record.Route53RecordConfig",
+		"@cdktf/provider-aws.route53Record.Route53RecordConfig",
 		reflect.TypeOf((*Route53RecordConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53Record.Route53RecordFailoverRoutingPolicy",
+		"@cdktf/provider-aws.route53Record.Route53RecordFailoverRoutingPolicy",
 		reflect.TypeOf((*Route53RecordFailoverRoutingPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.route53Record.Route53RecordFailoverRoutingPolicyOutputReference",
+		"@cdktf/provider-aws.route53Record.Route53RecordFailoverRoutingPolicyOutputReference",
 		reflect.TypeOf((*Route53RecordFailoverRoutingPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -184,11 +184,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53Record.Route53RecordGeolocationRoutingPolicy",
+		"@cdktf/provider-aws.route53Record.Route53RecordGeolocationRoutingPolicy",
 		reflect.TypeOf((*Route53RecordGeolocationRoutingPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.route53Record.Route53RecordGeolocationRoutingPolicyOutputReference",
+		"@cdktf/provider-aws.route53Record.Route53RecordGeolocationRoutingPolicyOutputReference",
 		reflect.TypeOf((*Route53RecordGeolocationRoutingPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -229,11 +229,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53Record.Route53RecordLatencyRoutingPolicy",
+		"@cdktf/provider-aws.route53Record.Route53RecordLatencyRoutingPolicy",
 		reflect.TypeOf((*Route53RecordLatencyRoutingPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.route53Record.Route53RecordLatencyRoutingPolicyOutputReference",
+		"@cdktf/provider-aws.route53Record.Route53RecordLatencyRoutingPolicyOutputReference",
 		reflect.TypeOf((*Route53RecordLatencyRoutingPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -267,11 +267,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53Record.Route53RecordWeightedRoutingPolicy",
+		"@cdktf/provider-aws.route53Record.Route53RecordWeightedRoutingPolicy",
 		reflect.TypeOf((*Route53RecordWeightedRoutingPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.route53Record.Route53RecordWeightedRoutingPolicyOutputReference",
+		"@cdktf/provider-aws.route53Record.Route53RecordWeightedRoutingPolicyOutputReference",
 		reflect.TypeOf((*Route53RecordWeightedRoutingPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

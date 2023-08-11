@@ -179,7 +179,7 @@ func NewGoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputRe
 	j := jsiiProxy_GoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReference",
+		"@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReference",
+		"@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -227,7 +227,7 @@ func NewMedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImageOutputRefe
 	j := jsiiProxy_MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImageOutputReference{}
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImageOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewMedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImageOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImageOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

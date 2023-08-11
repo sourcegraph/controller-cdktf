@@ -485,7 +485,7 @@ func NewEc2TransitGatewayMulticastDomain(scope constructs.Construct, id *string,
 	j := jsiiProxy_Ec2TransitGatewayMulticastDomain{}
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomain",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomain",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -498,7 +498,7 @@ func NewEc2TransitGatewayMulticastDomain_Override(e Ec2TransitGatewayMulticastDo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomain",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomain",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -675,7 +675,7 @@ func Ec2TransitGatewayMulticastDomain_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomain",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomain",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -694,7 +694,7 @@ func Ec2TransitGatewayMulticastDomain_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomain",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomain",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -713,7 +713,7 @@ func Ec2TransitGatewayMulticastDomain_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomain",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomain",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -726,7 +726,7 @@ func Ec2TransitGatewayMulticastDomain_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomain",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomain",
 		"tfResourceType",
 		&returns,
 	)

@@ -547,7 +547,7 @@ func NewDatasyncAgent(scope constructs.Construct, id *string, config *DatasyncAg
 	j := jsiiProxy_DatasyncAgent{}
 
 	_jsii_.Create(
-		"aws.datasyncAgent.DatasyncAgent",
+		"@cdktf/provider-aws.datasyncAgent.DatasyncAgent",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -560,7 +560,7 @@ func NewDatasyncAgent_Override(d DatasyncAgent, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datasyncAgent.DatasyncAgent",
+		"@cdktf/provider-aws.datasyncAgent.DatasyncAgent",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -770,7 +770,7 @@ func DatasyncAgent_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datasyncAgent.DatasyncAgent",
+		"@cdktf/provider-aws.datasyncAgent.DatasyncAgent",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -789,7 +789,7 @@ func DatasyncAgent_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datasyncAgent.DatasyncAgent",
+		"@cdktf/provider-aws.datasyncAgent.DatasyncAgent",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -808,7 +808,7 @@ func DatasyncAgent_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datasyncAgent.DatasyncAgent",
+		"@cdktf/provider-aws.datasyncAgent.DatasyncAgent",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -821,7 +821,7 @@ func DatasyncAgent_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.datasyncAgent.DatasyncAgent",
+		"@cdktf/provider-aws.datasyncAgent.DatasyncAgent",
 		"tfResourceType",
 		&returns,
 	)

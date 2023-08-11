@@ -202,7 +202,7 @@ func NewApigatewayv2IntegrationResponseParametersOutputReference(terraformResour
 	j := jsiiProxy_Apigatewayv2IntegrationResponseParametersOutputReference{}
 
 	_jsii_.Create(
-		"aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersOutputReference",
+		"@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewApigatewayv2IntegrationResponseParametersOutputReference_Override(a Apig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersOutputReference",
+		"@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

@@ -271,7 +271,7 @@ func NewIotTopicRuleElasticsearchOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_IotTopicRuleElasticsearchOutputReference{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -283,7 +283,7 @@ func NewIotTopicRuleElasticsearchOutputReference_Override(i IotTopicRuleElastics
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

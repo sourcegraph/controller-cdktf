@@ -348,7 +348,7 @@ func NewDataAwsBackupPlan(scope constructs.Construct, id *string, config *DataAw
 	j := jsiiProxy_DataAwsBackupPlan{}
 
 	_jsii_.Create(
-		"aws.dataAwsBackupPlan.DataAwsBackupPlan",
+		"@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlan",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -361,7 +361,7 @@ func NewDataAwsBackupPlan_Override(d DataAwsBackupPlan, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsBackupPlan.DataAwsBackupPlan",
+		"@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlan",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -472,7 +472,7 @@ func DataAwsBackupPlan_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsBackupPlan.DataAwsBackupPlan",
+		"@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlan",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -491,7 +491,7 @@ func DataAwsBackupPlan_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsBackupPlan.DataAwsBackupPlan",
+		"@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlan",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -510,7 +510,7 @@ func DataAwsBackupPlan_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsBackupPlan.DataAwsBackupPlan",
+		"@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlan",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +523,7 @@ func DataAwsBackupPlan_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsBackupPlan.DataAwsBackupPlan",
+		"@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlan",
 		"tfResourceType",
 		&returns,
 	)

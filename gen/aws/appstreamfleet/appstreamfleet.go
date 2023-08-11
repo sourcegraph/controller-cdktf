@@ -758,7 +758,7 @@ func NewAppstreamFleet(scope constructs.Construct, id *string, config *Appstream
 	j := jsiiProxy_AppstreamFleet{}
 
 	_jsii_.Create(
-		"aws.appstreamFleet.AppstreamFleet",
+		"@cdktf/provider-aws.appstreamFleet.AppstreamFleet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -771,7 +771,7 @@ func NewAppstreamFleet_Override(a AppstreamFleet, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appstreamFleet.AppstreamFleet",
+		"@cdktf/provider-aws.appstreamFleet.AppstreamFleet",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -1047,7 +1047,7 @@ func AppstreamFleet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appstreamFleet.AppstreamFleet",
+		"@cdktf/provider-aws.appstreamFleet.AppstreamFleet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1066,7 +1066,7 @@ func AppstreamFleet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appstreamFleet.AppstreamFleet",
+		"@cdktf/provider-aws.appstreamFleet.AppstreamFleet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1085,7 +1085,7 @@ func AppstreamFleet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appstreamFleet.AppstreamFleet",
+		"@cdktf/provider-aws.appstreamFleet.AppstreamFleet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1098,7 +1098,7 @@ func AppstreamFleet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appstreamFleet.AppstreamFleet",
+		"@cdktf/provider-aws.appstreamFleet.AppstreamFleet",
 		"tfResourceType",
 		&returns,
 	)

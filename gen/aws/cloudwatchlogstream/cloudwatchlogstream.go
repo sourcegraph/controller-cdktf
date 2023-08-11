@@ -353,7 +353,7 @@ func NewCloudwatchLogStream(scope constructs.Construct, id *string, config *Clou
 	j := jsiiProxy_CloudwatchLogStream{}
 
 	_jsii_.Create(
-		"aws.cloudwatchLogStream.CloudwatchLogStream",
+		"@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewCloudwatchLogStream_Override(c CloudwatchLogStream, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchLogStream.CloudwatchLogStream",
+		"@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -499,7 +499,7 @@ func CloudwatchLogStream_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogStream.CloudwatchLogStream",
+		"@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func CloudwatchLogStream_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogStream.CloudwatchLogStream",
+		"@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func CloudwatchLogStream_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogStream.CloudwatchLogStream",
+		"@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func CloudwatchLogStream_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudwatchLogStream.CloudwatchLogStream",
+		"@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.grafanaWorkspace.GrafanaWorkspace",
+		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspace",
 		reflect.TypeOf((*GrafanaWorkspace)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountAccessType", GoGetter: "AccountAccessType"},
@@ -106,15 +106,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.grafanaWorkspace.GrafanaWorkspaceConfig",
+		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspaceConfig",
 		reflect.TypeOf((*GrafanaWorkspaceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.grafanaWorkspace.GrafanaWorkspaceTimeouts",
+		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspaceTimeouts",
 		reflect.TypeOf((*GrafanaWorkspaceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.grafanaWorkspace.GrafanaWorkspaceTimeoutsOutputReference",
+		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspaceTimeoutsOutputReference",
 		reflect.TypeOf((*GrafanaWorkspaceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -152,11 +152,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.grafanaWorkspace.GrafanaWorkspaceVpcConfiguration",
+		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspaceVpcConfiguration",
 		reflect.TypeOf((*GrafanaWorkspaceVpcConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.grafanaWorkspace.GrafanaWorkspaceVpcConfigurationOutputReference",
+		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspaceVpcConfigurationOutputReference",
 		reflect.TypeOf((*GrafanaWorkspaceVpcConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
