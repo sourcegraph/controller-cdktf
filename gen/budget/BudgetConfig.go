@@ -24,16 +24,24 @@ type BudgetConfig struct {
 	// The name of the Cloud Pub/Sub topic where budget related messages will be published, in the form of `projects/{project_id}/topics/{topic_id}`.
 	AlertPubsubTopic *string `field:"optional" json:"alertPubsubTopic" yaml:"alertPubsubTopic"`
 	// The type of basis used to determine if spend has passed the threshold.
+	// Default: CURRENT_SPEND.
+	//
 	AlertSpendBasis *string `field:"optional" json:"alertSpendBasis" yaml:"alertSpendBasis"`
 	// A list of percentages of the budget to alert on when threshold is exceeded.
+	// Default: 0.5,0.7,1
+	//
 	AlertSpentPercents *[]*float64 `field:"optional" json:"alertSpentPercents" yaml:"alertSpentPercents"`
 	// Specifies the calendar period for the budget.
 	//
 	// Possible values are MONTH, QUARTER, YEAR, CALENDAR_PERIOD_UNSPECIFIED, CUSTOM. custom_period_start_date and custom_period_end_date must be set if CUSTOM
 	CalendarPeriod *string `field:"optional" json:"calendarPeriod" yaml:"calendarPeriod"`
 	// If the budget should be created.
+	// Default: true.
+	//
 	CreateBudget *bool `field:"optional" json:"createBudget" yaml:"createBudget"`
 	// Specifies how credits should be treated when determining spend for threshold calculations.
+	// Default: INCLUDE_ALL_CREDITS.
+	//
 	CreditTypesTreatment *string `field:"optional" json:"creditTypesTreatment" yaml:"creditTypesTreatment"`
 	// Specifies the end date (DD-MM-YYYY) for the calendar_period CUSTOM.
 	CustomPeriodEndDate *string `field:"optional" json:"customPeriodEndDate" yaml:"customPeriodEndDate"`
@@ -44,6 +52,9 @@ type BudgetConfig struct {
 	// If not set defaults to `Budget For <projects[0]|All Projects>`.
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
 	// A single label and value pair specifying that usage from only this set of labeled resources should be included in the budget.
+	// Default: [object Object]
+	// The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
+	//
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// A list of monitoring notification channels in the form `[projects/{project_id}/notificationChannels/{channel_id}]`.
 	//

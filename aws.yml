@@ -1,0 +1,11 @@
+name: aws
+
+provider:
+  source: registry.terraform.io/hashicorp/aws
+  version: 4.54.0
+
+target:
+  language: go
+  moduleName: github.com/sourcegraph/controller-cdktf/gen
+
+output: gen

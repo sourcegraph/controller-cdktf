@@ -181,8 +181,6 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelTimeoutsOutputReference)
 
 func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
 	case *GoogleAccessContextManagerAccessLevelTimeouts:
 		val := val.(*GoogleAccessContextManagerAccessLevelTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -194,9 +192,11 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelTimeoutsOutputReference)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
+	case cdktf.IResolvable:
+		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleAccessContextManagerAccessLevelTimeouts; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleAccessContextManagerAccessLevelTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 

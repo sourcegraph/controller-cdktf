@@ -1,0 +1,12 @@
+name: google
+
+provider:
+  source: registry.terraform.io/hashicorp/google
+  version: 4.69.1
+
+target:
+  language: go
+  moduleName: github.com/sourcegraph/controller-cdktf/gen
+  packageName: google
+
+output: gen
