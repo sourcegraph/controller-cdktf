@@ -10,6 +10,10 @@ This package is only used internally at Sourcegraph - the generated code is publ
 
 Follow https://github.com/sourcegraph/cdktf-provider-gen#usage
 
+```bash
+make <target>
+```
+
 ### Upgrading CDKTF
 
 Review the [changelog](https://developer.hashicorp.com/terraform/cdktf/release#upgrade-guides) of the target release.
@@ -18,7 +22,9 @@ Watch out for breaking changes and adjust the upgrade plan if neccessary.
 Re-generate all providers and modules:
 
 ```bash
-cdktf-provider-gen -config <provider>.yaml -cdktf-version <version>
+
+```bash
+make -j4
 ```
 
 ## FAQ
