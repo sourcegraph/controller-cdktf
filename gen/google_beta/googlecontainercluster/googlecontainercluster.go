@@ -9,11 +9,14 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecontainercluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_container_cluster google_container_cluster}.
 type GoogleContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() GoogleContainerClusterAddonsConfigOutputReference
 	AddonsConfigInput() *GoogleContainerClusterAddonsConfig
+	AllowNetAdmin() interface{}
+	SetAllowNetAdmin(val interface{})
+	AllowNetAdminInput() interface{}
 	AuthenticatorGroupsConfig() GoogleContainerClusterAuthenticatorGroupsConfigOutputReference
 	AuthenticatorGroupsConfigInput() *GoogleContainerClusterAuthenticatorGroupsConfig
 	BinaryAuthorization() GoogleContainerClusterBinaryAuthorizationOutputReference
@@ -69,6 +72,8 @@ type GoogleContainerCluster interface {
 	EnableIntranodeVisibility() interface{}
 	SetEnableIntranodeVisibility(val interface{})
 	EnableIntranodeVisibilityInput() interface{}
+	EnableK8SBetaApis() GoogleContainerClusterEnableK8SBetaApisOutputReference
+	EnableK8SBetaApisInput() *GoogleContainerClusterEnableK8SBetaApis
 	EnableKubernetesAlpha() interface{}
 	SetEnableKubernetesAlpha(val interface{})
 	EnableKubernetesAlphaInput() interface{}
@@ -78,6 +83,9 @@ type GoogleContainerCluster interface {
 	EnableLegacyAbac() interface{}
 	SetEnableLegacyAbac(val interface{})
 	EnableLegacyAbacInput() interface{}
+	EnableMultiNetworking() interface{}
+	SetEnableMultiNetworking(val interface{})
+	EnableMultiNetworkingInput() interface{}
 	EnableShieldedNodes() interface{}
 	SetEnableShieldedNodes(val interface{})
 	EnableShieldedNodesInput() interface{}
@@ -197,6 +205,8 @@ type GoogleContainerCluster interface {
 	ResourceLabelsInput() *map[string]*string
 	ResourceUsageExportConfig() GoogleContainerClusterResourceUsageExportConfigOutputReference
 	ResourceUsageExportConfigInput() *GoogleContainerClusterResourceUsageExportConfig
+	SecurityPostureConfig() GoogleContainerClusterSecurityPostureConfigOutputReference
+	SecurityPostureConfigInput() *GoogleContainerClusterSecurityPostureConfig
 	SelfLink() *string
 	ServiceExternalIpsConfig() GoogleContainerClusterServiceExternalIpsConfigOutputReference
 	ServiceExternalIpsConfigInput() *GoogleContainerClusterServiceExternalIpsConfig
@@ -254,6 +264,7 @@ type GoogleContainerCluster interface {
 	PutDatabaseEncryption(value *GoogleContainerClusterDatabaseEncryption)
 	PutDefaultSnatStatus(value *GoogleContainerClusterDefaultSnatStatus)
 	PutDnsConfig(value *GoogleContainerClusterDnsConfig)
+	PutEnableK8SBetaApis(value *GoogleContainerClusterEnableK8SBetaApis)
 	PutGatewayApiConfig(value *GoogleContainerClusterGatewayApiConfig)
 	PutIdentityServiceConfig(value *GoogleContainerClusterIdentityServiceConfig)
 	PutIpAllocationPolicy(value *GoogleContainerClusterIpAllocationPolicy)
@@ -274,12 +285,14 @@ type GoogleContainerCluster interface {
 	PutProtectConfig(value *GoogleContainerClusterProtectConfig)
 	PutReleaseChannel(value *GoogleContainerClusterReleaseChannel)
 	PutResourceUsageExportConfig(value *GoogleContainerClusterResourceUsageExportConfig)
+	PutSecurityPostureConfig(value *GoogleContainerClusterSecurityPostureConfig)
 	PutServiceExternalIpsConfig(value *GoogleContainerClusterServiceExternalIpsConfig)
 	PutTimeouts(value *GoogleContainerClusterTimeouts)
 	PutTpuConfig(value *GoogleContainerClusterTpuConfig)
 	PutVerticalPodAutoscaling(value *GoogleContainerClusterVerticalPodAutoscaling)
 	PutWorkloadIdentityConfig(value *GoogleContainerClusterWorkloadIdentityConfig)
 	ResetAddonsConfig()
+	ResetAllowNetAdmin()
 	ResetAuthenticatorGroupsConfig()
 	ResetBinaryAuthorization()
 	ResetClusterAutoscaling()
@@ -296,9 +309,11 @@ type GoogleContainerCluster interface {
 	ResetEnableAutopilot()
 	ResetEnableBinaryAuthorization()
 	ResetEnableIntranodeVisibility()
+	ResetEnableK8SBetaApis()
 	ResetEnableKubernetesAlpha()
 	ResetEnableL4IlbSubsetting()
 	ResetEnableLegacyAbac()
+	ResetEnableMultiNetworking()
 	ResetEnableShieldedNodes()
 	ResetEnableTpu()
 	ResetGatewayApiConfig()
@@ -338,6 +353,7 @@ type GoogleContainerCluster interface {
 	ResetRemoveDefaultNodePool()
 	ResetResourceLabels()
 	ResetResourceUsageExportConfig()
+	ResetSecurityPostureConfig()
 	ResetServiceExternalIpsConfig()
 	ResetSubnetwork()
 	ResetTimeouts()
@@ -374,6 +390,26 @@ func (j *jsiiProxy_GoogleContainerCluster) AddonsConfigInput() *GoogleContainerC
 	_jsii_.Get(
 		j,
 		"addonsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AllowNetAdmin() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowNetAdmin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AllowNetAdminInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowNetAdminInput",
 		&returns,
 	)
 	return returns
@@ -749,6 +785,26 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableIntranodeVisibilityInput() inte
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerCluster) EnableK8SBetaApis() GoogleContainerClusterEnableK8SBetaApisOutputReference {
+	var returns GoogleContainerClusterEnableK8SBetaApisOutputReference
+	_jsii_.Get(
+		j,
+		"enableK8SBetaApis",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableK8SBetaApisInput() *GoogleContainerClusterEnableK8SBetaApis {
+	var returns *GoogleContainerClusterEnableK8SBetaApis
+	_jsii_.Get(
+		j,
+		"enableK8SBetaApisInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) EnableKubernetesAlpha() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -804,6 +860,26 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableLegacyAbacInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableLegacyAbacInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableMultiNetworking() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableMultiNetworking",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableMultiNetworkingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableMultiNetworkingInput",
 		&returns,
 	)
 	return returns
@@ -1669,6 +1745,26 @@ func (j *jsiiProxy_GoogleContainerCluster) ResourceUsageExportConfigInput() *Goo
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerCluster) SecurityPostureConfig() GoogleContainerClusterSecurityPostureConfigOutputReference {
+	var returns GoogleContainerClusterSecurityPostureConfigOutputReference
+	_jsii_.Get(
+		j,
+		"securityPostureConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) SecurityPostureConfigInput() *GoogleContainerClusterSecurityPostureConfig {
+	var returns *GoogleContainerClusterSecurityPostureConfig
+	_jsii_.Get(
+		j,
+		"securityPostureConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1850,7 +1946,7 @@ func (j *jsiiProxy_GoogleContainerCluster) WorkloadIdentityConfigInput() *Google
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) GoogleContainerCluster {
 	_init_.Initialize()
 
@@ -1868,7 +1964,7 @@ func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster_Override(g GoogleContainerCluster, scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -1876,6 +1972,17 @@ func NewGoogleContainerCluster_Override(g GoogleContainerCluster, scope construc
 		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetAllowNetAdmin(val interface{}) {
+	if err := j.validateSetAllowNetAdminParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowNetAdmin",
+		val,
 	)
 }
 
@@ -2015,6 +2122,17 @@ func (j *jsiiProxy_GoogleContainerCluster)SetEnableLegacyAbac(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enableLegacyAbac",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetEnableMultiNetworking(val interface{}) {
+	if err := j.validateSetEnableMultiNetworkingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableMultiNetworking",
 		val,
 	)
 }
@@ -2631,6 +2749,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutDnsConfig(value *GoogleContainerCl
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) PutEnableK8SBetaApis(value *GoogleContainerClusterEnableK8SBetaApis) {
+	if err := g.validatePutEnableK8SBetaApisParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putEnableK8SBetaApis",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) PutGatewayApiConfig(value *GoogleContainerClusterGatewayApiConfig) {
 	if err := g.validatePutGatewayApiConfigParameters(value); err != nil {
 		panic(err)
@@ -2851,6 +2980,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutResourceUsageExportConfig(value *G
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) PutSecurityPostureConfig(value *GoogleContainerClusterSecurityPostureConfig) {
+	if err := g.validatePutSecurityPostureConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSecurityPostureConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) PutServiceExternalIpsConfig(value *GoogleContainerClusterServiceExternalIpsConfig) {
 	if err := g.validatePutServiceExternalIpsConfigParameters(value); err != nil {
 		panic(err)
@@ -2910,6 +3050,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetAddonsConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAddonsConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetAllowNetAdmin() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllowNetAdmin",
 		nil, // no parameters
 	)
 }
@@ -3042,6 +3190,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetEnableIntranodeVisibility() {
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) ResetEnableK8SBetaApis() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableK8SBetaApis",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) ResetEnableKubernetesAlpha() {
 	_jsii_.InvokeVoid(
 		g,
@@ -3062,6 +3218,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetEnableLegacyAbac() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnableLegacyAbac",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetEnableMultiNetworking() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableMultiNetworking",
 		nil, // no parameters
 	)
 }
@@ -3358,6 +3522,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetResourceUsageExportConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetResourceUsageExportConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetSecurityPostureConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecurityPostureConfig",
 		nil, // no parameters
 	)
 }

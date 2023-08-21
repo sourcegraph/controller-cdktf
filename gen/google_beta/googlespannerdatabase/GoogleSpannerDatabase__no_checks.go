@@ -92,6 +92,10 @@ func (j *jsiiProxy_GoogleSpannerDatabase) validateSetDeletionProtectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSpannerDatabase) validateSetEnableDropProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSpannerDatabase) validateSetIdParameters(val *string) error {
 	return nil
 }

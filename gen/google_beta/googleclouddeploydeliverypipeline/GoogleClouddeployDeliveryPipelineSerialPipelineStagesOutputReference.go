@@ -25,6 +25,8 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputReference interf
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeployParameters() GoogleClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersList
+	DeployParametersInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -69,7 +71,9 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDeployParameters(value interface{})
 	PutStrategy(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy)
+	ResetDeployParameters()
 	ResetProfiles()
 	ResetStrategy()
 	ResetTargetId()
@@ -113,6 +117,26 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputRe
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) DeployParameters() GoogleClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersList {
+	var returns GoogleClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersList
+	_jsii_.Get(
+		j,
+		"deployParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) DeployParametersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deployParametersInput",
 		&returns,
 	)
 	return returns
@@ -509,6 +533,17 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputRe
 	return returns
 }
 
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) PutDeployParameters(value interface{}) {
+	if err := g.validatePutDeployParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDeployParameters",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) PutStrategy(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy) {
 	if err := g.validatePutStrategyParameters(value); err != nil {
 		panic(err)
@@ -517,6 +552,14 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputRe
 		g,
 		"putStrategy",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) ResetDeployParameters() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeployParameters",
+		nil, // no parameters
 	)
 }
 

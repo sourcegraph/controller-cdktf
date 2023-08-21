@@ -45,6 +45,8 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	CreationStack() *[]*string
 	DatabaseFlags() GoogleSqlDatabaseInstanceSettingsDatabaseFlagsList
 	DatabaseFlagsInput() interface{}
+	DataCacheConfig() GoogleSqlDatabaseInstanceSettingsDataCacheConfigOutputReference
+	DataCacheConfigInput() *GoogleSqlDatabaseInstanceSettingsDataCacheConfig
 	DeletionProtectionEnabled() interface{}
 	SetDeletionProtectionEnabled(val interface{})
 	DeletionProtectionEnabledInput() interface{}
@@ -62,6 +64,9 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	DiskType() *string
 	SetDiskType(val *string)
 	DiskTypeInput() *string
+	Edition() *string
+	SetEdition(val *string)
+	EditionInput() *string
 	// Experimental.
 	Fqn() *string
 	InsightsConfig() GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference
@@ -127,6 +132,7 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	PutAdvancedMachineFeatures(value *GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures)
 	PutBackupConfiguration(value *GoogleSqlDatabaseInstanceSettingsBackupConfiguration)
 	PutDatabaseFlags(value interface{})
+	PutDataCacheConfig(value *GoogleSqlDatabaseInstanceSettingsDataCacheConfig)
 	PutDenyMaintenancePeriod(value *GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod)
 	PutInsightsConfig(value *GoogleSqlDatabaseInstanceSettingsInsightsConfig)
 	PutIpConfiguration(value *GoogleSqlDatabaseInstanceSettingsIpConfiguration)
@@ -142,12 +148,14 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	ResetCollation()
 	ResetConnectorEnforcement()
 	ResetDatabaseFlags()
+	ResetDataCacheConfig()
 	ResetDeletionProtectionEnabled()
 	ResetDenyMaintenancePeriod()
 	ResetDiskAutoresize()
 	ResetDiskAutoresizeLimit()
 	ResetDiskSize()
 	ResetDiskType()
+	ResetEdition()
 	ResetInsightsConfig()
 	ResetIpConfiguration()
 	ResetLocationPreference()
@@ -362,6 +370,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DatabaseFla
 	return returns
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DataCacheConfig() GoogleSqlDatabaseInstanceSettingsDataCacheConfigOutputReference {
+	var returns GoogleSqlDatabaseInstanceSettingsDataCacheConfigOutputReference
+	_jsii_.Get(
+		j,
+		"dataCacheConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DataCacheConfigInput() *GoogleSqlDatabaseInstanceSettingsDataCacheConfig {
+	var returns *GoogleSqlDatabaseInstanceSettingsDataCacheConfig
+	_jsii_.Get(
+		j,
+		"dataCacheConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DeletionProtectionEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -477,6 +505,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DiskTypeInp
 	_jsii_.Get(
 		j,
 		"diskTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) Edition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EditionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"editionInput",
 		&returns,
 	)
 	return returns
@@ -881,6 +929,17 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetDiskType(
 	)
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetEdition(val *string) {
+	if err := j.validateSetEditionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"edition",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetInternalValue(val *GoogleSqlDatabaseInstanceSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -1188,6 +1247,17 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutDatabase
 	)
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutDataCacheConfig(value *GoogleSqlDatabaseInstanceSettingsDataCacheConfig) {
+	if err := g.validatePutDataCacheConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDataCacheConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutDenyMaintenancePeriod(value *GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod) {
 	if err := g.validatePutDenyMaintenancePeriodParameters(value); err != nil {
 		panic(err)
@@ -1329,6 +1399,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetDataba
 	)
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetDataCacheConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDataCacheConfig",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetDeletionProtectionEnabled() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1373,6 +1451,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetDiskTy
 	_jsii_.InvokeVoid(
 		g,
 		"resetDiskType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetEdition() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEdition",
 		nil, // no parameters
 	)
 }

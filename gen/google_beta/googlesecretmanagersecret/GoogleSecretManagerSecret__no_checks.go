@@ -80,6 +80,10 @@ func validateGoogleSecretManagerSecret_IsTerraformResourceParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetAnnotationsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

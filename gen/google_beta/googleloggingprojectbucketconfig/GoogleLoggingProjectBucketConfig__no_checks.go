@@ -100,6 +100,10 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) validateSetLocationParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) validateSetLockedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) validateSetProjectParameters(val *string) error {
 	return nil
 }

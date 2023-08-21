@@ -124,6 +124,10 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) validateSetNetworkParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) validateSetNoAutomateDnsZoneParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) validateSetPortRangeParameters(val *string) error {
 	return nil
 }
@@ -137,6 +141,10 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) validateSetProvisionersPar
 }
 
 func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) validateSetSourceIpRangesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) validateSetSubnetworkParameters(val *string) error {
 	return nil
 }
 

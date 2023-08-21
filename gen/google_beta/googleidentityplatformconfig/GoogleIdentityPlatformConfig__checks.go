@@ -111,6 +111,28 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutBlockingFunctionsParameters(value *GoogleIdentityPlatformConfigBlockingFunctions) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutQuotaParameters(value *GoogleIdentityPlatformConfigQuota) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutTimeoutsParameters(value *GoogleIdentityPlatformConfigTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -141,6 +163,14 @@ func validateGoogleIdentityPlatformConfig_IsTerraformElementParameters(x interfa
 func validateGoogleIdentityPlatformConfig_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) validateSetAuthorizedDomainsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

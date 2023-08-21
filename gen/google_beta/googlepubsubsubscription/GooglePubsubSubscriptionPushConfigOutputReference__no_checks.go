@@ -44,6 +44,10 @@ func (g *jsiiProxy_GooglePubsubSubscriptionPushConfigOutputReference) validateIn
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubSubscriptionPushConfigOutputReference) validatePutNoWrapperParameters(value *GooglePubsubSubscriptionPushConfigNoWrapper) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubSubscriptionPushConfigOutputReference) validatePutOidcTokenParameters(value *GooglePubsubSubscriptionPushConfigOidcToken) error {
 	return nil
 }

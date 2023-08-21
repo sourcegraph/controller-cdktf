@@ -10,6 +10,9 @@ import (
 
 type CloudbuildTriggerGitFileSourceOutputReference interface {
 	cdktf.ComplexObject
+	BitbucketServerConfig() *string
+	SetBitbucketServerConfig(val *string)
+	BitbucketServerConfigInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,6 +38,9 @@ type CloudbuildTriggerGitFileSourceOutputReference interface {
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
+	Repository() *string
+	SetRepository(val *string)
+	RepositoryInput() *string
 	RepoType() *string
 	SetRepoType(val *string)
 	RepoTypeInput() *string
@@ -76,7 +82,9 @@ type CloudbuildTriggerGitFileSourceOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetBitbucketServerConfig()
 	ResetGithubEnterpriseConfig()
+	ResetRepository()
 	ResetRevision()
 	ResetUri()
 	// Produce the Token's value at resolution time.
@@ -92,6 +100,26 @@ type CloudbuildTriggerGitFileSourceOutputReference interface {
 // The jsii proxy struct for CloudbuildTriggerGitFileSourceOutputReference
 type jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) BitbucketServerConfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bitbucketServerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) BitbucketServerConfigInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bitbucketServerConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) ComplexObjectIndex() interface{} {
@@ -179,6 +207,26 @@ func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) PathInput() *s
 	_jsii_.Get(
 		j,
 		"pathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) Repository() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repository",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) RepositoryInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repositoryInput",
 		&returns,
 	)
 	return returns
@@ -292,6 +340,17 @@ func NewCloudbuildTriggerGitFileSourceOutputReference_Override(c CloudbuildTrigg
 	)
 }
 
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetBitbucketServerConfig(val *string) {
+	if err := j.validateSetBitbucketServerConfigParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bitbucketServerConfig",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -343,6 +402,17 @@ func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetPath(val *st
 	_jsii_.Set(
 		j,
 		"path",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetRepository(val *string) {
+	if err := j.validateSetRepositoryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"repository",
 		val,
 	)
 }
@@ -588,10 +658,26 @@ func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) InterpolationF
 	return returns
 }
 
+func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) ResetBitbucketServerConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBitbucketServerConfig",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) ResetGithubEnterpriseConfig() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetGithubEnterpriseConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) ResetRepository() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRepository",
 		nil, // no parameters
 	)
 }

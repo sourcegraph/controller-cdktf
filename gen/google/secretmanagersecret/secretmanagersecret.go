@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/secretmanagersecret/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/secret_manager_secret google_secret_manager_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/secret_manager_secret google_secret_manager_secret}.
 type SecretManagerSecret interface {
 	cdktf.TerraformResource
+	Annotations() *map[string]*string
+	SetAnnotations(val *map[string]*string)
+	AnnotationsInput() *map[string]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -86,6 +89,9 @@ type SecretManagerSecret interface {
 	Ttl() *string
 	SetTtl(val *string)
 	TtlInput() *string
+	VersionAliases() *map[string]*string
+	SetVersionAliases(val *map[string]*string)
+	VersionAliasesInput() *map[string]*string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -115,6 +121,7 @@ type SecretManagerSecret interface {
 	PutRotation(value *SecretManagerSecretRotation)
 	PutTimeouts(value *SecretManagerSecretTimeouts)
 	PutTopics(value interface{})
+	ResetAnnotations()
 	ResetExpireTime()
 	ResetId()
 	ResetLabels()
@@ -126,6 +133,7 @@ type SecretManagerSecret interface {
 	ResetTimeouts()
 	ResetTopics()
 	ResetTtl()
+	ResetVersionAliases()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -139,6 +147,26 @@ type SecretManagerSecret interface {
 // The jsii proxy struct for SecretManagerSecret
 type jsiiProxy_SecretManagerSecret struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_SecretManagerSecret) Annotations() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretManagerSecret) AnnotationsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotationsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SecretManagerSecret) CdktfStack() cdktf.TerraformStack {
@@ -521,8 +549,28 @@ func (j *jsiiProxy_SecretManagerSecret) TtlInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SecretManagerSecret) VersionAliases() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"versionAliases",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/secret_manager_secret google_secret_manager_secret} Resource.
+func (j *jsiiProxy_SecretManagerSecret) VersionAliasesInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"versionAliasesInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/secret_manager_secret google_secret_manager_secret} Resource.
 func NewSecretManagerSecret(scope constructs.Construct, id *string, config *SecretManagerSecretConfig) SecretManagerSecret {
 	_init_.Initialize()
 
@@ -540,7 +588,7 @@ func NewSecretManagerSecret(scope constructs.Construct, id *string, config *Secr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/secret_manager_secret google_secret_manager_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/secret_manager_secret google_secret_manager_secret} Resource.
 func NewSecretManagerSecret_Override(s SecretManagerSecret, scope constructs.Construct, id *string, config *SecretManagerSecretConfig) {
 	_init_.Initialize()
 
@@ -548,6 +596,17 @@ func NewSecretManagerSecret_Override(s SecretManagerSecret, scope constructs.Con
 		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecret",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SecretManagerSecret)SetAnnotations(val *map[string]*string) {
+	if err := j.validateSetAnnotationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"annotations",
+		val,
 	)
 }
 
@@ -681,6 +740,17 @@ func (j *jsiiProxy_SecretManagerSecret)SetTtl(val *string) {
 	_jsii_.Set(
 		j,
 		"ttl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretManagerSecret)SetVersionAliases(val *map[string]*string) {
+	if err := j.validateSetVersionAliasesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"versionAliases",
 		val,
 	)
 }
@@ -995,6 +1065,14 @@ func (s *jsiiProxy_SecretManagerSecret) PutTopics(value interface{}) {
 	)
 }
 
+func (s *jsiiProxy_SecretManagerSecret) ResetAnnotations() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SecretManagerSecret) ResetExpireTime() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1063,6 +1141,14 @@ func (s *jsiiProxy_SecretManagerSecret) ResetTtl() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTtl",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretManagerSecret) ResetVersionAliases() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetVersionAliases",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatacatalogpolicytag/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_data_catalog_policy_tag google_data_catalog_policy_tag}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_data_catalog_policy_tag google_data_catalog_policy_tag}.
 type GoogleDataCatalogPolicyTag interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_GoogleDataCatalogPolicyTag) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_data_catalog_policy_tag google_data_catalog_policy_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_data_catalog_policy_tag google_data_catalog_policy_tag} Resource.
 func NewGoogleDataCatalogPolicyTag(scope constructs.Construct, id *string, config *GoogleDataCatalogPolicyTagConfig) GoogleDataCatalogPolicyTag {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewGoogleDataCatalogPolicyTag(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_data_catalog_policy_tag google_data_catalog_policy_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_data_catalog_policy_tag google_data_catalog_policy_tag} Resource.
 func NewGoogleDataCatalogPolicyTag_Override(g GoogleDataCatalogPolicyTag, scope constructs.Construct, id *string, config *GoogleDataCatalogPolicyTagConfig) {
 	_init_.Initialize()
 

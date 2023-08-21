@@ -56,6 +56,10 @@ func (g *jsiiProxy_GooglePubsubSubscription) validatePutBigqueryConfigParameters
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubSubscription) validatePutCloudStorageConfigParameters(value *GooglePubsubSubscriptionCloudStorageConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubSubscription) validatePutDeadLetterPolicyParameters(value *GooglePubsubSubscriptionDeadLetterPolicy) error {
 	return nil
 }

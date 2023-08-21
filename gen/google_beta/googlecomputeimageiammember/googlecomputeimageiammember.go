@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeimageiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_image_iam_member google_compute_image_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_image_iam_member google_compute_image_iam_member}.
 type GoogleComputeImageIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleComputeImageIamMember) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_image_iam_member google_compute_image_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_image_iam_member google_compute_image_iam_member} Resource.
 func NewGoogleComputeImageIamMember(scope constructs.Construct, id *string, config *GoogleComputeImageIamMemberConfig) GoogleComputeImageIamMember {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleComputeImageIamMember(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_image_iam_member google_compute_image_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_image_iam_member google_compute_image_iam_member} Resource.
 func NewGoogleComputeImageIamMember_Override(g GoogleComputeImageIamMember, scope constructs.Construct, id *string, config *GoogleComputeImageIamMemberConfig) {
 	_init_.Initialize()
 

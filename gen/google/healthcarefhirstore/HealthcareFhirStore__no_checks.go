@@ -76,6 +76,10 @@ func validateHealthcareFhirStore_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_HealthcareFhirStore) validateSetComplexDataTypeReferenceParsingParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareFhirStore) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (j *jsiiProxy_HealthcareFhirStore) validateSetCountParameters(val interface
 }
 
 func (j *jsiiProxy_HealthcareFhirStore) validateSetDatasetParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_HealthcareFhirStore) validateSetDefaultSearchHandlingStrictParameters(val interface{}) error {
 	return nil
 }
 

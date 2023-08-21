@@ -180,29 +180,29 @@ func (j *jsiiProxy_GoogleRedisInstanceMaintenanceScheduleOutputReference) Terraf
 }
 
 
-func NewGoogleRedisInstanceMaintenanceScheduleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleRedisInstanceMaintenanceScheduleOutputReference {
+func NewGoogleRedisInstanceMaintenanceScheduleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleRedisInstanceMaintenanceScheduleOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewGoogleRedisInstanceMaintenanceScheduleOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewGoogleRedisInstanceMaintenanceScheduleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_GoogleRedisInstanceMaintenanceScheduleOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceMaintenanceScheduleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewGoogleRedisInstanceMaintenanceScheduleOutputReference_Override(g GoogleRedisInstanceMaintenanceScheduleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleRedisInstanceMaintenanceScheduleOutputReference_Override(g GoogleRedisInstanceMaintenanceScheduleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceMaintenanceScheduleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }

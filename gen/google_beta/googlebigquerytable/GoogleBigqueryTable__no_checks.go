@@ -132,6 +132,10 @@ func (j *jsiiProxy_GoogleBigqueryTable) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryTable) validateSetMaxStalenessParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryTable) validateSetProjectParameters(val *string) error {
 	return nil
 }

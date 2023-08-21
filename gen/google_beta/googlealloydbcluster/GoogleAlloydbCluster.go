@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlealloydbcluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_alloydb_cluster google_alloydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_alloydb_cluster google_alloydb_cluster}.
 type GoogleAlloydbCluster interface {
 	cdktf.TerraformResource
 	AutomatedBackupPolicy() GoogleAlloydbClusterAutomatedBackupPolicyOutputReference
@@ -26,6 +26,9 @@ type GoogleAlloydbCluster interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ContinuousBackupConfig() GoogleAlloydbClusterContinuousBackupConfigOutputReference
+	ContinuousBackupConfigInput() *GoogleAlloydbClusterContinuousBackupConfig
+	ContinuousBackupInfo() GoogleAlloydbClusterContinuousBackupInfoList
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -119,10 +122,12 @@ type GoogleAlloydbCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutomatedBackupPolicy(value *GoogleAlloydbClusterAutomatedBackupPolicy)
+	PutContinuousBackupConfig(value *GoogleAlloydbClusterContinuousBackupConfig)
 	PutEncryptionConfig(value *GoogleAlloydbClusterEncryptionConfig)
 	PutInitialUser(value *GoogleAlloydbClusterInitialUser)
 	PutTimeouts(value *GoogleAlloydbClusterTimeouts)
 	ResetAutomatedBackupPolicy()
+	ResetContinuousBackupConfig()
 	ResetDisplayName()
 	ResetEncryptionConfig()
 	ResetId()
@@ -223,6 +228,36 @@ func (j *jsiiProxy_GoogleAlloydbCluster) ConstructNodeMetadata() *map[string]int
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) ContinuousBackupConfig() GoogleAlloydbClusterContinuousBackupConfigOutputReference {
+	var returns GoogleAlloydbClusterContinuousBackupConfigOutputReference
+	_jsii_.Get(
+		j,
+		"continuousBackupConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) ContinuousBackupConfigInput() *GoogleAlloydbClusterContinuousBackupConfig {
+	var returns *GoogleAlloydbClusterContinuousBackupConfig
+	_jsii_.Get(
+		j,
+		"continuousBackupConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) ContinuousBackupInfo() GoogleAlloydbClusterContinuousBackupInfoList {
+	var returns GoogleAlloydbClusterContinuousBackupInfoList
+	_jsii_.Get(
+		j,
+		"continuousBackupInfo",
 		&returns,
 	)
 	return returns
@@ -589,7 +624,7 @@ func (j *jsiiProxy_GoogleAlloydbCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
 func NewGoogleAlloydbCluster(scope constructs.Construct, id *string, config *GoogleAlloydbClusterConfig) GoogleAlloydbCluster {
 	_init_.Initialize()
 
@@ -607,7 +642,7 @@ func NewGoogleAlloydbCluster(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
 func NewGoogleAlloydbCluster_Override(g GoogleAlloydbCluster, scope constructs.Construct, id *string, config *GoogleAlloydbClusterConfig) {
 	_init_.Initialize()
 
@@ -1040,6 +1075,17 @@ func (g *jsiiProxy_GoogleAlloydbCluster) PutAutomatedBackupPolicy(value *GoogleA
 	)
 }
 
+func (g *jsiiProxy_GoogleAlloydbCluster) PutContinuousBackupConfig(value *GoogleAlloydbClusterContinuousBackupConfig) {
+	if err := g.validatePutContinuousBackupConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putContinuousBackupConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleAlloydbCluster) PutEncryptionConfig(value *GoogleAlloydbClusterEncryptionConfig) {
 	if err := g.validatePutEncryptionConfigParameters(value); err != nil {
 		panic(err)
@@ -1077,6 +1123,14 @@ func (g *jsiiProxy_GoogleAlloydbCluster) ResetAutomatedBackupPolicy() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAutomatedBackupPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbCluster) ResetContinuousBackupConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetContinuousBackupConfig",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlepubsubsubscription/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_pubsub_subscription google_pubsub_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_pubsub_subscription google_pubsub_subscription}.
 type GooglePubsubSubscription interface {
 	cdktf.TerraformResource
 	AckDeadlineSeconds() *float64
@@ -19,6 +19,8 @@ type GooglePubsubSubscription interface {
 	BigqueryConfigInput() *GooglePubsubSubscriptionBigqueryConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CloudStorageConfig() GooglePubsubSubscriptionCloudStorageConfigOutputReference
+	CloudStorageConfigInput() *GooglePubsubSubscriptionCloudStorageConfig
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -129,6 +131,7 @@ type GooglePubsubSubscription interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutBigqueryConfig(value *GooglePubsubSubscriptionBigqueryConfig)
+	PutCloudStorageConfig(value *GooglePubsubSubscriptionCloudStorageConfig)
 	PutDeadLetterPolicy(value *GooglePubsubSubscriptionDeadLetterPolicy)
 	PutExpirationPolicy(value *GooglePubsubSubscriptionExpirationPolicy)
 	PutPushConfig(value *GooglePubsubSubscriptionPushConfig)
@@ -136,6 +139,7 @@ type GooglePubsubSubscription interface {
 	PutTimeouts(value *GooglePubsubSubscriptionTimeouts)
 	ResetAckDeadlineSeconds()
 	ResetBigqueryConfig()
+	ResetCloudStorageConfig()
 	ResetDeadLetterPolicy()
 	ResetEnableExactlyOnceDelivery()
 	ResetEnableMessageOrdering()
@@ -212,6 +216,26 @@ func (j *jsiiProxy_GooglePubsubSubscription) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubSubscription) CloudStorageConfig() GooglePubsubSubscriptionCloudStorageConfigOutputReference {
+	var returns GooglePubsubSubscriptionCloudStorageConfigOutputReference
+	_jsii_.Get(
+		j,
+		"cloudStorageConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubSubscription) CloudStorageConfigInput() *GooglePubsubSubscriptionCloudStorageConfig {
+	var returns *GooglePubsubSubscriptionCloudStorageConfig
+	_jsii_.Get(
+		j,
+		"cloudStorageConfigInput",
 		&returns,
 	)
 	return returns
@@ -668,7 +692,7 @@ func (j *jsiiProxy_GooglePubsubSubscription) TopicInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_pubsub_subscription google_pubsub_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_pubsub_subscription google_pubsub_subscription} Resource.
 func NewGooglePubsubSubscription(scope constructs.Construct, id *string, config *GooglePubsubSubscriptionConfig) GooglePubsubSubscription {
 	_init_.Initialize()
 
@@ -686,7 +710,7 @@ func NewGooglePubsubSubscription(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_pubsub_subscription google_pubsub_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_pubsub_subscription google_pubsub_subscription} Resource.
 func NewGooglePubsubSubscription_Override(g GooglePubsubSubscription, scope constructs.Construct, id *string, config *GooglePubsubSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -1163,6 +1187,17 @@ func (g *jsiiProxy_GooglePubsubSubscription) PutBigqueryConfig(value *GooglePubs
 	)
 }
 
+func (g *jsiiProxy_GooglePubsubSubscription) PutCloudStorageConfig(value *GooglePubsubSubscriptionCloudStorageConfig) {
+	if err := g.validatePutCloudStorageConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCloudStorageConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GooglePubsubSubscription) PutDeadLetterPolicy(value *GooglePubsubSubscriptionDeadLetterPolicy) {
 	if err := g.validatePutDeadLetterPolicyParameters(value); err != nil {
 		panic(err)
@@ -1230,6 +1265,14 @@ func (g *jsiiProxy_GooglePubsubSubscription) ResetBigqueryConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetBigqueryConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GooglePubsubSubscription) ResetCloudStorageConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCloudStorageConfig",
 		nil, // no parameters
 	)
 }

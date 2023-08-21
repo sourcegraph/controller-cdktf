@@ -2,7 +2,7 @@ package googlecomputeprojectdefaultnetworktier
 
 
 type GoogleComputeProjectDefaultNetworkTierTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_project_default_network_tier#create GoogleComputeProjectDefaultNetworkTier#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_project_default_network_tier#create GoogleComputeProjectDefaultNetworkTier#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

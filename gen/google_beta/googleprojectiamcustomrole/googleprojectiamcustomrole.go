@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleprojectiamcustomrole/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_project_iam_custom_role google_project_iam_custom_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_project_iam_custom_role google_project_iam_custom_role}.
 type GoogleProjectIamCustomRole interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -449,7 +449,7 @@ func (j *jsiiProxy_GoogleProjectIamCustomRole) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_project_iam_custom_role google_project_iam_custom_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_project_iam_custom_role google_project_iam_custom_role} Resource.
 func NewGoogleProjectIamCustomRole(scope constructs.Construct, id *string, config *GoogleProjectIamCustomRoleConfig) GoogleProjectIamCustomRole {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewGoogleProjectIamCustomRole(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_project_iam_custom_role google_project_iam_custom_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_project_iam_custom_role google_project_iam_custom_role} Resource.
 func NewGoogleProjectIamCustomRole_Override(g GoogleProjectIamCustomRole, scope constructs.Construct, id *string, config *GoogleProjectIamCustomRoleConfig) {
 	_init_.Initialize()
 

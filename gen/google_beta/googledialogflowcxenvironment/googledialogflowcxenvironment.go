@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledialogflowcxenvironment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dialogflow_cx_environment google_dialogflow_cx_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dialogflow_cx_environment google_dialogflow_cx_environment}.
 type GoogleDialogflowCxEnvironment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_GoogleDialogflowCxEnvironment) VersionConfigsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dialogflow_cx_environment google_dialogflow_cx_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dialogflow_cx_environment google_dialogflow_cx_environment} Resource.
 func NewGoogleDialogflowCxEnvironment(scope constructs.Construct, id *string, config *GoogleDialogflowCxEnvironmentConfig) GoogleDialogflowCxEnvironment {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewGoogleDialogflowCxEnvironment(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dialogflow_cx_environment google_dialogflow_cx_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dialogflow_cx_environment google_dialogflow_cx_environment} Resource.
 func NewGoogleDialogflowCxEnvironment_Override(g GoogleDialogflowCxEnvironment, scope constructs.Construct, id *string, config *GoogleDialogflowCxEnvironmentConfig) {
 	_init_.Initialize()
 

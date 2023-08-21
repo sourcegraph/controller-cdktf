@@ -10,6 +10,9 @@ import (
 
 type GoogleCloudRunV2JobTemplateOutputReference interface {
 	cdktf.ComplexObject
+	Annotations() *map[string]*string
+	SetAnnotations(val *map[string]*string)
+	AnnotationsInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -73,6 +76,7 @@ type GoogleCloudRunV2JobTemplateOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutTemplate(value *GoogleCloudRunV2JobTemplateTemplate)
+	ResetAnnotations()
 	ResetLabels()
 	ResetParallelism()
 	ResetTaskCount()
@@ -89,6 +93,26 @@ type GoogleCloudRunV2JobTemplateOutputReference interface {
 // The jsii proxy struct for GoogleCloudRunV2JobTemplateOutputReference
 type jsiiProxy_GoogleCloudRunV2JobTemplateOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateOutputReference) Annotations() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateOutputReference) AnnotationsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotationsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleCloudRunV2JobTemplateOutputReference) ComplexObjectIndex() interface{} {
@@ -266,6 +290,17 @@ func NewGoogleCloudRunV2JobTemplateOutputReference_Override(g GoogleCloudRunV2Jo
 		"@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateOutputReference)SetAnnotations(val *map[string]*string) {
+	if err := j.validateSetAnnotationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"annotations",
+		val,
 	)
 }
 
@@ -551,6 +586,14 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateOutputReference) PutTemplate(value
 		g,
 		"putTemplate",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateOutputReference) ResetAnnotations() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAnnotations",
+		nil, // no parameters
 	)
 }
 

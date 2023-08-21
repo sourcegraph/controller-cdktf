@@ -10,6 +10,10 @@ import (
 
 type GoogleContainerClusterNodePoolNetworkConfigOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalNodeNetworkConfigs() GoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList
+	AdditionalNodeNetworkConfigsInput() interface{}
+	AdditionalPodNetworkConfigs() GoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList
+	AdditionalPodNetworkConfigsInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -75,7 +79,11 @@ type GoogleContainerClusterNodePoolNetworkConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAdditionalNodeNetworkConfigs(value interface{})
+	PutAdditionalPodNetworkConfigs(value interface{})
 	PutPodCidrOverprovisionConfig(value *GoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig)
+	ResetAdditionalNodeNetworkConfigs()
+	ResetAdditionalPodNetworkConfigs()
 	ResetCreatePodRange()
 	ResetEnablePrivateNodes()
 	ResetPodCidrOverprovisionConfig()
@@ -94,6 +102,46 @@ type GoogleContainerClusterNodePoolNetworkConfigOutputReference interface {
 // The jsii proxy struct for GoogleContainerClusterNodePoolNetworkConfigOutputReference
 type jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) AdditionalNodeNetworkConfigs() GoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList {
+	var returns GoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList
+	_jsii_.Get(
+		j,
+		"additionalNodeNetworkConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) AdditionalNodeNetworkConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"additionalNodeNetworkConfigsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) AdditionalPodNetworkConfigs() GoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList {
+	var returns GoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList
+	_jsii_.Get(
+		j,
+		"additionalPodNetworkConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) AdditionalPodNetworkConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"additionalPodNetworkConfigsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -579,6 +627,28 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) I
 	return returns
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) PutAdditionalNodeNetworkConfigs(value interface{}) {
+	if err := g.validatePutAdditionalNodeNetworkConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAdditionalNodeNetworkConfigs",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) PutAdditionalPodNetworkConfigs(value interface{}) {
+	if err := g.validatePutAdditionalPodNetworkConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAdditionalPodNetworkConfigs",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) PutPodCidrOverprovisionConfig(value *GoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig) {
 	if err := g.validatePutPodCidrOverprovisionConfigParameters(value); err != nil {
 		panic(err)
@@ -587,6 +657,22 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) P
 		g,
 		"putPodCidrOverprovisionConfig",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) ResetAdditionalNodeNetworkConfigs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAdditionalNodeNetworkConfigs",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) ResetAdditionalPodNetworkConfigs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAdditionalPodNetworkConfigs",
+		nil, // no parameters
 	)
 }
 

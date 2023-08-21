@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference) valida
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference) validatePutAdvancedDatapathObservabilityConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference) validatePutManagedPrometheusParameters(value *GoogleContainerClusterMonitoringConfigManagedPrometheus) error {
 	return nil
 }

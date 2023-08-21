@@ -31,6 +31,7 @@ type DataGoogleIamWorkloadIdentityPoolProviderOidcOutputReference interface {
 	InternalValue() *DataGoogleIamWorkloadIdentityPoolProviderOidc
 	SetInternalValue(val *DataGoogleIamWorkloadIdentityPoolProviderOidc)
 	IssuerUri() *string
+	JwksJson() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -143,6 +144,16 @@ func (j *jsiiProxy_DataGoogleIamWorkloadIdentityPoolProviderOidcOutputReference)
 	_jsii_.Get(
 		j,
 		"issuerUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleIamWorkloadIdentityPoolProviderOidcOutputReference) JwksJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jwksJson",
 		&returns,
 	)
 	return returns

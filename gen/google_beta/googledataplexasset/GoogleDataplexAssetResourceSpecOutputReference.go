@@ -32,6 +32,9 @@ type GoogleDataplexAssetResourceSpecOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	ReadAccessMode() *string
+	SetReadAccessMode(val *string)
+	ReadAccessModeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type GoogleDataplexAssetResourceSpecOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetName()
+	ResetReadAccessMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_GoogleDataplexAssetResourceSpecOutputReference) NameInput() *
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexAssetResourceSpecOutputReference) ReadAccessMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"readAccessMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexAssetResourceSpecOutputReference) ReadAccessModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"readAccessModeInput",
 		&returns,
 	)
 	return returns
@@ -261,6 +285,17 @@ func (j *jsiiProxy_GoogleDataplexAssetResourceSpecOutputReference)SetName(val *s
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataplexAssetResourceSpecOutputReference)SetReadAccessMode(val *string) {
+	if err := j.validateSetReadAccessModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"readAccessMode",
 		val,
 	)
 }
@@ -488,6 +523,14 @@ func (g *jsiiProxy_GoogleDataplexAssetResourceSpecOutputReference) ResetName() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataplexAssetResourceSpecOutputReference) ResetReadAccessMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReadAccessMode",
 		nil, // no parameters
 	)
 }

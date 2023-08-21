@@ -60,6 +60,10 @@ func (g *jsiiProxy_GoogleBigtableGcPolicy) validatePutMaxVersionParameters(value
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigtableGcPolicy) validatePutTimeoutsParameters(value *GoogleBigtableGcPolicyTimeouts) error {
+	return nil
+}
+
 func validateGoogleBigtableGcPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

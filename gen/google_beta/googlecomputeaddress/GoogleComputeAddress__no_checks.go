@@ -92,6 +92,14 @@ func (j *jsiiProxy_GoogleComputeAddress) validateSetIdParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeAddress) validateSetIpv6EndpointTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeAddress) validateSetIpVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeAddress) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }

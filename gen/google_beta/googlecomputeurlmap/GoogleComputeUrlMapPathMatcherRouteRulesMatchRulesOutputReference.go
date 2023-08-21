@@ -39,6 +39,9 @@ type GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference interface
 	SetInternalValue(val interface{})
 	MetadataFilters() GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList
 	MetadataFiltersInput() interface{}
+	PathTemplateMatch() *string
+	SetPathTemplateMatch(val *string)
+	PathTemplateMatchInput() *string
 	PrefixMatch() *string
 	SetPrefixMatch(val *string)
 	PrefixMatchInput() *string
@@ -86,6 +89,7 @@ type GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference interface
 	ResetHeaderMatches()
 	ResetIgnoreCase()
 	ResetMetadataFilters()
+	ResetPathTemplateMatch()
 	ResetPrefixMatch()
 	ResetQueryParameterMatches()
 	ResetRegexMatch()
@@ -229,6 +233,26 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputRefer
 	_jsii_.Get(
 		j,
 		"metadataFiltersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference) PathTemplateMatch() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pathTemplateMatch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference) PathTemplateMatchInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pathTemplateMatchInput",
 		&returns,
 	)
 	return returns
@@ -393,6 +417,17 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputRefer
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference)SetPathTemplateMatch(val *string) {
+	if err := j.validateSetPathTemplateMatchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pathTemplateMatch",
 		val,
 	)
 }
@@ -688,6 +723,14 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputRefer
 	_jsii_.InvokeVoid(
 		g,
 		"resetMetadataFilters",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference) ResetPathTemplateMatch() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPathTemplateMatch",
 		nil, // no parameters
 	)
 }

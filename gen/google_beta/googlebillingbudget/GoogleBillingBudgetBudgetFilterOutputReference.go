@@ -46,6 +46,9 @@ type GoogleBillingBudgetBudgetFilterOutputReference interface {
 	Projects() *[]*string
 	SetProjects(val *[]*string)
 	ProjectsInput() *[]*string
+	ResourceAncestors() *[]*string
+	SetResourceAncestors(val *[]*string)
+	ResourceAncestorsInput() *[]*string
 	Services() *[]*string
 	SetServices(val *[]*string)
 	ServicesInput() *[]*string
@@ -91,6 +94,7 @@ type GoogleBillingBudgetBudgetFilterOutputReference interface {
 	ResetCustomPeriod()
 	ResetLabels()
 	ResetProjects()
+	ResetResourceAncestors()
 	ResetServices()
 	ResetSubaccounts()
 	// Produce the Token's value at resolution time.
@@ -278,6 +282,26 @@ func (j *jsiiProxy_GoogleBillingBudgetBudgetFilterOutputReference) ProjectsInput
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBillingBudgetBudgetFilterOutputReference) ResourceAncestors() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resourceAncestors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBillingBudgetBudgetFilterOutputReference) ResourceAncestorsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resourceAncestorsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBillingBudgetBudgetFilterOutputReference) Services() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -450,6 +474,17 @@ func (j *jsiiProxy_GoogleBillingBudgetBudgetFilterOutputReference)SetProjects(va
 	_jsii_.Set(
 		j,
 		"projects",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBillingBudgetBudgetFilterOutputReference)SetResourceAncestors(val *[]*string) {
+	if err := j.validateSetResourceAncestorsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceAncestors",
 		val,
 	)
 }
@@ -739,6 +774,14 @@ func (g *jsiiProxy_GoogleBillingBudgetBudgetFilterOutputReference) ResetProjects
 	_jsii_.InvokeVoid(
 		g,
 		"resetProjects",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBillingBudgetBudgetFilterOutputReference) ResetResourceAncestors() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetResourceAncestors",
 		nil, // no parameters
 	)
 }

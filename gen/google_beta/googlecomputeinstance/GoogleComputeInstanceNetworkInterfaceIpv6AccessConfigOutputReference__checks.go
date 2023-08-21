@@ -163,6 +163,22 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputRe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference) validateSetExternalIpv6Parameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference) validateSetExternalIpv6PrefixLengthParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
@@ -182,6 +198,14 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputRe
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleComputeInstanceNetworkInterfaceIpv6AccessConfig; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

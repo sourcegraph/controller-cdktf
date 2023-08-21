@@ -96,6 +96,10 @@ func (j *jsiiProxy_GoogleCloudfunctions2Function) validateSetIdParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudfunctions2Function) validateSetKmsKeyNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudfunctions2Function) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }

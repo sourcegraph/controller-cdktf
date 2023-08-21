@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/loggingorganizationbucketconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/logging_organization_bucket_config google_logging_organization_bucket_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_organization_bucket_config google_logging_organization_bucket_config}.
 type LoggingOrganizationBucketConfig interface {
 	cdktf.TerraformResource
 	BucketId() *string
@@ -449,7 +449,7 @@ func (j *jsiiProxy_LoggingOrganizationBucketConfig) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/logging_organization_bucket_config google_logging_organization_bucket_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_organization_bucket_config google_logging_organization_bucket_config} Resource.
 func NewLoggingOrganizationBucketConfig(scope constructs.Construct, id *string, config *LoggingOrganizationBucketConfigConfig) LoggingOrganizationBucketConfig {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewLoggingOrganizationBucketConfig(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/logging_organization_bucket_config google_logging_organization_bucket_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_organization_bucket_config google_logging_organization_bucket_config} Resource.
 func NewLoggingOrganizationBucketConfig_Override(l LoggingOrganizationBucketConfig, scope constructs.Construct, id *string, config *LoggingOrganizationBucketConfigConfig) {
 	_init_.Initialize()
 

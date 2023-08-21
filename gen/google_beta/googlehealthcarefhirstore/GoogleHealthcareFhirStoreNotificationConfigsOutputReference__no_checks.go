@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference) validateSetSendPreviousResourceOnDeleteParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

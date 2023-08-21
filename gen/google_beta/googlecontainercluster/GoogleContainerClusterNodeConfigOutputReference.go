@@ -48,6 +48,8 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	GuestAcceleratorInput() interface{}
 	Gvnic() GoogleContainerClusterNodeConfigGvnicOutputReference
 	GvnicInput() *GoogleContainerClusterNodeConfigGvnic
+	HostMaintenancePolicy() GoogleContainerClusterNodeConfigHostMaintenancePolicyOutputReference
+	HostMaintenancePolicyInput() *GoogleContainerClusterNodeConfigHostMaintenancePolicy
 	ImageType() *string
 	SetImageType(val *string)
 	ImageTypeInput() *string
@@ -98,6 +100,8 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	ServiceAccountInput() *string
 	ShieldedInstanceConfig() GoogleContainerClusterNodeConfigShieldedInstanceConfigOutputReference
 	ShieldedInstanceConfigInput() *GoogleContainerClusterNodeConfigShieldedInstanceConfig
+	SoleTenantConfig() GoogleContainerClusterNodeConfigSoleTenantConfigOutputReference
+	SoleTenantConfigInput() *GoogleContainerClusterNodeConfigSoleTenantConfig
 	Spot() interface{}
 	SetSpot(val interface{})
 	SpotInput() interface{}
@@ -146,12 +150,14 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	PutGcfsConfig(value *GoogleContainerClusterNodeConfigGcfsConfig)
 	PutGuestAccelerator(value interface{})
 	PutGvnic(value *GoogleContainerClusterNodeConfigGvnic)
+	PutHostMaintenancePolicy(value *GoogleContainerClusterNodeConfigHostMaintenancePolicy)
 	PutKubeletConfig(value *GoogleContainerClusterNodeConfigKubeletConfig)
 	PutLinuxNodeConfig(value *GoogleContainerClusterNodeConfigLinuxNodeConfig)
 	PutLocalNvmeSsdBlockConfig(value *GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig)
 	PutReservationAffinity(value *GoogleContainerClusterNodeConfigReservationAffinity)
 	PutSandboxConfig(value *GoogleContainerClusterNodeConfigSandboxConfig)
 	PutShieldedInstanceConfig(value *GoogleContainerClusterNodeConfigShieldedInstanceConfig)
+	PutSoleTenantConfig(value *GoogleContainerClusterNodeConfigSoleTenantConfig)
 	PutTaint(value interface{})
 	PutWorkloadMetadataConfig(value *GoogleContainerClusterNodeConfigWorkloadMetadataConfig)
 	ResetAdvancedMachineFeatures()
@@ -163,6 +169,7 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	ResetGcfsConfig()
 	ResetGuestAccelerator()
 	ResetGvnic()
+	ResetHostMaintenancePolicy()
 	ResetImageType()
 	ResetKubeletConfig()
 	ResetLabels()
@@ -181,6 +188,7 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	ResetSandboxConfig()
 	ResetServiceAccount()
 	ResetShieldedInstanceConfig()
+	ResetSoleTenantConfig()
 	ResetSpot()
 	ResetTags()
 	ResetTaint()
@@ -415,6 +423,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) GvnicInput()
 	_jsii_.Get(
 		j,
 		"gvnicInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) HostMaintenancePolicy() GoogleContainerClusterNodeConfigHostMaintenancePolicyOutputReference {
+	var returns GoogleContainerClusterNodeConfigHostMaintenancePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"hostMaintenancePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) HostMaintenancePolicyInput() *GoogleContainerClusterNodeConfigHostMaintenancePolicy {
+	var returns *GoogleContainerClusterNodeConfigHostMaintenancePolicy
+	_jsii_.Get(
+		j,
+		"hostMaintenancePolicyInput",
 		&returns,
 	)
 	return returns
@@ -785,6 +813,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ShieldedInst
 	_jsii_.Get(
 		j,
 		"shieldedInstanceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) SoleTenantConfig() GoogleContainerClusterNodeConfigSoleTenantConfigOutputReference {
+	var returns GoogleContainerClusterNodeConfigSoleTenantConfigOutputReference
+	_jsii_.Get(
+		j,
+		"soleTenantConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) SoleTenantConfigInput() *GoogleContainerClusterNodeConfigSoleTenantConfig {
+	var returns *GoogleContainerClusterNodeConfigSoleTenantConfig
+	_jsii_.Get(
+		j,
+		"soleTenantConfigInput",
 		&returns,
 	)
 	return returns
@@ -1412,6 +1460,17 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) PutGvnic(val
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) PutHostMaintenancePolicy(value *GoogleContainerClusterNodeConfigHostMaintenancePolicy) {
+	if err := g.validatePutHostMaintenancePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHostMaintenancePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) PutKubeletConfig(value *GoogleContainerClusterNodeConfigKubeletConfig) {
 	if err := g.validatePutKubeletConfigParameters(value); err != nil {
 		panic(err)
@@ -1474,6 +1533,17 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) PutShieldedI
 	_jsii_.InvokeVoid(
 		g,
 		"putShieldedInstanceConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) PutSoleTenantConfig(value *GoogleContainerClusterNodeConfigSoleTenantConfig) {
+	if err := g.validatePutSoleTenantConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSoleTenantConfig",
 		[]interface{}{value},
 	)
 }
@@ -1568,6 +1638,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetGvnic()
 	_jsii_.InvokeVoid(
 		g,
 		"resetGvnic",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetHostMaintenancePolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHostMaintenancePolicy",
 		nil, // no parameters
 	)
 }
@@ -1712,6 +1790,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetShielde
 	_jsii_.InvokeVoid(
 		g,
 		"resetShieldedInstanceConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetSoleTenantConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSoleTenantConfig",
 		nil, // no parameters
 	)
 }

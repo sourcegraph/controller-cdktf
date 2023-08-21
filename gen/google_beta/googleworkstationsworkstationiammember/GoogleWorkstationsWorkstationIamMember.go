@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleworkstationsworkstationiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_workstations_workstation_iam_member google_workstations_workstation_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_workstations_workstation_iam_member google_workstations_workstation_iam_member}.
 type GoogleWorkstationsWorkstationIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -484,7 +484,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationIamMember) WorkstationIdInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_workstations_workstation_iam_member google_workstations_workstation_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_workstations_workstation_iam_member google_workstations_workstation_iam_member} Resource.
 func NewGoogleWorkstationsWorkstationIamMember(scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationIamMemberConfig) GoogleWorkstationsWorkstationIamMember {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewGoogleWorkstationsWorkstationIamMember(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_workstations_workstation_iam_member google_workstations_workstation_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_workstations_workstation_iam_member google_workstations_workstation_iam_member} Resource.
 func NewGoogleWorkstationsWorkstationIamMember_Override(g GoogleWorkstationsWorkstationIamMember, scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationIamMemberConfig) {
 	_init_.Initialize()
 

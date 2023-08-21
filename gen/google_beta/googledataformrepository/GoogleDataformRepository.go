@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataformrepository/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dataform_repository google_dataform_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataform_repository google_dataform_repository}.
 type GoogleDataformRepository interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -74,6 +74,8 @@ type GoogleDataformRepository interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleDataformRepositoryTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	WorkspaceCompilationOverrides() GoogleDataformRepositoryWorkspaceCompilationOverridesOutputReference
+	WorkspaceCompilationOverridesInput() *GoogleDataformRepositoryWorkspaceCompilationOverrides
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -101,6 +103,7 @@ type GoogleDataformRepository interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutGitRemoteSettings(value *GoogleDataformRepositoryGitRemoteSettings)
 	PutTimeouts(value *GoogleDataformRepositoryTimeouts)
+	PutWorkspaceCompilationOverrides(value *GoogleDataformRepositoryWorkspaceCompilationOverrides)
 	ResetGitRemoteSettings()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -109,6 +112,7 @@ type GoogleDataformRepository interface {
 	ResetProject()
 	ResetRegion()
 	ResetTimeouts()
+	ResetWorkspaceCompilationOverrides()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -404,8 +408,28 @@ func (j *jsiiProxy_GoogleDataformRepository) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataformRepository) WorkspaceCompilationOverrides() GoogleDataformRepositoryWorkspaceCompilationOverridesOutputReference {
+	var returns GoogleDataformRepositoryWorkspaceCompilationOverridesOutputReference
+	_jsii_.Get(
+		j,
+		"workspaceCompilationOverrides",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dataform_repository google_dataform_repository} Resource.
+func (j *jsiiProxy_GoogleDataformRepository) WorkspaceCompilationOverridesInput() *GoogleDataformRepositoryWorkspaceCompilationOverrides {
+	var returns *GoogleDataformRepositoryWorkspaceCompilationOverrides
+	_jsii_.Get(
+		j,
+		"workspaceCompilationOverridesInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataform_repository google_dataform_repository} Resource.
 func NewGoogleDataformRepository(scope constructs.Construct, id *string, config *GoogleDataformRepositoryConfig) GoogleDataformRepository {
 	_init_.Initialize()
 
@@ -423,7 +447,7 @@ func NewGoogleDataformRepository(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dataform_repository google_dataform_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataform_repository google_dataform_repository} Resource.
 func NewGoogleDataformRepository_Override(g GoogleDataformRepository, scope constructs.Construct, id *string, config *GoogleDataformRepositoryConfig) {
 	_init_.Initialize()
 
@@ -834,6 +858,17 @@ func (g *jsiiProxy_GoogleDataformRepository) PutTimeouts(value *GoogleDataformRe
 	)
 }
 
+func (g *jsiiProxy_GoogleDataformRepository) PutWorkspaceCompilationOverrides(value *GoogleDataformRepositoryWorkspaceCompilationOverrides) {
+	if err := g.validatePutWorkspaceCompilationOverridesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putWorkspaceCompilationOverrides",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataformRepository) ResetGitRemoteSettings() {
 	_jsii_.InvokeVoid(
 		g,
@@ -878,6 +913,14 @@ func (g *jsiiProxy_GoogleDataformRepository) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataformRepository) ResetWorkspaceCompilationOverrides() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWorkspaceCompilationOverrides",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlednsmanagedzoneiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dns_managed_zone_iam_member google_dns_managed_zone_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dns_managed_zone_iam_member google_dns_managed_zone_iam_member}.
 type GoogleDnsManagedZoneIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleDnsManagedZoneIamMember) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dns_managed_zone_iam_member google_dns_managed_zone_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dns_managed_zone_iam_member google_dns_managed_zone_iam_member} Resource.
 func NewGoogleDnsManagedZoneIamMember(scope constructs.Construct, id *string, config *GoogleDnsManagedZoneIamMemberConfig) GoogleDnsManagedZoneIamMember {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleDnsManagedZoneIamMember(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dns_managed_zone_iam_member google_dns_managed_zone_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dns_managed_zone_iam_member google_dns_managed_zone_iam_member} Resource.
 func NewGoogleDnsManagedZoneIamMember_Override(g GoogleDnsManagedZoneIamMember, scope constructs.Construct, id *string, config *GoogleDnsManagedZoneIamMemberConfig) {
 	_init_.Initialize()
 

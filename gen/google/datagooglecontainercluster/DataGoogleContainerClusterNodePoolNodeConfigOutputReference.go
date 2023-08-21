@@ -35,6 +35,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	GcfsConfig() DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigList
 	GuestAccelerator() DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorList
 	Gvnic() DataGoogleContainerClusterNodePoolNodeConfigGvnicList
+	HostMaintenancePolicy() DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList
 	ImageType() *string
 	InternalValue() *DataGoogleContainerClusterNodePoolNodeConfig
 	SetInternalValue(val *DataGoogleContainerClusterNodePoolNodeConfig)
@@ -54,6 +55,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResourceLabels() cdktf.StringMap
 	ServiceAccount() *string
 	ShieldedInstanceConfig() DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigList
+	SoleTenantConfig() DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigList
 	Spot() cdktf.IResolvable
 	Tags() *[]*string
 	Taint() DataGoogleContainerClusterNodePoolNodeConfigTaintList
@@ -220,6 +222,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"gvnic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) HostMaintenancePolicy() DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList {
+	var returns DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList
+	_jsii_.Get(
+		j,
+		"hostMaintenancePolicy",
 		&returns,
 	)
 	return returns
@@ -400,6 +412,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"shieldedInstanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) SoleTenantConfig() DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigList {
+	var returns DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigList
+	_jsii_.Get(
+		j,
+		"soleTenantConfig",
 		&returns,
 	)
 	return returns

@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudrunv2job/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job}.
 type GoogleCloudRunV2Job interface {
 	cdktf.TerraformResource
+	Annotations() *map[string]*string
+	SetAnnotations(val *map[string]*string)
+	AnnotationsInput() *map[string]*string
 	BinaryAuthorization() GoogleCloudRunV2JobBinaryAuthorizationOutputReference
 	BinaryAuthorizationInput() *GoogleCloudRunV2JobBinaryAuthorization
 	// Experimental.
@@ -125,6 +128,7 @@ type GoogleCloudRunV2Job interface {
 	PutBinaryAuthorization(value *GoogleCloudRunV2JobBinaryAuthorization)
 	PutTemplate(value *GoogleCloudRunV2JobTemplate)
 	PutTimeouts(value *GoogleCloudRunV2JobTimeouts)
+	ResetAnnotations()
 	ResetBinaryAuthorization()
 	ResetClient()
 	ResetClientVersion()
@@ -150,6 +154,26 @@ type GoogleCloudRunV2Job interface {
 // The jsii proxy struct for GoogleCloudRunV2Job
 type jsiiProxy_GoogleCloudRunV2Job struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Job) Annotations() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Job) AnnotationsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotationsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleCloudRunV2Job) BinaryAuthorization() GoogleCloudRunV2JobBinaryAuthorizationOutputReference {
@@ -623,7 +647,7 @@ func (j *jsiiProxy_GoogleCloudRunV2Job) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job} Resource.
 func NewGoogleCloudRunV2Job(scope constructs.Construct, id *string, config *GoogleCloudRunV2JobConfig) GoogleCloudRunV2Job {
 	_init_.Initialize()
 
@@ -641,7 +665,7 @@ func NewGoogleCloudRunV2Job(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job} Resource.
 func NewGoogleCloudRunV2Job_Override(g GoogleCloudRunV2Job, scope constructs.Construct, id *string, config *GoogleCloudRunV2JobConfig) {
 	_init_.Initialize()
 
@@ -649,6 +673,17 @@ func NewGoogleCloudRunV2Job_Override(g GoogleCloudRunV2Job, scope constructs.Con
 		"@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2Job",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Job)SetAnnotations(val *map[string]*string) {
+	if err := j.validateSetAnnotationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"annotations",
+		val,
 	)
 }
 
@@ -1104,6 +1139,14 @@ func (g *jsiiProxy_GoogleCloudRunV2Job) PutTimeouts(value *GoogleCloudRunV2JobTi
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2Job) ResetAnnotations() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAnnotations",
+		nil, // no parameters
 	)
 }
 

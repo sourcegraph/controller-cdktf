@@ -6,7 +6,7 @@ type GoogleArtifactRegistryRepositoryDockerConfig struct {
 	//
 	// This does not prevent tags from being created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_artifact_registry_repository#immutable_tags GoogleArtifactRegistryRepository#immutable_tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_artifact_registry_repository#immutable_tags GoogleArtifactRegistryRepository#immutable_tags}
 	ImmutableTags interface{} `field:"optional" json:"immutableTags" yaml:"immutableTags"`
 }
 

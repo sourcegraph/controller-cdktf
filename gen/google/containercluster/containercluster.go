@@ -9,11 +9,14 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/containercluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_cluster google_container_cluster}.
 type ContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() ContainerClusterAddonsConfigOutputReference
 	AddonsConfigInput() *ContainerClusterAddonsConfig
+	AllowNetAdmin() interface{}
+	SetAllowNetAdmin(val interface{})
+	AllowNetAdminInput() interface{}
 	AuthenticatorGroupsConfig() ContainerClusterAuthenticatorGroupsConfigOutputReference
 	AuthenticatorGroupsConfigInput() *ContainerClusterAuthenticatorGroupsConfig
 	BinaryAuthorization() ContainerClusterBinaryAuthorizationOutputReference
@@ -67,6 +70,8 @@ type ContainerCluster interface {
 	EnableIntranodeVisibility() interface{}
 	SetEnableIntranodeVisibility(val interface{})
 	EnableIntranodeVisibilityInput() interface{}
+	EnableK8SBetaApis() ContainerClusterEnableK8SBetaApisOutputReference
+	EnableK8SBetaApisInput() *ContainerClusterEnableK8SBetaApis
 	EnableKubernetesAlpha() interface{}
 	SetEnableKubernetesAlpha(val interface{})
 	EnableKubernetesAlphaInput() interface{}
@@ -187,6 +192,8 @@ type ContainerCluster interface {
 	ResourceLabelsInput() *map[string]*string
 	ResourceUsageExportConfig() ContainerClusterResourceUsageExportConfigOutputReference
 	ResourceUsageExportConfigInput() *ContainerClusterResourceUsageExportConfig
+	SecurityPostureConfig() ContainerClusterSecurityPostureConfigOutputReference
+	SecurityPostureConfigInput() *ContainerClusterSecurityPostureConfig
 	SelfLink() *string
 	ServiceExternalIpsConfig() ContainerClusterServiceExternalIpsConfigOutputReference
 	ServiceExternalIpsConfigInput() *ContainerClusterServiceExternalIpsConfig
@@ -241,6 +248,7 @@ type ContainerCluster interface {
 	PutDatabaseEncryption(value *ContainerClusterDatabaseEncryption)
 	PutDefaultSnatStatus(value *ContainerClusterDefaultSnatStatus)
 	PutDnsConfig(value *ContainerClusterDnsConfig)
+	PutEnableK8SBetaApis(value *ContainerClusterEnableK8SBetaApis)
 	PutGatewayApiConfig(value *ContainerClusterGatewayApiConfig)
 	PutIpAllocationPolicy(value *ContainerClusterIpAllocationPolicy)
 	PutLoggingConfig(value *ContainerClusterLoggingConfig)
@@ -257,11 +265,13 @@ type ContainerCluster interface {
 	PutPrivateClusterConfig(value *ContainerClusterPrivateClusterConfig)
 	PutReleaseChannel(value *ContainerClusterReleaseChannel)
 	PutResourceUsageExportConfig(value *ContainerClusterResourceUsageExportConfig)
+	PutSecurityPostureConfig(value *ContainerClusterSecurityPostureConfig)
 	PutServiceExternalIpsConfig(value *ContainerClusterServiceExternalIpsConfig)
 	PutTimeouts(value *ContainerClusterTimeouts)
 	PutVerticalPodAutoscaling(value *ContainerClusterVerticalPodAutoscaling)
 	PutWorkloadIdentityConfig(value *ContainerClusterWorkloadIdentityConfig)
 	ResetAddonsConfig()
+	ResetAllowNetAdmin()
 	ResetAuthenticatorGroupsConfig()
 	ResetBinaryAuthorization()
 	ResetClusterAutoscaling()
@@ -277,6 +287,7 @@ type ContainerCluster interface {
 	ResetEnableAutopilot()
 	ResetEnableBinaryAuthorization()
 	ResetEnableIntranodeVisibility()
+	ResetEnableK8SBetaApis()
 	ResetEnableKubernetesAlpha()
 	ResetEnableL4IlbSubsetting()
 	ResetEnableLegacyAbac()
@@ -315,6 +326,7 @@ type ContainerCluster interface {
 	ResetRemoveDefaultNodePool()
 	ResetResourceLabels()
 	ResetResourceUsageExportConfig()
+	ResetSecurityPostureConfig()
 	ResetServiceExternalIpsConfig()
 	ResetSubnetwork()
 	ResetTimeouts()
@@ -350,6 +362,26 @@ func (j *jsiiProxy_ContainerCluster) AddonsConfigInput() *ContainerClusterAddons
 	_jsii_.Get(
 		j,
 		"addonsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) AllowNetAdmin() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowNetAdmin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) AllowNetAdminInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowNetAdminInput",
 		&returns,
 	)
 	return returns
@@ -700,6 +732,26 @@ func (j *jsiiProxy_ContainerCluster) EnableIntranodeVisibilityInput() interface{
 	_jsii_.Get(
 		j,
 		"enableIntranodeVisibilityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) EnableK8SBetaApis() ContainerClusterEnableK8SBetaApisOutputReference {
+	var returns ContainerClusterEnableK8SBetaApisOutputReference
+	_jsii_.Get(
+		j,
+		"enableK8SBetaApis",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) EnableK8SBetaApisInput() *ContainerClusterEnableK8SBetaApis {
+	var returns *ContainerClusterEnableK8SBetaApis
+	_jsii_.Get(
+		j,
+		"enableK8SBetaApisInput",
 		&returns,
 	)
 	return returns
@@ -1545,6 +1597,26 @@ func (j *jsiiProxy_ContainerCluster) ResourceUsageExportConfigInput() *Container
 	return returns
 }
 
+func (j *jsiiProxy_ContainerCluster) SecurityPostureConfig() ContainerClusterSecurityPostureConfigOutputReference {
+	var returns ContainerClusterSecurityPostureConfigOutputReference
+	_jsii_.Get(
+		j,
+		"securityPostureConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) SecurityPostureConfigInput() *ContainerClusterSecurityPostureConfig {
+	var returns *ContainerClusterSecurityPostureConfig
+	_jsii_.Get(
+		j,
+		"securityPostureConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerCluster) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1706,7 +1778,7 @@ func (j *jsiiProxy_ContainerCluster) WorkloadIdentityConfigInput() *ContainerClu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster(scope constructs.Construct, id *string, config *ContainerClusterConfig) ContainerCluster {
 	_init_.Initialize()
 
@@ -1724,7 +1796,7 @@ func NewContainerCluster(scope constructs.Construct, id *string, config *Contain
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster_Override(c ContainerCluster, scope constructs.Construct, id *string, config *ContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -1732,6 +1804,17 @@ func NewContainerCluster_Override(c ContainerCluster, scope constructs.Construct
 		"@cdktf/provider-google.containerCluster.ContainerCluster",
 		[]interface{}{scope, id, config},
 		c,
+	)
+}
+
+func (j *jsiiProxy_ContainerCluster)SetAllowNetAdmin(val interface{}) {
+	if err := j.validateSetAllowNetAdminParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowNetAdmin",
+		val,
 	)
 }
 
@@ -2476,6 +2559,17 @@ func (c *jsiiProxy_ContainerCluster) PutDnsConfig(value *ContainerClusterDnsConf
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) PutEnableK8SBetaApis(value *ContainerClusterEnableK8SBetaApis) {
+	if err := c.validatePutEnableK8SBetaApisParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putEnableK8SBetaApis",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) PutGatewayApiConfig(value *ContainerClusterGatewayApiConfig) {
 	if err := c.validatePutGatewayApiConfigParameters(value); err != nil {
 		panic(err)
@@ -2652,6 +2746,17 @@ func (c *jsiiProxy_ContainerCluster) PutResourceUsageExportConfig(value *Contain
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) PutSecurityPostureConfig(value *ContainerClusterSecurityPostureConfig) {
+	if err := c.validatePutSecurityPostureConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSecurityPostureConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) PutServiceExternalIpsConfig(value *ContainerClusterServiceExternalIpsConfig) {
 	if err := c.validatePutServiceExternalIpsConfigParameters(value); err != nil {
 		panic(err)
@@ -2700,6 +2805,14 @@ func (c *jsiiProxy_ContainerCluster) ResetAddonsConfig() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAddonsConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetAllowNetAdmin() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAllowNetAdmin",
 		nil, // no parameters
 	)
 }
@@ -2820,6 +2933,14 @@ func (c *jsiiProxy_ContainerCluster) ResetEnableIntranodeVisibility() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetEnableIntranodeVisibility",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetEnableK8SBetaApis() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableK8SBetaApis",
 		nil, // no parameters
 	)
 }
@@ -3108,6 +3229,14 @@ func (c *jsiiProxy_ContainerCluster) ResetResourceUsageExportConfig() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetResourceUsageExportConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetSecurityPostureConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSecurityPostureConfig",
 		nil, // no parameters
 	)
 }

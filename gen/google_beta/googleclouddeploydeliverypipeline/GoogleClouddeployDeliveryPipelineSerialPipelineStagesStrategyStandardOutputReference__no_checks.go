@@ -44,6 +44,14 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	return nil
 }
 
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) validatePutPostdeployParameters(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeploy) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) validatePutPredeployParameters(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeploy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

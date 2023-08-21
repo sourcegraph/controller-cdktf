@@ -26,11 +26,18 @@ type GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference interf
 	// Experimental.
 	CreationStack() *[]*string
 	ExternalIpv6() *string
+	SetExternalIpv6(val *string)
+	ExternalIpv6Input() *string
 	ExternalIpv6PrefixLength() *string
+	SetExternalIpv6PrefixLength(val *string)
+	ExternalIpv6PrefixLengthInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	NetworkTier() *string
 	SetNetworkTier(val *string)
 	NetworkTierInput() *string
@@ -69,6 +76,9 @@ type GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetExternalIpv6()
+	ResetExternalIpv6PrefixLength()
+	ResetName()
 	ResetPublicPtrDomainName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -125,11 +135,31 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputRe
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference) ExternalIpv6Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalIpv6Input",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference) ExternalIpv6PrefixLength() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"externalIpv6PrefixLength",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference) ExternalIpv6PrefixLengthInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalIpv6PrefixLengthInput",
 		&returns,
 	)
 	return returns
@@ -150,6 +180,26 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputRe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
 		&returns,
 	)
 	return returns
@@ -265,6 +315,28 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputRe
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference)SetExternalIpv6(val *string) {
+	if err := j.validateSetExternalIpv6Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalIpv6",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference)SetExternalIpv6PrefixLength(val *string) {
+	if err := j.validateSetExternalIpv6PrefixLengthParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalIpv6PrefixLength",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -272,6 +344,17 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputRe
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }
@@ -504,6 +587,30 @@ func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputRe
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference) ResetExternalIpv6() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExternalIpv6",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference) ResetExternalIpv6PrefixLength() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExternalIpv6PrefixLength",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetName",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference) ResetPublicPtrDomainName() {

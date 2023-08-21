@@ -76,6 +76,10 @@ func (j *jsiiProxy_GooglePubsubSchemaTimeoutsOutputReference) validateSetTerrafo
 	return nil
 }
 
+func (j *jsiiProxy_GooglePubsubSchemaTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewGooglePubsubSchemaTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

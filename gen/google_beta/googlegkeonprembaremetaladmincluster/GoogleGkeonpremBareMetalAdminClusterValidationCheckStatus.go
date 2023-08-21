@@ -1,0 +1,6 @@
+package googlegkeonprembaremetaladmincluster
+
+
+type GoogleGkeonpremBareMetalAdminClusterValidationCheckStatus struct {
+}
+

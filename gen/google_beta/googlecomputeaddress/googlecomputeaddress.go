@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeaddress/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_address google_compute_address}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_address google_compute_address}.
 type GoogleComputeAddress interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -49,6 +49,12 @@ type GoogleComputeAddress interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Ipv6EndpointType() *string
+	SetIpv6EndpointType(val *string)
+	Ipv6EndpointTypeInput() *string
+	IpVersion() *string
+	SetIpVersion(val *string)
+	IpVersionInput() *string
 	LabelFingerprint() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
@@ -133,6 +139,8 @@ type GoogleComputeAddress interface {
 	ResetAddressType()
 	ResetDescription()
 	ResetId()
+	ResetIpv6EndpointType()
+	ResetIpVersion()
 	ResetLabels()
 	ResetNetwork()
 	ResetNetworkTier()
@@ -325,6 +333,46 @@ func (j *jsiiProxy_GoogleComputeAddress) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeAddress) Ipv6EndpointType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6EndpointType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeAddress) Ipv6EndpointTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6EndpointTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeAddress) IpVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeAddress) IpVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipVersionInput",
 		&returns,
 	)
 	return returns
@@ -641,7 +689,7 @@ func (j *jsiiProxy_GoogleComputeAddress) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_address google_compute_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_address google_compute_address} Resource.
 func NewGoogleComputeAddress(scope constructs.Construct, id *string, config *GoogleComputeAddressConfig) GoogleComputeAddress {
 	_init_.Initialize()
 
@@ -659,7 +707,7 @@ func NewGoogleComputeAddress(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_address google_compute_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_address google_compute_address} Resource.
 func NewGoogleComputeAddress_Override(g GoogleComputeAddress, scope constructs.Construct, id *string, config *GoogleComputeAddressConfig) {
 	_init_.Initialize()
 
@@ -748,6 +796,28 @@ func (j *jsiiProxy_GoogleComputeAddress)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeAddress)SetIpv6EndpointType(val *string) {
+	if err := j.validateSetIpv6EndpointTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6EndpointType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeAddress)SetIpVersion(val *string) {
+	if err := j.validateSetIpVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipVersion",
 		val,
 	)
 }
@@ -1186,6 +1256,22 @@ func (g *jsiiProxy_GoogleComputeAddress) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeAddress) ResetIpv6EndpointType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpv6EndpointType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeAddress) ResetIpVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpVersion",
 		nil, // no parameters
 	)
 }

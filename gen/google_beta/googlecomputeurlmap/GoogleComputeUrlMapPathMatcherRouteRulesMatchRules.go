@@ -8,31 +8,40 @@ type GoogleComputeUrlMapPathMatcherRouteRulesMatchRules struct {
 	// and 1024 characters. Only one of prefixMatch, fullPathMatch or regexMatch must
 	// be specified.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_url_map#full_path_match GoogleComputeUrlMap#full_path_match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#full_path_match GoogleComputeUrlMap#full_path_match}
 	FullPathMatch *string `field:"optional" json:"fullPathMatch" yaml:"fullPathMatch"`
 	// header_matches block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_url_map#header_matches GoogleComputeUrlMap#header_matches}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#header_matches GoogleComputeUrlMap#header_matches}
 	HeaderMatches interface{} `field:"optional" json:"headerMatches" yaml:"headerMatches"`
 	// Specifies that prefixMatch and fullPathMatch matches are case sensitive. Defaults to false.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_url_map#ignore_case GoogleComputeUrlMap#ignore_case}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#ignore_case GoogleComputeUrlMap#ignore_case}
 	IgnoreCase interface{} `field:"optional" json:"ignoreCase" yaml:"ignoreCase"`
 	// metadata_filters block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_url_map#metadata_filters GoogleComputeUrlMap#metadata_filters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#metadata_filters GoogleComputeUrlMap#metadata_filters}
 	MetadataFilters interface{} `field:"optional" json:"metadataFilters" yaml:"metadataFilters"`
+	// For satisfying the matchRule condition, the path of the request must match the wildcard pattern specified in pathTemplateMatch after removing any query parameters and anchor that may be part of the original URL.
+	//
+	// pathTemplateMatch must be between 1 and 255 characters
+	// (inclusive).  The pattern specified by pathTemplateMatch may
+	// have at most 5 wildcard operators and at most 5 variable
+	// captures in total.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#path_template_match GoogleComputeUrlMap#path_template_match}
+	PathTemplateMatch *string `field:"optional" json:"pathTemplateMatch" yaml:"pathTemplateMatch"`
 	// For satisfying the matchRule condition, the request's path must begin with the specified prefixMatch.
 	//
 	// prefixMatch must begin with a /. The value must be
 	// between 1 and 1024 characters. Only one of prefixMatch, fullPathMatch or
 	// regexMatch must be specified.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_url_map#prefix_match GoogleComputeUrlMap#prefix_match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#prefix_match GoogleComputeUrlMap#prefix_match}
 	PrefixMatch *string `field:"optional" json:"prefixMatch" yaml:"prefixMatch"`
 	// query_parameter_matches block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_url_map#query_parameter_matches GoogleComputeUrlMap#query_parameter_matches}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#query_parameter_matches GoogleComputeUrlMap#query_parameter_matches}
 	QueryParameterMatches interface{} `field:"optional" json:"queryParameterMatches" yaml:"queryParameterMatches"`
 	// For satisfying the matchRule condition, the path of the request must satisfy the regular expression specified in regexMatch after removing any query parameters and anchor supplied with the original URL.
 	//
@@ -40,7 +49,7 @@ type GoogleComputeUrlMapPathMatcherRouteRulesMatchRules struct {
 	// see en.cppreference.com/w/cpp/regex/ecmascript  Only one of prefixMatch,
 	// fullPathMatch or regexMatch must be specified.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_url_map#regex_match GoogleComputeUrlMap#regex_match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#regex_match GoogleComputeUrlMap#regex_match}
 	RegexMatch *string `field:"optional" json:"regexMatch" yaml:"regexMatch"`
 }
 

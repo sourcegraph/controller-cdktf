@@ -7,7 +7,7 @@ type GoogleCloudTasksQueueStackdriverLoggingConfig struct {
 	// This field may contain any value between 0.0 and 1.0, inclusive. 0.0 is the
 	// default and means that no operations are logged.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloud_tasks_queue#sampling_ratio GoogleCloudTasksQueue#sampling_ratio}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloud_tasks_queue#sampling_ratio GoogleCloudTasksQueue#sampling_ratio}
 	SamplingRatio *float64 `field:"required" json:"samplingRatio" yaml:"samplingRatio"`
 }
 

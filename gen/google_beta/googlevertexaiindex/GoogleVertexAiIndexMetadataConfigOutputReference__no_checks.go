@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleVertexAiIndexMetadataConfigOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleVertexAiIndexMetadataConfigOutputReference) validateSetShardSizeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleVertexAiIndexMetadataConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

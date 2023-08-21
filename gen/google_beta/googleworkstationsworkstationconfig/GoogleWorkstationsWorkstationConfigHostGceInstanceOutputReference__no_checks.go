@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	return nil
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validatePutAcceleratorsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validatePutConfidentialInstanceConfigParameters(value *GoogleWorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfig) error {
 	return nil
 }

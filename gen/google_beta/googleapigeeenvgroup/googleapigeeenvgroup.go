@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigeeenvgroup/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_apigee_envgroup google_apigee_envgroup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_apigee_envgroup google_apigee_envgroup}.
 type GoogleApigeeEnvgroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_GoogleApigeeEnvgroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_apigee_envgroup google_apigee_envgroup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_apigee_envgroup google_apigee_envgroup} Resource.
 func NewGoogleApigeeEnvgroup(scope constructs.Construct, id *string, config *GoogleApigeeEnvgroupConfig) GoogleApigeeEnvgroup {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewGoogleApigeeEnvgroup(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_apigee_envgroup google_apigee_envgroup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_apigee_envgroup google_apigee_envgroup} Resource.
 func NewGoogleApigeeEnvgroup_Override(g GoogleApigeeEnvgroup, scope constructs.Construct, id *string, config *GoogleApigeeEnvgroupConfig) {
 	_init_.Initialize()
 

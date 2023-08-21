@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeglobalforwardingrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule}.
 type ComputeGlobalForwardingRule interface {
 	cdktf.TerraformResource
 	BaseForwardingRule() *string
@@ -71,6 +71,9 @@ type ComputeGlobalForwardingRule interface {
 	Network() *string
 	SetNetwork(val *string)
 	NetworkInput() *string
+	NoAutomateDnsZone() interface{}
+	SetNoAutomateDnsZone(val interface{})
+	NoAutomateDnsZoneInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	PortRange() *string
@@ -95,6 +98,9 @@ type ComputeGlobalForwardingRule interface {
 	SourceIpRanges() *[]*string
 	SetSourceIpRanges(val *[]*string)
 	SourceIpRangesInput() *[]*string
+	Subnetwork() *string
+	SetSubnetwork(val *string)
+	SubnetworkInput() *string
 	Target() *string
 	SetTarget(val *string)
 	TargetInput() *string
@@ -142,12 +148,14 @@ type ComputeGlobalForwardingRule interface {
 	ResetLoadBalancingScheme()
 	ResetMetadataFilters()
 	ResetNetwork()
+	ResetNoAutomateDnsZone()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPortRange()
 	ResetProject()
 	ResetSourceIpRanges()
+	ResetSubnetwork()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -474,6 +482,26 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule) NetworkInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeGlobalForwardingRule) NoAutomateDnsZone() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noAutomateDnsZone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeGlobalForwardingRule) NoAutomateDnsZoneInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noAutomateDnsZoneInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeGlobalForwardingRule) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -604,6 +632,26 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule) SourceIpRangesInput() *[]*string
 	return returns
 }
 
+func (j *jsiiProxy_ComputeGlobalForwardingRule) Subnetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeGlobalForwardingRule) SubnetworkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetworkInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeGlobalForwardingRule) Target() *string {
 	var returns *string
 	_jsii_.Get(
@@ -675,7 +723,7 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
 func NewComputeGlobalForwardingRule(scope constructs.Construct, id *string, config *ComputeGlobalForwardingRuleConfig) ComputeGlobalForwardingRule {
 	_init_.Initialize()
 
@@ -693,7 +741,7 @@ func NewComputeGlobalForwardingRule(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
 func NewComputeGlobalForwardingRule_Override(c ComputeGlobalForwardingRule, scope constructs.Construct, id *string, config *ComputeGlobalForwardingRuleConfig) {
 	_init_.Initialize()
 
@@ -852,6 +900,17 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule)SetNetwork(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ComputeGlobalForwardingRule)SetNoAutomateDnsZone(val interface{}) {
+	if err := j.validateSetNoAutomateDnsZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"noAutomateDnsZone",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeGlobalForwardingRule)SetPortRange(val *string) {
 	if err := j.validateSetPortRangeParameters(val); err != nil {
 		panic(err)
@@ -900,6 +959,17 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule)SetSourceIpRanges(val *[]*string)
 	_jsii_.Set(
 		j,
 		"sourceIpRanges",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeGlobalForwardingRule)SetSubnetwork(val *string) {
+	if err := j.validateSetSubnetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subnetwork",
 		val,
 	)
 }
@@ -1275,6 +1345,14 @@ func (c *jsiiProxy_ComputeGlobalForwardingRule) ResetNetwork() {
 	)
 }
 
+func (c *jsiiProxy_ComputeGlobalForwardingRule) ResetNoAutomateDnsZone() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNoAutomateDnsZone",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeGlobalForwardingRule) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1303,6 +1381,14 @@ func (c *jsiiProxy_ComputeGlobalForwardingRule) ResetSourceIpRanges() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSourceIpRanges",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeGlobalForwardingRule) ResetSubnetwork() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSubnetwork",
 		nil, // no parameters
 	)
 }

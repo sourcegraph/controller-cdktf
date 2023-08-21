@@ -29,6 +29,8 @@ type GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutput
 	Fqn() *string
 	InternalValue() *GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfig
 	SetInternalValue(val *GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfig)
+	LastUpdatedPartitionConfig() GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfigOutputReference
+	LastUpdatedPartitionConfigInput() *GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfig
 	RecursiveStructureDepth() *float64
 	SetRecursiveStructureDepth(val *float64)
 	RecursiveStructureDepthInput() *float64
@@ -67,6 +69,8 @@ type GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutput
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutLastUpdatedPartitionConfig(value *GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfig)
+	ResetLastUpdatedPartitionConfig()
 	ResetSchemaType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -128,6 +132,26 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSche
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference) LastUpdatedPartitionConfig() GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfigOutputReference {
+	var returns GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"lastUpdatedPartitionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference) LastUpdatedPartitionConfigInput() *GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfig {
+	var returns *GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfig
+	_jsii_.Get(
+		j,
+		"lastUpdatedPartitionConfigInput",
 		&returns,
 	)
 	return returns
@@ -482,6 +506,25 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSche
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference) PutLastUpdatedPartitionConfig(value *GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfig) {
+	if err := g.validatePutLastUpdatedPartitionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putLastUpdatedPartitionConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference) ResetLastUpdatedPartitionConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLastUpdatedPartitionConfig",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference) ResetSchemaType() {

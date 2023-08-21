@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlespannerdatabase/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_spanner_database google_spanner_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_spanner_database google_spanner_database}.
 type GoogleSpannerDatabase interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -37,6 +37,9 @@ type GoogleSpannerDatabase interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnableDropProtection() interface{}
+	SetEnableDropProtection(val interface{})
+	EnableDropProtectionInput() interface{}
 	EncryptionConfig() GoogleSpannerDatabaseEncryptionConfigOutputReference
 	EncryptionConfigInput() *GoogleSpannerDatabaseEncryptionConfig
 	// Experimental.
@@ -117,6 +120,7 @@ type GoogleSpannerDatabase interface {
 	ResetDatabaseDialect()
 	ResetDdl()
 	ResetDeletionProtection()
+	ResetEnableDropProtection()
 	ResetEncryptionConfig()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -245,6 +249,26 @@ func (j *jsiiProxy_GoogleSpannerDatabase) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSpannerDatabase) EnableDropProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDropProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSpannerDatabase) EnableDropProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDropProtectionInput",
 		&returns,
 	)
 	return returns
@@ -511,7 +535,7 @@ func (j *jsiiProxy_GoogleSpannerDatabase) VersionRetentionPeriodInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_spanner_database google_spanner_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_spanner_database google_spanner_database} Resource.
 func NewGoogleSpannerDatabase(scope constructs.Construct, id *string, config *GoogleSpannerDatabaseConfig) GoogleSpannerDatabase {
 	_init_.Initialize()
 
@@ -529,7 +553,7 @@ func NewGoogleSpannerDatabase(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_spanner_database google_spanner_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_spanner_database google_spanner_database} Resource.
 func NewGoogleSpannerDatabase_Override(g GoogleSpannerDatabase, scope constructs.Construct, id *string, config *GoogleSpannerDatabaseConfig) {
 	_init_.Initialize()
 
@@ -599,6 +623,17 @@ func (j *jsiiProxy_GoogleSpannerDatabase)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSpannerDatabase)SetEnableDropProtection(val interface{}) {
+	if err := j.validateSetEnableDropProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableDropProtection",
 		val,
 	)
 }
@@ -1004,6 +1039,14 @@ func (g *jsiiProxy_GoogleSpannerDatabase) ResetDeletionProtection() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDeletionProtection",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSpannerDatabase) ResetEnableDropProtection() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableDropProtection",
 		nil, // no parameters
 	)
 }

@@ -9,9 +9,11 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computedisk/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/compute_disk google_compute_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_disk google_compute_disk}.
 type ComputeDisk interface {
 	cdktf.TerraformResource
+	AsyncPrimaryDisk() ComputeDiskAsyncPrimaryDiskOutputReference
+	AsyncPrimaryDiskInput() *ComputeDiskAsyncPrimaryDisk
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -81,6 +83,9 @@ type ComputeDisk interface {
 	ProvisionedIops() *float64
 	SetProvisionedIops(val *float64)
 	ProvisionedIopsInput() *float64
+	ProvisionedThroughput() *float64
+	SetProvisionedThroughput(val *float64)
+	ProvisionedThroughputInput() *float64
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -144,11 +149,13 @@ type ComputeDisk interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAsyncPrimaryDisk(value *ComputeDiskAsyncPrimaryDisk)
 	PutDiskEncryptionKey(value *ComputeDiskDiskEncryptionKey)
 	PutGuestOsFeatures(value interface{})
 	PutSourceImageEncryptionKey(value *ComputeDiskSourceImageEncryptionKey)
 	PutSourceSnapshotEncryptionKey(value *ComputeDiskSourceSnapshotEncryptionKey)
 	PutTimeouts(value *ComputeDiskTimeouts)
+	ResetAsyncPrimaryDisk()
 	ResetDescription()
 	ResetDiskEncryptionKey()
 	ResetGuestOsFeatures()
@@ -162,6 +169,7 @@ type ComputeDisk interface {
 	ResetPhysicalBlockSizeBytes()
 	ResetProject()
 	ResetProvisionedIops()
+	ResetProvisionedThroughput()
 	ResetSize()
 	ResetSnapshot()
 	ResetSourceDisk()
@@ -183,6 +191,26 @@ type ComputeDisk interface {
 // The jsii proxy struct for ComputeDisk
 type jsiiProxy_ComputeDisk struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ComputeDisk) AsyncPrimaryDisk() ComputeDiskAsyncPrimaryDiskOutputReference {
+	var returns ComputeDiskAsyncPrimaryDiskOutputReference
+	_jsii_.Get(
+		j,
+		"asyncPrimaryDisk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeDisk) AsyncPrimaryDiskInput() *ComputeDiskAsyncPrimaryDisk {
+	var returns *ComputeDiskAsyncPrimaryDisk
+	_jsii_.Get(
+		j,
+		"asyncPrimaryDiskInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ComputeDisk) CdktfStack() cdktf.TerraformStack {
@@ -555,6 +583,26 @@ func (j *jsiiProxy_ComputeDisk) ProvisionedIopsInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeDisk) ProvisionedThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeDisk) ProvisionedThroughputInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedThroughputInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeDisk) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -816,7 +864,7 @@ func (j *jsiiProxy_ComputeDisk) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/compute_disk google_compute_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_disk google_compute_disk} Resource.
 func NewComputeDisk(scope constructs.Construct, id *string, config *ComputeDiskConfig) ComputeDisk {
 	_init_.Initialize()
 
@@ -834,7 +882,7 @@ func NewComputeDisk(scope constructs.Construct, id *string, config *ComputeDiskC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/compute_disk google_compute_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_disk google_compute_disk} Resource.
 func NewComputeDisk_Override(c ComputeDisk, scope constructs.Construct, id *string, config *ComputeDiskConfig) {
 	_init_.Initialize()
 
@@ -997,6 +1045,17 @@ func (j *jsiiProxy_ComputeDisk)SetProvisionedIops(val *float64) {
 	_jsii_.Set(
 		j,
 		"provisionedIops",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeDisk)SetProvisionedThroughput(val *float64) {
+	if err := j.validateSetProvisionedThroughputParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionedThroughput",
 		val,
 	)
 }
@@ -1333,6 +1392,17 @@ func (c *jsiiProxy_ComputeDisk) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (c *jsiiProxy_ComputeDisk) PutAsyncPrimaryDisk(value *ComputeDiskAsyncPrimaryDisk) {
+	if err := c.validatePutAsyncPrimaryDiskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAsyncPrimaryDisk",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeDisk) PutDiskEncryptionKey(value *ComputeDiskDiskEncryptionKey) {
 	if err := c.validatePutDiskEncryptionKeyParameters(value); err != nil {
 		panic(err)
@@ -1385,6 +1455,14 @@ func (c *jsiiProxy_ComputeDisk) PutTimeouts(value *ComputeDiskTimeouts) {
 		c,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeDisk) ResetAsyncPrimaryDisk() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAsyncPrimaryDisk",
+		nil, // no parameters
 	)
 }
 
@@ -1472,6 +1550,14 @@ func (c *jsiiProxy_ComputeDisk) ResetProvisionedIops() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProvisionedIops",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeDisk) ResetProvisionedThroughput() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProvisionedThroughput",
 		nil, // no parameters
 	)
 }

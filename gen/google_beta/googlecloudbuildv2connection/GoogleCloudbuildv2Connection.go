@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudbuildv2connection/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection}.
 type GoogleCloudbuildv2Connection interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -48,6 +48,8 @@ type GoogleCloudbuildv2Connection interface {
 	GithubConfigInput() *GoogleCloudbuildv2ConnectionGithubConfig
 	GithubEnterpriseConfig() GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference
 	GithubEnterpriseConfigInput() *GoogleCloudbuildv2ConnectionGithubEnterpriseConfig
+	GitlabConfig() GoogleCloudbuildv2ConnectionGitlabConfigOutputReference
+	GitlabConfigInput() *GoogleCloudbuildv2ConnectionGitlabConfig
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -114,11 +116,13 @@ type GoogleCloudbuildv2Connection interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutGithubConfig(value *GoogleCloudbuildv2ConnectionGithubConfig)
 	PutGithubEnterpriseConfig(value *GoogleCloudbuildv2ConnectionGithubEnterpriseConfig)
+	PutGitlabConfig(value *GoogleCloudbuildv2ConnectionGitlabConfig)
 	PutTimeouts(value *GoogleCloudbuildv2ConnectionTimeouts)
 	ResetAnnotations()
 	ResetDisabled()
 	ResetGithubConfig()
 	ResetGithubEnterpriseConfig()
+	ResetGitlabConfig()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -315,6 +319,26 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection) GithubEnterpriseConfigInput() *
 	_jsii_.Get(
 		j,
 		"githubEnterpriseConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) GitlabConfig() GoogleCloudbuildv2ConnectionGitlabConfigOutputReference {
+	var returns GoogleCloudbuildv2ConnectionGitlabConfigOutputReference
+	_jsii_.Get(
+		j,
+		"gitlabConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) GitlabConfigInput() *GoogleCloudbuildv2ConnectionGitlabConfig {
+	var returns *GoogleCloudbuildv2ConnectionGitlabConfig
+	_jsii_.Get(
+		j,
+		"gitlabConfigInput",
 		&returns,
 	)
 	return returns
@@ -531,7 +555,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
 func NewGoogleCloudbuildv2Connection(scope constructs.Construct, id *string, config *GoogleCloudbuildv2ConnectionConfig) GoogleCloudbuildv2Connection {
 	_init_.Initialize()
 
@@ -549,7 +573,7 @@ func NewGoogleCloudbuildv2Connection(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
 func NewGoogleCloudbuildv2Connection_Override(g GoogleCloudbuildv2Connection, scope constructs.Construct, id *string, config *GoogleCloudbuildv2ConnectionConfig) {
 	_init_.Initialize()
 
@@ -982,6 +1006,17 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) PutGithubEnterpriseConfig(value
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudbuildv2Connection) PutGitlabConfig(value *GoogleCloudbuildv2ConnectionGitlabConfig) {
+	if err := g.validatePutGitlabConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGitlabConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudbuildv2Connection) PutTimeouts(value *GoogleCloudbuildv2ConnectionTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1021,6 +1056,14 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) ResetGithubEnterpriseConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetGithubEnterpriseConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudbuildv2Connection) ResetGitlabConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGitlabConfig",
 		nil, // no parameters
 	)
 }

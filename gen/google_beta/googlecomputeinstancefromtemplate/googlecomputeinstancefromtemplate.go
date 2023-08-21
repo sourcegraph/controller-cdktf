@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeinstancefromtemplate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_instance_from_template google_compute_instance_from_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template}.
 type GoogleComputeInstanceFromTemplate interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference
@@ -103,6 +103,8 @@ type GoogleComputeInstanceFromTemplate interface {
 	NetworkPerformanceConfigInput() *GoogleComputeInstanceFromTemplateNetworkPerformanceConfig
 	// The tree node.
 	Node() constructs.Node
+	Params() GoogleComputeInstanceFromTemplateParamsOutputReference
+	ParamsInput() *GoogleComputeInstanceFromTemplateParams
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -180,6 +182,7 @@ type GoogleComputeInstanceFromTemplate interface {
 	PutGuestAccelerator(value interface{})
 	PutNetworkInterface(value interface{})
 	PutNetworkPerformanceConfig(value *GoogleComputeInstanceFromTemplateNetworkPerformanceConfig)
+	PutParams(value *GoogleComputeInstanceFromTemplateParams)
 	PutReservationAffinity(value *GoogleComputeInstanceFromTemplateReservationAffinity)
 	PutScheduling(value *GoogleComputeInstanceFromTemplateScheduling)
 	PutScratchDisk(value interface{})
@@ -209,6 +212,7 @@ type GoogleComputeInstanceFromTemplate interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetProject()
 	ResetReservationAffinity()
 	ResetResourcePolicies()
@@ -804,6 +808,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) Params() GoogleComputeInstanceFromTemplateParamsOutputReference {
+	var returns GoogleComputeInstanceFromTemplateParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) ParamsInput() *GoogleComputeInstanceFromTemplateParams {
+	var returns *GoogleComputeInstanceFromTemplateParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1105,7 +1129,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_instance_from_template google_compute_instance_from_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template} Resource.
 func NewGoogleComputeInstanceFromTemplate(scope constructs.Construct, id *string, config *GoogleComputeInstanceFromTemplateConfig) GoogleComputeInstanceFromTemplate {
 	_init_.Initialize()
 
@@ -1123,7 +1147,7 @@ func NewGoogleComputeInstanceFromTemplate(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_instance_from_template google_compute_instance_from_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template} Resource.
 func NewGoogleComputeInstanceFromTemplate_Override(g GoogleComputeInstanceFromTemplate, scope constructs.Construct, id *string, config *GoogleComputeInstanceFromTemplateConfig) {
 	_init_.Initialize()
 
@@ -1754,6 +1778,17 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) PutNetworkPerformanceConfi
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) PutParams(value *GoogleComputeInstanceFromTemplateParams) {
+	if err := g.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) PutReservationAffinity(value *GoogleComputeInstanceFromTemplateReservationAffinity) {
 	if err := g.validatePutReservationAffinityParameters(value); err != nil {
 		panic(err)
@@ -1984,6 +2019,14 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) ResetParams() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParams",
 		nil, // no parameters
 	)
 }

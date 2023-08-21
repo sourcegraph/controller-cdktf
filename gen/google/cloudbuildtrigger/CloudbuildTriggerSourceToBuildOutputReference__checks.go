@@ -98,6 +98,14 @@ func (c *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) validateResolv
 	return nil
 }
 
+func (j *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) validateSetBitbucketServerConfigParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -180,6 +188,14 @@ func (j *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) validateSetInt
 }
 
 func (j *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) validateSetRefParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) validateSetRepositoryParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

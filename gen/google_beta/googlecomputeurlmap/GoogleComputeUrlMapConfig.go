@@ -28,50 +28,50 @@ type GoogleComputeUrlMapConfig struct {
 	// letter, and all following characters must be a dash, lowercase letter, or digit,
 	// except the last character, which cannot be a dash.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_url_map#name GoogleComputeUrlMap#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#name GoogleComputeUrlMap#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// default_route_action block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_url_map#default_route_action GoogleComputeUrlMap#default_route_action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#default_route_action GoogleComputeUrlMap#default_route_action}
 	DefaultRouteAction *GoogleComputeUrlMapDefaultRouteAction `field:"optional" json:"defaultRouteAction" yaml:"defaultRouteAction"`
 	// The backend service or backend bucket to use when none of the given rules match.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_url_map#default_service GoogleComputeUrlMap#default_service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#default_service GoogleComputeUrlMap#default_service}
 	DefaultService *string `field:"optional" json:"defaultService" yaml:"defaultService"`
 	// default_url_redirect block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_url_map#default_url_redirect GoogleComputeUrlMap#default_url_redirect}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#default_url_redirect GoogleComputeUrlMap#default_url_redirect}
 	DefaultUrlRedirect *GoogleComputeUrlMapDefaultUrlRedirect `field:"optional" json:"defaultUrlRedirect" yaml:"defaultUrlRedirect"`
 	// An optional description of this resource. Provide this property when you create the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_url_map#description GoogleComputeUrlMap#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#description GoogleComputeUrlMap#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// header_action block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_url_map#header_action GoogleComputeUrlMap#header_action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#header_action GoogleComputeUrlMap#header_action}
 	HeaderAction *GoogleComputeUrlMapHeaderAction `field:"optional" json:"headerAction" yaml:"headerAction"`
 	// host_rule block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_url_map#host_rule GoogleComputeUrlMap#host_rule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#host_rule GoogleComputeUrlMap#host_rule}
 	HostRule interface{} `field:"optional" json:"hostRule" yaml:"hostRule"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_url_map#id GoogleComputeUrlMap#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#id GoogleComputeUrlMap#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// path_matcher block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_url_map#path_matcher GoogleComputeUrlMap#path_matcher}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#path_matcher GoogleComputeUrlMap#path_matcher}
 	PathMatcher interface{} `field:"optional" json:"pathMatcher" yaml:"pathMatcher"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_url_map#project GoogleComputeUrlMap#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#project GoogleComputeUrlMap#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// test block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_url_map#test GoogleComputeUrlMap#test}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#test GoogleComputeUrlMap#test}
 	Test interface{} `field:"optional" json:"test" yaml:"test"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_url_map#timeouts GoogleComputeUrlMap#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#timeouts GoogleComputeUrlMap#timeouts}
 	Timeouts *GoogleComputeUrlMapTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

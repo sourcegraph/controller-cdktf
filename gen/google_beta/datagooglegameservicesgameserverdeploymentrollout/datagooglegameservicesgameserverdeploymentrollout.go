@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglegameservicesgameserverdeploymentrollout/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/data-sources/google_game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout}.
 type DataGoogleGameServicesGameServerDeploymentRollout interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -325,7 +325,7 @@ func (j *jsiiProxy_DataGoogleGameServicesGameServerDeploymentRollout) TerraformR
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/data-sources/google_game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout} Data Source.
 func NewDataGoogleGameServicesGameServerDeploymentRollout(scope constructs.Construct, id *string, config *DataGoogleGameServicesGameServerDeploymentRolloutConfig) DataGoogleGameServicesGameServerDeploymentRollout {
 	_init_.Initialize()
 
@@ -343,7 +343,7 @@ func NewDataGoogleGameServicesGameServerDeploymentRollout(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/data-sources/google_game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout} Data Source.
 func NewDataGoogleGameServicesGameServerDeploymentRollout_Override(d DataGoogleGameServicesGameServerDeploymentRollout, scope constructs.Construct, id *string, config *DataGoogleGameServicesGameServerDeploymentRolloutConfig) {
 	_init_.Initialize()
 

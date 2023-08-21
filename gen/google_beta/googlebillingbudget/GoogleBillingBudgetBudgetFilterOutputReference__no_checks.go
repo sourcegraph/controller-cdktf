@@ -84,6 +84,10 @@ func (j *jsiiProxy_GoogleBillingBudgetBudgetFilterOutputReference) validateSetPr
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBillingBudgetBudgetFilterOutputReference) validateSetResourceAncestorsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBillingBudgetBudgetFilterOutputReference) validateSetServicesParameters(val *[]*string) error {
 	return nil
 }

@@ -28,6 +28,9 @@ type GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference in
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableStrongAffinity() interface{}
+	SetEnableStrongAffinity(val interface{})
+	EnableStrongAffinityInput() interface{}
 	// Experimental.
 	Fqn() *string
 	IdleTimeoutSec() *float64
@@ -71,6 +74,7 @@ type GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference in
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetConnectionPersistenceOnUnhealthyBackends()
+	ResetEnableStrongAffinity()
 	ResetIdleTimeoutSec()
 	ResetTrackingMode()
 	// Produce the Token's value at resolution time.
@@ -133,6 +137,26 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) EnableStrongAffinity() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableStrongAffinity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) EnableStrongAffinityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableStrongAffinityInput",
 		&returns,
 	)
 	return returns
@@ -275,6 +299,17 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	_jsii_.Set(
 		j,
 		"connectionPersistenceOnUnhealthyBackends",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference)SetEnableStrongAffinity(val interface{}) {
+	if err := j.validateSetEnableStrongAffinityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableStrongAffinity",
 		val,
 	)
 }
@@ -524,6 +559,14 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	_jsii_.InvokeVoid(
 		g,
 		"resetConnectionPersistenceOnUnhealthyBackends",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) ResetEnableStrongAffinity() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableStrongAffinity",
 		nil, // no parameters
 	)
 }

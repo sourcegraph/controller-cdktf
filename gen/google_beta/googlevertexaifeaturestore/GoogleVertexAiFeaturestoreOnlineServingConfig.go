@@ -6,11 +6,11 @@ type GoogleVertexAiFeaturestoreOnlineServingConfig struct {
 	//
 	// The number of nodes will not scale automatically but can be scaled manually by providing different values when updating.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_vertex_ai_featurestore#fixed_node_count GoogleVertexAiFeaturestore#fixed_node_count}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_vertex_ai_featurestore#fixed_node_count GoogleVertexAiFeaturestore#fixed_node_count}
 	FixedNodeCount *float64 `field:"optional" json:"fixedNodeCount" yaml:"fixedNodeCount"`
 	// scaling block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_vertex_ai_featurestore#scaling GoogleVertexAiFeaturestore#scaling}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_vertex_ai_featurestore#scaling GoogleVertexAiFeaturestore#scaling}
 	Scaling *GoogleVertexAiFeaturestoreOnlineServingConfigScaling `field:"optional" json:"scaling" yaml:"scaling"`
 }
 

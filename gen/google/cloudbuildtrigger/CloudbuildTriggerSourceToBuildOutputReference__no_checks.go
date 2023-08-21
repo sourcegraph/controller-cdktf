@@ -48,6 +48,10 @@ func (c *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) validateResolv
 	return nil
 }
 
+func (j *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) validateSetBitbucketServerConfigParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -65,6 +69,10 @@ func (j *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) validateSetInt
 }
 
 func (j *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) validateSetRefParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) validateSetRepositoryParameters(val *string) error {
 	return nil
 }
 

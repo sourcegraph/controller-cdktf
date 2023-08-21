@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleCertificateManagerCertificateManagedOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCertificateManagerCertificateManagedOutputReference) validateSetIssuanceConfigParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCertificateManagerCertificateManagedOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledialogflowcxversion/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dialogflow_cx_version google_dialogflow_cx_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dialogflow_cx_version google_dialogflow_cx_version}.
 type GoogleDialogflowCxVersion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_GoogleDialogflowCxVersion) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dialogflow_cx_version google_dialogflow_cx_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dialogflow_cx_version google_dialogflow_cx_version} Resource.
 func NewGoogleDialogflowCxVersion(scope constructs.Construct, id *string, config *GoogleDialogflowCxVersionConfig) GoogleDialogflowCxVersion {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewGoogleDialogflowCxVersion(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_dialogflow_cx_version google_dialogflow_cx_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dialogflow_cx_version google_dialogflow_cx_version} Resource.
 func NewGoogleDialogflowCxVersion_Override(g GoogleDialogflowCxVersion, scope constructs.Construct, id *string, config *GoogleDialogflowCxVersionConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlevertexaimetadatastore/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_vertex_ai_metadata_store google_vertex_ai_metadata_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_vertex_ai_metadata_store google_vertex_ai_metadata_store}.
 type GoogleVertexAiMetadataStore interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -463,7 +463,7 @@ func (j *jsiiProxy_GoogleVertexAiMetadataStore) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_vertex_ai_metadata_store google_vertex_ai_metadata_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_vertex_ai_metadata_store google_vertex_ai_metadata_store} Resource.
 func NewGoogleVertexAiMetadataStore(scope constructs.Construct, id *string, config *GoogleVertexAiMetadataStoreConfig) GoogleVertexAiMetadataStore {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewGoogleVertexAiMetadataStore(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_vertex_ai_metadata_store google_vertex_ai_metadata_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_vertex_ai_metadata_store google_vertex_ai_metadata_store} Resource.
 func NewGoogleVertexAiMetadataStore_Override(g GoogleVertexAiMetadataStore, scope constructs.Construct, id *string, config *GoogleVertexAiMetadataStoreConfig) {
 	_init_.Initialize()
 

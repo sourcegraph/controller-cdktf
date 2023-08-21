@@ -80,6 +80,10 @@ func validateGoogleHealthcareFhirStore_IsTerraformResourceParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetComplexDataTypeReferenceParsingParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

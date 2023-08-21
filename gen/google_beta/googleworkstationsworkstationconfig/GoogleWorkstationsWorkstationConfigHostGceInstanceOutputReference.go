@@ -10,6 +10,8 @@ import (
 
 type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface {
 	cdktf.ComplexObject
+	Accelerators() GoogleWorkstationsWorkstationConfigHostGceInstanceAcceleratorsList
+	AcceleratorsInput() interface{}
 	BootDiskSizeGb() *float64
 	SetBootDiskSizeGb(val *float64)
 	BootDiskSizeGbInput() *float64
@@ -83,8 +85,10 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAccelerators(value interface{})
 	PutConfidentialInstanceConfig(value *GoogleWorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfig)
 	PutShieldedInstanceConfig(value *GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfig)
+	ResetAccelerators()
 	ResetBootDiskSizeGb()
 	ResetConfidentialInstanceConfig()
 	ResetDisablePublicIpAddresses()
@@ -106,6 +110,26 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface
 // The jsii proxy struct for GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference
 type jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) Accelerators() GoogleWorkstationsWorkstationConfigHostGceInstanceAcceleratorsList {
+	var returns GoogleWorkstationsWorkstationConfigHostGceInstanceAcceleratorsList
+	_jsii_.Get(
+		j,
+		"accelerators",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) AcceleratorsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"acceleratorsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) BootDiskSizeGb() *float64 {
@@ -673,6 +697,17 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	return returns
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) PutAccelerators(value interface{}) {
+	if err := g.validatePutAcceleratorsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAccelerators",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) PutConfidentialInstanceConfig(value *GoogleWorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfig) {
 	if err := g.validatePutConfidentialInstanceConfigParameters(value); err != nil {
 		panic(err)
@@ -692,6 +727,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 		g,
 		"putShieldedInstanceConfig",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) ResetAccelerators() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAccelerators",
+		nil, // no parameters
 	)
 }
 

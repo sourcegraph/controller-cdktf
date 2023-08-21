@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutNetworkPerf
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutParamsParameters(value *GoogleComputeInstanceFromMachineImageParams) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutReservationAffinityParameters(value *GoogleComputeInstanceFromMachineImageReservationAffinity) error {
 	return nil
 }

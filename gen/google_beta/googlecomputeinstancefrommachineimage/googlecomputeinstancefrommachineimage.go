@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeinstancefrommachineimage/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image}.
 type GoogleComputeInstanceFromMachineImage interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesOutputReference
@@ -101,6 +101,8 @@ type GoogleComputeInstanceFromMachineImage interface {
 	NetworkPerformanceConfigInput() *GoogleComputeInstanceFromMachineImageNetworkPerformanceConfig
 	// The tree node.
 	Node() constructs.Node
+	Params() GoogleComputeInstanceFromMachineImageParamsOutputReference
+	ParamsInput() *GoogleComputeInstanceFromMachineImageParams
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -175,6 +177,7 @@ type GoogleComputeInstanceFromMachineImage interface {
 	PutGuestAccelerator(value interface{})
 	PutNetworkInterface(value interface{})
 	PutNetworkPerformanceConfig(value *GoogleComputeInstanceFromMachineImageNetworkPerformanceConfig)
+	PutParams(value *GoogleComputeInstanceFromMachineImageParams)
 	PutReservationAffinity(value *GoogleComputeInstanceFromMachineImageReservationAffinity)
 	PutScheduling(value *GoogleComputeInstanceFromMachineImageScheduling)
 	PutServiceAccount(value interface{})
@@ -201,6 +204,7 @@ type GoogleComputeInstanceFromMachineImage interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetProject()
 	ResetReservationAffinity()
 	ResetResourcePolicies()
@@ -775,6 +779,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) Node() constructs.Node
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) Params() GoogleComputeInstanceFromMachineImageParamsOutputReference {
+	var returns GoogleComputeInstanceFromMachineImageParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) ParamsInput() *GoogleComputeInstanceFromMachineImageParams {
+	var returns *GoogleComputeInstanceFromMachineImageParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1066,7 +1090,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image} Resource.
 func NewGoogleComputeInstanceFromMachineImage(scope constructs.Construct, id *string, config *GoogleComputeInstanceFromMachineImageConfig) GoogleComputeInstanceFromMachineImage {
 	_init_.Initialize()
 
@@ -1084,7 +1108,7 @@ func NewGoogleComputeInstanceFromMachineImage(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image} Resource.
 func NewGoogleComputeInstanceFromMachineImage_Override(g GoogleComputeInstanceFromMachineImage, scope constructs.Construct, id *string, config *GoogleComputeInstanceFromMachineImageConfig) {
 	_init_.Initialize()
 
@@ -1693,6 +1717,17 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutNetworkPerformanceC
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutParams(value *GoogleComputeInstanceFromMachineImageParams) {
+	if err := g.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutReservationAffinity(value *GoogleComputeInstanceFromMachineImageReservationAffinity) {
 	if err := g.validatePutReservationAffinityParameters(value); err != nil {
 		panic(err)
@@ -1896,6 +1931,14 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) ResetOverrideLogicalId
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) ResetParams() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParams",
 		nil, // no parameters
 	)
 }

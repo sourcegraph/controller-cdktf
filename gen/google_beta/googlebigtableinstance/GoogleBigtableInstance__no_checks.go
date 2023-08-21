@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleBigtableInstance) validatePutClusterParameters(value in
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigtableInstance) validatePutTimeoutsParameters(value *GoogleBigtableInstanceTimeouts) error {
+	return nil
+}
+
 func validateGoogleBigtableInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }

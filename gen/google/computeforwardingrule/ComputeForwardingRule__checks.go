@@ -347,6 +347,14 @@ func (j *jsiiProxy_ComputeForwardingRule) validateSetIpProtocolParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_ComputeForwardingRule) validateSetIpVersionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeForwardingRule) validateSetIsMirroringCollectorParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -410,6 +418,26 @@ func (j *jsiiProxy_ComputeForwardingRule) validateSetNetworkParameters(val *stri
 func (j *jsiiProxy_ComputeForwardingRule) validateSetNetworkTierParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeForwardingRule) validateSetNoAutomateDnsZoneParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

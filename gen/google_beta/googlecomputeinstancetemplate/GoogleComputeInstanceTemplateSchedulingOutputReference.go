@@ -35,6 +35,8 @@ type GoogleComputeInstanceTemplateSchedulingOutputReference interface {
 	InstanceTerminationActionInput() *string
 	InternalValue() *GoogleComputeInstanceTemplateScheduling
 	SetInternalValue(val *GoogleComputeInstanceTemplateScheduling)
+	LocalSsdRecoveryTimeout() GoogleComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList
+	LocalSsdRecoveryTimeoutInput() interface{}
 	MaintenanceInterval() *string
 	SetMaintenanceInterval(val *string)
 	MaintenanceIntervalInput() *string
@@ -86,10 +88,12 @@ type GoogleComputeInstanceTemplateSchedulingOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutLocalSsdRecoveryTimeout(value interface{})
 	PutMaxRunDuration(value *GoogleComputeInstanceTemplateSchedulingMaxRunDuration)
 	PutNodeAffinities(value interface{})
 	ResetAutomaticRestart()
 	ResetInstanceTerminationAction()
+	ResetLocalSsdRecoveryTimeout()
 	ResetMaintenanceInterval()
 	ResetMaxRunDuration()
 	ResetMinNodeCpus()
@@ -197,6 +201,26 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) Inter
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) LocalSsdRecoveryTimeout() GoogleComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList {
+	var returns GoogleComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList
+	_jsii_.Get(
+		j,
+		"localSsdRecoveryTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) LocalSsdRecoveryTimeoutInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localSsdRecoveryTimeoutInput",
 		&returns,
 	)
 	return returns
@@ -708,6 +732,17 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) Inter
 	return returns
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) PutLocalSsdRecoveryTimeout(value interface{}) {
+	if err := g.validatePutLocalSsdRecoveryTimeoutParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putLocalSsdRecoveryTimeout",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) PutMaxRunDuration(value *GoogleComputeInstanceTemplateSchedulingMaxRunDuration) {
 	if err := g.validatePutMaxRunDurationParameters(value); err != nil {
 		panic(err)
@@ -742,6 +777,14 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) Reset
 	_jsii_.InvokeVoid(
 		g,
 		"resetInstanceTerminationAction",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) ResetLocalSsdRecoveryTimeout() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLocalSsdRecoveryTimeout",
 		nil, // no parameters
 	)
 }

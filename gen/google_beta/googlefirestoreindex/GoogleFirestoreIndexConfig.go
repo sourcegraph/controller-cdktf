@@ -21,30 +21,30 @@ type GoogleFirestoreIndexConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The collection being indexed.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_firestore_index#collection GoogleFirestoreIndex#collection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_firestore_index#collection GoogleFirestoreIndex#collection}
 	Collection *string `field:"required" json:"collection" yaml:"collection"`
 	// fields block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_firestore_index#fields GoogleFirestoreIndex#fields}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_firestore_index#fields GoogleFirestoreIndex#fields}
 	Fields interface{} `field:"required" json:"fields" yaml:"fields"`
 	// The Firestore database id. Defaults to '"(default)"'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_firestore_index#database GoogleFirestoreIndex#database}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_firestore_index#database GoogleFirestoreIndex#database}
 	Database *string `field:"optional" json:"database" yaml:"database"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_firestore_index#id GoogleFirestoreIndex#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_firestore_index#id GoogleFirestoreIndex#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_firestore_index#project GoogleFirestoreIndex#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_firestore_index#project GoogleFirestoreIndex#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The scope at which a query is run. Default value: "COLLECTION" Possible values: ["COLLECTION", "COLLECTION_GROUP"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_firestore_index#query_scope GoogleFirestoreIndex#query_scope}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_firestore_index#query_scope GoogleFirestoreIndex#query_scope}
 	QueryScope *string `field:"optional" json:"queryScope" yaml:"queryScope"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_firestore_index#timeouts GoogleFirestoreIndex#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_firestore_index#timeouts GoogleFirestoreIndex#timeouts}
 	Timeouts *GoogleFirestoreIndexTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 
