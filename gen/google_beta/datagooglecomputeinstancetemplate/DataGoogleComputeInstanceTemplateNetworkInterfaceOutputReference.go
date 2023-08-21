@@ -35,6 +35,7 @@ type DataGoogleComputeInstanceTemplateNetworkInterfaceOutputReference interface 
 	Ipv6AccessType() *string
 	Name() *string
 	Network() *string
+	NetworkAttachment() *string
 	NetworkIp() *string
 	NicType() *string
 	QueueCount() *float64
@@ -193,6 +194,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateNetworkInterfaceOutputRefere
 	_jsii_.Get(
 		j,
 		"network",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateNetworkInterfaceOutputReference) NetworkAttachment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkAttachment",
 		&returns,
 	)
 	return returns

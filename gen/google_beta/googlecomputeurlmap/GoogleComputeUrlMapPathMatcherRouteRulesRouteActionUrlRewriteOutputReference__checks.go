@@ -187,6 +187,14 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewrite
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference) validateSetPathTemplateRewriteParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

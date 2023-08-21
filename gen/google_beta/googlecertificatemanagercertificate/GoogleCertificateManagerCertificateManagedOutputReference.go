@@ -36,6 +36,9 @@ type GoogleCertificateManagerCertificateManagedOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleCertificateManagerCertificateManaged
 	SetInternalValue(val *GoogleCertificateManagerCertificateManaged)
+	IssuanceConfig() *string
+	SetIssuanceConfig(val *string)
+	IssuanceConfigInput() *string
 	ProvisioningIssue() GoogleCertificateManagerCertificateManagedProvisioningIssueList
 	State() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type GoogleCertificateManagerCertificateManagedOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDnsAuthorizations()
 	ResetDomains()
+	ResetIssuanceConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -182,6 +186,26 @@ func (j *jsiiProxy_GoogleCertificateManagerCertificateManagedOutputReference) In
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCertificateManagerCertificateManagedOutputReference) IssuanceConfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"issuanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCertificateManagerCertificateManagedOutputReference) IssuanceConfigInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"issuanceConfigInput",
 		&returns,
 	)
 	return returns
@@ -306,6 +330,17 @@ func (j *jsiiProxy_GoogleCertificateManagerCertificateManagedOutputReference)Set
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCertificateManagerCertificateManagedOutputReference)SetIssuanceConfig(val *string) {
+	if err := j.validateSetIssuanceConfigParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"issuanceConfig",
 		val,
 	)
 }
@@ -530,6 +565,14 @@ func (g *jsiiProxy_GoogleCertificateManagerCertificateManagedOutputReference) Re
 	_jsii_.InvokeVoid(
 		g,
 		"resetDomains",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCertificateManagerCertificateManagedOutputReference) ResetIssuanceConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIssuanceConfig",
 		nil, // no parameters
 	)
 }

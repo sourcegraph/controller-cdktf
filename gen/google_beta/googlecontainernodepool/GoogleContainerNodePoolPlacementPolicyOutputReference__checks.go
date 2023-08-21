@@ -171,6 +171,14 @@ func (j *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) validateSetPolicyNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -180,6 +188,14 @@ func (j *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) valida
 }
 
 func (j *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) validateSetTpuTopologyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -60,6 +60,10 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validatePut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validatePutDataCacheConfigParameters(value *GoogleSqlDatabaseInstanceSettingsDataCacheConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validatePutDenyMaintenancePeriodParameters(value *GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod) error {
 	return nil
 }
@@ -133,6 +137,10 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSet
 }
 
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSetDiskTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSetEditionParameters(val *string) error {
 	return nil
 }
 

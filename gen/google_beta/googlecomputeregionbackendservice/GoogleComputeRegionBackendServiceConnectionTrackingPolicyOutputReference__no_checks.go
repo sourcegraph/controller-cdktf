@@ -60,6 +60,10 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) validateSetEnableStrongAffinityParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) validateSetIdleTimeoutSecParameters(val *float64) error {
 	return nil
 }

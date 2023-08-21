@@ -48,6 +48,8 @@ type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	GuestAcceleratorInput() interface{}
 	Gvnic() GoogleContainerClusterNodePoolNodeConfigGvnicOutputReference
 	GvnicInput() *GoogleContainerClusterNodePoolNodeConfigGvnic
+	HostMaintenancePolicy() GoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyOutputReference
+	HostMaintenancePolicyInput() *GoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicy
 	ImageType() *string
 	SetImageType(val *string)
 	ImageTypeInput() *string
@@ -98,6 +100,8 @@ type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	ServiceAccountInput() *string
 	ShieldedInstanceConfig() GoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference
 	ShieldedInstanceConfigInput() *GoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfig
+	SoleTenantConfig() GoogleContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference
+	SoleTenantConfigInput() *GoogleContainerClusterNodePoolNodeConfigSoleTenantConfig
 	Spot() interface{}
 	SetSpot(val interface{})
 	SpotInput() interface{}
@@ -146,12 +150,14 @@ type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	PutGcfsConfig(value *GoogleContainerClusterNodePoolNodeConfigGcfsConfig)
 	PutGuestAccelerator(value interface{})
 	PutGvnic(value *GoogleContainerClusterNodePoolNodeConfigGvnic)
+	PutHostMaintenancePolicy(value *GoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicy)
 	PutKubeletConfig(value *GoogleContainerClusterNodePoolNodeConfigKubeletConfig)
 	PutLinuxNodeConfig(value *GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfig)
 	PutLocalNvmeSsdBlockConfig(value *GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig)
 	PutReservationAffinity(value *GoogleContainerClusterNodePoolNodeConfigReservationAffinity)
 	PutSandboxConfig(value *GoogleContainerClusterNodePoolNodeConfigSandboxConfig)
 	PutShieldedInstanceConfig(value *GoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfig)
+	PutSoleTenantConfig(value *GoogleContainerClusterNodePoolNodeConfigSoleTenantConfig)
 	PutTaint(value interface{})
 	PutWorkloadMetadataConfig(value *GoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfig)
 	ResetAdvancedMachineFeatures()
@@ -163,6 +169,7 @@ type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResetGcfsConfig()
 	ResetGuestAccelerator()
 	ResetGvnic()
+	ResetHostMaintenancePolicy()
 	ResetImageType()
 	ResetKubeletConfig()
 	ResetLabels()
@@ -181,6 +188,7 @@ type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResetSandboxConfig()
 	ResetServiceAccount()
 	ResetShieldedInstanceConfig()
+	ResetSoleTenantConfig()
 	ResetSpot()
 	ResetTags()
 	ResetTaint()
@@ -415,6 +423,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) Gvni
 	_jsii_.Get(
 		j,
 		"gvnicInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) HostMaintenancePolicy() GoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyOutputReference {
+	var returns GoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"hostMaintenancePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) HostMaintenancePolicyInput() *GoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicy {
+	var returns *GoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicy
+	_jsii_.Get(
+		j,
+		"hostMaintenancePolicyInput",
 		&returns,
 	)
 	return returns
@@ -785,6 +813,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) Shie
 	_jsii_.Get(
 		j,
 		"shieldedInstanceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) SoleTenantConfig() GoogleContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference {
+	var returns GoogleContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference
+	_jsii_.Get(
+		j,
+		"soleTenantConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) SoleTenantConfigInput() *GoogleContainerClusterNodePoolNodeConfigSoleTenantConfig {
+	var returns *GoogleContainerClusterNodePoolNodeConfigSoleTenantConfig
+	_jsii_.Get(
+		j,
+		"soleTenantConfigInput",
 		&returns,
 	)
 	return returns
@@ -1412,6 +1460,17 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) PutG
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) PutHostMaintenancePolicy(value *GoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicy) {
+	if err := g.validatePutHostMaintenancePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHostMaintenancePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) PutKubeletConfig(value *GoogleContainerClusterNodePoolNodeConfigKubeletConfig) {
 	if err := g.validatePutKubeletConfigParameters(value); err != nil {
 		panic(err)
@@ -1474,6 +1533,17 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) PutS
 	_jsii_.InvokeVoid(
 		g,
 		"putShieldedInstanceConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) PutSoleTenantConfig(value *GoogleContainerClusterNodePoolNodeConfigSoleTenantConfig) {
+	if err := g.validatePutSoleTenantConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSoleTenantConfig",
 		[]interface{}{value},
 	)
 }
@@ -1568,6 +1638,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetGvnic",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) ResetHostMaintenancePolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHostMaintenancePolicy",
 		nil, // no parameters
 	)
 }
@@ -1712,6 +1790,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetShieldedInstanceConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) ResetSoleTenantConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSoleTenantConfig",
 		nil, // no parameters
 	)
 }

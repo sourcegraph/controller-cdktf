@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlegameservicesgameserverdeployment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_game_services_game_server_deployment google_game_services_game_server_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_game_services_game_server_deployment google_game_services_game_server_deployment}.
 type GoogleGameServicesGameServerDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -440,7 +440,7 @@ func (j *jsiiProxy_GoogleGameServicesGameServerDeployment) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_game_services_game_server_deployment google_game_services_game_server_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_game_services_game_server_deployment google_game_services_game_server_deployment} Resource.
 func NewGoogleGameServicesGameServerDeployment(scope constructs.Construct, id *string, config *GoogleGameServicesGameServerDeploymentConfig) GoogleGameServicesGameServerDeployment {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewGoogleGameServicesGameServerDeployment(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_game_services_game_server_deployment google_game_services_game_server_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_game_services_game_server_deployment google_game_services_game_server_deployment} Resource.
 func NewGoogleGameServicesGameServerDeployment_Override(g GoogleGameServicesGameServerDeployment, scope constructs.Construct, id *string, config *GoogleGameServicesGameServerDeploymentConfig) {
 	_init_.Initialize()
 

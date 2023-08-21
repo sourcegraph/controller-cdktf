@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateSchedulingOutputReference)
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateSchedulingOutputReference) validatePutLocalSsdRecoveryTimeoutParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateSchedulingOutputReference) validatePutMaxRunDurationParameters(value *GoogleComputeRegionInstanceTemplateSchedulingMaxRunDuration) error {
 	return nil
 }

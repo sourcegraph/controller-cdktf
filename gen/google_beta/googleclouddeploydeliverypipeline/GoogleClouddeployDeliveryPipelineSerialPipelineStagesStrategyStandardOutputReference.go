@@ -29,6 +29,10 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutput
 	Fqn() *string
 	InternalValue() *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandard
 	SetInternalValue(val *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandard)
+	Postdeploy() GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeployOutputReference
+	PostdeployInput() *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeploy
+	Predeploy() GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeployOutputReference
+	PredeployInput() *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeploy
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +68,10 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutput
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPostdeploy(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeploy)
+	PutPredeploy(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeploy)
+	ResetPostdeploy()
+	ResetPredeploy()
 	ResetVerify()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -125,6 +133,46 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) Postdeploy() GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeployOutputReference {
+	var returns GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeployOutputReference
+	_jsii_.Get(
+		j,
+		"postdeploy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) PostdeployInput() *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeploy {
+	var returns *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeploy
+	_jsii_.Get(
+		j,
+		"postdeployInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) Predeploy() GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeployOutputReference {
+	var returns GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeployOutputReference
+	_jsii_.Get(
+		j,
+		"predeploy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) PredeployInput() *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeploy {
+	var returns *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeploy
+	_jsii_.Get(
+		j,
+		"predeployInput",
 		&returns,
 	)
 	return returns
@@ -448,6 +496,44 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) PutPostdeploy(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeploy) {
+	if err := g.validatePutPostdeployParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPostdeploy",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) PutPredeploy(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeploy) {
+	if err := g.validatePutPredeployParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPredeploy",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) ResetPostdeploy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPostdeploy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) ResetPredeploy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPredeploy",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) ResetVerify() {

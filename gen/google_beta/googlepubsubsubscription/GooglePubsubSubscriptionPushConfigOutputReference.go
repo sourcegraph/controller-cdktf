@@ -32,6 +32,8 @@ type GooglePubsubSubscriptionPushConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *GooglePubsubSubscriptionPushConfig
 	SetInternalValue(val *GooglePubsubSubscriptionPushConfig)
+	NoWrapper() GooglePubsubSubscriptionPushConfigNoWrapperOutputReference
+	NoWrapperInput() *GooglePubsubSubscriptionPushConfigNoWrapper
 	OidcToken() GooglePubsubSubscriptionPushConfigOidcTokenOutputReference
 	OidcTokenInput() *GooglePubsubSubscriptionPushConfigOidcToken
 	PushEndpoint() *string
@@ -69,8 +71,10 @@ type GooglePubsubSubscriptionPushConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutNoWrapper(value *GooglePubsubSubscriptionPushConfigNoWrapper)
 	PutOidcToken(value *GooglePubsubSubscriptionPushConfigOidcToken)
 	ResetAttributes()
+	ResetNoWrapper()
 	ResetOidcToken()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -152,6 +156,26 @@ func (j *jsiiProxy_GooglePubsubSubscriptionPushConfigOutputReference) InternalVa
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubSubscriptionPushConfigOutputReference) NoWrapper() GooglePubsubSubscriptionPushConfigNoWrapperOutputReference {
+	var returns GooglePubsubSubscriptionPushConfigNoWrapperOutputReference
+	_jsii_.Get(
+		j,
+		"noWrapper",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubSubscriptionPushConfigOutputReference) NoWrapperInput() *GooglePubsubSubscriptionPushConfigNoWrapper {
+	var returns *GooglePubsubSubscriptionPushConfigNoWrapper
+	_jsii_.Get(
+		j,
+		"noWrapperInput",
 		&returns,
 	)
 	return returns
@@ -508,6 +532,17 @@ func (g *jsiiProxy_GooglePubsubSubscriptionPushConfigOutputReference) Interpolat
 	return returns
 }
 
+func (g *jsiiProxy_GooglePubsubSubscriptionPushConfigOutputReference) PutNoWrapper(value *GooglePubsubSubscriptionPushConfigNoWrapper) {
+	if err := g.validatePutNoWrapperParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNoWrapper",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GooglePubsubSubscriptionPushConfigOutputReference) PutOidcToken(value *GooglePubsubSubscriptionPushConfigOidcToken) {
 	if err := g.validatePutOidcTokenParameters(value); err != nil {
 		panic(err)
@@ -523,6 +558,14 @@ func (g *jsiiProxy_GooglePubsubSubscriptionPushConfigOutputReference) ResetAttri
 	_jsii_.InvokeVoid(
 		g,
 		"resetAttributes",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GooglePubsubSubscriptionPushConfigOutputReference) ResetNoWrapper() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNoWrapper",
 		nil, // no parameters
 	)
 }

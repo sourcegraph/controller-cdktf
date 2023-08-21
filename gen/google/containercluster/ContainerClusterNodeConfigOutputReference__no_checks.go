@@ -64,6 +64,10 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutGvnicPa
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutHostMaintenancePolicyParameters(value *ContainerClusterNodeConfigHostMaintenancePolicy) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutKubeletConfigParameters(value *ContainerClusterNodeConfigKubeletConfig) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutReserva
 }
 
 func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutShieldedInstanceConfigParameters(value *ContainerClusterNodeConfigShieldedInstanceConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutSoleTenantConfigParameters(value *ContainerClusterNodeConfigSoleTenantConfig) error {
 	return nil
 }
 

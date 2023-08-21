@@ -9,12 +9,13 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/apigeeorganization/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/apigee_organization google_apigee_organization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/apigee_organization google_apigee_organization}.
 type ApigeeOrganization interface {
 	cdktf.TerraformResource
 	AnalyticsRegion() *string
 	SetAnalyticsRegion(val *string)
 	AnalyticsRegionInput() *string
+	ApigeeProjectId() *string
 	AuthorizedNetwork() *string
 	SetAuthorizedNetwork(val *string)
 	AuthorizedNetworkInput() *string
@@ -41,6 +42,9 @@ type ApigeeOrganization interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableVpcPeering() interface{}
+	SetDisableVpcPeering(val interface{})
+	DisableVpcPeeringInput() interface{}
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
@@ -126,6 +130,7 @@ type ApigeeOrganization interface {
 	ResetAuthorizedNetwork()
 	ResetBillingType()
 	ResetDescription()
+	ResetDisableVpcPeering()
 	ResetDisplayName()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -166,6 +171,16 @@ func (j *jsiiProxy_ApigeeOrganization) AnalyticsRegionInput() *string {
 	_jsii_.Get(
 		j,
 		"analyticsRegionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigeeOrganization) ApigeeProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apigeeProjectId",
 		&returns,
 	)
 	return returns
@@ -286,6 +301,26 @@ func (j *jsiiProxy_ApigeeOrganization) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigeeOrganization) DisableVpcPeering() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableVpcPeering",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigeeOrganization) DisableVpcPeeringInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableVpcPeeringInput",
 		&returns,
 	)
 	return returns
@@ -582,7 +617,7 @@ func (j *jsiiProxy_ApigeeOrganization) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/apigee_organization google_apigee_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/apigee_organization google_apigee_organization} Resource.
 func NewApigeeOrganization(scope constructs.Construct, id *string, config *ApigeeOrganizationConfig) ApigeeOrganization {
 	_init_.Initialize()
 
@@ -600,7 +635,7 @@ func NewApigeeOrganization(scope constructs.Construct, id *string, config *Apige
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/apigee_organization google_apigee_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/apigee_organization google_apigee_organization} Resource.
 func NewApigeeOrganization_Override(a ApigeeOrganization, scope constructs.Construct, id *string, config *ApigeeOrganizationConfig) {
 	_init_.Initialize()
 
@@ -681,6 +716,17 @@ func (j *jsiiProxy_ApigeeOrganization)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApigeeOrganization)SetDisableVpcPeering(val interface{}) {
+	if err := j.validateSetDisableVpcPeeringParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableVpcPeering",
 		val,
 	)
 }
@@ -1105,6 +1151,14 @@ func (a *jsiiProxy_ApigeeOrganization) ResetDescription() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApigeeOrganization) ResetDisableVpcPeering() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDisableVpcPeering",
 		nil, // no parameters
 	)
 }

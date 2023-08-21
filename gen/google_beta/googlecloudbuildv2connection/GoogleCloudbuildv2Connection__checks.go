@@ -133,6 +133,17 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) validatePutGithubEnterpriseConf
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudbuildv2Connection) validatePutGitlabConfigParameters(value *GoogleCloudbuildv2ConnectionGitlabConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudbuildv2Connection) validatePutTimeoutsParameters(value *GoogleCloudbuildv2ConnectionTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

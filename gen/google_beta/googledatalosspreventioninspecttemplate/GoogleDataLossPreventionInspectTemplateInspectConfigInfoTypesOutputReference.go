@@ -32,6 +32,8 @@ type GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesOutputReferenc
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	SensitivityScore() GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesSensitivityScoreOutputReference
+	SensitivityScoreInput() *GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesSensitivityScore
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +69,8 @@ type GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesOutputReferenc
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSensitivityScore(value *GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesSensitivityScore)
+	ResetSensitivityScore()
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -148,6 +152,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypes
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesOutputReference) SensitivityScore() GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesSensitivityScoreOutputReference {
+	var returns GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesSensitivityScoreOutputReference
+	_jsii_.Get(
+		j,
+		"sensitivityScore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesOutputReference) SensitivityScoreInput() *GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesSensitivityScore {
+	var returns *GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesSensitivityScore
+	_jsii_.Get(
+		j,
+		"sensitivityScoreInput",
 		&returns,
 	)
 	return returns
@@ -482,6 +506,25 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypes
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesOutputReference) PutSensitivityScore(value *GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesSensitivityScore) {
+	if err := g.validatePutSensitivityScoreParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSensitivityScore",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesOutputReference) ResetSensitivityScore() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSensitivityScore",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesOutputReference) ResetVersion() {

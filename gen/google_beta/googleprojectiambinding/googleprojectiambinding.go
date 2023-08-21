@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleprojectiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_project_iam_binding google_project_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_project_iam_binding google_project_iam_binding}.
 type GoogleProjectIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_GoogleProjectIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_project_iam_binding google_project_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_project_iam_binding google_project_iam_binding} Resource.
 func NewGoogleProjectIamBinding(scope constructs.Construct, id *string, config *GoogleProjectIamBindingConfig) GoogleProjectIamBinding {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewGoogleProjectIamBinding(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_project_iam_binding google_project_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_project_iam_binding google_project_iam_binding} Resource.
 func NewGoogleProjectIamBinding_Override(g GoogleProjectIamBinding, scope constructs.Construct, id *string, config *GoogleProjectIamBindingConfig) {
 	_init_.Initialize()
 

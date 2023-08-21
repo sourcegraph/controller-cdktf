@@ -48,6 +48,8 @@ type GoogleContainerNodePoolNodeConfigOutputReference interface {
 	GuestAcceleratorInput() interface{}
 	Gvnic() GoogleContainerNodePoolNodeConfigGvnicOutputReference
 	GvnicInput() *GoogleContainerNodePoolNodeConfigGvnic
+	HostMaintenancePolicy() GoogleContainerNodePoolNodeConfigHostMaintenancePolicyOutputReference
+	HostMaintenancePolicyInput() *GoogleContainerNodePoolNodeConfigHostMaintenancePolicy
 	ImageType() *string
 	SetImageType(val *string)
 	ImageTypeInput() *string
@@ -98,6 +100,8 @@ type GoogleContainerNodePoolNodeConfigOutputReference interface {
 	ServiceAccountInput() *string
 	ShieldedInstanceConfig() GoogleContainerNodePoolNodeConfigShieldedInstanceConfigOutputReference
 	ShieldedInstanceConfigInput() *GoogleContainerNodePoolNodeConfigShieldedInstanceConfig
+	SoleTenantConfig() GoogleContainerNodePoolNodeConfigSoleTenantConfigOutputReference
+	SoleTenantConfigInput() *GoogleContainerNodePoolNodeConfigSoleTenantConfig
 	Spot() interface{}
 	SetSpot(val interface{})
 	SpotInput() interface{}
@@ -146,12 +150,14 @@ type GoogleContainerNodePoolNodeConfigOutputReference interface {
 	PutGcfsConfig(value *GoogleContainerNodePoolNodeConfigGcfsConfig)
 	PutGuestAccelerator(value interface{})
 	PutGvnic(value *GoogleContainerNodePoolNodeConfigGvnic)
+	PutHostMaintenancePolicy(value *GoogleContainerNodePoolNodeConfigHostMaintenancePolicy)
 	PutKubeletConfig(value *GoogleContainerNodePoolNodeConfigKubeletConfig)
 	PutLinuxNodeConfig(value *GoogleContainerNodePoolNodeConfigLinuxNodeConfig)
 	PutLocalNvmeSsdBlockConfig(value *GoogleContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig)
 	PutReservationAffinity(value *GoogleContainerNodePoolNodeConfigReservationAffinity)
 	PutSandboxConfig(value *GoogleContainerNodePoolNodeConfigSandboxConfig)
 	PutShieldedInstanceConfig(value *GoogleContainerNodePoolNodeConfigShieldedInstanceConfig)
+	PutSoleTenantConfig(value *GoogleContainerNodePoolNodeConfigSoleTenantConfig)
 	PutTaint(value interface{})
 	PutWorkloadMetadataConfig(value *GoogleContainerNodePoolNodeConfigWorkloadMetadataConfig)
 	ResetAdvancedMachineFeatures()
@@ -163,6 +169,7 @@ type GoogleContainerNodePoolNodeConfigOutputReference interface {
 	ResetGcfsConfig()
 	ResetGuestAccelerator()
 	ResetGvnic()
+	ResetHostMaintenancePolicy()
 	ResetImageType()
 	ResetKubeletConfig()
 	ResetLabels()
@@ -181,6 +188,7 @@ type GoogleContainerNodePoolNodeConfigOutputReference interface {
 	ResetSandboxConfig()
 	ResetServiceAccount()
 	ResetShieldedInstanceConfig()
+	ResetSoleTenantConfig()
 	ResetSpot()
 	ResetTags()
 	ResetTaint()
@@ -415,6 +423,26 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) GvnicInput(
 	_jsii_.Get(
 		j,
 		"gvnicInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) HostMaintenancePolicy() GoogleContainerNodePoolNodeConfigHostMaintenancePolicyOutputReference {
+	var returns GoogleContainerNodePoolNodeConfigHostMaintenancePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"hostMaintenancePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) HostMaintenancePolicyInput() *GoogleContainerNodePoolNodeConfigHostMaintenancePolicy {
+	var returns *GoogleContainerNodePoolNodeConfigHostMaintenancePolicy
+	_jsii_.Get(
+		j,
+		"hostMaintenancePolicyInput",
 		&returns,
 	)
 	return returns
@@ -785,6 +813,26 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) ShieldedIns
 	_jsii_.Get(
 		j,
 		"shieldedInstanceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) SoleTenantConfig() GoogleContainerNodePoolNodeConfigSoleTenantConfigOutputReference {
+	var returns GoogleContainerNodePoolNodeConfigSoleTenantConfigOutputReference
+	_jsii_.Get(
+		j,
+		"soleTenantConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) SoleTenantConfigInput() *GoogleContainerNodePoolNodeConfigSoleTenantConfig {
+	var returns *GoogleContainerNodePoolNodeConfigSoleTenantConfig
+	_jsii_.Get(
+		j,
+		"soleTenantConfigInput",
 		&returns,
 	)
 	return returns
@@ -1412,6 +1460,17 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) PutGvnic(va
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) PutHostMaintenancePolicy(value *GoogleContainerNodePoolNodeConfigHostMaintenancePolicy) {
+	if err := g.validatePutHostMaintenancePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHostMaintenancePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) PutKubeletConfig(value *GoogleContainerNodePoolNodeConfigKubeletConfig) {
 	if err := g.validatePutKubeletConfigParameters(value); err != nil {
 		panic(err)
@@ -1474,6 +1533,17 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) PutShielded
 	_jsii_.InvokeVoid(
 		g,
 		"putShieldedInstanceConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) PutSoleTenantConfig(value *GoogleContainerNodePoolNodeConfigSoleTenantConfig) {
+	if err := g.validatePutSoleTenantConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSoleTenantConfig",
 		[]interface{}{value},
 	)
 }
@@ -1568,6 +1638,14 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) ResetGvnic(
 	_jsii_.InvokeVoid(
 		g,
 		"resetGvnic",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) ResetHostMaintenancePolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHostMaintenancePolicy",
 		nil, // no parameters
 	)
 }
@@ -1712,6 +1790,14 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) ResetShield
 	_jsii_.InvokeVoid(
 		g,
 		"resetShieldedInstanceConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) ResetSoleTenantConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSoleTenantConfig",
 		nil, // no parameters
 	)
 }

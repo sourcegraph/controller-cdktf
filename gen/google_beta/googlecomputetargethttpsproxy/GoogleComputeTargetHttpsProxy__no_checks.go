@@ -84,6 +84,10 @@ func (j *jsiiProxy_GoogleComputeTargetHttpsProxy) validateSetDescriptionParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeTargetHttpsProxy) validateSetHttpKeepAliveTimeoutSecParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeTargetHttpsProxy) validateSetIdParameters(val *string) error {
 	return nil
 }

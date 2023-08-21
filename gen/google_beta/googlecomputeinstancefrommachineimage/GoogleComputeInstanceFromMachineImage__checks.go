@@ -206,6 +206,17 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutNetworkPerf
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutParamsParameters(value *GoogleComputeInstanceFromMachineImageParams) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutReservationAffinityParameters(value *GoogleComputeInstanceFromMachineImageReservationAffinity) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -9,12 +9,17 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleidentityplatformconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_identity_platform_config google_identity_platform_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_identity_platform_config google_identity_platform_config}.
 type GoogleIdentityPlatformConfig interface {
 	cdktf.TerraformResource
+	AuthorizedDomains() *[]*string
+	SetAuthorizedDomains(val *[]*string)
+	AuthorizedDomainsInput() *[]*string
 	AutodeleteAnonymousUsers() interface{}
 	SetAutodeleteAnonymousUsers(val interface{})
 	AutodeleteAnonymousUsersInput() interface{}
+	BlockingFunctions() GoogleIdentityPlatformConfigBlockingFunctionsOutputReference
+	BlockingFunctionsInput() *GoogleIdentityPlatformConfigBlockingFunctions
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -60,6 +65,8 @@ type GoogleIdentityPlatformConfig interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	Quota() GoogleIdentityPlatformConfigQuotaOutputReference
+	QuotaInput() *GoogleIdentityPlatformConfigQuota
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -95,13 +102,18 @@ type GoogleIdentityPlatformConfig interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBlockingFunctions(value *GoogleIdentityPlatformConfigBlockingFunctions)
+	PutQuota(value *GoogleIdentityPlatformConfigQuota)
 	PutTimeouts(value *GoogleIdentityPlatformConfigTimeouts)
+	ResetAuthorizedDomains()
 	ResetAutodeleteAnonymousUsers()
+	ResetBlockingFunctions()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetQuota()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -116,6 +128,26 @@ type GoogleIdentityPlatformConfig interface {
 // The jsii proxy struct for GoogleIdentityPlatformConfig
 type jsiiProxy_GoogleIdentityPlatformConfig struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) AuthorizedDomains() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"authorizedDomains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) AuthorizedDomainsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"authorizedDomainsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleIdentityPlatformConfig) AutodeleteAnonymousUsers() interface{} {
@@ -133,6 +165,26 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig) AutodeleteAnonymousUsersInput()
 	_jsii_.Get(
 		j,
 		"autodeleteAnonymousUsersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) BlockingFunctions() GoogleIdentityPlatformConfigBlockingFunctionsOutputReference {
+	var returns GoogleIdentityPlatformConfigBlockingFunctionsOutputReference
+	_jsii_.Get(
+		j,
+		"blockingFunctions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) BlockingFunctionsInput() *GoogleIdentityPlatformConfigBlockingFunctions {
+	var returns *GoogleIdentityPlatformConfigBlockingFunctions
+	_jsii_.Get(
+		j,
+		"blockingFunctionsInput",
 		&returns,
 	)
 	return returns
@@ -308,6 +360,26 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) Quota() GoogleIdentityPlatformConfigQuotaOutputReference {
+	var returns GoogleIdentityPlatformConfigQuotaOutputReference
+	_jsii_.Get(
+		j,
+		"quota",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) QuotaInput() *GoogleIdentityPlatformConfigQuota {
+	var returns *GoogleIdentityPlatformConfigQuota
+	_jsii_.Get(
+		j,
+		"quotaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleIdentityPlatformConfig) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -369,7 +441,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_identity_platform_config google_identity_platform_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_identity_platform_config google_identity_platform_config} Resource.
 func NewGoogleIdentityPlatformConfig(scope constructs.Construct, id *string, config *GoogleIdentityPlatformConfigConfig) GoogleIdentityPlatformConfig {
 	_init_.Initialize()
 
@@ -387,7 +459,7 @@ func NewGoogleIdentityPlatformConfig(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_identity_platform_config google_identity_platform_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_identity_platform_config google_identity_platform_config} Resource.
 func NewGoogleIdentityPlatformConfig_Override(g GoogleIdentityPlatformConfig, scope constructs.Construct, id *string, config *GoogleIdentityPlatformConfigConfig) {
 	_init_.Initialize()
 
@@ -395,6 +467,17 @@ func NewGoogleIdentityPlatformConfig_Override(g GoogleIdentityPlatformConfig, sc
 		"@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformConfig)SetAuthorizedDomains(val *[]*string) {
+	if err := j.validateSetAuthorizedDomainsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authorizedDomains",
+		val,
 	)
 }
 
@@ -765,6 +848,28 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) OverrideLogicalId(newLogicalId 
 	)
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutBlockingFunctions(value *GoogleIdentityPlatformConfigBlockingFunctions) {
+	if err := g.validatePutBlockingFunctionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBlockingFunctions",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutQuota(value *GoogleIdentityPlatformConfigQuota) {
+	if err := g.validatePutQuotaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putQuota",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutTimeouts(value *GoogleIdentityPlatformConfigTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -776,10 +881,26 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutTimeouts(value *GoogleIdenti
 	)
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) ResetAuthorizedDomains() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAuthorizedDomains",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformConfig) ResetAutodeleteAnonymousUsers() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAutodeleteAnonymousUsers",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) ResetBlockingFunctions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBlockingFunctions",
 		nil, // no parameters
 	)
 }
@@ -804,6 +925,14 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) ResetQuota() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetQuota",
 		nil, // no parameters
 	)
 }

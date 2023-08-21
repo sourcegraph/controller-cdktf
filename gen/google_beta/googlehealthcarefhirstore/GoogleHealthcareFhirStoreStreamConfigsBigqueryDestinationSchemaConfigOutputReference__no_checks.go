@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSche
 	return nil
 }
 
+func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference) validatePutLastUpdatedPartitionConfigParameters(value *GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

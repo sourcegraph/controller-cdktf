@@ -10,6 +10,8 @@ import (
 
 type GoogleContainerClusterMonitoringConfigOutputReference interface {
 	cdktf.ComplexObject
+	AdvancedDatapathObservabilityConfig() GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList
+	AdvancedDatapathObservabilityConfigInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -66,7 +68,9 @@ type GoogleContainerClusterMonitoringConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAdvancedDatapathObservabilityConfig(value interface{})
 	PutManagedPrometheus(value *GoogleContainerClusterMonitoringConfigManagedPrometheus)
+	ResetAdvancedDatapathObservabilityConfig()
 	ResetEnableComponents()
 	ResetManagedPrometheus()
 	// Produce the Token's value at resolution time.
@@ -82,6 +86,26 @@ type GoogleContainerClusterMonitoringConfigOutputReference interface {
 // The jsii proxy struct for GoogleContainerClusterMonitoringConfigOutputReference
 type jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference) AdvancedDatapathObservabilityConfig() GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList {
+	var returns GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList
+	_jsii_.Get(
+		j,
+		"advancedDatapathObservabilityConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference) AdvancedDatapathObservabilityConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"advancedDatapathObservabilityConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -474,6 +498,17 @@ func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference) Interp
 	return returns
 }
 
+func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference) PutAdvancedDatapathObservabilityConfig(value interface{}) {
+	if err := g.validatePutAdvancedDatapathObservabilityConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAdvancedDatapathObservabilityConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference) PutManagedPrometheus(value *GoogleContainerClusterMonitoringConfigManagedPrometheus) {
 	if err := g.validatePutManagedPrometheusParameters(value); err != nil {
 		panic(err)
@@ -482,6 +517,14 @@ func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference) PutMan
 		g,
 		"putManagedPrometheus",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference) ResetAdvancedDatapathObservabilityConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAdvancedDatapathObservabilityConfig",
+		nil, // no parameters
 	)
 }
 

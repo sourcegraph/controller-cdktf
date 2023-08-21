@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCust
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesOutputReference) validatePutSensitivityScoreParameters(value *GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSensitivityScore) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesOutputReference) validatePutStoredTypeParameters(value *GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesStoredType) error {
 	return nil
 }

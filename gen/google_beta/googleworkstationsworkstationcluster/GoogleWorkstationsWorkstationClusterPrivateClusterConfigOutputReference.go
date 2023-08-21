@@ -10,6 +10,9 @@ import (
 
 type GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference interface {
 	cdktf.ComplexObject
+	AllowedProjects() *[]*string
+	SetAllowedProjects(val *[]*string)
+	AllowedProjectsInput() *[]*string
 	ClusterHostname() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -66,6 +69,7 @@ type GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference int
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAllowedProjects()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -79,6 +83,26 @@ type GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference int
 // The jsii proxy struct for GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference
 type jsiiProxy_GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference) AllowedProjects() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedProjects",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference) AllowedProjectsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedProjectsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference) ClusterHostname() *string {
@@ -216,6 +240,17 @@ func NewGoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference_
 		"@cdktf/provider-google-beta.googleWorkstationsWorkstationCluster.GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference)SetAllowedProjects(val *[]*string) {
+	if err := j.validateSetAllowedProjectsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedProjects",
+		val,
 	)
 }
 
@@ -469,6 +504,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutpu
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference) ResetAllowedProjects() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllowedProjects",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

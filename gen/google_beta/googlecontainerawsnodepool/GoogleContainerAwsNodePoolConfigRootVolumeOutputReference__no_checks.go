@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) validateSetThroughputParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference) validateSetVolumeTypeParameters(val *string) error {
 	return nil
 }

@@ -29,6 +29,9 @@ type GoogleContainerClusterNodePoolPlacementPolicyOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleContainerClusterNodePoolPlacementPolicy
 	SetInternalValue(val *GoogleContainerClusterNodePoolPlacementPolicy)
+	PolicyName() *string
+	SetPolicyName(val *string)
+	PolicyNameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -37,6 +40,9 @@ type GoogleContainerClusterNodePoolPlacementPolicyOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TpuTopology() *string
+	SetTpuTopology(val *string)
+	TpuTopologyInput() *string
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -64,6 +70,8 @@ type GoogleContainerClusterNodePoolPlacementPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPolicyName()
+	ResetTpuTopology()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -129,6 +137,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolPlacementPolicyOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodePoolPlacementPolicyOutputReference) PolicyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolPlacementPolicyOutputReference) PolicyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodePoolPlacementPolicyOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -144,6 +172,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolPlacementPolicyOutputReference)
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolPlacementPolicyOutputReference) TpuTopology() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tpuTopology",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolPlacementPolicyOutputReference) TpuTopologyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tpuTopologyInput",
 		&returns,
 	)
 	return returns
@@ -230,6 +278,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolPlacementPolicyOutputReference)
 	)
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodePoolPlacementPolicyOutputReference)SetPolicyName(val *string) {
+	if err := j.validateSetPolicyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodePoolPlacementPolicyOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -248,6 +307,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolPlacementPolicyOutputReference)
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolPlacementPolicyOutputReference)SetTpuTopology(val *string) {
+	if err := j.validateSetTpuTopologyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tpuTopology",
 		val,
 	)
 }
@@ -447,6 +517,22 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolPlacementPolicyOutputReference)
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolPlacementPolicyOutputReference) ResetPolicyName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPolicyName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolPlacementPolicyOutputReference) ResetTpuTopology() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTpuTopology",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleContainerClusterNodePoolPlacementPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

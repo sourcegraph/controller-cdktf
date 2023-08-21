@@ -9,10 +9,11 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecontainercluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/container_cluster google_container_cluster}.
 type DataGoogleContainerCluster interface {
 	cdktf.TerraformDataSource
 	AddonsConfig() DataGoogleContainerClusterAddonsConfigList
+	AllowNetAdmin() cdktf.IResolvable
 	AuthenticatorGroupsConfig() DataGoogleContainerClusterAuthenticatorGroupsConfigList
 	BinaryAuthorization() DataGoogleContainerClusterBinaryAuthorizationList
 	// Experimental.
@@ -40,6 +41,7 @@ type DataGoogleContainerCluster interface {
 	EnableAutopilot() cdktf.IResolvable
 	EnableBinaryAuthorization() cdktf.IResolvable
 	EnableIntranodeVisibility() cdktf.IResolvable
+	EnableK8SBetaApis() DataGoogleContainerClusterEnableK8SBetaApisList
 	EnableKubernetesAlpha() cdktf.IResolvable
 	EnableL4IlbSubsetting() cdktf.IResolvable
 	EnableLegacyAbac() cdktf.IResolvable
@@ -108,6 +110,7 @@ type DataGoogleContainerCluster interface {
 	RemoveDefaultNodePool() cdktf.IResolvable
 	ResourceLabels() cdktf.StringMap
 	ResourceUsageExportConfig() DataGoogleContainerClusterResourceUsageExportConfigList
+	SecurityPostureConfig() DataGoogleContainerClusterSecurityPostureConfigList
 	SelfLink() *string
 	ServiceExternalIpsConfig() DataGoogleContainerClusterServiceExternalIpsConfigList
 	ServicesIpv4Cidr() *string
@@ -172,6 +175,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) AddonsConfig() DataGoogleContaine
 	_jsii_.Get(
 		j,
 		"addonsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) AllowNetAdmin() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"allowNetAdmin",
 		&returns,
 	)
 	return returns
@@ -362,6 +375,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) EnableIntranodeVisibility() cdktf
 	_jsii_.Get(
 		j,
 		"enableIntranodeVisibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) EnableK8SBetaApis() DataGoogleContainerClusterEnableK8SBetaApisList {
+	var returns DataGoogleContainerClusterEnableK8SBetaApisList
+	_jsii_.Get(
+		j,
+		"enableK8SBetaApis",
 		&returns,
 	)
 	return returns
@@ -877,6 +900,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) ResourceUsageExportConfig() DataG
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerCluster) SecurityPostureConfig() DataGoogleContainerClusterSecurityPostureConfigList {
+	var returns DataGoogleContainerClusterSecurityPostureConfigList
+	_jsii_.Get(
+		j,
+		"securityPostureConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerCluster) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -978,7 +1011,7 @@ func (j *jsiiProxy_DataGoogleContainerCluster) WorkloadIdentityConfig() DataGoog
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/container_cluster google_container_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/container_cluster google_container_cluster} Data Source.
 func NewDataGoogleContainerCluster(scope constructs.Construct, id *string, config *DataGoogleContainerClusterConfig) DataGoogleContainerCluster {
 	_init_.Initialize()
 
@@ -996,7 +1029,7 @@ func NewDataGoogleContainerCluster(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/container_cluster google_container_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/container_cluster google_container_cluster} Data Source.
 func NewDataGoogleContainerCluster_Override(d DataGoogleContainerCluster, scope constructs.Construct, id *string, config *DataGoogleContainerClusterConfig) {
 	_init_.Initialize()
 

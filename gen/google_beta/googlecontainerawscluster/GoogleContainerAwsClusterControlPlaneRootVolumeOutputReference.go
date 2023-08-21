@@ -46,6 +46,9 @@ type GoogleContainerAwsClusterControlPlaneRootVolumeOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Throughput() *float64
+	SetThroughput(val *float64)
+	ThroughputInput() *float64
 	VolumeType() *string
 	SetVolumeType(val *string)
 	VolumeTypeInput() *string
@@ -76,6 +79,7 @@ type GoogleContainerAwsClusterControlPlaneRootVolumeOutputReference interface {
 	ResetIops()
 	ResetKmsKeyArn()
 	ResetSizeGib()
+	ResetThroughput()
 	ResetVolumeType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -222,6 +226,26 @@ func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneRootVolumeOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneRootVolumeOutputReference) Throughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"throughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneRootVolumeOutputReference) ThroughputInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"throughputInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneRootVolumeOutputReference) VolumeType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -354,6 +378,17 @@ func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneRootVolumeOutputReferenc
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneRootVolumeOutputReference)SetThroughput(val *float64) {
+	if err := j.validateSetThroughputParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"throughput",
 		val,
 	)
 }
@@ -575,6 +610,14 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneRootVolumeOutputReferenc
 	_jsii_.InvokeVoid(
 		g,
 		"resetSizeGib",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneRootVolumeOutputReference) ResetThroughput() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetThroughput",
 		nil, // no parameters
 	)
 }

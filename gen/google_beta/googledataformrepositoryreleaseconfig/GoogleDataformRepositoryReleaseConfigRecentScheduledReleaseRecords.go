@@ -1,0 +1,6 @@
+package googledataformrepositoryreleaseconfig
+
+
+type GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecords struct {
+}
+

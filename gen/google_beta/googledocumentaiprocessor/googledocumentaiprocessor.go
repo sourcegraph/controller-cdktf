@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledocumentaiprocessor/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_document_ai_processor google_document_ai_processor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_document_ai_processor google_document_ai_processor}.
 type GoogleDocumentAiProcessor interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleDocumentAiProcessor) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_document_ai_processor google_document_ai_processor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_document_ai_processor google_document_ai_processor} Resource.
 func NewGoogleDocumentAiProcessor(scope constructs.Construct, id *string, config *GoogleDocumentAiProcessorConfig) GoogleDocumentAiProcessor {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGoogleDocumentAiProcessor(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_document_ai_processor google_document_ai_processor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_document_ai_processor google_document_ai_processor} Resource.
 func NewGoogleDocumentAiProcessor_Override(g GoogleDocumentAiProcessor, scope constructs.Construct, id *string, config *GoogleDocumentAiProcessorConfig) {
 	_init_.Initialize()
 

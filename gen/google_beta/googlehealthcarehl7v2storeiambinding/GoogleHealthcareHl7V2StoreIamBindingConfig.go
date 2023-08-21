@@ -19,17 +19,17 @@ type GoogleHealthcareHl7V2StoreIamBindingConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_healthcare_hl7_v2_store_iam_binding#hl7_v2_store_id GoogleHealthcareHl7V2StoreIamBinding#hl7_v2_store_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_hl7_v2_store_iam_binding#hl7_v2_store_id GoogleHealthcareHl7V2StoreIamBinding#hl7_v2_store_id}.
 	Hl7V2StoreId *string `field:"required" json:"hl7V2StoreId" yaml:"hl7V2StoreId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_healthcare_hl7_v2_store_iam_binding#members GoogleHealthcareHl7V2StoreIamBinding#members}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_hl7_v2_store_iam_binding#members GoogleHealthcareHl7V2StoreIamBinding#members}.
 	Members *[]*string `field:"required" json:"members" yaml:"members"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_healthcare_hl7_v2_store_iam_binding#role GoogleHealthcareHl7V2StoreIamBinding#role}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_hl7_v2_store_iam_binding#role GoogleHealthcareHl7V2StoreIamBinding#role}.
 	Role *string `field:"required" json:"role" yaml:"role"`
 	// condition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_healthcare_hl7_v2_store_iam_binding#condition GoogleHealthcareHl7V2StoreIamBinding#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_hl7_v2_store_iam_binding#condition GoogleHealthcareHl7V2StoreIamBinding#condition}
 	Condition *GoogleHealthcareHl7V2StoreIamBindingCondition `field:"optional" json:"condition" yaml:"condition"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_healthcare_hl7_v2_store_iam_binding#id GoogleHealthcareHl7V2StoreIamBinding#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_hl7_v2_store_iam_binding#id GoogleHealthcareHl7V2StoreIamBinding#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

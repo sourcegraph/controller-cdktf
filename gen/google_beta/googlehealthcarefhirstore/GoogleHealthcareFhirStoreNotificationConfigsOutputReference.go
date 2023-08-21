@@ -35,6 +35,9 @@ type GoogleHealthcareFhirStoreNotificationConfigsOutputReference interface {
 	SendFullResource() interface{}
 	SetSendFullResource(val interface{})
 	SendFullResourceInput() interface{}
+	SendPreviousResourceOnDelete() interface{}
+	SetSendPreviousResourceOnDelete(val interface{})
+	SendPreviousResourceOnDeleteInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type GoogleHealthcareFhirStoreNotificationConfigsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetSendFullResource()
+	ResetSendPreviousResourceOnDelete()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -173,6 +177,26 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference) SendPreviousResourceOnDelete() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendPreviousResourceOnDelete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference) SendPreviousResourceOnDeleteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendPreviousResourceOnDeleteInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -272,6 +296,17 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference)S
 	_jsii_.Set(
 		j,
 		"sendFullResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference)SetSendPreviousResourceOnDelete(val interface{}) {
+	if err := j.validateSetSendPreviousResourceOnDeleteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendPreviousResourceOnDelete",
 		val,
 	)
 }
@@ -488,6 +523,14 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference) 
 	_jsii_.InvokeVoid(
 		g,
 		"resetSendFullResource",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference) ResetSendPreviousResourceOnDelete() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSendPreviousResourceOnDelete",
 		nil, // no parameters
 	)
 }

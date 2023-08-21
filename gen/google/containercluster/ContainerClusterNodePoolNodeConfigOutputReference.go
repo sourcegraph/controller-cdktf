@@ -46,6 +46,8 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	GuestAcceleratorInput() interface{}
 	Gvnic() ContainerClusterNodePoolNodeConfigGvnicOutputReference
 	GvnicInput() *ContainerClusterNodePoolNodeConfigGvnic
+	HostMaintenancePolicy() ContainerClusterNodePoolNodeConfigHostMaintenancePolicyOutputReference
+	HostMaintenancePolicyInput() *ContainerClusterNodePoolNodeConfigHostMaintenancePolicy
 	ImageType() *string
 	SetImageType(val *string)
 	ImageTypeInput() *string
@@ -94,6 +96,8 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	ServiceAccountInput() *string
 	ShieldedInstanceConfig() ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference
 	ShieldedInstanceConfigInput() *ContainerClusterNodePoolNodeConfigShieldedInstanceConfig
+	SoleTenantConfig() ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference
+	SoleTenantConfigInput() *ContainerClusterNodePoolNodeConfigSoleTenantConfig
 	Spot() interface{}
 	SetSpot(val interface{})
 	SpotInput() interface{}
@@ -141,11 +145,13 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	PutGcfsConfig(value *ContainerClusterNodePoolNodeConfigGcfsConfig)
 	PutGuestAccelerator(value interface{})
 	PutGvnic(value *ContainerClusterNodePoolNodeConfigGvnic)
+	PutHostMaintenancePolicy(value *ContainerClusterNodePoolNodeConfigHostMaintenancePolicy)
 	PutKubeletConfig(value *ContainerClusterNodePoolNodeConfigKubeletConfig)
 	PutLinuxNodeConfig(value *ContainerClusterNodePoolNodeConfigLinuxNodeConfig)
 	PutLocalNvmeSsdBlockConfig(value *ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig)
 	PutReservationAffinity(value *ContainerClusterNodePoolNodeConfigReservationAffinity)
 	PutShieldedInstanceConfig(value *ContainerClusterNodePoolNodeConfigShieldedInstanceConfig)
+	PutSoleTenantConfig(value *ContainerClusterNodePoolNodeConfigSoleTenantConfig)
 	PutTaint(value interface{})
 	PutWorkloadMetadataConfig(value *ContainerClusterNodePoolNodeConfigWorkloadMetadataConfig)
 	ResetAdvancedMachineFeatures()
@@ -156,6 +162,7 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResetGcfsConfig()
 	ResetGuestAccelerator()
 	ResetGvnic()
+	ResetHostMaintenancePolicy()
 	ResetImageType()
 	ResetKubeletConfig()
 	ResetLabels()
@@ -173,6 +180,7 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResetResourceLabels()
 	ResetServiceAccount()
 	ResetShieldedInstanceConfig()
+	ResetSoleTenantConfig()
 	ResetSpot()
 	ResetTags()
 	ResetTaint()
@@ -387,6 +395,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) GvnicInput
 	_jsii_.Get(
 		j,
 		"gvnicInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) HostMaintenancePolicy() ContainerClusterNodePoolNodeConfigHostMaintenancePolicyOutputReference {
+	var returns ContainerClusterNodePoolNodeConfigHostMaintenancePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"hostMaintenancePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) HostMaintenancePolicyInput() *ContainerClusterNodePoolNodeConfigHostMaintenancePolicy {
+	var returns *ContainerClusterNodePoolNodeConfigHostMaintenancePolicy
+	_jsii_.Get(
+		j,
+		"hostMaintenancePolicyInput",
 		&returns,
 	)
 	return returns
@@ -737,6 +765,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ShieldedIn
 	_jsii_.Get(
 		j,
 		"shieldedInstanceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) SoleTenantConfig() ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference {
+	var returns ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference
+	_jsii_.Get(
+		j,
+		"soleTenantConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) SoleTenantConfigInput() *ContainerClusterNodePoolNodeConfigSoleTenantConfig {
+	var returns *ContainerClusterNodePoolNodeConfigSoleTenantConfig
+	_jsii_.Get(
+		j,
+		"soleTenantConfigInput",
 		&returns,
 	)
 	return returns
@@ -1353,6 +1401,17 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutGvnic(v
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutHostMaintenancePolicy(value *ContainerClusterNodePoolNodeConfigHostMaintenancePolicy) {
+	if err := c.validatePutHostMaintenancePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putHostMaintenancePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutKubeletConfig(value *ContainerClusterNodePoolNodeConfigKubeletConfig) {
 	if err := c.validatePutKubeletConfigParameters(value); err != nil {
 		panic(err)
@@ -1404,6 +1463,17 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutShielde
 	_jsii_.InvokeVoid(
 		c,
 		"putShieldedInstanceConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutSoleTenantConfig(value *ContainerClusterNodePoolNodeConfigSoleTenantConfig) {
+	if err := c.validatePutSoleTenantConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSoleTenantConfig",
 		[]interface{}{value},
 	)
 }
@@ -1490,6 +1560,14 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetGvnic
 	_jsii_.InvokeVoid(
 		c,
 		"resetGvnic",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetHostMaintenancePolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetHostMaintenancePolicy",
 		nil, // no parameters
 	)
 }
@@ -1626,6 +1704,14 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetShiel
 	_jsii_.InvokeVoid(
 		c,
 		"resetShieldedInstanceConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetSoleTenantConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSoleTenantConfig",
 		nil, // no parameters
 	)
 }

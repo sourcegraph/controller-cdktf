@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesccsourceiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_scc_source_iam_binding google_scc_source_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_scc_source_iam_binding google_scc_source_iam_binding}.
 type GoogleSccSourceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -413,7 +413,7 @@ func (j *jsiiProxy_GoogleSccSourceIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_scc_source_iam_binding google_scc_source_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_scc_source_iam_binding google_scc_source_iam_binding} Resource.
 func NewGoogleSccSourceIamBinding(scope constructs.Construct, id *string, config *GoogleSccSourceIamBindingConfig) GoogleSccSourceIamBinding {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewGoogleSccSourceIamBinding(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_scc_source_iam_binding google_scc_source_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_scc_source_iam_binding google_scc_source_iam_binding} Resource.
 func NewGoogleSccSourceIamBinding_Override(g GoogleSccSourceIamBinding, scope constructs.Construct, id *string, config *GoogleSccSourceIamBindingConfig) {
 	_init_.Initialize()
 

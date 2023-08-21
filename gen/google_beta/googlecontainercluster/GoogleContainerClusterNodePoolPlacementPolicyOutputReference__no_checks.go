@@ -60,11 +60,19 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolPlacementPolicyOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodePoolPlacementPolicyOutputReference) validateSetPolicyNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodePoolPlacementPolicyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleContainerClusterNodePoolPlacementPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolPlacementPolicyOutputReference) validateSetTpuTopologyParameters(val *string) error {
 	return nil
 }
 

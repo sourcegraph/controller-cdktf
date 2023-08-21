@@ -9,11 +9,14 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlehealthcarefhirstore/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store}.
 type GoogleHealthcareFhirStore interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ComplexDataTypeReferenceParsing() *string
+	SetComplexDataTypeReferenceParsing(val *string)
+	ComplexDataTypeReferenceParsingInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -123,6 +126,7 @@ type GoogleHealthcareFhirStore interface {
 	PutNotificationConfigs(value interface{})
 	PutStreamConfigs(value interface{})
 	PutTimeouts(value *GoogleHealthcareFhirStoreTimeouts)
+	ResetComplexDataTypeReferenceParsing()
 	ResetDisableReferentialIntegrity()
 	ResetDisableResourceVersioning()
 	ResetEnableHistoryImport()
@@ -157,6 +161,26 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) CdktfStack() cdktf.TerraformStack 
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleHealthcareFhirStore) ComplexDataTypeReferenceParsing() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"complexDataTypeReferenceParsing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleHealthcareFhirStore) ComplexDataTypeReferenceParsingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"complexDataTypeReferenceParsingInput",
 		&returns,
 	)
 	return returns
@@ -583,7 +607,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store} Resource.
 func NewGoogleHealthcareFhirStore(scope constructs.Construct, id *string, config *GoogleHealthcareFhirStoreConfig) GoogleHealthcareFhirStore {
 	_init_.Initialize()
 
@@ -601,7 +625,7 @@ func NewGoogleHealthcareFhirStore(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store} Resource.
 func NewGoogleHealthcareFhirStore_Override(g GoogleHealthcareFhirStore, scope constructs.Construct, id *string, config *GoogleHealthcareFhirStoreConfig) {
 	_init_.Initialize()
 
@@ -609,6 +633,17 @@ func NewGoogleHealthcareFhirStore_Override(g GoogleHealthcareFhirStore, scope co
 		"@cdktf/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStore",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleHealthcareFhirStore)SetComplexDataTypeReferenceParsing(val *string) {
+	if err := j.validateSetComplexDataTypeReferenceParsingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"complexDataTypeReferenceParsing",
+		val,
 	)
 }
 
@@ -1086,6 +1121,14 @@ func (g *jsiiProxy_GoogleHealthcareFhirStore) PutTimeouts(value *GoogleHealthcar
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleHealthcareFhirStore) ResetComplexDataTypeReferenceParsing() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetComplexDataTypeReferenceParsing",
+		nil, // no parameters
 	)
 }
 

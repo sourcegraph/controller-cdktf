@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateOutputReference) validateResolvePa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateOutputReference) validateSetAnnotationsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2JobTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

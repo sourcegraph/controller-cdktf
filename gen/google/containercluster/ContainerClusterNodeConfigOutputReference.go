@@ -46,6 +46,8 @@ type ContainerClusterNodeConfigOutputReference interface {
 	GuestAcceleratorInput() interface{}
 	Gvnic() ContainerClusterNodeConfigGvnicOutputReference
 	GvnicInput() *ContainerClusterNodeConfigGvnic
+	HostMaintenancePolicy() ContainerClusterNodeConfigHostMaintenancePolicyOutputReference
+	HostMaintenancePolicyInput() *ContainerClusterNodeConfigHostMaintenancePolicy
 	ImageType() *string
 	SetImageType(val *string)
 	ImageTypeInput() *string
@@ -94,6 +96,8 @@ type ContainerClusterNodeConfigOutputReference interface {
 	ServiceAccountInput() *string
 	ShieldedInstanceConfig() ContainerClusterNodeConfigShieldedInstanceConfigOutputReference
 	ShieldedInstanceConfigInput() *ContainerClusterNodeConfigShieldedInstanceConfig
+	SoleTenantConfig() ContainerClusterNodeConfigSoleTenantConfigOutputReference
+	SoleTenantConfigInput() *ContainerClusterNodeConfigSoleTenantConfig
 	Spot() interface{}
 	SetSpot(val interface{})
 	SpotInput() interface{}
@@ -141,11 +145,13 @@ type ContainerClusterNodeConfigOutputReference interface {
 	PutGcfsConfig(value *ContainerClusterNodeConfigGcfsConfig)
 	PutGuestAccelerator(value interface{})
 	PutGvnic(value *ContainerClusterNodeConfigGvnic)
+	PutHostMaintenancePolicy(value *ContainerClusterNodeConfigHostMaintenancePolicy)
 	PutKubeletConfig(value *ContainerClusterNodeConfigKubeletConfig)
 	PutLinuxNodeConfig(value *ContainerClusterNodeConfigLinuxNodeConfig)
 	PutLocalNvmeSsdBlockConfig(value *ContainerClusterNodeConfigLocalNvmeSsdBlockConfig)
 	PutReservationAffinity(value *ContainerClusterNodeConfigReservationAffinity)
 	PutShieldedInstanceConfig(value *ContainerClusterNodeConfigShieldedInstanceConfig)
+	PutSoleTenantConfig(value *ContainerClusterNodeConfigSoleTenantConfig)
 	PutTaint(value interface{})
 	PutWorkloadMetadataConfig(value *ContainerClusterNodeConfigWorkloadMetadataConfig)
 	ResetAdvancedMachineFeatures()
@@ -156,6 +162,7 @@ type ContainerClusterNodeConfigOutputReference interface {
 	ResetGcfsConfig()
 	ResetGuestAccelerator()
 	ResetGvnic()
+	ResetHostMaintenancePolicy()
 	ResetImageType()
 	ResetKubeletConfig()
 	ResetLabels()
@@ -173,6 +180,7 @@ type ContainerClusterNodeConfigOutputReference interface {
 	ResetResourceLabels()
 	ResetServiceAccount()
 	ResetShieldedInstanceConfig()
+	ResetSoleTenantConfig()
 	ResetSpot()
 	ResetTags()
 	ResetTaint()
@@ -387,6 +395,26 @@ func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) GvnicInput() *Cont
 	_jsii_.Get(
 		j,
 		"gvnicInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) HostMaintenancePolicy() ContainerClusterNodeConfigHostMaintenancePolicyOutputReference {
+	var returns ContainerClusterNodeConfigHostMaintenancePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"hostMaintenancePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) HostMaintenancePolicyInput() *ContainerClusterNodeConfigHostMaintenancePolicy {
+	var returns *ContainerClusterNodeConfigHostMaintenancePolicy
+	_jsii_.Get(
+		j,
+		"hostMaintenancePolicyInput",
 		&returns,
 	)
 	return returns
@@ -737,6 +765,26 @@ func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) ShieldedInstanceCo
 	_jsii_.Get(
 		j,
 		"shieldedInstanceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) SoleTenantConfig() ContainerClusterNodeConfigSoleTenantConfigOutputReference {
+	var returns ContainerClusterNodeConfigSoleTenantConfigOutputReference
+	_jsii_.Get(
+		j,
+		"soleTenantConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) SoleTenantConfigInput() *ContainerClusterNodeConfigSoleTenantConfig {
+	var returns *ContainerClusterNodeConfigSoleTenantConfig
+	_jsii_.Get(
+		j,
+		"soleTenantConfigInput",
 		&returns,
 	)
 	return returns
@@ -1353,6 +1401,17 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutGvnic(value *Co
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutHostMaintenancePolicy(value *ContainerClusterNodeConfigHostMaintenancePolicy) {
+	if err := c.validatePutHostMaintenancePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putHostMaintenancePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutKubeletConfig(value *ContainerClusterNodeConfigKubeletConfig) {
 	if err := c.validatePutKubeletConfigParameters(value); err != nil {
 		panic(err)
@@ -1404,6 +1463,17 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutShieldedInstanc
 	_jsii_.InvokeVoid(
 		c,
 		"putShieldedInstanceConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutSoleTenantConfig(value *ContainerClusterNodeConfigSoleTenantConfig) {
+	if err := c.validatePutSoleTenantConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSoleTenantConfig",
 		[]interface{}{value},
 	)
 }
@@ -1490,6 +1560,14 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResetGvnic() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetGvnic",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResetHostMaintenancePolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetHostMaintenancePolicy",
 		nil, // no parameters
 	)
 }
@@ -1626,6 +1704,14 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResetShieldedInsta
 	_jsii_.InvokeVoid(
 		c,
 		"resetShieldedInstanceConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResetSoleTenantConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSoleTenantConfig",
 		nil, // no parameters
 	)
 }

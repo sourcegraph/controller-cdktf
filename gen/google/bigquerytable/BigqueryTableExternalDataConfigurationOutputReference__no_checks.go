@@ -60,6 +60,14 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) valida
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validatePutJsonOptionsParameters(value *BigqueryTableExternalDataConfigurationJsonOptions) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validatePutParquetOptionsParameters(value *BigqueryTableExternalDataConfigurationParquetOptions) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -84,6 +92,10 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validateSetFileSetSpecTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validateSetIgnoreUnknownValuesParameters(val interface{}) error {
 	return nil
 }
@@ -93,6 +105,14 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) valida
 }
 
 func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validateSetMaxBadRecordsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validateSetMetadataCacheModeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validateSetObjectMetadataParameters(val *string) error {
 	return nil
 }
 

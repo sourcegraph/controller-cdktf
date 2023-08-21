@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigInfo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesOutputReference) validatePutSensitivityScoreParameters(value *GoogleDataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesSensitivityScore) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

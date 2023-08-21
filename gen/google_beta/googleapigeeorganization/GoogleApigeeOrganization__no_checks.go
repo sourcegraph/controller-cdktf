@@ -96,6 +96,10 @@ func (j *jsiiProxy_GoogleApigeeOrganization) validateSetDescriptionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleApigeeOrganization) validateSetDisableVpcPeeringParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleApigeeOrganization) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

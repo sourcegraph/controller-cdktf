@@ -19,13 +19,13 @@ type GoogleCloudbuildTriggerBuildStep struct {
 	// host's Docker daemon's cache and is available to use as the name for a
 	// later build step.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudbuild_trigger#name GoogleCloudbuildTrigger#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuild_trigger#name GoogleCloudbuildTrigger#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Allow this build step to fail without failing the entire build if and only if the exit code is one of the specified codes.
 	//
 	// If 'allowFailure' is also specified, this field will take precedence.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudbuild_trigger#allow_exit_codes GoogleCloudbuildTrigger#allow_exit_codes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuild_trigger#allow_exit_codes GoogleCloudbuildTrigger#allow_exit_codes}
 	AllowExitCodes *[]*float64 `field:"optional" json:"allowExitCodes" yaml:"allowExitCodes"`
 	// Allow this build step to fail without failing the entire build.
 	//
@@ -35,7 +35,7 @@ type GoogleCloudbuildTriggerBuildStep struct {
 	//
 	// 'allowExitCodes' takes precedence over this field.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudbuild_trigger#allow_failure GoogleCloudbuildTrigger#allow_failure}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuild_trigger#allow_failure GoogleCloudbuildTrigger#allow_failure}
 	AllowFailure interface{} `field:"optional" json:"allowFailure" yaml:"allowFailure"`
 	// A list of arguments that will be presented to the step when it is started.
 	//
@@ -44,7 +44,7 @@ type GoogleCloudbuildTriggerBuildStep struct {
 	// entrypoint, the first element in args is used as the entrypoint, and the
 	// remainder will be used as arguments.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudbuild_trigger#args GoogleCloudbuildTrigger#args}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuild_trigger#args GoogleCloudbuildTrigger#args}
 	Args *[]*string `field:"optional" json:"args" yaml:"args"`
 	// Working directory to use when running this step's container.
 	//
@@ -58,22 +58,22 @@ type GoogleCloudbuildTriggerBuildStep struct {
 	// which specifies an absolute path, the 'RepoSource' 'dir' is ignored
 	// for the step's execution.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudbuild_trigger#dir GoogleCloudbuildTrigger#dir}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuild_trigger#dir GoogleCloudbuildTrigger#dir}
 	Dir *string `field:"optional" json:"dir" yaml:"dir"`
 	// Entrypoint to be used instead of the build step image's default entrypoint. If unset, the image's default entrypoint is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudbuild_trigger#entrypoint GoogleCloudbuildTrigger#entrypoint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuild_trigger#entrypoint GoogleCloudbuildTrigger#entrypoint}
 	Entrypoint *string `field:"optional" json:"entrypoint" yaml:"entrypoint"`
 	// A list of environment variable definitions to be used when running a step.
 	//
 	// The elements are of the form "KEY=VALUE" for the environment variable
 	// "KEY" being given the value "VALUE".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudbuild_trigger#env GoogleCloudbuildTrigger#env}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuild_trigger#env GoogleCloudbuildTrigger#env}
 	Env *[]*string `field:"optional" json:"env" yaml:"env"`
 	// Unique identifier for this build step, used in 'wait_for' to reference this build step as a dependency.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudbuild_trigger#id GoogleCloudbuildTrigger#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuild_trigger#id GoogleCloudbuildTrigger#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -82,14 +82,14 @@ type GoogleCloudbuildTriggerBuildStep struct {
 	//
 	// When script is provided, the user cannot specify the entrypoint or args.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudbuild_trigger#script GoogleCloudbuildTrigger#script}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuild_trigger#script GoogleCloudbuildTrigger#script}
 	Script *string `field:"optional" json:"script" yaml:"script"`
 	// A list of environment variables which are encrypted using a Cloud Key Management Service crypto key.
 	//
 	// These values must be specified in
 	// the build's 'Secret'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudbuild_trigger#secret_env GoogleCloudbuildTrigger#secret_env}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuild_trigger#secret_env GoogleCloudbuildTrigger#secret_env}
 	SecretEnv *[]*string `field:"optional" json:"secretEnv" yaml:"secretEnv"`
 	// Time limit for executing this build step.
 	//
@@ -98,15 +98,15 @@ type GoogleCloudbuildTriggerBuildStep struct {
 	// time limit and will be allowed to continue to run until either it
 	// completes or the build itself times out.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudbuild_trigger#timeout GoogleCloudbuildTrigger#timeout}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuild_trigger#timeout GoogleCloudbuildTrigger#timeout}
 	Timeout *string `field:"optional" json:"timeout" yaml:"timeout"`
 	// Output only. Stores timing information for executing this build step.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudbuild_trigger#timing GoogleCloudbuildTrigger#timing}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuild_trigger#timing GoogleCloudbuildTrigger#timing}
 	Timing *string `field:"optional" json:"timing" yaml:"timing"`
 	// volumes block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudbuild_trigger#volumes GoogleCloudbuildTrigger#volumes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuild_trigger#volumes GoogleCloudbuildTrigger#volumes}
 	Volumes interface{} `field:"optional" json:"volumes" yaml:"volumes"`
 	// The ID(s) of the step(s) that this build step depends on.
 	//
@@ -115,7 +115,7 @@ type GoogleCloudbuildTriggerBuildStep struct {
 	// will start when all previous build steps in the 'Build.Steps' list
 	// have completed successfully.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudbuild_trigger#wait_for GoogleCloudbuildTrigger#wait_for}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuild_trigger#wait_for GoogleCloudbuildTrigger#wait_for}
 	WaitFor *[]*string `field:"optional" json:"waitFor" yaml:"waitFor"`
 }
 

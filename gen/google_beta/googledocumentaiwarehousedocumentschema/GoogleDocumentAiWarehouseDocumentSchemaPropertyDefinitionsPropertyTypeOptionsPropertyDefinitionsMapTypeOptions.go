@@ -1,0 +1,6 @@
+package googledocumentaiwarehousedocumentschema
+
+
+type GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptions struct {
+}
+

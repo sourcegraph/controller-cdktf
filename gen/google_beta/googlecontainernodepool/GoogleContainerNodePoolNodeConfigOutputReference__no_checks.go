@@ -68,6 +68,10 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePutHostMaintenancePolicyParameters(value *GoogleContainerNodePoolNodeConfigHostMaintenancePolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePutKubeletConfigParameters(value *GoogleContainerNodePoolNodeConfigKubeletConfig) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePut
 }
 
 func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePutShieldedInstanceConfigParameters(value *GoogleContainerNodePoolNodeConfigShieldedInstanceConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePutSoleTenantConfigParameters(value *GoogleContainerNodePoolNodeConfigSoleTenantConfig) error {
 	return nil
 }
 

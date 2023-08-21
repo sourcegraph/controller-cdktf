@@ -1,0 +1,6 @@
+package googlefirebaseextensionsinstance
+
+
+type GoogleFirebaseExtensionsInstanceRuntimeDataProcessingState struct {
+}
+

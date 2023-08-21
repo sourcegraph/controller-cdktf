@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMax
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeOutputReference) validatePutSensitivityScoreParameters(value *GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -29,28 +29,28 @@ type GoogleComputeNetworkConfig struct {
 	// characters must be a dash, lowercase letter, or digit, except the last
 	// character, which cannot be a dash.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_network#name GoogleComputeNetwork#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_network#name GoogleComputeNetwork#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// When set to 'true', the network is created in "auto subnet mode" and it will create a subnet for each region automatically across the '10.128.0.0/9' address range.
 	//
 	// When set to 'false', the network is created in "custom subnet mode" so
 	// the user can explicitly connect subnetwork resources.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_network#auto_create_subnetworks GoogleComputeNetwork#auto_create_subnetworks}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_network#auto_create_subnetworks GoogleComputeNetwork#auto_create_subnetworks}
 	AutoCreateSubnetworks interface{} `field:"optional" json:"autoCreateSubnetworks" yaml:"autoCreateSubnetworks"`
 	// If set to 'true', default routes ('0.0.0.0/0') will be deleted immediately after network creation. Defaults to 'false'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_network#delete_default_routes_on_create GoogleComputeNetwork#delete_default_routes_on_create}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_network#delete_default_routes_on_create GoogleComputeNetwork#delete_default_routes_on_create}
 	DeleteDefaultRoutesOnCreate interface{} `field:"optional" json:"deleteDefaultRoutesOnCreate" yaml:"deleteDefaultRoutesOnCreate"`
 	// An optional description of this resource. The resource must be recreated to modify this field.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_network#description GoogleComputeNetwork#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_network#description GoogleComputeNetwork#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Enable ULA internal ipv6 on this network. Enabling this feature will assign a /48 from google defined ULA prefix fd20::/20.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_network#enable_ula_internal_ipv6 GoogleComputeNetwork#enable_ula_internal_ipv6}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_network#enable_ula_internal_ipv6 GoogleComputeNetwork#enable_ula_internal_ipv6}
 	EnableUlaInternalIpv6 interface{} `field:"optional" json:"enableUlaInternalIpv6" yaml:"enableUlaInternalIpv6"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_network#id GoogleComputeNetwork#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_network#id GoogleComputeNetwork#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -62,7 +62,7 @@ type GoogleComputeNetworkConfig struct {
 	// fail if the speficied /48 is already in used by another resource.
 	// If the field is not speficied, then a /48 range will be randomly allocated from fd20::/20 and returned via this field.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_network#internal_ipv6_range GoogleComputeNetwork#internal_ipv6_range}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_network#internal_ipv6_range GoogleComputeNetwork#internal_ipv6_range}
 	InternalIpv6Range *string `field:"optional" json:"internalIpv6Range" yaml:"internalIpv6Range"`
 	// Maximum Transmission Unit in bytes.
 	//
@@ -72,13 +72,13 @@ type GoogleComputeNetworkConfig struct {
 	// with an ICMP 'Fragmentation-Needed' message if the packets are routed to the Internet or other VPCs
 	// with varying MTUs.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_network#mtu GoogleComputeNetwork#mtu}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_network#mtu GoogleComputeNetwork#mtu}
 	Mtu *float64 `field:"optional" json:"mtu" yaml:"mtu"`
 	// Set the order that Firewall Rules and Firewall Policies are evaluated. Default value: "AFTER_CLASSIC_FIREWALL" Possible values: ["BEFORE_CLASSIC_FIREWALL", "AFTER_CLASSIC_FIREWALL"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_network#network_firewall_policy_enforcement_order GoogleComputeNetwork#network_firewall_policy_enforcement_order}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_network#network_firewall_policy_enforcement_order GoogleComputeNetwork#network_firewall_policy_enforcement_order}
 	NetworkFirewallPolicyEnforcementOrder *string `field:"optional" json:"networkFirewallPolicyEnforcementOrder" yaml:"networkFirewallPolicyEnforcementOrder"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_network#project GoogleComputeNetwork#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_network#project GoogleComputeNetwork#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The network-wide routing mode to use.
 	//
@@ -88,11 +88,11 @@ type GoogleComputeNetworkConfig struct {
 	// this network's cloud routers will advertise routes with all
 	// subnetworks of this network, across regions. Possible values: ["REGIONAL", "GLOBAL"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_network#routing_mode GoogleComputeNetwork#routing_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_network#routing_mode GoogleComputeNetwork#routing_mode}
 	RoutingMode *string `field:"optional" json:"routingMode" yaml:"routingMode"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_network#timeouts GoogleComputeNetwork#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_network#timeouts GoogleComputeNetwork#timeouts}
 	Timeouts *GoogleComputeNetworkTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

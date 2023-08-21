@@ -210,6 +210,17 @@ func (c *jsiiProxy_ContainerCluster) validatePutDnsConfigParameters(value *Conta
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutEnableK8SBetaApisParameters(value *ContainerClusterEnableK8SBetaApis) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutGatewayApiConfigParameters(value *ContainerClusterGatewayApiConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -406,6 +417,17 @@ func (c *jsiiProxy_ContainerCluster) validatePutResourceUsageExportConfigParamet
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutSecurityPostureConfigParameters(value *ContainerClusterSecurityPostureConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutServiceExternalIpsConfigParameters(value *ContainerClusterServiceExternalIpsConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -469,6 +491,26 @@ func validateContainerCluster_IsTerraformElementParameters(x interface{}) error 
 func validateContainerCluster_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerCluster) validateSetAllowNetAdminParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

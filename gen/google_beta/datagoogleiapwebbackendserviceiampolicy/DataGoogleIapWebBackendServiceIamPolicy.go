@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagoogleiapwebbackendserviceiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/data-sources/google_iap_web_backend_service_iam_policy google_iap_web_backend_service_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_iap_web_backend_service_iam_policy google_iap_web_backend_service_iam_policy}.
 type DataGoogleIapWebBackendServiceIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -327,7 +327,7 @@ func (j *jsiiProxy_DataGoogleIapWebBackendServiceIamPolicy) WebBackendServiceInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/data-sources/google_iap_web_backend_service_iam_policy google_iap_web_backend_service_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_iap_web_backend_service_iam_policy google_iap_web_backend_service_iam_policy} Data Source.
 func NewDataGoogleIapWebBackendServiceIamPolicy(scope constructs.Construct, id *string, config *DataGoogleIapWebBackendServiceIamPolicyConfig) DataGoogleIapWebBackendServiceIamPolicy {
 	_init_.Initialize()
 
@@ -345,7 +345,7 @@ func NewDataGoogleIapWebBackendServiceIamPolicy(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/data-sources/google_iap_web_backend_service_iam_policy google_iap_web_backend_service_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_iap_web_backend_service_iam_policy google_iap_web_backend_service_iam_policy} Data Source.
 func NewDataGoogleIapWebBackendServiceIamPolicy_Override(d DataGoogleIapWebBackendServiceIamPolicy, scope constructs.Construct, id *string, config *DataGoogleIapWebBackendServiceIamPolicyConfig) {
 	_init_.Initialize()
 

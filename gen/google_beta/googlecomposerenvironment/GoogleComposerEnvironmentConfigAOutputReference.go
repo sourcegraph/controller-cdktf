@@ -52,6 +52,9 @@ type GoogleComposerEnvironmentConfigAOutputReference interface {
 	PrivateEnvironmentConfigInput() *GoogleComposerEnvironmentConfigPrivateEnvironmentConfig
 	RecoveryConfig() GoogleComposerEnvironmentConfigRecoveryConfigOutputReference
 	RecoveryConfigInput() *GoogleComposerEnvironmentConfigRecoveryConfig
+	ResilienceMode() *string
+	SetResilienceMode(val *string)
+	ResilienceModeInput() *string
 	SoftwareConfig() GoogleComposerEnvironmentConfigSoftwareConfigOutputReference
 	SoftwareConfigInput() *GoogleComposerEnvironmentConfigSoftwareConfig
 	// Experimental.
@@ -112,6 +115,7 @@ type GoogleComposerEnvironmentConfigAOutputReference interface {
 	ResetNodeCount()
 	ResetPrivateEnvironmentConfig()
 	ResetRecoveryConfig()
+	ResetResilienceMode()
 	ResetSoftwareConfig()
 	ResetWebServerConfig()
 	ResetWebServerNetworkAccessControl()
@@ -391,6 +395,26 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) RecoveryConf
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) ResilienceMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resilienceMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) ResilienceModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resilienceModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) SoftwareConfig() GoogleComposerEnvironmentConfigSoftwareConfigOutputReference {
 	var returns GoogleComposerEnvironmentConfigSoftwareConfigOutputReference
 	_jsii_.Get(
@@ -570,6 +594,17 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference)SetNodeCount(
 	_jsii_.Set(
 		j,
 		"nodeCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference)SetResilienceMode(val *string) {
+	if err := j.validateSetResilienceModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resilienceMode",
 		val,
 	)
 }
@@ -971,6 +1006,14 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) ResetRecover
 	_jsii_.InvokeVoid(
 		g,
 		"resetRecoveryConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) ResetResilienceMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetResilienceMode",
 		nil, // no parameters
 	)
 }

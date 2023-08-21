@@ -35,6 +35,7 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	GcfsConfig() DataGoogleContainerClusterNodeConfigGcfsConfigList
 	GuestAccelerator() DataGoogleContainerClusterNodeConfigGuestAcceleratorList
 	Gvnic() DataGoogleContainerClusterNodeConfigGvnicList
+	HostMaintenancePolicy() DataGoogleContainerClusterNodeConfigHostMaintenancePolicyList
 	ImageType() *string
 	InternalValue() *DataGoogleContainerClusterNodeConfig
 	SetInternalValue(val *DataGoogleContainerClusterNodeConfig)
@@ -54,6 +55,7 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	ResourceLabels() cdktf.StringMap
 	ServiceAccount() *string
 	ShieldedInstanceConfig() DataGoogleContainerClusterNodeConfigShieldedInstanceConfigList
+	SoleTenantConfig() DataGoogleContainerClusterNodeConfigSoleTenantConfigList
 	Spot() cdktf.IResolvable
 	Tags() *[]*string
 	Taint() DataGoogleContainerClusterNodeConfigTaintList
@@ -220,6 +222,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) Gvnic() 
 	_jsii_.Get(
 		j,
 		"gvnic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) HostMaintenancePolicy() DataGoogleContainerClusterNodeConfigHostMaintenancePolicyList {
+	var returns DataGoogleContainerClusterNodeConfigHostMaintenancePolicyList
+	_jsii_.Get(
+		j,
+		"hostMaintenancePolicy",
 		&returns,
 	)
 	return returns
@@ -400,6 +412,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) Shielded
 	_jsii_.Get(
 		j,
 		"shieldedInstanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) SoleTenantConfig() DataGoogleContainerClusterNodeConfigSoleTenantConfigList {
+	var returns DataGoogleContainerClusterNodeConfigSoleTenantConfigList
+	_jsii_.Get(
+		j,
+		"soleTenantConfig",
 		&returns,
 	)
 	return returns

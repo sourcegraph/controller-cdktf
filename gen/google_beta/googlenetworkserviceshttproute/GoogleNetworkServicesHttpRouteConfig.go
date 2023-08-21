@@ -21,47 +21,47 @@ type GoogleNetworkServicesHttpRouteConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Set of hosts that should match against the HTTP host header to select a HttpRoute to process the request.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_http_route#hostnames GoogleNetworkServicesHttpRoute#hostnames}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_http_route#hostnames GoogleNetworkServicesHttpRoute#hostnames}
 	Hostnames *[]*string `field:"required" json:"hostnames" yaml:"hostnames"`
 	// Name of the HttpRoute resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_http_route#name GoogleNetworkServicesHttpRoute#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_http_route#name GoogleNetworkServicesHttpRoute#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_http_route#rules GoogleNetworkServicesHttpRoute#rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_http_route#rules GoogleNetworkServicesHttpRoute#rules}
 	Rules interface{} `field:"required" json:"rules" yaml:"rules"`
 	// A free-text description of the resource. Max length 1024 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_http_route#description GoogleNetworkServicesHttpRoute#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_http_route#description GoogleNetworkServicesHttpRoute#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Gateways defines a list of gateways this HttpRoute is attached to, as one of the routing rules to route the requests served by the gateway.
 	//
 	// Each gateway reference should match the pattern: projects/*\/locations/global/gateways/<gateway_name>
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_http_route#gateways GoogleNetworkServicesHttpRoute#gateways}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_http_route#gateways GoogleNetworkServicesHttpRoute#gateways}
 	Gateways *[]*string `field:"optional" json:"gateways" yaml:"gateways"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_http_route#id GoogleNetworkServicesHttpRoute#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_http_route#id GoogleNetworkServicesHttpRoute#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Set of label tags associated with the HttpRoute resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_http_route#labels GoogleNetworkServicesHttpRoute#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_http_route#labels GoogleNetworkServicesHttpRoute#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// Meshes defines a list of meshes this HttpRoute is attached to, as one of the routing rules to route the requests served by the mesh.
 	//
 	// Each mesh reference should match the pattern: projects/*\/locations/global/meshes/<mesh_name>.
 	// The attached Mesh should be of a type SIDECAR.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_http_route#meshes GoogleNetworkServicesHttpRoute#meshes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_http_route#meshes GoogleNetworkServicesHttpRoute#meshes}
 	Meshes *[]*string `field:"optional" json:"meshes" yaml:"meshes"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_http_route#project GoogleNetworkServicesHttpRoute#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_http_route#project GoogleNetworkServicesHttpRoute#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_http_route#timeouts GoogleNetworkServicesHttpRoute#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_http_route#timeouts GoogleNetworkServicesHttpRoute#timeouts}
 	Timeouts *GoogleNetworkServicesHttpRouteTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

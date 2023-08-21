@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutpu
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference) validateSetAllowedProjectsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

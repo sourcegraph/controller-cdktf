@@ -8,11 +8,11 @@ type GoogleCloudbuildTriggerBuildAvailableSecretsSecretManager struct {
 	// variables must be unique across all of a build's secrets, and must be used
 	// by at least one build step.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudbuild_trigger#env GoogleCloudbuildTrigger#env}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuild_trigger#env GoogleCloudbuildTrigger#env}
 	Env *string `field:"required" json:"env" yaml:"env"`
 	// Resource name of the SecretVersion. In format: projects/*\/secrets/*\/versions/*.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudbuild_trigger#version_name GoogleCloudbuildTrigger#version_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuild_trigger#version_name GoogleCloudbuildTrigger#version_name}
 	VersionName *string `field:"required" json:"versionName" yaml:"versionName"`
 }
 

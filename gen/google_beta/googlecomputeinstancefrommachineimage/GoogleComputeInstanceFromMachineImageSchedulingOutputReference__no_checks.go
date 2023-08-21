@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReferenc
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReference) validatePutLocalSsdRecoveryTimeoutParameters(value *GoogleComputeInstanceFromMachineImageSchedulingLocalSsdRecoveryTimeout) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOutputReference) validatePutMaxRunDurationParameters(value *GoogleComputeInstanceFromMachineImageSchedulingMaxRunDuration) error {
 	return nil
 }

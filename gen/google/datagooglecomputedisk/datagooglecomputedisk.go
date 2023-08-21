@@ -9,9 +9,10 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecomputedisk/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/compute_disk google_compute_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/compute_disk google_compute_disk}.
 type DataGoogleComputeDisk interface {
 	cdktf.TerraformDataSource
+	AsyncPrimaryDisk() DataGoogleComputeDiskAsyncPrimaryDiskList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -63,6 +64,7 @@ type DataGoogleComputeDisk interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	ProvisionedIops() *float64
+	ProvisionedThroughput() *float64
 	// Experimental.
 	RawOverrides() interface{}
 	SelfLink() *string
@@ -129,6 +131,16 @@ type DataGoogleComputeDisk interface {
 // The jsii proxy struct for DataGoogleComputeDisk
 type jsiiProxy_DataGoogleComputeDisk struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataGoogleComputeDisk) AsyncPrimaryDisk() DataGoogleComputeDiskAsyncPrimaryDiskList {
+	var returns DataGoogleComputeDiskAsyncPrimaryDiskList
+	_jsii_.Get(
+		j,
+		"asyncPrimaryDisk",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleComputeDisk) CdktfStack() cdktf.TerraformStack {
@@ -411,6 +423,16 @@ func (j *jsiiProxy_DataGoogleComputeDisk) ProvisionedIops() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeDisk) ProvisionedThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedThroughput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeDisk) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -582,7 +604,7 @@ func (j *jsiiProxy_DataGoogleComputeDisk) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/compute_disk google_compute_disk} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/compute_disk google_compute_disk} Data Source.
 func NewDataGoogleComputeDisk(scope constructs.Construct, id *string, config *DataGoogleComputeDiskConfig) DataGoogleComputeDisk {
 	_init_.Initialize()
 
@@ -600,7 +622,7 @@ func NewDataGoogleComputeDisk(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/compute_disk google_compute_disk} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/compute_disk google_compute_disk} Data Source.
 func NewDataGoogleComputeDisk_Override(d DataGoogleComputeDisk, scope constructs.Construct, id *string, config *DataGoogleComputeDiskConfig) {
 	_init_.Initialize()
 

@@ -60,6 +60,10 @@ func (j *jsiiProxy_GoogleContainerAwsClusterNetworkingOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerAwsClusterNetworkingOutputReference) validateSetPerNodePoolSgRulesDisabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerAwsClusterNetworkingOutputReference) validateSetPodAddressCidrBlocksParameters(val *[]*string) error {
 	return nil
 }

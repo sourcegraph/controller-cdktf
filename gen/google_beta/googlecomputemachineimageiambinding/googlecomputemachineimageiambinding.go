@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputemachineimageiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_machine_image_iam_binding google_compute_machine_image_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_machine_image_iam_binding google_compute_machine_image_iam_binding}.
 type GoogleComputeMachineImageIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleComputeMachineImageIamBinding) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_machine_image_iam_binding google_compute_machine_image_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_machine_image_iam_binding google_compute_machine_image_iam_binding} Resource.
 func NewGoogleComputeMachineImageIamBinding(scope constructs.Construct, id *string, config *GoogleComputeMachineImageIamBindingConfig) GoogleComputeMachineImageIamBinding {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleComputeMachineImageIamBinding(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_machine_image_iam_binding google_compute_machine_image_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_machine_image_iam_binding google_compute_machine_image_iam_binding} Resource.
 func NewGoogleComputeMachineImageIamBinding_Override(g GoogleComputeMachineImageIamBinding, scope constructs.Construct, id *string, config *GoogleComputeMachineImageIamBindingConfig) {
 	_init_.Initialize()
 

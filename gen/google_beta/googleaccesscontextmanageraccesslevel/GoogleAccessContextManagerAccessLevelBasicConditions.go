@@ -4,7 +4,7 @@ package googleaccesscontextmanageraccesslevel
 type GoogleAccessContextManagerAccessLevelBasicConditions struct {
 	// device_policy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_access_context_manager_access_level#device_policy GoogleAccessContextManagerAccessLevel#device_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_access_level#device_policy GoogleAccessContextManagerAccessLevel#device_policy}
 	DevicePolicy *GoogleAccessContextManagerAccessLevelBasicConditionsDevicePolicy `field:"optional" json:"devicePolicy" yaml:"devicePolicy"`
 	// A list of CIDR block IP subnetwork specification.
 	//
@@ -19,7 +19,7 @@ type GoogleAccessContextManagerAccessLevelBasicConditions struct {
 	// listed subnets in order for this Condition to be true.
 	// If empty, all IP addresses are allowed.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_access_context_manager_access_level#ip_subnetworks GoogleAccessContextManagerAccessLevel#ip_subnetworks}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_access_level#ip_subnetworks GoogleAccessContextManagerAccessLevel#ip_subnetworks}
 	IpSubnetworks *[]*string `field:"optional" json:"ipSubnetworks" yaml:"ipSubnetworks"`
 	// An allowed list of members (users, service accounts). Using groups is not supported yet.
 	//
@@ -29,7 +29,7 @@ type GoogleAccessContextManagerAccessLevelBasicConditions struct {
 	// groups, etc.).
 	// Formats: 'user:{emailid}', 'serviceAccount:{emailid}'
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_access_context_manager_access_level#members GoogleAccessContextManagerAccessLevel#members}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_access_level#members GoogleAccessContextManagerAccessLevel#members}
 	Members *[]*string `field:"optional" json:"members" yaml:"members"`
 	// Whether to negate the Condition.
 	//
@@ -37,11 +37,11 @@ type GoogleAccessContextManagerAccessLevelBasicConditions struct {
 	// a NAND over its non-empty fields, each field must be false for
 	// the Condition overall to be satisfied. Defaults to false.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_access_context_manager_access_level#negate GoogleAccessContextManagerAccessLevel#negate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_access_level#negate GoogleAccessContextManagerAccessLevel#negate}
 	Negate interface{} `field:"optional" json:"negate" yaml:"negate"`
 	// The request must originate from one of the provided countries/regions. Format: A valid ISO 3166-1 alpha-2 code.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_access_context_manager_access_level#regions GoogleAccessContextManagerAccessLevel#regions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_access_level#regions GoogleAccessContextManagerAccessLevel#regions}
 	Regions *[]*string `field:"optional" json:"regions" yaml:"regions"`
 	// A list of other access levels defined in the same Policy, referenced by resource name.
 	//
@@ -50,7 +50,7 @@ type GoogleAccessContextManagerAccessLevelBasicConditions struct {
 	// granted for the Condition to be true.
 	// Format: accessPolicies/{policy_id}/accessLevels/{short_name}
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_access_context_manager_access_level#required_access_levels GoogleAccessContextManagerAccessLevel#required_access_levels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_access_level#required_access_levels GoogleAccessContextManagerAccessLevel#required_access_levels}
 	RequiredAccessLevels *[]*string `field:"optional" json:"requiredAccessLevels" yaml:"requiredAccessLevels"`
 }
 

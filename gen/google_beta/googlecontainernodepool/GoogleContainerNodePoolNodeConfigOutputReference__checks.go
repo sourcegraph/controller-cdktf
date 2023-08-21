@@ -176,6 +176,17 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePutHostMaintenancePolicyParameters(value *GoogleContainerNodePoolNodeConfigHostMaintenancePolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePutKubeletConfigParameters(value *GoogleContainerNodePoolNodeConfigKubeletConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -232,6 +243,17 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePut
 }
 
 func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePutShieldedInstanceConfigParameters(value *GoogleContainerNodePoolNodeConfigShieldedInstanceConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePutSoleTenantConfigParameters(value *GoogleContainerNodePoolNodeConfigSoleTenantConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

@@ -31,6 +31,7 @@ type DataGoogleComputeRegionInstanceTemplateSchedulingOutputReference interface 
 	InstanceTerminationAction() *string
 	InternalValue() *DataGoogleComputeRegionInstanceTemplateScheduling
 	SetInternalValue(val *DataGoogleComputeRegionInstanceTemplateScheduling)
+	LocalSsdRecoveryTimeout() DataGoogleComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList
 	MaintenanceInterval() *string
 	MaxRunDuration() DataGoogleComputeRegionInstanceTemplateSchedulingMaxRunDurationList
 	MinNodeCpus() *float64
@@ -150,6 +151,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingOutputRefere
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingOutputReference) LocalSsdRecoveryTimeout() DataGoogleComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList {
+	var returns DataGoogleComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList
+	_jsii_.Get(
+		j,
+		"localSsdRecoveryTimeout",
 		&returns,
 	)
 	return returns

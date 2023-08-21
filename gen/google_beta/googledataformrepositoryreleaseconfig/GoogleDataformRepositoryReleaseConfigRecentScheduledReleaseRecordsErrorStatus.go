@@ -1,0 +1,6 @@
+package googledataformrepositoryreleaseconfig
+
+
+type GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsErrorStatus struct {
+}
+

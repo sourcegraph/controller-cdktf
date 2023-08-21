@@ -21,11 +21,11 @@ type GoogleHealthcareConsentStoreConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifies the dataset addressed by this request. Must be in the format 'projects/{project}/locations/{location}/datasets/{dataset}'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_healthcare_consent_store#dataset GoogleHealthcareConsentStore#dataset}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_consent_store#dataset GoogleHealthcareConsentStore#dataset}
 	Dataset *string `field:"required" json:"dataset" yaml:"dataset"`
 	// The name of this ConsentStore, for example: "consent1".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_healthcare_consent_store#name GoogleHealthcareConsentStore#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_consent_store#name GoogleHealthcareConsentStore#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Default time to live for consents in this store.
 	//
@@ -33,13 +33,13 @@ type GoogleHealthcareConsentStoreConfig struct {
 	//
 	// A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_healthcare_consent_store#default_consent_ttl GoogleHealthcareConsentStore#default_consent_ttl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_consent_store#default_consent_ttl GoogleHealthcareConsentStore#default_consent_ttl}
 	DefaultConsentTtl *string `field:"optional" json:"defaultConsentTtl" yaml:"defaultConsentTtl"`
 	// If true, [consents.patch] [google.cloud.healthcare.v1.consent.UpdateConsent] creates the consent if it does not already exist.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_healthcare_consent_store#enable_consent_create_on_update GoogleHealthcareConsentStore#enable_consent_create_on_update}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_consent_store#enable_consent_create_on_update GoogleHealthcareConsentStore#enable_consent_create_on_update}
 	EnableConsentCreateOnUpdate interface{} `field:"optional" json:"enableConsentCreateOnUpdate" yaml:"enableConsentCreateOnUpdate"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_healthcare_consent_store#id GoogleHealthcareConsentStore#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_consent_store#id GoogleHealthcareConsentStore#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -57,11 +57,11 @@ type GoogleHealthcareConsentStoreConfig struct {
 	// An object containing a list of "key": value pairs.
 	// Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_healthcare_consent_store#labels GoogleHealthcareConsentStore#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_consent_store#labels GoogleHealthcareConsentStore#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_healthcare_consent_store#timeouts GoogleHealthcareConsentStore#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_consent_store#timeouts GoogleHealthcareConsentStore#timeouts}
 	Timeouts *GoogleHealthcareConsentStoreTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

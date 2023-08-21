@@ -52,6 +52,14 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutBlockingFunctionsParameters(value *GoogleIdentityPlatformConfigBlockingFunctions) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutQuotaParameters(value *GoogleIdentityPlatformConfigQuota) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutTimeoutsParameters(value *GoogleIdentityPlatformConfigTimeouts) error {
 	return nil
 }
@@ -65,6 +73,10 @@ func validateGoogleIdentityPlatformConfig_IsTerraformElementParameters(x interfa
 }
 
 func validateGoogleIdentityPlatformConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) validateSetAuthorizedDomainsParameters(val *[]*string) error {
 	return nil
 }
 
