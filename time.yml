@@ -1,0 +1,11 @@
+name: time
+
+provider:
+  source: registry.terraform.io/hashicorp/time
+  version: "0.9.1"
+
+target:
+  language: go
+  moduleName: github.com/sourcegraph/controller-cdktf/gen
+
+output: gen
