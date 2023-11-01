@@ -13,6 +13,8 @@ type Gkeprivate interface {
 	cdktf.TerraformModule
 	AddClusterFirewallRules() *bool
 	SetAddClusterFirewallRules(val *bool)
+	AdditionalIpRangePods() *[]*string
+	SetAdditionalIpRangePods(val *[]*string)
 	AddMasterWebhookFirewallRules() *bool
 	SetAddMasterWebhookFirewallRules(val *bool)
 	AddShadowFirewallRules() *bool
@@ -56,6 +58,8 @@ type Gkeprivate interface {
 	SetDatapathProvider(val *string)
 	DefaultMaxPodsPerNode() *float64
 	SetDefaultMaxPodsPerNode(val *float64)
+	DeletionProtection() *bool
+	SetDeletionProtection(val *bool)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -77,6 +81,10 @@ type Gkeprivate interface {
 	SetEnableConfidentialNodes(val *bool)
 	EnableCostAllocation() *bool
 	SetEnableCostAllocation(val *bool)
+	EnableFqdnNetworkPolicy() *bool
+	SetEnableFqdnNetworkPolicy(val *bool)
+	EnableGcfs() *bool
+	SetEnableGcfs(val *bool)
 	EnableIdentityService() *bool
 	SetEnableIdentityService(val *bool)
 	EnableIntranodeVisibility() *bool
@@ -256,6 +264,10 @@ type Gkeprivate interface {
 	SetResourceUsageExportDatasetId(val *string)
 	SandboxEnabled() *bool
 	SetSandboxEnabled(val *bool)
+	SecurityPostureMode() *string
+	SetSecurityPostureMode(val *string)
+	SecurityPostureVulnerabilityMode() *string
+	SetSecurityPostureVulnerabilityMode(val *string)
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountName() *string
@@ -326,6 +338,16 @@ func (j *jsiiProxy_Gkeprivate) AddClusterFirewallRules() *bool {
 	_jsii_.Get(
 		j,
 		"addClusterFirewallRules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) AdditionalIpRangePods() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"additionalIpRangePods",
 		&returns,
 	)
 	return returns
@@ -561,6 +583,16 @@ func (j *jsiiProxy_Gkeprivate) DefaultMaxPodsPerNode() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) DeletionProtection() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -656,6 +688,26 @@ func (j *jsiiProxy_Gkeprivate) EnableCostAllocation() *bool {
 	_jsii_.Get(
 		j,
 		"enableCostAllocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) EnableFqdnNetworkPolicy() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"enableFqdnNetworkPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) EnableGcfs() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"enableGcfs",
 		&returns,
 	)
 	return returns
@@ -1671,6 +1723,26 @@ func (j *jsiiProxy_Gkeprivate) SandboxEnabled() *bool {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) SecurityPostureMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityPostureMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) SecurityPostureVulnerabilityMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityPostureVulnerabilityMode",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) ServiceAccount() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1917,6 +1989,14 @@ func (j *jsiiProxy_Gkeprivate)SetAddClusterFirewallRules(val *bool) {
 	)
 }
 
+func (j *jsiiProxy_Gkeprivate)SetAdditionalIpRangePods(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"additionalIpRangePods",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Gkeprivate)SetAddMasterWebhookFirewallRules(val *bool) {
 	_jsii_.Set(
 		j,
@@ -2064,6 +2144,14 @@ func (j *jsiiProxy_Gkeprivate)SetDefaultMaxPodsPerNode(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_Gkeprivate)SetDeletionProtection(val *bool) {
+	_jsii_.Set(
+		j,
+		"deletionProtection",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Gkeprivate)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -2132,6 +2220,22 @@ func (j *jsiiProxy_Gkeprivate)SetEnableCostAllocation(val *bool) {
 	_jsii_.Set(
 		j,
 		"enableCostAllocation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetEnableFqdnNetworkPolicy(val *bool) {
+	_jsii_.Set(
+		j,
+		"enableFqdnNetworkPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetEnableGcfs(val *bool) {
+	_jsii_.Set(
+		j,
+		"enableGcfs",
 		val,
 	)
 }
@@ -2715,6 +2819,22 @@ func (j *jsiiProxy_Gkeprivate)SetSandboxEnabled(val *bool) {
 	_jsii_.Set(
 		j,
 		"sandboxEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetSecurityPostureMode(val *string) {
+	_jsii_.Set(
+		j,
+		"securityPostureMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetSecurityPostureVulnerabilityMode(val *string) {
+	_jsii_.Set(
+		j,
+		"securityPostureVulnerabilityMode",
 		val,
 	)
 }

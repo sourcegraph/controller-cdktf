@@ -27,6 +27,8 @@ type GkeprivateConfig struct {
 	Subnetwork *string `field:"required" json:"subnetwork" yaml:"subnetwork"`
 	// Create additional firewall rules.
 	AddClusterFirewallRules *bool `field:"optional" json:"addClusterFirewallRules" yaml:"addClusterFirewallRules"`
+	// List of _names_ of the additional secondary subnet ip ranges to use for pods.
+	AdditionalIpRangePods *[]*string `field:"optional" json:"additionalIpRangePods" yaml:"additionalIpRangePods"`
 	// Create master_webhook firewall rules for ports defined in `firewall_inbound_ports`.
 	AddMasterWebhookFirewallRules *bool `field:"optional" json:"addMasterWebhookFirewallRules" yaml:"addMasterWebhookFirewallRules"`
 	// Create GKE shadow firewall (the same as default firewall rules with firewall logs enabled).
@@ -98,6 +100,10 @@ type GkeprivateConfig struct {
 	// Default: 110.
 	//
 	DefaultMaxPodsPerNode *float64 `field:"optional" json:"defaultMaxPodsPerNode" yaml:"defaultMaxPodsPerNode"`
+	// Whether or not to allow Terraform to destroy the cluster.
+	// Default: true.
+	//
+	DeletionProtection *bool `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// (Beta) A toggle for Terraform and kubectl to connect to the master's internal IP address during deployment.
 	DeployUsingPrivateEndpoint *bool `field:"optional" json:"deployUsingPrivateEndpoint" yaml:"deployUsingPrivateEndpoint"`
 	// The description of the cluster.
@@ -116,6 +122,10 @@ type GkeprivateConfig struct {
 	EnableConfidentialNodes *bool `field:"optional" json:"enableConfidentialNodes" yaml:"enableConfidentialNodes"`
 	// Enables Cost Allocation Feature and the cluster name and namespace of your GKE workloads appear in the labels field of the billing export to BigQuery.
 	EnableCostAllocation *bool `field:"optional" json:"enableCostAllocation" yaml:"enableCostAllocation"`
+	// Enable FQDN Network Policies on the cluster.
+	EnableFqdnNetworkPolicy *bool `field:"optional" json:"enableFqdnNetworkPolicy" yaml:"enableFqdnNetworkPolicy"`
+	// Enable image streaming on cluster level.
+	EnableGcfs *bool `field:"optional" json:"enableGcfs" yaml:"enableGcfs"`
 	// Enable the Identity Service component, which allows customers to use external identity providers with the K8S API.
 	EnableIdentityService *bool `field:"optional" json:"enableIdentityService" yaml:"enableIdentityService"`
 	// Whether Intra-node visibility is enabled for this cluster.
@@ -356,6 +366,18 @@ type GkeprivateConfig struct {
 	ResourceUsageExportDatasetId *string `field:"optional" json:"resourceUsageExportDatasetId" yaml:"resourceUsageExportDatasetId"`
 	// (Beta) Enable GKE Sandbox (Do not forget to set `image_type` = `COS_CONTAINERD` to use it).
 	SandboxEnabled *bool `field:"optional" json:"sandboxEnabled" yaml:"sandboxEnabled"`
+	// Security posture mode.
+	//
+	// Accepted values are `DISABLED` and `BASIC`. Defaults to `DISABLED`.
+	// Default: DISABLED.
+	//
+	SecurityPostureMode *string `field:"optional" json:"securityPostureMode" yaml:"securityPostureMode"`
+	// Security posture vulnerability mode.
+	//
+	// Accepted values are `VULNERABILITY_DISABLED` and `VULNERABILITY_BASIC`. Defaults to `VULNERABILITY_DISABLED`.
+	// Default: VULNERABILITY_DISABLED.
+	//
+	SecurityPostureVulnerabilityMode *string `field:"optional" json:"securityPostureVulnerabilityMode" yaml:"securityPostureVulnerabilityMode"`
 	// The service account to run nodes as if not overridden in `node_pools`.
 	//
 	// The create_service_account variable default value (true) will cause a cluster-specific service account to be created. This service account should already exists and it will be used by the node pools. If you wish to only override the service account name, you can use service_account_name variable.
@@ -394,7 +416,7 @@ type GkeprivateConfig struct {
 	// Default: The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
 	//
 	WindowsNodePools *[]*map[string]*string `field:"optional" json:"windowsNodePools" yaml:"windowsNodePools"`
-	// (beta) Worload config audit mode.
+	// (beta) Workload config audit mode.
 	// Default: DISABLED.
 	//
 	WorkloadConfigAuditMode *string `field:"optional" json:"workloadConfigAuditMode" yaml:"workloadConfigAuditMode"`

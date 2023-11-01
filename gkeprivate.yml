@@ -1,8 +1,7 @@
 name: gkeprivate
 
 module:
-  source: terraform-google-modules/kubernetes-engine/google//modules/beta-private-cluster
-  version: "28.0.0"
+  source: git::https://github.com/terraform-google-modules/terraform-google-kubernetes-engine.git//modules/beta-private-cluster?ref=455a93c5c8d7421355fde613b86593dc3a41ae68
 
 target:
   language: go
