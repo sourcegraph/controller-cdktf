@@ -30,6 +30,7 @@ type GoogleGkeonpremVmwareClusterControlPlaneNodeVsphereConfigOutputReference in
 	Fqn() *string
 	InternalValue() *GoogleGkeonpremVmwareClusterControlPlaneNodeVsphereConfig
 	SetInternalValue(val *GoogleGkeonpremVmwareClusterControlPlaneNodeVsphereConfig)
+	StoragePolicyName() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -132,6 +133,16 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterControlPlaneNodeVsphereConfigOutp
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterControlPlaneNodeVsphereConfigOutputReference) StoragePolicyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storagePolicyName",
 		&returns,
 	)
 	return returns

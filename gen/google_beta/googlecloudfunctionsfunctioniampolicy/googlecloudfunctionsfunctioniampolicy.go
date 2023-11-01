@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudfunctionsfunctioniampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy}.
 type GoogleCloudfunctionsFunctionIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunctionIamPolicy) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy} Resource.
 func NewGoogleCloudfunctionsFunctionIamPolicy(scope constructs.Construct, id *string, config *GoogleCloudfunctionsFunctionIamPolicyConfig) GoogleCloudfunctionsFunctionIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewGoogleCloudfunctionsFunctionIamPolicy(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy} Resource.
 func NewGoogleCloudfunctionsFunctionIamPolicy_Override(g GoogleCloudfunctionsFunctionIamPolicy, scope constructs.Construct, id *string, config *GoogleCloudfunctionsFunctionIamPolicyConfig) {
 	_init_.Initialize()
 

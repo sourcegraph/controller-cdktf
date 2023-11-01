@@ -38,6 +38,7 @@ type DataGoogleComposerEnvironmentConfigWorkloadsConfigOutputReference interface
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Triggerer() DataGoogleComposerEnvironmentConfigWorkloadsConfigTriggererList
 	WebServer() DataGoogleComposerEnvironmentConfigWorkloadsConfigWebServerList
 	Worker() DataGoogleComposerEnvironmentConfigWorkloadsConfigWorkerList
 	// Experimental.
@@ -154,6 +155,16 @@ func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigOutputRefer
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigOutputReference) Triggerer() DataGoogleComposerEnvironmentConfigWorkloadsConfigTriggererList {
+	var returns DataGoogleComposerEnvironmentConfigWorkloadsConfigTriggererList
+	_jsii_.Get(
+		j,
+		"triggerer",
 		&returns,
 	)
 	return returns

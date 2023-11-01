@@ -12,7 +12,7 @@ type GoogleAccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromS
 	// Example 'accessPolicies/MY_POLICY/accessLevels/MY_LEVEL.'
 	// If * is specified, then all IngressSources will be allowed.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_service_perimeter#access_level GoogleAccessContextManagerServicePerimeter#access_level}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_access_context_manager_service_perimeter#access_level GoogleAccessContextManagerServicePerimeter#access_level}
 	AccessLevel *string `field:"optional" json:"accessLevel" yaml:"accessLevel"`
 	// A Google Cloud resource that is allowed to ingress the perimeter.
 	//
@@ -22,7 +22,7 @@ type GoogleAccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromS
 	// organization that the perimeter is defined in. '*' is not allowed, the case
 	// of allowing all Google Cloud resources only is not supported.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_service_perimeter#resource GoogleAccessContextManagerServicePerimeter#resource}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_access_context_manager_service_perimeter#resource GoogleAccessContextManagerServicePerimeter#resource}
 	Resource *string `field:"optional" json:"resource" yaml:"resource"`
 }
 

@@ -232,6 +232,17 @@ func (c *jsiiProxy_ContainerCluster) validatePutGatewayApiConfigParameters(value
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutIdentityServiceConfigParameters(value *ContainerClusterIdentityServiceConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutIpAllocationPolicyParameters(value *ContainerClusterIpAllocationPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -357,6 +368,17 @@ func (c *jsiiProxy_ContainerCluster) validatePutNodePoolParameters(value interfa
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ContainerClusterNodePool; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ContainerCluster) validatePutNodePoolAutoConfigParameters(value *ContainerClusterNodePoolAutoConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -630,15 +652,7 @@ func (j *jsiiProxy_ContainerCluster) validateSetDefaultMaxPodsPerNodeParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ContainerCluster) validateSetDescriptionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ContainerCluster) validateSetEnableAutopilotParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerCluster) validateSetDeletionProtectionParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -658,7 +672,15 @@ func (j *jsiiProxy_ContainerCluster) validateSetEnableAutopilotParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_ContainerCluster) validateSetEnableBinaryAuthorizationParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerCluster) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerCluster) validateSetEnableAutopilotParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

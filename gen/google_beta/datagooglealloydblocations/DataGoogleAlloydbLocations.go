@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglealloydblocations/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_alloydb_locations google_alloydb_locations}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/data-sources/google_alloydb_locations google_alloydb_locations}.
 type DataGoogleAlloydbLocations interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DataGoogleAlloydbLocations) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_alloydb_locations google_alloydb_locations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/data-sources/google_alloydb_locations google_alloydb_locations} Data Source.
 func NewDataGoogleAlloydbLocations(scope constructs.Construct, id *string, config *DataGoogleAlloydbLocationsConfig) DataGoogleAlloydbLocations {
 	_init_.Initialize()
 
@@ -311,7 +311,7 @@ func NewDataGoogleAlloydbLocations(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_alloydb_locations google_alloydb_locations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/data-sources/google_alloydb_locations google_alloydb_locations} Data Source.
 func NewDataGoogleAlloydbLocations_Override(d DataGoogleAlloydbLocations, scope constructs.Construct, id *string, config *DataGoogleAlloydbLocationsConfig) {
 	_init_.Initialize()
 

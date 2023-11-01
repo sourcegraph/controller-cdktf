@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecontainerawsnodepool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_container_aws_node_pool google_container_aws_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_aws_node_pool google_container_aws_node_pool}.
 type GoogleContainerAwsNodePool interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -39,6 +39,7 @@ type GoogleContainerAwsNodePool interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveAnnotations() cdktf.StringMap
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -58,6 +59,8 @@ type GoogleContainerAwsNodePool interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	Management() GoogleContainerAwsNodePoolManagementOutputReference
+	ManagementInput() *GoogleContainerAwsNodePoolManagement
 	MaxPodsConstraint() GoogleContainerAwsNodePoolMaxPodsConstraintOutputReference
 	MaxPodsConstraintInput() *GoogleContainerAwsNodePoolMaxPodsConstraint
 	Name() *string
@@ -92,6 +95,8 @@ type GoogleContainerAwsNodePool interface {
 	Timeouts() GoogleContainerAwsNodePoolTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	Uid() *string
+	UpdateSettings() GoogleContainerAwsNodePoolUpdateSettingsOutputReference
+	UpdateSettingsInput() *GoogleContainerAwsNodePoolUpdateSettings
 	UpdateTime() *string
 	Version() *string
 	SetVersion(val *string)
@@ -123,15 +128,19 @@ type GoogleContainerAwsNodePool interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoscaling(value *GoogleContainerAwsNodePoolAutoscaling)
 	PutConfig(value *GoogleContainerAwsNodePoolConfigA)
+	PutManagement(value *GoogleContainerAwsNodePoolManagement)
 	PutMaxPodsConstraint(value *GoogleContainerAwsNodePoolMaxPodsConstraint)
 	PutTimeouts(value *GoogleContainerAwsNodePoolTimeouts)
+	PutUpdateSettings(value *GoogleContainerAwsNodePoolUpdateSettings)
 	ResetAnnotations()
 	ResetId()
+	ResetManagement()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
+	ResetUpdateSettings()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -287,6 +296,16 @@ func (j *jsiiProxy_GoogleContainerAwsNodePool) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerAwsNodePool) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerAwsNodePool) Etag() *string {
 	var returns *string
 	_jsii_.Get(
@@ -372,6 +391,26 @@ func (j *jsiiProxy_GoogleContainerAwsNodePool) LocationInput() *string {
 	_jsii_.Get(
 		j,
 		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAwsNodePool) Management() GoogleContainerAwsNodePoolManagementOutputReference {
+	var returns GoogleContainerAwsNodePoolManagementOutputReference
+	_jsii_.Get(
+		j,
+		"management",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAwsNodePool) ManagementInput() *GoogleContainerAwsNodePoolManagement {
+	var returns *GoogleContainerAwsNodePoolManagement
+	_jsii_.Get(
+		j,
+		"managementInput",
 		&returns,
 	)
 	return returns
@@ -577,6 +616,26 @@ func (j *jsiiProxy_GoogleContainerAwsNodePool) Uid() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerAwsNodePool) UpdateSettings() GoogleContainerAwsNodePoolUpdateSettingsOutputReference {
+	var returns GoogleContainerAwsNodePoolUpdateSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"updateSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAwsNodePool) UpdateSettingsInput() *GoogleContainerAwsNodePoolUpdateSettings {
+	var returns *GoogleContainerAwsNodePoolUpdateSettings
+	_jsii_.Get(
+		j,
+		"updateSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerAwsNodePool) UpdateTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -608,7 +667,7 @@ func (j *jsiiProxy_GoogleContainerAwsNodePool) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_container_aws_node_pool google_container_aws_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_aws_node_pool google_container_aws_node_pool} Resource.
 func NewGoogleContainerAwsNodePool(scope constructs.Construct, id *string, config *GoogleContainerAwsNodePoolConfig) GoogleContainerAwsNodePool {
 	_init_.Initialize()
 
@@ -626,7 +685,7 @@ func NewGoogleContainerAwsNodePool(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_container_aws_node_pool google_container_aws_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_aws_node_pool google_container_aws_node_pool} Resource.
 func NewGoogleContainerAwsNodePool_Override(g GoogleContainerAwsNodePool, scope constructs.Construct, id *string, config *GoogleContainerAwsNodePoolConfig) {
 	_init_.Initialize()
 
@@ -1081,6 +1140,17 @@ func (g *jsiiProxy_GoogleContainerAwsNodePool) PutConfig(value *GoogleContainerA
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerAwsNodePool) PutManagement(value *GoogleContainerAwsNodePoolManagement) {
+	if err := g.validatePutManagementParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putManagement",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerAwsNodePool) PutMaxPodsConstraint(value *GoogleContainerAwsNodePoolMaxPodsConstraint) {
 	if err := g.validatePutMaxPodsConstraintParameters(value); err != nil {
 		panic(err)
@@ -1103,6 +1173,17 @@ func (g *jsiiProxy_GoogleContainerAwsNodePool) PutTimeouts(value *GoogleContaine
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerAwsNodePool) PutUpdateSettings(value *GoogleContainerAwsNodePoolUpdateSettings) {
+	if err := g.validatePutUpdateSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putUpdateSettings",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerAwsNodePool) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1115,6 +1196,14 @@ func (g *jsiiProxy_GoogleContainerAwsNodePool) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerAwsNodePool) ResetManagement() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetManagement",
 		nil, // no parameters
 	)
 }
@@ -1139,6 +1228,14 @@ func (g *jsiiProxy_GoogleContainerAwsNodePool) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerAwsNodePool) ResetUpdateSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUpdateSettings",
 		nil, // no parameters
 	)
 }

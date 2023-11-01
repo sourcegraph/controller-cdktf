@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlekmskeyringiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_kms_key_ring_iam_binding google_kms_key_ring_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_kms_key_ring_iam_binding google_kms_key_ring_iam_binding}.
 type GoogleKmsKeyRingIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_GoogleKmsKeyRingIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_kms_key_ring_iam_binding google_kms_key_ring_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_kms_key_ring_iam_binding google_kms_key_ring_iam_binding} Resource.
 func NewGoogleKmsKeyRingIamBinding(scope constructs.Construct, id *string, config *GoogleKmsKeyRingIamBindingConfig) GoogleKmsKeyRingIamBinding {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewGoogleKmsKeyRingIamBinding(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_kms_key_ring_iam_binding google_kms_key_ring_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_kms_key_ring_iam_binding google_kms_key_ring_iam_binding} Resource.
 func NewGoogleKmsKeyRingIamBinding_Override(g GoogleKmsKeyRingIamBinding, scope constructs.Construct, id *string, config *GoogleKmsKeyRingIamBindingConfig) {
 	_init_.Initialize()
 

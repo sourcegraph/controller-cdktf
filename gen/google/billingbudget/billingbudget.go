@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/billingbudget/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/billing_budget google_billing_budget}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/billing_budget google_billing_budget}.
 type BillingBudget interface {
 	cdktf.TerraformResource
 	AllUpdatesRule() BillingBudgetAllUpdatesRuleOutputReference
@@ -463,7 +463,7 @@ func (j *jsiiProxy_BillingBudget) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/billing_budget google_billing_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/billing_budget google_billing_budget} Resource.
 func NewBillingBudget(scope constructs.Construct, id *string, config *BillingBudgetConfig) BillingBudget {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewBillingBudget(scope constructs.Construct, id *string, config *BillingBud
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/billing_budget google_billing_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/billing_budget google_billing_budget} Resource.
 func NewBillingBudget_Override(b BillingBudget, scope constructs.Construct, id *string, config *BillingBudgetConfig) {
 	_init_.Initialize()
 

@@ -35,6 +35,8 @@ type GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleCloudRunV2ServiceTemplateVpcAccess
 	SetInternalValue(val *GoogleCloudRunV2ServiceTemplateVpcAccess)
+	NetworkInterfaces() GoogleCloudRunV2ServiceTemplateVpcAccessNetworkInterfacesList
+	NetworkInterfacesInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,8 +69,10 @@ type GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutNetworkInterfaces(value interface{})
 	ResetConnector()
 	ResetEgress()
+	ResetNetworkInterfaces()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -169,6 +173,26 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference) NetworkInterfaces() GoogleCloudRunV2ServiceTemplateVpcAccessNetworkInterfacesList {
+	var returns GoogleCloudRunV2ServiceTemplateVpcAccessNetworkInterfacesList
+	_jsii_.Get(
+		j,
+		"networkInterfaces",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference) NetworkInterfacesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"networkInterfacesInput",
 		&returns,
 	)
 	return returns
@@ -485,6 +509,17 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference) Inte
 	return returns
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference) PutNetworkInterfaces(value interface{}) {
+	if err := g.validatePutNetworkInterfacesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNetworkInterfaces",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference) ResetConnector() {
 	_jsii_.InvokeVoid(
 		g,
@@ -497,6 +532,14 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetEgress",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference) ResetNetworkInterfaces() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkInterfaces",
 		nil, // no parameters
 	)
 }

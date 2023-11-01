@@ -1,0 +1,6 @@
+package googledatabasemigrationserviceconnectionprofile
+
+
+type GoogleDatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivity struct {
+}
+

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/beyondcorpappconnection/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/beyondcorp_app_connection google_beyondcorp_app_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/beyondcorp_app_connection google_beyondcorp_app_connection}.
 type BeyondcorpAppConnection interface {
 	cdktf.TerraformResource
 	ApplicationEndpoint() BeyondcorpAppConnectionApplicationEndpointOutputReference
@@ -36,6 +36,7 @@ type BeyondcorpAppConnection interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -79,6 +80,7 @@ type BeyondcorpAppConnection interface {
 	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -248,6 +250,16 @@ func (j *jsiiProxy_BeyondcorpAppConnection) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BeyondcorpAppConnection) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -463,6 +475,16 @@ func (j *jsiiProxy_BeyondcorpAppConnection) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
+func (j *jsiiProxy_BeyondcorpAppConnection) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BeyondcorpAppConnection) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -524,7 +546,7 @@ func (j *jsiiProxy_BeyondcorpAppConnection) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/beyondcorp_app_connection google_beyondcorp_app_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/beyondcorp_app_connection google_beyondcorp_app_connection} Resource.
 func NewBeyondcorpAppConnection(scope constructs.Construct, id *string, config *BeyondcorpAppConnectionConfig) BeyondcorpAppConnection {
 	_init_.Initialize()
 
@@ -542,7 +564,7 @@ func NewBeyondcorpAppConnection(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/beyondcorp_app_connection google_beyondcorp_app_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/beyondcorp_app_connection google_beyondcorp_app_connection} Resource.
 func NewBeyondcorpAppConnection_Override(b BeyondcorpAppConnection, scope constructs.Construct, id *string, config *BeyondcorpAppConnectionConfig) {
 	_init_.Initialize()
 

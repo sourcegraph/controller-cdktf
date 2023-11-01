@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleloggingprojectsink/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_project_sink google_logging_project_sink}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_logging_project_sink google_logging_project_sink}.
 type GoogleLoggingProjectSink interface {
 	cdktf.TerraformResource
 	BigqueryOptions() GoogleLoggingProjectSinkBigqueryOptionsOutputReference
@@ -26,6 +26,9 @@ type GoogleLoggingProjectSink interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomWriterIdentity() *string
+	SetCustomWriterIdentity(val *string)
+	CustomWriterIdentityInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -115,6 +118,7 @@ type GoogleLoggingProjectSink interface {
 	PutBigqueryOptions(value *GoogleLoggingProjectSinkBigqueryOptions)
 	PutExclusions(value interface{})
 	ResetBigqueryOptions()
+	ResetCustomWriterIdentity()
 	ResetDescription()
 	ResetDisabled()
 	ResetExclusions()
@@ -195,6 +199,26 @@ func (j *jsiiProxy_GoogleLoggingProjectSink) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLoggingProjectSink) CustomWriterIdentity() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customWriterIdentity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLoggingProjectSink) CustomWriterIdentityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customWriterIdentityInput",
 		&returns,
 	)
 	return returns
@@ -511,7 +535,7 @@ func (j *jsiiProxy_GoogleLoggingProjectSink) WriterIdentity() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_project_sink google_logging_project_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_logging_project_sink google_logging_project_sink} Resource.
 func NewGoogleLoggingProjectSink(scope constructs.Construct, id *string, config *GoogleLoggingProjectSinkConfig) GoogleLoggingProjectSink {
 	_init_.Initialize()
 
@@ -529,7 +553,7 @@ func NewGoogleLoggingProjectSink(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_project_sink google_logging_project_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_logging_project_sink google_logging_project_sink} Resource.
 func NewGoogleLoggingProjectSink_Override(g GoogleLoggingProjectSink, scope constructs.Construct, id *string, config *GoogleLoggingProjectSinkConfig) {
 	_init_.Initialize()
 
@@ -558,6 +582,17 @@ func (j *jsiiProxy_GoogleLoggingProjectSink)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleLoggingProjectSink)SetCustomWriterIdentity(val *string) {
+	if err := j.validateSetCustomWriterIdentityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customWriterIdentity",
 		val,
 	)
 }
@@ -988,6 +1023,14 @@ func (g *jsiiProxy_GoogleLoggingProjectSink) ResetBigqueryOptions() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetBigqueryOptions",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleLoggingProjectSink) ResetCustomWriterIdentity() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomWriterIdentity",
 		nil, // no parameters
 	)
 }

@@ -68,6 +68,10 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validatePutResourceGroupPa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validatePutSyntheticMonitorParameters(value *GoogleMonitoringUptimeCheckConfigSyntheticMonitor) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validatePutTcpCheckParameters(value *GoogleMonitoringUptimeCheckConfigTcpCheck) error {
 	return nil
 }

@@ -108,6 +108,10 @@ func (j *jsiiProxy_GoogleVertexAiIndexEndpoint) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleVertexAiIndexEndpoint) validateSetPublicEndpointEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleVertexAiIndexEndpoint) validateSetRegionParameters(val *string) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeregioninstancegroupmanager/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager}.
 type ComputeRegionInstanceGroupManager interface {
 	cdktf.TerraformResource
 	AutoHealingPolicies() ComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference
@@ -90,6 +90,10 @@ type ComputeRegionInstanceGroupManager interface {
 	SelfLink() *string
 	StatefulDisk() ComputeRegionInstanceGroupManagerStatefulDiskList
 	StatefulDiskInput() interface{}
+	StatefulExternalIp() ComputeRegionInstanceGroupManagerStatefulExternalIpList
+	StatefulExternalIpInput() interface{}
+	StatefulInternalIp() ComputeRegionInstanceGroupManagerStatefulInternalIpList
+	StatefulInternalIpInput() interface{}
 	Status() ComputeRegionInstanceGroupManagerStatusList
 	TargetPools() *[]*string
 	SetTargetPools(val *[]*string)
@@ -144,6 +148,8 @@ type ComputeRegionInstanceGroupManager interface {
 	PutInstanceLifecyclePolicy(value *ComputeRegionInstanceGroupManagerInstanceLifecyclePolicy)
 	PutNamedPort(value interface{})
 	PutStatefulDisk(value interface{})
+	PutStatefulExternalIp(value interface{})
+	PutStatefulInternalIp(value interface{})
 	PutTimeouts(value *ComputeRegionInstanceGroupManagerTimeouts)
 	PutUpdatePolicy(value *ComputeRegionInstanceGroupManagerUpdatePolicy)
 	PutVersion(value interface{})
@@ -161,6 +167,8 @@ type ComputeRegionInstanceGroupManager interface {
 	ResetProject()
 	ResetRegion()
 	ResetStatefulDisk()
+	ResetStatefulExternalIp()
+	ResetStatefulInternalIp()
 	ResetTargetPools()
 	ResetTargetSize()
 	ResetTimeouts()
@@ -602,6 +610,46 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManager) StatefulDiskInput() interf
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) StatefulExternalIp() ComputeRegionInstanceGroupManagerStatefulExternalIpList {
+	var returns ComputeRegionInstanceGroupManagerStatefulExternalIpList
+	_jsii_.Get(
+		j,
+		"statefulExternalIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) StatefulExternalIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"statefulExternalIpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) StatefulInternalIp() ComputeRegionInstanceGroupManagerStatefulInternalIpList {
+	var returns ComputeRegionInstanceGroupManagerStatefulInternalIpList
+	_jsii_.Get(
+		j,
+		"statefulInternalIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) StatefulInternalIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"statefulInternalIpInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRegionInstanceGroupManager) Status() ComputeRegionInstanceGroupManagerStatusList {
 	var returns ComputeRegionInstanceGroupManagerStatusList
 	_jsii_.Get(
@@ -783,7 +831,7 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManager) WaitForInstancesStatusInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
 func NewComputeRegionInstanceGroupManager(scope constructs.Construct, id *string, config *ComputeRegionInstanceGroupManagerConfig) ComputeRegionInstanceGroupManager {
 	_init_.Initialize()
 
@@ -801,7 +849,7 @@ func NewComputeRegionInstanceGroupManager(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
 func NewComputeRegionInstanceGroupManager_Override(c ComputeRegionInstanceGroupManager, scope constructs.Construct, id *string, config *ComputeRegionInstanceGroupManagerConfig) {
 	_init_.Initialize()
 
@@ -1333,6 +1381,28 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) PutStatefulDisk(value inte
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) PutStatefulExternalIp(value interface{}) {
+	if err := c.validatePutStatefulExternalIpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putStatefulExternalIp",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) PutStatefulInternalIp(value interface{}) {
+	if err := c.validatePutStatefulInternalIpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putStatefulInternalIp",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionInstanceGroupManager) PutTimeouts(value *ComputeRegionInstanceGroupManagerTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1458,6 +1528,22 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) ResetStatefulDisk() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetStatefulDisk",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) ResetStatefulExternalIp() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStatefulExternalIp",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) ResetStatefulInternalIp() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStatefulInternalIp",
 		nil, // no parameters
 	)
 }

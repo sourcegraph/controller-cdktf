@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computerouternat/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_router_nat google_compute_router_nat}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/compute_router_nat google_compute_router_nat}.
 type ComputeRouterNat interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -157,6 +157,7 @@ type ComputeRouterNat interface {
 	ResetLogConfig()
 	ResetMaxPortsPerVm()
 	ResetMinPortsPerVm()
+	ResetNatIpAllocateOption()
 	ResetNatIps()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -786,7 +787,7 @@ func (j *jsiiProxy_ComputeRouterNat) UdpIdleTimeoutSecInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_router_nat google_compute_router_nat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/compute_router_nat google_compute_router_nat} Resource.
 func NewComputeRouterNat(scope constructs.Construct, id *string, config *ComputeRouterNatConfig) ComputeRouterNat {
 	_init_.Initialize()
 
@@ -804,7 +805,7 @@ func NewComputeRouterNat(scope constructs.Construct, id *string, config *Compute
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_router_nat google_compute_router_nat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/compute_router_nat google_compute_router_nat} Resource.
 func NewComputeRouterNat_Override(c ComputeRouterNat, scope constructs.Construct, id *string, config *ComputeRouterNatConfig) {
 	_init_.Initialize()
 
@@ -1451,6 +1452,14 @@ func (c *jsiiProxy_ComputeRouterNat) ResetMinPortsPerVm() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetMinPortsPerVm",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterNat) ResetNatIpAllocateOption() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNatIpAllocateOption",
 		nil, // no parameters
 	)
 }

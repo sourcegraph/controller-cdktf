@@ -19,9 +19,9 @@ type DataGoogleTagsTagKeyConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_tags_tag_key#parent DataGoogleTagsTagKey#parent}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/data-sources/google_tags_tag_key#parent DataGoogleTagsTagKey#parent}.
 	Parent *string `field:"required" json:"parent" yaml:"parent"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_tags_tag_key#short_name DataGoogleTagsTagKey#short_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/data-sources/google_tags_tag_key#short_name DataGoogleTagsTagKey#short_name}.
 	ShortName *string `field:"required" json:"shortName" yaml:"shortName"`
 }
 

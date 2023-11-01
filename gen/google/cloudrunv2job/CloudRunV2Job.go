@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/cloudrunv2job/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job}.
 type CloudRunV2Job interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -43,6 +43,8 @@ type CloudRunV2Job interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveAnnotations() cdktf.StringMap
+	EffectiveLabels() cdktf.StringMap
 	Etag() *string
 	ExecutionCount() *float64
 	ExpireTime() *string
@@ -98,6 +100,7 @@ type CloudRunV2Job interface {
 	TerminalCondition() CloudRunV2JobTerminalConditionList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -141,7 +144,6 @@ type CloudRunV2Job interface {
 	ResetId()
 	ResetLabels()
 	ResetLaunchStage()
-	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -327,6 +329,26 @@ func (j *jsiiProxy_CloudRunV2Job) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Job) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Job) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -652,6 +674,16 @@ func (j *jsiiProxy_CloudRunV2Job) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2Job) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudRunV2Job) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -713,7 +745,7 @@ func (j *jsiiProxy_CloudRunV2Job) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job} Resource.
 func NewCloudRunV2Job(scope constructs.Construct, id *string, config *CloudRunV2JobConfig) CloudRunV2Job {
 	_init_.Initialize()
 
@@ -731,7 +763,7 @@ func NewCloudRunV2Job(scope constructs.Construct, id *string, config *CloudRunV2
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job} Resource.
 func NewCloudRunV2Job_Override(c CloudRunV2Job, scope constructs.Construct, id *string, config *CloudRunV2JobConfig) {
 	_init_.Initialize()
 
@@ -1260,14 +1292,6 @@ func (c *jsiiProxy_CloudRunV2Job) ResetLaunchStage() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetLaunchStage",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CloudRunV2Job) ResetLocation() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetLocation",
 		nil, // no parameters
 	)
 }

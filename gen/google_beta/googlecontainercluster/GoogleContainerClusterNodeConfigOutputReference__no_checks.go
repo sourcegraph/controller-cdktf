@@ -48,11 +48,19 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutConfidentialNodesParameters(value *GoogleContainerClusterNodeConfigConfidentialNodes) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutEphemeralStorageConfigParameters(value *GoogleContainerClusterNodeConfigEphemeralStorageConfig) error {
 	return nil
 }
 
 func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutEphemeralStorageLocalSsdConfigParameters(value *GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutFastSocketParameters(value *GoogleContainerClusterNodeConfigFastSocket) error {
 	return nil
 }
 
@@ -129,6 +137,10 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetD
 }
 
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetDiskTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetEnableConfidentialStorageParameters(val interface{}) error {
 	return nil
 }
 

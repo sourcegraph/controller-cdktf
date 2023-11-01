@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/vertexaiindexendpoint/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint}.
 type VertexAiIndexEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -35,6 +35,7 @@ type VertexAiIndexEndpoint interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -71,6 +72,10 @@ type VertexAiIndexEndpoint interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicEndpointDomainName() *string
+	PublicEndpointEnabled() interface{}
+	SetPublicEndpointEnabled(val interface{})
+	PublicEndpointEnabledInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	Region() *string
@@ -78,6 +83,7 @@ type VertexAiIndexEndpoint interface {
 	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -119,6 +125,7 @@ type VertexAiIndexEndpoint interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetPublicEndpointEnabled()
 	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -231,6 +238,16 @@ func (j *jsiiProxy_VertexAiIndexEndpoint) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiIndexEndpoint) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -406,6 +423,36 @@ func (j *jsiiProxy_VertexAiIndexEndpoint) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VertexAiIndexEndpoint) PublicEndpointDomainName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicEndpointDomainName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiIndexEndpoint) PublicEndpointEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicEndpointEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiIndexEndpoint) PublicEndpointEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicEndpointEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VertexAiIndexEndpoint) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -441,6 +488,16 @@ func (j *jsiiProxy_VertexAiIndexEndpoint) TerraformGeneratorMetadata() *cdktf.Te
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiIndexEndpoint) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
 		&returns,
 	)
 	return returns
@@ -497,7 +554,7 @@ func (j *jsiiProxy_VertexAiIndexEndpoint) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint} Resource.
 func NewVertexAiIndexEndpoint(scope constructs.Construct, id *string, config *VertexAiIndexEndpointConfig) VertexAiIndexEndpoint {
 	_init_.Initialize()
 
@@ -515,7 +572,7 @@ func NewVertexAiIndexEndpoint(scope constructs.Construct, id *string, config *Ve
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint} Resource.
 func NewVertexAiIndexEndpoint_Override(v VertexAiIndexEndpoint, scope constructs.Construct, id *string, config *VertexAiIndexEndpointConfig) {
 	_init_.Initialize()
 
@@ -656,6 +713,17 @@ func (j *jsiiProxy_VertexAiIndexEndpoint)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VertexAiIndexEndpoint)SetPublicEndpointEnabled(val interface{}) {
+	if err := j.validateSetPublicEndpointEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicEndpointEnabled",
 		val,
 	)
 }
@@ -992,6 +1060,14 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) ResetProject() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VertexAiIndexEndpoint) ResetPublicEndpointEnabled() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPublicEndpointEnabled",
 		nil, // no parameters
 	)
 }

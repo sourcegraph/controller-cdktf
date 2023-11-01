@@ -60,6 +60,10 @@ func (g *jsiiProxy_GoogleContainerAzureNodePool) validatePutConfigParameters(val
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAzureNodePool) validatePutManagementParameters(value *GoogleContainerAzureNodePoolManagement) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAzureNodePool) validatePutMaxPodsConstraintParameters(value *GoogleContainerAzureNodePoolMaxPodsConstraint) error {
 	return nil
 }

@@ -96,6 +96,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutGatewayApiConfigParameters(value
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutIdentityServiceConfigParameters(value *ContainerClusterIdentityServiceConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutIpAllocationPolicyParameters(value *ContainerClusterIpAllocationPolicy) error {
 	return nil
 }
@@ -133,6 +137,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutNodeConfigParameters(value *Cont
 }
 
 func (c *jsiiProxy_ContainerCluster) validatePutNodePoolParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerCluster) validatePutNodePoolAutoConfigParameters(value *ContainerClusterNodePoolAutoConfig) error {
 	return nil
 }
 
@@ -212,15 +220,15 @@ func (j *jsiiProxy_ContainerCluster) validateSetDefaultMaxPodsPerNodeParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ContainerCluster) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerCluster) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_ContainerCluster) validateSetEnableAutopilotParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ContainerCluster) validateSetEnableBinaryAuthorizationParameters(val interface{}) error {
 	return nil
 }
 

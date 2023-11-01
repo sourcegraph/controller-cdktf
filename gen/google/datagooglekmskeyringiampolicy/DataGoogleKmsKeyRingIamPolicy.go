@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglekmskeyringiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/kms_key_ring_iam_policy google_kms_key_ring_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/data-sources/kms_key_ring_iam_policy google_kms_key_ring_iam_policy}.
 type DataGoogleKmsKeyRingIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -303,7 +303,7 @@ func (j *jsiiProxy_DataGoogleKmsKeyRingIamPolicy) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/kms_key_ring_iam_policy google_kms_key_ring_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/data-sources/kms_key_ring_iam_policy google_kms_key_ring_iam_policy} Data Source.
 func NewDataGoogleKmsKeyRingIamPolicy(scope constructs.Construct, id *string, config *DataGoogleKmsKeyRingIamPolicyConfig) DataGoogleKmsKeyRingIamPolicy {
 	_init_.Initialize()
 
@@ -321,7 +321,7 @@ func NewDataGoogleKmsKeyRingIamPolicy(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/kms_key_ring_iam_policy google_kms_key_ring_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/data-sources/kms_key_ring_iam_policy google_kms_key_ring_iam_policy} Data Source.
 func NewDataGoogleKmsKeyRingIamPolicy_Override(d DataGoogleKmsKeyRingIamPolicy, scope constructs.Construct, id *string, config *DataGoogleKmsKeyRingIamPolicyConfig) {
 	_init_.Initialize()
 

@@ -52,7 +52,15 @@ func (a *jsiiProxy_AlloydbInstance) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (a *jsiiProxy_AlloydbInstance) validatePutClientConnectionConfigParameters(value *AlloydbInstanceClientConnectionConfig) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbInstance) validatePutMachineConfigParameters(value *AlloydbInstanceMachineConfig) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlloydbInstance) validatePutQueryInsightsConfigParameters(value *AlloydbInstanceQueryInsightsConfig) error {
 	return nil
 }
 

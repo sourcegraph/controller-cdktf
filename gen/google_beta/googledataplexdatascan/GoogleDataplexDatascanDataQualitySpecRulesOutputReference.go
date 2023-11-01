@@ -28,6 +28,9 @@ type GoogleDataplexDatascanDataQualitySpecRulesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	Dimension() *string
 	SetDimension(val *string)
 	DimensionInput() *string
@@ -38,6 +41,9 @@ type GoogleDataplexDatascanDataQualitySpecRulesOutputReference interface {
 	IgnoreNullInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	NonNullExpectation() GoogleDataplexDatascanDataQualitySpecRulesNonNullExpectationOutputReference
 	NonNullExpectationInput() *GoogleDataplexDatascanDataQualitySpecRulesNonNullExpectation
 	RangeExpectation() GoogleDataplexDatascanDataQualitySpecRulesRangeExpectationOutputReference
@@ -98,7 +104,9 @@ type GoogleDataplexDatascanDataQualitySpecRulesOutputReference interface {
 	PutTableConditionExpectation(value *GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectation)
 	PutUniquenessExpectation(value *GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectation)
 	ResetColumn()
+	ResetDescription()
 	ResetIgnoreNull()
+	ResetName()
 	ResetNonNullExpectation()
 	ResetRangeExpectation()
 	ResetRegexExpectation()
@@ -173,6 +181,26 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) Cr
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) Dimension() *string {
 	var returns *string
 	_jsii_.Get(
@@ -228,6 +256,26 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) In
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
 		&returns,
 	)
 	return returns
@@ -494,6 +542,17 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference)Set
 	)
 }
 
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference)SetDimension(val *string) {
 	if err := j.validateSetDimensionParameters(val); err != nil {
 		panic(err)
@@ -523,6 +582,17 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference)Set
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }
@@ -842,10 +912,26 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) Re
 	)
 }
 
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) ResetIgnoreNull() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetIgnoreNull",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetName",
 		nil, // no parameters
 	)
 }

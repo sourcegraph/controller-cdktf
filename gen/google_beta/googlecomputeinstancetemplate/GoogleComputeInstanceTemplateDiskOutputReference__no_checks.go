@@ -108,6 +108,10 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetProvisionedIopsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetResourcePoliciesParameters(val *[]*string) error {
 	return nil
 }

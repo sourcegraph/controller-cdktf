@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecontainerazurenodepool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_container_azure_node_pool google_container_azure_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_azure_node_pool google_container_azure_node_pool}.
 type GoogleContainerAzureNodePool interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -42,6 +42,7 @@ type GoogleContainerAzureNodePool interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveAnnotations() cdktf.StringMap
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -61,6 +62,8 @@ type GoogleContainerAzureNodePool interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	Management() GoogleContainerAzureNodePoolManagementOutputReference
+	ManagementInput() *GoogleContainerAzureNodePoolManagement
 	MaxPodsConstraint() GoogleContainerAzureNodePoolMaxPodsConstraintOutputReference
 	MaxPodsConstraintInput() *GoogleContainerAzureNodePoolMaxPodsConstraint
 	Name() *string
@@ -126,11 +129,13 @@ type GoogleContainerAzureNodePool interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoscaling(value *GoogleContainerAzureNodePoolAutoscaling)
 	PutConfig(value *GoogleContainerAzureNodePoolConfigA)
+	PutManagement(value *GoogleContainerAzureNodePoolManagement)
 	PutMaxPodsConstraint(value *GoogleContainerAzureNodePoolMaxPodsConstraint)
 	PutTimeouts(value *GoogleContainerAzureNodePoolTimeouts)
 	ResetAnnotations()
 	ResetAzureAvailabilityZone()
 	ResetId()
+	ResetManagement()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -311,6 +316,16 @@ func (j *jsiiProxy_GoogleContainerAzureNodePool) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerAzureNodePool) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerAzureNodePool) Etag() *string {
 	var returns *string
 	_jsii_.Get(
@@ -396,6 +411,26 @@ func (j *jsiiProxy_GoogleContainerAzureNodePool) LocationInput() *string {
 	_jsii_.Get(
 		j,
 		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAzureNodePool) Management() GoogleContainerAzureNodePoolManagementOutputReference {
+	var returns GoogleContainerAzureNodePoolManagementOutputReference
+	_jsii_.Get(
+		j,
+		"management",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAzureNodePool) ManagementInput() *GoogleContainerAzureNodePoolManagement {
+	var returns *GoogleContainerAzureNodePoolManagement
+	_jsii_.Get(
+		j,
+		"managementInput",
 		&returns,
 	)
 	return returns
@@ -632,7 +667,7 @@ func (j *jsiiProxy_GoogleContainerAzureNodePool) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_container_azure_node_pool google_container_azure_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_azure_node_pool google_container_azure_node_pool} Resource.
 func NewGoogleContainerAzureNodePool(scope constructs.Construct, id *string, config *GoogleContainerAzureNodePoolConfig) GoogleContainerAzureNodePool {
 	_init_.Initialize()
 
@@ -650,7 +685,7 @@ func NewGoogleContainerAzureNodePool(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_container_azure_node_pool google_container_azure_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_azure_node_pool google_container_azure_node_pool} Resource.
 func NewGoogleContainerAzureNodePool_Override(g GoogleContainerAzureNodePool, scope constructs.Construct, id *string, config *GoogleContainerAzureNodePoolConfig) {
 	_init_.Initialize()
 
@@ -1116,6 +1151,17 @@ func (g *jsiiProxy_GoogleContainerAzureNodePool) PutConfig(value *GoogleContaine
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerAzureNodePool) PutManagement(value *GoogleContainerAzureNodePoolManagement) {
+	if err := g.validatePutManagementParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putManagement",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerAzureNodePool) PutMaxPodsConstraint(value *GoogleContainerAzureNodePoolMaxPodsConstraint) {
 	if err := g.validatePutMaxPodsConstraintParameters(value); err != nil {
 		panic(err)
@@ -1158,6 +1204,14 @@ func (g *jsiiProxy_GoogleContainerAzureNodePool) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerAzureNodePool) ResetManagement() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetManagement",
 		nil, // no parameters
 	)
 }

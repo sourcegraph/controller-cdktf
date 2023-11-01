@@ -121,17 +121,6 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference) validatePutLivenessProbeParameters(value *GoogleCloudRunV2JobTemplateTemplateContainersLivenessProbe) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference) validatePutPortsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -164,17 +153,6 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference)
 }
 
 func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference) validatePutResourcesParameters(value *GoogleCloudRunV2JobTemplateTemplateContainersResources) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference) validatePutStartupProbeParameters(value *GoogleCloudRunV2JobTemplateTemplateContainersStartupProbe) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

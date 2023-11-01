@@ -68,11 +68,23 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) validateSetInternalIpv6PrefixLengthParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) validateSetIpv6AddressParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) validateSetNetworkParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) validateSetNetworkAttachmentParameters(val *string) error {
 	return nil
 }
 
@@ -85,6 +97,10 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) validat
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) validateSetQueueCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) validateSetSecurityPolicyParameters(val *string) error {
 	return nil
 }
 

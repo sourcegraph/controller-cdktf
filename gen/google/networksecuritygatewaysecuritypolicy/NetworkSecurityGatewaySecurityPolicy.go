@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/networksecuritygatewaysecuritypolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/network_security_gateway_security_policy google_network_security_gateway_security_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/network_security_gateway_security_policy google_network_security_gateway_security_policy}.
 type NetworkSecurityGatewaySecurityPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/network_security_gateway_security_policy google_network_security_gateway_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/network_security_gateway_security_policy google_network_security_gateway_security_policy} Resource.
 func NewNetworkSecurityGatewaySecurityPolicy(scope constructs.Construct, id *string, config *NetworkSecurityGatewaySecurityPolicyConfig) NetworkSecurityGatewaySecurityPolicy {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewNetworkSecurityGatewaySecurityPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/network_security_gateway_security_policy google_network_security_gateway_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/network_security_gateway_security_policy google_network_security_gateway_security_policy} Resource.
 func NewNetworkSecurityGatewaySecurityPolicy_Override(n NetworkSecurityGatewaySecurityPolicy, scope constructs.Construct, id *string, config *NetworkSecurityGatewaySecurityPolicyConfig) {
 	_init_.Initialize()
 

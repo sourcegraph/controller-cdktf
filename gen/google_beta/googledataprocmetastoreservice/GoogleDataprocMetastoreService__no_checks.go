@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleDataprocMetastoreService) validatePutNetworkConfigParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocMetastoreService) validatePutScalingConfigParameters(value *GoogleDataprocMetastoreServiceScalingConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocMetastoreService) validatePutTelemetryConfigParameters(value *GoogleDataprocMetastoreServiceTelemetryConfig) error {
 	return nil
 }

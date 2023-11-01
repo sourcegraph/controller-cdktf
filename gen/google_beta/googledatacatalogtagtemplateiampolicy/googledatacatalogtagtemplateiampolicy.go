@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatacatalogtagtemplateiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy}.
 type GoogleDataCatalogTagTemplateIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_GoogleDataCatalogTagTemplateIamPolicy) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy} Resource.
 func NewGoogleDataCatalogTagTemplateIamPolicy(scope constructs.Construct, id *string, config *GoogleDataCatalogTagTemplateIamPolicyConfig) GoogleDataCatalogTagTemplateIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewGoogleDataCatalogTagTemplateIamPolicy(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy} Resource.
 func NewGoogleDataCatalogTagTemplateIamPolicy_Override(g GoogleDataCatalogTagTemplateIamPolicy, scope constructs.Construct, id *string, config *GoogleDataCatalogTagTemplateIamPolicyConfig) {
 	_init_.Initialize()
 

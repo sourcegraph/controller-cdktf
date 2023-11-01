@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworksecurityclienttlspolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_security_client_tls_policy google_network_security_client_tls_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_network_security_client_tls_policy google_network_security_client_tls_policy}.
 type GoogleNetworkSecurityClientTlsPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,6 +34,7 @@ type GoogleNetworkSecurityClientTlsPolicy interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -80,6 +81,7 @@ type GoogleNetworkSecurityClientTlsPolicy interface {
 	SniInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -237,6 +239,16 @@ func (j *jsiiProxy_GoogleNetworkSecurityClientTlsPolicy) DescriptionInput() *str
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityClientTlsPolicy) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -472,6 +484,16 @@ func (j *jsiiProxy_GoogleNetworkSecurityClientTlsPolicy) TerraformGeneratorMetad
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityClientTlsPolicy) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkSecurityClientTlsPolicy) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -523,7 +545,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityClientTlsPolicy) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_security_client_tls_policy google_network_security_client_tls_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_network_security_client_tls_policy google_network_security_client_tls_policy} Resource.
 func NewGoogleNetworkSecurityClientTlsPolicy(scope constructs.Construct, id *string, config *GoogleNetworkSecurityClientTlsPolicyConfig) GoogleNetworkSecurityClientTlsPolicy {
 	_init_.Initialize()
 
@@ -541,7 +563,7 @@ func NewGoogleNetworkSecurityClientTlsPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_security_client_tls_policy google_network_security_client_tls_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_network_security_client_tls_policy google_network_security_client_tls_policy} Resource.
 func NewGoogleNetworkSecurityClientTlsPolicy_Override(g GoogleNetworkSecurityClientTlsPolicy, scope constructs.Construct, id *string, config *GoogleNetworkSecurityClientTlsPolicyConfig) {
 	_init_.Initialize()
 

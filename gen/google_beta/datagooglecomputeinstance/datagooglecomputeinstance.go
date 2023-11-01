@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecomputeinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_compute_instance google_compute_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/data-sources/google_compute_instance google_compute_instance}.
 type DataGoogleComputeInstance interface {
 	cdktf.TerraformDataSource
 	AdvancedMachineFeatures() DataGoogleComputeInstanceAdvancedMachineFeaturesList
@@ -35,6 +35,7 @@ type DataGoogleComputeInstance interface {
 	SetDependsOn(val *[]*string)
 	Description() *string
 	DesiredStatus() *string
+	EffectiveLabels() cdktf.StringMap
 	EnableDisplay() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -91,6 +92,7 @@ type DataGoogleComputeInstance interface {
 	TagsFingerprint() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -291,6 +293,16 @@ func (j *jsiiProxy_DataGoogleComputeInstance) DesiredStatus() *string {
 	_jsii_.Get(
 		j,
 		"desiredStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstance) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -676,6 +688,16 @@ func (j *jsiiProxy_DataGoogleComputeInstance) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstance) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstance) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -717,7 +739,7 @@ func (j *jsiiProxy_DataGoogleComputeInstance) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_compute_instance google_compute_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/data-sources/google_compute_instance google_compute_instance} Data Source.
 func NewDataGoogleComputeInstance(scope constructs.Construct, id *string, config *DataGoogleComputeInstanceConfig) DataGoogleComputeInstance {
 	_init_.Initialize()
 
@@ -735,7 +757,7 @@ func NewDataGoogleComputeInstance(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_compute_instance google_compute_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/data-sources/google_compute_instance google_compute_instance} Data Source.
 func NewDataGoogleComputeInstance_Override(d DataGoogleComputeInstance, scope constructs.Construct, id *string, config *DataGoogleComputeInstanceConfig) {
 	_init_.Initialize()
 

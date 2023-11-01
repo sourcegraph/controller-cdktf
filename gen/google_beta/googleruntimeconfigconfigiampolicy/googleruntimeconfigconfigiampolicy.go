@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleruntimeconfigconfigiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_runtimeconfig_config_iam_policy google_runtimeconfig_config_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_runtimeconfig_config_iam_policy google_runtimeconfig_config_iam_policy}.
 type GoogleRuntimeconfigConfigIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_GoogleRuntimeconfigConfigIamPolicy) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_runtimeconfig_config_iam_policy google_runtimeconfig_config_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_runtimeconfig_config_iam_policy google_runtimeconfig_config_iam_policy} Resource.
 func NewGoogleRuntimeconfigConfigIamPolicy(scope constructs.Construct, id *string, config *GoogleRuntimeconfigConfigIamPolicyConfig) GoogleRuntimeconfigConfigIamPolicy {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewGoogleRuntimeconfigConfigIamPolicy(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_runtimeconfig_config_iam_policy google_runtimeconfig_config_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_runtimeconfig_config_iam_policy google_runtimeconfig_config_iam_policy} Resource.
 func NewGoogleRuntimeconfigConfigIamPolicy_Override(g GoogleRuntimeconfigConfigIamPolicy, scope constructs.Construct, id *string, config *GoogleRuntimeconfigConfigIamPolicyConfig) {
 	_init_.Initialize()
 

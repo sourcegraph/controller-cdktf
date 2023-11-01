@@ -122,6 +122,17 @@ func (g *jsiiProxy_GoogleContainerAttachedCluster) validatePutAuthorizationParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAttachedCluster) validatePutBinaryAuthorizationParameters(value *GoogleContainerAttachedClusterBinaryAuthorization) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAttachedCluster) validatePutFleetParameters(value *GoogleContainerAttachedClusterFleet) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

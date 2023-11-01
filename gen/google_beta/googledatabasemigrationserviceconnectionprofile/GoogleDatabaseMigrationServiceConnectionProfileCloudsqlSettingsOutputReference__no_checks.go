@@ -92,6 +92,10 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) validateSetEditionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) validateSetInternalValueParameters(val *GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettings) error {
 	return nil
 }

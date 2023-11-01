@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleiapwebiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_iam_policy google_iap_web_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_iap_web_iam_policy google_iap_web_iam_policy}.
 type GoogleIapWebIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -344,7 +344,7 @@ func (j *jsiiProxy_GoogleIapWebIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_iam_policy google_iap_web_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_iap_web_iam_policy google_iap_web_iam_policy} Resource.
 func NewGoogleIapWebIamPolicy(scope constructs.Construct, id *string, config *GoogleIapWebIamPolicyConfig) GoogleIapWebIamPolicy {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewGoogleIapWebIamPolicy(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_iam_policy google_iap_web_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_iap_web_iam_policy google_iap_web_iam_policy} Resource.
 func NewGoogleIapWebIamPolicy_Override(g GoogleIapWebIamPolicy, scope constructs.Construct, id *string, config *GoogleIapWebIamPolicyConfig) {
 	_init_.Initialize()
 

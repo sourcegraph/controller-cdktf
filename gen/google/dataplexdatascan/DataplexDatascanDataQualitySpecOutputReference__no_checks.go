@@ -44,6 +44,10 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) validateInter
 	return nil
 }
 
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) validatePutPostScanActionsParameters(value *DataplexDatascanDataQualitySpecPostScanActions) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) validatePutRulesParameters(value interface{}) error {
 	return nil
 }

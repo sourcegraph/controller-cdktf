@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/filestoresnapshot/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/filestore_snapshot google_filestore_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/filestore_snapshot google_filestore_snapshot}.
 type FilestoreSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -32,6 +32,7 @@ type FilestoreSnapshot interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	FilesystemUsedBytes() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -78,6 +79,7 @@ type FilestoreSnapshot interface {
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -208,6 +210,16 @@ func (j *jsiiProxy_FilestoreSnapshot) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FilestoreSnapshot) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -443,6 +455,16 @@ func (j *jsiiProxy_FilestoreSnapshot) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
+func (j *jsiiProxy_FilestoreSnapshot) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FilestoreSnapshot) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -484,7 +506,7 @@ func (j *jsiiProxy_FilestoreSnapshot) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/filestore_snapshot google_filestore_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/filestore_snapshot google_filestore_snapshot} Resource.
 func NewFilestoreSnapshot(scope constructs.Construct, id *string, config *FilestoreSnapshotConfig) FilestoreSnapshot {
 	_init_.Initialize()
 
@@ -502,7 +524,7 @@ func NewFilestoreSnapshot(scope constructs.Construct, id *string, config *Filest
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/filestore_snapshot google_filestore_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/filestore_snapshot google_filestore_snapshot} Resource.
 func NewFilestoreSnapshot_Override(f FilestoreSnapshot, scope constructs.Construct, id *string, config *FilestoreSnapshotConfig) {
 	_init_.Initialize()
 

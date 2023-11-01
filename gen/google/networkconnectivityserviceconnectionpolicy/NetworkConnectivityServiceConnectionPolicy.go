@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/networkconnectivityserviceconnectionpolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/network_connectivity_service_connection_policy google_network_connectivity_service_connection_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/network_connectivity_service_connection_policy google_network_connectivity_service_connection_policy}.
 type NetworkConnectivityServiceConnectionPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -32,6 +32,7 @@ type NetworkConnectivityServiceConnectionPolicy interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -76,7 +77,7 @@ type NetworkConnectivityServiceConnectionPolicy interface {
 	SetProvisioners(val *[]interface{})
 	PscConfig() NetworkConnectivityServiceConnectionPolicyPscConfigOutputReference
 	PscConfigInput() *NetworkConnectivityServiceConnectionPolicyPscConfig
-	PscConnections() *[]*string
+	PscConnections() NetworkConnectivityServiceConnectionPolicyPscConnectionsList
 	// Experimental.
 	RawOverrides() interface{}
 	ServiceClass() *string
@@ -84,6 +85,7 @@ type NetworkConnectivityServiceConnectionPolicy interface {
 	ServiceClassInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -217,6 +219,16 @@ func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicy) DescriptionInput(
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicy) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -452,8 +464,8 @@ func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicy) PscConfigInput() 
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicy) PscConnections() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicy) PscConnections() NetworkConnectivityServiceConnectionPolicyPscConnectionsList {
+	var returns NetworkConnectivityServiceConnectionPolicyPscConnectionsList
 	_jsii_.Get(
 		j,
 		"pscConnections",
@@ -497,6 +509,16 @@ func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicy) TerraformGenerato
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicy) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
 		&returns,
 	)
 	return returns
@@ -553,7 +575,7 @@ func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicy) UpdateTime() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/network_connectivity_service_connection_policy google_network_connectivity_service_connection_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/network_connectivity_service_connection_policy google_network_connectivity_service_connection_policy} Resource.
 func NewNetworkConnectivityServiceConnectionPolicy(scope constructs.Construct, id *string, config *NetworkConnectivityServiceConnectionPolicyConfig) NetworkConnectivityServiceConnectionPolicy {
 	_init_.Initialize()
 
@@ -571,7 +593,7 @@ func NewNetworkConnectivityServiceConnectionPolicy(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/network_connectivity_service_connection_policy google_network_connectivity_service_connection_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/network_connectivity_service_connection_policy google_network_connectivity_service_connection_policy} Resource.
 func NewNetworkConnectivityServiceConnectionPolicy_Override(n NetworkConnectivityServiceConnectionPolicy, scope constructs.Construct, id *string, config *NetworkConnectivityServiceConnectionPolicyConfig) {
 	_init_.Initialize()
 

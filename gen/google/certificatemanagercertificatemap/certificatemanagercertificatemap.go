@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/certificatemanagercertificatemap/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/certificate_manager_certificate_map google_certificate_manager_certificate_map}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/certificate_manager_certificate_map google_certificate_manager_certificate_map}.
 type CertificateManagerCertificateMap interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -32,6 +32,7 @@ type CertificateManagerCertificateMap interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -71,6 +72,7 @@ type CertificateManagerCertificateMap interface {
 	RawOverrides() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -202,6 +204,16 @@ func (j *jsiiProxy_CertificateManagerCertificateMap) DescriptionInput() *string 
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificateManagerCertificateMap) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -387,6 +399,16 @@ func (j *jsiiProxy_CertificateManagerCertificateMap) TerraformGeneratorMetadata(
 	return returns
 }
 
+func (j *jsiiProxy_CertificateManagerCertificateMap) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CertificateManagerCertificateMap) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -438,7 +460,7 @@ func (j *jsiiProxy_CertificateManagerCertificateMap) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/certificate_manager_certificate_map google_certificate_manager_certificate_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/certificate_manager_certificate_map google_certificate_manager_certificate_map} Resource.
 func NewCertificateManagerCertificateMap(scope constructs.Construct, id *string, config *CertificateManagerCertificateMapConfig) CertificateManagerCertificateMap {
 	_init_.Initialize()
 
@@ -456,7 +478,7 @@ func NewCertificateManagerCertificateMap(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/certificate_manager_certificate_map google_certificate_manager_certificate_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/certificate_manager_certificate_map google_certificate_manager_certificate_map} Resource.
 func NewCertificateManagerCertificateMap_Override(c CertificateManagerCertificateMap, scope constructs.Construct, id *string, config *CertificateManagerCertificateMapConfig) {
 	_init_.Initialize()
 

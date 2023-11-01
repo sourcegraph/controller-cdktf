@@ -4,7 +4,7 @@ package googleprivatecacapool
 type GooglePrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints struct {
 	// Indicates whether or not the name constraints are marked critical.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_privateca_ca_pool#critical GooglePrivatecaCaPool#critical}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_privateca_ca_pool#critical GooglePrivatecaCaPool#critical}
 	Critical interface{} `field:"required" json:"critical" yaml:"critical"`
 	// Contains excluded DNS names.
 	//
@@ -14,7 +14,7 @@ type GooglePrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints struct {
 	// For example, 'example.com', 'www.example.com', 'www.sub.example.com'
 	// would satisfy 'example.com' while 'example1.com' does not.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_privateca_ca_pool#excluded_dns_names GooglePrivatecaCaPool#excluded_dns_names}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_privateca_ca_pool#excluded_dns_names GooglePrivatecaCaPool#excluded_dns_names}
 	ExcludedDnsNames *[]*string `field:"optional" json:"excludedDnsNames" yaml:"excludedDnsNames"`
 	// Contains the excluded email addresses.
 	//
@@ -23,7 +23,7 @@ type GooglePrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints struct {
 	// a domain with a leading period (e.g. '.example.com') to indicate
 	// all email addresses in that domain.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_privateca_ca_pool#excluded_email_addresses GooglePrivatecaCaPool#excluded_email_addresses}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_privateca_ca_pool#excluded_email_addresses GooglePrivatecaCaPool#excluded_email_addresses}
 	ExcludedEmailAddresses *[]*string `field:"optional" json:"excludedEmailAddresses" yaml:"excludedEmailAddresses"`
 	// Contains the excluded IP ranges.
 	//
@@ -32,14 +32,14 @@ type GooglePrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints struct {
 	// For IPv6 addresses, the ranges are expressed in similar encoding as IPv4
 	// addresses.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_privateca_ca_pool#excluded_ip_ranges GooglePrivatecaCaPool#excluded_ip_ranges}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_privateca_ca_pool#excluded_ip_ranges GooglePrivatecaCaPool#excluded_ip_ranges}
 	ExcludedIpRanges *[]*string `field:"optional" json:"excludedIpRanges" yaml:"excludedIpRanges"`
 	// Contains the excluded URIs that apply to the host part of the name.
 	//
 	// The value can be a hostname or a domain with a
 	// leading period (like '.example.com')
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_privateca_ca_pool#excluded_uris GooglePrivatecaCaPool#excluded_uris}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_privateca_ca_pool#excluded_uris GooglePrivatecaCaPool#excluded_uris}
 	ExcludedUris *[]*string `field:"optional" json:"excludedUris" yaml:"excludedUris"`
 	// Contains permitted DNS names.
 	//
@@ -49,7 +49,7 @@ type GooglePrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints struct {
 	// For example, 'example.com', 'www.example.com', 'www.sub.example.com'
 	// would satisfy 'example.com' while 'example1.com' does not.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_privateca_ca_pool#permitted_dns_names GooglePrivatecaCaPool#permitted_dns_names}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_privateca_ca_pool#permitted_dns_names GooglePrivatecaCaPool#permitted_dns_names}
 	PermittedDnsNames *[]*string `field:"optional" json:"permittedDnsNames" yaml:"permittedDnsNames"`
 	// Contains the permitted email addresses.
 	//
@@ -58,7 +58,7 @@ type GooglePrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints struct {
 	// a domain with a leading period (e.g. '.example.com') to indicate
 	// all email addresses in that domain.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_privateca_ca_pool#permitted_email_addresses GooglePrivatecaCaPool#permitted_email_addresses}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_privateca_ca_pool#permitted_email_addresses GooglePrivatecaCaPool#permitted_email_addresses}
 	PermittedEmailAddresses *[]*string `field:"optional" json:"permittedEmailAddresses" yaml:"permittedEmailAddresses"`
 	// Contains the permitted IP ranges.
 	//
@@ -67,14 +67,14 @@ type GooglePrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints struct {
 	// For IPv6 addresses, the ranges are expressed in similar encoding as IPv4
 	// addresses.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_privateca_ca_pool#permitted_ip_ranges GooglePrivatecaCaPool#permitted_ip_ranges}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_privateca_ca_pool#permitted_ip_ranges GooglePrivatecaCaPool#permitted_ip_ranges}
 	PermittedIpRanges *[]*string `field:"optional" json:"permittedIpRanges" yaml:"permittedIpRanges"`
 	// Contains the permitted URIs that apply to the host part of the name.
 	//
 	// The value can be a hostname or a domain with a
 	// leading period (like '.example.com')
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_privateca_ca_pool#permitted_uris GooglePrivatecaCaPool#permitted_uris}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_privateca_ca_pool#permitted_uris GooglePrivatecaCaPool#permitted_uris}
 	PermittedUris *[]*string `field:"optional" json:"permittedUris" yaml:"permittedUris"`
 }
 

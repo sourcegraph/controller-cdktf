@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleservicedirectorynamespace/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_service_directory_namespace google_service_directory_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_service_directory_namespace google_service_directory_namespace}.
 type GoogleServiceDirectoryNamespace interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,7 @@ type GoogleServiceDirectoryNamespace interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -70,6 +71,7 @@ type GoogleServiceDirectoryNamespace interface {
 	RawOverrides() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -169,6 +171,16 @@ func (j *jsiiProxy_GoogleServiceDirectoryNamespace) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleServiceDirectoryNamespace) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -374,6 +386,16 @@ func (j *jsiiProxy_GoogleServiceDirectoryNamespace) TerraformGeneratorMetadata()
 	return returns
 }
 
+func (j *jsiiProxy_GoogleServiceDirectoryNamespace) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleServiceDirectoryNamespace) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -415,7 +437,7 @@ func (j *jsiiProxy_GoogleServiceDirectoryNamespace) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_service_directory_namespace google_service_directory_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_service_directory_namespace google_service_directory_namespace} Resource.
 func NewGoogleServiceDirectoryNamespace(scope constructs.Construct, id *string, config *GoogleServiceDirectoryNamespaceConfig) GoogleServiceDirectoryNamespace {
 	_init_.Initialize()
 
@@ -433,7 +455,7 @@ func NewGoogleServiceDirectoryNamespace(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_service_directory_namespace google_service_directory_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_service_directory_namespace google_service_directory_namespace} Resource.
 func NewGoogleServiceDirectoryNamespace_Override(g GoogleServiceDirectoryNamespace, scope constructs.Construct, id *string, config *GoogleServiceDirectoryNamespaceConfig) {
 	_init_.Initialize()
 

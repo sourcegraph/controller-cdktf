@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleactivedirectorydomain/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_active_directory_domain google_active_directory_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_active_directory_domain google_active_directory_domain}.
 type GoogleActiveDirectoryDomain interface {
 	cdktf.TerraformResource
 	Admin() *string
@@ -37,6 +37,7 @@ type GoogleActiveDirectoryDomain interface {
 	DomainName() *string
 	SetDomainName(val *string)
 	DomainNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -80,6 +81,7 @@ type GoogleActiveDirectoryDomain interface {
 	ReservedIpRangeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -241,6 +243,16 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain) DomainNameInput() *string {
 	_jsii_.Get(
 		j,
 		"domainNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -456,6 +468,16 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleActiveDirectoryDomain) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -497,7 +519,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_active_directory_domain google_active_directory_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_active_directory_domain google_active_directory_domain} Resource.
 func NewGoogleActiveDirectoryDomain(scope constructs.Construct, id *string, config *GoogleActiveDirectoryDomainConfig) GoogleActiveDirectoryDomain {
 	_init_.Initialize()
 
@@ -515,7 +537,7 @@ func NewGoogleActiveDirectoryDomain(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_active_directory_domain google_active_directory_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_active_directory_domain google_active_directory_domain} Resource.
 func NewGoogleActiveDirectoryDomain_Override(g GoogleActiveDirectoryDomain, scope constructs.Construct, id *string, config *GoogleActiveDirectoryDomainConfig) {
 	_init_.Initialize()
 

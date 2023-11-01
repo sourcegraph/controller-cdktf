@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlevertexaiendpoint/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_vertex_ai_endpoint google_vertex_ai_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_vertex_ai_endpoint google_vertex_ai_endpoint}.
 type GoogleVertexAiEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -36,6 +36,7 @@ type GoogleVertexAiEndpoint interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	EncryptionSpec() GoogleVertexAiEndpointEncryptionSpecOutputReference
 	EncryptionSpecInput() *GoogleVertexAiEndpointEncryptionSpec
 	Etag() *string
@@ -87,6 +88,7 @@ type GoogleVertexAiEndpoint interface {
 	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -252,6 +254,16 @@ func (j *jsiiProxy_GoogleVertexAiEndpoint) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiEndpoint) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -527,6 +539,16 @@ func (j *jsiiProxy_GoogleVertexAiEndpoint) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
+func (j *jsiiProxy_GoogleVertexAiEndpoint) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleVertexAiEndpoint) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -578,7 +600,7 @@ func (j *jsiiProxy_GoogleVertexAiEndpoint) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_vertex_ai_endpoint google_vertex_ai_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_vertex_ai_endpoint google_vertex_ai_endpoint} Resource.
 func NewGoogleVertexAiEndpoint(scope constructs.Construct, id *string, config *GoogleVertexAiEndpointConfig) GoogleVertexAiEndpoint {
 	_init_.Initialize()
 
@@ -596,7 +618,7 @@ func NewGoogleVertexAiEndpoint(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_vertex_ai_endpoint google_vertex_ai_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_vertex_ai_endpoint google_vertex_ai_endpoint} Resource.
 func NewGoogleVertexAiEndpoint_Override(g GoogleVertexAiEndpoint, scope constructs.Construct, id *string, config *GoogleVertexAiEndpointConfig) {
 	_init_.Initialize()
 

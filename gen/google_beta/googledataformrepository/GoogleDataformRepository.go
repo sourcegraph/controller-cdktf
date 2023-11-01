@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataformrepository/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataform_repository google_dataform_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataform_repository google_dataform_repository}.
 type GoogleDataformRepository interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -66,6 +66,9 @@ type GoogleDataformRepository interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	ServiceAccount() *string
+	SetServiceAccount(val *string)
+	ServiceAccountInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -111,6 +114,7 @@ type GoogleDataformRepository interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
+	ResetServiceAccount()
 	ResetTimeouts()
 	ResetWorkspaceCompilationOverrides()
 	SynthesizeAttributes() *map[string]interface{}
@@ -358,6 +362,26 @@ func (j *jsiiProxy_GoogleDataformRepository) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataformRepository) ServiceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataformRepository) ServiceAccountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataformRepository) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -429,7 +453,7 @@ func (j *jsiiProxy_GoogleDataformRepository) WorkspaceCompilationOverridesInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataform_repository google_dataform_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataform_repository google_dataform_repository} Resource.
 func NewGoogleDataformRepository(scope constructs.Construct, id *string, config *GoogleDataformRepositoryConfig) GoogleDataformRepository {
 	_init_.Initialize()
 
@@ -447,7 +471,7 @@ func NewGoogleDataformRepository(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataform_repository google_dataform_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataform_repository google_dataform_repository} Resource.
 func NewGoogleDataformRepository_Override(g GoogleDataformRepository, scope constructs.Construct, id *string, config *GoogleDataformRepositoryConfig) {
 	_init_.Initialize()
 
@@ -566,6 +590,17 @@ func (j *jsiiProxy_GoogleDataformRepository)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataformRepository)SetServiceAccount(val *string) {
+	if err := j.validateSetServiceAccountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccount",
 		val,
 	)
 }
@@ -905,6 +940,14 @@ func (g *jsiiProxy_GoogleDataformRepository) ResetRegion() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataformRepository) ResetServiceAccount() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServiceAccount",
 		nil, // no parameters
 	)
 }

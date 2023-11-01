@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference) validateSetUserIpRequestHeadersParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewGoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

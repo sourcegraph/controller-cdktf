@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleworkstationsworkstationiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_workstations_workstation_iam_policy google_workstations_workstation_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_workstations_workstation_iam_policy google_workstations_workstation_iam_policy}.
 type GoogleWorkstationsWorkstationIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationIamPolicy) WorkstationIdInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_workstations_workstation_iam_policy google_workstations_workstation_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_workstations_workstation_iam_policy google_workstations_workstation_iam_policy} Resource.
 func NewGoogleWorkstationsWorkstationIamPolicy(scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationIamPolicyConfig) GoogleWorkstationsWorkstationIamPolicy {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewGoogleWorkstationsWorkstationIamPolicy(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_workstations_workstation_iam_policy google_workstations_workstation_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_workstations_workstation_iam_policy google_workstations_workstation_iam_policy} Resource.
 func NewGoogleWorkstationsWorkstationIamPolicy_Override(g GoogleWorkstationsWorkstationIamPolicy, scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationIamPolicyConfig) {
 	_init_.Initialize()
 

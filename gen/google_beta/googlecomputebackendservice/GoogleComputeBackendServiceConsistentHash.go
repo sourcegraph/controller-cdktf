@@ -4,13 +4,13 @@ package googlecomputebackendservice
 type GoogleComputeBackendServiceConsistentHash struct {
 	// http_cookie block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_service#http_cookie GoogleComputeBackendService#http_cookie}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_backend_service#http_cookie GoogleComputeBackendService#http_cookie}
 	HttpCookie *GoogleComputeBackendServiceConsistentHashHttpCookie `field:"optional" json:"httpCookie" yaml:"httpCookie"`
 	// The hash based on the value of the specified header field.
 	//
 	// This field is applicable if the sessionAffinity is set to HEADER_FIELD.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_service#http_header_name GoogleComputeBackendService#http_header_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_backend_service#http_header_name GoogleComputeBackendService#http_header_name}
 	HttpHeaderName *string `field:"optional" json:"httpHeaderName" yaml:"httpHeaderName"`
 	// The minimum number of virtual nodes to use for the hash ring.
 	//
@@ -20,7 +20,7 @@ type GoogleComputeBackendServiceConsistentHash struct {
 	// virtual node.
 	// Defaults to 1024.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_service#minimum_ring_size GoogleComputeBackendService#minimum_ring_size}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_backend_service#minimum_ring_size GoogleComputeBackendService#minimum_ring_size}
 	MinimumRingSize *float64 `field:"optional" json:"minimumRingSize" yaml:"minimumRingSize"`
 }
 

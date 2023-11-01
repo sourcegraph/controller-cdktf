@@ -48,19 +48,11 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference) validatePutLivenessProbeParameters(value *GoogleCloudRunV2JobTemplateTemplateContainersLivenessProbe) error {
-	return nil
-}
-
 func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference) validatePutPortsParameters(value interface{}) error {
 	return nil
 }
 
 func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference) validatePutResourcesParameters(value *GoogleCloudRunV2JobTemplateTemplateContainersResources) error {
-	return nil
-}
-
-func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference) validatePutStartupProbeParameters(value *GoogleCloudRunV2JobTemplateTemplateContainersStartupProbe) error {
 	return nil
 }
 

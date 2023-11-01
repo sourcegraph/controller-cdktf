@@ -40,7 +40,7 @@ type GoogleComputeBackendServiceLocalityLbPoliciesPolicy struct {
 	//         build times and host selection times. For more information about
 	//         Maglev, refer to https://ai.google/research/pubs/pub44824 Possible values: ["ROUND_ROBIN", "LEAST_REQUEST", "RING_HASH", "RANDOM", "ORIGINAL_DESTINATION", "MAGLEV"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_service#name GoogleComputeBackendService#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_backend_service#name GoogleComputeBackendService#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

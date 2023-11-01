@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputetargetinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_instance google_compute_target_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_target_instance google_compute_target_instance}.
 type GoogleComputeTargetInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -74,6 +74,9 @@ type GoogleComputeTargetInstance interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SecurityPolicy() *string
+	SetSecurityPolicy(val *string)
+	SecurityPolicyInput() *string
 	SelfLink() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -120,6 +123,7 @@ type GoogleComputeTargetInstance interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetSecurityPolicy()
 	ResetTimeouts()
 	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
@@ -417,6 +421,26 @@ func (j *jsiiProxy_GoogleComputeTargetInstance) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeTargetInstance) SecurityPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeTargetInstance) SecurityPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeTargetInstance) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -498,7 +522,7 @@ func (j *jsiiProxy_GoogleComputeTargetInstance) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_instance google_compute_target_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_target_instance google_compute_target_instance} Resource.
 func NewGoogleComputeTargetInstance(scope constructs.Construct, id *string, config *GoogleComputeTargetInstanceConfig) GoogleComputeTargetInstance {
 	_init_.Initialize()
 
@@ -516,7 +540,7 @@ func NewGoogleComputeTargetInstance(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_instance google_compute_target_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_target_instance google_compute_target_instance} Resource.
 func NewGoogleComputeTargetInstance_Override(g GoogleComputeTargetInstance, scope constructs.Construct, id *string, config *GoogleComputeTargetInstanceConfig) {
 	_init_.Initialize()
 
@@ -668,6 +692,17 @@ func (j *jsiiProxy_GoogleComputeTargetInstance)SetProvisioners(val *[]interface{
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeTargetInstance)SetSecurityPolicy(val *string) {
+	if err := j.validateSetSecurityPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityPolicy",
 		val,
 	)
 }
@@ -1004,6 +1039,14 @@ func (g *jsiiProxy_GoogleComputeTargetInstance) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeTargetInstance) ResetSecurityPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecurityPolicy",
 		nil, // no parameters
 	)
 }

@@ -21,11 +21,11 @@ type GoogleSqlDatabaseConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the Cloud SQL instance. This does not include the project ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_sql_database#instance GoogleSqlDatabase#instance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_sql_database#instance GoogleSqlDatabase#instance}
 	Instance *string `field:"required" json:"instance" yaml:"instance"`
 	// The name of the database in the Cloud SQL instance. This does not include the project ID or instance name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_sql_database#name GoogleSqlDatabase#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_sql_database#name GoogleSqlDatabase#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The charset value.
 	//
@@ -35,7 +35,7 @@ type GoogleSqlDatabaseConfig struct {
 	// for more details and supported values. Postgres databases only support
 	// a value of 'UTF8' at creation time.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_sql_database#charset GoogleSqlDatabase#charset}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_sql_database#charset GoogleSqlDatabase#charset}
 	Charset *string `field:"optional" json:"charset" yaml:"charset"`
 	// The collation value.
 	//
@@ -45,7 +45,7 @@ type GoogleSqlDatabaseConfig struct {
 	// for more details and supported values. Postgres databases only support
 	// a value of 'en_US.UTF8' at creation time.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_sql_database#collation GoogleSqlDatabase#collation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_sql_database#collation GoogleSqlDatabase#collation}
 	Collation *string `field:"optional" json:"collation" yaml:"collation"`
 	// The deletion policy for the database.
 	//
@@ -54,18 +54,18 @@ type GoogleSqlDatabaseConfig struct {
 	// deleted from the API if there are users other than cloudsqlsuperuser with access. Possible
 	// values are: "ABANDON", "DELETE". Defaults to "DELETE".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_sql_database#deletion_policy GoogleSqlDatabase#deletion_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_sql_database#deletion_policy GoogleSqlDatabase#deletion_policy}
 	DeletionPolicy *string `field:"optional" json:"deletionPolicy" yaml:"deletionPolicy"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_sql_database#id GoogleSqlDatabase#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_sql_database#id GoogleSqlDatabase#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_sql_database#project GoogleSqlDatabase#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_sql_database#project GoogleSqlDatabase#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_sql_database#timeouts GoogleSqlDatabase#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_sql_database#timeouts GoogleSqlDatabase#timeouts}
 	Timeouts *GoogleSqlDatabaseTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

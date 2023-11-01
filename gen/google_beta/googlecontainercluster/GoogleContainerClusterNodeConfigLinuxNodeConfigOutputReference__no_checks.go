@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) validateSetCgroupModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

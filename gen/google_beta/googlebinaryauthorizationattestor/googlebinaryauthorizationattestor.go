@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebinaryauthorizationattestor/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_binary_authorization_attestor google_binary_authorization_attestor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_binary_authorization_attestor google_binary_authorization_attestor}.
 type GoogleBinaryAuthorizationAttestor interface {
 	cdktf.TerraformResource
 	AttestationAuthorityNote() GoogleBinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference
@@ -404,7 +404,7 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestor) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_binary_authorization_attestor google_binary_authorization_attestor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_binary_authorization_attestor google_binary_authorization_attestor} Resource.
 func NewGoogleBinaryAuthorizationAttestor(scope constructs.Construct, id *string, config *GoogleBinaryAuthorizationAttestorConfig) GoogleBinaryAuthorizationAttestor {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewGoogleBinaryAuthorizationAttestor(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_binary_authorization_attestor google_binary_authorization_attestor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_binary_authorization_attestor google_binary_authorization_attestor} Resource.
 func NewGoogleBinaryAuthorizationAttestor_Override(g GoogleBinaryAuthorizationAttestor, scope constructs.Construct, id *string, config *GoogleBinaryAuthorizationAttestorConfig) {
 	_init_.Initialize()
 

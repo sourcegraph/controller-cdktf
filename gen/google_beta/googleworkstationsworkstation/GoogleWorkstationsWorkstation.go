@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleworkstationsworkstation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_workstations_workstation google_workstations_workstation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_workstations_workstation google_workstations_workstation}.
 type GoogleWorkstationsWorkstation interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -35,6 +35,11 @@ type GoogleWorkstationsWorkstation interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveAnnotations() cdktf.StringMap
+	EffectiveLabels() cdktf.StringMap
+	Env() *map[string]*string
+	SetEnv(val *map[string]*string)
+	EnvInput() *map[string]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -76,6 +81,7 @@ type GoogleWorkstationsWorkstation interface {
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -120,6 +126,7 @@ type GoogleWorkstationsWorkstation interface {
 	PutTimeouts(value *GoogleWorkstationsWorkstationTimeouts)
 	ResetAnnotations()
 	ResetDisplayName()
+	ResetEnv()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -237,6 +244,46 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstation) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstation) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstation) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstation) Env() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"env",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstation) EnvInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"envInput",
 		&returns,
 	)
 	return returns
@@ -442,6 +489,16 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstation) TerraformGeneratorMetadata() *
 	return returns
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstation) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstation) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -553,7 +610,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstation) WorkstationIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_workstations_workstation google_workstations_workstation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_workstations_workstation google_workstations_workstation} Resource.
 func NewGoogleWorkstationsWorkstation(scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfig) GoogleWorkstationsWorkstation {
 	_init_.Initialize()
 
@@ -571,7 +628,7 @@ func NewGoogleWorkstationsWorkstation(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_workstations_workstation google_workstations_workstation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_workstations_workstation google_workstations_workstation} Resource.
 func NewGoogleWorkstationsWorkstation_Override(g GoogleWorkstationsWorkstation, scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfig) {
 	_init_.Initialize()
 
@@ -630,6 +687,17 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstation)SetDisplayName(val *string) {
 	_jsii_.Set(
 		j,
 		"displayName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstation)SetEnv(val *map[string]*string) {
+	if err := j.validateSetEnvParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"env",
 		val,
 	)
 }
@@ -1038,6 +1106,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstation) ResetDisplayName() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDisplayName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstation) ResetEnv() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnv",
 		nil, // no parameters
 	)
 }

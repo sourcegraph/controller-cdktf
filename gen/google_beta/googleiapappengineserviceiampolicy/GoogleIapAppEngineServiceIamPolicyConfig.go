@@ -19,18 +19,18 @@ type GoogleIapAppEngineServiceIamPolicyConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_app_engine_service_iam_policy#app_id GoogleIapAppEngineServiceIamPolicy#app_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_iap_app_engine_service_iam_policy#app_id GoogleIapAppEngineServiceIamPolicy#app_id}.
 	AppId *string `field:"required" json:"appId" yaml:"appId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_app_engine_service_iam_policy#policy_data GoogleIapAppEngineServiceIamPolicy#policy_data}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_iap_app_engine_service_iam_policy#policy_data GoogleIapAppEngineServiceIamPolicy#policy_data}.
 	PolicyData *string `field:"required" json:"policyData" yaml:"policyData"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_app_engine_service_iam_policy#service GoogleIapAppEngineServiceIamPolicy#service}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_iap_app_engine_service_iam_policy#service GoogleIapAppEngineServiceIamPolicy#service}.
 	Service *string `field:"required" json:"service" yaml:"service"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_app_engine_service_iam_policy#id GoogleIapAppEngineServiceIamPolicy#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_iap_app_engine_service_iam_policy#id GoogleIapAppEngineServiceIamPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_app_engine_service_iam_policy#project GoogleIapAppEngineServiceIamPolicy#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_iap_app_engine_service_iam_policy#project GoogleIapAppEngineServiceIamPolicy#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

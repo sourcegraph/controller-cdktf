@@ -68,6 +68,10 @@ func (g *jsiiProxy_GoogleBigqueryTable) validatePutRangePartitioningParameters(v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryTable) validatePutTableConstraintsParameters(value *GoogleBigqueryTableTableConstraints) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryTable) validatePutTimePartitioningParameters(value *GoogleBigqueryTableTimePartitioning) error {
 	return nil
 }
@@ -141,6 +145,10 @@ func (j *jsiiProxy_GoogleBigqueryTable) validateSetProjectParameters(val *string
 }
 
 func (j *jsiiProxy_GoogleBigqueryTable) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable) validateSetRequirePartitionFilterParameters(val interface{}) error {
 	return nil
 }
 

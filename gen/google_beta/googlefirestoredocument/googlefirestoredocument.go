@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefirestoredocument/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_firestore_document google_firestore_document}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_firestore_document google_firestore_document}.
 type GoogleFirestoreDocument interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -471,7 +471,7 @@ func (j *jsiiProxy_GoogleFirestoreDocument) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_firestore_document google_firestore_document} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_firestore_document google_firestore_document} Resource.
 func NewGoogleFirestoreDocument(scope constructs.Construct, id *string, config *GoogleFirestoreDocumentConfig) GoogleFirestoreDocument {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewGoogleFirestoreDocument(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_firestore_document google_firestore_document} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_firestore_document google_firestore_document} Resource.
 func NewGoogleFirestoreDocument_Override(g GoogleFirestoreDocument, scope constructs.Construct, id *string, config *GoogleFirestoreDocumentConfig) {
 	_init_.Initialize()
 

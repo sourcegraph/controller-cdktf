@@ -9,9 +9,11 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/dialogflowcxflow/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dialogflow_cx_flow google_dialogflow_cx_flow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/dialogflow_cx_flow google_dialogflow_cx_flow}.
 type DialogflowCxFlow interface {
 	cdktf.TerraformResource
+	AdvancedSettings() DialogflowCxFlowAdvancedSettingsOutputReference
+	AdvancedSettingsInput() *DialogflowCxFlowAdvancedSettings
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -110,10 +112,12 @@ type DialogflowCxFlow interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAdvancedSettings(value *DialogflowCxFlowAdvancedSettings)
 	PutEventHandlers(value interface{})
 	PutNluSettings(value *DialogflowCxFlowNluSettings)
 	PutTimeouts(value *DialogflowCxFlowTimeouts)
 	PutTransitionRoutes(value interface{})
+	ResetAdvancedSettings()
 	ResetDescription()
 	ResetEventHandlers()
 	ResetId()
@@ -139,6 +143,26 @@ type DialogflowCxFlow interface {
 // The jsii proxy struct for DialogflowCxFlow
 type jsiiProxy_DialogflowCxFlow struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_DialogflowCxFlow) AdvancedSettings() DialogflowCxFlowAdvancedSettingsOutputReference {
+	var returns DialogflowCxFlowAdvancedSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"advancedSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxFlow) AdvancedSettingsInput() *DialogflowCxFlowAdvancedSettings {
+	var returns *DialogflowCxFlowAdvancedSettings
+	_jsii_.Get(
+		j,
+		"advancedSettingsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DialogflowCxFlow) CdktfStack() cdktf.TerraformStack {
@@ -512,7 +536,7 @@ func (j *jsiiProxy_DialogflowCxFlow) TransitionRoutesInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dialogflow_cx_flow google_dialogflow_cx_flow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/dialogflow_cx_flow google_dialogflow_cx_flow} Resource.
 func NewDialogflowCxFlow(scope constructs.Construct, id *string, config *DialogflowCxFlowConfig) DialogflowCxFlow {
 	_init_.Initialize()
 
@@ -530,7 +554,7 @@ func NewDialogflowCxFlow(scope constructs.Construct, id *string, config *Dialogf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dialogflow_cx_flow google_dialogflow_cx_flow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/dialogflow_cx_flow google_dialogflow_cx_flow} Resource.
 func NewDialogflowCxFlow_Override(d DialogflowCxFlow, scope constructs.Construct, id *string, config *DialogflowCxFlowConfig) {
 	_init_.Initialize()
 
@@ -941,6 +965,17 @@ func (d *jsiiProxy_DialogflowCxFlow) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_DialogflowCxFlow) PutAdvancedSettings(value *DialogflowCxFlowAdvancedSettings) {
+	if err := d.validatePutAdvancedSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAdvancedSettings",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DialogflowCxFlow) PutEventHandlers(value interface{}) {
 	if err := d.validatePutEventHandlersParameters(value); err != nil {
 		panic(err)
@@ -982,6 +1017,14 @@ func (d *jsiiProxy_DialogflowCxFlow) PutTransitionRoutes(value interface{}) {
 		d,
 		"putTransitionRoutes",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxFlow) ResetAdvancedSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAdvancedSettings",
+		nil, // no parameters
 	)
 }
 

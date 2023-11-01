@@ -25,6 +25,9 @@ type GoogleComputeInstanceScratchDiskOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeviceName() *string
+	SetDeviceName(val *string)
+	DeviceNameInput() *string
 	// Experimental.
 	Fqn() *string
 	Interface() *string
@@ -67,6 +70,7 @@ type GoogleComputeInstanceScratchDiskOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDeviceName()
 	ResetSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -108,6 +112,26 @@ func (j *jsiiProxy_GoogleComputeInstanceScratchDiskOutputReference) CreationStac
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceScratchDiskOutputReference) DeviceName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deviceName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceScratchDiskOutputReference) DeviceNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deviceNameInput",
 		&returns,
 	)
 	return returns
@@ -239,6 +263,17 @@ func (j *jsiiProxy_GoogleComputeInstanceScratchDiskOutputReference)SetComplexObj
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceScratchDiskOutputReference)SetDeviceName(val *string) {
+	if err := j.validateSetDeviceNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deviceName",
 		val,
 	)
 }
@@ -482,6 +517,14 @@ func (g *jsiiProxy_GoogleComputeInstanceScratchDiskOutputReference) Interpolatio
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceScratchDiskOutputReference) ResetDeviceName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeviceName",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleComputeInstanceScratchDiskOutputReference) ResetSize() {

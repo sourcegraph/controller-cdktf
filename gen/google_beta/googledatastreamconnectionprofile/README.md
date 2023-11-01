@@ -1,3 +1,3 @@
 # `google_datastream_connection_profile`
 
-Refer to the Terraform Registory for docs: [`google_datastream_connection_profile`](https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_datastream_connection_profile).
+Refer to the Terraform Registory for docs: [`google_datastream_connection_profile`](https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_datastream_connection_profile).

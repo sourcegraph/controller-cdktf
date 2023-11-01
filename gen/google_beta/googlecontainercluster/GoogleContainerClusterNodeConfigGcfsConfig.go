@@ -4,7 +4,7 @@ package googlecontainercluster
 type GoogleContainerClusterNodeConfigGcfsConfig struct {
 	// Whether or not GCFS is enabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_container_cluster#enabled GoogleContainerCluster#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_cluster#enabled GoogleContainerCluster#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 }
 

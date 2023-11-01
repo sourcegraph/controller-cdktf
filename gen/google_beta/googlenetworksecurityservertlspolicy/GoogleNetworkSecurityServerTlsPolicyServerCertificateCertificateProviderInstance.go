@@ -6,7 +6,7 @@ type GoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderIns
 	//
 	// Set to "google_cloud_private_spiffe" to use Certificate Authority Service certificate provider instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_security_server_tls_policy#plugin_instance GoogleNetworkSecurityServerTlsPolicy#plugin_instance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_network_security_server_tls_policy#plugin_instance GoogleNetworkSecurityServerTlsPolicy#plugin_instance}
 	PluginInstance *string `field:"required" json:"pluginInstance" yaml:"pluginInstance"`
 }
 

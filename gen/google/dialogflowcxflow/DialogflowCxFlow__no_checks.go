@@ -52,6 +52,10 @@ func (d *jsiiProxy_DialogflowCxFlow) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxFlow) validatePutAdvancedSettingsParameters(value *DialogflowCxFlowAdvancedSettings) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxFlow) validatePutEventHandlersParameters(value interface{}) error {
 	return nil
 }

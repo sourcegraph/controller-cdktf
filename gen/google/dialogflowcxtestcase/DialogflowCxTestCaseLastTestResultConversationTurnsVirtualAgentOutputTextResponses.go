@@ -1,0 +1,6 @@
+package dialogflowcxtestcase
+
+
+type DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTextResponses struct {
+}
+

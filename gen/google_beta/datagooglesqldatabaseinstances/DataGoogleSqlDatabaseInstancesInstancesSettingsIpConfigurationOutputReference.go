@@ -34,6 +34,7 @@ type DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationOutputReferen
 	SetInternalValue(val *DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfiguration)
 	Ipv4Enabled() cdktf.IResolvable
 	PrivateNetwork() *string
+	PscConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigList
 	RequireSsl() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
@@ -177,6 +178,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfiguratio
 	_jsii_.Get(
 		j,
 		"privateNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationOutputReference) PscConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigList {
+	var returns DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigList
+	_jsii_.Get(
+		j,
+		"pscConfig",
 		&returns,
 	)
 	return returns

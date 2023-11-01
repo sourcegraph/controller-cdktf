@@ -10,6 +10,9 @@ import (
 
 type GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference interface {
 	cdktf.ComplexObject
+	CgroupMode() *string
+	SetCgroupMode(val *string)
+	CgroupModeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -64,6 +67,8 @@ type GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCgroupMode()
+	ResetSysctls()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -77,6 +82,26 @@ type GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference interface {
 // The jsii proxy struct for GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference
 type jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) CgroupMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cgroupMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) CgroupModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cgroupModeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -194,6 +219,17 @@ func NewGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference_Override(
 		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference)SetCgroupMode(val *string) {
+	if err := j.validateSetCgroupModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cgroupMode",
+		val,
 	)
 }
 
@@ -447,6 +483,22 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReferenc
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) ResetCgroupMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCgroupMode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) ResetSysctls() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSysctls",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

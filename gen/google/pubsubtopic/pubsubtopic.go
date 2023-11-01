@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/pubsubtopic/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/pubsub_topic google_pubsub_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/pubsub_topic google_pubsub_topic}.
 type PubsubTopic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,7 @@ type PubsubTopic interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -76,6 +77,7 @@ type PubsubTopic interface {
 	SchemaSettingsInput() *PubsubTopicSchemaSettings
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -181,6 +183,16 @@ func (j *jsiiProxy_PubsubTopic) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubTopic) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -436,6 +448,16 @@ func (j *jsiiProxy_PubsubTopic) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
+func (j *jsiiProxy_PubsubTopic) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PubsubTopic) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -477,7 +499,7 @@ func (j *jsiiProxy_PubsubTopic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/pubsub_topic google_pubsub_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/pubsub_topic google_pubsub_topic} Resource.
 func NewPubsubTopic(scope constructs.Construct, id *string, config *PubsubTopicConfig) PubsubTopic {
 	_init_.Initialize()
 
@@ -495,7 +517,7 @@ func NewPubsubTopic(scope constructs.Construct, id *string, config *PubsubTopicC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/pubsub_topic google_pubsub_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/pubsub_topic google_pubsub_topic} Resource.
 func NewPubsubTopic_Override(p PubsubTopic, scope constructs.Construct, id *string, config *PubsubTopicConfig) {
 	_init_.Initialize()
 

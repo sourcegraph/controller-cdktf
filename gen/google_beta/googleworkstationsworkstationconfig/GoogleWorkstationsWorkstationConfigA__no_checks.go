@@ -100,6 +100,10 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetDisplayNameP
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetEnableAuditAgentParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -125,6 +129,10 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetProjectParam
 }
 
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validateSetReplicaZonesParameters(val *[]*string) error {
 	return nil
 }
 

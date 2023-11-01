@@ -1,0 +1,12 @@
+package googledatapipelinepipeline
+
+
+type GoogleDataPipelinePipelineTimeouts struct {
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_data_pipeline_pipeline#create GoogleDataPipelinePipeline#create}.
+	Create *string `field:"optional" json:"create" yaml:"create"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_data_pipeline_pipeline#delete GoogleDataPipelinePipeline#delete}.
+	Delete *string `field:"optional" json:"delete" yaml:"delete"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_data_pipeline_pipeline#update GoogleDataPipelinePipeline#update}.
+	Update *string `field:"optional" json:"update" yaml:"update"`
+}
+

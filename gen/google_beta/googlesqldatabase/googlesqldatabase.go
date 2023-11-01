@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesqldatabase/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_sql_database google_sql_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_sql_database google_sql_database}.
 type GoogleSqlDatabase interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -463,7 +463,7 @@ func (j *jsiiProxy_GoogleSqlDatabase) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_sql_database google_sql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_sql_database google_sql_database} Resource.
 func NewGoogleSqlDatabase(scope constructs.Construct, id *string, config *GoogleSqlDatabaseConfig) GoogleSqlDatabase {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewGoogleSqlDatabase(scope constructs.Construct, id *string, config *Google
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_sql_database google_sql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_sql_database google_sql_database} Resource.
 func NewGoogleSqlDatabase_Override(g GoogleSqlDatabase, scope constructs.Construct, id *string, config *GoogleSqlDatabaseConfig) {
 	_init_.Initialize()
 

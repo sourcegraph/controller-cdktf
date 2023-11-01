@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/clouddeploytarget/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/clouddeploy_target google_clouddeploy_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/clouddeploy_target google_clouddeploy_target}.
 type ClouddeployTarget interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -40,6 +40,8 @@ type ClouddeployTarget interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveAnnotations() cdktf.StringMap
+	EffectiveLabels() cdktf.StringMap
 	Etag() *string
 	ExecutionConfigs() ClouddeployTargetExecutionConfigsList
 	ExecutionConfigsInput() interface{}
@@ -66,6 +68,8 @@ type ClouddeployTarget interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	MultiTarget() ClouddeployTargetMultiTargetOutputReference
+	MultiTargetInput() *ClouddeployTargetMultiTarget
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -92,6 +96,7 @@ type ClouddeployTarget interface {
 	TargetId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -128,6 +133,7 @@ type ClouddeployTarget interface {
 	PutAnthosCluster(value *ClouddeployTargetAnthosCluster)
 	PutExecutionConfigs(value interface{})
 	PutGke(value *ClouddeployTargetGke)
+	PutMultiTarget(value *ClouddeployTargetMultiTarget)
 	PutRun(value *ClouddeployTargetRun)
 	PutTimeouts(value *ClouddeployTargetTimeouts)
 	ResetAnnotations()
@@ -138,6 +144,7 @@ type ClouddeployTarget interface {
 	ResetGke()
 	ResetId()
 	ResetLabels()
+	ResetMultiTarget()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -300,6 +307,26 @@ func (j *jsiiProxy_ClouddeployTarget) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ClouddeployTarget) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployTarget) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ClouddeployTarget) Etag() *string {
 	var returns *string
 	_jsii_.Get(
@@ -450,6 +477,26 @@ func (j *jsiiProxy_ClouddeployTarget) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ClouddeployTarget) MultiTarget() ClouddeployTargetMultiTargetOutputReference {
+	var returns ClouddeployTargetMultiTargetOutputReference
+	_jsii_.Get(
+		j,
+		"multiTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployTarget) MultiTargetInput() *ClouddeployTargetMultiTarget {
+	var returns *ClouddeployTargetMultiTarget
+	_jsii_.Get(
+		j,
+		"multiTargetInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ClouddeployTarget) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -590,6 +637,16 @@ func (j *jsiiProxy_ClouddeployTarget) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
+func (j *jsiiProxy_ClouddeployTarget) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ClouddeployTarget) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -651,7 +708,7 @@ func (j *jsiiProxy_ClouddeployTarget) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/clouddeploy_target google_clouddeploy_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/clouddeploy_target google_clouddeploy_target} Resource.
 func NewClouddeployTarget(scope constructs.Construct, id *string, config *ClouddeployTargetConfig) ClouddeployTarget {
 	_init_.Initialize()
 
@@ -669,7 +726,7 @@ func NewClouddeployTarget(scope constructs.Construct, id *string, config *Cloudd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/clouddeploy_target google_clouddeploy_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/clouddeploy_target google_clouddeploy_target} Resource.
 func NewClouddeployTarget_Override(c ClouddeployTarget, scope constructs.Construct, id *string, config *ClouddeployTargetConfig) {
 	_init_.Initialize()
 
@@ -1146,6 +1203,17 @@ func (c *jsiiProxy_ClouddeployTarget) PutGke(value *ClouddeployTargetGke) {
 	)
 }
 
+func (c *jsiiProxy_ClouddeployTarget) PutMultiTarget(value *ClouddeployTargetMultiTarget) {
+	if err := c.validatePutMultiTargetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putMultiTarget",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ClouddeployTarget) PutRun(value *ClouddeployTargetRun) {
 	if err := c.validatePutRunParameters(value); err != nil {
 		panic(err)
@@ -1228,6 +1296,14 @@ func (c *jsiiProxy_ClouddeployTarget) ResetLabels() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClouddeployTarget) ResetMultiTarget() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMultiTarget",
 		nil, // no parameters
 	)
 }

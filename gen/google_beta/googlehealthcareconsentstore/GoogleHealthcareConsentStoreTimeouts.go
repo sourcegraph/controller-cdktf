@@ -2,11 +2,11 @@ package googlehealthcareconsentstore
 
 
 type GoogleHealthcareConsentStoreTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_consent_store#create GoogleHealthcareConsentStore#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_healthcare_consent_store#create GoogleHealthcareConsentStore#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_consent_store#delete GoogleHealthcareConsentStore#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_healthcare_consent_store#delete GoogleHealthcareConsentStore#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_consent_store#update GoogleHealthcareConsentStore#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_healthcare_consent_store#update GoogleHealthcareConsentStore#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

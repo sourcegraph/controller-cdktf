@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkservicesservicebinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_service_binding google_network_services_service_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_network_services_service_binding google_network_services_service_binding}.
 type GoogleNetworkServicesServiceBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -32,6 +32,7 @@ type GoogleNetworkServicesServiceBinding interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -73,6 +74,7 @@ type GoogleNetworkServicesServiceBinding interface {
 	ServiceInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -204,6 +206,16 @@ func (j *jsiiProxy_GoogleNetworkServicesServiceBinding) DescriptionInput() *stri
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesServiceBinding) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -399,6 +411,16 @@ func (j *jsiiProxy_GoogleNetworkServicesServiceBinding) TerraformGeneratorMetada
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesServiceBinding) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesServiceBinding) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -450,7 +472,7 @@ func (j *jsiiProxy_GoogleNetworkServicesServiceBinding) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_service_binding google_network_services_service_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_network_services_service_binding google_network_services_service_binding} Resource.
 func NewGoogleNetworkServicesServiceBinding(scope constructs.Construct, id *string, config *GoogleNetworkServicesServiceBindingConfig) GoogleNetworkServicesServiceBinding {
 	_init_.Initialize()
 
@@ -468,7 +490,7 @@ func NewGoogleNetworkServicesServiceBinding(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_service_binding google_network_services_service_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_network_services_service_binding google_network_services_service_binding} Resource.
 func NewGoogleNetworkServicesServiceBinding_Override(g GoogleNetworkServicesServiceBinding, scope constructs.Construct, id *string, config *GoogleNetworkServicesServiceBindingConfig) {
 	_init_.Initialize()
 

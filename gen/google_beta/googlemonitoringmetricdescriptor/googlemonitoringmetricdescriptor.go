@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlemonitoringmetricdescriptor/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_metric_descriptor google_monitoring_metric_descriptor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_monitoring_metric_descriptor google_monitoring_metric_descriptor}.
 type GoogleMonitoringMetricDescriptor interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -567,7 +567,7 @@ func (j *jsiiProxy_GoogleMonitoringMetricDescriptor) ValueTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_metric_descriptor google_monitoring_metric_descriptor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_monitoring_metric_descriptor google_monitoring_metric_descriptor} Resource.
 func NewGoogleMonitoringMetricDescriptor(scope constructs.Construct, id *string, config *GoogleMonitoringMetricDescriptorConfig) GoogleMonitoringMetricDescriptor {
 	_init_.Initialize()
 
@@ -585,7 +585,7 @@ func NewGoogleMonitoringMetricDescriptor(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_metric_descriptor google_monitoring_metric_descriptor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_monitoring_metric_descriptor google_monitoring_metric_descriptor} Resource.
 func NewGoogleMonitoringMetricDescriptor_Override(g GoogleMonitoringMetricDescriptor, scope constructs.Construct, id *string, config *GoogleMonitoringMetricDescriptorConfig) {
 	_init_.Initialize()
 

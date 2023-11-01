@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefirebasehostingchannel/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_firebase_hosting_channel google_firebase_hosting_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_firebase_hosting_channel google_firebase_hosting_channel}.
 type GoogleFirebaseHostingChannel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,7 @@ type GoogleFirebaseHostingChannel interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	ExpireTime() *string
 	SetExpireTime(val *string)
 	ExpireTimeInput() *string
@@ -73,6 +74,7 @@ type GoogleFirebaseHostingChannel interface {
 	SiteIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -197,6 +199,16 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -402,6 +414,16 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel) TerraformGeneratorMetadata() *c
 	return returns
 }
 
+func (j *jsiiProxy_GoogleFirebaseHostingChannel) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleFirebaseHostingChannel) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -463,7 +485,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel) TtlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_firebase_hosting_channel google_firebase_hosting_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_firebase_hosting_channel google_firebase_hosting_channel} Resource.
 func NewGoogleFirebaseHostingChannel(scope constructs.Construct, id *string, config *GoogleFirebaseHostingChannelConfig) GoogleFirebaseHostingChannel {
 	_init_.Initialize()
 
@@ -481,7 +503,7 @@ func NewGoogleFirebaseHostingChannel(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_firebase_hosting_channel google_firebase_hosting_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_firebase_hosting_channel google_firebase_hosting_channel} Resource.
 func NewGoogleFirebaseHostingChannel_Override(g GoogleFirebaseHostingChannel, scope constructs.Construct, id *string, config *GoogleFirebaseHostingChannelConfig) {
 	_init_.Initialize()
 

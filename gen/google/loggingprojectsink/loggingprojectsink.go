@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/loggingprojectsink/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_project_sink google_logging_project_sink}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/logging_project_sink google_logging_project_sink}.
 type LoggingProjectSink interface {
 	cdktf.TerraformResource
 	BigqueryOptions() LoggingProjectSinkBigqueryOptionsOutputReference
@@ -26,6 +26,9 @@ type LoggingProjectSink interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomWriterIdentity() *string
+	SetCustomWriterIdentity(val *string)
+	CustomWriterIdentityInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -115,6 +118,7 @@ type LoggingProjectSink interface {
 	PutBigqueryOptions(value *LoggingProjectSinkBigqueryOptions)
 	PutExclusions(value interface{})
 	ResetBigqueryOptions()
+	ResetCustomWriterIdentity()
 	ResetDescription()
 	ResetDisabled()
 	ResetExclusions()
@@ -195,6 +199,26 @@ func (j *jsiiProxy_LoggingProjectSink) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoggingProjectSink) CustomWriterIdentity() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customWriterIdentity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoggingProjectSink) CustomWriterIdentityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customWriterIdentityInput",
 		&returns,
 	)
 	return returns
@@ -511,7 +535,7 @@ func (j *jsiiProxy_LoggingProjectSink) WriterIdentity() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_project_sink google_logging_project_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/logging_project_sink google_logging_project_sink} Resource.
 func NewLoggingProjectSink(scope constructs.Construct, id *string, config *LoggingProjectSinkConfig) LoggingProjectSink {
 	_init_.Initialize()
 
@@ -529,7 +553,7 @@ func NewLoggingProjectSink(scope constructs.Construct, id *string, config *Loggi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_project_sink google_logging_project_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/logging_project_sink google_logging_project_sink} Resource.
 func NewLoggingProjectSink_Override(l LoggingProjectSink, scope constructs.Construct, id *string, config *LoggingProjectSinkConfig) {
 	_init_.Initialize()
 
@@ -558,6 +582,17 @@ func (j *jsiiProxy_LoggingProjectSink)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoggingProjectSink)SetCustomWriterIdentity(val *string) {
+	if err := j.validateSetCustomWriterIdentityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customWriterIdentity",
 		val,
 	)
 }
@@ -988,6 +1023,14 @@ func (l *jsiiProxy_LoggingProjectSink) ResetBigqueryOptions() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetBigqueryOptions",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoggingProjectSink) ResetCustomWriterIdentity() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetCustomWriterIdentity",
 		nil, // no parameters
 	)
 }

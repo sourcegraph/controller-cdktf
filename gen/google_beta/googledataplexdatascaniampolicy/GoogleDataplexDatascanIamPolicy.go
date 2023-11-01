@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataplexdatascaniampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_datascan_iam_policy google_dataplex_datascan_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataplex_datascan_iam_policy google_dataplex_datascan_iam_policy}.
 type GoogleDataplexDatascanIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_GoogleDataplexDatascanIamPolicy) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_datascan_iam_policy google_dataplex_datascan_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataplex_datascan_iam_policy google_dataplex_datascan_iam_policy} Resource.
 func NewGoogleDataplexDatascanIamPolicy(scope constructs.Construct, id *string, config *GoogleDataplexDatascanIamPolicyConfig) GoogleDataplexDatascanIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewGoogleDataplexDatascanIamPolicy(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_datascan_iam_policy google_dataplex_datascan_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataplex_datascan_iam_policy google_dataplex_datascan_iam_policy} Resource.
 func NewGoogleDataplexDatascanIamPolicy_Override(g GoogleDataplexDatascanIamPolicy, scope constructs.Construct, id *string, config *GoogleDataplexDatascanIamPolicyConfig) {
 	_init_.Initialize()
 

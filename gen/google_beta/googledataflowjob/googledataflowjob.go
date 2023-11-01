@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataflowjob/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataflow_job google_dataflow_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataflow_job google_dataflow_job}.
 type GoogleDataflowJob interface {
 	cdktf.TerraformResource
 	AdditionalExperiments() *[]*string
@@ -31,6 +31,7 @@ type GoogleDataflowJob interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	EnableStreamingEngine() interface{}
 	SetEnableStreamingEngine(val interface{})
 	EnableStreamingEngineInput() interface{}
@@ -113,6 +114,7 @@ type GoogleDataflowJob interface {
 	TemplateGcsPathInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -254,6 +256,16 @@ func (j *jsiiProxy_GoogleDataflowJob) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowJob) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -729,6 +741,16 @@ func (j *jsiiProxy_GoogleDataflowJob) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataflowJob) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataflowJob) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -820,7 +842,7 @@ func (j *jsiiProxy_GoogleDataflowJob) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataflow_job google_dataflow_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataflow_job google_dataflow_job} Resource.
 func NewGoogleDataflowJob(scope constructs.Construct, id *string, config *GoogleDataflowJobConfig) GoogleDataflowJob {
 	_init_.Initialize()
 
@@ -838,7 +860,7 @@ func NewGoogleDataflowJob(scope constructs.Construct, id *string, config *Google
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataflow_job google_dataflow_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataflow_job google_dataflow_job} Resource.
 func NewGoogleDataflowJob_Override(g GoogleDataflowJob, scope constructs.Construct, id *string, config *GoogleDataflowJobConfig) {
 	_init_.Initialize()
 

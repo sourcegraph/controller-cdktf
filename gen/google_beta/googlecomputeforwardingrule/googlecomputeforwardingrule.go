@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeforwardingrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_forwarding_rule google_compute_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_forwarding_rule google_compute_forwarding_rule}.
 type GoogleComputeForwardingRule interface {
 	cdktf.TerraformResource
 	AllowGlobalAccess() interface{}
@@ -45,6 +45,7 @@ type GoogleComputeForwardingRule interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -114,6 +115,9 @@ type GoogleComputeForwardingRule interface {
 	PscConnectionStatus() *string
 	// Experimental.
 	RawOverrides() interface{}
+	RecreateClosedPsc() interface{}
+	SetRecreateClosedPsc(val interface{})
+	RecreateClosedPscInput() interface{}
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -135,6 +139,7 @@ type GoogleComputeForwardingRule interface {
 	TargetInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -189,6 +194,7 @@ type GoogleComputeForwardingRule interface {
 	ResetPortRange()
 	ResetPorts()
 	ResetProject()
+	ResetRecreateClosedPsc()
 	ResetRegion()
 	ResetServiceDirectoryRegistrations()
 	ResetServiceLabel()
@@ -376,6 +382,16 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeForwardingRule) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -771,6 +787,26 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeForwardingRule) RecreateClosedPsc() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"recreateClosedPsc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeForwardingRule) RecreateClosedPscInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"recreateClosedPscInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeForwardingRule) Region() *string {
 	var returns *string
 	_jsii_.Get(
@@ -921,6 +957,16 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeForwardingRule) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeForwardingRule) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -962,7 +1008,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_forwarding_rule google_compute_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_forwarding_rule google_compute_forwarding_rule} Resource.
 func NewGoogleComputeForwardingRule(scope constructs.Construct, id *string, config *GoogleComputeForwardingRuleConfig) GoogleComputeForwardingRule {
 	_init_.Initialize()
 
@@ -980,7 +1026,7 @@ func NewGoogleComputeForwardingRule(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_forwarding_rule google_compute_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_forwarding_rule google_compute_forwarding_rule} Resource.
 func NewGoogleComputeForwardingRule_Override(g GoogleComputeForwardingRule, scope constructs.Construct, id *string, config *GoogleComputeForwardingRuleConfig) {
 	_init_.Initialize()
 
@@ -1264,6 +1310,17 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetProvisioners(val *[]interface{
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeForwardingRule)SetRecreateClosedPsc(val interface{}) {
+	if err := j.validateSetRecreateClosedPscParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"recreateClosedPsc",
 		val,
 	)
 }
@@ -1759,6 +1816,14 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeForwardingRule) ResetRecreateClosedPsc() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRecreateClosedPsc",
 		nil, // no parameters
 	)
 }

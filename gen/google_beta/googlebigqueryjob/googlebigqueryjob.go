@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigqueryjob/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_job google_bigquery_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigquery_job google_bigquery_job}.
 type GoogleBigqueryJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -30,6 +30,7 @@ type GoogleBigqueryJob interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	Extract() GoogleBigqueryJobExtractOutputReference
 	ExtractInput() *GoogleBigqueryJobExtract
 	// Experimental.
@@ -82,6 +83,7 @@ type GoogleBigqueryJob interface {
 	Status() GoogleBigqueryJobStatusList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -212,6 +214,16 @@ func (j *jsiiProxy_GoogleBigqueryJob) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryJob) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -507,6 +519,16 @@ func (j *jsiiProxy_GoogleBigqueryJob) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryJob) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryJob) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -558,7 +580,7 @@ func (j *jsiiProxy_GoogleBigqueryJob) UserEmail() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_job google_bigquery_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigquery_job google_bigquery_job} Resource.
 func NewGoogleBigqueryJob(scope constructs.Construct, id *string, config *GoogleBigqueryJobConfig) GoogleBigqueryJob {
 	_init_.Initialize()
 
@@ -576,7 +598,7 @@ func NewGoogleBigqueryJob(scope constructs.Construct, id *string, config *Google
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_job google_bigquery_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigquery_job google_bigquery_job} Resource.
 func NewGoogleBigqueryJob_Override(g GoogleBigqueryJob, scope constructs.Construct, id *string, config *GoogleBigqueryJobConfig) {
 	_init_.Initialize()
 

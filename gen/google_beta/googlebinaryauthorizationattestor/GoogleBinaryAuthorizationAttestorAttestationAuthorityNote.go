@@ -11,11 +11,11 @@ type GoogleBinaryAuthorizationAttestorAttestationAuthorityNote struct {
 	// ATTESTATION_AUTHORITY Occurrence that names a container image
 	// and that links to this Note.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_binary_authorization_attestor#note_reference GoogleBinaryAuthorizationAttestor#note_reference}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_binary_authorization_attestor#note_reference GoogleBinaryAuthorizationAttestor#note_reference}
 	NoteReference *string `field:"required" json:"noteReference" yaml:"noteReference"`
 	// public_keys block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_binary_authorization_attestor#public_keys GoogleBinaryAuthorizationAttestor#public_keys}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_binary_authorization_attestor#public_keys GoogleBinaryAuthorizationAttestor#public_keys}
 	PublicKeys interface{} `field:"optional" json:"publicKeys" yaml:"publicKeys"`
 }
 

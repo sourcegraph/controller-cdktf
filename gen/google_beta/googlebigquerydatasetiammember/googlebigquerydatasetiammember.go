@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigquerydatasetiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_dataset_iam_member google_bigquery_dataset_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigquery_dataset_iam_member google_bigquery_dataset_iam_member}.
 type GoogleBigqueryDatasetIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleBigqueryDatasetIamMember) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_dataset_iam_member google_bigquery_dataset_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigquery_dataset_iam_member google_bigquery_dataset_iam_member} Resource.
 func NewGoogleBigqueryDatasetIamMember(scope constructs.Construct, id *string, config *GoogleBigqueryDatasetIamMemberConfig) GoogleBigqueryDatasetIamMember {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleBigqueryDatasetIamMember(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_dataset_iam_member google_bigquery_dataset_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigquery_dataset_iam_member google_bigquery_dataset_iam_member} Resource.
 func NewGoogleBigqueryDatasetIamMember_Override(g GoogleBigqueryDatasetIamMember, scope constructs.Construct, id *string, config *GoogleBigqueryDatasetIamMemberConfig) {
 	_init_.Initialize()
 

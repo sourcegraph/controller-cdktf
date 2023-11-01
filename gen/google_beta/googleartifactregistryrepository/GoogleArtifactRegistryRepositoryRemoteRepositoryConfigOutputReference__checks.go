@@ -90,6 +90,17 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputR
 	return nil
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutAptRepositoryParameters(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutDockerRepositoryParameters(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -124,6 +135,17 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputR
 }
 
 func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutPythonRepositoryParameters(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutYumRepositoryParameters(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

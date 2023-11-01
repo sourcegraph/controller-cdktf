@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledialogflowcxintent/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent}.
 type GoogleDialogflowCxIntent interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,6 +34,7 @@ type GoogleDialogflowCxIntent interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -81,6 +82,7 @@ type GoogleDialogflowCxIntent interface {
 	RawOverrides() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -230,6 +232,16 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxIntent) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -475,6 +487,16 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDialogflowCxIntent) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxIntent) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -536,7 +558,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) TrainingPhrasesInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent} Resource.
 func NewGoogleDialogflowCxIntent(scope constructs.Construct, id *string, config *GoogleDialogflowCxIntentConfig) GoogleDialogflowCxIntent {
 	_init_.Initialize()
 
@@ -554,7 +576,7 @@ func NewGoogleDialogflowCxIntent(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent} Resource.
 func NewGoogleDialogflowCxIntent_Override(g GoogleDialogflowCxIntent, scope constructs.Construct, id *string, config *GoogleDialogflowCxIntentConfig) {
 	_init_.Initialize()
 

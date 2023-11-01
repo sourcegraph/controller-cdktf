@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleidentityplatformconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_identity_platform_config google_identity_platform_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_identity_platform_config google_identity_platform_config}.
 type GoogleIdentityPlatformConfig interface {
 	cdktf.TerraformResource
 	AuthorizedDomains() *[]*string
@@ -69,6 +69,10 @@ type GoogleIdentityPlatformConfig interface {
 	QuotaInput() *GoogleIdentityPlatformConfigQuota
 	// Experimental.
 	RawOverrides() interface{}
+	SignIn() GoogleIdentityPlatformConfigSignInOutputReference
+	SignInInput() *GoogleIdentityPlatformConfigSignIn
+	SmsRegionConfig() GoogleIdentityPlatformConfigSmsRegionConfigOutputReference
+	SmsRegionConfigInput() *GoogleIdentityPlatformConfigSmsRegionConfig
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -104,6 +108,8 @@ type GoogleIdentityPlatformConfig interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutBlockingFunctions(value *GoogleIdentityPlatformConfigBlockingFunctions)
 	PutQuota(value *GoogleIdentityPlatformConfigQuota)
+	PutSignIn(value *GoogleIdentityPlatformConfigSignIn)
+	PutSmsRegionConfig(value *GoogleIdentityPlatformConfigSmsRegionConfig)
 	PutTimeouts(value *GoogleIdentityPlatformConfigTimeouts)
 	ResetAuthorizedDomains()
 	ResetAutodeleteAnonymousUsers()
@@ -114,6 +120,8 @@ type GoogleIdentityPlatformConfig interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetQuota()
+	ResetSignIn()
+	ResetSmsRegionConfig()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -390,6 +398,46 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) SignIn() GoogleIdentityPlatformConfigSignInOutputReference {
+	var returns GoogleIdentityPlatformConfigSignInOutputReference
+	_jsii_.Get(
+		j,
+		"signIn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) SignInInput() *GoogleIdentityPlatformConfigSignIn {
+	var returns *GoogleIdentityPlatformConfigSignIn
+	_jsii_.Get(
+		j,
+		"signInInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) SmsRegionConfig() GoogleIdentityPlatformConfigSmsRegionConfigOutputReference {
+	var returns GoogleIdentityPlatformConfigSmsRegionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"smsRegionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) SmsRegionConfigInput() *GoogleIdentityPlatformConfigSmsRegionConfig {
+	var returns *GoogleIdentityPlatformConfigSmsRegionConfig
+	_jsii_.Get(
+		j,
+		"smsRegionConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleIdentityPlatformConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -441,7 +489,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_identity_platform_config google_identity_platform_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_identity_platform_config google_identity_platform_config} Resource.
 func NewGoogleIdentityPlatformConfig(scope constructs.Construct, id *string, config *GoogleIdentityPlatformConfigConfig) GoogleIdentityPlatformConfig {
 	_init_.Initialize()
 
@@ -459,7 +507,7 @@ func NewGoogleIdentityPlatformConfig(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_identity_platform_config google_identity_platform_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_identity_platform_config google_identity_platform_config} Resource.
 func NewGoogleIdentityPlatformConfig_Override(g GoogleIdentityPlatformConfig, scope constructs.Construct, id *string, config *GoogleIdentityPlatformConfigConfig) {
 	_init_.Initialize()
 
@@ -870,6 +918,28 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutQuota(value *GoogleIdentityP
 	)
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutSignIn(value *GoogleIdentityPlatformConfigSignIn) {
+	if err := g.validatePutSignInParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSignIn",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutSmsRegionConfig(value *GoogleIdentityPlatformConfigSmsRegionConfig) {
+	if err := g.validatePutSmsRegionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSmsRegionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutTimeouts(value *GoogleIdentityPlatformConfigTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -933,6 +1003,22 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) ResetQuota() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetQuota",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) ResetSignIn() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSignIn",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) ResetSmsRegionConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSmsRegionConfig",
 		nil, // no parameters
 	)
 }

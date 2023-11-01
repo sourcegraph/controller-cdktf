@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputenodegroup/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_node_group google_compute_node_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_node_group google_compute_node_group}.
 type GoogleComputeNodeGroup interface {
 	cdktf.TerraformResource
 	AutoscalingPolicy() GoogleComputeNodeGroupAutoscalingPolicyOutputReference
@@ -52,6 +52,9 @@ type GoogleComputeNodeGroup interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaintenanceInterval() *string
+	SetMaintenanceInterval(val *string)
+	MaintenanceIntervalInput() *string
 	MaintenancePolicy() *string
 	SetMaintenancePolicy(val *string)
 	MaintenancePolicyInput() *string
@@ -82,8 +85,6 @@ type GoogleComputeNodeGroup interface {
 	ShareSettings() GoogleComputeNodeGroupShareSettingsOutputReference
 	ShareSettingsInput() *GoogleComputeNodeGroupShareSettings
 	Size() *float64
-	SetSize(val *float64)
-	SizeInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -128,6 +129,7 @@ type GoogleComputeNodeGroup interface {
 	ResetDescription()
 	ResetId()
 	ResetInitialSize()
+	ResetMaintenanceInterval()
 	ResetMaintenancePolicy()
 	ResetMaintenanceWindow()
 	ResetName()
@@ -136,7 +138,6 @@ type GoogleComputeNodeGroup interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetShareSettings()
-	ResetSize()
 	ResetTimeouts()
 	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
@@ -334,6 +335,26 @@ func (j *jsiiProxy_GoogleComputeNodeGroup) Lifecycle() *cdktf.TerraformResourceL
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeNodeGroup) MaintenanceInterval() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeNodeGroup) MaintenanceIntervalInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceIntervalInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeNodeGroup) MaintenancePolicy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -514,16 +535,6 @@ func (j *jsiiProxy_GoogleComputeNodeGroup) Size() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeNodeGroup) SizeInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"sizeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_GoogleComputeNodeGroup) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -595,7 +606,7 @@ func (j *jsiiProxy_GoogleComputeNodeGroup) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_node_group google_compute_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_node_group google_compute_node_group} Resource.
 func NewGoogleComputeNodeGroup(scope constructs.Construct, id *string, config *GoogleComputeNodeGroupConfig) GoogleComputeNodeGroup {
 	_init_.Initialize()
 
@@ -613,7 +624,7 @@ func NewGoogleComputeNodeGroup(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_node_group google_compute_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_node_group google_compute_node_group} Resource.
 func NewGoogleComputeNodeGroup_Override(g GoogleComputeNodeGroup, scope constructs.Construct, id *string, config *GoogleComputeNodeGroupConfig) {
 	_init_.Initialize()
 
@@ -706,6 +717,17 @@ func (j *jsiiProxy_GoogleComputeNodeGroup)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeNodeGroup)SetMaintenanceInterval(val *string) {
+	if err := j.validateSetMaintenanceIntervalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maintenanceInterval",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeNodeGroup)SetMaintenancePolicy(val *string) {
 	if err := j.validateSetMaintenancePolicyParameters(val); err != nil {
 		panic(err)
@@ -765,17 +787,6 @@ func (j *jsiiProxy_GoogleComputeNodeGroup)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GoogleComputeNodeGroup)SetSize(val *float64) {
-	if err := j.validateSetSizeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"size",
 		val,
 	)
 }
@@ -1133,6 +1144,14 @@ func (g *jsiiProxy_GoogleComputeNodeGroup) ResetInitialSize() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeNodeGroup) ResetMaintenanceInterval() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaintenanceInterval",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeNodeGroup) ResetMaintenancePolicy() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1177,14 +1196,6 @@ func (g *jsiiProxy_GoogleComputeNodeGroup) ResetShareSettings() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetShareSettings",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleComputeNodeGroup) ResetSize() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetSize",
 		nil, // no parameters
 	)
 }

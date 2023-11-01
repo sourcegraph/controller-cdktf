@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/cloudrundomainmapping/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_run_domain_mapping google_cloud_run_domain_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/cloud_run_domain_mapping google_cloud_run_domain_mapping}.
 type CloudRunDomainMapping interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -106,6 +106,7 @@ type CloudRunDomainMapping interface {
 	PutSpec(value *CloudRunDomainMappingSpec)
 	PutTimeouts(value *CloudRunDomainMappingTimeouts)
 	ResetId()
+	ResetMetadata()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -437,7 +438,7 @@ func (j *jsiiProxy_CloudRunDomainMapping) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_run_domain_mapping google_cloud_run_domain_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/cloud_run_domain_mapping google_cloud_run_domain_mapping} Resource.
 func NewCloudRunDomainMapping(scope constructs.Construct, id *string, config *CloudRunDomainMappingConfig) CloudRunDomainMapping {
 	_init_.Initialize()
 
@@ -455,7 +456,7 @@ func NewCloudRunDomainMapping(scope constructs.Construct, id *string, config *Cl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_run_domain_mapping google_cloud_run_domain_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/cloud_run_domain_mapping google_cloud_run_domain_mapping} Resource.
 func NewCloudRunDomainMapping_Override(c CloudRunDomainMapping, scope constructs.Construct, id *string, config *CloudRunDomainMappingConfig) {
 	_init_.Initialize()
 
@@ -881,6 +882,14 @@ func (c *jsiiProxy_CloudRunDomainMapping) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunDomainMapping) ResetMetadata() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMetadata",
 		nil, // no parameters
 	)
 }

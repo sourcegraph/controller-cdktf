@@ -40,7 +40,7 @@ type GkeprivateConfig struct {
 	// (Beta) Configure the Cloud Run load balancer type.
 	//
 	// External by default. Set to `LOAD_BALANCER_TYPE_INTERNAL` to configure as an internal load balancer.
-	CloudrunLoadBalancerType interface{} `field:"optional" json:"cloudrunLoadBalancerType" yaml:"cloudrunLoadBalancerType"`
+	CloudrunLoadBalancerType *string `field:"optional" json:"cloudrunLoadBalancerType" yaml:"cloudrunLoadBalancerType"`
 	// Cluster autoscaling configuration.
 	//
 	// See [more details](https://cloud.google.com/kubernetes-engine/docs/reference/rest/v1beta1/projects.locations.clusters#clusterautoscaling)
@@ -72,7 +72,7 @@ type GkeprivateConfig struct {
 	ClusterResourceLabels *map[string]*string `field:"optional" json:"clusterResourceLabels" yaml:"clusterResourceLabels"`
 	// Available options include ENABLED, DISABLED, and SYSTEM_ONLY.
 	ClusterTelemetryType *string `field:"optional" json:"clusterTelemetryType" yaml:"clusterTelemetryType"`
-	// (Beta) Whether ConfigConnector is enabled for this cluster.
+	// Whether ConfigConnector is enabled for this cluster.
 	ConfigConnector *bool `field:"optional" json:"configConnector" yaml:"configConnector"`
 	// Enables the installation of ip masquerading, which is usually no longer required when using aliasied IP addresses.
 	//
@@ -128,13 +128,17 @@ type GkeprivateConfig struct {
 	EnableKubernetesAlpha *bool `field:"optional" json:"enableKubernetesAlpha" yaml:"enableKubernetesAlpha"`
 	// Enable L4 ILB Subsetting on the cluster.
 	EnableL4IlbSubsetting *bool `field:"optional" json:"enableL4IlbSubsetting" yaml:"enableL4IlbSubsetting"`
+	// Controls the issuance of workload mTLS certificates.
+	//
+	// When enabled the GKE Workload Identity Certificates controller and node agent will be deployed in the cluster. Requires Workload Identity.
+	EnableMeshCertificates *bool `field:"optional" json:"enableMeshCertificates" yaml:"enableMeshCertificates"`
 	// Whether to enable network egress metering for this cluster.
 	//
 	// If enabled, a daemonset will be created in the cluster to meter network egress traffic.
 	EnableNetworkEgressExport *bool `field:"optional" json:"enableNetworkEgressExport" yaml:"enableNetworkEgressExport"`
 	// enabled - Enable the PodSecurityPolicy controller for this cluster.
 	//
-	// If enabled, pods must be valid under a PodSecurityPolicy to be created.
+	// If enabled, pods must be valid under a PodSecurityPolicy to be created. Pod Security Policy was removed from GKE clusters with version >= 1.25.0.
 	EnablePodSecurityPolicy *bool `field:"optional" json:"enablePodSecurityPolicy" yaml:"enablePodSecurityPolicy"`
 	// (Beta) Whether the master's internal IP address is used as the cluster endpoint.
 	EnablePrivateEndpoint *bool `field:"optional" json:"enablePrivateEndpoint" yaml:"enablePrivateEndpoint"`
@@ -168,9 +172,17 @@ type GkeprivateConfig struct {
 	// Default: 1000.
 	//
 	FirewallPriority *float64 `field:"optional" json:"firewallPriority" yaml:"firewallPriority"`
-	// (Beta) Whether this cluster should enable the Google Compute Engine Persistent Disk Container Storage Interface (CSI) Driver.
+	// The gateway api channel of this cluster.
+	//
+	// Accepted values are `CHANNEL_STANDARD` and `CHANNEL_DISABLED`.
+	GatewayApiChannel *string `field:"optional" json:"gatewayApiChannel" yaml:"gatewayApiChannel"`
+	// Whether this cluster should enable the Google Compute Engine Persistent Disk Container Storage Interface (CSI) Driver.
+	// Default: true.
+	//
 	GcePdCsiDriver *bool `field:"optional" json:"gcePdCsiDriver" yaml:"gcePdCsiDriver"`
-	// (Beta) Whether Backup for GKE agent is enabled for this cluster.
+	// Whether GCE FUSE CSI driver is enabled for this cluster.
+	GcsFuseCsiDriver *bool `field:"optional" json:"gcsFuseCsiDriver" yaml:"gcsFuseCsiDriver"`
+	// Whether Backup for GKE agent is enabled for this cluster.
 	GkeBackupAgentConfig *bool `field:"optional" json:"gkeBackupAgentConfig" yaml:"gkeBackupAgentConfig"`
 	// Grants created cluster-specific service account storage.objectViewer and artifactregistry.reader roles.
 	GrantRegistryAccess *bool `field:"optional" json:"grantRegistryAccess" yaml:"grantRegistryAccess"`
@@ -250,7 +262,7 @@ type GkeprivateConfig struct {
 	MasterIpv4CidrBlock *string `field:"optional" json:"masterIpv4CidrBlock" yaml:"masterIpv4CidrBlock"`
 	// List of services to monitor: SYSTEM_COMPONENTS, WORKLOADS (provider version >= 3.89.0). Empty list is default GKE configuration.
 	MonitoringEnabledComponents *[]*string `field:"optional" json:"monitoringEnabledComponents" yaml:"monitoringEnabledComponents"`
-	// (Beta) Configuration for Managed Service for Prometheus.
+	// Configuration for Managed Service for Prometheus.
 	//
 	// Whether or not the managed collection is enabled.
 	MonitoringEnableManagedPrometheus *bool `field:"optional" json:"monitoringEnableManagedPrometheus" yaml:"monitoringEnableManagedPrometheus"`
@@ -297,6 +309,11 @@ type GkeprivateConfig struct {
 	// The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
 	//
 	NodePoolsOauthScopes *map[string]*[]*string `field:"optional" json:"nodePoolsOauthScopes" yaml:"nodePoolsOauthScopes"`
+	// Map of maps containing resource labels by node-pool name.
+	// Default: [object Object]
+	// The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
+	//
+	NodePoolsResourceLabels *map[string]*map[string]*string `field:"optional" json:"nodePoolsResourceLabels" yaml:"nodePoolsResourceLabels"`
 	// Map of lists containing node network tags by node-pool name.
 	// Default: [object Object]
 	// The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
@@ -329,7 +346,9 @@ type GkeprivateConfig struct {
 	RegistryProjectIds *[]*string `field:"optional" json:"registryProjectIds" yaml:"registryProjectIds"`
 	// The release channel of this cluster.
 	//
-	// Accepted values are `UNSPECIFIED`, `RAPID`, `REGULAR` and `STABLE`. Defaults to `UNSPECIFIED`.
+	// Accepted values are `UNSPECIFIED`, `RAPID`, `REGULAR` and `STABLE`. Defaults to `REGULAR`.
+	// Default: REGULAR.
+	//
 	ReleaseChannel *string `field:"optional" json:"releaseChannel" yaml:"releaseChannel"`
 	// Remove default node pool while setting up the cluster.
 	RemoveDefaultNodePool *bool `field:"optional" json:"removeDefaultNodePool" yaml:"removeDefaultNodePool"`
@@ -339,20 +358,26 @@ type GkeprivateConfig struct {
 	SandboxEnabled *bool `field:"optional" json:"sandboxEnabled" yaml:"sandboxEnabled"`
 	// The service account to run nodes as if not overridden in `node_pools`.
 	//
-	// The create_service_account variable default value (true) will cause a cluster-specific service account to be created.
+	// The create_service_account variable default value (true) will cause a cluster-specific service account to be created. This service account should already exists and it will be used by the node pools. If you wish to only override the service account name, you can use service_account_name variable.
 	ServiceAccount *string `field:"optional" json:"serviceAccount" yaml:"serviceAccount"`
+	// The name of the service account that will be created if create_service_account is true.
+	//
+	// If you wish to use an existing service account, use service_account variable.
+	ServiceAccountName *string `field:"optional" json:"serviceAccountName" yaml:"serviceAccountName"`
 	// Whether external ips specified by a service will be allowed in this cluster.
 	ServiceExternalIps *bool `field:"optional" json:"serviceExternalIps" yaml:"serviceExternalIps"`
+	// The log_config for shadow firewall rules.
+	//
+	// You can set this variable to `null` to disable logging.
+	// Default: [object Object].
+	//
+	ShadowFirewallRulesLogConfig interface{} `field:"optional" json:"shadowFirewallRulesLogConfig" yaml:"shadowFirewallRulesLogConfig"`
 	// The firewall priority of GKE shadow firewall rules.
 	//
 	// The priority should be less than default firewall, which is 1000.
 	// Default: 999.
 	//
 	ShadowFirewallRulesPriority *float64 `field:"optional" json:"shadowFirewallRulesPriority" yaml:"shadowFirewallRulesPriority"`
-	// Flag to skip all local-exec provisioners.
-	//
-	// It breaks `stub_domains` and `upstream_nameservers` variables functionality.
-	SkipProvisioners *bool `field:"optional" json:"skipProvisioners" yaml:"skipProvisioners"`
 	// Map of stub domains and their resolvers to forward DNS queries for a certain domain to an external DNS server.
 	// Default: [object Object]
 	// The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
@@ -369,6 +394,12 @@ type GkeprivateConfig struct {
 	// Default: The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
 	//
 	WindowsNodePools *[]*map[string]*string `field:"optional" json:"windowsNodePools" yaml:"windowsNodePools"`
+	// (beta) Worload config audit mode.
+	// Default: DISABLED.
+	//
+	WorkloadConfigAuditMode *string `field:"optional" json:"workloadConfigAuditMode" yaml:"workloadConfigAuditMode"`
+	// (beta) Vulnerability mode.
+	WorkloadVulnerabilityMode *string `field:"optional" json:"workloadVulnerabilityMode" yaml:"workloadVulnerabilityMode"`
 	// The zones to host the cluster in (optional if regional cluster / required if zonal).
 	Zones *[]*string `field:"optional" json:"zones" yaml:"zones"`
 }

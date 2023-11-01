@@ -90,6 +90,61 @@ func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentMessagesOutputReference
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentMessagesOutputReference) validatePutConversationSuccessParameters(value *GoogleDialogflowCxPageEntryFulfillmentMessagesConversationSuccess) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentMessagesOutputReference) validatePutLiveAgentHandoffParameters(value *GoogleDialogflowCxPageEntryFulfillmentMessagesLiveAgentHandoff) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentMessagesOutputReference) validatePutOutputAudioTextParameters(value *GoogleDialogflowCxPageEntryFulfillmentMessagesOutputAudioText) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentMessagesOutputReference) validatePutPlayAudioParameters(value *GoogleDialogflowCxPageEntryFulfillmentMessagesPlayAudio) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentMessagesOutputReference) validatePutTelephonyTransferCallParameters(value *GoogleDialogflowCxPageEntryFulfillmentMessagesTelephonyTransferCall) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentMessagesOutputReference) validatePutTextParameters(value *GoogleDialogflowCxPageEntryFulfillmentMessagesText) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -104,6 +159,14 @@ func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentMessagesOutputReference
 func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentMessagesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentMessagesOutputReference) validateSetChannelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -193,6 +256,14 @@ func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentMessagesOutputReference
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleDialogflowCxPageEntryFulfillmentMessages; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentMessagesOutputReference) validateSetPayloadParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

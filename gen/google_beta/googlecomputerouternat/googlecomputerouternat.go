@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputerouternat/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_router_nat google_compute_router_nat}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_router_nat google_compute_router_nat}.
 type GoogleComputeRouterNat interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -117,6 +117,9 @@ type GoogleComputeRouterNat interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleComputeRouterNatTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	UdpIdleTimeoutSec() *float64
 	SetUdpIdleTimeoutSec(val *float64)
 	UdpIdleTimeoutSecInput() *float64
@@ -157,6 +160,7 @@ type GoogleComputeRouterNat interface {
 	ResetLogConfig()
 	ResetMaxPortsPerVm()
 	ResetMinPortsPerVm()
+	ResetNatIpAllocateOption()
 	ResetNatIps()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -169,6 +173,7 @@ type GoogleComputeRouterNat interface {
 	ResetTcpTimeWaitTimeoutSec()
 	ResetTcpTransitoryIdleTimeoutSec()
 	ResetTimeouts()
+	ResetType()
 	ResetUdpIdleTimeoutSec()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -765,6 +770,26 @@ func (j *jsiiProxy_GoogleComputeRouterNat) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRouterNat) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRouterNat) UdpIdleTimeoutSec() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -786,7 +811,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat) UdpIdleTimeoutSecInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_router_nat google_compute_router_nat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_router_nat google_compute_router_nat} Resource.
 func NewGoogleComputeRouterNat(scope constructs.Construct, id *string, config *GoogleComputeRouterNatConfig) GoogleComputeRouterNat {
 	_init_.Initialize()
 
@@ -804,7 +829,7 @@ func NewGoogleComputeRouterNat(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_router_nat google_compute_router_nat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_router_nat google_compute_router_nat} Resource.
 func NewGoogleComputeRouterNat_Override(g GoogleComputeRouterNat, scope constructs.Construct, id *string, config *GoogleComputeRouterNatConfig) {
 	_init_.Initialize()
 
@@ -1066,6 +1091,17 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetTcpTransitoryIdleTimeoutSec(val *fl
 	_jsii_.Set(
 		j,
 		"tcpTransitoryIdleTimeoutSec",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -1455,6 +1491,14 @@ func (g *jsiiProxy_GoogleComputeRouterNat) ResetMinPortsPerVm() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRouterNat) ResetNatIpAllocateOption() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNatIpAllocateOption",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRouterNat) ResetNatIps() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1531,6 +1575,14 @@ func (g *jsiiProxy_GoogleComputeRouterNat) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRouterNat) ResetType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetType",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebillingaccountiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_billing_account_iam_member google_billing_account_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_billing_account_iam_member google_billing_account_iam_member}.
 type GoogleBillingAccountIamMember interface {
 	cdktf.TerraformResource
 	BillingAccountId() *string
@@ -390,7 +390,7 @@ func (j *jsiiProxy_GoogleBillingAccountIamMember) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_billing_account_iam_member google_billing_account_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_billing_account_iam_member google_billing_account_iam_member} Resource.
 func NewGoogleBillingAccountIamMember(scope constructs.Construct, id *string, config *GoogleBillingAccountIamMemberConfig) GoogleBillingAccountIamMember {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewGoogleBillingAccountIamMember(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_billing_account_iam_member google_billing_account_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_billing_account_iam_member google_billing_account_iam_member} Resource.
 func NewGoogleBillingAccountIamMember_Override(g GoogleBillingAccountIamMember, scope constructs.Construct, id *string, config *GoogleBillingAccountIamMemberConfig) {
 	_init_.Initialize()
 

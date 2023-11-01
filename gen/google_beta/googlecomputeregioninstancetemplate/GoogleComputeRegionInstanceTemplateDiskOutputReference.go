@@ -58,6 +58,9 @@ type GoogleComputeRegionInstanceTemplateDiskOutputReference interface {
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
+	ProvisionedIops() *float64
+	SetProvisionedIops(val *float64)
+	ProvisionedIopsInput() *float64
 	ResourcePolicies() *[]*string
 	SetResourcePolicies(val *[]*string)
 	ResourcePoliciesInput() *[]*string
@@ -122,6 +125,7 @@ type GoogleComputeRegionInstanceTemplateDiskOutputReference interface {
 	ResetInterface()
 	ResetLabels()
 	ResetMode()
+	ResetProvisionedIops()
 	ResetResourcePolicies()
 	ResetSource()
 	ResetSourceImage()
@@ -389,6 +393,26 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference) ModeI
 	_jsii_.Get(
 		j,
 		"modeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference) ProvisionedIops() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference) ProvisionedIopsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedIopsInput",
 		&returns,
 	)
 	return returns
@@ -710,6 +734,17 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference)SetMod
 	_jsii_.Set(
 		j,
 		"mode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference)SetProvisionedIops(val *float64) {
+	if err := j.validateSetProvisionedIopsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionedIops",
 		val,
 	)
 }
@@ -1086,6 +1121,14 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference) Reset
 	_jsii_.InvokeVoid(
 		g,
 		"resetMode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference) ResetProvisionedIops() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProvisionedIops",
 		nil, // no parameters
 	)
 }

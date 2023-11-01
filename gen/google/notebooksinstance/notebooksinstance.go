@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/notebooksinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/notebooks_instance google_notebooks_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/notebooks_instance google_notebooks_instance}.
 type NotebooksInstance interface {
 	cdktf.TerraformResource
 	AcceleratorConfig() NotebooksInstanceAcceleratorConfigOutputReference
@@ -53,6 +53,7 @@ type NotebooksInstance interface {
 	DiskEncryption() *string
 	SetDiskEncryption(val *string)
 	DiskEncryptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -145,6 +146,7 @@ type NotebooksInstance interface {
 	TagsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -461,6 +463,16 @@ func (j *jsiiProxy_NotebooksInstance) DiskEncryptionInput() *string {
 	_jsii_.Get(
 		j,
 		"diskEncryptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksInstance) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -1016,6 +1028,16 @@ func (j *jsiiProxy_NotebooksInstance) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
+func (j *jsiiProxy_NotebooksInstance) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NotebooksInstance) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -1097,7 +1119,7 @@ func (j *jsiiProxy_NotebooksInstance) VmImageInput() *NotebooksInstanceVmImage {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/notebooks_instance google_notebooks_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/notebooks_instance google_notebooks_instance} Resource.
 func NewNotebooksInstance(scope constructs.Construct, id *string, config *NotebooksInstanceConfig) NotebooksInstance {
 	_init_.Initialize()
 
@@ -1115,7 +1137,7 @@ func NewNotebooksInstance(scope constructs.Construct, id *string, config *Notebo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/notebooks_instance google_notebooks_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/notebooks_instance google_notebooks_instance} Resource.
 func NewNotebooksInstance_Override(n NotebooksInstance, scope constructs.Construct, id *string, config *NotebooksInstanceConfig) {
 	_init_.Initialize()
 

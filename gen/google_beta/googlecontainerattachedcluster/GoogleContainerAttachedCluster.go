@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecontainerattachedcluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_container_attached_cluster google_container_attached_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster google_container_attached_cluster}.
 type GoogleContainerAttachedCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -17,6 +17,8 @@ type GoogleContainerAttachedCluster interface {
 	AnnotationsInput() *map[string]*string
 	Authorization() GoogleContainerAttachedClusterAuthorizationOutputReference
 	AuthorizationInput() *GoogleContainerAttachedClusterAuthorization
+	BinaryAuthorization() GoogleContainerAttachedClusterBinaryAuthorizationOutputReference
+	BinaryAuthorizationInput() *GoogleContainerAttachedClusterBinaryAuthorization
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterRegion() *string
@@ -44,6 +46,7 @@ type GoogleContainerAttachedCluster interface {
 	Distribution() *string
 	SetDistribution(val *string)
 	DistributionInput() *string
+	EffectiveAnnotations() cdktf.StringMap
 	Errors() GoogleContainerAttachedClusterErrorsList
 	Fleet() GoogleContainerAttachedClusterFleetOutputReference
 	FleetInput() *GoogleContainerAttachedClusterFleet
@@ -132,6 +135,7 @@ type GoogleContainerAttachedCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthorization(value *GoogleContainerAttachedClusterAuthorization)
+	PutBinaryAuthorization(value *GoogleContainerAttachedClusterBinaryAuthorization)
 	PutFleet(value *GoogleContainerAttachedClusterFleet)
 	PutLoggingConfig(value *GoogleContainerAttachedClusterLoggingConfig)
 	PutMonitoringConfig(value *GoogleContainerAttachedClusterMonitoringConfig)
@@ -139,6 +143,7 @@ type GoogleContainerAttachedCluster interface {
 	PutTimeouts(value *GoogleContainerAttachedClusterTimeouts)
 	ResetAnnotations()
 	ResetAuthorization()
+	ResetBinaryAuthorization()
 	ResetDeletionPolicy()
 	ResetDescription()
 	ResetId()
@@ -199,6 +204,26 @@ func (j *jsiiProxy_GoogleContainerAttachedCluster) AuthorizationInput() *GoogleC
 	_jsii_.Get(
 		j,
 		"authorizationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAttachedCluster) BinaryAuthorization() GoogleContainerAttachedClusterBinaryAuthorizationOutputReference {
+	var returns GoogleContainerAttachedClusterBinaryAuthorizationOutputReference
+	_jsii_.Get(
+		j,
+		"binaryAuthorization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAttachedCluster) BinaryAuthorizationInput() *GoogleContainerAttachedClusterBinaryAuthorization {
+	var returns *GoogleContainerAttachedClusterBinaryAuthorization
+	_jsii_.Get(
+		j,
+		"binaryAuthorizationInput",
 		&returns,
 	)
 	return returns
@@ -329,6 +354,16 @@ func (j *jsiiProxy_GoogleContainerAttachedCluster) DistributionInput() *string {
 	_jsii_.Get(
 		j,
 		"distributionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAttachedCluster) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
 		&returns,
 	)
 	return returns
@@ -715,7 +750,7 @@ func (j *jsiiProxy_GoogleContainerAttachedCluster) WorkloadIdentityConfig() Goog
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_container_attached_cluster google_container_attached_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster google_container_attached_cluster} Resource.
 func NewGoogleContainerAttachedCluster(scope constructs.Construct, id *string, config *GoogleContainerAttachedClusterConfig) GoogleContainerAttachedCluster {
 	_init_.Initialize()
 
@@ -733,7 +768,7 @@ func NewGoogleContainerAttachedCluster(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_container_attached_cluster google_container_attached_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster google_container_attached_cluster} Resource.
 func NewGoogleContainerAttachedCluster_Override(g GoogleContainerAttachedCluster, scope constructs.Construct, id *string, config *GoogleContainerAttachedClusterConfig) {
 	_init_.Initialize()
 
@@ -1188,6 +1223,17 @@ func (g *jsiiProxy_GoogleContainerAttachedCluster) PutAuthorization(value *Googl
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerAttachedCluster) PutBinaryAuthorization(value *GoogleContainerAttachedClusterBinaryAuthorization) {
+	if err := g.validatePutBinaryAuthorizationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBinaryAuthorization",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerAttachedCluster) PutFleet(value *GoogleContainerAttachedClusterFleet) {
 	if err := g.validatePutFleetParameters(value); err != nil {
 		panic(err)
@@ -1255,6 +1301,14 @@ func (g *jsiiProxy_GoogleContainerAttachedCluster) ResetAuthorization() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAuthorization",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerAttachedCluster) ResetBinaryAuthorization() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBinaryAuthorization",
 		nil, // no parameters
 	)
 }

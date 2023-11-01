@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/dataplexlake/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataplex_lake google_dataplex_lake}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/dataplex_lake google_dataplex_lake}.
 type DataplexLake interface {
 	cdktf.TerraformResource
 	AssetStatus() DataplexLakeAssetStatusList
@@ -36,6 +36,7 @@ type DataplexLake interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -82,6 +83,7 @@ type DataplexLake interface {
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -247,6 +249,16 @@ func (j *jsiiProxy_DataplexLake) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexLake) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -492,6 +504,16 @@ func (j *jsiiProxy_DataplexLake) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	return returns
 }
 
+func (j *jsiiProxy_DataplexLake) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataplexLake) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -553,7 +575,7 @@ func (j *jsiiProxy_DataplexLake) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataplex_lake google_dataplex_lake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/dataplex_lake google_dataplex_lake} Resource.
 func NewDataplexLake(scope constructs.Construct, id *string, config *DataplexLakeConfig) DataplexLake {
 	_init_.Initialize()
 
@@ -571,7 +593,7 @@ func NewDataplexLake(scope constructs.Construct, id *string, config *DataplexLak
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataplex_lake google_dataplex_lake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/dataplex_lake google_dataplex_lake} Resource.
 func NewDataplexLake_Override(d DataplexLake, scope constructs.Construct, id *string, config *DataplexLakeConfig) {
 	_init_.Initialize()
 

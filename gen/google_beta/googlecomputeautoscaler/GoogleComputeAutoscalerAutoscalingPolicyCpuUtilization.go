@@ -17,7 +17,7 @@ type GoogleComputeAutoscalerAutoscalingPolicyCpuUtilization struct {
 	// specified or until the average utilization reaches the target
 	// utilization.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_autoscaler#target GoogleComputeAutoscaler#target}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_autoscaler#target GoogleComputeAutoscaler#target}
 	Target *float64 `field:"required" json:"target" yaml:"target"`
 	// Indicates whether predictive autoscaling based on CPU metric is enabled. Valid values are:.
 	//
@@ -25,7 +25,7 @@ type GoogleComputeAutoscalerAutoscalingPolicyCpuUtilization struct {
 	//
 	// - OPTIMIZE_AVAILABILITY. Predictive autoscaling improves availability by monitoring daily and weekly load patterns and scaling out ahead of anticipated demand.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_autoscaler#predictive_method GoogleComputeAutoscaler#predictive_method}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_autoscaler#predictive_method GoogleComputeAutoscaler#predictive_method}
 	PredictiveMethod *string `field:"optional" json:"predictiveMethod" yaml:"predictiveMethod"`
 }
 

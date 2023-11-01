@@ -35,6 +35,8 @@ type CloudRunV2JobTemplateTemplateVpcAccessOutputReference interface {
 	Fqn() *string
 	InternalValue() *CloudRunV2JobTemplateTemplateVpcAccess
 	SetInternalValue(val *CloudRunV2JobTemplateTemplateVpcAccess)
+	NetworkInterfaces() CloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesList
+	NetworkInterfacesInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,8 +69,10 @@ type CloudRunV2JobTemplateTemplateVpcAccessOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutNetworkInterfaces(value interface{})
 	ResetConnector()
 	ResetEgress()
+	ResetNetworkInterfaces()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -169,6 +173,26 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessOutputReference) Intern
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessOutputReference) NetworkInterfaces() CloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesList {
+	var returns CloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesList
+	_jsii_.Get(
+		j,
+		"networkInterfaces",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessOutputReference) NetworkInterfacesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"networkInterfacesInput",
 		&returns,
 	)
 	return returns
@@ -485,6 +509,17 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessOutputReference) Interp
 	return returns
 }
 
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessOutputReference) PutNetworkInterfaces(value interface{}) {
+	if err := c.validatePutNetworkInterfacesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNetworkInterfaces",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessOutputReference) ResetConnector() {
 	_jsii_.InvokeVoid(
 		c,
@@ -497,6 +532,14 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessOutputReference) ResetE
 	_jsii_.InvokeVoid(
 		c,
 		"resetEgress",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessOutputReference) ResetNetworkInterfaces() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNetworkInterfaces",
 		nil, // no parameters
 	)
 }

@@ -10,6 +10,8 @@ import (
 
 type ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference interface {
 	cdktf.ComplexObject
+	AptRepository() ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference
+	AptRepositoryInput() *ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -48,6 +50,8 @@ type ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	YumRepository() ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference
+	YumRepositoryInput() *ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,15 +76,19 @@ type ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAptRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository)
 	PutDockerRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository)
 	PutMavenRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository)
 	PutNpmRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository)
 	PutPythonRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository)
+	PutYumRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository)
+	ResetAptRepository()
 	ResetDescription()
 	ResetDockerRepository()
 	ResetMavenRepository()
 	ResetNpmRepository()
 	ResetPythonRepository()
+	ResetYumRepository()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -94,6 +102,26 @@ type ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference interface {
 // The jsii proxy struct for ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference
 type jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) AptRepository() ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference {
+	var returns ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference
+	_jsii_.Get(
+		j,
+		"aptRepository",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) AptRepositoryInput() *ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository {
+	var returns *ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository
+	_jsii_.Get(
+		j,
+		"aptRepositoryInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -261,6 +289,26 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) YumRepository() ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference {
+	var returns ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference
+	_jsii_.Get(
+		j,
+		"yumRepository",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) YumRepositoryInput() *ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository {
+	var returns *ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository
+	_jsii_.Get(
+		j,
+		"yumRepositoryInput",
 		&returns,
 	)
 	return returns
@@ -546,6 +594,17 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 	return returns
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) PutAptRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository) {
+	if err := a.validatePutAptRepositoryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAptRepository",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) PutDockerRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository) {
 	if err := a.validatePutDockerRepositoryParameters(value); err != nil {
 		panic(err)
@@ -590,6 +649,25 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 	)
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) PutYumRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository) {
+	if err := a.validatePutYumRepositoryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putYumRepository",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) ResetAptRepository() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAptRepository",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) ResetDescription() {
 	_jsii_.InvokeVoid(
 		a,
@@ -626,6 +704,14 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 	_jsii_.InvokeVoid(
 		a,
 		"resetPythonRepository",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) ResetYumRepository() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetYumRepository",
 		nil, // no parameters
 	)
 }

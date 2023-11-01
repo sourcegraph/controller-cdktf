@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlelogginglogview/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_log_view google_logging_log_view}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_logging_log_view google_logging_log_view}.
 type GoogleLoggingLogView interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -474,7 +474,7 @@ func (j *jsiiProxy_GoogleLoggingLogView) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_log_view google_logging_log_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_logging_log_view google_logging_log_view} Resource.
 func NewGoogleLoggingLogView(scope constructs.Construct, id *string, config *GoogleLoggingLogViewConfig) GoogleLoggingLogView {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewGoogleLoggingLogView(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_log_view google_logging_log_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_logging_log_view google_logging_log_view} Resource.
 func NewGoogleLoggingLogView_Override(g GoogleLoggingLogView, scope constructs.Construct, id *string, config *GoogleLoggingLogViewConfig) {
 	_init_.Initialize()
 

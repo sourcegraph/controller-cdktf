@@ -48,7 +48,15 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutAdvance
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutConfidentialNodesParameters(value *ContainerClusterNodeConfigConfidentialNodes) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutEphemeralStorageLocalSsdConfigParameters(value *ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutFastSocketParameters(value *ContainerClusterNodeConfigFastSocket) error {
 	return nil
 }
 

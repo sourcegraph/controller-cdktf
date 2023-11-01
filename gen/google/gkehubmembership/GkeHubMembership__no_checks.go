@@ -96,6 +96,10 @@ func (j *jsiiProxy_GkeHubMembership) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
+func (j *jsiiProxy_GkeHubMembership) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GkeHubMembership) validateSetMembershipIdParameters(val *string) error {
 	return nil
 }

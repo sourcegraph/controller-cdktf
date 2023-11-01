@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigquerytable/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_table google_bigquery_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigquery_table google_bigquery_table}.
 type GoogleBigqueryTable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -41,6 +41,7 @@ type GoogleBigqueryTable interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	EncryptionConfiguration() GoogleBigqueryTableEncryptionConfigurationOutputReference
 	EncryptionConfigurationInput() *GoogleBigqueryTableEncryptionConfiguration
 	Etag() *string
@@ -97,15 +98,21 @@ type GoogleBigqueryTable interface {
 	RangePartitioningInput() *GoogleBigqueryTableRangePartitioning
 	// Experimental.
 	RawOverrides() interface{}
+	RequirePartitionFilter() interface{}
+	SetRequirePartitionFilter(val interface{})
+	RequirePartitionFilterInput() interface{}
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
 	SelfLink() *string
+	TableConstraints() GoogleBigqueryTableTableConstraintsOutputReference
+	TableConstraintsInput() *GoogleBigqueryTableTableConstraints
 	TableId() *string
 	SetTableId(val *string)
 	TableIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -144,6 +151,7 @@ type GoogleBigqueryTable interface {
 	PutExternalDataConfiguration(value *GoogleBigqueryTableExternalDataConfiguration)
 	PutMaterializedView(value *GoogleBigqueryTableMaterializedView)
 	PutRangePartitioning(value *GoogleBigqueryTableRangePartitioning)
+	PutTableConstraints(value *GoogleBigqueryTableTableConstraints)
 	PutTimePartitioning(value *GoogleBigqueryTableTimePartitioning)
 	PutView(value *GoogleBigqueryTableView)
 	ResetClustering()
@@ -162,7 +170,9 @@ type GoogleBigqueryTable interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRangePartitioning()
+	ResetRequirePartitionFilter()
 	ResetSchema()
+	ResetTableConstraints()
 	ResetTimePartitioning()
 	ResetView()
 	SynthesizeAttributes() *map[string]interface{}
@@ -315,6 +325,16 @@ func (j *jsiiProxy_GoogleBigqueryTable) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -660,6 +680,26 @@ func (j *jsiiProxy_GoogleBigqueryTable) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryTable) RequirePartitionFilter() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requirePartitionFilter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable) RequirePartitionFilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requirePartitionFilterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryTable) Schema() *string {
 	var returns *string
 	_jsii_.Get(
@@ -690,6 +730,26 @@ func (j *jsiiProxy_GoogleBigqueryTable) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryTable) TableConstraints() GoogleBigqueryTableTableConstraintsOutputReference {
+	var returns GoogleBigqueryTableTableConstraintsOutputReference
+	_jsii_.Get(
+		j,
+		"tableConstraints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable) TableConstraintsInput() *GoogleBigqueryTableTableConstraints {
+	var returns *GoogleBigqueryTableTableConstraints
+	_jsii_.Get(
+		j,
+		"tableConstraintsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryTable) TableId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -715,6 +775,16 @@ func (j *jsiiProxy_GoogleBigqueryTable) TerraformGeneratorMetadata() *cdktf.Terr
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
 		&returns,
 	)
 	return returns
@@ -791,7 +861,7 @@ func (j *jsiiProxy_GoogleBigqueryTable) ViewInput() *GoogleBigqueryTableView {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
 func NewGoogleBigqueryTable(scope constructs.Construct, id *string, config *GoogleBigqueryTableConfig) GoogleBigqueryTable {
 	_init_.Initialize()
 
@@ -809,7 +879,7 @@ func NewGoogleBigqueryTable(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
 func NewGoogleBigqueryTable_Override(g GoogleBigqueryTable, scope constructs.Construct, id *string, config *GoogleBigqueryTableConfig) {
 	_init_.Initialize()
 
@@ -994,6 +1064,17 @@ func (j *jsiiProxy_GoogleBigqueryTable)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable)SetRequirePartitionFilter(val interface{}) {
+	if err := j.validateSetRequirePartitionFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requirePartitionFilter",
 		val,
 	)
 }
@@ -1330,6 +1411,17 @@ func (g *jsiiProxy_GoogleBigqueryTable) PutRangePartitioning(value *GoogleBigque
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryTable) PutTableConstraints(value *GoogleBigqueryTableTableConstraints) {
+	if err := g.validatePutTableConstraintsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTableConstraints",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryTable) PutTimePartitioning(value *GoogleBigqueryTableTimePartitioning) {
 	if err := g.validatePutTimePartitioningParameters(value); err != nil {
 		panic(err)
@@ -1464,10 +1556,26 @@ func (g *jsiiProxy_GoogleBigqueryTable) ResetRangePartitioning() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryTable) ResetRequirePartitionFilter() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRequirePartitionFilter",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryTable) ResetSchema() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSchema",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryTable) ResetTableConstraints() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTableConstraints",
 		nil, // no parameters
 	)
 }

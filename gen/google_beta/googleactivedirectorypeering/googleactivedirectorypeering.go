@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleactivedirectorypeering/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_active_directory_peering google_active_directory_peering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_active_directory_peering google_active_directory_peering}.
 type GoogleActiveDirectoryPeering interface {
 	cdktf.TerraformResource
 	AuthorizedNetwork() *string
@@ -34,6 +34,7 @@ type GoogleActiveDirectoryPeering interface {
 	DomainResource() *string
 	SetDomainResource(val *string)
 	DomainResourceInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -79,6 +80,7 @@ type GoogleActiveDirectoryPeering interface {
 	StatusMessageInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -220,6 +222,16 @@ func (j *jsiiProxy_GoogleActiveDirectoryPeering) DomainResourceInput() *string {
 	_jsii_.Get(
 		j,
 		"domainResourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleActiveDirectoryPeering) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -445,6 +457,16 @@ func (j *jsiiProxy_GoogleActiveDirectoryPeering) TerraformGeneratorMetadata() *c
 	return returns
 }
 
+func (j *jsiiProxy_GoogleActiveDirectoryPeering) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleActiveDirectoryPeering) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -486,7 +508,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryPeering) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_active_directory_peering google_active_directory_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_active_directory_peering google_active_directory_peering} Resource.
 func NewGoogleActiveDirectoryPeering(scope constructs.Construct, id *string, config *GoogleActiveDirectoryPeeringConfig) GoogleActiveDirectoryPeering {
 	_init_.Initialize()
 
@@ -504,7 +526,7 @@ func NewGoogleActiveDirectoryPeering(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_active_directory_peering google_active_directory_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_active_directory_peering google_active_directory_peering} Resource.
 func NewGoogleActiveDirectoryPeering_Override(g GoogleActiveDirectoryPeering, scope constructs.Construct, id *string, config *GoogleActiveDirectoryPeeringConfig) {
 	_init_.Initialize()
 

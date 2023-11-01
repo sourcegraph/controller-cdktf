@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataformrepositoryreleaseconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataform_repository_release_config google_dataform_repository_release_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataform_repository_release_config google_dataform_repository_release_config}.
 type GoogleDataformRepositoryReleaseConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -511,7 +511,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfig) TimeZoneInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataform_repository_release_config google_dataform_repository_release_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataform_repository_release_config google_dataform_repository_release_config} Resource.
 func NewGoogleDataformRepositoryReleaseConfig(scope constructs.Construct, id *string, config *GoogleDataformRepositoryReleaseConfigConfig) GoogleDataformRepositoryReleaseConfig {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewGoogleDataformRepositoryReleaseConfig(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataform_repository_release_config google_dataform_repository_release_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataform_repository_release_config google_dataform_repository_release_config} Resource.
 func NewGoogleDataformRepositoryReleaseConfig_Override(g GoogleDataformRepositoryReleaseConfig, scope constructs.Construct, id *string, config *GoogleDataformRepositoryReleaseConfigConfig) {
 	_init_.Initialize()
 

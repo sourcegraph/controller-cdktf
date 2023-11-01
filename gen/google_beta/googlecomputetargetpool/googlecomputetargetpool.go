@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputetargetpool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_pool google_compute_target_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_target_pool google_compute_target_pool}.
 type GoogleComputeTargetPool interface {
 	cdktf.TerraformResource
 	BackupPool() *string
@@ -79,6 +79,9 @@ type GoogleComputeTargetPool interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	SecurityPolicy() *string
+	SetSecurityPolicy(val *string)
+	SecurityPolicyInput() *string
 	SelfLink() *string
 	SessionAffinity() *string
 	SetSessionAffinity(val *string)
@@ -128,6 +131,7 @@ type GoogleComputeTargetPool interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
+	ResetSecurityPolicy()
 	ResetSessionAffinity()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -455,6 +459,26 @@ func (j *jsiiProxy_GoogleComputeTargetPool) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeTargetPool) SecurityPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeTargetPool) SecurityPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeTargetPool) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -536,7 +560,7 @@ func (j *jsiiProxy_GoogleComputeTargetPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_pool google_compute_target_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_target_pool google_compute_target_pool} Resource.
 func NewGoogleComputeTargetPool(scope constructs.Construct, id *string, config *GoogleComputeTargetPoolConfig) GoogleComputeTargetPool {
 	_init_.Initialize()
 
@@ -554,7 +578,7 @@ func NewGoogleComputeTargetPool(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_pool google_compute_target_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_target_pool google_compute_target_pool} Resource.
 func NewGoogleComputeTargetPool_Override(g GoogleComputeTargetPool, scope constructs.Construct, id *string, config *GoogleComputeTargetPoolConfig) {
 	_init_.Initialize()
 
@@ -728,6 +752,17 @@ func (j *jsiiProxy_GoogleComputeTargetPool)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeTargetPool)SetSecurityPolicy(val *string) {
+	if err := j.validateSetSecurityPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityPolicy",
 		val,
 	)
 }
@@ -1088,6 +1123,14 @@ func (g *jsiiProxy_GoogleComputeTargetPool) ResetRegion() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeTargetPool) ResetSecurityPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecurityPolicy",
 		nil, // no parameters
 	)
 }

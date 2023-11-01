@@ -48,6 +48,10 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) va
 	return nil
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) validatePutPscConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

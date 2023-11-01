@@ -108,6 +108,10 @@ func (j *jsiiProxy_GoogleDataformRepository) validateSetRegionParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataformRepository) validateSetServiceAccountParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleDataformRepositoryParameters(scope constructs.Construct, id *string, config *GoogleDataformRepositoryConfig) error {
 	return nil
 }

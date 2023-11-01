@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleserviceaccountiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_service_account_iam_binding google_service_account_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_service_account_iam_binding google_service_account_iam_binding}.
 type GoogleServiceAccountIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_GoogleServiceAccountIamBinding) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_service_account_iam_binding google_service_account_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_service_account_iam_binding google_service_account_iam_binding} Resource.
 func NewGoogleServiceAccountIamBinding(scope constructs.Construct, id *string, config *GoogleServiceAccountIamBindingConfig) GoogleServiceAccountIamBinding {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewGoogleServiceAccountIamBinding(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_service_account_iam_binding google_service_account_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_service_account_iam_binding google_service_account_iam_binding} Resource.
 func NewGoogleServiceAccountIamBinding_Override(g GoogleServiceAccountIamBinding, scope constructs.Construct, id *string, config *GoogleServiceAccountIamBindingConfig) {
 	_init_.Initialize()
 

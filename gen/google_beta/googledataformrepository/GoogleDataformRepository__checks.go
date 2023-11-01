@@ -344,6 +344,14 @@ func (j *jsiiProxy_GoogleDataformRepository) validateSetRegionParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataformRepository) validateSetServiceAccountParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewGoogleDataformRepositoryParameters(scope constructs.Construct, id *string, config *GoogleDataformRepositoryConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -21,33 +21,36 @@ type GoogleApiGatewayApiConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier to assign to the API. Must be unique within scope of the parent resource(project).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_api_gateway_api#api_id GoogleApiGatewayApi#api_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_api#api_id GoogleApiGatewayApi#api_id}
 	ApiId *string `field:"required" json:"apiId" yaml:"apiId"`
 	// A user-visible name for the API.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_api_gateway_api#display_name GoogleApiGatewayApi#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_api#display_name GoogleApiGatewayApi#display_name}
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_api_gateway_api#id GoogleApiGatewayApi#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_api#id GoogleApiGatewayApi#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Resource labels to represent user-provided metadata.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_api_gateway_api#labels GoogleApiGatewayApi#labels}
+	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_api#labels GoogleApiGatewayApi#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// Immutable.
 	//
 	// The name of a Google Managed Service ( https://cloud.google.com/service-infrastructure/docs/glossary#managed).
 	// If not specified, a new Service will automatically be created in the same project as this API.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_api_gateway_api#managed_service GoogleApiGatewayApi#managed_service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_api#managed_service GoogleApiGatewayApi#managed_service}
 	ManagedService *string `field:"optional" json:"managedService" yaml:"managedService"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_api_gateway_api#project GoogleApiGatewayApi#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_api#project GoogleApiGatewayApi#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_api_gateway_api#timeouts GoogleApiGatewayApi#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_api#timeouts GoogleApiGatewayApi#timeouts}
 	Timeouts *GoogleApiGatewayApiTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

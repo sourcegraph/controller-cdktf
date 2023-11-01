@@ -68,6 +68,10 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) validatePutResourceGroupParamete
 	return nil
 }
 
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) validatePutSyntheticMonitorParameters(value *MonitoringUptimeCheckConfigSyntheticMonitor) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringUptimeCheckConfig) validatePutTcpCheckParameters(value *MonitoringUptimeCheckConfigTcpCheck) error {
 	return nil
 }

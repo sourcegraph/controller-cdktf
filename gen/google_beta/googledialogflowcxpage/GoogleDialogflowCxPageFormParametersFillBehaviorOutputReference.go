@@ -31,6 +31,8 @@ type GoogleDialogflowCxPageFormParametersFillBehaviorOutputReference interface {
 	InitialPromptFulfillmentInput() *GoogleDialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillment
 	InternalValue() *GoogleDialogflowCxPageFormParametersFillBehavior
 	SetInternalValue(val *GoogleDialogflowCxPageFormParametersFillBehavior)
+	RepromptEventHandlers() GoogleDialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersList
+	RepromptEventHandlersInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,7 +66,9 @@ type GoogleDialogflowCxPageFormParametersFillBehaviorOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutInitialPromptFulfillment(value *GoogleDialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillment)
+	PutRepromptEventHandlers(value interface{})
 	ResetInitialPromptFulfillment()
+	ResetRepromptEventHandlers()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -145,6 +149,26 @@ func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorOutputReferen
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorOutputReference) RepromptEventHandlers() GoogleDialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersList {
+	var returns GoogleDialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersList
+	_jsii_.Get(
+		j,
+		"repromptEventHandlers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorOutputReference) RepromptEventHandlersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"repromptEventHandlersInput",
 		&returns,
 	)
 	return returns
@@ -450,10 +474,29 @@ func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorOutputReferen
 	)
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorOutputReference) PutRepromptEventHandlers(value interface{}) {
+	if err := g.validatePutRepromptEventHandlersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRepromptEventHandlers",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorOutputReference) ResetInitialPromptFulfillment() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetInitialPromptFulfillment",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorOutputReference) ResetRepromptEventHandlers() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRepromptEventHandlers",
 		nil, // no parameters
 	)
 }

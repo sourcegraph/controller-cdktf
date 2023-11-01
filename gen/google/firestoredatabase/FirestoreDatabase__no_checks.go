@@ -84,6 +84,10 @@ func (j *jsiiProxy_FirestoreDatabase) validateSetCountParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_FirestoreDatabase) validateSetDeleteProtectionStateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FirestoreDatabase) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (j *jsiiProxy_FirestoreDatabase) validateSetLocationIdParameters(val *strin
 }
 
 func (j *jsiiProxy_FirestoreDatabase) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FirestoreDatabase) validateSetPointInTimeRecoveryEnablementParameters(val *string) error {
 	return nil
 }
 

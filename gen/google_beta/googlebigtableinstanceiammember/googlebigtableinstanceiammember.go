@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigtableinstanceiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigtable_instance_iam_member google_bigtable_instance_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigtable_instance_iam_member google_bigtable_instance_iam_member}.
 type GoogleBigtableInstanceIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceIamMember) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigtable_instance_iam_member google_bigtable_instance_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigtable_instance_iam_member google_bigtable_instance_iam_member} Resource.
 func NewGoogleBigtableInstanceIamMember(scope constructs.Construct, id *string, config *GoogleBigtableInstanceIamMemberConfig) GoogleBigtableInstanceIamMember {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleBigtableInstanceIamMember(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigtable_instance_iam_member google_bigtable_instance_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigtable_instance_iam_member google_bigtable_instance_iam_member} Resource.
 func NewGoogleBigtableInstanceIamMember_Override(g GoogleBigtableInstanceIamMember, scope constructs.Construct, id *string, config *GoogleBigtableInstanceIamMemberConfig) {
 	_init_.Initialize()
 

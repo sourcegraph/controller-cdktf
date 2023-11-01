@@ -72,6 +72,10 @@ func validateGoogleAlloydbBackup_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAlloydbBackup) validateSetAnnotationsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAlloydbBackup) validateSetBackupIdParameters(val *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (j *jsiiProxy_GoogleAlloydbBackup) validateSetCountParameters(val interface
 }
 
 func (j *jsiiProxy_GoogleAlloydbBackup) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleAlloydbBackup) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }
 
@@ -113,6 +121,10 @@ func (j *jsiiProxy_GoogleAlloydbBackup) validateSetProjectParameters(val *string
 }
 
 func (j *jsiiProxy_GoogleAlloydbBackup) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleAlloydbBackup) validateSetTypeParameters(val *string) error {
 	return nil
 }
 
