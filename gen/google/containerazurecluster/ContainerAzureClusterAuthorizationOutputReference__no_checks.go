@@ -44,6 +44,10 @@ func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) validateIn
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) validatePutAdminGroupsParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) validatePutAdminUsersParameters(value interface{}) error {
 	return nil
 }

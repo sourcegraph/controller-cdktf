@@ -8,7 +8,7 @@ type GoogleNetworkServicesEdgeCacheOriginTimeout struct {
 	//
 	// The connectTimeout capped by the deadline set by the request's maxAttemptsTimeout.  The last connection attempt may have a smaller connectTimeout in order to adhere to the overall maxAttemptsTimeout.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_network_services_edge_cache_origin#connect_timeout GoogleNetworkServicesEdgeCacheOrigin#connect_timeout}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_network_services_edge_cache_origin#connect_timeout GoogleNetworkServicesEdgeCacheOrigin#connect_timeout}
 	ConnectTimeout *string `field:"optional" json:"connectTimeout" yaml:"connectTimeout"`
 	// The maximum time across all connection attempts to the origin, including failover origins, before returning an error to the client.
 	//
@@ -18,7 +18,7 @@ type GoogleNetworkServicesEdgeCacheOriginTimeout struct {
 	//
 	// If a failoverOrigin is specified, the maxAttemptsTimeout of the first configured origin sets the deadline for all connection attempts across all failoverOrigins.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_network_services_edge_cache_origin#max_attempts_timeout GoogleNetworkServicesEdgeCacheOrigin#max_attempts_timeout}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_network_services_edge_cache_origin#max_attempts_timeout GoogleNetworkServicesEdgeCacheOrigin#max_attempts_timeout}
 	MaxAttemptsTimeout *string `field:"optional" json:"maxAttemptsTimeout" yaml:"maxAttemptsTimeout"`
 	// The maximum duration to wait between reads of a single HTTP connection/stream.
 	//
@@ -28,7 +28,7 @@ type GoogleNetworkServicesEdgeCacheOriginTimeout struct {
 	//
 	// If the response headers have already been written to the connection, the response will be truncated and logged.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_network_services_edge_cache_origin#read_timeout GoogleNetworkServicesEdgeCacheOrigin#read_timeout}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_network_services_edge_cache_origin#read_timeout GoogleNetworkServicesEdgeCacheOrigin#read_timeout}
 	ReadTimeout *string `field:"optional" json:"readTimeout" yaml:"readTimeout"`
 	// The maximum duration to wait for the last byte of a response to arrive when reading from the HTTP connection/stream.
 	//
@@ -40,7 +40,7 @@ type GoogleNetworkServicesEdgeCacheOriginTimeout struct {
 	//
 	// If the response headers have already been written to the connection, the response will be truncated and logged.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_network_services_edge_cache_origin#response_timeout GoogleNetworkServicesEdgeCacheOrigin#response_timeout}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_network_services_edge_cache_origin#response_timeout GoogleNetworkServicesEdgeCacheOrigin#response_timeout}
 	ResponseTimeout *string `field:"optional" json:"responseTimeout" yaml:"responseTimeout"`
 }
 

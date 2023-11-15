@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleassuredworkloadsworkload/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_assured_workloads_workload google_assured_workloads_workload}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_assured_workloads_workload google_assured_workloads_workload}.
 type GoogleAssuredWorkloadsWorkload interface {
 	cdktf.TerraformResource
 	BillingAccount() *string
@@ -20,6 +20,8 @@ type GoogleAssuredWorkloadsWorkload interface {
 	ComplianceRegime() *string
 	SetComplianceRegime(val *string)
 	ComplianceRegimeInput() *string
+	ComplianceStatus() GoogleAssuredWorkloadsWorkloadComplianceStatusList
+	CompliantButDisallowedServices() *[]*string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -39,6 +41,10 @@ type GoogleAssuredWorkloadsWorkload interface {
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
 	EffectiveLabels() cdktf.StringMap
+	EkmProvisioningResponse() GoogleAssuredWorkloadsWorkloadEkmProvisioningResponseList
+	EnableSovereignControls() interface{}
+	SetEnableSovereignControls(val interface{})
+	EnableSovereignControlsInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -50,6 +56,7 @@ type GoogleAssuredWorkloadsWorkload interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KajEnrollmentState() *string
 	KmsSettings() GoogleAssuredWorkloadsWorkloadKmsSettingsOutputReference
 	KmsSettingsInput() *GoogleAssuredWorkloadsWorkloadKmsSettings
 	Labels() *map[string]*string
@@ -68,6 +75,11 @@ type GoogleAssuredWorkloadsWorkload interface {
 	Organization() *string
 	SetOrganization(val *string)
 	OrganizationInput() *string
+	Partner() *string
+	SetPartner(val *string)
+	PartnerInput() *string
+	PartnerPermissions() GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference
+	PartnerPermissionsInput() *GoogleAssuredWorkloadsWorkloadPartnerPermissions
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -84,6 +96,7 @@ type GoogleAssuredWorkloadsWorkload interface {
 	Resources() GoogleAssuredWorkloadsWorkloadResourcesList
 	ResourceSettings() GoogleAssuredWorkloadsWorkloadResourceSettingsList
 	ResourceSettingsInput() interface{}
+	SaaEnrollmentResponse() GoogleAssuredWorkloadsWorkloadSaaEnrollmentResponseList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -93,6 +106,9 @@ type GoogleAssuredWorkloadsWorkload interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleAssuredWorkloadsWorkloadTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	ViolationNotificationsEnabled() interface{}
+	SetViolationNotificationsEnabled(val interface{})
+	ViolationNotificationsEnabledInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -119,17 +135,23 @@ type GoogleAssuredWorkloadsWorkload interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutKmsSettings(value *GoogleAssuredWorkloadsWorkloadKmsSettings)
+	PutPartnerPermissions(value *GoogleAssuredWorkloadsWorkloadPartnerPermissions)
 	PutResourceSettings(value interface{})
 	PutTimeouts(value *GoogleAssuredWorkloadsWorkloadTimeouts)
+	ResetBillingAccount()
+	ResetEnableSovereignControls()
 	ResetId()
 	ResetKmsSettings()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPartner()
+	ResetPartnerPermissions()
 	ResetProvisionedResourcesParent()
 	ResetResourceSettings()
 	ResetTimeouts()
+	ResetViolationNotificationsEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -190,6 +212,26 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) ComplianceRegimeInput() *stri
 	_jsii_.Get(
 		j,
 		"complianceRegimeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) ComplianceStatus() GoogleAssuredWorkloadsWorkloadComplianceStatusList {
+	var returns GoogleAssuredWorkloadsWorkloadComplianceStatusList
+	_jsii_.Get(
+		j,
+		"complianceStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) CompliantButDisallowedServices() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"compliantButDisallowedServices",
 		&returns,
 	)
 	return returns
@@ -275,6 +317,36 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) EffectiveLabels() cdktf.Strin
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) EkmProvisioningResponse() GoogleAssuredWorkloadsWorkloadEkmProvisioningResponseList {
+	var returns GoogleAssuredWorkloadsWorkloadEkmProvisioningResponseList
+	_jsii_.Get(
+		j,
+		"ekmProvisioningResponse",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) EnableSovereignControls() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableSovereignControls",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) EnableSovereignControlsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableSovereignControlsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -320,6 +392,16 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) KajEnrollmentState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kajEnrollmentState",
 		&returns,
 	)
 	return returns
@@ -435,6 +517,46 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) OrganizationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) Partner() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"partner",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) PartnerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"partnerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) PartnerPermissions() GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference {
+	var returns GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference
+	_jsii_.Get(
+		j,
+		"partnerPermissions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) PartnerPermissionsInput() *GoogleAssuredWorkloadsWorkloadPartnerPermissions {
+	var returns *GoogleAssuredWorkloadsWorkloadPartnerPermissions
+	_jsii_.Get(
+		j,
+		"partnerPermissionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -515,6 +637,16 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) ResourceSettingsInput() inter
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) SaaEnrollmentResponse() GoogleAssuredWorkloadsWorkloadSaaEnrollmentResponseList {
+	var returns GoogleAssuredWorkloadsWorkloadSaaEnrollmentResponseList
+	_jsii_.Get(
+		j,
+		"saaEnrollmentResponse",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -575,8 +707,28 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) ViolationNotificationsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"violationNotificationsEnabled",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_assured_workloads_workload google_assured_workloads_workload} Resource.
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) ViolationNotificationsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"violationNotificationsEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_assured_workloads_workload google_assured_workloads_workload} Resource.
 func NewGoogleAssuredWorkloadsWorkload(scope constructs.Construct, id *string, config *GoogleAssuredWorkloadsWorkloadConfig) GoogleAssuredWorkloadsWorkload {
 	_init_.Initialize()
 
@@ -594,7 +746,7 @@ func NewGoogleAssuredWorkloadsWorkload(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_assured_workloads_workload google_assured_workloads_workload} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_assured_workloads_workload google_assured_workloads_workload} Resource.
 func NewGoogleAssuredWorkloadsWorkload_Override(g GoogleAssuredWorkloadsWorkload, scope constructs.Construct, id *string, config *GoogleAssuredWorkloadsWorkloadConfig) {
 	_init_.Initialize()
 
@@ -668,6 +820,17 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload)SetDisplayName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload)SetEnableSovereignControls(val interface{}) {
+	if err := j.validateSetEnableSovereignControlsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableSovereignControls",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -731,6 +894,17 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload)SetOrganization(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload)SetPartner(val *string) {
+	if err := j.validateSetPartnerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"partner",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -757,6 +931,17 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload)SetProvisioners(val *[]interfa
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload)SetViolationNotificationsEnabled(val interface{}) {
+	if err := j.validateSetViolationNotificationsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"violationNotificationsEnabled",
 		val,
 	)
 }
@@ -1038,6 +1223,17 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) PutKmsSettings(value *GoogleA
 	)
 }
 
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) PutPartnerPermissions(value *GoogleAssuredWorkloadsWorkloadPartnerPermissions) {
+	if err := g.validatePutPartnerPermissionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPartnerPermissions",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) PutResourceSettings(value interface{}) {
 	if err := g.validatePutResourceSettingsParameters(value); err != nil {
 		panic(err)
@@ -1057,6 +1253,22 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) PutTimeouts(value *GoogleAssu
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) ResetBillingAccount() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBillingAccount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) ResetEnableSovereignControls() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableSovereignControls",
+		nil, // no parameters
 	)
 }
 
@@ -1092,6 +1304,22 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) ResetOverrideLogicalId() {
 	)
 }
 
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) ResetPartner() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPartner",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) ResetPartnerPermissions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPartnerPermissions",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) ResetProvisionedResourcesParent() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1112,6 +1340,14 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) ResetViolationNotificationsEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetViolationNotificationsEnabled",
 		nil, // no parameters
 	)
 }

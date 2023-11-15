@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataprocmetastoreserviceiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataproc_metastore_service_iam_member google_dataproc_metastore_service_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataproc_metastore_service_iam_member google_dataproc_metastore_service_iam_member}.
 type GoogleDataprocMetastoreServiceIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreServiceIamMember) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataproc_metastore_service_iam_member google_dataproc_metastore_service_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataproc_metastore_service_iam_member google_dataproc_metastore_service_iam_member} Resource.
 func NewGoogleDataprocMetastoreServiceIamMember(scope constructs.Construct, id *string, config *GoogleDataprocMetastoreServiceIamMemberConfig) GoogleDataprocMetastoreServiceIamMember {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGoogleDataprocMetastoreServiceIamMember(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataproc_metastore_service_iam_member google_dataproc_metastore_service_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataproc_metastore_service_iam_member google_dataproc_metastore_service_iam_member} Resource.
 func NewGoogleDataprocMetastoreServiceIamMember_Override(g GoogleDataprocMetastoreServiceIamMember, scope constructs.Construct, id *string, config *GoogleDataprocMetastoreServiceIamMemberConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefilestorebackup/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_filestore_backup google_filestore_backup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_filestore_backup google_filestore_backup}.
 type GoogleFilestoreBackup interface {
 	cdktf.TerraformResource
 	CapacityGb() *string
@@ -573,7 +573,7 @@ func (j *jsiiProxy_GoogleFilestoreBackup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_filestore_backup google_filestore_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_filestore_backup google_filestore_backup} Resource.
 func NewGoogleFilestoreBackup(scope constructs.Construct, id *string, config *GoogleFilestoreBackupConfig) GoogleFilestoreBackup {
 	_init_.Initialize()
 
@@ -591,7 +591,7 @@ func NewGoogleFilestoreBackup(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_filestore_backup google_filestore_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_filestore_backup google_filestore_backup} Resource.
 func NewGoogleFilestoreBackup_Override(g GoogleFilestoreBackup, scope constructs.Construct, id *string, config *GoogleFilestoreBackupConfig) {
 	_init_.Initialize()
 

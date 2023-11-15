@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/assuredworkloadsworkload/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/assured_workloads_workload google_assured_workloads_workload}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/assured_workloads_workload google_assured_workloads_workload}.
 type AssuredWorkloadsWorkload interface {
 	cdktf.TerraformResource
 	BillingAccount() *string
@@ -20,6 +20,8 @@ type AssuredWorkloadsWorkload interface {
 	ComplianceRegime() *string
 	SetComplianceRegime(val *string)
 	ComplianceRegimeInput() *string
+	ComplianceStatus() AssuredWorkloadsWorkloadComplianceStatusList
+	CompliantButDisallowedServices() *[]*string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -39,6 +41,10 @@ type AssuredWorkloadsWorkload interface {
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
 	EffectiveLabels() cdktf.StringMap
+	EkmProvisioningResponse() AssuredWorkloadsWorkloadEkmProvisioningResponseList
+	EnableSovereignControls() interface{}
+	SetEnableSovereignControls(val interface{})
+	EnableSovereignControlsInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -50,6 +56,7 @@ type AssuredWorkloadsWorkload interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KajEnrollmentState() *string
 	KmsSettings() AssuredWorkloadsWorkloadKmsSettingsOutputReference
 	KmsSettingsInput() *AssuredWorkloadsWorkloadKmsSettings
 	Labels() *map[string]*string
@@ -68,6 +75,11 @@ type AssuredWorkloadsWorkload interface {
 	Organization() *string
 	SetOrganization(val *string)
 	OrganizationInput() *string
+	Partner() *string
+	SetPartner(val *string)
+	PartnerInput() *string
+	PartnerPermissions() AssuredWorkloadsWorkloadPartnerPermissionsOutputReference
+	PartnerPermissionsInput() *AssuredWorkloadsWorkloadPartnerPermissions
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -84,6 +96,7 @@ type AssuredWorkloadsWorkload interface {
 	Resources() AssuredWorkloadsWorkloadResourcesList
 	ResourceSettings() AssuredWorkloadsWorkloadResourceSettingsList
 	ResourceSettingsInput() interface{}
+	SaaEnrollmentResponse() AssuredWorkloadsWorkloadSaaEnrollmentResponseList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -93,6 +106,9 @@ type AssuredWorkloadsWorkload interface {
 	TerraformResourceType() *string
 	Timeouts() AssuredWorkloadsWorkloadTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	ViolationNotificationsEnabled() interface{}
+	SetViolationNotificationsEnabled(val interface{})
+	ViolationNotificationsEnabledInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -119,17 +135,23 @@ type AssuredWorkloadsWorkload interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutKmsSettings(value *AssuredWorkloadsWorkloadKmsSettings)
+	PutPartnerPermissions(value *AssuredWorkloadsWorkloadPartnerPermissions)
 	PutResourceSettings(value interface{})
 	PutTimeouts(value *AssuredWorkloadsWorkloadTimeouts)
+	ResetBillingAccount()
+	ResetEnableSovereignControls()
 	ResetId()
 	ResetKmsSettings()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPartner()
+	ResetPartnerPermissions()
 	ResetProvisionedResourcesParent()
 	ResetResourceSettings()
 	ResetTimeouts()
+	ResetViolationNotificationsEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -190,6 +212,26 @@ func (j *jsiiProxy_AssuredWorkloadsWorkload) ComplianceRegimeInput() *string {
 	_jsii_.Get(
 		j,
 		"complianceRegimeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AssuredWorkloadsWorkload) ComplianceStatus() AssuredWorkloadsWorkloadComplianceStatusList {
+	var returns AssuredWorkloadsWorkloadComplianceStatusList
+	_jsii_.Get(
+		j,
+		"complianceStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AssuredWorkloadsWorkload) CompliantButDisallowedServices() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"compliantButDisallowedServices",
 		&returns,
 	)
 	return returns
@@ -275,6 +317,36 @@ func (j *jsiiProxy_AssuredWorkloadsWorkload) EffectiveLabels() cdktf.StringMap {
 	return returns
 }
 
+func (j *jsiiProxy_AssuredWorkloadsWorkload) EkmProvisioningResponse() AssuredWorkloadsWorkloadEkmProvisioningResponseList {
+	var returns AssuredWorkloadsWorkloadEkmProvisioningResponseList
+	_jsii_.Get(
+		j,
+		"ekmProvisioningResponse",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AssuredWorkloadsWorkload) EnableSovereignControls() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableSovereignControls",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AssuredWorkloadsWorkload) EnableSovereignControlsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableSovereignControlsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AssuredWorkloadsWorkload) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -320,6 +392,16 @@ func (j *jsiiProxy_AssuredWorkloadsWorkload) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AssuredWorkloadsWorkload) KajEnrollmentState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kajEnrollmentState",
 		&returns,
 	)
 	return returns
@@ -435,6 +517,46 @@ func (j *jsiiProxy_AssuredWorkloadsWorkload) OrganizationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AssuredWorkloadsWorkload) Partner() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"partner",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AssuredWorkloadsWorkload) PartnerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"partnerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AssuredWorkloadsWorkload) PartnerPermissions() AssuredWorkloadsWorkloadPartnerPermissionsOutputReference {
+	var returns AssuredWorkloadsWorkloadPartnerPermissionsOutputReference
+	_jsii_.Get(
+		j,
+		"partnerPermissions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AssuredWorkloadsWorkload) PartnerPermissionsInput() *AssuredWorkloadsWorkloadPartnerPermissions {
+	var returns *AssuredWorkloadsWorkloadPartnerPermissions
+	_jsii_.Get(
+		j,
+		"partnerPermissionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AssuredWorkloadsWorkload) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -515,6 +637,16 @@ func (j *jsiiProxy_AssuredWorkloadsWorkload) ResourceSettingsInput() interface{}
 	return returns
 }
 
+func (j *jsiiProxy_AssuredWorkloadsWorkload) SaaEnrollmentResponse() AssuredWorkloadsWorkloadSaaEnrollmentResponseList {
+	var returns AssuredWorkloadsWorkloadSaaEnrollmentResponseList
+	_jsii_.Get(
+		j,
+		"saaEnrollmentResponse",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AssuredWorkloadsWorkload) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -575,8 +707,28 @@ func (j *jsiiProxy_AssuredWorkloadsWorkload) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AssuredWorkloadsWorkload) ViolationNotificationsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"violationNotificationsEnabled",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/assured_workloads_workload google_assured_workloads_workload} Resource.
+func (j *jsiiProxy_AssuredWorkloadsWorkload) ViolationNotificationsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"violationNotificationsEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/assured_workloads_workload google_assured_workloads_workload} Resource.
 func NewAssuredWorkloadsWorkload(scope constructs.Construct, id *string, config *AssuredWorkloadsWorkloadConfig) AssuredWorkloadsWorkload {
 	_init_.Initialize()
 
@@ -594,7 +746,7 @@ func NewAssuredWorkloadsWorkload(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/assured_workloads_workload google_assured_workloads_workload} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/assured_workloads_workload google_assured_workloads_workload} Resource.
 func NewAssuredWorkloadsWorkload_Override(a AssuredWorkloadsWorkload, scope constructs.Construct, id *string, config *AssuredWorkloadsWorkloadConfig) {
 	_init_.Initialize()
 
@@ -668,6 +820,17 @@ func (j *jsiiProxy_AssuredWorkloadsWorkload)SetDisplayName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AssuredWorkloadsWorkload)SetEnableSovereignControls(val interface{}) {
+	if err := j.validateSetEnableSovereignControlsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableSovereignControls",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AssuredWorkloadsWorkload)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -731,6 +894,17 @@ func (j *jsiiProxy_AssuredWorkloadsWorkload)SetOrganization(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AssuredWorkloadsWorkload)SetPartner(val *string) {
+	if err := j.validateSetPartnerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"partner",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AssuredWorkloadsWorkload)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -757,6 +931,17 @@ func (j *jsiiProxy_AssuredWorkloadsWorkload)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AssuredWorkloadsWorkload)SetViolationNotificationsEnabled(val interface{}) {
+	if err := j.validateSetViolationNotificationsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"violationNotificationsEnabled",
 		val,
 	)
 }
@@ -1038,6 +1223,17 @@ func (a *jsiiProxy_AssuredWorkloadsWorkload) PutKmsSettings(value *AssuredWorklo
 	)
 }
 
+func (a *jsiiProxy_AssuredWorkloadsWorkload) PutPartnerPermissions(value *AssuredWorkloadsWorkloadPartnerPermissions) {
+	if err := a.validatePutPartnerPermissionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putPartnerPermissions",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AssuredWorkloadsWorkload) PutResourceSettings(value interface{}) {
 	if err := a.validatePutResourceSettingsParameters(value); err != nil {
 		panic(err)
@@ -1057,6 +1253,22 @@ func (a *jsiiProxy_AssuredWorkloadsWorkload) PutTimeouts(value *AssuredWorkloads
 		a,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AssuredWorkloadsWorkload) ResetBillingAccount() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBillingAccount",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AssuredWorkloadsWorkload) ResetEnableSovereignControls() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEnableSovereignControls",
+		nil, // no parameters
 	)
 }
 
@@ -1092,6 +1304,22 @@ func (a *jsiiProxy_AssuredWorkloadsWorkload) ResetOverrideLogicalId() {
 	)
 }
 
+func (a *jsiiProxy_AssuredWorkloadsWorkload) ResetPartner() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPartner",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AssuredWorkloadsWorkload) ResetPartnerPermissions() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPartnerPermissions",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AssuredWorkloadsWorkload) ResetProvisionedResourcesParent() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1112,6 +1340,14 @@ func (a *jsiiProxy_AssuredWorkloadsWorkload) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AssuredWorkloadsWorkload) ResetViolationNotificationsEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetViolationNotificationsEnabled",
 		nil, // no parameters
 	)
 }

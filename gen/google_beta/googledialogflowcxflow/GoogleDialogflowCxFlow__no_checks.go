@@ -104,6 +104,10 @@ func (j *jsiiProxy_GoogleDialogflowCxFlow) validateSetIdParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDialogflowCxFlow) validateSetIsDefaultStartFlowParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxFlow) validateSetLanguageCodeParameters(val *string) error {
 	return nil
 }

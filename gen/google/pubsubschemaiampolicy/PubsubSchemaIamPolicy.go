@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/pubsubschemaiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/pubsub_schema_iam_policy google_pubsub_schema_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/pubsub_schema_iam_policy google_pubsub_schema_iam_policy}.
 type PubsubSchemaIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_PubsubSchemaIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/pubsub_schema_iam_policy google_pubsub_schema_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/pubsub_schema_iam_policy google_pubsub_schema_iam_policy} Resource.
 func NewPubsubSchemaIamPolicy(scope constructs.Construct, id *string, config *PubsubSchemaIamPolicyConfig) PubsubSchemaIamPolicy {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewPubsubSchemaIamPolicy(scope constructs.Construct, id *string, config *Pu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/pubsub_schema_iam_policy google_pubsub_schema_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/pubsub_schema_iam_policy google_pubsub_schema_iam_policy} Resource.
 func NewPubsubSchemaIamPolicy_Override(p PubsubSchemaIamPolicy, scope constructs.Construct, id *string, config *PubsubSchemaIamPolicyConfig) {
 	_init_.Initialize()
 

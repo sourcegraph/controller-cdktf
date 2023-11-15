@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleappengineapplication/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_app_engine_application google_app_engine_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_app_engine_application google_app_engine_application}.
 type GoogleAppEngineApplication interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -554,7 +554,7 @@ func (j *jsiiProxy_GoogleAppEngineApplication) UrlDispatchRule() GoogleAppEngine
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_app_engine_application google_app_engine_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_app_engine_application google_app_engine_application} Resource.
 func NewGoogleAppEngineApplication(scope constructs.Construct, id *string, config *GoogleAppEngineApplicationConfig) GoogleAppEngineApplication {
 	_init_.Initialize()
 
@@ -572,7 +572,7 @@ func NewGoogleAppEngineApplication(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_app_engine_application google_app_engine_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_app_engine_application google_app_engine_application} Resource.
 func NewGoogleAppEngineApplication_Override(g GoogleAppEngineApplication, scope constructs.Construct, id *string, config *GoogleAppEngineApplicationConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataprocjob/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataproc_job google_dataproc_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataproc_job google_dataproc_job}.
 type GoogleDataprocJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -700,7 +700,7 @@ func (j *jsiiProxy_GoogleDataprocJob) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataproc_job google_dataproc_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataproc_job google_dataproc_job} Resource.
 func NewGoogleDataprocJob(scope constructs.Construct, id *string, config *GoogleDataprocJobConfig) GoogleDataprocJob {
 	_init_.Initialize()
 
@@ -718,7 +718,7 @@ func NewGoogleDataprocJob(scope constructs.Construct, id *string, config *Google
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataproc_job google_dataproc_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataproc_job google_dataproc_job} Resource.
 func NewGoogleDataprocJob_Override(g GoogleDataprocJob, scope constructs.Construct, id *string, config *GoogleDataprocJobConfig) {
 	_init_.Initialize()
 

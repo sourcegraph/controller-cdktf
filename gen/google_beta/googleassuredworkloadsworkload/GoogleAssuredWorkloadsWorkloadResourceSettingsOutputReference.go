@@ -25,6 +25,9 @@ type GoogleAssuredWorkloadsWorkloadResourceSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisplayName() *string
+	SetDisplayName(val *string)
+	DisplayNameInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -67,6 +70,7 @@ type GoogleAssuredWorkloadsWorkloadResourceSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDisplayName()
 	ResetResourceId()
 	ResetResourceType()
 	// Produce the Token's value at resolution time.
@@ -109,6 +113,26 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadResourceSettingsOutputReference
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadResourceSettingsOutputReference) DisplayName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadResourceSettingsOutputReference) DisplayNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayNameInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +264,17 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadResourceSettingsOutputReference
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadResourceSettingsOutputReference)SetDisplayName(val *string) {
+	if err := j.validateSetDisplayNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"displayName",
 		val,
 	)
 }
@@ -483,6 +518,14 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadResourceSettingsOutputReference
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadResourceSettingsOutputReference) ResetDisplayName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisplayName",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadResourceSettingsOutputReference) ResetResourceId() {

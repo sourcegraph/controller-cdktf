@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/dialogflowcxflow/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/dialogflow_cx_flow google_dialogflow_cx_flow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/dialogflow_cx_flow google_dialogflow_cx_flow}.
 type DialogflowCxFlow interface {
 	cdktf.TerraformResource
 	AdvancedSettings() DialogflowCxFlowAdvancedSettingsOutputReference
@@ -49,6 +49,9 @@ type DialogflowCxFlow interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IsDefaultStartFlow() interface{}
+	SetIsDefaultStartFlow(val interface{})
+	IsDefaultStartFlowInput() interface{}
 	LanguageCode() *string
 	SetLanguageCode(val *string)
 	LanguageCodeInput() *string
@@ -121,6 +124,7 @@ type DialogflowCxFlow interface {
 	ResetDescription()
 	ResetEventHandlers()
 	ResetId()
+	ResetIsDefaultStartFlow()
 	ResetLanguageCode()
 	ResetNluSettings()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -320,6 +324,26 @@ func (j *jsiiProxy_DialogflowCxFlow) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxFlow) IsDefaultStartFlow() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isDefaultStartFlow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxFlow) IsDefaultStartFlowInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isDefaultStartFlowInput",
 		&returns,
 	)
 	return returns
@@ -536,7 +560,7 @@ func (j *jsiiProxy_DialogflowCxFlow) TransitionRoutesInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/dialogflow_cx_flow google_dialogflow_cx_flow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/dialogflow_cx_flow google_dialogflow_cx_flow} Resource.
 func NewDialogflowCxFlow(scope constructs.Construct, id *string, config *DialogflowCxFlowConfig) DialogflowCxFlow {
 	_init_.Initialize()
 
@@ -554,7 +578,7 @@ func NewDialogflowCxFlow(scope constructs.Construct, id *string, config *Dialogf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/dialogflow_cx_flow google_dialogflow_cx_flow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/dialogflow_cx_flow google_dialogflow_cx_flow} Resource.
 func NewDialogflowCxFlow_Override(d DialogflowCxFlow, scope constructs.Construct, id *string, config *DialogflowCxFlowConfig) {
 	_init_.Initialize()
 
@@ -632,6 +656,17 @@ func (j *jsiiProxy_DialogflowCxFlow)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DialogflowCxFlow)SetIsDefaultStartFlow(val interface{}) {
+	if err := j.validateSetIsDefaultStartFlowParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isDefaultStartFlow",
 		val,
 	)
 }
@@ -1048,6 +1083,14 @@ func (d *jsiiProxy_DialogflowCxFlow) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxFlow) ResetIsDefaultStartFlow() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIsDefaultStartFlow",
 		nil, // no parameters
 	)
 }

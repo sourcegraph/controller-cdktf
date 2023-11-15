@@ -26,28 +26,28 @@ type GoogleSccMuteConfigConfig struct {
 	// If a filter contains project = X but is created under the
 	// project = Y scope, it might not match any findings.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_scc_mute_config#filter GoogleSccMuteConfig#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_scc_mute_config#filter GoogleSccMuteConfig#filter}
 	Filter *string `field:"required" json:"filter" yaml:"filter"`
 	// Unique identifier provided by the client within the parent scope.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_scc_mute_config#mute_config_id GoogleSccMuteConfig#mute_config_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_scc_mute_config#mute_config_id GoogleSccMuteConfig#mute_config_id}
 	MuteConfigId *string `field:"required" json:"muteConfigId" yaml:"muteConfigId"`
 	// Resource name of the new mute configs's parent. Its format is "organizations/[organization_id]", "folders/[folder_id]", or "projects/[project_id]".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_scc_mute_config#parent GoogleSccMuteConfig#parent}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_scc_mute_config#parent GoogleSccMuteConfig#parent}
 	Parent *string `field:"required" json:"parent" yaml:"parent"`
 	// A description of the mute config.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_scc_mute_config#description GoogleSccMuteConfig#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_scc_mute_config#description GoogleSccMuteConfig#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_scc_mute_config#id GoogleSccMuteConfig#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_scc_mute_config#id GoogleSccMuteConfig#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_scc_mute_config#timeouts GoogleSccMuteConfig#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_scc_mute_config#timeouts GoogleSccMuteConfig#timeouts}
 	Timeouts *GoogleSccMuteConfigTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

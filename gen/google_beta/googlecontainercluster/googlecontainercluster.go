@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecontainercluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_container_cluster google_container_cluster}.
 type GoogleContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() GoogleContainerClusterAddonsConfigOutputReference
@@ -96,6 +96,8 @@ type GoogleContainerCluster interface {
 	SetEnableTpu(val interface{})
 	EnableTpuInput() interface{}
 	Endpoint() *string
+	Fleet() GoogleContainerClusterFleetOutputReference
+	FleetInput() *GoogleContainerClusterFleet
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -268,6 +270,7 @@ type GoogleContainerCluster interface {
 	PutDefaultSnatStatus(value *GoogleContainerClusterDefaultSnatStatus)
 	PutDnsConfig(value *GoogleContainerClusterDnsConfig)
 	PutEnableK8SBetaApis(value *GoogleContainerClusterEnableK8SBetaApis)
+	PutFleet(value *GoogleContainerClusterFleet)
 	PutGatewayApiConfig(value *GoogleContainerClusterGatewayApiConfig)
 	PutIdentityServiceConfig(value *GoogleContainerClusterIdentityServiceConfig)
 	PutIpAllocationPolicy(value *GoogleContainerClusterIpAllocationPolicy)
@@ -320,6 +323,7 @@ type GoogleContainerCluster interface {
 	ResetEnableMultiNetworking()
 	ResetEnableShieldedNodes()
 	ResetEnableTpu()
+	ResetFleet()
 	ResetGatewayApiConfig()
 	ResetId()
 	ResetIdentityServiceConfig()
@@ -954,6 +958,26 @@ func (j *jsiiProxy_GoogleContainerCluster) Endpoint() *string {
 	_jsii_.Get(
 		j,
 		"endpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) Fleet() GoogleContainerClusterFleetOutputReference {
+	var returns GoogleContainerClusterFleetOutputReference
+	_jsii_.Get(
+		j,
+		"fleet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) FleetInput() *GoogleContainerClusterFleet {
+	var returns *GoogleContainerClusterFleet
+	_jsii_.Get(
+		j,
+		"fleetInput",
 		&returns,
 	)
 	return returns
@@ -1970,7 +1994,7 @@ func (j *jsiiProxy_GoogleContainerCluster) WorkloadIdentityConfigInput() *Google
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) GoogleContainerCluster {
 	_init_.Initialize()
 
@@ -1988,7 +2012,7 @@ func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster_Override(g GoogleContainerCluster, scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -2795,6 +2819,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutEnableK8SBetaApis(value *GoogleCon
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) PutFleet(value *GoogleContainerClusterFleet) {
+	if err := g.validatePutFleetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putFleet",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) PutGatewayApiConfig(value *GoogleContainerClusterGatewayApiConfig) {
 	if err := g.validatePutGatewayApiConfigParameters(value); err != nil {
 		panic(err)
@@ -3285,6 +3320,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetEnableTpu() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnableTpu",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetFleet() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFleet",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlemonitoringuptimecheckconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_monitoring_uptime_check_config google_monitoring_uptime_check_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_monitoring_uptime_check_config google_monitoring_uptime_check_config}.
 type GoogleMonitoringUptimeCheckConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -95,6 +95,9 @@ type GoogleMonitoringUptimeCheckConfig interface {
 	Timeouts() GoogleMonitoringUptimeCheckConfigTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UptimeCheckId() *string
+	UserLabels() *map[string]*string
+	SetUserLabels(val *map[string]*string)
+	UserLabelsInput() *map[string]*string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -142,6 +145,7 @@ type GoogleMonitoringUptimeCheckConfig interface {
 	ResetSyntheticMonitor()
 	ResetTcpCheck()
 	ResetTimeouts()
+	ResetUserLabels()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -617,8 +621,28 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) UptimeCheckId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) UserLabels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"userLabels",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) UserLabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"userLabelsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
 func NewGoogleMonitoringUptimeCheckConfig(scope constructs.Construct, id *string, config *GoogleMonitoringUptimeCheckConfigConfig) GoogleMonitoringUptimeCheckConfig {
 	_init_.Initialize()
 
@@ -636,7 +660,7 @@ func NewGoogleMonitoringUptimeCheckConfig(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
 func NewGoogleMonitoringUptimeCheckConfig_Override(g GoogleMonitoringUptimeCheckConfig, scope constructs.Construct, id *string, config *GoogleMonitoringUptimeCheckConfigConfig) {
 	_init_.Initialize()
 
@@ -788,6 +812,17 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig)SetTimeout(val *string) {
 	_jsii_.Set(
 		j,
 		"timeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig)SetUserLabels(val *map[string]*string) {
+	if err := j.validateSetUserLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userLabels",
 		val,
 	)
 }
@@ -1235,6 +1270,14 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) ResetUserLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUserLabels",
 		nil, // no parameters
 	)
 }

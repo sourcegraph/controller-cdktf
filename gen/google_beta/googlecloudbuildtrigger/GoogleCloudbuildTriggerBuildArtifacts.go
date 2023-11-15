@@ -10,11 +10,11 @@ type GoogleCloudbuildTriggerBuildArtifacts struct {
 	//
 	// If any of the images fail to be pushed, the build is marked FAILURE.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_cloudbuild_trigger#images GoogleCloudbuildTrigger#images}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_cloudbuild_trigger#images GoogleCloudbuildTrigger#images}
 	Images *[]*string `field:"optional" json:"images" yaml:"images"`
 	// objects block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_cloudbuild_trigger#objects GoogleCloudbuildTrigger#objects}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_cloudbuild_trigger#objects GoogleCloudbuildTrigger#objects}
 	Objects *GoogleCloudbuildTriggerBuildArtifactsObjects `field:"optional" json:"objects" yaml:"objects"`
 }
 

@@ -13,11 +13,11 @@ type GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindow struct {
 	// - SATURDAY: Saturday
 	// - SUNDAY: Sunday Possible values: ["DAY_OF_WEEK_UNSPECIFIED", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_redis_instance#day GoogleRedisInstance#day}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_redis_instance#day GoogleRedisInstance#day}
 	Day *string `field:"required" json:"day" yaml:"day"`
 	// start_time block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_redis_instance#start_time GoogleRedisInstance#start_time}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_redis_instance#start_time GoogleRedisInstance#start_time}
 	StartTime *GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime `field:"required" json:"startTime" yaml:"startTime"`
 }
 

@@ -21,7 +21,7 @@ type GoogleTagsTagKeyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Input only. The resource name of the new TagKey's parent. Must be of the form organizations/{org_id} or projects/{project_id_or_number}.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_tags_tag_key#parent GoogleTagsTagKey#parent}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_tags_tag_key#parent GoogleTagsTagKey#parent}
 	Parent *string `field:"required" json:"parent" yaml:"parent"`
 	// Input only.
 	//
@@ -29,13 +29,13 @@ type GoogleTagsTagKeyConfig struct {
 	//
 	// The short name must be 1-63 characters, beginning and ending with an alphanumeric character ([a-z0-9A-Z]) with dashes (-), underscores (_), dots (.), and alphanumerics between.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_tags_tag_key#short_name GoogleTagsTagKey#short_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_tags_tag_key#short_name GoogleTagsTagKey#short_name}
 	ShortName *string `field:"required" json:"shortName" yaml:"shortName"`
 	// User-assigned description of the TagKey. Must not exceed 256 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_tags_tag_key#description GoogleTagsTagKey#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_tags_tag_key#description GoogleTagsTagKey#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_tags_tag_key#id GoogleTagsTagKey#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_tags_tag_key#id GoogleTagsTagKey#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,17 +44,17 @@ type GoogleTagsTagKeyConfig struct {
 	//
 	// A purpose denotes that this Tag is intended for use in policies of a specific policy engine, and will involve that policy engine in management operations involving this Tag. Possible values: ["GCE_FIREWALL"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_tags_tag_key#purpose GoogleTagsTagKey#purpose}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_tags_tag_key#purpose GoogleTagsTagKey#purpose}
 	Purpose *string `field:"optional" json:"purpose" yaml:"purpose"`
 	// Optional. Purpose data cannot be changed once set.
 	//
 	// Purpose data corresponds to the policy system that the tag is intended for. For example, the GCE_FIREWALL purpose expects data in the following format: 'network = "<project-name>/<vpc-name>"'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_tags_tag_key#purpose_data GoogleTagsTagKey#purpose_data}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_tags_tag_key#purpose_data GoogleTagsTagKey#purpose_data}
 	PurposeData *map[string]*string `field:"optional" json:"purposeData" yaml:"purposeData"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_tags_tag_key#timeouts GoogleTagsTagKey#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_tags_tag_key#timeouts GoogleTagsTagKey#timeouts}
 	Timeouts *GoogleTagsTagKeyTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

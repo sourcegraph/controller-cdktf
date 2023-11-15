@@ -348,6 +348,14 @@ func (j *jsiiProxy_GoogleAlloydbCluster) validateSetCountParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAlloydbCluster) validateSetDeletionPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAlloydbCluster) validateSetDisplayNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

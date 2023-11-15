@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/dialogflowcxsecuritysettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/dialogflow_cx_security_settings google_dialogflow_cx_security_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/dialogflow_cx_security_settings google_dialogflow_cx_security_settings}.
 type DialogflowCxSecuritySettings interface {
 	cdktf.TerraformResource
 	AudioExportSettings() DialogflowCxSecuritySettingsAudioExportSettingsOutputReference
@@ -607,7 +607,7 @@ func (j *jsiiProxy_DialogflowCxSecuritySettings) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/dialogflow_cx_security_settings google_dialogflow_cx_security_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/dialogflow_cx_security_settings google_dialogflow_cx_security_settings} Resource.
 func NewDialogflowCxSecuritySettings(scope constructs.Construct, id *string, config *DialogflowCxSecuritySettingsConfig) DialogflowCxSecuritySettings {
 	_init_.Initialize()
 
@@ -625,7 +625,7 @@ func NewDialogflowCxSecuritySettings(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/dialogflow_cx_security_settings google_dialogflow_cx_security_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/dialogflow_cx_security_settings google_dialogflow_cx_security_settings} Resource.
 func NewDialogflowCxSecuritySettings_Override(d DialogflowCxSecuritySettings, scope constructs.Construct, id *string, config *DialogflowCxSecuritySettingsConfig) {
 	_init_.Initialize()
 

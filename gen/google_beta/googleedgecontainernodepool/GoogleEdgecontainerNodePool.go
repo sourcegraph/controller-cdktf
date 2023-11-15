@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleedgecontainernodepool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_edgecontainer_node_pool google_edgecontainer_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_edgecontainer_node_pool google_edgecontainer_node_pool}.
 type GoogleEdgecontainerNodePool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -600,7 +600,7 @@ func (j *jsiiProxy_GoogleEdgecontainerNodePool) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_edgecontainer_node_pool google_edgecontainer_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_edgecontainer_node_pool google_edgecontainer_node_pool} Resource.
 func NewGoogleEdgecontainerNodePool(scope constructs.Construct, id *string, config *GoogleEdgecontainerNodePoolConfig) GoogleEdgecontainerNodePool {
 	_init_.Initialize()
 
@@ -618,7 +618,7 @@ func NewGoogleEdgecontainerNodePool(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_edgecontainer_node_pool google_edgecontainer_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_edgecontainer_node_pool google_edgecontainer_node_pool} Resource.
 func NewGoogleEdgecontainerNodePool_Override(g GoogleEdgecontainerNodePool, scope constructs.Construct, id *string, config *GoogleEdgecontainerNodePoolConfig) {
 	_init_.Initialize()
 

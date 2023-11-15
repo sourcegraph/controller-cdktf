@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworksecuritytlsinspectionpolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_network_security_tls_inspection_policy google_network_security_tls_inspection_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_network_security_tls_inspection_policy google_network_security_tls_inspection_policy}.
 type GoogleNetworkSecurityTlsInspectionPolicy interface {
 	cdktf.TerraformResource
 	CaPool() *string
@@ -474,7 +474,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) UpdateTime() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_network_security_tls_inspection_policy google_network_security_tls_inspection_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_network_security_tls_inspection_policy google_network_security_tls_inspection_policy} Resource.
 func NewGoogleNetworkSecurityTlsInspectionPolicy(scope constructs.Construct, id *string, config *GoogleNetworkSecurityTlsInspectionPolicyConfig) GoogleNetworkSecurityTlsInspectionPolicy {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewGoogleNetworkSecurityTlsInspectionPolicy(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_network_security_tls_inspection_policy google_network_security_tls_inspection_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_network_security_tls_inspection_policy google_network_security_tls_inspection_policy} Resource.
 func NewGoogleNetworkSecurityTlsInspectionPolicy_Override(g GoogleNetworkSecurityTlsInspectionPolicy, scope constructs.Construct, id *string, config *GoogleNetworkSecurityTlsInspectionPolicyConfig) {
 	_init_.Initialize()
 

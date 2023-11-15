@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledialogflowcxwebhook/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dialogflow_cx_webhook google_dialogflow_cx_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_webhook google_dialogflow_cx_webhook}.
 type GoogleDialogflowCxWebhook interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -547,7 +547,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dialogflow_cx_webhook google_dialogflow_cx_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_webhook google_dialogflow_cx_webhook} Resource.
 func NewGoogleDialogflowCxWebhook(scope constructs.Construct, id *string, config *GoogleDialogflowCxWebhookConfig) GoogleDialogflowCxWebhook {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewGoogleDialogflowCxWebhook(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dialogflow_cx_webhook google_dialogflow_cx_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_webhook google_dialogflow_cx_webhook} Resource.
 func NewGoogleDialogflowCxWebhook_Override(g GoogleDialogflowCxWebhook, scope constructs.Construct, id *string, config *GoogleDialogflowCxWebhookConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlehealthcarehl7v2store/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_healthcare_hl7_v2_store google_healthcare_hl7_v2_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_healthcare_hl7_v2_store google_healthcare_hl7_v2_store}.
 type GoogleHealthcareHl7V2Store interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_GoogleHealthcareHl7V2Store) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_healthcare_hl7_v2_store google_healthcare_hl7_v2_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_healthcare_hl7_v2_store google_healthcare_hl7_v2_store} Resource.
 func NewGoogleHealthcareHl7V2Store(scope constructs.Construct, id *string, config *GoogleHealthcareHl7V2StoreConfig) GoogleHealthcareHl7V2Store {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewGoogleHealthcareHl7V2Store(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_healthcare_hl7_v2_store google_healthcare_hl7_v2_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_healthcare_hl7_v2_store google_healthcare_hl7_v2_store} Resource.
 func NewGoogleHealthcareHl7V2Store_Override(g GoogleHealthcareHl7V2Store, scope constructs.Construct, id *string, config *GoogleHealthcareHl7V2StoreConfig) {
 	_init_.Initialize()
 

@@ -21,9 +21,9 @@ type GooglePubsubTopicConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the topic.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_topic#name GooglePubsubTopic#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_pubsub_topic#name GooglePubsubTopic#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_topic#id GooglePubsubTopic#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_pubsub_topic#id GooglePubsubTopic#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,14 +35,14 @@ type GooglePubsubTopicConfig struct {
 	// 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
 	// The expected format is 'projects/*\/locations/*\/keyRings/*\/cryptoKeys/*'
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_topic#kms_key_name GooglePubsubTopic#kms_key_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_pubsub_topic#kms_key_name GooglePubsubTopic#kms_key_name}
 	KmsKeyName *string `field:"optional" json:"kmsKeyName" yaml:"kmsKeyName"`
 	// A set of key/value label pairs to assign to this Topic.
 	//
 	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_topic#labels GooglePubsubTopic#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_pubsub_topic#labels GooglePubsubTopic#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// Indicates the minimum duration to retain a message after it is published to the topic.
 	//
@@ -51,23 +51,24 @@ type GooglePubsubTopicConfig struct {
 	// For instance, it allows any attached subscription to seek to a timestamp
 	// that is up to messageRetentionDuration in the past. If this field is not
 	// set, message retention is controlled by settings on individual subscriptions.
-	// Cannot be more than 31 days or less than 10 minutes.
+	// The rotation period has the format of a decimal number, followed by the
+	// letter 's' (seconds). Cannot be more than 31 days or less than 10 minutes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_topic#message_retention_duration GooglePubsubTopic#message_retention_duration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_pubsub_topic#message_retention_duration GooglePubsubTopic#message_retention_duration}
 	MessageRetentionDuration *string `field:"optional" json:"messageRetentionDuration" yaml:"messageRetentionDuration"`
 	// message_storage_policy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_topic#message_storage_policy GooglePubsubTopic#message_storage_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_pubsub_topic#message_storage_policy GooglePubsubTopic#message_storage_policy}
 	MessageStoragePolicy *GooglePubsubTopicMessageStoragePolicy `field:"optional" json:"messageStoragePolicy" yaml:"messageStoragePolicy"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_topic#project GooglePubsubTopic#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_pubsub_topic#project GooglePubsubTopic#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// schema_settings block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_topic#schema_settings GooglePubsubTopic#schema_settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_pubsub_topic#schema_settings GooglePubsubTopic#schema_settings}
 	SchemaSettings *GooglePubsubTopicSchemaSettings `field:"optional" json:"schemaSettings" yaml:"schemaSettings"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_topic#timeouts GooglePubsubTopic#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_pubsub_topic#timeouts GooglePubsubTopic#timeouts}
 	Timeouts *GooglePubsubTopicTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

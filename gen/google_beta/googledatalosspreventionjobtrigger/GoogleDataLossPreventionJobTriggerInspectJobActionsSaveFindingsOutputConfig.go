@@ -4,7 +4,7 @@ package googledatalosspreventionjobtrigger
 type GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfig struct {
 	// table block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_data_loss_prevention_job_trigger#table GoogleDataLossPreventionJobTrigger#table}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_data_loss_prevention_job_trigger#table GoogleDataLossPreventionJobTrigger#table}
 	Table *GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTable `field:"required" json:"table" yaml:"table"`
 	// Schema used for writing the findings for Inspect jobs.
 	//
@@ -17,7 +17,7 @@ type GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfig
 	// table with no schema, and no changes will be made to an existing table that has a schema.
 	// Only for use with external storage. Possible values: ["BASIC_COLUMNS", "GCS_COLUMNS", "DATASTORE_COLUMNS", "BIG_QUERY_COLUMNS", "ALL_COLUMNS"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_data_loss_prevention_job_trigger#output_schema GoogleDataLossPreventionJobTrigger#output_schema}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_data_loss_prevention_job_trigger#output_schema GoogleDataLossPreventionJobTrigger#output_schema}
 	OutputSchema *string `field:"optional" json:"outputSchema" yaml:"outputSchema"`
 }
 

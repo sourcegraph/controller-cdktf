@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeorganizationsecuritypolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_organization_security_policy google_compute_organization_security_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_compute_organization_security_policy google_compute_organization_security_policy}.
 type GoogleComputeOrganizationSecurityPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicy) TypeInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_organization_security_policy google_compute_organization_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_compute_organization_security_policy google_compute_organization_security_policy} Resource.
 func NewGoogleComputeOrganizationSecurityPolicy(scope constructs.Construct, id *string, config *GoogleComputeOrganizationSecurityPolicyConfig) GoogleComputeOrganizationSecurityPolicy {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewGoogleComputeOrganizationSecurityPolicy(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_organization_security_policy google_compute_organization_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_compute_organization_security_policy google_compute_organization_security_policy} Resource.
 func NewGoogleComputeOrganizationSecurityPolicy_Override(g GoogleComputeOrganizationSecurityPolicy, scope constructs.Construct, id *string, config *GoogleComputeOrganizationSecurityPolicyConfig) {
 	_init_.Initialize()
 

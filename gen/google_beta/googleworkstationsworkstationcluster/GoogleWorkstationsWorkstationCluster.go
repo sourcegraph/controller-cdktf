@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleworkstationsworkstationcluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster}.
 type GoogleWorkstationsWorkstationCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -37,6 +37,8 @@ type GoogleWorkstationsWorkstationCluster interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	DomainConfig() GoogleWorkstationsWorkstationClusterDomainConfigOutputReference
+	DomainConfigInput() *GoogleWorkstationsWorkstationClusterDomainConfig
 	EffectiveAnnotations() cdktf.StringMap
 	EffectiveLabels() cdktf.StringMap
 	Etag() *string
@@ -123,10 +125,12 @@ type GoogleWorkstationsWorkstationCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDomainConfig(value *GoogleWorkstationsWorkstationClusterDomainConfig)
 	PutPrivateClusterConfig(value *GoogleWorkstationsWorkstationClusterPrivateClusterConfig)
 	PutTimeouts(value *GoogleWorkstationsWorkstationClusterTimeouts)
 	ResetAnnotations()
 	ResetDisplayName()
+	ResetDomainConfig()
 	ResetId()
 	ResetLabels()
 	ResetLocation()
@@ -266,6 +270,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) DisplayNameInput() *str
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) DomainConfig() GoogleWorkstationsWorkstationClusterDomainConfigOutputReference {
+	var returns GoogleWorkstationsWorkstationClusterDomainConfigOutputReference
+	_jsii_.Get(
+		j,
+		"domainConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) DomainConfigInput() *GoogleWorkstationsWorkstationClusterDomainConfig {
+	var returns *GoogleWorkstationsWorkstationClusterDomainConfig
+	_jsii_.Get(
+		j,
+		"domainConfigInput",
 		&returns,
 	)
 	return returns
@@ -622,7 +646,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) WorkstationClusterIdInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster} Resource.
 func NewGoogleWorkstationsWorkstationCluster(scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationClusterConfig) GoogleWorkstationsWorkstationCluster {
 	_init_.Initialize()
 
@@ -640,7 +664,7 @@ func NewGoogleWorkstationsWorkstationCluster(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster} Resource.
 func NewGoogleWorkstationsWorkstationCluster_Override(g GoogleWorkstationsWorkstationCluster, scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationClusterConfig) {
 	_init_.Initialize()
 
@@ -1084,6 +1108,17 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationCluster) OverrideLogicalId(newLo
 	)
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationCluster) PutDomainConfig(value *GoogleWorkstationsWorkstationClusterDomainConfig) {
+	if err := g.validatePutDomainConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDomainConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationCluster) PutPrivateClusterConfig(value *GoogleWorkstationsWorkstationClusterPrivateClusterConfig) {
 	if err := g.validatePutPrivateClusterConfigParameters(value); err != nil {
 		panic(err)
@@ -1118,6 +1153,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationCluster) ResetDisplayName() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDisplayName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationCluster) ResetDomainConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDomainConfig",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataplextask/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataplex_task google_dataplex_task}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_task google_dataplex_task}.
 type GoogleDataplexTask interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -660,7 +660,7 @@ func (j *jsiiProxy_GoogleDataplexTask) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataplex_task google_dataplex_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_task google_dataplex_task} Resource.
 func NewGoogleDataplexTask(scope constructs.Construct, id *string, config *GoogleDataplexTaskConfig) GoogleDataplexTask {
 	_init_.Initialize()
 
@@ -678,7 +678,7 @@ func NewGoogleDataplexTask(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataplex_task google_dataplex_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_task google_dataplex_task} Resource.
 func NewGoogleDataplexTask_Override(g GoogleDataplexTask, scope constructs.Construct, id *string, config *GoogleDataplexTaskConfig) {
 	_init_.Initialize()
 

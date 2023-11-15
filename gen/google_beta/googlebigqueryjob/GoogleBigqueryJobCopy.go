@@ -4,7 +4,7 @@ package googlebigqueryjob
 type GoogleBigqueryJobCopy struct {
 	// source_tables block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigquery_job#source_tables GoogleBigqueryJob#source_tables}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_bigquery_job#source_tables GoogleBigqueryJob#source_tables}
 	SourceTables interface{} `field:"required" json:"sourceTables" yaml:"sourceTables"`
 	// Specifies whether the job is allowed to create new tables.
 	//
@@ -13,15 +13,15 @@ type GoogleBigqueryJobCopy struct {
 	// CREATE_NEVER: The table must already exist. If it does not, a 'notFound' error is returned in the job result.
 	// Creation, truncation and append actions occur as one atomic update upon job completion Default value: "CREATE_IF_NEEDED" Possible values: ["CREATE_IF_NEEDED", "CREATE_NEVER"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigquery_job#create_disposition GoogleBigqueryJob#create_disposition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_bigquery_job#create_disposition GoogleBigqueryJob#create_disposition}
 	CreateDisposition *string `field:"optional" json:"createDisposition" yaml:"createDisposition"`
 	// destination_encryption_configuration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigquery_job#destination_encryption_configuration GoogleBigqueryJob#destination_encryption_configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_bigquery_job#destination_encryption_configuration GoogleBigqueryJob#destination_encryption_configuration}
 	DestinationEncryptionConfiguration *GoogleBigqueryJobCopyDestinationEncryptionConfiguration `field:"optional" json:"destinationEncryptionConfiguration" yaml:"destinationEncryptionConfiguration"`
 	// destination_table block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigquery_job#destination_table GoogleBigqueryJob#destination_table}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_bigquery_job#destination_table GoogleBigqueryJob#destination_table}
 	DestinationTable *GoogleBigqueryJobCopyDestinationTable `field:"optional" json:"destinationTable" yaml:"destinationTable"`
 	// Specifies the action that occurs if the destination table already exists.
 	//
@@ -32,7 +32,7 @@ type GoogleBigqueryJobCopy struct {
 	// Each action is atomic and only occurs if BigQuery is able to complete the job successfully.
 	// Creation, truncation and append actions occur as one atomic update upon job completion. Default value: "WRITE_EMPTY" Possible values: ["WRITE_TRUNCATE", "WRITE_APPEND", "WRITE_EMPTY"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigquery_job#write_disposition GoogleBigqueryJob#write_disposition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_bigquery_job#write_disposition GoogleBigqueryJob#write_disposition}
 	WriteDisposition *string `field:"optional" json:"writeDisposition" yaml:"writeDisposition"`
 }
 

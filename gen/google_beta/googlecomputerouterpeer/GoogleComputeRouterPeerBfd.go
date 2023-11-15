@@ -9,7 +9,7 @@ type GoogleComputeRouterPeerBfd struct {
 	// for the peer router to initiate the BFD session for this BGP peer.
 	// If set to 'DISABLED', BFD is disabled for this BGP peer. Possible values: ["ACTIVE", "DISABLED", "PASSIVE"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_router_peer#session_initialization_mode GoogleComputeRouterPeer#session_initialization_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_compute_router_peer#session_initialization_mode GoogleComputeRouterPeer#session_initialization_mode}
 	SessionInitializationMode *string `field:"required" json:"sessionInitializationMode" yaml:"sessionInitializationMode"`
 	// The minimum interval, in milliseconds, between BFD control packets received from the peer router.
 	//
@@ -18,7 +18,7 @@ type GoogleComputeRouterPeerBfd struct {
 	// and the transmit interval of the other router. If set, this value
 	// must be between 1000 and 30000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_router_peer#min_receive_interval GoogleComputeRouterPeer#min_receive_interval}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_compute_router_peer#min_receive_interval GoogleComputeRouterPeer#min_receive_interval}
 	MinReceiveInterval *float64 `field:"optional" json:"minReceiveInterval" yaml:"minReceiveInterval"`
 	// The minimum interval, in milliseconds, between BFD control packets transmitted to the peer router.
 	//
@@ -27,14 +27,14 @@ type GoogleComputeRouterPeerBfd struct {
 	// and the corresponding receive interval of the other router. If set,
 	// this value must be between 1000 and 30000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_router_peer#min_transmit_interval GoogleComputeRouterPeer#min_transmit_interval}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_compute_router_peer#min_transmit_interval GoogleComputeRouterPeer#min_transmit_interval}
 	MinTransmitInterval *float64 `field:"optional" json:"minTransmitInterval" yaml:"minTransmitInterval"`
 	// The number of consecutive BFD packets that must be missed before BFD declares that a peer is unavailable.
 	//
 	// If set, the value must
 	// be a value between 5 and 16.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_router_peer#multiplier GoogleComputeRouterPeer#multiplier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_compute_router_peer#multiplier GoogleComputeRouterPeer#multiplier}
 	Multiplier *float64 `field:"optional" json:"multiplier" yaml:"multiplier"`
 }
 

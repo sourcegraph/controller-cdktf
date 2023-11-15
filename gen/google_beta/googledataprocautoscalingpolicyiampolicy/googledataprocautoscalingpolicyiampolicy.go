@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataprocautoscalingpolicyiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataproc_autoscaling_policy_iam_policy google_dataproc_autoscaling_policy_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataproc_autoscaling_policy_iam_policy google_dataproc_autoscaling_policy_iam_policy}.
 type GoogleDataprocAutoscalingPolicyIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_GoogleDataprocAutoscalingPolicyIamPolicy) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataproc_autoscaling_policy_iam_policy google_dataproc_autoscaling_policy_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataproc_autoscaling_policy_iam_policy google_dataproc_autoscaling_policy_iam_policy} Resource.
 func NewGoogleDataprocAutoscalingPolicyIamPolicy(scope constructs.Construct, id *string, config *GoogleDataprocAutoscalingPolicyIamPolicyConfig) GoogleDataprocAutoscalingPolicyIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewGoogleDataprocAutoscalingPolicyIamPolicy(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataproc_autoscaling_policy_iam_policy google_dataproc_autoscaling_policy_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataproc_autoscaling_policy_iam_policy google_dataproc_autoscaling_policy_iam_policy} Resource.
 func NewGoogleDataprocAutoscalingPolicyIamPolicy_Override(g GoogleDataprocAutoscalingPolicyIamPolicy, scope constructs.Construct, id *string, config *GoogleDataprocAutoscalingPolicyIamPolicyConfig) {
 	_init_.Initialize()
 

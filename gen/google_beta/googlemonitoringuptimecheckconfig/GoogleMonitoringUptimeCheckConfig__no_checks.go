@@ -136,6 +136,10 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetTimeoutParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetUserLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewGoogleMonitoringUptimeCheckConfigParameters(scope constructs.Construct, id *string, config *GoogleMonitoringUptimeCheckConfigConfig) error {
 	return nil
 }

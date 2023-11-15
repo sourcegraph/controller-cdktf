@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesccprojectcustommodule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_scc_project_custom_module google_scc_project_custom_module}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_scc_project_custom_module google_scc_project_custom_module}.
 type GoogleSccProjectCustomModule interface {
 	cdktf.TerraformResource
 	AncestorModule() *string
@@ -447,7 +447,7 @@ func (j *jsiiProxy_GoogleSccProjectCustomModule) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_scc_project_custom_module google_scc_project_custom_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_scc_project_custom_module google_scc_project_custom_module} Resource.
 func NewGoogleSccProjectCustomModule(scope constructs.Construct, id *string, config *GoogleSccProjectCustomModuleConfig) GoogleSccProjectCustomModule {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewGoogleSccProjectCustomModule(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_scc_project_custom_module google_scc_project_custom_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_scc_project_custom_module google_scc_project_custom_module} Resource.
 func NewGoogleSccProjectCustomModule_Override(g GoogleSccProjectCustomModule, scope constructs.Construct, id *string, config *GoogleSccProjectCustomModuleConfig) {
 	_init_.Initialize()
 

@@ -124,6 +124,10 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetSourceContentsParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetUserEnvVarsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewGoogleWorkflowsWorkflowParameters(scope constructs.Construct, id *string, config *GoogleWorkflowsWorkflowConfig) error {
 	return nil
 }

@@ -56,6 +56,10 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validatePutCmekSettingsPar
 	return nil
 }
 
+func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validatePutIndexConfigsParameters(value interface{}) error {
+	return nil
+}
+
 func validateLoggingBillingAccountBucketConfig_IsConstructParameters(x interface{}) error {
 	return nil
 }

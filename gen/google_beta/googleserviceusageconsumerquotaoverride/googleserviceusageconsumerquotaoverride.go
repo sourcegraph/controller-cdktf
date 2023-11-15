@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleserviceusageconsumerquotaoverride/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_service_usage_consumer_quota_override google_service_usage_consumer_quota_override}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_service_usage_consumer_quota_override google_service_usage_consumer_quota_override}.
 type GoogleServiceUsageConsumerQuotaOverride interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_service_usage_consumer_quota_override google_service_usage_consumer_quota_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_service_usage_consumer_quota_override google_service_usage_consumer_quota_override} Resource.
 func NewGoogleServiceUsageConsumerQuotaOverride(scope constructs.Construct, id *string, config *GoogleServiceUsageConsumerQuotaOverrideConfig) GoogleServiceUsageConsumerQuotaOverride {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewGoogleServiceUsageConsumerQuotaOverride(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_service_usage_consumer_quota_override google_service_usage_consumer_quota_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_service_usage_consumer_quota_override google_service_usage_consumer_quota_override} Resource.
 func NewGoogleServiceUsageConsumerQuotaOverride_Override(g GoogleServiceUsageConsumerQuotaOverride, scope constructs.Construct, id *string, config *GoogleServiceUsageConsumerQuotaOverrideConfig) {
 	_init_.Initialize()
 

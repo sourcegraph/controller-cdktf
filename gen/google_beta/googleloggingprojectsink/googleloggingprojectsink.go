@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleloggingprojectsink/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_logging_project_sink google_logging_project_sink}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_logging_project_sink google_logging_project_sink}.
 type GoogleLoggingProjectSink interface {
 	cdktf.TerraformResource
 	BigqueryOptions() GoogleLoggingProjectSinkBigqueryOptionsOutputReference
@@ -535,7 +535,7 @@ func (j *jsiiProxy_GoogleLoggingProjectSink) WriterIdentity() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_logging_project_sink google_logging_project_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_logging_project_sink google_logging_project_sink} Resource.
 func NewGoogleLoggingProjectSink(scope constructs.Construct, id *string, config *GoogleLoggingProjectSinkConfig) GoogleLoggingProjectSink {
 	_init_.Initialize()
 
@@ -553,7 +553,7 @@ func NewGoogleLoggingProjectSink(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_logging_project_sink google_logging_project_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_logging_project_sink google_logging_project_sink} Resource.
 func NewGoogleLoggingProjectSink_Override(g GoogleLoggingProjectSink, scope constructs.Construct, id *string, config *GoogleLoggingProjectSinkConfig) {
 	_init_.Initialize()
 

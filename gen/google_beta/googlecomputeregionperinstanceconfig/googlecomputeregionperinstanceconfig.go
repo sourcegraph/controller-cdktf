@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregionperinstanceconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_region_per_instance_config google_compute_region_per_instance_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_compute_region_per_instance_config google_compute_region_per_instance_config}.
 type GoogleComputeRegionPerInstanceConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -500,7 +500,7 @@ func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfig) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_region_per_instance_config google_compute_region_per_instance_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_compute_region_per_instance_config google_compute_region_per_instance_config} Resource.
 func NewGoogleComputeRegionPerInstanceConfig(scope constructs.Construct, id *string, config *GoogleComputeRegionPerInstanceConfigConfig) GoogleComputeRegionPerInstanceConfig {
 	_init_.Initialize()
 
@@ -518,7 +518,7 @@ func NewGoogleComputeRegionPerInstanceConfig(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_region_per_instance_config google_compute_region_per_instance_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_compute_region_per_instance_config google_compute_region_per_instance_config} Resource.
 func NewGoogleComputeRegionPerInstanceConfig_Override(g GoogleComputeRegionPerInstanceConfig, scope constructs.Construct, id *string, config *GoogleComputeRegionPerInstanceConfigConfig) {
 	_init_.Initialize()
 

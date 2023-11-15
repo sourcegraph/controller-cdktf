@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataproccluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataproc_cluster google_dataproc_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataproc_cluster google_dataproc_cluster}.
 type GoogleDataprocCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -499,7 +499,7 @@ func (j *jsiiProxy_GoogleDataprocCluster) VirtualClusterConfigInput() *GoogleDat
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataproc_cluster google_dataproc_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataproc_cluster google_dataproc_cluster} Resource.
 func NewGoogleDataprocCluster(scope constructs.Construct, id *string, config *GoogleDataprocClusterConfig) GoogleDataprocCluster {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewGoogleDataprocCluster(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dataproc_cluster google_dataproc_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataproc_cluster google_dataproc_cluster} Resource.
 func NewGoogleDataprocCluster_Override(g GoogleDataprocCluster, scope constructs.Construct, id *string, config *GoogleDataprocClusterConfig) {
 	_init_.Initialize()
 

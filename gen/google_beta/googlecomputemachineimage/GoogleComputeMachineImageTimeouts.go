@@ -2,9 +2,9 @@ package googlecomputemachineimage
 
 
 type GoogleComputeMachineImageTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_machine_image#create GoogleComputeMachineImage#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_compute_machine_image#create GoogleComputeMachineImage#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_machine_image#delete GoogleComputeMachineImage#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_compute_machine_image#delete GoogleComputeMachineImage#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

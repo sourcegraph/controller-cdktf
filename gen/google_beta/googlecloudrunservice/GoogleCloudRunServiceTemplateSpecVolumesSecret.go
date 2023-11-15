@@ -14,7 +14,7 @@ type GoogleCloudRunServiceTemplateSpecVolumesSecret struct {
 	// The alias definitions must be set on the run.googleapis.com/secrets
 	// annotation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_cloud_run_service#secret_name GoogleCloudRunService#secret_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_cloud_run_service#secret_name GoogleCloudRunService#secret_name}
 	SecretName *string `field:"required" json:"secretName" yaml:"secretName"`
 	// Mode bits to use on created files by default.
 	//
@@ -23,11 +23,11 @@ type GoogleCloudRunServiceTemplateSpecVolumesSecret struct {
 	// this setting. This might be in conflict with other options that affect the
 	// file mode, like fsGroup, and the result can be other mode bits set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_cloud_run_service#default_mode GoogleCloudRunService#default_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_cloud_run_service#default_mode GoogleCloudRunService#default_mode}
 	DefaultMode *float64 `field:"optional" json:"defaultMode" yaml:"defaultMode"`
 	// items block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_cloud_run_service#items GoogleCloudRunService#items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_cloud_run_service#items GoogleCloudRunService#items}
 	Items interface{} `field:"optional" json:"items" yaml:"items"`
 }
 

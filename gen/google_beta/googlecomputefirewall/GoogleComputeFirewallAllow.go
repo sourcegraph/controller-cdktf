@@ -9,7 +9,7 @@ type GoogleComputeFirewallAllow struct {
 	// one of the following well known protocol strings (tcp, udp,
 	// icmp, esp, ah, sctp, ipip, all), or the IP protocol number.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_firewall#protocol GoogleComputeFirewall#protocol}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_compute_firewall#protocol GoogleComputeFirewall#protocol}
 	Protocol *string `field:"required" json:"protocol" yaml:"protocol"`
 	// An optional list of ports to which this rule applies.
 	//
@@ -21,7 +21,7 @@ type GoogleComputeFirewallAllow struct {
 	// Example inputs include: ["22"], ["80","443"], and
 	// ["12345-12349"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_firewall#ports GoogleComputeFirewall#ports}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_compute_firewall#ports GoogleComputeFirewall#ports}
 	Ports *[]*string `field:"optional" json:"ports" yaml:"ports"`
 }
 

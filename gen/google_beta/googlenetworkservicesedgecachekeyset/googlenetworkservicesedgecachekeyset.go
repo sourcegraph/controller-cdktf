@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkservicesedgecachekeyset/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_network_services_edge_cache_keyset google_network_services_edge_cache_keyset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_network_services_edge_cache_keyset google_network_services_edge_cache_keyset}.
 type GoogleNetworkServicesEdgeCacheKeyset interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -475,7 +475,7 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) ValidationSharedKeysInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_network_services_edge_cache_keyset google_network_services_edge_cache_keyset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_network_services_edge_cache_keyset google_network_services_edge_cache_keyset} Resource.
 func NewGoogleNetworkServicesEdgeCacheKeyset(scope constructs.Construct, id *string, config *GoogleNetworkServicesEdgeCacheKeysetConfig) GoogleNetworkServicesEdgeCacheKeyset {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewGoogleNetworkServicesEdgeCacheKeyset(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_network_services_edge_cache_keyset google_network_services_edge_cache_keyset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_network_services_edge_cache_keyset google_network_services_edge_cache_keyset} Resource.
 func NewGoogleNetworkServicesEdgeCacheKeyset_Override(g GoogleNetworkServicesEdgeCacheKeyset, scope constructs.Construct, id *string, config *GoogleNetworkServicesEdgeCacheKeysetConfig) {
 	_init_.Initialize()
 

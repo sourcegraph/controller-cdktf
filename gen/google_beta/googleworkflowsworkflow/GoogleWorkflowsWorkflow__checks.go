@@ -370,6 +370,14 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetSourceContentsParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetUserEnvVarsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewGoogleWorkflowsWorkflowParameters(scope constructs.Construct, id *string, config *GoogleWorkflowsWorkflowConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

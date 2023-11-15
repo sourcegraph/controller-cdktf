@@ -19,24 +19,24 @@ type GoogleBigqueryDatapolicyDataPolicyIamBindingConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_binding#data_policy_id GoogleBigqueryDatapolicyDataPolicyIamBinding#data_policy_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_binding#data_policy_id GoogleBigqueryDatapolicyDataPolicyIamBinding#data_policy_id}.
 	DataPolicyId *string `field:"required" json:"dataPolicyId" yaml:"dataPolicyId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_binding#members GoogleBigqueryDatapolicyDataPolicyIamBinding#members}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_binding#members GoogleBigqueryDatapolicyDataPolicyIamBinding#members}.
 	Members *[]*string `field:"required" json:"members" yaml:"members"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_binding#role GoogleBigqueryDatapolicyDataPolicyIamBinding#role}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_binding#role GoogleBigqueryDatapolicyDataPolicyIamBinding#role}.
 	Role *string `field:"required" json:"role" yaml:"role"`
 	// condition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_binding#condition GoogleBigqueryDatapolicyDataPolicyIamBinding#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_binding#condition GoogleBigqueryDatapolicyDataPolicyIamBinding#condition}
 	Condition *GoogleBigqueryDatapolicyDataPolicyIamBindingCondition `field:"optional" json:"condition" yaml:"condition"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_binding#id GoogleBigqueryDatapolicyDataPolicyIamBinding#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_binding#id GoogleBigqueryDatapolicyDataPolicyIamBinding#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_binding#location GoogleBigqueryDatapolicyDataPolicyIamBinding#location}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_binding#location GoogleBigqueryDatapolicyDataPolicyIamBinding#location}.
 	Location *string `field:"optional" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_binding#project GoogleBigqueryDatapolicyDataPolicyIamBinding#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_binding#project GoogleBigqueryDatapolicyDataPolicyIamBinding#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

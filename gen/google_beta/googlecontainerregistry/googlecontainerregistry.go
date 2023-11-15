@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecontainerregistry/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_registry google_container_registry}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_container_registry google_container_registry}.
 type GoogleContainerRegistry interface {
 	cdktf.TerraformResource
 	BucketSelfLink() *string
@@ -345,7 +345,7 @@ func (j *jsiiProxy_GoogleContainerRegistry) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_registry google_container_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_container_registry google_container_registry} Resource.
 func NewGoogleContainerRegistry(scope constructs.Construct, id *string, config *GoogleContainerRegistryConfig) GoogleContainerRegistry {
 	_init_.Initialize()
 
@@ -363,7 +363,7 @@ func NewGoogleContainerRegistry(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_registry google_container_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_container_registry google_container_registry} Resource.
 func NewGoogleContainerRegistry_Override(g GoogleContainerRegistry, scope constructs.Construct, id *string, config *GoogleContainerRegistryConfig) {
 	_init_.Initialize()
 

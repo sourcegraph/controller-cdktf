@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/orgpolicycustomconstraint/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/org_policy_custom_constraint google_org_policy_custom_constraint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/org_policy_custom_constraint google_org_policy_custom_constraint}.
 type OrgPolicyCustomConstraint interface {
 	cdktf.TerraformResource
 	ActionType() *string
@@ -507,7 +507,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/org_policy_custom_constraint google_org_policy_custom_constraint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/org_policy_custom_constraint google_org_policy_custom_constraint} Resource.
 func NewOrgPolicyCustomConstraint(scope constructs.Construct, id *string, config *OrgPolicyCustomConstraintConfig) OrgPolicyCustomConstraint {
 	_init_.Initialize()
 
@@ -525,7 +525,7 @@ func NewOrgPolicyCustomConstraint(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/org_policy_custom_constraint google_org_policy_custom_constraint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/org_policy_custom_constraint google_org_policy_custom_constraint} Resource.
 func NewOrgPolicyCustomConstraint_Override(o OrgPolicyCustomConstraint, scope constructs.Construct, id *string, config *OrgPolicyCustomConstraintConfig) {
 	_init_.Initialize()
 

@@ -25,13 +25,13 @@ type GoogleCertificateManagerCertificateConfig struct {
 	// The name must be 1-64 characters long, and match the regular expression [a-zA-Z][a-zA-Z0-9_-]* which means the first character must be a letter,
 	// and all following characters must be a dash, underscore, letter or digit.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_certificate_manager_certificate#name GoogleCertificateManagerCertificate#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_certificate_manager_certificate#name GoogleCertificateManagerCertificate#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// A human-readable description of the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_certificate_manager_certificate#description GoogleCertificateManagerCertificate#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_certificate_manager_certificate#description GoogleCertificateManagerCertificate#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_certificate_manager_certificate#id GoogleCertificateManagerCertificate#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_certificate_manager_certificate#id GoogleCertificateManagerCertificate#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,17 +41,17 @@ type GoogleCertificateManagerCertificateConfig struct {
 	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_certificate_manager_certificate#labels GoogleCertificateManagerCertificate#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_certificate_manager_certificate#labels GoogleCertificateManagerCertificate#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// The Certificate Manager location. If not specified, "global" is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_certificate_manager_certificate#location GoogleCertificateManagerCertificate#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_certificate_manager_certificate#location GoogleCertificateManagerCertificate#location}
 	Location *string `field:"optional" json:"location" yaml:"location"`
 	// managed block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_certificate_manager_certificate#managed GoogleCertificateManagerCertificate#managed}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_certificate_manager_certificate#managed GoogleCertificateManagerCertificate#managed}
 	Managed *GoogleCertificateManagerCertificateManaged `field:"optional" json:"managed" yaml:"managed"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_certificate_manager_certificate#project GoogleCertificateManagerCertificate#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_certificate_manager_certificate#project GoogleCertificateManagerCertificate#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The scope of the certificate.
 	//
@@ -64,15 +64,15 @@ type GoogleCertificateManagerCertificateConfig struct {
 	// ALL_REGIONS: Certificates with ALL_REGIONS scope are served from all GCP regions (You can only use ALL_REGIONS with global certs).
 	// See https://cloud.google.com/compute/docs/regions-zones
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_certificate_manager_certificate#scope GoogleCertificateManagerCertificate#scope}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_certificate_manager_certificate#scope GoogleCertificateManagerCertificate#scope}
 	Scope *string `field:"optional" json:"scope" yaml:"scope"`
 	// self_managed block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_certificate_manager_certificate#self_managed GoogleCertificateManagerCertificate#self_managed}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_certificate_manager_certificate#self_managed GoogleCertificateManagerCertificate#self_managed}
 	SelfManaged *GoogleCertificateManagerCertificateSelfManaged `field:"optional" json:"selfManaged" yaml:"selfManaged"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_certificate_manager_certificate#timeouts GoogleCertificateManagerCertificate#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_certificate_manager_certificate#timeouts GoogleCertificateManagerCertificate#timeouts}
 	Timeouts *GoogleCertificateManagerCertificateTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

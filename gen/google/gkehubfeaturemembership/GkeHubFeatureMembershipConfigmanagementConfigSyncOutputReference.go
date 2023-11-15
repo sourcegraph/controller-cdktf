@@ -31,6 +31,9 @@ type GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference interface 
 	GitInput() *GkeHubFeatureMembershipConfigmanagementConfigSyncGit
 	InternalValue() *GkeHubFeatureMembershipConfigmanagementConfigSync
 	SetInternalValue(val *GkeHubFeatureMembershipConfigmanagementConfigSync)
+	MetricsGcpServiceAccountEmail() *string
+	SetMetricsGcpServiceAccountEmail(val *string)
+	MetricsGcpServiceAccountEmailInput() *string
 	Oci() GkeHubFeatureMembershipConfigmanagementConfigSyncOciOutputReference
 	OciInput() *GkeHubFeatureMembershipConfigmanagementConfigSyncOci
 	PreventDrift() interface{}
@@ -74,6 +77,7 @@ type GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference interface 
 	PutGit(value *GkeHubFeatureMembershipConfigmanagementConfigSyncGit)
 	PutOci(value *GkeHubFeatureMembershipConfigmanagementConfigSyncOci)
 	ResetGit()
+	ResetMetricsGcpServiceAccountEmail()
 	ResetOci()
 	ResetPreventDrift()
 	ResetSourceFormat()
@@ -157,6 +161,26 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputRefere
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) MetricsGcpServiceAccountEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metricsGcpServiceAccountEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) MetricsGcpServiceAccountEmailInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metricsGcpServiceAccountEmailInput",
 		&returns,
 	)
 	return returns
@@ -299,6 +323,17 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputRefere
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference)SetMetricsGcpServiceAccountEmail(val *string) {
+	if err := j.validateSetMetricsGcpServiceAccountEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metricsGcpServiceAccountEmail",
 		val,
 	)
 }
@@ -559,6 +594,14 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputRefere
 	_jsii_.InvokeVoid(
 		g,
 		"resetGit",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) ResetMetricsGcpServiceAccountEmail() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMetricsGcpServiceAccountEmail",
 		nil, // no parameters
 	)
 }

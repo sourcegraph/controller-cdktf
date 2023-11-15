@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputebackendserviceiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_backend_service_iam_binding google_compute_backend_service_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_compute_backend_service_iam_binding google_compute_backend_service_iam_binding}.
 type GoogleComputeBackendServiceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceIamBinding) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_backend_service_iam_binding google_compute_backend_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_compute_backend_service_iam_binding google_compute_backend_service_iam_binding} Resource.
 func NewGoogleComputeBackendServiceIamBinding(scope constructs.Construct, id *string, config *GoogleComputeBackendServiceIamBindingConfig) GoogleComputeBackendServiceIamBinding {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleComputeBackendServiceIamBinding(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_backend_service_iam_binding google_compute_backend_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_compute_backend_service_iam_binding google_compute_backend_service_iam_binding} Resource.
 func NewGoogleComputeBackendServiceIamBinding_Override(g GoogleComputeBackendServiceIamBinding, scope constructs.Construct, id *string, config *GoogleComputeBackendServiceIamBindingConfig) {
 	_init_.Initialize()
 
