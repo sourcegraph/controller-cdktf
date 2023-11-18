@@ -35,6 +35,9 @@ type GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomContentType() *string
+	SetCustomContentType(val *string)
+	CustomContentTypeInput() *string
 	// Experimental.
 	Fqn() *string
 	Headers() *map[string]*string
@@ -48,6 +51,8 @@ type GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference interface {
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
+	PingConfig() GoogleMonitoringUptimeCheckConfigHttpCheckPingConfigOutputReference
+	PingConfigInput() *GoogleMonitoringUptimeCheckConfigHttpCheckPingConfig
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
@@ -94,13 +99,16 @@ type GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAcceptedResponseStatusCodes(value interface{})
 	PutAuthInfo(value *GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfo)
+	PutPingConfig(value *GoogleMonitoringUptimeCheckConfigHttpCheckPingConfig)
 	ResetAcceptedResponseStatusCodes()
 	ResetAuthInfo()
 	ResetBody()
 	ResetContentType()
+	ResetCustomContentType()
 	ResetHeaders()
 	ResetMaskHeaders()
 	ResetPath()
+	ResetPingConfig()
 	ResetPort()
 	ResetRequestMethod()
 	ResetUseSsl()
@@ -230,6 +238,26 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) Cr
 	return returns
 }
 
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) CustomContentType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customContentType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) CustomContentTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customContentTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -305,6 +333,26 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) Pa
 	_jsii_.Get(
 		j,
 		"pathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) PingConfig() GoogleMonitoringUptimeCheckConfigHttpCheckPingConfigOutputReference {
+	var returns GoogleMonitoringUptimeCheckConfigHttpCheckPingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"pingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) PingConfigInput() *GoogleMonitoringUptimeCheckConfigHttpCheckPingConfig {
+	var returns *GoogleMonitoringUptimeCheckConfigHttpCheckPingConfig
+	_jsii_.Get(
+		j,
+		"pingConfigInput",
 		&returns,
 	)
 	return returns
@@ -478,6 +526,17 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference)Set
 	_jsii_.Set(
 		j,
 		"contentType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference)SetCustomContentType(val *string) {
+	if err := j.validateSetCustomContentTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customContentType",
 		val,
 	)
 }
@@ -800,6 +859,17 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) Pu
 	)
 }
 
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) PutPingConfig(value *GoogleMonitoringUptimeCheckConfigHttpCheckPingConfig) {
+	if err := g.validatePutPingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) ResetAcceptedResponseStatusCodes() {
 	_jsii_.InvokeVoid(
 		g,
@@ -832,6 +902,14 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) Re
 	)
 }
 
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) ResetCustomContentType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomContentType",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) ResetHeaders() {
 	_jsii_.InvokeVoid(
 		g,
@@ -852,6 +930,14 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) Re
 	_jsii_.InvokeVoid(
 		g,
 		"resetPath",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) ResetPingConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPingConfig",
 		nil, // no parameters
 	)
 }

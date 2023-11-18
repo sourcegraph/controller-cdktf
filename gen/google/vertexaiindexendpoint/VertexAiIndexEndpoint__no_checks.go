@@ -52,6 +52,10 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiIndexEndpoint) validatePutPrivateServiceConnectConfigParameters(value *VertexAiIndexEndpointPrivateServiceConnectConfig) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiIndexEndpoint) validatePutTimeoutsParameters(value *VertexAiIndexEndpointTimeouts) error {
 	return nil
 }
@@ -105,6 +109,10 @@ func (j *jsiiProxy_VertexAiIndexEndpoint) validateSetProjectParameters(val *stri
 }
 
 func (j *jsiiProxy_VertexAiIndexEndpoint) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_VertexAiIndexEndpoint) validateSetPublicEndpointEnabledParameters(val interface{}) error {
 	return nil
 }
 

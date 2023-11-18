@@ -44,7 +44,15 @@ func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentOutputReference) valida
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentOutputReference) validatePutConditionalCasesParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentOutputReference) validatePutMessagesParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentOutputReference) validatePutSetParameterActionsParameters(value interface{}) error {
 	return nil
 }
 

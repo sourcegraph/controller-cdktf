@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleBigtableInstanceTimeoutsOutputReference) validateSetInt
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigtableInstanceTimeoutsOutputReference) validateSetReadParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigtableInstanceTimeoutsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

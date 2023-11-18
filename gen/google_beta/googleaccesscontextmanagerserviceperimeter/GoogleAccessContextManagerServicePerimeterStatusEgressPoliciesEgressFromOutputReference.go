@@ -35,6 +35,11 @@ type GoogleAccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromOut
 	IdentityTypeInput() *string
 	InternalValue() *GoogleAccessContextManagerServicePerimeterStatusEgressPoliciesEgressFrom
 	SetInternalValue(val *GoogleAccessContextManagerServicePerimeterStatusEgressPoliciesEgressFrom)
+	SourceRestriction() *string
+	SetSourceRestriction(val *string)
+	SourceRestrictionInput() *string
+	Sources() GoogleAccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromSourcesList
+	SourcesInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,8 +72,11 @@ type GoogleAccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromOut
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSources(value interface{})
 	ResetIdentities()
 	ResetIdentityType()
+	ResetSourceRestriction()
+	ResetSources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +182,46 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterStatusEgressPolicie
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromOutputReference) SourceRestriction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceRestriction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromOutputReference) SourceRestrictionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceRestrictionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromOutputReference) Sources() GoogleAccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromSourcesList {
+	var returns GoogleAccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromSourcesList
+	_jsii_.Get(
+		j,
+		"sources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromOutputReference) SourcesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sourcesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -273,6 +321,17 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterStatusEgressPolicie
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromOutputReference)SetSourceRestriction(val *string) {
+	if err := j.validateSetSourceRestrictionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceRestriction",
 		val,
 	)
 }
@@ -485,6 +544,17 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterStatusEgressPolicie
 	return returns
 }
 
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromOutputReference) PutSources(value interface{}) {
+	if err := g.validatePutSourcesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSources",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromOutputReference) ResetIdentities() {
 	_jsii_.InvokeVoid(
 		g,
@@ -497,6 +567,22 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterStatusEgressPolicie
 	_jsii_.InvokeVoid(
 		g,
 		"resetIdentityType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromOutputReference) ResetSourceRestriction() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceRestriction",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromOutputReference) ResetSources() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSources",
 		nil, // no parameters
 	)
 }

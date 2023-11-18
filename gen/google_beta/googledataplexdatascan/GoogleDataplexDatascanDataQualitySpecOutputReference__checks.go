@@ -90,6 +90,17 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validat
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validatePutPostScanActionsParameters(value *GoogleDataplexDatascanDataQualitySpecPostScanActions) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validatePutRulesParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

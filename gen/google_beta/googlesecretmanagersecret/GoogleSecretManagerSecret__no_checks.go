@@ -124,6 +124,10 @@ func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetTtlParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetVersionAliasesParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewGoogleSecretManagerSecretParameters(scope constructs.Construct, id *string, config *GoogleSecretManagerSecretConfig) error {
 	return nil
 }

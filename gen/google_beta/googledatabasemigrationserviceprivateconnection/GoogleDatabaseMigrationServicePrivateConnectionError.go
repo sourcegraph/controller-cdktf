@@ -1,0 +1,6 @@
+package googledatabasemigrationserviceprivateconnection
+
+
+type GoogleDatabaseMigrationServicePrivateConnectionError struct {
+}
+

@@ -76,6 +76,10 @@ func validateGoogleComputeSubnetwork_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetAllowSubnetCidrRoutesOverlapParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

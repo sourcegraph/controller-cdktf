@@ -48,6 +48,10 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcWebSsoConfigOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_IamWorkforcePoolProviderOidcWebSsoConfigOutputReference) validateSetAdditionalScopesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamWorkforcePoolProviderOidcWebSsoConfigOutputReference) validateSetAssertionClaimsBehaviorParameters(val *string) error {
 	return nil
 }

@@ -45,6 +45,9 @@ type GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UserIpRequestHeaders() *[]*string
+	SetUserIpRequestHeaders(val *[]*string)
+	UserIpRequestHeadersInput() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -73,6 +76,7 @@ type GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference interface {
 	ResetJsonCustomConfig()
 	ResetJsonParsing()
 	ResetLogLevel()
+	ResetUserIpRequestHeaders()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -218,6 +222,26 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference) UserIpRequestHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"userIpRequestHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference) UserIpRequestHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"userIpRequestHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewGoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference {
 	_init_.Initialize()
@@ -319,6 +343,17 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReferen
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference)SetUserIpRequestHeaders(val *[]*string) {
+	if err := j.validateSetUserIpRequestHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userIpRequestHeaders",
 		val,
 	)
 }
@@ -540,6 +575,14 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReferen
 	_jsii_.InvokeVoid(
 		g,
 		"resetLogLevel",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference) ResetUserIpRequestHeaders() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUserIpRequestHeaders",
 		nil, // no parameters
 	)
 }

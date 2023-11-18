@@ -54,6 +54,8 @@ type GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputRefe
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VpcNetworkSources() GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsVpcNetworkSourcesList
+	VpcNetworkSourcesInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,12 +81,14 @@ type GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputRefe
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDevicePolicy(value *GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsDevicePolicy)
+	PutVpcNetworkSources(value interface{})
 	ResetDevicePolicy()
 	ResetIpSubnetworks()
 	ResetMembers()
 	ResetNegate()
 	ResetRegions()
 	ResetRequiredAccessLevels()
+	ResetVpcNetworkSources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -285,6 +289,26 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicCondit
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) VpcNetworkSources() GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsVpcNetworkSourcesList {
+	var returns GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsVpcNetworkSourcesList
+	_jsii_.Get(
+		j,
+		"vpcNetworkSources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) VpcNetworkSourcesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vpcNetworkSourcesInput",
 		&returns,
 	)
 	return returns
@@ -625,6 +649,17 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicCondit
 	)
 }
 
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) PutVpcNetworkSources(value interface{}) {
+	if err := g.validatePutVpcNetworkSourcesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putVpcNetworkSources",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) ResetDevicePolicy() {
 	_jsii_.InvokeVoid(
 		g,
@@ -669,6 +704,14 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicCondit
 	_jsii_.InvokeVoid(
 		g,
 		"resetRequiredAccessLevels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) ResetVpcNetworkSources() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVpcNetworkSources",
 		nil, // no parameters
 	)
 }

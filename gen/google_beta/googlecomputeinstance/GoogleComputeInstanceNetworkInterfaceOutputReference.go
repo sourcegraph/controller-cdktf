@@ -31,14 +31,23 @@ type GoogleComputeInstanceNetworkInterfaceOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InternalIpv6PrefixLength() *float64
+	SetInternalIpv6PrefixLength(val *float64)
+	InternalIpv6PrefixLengthInput() *float64
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Ipv6AccessConfig() GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigList
 	Ipv6AccessConfigInput() interface{}
 	Ipv6AccessType() *string
+	Ipv6Address() *string
+	SetIpv6Address(val *string)
+	Ipv6AddressInput() *string
 	Name() *string
 	Network() *string
 	SetNetwork(val *string)
+	NetworkAttachment() *string
+	SetNetworkAttachment(val *string)
+	NetworkAttachmentInput() *string
 	NetworkInput() *string
 	NetworkIp() *string
 	SetNetworkIp(val *string)
@@ -49,6 +58,9 @@ type GoogleComputeInstanceNetworkInterfaceOutputReference interface {
 	QueueCount() *float64
 	SetQueueCount(val *float64)
 	QueueCountInput() *float64
+	SecurityPolicy() *string
+	SetSecurityPolicy(val *string)
+	SecurityPolicyInput() *string
 	StackType() *string
 	SetStackType(val *string)
 	StackTypeInput() *string
@@ -95,11 +107,15 @@ type GoogleComputeInstanceNetworkInterfaceOutputReference interface {
 	PutIpv6AccessConfig(value interface{})
 	ResetAccessConfig()
 	ResetAliasIpRange()
+	ResetInternalIpv6PrefixLength()
 	ResetIpv6AccessConfig()
+	ResetIpv6Address()
 	ResetNetwork()
+	ResetNetworkAttachment()
 	ResetNetworkIp()
 	ResetNicType()
 	ResetQueueCount()
+	ResetSecurityPolicy()
 	ResetStackType()
 	ResetSubnetwork()
 	ResetSubnetworkProject()
@@ -198,6 +214,26 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) Fqn() *
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) InternalIpv6PrefixLength() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"internalIpv6PrefixLength",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) InternalIpv6PrefixLengthInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"internalIpv6PrefixLengthInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -238,6 +274,26 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) Ipv6Acc
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) Ipv6Address() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6Address",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) Ipv6AddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6AddressInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -253,6 +309,26 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) Network
 	_jsii_.Get(
 		j,
 		"network",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) NetworkAttachment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkAttachment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) NetworkAttachmentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkAttachmentInput",
 		&returns,
 	)
 	return returns
@@ -323,6 +399,26 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) QueueCo
 	_jsii_.Get(
 		j,
 		"queueCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) SecurityPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) SecurityPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityPolicyInput",
 		&returns,
 	)
 	return returns
@@ -458,6 +554,17 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference)SetCompl
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference)SetInternalIpv6PrefixLength(val *float64) {
+	if err := j.validateSetInternalIpv6PrefixLengthParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"internalIpv6PrefixLength",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -469,6 +576,17 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference)SetInter
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference)SetIpv6Address(val *string) {
+	if err := j.validateSetIpv6AddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6Address",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference)SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
@@ -476,6 +594,17 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference)SetNetwo
 	_jsii_.Set(
 		j,
 		"network",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference)SetNetworkAttachment(val *string) {
+	if err := j.validateSetNetworkAttachmentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkAttachment",
 		val,
 	)
 }
@@ -509,6 +638,17 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference)SetQueue
 	_jsii_.Set(
 		j,
 		"queueCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference)SetSecurityPolicy(val *string) {
+	if err := j.validateSetSecurityPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityPolicy",
 		val,
 	)
 }
@@ -803,6 +943,14 @@ func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) ResetAl
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) ResetInternalIpv6PrefixLength() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInternalIpv6PrefixLength",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) ResetIpv6AccessConfig() {
 	_jsii_.InvokeVoid(
 		g,
@@ -811,10 +959,26 @@ func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) ResetIp
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) ResetIpv6Address() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpv6Address",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) ResetNetwork() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) ResetNetworkAttachment() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkAttachment",
 		nil, // no parameters
 	)
 }
@@ -839,6 +1003,14 @@ func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) ResetQu
 	_jsii_.InvokeVoid(
 		g,
 		"resetQueueCount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) ResetSecurityPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecurityPolicy",
 		nil, // no parameters
 	)
 }

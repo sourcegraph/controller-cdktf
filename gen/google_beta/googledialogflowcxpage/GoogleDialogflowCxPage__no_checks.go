@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleDialogflowCxPage) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxPage) validatePutAdvancedSettingsParameters(value *GoogleDialogflowCxPageAdvancedSettings) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxPage) validatePutEntryFulfillmentParameters(value *GoogleDialogflowCxPageEntryFulfillment) error {
 	return nil
 }

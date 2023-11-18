@@ -28,6 +28,8 @@ type CloudRunServiceMetadataOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EffectiveAnnotations() cdktf.StringMap
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	Fqn() *string
 	Generation() *float64
@@ -45,6 +47,7 @@ type CloudRunServiceMetadataOutputReference interface {
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
@@ -137,6 +140,26 @@ func (j *jsiiProxy_CloudRunServiceMetadataOutputReference) CreationStack() *[]*s
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunServiceMetadataOutputReference) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunServiceMetadataOutputReference) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -237,6 +260,16 @@ func (j *jsiiProxy_CloudRunServiceMetadataOutputReference) TerraformAttribute() 
 	_jsii_.Get(
 		j,
 		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunServiceMetadataOutputReference) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
 		&returns,
 	)
 	return returns

@@ -1,0 +1,6 @@
+package googlenetworkconnectivitypolicybasedroute
+
+
+type GoogleNetworkConnectivityPolicyBasedRouteWarnings struct {
+}
+

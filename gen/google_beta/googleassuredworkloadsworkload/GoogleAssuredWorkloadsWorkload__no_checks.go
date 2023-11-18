@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validatePutKmsSettingsParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validatePutPartnerPermissionsParameters(value *GoogleAssuredWorkloadsWorkloadPartnerPermissions) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validatePutResourceSettingsParameters(value interface{}) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetDisplayNameParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetEnableSovereignControlsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -116,11 +124,19 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetOrganizationParame
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetPartnerParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetProvisionedResourcesParentParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetViolationNotificationsEnabledParameters(val interface{}) error {
 	return nil
 }
 

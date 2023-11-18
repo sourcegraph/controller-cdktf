@@ -2,7 +2,7 @@ name: budget
 
 module:
   source: terraform-google-modules/project-factory/google//modules/budget
-  version: "14.0.0"
+  version: "14.4.0"
 
 target:
   language: go

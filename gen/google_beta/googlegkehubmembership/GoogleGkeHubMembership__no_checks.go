@@ -100,6 +100,10 @@ func (j *jsiiProxy_GoogleGkeHubMembership) validateSetLifecycleParameters(val *c
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeHubMembership) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeHubMembership) validateSetMembershipIdParameters(val *string) error {
 	return nil
 }

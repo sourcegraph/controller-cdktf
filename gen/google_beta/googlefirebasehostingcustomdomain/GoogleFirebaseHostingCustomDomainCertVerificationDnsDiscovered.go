@@ -1,0 +1,6 @@
+package googlefirebasehostingcustomdomain
+
+
+type GoogleFirebaseHostingCustomDomainCertVerificationDnsDiscovered struct {
+}
+

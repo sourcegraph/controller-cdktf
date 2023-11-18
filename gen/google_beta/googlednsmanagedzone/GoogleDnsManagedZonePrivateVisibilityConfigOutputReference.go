@@ -68,6 +68,7 @@ type GoogleDnsManagedZonePrivateVisibilityConfigOutputReference interface {
 	PutGkeClusters(value interface{})
 	PutNetworks(value interface{})
 	ResetGkeClusters()
+	ResetNetworks()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -488,6 +489,14 @@ func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) R
 	_jsii_.InvokeVoid(
 		g,
 		"resetGkeClusters",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) ResetNetworks() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworks",
 		nil, // no parameters
 	)
 }

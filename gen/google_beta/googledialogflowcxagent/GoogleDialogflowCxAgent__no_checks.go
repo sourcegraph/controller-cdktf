@@ -52,7 +52,19 @@ func (g *jsiiProxy_GoogleDialogflowCxAgent) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxAgent) validatePutAdvancedSettingsParameters(value *GoogleDialogflowCxAgentAdvancedSettings) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxAgent) validatePutGitIntegrationSettingsParameters(value *GoogleDialogflowCxAgentGitIntegrationSettings) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxAgent) validatePutSpeechToTextSettingsParameters(value *GoogleDialogflowCxAgentSpeechToTextSettings) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxAgent) validatePutTextToSpeechSettingsParameters(value *GoogleDialogflowCxAgentTextToSpeechSettings) error {
 	return nil
 }
 

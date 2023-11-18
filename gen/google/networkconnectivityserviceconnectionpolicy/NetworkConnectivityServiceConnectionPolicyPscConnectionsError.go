@@ -1,0 +1,6 @@
+package networkconnectivityserviceconnectionpolicy
+
+
+type NetworkConnectivityServiceConnectionPolicyPscConnectionsError struct {
+}
+

@@ -10,6 +10,8 @@ import (
 
 type ContainerClusterIpAllocationPolicyOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalPodRangesConfig() ContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference
+	AdditionalPodRangesConfigInput() *ContainerClusterIpAllocationPolicyAdditionalPodRangesConfig
 	ClusterIpv4CidrBlock() *string
 	SetClusterIpv4CidrBlock(val *string)
 	ClusterIpv4CidrBlockInput() *string
@@ -78,7 +80,9 @@ type ContainerClusterIpAllocationPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAdditionalPodRangesConfig(value *ContainerClusterIpAllocationPolicyAdditionalPodRangesConfig)
 	PutPodCidrOverprovisionConfig(value *ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig)
+	ResetAdditionalPodRangesConfig()
 	ResetClusterIpv4CidrBlock()
 	ResetClusterSecondaryRangeName()
 	ResetPodCidrOverprovisionConfig()
@@ -98,6 +102,26 @@ type ContainerClusterIpAllocationPolicyOutputReference interface {
 // The jsii proxy struct for ContainerClusterIpAllocationPolicyOutputReference
 type jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) AdditionalPodRangesConfig() ContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference {
+	var returns ContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference
+	_jsii_.Get(
+		j,
+		"additionalPodRangesConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) AdditionalPodRangesConfigInput() *ContainerClusterIpAllocationPolicyAdditionalPodRangesConfig {
+	var returns *ContainerClusterIpAllocationPolicyAdditionalPodRangesConfig
+	_jsii_.Get(
+		j,
+		"additionalPodRangesConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) ClusterIpv4CidrBlock() *string {
@@ -614,6 +638,17 @@ func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) Interpolat
 	return returns
 }
 
+func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) PutAdditionalPodRangesConfig(value *ContainerClusterIpAllocationPolicyAdditionalPodRangesConfig) {
+	if err := c.validatePutAdditionalPodRangesConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAdditionalPodRangesConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) PutPodCidrOverprovisionConfig(value *ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig) {
 	if err := c.validatePutPodCidrOverprovisionConfigParameters(value); err != nil {
 		panic(err)
@@ -622,6 +657,14 @@ func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) PutPodCidr
 		c,
 		"putPodCidrOverprovisionConfig",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) ResetAdditionalPodRangesConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAdditionalPodRangesConfig",
+		nil, // no parameters
 	)
 }
 

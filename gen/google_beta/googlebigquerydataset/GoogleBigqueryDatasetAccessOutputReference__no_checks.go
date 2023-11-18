@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) validateSetGroupB
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) validateSetIamMemberParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

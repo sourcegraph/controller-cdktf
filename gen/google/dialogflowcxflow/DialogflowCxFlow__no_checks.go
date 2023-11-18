@@ -52,6 +52,10 @@ func (d *jsiiProxy_DialogflowCxFlow) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxFlow) validatePutAdvancedSettingsParameters(value *DialogflowCxFlowAdvancedSettings) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxFlow) validatePutEventHandlersParameters(value interface{}) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (j *jsiiProxy_DialogflowCxFlow) validateSetDisplayNameParameters(val *strin
 }
 
 func (j *jsiiProxy_DialogflowCxFlow) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowCxFlow) validateSetIsDefaultStartFlowParameters(val interface{}) error {
 	return nil
 }
 

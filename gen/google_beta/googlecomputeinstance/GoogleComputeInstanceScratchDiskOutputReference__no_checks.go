@@ -56,6 +56,10 @@ func (j *jsiiProxy_GoogleComputeInstanceScratchDiskOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceScratchDiskOutputReference) validateSetDeviceNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceScratchDiskOutputReference) validateSetInterfaceParameters(val *string) error {
 	return nil
 }

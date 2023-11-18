@@ -48,6 +48,10 @@ func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorOutputReference) va
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorOutputReference) validatePutRepromptEventHandlersParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

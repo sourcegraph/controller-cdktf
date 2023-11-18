@@ -112,6 +112,10 @@ func (j *jsiiProxy_GoogleComputeTargetInstance) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeTargetInstance) validateSetSecurityPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeTargetInstance) validateSetZoneParameters(val *string) error {
 	return nil
 }

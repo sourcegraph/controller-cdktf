@@ -37,6 +37,9 @@ type IamWorkforcePoolProviderOidcOutputReference interface {
 	IssuerUri() *string
 	SetIssuerUri(val *string)
 	IssuerUriInput() *string
+	JwksJson() *string
+	SetJwksJson(val *string)
+	JwksJsonInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -74,6 +77,7 @@ type IamWorkforcePoolProviderOidcOutputReference interface {
 	PutClientSecret(value *IamWorkforcePoolProviderOidcClientSecret)
 	PutWebSsoConfig(value *IamWorkforcePoolProviderOidcWebSsoConfig)
 	ResetClientSecret()
+	ResetJwksJson()
 	ResetWebSsoConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -200,6 +204,26 @@ func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) IssuerUriInput()
 	return returns
 }
 
+func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) JwksJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jwksJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) JwksJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jwksJsonInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -319,6 +343,17 @@ func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference)SetIssuerUri(val 
 	_jsii_.Set(
 		j,
 		"issuerUri",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference)SetJwksJson(val *string) {
+	if err := j.validateSetJwksJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jwksJson",
 		val,
 	)
 }
@@ -557,6 +592,14 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) ResetClientSecre
 	_jsii_.InvokeVoid(
 		i,
 		"resetClientSecret",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) ResetJwksJson() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetJwksJson",
 		nil, // no parameters
 	)
 }

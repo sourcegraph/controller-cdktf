@@ -44,15 +44,15 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) validate
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) validatePutAutoParameters(value *GoogleSecretManagerSecretReplicationAuto) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) validatePutUserManagedParameters(value *GoogleSecretManagerSecretReplicationUserManaged) error {
 	return nil
 }
 
 func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	return nil
-}
-
-func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) validateSetAutomaticParameters(val interface{}) error {
 	return nil
 }
 

@@ -10,6 +10,8 @@ import (
 
 type DialogflowCxPageFormParametersOutputReference interface {
 	cdktf.ComplexObject
+	AdvancedSettings() DialogflowCxPageFormParametersAdvancedSettingsOutputReference
+	AdvancedSettingsInput() *DialogflowCxPageFormParametersAdvancedSettings
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -25,6 +27,9 @@ type DialogflowCxPageFormParametersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DefaultValue() *string
+	SetDefaultValue(val *string)
+	DefaultValueInput() *string
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
@@ -78,7 +83,10 @@ type DialogflowCxPageFormParametersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAdvancedSettings(value *DialogflowCxPageFormParametersAdvancedSettings)
 	PutFillBehavior(value *DialogflowCxPageFormParametersFillBehavior)
+	ResetAdvancedSettings()
+	ResetDefaultValue()
 	ResetDisplayName()
 	ResetEntityType()
 	ResetFillBehavior()
@@ -98,6 +106,26 @@ type DialogflowCxPageFormParametersOutputReference interface {
 // The jsii proxy struct for DialogflowCxPageFormParametersOutputReference
 type jsiiProxy_DialogflowCxPageFormParametersOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersOutputReference) AdvancedSettings() DialogflowCxPageFormParametersAdvancedSettingsOutputReference {
+	var returns DialogflowCxPageFormParametersAdvancedSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"advancedSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersOutputReference) AdvancedSettingsInput() *DialogflowCxPageFormParametersAdvancedSettings {
+	var returns *DialogflowCxPageFormParametersAdvancedSettings
+	_jsii_.Get(
+		j,
+		"advancedSettingsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DialogflowCxPageFormParametersOutputReference) ComplexObjectIndex() interface{} {
@@ -125,6 +153,26 @@ func (j *jsiiProxy_DialogflowCxPageFormParametersOutputReference) CreationStack(
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersOutputReference) DefaultValue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersOutputReference) DefaultValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultValueInput",
 		&returns,
 	)
 	return returns
@@ -336,6 +384,17 @@ func (j *jsiiProxy_DialogflowCxPageFormParametersOutputReference)SetComplexObjec
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersOutputReference)SetDefaultValue(val *string) {
+	if err := j.validateSetDefaultValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultValue",
 		val,
 	)
 }
@@ -614,6 +673,17 @@ func (d *jsiiProxy_DialogflowCxPageFormParametersOutputReference) InterpolationF
 	return returns
 }
 
+func (d *jsiiProxy_DialogflowCxPageFormParametersOutputReference) PutAdvancedSettings(value *DialogflowCxPageFormParametersAdvancedSettings) {
+	if err := d.validatePutAdvancedSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAdvancedSettings",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DialogflowCxPageFormParametersOutputReference) PutFillBehavior(value *DialogflowCxPageFormParametersFillBehavior) {
 	if err := d.validatePutFillBehaviorParameters(value); err != nil {
 		panic(err)
@@ -622,6 +692,22 @@ func (d *jsiiProxy_DialogflowCxPageFormParametersOutputReference) PutFillBehavio
 		d,
 		"putFillBehavior",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageFormParametersOutputReference) ResetAdvancedSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAdvancedSettings",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageFormParametersOutputReference) ResetDefaultValue() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDefaultValue",
+		nil, // no parameters
 	)
 }
 

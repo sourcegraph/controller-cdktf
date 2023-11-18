@@ -68,6 +68,10 @@ func validateGoogleFirebaseAppleApp_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFirebaseAppleApp) validateSetApiKeyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirebaseAppleApp) validateSetAppStoreIdParameters(val *string) error {
 	return nil
 }

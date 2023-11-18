@@ -10,6 +10,9 @@ import (
 
 type GoogleBigqueryTableMaterializedViewOutputReference interface {
 	cdktf.ComplexObject
+	AllowNonIncrementalDefinition() interface{}
+	SetAllowNonIncrementalDefinition(val interface{})
+	AllowNonIncrementalDefinitionInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +73,7 @@ type GoogleBigqueryTableMaterializedViewOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAllowNonIncrementalDefinition()
 	ResetEnableRefresh()
 	ResetRefreshIntervalMs()
 	// Produce the Token's value at resolution time.
@@ -85,6 +89,26 @@ type GoogleBigqueryTableMaterializedViewOutputReference interface {
 // The jsii proxy struct for GoogleBigqueryTableMaterializedViewOutputReference
 type jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) AllowNonIncrementalDefinition() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowNonIncrementalDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) AllowNonIncrementalDefinitionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowNonIncrementalDefinitionInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) ComplexObjectIndex() interface{} {
@@ -242,6 +266,17 @@ func NewGoogleBigqueryTableMaterializedViewOutputReference_Override(g GoogleBigq
 		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableMaterializedViewOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference)SetAllowNonIncrementalDefinition(val interface{}) {
+	if err := j.validateSetAllowNonIncrementalDefinitionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowNonIncrementalDefinition",
+		val,
 	)
 }
 
@@ -517,6 +552,14 @@ func (g *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) Interpola
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) ResetAllowNonIncrementalDefinition() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllowNonIncrementalDefinition",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) ResetEnableRefresh() {

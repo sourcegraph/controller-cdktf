@@ -10,7 +10,7 @@ import (
 
 type DataGoogleSecretManagerSecretReplicationOutputReference interface {
 	cdktf.ComplexObject
-	Automatic() cdktf.IResolvable
+	Auto() DataGoogleSecretManagerSecretReplicationAutoList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -78,11 +78,11 @@ type jsiiProxy_DataGoogleSecretManagerSecretReplicationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerSecretReplicationOutputReference) Automatic() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleSecretManagerSecretReplicationOutputReference) Auto() DataGoogleSecretManagerSecretReplicationAutoList {
+	var returns DataGoogleSecretManagerSecretReplicationAutoList
 	_jsii_.Get(
 		j,
-		"automatic",
+		"auto",
 		&returns,
 	)
 	return returns

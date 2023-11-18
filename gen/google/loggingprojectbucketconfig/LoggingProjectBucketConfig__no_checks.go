@@ -56,6 +56,10 @@ func (l *jsiiProxy_LoggingProjectBucketConfig) validatePutCmekSettingsParameters
 	return nil
 }
 
+func (l *jsiiProxy_LoggingProjectBucketConfig) validatePutIndexConfigsParameters(value interface{}) error {
+	return nil
+}
+
 func validateLoggingProjectBucketConfig_IsConstructParameters(x interface{}) error {
 	return nil
 }

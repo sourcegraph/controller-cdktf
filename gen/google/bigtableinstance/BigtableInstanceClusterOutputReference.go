@@ -40,6 +40,7 @@ type BigtableInstanceClusterOutputReference interface {
 	NumNodes() *float64
 	SetNumNodes(val *float64)
 	NumNodesInput() *float64
+	State() *string
 	StorageType() *string
 	SetStorageType(val *string)
 	StorageTypeInput() *string
@@ -224,6 +225,16 @@ func (j *jsiiProxy_BigtableInstanceClusterOutputReference) NumNodesInput() *floa
 	_jsii_.Get(
 		j,
 		"numNodesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigtableInstanceClusterOutputReference) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
 		&returns,
 	)
 	return returns

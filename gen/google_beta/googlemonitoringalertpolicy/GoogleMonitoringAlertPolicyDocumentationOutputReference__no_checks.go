@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference) validateSetSubjectParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

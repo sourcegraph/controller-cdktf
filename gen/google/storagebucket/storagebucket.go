@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/storagebucket/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/storage_bucket google_storage_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/storage_bucket google_storage_bucket}.
 type StorageBucket interface {
 	cdktf.TerraformResource
 	Autoclass() StorageBucketAutoclassOutputReference
@@ -37,6 +37,10 @@ type StorageBucket interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
+	EnableObjectRetention() interface{}
+	SetEnableObjectRetention(val interface{})
+	EnableObjectRetentionInput() interface{}
 	Encryption() StorageBucketEncryptionOutputReference
 	EncryptionInput() *StorageBucketEncryption
 	ForceDestroy() interface{}
@@ -99,6 +103,7 @@ type StorageBucket interface {
 	StorageClassInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -152,6 +157,7 @@ type StorageBucket interface {
 	ResetCors()
 	ResetCustomPlacementConfig()
 	ResetDefaultEventBasedHold()
+	ResetEnableObjectRetention()
 	ResetEncryption()
 	ResetForceDestroy()
 	ResetId()
@@ -310,6 +316,36 @@ func (j *jsiiProxy_StorageBucket) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) EnableObjectRetention() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableObjectRetention",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) EnableObjectRetentionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableObjectRetentionInput",
 		&returns,
 	)
 	return returns
@@ -675,6 +711,16 @@ func (j *jsiiProxy_StorageBucket) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
+func (j *jsiiProxy_StorageBucket) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageBucket) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -786,7 +832,7 @@ func (j *jsiiProxy_StorageBucket) WebsiteInput() *StorageBucketWebsite {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/storage_bucket google_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/storage_bucket google_storage_bucket} Resource.
 func NewStorageBucket(scope constructs.Construct, id *string, config *StorageBucketConfig) StorageBucket {
 	_init_.Initialize()
 
@@ -804,7 +850,7 @@ func NewStorageBucket(scope constructs.Construct, id *string, config *StorageBuc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/storage_bucket google_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/storage_bucket google_storage_bucket} Resource.
 func NewStorageBucket_Override(s StorageBucket, scope constructs.Construct, id *string, config *StorageBucketConfig) {
 	_init_.Initialize()
 
@@ -852,6 +898,17 @@ func (j *jsiiProxy_StorageBucket)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucket)SetEnableObjectRetention(val interface{}) {
+	if err := j.validateSetEnableObjectRetentionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableObjectRetention",
 		val,
 	)
 }
@@ -1408,6 +1465,14 @@ func (s *jsiiProxy_StorageBucket) ResetDefaultEventBasedHold() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDefaultEventBasedHold",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetEnableObjectRetention() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnableObjectRetention",
 		nil, // no parameters
 	)
 }

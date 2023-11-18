@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validatePutCmekSettingsPara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validatePutIndexConfigsParameters(value interface{}) error {
+	return nil
+}
+
 func validateGoogleLoggingProjectBucketConfig_IsConstructParameters(x interface{}) error {
 	return nil
 }

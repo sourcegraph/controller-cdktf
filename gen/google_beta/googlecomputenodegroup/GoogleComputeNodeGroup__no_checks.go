@@ -104,6 +104,10 @@ func (j *jsiiProxy_GoogleComputeNodeGroup) validateSetLifecycleParameters(val *c
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeNodeGroup) validateSetMaintenanceIntervalParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeNodeGroup) validateSetMaintenancePolicyParameters(val *string) error {
 	return nil
 }
@@ -121,10 +125,6 @@ func (j *jsiiProxy_GoogleComputeNodeGroup) validateSetProjectParameters(val *str
 }
 
 func (j *jsiiProxy_GoogleComputeNodeGroup) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_GoogleComputeNodeGroup) validateSetSizeParameters(val *float64) error {
 	return nil
 }
 

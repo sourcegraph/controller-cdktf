@@ -10,9 +10,8 @@ import (
 
 type GoogleSecretManagerSecretReplicationOutputReference interface {
 	cdktf.ComplexObject
-	Automatic() interface{}
-	SetAutomatic(val interface{})
-	AutomaticInput() interface{}
+	Auto() GoogleSecretManagerSecretReplicationAutoOutputReference
+	AutoInput() *GoogleSecretManagerSecretReplicationAuto
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -66,8 +65,9 @@ type GoogleSecretManagerSecretReplicationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAuto(value *GoogleSecretManagerSecretReplicationAuto)
 	PutUserManaged(value *GoogleSecretManagerSecretReplicationUserManaged)
-	ResetAutomatic()
+	ResetAuto()
 	ResetUserManaged()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -84,21 +84,21 @@ type jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) Automatic() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) Auto() GoogleSecretManagerSecretReplicationAutoOutputReference {
+	var returns GoogleSecretManagerSecretReplicationAutoOutputReference
 	_jsii_.Get(
 		j,
-		"automatic",
+		"auto",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) AutomaticInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) AutoInput() *GoogleSecretManagerSecretReplicationAuto {
+	var returns *GoogleSecretManagerSecretReplicationAuto
 	_jsii_.Get(
 		j,
-		"automaticInput",
+		"autoInput",
 		&returns,
 	)
 	return returns
@@ -219,17 +219,6 @@ func NewGoogleSecretManagerSecretReplicationOutputReference_Override(g GoogleSec
 		"@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
-	)
-}
-
-func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference)SetAutomatic(val interface{}) {
-	if err := j.validateSetAutomaticParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"automatic",
-		val,
 	)
 }
 
@@ -474,6 +463,17 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) Interpol
 	return returns
 }
 
+func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) PutAuto(value *GoogleSecretManagerSecretReplicationAuto) {
+	if err := g.validatePutAutoParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAuto",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) PutUserManaged(value *GoogleSecretManagerSecretReplicationUserManaged) {
 	if err := g.validatePutUserManagedParameters(value); err != nil {
 		panic(err)
@@ -485,10 +485,10 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) PutUserM
 	)
 }
 
-func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) ResetAutomatic() {
+func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) ResetAuto() {
 	_jsii_.InvokeVoid(
 		g,
-		"resetAutomatic",
+		"resetAuto",
 		nil, // no parameters
 	)
 }

@@ -111,6 +111,17 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateOverrideLogical
 	return nil
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationCluster) validatePutDomainConfigParameters(value *GoogleWorkstationsWorkstationClusterDomainConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationCluster) validatePutPrivateClusterConfigParameters(value *GoogleWorkstationsWorkstationClusterPrivateClusterConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

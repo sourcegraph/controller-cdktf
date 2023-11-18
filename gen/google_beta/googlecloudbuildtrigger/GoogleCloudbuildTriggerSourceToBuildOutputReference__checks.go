@@ -98,6 +98,14 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerSourceToBuildOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudbuildTriggerSourceToBuildOutputReference) validateSetBitbucketServerConfigParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudbuildTriggerSourceToBuildOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:

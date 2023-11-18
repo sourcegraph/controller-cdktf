@@ -25,10 +25,16 @@ type GoogleDataplexDatascanDataProfileSpecOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExcludeFields() GoogleDataplexDatascanDataProfileSpecExcludeFieldsOutputReference
+	ExcludeFieldsInput() *GoogleDataplexDatascanDataProfileSpecExcludeFields
 	// Experimental.
 	Fqn() *string
+	IncludeFields() GoogleDataplexDatascanDataProfileSpecIncludeFieldsOutputReference
+	IncludeFieldsInput() *GoogleDataplexDatascanDataProfileSpecIncludeFields
 	InternalValue() *GoogleDataplexDatascanDataProfileSpec
 	SetInternalValue(val *GoogleDataplexDatascanDataProfileSpec)
+	PostScanActions() GoogleDataplexDatascanDataProfileSpecPostScanActionsOutputReference
+	PostScanActionsInput() *GoogleDataplexDatascanDataProfileSpecPostScanActions
 	RowFilter() *string
 	SetRowFilter(val *string)
 	RowFilterInput() *string
@@ -67,6 +73,12 @@ type GoogleDataplexDatascanDataProfileSpecOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutExcludeFields(value *GoogleDataplexDatascanDataProfileSpecExcludeFields)
+	PutIncludeFields(value *GoogleDataplexDatascanDataProfileSpecIncludeFields)
+	PutPostScanActions(value *GoogleDataplexDatascanDataProfileSpecPostScanActions)
+	ResetExcludeFields()
+	ResetIncludeFields()
+	ResetPostScanActions()
 	ResetRowFilter()
 	ResetSamplingPercent()
 	// Produce the Token's value at resolution time.
@@ -114,6 +126,26 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) Creatio
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) ExcludeFields() GoogleDataplexDatascanDataProfileSpecExcludeFieldsOutputReference {
+	var returns GoogleDataplexDatascanDataProfileSpecExcludeFieldsOutputReference
+	_jsii_.Get(
+		j,
+		"excludeFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) ExcludeFieldsInput() *GoogleDataplexDatascanDataProfileSpecExcludeFields {
+	var returns *GoogleDataplexDatascanDataProfileSpecExcludeFields
+	_jsii_.Get(
+		j,
+		"excludeFieldsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -124,11 +156,51 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) Fqn() *
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) IncludeFields() GoogleDataplexDatascanDataProfileSpecIncludeFieldsOutputReference {
+	var returns GoogleDataplexDatascanDataProfileSpecIncludeFieldsOutputReference
+	_jsii_.Get(
+		j,
+		"includeFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) IncludeFieldsInput() *GoogleDataplexDatascanDataProfileSpecIncludeFields {
+	var returns *GoogleDataplexDatascanDataProfileSpecIncludeFields
+	_jsii_.Get(
+		j,
+		"includeFieldsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) InternalValue() *GoogleDataplexDatascanDataProfileSpec {
 	var returns *GoogleDataplexDatascanDataProfileSpec
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) PostScanActions() GoogleDataplexDatascanDataProfileSpecPostScanActionsOutputReference {
+	var returns GoogleDataplexDatascanDataProfileSpecPostScanActionsOutputReference
+	_jsii_.Get(
+		j,
+		"postScanActions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) PostScanActionsInput() *GoogleDataplexDatascanDataProfileSpecPostScanActions {
+	var returns *GoogleDataplexDatascanDataProfileSpecPostScanActions
+	_jsii_.Get(
+		j,
+		"postScanActionsInput",
 		&returns,
 	)
 	return returns
@@ -483,6 +555,63 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) Interpo
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) PutExcludeFields(value *GoogleDataplexDatascanDataProfileSpecExcludeFields) {
+	if err := g.validatePutExcludeFieldsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putExcludeFields",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) PutIncludeFields(value *GoogleDataplexDatascanDataProfileSpecIncludeFields) {
+	if err := g.validatePutIncludeFieldsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putIncludeFields",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) PutPostScanActions(value *GoogleDataplexDatascanDataProfileSpecPostScanActions) {
+	if err := g.validatePutPostScanActionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPostScanActions",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) ResetExcludeFields() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExcludeFields",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) ResetIncludeFields() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIncludeFields",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) ResetPostScanActions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPostScanActions",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleDataplexDatascanDataProfileSpecOutputReference) ResetRowFilter() {

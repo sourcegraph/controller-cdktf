@@ -34,6 +34,7 @@ type DataGoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference in
 	Name() *string
 	NetworkTier() *string
 	PublicPtrDomainName() *string
+	SecurityPolicy() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -176,6 +177,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutp
 	_jsii_.Get(
 		j,
 		"publicPtrDomainName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference) SecurityPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityPolicy",
 		&returns,
 	)
 	return returns

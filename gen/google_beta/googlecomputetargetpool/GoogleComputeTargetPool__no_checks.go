@@ -120,6 +120,10 @@ func (j *jsiiProxy_GoogleComputeTargetPool) validateSetRegionParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeTargetPool) validateSetSecurityPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeTargetPool) validateSetSessionAffinityParameters(val *string) error {
 	return nil
 }

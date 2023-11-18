@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleDialogflowCxFlow) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxFlow) validatePutAdvancedSettingsParameters(value *GoogleDialogflowCxFlowAdvancedSettings) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxFlow) validatePutEventHandlersParameters(value interface{}) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (j *jsiiProxy_GoogleDialogflowCxFlow) validateSetDisplayNameParameters(val 
 }
 
 func (j *jsiiProxy_GoogleDialogflowCxFlow) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxFlow) validateSetIsDefaultStartFlowParameters(val interface{}) error {
 	return nil
 }
 

@@ -84,6 +84,10 @@ func (j *jsiiProxy_GoogleGkeHubMembershipIamBinding) validateSetLifecycleParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeHubMembershipIamBinding) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeHubMembershipIamBinding) validateSetMembersParameters(val *[]*string) error {
 	return nil
 }

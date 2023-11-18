@@ -164,6 +164,10 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetRecreateClosedPscParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetRegionParameters(val *string) error {
 	return nil
 }

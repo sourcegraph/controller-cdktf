@@ -98,6 +98,14 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference) validateSetAdditionalScopesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference) validateSetAssertionClaimsBehaviorParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

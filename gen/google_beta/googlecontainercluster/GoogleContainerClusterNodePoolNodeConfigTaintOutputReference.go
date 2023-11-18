@@ -70,9 +70,6 @@ type GoogleContainerClusterNodePoolNodeConfigTaintOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetEffect()
-	ResetKey()
-	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -518,30 +515,6 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigTaintOutputReference)
 	)
 
 	return returns
-}
-
-func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigTaintOutputReference) ResetEffect() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetEffect",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigTaintOutputReference) ResetKey() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetKey",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigTaintOutputReference) ResetValue() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetValue",
-		nil, // no parameters
-	)
 }
 
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigTaintOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

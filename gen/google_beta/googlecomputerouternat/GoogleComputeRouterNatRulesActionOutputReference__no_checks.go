@@ -64,7 +64,15 @@ func (j *jsiiProxy_GoogleComputeRouterNatRulesActionOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRouterNatRulesActionOutputReference) validateSetSourceNatActiveRangesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRouterNatRulesActionOutputReference) validateSetSourceNatDrainIpsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNatRulesActionOutputReference) validateSetSourceNatDrainRangesParameters(val *[]*string) error {
 	return nil
 }
 

@@ -44,6 +44,10 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 	return nil
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutAptRepositoryParameters(value *ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutDockerRepositoryParameters(value *ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository) error {
 	return nil
 }
@@ -57,6 +61,10 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 }
 
 func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutPythonRepositoryParameters(value *ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository) error {
+	return nil
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutYumRepositoryParameters(value *ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository) error {
 	return nil
 }
 

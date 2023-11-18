@@ -64,6 +64,10 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) validatePutM
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) validatePutOracleParameters(value *GoogleDatabaseMigrationServiceConnectionProfileOracle) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) validatePutPostgresqlParameters(value *GoogleDatabaseMigrationServiceConnectionProfilePostgresql) error {
 	return nil
 }

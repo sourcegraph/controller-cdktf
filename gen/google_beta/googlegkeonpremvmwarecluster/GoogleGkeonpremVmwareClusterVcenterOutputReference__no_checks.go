@@ -48,6 +48,14 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) validateR
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) validateSetCaCertDataParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) validateSetClusterParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -56,7 +64,27 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) validateSetDatacenterParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) validateSetDatastoreParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) validateSetFolderParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) validateSetInternalValueParameters(val *GoogleGkeonpremVmwareClusterVcenter) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) validateSetResourcePoolParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) validateSetStoragePolicyNameParameters(val *string) error {
 	return nil
 }
 
@@ -68,7 +96,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) validateS
 	return nil
 }
 
-func validateNewGoogleGkeonpremVmwareClusterVcenterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleGkeonpremVmwareClusterVcenterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

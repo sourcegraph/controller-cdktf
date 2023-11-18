@@ -35,6 +35,8 @@ type GoogleDataformRepositoryGitRemoteSettingsOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleDataformRepositoryGitRemoteSettings
 	SetInternalValue(val *GoogleDataformRepositoryGitRemoteSettings)
+	SshAuthenticationConfig() GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfigOutputReference
+	SshAuthenticationConfigInput() *GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -71,6 +73,9 @@ type GoogleDataformRepositoryGitRemoteSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSshAuthenticationConfig(value *GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfig)
+	ResetAuthenticationTokenSecretVersion()
+	ResetSshAuthenticationConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -171,6 +176,26 @@ func (j *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference) Int
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference) SshAuthenticationConfig() GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfigOutputReference {
+	var returns GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"sshAuthenticationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference) SshAuthenticationConfigInput() *GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfig {
+	var returns *GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfig
+	_jsii_.Get(
+		j,
+		"sshAuthenticationConfigInput",
 		&returns,
 	)
 	return returns
@@ -526,6 +551,33 @@ func (g *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference) Int
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference) PutSshAuthenticationConfig(value *GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfig) {
+	if err := g.validatePutSshAuthenticationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSshAuthenticationConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference) ResetAuthenticationTokenSecretVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAuthenticationTokenSecretVersion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference) ResetSshAuthenticationConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSshAuthenticationConfig",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -31,11 +31,17 @@ type GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference interfac
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InternalIpv6PrefixLength() *float64
+	SetInternalIpv6PrefixLength(val *float64)
+	InternalIpv6PrefixLengthInput() *float64
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Ipv6AccessConfig() GoogleComputeRegionInstanceTemplateNetworkInterfaceIpv6AccessConfigList
 	Ipv6AccessConfigInput() interface{}
 	Ipv6AccessType() *string
+	Ipv6Address() *string
+	SetIpv6Address(val *string)
+	Ipv6AddressInput() *string
 	Name() *string
 	Network() *string
 	SetNetwork(val *string)
@@ -95,7 +101,9 @@ type GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference interfac
 	PutIpv6AccessConfig(value interface{})
 	ResetAccessConfig()
 	ResetAliasIpRange()
+	ResetInternalIpv6PrefixLength()
 	ResetIpv6AccessConfig()
+	ResetIpv6Address()
 	ResetNetwork()
 	ResetNetworkIp()
 	ResetNicType()
@@ -198,6 +206,26 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) InternalIpv6PrefixLength() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"internalIpv6PrefixLength",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) InternalIpv6PrefixLengthInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"internalIpv6PrefixLengthInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -233,6 +261,26 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 	_jsii_.Get(
 		j,
 		"ipv6AccessType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) Ipv6Address() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6Address",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) Ipv6AddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6AddressInput",
 		&returns,
 	)
 	return returns
@@ -458,6 +506,17 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference)SetInternalIpv6PrefixLength(val *float64) {
+	if err := j.validateSetInternalIpv6PrefixLengthParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"internalIpv6PrefixLength",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -465,6 +524,17 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference)SetIpv6Address(val *string) {
+	if err := j.validateSetIpv6AddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6Address",
 		val,
 	)
 }
@@ -803,10 +873,26 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) ResetInternalIpv6PrefixLength() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInternalIpv6PrefixLength",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) ResetIpv6AccessConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetIpv6AccessConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) ResetIpv6Address() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpv6Address",
 		nil, // no parameters
 	)
 }

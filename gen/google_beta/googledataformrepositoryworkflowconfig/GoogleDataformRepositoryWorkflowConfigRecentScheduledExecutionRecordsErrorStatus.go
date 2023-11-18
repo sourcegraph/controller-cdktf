@@ -1,0 +1,6 @@
+package googledataformrepositoryworkflowconfig
+
+
+type GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatus struct {
+}
+

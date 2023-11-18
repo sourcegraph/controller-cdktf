@@ -10,6 +10,8 @@ import (
 
 type GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference interface {
 	cdktf.ComplexObject
+	AptRepository() GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference
+	AptRepositoryInput() *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -48,6 +50,8 @@ type GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference inter
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	YumRepository() GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference
+	YumRepositoryInput() *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,15 +76,19 @@ type GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference inter
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAptRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository)
 	PutDockerRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository)
 	PutMavenRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository)
 	PutNpmRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository)
 	PutPythonRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository)
+	PutYumRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository)
+	ResetAptRepository()
 	ResetDescription()
 	ResetDockerRepository()
 	ResetMavenRepository()
 	ResetNpmRepository()
 	ResetPythonRepository()
+	ResetYumRepository()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -94,6 +102,26 @@ type GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference inter
 // The jsii proxy struct for GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference
 type jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) AptRepository() GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference {
+	var returns GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference
+	_jsii_.Get(
+		j,
+		"aptRepository",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) AptRepositoryInput() *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository {
+	var returns *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository
+	_jsii_.Get(
+		j,
+		"aptRepositoryInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -261,6 +289,26 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputR
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) YumRepository() GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference {
+	var returns GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference
+	_jsii_.Get(
+		j,
+		"yumRepository",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) YumRepositoryInput() *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository {
+	var returns *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository
+	_jsii_.Get(
+		j,
+		"yumRepositoryInput",
 		&returns,
 	)
 	return returns
@@ -546,6 +594,17 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputR
 	return returns
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) PutAptRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository) {
+	if err := g.validatePutAptRepositoryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAptRepository",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) PutDockerRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository) {
 	if err := g.validatePutDockerRepositoryParameters(value); err != nil {
 		panic(err)
@@ -590,6 +649,25 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputR
 	)
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) PutYumRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository) {
+	if err := g.validatePutYumRepositoryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putYumRepository",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) ResetAptRepository() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAptRepository",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
@@ -626,6 +704,14 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputR
 	_jsii_.InvokeVoid(
 		g,
 		"resetPythonRepository",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) ResetYumRepository() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetYumRepository",
 		nil, // no parameters
 	)
 }

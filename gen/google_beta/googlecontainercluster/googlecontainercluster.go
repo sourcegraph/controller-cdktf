@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecontainercluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_container_cluster google_container_cluster}.
 type GoogleContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() GoogleContainerClusterAddonsConfigOutputReference
@@ -54,6 +54,9 @@ type GoogleContainerCluster interface {
 	DefaultMaxPodsPerNodeInput() *float64
 	DefaultSnatStatus() GoogleContainerClusterDefaultSnatStatusOutputReference
 	DefaultSnatStatusInput() *GoogleContainerClusterDefaultSnatStatus
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -66,9 +69,9 @@ type GoogleContainerCluster interface {
 	EnableAutopilot() interface{}
 	SetEnableAutopilot(val interface{})
 	EnableAutopilotInput() interface{}
-	EnableBinaryAuthorization() interface{}
-	SetEnableBinaryAuthorization(val interface{})
-	EnableBinaryAuthorizationInput() interface{}
+	EnableFqdnNetworkPolicy() interface{}
+	SetEnableFqdnNetworkPolicy(val interface{})
+	EnableFqdnNetworkPolicyInput() interface{}
 	EnableIntranodeVisibility() interface{}
 	SetEnableIntranodeVisibility(val interface{})
 	EnableIntranodeVisibilityInput() interface{}
@@ -93,6 +96,8 @@ type GoogleContainerCluster interface {
 	SetEnableTpu(val interface{})
 	EnableTpuInput() interface{}
 	Endpoint() *string
+	Fleet() GoogleContainerClusterFleetOutputReference
+	FleetInput() *GoogleContainerClusterFleet
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -265,6 +270,7 @@ type GoogleContainerCluster interface {
 	PutDefaultSnatStatus(value *GoogleContainerClusterDefaultSnatStatus)
 	PutDnsConfig(value *GoogleContainerClusterDnsConfig)
 	PutEnableK8SBetaApis(value *GoogleContainerClusterEnableK8SBetaApis)
+	PutFleet(value *GoogleContainerClusterFleet)
 	PutGatewayApiConfig(value *GoogleContainerClusterGatewayApiConfig)
 	PutIdentityServiceConfig(value *GoogleContainerClusterIdentityServiceConfig)
 	PutIpAllocationPolicy(value *GoogleContainerClusterIpAllocationPolicy)
@@ -304,10 +310,11 @@ type GoogleContainerCluster interface {
 	ResetDatapathProvider()
 	ResetDefaultMaxPodsPerNode()
 	ResetDefaultSnatStatus()
+	ResetDeletionProtection()
 	ResetDescription()
 	ResetDnsConfig()
 	ResetEnableAutopilot()
-	ResetEnableBinaryAuthorization()
+	ResetEnableFqdnNetworkPolicy()
 	ResetEnableIntranodeVisibility()
 	ResetEnableK8SBetaApis()
 	ResetEnableKubernetesAlpha()
@@ -316,6 +323,7 @@ type GoogleContainerCluster interface {
 	ResetEnableMultiNetworking()
 	ResetEnableShieldedNodes()
 	ResetEnableTpu()
+	ResetFleet()
 	ResetGatewayApiConfig()
 	ResetId()
 	ResetIdentityServiceConfig()
@@ -675,6 +683,26 @@ func (j *jsiiProxy_GoogleContainerCluster) DefaultSnatStatusInput() *GoogleConta
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerCluster) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -745,21 +773,21 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableAutopilotInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) EnableBinaryAuthorization() interface{} {
+func (j *jsiiProxy_GoogleContainerCluster) EnableFqdnNetworkPolicy() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"enableBinaryAuthorization",
+		"enableFqdnNetworkPolicy",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) EnableBinaryAuthorizationInput() interface{} {
+func (j *jsiiProxy_GoogleContainerCluster) EnableFqdnNetworkPolicyInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"enableBinaryAuthorizationInput",
+		"enableFqdnNetworkPolicyInput",
 		&returns,
 	)
 	return returns
@@ -930,6 +958,26 @@ func (j *jsiiProxy_GoogleContainerCluster) Endpoint() *string {
 	_jsii_.Get(
 		j,
 		"endpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) Fleet() GoogleContainerClusterFleetOutputReference {
+	var returns GoogleContainerClusterFleetOutputReference
+	_jsii_.Get(
+		j,
+		"fleet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) FleetInput() *GoogleContainerClusterFleet {
+	var returns *GoogleContainerClusterFleet
+	_jsii_.Get(
+		j,
+		"fleetInput",
 		&returns,
 	)
 	return returns
@@ -1946,7 +1994,7 @@ func (j *jsiiProxy_GoogleContainerCluster) WorkloadIdentityConfigInput() *Google
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) GoogleContainerCluster {
 	_init_.Initialize()
 
@@ -1964,7 +2012,7 @@ func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster_Override(g GoogleContainerCluster, scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -2041,6 +2089,17 @@ func (j *jsiiProxy_GoogleContainerCluster)SetDefaultMaxPodsPerNode(val *float64)
 	)
 }
 
+func (j *jsiiProxy_GoogleContainerCluster)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleContainerCluster)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -2071,13 +2130,13 @@ func (j *jsiiProxy_GoogleContainerCluster)SetEnableAutopilot(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerCluster)SetEnableBinaryAuthorization(val interface{}) {
-	if err := j.validateSetEnableBinaryAuthorizationParameters(val); err != nil {
+func (j *jsiiProxy_GoogleContainerCluster)SetEnableFqdnNetworkPolicy(val interface{}) {
+	if err := j.validateSetEnableFqdnNetworkPolicyParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"enableBinaryAuthorization",
+		"enableFqdnNetworkPolicy",
 		val,
 	)
 }
@@ -2760,6 +2819,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutEnableK8SBetaApis(value *GoogleCon
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) PutFleet(value *GoogleContainerClusterFleet) {
+	if err := g.validatePutFleetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putFleet",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) PutGatewayApiConfig(value *GoogleContainerClusterGatewayApiConfig) {
 	if err := g.validatePutGatewayApiConfigParameters(value); err != nil {
 		panic(err)
@@ -3150,6 +3220,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetDefaultSnatStatus() {
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeletionProtection",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
@@ -3174,10 +3252,10 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetEnableAutopilot() {
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerCluster) ResetEnableBinaryAuthorization() {
+func (g *jsiiProxy_GoogleContainerCluster) ResetEnableFqdnNetworkPolicy() {
 	_jsii_.InvokeVoid(
 		g,
-		"resetEnableBinaryAuthorization",
+		"resetEnableFqdnNetworkPolicy",
 		nil, // no parameters
 	)
 }
@@ -3242,6 +3320,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetEnableTpu() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnableTpu",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetFleet() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFleet",
 		nil, // no parameters
 	)
 }

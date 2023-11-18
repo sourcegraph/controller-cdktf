@@ -70,6 +70,7 @@ type CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMode()
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -516,6 +517,14 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) I
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) ResetMode() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMode",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) ResetVersion() {

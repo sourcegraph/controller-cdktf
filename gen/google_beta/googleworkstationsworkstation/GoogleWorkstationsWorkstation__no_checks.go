@@ -84,6 +84,10 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstation) validateSetDisplayNameParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstation) validateSetEnvParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstation) validateSetIdParameters(val *string) error {
 	return nil
 }

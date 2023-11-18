@@ -22,6 +22,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConfidentialNodes() DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -29,7 +30,9 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	CreationStack() *[]*string
 	DiskSizeGb() *float64
 	DiskType() *string
+	EffectiveTaints() DataGoogleContainerClusterNodePoolNodeConfigEffectiveTaintsList
 	EphemeralStorageLocalSsdConfig() DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigList
+	FastSocket() DataGoogleContainerClusterNodePoolNodeConfigFastSocketList
 	// Experimental.
 	Fqn() *string
 	GcfsConfig() DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigList
@@ -147,6 +150,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) ConfidentialNodes() DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesList {
+	var returns DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesList
+	_jsii_.Get(
+		j,
+		"confidentialNodes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -177,11 +190,31 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) EffectiveTaints() DataGoogleContainerClusterNodePoolNodeConfigEffectiveTaintsList {
+	var returns DataGoogleContainerClusterNodePoolNodeConfigEffectiveTaintsList
+	_jsii_.Get(
+		j,
+		"effectiveTaints",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) EphemeralStorageLocalSsdConfig() DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigList {
 	var returns DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigList
 	_jsii_.Get(
 		j,
 		"ephemeralStorageLocalSsdConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) FastSocket() DataGoogleContainerClusterNodePoolNodeConfigFastSocketList {
+	var returns DataGoogleContainerClusterNodePoolNodeConfigFastSocketList
+	_jsii_.Get(
+		j,
+		"fastSocket",
 		&returns,
 	)
 	return returns

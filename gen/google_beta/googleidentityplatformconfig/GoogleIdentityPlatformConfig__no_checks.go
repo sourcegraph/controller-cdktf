@@ -60,6 +60,14 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutQuotaParameters(valu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutSignInParameters(value *GoogleIdentityPlatformConfigSignIn) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutSmsRegionConfigParameters(value *GoogleIdentityPlatformConfigSmsRegionConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutTimeoutsParameters(value *GoogleIdentityPlatformConfigTimeouts) error {
 	return nil
 }

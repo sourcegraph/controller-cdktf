@@ -43,6 +43,9 @@ type GoogleDataprocClusterClusterConfigWorkerConfigOutputReference interface {
 	MinCpuPlatform() *string
 	SetMinCpuPlatform(val *string)
 	MinCpuPlatformInput() *string
+	MinNumInstances() *float64
+	SetMinNumInstances(val *float64)
+	MinNumInstancesInput() *float64
 	NumInstances() *float64
 	SetNumInstances(val *float64)
 	NumInstancesInput() *float64
@@ -85,6 +88,7 @@ type GoogleDataprocClusterClusterConfigWorkerConfigOutputReference interface {
 	ResetImageUri()
 	ResetMachineType()
 	ResetMinCpuPlatform()
+	ResetMinNumInstances()
 	ResetNumInstances()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -261,6 +265,26 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigOutputReference
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigOutputReference) MinNumInstances() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minNumInstances",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigOutputReference) MinNumInstancesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minNumInstancesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigOutputReference) NumInstances() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -391,6 +415,17 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigOutputReference
 	_jsii_.Set(
 		j,
 		"minCpuPlatform",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigOutputReference)SetMinNumInstances(val *float64) {
+	if err := j.validateSetMinNumInstancesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minNumInstances",
 		val,
 	)
 }
@@ -672,6 +707,14 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigOutputReference
 	_jsii_.InvokeVoid(
 		g,
 		"resetMinCpuPlatform",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigOutputReference) ResetMinNumInstances() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMinNumInstances",
 		nil, // no parameters
 	)
 }

@@ -164,6 +164,10 @@ func (j *jsiiProxy_GoogleComputeRouterNat) validateSetTcpTransitoryIdleTimeoutSe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRouterNat) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRouterNat) validateSetUdpIdleTimeoutSecParameters(val *float64) error {
 	return nil
 }

@@ -60,11 +60,19 @@ func (g *jsiiProxy_GoogleContainerAwsNodePool) validatePutConfigParameters(value
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAwsNodePool) validatePutManagementParameters(value *GoogleContainerAwsNodePoolManagement) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAwsNodePool) validatePutMaxPodsConstraintParameters(value *GoogleContainerAwsNodePoolMaxPodsConstraint) error {
 	return nil
 }
 
 func (g *jsiiProxy_GoogleContainerAwsNodePool) validatePutTimeoutsParameters(value *GoogleContainerAwsNodePoolTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerAwsNodePool) validatePutUpdateSettingsParameters(value *GoogleContainerAwsNodePoolUpdateSettings) error {
 	return nil
 }
 

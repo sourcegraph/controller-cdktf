@@ -1,0 +1,6 @@
+package googlenetworkconnectivityserviceconnectionpolicy
+
+
+type GoogleNetworkConnectivityServiceConnectionPolicyPscConnectionsErrorInfo struct {
+}
+

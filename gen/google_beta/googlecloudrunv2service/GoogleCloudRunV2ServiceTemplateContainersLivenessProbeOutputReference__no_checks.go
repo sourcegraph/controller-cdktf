@@ -52,10 +52,6 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference) validatePutTcpSocketParameters(value *GoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocket) error {
-	return nil
-}
-
 func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateOverrideLogical
 	return nil
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationCluster) validatePutDomainConfigParameters(value *GoogleWorkstationsWorkstationClusterDomainConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationCluster) validatePutPrivateClusterConfigParameters(value *GoogleWorkstationsWorkstationClusterPrivateClusterConfig) error {
 	return nil
 }

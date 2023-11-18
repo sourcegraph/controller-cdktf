@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference) val
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference) validatePutPingConfigParameters(value *GoogleMonitoringUptimeCheckConfigTcpCheckPingConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -60,7 +60,15 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) validateSetDatabaseRoleParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) validateSetInternalValueParameters(val *GoogleBigqueryConnectionCloudSpanner) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) validateSetMaxParallelismParameters(val *float64) error {
 	return nil
 }
 
@@ -69,6 +77,10 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) validate
 }
 
 func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) validateSetUseDataBoostParameters(val interface{}) error {
 	return nil
 }
 

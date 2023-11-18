@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigOutputReference) validateSetMinNumInstancesParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigOutputReference) validateSetNumInstancesParameters(val *float64) error {
 	return nil
 }

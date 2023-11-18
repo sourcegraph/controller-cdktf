@@ -10,6 +10,9 @@ import (
 
 type GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalScopes() *[]*string
+	SetAdditionalScopes(val *[]*string)
+	AdditionalScopesInput() *[]*string
 	AssertionClaimsBehavior() *string
 	SetAssertionClaimsBehavior(val *string)
 	AssertionClaimsBehaviorInput() *string
@@ -67,6 +70,7 @@ type GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAdditionalScopes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -80,6 +84,26 @@ type GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference interface {
 // The jsii proxy struct for GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference
 type jsiiProxy_GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference) AdditionalScopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"additionalScopes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference) AdditionalScopesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"additionalScopesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference) AssertionClaimsBehavior() *string {
@@ -217,6 +241,17 @@ func NewGoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference_Override(g
 		"@cdktf/provider-google-beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference)SetAdditionalScopes(val *[]*string) {
+	if err := j.validateSetAdditionalScopesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"additionalScopes",
+		val,
 	)
 }
 
@@ -481,6 +516,14 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference) ResetAdditionalScopes() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAdditionalScopes",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

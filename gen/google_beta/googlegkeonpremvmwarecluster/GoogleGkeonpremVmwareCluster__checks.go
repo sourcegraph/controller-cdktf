@@ -210,6 +210,28 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) validatePutTimeoutsParameters(v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) validatePutUpgradePolicyParameters(value *GoogleGkeonpremVmwareClusterUpgradePolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) validatePutVcenterParameters(value *GoogleGkeonpremVmwareClusterVcenter) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateGoogleGkeonpremVmwareCluster_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")

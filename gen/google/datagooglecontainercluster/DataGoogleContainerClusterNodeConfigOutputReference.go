@@ -22,6 +22,7 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConfidentialNodes() DataGoogleContainerClusterNodeConfigConfidentialNodesList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -29,7 +30,9 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	CreationStack() *[]*string
 	DiskSizeGb() *float64
 	DiskType() *string
+	EffectiveTaints() DataGoogleContainerClusterNodeConfigEffectiveTaintsList
 	EphemeralStorageLocalSsdConfig() DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList
+	FastSocket() DataGoogleContainerClusterNodeConfigFastSocketList
 	// Experimental.
 	Fqn() *string
 	GcfsConfig() DataGoogleContainerClusterNodeConfigGcfsConfigList
@@ -147,6 +150,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) ComplexO
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) ConfidentialNodes() DataGoogleContainerClusterNodeConfigConfidentialNodesList {
+	var returns DataGoogleContainerClusterNodeConfigConfidentialNodesList
+	_jsii_.Get(
+		j,
+		"confidentialNodes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -177,11 +190,31 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) DiskType
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) EffectiveTaints() DataGoogleContainerClusterNodeConfigEffectiveTaintsList {
+	var returns DataGoogleContainerClusterNodeConfigEffectiveTaintsList
+	_jsii_.Get(
+		j,
+		"effectiveTaints",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) EphemeralStorageLocalSsdConfig() DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList {
 	var returns DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList
 	_jsii_.Get(
 		j,
 		"ephemeralStorageLocalSsdConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) FastSocket() DataGoogleContainerClusterNodeConfigFastSocketList {
+	var returns DataGoogleContainerClusterNodeConfigFastSocketList
+	_jsii_.Get(
+		j,
+		"fastSocket",
 		&returns,
 	)
 	return returns

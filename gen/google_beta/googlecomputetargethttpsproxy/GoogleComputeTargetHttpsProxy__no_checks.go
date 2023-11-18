@@ -68,6 +68,10 @@ func validateGoogleComputeTargetHttpsProxy_IsTerraformResourceParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeTargetHttpsProxy) validateSetCertificateManagerCertificatesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeTargetHttpsProxy) validateSetCertificateMapParameters(val *string) error {
 	return nil
 }
@@ -113,6 +117,10 @@ func (j *jsiiProxy_GoogleComputeTargetHttpsProxy) validateSetProxyBindParameters
 }
 
 func (j *jsiiProxy_GoogleComputeTargetHttpsProxy) validateSetQuicOverrideParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeTargetHttpsProxy) validateSetServerTlsPolicyParameters(val *string) error {
 	return nil
 }
 

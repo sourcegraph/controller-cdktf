@@ -28,10 +28,16 @@ type GoogleBigqueryConnectionCloudSpannerOutputReference interface {
 	Database() *string
 	SetDatabase(val *string)
 	DatabaseInput() *string
+	DatabaseRole() *string
+	SetDatabaseRole(val *string)
+	DatabaseRoleInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleBigqueryConnectionCloudSpanner
 	SetInternalValue(val *GoogleBigqueryConnectionCloudSpanner)
+	MaxParallelism() *float64
+	SetMaxParallelism(val *float64)
+	MaxParallelismInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -40,6 +46,9 @@ type GoogleBigqueryConnectionCloudSpannerOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UseDataBoost() interface{}
+	SetUseDataBoost(val interface{})
+	UseDataBoostInput() interface{}
 	UseParallelism() interface{}
 	SetUseParallelism(val interface{})
 	UseParallelismInput() interface{}
@@ -70,6 +79,9 @@ type GoogleBigqueryConnectionCloudSpannerOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDatabaseRole()
+	ResetMaxParallelism()
+	ResetUseDataBoost()
 	ResetUseParallelism()
 	ResetUseServerlessAnalytics()
 	// Produce the Token's value at resolution time.
@@ -137,6 +149,26 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) Database
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) DatabaseRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseRole",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) DatabaseRoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseRoleInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -157,6 +189,26 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) Internal
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) MaxParallelism() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxParallelism",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) MaxParallelismInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxParallelismInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -172,6 +224,26 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) Terrafor
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) UseDataBoost() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useDataBoost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) UseDataBoostInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useDataBoostInput",
 		&returns,
 	)
 	return returns
@@ -278,6 +350,17 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetDataba
 	)
 }
 
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetDatabaseRole(val *string) {
+	if err := j.validateSetDatabaseRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"databaseRole",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetInternalValue(val *GoogleBigqueryConnectionCloudSpanner) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -285,6 +368,17 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetIntern
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetMaxParallelism(val *float64) {
+	if err := j.validateSetMaxParallelismParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxParallelism",
 		val,
 	)
 }
@@ -307,6 +401,17 @@ func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetTerraf
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference)SetUseDataBoost(val interface{}) {
+	if err := j.validateSetUseDataBoostParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useDataBoost",
 		val,
 	)
 }
@@ -517,6 +622,30 @@ func (g *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) Interpol
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) ResetDatabaseRole() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDatabaseRole",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) ResetMaxParallelism() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxParallelism",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) ResetUseDataBoost() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUseDataBoost",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference) ResetUseParallelism() {

@@ -76,11 +76,19 @@ func (j *jsiiProxy_GoogleSecretManagerSecretVersion) validateSetCountParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSecretManagerSecretVersion) validateSetDeletionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSecretManagerSecretVersion) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleSecretManagerSecretVersion) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSecretManagerSecretVersion) validateSetIsSecretDataBase64Parameters(val interface{}) error {
 	return nil
 }
 

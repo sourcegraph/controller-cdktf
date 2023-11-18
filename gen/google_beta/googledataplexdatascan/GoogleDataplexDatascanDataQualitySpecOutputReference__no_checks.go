@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validat
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validatePutPostScanActionsParameters(value *GoogleDataplexDatascanDataQualitySpecPostScanActions) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validatePutRulesParameters(value interface{}) error {
 	return nil
 }

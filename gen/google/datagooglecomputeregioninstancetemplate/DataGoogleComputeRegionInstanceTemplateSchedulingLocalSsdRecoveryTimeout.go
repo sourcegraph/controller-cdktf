@@ -1,0 +1,6 @@
+package datagooglecomputeregioninstancetemplate
+
+
+type DataGoogleComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeout struct {
+}
+
