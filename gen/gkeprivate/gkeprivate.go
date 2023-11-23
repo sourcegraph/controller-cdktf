@@ -25,8 +25,8 @@ type Gkeprivate interface {
 	Cloudrun() *bool
 	SetCloudrun(val *bool)
 	CloudrunEnabledOutput() *string
-	CloudrunLoadBalancerType() interface{}
-	SetCloudrunLoadBalancerType(val interface{})
+	CloudrunLoadBalancerType() *string
+	SetCloudrunLoadBalancerType(val *string)
 	ClusterAutoscaling() interface{}
 	SetClusterAutoscaling(val interface{})
 	ClusterDnsDomain() *string
@@ -116,6 +116,9 @@ type Gkeprivate interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GatewayApiChannel() *string
+	SetGatewayApiChannel(val *string)
+	GatewayApiChannelOutput() *string
 	GcePdCsiDriver() *bool
 	SetGcePdCsiDriver(val *bool)
 	GkeBackupAgentConfig() *bool
@@ -213,6 +216,8 @@ type Gkeprivate interface {
 	NodePoolsNamesOutput() *string
 	NodePoolsOauthScopes() *map[string]*[]*string
 	SetNodePoolsOauthScopes(val *map[string]*[]*string)
+	NodePoolsResourceLabels() *map[string]*map[string]*string
+	SetNodePoolsResourceLabels(val *map[string]*map[string]*string)
 	NodePoolsTags() *map[string]*[]*string
 	SetNodePoolsTags(val *map[string]*[]*string)
 	NodePoolsTaints() *map[string]*[]interface{}
@@ -248,15 +253,17 @@ type Gkeprivate interface {
 	SetSandboxEnabled(val *bool)
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
+	ServiceAccountName() *string
+	SetServiceAccountName(val *string)
 	ServiceAccountOutput() *string
 	ServiceExternalIps() *bool
 	SetServiceExternalIps(val *bool)
+	ShadowFirewallRulesLogConfig() interface{}
+	SetShadowFirewallRulesLogConfig(val interface{})
 	ShadowFirewallRulesPriority() *float64
 	SetShadowFirewallRulesPriority(val *float64)
 	// Experimental.
 	SkipAssetCreationFromLocalModules() *bool
-	SkipProvisioners() *bool
-	SetSkipProvisioners(val *bool)
 	// Experimental.
 	Source() *string
 	StubDomains() *map[string]*[]*string
@@ -385,8 +392,8 @@ func (j *jsiiProxy_Gkeprivate) CloudrunEnabledOutput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Gkeprivate) CloudrunLoadBalancerType() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Gkeprivate) CloudrunLoadBalancerType() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"cloudrunLoadBalancerType",
@@ -830,6 +837,26 @@ func (j *jsiiProxy_Gkeprivate) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) GatewayApiChannel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gatewayApiChannel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Gkeprivate) GatewayApiChannelOutput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gatewayApiChannelOutput",
 		&returns,
 	)
 	return returns
@@ -1405,6 +1432,16 @@ func (j *jsiiProxy_Gkeprivate) NodePoolsOauthScopes() *map[string]*[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) NodePoolsResourceLabels() *map[string]*map[string]*string {
+	var returns *map[string]*map[string]*string
+	_jsii_.Get(
+		j,
+		"nodePoolsResourceLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) NodePoolsTags() *map[string]*[]*string {
 	var returns *map[string]*[]*string
 	_jsii_.Get(
@@ -1605,6 +1642,16 @@ func (j *jsiiProxy_Gkeprivate) ServiceAccount() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) ServiceAccountName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) ServiceAccountOutput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1625,6 +1672,16 @@ func (j *jsiiProxy_Gkeprivate) ServiceExternalIps() *bool {
 	return returns
 }
 
+func (j *jsiiProxy_Gkeprivate) ShadowFirewallRulesLogConfig() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"shadowFirewallRulesLogConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Gkeprivate) ShadowFirewallRulesPriority() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -1640,16 +1697,6 @@ func (j *jsiiProxy_Gkeprivate) SkipAssetCreationFromLocalModules() *bool {
 	_jsii_.Get(
 		j,
 		"skipAssetCreationFromLocalModules",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Gkeprivate) SkipProvisioners() *bool {
-	var returns *bool
-	_jsii_.Get(
-		j,
-		"skipProvisioners",
 		&returns,
 	)
 	return returns
@@ -1843,10 +1890,7 @@ func (j *jsiiProxy_Gkeprivate)SetCloudrun(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Gkeprivate)SetCloudrunLoadBalancerType(val interface{}) {
-	if err := j.validateSetCloudrunLoadBalancerTypeParameters(val); err != nil {
-		panic(err)
-	}
+func (j *jsiiProxy_Gkeprivate)SetCloudrunLoadBalancerType(val *string) {
 	_jsii_.Set(
 		j,
 		"cloudrunLoadBalancerType",
@@ -2157,6 +2201,14 @@ func (j *jsiiProxy_Gkeprivate)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Gkeprivate)SetGatewayApiChannel(val *string) {
+	_jsii_.Set(
+		j,
+		"gatewayApiChannel",
 		val,
 	)
 }
@@ -2485,6 +2537,14 @@ func (j *jsiiProxy_Gkeprivate)SetNodePoolsOauthScopes(val *map[string]*[]*string
 	)
 }
 
+func (j *jsiiProxy_Gkeprivate)SetNodePoolsResourceLabels(val *map[string]*map[string]*string) {
+	_jsii_.Set(
+		j,
+		"nodePoolsResourceLabels",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Gkeprivate)SetNodePoolsTags(val *map[string]*[]*string) {
 	_jsii_.Set(
 		j,
@@ -2592,6 +2652,14 @@ func (j *jsiiProxy_Gkeprivate)SetServiceAccount(val *string) {
 	)
 }
 
+func (j *jsiiProxy_Gkeprivate)SetServiceAccountName(val *string) {
+	_jsii_.Set(
+		j,
+		"serviceAccountName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Gkeprivate)SetServiceExternalIps(val *bool) {
 	_jsii_.Set(
 		j,
@@ -2600,18 +2668,21 @@ func (j *jsiiProxy_Gkeprivate)SetServiceExternalIps(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Gkeprivate)SetShadowFirewallRulesPriority(val *float64) {
+func (j *jsiiProxy_Gkeprivate)SetShadowFirewallRulesLogConfig(val interface{}) {
+	if err := j.validateSetShadowFirewallRulesLogConfigParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
-		"shadowFirewallRulesPriority",
+		"shadowFirewallRulesLogConfig",
 		val,
 	)
 }
 
-func (j *jsiiProxy_Gkeprivate)SetSkipProvisioners(val *bool) {
+func (j *jsiiProxy_Gkeprivate)SetShadowFirewallRulesPriority(val *float64) {
 	_jsii_.Set(
 		j,
-		"skipProvisioners",
+		"shadowFirewallRulesPriority",
 		val,
 	)
 }

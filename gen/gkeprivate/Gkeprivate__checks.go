@@ -90,14 +90,6 @@ func validateGkeprivate_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Gkeprivate) validateSetCloudrunLoadBalancerTypeParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_Gkeprivate) validateSetClusterAutoscalingParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -139,6 +131,14 @@ func (j *jsiiProxy_Gkeprivate) validateSetNetworkParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Gkeprivate) validateSetProjectIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Gkeprivate) validateSetShadowFirewallRulesLogConfigParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
