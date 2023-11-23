@@ -6,7 +6,7 @@ module:
   # cherry pick to v26.1.1 at https://github.com/michaellzc/terraform-google-kubernetes-engine/tree/fork-26-1-1
   # source: terraform-google-modules/kubernetes-engine/google//modules/beta-private-cluster
   # version: "26.1.1"
-  source: git::https://github.com/michaellzc/terraform-google-kubernetes-engine.git//modules/beta-private-cluster?ref=be869fec0f4494fdaf6b5a36eb0548cb4473df03
+  source: git::https://github.com/michaellzc/terraform-google-kubernetes-engine.git//modules/beta-private-cluster?ref=39c107f0ae55b054811cb30100d55479c9c0561a
 
 target:
   language: go
