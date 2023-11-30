@@ -21,11 +21,12 @@ Watch out for breaking changes and adjust the upgrade plan if neccessary.
 
 Re-generate all providers and modules:
 
-```bash
 
 ```bash
 make -j4
 ```
+
+Lasted updated by Dax with CDKTF 0.19.2
 
 ## FAQ
 
