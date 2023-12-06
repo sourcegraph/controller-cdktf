@@ -19,9 +19,14 @@ make <target>
 Review the [changelog](https://developer.hashicorp.com/terraform/cdktf/release#upgrade-guides) of the target release.
 Watch out for breaking changes and adjust the upgrade plan if neccessary.
 
-Re-generate all providers and modules:
+Bumpd `CDKTF_VERSION` in `Makefile`:
 
-```bash
+```diff
+-CDKTF_VERSION=0.16.3
++CDKTF_VERSION=0.19.2
+```
+
+Re-generate all providers and modules:
 
 ```bash
 make -j4
