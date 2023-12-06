@@ -4,6 +4,10 @@ package memorydbsnapshot
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MemorydbSnapshot) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MemorydbSnapshot) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (m *jsiiProxy_MemorydbSnapshot) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (m *jsiiProxy_MemorydbSnapshot) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MemorydbSnapshot) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemorydbSnapshot) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemorydbSnapshot) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemorydbSnapshot) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (m *jsiiProxy_MemorydbSnapshot) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (m *jsiiProxy_MemorydbSnapshot) validatePutTimeoutsParameters(value *MemorydbSnapshotTimeouts) error {
+	return nil
+}
+
+func validateMemorydbSnapshot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

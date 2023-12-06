@@ -4,6 +4,10 @@ package lookerinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LookerInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LookerInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (l *jsiiProxy_LookerInstance) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (l *jsiiProxy_LookerInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LookerInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LookerInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LookerInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LookerInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -77,6 +97,10 @@ func (l *jsiiProxy_LookerInstance) validatePutTimeoutsParameters(value *LookerIn
 }
 
 func (l *jsiiProxy_LookerInstance) validatePutUserMetadataParameters(value *LookerInstanceUserMetadata) error {
+	return nil
+}
+
+func validateLookerInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

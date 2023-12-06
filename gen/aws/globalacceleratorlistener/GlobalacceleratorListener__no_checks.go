@@ -4,6 +4,10 @@ package globalacceleratorlistener
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GlobalacceleratorListener) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlobalacceleratorListener) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GlobalacceleratorListener) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GlobalacceleratorListener) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlobalacceleratorListener) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlobalacceleratorListener) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlobalacceleratorListener) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlobalacceleratorListener) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GlobalacceleratorListener) validatePutPortRangeParameters(val
 }
 
 func (g *jsiiProxy_GlobalacceleratorListener) validatePutTimeoutsParameters(value *GlobalacceleratorListenerTimeouts) error {
+	return nil
+}
+
+func validateGlobalacceleratorListener_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

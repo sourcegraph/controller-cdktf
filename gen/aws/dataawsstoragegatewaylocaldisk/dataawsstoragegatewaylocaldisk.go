@@ -459,6 +459,25 @@ func (j *jsiiProxy_DataAwsStoragegatewayLocalDisk)SetProvider(val cdktf.Terrafor
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsStoragegatewayLocalDisk resource upon running "cdktf plan <stack-name>".
+func DataAwsStoragegatewayLocalDisk_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsStoragegatewayLocalDisk_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

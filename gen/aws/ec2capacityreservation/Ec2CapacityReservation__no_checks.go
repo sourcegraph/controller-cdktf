@@ -4,6 +4,10 @@ package ec2capacityreservation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_Ec2CapacityReservation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2CapacityReservation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (e *jsiiProxy_Ec2CapacityReservation) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (e *jsiiProxy_Ec2CapacityReservation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2CapacityReservation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_Ec2CapacityReservation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2CapacityReservation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2CapacityReservation) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2CapacityReservation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEc2CapacityReservation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package binaryauthorizationattestoriampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BinaryAuthorizationAttestorIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BinaryAuthorizationAttestorIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (b *jsiiProxy_BinaryAuthorizationAttestorIamPolicy) validateGetStringMapAtt
 	return nil
 }
 
+func (b *jsiiProxy_BinaryAuthorizationAttestorIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BinaryAuthorizationAttestorIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (b *jsiiProxy_BinaryAuthorizationAttestorIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BinaryAuthorizationAttestorIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BinaryAuthorizationAttestorIamPolicy) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BinaryAuthorizationAttestorIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateBinaryAuthorizationAttestorIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

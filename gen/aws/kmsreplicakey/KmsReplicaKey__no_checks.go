@@ -4,6 +4,10 @@ package kmsreplicakey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KmsReplicaKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsReplicaKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (k *jsiiProxy_KmsReplicaKey) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (k *jsiiProxy_KmsReplicaKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsReplicaKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (k *jsiiProxy_KmsReplicaKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsReplicaKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsReplicaKey) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsReplicaKey) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateKmsReplicaKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

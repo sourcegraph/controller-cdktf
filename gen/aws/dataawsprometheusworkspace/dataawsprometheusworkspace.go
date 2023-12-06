@@ -468,6 +468,25 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspace)SetWorkspaceId(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsPrometheusWorkspace resource upon running "cdktf plan <stack-name>".
+func DataAwsPrometheusWorkspace_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsPrometheusWorkspace_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspace",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

@@ -4,6 +4,10 @@ package ssmpatchbaseline
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SsmPatchBaseline) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsmPatchBaseline) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SsmPatchBaseline) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (s *jsiiProxy_SsmPatchBaseline) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsmPatchBaseline) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsmPatchBaseline) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsmPatchBaseline) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsmPatchBaseline) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (s *jsiiProxy_SsmPatchBaseline) validatePutGlobalFilterParameters(value int
 }
 
 func (s *jsiiProxy_SsmPatchBaseline) validatePutSourceParameters(value interface{}) error {
+	return nil
+}
+
+func validateSsmPatchBaseline_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

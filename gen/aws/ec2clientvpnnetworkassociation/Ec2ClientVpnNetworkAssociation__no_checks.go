@@ -4,6 +4,10 @@ package ec2clientvpnnetworkassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_Ec2ClientVpnNetworkAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2ClientVpnNetworkAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_Ec2ClientVpnNetworkAssociation) validateGetStringMapAttribute
 	return nil
 }
 
+func (e *jsiiProxy_Ec2ClientVpnNetworkAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2ClientVpnNetworkAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2ClientVpnNetworkAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2ClientVpnNetworkAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2ClientVpnNetworkAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (e *jsiiProxy_Ec2ClientVpnNetworkAssociation) validateOverrideLogicalIdPara
 }
 
 func (e *jsiiProxy_Ec2ClientVpnNetworkAssociation) validatePutTimeoutsParameters(value *Ec2ClientVpnNetworkAssociationTimeouts) error {
+	return nil
+}
+
+func validateEc2ClientVpnNetworkAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

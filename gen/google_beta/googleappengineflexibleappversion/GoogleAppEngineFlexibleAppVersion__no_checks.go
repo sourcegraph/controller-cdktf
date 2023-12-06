@@ -4,6 +4,10 @@ package googleappengineflexibleappversion
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -101,6 +121,10 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) validatePutTimeoutsParamet
 }
 
 func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) validatePutVpcAccessConnectorParameters(value *GoogleAppEngineFlexibleAppVersionVpcAccessConnector) error {
+	return nil
+}
+
+func validateGoogleAppEngineFlexibleAppVersion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -470,6 +470,25 @@ func (j *jsiiProxy_DataGooglePrivatecaCertificateTemplateIamPolicy)SetProvider(v
 	)
 }
 
+// Generates CDKTF code for importing a DataGooglePrivatecaCertificateTemplateIamPolicy resource upon running "cdktf plan <stack-name>".
+func DataGooglePrivatecaCertificateTemplateIamPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataGooglePrivatecaCertificateTemplateIamPolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.dataGooglePrivatecaCertificateTemplateIamPolicy.DataGooglePrivatecaCertificateTemplateIamPolicy",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

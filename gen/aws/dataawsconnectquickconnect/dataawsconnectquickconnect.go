@@ -516,6 +516,25 @@ func (j *jsiiProxy_DataAwsConnectQuickConnect)SetTags(val *map[string]*string) {
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsConnectQuickConnect resource upon running "cdktf plan <stack-name>".
+func DataAwsConnectQuickConnect_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsConnectQuickConnect_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnect",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

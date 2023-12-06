@@ -488,6 +488,25 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroup)SetProvider(val cdktf
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsRoute53ResolverFirewallRuleGroup resource upon running "cdktf plan <stack-name>".
+func DataAwsRoute53ResolverFirewallRuleGroup_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsRoute53ResolverFirewallRuleGroup_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRuleGroup.DataAwsRoute53ResolverFirewallRuleGroup",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

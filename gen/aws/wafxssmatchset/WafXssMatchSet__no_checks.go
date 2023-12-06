@@ -4,6 +4,10 @@ package wafxssmatchset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WafXssMatchSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafXssMatchSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (w *jsiiProxy_WafXssMatchSet) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (w *jsiiProxy_WafXssMatchSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafXssMatchSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafXssMatchSet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafXssMatchSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafXssMatchSet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (w *jsiiProxy_WafXssMatchSet) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (w *jsiiProxy_WafXssMatchSet) validatePutXssMatchTuplesParameters(value interface{}) error {
+	return nil
+}
+
+func validateWafXssMatchSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

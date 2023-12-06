@@ -68,6 +68,9 @@ type OrganizationIamPolicy interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -89,7 +92,22 @@ type OrganizationIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -473,6 +491,25 @@ func (j *jsiiProxy_OrganizationIamPolicy)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a OrganizationIamPolicy resource upon running "cdktf plan <stack-name>".
+func OrganizationIamPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateOrganizationIamPolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.organizationIamPolicy.OrganizationIamPolicy",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -555,6 +592,17 @@ func OrganizationIamPolicy_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (o *jsiiProxy_OrganizationIamPolicy) AddMoveTarget(moveTarget *string) {
+	if err := o.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (o *jsiiProxy_OrganizationIamPolicy) AddOverride(path *string, value interface{}) {
@@ -712,6 +760,30 @@ func (o *jsiiProxy_OrganizationIamPolicy) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
+func (o *jsiiProxy_OrganizationIamPolicy) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OrganizationIamPolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := o.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (o *jsiiProxy_OrganizationIamPolicy) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -726,6 +798,39 @@ func (o *jsiiProxy_OrganizationIamPolicy) InterpolationForAttribute(terraformAtt
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OrganizationIamPolicy) MoveFromId(id *string) {
+	if err := o.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (o *jsiiProxy_OrganizationIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (o *jsiiProxy_OrganizationIamPolicy) MoveToId(id *string) {
+	if err := o.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (o *jsiiProxy_OrganizationIamPolicy) OverrideLogicalId(newLogicalId *string) {

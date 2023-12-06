@@ -4,6 +4,10 @@ package grafanaworkspacesamlconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validatePutTimeoutsParameters(value *GrafanaWorkspaceSamlConfigurationTimeouts) error {
+	return nil
+}
+
+func validateGrafanaWorkspaceSamlConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

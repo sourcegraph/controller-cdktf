@@ -4,6 +4,10 @@ package tagstagvalue
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TagsTagValue) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TagsTagValue) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (t *jsiiProxy_TagsTagValue) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (t *jsiiProxy_TagsTagValue) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TagsTagValue) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TagsTagValue) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TagsTagValue) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TagsTagValue) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (t *jsiiProxy_TagsTagValue) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (t *jsiiProxy_TagsTagValue) validatePutTimeoutsParameters(value *TagsTagValueTimeouts) error {
+	return nil
+}
+
+func validateTagsTagValue_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

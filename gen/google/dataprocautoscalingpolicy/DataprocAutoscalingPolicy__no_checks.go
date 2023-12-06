@@ -4,6 +4,10 @@ package dataprocautoscalingpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataprocAutoscalingPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocAutoscalingPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DataprocAutoscalingPolicy) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (d *jsiiProxy_DataprocAutoscalingPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocAutoscalingPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocAutoscalingPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocAutoscalingPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocAutoscalingPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (d *jsiiProxy_DataprocAutoscalingPolicy) validatePutTimeoutsParameters(valu
 }
 
 func (d *jsiiProxy_DataprocAutoscalingPolicy) validatePutWorkerConfigParameters(value *DataprocAutoscalingPolicyWorkerConfig) error {
+	return nil
+}
+
+func validateDataprocAutoscalingPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

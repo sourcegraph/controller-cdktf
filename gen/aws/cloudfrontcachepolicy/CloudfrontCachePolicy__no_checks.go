@@ -4,6 +4,10 @@ package cloudfrontcachepolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudfrontCachePolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontCachePolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CloudfrontCachePolicy) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_CloudfrontCachePolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontCachePolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontCachePolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontCachePolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontCachePolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_CloudfrontCachePolicy) validateOverrideLogicalIdParameters(ne
 }
 
 func (c *jsiiProxy_CloudfrontCachePolicy) validatePutParametersInCacheKeyAndForwardedToOriginParameters(value *CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin) error {
+	return nil
+}
+
+func validateCloudfrontCachePolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

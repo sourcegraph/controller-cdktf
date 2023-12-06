@@ -17,10 +17,10 @@ type GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfig struc
 	LastUpdatedPartitionConfig *GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfig `field:"optional" json:"lastUpdatedPartitionConfig" yaml:"lastUpdatedPartitionConfig"`
 	// Specifies the output schema type.
 	//
-	// ANALYTICS: Analytics schema defined by the FHIR community.
-	// See https://github.com/FHIR/sql-on-fhir/blob/master/sql-on-fhir.md.
-	// ANALYTICS_V2: Analytics V2, similar to schema defined by the FHIR community, with added support for extensions with one or more occurrences and contained resources in stringified JSON.
-	// LOSSLESS: A data-driven schema generated from the fields present in the FHIR data being exported, with no additional simplification. Default value: "ANALYTICS" Possible values: ["ANALYTICS", "ANALYTICS_V2", "LOSSLESS"]
+	// * ANALYTICS: Analytics schema defined by the FHIR community.
+	//   See https://github.com/FHIR/sql-on-fhir/blob/master/sql-on-fhir.md.
+	//  * ANALYTICS_V2: Analytics V2, similar to schema defined by the FHIR community, with added support for extensions with one or more occurrences and contained resources in stringified JSON.
+	//  * LOSSLESS: A data-driven schema generated from the fields present in the FHIR data being exported, with no additional simplification. Default value: "ANALYTICS" Possible values: ["ANALYTICS", "ANALYTICS_V2", "LOSSLESS"]
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_fhir_store#schema_type GoogleHealthcareFhirStore#schema_type}
 	SchemaType *string `field:"optional" json:"schemaType" yaml:"schemaType"`

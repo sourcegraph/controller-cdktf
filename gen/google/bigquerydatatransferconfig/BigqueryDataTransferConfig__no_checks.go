@@ -4,6 +4,10 @@ package bigquerydatatransferconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigqueryDataTransferConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryDataTransferConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) validateGetStringMapAttributePara
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryDataTransferConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryDataTransferConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryDataTransferConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryDataTransferConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryDataTransferConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) validatePutSensitiveParamsParamet
 }
 
 func (b *jsiiProxy_BigqueryDataTransferConfig) validatePutTimeoutsParameters(value *BigqueryDataTransferConfigTimeouts) error {
+	return nil
+}
+
+func validateBigqueryDataTransferConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

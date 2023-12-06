@@ -4,6 +4,10 @@ package googleapigeeenvironment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleApigeeEnvironment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeEnvironment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleApigeeEnvironment) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApigeeEnvironment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeEnvironment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeEnvironment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeEnvironment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleApigeeEnvironment) validatePutNodeConfigParameters(valu
 }
 
 func (g *jsiiProxy_GoogleApigeeEnvironment) validatePutTimeoutsParameters(value *GoogleApigeeEnvironmentTimeouts) error {
+	return nil
+}
+
+func validateGoogleApigeeEnvironment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

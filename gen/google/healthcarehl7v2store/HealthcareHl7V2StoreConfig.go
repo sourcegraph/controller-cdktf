@@ -25,7 +25,7 @@ type HealthcareHl7V2StoreConfig struct {
 	Dataset *string `field:"required" json:"dataset" yaml:"dataset"`
 	// The resource name for the Hl7V2Store.
 	//
-	// * Changing this property may recreate the Hl7v2 store (removing all data) **
+	// ** Changing this property may recreate the Hl7v2 store (removing all data) **
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/healthcare_hl7_v2_store#name HealthcareHl7V2Store#name}
 	Name *string `field:"required" json:"name" yaml:"name"`

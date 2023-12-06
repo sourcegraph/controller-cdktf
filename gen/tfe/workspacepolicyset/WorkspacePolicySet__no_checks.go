@@ -4,6 +4,10 @@ package workspacepolicyset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WorkspacePolicySet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkspacePolicySet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (w *jsiiProxy_WorkspacePolicySet) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (w *jsiiProxy_WorkspacePolicySet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkspacePolicySet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (w *jsiiProxy_WorkspacePolicySet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkspacePolicySet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkspacePolicySet) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkspacePolicySet) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateWorkspacePolicySet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

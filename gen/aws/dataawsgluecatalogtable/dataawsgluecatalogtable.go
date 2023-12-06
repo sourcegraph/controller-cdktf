@@ -649,6 +649,25 @@ func (j *jsiiProxy_DataAwsGlueCatalogTable)SetTransactionId(val *float64) {
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsGlueCatalogTable resource upon running "cdktf plan <stack-name>".
+func DataAwsGlueCatalogTable_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsGlueCatalogTable_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTable",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

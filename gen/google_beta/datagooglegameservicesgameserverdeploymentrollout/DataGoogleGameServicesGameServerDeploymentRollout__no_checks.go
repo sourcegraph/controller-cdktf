@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleGameServicesGameServerDeploymentRollout) validateOv
 	return nil
 }
 
+func validateDataGoogleGameServicesGameServerDeploymentRollout_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleGameServicesGameServerDeploymentRollout_IsConstructParameters(x interface{}) error {
 	return nil
 }

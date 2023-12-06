@@ -470,6 +470,25 @@ func (j *jsiiProxy_DataGoogleComputeRegionDiskIamPolicy)SetRegion(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a DataGoogleComputeRegionDiskIamPolicy resource upon running "cdktf plan <stack-name>".
+func DataGoogleComputeRegionDiskIamPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataGoogleComputeRegionDiskIamPolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionDiskIamPolicy.DataGoogleComputeRegionDiskIamPolicy",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

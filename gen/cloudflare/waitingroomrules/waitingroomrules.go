@@ -69,6 +69,9 @@ type WaitingRoomRules interface {
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -90,7 +93,22 @@ type WaitingRoomRules interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -486,6 +504,25 @@ func (j *jsiiProxy_WaitingRoomRules)SetZoneId(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a WaitingRoomRules resource upon running "cdktf plan <stack-name>".
+func WaitingRoomRules_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateWaitingRoomRules_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -568,6 +605,17 @@ func WaitingRoomRules_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (w *jsiiProxy_WaitingRoomRules) AddMoveTarget(moveTarget *string) {
+	if err := w.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (w *jsiiProxy_WaitingRoomRules) AddOverride(path *string, value interface{}) {
@@ -725,6 +773,30 @@ func (w *jsiiProxy_WaitingRoomRules) GetStringMapAttribute(terraformAttribute *s
 	return returns
 }
 
+func (w *jsiiProxy_WaitingRoomRules) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		w,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WaitingRoomRules) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := w.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (w *jsiiProxy_WaitingRoomRules) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -739,6 +811,39 @@ func (w *jsiiProxy_WaitingRoomRules) InterpolationForAttribute(terraformAttribut
 	)
 
 	return returns
+}
+
+func (w *jsiiProxy_WaitingRoomRules) MoveFromId(id *string) {
+	if err := w.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (w *jsiiProxy_WaitingRoomRules) MoveTo(moveTarget *string, index interface{}) {
+	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (w *jsiiProxy_WaitingRoomRules) MoveToId(id *string) {
+	if err := w.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (w *jsiiProxy_WaitingRoomRules) OverrideLogicalId(newLogicalId *string) {

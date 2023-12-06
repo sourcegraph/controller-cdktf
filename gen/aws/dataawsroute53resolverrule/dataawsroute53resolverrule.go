@@ -587,6 +587,25 @@ func (j *jsiiProxy_DataAwsRoute53ResolverRule)SetTags(val *map[string]*string) {
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsRoute53ResolverRule resource upon running "cdktf plan <stack-name>".
+func DataAwsRoute53ResolverRule_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsRoute53ResolverRule_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsRoute53ResolverRule.DataAwsRoute53ResolverRule",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

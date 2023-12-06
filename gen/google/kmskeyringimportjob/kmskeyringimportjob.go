@@ -80,6 +80,9 @@ type KmsKeyRingImportJob interface {
 	TerraformResourceType() *string
 	Timeouts() KmsKeyRingImportJobTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -101,7 +104,22 @@ type KmsKeyRingImportJob interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -609,6 +627,25 @@ func (j *jsiiProxy_KmsKeyRingImportJob)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a KmsKeyRingImportJob resource upon running "cdktf plan <stack-name>".
+func KmsKeyRingImportJob_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateKmsKeyRingImportJob_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJob",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -691,6 +728,17 @@ func KmsKeyRingImportJob_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (k *jsiiProxy_KmsKeyRingImportJob) AddMoveTarget(moveTarget *string) {
+	if err := k.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (k *jsiiProxy_KmsKeyRingImportJob) AddOverride(path *string, value interface{}) {
@@ -848,6 +896,30 @@ func (k *jsiiProxy_KmsKeyRingImportJob) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (k *jsiiProxy_KmsKeyRingImportJob) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		k,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (k *jsiiProxy_KmsKeyRingImportJob) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := k.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (k *jsiiProxy_KmsKeyRingImportJob) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -862,6 +934,39 @@ func (k *jsiiProxy_KmsKeyRingImportJob) InterpolationForAttribute(terraformAttri
 	)
 
 	return returns
+}
+
+func (k *jsiiProxy_KmsKeyRingImportJob) MoveFromId(id *string) {
+	if err := k.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (k *jsiiProxy_KmsKeyRingImportJob) MoveTo(moveTarget *string, index interface{}) {
+	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (k *jsiiProxy_KmsKeyRingImportJob) MoveToId(id *string) {
+	if err := k.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (k *jsiiProxy_KmsKeyRingImportJob) OverrideLogicalId(newLogicalId *string) {

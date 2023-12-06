@@ -4,6 +4,10 @@ package fsxontapfilesystem
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FsxOntapFileSystem) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxOntapFileSystem) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (f *jsiiProxy_FsxOntapFileSystem) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (f *jsiiProxy_FsxOntapFileSystem) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxOntapFileSystem) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxOntapFileSystem) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxOntapFileSystem) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxOntapFileSystem) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (f *jsiiProxy_FsxOntapFileSystem) validatePutDiskIopsConfigurationParameter
 }
 
 func (f *jsiiProxy_FsxOntapFileSystem) validatePutTimeoutsParameters(value *FsxOntapFileSystemTimeouts) error {
+	return nil
+}
+
+func validateFsxOntapFileSystem_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

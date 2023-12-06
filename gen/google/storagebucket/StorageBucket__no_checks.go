@@ -4,6 +4,10 @@ package storagebucket
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageBucket) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageBucket) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_StorageBucket) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (s *jsiiProxy_StorageBucket) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageBucket) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageBucket) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageBucket) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageBucket) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -89,6 +109,10 @@ func (s *jsiiProxy_StorageBucket) validatePutVersioningParameters(value *Storage
 }
 
 func (s *jsiiProxy_StorageBucket) validatePutWebsiteParameters(value *StorageBucketWebsite) error {
+	return nil
+}
+
+func validateStorageBucket_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package loggingfoldersink
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LoggingFolderSink) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingFolderSink) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (l *jsiiProxy_LoggingFolderSink) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (l *jsiiProxy_LoggingFolderSink) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingFolderSink) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingFolderSink) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingFolderSink) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingFolderSink) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (l *jsiiProxy_LoggingFolderSink) validatePutBigqueryOptionsParameters(value
 }
 
 func (l *jsiiProxy_LoggingFolderSink) validatePutExclusionsParameters(value interface{}) error {
+	return nil
+}
+
+func validateLoggingFolderSink_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package googlefirestorefield
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleFirestoreField) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirestoreField) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleFirestoreField) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirestoreField) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirestoreField) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirestoreField) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirestoreField) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirestoreField) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (g *jsiiProxy_GoogleFirestoreField) validatePutTimeoutsParameters(value *Go
 }
 
 func (g *jsiiProxy_GoogleFirestoreField) validatePutTtlConfigParameters(value *GoogleFirestoreFieldTtlConfig) error {
+	return nil
+}
+
+func validateGoogleFirestoreField_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

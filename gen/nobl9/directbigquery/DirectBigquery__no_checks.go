@@ -4,6 +4,10 @@ package directbigquery
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DirectBigquery) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectBigquery) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DirectBigquery) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (d *jsiiProxy_DirectBigquery) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectBigquery) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectBigquery) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectBigquery) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectBigquery) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (d *jsiiProxy_DirectBigquery) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (d *jsiiProxy_DirectBigquery) validatePutQueryDelayParameters(value *DirectBigqueryQueryDelay) error {
+	return nil
+}
+
+func validateDirectBigquery_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

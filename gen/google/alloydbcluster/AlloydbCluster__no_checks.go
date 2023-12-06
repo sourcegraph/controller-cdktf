@@ -4,6 +4,10 @@ package alloydbcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AlloydbCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AlloydbCluster) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (a *jsiiProxy_AlloydbCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlloydbCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlloydbCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlloydbCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -69,6 +89,10 @@ func (a *jsiiProxy_AlloydbCluster) validatePutInitialUserParameters(value *Alloy
 }
 
 func (a *jsiiProxy_AlloydbCluster) validatePutTimeoutsParameters(value *AlloydbClusterTimeouts) error {
+	return nil
+}
+
+func validateAlloydbCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

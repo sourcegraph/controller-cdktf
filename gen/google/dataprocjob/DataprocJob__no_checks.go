@@ -4,6 +4,10 @@ package dataprocjob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataprocJob) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocJob) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DataprocJob) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (d *jsiiProxy_DataprocJob) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocJob) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocJob) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocJob) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -93,6 +113,10 @@ func (d *jsiiProxy_DataprocJob) validatePutSparksqlConfigParameters(value *Datap
 }
 
 func (d *jsiiProxy_DataprocJob) validatePutTimeoutsParameters(value *DataprocJobTimeouts) error {
+	return nil
+}
+
+func validateDataprocJob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

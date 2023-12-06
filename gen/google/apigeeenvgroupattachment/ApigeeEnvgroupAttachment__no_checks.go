@@ -4,6 +4,10 @@ package apigeeenvgroupattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApigeeEnvgroupAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeEnvgroupAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_ApigeeEnvgroupAttachment) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (a *jsiiProxy_ApigeeEnvgroupAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeEnvgroupAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApigeeEnvgroupAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApigeeEnvgroupAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApigeeEnvgroupAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (a *jsiiProxy_ApigeeEnvgroupAttachment) validateOverrideLogicalIdParameters
 }
 
 func (a *jsiiProxy_ApigeeEnvgroupAttachment) validatePutTimeoutsParameters(value *ApigeeEnvgroupAttachmentTimeouts) error {
+	return nil
+}
+
+func validateApigeeEnvgroupAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

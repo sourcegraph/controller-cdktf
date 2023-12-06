@@ -33,19 +33,19 @@ type IamWorkloadIdentityPoolProviderOidc struct {
 	// the following fields:
 	// ```
 	// {
-	// "keys": [
-	// {
-	//       "kty": "RSA/EC",
-	//       "alg": "<algorithm>",
-	//       "use": "sig",
-	//       "kid": "<key-id>",
-	//       "n": "",
-	//       "e": "",
-	//       "x": "",
-	//       "y": "",
-	//       "crv": ""
-	// }
-	// ]
+	//   "keys": [
+	//     {
+	//           "kty": "RSA/EC",
+	//           "alg": "<algorithm>",
+	//           "use": "sig",
+	//           "kid": "<key-id>",
+	//           "n": "",
+	//           "e": "",
+	//           "x": "",
+	//           "y": "",
+	//           "crv": ""
+	//     }
+	//   ]
 	// }
 	// ```
 	//

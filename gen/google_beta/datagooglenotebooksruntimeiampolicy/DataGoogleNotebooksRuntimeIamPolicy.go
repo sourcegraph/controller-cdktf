@@ -470,6 +470,25 @@ func (j *jsiiProxy_DataGoogleNotebooksRuntimeIamPolicy)SetRuntimeName(val *strin
 	)
 }
 
+// Generates CDKTF code for importing a DataGoogleNotebooksRuntimeIamPolicy resource upon running "cdktf plan <stack-name>".
+func DataGoogleNotebooksRuntimeIamPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataGoogleNotebooksRuntimeIamPolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.dataGoogleNotebooksRuntimeIamPolicy.DataGoogleNotebooksRuntimeIamPolicy",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

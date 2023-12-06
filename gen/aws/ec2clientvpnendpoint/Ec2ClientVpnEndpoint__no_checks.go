@@ -4,6 +4,10 @@ package ec2clientvpnendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2ClientVpnEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2ClientVpnEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) validatePutClientLoginBannerOptionsPara
 }
 
 func (e *jsiiProxy_Ec2ClientVpnEndpoint) validatePutConnectionLogOptionsParameters(value *Ec2ClientVpnEndpointConnectionLogOptions) error {
+	return nil
+}
+
+func validateEc2ClientVpnEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

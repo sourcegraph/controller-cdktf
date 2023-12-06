@@ -4,6 +4,10 @@ package fsxontapstoragevirtualmachine
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FsxOntapStorageVirtualMachine) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxOntapStorageVirtualMachine) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (f *jsiiProxy_FsxOntapStorageVirtualMachine) validateGetStringMapAttributeP
 	return nil
 }
 
+func (f *jsiiProxy_FsxOntapStorageVirtualMachine) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxOntapStorageVirtualMachine) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxOntapStorageVirtualMachine) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxOntapStorageVirtualMachine) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxOntapStorageVirtualMachine) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (f *jsiiProxy_FsxOntapStorageVirtualMachine) validatePutActiveDirectoryConf
 }
 
 func (f *jsiiProxy_FsxOntapStorageVirtualMachine) validatePutTimeoutsParameters(value *FsxOntapStorageVirtualMachineTimeouts) error {
+	return nil
+}
+
+func validateFsxOntapStorageVirtualMachine_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

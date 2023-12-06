@@ -4,6 +4,10 @@ package grafanalicenseassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GrafanaLicenseAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GrafanaLicenseAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GrafanaLicenseAssociation) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GrafanaLicenseAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GrafanaLicenseAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GrafanaLicenseAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GrafanaLicenseAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GrafanaLicenseAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GrafanaLicenseAssociation) validateOverrideLogicalIdParameter
 }
 
 func (g *jsiiProxy_GrafanaLicenseAssociation) validatePutTimeoutsParameters(value *GrafanaLicenseAssociationTimeouts) error {
+	return nil
+}
+
+func validateGrafanaLicenseAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

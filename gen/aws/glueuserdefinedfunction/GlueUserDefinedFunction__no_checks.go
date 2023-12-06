@@ -4,6 +4,10 @@ package glueuserdefinedfunction
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GlueUserDefinedFunction) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueUserDefinedFunction) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GlueUserDefinedFunction) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (g *jsiiProxy_GlueUserDefinedFunction) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueUserDefinedFunction) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlueUserDefinedFunction) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlueUserDefinedFunction) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlueUserDefinedFunction) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GlueUserDefinedFunction) validateOverrideLogicalIdParameters(
 }
 
 func (g *jsiiProxy_GlueUserDefinedFunction) validatePutResourceUrisParameters(value interface{}) error {
+	return nil
+}
+
+func validateGlueUserDefinedFunction_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

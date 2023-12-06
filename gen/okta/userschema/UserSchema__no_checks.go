@@ -4,6 +4,10 @@ package userschema
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (u *jsiiProxy_UserSchema) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserSchema) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (u *jsiiProxy_UserSchema) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (u *jsiiProxy_UserSchema) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserSchema) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserSchema) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserSchema) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserSchema) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (u *jsiiProxy_UserSchema) validatePutMasterOverridePriorityParameters(value
 }
 
 func (u *jsiiProxy_UserSchema) validatePutOneOfParameters(value interface{}) error {
+	return nil
+}
+
+func validateUserSchema_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

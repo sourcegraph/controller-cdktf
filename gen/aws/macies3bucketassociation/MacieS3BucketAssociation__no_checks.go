@@ -4,6 +4,10 @@ package macies3bucketassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MacieS3BucketAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MacieS3BucketAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (m *jsiiProxy_MacieS3BucketAssociation) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (m *jsiiProxy_MacieS3BucketAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MacieS3BucketAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MacieS3BucketAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MacieS3BucketAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MacieS3BucketAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (m *jsiiProxy_MacieS3BucketAssociation) validateOverrideLogicalIdParameters
 }
 
 func (m *jsiiProxy_MacieS3BucketAssociation) validatePutClassificationTypeParameters(value *MacieS3BucketAssociationClassificationType) error {
+	return nil
+}
+
+func validateMacieS3BucketAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

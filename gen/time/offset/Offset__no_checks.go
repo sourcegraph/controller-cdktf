@@ -4,6 +4,10 @@ package offset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_Offset) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_Offset) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (o *jsiiProxy_Offset) validateGetStringMapAttributeParameters(terraformAttr
 	return nil
 }
 
+func (o *jsiiProxy_Offset) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_Offset) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (o *jsiiProxy_Offset) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_Offset) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_Offset) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_Offset) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateOffset_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

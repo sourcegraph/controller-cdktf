@@ -4,6 +4,10 @@ package locationroutecalculator
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LocationRouteCalculator) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LocationRouteCalculator) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (l *jsiiProxy_LocationRouteCalculator) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (l *jsiiProxy_LocationRouteCalculator) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LocationRouteCalculator) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LocationRouteCalculator) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LocationRouteCalculator) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LocationRouteCalculator) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (l *jsiiProxy_LocationRouteCalculator) validateOverrideLogicalIdParameters(
 }
 
 func (l *jsiiProxy_LocationRouteCalculator) validatePutTimeoutsParameters(value *LocationRouteCalculatorTimeouts) error {
+	return nil
+}
+
+func validateLocationRouteCalculator_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

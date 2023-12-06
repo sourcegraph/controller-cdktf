@@ -4,6 +4,10 @@ package googlefolderaccessapprovalsettings
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validateGetStringMapAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validatePutEnrolledServic
 }
 
 func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) validatePutTimeoutsParameters(value *GoogleFolderAccessApprovalSettingsTimeouts) error {
+	return nil
+}
+
+func validateGoogleFolderAccessApprovalSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

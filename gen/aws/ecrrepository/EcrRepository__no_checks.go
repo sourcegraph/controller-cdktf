@@ -4,6 +4,10 @@ package ecrrepository
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EcrRepository) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcrRepository) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_EcrRepository) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (e *jsiiProxy_EcrRepository) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcrRepository) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcrRepository) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcrRepository) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcrRepository) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (e *jsiiProxy_EcrRepository) validatePutImageScanningConfigurationParameter
 }
 
 func (e *jsiiProxy_EcrRepository) validatePutTimeoutsParameters(value *EcrRepositoryTimeouts) error {
+	return nil
+}
+
+func validateEcrRepository_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

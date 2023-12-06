@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataTlsPublicKey) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func validateDataTlsPublicKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataTlsPublicKey_IsConstructParameters(x interface{}) error {
 	return nil
 }

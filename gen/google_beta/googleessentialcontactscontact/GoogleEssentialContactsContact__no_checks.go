@@ -4,6 +4,10 @@ package googleessentialcontactscontact
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleEssentialContactsContact) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEssentialContactsContact) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleEssentialContactsContact) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEssentialContactsContact) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEssentialContactsContact) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEssentialContactsContact) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEssentialContactsContact) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEssentialContactsContact) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleEssentialContactsContact) validateOverrideLogicalIdPara
 }
 
 func (g *jsiiProxy_GoogleEssentialContactsContact) validatePutTimeoutsParameters(value *GoogleEssentialContactsContactTimeouts) error {
+	return nil
+}
+
+func validateGoogleEssentialContactsContact_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -400,6 +400,25 @@ func (j *jsiiProxy_DataGoogleBillingAccountIamPolicy)SetProvider(val cdktf.Terra
 	)
 }
 
+// Generates CDKTF code for importing a DataGoogleBillingAccountIamPolicy resource upon running "cdktf plan <stack-name>".
+func DataGoogleBillingAccountIamPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataGoogleBillingAccountIamPolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.dataGoogleBillingAccountIamPolicy.DataGoogleBillingAccountIamPolicy",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

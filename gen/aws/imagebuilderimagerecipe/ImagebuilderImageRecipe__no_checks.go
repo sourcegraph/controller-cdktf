@@ -4,6 +4,10 @@ package imagebuilderimagerecipe
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_ImagebuilderImageRecipe) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_ImagebuilderImageRecipe) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (i *jsiiProxy_ImagebuilderImageRecipe) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (i *jsiiProxy_ImagebuilderImageRecipe) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_ImagebuilderImageRecipe) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_ImagebuilderImageRecipe) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_ImagebuilderImageRecipe) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_ImagebuilderImageRecipe) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (i *jsiiProxy_ImagebuilderImageRecipe) validatePutComponentParameters(value
 }
 
 func (i *jsiiProxy_ImagebuilderImageRecipe) validatePutSystemsManagerAgentParameters(value *ImagebuilderImageRecipeSystemsManagerAgent) error {
+	return nil
+}
+
+func validateImagebuilderImageRecipe_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

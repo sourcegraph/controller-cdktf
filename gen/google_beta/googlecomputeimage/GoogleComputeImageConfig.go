@@ -88,10 +88,10 @@ type GoogleComputeImageConfig struct {
 	// In order to create an image, you must provide the full or partial
 	// URL of one of the following:
 	//
-	// The selfLink URL
-	// This property
-	// The rawDisk.source URL
-	// The sourceDisk URL
+	// * The selfLink URL
+	// * This property
+	// * The rawDisk.source URL
+	// * The sourceDisk URL
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_image#source_image GoogleComputeImage#source_image}
 	SourceImage *string `field:"optional" json:"sourceImage" yaml:"sourceImage"`
@@ -99,11 +99,11 @@ type GoogleComputeImageConfig struct {
 	//
 	// In order to create an image, you must provide the full or partial URL of one of the following:
 	//
-	// The selfLink URL
-	// This property
-	// The sourceImage URL
-	// The rawDisk.source URL
-	// The sourceDisk URL
+	// * The selfLink URL
+	// * This property
+	// * The sourceImage URL
+	// * The rawDisk.source URL
+	// * The sourceDisk URL
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_image#source_snapshot GoogleComputeImage#source_snapshot}
 	SourceSnapshot *string `field:"optional" json:"sourceSnapshot" yaml:"sourceSnapshot"`

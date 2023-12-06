@@ -4,6 +4,10 @@ package staticresource
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StaticResource) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StaticResource) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (s *jsiiProxy_StaticResource) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (s *jsiiProxy_StaticResource) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StaticResource) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_StaticResource) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StaticResource) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_StaticResource) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StaticResource) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateStaticResource_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

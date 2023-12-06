@@ -4,6 +4,10 @@ package servicediscoveryprivatednsnamespace
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) validateGetStringMapAttr
 	return nil
 }
 
+func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateServiceDiscoveryPrivateDnsNamespace_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

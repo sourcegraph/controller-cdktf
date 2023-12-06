@@ -4,6 +4,10 @@ package templateemail
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TemplateEmail) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TemplateEmail) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (t *jsiiProxy_TemplateEmail) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (t *jsiiProxy_TemplateEmail) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TemplateEmail) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TemplateEmail) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TemplateEmail) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TemplateEmail) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (t *jsiiProxy_TemplateEmail) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (t *jsiiProxy_TemplateEmail) validatePutTranslationsParameters(value interface{}) error {
+	return nil
+}
+
+func validateTemplateEmail_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package googlecloudtasksqueueiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleCloudTasksQueueIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudTasksQueueIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleCloudTasksQueueIamBinding) validateGetStringMapAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudTasksQueueIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudTasksQueueIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudTasksQueueIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudTasksQueueIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudTasksQueueIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleCloudTasksQueueIamBinding) validateOverrideLogicalIdPar
 }
 
 func (g *jsiiProxy_GoogleCloudTasksQueueIamBinding) validatePutConditionParameters(value *GoogleCloudTasksQueueIamBindingCondition) error {
+	return nil
+}
+
+func validateGoogleCloudTasksQueueIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

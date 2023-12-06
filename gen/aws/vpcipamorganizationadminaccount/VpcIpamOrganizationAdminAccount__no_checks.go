@@ -4,6 +4,10 @@ package vpcipamorganizationadminaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpcIpamOrganizationAdminAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcIpamOrganizationAdminAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (v *jsiiProxy_VpcIpamOrganizationAdminAccount) validateGetStringMapAttribut
 	return nil
 }
 
+func (v *jsiiProxy_VpcIpamOrganizationAdminAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcIpamOrganizationAdminAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (v *jsiiProxy_VpcIpamOrganizationAdminAccount) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcIpamOrganizationAdminAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcIpamOrganizationAdminAccount) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcIpamOrganizationAdminAccount) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateVpcIpamOrganizationAdminAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

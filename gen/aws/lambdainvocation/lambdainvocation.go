@@ -74,6 +74,9 @@ type LambdaInvocation interface {
 	Triggers() *map[string]*string
 	SetTriggers(val *map[string]*string)
 	TriggersInput() *map[string]*string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -95,7 +98,22 @@ type LambdaInvocation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -543,6 +561,25 @@ func (j *jsiiProxy_LambdaInvocation)SetTriggers(val *map[string]*string) {
 	)
 }
 
+// Generates CDKTF code for importing a LambdaInvocation resource upon running "cdktf plan <stack-name>".
+func LambdaInvocation_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateLambdaInvocation_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.lambdaInvocation.LambdaInvocation",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -625,6 +662,17 @@ func LambdaInvocation_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (l *jsiiProxy_LambdaInvocation) AddMoveTarget(moveTarget *string) {
+	if err := l.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (l *jsiiProxy_LambdaInvocation) AddOverride(path *string, value interface{}) {
@@ -782,6 +830,30 @@ func (l *jsiiProxy_LambdaInvocation) GetStringMapAttribute(terraformAttribute *s
 	return returns
 }
 
+func (l *jsiiProxy_LambdaInvocation) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		l,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LambdaInvocation) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := l.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (l *jsiiProxy_LambdaInvocation) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -796,6 +868,39 @@ func (l *jsiiProxy_LambdaInvocation) InterpolationForAttribute(terraformAttribut
 	)
 
 	return returns
+}
+
+func (l *jsiiProxy_LambdaInvocation) MoveFromId(id *string) {
+	if err := l.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (l *jsiiProxy_LambdaInvocation) MoveTo(moveTarget *string, index interface{}) {
+	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (l *jsiiProxy_LambdaInvocation) MoveToId(id *string) {
+	if err := l.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (l *jsiiProxy_LambdaInvocation) OverrideLogicalId(newLogicalId *string) {

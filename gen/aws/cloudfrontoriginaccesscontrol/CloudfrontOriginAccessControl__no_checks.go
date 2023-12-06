@@ -4,6 +4,10 @@ package cloudfrontoriginaccesscontrol
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudfrontOriginAccessControl) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontOriginAccessControl) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (c *jsiiProxy_CloudfrontOriginAccessControl) validateGetStringMapAttributeP
 	return nil
 }
 
+func (c *jsiiProxy_CloudfrontOriginAccessControl) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontOriginAccessControl) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_CloudfrontOriginAccessControl) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontOriginAccessControl) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontOriginAccessControl) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontOriginAccessControl) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCloudfrontOriginAccessControl_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

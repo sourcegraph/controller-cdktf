@@ -21,10 +21,10 @@ type GoogleDataLossPreventionStoredInfoTypeConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The parent of the info type in any of the following formats:.
 	//
-	// 'projects/{{project}}'
-	// 'projects/{{project}}/locations/{{location}}'
-	// 'organizations/{{organization_id}}'
-	// 'organizations/{{organization_id}}/locations/{{location}}'
+	// * 'projects/{{project}}'
+	// * 'projects/{{project}}/locations/{{location}}'
+	// * 'organizations/{{organization_id}}'
+	// * 'organizations/{{organization_id}}/locations/{{location}}'
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_data_loss_prevention_stored_info_type#parent GoogleDataLossPreventionStoredInfoType#parent}
 	Parent *string `field:"required" json:"parent" yaml:"parent"`

@@ -4,6 +4,10 @@ package networkmanagerglobalnetwork
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkmanagerGlobalNetwork) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerGlobalNetwork) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetworkmanagerGlobalNetwork) validateGetStringMapAttributePar
 	return nil
 }
 
+func (n *jsiiProxy_NetworkmanagerGlobalNetwork) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerGlobalNetwork) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerGlobalNetwork) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerGlobalNetwork) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerGlobalNetwork) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NetworkmanagerGlobalNetwork) validateOverrideLogicalIdParamet
 }
 
 func (n *jsiiProxy_NetworkmanagerGlobalNetwork) validatePutTimeoutsParameters(value *NetworkmanagerGlobalNetworkTimeouts) error {
+	return nil
+}
+
+func validateNetworkmanagerGlobalNetwork_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

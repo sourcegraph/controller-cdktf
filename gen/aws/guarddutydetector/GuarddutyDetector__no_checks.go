@@ -4,6 +4,10 @@ package guarddutydetector
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GuarddutyDetector) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GuarddutyDetector) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GuarddutyDetector) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (g *jsiiProxy_GuarddutyDetector) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GuarddutyDetector) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GuarddutyDetector) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GuarddutyDetector) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GuarddutyDetector) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GuarddutyDetector) validateOverrideLogicalIdParameters(newLog
 }
 
 func (g *jsiiProxy_GuarddutyDetector) validatePutDatasourcesParameters(value *GuarddutyDetectorDatasources) error {
+	return nil
+}
+
+func validateGuarddutyDetector_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

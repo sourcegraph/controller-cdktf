@@ -411,6 +411,25 @@ func (j *jsiiProxy_DataGoogleFirebaseAppleAppConfigA)SetProvider(val cdktf.Terra
 	)
 }
 
+// Generates CDKTF code for importing a DataGoogleFirebaseAppleAppConfigA resource upon running "cdktf plan <stack-name>".
+func DataGoogleFirebaseAppleAppConfigA_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataGoogleFirebaseAppleAppConfigA_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

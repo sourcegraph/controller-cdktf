@@ -477,6 +477,25 @@ func (j *jsiiProxy_DataAwsCloudfrontDistribution)SetTags(val *map[string]*string
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsCloudfrontDistribution resource upon running "cdktf plan <stack-name>".
+func DataAwsCloudfrontDistribution_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsCloudfrontDistribution_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistribution",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

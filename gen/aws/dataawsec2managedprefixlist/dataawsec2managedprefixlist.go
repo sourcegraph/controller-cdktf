@@ -528,6 +528,25 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixList)SetTags(val *map[string]*string) 
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsEc2ManagedPrefixList resource upon running "cdktf plan <stack-name>".
+func DataAwsEc2ManagedPrefixList_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsEc2ManagedPrefixList_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

@@ -457,6 +457,25 @@ func (j *jsiiProxy_DataAwsSsmParameter)SetWithDecryption(val interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsSsmParameter resource upon running "cdktf plan <stack-name>".
+func DataAwsSsmParameter_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsSsmParameter_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameter",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

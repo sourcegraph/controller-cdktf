@@ -4,6 +4,10 @@ package computebackendservicesignedurlkey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeBackendServiceSignedUrlKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendServiceSignedUrlKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeBackendServiceSignedUrlKey) validateGetStringMapAttrib
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendServiceSignedUrlKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendServiceSignedUrlKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeBackendServiceSignedUrlKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeBackendServiceSignedUrlKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeBackendServiceSignedUrlKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ComputeBackendServiceSignedUrlKey) validateOverrideLogicalIdP
 }
 
 func (c *jsiiProxy_ComputeBackendServiceSignedUrlKey) validatePutTimeoutsParameters(value *ComputeBackendServiceSignedUrlKeyTimeouts) error {
+	return nil
+}
+
+func validateComputeBackendServiceSignedUrlKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

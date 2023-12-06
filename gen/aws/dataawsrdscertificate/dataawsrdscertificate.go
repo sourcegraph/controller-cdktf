@@ -456,6 +456,25 @@ func (j *jsiiProxy_DataAwsRdsCertificate)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsRdsCertificate resource upon running "cdktf plan <stack-name>".
+func DataAwsRdsCertificate_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsRdsCertificate_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificate",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

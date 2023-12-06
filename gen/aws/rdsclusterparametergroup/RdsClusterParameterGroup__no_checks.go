@@ -4,6 +4,10 @@ package rdsclusterparametergroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RdsClusterParameterGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsClusterParameterGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (r *jsiiProxy_RdsClusterParameterGroup) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (r *jsiiProxy_RdsClusterParameterGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsClusterParameterGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RdsClusterParameterGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RdsClusterParameterGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RdsClusterParameterGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (r *jsiiProxy_RdsClusterParameterGroup) validateOverrideLogicalIdParameters
 }
 
 func (r *jsiiProxy_RdsClusterParameterGroup) validatePutParameterParameters(value interface{}) error {
+	return nil
+}
+
+func validateRdsClusterParameterGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

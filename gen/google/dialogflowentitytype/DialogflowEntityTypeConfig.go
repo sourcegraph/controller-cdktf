@@ -25,10 +25,10 @@ type DialogflowEntityTypeConfig struct {
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
 	// Indicates the kind of entity type.
 	//
-	// KIND_MAP: Map entity types allow mapping of a group of synonyms to a reference value.
-	// KIND_LIST: List entity types contain a set of entries that do not map to reference values. However, list entity
+	// * KIND_MAP: Map entity types allow mapping of a group of synonyms to a reference value.
+	// * KIND_LIST: List entity types contain a set of entries that do not map to reference values. However, list entity
 	// types can contain references to other entity types (with or without aliases).
-	// KIND_REGEXP: Regexp entity types allow to specify regular expressions in entries values. Possible values: ["KIND_MAP", "KIND_LIST", "KIND_REGEXP"]
+	// * KIND_REGEXP: Regexp entity types allow to specify regular expressions in entries values. Possible values: ["KIND_MAP", "KIND_LIST", "KIND_REGEXP"]
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dialogflow_entity_type#kind DialogflowEntityType#kind}
 	Kind *string `field:"required" json:"kind" yaml:"kind"`

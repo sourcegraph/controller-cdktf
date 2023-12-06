@@ -4,6 +4,10 @@ package iapbrand
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IapBrand) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapBrand) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (i *jsiiProxy_IapBrand) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (i *jsiiProxy_IapBrand) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapBrand) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapBrand) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapBrand) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapBrand) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (i *jsiiProxy_IapBrand) validateOverrideLogicalIdParameters(newLogicalId *s
 }
 
 func (i *jsiiProxy_IapBrand) validatePutTimeoutsParameters(value *IapBrandTimeouts) error {
+	return nil
+}
+
+func validateIapBrand_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

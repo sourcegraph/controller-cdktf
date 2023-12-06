@@ -4,6 +4,10 @@ package googlegkeonpremvmwarecluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) validateGetStringMapAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -85,6 +105,10 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) validatePutStorageParameters(va
 }
 
 func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) validatePutTimeoutsParameters(value *GoogleGkeonpremVmwareClusterTimeouts) error {
+	return nil
+}
+
+func validateGoogleGkeonpremVmwareCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

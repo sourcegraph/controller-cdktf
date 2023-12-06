@@ -355,6 +355,25 @@ func (j *jsiiProxy_DataAwsIamAccountAlias)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsIamAccountAlias resource upon running "cdktf plan <stack-name>".
+func DataAwsIamAccountAlias_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsIamAccountAlias_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

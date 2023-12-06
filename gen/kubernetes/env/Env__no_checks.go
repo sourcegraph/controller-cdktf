@@ -4,6 +4,10 @@ package env
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_Env) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Env) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_Env) validateGetStringMapAttributeParameters(terraformAttribu
 	return nil
 }
 
+func (e *jsiiProxy_Env) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Env) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Env) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Env) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Env) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (e *jsiiProxy_Env) validatePutEnvParameters(value interface{}) error {
 }
 
 func (e *jsiiProxy_Env) validatePutMetadataParameters(value *EnvMetadata) error {
+	return nil
+}
+
+func validateEnv_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

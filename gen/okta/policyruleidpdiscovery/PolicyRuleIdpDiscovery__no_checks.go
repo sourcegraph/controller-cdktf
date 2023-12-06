@@ -4,6 +4,10 @@ package policyruleidpdiscovery
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyRuleIdpDiscovery) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyRuleIdpDiscovery) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) validatePutPlatformIncludeParameters(
 }
 
 func (p *jsiiProxy_PolicyRuleIdpDiscovery) validatePutUserIdentifierPatternsParameters(value interface{}) error {
+	return nil
+}
+
+func validatePolicyRuleIdpDiscovery_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

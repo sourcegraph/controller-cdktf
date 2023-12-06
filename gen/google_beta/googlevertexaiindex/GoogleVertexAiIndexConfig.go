@@ -37,8 +37,8 @@ type GoogleVertexAiIndexConfig struct {
 	// The update method to use with this Index.
 	//
 	// The value must be the followings. If not set, BATCH_UPDATE will be used by default.
-	// BATCH_UPDATE: user can call indexes.patch with files on Cloud Storage of datapoints to update.
-	// STREAM_UPDATE: user can call indexes.upsertDatapoints/DeleteDatapoints to update the Index and the updates will be applied in corresponding DeployedIndexes in nearly real-time.
+	// * BATCH_UPDATE: user can call indexes.patch with files on Cloud Storage of datapoints to update.
+	// * STREAM_UPDATE: user can call indexes.upsertDatapoints/DeleteDatapoints to update the Index and the updates will be applied in corresponding DeployedIndexes in nearly real-time.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_vertex_ai_index#index_update_method GoogleVertexAiIndex#index_update_method}
 	IndexUpdateMethod *string `field:"optional" json:"indexUpdateMethod" yaml:"indexUpdateMethod"`

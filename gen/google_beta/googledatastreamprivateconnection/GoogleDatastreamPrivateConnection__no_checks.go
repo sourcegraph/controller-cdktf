@@ -4,6 +4,10 @@ package googledatastreamprivateconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDatastreamPrivateConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatastreamPrivateConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleDatastreamPrivateConnection) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatastreamPrivateConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatastreamPrivateConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamPrivateConnection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamPrivateConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamPrivateConnection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleDatastreamPrivateConnection) validatePutTimeoutsParamet
 }
 
 func (g *jsiiProxy_GoogleDatastreamPrivateConnection) validatePutVpcPeeringConfigParameters(value *GoogleDatastreamPrivateConnectionVpcPeeringConfig) error {
+	return nil
+}
+
+func validateGoogleDatastreamPrivateConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

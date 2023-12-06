@@ -4,6 +4,10 @@ package memcacheinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MemcacheInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MemcacheInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (m *jsiiProxy_MemcacheInstance) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (m *jsiiProxy_MemcacheInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MemcacheInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemcacheInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemcacheInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemcacheInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (m *jsiiProxy_MemcacheInstance) validatePutNodeConfigParameters(value *Memc
 }
 
 func (m *jsiiProxy_MemcacheInstance) validatePutTimeoutsParameters(value *MemcacheInstanceTimeouts) error {
+	return nil
+}
+
+func validateMemcacheInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

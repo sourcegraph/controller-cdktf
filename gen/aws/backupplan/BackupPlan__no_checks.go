@@ -4,6 +4,10 @@ package backupplan
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BackupPlan) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupPlan) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (b *jsiiProxy_BackupPlan) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (b *jsiiProxy_BackupPlan) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupPlan) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BackupPlan) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BackupPlan) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BackupPlan) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (b *jsiiProxy_BackupPlan) validatePutAdvancedBackupSettingParameters(value 
 }
 
 func (b *jsiiProxy_BackupPlan) validatePutRuleParameters(value interface{}) error {
+	return nil
+}
+
+func validateBackupPlan_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

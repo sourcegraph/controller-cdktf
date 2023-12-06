@@ -4,6 +4,10 @@ package s3bucketreplicationconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_S3BucketReplicationConfigurationA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketReplicationConfigurationA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationA) validateGetStringMapAttrib
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketReplicationConfigurationA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketReplicationConfigurationA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketReplicationConfigurationA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketReplicationConfigurationA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketReplicationConfigurationA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationA) validateOverrideLogicalIdP
 }
 
 func (s *jsiiProxy_S3BucketReplicationConfigurationA) validatePutRuleParameters(value interface{}) error {
+	return nil
+}
+
+func validateS3BucketReplicationConfigurationA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -79,6 +79,9 @@ type IapAppEngineServiceIamBinding interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -100,7 +103,22 @@ type IapAppEngineServiceIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -600,6 +618,25 @@ func (j *jsiiProxy_IapAppEngineServiceIamBinding)SetService(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a IapAppEngineServiceIamBinding resource upon running "cdktf plan <stack-name>".
+func IapAppEngineServiceIamBinding_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateIapAppEngineServiceIamBinding_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.iapAppEngineServiceIamBinding.IapAppEngineServiceIamBinding",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -682,6 +719,17 @@ func IapAppEngineServiceIamBinding_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (i *jsiiProxy_IapAppEngineServiceIamBinding) AddMoveTarget(moveTarget *string) {
+	if err := i.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (i *jsiiProxy_IapAppEngineServiceIamBinding) AddOverride(path *string, value interface{}) {
@@ -839,6 +887,30 @@ func (i *jsiiProxy_IapAppEngineServiceIamBinding) GetStringMapAttribute(terrafor
 	return returns
 }
 
+func (i *jsiiProxy_IapAppEngineServiceIamBinding) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IapAppEngineServiceIamBinding) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := i.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (i *jsiiProxy_IapAppEngineServiceIamBinding) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -853,6 +925,39 @@ func (i *jsiiProxy_IapAppEngineServiceIamBinding) InterpolationForAttribute(terr
 	)
 
 	return returns
+}
+
+func (i *jsiiProxy_IapAppEngineServiceIamBinding) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (i *jsiiProxy_IapAppEngineServiceIamBinding) MoveTo(moveTarget *string, index interface{}) {
+	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_IapAppEngineServiceIamBinding) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (i *jsiiProxy_IapAppEngineServiceIamBinding) OverrideLogicalId(newLogicalId *string) {

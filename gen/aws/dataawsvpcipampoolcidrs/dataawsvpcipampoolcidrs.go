@@ -437,6 +437,25 @@ func (j *jsiiProxy_DataAwsVpcIpamPoolCidrs)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsVpcIpamPoolCidrs resource upon running "cdktf plan <stack-name>".
+func DataAwsVpcIpamPoolCidrs_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsVpcIpamPoolCidrs_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrs",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

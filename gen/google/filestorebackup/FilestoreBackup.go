@@ -91,6 +91,9 @@ type FilestoreBackup interface {
 	TerraformResourceType() *string
 	Timeouts() FilestoreBackupTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -112,7 +115,22 @@ type FilestoreBackup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -736,6 +754,25 @@ func (j *jsiiProxy_FilestoreBackup)SetSourceInstance(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a FilestoreBackup resource upon running "cdktf plan <stack-name>".
+func FilestoreBackup_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateFilestoreBackup_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.filestoreBackup.FilestoreBackup",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -818,6 +855,17 @@ func FilestoreBackup_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (f *jsiiProxy_FilestoreBackup) AddMoveTarget(moveTarget *string) {
+	if err := f.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (f *jsiiProxy_FilestoreBackup) AddOverride(path *string, value interface{}) {
@@ -975,6 +1023,30 @@ func (f *jsiiProxy_FilestoreBackup) GetStringMapAttribute(terraformAttribute *st
 	return returns
 }
 
+func (f *jsiiProxy_FilestoreBackup) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		f,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FilestoreBackup) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := f.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (f *jsiiProxy_FilestoreBackup) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -989,6 +1061,39 @@ func (f *jsiiProxy_FilestoreBackup) InterpolationForAttribute(terraformAttribute
 	)
 
 	return returns
+}
+
+func (f *jsiiProxy_FilestoreBackup) MoveFromId(id *string) {
+	if err := f.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (f *jsiiProxy_FilestoreBackup) MoveTo(moveTarget *string, index interface{}) {
+	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (f *jsiiProxy_FilestoreBackup) MoveToId(id *string) {
+	if err := f.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (f *jsiiProxy_FilestoreBackup) OverrideLogicalId(newLogicalId *string) {

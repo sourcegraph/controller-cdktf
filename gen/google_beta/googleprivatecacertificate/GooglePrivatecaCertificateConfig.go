@@ -40,7 +40,7 @@ type GooglePrivatecaCertificateConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_privateca_certificate#certificate_authority GooglePrivatecaCertificate#certificate_authority}
 	CertificateAuthority *string `field:"optional" json:"certificateAuthority" yaml:"certificateAuthority"`
-	// The resource name for a CertificateTemplate used to issue this certificate, in the format 'projects/*\/locations/*\/certificateTemplates/*'.
+	// The resource name for a CertificateTemplate used to issue this certificate, in the format 'projects/* /locations/* /certificateTemplates/*'.
 	//
 	// If this is specified,
 	// the caller must have the necessary permission to use this template. If this is
@@ -48,6 +48,8 @@ type GooglePrivatecaCertificateConfig struct {
 	// as the Certificate.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_privateca_certificate#certificate_template GooglePrivatecaCertificate#certificate_template}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	CertificateTemplate *string `field:"optional" json:"certificateTemplate" yaml:"certificateTemplate"`
 	// config block.
 	//

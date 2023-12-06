@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleVmwareengineNetwork) validateOverrideLogicalIdParam
 	return nil
 }
 
+func validateDataGoogleVmwareengineNetwork_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleVmwareengineNetwork_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -4,6 +4,10 @@ package snstopic
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SnsTopic) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SnsTopic) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (s *jsiiProxy_SnsTopic) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (s *jsiiProxy_SnsTopic) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SnsTopic) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_SnsTopic) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SnsTopic) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SnsTopic) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SnsTopic) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateSnsTopic_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

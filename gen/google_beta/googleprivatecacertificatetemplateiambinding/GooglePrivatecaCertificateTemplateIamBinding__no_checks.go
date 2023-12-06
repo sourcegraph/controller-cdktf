@@ -4,6 +4,10 @@ package googleprivatecacertificatetemplateiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) validateGetStri
 	return nil
 }
 
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) validateOverrid
 }
 
 func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) validatePutConditionParameters(value *GooglePrivatecaCertificateTemplateIamBindingCondition) error {
+	return nil
+}
+
+func validateGooglePrivatecaCertificateTemplateIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

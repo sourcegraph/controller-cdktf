@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataTlsCertificate) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func validateDataTlsCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataTlsCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }

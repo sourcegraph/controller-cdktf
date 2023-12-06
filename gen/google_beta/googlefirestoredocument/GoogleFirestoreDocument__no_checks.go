@@ -4,6 +4,10 @@ package googlefirestoredocument
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleFirestoreDocument) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirestoreDocument) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleFirestoreDocument) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirestoreDocument) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirestoreDocument) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirestoreDocument) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirestoreDocument) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirestoreDocument) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleFirestoreDocument) validateOverrideLogicalIdParameters(
 }
 
 func (g *jsiiProxy_GoogleFirestoreDocument) validatePutTimeoutsParameters(value *GoogleFirestoreDocumentTimeouts) error {
+	return nil
+}
+
+func validateGoogleFirestoreDocument_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

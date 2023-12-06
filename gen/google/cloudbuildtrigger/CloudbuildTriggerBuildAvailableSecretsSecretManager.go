@@ -10,9 +10,11 @@ type CloudbuildTriggerBuildAvailableSecretsSecretManager struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloudbuild_trigger#env CloudbuildTrigger#env}
 	Env *string `field:"required" json:"env" yaml:"env"`
-	// Resource name of the SecretVersion. In format: projects/*\/secrets/*\/versions/*.
+	// Resource name of the SecretVersion. In format: projects/* /secrets/* /versions/*.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloudbuild_trigger#version_name CloudbuildTrigger#version_name}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	VersionName *string `field:"required" json:"versionName" yaml:"versionName"`
 }
 

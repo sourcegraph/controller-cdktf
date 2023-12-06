@@ -4,6 +4,10 @@ package teamsproxyendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TeamsProxyEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamsProxyEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (t *jsiiProxy_TeamsProxyEndpoint) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (t *jsiiProxy_TeamsProxyEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamsProxyEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_TeamsProxyEndpoint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TeamsProxyEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TeamsProxyEndpoint) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamsProxyEndpoint) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateTeamsProxyEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

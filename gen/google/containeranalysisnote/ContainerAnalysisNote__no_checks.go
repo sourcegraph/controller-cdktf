@@ -4,6 +4,10 @@ package containeranalysisnote
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ContainerAnalysisNote) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAnalysisNote) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ContainerAnalysisNote) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAnalysisNote) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAnalysisNote) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAnalysisNote) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAnalysisNote) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAnalysisNote) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (c *jsiiProxy_ContainerAnalysisNote) validatePutRelatedUrlParameters(value 
 }
 
 func (c *jsiiProxy_ContainerAnalysisNote) validatePutTimeoutsParameters(value *ContainerAnalysisNoteTimeouts) error {
+	return nil
+}
+
+func validateContainerAnalysisNote_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

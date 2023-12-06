@@ -29,16 +29,16 @@ type GoogleDialogflowCxEntityTypeConfig struct {
 	Entities interface{} `field:"required" json:"entities" yaml:"entities"`
 	// Indicates whether the entity type can be automatically expanded.
 	//
-	// KIND_MAP: Map entity types allow mapping of a group of synonyms to a canonical value.
-	// KIND_LIST: List entity types contain a set of entries that do not map to canonical values. However, list entity types can contain references to other entity types (with or without aliases).
-	// KIND_REGEXP: Regexp entity types allow to specify regular expressions in entries values. Possible values: ["KIND_MAP", "KIND_LIST", "KIND_REGEXP"]
+	// * KIND_MAP: Map entity types allow mapping of a group of synonyms to a canonical value.
+	// * KIND_LIST: List entity types contain a set of entries that do not map to canonical values. However, list entity types can contain references to other entity types (with or without aliases).
+	// * KIND_REGEXP: Regexp entity types allow to specify regular expressions in entries values. Possible values: ["KIND_MAP", "KIND_LIST", "KIND_REGEXP"]
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dialogflow_cx_entity_type#kind GoogleDialogflowCxEntityType#kind}
 	Kind *string `field:"required" json:"kind" yaml:"kind"`
 	// Represents kinds of entities.
 	//
-	// AUTO_EXPANSION_MODE_UNSPECIFIED: Auto expansion disabled for the entity.
-	// AUTO_EXPANSION_MODE_DEFAULT: Allows an agent to recognize values that have not been explicitly listed in the entity. Possible values: ["AUTO_EXPANSION_MODE_DEFAULT", "AUTO_EXPANSION_MODE_UNSPECIFIED"]
+	// * AUTO_EXPANSION_MODE_UNSPECIFIED: Auto expansion disabled for the entity.
+	// * AUTO_EXPANSION_MODE_DEFAULT: Allows an agent to recognize values that have not been explicitly listed in the entity. Possible values: ["AUTO_EXPANSION_MODE_DEFAULT", "AUTO_EXPANSION_MODE_UNSPECIFIED"]
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dialogflow_cx_entity_type#auto_expansion_mode GoogleDialogflowCxEntityType#auto_expansion_mode}
 	AutoExpansionMode *string `field:"optional" json:"autoExpansionMode" yaml:"autoExpansionMode"`

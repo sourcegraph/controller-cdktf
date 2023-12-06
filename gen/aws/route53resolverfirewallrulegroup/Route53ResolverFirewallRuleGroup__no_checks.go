@@ -4,6 +4,10 @@ package route53resolverfirewallrulegroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) validateGetStringMapAttribu
 	return nil
 }
 
+func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53ResolverFirewallRuleGroup) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRoute53ResolverFirewallRuleGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

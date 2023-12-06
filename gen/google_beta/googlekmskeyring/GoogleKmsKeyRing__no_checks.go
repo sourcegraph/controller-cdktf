@@ -4,6 +4,10 @@ package googlekmskeyring
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleKmsKeyRing) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleKmsKeyRing) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleKmsKeyRing) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleKmsKeyRing) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleKmsKeyRing) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleKmsKeyRing) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleKmsKeyRing) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleKmsKeyRing) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleKmsKeyRing) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (g *jsiiProxy_GoogleKmsKeyRing) validatePutTimeoutsParameters(value *GoogleKmsKeyRingTimeouts) error {
+	return nil
+}
+
+func validateGoogleKmsKeyRing_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package ssmdocument
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SsmDocument) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsmDocument) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SsmDocument) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (s *jsiiProxy_SsmDocument) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsmDocument) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsmDocument) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsmDocument) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsmDocument) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_SsmDocument) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (s *jsiiProxy_SsmDocument) validatePutAttachmentsSourceParameters(value interface{}) error {
+	return nil
+}
+
+func validateSsmDocument_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

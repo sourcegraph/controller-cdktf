@@ -44,31 +44,24 @@ type GkeprivateConfig struct {
 	// Cluster autoscaling configuration.
 	//
 	// See [more details](https://cloud.google.com/kubernetes-engine/docs/reference/rest/v1beta1/projects.locations.clusters#clusterautoscaling)
-	// Default: [object Object].
-	//
 	ClusterAutoscaling interface{} `field:"optional" json:"clusterAutoscaling" yaml:"clusterAutoscaling"`
 	// The suffix used for all cluster service records.
 	ClusterDnsDomain *string `field:"optional" json:"clusterDnsDomain" yaml:"clusterDnsDomain"`
 	// Which in-cluster DNS provider should be used.
 	//
 	// PROVIDER_UNSPECIFIED (default) or PLATFORM_DEFAULT or CLOUD_DNS.
-	// Default: PROVIDER_UNSPECIFIED.
-	//
+	// PROVIDER_UNSPECIFIED.
 	ClusterDnsProvider *string `field:"optional" json:"clusterDnsProvider" yaml:"clusterDnsProvider"`
 	// The scope of access to cluster DNS records.
 	//
 	// DNS_SCOPE_UNSPECIFIED (default) or CLUSTER_SCOPE or VPC_SCOPE.
-	// Default: DNS_SCOPE_UNSPECIFIED.
-	//
+	// DNS_SCOPE_UNSPECIFIED.
 	ClusterDnsScope *string `field:"optional" json:"clusterDnsScope" yaml:"clusterDnsScope"`
 	// The IP address range of the kubernetes pods in this cluster.
 	//
 	// Default is an automatically assigned CIDR.
 	ClusterIpv4Cidr *string `field:"optional" json:"clusterIpv4Cidr" yaml:"clusterIpv4Cidr"`
-	// The GCE resource labels (a map of key/value pairs) to be applied to the cluster.
-	// Default: [object Object]
-	// The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
-	//
+	// The GCE resource labels (a map of key/value pairs) to be applied to the cluster The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
 	ClusterResourceLabels *map[string]*string `field:"optional" json:"clusterResourceLabels" yaml:"clusterResourceLabels"`
 	// Available options include ENABLED, DISABLED, and SYSTEM_ONLY.
 	ClusterTelemetryType *string `field:"optional" json:"clusterTelemetryType" yaml:"clusterTelemetryType"`
@@ -79,24 +72,20 @@ type GkeprivateConfig struct {
 	// IP masquerading uses a kubectl call, so when you have a private cluster, you will need access to the API server.
 	ConfigureIpMasq *bool `field:"optional" json:"configureIpMasq" yaml:"configureIpMasq"`
 	// Defines if service account specified to run nodes should be created.
-	// Default: true.
 	//
+	// true.
 	CreateServiceAccount *bool `field:"optional" json:"createServiceAccount" yaml:"createServiceAccount"`
 	// Application-layer Secrets Encryption settings.
 	//
 	// The object format is {state = string, key_name = string}. Valid values of state are: "ENCRYPTED"; "DECRYPTED". key_name is the name of a CloudKMS key.
-	// Default: [object Object].
-	//
+	// [object Object].
 	DatabaseEncryption *[]interface{} `field:"optional" json:"databaseEncryption" yaml:"databaseEncryption"`
 	// The desired datapath provider for this cluster.
 	//
 	// By default, `DATAPATH_PROVIDER_UNSPECIFIED` enables the IPTables-based kube-proxy implementation. `ADVANCED_DATAPATH` enables Dataplane-V2 feature.
-	// Default: DATAPATH_PROVIDER_UNSPECIFIED.
-	//
+	// DATAPATH_PROVIDER_UNSPECIFIED.
 	DatapathProvider *string `field:"optional" json:"datapathProvider" yaml:"datapathProvider"`
-	// The maximum number of pods to schedule per node.
-	// Default: 110.
-	//
+	// The maximum number of pods to schedule per node 110.
 	DefaultMaxPodsPerNode *float64 `field:"optional" json:"defaultMaxPodsPerNode" yaml:"defaultMaxPodsPerNode"`
 	// (Beta) A toggle for Terraform and kubectl to connect to the master's internal IP address during deployment.
 	DeployUsingPrivateEndpoint *bool `field:"optional" json:"deployUsingPrivateEndpoint" yaml:"deployUsingPrivateEndpoint"`
@@ -104,9 +93,7 @@ type GkeprivateConfig struct {
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Whether to disable the default SNAT to support the private use of public IP addresses.
 	DisableDefaultSnat *bool `field:"optional" json:"disableDefaultSnat" yaml:"disableDefaultSnat"`
-	// Disable the /0.1/ and /v1beta1/ metadata server endpoints on the node. Changing this value will cause all node pools to be recreated.
-	// Default: true.
-	//
+	// Disable the /0.1/ and /v1beta1/ metadata server endpoints on the node. Changing this value will cause all node pools to be recreated. true.
 	DisableLegacyMetadataEndpoints *bool `field:"optional" json:"disableLegacyMetadataEndpoints" yaml:"disableLegacyMetadataEndpoints"`
 	// The status of the NodeLocal DNSCache addon.
 	DnsCache *bool `field:"optional" json:"dnsCache" yaml:"dnsCache"`
@@ -143,12 +130,9 @@ type GkeprivateConfig struct {
 	// Whether to enable resource consumption metering on this cluster.
 	//
 	// When enabled, a table will be created in the resource export BigQuery dataset to store resource consumption data. The resulting table can be joined with the resource usage table or with BigQuery billing export.
-	// Default: true.
-	//
+	// true.
 	EnableResourceConsumptionExport *bool `field:"optional" json:"enableResourceConsumptionExport" yaml:"enableResourceConsumptionExport"`
-	// Enable Shielded Nodes features on all nodes in this cluster.
-	// Default: true.
-	//
+	// Enable Shielded Nodes features on all nodes in this cluster true.
 	EnableShieldedNodes *bool `field:"optional" json:"enableShieldedNodes" yaml:"enableShieldedNodes"`
 	// Enable Cloud TPU resources in the cluster.
 	//
@@ -161,46 +145,40 @@ type GkeprivateConfig struct {
 	// List of TCP ports for admission/webhook controllers.
 	//
 	// Either flag `add_master_webhook_firewall_rules` or `add_cluster_firewall_rules` (also adds egress rules) must be set to `true` for inbound-ports firewall rules to be applied.
-	// Default: 8443,9443,15017.
-	//
+	// 8443
+	// 9443
+	// 15017.
 	FirewallInboundPorts *[]*string `field:"optional" json:"firewallInboundPorts" yaml:"firewallInboundPorts"`
-	// Priority rule for firewall rules.
-	// Default: 1000.
-	//
+	// Priority rule for firewall rules 1,000.
 	FirewallPriority *float64 `field:"optional" json:"firewallPriority" yaml:"firewallPriority"`
 	// The gateway api channel of this cluster.
 	//
 	// Accepted values are `CHANNEL_STANDARD` and `CHANNEL_DISABLED`.
 	GatewayApiChannel *string `field:"optional" json:"gatewayApiChannel" yaml:"gatewayApiChannel"`
 	// Whether this cluster should enable the Google Compute Engine Persistent Disk Container Storage Interface (CSI) Driver.
-	// Default: true.
 	//
+	// true.
 	GcePdCsiDriver *bool `field:"optional" json:"gcePdCsiDriver" yaml:"gcePdCsiDriver"`
 	// Whether Backup for GKE agent is enabled for this cluster.
 	GkeBackupAgentConfig *bool `field:"optional" json:"gkeBackupAgentConfig" yaml:"gkeBackupAgentConfig"`
 	// Grants created cluster-specific service account storage.objectViewer and artifactregistry.reader roles.
 	GrantRegistryAccess *bool `field:"optional" json:"grantRegistryAccess" yaml:"grantRegistryAccess"`
-	// Enable horizontal pod autoscaling addon.
-	// Default: true.
-	//
+	// Enable horizontal pod autoscaling addon true.
 	HorizontalPodAutoscaling *bool `field:"optional" json:"horizontalPodAutoscaling" yaml:"horizontalPodAutoscaling"`
-	// Enable httpload balancer addon.
-	// Default: true.
-	//
+	// Enable httpload balancer addon true.
 	HttpLoadBalancing *bool `field:"optional" json:"httpLoadBalancing" yaml:"httpLoadBalancing"`
 	// The workload pool to attach all Kubernetes service accounts to.
 	//
 	// (Default value of `enabled` automatically sets project-based pool `[project_id].svc.id.goog`)
-	// Default: enabled.
-	//
+	// enabled.
 	IdentityNamespace *string `field:"optional" json:"identityNamespace" yaml:"identityNamespace"`
 	// The number of nodes to create in this cluster's default node pool.
 	InitialNodeCount *float64 `field:"optional" json:"initialNodeCount" yaml:"initialNodeCount"`
 	// Whether to masquerade traffic to the link-local prefix (169.254.0.0/16).
 	IpMasqLinkLocal *bool `field:"optional" json:"ipMasqLinkLocal" yaml:"ipMasqLinkLocal"`
 	// The interval at which the agent attempts to sync its ConfigMap file from the disk.
-	// Default: 60s.
 	//
+	// 60s.
 	IpMasqResyncInterval *string `field:"optional" json:"ipMasqResyncInterval" yaml:"ipMasqResyncInterval"`
 	// Issues a client certificate to authenticate to the cluster endpoint.
 	//
@@ -209,16 +187,15 @@ type GkeprivateConfig struct {
 	// (Beta) Enable Istio addon.
 	Istio *bool `field:"optional" json:"istio" yaml:"istio"`
 	// (Beta) The authentication type between services in Istio.
-	// Default: AUTH_MUTUAL_TLS.
 	//
+	// AUTH_MUTUAL_TLS.
 	IstioAuth *string `field:"optional" json:"istioAuth" yaml:"istioAuth"`
 	// (Beta) Whether KALM is enabled for this cluster.
 	KalmConfig *bool `field:"optional" json:"kalmConfig" yaml:"kalmConfig"`
 	// The Kubernetes version of the masters.
 	//
 	// If set to 'latest' it will pull latest available version in the selected region.
-	// Default: latest.
-	//
+	// latest.
 	KubernetesVersion *string `field:"optional" json:"kubernetesVersion" yaml:"kubernetesVersion"`
 	// List of services to monitor: SYSTEM_COMPONENTS, WORKLOADS.
 	//
@@ -227,8 +204,7 @@ type GkeprivateConfig struct {
 	// The logging service that the cluster should write logs to.
 	//
 	// Available options include logging.googleapis.com, logging.googleapis.com/kubernetes (beta), and none
-	// Default: logging.googleapis.com/kubernetes
-	//
+	// logging.googleapis.com/kubernetes
 	LoggingService *string `field:"optional" json:"loggingService" yaml:"loggingService"`
 	// Time window specified for recurring maintenance operations in RFC3339 format.
 	MaintenanceEndTime *string `field:"optional" json:"maintenanceEndTime" yaml:"maintenanceEndTime"`
@@ -238,21 +214,17 @@ type GkeprivateConfig struct {
 	MaintenanceExclusions *[]interface{} `field:"optional" json:"maintenanceExclusions" yaml:"maintenanceExclusions"`
 	// Frequency of the recurring maintenance window in RFC5545 format.
 	MaintenanceRecurrence *string `field:"optional" json:"maintenanceRecurrence" yaml:"maintenanceRecurrence"`
-	// Time window specified for daily or recurring maintenance operations in RFC3339 format.
-	// Default: 05:00.
-	//
+	// Time window specified for daily or recurring maintenance operations in RFC3339 format 05:00.
 	MaintenanceStartTime *string `field:"optional" json:"maintenanceStartTime" yaml:"maintenanceStartTime"`
 	// List of master authorized networks.
 	//
 	// If none are provided, disallow external access (except the cluster node IPs, which GKE automatically whitelists).
 	MasterAuthorizedNetworks *[]interface{} `field:"optional" json:"masterAuthorizedNetworks" yaml:"masterAuthorizedNetworks"`
 	// Whether the cluster master is accessible globally (from any region) or only within the same region as the private endpoint.
-	// Default: true.
 	//
+	// true.
 	MasterGlobalAccessEnabled *bool `field:"optional" json:"masterGlobalAccessEnabled" yaml:"masterGlobalAccessEnabled"`
-	// (Beta) The IP range in CIDR notation to use for the hosted master network.
-	// Default: 10.0.0.0/28
-	//
+	// (Beta) The IP range in CIDR notation to use for the hosted master network 10.0.0.0/28.
 	MasterIpv4CidrBlock *string `field:"optional" json:"masterIpv4CidrBlock" yaml:"masterIpv4CidrBlock"`
 	// List of services to monitor: SYSTEM_COMPONENTS, WORKLOADS (provider version >= 3.89.0). Empty list is default GKE configuration.
 	MonitoringEnabledComponents *[]*string `field:"optional" json:"monitoringEnabledComponents" yaml:"monitoringEnabledComponents"`
@@ -263,64 +235,39 @@ type GkeprivateConfig struct {
 	// The monitoring service that the cluster should write metrics to.
 	//
 	// Automatically send metrics from pods in the cluster to the Google Cloud Monitoring API. VM metrics will be collected by Google Compute Engine regardless of this setting Available options include monitoring.googleapis.com, monitoring.googleapis.com/kubernetes (beta) and none
-	// Default: monitoring.googleapis.com/kubernetes
-	//
+	// monitoring.googleapis.com/kubernetes
 	MonitoringService *string `field:"optional" json:"monitoringService" yaml:"monitoringService"`
 	// Enable network policy addon.
 	NetworkPolicy *bool `field:"optional" json:"networkPolicy" yaml:"networkPolicy"`
 	// The network policy provider.
-	// Default: CALICO.
 	//
+	// CALICO.
 	NetworkPolicyProvider *string `field:"optional" json:"networkPolicyProvider" yaml:"networkPolicyProvider"`
 	// The project ID of the shared VPC's host (for shared vpc support).
 	NetworkProjectId *string `field:"optional" json:"networkProjectId" yaml:"networkProjectId"`
-	// Specifies how node metadata is exposed to the workload running on the node.
-	// Default: GKE_METADATA.
-	//
+	// Specifies how node metadata is exposed to the workload running on the node GKE_METADATA.
 	NodeMetadata *string `field:"optional" json:"nodeMetadata" yaml:"nodeMetadata"`
-	// List of maps containing node pools.
-	// Default: [object Object]
-	// The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
-	//
+	// List of maps containing node pools [object Object] The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
 	NodePools *[]*map[string]interface{} `field:"optional" json:"nodePools" yaml:"nodePools"`
-	// Map of maps containing node labels by node-pool name.
-	// Default: [object Object]
-	// The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
-	//
+	// Map of maps containing node labels by node-pool name The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
 	NodePoolsLabels *map[string]*map[string]*string `field:"optional" json:"nodePoolsLabels" yaml:"nodePoolsLabels"`
-	// Map of maps containing linux node config sysctls by node-pool name.
-	// Default: [object Object]
-	// The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
-	//
+	// Map of maps containing linux node config sysctls by node-pool name The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
 	NodePoolsLinuxNodeConfigsSysctls *map[string]*map[string]*string `field:"optional" json:"nodePoolsLinuxNodeConfigsSysctls" yaml:"nodePoolsLinuxNodeConfigsSysctls"`
-	// Map of maps containing node metadata by node-pool name.
-	// Default: [object Object]
-	// The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
-	//
+	// Map of maps containing node metadata by node-pool name The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
 	NodePoolsMetadata *map[string]*map[string]*string `field:"optional" json:"nodePoolsMetadata" yaml:"nodePoolsMetadata"`
-	// Map of lists containing node oauth scopes by node-pool name.
-	// Default: [object Object]
-	// The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
-	//
+	// Map of lists containing node oauth scopes by node-pool name The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
 	NodePoolsOauthScopes *map[string]*[]*string `field:"optional" json:"nodePoolsOauthScopes" yaml:"nodePoolsOauthScopes"`
-	// Map of maps containing resource labels by node-pool name.
-	// Default: [object Object]
-	// The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
-	//
+	// Map of maps containing resource labels by node-pool name The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
 	NodePoolsResourceLabels *map[string]*map[string]*string `field:"optional" json:"nodePoolsResourceLabels" yaml:"nodePoolsResourceLabels"`
-	// Map of lists containing node network tags by node-pool name.
-	// Default: [object Object]
-	// The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
-	//
+	// Map of lists containing node network tags by node-pool name The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
 	NodePoolsTags *map[string]*[]*string `field:"optional" json:"nodePoolsTags" yaml:"nodePoolsTags"`
-	// Map of lists containing node taints by node-pool name.
-	// Default: [object Object]
-	// The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
-	//
+	// Map of lists containing node taints by node-pool name The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
 	NodePoolsTaints *map[string]*[]interface{} `field:"optional" json:"nodePoolsTaints" yaml:"nodePoolsTaints"`
 	// List of strings in CIDR notation that specify the IP address ranges that do not use IP masquerading.
-	// Default: 10.0.0.0/8,172.16.0.0/12,192.168.0.0/16
 	//
+	// 10.0.0.0/8
+	// 172.16.0.0/12
+	// 192.168.0.0/16
 	NonMasqueradeCidrs *[]*string `field:"optional" json:"nonMasqueradeCidrs" yaml:"nonMasqueradeCidrs"`
 	// The desired Pub/Sub topic to which notifications will be sent by GKE.
 	//
@@ -331,8 +278,7 @@ type GkeprivateConfig struct {
 	// Whether is a regional cluster (zonal cluster if set false.
 	//
 	// WARNING: changing this after cluster creation is destructive!)
-	// Default: true.
-	//
+	// true.
 	Regional *bool `field:"optional" json:"regional" yaml:"regional"`
 	// Projects holding Google Container Registries.
 	//
@@ -341,8 +287,7 @@ type GkeprivateConfig struct {
 	// The release channel of this cluster.
 	//
 	// Accepted values are `UNSPECIFIED`, `RAPID`, `REGULAR` and `STABLE`. Defaults to `REGULAR`.
-	// Default: REGULAR.
-	//
+	// REGULAR.
 	ReleaseChannel *string `field:"optional" json:"releaseChannel" yaml:"releaseChannel"`
 	// Remove default node pool while setting up the cluster.
 	RemoveDefaultNodePool *bool `field:"optional" json:"removeDefaultNodePool" yaml:"removeDefaultNodePool"`
@@ -363,30 +308,23 @@ type GkeprivateConfig struct {
 	// The log_config for shadow firewall rules.
 	//
 	// You can set this variable to `null` to disable logging.
-	// Default: [object Object].
-	//
 	ShadowFirewallRulesLogConfig interface{} `field:"optional" json:"shadowFirewallRulesLogConfig" yaml:"shadowFirewallRulesLogConfig"`
 	// The firewall priority of GKE shadow firewall rules.
 	//
 	// The priority should be less than default firewall, which is 1000.
-	// Default: 999.
-	//
+	// 999.
 	ShadowFirewallRulesPriority *float64 `field:"optional" json:"shadowFirewallRulesPriority" yaml:"shadowFirewallRulesPriority"`
-	// Map of stub domains and their resolvers to forward DNS queries for a certain domain to an external DNS server.
-	// Default: [object Object]
-	// The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
-	//
+	// Map of stub domains and their resolvers to forward DNS queries for a certain domain to an external DNS server The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
 	StubDomains *map[string]*[]*string `field:"optional" json:"stubDomains" yaml:"stubDomains"`
 	// Timeout for cluster operations.
-	// Default: [object Object]
-	// The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
 	//
+	// The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
 	Timeouts *map[string]*string `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// If specified, the values replace the nameservers taken by default from the node’s /etc/resolv.conf.
 	UpstreamNameservers *[]*string `field:"optional" json:"upstreamNameservers" yaml:"upstreamNameservers"`
 	// List of maps containing Windows node pools.
-	// Default: The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
 	//
+	// The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
 	WindowsNodePools *[]*map[string]*string `field:"optional" json:"windowsNodePools" yaml:"windowsNodePools"`
 	// The zones to host the cluster in (optional if regional cluster / required if zonal).
 	Zones *[]*string `field:"optional" json:"zones" yaml:"zones"`

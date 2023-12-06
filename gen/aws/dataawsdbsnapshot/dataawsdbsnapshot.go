@@ -741,6 +741,25 @@ func (j *jsiiProxy_DataAwsDbSnapshot)SetSnapshotType(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsDbSnapshot resource upon running "cdktf plan <stack-name>".
+func DataAwsDbSnapshot_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsDbSnapshot_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsDbSnapshot.DataAwsDbSnapshot",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

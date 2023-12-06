@@ -4,6 +4,10 @@ package rolesubscription
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RoleSubscription) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RoleSubscription) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (r *jsiiProxy_RoleSubscription) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (r *jsiiProxy_RoleSubscription) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RoleSubscription) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_RoleSubscription) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RoleSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RoleSubscription) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RoleSubscription) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRoleSubscription_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

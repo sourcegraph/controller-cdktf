@@ -4,6 +4,10 @@ package googlenetworkservicesedgecachekeyset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateGetStringMapAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validatePutTimeoutsPara
 }
 
 func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validatePutValidationSharedKeysParameters(value interface{}) error {
+	return nil
+}
+
+func validateGoogleNetworkServicesEdgeCacheKeyset_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

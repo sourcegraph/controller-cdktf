@@ -4,9 +4,11 @@ package googledataformrepository
 type GoogleDataformRepositoryGitRemoteSettings struct {
 	// The name of the Secret Manager secret version to use as an authentication token for Git operations.
 	//
-	// Must be in the format projects/*\/secrets/*\/versions/*.
+	// Must be in the format projects/* /secrets/* /versions/*.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataform_repository#authentication_token_secret_version GoogleDataformRepository#authentication_token_secret_version}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	AuthenticationTokenSecretVersion *string `field:"required" json:"authenticationTokenSecretVersion" yaml:"authenticationTokenSecretVersion"`
 	// The Git remote's default branch name.
 	//

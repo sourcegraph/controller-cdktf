@@ -4,6 +4,10 @@ package googlebillingbudget
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBillingBudget) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBillingBudget) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleBillingBudget) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBillingBudget) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBillingBudget) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBillingBudget) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBillingBudget) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBillingBudget) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -69,6 +89,10 @@ func (g *jsiiProxy_GoogleBillingBudget) validatePutThresholdRulesParameters(valu
 }
 
 func (g *jsiiProxy_GoogleBillingBudget) validatePutTimeoutsParameters(value *GoogleBillingBudgetTimeouts) error {
+	return nil
+}
+
+func validateGoogleBillingBudget_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package ec2tag
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_Ec2Tag) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2Tag) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (e *jsiiProxy_Ec2Tag) validateGetStringMapAttributeParameters(terraformAttr
 	return nil
 }
 
+func (e *jsiiProxy_Ec2Tag) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2Tag) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_Ec2Tag) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2Tag) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2Tag) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2Tag) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEc2Tag_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

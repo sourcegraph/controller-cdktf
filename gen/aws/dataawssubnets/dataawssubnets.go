@@ -438,6 +438,25 @@ func (j *jsiiProxy_DataAwsSubnets)SetTags(val *map[string]*string) {
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsSubnets resource upon running "cdktf plan <stack-name>".
+func DataAwsSubnets_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsSubnets_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsSubnets.DataAwsSubnets",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

@@ -4,6 +4,10 @@ package googletpunode
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleTpuNode) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleTpuNode) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleTpuNode) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (g *jsiiProxy_GoogleTpuNode) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleTpuNode) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleTpuNode) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleTpuNode) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleTpuNode) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleTpuNode) validatePutSchedulingConfigParameters(value *G
 }
 
 func (g *jsiiProxy_GoogleTpuNode) validatePutTimeoutsParameters(value *GoogleTpuNodeTimeouts) error {
+	return nil
+}
+
+func validateGoogleTpuNode_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

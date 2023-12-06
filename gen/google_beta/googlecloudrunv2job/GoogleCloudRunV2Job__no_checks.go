@@ -4,6 +4,10 @@ package googlecloudrunv2job
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleCloudRunV2Job) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2Job) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleCloudRunV2Job) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2Job) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2Job) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2Job) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2Job) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2Job) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (g *jsiiProxy_GoogleCloudRunV2Job) validatePutTemplateParameters(value *Goo
 }
 
 func (g *jsiiProxy_GoogleCloudRunV2Job) validatePutTimeoutsParameters(value *GoogleCloudRunV2JobTimeouts) error {
+	return nil
+}
+
+func validateGoogleCloudRunV2Job_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

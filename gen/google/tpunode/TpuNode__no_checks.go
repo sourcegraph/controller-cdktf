@@ -4,6 +4,10 @@ package tpunode
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TpuNode) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TpuNode) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (t *jsiiProxy_TpuNode) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (t *jsiiProxy_TpuNode) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TpuNode) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TpuNode) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TpuNode) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TpuNode) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (t *jsiiProxy_TpuNode) validatePutSchedulingConfigParameters(value *TpuNode
 }
 
 func (t *jsiiProxy_TpuNode) validatePutTimeoutsParameters(value *TpuNodeTimeouts) error {
+	return nil
+}
+
+func validateTpuNode_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

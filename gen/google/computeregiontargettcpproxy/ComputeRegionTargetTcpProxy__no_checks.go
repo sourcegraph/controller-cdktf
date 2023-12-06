@@ -4,6 +4,10 @@ package computeregiontargettcpproxy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeRegionTargetTcpProxy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionTargetTcpProxy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeRegionTargetTcpProxy) validateGetStringMapAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionTargetTcpProxy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionTargetTcpProxy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionTargetTcpProxy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionTargetTcpProxy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionTargetTcpProxy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ComputeRegionTargetTcpProxy) validateOverrideLogicalIdParamet
 }
 
 func (c *jsiiProxy_ComputeRegionTargetTcpProxy) validatePutTimeoutsParameters(value *ComputeRegionTargetTcpProxyTimeouts) error {
+	return nil
+}
+
+func validateComputeRegionTargetTcpProxy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

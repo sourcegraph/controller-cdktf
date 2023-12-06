@@ -4,6 +4,10 @@ package kmscryptokeyiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateKmsCryptoKeyIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

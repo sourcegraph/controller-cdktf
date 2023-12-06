@@ -4,6 +4,10 @@ package wafsizeconstraintset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WafSizeConstraintSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafSizeConstraintSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (w *jsiiProxy_WafSizeConstraintSet) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (w *jsiiProxy_WafSizeConstraintSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafSizeConstraintSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafSizeConstraintSet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafSizeConstraintSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafSizeConstraintSet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (w *jsiiProxy_WafSizeConstraintSet) validateOverrideLogicalIdParameters(new
 }
 
 func (w *jsiiProxy_WafSizeConstraintSet) validatePutSizeConstraintsParameters(value interface{}) error {
+	return nil
+}
+
+func validateWafSizeConstraintSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

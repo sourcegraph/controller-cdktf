@@ -4,6 +4,10 @@ package computeregiondiskiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeRegionDiskIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionDiskIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeRegionDiskIamMember) validateGetStringMapAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionDiskIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionDiskIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionDiskIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionDiskIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionDiskIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ComputeRegionDiskIamMember) validateOverrideLogicalIdParamete
 }
 
 func (c *jsiiProxy_ComputeRegionDiskIamMember) validatePutConditionParameters(value *ComputeRegionDiskIamMemberCondition) error {
+	return nil
+}
+
+func validateComputeRegionDiskIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -413,6 +413,25 @@ func (j *jsiiProxy_DataTfeAgentPool)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
+// Generates CDKTF code for importing a DataTfeAgentPool resource upon running "cdktf plan <stack-name>".
+func DataTfeAgentPool_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataTfeAgentPool_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

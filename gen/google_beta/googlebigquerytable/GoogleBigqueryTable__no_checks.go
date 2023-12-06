@@ -4,6 +4,10 @@ package googlebigquerytable
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBigqueryTable) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryTable) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleBigqueryTable) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryTable) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryTable) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryTable) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryTable) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryTable) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -73,6 +93,10 @@ func (g *jsiiProxy_GoogleBigqueryTable) validatePutTimePartitioningParameters(va
 }
 
 func (g *jsiiProxy_GoogleBigqueryTable) validatePutViewParameters(value *GoogleBigqueryTableView) error {
+	return nil
+}
+
+func validateGoogleBigqueryTable_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

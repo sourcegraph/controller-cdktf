@@ -4,6 +4,10 @@ package computeregiondiskresourcepolicyattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validateGetStringM
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validateOverrideLo
 }
 
 func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validatePutTimeoutsParameters(value *ComputeRegionDiskResourcePolicyAttachmentTimeouts) error {
+	return nil
+}
+
+func validateComputeRegionDiskResourcePolicyAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

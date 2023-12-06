@@ -125,10 +125,10 @@ type ComputeDiskConfig struct {
 	// project than this disk, you must supply a full URL. For example, the
 	// following are valid values:
 	//
-	// 'https://www.googleapis.com/compute/v1/projects/project/global/snapshots/snapshot'
-	// 'projects/project/global/snapshots/snapshot'
-	// 'global/snapshots/snapshot'
-	// 'snapshot'
+	// * 'https://www.googleapis.com/compute/v1/projects/project/global/snapshots/snapshot'
+	// * 'projects/project/global/snapshots/snapshot'
+	// * 'global/snapshots/snapshot'
+	// * 'snapshot'
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_disk#snapshot ComputeDisk#snapshot}
 	Snapshot *string `field:"optional" json:"snapshot" yaml:"snapshot"`
@@ -137,12 +137,12 @@ type ComputeDiskConfig struct {
 	// You can provide this as a partial or full URL to the resource.
 	// For example, the following are valid values:
 	//
-	// https://www.googleapis.com/compute/v1/projects/{project}/zones/{zone}/disks/{disk}
-	// https://www.googleapis.com/compute/v1/projects/{project}/regions/{region}/disks/{disk}
-	// projects/{project}/zones/{zone}/disks/{disk}
-	// projects/{project}/regions/{region}/disks/{disk}
-	// zones/{zone}/disks/{disk}
-	// regions/{region}/disks/{disk}
+	// * https://www.googleapis.com/compute/v1/projects/{project}/zones/{zone}/disks/{disk}
+	// * https://www.googleapis.com/compute/v1/projects/{project}/regions/{region}/disks/{disk}
+	// * projects/{project}/zones/{zone}/disks/{disk}
+	// * projects/{project}/regions/{region}/disks/{disk}
+	// * zones/{zone}/disks/{disk}
+	// * regions/{region}/disks/{disk}
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_disk#source_disk ComputeDisk#source_disk}
 	SourceDisk *string `field:"optional" json:"sourceDisk" yaml:"sourceDisk"`

@@ -456,6 +456,25 @@ func (j *jsiiProxy_DataAwsWafv2IpSet)SetScope(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsWafv2IpSet resource upon running "cdktf plan <stack-name>".
+func DataAwsWafv2IpSet_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsWafv2IpSet_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

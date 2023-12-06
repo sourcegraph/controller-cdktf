@@ -4,6 +4,10 @@ package datalosspreventionjobtrigger
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataLossPreventionJobTrigger) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionJobTrigger) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DataLossPreventionJobTrigger) validateGetStringMapAttributePa
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionJobTrigger) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionJobTrigger) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTrigger) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTrigger) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTrigger) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (d *jsiiProxy_DataLossPreventionJobTrigger) validatePutTimeoutsParameters(v
 }
 
 func (d *jsiiProxy_DataLossPreventionJobTrigger) validatePutTriggersParameters(value interface{}) error {
+	return nil
+}
+
+func validateDataLossPreventionJobTrigger_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

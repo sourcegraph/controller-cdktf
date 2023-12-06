@@ -546,6 +546,25 @@ func (j *jsiiProxy_DataAwsNetworkmanagerDevice)SetTags(val *map[string]*string) 
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsNetworkmanagerDevice resource upon running "cdktf plan <stack-name>".
+func DataAwsNetworkmanagerDevice_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsNetworkmanagerDevice_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDevice",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

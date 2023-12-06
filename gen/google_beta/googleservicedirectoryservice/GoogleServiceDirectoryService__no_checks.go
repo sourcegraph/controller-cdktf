@@ -4,6 +4,10 @@ package googleservicedirectoryservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleServiceDirectoryService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleServiceDirectoryService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleServiceDirectoryService) validateGetStringMapAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleServiceDirectoryService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleServiceDirectoryService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleServiceDirectoryService) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleServiceDirectoryService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleServiceDirectoryService) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleServiceDirectoryService) validateOverrideLogicalIdParam
 }
 
 func (g *jsiiProxy_GoogleServiceDirectoryService) validatePutTimeoutsParameters(value *GoogleServiceDirectoryServiceTimeouts) error {
+	return nil
+}
+
+func validateGoogleServiceDirectoryService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

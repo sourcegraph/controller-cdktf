@@ -4,6 +4,10 @@ package fsxlustrefilesystem
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FsxLustreFileSystem) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxLustreFileSystem) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (f *jsiiProxy_FsxLustreFileSystem) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (f *jsiiProxy_FsxLustreFileSystem) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxLustreFileSystem) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxLustreFileSystem) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxLustreFileSystem) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxLustreFileSystem) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (f *jsiiProxy_FsxLustreFileSystem) validatePutLogConfigurationParameters(va
 }
 
 func (f *jsiiProxy_FsxLustreFileSystem) validatePutTimeoutsParameters(value *FsxLustreFileSystemTimeouts) error {
+	return nil
+}
+
+func validateFsxLustreFileSystem_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

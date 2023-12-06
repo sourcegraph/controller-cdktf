@@ -4,6 +4,10 @@ package googlecontainerazureclient
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleContainerAzureClient) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAzureClient) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleContainerAzureClient) validateGetStringMapAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAzureClient) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAzureClient) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerAzureClient) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerAzureClient) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerAzureClient) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleContainerAzureClient) validateOverrideLogicalIdParamete
 }
 
 func (g *jsiiProxy_GoogleContainerAzureClient) validatePutTimeoutsParameters(value *GoogleContainerAzureClientTimeouts) error {
+	return nil
+}
+
+func validateGoogleContainerAzureClient_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

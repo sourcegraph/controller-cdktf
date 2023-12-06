@@ -4,6 +4,10 @@ package googlecomputemachineimageiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeMachineImageIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeMachineImageIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleComputeMachineImageIamBinding) validateGetStringMapAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeMachineImageIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeMachineImageIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeMachineImageIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeMachineImageIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeMachineImageIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleComputeMachineImageIamBinding) validateOverrideLogicalI
 }
 
 func (g *jsiiProxy_GoogleComputeMachineImageIamBinding) validatePutConditionParameters(value *GoogleComputeMachineImageIamBindingCondition) error {
+	return nil
+}
+
+func validateGoogleComputeMachineImageIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

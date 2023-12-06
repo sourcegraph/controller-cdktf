@@ -9,6 +9,9 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/awsvpc/internal"
 )
 
+// Defines an Awsvpc based on a Terraform module.
+//
+// Docs at Terraform Registry: {@link https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/3.19.0 terraform-aws-modules/vpc/aws}
 type Awsvpc interface {
 	cdktf.TerraformModule
 	AmazonSideAsn() *string

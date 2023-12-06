@@ -4,6 +4,10 @@ package gameservicesrealm
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GameServicesRealm) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GameServicesRealm) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GameServicesRealm) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (g *jsiiProxy_GameServicesRealm) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GameServicesRealm) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GameServicesRealm) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GameServicesRealm) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GameServicesRealm) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GameServicesRealm) validateOverrideLogicalIdParameters(newLog
 }
 
 func (g *jsiiProxy_GameServicesRealm) validatePutTimeoutsParameters(value *GameServicesRealmTimeouts) error {
+	return nil
+}
+
+func validateGameServicesRealm_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package ssoadminpermissionsboundaryattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateGetStringMapAt
 	return nil
 }
 
+func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateOverrideLogica
 }
 
 func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validatePutPermissionsBoundaryParameters(value *SsoadminPermissionsBoundaryAttachmentPermissionsBoundary) error {
+	return nil
+}
+
+func validateSsoadminPermissionsBoundaryAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

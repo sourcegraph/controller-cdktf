@@ -4,6 +4,10 @@ package googleiapwebregionbackendserviceiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleIapWebRegionBackendServiceIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIapWebRegionBackendServiceIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleIapWebRegionBackendServiceIamMember) validateGetStringM
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIapWebRegionBackendServiceIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIapWebRegionBackendServiceIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIapWebRegionBackendServiceIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIapWebRegionBackendServiceIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIapWebRegionBackendServiceIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleIapWebRegionBackendServiceIamMember) validateOverrideLo
 }
 
 func (g *jsiiProxy_GoogleIapWebRegionBackendServiceIamMember) validatePutConditionParameters(value *GoogleIapWebRegionBackendServiceIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleIapWebRegionBackendServiceIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

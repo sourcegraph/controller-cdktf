@@ -4,6 +4,10 @@ package podsecuritypolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PodSecurityPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PodSecurityPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (p *jsiiProxy_PodSecurityPolicy) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (p *jsiiProxy_PodSecurityPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PodSecurityPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PodSecurityPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PodSecurityPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PodSecurityPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (p *jsiiProxy_PodSecurityPolicy) validatePutMetadataParameters(value *PodSe
 }
 
 func (p *jsiiProxy_PodSecurityPolicy) validatePutSpecParameters(value *PodSecurityPolicySpec) error {
+	return nil
+}
+
+func validatePodSecurityPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

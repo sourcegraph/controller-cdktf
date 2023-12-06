@@ -29,16 +29,16 @@ type BigqueryDatasetAccess struct {
 	Routine *BigqueryDatasetAccessRoutine `field:"optional" json:"routine" yaml:"routine"`
 	// A special group to grant access to. Possible values include:.
 	//
-	// 'projectOwners': Owners of the enclosing project.
+	// * 'projectOwners': Owners of the enclosing project.
 	//
 	//
-	// 'projectReaders': Readers of the enclosing project.
+	// * 'projectReaders': Readers of the enclosing project.
 	//
 	//
-	// 'projectWriters': Writers of the enclosing project.
+	// * 'projectWriters': Writers of the enclosing project.
 	//
 	//
-	// 'allAuthenticatedUsers': All authenticated BigQuery users.
+	// * 'allAuthenticatedUsers': All authenticated BigQuery users.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_dataset#special_group BigqueryDataset#special_group}
 	SpecialGroup *string `field:"optional" json:"specialGroup" yaml:"specialGroup"`

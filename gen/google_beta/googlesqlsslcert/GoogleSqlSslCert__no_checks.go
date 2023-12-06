@@ -4,6 +4,10 @@ package googlesqlsslcert
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleSqlSslCert) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSqlSslCert) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleSqlSslCert) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSqlSslCert) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSqlSslCert) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSqlSslCert) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSqlSslCert) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSqlSslCert) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleSqlSslCert) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (g *jsiiProxy_GoogleSqlSslCert) validatePutTimeoutsParameters(value *GoogleSqlSslCertTimeouts) error {
+	return nil
+}
+
+func validateGoogleSqlSslCert_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

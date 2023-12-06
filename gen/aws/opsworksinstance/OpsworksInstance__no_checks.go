@@ -4,6 +4,10 @@ package opsworksinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OpsworksInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (o *jsiiProxy_OpsworksInstance) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (o *jsiiProxy_OpsworksInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (o *jsiiProxy_OpsworksInstance) validatePutRootBlockDeviceParameters(value 
 }
 
 func (o *jsiiProxy_OpsworksInstance) validatePutTimeoutsParameters(value *OpsworksInstanceTimeouts) error {
+	return nil
+}
+
+func validateOpsworksInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

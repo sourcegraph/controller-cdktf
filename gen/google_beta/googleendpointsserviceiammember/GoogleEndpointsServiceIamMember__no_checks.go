@@ -4,6 +4,10 @@ package googleendpointsserviceiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleEndpointsServiceIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEndpointsServiceIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleEndpointsServiceIamMember) validateGetStringMapAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEndpointsServiceIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEndpointsServiceIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEndpointsServiceIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEndpointsServiceIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEndpointsServiceIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleEndpointsServiceIamMember) validateOverrideLogicalIdPar
 }
 
 func (g *jsiiProxy_GoogleEndpointsServiceIamMember) validatePutConditionParameters(value *GoogleEndpointsServiceIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleEndpointsServiceIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

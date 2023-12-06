@@ -4,6 +4,10 @@ package computeglobalnetworkendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeGlobalNetworkEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeGlobalNetworkEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeGlobalNetworkEndpoint) validateGetStringMapAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_ComputeGlobalNetworkEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeGlobalNetworkEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeGlobalNetworkEndpoint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeGlobalNetworkEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeGlobalNetworkEndpoint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ComputeGlobalNetworkEndpoint) validateOverrideLogicalIdParame
 }
 
 func (c *jsiiProxy_ComputeGlobalNetworkEndpoint) validatePutTimeoutsParameters(value *ComputeGlobalNetworkEndpointTimeouts) error {
+	return nil
+}
+
+func validateComputeGlobalNetworkEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

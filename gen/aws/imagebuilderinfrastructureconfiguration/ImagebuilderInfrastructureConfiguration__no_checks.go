@@ -4,6 +4,10 @@ package imagebuilderinfrastructureconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) validateGetStringMap
 	return nil
 }
 
+func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) validatePutInstanceM
 }
 
 func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) validatePutLoggingParameters(value *ImagebuilderInfrastructureConfigurationLogging) error {
+	return nil
+}
+
+func validateImagebuilderInfrastructureConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

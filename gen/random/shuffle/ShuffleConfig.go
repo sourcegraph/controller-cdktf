@@ -37,7 +37,7 @@ type ShuffleConfig struct {
 	ResultCount *float64 `field:"optional" json:"resultCount" yaml:"resultCount"`
 	// Arbitrary string with which to seed the random number generator, in order to produce less-volatile permutations of the list.
 	//
-	// *Important:** Even with an identical seed, it is not guaranteed that the same permutation will be produced across different versions of Terraform. This argument causes the result to be *less volatile*, but not fixed for all time.
+	// **Important:** Even with an identical seed, it is not guaranteed that the same permutation will be produced across different versions of Terraform. This argument causes the result to be *less volatile*, but not fixed for all time.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/shuffle#seed Shuffle#seed}
 	Seed *string `field:"optional" json:"seed" yaml:"seed"`

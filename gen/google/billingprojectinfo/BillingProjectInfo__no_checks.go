@@ -4,6 +4,10 @@ package billingprojectinfo
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BillingProjectInfo) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BillingProjectInfo) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (b *jsiiProxy_BillingProjectInfo) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (b *jsiiProxy_BillingProjectInfo) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BillingProjectInfo) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BillingProjectInfo) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BillingProjectInfo) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BillingProjectInfo) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (b *jsiiProxy_BillingProjectInfo) validateOverrideLogicalIdParameters(newLo
 }
 
 func (b *jsiiProxy_BillingProjectInfo) validatePutTimeoutsParameters(value *BillingProjectInfoTimeouts) error {
+	return nil
+}
+
+func validateBillingProjectInfo_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

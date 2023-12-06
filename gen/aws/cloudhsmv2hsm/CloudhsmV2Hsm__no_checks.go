@@ -4,6 +4,10 @@ package cloudhsmv2hsm
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudhsmV2Hsm) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudhsmV2Hsm) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CloudhsmV2Hsm) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (c *jsiiProxy_CloudhsmV2Hsm) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudhsmV2Hsm) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudhsmV2Hsm) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudhsmV2Hsm) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudhsmV2Hsm) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_CloudhsmV2Hsm) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (c *jsiiProxy_CloudhsmV2Hsm) validatePutTimeoutsParameters(value *CloudhsmV2HsmTimeouts) error {
+	return nil
+}
+
+func validateCloudhsmV2Hsm_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

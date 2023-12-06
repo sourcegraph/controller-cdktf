@@ -4,6 +4,10 @@ package googleapigatewayapiconfigiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleApiGatewayApiConfigIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApiGatewayApiConfigIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigIamMember) validateGetStringMapAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApiGatewayApiConfigIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApiGatewayApiConfigIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApiGatewayApiConfigIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApiGatewayApiConfigIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApiGatewayApiConfigIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigIamMember) validateOverrideLogicalId
 }
 
 func (g *jsiiProxy_GoogleApiGatewayApiConfigIamMember) validatePutConditionParameters(value *GoogleApiGatewayApiConfigIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleApiGatewayApiConfigIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

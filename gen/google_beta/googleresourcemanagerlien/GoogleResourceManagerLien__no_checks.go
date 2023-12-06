@@ -4,6 +4,10 @@ package googleresourcemanagerlien
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleResourceManagerLien) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleResourceManagerLien) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleResourceManagerLien) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleResourceManagerLien) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleResourceManagerLien) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleResourceManagerLien) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleResourceManagerLien) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleResourceManagerLien) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleResourceManagerLien) validateOverrideLogicalIdParameter
 }
 
 func (g *jsiiProxy_GoogleResourceManagerLien) validatePutTimeoutsParameters(value *GoogleResourceManagerLienTimeouts) error {
+	return nil
+}
+
+func validateGoogleResourceManagerLien_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

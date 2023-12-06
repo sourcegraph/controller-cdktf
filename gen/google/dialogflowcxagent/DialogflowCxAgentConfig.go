@@ -33,8 +33,8 @@ type DialogflowCxAgentConfig struct {
 	// The name of the location this agent is located in.
 	//
 	// ~> **Note:** The first time you are deploying an Agent in your project you must configure location settings.
-	// This is a one time step but at the moment you can only [configure location settings](https://cloud.google.com/dialogflow/cx/docs/concept/region#location-settings) via the Dialogflow CX console.
-	// Another options is to use global location so you don't need to manually configure location settings.
+	//  This is a one time step but at the moment you can only [configure location settings](https://cloud.google.com/dialogflow/cx/docs/concept/region#location-settings) via the Dialogflow CX console.
+	//  Another options is to use global location so you don't need to manually configure location settings.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dialogflow_cx_agent#location DialogflowCxAgent#location}
 	Location *string `field:"required" json:"location" yaml:"location"`

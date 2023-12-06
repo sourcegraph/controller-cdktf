@@ -515,6 +515,25 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayAttachment)SetTransitGatewayAttachmen
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsEc2TransitGatewayAttachment resource upon running "cdktf plan <stack-name>".
+func DataAwsEc2TransitGatewayAttachment_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsEc2TransitGatewayAttachment_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

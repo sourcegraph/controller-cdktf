@@ -4,6 +4,10 @@ package iotcertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IotCertificate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (i *jsiiProxy_IotCertificate) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (i *jsiiProxy_IotCertificate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotCertificate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IotCertificate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotCertificate) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotCertificate) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIotCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

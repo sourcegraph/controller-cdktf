@@ -4,6 +4,10 @@ package appuserschema
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppUserSchema) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppUserSchema) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AppUserSchema) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (a *jsiiProxy_AppUserSchema) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppUserSchema) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppUserSchema) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppUserSchema) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppUserSchema) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (a *jsiiProxy_AppUserSchema) validatePutArrayOneOfParameters(value interfac
 }
 
 func (a *jsiiProxy_AppUserSchema) validatePutOneOfParameters(value interface{}) error {
+	return nil
+}
+
+func validateAppUserSchema_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -6,7 +6,7 @@ type ComputeRegionUrlMapDefaultUrlRedirect struct {
 	//
 	// If set to false, the query portion of the original URL is
 	// retained.
-	// This field is required to ensure an empty block is not set. The normal default value is false.
+	//  This field is required to ensure an empty block is not set. The normal default value is false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_url_map#strip_query ComputeRegionUrlMap#strip_query}
 	StripQuery interface{} `field:"required" json:"stripQuery" yaml:"stripQuery"`
@@ -44,16 +44,16 @@ type ComputeRegionUrlMapDefaultUrlRedirect struct {
 	PrefixRedirect *string `field:"optional" json:"prefixRedirect" yaml:"prefixRedirect"`
 	// The HTTP Status code to use for this RedirectAction. Supported values are:.
 	//
-	// MOVED_PERMANENTLY_DEFAULT, which is the default value and corresponds to 301.
+	// * MOVED_PERMANENTLY_DEFAULT, which is the default value and corresponds to 301.
 	//
-	// FOUND, which corresponds to 302.
+	// * FOUND, which corresponds to 302.
 	//
-	// SEE_OTHER which corresponds to 303.
+	// * SEE_OTHER which corresponds to 303.
 	//
-	// TEMPORARY_REDIRECT, which corresponds to 307. In this case, the request method
+	// * TEMPORARY_REDIRECT, which corresponds to 307. In this case, the request method
 	// will be retained.
 	//
-	// PERMANENT_REDIRECT, which corresponds to 308. In this case,
+	// * PERMANENT_REDIRECT, which corresponds to 308. In this case,
 	// the request method will be retained. Possible values: ["FOUND", "MOVED_PERMANENTLY_DEFAULT", "PERMANENT_REDIRECT", "SEE_OTHER", "TEMPORARY_REDIRECT"]
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_url_map#redirect_response_code ComputeRegionUrlMap#redirect_response_code}

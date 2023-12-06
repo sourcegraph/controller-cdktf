@@ -433,6 +433,25 @@ func (j *jsiiProxy_DataAwsArn)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsArn resource upon running "cdktf plan <stack-name>".
+func DataAwsArn_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsArn_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsArn.DataAwsArn",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

@@ -4,6 +4,10 @@ package directcloudwatch
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DirectCloudwatch) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectCloudwatch) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DirectCloudwatch) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (d *jsiiProxy_DirectCloudwatch) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectCloudwatch) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectCloudwatch) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectCloudwatch) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectCloudwatch) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (d *jsiiProxy_DirectCloudwatch) validatePutHistoricalDataRetrievalParameter
 }
 
 func (d *jsiiProxy_DirectCloudwatch) validatePutQueryDelayParameters(value *DirectCloudwatchQueryDelay) error {
+	return nil
+}
+
+func validateDirectCloudwatch_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

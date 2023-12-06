@@ -424,6 +424,25 @@ func (j *jsiiProxy_DataGoogleDatastreamStaticIps)SetProvider(val cdktf.Terraform
 	)
 }
 
+// Generates CDKTF code for importing a DataGoogleDatastreamStaticIps resource upon running "cdktf plan <stack-name>".
+func DataGoogleDatastreamStaticIps_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataGoogleDatastreamStaticIps_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

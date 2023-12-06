@@ -4,6 +4,10 @@ package endpointsservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EndpointsService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EndpointsService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_EndpointsService) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (e *jsiiProxy_EndpointsService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EndpointsService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EndpointsService) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EndpointsService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EndpointsService) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (e *jsiiProxy_EndpointsService) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (e *jsiiProxy_EndpointsService) validatePutTimeoutsParameters(value *EndpointsServiceTimeouts) error {
+	return nil
+}
+
+func validateEndpointsService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

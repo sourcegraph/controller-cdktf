@@ -4,6 +4,10 @@ package bigqueryconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigqueryConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (b *jsiiProxy_BigqueryConnection) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryConnection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryConnection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -73,6 +93,10 @@ func (b *jsiiProxy_BigqueryConnection) validatePutCloudSqlParameters(value *Bigq
 }
 
 func (b *jsiiProxy_BigqueryConnection) validatePutTimeoutsParameters(value *BigqueryConnectionTimeouts) error {
+	return nil
+}
+
+func validateBigqueryConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

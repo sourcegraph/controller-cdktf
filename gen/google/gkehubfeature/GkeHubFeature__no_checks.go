@@ -4,6 +4,10 @@ package gkehubfeature
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GkeHubFeature) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubFeature) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GkeHubFeature) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (g *jsiiProxy_GkeHubFeature) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubFeature) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeHubFeature) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeHubFeature) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeHubFeature) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GkeHubFeature) validatePutSpecParameters(value *GkeHubFeature
 }
 
 func (g *jsiiProxy_GkeHubFeature) validatePutTimeoutsParameters(value *GkeHubFeatureTimeouts) error {
+	return nil
+}
+
+func validateGkeHubFeature_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

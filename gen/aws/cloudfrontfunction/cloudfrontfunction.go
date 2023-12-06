@@ -80,6 +80,9 @@ type CloudfrontFunction interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -101,7 +104,22 @@ type CloudfrontFunction interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -610,6 +628,25 @@ func (j *jsiiProxy_CloudfrontFunction)SetRuntime(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a CloudfrontFunction resource upon running "cdktf plan <stack-name>".
+func CloudfrontFunction_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateCloudfrontFunction_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.cloudfrontFunction.CloudfrontFunction",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -692,6 +729,17 @@ func CloudfrontFunction_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (c *jsiiProxy_CloudfrontFunction) AddMoveTarget(moveTarget *string) {
+	if err := c.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (c *jsiiProxy_CloudfrontFunction) AddOverride(path *string, value interface{}) {
@@ -849,6 +897,30 @@ func (c *jsiiProxy_CloudfrontFunction) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (c *jsiiProxy_CloudfrontFunction) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CloudfrontFunction) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := c.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (c *jsiiProxy_CloudfrontFunction) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -863,6 +935,39 @@ func (c *jsiiProxy_CloudfrontFunction) InterpolationForAttribute(terraformAttrib
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CloudfrontFunction) MoveFromId(id *string) {
+	if err := c.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (c *jsiiProxy_CloudfrontFunction) MoveTo(moveTarget *string, index interface{}) {
+	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (c *jsiiProxy_CloudfrontFunction) MoveToId(id *string) {
+	if err := c.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (c *jsiiProxy_CloudfrontFunction) OverrideLogicalId(newLogicalId *string) {

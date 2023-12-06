@@ -4,6 +4,10 @@ package googlecomputeattacheddisk
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeAttachedDisk) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeAttachedDisk) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleComputeAttachedDisk) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeAttachedDisk) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeAttachedDisk) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeAttachedDisk) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeAttachedDisk) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeAttachedDisk) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleComputeAttachedDisk) validateOverrideLogicalIdParameter
 }
 
 func (g *jsiiProxy_GoogleComputeAttachedDisk) validatePutTimeoutsParameters(value *GoogleComputeAttachedDiskTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeAttachedDisk_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

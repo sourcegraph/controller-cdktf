@@ -4,6 +4,10 @@ package googlenotebooksruntime
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNotebooksRuntime) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNotebooksRuntime) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleNotebooksRuntime) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNotebooksRuntime) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNotebooksRuntime) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNotebooksRuntime) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNotebooksRuntime) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNotebooksRuntime) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (g *jsiiProxy_GoogleNotebooksRuntime) validatePutTimeoutsParameters(value *
 }
 
 func (g *jsiiProxy_GoogleNotebooksRuntime) validatePutVirtualMachineParameters(value *GoogleNotebooksRuntimeVirtualMachine) error {
+	return nil
+}
+
+func validateGoogleNotebooksRuntime_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

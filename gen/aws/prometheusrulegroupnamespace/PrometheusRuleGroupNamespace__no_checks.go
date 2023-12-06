@@ -4,6 +4,10 @@ package prometheusrulegroupnamespace
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PrometheusRuleGroupNamespace) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrometheusRuleGroupNamespace) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (p *jsiiProxy_PrometheusRuleGroupNamespace) validateGetStringMapAttributePa
 	return nil
 }
 
+func (p *jsiiProxy_PrometheusRuleGroupNamespace) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrometheusRuleGroupNamespace) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (p *jsiiProxy_PrometheusRuleGroupNamespace) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrometheusRuleGroupNamespace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrometheusRuleGroupNamespace) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrometheusRuleGroupNamespace) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validatePrometheusRuleGroupNamespace_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

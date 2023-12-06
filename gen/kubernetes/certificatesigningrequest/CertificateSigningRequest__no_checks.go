@@ -4,6 +4,10 @@ package certificatesigningrequest
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CertificateSigningRequest) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CertificateSigningRequest) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CertificateSigningRequest) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_CertificateSigningRequest) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CertificateSigningRequest) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CertificateSigningRequest) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CertificateSigningRequest) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CertificateSigningRequest) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (c *jsiiProxy_CertificateSigningRequest) validatePutSpecParameters(value *C
 }
 
 func (c *jsiiProxy_CertificateSigningRequest) validatePutTimeoutsParameters(value *CertificateSigningRequestTimeouts) error {
+	return nil
+}
+
+func validateCertificateSigningRequest_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

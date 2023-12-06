@@ -4,6 +4,10 @@ package imagebuilderimage
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_ImagebuilderImage) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_ImagebuilderImage) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (i *jsiiProxy_ImagebuilderImage) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (i *jsiiProxy_ImagebuilderImage) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_ImagebuilderImage) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_ImagebuilderImage) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_ImagebuilderImage) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_ImagebuilderImage) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (i *jsiiProxy_ImagebuilderImage) validatePutImageTestsConfigurationParamete
 }
 
 func (i *jsiiProxy_ImagebuilderImage) validatePutTimeoutsParameters(value *ImagebuilderImageTimeouts) error {
+	return nil
+}
+
+func validateImagebuilderImage_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package alertmethodwebhook
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AlertMethodWebhook) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlertMethodWebhook) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (a *jsiiProxy_AlertMethodWebhook) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (a *jsiiProxy_AlertMethodWebhook) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlertMethodWebhook) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AlertMethodWebhook) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlertMethodWebhook) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlertMethodWebhook) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlertMethodWebhook) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAlertMethodWebhook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

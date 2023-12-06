@@ -4,6 +4,10 @@ package googlecontaineranalysisnote
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleContainerAnalysisNote) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAnalysisNote) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleContainerAnalysisNote) validateGetStringMapAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAnalysisNote) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAnalysisNote) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerAnalysisNote) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerAnalysisNote) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerAnalysisNote) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (g *jsiiProxy_GoogleContainerAnalysisNote) validatePutRelatedUrlParameters(
 }
 
 func (g *jsiiProxy_GoogleContainerAnalysisNote) validatePutTimeoutsParameters(value *GoogleContainerAnalysisNoteTimeouts) error {
+	return nil
+}
+
+func validateGoogleContainerAnalysisNote_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

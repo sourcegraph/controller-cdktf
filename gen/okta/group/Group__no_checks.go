@@ -4,6 +4,10 @@ package group
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_Group) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_Group) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (g *jsiiProxy_Group) validateGetStringMapAttributeParameters(terraformAttri
 	return nil
 }
 
+func (g *jsiiProxy_Group) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_Group) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (g *jsiiProxy_Group) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_Group) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_Group) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_Group) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

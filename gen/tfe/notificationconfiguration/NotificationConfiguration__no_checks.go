@@ -4,6 +4,10 @@ package notificationconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NotificationConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (n *jsiiProxy_NotificationConfiguration) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (n *jsiiProxy_NotificationConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (n *jsiiProxy_NotificationConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotificationConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotificationConfiguration) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationConfiguration) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateNotificationConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

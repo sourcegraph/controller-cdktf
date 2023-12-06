@@ -481,6 +481,25 @@ func (j *jsiiProxy_DataGoogleComputeVpnGateway)SetRegion(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a DataGoogleComputeVpnGateway resource upon running "cdktf plan <stack-name>".
+func DataGoogleComputeVpnGateway_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataGoogleComputeVpnGateway_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.dataGoogleComputeVpnGateway.DataGoogleComputeVpnGateway",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

@@ -4,6 +4,10 @@ package cloudiotdevice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudiotDevice) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudiotDevice) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CloudiotDevice) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (c *jsiiProxy_CloudiotDevice) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudiotDevice) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudiotDevice) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudiotDevice) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudiotDevice) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (c *jsiiProxy_CloudiotDevice) validatePutGatewayConfigParameters(value *Clo
 }
 
 func (c *jsiiProxy_CloudiotDevice) validatePutTimeoutsParameters(value *CloudiotDeviceTimeouts) error {
+	return nil
+}
+
+func validateCloudiotDevice_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

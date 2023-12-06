@@ -4,6 +4,10 @@ package googleapigeeflowhook
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleApigeeFlowhook) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeFlowhook) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleApigeeFlowhook) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApigeeFlowhook) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeFlowhook) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeFlowhook) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeFlowhook) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeFlowhook) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleApigeeFlowhook) validateOverrideLogicalIdParameters(new
 }
 
 func (g *jsiiProxy_GoogleApigeeFlowhook) validatePutTimeoutsParameters(value *GoogleApigeeFlowhookTimeouts) error {
+	return nil
+}
+
+func validateGoogleApigeeFlowhook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package sagemakerproject
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SagemakerProject) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerProject) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SagemakerProject) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerProject) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerProject) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerProject) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerProject) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerProject) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_SagemakerProject) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (s *jsiiProxy_SagemakerProject) validatePutServiceCatalogProvisioningDetailsParameters(value *SagemakerProjectServiceCatalogProvisioningDetails) error {
+	return nil
+}
+
+func validateSagemakerProject_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -400,6 +400,25 @@ func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy)SetProvider(val cdktf
 	)
 }
 
+// Generates CDKTF code for importing a DataGoogleHealthcareHl7V2StoreIamPolicy resource upon running "cdktf plan <stack-name>".
+func DataGoogleHealthcareHl7V2StoreIamPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataGoogleHealthcareHl7V2StoreIamPolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.dataGoogleHealthcareHl7V2StoreIamPolicy.DataGoogleHealthcareHl7V2StoreIamPolicy",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

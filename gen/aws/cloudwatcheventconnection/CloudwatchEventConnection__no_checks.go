@@ -4,6 +4,10 @@ package cloudwatcheventconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudwatchEventConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudwatchEventConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CloudwatchEventConnection) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_CloudwatchEventConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudwatchEventConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchEventConnection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchEventConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchEventConnection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_CloudwatchEventConnection) validateOverrideLogicalIdParameter
 }
 
 func (c *jsiiProxy_CloudwatchEventConnection) validatePutAuthParametersParameters(value *CloudwatchEventConnectionAuthParameters) error {
+	return nil
+}
+
+func validateCloudwatchEventConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

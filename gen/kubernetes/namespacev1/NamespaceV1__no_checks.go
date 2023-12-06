@@ -4,6 +4,10 @@ package namespacev1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NamespaceV1) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NamespaceV1) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NamespaceV1) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (n *jsiiProxy_NamespaceV1) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NamespaceV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NamespaceV1) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NamespaceV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NamespaceV1) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (n *jsiiProxy_NamespaceV1) validatePutMetadataParameters(value *NamespaceV1
 }
 
 func (n *jsiiProxy_NamespaceV1) validatePutTimeoutsParameters(value *NamespaceV1Timeouts) error {
+	return nil
+}
+
+func validateNamespaceV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package grafanaroleassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GrafanaRoleAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GrafanaRoleAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GrafanaRoleAssociation) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (g *jsiiProxy_GrafanaRoleAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GrafanaRoleAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GrafanaRoleAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GrafanaRoleAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GrafanaRoleAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GrafanaRoleAssociation) validateOverrideLogicalIdParameters(n
 }
 
 func (g *jsiiProxy_GrafanaRoleAssociation) validatePutTimeoutsParameters(value *GrafanaRoleAssociationTimeouts) error {
+	return nil
+}
+
+func validateGrafanaRoleAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

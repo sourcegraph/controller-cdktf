@@ -4,6 +4,10 @@ package bigqueryreservation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigqueryReservation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryReservation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (b *jsiiProxy_BigqueryReservation) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryReservation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryReservation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryReservation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryReservation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryReservation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (b *jsiiProxy_BigqueryReservation) validatePutAutoscaleParameters(value *Bi
 }
 
 func (b *jsiiProxy_BigqueryReservation) validatePutTimeoutsParameters(value *BigqueryReservationTimeouts) error {
+	return nil
+}
+
+func validateBigqueryReservation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

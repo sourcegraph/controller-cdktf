@@ -4,6 +4,10 @@ package defaultserviceaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DefaultServiceAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DefaultServiceAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DefaultServiceAccount) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (d *jsiiProxy_DefaultServiceAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DefaultServiceAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DefaultServiceAccount) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DefaultServiceAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DefaultServiceAccount) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (d *jsiiProxy_DefaultServiceAccount) validatePutSecretParameters(value inte
 }
 
 func (d *jsiiProxy_DefaultServiceAccount) validatePutTimeoutsParameters(value *DefaultServiceAccountTimeouts) error {
+	return nil
+}
+
+func validateDefaultServiceAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

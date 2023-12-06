@@ -4,6 +4,10 @@ package networkfirewallloggingconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkfirewallLoggingConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkfirewallLoggingConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetworkfirewallLoggingConfiguration) validateGetStringMapAttr
 	return nil
 }
 
+func (n *jsiiProxy_NetworkfirewallLoggingConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkfirewallLoggingConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkfirewallLoggingConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkfirewallLoggingConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkfirewallLoggingConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NetworkfirewallLoggingConfiguration) validateOverrideLogicalI
 }
 
 func (n *jsiiProxy_NetworkfirewallLoggingConfiguration) validatePutLoggingConfigurationParameters(value *NetworkfirewallLoggingConfigurationLoggingConfiguration) error {
+	return nil
+}
+
+func validateNetworkfirewallLoggingConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

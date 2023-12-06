@@ -25,10 +25,10 @@ type DataLossPreventionDeidentifyTemplateConfig struct {
 	DeidentifyConfig *DataLossPreventionDeidentifyTemplateDeidentifyConfig `field:"required" json:"deidentifyConfig" yaml:"deidentifyConfig"`
 	// The parent of the template in any of the following formats:.
 	//
-	// 'projects/{{project}}'
-	// 'projects/{{project}}/locations/{{location}}'
-	// 'organizations/{{organization_id}}'
-	// 'organizations/{{organization_id}}/locations/{{location}}'
+	// * 'projects/{{project}}'
+	// * 'projects/{{project}}/locations/{{location}}'
+	// * 'organizations/{{organization_id}}'
+	// * 'organizations/{{organization_id}}/locations/{{location}}'
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/data_loss_prevention_deidentify_template#parent DataLossPreventionDeidentifyTemplate#parent}
 	Parent *string `field:"required" json:"parent" yaml:"parent"`

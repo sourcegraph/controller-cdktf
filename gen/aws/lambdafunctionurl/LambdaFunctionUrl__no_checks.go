@@ -4,6 +4,10 @@ package lambdafunctionurl
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LambdaFunctionUrl) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaFunctionUrl) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (l *jsiiProxy_LambdaFunctionUrl) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (l *jsiiProxy_LambdaFunctionUrl) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaFunctionUrl) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LambdaFunctionUrl) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LambdaFunctionUrl) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LambdaFunctionUrl) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (l *jsiiProxy_LambdaFunctionUrl) validatePutCorsParameters(value *LambdaFun
 }
 
 func (l *jsiiProxy_LambdaFunctionUrl) validatePutTimeoutsParameters(value *LambdaFunctionUrlTimeouts) error {
+	return nil
+}
+
+func validateLambdaFunctionUrl_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

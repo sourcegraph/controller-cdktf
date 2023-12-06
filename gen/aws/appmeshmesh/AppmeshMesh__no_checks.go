@@ -4,6 +4,10 @@ package appmeshmesh
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppmeshMesh) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppmeshMesh) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AppmeshMesh) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (a *jsiiProxy_AppmeshMesh) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppmeshMesh) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppmeshMesh) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppmeshMesh) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppmeshMesh) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (a *jsiiProxy_AppmeshMesh) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (a *jsiiProxy_AppmeshMesh) validatePutSpecParameters(value *AppmeshMeshSpec) error {
+	return nil
+}
+
+func validateAppmeshMesh_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

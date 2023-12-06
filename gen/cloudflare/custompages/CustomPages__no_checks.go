@@ -4,6 +4,10 @@ package custompages
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CustomPages) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomPages) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (c *jsiiProxy_CustomPages) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (c *jsiiProxy_CustomPages) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomPages) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_CustomPages) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomPages) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomPages) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomPages) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCustomPages_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

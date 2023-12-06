@@ -4,6 +4,10 @@ package batchjobdefinition
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BatchJobDefinition) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BatchJobDefinition) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (b *jsiiProxy_BatchJobDefinition) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (b *jsiiProxy_BatchJobDefinition) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BatchJobDefinition) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BatchJobDefinition) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BatchJobDefinition) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BatchJobDefinition) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (b *jsiiProxy_BatchJobDefinition) validatePutRetryStrategyParameters(value 
 }
 
 func (b *jsiiProxy_BatchJobDefinition) validatePutTimeoutParameters(value *BatchJobDefinitionTimeout) error {
+	return nil
+}
+
+func validateBatchJobDefinition_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

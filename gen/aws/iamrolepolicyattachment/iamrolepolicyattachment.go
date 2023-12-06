@@ -67,6 +67,9 @@ type IamRolePolicyAttachment interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -88,7 +91,22 @@ type IamRolePolicyAttachment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -462,6 +480,25 @@ func (j *jsiiProxy_IamRolePolicyAttachment)SetRole(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a IamRolePolicyAttachment resource upon running "cdktf plan <stack-name>".
+func IamRolePolicyAttachment_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateIamRolePolicyAttachment_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.iamRolePolicyAttachment.IamRolePolicyAttachment",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -544,6 +581,17 @@ func IamRolePolicyAttachment_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (i *jsiiProxy_IamRolePolicyAttachment) AddMoveTarget(moveTarget *string) {
+	if err := i.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (i *jsiiProxy_IamRolePolicyAttachment) AddOverride(path *string, value interface{}) {
@@ -701,6 +749,30 @@ func (i *jsiiProxy_IamRolePolicyAttachment) GetStringMapAttribute(terraformAttri
 	return returns
 }
 
+func (i *jsiiProxy_IamRolePolicyAttachment) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IamRolePolicyAttachment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := i.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (i *jsiiProxy_IamRolePolicyAttachment) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -715,6 +787,39 @@ func (i *jsiiProxy_IamRolePolicyAttachment) InterpolationForAttribute(terraformA
 	)
 
 	return returns
+}
+
+func (i *jsiiProxy_IamRolePolicyAttachment) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (i *jsiiProxy_IamRolePolicyAttachment) MoveTo(moveTarget *string, index interface{}) {
+	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_IamRolePolicyAttachment) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (i *jsiiProxy_IamRolePolicyAttachment) OverrideLogicalId(newLogicalId *string) {

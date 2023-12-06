@@ -4,6 +4,10 @@ package googlegameservicesgameserverconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleGameServicesGameServerConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGameServicesGameServerConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleGameServicesGameServerConfig) validateGetStringMapAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGameServicesGameServerConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGameServicesGameServerConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGameServicesGameServerConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGameServicesGameServerConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGameServicesGameServerConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (g *jsiiProxy_GoogleGameServicesGameServerConfig) validatePutScalingConfigs
 }
 
 func (g *jsiiProxy_GoogleGameServicesGameServerConfig) validatePutTimeoutsParameters(value *GoogleGameServicesGameServerConfigTimeouts) error {
+	return nil
+}
+
+func validateGoogleGameServicesGameServerConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package googlemonitoringnotificationchannel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleMonitoringNotificationChannel) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringNotificationChannel) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleMonitoringNotificationChannel) validateGetStringMapAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMonitoringNotificationChannel) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringNotificationChannel) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMonitoringNotificationChannel) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMonitoringNotificationChannel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMonitoringNotificationChannel) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleMonitoringNotificationChannel) validatePutSensitiveLabe
 }
 
 func (g *jsiiProxy_GoogleMonitoringNotificationChannel) validatePutTimeoutsParameters(value *GoogleMonitoringNotificationChannelTimeouts) error {
+	return nil
+}
+
+func validateGoogleMonitoringNotificationChannel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package pagesproject
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PagesProject) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PagesProject) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (p *jsiiProxy_PagesProject) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (p *jsiiProxy_PagesProject) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PagesProject) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PagesProject) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PagesProject) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PagesProject) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (p *jsiiProxy_PagesProject) validatePutDeploymentConfigsParameters(value *P
 }
 
 func (p *jsiiProxy_PagesProject) validatePutSourceParameters(value *PagesProjectSource) error {
+	return nil
+}
+
+func validatePagesProject_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

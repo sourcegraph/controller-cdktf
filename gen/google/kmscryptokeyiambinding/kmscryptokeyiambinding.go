@@ -73,6 +73,9 @@ type KmsCryptoKeyIamBinding interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -94,7 +97,22 @@ type KmsCryptoKeyIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -531,6 +549,25 @@ func (j *jsiiProxy_KmsCryptoKeyIamBinding)SetRole(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a KmsCryptoKeyIamBinding resource upon running "cdktf plan <stack-name>".
+func KmsCryptoKeyIamBinding_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateKmsCryptoKeyIamBinding_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.kmsCryptoKeyIamBinding.KmsCryptoKeyIamBinding",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -613,6 +650,17 @@ func KmsCryptoKeyIamBinding_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (k *jsiiProxy_KmsCryptoKeyIamBinding) AddMoveTarget(moveTarget *string) {
+	if err := k.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (k *jsiiProxy_KmsCryptoKeyIamBinding) AddOverride(path *string, value interface{}) {
@@ -770,6 +818,30 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
+func (k *jsiiProxy_KmsCryptoKeyIamBinding) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		k,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (k *jsiiProxy_KmsCryptoKeyIamBinding) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := k.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (k *jsiiProxy_KmsCryptoKeyIamBinding) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -784,6 +856,39 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) InterpolationForAttribute(terraformAt
 	)
 
 	return returns
+}
+
+func (k *jsiiProxy_KmsCryptoKeyIamBinding) MoveFromId(id *string) {
+	if err := k.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (k *jsiiProxy_KmsCryptoKeyIamBinding) MoveTo(moveTarget *string, index interface{}) {
+	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (k *jsiiProxy_KmsCryptoKeyIamBinding) MoveToId(id *string) {
+	if err := k.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (k *jsiiProxy_KmsCryptoKeyIamBinding) OverrideLogicalId(newLogicalId *string) {

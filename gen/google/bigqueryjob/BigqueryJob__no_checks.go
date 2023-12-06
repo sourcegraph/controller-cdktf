@@ -4,6 +4,10 @@ package bigqueryjob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigqueryJob) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryJob) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (b *jsiiProxy_BigqueryJob) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryJob) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryJob) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryJob) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryJob) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -69,6 +89,10 @@ func (b *jsiiProxy_BigqueryJob) validatePutQueryParameters(value *BigqueryJobQue
 }
 
 func (b *jsiiProxy_BigqueryJob) validatePutTimeoutsParameters(value *BigqueryJobTimeouts) error {
+	return nil
+}
+
+func validateBigqueryJob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

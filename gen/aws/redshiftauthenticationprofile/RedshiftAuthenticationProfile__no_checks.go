@@ -4,6 +4,10 @@ package redshiftauthenticationprofile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RedshiftAuthenticationProfile) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftAuthenticationProfile) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (r *jsiiProxy_RedshiftAuthenticationProfile) validateGetStringMapAttributeP
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftAuthenticationProfile) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftAuthenticationProfile) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftAuthenticationProfile) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedshiftAuthenticationProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedshiftAuthenticationProfile) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftAuthenticationProfile) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRedshiftAuthenticationProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package prometheusworkspace
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PrometheusWorkspace) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrometheusWorkspace) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (p *jsiiProxy_PrometheusWorkspace) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (p *jsiiProxy_PrometheusWorkspace) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrometheusWorkspace) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrometheusWorkspace) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrometheusWorkspace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrometheusWorkspace) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (p *jsiiProxy_PrometheusWorkspace) validateOverrideLogicalIdParameters(newL
 }
 
 func (p *jsiiProxy_PrometheusWorkspace) validatePutLoggingConfigurationParameters(value *PrometheusWorkspaceLoggingConfiguration) error {
+	return nil
+}
+
+func validatePrometheusWorkspace_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

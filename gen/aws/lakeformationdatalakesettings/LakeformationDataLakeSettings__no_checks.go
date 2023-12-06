@@ -4,6 +4,10 @@ package lakeformationdatalakesettings
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LakeformationDataLakeSettings) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LakeformationDataLakeSettings) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (l *jsiiProxy_LakeformationDataLakeSettings) validateGetStringMapAttributeP
 	return nil
 }
 
+func (l *jsiiProxy_LakeformationDataLakeSettings) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LakeformationDataLakeSettings) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LakeformationDataLakeSettings) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LakeformationDataLakeSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LakeformationDataLakeSettings) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (l *jsiiProxy_LakeformationDataLakeSettings) validatePutCreateDatabaseDefau
 }
 
 func (l *jsiiProxy_LakeformationDataLakeSettings) validatePutCreateTableDefaultPermissionsParameters(value interface{}) error {
+	return nil
+}
+
+func validateLakeformationDataLakeSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 
