@@ -1,6 +1,6 @@
 CDKTF_GENERATOR=.bin/cdktf-provider-gen
 CDKTF_PACKAGES=$(patsubst %.yml,%,$(wildcard *.yml))
-CDKTF_VERSION=0.16.3
+CDKTF_VERSION=0.19.2
 
 .PHONY : all
 all: install $(CDKTF_PACKAGES)
