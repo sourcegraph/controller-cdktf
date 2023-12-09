@@ -10,6 +10,9 @@ import (
 
 type ListItemValueOutputReference interface {
 	cdktf.ComplexObject
+	Asn() *float64
+	SetAsn(val *float64)
+	AsnInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -27,6 +30,8 @@ type ListItemValueOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Hostname() ListItemValueHostnameList
+	HostnameInput() interface{}
 	InternalValue() *ListItemValue
 	SetInternalValue(val *ListItemValue)
 	Ip() *string
@@ -66,7 +71,10 @@ type ListItemValueOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutHostname(value interface{})
 	PutRedirect(value interface{})
+	ResetAsn()
+	ResetHostname()
 	ResetIp()
 	ResetRedirect()
 	// Produce the Token's value at resolution time.
@@ -82,6 +90,26 @@ type ListItemValueOutputReference interface {
 // The jsii proxy struct for ListItemValueOutputReference
 type jsiiProxy_ListItemValueOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ListItemValueOutputReference) Asn() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"asn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ListItemValueOutputReference) AsnInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"asnInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ListItemValueOutputReference) ComplexObjectIndex() interface{} {
@@ -119,6 +147,26 @@ func (j *jsiiProxy_ListItemValueOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ListItemValueOutputReference) Hostname() ListItemValueHostnameList {
+	var returns ListItemValueHostnameList
+	_jsii_.Get(
+		j,
+		"hostname",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ListItemValueOutputReference) HostnameInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hostnameInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +267,17 @@ func NewListItemValueOutputReference_Override(l ListItemValueOutputReference, te
 		"@cdktf/provider-cloudflare.list.ListItemValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
+	)
+}
+
+func (j *jsiiProxy_ListItemValueOutputReference)SetAsn(val *float64) {
+	if err := j.validateSetAsnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"asn",
+		val,
 	)
 }
 
@@ -474,6 +533,17 @@ func (l *jsiiProxy_ListItemValueOutputReference) InterpolationForAttribute(prope
 	return returns
 }
 
+func (l *jsiiProxy_ListItemValueOutputReference) PutHostname(value interface{}) {
+	if err := l.validatePutHostnameParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putHostname",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_ListItemValueOutputReference) PutRedirect(value interface{}) {
 	if err := l.validatePutRedirectParameters(value); err != nil {
 		panic(err)
@@ -482,6 +552,22 @@ func (l *jsiiProxy_ListItemValueOutputReference) PutRedirect(value interface{}) 
 		l,
 		"putRedirect",
 		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_ListItemValueOutputReference) ResetAsn() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAsn",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_ListItemValueOutputReference) ResetHostname() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetHostname",
+		nil, // no parameters
 	)
 }
 

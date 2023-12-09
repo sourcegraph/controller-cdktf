@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/tunnelroute/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_route cloudflare_tunnel_route}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/tunnel_route cloudflare_tunnel_route}.
 type TunnelRoute interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_TunnelRoute) VirtualNetworkIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_route cloudflare_tunnel_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/tunnel_route cloudflare_tunnel_route} Resource.
 func NewTunnelRoute(scope constructs.Construct, id *string, config *TunnelRouteConfig) TunnelRoute {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewTunnelRoute(scope constructs.Construct, id *string, config *TunnelRouteC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_route cloudflare_tunnel_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/tunnel_route cloudflare_tunnel_route} Resource.
 func NewTunnelRoute_Override(t TunnelRoute, scope constructs.Construct, id *string, config *TunnelRouteConfig) {
 	_init_.Initialize()
 

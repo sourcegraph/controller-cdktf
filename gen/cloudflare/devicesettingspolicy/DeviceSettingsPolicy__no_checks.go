@@ -100,6 +100,10 @@ func (j *jsiiProxy_DeviceSettingsPolicy) validateSetDefaultParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_DeviceSettingsPolicy) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DeviceSettingsPolicy) validateSetDisableAutoFallbackParameters(val interface{}) error {
 	return nil
 }

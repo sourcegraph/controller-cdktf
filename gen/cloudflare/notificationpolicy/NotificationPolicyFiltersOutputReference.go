@@ -10,6 +10,12 @@ import (
 
 type NotificationPolicyFiltersOutputReference interface {
 	cdktf.ComplexObject
+	Actions() *[]*string
+	SetActions(val *[]*string)
+	ActionsInput() *[]*string
+	AlertTriggerPreferences() *[]*string
+	SetAlertTriggerPreferences(val *[]*string)
+	AlertTriggerPreferencesInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,6 +34,12 @@ type NotificationPolicyFiltersOutputReference interface {
 	Enabled() *[]*string
 	SetEnabled(val *[]*string)
 	EnabledInput() *[]*string
+	Environment() *[]*string
+	SetEnvironment(val *[]*string)
+	EnvironmentInput() *[]*string
+	Event() *[]*string
+	SetEvent(val *[]*string)
+	EventInput() *[]*string
 	EventSource() *[]*string
 	SetEventSource(val *[]*string)
 	EventSourceInput() *[]*string
@@ -36,9 +48,15 @@ type NotificationPolicyFiltersOutputReference interface {
 	EventTypeInput() *[]*string
 	// Experimental.
 	Fqn() *string
+	GroupBy() *[]*string
+	SetGroupBy(val *[]*string)
+	GroupByInput() *[]*string
 	HealthCheckId() *[]*string
 	SetHealthCheckId(val *[]*string)
 	HealthCheckIdInput() *[]*string
+	IncidentImpact() *[]*string
+	SetIncidentImpact(val *[]*string)
+	IncidentImpactInput() *[]*string
 	InputId() *[]*string
 	SetInputId(val *[]*string)
 	InputIdInput() *[]*string
@@ -47,9 +65,15 @@ type NotificationPolicyFiltersOutputReference interface {
 	Limit() *[]*string
 	SetLimit(val *[]*string)
 	LimitInput() *[]*string
+	MegabitsPerSecond() *[]*string
+	SetMegabitsPerSecond(val *[]*string)
+	MegabitsPerSecondInput() *[]*string
 	NewHealth() *[]*string
 	SetNewHealth(val *[]*string)
 	NewHealthInput() *[]*string
+	NewStatus() *[]*string
+	SetNewStatus(val *[]*string)
+	NewStatusInput() *[]*string
 	PacketsPerSecond() *[]*string
 	SetPacketsPerSecond(val *[]*string)
 	PacketsPerSecondInput() *[]*string
@@ -59,6 +83,9 @@ type NotificationPolicyFiltersOutputReference interface {
 	Product() *[]*string
 	SetProduct(val *[]*string)
 	ProductInput() *[]*string
+	ProjectId() *[]*string
+	SetProjectId(val *[]*string)
+	ProjectIdInput() *[]*string
 	Protocol() *[]*string
 	SetProtocol(val *[]*string)
 	ProtocolInput() *[]*string
@@ -74,9 +101,9 @@ type NotificationPolicyFiltersOutputReference interface {
 	Status() *[]*string
 	SetStatus(val *[]*string)
 	StatusInput() *[]*string
-	TargetHost() *[]*string
-	SetTargetHost(val *[]*string)
-	TargetHostInput() *[]*string
+	TargetHostname() *[]*string
+	SetTargetHostname(val *[]*string)
+	TargetHostnameInput() *[]*string
 	TargetZoneName() *[]*string
 	SetTargetZoneName(val *[]*string)
 	TargetZoneNameInput() *[]*string
@@ -88,6 +115,9 @@ type NotificationPolicyFiltersOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Where() *[]*string
+	SetWhere(val *[]*string)
+	WhereInput() *[]*string
 	Zones() *[]*string
 	SetZones(val *[]*string)
 	ZonesInput() *[]*string
@@ -115,23 +145,33 @@ type NotificationPolicyFiltersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetActions()
+	ResetAlertTriggerPreferences()
 	ResetEnabled()
+	ResetEnvironment()
+	ResetEvent()
 	ResetEventSource()
 	ResetEventType()
+	ResetGroupBy()
 	ResetHealthCheckId()
+	ResetIncidentImpact()
 	ResetInputId()
 	ResetLimit()
+	ResetMegabitsPerSecond()
 	ResetNewHealth()
+	ResetNewStatus()
 	ResetPacketsPerSecond()
 	ResetPoolId()
 	ResetProduct()
+	ResetProjectId()
 	ResetProtocol()
 	ResetRequestsPerSecond()
 	ResetServices()
 	ResetSlo()
 	ResetStatus()
-	ResetTargetHost()
+	ResetTargetHostname()
 	ResetTargetZoneName()
+	ResetWhere()
 	ResetZones()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -146,6 +186,46 @@ type NotificationPolicyFiltersOutputReference interface {
 // The jsii proxy struct for NotificationPolicyFiltersOutputReference
 type jsiiProxy_NotificationPolicyFiltersOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) Actions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"actions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) ActionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"actionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) AlertTriggerPreferences() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"alertTriggerPreferences",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) AlertTriggerPreferencesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"alertTriggerPreferencesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) ComplexObjectIndex() interface{} {
@@ -193,6 +273,46 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) EnabledInput() *[]*
 	_jsii_.Get(
 		j,
 		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) Environment() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"environment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) EnvironmentInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"environmentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) Event() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"event",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) EventInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"eventInput",
 		&returns,
 	)
 	return returns
@@ -248,6 +368,26 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) GroupBy() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"groupBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) GroupByInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"groupByInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) HealthCheckId() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -263,6 +403,26 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) HealthCheckIdInput(
 	_jsii_.Get(
 		j,
 		"healthCheckIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) IncidentImpact() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"incidentImpact",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) IncidentImpactInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"incidentImpactInput",
 		&returns,
 	)
 	return returns
@@ -318,6 +478,26 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) LimitInput() *[]*st
 	return returns
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) MegabitsPerSecond() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"megabitsPerSecond",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) MegabitsPerSecondInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"megabitsPerSecondInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) NewHealth() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -333,6 +513,26 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) NewHealthInput() *[
 	_jsii_.Get(
 		j,
 		"newHealthInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) NewStatus() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"newStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) NewStatusInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"newStatusInput",
 		&returns,
 	)
 	return returns
@@ -393,6 +593,26 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) ProductInput() *[]*
 	_jsii_.Get(
 		j,
 		"productInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) ProjectId() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) ProjectIdInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
 		&returns,
 	)
 	return returns
@@ -498,21 +718,21 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) StatusInput() *[]*s
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TargetHost() *[]*string {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TargetHostname() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"targetHost",
+		"targetHostname",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TargetHostInput() *[]*string {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TargetHostnameInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"targetHostInput",
+		"targetHostnameInput",
 		&returns,
 	)
 	return returns
@@ -553,6 +773,26 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TerraformResource()
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) Where() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"where",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) WhereInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"whereInput",
 		&returns,
 	)
 	return returns
@@ -606,6 +846,28 @@ func NewNotificationPolicyFiltersOutputReference_Override(n NotificationPolicyFi
 	)
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetActions(val *[]*string) {
+	if err := j.validateSetActionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"actions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetAlertTriggerPreferences(val *[]*string) {
+	if err := j.validateSetAlertTriggerPreferencesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alertTriggerPreferences",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -639,6 +901,28 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetEnabled(val *[]*s
 	)
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetEnvironment(val *[]*string) {
+	if err := j.validateSetEnvironmentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"environment",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetEvent(val *[]*string) {
+	if err := j.validateSetEventParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"event",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetEventSource(val *[]*string) {
 	if err := j.validateSetEventSourceParameters(val); err != nil {
 		panic(err)
@@ -661,6 +945,17 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetEventType(val *[]
 	)
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetGroupBy(val *[]*string) {
+	if err := j.validateSetGroupByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"groupBy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetHealthCheckId(val *[]*string) {
 	if err := j.validateSetHealthCheckIdParameters(val); err != nil {
 		panic(err)
@@ -668,6 +963,17 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetHealthCheckId(val
 	_jsii_.Set(
 		j,
 		"healthCheckId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetIncidentImpact(val *[]*string) {
+	if err := j.validateSetIncidentImpactParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"incidentImpact",
 		val,
 	)
 }
@@ -705,6 +1011,17 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetLimit(val *[]*str
 	)
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetMegabitsPerSecond(val *[]*string) {
+	if err := j.validateSetMegabitsPerSecondParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"megabitsPerSecond",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetNewHealth(val *[]*string) {
 	if err := j.validateSetNewHealthParameters(val); err != nil {
 		panic(err)
@@ -712,6 +1029,17 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetNewHealth(val *[]
 	_jsii_.Set(
 		j,
 		"newHealth",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetNewStatus(val *[]*string) {
+	if err := j.validateSetNewStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"newStatus",
 		val,
 	)
 }
@@ -745,6 +1073,17 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetProduct(val *[]*s
 	_jsii_.Set(
 		j,
 		"product",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetProjectId(val *[]*string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -804,13 +1143,13 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetStatus(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTargetHost(val *[]*string) {
-	if err := j.validateSetTargetHostParameters(val); err != nil {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTargetHostname(val *[]*string) {
+	if err := j.validateSetTargetHostnameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"targetHost",
+		"targetHostname",
 		val,
 	)
 }
@@ -844,6 +1183,17 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTerraformResource
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetWhere(val *[]*string) {
+	if err := j.validateSetWhereParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"where",
 		val,
 	)
 }
@@ -1045,10 +1395,42 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) InterpolationForAtt
 	return returns
 }
 
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetActions() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetActions",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetAlertTriggerPreferences() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAlertTriggerPreferences",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetEnvironment() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetEnvironment",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetEvent() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetEvent",
 		nil, // no parameters
 	)
 }
@@ -1069,10 +1451,26 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetEventType() {
 	)
 }
 
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetGroupBy() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetGroupBy",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetHealthCheckId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetHealthCheckId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetIncidentImpact() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIncidentImpact",
 		nil, // no parameters
 	)
 }
@@ -1093,10 +1491,26 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetLimit() {
 	)
 }
 
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetMegabitsPerSecond() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetMegabitsPerSecond",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetNewHealth() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetNewHealth",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetNewStatus() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetNewStatus",
 		nil, // no parameters
 	)
 }
@@ -1121,6 +1535,14 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetProduct() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetProduct",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }
@@ -1165,10 +1587,10 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetStatus() {
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetTargetHost() {
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetTargetHostname() {
 	_jsii_.InvokeVoid(
 		n,
-		"resetTargetHost",
+		"resetTargetHostname",
 		nil, // no parameters
 	)
 }
@@ -1177,6 +1599,14 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetTargetZoneName
 	_jsii_.InvokeVoid(
 		n,
 		"resetTargetZoneName",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetWhere() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetWhere",
 		nil, // no parameters
 	)
 }

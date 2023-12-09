@@ -44,6 +44,10 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validateInterpolatio
 	return nil
 }
 
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validatePutCustomAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

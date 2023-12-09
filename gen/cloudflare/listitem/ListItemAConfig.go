@@ -21,30 +21,40 @@ type ListItemAConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier to target for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/list_item#account_id ListItemA#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/list_item#account_id ListItemA#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The list identifier to target for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/list_item#list_id ListItemA#list_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/list_item#list_id ListItemA#list_id}
 	ListId *string `field:"required" json:"listId" yaml:"listId"`
+	// Autonomous system number to include in the list.
+	//
+	// Must provide only one of `ip`, `redirect`, `hostname`, `asn`. **Modifying this attribute will force creation of a new resource.**
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/list_item#asn ListItemA#asn}
+	Asn *float64 `field:"optional" json:"asn" yaml:"asn"`
 	// An optional comment for the item.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/list_item#comment ListItemA#comment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/list_item#comment ListItemA#comment}
 	Comment *string `field:"optional" json:"comment" yaml:"comment"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/list_item#id ListItemA#id}.
+	// hostname block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/list_item#hostname ListItemA#hostname}
+	Hostname *ListItemHostname `field:"optional" json:"hostname" yaml:"hostname"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/list_item#id ListItemA#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// IP address to include in the list.
 	//
-	// Must provide only one of `ip`, `redirect`. **Modifying this attribute will force creation of a new resource.**
+	// Must provide only one of `ip`, `redirect`, `hostname`, `asn`. **Modifying this attribute will force creation of a new resource.**
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/list_item#ip ListItemA#ip}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/list_item#ip ListItemA#ip}
 	Ip *string `field:"optional" json:"ip" yaml:"ip"`
 	// redirect block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/list_item#redirect ListItemA#redirect}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/list_item#redirect ListItemA#redirect}
 	Redirect *ListItemRedirect `field:"optional" json:"redirect" yaml:"redirect"`
 }
 

@@ -60,6 +60,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetAttr
 	return nil
 }
 
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetAuthorizationServerIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetAuthUrlParameters(val *string) error {
 	return nil
 }
@@ -96,11 +100,19 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetComp
 	return nil
 }
 
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetConditionalAccessEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetDirectoryIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetEmailAttributeNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetEmailClaimNameParameters(val *string) error {
 	return nil
 }
 
@@ -124,11 +136,11 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetOnel
 	return nil
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetPkceEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetPingEnvIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetRedirectUrlParameters(val *string) error {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetPkceEnabledParameters(val interface{}) error {
 	return nil
 }
 

@@ -111,6 +111,17 @@ func (l *jsiiProxy_ListItemA) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
+func (l *jsiiProxy_ListItemA) validatePutHostnameParameters(value *ListItemHostname) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (l *jsiiProxy_ListItemA) validatePutRedirectParameters(value *ListItemRedirect) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -147,6 +158,14 @@ func validateListItemA_IsTerraformResourceParameters(x interface{}) error {
 }
 
 func (j *jsiiProxy_ListItemA) validateSetAccountIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ListItemA) validateSetAsnParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

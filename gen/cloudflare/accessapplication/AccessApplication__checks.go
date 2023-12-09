@@ -339,6 +339,22 @@ func (j *jsiiProxy_AccessApplication) validateSetCustomDenyUrlParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplication) validateSetCustomNonIdentityDenyUrlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplication) validateSetCustomPagesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplication) validateSetDomainParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -473,6 +489,14 @@ func (j *jsiiProxy_AccessApplication) validateSetSameSiteCookieAttributeParamete
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplication) validateSetSelfHostedDomainsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplication) validateSetServiceAuth401RedirectParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -516,6 +540,14 @@ func (j *jsiiProxy_AccessApplication) validateSetSkipInterstitialParameters(val 
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplication) validateSetTagsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

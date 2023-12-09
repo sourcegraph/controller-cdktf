@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/datacloudflaredevices/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/devices cloudflare_devices}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/devices cloudflare_devices}.
 type DataCloudflareDevices interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataCloudflareDevices) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/devices cloudflare_devices} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/devices cloudflare_devices} Data Source.
 func NewDataCloudflareDevices(scope constructs.Construct, id *string, config *DataCloudflareDevicesConfig) DataCloudflareDevices {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataCloudflareDevices(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/devices cloudflare_devices} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/devices cloudflare_devices} Data Source.
 func NewDataCloudflareDevices_Override(d DataCloudflareDevices, scope constructs.Construct, id *string, config *DataCloudflareDevicesConfig) {
 	_init_.Initialize()
 

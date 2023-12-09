@@ -32,6 +32,8 @@ type TunnelConfigConfigIngressRuleOutputReference interface {
 	HostnameInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	OriginRequest() TunnelConfigConfigIngressRuleOriginRequestOutputReference
+	OriginRequestInput() *TunnelConfigConfigIngressRuleOriginRequest
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
@@ -70,7 +72,9 @@ type TunnelConfigConfigIngressRuleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutOriginRequest(value *TunnelConfigConfigIngressRuleOriginRequest)
 	ResetHostname()
+	ResetOriginRequest()
 	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -152,6 +156,26 @@ func (j *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) InternalValue()
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) OriginRequest() TunnelConfigConfigIngressRuleOriginRequestOutputReference {
+	var returns TunnelConfigConfigIngressRuleOriginRequestOutputReference
+	_jsii_.Get(
+		j,
+		"originRequest",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) OriginRequestInput() *TunnelConfigConfigIngressRuleOriginRequest {
+	var returns *TunnelConfigConfigIngressRuleOriginRequest
+	_jsii_.Get(
+		j,
+		"originRequestInput",
 		&returns,
 	)
 	return returns
@@ -519,10 +543,29 @@ func (t *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) InterpolationFo
 	return returns
 }
 
+func (t *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) PutOriginRequest(value *TunnelConfigConfigIngressRuleOriginRequest) {
+	if err := t.validatePutOriginRequestParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putOriginRequest",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) ResetHostname() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetHostname",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) ResetOriginRequest() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetOriginRequest",
 		nil, // no parameters
 	)
 }

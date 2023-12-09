@@ -316,6 +316,14 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetFilte
 	return nil
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetFontsParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetH2PrioritizationParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

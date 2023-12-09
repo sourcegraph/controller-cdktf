@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/accessapplication/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_application cloudflare_access_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application cloudflare_access_application}.
 type AccessApplication interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -45,6 +45,12 @@ type AccessApplication interface {
 	CustomDenyUrl() *string
 	SetCustomDenyUrl(val *string)
 	CustomDenyUrlInput() *string
+	CustomNonIdentityDenyUrl() *string
+	SetCustomNonIdentityDenyUrl(val *string)
+	CustomNonIdentityDenyUrlInput() *string
+	CustomPages() *[]*string
+	SetCustomPages(val *[]*string)
+	CustomPagesInput() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -96,6 +102,9 @@ type AccessApplication interface {
 	SameSiteCookieAttribute() *string
 	SetSameSiteCookieAttribute(val *string)
 	SameSiteCookieAttributeInput() *string
+	SelfHostedDomains() *[]*string
+	SetSelfHostedDomains(val *[]*string)
+	SelfHostedDomainsInput() *[]*string
 	ServiceAuth401Redirect() interface{}
 	SetServiceAuth401Redirect(val interface{})
 	ServiceAuth401RedirectInput() interface{}
@@ -105,6 +114,9 @@ type AccessApplication interface {
 	SkipInterstitial() interface{}
 	SetSkipInterstitial(val interface{})
 	SkipInterstitialInput() interface{}
+	Tags() *[]*string
+	SetTags(val *[]*string)
+	TagsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -151,6 +163,8 @@ type AccessApplication interface {
 	ResetCorsHeaders()
 	ResetCustomDenyMessage()
 	ResetCustomDenyUrl()
+	ResetCustomNonIdentityDenyUrl()
+	ResetCustomPages()
 	ResetDomain()
 	ResetEnableBindingCookie()
 	ResetHttpOnlyCookieAttribute()
@@ -161,9 +175,11 @@ type AccessApplication interface {
 	ResetOverrideLogicalId()
 	ResetSaasApp()
 	ResetSameSiteCookieAttribute()
+	ResetSelfHostedDomains()
 	ResetServiceAuth401Redirect()
 	ResetSessionDuration()
 	ResetSkipInterstitial()
+	ResetTags()
 	ResetType()
 	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
@@ -366,6 +382,46 @@ func (j *jsiiProxy_AccessApplication) CustomDenyUrlInput() *string {
 	_jsii_.Get(
 		j,
 		"customDenyUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) CustomNonIdentityDenyUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customNonIdentityDenyUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) CustomNonIdentityDenyUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customNonIdentityDenyUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) CustomPages() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customPages",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) CustomPagesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customPagesInput",
 		&returns,
 	)
 	return returns
@@ -621,6 +677,26 @@ func (j *jsiiProxy_AccessApplication) SameSiteCookieAttributeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplication) SelfHostedDomains() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"selfHostedDomains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) SelfHostedDomainsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"selfHostedDomainsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplication) ServiceAuth401Redirect() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -676,6 +752,26 @@ func (j *jsiiProxy_AccessApplication) SkipInterstitialInput() interface{} {
 	_jsii_.Get(
 		j,
 		"skipInterstitialInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) Tags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) TagsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
 		&returns,
 	)
 	return returns
@@ -752,7 +848,7 @@ func (j *jsiiProxy_AccessApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication(scope constructs.Construct, id *string, config *AccessApplicationConfig) AccessApplication {
 	_init_.Initialize()
 
@@ -770,7 +866,7 @@ func NewAccessApplication(scope constructs.Construct, id *string, config *Access
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication_Override(a AccessApplication, scope constructs.Construct, id *string, config *AccessApplicationConfig) {
 	_init_.Initialize()
 
@@ -865,6 +961,28 @@ func (j *jsiiProxy_AccessApplication)SetCustomDenyUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"customDenyUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplication)SetCustomNonIdentityDenyUrl(val *string) {
+	if err := j.validateSetCustomNonIdentityDenyUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customNonIdentityDenyUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplication)SetCustomPages(val *[]*string) {
+	if err := j.validateSetCustomPagesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customPages",
 		val,
 	)
 }
@@ -992,6 +1110,17 @@ func (j *jsiiProxy_AccessApplication)SetSameSiteCookieAttribute(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AccessApplication)SetSelfHostedDomains(val *[]*string) {
+	if err := j.validateSetSelfHostedDomainsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"selfHostedDomains",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessApplication)SetServiceAuth401Redirect(val interface{}) {
 	if err := j.validateSetServiceAuth401RedirectParameters(val); err != nil {
 		panic(err)
@@ -1021,6 +1150,17 @@ func (j *jsiiProxy_AccessApplication)SetSkipInterstitial(val interface{}) {
 	_jsii_.Set(
 		j,
 		"skipInterstitial",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplication)SetTags(val *[]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1391,6 +1531,22 @@ func (a *jsiiProxy_AccessApplication) ResetCustomDenyUrl() {
 	)
 }
 
+func (a *jsiiProxy_AccessApplication) ResetCustomNonIdentityDenyUrl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCustomNonIdentityDenyUrl",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetCustomPages() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCustomPages",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessApplication) ResetDomain() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1455,6 +1611,14 @@ func (a *jsiiProxy_AccessApplication) ResetSameSiteCookieAttribute() {
 	)
 }
 
+func (a *jsiiProxy_AccessApplication) ResetSelfHostedDomains() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSelfHostedDomains",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessApplication) ResetServiceAuth401Redirect() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1475,6 +1639,14 @@ func (a *jsiiProxy_AccessApplication) ResetSkipInterstitial() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSkipInterstitial",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetTags() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTags",
 		nil, // no parameters
 	)
 }

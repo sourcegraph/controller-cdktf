@@ -67,6 +67,8 @@ type PagesProjectDeploymentConfigsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPreview(value *PagesProjectDeploymentConfigsPreview)
 	PutProduction(value *PagesProjectDeploymentConfigsProduction)
+	ResetPreview()
+	ResetProduction()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -480,6 +482,22 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) PutProduction(v
 		p,
 		"putProduction",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) ResetPreview() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPreview",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) ResetProduction() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetProduction",
+		nil, // no parameters
 	)
 }
 

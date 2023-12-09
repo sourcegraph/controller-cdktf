@@ -44,6 +44,10 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validateInterpol
 	return nil
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutAlgorithmsParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutAutominifyParameters(value interface{}) error {
 	return nil
 }
@@ -101,6 +105,10 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutUriPa
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetAdditionalCacheablePortsParameters(val *[]*float64) error {
 	return nil
 }
 
@@ -180,6 +188,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetOppor
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetOriginCacheControlParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetOriginErrorPagePassthruParameters(val interface{}) error {
 	return nil
 }
@@ -193,6 +205,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetPolis
 }
 
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetProductsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetReadTimeoutParameters(val *float64) error {
 	return nil
 }
 

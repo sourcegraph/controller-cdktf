@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/workerskvnamespace/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace}.
 type WorkersKvNamespace interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -332,7 +332,7 @@ func (j *jsiiProxy_WorkersKvNamespace) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace} Resource.
 func NewWorkersKvNamespace(scope constructs.Construct, id *string, config *WorkersKvNamespaceConfig) WorkersKvNamespace {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewWorkersKvNamespace(scope constructs.Construct, id *string, config *Worke
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace} Resource.
 func NewWorkersKvNamespace_Override(w WorkersKvNamespace, scope constructs.Construct, id *string, config *WorkersKvNamespaceConfig) {
 	_init_.Initialize()
 

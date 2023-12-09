@@ -10,6 +10,9 @@ import (
 
 type CustomHostnameSslOutputReference interface {
 	cdktf.ComplexObject
+	BundleMethod() *string
+	SetBundleMethod(val *string)
+	BundleMethodInput() *string
 	CertificateAuthority() *string
 	SetCertificateAuthority(val *string)
 	CertificateAuthorityInput() *string
@@ -85,6 +88,7 @@ type CustomHostnameSslOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutSettings(value interface{})
+	ResetBundleMethod()
 	ResetCertificateAuthority()
 	ResetCustomCertificate()
 	ResetCustomKey()
@@ -105,6 +109,26 @@ type CustomHostnameSslOutputReference interface {
 // The jsii proxy struct for CustomHostnameSslOutputReference
 type jsiiProxy_CustomHostnameSslOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_CustomHostnameSslOutputReference) BundleMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bundleMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomHostnameSslOutputReference) BundleMethodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bundleMethodInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CustomHostnameSslOutputReference) CertificateAuthority() *string {
@@ -372,6 +396,17 @@ func NewCustomHostnameSslOutputReference_Override(c CustomHostnameSslOutputRefer
 		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
+	)
+}
+
+func (j *jsiiProxy_CustomHostnameSslOutputReference)SetBundleMethod(val *string) {
+	if err := j.validateSetBundleMethodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bundleMethod",
+		val,
 	)
 }
 
@@ -690,6 +725,14 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) PutSettings(value interface
 		c,
 		"putSettings",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CustomHostnameSslOutputReference) ResetBundleMethod() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBundleMethod",
+		nil, // no parameters
 	)
 }
 

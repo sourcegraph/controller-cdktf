@@ -50,7 +50,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "requestedValidityInput", GoGetter: "RequestedValidityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "requestType", GoGetter: "RequestType"},
 			_jsii_.MemberProperty{JsiiProperty: "requestTypeInput", GoGetter: "RequestTypeInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCsr", GoMethod: "ResetCsr"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMinDaysForRenewal", GoMethod: "ResetMinDaysForRenewal"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},

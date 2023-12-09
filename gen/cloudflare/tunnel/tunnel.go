@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/tunnel/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel cloudflare_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/tunnel cloudflare_tunnel}.
 type Tunnel interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -18,6 +18,9 @@ type Tunnel interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Cname() *string
+	ConfigSrc() *string
+	SetConfigSrc(val *string)
+	ConfigSrcInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -97,6 +100,7 @@ type Tunnel interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetConfigSrc()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -151,6 +155,26 @@ func (j *jsiiProxy_Tunnel) Cname() *string {
 	_jsii_.Get(
 		j,
 		"cname",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Tunnel) ConfigSrc() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configSrc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Tunnel) ConfigSrcInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configSrcInput",
 		&returns,
 	)
 	return returns
@@ -377,7 +401,7 @@ func (j *jsiiProxy_Tunnel) TunnelToken() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel cloudflare_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/tunnel cloudflare_tunnel} Resource.
 func NewTunnel(scope constructs.Construct, id *string, config *TunnelConfig) Tunnel {
 	_init_.Initialize()
 
@@ -395,7 +419,7 @@ func NewTunnel(scope constructs.Construct, id *string, config *TunnelConfig) Tun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel cloudflare_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/tunnel cloudflare_tunnel} Resource.
 func NewTunnel_Override(t Tunnel, scope constructs.Construct, id *string, config *TunnelConfig) {
 	_init_.Initialize()
 
@@ -413,6 +437,17 @@ func (j *jsiiProxy_Tunnel)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Tunnel)SetConfigSrc(val *string) {
+	if err := j.validateSetConfigSrcParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"configSrc",
 		val,
 	)
 }
@@ -781,6 +816,14 @@ func (t *jsiiProxy_Tunnel) OverrideLogicalId(newLogicalId *string) {
 		t,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (t *jsiiProxy_Tunnel) ResetConfigSrc() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetConfigSrc",
+		nil, // no parameters
 	)
 }
 

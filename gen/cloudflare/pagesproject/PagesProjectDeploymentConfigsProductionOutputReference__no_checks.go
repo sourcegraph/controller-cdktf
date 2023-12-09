@@ -44,6 +44,10 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 	return nil
 }
 
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validatePutPlacementParameters(value *PagesProjectDeploymentConfigsProductionPlacement) error {
+	return nil
+}
+
 func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validatePutServiceBindingParameters(value interface{}) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 }
 
 func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateSetR2BucketsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateSetSecretsParameters(val *map[string]*string) error {
 	return nil
 }
 

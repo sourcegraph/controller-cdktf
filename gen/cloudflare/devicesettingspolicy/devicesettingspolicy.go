@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/devicesettingspolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_settings_policy cloudflare_device_settings_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_settings_policy cloudflare_device_settings_policy}.
 type DeviceSettingsPolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -49,6 +49,9 @@ type DeviceSettingsPolicy interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	DisableAutoFallback() interface{}
 	SetDisableAutoFallback(val interface{})
 	DisableAutoFallbackInput() interface{}
@@ -356,6 +359,26 @@ func (j *jsiiProxy_DeviceSettingsPolicy) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DeviceSettingsPolicy) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DeviceSettingsPolicy) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -692,7 +715,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_settings_policy cloudflare_device_settings_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_settings_policy cloudflare_device_settings_policy} Resource.
 func NewDeviceSettingsPolicy(scope constructs.Construct, id *string, config *DeviceSettingsPolicyConfig) DeviceSettingsPolicy {
 	_init_.Initialize()
 
@@ -710,7 +733,7 @@ func NewDeviceSettingsPolicy(scope constructs.Construct, id *string, config *Dev
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_settings_policy cloudflare_device_settings_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_settings_policy cloudflare_device_settings_policy} Resource.
 func NewDeviceSettingsPolicy_Override(d DeviceSettingsPolicy, scope constructs.Construct, id *string, config *DeviceSettingsPolicyConfig) {
 	_init_.Initialize()
 
@@ -824,6 +847,17 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DeviceSettingsPolicy)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }

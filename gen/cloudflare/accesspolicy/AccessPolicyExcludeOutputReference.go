@@ -13,6 +13,8 @@ type AccessPolicyExcludeOutputReference interface {
 	AnyValidServiceToken() interface{}
 	SetAnyValidServiceToken(val interface{})
 	AnyValidServiceTokenInput() interface{}
+	AuthContext() AccessPolicyExcludeAuthContextList
+	AuthContextInput() interface{}
 	AuthMethod() *string
 	SetAuthMethod(val *string)
 	AuthMethodInput() *string
@@ -115,6 +117,7 @@ type AccessPolicyExcludeOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAuthContext(value interface{})
 	PutAzure(value interface{})
 	PutExternalEvaluation(value *AccessPolicyExcludeExternalEvaluation)
 	PutGithub(value interface{})
@@ -122,6 +125,7 @@ type AccessPolicyExcludeOutputReference interface {
 	PutOkta(value interface{})
 	PutSaml(value interface{})
 	ResetAnyValidServiceToken()
+	ResetAuthContext()
 	ResetAuthMethod()
 	ResetAzure()
 	ResetCertificate()
@@ -171,6 +175,26 @@ func (j *jsiiProxy_AccessPolicyExcludeOutputReference) AnyValidServiceTokenInput
 	_jsii_.Get(
 		j,
 		"anyValidServiceTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessPolicyExcludeOutputReference) AuthContext() AccessPolicyExcludeAuthContextList {
+	var returns AccessPolicyExcludeAuthContextList
+	_jsii_.Get(
+		j,
+		"authContext",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessPolicyExcludeOutputReference) AuthContextInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"authContextInput",
 		&returns,
 	)
 	return returns
@@ -1049,6 +1073,17 @@ func (a *jsiiProxy_AccessPolicyExcludeOutputReference) InterpolationForAttribute
 	return returns
 }
 
+func (a *jsiiProxy_AccessPolicyExcludeOutputReference) PutAuthContext(value interface{}) {
+	if err := a.validatePutAuthContextParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAuthContext",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccessPolicyExcludeOutputReference) PutAzure(value interface{}) {
 	if err := a.validatePutAzureParameters(value); err != nil {
 		panic(err)
@@ -1119,6 +1154,14 @@ func (a *jsiiProxy_AccessPolicyExcludeOutputReference) ResetAnyValidServiceToken
 	_jsii_.InvokeVoid(
 		a,
 		"resetAnyValidServiceToken",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessPolicyExcludeOutputReference) ResetAuthContext() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAuthContext",
 		nil, // no parameters
 	)
 }

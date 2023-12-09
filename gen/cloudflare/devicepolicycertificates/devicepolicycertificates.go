@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/devicepolicycertificates/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_policy_certificates cloudflare_device_policy_certificates}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_policy_certificates cloudflare_device_policy_certificates}.
 type DevicePolicyCertificates interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_DevicePolicyCertificates) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_policy_certificates cloudflare_device_policy_certificates} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_policy_certificates cloudflare_device_policy_certificates} Resource.
 func NewDevicePolicyCertificates(scope constructs.Construct, id *string, config *DevicePolicyCertificatesConfig) DevicePolicyCertificates {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewDevicePolicyCertificates(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_policy_certificates cloudflare_device_policy_certificates} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_policy_certificates cloudflare_device_policy_certificates} Resource.
 func NewDevicePolicyCertificates_Override(d DevicePolicyCertificates, scope constructs.Construct, id *string, config *DevicePolicyCertificatesConfig) {
 	_init_.Initialize()
 

@@ -27,8 +27,14 @@ type LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference interfac
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Headers() *[]*string
+	SetHeaders(val *[]*string)
+	HeadersInput() *[]*string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	RequireAllHeaders() interface{}
+	SetRequireAllHeaders(val interface{})
+	RequireAllHeadersInput() interface{}
 	Samesite() *string
 	SetSamesite(val *string)
 	SamesiteInput() *string
@@ -70,6 +76,8 @@ type LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetHeaders()
+	ResetRequireAllHeaders()
 	ResetSamesite()
 	ResetSecure()
 	ResetZeroDowntimeFailover()
@@ -128,11 +136,51 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference) Headers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"headers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference) HeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"headersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference) RequireAllHeaders() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requireAllHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference) RequireAllHeadersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requireAllHeadersInput",
 		&returns,
 	)
 	return returns
@@ -268,6 +316,17 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputRefe
 	)
 }
 
+func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference)SetHeaders(val *[]*string) {
+	if err := j.validateSetHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"headers",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -275,6 +334,17 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputRefe
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference)SetRequireAllHeaders(val interface{}) {
+	if err := j.validateSetRequireAllHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requireAllHeaders",
 		val,
 	)
 }
@@ -518,6 +588,22 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputRefe
 	)
 
 	return returns
+}
+
+func (l *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference) ResetHeaders() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetHeaders",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference) ResetRequireAllHeaders() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRequireAllHeaders",
+		nil, // no parameters
+	)
 }
 
 func (l *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference) ResetSamesite() {

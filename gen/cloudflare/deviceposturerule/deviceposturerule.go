@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/deviceposturerule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_posture_rule cloudflare_device_posture_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_rule cloudflare_device_posture_rule}.
 type DevicePostureRule interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -476,7 +476,7 @@ func (j *jsiiProxy_DevicePostureRule) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_posture_rule cloudflare_device_posture_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_rule cloudflare_device_posture_rule} Resource.
 func NewDevicePostureRule(scope constructs.Construct, id *string, config *DevicePostureRuleConfig) DevicePostureRule {
 	_init_.Initialize()
 
@@ -494,7 +494,7 @@ func NewDevicePostureRule(scope constructs.Construct, id *string, config *Device
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_posture_rule cloudflare_device_posture_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_posture_rule cloudflare_device_posture_rule} Resource.
 func NewDevicePostureRule_Override(d DevicePostureRule, scope constructs.Construct, id *string, config *DevicePostureRuleConfig) {
 	_init_.Initialize()
 

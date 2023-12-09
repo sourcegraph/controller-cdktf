@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/accessorganization/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_organization cloudflare_access_organization}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_organization cloudflare_access_organization}.
 type AccessOrganization interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -18,6 +18,9 @@ type AccessOrganization interface {
 	AuthDomain() *string
 	SetAuthDomain(val *string)
 	AuthDomainInput() *string
+	AutoRedirectToIdentity() interface{}
+	SetAutoRedirectToIdentity(val interface{})
+	AutoRedirectToIdentityInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -30,6 +33,8 @@ type AccessOrganization interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomPages() AccessOrganizationCustomPagesList
+	CustomPagesInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -69,6 +74,9 @@ type AccessOrganization interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SessionDuration() *string
+	SetSessionDuration(val *string)
+	SessionDurationInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -109,8 +117,11 @@ type AccessOrganization interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCustomPages(value interface{})
 	PutLoginDesign(value interface{})
 	ResetAccountId()
+	ResetAutoRedirectToIdentity()
+	ResetCustomPages()
 	ResetId()
 	ResetIsUiReadOnly()
 	ResetLoginDesign()
@@ -118,6 +129,7 @@ type AccessOrganization interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSessionDuration()
 	ResetUiReadOnlyToggleReason()
 	ResetUserSeatExpirationInactiveTime()
 	ResetZoneId()
@@ -176,6 +188,26 @@ func (j *jsiiProxy_AccessOrganization) AuthDomainInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessOrganization) AutoRedirectToIdentity() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoRedirectToIdentity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessOrganization) AutoRedirectToIdentityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoRedirectToIdentityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessOrganization) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -211,6 +243,26 @@ func (j *jsiiProxy_AccessOrganization) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessOrganization) CustomPages() AccessOrganizationCustomPagesList {
+	var returns AccessOrganizationCustomPagesList
+	_jsii_.Get(
+		j,
+		"customPages",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessOrganization) CustomPagesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customPagesInput",
 		&returns,
 	)
 	return returns
@@ -386,6 +438,26 @@ func (j *jsiiProxy_AccessOrganization) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AccessOrganization) SessionDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sessionDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessOrganization) SessionDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sessionDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessOrganization) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -477,7 +549,7 @@ func (j *jsiiProxy_AccessOrganization) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_organization cloudflare_access_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_organization cloudflare_access_organization} Resource.
 func NewAccessOrganization(scope constructs.Construct, id *string, config *AccessOrganizationConfig) AccessOrganization {
 	_init_.Initialize()
 
@@ -495,7 +567,7 @@ func NewAccessOrganization(scope constructs.Construct, id *string, config *Acces
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_organization cloudflare_access_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_organization cloudflare_access_organization} Resource.
 func NewAccessOrganization_Override(a AccessOrganization, scope constructs.Construct, id *string, config *AccessOrganizationConfig) {
 	_init_.Initialize()
 
@@ -524,6 +596,17 @@ func (j *jsiiProxy_AccessOrganization)SetAuthDomain(val *string) {
 	_jsii_.Set(
 		j,
 		"authDomain",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessOrganization)SetAutoRedirectToIdentity(val interface{}) {
+	if err := j.validateSetAutoRedirectToIdentityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoRedirectToIdentity",
 		val,
 	)
 }
@@ -625,6 +708,17 @@ func (j *jsiiProxy_AccessOrganization)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessOrganization)SetSessionDuration(val *string) {
+	if err := j.validateSetSessionDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sessionDuration",
 		val,
 	)
 }
@@ -928,6 +1022,17 @@ func (a *jsiiProxy_AccessOrganization) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_AccessOrganization) PutCustomPages(value interface{}) {
+	if err := a.validatePutCustomPagesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putCustomPages",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccessOrganization) PutLoginDesign(value interface{}) {
 	if err := a.validatePutLoginDesignParameters(value); err != nil {
 		panic(err)
@@ -943,6 +1048,22 @@ func (a *jsiiProxy_AccessOrganization) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessOrganization) ResetAutoRedirectToIdentity() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAutoRedirectToIdentity",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessOrganization) ResetCustomPages() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCustomPages",
 		nil, // no parameters
 	)
 }
@@ -983,6 +1104,14 @@ func (a *jsiiProxy_AccessOrganization) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessOrganization) ResetSessionDuration() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSessionDuration",
 		nil, // no parameters
 	)
 }

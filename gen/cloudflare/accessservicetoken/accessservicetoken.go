@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/accessservicetoken/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_service_token cloudflare_access_service_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_service_token cloudflare_access_service_token}.
 type AccessServiceToken interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -33,6 +33,9 @@ type AccessServiceToken interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Duration() *string
+	SetDuration(val *string)
+	DurationInput() *string
 	ExpiresAt() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -102,6 +105,7 @@ type AccessServiceToken interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccountId()
+	ResetDuration()
 	ResetId()
 	ResetMinDaysForRenewal()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -208,6 +212,26 @@ func (j *jsiiProxy_AccessServiceToken) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessServiceToken) Duration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"duration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessServiceToken) DurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"durationInput",
 		&returns,
 	)
 	return returns
@@ -414,7 +438,7 @@ func (j *jsiiProxy_AccessServiceToken) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_service_token cloudflare_access_service_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_service_token cloudflare_access_service_token} Resource.
 func NewAccessServiceToken(scope constructs.Construct, id *string, config *AccessServiceTokenConfig) AccessServiceToken {
 	_init_.Initialize()
 
@@ -432,7 +456,7 @@ func NewAccessServiceToken(scope constructs.Construct, id *string, config *Acces
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_service_token cloudflare_access_service_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_service_token cloudflare_access_service_token} Resource.
 func NewAccessServiceToken_Override(a AccessServiceToken, scope constructs.Construct, id *string, config *AccessServiceTokenConfig) {
 	_init_.Initialize()
 
@@ -480,6 +504,17 @@ func (j *jsiiProxy_AccessServiceToken)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessServiceToken)SetDuration(val *string) {
+	if err := j.validateSetDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"duration",
 		val,
 	)
 }
@@ -836,6 +871,14 @@ func (a *jsiiProxy_AccessServiceToken) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessServiceToken) ResetDuration() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDuration",
 		nil, // no parameters
 	)
 }

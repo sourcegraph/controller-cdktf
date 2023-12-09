@@ -28,16 +28,21 @@ type AccessApplicationSaasAppOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomAttribute() AccessApplicationSaasAppCustomAttributeList
+	CustomAttributeInput() interface{}
 	// Experimental.
 	Fqn() *string
+	IdpEntityId() *string
 	InternalValue() *AccessApplicationSaasApp
 	SetInternalValue(val *AccessApplicationSaasApp)
 	NameIdFormat() *string
 	SetNameIdFormat(val *string)
 	NameIdFormatInput() *string
+	PublicKey() *string
 	SpEntityId() *string
 	SetSpEntityId(val *string)
 	SpEntityIdInput() *string
+	SsoEndpoint() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +75,8 @@ type AccessApplicationSaasAppOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCustomAttribute(value interface{})
+	ResetCustomAttribute()
 	ResetNameIdFormat()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -136,11 +143,41 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) CreationStack() *[]*
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) CustomAttribute() AccessApplicationSaasAppCustomAttributeList {
+	var returns AccessApplicationSaasAppCustomAttributeList
+	_jsii_.Get(
+		j,
+		"customAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) CustomAttributeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customAttributeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) IdpEntityId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idpEntityId",
 		&returns,
 	)
 	return returns
@@ -176,6 +213,16 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) NameIdFormatInput() 
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) PublicKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicKey",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SpEntityId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -191,6 +238,16 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SpEntityIdInput() *s
 	_jsii_.Get(
 		j,
 		"spEntityIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SsoEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ssoEndpoint",
 		&returns,
 	)
 	return returns
@@ -516,6 +573,25 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) InterpolationForAttr
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) PutCustomAttribute(value interface{}) {
+	if err := a.validatePutCustomAttributeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putCustomAttribute",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetCustomAttribute() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCustomAttribute",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetNameIdFormat() {

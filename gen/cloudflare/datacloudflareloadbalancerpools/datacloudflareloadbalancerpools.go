@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/datacloudflareloadbalancerpools/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/load_balancer_pools cloudflare_load_balancer_pools}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/load_balancer_pools cloudflare_load_balancer_pools}.
 type DataCloudflareLoadBalancerPools interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -329,7 +329,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPools) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/load_balancer_pools cloudflare_load_balancer_pools} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/load_balancer_pools cloudflare_load_balancer_pools} Data Source.
 func NewDataCloudflareLoadBalancerPools(scope constructs.Construct, id *string, config *DataCloudflareLoadBalancerPoolsConfig) DataCloudflareLoadBalancerPools {
 	_init_.Initialize()
 
@@ -347,7 +347,7 @@ func NewDataCloudflareLoadBalancerPools(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/load_balancer_pools cloudflare_load_balancer_pools} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/load_balancer_pools cloudflare_load_balancer_pools} Data Source.
 func NewDataCloudflareLoadBalancerPools_Override(d DataCloudflareLoadBalancerPools, scope constructs.Construct, id *string, config *DataCloudflareLoadBalancerPoolsConfig) {
 	_init_.Initialize()
 

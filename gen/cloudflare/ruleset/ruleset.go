@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/ruleset/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset cloudflare_ruleset}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/ruleset cloudflare_ruleset}.
 type Ruleset interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -70,9 +70,6 @@ type Ruleset interface {
 	RawOverrides() interface{}
 	Rules() RulesetRulesList
 	RulesInput() interface{}
-	ShareableEntitlementName() *string
-	SetShareableEntitlementName(val *string)
-	ShareableEntitlementNameInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -114,7 +111,6 @@ type Ruleset interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRules()
-	ResetShareableEntitlementName()
 	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -391,26 +387,6 @@ func (j *jsiiProxy_Ruleset) RulesInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Ruleset) ShareableEntitlementName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"shareableEntitlementName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Ruleset) ShareableEntitlementNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"shareableEntitlementNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Ruleset) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -462,7 +438,7 @@ func (j *jsiiProxy_Ruleset) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset cloudflare_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/ruleset cloudflare_ruleset} Resource.
 func NewRuleset(scope constructs.Construct, id *string, config *RulesetConfig) Ruleset {
 	_init_.Initialize()
 
@@ -480,7 +456,7 @@ func NewRuleset(scope constructs.Construct, id *string, config *RulesetConfig) R
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset cloudflare_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/ruleset cloudflare_ruleset} Resource.
 func NewRuleset_Override(r Ruleset, scope constructs.Construct, id *string, config *RulesetConfig) {
 	_init_.Initialize()
 
@@ -610,17 +586,6 @@ func (j *jsiiProxy_Ruleset)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Ruleset)SetShareableEntitlementName(val *string) {
-	if err := j.validateSetShareableEntitlementNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"shareableEntitlementName",
 		val,
 	)
 }
@@ -941,14 +906,6 @@ func (r *jsiiProxy_Ruleset) ResetRules() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetRules",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_Ruleset) ResetShareableEntitlementName() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetShareableEntitlementName",
 		nil, // no parameters
 	)
 }

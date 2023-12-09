@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/pagesdomain/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/pages_domain cloudflare_pages_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_domain cloudflare_pages_domain}.
 type PagesDomain interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -366,7 +366,7 @@ func (j *jsiiProxy_PagesDomain) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/pages_domain cloudflare_pages_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_domain cloudflare_pages_domain} Resource.
 func NewPagesDomain(scope constructs.Construct, id *string, config *PagesDomainConfig) PagesDomain {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewPagesDomain(scope constructs.Construct, id *string, config *PagesDomainC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/pages_domain cloudflare_pages_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_domain cloudflare_pages_domain} Resource.
 func NewPagesDomain_Override(p PagesDomain, scope constructs.Construct, id *string, config *PagesDomainConfig) {
 	_init_.Initialize()
 

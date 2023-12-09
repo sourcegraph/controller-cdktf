@@ -10,6 +10,8 @@ import (
 
 type TunnelConfigConfigOriginRequestOutputReference interface {
 	cdktf.ComplexObject
+	Access() TunnelConfigConfigOriginRequestAccessOutputReference
+	AccessInput() *TunnelConfigConfigOriginRequestAccess
 	BastionMode() interface{}
 	SetBastionMode(val interface{})
 	BastionModeInput() interface{}
@@ -39,6 +41,9 @@ type TunnelConfigConfigOriginRequestOutputReference interface {
 	DisableChunkedEncodingInput() interface{}
 	// Experimental.
 	Fqn() *string
+	Http2Origin() interface{}
+	SetHttp2Origin(val interface{})
+	Http2OriginInput() interface{}
 	HttpHostHeader() *string
 	SetHttpHostHeader(val *string)
 	HttpHostHeaderInput() *string
@@ -108,11 +113,14 @@ type TunnelConfigConfigOriginRequestOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAccess(value *TunnelConfigConfigOriginRequestAccess)
 	PutIpRules(value interface{})
+	ResetAccess()
 	ResetBastionMode()
 	ResetCaPool()
 	ResetConnectTimeout()
 	ResetDisableChunkedEncoding()
+	ResetHttp2Origin()
 	ResetHttpHostHeader()
 	ResetIpRules()
 	ResetKeepAliveConnections()
@@ -138,6 +146,26 @@ type TunnelConfigConfigOriginRequestOutputReference interface {
 // The jsii proxy struct for TunnelConfigConfigOriginRequestOutputReference
 type jsiiProxy_TunnelConfigConfigOriginRequestOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) Access() TunnelConfigConfigOriginRequestAccessOutputReference {
+	var returns TunnelConfigConfigOriginRequestAccessOutputReference
+	_jsii_.Get(
+		j,
+		"access",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) AccessInput() *TunnelConfigConfigOriginRequestAccess {
+	var returns *TunnelConfigConfigOriginRequestAccess
+	_jsii_.Get(
+		j,
+		"accessInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) BastionMode() interface{} {
@@ -255,6 +283,26 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) Fqn() *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) Http2Origin() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"http2Origin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) Http2OriginInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"http2OriginInput",
 		&returns,
 	)
 	return returns
@@ -624,6 +672,17 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetDisableChun
 	)
 }
 
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetHttp2Origin(val interface{}) {
+	if err := j.validateSetHttp2OriginParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"http2Origin",
+		val,
+	)
+}
+
 func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetHttpHostHeader(val *string) {
 	if err := j.validateSetHttpHostHeaderParameters(val); err != nil {
 		panic(err)
@@ -964,6 +1023,17 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) Interpolation
 	return returns
 }
 
+func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) PutAccess(value *TunnelConfigConfigOriginRequestAccess) {
+	if err := t.validatePutAccessParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putAccess",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) PutIpRules(value interface{}) {
 	if err := t.validatePutIpRulesParameters(value); err != nil {
 		panic(err)
@@ -972,6 +1042,14 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) PutIpRules(va
 		t,
 		"putIpRules",
 		[]interface{}{value},
+	)
+}
+
+func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) ResetAccess() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetAccess",
+		nil, // no parameters
 	)
 }
 
@@ -1003,6 +1081,14 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) ResetDisableC
 	_jsii_.InvokeVoid(
 		t,
 		"resetDisableChunkedEncoding",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) ResetHttp2Origin() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetHttp2Origin",
 		nil, // no parameters
 	)
 }

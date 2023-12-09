@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/accesspolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_policy cloudflare_access_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_policy cloudflare_access_policy}.
 type AccessPolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -57,6 +57,9 @@ type AccessPolicy interface {
 	IdInput() *string
 	Include() AccessPolicyIncludeList
 	IncludeInput() interface{}
+	IsolationRequired() interface{}
+	SetIsolationRequired(val interface{})
+	IsolationRequiredInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -87,6 +90,9 @@ type AccessPolicy interface {
 	RawOverrides() interface{}
 	Require() AccessPolicyRequireList
 	RequireInput() interface{}
+	SessionDuration() *string
+	SetSessionDuration(val *string)
+	SessionDurationInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -130,12 +136,14 @@ type AccessPolicy interface {
 	ResetApprovalRequired()
 	ResetExclude()
 	ResetId()
+	ResetIsolationRequired()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPurposeJustificationPrompt()
 	ResetPurposeJustificationRequired()
 	ResetRequire()
+	ResetSessionDuration()
 	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -392,6 +400,26 @@ func (j *jsiiProxy_AccessPolicy) IncludeInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AccessPolicy) IsolationRequired() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isolationRequired",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessPolicy) IsolationRequiredInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isolationRequiredInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessPolicy) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -542,6 +570,26 @@ func (j *jsiiProxy_AccessPolicy) RequireInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AccessPolicy) SessionDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sessionDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessPolicy) SessionDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sessionDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessPolicy) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -593,7 +641,7 @@ func (j *jsiiProxy_AccessPolicy) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_policy cloudflare_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_policy cloudflare_access_policy} Resource.
 func NewAccessPolicy(scope constructs.Construct, id *string, config *AccessPolicyConfig) AccessPolicy {
 	_init_.Initialize()
 
@@ -611,7 +659,7 @@ func NewAccessPolicy(scope constructs.Construct, id *string, config *AccessPolic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_policy cloudflare_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_policy cloudflare_access_policy} Resource.
 func NewAccessPolicy_Override(a AccessPolicy, scope constructs.Construct, id *string, config *AccessPolicyConfig) {
 	_init_.Initialize()
 
@@ -715,6 +763,17 @@ func (j *jsiiProxy_AccessPolicy)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AccessPolicy)SetIsolationRequired(val interface{}) {
+	if err := j.validateSetIsolationRequiredParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isolationRequired",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -785,6 +844,17 @@ func (j *jsiiProxy_AccessPolicy)SetPurposeJustificationRequired(val interface{})
 	_jsii_.Set(
 		j,
 		"purposeJustificationRequired",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessPolicy)SetSessionDuration(val *string) {
+	if err := j.validateSetSessionDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sessionDuration",
 		val,
 	)
 }
@@ -1150,6 +1220,14 @@ func (a *jsiiProxy_AccessPolicy) ResetId() {
 	)
 }
 
+func (a *jsiiProxy_AccessPolicy) ResetIsolationRequired() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIsolationRequired",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1178,6 +1256,14 @@ func (a *jsiiProxy_AccessPolicy) ResetRequire() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRequire",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessPolicy) ResetSessionDuration() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSessionDuration",
 		nil, // no parameters
 	)
 }

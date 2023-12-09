@@ -68,7 +68,6 @@ type RulesetRulesActionParametersBrowserTtlOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDefault()
-	ResetMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -489,14 +488,6 @@ func (r *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) ResetD
 	_jsii_.InvokeVoid(
 		r,
 		"resetDefault",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) ResetMode() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetMode",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/workerroute/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_route cloudflare_worker_route}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/worker_route cloudflare_worker_route}.
 type WorkerRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_WorkerRoute) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_route cloudflare_worker_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/worker_route cloudflare_worker_route} Resource.
 func NewWorkerRoute(scope constructs.Construct, id *string, config *WorkerRouteConfig) WorkerRoute {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewWorkerRoute(scope constructs.Construct, id *string, config *WorkerRouteC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_route cloudflare_worker_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/worker_route cloudflare_worker_route} Resource.
 func NewWorkerRoute_Override(w WorkerRoute, scope constructs.Construct, id *string, config *WorkerRouteConfig) {
 	_init_.Initialize()
 

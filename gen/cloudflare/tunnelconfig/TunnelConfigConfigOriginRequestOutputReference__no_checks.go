@@ -44,6 +44,10 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validateInter
 	return nil
 }
 
+func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validatePutAccessParameters(value *TunnelConfigConfigOriginRequestAccess) error {
+	return nil
+}
+
 func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validatePutIpRulesParameters(value interface{}) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validateSetCo
 }
 
 func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validateSetDisableChunkedEncodingParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validateSetHttp2OriginParameters(val interface{}) error {
 	return nil
 }
 

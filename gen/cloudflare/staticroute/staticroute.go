@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/staticroute/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/static_route cloudflare_static_route}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/static_route cloudflare_static_route}.
 type StaticRoute interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -475,7 +475,7 @@ func (j *jsiiProxy_StaticRoute) WeightInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/static_route cloudflare_static_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/static_route cloudflare_static_route} Resource.
 func NewStaticRoute(scope constructs.Construct, id *string, config *StaticRouteConfig) StaticRoute {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewStaticRoute(scope constructs.Construct, id *string, config *StaticRouteC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/static_route cloudflare_static_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/static_route cloudflare_static_route} Resource.
 func NewStaticRoute_Override(s StaticRoute, scope constructs.Construct, id *string, config *StaticRouteConfig) {
 	_init_.Initialize()
 

@@ -68,6 +68,10 @@ func (j *jsiiProxy_Tunnel) validateSetAccountIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Tunnel) validateSetConfigSrcParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Tunnel) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -112,6 +112,18 @@ func (j *jsiiProxy_LogpushJob) validateSetLogpullOptionsParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_LogpushJob) validateSetMaxUploadBytesParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogpushJob) validateSetMaxUploadIntervalSecondsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogpushJob) validateSetMaxUploadRecordsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogpushJob) validateSetNameParameters(val *string) error {
 	return nil
 }

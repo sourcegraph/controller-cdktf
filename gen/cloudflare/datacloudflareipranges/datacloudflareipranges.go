@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/datacloudflareipranges/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/ip_ranges cloudflare_ip_ranges}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/ip_ranges cloudflare_ip_ranges}.
 type DataCloudflareIpRanges interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -313,7 +313,7 @@ func (j *jsiiProxy_DataCloudflareIpRanges) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/ip_ranges cloudflare_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/ip_ranges cloudflare_ip_ranges} Data Source.
 func NewDataCloudflareIpRanges(scope constructs.Construct, id *string, config *DataCloudflareIpRangesConfig) DataCloudflareIpRanges {
 	_init_.Initialize()
 
@@ -331,7 +331,7 @@ func NewDataCloudflareIpRanges(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/ip_ranges cloudflare_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/ip_ranges cloudflare_ip_ranges} Data Source.
 func NewDataCloudflareIpRanges_Override(d DataCloudflareIpRanges, scope constructs.Construct, id *string, config *DataCloudflareIpRangesConfig) {
 	_init_.Initialize()
 

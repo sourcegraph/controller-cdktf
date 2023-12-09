@@ -44,11 +44,19 @@ func (l *jsiiProxy_ListItemValueOutputReference) validateInterpolationForAttribu
 	return nil
 }
 
+func (l *jsiiProxy_ListItemValueOutputReference) validatePutHostnameParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_ListItemValueOutputReference) validatePutRedirectParameters(value interface{}) error {
 	return nil
 }
 
 func (l *jsiiProxy_ListItemValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_ListItemValueOutputReference) validateSetAsnParameters(val *float64) error {
 	return nil
 }
 

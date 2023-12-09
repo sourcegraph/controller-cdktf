@@ -2,9 +2,9 @@ package accesspolicy
 
 
 type AccessPolicyRequireOkta struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}.
 	IdentityProviderId *string `field:"optional" json:"identityProviderId" yaml:"identityProviderId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_policy#name AccessPolicy#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_policy#name AccessPolicy#name}.
 	Name *[]*string `field:"optional" json:"name" yaml:"name"`
 }
 

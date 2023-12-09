@@ -143,6 +143,14 @@ func (j *jsiiProxy_Tunnel) validateSetAccountIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Tunnel) validateSetConfigSrcParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Tunnel) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
