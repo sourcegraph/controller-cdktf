@@ -1,0 +1,11 @@
+name: nobl9
+
+provider:
+  source: registry.terraform.io/nobl9/nobl9
+  version: 0.22.0
+
+target:
+  language: go
+  moduleName: github.com/sourcegraph/controller-cdktf/gen 
+
+output: gen
