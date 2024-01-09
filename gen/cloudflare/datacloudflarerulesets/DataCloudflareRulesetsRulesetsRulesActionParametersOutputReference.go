@@ -10,6 +10,7 @@ import (
 
 type DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalCacheablePorts() *[]*float64
 	AutomaticHttpsRewrites() cdktf.IResolvable
 	Autominify() DataCloudflareRulesetsRulesetsRulesActionParametersAutominifyList
 	Bic() cdktf.IResolvable
@@ -54,11 +55,13 @@ type DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference interfac
 	Mirage() cdktf.IResolvable
 	OpportunisticEncryption() cdktf.IResolvable
 	Origin() DataCloudflareRulesetsRulesetsRulesActionParametersOriginList
+	OriginCacheControl() cdktf.IResolvable
 	OriginErrorPagePassthru() cdktf.IResolvable
 	Overrides() DataCloudflareRulesetsRulesetsRulesActionParametersOverridesList
 	Phases() *[]*string
 	Polish() *string
 	Products() *[]*string
+	ReadTimeout() *float64
 	RequestFields() *[]*string
 	RespectStrongEtags() cdktf.IResolvable
 	Response() DataCloudflareRulesetsRulesetsRulesActionParametersResponseList
@@ -121,6 +124,16 @@ type DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference interfac
 // The jsii proxy struct for DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference
 type jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference) AdditionalCacheablePorts() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"additionalCacheablePorts",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference) AutomaticHttpsRewrites() cdktf.IResolvable {
@@ -423,6 +436,16 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference) OriginCacheControl() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"originCacheControl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference) OriginErrorPagePassthru() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -468,6 +491,16 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOutputRefe
 	_jsii_.Get(
 		j,
 		"products",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference) ReadTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"readTimeout",
 		&returns,
 	)
 	return returns

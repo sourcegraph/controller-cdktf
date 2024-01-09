@@ -88,15 +88,7 @@ func (j *jsiiProxy_RulesetRulesOutputReference) validateSetExpressionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesOutputReference) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_RulesetRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_RulesetRulesOutputReference) validateSetLastUpdatedParameters(val *string) error {
 	return nil
 }
 
@@ -109,10 +101,6 @@ func (j *jsiiProxy_RulesetRulesOutputReference) validateSetTerraformAttributePar
 }
 
 func (j *jsiiProxy_RulesetRulesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_RulesetRulesOutputReference) validateSetVersionParameters(val *string) error {
 	return nil
 }
 

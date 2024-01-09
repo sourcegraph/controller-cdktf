@@ -104,6 +104,14 @@ func (j *jsiiProxy_AccessApplication) validateSetCustomDenyUrlParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplication) validateSetCustomNonIdentityDenyUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplication) validateSetCustomPagesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplication) validateSetDomainParameters(val *string) error {
 	return nil
 }
@@ -140,6 +148,10 @@ func (j *jsiiProxy_AccessApplication) validateSetSameSiteCookieAttributeParamete
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplication) validateSetSelfHostedDomainsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplication) validateSetServiceAuth401RedirectParameters(val interface{}) error {
 	return nil
 }
@@ -149,6 +161,10 @@ func (j *jsiiProxy_AccessApplication) validateSetSessionDurationParameters(val *
 }
 
 func (j *jsiiProxy_AccessApplication) validateSetSkipInterstitialParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplication) validateSetTagsParameters(val *[]*string) error {
 	return nil
 }
 

@@ -44,6 +44,10 @@ func (a *jsiiProxy_AccessPolicyIncludeOutputReference) validateInterpolationForA
 	return nil
 }
 
+func (a *jsiiProxy_AccessPolicyIncludeOutputReference) validatePutAuthContextParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessPolicyIncludeOutputReference) validatePutAzureParameters(value interface{}) error {
 	return nil
 }

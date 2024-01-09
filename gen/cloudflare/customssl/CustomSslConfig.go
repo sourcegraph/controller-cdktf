@@ -21,17 +21,17 @@ type CustomSslConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The zone identifier to target for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/custom_ssl#zone_id CustomSsl#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/custom_ssl#zone_id CustomSsl#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// custom_ssl_options block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/custom_ssl#custom_ssl_options CustomSsl#custom_ssl_options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/custom_ssl#custom_ssl_options CustomSsl#custom_ssl_options}
 	CustomSslOptions *CustomSslCustomSslOptions `field:"optional" json:"customSslOptions" yaml:"customSslOptions"`
 	// custom_ssl_priority block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/custom_ssl#custom_ssl_priority CustomSsl#custom_ssl_priority}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/custom_ssl#custom_ssl_priority CustomSsl#custom_ssl_priority}
 	CustomSslPriority interface{} `field:"optional" json:"customSslPriority" yaml:"customSslPriority"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/custom_ssl#id CustomSsl#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/custom_ssl#id CustomSsl#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

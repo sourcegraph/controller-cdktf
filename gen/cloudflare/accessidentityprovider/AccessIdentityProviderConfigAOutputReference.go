@@ -19,6 +19,9 @@ type AccessIdentityProviderConfigAOutputReference interface {
 	Attributes() *[]*string
 	SetAttributes(val *[]*string)
 	AttributesInput() *[]*string
+	AuthorizationServerId() *string
+	SetAuthorizationServerId(val *string)
+	AuthorizationServerIdInput() *string
 	AuthUrl() *string
 	SetAuthUrl(val *string)
 	AuthUrlInput() *string
@@ -50,6 +53,9 @@ type AccessIdentityProviderConfigAOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConditionalAccessEnabled() interface{}
+	SetConditionalAccessEnabled(val interface{})
+	ConditionalAccessEnabledInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -61,6 +67,9 @@ type AccessIdentityProviderConfigAOutputReference interface {
 	EmailAttributeName() *string
 	SetEmailAttributeName(val *string)
 	EmailAttributeNameInput() *string
+	EmailClaimName() *string
+	SetEmailClaimName(val *string)
+	EmailClaimNameInput() *string
 	// Experimental.
 	Fqn() *string
 	IdpPublicCert() *string
@@ -77,12 +86,13 @@ type AccessIdentityProviderConfigAOutputReference interface {
 	OneloginAccount() *string
 	SetOneloginAccount(val *string)
 	OneloginAccountInput() *string
+	PingEnvId() *string
+	SetPingEnvId(val *string)
+	PingEnvIdInput() *string
 	PkceEnabled() interface{}
 	SetPkceEnabled(val interface{})
 	PkceEnabledInput() interface{}
 	RedirectUrl() *string
-	SetRedirectUrl(val *string)
-	RedirectUrlInput() *string
 	Scopes() *[]*string
 	SetScopes(val *[]*string)
 	ScopesInput() *[]*string
@@ -133,6 +143,7 @@ type AccessIdentityProviderConfigAOutputReference interface {
 	ResetApiToken()
 	ResetAppsDomain()
 	ResetAttributes()
+	ResetAuthorizationServerId()
 	ResetAuthUrl()
 	ResetCentrifyAccount()
 	ResetCentrifyAppId()
@@ -140,14 +151,16 @@ type AccessIdentityProviderConfigAOutputReference interface {
 	ResetClaims()
 	ResetClientId()
 	ResetClientSecret()
+	ResetConditionalAccessEnabled()
 	ResetDirectoryId()
 	ResetEmailAttributeName()
+	ResetEmailClaimName()
 	ResetIdpPublicCert()
 	ResetIssuerUrl()
 	ResetOktaAccount()
 	ResetOneloginAccount()
+	ResetPingEnvId()
 	ResetPkceEnabled()
-	ResetRedirectUrl()
 	ResetScopes()
 	ResetSignRequest()
 	ResetSsoTargetUrl()
@@ -223,6 +236,26 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) AttributesInput
 	_jsii_.Get(
 		j,
 		"attributesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) AuthorizationServerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authorizationServerId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) AuthorizationServerIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authorizationServerIdInput",
 		&returns,
 	)
 	return returns
@@ -388,6 +421,26 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ComplexObjectIs
 	return returns
 }
 
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ConditionalAccessEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"conditionalAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ConditionalAccessEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"conditionalAccessEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -433,6 +486,26 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) EmailAttributeN
 	_jsii_.Get(
 		j,
 		"emailAttributeNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) EmailClaimName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"emailClaimName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) EmailClaimNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"emailClaimNameInput",
 		&returns,
 	)
 	return returns
@@ -538,6 +611,26 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) OneloginAccount
 	return returns
 }
 
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) PingEnvId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pingEnvId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) PingEnvIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pingEnvIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) PkceEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -563,16 +656,6 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) RedirectUrl() *
 	_jsii_.Get(
 		j,
 		"redirectUrl",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) RedirectUrlInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"redirectUrlInput",
 		&returns,
 	)
 	return returns
@@ -759,6 +842,17 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetAttributes(va
 	)
 }
 
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetAuthorizationServerId(val *string) {
+	if err := j.validateSetAuthorizationServerIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authorizationServerId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetAuthUrl(val *string) {
 	if err := j.validateSetAuthUrlParameters(val); err != nil {
 		panic(err)
@@ -858,6 +952,17 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetComplexObject
 	)
 }
 
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetConditionalAccessEnabled(val interface{}) {
+	if err := j.validateSetConditionalAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"conditionalAccessEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetDirectoryId(val *string) {
 	if err := j.validateSetDirectoryIdParameters(val); err != nil {
 		panic(err)
@@ -876,6 +981,17 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetEmailAttribut
 	_jsii_.Set(
 		j,
 		"emailAttributeName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetEmailClaimName(val *string) {
+	if err := j.validateSetEmailClaimNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"emailClaimName",
 		val,
 	)
 }
@@ -935,6 +1051,17 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetOneloginAccou
 	)
 }
 
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetPingEnvId(val *string) {
+	if err := j.validateSetPingEnvIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pingEnvId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetPkceEnabled(val interface{}) {
 	if err := j.validateSetPkceEnabledParameters(val); err != nil {
 		panic(err)
@@ -942,17 +1069,6 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetPkceEnabled(v
 	_jsii_.Set(
 		j,
 		"pkceEnabled",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetRedirectUrl(val *string) {
-	if err := j.validateSetRedirectUrlParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"redirectUrl",
 		val,
 	)
 }
@@ -1244,6 +1360,14 @@ func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetAttributes
 	)
 }
 
+func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetAuthorizationServerId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAuthorizationServerId",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetAuthUrl() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1300,6 +1424,14 @@ func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetClientSecr
 	)
 }
 
+func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetConditionalAccessEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetConditionalAccessEnabled",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetDirectoryId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1312,6 +1444,14 @@ func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetEmailAttri
 	_jsii_.InvokeVoid(
 		a,
 		"resetEmailAttributeName",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetEmailClaimName() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEmailClaimName",
 		nil, // no parameters
 	)
 }
@@ -1348,18 +1488,18 @@ func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetOneloginAc
 	)
 }
 
-func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetPkceEnabled() {
+func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetPingEnvId() {
 	_jsii_.InvokeVoid(
 		a,
-		"resetPkceEnabled",
+		"resetPingEnvId",
 		nil, // no parameters
 	)
 }
 
-func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetRedirectUrl() {
+func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetPkceEnabled() {
 	_jsii_.InvokeVoid(
 		a,
-		"resetRedirectUrl",
+		"resetPkceEnabled",
 		nil, // no parameters
 	)
 }

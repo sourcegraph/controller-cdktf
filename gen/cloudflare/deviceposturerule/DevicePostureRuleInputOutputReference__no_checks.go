@@ -48,7 +48,19 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) validateResolveParamet
 	return nil
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetActiveThreatsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetCertificateIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetCheckDisksParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetCnParameters(val *string) error {
 	return nil
 }
 
@@ -68,7 +80,15 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetConnectionI
 	return nil
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetCountOperatorParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetDomainParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetEidLastSeenParameters(val *string) error {
 	return nil
 }
 
@@ -84,7 +104,23 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetIdParameter
 	return nil
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetInfectedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetIsActiveParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetIssueCountParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetNetworkStatusParameters(val *string) error {
 	return nil
 }
 
@@ -116,6 +152,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetRequireAllP
 	return nil
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetRiskLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetRunningParameters(val interface{}) error {
 	return nil
 }
@@ -137,6 +177,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetTerraformRe
 }
 
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetThumbprintParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetTotalScoreParameters(val *float64) error {
 	return nil
 }
 

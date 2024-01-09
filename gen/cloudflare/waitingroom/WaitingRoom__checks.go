@@ -111,6 +111,37 @@ func (w *jsiiProxy_WaitingRoom) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func (w *jsiiProxy_WaitingRoom) validatePutAdditionalRoutesParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*WaitingRoomAdditionalRoutes:
+		value := value.(*[]*WaitingRoomAdditionalRoutes)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*WaitingRoomAdditionalRoutes:
+		value_ := value.([]*WaitingRoomAdditionalRoutes)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*WaitingRoomAdditionalRoutes; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (w *jsiiProxy_WaitingRoom) validatePutTimeoutsParameters(value *WaitingRoomTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -174,6 +205,14 @@ func (j *jsiiProxy_WaitingRoom) validateSetConnectionParameters(val interface{})
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *cdktf.SSHProvisionerConnection, *cdktf.WinrmProvisionerConnection; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WaitingRoom) validateSetCookieSuffixParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -415,6 +454,14 @@ func (j *jsiiProxy_WaitingRoom) validateSetQueueAllParameters(val interface{}) e
 }
 
 func (j *jsiiProxy_WaitingRoom) validateSetQueueingMethodParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WaitingRoom) validateSetQueueingStatusCodeParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

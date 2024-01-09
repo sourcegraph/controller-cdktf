@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/managedheaders/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/managed_headers cloudflare_managed_headers}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/managed_headers cloudflare_managed_headers}.
 type ManagedHeaders interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_ManagedHeaders) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/managed_headers cloudflare_managed_headers} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/managed_headers cloudflare_managed_headers} Resource.
 func NewManagedHeaders(scope constructs.Construct, id *string, config *ManagedHeadersConfig) ManagedHeaders {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewManagedHeaders(scope constructs.Construct, id *string, config *ManagedHe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/managed_headers cloudflare_managed_headers} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/managed_headers cloudflare_managed_headers} Resource.
 func NewManagedHeaders_Override(m ManagedHeaders, scope constructs.Construct, id *string, config *ManagedHeadersConfig) {
 	_init_.Initialize()
 

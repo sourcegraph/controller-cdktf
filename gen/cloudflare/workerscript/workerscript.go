@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/workerscript/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script cloudflare_worker_script}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/worker_script cloudflare_worker_script}.
 type WorkerScript interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -59,6 +59,9 @@ type WorkerScript interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Logpush() interface{}
+	SetLogpush(val interface{})
+	LogpushInput() interface{}
 	Module() interface{}
 	SetModule(val interface{})
 	ModuleInput() interface{}
@@ -67,6 +70,8 @@ type WorkerScript interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Placement() WorkerScriptPlacementList
+	PlacementInput() interface{}
 	PlainTextBinding() WorkerScriptPlainTextBindingList
 	PlainTextBindingInput() interface{}
 	// Experimental.
@@ -122,6 +127,7 @@ type WorkerScript interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAnalyticsEngineBinding(value interface{})
 	PutKvNamespaceBinding(value interface{})
+	PutPlacement(value interface{})
 	PutPlainTextBinding(value interface{})
 	PutQueueBinding(value interface{})
 	PutR2BucketBinding(value interface{})
@@ -133,10 +139,12 @@ type WorkerScript interface {
 	ResetCompatibilityFlags()
 	ResetId()
 	ResetKvNamespaceBinding()
+	ResetLogpush()
 	ResetModule()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPlacement()
 	ResetPlainTextBinding()
 	ResetQueueBinding()
 	ResetR2BucketBinding()
@@ -388,6 +396,26 @@ func (j *jsiiProxy_WorkerScript) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_WorkerScript) Logpush() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logpush",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) LogpushInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logpushInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkerScript) Module() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -433,6 +461,26 @@ func (j *jsiiProxy_WorkerScript) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) Placement() WorkerScriptPlacementList {
+	var returns WorkerScriptPlacementList
+	_jsii_.Get(
+		j,
+		"placement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) PlacementInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"placementInput",
 		&returns,
 	)
 	return returns
@@ -619,7 +667,7 @@ func (j *jsiiProxy_WorkerScript) WebassemblyBindingInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script cloudflare_worker_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/worker_script cloudflare_worker_script} Resource.
 func NewWorkerScript(scope constructs.Construct, id *string, config *WorkerScriptConfig) WorkerScript {
 	_init_.Initialize()
 
@@ -637,7 +685,7 @@ func NewWorkerScript(scope constructs.Construct, id *string, config *WorkerScrip
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script cloudflare_worker_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/worker_script cloudflare_worker_script} Resource.
 func NewWorkerScript_Override(w WorkerScript, scope constructs.Construct, id *string, config *WorkerScriptConfig) {
 	_init_.Initialize()
 
@@ -748,6 +796,17 @@ func (j *jsiiProxy_WorkerScript)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerScript)SetLogpush(val interface{}) {
+	if err := j.validateSetLogpushParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logpush",
 		val,
 	)
 }
@@ -1081,6 +1140,17 @@ func (w *jsiiProxy_WorkerScript) PutKvNamespaceBinding(value interface{}) {
 	)
 }
 
+func (w *jsiiProxy_WorkerScript) PutPlacement(value interface{}) {
+	if err := w.validatePutPlacementParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putPlacement",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkerScript) PutPlainTextBinding(value interface{}) {
 	if err := w.validatePutPlainTextBindingParameters(value); err != nil {
 		panic(err)
@@ -1187,6 +1257,14 @@ func (w *jsiiProxy_WorkerScript) ResetKvNamespaceBinding() {
 	)
 }
 
+func (w *jsiiProxy_WorkerScript) ResetLogpush() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetLogpush",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkerScript) ResetModule() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1199,6 +1277,14 @@ func (w *jsiiProxy_WorkerScript) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerScript) ResetPlacement() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetPlacement",
 		nil, // no parameters
 	)
 }

@@ -60,6 +60,10 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetInternalValuePar
 	return nil
 }
 
+func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetRootCaParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetTcpParameters(val interface{}) error {
 	return nil
 }

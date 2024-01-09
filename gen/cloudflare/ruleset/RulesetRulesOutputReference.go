@@ -44,13 +44,9 @@ type RulesetRulesOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	LastUpdated() *string
-	SetLastUpdated(val *string)
-	LastUpdatedInput() *string
 	Logging() RulesetRulesLoggingList
 	LoggingInput() interface{}
 	Ratelimit() RulesetRulesRatelimitList
@@ -67,8 +63,6 @@ type RulesetRulesOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Version() *string
-	SetVersion(val *string)
-	VersionInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -102,12 +96,9 @@ type RulesetRulesOutputReference interface {
 	ResetDescription()
 	ResetEnabled()
 	ResetExposedCredentialCheck()
-	ResetId()
-	ResetLastUpdated()
 	ResetLogging()
 	ResetRatelimit()
 	ResetRef()
-	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -293,16 +284,6 @@ func (j *jsiiProxy_RulesetRulesOutputReference) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesOutputReference) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RulesetRulesOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -318,16 +299,6 @@ func (j *jsiiProxy_RulesetRulesOutputReference) LastUpdated() *string {
 	_jsii_.Get(
 		j,
 		"lastUpdated",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RulesetRulesOutputReference) LastUpdatedInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"lastUpdatedInput",
 		&returns,
 	)
 	return returns
@@ -418,16 +389,6 @@ func (j *jsiiProxy_RulesetRulesOutputReference) Version() *string {
 	_jsii_.Get(
 		j,
 		"version",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RulesetRulesOutputReference) VersionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"versionInput",
 		&returns,
 	)
 	return returns
@@ -527,17 +488,6 @@ func (j *jsiiProxy_RulesetRulesOutputReference)SetExpression(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesOutputReference)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_RulesetRulesOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -545,17 +495,6 @@ func (j *jsiiProxy_RulesetRulesOutputReference)SetInternalValue(val interface{})
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RulesetRulesOutputReference)SetLastUpdated(val *string) {
-	if err := j.validateSetLastUpdatedParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"lastUpdated",
 		val,
 	)
 }
@@ -589,17 +528,6 @@ func (j *jsiiProxy_RulesetRulesOutputReference)SetTerraformResource(val cdktf.II
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RulesetRulesOutputReference)SetVersion(val *string) {
-	if err := j.validateSetVersionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"version",
 		val,
 	)
 }
@@ -874,22 +802,6 @@ func (r *jsiiProxy_RulesetRulesOutputReference) ResetExposedCredentialCheck() {
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesOutputReference) ResetId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesOutputReference) ResetLastUpdated() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetLastUpdated",
-		nil, // no parameters
-	)
-}
-
 func (r *jsiiProxy_RulesetRulesOutputReference) ResetLogging() {
 	_jsii_.InvokeVoid(
 		r,
@@ -910,14 +822,6 @@ func (r *jsiiProxy_RulesetRulesOutputReference) ResetRef() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetRef",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesOutputReference) ResetVersion() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetVersion",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/datacloudflareaccessidentityprovider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/access_identity_provider cloudflare_access_identity_provider}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/access_identity_provider cloudflare_access_identity_provider}.
 type DataCloudflareAccessIdentityProvider interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -340,7 +340,7 @@ func (j *jsiiProxy_DataCloudflareAccessIdentityProvider) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/access_identity_provider cloudflare_access_identity_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/access_identity_provider cloudflare_access_identity_provider} Data Source.
 func NewDataCloudflareAccessIdentityProvider(scope constructs.Construct, id *string, config *DataCloudflareAccessIdentityProviderConfig) DataCloudflareAccessIdentityProvider {
 	_init_.Initialize()
 
@@ -358,7 +358,7 @@ func NewDataCloudflareAccessIdentityProvider(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/access_identity_provider cloudflare_access_identity_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/access_identity_provider cloudflare_access_identity_provider} Data Source.
 func NewDataCloudflareAccessIdentityProvider_Override(d DataCloudflareAccessIdentityProvider, scope constructs.Construct, id *string, config *DataCloudflareAccessIdentityProviderConfig) {
 	_init_.Initialize()
 

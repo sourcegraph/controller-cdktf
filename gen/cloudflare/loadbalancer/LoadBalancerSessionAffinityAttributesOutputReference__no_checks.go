@@ -60,7 +60,15 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) validateSetHeadersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) validateSetRequireAllHeadersParameters(val interface{}) error {
 	return nil
 }
 

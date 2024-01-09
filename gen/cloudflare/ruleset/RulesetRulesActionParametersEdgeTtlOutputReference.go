@@ -71,7 +71,6 @@ type RulesetRulesActionParametersEdgeTtlOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutStatusCodeTtl(value interface{})
 	ResetDefault()
-	ResetMode()
 	ResetStatusCodeTtl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -524,14 +523,6 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) ResetDefa
 	_jsii_.InvokeVoid(
 		r,
 		"resetDefault",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) ResetMode() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetMode",
 		nil, // no parameters
 	)
 }

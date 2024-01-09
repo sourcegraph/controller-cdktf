@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/datacloudflarezonednssec/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec}.
 type DataCloudflareZoneDnssec interface {
 	cdktf.TerraformDataSource
 	Algorithm() *string
@@ -391,7 +391,7 @@ func (j *jsiiProxy_DataCloudflareZoneDnssec) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec} Data Source.
 func NewDataCloudflareZoneDnssec(scope constructs.Construct, id *string, config *DataCloudflareZoneDnssecConfig) DataCloudflareZoneDnssec {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewDataCloudflareZoneDnssec(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec} Data Source.
 func NewDataCloudflareZoneDnssec_Override(d DataCloudflareZoneDnssec, scope constructs.Construct, id *string, config *DataCloudflareZoneDnssecConfig) {
 	_init_.Initialize()
 

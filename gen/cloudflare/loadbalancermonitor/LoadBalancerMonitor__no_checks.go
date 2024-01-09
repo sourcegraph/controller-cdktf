@@ -80,6 +80,14 @@ func (j *jsiiProxy_LoadBalancerMonitor) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancerMonitor) validateSetConsecutiveDownParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_LoadBalancerMonitor) validateSetConsecutiveUpParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoadBalancerMonitor) validateSetCountParameters(val interface{}) error {
 	return nil
 }

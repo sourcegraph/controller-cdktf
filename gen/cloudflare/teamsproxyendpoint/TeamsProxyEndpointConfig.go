@@ -21,17 +21,17 @@ type TeamsProxyEndpointConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier to target for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_proxy_endpoint#account_id TeamsProxyEndpoint#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/teams_proxy_endpoint#account_id TeamsProxyEndpoint#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The networks CIDRs that will be allowed to initiate proxy connections.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_proxy_endpoint#ips TeamsProxyEndpoint#ips}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/teams_proxy_endpoint#ips TeamsProxyEndpoint#ips}
 	Ips *[]*string `field:"required" json:"ips" yaml:"ips"`
 	// Name of the teams proxy endpoint.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_proxy_endpoint#name TeamsProxyEndpoint#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/teams_proxy_endpoint#name TeamsProxyEndpoint#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_proxy_endpoint#id TeamsProxyEndpoint#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/teams_proxy_endpoint#id TeamsProxyEndpoint#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

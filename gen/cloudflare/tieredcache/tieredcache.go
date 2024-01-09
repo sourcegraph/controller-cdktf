@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/tieredcache/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tiered_cache cloudflare_tiered_cache}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/tiered_cache cloudflare_tiered_cache}.
 type TieredCache interface {
 	cdktf.TerraformResource
 	CacheType() *string
@@ -332,7 +332,7 @@ func (j *jsiiProxy_TieredCache) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tiered_cache cloudflare_tiered_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/tiered_cache cloudflare_tiered_cache} Resource.
 func NewTieredCache(scope constructs.Construct, id *string, config *TieredCacheConfig) TieredCache {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewTieredCache(scope constructs.Construct, id *string, config *TieredCacheC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tiered_cache cloudflare_tiered_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/tiered_cache cloudflare_tiered_cache} Resource.
 func NewTieredCache_Override(t TieredCache, scope constructs.Construct, id *string, config *TieredCacheConfig) {
 	_init_.Initialize()
 

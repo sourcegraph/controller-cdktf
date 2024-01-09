@@ -31,6 +31,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "default", GoGetter: "Default"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultInput", GoGetter: "DefaultInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
+			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "disableAutoFallback", GoGetter: "DisableAutoFallback"},
 			_jsii_.MemberProperty{JsiiProperty: "disableAutoFallbackInput", GoGetter: "DisableAutoFallbackInput"},
 			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},

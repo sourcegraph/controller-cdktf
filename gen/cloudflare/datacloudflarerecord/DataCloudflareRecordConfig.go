@@ -21,24 +21,24 @@ type DataCloudflareRecordConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Hostname to filter DNS record results on.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/record#hostname DataCloudflareRecord#hostname}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/record#hostname DataCloudflareRecord#hostname}
 	Hostname *string `field:"required" json:"hostname" yaml:"hostname"`
 	// The zone identifier to target for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/record#zone_id DataCloudflareRecord#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/record#zone_id DataCloudflareRecord#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/record#id DataCloudflareRecord#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/record#id DataCloudflareRecord#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// DNS priority to filter record results on.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/record#priority DataCloudflareRecord#priority}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/record#priority DataCloudflareRecord#priority}
 	Priority *float64 `field:"optional" json:"priority" yaml:"priority"`
 	// DNS record type to filter record results on. Defaults to `A`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/record#type DataCloudflareRecord#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/record#type DataCloudflareRecord#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

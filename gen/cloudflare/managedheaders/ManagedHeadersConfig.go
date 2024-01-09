@@ -21,20 +21,20 @@ type ManagedHeadersConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The zone identifier to target for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/managed_headers#zone_id ManagedHeaders#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/managed_headers#zone_id ManagedHeaders#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/managed_headers#id ManagedHeaders#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/managed_headers#id ManagedHeaders#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// managed_request_headers block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/managed_headers#managed_request_headers ManagedHeaders#managed_request_headers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/managed_headers#managed_request_headers ManagedHeaders#managed_request_headers}
 	ManagedRequestHeaders interface{} `field:"optional" json:"managedRequestHeaders" yaml:"managedRequestHeaders"`
 	// managed_response_headers block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/managed_headers#managed_response_headers ManagedHeaders#managed_response_headers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/managed_headers#managed_response_headers ManagedHeaders#managed_response_headers}
 	ManagedResponseHeaders interface{} `field:"optional" json:"managedResponseHeaders" yaml:"managedResponseHeaders"`
 }
 

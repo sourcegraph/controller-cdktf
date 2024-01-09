@@ -60,6 +60,10 @@ func (w *jsiiProxy_WorkerScript) validatePutKvNamespaceBindingParameters(value i
 	return nil
 }
 
+func (w *jsiiProxy_WorkerScript) validatePutPlacementParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkerScript) validatePutPlainTextBindingParameters(value interface{}) error {
 	return nil
 }
@@ -125,6 +129,10 @@ func (j *jsiiProxy_WorkerScript) validateSetIdParameters(val *string) error {
 }
 
 func (j *jsiiProxy_WorkerScript) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkerScript) validateSetLogpushParameters(val interface{}) error {
 	return nil
 }
 

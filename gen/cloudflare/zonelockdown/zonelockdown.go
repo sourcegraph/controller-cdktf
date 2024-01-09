@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/zonelockdown/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/zone_lockdown cloudflare_zone_lockdown}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/zone_lockdown cloudflare_zone_lockdown}.
 type ZoneLockdown interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_ZoneLockdown) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource.
 func NewZoneLockdown(scope constructs.Construct, id *string, config *ZoneLockdownConfig) ZoneLockdown {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewZoneLockdown(scope constructs.Construct, id *string, config *ZoneLockdow
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource.
 func NewZoneLockdown_Override(z ZoneLockdown, scope constructs.Construct, id *string, config *ZoneLockdownConfig) {
 	_init_.Initialize()
 

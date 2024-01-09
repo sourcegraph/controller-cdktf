@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/teamsaccount/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account cloudflare_teams_account}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/teams_account cloudflare_teams_account}.
 type TeamsAccount interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -22,6 +22,8 @@ type TeamsAccount interface {
 	AntivirusInput() *TeamsAccountAntivirus
 	BlockPage() TeamsAccountBlockPageOutputReference
 	BlockPageInput() *TeamsAccountBlockPage
+	BodyScanning() TeamsAccountBodyScanningOutputReference
+	BodyScanningInput() *TeamsAccountBodyScanning
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -59,8 +61,14 @@ type TeamsAccount interface {
 	LoggingInput() *TeamsAccountLogging
 	// The tree node.
 	Node() constructs.Node
+	NonIdentityBrowserIsolationEnabled() interface{}
+	SetNonIdentityBrowserIsolationEnabled(val interface{})
+	NonIdentityBrowserIsolationEnabledInput() interface{}
 	PayloadLog() TeamsAccountPayloadLogOutputReference
 	PayloadLogInput() *TeamsAccountPayloadLog
+	ProtocolDetectionEnabled() interface{}
+	SetProtocolDetectionEnabled(val interface{})
+	ProtocolDetectionEnabledInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -73,6 +81,8 @@ type TeamsAccount interface {
 	ProxyInput() *TeamsAccountProxy
 	// Experimental.
 	RawOverrides() interface{}
+	SshSessionLog() TeamsAccountSshSessionLogOutputReference
+	SshSessionLogInput() *TeamsAccountSshSessionLog
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -112,21 +122,27 @@ type TeamsAccount interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAntivirus(value *TeamsAccountAntivirus)
 	PutBlockPage(value *TeamsAccountBlockPage)
+	PutBodyScanning(value *TeamsAccountBodyScanning)
 	PutFips(value *TeamsAccountFips)
 	PutLogging(value *TeamsAccountLogging)
 	PutPayloadLog(value *TeamsAccountPayloadLog)
 	PutProxy(value *TeamsAccountProxy)
+	PutSshSessionLog(value *TeamsAccountSshSessionLog)
 	ResetActivityLogEnabled()
 	ResetAntivirus()
 	ResetBlockPage()
+	ResetBodyScanning()
 	ResetFips()
 	ResetId()
 	ResetLogging()
+	ResetNonIdentityBrowserIsolationEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPayloadLog()
+	ResetProtocolDetectionEnabled()
 	ResetProxy()
+	ResetSshSessionLog()
 	ResetTlsDecryptEnabled()
 	ResetUrlBrowserIsolationEnabled()
 	SynthesizeAttributes() *map[string]interface{}
@@ -219,6 +235,26 @@ func (j *jsiiProxy_TeamsAccount) BlockPageInput() *TeamsAccountBlockPage {
 	_jsii_.Get(
 		j,
 		"blockPageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccount) BodyScanning() TeamsAccountBodyScanningOutputReference {
+	var returns TeamsAccountBodyScanningOutputReference
+	_jsii_.Get(
+		j,
+		"bodyScanning",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccount) BodyScanningInput() *TeamsAccountBodyScanning {
+	var returns *TeamsAccountBodyScanning
+	_jsii_.Get(
+		j,
+		"bodyScanningInput",
 		&returns,
 	)
 	return returns
@@ -384,6 +420,26 @@ func (j *jsiiProxy_TeamsAccount) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_TeamsAccount) NonIdentityBrowserIsolationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nonIdentityBrowserIsolationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccount) NonIdentityBrowserIsolationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nonIdentityBrowserIsolationEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TeamsAccount) PayloadLog() TeamsAccountPayloadLogOutputReference {
 	var returns TeamsAccountPayloadLogOutputReference
 	_jsii_.Get(
@@ -399,6 +455,26 @@ func (j *jsiiProxy_TeamsAccount) PayloadLogInput() *TeamsAccountPayloadLog {
 	_jsii_.Get(
 		j,
 		"payloadLogInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccount) ProtocolDetectionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"protocolDetectionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccount) ProtocolDetectionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"protocolDetectionEnabledInput",
 		&returns,
 	)
 	return returns
@@ -449,6 +525,26 @@ func (j *jsiiProxy_TeamsAccount) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccount) SshSessionLog() TeamsAccountSshSessionLogOutputReference {
+	var returns TeamsAccountSshSessionLogOutputReference
+	_jsii_.Get(
+		j,
+		"sshSessionLog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccount) SshSessionLogInput() *TeamsAccountSshSessionLog {
+	var returns *TeamsAccountSshSessionLog
+	_jsii_.Get(
+		j,
+		"sshSessionLogInput",
 		&returns,
 	)
 	return returns
@@ -525,7 +621,7 @@ func (j *jsiiProxy_TeamsAccount) UrlBrowserIsolationEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account cloudflare_teams_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/teams_account cloudflare_teams_account} Resource.
 func NewTeamsAccount(scope constructs.Construct, id *string, config *TeamsAccountConfig) TeamsAccount {
 	_init_.Initialize()
 
@@ -543,7 +639,7 @@ func NewTeamsAccount(scope constructs.Construct, id *string, config *TeamsAccoun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account cloudflare_teams_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/teams_account cloudflare_teams_account} Resource.
 func NewTeamsAccount_Override(t TeamsAccount, scope constructs.Construct, id *string, config *TeamsAccountConfig) {
 	_init_.Initialize()
 
@@ -632,6 +728,28 @@ func (j *jsiiProxy_TeamsAccount)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsAccount)SetNonIdentityBrowserIsolationEnabled(val interface{}) {
+	if err := j.validateSetNonIdentityBrowserIsolationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nonIdentityBrowserIsolationEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsAccount)SetProtocolDetectionEnabled(val interface{}) {
+	if err := j.validateSetProtocolDetectionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"protocolDetectionEnabled",
 		val,
 	)
 }
@@ -965,6 +1083,17 @@ func (t *jsiiProxy_TeamsAccount) PutBlockPage(value *TeamsAccountBlockPage) {
 	)
 }
 
+func (t *jsiiProxy_TeamsAccount) PutBodyScanning(value *TeamsAccountBodyScanning) {
+	if err := t.validatePutBodyScanningParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putBodyScanning",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TeamsAccount) PutFips(value *TeamsAccountFips) {
 	if err := t.validatePutFipsParameters(value); err != nil {
 		panic(err)
@@ -1009,6 +1138,17 @@ func (t *jsiiProxy_TeamsAccount) PutProxy(value *TeamsAccountProxy) {
 	)
 }
 
+func (t *jsiiProxy_TeamsAccount) PutSshSessionLog(value *TeamsAccountSshSessionLog) {
+	if err := t.validatePutSshSessionLogParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putSshSessionLog",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TeamsAccount) ResetActivityLogEnabled() {
 	_jsii_.InvokeVoid(
 		t,
@@ -1029,6 +1169,14 @@ func (t *jsiiProxy_TeamsAccount) ResetBlockPage() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetBlockPage",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsAccount) ResetBodyScanning() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetBodyScanning",
 		nil, // no parameters
 	)
 }
@@ -1057,6 +1205,14 @@ func (t *jsiiProxy_TeamsAccount) ResetLogging() {
 	)
 }
 
+func (t *jsiiProxy_TeamsAccount) ResetNonIdentityBrowserIsolationEnabled() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetNonIdentityBrowserIsolationEnabled",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TeamsAccount) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		t,
@@ -1073,10 +1229,26 @@ func (t *jsiiProxy_TeamsAccount) ResetPayloadLog() {
 	)
 }
 
+func (t *jsiiProxy_TeamsAccount) ResetProtocolDetectionEnabled() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetProtocolDetectionEnabled",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TeamsAccount) ResetProxy() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetProxy",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsAccount) ResetSshSessionLog() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetSshSessionLog",
 		nil, // no parameters
 	)
 }
