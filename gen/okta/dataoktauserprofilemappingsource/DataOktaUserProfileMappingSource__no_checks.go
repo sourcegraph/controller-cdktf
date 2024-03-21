@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataOktaUserProfileMappingSource) validateOverrideLogicalIdPa
 	return nil
 }
 
+func validateDataOktaUserProfileMappingSource_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOktaUserProfileMappingSource_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -4,6 +4,10 @@ package orgsupport
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OrgSupport) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrgSupport) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (o *jsiiProxy_OrgSupport) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (o *jsiiProxy_OrgSupport) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrgSupport) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (o *jsiiProxy_OrgSupport) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrgSupport) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrgSupport) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrgSupport) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateOrgSupport_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

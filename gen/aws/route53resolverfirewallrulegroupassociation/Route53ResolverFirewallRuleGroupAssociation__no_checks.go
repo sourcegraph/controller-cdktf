@@ -4,6 +4,10 @@ package route53resolverfirewallrulegroupassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (r *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateGetStrin
 	return nil
 }
 
+func (r *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRoute53ResolverFirewallRuleGroupAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

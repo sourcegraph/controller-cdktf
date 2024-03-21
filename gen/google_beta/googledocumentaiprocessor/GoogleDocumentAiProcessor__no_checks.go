@@ -4,6 +4,10 @@ package googledocumentaiprocessor
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDocumentAiProcessor) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDocumentAiProcessor) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleDocumentAiProcessor) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDocumentAiProcessor) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDocumentAiProcessor) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDocumentAiProcessor) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDocumentAiProcessor) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDocumentAiProcessor) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleDocumentAiProcessor) validateOverrideLogicalIdParameter
 }
 
 func (g *jsiiProxy_GoogleDocumentAiProcessor) validatePutTimeoutsParameters(value *GoogleDocumentAiProcessorTimeouts) error {
+	return nil
+}
+
+func validateGoogleDocumentAiProcessor_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

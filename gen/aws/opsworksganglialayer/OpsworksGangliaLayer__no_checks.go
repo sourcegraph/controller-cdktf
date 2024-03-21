@@ -4,6 +4,10 @@ package opsworksganglialayer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OpsworksGangliaLayer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksGangliaLayer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (o *jsiiProxy_OpsworksGangliaLayer) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (o *jsiiProxy_OpsworksGangliaLayer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksGangliaLayer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksGangliaLayer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksGangliaLayer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksGangliaLayer) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (o *jsiiProxy_OpsworksGangliaLayer) validatePutEbsVolumeParameters(value in
 }
 
 func (o *jsiiProxy_OpsworksGangliaLayer) validatePutLoadBasedAutoScalingParameters(value *OpsworksGangliaLayerLoadBasedAutoScaling) error {
+	return nil
+}
+
+func validateOpsworksGangliaLayer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

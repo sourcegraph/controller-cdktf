@@ -4,6 +4,10 @@ package publiccaexternalaccountkey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PublicCaExternalAccountKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PublicCaExternalAccountKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (p *jsiiProxy_PublicCaExternalAccountKey) validateGetStringMapAttributePara
 	return nil
 }
 
+func (p *jsiiProxy_PublicCaExternalAccountKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PublicCaExternalAccountKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PublicCaExternalAccountKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PublicCaExternalAccountKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PublicCaExternalAccountKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (p *jsiiProxy_PublicCaExternalAccountKey) validateOverrideLogicalIdParamete
 }
 
 func (p *jsiiProxy_PublicCaExternalAccountKey) validatePutTimeoutsParameters(value *PublicCaExternalAccountKeyTimeouts) error {
+	return nil
+}
+
+func validatePublicCaExternalAccountKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package connectlambdafunctionassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConnectLambdaFunctionAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectLambdaFunctionAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (c *jsiiProxy_ConnectLambdaFunctionAssociation) validateGetStringMapAttribu
 	return nil
 }
 
+func (c *jsiiProxy_ConnectLambdaFunctionAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectLambdaFunctionAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_ConnectLambdaFunctionAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectLambdaFunctionAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectLambdaFunctionAssociation) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectLambdaFunctionAssociation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateConnectLambdaFunctionAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

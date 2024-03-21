@@ -4,6 +4,10 @@ package storagegatewayworkingstorage
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StoragegatewayWorkingStorage) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StoragegatewayWorkingStorage) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (s *jsiiProxy_StoragegatewayWorkingStorage) validateGetStringMapAttributePa
 	return nil
 }
 
+func (s *jsiiProxy_StoragegatewayWorkingStorage) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StoragegatewayWorkingStorage) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_StoragegatewayWorkingStorage) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StoragegatewayWorkingStorage) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_StoragegatewayWorkingStorage) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StoragegatewayWorkingStorage) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateStoragegatewayWorkingStorage_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

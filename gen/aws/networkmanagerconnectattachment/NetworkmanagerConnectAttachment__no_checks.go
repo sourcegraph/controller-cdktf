@@ -4,6 +4,10 @@ package networkmanagerconnectattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkmanagerConnectAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerConnectAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetworkmanagerConnectAttachment) validateGetStringMapAttribut
 	return nil
 }
 
+func (n *jsiiProxy_NetworkmanagerConnectAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerConnectAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerConnectAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerConnectAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerConnectAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (n *jsiiProxy_NetworkmanagerConnectAttachment) validatePutOptionsParameters
 }
 
 func (n *jsiiProxy_NetworkmanagerConnectAttachment) validatePutTimeoutsParameters(value *NetworkmanagerConnectAttachmentTimeouts) error {
+	return nil
+}
+
+func validateNetworkmanagerConnectAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

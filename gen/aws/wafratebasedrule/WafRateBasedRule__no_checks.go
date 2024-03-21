@@ -4,6 +4,10 @@ package wafratebasedrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WafRateBasedRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafRateBasedRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (w *jsiiProxy_WafRateBasedRule) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (w *jsiiProxy_WafRateBasedRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafRateBasedRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafRateBasedRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafRateBasedRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafRateBasedRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (w *jsiiProxy_WafRateBasedRule) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (w *jsiiProxy_WafRateBasedRule) validatePutPredicatesParameters(value interface{}) error {
+	return nil
+}
+
+func validateWafRateBasedRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

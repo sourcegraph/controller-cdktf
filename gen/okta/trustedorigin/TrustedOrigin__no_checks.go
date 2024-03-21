@@ -4,6 +4,10 @@ package trustedorigin
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TrustedOrigin) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TrustedOrigin) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (t *jsiiProxy_TrustedOrigin) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (t *jsiiProxy_TrustedOrigin) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TrustedOrigin) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_TrustedOrigin) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TrustedOrigin) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TrustedOrigin) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TrustedOrigin) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateTrustedOrigin_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package managedheaders
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_ManagedHeaders) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedHeaders) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (m *jsiiProxy_ManagedHeaders) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (m *jsiiProxy_ManagedHeaders) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedHeaders) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagedHeaders) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagedHeaders) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagedHeaders) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (m *jsiiProxy_ManagedHeaders) validatePutManagedRequestHeadersParameters(va
 }
 
 func (m *jsiiProxy_ManagedHeaders) validatePutManagedResponseHeadersParameters(value interface{}) error {
+	return nil
+}
+
+func validateManagedHeaders_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

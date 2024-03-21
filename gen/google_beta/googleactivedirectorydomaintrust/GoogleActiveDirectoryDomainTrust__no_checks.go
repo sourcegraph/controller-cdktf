@@ -4,6 +4,10 @@ package googleactivedirectorydomaintrust
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleActiveDirectoryDomainTrust) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleActiveDirectoryDomainTrust) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomainTrust) validateGetStringMapAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleActiveDirectoryDomainTrust) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleActiveDirectoryDomainTrust) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleActiveDirectoryDomainTrust) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleActiveDirectoryDomainTrust) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleActiveDirectoryDomainTrust) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomainTrust) validateOverrideLogicalIdPa
 }
 
 func (g *jsiiProxy_GoogleActiveDirectoryDomainTrust) validatePutTimeoutsParameters(value *GoogleActiveDirectoryDomainTrustTimeouts) error {
+	return nil
+}
+
+func validateGoogleActiveDirectoryDomainTrust_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

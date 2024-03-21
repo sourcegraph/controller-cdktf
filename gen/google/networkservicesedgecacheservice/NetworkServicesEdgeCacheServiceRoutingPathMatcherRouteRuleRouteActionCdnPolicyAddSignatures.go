@@ -10,17 +10,17 @@ type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPol
 	//
 	// Only the following parameters may be copied:
 	//
-	// 'PathGlobs'
-	// 'paths'
-	// 'acl'
-	// 'URLPrefix'
-	// 'IPRanges'
-	// 'SessionID'
-	// 'id'
-	// 'Data'
-	// 'data'
-	// 'payload'
-	// 'Headers'
+	//   * 'PathGlobs'
+	//   * 'paths'
+	//   * 'acl'
+	//   * 'URLPrefix'
+	//   * 'IPRanges'
+	//   * 'SessionID'
+	//   * 'id'
+	//   * 'Data'
+	//   * 'data'
+	//   * 'payload'
+	//   * 'Headers'
 	//
 	// You may specify up to 6 parameters to copy.  A given parameter is be copied only if the parameter exists in the verified token.  Parameter names are matched exactly as specified.  The order of the parameters does not matter.  Duplicates are not allowed.
 	//
@@ -32,8 +32,8 @@ type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPol
 	//
 	// The following are both valid paths to an EdgeCacheKeyset resource:
 	//
-	// 'projects/project/locations/global/edgeCacheKeysets/yourKeyset'
-	// 'yourKeyset'
+	//   * 'projects/project/locations/global/edgeCacheKeysets/yourKeyset'
+	//   * 'yourKeyset'
 	//
 	// This must be specified when the GENERATE_COOKIE or GENERATE_TOKEN_HLS_COOKIELESS actions are specified.  This field may not be specified otherwise.
 	//

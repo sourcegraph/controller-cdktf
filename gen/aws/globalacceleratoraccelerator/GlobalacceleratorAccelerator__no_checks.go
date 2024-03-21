@@ -4,6 +4,10 @@ package globalacceleratoraccelerator
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GlobalacceleratorAccelerator) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlobalacceleratorAccelerator) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) validateGetStringMapAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GlobalacceleratorAccelerator) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlobalacceleratorAccelerator) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlobalacceleratorAccelerator) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlobalacceleratorAccelerator) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlobalacceleratorAccelerator) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) validatePutAttributesParameters
 }
 
 func (g *jsiiProxy_GlobalacceleratorAccelerator) validatePutTimeoutsParameters(value *GlobalacceleratorAcceleratorTimeouts) error {
+	return nil
+}
+
+func validateGlobalacceleratorAccelerator_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

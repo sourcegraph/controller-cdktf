@@ -4,6 +4,10 @@ package computeautoscaler
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeAutoscaler) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeAutoscaler) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeAutoscaler) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (c *jsiiProxy_ComputeAutoscaler) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeAutoscaler) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeAutoscaler) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeAutoscaler) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeAutoscaler) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (c *jsiiProxy_ComputeAutoscaler) validatePutAutoscalingPolicyParameters(val
 }
 
 func (c *jsiiProxy_ComputeAutoscaler) validatePutTimeoutsParameters(value *ComputeAutoscalerTimeouts) error {
+	return nil
+}
+
+func validateComputeAutoscaler_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

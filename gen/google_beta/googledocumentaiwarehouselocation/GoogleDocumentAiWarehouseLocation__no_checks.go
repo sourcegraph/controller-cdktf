@@ -4,6 +4,10 @@ package googledocumentaiwarehouselocation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GoogleDocumentAiWarehouseLocation) validatePutTimeoutsParameters(value *GoogleDocumentAiWarehouseLocationTimeouts) error {
+	return nil
+}
+
+func validateGoogleDocumentAiWarehouseLocation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package firestorefield
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FirestoreField) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirestoreField) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (f *jsiiProxy_FirestoreField) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (f *jsiiProxy_FirestoreField) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirestoreField) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FirestoreField) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FirestoreField) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FirestoreField) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (f *jsiiProxy_FirestoreField) validatePutTimeoutsParameters(value *Firestor
 }
 
 func (f *jsiiProxy_FirestoreField) validatePutTtlConfigParameters(value *FirestoreFieldTtlConfig) error {
+	return nil
+}
+
+func validateFirestoreField_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package googleloggingorganizationsink
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleLoggingOrganizationSink) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingOrganizationSink) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) validateGetStringMapAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingOrganizationSink) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingOrganizationSink) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingOrganizationSink) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingOrganizationSink) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingOrganizationSink) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) validatePutBigqueryOptionsPara
 }
 
 func (g *jsiiProxy_GoogleLoggingOrganizationSink) validatePutExclusionsParameters(value interface{}) error {
+	return nil
+}
+
+func validateGoogleLoggingOrganizationSink_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

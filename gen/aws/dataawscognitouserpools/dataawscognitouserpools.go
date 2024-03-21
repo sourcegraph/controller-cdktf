@@ -400,6 +400,25 @@ func (j *jsiiProxy_DataAwsCognitoUserPools)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsCognitoUserPools resource upon running "cdktf plan <stack-name>".
+func DataAwsCognitoUserPools_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsCognitoUserPools_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

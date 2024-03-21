@@ -4,6 +4,10 @@ package cloudassetorganizationfeed
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudAssetOrganizationFeed) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAssetOrganizationFeed) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CloudAssetOrganizationFeed) validateGetStringMapAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_CloudAssetOrganizationFeed) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAssetOrganizationFeed) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAssetOrganizationFeed) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAssetOrganizationFeed) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAssetOrganizationFeed) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (c *jsiiProxy_CloudAssetOrganizationFeed) validatePutFeedOutputConfigParame
 }
 
 func (c *jsiiProxy_CloudAssetOrganizationFeed) validatePutTimeoutsParameters(value *CloudAssetOrganizationFeedTimeouts) error {
+	return nil
+}
+
+func validateCloudAssetOrganizationFeed_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package iamservicelinkedrole
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IamServiceLinkedRole) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamServiceLinkedRole) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (i *jsiiProxy_IamServiceLinkedRole) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (i *jsiiProxy_IamServiceLinkedRole) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamServiceLinkedRole) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IamServiceLinkedRole) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamServiceLinkedRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamServiceLinkedRole) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamServiceLinkedRole) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIamServiceLinkedRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

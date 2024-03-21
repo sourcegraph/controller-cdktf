@@ -4,6 +4,10 @@ package networksecuritygatewaysecuritypolicyrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateGetStringMa
 	return nil
 }
 
+func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateOverrideLog
 }
 
 func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validatePutTimeoutsParameters(value *NetworkSecurityGatewaySecurityPolicyRuleTimeouts) error {
+	return nil
+}
+
+func validateNetworkSecurityGatewaySecurityPolicyRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

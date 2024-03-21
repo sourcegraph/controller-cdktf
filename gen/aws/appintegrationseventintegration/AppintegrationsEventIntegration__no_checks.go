@@ -4,6 +4,10 @@ package appintegrationseventintegration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppintegrationsEventIntegration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppintegrationsEventIntegration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AppintegrationsEventIntegration) validateGetStringMapAttribut
 	return nil
 }
 
+func (a *jsiiProxy_AppintegrationsEventIntegration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppintegrationsEventIntegration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppintegrationsEventIntegration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppintegrationsEventIntegration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppintegrationsEventIntegration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (a *jsiiProxy_AppintegrationsEventIntegration) validateOverrideLogicalIdPar
 }
 
 func (a *jsiiProxy_AppintegrationsEventIntegration) validatePutEventFilterParameters(value *AppintegrationsEventIntegrationEventFilter) error {
+	return nil
+}
+
+func validateAppintegrationsEventIntegration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

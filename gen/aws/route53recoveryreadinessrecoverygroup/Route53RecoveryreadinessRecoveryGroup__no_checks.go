@@ -4,6 +4,10 @@ package route53recoveryreadinessrecoverygroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) validateGetStringMapAt
 	return nil
 }
 
+func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) validateOverrideLogica
 }
 
 func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) validatePutTimeoutsParameters(value *Route53RecoveryreadinessRecoveryGroupTimeouts) error {
+	return nil
+}
+
+func validateRoute53RecoveryreadinessRecoveryGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

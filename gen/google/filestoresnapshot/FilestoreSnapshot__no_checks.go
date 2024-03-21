@@ -4,6 +4,10 @@ package filestoresnapshot
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FilestoreSnapshot) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FilestoreSnapshot) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (f *jsiiProxy_FilestoreSnapshot) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (f *jsiiProxy_FilestoreSnapshot) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FilestoreSnapshot) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FilestoreSnapshot) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FilestoreSnapshot) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FilestoreSnapshot) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (f *jsiiProxy_FilestoreSnapshot) validateOverrideLogicalIdParameters(newLog
 }
 
 func (f *jsiiProxy_FilestoreSnapshot) validatePutTimeoutsParameters(value *FilestoreSnapshotTimeouts) error {
+	return nil
+}
+
+func validateFilestoreSnapshot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

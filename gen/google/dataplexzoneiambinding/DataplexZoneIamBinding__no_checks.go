@@ -4,6 +4,10 @@ package dataplexzoneiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataplexZoneIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexZoneIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DataplexZoneIamBinding) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (d *jsiiProxy_DataplexZoneIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexZoneIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataplexZoneIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataplexZoneIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataplexZoneIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (d *jsiiProxy_DataplexZoneIamBinding) validateOverrideLogicalIdParameters(n
 }
 
 func (d *jsiiProxy_DataplexZoneIamBinding) validatePutConditionParameters(value *DataplexZoneIamBindingCondition) error {
+	return nil
+}
+
+func validateDataplexZoneIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

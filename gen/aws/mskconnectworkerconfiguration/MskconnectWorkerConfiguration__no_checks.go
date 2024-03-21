@@ -4,6 +4,10 @@ package mskconnectworkerconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MskconnectWorkerConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MskconnectWorkerConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (m *jsiiProxy_MskconnectWorkerConfiguration) validateGetStringMapAttributeP
 	return nil
 }
 
+func (m *jsiiProxy_MskconnectWorkerConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MskconnectWorkerConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (m *jsiiProxy_MskconnectWorkerConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MskconnectWorkerConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MskconnectWorkerConfiguration) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MskconnectWorkerConfiguration) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateMskconnectWorkerConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

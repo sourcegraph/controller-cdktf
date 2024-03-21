@@ -4,6 +4,10 @@ package deployment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_Deployment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_Deployment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_Deployment) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (d *jsiiProxy_Deployment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_Deployment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Deployment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Deployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_Deployment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (d *jsiiProxy_Deployment) validatePutSpecParameters(value *DeploymentSpec) 
 }
 
 func (d *jsiiProxy_Deployment) validatePutTimeoutsParameters(value *DeploymentTimeouts) error {
+	return nil
+}
+
+func validateDeployment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

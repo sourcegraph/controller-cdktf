@@ -4,6 +4,10 @@ package cognitoidentityprovider
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CognitoIdentityProvider) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoIdentityProvider) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (c *jsiiProxy_CognitoIdentityProvider) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_CognitoIdentityProvider) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoIdentityProvider) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_CognitoIdentityProvider) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoIdentityProvider) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoIdentityProvider) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoIdentityProvider) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCognitoIdentityProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

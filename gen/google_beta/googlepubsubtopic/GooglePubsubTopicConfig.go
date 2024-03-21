@@ -33,9 +33,11 @@ type GooglePubsubTopicConfig struct {
 	// Your project's PubSub service account
 	// ('service-{{PROJECT_NUMBER}}@gcp-sa-pubsub.iam.gserviceaccount.com') must have
 	// 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
-	// The expected format is 'projects/*\/locations/*\/keyRings/*\/cryptoKeys/*'
+	// The expected format is 'projects/* /locations/* /keyRings/* /cryptoKeys/*'
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_pubsub_topic#kms_key_name GooglePubsubTopic#kms_key_name}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	KmsKeyName *string `field:"optional" json:"kmsKeyName" yaml:"kmsKeyName"`
 	// A set of key/value label pairs to assign to this Topic.
 	//

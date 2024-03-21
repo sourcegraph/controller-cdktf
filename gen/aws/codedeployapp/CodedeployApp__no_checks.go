@@ -4,6 +4,10 @@ package codedeployapp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CodedeployApp) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodedeployApp) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (c *jsiiProxy_CodedeployApp) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (c *jsiiProxy_CodedeployApp) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodedeployApp) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_CodedeployApp) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodedeployApp) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodedeployApp) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodedeployApp) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCodedeployApp_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

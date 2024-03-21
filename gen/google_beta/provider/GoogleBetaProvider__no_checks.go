@@ -12,6 +12,10 @@ func (g *jsiiProxy_GoogleBetaProvider) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func validateGoogleBetaProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateGoogleBetaProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

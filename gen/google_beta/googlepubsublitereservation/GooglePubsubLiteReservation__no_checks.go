@@ -4,6 +4,10 @@ package googlepubsublitereservation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GooglePubsubLiteReservation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubLiteReservation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GooglePubsubLiteReservation) validateGetStringMapAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubLiteReservation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubLiteReservation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubLiteReservation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubLiteReservation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubLiteReservation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GooglePubsubLiteReservation) validateOverrideLogicalIdParamet
 }
 
 func (g *jsiiProxy_GooglePubsubLiteReservation) validatePutTimeoutsParameters(value *GooglePubsubLiteReservationTimeouts) error {
+	return nil
+}
+
+func validateGooglePubsubLiteReservation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

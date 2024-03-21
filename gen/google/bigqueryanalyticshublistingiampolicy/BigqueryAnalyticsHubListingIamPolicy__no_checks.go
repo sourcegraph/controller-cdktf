@@ -4,6 +4,10 @@ package bigqueryanalyticshublistingiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigqueryAnalyticsHubListingIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryAnalyticsHubListingIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingIamPolicy) validateGetStringMapAtt
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryAnalyticsHubListingIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryAnalyticsHubListingIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryAnalyticsHubListingIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryAnalyticsHubListingIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryAnalyticsHubListingIamPolicy) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryAnalyticsHubListingIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateBigqueryAnalyticsHubListingIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

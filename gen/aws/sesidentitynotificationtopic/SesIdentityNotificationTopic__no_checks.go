@@ -4,6 +4,10 @@ package sesidentitynotificationtopic
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SesIdentityNotificationTopic) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SesIdentityNotificationTopic) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (s *jsiiProxy_SesIdentityNotificationTopic) validateGetStringMapAttributePa
 	return nil
 }
 
+func (s *jsiiProxy_SesIdentityNotificationTopic) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SesIdentityNotificationTopic) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_SesIdentityNotificationTopic) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SesIdentityNotificationTopic) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SesIdentityNotificationTopic) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SesIdentityNotificationTopic) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateSesIdentityNotificationTopic_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

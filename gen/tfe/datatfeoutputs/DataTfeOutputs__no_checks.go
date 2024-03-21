@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataTfeOutputs) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func validateDataTfeOutputs_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataTfeOutputs_IsConstructParameters(x interface{}) error {
 	return nil
 }

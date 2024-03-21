@@ -4,6 +4,10 @@ package dataprocautoscalingpolicyiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataprocAutoscalingPolicyIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocAutoscalingPolicyIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DataprocAutoscalingPolicyIamMember) validateGetStringMapAttri
 	return nil
 }
 
+func (d *jsiiProxy_DataprocAutoscalingPolicyIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocAutoscalingPolicyIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocAutoscalingPolicyIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocAutoscalingPolicyIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocAutoscalingPolicyIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (d *jsiiProxy_DataprocAutoscalingPolicyIamMember) validateOverrideLogicalId
 }
 
 func (d *jsiiProxy_DataprocAutoscalingPolicyIamMember) validatePutConditionParameters(value *DataprocAutoscalingPolicyIamMemberCondition) error {
+	return nil
+}
+
+func validateDataprocAutoscalingPolicyIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

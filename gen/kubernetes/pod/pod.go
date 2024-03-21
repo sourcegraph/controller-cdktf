@@ -67,6 +67,9 @@ type Pod interface {
 	TerraformResourceType() *string
 	Timeouts() PodTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -88,7 +91,22 @@ type Pod interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -464,6 +482,25 @@ func (j *jsiiProxy_Pod)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a Pod resource upon running "cdktf plan <stack-name>".
+func Pod_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validatePod_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-kubernetes.pod.Pod",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -546,6 +583,17 @@ func Pod_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (p *jsiiProxy_Pod) AddMoveTarget(moveTarget *string) {
+	if err := p.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (p *jsiiProxy_Pod) AddOverride(path *string, value interface{}) {
@@ -703,6 +751,30 @@ func (p *jsiiProxy_Pod) GetStringMapAttribute(terraformAttribute *string) *map[s
 	return returns
 }
 
+func (p *jsiiProxy_Pod) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_Pod) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := p.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (p *jsiiProxy_Pod) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -717,6 +789,39 @@ func (p *jsiiProxy_Pod) InterpolationForAttribute(terraformAttribute *string) cd
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_Pod) MoveFromId(id *string) {
+	if err := p.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (p *jsiiProxy_Pod) MoveTo(moveTarget *string, index interface{}) {
+	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (p *jsiiProxy_Pod) MoveToId(id *string) {
+	if err := p.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (p *jsiiProxy_Pod) OverrideLogicalId(newLogicalId *string) {

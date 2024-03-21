@@ -4,6 +4,10 @@ package networkmanagertransitgatewaypeering
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateGetStringMapAttr
 	return nil
 }
 
+func (n *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateOverrideLogicalI
 }
 
 func (n *jsiiProxy_NetworkmanagerTransitGatewayPeering) validatePutTimeoutsParameters(value *NetworkmanagerTransitGatewayPeeringTimeouts) error {
+	return nil
+}
+
+func validateNetworkmanagerTransitGatewayPeering_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

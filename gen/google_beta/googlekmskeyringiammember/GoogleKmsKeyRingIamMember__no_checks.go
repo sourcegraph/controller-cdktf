@@ -4,6 +4,10 @@ package googlekmskeyringiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleKmsKeyRingIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleKmsKeyRingIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleKmsKeyRingIamMember) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleKmsKeyRingIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleKmsKeyRingIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleKmsKeyRingIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleKmsKeyRingIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleKmsKeyRingIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleKmsKeyRingIamMember) validateOverrideLogicalIdParameter
 }
 
 func (g *jsiiProxy_GoogleKmsKeyRingIamMember) validatePutConditionParameters(value *GoogleKmsKeyRingIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleKmsKeyRingIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

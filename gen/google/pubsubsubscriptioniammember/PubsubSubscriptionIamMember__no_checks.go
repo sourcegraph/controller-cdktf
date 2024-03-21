@@ -4,6 +4,10 @@ package pubsubsubscriptioniammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PubsubSubscriptionIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubSubscriptionIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (p *jsiiProxy_PubsubSubscriptionIamMember) validateGetStringMapAttributePar
 	return nil
 }
 
+func (p *jsiiProxy_PubsubSubscriptionIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubSubscriptionIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubSubscriptionIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubSubscriptionIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubSubscriptionIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (p *jsiiProxy_PubsubSubscriptionIamMember) validateOverrideLogicalIdParamet
 }
 
 func (p *jsiiProxy_PubsubSubscriptionIamMember) validatePutConditionParameters(value *PubsubSubscriptionIamMemberCondition) error {
+	return nil
+}
+
+func validatePubsubSubscriptionIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

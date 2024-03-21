@@ -4,6 +4,10 @@ package googleactivedirectorypeering
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleActiveDirectoryPeering) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleActiveDirectoryPeering) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleActiveDirectoryPeering) validateGetStringMapAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleActiveDirectoryPeering) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleActiveDirectoryPeering) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleActiveDirectoryPeering) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleActiveDirectoryPeering) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleActiveDirectoryPeering) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleActiveDirectoryPeering) validateOverrideLogicalIdParame
 }
 
 func (g *jsiiProxy_GoogleActiveDirectoryPeering) validatePutTimeoutsParameters(value *GoogleActiveDirectoryPeeringTimeouts) error {
+	return nil
+}
+
+func validateGoogleActiveDirectoryPeering_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

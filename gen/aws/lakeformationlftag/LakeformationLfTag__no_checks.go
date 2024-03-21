@@ -4,6 +4,10 @@ package lakeformationlftag
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LakeformationLfTag) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LakeformationLfTag) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (l *jsiiProxy_LakeformationLfTag) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (l *jsiiProxy_LakeformationLfTag) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LakeformationLfTag) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LakeformationLfTag) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LakeformationLfTag) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LakeformationLfTag) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LakeformationLfTag) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLakeformationLfTag_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

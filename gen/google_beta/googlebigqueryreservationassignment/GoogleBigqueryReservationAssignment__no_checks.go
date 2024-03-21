@@ -4,6 +4,10 @@ package googlebigqueryreservationassignment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBigqueryReservationAssignment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryReservationAssignment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleBigqueryReservationAssignment) validateGetStringMapAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryReservationAssignment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryReservationAssignment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryReservationAssignment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryReservationAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryReservationAssignment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleBigqueryReservationAssignment) validateOverrideLogicalI
 }
 
 func (g *jsiiProxy_GoogleBigqueryReservationAssignment) validatePutTimeoutsParameters(value *GoogleBigqueryReservationAssignmentTimeouts) error {
+	return nil
+}
+
+func validateGoogleBigqueryReservationAssignment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

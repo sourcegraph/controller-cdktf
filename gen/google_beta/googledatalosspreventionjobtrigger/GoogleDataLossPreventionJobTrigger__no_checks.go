@@ -4,6 +4,10 @@ package googledatalosspreventionjobtrigger
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) validateGetStringMapAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) validatePutTimeoutsParame
 }
 
 func (g *jsiiProxy_GoogleDataLossPreventionJobTrigger) validatePutTriggersParameters(value interface{}) error {
+	return nil
+}
+
+func validateGoogleDataLossPreventionJobTrigger_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

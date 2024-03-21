@@ -4,6 +4,10 @@ package networkmanagertransitgatewayroutetableattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) validateGet
 	return nil
 }
 
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) validateOve
 }
 
 func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) validatePutTimeoutsParameters(value *NetworkmanagerTransitGatewayRouteTableAttachmentTimeouts) error {
+	return nil
+}
+
+func validateNetworkmanagerTransitGatewayRouteTableAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

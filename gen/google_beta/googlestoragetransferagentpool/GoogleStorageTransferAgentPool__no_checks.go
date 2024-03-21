@@ -4,6 +4,10 @@ package googlestoragetransferagentpool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleStorageTransferAgentPool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageTransferAgentPool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleStorageTransferAgentPool) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageTransferAgentPool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageTransferAgentPool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageTransferAgentPool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageTransferAgentPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageTransferAgentPool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleStorageTransferAgentPool) validatePutBandwidthLimitPara
 }
 
 func (g *jsiiProxy_GoogleStorageTransferAgentPool) validatePutTimeoutsParameters(value *GoogleStorageTransferAgentPoolTimeouts) error {
+	return nil
+}
+
+func validateGoogleStorageTransferAgentPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

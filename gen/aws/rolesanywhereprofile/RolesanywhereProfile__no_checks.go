@@ -4,6 +4,10 @@ package rolesanywhereprofile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RolesanywhereProfile) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RolesanywhereProfile) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (r *jsiiProxy_RolesanywhereProfile) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (r *jsiiProxy_RolesanywhereProfile) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RolesanywhereProfile) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_RolesanywhereProfile) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RolesanywhereProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RolesanywhereProfile) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RolesanywhereProfile) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRolesanywhereProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

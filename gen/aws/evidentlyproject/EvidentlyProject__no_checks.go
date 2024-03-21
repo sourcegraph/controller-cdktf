@@ -4,6 +4,10 @@ package evidentlyproject
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EvidentlyProject) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EvidentlyProject) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_EvidentlyProject) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (e *jsiiProxy_EvidentlyProject) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EvidentlyProject) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EvidentlyProject) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EvidentlyProject) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EvidentlyProject) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (e *jsiiProxy_EvidentlyProject) validatePutDataDeliveryParameters(value *Ev
 }
 
 func (e *jsiiProxy_EvidentlyProject) validatePutTimeoutsParameters(value *EvidentlyProjectTimeouts) error {
+	return nil
+}
+
+func validateEvidentlyProject_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

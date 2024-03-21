@@ -4,6 +4,10 @@ package slo
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_Slo) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Slo) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_Slo) validateGetStringMapAttributeParameters(terraformAttribu
 	return nil
 }
 
+func (s *jsiiProxy_Slo) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Slo) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_Slo) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_Slo) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_Slo) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -81,6 +101,10 @@ func (s *jsiiProxy_Slo) validatePutObjectiveParameters(value interface{}) error 
 }
 
 func (s *jsiiProxy_Slo) validatePutTimeWindowParameters(value *SloTimeWindow) error {
+	return nil
+}
+
+func validateSlo_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

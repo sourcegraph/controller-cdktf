@@ -12,6 +12,10 @@ func (p *jsiiProxy_PostgresqlProvider) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func validatePostgresqlProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validatePostgresqlProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

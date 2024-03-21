@@ -4,6 +4,10 @@ package wafrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WafRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (w *jsiiProxy_WafRule) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (w *jsiiProxy_WafRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (w *jsiiProxy_WafRule) validateOverrideLogicalIdParameters(newLogicalId *st
 }
 
 func (w *jsiiProxy_WafRule) validatePutPredicatesParameters(value interface{}) error {
+	return nil
+}
+
+func validateWafRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

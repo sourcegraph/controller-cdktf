@@ -12,6 +12,10 @@ func (t *jsiiProxy_TlsProvider) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func validateTlsProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateTlsProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

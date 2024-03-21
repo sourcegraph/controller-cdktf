@@ -4,6 +4,10 @@ package googleprojectusageexportbucket
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleProjectUsageExportBucket) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleProjectUsageExportBucket) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleProjectUsageExportBucket) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleProjectUsageExportBucket) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleProjectUsageExportBucket) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleProjectUsageExportBucket) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleProjectUsageExportBucket) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleProjectUsageExportBucket) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleProjectUsageExportBucket) validateOverrideLogicalIdPara
 }
 
 func (g *jsiiProxy_GoogleProjectUsageExportBucket) validatePutTimeoutsParameters(value *GoogleProjectUsageExportBucketTimeouts) error {
+	return nil
+}
+
+func validateGoogleProjectUsageExportBucket_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

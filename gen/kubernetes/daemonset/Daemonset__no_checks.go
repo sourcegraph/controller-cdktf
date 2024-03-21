@@ -4,6 +4,10 @@ package daemonset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_Daemonset) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_Daemonset) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_Daemonset) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (d *jsiiProxy_Daemonset) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_Daemonset) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Daemonset) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_Daemonset) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_Daemonset) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (d *jsiiProxy_Daemonset) validatePutSpecParameters(value *DaemonsetSpec) er
 }
 
 func (d *jsiiProxy_Daemonset) validatePutTimeoutsParameters(value *DaemonsetTimeouts) error {
+	return nil
+}
+
+func validateDaemonset_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

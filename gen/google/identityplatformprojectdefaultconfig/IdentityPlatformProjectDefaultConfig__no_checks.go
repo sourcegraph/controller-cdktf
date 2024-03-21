@@ -4,6 +4,10 @@ package identityplatformprojectdefaultconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IdentityPlatformProjectDefaultConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformProjectDefaultConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (i *jsiiProxy_IdentityPlatformProjectDefaultConfig) validateGetStringMapAtt
 	return nil
 }
 
+func (i *jsiiProxy_IdentityPlatformProjectDefaultConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformProjectDefaultConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformProjectDefaultConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformProjectDefaultConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformProjectDefaultConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (i *jsiiProxy_IdentityPlatformProjectDefaultConfig) validatePutSignInParame
 }
 
 func (i *jsiiProxy_IdentityPlatformProjectDefaultConfig) validatePutTimeoutsParameters(value *IdentityPlatformProjectDefaultConfigTimeouts) error {
+	return nil
+}
+
+func validateIdentityPlatformProjectDefaultConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

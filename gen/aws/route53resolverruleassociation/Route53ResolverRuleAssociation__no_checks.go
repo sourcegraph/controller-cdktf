@@ -4,6 +4,10 @@ package route53resolverruleassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_Route53ResolverRuleAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53ResolverRuleAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) validateGetStringMapAttribute
 	return nil
 }
 
+func (r *jsiiProxy_Route53ResolverRuleAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53ResolverRuleAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53ResolverRuleAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53ResolverRuleAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53ResolverRuleAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (r *jsiiProxy_Route53ResolverRuleAssociation) validateOverrideLogicalIdPara
 }
 
 func (r *jsiiProxy_Route53ResolverRuleAssociation) validatePutTimeoutsParameters(value *Route53ResolverRuleAssociationTimeouts) error {
+	return nil
+}
+
+func validateRoute53ResolverRuleAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package googlefirebasehostingrelease
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleFirebaseHostingRelease) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseHostingRelease) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleFirebaseHostingRelease) validateGetStringMapAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseHostingRelease) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseHostingRelease) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseHostingRelease) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseHostingRelease) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseHostingRelease) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleFirebaseHostingRelease) validateOverrideLogicalIdParame
 }
 
 func (g *jsiiProxy_GoogleFirebaseHostingRelease) validatePutTimeoutsParameters(value *GoogleFirebaseHostingReleaseTimeouts) error {
+	return nil
+}
+
+func validateGoogleFirebaseHostingRelease_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

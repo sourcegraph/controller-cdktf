@@ -4,6 +4,10 @@ package domainverification
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DomainVerification) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DomainVerification) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (d *jsiiProxy_DomainVerification) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (d *jsiiProxy_DomainVerification) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DomainVerification) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (d *jsiiProxy_DomainVerification) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DomainVerification) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DomainVerification) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DomainVerification) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDomainVerification_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

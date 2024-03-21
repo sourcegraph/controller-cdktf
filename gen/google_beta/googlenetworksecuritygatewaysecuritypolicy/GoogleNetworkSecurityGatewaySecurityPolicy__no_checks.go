@@ -4,6 +4,10 @@ package googlenetworksecuritygatewaysecuritypolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateGetString
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateOverrideL
 }
 
 func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validatePutTimeoutsParameters(value *GoogleNetworkSecurityGatewaySecurityPolicyTimeouts) error {
+	return nil
+}
+
+func validateGoogleNetworkSecurityGatewaySecurityPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

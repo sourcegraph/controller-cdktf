@@ -31,7 +31,7 @@ type DataAwsDxRouterConfigurationRouterOutputReference interface {
 	SetInternalValue(val *DataAwsDxRouterConfigurationRouter)
 	Platform() *string
 	RouterTypeIdentifier() *string
-	Software() *string
+	SoftwareAttribute() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -152,11 +152,11 @@ func (j *jsiiProxy_DataAwsDxRouterConfigurationRouterOutputReference) RouterType
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDxRouterConfigurationRouterOutputReference) Software() *string {
+func (j *jsiiProxy_DataAwsDxRouterConfigurationRouterOutputReference) SoftwareAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"software",
+		"softwareAttribute",
 		&returns,
 	)
 	return returns

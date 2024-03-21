@@ -4,6 +4,10 @@ package healthcareconsentstoreiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HealthcareConsentStoreIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareConsentStoreIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (h *jsiiProxy_HealthcareConsentStoreIamMember) validateGetStringMapAttribut
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareConsentStoreIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareConsentStoreIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareConsentStoreIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareConsentStoreIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareConsentStoreIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (h *jsiiProxy_HealthcareConsentStoreIamMember) validateOverrideLogicalIdPar
 }
 
 func (h *jsiiProxy_HealthcareConsentStoreIamMember) validatePutConditionParameters(value *HealthcareConsentStoreIamMemberCondition) error {
+	return nil
+}
+
+func validateHealthcareConsentStoreIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

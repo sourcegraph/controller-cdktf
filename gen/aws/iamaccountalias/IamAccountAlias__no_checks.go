@@ -4,6 +4,10 @@ package iamaccountalias
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IamAccountAlias) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamAccountAlias) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (i *jsiiProxy_IamAccountAlias) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (i *jsiiProxy_IamAccountAlias) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamAccountAlias) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IamAccountAlias) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamAccountAlias) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamAccountAlias) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamAccountAlias) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIamAccountAlias_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

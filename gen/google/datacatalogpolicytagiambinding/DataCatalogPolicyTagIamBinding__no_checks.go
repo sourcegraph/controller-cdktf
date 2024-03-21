@@ -4,6 +4,10 @@ package datacatalogpolicytagiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataCatalogPolicyTagIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCatalogPolicyTagIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DataCatalogPolicyTagIamBinding) validateGetStringMapAttribute
 	return nil
 }
 
+func (d *jsiiProxy_DataCatalogPolicyTagIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCatalogPolicyTagIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCatalogPolicyTagIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCatalogPolicyTagIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCatalogPolicyTagIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (d *jsiiProxy_DataCatalogPolicyTagIamBinding) validateOverrideLogicalIdPara
 }
 
 func (d *jsiiProxy_DataCatalogPolicyTagIamBinding) validatePutConditionParameters(value *DataCatalogPolicyTagIamBindingCondition) error {
+	return nil
+}
+
+func validateDataCatalogPolicyTagIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

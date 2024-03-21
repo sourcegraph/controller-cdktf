@@ -4,6 +4,10 @@ package kinesisanalyticsapplication
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KinesisAnalyticsApplication) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KinesisAnalyticsApplication) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) validateGetStringMapAttributePar
 	return nil
 }
 
+func (k *jsiiProxy_KinesisAnalyticsApplication) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KinesisAnalyticsApplication) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KinesisAnalyticsApplication) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KinesisAnalyticsApplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KinesisAnalyticsApplication) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (k *jsiiProxy_KinesisAnalyticsApplication) validatePutOutputsParameters(val
 }
 
 func (k *jsiiProxy_KinesisAnalyticsApplication) validatePutReferenceDataSourcesParameters(value *KinesisAnalyticsApplicationReferenceDataSources) error {
+	return nil
+}
+
+func validateKinesisAnalyticsApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

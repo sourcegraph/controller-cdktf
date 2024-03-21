@@ -33,9 +33,11 @@ type GoogleNetworkServicesTlsRouteConfig struct {
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Gateways defines a list of gateways this TlsRoute is attached to, as one of the routing rules to route the requests served by the gateway.
 	//
-	// Each gateway reference should match the pattern: projects/*\/locations/global/gateways/<gateway_name>
+	// Each gateway reference should match the pattern: projects/* /locations/global/gateways/<gateway_name>
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_tls_route#gateways GoogleNetworkServicesTlsRoute#gateways}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	Gateways *[]*string `field:"optional" json:"gateways" yaml:"gateways"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_tls_route#id GoogleNetworkServicesTlsRoute#id}.
 	//
@@ -44,10 +46,12 @@ type GoogleNetworkServicesTlsRouteConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Meshes defines a list of meshes this TlsRoute is attached to, as one of the routing rules to route the requests served by the mesh.
 	//
-	// Each mesh reference should match the pattern: projects/*\/locations/global/meshes/<mesh_name>
+	// Each mesh reference should match the pattern: projects/* /locations/global/meshes/<mesh_name>
 	// The attached Mesh should be of a type SIDECAR
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_tls_route#meshes GoogleNetworkServicesTlsRoute#meshes}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	Meshes *[]*string `field:"optional" json:"meshes" yaml:"meshes"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_tls_route#project GoogleNetworkServicesTlsRoute#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`

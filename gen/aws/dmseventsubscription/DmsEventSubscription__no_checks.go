@@ -4,6 +4,10 @@ package dmseventsubscription
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DmsEventSubscription) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DmsEventSubscription) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DmsEventSubscription) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (d *jsiiProxy_DmsEventSubscription) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DmsEventSubscription) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DmsEventSubscription) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DmsEventSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DmsEventSubscription) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (d *jsiiProxy_DmsEventSubscription) validateOverrideLogicalIdParameters(new
 }
 
 func (d *jsiiProxy_DmsEventSubscription) validatePutTimeoutsParameters(value *DmsEventSubscriptionTimeouts) error {
+	return nil
+}
+
+func validateDmsEventSubscription_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

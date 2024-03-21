@@ -4,6 +4,10 @@ package efsreplicationconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EfsReplicationConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EfsReplicationConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_EfsReplicationConfiguration) validateGetStringMapAttributePar
 	return nil
 }
 
+func (e *jsiiProxy_EfsReplicationConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EfsReplicationConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EfsReplicationConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EfsReplicationConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EfsReplicationConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (e *jsiiProxy_EfsReplicationConfiguration) validatePutDestinationParameters
 }
 
 func (e *jsiiProxy_EfsReplicationConfiguration) validatePutTimeoutsParameters(value *EfsReplicationConfigurationTimeouts) error {
+	return nil
+}
+
+func validateEfsReplicationConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

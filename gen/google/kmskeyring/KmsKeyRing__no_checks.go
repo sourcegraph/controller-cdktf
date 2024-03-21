@@ -4,6 +4,10 @@ package kmskeyring
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KmsKeyRing) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsKeyRing) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (k *jsiiProxy_KmsKeyRing) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (k *jsiiProxy_KmsKeyRing) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsKeyRing) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsKeyRing) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsKeyRing) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsKeyRing) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (k *jsiiProxy_KmsKeyRing) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func (k *jsiiProxy_KmsKeyRing) validatePutTimeoutsParameters(value *KmsKeyRingTimeouts) error {
+	return nil
+}
+
+func validateKmsKeyRing_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

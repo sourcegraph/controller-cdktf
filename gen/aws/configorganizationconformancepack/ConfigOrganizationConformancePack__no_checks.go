@@ -4,6 +4,10 @@ package configorganizationconformancepack
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConfigOrganizationConformancePack) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigOrganizationConformancePack) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) validateGetStringMapAttrib
 	return nil
 }
 
+func (c *jsiiProxy_ConfigOrganizationConformancePack) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigOrganizationConformancePack) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfigOrganizationConformancePack) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfigOrganizationConformancePack) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfigOrganizationConformancePack) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) validatePutInputParameterP
 }
 
 func (c *jsiiProxy_ConfigOrganizationConformancePack) validatePutTimeoutsParameters(value *ConfigOrganizationConformancePackTimeouts) error {
+	return nil
+}
+
+func validateConfigOrganizationConformancePack_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

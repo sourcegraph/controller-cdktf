@@ -4,6 +4,10 @@ package notificationpolicywebhooks
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NotificationPolicyWebhooks) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationPolicyWebhooks) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) validateGetStringMapAttributePara
 	return nil
 }
 
+func (n *jsiiProxy_NotificationPolicyWebhooks) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationPolicyWebhooks) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (n *jsiiProxy_NotificationPolicyWebhooks) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotificationPolicyWebhooks) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotificationPolicyWebhooks) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationPolicyWebhooks) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateNotificationPolicyWebhooks_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

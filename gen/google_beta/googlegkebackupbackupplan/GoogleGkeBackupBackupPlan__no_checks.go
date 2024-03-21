@@ -4,6 +4,10 @@ package googlegkebackupbackupplan
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleGkeBackupBackupPlan) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeBackupBackupPlan) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleGkeBackupBackupPlan) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeBackupBackupPlan) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeBackupBackupPlan) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeBackupBackupPlan) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeBackupBackupPlan) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeBackupBackupPlan) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (g *jsiiProxy_GoogleGkeBackupBackupPlan) validatePutRetentionPolicyParamete
 }
 
 func (g *jsiiProxy_GoogleGkeBackupBackupPlan) validatePutTimeoutsParameters(value *GoogleGkeBackupBackupPlanTimeouts) error {
+	return nil
+}
+
+func validateGoogleGkeBackupBackupPlan_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

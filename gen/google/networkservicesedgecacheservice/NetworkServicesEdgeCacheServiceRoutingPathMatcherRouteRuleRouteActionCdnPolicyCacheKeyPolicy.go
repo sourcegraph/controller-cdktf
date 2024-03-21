@@ -29,13 +29,13 @@ type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPol
 	// The cookie name and cookie value of each cookie named will be used as part of the cache key.
 	//
 	// Cookie names:
-	// - must be valid RFC 6265 "cookie-name" tokens
-	// - are case sensitive
-	// - cannot start with "Edge-Cache-" (case insensitive)
+	//   - must be valid RFC 6265 "cookie-name" tokens
+	//   - are case sensitive
+	//   - cannot start with "Edge-Cache-" (case insensitive)
 	//
-	// Note that specifying several cookies, and/or cookies that have a large range of values (e.g., per-user) will dramatically impact the cache hit rate, and may result in a higher eviction rate and reduced performance.
+	//   Note that specifying several cookies, and/or cookies that have a large range of values (e.g., per-user) will dramatically impact the cache hit rate, and may result in a higher eviction rate and reduced performance.
 	//
-	// You may specify up to three cookie names.
+	//   You may specify up to three cookie names.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/network_services_edge_cache_service#included_cookie_names NetworkServicesEdgeCacheService#included_cookie_names}
 	IncludedCookieNames *[]*string `field:"optional" json:"includedCookieNames" yaml:"includedCookieNames"`

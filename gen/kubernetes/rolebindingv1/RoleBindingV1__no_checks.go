@@ -4,6 +4,10 @@ package rolebindingv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RoleBindingV1) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RoleBindingV1) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (r *jsiiProxy_RoleBindingV1) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (r *jsiiProxy_RoleBindingV1) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RoleBindingV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RoleBindingV1) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RoleBindingV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RoleBindingV1) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (r *jsiiProxy_RoleBindingV1) validatePutRoleRefParameters(value *RoleBindin
 }
 
 func (r *jsiiProxy_RoleBindingV1) validatePutSubjectParameters(value interface{}) error {
+	return nil
+}
+
+func validateRoleBindingV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

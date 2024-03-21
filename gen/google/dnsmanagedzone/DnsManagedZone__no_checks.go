@@ -4,6 +4,10 @@ package dnsmanagedzone
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DnsManagedZone) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsManagedZone) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DnsManagedZone) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (d *jsiiProxy_DnsManagedZone) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsManagedZone) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DnsManagedZone) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DnsManagedZone) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DnsManagedZone) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -73,6 +93,10 @@ func (d *jsiiProxy_DnsManagedZone) validatePutPrivateVisibilityConfigParameters(
 }
 
 func (d *jsiiProxy_DnsManagedZone) validatePutTimeoutsParameters(value *DnsManagedZoneTimeouts) error {
+	return nil
+}
+
+func validateDnsManagedZone_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package computemanagedsslcertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeManagedSslCertificate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeManagedSslCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeManagedSslCertificate) validateGetStringMapAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_ComputeManagedSslCertificate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeManagedSslCertificate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeManagedSslCertificate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeManagedSslCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeManagedSslCertificate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (c *jsiiProxy_ComputeManagedSslCertificate) validatePutManagedParameters(va
 }
 
 func (c *jsiiProxy_ComputeManagedSslCertificate) validatePutTimeoutsParameters(value *ComputeManagedSslCertificateTimeouts) error {
+	return nil
+}
+
+func validateComputeManagedSslCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

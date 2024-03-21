@@ -4,6 +4,10 @@ package appstreamimagebuilder
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppstreamImageBuilder) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppstreamImageBuilder) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AppstreamImageBuilder) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (a *jsiiProxy_AppstreamImageBuilder) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppstreamImageBuilder) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppstreamImageBuilder) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppstreamImageBuilder) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppstreamImageBuilder) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (a *jsiiProxy_AppstreamImageBuilder) validatePutDomainJoinInfoParameters(va
 }
 
 func (a *jsiiProxy_AppstreamImageBuilder) validatePutVpcConfigParameters(value *AppstreamImageBuilderVpcConfig) error {
+	return nil
+}
+
+func validateAppstreamImageBuilder_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

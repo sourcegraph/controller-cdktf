@@ -470,6 +470,25 @@ func (j *jsiiProxy_DataGoogleCloudRunV2ServiceIamPolicy)SetProvider(val cdktf.Te
 	)
 }
 
+// Generates CDKTF code for importing a DataGoogleCloudRunV2ServiceIamPolicy resource upon running "cdktf plan <stack-name>".
+func DataGoogleCloudRunV2ServiceIamPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataGoogleCloudRunV2ServiceIamPolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.dataGoogleCloudRunV2ServiceIamPolicy.DataGoogleCloudRunV2ServiceIamPolicy",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

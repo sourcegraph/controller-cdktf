@@ -4,6 +4,10 @@ package ivsrecordingconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IvsRecordingConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IvsRecordingConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (i *jsiiProxy_IvsRecordingConfiguration) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (i *jsiiProxy_IvsRecordingConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IvsRecordingConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IvsRecordingConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IvsRecordingConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IvsRecordingConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (i *jsiiProxy_IvsRecordingConfiguration) validatePutThumbnailConfigurationP
 }
 
 func (i *jsiiProxy_IvsRecordingConfiguration) validatePutTimeoutsParameters(value *IvsRecordingConfigurationTimeouts) error {
+	return nil
+}
+
+func validateIvsRecordingConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

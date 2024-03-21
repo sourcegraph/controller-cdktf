@@ -4,6 +4,10 @@ package dxprivatevirtualinterface
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DxPrivateVirtualInterface) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxPrivateVirtualInterface) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DxPrivateVirtualInterface) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (d *jsiiProxy_DxPrivateVirtualInterface) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxPrivateVirtualInterface) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxPrivateVirtualInterface) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxPrivateVirtualInterface) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxPrivateVirtualInterface) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (d *jsiiProxy_DxPrivateVirtualInterface) validateOverrideLogicalIdParameter
 }
 
 func (d *jsiiProxy_DxPrivateVirtualInterface) validatePutTimeoutsParameters(value *DxPrivateVirtualInterfaceTimeouts) error {
+	return nil
+}
+
+func validateDxPrivateVirtualInterface_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

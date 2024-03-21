@@ -4,6 +4,10 @@ package sccmuteconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SccMuteConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccMuteConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SccMuteConfig) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (s *jsiiProxy_SccMuteConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccMuteConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccMuteConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccMuteConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccMuteConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_SccMuteConfig) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (s *jsiiProxy_SccMuteConfig) validatePutTimeoutsParameters(value *SccMuteConfigTimeouts) error {
+	return nil
+}
+
+func validateSccMuteConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

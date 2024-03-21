@@ -81,6 +81,9 @@ type VertexAiFeaturestoreEntitytype interface {
 	Timeouts() VertexAiFeaturestoreEntitytypeTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UpdateTime() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -102,7 +105,22 @@ type VertexAiFeaturestoreEntitytype interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -625,6 +643,25 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytype)SetProvisioners(val *[]interfa
 	)
 }
 
+// Generates CDKTF code for importing a VertexAiFeaturestoreEntitytype resource upon running "cdktf plan <stack-name>".
+func VertexAiFeaturestoreEntitytype_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateVertexAiFeaturestoreEntitytype_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytype",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -707,6 +744,17 @@ func VertexAiFeaturestoreEntitytype_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytype) AddMoveTarget(moveTarget *string) {
+	if err := v.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (v *jsiiProxy_VertexAiFeaturestoreEntitytype) AddOverride(path *string, value interface{}) {
@@ -864,6 +912,30 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytype) GetStringMapAttribute(terrafo
 	return returns
 }
 
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytype) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		v,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytype) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := v.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (v *jsiiProxy_VertexAiFeaturestoreEntitytype) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -878,6 +950,39 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytype) InterpolationForAttribute(ter
 	)
 
 	return returns
+}
+
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytype) MoveFromId(id *string) {
+	if err := v.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytype) MoveTo(moveTarget *string, index interface{}) {
+	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytype) MoveToId(id *string) {
+	if err := v.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (v *jsiiProxy_VertexAiFeaturestoreEntitytype) OverrideLogicalId(newLogicalId *string) {

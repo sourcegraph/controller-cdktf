@@ -8,9 +8,11 @@ type GooglePrivatecaCertificateAuthorityKeySpec struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_privateca_certificate_authority#algorithm GooglePrivatecaCertificateAuthority#algorithm}
 	Algorithm *string `field:"optional" json:"algorithm" yaml:"algorithm"`
-	// The resource name for an existing Cloud KMS CryptoKeyVersion in the format 'projects/*\/locations/*\/keyRings/*\/cryptoKeys/*\/cryptoKeyVersions/*'.
+	// The resource name for an existing Cloud KMS CryptoKeyVersion in the format 'projects/* /locations/* /keyRings/* /cryptoKeys/* /cryptoKeyVersions/*'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_privateca_certificate_authority#cloud_kms_key_version GooglePrivatecaCertificateAuthority#cloud_kms_key_version}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	CloudKmsKeyVersion *string `field:"optional" json:"cloudKmsKeyVersion" yaml:"cloudKmsKeyVersion"`
 }
 

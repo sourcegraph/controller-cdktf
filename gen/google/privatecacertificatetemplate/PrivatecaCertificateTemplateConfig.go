@@ -23,9 +23,11 @@ type PrivatecaCertificateTemplateConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/privateca_certificate_template#location PrivatecaCertificateTemplate#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
-	// The resource name for this CertificateTemplate in the format `projects/*\/locations/*\/certificateTemplates/*`.
+	// The resource name for this CertificateTemplate in the format `projects/* /locations/* /certificateTemplates/*`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/privateca_certificate_template#name PrivatecaCertificateTemplate#name}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Optional. A human-readable description of scenarios this template is intended for.
 	//

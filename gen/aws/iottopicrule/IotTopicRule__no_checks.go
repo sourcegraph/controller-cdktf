@@ -4,6 +4,10 @@ package iottopicrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IotTopicRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotTopicRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (i *jsiiProxy_IotTopicRule) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (i *jsiiProxy_IotTopicRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotTopicRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotTopicRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotTopicRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotTopicRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -129,6 +149,10 @@ func (i *jsiiProxy_IotTopicRule) validatePutStepFunctionsParameters(value interf
 }
 
 func (i *jsiiProxy_IotTopicRule) validatePutTimestreamParameters(value interface{}) error {
+	return nil
+}
+
+func validateIotTopicRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

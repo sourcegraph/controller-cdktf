@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataOktaUsers) validatePutSearchParameters(value interface{})
 	return nil
 }
 
+func validateDataOktaUsers_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOktaUsers_IsConstructParameters(x interface{}) error {
 	return nil
 }

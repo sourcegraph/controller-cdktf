@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleIamWorkloadIdentityPool) validateOverrideLogicalIdP
 	return nil
 }
 
+func validateDataGoogleIamWorkloadIdentityPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleIamWorkloadIdentityPool_IsConstructParameters(x interface{}) error {
 	return nil
 }

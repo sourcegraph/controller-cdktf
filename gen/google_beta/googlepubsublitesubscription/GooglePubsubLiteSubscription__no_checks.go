@@ -4,6 +4,10 @@ package googlepubsublitesubscription
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GooglePubsubLiteSubscription) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubLiteSubscription) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GooglePubsubLiteSubscription) validateGetStringMapAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubLiteSubscription) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubLiteSubscription) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubLiteSubscription) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubLiteSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubLiteSubscription) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GooglePubsubLiteSubscription) validatePutDeliveryConfigParame
 }
 
 func (g *jsiiProxy_GooglePubsubLiteSubscription) validatePutTimeoutsParameters(value *GooglePubsubLiteSubscriptionTimeouts) error {
+	return nil
+}
+
+func validateGooglePubsubLiteSubscription_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

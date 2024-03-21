@@ -2,12 +2,12 @@ package osconfigospolicyassignment
 
 
 type OsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResources struct {
-	// The id of the resource with the following restrictions: Must contain only lowercase letters, numbers, and hyphens.
+	// The id of the resource with the following restrictions: * Must contain only lowercase letters, numbers, and hyphens.
 	//
-	// Must start with a letter.
-	// Must be between 1-63 characters.
-	// Must end with a number or a letter.
-	// Must be unique within the OS policy.
+	// * Must start with a letter.
+	// * Must be between 1-63 characters.
+	// * Must end with a number or a letter.
+	// * Must be unique within the OS policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/os_config_os_policy_assignment#id OsConfigOsPolicyAssignment#id}
 	//

@@ -4,6 +4,10 @@ package identityplatformdefaultsupportedidpconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IdentityPlatformDefaultSupportedIdpConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformDefaultSupportedIdpConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (i *jsiiProxy_IdentityPlatformDefaultSupportedIdpConfig) validateGetStringM
 	return nil
 }
 
+func (i *jsiiProxy_IdentityPlatformDefaultSupportedIdpConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformDefaultSupportedIdpConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformDefaultSupportedIdpConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformDefaultSupportedIdpConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformDefaultSupportedIdpConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (i *jsiiProxy_IdentityPlatformDefaultSupportedIdpConfig) validateOverrideLo
 }
 
 func (i *jsiiProxy_IdentityPlatformDefaultSupportedIdpConfig) validatePutTimeoutsParameters(value *IdentityPlatformDefaultSupportedIdpConfigTimeouts) error {
+	return nil
+}
+
+func validateIdentityPlatformDefaultSupportedIdpConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

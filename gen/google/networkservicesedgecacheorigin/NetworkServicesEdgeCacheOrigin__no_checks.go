@@ -4,6 +4,10 @@ package networkservicesedgecacheorigin
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateGetStringMapAttribute
 	return nil
 }
 
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -69,6 +89,10 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validatePutTimeoutParameters(
 }
 
 func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validatePutTimeoutsParameters(value *NetworkServicesEdgeCacheOriginTimeouts) error {
+	return nil
+}
+
+func validateNetworkServicesEdgeCacheOrigin_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

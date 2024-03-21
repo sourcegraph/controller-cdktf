@@ -9,6 +9,9 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/gkeprivate/internal"
 )
 
+// Defines an Gkeprivate based on a Terraform module.
+//
+// Source at git::https://github.com/michaellzc/terraform-google-kubernetes-engine.git//modules/beta-private-cluster?ref=39c107f0ae55b054811cb30100d55479c9c0561a
 type Gkeprivate interface {
 	cdktf.TerraformModule
 	AddClusterFirewallRules() *bool

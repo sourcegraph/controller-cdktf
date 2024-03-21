@@ -4,6 +4,10 @@ package passwordpolicyrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PasswordPolicyRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PasswordPolicyRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (p *jsiiProxy_PasswordPolicyRule) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (p *jsiiProxy_PasswordPolicyRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PasswordPolicyRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (p *jsiiProxy_PasswordPolicyRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PasswordPolicyRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PasswordPolicyRule) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PasswordPolicyRule) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validatePasswordPolicyRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

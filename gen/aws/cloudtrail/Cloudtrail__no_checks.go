@@ -4,6 +4,10 @@ package cloudtrail
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_Cloudtrail) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudtrail) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_Cloudtrail) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (c *jsiiProxy_Cloudtrail) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudtrail) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_Cloudtrail) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_Cloudtrail) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_Cloudtrail) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (c *jsiiProxy_Cloudtrail) validatePutEventSelectorParameters(value interfac
 }
 
 func (c *jsiiProxy_Cloudtrail) validatePutInsightSelectorParameters(value interface{}) error {
+	return nil
+}
+
+func validateCloudtrail_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

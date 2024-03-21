@@ -4,6 +4,10 @@ package route53recoverycontrolconfigroutingcontrol
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_Route53RecoverycontrolconfigRoutingControl) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53RecoverycontrolconfigRoutingControl) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigRoutingControl) validateGetString
 	return nil
 }
 
+func (r *jsiiProxy_Route53RecoverycontrolconfigRoutingControl) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53RecoverycontrolconfigRoutingControl) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_Route53RecoverycontrolconfigRoutingControl) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53RecoverycontrolconfigRoutingControl) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53RecoverycontrolconfigRoutingControl) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53RecoverycontrolconfigRoutingControl) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRoute53RecoverycontrolconfigRoutingControl_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

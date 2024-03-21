@@ -4,6 +4,10 @@ package userschemaproperty
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (u *jsiiProxy_UserSchemaProperty) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserSchemaProperty) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (u *jsiiProxy_UserSchemaProperty) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (u *jsiiProxy_UserSchemaProperty) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserSchemaProperty) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserSchemaProperty) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserSchemaProperty) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserSchemaProperty) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (u *jsiiProxy_UserSchemaProperty) validatePutMasterOverridePriorityParamete
 }
 
 func (u *jsiiProxy_UserSchemaProperty) validatePutOneOfParameters(value interface{}) error {
+	return nil
+}
+
+func validateUserSchemaProperty_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

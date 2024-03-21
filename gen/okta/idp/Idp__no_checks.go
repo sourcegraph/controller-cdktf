@@ -4,6 +4,10 @@ package idp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_Idp) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Idp) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (i *jsiiProxy_Idp) validateGetStringMapAttributeParameters(terraformAttribu
 	return nil
 }
 
+func (i *jsiiProxy_Idp) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Idp) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_Idp) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_Idp) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_Idp) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Idp) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIdp_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

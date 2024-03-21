@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleKmsSecretAsymmetric) validateOverrideLogicalIdParam
 	return nil
 }
 
+func validateDataGoogleKmsSecretAsymmetric_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleKmsSecretAsymmetric_IsConstructParameters(x interface{}) error {
 	return nil
 }

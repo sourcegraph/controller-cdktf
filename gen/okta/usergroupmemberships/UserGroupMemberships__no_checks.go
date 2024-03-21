@@ -4,6 +4,10 @@ package usergroupmemberships
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (u *jsiiProxy_UserGroupMemberships) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserGroupMemberships) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (u *jsiiProxy_UserGroupMemberships) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (u *jsiiProxy_UserGroupMemberships) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserGroupMemberships) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (u *jsiiProxy_UserGroupMemberships) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserGroupMemberships) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserGroupMemberships) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserGroupMemberships) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateUserGroupMemberships_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

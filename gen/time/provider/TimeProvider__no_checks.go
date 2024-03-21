@@ -12,6 +12,10 @@ func (t *jsiiProxy_TimeProvider) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func validateTimeProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateTimeProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

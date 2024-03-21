@@ -4,6 +4,10 @@ package teamsaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TeamsAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamsAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (t *jsiiProxy_TeamsAccount) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (t *jsiiProxy_TeamsAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamsAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TeamsAccount) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TeamsAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TeamsAccount) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -73,6 +93,10 @@ func (t *jsiiProxy_TeamsAccount) validatePutPayloadLogParameters(value *TeamsAcc
 }
 
 func (t *jsiiProxy_TeamsAccount) validatePutProxyParameters(value *TeamsAccountProxy) error {
+	return nil
+}
+
+func validateTeamsAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

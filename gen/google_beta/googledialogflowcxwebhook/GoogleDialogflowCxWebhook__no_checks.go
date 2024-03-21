@@ -4,6 +4,10 @@ package googledialogflowcxwebhook
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDialogflowCxWebhook) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxWebhook) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxWebhook) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxWebhook) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxWebhook) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxWebhook) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxWebhook) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) validatePutServiceDirectoryParamet
 }
 
 func (g *jsiiProxy_GoogleDialogflowCxWebhook) validatePutTimeoutsParameters(value *GoogleDialogflowCxWebhookTimeouts) error {
+	return nil
+}
+
+func validateGoogleDialogflowCxWebhook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

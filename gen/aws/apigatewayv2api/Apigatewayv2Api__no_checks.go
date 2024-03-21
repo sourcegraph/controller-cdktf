@@ -4,6 +4,10 @@ package apigatewayv2api
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_Apigatewayv2Api) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_Apigatewayv2Api) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_Apigatewayv2Api) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (a *jsiiProxy_Apigatewayv2Api) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_Apigatewayv2Api) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_Apigatewayv2Api) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_Apigatewayv2Api) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_Apigatewayv2Api) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (a *jsiiProxy_Apigatewayv2Api) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (a *jsiiProxy_Apigatewayv2Api) validatePutCorsConfigurationParameters(value *Apigatewayv2ApiCorsConfiguration) error {
+	return nil
+}
+
+func validateApigatewayv2Api_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

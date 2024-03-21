@@ -4,6 +4,10 @@ package lexbotalias
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LexBotAlias) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LexBotAlias) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (l *jsiiProxy_LexBotAlias) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (l *jsiiProxy_LexBotAlias) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LexBotAlias) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LexBotAlias) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LexBotAlias) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LexBotAlias) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (l *jsiiProxy_LexBotAlias) validatePutConversationLogsParameters(value *Lex
 }
 
 func (l *jsiiProxy_LexBotAlias) validatePutTimeoutsParameters(value *LexBotAliasTimeouts) error {
+	return nil
+}
+
+func validateLexBotAlias_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

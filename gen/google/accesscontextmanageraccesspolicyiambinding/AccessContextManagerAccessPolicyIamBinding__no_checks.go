@@ -4,6 +4,10 @@ package accesscontextmanageraccesspolicyiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateGetString
 	return nil
 }
 
+func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateOverrideL
 }
 
 func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validatePutConditionParameters(value *AccessContextManagerAccessPolicyIamBindingCondition) error {
+	return nil
+}
+
+func validateAccessContextManagerAccessPolicyIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

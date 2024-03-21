@@ -4,6 +4,10 @@ package billingbudget
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BillingBudget) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BillingBudget) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (b *jsiiProxy_BillingBudget) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (b *jsiiProxy_BillingBudget) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BillingBudget) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BillingBudget) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BillingBudget) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BillingBudget) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -69,6 +89,10 @@ func (b *jsiiProxy_BillingBudget) validatePutThresholdRulesParameters(value inte
 }
 
 func (b *jsiiProxy_BillingBudget) validatePutTimeoutsParameters(value *BillingBudgetTimeouts) error {
+	return nil
+}
+
+func validateBillingBudget_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

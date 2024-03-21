@@ -4,6 +4,10 @@ package alertmethodpagerduty
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AlertMethodPagerduty) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlertMethodPagerduty) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AlertMethodPagerduty) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (a *jsiiProxy_AlertMethodPagerduty) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlertMethodPagerduty) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlertMethodPagerduty) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlertMethodPagerduty) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlertMethodPagerduty) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (a *jsiiProxy_AlertMethodPagerduty) validateOverrideLogicalIdParameters(new
 }
 
 func (a *jsiiProxy_AlertMethodPagerduty) validatePutSendResolutionParameters(value *AlertMethodPagerdutySendResolution) error {
+	return nil
+}
+
+func validateAlertMethodPagerduty_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

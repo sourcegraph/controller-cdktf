@@ -4,6 +4,10 @@ package googlevertexaimetadatastore
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleVertexAiMetadataStore) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiMetadataStore) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleVertexAiMetadataStore) validateGetStringMapAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVertexAiMetadataStore) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiMetadataStore) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiMetadataStore) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiMetadataStore) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiMetadataStore) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleVertexAiMetadataStore) validatePutEncryptionSpecParamet
 }
 
 func (g *jsiiProxy_GoogleVertexAiMetadataStore) validatePutTimeoutsParameters(value *GoogleVertexAiMetadataStoreTimeouts) error {
+	return nil
+}
+
+func validateGoogleVertexAiMetadataStore_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package googlebigquerydatatransferconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBigqueryDataTransferConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryDataTransferConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleBigqueryDataTransferConfig) validateGetStringMapAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryDataTransferConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryDataTransferConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataTransferConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataTransferConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataTransferConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (g *jsiiProxy_GoogleBigqueryDataTransferConfig) validatePutSensitiveParamsP
 }
 
 func (g *jsiiProxy_GoogleBigqueryDataTransferConfig) validatePutTimeoutsParameters(value *GoogleBigqueryDataTransferConfigTimeouts) error {
+	return nil
+}
+
+func validateGoogleBigqueryDataTransferConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

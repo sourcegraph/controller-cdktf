@@ -4,6 +4,10 @@ package amifrominstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AmiFromInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AmiFromInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AmiFromInstance) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (a *jsiiProxy_AmiFromInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AmiFromInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AmiFromInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AmiFromInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AmiFromInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (a *jsiiProxy_AmiFromInstance) validatePutEphemeralBlockDeviceParameters(va
 }
 
 func (a *jsiiProxy_AmiFromInstance) validatePutTimeoutsParameters(value *AmiFromInstanceTimeouts) error {
+	return nil
+}
+
+func validateAmiFromInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

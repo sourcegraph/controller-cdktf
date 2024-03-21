@@ -4,6 +4,10 @@ package googleprivatecacertificateauthority
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GooglePrivatecaCertificateAuthority) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePrivatecaCertificateAuthority) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthority) validateGetStringMapAttr
 	return nil
 }
 
+func (g *jsiiProxy_GooglePrivatecaCertificateAuthority) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePrivatecaCertificateAuthority) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivatecaCertificateAuthority) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivatecaCertificateAuthority) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivatecaCertificateAuthority) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthority) validatePutSubordinateCo
 }
 
 func (g *jsiiProxy_GooglePrivatecaCertificateAuthority) validatePutTimeoutsParameters(value *GooglePrivatecaCertificateAuthorityTimeouts) error {
+	return nil
+}
+
+func validateGooglePrivatecaCertificateAuthority_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

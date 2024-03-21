@@ -4,6 +4,10 @@ package transcribevocabulary
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TranscribeVocabulary) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TranscribeVocabulary) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (t *jsiiProxy_TranscribeVocabulary) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (t *jsiiProxy_TranscribeVocabulary) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TranscribeVocabulary) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TranscribeVocabulary) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TranscribeVocabulary) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TranscribeVocabulary) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (t *jsiiProxy_TranscribeVocabulary) validateOverrideLogicalIdParameters(new
 }
 
 func (t *jsiiProxy_TranscribeVocabulary) validatePutTimeoutsParameters(value *TranscribeVocabularyTimeouts) error {
+	return nil
+}
+
+func validateTranscribeVocabulary_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

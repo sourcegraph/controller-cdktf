@@ -4,6 +4,10 @@ package artifactregistryrepositoryiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepositoryIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamBinding) validateGetStringMapAtt
 	return nil
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepositoryIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamBinding) validateOverrideLogical
 }
 
 func (a *jsiiProxy_ArtifactRegistryRepositoryIamBinding) validatePutConditionParameters(value *ArtifactRegistryRepositoryIamBindingCondition) error {
+	return nil
+}
+
+func validateArtifactRegistryRepositoryIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

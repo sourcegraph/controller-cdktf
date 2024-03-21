@@ -4,6 +4,10 @@ package elasticachereplicationgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ElasticacheReplicationGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticacheReplicationGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) validateGetStringMapAttributePar
 	return nil
 }
 
+func (e *jsiiProxy_ElasticacheReplicationGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticacheReplicationGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticacheReplicationGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticacheReplicationGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticacheReplicationGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) validatePutLogDeliveryConfigurat
 }
 
 func (e *jsiiProxy_ElasticacheReplicationGroup) validatePutTimeoutsParameters(value *ElasticacheReplicationGroupTimeouts) error {
+	return nil
+}
+
+func validateElasticacheReplicationGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

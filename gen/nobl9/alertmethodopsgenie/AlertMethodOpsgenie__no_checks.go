@@ -4,6 +4,10 @@ package alertmethodopsgenie
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AlertMethodOpsgenie) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlertMethodOpsgenie) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (a *jsiiProxy_AlertMethodOpsgenie) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (a *jsiiProxy_AlertMethodOpsgenie) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlertMethodOpsgenie) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AlertMethodOpsgenie) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlertMethodOpsgenie) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlertMethodOpsgenie) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlertMethodOpsgenie) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAlertMethodOpsgenie_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

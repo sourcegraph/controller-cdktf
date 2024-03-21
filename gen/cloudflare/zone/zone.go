@@ -84,6 +84,9 @@ type Zone interface {
 	Zone() *string
 	SetZone(val *string)
 	ZoneInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -105,7 +108,22 @@ type Zone interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -657,6 +675,25 @@ func (j *jsiiProxy_Zone)SetZone(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a Zone resource upon running "cdktf plan <stack-name>".
+func Zone_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateZone_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-cloudflare.zone.Zone",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -739,6 +776,17 @@ func Zone_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (z *jsiiProxy_Zone) AddMoveTarget(moveTarget *string) {
+	if err := z.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (z *jsiiProxy_Zone) AddOverride(path *string, value interface{}) {
@@ -896,6 +944,30 @@ func (z *jsiiProxy_Zone) GetStringMapAttribute(terraformAttribute *string) *map[
 	return returns
 }
 
+func (z *jsiiProxy_Zone) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		z,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_Zone) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := z.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (z *jsiiProxy_Zone) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -910,6 +982,39 @@ func (z *jsiiProxy_Zone) InterpolationForAttribute(terraformAttribute *string) c
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_Zone) MoveFromId(id *string) {
+	if err := z.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (z *jsiiProxy_Zone) MoveTo(moveTarget *string, index interface{}) {
+	if err := z.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (z *jsiiProxy_Zone) MoveToId(id *string) {
+	if err := z.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (z *jsiiProxy_Zone) OverrideLogicalId(newLogicalId *string) {

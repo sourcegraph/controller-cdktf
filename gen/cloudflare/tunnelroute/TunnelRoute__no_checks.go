@@ -4,6 +4,10 @@ package tunnelroute
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TunnelRoute) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TunnelRoute) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (t *jsiiProxy_TunnelRoute) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (t *jsiiProxy_TunnelRoute) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TunnelRoute) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_TunnelRoute) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TunnelRoute) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TunnelRoute) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TunnelRoute) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateTunnelRoute_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

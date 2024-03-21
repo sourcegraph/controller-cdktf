@@ -4,6 +4,10 @@ package datacatalogentrygroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataCatalogEntryGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCatalogEntryGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DataCatalogEntryGroup) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (d *jsiiProxy_DataCatalogEntryGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCatalogEntryGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCatalogEntryGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCatalogEntryGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCatalogEntryGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (d *jsiiProxy_DataCatalogEntryGroup) validateOverrideLogicalIdParameters(ne
 }
 
 func (d *jsiiProxy_DataCatalogEntryGroup) validatePutTimeoutsParameters(value *DataCatalogEntryGroupTimeouts) error {
+	return nil
+}
+
+func validateDataCatalogEntryGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

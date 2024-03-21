@@ -4,6 +4,10 @@ package appautologin
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppAutoLogin) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppAutoLogin) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AppAutoLogin) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (a *jsiiProxy_AppAutoLogin) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppAutoLogin) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppAutoLogin) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppAutoLogin) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppAutoLogin) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (a *jsiiProxy_AppAutoLogin) validatePutTimeoutsParameters(value *AppAutoLog
 }
 
 func (a *jsiiProxy_AppAutoLogin) validatePutUsersParameters(value interface{}) error {
+	return nil
+}
+
+func validateAppAutoLogin_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package eventhook
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EventHook) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventHook) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_EventHook) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (e *jsiiProxy_EventHook) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventHook) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventHook) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventHook) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventHook) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (e *jsiiProxy_EventHook) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (e *jsiiProxy_EventHook) validatePutHeadersParameters(value interface{}) error {
+	return nil
+}
+
+func validateEventHook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

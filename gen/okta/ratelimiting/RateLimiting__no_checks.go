@@ -4,6 +4,10 @@ package ratelimiting
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RateLimiting) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RateLimiting) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (r *jsiiProxy_RateLimiting) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (r *jsiiProxy_RateLimiting) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RateLimiting) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_RateLimiting) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RateLimiting) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RateLimiting) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RateLimiting) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRateLimiting_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

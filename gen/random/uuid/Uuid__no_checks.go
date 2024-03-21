@@ -4,6 +4,10 @@ package uuid
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (u *jsiiProxy_Uuid) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_Uuid) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (u *jsiiProxy_Uuid) validateGetStringMapAttributeParameters(terraformAttrib
 	return nil
 }
 
+func (u *jsiiProxy_Uuid) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_Uuid) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (u *jsiiProxy_Uuid) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (u *jsiiProxy_Uuid) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (u *jsiiProxy_Uuid) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_Uuid) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateUuid_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

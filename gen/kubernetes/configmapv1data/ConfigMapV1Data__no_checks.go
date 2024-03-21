@@ -4,6 +4,10 @@ package configmapv1data
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConfigMapV1Data) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigMapV1Data) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ConfigMapV1Data) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (c *jsiiProxy_ConfigMapV1Data) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigMapV1Data) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfigMapV1Data) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfigMapV1Data) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfigMapV1Data) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ConfigMapV1Data) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (c *jsiiProxy_ConfigMapV1Data) validatePutMetadataParameters(value *ConfigMapV1DataMetadata) error {
+	return nil
+}
+
+func validateConfigMapV1Data_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

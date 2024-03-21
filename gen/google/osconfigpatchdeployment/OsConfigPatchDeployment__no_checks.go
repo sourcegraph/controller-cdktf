@@ -4,6 +4,10 @@ package osconfigpatchdeployment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OsConfigPatchDeployment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OsConfigPatchDeployment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (o *jsiiProxy_OsConfigPatchDeployment) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (o *jsiiProxy_OsConfigPatchDeployment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OsConfigPatchDeployment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OsConfigPatchDeployment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OsConfigPatchDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OsConfigPatchDeployment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -73,6 +93,10 @@ func (o *jsiiProxy_OsConfigPatchDeployment) validatePutRolloutParameters(value *
 }
 
 func (o *jsiiProxy_OsConfigPatchDeployment) validatePutTimeoutsParameters(value *OsConfigPatchDeploymentTimeouts) error {
+	return nil
+}
+
+func validateOsConfigPatchDeployment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

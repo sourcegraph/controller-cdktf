@@ -4,6 +4,10 @@ package loggingorganizationsink
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LoggingOrganizationSink) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingOrganizationSink) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (l *jsiiProxy_LoggingOrganizationSink) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (l *jsiiProxy_LoggingOrganizationSink) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingOrganizationSink) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingOrganizationSink) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingOrganizationSink) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingOrganizationSink) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (l *jsiiProxy_LoggingOrganizationSink) validatePutBigqueryOptionsParameters
 }
 
 func (l *jsiiProxy_LoggingOrganizationSink) validatePutExclusionsParameters(value interface{}) error {
+	return nil
+}
+
+func validateLoggingOrganizationSink_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

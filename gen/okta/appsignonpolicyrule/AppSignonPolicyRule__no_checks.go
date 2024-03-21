@@ -4,6 +4,10 @@ package appsignonpolicyrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppSignonPolicyRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSignonPolicyRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AppSignonPolicyRule) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (a *jsiiProxy_AppSignonPolicyRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSignonPolicyRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppSignonPolicyRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppSignonPolicyRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppSignonPolicyRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (a *jsiiProxy_AppSignonPolicyRule) validateOverrideLogicalIdParameters(newL
 }
 
 func (a *jsiiProxy_AppSignonPolicyRule) validatePutPlatformIncludeParameters(value interface{}) error {
+	return nil
+}
+
+func validateAppSignonPolicyRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

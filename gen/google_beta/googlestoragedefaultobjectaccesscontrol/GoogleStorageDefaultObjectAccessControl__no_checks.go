@@ -4,6 +4,10 @@ package googlestoragedefaultobjectaccesscontrol
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleStorageDefaultObjectAccessControl) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageDefaultObjectAccessControl) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleStorageDefaultObjectAccessControl) validateGetStringMap
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageDefaultObjectAccessControl) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageDefaultObjectAccessControl) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageDefaultObjectAccessControl) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageDefaultObjectAccessControl) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageDefaultObjectAccessControl) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleStorageDefaultObjectAccessControl) validateOverrideLogi
 }
 
 func (g *jsiiProxy_GoogleStorageDefaultObjectAccessControl) validatePutTimeoutsParameters(value *GoogleStorageDefaultObjectAccessControlTimeouts) error {
+	return nil
+}
+
+func validateGoogleStorageDefaultObjectAccessControl_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

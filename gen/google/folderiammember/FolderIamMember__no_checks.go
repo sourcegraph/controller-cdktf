@@ -4,6 +4,10 @@ package folderiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FolderIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FolderIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (f *jsiiProxy_FolderIamMember) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (f *jsiiProxy_FolderIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FolderIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FolderIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FolderIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FolderIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (f *jsiiProxy_FolderIamMember) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (f *jsiiProxy_FolderIamMember) validatePutConditionParameters(value *FolderIamMemberCondition) error {
+	return nil
+}
+
+func validateFolderIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

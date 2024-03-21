@@ -4,6 +4,10 @@ package ec2subnetcidrreservation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_Ec2SubnetCidrReservation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2SubnetCidrReservation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (e *jsiiProxy_Ec2SubnetCidrReservation) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (e *jsiiProxy_Ec2SubnetCidrReservation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2SubnetCidrReservation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_Ec2SubnetCidrReservation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2SubnetCidrReservation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2SubnetCidrReservation) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2SubnetCidrReservation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEc2SubnetCidrReservation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

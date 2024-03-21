@@ -4,6 +4,10 @@ package devicefarminstanceprofile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DevicefarmInstanceProfile) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevicefarmInstanceProfile) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (d *jsiiProxy_DevicefarmInstanceProfile) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (d *jsiiProxy_DevicefarmInstanceProfile) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevicefarmInstanceProfile) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (d *jsiiProxy_DevicefarmInstanceProfile) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DevicefarmInstanceProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DevicefarmInstanceProfile) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevicefarmInstanceProfile) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDevicefarmInstanceProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package mqbroker
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MqBroker) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MqBroker) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (m *jsiiProxy_MqBroker) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (m *jsiiProxy_MqBroker) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MqBroker) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MqBroker) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MqBroker) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MqBroker) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -77,6 +97,10 @@ func (m *jsiiProxy_MqBroker) validatePutTimeoutsParameters(value *MqBrokerTimeou
 }
 
 func (m *jsiiProxy_MqBroker) validatePutUserParameters(value interface{}) error {
+	return nil
+}
+
+func validateMqBroker_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

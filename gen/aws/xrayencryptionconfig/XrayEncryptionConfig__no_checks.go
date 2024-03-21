@@ -4,6 +4,10 @@ package xrayencryptionconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (x *jsiiProxy_XrayEncryptionConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (x *jsiiProxy_XrayEncryptionConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (x *jsiiProxy_XrayEncryptionConfig) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (x *jsiiProxy_XrayEncryptionConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (x *jsiiProxy_XrayEncryptionConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (x *jsiiProxy_XrayEncryptionConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (x *jsiiProxy_XrayEncryptionConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (x *jsiiProxy_XrayEncryptionConfig) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (x *jsiiProxy_XrayEncryptionConfig) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateXrayEncryptionConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

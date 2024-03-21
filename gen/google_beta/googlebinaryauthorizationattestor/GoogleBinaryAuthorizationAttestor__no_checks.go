@@ -4,6 +4,10 @@ package googlebinaryauthorizationattestor
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestor) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBinaryAuthorizationAttestor) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestor) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestor) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBinaryAuthorizationAttestor) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestor) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestor) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestor) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestor) validatePutAttestationAuth
 }
 
 func (g *jsiiProxy_GoogleBinaryAuthorizationAttestor) validatePutTimeoutsParameters(value *GoogleBinaryAuthorizationAttestorTimeouts) error {
+	return nil
+}
+
+func validateGoogleBinaryAuthorizationAttestor_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

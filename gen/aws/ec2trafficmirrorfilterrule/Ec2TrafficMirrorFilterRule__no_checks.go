@@ -4,6 +4,10 @@ package ec2trafficmirrorfilterrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_Ec2TrafficMirrorFilterRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2TrafficMirrorFilterRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_Ec2TrafficMirrorFilterRule) validateGetStringMapAttributePara
 	return nil
 }
 
+func (e *jsiiProxy_Ec2TrafficMirrorFilterRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2TrafficMirrorFilterRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2TrafficMirrorFilterRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2TrafficMirrorFilterRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2TrafficMirrorFilterRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (e *jsiiProxy_Ec2TrafficMirrorFilterRule) validatePutDestinationPortRangePa
 }
 
 func (e *jsiiProxy_Ec2TrafficMirrorFilterRule) validatePutSourcePortRangeParameters(value *Ec2TrafficMirrorFilterRuleSourcePortRange) error {
+	return nil
+}
+
+func validateEc2TrafficMirrorFilterRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

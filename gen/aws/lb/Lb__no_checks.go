@@ -4,6 +4,10 @@ package lb
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_Lb) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_Lb) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (l *jsiiProxy_Lb) validateGetStringMapAttributeParameters(terraformAttribut
 	return nil
 }
 
+func (l *jsiiProxy_Lb) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_Lb) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_Lb) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_Lb) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_Lb) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (l *jsiiProxy_Lb) validatePutSubnetMappingParameters(value interface{}) err
 }
 
 func (l *jsiiProxy_Lb) validatePutTimeoutsParameters(value *LbTimeouts) error {
+	return nil
+}
+
+func validateLb_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

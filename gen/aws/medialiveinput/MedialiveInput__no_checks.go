@@ -4,6 +4,10 @@ package medialiveinput
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MedialiveInput) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveInput) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (m *jsiiProxy_MedialiveInput) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (m *jsiiProxy_MedialiveInput) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveInput) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveInput) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveInput) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveInput) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -73,6 +93,10 @@ func (m *jsiiProxy_MedialiveInput) validatePutTimeoutsParameters(value *Medialiv
 }
 
 func (m *jsiiProxy_MedialiveInput) validatePutVpcParameters(value *MedialiveInputVpc) error {
+	return nil
+}
+
+func validateMedialiveInput_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package ec2managedprefixlist
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_Ec2ManagedPrefixList) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2ManagedPrefixList) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_Ec2ManagedPrefixList) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (e *jsiiProxy_Ec2ManagedPrefixList) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2ManagedPrefixList) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2ManagedPrefixList) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2ManagedPrefixList) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2ManagedPrefixList) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (e *jsiiProxy_Ec2ManagedPrefixList) validateOverrideLogicalIdParameters(new
 }
 
 func (e *jsiiProxy_Ec2ManagedPrefixList) validatePutEntryParameters(value interface{}) error {
+	return nil
+}
+
+func validateEc2ManagedPrefixList_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

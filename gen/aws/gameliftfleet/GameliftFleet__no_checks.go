@@ -4,6 +4,10 @@ package gameliftfleet
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GameliftFleet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GameliftFleet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GameliftFleet) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (g *jsiiProxy_GameliftFleet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GameliftFleet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GameliftFleet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GameliftFleet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GameliftFleet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -69,6 +89,10 @@ func (g *jsiiProxy_GameliftFleet) validatePutRuntimeConfigurationParameters(valu
 }
 
 func (g *jsiiProxy_GameliftFleet) validatePutTimeoutsParameters(value *GameliftFleetTimeouts) error {
+	return nil
+}
+
+func validateGameliftFleet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

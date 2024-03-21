@@ -4,6 +4,10 @@ package fsxwindowsfilesystem
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FsxWindowsFileSystem) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxWindowsFileSystem) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (f *jsiiProxy_FsxWindowsFileSystem) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (f *jsiiProxy_FsxWindowsFileSystem) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxWindowsFileSystem) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxWindowsFileSystem) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxWindowsFileSystem) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxWindowsFileSystem) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (f *jsiiProxy_FsxWindowsFileSystem) validatePutSelfManagedActiveDirectoryPa
 }
 
 func (f *jsiiProxy_FsxWindowsFileSystem) validatePutTimeoutsParameters(value *FsxWindowsFileSystemTimeouts) error {
+	return nil
+}
+
+func validateFsxWindowsFileSystem_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

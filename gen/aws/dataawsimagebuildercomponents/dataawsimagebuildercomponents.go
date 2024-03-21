@@ -425,6 +425,25 @@ func (j *jsiiProxy_DataAwsImagebuilderComponents)SetProvider(val cdktf.Terraform
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsImagebuilderComponents resource upon running "cdktf plan <stack-name>".
+func DataAwsImagebuilderComponents_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsImagebuilderComponents_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponents",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

@@ -456,6 +456,25 @@ func (j *jsiiProxy_DataOktaNetworkZone)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
+// Generates CDKTF code for importing a DataOktaNetworkZone resource upon running "cdktf plan <stack-name>".
+func DataOktaNetworkZone_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataOktaNetworkZone_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

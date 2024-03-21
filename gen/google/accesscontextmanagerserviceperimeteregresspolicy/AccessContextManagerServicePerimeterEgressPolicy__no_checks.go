@@ -4,6 +4,10 @@ package accesscontextmanagerserviceperimeteregresspolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicy) validateGet
 	return nil
 }
 
+func (a *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicy) validatePut
 }
 
 func (a *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicy) validatePutTimeoutsParameters(value *AccessContextManagerServicePerimeterEgressPolicyTimeouts) error {
+	return nil
+}
+
+func validateAccessContextManagerServicePerimeterEgressPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

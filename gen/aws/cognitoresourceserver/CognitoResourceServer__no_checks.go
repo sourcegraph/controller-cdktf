@@ -4,6 +4,10 @@ package cognitoresourceserver
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CognitoResourceServer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoResourceServer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CognitoResourceServer) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_CognitoResourceServer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoResourceServer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoResourceServer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoResourceServer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoResourceServer) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_CognitoResourceServer) validateOverrideLogicalIdParameters(ne
 }
 
 func (c *jsiiProxy_CognitoResourceServer) validatePutScopeParameters(value interface{}) error {
+	return nil
+}
+
+func validateCognitoResourceServer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

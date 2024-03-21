@@ -4,6 +4,10 @@ package googlecomputediskresourcepolicyattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) validateGetStringM
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) validateOverrideLo
 }
 
 func (g *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) validatePutTimeoutsParameters(value *GoogleComputeDiskResourcePolicyAttachmentTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeDiskResourcePolicyAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

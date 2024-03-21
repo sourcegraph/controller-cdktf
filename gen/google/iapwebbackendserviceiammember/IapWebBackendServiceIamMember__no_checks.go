@@ -4,6 +4,10 @@ package iapwebbackendserviceiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IapWebBackendServiceIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapWebBackendServiceIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (i *jsiiProxy_IapWebBackendServiceIamMember) validateGetStringMapAttributeP
 	return nil
 }
 
+func (i *jsiiProxy_IapWebBackendServiceIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapWebBackendServiceIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapWebBackendServiceIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapWebBackendServiceIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapWebBackendServiceIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (i *jsiiProxy_IapWebBackendServiceIamMember) validateOverrideLogicalIdParam
 }
 
 func (i *jsiiProxy_IapWebBackendServiceIamMember) validatePutConditionParameters(value *IapWebBackendServiceIamMemberCondition) error {
+	return nil
+}
+
+func validateIapWebBackendServiceIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package googlecloudassetorganizationfeed
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleCloudAssetOrganizationFeed) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudAssetOrganizationFeed) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleCloudAssetOrganizationFeed) validateGetStringMapAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudAssetOrganizationFeed) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudAssetOrganizationFeed) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudAssetOrganizationFeed) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudAssetOrganizationFeed) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudAssetOrganizationFeed) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (g *jsiiProxy_GoogleCloudAssetOrganizationFeed) validatePutFeedOutputConfig
 }
 
 func (g *jsiiProxy_GoogleCloudAssetOrganizationFeed) validatePutTimeoutsParameters(value *GoogleCloudAssetOrganizationFeedTimeouts) error {
+	return nil
+}
+
+func validateGoogleCloudAssetOrganizationFeed_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

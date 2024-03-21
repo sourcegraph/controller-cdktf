@@ -4,6 +4,10 @@ package googlednsresponsepolicyrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDnsResponsePolicyRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDnsResponsePolicyRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleDnsResponsePolicyRule) validateGetStringMapAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDnsResponsePolicyRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDnsResponsePolicyRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDnsResponsePolicyRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDnsResponsePolicyRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDnsResponsePolicyRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleDnsResponsePolicyRule) validatePutLocalDataParameters(v
 }
 
 func (g *jsiiProxy_GoogleDnsResponsePolicyRule) validatePutTimeoutsParameters(value *GoogleDnsResponsePolicyRuleTimeouts) error {
+	return nil
+}
+
+func validateGoogleDnsResponsePolicyRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

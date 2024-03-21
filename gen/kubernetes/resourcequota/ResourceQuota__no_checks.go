@@ -4,6 +4,10 @@ package resourcequota
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_ResourceQuota) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourceQuota) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (r *jsiiProxy_ResourceQuota) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (r *jsiiProxy_ResourceQuota) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourceQuota) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_ResourceQuota) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_ResourceQuota) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_ResourceQuota) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (r *jsiiProxy_ResourceQuota) validatePutSpecParameters(value *ResourceQuota
 }
 
 func (r *jsiiProxy_ResourceQuota) validatePutTimeoutsParameters(value *ResourceQuotaTimeouts) error {
+	return nil
+}
+
+func validateResourceQuota_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

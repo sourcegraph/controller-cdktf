@@ -4,6 +4,10 @@ package elasticacheglobalreplicationgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) validateGetStringMapAttrib
 	return nil
 }
 
+func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) validateOverrideLogicalIdP
 }
 
 func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) validatePutTimeoutsParameters(value *ElasticacheGlobalReplicationGroupTimeouts) error {
+	return nil
+}
+
+func validateElasticacheGlobalReplicationGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

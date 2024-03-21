@@ -4,6 +4,10 @@ package dnsmanagedzoneiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DnsManagedZoneIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsManagedZoneIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DnsManagedZoneIamBinding) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (d *jsiiProxy_DnsManagedZoneIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsManagedZoneIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DnsManagedZoneIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DnsManagedZoneIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DnsManagedZoneIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (d *jsiiProxy_DnsManagedZoneIamBinding) validateOverrideLogicalIdParameters
 }
 
 func (d *jsiiProxy_DnsManagedZoneIamBinding) validatePutConditionParameters(value *DnsManagedZoneIamBindingCondition) error {
+	return nil
+}
+
+func validateDnsManagedZoneIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

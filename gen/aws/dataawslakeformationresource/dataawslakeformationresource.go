@@ -400,6 +400,25 @@ func (j *jsiiProxy_DataAwsLakeformationResource)SetProvider(val cdktf.TerraformP
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsLakeformationResource resource upon running "cdktf plan <stack-name>".
+func DataAwsLakeformationResource_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsLakeformationResource_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

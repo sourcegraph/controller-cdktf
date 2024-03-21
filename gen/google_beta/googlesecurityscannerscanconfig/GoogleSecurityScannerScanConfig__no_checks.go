@@ -4,6 +4,10 @@ package googlesecurityscannerscanconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleSecurityScannerScanConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSecurityScannerScanConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleSecurityScannerScanConfig) validateGetStringMapAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSecurityScannerScanConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSecurityScannerScanConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecurityScannerScanConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecurityScannerScanConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecurityScannerScanConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (g *jsiiProxy_GoogleSecurityScannerScanConfig) validatePutScheduleParameter
 }
 
 func (g *jsiiProxy_GoogleSecurityScannerScanConfig) validatePutTimeoutsParameters(value *GoogleSecurityScannerScanConfigTimeouts) error {
+	return nil
+}
+
+func validateGoogleSecurityScannerScanConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

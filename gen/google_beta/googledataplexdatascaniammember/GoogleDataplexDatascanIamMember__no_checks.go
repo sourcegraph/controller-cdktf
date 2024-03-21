@@ -4,6 +4,10 @@ package googledataplexdatascaniammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataplexDatascanIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexDatascanIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleDataplexDatascanIamMember) validateGetStringMapAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataplexDatascanIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexDatascanIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleDataplexDatascanIamMember) validateOverrideLogicalIdPar
 }
 
 func (g *jsiiProxy_GoogleDataplexDatascanIamMember) validatePutConditionParameters(value *GoogleDataplexDatascanIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleDataplexDatascanIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

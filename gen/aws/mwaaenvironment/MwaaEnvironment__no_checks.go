@@ -4,6 +4,10 @@ package mwaaenvironment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MwaaEnvironment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwaaEnvironment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (m *jsiiProxy_MwaaEnvironment) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (m *jsiiProxy_MwaaEnvironment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwaaEnvironment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MwaaEnvironment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MwaaEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MwaaEnvironment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (m *jsiiProxy_MwaaEnvironment) validatePutNetworkConfigurationParameters(va
 }
 
 func (m *jsiiProxy_MwaaEnvironment) validatePutTimeoutsParameters(value *MwaaEnvironmentTimeouts) error {
+	return nil
+}
+
+func validateMwaaEnvironment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package computeglobalnetworkendpointgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeGlobalNetworkEndpointGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeGlobalNetworkEndpointGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeGlobalNetworkEndpointGroup) validateGetStringMapAttrib
 	return nil
 }
 
+func (c *jsiiProxy_ComputeGlobalNetworkEndpointGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeGlobalNetworkEndpointGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeGlobalNetworkEndpointGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeGlobalNetworkEndpointGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeGlobalNetworkEndpointGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ComputeGlobalNetworkEndpointGroup) validateOverrideLogicalIdP
 }
 
 func (c *jsiiProxy_ComputeGlobalNetworkEndpointGroup) validatePutTimeoutsParameters(value *ComputeGlobalNetworkEndpointGroupTimeouts) error {
+	return nil
+}
+
+func validateComputeGlobalNetworkEndpointGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

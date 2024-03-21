@@ -4,6 +4,10 @@ package googlesourcereporepository
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleSourcerepoRepository) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSourcerepoRepository) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleSourcerepoRepository) validateGetStringMapAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSourcerepoRepository) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSourcerepoRepository) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSourcerepoRepository) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSourcerepoRepository) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSourcerepoRepository) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleSourcerepoRepository) validatePutPubsubConfigsParameter
 }
 
 func (g *jsiiProxy_GoogleSourcerepoRepository) validatePutTimeoutsParameters(value *GoogleSourcerepoRepositoryTimeouts) error {
+	return nil
+}
+
+func validateGoogleSourcerepoRepository_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

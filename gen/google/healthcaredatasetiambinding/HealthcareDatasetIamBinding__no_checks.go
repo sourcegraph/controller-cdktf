@@ -4,6 +4,10 @@ package healthcaredatasetiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HealthcareDatasetIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareDatasetIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (h *jsiiProxy_HealthcareDatasetIamBinding) validateGetStringMapAttributePar
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareDatasetIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareDatasetIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareDatasetIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareDatasetIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareDatasetIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (h *jsiiProxy_HealthcareDatasetIamBinding) validateOverrideLogicalIdParamet
 }
 
 func (h *jsiiProxy_HealthcareDatasetIamBinding) validatePutConditionParameters(value *HealthcareDatasetIamBindingCondition) error {
+	return nil
+}
+
+func validateHealthcareDatasetIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

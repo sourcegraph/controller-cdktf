@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataTfeWorkspaceIds) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func validateDataTfeWorkspaceIds_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataTfeWorkspaceIds_IsConstructParameters(x interface{}) error {
 	return nil
 }

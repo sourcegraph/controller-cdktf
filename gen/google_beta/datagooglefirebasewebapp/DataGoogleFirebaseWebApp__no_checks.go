@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleFirebaseWebApp) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func validateDataGoogleFirebaseWebApp_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleFirebaseWebApp_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -4,6 +4,10 @@ package logginglinkeddataset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LoggingLinkedDataset) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingLinkedDataset) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (l *jsiiProxy_LoggingLinkedDataset) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (l *jsiiProxy_LoggingLinkedDataset) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingLinkedDataset) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingLinkedDataset) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingLinkedDataset) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingLinkedDataset) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (l *jsiiProxy_LoggingLinkedDataset) validatePutBigqueryDatasetParameters(va
 }
 
 func (l *jsiiProxy_LoggingLinkedDataset) validatePutTimeoutsParameters(value *LoggingLinkedDatasetTimeouts) error {
+	return nil
+}
+
+func validateLoggingLinkedDataset_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

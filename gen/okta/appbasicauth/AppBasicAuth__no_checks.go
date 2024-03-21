@@ -4,6 +4,10 @@ package appbasicauth
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppBasicAuth) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppBasicAuth) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AppBasicAuth) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (a *jsiiProxy_AppBasicAuth) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppBasicAuth) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppBasicAuth) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppBasicAuth) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppBasicAuth) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (a *jsiiProxy_AppBasicAuth) validatePutTimeoutsParameters(value *AppBasicAu
 }
 
 func (a *jsiiProxy_AppBasicAuth) validatePutUsersParameters(value interface{}) error {
+	return nil
+}
+
+func validateAppBasicAuth_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

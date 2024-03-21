@@ -4,6 +4,10 @@ package computehttphealthcheck
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeHttpHealthCheck) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeHttpHealthCheck) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeHttpHealthCheck) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (c *jsiiProxy_ComputeHttpHealthCheck) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeHttpHealthCheck) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeHttpHealthCheck) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeHttpHealthCheck) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeHttpHealthCheck) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ComputeHttpHealthCheck) validateOverrideLogicalIdParameters(n
 }
 
 func (c *jsiiProxy_ComputeHttpHealthCheck) validatePutTimeoutsParameters(value *ComputeHttpHealthCheckTimeouts) error {
+	return nil
+}
+
+func validateComputeHttpHealthCheck_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

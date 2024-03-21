@@ -4,6 +4,10 @@ package iotloggingoptions
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IotLoggingOptions) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotLoggingOptions) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (i *jsiiProxy_IotLoggingOptions) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (i *jsiiProxy_IotLoggingOptions) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotLoggingOptions) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IotLoggingOptions) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotLoggingOptions) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotLoggingOptions) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotLoggingOptions) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIotLoggingOptions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package s3bucketownershipcontrols
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_S3BucketOwnershipControls) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketOwnershipControls) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_S3BucketOwnershipControls) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketOwnershipControls) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketOwnershipControls) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketOwnershipControls) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketOwnershipControls) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketOwnershipControls) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_S3BucketOwnershipControls) validateOverrideLogicalIdParameter
 }
 
 func (s *jsiiProxy_S3BucketOwnershipControls) validatePutRuleParameters(value *S3BucketOwnershipControlsRule) error {
+	return nil
+}
+
+func validateS3BucketOwnershipControls_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

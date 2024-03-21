@@ -32,11 +32,23 @@ type GoogleComputeRegionPerInstanceConfigConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// The minimal action to perform on the instance during an update. Default is 'NONE'. Possible values are: REPLACE RESTART REFRESH NONE.
+	// The minimal action to perform on the instance during an update.
+	//
+	// Default is 'NONE'. Possible values are:
+	// * REPLACE
+	// * RESTART
+	// * REFRESH
+	// * NONE
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_per_instance_config#minimal_action GoogleComputeRegionPerInstanceConfig#minimal_action}
 	MinimalAction *string `field:"optional" json:"minimalAction" yaml:"minimalAction"`
-	// The most disruptive action to perform on the instance during an update. Default is 'REPLACE'. Possible values are: REPLACE RESTART REFRESH NONE.
+	// The most disruptive action to perform on the instance during an update.
+	//
+	// Default is 'REPLACE'. Possible values are:
+	// * REPLACE
+	// * RESTART
+	// * REFRESH
+	// * NONE
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_per_instance_config#most_disruptive_allowed_action GoogleComputeRegionPerInstanceConfig#most_disruptive_allowed_action}
 	MostDisruptiveAllowedAction *string `field:"optional" json:"mostDisruptiveAllowedAction" yaml:"mostDisruptiveAllowedAction"`

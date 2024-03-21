@@ -4,6 +4,10 @@ package googleosconfigpatchdeployment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleOsConfigPatchDeployment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOsConfigPatchDeployment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeployment) validateGetStringMapAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleOsConfigPatchDeployment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOsConfigPatchDeployment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleOsConfigPatchDeployment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleOsConfigPatchDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleOsConfigPatchDeployment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -73,6 +93,10 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeployment) validatePutRolloutParameters(v
 }
 
 func (g *jsiiProxy_GoogleOsConfigPatchDeployment) validatePutTimeoutsParameters(value *GoogleOsConfigPatchDeploymentTimeouts) error {
+	return nil
+}
+
+func validateGoogleOsConfigPatchDeployment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

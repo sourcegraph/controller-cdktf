@@ -4,6 +4,10 @@ package bigqueryanalyticshublisting
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigqueryAnalyticsHubListing) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryAnalyticsHubListing) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) validateGetStringMapAttributePar
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryAnalyticsHubListing) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryAnalyticsHubListing) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryAnalyticsHubListing) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryAnalyticsHubListing) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryAnalyticsHubListing) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) validatePutPublisherParameters(v
 }
 
 func (b *jsiiProxy_BigqueryAnalyticsHubListing) validatePutTimeoutsParameters(value *BigqueryAnalyticsHubListingTimeouts) error {
+	return nil
+}
+
+func validateBigqueryAnalyticsHubListing_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package configorganizationmanagedrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConfigOrganizationManagedRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigOrganizationManagedRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ConfigOrganizationManagedRule) validateGetStringMapAttributeP
 	return nil
 }
 
+func (c *jsiiProxy_ConfigOrganizationManagedRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigOrganizationManagedRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfigOrganizationManagedRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfigOrganizationManagedRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfigOrganizationManagedRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ConfigOrganizationManagedRule) validateOverrideLogicalIdParam
 }
 
 func (c *jsiiProxy_ConfigOrganizationManagedRule) validatePutTimeoutsParameters(value *ConfigOrganizationManagedRuleTimeouts) error {
+	return nil
+}
+
+func validateConfigOrganizationManagedRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

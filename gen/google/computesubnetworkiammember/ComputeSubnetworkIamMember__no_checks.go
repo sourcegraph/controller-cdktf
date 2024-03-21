@@ -4,6 +4,10 @@ package computesubnetworkiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeSubnetworkIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSubnetworkIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeSubnetworkIamMember) validateGetStringMapAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_ComputeSubnetworkIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSubnetworkIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeSubnetworkIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeSubnetworkIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeSubnetworkIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ComputeSubnetworkIamMember) validateOverrideLogicalIdParamete
 }
 
 func (c *jsiiProxy_ComputeSubnetworkIamMember) validatePutConditionParameters(value *ComputeSubnetworkIamMemberCondition) error {
+	return nil
+}
+
+func validateComputeSubnetworkIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

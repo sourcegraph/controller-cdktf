@@ -4,6 +4,10 @@ package volumeattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VolumeAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VolumeAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (v *jsiiProxy_VolumeAttachment) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (v *jsiiProxy_VolumeAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VolumeAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VolumeAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VolumeAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VolumeAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (v *jsiiProxy_VolumeAttachment) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (v *jsiiProxy_VolumeAttachment) validatePutTimeoutsParameters(value *VolumeAttachmentTimeouts) error {
+	return nil
+}
+
+func validateVolumeAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

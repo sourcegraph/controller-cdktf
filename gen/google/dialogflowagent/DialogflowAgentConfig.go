@@ -39,9 +39,9 @@ type DialogflowAgentConfig struct {
 	// If not specified, V2 API is assumed. Clients are free to query
 	// different service endpoints for different API versions. However, bots connectors and webhook calls will follow
 	// the specified API version.
-	// API_VERSION_V1: Legacy V1 API.
-	// API_VERSION_V2: V2 API.
-	// API_VERSION_V2_BETA_1: V2beta1 API. Possible values: ["API_VERSION_V1", "API_VERSION_V2", "API_VERSION_V2_BETA_1"]
+	// * API_VERSION_V1: Legacy V1 API.
+	// * API_VERSION_V2: V2 API.
+	// * API_VERSION_V2_BETA_1: V2beta1 API. Possible values: ["API_VERSION_V1", "API_VERSION_V2", "API_VERSION_V2_BETA_1"]
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dialogflow_agent#api_version DialogflowAgent#api_version}
 	ApiVersion *string `field:"optional" json:"apiVersion" yaml:"apiVersion"`
@@ -77,9 +77,9 @@ type DialogflowAgentConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Determines how intents are detected from user queries.
 	//
-	// MATCH_MODE_HYBRID: Best for agents with a small number of examples in intents and/or wide use of templates
+	// * MATCH_MODE_HYBRID: Best for agents with a small number of examples in intents and/or wide use of templates
 	// syntax and composite entities.
-	// MATCH_MODE_ML_ONLY: Can be used for agents with a large number of examples in intents, especially the ones
+	// * MATCH_MODE_ML_ONLY: Can be used for agents with a large number of examples in intents, especially the ones
 	// using.
 	MatchMode *string `field:"optional" json:"matchMode" yaml:"matchMode"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dialogflow_agent#project DialogflowAgent#project}.
@@ -91,9 +91,9 @@ type DialogflowAgentConfig struct {
 	// The agent tier.
 	//
 	// If not specified, TIER_STANDARD is assumed.
-	// TIER_STANDARD: Standard tier.
-	// TIER_ENTERPRISE: Enterprise tier (Essentials).
-	// TIER_ENTERPRISE_PLUS: Enterprise tier (Plus).
+	// * TIER_STANDARD: Standard tier.
+	// * TIER_ENTERPRISE: Enterprise tier (Essentials).
+	// * TIER_ENTERPRISE_PLUS: Enterprise tier (Plus).
 	// NOTE: Due to consistency issues, the provider will not read this field from the API. Drift is possible between
 	// the Terraform state and Dialogflow if the agent tier is changed outside of Terraform. Possible values: ["TIER_STANDARD", "TIER_ENTERPRISE", "TIER_ENTERPRISE_PLUS"]
 	//

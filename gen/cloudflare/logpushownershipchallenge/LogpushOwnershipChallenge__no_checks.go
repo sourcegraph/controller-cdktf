@@ -4,6 +4,10 @@ package logpushownershipchallenge
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogpushOwnershipChallenge) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogpushOwnershipChallenge) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (l *jsiiProxy_LogpushOwnershipChallenge) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogpushOwnershipChallenge) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LogpushOwnershipChallenge) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogpushOwnershipChallenge) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogpushOwnershipChallenge) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogpushOwnershipChallenge) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLogpushOwnershipChallenge_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

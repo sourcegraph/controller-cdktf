@@ -4,6 +4,10 @@ package configconfigurationrecorder
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConfigConfigurationRecorder) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigConfigurationRecorder) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ConfigConfigurationRecorder) validateGetStringMapAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_ConfigConfigurationRecorder) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigConfigurationRecorder) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfigConfigurationRecorder) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfigConfigurationRecorder) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfigConfigurationRecorder) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ConfigConfigurationRecorder) validateOverrideLogicalIdParamet
 }
 
 func (c *jsiiProxy_ConfigConfigurationRecorder) validatePutRecordingGroupParameters(value *ConfigConfigurationRecorderRecordingGroup) error {
+	return nil
+}
+
+func validateConfigConfigurationRecorder_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

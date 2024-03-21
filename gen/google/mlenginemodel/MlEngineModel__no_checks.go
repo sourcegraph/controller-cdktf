@@ -4,6 +4,10 @@ package mlenginemodel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MlEngineModel) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MlEngineModel) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (m *jsiiProxy_MlEngineModel) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (m *jsiiProxy_MlEngineModel) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MlEngineModel) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MlEngineModel) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MlEngineModel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MlEngineModel) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (m *jsiiProxy_MlEngineModel) validatePutDefaultVersionParameters(value *MlE
 }
 
 func (m *jsiiProxy_MlEngineModel) validatePutTimeoutsParameters(value *MlEngineModelTimeouts) error {
+	return nil
+}
+
+func validateMlEngineModel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

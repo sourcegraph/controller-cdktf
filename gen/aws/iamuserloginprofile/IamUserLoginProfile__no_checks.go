@@ -4,6 +4,10 @@ package iamuserloginprofile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IamUserLoginProfile) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamUserLoginProfile) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (i *jsiiProxy_IamUserLoginProfile) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (i *jsiiProxy_IamUserLoginProfile) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamUserLoginProfile) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IamUserLoginProfile) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamUserLoginProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamUserLoginProfile) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamUserLoginProfile) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIamUserLoginProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

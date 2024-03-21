@@ -2,12 +2,12 @@ package googleosconfigospolicyassignment
 
 
 type GoogleOsConfigOsPolicyAssignmentOsPolicies struct {
-	// The id of the OS policy with the following restrictions: Must contain only lowercase letters, numbers, and hyphens.
+	// The id of the OS policy with the following restrictions: * Must contain only lowercase letters, numbers, and hyphens.
 	//
-	// Must start with a letter.
-	// Must be between 1-63 characters.
-	// Must end with a number or a letter.
-	// Must be unique within the assignment.
+	// * Must start with a letter.
+	// * Must be between 1-63 characters.
+	// * Must end with a number or a letter.
+	// * Must be unique within the assignment.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_os_config_os_policy_assignment#id GoogleOsConfigOsPolicyAssignment#id}
 	//

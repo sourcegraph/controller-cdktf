@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleRuntimeconfigConfig) validateOverrideLogicalIdParam
 	return nil
 }
 
+func validateDataGoogleRuntimeconfigConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleRuntimeconfigConfig_IsConstructParameters(x interface{}) error {
 	return nil
 }

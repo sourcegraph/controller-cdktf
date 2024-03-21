@@ -4,6 +4,10 @@ package storagehmackey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageHmacKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageHmacKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_StorageHmacKey) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (s *jsiiProxy_StorageHmacKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageHmacKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageHmacKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageHmacKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageHmacKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_StorageHmacKey) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (s *jsiiProxy_StorageHmacKey) validatePutTimeoutsParameters(value *StorageHmacKeyTimeouts) error {
+	return nil
+}
+
+func validateStorageHmacKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

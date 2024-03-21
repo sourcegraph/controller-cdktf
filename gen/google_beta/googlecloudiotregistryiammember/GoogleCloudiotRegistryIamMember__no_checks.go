@@ -4,6 +4,10 @@ package googlecloudiotregistryiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleCloudiotRegistryIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudiotRegistryIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleCloudiotRegistryIamMember) validateGetStringMapAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudiotRegistryIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudiotRegistryIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudiotRegistryIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudiotRegistryIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudiotRegistryIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleCloudiotRegistryIamMember) validateOverrideLogicalIdPar
 }
 
 func (g *jsiiProxy_GoogleCloudiotRegistryIamMember) validatePutConditionParameters(value *GoogleCloudiotRegistryIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleCloudiotRegistryIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

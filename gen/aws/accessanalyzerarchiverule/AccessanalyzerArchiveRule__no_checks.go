@@ -4,6 +4,10 @@ package accessanalyzerarchiverule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AccessanalyzerArchiveRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessanalyzerArchiveRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AccessanalyzerArchiveRule) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (a *jsiiProxy_AccessanalyzerArchiveRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessanalyzerArchiveRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessanalyzerArchiveRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessanalyzerArchiveRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessanalyzerArchiveRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (a *jsiiProxy_AccessanalyzerArchiveRule) validateOverrideLogicalIdParameter
 }
 
 func (a *jsiiProxy_AccessanalyzerArchiveRule) validatePutFilterParameters(value interface{}) error {
+	return nil
+}
+
+func validateAccessanalyzerArchiveRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

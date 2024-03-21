@@ -4,6 +4,10 @@ package googledialogflowentitytype
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDialogflowEntityType) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowEntityType) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleDialogflowEntityType) validateGetStringMapAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowEntityType) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowEntityType) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowEntityType) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowEntityType) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowEntityType) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleDialogflowEntityType) validatePutEntitiesParameters(val
 }
 
 func (g *jsiiProxy_GoogleDialogflowEntityType) validatePutTimeoutsParameters(value *GoogleDialogflowEntityTypeTimeouts) error {
+	return nil
+}
+
+func validateGoogleDialogflowEntityType_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package validatingwebhookconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_ValidatingWebhookConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_ValidatingWebhookConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (v *jsiiProxy_ValidatingWebhookConfiguration) validateGetStringMapAttribute
 	return nil
 }
 
+func (v *jsiiProxy_ValidatingWebhookConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_ValidatingWebhookConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_ValidatingWebhookConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_ValidatingWebhookConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_ValidatingWebhookConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (v *jsiiProxy_ValidatingWebhookConfiguration) validatePutMetadataParameters
 }
 
 func (v *jsiiProxy_ValidatingWebhookConfiguration) validatePutWebhookParameters(value interface{}) error {
+	return nil
+}
+
+func validateValidatingWebhookConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

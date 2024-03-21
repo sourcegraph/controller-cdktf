@@ -4,6 +4,10 @@ package mfapolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MfaPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MfaPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (m *jsiiProxy_MfaPolicy) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (m *jsiiProxy_MfaPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MfaPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (m *jsiiProxy_MfaPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MfaPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MfaPolicy) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MfaPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateMfaPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

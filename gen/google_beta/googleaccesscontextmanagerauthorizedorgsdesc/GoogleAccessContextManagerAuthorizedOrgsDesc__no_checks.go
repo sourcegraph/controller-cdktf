@@ -4,6 +4,10 @@ package googleaccesscontextmanagerauthorizedorgsdesc
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleAccessContextManagerAuthorizedOrgsDesc) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAccessContextManagerAuthorizedOrgsDesc) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleAccessContextManagerAuthorizedOrgsDesc) validateGetStri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAccessContextManagerAuthorizedOrgsDesc) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAccessContextManagerAuthorizedOrgsDesc) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerAuthorizedOrgsDesc) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerAuthorizedOrgsDesc) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerAuthorizedOrgsDesc) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleAccessContextManagerAuthorizedOrgsDesc) validateOverrid
 }
 
 func (g *jsiiProxy_GoogleAccessContextManagerAuthorizedOrgsDesc) validatePutTimeoutsParameters(value *GoogleAccessContextManagerAuthorizedOrgsDescTimeouts) error {
+	return nil
+}
+
+func validateGoogleAccessContextManagerAuthorizedOrgsDesc_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

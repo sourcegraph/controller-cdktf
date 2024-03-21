@@ -4,6 +4,10 @@ package vpcendpointpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpcEndpointPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEndpointPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (v *jsiiProxy_VpcEndpointPolicy) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (v *jsiiProxy_VpcEndpointPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEndpointPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcEndpointPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcEndpointPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcEndpointPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (v *jsiiProxy_VpcEndpointPolicy) validateOverrideLogicalIdParameters(newLog
 }
 
 func (v *jsiiProxy_VpcEndpointPolicy) validatePutTimeoutsParameters(value *VpcEndpointPolicyTimeouts) error {
+	return nil
+}
+
+func validateVpcEndpointPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package filestoreinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FilestoreInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FilestoreInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (f *jsiiProxy_FilestoreInstance) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (f *jsiiProxy_FilestoreInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FilestoreInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FilestoreInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FilestoreInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FilestoreInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (f *jsiiProxy_FilestoreInstance) validatePutNetworksParameters(value interf
 }
 
 func (f *jsiiProxy_FilestoreInstance) validatePutTimeoutsParameters(value *FilestoreInstanceTimeouts) error {
+	return nil
+}
+
+func validateFilestoreInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package ec2availabilityzonegroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_Ec2AvailabilityZoneGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2AvailabilityZoneGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (e *jsiiProxy_Ec2AvailabilityZoneGroup) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (e *jsiiProxy_Ec2AvailabilityZoneGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2AvailabilityZoneGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_Ec2AvailabilityZoneGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2AvailabilityZoneGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2AvailabilityZoneGroup) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2AvailabilityZoneGroup) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEc2AvailabilityZoneGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

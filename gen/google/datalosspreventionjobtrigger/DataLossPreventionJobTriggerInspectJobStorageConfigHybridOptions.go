@@ -17,8 +17,8 @@ type DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptions struct {
 	// No more than 10 labels can be associated with a given finding.
 	//
 	// Examples:
-	// '"environment" : "production"'
-	// '"pipeline" : "etl"'
+	// * '"environment" : "production"'
+	// * '"pipeline" : "etl"'
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/data_loss_prevention_job_trigger#labels DataLossPreventionJobTrigger#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`

@@ -4,6 +4,10 @@ package eventarcchannel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EventarcChannel) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventarcChannel) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_EventarcChannel) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (e *jsiiProxy_EventarcChannel) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventarcChannel) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventarcChannel) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventarcChannel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventarcChannel) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (e *jsiiProxy_EventarcChannel) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (e *jsiiProxy_EventarcChannel) validatePutTimeoutsParameters(value *EventarcChannelTimeouts) error {
+	return nil
+}
+
+func validateEventarcChannel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

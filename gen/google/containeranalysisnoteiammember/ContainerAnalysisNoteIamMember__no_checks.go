@@ -4,6 +4,10 @@ package containeranalysisnoteiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ContainerAnalysisNoteIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAnalysisNoteIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamMember) validateGetStringMapAttribute
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAnalysisNoteIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAnalysisNoteIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAnalysisNoteIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAnalysisNoteIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAnalysisNoteIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamMember) validateOverrideLogicalIdPara
 }
 
 func (c *jsiiProxy_ContainerAnalysisNoteIamMember) validatePutConditionParameters(value *ContainerAnalysisNoteIamMemberCondition) error {
+	return nil
+}
+
+func validateContainerAnalysisNoteIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

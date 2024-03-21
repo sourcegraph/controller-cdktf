@@ -4,6 +4,10 @@ package mqconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MqConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MqConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (m *jsiiProxy_MqConfiguration) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (m *jsiiProxy_MqConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MqConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (m *jsiiProxy_MqConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MqConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MqConfiguration) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MqConfiguration) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateMqConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

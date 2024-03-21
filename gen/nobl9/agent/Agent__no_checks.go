@@ -4,6 +4,10 @@ package agent
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_Agent) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_Agent) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_Agent) validateGetStringMapAttributeParameters(terraformAttri
 	return nil
 }
 
+func (a *jsiiProxy_Agent) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_Agent) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_Agent) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_Agent) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_Agent) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -149,6 +169,10 @@ func (a *jsiiProxy_Agent) validatePutSumologicConfigParameters(value *AgentSumol
 }
 
 func (a *jsiiProxy_Agent) validatePutThousandeyesConfigParameters(value *AgentThousandeyesConfig) error {
+	return nil
+}
+
+func validateAgent_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package spannerinstanceiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpannerInstanceIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpannerInstanceIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SpannerInstanceIamBinding) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_SpannerInstanceIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpannerInstanceIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpannerInstanceIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpannerInstanceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpannerInstanceIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_SpannerInstanceIamBinding) validateOverrideLogicalIdParameter
 }
 
 func (s *jsiiProxy_SpannerInstanceIamBinding) validatePutConditionParameters(value *SpannerInstanceIamBindingCondition) error {
+	return nil
+}
+
+func validateSpannerInstanceIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

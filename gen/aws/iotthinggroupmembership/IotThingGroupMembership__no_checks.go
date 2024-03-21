@@ -4,6 +4,10 @@ package iotthinggroupmembership
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IotThingGroupMembership) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotThingGroupMembership) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (i *jsiiProxy_IotThingGroupMembership) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (i *jsiiProxy_IotThingGroupMembership) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotThingGroupMembership) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IotThingGroupMembership) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotThingGroupMembership) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotThingGroupMembership) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotThingGroupMembership) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIotThingGroupMembership_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

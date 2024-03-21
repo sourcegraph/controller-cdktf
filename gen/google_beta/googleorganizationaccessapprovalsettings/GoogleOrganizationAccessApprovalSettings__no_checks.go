@@ -4,6 +4,10 @@ package googleorganizationaccessapprovalsettings
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validateGetStringMa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validatePutEnrolled
 }
 
 func (g *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validatePutTimeoutsParameters(value *GoogleOrganizationAccessApprovalSettingsTimeouts) error {
+	return nil
+}
+
+func validateGoogleOrganizationAccessApprovalSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

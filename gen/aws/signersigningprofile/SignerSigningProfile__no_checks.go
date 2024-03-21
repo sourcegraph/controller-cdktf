@@ -4,6 +4,10 @@ package signersigningprofile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SignerSigningProfile) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SignerSigningProfile) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SignerSigningProfile) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_SignerSigningProfile) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SignerSigningProfile) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SignerSigningProfile) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SignerSigningProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SignerSigningProfile) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_SignerSigningProfile) validateOverrideLogicalIdParameters(new
 }
 
 func (s *jsiiProxy_SignerSigningProfile) validatePutSignatureValidityPeriodParameters(value *SignerSigningProfileSignatureValidityPeriod) error {
+	return nil
+}
+
+func validateSignerSigningProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

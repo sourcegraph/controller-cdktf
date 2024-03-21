@@ -4,6 +4,10 @@ package networkmanagervpcattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerVpcAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetworkmanagerVpcAttachment) validateGetStringMapAttributePar
 	return nil
 }
 
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerVpcAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (n *jsiiProxy_NetworkmanagerVpcAttachment) validatePutOptionsParameters(val
 }
 
 func (n *jsiiProxy_NetworkmanagerVpcAttachment) validatePutTimeoutsParameters(value *NetworkmanagerVpcAttachmentTimeouts) error {
+	return nil
+}
+
+func validateNetworkmanagerVpcAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

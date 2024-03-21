@@ -67,6 +67,9 @@ type TeamMember interface {
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -88,7 +91,22 @@ type TeamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -462,6 +480,25 @@ func (j *jsiiProxy_TeamMember)SetUsername(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a TeamMember resource upon running "cdktf plan <stack-name>".
+func TeamMember_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateTeamMember_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-tfe.teamMember.TeamMember",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -544,6 +581,17 @@ func TeamMember_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (t *jsiiProxy_TeamMember) AddMoveTarget(moveTarget *string) {
+	if err := t.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (t *jsiiProxy_TeamMember) AddOverride(path *string, value interface{}) {
@@ -701,6 +749,30 @@ func (t *jsiiProxy_TeamMember) GetStringMapAttribute(terraformAttribute *string)
 	return returns
 }
 
+func (t *jsiiProxy_TeamMember) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		t,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (t *jsiiProxy_TeamMember) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := t.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (t *jsiiProxy_TeamMember) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -715,6 +787,39 @@ func (t *jsiiProxy_TeamMember) InterpolationForAttribute(terraformAttribute *str
 	)
 
 	return returns
+}
+
+func (t *jsiiProxy_TeamMember) MoveFromId(id *string) {
+	if err := t.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (t *jsiiProxy_TeamMember) MoveTo(moveTarget *string, index interface{}) {
+	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (t *jsiiProxy_TeamMember) MoveToId(id *string) {
+	if err := t.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (t *jsiiProxy_TeamMember) OverrideLogicalId(newLogicalId *string) {

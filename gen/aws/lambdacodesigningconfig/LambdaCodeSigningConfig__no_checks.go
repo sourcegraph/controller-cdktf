@@ -4,6 +4,10 @@ package lambdacodesigningconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LambdaCodeSigningConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaCodeSigningConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (l *jsiiProxy_LambdaCodeSigningConfig) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (l *jsiiProxy_LambdaCodeSigningConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaCodeSigningConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LambdaCodeSigningConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LambdaCodeSigningConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LambdaCodeSigningConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (l *jsiiProxy_LambdaCodeSigningConfig) validatePutAllowedPublishersParamete
 }
 
 func (l *jsiiProxy_LambdaCodeSigningConfig) validatePutPoliciesParameters(value *LambdaCodeSigningConfigPolicies) error {
+	return nil
+}
+
+func validateLambdaCodeSigningConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

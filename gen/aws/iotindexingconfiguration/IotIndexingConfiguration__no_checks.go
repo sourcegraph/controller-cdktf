@@ -4,6 +4,10 @@ package iotindexingconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IotIndexingConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotIndexingConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (i *jsiiProxy_IotIndexingConfiguration) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (i *jsiiProxy_IotIndexingConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotIndexingConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotIndexingConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotIndexingConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotIndexingConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (i *jsiiProxy_IotIndexingConfiguration) validatePutThingGroupIndexingConfig
 }
 
 func (i *jsiiProxy_IotIndexingConfiguration) validatePutThingIndexingConfigurationParameters(value *IotIndexingConfigurationThingIndexingConfiguration) error {
+	return nil
+}
+
+func validateIotIndexingConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

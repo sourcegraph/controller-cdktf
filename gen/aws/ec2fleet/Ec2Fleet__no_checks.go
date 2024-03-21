@@ -4,6 +4,10 @@ package ec2fleet
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_Ec2Fleet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2Fleet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_Ec2Fleet) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (e *jsiiProxy_Ec2Fleet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2Fleet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2Fleet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2Fleet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2Fleet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -69,6 +89,10 @@ func (e *jsiiProxy_Ec2Fleet) validatePutTargetCapacitySpecificationParameters(va
 }
 
 func (e *jsiiProxy_Ec2Fleet) validatePutTimeoutsParameters(value *Ec2FleetTimeouts) error {
+	return nil
+}
+
+func validateEc2Fleet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package docdbclusterinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DocdbClusterInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DocdbClusterInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DocdbClusterInstance) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (d *jsiiProxy_DocdbClusterInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DocdbClusterInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DocdbClusterInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DocdbClusterInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DocdbClusterInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (d *jsiiProxy_DocdbClusterInstance) validateOverrideLogicalIdParameters(new
 }
 
 func (d *jsiiProxy_DocdbClusterInstance) validatePutTimeoutsParameters(value *DocdbClusterInstanceTimeouts) error {
+	return nil
+}
+
+func validateDocdbClusterInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

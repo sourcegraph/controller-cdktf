@@ -4,6 +4,10 @@ package osloginsshpublickey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OsLoginSshPublicKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OsLoginSshPublicKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (o *jsiiProxy_OsLoginSshPublicKey) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (o *jsiiProxy_OsLoginSshPublicKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OsLoginSshPublicKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OsLoginSshPublicKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OsLoginSshPublicKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OsLoginSshPublicKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (o *jsiiProxy_OsLoginSshPublicKey) validateOverrideLogicalIdParameters(newL
 }
 
 func (o *jsiiProxy_OsLoginSshPublicKey) validatePutTimeoutsParameters(value *OsLoginSshPublicKeyTimeouts) error {
+	return nil
+}
+
+func validateOsLoginSshPublicKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

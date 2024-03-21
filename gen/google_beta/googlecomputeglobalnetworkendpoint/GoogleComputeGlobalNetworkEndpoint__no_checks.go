@@ -4,6 +4,10 @@ package googlecomputeglobalnetworkendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateGetStringMapAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validateOverrideLogicalId
 }
 
 func (g *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) validatePutTimeoutsParameters(value *GoogleComputeGlobalNetworkEndpointTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeGlobalNetworkEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

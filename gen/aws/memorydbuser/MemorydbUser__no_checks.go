@@ -4,6 +4,10 @@ package memorydbuser
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MemorydbUser) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MemorydbUser) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (m *jsiiProxy_MemorydbUser) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (m *jsiiProxy_MemorydbUser) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MemorydbUser) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemorydbUser) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemorydbUser) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemorydbUser) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (m *jsiiProxy_MemorydbUser) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (m *jsiiProxy_MemorydbUser) validatePutAuthenticationModeParameters(value *MemorydbUserAuthenticationMode) error {
+	return nil
+}
+
+func validateMemorydbUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

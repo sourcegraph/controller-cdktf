@@ -4,6 +4,10 @@ package certificatemanagercertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CertificateManagerCertificate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CertificateManagerCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CertificateManagerCertificate) validateGetStringMapAttributeP
 	return nil
 }
 
+func (c *jsiiProxy_CertificateManagerCertificate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CertificateManagerCertificate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CertificateManagerCertificate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CertificateManagerCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CertificateManagerCertificate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (c *jsiiProxy_CertificateManagerCertificate) validatePutSelfManagedParamete
 }
 
 func (c *jsiiProxy_CertificateManagerCertificate) validatePutTimeoutsParameters(value *CertificateManagerCertificateTimeouts) error {
+	return nil
+}
+
+func validateCertificateManagerCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

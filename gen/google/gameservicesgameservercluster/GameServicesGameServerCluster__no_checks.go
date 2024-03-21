@@ -4,6 +4,10 @@ package gameservicesgameservercluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GameServicesGameServerCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GameServicesGameServerCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GameServicesGameServerCluster) validateGetStringMapAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GameServicesGameServerCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GameServicesGameServerCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GameServicesGameServerCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GameServicesGameServerCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GameServicesGameServerCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GameServicesGameServerCluster) validatePutConnectionInfoParam
 }
 
 func (g *jsiiProxy_GameServicesGameServerCluster) validatePutTimeoutsParameters(value *GameServicesGameServerClusterTimeouts) error {
+	return nil
+}
+
+func validateGameServicesGameServerCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

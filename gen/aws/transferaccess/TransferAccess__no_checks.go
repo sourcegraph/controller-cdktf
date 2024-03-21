@@ -4,6 +4,10 @@ package transferaccess
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TransferAccess) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransferAccess) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (t *jsiiProxy_TransferAccess) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (t *jsiiProxy_TransferAccess) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransferAccess) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TransferAccess) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TransferAccess) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TransferAccess) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (t *jsiiProxy_TransferAccess) validatePutHomeDirectoryMappingsParameters(va
 }
 
 func (t *jsiiProxy_TransferAccess) validatePutPosixProfileParameters(value *TransferAccessPosixProfile) error {
+	return nil
+}
+
+func validateTransferAccess_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

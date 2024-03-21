@@ -4,6 +4,10 @@ package dbproxy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DbProxy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbProxy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DbProxy) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (d *jsiiProxy_DbProxy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbProxy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DbProxy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DbProxy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DbProxy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (d *jsiiProxy_DbProxy) validatePutAuthParameters(value interface{}) error {
 }
 
 func (d *jsiiProxy_DbProxy) validatePutTimeoutsParameters(value *DbProxyTimeouts) error {
+	return nil
+}
+
+func validateDbProxy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

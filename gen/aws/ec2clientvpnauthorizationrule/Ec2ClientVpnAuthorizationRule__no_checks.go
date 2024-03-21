@@ -4,6 +4,10 @@ package ec2clientvpnauthorizationrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateGetStringMapAttributeP
 	return nil
 }
 
+func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateOverrideLogicalIdParam
 }
 
 func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) validatePutTimeoutsParameters(value *Ec2ClientVpnAuthorizationRuleTimeouts) error {
+	return nil
+}
+
+func validateEc2ClientVpnAuthorizationRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

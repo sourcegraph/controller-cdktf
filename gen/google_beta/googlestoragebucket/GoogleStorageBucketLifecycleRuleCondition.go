@@ -18,7 +18,7 @@ type GoogleStorageBucketLifecycleRuleCondition struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_storage_bucket#days_since_custom_time GoogleStorageBucket#days_since_custom_time}
 	DaysSinceCustomTime *float64 `field:"optional" json:"daysSinceCustomTime" yaml:"daysSinceCustomTime"`
-	// Number of days elapsed since the noncurrent timestamp of an object. This 						condition is relevant only for versioned objects.
+	// Number of days elapsed since the noncurrent timestamp of an object. This 										condition is relevant only for versioned objects.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_storage_bucket#days_since_noncurrent_time GoogleStorageBucket#days_since_noncurrent_time}
 	DaysSinceNoncurrentTime *float64 `field:"optional" json:"daysSinceNoncurrentTime" yaml:"daysSinceNoncurrentTime"`

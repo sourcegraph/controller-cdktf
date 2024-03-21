@@ -4,6 +4,10 @@ package datasynclocationfsxlustrefilesystem
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatasyncLocationFsxLustreFileSystem) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncLocationFsxLustreFileSystem) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (d *jsiiProxy_DatasyncLocationFsxLustreFileSystem) validateGetStringMapAttr
 	return nil
 }
 
+func (d *jsiiProxy_DatasyncLocationFsxLustreFileSystem) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncLocationFsxLustreFileSystem) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (d *jsiiProxy_DatasyncLocationFsxLustreFileSystem) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatasyncLocationFsxLustreFileSystem) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatasyncLocationFsxLustreFileSystem) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncLocationFsxLustreFileSystem) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDatasyncLocationFsxLustreFileSystem_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

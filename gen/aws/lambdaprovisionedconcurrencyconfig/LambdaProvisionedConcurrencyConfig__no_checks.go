@@ -4,6 +4,10 @@ package lambdaprovisionedconcurrencyconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateGetStringMapAttri
 	return nil
 }
 
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateOverrideLogicalId
 }
 
 func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validatePutTimeoutsParameters(value *LambdaProvisionedConcurrencyConfigTimeouts) error {
+	return nil
+}
+
+func validateLambdaProvisionedConcurrencyConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

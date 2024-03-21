@@ -4,6 +4,10 @@ package googlekmscryptokeyversion
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleKmsCryptoKeyVersion) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleKmsCryptoKeyVersion) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleKmsCryptoKeyVersion) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleKmsCryptoKeyVersion) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleKmsCryptoKeyVersion) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleKmsCryptoKeyVersion) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleKmsCryptoKeyVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleKmsCryptoKeyVersion) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleKmsCryptoKeyVersion) validateOverrideLogicalIdParameter
 }
 
 func (g *jsiiProxy_GoogleKmsCryptoKeyVersion) validatePutTimeoutsParameters(value *GoogleKmsCryptoKeyVersionTimeouts) error {
+	return nil
+}
+
+func validateGoogleKmsCryptoKeyVersion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

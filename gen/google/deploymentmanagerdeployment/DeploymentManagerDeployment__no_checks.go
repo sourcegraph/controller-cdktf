@@ -4,6 +4,10 @@ package deploymentmanagerdeployment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DeploymentManagerDeployment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DeploymentManagerDeployment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DeploymentManagerDeployment) validateGetStringMapAttributePar
 	return nil
 }
 
+func (d *jsiiProxy_DeploymentManagerDeployment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DeploymentManagerDeployment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DeploymentManagerDeployment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DeploymentManagerDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DeploymentManagerDeployment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (d *jsiiProxy_DeploymentManagerDeployment) validatePutTargetParameters(valu
 }
 
 func (d *jsiiProxy_DeploymentManagerDeployment) validatePutTimeoutsParameters(value *DeploymentManagerDeploymentTimeouts) error {
+	return nil
+}
+
+func validateDeploymentManagerDeployment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

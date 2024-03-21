@@ -4,6 +4,10 @@ package s3bucketserversideencryptionconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateGetString
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateOverrideL
 }
 
 func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validatePutRuleParameters(value interface{}) error {
+	return nil
+}
+
+func validateS3BucketServerSideEncryptionConfigurationA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

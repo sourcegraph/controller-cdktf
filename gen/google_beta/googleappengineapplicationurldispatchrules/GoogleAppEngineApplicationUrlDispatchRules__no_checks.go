@@ -4,6 +4,10 @@ package googleappengineapplicationurldispatchrules
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRules) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRules) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRules) validateGetString
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRules) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRules) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRules) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRules) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRules) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRules) validatePutDispat
 }
 
 func (g *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRules) validatePutTimeoutsParameters(value *GoogleAppEngineApplicationUrlDispatchRulesTimeouts) error {
+	return nil
+}
+
+func validateGoogleAppEngineApplicationUrlDispatchRules_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

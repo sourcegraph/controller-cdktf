@@ -4,6 +4,10 @@ package macie2classificationjob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_Macie2ClassificationJob) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2ClassificationJob) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (m *jsiiProxy_Macie2ClassificationJob) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (m *jsiiProxy_Macie2ClassificationJob) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2ClassificationJob) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_Macie2ClassificationJob) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_Macie2ClassificationJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_Macie2ClassificationJob) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (m *jsiiProxy_Macie2ClassificationJob) validatePutS3JobDefinitionParameters
 }
 
 func (m *jsiiProxy_Macie2ClassificationJob) validatePutScheduleFrequencyParameters(value *Macie2ClassificationJobScheduleFrequency) error {
+	return nil
+}
+
+func validateMacie2ClassificationJob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

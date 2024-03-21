@@ -4,6 +4,10 @@ package datacatalogtagtemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataCatalogTagTemplate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCatalogTagTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DataCatalogTagTemplate) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (d *jsiiProxy_DataCatalogTagTemplate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCatalogTagTemplate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCatalogTagTemplate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCatalogTagTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCatalogTagTemplate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (d *jsiiProxy_DataCatalogTagTemplate) validatePutFieldsParameters(value int
 }
 
 func (d *jsiiProxy_DataCatalogTagTemplate) validatePutTimeoutsParameters(value *DataCatalogTagTemplateTimeouts) error {
+	return nil
+}
+
+func validateDataCatalogTagTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

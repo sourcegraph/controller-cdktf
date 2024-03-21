@@ -4,6 +4,10 @@ package ebsvolume
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EbsVolume) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EbsVolume) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_EbsVolume) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (e *jsiiProxy_EbsVolume) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EbsVolume) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EbsVolume) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EbsVolume) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EbsVolume) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (e *jsiiProxy_EbsVolume) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (e *jsiiProxy_EbsVolume) validatePutTimeoutsParameters(value *EbsVolumeTimeouts) error {
+	return nil
+}
+
+func validateEbsVolume_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

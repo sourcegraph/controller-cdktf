@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleCloudiotRegistryIamPolicy) validateOverrideLogicalI
 	return nil
 }
 
+func validateDataGoogleCloudiotRegistryIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleCloudiotRegistryIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

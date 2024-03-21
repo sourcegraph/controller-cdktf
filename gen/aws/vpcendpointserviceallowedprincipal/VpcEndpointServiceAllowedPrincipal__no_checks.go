@@ -4,6 +4,10 @@ package vpcendpointserviceallowedprincipal
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpcEndpointServiceAllowedPrincipal) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEndpointServiceAllowedPrincipal) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (v *jsiiProxy_VpcEndpointServiceAllowedPrincipal) validateGetStringMapAttri
 	return nil
 }
 
+func (v *jsiiProxy_VpcEndpointServiceAllowedPrincipal) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEndpointServiceAllowedPrincipal) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (v *jsiiProxy_VpcEndpointServiceAllowedPrincipal) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcEndpointServiceAllowedPrincipal) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcEndpointServiceAllowedPrincipal) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEndpointServiceAllowedPrincipal) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateVpcEndpointServiceAllowedPrincipal_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

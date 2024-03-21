@@ -4,6 +4,10 @@ package chimevoiceconnectorgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ChimeVoiceConnectorGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChimeVoiceConnectorGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ChimeVoiceConnectorGroup) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (c *jsiiProxy_ChimeVoiceConnectorGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChimeVoiceConnectorGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ChimeVoiceConnectorGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ChimeVoiceConnectorGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ChimeVoiceConnectorGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ChimeVoiceConnectorGroup) validateOverrideLogicalIdParameters
 }
 
 func (c *jsiiProxy_ChimeVoiceConnectorGroup) validatePutConnectorParameters(value interface{}) error {
+	return nil
+}
+
+func validateChimeVoiceConnectorGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

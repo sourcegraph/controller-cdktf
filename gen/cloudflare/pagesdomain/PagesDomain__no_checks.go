@@ -4,6 +4,10 @@ package pagesdomain
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PagesDomain) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PagesDomain) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (p *jsiiProxy_PagesDomain) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (p *jsiiProxy_PagesDomain) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PagesDomain) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (p *jsiiProxy_PagesDomain) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PagesDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PagesDomain) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PagesDomain) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validatePagesDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

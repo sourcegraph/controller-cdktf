@@ -4,6 +4,10 @@ package threatinsightsettings
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_ThreatInsightSettings) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_ThreatInsightSettings) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (t *jsiiProxy_ThreatInsightSettings) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (t *jsiiProxy_ThreatInsightSettings) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_ThreatInsightSettings) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_ThreatInsightSettings) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_ThreatInsightSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_ThreatInsightSettings) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_ThreatInsightSettings) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateThreatInsightSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

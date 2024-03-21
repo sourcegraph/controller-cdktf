@@ -4,6 +4,10 @@ package servicecatalogportfolioshare
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServicecatalogPortfolioShare) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicecatalogPortfolioShare) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_ServicecatalogPortfolioShare) validateGetStringMapAttributePa
 	return nil
 }
 
+func (s *jsiiProxy_ServicecatalogPortfolioShare) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicecatalogPortfolioShare) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServicecatalogPortfolioShare) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServicecatalogPortfolioShare) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServicecatalogPortfolioShare) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_ServicecatalogPortfolioShare) validateOverrideLogicalIdParame
 }
 
 func (s *jsiiProxy_ServicecatalogPortfolioShare) validatePutTimeoutsParameters(value *ServicecatalogPortfolioShareTimeouts) error {
+	return nil
+}
+
+func validateServicecatalogPortfolioShare_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

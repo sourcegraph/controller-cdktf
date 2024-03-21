@@ -4,6 +4,10 @@ package identityplatformtenantinboundsamlconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateGetStringMap
 	return nil
 }
 
+func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validatePutSpConfigP
 }
 
 func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validatePutTimeoutsParameters(value *IdentityPlatformTenantInboundSamlConfigTimeouts) error {
+	return nil
+}
+
+func validateIdentityPlatformTenantInboundSamlConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -490,6 +490,25 @@ func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint)SetProvider(val cdktf.
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsS3ControlMultiRegionAccessPoint resource upon running "cdktf plan <stack-name>".
+func DataAwsS3ControlMultiRegionAccessPoint_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsS3ControlMultiRegionAccessPoint_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPoint",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

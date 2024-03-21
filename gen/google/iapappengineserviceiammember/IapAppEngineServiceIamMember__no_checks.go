@@ -4,6 +4,10 @@ package iapappengineserviceiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IapAppEngineServiceIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapAppEngineServiceIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (i *jsiiProxy_IapAppEngineServiceIamMember) validateGetStringMapAttributePa
 	return nil
 }
 
+func (i *jsiiProxy_IapAppEngineServiceIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapAppEngineServiceIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapAppEngineServiceIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapAppEngineServiceIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapAppEngineServiceIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (i *jsiiProxy_IapAppEngineServiceIamMember) validateOverrideLogicalIdParame
 }
 
 func (i *jsiiProxy_IapAppEngineServiceIamMember) validatePutConditionParameters(value *IapAppEngineServiceIamMemberCondition) error {
+	return nil
+}
+
+func validateIapAppEngineServiceIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

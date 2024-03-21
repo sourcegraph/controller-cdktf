@@ -67,6 +67,9 @@ type Queue interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -88,7 +91,22 @@ type Queue interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -462,6 +480,25 @@ func (j *jsiiProxy_Queue)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a Queue resource upon running "cdktf plan <stack-name>".
+func Queue_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateQueue_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-cloudflare.queue.Queue",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -544,6 +581,17 @@ func Queue_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (q *jsiiProxy_Queue) AddMoveTarget(moveTarget *string) {
+	if err := q.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (q *jsiiProxy_Queue) AddOverride(path *string, value interface{}) {
@@ -701,6 +749,30 @@ func (q *jsiiProxy_Queue) GetStringMapAttribute(terraformAttribute *string) *map
 	return returns
 }
 
+func (q *jsiiProxy_Queue) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		q,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (q *jsiiProxy_Queue) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := q.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (q *jsiiProxy_Queue) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := q.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -715,6 +787,39 @@ func (q *jsiiProxy_Queue) InterpolationForAttribute(terraformAttribute *string) 
 	)
 
 	return returns
+}
+
+func (q *jsiiProxy_Queue) MoveFromId(id *string) {
+	if err := q.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (q *jsiiProxy_Queue) MoveTo(moveTarget *string, index interface{}) {
+	if err := q.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (q *jsiiProxy_Queue) MoveToId(id *string) {
+	if err := q.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (q *jsiiProxy_Queue) OverrideLogicalId(newLogicalId *string) {

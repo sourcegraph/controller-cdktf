@@ -4,6 +4,10 @@ package alertmethodmsteams
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AlertMethodMsteams) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlertMethodMsteams) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (a *jsiiProxy_AlertMethodMsteams) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (a *jsiiProxy_AlertMethodMsteams) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlertMethodMsteams) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AlertMethodMsteams) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlertMethodMsteams) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlertMethodMsteams) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlertMethodMsteams) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAlertMethodMsteams_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

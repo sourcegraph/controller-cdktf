@@ -4,6 +4,10 @@ package poddisruptionbudget
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PodDisruptionBudget) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PodDisruptionBudget) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (p *jsiiProxy_PodDisruptionBudget) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (p *jsiiProxy_PodDisruptionBudget) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PodDisruptionBudget) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PodDisruptionBudget) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PodDisruptionBudget) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PodDisruptionBudget) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (p *jsiiProxy_PodDisruptionBudget) validatePutMetadataParameters(value *Pod
 }
 
 func (p *jsiiProxy_PodDisruptionBudget) validatePutSpecParameters(value *PodDisruptionBudgetSpec) error {
+	return nil
+}
+
+func validatePodDisruptionBudget_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

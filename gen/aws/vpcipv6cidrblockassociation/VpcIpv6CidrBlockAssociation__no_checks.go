@@ -4,6 +4,10 @@ package vpcipv6cidrblockassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) validateGetStringMapAttributePar
 	return nil
 }
 
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) validateOverrideLogicalIdParamet
 }
 
 func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) validatePutTimeoutsParameters(value *VpcIpv6CidrBlockAssociationTimeouts) error {
+	return nil
+}
+
+func validateVpcIpv6CidrBlockAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

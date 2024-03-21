@@ -25,7 +25,7 @@ type GoogleHealthcareDicomStoreConfig struct {
 	Dataset *string `field:"required" json:"dataset" yaml:"dataset"`
 	// The resource name for the DicomStore.
 	//
-	// * Changing this property may recreate the Dicom store (removing all data) **
+	// ** Changing this property may recreate the Dicom store (removing all data) **
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_dicom_store#name GoogleHealthcareDicomStore#name}
 	Name *string `field:"required" json:"name" yaml:"name"`

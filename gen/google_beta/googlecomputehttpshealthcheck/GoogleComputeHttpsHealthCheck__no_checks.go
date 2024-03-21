@@ -4,6 +4,10 @@ package googlecomputehttpshealthcheck
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeHttpsHealthCheck) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeHttpsHealthCheck) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleComputeHttpsHealthCheck) validateGetStringMapAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeHttpsHealthCheck) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeHttpsHealthCheck) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeHttpsHealthCheck) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeHttpsHealthCheck) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeHttpsHealthCheck) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleComputeHttpsHealthCheck) validateOverrideLogicalIdParam
 }
 
 func (g *jsiiProxy_GoogleComputeHttpsHealthCheck) validatePutTimeoutsParameters(value *GoogleComputeHttpsHealthCheckTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeHttpsHealthCheck_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

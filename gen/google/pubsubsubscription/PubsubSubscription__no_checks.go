@@ -4,6 +4,10 @@ package pubsubsubscription
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PubsubSubscription) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubSubscription) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (p *jsiiProxy_PubsubSubscription) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (p *jsiiProxy_PubsubSubscription) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubSubscription) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubSubscription) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubSubscription) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -77,6 +97,10 @@ func (p *jsiiProxy_PubsubSubscription) validatePutRetryPolicyParameters(value *P
 }
 
 func (p *jsiiProxy_PubsubSubscription) validatePutTimeoutsParameters(value *PubsubSubscriptionTimeouts) error {
+	return nil
+}
+
+func validatePubsubSubscription_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

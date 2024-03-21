@@ -4,6 +4,10 @@ package athenadatabase
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AthenaDatabase) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AthenaDatabase) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AthenaDatabase) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (a *jsiiProxy_AthenaDatabase) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AthenaDatabase) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AthenaDatabase) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AthenaDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AthenaDatabase) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (a *jsiiProxy_AthenaDatabase) validatePutAclConfigurationParameters(value *
 }
 
 func (a *jsiiProxy_AthenaDatabase) validatePutEncryptionConfigurationParameters(value *AthenaDatabaseEncryptionConfiguration) error {
+	return nil
+}
+
+func validateAthenaDatabase_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

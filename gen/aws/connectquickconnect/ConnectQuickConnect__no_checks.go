@@ -4,6 +4,10 @@ package connectquickconnect
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConnectQuickConnect) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectQuickConnect) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ConnectQuickConnect) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (c *jsiiProxy_ConnectQuickConnect) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectQuickConnect) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectQuickConnect) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectQuickConnect) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectQuickConnect) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ConnectQuickConnect) validateOverrideLogicalIdParameters(newL
 }
 
 func (c *jsiiProxy_ConnectQuickConnect) validatePutQuickConnectConfigParameters(value *ConnectQuickConnectQuickConnectConfig) error {
+	return nil
+}
+
+func validateConnectQuickConnect_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

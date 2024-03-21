@@ -4,6 +4,10 @@ package googleaccesscontextmanageraccesslevelcondition
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateGetSt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validatePutDe
 }
 
 func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validatePutTimeoutsParameters(value *GoogleAccessContextManagerAccessLevelConditionTimeouts) error {
+	return nil
+}
+
+func validateGoogleAccessContextManagerAccessLevelCondition_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

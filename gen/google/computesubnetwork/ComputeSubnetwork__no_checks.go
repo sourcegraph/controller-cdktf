@@ -4,6 +4,10 @@ package computesubnetwork
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeSubnetwork) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSubnetwork) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeSubnetwork) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (c *jsiiProxy_ComputeSubnetwork) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSubnetwork) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeSubnetwork) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeSubnetwork) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeSubnetwork) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (c *jsiiProxy_ComputeSubnetwork) validatePutSecondaryIpRangeParameters(valu
 }
 
 func (c *jsiiProxy_ComputeSubnetwork) validatePutTimeoutsParameters(value *ComputeSubnetworkTimeouts) error {
+	return nil
+}
+
+func validateComputeSubnetwork_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

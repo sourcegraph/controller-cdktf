@@ -23,12 +23,12 @@ type GoogleOsConfigGuestPoliciesConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_os_config_guest_policies#assignment GoogleOsConfigGuestPolicies#assignment}
 	Assignment *GoogleOsConfigGuestPoliciesAssignment `field:"required" json:"assignment" yaml:"assignment"`
-	// The logical name of the guest policy in the project with the following restrictions: Must contain only lowercase letters, numbers, and hyphens.
+	// The logical name of the guest policy in the project with the following restrictions: * Must contain only lowercase letters, numbers, and hyphens.
 	//
-	// Must start with a letter.
-	// Must be between 1-63 characters.
-	// Must end with a number or a letter.
-	// Must be unique within the project.
+	// * Must start with a letter.
+	// * Must be between 1-63 characters.
+	// * Must end with a number or a letter.
+	// * Must be unique within the project.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_os_config_guest_policies#guest_policy_id GoogleOsConfigGuestPolicies#guest_policy_id}
 	GuestPolicyId *string `field:"required" json:"guestPolicyId" yaml:"guestPolicyId"`

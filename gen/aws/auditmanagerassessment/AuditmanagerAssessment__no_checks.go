@@ -4,6 +4,10 @@ package auditmanagerassessment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AuditmanagerAssessment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuditmanagerAssessment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AuditmanagerAssessment) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (a *jsiiProxy_AuditmanagerAssessment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuditmanagerAssessment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AuditmanagerAssessment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AuditmanagerAssessment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AuditmanagerAssessment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (a *jsiiProxy_AuditmanagerAssessment) validatePutRolesParameters(value inte
 }
 
 func (a *jsiiProxy_AuditmanagerAssessment) validatePutScopeParameters(value interface{}) error {
+	return nil
+}
+
+func validateAuditmanagerAssessment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

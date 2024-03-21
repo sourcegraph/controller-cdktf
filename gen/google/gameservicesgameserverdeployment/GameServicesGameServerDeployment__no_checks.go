@@ -4,6 +4,10 @@ package gameservicesgameserverdeployment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GameServicesGameServerDeployment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GameServicesGameServerDeployment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GameServicesGameServerDeployment) validateGetStringMapAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GameServicesGameServerDeployment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GameServicesGameServerDeployment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GameServicesGameServerDeployment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GameServicesGameServerDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GameServicesGameServerDeployment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GameServicesGameServerDeployment) validateOverrideLogicalIdPa
 }
 
 func (g *jsiiProxy_GameServicesGameServerDeployment) validatePutTimeoutsParameters(value *GameServicesGameServerDeploymentTimeouts) error {
+	return nil
+}
+
+func validateGameServicesGameServerDeployment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

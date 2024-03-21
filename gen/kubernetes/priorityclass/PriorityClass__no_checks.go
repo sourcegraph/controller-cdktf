@@ -4,6 +4,10 @@ package priorityclass
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PriorityClass) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PriorityClass) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (p *jsiiProxy_PriorityClass) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (p *jsiiProxy_PriorityClass) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PriorityClass) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PriorityClass) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PriorityClass) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PriorityClass) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (p *jsiiProxy_PriorityClass) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (p *jsiiProxy_PriorityClass) validatePutMetadataParameters(value *PriorityClassMetadata) error {
+	return nil
+}
+
+func validatePriorityClass_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

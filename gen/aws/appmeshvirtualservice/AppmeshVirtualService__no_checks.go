@@ -4,6 +4,10 @@ package appmeshvirtualservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppmeshVirtualService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppmeshVirtualService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AppmeshVirtualService) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (a *jsiiProxy_AppmeshVirtualService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppmeshVirtualService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppmeshVirtualService) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppmeshVirtualService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppmeshVirtualService) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (a *jsiiProxy_AppmeshVirtualService) validateOverrideLogicalIdParameters(ne
 }
 
 func (a *jsiiProxy_AppmeshVirtualService) validatePutSpecParameters(value *AppmeshVirtualServiceSpec) error {
+	return nil
+}
+
+func validateAppmeshVirtualService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

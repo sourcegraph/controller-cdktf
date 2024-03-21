@@ -4,6 +4,10 @@ package notebookslocation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NotebooksLocation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotebooksLocation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NotebooksLocation) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (n *jsiiProxy_NotebooksLocation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotebooksLocation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotebooksLocation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotebooksLocation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotebooksLocation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NotebooksLocation) validateOverrideLogicalIdParameters(newLog
 }
 
 func (n *jsiiProxy_NotebooksLocation) validatePutTimeoutsParameters(value *NotebooksLocationTimeouts) error {
+	return nil
+}
+
+func validateNotebooksLocation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

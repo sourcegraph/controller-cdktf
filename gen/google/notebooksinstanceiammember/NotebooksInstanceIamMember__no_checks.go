@@ -4,6 +4,10 @@ package notebooksinstanceiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NotebooksInstanceIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotebooksInstanceIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NotebooksInstanceIamMember) validateGetStringMapAttributePara
 	return nil
 }
 
+func (n *jsiiProxy_NotebooksInstanceIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotebooksInstanceIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotebooksInstanceIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotebooksInstanceIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotebooksInstanceIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NotebooksInstanceIamMember) validateOverrideLogicalIdParamete
 }
 
 func (n *jsiiProxy_NotebooksInstanceIamMember) validatePutConditionParameters(value *NotebooksInstanceIamMemberCondition) error {
+	return nil
+}
+
+func validateNotebooksInstanceIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package s3bucketinventory
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_S3BucketInventory) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketInventory) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_S3BucketInventory) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketInventory) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketInventory) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketInventory) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketInventory) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketInventory) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (s *jsiiProxy_S3BucketInventory) validatePutFilterParameters(value *S3Bucke
 }
 
 func (s *jsiiProxy_S3BucketInventory) validatePutScheduleParameters(value *S3BucketInventorySchedule) error {
+	return nil
+}
+
+func validateS3BucketInventory_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

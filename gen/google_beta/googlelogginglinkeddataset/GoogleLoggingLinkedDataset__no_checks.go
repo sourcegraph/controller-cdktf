@@ -4,6 +4,10 @@ package googlelogginglinkeddataset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleLoggingLinkedDataset) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingLinkedDataset) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleLoggingLinkedDataset) validateGetStringMapAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingLinkedDataset) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingLinkedDataset) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingLinkedDataset) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingLinkedDataset) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingLinkedDataset) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleLoggingLinkedDataset) validatePutBigqueryDatasetParamet
 }
 
 func (g *jsiiProxy_GoogleLoggingLinkedDataset) validatePutTimeoutsParameters(value *GoogleLoggingLinkedDatasetTimeouts) error {
+	return nil
+}
+
+func validateGoogleLoggingLinkedDataset_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

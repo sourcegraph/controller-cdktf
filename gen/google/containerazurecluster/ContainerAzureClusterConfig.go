@@ -49,9 +49,11 @@ type ContainerAzureClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_azure_cluster#networking ContainerAzureCluster#networking}
 	Networking *ContainerAzureClusterNetworking `field:"required" json:"networking" yaml:"networking"`
-	// The ARM ID of the resource group where the cluster resources are deployed. For example: `/subscriptions/*\/resourceGroups/*`.
+	// The ARM ID of the resource group where the cluster resources are deployed. For example: `/subscriptions/* /resourceGroups/*`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_azure_cluster#resource_group_id ContainerAzureCluster#resource_group_id}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	ResourceGroupId *string `field:"required" json:"resourceGroupId" yaml:"resourceGroupId"`
 	// Optional.
 	//

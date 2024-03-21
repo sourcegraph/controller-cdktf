@@ -4,6 +4,10 @@ package healthcaredicomstoreiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HealthcareDicomStoreIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareDicomStoreIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (h *jsiiProxy_HealthcareDicomStoreIamBinding) validateGetStringMapAttribute
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareDicomStoreIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareDicomStoreIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareDicomStoreIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareDicomStoreIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareDicomStoreIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (h *jsiiProxy_HealthcareDicomStoreIamBinding) validateOverrideLogicalIdPara
 }
 
 func (h *jsiiProxy_HealthcareDicomStoreIamBinding) validatePutConditionParameters(value *HealthcareDicomStoreIamBindingCondition) error {
+	return nil
+}
+
+func validateHealthcareDicomStoreIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package byoipprefix
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_ByoIpPrefix) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_ByoIpPrefix) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (b *jsiiProxy_ByoIpPrefix) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (b *jsiiProxy_ByoIpPrefix) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_ByoIpPrefix) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (b *jsiiProxy_ByoIpPrefix) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_ByoIpPrefix) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_ByoIpPrefix) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_ByoIpPrefix) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateByoIpPrefix_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

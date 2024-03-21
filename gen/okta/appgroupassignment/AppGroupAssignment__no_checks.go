@@ -4,6 +4,10 @@ package appgroupassignment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppGroupAssignment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppGroupAssignment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AppGroupAssignment) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (a *jsiiProxy_AppGroupAssignment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppGroupAssignment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppGroupAssignment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppGroupAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppGroupAssignment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (a *jsiiProxy_AppGroupAssignment) validateOverrideLogicalIdParameters(newLo
 }
 
 func (a *jsiiProxy_AppGroupAssignment) validatePutTimeoutsParameters(value *AppGroupAssignmentTimeouts) error {
+	return nil
+}
+
+func validateAppGroupAssignment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

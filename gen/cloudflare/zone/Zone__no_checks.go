@@ -4,6 +4,10 @@ package zone
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (z *jsiiProxy_Zone) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (z *jsiiProxy_Zone) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (z *jsiiProxy_Zone) validateGetStringMapAttributeParameters(terraformAttrib
 	return nil
 }
 
+func (z *jsiiProxy_Zone) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (z *jsiiProxy_Zone) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (z *jsiiProxy_Zone) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (z *jsiiProxy_Zone) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (z *jsiiProxy_Zone) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (z *jsiiProxy_Zone) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateZone_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

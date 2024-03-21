@@ -4,6 +4,10 @@ package sqlsourcerepresentationinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SqlSourceRepresentationInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlSourceRepresentationInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SqlSourceRepresentationInstance) validateGetStringMapAttribut
 	return nil
 }
 
+func (s *jsiiProxy_SqlSourceRepresentationInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlSourceRepresentationInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlSourceRepresentationInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlSourceRepresentationInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlSourceRepresentationInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_SqlSourceRepresentationInstance) validateOverrideLogicalIdPar
 }
 
 func (s *jsiiProxy_SqlSourceRepresentationInstance) validatePutTimeoutsParameters(value *SqlSourceRepresentationInstanceTimeouts) error {
+	return nil
+}
+
+func validateSqlSourceRepresentationInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

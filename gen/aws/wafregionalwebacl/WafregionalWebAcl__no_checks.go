@@ -4,6 +4,10 @@ package wafregionalwebacl
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WafregionalWebAcl) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalWebAcl) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (w *jsiiProxy_WafregionalWebAcl) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (w *jsiiProxy_WafregionalWebAcl) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalWebAcl) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafregionalWebAcl) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafregionalWebAcl) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafregionalWebAcl) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (w *jsiiProxy_WafregionalWebAcl) validatePutLoggingConfigurationParameters(
 }
 
 func (w *jsiiProxy_WafregionalWebAcl) validatePutRuleParameters(value interface{}) error {
+	return nil
+}
+
+func validateWafregionalWebAcl_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

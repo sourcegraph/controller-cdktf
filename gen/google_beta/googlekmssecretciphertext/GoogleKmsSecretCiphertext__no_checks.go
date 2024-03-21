@@ -4,6 +4,10 @@ package googlekmssecretciphertext
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleKmsSecretCiphertext) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleKmsSecretCiphertext) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleKmsSecretCiphertext) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleKmsSecretCiphertext) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleKmsSecretCiphertext) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleKmsSecretCiphertext) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleKmsSecretCiphertext) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) validateOverrideLogicalIdParameter
 }
 
 func (g *jsiiProxy_GoogleKmsSecretCiphertext) validatePutTimeoutsParameters(value *GoogleKmsSecretCiphertextTimeouts) error {
+	return nil
+}
+
+func validateGoogleKmsSecretCiphertext_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

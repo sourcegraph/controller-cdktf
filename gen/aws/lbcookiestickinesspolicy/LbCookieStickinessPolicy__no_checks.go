@@ -4,6 +4,10 @@ package lbcookiestickinesspolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LbCookieStickinessPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbCookieStickinessPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (l *jsiiProxy_LbCookieStickinessPolicy) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (l *jsiiProxy_LbCookieStickinessPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbCookieStickinessPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LbCookieStickinessPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbCookieStickinessPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbCookieStickinessPolicy) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbCookieStickinessPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLbCookieStickinessPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

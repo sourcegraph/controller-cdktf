@@ -4,6 +4,10 @@ package appstreamstack
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppstreamStack) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppstreamStack) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AppstreamStack) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (a *jsiiProxy_AppstreamStack) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppstreamStack) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppstreamStack) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppstreamStack) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppstreamStack) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (a *jsiiProxy_AppstreamStack) validatePutStorageConnectorsParameters(value 
 }
 
 func (a *jsiiProxy_AppstreamStack) validatePutUserSettingsParameters(value interface{}) error {
+	return nil
+}
+
+func validateAppstreamStack_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

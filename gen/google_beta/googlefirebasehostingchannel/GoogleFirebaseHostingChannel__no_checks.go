@@ -4,6 +4,10 @@ package googlefirebasehostingchannel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleFirebaseHostingChannel) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseHostingChannel) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) validateGetStringMapAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseHostingChannel) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseHostingChannel) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseHostingChannel) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseHostingChannel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseHostingChannel) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannel) validateOverrideLogicalIdParame
 }
 
 func (g *jsiiProxy_GoogleFirebaseHostingChannel) validatePutTimeoutsParameters(value *GoogleFirebaseHostingChannelTimeouts) error {
+	return nil
+}
+
+func validateGoogleFirebaseHostingChannel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

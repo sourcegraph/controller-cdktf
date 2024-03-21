@@ -4,6 +4,10 @@ package totaltls
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TotalTls) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TotalTls) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (t *jsiiProxy_TotalTls) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (t *jsiiProxy_TotalTls) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TotalTls) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_TotalTls) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TotalTls) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TotalTls) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TotalTls) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateTotalTls_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

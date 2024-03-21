@@ -4,6 +4,10 @@ package horizontalpodautoscaler
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HorizontalPodAutoscaler) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HorizontalPodAutoscaler) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (h *jsiiProxy_HorizontalPodAutoscaler) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (h *jsiiProxy_HorizontalPodAutoscaler) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HorizontalPodAutoscaler) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HorizontalPodAutoscaler) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HorizontalPodAutoscaler) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_HorizontalPodAutoscaler) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (h *jsiiProxy_HorizontalPodAutoscaler) validatePutMetadataParameters(value 
 }
 
 func (h *jsiiProxy_HorizontalPodAutoscaler) validatePutSpecParameters(value *HorizontalPodAutoscalerSpec) error {
+	return nil
+}
+
+func validateHorizontalPodAutoscaler_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

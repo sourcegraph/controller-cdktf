@@ -4,6 +4,10 @@ package appstreamdirectoryconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppstreamDirectoryConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppstreamDirectoryConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AppstreamDirectoryConfig) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (a *jsiiProxy_AppstreamDirectoryConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppstreamDirectoryConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppstreamDirectoryConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppstreamDirectoryConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppstreamDirectoryConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (a *jsiiProxy_AppstreamDirectoryConfig) validateOverrideLogicalIdParameters
 }
 
 func (a *jsiiProxy_AppstreamDirectoryConfig) validatePutServiceAccountCredentialsParameters(value *AppstreamDirectoryConfigServiceAccountCredentials) error {
+	return nil
+}
+
+func validateAppstreamDirectoryConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

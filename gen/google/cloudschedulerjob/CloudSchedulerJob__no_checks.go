@@ -4,6 +4,10 @@ package cloudschedulerjob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudSchedulerJob) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudSchedulerJob) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CloudSchedulerJob) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (c *jsiiProxy_CloudSchedulerJob) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudSchedulerJob) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudSchedulerJob) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudSchedulerJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudSchedulerJob) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -69,6 +89,10 @@ func (c *jsiiProxy_CloudSchedulerJob) validatePutRetryConfigParameters(value *Cl
 }
 
 func (c *jsiiProxy_CloudSchedulerJob) validatePutTimeoutsParameters(value *CloudSchedulerJobTimeouts) error {
+	return nil
+}
+
+func validateCloudSchedulerJob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

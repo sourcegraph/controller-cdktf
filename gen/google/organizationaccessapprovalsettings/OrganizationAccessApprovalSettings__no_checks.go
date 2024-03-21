@@ -4,6 +4,10 @@ package organizationaccessapprovalsettings
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OrganizationAccessApprovalSettings) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationAccessApprovalSettings) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (o *jsiiProxy_OrganizationAccessApprovalSettings) validateGetStringMapAttri
 	return nil
 }
 
+func (o *jsiiProxy_OrganizationAccessApprovalSettings) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationAccessApprovalSettings) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationAccessApprovalSettings) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationAccessApprovalSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationAccessApprovalSettings) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (o *jsiiProxy_OrganizationAccessApprovalSettings) validatePutEnrolledServic
 }
 
 func (o *jsiiProxy_OrganizationAccessApprovalSettings) validatePutTimeoutsParameters(value *OrganizationAccessApprovalSettingsTimeouts) error {
+	return nil
+}
+
+func validateOrganizationAccessApprovalSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

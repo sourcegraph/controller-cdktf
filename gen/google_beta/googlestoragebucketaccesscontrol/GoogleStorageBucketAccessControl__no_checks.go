@@ -4,6 +4,10 @@ package googlestoragebucketaccesscontrol
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleStorageBucketAccessControl) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageBucketAccessControl) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleStorageBucketAccessControl) validateGetStringMapAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageBucketAccessControl) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageBucketAccessControl) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageBucketAccessControl) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageBucketAccessControl) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageBucketAccessControl) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleStorageBucketAccessControl) validateOverrideLogicalIdPa
 }
 
 func (g *jsiiProxy_GoogleStorageBucketAccessControl) validatePutTimeoutsParameters(value *GoogleStorageBucketAccessControlTimeouts) error {
+	return nil
+}
+
+func validateGoogleStorageBucketAccessControl_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

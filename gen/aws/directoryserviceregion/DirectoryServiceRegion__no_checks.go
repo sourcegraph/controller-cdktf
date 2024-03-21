@@ -4,6 +4,10 @@ package directoryserviceregion
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DirectoryServiceRegion) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectoryServiceRegion) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DirectoryServiceRegion) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (d *jsiiProxy_DirectoryServiceRegion) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectoryServiceRegion) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectoryServiceRegion) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectoryServiceRegion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectoryServiceRegion) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (d *jsiiProxy_DirectoryServiceRegion) validatePutTimeoutsParameters(value *
 }
 
 func (d *jsiiProxy_DirectoryServiceRegion) validatePutVpcSettingsParameters(value *DirectoryServiceRegionVpcSettings) error {
+	return nil
+}
+
+func validateDirectoryServiceRegion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

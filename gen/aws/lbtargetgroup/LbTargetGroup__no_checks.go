@@ -4,6 +4,10 @@ package lbtargetgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LbTargetGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbTargetGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (l *jsiiProxy_LbTargetGroup) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (l *jsiiProxy_LbTargetGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbTargetGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbTargetGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbTargetGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbTargetGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (l *jsiiProxy_LbTargetGroup) validatePutStickinessParameters(value *LbTarge
 }
 
 func (l *jsiiProxy_LbTargetGroup) validatePutTargetFailoverParameters(value interface{}) error {
+	return nil
+}
+
+func validateLbTargetGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

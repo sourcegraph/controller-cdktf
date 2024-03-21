@@ -4,6 +4,10 @@ package authenticatedoriginpulls
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AuthenticatedOriginPulls) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuthenticatedOriginPulls) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (a *jsiiProxy_AuthenticatedOriginPulls) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuthenticatedOriginPulls) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AuthenticatedOriginPulls) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AuthenticatedOriginPulls) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AuthenticatedOriginPulls) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuthenticatedOriginPulls) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAuthenticatedOriginPulls_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

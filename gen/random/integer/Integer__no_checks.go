@@ -4,6 +4,10 @@ package integer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_Integer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Integer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (i *jsiiProxy_Integer) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (i *jsiiProxy_Integer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Integer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_Integer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_Integer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_Integer) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Integer) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateInteger_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

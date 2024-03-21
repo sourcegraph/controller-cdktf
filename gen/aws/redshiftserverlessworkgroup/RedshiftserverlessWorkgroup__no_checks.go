@@ -4,6 +4,10 @@ package redshiftserverlessworkgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RedshiftserverlessWorkgroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftserverlessWorkgroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroup) validateGetStringMapAttributePar
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftserverlessWorkgroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftserverlessWorkgroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedshiftserverlessWorkgroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedshiftserverlessWorkgroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedshiftserverlessWorkgroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroup) validateOverrideLogicalIdParamet
 }
 
 func (r *jsiiProxy_RedshiftserverlessWorkgroup) validatePutConfigParameterParameters(value interface{}) error {
+	return nil
+}
+
+func validateRedshiftserverlessWorkgroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package medialivemultiplex
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MedialiveMultiplex) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveMultiplex) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (m *jsiiProxy_MedialiveMultiplex) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (m *jsiiProxy_MedialiveMultiplex) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveMultiplex) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveMultiplex) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveMultiplex) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveMultiplex) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (m *jsiiProxy_MedialiveMultiplex) validatePutMultiplexSettingsParameters(va
 }
 
 func (m *jsiiProxy_MedialiveMultiplex) validatePutTimeoutsParameters(value *MedialiveMultiplexTimeouts) error {
+	return nil
+}
+
+func validateMedialiveMultiplex_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -505,6 +505,25 @@ func (j *jsiiProxy_DataTfeVariableSet)SetWorkspaceIds(val *[]*string) {
 	)
 }
 
+// Generates CDKTF code for importing a DataTfeVariableSet resource upon running "cdktf plan <stack-name>".
+func DataTfeVariableSet_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataTfeVariableSet_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-tfe.dataTfeVariableSet.DataTfeVariableSet",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

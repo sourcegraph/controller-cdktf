@@ -4,6 +4,10 @@ package efsfilesystem
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EfsFileSystem) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EfsFileSystem) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_EfsFileSystem) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (e *jsiiProxy_EfsFileSystem) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EfsFileSystem) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EfsFileSystem) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EfsFileSystem) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EfsFileSystem) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (e *jsiiProxy_EfsFileSystem) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (e *jsiiProxy_EfsFileSystem) validatePutLifecyclePolicyParameters(value interface{}) error {
+	return nil
+}
+
+func validateEfsFileSystem_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package alblistener
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AlbListener) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlbListener) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AlbListener) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (a *jsiiProxy_AlbListener) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlbListener) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlbListener) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlbListener) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlbListener) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (a *jsiiProxy_AlbListener) validatePutDefaultActionParameters(value interfa
 }
 
 func (a *jsiiProxy_AlbListener) validatePutTimeoutsParameters(value *AlbListenerTimeouts) error {
+	return nil
+}
+
+func validateAlbListener_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

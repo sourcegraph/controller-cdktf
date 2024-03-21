@@ -4,6 +4,10 @@ package filter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_Filter) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_Filter) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (f *jsiiProxy_Filter) validateGetStringMapAttributeParameters(terraformAttr
 	return nil
 }
 
+func (f *jsiiProxy_Filter) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_Filter) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (f *jsiiProxy_Filter) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_Filter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_Filter) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_Filter) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateFilter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

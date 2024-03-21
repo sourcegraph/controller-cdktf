@@ -4,6 +4,10 @@ package loggingfolderbucketconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LoggingFolderBucketConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingFolderBucketConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (l *jsiiProxy_LoggingFolderBucketConfig) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (l *jsiiProxy_LoggingFolderBucketConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingFolderBucketConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingFolderBucketConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingFolderBucketConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingFolderBucketConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (l *jsiiProxy_LoggingFolderBucketConfig) validateOverrideLogicalIdParameter
 }
 
 func (l *jsiiProxy_LoggingFolderBucketConfig) validatePutCmekSettingsParameters(value *LoggingFolderBucketConfigCmekSettings) error {
+	return nil
+}
+
+func validateLoggingFolderBucketConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package sagemakerhumantaskui
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SagemakerHumanTaskUi) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerHumanTaskUi) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerHumanTaskUi) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerHumanTaskUi) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerHumanTaskUi) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerHumanTaskUi) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerHumanTaskUi) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) validateOverrideLogicalIdParameters(new
 }
 
 func (s *jsiiProxy_SagemakerHumanTaskUi) validatePutUiTemplateParameters(value *SagemakerHumanTaskUiUiTemplate) error {
+	return nil
+}
+
+func validateSagemakerHumanTaskUi_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

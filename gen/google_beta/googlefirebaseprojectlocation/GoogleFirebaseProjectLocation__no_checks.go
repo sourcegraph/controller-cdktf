@@ -4,6 +4,10 @@ package googlefirebaseprojectlocation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleFirebaseProjectLocation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseProjectLocation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleFirebaseProjectLocation) validateGetStringMapAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseProjectLocation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseProjectLocation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseProjectLocation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseProjectLocation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseProjectLocation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleFirebaseProjectLocation) validateOverrideLogicalIdParam
 }
 
 func (g *jsiiProxy_GoogleFirebaseProjectLocation) validatePutTimeoutsParameters(value *GoogleFirebaseProjectLocationTimeouts) error {
+	return nil
+}
+
+func validateGoogleFirebaseProjectLocation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

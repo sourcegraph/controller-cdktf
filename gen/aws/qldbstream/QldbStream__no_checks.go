@@ -4,6 +4,10 @@ package qldbstream
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (q *jsiiProxy_QldbStream) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QldbStream) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (q *jsiiProxy_QldbStream) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (q *jsiiProxy_QldbStream) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QldbStream) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (q *jsiiProxy_QldbStream) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (q *jsiiProxy_QldbStream) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (q *jsiiProxy_QldbStream) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (q *jsiiProxy_QldbStream) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func (q *jsiiProxy_QldbStream) validatePutKinesisConfigurationParameters(value *QldbStreamKinesisConfiguration) error {
+	return nil
+}
+
+func validateQldbStream_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

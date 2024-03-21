@@ -4,6 +4,10 @@ package notebooksenvironment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NotebooksEnvironment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotebooksEnvironment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NotebooksEnvironment) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (n *jsiiProxy_NotebooksEnvironment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotebooksEnvironment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotebooksEnvironment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotebooksEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotebooksEnvironment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (n *jsiiProxy_NotebooksEnvironment) validatePutTimeoutsParameters(value *No
 }
 
 func (n *jsiiProxy_NotebooksEnvironment) validatePutVmImageParameters(value *NotebooksEnvironmentVmImage) error {
+	return nil
+}
+
+func validateNotebooksEnvironment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

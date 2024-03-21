@@ -4,6 +4,10 @@ package dialogflowcxwebhook
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DialogflowCxWebhook) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxWebhook) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DialogflowCxWebhook) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxWebhook) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxWebhook) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxWebhook) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxWebhook) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxWebhook) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (d *jsiiProxy_DialogflowCxWebhook) validatePutServiceDirectoryParameters(va
 }
 
 func (d *jsiiProxy_DialogflowCxWebhook) validatePutTimeoutsParameters(value *DialogflowCxWebhookTimeouts) error {
+	return nil
+}
+
+func validateDialogflowCxWebhook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

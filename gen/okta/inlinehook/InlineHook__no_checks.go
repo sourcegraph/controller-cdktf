@@ -4,6 +4,10 @@ package inlinehook
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_InlineHook) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_InlineHook) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (i *jsiiProxy_InlineHook) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (i *jsiiProxy_InlineHook) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_InlineHook) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_InlineHook) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_InlineHook) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_InlineHook) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (i *jsiiProxy_InlineHook) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func (i *jsiiProxy_InlineHook) validatePutHeadersParameters(value interface{}) error {
+	return nil
+}
+
+func validateInlineHook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

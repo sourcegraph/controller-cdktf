@@ -4,6 +4,10 @@ package redshiftscheduledaction
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RedshiftScheduledAction) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftScheduledAction) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (r *jsiiProxy_RedshiftScheduledAction) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftScheduledAction) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftScheduledAction) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedshiftScheduledAction) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedshiftScheduledAction) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedshiftScheduledAction) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (r *jsiiProxy_RedshiftScheduledAction) validateOverrideLogicalIdParameters(
 }
 
 func (r *jsiiProxy_RedshiftScheduledAction) validatePutTargetActionParameters(value *RedshiftScheduledActionTargetAction) error {
+	return nil
+}
+
+func validateRedshiftScheduledAction_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

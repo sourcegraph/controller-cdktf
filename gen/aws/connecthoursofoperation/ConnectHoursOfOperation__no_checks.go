@@ -4,6 +4,10 @@ package connecthoursofoperation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConnectHoursOfOperation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectHoursOfOperation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ConnectHoursOfOperation) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_ConnectHoursOfOperation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectHoursOfOperation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectHoursOfOperation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectHoursOfOperation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectHoursOfOperation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ConnectHoursOfOperation) validateOverrideLogicalIdParameters(
 }
 
 func (c *jsiiProxy_ConnectHoursOfOperation) validatePutConfigParameters(value interface{}) error {
+	return nil
+}
+
+func validateConnectHoursOfOperation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

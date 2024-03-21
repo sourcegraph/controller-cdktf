@@ -4,6 +4,10 @@ package ceanomalymonitor
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CeAnomalyMonitor) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CeAnomalyMonitor) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (c *jsiiProxy_CeAnomalyMonitor) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (c *jsiiProxy_CeAnomalyMonitor) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CeAnomalyMonitor) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_CeAnomalyMonitor) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CeAnomalyMonitor) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CeAnomalyMonitor) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CeAnomalyMonitor) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCeAnomalyMonitor_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

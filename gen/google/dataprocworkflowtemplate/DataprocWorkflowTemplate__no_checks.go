@@ -4,6 +4,10 @@ package dataprocworkflowtemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataprocWorkflowTemplate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocWorkflowTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (d *jsiiProxy_DataprocWorkflowTemplate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocWorkflowTemplate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocWorkflowTemplate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocWorkflowTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocWorkflowTemplate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) validatePutPlacementParameters(valu
 }
 
 func (d *jsiiProxy_DataprocWorkflowTemplate) validatePutTimeoutsParameters(value *DataprocWorkflowTemplateTimeouts) error {
+	return nil
+}
+
+func validateDataprocWorkflowTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

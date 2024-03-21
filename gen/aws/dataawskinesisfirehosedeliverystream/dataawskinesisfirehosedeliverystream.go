@@ -389,6 +389,25 @@ func (j *jsiiProxy_DataAwsKinesisFirehoseDeliveryStream)SetProvider(val cdktf.Te
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsKinesisFirehoseDeliveryStream resource upon running "cdktf plan <stack-name>".
+func DataAwsKinesisFirehoseDeliveryStream_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsKinesisFirehoseDeliveryStream_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStream",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

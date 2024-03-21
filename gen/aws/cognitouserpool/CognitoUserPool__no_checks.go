@@ -4,6 +4,10 @@ package cognitouserpool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CognitoUserPool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoUserPool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CognitoUserPool) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (c *jsiiProxy_CognitoUserPool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoUserPool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoUserPool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoUserPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoUserPool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -101,6 +121,10 @@ func (c *jsiiProxy_CognitoUserPool) validatePutUserPoolAddOnsParameters(value *C
 }
 
 func (c *jsiiProxy_CognitoUserPool) validatePutVerificationMessageTemplateParameters(value *CognitoUserPoolVerificationMessageTemplate) error {
+	return nil
+}
+
+func validateCognitoUserPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

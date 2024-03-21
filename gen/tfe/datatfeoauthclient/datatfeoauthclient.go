@@ -550,6 +550,25 @@ func (j *jsiiProxy_DataTfeOauthClient)SetServiceProvider(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a DataTfeOauthClient resource upon running "cdktf plan <stack-name>".
+func DataTfeOauthClient_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataTfeOauthClient_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-tfe.dataTfeOauthClient.DataTfeOauthClient",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

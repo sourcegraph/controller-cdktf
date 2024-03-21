@@ -15,15 +15,15 @@ type GoogleSccNotificationConfigStreamingConfig struct {
 	//
 	// The supported operators are:
 	//
-	// = for all value types.
-	// >, <, >=, <= for integer values.
-	// :, meaning substring matching, for strings.
+	// * = for all value types.
+	// * >, <, >=, <= for integer values.
+	// * :, meaning substring matching, for strings.
 	//
 	// The supported value types are:
 	//
-	// string literals in quotes.
-	// integer literals without quotes.
-	// boolean literals true and false without quotes.
+	// * string literals in quotes.
+	// * integer literals without quotes.
+	// * boolean literals true and false without quotes.
 	//
 	// See
 	// [Filtering notifications](https://cloud.google.com/security-command-center/docs/how-to-api-filter-notifications)

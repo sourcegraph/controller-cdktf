@@ -4,6 +4,10 @@ package kmscryptokey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KmsCryptoKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsCryptoKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (k *jsiiProxy_KmsCryptoKey) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (k *jsiiProxy_KmsCryptoKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsCryptoKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsCryptoKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsCryptoKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsCryptoKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (k *jsiiProxy_KmsCryptoKey) validatePutTimeoutsParameters(value *KmsCryptoK
 }
 
 func (k *jsiiProxy_KmsCryptoKey) validatePutVersionTemplateParameters(value *KmsCryptoKeyVersionTemplate) error {
+	return nil
+}
+
+func validateKmsCryptoKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

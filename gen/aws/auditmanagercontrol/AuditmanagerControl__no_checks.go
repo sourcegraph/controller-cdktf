@@ -4,6 +4,10 @@ package auditmanagercontrol
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AuditmanagerControl) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuditmanagerControl) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AuditmanagerControl) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (a *jsiiProxy_AuditmanagerControl) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuditmanagerControl) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AuditmanagerControl) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AuditmanagerControl) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AuditmanagerControl) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (a *jsiiProxy_AuditmanagerControl) validateOverrideLogicalIdParameters(newL
 }
 
 func (a *jsiiProxy_AuditmanagerControl) validatePutControlMappingSourcesParameters(value interface{}) error {
+	return nil
+}
+
+func validateAuditmanagerControl_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

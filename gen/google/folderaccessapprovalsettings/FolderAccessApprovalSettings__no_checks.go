@@ -4,6 +4,10 @@ package folderaccessapprovalsettings
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FolderAccessApprovalSettings) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FolderAccessApprovalSettings) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (f *jsiiProxy_FolderAccessApprovalSettings) validateGetStringMapAttributePa
 	return nil
 }
 
+func (f *jsiiProxy_FolderAccessApprovalSettings) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FolderAccessApprovalSettings) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FolderAccessApprovalSettings) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FolderAccessApprovalSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FolderAccessApprovalSettings) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (f *jsiiProxy_FolderAccessApprovalSettings) validatePutEnrolledServicesPara
 }
 
 func (f *jsiiProxy_FolderAccessApprovalSettings) validatePutTimeoutsParameters(value *FolderAccessApprovalSettingsTimeouts) error {
+	return nil
+}
+
+func validateFolderAccessApprovalSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

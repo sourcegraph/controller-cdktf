@@ -389,6 +389,25 @@ func (j *jsiiProxy_DataKubernetesPodV1)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
+// Generates CDKTF code for importing a DataKubernetesPodV1 resource upon running "cdktf plan <stack-name>".
+func DataKubernetesPodV1_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataKubernetesPodV1_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

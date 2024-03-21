@@ -4,6 +4,10 @@ package oauthclient
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OauthClient) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OauthClient) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (o *jsiiProxy_OauthClient) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (o *jsiiProxy_OauthClient) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OauthClient) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (o *jsiiProxy_OauthClient) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OauthClient) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OauthClient) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OauthClient) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateOauthClient_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

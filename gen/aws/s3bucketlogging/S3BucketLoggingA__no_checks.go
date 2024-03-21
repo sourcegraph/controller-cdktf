@@ -4,6 +4,10 @@ package s3bucketlogging
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_S3BucketLoggingA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketLoggingA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_S3BucketLoggingA) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketLoggingA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketLoggingA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketLoggingA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketLoggingA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketLoggingA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_S3BucketLoggingA) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (s *jsiiProxy_S3BucketLoggingA) validatePutTargetGrantParameters(value interface{}) error {
+	return nil
+}
+
+func validateS3BucketLoggingA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

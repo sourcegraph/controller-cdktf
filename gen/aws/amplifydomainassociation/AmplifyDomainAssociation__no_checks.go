@@ -4,6 +4,10 @@ package amplifydomainassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AmplifyDomainAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AmplifyDomainAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AmplifyDomainAssociation) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (a *jsiiProxy_AmplifyDomainAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AmplifyDomainAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AmplifyDomainAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AmplifyDomainAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AmplifyDomainAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (a *jsiiProxy_AmplifyDomainAssociation) validateOverrideLogicalIdParameters
 }
 
 func (a *jsiiProxy_AmplifyDomainAssociation) validatePutSubDomainParameters(value interface{}) error {
+	return nil
+}
+
+func validateAmplifyDomainAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package neptuneclustersnapshot
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NeptuneClusterSnapshot) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NeptuneClusterSnapshot) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NeptuneClusterSnapshot) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (n *jsiiProxy_NeptuneClusterSnapshot) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NeptuneClusterSnapshot) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NeptuneClusterSnapshot) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NeptuneClusterSnapshot) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NeptuneClusterSnapshot) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NeptuneClusterSnapshot) validateOverrideLogicalIdParameters(n
 }
 
 func (n *jsiiProxy_NeptuneClusterSnapshot) validatePutTimeoutsParameters(value *NeptuneClusterSnapshotTimeouts) error {
+	return nil
+}
+
+func validateNeptuneClusterSnapshot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

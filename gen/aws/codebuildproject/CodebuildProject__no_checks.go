@@ -4,6 +4,10 @@ package codebuildproject
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CodebuildProject) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodebuildProject) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CodebuildProject) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (c *jsiiProxy_CodebuildProject) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodebuildProject) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodebuildProject) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodebuildProject) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodebuildProject) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -93,6 +113,10 @@ func (c *jsiiProxy_CodebuildProject) validatePutSourceParameters(value *Codebuil
 }
 
 func (c *jsiiProxy_CodebuildProject) validatePutVpcConfigParameters(value *CodebuildProjectVpcConfig) error {
+	return nil
+}
+
+func validateCodebuildProject_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

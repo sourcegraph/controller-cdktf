@@ -4,6 +4,10 @@ package googleapigeesharedflowdeployment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleApigeeSharedflowDeployment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeSharedflowDeployment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleApigeeSharedflowDeployment) validateGetStringMapAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApigeeSharedflowDeployment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeSharedflowDeployment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeSharedflowDeployment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeSharedflowDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeSharedflowDeployment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleApigeeSharedflowDeployment) validateOverrideLogicalIdPa
 }
 
 func (g *jsiiProxy_GoogleApigeeSharedflowDeployment) validatePutTimeoutsParameters(value *GoogleApigeeSharedflowDeploymentTimeouts) error {
+	return nil
+}
+
+func validateGoogleApigeeSharedflowDeployment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package googleprivatecacapooliammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GooglePrivatecaCaPoolIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePrivatecaCaPoolIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIamMember) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GooglePrivatecaCaPoolIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePrivatecaCaPoolIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivatecaCaPoolIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivatecaCaPoolIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivatecaCaPoolIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIamMember) validateOverrideLogicalIdPara
 }
 
 func (g *jsiiProxy_GooglePrivatecaCaPoolIamMember) validatePutConditionParameters(value *GooglePrivatecaCaPoolIamMemberCondition) error {
+	return nil
+}
+
+func validateGooglePrivatecaCaPoolIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

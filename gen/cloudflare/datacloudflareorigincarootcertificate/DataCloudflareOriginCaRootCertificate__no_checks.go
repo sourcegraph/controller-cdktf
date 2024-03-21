@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataCloudflareOriginCaRootCertificate) validateOverrideLogica
 	return nil
 }
 
+func validateDataCloudflareOriginCaRootCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataCloudflareOriginCaRootCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }

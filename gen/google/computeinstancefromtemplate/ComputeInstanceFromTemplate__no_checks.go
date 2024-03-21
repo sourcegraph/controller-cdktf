@@ -4,6 +4,10 @@ package computeinstancefromtemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeInstanceFromTemplate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceFromTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeInstanceFromTemplate) validateGetStringMapAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceFromTemplate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceFromTemplate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -105,6 +125,10 @@ func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutShieldedInstanceConfi
 }
 
 func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutTimeoutsParameters(value *ComputeInstanceFromTemplateTimeouts) error {
+	return nil
+}
+
+func validateComputeInstanceFromTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

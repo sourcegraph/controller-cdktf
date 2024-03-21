@@ -4,6 +4,10 @@ package oauthappredirecturi
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OauthAppRedirectUri) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OauthAppRedirectUri) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (o *jsiiProxy_OauthAppRedirectUri) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (o *jsiiProxy_OauthAppRedirectUri) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OauthAppRedirectUri) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (o *jsiiProxy_OauthAppRedirectUri) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OauthAppRedirectUri) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OauthAppRedirectUri) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OauthAppRedirectUri) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateOauthAppRedirectUri_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

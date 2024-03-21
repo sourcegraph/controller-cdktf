@@ -4,6 +4,10 @@ package apigatewayv2domainname
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_Apigatewayv2DomainName) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_Apigatewayv2DomainName) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_Apigatewayv2DomainName) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (a *jsiiProxy_Apigatewayv2DomainName) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_Apigatewayv2DomainName) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_Apigatewayv2DomainName) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_Apigatewayv2DomainName) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_Apigatewayv2DomainName) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (a *jsiiProxy_Apigatewayv2DomainName) validatePutMutualTlsAuthenticationPar
 }
 
 func (a *jsiiProxy_Apigatewayv2DomainName) validatePutTimeoutsParameters(value *Apigatewayv2DomainNameTimeouts) error {
+	return nil
+}
+
+func validateApigatewayv2DomainName_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

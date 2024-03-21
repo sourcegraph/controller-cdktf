@@ -4,6 +4,10 @@ package wafregionalregexmatchset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WafregionalRegexMatchSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalRegexMatchSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (w *jsiiProxy_WafregionalRegexMatchSet) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (w *jsiiProxy_WafregionalRegexMatchSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalRegexMatchSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafregionalRegexMatchSet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafregionalRegexMatchSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafregionalRegexMatchSet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (w *jsiiProxy_WafregionalRegexMatchSet) validateOverrideLogicalIdParameters
 }
 
 func (w *jsiiProxy_WafregionalRegexMatchSet) validatePutRegexMatchTupleParameters(value interface{}) error {
+	return nil
+}
+
+func validateWafregionalRegexMatchSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

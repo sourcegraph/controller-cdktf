@@ -4,6 +4,10 @@ package networkservicesgateway
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkServicesGateway) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkServicesGateway) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetworkServicesGateway) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (n *jsiiProxy_NetworkServicesGateway) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkServicesGateway) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkServicesGateway) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkServicesGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkServicesGateway) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NetworkServicesGateway) validateOverrideLogicalIdParameters(n
 }
 
 func (n *jsiiProxy_NetworkServicesGateway) validatePutTimeoutsParameters(value *NetworkServicesGatewayTimeouts) error {
+	return nil
+}
+
+func validateNetworkServicesGateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package apigeeenvgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApigeeEnvgroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeEnvgroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_ApigeeEnvgroup) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (a *jsiiProxy_ApigeeEnvgroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeEnvgroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApigeeEnvgroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApigeeEnvgroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApigeeEnvgroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (a *jsiiProxy_ApigeeEnvgroup) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (a *jsiiProxy_ApigeeEnvgroup) validatePutTimeoutsParameters(value *ApigeeEnvgroupTimeouts) error {
+	return nil
+}
+
+func validateApigeeEnvgroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

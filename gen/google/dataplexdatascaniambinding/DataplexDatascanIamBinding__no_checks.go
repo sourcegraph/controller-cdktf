@@ -4,6 +4,10 @@ package dataplexdatascaniambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataplexDatascanIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexDatascanIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DataplexDatascanIamBinding) validateGetStringMapAttributePara
 	return nil
 }
 
+func (d *jsiiProxy_DataplexDatascanIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexDatascanIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataplexDatascanIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataplexDatascanIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataplexDatascanIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (d *jsiiProxy_DataplexDatascanIamBinding) validateOverrideLogicalIdParamete
 }
 
 func (d *jsiiProxy_DataplexDatascanIamBinding) validatePutConditionParameters(value *DataplexDatascanIamBindingCondition) error {
+	return nil
+}
+
+func validateDataplexDatascanIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

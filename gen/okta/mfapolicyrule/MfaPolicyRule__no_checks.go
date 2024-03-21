@@ -4,6 +4,10 @@ package mfapolicyrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MfaPolicyRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MfaPolicyRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (m *jsiiProxy_MfaPolicyRule) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (m *jsiiProxy_MfaPolicyRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MfaPolicyRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MfaPolicyRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MfaPolicyRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MfaPolicyRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (m *jsiiProxy_MfaPolicyRule) validatePutAppExcludeParameters(value interfac
 }
 
 func (m *jsiiProxy_MfaPolicyRule) validatePutAppIncludeParameters(value interface{}) error {
+	return nil
+}
+
+func validateMfaPolicyRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

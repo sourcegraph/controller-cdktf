@@ -4,6 +4,10 @@ package lbsslnegotiationpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LbSslNegotiationPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbSslNegotiationPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (l *jsiiProxy_LbSslNegotiationPolicy) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (l *jsiiProxy_LbSslNegotiationPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbSslNegotiationPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbSslNegotiationPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbSslNegotiationPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbSslNegotiationPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (l *jsiiProxy_LbSslNegotiationPolicy) validateOverrideLogicalIdParameters(n
 }
 
 func (l *jsiiProxy_LbSslNegotiationPolicy) validatePutAttributeParameters(value interface{}) error {
+	return nil
+}
+
+func validateLbSslNegotiationPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

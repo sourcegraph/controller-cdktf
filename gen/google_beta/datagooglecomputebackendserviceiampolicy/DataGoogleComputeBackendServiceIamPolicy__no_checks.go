@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleComputeBackendServiceIamPolicy) validateOverrideLog
 	return nil
 }
 
+func validateDataGoogleComputeBackendServiceIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleComputeBackendServiceIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

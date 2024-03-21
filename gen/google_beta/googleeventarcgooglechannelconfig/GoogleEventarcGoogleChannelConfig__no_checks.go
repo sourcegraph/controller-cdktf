@@ -4,6 +4,10 @@ package googleeventarcgooglechannelconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleEventarcGoogleChannelConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEventarcGoogleChannelConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleEventarcGoogleChannelConfig) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEventarcGoogleChannelConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEventarcGoogleChannelConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEventarcGoogleChannelConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEventarcGoogleChannelConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEventarcGoogleChannelConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleEventarcGoogleChannelConfig) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GoogleEventarcGoogleChannelConfig) validatePutTimeoutsParameters(value *GoogleEventarcGoogleChannelConfigTimeouts) error {
+	return nil
+}
+
+func validateGoogleEventarcGoogleChannelConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

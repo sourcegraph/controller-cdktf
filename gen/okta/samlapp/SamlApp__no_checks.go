@@ -4,6 +4,10 @@ package samlapp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SamlApp) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SamlApp) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SamlApp) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (s *jsiiProxy_SamlApp) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SamlApp) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SamlApp) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SamlApp) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SamlApp) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (s *jsiiProxy_SamlApp) validatePutTimeoutsParameters(value *SamlAppTimeouts
 }
 
 func (s *jsiiProxy_SamlApp) validatePutUsersParameters(value interface{}) error {
+	return nil
+}
+
+func validateSamlApp_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

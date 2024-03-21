@@ -4,6 +4,10 @@ package googlecloudidentitygroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleCloudIdentityGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudIdentityGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleCloudIdentityGroup) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudIdentityGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudIdentityGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudIdentityGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudIdentityGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudIdentityGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleCloudIdentityGroup) validatePutGroupKeyParameters(value
 }
 
 func (g *jsiiProxy_GoogleCloudIdentityGroup) validatePutTimeoutsParameters(value *GoogleCloudIdentityGroupTimeouts) error {
+	return nil
+}
+
+func validateGoogleCloudIdentityGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package mtlscertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MtlsCertificate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MtlsCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (m *jsiiProxy_MtlsCertificate) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (m *jsiiProxy_MtlsCertificate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MtlsCertificate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (m *jsiiProxy_MtlsCertificate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MtlsCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MtlsCertificate) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MtlsCertificate) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateMtlsCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

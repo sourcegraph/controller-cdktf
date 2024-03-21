@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataOktaAuthServerClaim) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func validateDataOktaAuthServerClaim_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOktaAuthServerClaim_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -4,6 +4,10 @@ package containercluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ContainerCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ContainerCluster) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -173,6 +193,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutVerticalPodAutoscalingParameters
 }
 
 func (c *jsiiProxy_ContainerCluster) validatePutWorkloadIdentityConfigParameters(value *ContainerClusterWorkloadIdentityConfig) error {
+	return nil
+}
+
+func validateContainerCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

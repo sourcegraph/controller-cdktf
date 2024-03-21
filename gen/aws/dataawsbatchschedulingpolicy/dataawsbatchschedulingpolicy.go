@@ -435,6 +435,25 @@ func (j *jsiiProxy_DataAwsBatchSchedulingPolicy)SetTags(val *map[string]*string)
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsBatchSchedulingPolicy resource upon running "cdktf plan <stack-name>".
+func DataAwsBatchSchedulingPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsBatchSchedulingPolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

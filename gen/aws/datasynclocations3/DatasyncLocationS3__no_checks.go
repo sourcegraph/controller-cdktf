@@ -4,6 +4,10 @@ package datasynclocations3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatasyncLocationS3) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncLocationS3) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DatasyncLocationS3) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (d *jsiiProxy_DatasyncLocationS3) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncLocationS3) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatasyncLocationS3) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatasyncLocationS3) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatasyncLocationS3) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (d *jsiiProxy_DatasyncLocationS3) validateOverrideLogicalIdParameters(newLo
 }
 
 func (d *jsiiProxy_DatasyncLocationS3) validatePutS3ConfigParameters(value *DatasyncLocationS3S3Config) error {
+	return nil
+}
+
+func validateDatasyncLocationS3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

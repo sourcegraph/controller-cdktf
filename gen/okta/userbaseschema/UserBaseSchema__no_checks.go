@@ -4,6 +4,10 @@ package userbaseschema
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (u *jsiiProxy_UserBaseSchema) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserBaseSchema) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (u *jsiiProxy_UserBaseSchema) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (u *jsiiProxy_UserBaseSchema) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserBaseSchema) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (u *jsiiProxy_UserBaseSchema) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserBaseSchema) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserBaseSchema) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserBaseSchema) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateUserBaseSchema_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -44,9 +44,9 @@ type GoogleComputeRouterPeerConfig struct {
 	Router *string `field:"required" json:"router" yaml:"router"`
 	// User-specified list of prefix groups to advertise in custom mode, which can take one of the following options:.
 	//
-	// 'ALL_SUBNETS': Advertises all available subnets, including peer VPC subnets.
-	// 'ALL_VPC_SUBNETS': Advertises the router's own VPC subnets.
-	// 'ALL_PEER_VPC_SUBNETS': Advertises peer subnets of the router's VPC network.
+	// * 'ALL_SUBNETS': Advertises all available subnets, including peer VPC subnets.
+	// * 'ALL_VPC_SUBNETS': Advertises the router's own VPC subnets.
+	// * 'ALL_PEER_VPC_SUBNETS': Advertises peer subnets of the router's VPC network.
 	//
 	//
 	// Note that this field can only be populated if advertiseMode is 'CUSTOM'

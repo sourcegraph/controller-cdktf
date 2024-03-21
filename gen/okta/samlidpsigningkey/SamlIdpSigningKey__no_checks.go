@@ -4,6 +4,10 @@ package samlidpsigningkey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SamlIdpSigningKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SamlIdpSigningKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (s *jsiiProxy_SamlIdpSigningKey) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (s *jsiiProxy_SamlIdpSigningKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SamlIdpSigningKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_SamlIdpSigningKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SamlIdpSigningKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SamlIdpSigningKey) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SamlIdpSigningKey) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateSamlIdpSigningKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

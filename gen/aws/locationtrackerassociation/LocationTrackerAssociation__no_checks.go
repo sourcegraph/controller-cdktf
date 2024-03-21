@@ -4,6 +4,10 @@ package locationtrackerassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LocationTrackerAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LocationTrackerAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (l *jsiiProxy_LocationTrackerAssociation) validateGetStringMapAttributePara
 	return nil
 }
 
+func (l *jsiiProxy_LocationTrackerAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LocationTrackerAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LocationTrackerAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LocationTrackerAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LocationTrackerAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (l *jsiiProxy_LocationTrackerAssociation) validateOverrideLogicalIdParamete
 }
 
 func (l *jsiiProxy_LocationTrackerAssociation) validatePutTimeoutsParameters(value *LocationTrackerAssociationTimeouts) error {
+	return nil
+}
+
+func validateLocationTrackerAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

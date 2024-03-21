@@ -4,6 +4,10 @@ package s3object
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_S3Object) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3Object) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (s *jsiiProxy_S3Object) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (s *jsiiProxy_S3Object) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3Object) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_S3Object) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3Object) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3Object) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3Object) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateS3Object_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

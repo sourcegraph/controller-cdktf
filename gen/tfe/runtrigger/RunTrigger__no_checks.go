@@ -4,6 +4,10 @@ package runtrigger
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RunTrigger) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RunTrigger) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (r *jsiiProxy_RunTrigger) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (r *jsiiProxy_RunTrigger) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RunTrigger) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_RunTrigger) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RunTrigger) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RunTrigger) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RunTrigger) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRunTrigger_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

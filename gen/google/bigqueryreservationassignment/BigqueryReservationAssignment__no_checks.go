@@ -4,6 +4,10 @@ package bigqueryreservationassignment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigqueryReservationAssignment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryReservationAssignment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (b *jsiiProxy_BigqueryReservationAssignment) validateGetStringMapAttributeP
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryReservationAssignment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryReservationAssignment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryReservationAssignment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryReservationAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryReservationAssignment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (b *jsiiProxy_BigqueryReservationAssignment) validateOverrideLogicalIdParam
 }
 
 func (b *jsiiProxy_BigqueryReservationAssignment) validatePutTimeoutsParameters(value *BigqueryReservationAssignmentTimeouts) error {
+	return nil
+}
+
+func validateBigqueryReservationAssignment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

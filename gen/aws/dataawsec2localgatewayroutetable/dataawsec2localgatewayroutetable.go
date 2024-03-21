@@ -567,6 +567,25 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable)SetTags(val *map[string]*str
 	)
 }
 
+// Generates CDKTF code for importing a DataAwsEc2LocalGatewayRouteTable resource upon running "cdktf plan <stack-name>".
+func DataAwsEc2LocalGatewayRouteTable_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsEc2LocalGatewayRouteTable_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTable.DataAwsEc2LocalGatewayRouteTable",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`

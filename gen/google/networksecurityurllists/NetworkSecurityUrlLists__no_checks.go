@@ -4,6 +4,10 @@ package networksecurityurllists
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkSecurityUrlLists) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityUrlLists) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetworkSecurityUrlLists) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (n *jsiiProxy_NetworkSecurityUrlLists) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityUrlLists) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityUrlLists) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityUrlLists) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityUrlLists) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NetworkSecurityUrlLists) validateOverrideLogicalIdParameters(
 }
 
 func (n *jsiiProxy_NetworkSecurityUrlLists) validatePutTimeoutsParameters(value *NetworkSecurityUrlListsTimeouts) error {
+	return nil
+}
+
+func validateNetworkSecurityUrlLists_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

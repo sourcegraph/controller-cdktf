@@ -4,6 +4,10 @@ package codebuildreportgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CodebuildReportGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodebuildReportGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CodebuildReportGroup) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (c *jsiiProxy_CodebuildReportGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodebuildReportGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodebuildReportGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodebuildReportGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodebuildReportGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_CodebuildReportGroup) validateOverrideLogicalIdParameters(new
 }
 
 func (c *jsiiProxy_CodebuildReportGroup) validatePutExportConfigParameters(value *CodebuildReportGroupExportConfig) error {
+	return nil
+}
+
+func validateCodebuildReportGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

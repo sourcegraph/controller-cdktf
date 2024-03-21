@@ -4,6 +4,10 @@ package networkconnectivityhub
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkConnectivityHub) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkConnectivityHub) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetworkConnectivityHub) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (n *jsiiProxy_NetworkConnectivityHub) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkConnectivityHub) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkConnectivityHub) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkConnectivityHub) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkConnectivityHub) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NetworkConnectivityHub) validateOverrideLogicalIdParameters(n
 }
 
 func (n *jsiiProxy_NetworkConnectivityHub) validatePutTimeoutsParameters(value *NetworkConnectivityHubTimeouts) error {
+	return nil
+}
+
+func validateNetworkConnectivityHub_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

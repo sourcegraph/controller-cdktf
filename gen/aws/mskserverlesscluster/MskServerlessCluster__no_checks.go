@@ -4,6 +4,10 @@ package mskserverlesscluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MskServerlessCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MskServerlessCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (m *jsiiProxy_MskServerlessCluster) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (m *jsiiProxy_MskServerlessCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MskServerlessCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MskServerlessCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MskServerlessCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MskServerlessCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (m *jsiiProxy_MskServerlessCluster) validatePutTimeoutsParameters(value *Ms
 }
 
 func (m *jsiiProxy_MskServerlessCluster) validatePutVpcConfigParameters(value interface{}) error {
+	return nil
+}
+
+func validateMskServerlessCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

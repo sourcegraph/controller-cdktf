@@ -4,6 +4,10 @@ package cognitoidentitypoolrolesattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateGetStringMapAttri
 	return nil
 }
 
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateOverrideLogicalId
 }
 
 func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validatePutRoleMappingParameters(value interface{}) error {
+	return nil
+}
+
+func validateCognitoIdentityPoolRolesAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

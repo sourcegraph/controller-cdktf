@@ -4,6 +4,10 @@ package googlefirebasestoragebucket
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateGetStringMapAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateOverrideLogicalIdParamet
 }
 
 func (g *jsiiProxy_GoogleFirebaseStorageBucket) validatePutTimeoutsParameters(value *GoogleFirebaseStorageBucketTimeouts) error {
+	return nil
+}
+
+func validateGoogleFirebaseStorageBucket_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 
