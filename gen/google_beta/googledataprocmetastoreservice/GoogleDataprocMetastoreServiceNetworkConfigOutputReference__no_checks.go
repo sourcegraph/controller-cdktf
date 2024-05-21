@@ -60,6 +60,10 @@ func (j *jsiiProxy_GoogleDataprocMetastoreServiceNetworkConfigOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocMetastoreServiceNetworkConfigOutputReference) validateSetCustomRoutesEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocMetastoreServiceNetworkConfigOutputReference) validateSetInternalValueParameters(val *GoogleDataprocMetastoreServiceNetworkConfig) error {
 	return nil
 }

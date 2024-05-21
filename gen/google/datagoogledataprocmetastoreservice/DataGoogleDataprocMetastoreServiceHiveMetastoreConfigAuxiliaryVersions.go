@@ -1,0 +1,6 @@
+package datagoogledataprocmetastoreservice
+
+
+type DataGoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions struct {
+}
+

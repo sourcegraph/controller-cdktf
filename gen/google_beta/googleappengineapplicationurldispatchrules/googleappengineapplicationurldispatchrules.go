@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleappengineapplicationurldispatchrules/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_app_engine_application_url_dispatch_rules google_app_engine_application_url_dispatch_rules}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_app_engine_application_url_dispatch_rules google_app_engine_application_url_dispatch_rules}.
 type GoogleAppEngineApplicationUrlDispatchRules interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRules) TimeoutsInput() i
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_app_engine_application_url_dispatch_rules google_app_engine_application_url_dispatch_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_app_engine_application_url_dispatch_rules google_app_engine_application_url_dispatch_rules} Resource.
 func NewGoogleAppEngineApplicationUrlDispatchRules(scope constructs.Construct, id *string, config *GoogleAppEngineApplicationUrlDispatchRulesConfig) GoogleAppEngineApplicationUrlDispatchRules {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewGoogleAppEngineApplicationUrlDispatchRules(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_app_engine_application_url_dispatch_rules google_app_engine_application_url_dispatch_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_app_engine_application_url_dispatch_rules google_app_engine_application_url_dispatch_rules} Resource.
 func NewGoogleAppEngineApplicationUrlDispatchRules_Override(g GoogleAppEngineApplicationUrlDispatchRules, scope constructs.Construct, id *string, config *GoogleAppEngineApplicationUrlDispatchRulesConfig) {
 	_init_.Initialize()
 

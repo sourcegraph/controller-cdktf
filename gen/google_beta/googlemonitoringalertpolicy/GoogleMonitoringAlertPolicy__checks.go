@@ -403,6 +403,14 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicy) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) validateSetSeverityParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMonitoringAlertPolicy) validateSetUserLabelsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

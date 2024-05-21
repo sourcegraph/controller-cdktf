@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/networkmanagementconnectivitytest/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/network_management_connectivity_test google_network_management_connectivity_test}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/network_management_connectivity_test google_network_management_connectivity_test}.
 type NetworkManagementConnectivityTest interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,7 @@ type NetworkManagementConnectivityTest interface {
 	DescriptionInput() *string
 	Destination() NetworkManagementConnectivityTestDestinationOutputReference
 	DestinationInput() *NetworkManagementConnectivityTestDestination
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -79,6 +80,7 @@ type NetworkManagementConnectivityTest interface {
 	SourceInput() *NetworkManagementConnectivityTestSource
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -223,6 +225,16 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) DestinationInput() *Networ
 	_jsii_.Get(
 		j,
 		"destinationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTest) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -458,6 +470,16 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) TerraformGeneratorMetadata
 	return returns
 }
 
+func (j *jsiiProxy_NetworkManagementConnectivityTest) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkManagementConnectivityTest) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -499,7 +521,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/network_management_connectivity_test google_network_management_connectivity_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/network_management_connectivity_test google_network_management_connectivity_test} Resource.
 func NewNetworkManagementConnectivityTest(scope constructs.Construct, id *string, config *NetworkManagementConnectivityTestConfig) NetworkManagementConnectivityTest {
 	_init_.Initialize()
 
@@ -517,7 +539,7 @@ func NewNetworkManagementConnectivityTest(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/network_management_connectivity_test google_network_management_connectivity_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/network_management_connectivity_test google_network_management_connectivity_test} Resource.
 func NewNetworkManagementConnectivityTest_Override(n NetworkManagementConnectivityTest, scope constructs.Construct, id *string, config *NetworkManagementConnectivityTestConfig) {
 	_init_.Initialize()
 

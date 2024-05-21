@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlegkeonprembaremetalcluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_gkeonprem_bare_metal_cluster google_gkeonprem_bare_metal_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_gkeonprem_bare_metal_cluster google_gkeonprem_bare_metal_cluster}.
 type GoogleGkeonpremBareMetalCluster interface {
 	cdktf.TerraformResource
 	AdminClusterMembership() *string
@@ -21,6 +21,8 @@ type GoogleGkeonpremBareMetalCluster interface {
 	BareMetalVersion() *string
 	SetBareMetalVersion(val *string)
 	BareMetalVersionInput() *string
+	BinaryAuthorization() GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference
+	BinaryAuthorizationInput() *GoogleGkeonpremBareMetalClusterBinaryAuthorization
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterOperations() GoogleGkeonpremBareMetalClusterClusterOperationsOutputReference
@@ -46,6 +48,7 @@ type GoogleGkeonpremBareMetalCluster interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveAnnotations() cdktf.StringMap
 	Endpoint() *string
 	Etag() *string
 	Fleet() GoogleGkeonpremBareMetalClusterFleetList
@@ -117,6 +120,8 @@ type GoogleGkeonpremBareMetalCluster interface {
 	TimeoutsInput() interface{}
 	Uid() *string
 	UpdateTime() *string
+	UpgradePolicy() GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference
+	UpgradePolicyInput() *GoogleGkeonpremBareMetalClusterUpgradePolicy
 	ValidationCheck() GoogleGkeonpremBareMetalClusterValidationCheckList
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -143,6 +148,7 @@ type GoogleGkeonpremBareMetalCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBinaryAuthorization(value *GoogleGkeonpremBareMetalClusterBinaryAuthorization)
 	PutClusterOperations(value *GoogleGkeonpremBareMetalClusterClusterOperations)
 	PutControlPlane(value *GoogleGkeonpremBareMetalClusterControlPlane)
 	PutLoadBalancer(value *GoogleGkeonpremBareMetalClusterLoadBalancer)
@@ -155,7 +161,9 @@ type GoogleGkeonpremBareMetalCluster interface {
 	PutSecurityConfig(value *GoogleGkeonpremBareMetalClusterSecurityConfig)
 	PutStorage(value *GoogleGkeonpremBareMetalClusterStorage)
 	PutTimeouts(value *GoogleGkeonpremBareMetalClusterTimeouts)
+	PutUpgradePolicy(value *GoogleGkeonpremBareMetalClusterUpgradePolicy)
 	ResetAnnotations()
+	ResetBinaryAuthorization()
 	ResetClusterOperations()
 	ResetDescription()
 	ResetId()
@@ -170,6 +178,7 @@ type GoogleGkeonpremBareMetalCluster interface {
 	ResetProxy()
 	ResetSecurityConfig()
 	ResetTimeouts()
+	ResetUpgradePolicy()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -240,6 +249,26 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalCluster) BareMetalVersionInput() *str
 	_jsii_.Get(
 		j,
 		"bareMetalVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremBareMetalCluster) BinaryAuthorization() GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference {
+	var returns GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference
+	_jsii_.Get(
+		j,
+		"binaryAuthorization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremBareMetalCluster) BinaryAuthorizationInput() *GoogleGkeonpremBareMetalClusterBinaryAuthorization {
+	var returns *GoogleGkeonpremBareMetalClusterBinaryAuthorization
+	_jsii_.Get(
+		j,
+		"binaryAuthorizationInput",
 		&returns,
 	)
 	return returns
@@ -370,6 +399,16 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalCluster) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremBareMetalCluster) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
 		&returns,
 	)
 	return returns
@@ -855,6 +894,26 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalCluster) UpdateTime() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleGkeonpremBareMetalCluster) UpgradePolicy() GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference {
+	var returns GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"upgradePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremBareMetalCluster) UpgradePolicyInput() *GoogleGkeonpremBareMetalClusterUpgradePolicy {
+	var returns *GoogleGkeonpremBareMetalClusterUpgradePolicy
+	_jsii_.Get(
+		j,
+		"upgradePolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleGkeonpremBareMetalCluster) ValidationCheck() GoogleGkeonpremBareMetalClusterValidationCheckList {
 	var returns GoogleGkeonpremBareMetalClusterValidationCheckList
 	_jsii_.Get(
@@ -866,7 +925,7 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalCluster) ValidationCheck() GoogleGkeo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_gkeonprem_bare_metal_cluster google_gkeonprem_bare_metal_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_gkeonprem_bare_metal_cluster google_gkeonprem_bare_metal_cluster} Resource.
 func NewGoogleGkeonpremBareMetalCluster(scope constructs.Construct, id *string, config *GoogleGkeonpremBareMetalClusterConfig) GoogleGkeonpremBareMetalCluster {
 	_init_.Initialize()
 
@@ -884,7 +943,7 @@ func NewGoogleGkeonpremBareMetalCluster(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_gkeonprem_bare_metal_cluster google_gkeonprem_bare_metal_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_gkeonprem_bare_metal_cluster google_gkeonprem_bare_metal_cluster} Resource.
 func NewGoogleGkeonpremBareMetalCluster_Override(g GoogleGkeonpremBareMetalCluster, scope constructs.Construct, id *string, config *GoogleGkeonpremBareMetalClusterConfig) {
 	_init_.Initialize()
 
@@ -1317,6 +1376,17 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) OverrideLogicalId(newLogical
 	)
 }
 
+func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) PutBinaryAuthorization(value *GoogleGkeonpremBareMetalClusterBinaryAuthorization) {
+	if err := g.validatePutBinaryAuthorizationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBinaryAuthorization",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) PutClusterOperations(value *GoogleGkeonpremBareMetalClusterClusterOperations) {
 	if err := g.validatePutClusterOperationsParameters(value); err != nil {
 		panic(err)
@@ -1449,10 +1519,29 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) PutTimeouts(value *GoogleGke
 	)
 }
 
+func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) PutUpgradePolicy(value *GoogleGkeonpremBareMetalClusterUpgradePolicy) {
+	if err := g.validatePutUpgradePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putUpgradePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) ResetBinaryAuthorization() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBinaryAuthorization",
 		nil, // no parameters
 	)
 }
@@ -1549,6 +1638,14 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) ResetUpgradePolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUpgradePolicy",
 		nil, // no parameters
 	)
 }

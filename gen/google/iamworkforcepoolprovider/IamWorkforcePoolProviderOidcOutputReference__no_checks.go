@@ -76,6 +76,10 @@ func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) validateSetIssue
 	return nil
 }
 
+func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) validateSetJwksJsonParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

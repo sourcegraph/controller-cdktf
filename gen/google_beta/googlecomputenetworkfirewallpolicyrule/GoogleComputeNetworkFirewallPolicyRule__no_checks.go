@@ -132,7 +132,15 @@ func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) validateSetRuleNamePa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) validateSetSecurityProfileGroupParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) validateSetTargetServiceAccountsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) validateSetTlsInspectParameters(val interface{}) error {
 	return nil
 }
 

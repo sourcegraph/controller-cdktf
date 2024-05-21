@@ -1,3 +1,3 @@
 # `data_google_compute_vpn_gateway`
 
-Refer to the Terraform Registory for docs: [`data_google_compute_vpn_gateway`](https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_compute_vpn_gateway).
+Refer to the Terraform Registory for docs: [`data_google_compute_vpn_gateway`](https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_compute_vpn_gateway).

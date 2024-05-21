@@ -144,6 +144,17 @@ func (d *jsiiProxy_DataprocMetastoreService) validatePutMaintenanceWindowParamet
 	return nil
 }
 
+func (d *jsiiProxy_DataprocMetastoreService) validatePutMetadataIntegrationParameters(value *DataprocMetastoreServiceMetadataIntegration) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreService) validatePutNetworkConfigParameters(value *DataprocMetastoreServiceNetworkConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -156,6 +167,17 @@ func (d *jsiiProxy_DataprocMetastoreService) validatePutNetworkConfigParameters(
 }
 
 func (d *jsiiProxy_DataprocMetastoreService) validatePutScalingConfigParameters(value *DataprocMetastoreServiceScalingConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataprocMetastoreService) validatePutScheduledBackupParameters(value *DataprocMetastoreServiceScheduledBackup) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

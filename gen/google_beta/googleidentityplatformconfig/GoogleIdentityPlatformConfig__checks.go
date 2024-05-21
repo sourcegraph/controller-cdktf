@@ -122,7 +122,73 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutBlockingFunctionsPar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutClientParameters(value *GoogleIdentityPlatformConfigClient) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutMfaParameters(value *GoogleIdentityPlatformConfigMfa) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutMonitoringParameters(value *GoogleIdentityPlatformConfigMonitoring) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutMultiTenantParameters(value *GoogleIdentityPlatformConfigMultiTenant) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutQuotaParameters(value *GoogleIdentityPlatformConfigQuota) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutSignInParameters(value *GoogleIdentityPlatformConfigSignIn) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutSmsRegionConfigParameters(value *GoogleIdentityPlatformConfigSmsRegionConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

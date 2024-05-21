@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComposerEnvironment) validatePutConfigParameters(value 
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComposerEnvironment) validatePutStorageConfigParameters(value *GoogleComposerEnvironmentStorageConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComposerEnvironment) validatePutTimeoutsParameters(value *GoogleComposerEnvironmentTimeouts) error {
 	return nil
 }

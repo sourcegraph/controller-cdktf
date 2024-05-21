@@ -80,6 +80,10 @@ func validateComputeRouterNat_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterNat) validateSetAutoNetworkTierParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterNat) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (j *jsiiProxy_ComputeRouterNat) validateSetEnableDynamicPortAllocationParam
 }
 
 func (j *jsiiProxy_ComputeRouterNat) validateSetEnableEndpointIndependentMappingParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRouterNat) validateSetEndpointTypesParameters(val *[]*string) error {
 	return nil
 }
 

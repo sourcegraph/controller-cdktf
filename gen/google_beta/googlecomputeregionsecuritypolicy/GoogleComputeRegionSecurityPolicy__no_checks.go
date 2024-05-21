@@ -60,6 +60,10 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) validatePutTimeoutsParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) validatePutUserDefinedFieldsParameters(value interface{}) error {
+	return nil
+}
+
 func validateGoogleComputeRegionSecurityPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

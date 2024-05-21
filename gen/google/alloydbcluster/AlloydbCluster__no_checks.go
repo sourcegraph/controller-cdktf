@@ -68,6 +68,26 @@ func (a *jsiiProxy_AlloydbCluster) validatePutInitialUserParameters(value *Alloy
 	return nil
 }
 
+func (a *jsiiProxy_AlloydbCluster) validatePutMaintenanceUpdatePolicyParameters(value *AlloydbClusterMaintenanceUpdatePolicy) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlloydbCluster) validatePutNetworkConfigParameters(value *AlloydbClusterNetworkConfig) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlloydbCluster) validatePutRestoreBackupSourceParameters(value *AlloydbClusterRestoreBackupSource) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlloydbCluster) validatePutRestoreContinuousBackupSourceParameters(value *AlloydbClusterRestoreContinuousBackupSource) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlloydbCluster) validatePutSecondaryConfigParameters(value *AlloydbClusterSecondaryConfig) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbCluster) validatePutTimeoutsParameters(value *AlloydbClusterTimeouts) error {
 	return nil
 }
@@ -84,7 +104,15 @@ func validateAlloydbCluster_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_AlloydbCluster) validateSetAnnotationsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlloydbCluster) validateSetClusterIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AlloydbCluster) validateSetClusterTypeParameters(val *string) error {
 	return nil
 }
 
@@ -96,7 +124,19 @@ func (j *jsiiProxy_AlloydbCluster) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_AlloydbCluster) validateSetDatabaseVersionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AlloydbCluster) validateSetDeletionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlloydbCluster) validateSetDisplayNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AlloydbCluster) validateSetEtagParameters(val *string) error {
 	return nil
 }
 

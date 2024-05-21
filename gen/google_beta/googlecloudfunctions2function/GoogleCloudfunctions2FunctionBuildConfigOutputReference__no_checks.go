@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) validateSetServiceAccountParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

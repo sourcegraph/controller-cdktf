@@ -35,6 +35,8 @@ type GoogleGkeBackupBackupPlanBackupScheduleOutputReference interface {
 	Paused() interface{}
 	SetPaused(val interface{})
 	PausedInput() interface{}
+	RpoConfig() GoogleGkeBackupBackupPlanBackupScheduleRpoConfigOutputReference
+	RpoConfigInput() *GoogleGkeBackupBackupPlanBackupScheduleRpoConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,8 +69,10 @@ type GoogleGkeBackupBackupPlanBackupScheduleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutRpoConfig(value *GoogleGkeBackupBackupPlanBackupScheduleRpoConfig)
 	ResetCronSchedule()
 	ResetPaused()
+	ResetRpoConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -169,6 +173,26 @@ func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleOutputReference) Pause
 	_jsii_.Get(
 		j,
 		"pausedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleOutputReference) RpoConfig() GoogleGkeBackupBackupPlanBackupScheduleRpoConfigOutputReference {
+	var returns GoogleGkeBackupBackupPlanBackupScheduleRpoConfigOutputReference
+	_jsii_.Get(
+		j,
+		"rpoConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleOutputReference) RpoConfigInput() *GoogleGkeBackupBackupPlanBackupScheduleRpoConfig {
+	var returns *GoogleGkeBackupBackupPlanBackupScheduleRpoConfig
+	_jsii_.Get(
+		j,
+		"rpoConfigInput",
 		&returns,
 	)
 	return returns
@@ -485,6 +509,17 @@ func (g *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleOutputReference) Inter
 	return returns
 }
 
+func (g *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleOutputReference) PutRpoConfig(value *GoogleGkeBackupBackupPlanBackupScheduleRpoConfig) {
+	if err := g.validatePutRpoConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRpoConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleOutputReference) ResetCronSchedule() {
 	_jsii_.InvokeVoid(
 		g,
@@ -497,6 +532,14 @@ func (g *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleOutputReference) Reset
 	_jsii_.InvokeVoid(
 		g,
 		"resetPaused",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleOutputReference) ResetRpoConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRpoConfig",
 		nil, // no parameters
 	)
 }

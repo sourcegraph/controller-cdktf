@@ -10,6 +10,7 @@ import (
 
 type DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference interface {
 	cdktf.ComplexObject
+	AptRepository() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -26,6 +27,7 @@ type DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference i
 	// Experimental.
 	CreationStack() *[]*string
 	Description() *string
+	DisableUpstreamValidation() cdktf.IResolvable
 	DockerRepository() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryList
 	// Experimental.
 	Fqn() *string
@@ -42,6 +44,8 @@ type DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference i
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UpstreamCredentials() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsList
+	YumRepository() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryList
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -81,6 +85,16 @@ type jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputR
 	internal.Type__cdktfComplexObject
 }
 
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) AptRepository() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryList {
+	var returns DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryList
+	_jsii_.Get(
+		j,
+		"aptRepository",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -116,6 +130,16 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOut
 	_jsii_.Get(
 		j,
 		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) DisableUpstreamValidation() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"disableUpstreamValidation",
 		&returns,
 	)
 	return returns
@@ -196,6 +220,26 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOut
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) UpstreamCredentials() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsList {
+	var returns DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsList
+	_jsii_.Get(
+		j,
+		"upstreamCredentials",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) YumRepository() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryList {
+	var returns DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryList
+	_jsii_.Get(
+		j,
+		"yumRepository",
 		&returns,
 	)
 	return returns

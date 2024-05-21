@@ -112,6 +112,10 @@ func (j *jsiiProxy_GoogleComputePerInstanceConfig) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputePerInstanceConfig) validateSetRemoveInstanceOnDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputePerInstanceConfig) validateSetRemoveInstanceStateOnDestroyParameters(val interface{}) error {
 	return nil
 }

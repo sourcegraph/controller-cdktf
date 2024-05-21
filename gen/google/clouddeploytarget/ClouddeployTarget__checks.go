@@ -122,6 +122,17 @@ func (c *jsiiProxy_ClouddeployTarget) validatePutAnthosClusterParameters(value *
 	return nil
 }
 
+func (c *jsiiProxy_ClouddeployTarget) validatePutCustomTargetParameters(value *ClouddeployTargetCustomTarget) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployTarget) validatePutExecutionConfigsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -154,6 +165,17 @@ func (c *jsiiProxy_ClouddeployTarget) validatePutExecutionConfigsParameters(valu
 }
 
 func (c *jsiiProxy_ClouddeployTarget) validatePutGkeParameters(value *ClouddeployTargetGke) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ClouddeployTarget) validatePutMultiTargetParameters(value *ClouddeployTargetMultiTarget) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

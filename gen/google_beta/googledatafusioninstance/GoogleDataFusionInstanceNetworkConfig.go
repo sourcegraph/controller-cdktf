@@ -6,14 +6,14 @@ type GoogleDataFusionInstanceNetworkConfig struct {
 	//
 	// This range must not overlap with any other ranges used in the Data Fusion instance network.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_data_fusion_instance#ip_allocation GoogleDataFusionInstance#ip_allocation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_data_fusion_instance#ip_allocation GoogleDataFusionInstance#ip_allocation}
 	IpAllocation *string `field:"required" json:"ipAllocation" yaml:"ipAllocation"`
 	// Name of the network in the project with which the tenant project will be peered for executing pipelines.
 	//
 	// In case of shared VPC where the network resides in another host
 	// project the network should specified in the form of projects/{host-project-id}/global/networks/{network}
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_data_fusion_instance#network GoogleDataFusionInstance#network}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_data_fusion_instance#network GoogleDataFusionInstance#network}
 	Network *string `field:"required" json:"network" yaml:"network"`
 }
 

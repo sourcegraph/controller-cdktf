@@ -60,6 +60,10 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembership) validatePutMeshParameters(valu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeHubFeatureMembership) validatePutPolicycontrollerParameters(value *GoogleGkeHubFeatureMembershipPolicycontroller) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeatureMembership) validatePutTimeoutsParameters(value *GoogleGkeHubFeatureMembershipTimeouts) error {
 	return nil
 }
@@ -101,6 +105,10 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembership) validateSetLocationParameters(
 }
 
 func (j *jsiiProxy_GoogleGkeHubFeatureMembership) validateSetMembershipParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureMembership) validateSetMembershipLocationParameters(val *string) error {
 	return nil
 }
 

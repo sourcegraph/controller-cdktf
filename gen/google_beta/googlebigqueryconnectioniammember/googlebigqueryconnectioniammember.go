@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigqueryconnectioniammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_connection_iam_member google_bigquery_connection_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_bigquery_connection_iam_member google_bigquery_connection_iam_member}.
 type GoogleBigqueryConnectionIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleBigqueryConnectionIamMember) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_connection_iam_member google_bigquery_connection_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_bigquery_connection_iam_member google_bigquery_connection_iam_member} Resource.
 func NewGoogleBigqueryConnectionIamMember(scope constructs.Construct, id *string, config *GoogleBigqueryConnectionIamMemberConfig) GoogleBigqueryConnectionIamMember {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGoogleBigqueryConnectionIamMember(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_connection_iam_member google_bigquery_connection_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_bigquery_connection_iam_member google_bigquery_connection_iam_member} Resource.
 func NewGoogleBigqueryConnectionIamMember_Override(g GoogleBigqueryConnectionIamMember, scope constructs.Construct, id *string, config *GoogleBigqueryConnectionIamMemberConfig) {
 	_init_.Initialize()
 

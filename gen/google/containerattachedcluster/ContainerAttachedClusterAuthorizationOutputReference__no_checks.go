@@ -48,6 +48,10 @@ func (c *jsiiProxy_ContainerAttachedClusterAuthorizationOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAttachedClusterAuthorizationOutputReference) validateSetAdminGroupsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAttachedClusterAuthorizationOutputReference) validateSetAdminUsersParameters(val *[]*string) error {
 	return nil
 }

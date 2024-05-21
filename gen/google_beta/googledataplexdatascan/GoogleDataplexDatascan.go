@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataplexdatascan/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_datascan google_dataplex_datascan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_dataplex_datascan google_dataplex_datascan}.
 type GoogleDataplexDatascan interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,10 +27,8 @@ type GoogleDataplexDatascan interface {
 	CreateTime() *string
 	Data() GoogleDataplexDatascanDataOutputReference
 	DataInput() *GoogleDataplexDatascanData
-	DataProfileResult() GoogleDataplexDatascanDataProfileResultList
 	DataProfileSpec() GoogleDataplexDatascanDataProfileSpecOutputReference
 	DataProfileSpecInput() *GoogleDataplexDatascanDataProfileSpec
-	DataQualityResult() GoogleDataplexDatascanDataQualityResultList
 	DataQualitySpec() GoogleDataplexDatascanDataQualitySpecOutputReference
 	DataQualitySpecInput() *GoogleDataplexDatascanDataQualitySpec
 	DataScanId() *string
@@ -46,6 +44,7 @@ type GoogleDataplexDatascan interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	ExecutionSpec() GoogleDataplexDatascanExecutionSpecOutputReference
 	ExecutionSpecInput() *GoogleDataplexDatascanExecutionSpec
 	ExecutionStatus() GoogleDataplexDatascanExecutionStatusList
@@ -89,6 +88,7 @@ type GoogleDataplexDatascan interface {
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -224,16 +224,6 @@ func (j *jsiiProxy_GoogleDataplexDatascan) DataInput() *GoogleDataplexDatascanDa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascan) DataProfileResult() GoogleDataplexDatascanDataProfileResultList {
-	var returns GoogleDataplexDatascanDataProfileResultList
-	_jsii_.Get(
-		j,
-		"dataProfileResult",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_GoogleDataplexDatascan) DataProfileSpec() GoogleDataplexDatascanDataProfileSpecOutputReference {
 	var returns GoogleDataplexDatascanDataProfileSpecOutputReference
 	_jsii_.Get(
@@ -249,16 +239,6 @@ func (j *jsiiProxy_GoogleDataplexDatascan) DataProfileSpecInput() *GoogleDataple
 	_jsii_.Get(
 		j,
 		"dataProfileSpecInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleDataplexDatascan) DataQualityResult() GoogleDataplexDatascanDataQualityResultList {
-	var returns GoogleDataplexDatascanDataQualityResultList
-	_jsii_.Get(
-		j,
-		"dataQualityResult",
 		&returns,
 	)
 	return returns
@@ -349,6 +329,16 @@ func (j *jsiiProxy_GoogleDataplexDatascan) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascan) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -574,6 +564,16 @@ func (j *jsiiProxy_GoogleDataplexDatascan) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataplexDatascan) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataplexDatascan) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -645,7 +645,7 @@ func (j *jsiiProxy_GoogleDataplexDatascan) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_datascan google_dataplex_datascan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_dataplex_datascan google_dataplex_datascan} Resource.
 func NewGoogleDataplexDatascan(scope constructs.Construct, id *string, config *GoogleDataplexDatascanConfig) GoogleDataplexDatascan {
 	_init_.Initialize()
 
@@ -663,7 +663,7 @@ func NewGoogleDataplexDatascan(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_datascan google_dataplex_datascan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_dataplex_datascan google_dataplex_datascan} Resource.
 func NewGoogleDataplexDatascan_Override(g GoogleDataplexDatascan, scope constructs.Construct, id *string, config *GoogleDataplexDatascanConfig) {
 	_init_.Initialize()
 

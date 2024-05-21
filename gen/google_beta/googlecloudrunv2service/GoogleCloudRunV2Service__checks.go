@@ -122,6 +122,17 @@ func (g *jsiiProxy_GoogleCloudRunV2Service) validatePutBinaryAuthorizationParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2Service) validatePutScalingParameters(value *GoogleCloudRunV2ServiceScaling) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2Service) validatePutTemplateParameters(value *GoogleCloudRunV2ServiceTemplate) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

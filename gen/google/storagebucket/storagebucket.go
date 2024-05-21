@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/storagebucket/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/storage_bucket google_storage_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/storage_bucket google_storage_bucket}.
 type StorageBucket interface {
 	cdktf.TerraformResource
 	Autoclass() StorageBucketAutoclassOutputReference
@@ -37,6 +37,10 @@ type StorageBucket interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
+	EnableObjectRetention() interface{}
+	SetEnableObjectRetention(val interface{})
+	EnableObjectRetentionInput() interface{}
 	Encryption() StorageBucketEncryptionOutputReference
 	EncryptionInput() *StorageBucketEncryption
 	ForceDestroy() interface{}
@@ -75,6 +79,7 @@ type StorageBucket interface {
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
+	ProjectNumber() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -93,12 +98,18 @@ type StorageBucket interface {
 	RequesterPaysInput() interface{}
 	RetentionPolicy() StorageBucketRetentionPolicyOutputReference
 	RetentionPolicyInput() *StorageBucketRetentionPolicy
+	Rpo() *string
+	SetRpo(val *string)
+	RpoInput() *string
 	SelfLink() *string
+	SoftDeletePolicy() StorageBucketSoftDeletePolicyOutputReference
+	SoftDeletePolicyInput() *StorageBucketSoftDeletePolicy
 	StorageClass() *string
 	SetStorageClass(val *string)
 	StorageClassInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -145,6 +156,7 @@ type StorageBucket interface {
 	PutLifecycleRule(value interface{})
 	PutLogging(value *StorageBucketLogging)
 	PutRetentionPolicy(value *StorageBucketRetentionPolicy)
+	PutSoftDeletePolicy(value *StorageBucketSoftDeletePolicy)
 	PutTimeouts(value *StorageBucketTimeouts)
 	PutVersioning(value *StorageBucketVersioning)
 	PutWebsite(value *StorageBucketWebsite)
@@ -152,6 +164,7 @@ type StorageBucket interface {
 	ResetCors()
 	ResetCustomPlacementConfig()
 	ResetDefaultEventBasedHold()
+	ResetEnableObjectRetention()
 	ResetEncryption()
 	ResetForceDestroy()
 	ResetId()
@@ -165,6 +178,8 @@ type StorageBucket interface {
 	ResetPublicAccessPrevention()
 	ResetRequesterPays()
 	ResetRetentionPolicy()
+	ResetRpo()
+	ResetSoftDeletePolicy()
 	ResetStorageClass()
 	ResetTimeouts()
 	ResetUniformBucketLevelAccess()
@@ -310,6 +325,36 @@ func (j *jsiiProxy_StorageBucket) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) EnableObjectRetention() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableObjectRetention",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) EnableObjectRetentionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableObjectRetentionInput",
 		&returns,
 	)
 	return returns
@@ -545,6 +590,16 @@ func (j *jsiiProxy_StorageBucket) ProjectInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StorageBucket) ProjectNumber() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"projectNumber",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageBucket) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -635,11 +690,51 @@ func (j *jsiiProxy_StorageBucket) RetentionPolicyInput() *StorageBucketRetention
 	return returns
 }
 
+func (j *jsiiProxy_StorageBucket) Rpo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rpo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) RpoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rpoInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageBucket) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"selfLink",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) SoftDeletePolicy() StorageBucketSoftDeletePolicyOutputReference {
+	var returns StorageBucketSoftDeletePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"softDeletePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) SoftDeletePolicyInput() *StorageBucketSoftDeletePolicy {
+	var returns *StorageBucketSoftDeletePolicy
+	_jsii_.Get(
+		j,
+		"softDeletePolicyInput",
 		&returns,
 	)
 	return returns
@@ -670,6 +765,16 @@ func (j *jsiiProxy_StorageBucket) TerraformGeneratorMetadata() *cdktf.TerraformP
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
 		&returns,
 	)
 	return returns
@@ -786,7 +891,7 @@ func (j *jsiiProxy_StorageBucket) WebsiteInput() *StorageBucketWebsite {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/storage_bucket google_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/storage_bucket google_storage_bucket} Resource.
 func NewStorageBucket(scope constructs.Construct, id *string, config *StorageBucketConfig) StorageBucket {
 	_init_.Initialize()
 
@@ -804,7 +909,7 @@ func NewStorageBucket(scope constructs.Construct, id *string, config *StorageBuc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/storage_bucket google_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/storage_bucket google_storage_bucket} Resource.
 func NewStorageBucket_Override(s StorageBucket, scope constructs.Construct, id *string, config *StorageBucketConfig) {
 	_init_.Initialize()
 
@@ -852,6 +957,17 @@ func (j *jsiiProxy_StorageBucket)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucket)SetEnableObjectRetention(val interface{}) {
+	if err := j.validateSetEnableObjectRetentionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableObjectRetention",
 		val,
 	)
 }
@@ -978,6 +1094,17 @@ func (j *jsiiProxy_StorageBucket)SetRequesterPays(val interface{}) {
 	_jsii_.Set(
 		j,
 		"requesterPays",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucket)SetRpo(val *string) {
+	if err := j.validateSetRpoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rpo",
 		val,
 	)
 }
@@ -1347,6 +1474,17 @@ func (s *jsiiProxy_StorageBucket) PutRetentionPolicy(value *StorageBucketRetenti
 	)
 }
 
+func (s *jsiiProxy_StorageBucket) PutSoftDeletePolicy(value *StorageBucketSoftDeletePolicy) {
+	if err := s.validatePutSoftDeletePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putSoftDeletePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StorageBucket) PutTimeouts(value *StorageBucketTimeouts) {
 	if err := s.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1408,6 +1546,14 @@ func (s *jsiiProxy_StorageBucket) ResetDefaultEventBasedHold() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDefaultEventBasedHold",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetEnableObjectRetention() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnableObjectRetention",
 		nil, // no parameters
 	)
 }
@@ -1496,6 +1642,22 @@ func (s *jsiiProxy_StorageBucket) ResetRetentionPolicy() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRetentionPolicy",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetRpo() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRpo",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetSoftDeletePolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSoftDeletePolicy",
 		nil, // no parameters
 	)
 }

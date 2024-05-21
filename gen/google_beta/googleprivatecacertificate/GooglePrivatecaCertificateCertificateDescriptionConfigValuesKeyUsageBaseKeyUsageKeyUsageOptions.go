@@ -1,6 +1,0 @@
-package googleprivatecacertificate
-
-
-type GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageBaseKeyUsageKeyUsageOptions struct {
-}
-

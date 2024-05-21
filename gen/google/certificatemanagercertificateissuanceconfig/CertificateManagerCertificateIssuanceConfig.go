@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/certificatemanagercertificateissuanceconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/certificate_manager_certificate_issuance_config google_certificate_manager_certificate_issuance_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/certificate_manager_certificate_issuance_config google_certificate_manager_certificate_issuance_config}.
 type CertificateManagerCertificateIssuanceConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,6 +34,7 @@ type CertificateManagerCertificateIssuanceConfig interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -84,6 +85,7 @@ type CertificateManagerCertificateIssuanceConfig interface {
 	RotationWindowPercentageInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -237,6 +239,16 @@ func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfig) DescriptionInput
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfig) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -492,6 +504,16 @@ func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfig) TerraformGenerat
 	return returns
 }
 
+func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfig) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfig) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -543,7 +565,7 @@ func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfig) UpdateTime() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/certificate_manager_certificate_issuance_config google_certificate_manager_certificate_issuance_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/certificate_manager_certificate_issuance_config google_certificate_manager_certificate_issuance_config} Resource.
 func NewCertificateManagerCertificateIssuanceConfig(scope constructs.Construct, id *string, config *CertificateManagerCertificateIssuanceConfigConfig) CertificateManagerCertificateIssuanceConfig {
 	_init_.Initialize()
 
@@ -561,7 +583,7 @@ func NewCertificateManagerCertificateIssuanceConfig(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/certificate_manager_certificate_issuance_config google_certificate_manager_certificate_issuance_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/certificate_manager_certificate_issuance_config google_certificate_manager_certificate_issuance_config} Resource.
 func NewCertificateManagerCertificateIssuanceConfig_Override(c CertificateManagerCertificateIssuanceConfig, scope constructs.Construct, id *string, config *CertificateManagerCertificateIssuanceConfigConfig) {
 	_init_.Initialize()
 

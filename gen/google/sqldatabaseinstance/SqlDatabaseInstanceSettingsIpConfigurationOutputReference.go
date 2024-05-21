@@ -43,9 +43,14 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	PrivateNetwork() *string
 	SetPrivateNetwork(val *string)
 	PrivateNetworkInput() *string
+	PscConfig() SqlDatabaseInstanceSettingsIpConfigurationPscConfigList
+	PscConfigInput() interface{}
 	RequireSsl() interface{}
 	SetRequireSsl(val interface{})
 	RequireSslInput() interface{}
+	SslMode() *string
+	SetSslMode(val *string)
+	SslModeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,12 +84,15 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAuthorizedNetworks(value interface{})
+	PutPscConfig(value interface{})
 	ResetAllocatedIpRange()
 	ResetAuthorizedNetworks()
 	ResetEnablePrivatePathForGoogleCloudServices()
 	ResetIpv4Enabled()
 	ResetPrivateNetwork()
+	ResetPscConfig()
 	ResetRequireSsl()
+	ResetSslMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -250,6 +258,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Pr
 	return returns
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) PscConfig() SqlDatabaseInstanceSettingsIpConfigurationPscConfigList {
+	var returns SqlDatabaseInstanceSettingsIpConfigurationPscConfigList
+	_jsii_.Get(
+		j,
+		"pscConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) PscConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pscConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) RequireSsl() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -265,6 +293,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Re
 	_jsii_.Get(
 		j,
 		"requireSslInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) SslMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sslMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) SslModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sslModeInput",
 		&returns,
 	)
 	return returns
@@ -402,6 +450,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	_jsii_.Set(
 		j,
 		"requireSsl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetSslMode(val *string) {
+	if err := j.validateSetSslModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sslMode",
 		val,
 	)
 }
@@ -625,6 +684,17 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Pu
 	)
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) PutPscConfig(value interface{}) {
+	if err := s.validatePutPscConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putPscConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetAllocatedIpRange() {
 	_jsii_.InvokeVoid(
 		s,
@@ -665,10 +735,26 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Re
 	)
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetPscConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPscConfig",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetRequireSsl() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRequireSsl",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetSslMode() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSslMode",
 		nil, // no parameters
 	)
 }

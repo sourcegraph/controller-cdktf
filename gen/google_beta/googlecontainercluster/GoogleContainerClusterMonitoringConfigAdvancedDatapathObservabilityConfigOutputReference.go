@@ -28,10 +28,13 @@ type GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOu
 	EnableMetrics() interface{}
 	SetEnableMetrics(val interface{})
 	EnableMetricsInput() interface{}
+	EnableRelay() interface{}
+	SetEnableRelay(val interface{})
+	EnableRelayInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig
+	SetInternalValue(val *GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig)
 	RelayMode() *string
 	SetRelayMode(val *string)
 	RelayModeInput() *string
@@ -67,6 +70,7 @@ type GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOu
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEnableRelay()
 	ResetRelayMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -133,6 +137,26 @@ func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObserva
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) EnableRelay() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableRelay",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) EnableRelayInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableRelayInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -143,8 +167,8 @@ func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObserva
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) InternalValue() *GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig {
+	var returns *GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,29 +218,29 @@ func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObserva
 }
 
 
-func NewGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference {
+func NewGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference_Override(g GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference_Override(g GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
 }
@@ -254,7 +278,18 @@ func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObserva
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference)SetEnableRelay(val interface{}) {
+	if err := j.validateSetEnableRelayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableRelay",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference)SetInternalValue(val *GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,6 +517,14 @@ func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObserva
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) ResetEnableRelay() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableRelay",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) ResetRelayMode() {

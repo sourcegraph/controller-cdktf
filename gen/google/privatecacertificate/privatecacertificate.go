@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/privatecacertificate/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/privateca_certificate google_privateca_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/privateca_certificate google_privateca_certificate}.
 type PrivatecaCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -38,6 +38,7 @@ type PrivatecaCertificate interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -70,7 +71,6 @@ type PrivatecaCertificate interface {
 	Node() constructs.Node
 	PemCertificate() *string
 	PemCertificateChain() *[]*string
-	PemCertificates() *[]*string
 	PemCsr() *string
 	SetPemCsr(val *string)
 	PemCsrInput() *string
@@ -93,6 +93,7 @@ type PrivatecaCertificate interface {
 	RevocationDetails() PrivatecaCertificateRevocationDetailsList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -284,6 +285,16 @@ func (j *jsiiProxy_PrivatecaCertificate) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_PrivatecaCertificate) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PrivatecaCertificate) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -464,16 +475,6 @@ func (j *jsiiProxy_PrivatecaCertificate) PemCertificateChain() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCertificate) PemCertificates() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"pemCertificates",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_PrivatecaCertificate) PemCsr() *string {
 	var returns *string
 	_jsii_.Get(
@@ -584,6 +585,16 @@ func (j *jsiiProxy_PrivatecaCertificate) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
+func (j *jsiiProxy_PrivatecaCertificate) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PrivatecaCertificate) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -635,7 +646,7 @@ func (j *jsiiProxy_PrivatecaCertificate) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/privateca_certificate google_privateca_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/privateca_certificate google_privateca_certificate} Resource.
 func NewPrivatecaCertificate(scope constructs.Construct, id *string, config *PrivatecaCertificateConfig) PrivatecaCertificate {
 	_init_.Initialize()
 
@@ -653,7 +664,7 @@ func NewPrivatecaCertificate(scope constructs.Construct, id *string, config *Pri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/privateca_certificate google_privateca_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/privateca_certificate google_privateca_certificate} Resource.
 func NewPrivatecaCertificate_Override(p PrivatecaCertificate, scope constructs.Construct, id *string, config *PrivatecaCertificateConfig) {
 	_init_.Initialize()
 

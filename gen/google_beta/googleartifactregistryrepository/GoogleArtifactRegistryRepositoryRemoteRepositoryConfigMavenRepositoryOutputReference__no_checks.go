@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRe
 	return nil
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference) validatePutCustomRepositoryParameters(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepository) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

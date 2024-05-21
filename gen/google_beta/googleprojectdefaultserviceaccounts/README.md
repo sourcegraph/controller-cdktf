@@ -1,3 +1,3 @@
 # `google_project_default_service_accounts`
 
-Refer to the Terraform Registory for docs: [`google_project_default_service_accounts`](https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_project_default_service_accounts).
+Refer to the Terraform Registory for docs: [`google_project_default_service_accounts`](https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_project_default_service_accounts).

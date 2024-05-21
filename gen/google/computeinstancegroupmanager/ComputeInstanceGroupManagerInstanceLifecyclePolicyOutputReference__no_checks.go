@@ -56,6 +56,10 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerInstanceLifecyclePolicyOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference) validateSetDefaultActionOnFailureParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference) validateSetForceUpdateOnRepairParameters(val *string) error {
 	return nil
 }

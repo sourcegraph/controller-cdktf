@@ -38,6 +38,7 @@ type DataGoogleComposerEnvironmentConfigDatabaseConfigOutputReference interface 
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Zone() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -152,6 +153,16 @@ func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigDatabaseConfigOutputRefere
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigDatabaseConfigOutputReference) Zone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zone",
 		&returns,
 	)
 	return returns

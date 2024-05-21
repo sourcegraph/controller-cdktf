@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesOutputReference) valid
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesOutputReference) validatePutExpiryDetailParameters(value *GoogleCloudIdentityGroupMembershipRolesExpiryDetail) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/loggingbillingaccountbucketconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_billing_account_bucket_config google_logging_billing_account_bucket_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/logging_billing_account_bucket_config google_logging_billing_account_bucket_config}.
 type LoggingBillingAccountBucketConfig interface {
 	cdktf.TerraformResource
 	BillingAccount() *string
@@ -50,6 +50,8 @@ type LoggingBillingAccountBucketConfig interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IndexConfigs() LoggingBillingAccountBucketConfigIndexConfigsList
+	IndexConfigsInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -106,9 +108,11 @@ type LoggingBillingAccountBucketConfig interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCmekSettings(value *LoggingBillingAccountBucketConfigCmekSettings)
+	PutIndexConfigs(value interface{})
 	ResetCmekSettings()
 	ResetDescription()
 	ResetId()
+	ResetIndexConfigs()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -308,6 +312,26 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) IndexConfigs() LoggingBillingAccountBucketConfigIndexConfigsList {
+	var returns LoggingBillingAccountBucketConfigIndexConfigsList
+	_jsii_.Get(
+		j,
+		"indexConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) IndexConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"indexConfigsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LoggingBillingAccountBucketConfig) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -449,7 +473,7 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_billing_account_bucket_config google_logging_billing_account_bucket_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/logging_billing_account_bucket_config google_logging_billing_account_bucket_config} Resource.
 func NewLoggingBillingAccountBucketConfig(scope constructs.Construct, id *string, config *LoggingBillingAccountBucketConfigConfig) LoggingBillingAccountBucketConfig {
 	_init_.Initialize()
 
@@ -467,7 +491,7 @@ func NewLoggingBillingAccountBucketConfig(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_billing_account_bucket_config google_logging_billing_account_bucket_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/logging_billing_account_bucket_config google_logging_billing_account_bucket_config} Resource.
 func NewLoggingBillingAccountBucketConfig_Override(l LoggingBillingAccountBucketConfig, scope constructs.Construct, id *string, config *LoggingBillingAccountBucketConfigConfig) {
 	_init_.Initialize()
 
@@ -889,6 +913,17 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) PutCmekSettings(value *Log
 	)
 }
 
+func (l *jsiiProxy_LoggingBillingAccountBucketConfig) PutIndexConfigs(value interface{}) {
+	if err := l.validatePutIndexConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putIndexConfigs",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LoggingBillingAccountBucketConfig) ResetCmekSettings() {
 	_jsii_.InvokeVoid(
 		l,
@@ -909,6 +944,14 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) ResetId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoggingBillingAccountBucketConfig) ResetIndexConfigs() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetIndexConfigs",
 		nil, // no parameters
 	)
 }

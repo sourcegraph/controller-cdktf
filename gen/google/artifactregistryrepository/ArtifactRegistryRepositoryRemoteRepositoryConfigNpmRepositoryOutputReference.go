@@ -25,6 +25,8 @@ type ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReferenc
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomRepository() ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepositoryOutputReference
+	CustomRepositoryInput() *ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepository
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository
@@ -64,6 +66,8 @@ type ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReferenc
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCustomRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepository)
+	ResetCustomRepository()
 	ResetPublicRepository()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -105,6 +109,26 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference) CustomRepository() ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepositoryOutputReference {
+	var returns ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepositoryOutputReference
+	_jsii_.Get(
+		j,
+		"customRepository",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference) CustomRepositoryInput() *ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepository {
+	var returns *ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepository
+	_jsii_.Get(
+		j,
+		"customRepositoryInput",
 		&returns,
 	)
 	return returns
@@ -448,6 +472,25 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference) PutCustomRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepository) {
+	if err := a.validatePutCustomRepositoryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putCustomRepository",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference) ResetCustomRepository() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCustomRepository",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference) ResetPublicRepository() {

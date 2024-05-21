@@ -1,0 +1,6 @@
+package datagooglecomputereservation
+
+
+type DataGoogleComputeReservationSpecificReservationInstancePropertiesGuestAccelerators struct {
+}
+

@@ -10,14 +10,14 @@ type GoogleMonitoringSloRequestBasedSliGoodTotalRatio struct {
 	// Exactly two of 'good_service_filter','bad_service_filter','total_service_filter'
 	// must be set (good + bad = total is assumed).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#bad_service_filter GoogleMonitoringSlo#bad_service_filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_monitoring_slo#bad_service_filter GoogleMonitoringSlo#bad_service_filter}
 	BadServiceFilter *string `field:"optional" json:"badServiceFilter" yaml:"badServiceFilter"`
 	// A TimeSeries [monitoring filter](https://cloud.google.com/monitoring/api/v3/filters) quantifying good service provided. Must have ValueType = DOUBLE or ValueType = INT64 and must have MetricKind = DELTA or MetricKind = CUMULATIVE.
 	//
 	// Exactly two of 'good_service_filter','bad_service_filter','total_service_filter'
 	// must be set (good + bad = total is assumed).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#good_service_filter GoogleMonitoringSlo#good_service_filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_monitoring_slo#good_service_filter GoogleMonitoringSlo#good_service_filter}
 	GoodServiceFilter *string `field:"optional" json:"goodServiceFilter" yaml:"goodServiceFilter"`
 	// A TimeSeries [monitoring filter](https://cloud.google.com/monitoring/api/v3/filters) quantifying total demanded service.
 	//
@@ -27,7 +27,7 @@ type GoogleMonitoringSloRequestBasedSliGoodTotalRatio struct {
 	// Exactly two of 'good_service_filter','bad_service_filter','total_service_filter'
 	// must be set (good + bad = total is assumed).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#total_service_filter GoogleMonitoringSlo#total_service_filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_monitoring_slo#total_service_filter GoogleMonitoringSlo#total_service_filter}
 	TotalServiceFilter *string `field:"optional" json:"totalServiceFilter" yaml:"totalServiceFilter"`
 }
 

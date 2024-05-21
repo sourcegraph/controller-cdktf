@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeglobalforwardingrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule}.
 type GoogleComputeGlobalForwardingRule interface {
 	cdktf.TerraformResource
 	AllowPscGlobalAccess() interface{}
@@ -35,6 +35,7 @@ type GoogleComputeGlobalForwardingRule interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -98,6 +99,8 @@ type GoogleComputeGlobalForwardingRule interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SelfLink() *string
+	ServiceDirectoryRegistrations() GoogleComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference
+	ServiceDirectoryRegistrationsInput() *GoogleComputeGlobalForwardingRuleServiceDirectoryRegistrations
 	SourceIpRanges() *[]*string
 	SetSourceIpRanges(val *[]*string)
 	SourceIpRangesInput() *[]*string
@@ -109,6 +112,7 @@ type GoogleComputeGlobalForwardingRule interface {
 	TargetInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -141,6 +145,7 @@ type GoogleComputeGlobalForwardingRule interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMetadataFilters(value interface{})
+	PutServiceDirectoryRegistrations(value *GoogleComputeGlobalForwardingRuleServiceDirectoryRegistrations)
 	PutTimeouts(value *GoogleComputeGlobalForwardingRuleTimeouts)
 	ResetAllowPscGlobalAccess()
 	ResetDescription()
@@ -158,6 +163,7 @@ type GoogleComputeGlobalForwardingRule interface {
 	ResetOverrideLogicalId()
 	ResetPortRange()
 	ResetProject()
+	ResetServiceDirectoryRegistrations()
 	ResetSourceIpRanges()
 	ResetSubnetwork()
 	ResetTimeouts()
@@ -271,6 +277,16 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) DescriptionInput() *string
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -636,6 +652,26 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) ServiceDirectoryRegistrations() GoogleComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference {
+	var returns GoogleComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference
+	_jsii_.Get(
+		j,
+		"serviceDirectoryRegistrations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) ServiceDirectoryRegistrationsInput() *GoogleComputeGlobalForwardingRuleServiceDirectoryRegistrations {
+	var returns *GoogleComputeGlobalForwardingRuleServiceDirectoryRegistrations
+	_jsii_.Get(
+		j,
+		"serviceDirectoryRegistrationsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) SourceIpRanges() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -706,6 +742,16 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) TerraformGeneratorMetadata
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -747,7 +793,7 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
 func NewGoogleComputeGlobalForwardingRule(scope constructs.Construct, id *string, config *GoogleComputeGlobalForwardingRuleConfig) GoogleComputeGlobalForwardingRule {
 	_init_.Initialize()
 
@@ -765,7 +811,7 @@ func NewGoogleComputeGlobalForwardingRule(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
 func NewGoogleComputeGlobalForwardingRule_Override(g GoogleComputeGlobalForwardingRule, scope constructs.Construct, id *string, config *GoogleComputeGlobalForwardingRuleConfig) {
 	_init_.Initialize()
 
@@ -1297,6 +1343,17 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) PutMetadataFilters(value i
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) PutServiceDirectoryRegistrations(value *GoogleComputeGlobalForwardingRuleServiceDirectoryRegistrations) {
+	if err := g.validatePutServiceDirectoryRegistrationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putServiceDirectoryRegistrations",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) PutTimeouts(value *GoogleComputeGlobalForwardingRuleTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1416,6 +1473,14 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) ResetServiceDirectoryRegistrations() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServiceDirectoryRegistrations",
 		nil, // no parameters
 	)
 }

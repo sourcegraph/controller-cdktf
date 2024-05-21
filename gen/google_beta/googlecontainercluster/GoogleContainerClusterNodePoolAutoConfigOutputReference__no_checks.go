@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigOutputReference) validateSetResourceManagerTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

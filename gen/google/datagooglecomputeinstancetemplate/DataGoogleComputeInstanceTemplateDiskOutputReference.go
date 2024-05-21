@@ -40,6 +40,7 @@ type DataGoogleComputeInstanceTemplateDiskOutputReference interface {
 	Labels() cdktf.StringMap
 	Mode() *string
 	ProvisionedIops() *float64
+	ResourceManagerTags() cdktf.StringMap
 	ResourcePolicies() *[]*string
 	Source() *string
 	SourceImage() *string
@@ -249,6 +250,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) Provisi
 	_jsii_.Get(
 		j,
 		"provisionedIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) ResourceManagerTags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"resourceManagerTags",
 		&returns,
 	)
 	return returns

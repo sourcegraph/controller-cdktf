@@ -4,7 +4,7 @@ package googlenetworkserviceshttproute
 type GoogleNetworkServicesHttpRouteRulesActionDestinations struct {
 	// The URL of a BackendService to route traffic to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_http_route#service_name GoogleNetworkServicesHttpRoute#service_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_services_http_route#service_name GoogleNetworkServicesHttpRoute#service_name}
 	ServiceName *string `field:"optional" json:"serviceName" yaml:"serviceName"`
 	// Specifies the proportion of requests forwarded to the backend referenced by the serviceName field.
 	//
@@ -13,7 +13,7 @@ type GoogleNetworkServicesHttpRouteRulesActionDestinations struct {
 	// If weights are specified for any one service name, they need to be specified for all of them.
 	// If weights are unspecified for all services, then, traffic is distributed in equal proportions to all of them.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_http_route#weight GoogleNetworkServicesHttpRoute#weight}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_services_http_route#weight GoogleNetworkServicesHttpRoute#weight}
 	Weight *float64 `field:"optional" json:"weight" yaml:"weight"`
 }
 

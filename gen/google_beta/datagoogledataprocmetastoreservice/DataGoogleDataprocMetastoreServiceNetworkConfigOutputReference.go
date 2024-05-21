@@ -26,6 +26,7 @@ type DataGoogleDataprocMetastoreServiceNetworkConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomRoutesEnabled() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleDataprocMetastoreServiceNetworkConfig
@@ -112,6 +113,16 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreServiceNetworkConfigOutputReferenc
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleDataprocMetastoreServiceNetworkConfigOutputReference) CustomRoutesEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"customRoutesEnabled",
 		&returns,
 	)
 	return returns

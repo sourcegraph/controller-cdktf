@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleaccesscontextmanageraccesspolicyiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_access_policy_iam_policy google_access_context_manager_access_policy_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_access_context_manager_access_policy_iam_policy google_access_context_manager_access_policy_iam_policy}.
 type GoogleAccessContextManagerAccessPolicyIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamPolicy) TerraformRes
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_access_policy_iam_policy google_access_context_manager_access_policy_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_access_context_manager_access_policy_iam_policy google_access_context_manager_access_policy_iam_policy} Resource.
 func NewGoogleAccessContextManagerAccessPolicyIamPolicy(scope constructs.Construct, id *string, config *GoogleAccessContextManagerAccessPolicyIamPolicyConfig) GoogleAccessContextManagerAccessPolicyIamPolicy {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewGoogleAccessContextManagerAccessPolicyIamPolicy(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_access_policy_iam_policy google_access_context_manager_access_policy_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_access_context_manager_access_policy_iam_policy google_access_context_manager_access_policy_iam_policy} Resource.
 func NewGoogleAccessContextManagerAccessPolicyIamPolicy_Override(g GoogleAccessContextManagerAccessPolicyIamPolicy, scope constructs.Construct, id *string, config *GoogleAccessContextManagerAccessPolicyIamPolicyConfig) {
 	_init_.Initialize()
 

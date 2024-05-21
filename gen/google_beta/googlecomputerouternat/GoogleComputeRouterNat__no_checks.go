@@ -80,6 +80,10 @@ func validateGoogleComputeRouterNat_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRouterNat) validateSetAutoNetworkTierParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRouterNat) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (j *jsiiProxy_GoogleComputeRouterNat) validateSetEnableDynamicPortAllocatio
 }
 
 func (j *jsiiProxy_GoogleComputeRouterNat) validateSetEnableEndpointIndependentMappingParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat) validateSetEndpointTypesParameters(val *[]*string) error {
 	return nil
 }
 
@@ -161,6 +169,10 @@ func (j *jsiiProxy_GoogleComputeRouterNat) validateSetTcpTimeWaitTimeoutSecParam
 }
 
 func (j *jsiiProxy_GoogleComputeRouterNat) validateSetTcpTransitoryIdleTimeoutSecParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat) validateSetTypeParameters(val *string) error {
 	return nil
 }
 

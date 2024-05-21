@@ -9,9 +9,11 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/spannerinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/spanner_instance google_spanner_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/spanner_instance google_spanner_instance}.
 type SpannerInstance interface {
 	cdktf.TerraformResource
+	AutoscalingConfig() SpannerInstanceAutoscalingConfigOutputReference
+	AutoscalingConfigInput() *SpannerInstanceAutoscalingConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Config() *string
@@ -34,6 +36,7 @@ type SpannerInstance interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	ForceDestroy() interface{}
 	SetForceDestroy(val interface{})
 	ForceDestroyInput() interface{}
@@ -82,6 +85,7 @@ type SpannerInstance interface {
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -113,7 +117,9 @@ type SpannerInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAutoscalingConfig(value *SpannerInstanceAutoscalingConfig)
 	PutTimeouts(value *SpannerInstanceTimeouts)
+	ResetAutoscalingConfig()
 	ResetForceDestroy()
 	ResetId()
 	ResetLabels()
@@ -138,6 +144,26 @@ type SpannerInstance interface {
 // The jsii proxy struct for SpannerInstance
 type jsiiProxy_SpannerInstance struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_SpannerInstance) AutoscalingConfig() SpannerInstanceAutoscalingConfigOutputReference {
+	var returns SpannerInstanceAutoscalingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"autoscalingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpannerInstance) AutoscalingConfigInput() *SpannerInstanceAutoscalingConfig {
+	var returns *SpannerInstanceAutoscalingConfig
+	_jsii_.Get(
+		j,
+		"autoscalingConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SpannerInstance) CdktfStack() cdktf.TerraformStack {
@@ -225,6 +251,16 @@ func (j *jsiiProxy_SpannerInstance) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpannerInstance) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -470,6 +506,16 @@ func (j *jsiiProxy_SpannerInstance) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
+func (j *jsiiProxy_SpannerInstance) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SpannerInstance) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -511,7 +557,7 @@ func (j *jsiiProxy_SpannerInstance) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/spanner_instance google_spanner_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/spanner_instance google_spanner_instance} Resource.
 func NewSpannerInstance(scope constructs.Construct, id *string, config *SpannerInstanceConfig) SpannerInstance {
 	_init_.Initialize()
 
@@ -529,7 +575,7 @@ func NewSpannerInstance(scope constructs.Construct, id *string, config *SpannerI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/spanner_instance google_spanner_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/spanner_instance google_spanner_instance} Resource.
 func NewSpannerInstance_Override(s SpannerInstance, scope constructs.Construct, id *string, config *SpannerInstanceConfig) {
 	_init_.Initialize()
 
@@ -973,6 +1019,17 @@ func (s *jsiiProxy_SpannerInstance) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_SpannerInstance) PutAutoscalingConfig(value *SpannerInstanceAutoscalingConfig) {
+	if err := s.validatePutAutoscalingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putAutoscalingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SpannerInstance) PutTimeouts(value *SpannerInstanceTimeouts) {
 	if err := s.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -981,6 +1038,14 @@ func (s *jsiiProxy_SpannerInstance) PutTimeouts(value *SpannerInstanceTimeouts) 
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SpannerInstance) ResetAutoscalingConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAutoscalingConfig",
+		nil, // no parameters
 	)
 }
 

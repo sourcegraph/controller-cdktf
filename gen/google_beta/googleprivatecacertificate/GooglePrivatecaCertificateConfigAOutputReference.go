@@ -33,6 +33,8 @@ type GooglePrivatecaCertificateConfigAOutputReference interface {
 	PublicKeyInput() *GooglePrivatecaCertificateConfigPublicKey
 	SubjectConfig() GooglePrivatecaCertificateConfigSubjectConfigOutputReference
 	SubjectConfigInput() *GooglePrivatecaCertificateConfigSubjectConfig
+	SubjectKeyId() GooglePrivatecaCertificateConfigSubjectKeyIdOutputReference
+	SubjectKeyIdInput() *GooglePrivatecaCertificateConfigSubjectKeyId
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,7 +71,9 @@ type GooglePrivatecaCertificateConfigAOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPublicKey(value *GooglePrivatecaCertificateConfigPublicKey)
 	PutSubjectConfig(value *GooglePrivatecaCertificateConfigSubjectConfig)
+	PutSubjectKeyId(value *GooglePrivatecaCertificateConfigSubjectKeyId)
 	PutX509Config(value *GooglePrivatecaCertificateConfigX509Config)
+	ResetSubjectKeyId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -170,6 +174,26 @@ func (j *jsiiProxy_GooglePrivatecaCertificateConfigAOutputReference) SubjectConf
 	_jsii_.Get(
 		j,
 		"subjectConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePrivatecaCertificateConfigAOutputReference) SubjectKeyId() GooglePrivatecaCertificateConfigSubjectKeyIdOutputReference {
+	var returns GooglePrivatecaCertificateConfigSubjectKeyIdOutputReference
+	_jsii_.Get(
+		j,
+		"subjectKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePrivatecaCertificateConfigAOutputReference) SubjectKeyIdInput() *GooglePrivatecaCertificateConfigSubjectKeyId {
+	var returns *GooglePrivatecaCertificateConfigSubjectKeyId
+	_jsii_.Get(
+		j,
+		"subjectKeyIdInput",
 		&returns,
 	)
 	return returns
@@ -506,6 +530,17 @@ func (g *jsiiProxy_GooglePrivatecaCertificateConfigAOutputReference) PutSubjectC
 	)
 }
 
+func (g *jsiiProxy_GooglePrivatecaCertificateConfigAOutputReference) PutSubjectKeyId(value *GooglePrivatecaCertificateConfigSubjectKeyId) {
+	if err := g.validatePutSubjectKeyIdParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSubjectKeyId",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GooglePrivatecaCertificateConfigAOutputReference) PutX509Config(value *GooglePrivatecaCertificateConfigX509Config) {
 	if err := g.validatePutX509ConfigParameters(value); err != nil {
 		panic(err)
@@ -514,6 +549,14 @@ func (g *jsiiProxy_GooglePrivatecaCertificateConfigAOutputReference) PutX509Conf
 		g,
 		"putX509Config",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GooglePrivatecaCertificateConfigAOutputReference) ResetSubjectKeyId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSubjectKeyId",
+		nil, // no parameters
 	)
 }
 

@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputesubnetwork/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_subnetwork google_compute_subnetwork}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_subnetwork google_compute_subnetwork}.
 type GoogleComputeSubnetwork interface {
 	cdktf.TerraformResource
+	AllowSubnetCidrRoutesOverlap() interface{}
+	SetAllowSubnetCidrRoutesOverlap(val interface{})
+	AllowSubnetCidrRoutesOverlapInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -33,6 +36,8 @@ type GoogleComputeSubnetwork interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	ExternalIpv6Prefix() *string
+	SetExternalIpv6Prefix(val *string)
+	ExternalIpv6PrefixInput() *string
 	Fingerprint() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -46,6 +51,7 @@ type GoogleComputeSubnetwork interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InternalIpv6Prefix() *string
 	IpCidrRange() *string
 	SetIpCidrRange(val *string)
 	IpCidrRangeInput() *string
@@ -137,7 +143,9 @@ type GoogleComputeSubnetwork interface {
 	PutLogConfig(value *GoogleComputeSubnetworkLogConfig)
 	PutSecondaryIpRange(value interface{})
 	PutTimeouts(value *GoogleComputeSubnetworkTimeouts)
+	ResetAllowSubnetCidrRoutesOverlap()
 	ResetDescription()
+	ResetExternalIpv6Prefix()
 	ResetId()
 	ResetIpv6AccessType()
 	ResetLogConfig()
@@ -166,6 +174,26 @@ type GoogleComputeSubnetwork interface {
 // The jsii proxy struct for GoogleComputeSubnetwork
 type jsiiProxy_GoogleComputeSubnetwork struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork) AllowSubnetCidrRoutesOverlap() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowSubnetCidrRoutesOverlap",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork) AllowSubnetCidrRoutesOverlapInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowSubnetCidrRoutesOverlapInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleComputeSubnetwork) CdktfStack() cdktf.TerraformStack {
@@ -258,6 +286,16 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) ExternalIpv6Prefix() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeSubnetwork) ExternalIpv6PrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalIpv6PrefixInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeSubnetwork) Fingerprint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -323,6 +361,16 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork) InternalIpv6Prefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"internalIpv6Prefix",
 		&returns,
 	)
 	return returns
@@ -709,7 +757,7 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
 func NewGoogleComputeSubnetwork(scope constructs.Construct, id *string, config *GoogleComputeSubnetworkConfig) GoogleComputeSubnetwork {
 	_init_.Initialize()
 
@@ -727,7 +775,7 @@ func NewGoogleComputeSubnetwork(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
 func NewGoogleComputeSubnetwork_Override(g GoogleComputeSubnetwork, scope constructs.Construct, id *string, config *GoogleComputeSubnetworkConfig) {
 	_init_.Initialize()
 
@@ -735,6 +783,17 @@ func NewGoogleComputeSubnetwork_Override(g GoogleComputeSubnetwork, scope constr
 		"@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetwork",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork)SetAllowSubnetCidrRoutesOverlap(val interface{}) {
+	if err := j.validateSetAllowSubnetCidrRoutesOverlapParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowSubnetCidrRoutesOverlap",
+		val,
 	)
 }
 
@@ -775,6 +834,17 @@ func (j *jsiiProxy_GoogleComputeSubnetwork)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork)SetExternalIpv6Prefix(val *string) {
+	if err := j.validateSetExternalIpv6PrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalIpv6Prefix",
 		val,
 	)
 }
@@ -1248,10 +1318,26 @@ func (g *jsiiProxy_GoogleComputeSubnetwork) PutTimeouts(value *GoogleComputeSubn
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeSubnetwork) ResetAllowSubnetCidrRoutesOverlap() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllowSubnetCidrRoutesOverlap",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeSubnetwork) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSubnetwork) ResetExternalIpv6Prefix() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExternalIpv6Prefix",
 		nil, // no parameters
 	)
 }

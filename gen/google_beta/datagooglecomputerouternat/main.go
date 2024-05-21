@@ -12,6 +12,7 @@ func init() {
 		reflect.TypeOf((*DataGoogleComputeRouterNat)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "autoNetworkTier", GoGetter: "AutoNetworkTier"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
@@ -19,6 +20,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "drainNatIps", GoGetter: "DrainNatIps"},
 			_jsii_.MemberProperty{JsiiProperty: "enableDynamicPortAllocation", GoGetter: "EnableDynamicPortAllocation"},
 			_jsii_.MemberProperty{JsiiProperty: "enableEndpointIndependentMapping", GoGetter: "EnableEndpointIndependentMapping"},
+			_jsii_.MemberProperty{JsiiProperty: "endpointTypes", GoGetter: "EndpointTypes"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -70,6 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "udpIdleTimeoutSec", GoGetter: "UdpIdleTimeoutSec"},
 		},
 		func() interface{} {
@@ -191,7 +194,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceNatActiveIps", GoGetter: "SourceNatActiveIps"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceNatActiveRanges", GoGetter: "SourceNatActiveRanges"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceNatDrainIps", GoGetter: "SourceNatDrainIps"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceNatDrainRanges", GoGetter: "SourceNatDrainRanges"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},

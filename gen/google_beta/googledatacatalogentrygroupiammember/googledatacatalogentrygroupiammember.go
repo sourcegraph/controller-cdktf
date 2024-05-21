@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatacatalogentrygroupiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_data_catalog_entry_group_iam_member google_data_catalog_entry_group_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_data_catalog_entry_group_iam_member google_data_catalog_entry_group_iam_member}.
 type GoogleDataCatalogEntryGroupIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleDataCatalogEntryGroupIamMember) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_data_catalog_entry_group_iam_member google_data_catalog_entry_group_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_data_catalog_entry_group_iam_member google_data_catalog_entry_group_iam_member} Resource.
 func NewGoogleDataCatalogEntryGroupIamMember(scope constructs.Construct, id *string, config *GoogleDataCatalogEntryGroupIamMemberConfig) GoogleDataCatalogEntryGroupIamMember {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGoogleDataCatalogEntryGroupIamMember(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_data_catalog_entry_group_iam_member google_data_catalog_entry_group_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_data_catalog_entry_group_iam_member google_data_catalog_entry_group_iam_member} Resource.
 func NewGoogleDataCatalogEntryGroupIamMember_Override(g GoogleDataCatalogEntryGroupIamMember, scope constructs.Construct, id *string, config *GoogleDataCatalogEntryGroupIamMemberConfig) {
 	_init_.Initialize()
 

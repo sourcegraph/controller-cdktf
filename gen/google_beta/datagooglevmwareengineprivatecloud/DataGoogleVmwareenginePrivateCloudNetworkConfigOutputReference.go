@@ -25,6 +25,7 @@ type DataGoogleVmwareenginePrivateCloudNetworkConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DnsServerIp() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleVmwareenginePrivateCloudNetworkConfig
@@ -105,6 +106,16 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloudNetworkConfigOutputReferenc
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloudNetworkConfigOutputReference) DnsServerIp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsServerIp",
 		&returns,
 	)
 	return returns

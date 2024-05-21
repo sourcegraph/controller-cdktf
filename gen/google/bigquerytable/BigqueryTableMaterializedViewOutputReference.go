@@ -10,6 +10,9 @@ import (
 
 type BigqueryTableMaterializedViewOutputReference interface {
 	cdktf.ComplexObject
+	AllowNonIncrementalDefinition() interface{}
+	SetAllowNonIncrementalDefinition(val interface{})
+	AllowNonIncrementalDefinitionInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +73,7 @@ type BigqueryTableMaterializedViewOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAllowNonIncrementalDefinition()
 	ResetEnableRefresh()
 	ResetRefreshIntervalMs()
 	// Produce the Token's value at resolution time.
@@ -85,6 +89,26 @@ type BigqueryTableMaterializedViewOutputReference interface {
 // The jsii proxy struct for BigqueryTableMaterializedViewOutputReference
 type jsiiProxy_BigqueryTableMaterializedViewOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) AllowNonIncrementalDefinition() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowNonIncrementalDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) AllowNonIncrementalDefinitionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowNonIncrementalDefinitionInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) ComplexObjectIndex() interface{} {
@@ -242,6 +266,17 @@ func NewBigqueryTableMaterializedViewOutputReference_Override(b BigqueryTableMat
 		"@cdktf/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference)SetAllowNonIncrementalDefinition(val interface{}) {
+	if err := j.validateSetAllowNonIncrementalDefinitionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowNonIncrementalDefinition",
+		val,
 	)
 }
 
@@ -517,6 +552,14 @@ func (b *jsiiProxy_BigqueryTableMaterializedViewOutputReference) InterpolationFo
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BigqueryTableMaterializedViewOutputReference) ResetAllowNonIncrementalDefinition() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetAllowNonIncrementalDefinition",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BigqueryTableMaterializedViewOutputReference) ResetEnableRefresh() {

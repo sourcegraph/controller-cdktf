@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecontainerattachedcluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_container_attached_cluster google_container_attached_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_container_attached_cluster google_container_attached_cluster}.
 type GoogleContainerAttachedCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -17,6 +17,8 @@ type GoogleContainerAttachedCluster interface {
 	AnnotationsInput() *map[string]*string
 	Authorization() GoogleContainerAttachedClusterAuthorizationOutputReference
 	AuthorizationInput() *GoogleContainerAttachedClusterAuthorization
+	BinaryAuthorization() GoogleContainerAttachedClusterBinaryAuthorizationOutputReference
+	BinaryAuthorizationInput() *GoogleContainerAttachedClusterBinaryAuthorization
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterRegion() *string
@@ -44,6 +46,7 @@ type GoogleContainerAttachedCluster interface {
 	Distribution() *string
 	SetDistribution(val *string)
 	DistributionInput() *string
+	EffectiveAnnotations() cdktf.StringMap
 	Errors() GoogleContainerAttachedClusterErrorsList
 	Fleet() GoogleContainerAttachedClusterFleetOutputReference
 	FleetInput() *GoogleContainerAttachedClusterFleet
@@ -91,6 +94,8 @@ type GoogleContainerAttachedCluster interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	ProxyConfig() GoogleContainerAttachedClusterProxyConfigOutputReference
+	ProxyConfigInput() *GoogleContainerAttachedClusterProxyConfig
 	// Experimental.
 	RawOverrides() interface{}
 	Reconciling() cdktf.IResolvable
@@ -132,13 +137,16 @@ type GoogleContainerAttachedCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthorization(value *GoogleContainerAttachedClusterAuthorization)
+	PutBinaryAuthorization(value *GoogleContainerAttachedClusterBinaryAuthorization)
 	PutFleet(value *GoogleContainerAttachedClusterFleet)
 	PutLoggingConfig(value *GoogleContainerAttachedClusterLoggingConfig)
 	PutMonitoringConfig(value *GoogleContainerAttachedClusterMonitoringConfig)
 	PutOidcConfig(value *GoogleContainerAttachedClusterOidcConfig)
+	PutProxyConfig(value *GoogleContainerAttachedClusterProxyConfig)
 	PutTimeouts(value *GoogleContainerAttachedClusterTimeouts)
 	ResetAnnotations()
 	ResetAuthorization()
+	ResetBinaryAuthorization()
 	ResetDeletionPolicy()
 	ResetDescription()
 	ResetId()
@@ -148,6 +156,7 @@ type GoogleContainerAttachedCluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetProxyConfig()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -199,6 +208,26 @@ func (j *jsiiProxy_GoogleContainerAttachedCluster) AuthorizationInput() *GoogleC
 	_jsii_.Get(
 		j,
 		"authorizationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAttachedCluster) BinaryAuthorization() GoogleContainerAttachedClusterBinaryAuthorizationOutputReference {
+	var returns GoogleContainerAttachedClusterBinaryAuthorizationOutputReference
+	_jsii_.Get(
+		j,
+		"binaryAuthorization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAttachedCluster) BinaryAuthorizationInput() *GoogleContainerAttachedClusterBinaryAuthorization {
+	var returns *GoogleContainerAttachedClusterBinaryAuthorization
+	_jsii_.Get(
+		j,
+		"binaryAuthorizationInput",
 		&returns,
 	)
 	return returns
@@ -329,6 +358,16 @@ func (j *jsiiProxy_GoogleContainerAttachedCluster) DistributionInput() *string {
 	_jsii_.Get(
 		j,
 		"distributionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAttachedCluster) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
 		&returns,
 	)
 	return returns
@@ -604,6 +643,26 @@ func (j *jsiiProxy_GoogleContainerAttachedCluster) Provisioners() *[]interface{}
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerAttachedCluster) ProxyConfig() GoogleContainerAttachedClusterProxyConfigOutputReference {
+	var returns GoogleContainerAttachedClusterProxyConfigOutputReference
+	_jsii_.Get(
+		j,
+		"proxyConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAttachedCluster) ProxyConfigInput() *GoogleContainerAttachedClusterProxyConfig {
+	var returns *GoogleContainerAttachedClusterProxyConfig
+	_jsii_.Get(
+		j,
+		"proxyConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerAttachedCluster) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -715,7 +774,7 @@ func (j *jsiiProxy_GoogleContainerAttachedCluster) WorkloadIdentityConfig() Goog
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_container_attached_cluster google_container_attached_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_container_attached_cluster google_container_attached_cluster} Resource.
 func NewGoogleContainerAttachedCluster(scope constructs.Construct, id *string, config *GoogleContainerAttachedClusterConfig) GoogleContainerAttachedCluster {
 	_init_.Initialize()
 
@@ -733,7 +792,7 @@ func NewGoogleContainerAttachedCluster(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_container_attached_cluster google_container_attached_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_container_attached_cluster google_container_attached_cluster} Resource.
 func NewGoogleContainerAttachedCluster_Override(g GoogleContainerAttachedCluster, scope constructs.Construct, id *string, config *GoogleContainerAttachedClusterConfig) {
 	_init_.Initialize()
 
@@ -1188,6 +1247,17 @@ func (g *jsiiProxy_GoogleContainerAttachedCluster) PutAuthorization(value *Googl
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerAttachedCluster) PutBinaryAuthorization(value *GoogleContainerAttachedClusterBinaryAuthorization) {
+	if err := g.validatePutBinaryAuthorizationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBinaryAuthorization",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerAttachedCluster) PutFleet(value *GoogleContainerAttachedClusterFleet) {
 	if err := g.validatePutFleetParameters(value); err != nil {
 		panic(err)
@@ -1232,6 +1302,17 @@ func (g *jsiiProxy_GoogleContainerAttachedCluster) PutOidcConfig(value *GoogleCo
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerAttachedCluster) PutProxyConfig(value *GoogleContainerAttachedClusterProxyConfig) {
+	if err := g.validatePutProxyConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putProxyConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerAttachedCluster) PutTimeouts(value *GoogleContainerAttachedClusterTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1255,6 +1336,14 @@ func (g *jsiiProxy_GoogleContainerAttachedCluster) ResetAuthorization() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAuthorization",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerAttachedCluster) ResetBinaryAuthorization() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBinaryAuthorization",
 		nil, // no parameters
 	)
 }
@@ -1311,6 +1400,14 @@ func (g *jsiiProxy_GoogleContainerAttachedCluster) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerAttachedCluster) ResetProxyConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProxyConfig",
 		nil, // no parameters
 	)
 }

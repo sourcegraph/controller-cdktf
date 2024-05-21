@@ -267,6 +267,14 @@ func (j *jsiiProxy_GoogleLoggingProjectSink) validateSetCountParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_GoogleLoggingProjectSink) validateSetCustomWriterIdentityParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingProjectSink) validateSetDescriptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

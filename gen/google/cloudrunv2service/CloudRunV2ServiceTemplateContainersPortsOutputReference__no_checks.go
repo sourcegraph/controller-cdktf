@@ -60,7 +60,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) validateSetInternalValueParameters(val *CloudRunV2ServiceTemplateContainersPorts) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) vali
 	return nil
 }
 
-func validateNewCloudRunV2ServiceTemplateContainersPortsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCloudRunV2ServiceTemplateContainersPortsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

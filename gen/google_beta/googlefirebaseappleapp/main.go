@@ -12,6 +12,8 @@ func init() {
 		reflect.TypeOf((*GoogleFirebaseAppleApp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "apiKeyId", GoGetter: "ApiKeyId"},
+			_jsii_.MemberProperty{JsiiProperty: "apiKeyIdInput", GoGetter: "ApiKeyIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "appId", GoGetter: "AppId"},
 			_jsii_.MemberProperty{JsiiProperty: "appStoreId", GoGetter: "AppStoreId"},
 			_jsii_.MemberProperty{JsiiProperty: "appStoreIdInput", GoGetter: "AppStoreIdInput"},
@@ -51,6 +53,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetApiKeyId", GoMethod: "ResetApiKeyId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppStoreId", GoMethod: "ResetAppStoreId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeletionPolicy", GoMethod: "ResetDeletionPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},

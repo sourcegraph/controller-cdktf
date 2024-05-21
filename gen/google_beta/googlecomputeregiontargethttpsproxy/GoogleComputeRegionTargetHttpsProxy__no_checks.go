@@ -68,6 +68,10 @@ func validateGoogleComputeRegionTargetHttpsProxy_IsTerraformResourceParameters(x
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) validateSetCertificateManagerCertificatesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -101,6 +105,10 @@ func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) validateSetProvisionersP
 }
 
 func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) validateSetServerTlsPolicyParameters(val *string) error {
 	return nil
 }
 

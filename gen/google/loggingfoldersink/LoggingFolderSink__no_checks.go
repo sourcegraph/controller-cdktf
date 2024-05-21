@@ -108,6 +108,10 @@ func (j *jsiiProxy_LoggingFolderSink) validateSetIncludeChildrenParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_LoggingFolderSink) validateSetInterceptChildrenParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoggingFolderSink) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

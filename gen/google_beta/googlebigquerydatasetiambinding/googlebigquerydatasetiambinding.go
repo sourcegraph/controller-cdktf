@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigquerydatasetiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_dataset_iam_binding google_bigquery_dataset_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_bigquery_dataset_iam_binding google_bigquery_dataset_iam_binding}.
 type GoogleBigqueryDatasetIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleBigqueryDatasetIamBinding) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_dataset_iam_binding google_bigquery_dataset_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_bigquery_dataset_iam_binding google_bigquery_dataset_iam_binding} Resource.
 func NewGoogleBigqueryDatasetIamBinding(scope constructs.Construct, id *string, config *GoogleBigqueryDatasetIamBindingConfig) GoogleBigqueryDatasetIamBinding {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleBigqueryDatasetIamBinding(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_dataset_iam_binding google_bigquery_dataset_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_bigquery_dataset_iam_binding google_bigquery_dataset_iam_binding} Resource.
 func NewGoogleBigqueryDatasetIamBinding_Override(g GoogleBigqueryDatasetIamBinding, scope constructs.Construct, id *string, config *GoogleBigqueryDatasetIamBindingConfig) {
 	_init_.Initialize()
 

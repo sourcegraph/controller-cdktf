@@ -76,6 +76,10 @@ func (j *jsiiProxy_MlEngineModelTimeoutsOutputReference) validateSetTerraformRes
 	return nil
 }
 
+func (j *jsiiProxy_MlEngineModelTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewMlEngineModelTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

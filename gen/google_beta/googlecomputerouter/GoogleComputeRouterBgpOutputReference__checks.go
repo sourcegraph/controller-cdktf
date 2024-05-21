@@ -218,6 +218,14 @@ func (j *jsiiProxy_GoogleComputeRouterBgpOutputReference) validateSetComplexObje
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRouterBgpOutputReference) validateSetIdentifierRangeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRouterBgpOutputReference) validateSetInternalValueParameters(val *GoogleComputeRouterBgp) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

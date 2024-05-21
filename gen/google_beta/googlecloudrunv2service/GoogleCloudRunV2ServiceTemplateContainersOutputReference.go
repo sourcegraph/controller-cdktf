@@ -48,8 +48,8 @@ type GoogleCloudRunV2ServiceTemplateContainersOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
-	Ports() GoogleCloudRunV2ServiceTemplateContainersPortsList
-	PortsInput() interface{}
+	Ports() GoogleCloudRunV2ServiceTemplateContainersPortsOutputReference
+	PortsInput() *GoogleCloudRunV2ServiceTemplateContainersPorts
 	Resources() GoogleCloudRunV2ServiceTemplateContainersResourcesOutputReference
 	ResourcesInput() *GoogleCloudRunV2ServiceTemplateContainersResources
 	StartupProbe() GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference
@@ -93,7 +93,7 @@ type GoogleCloudRunV2ServiceTemplateContainersOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutEnv(value interface{})
 	PutLivenessProbe(value *GoogleCloudRunV2ServiceTemplateContainersLivenessProbe)
-	PutPorts(value interface{})
+	PutPorts(value *GoogleCloudRunV2ServiceTemplateContainersPorts)
 	PutResources(value *GoogleCloudRunV2ServiceTemplateContainersResources)
 	PutStartupProbe(value *GoogleCloudRunV2ServiceTemplateContainersStartupProbe)
 	PutVolumeMounts(value interface{})
@@ -313,8 +313,8 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) Nam
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) Ports() GoogleCloudRunV2ServiceTemplateContainersPortsList {
-	var returns GoogleCloudRunV2ServiceTemplateContainersPortsList
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) Ports() GoogleCloudRunV2ServiceTemplateContainersPortsOutputReference {
+	var returns GoogleCloudRunV2ServiceTemplateContainersPortsOutputReference
 	_jsii_.Get(
 		j,
 		"ports",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) Por
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) PortsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) PortsInput() *GoogleCloudRunV2ServiceTemplateContainersPorts {
+	var returns *GoogleCloudRunV2ServiceTemplateContainersPorts
 	_jsii_.Get(
 		j,
 		"portsInput",
@@ -790,7 +790,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) Put
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) PutPorts(value interface{}) {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) PutPorts(value *GoogleCloudRunV2ServiceTemplateContainersPorts) {
 	if err := g.validatePutPortsParameters(value); err != nil {
 		panic(err)
 	}

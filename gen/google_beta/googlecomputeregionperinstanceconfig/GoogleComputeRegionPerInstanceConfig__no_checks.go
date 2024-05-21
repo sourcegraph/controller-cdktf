@@ -116,6 +116,10 @@ func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfig) validateSetRegionInstan
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfig) validateSetRemoveInstanceOnDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfig) validateSetRemoveInstanceStateOnDestroyParameters(val interface{}) error {
 	return nil
 }

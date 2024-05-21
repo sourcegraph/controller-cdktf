@@ -80,6 +80,10 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutPrivateConnecti
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutSqlServerProfileParameters(value *GoogleDatastreamConnectionProfileSqlServerProfile) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutTimeoutsParameters(value *GoogleDatastreamConnectionProfileTimeouts) error {
 	return nil
 }

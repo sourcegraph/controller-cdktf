@@ -1,0 +1,6 @@
+package googleintegrationconnectorsconnection
+
+
+type GoogleIntegrationConnectorsConnectionEventingRuntimeDataStatus struct {
+}
+

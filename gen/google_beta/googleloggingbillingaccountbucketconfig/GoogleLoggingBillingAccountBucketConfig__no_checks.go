@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validatePutCmekSetti
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validatePutIndexConfigsParameters(value interface{}) error {
+	return nil
+}
+
 func validateGoogleLoggingBillingAccountBucketConfig_IsConstructParameters(x interface{}) error {
 	return nil
 }

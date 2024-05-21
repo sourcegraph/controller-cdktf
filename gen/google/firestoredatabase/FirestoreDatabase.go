@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/firestoredatabase/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/firestore_database google_firestore_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/firestore_database google_firestore_database}.
 type FirestoreDatabase interface {
 	cdktf.TerraformResource
 	AppEngineIntegrationMode() *string
@@ -31,10 +31,17 @@ type FirestoreDatabase interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	DeleteProtectionState() *string
+	SetDeleteProtectionState(val *string)
+	DeleteProtectionStateInput() *string
+	DeletionPolicy() *string
+	SetDeletionPolicy(val *string)
+	DeletionPolicyInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EarliestVersionTime() *string
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -60,6 +67,9 @@ type FirestoreDatabase interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PointInTimeRecoveryEnablement() *string
+	SetPointInTimeRecoveryEnablement(val *string)
+	PointInTimeRecoveryEnablementInput() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -84,6 +94,9 @@ type FirestoreDatabase interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	Uid() *string
+	UpdateTime() *string
+	VersionRetentionPeriod() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -112,10 +125,13 @@ type FirestoreDatabase interface {
 	PutTimeouts(value *FirestoreDatabaseTimeouts)
 	ResetAppEngineIntegrationMode()
 	ResetConcurrencyMode()
+	ResetDeleteProtectionState()
+	ResetDeletionPolicy()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPointInTimeRecoveryEnablement()
 	ResetProject()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -223,11 +239,61 @@ func (j *jsiiProxy_FirestoreDatabase) CreateTime() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FirestoreDatabase) DeleteProtectionState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteProtectionState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreDatabase) DeleteProtectionStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteProtectionStateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreDatabase) DeletionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreDatabase) DeletionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FirestoreDatabase) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreDatabase) EarliestVersionTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"earliestVersionTime",
 		&returns,
 	)
 	return returns
@@ -363,6 +429,26 @@ func (j *jsiiProxy_FirestoreDatabase) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_FirestoreDatabase) PointInTimeRecoveryEnablement() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pointInTimeRecoveryEnablement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreDatabase) PointInTimeRecoveryEnablementInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pointInTimeRecoveryEnablementInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FirestoreDatabase) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -483,8 +569,38 @@ func (j *jsiiProxy_FirestoreDatabase) TypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FirestoreDatabase) Uid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uid",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/firestore_database google_firestore_database} Resource.
+func (j *jsiiProxy_FirestoreDatabase) UpdateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreDatabase) VersionRetentionPeriod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionRetentionPeriod",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/firestore_database google_firestore_database} Resource.
 func NewFirestoreDatabase(scope constructs.Construct, id *string, config *FirestoreDatabaseConfig) FirestoreDatabase {
 	_init_.Initialize()
 
@@ -502,7 +618,7 @@ func NewFirestoreDatabase(scope constructs.Construct, id *string, config *Firest
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/firestore_database google_firestore_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/firestore_database google_firestore_database} Resource.
 func NewFirestoreDatabase_Override(f FirestoreDatabase, scope constructs.Construct, id *string, config *FirestoreDatabaseConfig) {
 	_init_.Initialize()
 
@@ -553,6 +669,28 @@ func (j *jsiiProxy_FirestoreDatabase)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FirestoreDatabase)SetDeleteProtectionState(val *string) {
+	if err := j.validateSetDeleteProtectionStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteProtectionState",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FirestoreDatabase)SetDeletionPolicy(val *string) {
+	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionPolicy",
 		val,
 	)
 }
@@ -613,6 +751,17 @@ func (j *jsiiProxy_FirestoreDatabase)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FirestoreDatabase)SetPointInTimeRecoveryEnablement(val *string) {
+	if err := j.validateSetPointInTimeRecoveryEnablementParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pointInTimeRecoveryEnablement",
 		val,
 	)
 }
@@ -951,6 +1100,22 @@ func (f *jsiiProxy_FirestoreDatabase) ResetConcurrencyMode() {
 	)
 }
 
+func (f *jsiiProxy_FirestoreDatabase) ResetDeleteProtectionState() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDeleteProtectionState",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FirestoreDatabase) ResetDeletionPolicy() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDeletionPolicy",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FirestoreDatabase) ResetId() {
 	_jsii_.InvokeVoid(
 		f,
@@ -963,6 +1128,14 @@ func (f *jsiiProxy_FirestoreDatabase) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FirestoreDatabase) ResetPointInTimeRecoveryEnablement() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetPointInTimeRecoveryEnablement",
 		nil, // no parameters
 	)
 }

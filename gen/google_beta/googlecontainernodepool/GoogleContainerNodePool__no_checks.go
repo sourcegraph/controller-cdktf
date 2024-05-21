@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleContainerNodePool) validatePutPlacementPolicyParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerNodePool) validatePutQueuedProvisioningParameters(value *GoogleContainerNodePoolQueuedProvisioning) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerNodePool) validatePutTimeoutsParameters(value *GoogleContainerNodePoolTimeouts) error {
 	return nil
 }

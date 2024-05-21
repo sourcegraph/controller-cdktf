@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlehealthcarefhirstoreiambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_fhir_store_iam_binding google_healthcare_fhir_store_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_healthcare_fhir_store_iam_binding google_healthcare_fhir_store_iam_binding}.
 type GoogleHealthcareFhirStoreIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreIamBinding) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_fhir_store_iam_binding google_healthcare_fhir_store_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_healthcare_fhir_store_iam_binding google_healthcare_fhir_store_iam_binding} Resource.
 func NewGoogleHealthcareFhirStoreIamBinding(scope constructs.Construct, id *string, config *GoogleHealthcareFhirStoreIamBindingConfig) GoogleHealthcareFhirStoreIamBinding {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewGoogleHealthcareFhirStoreIamBinding(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_fhir_store_iam_binding google_healthcare_fhir_store_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_healthcare_fhir_store_iam_binding google_healthcare_fhir_store_iam_binding} Resource.
 func NewGoogleHealthcareFhirStoreIamBinding_Override(g GoogleHealthcareFhirStoreIamBinding, scope constructs.Construct, id *string, config *GoogleHealthcareFhirStoreIamBindingConfig) {
 	_init_.Initialize()
 

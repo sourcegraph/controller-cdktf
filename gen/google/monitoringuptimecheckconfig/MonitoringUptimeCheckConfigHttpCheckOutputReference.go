@@ -35,6 +35,9 @@ type MonitoringUptimeCheckConfigHttpCheckOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomContentType() *string
+	SetCustomContentType(val *string)
+	CustomContentTypeInput() *string
 	// Experimental.
 	Fqn() *string
 	Headers() *map[string]*string
@@ -48,12 +51,16 @@ type MonitoringUptimeCheckConfigHttpCheckOutputReference interface {
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
+	PingConfig() MonitoringUptimeCheckConfigHttpCheckPingConfigOutputReference
+	PingConfigInput() *MonitoringUptimeCheckConfigHttpCheckPingConfig
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
 	RequestMethod() *string
 	SetRequestMethod(val *string)
 	RequestMethodInput() *string
+	ServiceAgentAuthentication() MonitoringUptimeCheckConfigHttpCheckServiceAgentAuthenticationOutputReference
+	ServiceAgentAuthenticationInput() *MonitoringUptimeCheckConfigHttpCheckServiceAgentAuthentication
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -94,15 +101,20 @@ type MonitoringUptimeCheckConfigHttpCheckOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAcceptedResponseStatusCodes(value interface{})
 	PutAuthInfo(value *MonitoringUptimeCheckConfigHttpCheckAuthInfo)
+	PutPingConfig(value *MonitoringUptimeCheckConfigHttpCheckPingConfig)
+	PutServiceAgentAuthentication(value *MonitoringUptimeCheckConfigHttpCheckServiceAgentAuthentication)
 	ResetAcceptedResponseStatusCodes()
 	ResetAuthInfo()
 	ResetBody()
 	ResetContentType()
+	ResetCustomContentType()
 	ResetHeaders()
 	ResetMaskHeaders()
 	ResetPath()
+	ResetPingConfig()
 	ResetPort()
 	ResetRequestMethod()
+	ResetServiceAgentAuthentication()
 	ResetUseSsl()
 	ResetValidateSsl()
 	// Produce the Token's value at resolution time.
@@ -230,6 +242,26 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) Creation
 	return returns
 }
 
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) CustomContentType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customContentType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) CustomContentTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customContentTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -310,6 +342,26 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) PathInpu
 	return returns
 }
 
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) PingConfig() MonitoringUptimeCheckConfigHttpCheckPingConfigOutputReference {
+	var returns MonitoringUptimeCheckConfigHttpCheckPingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"pingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) PingConfigInput() *MonitoringUptimeCheckConfigHttpCheckPingConfig {
+	var returns *MonitoringUptimeCheckConfigHttpCheckPingConfig
+	_jsii_.Get(
+		j,
+		"pingConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) Port() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -345,6 +397,26 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) RequestM
 	_jsii_.Get(
 		j,
 		"requestMethodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ServiceAgentAuthentication() MonitoringUptimeCheckConfigHttpCheckServiceAgentAuthenticationOutputReference {
+	var returns MonitoringUptimeCheckConfigHttpCheckServiceAgentAuthenticationOutputReference
+	_jsii_.Get(
+		j,
+		"serviceAgentAuthentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ServiceAgentAuthenticationInput() *MonitoringUptimeCheckConfigHttpCheckServiceAgentAuthentication {
+	var returns *MonitoringUptimeCheckConfigHttpCheckServiceAgentAuthentication
+	_jsii_.Get(
+		j,
+		"serviceAgentAuthenticationInput",
 		&returns,
 	)
 	return returns
@@ -478,6 +550,17 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetConten
 	_jsii_.Set(
 		j,
 		"contentType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetCustomContentType(val *string) {
+	if err := j.validateSetCustomContentTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customContentType",
 		val,
 	)
 }
@@ -800,6 +883,28 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) PutAuthI
 	)
 }
 
+func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) PutPingConfig(value *MonitoringUptimeCheckConfigHttpCheckPingConfig) {
+	if err := m.validatePutPingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putPingConfig",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) PutServiceAgentAuthentication(value *MonitoringUptimeCheckConfigHttpCheckServiceAgentAuthentication) {
+	if err := m.validatePutServiceAgentAuthenticationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putServiceAgentAuthentication",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ResetAcceptedResponseStatusCodes() {
 	_jsii_.InvokeVoid(
 		m,
@@ -832,6 +937,14 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ResetCon
 	)
 }
 
+func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ResetCustomContentType() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCustomContentType",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ResetHeaders() {
 	_jsii_.InvokeVoid(
 		m,
@@ -856,6 +969,14 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ResetPat
 	)
 }
 
+func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ResetPingConfig() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPingConfig",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ResetPort() {
 	_jsii_.InvokeVoid(
 		m,
@@ -868,6 +989,14 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ResetReq
 	_jsii_.InvokeVoid(
 		m,
 		"resetRequestMethod",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ResetServiceAgentAuthentication() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetServiceAgentAuthentication",
 		nil, // no parameters
 	)
 }

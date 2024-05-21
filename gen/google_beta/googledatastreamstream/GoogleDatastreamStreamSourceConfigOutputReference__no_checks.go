@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) validatePu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) validatePutSqlServerSourceConfigParameters(value *GoogleDatastreamStreamSourceConfigSqlServerSourceConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

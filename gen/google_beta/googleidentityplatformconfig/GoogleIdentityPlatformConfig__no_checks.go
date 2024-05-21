@@ -56,7 +56,31 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutBlockingFunctionsPar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutClientParameters(value *GoogleIdentityPlatformConfigClient) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutMfaParameters(value *GoogleIdentityPlatformConfigMfa) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutMonitoringParameters(value *GoogleIdentityPlatformConfigMonitoring) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutMultiTenantParameters(value *GoogleIdentityPlatformConfigMultiTenant) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutQuotaParameters(value *GoogleIdentityPlatformConfigQuota) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutSignInParameters(value *GoogleIdentityPlatformConfigSignIn) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) validatePutSmsRegionConfigParameters(value *GoogleIdentityPlatformConfigSmsRegionConfig) error {
 	return nil
 }
 

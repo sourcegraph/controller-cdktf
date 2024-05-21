@@ -44,15 +44,15 @@ func (s *jsiiProxy_SecretManagerSecretReplicationOutputReference) validateInterp
 	return nil
 }
 
+func (s *jsiiProxy_SecretManagerSecretReplicationOutputReference) validatePutAutoParameters(value *SecretManagerSecretReplicationAuto) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretManagerSecretReplicationOutputReference) validatePutUserManagedParameters(value *SecretManagerSecretReplicationUserManaged) error {
 	return nil
 }
 
 func (s *jsiiProxy_SecretManagerSecretReplicationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	return nil
-}
-
-func (j *jsiiProxy_SecretManagerSecretReplicationOutputReference) validateSetAutomaticParameters(val interface{}) error {
 	return nil
 }
 

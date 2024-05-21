@@ -25,6 +25,9 @@ type OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthOutputReferenc
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DayOffset() *float64
+	SetDayOffset(val *float64)
+	DayOffsetInput() *float64
 	DayOfWeek() *string
 	SetDayOfWeek(val *string)
 	DayOfWeekInput() *string
@@ -67,6 +70,7 @@ type OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthOutputReferenc
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDayOffset()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -107,6 +111,26 @@ func (j *jsiiProxy_OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonth
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthOutputReference) DayOffset() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dayOffset",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthOutputReference) DayOffsetInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dayOffsetInput",
 		&returns,
 	)
 	return returns
@@ -238,6 +262,17 @@ func (j *jsiiProxy_OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonth
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthOutputReference)SetDayOffset(val *float64) {
+	if err := j.validateSetDayOffsetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dayOffset",
 		val,
 	)
 }
@@ -481,6 +516,14 @@ func (o *jsiiProxy_OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonth
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthOutputReference) ResetDayOffset() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDayOffset",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

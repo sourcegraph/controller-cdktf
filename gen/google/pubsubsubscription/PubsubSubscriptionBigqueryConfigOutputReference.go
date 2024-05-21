@@ -43,6 +43,9 @@ type PubsubSubscriptionBigqueryConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UseTableSchema() interface{}
+	SetUseTableSchema(val interface{})
+	UseTableSchemaInput() interface{}
 	UseTopicSchema() interface{}
 	SetUseTopicSchema(val interface{})
 	UseTopicSchemaInput() interface{}
@@ -74,6 +77,7 @@ type PubsubSubscriptionBigqueryConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDropUnknownFields()
+	ResetUseTableSchema()
 	ResetUseTopicSchema()
 	ResetWriteMetadata()
 	// Produce the Token's value at resolution time.
@@ -196,6 +200,26 @@ func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) TerraformRes
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) UseTableSchema() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useTableSchema",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) UseTableSchemaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useTableSchemaInput",
 		&returns,
 	)
 	return returns
@@ -342,6 +366,17 @@ func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference)SetTerraformR
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference)SetUseTableSchema(val interface{}) {
+	if err := j.validateSetUseTableSchemaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useTableSchema",
 		val,
 	)
 }
@@ -558,6 +593,14 @@ func (p *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) ResetDropUnk
 	_jsii_.InvokeVoid(
 		p,
 		"resetDropUnknownFields",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) ResetUseTableSchema() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetUseTableSchema",
 		nil, // no parameters
 	)
 }

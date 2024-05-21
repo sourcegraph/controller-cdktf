@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/kmscryptokeyversion/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/kms_crypto_key_version google_kms_crypto_key_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/kms_crypto_key_version google_kms_crypto_key_version}.
 type KmsCryptoKeyVersion interface {
 	cdktf.TerraformResource
 	Algorithm() *string
@@ -33,6 +33,8 @@ type KmsCryptoKeyVersion interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExternalProtectionLevelOptions() KmsCryptoKeyVersionExternalProtectionLevelOptionsOutputReference
+	ExternalProtectionLevelOptionsInput() *KmsCryptoKeyVersionExternalProtectionLevelOptions
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -99,7 +101,9 @@ type KmsCryptoKeyVersion interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutExternalProtectionLevelOptions(value *KmsCryptoKeyVersionExternalProtectionLevelOptions)
 	PutTimeouts(value *KmsCryptoKeyVersionTimeouts)
+	ResetExternalProtectionLevelOptions()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -206,6 +210,26 @@ func (j *jsiiProxy_KmsCryptoKeyVersion) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsCryptoKeyVersion) ExternalProtectionLevelOptions() KmsCryptoKeyVersionExternalProtectionLevelOptionsOutputReference {
+	var returns KmsCryptoKeyVersionExternalProtectionLevelOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"externalProtectionLevelOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsCryptoKeyVersion) ExternalProtectionLevelOptionsInput() *KmsCryptoKeyVersionExternalProtectionLevelOptions {
+	var returns *KmsCryptoKeyVersionExternalProtectionLevelOptions
+	_jsii_.Get(
+		j,
+		"externalProtectionLevelOptionsInput",
 		&returns,
 	)
 	return returns
@@ -412,7 +436,7 @@ func (j *jsiiProxy_KmsCryptoKeyVersion) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/kms_crypto_key_version google_kms_crypto_key_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/kms_crypto_key_version google_kms_crypto_key_version} Resource.
 func NewKmsCryptoKeyVersion(scope constructs.Construct, id *string, config *KmsCryptoKeyVersionConfig) KmsCryptoKeyVersion {
 	_init_.Initialize()
 
@@ -430,7 +454,7 @@ func NewKmsCryptoKeyVersion(scope constructs.Construct, id *string, config *KmsC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/kms_crypto_key_version google_kms_crypto_key_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/kms_crypto_key_version google_kms_crypto_key_version} Resource.
 func NewKmsCryptoKeyVersion_Override(k KmsCryptoKeyVersion, scope constructs.Construct, id *string, config *KmsCryptoKeyVersionConfig) {
 	_init_.Initialize()
 
@@ -808,6 +832,17 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (k *jsiiProxy_KmsCryptoKeyVersion) PutExternalProtectionLevelOptions(value *KmsCryptoKeyVersionExternalProtectionLevelOptions) {
+	if err := k.validatePutExternalProtectionLevelOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putExternalProtectionLevelOptions",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KmsCryptoKeyVersion) PutTimeouts(value *KmsCryptoKeyVersionTimeouts) {
 	if err := k.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -816,6 +851,14 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) PutTimeouts(value *KmsCryptoKeyVersionTi
 		k,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (k *jsiiProxy_KmsCryptoKeyVersion) ResetExternalProtectionLevelOptions() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetExternalProtectionLevelOptions",
+		nil, // no parameters
 	)
 }
 

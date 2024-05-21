@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleClouddeployTarget) validatePutAnthosClusterParameters(v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleClouddeployTarget) validatePutCustomTargetParameters(value *GoogleClouddeployTargetCustomTarget) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleClouddeployTarget) validatePutExecutionConfigsParameters(value interface{}) error {
 	return nil
 }

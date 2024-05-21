@@ -25,6 +25,7 @@ type DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOu
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomRepository() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository
@@ -102,6 +103,16 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMav
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference) CustomRepository() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryList {
+	var returns DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryList
+	_jsii_.Get(
+		j,
+		"customRepository",
 		&returns,
 	)
 	return returns

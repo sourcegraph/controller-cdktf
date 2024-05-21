@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleloggingprojectbucketconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_project_bucket_config google_logging_project_bucket_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_logging_project_bucket_config google_logging_project_bucket_config}.
 type GoogleLoggingProjectBucketConfig interface {
 	cdktf.TerraformResource
 	BucketId() *string
@@ -50,6 +50,8 @@ type GoogleLoggingProjectBucketConfig interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IndexConfigs() GoogleLoggingProjectBucketConfigIndexConfigsList
+	IndexConfigsInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -112,10 +114,12 @@ type GoogleLoggingProjectBucketConfig interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCmekSettings(value *GoogleLoggingProjectBucketConfigCmekSettings)
+	PutIndexConfigs(value interface{})
 	ResetCmekSettings()
 	ResetDescription()
 	ResetEnableAnalytics()
 	ResetId()
+	ResetIndexConfigs()
 	ResetLocked()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -316,6 +320,26 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) IndexConfigs() GoogleLoggingProjectBucketConfigIndexConfigsList {
+	var returns GoogleLoggingProjectBucketConfigIndexConfigsList
+	_jsii_.Get(
+		j,
+		"indexConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) IndexConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"indexConfigsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -497,7 +521,7 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_project_bucket_config google_logging_project_bucket_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_logging_project_bucket_config google_logging_project_bucket_config} Resource.
 func NewGoogleLoggingProjectBucketConfig(scope constructs.Construct, id *string, config *GoogleLoggingProjectBucketConfigConfig) GoogleLoggingProjectBucketConfig {
 	_init_.Initialize()
 
@@ -515,7 +539,7 @@ func NewGoogleLoggingProjectBucketConfig(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_project_bucket_config google_logging_project_bucket_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_logging_project_bucket_config google_logging_project_bucket_config} Resource.
 func NewGoogleLoggingProjectBucketConfig_Override(g GoogleLoggingProjectBucketConfig, scope constructs.Construct, id *string, config *GoogleLoggingProjectBucketConfigConfig) {
 	_init_.Initialize()
 
@@ -959,6 +983,17 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) PutCmekSettings(value *Goog
 	)
 }
 
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) PutIndexConfigs(value interface{}) {
+	if err := g.validatePutIndexConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putIndexConfigs",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) ResetCmekSettings() {
 	_jsii_.InvokeVoid(
 		g,
@@ -987,6 +1022,14 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) ResetIndexConfigs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIndexConfigs",
 		nil, // no parameters
 	)
 }

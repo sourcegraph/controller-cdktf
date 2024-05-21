@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolProvider) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamWorkforcePoolProvider) validatePutExtraAttributesOauth2ClientParameters(value *GoogleIamWorkforcePoolProviderExtraAttributesOauth2Client) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamWorkforcePoolProvider) validatePutOidcParameters(value *GoogleIamWorkforcePoolProviderOidc) error {
 	return nil
 }

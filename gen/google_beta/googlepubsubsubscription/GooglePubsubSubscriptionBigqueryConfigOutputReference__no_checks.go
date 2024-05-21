@@ -76,6 +76,10 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) validateSetUseTableSchemaParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) validateSetUseTopicSchemaParameters(val interface{}) error {
 	return nil
 }

@@ -108,6 +108,10 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplate) validateSetLocationParame
 	return nil
 }
 
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplate) validateSetMaximumLifetimeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePrivatecaCertificateTemplate) validateSetNameParameters(val *string) error {
 	return nil
 }

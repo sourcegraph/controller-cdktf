@@ -92,6 +92,10 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePutStatefulHaConfigParameters(value *GoogleContainerClusterAddonsConfigStatefulHaConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

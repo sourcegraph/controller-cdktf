@@ -7,13 +7,13 @@ type GoogleBigqueryJobLoadTimePartitioning struct {
 	// Providing an empty string used to cause an error,
 	// but in OnePlatform the field will be treated as unset.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_job#type GoogleBigqueryJob#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_bigquery_job#type GoogleBigqueryJob#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Number of milliseconds for which to keep the storage for a partition.
 	//
 	// A wrapper is used here because 0 is an invalid value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_job#expiration_ms GoogleBigqueryJob#expiration_ms}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_bigquery_job#expiration_ms GoogleBigqueryJob#expiration_ms}
 	ExpirationMs *string `field:"optional" json:"expirationMs" yaml:"expirationMs"`
 	// If not set, the table is partitioned by pseudo column '_PARTITIONTIME';
 	//
@@ -21,7 +21,7 @@ type GoogleBigqueryJobLoadTimePartitioning struct {
 	// The field must be a top-level TIMESTAMP or DATE field. Its mode must be NULLABLE or REQUIRED.
 	// A wrapper is used here because an empty string is an invalid value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_job#field GoogleBigqueryJob#field}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_bigquery_job#field GoogleBigqueryJob#field}
 	Field *string `field:"optional" json:"field" yaml:"field"`
 }
 

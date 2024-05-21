@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleContainerAwsClusterAuthorizationOutputReference) valida
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAwsClusterAuthorizationOutputReference) validatePutAdminGroupsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAwsClusterAuthorizationOutputReference) validatePutAdminUsersParameters(value interface{}) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validatePutPla
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validatePutQueuedProvisioningParameters(value *GoogleContainerClusterNodePoolQueuedProvisioning) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) validatePutUpgradeSettingsParameters(value *GoogleContainerClusterNodePoolUpgradeSettings) error {
 	return nil
 }

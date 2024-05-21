@@ -43,9 +43,6 @@ type FirebaserulesReleaseTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Update() *string
-	SetUpdate(val *string)
-	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,7 +69,6 @@ type FirebaserulesReleaseTimeoutsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
-	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -198,26 +194,6 @@ func (j *jsiiProxy_FirebaserulesReleaseTimeoutsOutputReference) TerraformResourc
 	return returns
 }
 
-func (j *jsiiProxy_FirebaserulesReleaseTimeoutsOutputReference) Update() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"update",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FirebaserulesReleaseTimeoutsOutputReference) UpdateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updateInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewFirebaserulesReleaseTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FirebaserulesReleaseTimeoutsOutputReference {
 	_init_.Initialize()
@@ -319,17 +295,6 @@ func (j *jsiiProxy_FirebaserulesReleaseTimeoutsOutputReference)SetTerraformResou
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_FirebaserulesReleaseTimeoutsOutputReference)SetUpdate(val *string) {
-	if err := j.validateSetUpdateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"update",
 		val,
 	)
 }
@@ -532,14 +497,6 @@ func (f *jsiiProxy_FirebaserulesReleaseTimeoutsOutputReference) ResetDelete() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetDelete",
-		nil, // no parameters
-	)
-}
-
-func (f *jsiiProxy_FirebaserulesReleaseTimeoutsOutputReference) ResetUpdate() {
-	_jsii_.InvokeVoid(
-		f,
-		"resetUpdate",
 		nil, // no parameters
 	)
 }

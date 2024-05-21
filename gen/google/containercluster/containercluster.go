@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/containercluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/container_cluster google_container_cluster}.
 type ContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() ContainerClusterAddonsConfigOutputReference
@@ -52,6 +52,9 @@ type ContainerCluster interface {
 	DefaultMaxPodsPerNodeInput() *float64
 	DefaultSnatStatus() ContainerClusterDefaultSnatStatusOutputReference
 	DefaultSnatStatusInput() *ContainerClusterDefaultSnatStatus
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -64,9 +67,9 @@ type ContainerCluster interface {
 	EnableAutopilot() interface{}
 	SetEnableAutopilot(val interface{})
 	EnableAutopilotInput() interface{}
-	EnableBinaryAuthorization() interface{}
-	SetEnableBinaryAuthorization(val interface{})
-	EnableBinaryAuthorizationInput() interface{}
+	EnableCiliumClusterwideNetworkPolicy() interface{}
+	SetEnableCiliumClusterwideNetworkPolicy(val interface{})
+	EnableCiliumClusterwideNetworkPolicyInput() interface{}
 	EnableIntranodeVisibility() interface{}
 	SetEnableIntranodeVisibility(val interface{})
 	EnableIntranodeVisibilityInput() interface{}
@@ -88,6 +91,8 @@ type ContainerCluster interface {
 	SetEnableTpu(val interface{})
 	EnableTpuInput() interface{}
 	Endpoint() *string
+	Fleet() ContainerClusterFleetOutputReference
+	FleetInput() *ContainerClusterFleet
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -100,6 +105,8 @@ type ContainerCluster interface {
 	GatewayApiConfigInput() *ContainerClusterGatewayApiConfig
 	Id() *string
 	SetId(val *string)
+	IdentityServiceConfig() ContainerClusterIdentityServiceConfigOutputReference
+	IdentityServiceConfigInput() *ContainerClusterIdentityServiceConfig
 	IdInput() *string
 	InitialNodeCount() *float64
 	SetInitialNodeCount(val *float64)
@@ -155,6 +162,8 @@ type ContainerCluster interface {
 	SetNodeLocations(val *[]*string)
 	NodeLocationsInput() *[]*string
 	NodePool() ContainerClusterNodePoolList
+	NodePoolAutoConfig() ContainerClusterNodePoolAutoConfigOutputReference
+	NodePoolAutoConfigInput() *ContainerClusterNodePoolAutoConfig
 	NodePoolDefaults() ContainerClusterNodePoolDefaultsOutputReference
 	NodePoolDefaultsInput() *ContainerClusterNodePoolDefaults
 	NodePoolInput() interface{}
@@ -249,7 +258,9 @@ type ContainerCluster interface {
 	PutDefaultSnatStatus(value *ContainerClusterDefaultSnatStatus)
 	PutDnsConfig(value *ContainerClusterDnsConfig)
 	PutEnableK8SBetaApis(value *ContainerClusterEnableK8SBetaApis)
+	PutFleet(value *ContainerClusterFleet)
 	PutGatewayApiConfig(value *ContainerClusterGatewayApiConfig)
+	PutIdentityServiceConfig(value *ContainerClusterIdentityServiceConfig)
 	PutIpAllocationPolicy(value *ContainerClusterIpAllocationPolicy)
 	PutLoggingConfig(value *ContainerClusterLoggingConfig)
 	PutMaintenancePolicy(value *ContainerClusterMaintenancePolicy)
@@ -260,6 +271,7 @@ type ContainerCluster interface {
 	PutNetworkPolicy(value *ContainerClusterNetworkPolicy)
 	PutNodeConfig(value *ContainerClusterNodeConfig)
 	PutNodePool(value interface{})
+	PutNodePoolAutoConfig(value *ContainerClusterNodePoolAutoConfig)
 	PutNodePoolDefaults(value *ContainerClusterNodePoolDefaults)
 	PutNotificationConfig(value *ContainerClusterNotificationConfig)
 	PutPrivateClusterConfig(value *ContainerClusterPrivateClusterConfig)
@@ -282,10 +294,11 @@ type ContainerCluster interface {
 	ResetDatapathProvider()
 	ResetDefaultMaxPodsPerNode()
 	ResetDefaultSnatStatus()
+	ResetDeletionProtection()
 	ResetDescription()
 	ResetDnsConfig()
 	ResetEnableAutopilot()
-	ResetEnableBinaryAuthorization()
+	ResetEnableCiliumClusterwideNetworkPolicy()
 	ResetEnableIntranodeVisibility()
 	ResetEnableK8SBetaApis()
 	ResetEnableKubernetesAlpha()
@@ -293,8 +306,10 @@ type ContainerCluster interface {
 	ResetEnableLegacyAbac()
 	ResetEnableShieldedNodes()
 	ResetEnableTpu()
+	ResetFleet()
 	ResetGatewayApiConfig()
 	ResetId()
+	ResetIdentityServiceConfig()
 	ResetInitialNodeCount()
 	ResetIpAllocationPolicy()
 	ResetLocation()
@@ -313,6 +328,7 @@ type ContainerCluster interface {
 	ResetNodeConfig()
 	ResetNodeLocations()
 	ResetNodePool()
+	ResetNodePoolAutoConfig()
 	ResetNodePoolDefaults()
 	ResetNodeVersion()
 	ResetNotificationConfig()
@@ -627,6 +643,26 @@ func (j *jsiiProxy_ContainerCluster) DefaultSnatStatusInput() *ContainerClusterD
 	return returns
 }
 
+func (j *jsiiProxy_ContainerCluster) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerCluster) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -697,21 +733,21 @@ func (j *jsiiProxy_ContainerCluster) EnableAutopilotInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) EnableBinaryAuthorization() interface{} {
+func (j *jsiiProxy_ContainerCluster) EnableCiliumClusterwideNetworkPolicy() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"enableBinaryAuthorization",
+		"enableCiliumClusterwideNetworkPolicy",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ContainerCluster) EnableBinaryAuthorizationInput() interface{} {
+func (j *jsiiProxy_ContainerCluster) EnableCiliumClusterwideNetworkPolicyInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"enableBinaryAuthorizationInput",
+		"enableCiliumClusterwideNetworkPolicyInput",
 		&returns,
 	)
 	return returns
@@ -867,6 +903,26 @@ func (j *jsiiProxy_ContainerCluster) Endpoint() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerCluster) Fleet() ContainerClusterFleetOutputReference {
+	var returns ContainerClusterFleetOutputReference
+	_jsii_.Get(
+		j,
+		"fleet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) FleetInput() *ContainerClusterFleet {
+	var returns *ContainerClusterFleet
+	_jsii_.Get(
+		j,
+		"fleetInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerCluster) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -922,6 +978,26 @@ func (j *jsiiProxy_ContainerCluster) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) IdentityServiceConfig() ContainerClusterIdentityServiceConfigOutputReference {
+	var returns ContainerClusterIdentityServiceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"identityServiceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) IdentityServiceConfigInput() *ContainerClusterIdentityServiceConfig {
+	var returns *ContainerClusterIdentityServiceConfig
+	_jsii_.Get(
+		j,
+		"identityServiceConfigInput",
 		&returns,
 	)
 	return returns
@@ -1342,6 +1418,26 @@ func (j *jsiiProxy_ContainerCluster) NodePool() ContainerClusterNodePoolList {
 	_jsii_.Get(
 		j,
 		"nodePool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) NodePoolAutoConfig() ContainerClusterNodePoolAutoConfigOutputReference {
+	var returns ContainerClusterNodePoolAutoConfigOutputReference
+	_jsii_.Get(
+		j,
+		"nodePoolAutoConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) NodePoolAutoConfigInput() *ContainerClusterNodePoolAutoConfig {
+	var returns *ContainerClusterNodePoolAutoConfig
+	_jsii_.Get(
+		j,
+		"nodePoolAutoConfigInput",
 		&returns,
 	)
 	return returns
@@ -1778,7 +1874,7 @@ func (j *jsiiProxy_ContainerCluster) WorkloadIdentityConfigInput() *ContainerClu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster(scope constructs.Construct, id *string, config *ContainerClusterConfig) ContainerCluster {
 	_init_.Initialize()
 
@@ -1796,7 +1892,7 @@ func NewContainerCluster(scope constructs.Construct, id *string, config *Contain
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster_Override(c ContainerCluster, scope constructs.Construct, id *string, config *ContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -1873,6 +1969,17 @@ func (j *jsiiProxy_ContainerCluster)SetDefaultMaxPodsPerNode(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_ContainerCluster)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ContainerCluster)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -1903,13 +2010,13 @@ func (j *jsiiProxy_ContainerCluster)SetEnableAutopilot(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerCluster)SetEnableBinaryAuthorization(val interface{}) {
-	if err := j.validateSetEnableBinaryAuthorizationParameters(val); err != nil {
+func (j *jsiiProxy_ContainerCluster)SetEnableCiliumClusterwideNetworkPolicy(val interface{}) {
+	if err := j.validateSetEnableCiliumClusterwideNetworkPolicyParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"enableBinaryAuthorization",
+		"enableCiliumClusterwideNetworkPolicy",
 		val,
 	)
 }
@@ -2570,6 +2677,17 @@ func (c *jsiiProxy_ContainerCluster) PutEnableK8SBetaApis(value *ContainerCluste
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) PutFleet(value *ContainerClusterFleet) {
+	if err := c.validatePutFleetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putFleet",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) PutGatewayApiConfig(value *ContainerClusterGatewayApiConfig) {
 	if err := c.validatePutGatewayApiConfigParameters(value); err != nil {
 		panic(err)
@@ -2577,6 +2695,17 @@ func (c *jsiiProxy_ContainerCluster) PutGatewayApiConfig(value *ContainerCluster
 	_jsii_.InvokeVoid(
 		c,
 		"putGatewayApiConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) PutIdentityServiceConfig(value *ContainerClusterIdentityServiceConfig) {
+	if err := c.validatePutIdentityServiceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putIdentityServiceConfig",
 		[]interface{}{value},
 	)
 }
@@ -2687,6 +2816,17 @@ func (c *jsiiProxy_ContainerCluster) PutNodePool(value interface{}) {
 	_jsii_.InvokeVoid(
 		c,
 		"putNodePool",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) PutNodePoolAutoConfig(value *ContainerClusterNodePoolAutoConfig) {
+	if err := c.validatePutNodePoolAutoConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNodePoolAutoConfig",
 		[]interface{}{value},
 	)
 }
@@ -2897,6 +3037,14 @@ func (c *jsiiProxy_ContainerCluster) ResetDefaultSnatStatus() {
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeletionProtection",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
@@ -2921,10 +3069,10 @@ func (c *jsiiProxy_ContainerCluster) ResetEnableAutopilot() {
 	)
 }
 
-func (c *jsiiProxy_ContainerCluster) ResetEnableBinaryAuthorization() {
+func (c *jsiiProxy_ContainerCluster) ResetEnableCiliumClusterwideNetworkPolicy() {
 	_jsii_.InvokeVoid(
 		c,
-		"resetEnableBinaryAuthorization",
+		"resetEnableCiliumClusterwideNetworkPolicy",
 		nil, // no parameters
 	)
 }
@@ -2985,6 +3133,14 @@ func (c *jsiiProxy_ContainerCluster) ResetEnableTpu() {
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) ResetFleet() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetFleet",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) ResetGatewayApiConfig() {
 	_jsii_.InvokeVoid(
 		c,
@@ -2997,6 +3153,14 @@ func (c *jsiiProxy_ContainerCluster) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetIdentityServiceConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIdentityServiceConfig",
 		nil, // no parameters
 	)
 }
@@ -3141,6 +3305,14 @@ func (c *jsiiProxy_ContainerCluster) ResetNodePool() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetNodePool",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetNodePoolAutoConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNodePoolAutoConfig",
 		nil, // no parameters
 	)
 }

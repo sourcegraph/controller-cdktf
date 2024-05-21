@@ -88,6 +88,14 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) validatePutTimeoutsParameters(v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) validatePutUpgradePolicyParameters(value *GoogleGkeonpremVmwareClusterUpgradePolicy) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) validatePutVcenterParameters(value *GoogleGkeonpremVmwareClusterVcenter) error {
+	return nil
+}
+
 func validateGoogleGkeonpremVmwareCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -117,6 +125,10 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetCountParameters(val 
 }
 
 func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetDisableBundledIngressParameters(val interface{}) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (b *jsiiProxy_BigtableAppProfile) validatePutSingleClusterRoutingParameters
 	return nil
 }
 
+func (b *jsiiProxy_BigtableAppProfile) validatePutStandardIsolationParameters(value *BigtableAppProfileStandardIsolation) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableAppProfile) validatePutTimeoutsParameters(value *BigtableAppProfileTimeouts) error {
 	return nil
 }

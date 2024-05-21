@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleidentityplatforminboundsamlconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_identity_platform_inbound_saml_config google_identity_platform_inbound_saml_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_identity_platform_inbound_saml_config google_identity_platform_inbound_saml_config}.
 type GoogleIdentityPlatformInboundSamlConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -450,7 +450,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformInboundSamlConfig) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_identity_platform_inbound_saml_config google_identity_platform_inbound_saml_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_identity_platform_inbound_saml_config google_identity_platform_inbound_saml_config} Resource.
 func NewGoogleIdentityPlatformInboundSamlConfig(scope constructs.Construct, id *string, config *GoogleIdentityPlatformInboundSamlConfigConfig) GoogleIdentityPlatformInboundSamlConfig {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewGoogleIdentityPlatformInboundSamlConfig(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_identity_platform_inbound_saml_config google_identity_platform_inbound_saml_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_identity_platform_inbound_saml_config google_identity_platform_inbound_saml_config} Resource.
 func NewGoogleIdentityPlatformInboundSamlConfig_Override(g GoogleIdentityPlatformInboundSamlConfig, scope constructs.Construct, id *string, config *GoogleIdentityPlatformInboundSamlConfigConfig) {
 	_init_.Initialize()
 

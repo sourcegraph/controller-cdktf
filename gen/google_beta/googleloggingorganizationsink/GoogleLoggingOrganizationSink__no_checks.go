@@ -104,6 +104,10 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink) validateSetIncludeChildrenPara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) validateSetInterceptChildrenParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingOrganizationSink) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

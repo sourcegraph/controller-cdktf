@@ -4,7 +4,7 @@ package googlecomputepacketmirroring
 type GoogleComputePacketMirroringMirroredResourcesSubnetworks struct {
 	// The URL of the subnetwork where this rule should be active.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_packet_mirroring#url GoogleComputePacketMirroring#url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_packet_mirroring#url GoogleComputePacketMirroring#url}
 	Url *string `field:"required" json:"url" yaml:"url"`
 }
 

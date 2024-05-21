@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validate
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validatePutAdvancedSettingsParameters(value *GoogleDialogflowCxPageFormParametersAdvancedSettings) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validatePutFillBehaviorParameters(value *GoogleDialogflowCxPageFormParametersFillBehavior) error {
 	return nil
 }
@@ -57,6 +61,10 @@ func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validate
 }
 
 func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validateSetDefaultValueParameters(val *string) error {
 	return nil
 }
 

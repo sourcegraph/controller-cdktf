@@ -133,6 +133,17 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validatePutLinkedRouterApplia
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validatePutLinkedVpcNetworkParameters(value *GoogleNetworkConnectivitySpokeLinkedVpcNetwork) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validatePutLinkedVpnTunnelsParameters(value *GoogleNetworkConnectivitySpokeLinkedVpnTunnels) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

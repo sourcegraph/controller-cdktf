@@ -277,6 +277,14 @@ func (j *jsiiProxy_GoogleNotebooksRuntime) validateSetIdParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNotebooksRuntime) validateSetLabelsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNotebooksRuntime) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

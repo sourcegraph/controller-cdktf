@@ -76,10 +76,6 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterIngressPolicyTimeou
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterIngressPolicyTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewGoogleAccessContextManagerServicePerimeterIngressPolicyTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

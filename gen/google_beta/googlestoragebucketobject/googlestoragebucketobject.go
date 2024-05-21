@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlestoragebucketobject/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_storage_bucket_object google_storage_bucket_object}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_storage_bucket_object google_storage_bucket_object}.
 type GoogleStorageBucketObject interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -97,6 +97,8 @@ type GoogleStorageBucketObject interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Retention() GoogleStorageBucketObjectRetentionOutputReference
+	RetentionInput() *GoogleStorageBucketObjectRetention
 	SelfLink() *string
 	Source() *string
 	SetSource(val *string)
@@ -141,6 +143,7 @@ type GoogleStorageBucketObject interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCustomerEncryption(value *GoogleStorageBucketObjectCustomerEncryption)
+	PutRetention(value *GoogleStorageBucketObjectRetention)
 	PutTimeouts(value *GoogleStorageBucketObjectTimeouts)
 	ResetCacheControl()
 	ResetContent()
@@ -157,6 +160,7 @@ type GoogleStorageBucketObject interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRetention()
 	ResetSource()
 	ResetStorageClass()
 	ResetTemporaryHold()
@@ -626,6 +630,26 @@ func (j *jsiiProxy_GoogleStorageBucketObject) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleStorageBucketObject) Retention() GoogleStorageBucketObjectRetentionOutputReference {
+	var returns GoogleStorageBucketObjectRetentionOutputReference
+	_jsii_.Get(
+		j,
+		"retention",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucketObject) RetentionInput() *GoogleStorageBucketObjectRetention {
+	var returns *GoogleStorageBucketObjectRetention
+	_jsii_.Get(
+		j,
+		"retentionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleStorageBucketObject) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -747,7 +771,7 @@ func (j *jsiiProxy_GoogleStorageBucketObject) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_storage_bucket_object google_storage_bucket_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_storage_bucket_object google_storage_bucket_object} Resource.
 func NewGoogleStorageBucketObject(scope constructs.Construct, id *string, config *GoogleStorageBucketObjectConfig) GoogleStorageBucketObject {
 	_init_.Initialize()
 
@@ -765,7 +789,7 @@ func NewGoogleStorageBucketObject(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_storage_bucket_object google_storage_bucket_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_storage_bucket_object google_storage_bucket_object} Resource.
 func NewGoogleStorageBucketObject_Override(g GoogleStorageBucketObject, scope constructs.Construct, id *string, config *GoogleStorageBucketObjectConfig) {
 	_init_.Initialize()
 
@@ -1297,6 +1321,17 @@ func (g *jsiiProxy_GoogleStorageBucketObject) PutCustomerEncryption(value *Googl
 	)
 }
 
+func (g *jsiiProxy_GoogleStorageBucketObject) PutRetention(value *GoogleStorageBucketObjectRetention) {
+	if err := g.validatePutRetentionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRetention",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleStorageBucketObject) PutTimeouts(value *GoogleStorageBucketObjectTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1408,6 +1443,14 @@ func (g *jsiiProxy_GoogleStorageBucketObject) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageBucketObject) ResetRetention() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRetention",
 		nil, // no parameters
 	)
 }

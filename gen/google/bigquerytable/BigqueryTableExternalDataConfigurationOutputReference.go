@@ -52,6 +52,9 @@ type BigqueryTableExternalDataConfigurationOutputReference interface {
 	IgnoreUnknownValuesInput() interface{}
 	InternalValue() *BigqueryTableExternalDataConfiguration
 	SetInternalValue(val *BigqueryTableExternalDataConfiguration)
+	JsonExtension() *string
+	SetJsonExtension(val *string)
+	JsonExtensionInput() *string
 	JsonOptions() BigqueryTableExternalDataConfigurationJsonOptionsOutputReference
 	JsonOptionsInput() *BigqueryTableExternalDataConfigurationJsonOptions
 	MaxBadRecords() *float64
@@ -123,6 +126,7 @@ type BigqueryTableExternalDataConfigurationOutputReference interface {
 	ResetGoogleSheetsOptions()
 	ResetHivePartitioningOptions()
 	ResetIgnoreUnknownValues()
+	ResetJsonExtension()
 	ResetJsonOptions()
 	ResetMaxBadRecords()
 	ResetMetadataCacheMode()
@@ -371,6 +375,26 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) Intern
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) JsonExtension() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jsonExtension",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) JsonExtensionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jsonExtensionInput",
 		&returns,
 	)
 	return returns
@@ -688,6 +712,17 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference)SetInte
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference)SetJsonExtension(val *string) {
+	if err := j.validateSetJsonExtensionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jsonExtension",
 		val,
 	)
 }
@@ -1103,6 +1138,14 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) ResetI
 	_jsii_.InvokeVoid(
 		b,
 		"resetIgnoreUnknownValues",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) ResetJsonExtension() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetJsonExtension",
 		nil, // no parameters
 	)
 }

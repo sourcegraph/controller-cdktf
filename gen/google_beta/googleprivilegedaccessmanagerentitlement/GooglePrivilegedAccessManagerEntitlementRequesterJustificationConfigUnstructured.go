@@ -1,0 +1,6 @@
+package googleprivilegedaccessmanagerentitlement
+
+
+type GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructured struct {
+}
+

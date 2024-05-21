@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleContainerAttachedClusterAuthorizationOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerAttachedClusterAuthorizationOutputReference) validateSetAdminGroupsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerAttachedClusterAuthorizationOutputReference) validateSetAdminUsersParameters(val *[]*string) error {
 	return nil
 }

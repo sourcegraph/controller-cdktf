@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleIamWorkforcePool) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamWorkforcePool) validatePutAccessRestrictionsParameters(value *GoogleIamWorkforcePoolAccessRestrictions) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamWorkforcePool) validatePutTimeoutsParameters(value *GoogleIamWorkforcePoolTimeouts) error {
 	return nil
 }

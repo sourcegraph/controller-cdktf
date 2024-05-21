@@ -80,6 +80,10 @@ func (g *jsiiProxy_GoogleStorageBucket) validatePutRetentionPolicyParameters(val
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageBucket) validatePutSoftDeletePolicyParameters(value *GoogleStorageBucketSoftDeletePolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageBucket) validatePutTimeoutsParameters(value *GoogleStorageBucketTimeouts) error {
 	return nil
 }
@@ -113,6 +117,10 @@ func (j *jsiiProxy_GoogleStorageBucket) validateSetCountParameters(val interface
 }
 
 func (j *jsiiProxy_GoogleStorageBucket) validateSetDefaultEventBasedHoldParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleStorageBucket) validateSetEnableObjectRetentionParameters(val interface{}) error {
 	return nil
 }
 
@@ -153,6 +161,10 @@ func (j *jsiiProxy_GoogleStorageBucket) validateSetPublicAccessPreventionParamet
 }
 
 func (j *jsiiProxy_GoogleStorageBucket) validateSetRequesterPaysParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleStorageBucket) validateSetRpoParameters(val *string) error {
 	return nil
 }
 

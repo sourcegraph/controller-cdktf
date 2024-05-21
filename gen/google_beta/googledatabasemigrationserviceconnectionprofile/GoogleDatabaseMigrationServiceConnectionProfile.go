@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatabasemigrationserviceconnectionprofile/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_database_migration_service_connection_profile google_database_migration_service_connection_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_database_migration_service_connection_profile google_database_migration_service_connection_profile}.
 type GoogleDatabaseMigrationServiceConnectionProfile interface {
 	cdktf.TerraformResource
 	Alloydb() GoogleDatabaseMigrationServiceConnectionProfileAlloydbOutputReference
@@ -40,6 +40,7 @@ type GoogleDatabaseMigrationServiceConnectionProfile interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	Error() GoogleDatabaseMigrationServiceConnectionProfileErrorList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -67,6 +68,8 @@ type GoogleDatabaseMigrationServiceConnectionProfile interface {
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	Oracle() GoogleDatabaseMigrationServiceConnectionProfileOracleOutputReference
+	OracleInput() *GoogleDatabaseMigrationServiceConnectionProfileOracle
 	Postgresql() GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference
 	PostgresqlInput() *GoogleDatabaseMigrationServiceConnectionProfilePostgresql
 	Project() *string
@@ -85,6 +88,7 @@ type GoogleDatabaseMigrationServiceConnectionProfile interface {
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -119,6 +123,7 @@ type GoogleDatabaseMigrationServiceConnectionProfile interface {
 	PutAlloydb(value *GoogleDatabaseMigrationServiceConnectionProfileAlloydb)
 	PutCloudsql(value *GoogleDatabaseMigrationServiceConnectionProfileCloudsql)
 	PutMysql(value *GoogleDatabaseMigrationServiceConnectionProfileMysql)
+	PutOracle(value *GoogleDatabaseMigrationServiceConnectionProfileOracle)
 	PutPostgresql(value *GoogleDatabaseMigrationServiceConnectionProfilePostgresql)
 	PutTimeouts(value *GoogleDatabaseMigrationServiceConnectionProfileTimeouts)
 	ResetAlloydb()
@@ -128,6 +133,7 @@ type GoogleDatabaseMigrationServiceConnectionProfile interface {
 	ResetLabels()
 	ResetLocation()
 	ResetMysql()
+	ResetOracle()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -299,6 +305,16 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) DisplayNameI
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) Error() GoogleDatabaseMigrationServiceConnectionProfileErrorList {
 	var returns GoogleDatabaseMigrationServiceConnectionProfileErrorList
 	_jsii_.Get(
@@ -449,6 +465,26 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) Node() const
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) Oracle() GoogleDatabaseMigrationServiceConnectionProfileOracleOutputReference {
+	var returns GoogleDatabaseMigrationServiceConnectionProfileOracleOutputReference
+	_jsii_.Get(
+		j,
+		"oracle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) OracleInput() *GoogleDatabaseMigrationServiceConnectionProfileOracle {
+	var returns *GoogleDatabaseMigrationServiceConnectionProfileOracle
+	_jsii_.Get(
+		j,
+		"oracleInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) Postgresql() GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference {
 	var returns GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference
 	_jsii_.Get(
@@ -539,6 +575,16 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) TerraformGen
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -580,7 +626,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) TimeoutsInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource.
 func NewGoogleDatabaseMigrationServiceConnectionProfile(scope constructs.Construct, id *string, config *GoogleDatabaseMigrationServiceConnectionProfileConfig) GoogleDatabaseMigrationServiceConnectionProfile {
 	_init_.Initialize()
 
@@ -598,7 +644,7 @@ func NewGoogleDatabaseMigrationServiceConnectionProfile(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource.
 func NewGoogleDatabaseMigrationServiceConnectionProfile_Override(g GoogleDatabaseMigrationServiceConnectionProfile, scope constructs.Construct, id *string, config *GoogleDatabaseMigrationServiceConnectionProfileConfig) {
 	_init_.Initialize()
 
@@ -1042,6 +1088,17 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) PutMysql(val
 	)
 }
 
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) PutOracle(value *GoogleDatabaseMigrationServiceConnectionProfileOracle) {
+	if err := g.validatePutOracleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putOracle",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) PutPostgresql(value *GoogleDatabaseMigrationServiceConnectionProfilePostgresql) {
 	if err := g.validatePutPostgresqlParameters(value); err != nil {
 		panic(err)
@@ -1116,6 +1173,14 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) ResetMysql()
 	_jsii_.InvokeVoid(
 		g,
 		"resetMysql",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) ResetOracle() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOracle",
 		nil, // no parameters
 	)
 }

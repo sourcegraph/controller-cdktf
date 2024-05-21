@@ -152,6 +152,17 @@ func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) validate
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) validatePutNetworkPerformanceConfigParameters(value *GoogleContainerNodePoolNetworkConfigNetworkPerformanceConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) validatePutPodCidrOverprovisionConfigParameters(value *GoogleContainerNodePoolNetworkConfigPodCidrOverprovisionConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -70,9 +70,6 @@ type GoogleLoggingMetricBucketOptionsExponentialBucketsOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetGrowthFactor()
-	ResetNumFiniteBuckets()
-	ResetScale()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -518,30 +515,6 @@ func (g *jsiiProxy_GoogleLoggingMetricBucketOptionsExponentialBucketsOutputRefer
 	)
 
 	return returns
-}
-
-func (g *jsiiProxy_GoogleLoggingMetricBucketOptionsExponentialBucketsOutputReference) ResetGrowthFactor() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetGrowthFactor",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleLoggingMetricBucketOptionsExponentialBucketsOutputReference) ResetNumFiniteBuckets() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetNumFiniteBuckets",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleLoggingMetricBucketOptionsExponentialBucketsOutputReference) ResetScale() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetScale",
-		nil, // no parameters
-	)
 }
 
 func (g *jsiiProxy_GoogleLoggingMetricBucketOptionsExponentialBucketsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

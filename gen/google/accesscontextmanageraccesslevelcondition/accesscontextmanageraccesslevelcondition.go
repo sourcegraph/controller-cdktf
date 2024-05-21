@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/accesscontextmanageraccesslevelcondition/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/access_context_manager_access_level_condition google_access_context_manager_access_level_condition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/access_context_manager_access_level_condition google_access_context_manager_access_level_condition}.
 type AccessContextManagerAccessLevelCondition interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -83,6 +83,8 @@ type AccessContextManagerAccessLevelCondition interface {
 	TerraformResourceType() *string
 	Timeouts() AccessContextManagerAccessLevelConditionTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	VpcNetworkSources() AccessContextManagerAccessLevelConditionVpcNetworkSourcesList
+	VpcNetworkSourcesInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -110,6 +112,7 @@ type AccessContextManagerAccessLevelCondition interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutDevicePolicy(value *AccessContextManagerAccessLevelConditionDevicePolicy)
 	PutTimeouts(value *AccessContextManagerAccessLevelConditionTimeouts)
+	PutVpcNetworkSources(value interface{})
 	ResetDevicePolicy()
 	ResetId()
 	ResetIpSubnetworks()
@@ -121,6 +124,7 @@ type AccessContextManagerAccessLevelCondition interface {
 	ResetRegions()
 	ResetRequiredAccessLevels()
 	ResetTimeouts()
+	ResetVpcNetworkSources()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -476,8 +480,28 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelCondition) TimeoutsInput() int
 	return returns
 }
 
+func (j *jsiiProxy_AccessContextManagerAccessLevelCondition) VpcNetworkSources() AccessContextManagerAccessLevelConditionVpcNetworkSourcesList {
+	var returns AccessContextManagerAccessLevelConditionVpcNetworkSourcesList
+	_jsii_.Get(
+		j,
+		"vpcNetworkSources",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/access_context_manager_access_level_condition google_access_context_manager_access_level_condition} Resource.
+func (j *jsiiProxy_AccessContextManagerAccessLevelCondition) VpcNetworkSourcesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vpcNetworkSourcesInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/access_context_manager_access_level_condition google_access_context_manager_access_level_condition} Resource.
 func NewAccessContextManagerAccessLevelCondition(scope constructs.Construct, id *string, config *AccessContextManagerAccessLevelConditionConfig) AccessContextManagerAccessLevelCondition {
 	_init_.Initialize()
 
@@ -495,7 +519,7 @@ func NewAccessContextManagerAccessLevelCondition(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/access_context_manager_access_level_condition google_access_context_manager_access_level_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/access_context_manager_access_level_condition google_access_context_manager_access_level_condition} Resource.
 func NewAccessContextManagerAccessLevelCondition_Override(a AccessContextManagerAccessLevelCondition, scope constructs.Construct, id *string, config *AccessContextManagerAccessLevelConditionConfig) {
 	_init_.Initialize()
 
@@ -939,6 +963,17 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelCondition) PutTimeouts(value *
 	)
 }
 
+func (a *jsiiProxy_AccessContextManagerAccessLevelCondition) PutVpcNetworkSources(value interface{}) {
+	if err := a.validatePutVpcNetworkSourcesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putVpcNetworkSources",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccessContextManagerAccessLevelCondition) ResetDevicePolicy() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1007,6 +1042,14 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelCondition) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevelCondition) ResetVpcNetworkSources() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetVpcNetworkSources",
 		nil, // no parameters
 	)
 }

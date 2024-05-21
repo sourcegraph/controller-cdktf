@@ -41,6 +41,9 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeC
 	Service() *string
 	SetService(val *string)
 	ServiceInput() *string
+	StableCutbackDuration() *string
+	SetStableCutbackDuration(val *string)
+	StableCutbackDurationInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -74,6 +77,7 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeC
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetRouteUpdateWaitTime()
+	ResetStableCutbackDuration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -219,6 +223,26 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	return returns
 }
 
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshOutputReference) StableCutbackDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stableCutbackDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshOutputReference) StableCutbackDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stableCutbackDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -340,6 +364,17 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	_jsii_.Set(
 		j,
 		"service",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshOutputReference)SetStableCutbackDuration(val *string) {
+	if err := j.validateSetStableCutbackDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stableCutbackDuration",
 		val,
 	)
 }
@@ -556,6 +591,14 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	_jsii_.InvokeVoid(
 		g,
 		"resetRouteUpdateWaitTime",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshOutputReference) ResetStableCutbackDuration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStableCutbackDuration",
 		nil, // no parameters
 	)
 }

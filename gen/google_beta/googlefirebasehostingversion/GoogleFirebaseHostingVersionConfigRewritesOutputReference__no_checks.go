@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesOutputReference) validateSetPathParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesOutputReference) validateSetRegexParameters(val *string) error {
 	return nil
 }

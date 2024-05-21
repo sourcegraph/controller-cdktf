@@ -68,6 +68,10 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutNamedPortParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutParamsParameters(value *GoogleComputeInstanceGroupManagerParams) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStatefulDiskParameters(value interface{}) error {
 	return nil
 }

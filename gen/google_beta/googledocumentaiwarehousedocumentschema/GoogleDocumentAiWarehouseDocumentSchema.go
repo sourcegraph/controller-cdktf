@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledocumentaiwarehousedocumentschema/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_document_ai_warehouse_document_schema google_document_ai_warehouse_document_schema}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_document_ai_warehouse_document_schema google_document_ai_warehouse_document_schema}.
 type GoogleDocumentAiWarehouseDocumentSchema interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_document_ai_warehouse_document_schema google_document_ai_warehouse_document_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_document_ai_warehouse_document_schema google_document_ai_warehouse_document_schema} Resource.
 func NewGoogleDocumentAiWarehouseDocumentSchema(scope constructs.Construct, id *string, config *GoogleDocumentAiWarehouseDocumentSchemaConfig) GoogleDocumentAiWarehouseDocumentSchema {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewGoogleDocumentAiWarehouseDocumentSchema(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_document_ai_warehouse_document_schema google_document_ai_warehouse_document_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_document_ai_warehouse_document_schema google_document_ai_warehouse_document_schema} Resource.
 func NewGoogleDocumentAiWarehouseDocumentSchema_Override(g GoogleDocumentAiWarehouseDocumentSchema, scope constructs.Construct, id *string, config *GoogleDocumentAiWarehouseDocumentSchemaConfig) {
 	_init_.Initialize()
 

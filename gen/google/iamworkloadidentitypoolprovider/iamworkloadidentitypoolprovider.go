@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/iamworkloadidentitypoolprovider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider}.
 type IamWorkloadIdentityPoolProvider interface {
 	cdktf.TerraformResource
 	AttributeCondition() *string
@@ -78,6 +78,8 @@ type IamWorkloadIdentityPoolProvider interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Saml() IamWorkloadIdentityPoolProviderSamlOutputReference
+	SamlInput() *IamWorkloadIdentityPoolProviderSaml
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -120,6 +122,7 @@ type IamWorkloadIdentityPoolProvider interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAws(value *IamWorkloadIdentityPoolProviderAws)
 	PutOidc(value *IamWorkloadIdentityPoolProviderOidc)
+	PutSaml(value *IamWorkloadIdentityPoolProviderSaml)
 	PutTimeouts(value *IamWorkloadIdentityPoolProviderTimeouts)
 	ResetAttributeCondition()
 	ResetAttributeMapping()
@@ -133,6 +136,7 @@ type IamWorkloadIdentityPoolProvider interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetSaml()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -469,6 +473,26 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolProvider) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IamWorkloadIdentityPoolProvider) Saml() IamWorkloadIdentityPoolProviderSamlOutputReference {
+	var returns IamWorkloadIdentityPoolProviderSamlOutputReference
+	_jsii_.Get(
+		j,
+		"saml",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IamWorkloadIdentityPoolProvider) SamlInput() *IamWorkloadIdentityPoolProviderSaml {
+	var returns *IamWorkloadIdentityPoolProviderSaml
+	_jsii_.Get(
+		j,
+		"samlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IamWorkloadIdentityPoolProvider) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -570,7 +594,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolProvider) WorkloadIdentityPoolProvider
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Resource.
 func NewIamWorkloadIdentityPoolProvider(scope constructs.Construct, id *string, config *IamWorkloadIdentityPoolProviderConfig) IamWorkloadIdentityPoolProvider {
 	_init_.Initialize()
 
@@ -588,7 +612,7 @@ func NewIamWorkloadIdentityPoolProvider(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Resource.
 func NewIamWorkloadIdentityPoolProvider_Override(i IamWorkloadIdentityPoolProvider, scope constructs.Construct, id *string, config *IamWorkloadIdentityPoolProviderConfig) {
 	_init_.Initialize()
 
@@ -1054,6 +1078,17 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolProvider) PutOidc(value *IamWorkloadId
 	)
 }
 
+func (i *jsiiProxy_IamWorkloadIdentityPoolProvider) PutSaml(value *IamWorkloadIdentityPoolProviderSaml) {
+	if err := i.validatePutSamlParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putSaml",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IamWorkloadIdentityPoolProvider) PutTimeouts(value *IamWorkloadIdentityPoolProviderTimeouts) {
 	if err := i.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1141,6 +1176,14 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolProvider) ResetProject() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IamWorkloadIdentityPoolProvider) ResetSaml() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetSaml",
 		nil, // no parameters
 	)
 }

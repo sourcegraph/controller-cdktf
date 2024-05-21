@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutput
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateSetConnectionTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateSetEnablePrivateEndpointParameters(val interface{}) error {
 	return nil
 }

@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefirebaseandroidapp/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_firebase_android_app google_firebase_android_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_firebase_android_app google_firebase_android_app}.
 type GoogleFirebaseAndroidApp interface {
 	cdktf.TerraformResource
+	ApiKeyId() *string
+	SetApiKeyId(val *string)
+	ApiKeyIdInput() *string
 	AppId() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -110,12 +113,12 @@ type GoogleFirebaseAndroidApp interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleFirebaseAndroidAppTimeouts)
+	ResetApiKeyId()
 	ResetDeletionPolicy()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPackageName()
 	ResetProject()
 	ResetSha1Hashes()
 	ResetSha256Hashes()
@@ -133,6 +136,26 @@ type GoogleFirebaseAndroidApp interface {
 // The jsii proxy struct for GoogleFirebaseAndroidApp
 type jsiiProxy_GoogleFirebaseAndroidApp struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleFirebaseAndroidApp) ApiKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseAndroidApp) ApiKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiKeyIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleFirebaseAndroidApp) AppId() *string {
@@ -486,7 +509,7 @@ func (j *jsiiProxy_GoogleFirebaseAndroidApp) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_firebase_android_app google_firebase_android_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_firebase_android_app google_firebase_android_app} Resource.
 func NewGoogleFirebaseAndroidApp(scope constructs.Construct, id *string, config *GoogleFirebaseAndroidAppConfig) GoogleFirebaseAndroidApp {
 	_init_.Initialize()
 
@@ -504,7 +527,7 @@ func NewGoogleFirebaseAndroidApp(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_firebase_android_app google_firebase_android_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_firebase_android_app google_firebase_android_app} Resource.
 func NewGoogleFirebaseAndroidApp_Override(g GoogleFirebaseAndroidApp, scope constructs.Construct, id *string, config *GoogleFirebaseAndroidAppConfig) {
 	_init_.Initialize()
 
@@ -512,6 +535,17 @@ func NewGoogleFirebaseAndroidApp_Override(g GoogleFirebaseAndroidApp, scope cons
 		"@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleFirebaseAndroidApp)SetApiKeyId(val *string) {
+	if err := j.validateSetApiKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"apiKeyId",
+		val,
 	)
 }
 
@@ -937,6 +971,14 @@ func (g *jsiiProxy_GoogleFirebaseAndroidApp) PutTimeouts(value *GoogleFirebaseAn
 	)
 }
 
+func (g *jsiiProxy_GoogleFirebaseAndroidApp) ResetApiKeyId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetApiKeyId",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleFirebaseAndroidApp) ResetDeletionPolicy() {
 	_jsii_.InvokeVoid(
 		g,
@@ -957,14 +999,6 @@ func (g *jsiiProxy_GoogleFirebaseAndroidApp) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleFirebaseAndroidApp) ResetPackageName() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetPackageName",
 		nil, // no parameters
 	)
 }

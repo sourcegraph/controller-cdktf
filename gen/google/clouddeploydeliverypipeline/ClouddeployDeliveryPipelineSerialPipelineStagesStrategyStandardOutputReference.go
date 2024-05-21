@@ -29,6 +29,10 @@ type ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputRefere
 	Fqn() *string
 	InternalValue() *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandard
 	SetInternalValue(val *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandard)
+	Postdeploy() ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeployOutputReference
+	PostdeployInput() *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeploy
+	Predeploy() ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeployOutputReference
+	PredeployInput() *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeploy
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +68,10 @@ type ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputRefere
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPostdeploy(value *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeploy)
+	PutPredeploy(value *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeploy)
+	ResetPostdeploy()
+	ResetPredeploy()
 	ResetVerify()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -125,6 +133,46 @@ func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStanda
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) Postdeploy() ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeployOutputReference {
+	var returns ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeployOutputReference
+	_jsii_.Get(
+		j,
+		"postdeploy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) PostdeployInput() *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeploy {
+	var returns *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeploy
+	_jsii_.Get(
+		j,
+		"postdeployInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) Predeploy() ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeployOutputReference {
+	var returns ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeployOutputReference
+	_jsii_.Get(
+		j,
+		"predeploy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) PredeployInput() *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeploy {
+	var returns *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeploy
+	_jsii_.Get(
+		j,
+		"predeployInput",
 		&returns,
 	)
 	return returns
@@ -448,6 +496,44 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStanda
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) PutPostdeploy(value *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPostdeploy) {
+	if err := c.validatePutPostdeployParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putPostdeploy",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) PutPredeploy(value *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeploy) {
+	if err := c.validatePutPredeployParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putPredeploy",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) ResetPostdeploy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPostdeploy",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) ResetPredeploy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPredeploy",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference) ResetVerify() {

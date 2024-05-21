@@ -27,6 +27,8 @@ type GkeprivateConfig struct {
 	Subnetwork *string `field:"required" json:"subnetwork" yaml:"subnetwork"`
 	// Create additional firewall rules.
 	AddClusterFirewallRules *bool `field:"optional" json:"addClusterFirewallRules" yaml:"addClusterFirewallRules"`
+	// List of _names_ of the additional secondary subnet ip ranges to use for pods.
+	AdditionalIpRangePods *[]*string `field:"optional" json:"additionalIpRangePods" yaml:"additionalIpRangePods"`
 	// Create master_webhook firewall rules for ports defined in `firewall_inbound_ports`.
 	AddMasterWebhookFirewallRules *bool `field:"optional" json:"addMasterWebhookFirewallRules" yaml:"addMasterWebhookFirewallRules"`
 	// Create GKE shadow firewall (the same as default firewall rules with firewall logs enabled).
@@ -72,7 +74,7 @@ type GkeprivateConfig struct {
 	ClusterResourceLabels *map[string]*string `field:"optional" json:"clusterResourceLabels" yaml:"clusterResourceLabels"`
 	// Available options include ENABLED, DISABLED, and SYSTEM_ONLY.
 	ClusterTelemetryType *string `field:"optional" json:"clusterTelemetryType" yaml:"clusterTelemetryType"`
-	// (Beta) Whether ConfigConnector is enabled for this cluster.
+	// Whether ConfigConnector is enabled for this cluster.
 	ConfigConnector *bool `field:"optional" json:"configConnector" yaml:"configConnector"`
 	// Enables the installation of ip masquerading, which is usually no longer required when using aliasied IP addresses.
 	//
@@ -98,6 +100,10 @@ type GkeprivateConfig struct {
 	// Default: 110.
 	//
 	DefaultMaxPodsPerNode *float64 `field:"optional" json:"defaultMaxPodsPerNode" yaml:"defaultMaxPodsPerNode"`
+	// Whether or not to allow Terraform to destroy the cluster.
+	// Default: true.
+	//
+	DeletionProtection *bool `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// (Beta) A toggle for Terraform and kubectl to connect to the master's internal IP address during deployment.
 	DeployUsingPrivateEndpoint *bool `field:"optional" json:"deployUsingPrivateEndpoint" yaml:"deployUsingPrivateEndpoint"`
 	// The description of the cluster.
@@ -116,6 +122,10 @@ type GkeprivateConfig struct {
 	EnableConfidentialNodes *bool `field:"optional" json:"enableConfidentialNodes" yaml:"enableConfidentialNodes"`
 	// Enables Cost Allocation Feature and the cluster name and namespace of your GKE workloads appear in the labels field of the billing export to BigQuery.
 	EnableCostAllocation *bool `field:"optional" json:"enableCostAllocation" yaml:"enableCostAllocation"`
+	// Enable FQDN Network Policies on the cluster.
+	EnableFqdnNetworkPolicy *bool `field:"optional" json:"enableFqdnNetworkPolicy" yaml:"enableFqdnNetworkPolicy"`
+	// Enable image streaming on cluster level.
+	EnableGcfs *bool `field:"optional" json:"enableGcfs" yaml:"enableGcfs"`
 	// Enable the Identity Service component, which allows customers to use external identity providers with the K8S API.
 	EnableIdentityService *bool `field:"optional" json:"enableIdentityService" yaml:"enableIdentityService"`
 	// Whether Intra-node visibility is enabled for this cluster.
@@ -128,6 +138,10 @@ type GkeprivateConfig struct {
 	EnableKubernetesAlpha *bool `field:"optional" json:"enableKubernetesAlpha" yaml:"enableKubernetesAlpha"`
 	// Enable L4 ILB Subsetting on the cluster.
 	EnableL4IlbSubsetting *bool `field:"optional" json:"enableL4IlbSubsetting" yaml:"enableL4IlbSubsetting"`
+	// Controls the issuance of workload mTLS certificates.
+	//
+	// When enabled the GKE Workload Identity Certificates controller and node agent will be deployed in the cluster. Requires Workload Identity.
+	EnableMeshCertificates *bool `field:"optional" json:"enableMeshCertificates" yaml:"enableMeshCertificates"`
 	// Whether to enable network egress metering for this cluster.
 	//
 	// If enabled, a daemonset will be created in the cluster to meter network egress traffic.
@@ -168,6 +182,10 @@ type GkeprivateConfig struct {
 	// Default: 1000.
 	//
 	FirewallPriority *float64 `field:"optional" json:"firewallPriority" yaml:"firewallPriority"`
+	// (Optional) Register the cluster with the fleet in this project.
+	FleetProject *string `field:"optional" json:"fleetProject" yaml:"fleetProject"`
+	// (Optional) Grant the fleet project service identity the `roles/gkehub.serviceAgent` and `roles/gkehub.crossProjectServiceAgent` roles.
+	FleetProjectGrantServiceAgent *bool `field:"optional" json:"fleetProjectGrantServiceAgent" yaml:"fleetProjectGrantServiceAgent"`
 	// The gateway api channel of this cluster.
 	//
 	// Accepted values are `CHANNEL_STANDARD` and `CHANNEL_DISABLED`.
@@ -176,6 +194,8 @@ type GkeprivateConfig struct {
 	// Default: true.
 	//
 	GcePdCsiDriver *bool `field:"optional" json:"gcePdCsiDriver" yaml:"gcePdCsiDriver"`
+	// Whether GCE FUSE CSI driver is enabled for this cluster.
+	GcsFuseCsiDriver *bool `field:"optional" json:"gcsFuseCsiDriver" yaml:"gcsFuseCsiDriver"`
 	// Whether Backup for GKE agent is enabled for this cluster.
 	GkeBackupAgentConfig *bool `field:"optional" json:"gkeBackupAgentConfig" yaml:"gkeBackupAgentConfig"`
 	// Grants created cluster-specific service account storage.objectViewer and artifactregistry.reader roles.
@@ -251,15 +271,23 @@ type GkeprivateConfig struct {
 	//
 	MasterGlobalAccessEnabled *bool `field:"optional" json:"masterGlobalAccessEnabled" yaml:"masterGlobalAccessEnabled"`
 	// (Beta) The IP range in CIDR notation to use for the hosted master network.
+	//
+	// Optional for Autopilot clusters.
 	// Default: 10.0.0.0/28
 	//
 	MasterIpv4CidrBlock *string `field:"optional" json:"masterIpv4CidrBlock" yaml:"masterIpv4CidrBlock"`
-	// List of services to monitor: SYSTEM_COMPONENTS, WORKLOADS (provider version >= 3.89.0). Empty list is default GKE configuration.
+	// List of services to monitor: SYSTEM_COMPONENTS, WORKLOADS.
+	//
+	// Empty list is default GKE configuration.
 	MonitoringEnabledComponents *[]*string `field:"optional" json:"monitoringEnabledComponents" yaml:"monitoringEnabledComponents"`
 	// Configuration for Managed Service for Prometheus.
 	//
 	// Whether or not the managed collection is enabled.
 	MonitoringEnableManagedPrometheus *bool `field:"optional" json:"monitoringEnableManagedPrometheus" yaml:"monitoringEnableManagedPrometheus"`
+	// Whether or not the advanced datapath metrics are enabled.
+	MonitoringEnableObservabilityMetrics *bool `field:"optional" json:"monitoringEnableObservabilityMetrics" yaml:"monitoringEnableObservabilityMetrics"`
+	// Mode used to make advanced datapath metrics relay available.
+	MonitoringObservabilityMetricsRelayMode *string `field:"optional" json:"monitoringObservabilityMetricsRelayMode" yaml:"monitoringObservabilityMetricsRelayMode"`
 	// The monitoring service that the cluster should write metrics to.
 	//
 	// Automatically send metrics from pods in the cluster to the Google Cloud Monitoring API. VM metrics will be collected by Google Compute Engine regardless of this setting Available options include monitoring.googleapis.com, monitoring.googleapis.com/kubernetes (beta) and none
@@ -274,6 +302,8 @@ type GkeprivateConfig struct {
 	NetworkPolicyProvider *string `field:"optional" json:"networkPolicyProvider" yaml:"networkPolicyProvider"`
 	// The project ID of the shared VPC's host (for shared vpc support).
 	NetworkProjectId *string `field:"optional" json:"networkProjectId" yaml:"networkProjectId"`
+	// (Optional) - List of network tags applied to auto-provisioned node pools.
+	NetworkTags *[]*string `field:"optional" json:"networkTags" yaml:"networkTags"`
 	// Specifies how node metadata is exposed to the workload running on the node.
 	// Default: GKE_METADATA.
 	//
@@ -350,6 +380,18 @@ type GkeprivateConfig struct {
 	ResourceUsageExportDatasetId *string `field:"optional" json:"resourceUsageExportDatasetId" yaml:"resourceUsageExportDatasetId"`
 	// (Beta) Enable GKE Sandbox (Do not forget to set `image_type` = `COS_CONTAINERD` to use it).
 	SandboxEnabled *bool `field:"optional" json:"sandboxEnabled" yaml:"sandboxEnabled"`
+	// Security posture mode.
+	//
+	// Accepted values are `DISABLED` and `BASIC`. Defaults to `DISABLED`.
+	// Default: DISABLED.
+	//
+	SecurityPostureMode *string `field:"optional" json:"securityPostureMode" yaml:"securityPostureMode"`
+	// Security posture vulnerability mode.
+	//
+	// Accepted values are `VULNERABILITY_DISABLED` and `VULNERABILITY_BASIC`. Defaults to `VULNERABILITY_DISABLED`.
+	// Default: VULNERABILITY_DISABLED.
+	//
+	SecurityPostureVulnerabilityMode *string `field:"optional" json:"securityPostureVulnerabilityMode" yaml:"securityPostureVulnerabilityMode"`
 	// The service account to run nodes as if not overridden in `node_pools`.
 	//
 	// The create_service_account variable default value (true) will cause a cluster-specific service account to be created. This service account should already exists and it will be used by the node pools. If you wish to only override the service account name, you can use service_account_name variable.
@@ -372,6 +414,12 @@ type GkeprivateConfig struct {
 	// Default: 999.
 	//
 	ShadowFirewallRulesPriority *float64 `field:"optional" json:"shadowFirewallRulesPriority" yaml:"shadowFirewallRulesPriority"`
+	// The stack type to use for this cluster.
+	//
+	// Either `IPV4` or `IPV4_IPV6`. Defaults to `IPV4`.
+	// Default: IPV4.
+	//
+	StackType *string `field:"optional" json:"stackType" yaml:"stackType"`
 	// Map of stub domains and their resolvers to forward DNS queries for a certain domain to an external DNS server.
 	// Default: [object Object]
 	// The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
@@ -388,6 +436,12 @@ type GkeprivateConfig struct {
 	// Default: The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}
 	//
 	WindowsNodePools *[]*map[string]*string `field:"optional" json:"windowsNodePools" yaml:"windowsNodePools"`
+	// (beta) Workload config audit mode.
+	// Default: DISABLED.
+	//
+	WorkloadConfigAuditMode *string `field:"optional" json:"workloadConfigAuditMode" yaml:"workloadConfigAuditMode"`
+	// (beta) Vulnerability mode.
+	WorkloadVulnerabilityMode *string `field:"optional" json:"workloadVulnerabilityMode" yaml:"workloadVulnerabilityMode"`
 	// The zones to host the cluster in (optional if regional cluster / required if zonal).
 	Zones *[]*string `field:"optional" json:"zones" yaml:"zones"`
 }

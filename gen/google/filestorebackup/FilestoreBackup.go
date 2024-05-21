@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/filestorebackup/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/filestore_backup google_filestore_backup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/filestore_backup google_filestore_backup}.
 type FilestoreBackup interface {
 	cdktf.TerraformResource
 	CapacityGb() *string
@@ -34,6 +34,7 @@ type FilestoreBackup interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	DownloadBytes() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -85,6 +86,7 @@ type FilestoreBackup interface {
 	StorageBytes() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -235,6 +237,16 @@ func (j *jsiiProxy_FilestoreBackup) DownloadBytes() *string {
 	_jsii_.Get(
 		j,
 		"downloadBytes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FilestoreBackup) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -510,6 +522,16 @@ func (j *jsiiProxy_FilestoreBackup) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
+func (j *jsiiProxy_FilestoreBackup) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FilestoreBackup) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -551,7 +573,7 @@ func (j *jsiiProxy_FilestoreBackup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/filestore_backup google_filestore_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/filestore_backup google_filestore_backup} Resource.
 func NewFilestoreBackup(scope constructs.Construct, id *string, config *FilestoreBackupConfig) FilestoreBackup {
 	_init_.Initialize()
 
@@ -569,7 +591,7 @@ func NewFilestoreBackup(scope constructs.Construct, id *string, config *Filestor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/filestore_backup google_filestore_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/filestore_backup google_filestore_backup} Resource.
 func NewFilestoreBackup_Override(f FilestoreBackup, scope constructs.Construct, id *string, config *FilestoreBackupConfig) {
 	_init_.Initialize()
 

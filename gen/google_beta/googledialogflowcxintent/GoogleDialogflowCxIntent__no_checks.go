@@ -96,6 +96,14 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) validateSetIdParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDialogflowCxIntent) validateSetIsDefaultNegativeIntentParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxIntent) validateSetIsDefaultWelcomeIntentParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxIntent) validateSetIsFallbackParameters(val interface{}) error {
 	return nil
 }

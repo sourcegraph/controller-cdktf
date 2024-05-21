@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigeeendpointattachment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_apigee_endpoint_attachment google_apigee_endpoint_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_apigee_endpoint_attachment google_apigee_endpoint_attachment}.
 type GoogleApigeeEndpointAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -435,7 +435,7 @@ func (j *jsiiProxy_GoogleApigeeEndpointAttachment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_apigee_endpoint_attachment google_apigee_endpoint_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_apigee_endpoint_attachment google_apigee_endpoint_attachment} Resource.
 func NewGoogleApigeeEndpointAttachment(scope constructs.Construct, id *string, config *GoogleApigeeEndpointAttachmentConfig) GoogleApigeeEndpointAttachment {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewGoogleApigeeEndpointAttachment(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_apigee_endpoint_attachment google_apigee_endpoint_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_apigee_endpoint_attachment google_apigee_endpoint_attachment} Resource.
 func NewGoogleApigeeEndpointAttachment_Override(g GoogleApigeeEndpointAttachment, scope constructs.Construct, id *string, config *GoogleApigeeEndpointAttachmentConfig) {
 	_init_.Initialize()
 

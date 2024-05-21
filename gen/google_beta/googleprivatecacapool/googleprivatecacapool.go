@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleprivatecacapool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_privateca_ca_pool google_privateca_ca_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_privateca_ca_pool google_privateca_ca_pool}.
 type GooglePrivatecaCaPool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,7 @@ type GooglePrivatecaCaPool interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -73,6 +74,7 @@ type GooglePrivatecaCaPool interface {
 	RawOverrides() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -179,6 +181,16 @@ func (j *jsiiProxy_GooglePrivatecaCaPool) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePrivatecaCaPool) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -414,6 +426,16 @@ func (j *jsiiProxy_GooglePrivatecaCaPool) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
+func (j *jsiiProxy_GooglePrivatecaCaPool) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GooglePrivatecaCaPool) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -475,7 +497,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_privateca_ca_pool google_privateca_ca_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_privateca_ca_pool google_privateca_ca_pool} Resource.
 func NewGooglePrivatecaCaPool(scope constructs.Construct, id *string, config *GooglePrivatecaCaPoolConfig) GooglePrivatecaCaPool {
 	_init_.Initialize()
 
@@ -493,7 +515,7 @@ func NewGooglePrivatecaCaPool(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_privateca_ca_pool google_privateca_ca_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_privateca_ca_pool google_privateca_ca_pool} Resource.
 func NewGooglePrivatecaCaPool_Override(g GooglePrivatecaCaPool, scope constructs.Construct, id *string, config *GooglePrivatecaCaPoolConfig) {
 	_init_.Initialize()
 

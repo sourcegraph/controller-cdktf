@@ -111,6 +111,17 @@ func (g *jsiiProxy_GoogleFirestoreDatabase) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirestoreDatabase) validatePutCmekConfigParameters(value *GoogleFirestoreDatabaseCmekConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirestoreDatabase) validatePutTimeoutsParameters(value *GoogleFirestoreDatabaseTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -252,6 +263,22 @@ func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetCountParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetDeleteProtectionStateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetDeletionPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -277,6 +304,14 @@ func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetLocationIdParameters(val 
 }
 
 func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetPointInTimeRecoveryEnablementParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

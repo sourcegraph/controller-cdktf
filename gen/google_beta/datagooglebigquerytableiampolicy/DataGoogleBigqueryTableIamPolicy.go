@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglebigquerytableiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_bigquery_table_iam_policy google_bigquery_table_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_bigquery_table_iam_policy google_bigquery_table_iam_policy}.
 type DataGoogleBigqueryTableIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -350,7 +350,7 @@ func (j *jsiiProxy_DataGoogleBigqueryTableIamPolicy) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_bigquery_table_iam_policy google_bigquery_table_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_bigquery_table_iam_policy google_bigquery_table_iam_policy} Data Source.
 func NewDataGoogleBigqueryTableIamPolicy(scope constructs.Construct, id *string, config *DataGoogleBigqueryTableIamPolicyConfig) DataGoogleBigqueryTableIamPolicy {
 	_init_.Initialize()
 
@@ -368,7 +368,7 @@ func NewDataGoogleBigqueryTableIamPolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_bigquery_table_iam_policy google_bigquery_table_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_bigquery_table_iam_policy google_bigquery_table_iam_policy} Data Source.
 func NewDataGoogleBigqueryTableIamPolicy_Override(d DataGoogleBigqueryTableIamPolicy, scope constructs.Construct, id *string, config *DataGoogleBigqueryTableIamPolicyConfig) {
 	_init_.Initialize()
 

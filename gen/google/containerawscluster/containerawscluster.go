@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/containerawscluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_aws_cluster google_container_aws_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/container_aws_cluster google_container_aws_cluster}.
 type ContainerAwsCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -20,6 +20,8 @@ type ContainerAwsCluster interface {
 	AwsRegion() *string
 	SetAwsRegion(val *string)
 	AwsRegionInput() *string
+	BinaryAuthorization() ContainerAwsClusterBinaryAuthorizationOutputReference
+	BinaryAuthorizationInput() *ContainerAwsClusterBinaryAuthorization
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -42,6 +44,7 @@ type ContainerAwsCluster interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveAnnotations() cdktf.StringMap
 	Endpoint() *string
 	Etag() *string
 	Fleet() ContainerAwsClusterFleetOutputReference
@@ -123,11 +126,13 @@ type ContainerAwsCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthorization(value *ContainerAwsClusterAuthorization)
+	PutBinaryAuthorization(value *ContainerAwsClusterBinaryAuthorization)
 	PutControlPlane(value *ContainerAwsClusterControlPlane)
 	PutFleet(value *ContainerAwsClusterFleet)
 	PutNetworking(value *ContainerAwsClusterNetworking)
 	PutTimeouts(value *ContainerAwsClusterTimeouts)
 	ResetAnnotations()
+	ResetBinaryAuthorization()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -205,6 +210,26 @@ func (j *jsiiProxy_ContainerAwsCluster) AwsRegionInput() *string {
 	_jsii_.Get(
 		j,
 		"awsRegionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAwsCluster) BinaryAuthorization() ContainerAwsClusterBinaryAuthorizationOutputReference {
+	var returns ContainerAwsClusterBinaryAuthorizationOutputReference
+	_jsii_.Get(
+		j,
+		"binaryAuthorization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAwsCluster) BinaryAuthorizationInput() *ContainerAwsClusterBinaryAuthorization {
+	var returns *ContainerAwsClusterBinaryAuthorization
+	_jsii_.Get(
+		j,
+		"binaryAuthorizationInput",
 		&returns,
 	)
 	return returns
@@ -305,6 +330,16 @@ func (j *jsiiProxy_ContainerAwsCluster) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAwsCluster) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
 		&returns,
 	)
 	return returns
@@ -631,7 +666,7 @@ func (j *jsiiProxy_ContainerAwsCluster) WorkloadIdentityConfig() ContainerAwsClu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_aws_cluster google_container_aws_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/container_aws_cluster google_container_aws_cluster} Resource.
 func NewContainerAwsCluster(scope constructs.Construct, id *string, config *ContainerAwsClusterConfig) ContainerAwsCluster {
 	_init_.Initialize()
 
@@ -649,7 +684,7 @@ func NewContainerAwsCluster(scope constructs.Construct, id *string, config *Cont
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_aws_cluster google_container_aws_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/container_aws_cluster google_container_aws_cluster} Resource.
 func NewContainerAwsCluster_Override(c ContainerAwsCluster, scope constructs.Construct, id *string, config *ContainerAwsClusterConfig) {
 	_init_.Initialize()
 
@@ -1082,6 +1117,17 @@ func (c *jsiiProxy_ContainerAwsCluster) PutAuthorization(value *ContainerAwsClus
 	)
 }
 
+func (c *jsiiProxy_ContainerAwsCluster) PutBinaryAuthorization(value *ContainerAwsClusterBinaryAuthorization) {
+	if err := c.validatePutBinaryAuthorizationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putBinaryAuthorization",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerAwsCluster) PutControlPlane(value *ContainerAwsClusterControlPlane) {
 	if err := c.validatePutControlPlaneParameters(value); err != nil {
 		panic(err)
@@ -1130,6 +1176,14 @@ func (c *jsiiProxy_ContainerAwsCluster) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAwsCluster) ResetBinaryAuthorization() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBinaryAuthorization",
 		nil, // no parameters
 	)
 }

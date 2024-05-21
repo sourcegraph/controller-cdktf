@@ -90,12 +90,105 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsOutputReference) validat
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsOutputReference) validatePutMavenArtifactsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleCloudbuildTriggerBuildArtifactsMavenArtifacts:
+		value := value.(*[]*GoogleCloudbuildTriggerBuildArtifactsMavenArtifacts)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleCloudbuildTriggerBuildArtifactsMavenArtifacts:
+		value_ := value.([]*GoogleCloudbuildTriggerBuildArtifactsMavenArtifacts)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleCloudbuildTriggerBuildArtifactsMavenArtifacts; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsOutputReference) validatePutNpmPackagesParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleCloudbuildTriggerBuildArtifactsNpmPackages:
+		value := value.(*[]*GoogleCloudbuildTriggerBuildArtifactsNpmPackages)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleCloudbuildTriggerBuildArtifactsNpmPackages:
+		value_ := value.([]*GoogleCloudbuildTriggerBuildArtifactsNpmPackages)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleCloudbuildTriggerBuildArtifactsNpmPackages; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsOutputReference) validatePutObjectsParameters(value *GoogleCloudbuildTriggerBuildArtifactsObjects) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsOutputReference) validatePutPythonPackagesParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleCloudbuildTriggerBuildArtifactsPythonPackages:
+		value := value.(*[]*GoogleCloudbuildTriggerBuildArtifactsPythonPackages)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleCloudbuildTriggerBuildArtifactsPythonPackages:
+		value_ := value.([]*GoogleCloudbuildTriggerBuildArtifactsPythonPackages)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleCloudbuildTriggerBuildArtifactsPythonPackages; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil

@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigDatabaseConfigOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigDatabaseConfigOutputReference) validateSetZoneParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleComposerEnvironmentConfigDatabaseConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

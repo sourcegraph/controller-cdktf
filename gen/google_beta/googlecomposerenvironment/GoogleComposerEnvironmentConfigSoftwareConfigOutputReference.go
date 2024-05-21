@@ -57,6 +57,9 @@ type GoogleComposerEnvironmentConfigSoftwareConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WebServerPluginsMode() *string
+	SetWebServerPluginsMode(val *string)
+	WebServerPluginsModeInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -89,6 +92,7 @@ type GoogleComposerEnvironmentConfigSoftwareConfigOutputReference interface {
 	ResetPypiPackages()
 	ResetPythonVersion()
 	ResetSchedulerCount()
+	ResetWebServerPluginsMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -314,6 +318,26 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigSoftwareConfigOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigSoftwareConfigOutputReference) WebServerPluginsMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"webServerPluginsMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigSoftwareConfigOutputReference) WebServerPluginsModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"webServerPluginsModeInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewGoogleComposerEnvironmentConfigSoftwareConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComposerEnvironmentConfigSoftwareConfigOutputReference {
 	_init_.Initialize()
@@ -459,6 +483,17 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigSoftwareConfigOutputReference)
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigSoftwareConfigOutputReference)SetWebServerPluginsMode(val *string) {
+	if err := j.validateSetWebServerPluginsModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"webServerPluginsMode",
 		val,
 	)
 }
@@ -712,6 +747,14 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigSoftwareConfigOutputReference)
 	_jsii_.InvokeVoid(
 		g,
 		"resetSchedulerCount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigSoftwareConfigOutputReference) ResetWebServerPluginsMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWebServerPluginsMode",
 		nil, // no parameters
 	)
 }

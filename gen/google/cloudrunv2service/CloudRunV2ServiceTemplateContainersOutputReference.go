@@ -31,6 +31,9 @@ type CloudRunV2ServiceTemplateContainersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DependsOn() *[]*string
+	SetDependsOn(val *[]*string)
+	DependsOnInput() *[]*string
 	Env() CloudRunV2ServiceTemplateContainersEnvList
 	EnvInput() interface{}
 	// Experimental.
@@ -45,8 +48,8 @@ type CloudRunV2ServiceTemplateContainersOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
-	Ports() CloudRunV2ServiceTemplateContainersPortsList
-	PortsInput() interface{}
+	Ports() CloudRunV2ServiceTemplateContainersPortsOutputReference
+	PortsInput() *CloudRunV2ServiceTemplateContainersPorts
 	Resources() CloudRunV2ServiceTemplateContainersResourcesOutputReference
 	ResourcesInput() *CloudRunV2ServiceTemplateContainersResources
 	StartupProbe() CloudRunV2ServiceTemplateContainersStartupProbeOutputReference
@@ -90,12 +93,13 @@ type CloudRunV2ServiceTemplateContainersOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutEnv(value interface{})
 	PutLivenessProbe(value *CloudRunV2ServiceTemplateContainersLivenessProbe)
-	PutPorts(value interface{})
+	PutPorts(value *CloudRunV2ServiceTemplateContainersPorts)
 	PutResources(value *CloudRunV2ServiceTemplateContainersResources)
 	PutStartupProbe(value *CloudRunV2ServiceTemplateContainersStartupProbe)
 	PutVolumeMounts(value interface{})
 	ResetArgs()
 	ResetCommand()
+	ResetDependsOn()
 	ResetEnv()
 	ResetLivenessProbe()
 	ResetName()
@@ -184,6 +188,26 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) CreationS
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) DependsOnInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOnInput",
 		&returns,
 	)
 	return returns
@@ -289,8 +313,8 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) NameInput
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) Ports() CloudRunV2ServiceTemplateContainersPortsList {
-	var returns CloudRunV2ServiceTemplateContainersPortsList
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) Ports() CloudRunV2ServiceTemplateContainersPortsOutputReference {
+	var returns CloudRunV2ServiceTemplateContainersPortsOutputReference
 	_jsii_.Get(
 		j,
 		"ports",
@@ -299,8 +323,8 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) Ports() C
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) PortsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) PortsInput() *CloudRunV2ServiceTemplateContainersPorts {
+	var returns *CloudRunV2ServiceTemplateContainersPorts
 	_jsii_.Get(
 		j,
 		"portsInput",
@@ -477,6 +501,17 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference)SetComplex
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference)SetDependsOn(val *[]*string) {
+	if err := j.validateSetDependsOnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dependsOn",
 		val,
 	)
 }
@@ -755,7 +790,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) PutLivene
 	)
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) PutPorts(value interface{}) {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) PutPorts(value *CloudRunV2ServiceTemplateContainersPorts) {
 	if err := c.validatePutPortsParameters(value); err != nil {
 		panic(err)
 	}
@@ -811,6 +846,14 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) ResetComm
 	_jsii_.InvokeVoid(
 		c,
 		"resetCommand",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) ResetDependsOn() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDependsOn",
 		nil, // no parameters
 	)
 }

@@ -35,6 +35,8 @@ type GoogleDatastreamStreamBackfillAllOutputReference interface {
 	OracleExcludedObjectsInput() *GoogleDatastreamStreamBackfillAllOracleExcludedObjects
 	PostgresqlExcludedObjects() GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference
 	PostgresqlExcludedObjectsInput() *GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjects
+	SqlServerExcludedObjects() GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference
+	SqlServerExcludedObjectsInput() *GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,9 +72,11 @@ type GoogleDatastreamStreamBackfillAllOutputReference interface {
 	PutMysqlExcludedObjects(value *GoogleDatastreamStreamBackfillAllMysqlExcludedObjects)
 	PutOracleExcludedObjects(value *GoogleDatastreamStreamBackfillAllOracleExcludedObjects)
 	PutPostgresqlExcludedObjects(value *GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjects)
+	PutSqlServerExcludedObjects(value *GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects)
 	ResetMysqlExcludedObjects()
 	ResetOracleExcludedObjects()
 	ResetPostgresqlExcludedObjects()
+	ResetSqlServerExcludedObjects()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -193,6 +197,26 @@ func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) PostgresqlE
 	_jsii_.Get(
 		j,
 		"postgresqlExcludedObjectsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) SqlServerExcludedObjects() GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference {
+	var returns GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference
+	_jsii_.Get(
+		j,
+		"sqlServerExcludedObjects",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) SqlServerExcludedObjectsInput() *GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects {
+	var returns *GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects
+	_jsii_.Get(
+		j,
+		"sqlServerExcludedObjectsInput",
 		&returns,
 	)
 	return returns
@@ -520,6 +544,17 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) PutPostgres
 	)
 }
 
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) PutSqlServerExcludedObjects(value *GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects) {
+	if err := g.validatePutSqlServerExcludedObjectsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSqlServerExcludedObjects",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) ResetMysqlExcludedObjects() {
 	_jsii_.InvokeVoid(
 		g,
@@ -540,6 +575,14 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) ResetPostgr
 	_jsii_.InvokeVoid(
 		g,
 		"resetPostgresqlExcludedObjects",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) ResetSqlServerExcludedObjects() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSqlServerExcludedObjects",
 		nil, // no parameters
 	)
 }

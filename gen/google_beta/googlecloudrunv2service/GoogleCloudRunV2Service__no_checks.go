@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleCloudRunV2Service) validatePutBinaryAuthorizationParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2Service) validatePutScalingParameters(value *GoogleCloudRunV2ServiceScaling) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2Service) validatePutTemplateParameters(value *GoogleCloudRunV2ServiceTemplate) error {
 	return nil
 }

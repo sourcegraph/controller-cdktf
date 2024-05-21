@@ -12,7 +12,11 @@ type GoogleGkeonpremVmwareClusterVcenterOutputReference interface {
 	cdktf.ComplexObject
 	Address() *string
 	CaCertData() *string
+	SetCaCertData(val *string)
+	CaCertDataInput() *string
 	Cluster() *string
+	SetCluster(val *string)
+	ClusterInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -29,13 +33,24 @@ type GoogleGkeonpremVmwareClusterVcenterOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Datacenter() *string
+	SetDatacenter(val *string)
+	DatacenterInput() *string
 	Datastore() *string
+	SetDatastore(val *string)
+	DatastoreInput() *string
 	Folder() *string
+	SetFolder(val *string)
+	FolderInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleGkeonpremVmwareClusterVcenter
 	SetInternalValue(val *GoogleGkeonpremVmwareClusterVcenter)
 	ResourcePool() *string
+	SetResourcePool(val *string)
+	ResourcePoolInput() *string
+	StoragePolicyName() *string
+	SetStoragePolicyName(val *string)
+	StoragePolicyNameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +83,13 @@ type GoogleGkeonpremVmwareClusterVcenterOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCaCertData()
+	ResetCluster()
+	ResetDatacenter()
+	ResetDatastore()
+	ResetFolder()
+	ResetResourcePool()
+	ResetStoragePolicyName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -103,11 +125,31 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) CaCertDat
 	return returns
 }
 
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) CaCertDataInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"caCertDataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) Cluster() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"cluster",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) ClusterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterInput",
 		&returns,
 	)
 	return returns
@@ -153,6 +195,16 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) Datacente
 	return returns
 }
 
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) DatacenterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"datacenterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) Datastore() *string {
 	var returns *string
 	_jsii_.Get(
@@ -163,11 +215,31 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) Datastore
 	return returns
 }
 
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) DatastoreInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"datastoreInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) Folder() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"folder",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) FolderInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"folderInput",
 		&returns,
 	)
 	return returns
@@ -203,6 +275,36 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) ResourceP
 	return returns
 }
 
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) ResourcePoolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourcePoolInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) StoragePolicyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storagePolicyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) StoragePolicyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storagePolicyNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -224,30 +326,52 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) Terraform
 }
 
 
-func NewGoogleGkeonpremVmwareClusterVcenterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleGkeonpremVmwareClusterVcenterOutputReference {
+func NewGoogleGkeonpremVmwareClusterVcenterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleGkeonpremVmwareClusterVcenterOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewGoogleGkeonpremVmwareClusterVcenterOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewGoogleGkeonpremVmwareClusterVcenterOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterVcenterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewGoogleGkeonpremVmwareClusterVcenterOutputReference_Override(g GoogleGkeonpremVmwareClusterVcenterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleGkeonpremVmwareClusterVcenterOutputReference_Override(g GoogleGkeonpremVmwareClusterVcenterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterVcenterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference)SetCaCertData(val *string) {
+	if err := j.validateSetCaCertDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"caCertData",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference)SetCluster(val *string) {
+	if err := j.validateSetClusterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cluster",
+		val,
 	)
 }
 
@@ -273,6 +397,39 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference)SetComplex
 	)
 }
 
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference)SetDatacenter(val *string) {
+	if err := j.validateSetDatacenterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"datacenter",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference)SetDatastore(val *string) {
+	if err := j.validateSetDatastoreParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"datastore",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference)SetFolder(val *string) {
+	if err := j.validateSetFolderParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"folder",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference)SetInternalValue(val *GoogleGkeonpremVmwareClusterVcenter) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -280,6 +437,28 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference)SetInterna
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference)SetResourcePool(val *string) {
+	if err := j.validateSetResourcePoolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourcePool",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference)SetStoragePolicyName(val *string) {
+	if err := j.validateSetStoragePolicyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storagePolicyName",
 		val,
 	)
 }
@@ -490,6 +669,62 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) Interpola
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) ResetCaCertData() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCaCertData",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) ResetCluster() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCluster",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) ResetDatacenter() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDatacenter",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) ResetDatastore() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDatastore",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) ResetFolder() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFolder",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) ResetResourcePool() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetResourcePool",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) ResetStoragePolicyName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStoragePolicyName",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

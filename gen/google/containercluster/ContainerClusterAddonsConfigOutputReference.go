@@ -49,6 +49,8 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	SetInternalValue(val *ContainerClusterAddonsConfig)
 	NetworkPolicyConfig() ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference
 	NetworkPolicyConfigInput() *ContainerClusterAddonsConfigNetworkPolicyConfig
+	StatefulHaConfig() ContainerClusterAddonsConfigStatefulHaConfigOutputReference
+	StatefulHaConfigInput() *ContainerClusterAddonsConfigStatefulHaConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -91,6 +93,7 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	PutHorizontalPodAutoscaling(value *ContainerClusterAddonsConfigHorizontalPodAutoscaling)
 	PutHttpLoadBalancing(value *ContainerClusterAddonsConfigHttpLoadBalancing)
 	PutNetworkPolicyConfig(value *ContainerClusterAddonsConfigNetworkPolicyConfig)
+	PutStatefulHaConfig(value *ContainerClusterAddonsConfigStatefulHaConfig)
 	ResetCloudrunConfig()
 	ResetConfigConnectorConfig()
 	ResetDnsCacheConfig()
@@ -101,6 +104,7 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	ResetHorizontalPodAutoscaling()
 	ResetHttpLoadBalancing()
 	ResetNetworkPolicyConfig()
+	ResetStatefulHaConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -361,6 +365,26 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) NetworkPolicyCon
 	_jsii_.Get(
 		j,
 		"networkPolicyConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) StatefulHaConfig() ContainerClusterAddonsConfigStatefulHaConfigOutputReference {
+	var returns ContainerClusterAddonsConfigStatefulHaConfigOutputReference
+	_jsii_.Get(
+		j,
+		"statefulHaConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) StatefulHaConfigInput() *ContainerClusterAddonsConfigStatefulHaConfig {
+	var returns *ContainerClusterAddonsConfigStatefulHaConfig
+	_jsii_.Get(
+		j,
+		"statefulHaConfigInput",
 		&returns,
 	)
 	return returns
@@ -765,6 +789,17 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutNetworkPolicy
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutStatefulHaConfig(value *ContainerClusterAddonsConfigStatefulHaConfig) {
+	if err := c.validatePutStatefulHaConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putStatefulHaConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ResetCloudrunConfig() {
 	_jsii_.InvokeVoid(
 		c,
@@ -841,6 +876,14 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ResetNetworkPoli
 	_jsii_.InvokeVoid(
 		c,
 		"resetNetworkPolicyConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ResetStatefulHaConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStatefulHaConfig",
 		nil, // no parameters
 	)
 }

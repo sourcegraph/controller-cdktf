@@ -72,6 +72,10 @@ func validateGoogleFirestoreIndex_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFirestoreIndex) validateSetApiScopeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirestoreIndex) validateSetCollectionParameters(val *string) error {
 	return nil
 }

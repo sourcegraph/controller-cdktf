@@ -1,0 +1,6 @@
+package googledialogflowcxtestcase
+
+
+type GoogleDialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutput struct {
+}
+

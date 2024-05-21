@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleDatastreamPrivateConnectionTimeoutsOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDatastreamPrivateConnectionTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleDatastreamPrivateConnectionTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

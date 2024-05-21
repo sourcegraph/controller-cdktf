@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigeeenvironmentiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_apigee_environment_iam_policy google_apigee_environment_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_apigee_environment_iam_policy google_apigee_environment_iam_policy}.
 type GoogleApigeeEnvironmentIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -366,7 +366,7 @@ func (j *jsiiProxy_GoogleApigeeEnvironmentIamPolicy) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_apigee_environment_iam_policy google_apigee_environment_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_apigee_environment_iam_policy google_apigee_environment_iam_policy} Resource.
 func NewGoogleApigeeEnvironmentIamPolicy(scope constructs.Construct, id *string, config *GoogleApigeeEnvironmentIamPolicyConfig) GoogleApigeeEnvironmentIamPolicy {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewGoogleApigeeEnvironmentIamPolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_apigee_environment_iam_policy google_apigee_environment_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_apigee_environment_iam_policy google_apigee_environment_iam_policy} Resource.
 func NewGoogleApigeeEnvironmentIamPolicy_Override(g GoogleApigeeEnvironmentIamPolicy, scope constructs.Construct, id *string, config *GoogleApigeeEnvironmentIamPolicyConfig) {
 	_init_.Initialize()
 

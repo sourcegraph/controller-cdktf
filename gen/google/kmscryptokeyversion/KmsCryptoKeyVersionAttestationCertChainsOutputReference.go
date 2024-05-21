@@ -10,7 +10,7 @@ import (
 
 type KmsCryptoKeyVersionAttestationCertChainsOutputReference interface {
 	cdktf.ComplexObject
-	CaviumCerts() *string
+	CaviumCerts() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,8 +28,8 @@ type KmsCryptoKeyVersionAttestationCertChainsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	GoogleCardCerts() *string
-	GooglePartitionCerts() *string
+	GoogleCardCerts() *[]*string
+	GooglePartitionCerts() *[]*string
 	InternalValue() *KmsCryptoKeyVersionAttestationCertChains
 	SetInternalValue(val *KmsCryptoKeyVersionAttestationCertChains)
 	// Experimental.
@@ -79,8 +79,8 @@ type jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsOutputReference) CaviumCerts() *string {
-	var returns *string
+func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsOutputReference) CaviumCerts() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"caviumCerts",
@@ -129,8 +129,8 @@ func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsOutputReference) GoogleCardCerts() *string {
-	var returns *string
+func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsOutputReference) GoogleCardCerts() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"googleCardCerts",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsOutputReference) Goog
 	return returns
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsOutputReference) GooglePartitionCerts() *string {
-	var returns *string
+func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsOutputReference) GooglePartitionCerts() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"googlePartitionCerts",

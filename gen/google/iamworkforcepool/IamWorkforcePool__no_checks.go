@@ -52,6 +52,10 @@ func (i *jsiiProxy_IamWorkforcePool) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (i *jsiiProxy_IamWorkforcePool) validatePutAccessRestrictionsParameters(value *IamWorkforcePoolAccessRestrictions) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamWorkforcePool) validatePutTimeoutsParameters(value *IamWorkforcePoolTimeouts) error {
 	return nil
 }

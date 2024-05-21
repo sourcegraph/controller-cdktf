@@ -120,11 +120,19 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRule) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRule) validateSetSecurityProfileGroupParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeFirewallPolicyRule) validateSetTargetResourcesParameters(val *[]*string) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleComputeFirewallPolicyRule) validateSetTargetServiceAccountsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRule) validateSetTlsInspectParameters(val interface{}) error {
 	return nil
 }
 

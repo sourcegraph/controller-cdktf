@@ -180,6 +180,10 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetRegionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetResourceManagerTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetResourcePoliciesParameters(val *[]*string) error {
 	return nil
 }

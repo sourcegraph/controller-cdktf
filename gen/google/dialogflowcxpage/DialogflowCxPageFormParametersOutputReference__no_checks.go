@@ -44,6 +44,10 @@ func (d *jsiiProxy_DialogflowCxPageFormParametersOutputReference) validateInterp
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxPageFormParametersOutputReference) validatePutAdvancedSettingsParameters(value *DialogflowCxPageFormParametersAdvancedSettings) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxPageFormParametersOutputReference) validatePutFillBehaviorParameters(value *DialogflowCxPageFormParametersFillBehavior) error {
 	return nil
 }
@@ -57,6 +61,10 @@ func (j *jsiiProxy_DialogflowCxPageFormParametersOutputReference) validateSetCom
 }
 
 func (j *jsiiProxy_DialogflowCxPageFormParametersOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersOutputReference) validateSetDefaultValueParameters(val *string) error {
 	return nil
 }
 

@@ -60,6 +60,10 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validatePutLinkedRouterApplia
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validatePutLinkedVpcNetworkParameters(value *GoogleNetworkConnectivitySpokeLinkedVpcNetwork) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validatePutLinkedVpnTunnelsParameters(value *GoogleNetworkConnectivitySpokeLinkedVpnTunnels) error {
 	return nil
 }

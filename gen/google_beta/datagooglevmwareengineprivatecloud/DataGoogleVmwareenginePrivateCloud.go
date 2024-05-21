@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglevmwareengineprivatecloud/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud}.
 type DataGoogleVmwareenginePrivateCloud interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -68,6 +68,7 @@ type DataGoogleVmwareenginePrivateCloud interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Type() *string
 	Uid() *string
 	Vcenter() DataGoogleVmwareenginePrivateCloudVcenterList
 	// Experimental.
@@ -395,6 +396,16 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) TerraformResourceType() *
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) Uid() *string {
 	var returns *string
 	_jsii_.Get(
@@ -416,7 +427,7 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) Vcenter() DataGoogleVmwar
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud} Data Source.
 func NewDataGoogleVmwareenginePrivateCloud(scope constructs.Construct, id *string, config *DataGoogleVmwareenginePrivateCloudConfig) DataGoogleVmwareenginePrivateCloud {
 	_init_.Initialize()
 
@@ -434,7 +445,7 @@ func NewDataGoogleVmwareenginePrivateCloud(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud} Data Source.
 func NewDataGoogleVmwareenginePrivateCloud_Override(d DataGoogleVmwareenginePrivateCloud, scope constructs.Construct, id *string, config *DataGoogleVmwareenginePrivateCloudConfig) {
 	_init_.Initialize()
 

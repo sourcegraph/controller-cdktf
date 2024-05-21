@@ -56,11 +56,19 @@ func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference) validateSetFilterParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference) validateSetSingleInstanceAssignmentParameters(val *float64) error {
 	return nil
 }
 

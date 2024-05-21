@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputenetworkfirewallpolicyrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_network_firewall_policy_rule google_compute_network_firewall_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_network_firewall_policy_rule google_compute_network_firewall_policy_rule}.
 type GoogleComputeNetworkFirewallPolicyRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -86,6 +86,9 @@ type GoogleComputeNetworkFirewallPolicyRule interface {
 	SetRuleName(val *string)
 	RuleNameInput() *string
 	RuleTupleCount() *float64
+	SecurityProfileGroup() *string
+	SetSecurityProfileGroup(val *string)
+	SecurityProfileGroupInput() *string
 	TargetSecureTags() GoogleComputeNetworkFirewallPolicyRuleTargetSecureTagsList
 	TargetSecureTagsInput() interface{}
 	TargetServiceAccounts() *[]*string
@@ -99,6 +102,9 @@ type GoogleComputeNetworkFirewallPolicyRule interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleComputeNetworkFirewallPolicyRuleTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TlsInspect() interface{}
+	SetTlsInspect(val interface{})
+	TlsInspectInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -136,9 +142,11 @@ type GoogleComputeNetworkFirewallPolicyRule interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRuleName()
+	ResetSecurityProfileGroup()
 	ResetTargetSecureTags()
 	ResetTargetServiceAccounts()
 	ResetTimeouts()
+	ResetTlsInspect()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -524,6 +532,26 @@ func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) RuleTupleCount() *flo
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) SecurityProfileGroup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityProfileGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) SecurityProfileGroupInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityProfileGroupInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) TargetSecureTags() GoogleComputeNetworkFirewallPolicyRuleTargetSecureTagsList {
 	var returns GoogleComputeNetworkFirewallPolicyRuleTargetSecureTagsList
 	_jsii_.Get(
@@ -614,8 +642,28 @@ func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) TimeoutsInput() inter
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) TlsInspect() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tlsInspect",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_network_firewall_policy_rule google_compute_network_firewall_policy_rule} Resource.
+func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) TlsInspectInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tlsInspectInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_network_firewall_policy_rule google_compute_network_firewall_policy_rule} Resource.
 func NewGoogleComputeNetworkFirewallPolicyRule(scope constructs.Construct, id *string, config *GoogleComputeNetworkFirewallPolicyRuleConfig) GoogleComputeNetworkFirewallPolicyRule {
 	_init_.Initialize()
 
@@ -633,7 +681,7 @@ func NewGoogleComputeNetworkFirewallPolicyRule(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_network_firewall_policy_rule google_compute_network_firewall_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_network_firewall_policy_rule google_compute_network_firewall_policy_rule} Resource.
 func NewGoogleComputeNetworkFirewallPolicyRule_Override(g GoogleComputeNetworkFirewallPolicyRule, scope constructs.Construct, id *string, config *GoogleComputeNetworkFirewallPolicyRuleConfig) {
 	_init_.Initialize()
 
@@ -822,6 +870,17 @@ func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule)SetRuleName(val *strin
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule)SetSecurityProfileGroup(val *string) {
+	if err := j.validateSetSecurityProfileGroupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityProfileGroup",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule)SetTargetServiceAccounts(val *[]*string) {
 	if err := j.validateSetTargetServiceAccountsParameters(val); err != nil {
 		panic(err)
@@ -829,6 +888,17 @@ func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule)SetTargetServiceAccoun
 	_jsii_.Set(
 		j,
 		"targetServiceAccounts",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule)SetTlsInspect(val interface{}) {
+	if err := j.validateSetTlsInspectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsInspect",
 		val,
 	)
 }
@@ -1188,6 +1258,14 @@ func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) ResetRuleName() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) ResetSecurityProfileGroup() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecurityProfileGroup",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) ResetTargetSecureTags() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1208,6 +1286,14 @@ func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyRule) ResetTlsInspect() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTlsInspect",
 		nil, // no parameters
 	)
 }

@@ -27,8 +27,12 @@ type ComputePerInstanceConfigPreservedStateOutputReference interface {
 	CreationStack() *[]*string
 	Disk() ComputePerInstanceConfigPreservedStateDiskList
 	DiskInput() interface{}
+	ExternalIp() ComputePerInstanceConfigPreservedStateExternalIpList
+	ExternalIpInput() interface{}
 	// Experimental.
 	Fqn() *string
+	InternalIp() ComputePerInstanceConfigPreservedStateInternalIpList
+	InternalIpInput() interface{}
 	InternalValue() *ComputePerInstanceConfigPreservedState
 	SetInternalValue(val *ComputePerInstanceConfigPreservedState)
 	Metadata() *map[string]*string
@@ -67,7 +71,11 @@ type ComputePerInstanceConfigPreservedStateOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDisk(value interface{})
+	PutExternalIp(value interface{})
+	PutInternalIp(value interface{})
 	ResetDisk()
+	ResetExternalIp()
+	ResetInternalIp()
 	ResetMetadata()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -134,11 +142,51 @@ func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) DiskIn
 	return returns
 }
 
+func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) ExternalIp() ComputePerInstanceConfigPreservedStateExternalIpList {
+	var returns ComputePerInstanceConfigPreservedStateExternalIpList
+	_jsii_.Get(
+		j,
+		"externalIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) ExternalIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalIpInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) InternalIp() ComputePerInstanceConfigPreservedStateInternalIpList {
+	var returns ComputePerInstanceConfigPreservedStateInternalIpList
+	_jsii_.Get(
+		j,
+		"internalIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) InternalIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalIpInput",
 		&returns,
 	)
 	return returns
@@ -485,10 +533,48 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) PutDis
 	)
 }
 
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) PutExternalIp(value interface{}) {
+	if err := c.validatePutExternalIpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putExternalIp",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) PutInternalIp(value interface{}) {
+	if err := c.validatePutInternalIpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putInternalIp",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) ResetDisk() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDisk",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) ResetExternalIp() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExternalIp",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) ResetInternalIp() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInternalIp",
 		nil, // no parameters
 	)
 }

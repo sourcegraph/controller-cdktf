@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) validatePu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) validatePutAuxiliaryNodeGroupsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) validatePutDataprocMetricConfigParameters(value *GoogleDataprocClusterClusterConfigDataprocMetricConfig) error {
 	return nil
 }

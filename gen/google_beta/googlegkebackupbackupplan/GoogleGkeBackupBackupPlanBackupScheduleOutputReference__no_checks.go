@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleOutputReference) valid
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleOutputReference) validatePutRpoConfigParameters(value *GoogleGkeBackupBackupPlanBackupScheduleRpoConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeBackupBackupPlanBackupScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

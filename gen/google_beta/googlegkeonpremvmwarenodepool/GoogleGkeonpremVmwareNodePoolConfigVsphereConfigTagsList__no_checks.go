@@ -12,6 +12,10 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigTagsList) val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigTagsList) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigTagsList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

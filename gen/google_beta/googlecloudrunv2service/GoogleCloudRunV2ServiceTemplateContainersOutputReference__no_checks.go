@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) validatePutPortsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) validatePutPortsParameters(value *GoogleCloudRunV2ServiceTemplateContainersPorts) error {
 	return nil
 }
 

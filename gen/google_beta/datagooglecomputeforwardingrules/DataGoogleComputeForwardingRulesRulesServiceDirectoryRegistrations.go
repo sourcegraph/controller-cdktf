@@ -1,0 +1,6 @@
+package datagooglecomputeforwardingrules
+
+
+type DataGoogleComputeForwardingRulesRulesServiceDirectoryRegistrations struct {
+}
+

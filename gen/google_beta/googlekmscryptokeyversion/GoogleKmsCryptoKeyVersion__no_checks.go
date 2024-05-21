@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleKmsCryptoKeyVersion) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleKmsCryptoKeyVersion) validatePutExternalProtectionLevelOptionsParameters(value *GoogleKmsCryptoKeyVersionExternalProtectionLevelOptions) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleKmsCryptoKeyVersion) validatePutTimeoutsParameters(value *GoogleKmsCryptoKeyVersionTimeouts) error {
 	return nil
 }

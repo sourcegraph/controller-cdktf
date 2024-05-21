@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlekmskeyringimportjob/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_kms_key_ring_import_job google_kms_key_ring_import_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_kms_key_ring_import_job google_kms_key_ring_import_job}.
 type GoogleKmsKeyRingImportJob interface {
 	cdktf.TerraformResource
 	Attestation() GoogleKmsKeyRingImportJobAttestationList
@@ -457,7 +457,7 @@ func (j *jsiiProxy_GoogleKmsKeyRingImportJob) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_kms_key_ring_import_job google_kms_key_ring_import_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_kms_key_ring_import_job google_kms_key_ring_import_job} Resource.
 func NewGoogleKmsKeyRingImportJob(scope constructs.Construct, id *string, config *GoogleKmsKeyRingImportJobConfig) GoogleKmsKeyRingImportJob {
 	_init_.Initialize()
 
@@ -475,7 +475,7 @@ func NewGoogleKmsKeyRingImportJob(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_kms_key_ring_import_job google_kms_key_ring_import_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_kms_key_ring_import_job google_kms_key_ring_import_job} Resource.
 func NewGoogleKmsKeyRingImportJob_Override(g GoogleKmsKeyRingImportJob, scope constructs.Construct, id *string, config *GoogleKmsKeyRingImportJobConfig) {
 	_init_.Initialize()
 

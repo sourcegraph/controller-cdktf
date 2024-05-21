@@ -10,6 +10,8 @@ import (
 
 type GoogleGkeHubFeatureSpecOutputReference interface {
 	cdktf.ComplexObject
+	Clusterupgrade() GoogleGkeHubFeatureSpecClusterupgradeOutputReference
+	ClusterupgradeInput() *GoogleGkeHubFeatureSpecClusterupgrade
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -65,8 +67,10 @@ type GoogleGkeHubFeatureSpecOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutClusterupgrade(value *GoogleGkeHubFeatureSpecClusterupgrade)
 	PutFleetobservability(value *GoogleGkeHubFeatureSpecFleetobservability)
 	PutMulticlusteringress(value *GoogleGkeHubFeatureSpecMulticlusteringress)
+	ResetClusterupgrade()
 	ResetFleetobservability()
 	ResetMulticlusteringress()
 	// Produce the Token's value at resolution time.
@@ -82,6 +86,26 @@ type GoogleGkeHubFeatureSpecOutputReference interface {
 // The jsii proxy struct for GoogleGkeHubFeatureSpecOutputReference
 type jsiiProxy_GoogleGkeHubFeatureSpecOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureSpecOutputReference) Clusterupgrade() GoogleGkeHubFeatureSpecClusterupgradeOutputReference {
+	var returns GoogleGkeHubFeatureSpecClusterupgradeOutputReference
+	_jsii_.Get(
+		j,
+		"clusterupgrade",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureSpecOutputReference) ClusterupgradeInput() *GoogleGkeHubFeatureSpecClusterupgrade {
+	var returns *GoogleGkeHubFeatureSpecClusterupgrade
+	_jsii_.Get(
+		j,
+		"clusterupgradeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleGkeHubFeatureSpecOutputReference) ComplexObjectIndex() interface{} {
@@ -463,6 +487,17 @@ func (g *jsiiProxy_GoogleGkeHubFeatureSpecOutputReference) InterpolationForAttri
 	return returns
 }
 
+func (g *jsiiProxy_GoogleGkeHubFeatureSpecOutputReference) PutClusterupgrade(value *GoogleGkeHubFeatureSpecClusterupgrade) {
+	if err := g.validatePutClusterupgradeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putClusterupgrade",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeatureSpecOutputReference) PutFleetobservability(value *GoogleGkeHubFeatureSpecFleetobservability) {
 	if err := g.validatePutFleetobservabilityParameters(value); err != nil {
 		panic(err)
@@ -482,6 +517,14 @@ func (g *jsiiProxy_GoogleGkeHubFeatureSpecOutputReference) PutMulticlusteringres
 		g,
 		"putMulticlusteringress",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeHubFeatureSpecOutputReference) ResetClusterupgrade() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetClusterupgrade",
+		nil, // no parameters
 	)
 }
 

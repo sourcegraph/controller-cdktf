@@ -1,0 +1,6 @@
+package datagooglecertificatemanagercertificatemap
+
+
+type DataGoogleCertificateManagerCertificateMapGclbTargets struct {
+}
+

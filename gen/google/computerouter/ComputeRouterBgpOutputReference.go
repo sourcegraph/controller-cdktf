@@ -38,6 +38,9 @@ type ComputeRouterBgpOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IdentifierRange() *string
+	SetIdentifierRange(val *string)
+	IdentifierRangeInput() *string
 	InternalValue() *ComputeRouterBgp
 	SetInternalValue(val *ComputeRouterBgp)
 	KeepaliveInterval() *float64
@@ -79,6 +82,7 @@ type ComputeRouterBgpOutputReference interface {
 	ResetAdvertisedGroups()
 	ResetAdvertisedIpRanges()
 	ResetAdvertiseMode()
+	ResetIdentifierRange()
 	ResetKeepaliveInterval()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -215,6 +219,26 @@ func (j *jsiiProxy_ComputeRouterBgpOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRouterBgpOutputReference) IdentifierRange() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identifierRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterBgpOutputReference) IdentifierRangeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identifierRangeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRouterBgpOutputReference) InternalValue() *ComputeRouterBgp {
 	var returns *ComputeRouterBgp
 	_jsii_.Get(
@@ -344,6 +368,17 @@ func (j *jsiiProxy_ComputeRouterBgpOutputReference)SetComplexObjectIsFromSet(val
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRouterBgpOutputReference)SetIdentifierRange(val *string) {
+	if err := j.validateSetIdentifierRangeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identifierRange",
 		val,
 	)
 }
@@ -609,6 +644,14 @@ func (c *jsiiProxy_ComputeRouterBgpOutputReference) ResetAdvertiseMode() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAdvertiseMode",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterBgpOutputReference) ResetIdentifierRange() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIdentifierRange",
 		nil, // no parameters
 	)
 }

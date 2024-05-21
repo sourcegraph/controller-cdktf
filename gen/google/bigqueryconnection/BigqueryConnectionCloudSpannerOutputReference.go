@@ -28,10 +28,16 @@ type BigqueryConnectionCloudSpannerOutputReference interface {
 	Database() *string
 	SetDatabase(val *string)
 	DatabaseInput() *string
+	DatabaseRole() *string
+	SetDatabaseRole(val *string)
+	DatabaseRoleInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *BigqueryConnectionCloudSpanner
 	SetInternalValue(val *BigqueryConnectionCloudSpanner)
+	MaxParallelism() *float64
+	SetMaxParallelism(val *float64)
+	MaxParallelismInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -40,6 +46,9 @@ type BigqueryConnectionCloudSpannerOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UseDataBoost() interface{}
+	SetUseDataBoost(val interface{})
+	UseDataBoostInput() interface{}
 	UseParallelism() interface{}
 	SetUseParallelism(val interface{})
 	UseParallelismInput() interface{}
@@ -70,6 +79,9 @@ type BigqueryConnectionCloudSpannerOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDatabaseRole()
+	ResetMaxParallelism()
+	ResetUseDataBoost()
 	ResetUseParallelism()
 	ResetUseServerlessAnalytics()
 	// Produce the Token's value at resolution time.
@@ -137,6 +149,26 @@ func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) DatabaseInput(
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) DatabaseRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseRole",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) DatabaseRoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseRoleInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -157,6 +189,26 @@ func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) InternalValue(
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) MaxParallelism() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxParallelism",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) MaxParallelismInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxParallelismInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -172,6 +224,26 @@ func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) TerraformResou
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) UseDataBoost() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useDataBoost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) UseDataBoostInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useDataBoostInput",
 		&returns,
 	)
 	return returns
@@ -278,6 +350,17 @@ func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference)SetDatabase(val
 	)
 }
 
+func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference)SetDatabaseRole(val *string) {
+	if err := j.validateSetDatabaseRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"databaseRole",
+		val,
+	)
+}
+
 func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference)SetInternalValue(val *BigqueryConnectionCloudSpanner) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -285,6 +368,17 @@ func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference)SetInternalValu
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference)SetMaxParallelism(val *float64) {
+	if err := j.validateSetMaxParallelismParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxParallelism",
 		val,
 	)
 }
@@ -307,6 +401,17 @@ func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference)SetTerraformRes
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference)SetUseDataBoost(val interface{}) {
+	if err := j.validateSetUseDataBoostParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useDataBoost",
 		val,
 	)
 }
@@ -517,6 +622,30 @@ func (b *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) InterpolationF
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) ResetDatabaseRole() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetDatabaseRole",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) ResetMaxParallelism() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetMaxParallelism",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) ResetUseDataBoost() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetUseDataBoost",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) ResetUseParallelism() {

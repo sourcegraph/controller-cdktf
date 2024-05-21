@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataprocWorkflowTemplateTimeoutsOutputReference) validateSetT
 	return nil
 }
 
+func (j *jsiiProxy_DataprocWorkflowTemplateTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataprocWorkflowTemplateTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

@@ -10,6 +10,8 @@ import (
 
 type GoogleContainerAzureClusterAuthorizationOutputReference interface {
 	cdktf.ComplexObject
+	AdminGroups() GoogleContainerAzureClusterAuthorizationAdminGroupsList
+	AdminGroupsInput() interface{}
 	AdminUsers() GoogleContainerAzureClusterAuthorizationAdminUsersList
 	AdminUsersInput() interface{}
 	// the index of the complex object in a list.
@@ -63,7 +65,9 @@ type GoogleContainerAzureClusterAuthorizationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAdminGroups(value interface{})
 	PutAdminUsers(value interface{})
+	ResetAdminGroups()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -77,6 +81,26 @@ type GoogleContainerAzureClusterAuthorizationOutputReference interface {
 // The jsii proxy struct for GoogleContainerAzureClusterAuthorizationOutputReference
 type jsiiProxy_GoogleContainerAzureClusterAuthorizationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleContainerAzureClusterAuthorizationOutputReference) AdminGroups() GoogleContainerAzureClusterAuthorizationAdminGroupsList {
+	var returns GoogleContainerAzureClusterAuthorizationAdminGroupsList
+	_jsii_.Get(
+		j,
+		"adminGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAzureClusterAuthorizationOutputReference) AdminGroupsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"adminGroupsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleContainerAzureClusterAuthorizationOutputReference) AdminUsers() GoogleContainerAzureClusterAuthorizationAdminUsersList {
@@ -438,6 +462,17 @@ func (g *jsiiProxy_GoogleContainerAzureClusterAuthorizationOutputReference) Inte
 	return returns
 }
 
+func (g *jsiiProxy_GoogleContainerAzureClusterAuthorizationOutputReference) PutAdminGroups(value interface{}) {
+	if err := g.validatePutAdminGroupsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAdminGroups",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerAzureClusterAuthorizationOutputReference) PutAdminUsers(value interface{}) {
 	if err := g.validatePutAdminUsersParameters(value); err != nil {
 		panic(err)
@@ -446,6 +481,14 @@ func (g *jsiiProxy_GoogleContainerAzureClusterAuthorizationOutputReference) PutA
 		g,
 		"putAdminUsers",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerAzureClusterAuthorizationOutputReference) ResetAdminGroups() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAdminGroups",
+		nil, // no parameters
 	)
 }
 

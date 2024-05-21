@@ -10,11 +10,23 @@ type GoogleCloudbuildTriggerBuildArtifacts struct {
 	//
 	// If any of the images fail to be pushed, the build is marked FAILURE.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuild_trigger#images GoogleCloudbuildTrigger#images}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_cloudbuild_trigger#images GoogleCloudbuildTrigger#images}
 	Images *[]*string `field:"optional" json:"images" yaml:"images"`
+	// maven_artifacts block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_cloudbuild_trigger#maven_artifacts GoogleCloudbuildTrigger#maven_artifacts}
+	MavenArtifacts interface{} `field:"optional" json:"mavenArtifacts" yaml:"mavenArtifacts"`
+	// npm_packages block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_cloudbuild_trigger#npm_packages GoogleCloudbuildTrigger#npm_packages}
+	NpmPackages interface{} `field:"optional" json:"npmPackages" yaml:"npmPackages"`
 	// objects block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuild_trigger#objects GoogleCloudbuildTrigger#objects}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_cloudbuild_trigger#objects GoogleCloudbuildTrigger#objects}
 	Objects *GoogleCloudbuildTriggerBuildArtifactsObjects `field:"optional" json:"objects" yaml:"objects"`
+	// python_packages block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_cloudbuild_trigger#python_packages GoogleCloudbuildTrigger#python_packages}
+	PythonPackages interface{} `field:"optional" json:"pythonPackages" yaml:"pythonPackages"`
 }
 

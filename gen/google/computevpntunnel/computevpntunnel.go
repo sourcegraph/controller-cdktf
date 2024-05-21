@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computevpntunnel/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel}.
 type ComputeVpnTunnel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,7 @@ type ComputeVpnTunnel interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	DetailedStatus() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -47,6 +48,10 @@ type ComputeVpnTunnel interface {
 	IkeVersion() *float64
 	SetIkeVersion(val *float64)
 	IkeVersionInput() *float64
+	LabelFingerprint() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -103,6 +108,7 @@ type ComputeVpnTunnel interface {
 	TargetVpnGatewayInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -145,6 +151,7 @@ type ComputeVpnTunnel interface {
 	ResetDescription()
 	ResetId()
 	ResetIkeVersion()
+	ResetLabels()
 	ResetLocalTrafficSelector()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -266,6 +273,16 @@ func (j *jsiiProxy_ComputeVpnTunnel) DetailedStatus() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeVpnTunnel) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeVpnTunnel) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -331,6 +348,36 @@ func (j *jsiiProxy_ComputeVpnTunnel) IkeVersionInput() *float64 {
 	_jsii_.Get(
 		j,
 		"ikeVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeVpnTunnel) LabelFingerprint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"labelFingerprint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeVpnTunnel) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeVpnTunnel) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
 		&returns,
 	)
 	return returns
@@ -656,6 +703,16 @@ func (j *jsiiProxy_ComputeVpnTunnel) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
+func (j *jsiiProxy_ComputeVpnTunnel) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeVpnTunnel) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -747,7 +804,7 @@ func (j *jsiiProxy_ComputeVpnTunnel) VpnGatewayInterfaceInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
 func NewComputeVpnTunnel(scope constructs.Construct, id *string, config *ComputeVpnTunnelConfig) ComputeVpnTunnel {
 	_init_.Initialize()
 
@@ -765,7 +822,7 @@ func NewComputeVpnTunnel(scope constructs.Construct, id *string, config *Compute
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
 func NewComputeVpnTunnel_Override(c ComputeVpnTunnel, scope constructs.Construct, id *string, config *ComputeVpnTunnelConfig) {
 	_init_.Initialize()
 
@@ -843,6 +900,17 @@ func (j *jsiiProxy_ComputeVpnTunnel)SetIkeVersion(val *float64) {
 	_jsii_.Set(
 		j,
 		"ikeVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeVpnTunnel)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -1328,6 +1396,14 @@ func (c *jsiiProxy_ComputeVpnTunnel) ResetIkeVersion() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetIkeVersion",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeVpnTunnel) ResetLabels() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLabels",
 		nil, // no parameters
 	)
 }

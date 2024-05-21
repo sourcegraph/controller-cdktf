@@ -10,6 +10,7 @@ import (
 
 type DataGoogleContainerClusterIpAllocationPolicyOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalPodRangesConfig() DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigList
 	ClusterIpv4CidrBlock() *string
 	ClusterSecondaryRangeName() *string
 	// the index of the complex object in a list.
@@ -80,6 +81,16 @@ type DataGoogleContainerClusterIpAllocationPolicyOutputReference interface {
 // The jsii proxy struct for DataGoogleContainerClusterIpAllocationPolicyOutputReference
 type jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) AdditionalPodRangesConfig() DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigList {
+	var returns DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigList
+	_jsii_.Get(
+		j,
+		"additionalPodRangesConfig",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) ClusterIpv4CidrBlock() *string {

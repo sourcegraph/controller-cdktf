@@ -1,0 +1,6 @@
+package datagooglecloudidentitygroupmemberships
+
+
+type DataGoogleCloudIdentityGroupMembershipsMembershipsRolesExpiryDetail struct {
+}
+

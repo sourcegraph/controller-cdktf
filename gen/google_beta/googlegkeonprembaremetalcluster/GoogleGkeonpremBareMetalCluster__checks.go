@@ -111,6 +111,17 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validateOverrideLogicalIdPar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validatePutBinaryAuthorizationParameters(value *GoogleGkeonpremBareMetalClusterBinaryAuthorization) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validatePutClusterOperationsParameters(value *GoogleGkeonpremBareMetalClusterClusterOperations) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -233,6 +244,17 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validatePutStorageParameters
 }
 
 func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validatePutTimeoutsParameters(value *GoogleGkeonpremBareMetalClusterTimeouts) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validatePutUpgradePolicyParameters(value *GoogleGkeonpremBareMetalClusterUpgradePolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

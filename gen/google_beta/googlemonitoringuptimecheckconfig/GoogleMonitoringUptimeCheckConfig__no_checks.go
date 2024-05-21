@@ -68,6 +68,10 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validatePutResourceGroupPa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validatePutSyntheticMonitorParameters(value *GoogleMonitoringUptimeCheckConfigSyntheticMonitor) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validatePutTcpCheckParameters(value *GoogleMonitoringUptimeCheckConfigTcpCheck) error {
 	return nil
 }
@@ -129,6 +133,10 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetSelectedRegions
 }
 
 func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetTimeoutParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetUserLabelsParameters(val *map[string]*string) error {
 	return nil
 }
 

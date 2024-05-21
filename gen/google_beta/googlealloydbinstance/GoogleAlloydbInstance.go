@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlealloydbinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_alloydb_instance google_alloydb_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_alloydb_instance google_alloydb_instance}.
 type GoogleAlloydbInstance interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -20,6 +20,8 @@ type GoogleAlloydbInstance interface {
 	AvailabilityTypeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClientConnectionConfig() GoogleAlloydbInstanceClientConnectionConfigOutputReference
+	ClientConnectionConfigInput() *GoogleAlloydbInstanceClientConnectionConfig
 	Cluster() *string
 	SetCluster(val *string)
 	ClusterInput() *string
@@ -44,6 +46,8 @@ type GoogleAlloydbInstance interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveAnnotations() cdktf.StringMap
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -75,6 +79,8 @@ type GoogleAlloydbInstance interface {
 	MachineConfig() GoogleAlloydbInstanceMachineConfigOutputReference
 	MachineConfigInput() *GoogleAlloydbInstanceMachineConfig
 	Name() *string
+	NetworkConfig() GoogleAlloydbInstanceNetworkConfigOutputReference
+	NetworkConfigInput() *GoogleAlloydbInstanceNetworkConfig
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -85,6 +91,9 @@ type GoogleAlloydbInstance interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicIpAddress() *string
+	QueryInsightsConfig() GoogleAlloydbInstanceQueryInsightsConfigOutputReference
+	QueryInsightsConfigInput() *GoogleAlloydbInstanceQueryInsightsConfig
 	// Experimental.
 	RawOverrides() interface{}
 	ReadPoolConfig() GoogleAlloydbInstanceReadPoolConfigOutputReference
@@ -93,6 +102,7 @@ type GoogleAlloydbInstance interface {
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -126,20 +136,26 @@ type GoogleAlloydbInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutClientConnectionConfig(value *GoogleAlloydbInstanceClientConnectionConfig)
 	PutMachineConfig(value *GoogleAlloydbInstanceMachineConfig)
+	PutNetworkConfig(value *GoogleAlloydbInstanceNetworkConfig)
+	PutQueryInsightsConfig(value *GoogleAlloydbInstanceQueryInsightsConfig)
 	PutReadPoolConfig(value *GoogleAlloydbInstanceReadPoolConfig)
 	PutTimeouts(value *GoogleAlloydbInstanceTimeouts)
 	ResetAnnotations()
 	ResetAvailabilityType()
+	ResetClientConnectionConfig()
 	ResetDatabaseFlags()
 	ResetDisplayName()
 	ResetGceZone()
 	ResetId()
 	ResetLabels()
 	ResetMachineConfig()
+	ResetNetworkConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetQueryInsightsConfig()
 	ResetReadPoolConfig()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -202,6 +218,26 @@ func (j *jsiiProxy_GoogleAlloydbInstance) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstance) ClientConnectionConfig() GoogleAlloydbInstanceClientConnectionConfigOutputReference {
+	var returns GoogleAlloydbInstanceClientConnectionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"clientConnectionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstance) ClientConnectionConfigInput() *GoogleAlloydbInstanceClientConnectionConfig {
+	var returns *GoogleAlloydbInstanceClientConnectionConfig
+	_jsii_.Get(
+		j,
+		"clientConnectionConfigInput",
 		&returns,
 	)
 	return returns
@@ -312,6 +348,26 @@ func (j *jsiiProxy_GoogleAlloydbInstance) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstance) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstance) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -497,6 +553,26 @@ func (j *jsiiProxy_GoogleAlloydbInstance) Name() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAlloydbInstance) NetworkConfig() GoogleAlloydbInstanceNetworkConfigOutputReference {
+	var returns GoogleAlloydbInstanceNetworkConfigOutputReference
+	_jsii_.Get(
+		j,
+		"networkConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstance) NetworkConfigInput() *GoogleAlloydbInstanceNetworkConfig {
+	var returns *GoogleAlloydbInstanceNetworkConfig
+	_jsii_.Get(
+		j,
+		"networkConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleAlloydbInstance) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -522,6 +598,36 @@ func (j *jsiiProxy_GoogleAlloydbInstance) Provisioners() *[]interface{} {
 	_jsii_.Get(
 		j,
 		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstance) PublicIpAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicIpAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstance) QueryInsightsConfig() GoogleAlloydbInstanceQueryInsightsConfigOutputReference {
+	var returns GoogleAlloydbInstanceQueryInsightsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"queryInsightsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstance) QueryInsightsConfigInput() *GoogleAlloydbInstanceQueryInsightsConfig {
+	var returns *GoogleAlloydbInstanceQueryInsightsConfig
+	_jsii_.Get(
+		j,
+		"queryInsightsConfigInput",
 		&returns,
 	)
 	return returns
@@ -582,6 +688,16 @@ func (j *jsiiProxy_GoogleAlloydbInstance) TerraformGeneratorMetadata() *cdktf.Te
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstance) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
 		&returns,
 	)
 	return returns
@@ -648,7 +764,7 @@ func (j *jsiiProxy_GoogleAlloydbInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_alloydb_instance google_alloydb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_alloydb_instance google_alloydb_instance} Resource.
 func NewGoogleAlloydbInstance(scope constructs.Construct, id *string, config *GoogleAlloydbInstanceConfig) GoogleAlloydbInstance {
 	_init_.Initialize()
 
@@ -666,7 +782,7 @@ func NewGoogleAlloydbInstance(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_alloydb_instance google_alloydb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_alloydb_instance google_alloydb_instance} Resource.
 func NewGoogleAlloydbInstance_Override(g GoogleAlloydbInstance, scope constructs.Construct, id *string, config *GoogleAlloydbInstanceConfig) {
 	_init_.Initialize()
 
@@ -1121,6 +1237,17 @@ func (g *jsiiProxy_GoogleAlloydbInstance) OverrideLogicalId(newLogicalId *string
 	)
 }
 
+func (g *jsiiProxy_GoogleAlloydbInstance) PutClientConnectionConfig(value *GoogleAlloydbInstanceClientConnectionConfig) {
+	if err := g.validatePutClientConnectionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putClientConnectionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleAlloydbInstance) PutMachineConfig(value *GoogleAlloydbInstanceMachineConfig) {
 	if err := g.validatePutMachineConfigParameters(value); err != nil {
 		panic(err)
@@ -1128,6 +1255,28 @@ func (g *jsiiProxy_GoogleAlloydbInstance) PutMachineConfig(value *GoogleAlloydbI
 	_jsii_.InvokeVoid(
 		g,
 		"putMachineConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbInstance) PutNetworkConfig(value *GoogleAlloydbInstanceNetworkConfig) {
+	if err := g.validatePutNetworkConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNetworkConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbInstance) PutQueryInsightsConfig(value *GoogleAlloydbInstanceQueryInsightsConfig) {
+	if err := g.validatePutQueryInsightsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putQueryInsightsConfig",
 		[]interface{}{value},
 	)
 }
@@ -1166,6 +1315,14 @@ func (g *jsiiProxy_GoogleAlloydbInstance) ResetAvailabilityType() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAvailabilityType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbInstance) ResetClientConnectionConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetClientConnectionConfig",
 		nil, // no parameters
 	)
 }
@@ -1218,10 +1375,26 @@ func (g *jsiiProxy_GoogleAlloydbInstance) ResetMachineConfig() {
 	)
 }
 
+func (g *jsiiProxy_GoogleAlloydbInstance) ResetNetworkConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkConfig",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleAlloydbInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbInstance) ResetQueryInsightsConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetQueryInsightsConfig",
 		nil, // no parameters
 	)
 }

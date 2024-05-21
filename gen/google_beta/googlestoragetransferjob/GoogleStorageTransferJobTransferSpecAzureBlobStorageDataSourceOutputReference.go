@@ -30,6 +30,9 @@ type GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReferen
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CredentialsSecret() *string
+	SetCredentialsSecret(val *string)
+	CredentialsSecretInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSource
@@ -73,6 +76,8 @@ type GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReferen
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAzureCredentials(value *GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentials)
+	ResetAzureCredentials()
+	ResetCredentialsSecret()
 	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -154,6 +159,26 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourc
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference) CredentialsSecret() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialsSecret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference) CredentialsSecretInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialsSecretInput",
 		&returns,
 	)
 	return returns
@@ -296,6 +321,17 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourc
 	_jsii_.Set(
 		j,
 		"container",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference)SetCredentialsSecret(val *string) {
+	if err := j.validateSetCredentialsSecretParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialsSecret",
 		val,
 	)
 }
@@ -549,6 +585,22 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourc
 		g,
 		"putAzureCredentials",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference) ResetAzureCredentials() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAzureCredentials",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference) ResetCredentialsSecret() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCredentialsSecret",
+		nil, // no parameters
 	)
 }
 

@@ -179,6 +179,14 @@ func (j *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference) validateSetRoutineParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

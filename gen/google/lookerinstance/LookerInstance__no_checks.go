@@ -56,6 +56,10 @@ func (l *jsiiProxy_LookerInstance) validatePutAdminSettingsParameters(value *Loo
 	return nil
 }
 
+func (l *jsiiProxy_LookerInstance) validatePutCustomDomainParameters(value *LookerInstanceCustomDomain) error {
+	return nil
+}
+
 func (l *jsiiProxy_LookerInstance) validatePutDenyMaintenancePeriodParameters(value *LookerInstanceDenyMaintenancePeriod) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataplextask/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task google_dataplex_task}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_dataplex_task google_dataplex_task}.
 type GoogleDataplexTask interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -35,6 +35,7 @@ type GoogleDataplexTask interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	ExecutionSpec() GoogleDataplexTaskExecutionSpecOutputReference
 	ExecutionSpecInput() *GoogleDataplexTaskExecutionSpec
 	ExecutionStatus() GoogleDataplexTaskExecutionStatusList
@@ -88,6 +89,7 @@ type GoogleDataplexTask interface {
 	TaskIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -252,6 +254,16 @@ func (j *jsiiProxy_GoogleDataplexTask) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexTask) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -557,6 +569,16 @@ func (j *jsiiProxy_GoogleDataplexTask) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataplexTask) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataplexTask) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -638,7 +660,7 @@ func (j *jsiiProxy_GoogleDataplexTask) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task google_dataplex_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_dataplex_task google_dataplex_task} Resource.
 func NewGoogleDataplexTask(scope constructs.Construct, id *string, config *GoogleDataplexTaskConfig) GoogleDataplexTask {
 	_init_.Initialize()
 
@@ -656,7 +678,7 @@ func NewGoogleDataplexTask(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task google_dataplex_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_dataplex_task google_dataplex_task} Resource.
 func NewGoogleDataplexTask_Override(g GoogleDataplexTask, scope constructs.Construct, id *string, config *GoogleDataplexTaskConfig) {
 	_init_.Initialize()
 

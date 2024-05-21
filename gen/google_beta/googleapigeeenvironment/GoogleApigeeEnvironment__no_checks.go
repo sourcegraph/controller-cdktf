@@ -96,6 +96,10 @@ func (j *jsiiProxy_GoogleApigeeEnvironment) validateSetDisplayNameParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleApigeeEnvironment) validateSetForwardProxyUriParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleApigeeEnvironment) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -113,6 +117,10 @@ func (j *jsiiProxy_GoogleApigeeEnvironment) validateSetOrgIdParameters(val *stri
 }
 
 func (j *jsiiProxy_GoogleApigeeEnvironment) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleApigeeEnvironment) validateSetTypeParameters(val *string) error {
 	return nil
 }
 

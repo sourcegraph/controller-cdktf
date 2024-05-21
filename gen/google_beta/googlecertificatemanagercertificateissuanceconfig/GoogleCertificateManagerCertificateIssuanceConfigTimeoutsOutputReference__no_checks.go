@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleCertificateManagerCertificateIssuanceConfigTimeoutsOutp
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCertificateManagerCertificateIssuanceConfigTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleCertificateManagerCertificateIssuanceConfigTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

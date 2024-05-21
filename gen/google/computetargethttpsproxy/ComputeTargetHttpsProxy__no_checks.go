@@ -68,6 +68,10 @@ func validateComputeTargetHttpsProxy_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_ComputeTargetHttpsProxy) validateSetCertificateManagerCertificatesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeTargetHttpsProxy) validateSetCertificateMapParameters(val *string) error {
 	return nil
 }
@@ -113,6 +117,10 @@ func (j *jsiiProxy_ComputeTargetHttpsProxy) validateSetProxyBindParameters(val i
 }
 
 func (j *jsiiProxy_ComputeTargetHttpsProxy) validateSetQuicOverrideParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeTargetHttpsProxy) validateSetServerTlsPolicyParameters(val *string) error {
 	return nil
 }
 

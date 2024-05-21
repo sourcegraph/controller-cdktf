@@ -111,7 +111,40 @@ func (g *jsiiProxy_GoogleAlloydbInstance) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAlloydbInstance) validatePutClientConnectionConfigParameters(value *GoogleAlloydbInstanceClientConnectionConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAlloydbInstance) validatePutMachineConfigParameters(value *GoogleAlloydbInstanceMachineConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAlloydbInstance) validatePutNetworkConfigParameters(value *GoogleAlloydbInstanceNetworkConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAlloydbInstance) validatePutQueryInsightsConfigParameters(value *GoogleAlloydbInstanceQueryInsightsConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

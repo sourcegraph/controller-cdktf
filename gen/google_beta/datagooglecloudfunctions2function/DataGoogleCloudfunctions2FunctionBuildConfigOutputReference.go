@@ -34,6 +34,7 @@ type DataGoogleCloudfunctions2FunctionBuildConfigOutputReference interface {
 	InternalValue() *DataGoogleCloudfunctions2FunctionBuildConfig
 	SetInternalValue(val *DataGoogleCloudfunctions2FunctionBuildConfig)
 	Runtime() *string
+	ServiceAccount() *string
 	Source() DataGoogleCloudfunctions2FunctionBuildConfigSourceList
 	// Experimental.
 	TerraformAttribute() *string
@@ -178,6 +179,16 @@ func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"runtime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigOutputReference) ServiceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccount",
 		&returns,
 	)
 	return returns

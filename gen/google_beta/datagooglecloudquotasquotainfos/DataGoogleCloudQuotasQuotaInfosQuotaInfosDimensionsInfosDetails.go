@@ -1,0 +1,6 @@
+package datagooglecloudquotasquotainfos
+
+
+type DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosDetails struct {
+}
+

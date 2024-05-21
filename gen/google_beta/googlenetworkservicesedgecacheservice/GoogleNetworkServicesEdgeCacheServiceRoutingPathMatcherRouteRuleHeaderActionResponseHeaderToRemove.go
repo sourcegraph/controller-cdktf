@@ -6,7 +6,7 @@ type GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActio
 	//
 	// Response headers are only sent to the client, and do not have an effect on the cache serving the response.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_edge_cache_service#header_name GoogleNetworkServicesEdgeCacheService#header_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_services_edge_cache_service#header_name GoogleNetworkServicesEdgeCacheService#header_name}
 	HeaderName *string `field:"required" json:"headerName" yaml:"headerName"`
 }
 

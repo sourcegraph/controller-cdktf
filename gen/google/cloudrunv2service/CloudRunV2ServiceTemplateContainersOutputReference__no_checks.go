@@ -52,7 +52,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) validateP
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) validatePutPortsParameters(value interface{}) error {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) validatePutPortsParameters(value *CloudRunV2ServiceTemplateContainersPorts) error {
 	return nil
 }
 
@@ -85,6 +85,10 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) validateS
 }
 
 func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) validateSetDependsOnParameters(val *[]*string) error {
 	return nil
 }
 
