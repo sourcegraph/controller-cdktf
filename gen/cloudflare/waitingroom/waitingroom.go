@@ -9,9 +9,11 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/waitingroom/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room cloudflare_waiting_room}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/waiting_room cloudflare_waiting_room}.
 type WaitingRoom interface {
 	cdktf.TerraformResource
+	AdditionalRoutes() WaitingRoomAdditionalRoutesList
+	AdditionalRoutesInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -20,6 +22,9 @@ type WaitingRoom interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	CookieSuffix() *string
+	SetCookieSuffix(val *string)
+	CookieSuffixInput() *string
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -86,6 +91,9 @@ type WaitingRoom interface {
 	QueueingMethod() *string
 	SetQueueingMethod(val *string)
 	QueueingMethodInput() *string
+	QueueingStatusCode() *float64
+	SetQueueingStatusCode(val *float64)
+	QueueingStatusCodeInput() *float64
 	// Experimental.
 	RawOverrides() interface{}
 	SessionDuration() *float64
@@ -133,7 +141,10 @@ type WaitingRoom interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAdditionalRoutes(value interface{})
 	PutTimeouts(value *WaitingRoomTimeouts)
+	ResetAdditionalRoutes()
+	ResetCookieSuffix()
 	ResetCustomPageHtml()
 	ResetDefaultTemplateLanguage()
 	ResetDescription()
@@ -146,6 +157,7 @@ type WaitingRoom interface {
 	ResetPath()
 	ResetQueueAll()
 	ResetQueueingMethod()
+	ResetQueueingStatusCode()
 	ResetSessionDuration()
 	ResetSuspended()
 	ResetTimeouts()
@@ -162,6 +174,26 @@ type WaitingRoom interface {
 // The jsii proxy struct for WaitingRoom
 type jsiiProxy_WaitingRoom struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_WaitingRoom) AdditionalRoutes() WaitingRoomAdditionalRoutesList {
+	var returns WaitingRoomAdditionalRoutesList
+	_jsii_.Get(
+		j,
+		"additionalRoutes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoom) AdditionalRoutesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"additionalRoutesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_WaitingRoom) CdktfStack() cdktf.TerraformStack {
@@ -189,6 +221,26 @@ func (j *jsiiProxy_WaitingRoom) ConstructNodeMetadata() *map[string]interface{} 
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoom) CookieSuffix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cookieSuffix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoom) CookieSuffixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cookieSuffixInput",
 		&returns,
 	)
 	return returns
@@ -524,6 +576,26 @@ func (j *jsiiProxy_WaitingRoom) QueueingMethodInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WaitingRoom) QueueingStatusCode() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"queueingStatusCode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoom) QueueingStatusCodeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"queueingStatusCodeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WaitingRoom) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -665,7 +737,7 @@ func (j *jsiiProxy_WaitingRoom) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
 func NewWaitingRoom(scope constructs.Construct, id *string, config *WaitingRoomConfig) WaitingRoom {
 	_init_.Initialize()
 
@@ -683,7 +755,7 @@ func NewWaitingRoom(scope constructs.Construct, id *string, config *WaitingRoomC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
 func NewWaitingRoom_Override(w WaitingRoom, scope constructs.Construct, id *string, config *WaitingRoomConfig) {
 	_init_.Initialize()
 
@@ -701,6 +773,17 @@ func (j *jsiiProxy_WaitingRoom)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WaitingRoom)SetCookieSuffix(val *string) {
+	if err := j.validateSetCookieSuffixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cookieSuffix",
 		val,
 	)
 }
@@ -890,6 +973,17 @@ func (j *jsiiProxy_WaitingRoom)SetQueueingMethod(val *string) {
 	_jsii_.Set(
 		j,
 		"queueingMethod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WaitingRoom)SetQueueingStatusCode(val *float64) {
+	if err := j.validateSetQueueingStatusCodeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"queueingStatusCode",
 		val,
 	)
 }
@@ -1204,6 +1298,17 @@ func (w *jsiiProxy_WaitingRoom) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (w *jsiiProxy_WaitingRoom) PutAdditionalRoutes(value interface{}) {
+	if err := w.validatePutAdditionalRoutesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putAdditionalRoutes",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WaitingRoom) PutTimeouts(value *WaitingRoomTimeouts) {
 	if err := w.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1212,6 +1317,22 @@ func (w *jsiiProxy_WaitingRoom) PutTimeouts(value *WaitingRoomTimeouts) {
 		w,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_WaitingRoom) ResetAdditionalRoutes() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAdditionalRoutes",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WaitingRoom) ResetCookieSuffix() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetCookieSuffix",
+		nil, // no parameters
 	)
 }
 
@@ -1291,6 +1412,14 @@ func (w *jsiiProxy_WaitingRoom) ResetQueueingMethod() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetQueueingMethod",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WaitingRoom) ResetQueueingStatusCode() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetQueueingStatusCode",
 		nil, // no parameters
 	)
 }

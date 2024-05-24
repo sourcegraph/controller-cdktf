@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/logpushjob/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/logpush_job cloudflare_logpush_job}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/logpush_job cloudflare_logpush_job}.
 type LogpushJob interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -67,6 +67,15 @@ type LogpushJob interface {
 	LogpullOptions() *string
 	SetLogpullOptions(val *string)
 	LogpullOptionsInput() *string
+	MaxUploadBytes() *float64
+	SetMaxUploadBytes(val *float64)
+	MaxUploadBytesInput() *float64
+	MaxUploadIntervalSeconds() *float64
+	SetMaxUploadIntervalSeconds(val *float64)
+	MaxUploadIntervalSecondsInput() *float64
+	MaxUploadRecords() *float64
+	SetMaxUploadRecords(val *float64)
+	MaxUploadRecordsInput() *float64
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -126,6 +135,9 @@ type LogpushJob interface {
 	ResetId()
 	ResetKind()
 	ResetLogpullOptions()
+	ResetMaxUploadBytes()
+	ResetMaxUploadIntervalSeconds()
+	ResetMaxUploadRecords()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -417,6 +429,66 @@ func (j *jsiiProxy_LogpushJob) LogpullOptionsInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LogpushJob) MaxUploadBytes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxUploadBytes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogpushJob) MaxUploadBytesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxUploadBytesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogpushJob) MaxUploadIntervalSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxUploadIntervalSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogpushJob) MaxUploadIntervalSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxUploadIntervalSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogpushJob) MaxUploadRecords() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxUploadRecords",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogpushJob) MaxUploadRecordsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxUploadRecordsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LogpushJob) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -548,7 +620,7 @@ func (j *jsiiProxy_LogpushJob) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
 func NewLogpushJob(scope constructs.Construct, id *string, config *LogpushJobConfig) LogpushJob {
 	_init_.Initialize()
 
@@ -566,7 +638,7 @@ func NewLogpushJob(scope constructs.Construct, id *string, config *LogpushJobCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
 func NewLogpushJob_Override(l LogpushJob, scope constructs.Construct, id *string, config *LogpushJobConfig) {
 	_init_.Initialize()
 
@@ -721,6 +793,39 @@ func (j *jsiiProxy_LogpushJob)SetLogpullOptions(val *string) {
 	_jsii_.Set(
 		j,
 		"logpullOptions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogpushJob)SetMaxUploadBytes(val *float64) {
+	if err := j.validateSetMaxUploadBytesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxUploadBytes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogpushJob)SetMaxUploadIntervalSeconds(val *float64) {
+	if err := j.validateSetMaxUploadIntervalSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxUploadIntervalSeconds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogpushJob)SetMaxUploadRecords(val *float64) {
+	if err := j.validateSetMaxUploadRecordsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxUploadRecords",
 		val,
 	)
 }
@@ -1095,6 +1200,30 @@ func (l *jsiiProxy_LogpushJob) ResetLogpullOptions() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetLogpullOptions",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogpushJob) ResetMaxUploadBytes() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetMaxUploadBytes",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogpushJob) ResetMaxUploadIntervalSeconds() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetMaxUploadIntervalSeconds",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogpushJob) ResetMaxUploadRecords() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetMaxUploadRecords",
 		nil, // no parameters
 	)
 }

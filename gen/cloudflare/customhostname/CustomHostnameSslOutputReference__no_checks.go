@@ -52,6 +52,10 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) validateResolveParameters(_
 	return nil
 }
 
+func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetBundleMethodParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetCertificateAuthorityParameters(val *string) error {
 	return nil
 }

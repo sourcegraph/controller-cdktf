@@ -90,6 +90,17 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 	return nil
 }
 
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validatePutPlacementParameters(value *PagesProjectDeploymentConfigsProductionPlacement) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validatePutServiceBindingParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -291,6 +302,14 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 }
 
 func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateSetR2BucketsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateSetSecretsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

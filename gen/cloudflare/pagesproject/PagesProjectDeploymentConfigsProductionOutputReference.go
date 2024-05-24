@@ -53,9 +53,14 @@ type PagesProjectDeploymentConfigsProductionOutputReference interface {
 	KvNamespaces() *map[string]*string
 	SetKvNamespaces(val *map[string]*string)
 	KvNamespacesInput() *map[string]*string
+	Placement() PagesProjectDeploymentConfigsProductionPlacementOutputReference
+	PlacementInput() *PagesProjectDeploymentConfigsProductionPlacement
 	R2Buckets() *map[string]*string
 	SetR2Buckets(val *map[string]*string)
 	R2BucketsInput() *map[string]*string
+	Secrets() *map[string]*string
+	SetSecrets(val *map[string]*string)
+	SecretsInput() *map[string]*string
 	ServiceBinding() PagesProjectDeploymentConfigsProductionServiceBindingList
 	ServiceBindingInput() interface{}
 	// Experimental.
@@ -93,6 +98,7 @@ type PagesProjectDeploymentConfigsProductionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPlacement(value *PagesProjectDeploymentConfigsProductionPlacement)
 	PutServiceBinding(value interface{})
 	ResetAlwaysUseLatestCompatibilityDate()
 	ResetCompatibilityDate()
@@ -102,7 +108,9 @@ type PagesProjectDeploymentConfigsProductionOutputReference interface {
 	ResetEnvironmentVariables()
 	ResetFailOpen()
 	ResetKvNamespaces()
+	ResetPlacement()
 	ResetR2Buckets()
+	ResetSecrets()
 	ResetServiceBinding()
 	ResetUsageModel()
 	// Produce the Token's value at resolution time.
@@ -330,6 +338,26 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) KvNam
 	return returns
 }
 
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Placement() PagesProjectDeploymentConfigsProductionPlacementOutputReference {
+	var returns PagesProjectDeploymentConfigsProductionPlacementOutputReference
+	_jsii_.Get(
+		j,
+		"placement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) PlacementInput() *PagesProjectDeploymentConfigsProductionPlacement {
+	var returns *PagesProjectDeploymentConfigsProductionPlacement
+	_jsii_.Get(
+		j,
+		"placementInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) R2Buckets() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -345,6 +373,26 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) R2Buc
 	_jsii_.Get(
 		j,
 		"r2BucketsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Secrets() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"secrets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) SecretsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"secretsInput",
 		&returns,
 	)
 	return returns
@@ -570,6 +618,17 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference)SetR2B
 	)
 }
 
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference)SetSecrets(val *map[string]*string) {
+	if err := j.validateSetSecretsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secrets",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -789,6 +848,17 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Inter
 	return returns
 }
 
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) PutPlacement(value *PagesProjectDeploymentConfigsProductionPlacement) {
+	if err := p.validatePutPlacementParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putPlacement",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) PutServiceBinding(value interface{}) {
 	if err := p.validatePutServiceBindingParameters(value); err != nil {
 		panic(err)
@@ -864,10 +934,26 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Reset
 	)
 }
 
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) ResetPlacement() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPlacement",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) ResetR2Buckets() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetR2Buckets",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) ResetSecrets() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSecrets",
 		nil, // no parameters
 	)
 }

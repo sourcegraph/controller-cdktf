@@ -29,6 +29,9 @@ type TeamsAccountProxyOutputReference interface {
 	Fqn() *string
 	InternalValue() *TeamsAccountProxy
 	SetInternalValue(val *TeamsAccountProxy)
+	RootCa() interface{}
+	SetRootCa(val interface{})
+	RootCaInput() interface{}
 	Tcp() interface{}
 	SetTcp(val interface{})
 	TcpInput() interface{}
@@ -127,6 +130,26 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference) InternalValue() *TeamsAccou
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccountProxyOutputReference) RootCa() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rootCa",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccountProxyOutputReference) RootCaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rootCaInput",
 		&returns,
 	)
 	return returns
@@ -249,6 +272,17 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference)SetInternalValue(val *TeamsA
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsAccountProxyOutputReference)SetRootCa(val interface{}) {
+	if err := j.validateSetRootCaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rootCa",
 		val,
 	)
 }

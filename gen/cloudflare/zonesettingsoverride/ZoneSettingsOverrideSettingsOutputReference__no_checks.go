@@ -128,6 +128,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetFilte
 	return nil
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetFontsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetH2PrioritizationParameters(val *string) error {
 	return nil
 }

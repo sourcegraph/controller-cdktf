@@ -30,8 +30,14 @@ type LoadBalancerSessionAffinityAttributesOutputReference interface {
 	DrainDurationInput() *float64
 	// Experimental.
 	Fqn() *string
+	Headers() *[]*string
+	SetHeaders(val *[]*string)
+	HeadersInput() *[]*string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	RequireAllHeaders() interface{}
+	SetRequireAllHeaders(val interface{})
+	RequireAllHeadersInput() interface{}
 	Samesite() *string
 	SetSamesite(val *string)
 	SamesiteInput() *string
@@ -74,6 +80,8 @@ type LoadBalancerSessionAffinityAttributesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDrainDuration()
+	ResetHeaders()
+	ResetRequireAllHeaders()
 	ResetSamesite()
 	ResetSecure()
 	ResetZeroDowntimeFailover()
@@ -152,11 +160,51 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) Fqn() *
 	return returns
 }
 
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) Headers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"headers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) HeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"headersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) RequireAllHeaders() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requireAllHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) RequireAllHeadersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requireAllHeadersInput",
 		&returns,
 	)
 	return returns
@@ -303,6 +351,17 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetDrain
 	)
 }
 
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetHeaders(val *[]*string) {
+	if err := j.validateSetHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"headers",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -310,6 +369,17 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetInter
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference)SetRequireAllHeaders(val interface{}) {
+	if err := j.validateSetRequireAllHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requireAllHeaders",
 		val,
 	)
 }
@@ -559,6 +629,22 @@ func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) ResetDr
 	_jsii_.InvokeVoid(
 		l,
 		"resetDrainDuration",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) ResetHeaders() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetHeaders",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) ResetRequireAllHeaders() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRequireAllHeaders",
 		nil, // no parameters
 	)
 }

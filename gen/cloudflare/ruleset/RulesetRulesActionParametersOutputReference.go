@@ -10,6 +10,11 @@ import (
 
 type RulesetRulesActionParametersOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalCacheablePorts() *[]*float64
+	SetAdditionalCacheablePorts(val *[]*float64)
+	AdditionalCacheablePortsInput() *[]*float64
+	Algorithms() RulesetRulesActionParametersAlgorithmsList
+	AlgorithmsInput() interface{}
 	AutomaticHttpsRewrites() interface{}
 	SetAutomaticHttpsRewrites(val interface{})
 	AutomaticHttpsRewritesInput() interface{}
@@ -94,6 +99,9 @@ type RulesetRulesActionParametersOutputReference interface {
 	SetOpportunisticEncryption(val interface{})
 	OpportunisticEncryptionInput() interface{}
 	Origin() RulesetRulesActionParametersOriginList
+	OriginCacheControl() interface{}
+	SetOriginCacheControl(val interface{})
+	OriginCacheControlInput() interface{}
 	OriginErrorPagePassthru() interface{}
 	SetOriginErrorPagePassthru(val interface{})
 	OriginErrorPagePassthruInput() interface{}
@@ -109,6 +117,9 @@ type RulesetRulesActionParametersOutputReference interface {
 	Products() *[]*string
 	SetProducts(val *[]*string)
 	ProductsInput() *[]*string
+	ReadTimeout() *float64
+	SetReadTimeout(val *float64)
+	ReadTimeoutInput() *float64
 	RequestFields() *[]*string
 	SetRequestFields(val *[]*string)
 	RequestFieldsInput() *[]*string
@@ -188,6 +199,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAlgorithms(value interface{})
 	PutAutominify(value interface{})
 	PutBrowserTtl(value interface{})
 	PutCacheKey(value interface{})
@@ -202,6 +214,8 @@ type RulesetRulesActionParametersOutputReference interface {
 	PutServeStale(value interface{})
 	PutSni(value interface{})
 	PutUri(value interface{})
+	ResetAdditionalCacheablePorts()
+	ResetAlgorithms()
 	ResetAutomaticHttpsRewrites()
 	ResetAutominify()
 	ResetBic()
@@ -227,11 +241,13 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetMirage()
 	ResetOpportunisticEncryption()
 	ResetOrigin()
+	ResetOriginCacheControl()
 	ResetOriginErrorPagePassthru()
 	ResetOverrides()
 	ResetPhases()
 	ResetPolish()
 	ResetProducts()
+	ResetReadTimeout()
 	ResetRequestFields()
 	ResetRespectStrongEtags()
 	ResetResponse()
@@ -262,6 +278,46 @@ type RulesetRulesActionParametersOutputReference interface {
 // The jsii proxy struct for RulesetRulesActionParametersOutputReference
 type jsiiProxy_RulesetRulesActionParametersOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) AdditionalCacheablePorts() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"additionalCacheablePorts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) AdditionalCacheablePortsInput() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"additionalCacheablePortsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Algorithms() RulesetRulesActionParametersAlgorithmsList {
+	var returns RulesetRulesActionParametersAlgorithmsList
+	_jsii_.Get(
+		j,
+		"algorithms",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) AlgorithmsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"algorithmsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) AutomaticHttpsRewrites() interface{} {
@@ -804,6 +860,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Origin() Ruleset
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) OriginCacheControl() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"originCacheControl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) OriginCacheControlInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"originCacheControlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) OriginErrorPagePassthru() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -909,6 +985,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ProductsInput() 
 	_jsii_.Get(
 		j,
 		"productsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ReadTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"readTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ReadTimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"readTimeoutInput",
 		&returns,
 	)
 	return returns
@@ -1302,6 +1398,17 @@ func NewRulesetRulesActionParametersOutputReference_Override(r RulesetRulesActio
 	)
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetAdditionalCacheablePorts(val *[]*float64) {
+	if err := j.validateSetAdditionalCacheablePortsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"additionalCacheablePorts",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetAutomaticHttpsRewrites(val interface{}) {
 	if err := j.validateSetAutomaticHttpsRewritesParameters(val); err != nil {
 		panic(err)
@@ -1511,6 +1618,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetOpportunisticE
 	)
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetOriginCacheControl(val interface{}) {
+	if err := j.validateSetOriginCacheControlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"originCacheControl",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetOriginErrorPagePassthru(val interface{}) {
 	if err := j.validateSetOriginErrorPagePassthruParameters(val); err != nil {
 		panic(err)
@@ -1551,6 +1669,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetProducts(val *
 	_jsii_.Set(
 		j,
 		"products",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetReadTimeout(val *float64) {
+	if err := j.validateSetReadTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"readTimeout",
 		val,
 	)
 }
@@ -1906,6 +2035,17 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) InterpolationFor
 	return returns
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutAlgorithms(value interface{}) {
+	if err := r.validatePutAlgorithmsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putAlgorithms",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutAutominify(value interface{}) {
 	if err := r.validatePutAutominifyParameters(value); err != nil {
 		panic(err)
@@ -2057,6 +2197,22 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutUri(value int
 		r,
 		"putUri",
 		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetAdditionalCacheablePorts() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAdditionalCacheablePorts",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetAlgorithms() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAlgorithms",
+		nil, // no parameters
 	)
 }
 
@@ -2260,6 +2416,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetOrigin() {
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetOriginCacheControl() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetOriginCacheControl",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetOriginErrorPagePassthru() {
 	_jsii_.InvokeVoid(
 		r,
@@ -2296,6 +2460,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetProducts() 
 	_jsii_.InvokeVoid(
 		r,
 		"resetProducts",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetReadTimeout() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetReadTimeout",
 		nil, // no parameters
 	)
 }

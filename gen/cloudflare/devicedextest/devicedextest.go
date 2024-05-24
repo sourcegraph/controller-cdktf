@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/devicedextest/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_dex_test cloudflare_device_dex_test}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test cloudflare_device_dex_test}.
 type DeviceDexTest interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -446,7 +446,7 @@ func (j *jsiiProxy_DeviceDexTest) Updated() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_dex_test cloudflare_device_dex_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test cloudflare_device_dex_test} Resource.
 func NewDeviceDexTest(scope constructs.Construct, id *string, config *DeviceDexTestConfig) DeviceDexTest {
 	_init_.Initialize()
 
@@ -464,7 +464,7 @@ func NewDeviceDexTest(scope constructs.Construct, id *string, config *DeviceDexT
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_dex_test cloudflare_device_dex_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_dex_test cloudflare_device_dex_test} Resource.
 func NewDeviceDexTest_Override(d DeviceDexTest, scope constructs.Construct, id *string, config *DeviceDexTestConfig) {
 	_init_.Initialize()
 

@@ -70,6 +70,9 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 	FilterLogsToCloudflare() *string
 	SetFilterLogsToCloudflare(val *string)
 	FilterLogsToCloudflareInput() *string
+	Fonts() *string
+	SetFonts(val *string)
+	FontsInput() *string
 	// Experimental.
 	Fqn() *string
 	H2Prioritization() *string
@@ -241,6 +244,7 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 	ResetEarlyHints()
 	ResetEmailObfuscation()
 	ResetFilterLogsToCloudflare()
+	ResetFonts()
 	ResetH2Prioritization()
 	ResetHotlinkProtection()
 	ResetHttp2()
@@ -621,6 +625,26 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) FilterLogsToClou
 	_jsii_.Get(
 		j,
 		"filterLogsToCloudflareInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) Fonts() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fonts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) FontsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fontsInput",
 		&returns,
 	)
 	return returns
@@ -1681,6 +1705,17 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetFilterLogsToCl
 	)
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetFonts(val *string) {
+	if err := j.validateSetFontsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fonts",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetH2Prioritization(val *string) {
 	if err := j.validateSetH2PrioritizationParameters(val); err != nil {
 		panic(err)
@@ -2456,6 +2491,14 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetFilterLogsT
 	_jsii_.InvokeVoid(
 		z,
 		"resetFilterLogsToCloudflare",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetFonts() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetFonts",
 		nil, // no parameters
 	)
 }

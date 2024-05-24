@@ -67,6 +67,7 @@ type EmailRoutingRuleActionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -481,6 +482,14 @@ func (e *jsiiProxy_EmailRoutingRuleActionOutputReference) InterpolationForAttrib
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_EmailRoutingRuleActionOutputReference) ResetValue() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetValue",
+		nil, // no parameters
+	)
 }
 
 func (e *jsiiProxy_EmailRoutingRuleActionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

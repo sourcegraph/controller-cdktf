@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/datacloudflarerecord/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/record cloudflare_record}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/record cloudflare_record}.
 type DataCloudflareRecord interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -418,7 +418,7 @@ func (j *jsiiProxy_DataCloudflareRecord) ZoneName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/record cloudflare_record} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/record cloudflare_record} Data Source.
 func NewDataCloudflareRecord(scope constructs.Construct, id *string, config *DataCloudflareRecordConfig) DataCloudflareRecord {
 	_init_.Initialize()
 
@@ -436,7 +436,7 @@ func NewDataCloudflareRecord(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/record cloudflare_record} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/data-sources/record cloudflare_record} Data Source.
 func NewDataCloudflareRecord_Override(d DataCloudflareRecord, scope constructs.Construct, id *string, config *DataCloudflareRecordConfig) {
 	_init_.Initialize()
 

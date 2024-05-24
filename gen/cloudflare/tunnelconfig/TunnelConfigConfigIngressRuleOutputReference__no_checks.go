@@ -44,6 +44,10 @@ func (t *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) validateInterpo
 	return nil
 }
 
+func (t *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) validatePutOriginRequestParameters(value *TunnelConfigConfigIngressRuleOriginRequest) error {
+	return nil
+}
+
 func (t *jsiiProxy_TunnelConfigConfigIngressRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

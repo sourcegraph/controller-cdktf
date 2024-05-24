@@ -9,12 +9,15 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/listitem/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/list_item cloudflare_list_item}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/list_item cloudflare_list_item}.
 type ListItemA interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	Asn() *float64
+	SetAsn(val *float64)
+	AsnInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Comment() *string
@@ -42,6 +45,8 @@ type ListItemA interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Hostname() ListItemHostnameOutputReference
+	HostnameInput() *ListItemHostname
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -100,8 +105,11 @@ type ListItemA interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutHostname(value *ListItemHostname)
 	PutRedirect(value *ListItemRedirect)
+	ResetAsn()
 	ResetComment()
+	ResetHostname()
 	ResetId()
 	ResetIp()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -138,6 +146,26 @@ func (j *jsiiProxy_ListItemA) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ListItemA) Asn() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"asn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ListItemA) AsnInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"asnInput",
 		&returns,
 	)
 	return returns
@@ -238,6 +266,26 @@ func (j *jsiiProxy_ListItemA) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ListItemA) Hostname() ListItemHostnameOutputReference {
+	var returns ListItemHostnameOutputReference
+	_jsii_.Get(
+		j,
+		"hostname",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ListItemA) HostnameInput() *ListItemHostname {
+	var returns *ListItemHostname
+	_jsii_.Get(
+		j,
+		"hostnameInput",
 		&returns,
 	)
 	return returns
@@ -404,7 +452,7 @@ func (j *jsiiProxy_ListItemA) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/list_item cloudflare_list_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/list_item cloudflare_list_item} Resource.
 func NewListItemA(scope constructs.Construct, id *string, config *ListItemAConfig) ListItemA {
 	_init_.Initialize()
 
@@ -422,7 +470,7 @@ func NewListItemA(scope constructs.Construct, id *string, config *ListItemAConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/list_item cloudflare_list_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/list_item cloudflare_list_item} Resource.
 func NewListItemA_Override(l ListItemA, scope constructs.Construct, id *string, config *ListItemAConfig) {
 	_init_.Initialize()
 
@@ -440,6 +488,17 @@ func (j *jsiiProxy_ListItemA)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ListItemA)SetAsn(val *float64) {
+	if err := j.validateSetAsnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"asn",
 		val,
 	)
 }
@@ -822,6 +881,17 @@ func (l *jsiiProxy_ListItemA) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (l *jsiiProxy_ListItemA) PutHostname(value *ListItemHostname) {
+	if err := l.validatePutHostnameParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putHostname",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_ListItemA) PutRedirect(value *ListItemRedirect) {
 	if err := l.validatePutRedirectParameters(value); err != nil {
 		panic(err)
@@ -833,10 +903,26 @@ func (l *jsiiProxy_ListItemA) PutRedirect(value *ListItemRedirect) {
 	)
 }
 
+func (l *jsiiProxy_ListItemA) ResetAsn() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAsn",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_ListItemA) ResetComment() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetComment",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_ListItemA) ResetHostname() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetHostname",
 		nil, // no parameters
 	)
 }

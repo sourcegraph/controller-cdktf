@@ -110,6 +110,8 @@ func init() {
 		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslOutputReference",
 		reflect.TypeOf((*CustomHostnameSslOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "bundleMethod", GoGetter: "BundleMethod"},
+			_jsii_.MemberProperty{JsiiProperty: "bundleMethodInput", GoGetter: "BundleMethodInput"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateAuthority", GoGetter: "CertificateAuthority"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateAuthorityInput", GoGetter: "CertificateAuthorityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -136,6 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "method", GoGetter: "Method"},
 			_jsii_.MemberProperty{JsiiProperty: "methodInput", GoGetter: "MethodInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putSettings", GoMethod: "PutSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBundleMethod", GoMethod: "ResetBundleMethod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCertificateAuthority", GoMethod: "ResetCertificateAuthority"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomCertificate", GoMethod: "ResetCustomCertificate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomKey", GoMethod: "ResetCustomKey"},

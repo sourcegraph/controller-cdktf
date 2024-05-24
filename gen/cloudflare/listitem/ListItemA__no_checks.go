@@ -52,6 +52,10 @@ func (l *jsiiProxy_ListItemA) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
+func (l *jsiiProxy_ListItemA) validatePutHostnameParameters(value *ListItemHostname) error {
+	return nil
+}
+
 func (l *jsiiProxy_ListItemA) validatePutRedirectParameters(value *ListItemRedirect) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func validateListItemA_IsTerraformResourceParameters(x interface{}) error {
 }
 
 func (j *jsiiProxy_ListItemA) validateSetAccountIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ListItemA) validateSetAsnParameters(val *float64) error {
 	return nil
 }
 
