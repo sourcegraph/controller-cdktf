@@ -8,14 +8,14 @@ type GoogleCloudfunctions2FunctionEventTriggerEventFilters struct {
 	// Currently, only a subset of attributes are supported for filtering. Use the 'gcloud eventarc providers describe' command to learn more about events and their attributes.
 	// Do not filter for the 'type' attribute here, as this is already achieved by the resource's 'event_type' attribute.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudfunctions2_function#attribute GoogleCloudfunctions2Function#attribute}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_cloudfunctions2_function#attribute GoogleCloudfunctions2Function#attribute}
 	Attribute *string `field:"required" json:"attribute" yaml:"attribute"`
 	// Required.
 	//
 	// The value for the attribute.
 	// If the operator field is set as 'match-path-pattern', this value can be a path pattern instead of an exact value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudfunctions2_function#value GoogleCloudfunctions2Function#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_cloudfunctions2_function#value GoogleCloudfunctions2Function#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 	// Optional.
 	//
@@ -25,7 +25,7 @@ type GoogleCloudfunctions2FunctionEventTriggerEventFilters struct {
 	// The only allowed value is 'match-path-pattern'.
 	// [See documentation on path patterns here](https://cloud.google.com/eventarc/docs/path-patterns)'
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudfunctions2_function#operator GoogleCloudfunctions2Function#operator}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_cloudfunctions2_function#operator GoogleCloudfunctions2Function#operator}
 	Operator *string `field:"optional" json:"operator" yaml:"operator"`
 }
 

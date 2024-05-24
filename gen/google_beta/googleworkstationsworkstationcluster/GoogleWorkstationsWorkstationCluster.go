@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleworkstationsworkstationcluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster}.
 type GoogleWorkstationsWorkstationCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -24,6 +24,7 @@ type GoogleWorkstationsWorkstationCluster interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ControlPlaneIp() *string
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -37,6 +38,10 @@ type GoogleWorkstationsWorkstationCluster interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	DomainConfig() GoogleWorkstationsWorkstationClusterDomainConfigOutputReference
+	DomainConfigInput() *GoogleWorkstationsWorkstationClusterDomainConfig
+	EffectiveAnnotations() cdktf.StringMap
+	EffectiveLabels() cdktf.StringMap
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -85,6 +90,7 @@ type GoogleWorkstationsWorkstationCluster interface {
 	SubnetworkInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -120,10 +126,12 @@ type GoogleWorkstationsWorkstationCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDomainConfig(value *GoogleWorkstationsWorkstationClusterDomainConfig)
 	PutPrivateClusterConfig(value *GoogleWorkstationsWorkstationClusterPrivateClusterConfig)
 	PutTimeouts(value *GoogleWorkstationsWorkstationClusterTimeouts)
 	ResetAnnotations()
 	ResetDisplayName()
+	ResetDomainConfig()
 	ResetId()
 	ResetLabels()
 	ResetLocation()
@@ -208,6 +216,16 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) ConstructNodeMetadata()
 	return returns
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) ControlPlaneIp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"controlPlaneIp",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -263,6 +281,46 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) DisplayNameInput() *str
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) DomainConfig() GoogleWorkstationsWorkstationClusterDomainConfigOutputReference {
+	var returns GoogleWorkstationsWorkstationClusterDomainConfigOutputReference
+	_jsii_.Get(
+		j,
+		"domainConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) DomainConfigInput() *GoogleWorkstationsWorkstationClusterDomainConfig {
+	var returns *GoogleWorkstationsWorkstationClusterDomainConfig
+	_jsii_.Get(
+		j,
+		"domainConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -518,6 +576,16 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) TerraformGeneratorMetad
 	return returns
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -589,7 +657,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) WorkstationClusterIdInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster} Resource.
 func NewGoogleWorkstationsWorkstationCluster(scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationClusterConfig) GoogleWorkstationsWorkstationCluster {
 	_init_.Initialize()
 
@@ -607,7 +675,7 @@ func NewGoogleWorkstationsWorkstationCluster(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster} Resource.
 func NewGoogleWorkstationsWorkstationCluster_Override(g GoogleWorkstationsWorkstationCluster, scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationClusterConfig) {
 	_init_.Initialize()
 
@@ -1051,6 +1119,17 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationCluster) OverrideLogicalId(newLo
 	)
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationCluster) PutDomainConfig(value *GoogleWorkstationsWorkstationClusterDomainConfig) {
+	if err := g.validatePutDomainConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDomainConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationCluster) PutPrivateClusterConfig(value *GoogleWorkstationsWorkstationClusterPrivateClusterConfig) {
 	if err := g.validatePutPrivateClusterConfigParameters(value); err != nil {
 		panic(err)
@@ -1085,6 +1164,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationCluster) ResetDisplayName() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDisplayName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationCluster) ResetDomainConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDomainConfig",
 		nil, // no parameters
 	)
 }

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleContainerAttachedCluster) validatePutAuthorizationParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAttachedCluster) validatePutBinaryAuthorizationParameters(value *GoogleContainerAttachedClusterBinaryAuthorization) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAttachedCluster) validatePutFleetParameters(value *GoogleContainerAttachedClusterFleet) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (g *jsiiProxy_GoogleContainerAttachedCluster) validatePutMonitoringConfigPa
 }
 
 func (g *jsiiProxy_GoogleContainerAttachedCluster) validatePutOidcConfigParameters(value *GoogleContainerAttachedClusterOidcConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerAttachedCluster) validatePutProxyConfigParameters(value *GoogleContainerAttachedClusterProxyConfig) error {
 	return nil
 }
 

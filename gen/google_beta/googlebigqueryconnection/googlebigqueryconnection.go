@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigqueryconnection/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_connection google_bigquery_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_bigquery_connection google_bigquery_connection}.
 type GoogleBigqueryConnection interface {
 	cdktf.TerraformResource
 	Aws() GoogleBigqueryConnectionAwsOutputReference
@@ -59,6 +59,9 @@ type GoogleBigqueryConnection interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KmsKeyName() *string
+	SetKmsKeyName(val *string)
+	KmsKeyNameInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -82,6 +85,8 @@ type GoogleBigqueryConnection interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Spark() GoogleBigqueryConnectionSparkOutputReference
+	SparkInput() *GoogleBigqueryConnectionSpark
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -120,6 +125,7 @@ type GoogleBigqueryConnection interface {
 	PutCloudResource(value *GoogleBigqueryConnectionCloudResource)
 	PutCloudSpanner(value *GoogleBigqueryConnectionCloudSpanner)
 	PutCloudSql(value *GoogleBigqueryConnectionCloudSql)
+	PutSpark(value *GoogleBigqueryConnectionSpark)
 	PutTimeouts(value *GoogleBigqueryConnectionTimeouts)
 	ResetAws()
 	ResetAzure()
@@ -130,11 +136,13 @@ type GoogleBigqueryConnection interface {
 	ResetDescription()
 	ResetFriendlyName()
 	ResetId()
+	ResetKmsKeyName()
 	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetSpark()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -421,6 +429,26 @@ func (j *jsiiProxy_GoogleBigqueryConnection) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryConnection) KmsKeyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryConnection) KmsKeyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryConnection) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -521,6 +549,26 @@ func (j *jsiiProxy_GoogleBigqueryConnection) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryConnection) Spark() GoogleBigqueryConnectionSparkOutputReference {
+	var returns GoogleBigqueryConnectionSparkOutputReference
+	_jsii_.Get(
+		j,
+		"spark",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryConnection) SparkInput() *GoogleBigqueryConnectionSpark {
+	var returns *GoogleBigqueryConnectionSpark
+	_jsii_.Get(
+		j,
+		"sparkInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryConnection) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -572,7 +620,7 @@ func (j *jsiiProxy_GoogleBigqueryConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_connection google_bigquery_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_bigquery_connection google_bigquery_connection} Resource.
 func NewGoogleBigqueryConnection(scope constructs.Construct, id *string, config *GoogleBigqueryConnectionConfig) GoogleBigqueryConnection {
 	_init_.Initialize()
 
@@ -590,7 +638,7 @@ func NewGoogleBigqueryConnection(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_connection google_bigquery_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_bigquery_connection google_bigquery_connection} Resource.
 func NewGoogleBigqueryConnection_Override(g GoogleBigqueryConnection, scope constructs.Construct, id *string, config *GoogleBigqueryConnectionConfig) {
 	_init_.Initialize()
 
@@ -679,6 +727,17 @@ func (j *jsiiProxy_GoogleBigqueryConnection)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryConnection)SetKmsKeyName(val *string) {
+	if err := j.validateSetKmsKeyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyName",
 		val,
 	)
 }
@@ -1056,6 +1115,17 @@ func (g *jsiiProxy_GoogleBigqueryConnection) PutCloudSql(value *GoogleBigqueryCo
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryConnection) PutSpark(value *GoogleBigqueryConnectionSpark) {
+	if err := g.validatePutSparkParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSpark",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryConnection) PutTimeouts(value *GoogleBigqueryConnectionTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1139,6 +1209,14 @@ func (g *jsiiProxy_GoogleBigqueryConnection) ResetId() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryConnection) ResetKmsKeyName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKmsKeyName",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryConnection) ResetLocation() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1159,6 +1237,14 @@ func (g *jsiiProxy_GoogleBigqueryConnection) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryConnection) ResetSpark() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSpark",
 		nil, // no parameters
 	)
 }

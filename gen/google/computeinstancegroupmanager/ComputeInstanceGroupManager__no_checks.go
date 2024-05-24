@@ -52,6 +52,10 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutAllInstancesConfigParameters(value *ComputeInstanceGroupManagerAllInstancesConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutAutoHealingPoliciesParameters(value *ComputeInstanceGroupManagerAutoHealingPolicies) error {
 	return nil
 }
@@ -65,6 +69,14 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutNamedPortParameters(v
 }
 
 func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutStatefulDiskParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutStatefulExternalIpParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutStatefulInternalIpParameters(value interface{}) error {
 	return nil
 }
 

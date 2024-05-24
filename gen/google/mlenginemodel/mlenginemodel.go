@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/mlenginemodel/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/ml_engine_model google_ml_engine_model}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/ml_engine_model google_ml_engine_model}.
 type MlEngineModel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,7 @@ type MlEngineModel interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -80,6 +81,7 @@ type MlEngineModel interface {
 	RegionsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -225,6 +227,16 @@ func (j *jsiiProxy_MlEngineModel) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MlEngineModel) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -460,6 +472,16 @@ func (j *jsiiProxy_MlEngineModel) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
+func (j *jsiiProxy_MlEngineModel) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MlEngineModel) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -501,7 +523,7 @@ func (j *jsiiProxy_MlEngineModel) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/ml_engine_model google_ml_engine_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/ml_engine_model google_ml_engine_model} Resource.
 func NewMlEngineModel(scope constructs.Construct, id *string, config *MlEngineModelConfig) MlEngineModel {
 	_init_.Initialize()
 
@@ -519,7 +541,7 @@ func NewMlEngineModel(scope constructs.Construct, id *string, config *MlEngineMo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/ml_engine_model google_ml_engine_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/ml_engine_model google_ml_engine_model} Resource.
 func NewMlEngineModel_Override(m MlEngineModel, scope constructs.Construct, id *string, config *MlEngineModelConfig) {
 	_init_.Initialize()
 

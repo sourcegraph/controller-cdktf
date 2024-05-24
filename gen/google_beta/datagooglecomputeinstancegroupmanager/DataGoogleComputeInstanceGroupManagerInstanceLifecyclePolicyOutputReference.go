@@ -25,6 +25,7 @@ type DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DefaultActionOnFailure() *string
 	ForceUpdateOnRepair() *string
 	// Experimental.
 	Fqn() *string
@@ -102,6 +103,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyO
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference) DefaultActionOnFailure() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultActionOnFailure",
 		&returns,
 	)
 	return returns

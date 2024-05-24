@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference) validateSetCategoryParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -56,7 +60,11 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference) validateSetInternalValueParameters(val *GoogleGkeonpremVmwareNodePoolConfigVsphereConfigTags) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference) validateSetTagParameters(val *string) error {
 	return nil
 }
 

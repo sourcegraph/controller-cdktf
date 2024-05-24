@@ -25,6 +25,8 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConfidentialNodes() ContainerNodePoolNodeConfigConfidentialNodesOutputReference
+	ConfidentialNodesInput() *ContainerNodePoolNodeConfigConfidentialNodes
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -36,8 +38,14 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	DiskType() *string
 	SetDiskType(val *string)
 	DiskTypeInput() *string
+	EffectiveTaints() ContainerNodePoolNodeConfigEffectiveTaintsList
+	EnableConfidentialStorage() interface{}
+	SetEnableConfidentialStorage(val interface{})
+	EnableConfidentialStorageInput() interface{}
 	EphemeralStorageLocalSsdConfig() ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference
 	EphemeralStorageLocalSsdConfigInput() *ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig
+	FastSocket() ContainerNodePoolNodeConfigFastSocketOutputReference
+	FastSocketInput() *ContainerNodePoolNodeConfigFastSocket
 	// Experimental.
 	Fqn() *string
 	GcfsConfig() ContainerNodePoolNodeConfigGcfsConfigOutputReference
@@ -91,6 +99,11 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	ResourceLabels() *map[string]*string
 	SetResourceLabels(val *map[string]*string)
 	ResourceLabelsInput() *map[string]*string
+	ResourceManagerTags() *map[string]*string
+	SetResourceManagerTags(val *map[string]*string)
+	ResourceManagerTagsInput() *map[string]*string
+	SecondaryBootDisks() ContainerNodePoolNodeConfigSecondaryBootDisksList
+	SecondaryBootDisksInput() interface{}
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
@@ -141,7 +154,9 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAdvancedMachineFeatures(value *ContainerNodePoolNodeConfigAdvancedMachineFeatures)
+	PutConfidentialNodes(value *ContainerNodePoolNodeConfigConfidentialNodes)
 	PutEphemeralStorageLocalSsdConfig(value *ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig)
+	PutFastSocket(value *ContainerNodePoolNodeConfigFastSocket)
 	PutGcfsConfig(value *ContainerNodePoolNodeConfigGcfsConfig)
 	PutGuestAccelerator(value interface{})
 	PutGvnic(value *ContainerNodePoolNodeConfigGvnic)
@@ -150,15 +165,19 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	PutLinuxNodeConfig(value *ContainerNodePoolNodeConfigLinuxNodeConfig)
 	PutLocalNvmeSsdBlockConfig(value *ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig)
 	PutReservationAffinity(value *ContainerNodePoolNodeConfigReservationAffinity)
+	PutSecondaryBootDisks(value interface{})
 	PutShieldedInstanceConfig(value *ContainerNodePoolNodeConfigShieldedInstanceConfig)
 	PutSoleTenantConfig(value *ContainerNodePoolNodeConfigSoleTenantConfig)
 	PutTaint(value interface{})
 	PutWorkloadMetadataConfig(value *ContainerNodePoolNodeConfigWorkloadMetadataConfig)
 	ResetAdvancedMachineFeatures()
 	ResetBootDiskKmsKey()
+	ResetConfidentialNodes()
 	ResetDiskSizeGb()
 	ResetDiskType()
+	ResetEnableConfidentialStorage()
 	ResetEphemeralStorageLocalSsdConfig()
+	ResetFastSocket()
 	ResetGcfsConfig()
 	ResetGuestAccelerator()
 	ResetGvnic()
@@ -178,6 +197,8 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	ResetPreemptible()
 	ResetReservationAffinity()
 	ResetResourceLabels()
+	ResetResourceManagerTags()
+	ResetSecondaryBootDisks()
 	ResetServiceAccount()
 	ResetShieldedInstanceConfig()
 	ResetSoleTenantConfig()
@@ -260,6 +281,26 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ComplexObjectIsFr
 	return returns
 }
 
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ConfidentialNodes() ContainerNodePoolNodeConfigConfidentialNodesOutputReference {
+	var returns ContainerNodePoolNodeConfigConfidentialNodesOutputReference
+	_jsii_.Get(
+		j,
+		"confidentialNodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ConfidentialNodesInput() *ContainerNodePoolNodeConfigConfidentialNodes {
+	var returns *ContainerNodePoolNodeConfigConfidentialNodes
+	_jsii_.Get(
+		j,
+		"confidentialNodesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -310,6 +351,36 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) DiskTypeInput() *
 	return returns
 }
 
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) EffectiveTaints() ContainerNodePoolNodeConfigEffectiveTaintsList {
+	var returns ContainerNodePoolNodeConfigEffectiveTaintsList
+	_jsii_.Get(
+		j,
+		"effectiveTaints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) EnableConfidentialStorage() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableConfidentialStorage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) EnableConfidentialStorageInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableConfidentialStorageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) EphemeralStorageLocalSsdConfig() ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference {
 	var returns ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference
 	_jsii_.Get(
@@ -325,6 +396,26 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) EphemeralStorageL
 	_jsii_.Get(
 		j,
 		"ephemeralStorageLocalSsdConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) FastSocket() ContainerNodePoolNodeConfigFastSocketOutputReference {
+	var returns ContainerNodePoolNodeConfigFastSocketOutputReference
+	_jsii_.Get(
+		j,
+		"fastSocket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) FastSocketInput() *ContainerNodePoolNodeConfigFastSocket {
+	var returns *ContainerNodePoolNodeConfigFastSocket
+	_jsii_.Get(
+		j,
+		"fastSocketInput",
 		&returns,
 	)
 	return returns
@@ -730,6 +821,46 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResourceLabelsInp
 	return returns
 }
 
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResourceManagerTags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceManagerTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResourceManagerTagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceManagerTagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SecondaryBootDisks() ContainerNodePoolNodeConfigSecondaryBootDisksList {
+	var returns ContainerNodePoolNodeConfigSecondaryBootDisksList
+	_jsii_.Get(
+		j,
+		"secondaryBootDisks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SecondaryBootDisksInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secondaryBootDisksInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ServiceAccount() *string {
 	var returns *string
 	_jsii_.Get(
@@ -973,6 +1104,17 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetDiskType(val *s
 	)
 }
 
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetEnableConfidentialStorage(val interface{}) {
+	if err := j.validateSetEnableConfidentialStorageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableConfidentialStorage",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetImageType(val *string) {
 	if err := j.validateSetImageTypeParameters(val); err != nil {
 		panic(err)
@@ -1101,6 +1243,17 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetResourceLabels(
 	_jsii_.Set(
 		j,
 		"resourceLabels",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetResourceManagerTags(val *map[string]*string) {
+	if err := j.validateSetResourceManagerTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceManagerTags",
 		val,
 	)
 }
@@ -1357,6 +1510,17 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutAdvancedMachin
 	)
 }
 
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutConfidentialNodes(value *ContainerNodePoolNodeConfigConfidentialNodes) {
+	if err := c.validatePutConfidentialNodesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putConfidentialNodes",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutEphemeralStorageLocalSsdConfig(value *ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig) {
 	if err := c.validatePutEphemeralStorageLocalSsdConfigParameters(value); err != nil {
 		panic(err)
@@ -1364,6 +1528,17 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutEphemeralStora
 	_jsii_.InvokeVoid(
 		c,
 		"putEphemeralStorageLocalSsdConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutFastSocket(value *ContainerNodePoolNodeConfigFastSocket) {
+	if err := c.validatePutFastSocketParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putFastSocket",
 		[]interface{}{value},
 	)
 }
@@ -1456,6 +1631,17 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutReservationAff
 	)
 }
 
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutSecondaryBootDisks(value interface{}) {
+	if err := c.validatePutSecondaryBootDisksParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSecondaryBootDisks",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutShieldedInstanceConfig(value *ContainerNodePoolNodeConfigShieldedInstanceConfig) {
 	if err := c.validatePutShieldedInstanceConfigParameters(value); err != nil {
 		panic(err)
@@ -1516,6 +1702,14 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetBootDiskKmsK
 	)
 }
 
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetConfidentialNodes() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetConfidentialNodes",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetDiskSizeGb() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1532,10 +1726,26 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetDiskType() {
 	)
 }
 
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetEnableConfidentialStorage() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableConfidentialStorage",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetEphemeralStorageLocalSsdConfig() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetEphemeralStorageLocalSsdConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetFastSocket() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetFastSocket",
 		nil, // no parameters
 	)
 }
@@ -1688,6 +1898,22 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetResourceLabe
 	_jsii_.InvokeVoid(
 		c,
 		"resetResourceLabels",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetResourceManagerTags() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetResourceManagerTags",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetSecondaryBootDisks() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSecondaryBootDisks",
 		nil, // no parameters
 	)
 }

@@ -25,6 +25,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "deletionProtection", GoGetter: "DeletionProtection"},
 			_jsii_.MemberProperty{JsiiProperty: "deletionProtectionInput", GoGetter: "DeletionProtectionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "dnsName", GoGetter: "DnsName"},
 			_jsii_.MemberProperty{JsiiProperty: "encryptionKeyName", GoGetter: "EncryptionKeyName"},
 			_jsii_.MemberProperty{JsiiProperty: "encryptionKeyNameInput", GoGetter: "EncryptionKeyNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "firstIpAddress", GoGetter: "FirstIpAddress"},
@@ -60,6 +61,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberProperty{JsiiProperty: "pscServiceAttachmentLink", GoGetter: "PscServiceAttachmentLink"},
 			_jsii_.MemberProperty{JsiiProperty: "publicIpAddress", GoGetter: "PublicIpAddress"},
 			_jsii_.MemberMethod{JsiiMethod: "putClone", GoMethod: "PutClone"},
 			_jsii_.MemberMethod{JsiiMethod: "putReplicaConfiguration", GoMethod: "PutReplicaConfiguration"},
@@ -143,9 +145,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "pointInTime", GoGetter: "PointInTime"},
 			_jsii_.MemberProperty{JsiiProperty: "pointInTimeInput", GoGetter: "PointInTimeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "preferredZone", GoGetter: "PreferredZone"},
+			_jsii_.MemberProperty{JsiiProperty: "preferredZoneInput", GoGetter: "PreferredZoneInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllocatedIpRange", GoMethod: "ResetAllocatedIpRange"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabaseNames", GoMethod: "ResetDatabaseNames"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPointInTime", GoMethod: "ResetPointInTime"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPreferredZone", GoMethod: "ResetPreferredZone"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceInstanceName", GoGetter: "SourceInstanceName"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceInstanceNameInput", GoGetter: "SourceInstanceNameInput"},
@@ -869,7 +874,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ipv4EnabledInput", GoGetter: "Ipv4EnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "privateNetwork", GoGetter: "PrivateNetwork"},
 			_jsii_.MemberProperty{JsiiProperty: "privateNetworkInput", GoGetter: "PrivateNetworkInput"},
+			_jsii_.MemberProperty{JsiiProperty: "pscConfig", GoGetter: "PscConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "pscConfigInput", GoGetter: "PscConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAuthorizedNetworks", GoMethod: "PutAuthorizedNetworks"},
+			_jsii_.MemberMethod{JsiiMethod: "putPscConfig", GoMethod: "PutPscConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "requireSsl", GoGetter: "RequireSsl"},
 			_jsii_.MemberProperty{JsiiProperty: "requireSslInput", GoGetter: "RequireSslInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllocatedIpRange", GoMethod: "ResetAllocatedIpRange"},
@@ -877,14 +885,81 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetEnablePrivatePathForGoogleCloudServices", GoMethod: "ResetEnablePrivatePathForGoogleCloudServices"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpv4Enabled", GoMethod: "ResetIpv4Enabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrivateNetwork", GoMethod: "ResetPrivateNetwork"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPscConfig", GoMethod: "ResetPscConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequireSsl", GoMethod: "ResetRequireSsl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSslMode", GoMethod: "ResetSslMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sslMode", GoGetter: "SslMode"},
+			_jsii_.MemberProperty{JsiiProperty: "sslModeInput", GoGetter: "SslModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfig",
+		reflect.TypeOf((*GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigList",
+		reflect.TypeOf((*GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference",
+		reflect.TypeOf((*GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "allowedConsumerProjects", GoGetter: "AllowedConsumerProjects"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedConsumerProjectsInput", GoGetter: "AllowedConsumerProjectsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "pscEnabled", GoGetter: "PscEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "pscEnabledInput", GoGetter: "PscEnabledInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedConsumerProjects", GoMethod: "ResetAllowedConsumerProjects"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPscEnabled", GoMethod: "ResetPscEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -1019,6 +1094,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "diskTypeInput", GoGetter: "DiskTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "edition", GoGetter: "Edition"},
 			_jsii_.MemberProperty{JsiiProperty: "editionInput", GoGetter: "EditionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "enableGoogleMlIntegration", GoGetter: "EnableGoogleMlIntegration"},
+			_jsii_.MemberProperty{JsiiProperty: "enableGoogleMlIntegrationInput", GoGetter: "EnableGoogleMlIntegrationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -1072,6 +1149,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDiskSize", GoMethod: "ResetDiskSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDiskType", GoMethod: "ResetDiskType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEdition", GoMethod: "ResetEdition"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnableGoogleMlIntegration", GoMethod: "ResetEnableGoogleMlIntegration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInsightsConfig", GoMethod: "ResetInsightsConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpConfiguration", GoMethod: "ResetIpConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLocationPreference", GoMethod: "ResetLocationPreference"},

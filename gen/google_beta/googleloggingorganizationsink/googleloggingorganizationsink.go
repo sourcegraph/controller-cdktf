@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleloggingorganizationsink/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_organization_sink google_logging_organization_sink}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_logging_organization_sink google_logging_organization_sink}.
 type GoogleLoggingOrganizationSink interface {
 	cdktf.TerraformResource
 	BigqueryOptions() GoogleLoggingOrganizationSinkBigqueryOptionsOutputReference
@@ -58,6 +58,9 @@ type GoogleLoggingOrganizationSink interface {
 	IncludeChildren() interface{}
 	SetIncludeChildren(val interface{})
 	IncludeChildrenInput() interface{}
+	InterceptChildren() interface{}
+	SetInterceptChildren(val interface{})
+	InterceptChildrenInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -121,6 +124,7 @@ type GoogleLoggingOrganizationSink interface {
 	ResetFilter()
 	ResetId()
 	ResetIncludeChildren()
+	ResetInterceptChildren()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -379,6 +383,26 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink) IncludeChildrenInput() interfa
 	return returns
 }
 
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) InterceptChildren() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"interceptChildren",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLoggingOrganizationSink) InterceptChildrenInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"interceptChildrenInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleLoggingOrganizationSink) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -510,7 +534,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink) WriterIdentity() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_organization_sink google_logging_organization_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_logging_organization_sink google_logging_organization_sink} Resource.
 func NewGoogleLoggingOrganizationSink(scope constructs.Construct, id *string, config *GoogleLoggingOrganizationSinkConfig) GoogleLoggingOrganizationSink {
 	_init_.Initialize()
 
@@ -528,7 +552,7 @@ func NewGoogleLoggingOrganizationSink(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_organization_sink google_logging_organization_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_logging_organization_sink google_logging_organization_sink} Resource.
 func NewGoogleLoggingOrganizationSink_Override(g GoogleLoggingOrganizationSink, scope constructs.Construct, id *string, config *GoogleLoggingOrganizationSinkConfig) {
 	_init_.Initialize()
 
@@ -639,6 +663,17 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetIncludeChildren(val interfac
 	_jsii_.Set(
 		j,
 		"includeChildren",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleLoggingOrganizationSink)SetInterceptChildren(val interface{}) {
+	if err := j.validateSetInterceptChildrenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"interceptChildren",
 		val,
 	)
 }
@@ -1035,6 +1070,14 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSink) ResetIncludeChildren() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetIncludeChildren",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleLoggingOrganizationSink) ResetInterceptChildren() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInterceptChildren",
 		nil, // no parameters
 	)
 }

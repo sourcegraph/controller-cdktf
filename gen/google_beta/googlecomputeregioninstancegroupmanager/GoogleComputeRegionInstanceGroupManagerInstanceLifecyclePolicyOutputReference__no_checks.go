@@ -56,6 +56,10 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolic
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference) validateSetDefaultActionOnFailureParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference) validateSetForceUpdateOnRepairParameters(val *string) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecomputesnapshot/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_snapshot google_compute_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/compute_snapshot google_compute_snapshot}.
 type DataGoogleComputeSnapshot interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -28,6 +28,7 @@ type DataGoogleComputeSnapshot interface {
 	SetDependsOn(val *[]*string)
 	Description() *string
 	DiskSizeGb() *float64
+	EffectiveLabels() cdktf.StringMap
 	Filter() *string
 	SetFilter(val *string)
 	FilterInput() *string
@@ -75,6 +76,7 @@ type DataGoogleComputeSnapshot interface {
 	StorageLocations() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -203,6 +205,16 @@ func (j *jsiiProxy_DataGoogleComputeSnapshot) DiskSizeGb() *float64 {
 	_jsii_.Get(
 		j,
 		"diskSizeGb",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeSnapshot) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -488,6 +500,16 @@ func (j *jsiiProxy_DataGoogleComputeSnapshot) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeSnapshot) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeSnapshot) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -519,7 +541,7 @@ func (j *jsiiProxy_DataGoogleComputeSnapshot) Zone() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_snapshot google_compute_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/compute_snapshot google_compute_snapshot} Data Source.
 func NewDataGoogleComputeSnapshot(scope constructs.Construct, id *string, config *DataGoogleComputeSnapshotConfig) DataGoogleComputeSnapshot {
 	_init_.Initialize()
 
@@ -537,7 +559,7 @@ func NewDataGoogleComputeSnapshot(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_snapshot google_compute_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/compute_snapshot google_compute_snapshot} Data Source.
 func NewDataGoogleComputeSnapshot_Override(d DataGoogleComputeSnapshot, scope constructs.Construct, id *string, config *DataGoogleComputeSnapshotConfig) {
 	_init_.Initialize()
 

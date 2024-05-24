@@ -25,6 +25,9 @@ type GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputRefere
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableNestedVirtualization() interface{}
+	SetEnableNestedVirtualization(val interface{})
+	EnableNestedVirtualizationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeatures
@@ -64,6 +67,7 @@ type GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputRefere
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEnableNestedVirtualization()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -104,6 +108,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeatur
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference) EnableNestedVirtualization() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableNestedVirtualization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference) EnableNestedVirtualizationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableNestedVirtualizationInput",
 		&returns,
 	)
 	return returns
@@ -215,6 +239,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeatur
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference)SetEnableNestedVirtualization(val interface{}) {
+	if err := j.validateSetEnableNestedVirtualizationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableNestedVirtualization",
 		val,
 	)
 }
@@ -447,6 +482,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeatur
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference) ResetEnableNestedVirtualization() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableNestedVirtualization",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

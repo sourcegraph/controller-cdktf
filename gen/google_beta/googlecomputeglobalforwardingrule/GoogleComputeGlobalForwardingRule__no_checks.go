@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validatePutMetadataFilters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validatePutServiceDirectoryRegistrationsParameters(value *GoogleComputeGlobalForwardingRuleServiceDirectoryRegistrations) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validatePutTimeoutsParameters(value *GoogleComputeGlobalForwardingRuleTimeouts) error {
 	return nil
 }

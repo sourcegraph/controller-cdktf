@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleiapwebtypeappengineiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_type_app_engine_iam_policy google_iap_web_type_app_engine_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_iap_web_type_app_engine_iam_policy google_iap_web_type_app_engine_iam_policy}.
 type GoogleIapWebTypeAppEngineIamPolicy interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -367,7 +367,7 @@ func (j *jsiiProxy_GoogleIapWebTypeAppEngineIamPolicy) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_type_app_engine_iam_policy google_iap_web_type_app_engine_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_iap_web_type_app_engine_iam_policy google_iap_web_type_app_engine_iam_policy} Resource.
 func NewGoogleIapWebTypeAppEngineIamPolicy(scope constructs.Construct, id *string, config *GoogleIapWebTypeAppEngineIamPolicyConfig) GoogleIapWebTypeAppEngineIamPolicy {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewGoogleIapWebTypeAppEngineIamPolicy(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_type_app_engine_iam_policy google_iap_web_type_app_engine_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_iap_web_type_app_engine_iam_policy google_iap_web_type_app_engine_iam_policy} Resource.
 func NewGoogleIapWebTypeAppEngineIamPolicy_Override(g GoogleIapWebTypeAppEngineIamPolicy, scope constructs.Construct, id *string, config *GoogleIapWebTypeAppEngineIamPolicyConfig) {
 	_init_.Initialize()
 

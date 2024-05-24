@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglegkebackupbackupplaniampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_gke_backup_backup_plan_iam_policy google_gke_backup_backup_plan_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_gke_backup_backup_plan_iam_policy google_gke_backup_backup_plan_iam_policy}.
 type DataGoogleGkeBackupBackupPlanIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -351,7 +351,7 @@ func (j *jsiiProxy_DataGoogleGkeBackupBackupPlanIamPolicy) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_gke_backup_backup_plan_iam_policy google_gke_backup_backup_plan_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_gke_backup_backup_plan_iam_policy google_gke_backup_backup_plan_iam_policy} Data Source.
 func NewDataGoogleGkeBackupBackupPlanIamPolicy(scope constructs.Construct, id *string, config *DataGoogleGkeBackupBackupPlanIamPolicyConfig) DataGoogleGkeBackupBackupPlanIamPolicy {
 	_init_.Initialize()
 
@@ -369,7 +369,7 @@ func NewDataGoogleGkeBackupBackupPlanIamPolicy(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_gke_backup_backup_plan_iam_policy google_gke_backup_backup_plan_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_gke_backup_backup_plan_iam_policy google_gke_backup_backup_plan_iam_policy} Data Source.
 func NewDataGoogleGkeBackupBackupPlanIamPolicy_Override(d DataGoogleGkeBackupBackupPlanIamPolicy, scope constructs.Construct, id *string, config *DataGoogleGkeBackupBackupPlanIamPolicyConfig) {
 	_init_.Initialize()
 

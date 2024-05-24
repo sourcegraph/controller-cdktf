@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googletpunode/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_tpu_node google_tpu_node}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_tpu_node google_tpu_node}.
 type GoogleTpuNode interface {
 	cdktf.TerraformResource
 	AcceleratorType() *string
@@ -37,6 +37,7 @@ type GoogleTpuNode interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -85,6 +86,7 @@ type GoogleTpuNode interface {
 	TensorflowVersionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -257,6 +259,16 @@ func (j *jsiiProxy_GoogleTpuNode) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuNode) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -512,6 +524,16 @@ func (j *jsiiProxy_GoogleTpuNode) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
+func (j *jsiiProxy_GoogleTpuNode) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleTpuNode) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -593,7 +615,7 @@ func (j *jsiiProxy_GoogleTpuNode) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_tpu_node google_tpu_node} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_tpu_node google_tpu_node} Resource.
 func NewGoogleTpuNode(scope constructs.Construct, id *string, config *GoogleTpuNodeConfig) GoogleTpuNode {
 	_init_.Initialize()
 
@@ -611,7 +633,7 @@ func NewGoogleTpuNode(scope constructs.Construct, id *string, config *GoogleTpuN
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_tpu_node google_tpu_node} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_tpu_node google_tpu_node} Resource.
 func NewGoogleTpuNode_Override(g GoogleTpuNode, scope constructs.Construct, id *string, config *GoogleTpuNodeConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomposerenvironment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_composer_environment google_composer_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_composer_environment google_composer_environment}.
 type GoogleComposerEnvironment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -30,6 +30,7 @@ type GoogleComposerEnvironment interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -69,8 +70,11 @@ type GoogleComposerEnvironment interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	StorageConfig() GoogleComposerEnvironmentStorageConfigOutputReference
+	StorageConfigInput() *GoogleComposerEnvironmentStorageConfig
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -103,6 +107,7 @@ type GoogleComposerEnvironment interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutConfig(value *GoogleComposerEnvironmentConfigA)
+	PutStorageConfig(value *GoogleComposerEnvironmentStorageConfig)
 	PutTimeouts(value *GoogleComposerEnvironmentTimeouts)
 	ResetConfig()
 	ResetId()
@@ -112,6 +117,7 @@ type GoogleComposerEnvironment interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
+	ResetStorageConfig()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -193,6 +199,16 @@ func (j *jsiiProxy_GoogleComposerEnvironment) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironment) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -378,11 +394,41 @@ func (j *jsiiProxy_GoogleComposerEnvironment) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComposerEnvironment) StorageConfig() GoogleComposerEnvironmentStorageConfigOutputReference {
+	var returns GoogleComposerEnvironmentStorageConfigOutputReference
+	_jsii_.Get(
+		j,
+		"storageConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironment) StorageConfigInput() *GoogleComposerEnvironmentStorageConfig {
+	var returns *GoogleComposerEnvironmentStorageConfig
+	_jsii_.Get(
+		j,
+		"storageConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComposerEnvironment) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironment) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
 		&returns,
 	)
 	return returns
@@ -429,7 +475,7 @@ func (j *jsiiProxy_GoogleComposerEnvironment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_composer_environment google_composer_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_composer_environment google_composer_environment} Resource.
 func NewGoogleComposerEnvironment(scope constructs.Construct, id *string, config *GoogleComposerEnvironmentConfig) GoogleComposerEnvironment {
 	_init_.Initialize()
 
@@ -447,7 +493,7 @@ func NewGoogleComposerEnvironment(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_composer_environment google_composer_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_composer_environment google_composer_environment} Resource.
 func NewGoogleComposerEnvironment_Override(g GoogleComposerEnvironment, scope constructs.Construct, id *string, config *GoogleComposerEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -858,6 +904,17 @@ func (g *jsiiProxy_GoogleComposerEnvironment) PutConfig(value *GoogleComposerEnv
 	)
 }
 
+func (g *jsiiProxy_GoogleComposerEnvironment) PutStorageConfig(value *GoogleComposerEnvironmentStorageConfig) {
+	if err := g.validatePutStorageConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putStorageConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComposerEnvironment) PutTimeouts(value *GoogleComposerEnvironmentTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -913,6 +970,14 @@ func (g *jsiiProxy_GoogleComposerEnvironment) ResetRegion() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComposerEnvironment) ResetStorageConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStorageConfig",
 		nil, // no parameters
 	)
 }

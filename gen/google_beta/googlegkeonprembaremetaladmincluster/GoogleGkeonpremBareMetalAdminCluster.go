@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlegkeonprembaremetaladmincluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster google_gkeonprem_bare_metal_admin_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster google_gkeonprem_bare_metal_admin_cluster}.
 type GoogleGkeonpremBareMetalAdminCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -43,6 +43,7 @@ type GoogleGkeonpremBareMetalAdminCluster interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveAnnotations() cdktf.StringMap
 	Endpoint() *string
 	Etag() *string
 	Fleet() GoogleGkeonpremBareMetalAdminClusterFleetList
@@ -348,6 +349,16 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalAdminCluster) DescriptionInput() *str
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremBareMetalAdminCluster) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
 		&returns,
 	)
 	return returns
@@ -824,7 +835,7 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalAdminCluster) ValidationCheck() Googl
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster google_gkeonprem_bare_metal_admin_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster google_gkeonprem_bare_metal_admin_cluster} Resource.
 func NewGoogleGkeonpremBareMetalAdminCluster(scope constructs.Construct, id *string, config *GoogleGkeonpremBareMetalAdminClusterConfig) GoogleGkeonpremBareMetalAdminCluster {
 	_init_.Initialize()
 
@@ -842,7 +853,7 @@ func NewGoogleGkeonpremBareMetalAdminCluster(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster google_gkeonprem_bare_metal_admin_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster google_gkeonprem_bare_metal_admin_cluster} Resource.
 func NewGoogleGkeonpremBareMetalAdminCluster_Override(g GoogleGkeonpremBareMetalAdminCluster, scope constructs.Construct, id *string, config *GoogleGkeonpremBareMetalAdminClusterConfig) {
 	_init_.Initialize()
 

@@ -32,6 +32,9 @@ type GoogleStorageBucketAutoclassOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleStorageBucketAutoclass
 	SetInternalValue(val *GoogleStorageBucketAutoclass)
+	TerminalStorageClass() *string
+	SetTerminalStorageClass(val *string)
+	TerminalStorageClassInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +67,7 @@ type GoogleStorageBucketAutoclassOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetTerminalStorageClass()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,6 +148,26 @@ func (j *jsiiProxy_GoogleStorageBucketAutoclassOutputReference) InternalValue() 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucketAutoclassOutputReference) TerminalStorageClass() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terminalStorageClass",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucketAutoclassOutputReference) TerminalStorageClassInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terminalStorageClassInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +261,17 @@ func (j *jsiiProxy_GoogleStorageBucketAutoclassOutputReference)SetInternalValue(
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleStorageBucketAutoclassOutputReference)SetTerminalStorageClass(val *string) {
+	if err := j.validateSetTerminalStorageClassParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terminalStorageClass",
 		val,
 	)
 }
@@ -447,6 +482,14 @@ func (g *jsiiProxy_GoogleStorageBucketAutoclassOutputReference) InterpolationFor
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleStorageBucketAutoclassOutputReference) ResetTerminalStorageClass() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTerminalStorageClass",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleStorageBucketAutoclassOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

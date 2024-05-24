@@ -38,6 +38,8 @@ type GoogleDatastreamStreamSourceConfigOutputReference interface {
 	SourceConnectionProfile() *string
 	SetSourceConnectionProfile(val *string)
 	SourceConnectionProfileInput() *string
+	SqlServerSourceConfig() GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference
+	SqlServerSourceConfigInput() *GoogleDatastreamStreamSourceConfigSqlServerSourceConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,9 +75,11 @@ type GoogleDatastreamStreamSourceConfigOutputReference interface {
 	PutMysqlSourceConfig(value *GoogleDatastreamStreamSourceConfigMysqlSourceConfig)
 	PutOracleSourceConfig(value *GoogleDatastreamStreamSourceConfigOracleSourceConfig)
 	PutPostgresqlSourceConfig(value *GoogleDatastreamStreamSourceConfigPostgresqlSourceConfig)
+	PutSqlServerSourceConfig(value *GoogleDatastreamStreamSourceConfigSqlServerSourceConfig)
 	ResetMysqlSourceConfig()
 	ResetOracleSourceConfig()
 	ResetPostgresqlSourceConfig()
+	ResetSqlServerSourceConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -216,6 +220,26 @@ func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) SourceConn
 	_jsii_.Get(
 		j,
 		"sourceConnectionProfileInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) SqlServerSourceConfig() GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference {
+	var returns GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"sqlServerSourceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) SqlServerSourceConfigInput() *GoogleDatastreamStreamSourceConfigSqlServerSourceConfig {
+	var returns *GoogleDatastreamStreamSourceConfigSqlServerSourceConfig
+	_jsii_.Get(
+		j,
+		"sqlServerSourceConfigInput",
 		&returns,
 	)
 	return returns
@@ -554,6 +578,17 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) PutPostgre
 	)
 }
 
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) PutSqlServerSourceConfig(value *GoogleDatastreamStreamSourceConfigSqlServerSourceConfig) {
+	if err := g.validatePutSqlServerSourceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSqlServerSourceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) ResetMysqlSourceConfig() {
 	_jsii_.InvokeVoid(
 		g,
@@ -574,6 +609,14 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) ResetPostg
 	_jsii_.InvokeVoid(
 		g,
 		"resetPostgresqlSourceConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) ResetSqlServerSourceConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSqlServerSourceConfig",
 		nil, // no parameters
 	)
 }

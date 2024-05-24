@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglebeyondcorpappgateway/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/beyondcorp_app_gateway google_beyondcorp_app_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/beyondcorp_app_gateway google_beyondcorp_app_gateway}.
 type DataGoogleBeyondcorpAppGateway interface {
 	cdktf.TerraformDataSource
 	AllocatedConnections() DataGoogleBeyondcorpAppGatewayAllocatedConnectionsList
@@ -26,6 +26,7 @@ type DataGoogleBeyondcorpAppGateway interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DisplayName() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -63,6 +64,7 @@ type DataGoogleBeyondcorpAppGateway interface {
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -170,6 +172,16 @@ func (j *jsiiProxy_DataGoogleBeyondcorpAppGateway) DisplayName() *string {
 	_jsii_.Get(
 		j,
 		"displayName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleBeyondcorpAppGateway) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -365,6 +377,16 @@ func (j *jsiiProxy_DataGoogleBeyondcorpAppGateway) TerraformGeneratorMetadata() 
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleBeyondcorpAppGateway) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleBeyondcorpAppGateway) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -406,7 +428,7 @@ func (j *jsiiProxy_DataGoogleBeyondcorpAppGateway) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/beyondcorp_app_gateway google_beyondcorp_app_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/beyondcorp_app_gateway google_beyondcorp_app_gateway} Data Source.
 func NewDataGoogleBeyondcorpAppGateway(scope constructs.Construct, id *string, config *DataGoogleBeyondcorpAppGatewayConfig) DataGoogleBeyondcorpAppGateway {
 	_init_.Initialize()
 
@@ -424,7 +446,7 @@ func NewDataGoogleBeyondcorpAppGateway(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/beyondcorp_app_gateway google_beyondcorp_app_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/beyondcorp_app_gateway google_beyondcorp_app_gateway} Data Source.
 func NewDataGoogleBeyondcorpAppGateway_Override(d DataGoogleBeyondcorpAppGateway, scope constructs.Construct, id *string, config *DataGoogleBeyondcorpAppGatewayConfig) {
 	_init_.Initialize()
 

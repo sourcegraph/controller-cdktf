@@ -146,6 +146,14 @@ func validateComputeRegionTargetHttpsProxy_IsTerraformResourceParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetCertificateManagerCertificatesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -330,7 +338,23 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetRegionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetServerTlsPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetSslCertificatesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetSslPolicyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

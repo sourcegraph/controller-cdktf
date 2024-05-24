@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputesnapshotiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_snapshot_iam_policy google_compute_snapshot_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_snapshot_iam_policy google_compute_snapshot_iam_policy}.
 type GoogleComputeSnapshotIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_GoogleComputeSnapshotIamPolicy) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_snapshot_iam_policy google_compute_snapshot_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_snapshot_iam_policy google_compute_snapshot_iam_policy} Resource.
 func NewGoogleComputeSnapshotIamPolicy(scope constructs.Construct, id *string, config *GoogleComputeSnapshotIamPolicyConfig) GoogleComputeSnapshotIamPolicy {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewGoogleComputeSnapshotIamPolicy(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_snapshot_iam_policy google_compute_snapshot_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_snapshot_iam_policy google_compute_snapshot_iam_policy} Resource.
 func NewGoogleComputeSnapshotIamPolicy_Override(g GoogleComputeSnapshotIamPolicy, scope constructs.Construct, id *string, config *GoogleComputeSnapshotIamPolicyConfig) {
 	_init_.Initialize()
 

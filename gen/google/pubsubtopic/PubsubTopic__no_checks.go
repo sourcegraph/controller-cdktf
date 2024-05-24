@@ -52,6 +52,10 @@ func (p *jsiiProxy_PubsubTopic) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func (p *jsiiProxy_PubsubTopic) validatePutIngestionDataSourceSettingsParameters(value *PubsubTopicIngestionDataSourceSettings) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubTopic) validatePutMessageStoragePolicyParameters(value *PubsubTopicMessageStoragePolicy) error {
 	return nil
 }

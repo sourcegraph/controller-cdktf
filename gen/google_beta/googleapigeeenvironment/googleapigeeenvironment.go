@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigeeenvironment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_apigee_environment google_apigee_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_apigee_environment google_apigee_environment}.
 type GoogleApigeeEnvironment interface {
 	cdktf.TerraformResource
 	ApiProxyType() *string
@@ -44,6 +44,9 @@ type GoogleApigeeEnvironment interface {
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
 	SetForEach(val cdktf.ITerraformIterator)
+	ForwardProxyUri() *string
+	SetForwardProxyUri(val *string)
+	ForwardProxyUriInput() *string
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -83,6 +86,9 @@ type GoogleApigeeEnvironment interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleApigeeEnvironmentTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -114,12 +120,14 @@ type GoogleApigeeEnvironment interface {
 	ResetDeploymentType()
 	ResetDescription()
 	ResetDisplayName()
+	ResetForwardProxyUri()
 	ResetId()
 	ResetNodeConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
+	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -270,6 +278,26 @@ func (j *jsiiProxy_GoogleApigeeEnvironment) ForEach() cdktf.ITerraformIterator {
 	_jsii_.Get(
 		j,
 		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApigeeEnvironment) ForwardProxyUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"forwardProxyUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApigeeEnvironment) ForwardProxyUriInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"forwardProxyUriInput",
 		&returns,
 	)
 	return returns
@@ -475,8 +503,28 @@ func (j *jsiiProxy_GoogleApigeeEnvironment) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleApigeeEnvironment) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_apigee_environment google_apigee_environment} Resource.
+func (j *jsiiProxy_GoogleApigeeEnvironment) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_apigee_environment google_apigee_environment} Resource.
 func NewGoogleApigeeEnvironment(scope constructs.Construct, id *string, config *GoogleApigeeEnvironmentConfig) GoogleApigeeEnvironment {
 	_init_.Initialize()
 
@@ -494,7 +542,7 @@ func NewGoogleApigeeEnvironment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_apigee_environment google_apigee_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_apigee_environment google_apigee_environment} Resource.
 func NewGoogleApigeeEnvironment_Override(g GoogleApigeeEnvironment, scope constructs.Construct, id *string, config *GoogleApigeeEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -587,6 +635,17 @@ func (j *jsiiProxy_GoogleApigeeEnvironment)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
+func (j *jsiiProxy_GoogleApigeeEnvironment)SetForwardProxyUri(val *string) {
+	if err := j.validateSetForwardProxyUriParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forwardProxyUri",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleApigeeEnvironment)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
@@ -646,6 +705,17 @@ func (j *jsiiProxy_GoogleApigeeEnvironment)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleApigeeEnvironment)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -970,6 +1040,14 @@ func (g *jsiiProxy_GoogleApigeeEnvironment) ResetDisplayName() {
 	)
 }
 
+func (g *jsiiProxy_GoogleApigeeEnvironment) ResetForwardProxyUri() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetForwardProxyUri",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleApigeeEnvironment) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -998,6 +1076,14 @@ func (g *jsiiProxy_GoogleApigeeEnvironment) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleApigeeEnvironment) ResetType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetType",
 		nil, // no parameters
 	)
 }

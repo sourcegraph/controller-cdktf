@@ -232,6 +232,17 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutEnableK8SBetaApisParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutFleetParameters(value *GoogleContainerClusterFleet) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutGatewayApiConfigParameters(value *GoogleContainerClusterGatewayApiConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -527,6 +538,17 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutVerticalPodAutoscalingPara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutWorkloadAltsConfigParameters(value *GoogleContainerClusterWorkloadAltsConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutWorkloadIdentityConfigParameters(value *GoogleContainerClusterWorkloadIdentityConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -696,6 +718,26 @@ func (j *jsiiProxy_GoogleContainerCluster) validateSetDefaultMaxPodsPerNodeParam
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerCluster) validateSetDeletionProtectionParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) validateSetDescriptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -724,7 +766,27 @@ func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableAutopilotParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableBinaryAuthorizationParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableCiliumClusterwideNetworkPolicyParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableFqdnNetworkPolicyParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

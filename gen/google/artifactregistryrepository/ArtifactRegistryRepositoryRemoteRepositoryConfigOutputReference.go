@@ -10,6 +10,8 @@ import (
 
 type ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference interface {
 	cdktf.ComplexObject
+	AptRepository() ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference
+	AptRepositoryInput() *ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,6 +30,9 @@ type ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableUpstreamValidation() interface{}
+	SetDisableUpstreamValidation(val interface{})
+	DisableUpstreamValidationInput() interface{}
 	DockerRepository() ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference
 	DockerRepositoryInput() *ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository
 	// Experimental.
@@ -48,6 +53,10 @@ type ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UpstreamCredentials() ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsOutputReference
+	UpstreamCredentialsInput() *ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials
+	YumRepository() ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference
+	YumRepositoryInput() *ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,15 +81,22 @@ type ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAptRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository)
 	PutDockerRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository)
 	PutMavenRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository)
 	PutNpmRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository)
 	PutPythonRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository)
+	PutUpstreamCredentials(value *ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials)
+	PutYumRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository)
+	ResetAptRepository()
 	ResetDescription()
+	ResetDisableUpstreamValidation()
 	ResetDockerRepository()
 	ResetMavenRepository()
 	ResetNpmRepository()
 	ResetPythonRepository()
+	ResetUpstreamCredentials()
+	ResetYumRepository()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -94,6 +110,26 @@ type ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference interface {
 // The jsii proxy struct for ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference
 type jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) AptRepository() ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference {
+	var returns ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference
+	_jsii_.Get(
+		j,
+		"aptRepository",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) AptRepositoryInput() *ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository {
+	var returns *ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository
+	_jsii_.Get(
+		j,
+		"aptRepositoryInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -141,6 +177,26 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) DisableUpstreamValidation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableUpstreamValidation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) DisableUpstreamValidationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableUpstreamValidationInput",
 		&returns,
 	)
 	return returns
@@ -266,6 +322,46 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) UpstreamCredentials() ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsOutputReference {
+	var returns ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsOutputReference
+	_jsii_.Get(
+		j,
+		"upstreamCredentials",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) UpstreamCredentialsInput() *ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials {
+	var returns *ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials
+	_jsii_.Get(
+		j,
+		"upstreamCredentialsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) YumRepository() ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference {
+	var returns ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference
+	_jsii_.Get(
+		j,
+		"yumRepository",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) YumRepositoryInput() *ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository {
+	var returns *ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository
+	_jsii_.Get(
+		j,
+		"yumRepositoryInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference {
 	_init_.Initialize()
@@ -323,6 +419,17 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference)SetDisableUpstreamValidation(val interface{}) {
+	if err := j.validateSetDisableUpstreamValidationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableUpstreamValidation",
 		val,
 	)
 }
@@ -546,6 +653,17 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 	return returns
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) PutAptRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository) {
+	if err := a.validatePutAptRepositoryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAptRepository",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) PutDockerRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository) {
 	if err := a.validatePutDockerRepositoryParameters(value); err != nil {
 		panic(err)
@@ -590,10 +708,48 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 	)
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) PutUpstreamCredentials(value *ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials) {
+	if err := a.validatePutUpstreamCredentialsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putUpstreamCredentials",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) PutYumRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository) {
+	if err := a.validatePutYumRepositoryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putYumRepository",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) ResetAptRepository() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAptRepository",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) ResetDescription() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) ResetDisableUpstreamValidation() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDisableUpstreamValidation",
 		nil, // no parameters
 	)
 }
@@ -626,6 +782,22 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 	_jsii_.InvokeVoid(
 		a,
 		"resetPythonRepository",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) ResetUpstreamCredentials() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUpstreamCredentials",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) ResetYumRepository() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetYumRepository",
 		nil, // no parameters
 	)
 }

@@ -12,6 +12,7 @@ func init() {
 		reflect.TypeOf((*DataGoogleFirebaseAndroidApp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "apiKeyId", GoGetter: "ApiKeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "appId", GoGetter: "AppId"},
 			_jsii_.MemberProperty{JsiiProperty: "appIdInput", GoGetter: "AppIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},

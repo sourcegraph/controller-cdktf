@@ -28,10 +28,13 @@ type ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputRe
 	EnableMetrics() interface{}
 	SetEnableMetrics(val interface{})
 	EnableMetricsInput() interface{}
+	EnableRelay() interface{}
+	SetEnableRelay(val interface{})
+	EnableRelayInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig
+	SetInternalValue(val *ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig)
 	RelayMode() *string
 	SetRelayMode(val *string)
 	RelayModeInput() *string
@@ -67,6 +70,7 @@ type ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputRe
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEnableRelay()
 	ResetRelayMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -133,6 +137,26 @@ func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservability
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) EnableRelay() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableRelay",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) EnableRelayInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableRelayInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -143,8 +167,8 @@ func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservability
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) InternalValue() *ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig {
+	var returns *ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,29 +218,29 @@ func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservability
 }
 
 
-func NewContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference {
+func NewContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference_Override(c ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference_Override(c ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
 }
@@ -254,7 +278,18 @@ func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservability
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference)SetEnableRelay(val interface{}) {
+	if err := j.validateSetEnableRelayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableRelay",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference)SetInternalValue(val *ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,6 +517,14 @@ func (c *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservability
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) ResetEnableRelay() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableRelay",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) ResetRelayMode() {

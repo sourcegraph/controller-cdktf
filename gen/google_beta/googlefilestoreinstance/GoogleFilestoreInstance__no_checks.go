@@ -116,6 +116,10 @@ func (j *jsiiProxy_GoogleFilestoreInstance) validateSetProjectParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFilestoreInstance) validateSetProtocolParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFilestoreInstance) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

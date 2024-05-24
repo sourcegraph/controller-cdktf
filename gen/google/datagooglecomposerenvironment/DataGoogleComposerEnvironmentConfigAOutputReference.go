@@ -28,6 +28,7 @@ type DataGoogleComposerEnvironmentConfigAOutputReference interface {
 	CreationStack() *[]*string
 	DagGcsPrefix() *string
 	DatabaseConfig() DataGoogleComposerEnvironmentConfigDatabaseConfigList
+	DataRetentionConfig() DataGoogleComposerEnvironmentConfigDataRetentionConfigList
 	EncryptionConfig() DataGoogleComposerEnvironmentConfigEncryptionConfigList
 	EnvironmentSize() *string
 	// Experimental.
@@ -148,6 +149,16 @@ func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigAOutputReference) Database
 	_jsii_.Get(
 		j,
 		"databaseConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigAOutputReference) DataRetentionConfig() DataGoogleComposerEnvironmentConfigDataRetentionConfigList {
+	var returns DataGoogleComposerEnvironmentConfigDataRetentionConfigList
+	_jsii_.Get(
+		j,
+		"dataRetentionConfig",
 		&returns,
 	)
 	return returns

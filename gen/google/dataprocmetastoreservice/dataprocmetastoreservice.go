@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/dataprocmetastoreservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_metastore_service google_dataproc_metastore_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/dataproc_metastore_service google_dataproc_metastore_service}.
 type DataprocMetastoreService interface {
 	cdktf.TerraformResource
 	ArtifactGcsUri() *string
@@ -32,6 +32,7 @@ type DataprocMetastoreService interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	EncryptionConfig() DataprocMetastoreServiceEncryptionConfigOutputReference
 	EncryptionConfigInput() *DataprocMetastoreServiceEncryptionConfig
 	EndpointUri() *string
@@ -60,6 +61,8 @@ type DataprocMetastoreService interface {
 	LocationInput() *string
 	MaintenanceWindow() DataprocMetastoreServiceMaintenanceWindowOutputReference
 	MaintenanceWindowInput() *DataprocMetastoreServiceMaintenanceWindow
+	MetadataIntegration() DataprocMetastoreServiceMetadataIntegrationOutputReference
+	MetadataIntegrationInput() *DataprocMetastoreServiceMetadataIntegration
 	Name() *string
 	Network() *string
 	SetNetwork(val *string)
@@ -89,6 +92,8 @@ type DataprocMetastoreService interface {
 	ReleaseChannelInput() *string
 	ScalingConfig() DataprocMetastoreServiceScalingConfigOutputReference
 	ScalingConfigInput() *DataprocMetastoreServiceScalingConfig
+	ScheduledBackup() DataprocMetastoreServiceScheduledBackupOutputReference
+	ScheduledBackupInput() *DataprocMetastoreServiceScheduledBackup
 	ServiceId() *string
 	SetServiceId(val *string)
 	ServiceIdInput() *string
@@ -98,6 +103,7 @@ type DataprocMetastoreService interface {
 	TelemetryConfigInput() *DataprocMetastoreServiceTelemetryConfig
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -136,8 +142,10 @@ type DataprocMetastoreService interface {
 	PutEncryptionConfig(value *DataprocMetastoreServiceEncryptionConfig)
 	PutHiveMetastoreConfig(value *DataprocMetastoreServiceHiveMetastoreConfig)
 	PutMaintenanceWindow(value *DataprocMetastoreServiceMaintenanceWindow)
+	PutMetadataIntegration(value *DataprocMetastoreServiceMetadataIntegration)
 	PutNetworkConfig(value *DataprocMetastoreServiceNetworkConfig)
 	PutScalingConfig(value *DataprocMetastoreServiceScalingConfig)
+	PutScheduledBackup(value *DataprocMetastoreServiceScheduledBackup)
 	PutTelemetryConfig(value *DataprocMetastoreServiceTelemetryConfig)
 	PutTimeouts(value *DataprocMetastoreServiceTimeouts)
 	ResetDatabaseType()
@@ -147,6 +155,7 @@ type DataprocMetastoreService interface {
 	ResetLabels()
 	ResetLocation()
 	ResetMaintenanceWindow()
+	ResetMetadataIntegration()
 	ResetNetwork()
 	ResetNetworkConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -156,6 +165,7 @@ type DataprocMetastoreService interface {
 	ResetProject()
 	ResetReleaseChannel()
 	ResetScalingConfig()
+	ResetScheduledBackup()
 	ResetTelemetryConfig()
 	ResetTier()
 	ResetTimeouts()
@@ -249,6 +259,16 @@ func (j *jsiiProxy_DataprocMetastoreService) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocMetastoreService) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -424,6 +444,26 @@ func (j *jsiiProxy_DataprocMetastoreService) MaintenanceWindowInput() *DataprocM
 	return returns
 }
 
+func (j *jsiiProxy_DataprocMetastoreService) MetadataIntegration() DataprocMetastoreServiceMetadataIntegrationOutputReference {
+	var returns DataprocMetastoreServiceMetadataIntegrationOutputReference
+	_jsii_.Get(
+		j,
+		"metadataIntegration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocMetastoreService) MetadataIntegrationInput() *DataprocMetastoreServiceMetadataIntegration {
+	var returns *DataprocMetastoreServiceMetadataIntegration
+	_jsii_.Get(
+		j,
+		"metadataIntegrationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataprocMetastoreService) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -594,6 +634,26 @@ func (j *jsiiProxy_DataprocMetastoreService) ScalingConfigInput() *DataprocMetas
 	return returns
 }
 
+func (j *jsiiProxy_DataprocMetastoreService) ScheduledBackup() DataprocMetastoreServiceScheduledBackupOutputReference {
+	var returns DataprocMetastoreServiceScheduledBackupOutputReference
+	_jsii_.Get(
+		j,
+		"scheduledBackup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocMetastoreService) ScheduledBackupInput() *DataprocMetastoreServiceScheduledBackup {
+	var returns *DataprocMetastoreServiceScheduledBackup
+	_jsii_.Get(
+		j,
+		"scheduledBackupInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataprocMetastoreService) ServiceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -659,6 +719,16 @@ func (j *jsiiProxy_DataprocMetastoreService) TerraformGeneratorMetadata() *cdktf
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocMetastoreService) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
 		&returns,
 	)
 	return returns
@@ -735,7 +805,7 @@ func (j *jsiiProxy_DataprocMetastoreService) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_metastore_service google_dataproc_metastore_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/dataproc_metastore_service google_dataproc_metastore_service} Resource.
 func NewDataprocMetastoreService(scope constructs.Construct, id *string, config *DataprocMetastoreServiceConfig) DataprocMetastoreService {
 	_init_.Initialize()
 
@@ -753,7 +823,7 @@ func NewDataprocMetastoreService(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_metastore_service google_dataproc_metastore_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/dataproc_metastore_service google_dataproc_metastore_service} Resource.
 func NewDataprocMetastoreService_Override(d DataprocMetastoreService, scope constructs.Construct, id *string, config *DataprocMetastoreServiceConfig) {
 	_init_.Initialize()
 
@@ -1241,6 +1311,17 @@ func (d *jsiiProxy_DataprocMetastoreService) PutMaintenanceWindow(value *Datapro
 	)
 }
 
+func (d *jsiiProxy_DataprocMetastoreService) PutMetadataIntegration(value *DataprocMetastoreServiceMetadataIntegration) {
+	if err := d.validatePutMetadataIntegrationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putMetadataIntegration",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataprocMetastoreService) PutNetworkConfig(value *DataprocMetastoreServiceNetworkConfig) {
 	if err := d.validatePutNetworkConfigParameters(value); err != nil {
 		panic(err)
@@ -1259,6 +1340,17 @@ func (d *jsiiProxy_DataprocMetastoreService) PutScalingConfig(value *DataprocMet
 	_jsii_.InvokeVoid(
 		d,
 		"putScalingConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataprocMetastoreService) PutScheduledBackup(value *DataprocMetastoreServiceScheduledBackup) {
+	if err := d.validatePutScheduledBackupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putScheduledBackup",
 		[]interface{}{value},
 	)
 }
@@ -1341,6 +1433,14 @@ func (d *jsiiProxy_DataprocMetastoreService) ResetMaintenanceWindow() {
 	)
 }
 
+func (d *jsiiProxy_DataprocMetastoreService) ResetMetadataIntegration() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMetadataIntegration",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataprocMetastoreService) ResetNetwork() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1393,6 +1493,14 @@ func (d *jsiiProxy_DataprocMetastoreService) ResetScalingConfig() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetScalingConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocMetastoreService) ResetScheduledBackup() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetScheduledBackup",
 		nil, // no parameters
 	)
 }

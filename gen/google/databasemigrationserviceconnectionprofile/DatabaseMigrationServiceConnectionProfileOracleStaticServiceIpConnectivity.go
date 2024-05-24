@@ -1,0 +1,6 @@
+package databasemigrationserviceconnectionprofile
+
+
+type DatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivity struct {
+}
+

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenotebooksruntime/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_notebooks_runtime google_notebooks_runtime}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_notebooks_runtime google_notebooks_runtime}.
 type GoogleNotebooksRuntime interface {
 	cdktf.TerraformResource
 	AccessConfig() GoogleNotebooksRuntimeAccessConfigOutputReference
@@ -30,6 +30,7 @@ type GoogleNotebooksRuntime interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -42,6 +43,9 @@ type GoogleNotebooksRuntime interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -73,6 +77,7 @@ type GoogleNotebooksRuntime interface {
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -112,6 +117,7 @@ type GoogleNotebooksRuntime interface {
 	PutVirtualMachine(value *GoogleNotebooksRuntimeVirtualMachine)
 	ResetAccessConfig()
 	ResetId()
+	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -204,6 +210,16 @@ func (j *jsiiProxy_GoogleNotebooksRuntime) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNotebooksRuntime) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNotebooksRuntime) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -259,6 +275,26 @@ func (j *jsiiProxy_GoogleNotebooksRuntime) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNotebooksRuntime) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNotebooksRuntime) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
 		&returns,
 	)
 	return returns
@@ -424,6 +460,16 @@ func (j *jsiiProxy_GoogleNotebooksRuntime) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNotebooksRuntime) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNotebooksRuntime) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -485,7 +531,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntime) VirtualMachineInput() *GoogleNotebook
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_notebooks_runtime google_notebooks_runtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_notebooks_runtime google_notebooks_runtime} Resource.
 func NewGoogleNotebooksRuntime(scope constructs.Construct, id *string, config *GoogleNotebooksRuntimeConfig) GoogleNotebooksRuntime {
 	_init_.Initialize()
 
@@ -503,7 +549,7 @@ func NewGoogleNotebooksRuntime(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_notebooks_runtime google_notebooks_runtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_notebooks_runtime google_notebooks_runtime} Resource.
 func NewGoogleNotebooksRuntime_Override(g GoogleNotebooksRuntime, scope constructs.Construct, id *string, config *GoogleNotebooksRuntimeConfig) {
 	_init_.Initialize()
 
@@ -559,6 +605,17 @@ func (j *jsiiProxy_GoogleNotebooksRuntime)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNotebooksRuntime)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -948,6 +1005,14 @@ func (g *jsiiProxy_GoogleNotebooksRuntime) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNotebooksRuntime) ResetLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLabels",
 		nil, // no parameters
 	)
 }

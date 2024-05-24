@@ -1,0 +1,20 @@
+package googlecloudquotasquotapreference
+
+
+type GoogleCloudQuotasQuotaPreferenceQuotaConfig struct {
+	// The preferred value.
+	//
+	// Must be greater than or equal to -1. If set to -1, it means the value is "unlimited".
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_cloud_quotas_quota_preference#preferred_value GoogleCloudQuotasQuotaPreference#preferred_value}
+	PreferredValue *string `field:"required" json:"preferredValue" yaml:"preferredValue"`
+	// The annotations map for clients to store small amounts of arbitrary data.
+	//
+	// Do not put PII or other sensitive information here. See https://google.aip.dev/128#annotations.
+	//
+	// An object containing a list of "key: value" pairs. Example: '{ "name": "wrench", "mass": "1.3kg", "count": "3" }'.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_cloud_quotas_quota_preference#annotations GoogleCloudQuotasQuotaPreference#annotations}
+	Annotations *map[string]*string `field:"optional" json:"annotations" yaml:"annotations"`
+}
+

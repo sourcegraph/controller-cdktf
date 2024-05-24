@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference) validatePutDagProcessorParameters(value *GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessor) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference) validatePutSchedulerParameters(value *GoogleComposerEnvironmentConfigWorkloadsConfigScheduler) error {
 	return nil
 }

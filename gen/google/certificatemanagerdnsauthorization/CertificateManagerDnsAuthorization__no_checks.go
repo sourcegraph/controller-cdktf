@@ -96,6 +96,10 @@ func (j *jsiiProxy_CertificateManagerDnsAuthorization) validateSetLifecycleParam
 	return nil
 }
 
+func (j *jsiiProxy_CertificateManagerDnsAuthorization) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CertificateManagerDnsAuthorization) validateSetNameParameters(val *string) error {
 	return nil
 }
@@ -105,6 +109,10 @@ func (j *jsiiProxy_CertificateManagerDnsAuthorization) validateSetProjectParamet
 }
 
 func (j *jsiiProxy_CertificateManagerDnsAuthorization) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CertificateManagerDnsAuthorization) validateSetTypeParameters(val *string) error {
 	return nil
 }
 

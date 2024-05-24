@@ -52,7 +52,19 @@ func (g *jsiiProxy_GoogleAlloydbInstance) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAlloydbInstance) validatePutClientConnectionConfigParameters(value *GoogleAlloydbInstanceClientConnectionConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAlloydbInstance) validatePutMachineConfigParameters(value *GoogleAlloydbInstanceMachineConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAlloydbInstance) validatePutNetworkConfigParameters(value *GoogleAlloydbInstanceNetworkConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAlloydbInstance) validatePutQueryInsightsConfigParameters(value *GoogleAlloydbInstanceQueryInsightsConfig) error {
 	return nil
 }
 

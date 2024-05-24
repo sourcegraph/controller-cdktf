@@ -132,6 +132,10 @@ func (j *jsiiProxy_GoogleMemcacheInstance) validateSetRegionParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_GoogleMemcacheInstance) validateSetReservedIpRangeIdParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMemcacheInstance) validateSetZonesParameters(val *[]*string) error {
 	return nil
 }

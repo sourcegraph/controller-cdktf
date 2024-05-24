@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleStorageBucketAutoclassOutputReference) validateSetInter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageBucketAutoclassOutputReference) validateSetTerminalStorageClassParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageBucketAutoclassOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

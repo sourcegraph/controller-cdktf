@@ -10,6 +10,7 @@ import (
 
 type DataGoogleComputeInstanceGroupManagerStatusOutputReference interface {
 	cdktf.ComplexObject
+	AllInstancesConfig() DataGoogleComputeInstanceGroupManagerStatusAllInstancesConfigList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -77,6 +78,16 @@ type DataGoogleComputeInstanceGroupManagerStatusOutputReference interface {
 // The jsii proxy struct for DataGoogleComputeInstanceGroupManagerStatusOutputReference
 type jsiiProxy_DataGoogleComputeInstanceGroupManagerStatusOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManagerStatusOutputReference) AllInstancesConfig() DataGoogleComputeInstanceGroupManagerStatusAllInstancesConfigList {
+	var returns DataGoogleComputeInstanceGroupManagerStatusAllInstancesConfigList
+	_jsii_.Get(
+		j,
+		"allInstancesConfig",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleComputeInstanceGroupManagerStatusOutputReference) ComplexObjectIndex() interface{} {

@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDisk
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference) validateSetLocalSsdInterfaceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference) validateSetNumLocalSsdsParameters(val *float64) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleclouddeploydeliverypipeline/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline}.
 type GoogleClouddeployDeliveryPipeline interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -36,6 +36,8 @@ type GoogleClouddeployDeliveryPipeline interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveAnnotations() cdktf.StringMap
+	EffectiveLabels() cdktf.StringMap
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -83,6 +85,7 @@ type GoogleClouddeployDeliveryPipeline interface {
 	SuspendedInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -249,6 +252,26 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) DescriptionInput() *string
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -494,6 +517,16 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) TerraformGeneratorMetadata
 	return returns
 }
 
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -555,7 +588,7 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline} Resource.
 func NewGoogleClouddeployDeliveryPipeline(scope constructs.Construct, id *string, config *GoogleClouddeployDeliveryPipelineConfig) GoogleClouddeployDeliveryPipeline {
 	_init_.Initialize()
 
@@ -573,7 +606,7 @@ func NewGoogleClouddeployDeliveryPipeline(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline} Resource.
 func NewGoogleClouddeployDeliveryPipeline_Override(g GoogleClouddeployDeliveryPipeline, scope constructs.Construct, id *string, config *GoogleClouddeployDeliveryPipelineConfig) {
 	_init_.Initialize()
 

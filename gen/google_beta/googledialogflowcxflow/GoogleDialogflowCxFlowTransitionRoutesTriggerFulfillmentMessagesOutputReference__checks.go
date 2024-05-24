@@ -90,6 +90,61 @@ func (g *jsiiProxy_GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference) validatePutConversationSuccessParameters(value *GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesConversationSuccess) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference) validatePutLiveAgentHandoffParameters(value *GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoff) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference) validatePutOutputAudioTextParameters(value *GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputAudioText) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference) validatePutPlayAudioParameters(value *GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesPlayAudio) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference) validatePutTelephonyTransferCallParameters(value *GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCall) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference) validatePutTextParameters(value *GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesText) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -104,6 +159,14 @@ func (g *jsiiProxy_GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessa
 func (g *jsiiProxy_GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference) validateSetChannelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -193,6 +256,14 @@ func (j *jsiiProxy_GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessa
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference) validateSetPayloadParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

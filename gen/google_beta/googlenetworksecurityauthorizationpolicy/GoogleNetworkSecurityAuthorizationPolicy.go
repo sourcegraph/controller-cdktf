@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworksecurityauthorizationpolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_security_authorization_policy google_network_security_authorization_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_authorization_policy google_network_security_authorization_policy}.
 type GoogleNetworkSecurityAuthorizationPolicy interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -35,6 +35,7 @@ type GoogleNetworkSecurityAuthorizationPolicy interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -78,6 +79,7 @@ type GoogleNetworkSecurityAuthorizationPolicy interface {
 	RulesInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -232,6 +234,16 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicy) DescriptionInput() 
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicy) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -447,6 +459,16 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicy) TerraformGeneratorM
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicy) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicy) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -498,7 +520,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicy) UpdateTime() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_security_authorization_policy google_network_security_authorization_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_authorization_policy google_network_security_authorization_policy} Resource.
 func NewGoogleNetworkSecurityAuthorizationPolicy(scope constructs.Construct, id *string, config *GoogleNetworkSecurityAuthorizationPolicyConfig) GoogleNetworkSecurityAuthorizationPolicy {
 	_init_.Initialize()
 
@@ -516,7 +538,7 @@ func NewGoogleNetworkSecurityAuthorizationPolicy(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_security_authorization_policy google_network_security_authorization_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_authorization_policy google_network_security_authorization_policy} Resource.
 func NewGoogleNetworkSecurityAuthorizationPolicy_Override(g GoogleNetworkSecurityAuthorizationPolicy, scope constructs.Construct, id *string, config *GoogleNetworkSecurityAuthorizationPolicyConfig) {
 	_init_.Initialize()
 

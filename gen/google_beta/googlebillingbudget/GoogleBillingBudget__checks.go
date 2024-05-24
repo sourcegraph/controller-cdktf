@@ -332,6 +332,14 @@ func (j *jsiiProxy_GoogleBillingBudget) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBillingBudget) validateSetOwnershipScopeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBillingBudget) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {

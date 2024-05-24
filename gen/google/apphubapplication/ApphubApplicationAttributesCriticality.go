@@ -1,0 +1,10 @@
+package apphubapplication
+
+
+type ApphubApplicationAttributesCriticality struct {
+	// Criticality type. Possible values: ["MISSION_CRITICAL", "HIGH", "MEDIUM", "LOW"].
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/apphub_application#type ApphubApplication#type}
+	Type *string `field:"required" json:"type" yaml:"type"`
+}
+

@@ -60,6 +60,10 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolProvider) validatePutOidcParameters(va
 	return nil
 }
 
+func (i *jsiiProxy_IamWorkloadIdentityPoolProvider) validatePutSamlParameters(value *IamWorkloadIdentityPoolProviderSaml) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamWorkloadIdentityPoolProvider) validatePutTimeoutsParameters(value *IamWorkloadIdentityPoolProviderTimeouts) error {
 	return nil
 }

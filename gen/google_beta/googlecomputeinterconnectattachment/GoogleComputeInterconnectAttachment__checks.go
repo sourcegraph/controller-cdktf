@@ -414,6 +414,14 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetRouterParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetStackTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -20,6 +20,9 @@ type GoogleComputeInstanceFromTemplateConfidentialInstanceConfigOutputReference 
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConfidentialInstanceType() *string
+	SetConfidentialInstanceType(val *string)
+	ConfidentialInstanceTypeInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -64,6 +67,8 @@ type GoogleComputeInstanceFromTemplateConfidentialInstanceConfigOutputReference 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetConfidentialInstanceType()
+	ResetEnableConfidentialCompute()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -94,6 +99,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateConfidentialInstanceConfigOu
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateConfidentialInstanceConfigOutputReference) ConfidentialInstanceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"confidentialInstanceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateConfidentialInstanceConfigOutputReference) ConfidentialInstanceTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"confidentialInstanceTypeInput",
 		&returns,
 	)
 	return returns
@@ -215,6 +240,17 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateConfidentialInstanceConfigOu
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateConfidentialInstanceConfigOutputReference)SetConfidentialInstanceType(val *string) {
+	if err := j.validateSetConfidentialInstanceTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"confidentialInstanceType",
 		val,
 	)
 }
@@ -447,6 +483,22 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateConfidentialInstanceConfigOu
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateConfidentialInstanceConfigOutputReference) ResetConfidentialInstanceType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetConfidentialInstanceType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateConfidentialInstanceConfigOutputReference) ResetEnableConfidentialCompute() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableConfidentialCompute",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleComputeInstanceFromTemplateConfidentialInstanceConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

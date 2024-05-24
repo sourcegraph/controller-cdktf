@@ -1,0 +1,6 @@
+package datagoogleartifactregistryrepository
+
+
+type DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepository struct {
+}
+

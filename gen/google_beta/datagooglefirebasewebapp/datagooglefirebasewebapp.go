@@ -9,9 +9,10 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglefirebasewebapp/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_firebase_web_app google_firebase_web_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_firebase_web_app google_firebase_web_app}.
 type DataGoogleFirebaseWebApp interface {
 	cdktf.TerraformDataSource
+	ApiKeyId() *string
 	AppId() *string
 	SetAppId(val *string)
 	AppIdInput() *string
@@ -106,6 +107,16 @@ type DataGoogleFirebaseWebApp interface {
 // The jsii proxy struct for DataGoogleFirebaseWebApp
 type jsiiProxy_DataGoogleFirebaseWebApp struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataGoogleFirebaseWebApp) ApiKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiKeyId",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleFirebaseWebApp) AppId() *string {
@@ -349,7 +360,7 @@ func (j *jsiiProxy_DataGoogleFirebaseWebApp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_firebase_web_app google_firebase_web_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_firebase_web_app google_firebase_web_app} Data Source.
 func NewDataGoogleFirebaseWebApp(scope constructs.Construct, id *string, config *DataGoogleFirebaseWebAppConfig) DataGoogleFirebaseWebApp {
 	_init_.Initialize()
 
@@ -367,7 +378,7 @@ func NewDataGoogleFirebaseWebApp(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_firebase_web_app google_firebase_web_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_firebase_web_app google_firebase_web_app} Data Source.
 func NewDataGoogleFirebaseWebApp_Override(d DataGoogleFirebaseWebApp, scope constructs.Construct, id *string, config *DataGoogleFirebaseWebAppConfig) {
 	_init_.Initialize()
 

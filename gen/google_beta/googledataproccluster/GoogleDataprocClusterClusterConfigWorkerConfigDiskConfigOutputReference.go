@@ -35,6 +35,9 @@ type GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference int
 	Fqn() *string
 	InternalValue() *GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig
 	SetInternalValue(val *GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig)
+	LocalSsdInterface() *string
+	SetLocalSsdInterface(val *string)
+	LocalSsdInterfaceInput() *string
 	NumLocalSsds() *float64
 	SetNumLocalSsds(val *float64)
 	NumLocalSsdsInput() *float64
@@ -72,6 +75,7 @@ type GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference int
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetBootDiskSizeGb()
 	ResetBootDiskType()
+	ResetLocalSsdInterface()
 	ResetNumLocalSsds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -173,6 +177,26 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutpu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference) LocalSsdInterface() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"localSsdInterface",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference) LocalSsdInterfaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"localSsdInterfaceInput",
 		&returns,
 	)
 	return returns
@@ -297,6 +321,17 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutpu
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference)SetLocalSsdInterface(val *string) {
+	if err := j.validateSetLocalSsdInterfaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localSsdInterface",
 		val,
 	)
 }
@@ -532,6 +567,14 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutpu
 	_jsii_.InvokeVoid(
 		g,
 		"resetBootDiskType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference) ResetLocalSsdInterface() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLocalSsdInterface",
 		nil, // no parameters
 	)
 }

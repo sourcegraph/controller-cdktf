@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefirebaseappleapp/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_firebase_apple_app google_firebase_apple_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_firebase_apple_app google_firebase_apple_app}.
 type GoogleFirebaseAppleApp interface {
 	cdktf.TerraformResource
+	ApiKeyId() *string
+	SetApiKeyId(val *string)
+	ApiKeyIdInput() *string
 	AppId() *string
 	AppStoreId() *string
 	SetAppStoreId(val *string)
@@ -109,6 +112,7 @@ type GoogleFirebaseAppleApp interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleFirebaseAppleAppTimeouts)
+	ResetApiKeyId()
 	ResetAppStoreId()
 	ResetDeletionPolicy()
 	ResetId()
@@ -131,6 +135,26 @@ type GoogleFirebaseAppleApp interface {
 // The jsii proxy struct for GoogleFirebaseAppleApp
 type jsiiProxy_GoogleFirebaseAppleApp struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleFirebaseAppleApp) ApiKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseAppleApp) ApiKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiKeyIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleFirebaseAppleApp) AppId() *string {
@@ -474,7 +498,7 @@ func (j *jsiiProxy_GoogleFirebaseAppleApp) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_firebase_apple_app google_firebase_apple_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_firebase_apple_app google_firebase_apple_app} Resource.
 func NewGoogleFirebaseAppleApp(scope constructs.Construct, id *string, config *GoogleFirebaseAppleAppConfig) GoogleFirebaseAppleApp {
 	_init_.Initialize()
 
@@ -492,7 +516,7 @@ func NewGoogleFirebaseAppleApp(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_firebase_apple_app google_firebase_apple_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_firebase_apple_app google_firebase_apple_app} Resource.
 func NewGoogleFirebaseAppleApp_Override(g GoogleFirebaseAppleApp, scope constructs.Construct, id *string, config *GoogleFirebaseAppleAppConfig) {
 	_init_.Initialize()
 
@@ -500,6 +524,17 @@ func NewGoogleFirebaseAppleApp_Override(g GoogleFirebaseAppleApp, scope construc
 		"@cdktf/provider-google-beta.googleFirebaseAppleApp.GoogleFirebaseAppleApp",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleFirebaseAppleApp)SetApiKeyId(val *string) {
+	if err := j.validateSetApiKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"apiKeyId",
+		val,
 	)
 }
 
@@ -922,6 +957,14 @@ func (g *jsiiProxy_GoogleFirebaseAppleApp) PutTimeouts(value *GoogleFirebaseAppl
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleFirebaseAppleApp) ResetApiKeyId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetApiKeyId",
+		nil, // no parameters
 	)
 }
 

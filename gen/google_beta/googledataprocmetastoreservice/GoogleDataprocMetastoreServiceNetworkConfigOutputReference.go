@@ -27,6 +27,9 @@ type GoogleDataprocMetastoreServiceNetworkConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomRoutesEnabled() interface{}
+	SetCustomRoutesEnabled(val interface{})
+	CustomRoutesEnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleDataprocMetastoreServiceNetworkConfig
@@ -64,6 +67,7 @@ type GoogleDataprocMetastoreServiceNetworkConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConsumers(value interface{})
+	ResetCustomRoutesEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -124,6 +128,26 @@ func (j *jsiiProxy_GoogleDataprocMetastoreServiceNetworkConfigOutputReference) C
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreServiceNetworkConfigOutputReference) CustomRoutesEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customRoutesEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreServiceNetworkConfigOutputReference) CustomRoutesEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customRoutesEnabledInput",
 		&returns,
 	)
 	return returns
@@ -215,6 +239,17 @@ func (j *jsiiProxy_GoogleDataprocMetastoreServiceNetworkConfigOutputReference)Se
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreServiceNetworkConfigOutputReference)SetCustomRoutesEnabled(val interface{}) {
+	if err := j.validateSetCustomRoutesEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customRoutesEnabled",
 		val,
 	)
 }
@@ -446,6 +481,14 @@ func (g *jsiiProxy_GoogleDataprocMetastoreServiceNetworkConfigOutputReference) P
 		g,
 		"putConsumers",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocMetastoreServiceNetworkConfigOutputReference) ResetCustomRoutesEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomRoutesEnabled",
+		nil, // no parameters
 	)
 }
 

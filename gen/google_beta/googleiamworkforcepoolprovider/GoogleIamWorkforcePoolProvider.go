@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleiamworkforcepoolprovider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iam_workforce_pool_provider google_iam_workforce_pool_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_iam_workforce_pool_provider google_iam_workforce_pool_provider}.
 type GoogleIamWorkforcePoolProvider interface {
 	cdktf.TerraformResource
 	AttributeCondition() *string
@@ -43,6 +43,8 @@ type GoogleIamWorkforcePoolProvider interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	ExtraAttributesOauth2Client() GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientOutputReference
+	ExtraAttributesOauth2ClientInput() *GoogleIamWorkforcePoolProviderExtraAttributesOauth2Client
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -118,6 +120,7 @@ type GoogleIamWorkforcePoolProvider interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutExtraAttributesOauth2Client(value *GoogleIamWorkforcePoolProviderExtraAttributesOauth2Client)
 	PutOidc(value *GoogleIamWorkforcePoolProviderOidc)
 	PutSaml(value *GoogleIamWorkforcePoolProviderSaml)
 	PutTimeouts(value *GoogleIamWorkforcePoolProviderTimeouts)
@@ -126,6 +129,7 @@ type GoogleIamWorkforcePoolProvider interface {
 	ResetDescription()
 	ResetDisabled()
 	ResetDisplayName()
+	ResetExtraAttributesOauth2Client()
 	ResetId()
 	ResetOidc()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -293,6 +297,26 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolProvider) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIamWorkforcePoolProvider) ExtraAttributesOauth2Client() GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientOutputReference {
+	var returns GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientOutputReference
+	_jsii_.Get(
+		j,
+		"extraAttributesOauth2Client",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIamWorkforcePoolProvider) ExtraAttributesOauth2ClientInput() *GoogleIamWorkforcePoolProviderExtraAttributesOauth2Client {
+	var returns *GoogleIamWorkforcePoolProviderExtraAttributesOauth2Client
+	_jsii_.Get(
+		j,
+		"extraAttributesOauth2ClientInput",
 		&returns,
 	)
 	return returns
@@ -569,7 +593,7 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolProvider) WorkforcePoolIdInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iam_workforce_pool_provider google_iam_workforce_pool_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_iam_workforce_pool_provider google_iam_workforce_pool_provider} Resource.
 func NewGoogleIamWorkforcePoolProvider(scope constructs.Construct, id *string, config *GoogleIamWorkforcePoolProviderConfig) GoogleIamWorkforcePoolProvider {
 	_init_.Initialize()
 
@@ -587,7 +611,7 @@ func NewGoogleIamWorkforcePoolProvider(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iam_workforce_pool_provider google_iam_workforce_pool_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_iam_workforce_pool_provider google_iam_workforce_pool_provider} Resource.
 func NewGoogleIamWorkforcePoolProvider_Override(g GoogleIamWorkforcePoolProvider, scope constructs.Construct, id *string, config *GoogleIamWorkforcePoolProviderConfig) {
 	_init_.Initialize()
 
@@ -1031,6 +1055,17 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolProvider) OverrideLogicalId(newLogicalI
 	)
 }
 
+func (g *jsiiProxy_GoogleIamWorkforcePoolProvider) PutExtraAttributesOauth2Client(value *GoogleIamWorkforcePoolProviderExtraAttributesOauth2Client) {
+	if err := g.validatePutExtraAttributesOauth2ClientParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putExtraAttributesOauth2Client",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleIamWorkforcePoolProvider) PutOidc(value *GoogleIamWorkforcePoolProviderOidc) {
 	if err := g.validatePutOidcParameters(value); err != nil {
 		panic(err)
@@ -1100,6 +1135,14 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolProvider) ResetDisplayName() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDisplayName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleIamWorkforcePoolProvider) ResetExtraAttributesOauth2Client() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExtraAttributesOauth2Client",
 		nil, // no parameters
 	)
 }

@@ -52,6 +52,10 @@ func (g *jsiiProxy_GooglePubsubTopic) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubTopic) validatePutIngestionDataSourceSettingsParameters(value *GooglePubsubTopicIngestionDataSourceSettings) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubTopic) validatePutMessageStoragePolicyParameters(value *GooglePubsubTopicMessageStoragePolicy) error {
 	return nil
 }

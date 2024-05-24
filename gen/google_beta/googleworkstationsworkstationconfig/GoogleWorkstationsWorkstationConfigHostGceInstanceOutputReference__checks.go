@@ -121,6 +121,37 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	return nil
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validatePutBoostConfigsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigs:
+		value := value.(*[]*GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigs)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigs:
+		value_ := value.([]*GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigs)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigs; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validatePutConfidentialInstanceConfigParameters(value *GoogleWorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -244,6 +275,46 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetDisableSshParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetEnableNestedVirtualizationParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetInternalValueParameters(val *GoogleWorkstationsWorkstationConfigHostGceInstance) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -269,6 +340,14 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 }
 
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetServiceAccountParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetServiceAccountScopesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -144,6 +144,10 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSetEnableGoogleMlIntegrationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSetInternalValueParameters(val *GoogleSqlDatabaseInstanceSettings) error {
 	return nil
 }

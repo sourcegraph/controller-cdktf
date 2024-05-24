@@ -35,6 +35,9 @@ type GoogleMonitoringAlertPolicyDocumentationOutputReference interface {
 	MimeType() *string
 	SetMimeType(val *string)
 	MimeTypeInput() *string
+	Subject() *string
+	SetSubject(val *string)
+	SubjectInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,6 +72,7 @@ type GoogleMonitoringAlertPolicyDocumentationOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetContent()
 	ResetMimeType()
+	ResetSubject()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +178,26 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference) Mime
 	return returns
 }
 
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference) Subject() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subject",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference) SubjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subjectInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -273,6 +297,17 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference)SetMi
 	_jsii_.Set(
 		j,
 		"mimeType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference)SetSubject(val *string) {
+	if err := j.validateSetSubjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subject",
 		val,
 	)
 }
@@ -497,6 +532,14 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetMimeType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationOutputReference) ResetSubject() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSubject",
 		nil, // no parameters
 	)
 }

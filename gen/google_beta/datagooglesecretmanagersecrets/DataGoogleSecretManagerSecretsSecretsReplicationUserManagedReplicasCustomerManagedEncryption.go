@@ -1,0 +1,6 @@
+package datagooglesecretmanagersecrets
+
+
+type DataGoogleSecretManagerSecretsSecretsReplicationUserManagedReplicasCustomerManagedEncryption struct {
+}
+

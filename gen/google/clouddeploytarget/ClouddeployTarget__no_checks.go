@@ -56,11 +56,19 @@ func (c *jsiiProxy_ClouddeployTarget) validatePutAnthosClusterParameters(value *
 	return nil
 }
 
+func (c *jsiiProxy_ClouddeployTarget) validatePutCustomTargetParameters(value *ClouddeployTargetCustomTarget) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployTarget) validatePutExecutionConfigsParameters(value interface{}) error {
 	return nil
 }
 
 func (c *jsiiProxy_ClouddeployTarget) validatePutGkeParameters(value *ClouddeployTargetGke) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddeployTarget) validatePutMultiTargetParameters(value *ClouddeployTargetMultiTarget) error {
 	return nil
 }
 

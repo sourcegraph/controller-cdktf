@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleBigqueryConnection) validatePutCloudSqlParameters(value
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryConnection) validatePutSparkParameters(value *GoogleBigqueryConnectionSpark) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryConnection) validatePutTimeoutsParameters(value *GoogleBigqueryConnectionTimeouts) error {
 	return nil
 }
@@ -109,6 +113,10 @@ func (j *jsiiProxy_GoogleBigqueryConnection) validateSetFriendlyNameParameters(v
 }
 
 func (j *jsiiProxy_GoogleBigqueryConnection) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBigqueryConnection) validateSetKmsKeyNameParameters(val *string) error {
 	return nil
 }
 

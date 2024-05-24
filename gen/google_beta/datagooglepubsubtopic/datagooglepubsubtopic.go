@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglepubsubtopic/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_pubsub_topic google_pubsub_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_pubsub_topic google_pubsub_topic}.
 type DataGooglePubsubTopic interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -24,6 +24,7 @@ type DataGooglePubsubTopic interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -35,6 +36,7 @@ type DataGooglePubsubTopic interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IngestionDataSourceSettings() DataGooglePubsubTopicIngestionDataSourceSettingsList
 	KmsKeyName() *string
 	Labels() cdktf.StringMap
 	// Experimental.
@@ -60,6 +62,7 @@ type DataGooglePubsubTopic interface {
 	SchemaSettings() DataGooglePubsubTopicSchemaSettingsList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -149,6 +152,16 @@ func (j *jsiiProxy_DataGooglePubsubTopic) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGooglePubsubTopic) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGooglePubsubTopic) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -194,6 +207,16 @@ func (j *jsiiProxy_DataGooglePubsubTopic) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePubsubTopic) IngestionDataSourceSettings() DataGooglePubsubTopicIngestionDataSourceSettingsList {
+	var returns DataGooglePubsubTopicIngestionDataSourceSettingsList
+	_jsii_.Get(
+		j,
+		"ingestionDataSourceSettings",
 		&returns,
 	)
 	return returns
@@ -339,6 +362,16 @@ func (j *jsiiProxy_DataGooglePubsubTopic) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
+func (j *jsiiProxy_DataGooglePubsubTopic) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGooglePubsubTopic) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -360,7 +393,7 @@ func (j *jsiiProxy_DataGooglePubsubTopic) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_pubsub_topic google_pubsub_topic} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_pubsub_topic google_pubsub_topic} Data Source.
 func NewDataGooglePubsubTopic(scope constructs.Construct, id *string, config *DataGooglePubsubTopicConfig) DataGooglePubsubTopic {
 	_init_.Initialize()
 
@@ -378,7 +411,7 @@ func NewDataGooglePubsubTopic(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_pubsub_topic google_pubsub_topic} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_pubsub_topic google_pubsub_topic} Data Source.
 func NewDataGooglePubsubTopic_Override(d DataGooglePubsubTopic, scope constructs.Construct, id *string, config *DataGooglePubsubTopicConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglekmscryptokey/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/kms_crypto_key google_kms_crypto_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/kms_crypto_key google_kms_crypto_key}.
 type DataGoogleKmsCryptoKey interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -20,11 +20,13 @@ type DataGoogleKmsCryptoKey interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CryptoKeyBackend() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DestroyScheduledDuration() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -50,6 +52,7 @@ type DataGoogleKmsCryptoKey interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Primary() DataGoogleKmsCryptoKeyPrimaryList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -61,6 +64,7 @@ type DataGoogleKmsCryptoKey interface {
 	SkipInitialVersionCreation() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -140,6 +144,16 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKey) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleKmsCryptoKey) CryptoKeyBackend() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cryptoKeyBackend",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleKmsCryptoKey) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -155,6 +169,16 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKey) DestroyScheduledDuration() *string {
 	_jsii_.Get(
 		j,
 		"destroyScheduledDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleKmsCryptoKey) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -290,6 +314,16 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKey) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleKmsCryptoKey) Primary() DataGoogleKmsCryptoKeyPrimaryList {
+	var returns DataGoogleKmsCryptoKeyPrimaryList
+	_jsii_.Get(
+		j,
+		"primary",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleKmsCryptoKey) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -350,6 +384,16 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKey) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleKmsCryptoKey) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleKmsCryptoKey) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -381,7 +425,7 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKey) VersionTemplate() DataGoogleKmsCrypto
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/kms_crypto_key google_kms_crypto_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/kms_crypto_key google_kms_crypto_key} Data Source.
 func NewDataGoogleKmsCryptoKey(scope constructs.Construct, id *string, config *DataGoogleKmsCryptoKeyConfig) DataGoogleKmsCryptoKey {
 	_init_.Initialize()
 
@@ -399,7 +443,7 @@ func NewDataGoogleKmsCryptoKey(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/kms_crypto_key google_kms_crypto_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/kms_crypto_key google_kms_crypto_key} Data Source.
 func NewDataGoogleKmsCryptoKey_Override(d DataGoogleKmsCryptoKey, scope constructs.Construct, id *string, config *DataGoogleKmsCryptoKeyConfig) {
 	_init_.Initialize()
 

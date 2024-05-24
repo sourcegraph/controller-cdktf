@@ -60,6 +60,10 @@ func (g *jsiiProxy_GoogleComputeRouterPeer) validatePutBfdParameters(value *Goog
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRouterPeer) validatePutMd5AuthenticationKeyParameters(value *GoogleComputeRouterPeerMd5AuthenticationKey) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRouterPeer) validatePutTimeoutsParameters(value *GoogleComputeRouterPeerTimeouts) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetEnableParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetEnableIpv4Parameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetEnableIpv6Parameters(val interface{}) error {
 	return nil
 }
@@ -113,6 +121,10 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetInterfaceParameters(val *
 }
 
 func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetIpAddressParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetIpv4NexthopAddressParameters(val *string) error {
 	return nil
 }
 
@@ -133,6 +145,10 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetPeerAsnParameters(val *fl
 }
 
 func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetPeerIpAddressParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetPeerIpv4NexthopAddressParameters(val *string) error {
 	return nil
 }
 

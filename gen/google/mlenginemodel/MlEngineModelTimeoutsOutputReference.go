@@ -43,6 +43,9 @@ type MlEngineModelTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Update() *string
+	SetUpdate(val *string)
+	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -69,6 +72,7 @@ type MlEngineModelTimeoutsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
+	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -194,6 +198,26 @@ func (j *jsiiProxy_MlEngineModelTimeoutsOutputReference) TerraformResource() cdk
 	return returns
 }
 
+func (j *jsiiProxy_MlEngineModelTimeoutsOutputReference) Update() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"update",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MlEngineModelTimeoutsOutputReference) UpdateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewMlEngineModelTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MlEngineModelTimeoutsOutputReference {
 	_init_.Initialize()
@@ -295,6 +319,17 @@ func (j *jsiiProxy_MlEngineModelTimeoutsOutputReference)SetTerraformResource(val
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MlEngineModelTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"update",
 		val,
 	)
 }
@@ -497,6 +532,14 @@ func (m *jsiiProxy_MlEngineModelTimeoutsOutputReference) ResetDelete() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetDelete",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MlEngineModelTimeoutsOutputReference) ResetUpdate() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetUpdate",
 		nil, // no parameters
 	)
 }

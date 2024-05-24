@@ -46,6 +46,8 @@ type FirestoreIndexFieldsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VectorConfig() FirestoreIndexFieldsVectorConfigOutputReference
+	VectorConfigInput() *FirestoreIndexFieldsVectorConfig
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,9 +72,11 @@ type FirestoreIndexFieldsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutVectorConfig(value *FirestoreIndexFieldsVectorConfig)
 	ResetArrayConfig()
 	ResetFieldPath()
 	ResetOrder()
+	ResetVectorConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -213,6 +217,26 @@ func (j *jsiiProxy_FirestoreIndexFieldsOutputReference) TerraformResource() cdkt
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreIndexFieldsOutputReference) VectorConfig() FirestoreIndexFieldsVectorConfigOutputReference {
+	var returns FirestoreIndexFieldsVectorConfigOutputReference
+	_jsii_.Get(
+		j,
+		"vectorConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreIndexFieldsOutputReference) VectorConfigInput() *FirestoreIndexFieldsVectorConfig {
+	var returns *FirestoreIndexFieldsVectorConfig
+	_jsii_.Get(
+		j,
+		"vectorConfigInput",
 		&returns,
 	)
 	return returns
@@ -520,6 +544,17 @@ func (f *jsiiProxy_FirestoreIndexFieldsOutputReference) InterpolationForAttribut
 	return returns
 }
 
+func (f *jsiiProxy_FirestoreIndexFieldsOutputReference) PutVectorConfig(value *FirestoreIndexFieldsVectorConfig) {
+	if err := f.validatePutVectorConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putVectorConfig",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FirestoreIndexFieldsOutputReference) ResetArrayConfig() {
 	_jsii_.InvokeVoid(
 		f,
@@ -540,6 +575,14 @@ func (f *jsiiProxy_FirestoreIndexFieldsOutputReference) ResetOrder() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOrder",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FirestoreIndexFieldsOutputReference) ResetVectorConfig() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetVectorConfig",
 		nil, // no parameters
 	)
 }

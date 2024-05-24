@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleidentityplatformoauthidpconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config}.
 type GoogleIdentityPlatformOauthIdpConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -475,7 +475,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfig) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config} Resource.
 func NewGoogleIdentityPlatformOauthIdpConfig(scope constructs.Construct, id *string, config *GoogleIdentityPlatformOauthIdpConfigConfig) GoogleIdentityPlatformOauthIdpConfig {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewGoogleIdentityPlatformOauthIdpConfig(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config} Resource.
 func NewGoogleIdentityPlatformOauthIdpConfig_Override(g GoogleIdentityPlatformOauthIdpConfig, scope constructs.Construct, id *string, config *GoogleIdentityPlatformOauthIdpConfigConfig) {
 	_init_.Initialize()
 

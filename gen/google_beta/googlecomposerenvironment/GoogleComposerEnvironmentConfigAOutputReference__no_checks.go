@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validatePutD
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validatePutDataRetentionConfigParameters(value *GoogleComposerEnvironmentConfigDataRetentionConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validatePutEncryptionConfigParameters(value *GoogleComposerEnvironmentConfigEncryptionConfig) error {
 	return nil
 }
@@ -97,6 +101,14 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validateSetC
 }
 
 func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validateSetEnablePrivateBuildsOnlyParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validateSetEnablePrivateEnvironmentParameters(val interface{}) error {
 	return nil
 }
 

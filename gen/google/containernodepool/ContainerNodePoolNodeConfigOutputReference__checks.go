@@ -101,7 +101,29 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutAdvanc
 	return nil
 }
 
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutConfidentialNodesParameters(value *ContainerNodePoolNodeConfigConfidentialNodes) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutEphemeralStorageLocalSsdConfigParameters(value *ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutFastSocketParameters(value *ContainerNodePoolNodeConfigFastSocket) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -215,6 +237,37 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutReserv
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutSecondaryBootDisksParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ContainerNodePoolNodeConfigSecondaryBootDisks:
+		value := value.(*[]*ContainerNodePoolNodeConfigSecondaryBootDisks)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ContainerNodePoolNodeConfigSecondaryBootDisks:
+		value_ := value.([]*ContainerNodePoolNodeConfigSecondaryBootDisks)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ContainerNodePoolNodeConfigSecondaryBootDisks; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
@@ -381,6 +434,26 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetDiskTy
 	return nil
 }
 
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetEnableConfidentialStorageParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetImageTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -482,6 +555,14 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetPreemp
 }
 
 func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetResourceLabelsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetResourceManagerTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

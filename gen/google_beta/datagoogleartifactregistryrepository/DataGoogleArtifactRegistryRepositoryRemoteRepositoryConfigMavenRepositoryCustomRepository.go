@@ -1,0 +1,6 @@
+package datagoogleartifactregistryrepository
+
+
+type DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepository struct {
+}
+

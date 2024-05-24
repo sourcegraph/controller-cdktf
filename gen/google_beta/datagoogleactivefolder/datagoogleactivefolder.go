@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagoogleactivefolder/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_active_folder google_active_folder}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_active_folder google_active_folder}.
 type DataGoogleActiveFolder interface {
 	cdktf.TerraformDataSource
+	ApiMethod() *string
+	SetApiMethod(val *string)
+	ApiMethodInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -85,6 +88,7 @@ type DataGoogleActiveFolder interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetApiMethod()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -102,6 +106,26 @@ type DataGoogleActiveFolder interface {
 // The jsii proxy struct for DataGoogleActiveFolder
 type jsiiProxy_DataGoogleActiveFolder struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataGoogleActiveFolder) ApiMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleActiveFolder) ApiMethodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiMethodInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleActiveFolder) CdktfStack() cdktf.TerraformStack {
@@ -315,7 +339,7 @@ func (j *jsiiProxy_DataGoogleActiveFolder) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_active_folder google_active_folder} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_active_folder google_active_folder} Data Source.
 func NewDataGoogleActiveFolder(scope constructs.Construct, id *string, config *DataGoogleActiveFolderConfig) DataGoogleActiveFolder {
 	_init_.Initialize()
 
@@ -333,7 +357,7 @@ func NewDataGoogleActiveFolder(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/data-sources/google_active_folder google_active_folder} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/data-sources/google_active_folder google_active_folder} Data Source.
 func NewDataGoogleActiveFolder_Override(d DataGoogleActiveFolder, scope constructs.Construct, id *string, config *DataGoogleActiveFolderConfig) {
 	_init_.Initialize()
 
@@ -341,6 +365,17 @@ func NewDataGoogleActiveFolder_Override(d DataGoogleActiveFolder, scope construc
 		"@cdktf/provider-google-beta.dataGoogleActiveFolder.DataGoogleActiveFolder",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataGoogleActiveFolder)SetApiMethod(val *string) {
+	if err := j.validateSetApiMethodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"apiMethod",
+		val,
 	)
 }
 
@@ -686,6 +721,14 @@ func (d *jsiiProxy_DataGoogleActiveFolder) OverrideLogicalId(newLogicalId *strin
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataGoogleActiveFolder) ResetApiMethod() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetApiMethod",
+		nil, // no parameters
 	)
 }
 

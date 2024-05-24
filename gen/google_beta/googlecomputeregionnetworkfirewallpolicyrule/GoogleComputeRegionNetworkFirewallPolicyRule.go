@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregionnetworkfirewallpolicyrule/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_network_firewall_policy_rule google_compute_region_network_firewall_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_network_firewall_policy_rule google_compute_region_network_firewall_policy_rule}.
 type GoogleComputeRegionNetworkFirewallPolicyRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -89,6 +89,9 @@ type GoogleComputeRegionNetworkFirewallPolicyRule interface {
 	SetRuleName(val *string)
 	RuleNameInput() *string
 	RuleTupleCount() *float64
+	SecurityProfileGroup() *string
+	SetSecurityProfileGroup(val *string)
+	SecurityProfileGroupInput() *string
 	TargetSecureTags() GoogleComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsList
 	TargetSecureTagsInput() interface{}
 	TargetServiceAccounts() *[]*string
@@ -102,6 +105,9 @@ type GoogleComputeRegionNetworkFirewallPolicyRule interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleComputeRegionNetworkFirewallPolicyRuleTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TlsInspect() interface{}
+	SetTlsInspect(val interface{})
+	TlsInspectInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -140,9 +146,11 @@ type GoogleComputeRegionNetworkFirewallPolicyRule interface {
 	ResetProject()
 	ResetRegion()
 	ResetRuleName()
+	ResetSecurityProfileGroup()
 	ResetTargetSecureTags()
 	ResetTargetServiceAccounts()
 	ResetTimeouts()
+	ResetTlsInspect()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -548,6 +556,26 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) RuleTupleCount(
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) SecurityProfileGroup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityProfileGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) SecurityProfileGroupInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityProfileGroupInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) TargetSecureTags() GoogleComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsList {
 	var returns GoogleComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsList
 	_jsii_.Get(
@@ -638,8 +666,28 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) TimeoutsInput()
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) TlsInspect() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tlsInspect",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_network_firewall_policy_rule google_compute_region_network_firewall_policy_rule} Resource.
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) TlsInspectInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tlsInspectInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_network_firewall_policy_rule google_compute_region_network_firewall_policy_rule} Resource.
 func NewGoogleComputeRegionNetworkFirewallPolicyRule(scope constructs.Construct, id *string, config *GoogleComputeRegionNetworkFirewallPolicyRuleConfig) GoogleComputeRegionNetworkFirewallPolicyRule {
 	_init_.Initialize()
 
@@ -657,7 +705,7 @@ func NewGoogleComputeRegionNetworkFirewallPolicyRule(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_network_firewall_policy_rule google_compute_region_network_firewall_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_network_firewall_policy_rule google_compute_region_network_firewall_policy_rule} Resource.
 func NewGoogleComputeRegionNetworkFirewallPolicyRule_Override(g GoogleComputeRegionNetworkFirewallPolicyRule, scope constructs.Construct, id *string, config *GoogleComputeRegionNetworkFirewallPolicyRuleConfig) {
 	_init_.Initialize()
 
@@ -857,6 +905,17 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule)SetRuleName(val 
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule)SetSecurityProfileGroup(val *string) {
+	if err := j.validateSetSecurityProfileGroupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityProfileGroup",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule)SetTargetServiceAccounts(val *[]*string) {
 	if err := j.validateSetTargetServiceAccountsParameters(val); err != nil {
 		panic(err)
@@ -864,6 +923,17 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule)SetTargetService
 	_jsii_.Set(
 		j,
 		"targetServiceAccounts",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule)SetTlsInspect(val interface{}) {
+	if err := j.validateSetTlsInspectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsInspect",
 		val,
 	)
 }
@@ -1231,6 +1301,14 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) ResetRuleName()
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) ResetSecurityProfileGroup() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecurityProfileGroup",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) ResetTargetSecureTags() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1251,6 +1329,14 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) ResetTimeouts()
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule) ResetTlsInspect() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTlsInspect",
 		nil, // no parameters
 	)
 }

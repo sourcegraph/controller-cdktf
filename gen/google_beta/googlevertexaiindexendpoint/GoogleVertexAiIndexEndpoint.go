@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlevertexaiindexendpoint/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_vertex_ai_index_endpoint google_vertex_ai_index_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_vertex_ai_index_endpoint google_vertex_ai_index_endpoint}.
 type GoogleVertexAiIndexEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -35,6 +35,7 @@ type GoogleVertexAiIndexEndpoint interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -60,6 +61,8 @@ type GoogleVertexAiIndexEndpoint interface {
 	NetworkInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PrivateServiceConnectConfig() GoogleVertexAiIndexEndpointPrivateServiceConnectConfigOutputReference
+	PrivateServiceConnectConfigInput() *GoogleVertexAiIndexEndpointPrivateServiceConnectConfig
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -71,6 +74,10 @@ type GoogleVertexAiIndexEndpoint interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicEndpointDomainName() *string
+	PublicEndpointEnabled() interface{}
+	SetPublicEndpointEnabled(val interface{})
+	PublicEndpointEnabledInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	Region() *string
@@ -78,6 +85,7 @@ type GoogleVertexAiIndexEndpoint interface {
 	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -110,6 +118,7 @@ type GoogleVertexAiIndexEndpoint interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutPrivateServiceConnectConfig(value *GoogleVertexAiIndexEndpointPrivateServiceConnectConfig)
 	PutTimeouts(value *GoogleVertexAiIndexEndpointTimeouts)
 	ResetDescription()
 	ResetId()
@@ -118,7 +127,9 @@ type GoogleVertexAiIndexEndpoint interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrivateServiceConnectConfig()
 	ResetProject()
+	ResetPublicEndpointEnabled()
 	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -231,6 +242,16 @@ func (j *jsiiProxy_GoogleVertexAiIndexEndpoint) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiIndexEndpoint) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -366,6 +387,26 @@ func (j *jsiiProxy_GoogleVertexAiIndexEndpoint) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleVertexAiIndexEndpoint) PrivateServiceConnectConfig() GoogleVertexAiIndexEndpointPrivateServiceConnectConfigOutputReference {
+	var returns GoogleVertexAiIndexEndpointPrivateServiceConnectConfigOutputReference
+	_jsii_.Get(
+		j,
+		"privateServiceConnectConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiIndexEndpoint) PrivateServiceConnectConfigInput() *GoogleVertexAiIndexEndpointPrivateServiceConnectConfig {
+	var returns *GoogleVertexAiIndexEndpointPrivateServiceConnectConfig
+	_jsii_.Get(
+		j,
+		"privateServiceConnectConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleVertexAiIndexEndpoint) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -406,6 +447,36 @@ func (j *jsiiProxy_GoogleVertexAiIndexEndpoint) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleVertexAiIndexEndpoint) PublicEndpointDomainName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicEndpointDomainName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiIndexEndpoint) PublicEndpointEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicEndpointEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiIndexEndpoint) PublicEndpointEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicEndpointEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleVertexAiIndexEndpoint) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -441,6 +512,16 @@ func (j *jsiiProxy_GoogleVertexAiIndexEndpoint) TerraformGeneratorMetadata() *cd
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiIndexEndpoint) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
 		&returns,
 	)
 	return returns
@@ -497,7 +578,7 @@ func (j *jsiiProxy_GoogleVertexAiIndexEndpoint) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_vertex_ai_index_endpoint google_vertex_ai_index_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_vertex_ai_index_endpoint google_vertex_ai_index_endpoint} Resource.
 func NewGoogleVertexAiIndexEndpoint(scope constructs.Construct, id *string, config *GoogleVertexAiIndexEndpointConfig) GoogleVertexAiIndexEndpoint {
 	_init_.Initialize()
 
@@ -515,7 +596,7 @@ func NewGoogleVertexAiIndexEndpoint(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_vertex_ai_index_endpoint google_vertex_ai_index_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_vertex_ai_index_endpoint google_vertex_ai_index_endpoint} Resource.
 func NewGoogleVertexAiIndexEndpoint_Override(g GoogleVertexAiIndexEndpoint, scope constructs.Construct, id *string, config *GoogleVertexAiIndexEndpointConfig) {
 	_init_.Initialize()
 
@@ -656,6 +737,17 @@ func (j *jsiiProxy_GoogleVertexAiIndexEndpoint)SetProvisioners(val *[]interface{
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleVertexAiIndexEndpoint)SetPublicEndpointEnabled(val interface{}) {
+	if err := j.validateSetPublicEndpointEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicEndpointEnabled",
 		val,
 	)
 }
@@ -937,6 +1029,17 @@ func (g *jsiiProxy_GoogleVertexAiIndexEndpoint) OverrideLogicalId(newLogicalId *
 	)
 }
 
+func (g *jsiiProxy_GoogleVertexAiIndexEndpoint) PutPrivateServiceConnectConfig(value *GoogleVertexAiIndexEndpointPrivateServiceConnectConfig) {
+	if err := g.validatePutPrivateServiceConnectConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPrivateServiceConnectConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleVertexAiIndexEndpoint) PutTimeouts(value *GoogleVertexAiIndexEndpointTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -988,10 +1091,26 @@ func (g *jsiiProxy_GoogleVertexAiIndexEndpoint) ResetOverrideLogicalId() {
 	)
 }
 
+func (g *jsiiProxy_GoogleVertexAiIndexEndpoint) ResetPrivateServiceConnectConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPrivateServiceConnectConfig",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleVertexAiIndexEndpoint) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleVertexAiIndexEndpoint) ResetPublicEndpointEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPublicEndpointEnabled",
 		nil, // no parameters
 	)
 }

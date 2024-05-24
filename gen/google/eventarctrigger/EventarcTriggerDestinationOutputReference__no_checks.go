@@ -52,11 +52,15 @@ func (e *jsiiProxy_EventarcTriggerDestinationOutputReference) validatePutGkePara
 	return nil
 }
 
-func (e *jsiiProxy_EventarcTriggerDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventarcTriggerDestinationOutputReference) validatePutHttpEndpointParameters(value *EventarcTriggerDestinationHttpEndpoint) error {
 	return nil
 }
 
-func (j *jsiiProxy_EventarcTriggerDestinationOutputReference) validateSetCloudFunctionParameters(val *string) error {
+func (e *jsiiProxy_EventarcTriggerDestinationOutputReference) validatePutNetworkConfigParameters(value *EventarcTriggerDestinationNetworkConfig) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventarcTriggerDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
 

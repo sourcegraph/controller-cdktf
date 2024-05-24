@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecEgressPoliciesE
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecEgressPoliciesEgressFromOutputReference) validatePutSourcesParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecEgressPoliciesEgressFromOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -65,6 +69,10 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecEgressPoliciesE
 }
 
 func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecEgressPoliciesEgressFromOutputReference) validateSetInternalValueParameters(val *GoogleAccessContextManagerServicePerimeterSpecEgressPoliciesEgressFrom) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecEgressPoliciesEgressFromOutputReference) validateSetSourceRestrictionParameters(val *string) error {
 	return nil
 }
 

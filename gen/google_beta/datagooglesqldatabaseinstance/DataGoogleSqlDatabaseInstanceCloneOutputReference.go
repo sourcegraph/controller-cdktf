@@ -32,6 +32,7 @@ type DataGoogleSqlDatabaseInstanceCloneOutputReference interface {
 	InternalValue() *DataGoogleSqlDatabaseInstanceClone
 	SetInternalValue(val *DataGoogleSqlDatabaseInstanceClone)
 	PointInTime() *string
+	PreferredZone() *string
 	SourceInstanceName() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -155,6 +156,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceCloneOutputReference) PointInTim
 	_jsii_.Get(
 		j,
 		"pointInTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceCloneOutputReference) PreferredZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preferredZone",
 		&returns,
 	)
 	return returns

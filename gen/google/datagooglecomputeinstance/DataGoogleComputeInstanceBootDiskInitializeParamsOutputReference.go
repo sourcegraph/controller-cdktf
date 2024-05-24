@@ -25,12 +25,15 @@ type DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference interface 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableConfidentialCompute() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	Image() *string
 	InternalValue() *DataGoogleComputeInstanceBootDiskInitializeParams
 	SetInternalValue(val *DataGoogleComputeInstanceBootDiskInitializeParams)
 	Labels() cdktf.StringMap
+	ProvisionedIops() *float64
+	ProvisionedThroughput() *float64
 	ResourceManagerTags() cdktf.StringMap
 	Size() *float64
 	// Experimental.
@@ -111,6 +114,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference) EnableConfidentialCompute() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableConfidentialCompute",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -146,6 +159,26 @@ func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsOutputRefere
 	_jsii_.Get(
 		j,
 		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference) ProvisionedIops() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference) ProvisionedThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedThroughput",
 		&returns,
 	)
 	return returns

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecertificatemanagerdnsauthorization/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_certificate_manager_dns_authorization google_certificate_manager_dns_authorization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_certificate_manager_dns_authorization google_certificate_manager_dns_authorization}.
 type GoogleCertificateManagerDnsAuthorization interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -35,6 +35,7 @@ type GoogleCertificateManagerDnsAuthorization interface {
 	Domain() *string
 	SetDomain(val *string)
 	DomainInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -53,6 +54,9 @@ type GoogleCertificateManagerDnsAuthorization interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Location() *string
+	SetLocation(val *string)
+	LocationInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -73,12 +77,16 @@ type GoogleCertificateManagerDnsAuthorization interface {
 	RawOverrides() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleCertificateManagerDnsAuthorizationTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -108,11 +116,13 @@ type GoogleCertificateManagerDnsAuthorization interface {
 	ResetDescription()
 	ResetId()
 	ResetLabels()
+	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
+	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -228,6 +238,16 @@ func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization) DomainInput() *stri
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -303,6 +323,26 @@ func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization) Lifecycle() *cdktf.
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization) LocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationInput",
 		&returns,
 	)
 	return returns
@@ -398,6 +438,16 @@ func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization) TerraformGeneratorM
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -438,8 +488,28 @@ func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization) TimeoutsInput() int
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_certificate_manager_dns_authorization google_certificate_manager_dns_authorization} Resource.
+func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_certificate_manager_dns_authorization google_certificate_manager_dns_authorization} Resource.
 func NewGoogleCertificateManagerDnsAuthorization(scope constructs.Construct, id *string, config *GoogleCertificateManagerDnsAuthorizationConfig) GoogleCertificateManagerDnsAuthorization {
 	_init_.Initialize()
 
@@ -457,7 +527,7 @@ func NewGoogleCertificateManagerDnsAuthorization(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_certificate_manager_dns_authorization google_certificate_manager_dns_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_certificate_manager_dns_authorization google_certificate_manager_dns_authorization} Resource.
 func NewGoogleCertificateManagerDnsAuthorization_Override(g GoogleCertificateManagerDnsAuthorization, scope constructs.Construct, id *string, config *GoogleCertificateManagerDnsAuthorizationConfig) {
 	_init_.Initialize()
 
@@ -561,6 +631,17 @@ func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization)SetLifecycle(val *cd
 	)
 }
 
+func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"location",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -598,6 +679,17 @@ func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization)SetProvisioners(val 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -903,6 +995,14 @@ func (g *jsiiProxy_GoogleCertificateManagerDnsAuthorization) ResetLabels() {
 	)
 }
 
+func (g *jsiiProxy_GoogleCertificateManagerDnsAuthorization) ResetLocation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLocation",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleCertificateManagerDnsAuthorization) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -923,6 +1023,14 @@ func (g *jsiiProxy_GoogleCertificateManagerDnsAuthorization) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCertificateManagerDnsAuthorization) ResetType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetType",
 		nil, // no parameters
 	)
 }

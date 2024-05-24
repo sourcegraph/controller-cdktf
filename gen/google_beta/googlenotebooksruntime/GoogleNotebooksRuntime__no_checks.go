@@ -92,6 +92,10 @@ func (j *jsiiProxy_GoogleNotebooksRuntime) validateSetIdParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNotebooksRuntime) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNotebooksRuntime) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

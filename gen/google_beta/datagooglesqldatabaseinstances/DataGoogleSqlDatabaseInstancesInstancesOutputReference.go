@@ -30,6 +30,7 @@ type DataGoogleSqlDatabaseInstancesInstancesOutputReference interface {
 	CreationStack() *[]*string
 	DatabaseVersion() *string
 	DeletionProtection() cdktf.IResolvable
+	DnsName() *string
 	EncryptionKeyName() *string
 	FirstIpAddress() *string
 	// Experimental.
@@ -43,6 +44,7 @@ type DataGoogleSqlDatabaseInstancesInstancesOutputReference interface {
 	Name() *string
 	PrivateIpAddress() *string
 	Project() *string
+	PscServiceAttachmentLink() *string
 	PublicIpAddress() *string
 	Region() *string
 	ReplicaConfiguration() DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationList
@@ -179,6 +181,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) Delet
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) DnsName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) EncryptionKeyName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -284,6 +296,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) Proje
 	_jsii_.Get(
 		j,
 		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) PscServiceAttachmentLink() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pscServiceAttachmentLink",
 		&returns,
 	)
 	return returns

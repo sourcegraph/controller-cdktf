@@ -2,9 +2,9 @@ package googleaccesscontextmanageringresspolicy
 
 
 type GoogleAccessContextManagerIngressPolicyTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_ingress_policy#create GoogleAccessContextManagerIngressPolicy#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_access_context_manager_ingress_policy#create GoogleAccessContextManagerIngressPolicy#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_ingress_policy#delete GoogleAccessContextManagerIngressPolicy#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_access_context_manager_ingress_policy#delete GoogleAccessContextManagerIngressPolicy#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

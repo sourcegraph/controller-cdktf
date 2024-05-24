@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) validateSetBitbucketServerConfigParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudbuildTriggerGitFileSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

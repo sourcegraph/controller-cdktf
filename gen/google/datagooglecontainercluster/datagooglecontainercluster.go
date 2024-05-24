@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecontainercluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/container_cluster google_container_cluster}.
 type DataGoogleContainerCluster interface {
 	cdktf.TerraformDataSource
 	AddonsConfig() DataGoogleContainerClusterAddonsConfigList
@@ -32,6 +32,7 @@ type DataGoogleContainerCluster interface {
 	DatapathProvider() *string
 	DefaultMaxPodsPerNode() *float64
 	DefaultSnatStatus() DataGoogleContainerClusterDefaultSnatStatusList
+	DeletionProtection() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -39,7 +40,7 @@ type DataGoogleContainerCluster interface {
 	Description() *string
 	DnsConfig() DataGoogleContainerClusterDnsConfigList
 	EnableAutopilot() cdktf.IResolvable
-	EnableBinaryAuthorization() cdktf.IResolvable
+	EnableCiliumClusterwideNetworkPolicy() cdktf.IResolvable
 	EnableIntranodeVisibility() cdktf.IResolvable
 	EnableK8SBetaApis() DataGoogleContainerClusterEnableK8SBetaApisList
 	EnableKubernetesAlpha() cdktf.IResolvable
@@ -48,6 +49,7 @@ type DataGoogleContainerCluster interface {
 	EnableShieldedNodes() cdktf.IResolvable
 	EnableTpu() cdktf.IResolvable
 	Endpoint() *string
+	Fleet() DataGoogleContainerClusterFleetList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -59,6 +61,7 @@ type DataGoogleContainerCluster interface {
 	GatewayApiConfig() DataGoogleContainerClusterGatewayApiConfigList
 	Id() *string
 	SetId(val *string)
+	IdentityServiceConfig() DataGoogleContainerClusterIdentityServiceConfigList
 	IdInput() *string
 	InitialNodeCount() *float64
 	IpAllocationPolicy() DataGoogleContainerClusterIpAllocationPolicyList
@@ -91,6 +94,7 @@ type DataGoogleContainerCluster interface {
 	NodeConfig() DataGoogleContainerClusterNodeConfigList
 	NodeLocations() *[]*string
 	NodePool() DataGoogleContainerClusterNodePoolList
+	NodePoolAutoConfig() DataGoogleContainerClusterNodePoolAutoConfigList
 	NodePoolDefaults() DataGoogleContainerClusterNodePoolDefaultsList
 	NodeVersion() *string
 	NotificationConfig() DataGoogleContainerClusterNotificationConfigList
@@ -320,6 +324,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) DefaultSnatStatus() DataGoogleCon
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerCluster) DeletionProtection() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerCluster) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -360,11 +374,11 @@ func (j *jsiiProxy_DataGoogleContainerCluster) EnableAutopilot() cdktf.IResolvab
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerCluster) EnableBinaryAuthorization() cdktf.IResolvable {
+func (j *jsiiProxy_DataGoogleContainerCluster) EnableCiliumClusterwideNetworkPolicy() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
-		"enableBinaryAuthorization",
+		"enableCiliumClusterwideNetworkPolicy",
 		&returns,
 	)
 	return returns
@@ -450,6 +464,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) Endpoint() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerCluster) Fleet() DataGoogleContainerClusterFleetList {
+	var returns DataGoogleContainerClusterFleetList
+	_jsii_.Get(
+		j,
+		"fleet",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerCluster) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -495,6 +519,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) IdentityServiceConfig() DataGoogleContainerClusterIdentityServiceConfigList {
+	var returns DataGoogleContainerClusterIdentityServiceConfigList
+	_jsii_.Get(
+		j,
+		"identityServiceConfig",
 		&returns,
 	)
 	return returns
@@ -760,6 +794,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) NodePool() DataGoogleContainerClu
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerCluster) NodePoolAutoConfig() DataGoogleContainerClusterNodePoolAutoConfigList {
+	var returns DataGoogleContainerClusterNodePoolAutoConfigList
+	_jsii_.Get(
+		j,
+		"nodePoolAutoConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerCluster) NodePoolDefaults() DataGoogleContainerClusterNodePoolDefaultsList {
 	var returns DataGoogleContainerClusterNodePoolDefaultsList
 	_jsii_.Get(
@@ -1011,7 +1055,7 @@ func (j *jsiiProxy_DataGoogleContainerCluster) WorkloadIdentityConfig() DataGoog
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/container_cluster google_container_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/container_cluster google_container_cluster} Data Source.
 func NewDataGoogleContainerCluster(scope constructs.Construct, id *string, config *DataGoogleContainerClusterConfig) DataGoogleContainerCluster {
 	_init_.Initialize()
 
@@ -1029,7 +1073,7 @@ func NewDataGoogleContainerCluster(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/container_cluster google_container_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/container_cluster google_container_cluster} Data Source.
 func NewDataGoogleContainerCluster_Override(d DataGoogleContainerCluster, scope constructs.Construct, id *string, config *DataGoogleContainerClusterConfig) {
 	_init_.Initialize()
 

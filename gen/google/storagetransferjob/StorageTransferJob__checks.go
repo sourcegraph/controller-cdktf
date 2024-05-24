@@ -111,6 +111,17 @@ func (s *jsiiProxy_StorageTransferJob) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (s *jsiiProxy_StorageTransferJob) validatePutEventStreamParameters(value *StorageTransferJobEventStream) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_StorageTransferJob) validatePutNotificationConfigParameters(value *StorageTransferJobNotificationConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -277,6 +288,14 @@ func (j *jsiiProxy_StorageTransferJob) validateSetIdParameters(val *string) erro
 func (j *jsiiProxy_StorageTransferJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_StorageTransferJob) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

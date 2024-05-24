@@ -53,6 +53,8 @@ type GoogleContainerClusterAddonsConfigOutputReference interface {
 	KalmConfigInput() *GoogleContainerClusterAddonsConfigKalmConfig
 	NetworkPolicyConfig() GoogleContainerClusterAddonsConfigNetworkPolicyConfigOutputReference
 	NetworkPolicyConfigInput() *GoogleContainerClusterAddonsConfigNetworkPolicyConfig
+	StatefulHaConfig() GoogleContainerClusterAddonsConfigStatefulHaConfigOutputReference
+	StatefulHaConfigInput() *GoogleContainerClusterAddonsConfigStatefulHaConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -97,6 +99,7 @@ type GoogleContainerClusterAddonsConfigOutputReference interface {
 	PutIstioConfig(value *GoogleContainerClusterAddonsConfigIstioConfig)
 	PutKalmConfig(value *GoogleContainerClusterAddonsConfigKalmConfig)
 	PutNetworkPolicyConfig(value *GoogleContainerClusterAddonsConfigNetworkPolicyConfig)
+	PutStatefulHaConfig(value *GoogleContainerClusterAddonsConfigStatefulHaConfig)
 	ResetCloudrunConfig()
 	ResetConfigConnectorConfig()
 	ResetDnsCacheConfig()
@@ -109,6 +112,7 @@ type GoogleContainerClusterAddonsConfigOutputReference interface {
 	ResetIstioConfig()
 	ResetKalmConfig()
 	ResetNetworkPolicyConfig()
+	ResetStatefulHaConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -409,6 +413,26 @@ func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) NetworkPol
 	_jsii_.Get(
 		j,
 		"networkPolicyConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) StatefulHaConfig() GoogleContainerClusterAddonsConfigStatefulHaConfigOutputReference {
+	var returns GoogleContainerClusterAddonsConfigStatefulHaConfigOutputReference
+	_jsii_.Get(
+		j,
+		"statefulHaConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) StatefulHaConfigInput() *GoogleContainerClusterAddonsConfigStatefulHaConfig {
+	var returns *GoogleContainerClusterAddonsConfigStatefulHaConfig
+	_jsii_.Get(
+		j,
+		"statefulHaConfigInput",
 		&returns,
 	)
 	return returns
@@ -835,6 +859,17 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutNetwork
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutStatefulHaConfig(value *GoogleContainerClusterAddonsConfigStatefulHaConfig) {
+	if err := g.validatePutStatefulHaConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putStatefulHaConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) ResetCloudrunConfig() {
 	_jsii_.InvokeVoid(
 		g,
@@ -927,6 +962,14 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) ResetNetwo
 	_jsii_.InvokeVoid(
 		g,
 		"resetNetworkPolicyConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) ResetStatefulHaConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStatefulHaConfig",
 		nil, // no parameters
 	)
 }

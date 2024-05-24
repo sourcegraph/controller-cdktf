@@ -1,0 +1,6 @@
+package blockchainnodeengineblockchainnodes
+
+
+type BlockchainNodeEngineBlockchainNodesConnectionInfoEndpointInfo struct {
+}
+

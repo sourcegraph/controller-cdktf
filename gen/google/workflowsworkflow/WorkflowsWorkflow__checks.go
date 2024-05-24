@@ -146,6 +146,14 @@ func validateWorkflowsWorkflow_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_WorkflowsWorkflow) validateSetCallLogLevelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_WorkflowsWorkflow) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -363,6 +371,14 @@ func (j *jsiiProxy_WorkflowsWorkflow) validateSetServiceAccountParameters(val *s
 }
 
 func (j *jsiiProxy_WorkflowsWorkflow) validateSetSourceContentsParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WorkflowsWorkflow) validateSetUserEnvVarsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

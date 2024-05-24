@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregionsecuritypolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_security_policy google_compute_region_security_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_security_policy google_compute_region_security_policy}.
 type GoogleComputeRegionSecurityPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -84,6 +84,8 @@ type GoogleComputeRegionSecurityPolicy interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	UserDefinedFields() GoogleComputeRegionSecurityPolicyUserDefinedFieldsList
+	UserDefinedFieldsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -111,6 +113,7 @@ type GoogleComputeRegionSecurityPolicy interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutDdosProtectionConfig(value *GoogleComputeRegionSecurityPolicyDdosProtectionConfig)
 	PutTimeouts(value *GoogleComputeRegionSecurityPolicyTimeouts)
+	PutUserDefinedFields(value interface{})
 	ResetDdosProtectionConfig()
 	ResetDescription()
 	ResetId()
@@ -121,6 +124,7 @@ type GoogleComputeRegionSecurityPolicy interface {
 	ResetRegion()
 	ResetTimeouts()
 	ResetType()
+	ResetUserDefinedFields()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -496,8 +500,28 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicy) TypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicy) UserDefinedFields() GoogleComputeRegionSecurityPolicyUserDefinedFieldsList {
+	var returns GoogleComputeRegionSecurityPolicyUserDefinedFieldsList
+	_jsii_.Get(
+		j,
+		"userDefinedFields",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_security_policy google_compute_region_security_policy} Resource.
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicy) UserDefinedFieldsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"userDefinedFieldsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_security_policy google_compute_region_security_policy} Resource.
 func NewGoogleComputeRegionSecurityPolicy(scope constructs.Construct, id *string, config *GoogleComputeRegionSecurityPolicyConfig) GoogleComputeRegionSecurityPolicy {
 	_init_.Initialize()
 
@@ -515,7 +539,7 @@ func NewGoogleComputeRegionSecurityPolicy(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_security_policy google_compute_region_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_security_policy google_compute_region_security_policy} Resource.
 func NewGoogleComputeRegionSecurityPolicy_Override(g GoogleComputeRegionSecurityPolicy, scope constructs.Construct, id *string, config *GoogleComputeRegionSecurityPolicyConfig) {
 	_init_.Initialize()
 
@@ -948,6 +972,17 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) PutTimeouts(value *GoogleC
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) PutUserDefinedFields(value interface{}) {
+	if err := g.validatePutUserDefinedFieldsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putUserDefinedFields",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) ResetDdosProtectionConfig() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1008,6 +1043,14 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) ResetType() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) ResetUserDefinedFields() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUserDefinedFields",
 		nil, // no parameters
 	)
 }

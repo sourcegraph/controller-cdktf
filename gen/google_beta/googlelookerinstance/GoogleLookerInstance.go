@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlelookerinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_looker_instance google_looker_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_looker_instance google_looker_instance}.
 type GoogleLookerInstance interface {
 	cdktf.TerraformResource
 	AdminSettings() GoogleLookerInstanceAdminSettingsOutputReference
@@ -30,6 +30,8 @@ type GoogleLookerInstance interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	CustomDomain() GoogleLookerInstanceCustomDomainOutputReference
+	CustomDomainInput() *GoogleLookerInstanceCustomDomain
 	DenyMaintenancePeriod() GoogleLookerInstanceDenyMaintenancePeriodOutputReference
 	DenyMaintenancePeriodInput() *GoogleLookerInstanceDenyMaintenancePeriod
 	// Experimental.
@@ -132,6 +134,7 @@ type GoogleLookerInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAdminSettings(value *GoogleLookerInstanceAdminSettings)
+	PutCustomDomain(value *GoogleLookerInstanceCustomDomain)
 	PutDenyMaintenancePeriod(value *GoogleLookerInstanceDenyMaintenancePeriod)
 	PutEncryptionConfig(value *GoogleLookerInstanceEncryptionConfig)
 	PutMaintenanceWindow(value *GoogleLookerInstanceMaintenanceWindow)
@@ -140,6 +143,7 @@ type GoogleLookerInstance interface {
 	PutUserMetadata(value *GoogleLookerInstanceUserMetadata)
 	ResetAdminSettings()
 	ResetConsumerNetwork()
+	ResetCustomDomain()
 	ResetDenyMaintenancePeriod()
 	ResetEncryptionConfig()
 	ResetId()
@@ -256,6 +260,26 @@ func (j *jsiiProxy_GoogleLookerInstance) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLookerInstance) CustomDomain() GoogleLookerInstanceCustomDomainOutputReference {
+	var returns GoogleLookerInstanceCustomDomainOutputReference
+	_jsii_.Get(
+		j,
+		"customDomain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLookerInstance) CustomDomainInput() *GoogleLookerInstanceCustomDomain {
+	var returns *GoogleLookerInstanceCustomDomain
+	_jsii_.Get(
+		j,
+		"customDomainInput",
 		&returns,
 	)
 	return returns
@@ -722,7 +746,7 @@ func (j *jsiiProxy_GoogleLookerInstance) UserMetadataInput() *GoogleLookerInstan
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_looker_instance google_looker_instance} Resource.
 func NewGoogleLookerInstance(scope constructs.Construct, id *string, config *GoogleLookerInstanceConfig) GoogleLookerInstance {
 	_init_.Initialize()
 
@@ -740,7 +764,7 @@ func NewGoogleLookerInstance(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_looker_instance google_looker_instance} Resource.
 func NewGoogleLookerInstance_Override(g GoogleLookerInstance, scope constructs.Construct, id *string, config *GoogleLookerInstanceConfig) {
 	_init_.Initialize()
 
@@ -1195,6 +1219,17 @@ func (g *jsiiProxy_GoogleLookerInstance) PutAdminSettings(value *GoogleLookerIns
 	)
 }
 
+func (g *jsiiProxy_GoogleLookerInstance) PutCustomDomain(value *GoogleLookerInstanceCustomDomain) {
+	if err := g.validatePutCustomDomainParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCustomDomain",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleLookerInstance) PutDenyMaintenancePeriod(value *GoogleLookerInstanceDenyMaintenancePeriod) {
 	if err := g.validatePutDenyMaintenancePeriodParameters(value); err != nil {
 		panic(err)
@@ -1273,6 +1308,14 @@ func (g *jsiiProxy_GoogleLookerInstance) ResetConsumerNetwork() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetConsumerNetwork",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleLookerInstance) ResetCustomDomain() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomDomain",
 		nil, // no parameters
 	)
 }

@@ -12,6 +12,8 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface
 	cdktf.ComplexObject
 	Accelerators() GoogleWorkstationsWorkstationConfigHostGceInstanceAcceleratorsList
 	AcceleratorsInput() interface{}
+	BoostConfigs() GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsList
+	BoostConfigsInput() interface{}
 	BootDiskSizeGb() *float64
 	SetBootDiskSizeGb(val *float64)
 	BootDiskSizeGbInput() *float64
@@ -35,6 +37,12 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface
 	DisablePublicIpAddresses() interface{}
 	SetDisablePublicIpAddresses(val interface{})
 	DisablePublicIpAddressesInput() interface{}
+	DisableSsh() interface{}
+	SetDisableSsh(val interface{})
+	DisableSshInput() interface{}
+	EnableNestedVirtualization() interface{}
+	SetEnableNestedVirtualization(val interface{})
+	EnableNestedVirtualizationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleWorkstationsWorkstationConfigHostGceInstance
@@ -48,6 +56,9 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
+	ServiceAccountScopes() *[]*string
+	SetServiceAccountScopes(val *[]*string)
+	ServiceAccountScopesInput() *[]*string
 	ShieldedInstanceConfig() GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference
 	ShieldedInstanceConfigInput() *GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfig
 	Tags() *[]*string
@@ -86,15 +97,20 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAccelerators(value interface{})
+	PutBoostConfigs(value interface{})
 	PutConfidentialInstanceConfig(value *GoogleWorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfig)
 	PutShieldedInstanceConfig(value *GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfig)
 	ResetAccelerators()
+	ResetBoostConfigs()
 	ResetBootDiskSizeGb()
 	ResetConfidentialInstanceConfig()
 	ResetDisablePublicIpAddresses()
+	ResetDisableSsh()
+	ResetEnableNestedVirtualization()
 	ResetMachineType()
 	ResetPoolSize()
 	ResetServiceAccount()
+	ResetServiceAccountScopes()
 	ResetShieldedInstanceConfig()
 	ResetTags()
 	// Produce the Token's value at resolution time.
@@ -127,6 +143,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	_jsii_.Get(
 		j,
 		"acceleratorsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) BoostConfigs() GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsList {
+	var returns GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsList
+	_jsii_.Get(
+		j,
+		"boostConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) BoostConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"boostConfigsInput",
 		&returns,
 	)
 	return returns
@@ -222,6 +258,46 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	return returns
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) DisableSsh() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableSsh",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) DisableSshInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableSshInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) EnableNestedVirtualization() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableNestedVirtualization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) EnableNestedVirtualizationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableNestedVirtualizationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -297,6 +373,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	_jsii_.Get(
 		j,
 		"serviceAccountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) ServiceAccountScopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"serviceAccountScopes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) ServiceAccountScopesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"serviceAccountScopesInput",
 		&returns,
 	)
 	return returns
@@ -434,6 +530,28 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	)
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference)SetDisableSsh(val interface{}) {
+	if err := j.validateSetDisableSshParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableSsh",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference)SetEnableNestedVirtualization(val interface{}) {
+	if err := j.validateSetEnableNestedVirtualizationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableNestedVirtualization",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference)SetInternalValue(val *GoogleWorkstationsWorkstationConfigHostGceInstance) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -474,6 +592,17 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	_jsii_.Set(
 		j,
 		"serviceAccount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference)SetServiceAccountScopes(val *[]*string) {
+	if err := j.validateSetServiceAccountScopesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccountScopes",
 		val,
 	)
 }
@@ -708,6 +837,17 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	)
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) PutBoostConfigs(value interface{}) {
+	if err := g.validatePutBoostConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBoostConfigs",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) PutConfidentialInstanceConfig(value *GoogleWorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfig) {
 	if err := g.validatePutConfidentialInstanceConfigParameters(value); err != nil {
 		panic(err)
@@ -738,6 +878,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	)
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) ResetBoostConfigs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBoostConfigs",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) ResetBootDiskSizeGb() {
 	_jsii_.InvokeVoid(
 		g,
@@ -762,6 +910,22 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	)
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) ResetDisableSsh() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisableSsh",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) ResetEnableNestedVirtualization() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableNestedVirtualization",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) ResetMachineType() {
 	_jsii_.InvokeVoid(
 		g,
@@ -782,6 +946,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	_jsii_.InvokeVoid(
 		g,
 		"resetServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) ResetServiceAccountScopes() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServiceAccountScopes",
 		nil, // no parameters
 	)
 }

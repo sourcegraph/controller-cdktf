@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleComputeServiceAttachmentConsumerAcceptListsOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeServiceAttachmentConsumerAcceptListsOutputReference) validateSetNetworkUrlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeServiceAttachmentConsumerAcceptListsOutputReference) validateSetProjectIdOrNumParameters(val *string) error {
 	return nil
 }

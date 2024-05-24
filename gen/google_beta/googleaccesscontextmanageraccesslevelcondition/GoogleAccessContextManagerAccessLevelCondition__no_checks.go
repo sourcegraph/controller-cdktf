@@ -60,6 +60,10 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validatePutTi
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validatePutVpcNetworkSourcesParameters(value interface{}) error {
+	return nil
+}
+
 func validateGoogleAccessContextManagerAccessLevelCondition_IsConstructParameters(x interface{}) error {
 	return nil
 }

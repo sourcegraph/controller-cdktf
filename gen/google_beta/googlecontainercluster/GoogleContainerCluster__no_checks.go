@@ -96,6 +96,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutEnableK8SBetaApisParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutFleetParameters(value *GoogleContainerClusterFleet) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutGatewayApiConfigParameters(value *GoogleContainerClusterGatewayApiConfig) error {
 	return nil
 }
@@ -196,6 +200,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutVerticalPodAutoscalingPara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutWorkloadAltsConfigParameters(value *GoogleContainerClusterWorkloadAltsConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutWorkloadIdentityConfigParameters(value *GoogleContainerClusterWorkloadIdentityConfig) error {
 	return nil
 }
@@ -236,6 +244,10 @@ func (j *jsiiProxy_GoogleContainerCluster) validateSetDefaultMaxPodsPerNodeParam
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerCluster) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -244,7 +256,11 @@ func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableAutopilotParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableBinaryAuthorizationParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableCiliumClusterwideNetworkPolicyParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableFqdnNetworkPolicyParameters(val interface{}) error {
 	return nil
 }
 

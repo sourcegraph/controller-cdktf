@@ -52,6 +52,10 @@ func (s *jsiiProxy_StorageTransferJob) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (s *jsiiProxy_StorageTransferJob) validatePutEventStreamParameters(value *StorageTransferJobEventStream) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageTransferJob) validatePutNotificationConfigParameters(value *StorageTransferJobNotificationConfig) error {
 	return nil
 }
@@ -93,6 +97,10 @@ func (j *jsiiProxy_StorageTransferJob) validateSetIdParameters(val *string) erro
 }
 
 func (j *jsiiProxy_StorageTransferJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageTransferJob) validateSetNameParameters(val *string) error {
 	return nil
 }
 

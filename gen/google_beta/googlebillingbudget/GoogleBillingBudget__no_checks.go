@@ -108,6 +108,10 @@ func (j *jsiiProxy_GoogleBillingBudget) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBillingBudget) validateSetOwnershipScopeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBillingBudget) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

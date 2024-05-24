@@ -4,7 +4,7 @@ package googlecomputeregionurlmap
 type GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay struct {
 	// Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_url_map#seconds GoogleComputeRegionUrlMap#seconds}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_url_map#seconds GoogleComputeRegionUrlMap#seconds}
 	Seconds *string `field:"required" json:"seconds" yaml:"seconds"`
 	// Span of time that's a fraction of a second at nanosecond resolution.
 	//
@@ -12,7 +12,7 @@ type GoogleComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPoli
 	// less than one second are represented with a 0 'seconds' field and a positive
 	// 'nanos' field. Must be from 0 to 999,999,999 inclusive.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_url_map#nanos GoogleComputeRegionUrlMap#nanos}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_region_url_map#nanos GoogleComputeRegionUrlMap#nanos}
 	Nanos *float64 `field:"optional" json:"nanos" yaml:"nanos"`
 }
 

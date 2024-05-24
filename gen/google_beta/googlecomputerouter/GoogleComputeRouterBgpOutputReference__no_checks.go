@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleComputeRouterBgpOutputReference) validateSetComplexObje
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRouterBgpOutputReference) validateSetIdentifierRangeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRouterBgpOutputReference) validateSetInternalValueParameters(val *GoogleComputeRouterBgp) error {
 	return nil
 }

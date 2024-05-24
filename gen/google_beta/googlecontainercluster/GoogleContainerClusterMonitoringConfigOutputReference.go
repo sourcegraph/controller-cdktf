@@ -10,8 +10,8 @@ import (
 
 type GoogleContainerClusterMonitoringConfigOutputReference interface {
 	cdktf.ComplexObject
-	AdvancedDatapathObservabilityConfig() GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList
-	AdvancedDatapathObservabilityConfigInput() interface{}
+	AdvancedDatapathObservabilityConfig() GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference
+	AdvancedDatapathObservabilityConfigInput() *GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -68,7 +68,7 @@ type GoogleContainerClusterMonitoringConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAdvancedDatapathObservabilityConfig(value interface{})
+	PutAdvancedDatapathObservabilityConfig(value *GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig)
 	PutManagedPrometheus(value *GoogleContainerClusterMonitoringConfigManagedPrometheus)
 	ResetAdvancedDatapathObservabilityConfig()
 	ResetEnableComponents()
@@ -88,8 +88,8 @@ type jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference) AdvancedDatapathObservabilityConfig() GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList {
-	var returns GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList
+func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference) AdvancedDatapathObservabilityConfig() GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference {
+	var returns GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference
 	_jsii_.Get(
 		j,
 		"advancedDatapathObservabilityConfig",
@@ -98,8 +98,8 @@ func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference) Advanc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference) AdvancedDatapathObservabilityConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference) AdvancedDatapathObservabilityConfigInput() *GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig {
+	var returns *GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig
 	_jsii_.Get(
 		j,
 		"advancedDatapathObservabilityConfigInput",
@@ -498,7 +498,7 @@ func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference) Interp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference) PutAdvancedDatapathObservabilityConfig(value interface{}) {
+func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference) PutAdvancedDatapathObservabilityConfig(value *GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig) {
 	if err := g.validatePutAdvancedDatapathObservabilityConfigParameters(value); err != nil {
 		panic(err)
 	}

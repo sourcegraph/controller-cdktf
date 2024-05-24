@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_instance google_compute_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_instance google_compute_instance}.
 type ComputeInstance interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() ComputeInstanceAdvancedMachineFeaturesOutputReference
@@ -53,6 +53,7 @@ type ComputeInstance interface {
 	DesiredStatus() *string
 	SetDesiredStatus(val *string)
 	DesiredStatusInput() *string
+	EffectiveLabels() cdktf.StringMap
 	EnableDisplay() interface{}
 	SetEnableDisplay(val interface{})
 	EnableDisplayInput() interface{}
@@ -138,6 +139,7 @@ type ComputeInstance interface {
 	TagsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -477,6 +479,16 @@ func (j *jsiiProxy_ComputeInstance) DesiredStatusInput() *string {
 	_jsii_.Get(
 		j,
 		"desiredStatusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstance) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -1042,6 +1054,16 @@ func (j *jsiiProxy_ComputeInstance) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstance) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstance) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -1103,7 +1125,7 @@ func (j *jsiiProxy_ComputeInstance) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_instance google_compute_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_instance google_compute_instance} Resource.
 func NewComputeInstance(scope constructs.Construct, id *string, config *ComputeInstanceConfig) ComputeInstance {
 	_init_.Initialize()
 
@@ -1121,7 +1143,7 @@ func NewComputeInstance(scope constructs.Construct, id *string, config *ComputeI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_instance google_compute_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_instance google_compute_instance} Resource.
 func NewComputeInstance_Override(c ComputeInstance, scope constructs.Construct, id *string, config *ComputeInstanceConfig) {
 	_init_.Initialize()
 

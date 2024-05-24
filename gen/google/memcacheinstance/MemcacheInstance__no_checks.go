@@ -132,6 +132,10 @@ func (j *jsiiProxy_MemcacheInstance) validateSetRegionParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_MemcacheInstance) validateSetReservedIpRangeIdParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemcacheInstance) validateSetZonesParameters(val *[]*string) error {
 	return nil
 }

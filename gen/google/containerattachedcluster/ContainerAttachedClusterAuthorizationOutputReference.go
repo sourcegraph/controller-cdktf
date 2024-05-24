@@ -10,6 +10,9 @@ import (
 
 type ContainerAttachedClusterAuthorizationOutputReference interface {
 	cdktf.ComplexObject
+	AdminGroups() *[]*string
+	SetAdminGroups(val *[]*string)
+	AdminGroupsInput() *[]*string
 	AdminUsers() *[]*string
 	SetAdminUsers(val *[]*string)
 	AdminUsersInput() *[]*string
@@ -64,6 +67,7 @@ type ContainerAttachedClusterAuthorizationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAdminGroups()
 	ResetAdminUsers()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -78,6 +82,26 @@ type ContainerAttachedClusterAuthorizationOutputReference interface {
 // The jsii proxy struct for ContainerAttachedClusterAuthorizationOutputReference
 type jsiiProxy_ContainerAttachedClusterAuthorizationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ContainerAttachedClusterAuthorizationOutputReference) AdminGroups() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"adminGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAttachedClusterAuthorizationOutputReference) AdminGroupsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"adminGroupsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ContainerAttachedClusterAuthorizationOutputReference) AdminUsers() *[]*string {
@@ -195,6 +219,17 @@ func NewContainerAttachedClusterAuthorizationOutputReference_Override(c Containe
 		"@cdktf/provider-google.containerAttachedCluster.ContainerAttachedClusterAuthorizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
+	)
+}
+
+func (j *jsiiProxy_ContainerAttachedClusterAuthorizationOutputReference)SetAdminGroups(val *[]*string) {
+	if err := j.validateSetAdminGroupsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"adminGroups",
+		val,
 	)
 }
 
@@ -448,6 +483,14 @@ func (c *jsiiProxy_ContainerAttachedClusterAuthorizationOutputReference) Interpo
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerAttachedClusterAuthorizationOutputReference) ResetAdminGroups() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAdminGroups",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerAttachedClusterAuthorizationOutputReference) ResetAdminUsers() {

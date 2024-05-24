@@ -56,6 +56,10 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateConfidentialInstanceConfigOu
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateConfidentialInstanceConfigOutputReference) validateSetConfidentialInstanceTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplateConfidentialInstanceConfigOutputReference) validateSetEnableConfidentialComputeParameters(val interface{}) error {
 	return nil
 }

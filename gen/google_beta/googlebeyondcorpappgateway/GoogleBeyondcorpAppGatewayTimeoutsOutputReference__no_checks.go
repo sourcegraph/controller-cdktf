@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleBeyondcorpAppGatewayTimeoutsOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBeyondcorpAppGatewayTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleBeyondcorpAppGatewayTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

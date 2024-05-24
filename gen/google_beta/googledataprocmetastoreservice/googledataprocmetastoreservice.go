@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataprocmetastoreservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service}.
 type GoogleDataprocMetastoreService interface {
 	cdktf.TerraformResource
 	ArtifactGcsUri() *string
@@ -32,6 +32,7 @@ type GoogleDataprocMetastoreService interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	EncryptionConfig() GoogleDataprocMetastoreServiceEncryptionConfigOutputReference
 	EncryptionConfigInput() *GoogleDataprocMetastoreServiceEncryptionConfig
 	EndpointUri() *string
@@ -89,6 +90,10 @@ type GoogleDataprocMetastoreService interface {
 	ReleaseChannel() *string
 	SetReleaseChannel(val *string)
 	ReleaseChannelInput() *string
+	ScalingConfig() GoogleDataprocMetastoreServiceScalingConfigOutputReference
+	ScalingConfigInput() *GoogleDataprocMetastoreServiceScalingConfig
+	ScheduledBackup() GoogleDataprocMetastoreServiceScheduledBackupOutputReference
+	ScheduledBackupInput() *GoogleDataprocMetastoreServiceScheduledBackup
 	ServiceId() *string
 	SetServiceId(val *string)
 	ServiceIdInput() *string
@@ -98,6 +103,7 @@ type GoogleDataprocMetastoreService interface {
 	TelemetryConfigInput() *GoogleDataprocMetastoreServiceTelemetryConfig
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -138,6 +144,8 @@ type GoogleDataprocMetastoreService interface {
 	PutMaintenanceWindow(value *GoogleDataprocMetastoreServiceMaintenanceWindow)
 	PutMetadataIntegration(value *GoogleDataprocMetastoreServiceMetadataIntegration)
 	PutNetworkConfig(value *GoogleDataprocMetastoreServiceNetworkConfig)
+	PutScalingConfig(value *GoogleDataprocMetastoreServiceScalingConfig)
+	PutScheduledBackup(value *GoogleDataprocMetastoreServiceScheduledBackup)
 	PutTelemetryConfig(value *GoogleDataprocMetastoreServiceTelemetryConfig)
 	PutTimeouts(value *GoogleDataprocMetastoreServiceTimeouts)
 	ResetDatabaseType()
@@ -156,6 +164,8 @@ type GoogleDataprocMetastoreService interface {
 	ResetPort()
 	ResetProject()
 	ResetReleaseChannel()
+	ResetScalingConfig()
+	ResetScheduledBackup()
 	ResetTelemetryConfig()
 	ResetTier()
 	ResetTimeouts()
@@ -249,6 +259,16 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreService) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -594,6 +614,46 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService) ReleaseChannelInput() *string
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataprocMetastoreService) ScalingConfig() GoogleDataprocMetastoreServiceScalingConfigOutputReference {
+	var returns GoogleDataprocMetastoreServiceScalingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"scalingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreService) ScalingConfigInput() *GoogleDataprocMetastoreServiceScalingConfig {
+	var returns *GoogleDataprocMetastoreServiceScalingConfig
+	_jsii_.Get(
+		j,
+		"scalingConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreService) ScheduledBackup() GoogleDataprocMetastoreServiceScheduledBackupOutputReference {
+	var returns GoogleDataprocMetastoreServiceScheduledBackupOutputReference
+	_jsii_.Get(
+		j,
+		"scheduledBackup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreService) ScheduledBackupInput() *GoogleDataprocMetastoreServiceScheduledBackup {
+	var returns *GoogleDataprocMetastoreServiceScheduledBackup
+	_jsii_.Get(
+		j,
+		"scheduledBackupInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataprocMetastoreService) ServiceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -659,6 +719,16 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService) TerraformGeneratorMetadata() 
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreService) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
 		&returns,
 	)
 	return returns
@@ -735,7 +805,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service} Resource.
 func NewGoogleDataprocMetastoreService(scope constructs.Construct, id *string, config *GoogleDataprocMetastoreServiceConfig) GoogleDataprocMetastoreService {
 	_init_.Initialize()
 
@@ -753,7 +823,7 @@ func NewGoogleDataprocMetastoreService(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service} Resource.
 func NewGoogleDataprocMetastoreService_Override(g GoogleDataprocMetastoreService, scope constructs.Construct, id *string, config *GoogleDataprocMetastoreServiceConfig) {
 	_init_.Initialize()
 
@@ -1263,6 +1333,28 @@ func (g *jsiiProxy_GoogleDataprocMetastoreService) PutNetworkConfig(value *Googl
 	)
 }
 
+func (g *jsiiProxy_GoogleDataprocMetastoreService) PutScalingConfig(value *GoogleDataprocMetastoreServiceScalingConfig) {
+	if err := g.validatePutScalingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putScalingConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocMetastoreService) PutScheduledBackup(value *GoogleDataprocMetastoreServiceScheduledBackup) {
+	if err := g.validatePutScheduledBackupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putScheduledBackup",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataprocMetastoreService) PutTelemetryConfig(value *GoogleDataprocMetastoreServiceTelemetryConfig) {
 	if err := g.validatePutTelemetryConfigParameters(value); err != nil {
 		panic(err)
@@ -1393,6 +1485,22 @@ func (g *jsiiProxy_GoogleDataprocMetastoreService) ResetReleaseChannel() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetReleaseChannel",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocMetastoreService) ResetScalingConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetScalingConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocMetastoreService) ResetScheduledBackup() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetScheduledBackup",
 		nil, // no parameters
 	)
 }

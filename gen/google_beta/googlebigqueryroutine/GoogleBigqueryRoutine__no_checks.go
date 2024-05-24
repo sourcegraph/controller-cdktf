@@ -56,6 +56,14 @@ func (g *jsiiProxy_GoogleBigqueryRoutine) validatePutArgumentsParameters(value i
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryRoutine) validatePutRemoteFunctionOptionsParameters(value *GoogleBigqueryRoutineRemoteFunctionOptions) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryRoutine) validatePutSparkOptionsParameters(value *GoogleBigqueryRoutineSparkOptions) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryRoutine) validatePutTimeoutsParameters(value *GoogleBigqueryRoutineTimeouts) error {
 	return nil
 }
@@ -77,6 +85,10 @@ func (j *jsiiProxy_GoogleBigqueryRoutine) validateSetConnectionParameters(val in
 }
 
 func (j *jsiiProxy_GoogleBigqueryRoutine) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBigqueryRoutine) validateSetDataGovernanceTypeParameters(val *string) error {
 	return nil
 }
 

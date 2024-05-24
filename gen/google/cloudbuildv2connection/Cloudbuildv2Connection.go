@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/cloudbuildv2connection/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection}.
 type Cloudbuildv2Connection interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -35,6 +35,7 @@ type Cloudbuildv2Connection interface {
 	Disabled() interface{}
 	SetDisabled(val interface{})
 	DisabledInput() interface{}
+	EffectiveAnnotations() cdktf.StringMap
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -239,6 +240,16 @@ func (j *jsiiProxy_Cloudbuildv2Connection) DisabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"disabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cloudbuildv2Connection) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
 		&returns,
 	)
 	return returns
@@ -555,7 +566,7 @@ func (j *jsiiProxy_Cloudbuildv2Connection) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
 func NewCloudbuildv2Connection(scope constructs.Construct, id *string, config *Cloudbuildv2ConnectionConfig) Cloudbuildv2Connection {
 	_init_.Initialize()
 
@@ -573,7 +584,7 @@ func NewCloudbuildv2Connection(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
 func NewCloudbuildv2Connection_Override(c Cloudbuildv2Connection, scope constructs.Construct, id *string, config *Cloudbuildv2ConnectionConfig) {
 	_init_.Initialize()
 

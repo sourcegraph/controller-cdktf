@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleFirestoreDatabase) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirestoreDatabase) validatePutCmekConfigParameters(value *GoogleFirestoreDatabaseCmekConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirestoreDatabase) validatePutTimeoutsParameters(value *GoogleFirestoreDatabaseTimeouts) error {
 	return nil
 }
@@ -84,6 +88,14 @@ func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetCountParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetDeleteProtectionStateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetDeletionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -97,6 +109,10 @@ func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetLocationIdParameters(val 
 }
 
 func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetPointInTimeRecoveryEnablementParameters(val *string) error {
 	return nil
 }
 

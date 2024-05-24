@@ -92,6 +92,10 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) validateSetDimensionParameters(val *string) error {
 	return nil
 }
@@ -101,6 +105,10 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) va
 }
 
 func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) validateSetNameParameters(val *string) error {
 	return nil
 }
 

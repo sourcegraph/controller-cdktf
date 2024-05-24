@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleComputeRouterInterface) validateSetIpRangeParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRouterInterface) validateSetIpVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRouterInterface) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

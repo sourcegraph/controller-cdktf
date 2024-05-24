@@ -9,11 +9,16 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleartifactregistryrepository/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_artifact_registry_repository google_artifact_registry_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_artifact_registry_repository google_artifact_registry_repository}.
 type GoogleArtifactRegistryRepository interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CleanupPolicies() GoogleArtifactRegistryRepositoryCleanupPoliciesList
+	CleanupPoliciesInput() interface{}
+	CleanupPolicyDryRun() interface{}
+	SetCleanupPolicyDryRun(val interface{})
+	CleanupPolicyDryRunInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -34,6 +39,7 @@ type GoogleArtifactRegistryRepository interface {
 	DescriptionInput() *string
 	DockerConfig() GoogleArtifactRegistryRepositoryDockerConfigOutputReference
 	DockerConfigInput() *GoogleArtifactRegistryRepositoryDockerConfig
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -89,6 +95,7 @@ type GoogleArtifactRegistryRepository interface {
 	RepositoryIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -123,11 +130,14 @@ type GoogleArtifactRegistryRepository interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCleanupPolicies(value interface{})
 	PutDockerConfig(value *GoogleArtifactRegistryRepositoryDockerConfig)
 	PutMavenConfig(value *GoogleArtifactRegistryRepositoryMavenConfig)
 	PutRemoteRepositoryConfig(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfig)
 	PutTimeouts(value *GoogleArtifactRegistryRepositoryTimeouts)
 	PutVirtualRepositoryConfig(value *GoogleArtifactRegistryRepositoryVirtualRepositoryConfig)
+	ResetCleanupPolicies()
+	ResetCleanupPolicyDryRun()
 	ResetDescription()
 	ResetDockerConfig()
 	ResetId()
@@ -163,6 +173,46 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepository) CdktfStack() cdktf.Terrafor
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepository) CleanupPolicies() GoogleArtifactRegistryRepositoryCleanupPoliciesList {
+	var returns GoogleArtifactRegistryRepositoryCleanupPoliciesList
+	_jsii_.Get(
+		j,
+		"cleanupPolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepository) CleanupPoliciesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cleanupPoliciesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepository) CleanupPolicyDryRun() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cleanupPolicyDryRun",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepository) CleanupPolicyDryRunInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cleanupPolicyDryRunInput",
 		&returns,
 	)
 	return returns
@@ -253,6 +303,16 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepository) DockerConfigInput() *Google
 	_jsii_.Get(
 		j,
 		"dockerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepository) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -558,6 +618,16 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepository) TerraformGeneratorMetadata(
 	return returns
 }
 
+func (j *jsiiProxy_GoogleArtifactRegistryRepository) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleArtifactRegistryRepository) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -629,7 +699,7 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepository) VirtualRepositoryConfigInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_artifact_registry_repository google_artifact_registry_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_artifact_registry_repository google_artifact_registry_repository} Resource.
 func NewGoogleArtifactRegistryRepository(scope constructs.Construct, id *string, config *GoogleArtifactRegistryRepositoryConfig) GoogleArtifactRegistryRepository {
 	_init_.Initialize()
 
@@ -647,7 +717,7 @@ func NewGoogleArtifactRegistryRepository(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_artifact_registry_repository google_artifact_registry_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_artifact_registry_repository google_artifact_registry_repository} Resource.
 func NewGoogleArtifactRegistryRepository_Override(g GoogleArtifactRegistryRepository, scope constructs.Construct, id *string, config *GoogleArtifactRegistryRepositoryConfig) {
 	_init_.Initialize()
 
@@ -655,6 +725,17 @@ func NewGoogleArtifactRegistryRepository_Override(g GoogleArtifactRegistryReposi
 		"@cdktf/provider-google-beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepository",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepository)SetCleanupPolicyDryRun(val interface{}) {
+	if err := j.validateSetCleanupPolicyDryRunParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cleanupPolicyDryRun",
+		val,
 	)
 }
 
@@ -1091,6 +1172,17 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepository) OverrideLogicalId(newLogica
 	)
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepository) PutCleanupPolicies(value interface{}) {
+	if err := g.validatePutCleanupPoliciesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCleanupPolicies",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepository) PutDockerConfig(value *GoogleArtifactRegistryRepositoryDockerConfig) {
 	if err := g.validatePutDockerConfigParameters(value); err != nil {
 		panic(err)
@@ -1143,6 +1235,22 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepository) PutVirtualRepositoryConfig(
 		g,
 		"putVirtualRepositoryConfig",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepository) ResetCleanupPolicies() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCleanupPolicies",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepository) ResetCleanupPolicyDryRun() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCleanupPolicyDryRun",
+		nil, // no parameters
 	)
 }
 

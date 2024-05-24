@@ -63,7 +63,8 @@ type GoogleGkeonpremVmwareNodePoolConfigAOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	VsphereConfig() GoogleGkeonpremVmwareNodePoolConfigVsphereConfigList
+	VsphereConfig() GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference
+	VsphereConfigInput() *GoogleGkeonpremVmwareNodePoolConfigVsphereConfig
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -89,6 +90,7 @@ type GoogleGkeonpremVmwareNodePoolConfigAOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutTaints(value interface{})
+	PutVsphereConfig(value *GoogleGkeonpremVmwareNodePoolConfigVsphereConfig)
 	ResetBootDiskSizeGb()
 	ResetCpus()
 	ResetEnableLoadBalancer()
@@ -97,6 +99,7 @@ type GoogleGkeonpremVmwareNodePoolConfigAOutputReference interface {
 	ResetMemoryMb()
 	ResetReplicas()
 	ResetTaints()
+	ResetVsphereConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -362,11 +365,21 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigAOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigAOutputReference) VsphereConfig() GoogleGkeonpremVmwareNodePoolConfigVsphereConfigList {
-	var returns GoogleGkeonpremVmwareNodePoolConfigVsphereConfigList
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigAOutputReference) VsphereConfig() GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference {
+	var returns GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference
 	_jsii_.Get(
 		j,
 		"vsphereConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigAOutputReference) VsphereConfigInput() *GoogleGkeonpremVmwareNodePoolConfigVsphereConfig {
+	var returns *GoogleGkeonpremVmwareNodePoolConfigVsphereConfig
+	_jsii_.Get(
+		j,
+		"vsphereConfigInput",
 		&returns,
 	)
 	return returns
@@ -740,6 +753,17 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigAOutputReference) PutTaint
 	)
 }
 
+func (g *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigAOutputReference) PutVsphereConfig(value *GoogleGkeonpremVmwareNodePoolConfigVsphereConfig) {
+	if err := g.validatePutVsphereConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putVsphereConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigAOutputReference) ResetBootDiskSizeGb() {
 	_jsii_.InvokeVoid(
 		g,
@@ -800,6 +824,14 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigAOutputReference) ResetTai
 	_jsii_.InvokeVoid(
 		g,
 		"resetTaints",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigAOutputReference) ResetVsphereConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVsphereConfig",
 		nil, // no parameters
 	)
 }

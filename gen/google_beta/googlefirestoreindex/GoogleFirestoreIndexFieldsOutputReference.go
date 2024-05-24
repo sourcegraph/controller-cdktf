@@ -46,6 +46,8 @@ type GoogleFirestoreIndexFieldsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VectorConfig() GoogleFirestoreIndexFieldsVectorConfigOutputReference
+	VectorConfigInput() *GoogleFirestoreIndexFieldsVectorConfig
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,9 +72,11 @@ type GoogleFirestoreIndexFieldsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutVectorConfig(value *GoogleFirestoreIndexFieldsVectorConfig)
 	ResetArrayConfig()
 	ResetFieldPath()
 	ResetOrder()
+	ResetVectorConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -213,6 +217,26 @@ func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) TerraformResource(
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) VectorConfig() GoogleFirestoreIndexFieldsVectorConfigOutputReference {
+	var returns GoogleFirestoreIndexFieldsVectorConfigOutputReference
+	_jsii_.Get(
+		j,
+		"vectorConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) VectorConfigInput() *GoogleFirestoreIndexFieldsVectorConfig {
+	var returns *GoogleFirestoreIndexFieldsVectorConfig
+	_jsii_.Get(
+		j,
+		"vectorConfigInput",
 		&returns,
 	)
 	return returns
@@ -520,6 +544,17 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) InterpolationForAt
 	return returns
 }
 
+func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) PutVectorConfig(value *GoogleFirestoreIndexFieldsVectorConfig) {
+	if err := g.validatePutVectorConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putVectorConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) ResetArrayConfig() {
 	_jsii_.InvokeVoid(
 		g,
@@ -540,6 +575,14 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) ResetOrder() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOrder",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) ResetVectorConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVectorConfig",
 		nil, // no parameters
 	)
 }

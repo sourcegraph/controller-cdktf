@@ -9,12 +9,18 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigeeorganization/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_apigee_organization google_apigee_organization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_apigee_organization google_apigee_organization}.
 type GoogleApigeeOrganization interface {
 	cdktf.TerraformResource
 	AnalyticsRegion() *string
 	SetAnalyticsRegion(val *string)
 	AnalyticsRegionInput() *string
+	ApiConsumerDataEncryptionKeyName() *string
+	SetApiConsumerDataEncryptionKeyName(val *string)
+	ApiConsumerDataEncryptionKeyNameInput() *string
+	ApiConsumerDataLocation() *string
+	SetApiConsumerDataLocation(val *string)
+	ApiConsumerDataLocationInput() *string
 	ApigeeProjectId() *string
 	AuthorizedNetwork() *string
 	SetAuthorizedNetwork(val *string)
@@ -31,6 +37,9 @@ type GoogleApigeeOrganization interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ControlPlaneEncryptionKeyName() *string
+	SetControlPlaneEncryptionKeyName(val *string)
+	ControlPlaneEncryptionKeyNameInput() *string
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -127,8 +136,11 @@ type GoogleApigeeOrganization interface {
 	PutProperties(value *GoogleApigeeOrganizationProperties)
 	PutTimeouts(value *GoogleApigeeOrganizationTimeouts)
 	ResetAnalyticsRegion()
+	ResetApiConsumerDataEncryptionKeyName()
+	ResetApiConsumerDataLocation()
 	ResetAuthorizedNetwork()
 	ResetBillingType()
+	ResetControlPlaneEncryptionKeyName()
 	ResetDescription()
 	ResetDisableVpcPeering()
 	ResetDisplayName()
@@ -171,6 +183,46 @@ func (j *jsiiProxy_GoogleApigeeOrganization) AnalyticsRegionInput() *string {
 	_jsii_.Get(
 		j,
 		"analyticsRegionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApigeeOrganization) ApiConsumerDataEncryptionKeyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiConsumerDataEncryptionKeyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApigeeOrganization) ApiConsumerDataEncryptionKeyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiConsumerDataEncryptionKeyNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApigeeOrganization) ApiConsumerDataLocation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiConsumerDataLocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApigeeOrganization) ApiConsumerDataLocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiConsumerDataLocationInput",
 		&returns,
 	)
 	return returns
@@ -261,6 +313,26 @@ func (j *jsiiProxy_GoogleApigeeOrganization) ConstructNodeMetadata() *map[string
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApigeeOrganization) ControlPlaneEncryptionKeyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"controlPlaneEncryptionKeyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApigeeOrganization) ControlPlaneEncryptionKeyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"controlPlaneEncryptionKeyNameInput",
 		&returns,
 	)
 	return returns
@@ -617,7 +689,7 @@ func (j *jsiiProxy_GoogleApigeeOrganization) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_apigee_organization google_apigee_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_apigee_organization google_apigee_organization} Resource.
 func NewGoogleApigeeOrganization(scope constructs.Construct, id *string, config *GoogleApigeeOrganizationConfig) GoogleApigeeOrganization {
 	_init_.Initialize()
 
@@ -635,7 +707,7 @@ func NewGoogleApigeeOrganization(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_apigee_organization google_apigee_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_apigee_organization google_apigee_organization} Resource.
 func NewGoogleApigeeOrganization_Override(g GoogleApigeeOrganization, scope constructs.Construct, id *string, config *GoogleApigeeOrganizationConfig) {
 	_init_.Initialize()
 
@@ -653,6 +725,28 @@ func (j *jsiiProxy_GoogleApigeeOrganization)SetAnalyticsRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"analyticsRegion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleApigeeOrganization)SetApiConsumerDataEncryptionKeyName(val *string) {
+	if err := j.validateSetApiConsumerDataEncryptionKeyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"apiConsumerDataEncryptionKeyName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleApigeeOrganization)SetApiConsumerDataLocation(val *string) {
+	if err := j.validateSetApiConsumerDataLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"apiConsumerDataLocation",
 		val,
 	)
 }
@@ -686,6 +780,17 @@ func (j *jsiiProxy_GoogleApigeeOrganization)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleApigeeOrganization)SetControlPlaneEncryptionKeyName(val *string) {
+	if err := j.validateSetControlPlaneEncryptionKeyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"controlPlaneEncryptionKeyName",
 		val,
 	)
 }
@@ -1131,6 +1236,22 @@ func (g *jsiiProxy_GoogleApigeeOrganization) ResetAnalyticsRegion() {
 	)
 }
 
+func (g *jsiiProxy_GoogleApigeeOrganization) ResetApiConsumerDataEncryptionKeyName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetApiConsumerDataEncryptionKeyName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleApigeeOrganization) ResetApiConsumerDataLocation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetApiConsumerDataLocation",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleApigeeOrganization) ResetAuthorizedNetwork() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1143,6 +1264,14 @@ func (g *jsiiProxy_GoogleApigeeOrganization) ResetBillingType() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetBillingType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleApigeeOrganization) ResetControlPlaneEncryptionKeyName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetControlPlaneEncryptionKeyName",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/datastreamstream/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/datastream_stream google_datastream_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/datastream_stream google_datastream_stream}.
 type DatastreamStream interface {
 	cdktf.TerraformResource
 	BackfillAll() DatastreamStreamBackfillAllOutputReference
@@ -43,6 +43,7 @@ type DatastreamStream interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -88,6 +89,7 @@ type DatastreamStream interface {
 	StreamIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -315,6 +317,16 @@ func (j *jsiiProxy_DatastreamStream) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStream) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -550,6 +562,16 @@ func (j *jsiiProxy_DatastreamStream) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
+func (j *jsiiProxy_DatastreamStream) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatastreamStream) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -591,7 +613,7 @@ func (j *jsiiProxy_DatastreamStream) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/datastream_stream google_datastream_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/datastream_stream google_datastream_stream} Resource.
 func NewDatastreamStream(scope constructs.Construct, id *string, config *DatastreamStreamConfig) DatastreamStream {
 	_init_.Initialize()
 
@@ -609,7 +631,7 @@ func NewDatastreamStream(scope constructs.Construct, id *string, config *Datastr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/datastream_stream google_datastream_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/datastream_stream google_datastream_stream} Resource.
 func NewDatastreamStream_Override(d DatastreamStream, scope constructs.Construct, id *string, config *DatastreamStreamConfig) {
 	_init_.Initialize()
 

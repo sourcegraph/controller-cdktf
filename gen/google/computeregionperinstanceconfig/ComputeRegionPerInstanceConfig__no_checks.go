@@ -116,6 +116,10 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig) validateSetRegionInstanceGrou
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) validateSetRemoveInstanceOnDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionPerInstanceConfig) validateSetRemoveInstanceStateOnDestroyParameters(val interface{}) error {
 	return nil
 }

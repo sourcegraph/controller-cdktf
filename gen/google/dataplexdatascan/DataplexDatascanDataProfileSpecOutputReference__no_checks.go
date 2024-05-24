@@ -44,6 +44,18 @@ func (d *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) validateInter
 	return nil
 }
 
+func (d *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) validatePutExcludeFieldsParameters(value *DataplexDatascanDataProfileSpecExcludeFields) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) validatePutIncludeFieldsParameters(value *DataplexDatascanDataProfileSpecIncludeFields) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) validatePutPostScanActionsParameters(value *DataplexDatascanDataProfileSpecPostScanActions) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

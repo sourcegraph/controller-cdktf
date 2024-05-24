@@ -1,0 +1,6 @@
+package datagooglevmwareengineexternalaccessrule
+
+
+type DataGoogleVmwareengineExternalAccessRuleDestinationIpRanges struct {
+}
+

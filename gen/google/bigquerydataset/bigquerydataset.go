@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigquerydataset/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_dataset google_bigquery_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/bigquery_dataset google_bigquery_dataset}.
 type BigqueryDataset interface {
 	cdktf.TerraformResource
 	Access() BigqueryDatasetAccessList
@@ -51,7 +51,10 @@ type BigqueryDataset interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	Etag() *string
+	ExternalDatasetReference() BigqueryDatasetExternalDatasetReferenceOutputReference
+	ExternalDatasetReferenceInput() *BigqueryDatasetExternalDatasetReference
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -104,6 +107,7 @@ type BigqueryDataset interface {
 	StorageBillingModelInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -137,6 +141,7 @@ type BigqueryDataset interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAccess(value interface{})
 	PutDefaultEncryptionConfiguration(value *BigqueryDatasetDefaultEncryptionConfiguration)
+	PutExternalDatasetReference(value *BigqueryDatasetExternalDatasetReference)
 	PutTimeouts(value *BigqueryDatasetTimeouts)
 	ResetAccess()
 	ResetDefaultCollation()
@@ -145,6 +150,7 @@ type BigqueryDataset interface {
 	ResetDefaultTableExpirationMs()
 	ResetDeleteContentsOnDestroy()
 	ResetDescription()
+	ResetExternalDatasetReference()
 	ResetFriendlyName()
 	ResetId()
 	ResetIsCaseInsensitive()
@@ -392,11 +398,41 @@ func (j *jsiiProxy_BigqueryDataset) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryDataset) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryDataset) Etag() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"etag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDataset) ExternalDatasetReference() BigqueryDatasetExternalDatasetReferenceOutputReference {
+	var returns BigqueryDatasetExternalDatasetReferenceOutputReference
+	_jsii_.Get(
+		j,
+		"externalDatasetReference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDataset) ExternalDatasetReferenceInput() *BigqueryDatasetExternalDatasetReference {
+	var returns *BigqueryDatasetExternalDatasetReference
+	_jsii_.Get(
+		j,
+		"externalDatasetReferenceInput",
 		&returns,
 	)
 	return returns
@@ -672,6 +708,16 @@ func (j *jsiiProxy_BigqueryDataset) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryDataset) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryDataset) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -713,7 +759,7 @@ func (j *jsiiProxy_BigqueryDataset) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_dataset google_bigquery_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/bigquery_dataset google_bigquery_dataset} Resource.
 func NewBigqueryDataset(scope constructs.Construct, id *string, config *BigqueryDatasetConfig) BigqueryDataset {
 	_init_.Initialize()
 
@@ -731,7 +777,7 @@ func NewBigqueryDataset(scope constructs.Construct, id *string, config *Bigquery
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_dataset google_bigquery_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/bigquery_dataset google_bigquery_dataset} Resource.
 func NewBigqueryDataset_Override(b BigqueryDataset, scope constructs.Construct, id *string, config *BigqueryDatasetConfig) {
 	_init_.Initialize()
 
@@ -1252,6 +1298,17 @@ func (b *jsiiProxy_BigqueryDataset) PutDefaultEncryptionConfiguration(value *Big
 	)
 }
 
+func (b *jsiiProxy_BigqueryDataset) PutExternalDatasetReference(value *BigqueryDatasetExternalDatasetReference) {
+	if err := b.validatePutExternalDatasetReferenceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putExternalDatasetReference",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BigqueryDataset) PutTimeouts(value *BigqueryDatasetTimeouts) {
 	if err := b.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1315,6 +1372,14 @@ func (b *jsiiProxy_BigqueryDataset) ResetDescription() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryDataset) ResetExternalDatasetReference() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetExternalDatasetReference",
 		nil, // no parameters
 	)
 }

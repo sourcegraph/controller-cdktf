@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlerecaptchaenterprisekey/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_recaptcha_enterprise_key google_recaptcha_enterprise_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_recaptcha_enterprise_key google_recaptcha_enterprise_key}.
 type GoogleRecaptchaEnterpriseKey interface {
 	cdktf.TerraformResource
 	AndroidSettings() GoogleRecaptchaEnterpriseKeyAndroidSettingsOutputReference
@@ -34,6 +34,7 @@ type GoogleRecaptchaEnterpriseKey interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -72,6 +73,7 @@ type GoogleRecaptchaEnterpriseKey interface {
 	RawOverrides() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -80,6 +82,8 @@ type GoogleRecaptchaEnterpriseKey interface {
 	TestingOptionsInput() *GoogleRecaptchaEnterpriseKeyTestingOptions
 	Timeouts() GoogleRecaptchaEnterpriseKeyTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	WafSettings() GoogleRecaptchaEnterpriseKeyWafSettingsOutputReference
+	WafSettingsInput() *GoogleRecaptchaEnterpriseKeyWafSettings
 	WebSettings() GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference
 	WebSettingsInput() *GoogleRecaptchaEnterpriseKeyWebSettings
 	// Experimental.
@@ -111,6 +115,7 @@ type GoogleRecaptchaEnterpriseKey interface {
 	PutIosSettings(value *GoogleRecaptchaEnterpriseKeyIosSettings)
 	PutTestingOptions(value *GoogleRecaptchaEnterpriseKeyTestingOptions)
 	PutTimeouts(value *GoogleRecaptchaEnterpriseKeyTimeouts)
+	PutWafSettings(value *GoogleRecaptchaEnterpriseKeyWafSettings)
 	PutWebSettings(value *GoogleRecaptchaEnterpriseKeyWebSettings)
 	ResetAndroidSettings()
 	ResetId()
@@ -122,6 +127,7 @@ type GoogleRecaptchaEnterpriseKey interface {
 	ResetProject()
 	ResetTestingOptions()
 	ResetTimeouts()
+	ResetWafSettings()
 	ResetWebSettings()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -233,6 +239,16 @@ func (j *jsiiProxy_GoogleRecaptchaEnterpriseKey) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRecaptchaEnterpriseKey) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -418,6 +434,16 @@ func (j *jsiiProxy_GoogleRecaptchaEnterpriseKey) TerraformGeneratorMetadata() *c
 	return returns
 }
 
+func (j *jsiiProxy_GoogleRecaptchaEnterpriseKey) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleRecaptchaEnterpriseKey) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -478,6 +504,26 @@ func (j *jsiiProxy_GoogleRecaptchaEnterpriseKey) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleRecaptchaEnterpriseKey) WafSettings() GoogleRecaptchaEnterpriseKeyWafSettingsOutputReference {
+	var returns GoogleRecaptchaEnterpriseKeyWafSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"wafSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRecaptchaEnterpriseKey) WafSettingsInput() *GoogleRecaptchaEnterpriseKeyWafSettings {
+	var returns *GoogleRecaptchaEnterpriseKeyWafSettings
+	_jsii_.Get(
+		j,
+		"wafSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleRecaptchaEnterpriseKey) WebSettings() GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference {
 	var returns GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference
 	_jsii_.Get(
@@ -499,7 +545,7 @@ func (j *jsiiProxy_GoogleRecaptchaEnterpriseKey) WebSettingsInput() *GoogleRecap
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_recaptcha_enterprise_key google_recaptcha_enterprise_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_recaptcha_enterprise_key google_recaptcha_enterprise_key} Resource.
 func NewGoogleRecaptchaEnterpriseKey(scope constructs.Construct, id *string, config *GoogleRecaptchaEnterpriseKeyConfig) GoogleRecaptchaEnterpriseKey {
 	_init_.Initialize()
 
@@ -517,7 +563,7 @@ func NewGoogleRecaptchaEnterpriseKey(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_recaptcha_enterprise_key google_recaptcha_enterprise_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_recaptcha_enterprise_key google_recaptcha_enterprise_key} Resource.
 func NewGoogleRecaptchaEnterpriseKey_Override(g GoogleRecaptchaEnterpriseKey, scope constructs.Construct, id *string, config *GoogleRecaptchaEnterpriseKeyConfig) {
 	_init_.Initialize()
 
@@ -950,6 +996,17 @@ func (g *jsiiProxy_GoogleRecaptchaEnterpriseKey) PutTimeouts(value *GoogleRecapt
 	)
 }
 
+func (g *jsiiProxy_GoogleRecaptchaEnterpriseKey) PutWafSettings(value *GoogleRecaptchaEnterpriseKeyWafSettings) {
+	if err := g.validatePutWafSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putWafSettings",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleRecaptchaEnterpriseKey) PutWebSettings(value *GoogleRecaptchaEnterpriseKeyWebSettings) {
 	if err := g.validatePutWebSettingsParameters(value); err != nil {
 		panic(err)
@@ -1021,6 +1078,14 @@ func (g *jsiiProxy_GoogleRecaptchaEnterpriseKey) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRecaptchaEnterpriseKey) ResetWafSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWafSettings",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/vertexaiindex/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/vertex_ai_index google_vertex_ai_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/vertex_ai_index google_vertex_ai_index}.
 type VertexAiIndex interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -36,6 +36,7 @@ type VertexAiIndex interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -83,6 +84,7 @@ type VertexAiIndex interface {
 	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -248,6 +250,16 @@ func (j *jsiiProxy_VertexAiIndex) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiIndex) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -503,6 +515,16 @@ func (j *jsiiProxy_VertexAiIndex) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
+func (j *jsiiProxy_VertexAiIndex) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VertexAiIndex) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -554,7 +576,7 @@ func (j *jsiiProxy_VertexAiIndex) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/vertex_ai_index google_vertex_ai_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/vertex_ai_index google_vertex_ai_index} Resource.
 func NewVertexAiIndex(scope constructs.Construct, id *string, config *VertexAiIndexConfig) VertexAiIndex {
 	_init_.Initialize()
 
@@ -572,7 +594,7 @@ func NewVertexAiIndex(scope constructs.Construct, id *string, config *VertexAiIn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/vertex_ai_index google_vertex_ai_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/vertex_ai_index google_vertex_ai_index} Resource.
 func NewVertexAiIndex_Override(v VertexAiIndex, scope constructs.Construct, id *string, config *VertexAiIndexConfig) {
 	_init_.Initialize()
 

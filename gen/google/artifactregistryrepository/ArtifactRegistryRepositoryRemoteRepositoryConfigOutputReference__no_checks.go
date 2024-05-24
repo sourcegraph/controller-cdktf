@@ -44,6 +44,10 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 	return nil
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutAptRepositoryParameters(value *ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutDockerRepositoryParameters(value *ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository) error {
 	return nil
 }
@@ -60,6 +64,14 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 	return nil
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutUpstreamCredentialsParameters(value *ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials) error {
+	return nil
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutYumRepositoryParameters(value *ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -73,6 +85,10 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 }
 
 func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validateSetDisableUpstreamValidationParameters(val interface{}) error {
 	return nil
 }
 

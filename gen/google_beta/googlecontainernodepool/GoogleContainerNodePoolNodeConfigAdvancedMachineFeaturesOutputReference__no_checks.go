@@ -56,6 +56,10 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutpu
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference) validateSetEnableNestedVirtualizationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference) validateSetInternalValueParameters(val *GoogleContainerNodePoolNodeConfigAdvancedMachineFeatures) error {
 	return nil
 }

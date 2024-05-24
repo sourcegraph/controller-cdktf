@@ -60,6 +60,10 @@ func (g *jsiiProxy_GoogleBigqueryDataset) validatePutDefaultEncryptionConfigurat
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryDataset) validatePutExternalDatasetReferenceParameters(value *GoogleBigqueryDatasetExternalDatasetReference) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryDataset) validatePutTimeoutsParameters(value *GoogleBigqueryDatasetTimeouts) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlegkeonpremvmwarenodepool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_gkeonprem_vmware_node_pool google_gkeonprem_vmware_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_gkeonprem_vmware_node_pool google_gkeonprem_vmware_node_pool}.
 type GoogleGkeonpremVmwareNodePool interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -38,6 +38,7 @@ type GoogleGkeonpremVmwareNodePool interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveAnnotations() cdktf.StringMap
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -271,6 +272,16 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareNodePool) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePool) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
 		&returns,
 	)
 	return returns
@@ -597,7 +608,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareNodePool) VmwareClusterInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_gkeonprem_vmware_node_pool google_gkeonprem_vmware_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_gkeonprem_vmware_node_pool google_gkeonprem_vmware_node_pool} Resource.
 func NewGoogleGkeonpremVmwareNodePool(scope constructs.Construct, id *string, config *GoogleGkeonpremVmwareNodePoolConfig) GoogleGkeonpremVmwareNodePool {
 	_init_.Initialize()
 
@@ -615,7 +626,7 @@ func NewGoogleGkeonpremVmwareNodePool(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_gkeonprem_vmware_node_pool google_gkeonprem_vmware_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_gkeonprem_vmware_node_pool google_gkeonprem_vmware_node_pool} Resource.
 func NewGoogleGkeonpremVmwareNodePool_Override(g GoogleGkeonpremVmwareNodePool, scope constructs.Construct, id *string, config *GoogleGkeonpremVmwareNodePoolConfig) {
 	_init_.Initialize()
 

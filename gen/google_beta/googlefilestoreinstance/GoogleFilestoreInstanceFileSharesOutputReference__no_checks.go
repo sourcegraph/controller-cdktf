@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference) validateSetSourceBackupParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

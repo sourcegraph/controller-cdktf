@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputepacketmirroring/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_packet_mirroring google_compute_packet_mirroring}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_packet_mirroring google_compute_packet_mirroring}.
 type GoogleComputePacketMirroring interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -522,7 +522,7 @@ func (j *jsiiProxy_GoogleComputePacketMirroring) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_packet_mirroring google_compute_packet_mirroring} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_packet_mirroring google_compute_packet_mirroring} Resource.
 func NewGoogleComputePacketMirroring(scope constructs.Construct, id *string, config *GoogleComputePacketMirroringConfig) GoogleComputePacketMirroring {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewGoogleComputePacketMirroring(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_packet_mirroring google_compute_packet_mirroring} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_packet_mirroring google_compute_packet_mirroring} Resource.
 func NewGoogleComputePacketMirroring_Override(g GoogleComputePacketMirroring, scope constructs.Construct, id *string, config *GoogleComputePacketMirroringConfig) {
 	_init_.Initialize()
 

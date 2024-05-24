@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleOrgPolicyPolicy) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func (g *jsiiProxy_GoogleOrgPolicyPolicy) validatePutDryRunSpecParameters(value *GoogleOrgPolicyPolicyDryRunSpec) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOrgPolicyPolicy) validatePutSpecParameters(value *GoogleOrgPolicyPolicySpec) error {
 	return nil
 }

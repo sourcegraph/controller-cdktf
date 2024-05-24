@@ -21,50 +21,57 @@ type GoogleFilestoreInstanceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// file_shares block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_filestore_instance#file_shares GoogleFilestoreInstance#file_shares}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_filestore_instance#file_shares GoogleFilestoreInstance#file_shares}
 	FileShares *GoogleFilestoreInstanceFileShares `field:"required" json:"fileShares" yaml:"fileShares"`
 	// The resource name of the instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_filestore_instance#name GoogleFilestoreInstance#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_filestore_instance#name GoogleFilestoreInstance#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// networks block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_filestore_instance#networks GoogleFilestoreInstance#networks}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_filestore_instance#networks GoogleFilestoreInstance#networks}
 	Networks interface{} `field:"required" json:"networks" yaml:"networks"`
-	// The service tier of the instance. Possible values include: STANDARD, PREMIUM, BASIC_HDD, BASIC_SSD, HIGH_SCALE_SSD and ENTERPRISE.
+	// The service tier of the instance. Possible values include: STANDARD, PREMIUM, BASIC_HDD, BASIC_SSD, HIGH_SCALE_SSD, ZONAL, REGIONAL and ENTERPRISE.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_filestore_instance#tier GoogleFilestoreInstance#tier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_filestore_instance#tier GoogleFilestoreInstance#tier}
 	Tier *string `field:"required" json:"tier" yaml:"tier"`
 	// A description of the instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_filestore_instance#description GoogleFilestoreInstance#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_filestore_instance#description GoogleFilestoreInstance#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_filestore_instance#id GoogleFilestoreInstance#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_filestore_instance#id GoogleFilestoreInstance#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// KMS key name used for data encryption.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_filestore_instance#kms_key_name GoogleFilestoreInstance#kms_key_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_filestore_instance#kms_key_name GoogleFilestoreInstance#kms_key_name}
 	KmsKeyName *string `field:"optional" json:"kmsKeyName" yaml:"kmsKeyName"`
 	// Resource labels to represent user-provided metadata.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_filestore_instance#labels GoogleFilestoreInstance#labels}
+	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_filestore_instance#labels GoogleFilestoreInstance#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// The name of the location of the instance. This can be a region for ENTERPRISE tier instances.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_filestore_instance#location GoogleFilestoreInstance#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_filestore_instance#location GoogleFilestoreInstance#location}
 	Location *string `field:"optional" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_filestore_instance#project GoogleFilestoreInstance#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_filestore_instance#project GoogleFilestoreInstance#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
+	// Either NFSv3, for using NFS version 3 as file sharing protocol, or NFSv4.1, for using NFS version 4.1 as file sharing protocol. NFSv4.1 can be used with HIGH_SCALE_SSD, ZONAL, REGIONAL and ENTERPRISE. The default is NFSv3. Default value: "NFS_V3" Possible values: ["NFS_V3", "NFS_V4_1"].
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_filestore_instance#protocol GoogleFilestoreInstance#protocol}
+	Protocol *string `field:"optional" json:"protocol" yaml:"protocol"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_filestore_instance#timeouts GoogleFilestoreInstance#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_filestore_instance#timeouts GoogleFilestoreInstance#timeouts}
 	Timeouts *GoogleFilestoreInstanceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// The name of the Filestore zone of the instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_filestore_instance#zone GoogleFilestoreInstance#zone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_filestore_instance#zone GoogleFilestoreInstance#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
 

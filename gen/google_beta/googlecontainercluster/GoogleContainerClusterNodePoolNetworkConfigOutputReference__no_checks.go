@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) validatePutNetworkPerformanceConfigParameters(value *GoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) validatePutPodCidrOverprovisionConfigParameters(value *GoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig) error {
 	return nil
 }

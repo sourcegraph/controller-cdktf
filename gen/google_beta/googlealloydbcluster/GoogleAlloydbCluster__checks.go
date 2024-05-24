@@ -155,6 +155,61 @@ func (g *jsiiProxy_GoogleAlloydbCluster) validatePutInitialUserParameters(value 
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAlloydbCluster) validatePutMaintenanceUpdatePolicyParameters(value *GoogleAlloydbClusterMaintenanceUpdatePolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAlloydbCluster) validatePutNetworkConfigParameters(value *GoogleAlloydbClusterNetworkConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAlloydbCluster) validatePutRestoreBackupSourceParameters(value *GoogleAlloydbClusterRestoreBackupSource) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAlloydbCluster) validatePutRestoreContinuousBackupSourceParameters(value *GoogleAlloydbClusterRestoreContinuousBackupSource) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAlloydbCluster) validatePutSecondaryConfigParameters(value *GoogleAlloydbClusterSecondaryConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAlloydbCluster) validatePutTimeoutsParameters(value *GoogleAlloydbClusterTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -190,7 +245,23 @@ func validateGoogleAlloydbCluster_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAlloydbCluster) validateSetAnnotationsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAlloydbCluster) validateSetClusterIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) validateSetClusterTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -288,7 +359,31 @@ func (j *jsiiProxy_GoogleAlloydbCluster) validateSetCountParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAlloydbCluster) validateSetDatabaseVersionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) validateSetDeletionPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAlloydbCluster) validateSetDisplayNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) validateSetEtagParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

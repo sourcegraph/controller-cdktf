@@ -24,6 +24,10 @@ func validateGoogleBetaProvider_IsTerraformProviderParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) validateSetAddTerraformAttributionLabelParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) validateSetBatchingParameters(val *GoogleBetaProviderBatching) error {
 	return nil
 }

@@ -104,6 +104,10 @@ func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) validateSetJsonExtensionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) validateSetMaxBadRecordsParameters(val *float64) error {
 	return nil
 }

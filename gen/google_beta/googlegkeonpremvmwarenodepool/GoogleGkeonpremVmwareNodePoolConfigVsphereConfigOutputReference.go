@@ -26,11 +26,17 @@ type GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Datastore() *string
+	SetDatastore(val *string)
+	DatastoreInput() *string
 	// Experimental.
 	Fqn() *string
+	HostGroups() *[]*string
+	SetHostGroups(val *[]*string)
+	HostGroupsInput() *[]*string
 	InternalValue() *GoogleGkeonpremVmwareNodePoolConfigVsphereConfig
 	SetInternalValue(val *GoogleGkeonpremVmwareNodePoolConfigVsphereConfig)
 	Tags() GoogleGkeonpremVmwareNodePoolConfigVsphereConfigTagsList
+	TagsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -63,6 +69,10 @@ type GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutTags(value interface{})
+	ResetDatastore()
+	ResetHostGroups()
+	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -118,11 +128,41 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) DatastoreInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"datastoreInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) HostGroups() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"hostGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) HostGroupsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"hostGroupsInput",
 		&returns,
 	)
 	return returns
@@ -143,6 +183,16 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReferen
 	_jsii_.Get(
 		j,
 		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) TagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tagsInput",
 		&returns,
 	)
 	return returns
@@ -169,29 +219,29 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReferen
 }
 
 
-func NewGoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference {
+func NewGoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewGoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewGoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewGoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference_Override(g GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference_Override(g GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
 }
@@ -214,6 +264,28 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReferen
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference)SetDatastore(val *string) {
+	if err := j.validateSetDatastoreParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"datastore",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference)SetHostGroups(val *[]*string) {
+	if err := j.validateSetHostGroupsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hostGroups",
 		val,
 	)
 }
@@ -435,6 +507,41 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReferen
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) PutTags(value interface{}) {
+	if err := g.validatePutTagsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTags",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) ResetDatastore() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDatastore",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) ResetHostGroups() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHostGroups",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) ResetTags() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTags",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

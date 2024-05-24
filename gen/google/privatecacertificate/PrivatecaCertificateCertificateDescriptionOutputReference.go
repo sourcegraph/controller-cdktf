@@ -23,7 +23,6 @@ type PrivatecaCertificateCertificateDescriptionOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	ConfigValues() PrivatecaCertificateCertificateDescriptionConfigValuesList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -130,16 +129,6 @@ func (j *jsiiProxy_PrivatecaCertificateCertificateDescriptionOutputReference) Co
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PrivatecaCertificateCertificateDescriptionOutputReference) ConfigValues() PrivatecaCertificateCertificateDescriptionConfigValuesList {
-	var returns PrivatecaCertificateCertificateDescriptionConfigValuesList
-	_jsii_.Get(
-		j,
-		"configValues",
 		&returns,
 	)
 	return returns

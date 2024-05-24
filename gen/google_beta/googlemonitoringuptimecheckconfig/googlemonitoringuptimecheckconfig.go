@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlemonitoringuptimecheckconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_uptime_check_config google_monitoring_uptime_check_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_monitoring_uptime_check_config google_monitoring_uptime_check_config}.
 type GoogleMonitoringUptimeCheckConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -79,6 +79,8 @@ type GoogleMonitoringUptimeCheckConfig interface {
 	SelectedRegions() *[]*string
 	SetSelectedRegions(val *[]*string)
 	SelectedRegionsInput() *[]*string
+	SyntheticMonitor() GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference
+	SyntheticMonitorInput() *GoogleMonitoringUptimeCheckConfigSyntheticMonitor
 	TcpCheck() GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference
 	TcpCheckInput() *GoogleMonitoringUptimeCheckConfigTcpCheck
 	// Experimental.
@@ -93,6 +95,9 @@ type GoogleMonitoringUptimeCheckConfig interface {
 	Timeouts() GoogleMonitoringUptimeCheckConfigTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UptimeCheckId() *string
+	UserLabels() *map[string]*string
+	SetUserLabels(val *map[string]*string)
+	UserLabelsInput() *map[string]*string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -122,6 +127,7 @@ type GoogleMonitoringUptimeCheckConfig interface {
 	PutHttpCheck(value *GoogleMonitoringUptimeCheckConfigHttpCheck)
 	PutMonitoredResource(value *GoogleMonitoringUptimeCheckConfigMonitoredResource)
 	PutResourceGroup(value *GoogleMonitoringUptimeCheckConfigResourceGroup)
+	PutSyntheticMonitor(value *GoogleMonitoringUptimeCheckConfigSyntheticMonitor)
 	PutTcpCheck(value *GoogleMonitoringUptimeCheckConfigTcpCheck)
 	PutTimeouts(value *GoogleMonitoringUptimeCheckConfigTimeouts)
 	ResetCheckerType()
@@ -136,8 +142,10 @@ type GoogleMonitoringUptimeCheckConfig interface {
 	ResetProject()
 	ResetResourceGroup()
 	ResetSelectedRegions()
+	ResetSyntheticMonitor()
 	ResetTcpCheck()
 	ResetTimeouts()
+	ResetUserLabels()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -493,6 +501,26 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) SelectedRegionsInput() *[]
 	return returns
 }
 
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) SyntheticMonitor() GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference {
+	var returns GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference
+	_jsii_.Get(
+		j,
+		"syntheticMonitor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) SyntheticMonitorInput() *GoogleMonitoringUptimeCheckConfigSyntheticMonitor {
+	var returns *GoogleMonitoringUptimeCheckConfigSyntheticMonitor
+	_jsii_.Get(
+		j,
+		"syntheticMonitorInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) TcpCheck() GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference {
 	var returns GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference
 	_jsii_.Get(
@@ -593,8 +621,28 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) UptimeCheckId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) UserLabels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"userLabels",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) UserLabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"userLabelsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
 func NewGoogleMonitoringUptimeCheckConfig(scope constructs.Construct, id *string, config *GoogleMonitoringUptimeCheckConfigConfig) GoogleMonitoringUptimeCheckConfig {
 	_init_.Initialize()
 
@@ -612,7 +660,7 @@ func NewGoogleMonitoringUptimeCheckConfig(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
 func NewGoogleMonitoringUptimeCheckConfig_Override(g GoogleMonitoringUptimeCheckConfig, scope constructs.Construct, id *string, config *GoogleMonitoringUptimeCheckConfigConfig) {
 	_init_.Initialize()
 
@@ -764,6 +812,17 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig)SetTimeout(val *string) {
 	_jsii_.Set(
 		j,
 		"timeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig)SetUserLabels(val *map[string]*string) {
+	if err := j.validateSetUserLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userLabels",
 		val,
 	)
 }
@@ -1078,6 +1137,17 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) PutResourceGroup(value *Go
 	)
 }
 
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) PutSyntheticMonitor(value *GoogleMonitoringUptimeCheckConfigSyntheticMonitor) {
+	if err := g.validatePutSyntheticMonitorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSyntheticMonitor",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) PutTcpCheck(value *GoogleMonitoringUptimeCheckConfigTcpCheck) {
 	if err := g.validatePutTcpCheckParameters(value); err != nil {
 		panic(err)
@@ -1180,6 +1250,14 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) ResetSelectedRegions() {
 	)
 }
 
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) ResetSyntheticMonitor() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSyntheticMonitor",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) ResetTcpCheck() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1192,6 +1270,14 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) ResetUserLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUserLabels",
 		nil, // no parameters
 	)
 }

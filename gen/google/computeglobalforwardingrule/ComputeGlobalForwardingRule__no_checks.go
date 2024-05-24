@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeGlobalForwardingRule) validatePutMetadataFiltersParame
 	return nil
 }
 
+func (c *jsiiProxy_ComputeGlobalForwardingRule) validatePutServiceDirectoryRegistrationsParameters(value *ComputeGlobalForwardingRuleServiceDirectoryRegistrations) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeGlobalForwardingRule) validatePutTimeoutsParameters(value *ComputeGlobalForwardingRuleTimeouts) error {
 	return nil
 }

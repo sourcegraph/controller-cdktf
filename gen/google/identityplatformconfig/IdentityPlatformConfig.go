@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/identityplatformconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/identity_platform_config google_identity_platform_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/identity_platform_config google_identity_platform_config}.
 type IdentityPlatformConfig interface {
 	cdktf.TerraformResource
 	AuthorizedDomains() *[]*string
@@ -22,6 +22,8 @@ type IdentityPlatformConfig interface {
 	BlockingFunctionsInput() *IdentityPlatformConfigBlockingFunctions
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Client() IdentityPlatformConfigClientOutputReference
+	ClientInput() *IdentityPlatformConfigClient
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -51,6 +53,12 @@ type IdentityPlatformConfig interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Mfa() IdentityPlatformConfigMfaOutputReference
+	MfaInput() *IdentityPlatformConfigMfa
+	Monitoring() IdentityPlatformConfigMonitoringOutputReference
+	MonitoringInput() *IdentityPlatformConfigMonitoring
+	MultiTenant() IdentityPlatformConfigMultiTenantOutputReference
+	MultiTenantInput() *IdentityPlatformConfigMultiTenant
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -69,6 +77,10 @@ type IdentityPlatformConfig interface {
 	QuotaInput() *IdentityPlatformConfigQuota
 	// Experimental.
 	RawOverrides() interface{}
+	SignIn() IdentityPlatformConfigSignInOutputReference
+	SignInInput() *IdentityPlatformConfigSignIn
+	SmsRegionConfig() IdentityPlatformConfigSmsRegionConfigOutputReference
+	SmsRegionConfigInput() *IdentityPlatformConfigSmsRegionConfig
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -103,17 +115,29 @@ type IdentityPlatformConfig interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutBlockingFunctions(value *IdentityPlatformConfigBlockingFunctions)
+	PutClient(value *IdentityPlatformConfigClient)
+	PutMfa(value *IdentityPlatformConfigMfa)
+	PutMonitoring(value *IdentityPlatformConfigMonitoring)
+	PutMultiTenant(value *IdentityPlatformConfigMultiTenant)
 	PutQuota(value *IdentityPlatformConfigQuota)
+	PutSignIn(value *IdentityPlatformConfigSignIn)
+	PutSmsRegionConfig(value *IdentityPlatformConfigSmsRegionConfig)
 	PutTimeouts(value *IdentityPlatformConfigTimeouts)
 	ResetAuthorizedDomains()
 	ResetAutodeleteAnonymousUsers()
 	ResetBlockingFunctions()
+	ResetClient()
 	ResetId()
+	ResetMfa()
+	ResetMonitoring()
+	ResetMultiTenant()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetQuota()
+	ResetSignIn()
+	ResetSmsRegionConfig()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -195,6 +219,26 @@ func (j *jsiiProxy_IdentityPlatformConfig) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityPlatformConfig) Client() IdentityPlatformConfigClientOutputReference {
+	var returns IdentityPlatformConfigClientOutputReference
+	_jsii_.Get(
+		j,
+		"client",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityPlatformConfig) ClientInput() *IdentityPlatformConfigClient {
+	var returns *IdentityPlatformConfigClient
+	_jsii_.Get(
+		j,
+		"clientInput",
 		&returns,
 	)
 	return returns
@@ -300,6 +344,66 @@ func (j *jsiiProxy_IdentityPlatformConfig) Lifecycle() *cdktf.TerraformResourceL
 	return returns
 }
 
+func (j *jsiiProxy_IdentityPlatformConfig) Mfa() IdentityPlatformConfigMfaOutputReference {
+	var returns IdentityPlatformConfigMfaOutputReference
+	_jsii_.Get(
+		j,
+		"mfa",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityPlatformConfig) MfaInput() *IdentityPlatformConfigMfa {
+	var returns *IdentityPlatformConfigMfa
+	_jsii_.Get(
+		j,
+		"mfaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityPlatformConfig) Monitoring() IdentityPlatformConfigMonitoringOutputReference {
+	var returns IdentityPlatformConfigMonitoringOutputReference
+	_jsii_.Get(
+		j,
+		"monitoring",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityPlatformConfig) MonitoringInput() *IdentityPlatformConfigMonitoring {
+	var returns *IdentityPlatformConfigMonitoring
+	_jsii_.Get(
+		j,
+		"monitoringInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityPlatformConfig) MultiTenant() IdentityPlatformConfigMultiTenantOutputReference {
+	var returns IdentityPlatformConfigMultiTenantOutputReference
+	_jsii_.Get(
+		j,
+		"multiTenant",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityPlatformConfig) MultiTenantInput() *IdentityPlatformConfigMultiTenant {
+	var returns *IdentityPlatformConfigMultiTenant
+	_jsii_.Get(
+		j,
+		"multiTenantInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IdentityPlatformConfig) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -390,6 +494,46 @@ func (j *jsiiProxy_IdentityPlatformConfig) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IdentityPlatformConfig) SignIn() IdentityPlatformConfigSignInOutputReference {
+	var returns IdentityPlatformConfigSignInOutputReference
+	_jsii_.Get(
+		j,
+		"signIn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityPlatformConfig) SignInInput() *IdentityPlatformConfigSignIn {
+	var returns *IdentityPlatformConfigSignIn
+	_jsii_.Get(
+		j,
+		"signInInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityPlatformConfig) SmsRegionConfig() IdentityPlatformConfigSmsRegionConfigOutputReference {
+	var returns IdentityPlatformConfigSmsRegionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"smsRegionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityPlatformConfig) SmsRegionConfigInput() *IdentityPlatformConfigSmsRegionConfig {
+	var returns *IdentityPlatformConfigSmsRegionConfig
+	_jsii_.Get(
+		j,
+		"smsRegionConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IdentityPlatformConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -441,7 +585,7 @@ func (j *jsiiProxy_IdentityPlatformConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/identity_platform_config google_identity_platform_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/identity_platform_config google_identity_platform_config} Resource.
 func NewIdentityPlatformConfig(scope constructs.Construct, id *string, config *IdentityPlatformConfigConfig) IdentityPlatformConfig {
 	_init_.Initialize()
 
@@ -459,7 +603,7 @@ func NewIdentityPlatformConfig(scope constructs.Construct, id *string, config *I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/identity_platform_config google_identity_platform_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/identity_platform_config google_identity_platform_config} Resource.
 func NewIdentityPlatformConfig_Override(i IdentityPlatformConfig, scope constructs.Construct, id *string, config *IdentityPlatformConfigConfig) {
 	_init_.Initialize()
 
@@ -859,6 +1003,50 @@ func (i *jsiiProxy_IdentityPlatformConfig) PutBlockingFunctions(value *IdentityP
 	)
 }
 
+func (i *jsiiProxy_IdentityPlatformConfig) PutClient(value *IdentityPlatformConfigClient) {
+	if err := i.validatePutClientParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putClient",
+		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_IdentityPlatformConfig) PutMfa(value *IdentityPlatformConfigMfa) {
+	if err := i.validatePutMfaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putMfa",
+		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_IdentityPlatformConfig) PutMonitoring(value *IdentityPlatformConfigMonitoring) {
+	if err := i.validatePutMonitoringParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putMonitoring",
+		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_IdentityPlatformConfig) PutMultiTenant(value *IdentityPlatformConfigMultiTenant) {
+	if err := i.validatePutMultiTenantParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putMultiTenant",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IdentityPlatformConfig) PutQuota(value *IdentityPlatformConfigQuota) {
 	if err := i.validatePutQuotaParameters(value); err != nil {
 		panic(err)
@@ -866,6 +1054,28 @@ func (i *jsiiProxy_IdentityPlatformConfig) PutQuota(value *IdentityPlatformConfi
 	_jsii_.InvokeVoid(
 		i,
 		"putQuota",
+		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_IdentityPlatformConfig) PutSignIn(value *IdentityPlatformConfigSignIn) {
+	if err := i.validatePutSignInParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putSignIn",
+		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_IdentityPlatformConfig) PutSmsRegionConfig(value *IdentityPlatformConfigSmsRegionConfig) {
+	if err := i.validatePutSmsRegionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putSmsRegionConfig",
 		[]interface{}{value},
 	)
 }
@@ -905,10 +1115,42 @@ func (i *jsiiProxy_IdentityPlatformConfig) ResetBlockingFunctions() {
 	)
 }
 
+func (i *jsiiProxy_IdentityPlatformConfig) ResetClient() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetClient",
+		nil, // no parameters
+	)
+}
+
 func (i *jsiiProxy_IdentityPlatformConfig) ResetId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityPlatformConfig) ResetMfa() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetMfa",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityPlatformConfig) ResetMonitoring() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetMonitoring",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityPlatformConfig) ResetMultiTenant() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetMultiTenant",
 		nil, // no parameters
 	)
 }
@@ -933,6 +1175,22 @@ func (i *jsiiProxy_IdentityPlatformConfig) ResetQuota() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetQuota",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityPlatformConfig) ResetSignIn() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetSignIn",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityPlatformConfig) ResetSmsRegionConfig() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetSmsRegionConfig",
 		nil, // no parameters
 	)
 }

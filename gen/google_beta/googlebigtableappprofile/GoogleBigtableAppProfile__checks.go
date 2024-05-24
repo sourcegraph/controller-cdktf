@@ -122,6 +122,17 @@ func (g *jsiiProxy_GoogleBigtableAppProfile) validatePutSingleClusterRoutingPara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigtableAppProfile) validatePutStandardIsolationParameters(value *GoogleBigtableAppProfileStandardIsolation) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigtableAppProfile) validatePutTimeoutsParameters(value *GoogleBigtableAppProfileTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

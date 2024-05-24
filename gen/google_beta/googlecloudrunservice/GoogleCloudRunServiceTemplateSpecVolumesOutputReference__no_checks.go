@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecVolumesOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecVolumesOutputReference) validatePutCsiParameters(value *GoogleCloudRunServiceTemplateSpecVolumesCsi) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecVolumesOutputReference) validatePutEmptyDirParameters(value *GoogleCloudRunServiceTemplateSpecVolumesEmptyDir) error {
 	return nil
 }

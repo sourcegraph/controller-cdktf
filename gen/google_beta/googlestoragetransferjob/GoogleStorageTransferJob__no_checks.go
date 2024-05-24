@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleStorageTransferJob) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageTransferJob) validatePutEventStreamParameters(value *GoogleStorageTransferJobEventStream) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageTransferJob) validatePutNotificationConfigParameters(value *GoogleStorageTransferJobNotificationConfig) error {
 	return nil
 }
@@ -93,6 +97,10 @@ func (j *jsiiProxy_GoogleStorageTransferJob) validateSetIdParameters(val *string
 }
 
 func (j *jsiiProxy_GoogleStorageTransferJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJob) validateSetNameParameters(val *string) error {
 	return nil
 }
 

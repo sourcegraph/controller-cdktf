@@ -92,7 +92,15 @@ func (c *jsiiProxy_ContainerCluster) validatePutEnableK8SBetaApisParameters(valu
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutFleetParameters(value *ContainerClusterFleet) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutGatewayApiConfigParameters(value *ContainerClusterGatewayApiConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerCluster) validatePutIdentityServiceConfigParameters(value *ContainerClusterIdentityServiceConfig) error {
 	return nil
 }
 
@@ -133,6 +141,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutNodeConfigParameters(value *Cont
 }
 
 func (c *jsiiProxy_ContainerCluster) validatePutNodePoolParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerCluster) validatePutNodePoolAutoConfigParameters(value *ContainerClusterNodePoolAutoConfig) error {
 	return nil
 }
 
@@ -212,6 +224,10 @@ func (j *jsiiProxy_ContainerCluster) validateSetDefaultMaxPodsPerNodeParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ContainerCluster) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerCluster) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -220,7 +236,7 @@ func (j *jsiiProxy_ContainerCluster) validateSetEnableAutopilotParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_ContainerCluster) validateSetEnableBinaryAuthorizationParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerCluster) validateSetEnableCiliumClusterwideNetworkPolicyParameters(val interface{}) error {
 	return nil
 }
 

@@ -84,7 +84,15 @@ func (j *jsiiProxy_GoogleDataformRepository) validateSetCountParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataformRepository) validateSetDisplayNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataformRepository) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataformRepository) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }
 
@@ -93,6 +101,10 @@ func (j *jsiiProxy_GoogleDataformRepository) validateSetLifecycleParameters(val 
 }
 
 func (j *jsiiProxy_GoogleDataformRepository) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataformRepository) validateSetNpmrcEnvironmentVariablesSecretVersionParameters(val *string) error {
 	return nil
 }
 
@@ -105,6 +117,10 @@ func (j *jsiiProxy_GoogleDataformRepository) validateSetProvisionersParameters(v
 }
 
 func (j *jsiiProxy_GoogleDataformRepository) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataformRepository) validateSetServiceAccountParameters(val *string) error {
 	return nil
 }
 

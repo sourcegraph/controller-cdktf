@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	return nil
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validatePutBoostConfigsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validatePutConfidentialInstanceConfigParameters(value *GoogleWorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfig) error {
 	return nil
 }
@@ -76,6 +80,14 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetDisableSshParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetEnableNestedVirtualizationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetInternalValueParameters(val *GoogleWorkstationsWorkstationConfigHostGceInstance) error {
 	return nil
 }
@@ -89,6 +101,10 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 }
 
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetServiceAccountParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetServiceAccountScopesParameters(val *[]*string) error {
 	return nil
 }
 

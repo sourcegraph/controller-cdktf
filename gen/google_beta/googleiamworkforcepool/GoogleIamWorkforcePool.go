@@ -9,9 +9,11 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleiamworkforcepool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iam_workforce_pool google_iam_workforce_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_iam_workforce_pool google_iam_workforce_pool}.
 type GoogleIamWorkforcePool interface {
 	cdktf.TerraformResource
+	AccessRestrictions() GoogleIamWorkforcePoolAccessRestrictionsOutputReference
+	AccessRestrictionsInput() *GoogleIamWorkforcePoolAccessRestrictions
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -111,7 +113,9 @@ type GoogleIamWorkforcePool interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAccessRestrictions(value *GoogleIamWorkforcePoolAccessRestrictions)
 	PutTimeouts(value *GoogleIamWorkforcePoolTimeouts)
+	ResetAccessRestrictions()
 	ResetDescription()
 	ResetDisabled()
 	ResetDisplayName()
@@ -134,6 +138,26 @@ type GoogleIamWorkforcePool interface {
 // The jsii proxy struct for GoogleIamWorkforcePool
 type jsiiProxy_GoogleIamWorkforcePool struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleIamWorkforcePool) AccessRestrictions() GoogleIamWorkforcePoolAccessRestrictionsOutputReference {
+	var returns GoogleIamWorkforcePoolAccessRestrictionsOutputReference
+	_jsii_.Get(
+		j,
+		"accessRestrictions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIamWorkforcePool) AccessRestrictionsInput() *GoogleIamWorkforcePoolAccessRestrictions {
+	var returns *GoogleIamWorkforcePoolAccessRestrictions
+	_jsii_.Get(
+		j,
+		"accessRestrictionsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleIamWorkforcePool) CdktfStack() cdktf.TerraformStack {
@@ -497,7 +521,7 @@ func (j *jsiiProxy_GoogleIamWorkforcePool) WorkforcePoolIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iam_workforce_pool google_iam_workforce_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_iam_workforce_pool google_iam_workforce_pool} Resource.
 func NewGoogleIamWorkforcePool(scope constructs.Construct, id *string, config *GoogleIamWorkforcePoolConfig) GoogleIamWorkforcePool {
 	_init_.Initialize()
 
@@ -515,7 +539,7 @@ func NewGoogleIamWorkforcePool(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iam_workforce_pool google_iam_workforce_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_iam_workforce_pool google_iam_workforce_pool} Resource.
 func NewGoogleIamWorkforcePool_Override(g GoogleIamWorkforcePool, scope constructs.Construct, id *string, config *GoogleIamWorkforcePoolConfig) {
 	_init_.Initialize()
 
@@ -948,6 +972,17 @@ func (g *jsiiProxy_GoogleIamWorkforcePool) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (g *jsiiProxy_GoogleIamWorkforcePool) PutAccessRestrictions(value *GoogleIamWorkforcePoolAccessRestrictions) {
+	if err := g.validatePutAccessRestrictionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAccessRestrictions",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleIamWorkforcePool) PutTimeouts(value *GoogleIamWorkforcePoolTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -956,6 +991,14 @@ func (g *jsiiProxy_GoogleIamWorkforcePool) PutTimeouts(value *GoogleIamWorkforce
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleIamWorkforcePool) ResetAccessRestrictions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAccessRestrictions",
+		nil, // no parameters
 	)
 }
 

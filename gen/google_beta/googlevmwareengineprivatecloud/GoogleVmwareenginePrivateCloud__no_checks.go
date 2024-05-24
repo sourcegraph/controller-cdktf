@@ -112,6 +112,10 @@ func (j *jsiiProxy_GoogleVmwareenginePrivateCloud) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_GoogleVmwareenginePrivateCloud) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleVmwareenginePrivateCloudParameters(scope constructs.Construct, id *string, config *GoogleVmwareenginePrivateCloudConfig) error {
 	return nil
 }

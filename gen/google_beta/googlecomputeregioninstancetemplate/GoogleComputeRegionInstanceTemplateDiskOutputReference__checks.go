@@ -316,6 +316,22 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference) validateSetProvisionedIopsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference) validateSetResourceManagerTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference) validateSetResourcePoliciesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

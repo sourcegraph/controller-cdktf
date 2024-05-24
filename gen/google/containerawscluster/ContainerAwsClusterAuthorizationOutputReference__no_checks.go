@@ -44,6 +44,10 @@ func (c *jsiiProxy_ContainerAwsClusterAuthorizationOutputReference) validateInte
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAwsClusterAuthorizationOutputReference) validatePutAdminGroupsParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAwsClusterAuthorizationOutputReference) validatePutAdminUsersParameters(value interface{}) error {
 	return nil
 }

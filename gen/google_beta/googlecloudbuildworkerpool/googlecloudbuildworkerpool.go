@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudbuildworkerpool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuild_worker_pool google_cloudbuild_worker_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_cloudbuild_worker_pool google_cloudbuild_worker_pool}.
 type GoogleCloudbuildWorkerPool interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -36,6 +36,7 @@ type GoogleCloudbuildWorkerPool interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveAnnotations() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -245,6 +246,16 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPool) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudbuildWorkerPool) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
 		&returns,
 	)
 	return returns
@@ -531,7 +542,7 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPool) WorkerConfigInput() *GoogleCloudb
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource.
 func NewGoogleCloudbuildWorkerPool(scope constructs.Construct, id *string, config *GoogleCloudbuildWorkerPoolConfig) GoogleCloudbuildWorkerPool {
 	_init_.Initialize()
 
@@ -549,7 +560,7 @@ func NewGoogleCloudbuildWorkerPool(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource.
 func NewGoogleCloudbuildWorkerPool_Override(g GoogleCloudbuildWorkerPool, scope constructs.Construct, id *string, config *GoogleCloudbuildWorkerPoolConfig) {
 	_init_.Initialize()
 

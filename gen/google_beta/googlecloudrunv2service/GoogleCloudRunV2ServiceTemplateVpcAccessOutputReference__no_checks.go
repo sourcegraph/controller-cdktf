@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference) validatePutNetworkInterfacesParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

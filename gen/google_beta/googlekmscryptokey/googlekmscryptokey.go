@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlekmscryptokey/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_kms_crypto_key google_kms_crypto_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_kms_crypto_key google_kms_crypto_key}.
 type GoogleKmsCryptoKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,6 +24,9 @@ type GoogleKmsCryptoKey interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CryptoKeyBackend() *string
+	SetCryptoKeyBackend(val *string)
+	CryptoKeyBackendInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -31,6 +34,7 @@ type GoogleKmsCryptoKey interface {
 	DestroyScheduledDuration() *string
 	SetDestroyScheduledDuration(val *string)
 	DestroyScheduledDurationInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -60,6 +64,7 @@ type GoogleKmsCryptoKey interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Primary() GoogleKmsCryptoKeyPrimaryList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -81,6 +86,7 @@ type GoogleKmsCryptoKey interface {
 	SkipInitialVersionCreationInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -116,6 +122,7 @@ type GoogleKmsCryptoKey interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleKmsCryptoKeyTimeouts)
 	PutVersionTemplate(value *GoogleKmsCryptoKeyVersionTemplate)
+	ResetCryptoKeyBackend()
 	ResetDestroyScheduledDuration()
 	ResetId()
 	ResetImportOnly()
@@ -183,6 +190,26 @@ func (j *jsiiProxy_GoogleKmsCryptoKey) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleKmsCryptoKey) CryptoKeyBackend() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cryptoKeyBackend",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleKmsCryptoKey) CryptoKeyBackendInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cryptoKeyBackendInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleKmsCryptoKey) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -208,6 +235,16 @@ func (j *jsiiProxy_GoogleKmsCryptoKey) DestroyScheduledDurationInput() *string {
 	_jsii_.Get(
 		j,
 		"destroyScheduledDurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleKmsCryptoKey) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -363,6 +400,16 @@ func (j *jsiiProxy_GoogleKmsCryptoKey) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleKmsCryptoKey) Primary() GoogleKmsCryptoKeyPrimaryList {
+	var returns GoogleKmsCryptoKeyPrimaryList
+	_jsii_.Get(
+		j,
+		"primary",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleKmsCryptoKey) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -463,6 +510,16 @@ func (j *jsiiProxy_GoogleKmsCryptoKey) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
+func (j *jsiiProxy_GoogleKmsCryptoKey) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleKmsCryptoKey) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -524,7 +581,7 @@ func (j *jsiiProxy_GoogleKmsCryptoKey) VersionTemplateInput() *GoogleKmsCryptoKe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_kms_crypto_key google_kms_crypto_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_kms_crypto_key google_kms_crypto_key} Resource.
 func NewGoogleKmsCryptoKey(scope constructs.Construct, id *string, config *GoogleKmsCryptoKeyConfig) GoogleKmsCryptoKey {
 	_init_.Initialize()
 
@@ -542,7 +599,7 @@ func NewGoogleKmsCryptoKey(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_kms_crypto_key google_kms_crypto_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_kms_crypto_key google_kms_crypto_key} Resource.
 func NewGoogleKmsCryptoKey_Override(g GoogleKmsCryptoKey, scope constructs.Construct, id *string, config *GoogleKmsCryptoKeyConfig) {
 	_init_.Initialize()
 
@@ -571,6 +628,17 @@ func (j *jsiiProxy_GoogleKmsCryptoKey)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleKmsCryptoKey)SetCryptoKeyBackend(val *string) {
+	if err := j.validateSetCryptoKeyBackendParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cryptoKeyBackend",
 		val,
 	)
 }
@@ -1005,6 +1073,14 @@ func (g *jsiiProxy_GoogleKmsCryptoKey) PutVersionTemplate(value *GoogleKmsCrypto
 		g,
 		"putVersionTemplate",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleKmsCryptoKey) ResetCryptoKeyBackend() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCryptoKeyBackend",
+		nil, // no parameters
 	)
 }
 

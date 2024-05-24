@@ -38,6 +38,7 @@ type GoogleComputeInstanceNetworkInterfaceAccessConfigOutputReference interface 
 	PublicPtrDomainName() *string
 	SetPublicPtrDomainName(val *string)
 	PublicPtrDomainNameInput() *string
+	SecurityPolicy() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -193,6 +194,16 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceAccessConfigOutputRefere
 	_jsii_.Get(
 		j,
 		"publicPtrDomainNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceAccessConfigOutputReference) SecurityPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityPolicy",
 		&returns,
 	)
 	return returns

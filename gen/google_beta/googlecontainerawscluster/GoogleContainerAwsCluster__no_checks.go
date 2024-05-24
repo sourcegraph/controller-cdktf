@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleContainerAwsCluster) validatePutAuthorizationParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAwsCluster) validatePutBinaryAuthorizationParameters(value *GoogleContainerAwsClusterBinaryAuthorization) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAwsCluster) validatePutControlPlaneParameters(value *GoogleContainerAwsClusterControlPlane) error {
 	return nil
 }

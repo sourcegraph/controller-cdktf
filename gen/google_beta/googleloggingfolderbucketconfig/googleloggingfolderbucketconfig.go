@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleloggingfolderbucketconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_folder_bucket_config google_logging_folder_bucket_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_logging_folder_bucket_config google_logging_folder_bucket_config}.
 type GoogleLoggingFolderBucketConfig interface {
 	cdktf.TerraformResource
 	BucketId() *string
@@ -50,6 +50,8 @@ type GoogleLoggingFolderBucketConfig interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IndexConfigs() GoogleLoggingFolderBucketConfigIndexConfigsList
+	IndexConfigsInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -106,9 +108,11 @@ type GoogleLoggingFolderBucketConfig interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCmekSettings(value *GoogleLoggingFolderBucketConfigCmekSettings)
+	PutIndexConfigs(value interface{})
 	ResetCmekSettings()
 	ResetDescription()
 	ResetId()
+	ResetIndexConfigs()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -308,6 +312,26 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) IndexConfigs() GoogleLoggingFolderBucketConfigIndexConfigsList {
+	var returns GoogleLoggingFolderBucketConfigIndexConfigsList
+	_jsii_.Get(
+		j,
+		"indexConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) IndexConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"indexConfigsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -449,7 +473,7 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_folder_bucket_config google_logging_folder_bucket_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_logging_folder_bucket_config google_logging_folder_bucket_config} Resource.
 func NewGoogleLoggingFolderBucketConfig(scope constructs.Construct, id *string, config *GoogleLoggingFolderBucketConfigConfig) GoogleLoggingFolderBucketConfig {
 	_init_.Initialize()
 
@@ -467,7 +491,7 @@ func NewGoogleLoggingFolderBucketConfig(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_folder_bucket_config google_logging_folder_bucket_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_logging_folder_bucket_config google_logging_folder_bucket_config} Resource.
 func NewGoogleLoggingFolderBucketConfig_Override(g GoogleLoggingFolderBucketConfig, scope constructs.Construct, id *string, config *GoogleLoggingFolderBucketConfigConfig) {
 	_init_.Initialize()
 
@@ -889,6 +913,17 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) PutCmekSettings(value *Googl
 	)
 }
 
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) PutIndexConfigs(value interface{}) {
+	if err := g.validatePutIndexConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putIndexConfigs",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) ResetCmekSettings() {
 	_jsii_.InvokeVoid(
 		g,
@@ -909,6 +944,14 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) ResetIndexConfigs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIndexConfigs",
 		nil, // no parameters
 	)
 }

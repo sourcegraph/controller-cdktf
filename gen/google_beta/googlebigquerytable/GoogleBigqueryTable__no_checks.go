@@ -68,6 +68,14 @@ func (g *jsiiProxy_GoogleBigqueryTable) validatePutRangePartitioningParameters(v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryTable) validatePutTableConstraintsParameters(value *GoogleBigqueryTableTableConstraints) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryTable) validatePutTableReplicationInfoParameters(value *GoogleBigqueryTableTableReplicationInfo) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryTable) validatePutTimePartitioningParameters(value *GoogleBigqueryTableTimePartitioning) error {
 	return nil
 }
@@ -85,6 +93,10 @@ func validateGoogleBigqueryTable_IsTerraformElementParameters(x interface{}) err
 }
 
 func validateGoogleBigqueryTable_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable) validateSetAllowResourceTagsOnDeletionParameters(val interface{}) error {
 	return nil
 }
 
@@ -141,6 +153,14 @@ func (j *jsiiProxy_GoogleBigqueryTable) validateSetProjectParameters(val *string
 }
 
 func (j *jsiiProxy_GoogleBigqueryTable) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable) validateSetRequirePartitionFilterParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable) validateSetResourceTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

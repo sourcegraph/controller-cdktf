@@ -64,7 +64,6 @@ type CloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutputReference in
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -448,14 +447,6 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutp
 	)
 
 	return returns
-}
-
-func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutputReference) ResetPort() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetPort",
-		nil, // no parameters
-	)
 }
 
 func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

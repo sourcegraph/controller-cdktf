@@ -44,7 +44,19 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsOutputReference) validat
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsOutputReference) validatePutMavenArtifactsParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsOutputReference) validatePutNpmPackagesParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsOutputReference) validatePutObjectsParameters(value *GoogleCloudbuildTriggerBuildArtifactsObjects) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsOutputReference) validatePutPythonPackagesParameters(value interface{}) error {
 	return nil
 }
 

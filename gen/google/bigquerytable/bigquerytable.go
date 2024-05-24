@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigquerytable/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_table google_bigquery_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/bigquery_table google_bigquery_table}.
 type BigqueryTable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -41,6 +41,7 @@ type BigqueryTable interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	EncryptionConfiguration() BigqueryTableEncryptionConfigurationOutputReference
 	EncryptionConfigurationInput() *BigqueryTableEncryptionConfiguration
 	Etag() *string
@@ -97,15 +98,23 @@ type BigqueryTable interface {
 	RangePartitioningInput() *BigqueryTableRangePartitioning
 	// Experimental.
 	RawOverrides() interface{}
+	RequirePartitionFilter() interface{}
+	SetRequirePartitionFilter(val interface{})
+	RequirePartitionFilterInput() interface{}
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
 	SelfLink() *string
+	TableConstraints() BigqueryTableTableConstraintsOutputReference
+	TableConstraintsInput() *BigqueryTableTableConstraints
 	TableId() *string
 	SetTableId(val *string)
 	TableIdInput() *string
+	TableReplicationInfo() BigqueryTableTableReplicationInfoOutputReference
+	TableReplicationInfoInput() *BigqueryTableTableReplicationInfo
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -144,6 +153,8 @@ type BigqueryTable interface {
 	PutExternalDataConfiguration(value *BigqueryTableExternalDataConfiguration)
 	PutMaterializedView(value *BigqueryTableMaterializedView)
 	PutRangePartitioning(value *BigqueryTableRangePartitioning)
+	PutTableConstraints(value *BigqueryTableTableConstraints)
+	PutTableReplicationInfo(value *BigqueryTableTableReplicationInfo)
 	PutTimePartitioning(value *BigqueryTableTimePartitioning)
 	PutView(value *BigqueryTableView)
 	ResetClustering()
@@ -162,7 +173,10 @@ type BigqueryTable interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRangePartitioning()
+	ResetRequirePartitionFilter()
 	ResetSchema()
+	ResetTableConstraints()
+	ResetTableReplicationInfo()
 	ResetTimePartitioning()
 	ResetView()
 	SynthesizeAttributes() *map[string]interface{}
@@ -315,6 +329,16 @@ func (j *jsiiProxy_BigqueryTable) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -660,6 +684,26 @@ func (j *jsiiProxy_BigqueryTable) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryTable) RequirePartitionFilter() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requirePartitionFilter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) RequirePartitionFilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requirePartitionFilterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryTable) Schema() *string {
 	var returns *string
 	_jsii_.Get(
@@ -690,6 +734,26 @@ func (j *jsiiProxy_BigqueryTable) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryTable) TableConstraints() BigqueryTableTableConstraintsOutputReference {
+	var returns BigqueryTableTableConstraintsOutputReference
+	_jsii_.Get(
+		j,
+		"tableConstraints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) TableConstraintsInput() *BigqueryTableTableConstraints {
+	var returns *BigqueryTableTableConstraints
+	_jsii_.Get(
+		j,
+		"tableConstraintsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryTable) TableId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -710,11 +774,41 @@ func (j *jsiiProxy_BigqueryTable) TableIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryTable) TableReplicationInfo() BigqueryTableTableReplicationInfoOutputReference {
+	var returns BigqueryTableTableReplicationInfoOutputReference
+	_jsii_.Get(
+		j,
+		"tableReplicationInfo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) TableReplicationInfoInput() *BigqueryTableTableReplicationInfo {
+	var returns *BigqueryTableTableReplicationInfo
+	_jsii_.Get(
+		j,
+		"tableReplicationInfoInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryTable) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
 		&returns,
 	)
 	return returns
@@ -791,7 +885,7 @@ func (j *jsiiProxy_BigqueryTable) ViewInput() *BigqueryTableView {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/bigquery_table google_bigquery_table} Resource.
 func NewBigqueryTable(scope constructs.Construct, id *string, config *BigqueryTableConfig) BigqueryTable {
 	_init_.Initialize()
 
@@ -809,7 +903,7 @@ func NewBigqueryTable(scope constructs.Construct, id *string, config *BigqueryTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/bigquery_table google_bigquery_table} Resource.
 func NewBigqueryTable_Override(b BigqueryTable, scope constructs.Construct, id *string, config *BigqueryTableConfig) {
 	_init_.Initialize()
 
@@ -994,6 +1088,17 @@ func (j *jsiiProxy_BigqueryTable)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetRequirePartitionFilter(val interface{}) {
+	if err := j.validateSetRequirePartitionFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requirePartitionFilter",
 		val,
 	)
 }
@@ -1330,6 +1435,28 @@ func (b *jsiiProxy_BigqueryTable) PutRangePartitioning(value *BigqueryTableRange
 	)
 }
 
+func (b *jsiiProxy_BigqueryTable) PutTableConstraints(value *BigqueryTableTableConstraints) {
+	if err := b.validatePutTableConstraintsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putTableConstraints",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) PutTableReplicationInfo(value *BigqueryTableTableReplicationInfo) {
+	if err := b.validatePutTableReplicationInfoParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putTableReplicationInfo",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BigqueryTable) PutTimePartitioning(value *BigqueryTableTimePartitioning) {
 	if err := b.validatePutTimePartitioningParameters(value); err != nil {
 		panic(err)
@@ -1464,10 +1591,34 @@ func (b *jsiiProxy_BigqueryTable) ResetRangePartitioning() {
 	)
 }
 
+func (b *jsiiProxy_BigqueryTable) ResetRequirePartitionFilter() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRequirePartitionFilter",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BigqueryTable) ResetSchema() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetSchema",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetTableConstraints() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTableConstraints",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetTableReplicationInfo() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTableReplicationInfo",
 		nil, // no parameters
 	)
 }

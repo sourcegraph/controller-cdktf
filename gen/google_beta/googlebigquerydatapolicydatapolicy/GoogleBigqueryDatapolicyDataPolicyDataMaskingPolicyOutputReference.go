@@ -32,6 +32,9 @@ type GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference interfac
 	PredefinedExpression() *string
 	SetPredefinedExpression(val *string)
 	PredefinedExpressionInput() *string
+	Routine() *string
+	SetRoutine(val *string)
+	RoutineInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +67,8 @@ type GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPredefinedExpression()
+	ResetRoutine()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,6 +149,26 @@ func (j *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputRefe
 	_jsii_.Get(
 		j,
 		"predefinedExpressionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference) Routine() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routine",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference) RoutineInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routineInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +262,17 @@ func (j *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputRefe
 	_jsii_.Set(
 		j,
 		"predefinedExpression",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference)SetRoutine(val *string) {
+	if err := j.validateSetRoutineParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routine",
 		val,
 	)
 }
@@ -447,6 +483,22 @@ func (g *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputRefe
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference) ResetPredefinedExpression() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPredefinedExpression",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference) ResetRoutine() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRoutine",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

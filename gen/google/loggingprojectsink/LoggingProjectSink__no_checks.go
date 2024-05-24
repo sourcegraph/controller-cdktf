@@ -80,6 +80,10 @@ func (j *jsiiProxy_LoggingProjectSink) validateSetCountParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_LoggingProjectSink) validateSetCustomWriterIdentityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoggingProjectSink) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

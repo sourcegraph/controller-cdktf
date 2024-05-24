@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleappengineflexibleappversion/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_app_engine_flexible_app_version google_app_engine_flexible_app_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_app_engine_flexible_app_version google_app_engine_flexible_app_version}.
 type GoogleAppEngineFlexibleAppVersion interface {
 	cdktf.TerraformResource
 	ApiConfig() GoogleAppEngineFlexibleAppVersionApiConfigOutputReference
@@ -1013,7 +1013,7 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) VpcAccessConnectorInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_app_engine_flexible_app_version google_app_engine_flexible_app_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_app_engine_flexible_app_version google_app_engine_flexible_app_version} Resource.
 func NewGoogleAppEngineFlexibleAppVersion(scope constructs.Construct, id *string, config *GoogleAppEngineFlexibleAppVersionConfig) GoogleAppEngineFlexibleAppVersion {
 	_init_.Initialize()
 
@@ -1031,7 +1031,7 @@ func NewGoogleAppEngineFlexibleAppVersion(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_app_engine_flexible_app_version google_app_engine_flexible_app_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_app_engine_flexible_app_version google_app_engine_flexible_app_version} Resource.
 func NewGoogleAppEngineFlexibleAppVersion_Override(g GoogleAppEngineFlexibleAppVersion, scope constructs.Construct, id *string, config *GoogleAppEngineFlexibleAppVersionConfig) {
 	_init_.Initialize()
 

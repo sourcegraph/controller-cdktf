@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkservicesedgecacheservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_edge_cache_service google_network_services_edge_cache_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_services_edge_cache_service google_network_services_edge_cache_service}.
 type GoogleNetworkServicesEdgeCacheService interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -43,6 +43,7 @@ type GoogleNetworkServicesEdgeCacheService interface {
 	EdgeSslCertificates() *[]*string
 	SetEdgeSslCertificates(val *[]*string)
 	EdgeSslCertificatesInput() *[]*string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -93,6 +94,7 @@ type GoogleNetworkServicesEdgeCacheService interface {
 	SslPolicyInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -302,6 +304,16 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheService) EdgeSslCertificatesInp
 	_jsii_.Get(
 		j,
 		"edgeSslCertificatesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheService) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -577,6 +589,16 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheService) TerraformGeneratorMeta
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheService) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheService) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -618,7 +640,7 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheService) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_edge_cache_service google_network_services_edge_cache_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_services_edge_cache_service google_network_services_edge_cache_service} Resource.
 func NewGoogleNetworkServicesEdgeCacheService(scope constructs.Construct, id *string, config *GoogleNetworkServicesEdgeCacheServiceConfig) GoogleNetworkServicesEdgeCacheService {
 	_init_.Initialize()
 
@@ -636,7 +658,7 @@ func NewGoogleNetworkServicesEdgeCacheService(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_network_services_edge_cache_service google_network_services_edge_cache_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_services_edge_cache_service google_network_services_edge_cache_service} Resource.
 func NewGoogleNetworkServicesEdgeCacheService_Override(g GoogleNetworkServicesEdgeCacheService, scope constructs.Construct, id *string, config *GoogleNetworkServicesEdgeCacheServiceConfig) {
 	_init_.Initialize()
 

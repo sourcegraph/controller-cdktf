@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterOutputReferenc
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterOutputReference) validatePutStretchedClusterConfigParameters(value *GoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

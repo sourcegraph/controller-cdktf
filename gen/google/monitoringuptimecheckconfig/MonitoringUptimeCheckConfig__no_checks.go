@@ -68,6 +68,10 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) validatePutResourceGroupParamete
 	return nil
 }
 
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) validatePutSyntheticMonitorParameters(value *MonitoringUptimeCheckConfigSyntheticMonitor) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringUptimeCheckConfig) validatePutTcpCheckParameters(value *MonitoringUptimeCheckConfigTcpCheck) error {
 	return nil
 }
@@ -129,6 +133,10 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetSelectedRegionsParame
 }
 
 func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetTimeoutParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetUserLabelsParameters(val *map[string]*string) error {
 	return nil
 }
 

@@ -40,8 +40,6 @@ type CloudRunV2JobTemplateTemplateContainersOutputReference interface {
 	ImageInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	LivenessProbe() CloudRunV2JobTemplateTemplateContainersLivenessProbeOutputReference
-	LivenessProbeInput() *CloudRunV2JobTemplateTemplateContainersLivenessProbe
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -49,8 +47,6 @@ type CloudRunV2JobTemplateTemplateContainersOutputReference interface {
 	PortsInput() interface{}
 	Resources() CloudRunV2JobTemplateTemplateContainersResourcesOutputReference
 	ResourcesInput() *CloudRunV2JobTemplateTemplateContainersResources
-	StartupProbe() CloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference
-	StartupProbeInput() *CloudRunV2JobTemplateTemplateContainersStartupProbe
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -89,19 +85,15 @@ type CloudRunV2JobTemplateTemplateContainersOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutEnv(value interface{})
-	PutLivenessProbe(value *CloudRunV2JobTemplateTemplateContainersLivenessProbe)
 	PutPorts(value interface{})
 	PutResources(value *CloudRunV2JobTemplateTemplateContainersResources)
-	PutStartupProbe(value *CloudRunV2JobTemplateTemplateContainersStartupProbe)
 	PutVolumeMounts(value interface{})
 	ResetArgs()
 	ResetCommand()
 	ResetEnv()
-	ResetLivenessProbe()
 	ResetName()
 	ResetPorts()
 	ResetResources()
-	ResetStartupProbe()
 	ResetVolumeMounts()
 	ResetWorkingDir()
 	// Produce the Token's value at resolution time.
@@ -249,26 +241,6 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) Inter
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) LivenessProbe() CloudRunV2JobTemplateTemplateContainersLivenessProbeOutputReference {
-	var returns CloudRunV2JobTemplateTemplateContainersLivenessProbeOutputReference
-	_jsii_.Get(
-		j,
-		"livenessProbe",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) LivenessProbeInput() *CloudRunV2JobTemplateTemplateContainersLivenessProbe {
-	var returns *CloudRunV2JobTemplateTemplateContainersLivenessProbe
-	_jsii_.Get(
-		j,
-		"livenessProbeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -324,26 +296,6 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) Resou
 	_jsii_.Get(
 		j,
 		"resourcesInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) StartupProbe() CloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference {
-	var returns CloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference
-	_jsii_.Get(
-		j,
-		"startupProbe",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) StartupProbeInput() *CloudRunV2JobTemplateTemplateContainersStartupProbe {
-	var returns *CloudRunV2JobTemplateTemplateContainersStartupProbe
-	_jsii_.Get(
-		j,
-		"startupProbeInput",
 		&returns,
 	)
 	return returns
@@ -744,17 +696,6 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) PutEn
 	)
 }
 
-func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) PutLivenessProbe(value *CloudRunV2JobTemplateTemplateContainersLivenessProbe) {
-	if err := c.validatePutLivenessProbeParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		c,
-		"putLivenessProbe",
-		[]interface{}{value},
-	)
-}
-
 func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) PutPorts(value interface{}) {
 	if err := c.validatePutPortsParameters(value); err != nil {
 		panic(err)
@@ -773,17 +714,6 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) PutRe
 	_jsii_.InvokeVoid(
 		c,
 		"putResources",
-		[]interface{}{value},
-	)
-}
-
-func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) PutStartupProbe(value *CloudRunV2JobTemplateTemplateContainersStartupProbe) {
-	if err := c.validatePutStartupProbeParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		c,
-		"putStartupProbe",
 		[]interface{}{value},
 	)
 }
@@ -823,14 +753,6 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) Reset
 	)
 }
 
-func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) ResetLivenessProbe() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetLivenessProbe",
-		nil, // no parameters
-	)
-}
-
 func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) ResetName() {
 	_jsii_.InvokeVoid(
 		c,
@@ -851,14 +773,6 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) Reset
 	_jsii_.InvokeVoid(
 		c,
 		"resetResources",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) ResetStartupProbe() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetStartupProbe",
 		nil, // no parameters
 	)
 }

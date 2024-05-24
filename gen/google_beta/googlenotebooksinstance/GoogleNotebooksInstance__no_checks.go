@@ -120,6 +120,10 @@ func (j *jsiiProxy_GoogleNotebooksInstance) validateSetDataDiskTypeParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNotebooksInstance) validateSetDesiredStateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNotebooksInstance) validateSetDiskEncryptionParameters(val *string) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google/monitoringalertpolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_alert_policy google_monitoring_alert_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/monitoring_alert_policy google_monitoring_alert_policy}.
 type MonitoringAlertPolicy interface {
 	cdktf.TerraformResource
 	AlertStrategy() MonitoringAlertPolicyAlertStrategyOutputReference
@@ -78,6 +78,9 @@ type MonitoringAlertPolicy interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Severity() *string
+	SetSeverity(val *string)
+	SeverityInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -127,6 +130,7 @@ type MonitoringAlertPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetSeverity()
 	ResetTimeouts()
 	ResetUserLabels()
 	SynthesizeAttributes() *map[string]interface{}
@@ -474,6 +478,26 @@ func (j *jsiiProxy_MonitoringAlertPolicy) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MonitoringAlertPolicy) Severity() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"severity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringAlertPolicy) SeverityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"severityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MonitoringAlertPolicy) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -545,7 +569,7 @@ func (j *jsiiProxy_MonitoringAlertPolicy) UserLabelsInput() *map[string]*string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_alert_policy google_monitoring_alert_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/monitoring_alert_policy google_monitoring_alert_policy} Resource.
 func NewMonitoringAlertPolicy(scope constructs.Construct, id *string, config *MonitoringAlertPolicyConfig) MonitoringAlertPolicy {
 	_init_.Initialize()
 
@@ -563,7 +587,7 @@ func NewMonitoringAlertPolicy(scope constructs.Construct, id *string, config *Mo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_alert_policy google_monitoring_alert_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/monitoring_alert_policy google_monitoring_alert_policy} Resource.
 func NewMonitoringAlertPolicy_Override(m MonitoringAlertPolicy, scope constructs.Construct, id *string, config *MonitoringAlertPolicyConfig) {
 	_init_.Initialize()
 
@@ -704,6 +728,17 @@ func (j *jsiiProxy_MonitoringAlertPolicy)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitoringAlertPolicy)SetSeverity(val *string) {
+	if err := j.validateSetSeverityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"severity",
 		val,
 	)
 }
@@ -1081,6 +1116,14 @@ func (m *jsiiProxy_MonitoringAlertPolicy) ResetProject() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringAlertPolicy) ResetSeverity() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSeverity",
 		nil, // no parameters
 	)
 }

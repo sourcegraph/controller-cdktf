@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlepubsubsubscription/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_pubsub_subscription google_pubsub_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_pubsub_subscription google_pubsub_subscription}.
 type GooglePubsubSubscription interface {
 	cdktf.TerraformResource
 	AckDeadlineSeconds() *float64
@@ -37,6 +37,7 @@ type GooglePubsubSubscription interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	EnableExactlyOnceDelivery() interface{}
 	SetEnableExactlyOnceDelivery(val interface{})
 	EnableExactlyOnceDeliveryInput() interface{}
@@ -96,6 +97,7 @@ type GooglePubsubSubscription interface {
 	RetryPolicyInput() *GooglePubsubSubscriptionRetryPolicy
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -296,6 +298,16 @@ func (j *jsiiProxy_GooglePubsubSubscription) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubSubscription) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -631,6 +643,16 @@ func (j *jsiiProxy_GooglePubsubSubscription) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
+func (j *jsiiProxy_GooglePubsubSubscription) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GooglePubsubSubscription) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -692,7 +714,7 @@ func (j *jsiiProxy_GooglePubsubSubscription) TopicInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_pubsub_subscription google_pubsub_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_pubsub_subscription google_pubsub_subscription} Resource.
 func NewGooglePubsubSubscription(scope constructs.Construct, id *string, config *GooglePubsubSubscriptionConfig) GooglePubsubSubscription {
 	_init_.Initialize()
 
@@ -710,7 +732,7 @@ func NewGooglePubsubSubscription(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_pubsub_subscription google_pubsub_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_pubsub_subscription google_pubsub_subscription} Resource.
 func NewGooglePubsubSubscription_Override(g GooglePubsubSubscription, scope constructs.Construct, id *string, config *GooglePubsubSubscriptionConfig) {
 	_init_.Initialize()
 

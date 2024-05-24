@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlepubsubtopic/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_pubsub_topic google_pubsub_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_pubsub_topic google_pubsub_topic}.
 type GooglePubsubTopic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,7 @@ type GooglePubsubTopic interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -39,6 +40,8 @@ type GooglePubsubTopic interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IngestionDataSourceSettings() GooglePubsubTopicIngestionDataSourceSettingsOutputReference
+	IngestionDataSourceSettingsInput() *GooglePubsubTopicIngestionDataSourceSettings
 	KmsKeyName() *string
 	SetKmsKeyName(val *string)
 	KmsKeyNameInput() *string
@@ -76,6 +79,7 @@ type GooglePubsubTopic interface {
 	SchemaSettingsInput() *GooglePubsubTopicSchemaSettings
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -107,10 +111,12 @@ type GooglePubsubTopic interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutIngestionDataSourceSettings(value *GooglePubsubTopicIngestionDataSourceSettings)
 	PutMessageStoragePolicy(value *GooglePubsubTopicMessageStoragePolicy)
 	PutSchemaSettings(value *GooglePubsubTopicSchemaSettings)
 	PutTimeouts(value *GooglePubsubTopicTimeouts)
 	ResetId()
+	ResetIngestionDataSourceSettings()
 	ResetKmsKeyName()
 	ResetLabels()
 	ResetMessageRetentionDuration()
@@ -186,6 +192,16 @@ func (j *jsiiProxy_GooglePubsubTopic) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_GooglePubsubTopic) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GooglePubsubTopic) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -231,6 +247,26 @@ func (j *jsiiProxy_GooglePubsubTopic) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubTopic) IngestionDataSourceSettings() GooglePubsubTopicIngestionDataSourceSettingsOutputReference {
+	var returns GooglePubsubTopicIngestionDataSourceSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"ingestionDataSourceSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubTopic) IngestionDataSourceSettingsInput() *GooglePubsubTopicIngestionDataSourceSettings {
+	var returns *GooglePubsubTopicIngestionDataSourceSettings
+	_jsii_.Get(
+		j,
+		"ingestionDataSourceSettingsInput",
 		&returns,
 	)
 	return returns
@@ -436,6 +472,16 @@ func (j *jsiiProxy_GooglePubsubTopic) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
+func (j *jsiiProxy_GooglePubsubTopic) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GooglePubsubTopic) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -477,7 +523,7 @@ func (j *jsiiProxy_GooglePubsubTopic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_pubsub_topic google_pubsub_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_pubsub_topic google_pubsub_topic} Resource.
 func NewGooglePubsubTopic(scope constructs.Construct, id *string, config *GooglePubsubTopicConfig) GooglePubsubTopic {
 	_init_.Initialize()
 
@@ -495,7 +541,7 @@ func NewGooglePubsubTopic(scope constructs.Construct, id *string, config *Google
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_pubsub_topic google_pubsub_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_pubsub_topic google_pubsub_topic} Resource.
 func NewGooglePubsubTopic_Override(g GooglePubsubTopic, scope constructs.Construct, id *string, config *GooglePubsubTopicConfig) {
 	_init_.Initialize()
 
@@ -906,6 +952,17 @@ func (g *jsiiProxy_GooglePubsubTopic) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (g *jsiiProxy_GooglePubsubTopic) PutIngestionDataSourceSettings(value *GooglePubsubTopicIngestionDataSourceSettings) {
+	if err := g.validatePutIngestionDataSourceSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putIngestionDataSourceSettings",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GooglePubsubTopic) PutMessageStoragePolicy(value *GooglePubsubTopicMessageStoragePolicy) {
 	if err := g.validatePutMessageStoragePolicyParameters(value); err != nil {
 		panic(err)
@@ -943,6 +1000,14 @@ func (g *jsiiProxy_GooglePubsubTopic) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GooglePubsubTopic) ResetIngestionDataSourceSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIngestionDataSourceSettings",
 		nil, // no parameters
 	)
 }

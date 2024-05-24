@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleorgpolicypolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_org_policy_policy google_org_policy_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_org_policy_policy google_org_policy_policy}.
 type GoogleOrgPolicyPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,9 @@ type GoogleOrgPolicyPolicy interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DryRunSpec() GoogleOrgPolicyPolicyDryRunSpecOutputReference
+	DryRunSpecInput() *GoogleOrgPolicyPolicyDryRunSpec
+	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -96,8 +99,10 @@ type GoogleOrgPolicyPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDryRunSpec(value *GoogleOrgPolicyPolicyDryRunSpec)
 	PutSpec(value *GoogleOrgPolicyPolicySpec)
 	PutTimeouts(value *GoogleOrgPolicyPolicyTimeouts)
+	ResetDryRunSpec()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -164,6 +169,36 @@ func (j *jsiiProxy_GoogleOrgPolicyPolicy) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleOrgPolicyPolicy) DryRunSpec() GoogleOrgPolicyPolicyDryRunSpecOutputReference {
+	var returns GoogleOrgPolicyPolicyDryRunSpecOutputReference
+	_jsii_.Get(
+		j,
+		"dryRunSpec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleOrgPolicyPolicy) DryRunSpecInput() *GoogleOrgPolicyPolicyDryRunSpec {
+	var returns *GoogleOrgPolicyPolicyDryRunSpec
+	_jsii_.Get(
+		j,
+		"dryRunSpecInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleOrgPolicyPolicy) Etag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etag",
 		&returns,
 	)
 	return returns
@@ -380,7 +415,7 @@ func (j *jsiiProxy_GoogleOrgPolicyPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_org_policy_policy google_org_policy_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_org_policy_policy google_org_policy_policy} Resource.
 func NewGoogleOrgPolicyPolicy(scope constructs.Construct, id *string, config *GoogleOrgPolicyPolicyConfig) GoogleOrgPolicyPolicy {
 	_init_.Initialize()
 
@@ -398,7 +433,7 @@ func NewGoogleOrgPolicyPolicy(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_org_policy_policy google_org_policy_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_org_policy_policy google_org_policy_policy} Resource.
 func NewGoogleOrgPolicyPolicy_Override(g GoogleOrgPolicyPolicy, scope constructs.Construct, id *string, config *GoogleOrgPolicyPolicyConfig) {
 	_init_.Initialize()
 
@@ -776,6 +811,17 @@ func (g *jsiiProxy_GoogleOrgPolicyPolicy) OverrideLogicalId(newLogicalId *string
 	)
 }
 
+func (g *jsiiProxy_GoogleOrgPolicyPolicy) PutDryRunSpec(value *GoogleOrgPolicyPolicyDryRunSpec) {
+	if err := g.validatePutDryRunSpecParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDryRunSpec",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleOrgPolicyPolicy) PutSpec(value *GoogleOrgPolicyPolicySpec) {
 	if err := g.validatePutSpecParameters(value); err != nil {
 		panic(err)
@@ -795,6 +841,14 @@ func (g *jsiiProxy_GoogleOrgPolicyPolicy) PutTimeouts(value *GoogleOrgPolicyPoli
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleOrgPolicyPolicy) ResetDryRunSpec() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDryRunSpec",
+		nil, // no parameters
 	)
 }
 

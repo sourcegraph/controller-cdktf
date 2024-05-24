@@ -48,6 +48,10 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigAOutputReference) va
 	return nil
 }
 
+func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigAOutputReference) validatePutSubjectKeyIdParameters(value *GooglePrivatecaCertificateAuthorityConfigSubjectKeyId) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigAOutputReference) validatePutX509ConfigParameters(value *GooglePrivatecaCertificateAuthorityConfigX509Config) error {
 	return nil
 }

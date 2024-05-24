@@ -30,7 +30,9 @@ type DataGoogleComputeRouterNatRulesActionOutputReference interface {
 	InternalValue() *DataGoogleComputeRouterNatRulesAction
 	SetInternalValue(val *DataGoogleComputeRouterNatRulesAction)
 	SourceNatActiveIps() *[]*string
+	SourceNatActiveRanges() *[]*string
 	SourceNatDrainIps() *[]*string
+	SourceNatDrainRanges() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -138,11 +140,31 @@ func (j *jsiiProxy_DataGoogleComputeRouterNatRulesActionOutputReference) SourceN
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeRouterNatRulesActionOutputReference) SourceNatActiveRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceNatActiveRanges",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeRouterNatRulesActionOutputReference) SourceNatDrainIps() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"sourceNatDrainIps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRouterNatRulesActionOutputReference) SourceNatDrainRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceNatDrainRanges",
 		&returns,
 	)
 	return returns

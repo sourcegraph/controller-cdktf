@@ -12,6 +12,8 @@ type GoogleDataprocClusterClusterConfigOutputReference interface {
 	cdktf.ComplexObject
 	AutoscalingConfig() GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference
 	AutoscalingConfigInput() *GoogleDataprocClusterClusterConfigAutoscalingConfig
+	AuxiliaryNodeGroups() GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsList
+	AuxiliaryNodeGroupsInput() interface{}
 	Bucket() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -95,6 +97,7 @@ type GoogleDataprocClusterClusterConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAutoscalingConfig(value *GoogleDataprocClusterClusterConfigAutoscalingConfig)
+	PutAuxiliaryNodeGroups(value interface{})
 	PutDataprocMetricConfig(value *GoogleDataprocClusterClusterConfigDataprocMetricConfig)
 	PutEncryptionConfig(value *GoogleDataprocClusterClusterConfigEncryptionConfig)
 	PutEndpointConfig(value *GoogleDataprocClusterClusterConfigEndpointConfig)
@@ -108,6 +111,7 @@ type GoogleDataprocClusterClusterConfigOutputReference interface {
 	PutSoftwareConfig(value *GoogleDataprocClusterClusterConfigSoftwareConfig)
 	PutWorkerConfig(value *GoogleDataprocClusterClusterConfigWorkerConfig)
 	ResetAutoscalingConfig()
+	ResetAuxiliaryNodeGroups()
 	ResetDataprocMetricConfig()
 	ResetEncryptionConfig()
 	ResetEndpointConfig()
@@ -152,6 +156,26 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) Autoscalin
 	_jsii_.Get(
 		j,
 		"autoscalingConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) AuxiliaryNodeGroups() GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsList {
+	var returns GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsList
+	_jsii_.Get(
+		j,
+		"auxiliaryNodeGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) AuxiliaryNodeGroupsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"auxiliaryNodeGroupsInput",
 		&returns,
 	)
 	return returns
@@ -819,6 +843,17 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) PutAutosca
 	)
 }
 
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) PutAuxiliaryNodeGroups(value interface{}) {
+	if err := g.validatePutAuxiliaryNodeGroupsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAuxiliaryNodeGroups",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) PutDataprocMetricConfig(value *GoogleDataprocClusterClusterConfigDataprocMetricConfig) {
 	if err := g.validatePutDataprocMetricConfigParameters(value); err != nil {
 		panic(err)
@@ -955,6 +990,14 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) ResetAutos
 	_jsii_.InvokeVoid(
 		g,
 		"resetAutoscalingConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) ResetAuxiliaryNodeGroups() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAuxiliaryNodeGroups",
 		nil, // no parameters
 	)
 }

@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleSpannerInstance) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSpannerInstance) validatePutAutoscalingConfigParameters(value *GoogleSpannerInstanceAutoscalingConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSpannerInstance) validatePutTimeoutsParameters(value *GoogleSpannerInstanceTimeouts) error {
 	return nil
 }

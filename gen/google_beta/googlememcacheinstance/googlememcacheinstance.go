@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlememcacheinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_memcache_instance google_memcache_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_memcache_instance google_memcache_instance}.
 type GoogleMemcacheInstance interface {
 	cdktf.TerraformResource
 	AuthorizedNetwork() *string
@@ -36,6 +36,7 @@ type GoogleMemcacheInstance interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -90,8 +91,12 @@ type GoogleMemcacheInstance interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	ReservedIpRangeId() *[]*string
+	SetReservedIpRangeId(val *[]*string)
+	ReservedIpRangeIdInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -142,6 +147,7 @@ type GoogleMemcacheInstance interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
+	ResetReservedIpRangeId()
 	ResetTimeouts()
 	ResetZones()
 	SynthesizeAttributes() *map[string]interface{}
@@ -264,6 +270,16 @@ func (j *jsiiProxy_GoogleMemcacheInstance) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMemcacheInstance) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -579,11 +595,41 @@ func (j *jsiiProxy_GoogleMemcacheInstance) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleMemcacheInstance) ReservedIpRangeId() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"reservedIpRangeId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMemcacheInstance) ReservedIpRangeIdInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"reservedIpRangeIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleMemcacheInstance) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMemcacheInstance) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
 		&returns,
 	)
 	return returns
@@ -650,7 +696,7 @@ func (j *jsiiProxy_GoogleMemcacheInstance) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_memcache_instance google_memcache_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_memcache_instance google_memcache_instance} Resource.
 func NewGoogleMemcacheInstance(scope constructs.Construct, id *string, config *GoogleMemcacheInstanceConfig) GoogleMemcacheInstance {
 	_init_.Initialize()
 
@@ -668,7 +714,7 @@ func NewGoogleMemcacheInstance(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_memcache_instance google_memcache_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_memcache_instance google_memcache_instance} Resource.
 func NewGoogleMemcacheInstance_Override(g GoogleMemcacheInstance, scope constructs.Construct, id *string, config *GoogleMemcacheInstanceConfig) {
 	_init_.Initialize()
 
@@ -842,6 +888,17 @@ func (j *jsiiProxy_GoogleMemcacheInstance)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMemcacheInstance)SetReservedIpRangeId(val *[]*string) {
+	if err := j.validateSetReservedIpRangeIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"reservedIpRangeId",
 		val,
 	)
 }
@@ -1243,6 +1300,14 @@ func (g *jsiiProxy_GoogleMemcacheInstance) ResetRegion() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMemcacheInstance) ResetReservedIpRangeId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReservedIpRangeId",
 		nil, // no parameters
 	)
 }

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleStorageBucketObject) validatePutCustomerEncryptionParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageBucketObject) validatePutRetentionParameters(value *GoogleStorageBucketObjectRetention) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageBucketObject) validatePutTimeoutsParameters(value *GoogleStorageBucketObjectTimeouts) error {
 	return nil
 }

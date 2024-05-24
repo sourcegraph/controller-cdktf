@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputerouternat/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_router_nat google_compute_router_nat}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_router_nat google_compute_router_nat}.
 type GoogleComputeRouterNat interface {
 	cdktf.TerraformResource
+	AutoNetworkTier() *string
+	SetAutoNetworkTier(val *string)
+	AutoNetworkTierInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -37,6 +40,9 @@ type GoogleComputeRouterNat interface {
 	EnableEndpointIndependentMapping() interface{}
 	SetEnableEndpointIndependentMapping(val interface{})
 	EnableEndpointIndependentMappingInput() interface{}
+	EndpointTypes() *[]*string
+	SetEndpointTypes(val *[]*string)
+	EndpointTypesInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -117,6 +123,9 @@ type GoogleComputeRouterNat interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleComputeRouterNatTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	UdpIdleTimeoutSec() *float64
 	SetUdpIdleTimeoutSec(val *float64)
 	UdpIdleTimeoutSecInput() *float64
@@ -149,14 +158,17 @@ type GoogleComputeRouterNat interface {
 	PutRules(value interface{})
 	PutSubnetwork(value interface{})
 	PutTimeouts(value *GoogleComputeRouterNatTimeouts)
+	ResetAutoNetworkTier()
 	ResetDrainNatIps()
 	ResetEnableDynamicPortAllocation()
 	ResetEnableEndpointIndependentMapping()
+	ResetEndpointTypes()
 	ResetIcmpIdleTimeoutSec()
 	ResetId()
 	ResetLogConfig()
 	ResetMaxPortsPerVm()
 	ResetMinPortsPerVm()
+	ResetNatIpAllocateOption()
 	ResetNatIps()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -169,6 +181,7 @@ type GoogleComputeRouterNat interface {
 	ResetTcpTimeWaitTimeoutSec()
 	ResetTcpTransitoryIdleTimeoutSec()
 	ResetTimeouts()
+	ResetType()
 	ResetUdpIdleTimeoutSec()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -183,6 +196,26 @@ type GoogleComputeRouterNat interface {
 // The jsii proxy struct for GoogleComputeRouterNat
 type jsiiProxy_GoogleComputeRouterNat struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat) AutoNetworkTier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoNetworkTier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat) AutoNetworkTierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoNetworkTierInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleComputeRouterNat) CdktfStack() cdktf.TerraformStack {
@@ -290,6 +323,26 @@ func (j *jsiiProxy_GoogleComputeRouterNat) EnableEndpointIndependentMappingInput
 	_jsii_.Get(
 		j,
 		"enableEndpointIndependentMappingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat) EndpointTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"endpointTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat) EndpointTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"endpointTypesInput",
 		&returns,
 	)
 	return returns
@@ -765,6 +818,26 @@ func (j *jsiiProxy_GoogleComputeRouterNat) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRouterNat) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRouterNat) UdpIdleTimeoutSec() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -786,7 +859,7 @@ func (j *jsiiProxy_GoogleComputeRouterNat) UdpIdleTimeoutSecInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_router_nat google_compute_router_nat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_router_nat google_compute_router_nat} Resource.
 func NewGoogleComputeRouterNat(scope constructs.Construct, id *string, config *GoogleComputeRouterNatConfig) GoogleComputeRouterNat {
 	_init_.Initialize()
 
@@ -804,7 +877,7 @@ func NewGoogleComputeRouterNat(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_router_nat google_compute_router_nat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_router_nat google_compute_router_nat} Resource.
 func NewGoogleComputeRouterNat_Override(g GoogleComputeRouterNat, scope constructs.Construct, id *string, config *GoogleComputeRouterNatConfig) {
 	_init_.Initialize()
 
@@ -812,6 +885,17 @@ func NewGoogleComputeRouterNat_Override(g GoogleComputeRouterNat, scope construc
 		"@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat)SetAutoNetworkTier(val *string) {
+	if err := j.validateSetAutoNetworkTierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoNetworkTier",
+		val,
 	)
 }
 
@@ -874,6 +958,17 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetEnableEndpointIndependentMapping(va
 	_jsii_.Set(
 		j,
 		"enableEndpointIndependentMapping",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat)SetEndpointTypes(val *[]*string) {
+	if err := j.validateSetEndpointTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointTypes",
 		val,
 	)
 }
@@ -1066,6 +1161,17 @@ func (j *jsiiProxy_GoogleComputeRouterNat)SetTcpTransitoryIdleTimeoutSec(val *fl
 	_jsii_.Set(
 		j,
 		"tcpTransitoryIdleTimeoutSec",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -1391,6 +1497,14 @@ func (g *jsiiProxy_GoogleComputeRouterNat) PutTimeouts(value *GoogleComputeRoute
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRouterNat) ResetAutoNetworkTier() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutoNetworkTier",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRouterNat) ResetDrainNatIps() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1411,6 +1525,14 @@ func (g *jsiiProxy_GoogleComputeRouterNat) ResetEnableEndpointIndependentMapping
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnableEndpointIndependentMapping",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRouterNat) ResetEndpointTypes() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEndpointTypes",
 		nil, // no parameters
 	)
 }
@@ -1451,6 +1573,14 @@ func (g *jsiiProxy_GoogleComputeRouterNat) ResetMinPortsPerVm() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMinPortsPerVm",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRouterNat) ResetNatIpAllocateOption() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNatIpAllocateOption",
 		nil, // no parameters
 	)
 }
@@ -1531,6 +1661,14 @@ func (g *jsiiProxy_GoogleComputeRouterNat) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRouterNat) ResetType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetType",
 		nil, // no parameters
 	)
 }

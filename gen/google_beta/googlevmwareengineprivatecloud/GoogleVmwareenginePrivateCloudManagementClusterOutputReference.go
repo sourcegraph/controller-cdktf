@@ -34,6 +34,8 @@ type GoogleVmwareenginePrivateCloudManagementClusterOutputReference interface {
 	SetInternalValue(val *GoogleVmwareenginePrivateCloudManagementCluster)
 	NodeTypeConfigs() GoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsList
 	NodeTypeConfigsInput() interface{}
+	StretchedClusterConfig() GoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfigOutputReference
+	StretchedClusterConfigInput() *GoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type GoogleVmwareenginePrivateCloudManagementClusterOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutNodeTypeConfigs(value interface{})
+	PutStretchedClusterConfig(value *GoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfig)
 	ResetNodeTypeConfigs()
+	ResetStretchedClusterConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -168,6 +172,26 @@ func (j *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterOutputReferenc
 	_jsii_.Get(
 		j,
 		"nodeTypeConfigsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterOutputReference) StretchedClusterConfig() GoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfigOutputReference {
+	var returns GoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfigOutputReference
+	_jsii_.Get(
+		j,
+		"stretchedClusterConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterOutputReference) StretchedClusterConfigInput() *GoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfig {
+	var returns *GoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfig
+	_jsii_.Get(
+		j,
+		"stretchedClusterConfigInput",
 		&returns,
 	)
 	return returns
@@ -484,10 +508,29 @@ func (g *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterOutputReferenc
 	)
 }
 
+func (g *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterOutputReference) PutStretchedClusterConfig(value *GoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfig) {
+	if err := g.validatePutStretchedClusterConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putStretchedClusterConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterOutputReference) ResetNodeTypeConfigs() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetNodeTypeConfigs",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleVmwareenginePrivateCloudManagementClusterOutputReference) ResetStretchedClusterConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStretchedClusterConfig",
 		nil, // no parameters
 	)
 }

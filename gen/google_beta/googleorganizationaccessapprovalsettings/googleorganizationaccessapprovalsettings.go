@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleorganizationaccessapprovalsettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_organization_access_approval_settings google_organization_access_approval_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_organization_access_approval_settings google_organization_access_approval_settings}.
 type GoogleOrganizationAccessApprovalSettings interface {
 	cdktf.TerraformResource
 	ActiveKeyVersion() *string
@@ -448,7 +448,7 @@ func (j *jsiiProxy_GoogleOrganizationAccessApprovalSettings) TimeoutsInput() int
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_organization_access_approval_settings google_organization_access_approval_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_organization_access_approval_settings google_organization_access_approval_settings} Resource.
 func NewGoogleOrganizationAccessApprovalSettings(scope constructs.Construct, id *string, config *GoogleOrganizationAccessApprovalSettingsConfig) GoogleOrganizationAccessApprovalSettings {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewGoogleOrganizationAccessApprovalSettings(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_organization_access_approval_settings google_organization_access_approval_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_organization_access_approval_settings google_organization_access_approval_settings} Resource.
 func NewGoogleOrganizationAccessApprovalSettings_Override(g GoogleOrganizationAccessApprovalSettings, scope constructs.Construct, id *string, config *GoogleOrganizationAccessApprovalSettingsConfig) {
 	_init_.Initialize()
 

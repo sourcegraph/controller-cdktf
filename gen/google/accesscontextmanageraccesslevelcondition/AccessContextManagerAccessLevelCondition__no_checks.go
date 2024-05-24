@@ -60,6 +60,10 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelCondition) validatePutTimeouts
 	return nil
 }
 
+func (a *jsiiProxy_AccessContextManagerAccessLevelCondition) validatePutVpcNetworkSourcesParameters(value interface{}) error {
+	return nil
+}
+
 func validateAccessContextManagerAccessLevelCondition_IsConstructParameters(x interface{}) error {
 	return nil
 }

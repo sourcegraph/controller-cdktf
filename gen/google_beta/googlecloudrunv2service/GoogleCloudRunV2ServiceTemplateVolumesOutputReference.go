@@ -31,11 +31,15 @@ type GoogleCloudRunV2ServiceTemplateVolumesOutputReference interface {
 	EmptyDirInput() *GoogleCloudRunV2ServiceTemplateVolumesEmptyDir
 	// Experimental.
 	Fqn() *string
+	Gcs() GoogleCloudRunV2ServiceTemplateVolumesGcsOutputReference
+	GcsInput() *GoogleCloudRunV2ServiceTemplateVolumesGcs
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Nfs() GoogleCloudRunV2ServiceTemplateVolumesNfsOutputReference
+	NfsInput() *GoogleCloudRunV2ServiceTemplateVolumesNfs
 	Secret() GoogleCloudRunV2ServiceTemplateVolumesSecretOutputReference
 	SecretInput() *GoogleCloudRunV2ServiceTemplateVolumesSecret
 	// Experimental.
@@ -72,9 +76,13 @@ type GoogleCloudRunV2ServiceTemplateVolumesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCloudSqlInstance(value *GoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstance)
 	PutEmptyDir(value *GoogleCloudRunV2ServiceTemplateVolumesEmptyDir)
+	PutGcs(value *GoogleCloudRunV2ServiceTemplateVolumesGcs)
+	PutNfs(value *GoogleCloudRunV2ServiceTemplateVolumesNfs)
 	PutSecret(value *GoogleCloudRunV2ServiceTemplateVolumesSecret)
 	ResetCloudSqlInstance()
 	ResetEmptyDir()
+	ResetGcs()
+	ResetNfs()
 	ResetSecret()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -171,6 +179,26 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesOutputReference) Fqn() 
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesOutputReference) Gcs() GoogleCloudRunV2ServiceTemplateVolumesGcsOutputReference {
+	var returns GoogleCloudRunV2ServiceTemplateVolumesGcsOutputReference
+	_jsii_.Get(
+		j,
+		"gcs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesOutputReference) GcsInput() *GoogleCloudRunV2ServiceTemplateVolumesGcs {
+	var returns *GoogleCloudRunV2ServiceTemplateVolumesGcs
+	_jsii_.Get(
+		j,
+		"gcsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -196,6 +224,26 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesOutputReference) NameIn
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesOutputReference) Nfs() GoogleCloudRunV2ServiceTemplateVolumesNfsOutputReference {
+	var returns GoogleCloudRunV2ServiceTemplateVolumesNfsOutputReference
+	_jsii_.Get(
+		j,
+		"nfs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesOutputReference) NfsInput() *GoogleCloudRunV2ServiceTemplateVolumesNfs {
+	var returns *GoogleCloudRunV2ServiceTemplateVolumesNfs
+	_jsii_.Get(
+		j,
+		"nfsInput",
 		&returns,
 	)
 	return returns
@@ -543,6 +591,28 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesOutputReference) PutEmp
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesOutputReference) PutGcs(value *GoogleCloudRunV2ServiceTemplateVolumesGcs) {
+	if err := g.validatePutGcsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGcs",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesOutputReference) PutNfs(value *GoogleCloudRunV2ServiceTemplateVolumesNfs) {
+	if err := g.validatePutNfsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNfs",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesOutputReference) PutSecret(value *GoogleCloudRunV2ServiceTemplateVolumesSecret) {
 	if err := g.validatePutSecretParameters(value); err != nil {
 		panic(err)
@@ -566,6 +636,22 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesOutputReference) ResetE
 	_jsii_.InvokeVoid(
 		g,
 		"resetEmptyDir",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesOutputReference) ResetGcs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGcs",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesOutputReference) ResetNfs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNfs",
 		nil, // no parameters
 	)
 }

@@ -48,7 +48,15 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutAdvanc
 	return nil
 }
 
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutConfidentialNodesParameters(value *ContainerNodePoolNodeConfigConfidentialNodes) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutEphemeralStorageLocalSsdConfigParameters(value *ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutFastSocketParameters(value *ContainerNodePoolNodeConfigFastSocket) error {
 	return nil
 }
 
@@ -81,6 +89,10 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutLocalN
 }
 
 func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutReservationAffinityParameters(value *ContainerNodePoolNodeConfigReservationAffinity) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutSecondaryBootDisksParameters(value interface{}) error {
 	return nil
 }
 
@@ -121,6 +133,10 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetDiskSi
 }
 
 func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetDiskTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetEnableConfidentialStorageParameters(val interface{}) error {
 	return nil
 }
 
@@ -169,6 +185,10 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetPreemp
 }
 
 func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetResourceLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetResourceManagerTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

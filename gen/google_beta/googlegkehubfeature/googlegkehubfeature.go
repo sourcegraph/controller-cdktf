@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlegkehubfeature/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_gke_hub_feature google_gke_hub_feature}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_gke_hub_feature google_gke_hub_feature}.
 type GoogleGkeHubFeature interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -30,6 +30,9 @@ type GoogleGkeHubFeature interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
+	FleetDefaultMemberConfig() GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference
+	FleetDefaultMemberConfigInput() *GoogleGkeHubFeatureFleetDefaultMemberConfig
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -75,6 +78,7 @@ type GoogleGkeHubFeature interface {
 	State() GoogleGkeHubFeatureStateList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -107,8 +111,10 @@ type GoogleGkeHubFeature interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFleetDefaultMemberConfig(value *GoogleGkeHubFeatureFleetDefaultMemberConfig)
 	PutSpec(value *GoogleGkeHubFeatureSpec)
 	PutTimeouts(value *GoogleGkeHubFeatureTimeouts)
+	ResetFleetDefaultMemberConfig()
 	ResetId()
 	ResetLabels()
 	ResetName()
@@ -198,6 +204,36 @@ func (j *jsiiProxy_GoogleGkeHubFeature) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeature) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeature) FleetDefaultMemberConfig() GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference {
+	var returns GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference
+	_jsii_.Get(
+		j,
+		"fleetDefaultMemberConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeature) FleetDefaultMemberConfigInput() *GoogleGkeHubFeatureFleetDefaultMemberConfig {
+	var returns *GoogleGkeHubFeatureFleetDefaultMemberConfig
+	_jsii_.Get(
+		j,
+		"fleetDefaultMemberConfigInput",
 		&returns,
 	)
 	return returns
@@ -433,6 +469,16 @@ func (j *jsiiProxy_GoogleGkeHubFeature) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
+func (j *jsiiProxy_GoogleGkeHubFeature) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleGkeHubFeature) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -484,7 +530,7 @@ func (j *jsiiProxy_GoogleGkeHubFeature) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_gke_hub_feature google_gke_hub_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_gke_hub_feature google_gke_hub_feature} Resource.
 func NewGoogleGkeHubFeature(scope constructs.Construct, id *string, config *GoogleGkeHubFeatureConfig) GoogleGkeHubFeature {
 	_init_.Initialize()
 
@@ -502,7 +548,7 @@ func NewGoogleGkeHubFeature(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_gke_hub_feature google_gke_hub_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_gke_hub_feature google_gke_hub_feature} Resource.
 func NewGoogleGkeHubFeature_Override(g GoogleGkeHubFeature, scope constructs.Construct, id *string, config *GoogleGkeHubFeatureConfig) {
 	_init_.Initialize()
 
@@ -902,6 +948,17 @@ func (g *jsiiProxy_GoogleGkeHubFeature) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (g *jsiiProxy_GoogleGkeHubFeature) PutFleetDefaultMemberConfig(value *GoogleGkeHubFeatureFleetDefaultMemberConfig) {
+	if err := g.validatePutFleetDefaultMemberConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putFleetDefaultMemberConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeature) PutSpec(value *GoogleGkeHubFeatureSpec) {
 	if err := g.validatePutSpecParameters(value); err != nil {
 		panic(err)
@@ -921,6 +978,14 @@ func (g *jsiiProxy_GoogleGkeHubFeature) PutTimeouts(value *GoogleGkeHubFeatureTi
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeHubFeature) ResetFleetDefaultMemberConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFleetDefaultMemberConfig",
+		nil, // no parameters
 	)
 }
 

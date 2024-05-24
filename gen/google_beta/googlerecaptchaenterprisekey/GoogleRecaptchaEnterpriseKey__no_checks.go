@@ -68,6 +68,10 @@ func (g *jsiiProxy_GoogleRecaptchaEnterpriseKey) validatePutTimeoutsParameters(v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleRecaptchaEnterpriseKey) validatePutWafSettingsParameters(value *GoogleRecaptchaEnterpriseKeyWafSettings) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleRecaptchaEnterpriseKey) validatePutWebSettingsParameters(value *GoogleRecaptchaEnterpriseKeyWebSettings) error {
 	return nil
 }

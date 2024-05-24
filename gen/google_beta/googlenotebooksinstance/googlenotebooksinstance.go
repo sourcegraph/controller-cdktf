@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenotebooksinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_notebooks_instance google_notebooks_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_notebooks_instance google_notebooks_instance}.
 type GoogleNotebooksInstance interface {
 	cdktf.TerraformResource
 	AcceleratorConfig() GoogleNotebooksInstanceAcceleratorConfigOutputReference
@@ -50,9 +50,13 @@ type GoogleNotebooksInstance interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DesiredState() *string
+	SetDesiredState(val *string)
+	DesiredStateInput() *string
 	DiskEncryption() *string
 	SetDiskEncryption(val *string)
 	DiskEncryptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -145,6 +149,7 @@ type GoogleNotebooksInstance interface {
 	TagsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -195,6 +200,7 @@ type GoogleNotebooksInstance interface {
 	ResetCustomGpuDriverPath()
 	ResetDataDiskSizeGb()
 	ResetDataDiskType()
+	ResetDesiredState()
 	ResetDiskEncryption()
 	ResetId()
 	ResetInstallGpuDriver()
@@ -446,6 +452,26 @@ func (j *jsiiProxy_GoogleNotebooksInstance) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNotebooksInstance) DesiredState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"desiredState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNotebooksInstance) DesiredStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"desiredStateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNotebooksInstance) DiskEncryption() *string {
 	var returns *string
 	_jsii_.Get(
@@ -461,6 +487,16 @@ func (j *jsiiProxy_GoogleNotebooksInstance) DiskEncryptionInput() *string {
 	_jsii_.Get(
 		j,
 		"diskEncryptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNotebooksInstance) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -1016,6 +1052,16 @@ func (j *jsiiProxy_GoogleNotebooksInstance) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNotebooksInstance) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNotebooksInstance) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -1097,7 +1143,7 @@ func (j *jsiiProxy_GoogleNotebooksInstance) VmImageInput() *GoogleNotebooksInsta
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_notebooks_instance google_notebooks_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_notebooks_instance google_notebooks_instance} Resource.
 func NewGoogleNotebooksInstance(scope constructs.Construct, id *string, config *GoogleNotebooksInstanceConfig) GoogleNotebooksInstance {
 	_init_.Initialize()
 
@@ -1115,7 +1161,7 @@ func NewGoogleNotebooksInstance(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_notebooks_instance google_notebooks_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_notebooks_instance google_notebooks_instance} Resource.
 func NewGoogleNotebooksInstance_Override(g GoogleNotebooksInstance, scope constructs.Construct, id *string, config *GoogleNotebooksInstanceConfig) {
 	_init_.Initialize()
 
@@ -1218,6 +1264,17 @@ func (j *jsiiProxy_GoogleNotebooksInstance)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNotebooksInstance)SetDesiredState(val *string) {
+	if err := j.validateSetDesiredStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"desiredState",
 		val,
 	)
 }
@@ -1894,6 +1951,14 @@ func (g *jsiiProxy_GoogleNotebooksInstance) ResetDataDiskType() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDataDiskType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNotebooksInstance) ResetDesiredState() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDesiredState",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleidentityplatformconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_identity_platform_config google_identity_platform_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_identity_platform_config google_identity_platform_config}.
 type GoogleIdentityPlatformConfig interface {
 	cdktf.TerraformResource
 	AuthorizedDomains() *[]*string
@@ -22,6 +22,8 @@ type GoogleIdentityPlatformConfig interface {
 	BlockingFunctionsInput() *GoogleIdentityPlatformConfigBlockingFunctions
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Client() GoogleIdentityPlatformConfigClientOutputReference
+	ClientInput() *GoogleIdentityPlatformConfigClient
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -51,6 +53,12 @@ type GoogleIdentityPlatformConfig interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Mfa() GoogleIdentityPlatformConfigMfaOutputReference
+	MfaInput() *GoogleIdentityPlatformConfigMfa
+	Monitoring() GoogleIdentityPlatformConfigMonitoringOutputReference
+	MonitoringInput() *GoogleIdentityPlatformConfigMonitoring
+	MultiTenant() GoogleIdentityPlatformConfigMultiTenantOutputReference
+	MultiTenantInput() *GoogleIdentityPlatformConfigMultiTenant
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -69,6 +77,10 @@ type GoogleIdentityPlatformConfig interface {
 	QuotaInput() *GoogleIdentityPlatformConfigQuota
 	// Experimental.
 	RawOverrides() interface{}
+	SignIn() GoogleIdentityPlatformConfigSignInOutputReference
+	SignInInput() *GoogleIdentityPlatformConfigSignIn
+	SmsRegionConfig() GoogleIdentityPlatformConfigSmsRegionConfigOutputReference
+	SmsRegionConfigInput() *GoogleIdentityPlatformConfigSmsRegionConfig
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -103,17 +115,29 @@ type GoogleIdentityPlatformConfig interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutBlockingFunctions(value *GoogleIdentityPlatformConfigBlockingFunctions)
+	PutClient(value *GoogleIdentityPlatformConfigClient)
+	PutMfa(value *GoogleIdentityPlatformConfigMfa)
+	PutMonitoring(value *GoogleIdentityPlatformConfigMonitoring)
+	PutMultiTenant(value *GoogleIdentityPlatformConfigMultiTenant)
 	PutQuota(value *GoogleIdentityPlatformConfigQuota)
+	PutSignIn(value *GoogleIdentityPlatformConfigSignIn)
+	PutSmsRegionConfig(value *GoogleIdentityPlatformConfigSmsRegionConfig)
 	PutTimeouts(value *GoogleIdentityPlatformConfigTimeouts)
 	ResetAuthorizedDomains()
 	ResetAutodeleteAnonymousUsers()
 	ResetBlockingFunctions()
+	ResetClient()
 	ResetId()
+	ResetMfa()
+	ResetMonitoring()
+	ResetMultiTenant()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetQuota()
+	ResetSignIn()
+	ResetSmsRegionConfig()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -195,6 +219,26 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig) CdktfStack() cdktf.TerraformSta
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) Client() GoogleIdentityPlatformConfigClientOutputReference {
+	var returns GoogleIdentityPlatformConfigClientOutputReference
+	_jsii_.Get(
+		j,
+		"client",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) ClientInput() *GoogleIdentityPlatformConfigClient {
+	var returns *GoogleIdentityPlatformConfigClient
+	_jsii_.Get(
+		j,
+		"clientInput",
 		&returns,
 	)
 	return returns
@@ -300,6 +344,66 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig) Lifecycle() *cdktf.TerraformRes
 	return returns
 }
 
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) Mfa() GoogleIdentityPlatformConfigMfaOutputReference {
+	var returns GoogleIdentityPlatformConfigMfaOutputReference
+	_jsii_.Get(
+		j,
+		"mfa",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) MfaInput() *GoogleIdentityPlatformConfigMfa {
+	var returns *GoogleIdentityPlatformConfigMfa
+	_jsii_.Get(
+		j,
+		"mfaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) Monitoring() GoogleIdentityPlatformConfigMonitoringOutputReference {
+	var returns GoogleIdentityPlatformConfigMonitoringOutputReference
+	_jsii_.Get(
+		j,
+		"monitoring",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) MonitoringInput() *GoogleIdentityPlatformConfigMonitoring {
+	var returns *GoogleIdentityPlatformConfigMonitoring
+	_jsii_.Get(
+		j,
+		"monitoringInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) MultiTenant() GoogleIdentityPlatformConfigMultiTenantOutputReference {
+	var returns GoogleIdentityPlatformConfigMultiTenantOutputReference
+	_jsii_.Get(
+		j,
+		"multiTenant",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) MultiTenantInput() *GoogleIdentityPlatformConfigMultiTenant {
+	var returns *GoogleIdentityPlatformConfigMultiTenant
+	_jsii_.Get(
+		j,
+		"multiTenantInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleIdentityPlatformConfig) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -390,6 +494,46 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) SignIn() GoogleIdentityPlatformConfigSignInOutputReference {
+	var returns GoogleIdentityPlatformConfigSignInOutputReference
+	_jsii_.Get(
+		j,
+		"signIn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) SignInInput() *GoogleIdentityPlatformConfigSignIn {
+	var returns *GoogleIdentityPlatformConfigSignIn
+	_jsii_.Get(
+		j,
+		"signInInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) SmsRegionConfig() GoogleIdentityPlatformConfigSmsRegionConfigOutputReference {
+	var returns GoogleIdentityPlatformConfigSmsRegionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"smsRegionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) SmsRegionConfigInput() *GoogleIdentityPlatformConfigSmsRegionConfig {
+	var returns *GoogleIdentityPlatformConfigSmsRegionConfig
+	_jsii_.Get(
+		j,
+		"smsRegionConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleIdentityPlatformConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -441,7 +585,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_identity_platform_config google_identity_platform_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_identity_platform_config google_identity_platform_config} Resource.
 func NewGoogleIdentityPlatformConfig(scope constructs.Construct, id *string, config *GoogleIdentityPlatformConfigConfig) GoogleIdentityPlatformConfig {
 	_init_.Initialize()
 
@@ -459,7 +603,7 @@ func NewGoogleIdentityPlatformConfig(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_identity_platform_config google_identity_platform_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_identity_platform_config google_identity_platform_config} Resource.
 func NewGoogleIdentityPlatformConfig_Override(g GoogleIdentityPlatformConfig, scope constructs.Construct, id *string, config *GoogleIdentityPlatformConfigConfig) {
 	_init_.Initialize()
 
@@ -859,6 +1003,50 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutBlockingFunctions(value *Goo
 	)
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutClient(value *GoogleIdentityPlatformConfigClient) {
+	if err := g.validatePutClientParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putClient",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutMfa(value *GoogleIdentityPlatformConfigMfa) {
+	if err := g.validatePutMfaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMfa",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutMonitoring(value *GoogleIdentityPlatformConfigMonitoring) {
+	if err := g.validatePutMonitoringParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMonitoring",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutMultiTenant(value *GoogleIdentityPlatformConfigMultiTenant) {
+	if err := g.validatePutMultiTenantParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMultiTenant",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutQuota(value *GoogleIdentityPlatformConfigQuota) {
 	if err := g.validatePutQuotaParameters(value); err != nil {
 		panic(err)
@@ -866,6 +1054,28 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutQuota(value *GoogleIdentityP
 	_jsii_.InvokeVoid(
 		g,
 		"putQuota",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutSignIn(value *GoogleIdentityPlatformConfigSignIn) {
+	if err := g.validatePutSignInParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSignIn",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutSmsRegionConfig(value *GoogleIdentityPlatformConfigSmsRegionConfig) {
+	if err := g.validatePutSmsRegionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSmsRegionConfig",
 		[]interface{}{value},
 	)
 }
@@ -905,10 +1115,42 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) ResetBlockingFunctions() {
 	)
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) ResetClient() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetClient",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformConfig) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) ResetMfa() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMfa",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) ResetMonitoring() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMonitoring",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) ResetMultiTenant() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMultiTenant",
 		nil, // no parameters
 	)
 }
@@ -933,6 +1175,22 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) ResetQuota() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetQuota",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) ResetSignIn() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSignIn",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) ResetSmsRegionConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSmsRegionConfig",
 		nil, // no parameters
 	)
 }

@@ -32,9 +32,15 @@ type GoogleComputeRouterNatRulesActionOutputReference interface {
 	SourceNatActiveIps() *[]*string
 	SetSourceNatActiveIps(val *[]*string)
 	SourceNatActiveIpsInput() *[]*string
+	SourceNatActiveRanges() *[]*string
+	SetSourceNatActiveRanges(val *[]*string)
+	SourceNatActiveRangesInput() *[]*string
 	SourceNatDrainIps() *[]*string
 	SetSourceNatDrainIps(val *[]*string)
 	SourceNatDrainIpsInput() *[]*string
+	SourceNatDrainRanges() *[]*string
+	SetSourceNatDrainRanges(val *[]*string)
+	SourceNatDrainRangesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,7 +74,9 @@ type GoogleComputeRouterNatRulesActionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetSourceNatActiveIps()
+	ResetSourceNatActiveRanges()
 	ResetSourceNatDrainIps()
+	ResetSourceNatDrainRanges()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -154,6 +162,26 @@ func (j *jsiiProxy_GoogleComputeRouterNatRulesActionOutputReference) SourceNatAc
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRouterNatRulesActionOutputReference) SourceNatActiveRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceNatActiveRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNatRulesActionOutputReference) SourceNatActiveRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceNatActiveRangesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRouterNatRulesActionOutputReference) SourceNatDrainIps() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -169,6 +197,26 @@ func (j *jsiiProxy_GoogleComputeRouterNatRulesActionOutputReference) SourceNatDr
 	_jsii_.Get(
 		j,
 		"sourceNatDrainIpsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNatRulesActionOutputReference) SourceNatDrainRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceNatDrainRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNatRulesActionOutputReference) SourceNatDrainRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceNatDrainRangesInput",
 		&returns,
 	)
 	return returns
@@ -266,6 +314,17 @@ func (j *jsiiProxy_GoogleComputeRouterNatRulesActionOutputReference)SetSourceNat
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeRouterNatRulesActionOutputReference)SetSourceNatActiveRanges(val *[]*string) {
+	if err := j.validateSetSourceNatActiveRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceNatActiveRanges",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeRouterNatRulesActionOutputReference)SetSourceNatDrainIps(val *[]*string) {
 	if err := j.validateSetSourceNatDrainIpsParameters(val); err != nil {
 		panic(err)
@@ -273,6 +332,17 @@ func (j *jsiiProxy_GoogleComputeRouterNatRulesActionOutputReference)SetSourceNat
 	_jsii_.Set(
 		j,
 		"sourceNatDrainIps",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNatRulesActionOutputReference)SetSourceNatDrainRanges(val *[]*string) {
+	if err := j.validateSetSourceNatDrainRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceNatDrainRanges",
 		val,
 	)
 }
@@ -493,10 +563,26 @@ func (g *jsiiProxy_GoogleComputeRouterNatRulesActionOutputReference) ResetSource
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRouterNatRulesActionOutputReference) ResetSourceNatActiveRanges() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceNatActiveRanges",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRouterNatRulesActionOutputReference) ResetSourceNatDrainIps() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSourceNatDrainIps",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRouterNatRulesActionOutputReference) ResetSourceNatDrainRanges() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceNatDrainRanges",
 		nil, // no parameters
 	)
 }

@@ -11,8 +11,6 @@ import (
 type GoogleEventarcTriggerDestinationOutputReference interface {
 	cdktf.ComplexObject
 	CloudFunction() *string
-	SetCloudFunction(val *string)
-	CloudFunctionInput() *string
 	CloudRunService() GoogleEventarcTriggerDestinationCloudRunServiceOutputReference
 	CloudRunServiceInput() *GoogleEventarcTriggerDestinationCloudRunService
 	// the index of the complex object in a list.
@@ -34,8 +32,12 @@ type GoogleEventarcTriggerDestinationOutputReference interface {
 	Fqn() *string
 	Gke() GoogleEventarcTriggerDestinationGkeOutputReference
 	GkeInput() *GoogleEventarcTriggerDestinationGke
+	HttpEndpoint() GoogleEventarcTriggerDestinationHttpEndpointOutputReference
+	HttpEndpointInput() *GoogleEventarcTriggerDestinationHttpEndpoint
 	InternalValue() *GoogleEventarcTriggerDestination
 	SetInternalValue(val *GoogleEventarcTriggerDestination)
+	NetworkConfig() GoogleEventarcTriggerDestinationNetworkConfigOutputReference
+	NetworkConfigInput() *GoogleEventarcTriggerDestinationNetworkConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,9 +75,12 @@ type GoogleEventarcTriggerDestinationOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCloudRunService(value *GoogleEventarcTriggerDestinationCloudRunService)
 	PutGke(value *GoogleEventarcTriggerDestinationGke)
-	ResetCloudFunction()
+	PutHttpEndpoint(value *GoogleEventarcTriggerDestinationHttpEndpoint)
+	PutNetworkConfig(value *GoogleEventarcTriggerDestinationNetworkConfig)
 	ResetCloudRunService()
 	ResetGke()
+	ResetHttpEndpoint()
+	ResetNetworkConfig()
 	ResetWorkflow()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -97,16 +102,6 @@ func (j *jsiiProxy_GoogleEventarcTriggerDestinationOutputReference) CloudFunctio
 	_jsii_.Get(
 		j,
 		"cloudFunction",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleEventarcTriggerDestinationOutputReference) CloudFunctionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"cloudFunctionInput",
 		&returns,
 	)
 	return returns
@@ -192,11 +187,51 @@ func (j *jsiiProxy_GoogleEventarcTriggerDestinationOutputReference) GkeInput() *
 	return returns
 }
 
+func (j *jsiiProxy_GoogleEventarcTriggerDestinationOutputReference) HttpEndpoint() GoogleEventarcTriggerDestinationHttpEndpointOutputReference {
+	var returns GoogleEventarcTriggerDestinationHttpEndpointOutputReference
+	_jsii_.Get(
+		j,
+		"httpEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleEventarcTriggerDestinationOutputReference) HttpEndpointInput() *GoogleEventarcTriggerDestinationHttpEndpoint {
+	var returns *GoogleEventarcTriggerDestinationHttpEndpoint
+	_jsii_.Get(
+		j,
+		"httpEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleEventarcTriggerDestinationOutputReference) InternalValue() *GoogleEventarcTriggerDestination {
 	var returns *GoogleEventarcTriggerDestination
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleEventarcTriggerDestinationOutputReference) NetworkConfig() GoogleEventarcTriggerDestinationNetworkConfigOutputReference {
+	var returns GoogleEventarcTriggerDestinationNetworkConfigOutputReference
+	_jsii_.Get(
+		j,
+		"networkConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleEventarcTriggerDestinationOutputReference) NetworkConfigInput() *GoogleEventarcTriggerDestinationNetworkConfig {
+	var returns *GoogleEventarcTriggerDestinationNetworkConfig
+	_jsii_.Get(
+		j,
+		"networkConfigInput",
 		&returns,
 	)
 	return returns
@@ -267,17 +302,6 @@ func NewGoogleEventarcTriggerDestinationOutputReference_Override(g GoogleEventar
 		"@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
-	)
-}
-
-func (j *jsiiProxy_GoogleEventarcTriggerDestinationOutputReference)SetCloudFunction(val *string) {
-	if err := j.validateSetCloudFunctionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"cloudFunction",
-		val,
 	)
 }
 
@@ -555,11 +579,25 @@ func (g *jsiiProxy_GoogleEventarcTriggerDestinationOutputReference) PutGke(value
 	)
 }
 
-func (g *jsiiProxy_GoogleEventarcTriggerDestinationOutputReference) ResetCloudFunction() {
+func (g *jsiiProxy_GoogleEventarcTriggerDestinationOutputReference) PutHttpEndpoint(value *GoogleEventarcTriggerDestinationHttpEndpoint) {
+	if err := g.validatePutHttpEndpointParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
-		"resetCloudFunction",
-		nil, // no parameters
+		"putHttpEndpoint",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleEventarcTriggerDestinationOutputReference) PutNetworkConfig(value *GoogleEventarcTriggerDestinationNetworkConfig) {
+	if err := g.validatePutNetworkConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNetworkConfig",
+		[]interface{}{value},
 	)
 }
 
@@ -575,6 +613,22 @@ func (g *jsiiProxy_GoogleEventarcTriggerDestinationOutputReference) ResetGke() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetGke",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleEventarcTriggerDestinationOutputReference) ResetHttpEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHttpEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleEventarcTriggerDestinationOutputReference) ResetNetworkConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkConfig",
 		nil, // no parameters
 	)
 }

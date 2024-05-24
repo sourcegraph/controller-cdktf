@@ -1,0 +1,6 @@
+package googledialogflowcxtestcase
+
+
+type GoogleDialogflowCxTestCaseLastTestResultConversationTurnsUserInputInput struct {
+}
+

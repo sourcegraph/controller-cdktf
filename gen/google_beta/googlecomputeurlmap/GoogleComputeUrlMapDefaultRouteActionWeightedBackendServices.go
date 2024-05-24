@@ -8,11 +8,11 @@ type GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices struct {
 	// request to backendService, the loadbalancer applies any relevant headerActions
 	// specified as part of this backendServiceWeight.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#backend_service GoogleComputeUrlMap#backend_service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_url_map#backend_service GoogleComputeUrlMap#backend_service}
 	BackendService *string `field:"optional" json:"backendService" yaml:"backendService"`
 	// header_action block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#header_action GoogleComputeUrlMap#header_action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_url_map#header_action GoogleComputeUrlMap#header_action}
 	HeaderAction *GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction `field:"optional" json:"headerAction" yaml:"headerAction"`
 	// Specifies the fraction of traffic sent to backendService, computed as weight / (sum of all weightedBackendService weights in routeAction) .
 	//
@@ -22,7 +22,7 @@ type GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices struct {
 	//
 	// The value must be between 0 and 1000
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_url_map#weight GoogleComputeUrlMap#weight}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_url_map#weight GoogleComputeUrlMap#weight}
 	Weight *float64 `field:"optional" json:"weight" yaml:"weight"`
 }
 

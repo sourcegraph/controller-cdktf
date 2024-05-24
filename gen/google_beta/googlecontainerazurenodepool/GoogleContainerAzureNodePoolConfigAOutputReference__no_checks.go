@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

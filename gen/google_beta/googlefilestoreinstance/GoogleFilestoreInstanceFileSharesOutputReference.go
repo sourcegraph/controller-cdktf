@@ -38,6 +38,8 @@ type GoogleFilestoreInstanceFileSharesOutputReference interface {
 	NfsExportOptions() GoogleFilestoreInstanceFileSharesNfsExportOptionsList
 	NfsExportOptionsInput() interface{}
 	SourceBackup() *string
+	SetSourceBackup(val *string)
+	SourceBackupInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,6 +74,7 @@ type GoogleFilestoreInstanceFileSharesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutNfsExportOptions(value interface{})
 	ResetNfsExportOptions()
+	ResetSourceBackup()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -207,6 +210,16 @@ func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference) SourceBacku
 	return returns
 }
 
+func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference) SourceBackupInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceBackupInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -306,6 +319,17 @@ func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference)SetName(val 
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference)SetSourceBackup(val *string) {
+	if err := j.validateSetSourceBackupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceBackup",
 		val,
 	)
 }
@@ -533,6 +557,14 @@ func (g *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference) ResetNfsExp
 	_jsii_.InvokeVoid(
 		g,
 		"resetNfsExportOptions",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference) ResetSourceBackup() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceBackup",
 		nil, // no parameters
 	)
 }

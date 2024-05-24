@@ -1,0 +1,74 @@
+//go:build no_runtime_type_checking
+
+package googleprivilegedaccessmanagerentitlement
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference) validateSetInternalValueParameters(val *GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatory) error {
+	return nil
+}
+
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

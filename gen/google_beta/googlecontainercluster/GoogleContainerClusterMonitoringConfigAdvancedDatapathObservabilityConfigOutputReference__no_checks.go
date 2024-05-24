@@ -60,7 +60,11 @@ func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObserva
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) validateSetEnableRelayParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) validateSetInternalValueParameters(val *GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig) error {
 	return nil
 }
 
@@ -76,7 +80,7 @@ func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigAdvancedDatapathObserva
 	return nil
 }
 
-func validateNewGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -31,6 +31,7 @@ type DataGoogleVmwareenginePrivateCloudManagementClusterOutputReference interfac
 	InternalValue() *DataGoogleVmwareenginePrivateCloudManagementCluster
 	SetInternalValue(val *DataGoogleVmwareenginePrivateCloudManagementCluster)
 	NodeTypeConfigs() DataGoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsList
+	StretchedClusterConfig() DataGoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfigList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -143,6 +144,16 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloudManagementClusterOutputRefe
 	_jsii_.Get(
 		j,
 		"nodeTypeConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloudManagementClusterOutputReference) StretchedClusterConfig() DataGoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfigList {
+	var returns DataGoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfigList
+	_jsii_.Get(
+		j,
+		"stretchedClusterConfig",
 		&returns,
 	)
 	return returns

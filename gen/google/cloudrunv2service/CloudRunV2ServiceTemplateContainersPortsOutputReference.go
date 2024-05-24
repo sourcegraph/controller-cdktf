@@ -30,8 +30,8 @@ type CloudRunV2ServiceTemplateContainersPortsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *CloudRunV2ServiceTemplateContainersPorts
+	SetInternalValue(val *CloudRunV2ServiceTemplateContainersPorts)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -144,8 +144,8 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) InternalValue() *CloudRunV2ServiceTemplateContainersPorts {
+	var returns *CloudRunV2ServiceTemplateContainersPorts
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -195,29 +195,29 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) Terr
 }
 
 
-func NewCloudRunV2ServiceTemplateContainersPortsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudRunV2ServiceTemplateContainersPortsOutputReference {
+func NewCloudRunV2ServiceTemplateContainersPortsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudRunV2ServiceTemplateContainersPortsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewCloudRunV2ServiceTemplateContainersPortsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewCloudRunV2ServiceTemplateContainersPortsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersPortsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewCloudRunV2ServiceTemplateContainersPortsOutputReference_Override(c CloudRunV2ServiceTemplateContainersPortsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewCloudRunV2ServiceTemplateContainersPortsOutputReference_Override(c CloudRunV2ServiceTemplateContainersPortsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersPortsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
 }
@@ -255,7 +255,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference)SetInternalValue(val *CloudRunV2ServiceTemplateContainersPorts) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

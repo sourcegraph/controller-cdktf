@@ -22,6 +22,7 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConfidentialNodes() DataGoogleContainerClusterNodeConfigConfidentialNodesList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -29,8 +30,11 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	CreationStack() *[]*string
 	DiskSizeGb() *float64
 	DiskType() *string
+	EffectiveTaints() DataGoogleContainerClusterNodeConfigEffectiveTaintsList
+	EnableConfidentialStorage() cdktf.IResolvable
 	EphemeralStorageConfig() DataGoogleContainerClusterNodeConfigEphemeralStorageConfigList
 	EphemeralStorageLocalSsdConfig() DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList
+	FastSocket() DataGoogleContainerClusterNodeConfigFastSocketList
 	// Experimental.
 	Fqn() *string
 	GcfsConfig() DataGoogleContainerClusterNodeConfigGcfsConfigList
@@ -54,7 +58,9 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	Preemptible() cdktf.IResolvable
 	ReservationAffinity() DataGoogleContainerClusterNodeConfigReservationAffinityList
 	ResourceLabels() cdktf.StringMap
+	ResourceManagerTags() cdktf.StringMap
 	SandboxConfig() DataGoogleContainerClusterNodeConfigSandboxConfigList
+	SecondaryBootDisks() DataGoogleContainerClusterNodeConfigSecondaryBootDisksList
 	ServiceAccount() *string
 	ShieldedInstanceConfig() DataGoogleContainerClusterNodeConfigShieldedInstanceConfigList
 	SoleTenantConfig() DataGoogleContainerClusterNodeConfigSoleTenantConfigList
@@ -149,6 +155,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) ComplexO
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) ConfidentialNodes() DataGoogleContainerClusterNodeConfigConfidentialNodesList {
+	var returns DataGoogleContainerClusterNodeConfigConfidentialNodesList
+	_jsii_.Get(
+		j,
+		"confidentialNodes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -179,6 +195,26 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) DiskType
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) EffectiveTaints() DataGoogleContainerClusterNodeConfigEffectiveTaintsList {
+	var returns DataGoogleContainerClusterNodeConfigEffectiveTaintsList
+	_jsii_.Get(
+		j,
+		"effectiveTaints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) EnableConfidentialStorage() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableConfidentialStorage",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) EphemeralStorageConfig() DataGoogleContainerClusterNodeConfigEphemeralStorageConfigList {
 	var returns DataGoogleContainerClusterNodeConfigEphemeralStorageConfigList
 	_jsii_.Get(
@@ -194,6 +230,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) Ephemera
 	_jsii_.Get(
 		j,
 		"ephemeralStorageLocalSsdConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) FastSocket() DataGoogleContainerClusterNodeConfigFastSocketList {
+	var returns DataGoogleContainerClusterNodeConfigFastSocketList
+	_jsii_.Get(
+		j,
+		"fastSocket",
 		&returns,
 	)
 	return returns
@@ -409,11 +455,31 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) Resource
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) ResourceManagerTags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"resourceManagerTags",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) SandboxConfig() DataGoogleContainerClusterNodeConfigSandboxConfigList {
 	var returns DataGoogleContainerClusterNodeConfigSandboxConfigList
 	_jsii_.Get(
 		j,
 		"sandboxConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) SecondaryBootDisks() DataGoogleContainerClusterNodeConfigSecondaryBootDisksList {
+	var returns DataGoogleContainerClusterNodeConfigSecondaryBootDisksList
+	_jsii_.Get(
+		j,
+		"secondaryBootDisks",
 		&returns,
 	)
 	return returns

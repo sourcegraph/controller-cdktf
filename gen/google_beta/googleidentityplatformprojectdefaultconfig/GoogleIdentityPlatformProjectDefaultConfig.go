@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleidentityplatformprojectdefaultconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_identity_platform_project_default_config google_identity_platform_project_default_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_identity_platform_project_default_config google_identity_platform_project_default_config}.
 type GoogleIdentityPlatformProjectDefaultConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -369,7 +369,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformProjectDefaultConfig) TimeoutsInput() i
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_identity_platform_project_default_config google_identity_platform_project_default_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_identity_platform_project_default_config google_identity_platform_project_default_config} Resource.
 func NewGoogleIdentityPlatformProjectDefaultConfig(scope constructs.Construct, id *string, config *GoogleIdentityPlatformProjectDefaultConfigConfig) GoogleIdentityPlatformProjectDefaultConfig {
 	_init_.Initialize()
 
@@ -387,7 +387,7 @@ func NewGoogleIdentityPlatformProjectDefaultConfig(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_identity_platform_project_default_config google_identity_platform_project_default_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_identity_platform_project_default_config google_identity_platform_project_default_config} Resource.
 func NewGoogleIdentityPlatformProjectDefaultConfig_Override(g GoogleIdentityPlatformProjectDefaultConfig, scope constructs.Construct, id *string, config *GoogleIdentityPlatformProjectDefaultConfigConfig) {
 	_init_.Initialize()
 
