@@ -4,6 +4,10 @@ package directlightstep
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DirectLightstep) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectLightstep) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DirectLightstep) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (d *jsiiProxy_DirectLightstep) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectLightstep) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectLightstep) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectLightstep) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectLightstep) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (d *jsiiProxy_DirectLightstep) validatePutHistoricalDataRetrievalParameters
 }
 
 func (d *jsiiProxy_DirectLightstep) validatePutQueryDelayParameters(value *DirectLightstepQueryDelay) error {
+	return nil
+}
+
+func validateDirectLightstep_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

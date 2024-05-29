@@ -4,6 +4,10 @@ package cloudquotasquotapreference
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudQuotasQuotaPreference) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudQuotasQuotaPreference) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) validateGetStringMapAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_CloudQuotasQuotaPreference) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudQuotasQuotaPreference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudQuotasQuotaPreference) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudQuotasQuotaPreference) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudQuotasQuotaPreference) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) validatePutQuotaConfigParameters(
 }
 
 func (c *jsiiProxy_CloudQuotasQuotaPreference) validatePutTimeoutsParameters(value *CloudQuotasQuotaPreferenceTimeouts) error {
+	return nil
+}
+
+func validateCloudQuotasQuotaPreference_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

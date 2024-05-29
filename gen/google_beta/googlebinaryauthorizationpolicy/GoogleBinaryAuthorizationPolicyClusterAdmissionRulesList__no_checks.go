@@ -4,6 +4,10 @@ package googlebinaryauthorizationpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBinaryAuthorizationPolicyClusterAdmissionRulesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBinaryAuthorizationPolicyClusterAdmissionRulesList) validateGetParameters(index *float64) error {
 	return nil
 }

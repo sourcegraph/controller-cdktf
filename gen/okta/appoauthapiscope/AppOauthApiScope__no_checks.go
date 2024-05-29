@@ -4,6 +4,10 @@ package appoauthapiscope
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppOauthApiScope) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppOauthApiScope) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (a *jsiiProxy_AppOauthApiScope) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (a *jsiiProxy_AppOauthApiScope) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppOauthApiScope) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AppOauthApiScope) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppOauthApiScope) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppOauthApiScope) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppOauthApiScope) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAppOauthApiScope_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -22,7 +22,7 @@ type ProjectDefaultServiceAccountsConfig struct {
 	// The action to be performed in the default service accounts.
 	//
 	// Valid values are: DEPRIVILEGE, DELETE, DISABLE.
-	// Note that DEPRIVILEGE action will ignore the REVERT configuration in the restore_policy.
+	// 				Note that DEPRIVILEGE action will ignore the REVERT configuration in the restore_policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/project_default_service_accounts#action ProjectDefaultServiceAccounts#action}
 	Action *string `field:"required" json:"action" yaml:"action"`

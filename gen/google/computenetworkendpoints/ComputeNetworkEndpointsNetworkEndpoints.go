@@ -17,7 +17,7 @@ type ComputeNetworkEndpointsNetworkEndpoints struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_network_endpoints#instance ComputeNetworkEndpoints#instance}
 	Instance *string `field:"optional" json:"instance" yaml:"instance"`
-	// Port number of network endpoint. *Note** 'port' is required unless the Network Endpoint Group is created with the type of 'GCE_VM_IP'.
+	// Port number of network endpoint. **Note** 'port' is required unless the Network Endpoint Group is created with the type of 'GCE_VM_IP'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_network_endpoints#port ComputeNetworkEndpoints#port}
 	Port *float64 `field:"optional" json:"port" yaml:"port"`

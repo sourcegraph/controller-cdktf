@@ -4,6 +4,10 @@ package googlesecuritypostureposture
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleSecurityposturePosture) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSecurityposturePosture) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleSecurityposturePosture) validateGetStringMapAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSecurityposturePosture) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSecurityposturePosture) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecurityposturePosture) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecurityposturePosture) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecurityposturePosture) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleSecurityposturePosture) validatePutPolicySetsParameters
 }
 
 func (g *jsiiProxy_GoogleSecurityposturePosture) validatePutTimeoutsParameters(value *GoogleSecurityposturePostureTimeouts) error {
+	return nil
+}
+
+func validateGoogleSecurityposturePosture_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

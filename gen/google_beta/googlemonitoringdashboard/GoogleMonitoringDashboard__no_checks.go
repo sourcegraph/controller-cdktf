@@ -4,6 +4,10 @@ package googlemonitoringdashboard
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleMonitoringDashboard) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringDashboard) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleMonitoringDashboard) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMonitoringDashboard) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringDashboard) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMonitoringDashboard) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMonitoringDashboard) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMonitoringDashboard) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleMonitoringDashboard) validateOverrideLogicalIdParameter
 }
 
 func (g *jsiiProxy_GoogleMonitoringDashboard) validatePutTimeoutsParameters(value *GoogleMonitoringDashboardTimeouts) error {
+	return nil
+}
+
+func validateGoogleMonitoringDashboard_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package googleapphubworkload
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleApphubWorkloadAttributesDeveloperOwnersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApphubWorkloadAttributesDeveloperOwnersList) validateGetParameters(index *float64) error {
 	return nil
 }

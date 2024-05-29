@@ -4,6 +4,10 @@ package googlednsmanagedzoneiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDnsManagedZoneIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDnsManagedZoneIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleDnsManagedZoneIamMember) validateGetStringMapAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDnsManagedZoneIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDnsManagedZoneIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDnsManagedZoneIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDnsManagedZoneIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDnsManagedZoneIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleDnsManagedZoneIamMember) validateOverrideLogicalIdParam
 }
 
 func (g *jsiiProxy_GoogleDnsManagedZoneIamMember) validatePutConditionParameters(value *GoogleDnsManagedZoneIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleDnsManagedZoneIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

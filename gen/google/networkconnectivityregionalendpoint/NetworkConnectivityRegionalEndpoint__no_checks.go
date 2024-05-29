@@ -4,6 +4,10 @@ package networkconnectivityregionalendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkConnectivityRegionalEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkConnectivityRegionalEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetworkConnectivityRegionalEndpoint) validateGetStringMapAttr
 	return nil
 }
 
+func (n *jsiiProxy_NetworkConnectivityRegionalEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkConnectivityRegionalEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkConnectivityRegionalEndpoint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkConnectivityRegionalEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkConnectivityRegionalEndpoint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NetworkConnectivityRegionalEndpoint) validateOverrideLogicalI
 }
 
 func (n *jsiiProxy_NetworkConnectivityRegionalEndpoint) validatePutTimeoutsParameters(value *NetworkConnectivityRegionalEndpointTimeouts) error {
+	return nil
+}
+
+func validateNetworkConnectivityRegionalEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

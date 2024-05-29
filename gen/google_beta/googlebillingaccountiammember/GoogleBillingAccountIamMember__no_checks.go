@@ -4,6 +4,10 @@ package googlebillingaccountiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBillingAccountIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBillingAccountIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleBillingAccountIamMember) validateGetStringMapAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBillingAccountIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBillingAccountIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBillingAccountIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBillingAccountIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBillingAccountIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleBillingAccountIamMember) validateOverrideLogicalIdParam
 }
 
 func (g *jsiiProxy_GoogleBillingAccountIamMember) validatePutConditionParameters(value *GoogleBillingAccountIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleBillingAccountIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

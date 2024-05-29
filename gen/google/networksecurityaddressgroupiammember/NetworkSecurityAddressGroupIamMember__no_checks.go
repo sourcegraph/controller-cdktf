@@ -4,6 +4,10 @@ package networksecurityaddressgroupiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkSecurityAddressGroupIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityAddressGroupIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetworkSecurityAddressGroupIamMember) validateGetStringMapAtt
 	return nil
 }
 
+func (n *jsiiProxy_NetworkSecurityAddressGroupIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityAddressGroupIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityAddressGroupIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityAddressGroupIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityAddressGroupIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NetworkSecurityAddressGroupIamMember) validateOverrideLogical
 }
 
 func (n *jsiiProxy_NetworkSecurityAddressGroupIamMember) validatePutConditionParameters(value *NetworkSecurityAddressGroupIamMemberCondition) error {
+	return nil
+}
+
+func validateNetworkSecurityAddressGroupIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

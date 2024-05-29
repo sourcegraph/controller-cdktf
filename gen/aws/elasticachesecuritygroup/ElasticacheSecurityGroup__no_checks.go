@@ -4,6 +4,10 @@ package elasticachesecuritygroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ElasticacheSecurityGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticacheSecurityGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (e *jsiiProxy_ElasticacheSecurityGroup) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (e *jsiiProxy_ElasticacheSecurityGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticacheSecurityGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_ElasticacheSecurityGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticacheSecurityGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticacheSecurityGroup) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticacheSecurityGroup) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateElasticacheSecurityGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

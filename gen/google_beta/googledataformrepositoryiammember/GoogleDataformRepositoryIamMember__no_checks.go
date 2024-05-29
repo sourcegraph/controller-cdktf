@@ -4,6 +4,10 @@ package googledataformrepositoryiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataformRepositoryIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataformRepositoryIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleDataformRepositoryIamMember) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataformRepositoryIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataformRepositoryIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataformRepositoryIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataformRepositoryIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataformRepositoryIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleDataformRepositoryIamMember) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GoogleDataformRepositoryIamMember) validatePutConditionParameters(value *GoogleDataformRepositoryIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleDataformRepositoryIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

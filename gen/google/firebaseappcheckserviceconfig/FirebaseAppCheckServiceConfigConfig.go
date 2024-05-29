@@ -22,10 +22,10 @@ type FirebaseAppCheckServiceConfigConfig struct {
 	// The identifier of the service to configure enforcement.
 	//
 	// Currently, the following service IDs are supported:
-	// firebasestorage.googleapis.com (Cloud Storage for Firebase)
-	// firebasedatabase.googleapis.com (Firebase Realtime Database)
-	// firestore.googleapis.com (Cloud Firestore)
-	// identitytoolkit.googleapis.com (Authentication)
+	//   firebasestorage.googleapis.com (Cloud Storage for Firebase)
+	//   firebasedatabase.googleapis.com (Firebase Realtime Database)
+	//   firestore.googleapis.com (Cloud Firestore)
+	//   identitytoolkit.googleapis.com (Authentication)
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/firebase_app_check_service_config#service_id FirebaseAppCheckServiceConfig#service_id}
 	ServiceId *string `field:"required" json:"serviceId" yaml:"serviceId"`

@@ -4,6 +4,10 @@ package vpcpeeringconnectionoptions
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpcPeeringConnectionOptions) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcPeeringConnectionOptions) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (v *jsiiProxy_VpcPeeringConnectionOptions) validateGetStringMapAttributePar
 	return nil
 }
 
+func (v *jsiiProxy_VpcPeeringConnectionOptions) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcPeeringConnectionOptions) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcPeeringConnectionOptions) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcPeeringConnectionOptions) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcPeeringConnectionOptions) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (v *jsiiProxy_VpcPeeringConnectionOptions) validatePutAccepterParameters(va
 }
 
 func (v *jsiiProxy_VpcPeeringConnectionOptions) validatePutRequesterParameters(value *VpcPeeringConnectionOptionsRequester) error {
+	return nil
+}
+
+func validateVpcPeeringConnectionOptions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

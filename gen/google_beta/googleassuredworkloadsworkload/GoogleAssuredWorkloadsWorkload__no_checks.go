@@ -4,6 +4,10 @@ package googleassuredworkloadsworkload
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validatePutResourceSettingsPa
 }
 
 func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validatePutTimeoutsParameters(value *GoogleAssuredWorkloadsWorkloadTimeouts) error {
+	return nil
+}
+
+func validateGoogleAssuredWorkloadsWorkload_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

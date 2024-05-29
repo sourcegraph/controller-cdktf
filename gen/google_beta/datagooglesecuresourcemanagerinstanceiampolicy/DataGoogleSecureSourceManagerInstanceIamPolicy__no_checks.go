@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleSecureSourceManagerInstanceIamPolicy) validateOverr
 	return nil
 }
 
+func validateDataGoogleSecureSourceManagerInstanceIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleSecureSourceManagerInstanceIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

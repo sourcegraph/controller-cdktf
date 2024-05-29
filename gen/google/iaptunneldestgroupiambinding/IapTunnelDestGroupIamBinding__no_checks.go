@@ -4,6 +4,10 @@ package iaptunneldestgroupiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IapTunnelDestGroupIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapTunnelDestGroupIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (i *jsiiProxy_IapTunnelDestGroupIamBinding) validateGetStringMapAttributePa
 	return nil
 }
 
+func (i *jsiiProxy_IapTunnelDestGroupIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapTunnelDestGroupIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapTunnelDestGroupIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapTunnelDestGroupIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapTunnelDestGroupIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (i *jsiiProxy_IapTunnelDestGroupIamBinding) validateOverrideLogicalIdParame
 }
 
 func (i *jsiiProxy_IapTunnelDestGroupIamBinding) validatePutConditionParameters(value *IapTunnelDestGroupIamBindingCondition) error {
+	return nil
+}
+
+func validateIapTunnelDestGroupIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

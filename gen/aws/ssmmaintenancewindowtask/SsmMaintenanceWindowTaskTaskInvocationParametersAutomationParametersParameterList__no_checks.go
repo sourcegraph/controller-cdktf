@@ -4,6 +4,10 @@ package ssmmaintenancewindowtask
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterList) validateGetParameters(index *float64) error {
 	return nil
 }

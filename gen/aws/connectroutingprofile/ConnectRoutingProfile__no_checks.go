@@ -4,6 +4,10 @@ package connectroutingprofile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConnectRoutingProfile) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectRoutingProfile) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ConnectRoutingProfile) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_ConnectRoutingProfile) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectRoutingProfile) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectRoutingProfile) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectRoutingProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectRoutingProfile) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (c *jsiiProxy_ConnectRoutingProfile) validatePutMediaConcurrenciesParameter
 }
 
 func (c *jsiiProxy_ConnectRoutingProfile) validatePutQueueConfigsParameters(value interface{}) error {
+	return nil
+}
+
+func validateConnectRoutingProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

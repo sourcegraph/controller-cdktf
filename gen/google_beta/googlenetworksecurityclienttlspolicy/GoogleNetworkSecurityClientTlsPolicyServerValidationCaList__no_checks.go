@@ -4,6 +4,10 @@ package googlenetworksecurityclienttlspolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetworkSecurityClientTlsPolicyServerValidationCaList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityClientTlsPolicyServerValidationCaList) validateGetParameters(index *float64) error {
 	return nil
 }

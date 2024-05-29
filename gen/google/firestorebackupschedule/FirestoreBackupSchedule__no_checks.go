@@ -4,6 +4,10 @@ package firestorebackupschedule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FirestoreBackupSchedule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirestoreBackupSchedule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (f *jsiiProxy_FirestoreBackupSchedule) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (f *jsiiProxy_FirestoreBackupSchedule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirestoreBackupSchedule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FirestoreBackupSchedule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FirestoreBackupSchedule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FirestoreBackupSchedule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (f *jsiiProxy_FirestoreBackupSchedule) validatePutTimeoutsParameters(value 
 }
 
 func (f *jsiiProxy_FirestoreBackupSchedule) validatePutWeeklyRecurrenceParameters(value *FirestoreBackupScheduleWeeklyRecurrence) error {
+	return nil
+}
+
+func validateFirestoreBackupSchedule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

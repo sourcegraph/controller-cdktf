@@ -4,6 +4,10 @@ package containerawsnodepool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ContainerAwsNodePool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAwsNodePool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ContainerAwsNodePool) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAwsNodePool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAwsNodePool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAwsNodePool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAwsNodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAwsNodePool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -73,6 +93,10 @@ func (c *jsiiProxy_ContainerAwsNodePool) validatePutTimeoutsParameters(value *Co
 }
 
 func (c *jsiiProxy_ContainerAwsNodePool) validatePutUpdateSettingsParameters(value *ContainerAwsNodePoolUpdateSettings) error {
+	return nil
+}
+
+func validateContainerAwsNodePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

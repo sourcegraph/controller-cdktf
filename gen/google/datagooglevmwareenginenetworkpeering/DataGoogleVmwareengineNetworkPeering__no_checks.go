@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleVmwareengineNetworkPeering) validateOverrideLogical
 	return nil
 }
 
+func validateDataGoogleVmwareengineNetworkPeering_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleVmwareengineNetworkPeering_IsConstructParameters(x interface{}) error {
 	return nil
 }

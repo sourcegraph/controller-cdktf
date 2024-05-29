@@ -25,7 +25,7 @@ type GoogleHealthcareHl7V2StoreConfig struct {
 	Dataset *string `field:"required" json:"dataset" yaml:"dataset"`
 	// The resource name for the Hl7V2Store.
 	//
-	// * Changing this property may recreate the Hl7v2 store (removing all data) **
+	// ** Changing this property may recreate the Hl7v2 store (removing all data) **
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_healthcare_hl7_v2_store#name GoogleHealthcareHl7V2Store#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
@@ -48,7 +48,7 @@ type GoogleHealthcareHl7V2StoreConfig struct {
 	// Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 	//
 	//
-	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_healthcare_hl7_v2_store#labels GoogleHealthcareHl7V2Store#labels}

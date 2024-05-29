@@ -4,6 +4,10 @@ package googleaccesscontextmanagerserviceperimeterdryrunresource
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunResource) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunResource) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunResource) val
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunResource) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunResource) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunResource) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunResource) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunResource) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunResource) val
 }
 
 func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunResource) validatePutTimeoutsParameters(value *GoogleAccessContextManagerServicePerimeterDryRunResourceTimeouts) error {
+	return nil
+}
+
+func validateGoogleAccessContextManagerServicePerimeterDryRunResource_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

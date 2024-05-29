@@ -4,6 +4,10 @@ package sccorganizationcustommodule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SccOrganizationCustomModule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccOrganizationCustomModule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SccOrganizationCustomModule) validateGetStringMapAttributePar
 	return nil
 }
 
+func (s *jsiiProxy_SccOrganizationCustomModule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccOrganizationCustomModule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccOrganizationCustomModule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccOrganizationCustomModule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccOrganizationCustomModule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (s *jsiiProxy_SccOrganizationCustomModule) validatePutCustomConfigParameter
 }
 
 func (s *jsiiProxy_SccOrganizationCustomModule) validatePutTimeoutsParameters(value *SccOrganizationCustomModuleTimeouts) error {
+	return nil
+}
+
+func validateSccOrganizationCustomModule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

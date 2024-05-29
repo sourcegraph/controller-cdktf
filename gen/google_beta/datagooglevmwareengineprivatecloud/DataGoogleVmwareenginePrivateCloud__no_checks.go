@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) validateOverrideLogicalId
 	return nil
 }
 
+func validateDataGoogleVmwareenginePrivateCloud_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleVmwareenginePrivateCloud_IsConstructParameters(x interface{}) error {
 	return nil
 }

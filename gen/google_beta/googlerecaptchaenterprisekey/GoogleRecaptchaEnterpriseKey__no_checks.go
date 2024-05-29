@@ -4,6 +4,10 @@ package googlerecaptchaenterprisekey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleRecaptchaEnterpriseKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleRecaptchaEnterpriseKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleRecaptchaEnterpriseKey) validateGetStringMapAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleRecaptchaEnterpriseKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleRecaptchaEnterpriseKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleRecaptchaEnterpriseKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleRecaptchaEnterpriseKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleRecaptchaEnterpriseKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -73,6 +93,10 @@ func (g *jsiiProxy_GoogleRecaptchaEnterpriseKey) validatePutWafSettingsParameter
 }
 
 func (g *jsiiProxy_GoogleRecaptchaEnterpriseKey) validatePutWebSettingsParameters(value *GoogleRecaptchaEnterpriseKeyWebSettings) error {
+	return nil
+}
+
+func validateGoogleRecaptchaEnterpriseKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package iaptunnelinstanceiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IapTunnelInstanceIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapTunnelInstanceIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (i *jsiiProxy_IapTunnelInstanceIamMember) validateGetStringMapAttributePara
 	return nil
 }
 
+func (i *jsiiProxy_IapTunnelInstanceIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapTunnelInstanceIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapTunnelInstanceIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapTunnelInstanceIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapTunnelInstanceIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (i *jsiiProxy_IapTunnelInstanceIamMember) validateOverrideLogicalIdParamete
 }
 
 func (i *jsiiProxy_IapTunnelInstanceIamMember) validatePutConditionParameters(value *IapTunnelInstanceIamMemberCondition) error {
+	return nil
+}
+
+func validateIapTunnelInstanceIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

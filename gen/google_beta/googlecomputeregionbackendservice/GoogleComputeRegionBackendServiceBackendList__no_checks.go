@@ -4,6 +4,10 @@ package googlecomputeregionbackendservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceBackendList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionBackendServiceBackendList) validateGetParameters(index *float64) error {
 	return nil
 }

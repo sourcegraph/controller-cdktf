@@ -33,7 +33,7 @@ type GoogleCloudbuildv2RepositoryConfig struct {
 	RemoteUri *string `field:"required" json:"remoteUri" yaml:"remoteUri"`
 	// Allows clients to store small amounts of arbitrary data.
 	//
-	// *Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
+	// **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 	// Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_cloudbuildv2_repository#annotations GoogleCloudbuildv2Repository#annotations}

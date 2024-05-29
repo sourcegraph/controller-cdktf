@@ -4,6 +4,10 @@ package vertexaitensorboard
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VertexAiTensorboard) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiTensorboard) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (v *jsiiProxy_VertexAiTensorboard) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiTensorboard) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiTensorboard) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiTensorboard) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiTensorboard) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiTensorboard) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (v *jsiiProxy_VertexAiTensorboard) validatePutEncryptionSpecParameters(valu
 }
 
 func (v *jsiiProxy_VertexAiTensorboard) validatePutTimeoutsParameters(value *VertexAiTensorboardTimeouts) error {
+	return nil
+}
+
+func validateVertexAiTensorboard_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package ruleset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyUserList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyUserList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -4,6 +4,10 @@ package googlecomputesecuritypolicyrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) validateGetStringMapAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) validatePutPreconfiguredWaf
 }
 
 func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) validatePutTimeoutsParameters(value *GoogleComputeSecurityPolicyRuleTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeSecurityPolicyRuleA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

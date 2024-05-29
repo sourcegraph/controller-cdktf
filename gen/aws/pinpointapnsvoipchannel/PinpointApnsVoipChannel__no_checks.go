@@ -4,6 +4,10 @@ package pinpointapnsvoipchannel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PinpointApnsVoipChannel) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PinpointApnsVoipChannel) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (p *jsiiProxy_PinpointApnsVoipChannel) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (p *jsiiProxy_PinpointApnsVoipChannel) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PinpointApnsVoipChannel) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (p *jsiiProxy_PinpointApnsVoipChannel) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PinpointApnsVoipChannel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PinpointApnsVoipChannel) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PinpointApnsVoipChannel) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validatePinpointApnsVoipChannel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

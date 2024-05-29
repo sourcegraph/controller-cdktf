@@ -4,6 +4,10 @@ package tagstagvalueiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TagsTagValueIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TagsTagValueIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (t *jsiiProxy_TagsTagValueIamMember) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (t *jsiiProxy_TagsTagValueIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TagsTagValueIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TagsTagValueIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TagsTagValueIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TagsTagValueIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (t *jsiiProxy_TagsTagValueIamMember) validateOverrideLogicalIdParameters(ne
 }
 
 func (t *jsiiProxy_TagsTagValueIamMember) validatePutConditionParameters(value *TagsTagValueIamMemberCondition) error {
+	return nil
+}
+
+func validateTagsTagValueIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

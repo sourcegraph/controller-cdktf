@@ -73,6 +73,9 @@ type HealthcareDatasetIamMember interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -94,7 +97,22 @@ type HealthcareDatasetIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -105,6 +123,9 @@ type HealthcareDatasetIamMember interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -531,6 +552,25 @@ func (j *jsiiProxy_HealthcareDatasetIamMember)SetRole(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a HealthcareDatasetIamMember resource upon running "cdktf plan <stack-name>".
+func HealthcareDatasetIamMember_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateHealthcareDatasetIamMember_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.healthcareDatasetIamMember.HealthcareDatasetIamMember",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -613,6 +653,17 @@ func HealthcareDatasetIamMember_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (h *jsiiProxy_HealthcareDatasetIamMember) AddMoveTarget(moveTarget *string) {
+	if err := h.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (h *jsiiProxy_HealthcareDatasetIamMember) AddOverride(path *string, value interface{}) {
@@ -770,6 +821,30 @@ func (h *jsiiProxy_HealthcareDatasetIamMember) GetStringMapAttribute(terraformAt
 	return returns
 }
 
+func (h *jsiiProxy_HealthcareDatasetIamMember) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		h,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_HealthcareDatasetIamMember) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := h.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (h *jsiiProxy_HealthcareDatasetIamMember) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := h.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -784,6 +859,39 @@ func (h *jsiiProxy_HealthcareDatasetIamMember) InterpolationForAttribute(terrafo
 	)
 
 	return returns
+}
+
+func (h *jsiiProxy_HealthcareDatasetIamMember) MoveFromId(id *string) {
+	if err := h.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (h *jsiiProxy_HealthcareDatasetIamMember) MoveTo(moveTarget *string, index interface{}) {
+	if err := h.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (h *jsiiProxy_HealthcareDatasetIamMember) MoveToId(id *string) {
+	if err := h.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (h *jsiiProxy_HealthcareDatasetIamMember) OverrideLogicalId(newLogicalId *string) {
@@ -838,6 +946,32 @@ func (h *jsiiProxy_HealthcareDatasetIamMember) SynthesizeAttributes() *map[strin
 	_jsii_.Invoke(
 		h,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_HealthcareDatasetIamMember) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		h,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_HealthcareDatasetIamMember) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		h,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

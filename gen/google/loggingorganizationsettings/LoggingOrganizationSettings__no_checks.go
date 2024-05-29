@@ -4,6 +4,10 @@ package loggingorganizationsettings
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LoggingOrganizationSettings) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingOrganizationSettings) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (l *jsiiProxy_LoggingOrganizationSettings) validateGetStringMapAttributePar
 	return nil
 }
 
+func (l *jsiiProxy_LoggingOrganizationSettings) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingOrganizationSettings) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingOrganizationSettings) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingOrganizationSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingOrganizationSettings) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (l *jsiiProxy_LoggingOrganizationSettings) validateOverrideLogicalIdParamet
 }
 
 func (l *jsiiProxy_LoggingOrganizationSettings) validatePutTimeoutsParameters(value *LoggingOrganizationSettingsTimeouts) error {
+	return nil
+}
+
+func validateLoggingOrganizationSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

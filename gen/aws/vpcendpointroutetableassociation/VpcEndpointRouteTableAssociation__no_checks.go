@@ -4,6 +4,10 @@ package vpcendpointroutetableassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpcEndpointRouteTableAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEndpointRouteTableAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (v *jsiiProxy_VpcEndpointRouteTableAssociation) validateGetStringMapAttribu
 	return nil
 }
 
+func (v *jsiiProxy_VpcEndpointRouteTableAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEndpointRouteTableAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (v *jsiiProxy_VpcEndpointRouteTableAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcEndpointRouteTableAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcEndpointRouteTableAssociation) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEndpointRouteTableAssociation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateVpcEndpointRouteTableAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

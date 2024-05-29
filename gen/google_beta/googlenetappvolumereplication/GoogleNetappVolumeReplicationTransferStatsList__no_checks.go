@@ -4,6 +4,10 @@ package googlenetappvolumereplication
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetappVolumeReplicationTransferStatsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappVolumeReplicationTransferStatsList) validateGetParameters(index *float64) error {
 	return nil
 }

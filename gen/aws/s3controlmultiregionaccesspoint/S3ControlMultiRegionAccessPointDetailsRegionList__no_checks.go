@@ -4,6 +4,10 @@ package s3controlmultiregionaccesspoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionList) validateGetParameters(index *float64) error {
 	return nil
 }

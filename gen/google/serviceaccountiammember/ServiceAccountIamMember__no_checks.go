@@ -4,6 +4,10 @@ package serviceaccountiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServiceAccountIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceAccountIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_ServiceAccountIamMember) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_ServiceAccountIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceAccountIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServiceAccountIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServiceAccountIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServiceAccountIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_ServiceAccountIamMember) validateOverrideLogicalIdParameters(
 }
 
 func (s *jsiiProxy_ServiceAccountIamMember) validatePutConditionParameters(value *ServiceAccountIamMemberCondition) error {
+	return nil
+}
+
+func validateServiceAccountIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

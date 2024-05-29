@@ -4,6 +4,10 @@ package projectdefaultserviceaccounts
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_ProjectDefaultServiceAccounts) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectDefaultServiceAccounts) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) validateGetStringMapAttributeP
 	return nil
 }
 
+func (p *jsiiProxy_ProjectDefaultServiceAccounts) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectDefaultServiceAccounts) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectDefaultServiceAccounts) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectDefaultServiceAccounts) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectDefaultServiceAccounts) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) validateOverrideLogicalIdParam
 }
 
 func (p *jsiiProxy_ProjectDefaultServiceAccounts) validatePutTimeoutsParameters(value *ProjectDefaultServiceAccountsTimeouts) error {
+	return nil
+}
+
+func validateProjectDefaultServiceAccounts_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

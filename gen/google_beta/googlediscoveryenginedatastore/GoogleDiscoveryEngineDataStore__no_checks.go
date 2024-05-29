@@ -4,6 +4,10 @@ package googlediscoveryenginedatastore
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) validateOverrideLogicalIdPara
 }
 
 func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) validatePutTimeoutsParameters(value *GoogleDiscoveryEngineDataStoreTimeouts) error {
+	return nil
+}
+
+func validateGoogleDiscoveryEngineDataStore_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

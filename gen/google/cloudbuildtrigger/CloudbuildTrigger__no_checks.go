@@ -4,6 +4,10 @@ package cloudbuildtrigger
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudbuildTrigger) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudbuildTrigger) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CloudbuildTrigger) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (c *jsiiProxy_CloudbuildTrigger) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudbuildTrigger) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudbuildTrigger) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudbuildTrigger) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudbuildTrigger) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -93,6 +113,10 @@ func (c *jsiiProxy_CloudbuildTrigger) validatePutTriggerTemplateParameters(value
 }
 
 func (c *jsiiProxy_CloudbuildTrigger) validatePutWebhookConfigParameters(value *CloudbuildTriggerWebhookConfig) error {
+	return nil
+}
+
+func validateCloudbuildTrigger_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package googlecontainernodepool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigAdditionalPodNetworkConfigsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigAdditionalPodNetworkConfigsList) validateGetParameters(index *float64) error {
 	return nil
 }

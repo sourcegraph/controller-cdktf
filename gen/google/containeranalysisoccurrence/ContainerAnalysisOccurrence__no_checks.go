@@ -4,6 +4,10 @@ package containeranalysisoccurrence
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ContainerAnalysisOccurrence) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAnalysisOccurrence) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) validateGetStringMapAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAnalysisOccurrence) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAnalysisOccurrence) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAnalysisOccurrence) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAnalysisOccurrence) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAnalysisOccurrence) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) validatePutAttestationParameters
 }
 
 func (c *jsiiProxy_ContainerAnalysisOccurrence) validatePutTimeoutsParameters(value *ContainerAnalysisOccurrenceTimeouts) error {
+	return nil
+}
+
+func validateContainerAnalysisOccurrence_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

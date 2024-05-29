@@ -4,6 +4,10 @@ package vertexaideploymentresourcepool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VertexAiDeploymentResourcePool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiDeploymentResourcePool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (v *jsiiProxy_VertexAiDeploymentResourcePool) validateGetStringMapAttribute
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiDeploymentResourcePool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiDeploymentResourcePool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiDeploymentResourcePool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiDeploymentResourcePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiDeploymentResourcePool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (v *jsiiProxy_VertexAiDeploymentResourcePool) validatePutDedicatedResources
 }
 
 func (v *jsiiProxy_VertexAiDeploymentResourcePool) validatePutTimeoutsParameters(value *VertexAiDeploymentResourcePoolTimeouts) error {
+	return nil
+}
+
+func validateVertexAiDeploymentResourcePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

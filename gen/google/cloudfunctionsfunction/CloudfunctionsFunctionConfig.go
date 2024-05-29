@@ -90,8 +90,8 @@ type CloudfunctionsFunctionConfig struct {
 	KmsKeyName *string `field:"optional" json:"kmsKeyName" yaml:"kmsKeyName"`
 	// A set of key/value label pairs to assign to the function. Label keys must follow the requirements at https://cloud.google.com/resource-manager/docs/creating-managing-labels#requirements.
 	//
-	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
+	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+	// 				Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/cloudfunctions_function#labels CloudfunctionsFunction#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
@@ -151,9 +151,11 @@ type CloudfunctionsFunctionConfig struct {
 	TriggerHttp interface{} `field:"optional" json:"triggerHttp" yaml:"triggerHttp"`
 	// The VPC Network Connector that this cloud function can connect to.
 	//
-	// It can be either the fully-qualified URI, or the short name of the network connector resource. The format of this field is projects/*\/locations/*\/connectors/*.
+	// It can be either the fully-qualified URI, or the short name of the network connector resource. The format of this field is projects/* /locations/* /connectors/*.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/cloudfunctions_function#vpc_connector CloudfunctionsFunction#vpc_connector}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	VpcConnector *string `field:"optional" json:"vpcConnector" yaml:"vpcConnector"`
 	// The egress settings for the connector, controlling what traffic is diverted through it.
 	//

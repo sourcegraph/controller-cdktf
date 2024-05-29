@@ -4,6 +4,10 @@ package eventarctrigger
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EventarcTrigger) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventarcTrigger) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_EventarcTrigger) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (e *jsiiProxy_EventarcTrigger) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventarcTrigger) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventarcTrigger) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventarcTrigger) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventarcTrigger) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (e *jsiiProxy_EventarcTrigger) validatePutTimeoutsParameters(value *Eventar
 }
 
 func (e *jsiiProxy_EventarcTrigger) validatePutTransportParameters(value *EventarcTriggerTransport) error {
+	return nil
+}
+
+func validateEventarcTrigger_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

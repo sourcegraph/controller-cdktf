@@ -4,6 +4,10 @@ package useradminroles
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (u *jsiiProxy_UserAdminRoles) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserAdminRoles) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (u *jsiiProxy_UserAdminRoles) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (u *jsiiProxy_UserAdminRoles) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserAdminRoles) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (u *jsiiProxy_UserAdminRoles) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserAdminRoles) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserAdminRoles) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserAdminRoles) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateUserAdminRoles_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package slo
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SloObjectiveCountMetricsTotalLightstepList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SloObjectiveCountMetricsTotalLightstepList) validateGetParameters(index *float64) error {
 	return nil
 }

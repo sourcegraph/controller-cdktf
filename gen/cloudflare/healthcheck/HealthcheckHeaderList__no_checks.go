@@ -4,6 +4,10 @@ package healthcheck
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HealthcheckHeaderList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcheckHeaderList) validateGetParameters(index *float64) error {
 	return nil
 }

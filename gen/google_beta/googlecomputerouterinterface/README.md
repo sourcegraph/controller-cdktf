@@ -1,3 +1,3 @@
 # `google_compute_router_interface`
 
-Refer to the Terraform Registory for docs: [`google_compute_router_interface`](https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_router_interface).
+Refer to the Terraform Registry for docs: [`google_compute_router_interface`](https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_router_interface).

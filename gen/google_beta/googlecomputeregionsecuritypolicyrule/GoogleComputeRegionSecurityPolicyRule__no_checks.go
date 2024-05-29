@@ -4,6 +4,10 @@ package googlecomputeregionsecuritypolicyrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) validateGetStringMapAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -69,6 +89,10 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) validatePutRateLimitOp
 }
 
 func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) validatePutTimeoutsParameters(value *GoogleComputeRegionSecurityPolicyRuleTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeRegionSecurityPolicyRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

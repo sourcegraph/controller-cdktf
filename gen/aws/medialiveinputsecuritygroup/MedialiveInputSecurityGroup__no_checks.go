@@ -4,6 +4,10 @@ package medialiveinputsecuritygroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MedialiveInputSecurityGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveInputSecurityGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (m *jsiiProxy_MedialiveInputSecurityGroup) validateGetStringMapAttributePar
 	return nil
 }
 
+func (m *jsiiProxy_MedialiveInputSecurityGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveInputSecurityGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveInputSecurityGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveInputSecurityGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveInputSecurityGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (m *jsiiProxy_MedialiveInputSecurityGroup) validatePutTimeoutsParameters(va
 }
 
 func (m *jsiiProxy_MedialiveInputSecurityGroup) validatePutWhitelistRulesParameters(value interface{}) error {
+	return nil
+}
+
+func validateMedialiveInputSecurityGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

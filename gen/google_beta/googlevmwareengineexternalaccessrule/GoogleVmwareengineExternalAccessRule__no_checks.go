@@ -4,6 +4,10 @@ package googlevmwareengineexternalaccessrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateGetStringMapAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validatePutSourceIpRang
 }
 
 func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validatePutTimeoutsParameters(value *GoogleVmwareengineExternalAccessRuleTimeouts) error {
+	return nil
+}
+
+func validateGoogleVmwareengineExternalAccessRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

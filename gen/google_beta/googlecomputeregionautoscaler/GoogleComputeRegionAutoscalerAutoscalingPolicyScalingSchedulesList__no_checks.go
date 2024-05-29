@@ -4,6 +4,10 @@ package googlecomputeregionautoscaler
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesList) validateGetParameters(index *float64) error {
 	return nil
 }

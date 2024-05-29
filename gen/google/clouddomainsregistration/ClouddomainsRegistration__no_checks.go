@@ -4,6 +4,10 @@ package clouddomainsregistration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ClouddomainsRegistration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddomainsRegistration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ClouddomainsRegistration) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (c *jsiiProxy_ClouddomainsRegistration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddomainsRegistration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddomainsRegistration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddomainsRegistration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddomainsRegistration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -69,6 +89,10 @@ func (c *jsiiProxy_ClouddomainsRegistration) validatePutTimeoutsParameters(value
 }
 
 func (c *jsiiProxy_ClouddomainsRegistration) validatePutYearlyPriceParameters(value *ClouddomainsRegistrationYearlyPrice) error {
+	return nil
+}
+
+func validateClouddomainsRegistration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

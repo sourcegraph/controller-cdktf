@@ -4,6 +4,10 @@ package linkvalue
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LinkValue) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinkValue) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (l *jsiiProxy_LinkValue) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (l *jsiiProxy_LinkValue) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinkValue) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LinkValue) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LinkValue) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LinkValue) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinkValue) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLinkValue_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

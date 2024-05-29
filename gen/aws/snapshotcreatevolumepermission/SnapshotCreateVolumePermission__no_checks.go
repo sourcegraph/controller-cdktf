@@ -4,6 +4,10 @@ package snapshotcreatevolumepermission
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SnapshotCreateVolumePermission) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SnapshotCreateVolumePermission) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) validateGetStringMapAttribute
 	return nil
 }
 
+func (s *jsiiProxy_SnapshotCreateVolumePermission) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SnapshotCreateVolumePermission) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SnapshotCreateVolumePermission) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SnapshotCreateVolumePermission) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SnapshotCreateVolumePermission) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) validateOverrideLogicalIdPara
 }
 
 func (s *jsiiProxy_SnapshotCreateVolumePermission) validatePutTimeoutsParameters(value *SnapshotCreateVolumePermissionTimeouts) error {
+	return nil
+}
+
+func validateSnapshotCreateVolumePermission_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

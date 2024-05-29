@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleComputeForwardingRules) validateOverrideLogicalIdPa
 	return nil
 }
 
+func validateDataGoogleComputeForwardingRules_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleComputeForwardingRules_IsConstructParameters(x interface{}) error {
 	return nil
 }

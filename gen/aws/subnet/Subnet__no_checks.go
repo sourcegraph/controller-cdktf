@@ -4,6 +4,10 @@ package subnet
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_Subnet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Subnet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_Subnet) validateGetStringMapAttributeParameters(terraformAttr
 	return nil
 }
 
+func (s *jsiiProxy_Subnet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Subnet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_Subnet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_Subnet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_Subnet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_Subnet) validateOverrideLogicalIdParameters(newLogicalId *str
 }
 
 func (s *jsiiProxy_Subnet) validatePutTimeoutsParameters(value *SubnetTimeouts) error {
+	return nil
+}
+
+func validateSubnet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

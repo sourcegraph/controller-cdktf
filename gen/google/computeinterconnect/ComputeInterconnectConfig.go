@@ -27,8 +27,8 @@ type ComputeInterconnectConfig struct {
 	//
 	// Note that a value IT_PRIVATE has been deprecated in favor of DEDICATED.
 	// Can take one of the following values:
-	// - PARTNER: A partner-managed interconnection shared between customers though a partner.
-	// - DEDICATED: A dedicated physical interconnection with the customer. Possible values: ["DEDICATED", "PARTNER", "IT_PRIVATE"]
+	//   - PARTNER: A partner-managed interconnection shared between customers though a partner.
+	//   - DEDICATED: A dedicated physical interconnection with the customer. Possible values: ["DEDICATED", "PARTNER", "IT_PRIVATE"]
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_interconnect#interconnect_type ComputeInterconnect#interconnect_type}
 	InterconnectType *string `field:"required" json:"interconnectType" yaml:"interconnectType"`
@@ -36,8 +36,8 @@ type ComputeInterconnectConfig struct {
 	//
 	// Note that this field indicates the speed of each of the links in the
 	// bundle, not the speed of the entire bundle. Can take one of the following values:
-	// - LINK_TYPE_ETHERNET_10G_LR: A 10G Ethernet with LR optics.
-	// - LINK_TYPE_ETHERNET_100G_LR: A 100G Ethernet with LR optics. Possible values: ["LINK_TYPE_ETHERNET_10G_LR", "LINK_TYPE_ETHERNET_100G_LR"]
+	//   - LINK_TYPE_ETHERNET_10G_LR: A 10G Ethernet with LR optics.
+	//   - LINK_TYPE_ETHERNET_100G_LR: A 100G Ethernet with LR optics. Possible values: ["LINK_TYPE_ETHERNET_10G_LR", "LINK_TYPE_ETHERNET_100G_LR"]
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_interconnect#link_type ComputeInterconnect#link_type}
 	LinkType *string `field:"required" json:"linkType" yaml:"linkType"`
@@ -82,7 +82,7 @@ type ComputeInterconnectConfig struct {
 	// method. Each label key/value pair must comply with RFC1035. Label values may be empty.
 	//
 	//
-	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_interconnect#labels ComputeInterconnect#labels}

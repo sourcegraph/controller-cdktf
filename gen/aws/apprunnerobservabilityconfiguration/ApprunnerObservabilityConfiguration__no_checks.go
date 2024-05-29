@@ -4,6 +4,10 @@ package apprunnerobservabilityconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApprunnerObservabilityConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApprunnerObservabilityConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_ApprunnerObservabilityConfiguration) validateGetStringMapAttr
 	return nil
 }
 
+func (a *jsiiProxy_ApprunnerObservabilityConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApprunnerObservabilityConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApprunnerObservabilityConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApprunnerObservabilityConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApprunnerObservabilityConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (a *jsiiProxy_ApprunnerObservabilityConfiguration) validateOverrideLogicalI
 }
 
 func (a *jsiiProxy_ApprunnerObservabilityConfiguration) validatePutTraceConfigurationParameters(value *ApprunnerObservabilityConfigurationTraceConfiguration) error {
+	return nil
+}
+
+func validateApprunnerObservabilityConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

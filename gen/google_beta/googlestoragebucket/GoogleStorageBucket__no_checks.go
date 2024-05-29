@@ -4,6 +4,10 @@ package googlestoragebucket
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleStorageBucket) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageBucket) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleStorageBucket) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageBucket) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageBucket) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageBucket) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageBucket) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageBucket) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -93,6 +113,10 @@ func (g *jsiiProxy_GoogleStorageBucket) validatePutVersioningParameters(value *G
 }
 
 func (g *jsiiProxy_GoogleStorageBucket) validatePutWebsiteParameters(value *GoogleStorageBucketWebsite) error {
+	return nil
+}
+
+func validateGoogleStorageBucket_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

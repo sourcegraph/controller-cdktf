@@ -4,6 +4,10 @@ package networksecuritysecurityprofilegroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkSecuritySecurityProfileGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecuritySecurityProfileGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileGroup) validateGetStringMapAttr
 	return nil
 }
 
+func (n *jsiiProxy_NetworkSecuritySecurityProfileGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecuritySecurityProfileGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecuritySecurityProfileGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecuritySecurityProfileGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecuritySecurityProfileGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileGroup) validateOverrideLogicalI
 }
 
 func (n *jsiiProxy_NetworkSecuritySecurityProfileGroup) validatePutTimeoutsParameters(value *NetworkSecuritySecurityProfileGroupTimeouts) error {
+	return nil
+}
+
+func validateNetworkSecuritySecurityProfileGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

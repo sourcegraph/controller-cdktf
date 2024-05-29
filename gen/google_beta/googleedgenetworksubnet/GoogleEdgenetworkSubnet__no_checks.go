@@ -4,6 +4,10 @@ package googleedgenetworksubnet
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleEdgenetworkSubnet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEdgenetworkSubnet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleEdgenetworkSubnet) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEdgenetworkSubnet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEdgenetworkSubnet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEdgenetworkSubnet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEdgenetworkSubnet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEdgenetworkSubnet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleEdgenetworkSubnet) validateOverrideLogicalIdParameters(
 }
 
 func (g *jsiiProxy_GoogleEdgenetworkSubnet) validatePutTimeoutsParameters(value *GoogleEdgenetworkSubnetTimeouts) error {
+	return nil
+}
+
+func validateGoogleEdgenetworkSubnet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

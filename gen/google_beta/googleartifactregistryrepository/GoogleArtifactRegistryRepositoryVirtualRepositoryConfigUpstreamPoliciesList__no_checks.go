@@ -4,6 +4,10 @@ package googleartifactregistryrepository
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList) validateGetParameters(index *float64) error {
 	return nil
 }

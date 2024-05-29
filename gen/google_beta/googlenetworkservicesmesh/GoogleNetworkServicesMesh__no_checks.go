@@ -4,6 +4,10 @@ package googlenetworkservicesmesh
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetworkServicesMesh) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesMesh) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleNetworkServicesMesh) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesMesh) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesMesh) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesMesh) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesMesh) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesMesh) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleNetworkServicesMesh) validateOverrideLogicalIdParameter
 }
 
 func (g *jsiiProxy_GoogleNetworkServicesMesh) validatePutTimeoutsParameters(value *GoogleNetworkServicesMeshTimeouts) error {
+	return nil
+}
+
+func validateGoogleNetworkServicesMesh_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

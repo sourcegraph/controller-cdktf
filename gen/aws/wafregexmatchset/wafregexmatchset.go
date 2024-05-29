@@ -67,6 +67,9 @@ type WafRegexMatchSet interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -88,7 +91,22 @@ type WafRegexMatchSet interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -99,6 +117,9 @@ type WafRegexMatchSet interface {
 	ResetOverrideLogicalId()
 	ResetRegexMatchTuple()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -463,6 +484,25 @@ func (j *jsiiProxy_WafRegexMatchSet)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a WafRegexMatchSet resource upon running "cdktf plan <stack-name>".
+func WafRegexMatchSet_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateWafRegexMatchSet_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSet",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -545,6 +585,17 @@ func WafRegexMatchSet_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (w *jsiiProxy_WafRegexMatchSet) AddMoveTarget(moveTarget *string) {
+	if err := w.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (w *jsiiProxy_WafRegexMatchSet) AddOverride(path *string, value interface{}) {
@@ -702,6 +753,30 @@ func (w *jsiiProxy_WafRegexMatchSet) GetStringMapAttribute(terraformAttribute *s
 	return returns
 }
 
+func (w *jsiiProxy_WafRegexMatchSet) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		w,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WafRegexMatchSet) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := w.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (w *jsiiProxy_WafRegexMatchSet) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -716,6 +791,39 @@ func (w *jsiiProxy_WafRegexMatchSet) InterpolationForAttribute(terraformAttribut
 	)
 
 	return returns
+}
+
+func (w *jsiiProxy_WafRegexMatchSet) MoveFromId(id *string) {
+	if err := w.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (w *jsiiProxy_WafRegexMatchSet) MoveTo(moveTarget *string, index interface{}) {
+	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (w *jsiiProxy_WafRegexMatchSet) MoveToId(id *string) {
+	if err := w.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (w *jsiiProxy_WafRegexMatchSet) OverrideLogicalId(newLogicalId *string) {
@@ -770,6 +878,32 @@ func (w *jsiiProxy_WafRegexMatchSet) SynthesizeAttributes() *map[string]interfac
 	_jsii_.Invoke(
 		w,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WafRegexMatchSet) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		w,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WafRegexMatchSet) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		w,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

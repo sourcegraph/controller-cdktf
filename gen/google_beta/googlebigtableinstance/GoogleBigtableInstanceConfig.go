@@ -50,8 +50,8 @@ type GoogleBigtableInstanceConfig struct {
 	InstanceType *string `field:"optional" json:"instanceType" yaml:"instanceType"`
 	// A mapping of labels to assign to the resource.
 	//
-	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
+	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+	// 				Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_bigtable_instance#labels GoogleBigtableInstance#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`

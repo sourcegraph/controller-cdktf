@@ -4,6 +4,10 @@ package fallbackdomain
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FallbackDomain) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FallbackDomain) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (f *jsiiProxy_FallbackDomain) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (f *jsiiProxy_FallbackDomain) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FallbackDomain) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FallbackDomain) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FallbackDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FallbackDomain) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (f *jsiiProxy_FallbackDomain) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (f *jsiiProxy_FallbackDomain) validatePutDomainsParameters(value interface{}) error {
+	return nil
+}
+
+func validateFallbackDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

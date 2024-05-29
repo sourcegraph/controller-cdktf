@@ -4,6 +4,10 @@ package daxcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DaxCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DaxCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DaxCluster) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (d *jsiiProxy_DaxCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DaxCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DaxCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DaxCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DaxCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (d *jsiiProxy_DaxCluster) validatePutServerSideEncryptionParameters(value *
 }
 
 func (d *jsiiProxy_DaxCluster) validatePutTimeoutsParameters(value *DaxClusterTimeouts) error {
+	return nil
+}
+
+func validateDaxCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

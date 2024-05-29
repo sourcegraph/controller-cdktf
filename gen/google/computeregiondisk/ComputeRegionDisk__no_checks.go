@@ -4,6 +4,10 @@ package computeregiondisk
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeRegionDisk) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionDisk) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeRegionDisk) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionDisk) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionDisk) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionDisk) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionDisk) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionDisk) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -69,6 +89,10 @@ func (c *jsiiProxy_ComputeRegionDisk) validatePutSourceSnapshotEncryptionKeyPara
 }
 
 func (c *jsiiProxy_ComputeRegionDisk) validatePutTimeoutsParameters(value *ComputeRegionDiskTimeouts) error {
+	return nil
+}
+
+func validateComputeRegionDisk_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

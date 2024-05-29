@@ -4,6 +4,10 @@ package googlevmwareenginenetworkpeering
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) validateGetStringMapAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) validateOverrideLogicalIdPa
 }
 
 func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) validatePutTimeoutsParameters(value *GoogleVmwareengineNetworkPeeringTimeouts) error {
+	return nil
+}
+
+func validateGoogleVmwareengineNetworkPeering_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

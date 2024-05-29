@@ -4,6 +4,10 @@ package computeprojectdefaultnetworktier
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeProjectDefaultNetworkTier) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeProjectDefaultNetworkTier) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeProjectDefaultNetworkTier) validateGetStringMapAttribu
 	return nil
 }
 
+func (c *jsiiProxy_ComputeProjectDefaultNetworkTier) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeProjectDefaultNetworkTier) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeProjectDefaultNetworkTier) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeProjectDefaultNetworkTier) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeProjectDefaultNetworkTier) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ComputeProjectDefaultNetworkTier) validateOverrideLogicalIdPa
 }
 
 func (c *jsiiProxy_ComputeProjectDefaultNetworkTier) validatePutTimeoutsParameters(value *ComputeProjectDefaultNetworkTierTimeouts) error {
+	return nil
+}
+
+func validateComputeProjectDefaultNetworkTier_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

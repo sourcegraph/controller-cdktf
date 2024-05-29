@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataOktaNetworkZone) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func validateDataOktaNetworkZone_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataOktaNetworkZone_IsConstructParameters(x interface{}) error {
 	return nil
 }

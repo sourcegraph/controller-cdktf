@@ -4,6 +4,10 @@ package rolebinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RoleBindingSubjectList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RoleBindingSubjectList) validateGetParameters(index *float64) error {
 	return nil
 }

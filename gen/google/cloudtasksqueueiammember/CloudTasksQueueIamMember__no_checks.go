@@ -4,6 +4,10 @@ package cloudtasksqueueiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudTasksQueueIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudTasksQueueIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CloudTasksQueueIamMember) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (c *jsiiProxy_CloudTasksQueueIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudTasksQueueIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudTasksQueueIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudTasksQueueIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudTasksQueueIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_CloudTasksQueueIamMember) validateOverrideLogicalIdParameters
 }
 
 func (c *jsiiProxy_CloudTasksQueueIamMember) validatePutConditionParameters(value *CloudTasksQueueIamMemberCondition) error {
+	return nil
+}
+
+func validateCloudTasksQueueIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

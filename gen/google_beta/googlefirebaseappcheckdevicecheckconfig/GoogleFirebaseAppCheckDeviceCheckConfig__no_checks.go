@@ -4,6 +4,10 @@ package googlefirebaseappcheckdevicecheckconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateGetStringMap
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateOverrideLogi
 }
 
 func (g *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validatePutTimeoutsParameters(value *GoogleFirebaseAppCheckDeviceCheckConfigTimeouts) error {
+	return nil
+}
+
+func validateGoogleFirebaseAppCheckDeviceCheckConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

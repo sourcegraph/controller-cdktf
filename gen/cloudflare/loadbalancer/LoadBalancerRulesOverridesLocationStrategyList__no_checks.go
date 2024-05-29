@@ -4,6 +4,10 @@ package loadbalancer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LoadBalancerRulesOverridesLocationStrategyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoadBalancerRulesOverridesLocationStrategyList) validateGetParameters(index *float64) error {
 	return nil
 }

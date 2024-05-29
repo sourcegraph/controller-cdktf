@@ -4,6 +4,10 @@ package googledatapipelinepipeline
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataPipelinePipeline) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataPipelinePipeline) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleDataPipelinePipeline) validateGetStringMapAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataPipelinePipeline) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataPipelinePipeline) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataPipelinePipeline) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataPipelinePipeline) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataPipelinePipeline) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (g *jsiiProxy_GoogleDataPipelinePipeline) validatePutTimeoutsParameters(val
 }
 
 func (g *jsiiProxy_GoogleDataPipelinePipeline) validatePutWorkloadParameters(value *GoogleDataPipelinePipelineWorkload) error {
+	return nil
+}
+
+func validateGoogleDataPipelinePipeline_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

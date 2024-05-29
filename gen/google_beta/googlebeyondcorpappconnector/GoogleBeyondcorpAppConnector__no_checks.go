@@ -4,6 +4,10 @@ package googlebeyondcorpappconnector
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBeyondcorpAppConnector) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBeyondcorpAppConnector) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleBeyondcorpAppConnector) validateGetStringMapAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBeyondcorpAppConnector) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBeyondcorpAppConnector) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBeyondcorpAppConnector) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBeyondcorpAppConnector) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBeyondcorpAppConnector) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleBeyondcorpAppConnector) validatePutPrincipalInfoParamet
 }
 
 func (g *jsiiProxy_GoogleBeyondcorpAppConnector) validatePutTimeoutsParameters(value *GoogleBeyondcorpAppConnectorTimeouts) error {
+	return nil
+}
+
+func validateGoogleBeyondcorpAppConnector_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

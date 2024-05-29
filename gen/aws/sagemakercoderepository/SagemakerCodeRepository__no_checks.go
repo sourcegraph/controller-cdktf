@@ -4,6 +4,10 @@ package sagemakercoderepository
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SagemakerCodeRepository) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerCodeRepository) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SagemakerCodeRepository) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerCodeRepository) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerCodeRepository) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerCodeRepository) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerCodeRepository) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerCodeRepository) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_SagemakerCodeRepository) validateOverrideLogicalIdParameters(
 }
 
 func (s *jsiiProxy_SagemakerCodeRepository) validatePutGitConfigParameters(value *SagemakerCodeRepositoryGitConfig) error {
+	return nil
+}
+
+func validateSagemakerCodeRepository_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

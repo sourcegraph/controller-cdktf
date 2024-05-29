@@ -4,6 +4,10 @@ package adminorganizationsettings
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AdminOrganizationSettings) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AdminOrganizationSettings) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (a *jsiiProxy_AdminOrganizationSettings) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (a *jsiiProxy_AdminOrganizationSettings) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AdminOrganizationSettings) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AdminOrganizationSettings) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AdminOrganizationSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AdminOrganizationSettings) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AdminOrganizationSettings) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAdminOrganizationSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

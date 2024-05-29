@@ -4,6 +4,10 @@ package googletpuv2vm
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleTpuV2Vm) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleTpuV2Vm) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleTpuV2Vm) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (g *jsiiProxy_GoogleTpuV2Vm) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleTpuV2Vm) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -77,6 +97,10 @@ func (g *jsiiProxy_GoogleTpuV2Vm) validatePutShieldedInstanceConfigParameters(va
 }
 
 func (g *jsiiProxy_GoogleTpuV2Vm) validatePutTimeoutsParameters(value *GoogleTpuV2VmTimeouts) error {
+	return nil
+}
+
+func validateGoogleTpuV2Vm_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

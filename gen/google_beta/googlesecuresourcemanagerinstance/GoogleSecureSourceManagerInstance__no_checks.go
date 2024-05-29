@@ -4,6 +4,10 @@ package googlesecuresourcemanagerinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleSecureSourceManagerInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSecureSourceManagerInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleSecureSourceManagerInstance) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSecureSourceManagerInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSecureSourceManagerInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecureSourceManagerInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecureSourceManagerInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecureSourceManagerInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleSecureSourceManagerInstance) validatePutPrivateConfigPa
 }
 
 func (g *jsiiProxy_GoogleSecureSourceManagerInstance) validatePutTimeoutsParameters(value *GoogleSecureSourceManagerInstanceTimeouts) error {
+	return nil
+}
+
+func validateGoogleSecureSourceManagerInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package computeregionnetworkfirewallpolicyrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchSrcSecureTagsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchSrcSecureTagsList) validateGetParameters(index *float64) error {
 	return nil
 }

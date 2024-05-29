@@ -23,9 +23,11 @@ type DataGoogleCloudfunctions2FunctionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/cloudfunctions2_function#location DataGoogleCloudfunctions2Function#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
-	// A user-defined name of the function. Function names must be unique globally and match pattern 'projects/*\/locations/*\/functions/*'.
+	// A user-defined name of the function. Function names must be unique globally and match pattern 'projects/* /locations/* /functions/*'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/cloudfunctions2_function#name DataGoogleCloudfunctions2Function#name}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/data-sources/cloudfunctions2_function#id DataGoogleCloudfunctions2Function#id}.
 	//

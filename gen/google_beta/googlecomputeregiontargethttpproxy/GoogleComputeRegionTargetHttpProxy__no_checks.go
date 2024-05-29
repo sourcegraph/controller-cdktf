@@ -4,6 +4,10 @@ package googlecomputeregiontargethttpproxy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeRegionTargetHttpProxy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionTargetHttpProxy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleComputeRegionTargetHttpProxy) validateGetStringMapAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionTargetHttpProxy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionTargetHttpProxy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionTargetHttpProxy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionTargetHttpProxy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionTargetHttpProxy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleComputeRegionTargetHttpProxy) validateOverrideLogicalId
 }
 
 func (g *jsiiProxy_GoogleComputeRegionTargetHttpProxy) validatePutTimeoutsParameters(value *GoogleComputeRegionTargetHttpProxyTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeRegionTargetHttpProxy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

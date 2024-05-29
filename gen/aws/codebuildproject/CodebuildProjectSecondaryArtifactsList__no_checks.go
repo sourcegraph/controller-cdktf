@@ -4,6 +4,10 @@ package codebuildproject
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CodebuildProjectSecondaryArtifactsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodebuildProjectSecondaryArtifactsList) validateGetParameters(index *float64) error {
 	return nil
 }

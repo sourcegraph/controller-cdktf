@@ -4,6 +4,10 @@ package dataawsroute53trafficpolicydocument
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleItemsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleItemsList) validateGetParameters(index *float64) error {
 	return nil
 }

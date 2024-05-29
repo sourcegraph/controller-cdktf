@@ -4,6 +4,10 @@ package clouddeployautomation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ClouddeployAutomation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployAutomation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ClouddeployAutomation) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_ClouddeployAutomation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployAutomation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddeployAutomation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddeployAutomation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddeployAutomation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (c *jsiiProxy_ClouddeployAutomation) validatePutSelectorParameters(value *C
 }
 
 func (c *jsiiProxy_ClouddeployAutomation) validatePutTimeoutsParameters(value *ClouddeployAutomationTimeouts) error {
+	return nil
+}
+
+func validateClouddeployAutomation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

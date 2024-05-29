@@ -10,9 +10,11 @@ type IntegrationConnectorsConnectionDestinationConfigDestination struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/integration_connectors_connection#port IntegrationConnectorsConnection#port}
 	Port *float64 `field:"optional" json:"port" yaml:"port"`
-	// PSC service attachments. Format: projects/*\/regions/*\/serviceAttachments/*.
+	// PSC service attachments. Format: projects/* /regions/* /serviceAttachments/*.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/integration_connectors_connection#service_attachment IntegrationConnectorsConnection#service_attachment}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	ServiceAttachment *string `field:"optional" json:"serviceAttachment" yaml:"serviceAttachment"`
 }
 

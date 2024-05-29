@@ -4,6 +4,10 @@ package googletpuv2vm
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleTpuV2VmNetworkEndpointsAccessConfigList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleTpuV2VmNetworkEndpointsAccessConfigList) validateGetParameters(index *float64) error {
 	return nil
 }

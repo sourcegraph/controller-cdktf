@@ -4,6 +4,10 @@ package googlefilestoreinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleFilestoreInstanceNetworksList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFilestoreInstanceNetworksList) validateGetParameters(index *float64) error {
 	return nil
 }

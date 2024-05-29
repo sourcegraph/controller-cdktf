@@ -4,6 +4,10 @@ package googlednsmanagedzone
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigNetworksList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigNetworksList) validateGetParameters(index *float64) error {
 	return nil
 }

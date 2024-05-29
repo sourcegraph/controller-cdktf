@@ -4,6 +4,10 @@ package gkebackuprestoreplaniambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GkeBackupRestorePlanIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeBackupRestorePlanIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GkeBackupRestorePlanIamBinding) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GkeBackupRestorePlanIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeBackupRestorePlanIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeBackupRestorePlanIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeBackupRestorePlanIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeBackupRestorePlanIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GkeBackupRestorePlanIamBinding) validateOverrideLogicalIdPara
 }
 
 func (g *jsiiProxy_GkeBackupRestorePlanIamBinding) validatePutConditionParameters(value *GkeBackupRestorePlanIamBindingCondition) error {
+	return nil
+}
+
+func validateGkeBackupRestorePlanIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

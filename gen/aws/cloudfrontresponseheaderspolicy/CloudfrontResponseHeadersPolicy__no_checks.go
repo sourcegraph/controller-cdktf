@@ -4,6 +4,10 @@ package cloudfrontresponseheaderspolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validateGetStringMapAttribut
 	return nil
 }
 
+func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validatePutSecurityHeadersCo
 }
 
 func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validatePutServerTimingHeadersConfigParameters(value *CloudfrontResponseHeadersPolicyServerTimingHeadersConfig) error {
+	return nil
+}
+
+func validateCloudfrontResponseHeadersPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

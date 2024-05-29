@@ -4,6 +4,10 @@ package glaciervault
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GlacierVault) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlacierVault) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GlacierVault) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (g *jsiiProxy_GlacierVault) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlacierVault) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlacierVault) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlacierVault) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlacierVault) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GlacierVault) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (g *jsiiProxy_GlacierVault) validatePutNotificationParameters(value *GlacierVaultNotification) error {
+	return nil
+}
+
+func validateGlacierVault_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

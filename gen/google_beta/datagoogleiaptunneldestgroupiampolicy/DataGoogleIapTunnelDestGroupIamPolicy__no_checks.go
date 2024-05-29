@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleIapTunnelDestGroupIamPolicy) validateOverrideLogica
 	return nil
 }
 
+func validateDataGoogleIapTunnelDestGroupIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleIapTunnelDestGroupIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

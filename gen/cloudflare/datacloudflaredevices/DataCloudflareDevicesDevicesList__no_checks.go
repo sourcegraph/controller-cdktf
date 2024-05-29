@@ -4,6 +4,10 @@ package datacloudflaredevices
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataCloudflareDevicesDevicesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCloudflareDevicesDevicesList) validateGetParameters(index *float64) error {
 	return nil
 }

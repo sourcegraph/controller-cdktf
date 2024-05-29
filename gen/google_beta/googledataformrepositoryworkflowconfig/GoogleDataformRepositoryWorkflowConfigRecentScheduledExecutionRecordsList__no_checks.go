@@ -4,6 +4,10 @@ package googledataformrepositoryworkflowconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsList) validateGetParameters(index *float64) error {
 	return nil
 }

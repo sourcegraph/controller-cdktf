@@ -30,15 +30,15 @@ type ComputeUrlMapPathMatcherRouteRulesUrlRedirect struct {
 	PrefixRedirect *string `field:"optional" json:"prefixRedirect" yaml:"prefixRedirect"`
 	// The HTTP Status code to use for this RedirectAction. Supported values are:.
 	//
-	// MOVED_PERMANENTLY_DEFAULT, which is the default value and corresponds to 301.
+	// * MOVED_PERMANENTLY_DEFAULT, which is the default value and corresponds to 301.
 	//
-	// FOUND, which corresponds to 302.
+	// * FOUND, which corresponds to 302.
 	//
-	// SEE_OTHER which corresponds to 303.
+	// * SEE_OTHER which corresponds to 303.
 	//
-	// TEMPORARY_REDIRECT, which corresponds to 307. In this case, the request method will be retained.
+	// * TEMPORARY_REDIRECT, which corresponds to 307. In this case, the request method will be retained.
 	//
-	// PERMANENT_REDIRECT, which corresponds to 308. In this case, the request method will be retained. Possible values: ["FOUND", "MOVED_PERMANENTLY_DEFAULT", "PERMANENT_REDIRECT", "SEE_OTHER", "TEMPORARY_REDIRECT"]
+	// * PERMANENT_REDIRECT, which corresponds to 308. In this case, the request method will be retained. Possible values: ["FOUND", "MOVED_PERMANENTLY_DEFAULT", "PERMANENT_REDIRECT", "SEE_OTHER", "TEMPORARY_REDIRECT"]
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_url_map#redirect_response_code ComputeUrlMap#redirect_response_code}
 	RedirectResponseCode *string `field:"optional" json:"redirectResponseCode" yaml:"redirectResponseCode"`

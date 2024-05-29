@@ -4,6 +4,10 @@ package accesscontextmanageraccesslevelcondition
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AccessContextManagerAccessLevelCondition) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerAccessLevelCondition) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelCondition) validateGetStringMa
 	return nil
 }
 
+func (a *jsiiProxy_AccessContextManagerAccessLevelCondition) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerAccessLevelCondition) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevelCondition) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevelCondition) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevelCondition) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelCondition) validatePutTimeouts
 }
 
 func (a *jsiiProxy_AccessContextManagerAccessLevelCondition) validatePutVpcNetworkSourcesParameters(value interface{}) error {
+	return nil
+}
+
+func validateAccessContextManagerAccessLevelCondition_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package googledatastoreindex
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDatastoreIndexPropertiesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatastoreIndexPropertiesList) validateGetParameters(index *float64) error {
 	return nil
 }

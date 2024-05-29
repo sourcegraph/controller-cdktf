@@ -4,6 +4,10 @@ package persistentvolume
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PersistentVolume) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PersistentVolume) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (p *jsiiProxy_PersistentVolume) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (p *jsiiProxy_PersistentVolume) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PersistentVolume) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PersistentVolume) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PersistentVolume) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PersistentVolume) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (p *jsiiProxy_PersistentVolume) validatePutSpecParameters(value interface{}
 }
 
 func (p *jsiiProxy_PersistentVolume) validatePutTimeoutsParameters(value *PersistentVolumeTimeouts) error {
+	return nil
+}
+
+func validatePersistentVolume_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

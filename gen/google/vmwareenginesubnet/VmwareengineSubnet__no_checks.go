@@ -4,6 +4,10 @@ package vmwareenginesubnet
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VmwareengineSubnet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareengineSubnet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (v *jsiiProxy_VmwareengineSubnet) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (v *jsiiProxy_VmwareengineSubnet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareengineSubnet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwareengineSubnet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwareengineSubnet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwareengineSubnet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (v *jsiiProxy_VmwareengineSubnet) validateOverrideLogicalIdParameters(newLo
 }
 
 func (v *jsiiProxy_VmwareengineSubnet) validatePutTimeoutsParameters(value *VmwareengineSubnetTimeouts) error {
+	return nil
+}
+
+func validateVmwareengineSubnet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

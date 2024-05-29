@@ -4,6 +4,10 @@ package googlehealthcareconsentstore
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleHealthcareConsentStore) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleHealthcareConsentStore) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleHealthcareConsentStore) validateGetStringMapAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleHealthcareConsentStore) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleHealthcareConsentStore) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleHealthcareConsentStore) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleHealthcareConsentStore) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleHealthcareConsentStore) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleHealthcareConsentStore) validateOverrideLogicalIdParame
 }
 
 func (g *jsiiProxy_GoogleHealthcareConsentStore) validatePutTimeoutsParameters(value *GoogleHealthcareConsentStoreTimeouts) error {
+	return nil
+}
+
+func validateGoogleHealthcareConsentStore_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package firebaseappcheckdebugtoken
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FirebaseAppCheckDebugToken) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirebaseAppCheckDebugToken) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) validateGetStringMapAttributePara
 	return nil
 }
 
+func (f *jsiiProxy_FirebaseAppCheckDebugToken) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirebaseAppCheckDebugToken) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FirebaseAppCheckDebugToken) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FirebaseAppCheckDebugToken) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FirebaseAppCheckDebugToken) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) validateOverrideLogicalIdParamete
 }
 
 func (f *jsiiProxy_FirebaseAppCheckDebugToken) validatePutTimeoutsParameters(value *FirebaseAppCheckDebugTokenTimeouts) error {
+	return nil
+}
+
+func validateFirebaseAppCheckDebugToken_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

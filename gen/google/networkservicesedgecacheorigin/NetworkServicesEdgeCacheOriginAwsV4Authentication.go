@@ -12,9 +12,11 @@ type NetworkServicesEdgeCacheOriginAwsV4Authentication struct {
 	OriginRegion *string `field:"required" json:"originRegion" yaml:"originRegion"`
 	// The Secret Manager secret version of the secret access key used by your origin.
 	//
-	// This is the resource name of the secret version in the format 'projects/*\/secrets/*\/versions/*' where the '*' values are replaced by the project, secret, and version you require.
+	// This is the resource name of the secret version in the format 'projects/* /secrets/* /versions/*' where the '*' values are replaced by the project, secret, and version you require.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/network_services_edge_cache_origin#secret_access_key_version NetworkServicesEdgeCacheOrigin#secret_access_key_version}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	SecretAccessKeyVersion *string `field:"required" json:"secretAccessKeyVersion" yaml:"secretAccessKeyVersion"`
 }
 

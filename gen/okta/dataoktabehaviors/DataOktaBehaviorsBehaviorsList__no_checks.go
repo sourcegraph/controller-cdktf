@@ -4,6 +4,10 @@ package dataoktabehaviors
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataOktaBehaviorsBehaviorsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataOktaBehaviorsBehaviorsList) validateGetParameters(index *float64) error {
 	return nil
 }

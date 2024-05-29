@@ -4,6 +4,10 @@ package googleloggingfolderbucketconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validateGetStringMapAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validatePutCmekSettingsParam
 }
 
 func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validatePutIndexConfigsParameters(value interface{}) error {
+	return nil
+}
+
+func validateGoogleLoggingFolderBucketConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

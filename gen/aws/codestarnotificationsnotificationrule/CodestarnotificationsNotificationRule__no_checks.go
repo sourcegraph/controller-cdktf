@@ -4,6 +4,10 @@ package codestarnotificationsnotificationrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CodestarnotificationsNotificationRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodestarnotificationsNotificationRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CodestarnotificationsNotificationRule) validateGetStringMapAt
 	return nil
 }
 
+func (c *jsiiProxy_CodestarnotificationsNotificationRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodestarnotificationsNotificationRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodestarnotificationsNotificationRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodestarnotificationsNotificationRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodestarnotificationsNotificationRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_CodestarnotificationsNotificationRule) validateOverrideLogica
 }
 
 func (c *jsiiProxy_CodestarnotificationsNotificationRule) validatePutTargetParameters(value interface{}) error {
+	return nil
+}
+
+func validateCodestarnotificationsNotificationRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

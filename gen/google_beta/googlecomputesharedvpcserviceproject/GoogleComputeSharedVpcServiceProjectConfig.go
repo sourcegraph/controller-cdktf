@@ -30,7 +30,7 @@ type GoogleComputeSharedVpcServiceProjectConfig struct {
 	// The deletion policy for the shared VPC service.
 	//
 	// Setting ABANDON allows the resource
-	// to be abandoned rather than deleted. Possible values are: "ABANDON".
+	// 				to be abandoned rather than deleted. Possible values are: "ABANDON".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_shared_vpc_service_project#deletion_policy GoogleComputeSharedVpcServiceProject#deletion_policy}
 	DeletionPolicy *string `field:"optional" json:"deletionPolicy" yaml:"deletionPolicy"`

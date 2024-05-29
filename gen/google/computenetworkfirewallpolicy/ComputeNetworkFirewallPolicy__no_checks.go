@@ -4,6 +4,10 @@ package computenetworkfirewallpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeNetworkFirewallPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeNetworkFirewallPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeNetworkFirewallPolicy) validateGetStringMapAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_ComputeNetworkFirewallPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeNetworkFirewallPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeNetworkFirewallPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeNetworkFirewallPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeNetworkFirewallPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ComputeNetworkFirewallPolicy) validateOverrideLogicalIdParame
 }
 
 func (c *jsiiProxy_ComputeNetworkFirewallPolicy) validatePutTimeoutsParameters(value *ComputeNetworkFirewallPolicyTimeouts) error {
+	return nil
+}
+
+func validateComputeNetworkFirewallPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

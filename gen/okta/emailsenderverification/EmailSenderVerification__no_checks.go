@@ -4,6 +4,10 @@ package emailsenderverification
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EmailSenderVerification) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailSenderVerification) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (e *jsiiProxy_EmailSenderVerification) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (e *jsiiProxy_EmailSenderVerification) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailSenderVerification) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_EmailSenderVerification) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmailSenderVerification) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmailSenderVerification) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailSenderVerification) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEmailSenderVerification_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

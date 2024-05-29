@@ -4,6 +4,10 @@ package vertexaifeatureonlinestore
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiFeatureOnlineStore) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) validateGetStringMapAttributePara
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiFeatureOnlineStore) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) validatePutBigtableParameters(val
 }
 
 func (v *jsiiProxy_VertexAiFeatureOnlineStore) validatePutTimeoutsParameters(value *VertexAiFeatureOnlineStoreTimeouts) error {
+	return nil
+}
+
+func validateVertexAiFeatureOnlineStore_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

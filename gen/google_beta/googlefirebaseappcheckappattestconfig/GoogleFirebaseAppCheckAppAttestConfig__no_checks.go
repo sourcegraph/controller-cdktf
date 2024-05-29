@@ -4,6 +4,10 @@ package googlefirebaseappcheckappattestconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) validateGetStringMapAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) validateOverrideLogica
 }
 
 func (g *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) validatePutTimeoutsParameters(value *GoogleFirebaseAppCheckAppAttestConfigTimeouts) error {
+	return nil
+}
+
+func validateGoogleFirebaseAppCheckAppAttestConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

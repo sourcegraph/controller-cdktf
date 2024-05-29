@@ -29,9 +29,11 @@ type KmsCryptoKeyConfig struct {
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The resource name of the backend environment associated with all CryptoKeyVersions within this CryptoKey.
 	//
-	// The resource name is in the format "projects/*\/locations/*\/ekmConnections/*" and only applies to "EXTERNAL_VPC" keys.
+	// The resource name is in the format "projects/* /locations/* /ekmConnections/*" and only applies to "EXTERNAL_VPC" keys.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/kms_crypto_key#crypto_key_backend KmsCryptoKey#crypto_key_backend}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	CryptoKeyBackend *string `field:"optional" json:"cryptoKeyBackend" yaml:"cryptoKeyBackend"`
 	// The period of time that versions of this key spend in the DESTROY_SCHEDULED state before transitioning to DESTROYED.
 	//
@@ -50,7 +52,7 @@ type KmsCryptoKeyConfig struct {
 	ImportOnly interface{} `field:"optional" json:"importOnly" yaml:"importOnly"`
 	// Labels with user-defined metadata to apply to this resource.
 	//
-	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/kms_crypto_key#labels KmsCryptoKey#labels}

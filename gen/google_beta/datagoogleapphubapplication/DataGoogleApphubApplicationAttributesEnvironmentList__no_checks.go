@@ -4,6 +4,10 @@ package datagoogleapphubapplication
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleApphubApplicationAttributesEnvironmentList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleApphubApplicationAttributesEnvironmentList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -4,6 +4,10 @@ package netappvolumesnapshot
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetappVolumeSnapshot) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappVolumeSnapshot) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetappVolumeSnapshot) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (n *jsiiProxy_NetappVolumeSnapshot) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappVolumeSnapshot) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappVolumeSnapshot) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappVolumeSnapshot) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappVolumeSnapshot) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NetappVolumeSnapshot) validateOverrideLogicalIdParameters(new
 }
 
 func (n *jsiiProxy_NetappVolumeSnapshot) validatePutTimeoutsParameters(value *NetappVolumeSnapshotTimeouts) error {
+	return nil
+}
+
+func validateNetappVolumeSnapshot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

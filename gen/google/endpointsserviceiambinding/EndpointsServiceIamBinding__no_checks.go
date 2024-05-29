@@ -4,6 +4,10 @@ package endpointsserviceiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EndpointsServiceIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EndpointsServiceIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) validateGetStringMapAttributePara
 	return nil
 }
 
+func (e *jsiiProxy_EndpointsServiceIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EndpointsServiceIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EndpointsServiceIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EndpointsServiceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EndpointsServiceIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) validateOverrideLogicalIdParamete
 }
 
 func (e *jsiiProxy_EndpointsServiceIamBinding) validatePutConditionParameters(value *EndpointsServiceIamBindingCondition) error {
+	return nil
+}
+
+func validateEndpointsServiceIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

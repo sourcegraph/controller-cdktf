@@ -4,6 +4,10 @@ package schedulerschedule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList) validateGetParameters(index *float64) error {
 	return nil
 }

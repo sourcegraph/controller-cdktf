@@ -4,6 +4,10 @@ package computeregionperinstanceconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeRegionPerInstanceConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionPerInstanceConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) validateGetStringMapAttribute
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionPerInstanceConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionPerInstanceConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionPerInstanceConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionPerInstanceConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionPerInstanceConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) validatePutPreservedStatePara
 }
 
 func (c *jsiiProxy_ComputeRegionPerInstanceConfig) validatePutTimeoutsParameters(value *ComputeRegionPerInstanceConfigTimeouts) error {
+	return nil
+}
+
+func validateComputeRegionPerInstanceConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

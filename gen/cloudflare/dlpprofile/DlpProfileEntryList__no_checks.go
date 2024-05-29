@@ -4,6 +4,10 @@ package dlpprofile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DlpProfileEntryList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DlpProfileEntryList) validateGetParameters(index *float64) error {
 	return nil
 }

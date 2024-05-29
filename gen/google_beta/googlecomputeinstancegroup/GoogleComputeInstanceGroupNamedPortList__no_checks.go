@@ -4,6 +4,10 @@ package googlecomputeinstancegroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortList) validateGetParameters(index *float64) error {
 	return nil
 }

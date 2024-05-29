@@ -39,7 +39,7 @@ type GoogleServiceDirectoryNamespaceConfig struct {
 	// be no longer than 63 characters.
 	//
 	//
-	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_service_directory_namespace#labels GoogleServiceDirectoryNamespace#labels}

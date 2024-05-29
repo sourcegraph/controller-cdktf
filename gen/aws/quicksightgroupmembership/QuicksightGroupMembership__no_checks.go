@@ -4,6 +4,10 @@ package quicksightgroupmembership
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (q *jsiiProxy_QuicksightGroupMembership) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightGroupMembership) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (q *jsiiProxy_QuicksightGroupMembership) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (q *jsiiProxy_QuicksightGroupMembership) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightGroupMembership) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (q *jsiiProxy_QuicksightGroupMembership) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (q *jsiiProxy_QuicksightGroupMembership) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (q *jsiiProxy_QuicksightGroupMembership) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightGroupMembership) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateQuicksightGroupMembership_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

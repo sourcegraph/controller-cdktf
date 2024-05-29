@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroupIamPolicy) validateOverr
 	return nil
 }
 
+func validateDataGoogleNetworkSecurityAddressGroupIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleNetworkSecurityAddressGroupIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

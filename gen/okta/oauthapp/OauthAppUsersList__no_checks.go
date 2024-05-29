@@ -4,6 +4,10 @@ package oauthapp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OauthAppUsersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OauthAppUsersList) validateGetParameters(index *float64) error {
 	return nil
 }

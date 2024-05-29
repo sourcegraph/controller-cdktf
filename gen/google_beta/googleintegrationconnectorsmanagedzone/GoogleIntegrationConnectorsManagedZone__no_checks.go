@@ -4,6 +4,10 @@ package googleintegrationconnectorsmanagedzone
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleIntegrationConnectorsManagedZone) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIntegrationConnectorsManagedZone) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsManagedZone) validateGetStringMapA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIntegrationConnectorsManagedZone) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIntegrationConnectorsManagedZone) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIntegrationConnectorsManagedZone) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIntegrationConnectorsManagedZone) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIntegrationConnectorsManagedZone) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsManagedZone) validateOverrideLogic
 }
 
 func (g *jsiiProxy_GoogleIntegrationConnectorsManagedZone) validatePutTimeoutsParameters(value *GoogleIntegrationConnectorsManagedZoneTimeouts) error {
+	return nil
+}
+
+func validateGoogleIntegrationConnectorsManagedZone_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

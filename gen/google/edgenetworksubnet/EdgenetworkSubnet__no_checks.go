@@ -4,6 +4,10 @@ package edgenetworksubnet
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EdgenetworkSubnet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EdgenetworkSubnet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_EdgenetworkSubnet) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (e *jsiiProxy_EdgenetworkSubnet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EdgenetworkSubnet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EdgenetworkSubnet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EdgenetworkSubnet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EdgenetworkSubnet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (e *jsiiProxy_EdgenetworkSubnet) validateOverrideLogicalIdParameters(newLog
 }
 
 func (e *jsiiProxy_EdgenetworkSubnet) validatePutTimeoutsParameters(value *EdgenetworkSubnetTimeouts) error {
+	return nil
+}
+
+func validateEdgenetworkSubnet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

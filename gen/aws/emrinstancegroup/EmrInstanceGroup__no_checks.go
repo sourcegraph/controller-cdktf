@@ -4,6 +4,10 @@ package emrinstancegroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EmrInstanceGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrInstanceGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (e *jsiiProxy_EmrInstanceGroup) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (e *jsiiProxy_EmrInstanceGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrInstanceGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmrInstanceGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmrInstanceGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmrInstanceGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (e *jsiiProxy_EmrInstanceGroup) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (e *jsiiProxy_EmrInstanceGroup) validatePutEbsConfigParameters(value interface{}) error {
+	return nil
+}
+
+func validateEmrInstanceGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

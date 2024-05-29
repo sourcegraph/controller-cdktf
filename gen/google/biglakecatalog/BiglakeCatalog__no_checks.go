@@ -4,6 +4,10 @@ package biglakecatalog
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BiglakeCatalog) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BiglakeCatalog) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (b *jsiiProxy_BiglakeCatalog) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (b *jsiiProxy_BiglakeCatalog) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BiglakeCatalog) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BiglakeCatalog) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BiglakeCatalog) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BiglakeCatalog) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (b *jsiiProxy_BiglakeCatalog) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (b *jsiiProxy_BiglakeCatalog) validatePutTimeoutsParameters(value *BiglakeCatalogTimeouts) error {
+	return nil
+}
+
+func validateBiglakeCatalog_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

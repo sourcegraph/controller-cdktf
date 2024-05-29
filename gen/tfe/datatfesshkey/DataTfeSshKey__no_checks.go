@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataTfeSshKey) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func validateDataTfeSshKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataTfeSshKey_IsConstructParameters(x interface{}) error {
 	return nil
 }

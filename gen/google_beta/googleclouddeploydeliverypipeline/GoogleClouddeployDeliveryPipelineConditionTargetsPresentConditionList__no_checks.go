@@ -4,6 +4,10 @@ package googleclouddeploydeliverypipeline
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineConditionTargetsPresentConditionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineConditionTargetsPresentConditionList) validateGetParameters(index *float64) error {
 	return nil
 }

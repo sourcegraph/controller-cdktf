@@ -4,6 +4,10 @@ package cloudcontrolapiresource
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudcontrolapiResource) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudcontrolapiResource) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CloudcontrolapiResource) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_CloudcontrolapiResource) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudcontrolapiResource) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudcontrolapiResource) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudcontrolapiResource) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudcontrolapiResource) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_CloudcontrolapiResource) validateOverrideLogicalIdParameters(
 }
 
 func (c *jsiiProxy_CloudcontrolapiResource) validatePutTimeoutsParameters(value *CloudcontrolapiResourceTimeouts) error {
+	return nil
+}
+
+func validateCloudcontrolapiResource_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

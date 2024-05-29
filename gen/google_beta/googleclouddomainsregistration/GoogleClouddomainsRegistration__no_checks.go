@@ -4,6 +4,10 @@ package googleclouddomainsregistration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleClouddomainsRegistration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleClouddomainsRegistration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleClouddomainsRegistration) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleClouddomainsRegistration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleClouddomainsRegistration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleClouddomainsRegistration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleClouddomainsRegistration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleClouddomainsRegistration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -69,6 +89,10 @@ func (g *jsiiProxy_GoogleClouddomainsRegistration) validatePutTimeoutsParameters
 }
 
 func (g *jsiiProxy_GoogleClouddomainsRegistration) validatePutYearlyPriceParameters(value *GoogleClouddomainsRegistrationYearlyPrice) error {
+	return nil
+}
+
+func validateGoogleClouddomainsRegistration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package appbasicauth
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppBasicAuthUsersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppBasicAuthUsersList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -4,6 +4,10 @@ package computesecuritypolicyrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validateGetStringMapAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validatePutPreconfiguredWafConfig
 }
 
 func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validatePutTimeoutsParameters(value *ComputeSecurityPolicyRuleTimeouts) error {
+	return nil
+}
+
+func validateComputeSecurityPolicyRuleA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

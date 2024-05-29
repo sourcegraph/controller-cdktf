@@ -4,6 +4,10 @@ package googleintegrationsclient
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleIntegrationsClient) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIntegrationsClient) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleIntegrationsClient) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIntegrationsClient) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIntegrationsClient) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIntegrationsClient) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIntegrationsClient) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIntegrationsClient) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleIntegrationsClient) validatePutCloudKmsConfigParameters
 }
 
 func (g *jsiiProxy_GoogleIntegrationsClient) validatePutTimeoutsParameters(value *GoogleIntegrationsClientTimeouts) error {
+	return nil
+}
+
+func validateGoogleIntegrationsClient_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package neptuneclusterparametergroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NeptuneClusterParameterGroupParameterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NeptuneClusterParameterGroupParameterList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -4,6 +4,10 @@ package gkehubnamespace
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GkeHubNamespace) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubNamespace) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GkeHubNamespace) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (g *jsiiProxy_GkeHubNamespace) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubNamespace) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeHubNamespace) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeHubNamespace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeHubNamespace) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GkeHubNamespace) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (g *jsiiProxy_GkeHubNamespace) validatePutTimeoutsParameters(value *GkeHubNamespaceTimeouts) error {
+	return nil
+}
+
+func validateGkeHubNamespace_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

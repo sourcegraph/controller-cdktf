@@ -4,6 +4,10 @@ package googleapigeesyncauthorization
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleApigeeSyncAuthorization) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeSyncAuthorization) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleApigeeSyncAuthorization) validateGetStringMapAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApigeeSyncAuthorization) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeSyncAuthorization) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeSyncAuthorization) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeSyncAuthorization) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeSyncAuthorization) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleApigeeSyncAuthorization) validateOverrideLogicalIdParam
 }
 
 func (g *jsiiProxy_GoogleApigeeSyncAuthorization) validatePutTimeoutsParameters(value *GoogleApigeeSyncAuthorizationTimeouts) error {
+	return nil
+}
+
+func validateGoogleApigeeSyncAuthorization_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

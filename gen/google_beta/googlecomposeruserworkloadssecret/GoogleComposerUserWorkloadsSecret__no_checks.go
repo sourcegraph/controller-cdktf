@@ -4,6 +4,10 @@ package googlecomposeruserworkloadssecret
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComposerUserWorkloadsSecret) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComposerUserWorkloadsSecret) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsSecret) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComposerUserWorkloadsSecret) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComposerUserWorkloadsSecret) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComposerUserWorkloadsSecret) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComposerUserWorkloadsSecret) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComposerUserWorkloadsSecret) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsSecret) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GoogleComposerUserWorkloadsSecret) validatePutTimeoutsParameters(value *GoogleComposerUserWorkloadsSecretTimeouts) error {
+	return nil
+}
+
+func validateGoogleComposerUserWorkloadsSecret_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

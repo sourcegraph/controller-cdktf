@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleBackupDrManagementServer) validateOverrideLogicalId
 	return nil
 }
 
+func validateDataGoogleBackupDrManagementServer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleBackupDrManagementServer_IsConstructParameters(x interface{}) error {
 	return nil
 }

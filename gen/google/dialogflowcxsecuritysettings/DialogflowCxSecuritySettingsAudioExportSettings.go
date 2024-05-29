@@ -9,9 +9,9 @@ type DialogflowCxSecuritySettingsAudioExportSettings struct {
 	// File format for exported audio file.
 	//
 	// Currently only in telephony recordings.
-	// MULAW: G.711 mu-law PCM with 8kHz sample rate.
-	// MP3: MP3 file format.
-	// OGG: OGG Vorbis. Possible values: ["MULAW", "MP3", "OGG"]
+	// * MULAW: G.711 mu-law PCM with 8kHz sample rate.
+	// * MP3: MP3 file format.
+	// * OGG: OGG Vorbis. Possible values: ["MULAW", "MP3", "OGG"]
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/dialogflow_cx_security_settings#audio_format DialogflowCxSecuritySettings#audio_format}
 	AudioFormat *string `field:"optional" json:"audioFormat" yaml:"audioFormat"`

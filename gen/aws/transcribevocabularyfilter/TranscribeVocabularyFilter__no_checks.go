@@ -4,6 +4,10 @@ package transcribevocabularyfilter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TranscribeVocabularyFilter) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TranscribeVocabularyFilter) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (t *jsiiProxy_TranscribeVocabularyFilter) validateGetStringMapAttributePara
 	return nil
 }
 
+func (t *jsiiProxy_TranscribeVocabularyFilter) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TranscribeVocabularyFilter) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_TranscribeVocabularyFilter) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TranscribeVocabularyFilter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TranscribeVocabularyFilter) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TranscribeVocabularyFilter) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateTranscribeVocabularyFilter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

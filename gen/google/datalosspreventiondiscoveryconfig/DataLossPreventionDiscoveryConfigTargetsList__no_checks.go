@@ -4,6 +4,10 @@ package datalosspreventiondiscoveryconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsList) validateGetParameters(index *float64) error {
 	return nil
 }

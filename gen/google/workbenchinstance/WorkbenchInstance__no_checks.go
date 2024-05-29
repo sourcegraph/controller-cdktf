@@ -4,6 +4,10 @@ package workbenchinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WorkbenchInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkbenchInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (w *jsiiProxy_WorkbenchInstance) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (w *jsiiProxy_WorkbenchInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkbenchInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkbenchInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkbenchInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkbenchInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (w *jsiiProxy_WorkbenchInstance) validatePutGceSetupParameters(value *Workb
 }
 
 func (w *jsiiProxy_WorkbenchInstance) validatePutTimeoutsParameters(value *WorkbenchInstanceTimeouts) error {
+	return nil
+}
+
+func validateWorkbenchInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

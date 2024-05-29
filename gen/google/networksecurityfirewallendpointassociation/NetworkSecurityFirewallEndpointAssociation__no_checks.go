@@ -4,6 +4,10 @@ package networksecurityfirewallendpointassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkSecurityFirewallEndpointAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityFirewallEndpointAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpointAssociation) validateGetString
 	return nil
 }
 
+func (n *jsiiProxy_NetworkSecurityFirewallEndpointAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityFirewallEndpointAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityFirewallEndpointAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityFirewallEndpointAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityFirewallEndpointAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpointAssociation) validateOverrideL
 }
 
 func (n *jsiiProxy_NetworkSecurityFirewallEndpointAssociation) validatePutTimeoutsParameters(value *NetworkSecurityFirewallEndpointAssociationTimeouts) error {
+	return nil
+}
+
+func validateNetworkSecurityFirewallEndpointAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

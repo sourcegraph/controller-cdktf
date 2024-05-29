@@ -4,6 +4,10 @@ package acmpcapermission
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AcmpcaPermission) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AcmpcaPermission) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (a *jsiiProxy_AcmpcaPermission) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (a *jsiiProxy_AcmpcaPermission) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AcmpcaPermission) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AcmpcaPermission) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AcmpcaPermission) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AcmpcaPermission) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AcmpcaPermission) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAcmpcaPermission_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

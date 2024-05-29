@@ -4,6 +4,10 @@ package cloudfunctions2function
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigSecretVolumesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigSecretVolumesList) validateGetParameters(index *float64) error {
 	return nil
 }

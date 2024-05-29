@@ -4,6 +4,10 @@ package cloudrundomainmapping
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudRunDomainMapping) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunDomainMapping) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CloudRunDomainMapping) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_CloudRunDomainMapping) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunDomainMapping) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudRunDomainMapping) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudRunDomainMapping) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudRunDomainMapping) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (c *jsiiProxy_CloudRunDomainMapping) validatePutSpecParameters(value *Cloud
 }
 
 func (c *jsiiProxy_CloudRunDomainMapping) validatePutTimeoutsParameters(value *CloudRunDomainMappingTimeouts) error {
+	return nil
+}
+
+func validateCloudRunDomainMapping_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package monitoringuptimecheckconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitoringUptimeCheckConfigContentMatchersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringUptimeCheckConfigContentMatchersList) validateGetParameters(index *float64) error {
 	return nil
 }

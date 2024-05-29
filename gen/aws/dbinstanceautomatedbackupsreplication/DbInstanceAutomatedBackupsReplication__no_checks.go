@@ -4,6 +4,10 @@ package dbinstanceautomatedbackupsreplication
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateGetStringMapAt
 	return nil
 }
 
+func (d *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (d *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateOverrideLogica
 }
 
 func (d *jsiiProxy_DbInstanceAutomatedBackupsReplication) validatePutTimeoutsParameters(value *DbInstanceAutomatedBackupsReplicationTimeouts) error {
+	return nil
+}
+
+func validateDbInstanceAutomatedBackupsReplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

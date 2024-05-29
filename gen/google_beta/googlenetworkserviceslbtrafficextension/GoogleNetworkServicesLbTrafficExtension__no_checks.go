@@ -4,6 +4,10 @@ package googlenetworkserviceslbtrafficextension
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateGetStringMap
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validatePutExtension
 }
 
 func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtension) validatePutTimeoutsParameters(value *GoogleNetworkServicesLbTrafficExtensionTimeouts) error {
+	return nil
+}
+
+func validateGoogleNetworkServicesLbTrafficExtension_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

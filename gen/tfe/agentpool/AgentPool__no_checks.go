@@ -4,6 +4,10 @@ package agentpool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AgentPool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AgentPool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (a *jsiiProxy_AgentPool) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (a *jsiiProxy_AgentPool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AgentPool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AgentPool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AgentPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AgentPool) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AgentPool) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAgentPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package vertexaifeatureonlinestorefeatureview
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) validateGetStringMapAt
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -65,6 +85,10 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) validatePutSyncConfigP
 }
 
 func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) validatePutTimeoutsParameters(value *VertexAiFeatureOnlineStoreFeatureviewTimeouts) error {
+	return nil
+}
+
+func validateVertexAiFeatureOnlineStoreFeatureview_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

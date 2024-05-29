@@ -4,6 +4,10 @@ package clouddeploydeliverypipelineiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ClouddeployDeliveryPipelineIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployDeliveryPipelineIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineIamMember) validateGetStringMapAtt
 	return nil
 }
 
+func (c *jsiiProxy_ClouddeployDeliveryPipelineIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployDeliveryPipelineIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddeployDeliveryPipelineIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddeployDeliveryPipelineIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddeployDeliveryPipelineIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineIamMember) validateOverrideLogical
 }
 
 func (c *jsiiProxy_ClouddeployDeliveryPipelineIamMember) validatePutConditionParameters(value *ClouddeployDeliveryPipelineIamMemberCondition) error {
+	return nil
+}
+
+func validateClouddeployDeliveryPipelineIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

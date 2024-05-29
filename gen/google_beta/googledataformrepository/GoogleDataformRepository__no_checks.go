@@ -4,6 +4,10 @@ package googledataformrepository
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataformRepository) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataformRepository) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleDataformRepository) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataformRepository) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataformRepository) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataformRepository) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataformRepository) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataformRepository) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (g *jsiiProxy_GoogleDataformRepository) validatePutTimeoutsParameters(value
 }
 
 func (g *jsiiProxy_GoogleDataformRepository) validatePutWorkspaceCompilationOverridesParameters(value *GoogleDataformRepositoryWorkspaceCompilationOverrides) error {
+	return nil
+}
+
+func validateGoogleDataformRepository_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

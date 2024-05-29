@@ -4,6 +4,10 @@ package memorydbcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MemorydbCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MemorydbCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (m *jsiiProxy_MemorydbCluster) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (m *jsiiProxy_MemorydbCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MemorydbCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemorydbCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemorydbCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemorydbCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (m *jsiiProxy_MemorydbCluster) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (m *jsiiProxy_MemorydbCluster) validatePutTimeoutsParameters(value *MemorydbClusterTimeouts) error {
+	return nil
+}
+
+func validateMemorydbCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

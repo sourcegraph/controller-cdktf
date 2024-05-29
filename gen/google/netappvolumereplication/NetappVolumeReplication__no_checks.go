@@ -4,6 +4,10 @@ package netappvolumereplication
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetappVolumeReplication) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappVolumeReplication) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetappVolumeReplication) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (n *jsiiProxy_NetappVolumeReplication) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappVolumeReplication) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappVolumeReplication) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappVolumeReplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappVolumeReplication) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (n *jsiiProxy_NetappVolumeReplication) validatePutDestinationVolumeParamete
 }
 
 func (n *jsiiProxy_NetappVolumeReplication) validatePutTimeoutsParameters(value *NetappVolumeReplicationTimeouts) error {
+	return nil
+}
+
+func validateNetappVolumeReplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

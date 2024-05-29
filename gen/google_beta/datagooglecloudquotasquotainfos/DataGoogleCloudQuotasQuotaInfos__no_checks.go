@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleCloudQuotasQuotaInfos) validateOverrideLogicalIdPar
 	return nil
 }
 
+func validateDataGoogleCloudQuotasQuotaInfos_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleCloudQuotasQuotaInfos_IsConstructParameters(x interface{}) error {
 	return nil
 }

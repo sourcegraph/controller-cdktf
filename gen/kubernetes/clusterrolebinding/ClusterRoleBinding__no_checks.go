@@ -4,6 +4,10 @@ package clusterrolebinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ClusterRoleBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClusterRoleBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ClusterRoleBinding) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (c *jsiiProxy_ClusterRoleBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClusterRoleBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClusterRoleBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClusterRoleBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClusterRoleBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (c *jsiiProxy_ClusterRoleBinding) validatePutRoleRefParameters(value *Clust
 }
 
 func (c *jsiiProxy_ClusterRoleBinding) validatePutSubjectParameters(value interface{}) error {
+	return nil
+}
+
+func validateClusterRoleBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

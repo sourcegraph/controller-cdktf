@@ -4,6 +4,10 @@ package documentaiwarehousedocumentschema
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateGetStringMapAttrib
 	return nil
 }
 
+func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validatePutPropertyDefinit
 }
 
 func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validatePutTimeoutsParameters(value *DocumentAiWarehouseDocumentSchemaTimeouts) error {
+	return nil
+}
+
+func validateDocumentAiWarehouseDocumentSchema_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

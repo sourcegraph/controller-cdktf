@@ -4,6 +4,10 @@ package zonednssec
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (z *jsiiProxy_ZoneDnssec) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneDnssec) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (z *jsiiProxy_ZoneDnssec) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (z *jsiiProxy_ZoneDnssec) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneDnssec) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (z *jsiiProxy_ZoneDnssec) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZoneDnssec) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZoneDnssec) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneDnssec) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateZoneDnssec_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

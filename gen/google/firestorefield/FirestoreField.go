@@ -80,6 +80,9 @@ type FirestoreField interface {
 	TimeoutsInput() interface{}
 	TtlConfig() FirestoreFieldTtlConfigOutputReference
 	TtlConfigInput() *FirestoreFieldTtlConfig
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -101,7 +104,22 @@ type FirestoreField interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -118,6 +136,9 @@ type FirestoreField interface {
 	ResetTimeouts()
 	ResetTtlConfig()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -615,6 +636,25 @@ func (j *jsiiProxy_FirestoreField)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a FirestoreField resource upon running "cdktf plan <stack-name>".
+func FirestoreField_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateFirestoreField_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.firestoreField.FirestoreField",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -697,6 +737,17 @@ func FirestoreField_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (f *jsiiProxy_FirestoreField) AddMoveTarget(moveTarget *string) {
+	if err := f.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (f *jsiiProxy_FirestoreField) AddOverride(path *string, value interface{}) {
@@ -854,6 +905,30 @@ func (f *jsiiProxy_FirestoreField) GetStringMapAttribute(terraformAttribute *str
 	return returns
 }
 
+func (f *jsiiProxy_FirestoreField) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		f,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FirestoreField) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := f.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (f *jsiiProxy_FirestoreField) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -868,6 +943,39 @@ func (f *jsiiProxy_FirestoreField) InterpolationForAttribute(terraformAttribute 
 	)
 
 	return returns
+}
+
+func (f *jsiiProxy_FirestoreField) MoveFromId(id *string) {
+	if err := f.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (f *jsiiProxy_FirestoreField) MoveTo(moveTarget *string, index interface{}) {
+	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (f *jsiiProxy_FirestoreField) MoveToId(id *string) {
+	if err := f.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (f *jsiiProxy_FirestoreField) OverrideLogicalId(newLogicalId *string) {
@@ -976,6 +1084,32 @@ func (f *jsiiProxy_FirestoreField) SynthesizeAttributes() *map[string]interface{
 	_jsii_.Invoke(
 		f,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FirestoreField) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		f,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FirestoreField) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		f,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

@@ -4,6 +4,10 @@ package zonesettingsoverride
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList) validateGetParameters(index *float64) error {
 	return nil
 }

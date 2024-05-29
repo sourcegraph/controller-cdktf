@@ -4,6 +4,10 @@ package googledataprocmetastoreservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList) validateGetParameters(index *float64) error {
 	return nil
 }

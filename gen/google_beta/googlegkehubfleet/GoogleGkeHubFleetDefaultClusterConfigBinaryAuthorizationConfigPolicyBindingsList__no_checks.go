@@ -4,6 +4,10 @@ package googlegkehubfleet
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingsList) validateGetParameters(index *float64) error {
 	return nil
 }

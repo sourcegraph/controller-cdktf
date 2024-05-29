@@ -4,6 +4,10 @@ package projectiammemberremove
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_ProjectIamMemberRemove) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectIamMemberRemove) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (p *jsiiProxy_ProjectIamMemberRemove) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (p *jsiiProxy_ProjectIamMemberRemove) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectIamMemberRemove) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (p *jsiiProxy_ProjectIamMemberRemove) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectIamMemberRemove) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectIamMemberRemove) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectIamMemberRemove) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateProjectIamMemberRemove_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

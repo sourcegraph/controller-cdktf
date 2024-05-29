@@ -9,6 +9,9 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/gkeprivate/internal"
 )
 
+// Defines an Gkeprivate based on a Terraform module.
+//
+// Source at git::https://github.com/michaellzc/terraform-google-kubernetes-engine.git//modules/beta-private-cluster?ref=d276cfbb3aee47fb93cd506341d4f10d1d4c34c9
 type Gkeprivate interface {
 	cdktf.TerraformModule
 	AddClusterFirewallRules() *bool
@@ -333,6 +336,9 @@ type Gkeprivate interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -3213,6 +3219,32 @@ func (g *jsiiProxy_Gkeprivate) SynthesizeAttributes() *map[string]interface{} {
 	_jsii_.Invoke(
 		g,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_Gkeprivate) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		g,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (g *jsiiProxy_Gkeprivate) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

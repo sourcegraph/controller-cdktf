@@ -4,6 +4,10 @@ package dataawsec2transitgatewaymulticastdomain
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsEc2TransitGatewayMulticastDomainMembersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsEc2TransitGatewayMulticastDomainMembersList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -4,6 +4,10 @@ package googleservicenetworkingpeereddnsdomain
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateGetStringMapA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateOverrideLogic
 }
 
 func (g *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validatePutTimeoutsParameters(value *GoogleServiceNetworkingPeeredDnsDomainTimeouts) error {
+	return nil
+}
+
+func validateGoogleServiceNetworkingPeeredDnsDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

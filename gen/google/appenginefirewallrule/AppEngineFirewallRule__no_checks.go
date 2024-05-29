@@ -4,6 +4,10 @@ package appenginefirewallrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppEngineFirewallRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppEngineFirewallRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AppEngineFirewallRule) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (a *jsiiProxy_AppEngineFirewallRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppEngineFirewallRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppEngineFirewallRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppEngineFirewallRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppEngineFirewallRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (a *jsiiProxy_AppEngineFirewallRule) validateOverrideLogicalIdParameters(ne
 }
 
 func (a *jsiiProxy_AppEngineFirewallRule) validatePutTimeoutsParameters(value *AppEngineFirewallRuleTimeouts) error {
+	return nil
+}
+
+func validateAppEngineFirewallRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

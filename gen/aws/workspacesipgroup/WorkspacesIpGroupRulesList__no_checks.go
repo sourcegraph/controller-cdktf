@@ -4,6 +4,10 @@ package workspacesipgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WorkspacesIpGroupRulesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkspacesIpGroupRulesList) validateGetParameters(index *float64) error {
 	return nil
 }

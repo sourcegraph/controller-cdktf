@@ -4,6 +4,10 @@ package gluepartition
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GluePartition) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GluePartition) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GluePartition) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (g *jsiiProxy_GluePartition) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GluePartition) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GluePartition) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GluePartition) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GluePartition) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GluePartition) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (g *jsiiProxy_GluePartition) validatePutStorageDescriptorParameters(value *GluePartitionStorageDescriptor) error {
+	return nil
+}
+
+func validateGluePartition_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

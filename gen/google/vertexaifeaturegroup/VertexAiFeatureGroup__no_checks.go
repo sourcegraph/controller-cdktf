@@ -4,6 +4,10 @@ package vertexaifeaturegroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VertexAiFeatureGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiFeatureGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (v *jsiiProxy_VertexAiFeatureGroup) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiFeatureGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiFeatureGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiFeatureGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiFeatureGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiFeatureGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (v *jsiiProxy_VertexAiFeatureGroup) validatePutBigQueryParameters(value *Ve
 }
 
 func (v *jsiiProxy_VertexAiFeatureGroup) validatePutTimeoutsParameters(value *VertexAiFeatureGroupTimeouts) error {
+	return nil
+}
+
+func validateVertexAiFeatureGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

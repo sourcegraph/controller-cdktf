@@ -6,11 +6,11 @@ type GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows struct {
 	//
 	// Example: "3.5s". Restrictions for duration based on the
 	// recurrence type to allow some time for backup to happen:
-	// - single_occurrence_date:  no restriction
-	// - daily window: duration < 24 hours
-	// - weekly window:
-	// - days of week includes all seven days of a week: duration < 24 hours
-	// - all other weekly window: duration < 168 hours (i.e., 24 * 7 hours)
+	//   - single_occurrence_date:  no restriction
+	//   - daily window: duration < 24 hours
+	//   - weekly window:
+	//     - days of week includes all seven days of a week: duration < 24 hours
+	//     - all other weekly window: duration < 168 hours (i.e., 24 * 7 hours)
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/gke_backup_backup_plan#duration GkeBackupBackupPlan#duration}
 	Duration *string `field:"required" json:"duration" yaml:"duration"`

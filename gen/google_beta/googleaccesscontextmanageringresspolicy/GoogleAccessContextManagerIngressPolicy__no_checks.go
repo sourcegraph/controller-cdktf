@@ -4,6 +4,10 @@ package googleaccesscontextmanageringresspolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateGetStringMap
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validateOverrideLogi
 }
 
 func (g *jsiiProxy_GoogleAccessContextManagerIngressPolicy) validatePutTimeoutsParameters(value *GoogleAccessContextManagerIngressPolicyTimeouts) error {
+	return nil
+}
+
+func validateGoogleAccessContextManagerIngressPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

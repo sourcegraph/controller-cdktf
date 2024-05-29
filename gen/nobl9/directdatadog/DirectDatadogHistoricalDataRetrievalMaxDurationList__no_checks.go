@@ -4,6 +4,10 @@ package directdatadog
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DirectDatadogHistoricalDataRetrievalMaxDurationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectDatadogHistoricalDataRetrievalMaxDurationList) validateGetParameters(index *float64) error {
 	return nil
 }

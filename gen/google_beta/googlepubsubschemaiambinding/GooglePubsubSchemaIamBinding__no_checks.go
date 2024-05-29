@@ -4,6 +4,10 @@ package googlepubsubschemaiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GooglePubsubSchemaIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubSchemaIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GooglePubsubSchemaIamBinding) validateGetStringMapAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubSchemaIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubSchemaIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubSchemaIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubSchemaIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubSchemaIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GooglePubsubSchemaIamBinding) validateOverrideLogicalIdParame
 }
 
 func (g *jsiiProxy_GooglePubsubSchemaIamBinding) validatePutConditionParameters(value *GooglePubsubSchemaIamBindingCondition) error {
+	return nil
+}
+
+func validateGooglePubsubSchemaIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

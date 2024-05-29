@@ -4,6 +4,10 @@ package schedulerschedule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SchedulerSchedule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SchedulerSchedule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SchedulerSchedule) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (s *jsiiProxy_SchedulerSchedule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SchedulerSchedule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SchedulerSchedule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SchedulerSchedule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SchedulerSchedule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (s *jsiiProxy_SchedulerSchedule) validatePutFlexibleTimeWindowParameters(va
 }
 
 func (s *jsiiProxy_SchedulerSchedule) validatePutTargetParameters(value *SchedulerScheduleTarget) error {
+	return nil
+}
+
+func validateSchedulerSchedule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

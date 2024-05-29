@@ -4,6 +4,10 @@ package shuffle
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_Shuffle) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Shuffle) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (s *jsiiProxy_Shuffle) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (s *jsiiProxy_Shuffle) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Shuffle) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_Shuffle) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_Shuffle) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_Shuffle) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Shuffle) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateShuffle_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

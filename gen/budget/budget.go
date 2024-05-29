@@ -9,6 +9,9 @@ import (
 	"github.com/sourcegraph/controller-cdktf/gen/budget/internal"
 )
 
+// Defines an Budget based on a Terraform module.
+//
+// Docs at Terraform Registry: {@link https://registry.terraform.io/modules/terraform-google-modules/project-factory/google/14.4.0/submodules/budget terraform-google-modules/project-factory/google//modules/budget}
 type Budget interface {
 	cdktf.TerraformModule
 	AlertPubsubTopic() *string
@@ -85,6 +88,9 @@ type Budget interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -684,6 +690,32 @@ func (b *jsiiProxy_Budget) SynthesizeAttributes() *map[string]interface{} {
 	_jsii_.Invoke(
 		b,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_Budget) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		b,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_Budget) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

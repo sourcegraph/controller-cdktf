@@ -4,6 +4,10 @@ package googleapigeekeystoresaliaseskeycertfile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoList) validateGetParameters(index *float64) error {
 	return nil
 }

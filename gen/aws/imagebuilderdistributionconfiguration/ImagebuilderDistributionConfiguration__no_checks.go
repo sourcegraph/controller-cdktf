@@ -4,6 +4,10 @@ package imagebuilderdistributionconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_ImagebuilderDistributionConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_ImagebuilderDistributionConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (i *jsiiProxy_ImagebuilderDistributionConfiguration) validateGetStringMapAt
 	return nil
 }
 
+func (i *jsiiProxy_ImagebuilderDistributionConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_ImagebuilderDistributionConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_ImagebuilderDistributionConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_ImagebuilderDistributionConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_ImagebuilderDistributionConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (i *jsiiProxy_ImagebuilderDistributionConfiguration) validateOverrideLogica
 }
 
 func (i *jsiiProxy_ImagebuilderDistributionConfiguration) validatePutDistributionParameters(value interface{}) error {
+	return nil
+}
+
+func validateImagebuilderDistributionConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

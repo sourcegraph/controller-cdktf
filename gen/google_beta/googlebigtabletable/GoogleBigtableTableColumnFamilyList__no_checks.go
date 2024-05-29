@@ -4,6 +4,10 @@ package googlebigtabletable
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBigtableTableColumnFamilyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigtableTableColumnFamilyList) validateGetParameters(index *float64) error {
 	return nil
 }

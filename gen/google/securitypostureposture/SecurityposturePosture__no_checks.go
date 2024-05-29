@@ -4,6 +4,10 @@ package securitypostureposture
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SecurityposturePosture) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityposturePosture) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SecurityposturePosture) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (s *jsiiProxy_SecurityposturePosture) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityposturePosture) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityposturePosture) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityposturePosture) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityposturePosture) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (s *jsiiProxy_SecurityposturePosture) validatePutPolicySetsParameters(value
 }
 
 func (s *jsiiProxy_SecurityposturePosture) validatePutTimeoutsParameters(value *SecurityposturePostureTimeouts) error {
+	return nil
+}
+
+func validateSecurityposturePosture_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

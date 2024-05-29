@@ -4,6 +4,10 @@ package googlegkehubscoperbacrolebinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleGkeHubScopeRbacRoleBindingStateList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeHubScopeRbacRoleBindingStateList) validateGetParameters(index *float64) error {
 	return nil
 }

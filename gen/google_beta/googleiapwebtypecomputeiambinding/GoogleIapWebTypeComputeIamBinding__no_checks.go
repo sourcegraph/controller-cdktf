@@ -4,6 +4,10 @@ package googleiapwebtypecomputeiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleIapWebTypeComputeIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIapWebTypeComputeIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleIapWebTypeComputeIamBinding) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIapWebTypeComputeIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIapWebTypeComputeIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIapWebTypeComputeIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIapWebTypeComputeIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIapWebTypeComputeIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleIapWebTypeComputeIamBinding) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GoogleIapWebTypeComputeIamBinding) validatePutConditionParameters(value *GoogleIapWebTypeComputeIamBindingCondition) error {
+	return nil
+}
+
+func validateGoogleIapWebTypeComputeIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

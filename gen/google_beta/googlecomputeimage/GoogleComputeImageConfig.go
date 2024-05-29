@@ -64,7 +64,7 @@ type GoogleComputeImageConfig struct {
 	ImageEncryptionKey *GoogleComputeImageImageEncryptionKey `field:"optional" json:"imageEncryptionKey" yaml:"imageEncryptionKey"`
 	// Labels to apply to this Image.
 	//
-	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_image#labels GoogleComputeImage#labels}
@@ -91,10 +91,10 @@ type GoogleComputeImageConfig struct {
 	// In order to create an image, you must provide the full or partial
 	// URL of one of the following:
 	//
-	// The selfLink URL
-	// This property
-	// The rawDisk.source URL
-	// The sourceDisk URL
+	// * The selfLink URL
+	// * This property
+	// * The rawDisk.source URL
+	// * The sourceDisk URL
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_image#source_image GoogleComputeImage#source_image}
 	SourceImage *string `field:"optional" json:"sourceImage" yaml:"sourceImage"`
@@ -102,11 +102,11 @@ type GoogleComputeImageConfig struct {
 	//
 	// In order to create an image, you must provide the full or partial URL of one of the following:
 	//
-	// The selfLink URL
-	// This property
-	// The sourceImage URL
-	// The rawDisk.source URL
-	// The sourceDisk URL
+	// * The selfLink URL
+	// * This property
+	// * The sourceImage URL
+	// * The rawDisk.source URL
+	// * The sourceDisk URL
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_compute_image#source_snapshot GoogleComputeImage#source_snapshot}
 	SourceSnapshot *string `field:"optional" json:"sourceSnapshot" yaml:"sourceSnapshot"`

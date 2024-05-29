@@ -4,6 +4,10 @@ package integrationconnectorsconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IntegrationConnectorsConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationConnectorsConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (i *jsiiProxy_IntegrationConnectorsConnection) validateGetStringMapAttribut
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationConnectorsConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationConnectorsConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationConnectorsConnection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationConnectorsConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationConnectorsConnection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -85,6 +105,10 @@ func (i *jsiiProxy_IntegrationConnectorsConnection) validatePutSslConfigParamete
 }
 
 func (i *jsiiProxy_IntegrationConnectorsConnection) validatePutTimeoutsParameters(value *IntegrationConnectorsConnectionTimeouts) error {
+	return nil
+}
+
+func validateIntegrationConnectorsConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

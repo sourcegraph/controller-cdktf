@@ -143,17 +143,6 @@ func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) validatePutRuleLabelParameter
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) validatePutStatementParameters(value *Wafv2WebAclRuleStatement) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) validatePutVisibilityConfigParameters(value *Wafv2WebAclRuleVisibilityConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -271,6 +260,14 @@ func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) validateSetNameParameters(val
 }
 
 func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) validateSetPriorityParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) validateSetStatementParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

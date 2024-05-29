@@ -4,6 +4,10 @@ package pagerule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PageRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PageRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (p *jsiiProxy_PageRule) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (p *jsiiProxy_PageRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PageRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PageRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PageRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PageRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (p *jsiiProxy_PageRule) validateOverrideLogicalIdParameters(newLogicalId *s
 }
 
 func (p *jsiiProxy_PageRule) validatePutActionsParameters(value *PageRuleActions) error {
+	return nil
+}
+
+func validatePageRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package alloydbbackup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AlloydbBackup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbBackup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (a *jsiiProxy_AlloydbBackup) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (a *jsiiProxy_AlloydbBackup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbBackup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlloydbBackup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlloydbBackup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlloydbBackup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (a *jsiiProxy_AlloydbBackup) validatePutEncryptionConfigParameters(value *A
 }
 
 func (a *jsiiProxy_AlloydbBackup) validatePutTimeoutsParameters(value *AlloydbBackupTimeouts) error {
+	return nil
+}
+
+func validateAlloydbBackup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

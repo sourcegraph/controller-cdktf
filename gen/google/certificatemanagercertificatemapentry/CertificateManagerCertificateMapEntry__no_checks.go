@@ -4,6 +4,10 @@ package certificatemanagercertificatemapentry
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CertificateManagerCertificateMapEntry) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CertificateManagerCertificateMapEntry) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CertificateManagerCertificateMapEntry) validateGetStringMapAt
 	return nil
 }
 
+func (c *jsiiProxy_CertificateManagerCertificateMapEntry) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CertificateManagerCertificateMapEntry) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CertificateManagerCertificateMapEntry) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CertificateManagerCertificateMapEntry) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CertificateManagerCertificateMapEntry) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_CertificateManagerCertificateMapEntry) validateOverrideLogica
 }
 
 func (c *jsiiProxy_CertificateManagerCertificateMapEntry) validatePutTimeoutsParameters(value *CertificateManagerCertificateMapEntryTimeouts) error {
+	return nil
+}
+
+func validateCertificateManagerCertificateMapEntry_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

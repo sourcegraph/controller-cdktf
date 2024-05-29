@@ -4,6 +4,10 @@ package googlecertificatemanagertrustconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresTrustAnchorsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresTrustAnchorsList) validateGetParameters(index *float64) error {
 	return nil
 }

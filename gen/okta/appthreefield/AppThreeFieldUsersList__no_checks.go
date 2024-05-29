@@ -4,6 +4,10 @@ package appthreefield
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppThreeFieldUsersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppThreeFieldUsersList) validateGetParameters(index *float64) error {
 	return nil
 }

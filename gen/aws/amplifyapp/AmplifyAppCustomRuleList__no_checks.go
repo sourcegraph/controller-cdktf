@@ -4,6 +4,10 @@ package amplifyapp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AmplifyAppCustomRuleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AmplifyAppCustomRuleList) validateGetParameters(index *float64) error {
 	return nil
 }

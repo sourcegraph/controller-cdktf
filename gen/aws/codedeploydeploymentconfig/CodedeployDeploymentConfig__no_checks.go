@@ -4,6 +4,10 @@ package codedeploydeploymentconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CodedeployDeploymentConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodedeployDeploymentConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CodedeployDeploymentConfig) validateGetStringMapAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_CodedeployDeploymentConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodedeployDeploymentConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodedeployDeploymentConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodedeployDeploymentConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodedeployDeploymentConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (c *jsiiProxy_CodedeployDeploymentConfig) validatePutMinimumHealthyHostsPar
 }
 
 func (c *jsiiProxy_CodedeployDeploymentConfig) validatePutTrafficRoutingConfigParameters(value *CodedeployDeploymentConfigTrafficRoutingConfig) error {
+	return nil
+}
+
+func validateCodedeployDeploymentConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

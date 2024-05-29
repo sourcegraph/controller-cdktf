@@ -4,6 +4,10 @@ package googlevmwareengineexternaladdress
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleVmwareengineExternalAddress) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVmwareengineExternalAddress) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleVmwareengineExternalAddress) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVmwareengineExternalAddress) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVmwareengineExternalAddress) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVmwareengineExternalAddress) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVmwareengineExternalAddress) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVmwareengineExternalAddress) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleVmwareengineExternalAddress) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GoogleVmwareengineExternalAddress) validatePutTimeoutsParameters(value *GoogleVmwareengineExternalAddressTimeouts) error {
+	return nil
+}
+
+func validateGoogleVmwareengineExternalAddress_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

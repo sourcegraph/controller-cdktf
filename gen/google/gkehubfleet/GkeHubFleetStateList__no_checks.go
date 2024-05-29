@@ -4,6 +4,10 @@ package gkehubfleet
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GkeHubFleetStateList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubFleetStateList) validateGetParameters(index *float64) error {
 	return nil
 }

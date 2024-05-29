@@ -4,6 +4,10 @@ package gkeonprembaremetalnodepool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GkeonpremBareMetalNodePool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeonpremBareMetalNodePool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) validateGetStringMapAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GkeonpremBareMetalNodePool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeonpremBareMetalNodePool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeonpremBareMetalNodePool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeonpremBareMetalNodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeonpremBareMetalNodePool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) validatePutNodePoolConfigParamete
 }
 
 func (g *jsiiProxy_GkeonpremBareMetalNodePool) validatePutTimeoutsParameters(value *GkeonpremBareMetalNodePoolTimeouts) error {
+	return nil
+}
+
+func validateGkeonpremBareMetalNodePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

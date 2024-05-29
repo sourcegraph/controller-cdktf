@@ -23,9 +23,13 @@ type GoogleDataformRepositoryWorkflowConfigConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_dataform_repository_workflow_config#name GoogleDataformRepositoryWorkflowConfig#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// The name of the release config whose releaseCompilationResult should be executed. Must be in the format projects/*\/locations/*\/repositories/*\/releaseConfigs/*.
+	// The name of the release config whose releaseCompilationResult should be executed.
+	//
+	// Must be in the format projects/* /locations/* /repositories/* /releaseConfigs/*.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_dataform_repository_workflow_config#release_config GoogleDataformRepositoryWorkflowConfig#release_config}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	ReleaseConfig *string `field:"required" json:"releaseConfig" yaml:"releaseConfig"`
 	// Optional. Optional schedule (in cron format) for automatic creation of compilation results.
 	//

@@ -4,6 +4,10 @@ package vmwareenginenetworkpeering
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VmwareengineNetworkPeering) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareengineNetworkPeering) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (v *jsiiProxy_VmwareengineNetworkPeering) validateGetStringMapAttributePara
 	return nil
 }
 
+func (v *jsiiProxy_VmwareengineNetworkPeering) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareengineNetworkPeering) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwareengineNetworkPeering) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwareengineNetworkPeering) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwareengineNetworkPeering) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (v *jsiiProxy_VmwareengineNetworkPeering) validateOverrideLogicalIdParamete
 }
 
 func (v *jsiiProxy_VmwareengineNetworkPeering) validatePutTimeoutsParameters(value *VmwareengineNetworkPeeringTimeouts) error {
+	return nil
+}
+
+func validateVmwareengineNetworkPeering_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

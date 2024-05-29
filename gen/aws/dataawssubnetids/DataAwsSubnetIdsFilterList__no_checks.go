@@ -4,6 +4,10 @@ package dataawssubnetids
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsSubnetIdsFilterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsSubnetIdsFilterList) validateGetParameters(index *float64) error {
 	return nil
 }

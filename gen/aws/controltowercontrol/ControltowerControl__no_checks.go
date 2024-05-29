@@ -4,6 +4,10 @@ package controltowercontrol
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ControltowerControl) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ControltowerControl) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ControltowerControl) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (c *jsiiProxy_ControltowerControl) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ControltowerControl) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ControltowerControl) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ControltowerControl) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ControltowerControl) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ControltowerControl) validateOverrideLogicalIdParameters(newL
 }
 
 func (c *jsiiProxy_ControltowerControl) validatePutTimeoutsParameters(value *ControltowerControlTimeouts) error {
+	return nil
+}
+
+func validateControltowerControl_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

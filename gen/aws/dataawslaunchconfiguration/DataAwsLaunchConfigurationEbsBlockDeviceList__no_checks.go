@@ -4,6 +4,10 @@ package dataawslaunchconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsLaunchConfigurationEbsBlockDeviceList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsLaunchConfigurationEbsBlockDeviceList) validateGetParameters(index *float64) error {
 	return nil
 }

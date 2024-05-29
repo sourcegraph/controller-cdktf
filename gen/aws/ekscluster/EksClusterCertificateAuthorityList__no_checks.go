@@ -4,6 +4,10 @@ package ekscluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EksClusterCertificateAuthorityList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EksClusterCertificateAuthorityList) validateGetParameters(index *float64) error {
 	return nil
 }

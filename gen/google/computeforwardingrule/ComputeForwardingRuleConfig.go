@@ -57,12 +57,12 @@ type ComputeForwardingRuleConfig struct {
 	// to the backends configured with this forwarding rule.
 	//
 	// The 'allPorts' field has the following limitations:
-	// It requires that the forwarding rule 'IPProtocol' be TCP, UDP, SCTP, or
+	// * It requires that the forwarding rule 'IPProtocol' be TCP, UDP, SCTP, or
 	// L3_DEFAULT.
-	// It's applicable only to the following products: internal passthrough
+	// * It's applicable only to the following products: internal passthrough
 	// Network Load Balancers, backend service-based external passthrough Network
 	// Load Balancers, and internal and external protocol forwarding.
-	// Set this field to true to allow packets addressed to any port or packets
+	// * Set this field to true to allow packets addressed to any port or packets
 	// lacking destination port information (for example, UDP fragments after the
 	// first fragment) to be forwarded to the backends configured with this
 	// forwarding rule. The L3_DEFAULT protocol requires 'allPorts' be set to
@@ -95,10 +95,10 @@ type ComputeForwardingRuleConfig struct {
 	// While creating a forwarding rule, specifying an 'IPAddress' is
 	// required under the following circumstances:
 	//
-	// When the 'target' is set to 'targetGrpcProxy' and
+	// * When the 'target' is set to 'targetGrpcProxy' and
 	// 'validateForProxyless' is set to 'true', the
 	// 'IPAddress' should be set to '0.0.0.0'.
-	// When the 'target' is a Private Service Connect Google APIs
+	// * When the 'target' is a Private Service Connect Google APIs
 	// bundle, you must specify an 'IPAddress'.
 	//
 	//
@@ -109,15 +109,15 @@ type ComputeForwardingRuleConfig struct {
 	// Use one of the following formats to specify an IP address while creating a
 	// forwarding rule:
 	//
-	// IP address number, as in '100.1.2.3'
-	// IPv6 address range, as in '2600:1234::/96'
-	// Full resource URL, as in
+	// * IP address number, as in '100.1.2.3'
+	// * IPv6 address range, as in '2600:1234::/96'
+	// * Full resource URL, as in
 	// 'https://www.googleapis.com/compute/v1/projects/project_id/regions/region/addresses/address-name'
-	// Partial URL or by name, as in:
-	// 'projects/project_id/regions/region/addresses/address-name'
-	// 'regions/region/addresses/address-name'
-	// 'global/addresses/address-name'
-	// 'address-name'
+	// * Partial URL or by name, as in:
+	//   * 'projects/project_id/regions/region/addresses/address-name'
+	//   * 'regions/region/addresses/address-name'
+	//   * 'global/addresses/address-name'
+	//   * 'address-name'
 	//
 	//
 	// The forwarding rule's 'target' or 'backendService',
@@ -167,7 +167,7 @@ type ComputeForwardingRuleConfig struct {
 	IsMirroringCollector interface{} `field:"optional" json:"isMirroringCollector" yaml:"isMirroringCollector"`
 	// Labels to apply to this forwarding rule.  A list of key->value pairs.
 	//
-	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_forwarding_rule#labels ComputeForwardingRule#labels}
@@ -216,13 +216,13 @@ type ComputeForwardingRuleConfig struct {
 	// to the backends configured with this forwarding rule.
 	//
 	// The 'portRange' field has the following limitations:
-	// It requires that the forwarding rule 'IPProtocol' be TCP, UDP, or SCTP,
+	// * It requires that the forwarding rule 'IPProtocol' be TCP, UDP, or SCTP,
 	// and
-	// It's applicable only to the following products: external passthrough
+	// * It's applicable only to the following products: external passthrough
 	// Network Load Balancers, internal and external proxy Network Load
 	// Balancers, internal and external Application Load Balancers, external
 	// protocol forwarding, and Classic VPN.
-	// Some products have restrictions on what ports can be used. See
+	// * Some products have restrictions on what ports can be used. See
 	// [port specifications](https://cloud.google.com/load-balancing/docs/forwarding-rule-concepts#port_specifications)
 	// for details.
 	//
@@ -240,12 +240,12 @@ type ComputeForwardingRuleConfig struct {
 	// to the backends configured with this forwarding rule.
 	//
 	// The 'ports' field has the following limitations:
-	// It requires that the forwarding rule 'IPProtocol' be TCP, UDP, or SCTP,
+	// * It requires that the forwarding rule 'IPProtocol' be TCP, UDP, or SCTP,
 	// and
-	// It's applicable only to the following products: internal passthrough
+	// * It's applicable only to the following products: internal passthrough
 	// Network Load Balancers, backend service-based external passthrough Network
 	// Load Balancers, and internal protocol forwarding.
-	// You can specify a list of up to five ports by number, separated by
+	// * You can specify a list of up to five ports by number, separated by
 	// commas. The ports can be contiguous or discontiguous.
 	//
 	// For external forwarding rules, two or more forwarding rules cannot use the
@@ -310,10 +310,10 @@ type ComputeForwardingRuleConfig struct {
 	// load balancing resource.
 	//
 	// The forwarded traffic must be of a type appropriate to the target object.
-	// For load balancers, see the "Target" column in [Port specifications](https://cloud.google.com/load-balancing/docs/forwarding-rule-concepts#ip_address_specifications).
-	// For Private Service Connect forwarding rules that forward traffic to Google APIs, provide the name of a supported Google API bundle:
-	//  'vpc-sc' - [ APIs that support VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/supported-products).
-	//  'all-apis' - [All supported Google APIs](https://cloud.google.com/vpc/docs/private-service-connect#supported-apis).
+	// *  For load balancers, see the "Target" column in [Port specifications](https://cloud.google.com/load-balancing/docs/forwarding-rule-concepts#ip_address_specifications).
+	// *  For Private Service Connect forwarding rules that forward traffic to Google APIs, provide the name of a supported Google API bundle:
+	//   *  'vpc-sc' - [ APIs that support VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/supported-products).
+	//   *  'all-apis' - [All supported Google APIs](https://cloud.google.com/vpc/docs/private-service-connect#supported-apis).
 	//
 	//
 	// For Private Service Connect forwarding rules that forward traffic to managed services, the target must be a service attachment.

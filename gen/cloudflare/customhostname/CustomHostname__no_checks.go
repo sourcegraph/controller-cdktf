@@ -4,6 +4,10 @@ package customhostname
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CustomHostname) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomHostname) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CustomHostname) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (c *jsiiProxy_CustomHostname) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomHostname) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomHostname) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomHostname) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomHostname) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_CustomHostname) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (c *jsiiProxy_CustomHostname) validatePutSslParameters(value interface{}) error {
+	return nil
+}
+
+func validateCustomHostname_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -68,6 +68,9 @@ type TeamToken interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Token() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -89,7 +92,22 @@ type TeamToken interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -99,6 +117,9 @@ type TeamToken interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -474,6 +495,25 @@ func (j *jsiiProxy_TeamToken)SetTeamId(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a TeamToken resource upon running "cdktf plan <stack-name>".
+func TeamToken_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateTeamToken_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-tfe.teamToken.TeamToken",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -556,6 +596,17 @@ func TeamToken_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (t *jsiiProxy_TeamToken) AddMoveTarget(moveTarget *string) {
+	if err := t.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (t *jsiiProxy_TeamToken) AddOverride(path *string, value interface{}) {
@@ -713,6 +764,30 @@ func (t *jsiiProxy_TeamToken) GetStringMapAttribute(terraformAttribute *string) 
 	return returns
 }
 
+func (t *jsiiProxy_TeamToken) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		t,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (t *jsiiProxy_TeamToken) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := t.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (t *jsiiProxy_TeamToken) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -727,6 +802,39 @@ func (t *jsiiProxy_TeamToken) InterpolationForAttribute(terraformAttribute *stri
 	)
 
 	return returns
+}
+
+func (t *jsiiProxy_TeamToken) MoveFromId(id *string) {
+	if err := t.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (t *jsiiProxy_TeamToken) MoveTo(moveTarget *string, index interface{}) {
+	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (t *jsiiProxy_TeamToken) MoveToId(id *string) {
+	if err := t.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (t *jsiiProxy_TeamToken) OverrideLogicalId(newLogicalId *string) {
@@ -770,6 +878,32 @@ func (t *jsiiProxy_TeamToken) SynthesizeAttributes() *map[string]interface{} {
 	_jsii_.Invoke(
 		t,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (t *jsiiProxy_TeamToken) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		t,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (t *jsiiProxy_TeamToken) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		t,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

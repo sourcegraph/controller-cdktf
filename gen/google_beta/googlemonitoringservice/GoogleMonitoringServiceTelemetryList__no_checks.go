@@ -4,6 +4,10 @@ package googlemonitoringservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleMonitoringServiceTelemetryList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringServiceTelemetryList) validateGetParameters(index *float64) error {
 	return nil
 }

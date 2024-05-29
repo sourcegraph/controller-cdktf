@@ -22,17 +22,25 @@ type GoogleCertificateManagerCertificateMapEntryConfig struct {
 	// A set of Certificates defines for the given hostname.
 	//
 	// There can be defined up to fifteen certificates in each Certificate Map Entry.
-	// Each certificate must match pattern projects/*\/locations/*\/certificates/*.
+	// Each certificate must match pattern projects/* /locations/* /certificates/*.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_certificate_manager_certificate_map_entry#certificates GoogleCertificateManagerCertificateMapEntry#certificates}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	Certificates *[]*string `field:"required" json:"certificates" yaml:"certificates"`
 	// A map entry that is inputted into the cetrificate map.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_certificate_manager_certificate_map_entry#map GoogleCertificateManagerCertificateMapEntry#map}
 	Map *string `field:"required" json:"map" yaml:"map"`
-	// A user-defined name of the Certificate Map Entry. Certificate Map Entry names must be unique globally and match pattern 'projects/*\/locations/*\/certificateMaps/*\/certificateMapEntries/*'.
+	// A user-defined name of the Certificate Map Entry.
+	//
+	// Certificate Map Entry
+	// names must be unique globally and match pattern
+	// 'projects/* /locations/* /certificateMaps/* /certificateMapEntries/*'
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_certificate_manager_certificate_map_entry#name GoogleCertificateManagerCertificateMapEntry#name}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// A human-readable description of the resource.
 	//
@@ -53,7 +61,7 @@ type GoogleCertificateManagerCertificateMapEntryConfig struct {
 	// Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 	//
 	//
-	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_certificate_manager_certificate_map_entry#labels GoogleCertificateManagerCertificateMapEntry#labels}

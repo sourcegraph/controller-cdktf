@@ -6,9 +6,9 @@ type ComputeExternalVpnGatewayInterface struct {
 	//
 	// Allowed values are based on the redundancy type
 	// of this external VPN gateway
-	// '0 - SINGLE_IP_INTERNALLY_REDUNDANT'
-	// '0, 1 - TWO_IPS_REDUNDANCY'
-	// '0, 1, 2, 3 - FOUR_IPS_REDUNDANCY'
+	// * '0 - SINGLE_IP_INTERNALLY_REDUNDANT'
+	// * '0, 1 - TWO_IPS_REDUNDANCY'
+	// * '0, 1, 2, 3 - FOUR_IPS_REDUNDANCY'
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_external_vpn_gateway#id ComputeExternalVpnGateway#id}
 	//

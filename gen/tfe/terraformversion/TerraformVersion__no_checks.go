@@ -4,6 +4,10 @@ package terraformversion
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TerraformVersion) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TerraformVersion) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (t *jsiiProxy_TerraformVersion) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (t *jsiiProxy_TerraformVersion) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TerraformVersion) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_TerraformVersion) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TerraformVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TerraformVersion) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TerraformVersion) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateTerraformVersion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

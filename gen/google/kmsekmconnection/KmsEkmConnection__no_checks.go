@@ -4,6 +4,10 @@ package kmsekmconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KmsEkmConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsEkmConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (k *jsiiProxy_KmsEkmConnection) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (k *jsiiProxy_KmsEkmConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsEkmConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsEkmConnection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsEkmConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsEkmConnection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (k *jsiiProxy_KmsEkmConnection) validatePutServiceResolversParameters(value
 }
 
 func (k *jsiiProxy_KmsEkmConnection) validatePutTimeoutsParameters(value *KmsEkmConnectionTimeouts) error {
+	return nil
+}
+
+func validateKmsEkmConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

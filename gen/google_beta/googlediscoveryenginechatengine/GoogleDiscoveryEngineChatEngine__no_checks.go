@@ -4,6 +4,10 @@ package googlediscoveryenginechatengine
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateGetStringMapAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) validatePutCommonConfigParam
 }
 
 func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) validatePutTimeoutsParameters(value *GoogleDiscoveryEngineChatEngineTimeouts) error {
+	return nil
+}
+
+func validateGoogleDiscoveryEngineChatEngine_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

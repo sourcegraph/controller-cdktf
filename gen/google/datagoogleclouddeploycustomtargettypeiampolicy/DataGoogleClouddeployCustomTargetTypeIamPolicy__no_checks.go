@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleClouddeployCustomTargetTypeIamPolicy) validateOverr
 	return nil
 }
 
+func validateDataGoogleClouddeployCustomTargetTypeIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleClouddeployCustomTargetTypeIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

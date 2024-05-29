@@ -4,6 +4,10 @@ package googleidentityplatformtenantinboundsamlconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfig) validateGetStr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfig) validatePutSpC
 }
 
 func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfig) validatePutTimeoutsParameters(value *GoogleIdentityPlatformTenantInboundSamlConfigTimeouts) error {
+	return nil
+}
+
+func validateGoogleIdentityPlatformTenantInboundSamlConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

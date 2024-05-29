@@ -31,9 +31,11 @@ type GkeHubMembershipBindingConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/gke_hub_membership_binding#membership_id GkeHubMembershipBinding#membership_id}
 	MembershipId *string `field:"required" json:"membershipId" yaml:"membershipId"`
-	// A Workspace resource name in the format 'projects/*\/locations/*\/scopes/*'.
+	// A Workspace resource name in the format 'projects/* /locations/* /scopes/*'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/gke_hub_membership_binding#scope GkeHubMembershipBinding#scope}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	Scope *string `field:"required" json:"scope" yaml:"scope"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/gke_hub_membership_binding#id GkeHubMembershipBinding#id}.
 	//
@@ -42,7 +44,7 @@ type GkeHubMembershipBindingConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Labels for this Membership binding.
 	//
-	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/gke_hub_membership_binding#labels GkeHubMembershipBinding#labels}

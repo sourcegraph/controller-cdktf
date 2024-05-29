@@ -90,6 +90,9 @@ type QuicksightDataSource interface {
 	TypeInput() *string
 	VpcConnectionProperties() QuicksightDataSourceVpcConnectionPropertiesOutputReference
 	VpcConnectionPropertiesInput() *QuicksightDataSourceVpcConnectionProperties
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -111,7 +114,22 @@ type QuicksightDataSource interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -132,6 +150,9 @@ type QuicksightDataSource interface {
 	ResetTagsAll()
 	ResetVpcConnectionProperties()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -731,6 +752,25 @@ func (j *jsiiProxy_QuicksightDataSource)SetType(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a QuicksightDataSource resource upon running "cdktf plan <stack-name>".
+func QuicksightDataSource_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateQuicksightDataSource_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSource",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -813,6 +853,17 @@ func QuicksightDataSource_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (q *jsiiProxy_QuicksightDataSource) AddMoveTarget(moveTarget *string) {
+	if err := q.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (q *jsiiProxy_QuicksightDataSource) AddOverride(path *string, value interface{}) {
@@ -970,6 +1021,30 @@ func (q *jsiiProxy_QuicksightDataSource) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (q *jsiiProxy_QuicksightDataSource) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		q,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (q *jsiiProxy_QuicksightDataSource) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := q.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (q *jsiiProxy_QuicksightDataSource) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := q.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -984,6 +1059,39 @@ func (q *jsiiProxy_QuicksightDataSource) InterpolationForAttribute(terraformAttr
 	)
 
 	return returns
+}
+
+func (q *jsiiProxy_QuicksightDataSource) MoveFromId(id *string) {
+	if err := q.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (q *jsiiProxy_QuicksightDataSource) MoveTo(moveTarget *string, index interface{}) {
+	if err := q.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (q *jsiiProxy_QuicksightDataSource) MoveToId(id *string) {
+	if err := q.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (q *jsiiProxy_QuicksightDataSource) OverrideLogicalId(newLogicalId *string) {
@@ -1130,6 +1238,32 @@ func (q *jsiiProxy_QuicksightDataSource) SynthesizeAttributes() *map[string]inte
 	_jsii_.Invoke(
 		q,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (q *jsiiProxy_QuicksightDataSource) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		q,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (q *jsiiProxy_QuicksightDataSource) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		q,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

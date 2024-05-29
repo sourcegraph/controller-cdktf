@@ -4,6 +4,10 @@ package maciememberaccountassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MacieMemberAccountAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MacieMemberAccountAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (m *jsiiProxy_MacieMemberAccountAssociation) validateGetStringMapAttributeP
 	return nil
 }
 
+func (m *jsiiProxy_MacieMemberAccountAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MacieMemberAccountAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (m *jsiiProxy_MacieMemberAccountAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MacieMemberAccountAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MacieMemberAccountAssociation) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MacieMemberAccountAssociation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateMacieMemberAccountAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

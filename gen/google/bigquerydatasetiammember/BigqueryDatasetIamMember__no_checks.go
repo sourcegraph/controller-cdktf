@@ -4,6 +4,10 @@ package bigquerydatasetiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigqueryDatasetIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryDatasetIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (b *jsiiProxy_BigqueryDatasetIamMember) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryDatasetIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryDatasetIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryDatasetIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryDatasetIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryDatasetIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (b *jsiiProxy_BigqueryDatasetIamMember) validateOverrideLogicalIdParameters
 }
 
 func (b *jsiiProxy_BigqueryDatasetIamMember) validatePutConditionParameters(value *BigqueryDatasetIamMemberCondition) error {
+	return nil
+}
+
+func validateBigqueryDatasetIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

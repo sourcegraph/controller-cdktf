@@ -4,6 +4,10 @@ package datagoogletagstagvalues
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleTagsTagValuesValuesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleTagsTagValuesValuesList) validateGetParameters(index *float64) error {
 	return nil
 }

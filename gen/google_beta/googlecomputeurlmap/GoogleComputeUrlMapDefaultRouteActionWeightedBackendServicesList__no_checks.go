@@ -4,6 +4,10 @@ package googlecomputeurlmap
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesList) validateGetParameters(index *float64) error {
 	return nil
 }

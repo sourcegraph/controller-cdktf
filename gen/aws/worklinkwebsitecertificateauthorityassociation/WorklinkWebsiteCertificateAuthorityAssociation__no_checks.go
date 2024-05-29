@@ -4,6 +4,10 @@ package worklinkwebsitecertificateauthorityassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateGetSt
 	return nil
 }
 
+func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateWorklinkWebsiteCertificateAuthorityAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

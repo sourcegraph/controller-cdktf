@@ -4,6 +4,10 @@ package googlecloudbuildv2connectioniammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleCloudbuildv2ConnectionIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudbuildv2ConnectionIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleCloudbuildv2ConnectionIamMember) validateGetStringMapAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudbuildv2ConnectionIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudbuildv2ConnectionIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudbuildv2ConnectionIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudbuildv2ConnectionIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudbuildv2ConnectionIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleCloudbuildv2ConnectionIamMember) validateOverrideLogica
 }
 
 func (g *jsiiProxy_GoogleCloudbuildv2ConnectionIamMember) validatePutConditionParameters(value *GoogleCloudbuildv2ConnectionIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleCloudbuildv2ConnectionIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

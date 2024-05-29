@@ -4,6 +4,10 @@ package networkfirewallrulegroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkfirewallRuleGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkfirewallRuleGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (n *jsiiProxy_NetworkfirewallRuleGroup) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (n *jsiiProxy_NetworkfirewallRuleGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkfirewallRuleGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkfirewallRuleGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkfirewallRuleGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkfirewallRuleGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (n *jsiiProxy_NetworkfirewallRuleGroup) validatePutEncryptionConfigurationP
 }
 
 func (n *jsiiProxy_NetworkfirewallRuleGroup) validatePutRuleGroupParameters(value *NetworkfirewallRuleGroupRuleGroup) error {
+	return nil
+}
+
+func validateNetworkfirewallRuleGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

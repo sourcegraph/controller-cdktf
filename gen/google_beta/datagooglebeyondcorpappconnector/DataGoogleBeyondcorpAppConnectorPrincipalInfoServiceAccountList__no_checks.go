@@ -4,6 +4,10 @@ package datagooglebeyondcorpappconnector
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountList) validateGetParameters(index *float64) error {
 	return nil
 }

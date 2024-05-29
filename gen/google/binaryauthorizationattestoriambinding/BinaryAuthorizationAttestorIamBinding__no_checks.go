@@ -4,6 +4,10 @@ package binaryauthorizationattestoriambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BinaryAuthorizationAttestorIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BinaryAuthorizationAttestorIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (b *jsiiProxy_BinaryAuthorizationAttestorIamBinding) validateGetStringMapAt
 	return nil
 }
 
+func (b *jsiiProxy_BinaryAuthorizationAttestorIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BinaryAuthorizationAttestorIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BinaryAuthorizationAttestorIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BinaryAuthorizationAttestorIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BinaryAuthorizationAttestorIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (b *jsiiProxy_BinaryAuthorizationAttestorIamBinding) validateOverrideLogica
 }
 
 func (b *jsiiProxy_BinaryAuthorizationAttestorIamBinding) validatePutConditionParameters(value *BinaryAuthorizationAttestorIamBindingCondition) error {
+	return nil
+}
+
+func validateBinaryAuthorizationAttestorIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

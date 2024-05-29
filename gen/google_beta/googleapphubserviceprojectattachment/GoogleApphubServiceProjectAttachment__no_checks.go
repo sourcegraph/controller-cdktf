@@ -4,6 +4,10 @@ package googleapphubserviceprojectattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleApphubServiceProjectAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApphubServiceProjectAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleApphubServiceProjectAttachment) validateGetStringMapAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApphubServiceProjectAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApphubServiceProjectAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApphubServiceProjectAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApphubServiceProjectAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApphubServiceProjectAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (g *jsiiProxy_GoogleApphubServiceProjectAttachment) validateOverrideLogical
 }
 
 func (g *jsiiProxy_GoogleApphubServiceProjectAttachment) validatePutTimeoutsParameters(value *GoogleApphubServiceProjectAttachmentTimeouts) error {
+	return nil
+}
+
+func validateGoogleApphubServiceProjectAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

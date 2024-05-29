@@ -4,6 +4,10 @@ package dataprocmetastorefederationiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataprocMetastoreFederationIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreFederationIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (d *jsiiProxy_DataprocMetastoreFederationIamPolicy) validateGetStringMapAtt
 	return nil
 }
 
+func (d *jsiiProxy_DataprocMetastoreFederationIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreFederationIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (d *jsiiProxy_DataprocMetastoreFederationIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocMetastoreFederationIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocMetastoreFederationIamPolicy) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreFederationIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDataprocMetastoreFederationIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package privatecacertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PrivatecaCertificate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (p *jsiiProxy_PrivatecaCertificate) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (p *jsiiProxy_PrivatecaCertificate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCertificate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivatecaCertificate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivatecaCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivatecaCertificate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (p *jsiiProxy_PrivatecaCertificate) validatePutConfigParameters(value *Priv
 }
 
 func (p *jsiiProxy_PrivatecaCertificate) validatePutTimeoutsParameters(value *PrivatecaCertificateTimeouts) error {
+	return nil
+}
+
+func validatePrivatecaCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

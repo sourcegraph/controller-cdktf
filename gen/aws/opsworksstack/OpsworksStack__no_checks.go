@@ -4,6 +4,10 @@ package opsworksstack
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OpsworksStack) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksStack) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (o *jsiiProxy_OpsworksStack) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (o *jsiiProxy_OpsworksStack) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksStack) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksStack) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksStack) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksStack) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (o *jsiiProxy_OpsworksStack) validatePutCustomCookbooksSourceParameters(val
 }
 
 func (o *jsiiProxy_OpsworksStack) validatePutTimeoutsParameters(value *OpsworksStackTimeouts) error {
+	return nil
+}
+
+func validateOpsworksStack_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

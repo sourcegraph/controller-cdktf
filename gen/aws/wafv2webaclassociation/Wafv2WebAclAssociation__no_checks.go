@@ -4,6 +4,10 @@ package wafv2webaclassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_Wafv2WebAclAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2WebAclAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2WebAclAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2WebAclAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2WebAclAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclAssociation) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2WebAclAssociation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateWafv2WebAclAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

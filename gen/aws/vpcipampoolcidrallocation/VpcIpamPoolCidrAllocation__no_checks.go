@@ -4,6 +4,10 @@ package vpcipampoolcidrallocation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpcIpamPoolCidrAllocation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcIpamPoolCidrAllocation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (v *jsiiProxy_VpcIpamPoolCidrAllocation) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (v *jsiiProxy_VpcIpamPoolCidrAllocation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcIpamPoolCidrAllocation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (v *jsiiProxy_VpcIpamPoolCidrAllocation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcIpamPoolCidrAllocation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcIpamPoolCidrAllocation) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcIpamPoolCidrAllocation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateVpcIpamPoolCidrAllocation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

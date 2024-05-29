@@ -4,6 +4,10 @@ package storagegatewaycache
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StoragegatewayCache) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StoragegatewayCache) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,11 +48,31 @@ func (s *jsiiProxy_StoragegatewayCache) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (s *jsiiProxy_StoragegatewayCache) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StoragegatewayCache) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_StoragegatewayCache) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StoragegatewayCache) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_StoragegatewayCache) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StoragegatewayCache) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateStoragegatewayCache_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

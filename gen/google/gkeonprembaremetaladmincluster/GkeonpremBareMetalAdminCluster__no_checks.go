@@ -4,6 +4,10 @@ package gkeonprembaremetaladmincluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GkeonpremBareMetalAdminCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeonpremBareMetalAdminCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GkeonpremBareMetalAdminCluster) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GkeonpremBareMetalAdminCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeonpremBareMetalAdminCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeonpremBareMetalAdminCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeonpremBareMetalAdminCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeonpremBareMetalAdminCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -93,6 +113,10 @@ func (g *jsiiProxy_GkeonpremBareMetalAdminCluster) validatePutStorageParameters(
 }
 
 func (g *jsiiProxy_GkeonpremBareMetalAdminCluster) validatePutTimeoutsParameters(value *GkeonpremBareMetalAdminClusterTimeouts) error {
+	return nil
+}
+
+func validateGkeonpremBareMetalAdminCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

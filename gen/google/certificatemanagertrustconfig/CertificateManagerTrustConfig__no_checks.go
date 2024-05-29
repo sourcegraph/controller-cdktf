@@ -4,6 +4,10 @@ package certificatemanagertrustconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CertificateManagerTrustConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CertificateManagerTrustConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) validateGetStringMapAttributeP
 	return nil
 }
 
+func (c *jsiiProxy_CertificateManagerTrustConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CertificateManagerTrustConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CertificateManagerTrustConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CertificateManagerTrustConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CertificateManagerTrustConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) validatePutTimeoutsParameters(
 }
 
 func (c *jsiiProxy_CertificateManagerTrustConfig) validatePutTrustStoresParameters(value interface{}) error {
+	return nil
+}
+
+func validateCertificateManagerTrustConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

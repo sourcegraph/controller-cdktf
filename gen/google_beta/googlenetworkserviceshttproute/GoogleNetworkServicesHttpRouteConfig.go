@@ -37,9 +37,11 @@ type GoogleNetworkServicesHttpRouteConfig struct {
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Gateways defines a list of gateways this HttpRoute is attached to, as one of the routing rules to route the requests served by the gateway.
 	//
-	// Each gateway reference should match the pattern: projects/*\/locations/global/gateways/<gateway_name>
+	// Each gateway reference should match the pattern: projects/* /locations/global/gateways/<gateway_name>
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_services_http_route#gateways GoogleNetworkServicesHttpRoute#gateways}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	Gateways *[]*string `field:"optional" json:"gateways" yaml:"gateways"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_services_http_route#id GoogleNetworkServicesHttpRoute#id}.
 	//
@@ -48,17 +50,19 @@ type GoogleNetworkServicesHttpRouteConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Set of label tags associated with the HttpRoute resource.
 	//
-	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_services_http_route#labels GoogleNetworkServicesHttpRoute#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// Meshes defines a list of meshes this HttpRoute is attached to, as one of the routing rules to route the requests served by the mesh.
 	//
-	// Each mesh reference should match the pattern: projects/*\/locations/global/meshes/<mesh_name>.
+	// Each mesh reference should match the pattern: projects/* /locations/global/meshes/<mesh_name>.
 	// The attached Mesh should be of a type SIDECAR.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_services_http_route#meshes GoogleNetworkServicesHttpRoute#meshes}
+	//
+	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	Meshes *[]*string `field:"optional" json:"meshes" yaml:"meshes"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_services_http_route#project GoogleNetworkServicesHttpRoute#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`

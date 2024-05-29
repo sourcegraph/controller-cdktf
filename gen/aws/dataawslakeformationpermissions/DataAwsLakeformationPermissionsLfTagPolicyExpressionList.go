@@ -28,6 +28,11 @@ type DataAwsLakeformationPermissionsLfTagPolicyExpressionList interface {
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
+	// Creating an iterator for this complex list.
+	//
+	// The list will be converted into a map with the mapKeyAttributeName as the key.
+	// Experimental.
+	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DataAwsLakeformationPermissionsLfTagPolicyExpressionOutputReference
@@ -176,6 +181,22 @@ func (j *jsiiProxy_DataAwsLakeformationPermissionsLfTagPolicyExpressionList)SetW
 		"wrapsSet",
 		val,
 	)
+}
+
+func (d *jsiiProxy_DataAwsLakeformationPermissionsLfTagPolicyExpressionList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
+		panic(err)
+	}
+	var returns cdktf.DynamicListTerraformIterator
+
+	_jsii_.Invoke(
+		d,
+		"allWithMapKey",
+		[]interface{}{mapKeyAttributeName},
+		&returns,
+	)
+
+	return returns
 }
 
 func (d *jsiiProxy_DataAwsLakeformationPermissionsLfTagPolicyExpressionList) ComputeFqn() *string {

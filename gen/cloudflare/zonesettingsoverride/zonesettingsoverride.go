@@ -71,6 +71,9 @@ type ZoneSettingsOverride interface {
 	ZoneIdInput() *string
 	ZoneStatus() *string
 	ZoneType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -92,7 +95,22 @@ type ZoneSettingsOverride interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -103,6 +121,9 @@ type ZoneSettingsOverride interface {
 	ResetOverrideLogicalId()
 	ResetSettings()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -507,6 +528,25 @@ func (j *jsiiProxy_ZoneSettingsOverride)SetZoneId(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a ZoneSettingsOverride resource upon running "cdktf plan <stack-name>".
+func ZoneSettingsOverride_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateZoneSettingsOverride_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -589,6 +629,17 @@ func ZoneSettingsOverride_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) AddMoveTarget(moveTarget *string) {
+	if err := z.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (z *jsiiProxy_ZoneSettingsOverride) AddOverride(path *string, value interface{}) {
@@ -746,6 +797,30 @@ func (z *jsiiProxy_ZoneSettingsOverride) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (z *jsiiProxy_ZoneSettingsOverride) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		z,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := z.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (z *jsiiProxy_ZoneSettingsOverride) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -760,6 +835,39 @@ func (z *jsiiProxy_ZoneSettingsOverride) InterpolationForAttribute(terraformAttr
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) MoveFromId(id *string) {
+	if err := z.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) MoveTo(moveTarget *string, index interface{}) {
+	if err := z.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) MoveToId(id *string) {
+	if err := z.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"moveToId",
+		[]interface{}{id},
+	)
 }
 
 func (z *jsiiProxy_ZoneSettingsOverride) OverrideLogicalId(newLogicalId *string) {
@@ -814,6 +922,32 @@ func (z *jsiiProxy_ZoneSettingsOverride) SynthesizeAttributes() *map[string]inte
 	_jsii_.Invoke(
 		z,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		z,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZoneSettingsOverride) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		z,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

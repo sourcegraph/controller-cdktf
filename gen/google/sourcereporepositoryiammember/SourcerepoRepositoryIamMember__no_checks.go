@@ -4,6 +4,10 @@ package sourcereporepositoryiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SourcerepoRepositoryIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SourcerepoRepositoryIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (s *jsiiProxy_SourcerepoRepositoryIamMember) validateGetStringMapAttributeP
 	return nil
 }
 
+func (s *jsiiProxy_SourcerepoRepositoryIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SourcerepoRepositoryIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SourcerepoRepositoryIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SourcerepoRepositoryIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SourcerepoRepositoryIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (s *jsiiProxy_SourcerepoRepositoryIamMember) validateOverrideLogicalIdParam
 }
 
 func (s *jsiiProxy_SourcerepoRepositoryIamMember) validatePutConditionParameters(value *SourcerepoRepositoryIamMemberCondition) error {
+	return nil
+}
+
+func validateSourcerepoRepositoryIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package vmwareengineexternalaccessrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VmwareengineExternalAccessRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareengineExternalAccessRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) validateGetStringMapAttribute
 	return nil
 }
 
+func (v *jsiiProxy_VmwareengineExternalAccessRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareengineExternalAccessRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwareengineExternalAccessRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwareengineExternalAccessRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwareengineExternalAccessRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) validatePutSourceIpRangesPara
 }
 
 func (v *jsiiProxy_VmwareengineExternalAccessRule) validatePutTimeoutsParameters(value *VmwareengineExternalAccessRuleTimeouts) error {
+	return nil
+}
+
+func validateVmwareengineExternalAccessRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

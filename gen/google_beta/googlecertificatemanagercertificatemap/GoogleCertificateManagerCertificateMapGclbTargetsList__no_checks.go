@@ -4,6 +4,10 @@ package googlecertificatemanagercertificatemap
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleCertificateManagerCertificateMapGclbTargetsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCertificateManagerCertificateMapGclbTargetsList) validateGetParameters(index *float64) error {
 	return nil
 }

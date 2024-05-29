@@ -4,6 +4,10 @@ package computeinstancegroupnamedport
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) validateGetStringMapAttribute
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) validateOverrideLogicalIdPara
 }
 
 func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) validatePutTimeoutsParameters(value *ComputeInstanceGroupNamedPortTimeouts) error {
+	return nil
+}
+
+func validateComputeInstanceGroupNamedPortA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -4,6 +4,10 @@ package wafregionalratebasedrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WafregionalRateBasedRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalRateBasedRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (w *jsiiProxy_WafregionalRateBasedRule) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (w *jsiiProxy_WafregionalRateBasedRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalRateBasedRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafregionalRateBasedRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafregionalRateBasedRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafregionalRateBasedRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -53,6 +73,10 @@ func (w *jsiiProxy_WafregionalRateBasedRule) validateOverrideLogicalIdParameters
 }
 
 func (w *jsiiProxy_WafregionalRateBasedRule) validatePutPredicateParameters(value interface{}) error {
+	return nil
+}
+
+func validateWafregionalRateBasedRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

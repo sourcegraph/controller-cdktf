@@ -4,6 +4,10 @@ package opsworksphpapplayer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OpsworksPhpAppLayer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksPhpAppLayer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (o *jsiiProxy_OpsworksPhpAppLayer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksPhpAppLayer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksPhpAppLayer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksPhpAppLayer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksPhpAppLayer) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -61,6 +81,10 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) validatePutEbsVolumeParameters(value int
 }
 
 func (o *jsiiProxy_OpsworksPhpAppLayer) validatePutLoadBasedAutoScalingParameters(value *OpsworksPhpAppLayerLoadBasedAutoScaling) error {
+	return nil
+}
+
+func validateOpsworksPhpAppLayer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

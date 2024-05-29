@@ -4,6 +4,10 @@ package resourceexplorer2view
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_Resourceexplorer2View) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Resourceexplorer2View) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (r *jsiiProxy_Resourceexplorer2View) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (r *jsiiProxy_Resourceexplorer2View) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Resourceexplorer2View) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_Resourceexplorer2View) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_Resourceexplorer2View) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_Resourceexplorer2View) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (r *jsiiProxy_Resourceexplorer2View) validatePutFiltersParameters(value int
 }
 
 func (r *jsiiProxy_Resourceexplorer2View) validatePutIncludedPropertyParameters(value interface{}) error {
+	return nil
+}
+
+func validateResourceexplorer2View_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

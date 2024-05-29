@@ -4,6 +4,10 @@ package googlevpcaccessconnector
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleVpcAccessConnector) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVpcAccessConnector) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (g *jsiiProxy_GoogleVpcAccessConnector) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVpcAccessConnector) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVpcAccessConnector) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVpcAccessConnector) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVpcAccessConnector) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVpcAccessConnector) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (g *jsiiProxy_GoogleVpcAccessConnector) validatePutSubnetParameters(value *
 }
 
 func (g *jsiiProxy_GoogleVpcAccessConnector) validatePutTimeoutsParameters(value *GoogleVpcAccessConnectorTimeouts) error {
+	return nil
+}
+
+func validateGoogleVpcAccessConnector_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

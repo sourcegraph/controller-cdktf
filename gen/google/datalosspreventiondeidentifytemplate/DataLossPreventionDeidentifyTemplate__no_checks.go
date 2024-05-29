@@ -4,6 +4,10 @@ package datalosspreventiondeidentifytemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataLossPreventionDeidentifyTemplate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionDeidentifyTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -44,7 +48,23 @@ func (d *jsiiProxy_DataLossPreventionDeidentifyTemplate) validateGetStringMapAtt
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionDeidentifyTemplate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionDeidentifyTemplate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLossPreventionDeidentifyTemplate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLossPreventionDeidentifyTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLossPreventionDeidentifyTemplate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (d *jsiiProxy_DataLossPreventionDeidentifyTemplate) validatePutDeidentifyCo
 }
 
 func (d *jsiiProxy_DataLossPreventionDeidentifyTemplate) validatePutTimeoutsParameters(value *DataLossPreventionDeidentifyTemplateTimeouts) error {
+	return nil
+}
+
+func validateDataLossPreventionDeidentifyTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 
